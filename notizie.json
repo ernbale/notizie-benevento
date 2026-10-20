@@ -1,11 +1,11 @@
 {
- "aggiornato": "2026-10-20T08:45:00+02:00",
- "giornali_letti": 8,
+ "aggiornato": "2026-10-20T09:25:00+02:00",
+ "giornali_letti": 15,
  "notizie": [
   {
    "id": "tir-appia-telesina",
-   "titolo": "Caro gasolio, tir fermi sull'Appia a Tufara Valle e al casello di Castel del Lago",
-   "sintesi": "Dal 19 ottobre gli autotrasportatori protestano contro il prezzo del gasolio: camion fermi sulla statale Appia e all'ingresso dell'autostrada a Castel del Lago, auto che passano a rilento. Nella notte tra il 19 e il 20 blocchi anche sulla Telesina a San Salvatore Telesino.",
+   "titolo": "Caro gasolio, tir fermi sull'Appia a Tufara Valle e a Castel del Lago, blocchi anche sulla Telesina a San Salvatore Telesino",
+   "sintesi": "Dal 19 ottobre gli autotrasportatori protestano contro il prezzo del gasolio: camion fermi sulla statale Appia a Tufara Valle e all'ingresso dell'autostrada a Castel del Lago, auto che passano a rilento. Ci sono stati blocchi anche sulla Telesina a San Salvatore Telesino. Oggi, 20 ottobre, il ministro Salvini incontra a Milano associazioni e gruppi di protesta, anche della Campania.",
    "categoria": "strade",
    "zona": "provincia",
    "luogo": "Tufara Valle",
@@ -17,17 +17,25 @@
      "url": "https://www.ottopagine.it/bn/cronaca/441543/protesta-caro-carburanti-continuano-i-blocchi-nel-sannio.shtml"
     },
     {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/19/caro-carburanti-la-protesta-nel-sannio-camion-fermi-sullappia-e-a-castel-del-lago-da-giovedi-si-mobilitano-gli-agricoltori/"
+     "nome": "Il Mattino",
+     "url": "https://www.ilmattino.it/benevento/autotrasporto_la_protesta_arriva_anche_nel_sannio_tir_incolonnati_gia_dalla_notte_e_disagi_per_la_viabilita-9835330.html"
     },
     {
      "nome": "Il Sannio Quotidiano",
      "url": "https://www.ilsannioquotidiano.it/2026/10/20/la-protesta-degli-autotrasportatori-arriva-nel-sannio-blocchi-sullappia-e-a-castel-del-lago-cosi-non-possiamo-andare-avanti/"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/19/caro-carburanti-la-protesta-nel-sannio-camion-fermi-sullappia-e-a-castel-del-lago-da-giovedi-si-mobilitano-gli-agricoltori/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/autotrasportatori-sciopero-appia-castel-del-lago/"
     }
    ],
    "articolo": {
-    "aggiornato": "2026-10-20T08:28:00+02:00",
-    "cosa": "Gli autotrasportatori protestano contro l'aumento dei prezzi di gasolio e benzina. Nel Sannio i blocchi sono cominciati lunedì 19 ottobre sulla statale Appia e al casello di Castel del Lago, e si sono estesi nella notte alla Telesina. Gli effetti si vedono nei supermercati e ai distributori. Da giovedì 22 si aggiungono gli agricoltori.",
+    "aggiornato": "2026-10-20T09:25:00+02:00",
+    "cosa": "Gli autotrasportatori protestano contro l'aumento dei prezzi di gasolio e benzina. Nel Sannio i blocchi sono cominciati tra la notte e l'alba di lunedì 19 ottobre sulla statale Appia e al casello di Castel del Lago, e si sono estesi alla Telesina a San Salvatore Telesino. A Tufara Valle i camionisti dicono che resteranno fermi almeno fino al tavolo tecnico con il Governo; oggi a Milano il ministro Salvini incontra associazioni e gruppi di protesta. Gli effetti si vedono nei supermercati e ai distributori; da giovedì 22 si aggiungono gli agricoltori.",
     "cronologia": [
      {
       "data": "18 ottobre",
@@ -38,12 +46,28 @@
       ]
      },
      {
+      "data": "notte 18-19",
+      "fatto": "Dalle 3 di notte tra domenica e lunedì tir, camion e furgoni si fermano sulla statale Appia a Tufara Valle. BeneventoNews24 segnala mezzi pesanti fermi già dalla sera del 18.",
+      "fonti": [
+       "Il Mattino",
+       "BeneventoNews24"
+      ]
+     },
+     {
       "data": "19 ottobre",
       "fatto": "Dalle prime ore del mattino tir fermi sulla statale Appia all'altezza di Tufara Valle e all'imbocco dell'autostrada a Castel del Lago. Le auto passano lentamente; i manifestanti chiedono agli altri camionisti di aderire.",
       "fonti": [
        "Ottopagine (19/10)",
        "NTR24",
-       "Il Sannio Quotidiano"
+       "Il Sannio Quotidiano",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "data": "19 ottobre, tarda mattinata",
+      "fatto": "A Tufara Valle i camionisti lasciano passare il traffico su un lato della strada per alcune ore. Arrivano a portare solidarietà i sindaci di Apollosa, Danilo Parente, e di San Martino Valle Caudina, Pasquale Pisano.",
+      "fonti": [
+       "Il Mattino"
       ]
      },
      {
@@ -55,10 +79,19 @@
       ]
      },
      {
-      "data": "notte 19-20",
-      "fatto": "Blocchi anche sulla Telesina, soprattutto a San Salvatore Telesino; code sulla Telesina e sull'Appia. Forze dell'ordine sul posto per far scorrere il traffico.",
+      "data": "19-20 ottobre",
+      "fatto": "Blocchi anche sulla Telesina, soprattutto a San Salvatore Telesino, con rallentamenti in direzione Caianello. Nella notte code sulla Telesina e sull'Appia, con le forze dell'ordine sul posto per far scorrere il traffico.",
       "fonti": [
-       "Ottopagine (20/10)"
+       "Ottopagine (20/10)",
+       "Il Mattino"
+      ]
+     },
+     {
+      "data": "20 ottobre, 10:00",
+      "fatto": "In Prefettura a Milano tavolo tecnico del ministro dei Trasporti Matteo Salvini con sindacati e associazioni dell'autotrasporto; nel pomeriggio l'incontro con i gruppi di protesta di Puglia, Sicilia, Calabria e Campania.",
+      "fonti": [
+       "ANSA (17/10)",
+       "Il Sole 24 Ore"
       ]
      },
      {
@@ -76,7 +109,8 @@
       "fonti": [
        "Ottopagine (19/10)",
        "NTR24",
-       "Il Sannio Quotidiano"
+       "Il Sannio Quotidiano",
+       "Il Mattino"
       ]
      },
      {
@@ -84,15 +118,39 @@
       "fonti": [
        "Ottopagine (19/10)",
        "NTR24",
-       "Il Sannio Quotidiano"
+       "Il Sannio Quotidiano",
+       "Cronache del Sannio",
+       "Il Mattino"
+      ]
+     },
+     {
+      "testo": "Ci sono stati blocchi di tir anche sulla Telesina a San Salvatore Telesino, con rallentamenti.",
+      "fonti": [
+       "Ottopagine (20/10)",
+       "Il Mattino"
       ]
      }
     ],
-    "divergono": [],
+    "divergono": [
+     {
+      "testo": "Quanti mezzi: Il Mattino conta un centinaio di mezzi pesanti in fila a Tufara Valle la mattina del 19; LabTV, lo stesso giorno, parla di una decina di camion.",
+      "fonti": [
+       "Il Mattino",
+       "LabTV"
+      ]
+     },
+     {
+      "testo": "Da quando: per BeneventoNews24 i mezzi pesanti sono fermi dalla sera del 18 ottobre; per Il Mattino dalle 3 di notte tra domenica 18 e lunedì 19.",
+      "fonti": [
+       "BeneventoNews24",
+       "Il Mattino"
+      ]
+     }
+    ],
     "non_si_sa": [
-     "Quanto durerà: i manifestanti parlano di protesta a oltranza, fino a una risposta del Governo, senza una data di fine.",
-     "Quanti mezzi sono coinvolti: nessuno dei giornali letti dà un numero.",
-     "I blocchi sulla Telesina a San Salvatore Telesino sono riportati per ora da un solo giornale."
+     "Quanto durerà: a Tufara Valle i camionisti dicono che non si muoveranno almeno fino al tavolo tecnico con il Governo; nessuno indica una data di fine.",
+     "Cosa uscirà dal tavolo di oggi a Milano.",
+     "Se stamattina i blocchi sulla Telesina sono ancora in corso: l'ultimo aggiornamento letto è quello di Ottopagine delle 7:41."
     ],
     "fonti": [
      {
@@ -118,6 +176,42 @@
       "titolo": "La protesta degli autotrasportatori arriva nel Sannio, blocchi sull'Appia e a Castel del Lago",
       "url": "https://www.ilsannioquotidiano.it/2026/10/20/la-protesta-degli-autotrasportatori-arriva-nel-sannio-blocchi-sullappia-e-a-castel-del-lago-cosi-non-possiamo-andare-avanti/",
       "data": "20 ott"
+     },
+     {
+      "nome": "Il Mattino",
+      "titolo": "Autotrasporto, la protesta arriva anche nel Sannio: tir incolonnati già dalla notte e disagi per la viabilità",
+      "url": "https://www.ilmattino.it/benevento/autotrasporto_la_protesta_arriva_anche_nel_sannio_tir_incolonnati_gia_dalla_notte_e_disagi_per_la_viabilita-9835330.html",
+      "data": "20 ott, 01:25"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Autotrasportatori in sciopero nel Sannio: presidi sull'Appia e a Castel del Lago",
+      "url": "https://www.cronachedelsannio.it/sannionews24/autotrasportatori-sciopero-appia-castel-del-lago/",
+      "data": "19 ott"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "VIDEO – Caro carburante e proteste: nel Sannio primi scaffali vuoti e pompe a secco",
+      "url": "https://www.beneventonews24.it/2026/10/19/video-caro-carburante-e-protesta-autotrasportatori-nel-sannio-primi-scaffali-vuoti-e-pompe-a-secco/",
+      "data": "19 ott"
+     },
+     {
+      "nome": "LabTV",
+      "titolo": "Benevento, protesta di agricoltori e autotrasportatori contro il carovita",
+      "url": "https://www.labtv.net/cultura/eventi/2026/10/19/benevento-protesta-di-agricoltori-e-autotrasportatori-contro-il-carovita/",
+      "data": "19 ott"
+     },
+     {
+      "nome": "ANSA (17/10)",
+      "titolo": "Salvini, 'incontrerò autotrasportatori di Puglia, Calabria e Sicilia'",
+      "url": "https://www.ansa.it/puglia/notizie/2026/10/17/salvini-incontrero-autotrasportatori-di-puglia-calabria-e-sicilia_e8414e86-a6ed-4ae6-a362-f9392e4ed176.html",
+      "data": "17 ott, 16:05"
+     },
+     {
+      "nome": "Il Sole 24 Ore",
+      "titolo": "HGV protest: road haulage talks to be held on Tuesday. Salvini ready to release the funds",
+      "url": "https://en.ilsole24ore.com/art/truckers-protest-on-tuesday-round-table-discussion-on-road-haulage-salvini-ready-to-release-funds-AJzZUUnB",
+      "data": "18 ott"
      }
     ]
    },
@@ -126,7 +220,7 @@
   {
    "id": "scaffali-vuoti",
    "titolo": "Sciopero dei tir, mancano frutta, verdura e carne in alcuni supermercati del Sannio",
-   "sintesi": "Con i camion fermi, in diversi supermercati di Benevento e provincia i reparti dei prodotti freschi restano sguarniti. Alcuni distributori hanno finito benzina e gasolio.",
+   "sintesi": "Con i camion fermi, in diversi supermercati di Benevento e provincia i reparti dei prodotti freschi restano sguarniti: mancano frutta, verdura e carne, e secondo BeneventoNews24 anche pasta e latticini. Alcuni distributori hanno finito il gasolio.",
    "categoria": "altro",
    "zona": "benevento",
    "luogo": "Benevento",
@@ -144,10 +238,18 @@
     {
      "nome": "Ottopagine",
      "url": "https://www.ottopagine.it/bn/cronaca/441432/caro-carburante-blocco-dei-camion-sulla-statale-appia-e-a-castel-del-lago.shtml"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/autotrasportatori-sciopero-appia-castel-del-lago/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/19/video-caro-carburante-e-protesta-autotrasportatori-nel-sannio-primi-scaffali-vuoti-e-pompe-a-secco/"
     }
    ],
    "articolo": {
-    "aggiornato": "2026-10-20T08:28:00+02:00",
+    "aggiornato": "2026-10-20T09:25:00+02:00",
     "cosa": "Il fermo degli autotrasportatori contro il caro gasolio blocca le consegne ai supermercati. Nel Sannio mancano soprattutto i prodotti freschi.",
     "cronologia": [
      {
@@ -165,6 +267,20 @@
       ]
      },
      {
+      "data": "19 ottobre",
+      "fatto": "In diverse catene di Benevento mancano frutta, verdura e tagli di carne perché non arrivano le consegne di ogni giorno; ai distributori si formano code e comincia a mancare il gasolio, perché le cisterne faticano a rifornire.",
+      "fonti": [
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "data": "19 ottobre",
+      "fatto": "Carenze anche di pasta, carne e latticini; alcuni distributori espongono cartelli di gasolio finito.",
+      "fonti": [
+       "BeneventoNews24"
+      ]
+     },
+     {
       "data": "20 ottobre",
       "fatto": "Mancano i prodotti ortofrutticoli e, con il passare dei giorni, anche altri alimentari.",
       "fonti": [
@@ -177,7 +293,17 @@
       "testo": "Mancano soprattutto i prodotti freschi, a partire da frutta e verdura.",
       "fonti": [
        "NTR24",
-       "Il Sannio Quotidiano"
+       "Il Sannio Quotidiano",
+       "Cronache del Sannio",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Alcuni distributori sono rimasti senza gasolio.",
+      "fonti": [
+       "Ottopagine",
+       "Cronache del Sannio",
+       "BeneventoNews24"
       ]
      },
      {
@@ -185,7 +311,9 @@
       "fonti": [
        "NTR24",
        "Il Sannio Quotidiano",
-       "Ottopagine"
+       "Ottopagine",
+       "Cronache del Sannio",
+       "BeneventoNews24"
       ]
      }
     ],
@@ -211,18 +339,32 @@
       "titolo": "Blocco tir, scorte esaurite come durante il lockdown",
       "url": "https://www.ilsannioquotidiano.it/2026/10/20/blocco-tir-scorte-esaurite-come-durante-il-lockdown-cresce-la-preoccupazione/",
       "data": "20 ott"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Autotrasportatori in sciopero nel Sannio: presidi sull'Appia e a Castel del Lago",
+      "url": "https://www.cronachedelsannio.it/sannionews24/autotrasportatori-sciopero-appia-castel-del-lago/",
+      "data": "19 ott"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "VIDEO – Caro carburante e proteste: nel Sannio primi scaffali vuoti e pompe a secco",
+      "url": "https://www.beneventonews24.it/2026/10/19/video-caro-carburante-e-protesta-autotrasportatori-nel-sannio-primi-scaffali-vuoti-e-pompe-a-secco/",
+      "data": "19 ott"
      }
-    ]
-   }
+    ],
+    "divergono": []
+   },
+   "rilevante": false
   },
   {
    "id": "agricoltori-22-ottobre",
    "titolo": "Dal 22 ottobre presidi degli agricoltori sulla Sannitica, sulla statale 212 e a Ponte delle Tavole",
-   "sintesi": "Gli agricoltori sanniti si uniscono alla protesta contro il caro gasolio e i costi di produzione. Da giovedì presidi a oltranza, senza una data di fine.",
+   "sintesi": "Gli agricoltori sanniti si uniscono alla protesta contro il caro gasolio e i costi di produzione. Da giovedì 22 ottobre presidi a oltranza sulla Sannitica, sulla statale 212 e a Ponte delle Tavole; lo stesso giorno Coldiretti Campania manifesta a Napoli.",
    "categoria": "strade",
    "zona": "benevento",
    "luogo": "Benevento",
-   "pubblicato": "2026-10-19T09:33:00+02:00",
+   "pubblicato": "2026-10-19",
    "stato": "confermata",
    "fonti": [
     {
@@ -232,10 +374,22 @@
     {
      "nome": "NTR24",
      "url": "https://www.ntr24.tv/2026/10/19/caro-carburanti-la-protesta-nel-sannio-camion-fermi-sullappia-e-a-castel-del-lago-da-giovedi-si-mobilitano-gli-agricoltori/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/19/video-caro-carburante-e-protesta-autotrasportatori-nel-sannio-primi-scaffali-vuoti-e-pompe-a-secco/"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/19/agricoltura-appello-per-misure-urgenti-manifestazione-il-22-ottobre/"
+    },
+    {
+     "nome": "LabTV",
+     "url": "https://www.labtv.net/cultura/eventi/2026/10/19/benevento-protesta-di-agricoltori-e-autotrasportatori-contro-il-carovita/"
     }
    ],
    "articolo": {
-    "aggiornato": "2026-10-20T08:28:00+02:00",
+    "aggiornato": "2026-10-20T09:25:00+02:00",
     "cosa": "Da giovedì 22 ottobre agricoltori e autotrasportatori del Sannio avviano una protesta contro il prezzo del gasolio e i costi di produzione, a oltranza. Lo slogan è «La Campania si compatta».",
     "cronologia": [
      {
@@ -250,30 +404,45 @@
       "fatto": "Presidi previsti sulla Sannitica (statale 87), sulla statale 212 e a Benevento, in zona Ponte delle Tavole.",
       "fonti": [
        "Ottopagine",
-       "NTR24"
+       "NTR24",
+       "BeneventoNews24",
+       "LabTV"
       ]
      },
      {
       "data": "22 ottobre",
-      "fatto": "Lo stesso giorno manifestazione di Coldiretti Campania a Napoli.",
+      "fatto": "Lo stesso giorno Coldiretti Campania manifesta a Napoli, in via Santa Lucia, davanti alla sede dell'assessorato regionale all'Agricoltura.",
       "fonti": [
-       "NTR24"
+       "NTR24",
+       "Il Sannio Quotidiano"
       ]
      }
     ],
     "concordano": [
      {
-      "testo": "Si comincia giovedì 22 ottobre, sulla Sannitica, sulla statale 212 e a Ponte delle Tavole.",
+      "testo": "Si comincia giovedì 22 ottobre.",
       "fonti": [
        "Ottopagine",
-       "NTR24"
+       "NTR24",
+       "BeneventoNews24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "I presidi saranno sulla Sannitica (statale 87), sulla statale 212 e a Benevento, zona Ponte delle Tavole.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24",
+       "BeneventoNews24",
+       "LabTV"
       ]
      },
      {
       "testo": "La protesta è a oltranza, senza una data di fine.",
       "fonti": [
        "Ottopagine",
-       "NTR24"
+       "NTR24",
+       "LabTV"
       ]
      }
     ],
@@ -293,9 +462,44 @@
       "titolo": "Caro carburanti, la protesta nel Sannio: camion fermi sull'Appia e a Castel del Lago",
       "url": "https://www.ntr24.tv/2026/10/19/caro-carburanti-la-protesta-nel-sannio-camion-fermi-sullappia-e-a-castel-del-lago-da-giovedi-si-mobilitano-gli-agricoltori/",
       "data": "19 ott"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "VIDEO – Caro carburante e proteste: nel Sannio primi scaffali vuoti e pompe a secco",
+      "url": "https://www.beneventonews24.it/2026/10/19/video-caro-carburante-e-protesta-autotrasportatori-nel-sannio-primi-scaffali-vuoti-e-pompe-a-secco/",
+      "data": "19 ott"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Autotrasportatori in sciopero nel Sannio: presidi sull'Appia e a Castel del Lago",
+      "url": "https://www.cronachedelsannio.it/sannionews24/autotrasportatori-sciopero-appia-castel-del-lago/",
+      "data": "19 ott"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Agricoltura, appello per misure urgenti: manifestazione il 22 ottobre",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/19/agricoltura-appello-per-misure-urgenti-manifestazione-il-22-ottobre/",
+      "data": "19 ott"
+     },
+     {
+      "nome": "LabTV",
+      "titolo": "Benevento, protesta di agricoltori e autotrasportatori contro il carovita",
+      "url": "https://www.labtv.net/cultura/eventi/2026/10/19/benevento-protesta-di-agricoltori-e-autotrasportatori-contro-il-carovita/",
+      "data": "19 ott"
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "La data di partenza: LabTV, che riprende la locandina, scrive che l'avvio di giovedì 22 è ancora «a data da destinarsi»; gli altri giornali danno il 22 come certo.",
+      "fonti": [
+       "LabTV",
+       "Ottopagine",
+       "NTR24"
+      ]
      }
     ]
-   }
+   },
+   "rilevante": false
   },
   {
    "id": "mozione-caro-carburanti",
@@ -353,6 +557,552 @@
       "url": "https://www.ntr24.tv/2026/10/19/caro-carburanti-allarme-in-campania-casa-riformista-chiede-un-fondo-straordinario/",
       "data": "19 ott"
      }
+    ],
+    "divergono": []
+   },
+   "rilevante": false
+  },
+  {
+   "id": "ficomirrors-morcone-vertice",
+   "titolo": "Morcone, vertice in Prefettura sulla Ficomirrors: l'azienda, che vuole spostare la produzione in Polonia dal 2029, apre a nuove produzioni; nuovo incontro a dicembre",
+   "sintesi": "Lunedì 19 ottobre in Prefettura a Benevento azienda, sindacati, Confindustria e sindaci hanno discusso il futuro dello stabilimento di Morcone, con circa 200 dipendenti, da cui il gruppo Ficosa vuole spostare in Polonia la produzione degli specchietti per il Fiat Ducato dalla seconda metà del 2029. L'azienda si è detta aperta a nuove produzioni; il sindacato chiede di salvare tutti i posti. Si torna al tavolo a metà dicembre.",
+   "categoria": "altro",
+   "zona": "provincia",
+   "luogo": "Morcone",
+   "pubblicato": "2026-10-20",
+   "stato": "confermata",
+   "rilevante": true,
+   "fonti": [
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/20/vicenda-ficomirrors-spiragli-dal-vertice-in-prefettura-lazienda-apre-alla-riconversione-produttiva/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/441466/vertenza-ficomirrors-un-cronoprogramma-per-salvare-i-posti-di-lavoro.shtml"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/vertenza-ficomirrors-possibile-riconversione-della-produzione-ce-lapertura-da-parte-dellazienda/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/ficomirrors-morcone-riconversione-stabilimento/"
+    }
+   ],
+   "articolo": {
+    "aggiornato": "2026-10-20T09:25:00+02:00",
+    "cosa": "Ficomirrors, del gruppo spagnolo Ficosa International (controllato da Panasonic), produce a Morcone specchietti retrovisori per il Fiat Ducato. La settimana scorsa l'azienda ha annunciato di voler spostare le attività in Polonia dalla seconda metà del 2029 e i lavoratori hanno risposto con sciopero e presidio davanti alla fabbrica. Il vertice in Prefettura ha riaperto il dialogo, ma non ha preso decisioni definitive.",
+    "cronologia": [
+     {
+      "data": "settimana scorsa",
+      "fatto": "L'azienda annuncia di voler spostare le attività in Polonia dalla seconda metà del 2029; i lavoratori proclamano sciopero e un presidio fisso davanti alla fabbrica.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "data": "19 ottobre, mattina",
+      "fatto": "Lavoratori in presidio davanti alla Prefettura di Benevento. Al tavolo il dirigente di Ficosa Josep Maria Serra, la Fiom con Giuseppe Morsa, Confindustria e i sindaci di Benevento, Morcone, Sassinoro, Campolattaro, Fragneto Monforte e Pontelandolfo.",
+      "fonti": [
+       "Ottopagine",
+       "Anteprima24",
+       "Cronache del Sannio",
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "data": "19 ottobre",
+      "fatto": "L'azienda si dice aperta a nuove produzioni nello stabilimento: si parla di aerospazio ed energie rinnovabili. Secondo Ottopagine riprende il lavoro in fabbrica, fermo dalla settimana prima per la protesta.",
+      "fonti": [
+       "Ottopagine",
+       "Anteprima24"
+      ]
+     },
+     {
+      "data": "metà dicembre",
+      "fatto": "Nuovo incontro con l'azienda; Anteprima24 indica il 15 dicembre.",
+      "fonti": [
+       "Anteprima24",
+       "Cronache del Sannio"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "L'azienda si è detta disposta a cambiare o allargare la produzione a Morcone.",
+      "fonti": [
+       "Ottopagine",
+       "Anteprima24",
+       "Cronache del Sannio",
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "La Fiom, con Giuseppe Morsa, chiede che non si perda nessun posto di lavoro.",
+      "fonti": [
+       "Ottopagine",
+       "Anteprima24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Il sindacato chiede che anche la Regione Campania entri nella trattativa.",
+      "fonti": [
+       "Ottopagine",
+       "Anteprima24",
+       "Cronache del Sannio"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "Quanti posti: Ottopagine scrive 209 lavoratori, di cui 160 a rischio; Anteprima24 parla di 210 lavoratori a rischio; Cronache del Sannio di oltre duecento posti; Il Sannio Quotidiano di circa 200 dipendenti.",
+      "fonti": [
+       "Ottopagine",
+       "Anteprima24",
+       "Cronache del Sannio",
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "Le nuove produzioni: Ottopagine cita soprattutto l'aerospazio; Anteprima24 parla di impianti per le energie rinnovabili e di un settore che chiama «aeromotive».",
+      "fonti": [
+       "Ottopagine",
+       "Anteprima24"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "Il piano preciso dell'azienda: secondo Anteprima24 sarà spiegato nei prossimi giorni.",
+     "Quanti lavoratori resterebbero con le nuove produzioni.",
+     "Se e quando ci sarà l'incontro con la Regione chiesto dai sindacati."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Vertenza Ficomirrors: un cronoprogramma per salvare i posti di lavoro",
+      "url": "https://www.ottopagine.it/bn/attualita/441466/vertenza-ficomirrors-un-cronoprogramma-per-salvare-i-posti-di-lavoro.shtml",
+      "data": "19 ott, 13:14"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Vertenza Ficomirrors, possibile riconversione della produzione: c’e’ l’apertura da parte dell’azienda",
+      "url": "https://www.anteprima24.it/benevento/vertenza-ficomirrors-possibile-riconversione-della-produzione-ce-lapertura-da-parte-dellazienda/",
+      "data": "19 ott"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Ficomirrors Morcone, passi in avanti per la riconversione dello stabilimento",
+      "url": "https://www.cronachedelsannio.it/sannionews24/ficomirrors-morcone-riconversione-stabilimento/",
+      "data": "19 ott"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Vicenda Ficomirrors, spiragli dal vertice in Prefettura: l'azienda apre alla riconversione produttiva",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/20/vicenda-ficomirrors-spiragli-dal-vertice-in-prefettura-lazienda-apre-alla-riconversione-produttiva/",
+      "data": "20 ott"
+     }
+    ]
+   }
+  },
+  {
+   "id": "mensa-pasto-da-casa",
+   "titolo": "Benevento, mensa scolastica: resta il no al pasto portato da casa, i presidi difendono la scelta e alcuni genitori pensano al Tar",
+   "sintesi": "L'associazione dei presidi (Anp) difende i dirigenti che non fanno mangiare nei locali della mensa il pasto portato da casa, per igiene, spazi e personale. Comune e Pd si accusano a vicenda su chi abbia deciso il divieto; al plesso Lucarelli due genitori valutano il ricorso al Tar (il tribunale amministrativo) e la Lega porta in Parlamento il caso delle cucine del Conservatorio usate per la mensa.",
+   "categoria": "politica",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-19T18:04:00+02:00",
+   "stato": "confermata",
+   "rilevante": true,
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/441516/mensa-dirigenti-no-al-pasto-da-casa-e-scelta-che-tutela-salute-degli-alunni.shtml"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/19/mensa-scolastica-a-benevento-lanp-contro-il-pasto-da-casa-dai-dirigenti-scelta-responsabile-a-tutela-degli-alunni/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/plesso-lucarelli-pasto-da-casa-genitori-ricorso-tar/"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/19/mensa-lopposizione-replica-a-palladino-a-febbraio-fu-il-comune-a-vietare-il-pasto-da-casa/"
+    }
+   ],
+   "articolo": {
+    "aggiornato": "2026-10-20T09:25:00+02:00",
+    "cosa": "Il Comune di Benevento ha annunciato l'avvio della mensa scolastica dal 14 ottobre, dopo un rinvio, usando in via provvisoria le cucine del Conservatorio. Intanto continua lo scontro sul pasto portato da casa: alcune famiglie lo chiedono, i dirigenti scolastici non lo permettono nei locali della mensa.",
+    "cronologia": [
+     {
+      "data": "24 febbraio 2026",
+      "fatto": "Secondo i consiglieri del Pd, con una nota di questa data il Comune vieta l'ingresso nei refettori agli alunni autorizzati a mangiare il pasto di casa.",
+      "fonti": [
+       "Ottopagine (Pd)"
+      ]
+     },
+     {
+      "data": "aprile 2026",
+      "fatto": "Secondo il consigliere delegato all'Istruzione Marcello Palladino, l'Asl ribadisce che serve un'adeguata sorveglianza.",
+      "fonti": [
+       "NTR24 (Palladino)"
+      ]
+     },
+     {
+      "data": "14 ottobre",
+      "fatto": "Data di avvio della mensa annunciata dal Comune, dopo un rinvio per problemi al centro cottura dell'impresa: si usano in via provvisoria le cucine del Conservatorio Nicola Sala in via dei Mulini.",
+      "fonti": [
+       "Ottopagine (Lega)"
+      ]
+     },
+     {
+      "data": "prima del 19 ottobre",
+      "fatto": "Secondo Palladino, in un incontro con i dirigenti scolastici il sindaco Mastella chiede di valutare di nuovo il pasto da casa; i dirigenti rispondono di no per motivi di organizzazione, spazi e igiene.",
+      "fonti": [
+       "NTR24 (Palladino)"
+      ]
+     },
+     {
+      "data": "19 ottobre, 8:18",
+      "fatto": "I consiglieri comunali del Pd Farese, Varricchio, Fioretti, De Lorenzo e De Longis rispondono a Palladino: fu il Comune a vietare il pasto da casa. Chiedono che Palladino e Mastella si scusino con le famiglie.",
+      "fonti": [
+       "Ottopagine (Pd)",
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "data": "19 ottobre",
+      "fatto": "Palladino replica che il Comune non ha mai vietato il pasto da casa: l'ex dirigente Alessandro Verdicchio, oggi scomparso, lo aveva escluso solo dai locali della mensa, che erano troppo affollati.",
+      "fonti": [
+       "NTR24 (Palladino)"
+      ]
+     },
+     {
+      "data": "19 ottobre",
+      "fatto": "Al plesso Lucarelli il dirigente Domenico Zerella dice di nuovo no a due genitori che chiedono di integrare il pasto della mensa con cibo di casa; secondo il papà la scuola chiede certificati medici difficili da ottenere. Le famiglie valutano il ricorso al Tar.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "data": "19 ottobre, 16:35",
+      "fatto": "Il deputato della Lega Gianpiero Zinzi presenta un'interrogazione ai ministri di Università, Istruzione e Salute sull'uso delle cucine del Conservatorio da parte dell'impresa della mensa.",
+      "fonti": [
+       "Ottopagine (Lega)"
+      ]
+     },
+     {
+      "data": "19 ottobre, 18:04",
+      "fatto": "L'Anp di Benevento ringrazia i dirigenti per la scelta e si riserva di difenderli anche per vie legali nei casi che ritiene diffamatori.",
+      "fonti": [
+       "Ottopagine (Anp)",
+       "NTR24 (Anp)"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "I presidi e Palladino citano una sentenza delle Sezioni Unite della Cassazione del 2019: non esiste un diritto pieno e senza condizioni a portare il pasto da casa.",
+      "fonti": [
+       "Ottopagine (Anp)",
+       "NTR24 (Anp)",
+       "NTR24 (Palladino)"
+      ]
+     },
+     {
+      "testo": "Il motivo principale indicato è l'igiene: evitare che il cibo della mensa e quello portato da casa si contaminino a vicenda.",
+      "fonti": [
+       "Ottopagine (Anp)",
+       "NTR24 (Anp)",
+       "NTR24 (Palladino)"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "Chi ha deciso il divieto: per il Pd fu il Comune, con una nota del 24 febbraio; per Palladino il Comune non l'ha mai vietato e il dirigente aveva escluso solo i locali della mensa.",
+      "fonti": [
+       "Ottopagine (Pd)",
+       "Il Sannio Quotidiano",
+       "NTR24 (Palladino)"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "Se i genitori del plesso Lucarelli presenteranno davvero il ricorso al Tar.",
+     "Quanti alunni chiedono il pasto da casa: nessun giornale dà numeri.",
+     "Quando arriverà la risposta dei ministri all'interrogazione."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine (Pd)",
+      "titolo": "Pd: \"L'amministrazione ha vietato pasto da casa a febbraio, no a scaricabarile\"",
+      "url": "https://www.ottopagine.it/bn/attualita/441430/pd-l-amministrazione-ha-vietato-pasto-da-casa-a-febbraio-no-a-scaricabarile.shtml",
+      "data": "19 ott, 08:18"
+     },
+     {
+      "nome": "Ottopagine (Lega)",
+      "titolo": "Mensa scolastica Benevento. La Lega porta caso in Parlamento e chiede verifiche",
+      "url": "https://www.ottopagine.it/bn/politica/441504/mensa-scolastica-benevento-la-lega-porta-caso-in-parlamento-e-chiede-verifiche.shtml",
+      "data": "19 ott, 16:35"
+     },
+     {
+      "nome": "Ottopagine (Anp)",
+      "titolo": "Mensa: dirigenti \"no al pasto da casa scelta che tutela salute degli alunni\"",
+      "url": "https://www.ottopagine.it/bn/attualita/441516/mensa-dirigenti-no-al-pasto-da-casa-e-scelta-che-tutela-salute-degli-alunni.shtml",
+      "data": "19 ott, 18:04"
+     },
+     {
+      "nome": "NTR24 (Palladino)",
+      "titolo": "Mensa, Palladino: \"La decisione sul pasto da casa del dirigente Verdicchio fu giuridicamente coerente\"",
+      "url": "https://www.ntr24.tv/2026/10/19/mensa-palladino-la-decisione-sul-pasto-da-casa-del-dirigente-verdicchio-fu-giuridicamente-coerente/",
+      "data": "19 ott"
+     },
+     {
+      "nome": "NTR24 (Anp)",
+      "titolo": "Mensa scolastica a Benevento, l'ANP contro il pasto da casa: 'Dai dirigenti scelta responsabile a tutela degli alunni'",
+      "url": "https://www.ntr24.tv/2026/10/19/mensa-scolastica-a-benevento-lanp-contro-il-pasto-da-casa-dai-dirigenti-scelta-responsabile-a-tutela-degli-alunni/",
+      "data": "19 ott"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Plesso Lucarelli: ancora un no per il pasto da casa. Genitori arrabbiati valutano il ricorso al Tar",
+      "url": "https://www.anteprima24.it/benevento/plesso-lucarelli-pasto-da-casa-genitori-ricorso-tar/",
+      "data": "19 ott"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Mensa, l’opposizione replica a Palladino: «A febbraio fu il Comune a vietare il pasto da casa»",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/19/mensa-lopposizione-replica-a-palladino-a-febbraio-fu-il-comune-a-vietare-il-pasto-da-casa/",
+      "data": "19 ott"
+     }
+    ]
+   }
+  },
+  {
+   "id": "condanne-tentato-omicidio-montesarchio",
+   "titolo": "Montesarchio, tentato omicidio di un 17enne nel 2025: quattro ventenni condannati in primo grado, pene da 6 anni a 8 anni e 20 giorni",
+   "sintesi": "Lunedì 19 ottobre il giudice Roberto Nuzzo ha condannato con rito abbreviato quattro ventenni imputati di tentato omicidio per l'aggressione a un ragazzo di Vitulano, che allora aveva 17 anni, colpito anche con una mazza da baseball fuori da un locale di Montesarchio nella notte del 5 ottobre 2025. Le pene sono più basse di quelle chieste dalla Procura.",
+   "categoria": "cronaca",
+   "zona": "caudina",
+   "luogo": "Montesarchio",
+   "pubblicato": "2026-10-20T00:35:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Il Mattino",
+     "url": "https://www.ilmattino.it/benevento/violenza_nel_beneventano_botte_con_mazza_da_baseball_a_montesarchio_condannati_4_giovanissimi-9835274.html"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/19/tentato-omicidio-a-montesarchio-condanne-per-i-quattro-giovani-che-hanno-scelto-il-rito-abbreviato/"
+    }
+   ],
+   "articolo": {
+    "aggiornato": "2026-10-20T09:25:00+02:00",
+    "cosa": "Secondo l'accusa, nella notte del 5 ottobre 2025 un gruppo di giovani partito da Benevento con quattro auto raggiunse il locale Xuè di Montesarchio, dove c'erano coetanei di Foglianise con cui c'erano già stati scontri. Il ragazzo fu colpito con calci, pugni e una mazza da baseball anche quando era a terra e finì in coma. Il processo si è svolto con rito abbreviato (un processo più rapido, deciso sugli atti delle indagini, che in caso di condanna riduce la pena).",
+    "cronologia": [
+     {
+      "data": "notte 4-5 ottobre 2025",
+      "fatto": "Dopo una telefonata, quattro auto partono da Benevento verso il locale Xuè di Montesarchio. All'uscita viene aggredito prima un 18enne di Foglianise, ferito in modo non grave, poi il 17enne di Vitulano, colpito con calci, pugni e una mazza da baseball anche a terra: finisce in coma.",
+      "fonti": [
+       "Il Mattino",
+       "NTR24"
+      ]
+     },
+     {
+      "data": "ottobre 2025",
+      "fatto": "I primi quattro arresti: sono i quattro giovani giudicati ora.",
+      "fonti": [
+       "Il Mattino"
+      ]
+     },
+     {
+      "data": "marzo 2026",
+      "fatto": "Una nuova ordinanza riguarda altri cinque giovani, imputati di concorso in tentato omicidio, e altri tre per lesioni aggravate.",
+      "fonti": [
+       "Il Mattino"
+      ]
+     },
+     {
+      "data": "19 ottobre 2026",
+      "fatto": "Il giudice dell'udienza preliminare Roberto Nuzzo condanna i quattro: la pena più bassa è 6 anni, la più alta 8 anni e 20 giorni. Disposto il risarcimento alla parte civile, da calcolare in un'altra causa; NTR24 riporta un anticipo (provvisionale) di 5mila euro.",
+      "fonti": [
+       "NTR24",
+       "Il Mattino"
+      ]
+     },
+     {
+      "data": "10 novembre",
+      "fatto": "Previsto il processo con rito immediato (si va direttamente al processo, senza udienza preliminare) per gli altri cinque giovani imputati di tentato omicidio.",
+      "fonti": [
+       "Il Mattino"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Il ragazzo, allora 17enne, fu colpito con calci, pugni e una mazza da baseball, anche quando era già a terra.",
+      "fonti": [
+       "NTR24",
+       "Il Mattino"
+      ]
+     },
+     {
+      "testo": "La pm Marilia Capitanio aveva chiesto 8 anni per uno degli imputati e 10 anni per gli altri tre: le pene decise sono più basse.",
+      "fonti": [
+       "NTR24",
+       "Il Mattino"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "Le pene di tre imputati: per NTR24 uno ha avuto 8 anni e 20 giorni e due 8 anni; per Il Mattino tutti e tre hanno avuto 8 anni e 20 giorni. Il quarto ha avuto 6 anni per entrambi.",
+      "fonti": [
+       "NTR24",
+       "Il Mattino"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "Se le difese faranno appello.",
+     "Come sta oggi il ragazzo: gli articoli letti non lo dicono.",
+     "L'esito per gli altri giovani imputati: il loro processo è previsto dal 10 novembre."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Tentato omicidio a Montesarchio: condanne per i quattro giovani che hanno scelto il rito abbreviato",
+      "url": "https://www.ntr24.tv/2026/10/19/tentato-omicidio-a-montesarchio-condanne-per-i-quattro-giovani-che-hanno-scelto-il-rito-abbreviato/",
+      "data": "19 ott"
+     },
+     {
+      "nome": "Il Mattino",
+      "titolo": "Violenza nel Beneventano, botte con mazza da baseball a Montesarchio: condannati 4 giovanissimi",
+      "url": "https://www.ilmattino.it/benevento/violenza_nel_beneventano_botte_con_mazza_da_baseball_a_montesarchio_condannati_4_giovanissimi-9835274.html",
+      "data": "20 ott, 00:35"
+     }
+    ]
+   }
+  },
+  {
+   "id": "telese-concorso-carabinieri-indagati",
+   "titolo": "Telese Terme, soldi per entrare nei Carabinieri: otto indagati per traffico di influenze illecite, la Procura esclude il coinvolgimento dell'Arma",
+   "sintesi": "La Procura di Benevento ha chiuso le indagini su otto persone, indagate a vario titolo per concorso in traffico di influenze illecite. Secondo l'accusa un 76enne di Telese Terme avrebbe preso soldi in contanti da un aspirante carabiniere e dai suoi genitori vantando conoscenze; la Procura precisa che l'Arma non è coinvolta.",
+   "categoria": "cronaca",
+   "zona": "telesina",
+   "luogo": "Telese Terme",
+   "pubblicato": "2026-10-19",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/19/telese-terme-soldi-per-favorire-larruolamento-nei-carabinieri-8-indagati-la-procura-esclude-coinvgimento-dellarma/"
+    },
+    {
+     "nome": "LabTV",
+     "url": "https://www.labtv.net/cronaca/2026/10/19/concorso-nellarma-otto-indagati-per-traffico-di-influenze-illecite/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/prometteva-aiuti-per-entrare-nei-carabinieri-indagato-76enne/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/concorso-carabinieri-procura-traffico-influenze-illecite/"
+    }
+   ],
+   "articolo": {
+    "aggiornato": "2026-10-20T09:25:00+02:00",
+    "cosa": "Il reato contestato è il traffico di influenze illecite (farsi dare soldi vantando rapporti con chi ha un ruolo pubblico, per influire sulle sue decisioni). La Procura ha mandato agli indagati l'avviso di conclusione delle indagini, il passo che di solito precede la richiesta di processo, e ha diffuso una nota dopo alcuni articoli di stampa. Come ricorda Anteprima24, gli indagati sono da considerare innocenti fino a una sentenza definitiva.",
+    "cronologia": [
+     {
+      "data": "periodo non indicato",
+      "fatto": "Un aspirante carabiniere e i genitori avrebbero dato una somma in contanti al 76enne, che vantava conoscenze nelle istituzioni; il giovane è stato poi arruolato. Al 76enne sono contestati anche altri episodi simili, insieme ad altri indagati.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio",
+       "LabTV"
+      ]
+     },
+     {
+      "data": "nei giorni scorsi",
+      "fatto": "La Procura notifica agli otto indagati l'avviso di conclusione delle indagini preliminari.",
+      "fonti": [
+       "NTR24",
+       "LabTV",
+       "Anteprima24"
+      ]
+     },
+     {
+      "data": "19 ottobre",
+      "fatto": "La Procura precisa che dagli atti non emerge alcun coinvolgimento, nemmeno marginale, dell'Arma o di chi gestisce i concorsi: le conoscenze vantate si sono rivelate senza fondamento.",
+      "fonti": [
+       "Cronache del Sannio",
+       "LabTV",
+       "Anteprima24",
+       "NTR24"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Gli indagati sono otto, a vario titolo, per concorso in traffico di influenze illecite.",
+      "fonti": [
+       "NTR24",
+       "LabTV",
+       "Anteprima24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "La Procura esclude il coinvolgimento dell'Arma dei Carabinieri.",
+      "fonti": [
+       "NTR24",
+       "LabTV",
+       "Anteprima24",
+       "Cronache del Sannio"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Quanti soldi sono stati pagati e in che periodo: gli articoli non lo dicono.",
+     "Chi sono gli altri sette indagati e che ruolo avrebbero avuto.",
+     "Se si andrà a processo."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Telese Terme, soldi per favorire l'arruolamento nei Carabinieri: 8 indagati. La Procura esclude coinvgimento dell'Arma",
+      "url": "https://www.ntr24.tv/2026/10/19/telese-terme-soldi-per-favorire-larruolamento-nei-carabinieri-8-indagati-la-procura-esclude-coinvgimento-dellarma/",
+      "data": "19 ott"
+     },
+     {
+      "nome": "LabTV",
+      "titolo": "Concorso nell'Arma, otto indagati per traffico di influenze illecite",
+      "url": "https://www.labtv.net/cronaca/2026/10/19/concorso-nellarma-otto-indagati-per-traffico-di-influenze-illecite/",
+      "data": "19 ott"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Prometteva aiuti per entrare nei Carabinieri: indagato 76enne",
+      "url": "https://www.anteprima24.it/benevento/prometteva-aiuti-per-entrare-nei-carabinieri-indagato-76enne/",
+      "data": "19 ott"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Concorso carabinieri, otto indagati. Procura: \"Arma non coinvolta nel traffico di influenze illecite\"",
+      "url": "https://www.cronachedelsannio.it/sannionews24/concorso-carabinieri-procura-traffico-influenze-illecite/",
+      "data": "19 ott"
+     }
     ]
    }
   },
@@ -377,10 +1127,14 @@
     {
      "nome": "Il Sannio Quotidiano",
      "url": "https://www.ilsannioquotidiano.it/2026/10/20/addetti-air-minacciati-da-un-giovane-sullo-scooter-uno-di-loro-accusa-un-malore/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/minaccia-air-dipendente-accusa-malore/"
     }
    ],
    "articolo": {
-    "aggiornato": "2026-10-20T08:28:00+02:00",
+    "aggiornato": "2026-10-20T09:25:00+02:00",
     "cosa": "Un episodio di minacce contro il personale di un autobus urbano di AIR Campania a Benevento riapre il tema della sicurezza sui mezzi pubblici.",
     "cronologia": [
      {
@@ -388,7 +1142,8 @@
       "fatto": "Nel primo pomeriggio un giovane in scooter affianca l'autobus della linea urbana 05, insulta alcuni passeggeri e minaccia il personale dalla strada.",
       "fonti": [
        "Anteprima24",
-       "LabTV"
+       "LabTV",
+       "Cronache del Sannio"
       ]
      },
      {
@@ -396,7 +1151,8 @@
       "fatto": "Un controllore dei biglietti (i giornali lo chiamano «verificatore») si sente male; arrivano i sanitari, la Polizia e i Carabinieri per gli accertamenti.",
       "fonti": [
        "Anteprima24",
-       "LabTV"
+       "LabTV",
+       "Cronache del Sannio"
       ]
      },
      {
@@ -404,7 +1160,8 @@
       "fatto": "L'amministratore unico di AIR Campania esprime solidarietà al personale; l'azienda aveva proposto alla Prefettura un tavolo tecnico con le forze dell'ordine sulla sicurezza nel trasporto pubblico.",
       "fonti": [
        "Anteprima24",
-       "LabTV"
+       "LabTV",
+       "Cronache del Sannio"
       ]
      },
      {
@@ -422,7 +1179,8 @@
       "fonti": [
        "Anteprima24",
        "LabTV",
-       "Il Sannio Quotidiano"
+       "Il Sannio Quotidiano",
+       "Cronache del Sannio"
       ]
      }
     ],
@@ -454,9 +1212,358 @@
       "titolo": "Minacce al personale Air Campania, Errico: piena solidarietà, serve più sicurezza",
       "url": "https://www.labtv.net/politica/2026/10/19/minacce-al-personale-air-campania-errico-piena-solidarieta-serve-piu-sicurezza/",
       "data": "19 ott"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Minaccia in motorino personale e passeggeri Air: dipendente accusa malore",
+      "url": "https://www.cronachedelsannio.it/sannionews24/minaccia-air-dipendente-accusa-malore/",
+      "data": "19 ott"
+     }
+    ],
+    "divergono": []
+   },
+   "rilevante": false
+  },
+  {
+   "id": "ferrovia-benevento-cancello-rfi",
+   "titolo": "Ferrovia Benevento-Cancello per la Valle Caudina chiusa dal 2021: comitato utenti ed Errico chiedono di passarla a RFI",
+   "sintesi": "Il Nuovo Comitato Utenti Ferrovia Valle Caudina e il consigliere regionale di Forza Italia Fernando Errico chiedono che la linea, ferma per lavori, passi a RFI (Rete Ferroviaria Italiana, la società della rete ferroviaria nazionale). La riapertura è prevista nei primi mesi del 2027; il comitato teme che i treni arrivino solo a Benevento Appia e non alla stazione Centrale.",
+   "categoria": "politica",
+   "zona": "caudina",
+   "luogo": "Valle Caudina",
+   "pubblicato": "2026-10-19",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/19/ferrovia-valle-caudina-sei-anni-di-stop-e-il-futuro-resta-incerto-il-comitato-utenti-chiede-il-passaggio-a-rfi/"
+    },
+    {
+     "nome": "LabTV",
+     "url": "https://www.labtv.net/politica/2026/10/19/linea-ferroviaria-napoli-benevento-errico-basta-rinvii-gestione-passi-a-rfi-come-ho-gia-proposto-in-consiglio-regionale/"
+    }
+   ],
+   "articolo": {
+    "aggiornato": "2026-10-20T09:25:00+02:00",
+    "cosa": "La linea Benevento-Cancello, che attraversa la Valle Caudina, è chiusa dal 2021 per i lavori di ammodernamento. Il comitato denuncia i disagi per pendolari, studenti e lavoratori e giudica i bus sostitutivi una soluzione non adeguata.",
+    "cronologia": [
+     {
+      "data": "2021",
+      "fatto": "La linea chiude per i lavori di ammodernamento.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "data": "19 ottobre",
+      "fatto": "Il comitato, con una nota firmata da Cosimo Nicchiniello e Giuseppe Iodice, chiede il passaggio della linea a RFI richiamando una legge del 2017 e i casi di Piemonte e Umbria; ricorda i 109 milioni di euro di fondi Pnrr per i lavori e si dice preoccupato per le parole dei vertici di EAV sui costi della linea.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "data": "19 ottobre",
+      "fatto": "Errico rilancia la proposta, già fatta in Consiglio regionale, e chiede di separare la gestione dei binari dal servizio dei treni, tutelando i lavoratori.",
+      "fonti": [
+       "LabTV"
+      ]
+     },
+     {
+      "data": "primi mesi del 2027",
+      "fatto": "Riapertura prevista, dopo lavori, collaudi e autorizzazioni dell'Ansfisa (l'agenzia nazionale per la sicurezza delle ferrovie).",
+      "fonti": [
+       "NTR24",
+       "LabTV"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "La riapertura è prevista nei primi mesi del 2027.",
+      "fonti": [
+       "NTR24",
+       "LabTV"
+      ]
+     },
+     {
+      "testo": "Si chiede di affidare la linea a RFI.",
+      "fonti": [
+       "NTR24",
+       "LabTV"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Cosa risponde la Regione Campania alla richiesta di passare la linea a RFI.",
+     "Se alla riapertura i treni arriveranno di nuovo alla stazione di Benevento Centrale."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Ferrovia Valle Caudina, sei anni di stop e il futuro resta incerto: il Comitato utenti chiede il passaggio a RFI",
+      "url": "https://www.ntr24.tv/2026/10/19/ferrovia-valle-caudina-sei-anni-di-stop-e-il-futuro-resta-incerto-il-comitato-utenti-chiede-il-passaggio-a-rfi/",
+      "data": "19 ott"
+     },
+     {
+      "nome": "LabTV",
+      "titolo": "Linea ferroviaria Napoli-Benevento, Errico: «Basta rinvii, gestione passi a Rfi come ho già proposto in Consiglio Regionale»",
+      "url": "https://www.labtv.net/politica/2026/10/19/linea-ferroviaria-napoli-benevento-errico-basta-rinvii-gestione-passi-a-rfi-come-ho-gia-proposto-in-consiglio-regionale/",
+      "data": "19 ott"
      }
     ]
    }
+  },
+  {
+   "id": "sentenza-spaccio-valle-caudina",
+   "titolo": "Droga tra Caserta e Valle Caudina, cade l'accusa di associazione: tre condannati per alcuni episodi di spaccio, tra loro un 60enne di Bonea",
+   "sintesi": "Il Tribunale di Santa Maria Capua Vetere ha assolto tre imputati dall'accusa di associazione finalizzata al traffico di droga e da diversi episodi di spaccio, e li ha condannati per altri episodi: 8 anni a un 41enne di San Felice a Cancello, 6 anni a un 60enne di Bonea e a una 47enne di Pozzuoli. La Dda aveva chiesto 26 e 13 anni.",
+   "categoria": "cronaca",
+   "zona": "caudina",
+   "luogo": "Valle Caudina",
+   "pubblicato": "2026-10-19",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/droga-tra-caserta-e-la-valle-caudina-cade-laccusa-di-associazione-tre-condanne-per-spaccio/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/19/narcotraffico-assolti-dallaccusa-di-associazione-a-delinquere-morgillo-iovino-e-rocco/"
+    }
+   ],
+   "articolo": {
+    "aggiornato": "2026-10-20T09:25:00+02:00",
+    "cosa": "Secondo l'accusa della Dda (la Direzione distrettuale antimafia, l'ufficio della Procura che indaga sulla criminalità organizzata), il gruppo consegnava droga spostandosi da un posto all'altro, con appuntamenti presi al telefono, su WhatsApp e su Facebook, tra Caserta, Valle Caudina, Valle di Suessola e Valle di Maddaloni. Il tribunale non ha riconosciuto l'associazione.",
+    "cronologia": [
+     {
+      "data": "19 ottobre",
+      "fatto": "Sentenza del Tribunale di Santa Maria Capua Vetere: assoluzione dall'associazione e da diversi episodi di spaccio, condanna per alcuni episodi.",
+      "fonti": [
+       "Anteprima24",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "data": "prossimi passi",
+      "fatto": "La difesa, con gli avvocati Vittorio Fucci e Daniela Martino, annuncia l'appello; per due imputati valuterà di collegare questi fatti a condanne già avute (la cosiddetta «continuazione»), cosa che può cambiare il calcolo della pena.",
+      "fonti": [
+       "Anteprima24",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "I tre sono stati assolti dall'accusa di associazione e condannati solo per alcuni episodi di spaccio: 8, 6 e 6 anni.",
+      "fonti": [
+       "Anteprima24",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "La Dda aveva chiesto 26 anni per quello che considerava il promotore e 13 anni per ciascuno degli altri due.",
+      "fonti": [
+       "Anteprima24",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "In che periodo sono avvenuti i fatti: gli articoli non lo indicano."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Droga tra Caserta e la Valle Caudina, cade l’accusa di associazione: tre condanne per spaccio",
+      "url": "https://www.anteprima24.it/benevento/droga-tra-caserta-e-la-valle-caudina-cade-laccusa-di-associazione-tre-condanne-per-spaccio/",
+      "data": "19 ott"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Narcotraffico| Assolti dall'accusa di associazione a delinquere Morgillo, Iovino e Rocco",
+      "url": "https://www.beneventonews24.it/2026/10/19/narcotraffico-assolti-dallaccusa-di-associazione-a-delinquere-morgillo-iovino-e-rocco/",
+      "data": "19 ott"
+     }
+    ]
+   }
+  },
+  {
+   "id": "scontro-rione-ferrovia",
+   "titolo": "Benevento, scontro tra due auto al Rione Ferrovia: ferite due donne di 47 e 51 anni",
+   "sintesi": "Domenica mattina, 18 ottobre, due auto si sono scontrate al Rione Ferrovia, all'incrocio con via Grimoaldo Re. Due donne di 47 e 51 anni sono state portate in ospedale, una al San Pio e l'altra al Fatebenefratelli.",
+   "categoria": "cronaca",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-18",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/441380/benevento-scontro-al-rione-ferrovia-due-donne-ferite.shtml"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/18/benevento-scontro-tra-due-auto-al-rione-ferrovia-ferite-due-donne/"
+    }
+   ],
+   "articolo": {
+    "aggiornato": "2026-10-20T09:25:00+02:00",
+    "cosa": "Incidente tra due auto in un incrocio del Rione Ferrovia a Benevento. Le cause sono ancora da accertare.",
+    "cronologia": [
+     {
+      "data": "18 ottobre, mattina",
+      "fatto": "Scontro tra due auto all'incrocio tra via Grimoaldo Re e via Francesco Campagna (NTR24 scrive Compagna). Sul posto i sanitari, che portano le due donne ferite in ospedale.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Le ferite sono due donne di 47 e 51 anni, portate una al San Pio e l'altra al Fatebenefratelli.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Le cause e la dinamica sono ancora da accertare.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "Il nome della seconda strada: «via Francesco Campagna» per Ottopagine, «via Francesco Compagna» per NTR24.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "Come stanno le due donne: gli articoli non lo dicono.",
+     "Come è avvenuto lo scontro."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Benevento: scontro al Rione Ferrovia, due donne ferite",
+      "url": "https://www.ottopagine.it/bn/cronaca/441380/benevento-scontro-al-rione-ferrovia-due-donne-ferite.shtml",
+      "data": "18 ott, 12:58"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Benevento, scontro tra due auto al Rione Ferrovia: ferite due donne",
+      "url": "https://www.ntr24.tv/2026/10/18/benevento-scontro-tra-due-auto-al-rione-ferrovia-ferite-due-donne/",
+      "data": "18 ott"
+     }
+    ]
+   }
+  },
+  {
+   "id": "esercitazione-terremoto",
+   "titolo": "Esercitazione di Protezione civile: terremoto simulato ad Apollosa, Arpaise, Ceppaloni e San Leucio del Sannio",
+   "sintesi": "Lunedì 19 ottobre i quattro Comuni hanno simulato un forte terremoto: evacuazione delle scuole, ricerca di un disperso, soccorso ai feriti e prove di comunicazione senza telefono e internet.",
+   "categoria": "eventi",
+   "zona": "provincia",
+   "luogo": "San Leucio del Sannio",
+   "pubblicato": "2026-10-19",
+   "stato": "confermata",
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/19/terremoto-simulato-nel-sannio-quattro-comuni-in-campo-testata-la-macchina-dei-soccorsi/"
+    },
+    {
+     "nome": "LabTV",
+     "url": "https://www.labtv.net/attualita/2026/10/19/terremoto-esercitazione-di-protezione-civile-nel-sannio/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/441518/comuni-insieme-per-la-prevenzione-terremoti-esercitazione-nel-sannio-video.shtml"
+    }
+   ],
+   "articolo": {
+    "aggiornato": "2026-10-20T08:28:00+02:00",
+    "cosa": "Nell'ambito della settimana della Protezione civile, Regione Campania e Prefettura di Benevento hanno provato con quattro Comuni la risposta a un terremoto.",
+    "cronologia": [
+     {
+      "data": "prima",
+      "fatto": "Corso di formazione per sindaci, amministratori e responsabili delle funzioni di supporto.",
+      "fonti": [
+       "LabTV"
+      ]
+     },
+     {
+      "data": "19 ott, 10:00",
+      "fatto": "Simulazione della scossa; attivati i centri operativi dei quattro Comuni e il centro intercomunale a San Leucio del Sannio.",
+      "fonti": [
+       "NTR24",
+       "LabTV"
+      ]
+     },
+     {
+      "data": "19 ottobre",
+      "fatto": "Evacuazione delle scuole di Apollosa, Ceppaloni e San Leucio; prove nella struttura Asl di Arpaise; ricerca di un disperso con unità cinofile; prove di radiocomunicazioni alternative.",
+      "fonti": [
+       "LabTV",
+       "NTR24"
+      ]
+     },
+     {
+      "data": "19 ottobre",
+      "fatto": "Ad Arpaise partecipa l'Esercito con mezzi per la logistica.",
+      "fonti": [
+       "NTR24",
+       "LabTV"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "I Comuni coinvolti sono Apollosa, Arpaise, Ceppaloni e San Leucio del Sannio, con il coordinamento della Prefettura.",
+      "fonti": [
+       "NTR24",
+       "LabTV"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "L'esito: i giornali non riportano una valutazione dell'esercitazione."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Terremoto simulato nel Sannio, quattro Comuni in campo",
+      "url": "https://www.ntr24.tv/2026/10/19/terremoto-simulato-nel-sannio-quattro-comuni-in-campo-testata-la-macchina-dei-soccorsi/",
+      "data": "19 ott"
+     },
+     {
+      "nome": "LabTV",
+      "titolo": "Terremoto, esercitazione di Protezione Civile nel Sannio",
+      "url": "https://www.labtv.net/attualita/2026/10/19/terremoto-esercitazione-di-protezione-civile-nel-sannio/",
+      "data": "19 ott"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Comuni insieme per la prevenzione terremoti. Esercitazione nel Sannio",
+      "url": "https://www.ottopagine.it/bn/cronaca/441518/comuni-insieme-per-la-prevenzione-terremoti-esercitazione-nel-sannio-video.shtml",
+      "data": "19 ott, 18:46"
+     }
+    ],
+    "divergono": []
+   },
+   "rilevante": false
   },
   {
    "id": "sciame-cusano-mutri",
@@ -552,100 +1659,10 @@
       "url": "https://www.paesenews.it/?p=313059",
       "data": "18 ott"
      }
-    ]
-   }
-  },
-  {
-   "id": "esercitazione-terremoto",
-   "titolo": "Esercitazione di Protezione civile: terremoto simulato ad Apollosa, Arpaise, Ceppaloni e San Leucio del Sannio",
-   "sintesi": "Lunedì 19 ottobre i quattro Comuni hanno simulato un forte terremoto: evacuazione delle scuole, ricerca di un disperso, soccorso ai feriti e prove di comunicazione senza telefono e internet.",
-   "categoria": "eventi",
-   "zona": "provincia",
-   "luogo": "San Leucio del Sannio",
-   "pubblicato": "2026-10-19",
-   "stato": "confermata",
-   "fonti": [
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/19/terremoto-simulato-nel-sannio-quattro-comuni-in-campo-testata-la-macchina-dei-soccorsi/"
-    },
-    {
-     "nome": "LabTV",
-     "url": "https://www.labtv.net/attualita/2026/10/19/terremoto-esercitazione-di-protezione-civile-nel-sannio/"
-    },
-    {
-     "nome": "Ottopagine",
-     "url": "https://www.ottopagine.it/bn/cronaca/441518/comuni-insieme-per-la-prevenzione-terremoti-esercitazione-nel-sannio-video.shtml"
-    }
-   ],
-   "articolo": {
-    "aggiornato": "2026-10-20T08:28:00+02:00",
-    "cosa": "Nell'ambito della settimana della Protezione civile, Regione Campania e Prefettura di Benevento hanno provato con quattro Comuni la risposta a un terremoto.",
-    "cronologia": [
-     {
-      "data": "prima",
-      "fatto": "Corso di formazione per sindaci, amministratori e responsabili delle funzioni di supporto.",
-      "fonti": [
-       "LabTV"
-      ]
-     },
-     {
-      "data": "19 ott, 10:00",
-      "fatto": "Simulazione della scossa; attivati i centri operativi dei quattro Comuni e il centro intercomunale a San Leucio del Sannio.",
-      "fonti": [
-       "NTR24",
-       "LabTV"
-      ]
-     },
-     {
-      "data": "19 ottobre",
-      "fatto": "Evacuazione delle scuole di Apollosa, Ceppaloni e San Leucio; prove nella struttura Asl di Arpaise; ricerca di un disperso con unità cinofile; prove di radiocomunicazioni alternative.",
-      "fonti": [
-       "LabTV",
-       "NTR24"
-      ]
-     },
-     {
-      "data": "19 ottobre",
-      "fatto": "Ad Arpaise partecipa l'Esercito con mezzi per la logistica.",
-      "fonti": [
-       "NTR24",
-       "LabTV"
-      ]
-     }
     ],
-    "concordano": [
-     {
-      "testo": "I Comuni coinvolti sono Apollosa, Arpaise, Ceppaloni e San Leucio del Sannio, con il coordinamento della Prefettura.",
-      "fonti": [
-       "NTR24",
-       "LabTV"
-      ]
-     }
-    ],
-    "non_si_sa": [
-     "L'esito: i giornali non riportano una valutazione dell'esercitazione."
-    ],
-    "fonti": [
-     {
-      "nome": "NTR24",
-      "titolo": "Terremoto simulato nel Sannio, quattro Comuni in campo",
-      "url": "https://www.ntr24.tv/2026/10/19/terremoto-simulato-nel-sannio-quattro-comuni-in-campo-testata-la-macchina-dei-soccorsi/",
-      "data": "19 ott"
-     },
-     {
-      "nome": "LabTV",
-      "titolo": "Terremoto, esercitazione di Protezione Civile nel Sannio",
-      "url": "https://www.labtv.net/attualita/2026/10/19/terremoto-esercitazione-di-protezione-civile-nel-sannio/",
-      "data": "19 ott"
-     },
-     {
-      "nome": "Ottopagine",
-      "titolo": "Comuni insieme per la prevenzione terremoti. Esercitazione nel Sannio",
-      "url": "https://www.ottopagine.it/bn/cronaca/441518/comuni-insieme-per-la-prevenzione-terremoti-esercitazione-nel-sannio-video.shtml"
-     }
-    ]
-   }
+    "divergono": []
+   },
+   "rilevante": false
   },
   {
    "id": "cocchia-cavour-asfalto",
@@ -699,7 +1716,9 @@
       "data": "15 ott"
      }
     ]
-   }
+   },
+   "rilevante": false,
+   "in_vigore_fino": "2026-10-31"
   },
   {
    "id": "mellusi-annunziata",
@@ -766,6 +1785,86 @@
       "url": "https://comune.benevento.it/novita/da-mercoled-21-ottobre-divieti-di-sosta-su-parte-di-viale-mellusi-piazzetta-s-rita-e-rampa-annunziata/",
       "data": "19 ott"
      }
+    ],
+    "divergono": []
+   },
+   "rilevante": false
+  },
+  {
+   "id": "sagra-castagna-vitulano",
+   "titolo": "Vitulano, dal 29 ottobre al 1° novembre la 33ª Sagra della castagna e del pecorino, con escursioni nei castagneti di Monte Drago",
+   "sintesi": "Quattro giorni di sagra a Vitulano, promossa dalla Pro Loco Camposauro con il Comune: escursioni nei castagneti di Monte Drago dal 29 al 31 ottobre, passeggiate nel centro storico il 31 ottobre e il 1° novembre e lo Stand del Contadino in piazza San Menna.",
+   "categoria": "eventi",
+   "zona": "provincia",
+   "luogo": "Vitulano",
+   "pubblicato": "2026-10-19",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/vitulano-sagra-castagna-pecorino-trekking/"
+    },
+    {
+     "nome": "InfoSannioNews",
+     "url": "https://www.infosannionews.it/attualita/2026/al-via-la-33a-sagra-della-castagna-e-del-pecorino-vitulanese-dal-29-ottobre-al-1-novembre.html"
+    }
+   ],
+   "articolo": {
+    "aggiornato": "2026-10-20T09:25:00+02:00",
+    "cosa": "Alla 33ª edizione, la sagra mette insieme i piatti della cucina contadina e le camminate per conoscere i boschi e il centro del paese.",
+    "cronologia": [
+     {
+      "data": "29, 30 e 31 ottobre",
+      "fatto": "Escursioni in montagna nei castagneti di Monte Drago, con ritrovo in piazza Trinità.",
+      "fonti": [
+       "Anteprima24",
+       "InfoSannioNews"
+      ]
+     },
+     {
+      "data": "31 ottobre e 1° novembre",
+      "fatto": "Passeggiate a piedi nel centro storico (trekking urbano).",
+      "fonti": [
+       "Anteprima24",
+       "InfoSannioNews"
+      ]
+     },
+     {
+      "data": "29 ottobre - 1° novembre",
+      "fatto": "Stand del Contadino in piazza San Menna con piatti della tradizione, tra cui la zuppa d'autunno con zucca, ceci e castagne.",
+      "fonti": [
+       "Anteprima24",
+       "InfoSannioNews"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Organizza la Pro Loco Camposauro, con il patrocinio del Comune di Vitulano e di UNPLI Benevento; le escursioni sono con Trekking Camposauro – ASD La Dormiente.",
+      "fonti": [
+       "Anteprima24",
+       "InfoSannioNews"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Gli orari: gli articoli non li indicano."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Vitulano, la 33ª Sagra della Castagna e del Pecorino Vitulanese si vive anche camminando",
+      "url": "https://www.anteprima24.it/benevento/vitulano-sagra-castagna-pecorino-trekking/",
+      "data": "19 ott"
+     },
+     {
+      "nome": "InfoSannioNews",
+      "titolo": "Al via la 33ª Sagra della Castagna e del Pecorino Vitulanese dal 29 ottobre al 1° novembre",
+      "url": "https://www.infosannionews.it/attualita/2026/al-via-la-33a-sagra-della-castagna-e-del-pecorino-vitulanese-dal-29-ottobre-al-1-novembre.html",
+      "data": "19 ott"
+     }
     ]
    }
   }
@@ -774,9 +1873,9 @@
   {
    "id": "caro-gasolio-sannio",
    "titolo": "Caro gasolio, la protesta di tir e agricoltori nel Sannio: dove sono i blocchi, cosa manca e cosa succede adesso",
-   "sommario": "Da lunedì 19 ottobre gli autotrasportatori fermano i camion sull'Appia e a Castel del Lago, nella notte anche sulla Telesina; da giovedì 22 si aggiungono gli agricoltori. Nei supermercati mancano i prodotti freschi. Il Governo ha convocato le associazioni per il 27 ottobre.",
+   "sommario": "Da lunedì 19 ottobre gli autotrasportatori fermano i camion sull'Appia a Tufara Valle e a Castel del Lago; ci sono stati blocchi anche sulla Telesina a San Salvatore Telesino. Nei supermercati mancano i prodotti freschi e alcuni distributori hanno finito il gasolio. Da giovedì 22 si aggiungono gli agricoltori. Oggi, 20 ottobre, il ministro Salvini incontra a Milano associazioni e gruppi di protesta, anche della Campania.",
    "luogo": "Provincia di Benevento",
-   "aggiornato": "2026-10-20T08:45:00+02:00",
+   "aggiornato": "2026-10-20T09:25:00+02:00",
    "collegate": [
     "tir-appia-telesina",
     "scaffali-vuoti",
@@ -791,32 +1890,39 @@
      ]
     },
     {
-     "testo": "Nel Sannio i camion sono fermi sulla statale Appia a Tufara Valle e al casello di Castel del Lago; le auto passano, ma a rilento.",
+     "testo": "Nel Sannio i camion sono fermi sulla statale Appia a Tufara Valle e al casello di Castel del Lago; ci sono stati blocchi anche sulla Telesina a San Salvatore Telesino. Le auto passano, ma a rilento.",
      "fonti": [
       "Ottopagine (19/10)",
       "NTR24",
-      "Il Sannio Quotidiano"
+      "Il Sannio Quotidiano",
+      "Ottopagine (20/10)",
+      "Il Mattino"
      ]
     },
     {
-     "testo": "Nei supermercati mancano frutta, verdura e carne; alcuni distributori sono rimasti senza carburante.",
+     "testo": "Nei supermercati mancano frutta, verdura e carne; alcuni distributori sono rimasti senza gasolio.",
      "fonti": [
       "NTR24 (supermercati)",
       "Il Sannio Quotidiano (scorte)",
-      "Ottopagine (19/10)"
+      "Ottopagine (19/10)",
+      "Cronache del Sannio",
+      "BeneventoNews24"
      ]
     },
     {
      "testo": "Da giovedì 22 ottobre presidi degli agricoltori sulla Sannitica, sulla statale 212 e a Ponte delle Tavole.",
      "fonti": [
       "Ottopagine (agricoltori)",
-      "NTR24"
+      "NTR24",
+      "BeneventoNews24"
      ]
     },
     {
-     "testo": "Il ministero dei Trasporti ha convocato le associazioni dell'autotrasporto per il 27 ottobre.",
+     "testo": "Il tavolo con il Governo, che era stato fissato per il 27 ottobre, è stato anticipato: si tiene oggi, martedì 20 ottobre, in Prefettura a Milano con il ministro dei Trasporti Salvini.",
      "fonti": [
-      "Il Post"
+      "Il Post",
+      "ANSA (17/10)",
+      "Il Sole 24 Ore"
      ]
     }
    ],
@@ -836,6 +1942,12 @@
         "Il Sannio Quotidiano",
         "Ottopagine (20/10)"
        ]
+      },
+      {
+       "testo": "A Tufara Valle i camionisti raccontano che un viaggio di andata e ritorno da Benevento a Brescia costa ora circa 1.500 euro di gasolio, contro i mille o poco più di prima.",
+       "fonti": [
+        "Il Mattino"
+       ]
       }
      ]
     },
@@ -843,11 +1955,13 @@
      "titolo": "Dove sono i blocchi",
      "punti": [
       {
-       "testo": "Statale Appia, all'altezza di Tufara Valle: tir fermi dal 19 ottobre.",
+       "testo": "Statale Appia, all'altezza di Tufara Valle: tir fermi dalla notte tra il 18 e il 19 ottobre. Il Mattino conta un centinaio di mezzi pesanti, LabTV una decina.",
        "fonti": [
         "Ottopagine (19/10)",
         "NTR24",
-        "Il Sannio Quotidiano"
+        "Il Sannio Quotidiano",
+        "Il Mattino",
+        "LabTV (carovita)"
        ]
       },
       {
@@ -855,13 +1969,15 @@
        "fonti": [
         "Ottopagine (19/10)",
         "NTR24",
-        "Il Sannio Quotidiano"
+        "Il Sannio Quotidiano",
+        "Il Mattino"
        ]
       },
       {
-       "testo": "Telesina, soprattutto a San Salvatore Telesino: blocchi nella notte tra il 19 e il 20 ottobre, con code. Per ora lo riporta un solo giornale.",
+       "testo": "Telesina, soprattutto a San Salvatore Telesino: blocchi tra il 19 e il 20 ottobre, con code nella notte e rallentamenti verso Caianello.",
        "fonti": [
-        "Ottopagine (20/10)"
+        "Ottopagine (20/10)",
+        "Il Mattino"
        ]
       },
       {
@@ -875,7 +1991,8 @@
        "testo": "Da giovedì 22: Sannitica (statale 87), statale 212 e Benevento, zona Ponte delle Tavole.",
        "fonti": [
         "Ottopagine (agricoltori)",
-        "NTR24"
+        "NTR24",
+        "BeneventoNews24"
        ]
       }
      ]
@@ -884,10 +2001,12 @@
      "titolo": "Cosa cambia per chi vive nel Sannio",
      "paragrafi": [
       {
-       "testo": "Nei supermercati di Benevento e provincia i reparti dei prodotti freschi sono sguarniti: mancano frutta, verdura, carne e alcuni prodotti di prima necessità.",
+       "testo": "Nei supermercati di Benevento e provincia i reparti dei prodotti freschi sono sguarniti: mancano frutta, verdura, carne e alcuni prodotti di prima necessità; BeneventoNews24 cita anche pasta e latticini.",
        "fonti": [
         "NTR24 (supermercati)",
-        "Il Sannio Quotidiano (scorte)"
+        "Il Sannio Quotidiano (scorte)",
+        "Cronache del Sannio",
+        "BeneventoNews24"
        ]
       },
       {
@@ -895,13 +2014,22 @@
        "fonti": [
         "Ottopagine (19/10)",
         "Ottopagine (20/10)",
-        "NTR24"
+        "NTR24",
+        "Cronache del Sannio",
+        "BeneventoNews24"
        ]
       },
       {
        "testo": "Le aziende agroalimentari sannite segnalano ritardi su semola, mangimi, imballaggi e prodotti freschi, e il rischio di fermarsi e ricorrere alla cassa integrazione.",
        "fonti": [
-        "NTR24 (sindacati)"
+        "NTR24 (sindacati)",
+        "Il Mattino"
+       ]
+      },
+      {
+       "testo": "Sull'Appia a Tufara Valle, nella tarda mattinata del 19, i camionisti hanno lasciato passare il traffico su un lato della strada per alcune ore.",
+       "fonti": [
+        "Il Mattino"
        ]
       }
      ]
@@ -929,9 +2057,23 @@
        ]
       },
       {
-       "testo": "Il ministero dei Trasporti ha convocato le associazioni per il 27 ottobre; il ministro Urso ha detto che eventuali nuove misure arriveranno dopo quell'incontro.",
+       "testo": "Il ministro Urso aveva detto che nuove misure sarebbero arrivate dopo l'incontro di fine mese con le associazioni, fissato per il 27 ottobre. Il ministro Salvini ha poi anticipato: tavolo tecnico oggi alle 10 in Prefettura a Milano con sindacati e associazioni, nel pomeriggio incontro con i gruppi spontanei di Puglia, Sicilia, Calabria e Campania.",
        "fonti": [
-        "Il Post"
+        "Il Post",
+        "ANSA (17/10)",
+        "Il Sole 24 Ore"
+       ]
+      },
+      {
+       "testo": "Secondo Il Sole 24 Ore il Governo valuta di sbloccare più in fretta 590 milioni già stanziati per rinnovare i mezzi delle aziende, di cercare altri fondi per l'autotrasporto e di prolungare al 2027 il credito d'imposta sul gasolio (uno sconto sulle tasse da pagare).",
+       "fonti": [
+        "Il Sole 24 Ore"
+       ]
+      },
+      {
+       "testo": "I sindaci di Apollosa, Danilo Parente, e di San Martino Valle Caudina, Pasquale Pisano, sono andati a Tufara Valle a portare solidarietà ai camionisti.",
+       "fonti": [
+        "Il Mattino"
        ]
       }
      ]
@@ -940,27 +2082,39 @@
    "domande": [
     {
      "d": "Le auto riescono a passare?",
-     "r": "Sì, secondo i giornali le auto transitano lentamente; i manifestanti fermano i camion e chiedono ai colleghi di aderire. Il Sannio Quotidiano parla comunque di forti disagi e code.",
+     "r": "Sì, secondo i giornali le auto transitano lentamente; i manifestanti fermano i camion e chiedono ai colleghi di aderire. Il Sannio Quotidiano parla comunque di forti disagi e code. A Tufara Valle, per alcune ore, i camionisti hanno lasciato libero un lato della strada.",
      "fonti": [
       "Ottopagine (19/10)",
       "NTR24",
-      "Il Sannio Quotidiano"
+      "Il Sannio Quotidiano",
+      "Il Mattino"
      ]
     },
     {
      "d": "Quanto durerà?",
-     "r": "Non c'è una data di fine: i manifestanti parlano di protesta a oltranza fino a una risposta del Governo. Il prossimo appuntamento è l'incontro al ministero del 27 ottobre.",
+     "r": "Non c'è una data di fine. A Tufara Valle i camionisti dicono che non si muoveranno almeno fino al tavolo tecnico con il Governo. Oggi a Milano il ministro Salvini incontra associazioni e gruppi di protesta.",
      "fonti": [
       "Ottopagine (20/10)",
-      "Il Post"
+      "Il Mattino",
+      "ANSA (17/10)",
+      "Il Sole 24 Ore"
+     ]
+    },
+    {
+     "d": "Cosa succede oggi?",
+     "r": "Il ministro dei Trasporti Salvini incontra alle 10, in Prefettura a Milano, sindacati e associazioni dell'autotrasporto; nel pomeriggio i gruppi spontanei di Puglia, Sicilia, Calabria e Campania.",
+     "fonti": [
+      "ANSA (17/10)",
+      "Il Sole 24 Ore"
      ]
     },
     {
      "d": "Cosa succede giovedì 22 ottobre?",
-     "r": "Partono i presidi degli agricoltori sulla Sannitica, sulla statale 212 e a Ponte delle Tavole; lo stesso giorno Coldiretti Campania manifesta a Napoli.",
+     "r": "Partono i presidi degli agricoltori sulla Sannitica, sulla statale 212 e a Ponte delle Tavole; lo stesso giorno Coldiretti Campania manifesta a Napoli, in via Santa Lucia.",
      "fonti": [
       "Ottopagine (agricoltori)",
-      "NTR24"
+      "NTR24",
+      "Il Sannio Quotidiano (Coldiretti)"
      ]
     }
    ],
@@ -987,11 +2141,39 @@
      ]
     },
     {
+     "data": "16 ottobre",
+     "fatto": "Il Post riporta che il ministero dei Trasporti ha fissato per il 27 ottobre l'incontro con le associazioni dell'autotrasporto.",
+     "fonti": [
+      "Il Post"
+     ]
+    },
+    {
+     "data": "17 ottobre",
+     "fatto": "Salvini annuncia per martedì 20, alle 10, un tavolo tecnico in Prefettura a Milano con sindacati e associazioni.",
+     "fonti": [
+      "ANSA (17/10)"
+     ]
+    },
+    {
      "data": "18 ottobre",
      "fatto": "Riunione degli imprenditori agricoli a San Marco dei Cavoti.",
      "fonti": [
       "Ottopagine (19/10)",
       "NTR24"
+     ]
+    },
+    {
+     "data": "18 ottobre",
+     "fatto": "Il Sole 24 Ore scrive che Salvini ha anticipato i tempi: il 20 pomeriggio incontrerà anche i gruppi spontanei di Puglia, Sicilia, Calabria e Campania.",
+     "fonti": [
+      "Il Sole 24 Ore"
+     ]
+    },
+    {
+     "data": "notte 18-19",
+     "fatto": "Dalle 3 di notte camion fermi sull'Appia a Tufara Valle.",
+     "fonti": [
+      "Il Mattino"
      ]
     },
     {
@@ -1003,14 +2185,24 @@
       "Il Sannio Quotidiano",
       "NTR24 (supermercati)",
       "Ottopagine (mozione)",
-      "NTR24 (sindacati)"
+      "NTR24 (sindacati)",
+      "Cronache del Sannio"
      ]
     },
     {
      "data": "notte 19-20",
-     "fatto": "Blocchi anche sulla Telesina, a San Salvatore Telesino.",
+     "fatto": "Blocchi anche sulla Telesina, soprattutto a San Salvatore Telesino.",
      "fonti": [
-      "Ottopagine (20/10)"
+      "Ottopagine (20/10)",
+      "Il Mattino"
+     ]
+    },
+    {
+     "data": "20 ottobre",
+     "fatto": "Tavolo tecnico in Prefettura a Milano con il ministro Salvini; nel pomeriggio i gruppi di protesta del Sud, compresa la Campania.",
+     "fonti": [
+      "ANSA (17/10)",
+      "Il Sole 24 Ore"
      ]
     },
     {
@@ -1020,19 +2212,12 @@
       "Ottopagine (agricoltori)",
       "NTR24"
      ]
-    },
-    {
-     "data": "27 ottobre",
-     "fatto": "Incontro al ministero dei Trasporti con le associazioni dell'autotrasporto.",
-     "fonti": [
-      "Il Post"
-     ]
     }
    ],
    "non_si_sa": [
-    "Quanti camion sono coinvolti nel Sannio: nessun giornale dà un numero.",
-    "Se i blocchi sulla Telesina continueranno: per ora li riporta un solo giornale.",
-    "Cosa deciderà il Governo dopo l'incontro del 27 ottobre."
+    "Quanti camion sono fermi in tutto il Sannio: per Tufara Valle Il Mattino ne conta un centinaio, LabTV una decina.",
+    "Se stamattina i blocchi sulla Telesina sono ancora in corso.",
+    "Cosa uscirà dal tavolo di oggi a Milano e se l'incontro del 27 ottobre resta in calendario."
    ],
    "fonti": [
     {
@@ -1106,8 +2291,51 @@
      "titolo": "Le proteste degli autotrasportatori al Sud",
      "url": "https://www.ilpost.it/2026/10/16/proteste-autotrasportatori-sud-italia/",
      "data": "16 ott"
+    },
+    {
+     "nome": "Il Mattino",
+     "titolo": "Autotrasporto, la protesta arriva anche nel Sannio: tir incolonnati già dalla notte e disagi per la viabilità",
+     "url": "https://www.ilmattino.it/benevento/autotrasporto_la_protesta_arriva_anche_nel_sannio_tir_incolonnati_gia_dalla_notte_e_disagi_per_la_viabilita-9835330.html",
+     "data": "20 ott, 01:25"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "titolo": "Autotrasportatori in sciopero nel Sannio: presidi sull'Appia e a Castel del Lago",
+     "url": "https://www.cronachedelsannio.it/sannionews24/autotrasportatori-sciopero-appia-castel-del-lago/",
+     "data": "19 ott"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "titolo": "VIDEO – Caro carburante e proteste: nel Sannio primi scaffali vuoti e pompe a secco",
+     "url": "https://www.beneventonews24.it/2026/10/19/video-caro-carburante-e-protesta-autotrasportatori-nel-sannio-primi-scaffali-vuoti-e-pompe-a-secco/",
+     "data": "19 ott"
+    },
+    {
+     "nome": "LabTV (carovita)",
+     "titolo": "Benevento, protesta di agricoltori e autotrasportatori contro il carovita",
+     "url": "https://www.labtv.net/cultura/eventi/2026/10/19/benevento-protesta-di-agricoltori-e-autotrasportatori-contro-il-carovita/",
+     "data": "19 ott"
+    },
+    {
+     "nome": "Il Sannio Quotidiano (Coldiretti)",
+     "titolo": "Agricoltura, appello per misure urgenti: manifestazione il 22 ottobre",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/19/agricoltura-appello-per-misure-urgenti-manifestazione-il-22-ottobre/",
+     "data": "19 ott"
+    },
+    {
+     "nome": "ANSA (17/10)",
+     "titolo": "Salvini, 'incontrerò autotrasportatori di Puglia, Calabria e Sicilia'",
+     "url": "https://www.ansa.it/puglia/notizie/2026/10/17/salvini-incontrero-autotrasportatori-di-puglia-calabria-e-sicilia_e8414e86-a6ed-4ae6-a362-f9392e4ed176.html",
+     "data": "17 ott, 16:05"
+    },
+    {
+     "nome": "Il Sole 24 Ore",
+     "titolo": "HGV protest: road haulage talks to be held on Tuesday. Salvini ready to release the funds",
+     "url": "https://en.ilsole24ore.com/art/truckers-protest-on-tuesday-round-table-discussion-on-road-haulage-salvini-ready-to-release-funds-AJzZUUnB",
+     "data": "18 ott"
     }
-   ]
+   ],
+   "nota": "Correzione: nella versione delle 8:45 scrivevamo che il ministero dei Trasporti aveva convocato le associazioni per il 27 ottobre, come riportava Il Post il 16 ottobre. ANSA (17 ottobre) e Il Sole 24 Ore (18 ottobre) riportano che il ministro Salvini ha anticipato il tavolo a oggi, martedì 20 ottobre, in Prefettura a Milano. Abbiamo corretto sommario, «In breve», sezioni, domande e cronologia."
   }
  ]
 }
