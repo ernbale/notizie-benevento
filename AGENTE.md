@@ -80,6 +80,10 @@ Regole:
   Meteoalarm vale per tutta la Campania: per dire che riguarda **il Sannio** serve il comunicato della Regione o della
   Protezione civile, o un Comune del Sannio, o almeno due giornali che citano le **zone di allerta** del Sannio. Se le
   zone non si trovano, scrivi «allerta in Campania» e, tra le cose che non si sanno, che le zone vanno verificate.
+- Le zone: la Campania ha 8 zone di allerta; il Sannio, compresa Benevento città, è nella **Zona 4 «Alta Irpinia e
+  Sannio»**. I Comuni del Matese al confine (Cusano Mutri, Pietraroja e vicini) possono ricadere nella **Zona 2 «Alto
+  Volturno e Matese»**: se la zona 2 ha un livello diverso, dillo. La pagina di protezione civile del Comune di
+  Benevento (sit.comune.benevento.it) non è aggiornata (ferma a luglio 2024): non usarla come fonte dello stato di allerta.
 - Scrivi sempre livello, tipo (pioggia, temporali, vento…), **da quando a quando** in ora italiana, e cosa
   raccomanda la Protezione civile se lo dice. Niente toni allarmisti: i fatti e gli orari.
 - `in_vigore_fino` = il giorno in cui finisce l'allerta o la chiusura. Allerta **arancione o rossa**: `rilevante: true`.
