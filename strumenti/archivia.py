@@ -66,14 +66,52 @@ def nel_futuro(iso, adesso):
         return False
 
 
+CART_TEMI = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "img", "temi")
+
+
 def temi_foto():
     """I temi delle foto illustrative (img/temi/temi.json) che hanno davvero il file."""
-    cart = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "img", "temi")
+    cart = CART_TEMI
     try:
         temi = json.load(open(os.path.join(cart, "temi.json"), encoding="utf-8"))
     except Exception:
         return set()
     return {t for t in temi if os.path.exists(os.path.join(cart, t + ".jpg"))}
+
+
+def versioni_foto(tema):
+    """Le versioni della foto di un tema: tema.jpg, tema-2.jpg, tema-3.jpg…"""
+    v = [tema] if os.path.exists(os.path.join(CART_TEMI, tema + ".jpg")) else []
+    k = 2
+    while os.path.exists(os.path.join(CART_TEMI, f"{tema}-{k}.jpg")):
+        v.append(f"{tema}-{k}")
+        k += 1
+    return v
+
+
+def scegli_foto(notizie):
+    """Il campo «foto»: quale versione della foto del tema mostrare, così in prima pagina non si ripete.
+    Una versione già scelta resta, tranne quando la divide con un'altra notizia e c'è una versione libera:
+    allora cambia quella della notizia più recente."""
+    usate, versioni = {}, {}
+    for n in notizie:
+        v = versioni_foto(n.get("immagine") or "") if n.get("categoria") != "cronaca" else []
+        versioni[n["id"]] = v
+        if n.get("foto") in v:
+            usate[n["foto"]] = usate.get(n["foto"], 0) + 1
+        else:
+            n.pop("foto", None)
+    for n in sorted(notizie, key=lambda x: str(x.get("pubblicato", "")), reverse=True):
+        v = versioni[n["id"]]
+        if not v:
+            continue
+        f = n.get("foto")
+        libera = min(v, key=lambda x: (usate.get(x, 0), v.index(x)))
+        if f is None or (usate[f] > 1 and usate.get(libera, 0) == 0):
+            if f:
+                usate[f] -= 1
+            n["foto"] = libera
+            usate[libera] = usate.get(libera, 0) + 1
 
 
 def controlla(d, err, avv, adesso=None):
@@ -325,6 +363,7 @@ def main():
         mesi.setdefault(mese, {"notizie": [], "approfondimenti": []})["approfondimenti"].append(x)
         print(f"ARCHIVIATO APPROFONDIMENTO: {ap_['id']} → archivio/{mese}.json")
 
+    scegli_foto(restano)
     nuovo = dict(d)
     nuovo["notizie"] = restano
     nuovo["approfondimenti"] = restano_ap

@@ -82,7 +82,8 @@
       "data": "20 ott"
      }
     ]
-   }
+   },
+   "foto": "acqua"
   },
   {
    "id": "benevento-comune-smartworking-dipendenti",
@@ -157,7 +158,8 @@
       "data": "20 ott"
      }
     ]
-   }
+   },
+   "foto": "lavoro-da-casa"
   },
   {
    "id": "benevento-cimitero-orari-defunti",
@@ -218,7 +220,8 @@
       "data": "20 ott"
      }
     ]
-   }
+   },
+   "foto": "cimitero"
   },
   {
    "id": "telese-gepos-licenziamenti-sit-in",
@@ -309,7 +312,8 @@
       "data": "20 ott"
      }
     ]
-   }
+   },
+   "foto": "ospedale"
   },
   {
    "id": "allerta-arancione-sannio-21-ottobre",
@@ -553,7 +557,8 @@
       "data": "20 ott, 15:21"
      }
     ]
-   }
+   },
+   "foto": "pioggia"
   },
   {
    "id": "airola-incendio-diossine-latte",
@@ -646,7 +651,8 @@
      }
     ]
    },
-   "nota": "I dati si riferiscono ai prospetti dell'Istituto Zooprofilattico al 16 ottobre e dell'ARPAC al 13 ottobre; secondo Cronache del Sannio vengono da una nota della Regione Campania."
+   "nota": "I dati si riferiscono ai prospetti dell'Istituto Zooprofilattico al 16 ottobre e dell'ARPAC al 13 ottobre; secondo Cronache del Sannio vengono da una nota della Regione Campania.",
+   "foto": "pecore"
   },
   {
    "id": "asia-ecocentro-chiuso-protesta",
@@ -713,7 +719,8 @@
       "data": "20 ott, 10:04"
      }
     ]
-   }
+   },
+   "foto": "rifiuti"
   },
   {
    "id": "rummo-produzione-ferma",
@@ -805,7 +812,8 @@
       "data": "20 ott, 11:10"
      }
     ]
-   }
+   },
+   "foto": "pasta"
   },
   {
    "id": "trenitalia-carnet-smart-working",
@@ -872,7 +880,8 @@
       "data": "20 ott, 11:22"
      }
     ]
-   }
+   },
+   "foto": "treno"
   },
   {
    "id": "droga-montesarchio-due-arresti",
@@ -1260,7 +1269,8 @@
      }
     ]
    },
-   "rilevante": true
+   "rilevante": true,
+   "foto": "camion"
   },
   {
    "id": "scaffali-vuoti",
@@ -1401,7 +1411,8 @@
     ],
     "divergono": []
    },
-   "rilevante": false
+   "rilevante": false,
+   "foto": "supermercato"
   },
   {
    "id": "agricoltori-22-ottobre",
@@ -1546,7 +1557,8 @@
      }
     ]
    },
-   "rilevante": false
+   "rilevante": false,
+   "foto": "trattori"
   },
   {
    "id": "mozione-caro-carburanti",
@@ -1608,7 +1620,8 @@
     ],
     "divergono": []
    },
-   "rilevante": false
+   "rilevante": false,
+   "foto": "carburante"
   },
   {
    "id": "ficomirrors-morcone-vertice",
@@ -1753,7 +1766,8 @@
       "data": "20 ott"
      }
     ]
-   }
+   },
+   "foto": "fabbrica"
   },
   {
    "id": "mensa-pasto-da-casa",
@@ -1931,7 +1945,8 @@
       "data": "19 ott"
      }
     ]
-   }
+   },
+   "foto": "mensa"
   },
   {
    "id": "condanne-tentato-omicidio-montesarchio",
@@ -2364,7 +2379,8 @@
       "data": "19 ott"
      }
     ]
-   }
+   },
+   "foto": "treno"
   },
   {
    "id": "sentenza-spaccio-valle-caudina",
@@ -2615,7 +2631,8 @@
     ],
     "divergono": []
    },
-   "rilevante": false
+   "rilevante": false,
+   "foto": "protezione-civile"
   },
   {
    "id": "sciame-cusano-mutri",
@@ -2715,7 +2732,8 @@
     ],
     "divergono": []
    },
-   "rilevante": false
+   "rilevante": false,
+   "foto": "terremoto"
   },
   {
    "id": "cocchia-cavour-asfalto",
@@ -2772,7 +2790,8 @@
     ]
    },
    "rilevante": false,
-   "in_vigore_fino": "2026-10-31"
+   "in_vigore_fino": "2026-10-31",
+   "foto": "lavori-stradali"
   },
   {
    "id": "mellusi-annunziata",
@@ -2843,7 +2862,8 @@
     ],
     "divergono": []
    },
-   "rilevante": false
+   "rilevante": false,
+   "foto": "divieto-sosta"
   },
   {
    "id": "sagra-castagna-vitulano",
@@ -2922,7 +2942,8 @@
       "data": "19 ott"
      }
     ]
-   }
+   },
+   "foto": "castagne"
   }
  ],
  "approfondimenti": [
