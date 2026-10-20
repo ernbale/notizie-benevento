@@ -102,6 +102,44 @@
 
   /* ricerca e archivio */
   .menu .link-archivio { font: 600 15px var(--sans); color: var(--blu); text-decoration: none; padding: 4px 0; }
+  .menu .link-meteo { display: inline-flex; align-items: center; gap: 5px; font: 600 15px var(--sans); color: var(--nero); text-decoration: none;
+                      padding: 4px 0; border-bottom: 2px solid transparent; }
+  .menu .link-meteo:hover { border-bottom-color: var(--rosso); }
+  .menu .link-meteo .ico svg { width: 26px; height: 26px; display: block; }
+  .menu .link-meteo b { font-weight: 700; }
+  @media (prefers-reduced-motion: reduce) { .an-goccia, .an-fiocco, .an-alone, .an-nube, .an-fulmine, .an-nebbia { animation: none !important; } }
+  /* riquadro meteo nella colonna di destra */
+  .meteo-box { display: block; text-decoration: none; color: var(--nero); border-top: 3px solid var(--nero); padding: 8px 0 14px; margin-bottom: 18px; }
+  .meteo-box .mb-tit { display: flex; justify-content: space-between; align-items: baseline; font: 700 13px var(--sans); text-transform: uppercase; letter-spacing: 1px; }
+  .meteo-box .mb-tit span { font: 500 12px var(--sans); text-transform: none; letter-spacing: 0; color: var(--grigio); }
+  .meteo-box .mb-ora { display: flex; align-items: center; gap: 10px; margin: 8px 0 6px; }
+  .meteo-box .mb-ora svg { width: 54px; height: 54px; flex: none; }
+  .meteo-box .mb-t { font: 300 40px/1 var(--sans); letter-spacing: -1px; }
+  .meteo-box .mb-c { font: 600 15px var(--sans); }
+  .meteo-box .mb-c small { display: block; font: 400 13px var(--sans); color: var(--grigio); }
+  .meteo-box .mb-frase { font: 400 14px/1.4 var(--sans); color: var(--grigio); margin: 0 0 8px; }
+  .meteo-box .mb-giorni { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--riga); }
+  .meteo-box .mb-g { text-align: center; padding: 8px 2px 0; font-size: 13px; }
+  .meteo-box .mb-g + .mb-g { border-left: 1px solid var(--riga); }
+  .meteo-box .mb-g svg { width: 38px; height: 38px; display: block; margin: 2px auto; }
+  .meteo-box .mb-g b { font-weight: 700; }
+  .meteo-box .mb-g .mn { color: var(--grigio); }
+  .meteo-box .mb-g .pp { display: block; color: #3a78c9; font-weight: 600; font-size: 12px; min-height: 16px; }
+  .meteo-box .mb-link { display: block; margin-top: 10px; font: 600 13px var(--sans); color: var(--blu); }
+  .meteo-box:hover .mb-link { text-decoration: underline; }
+  .an-goccia { animation: goccia 1.1s linear infinite; }
+  @keyframes goccia { 0% { transform: translateY(-3px); opacity: 0; } 30% { opacity: 1; } 100% { transform: translateY(7px); opacity: 0; } }
+  .an-fiocco { animation: fiocco 2.4s linear infinite; }
+  @keyframes fiocco { 0% { transform: translate(0, -3px); opacity: 0; } 30% { opacity: 1; } 100% { transform: translate(2px, 7px); opacity: 0; } }
+  .an-alone { animation: alone 3.2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+  @keyframes alone { 0%, 100% { transform: scale(1); opacity: .16; } 50% { transform: scale(1.18); opacity: .3; } }
+  .an-nube { animation: nubeva 6s ease-in-out infinite; }
+  @keyframes nubeva { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(2.5px); } }
+  .an-fulmine { animation: lampo 3s linear infinite; }
+  @keyframes lampo { 0%, 86%, 100% { opacity: 1; } 88% { opacity: .1; } 90% { opacity: 1; } 92% { opacity: .2; } }
+  .an-nebbia { animation: nebbia 5s ease-in-out infinite; }
+  @keyframes nebbia { 0%, 100% { transform: translateX(-2px); } 50% { transform: translateX(3px); } }
+
   .menu .link-archivio:hover { text-decoration: underline; }
   .cerca-campo { display: flex; align-items: stretch; }
   .cerca-campo input { font: 500 15px var(--sans); padding: 6px 10px; border: 1px solid var(--nero); border-right: 0; border-radius: 4px 0 0 4px;
@@ -215,6 +253,16 @@
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <radialGradient id="g-sole" cx="40%" cy="35%" r="70%"><stop offset="0" stop-color="#ffd76e"/><stop offset=".6" stop-color="#f7a529"/><stop offset="1" stop-color="#ef7f1a"/></radialGradient>
+    <radialGradient id="g-luna" cx="40%" cy="35%" r="75%"><stop offset="0" stop-color="#fff8dc"/><stop offset="1" stop-color="#e5c768"/></radialGradient>
+    <linearGradient id="g-nube" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#dfe6f0"/></linearGradient>
+    <linearGradient id="g-nube-scura" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c3ccd8"/><stop offset="1" stop-color="#8f9bab"/></linearGradient>
+    <linearGradient id="g-goccia" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7db3ef"/><stop offset="1" stop-color="#2f6fc4"/></linearGradient>
+    <linearGradient id="g-fulmine" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe46b"/><stop offset="1" stop-color="#f3a712"/></linearGradient>
+  </defs>
+</svg>
 <div class="pagina">
   <header class="testata">
     <div class="data" id="data"></div>
@@ -229,7 +277,7 @@
     <button type="button" data-cat="" aria-pressed="true">Tutte</button>
     <button type="button" data-cat="strade" aria-pressed="false">Strade</button>
     <button type="button" data-cat="cronaca" aria-pressed="false">Cronaca</button>
-    <button type="button" data-cat="meteo" aria-pressed="false">Meteo e terremoti</button>
+    <button type="button" data-cat="meteo" aria-pressed="false">Terremoti e allerte</button>
     <button type="button" data-cat="politica" aria-pressed="false">Politica</button>
     <button type="button" data-cat="eventi" aria-pressed="false">Eventi</button>
     <button type="button" data-cat="altro" aria-pressed="false">Altro</button>
@@ -241,7 +289,7 @@
       <option value="fortore">Fortore e Tammaro</option>
       <option value="provincia">Altri comuni</option>
     </select>
-    <a class="link-archivio" href="meteo.html">Previsioni meteo</a>
+    <a class="link-meteo" href="meteo.html" id="link-meteo"><span class="ico" id="link-meteo-ico"></span>Meteo <b id="link-meteo-t"></b></a>
     <a class="link-archivio" href="#archivio">Archivio</a>
     <form class="cerca-campo" id="cerca-home" role="search">
       <input type="search" id="cerca-home-q" placeholder="Cerca tra le notizie" aria-label="Cerca tra le notizie" autocomplete="off" enterkeyhint="search">
@@ -260,7 +308,7 @@
 
 <script>
 (function () {
-  var NOMI_CAT = { strade: "Strade", cronaca: "Cronaca", meteo: "Meteo e terremoti", politica: "Politica", eventi: "Eventi", altro: "Altro" };
+  var NOMI_CAT = { strade: "Strade", cronaca: "Cronaca", meteo: "Terremoti e allerte", politica: "Politica", eventi: "Eventi", altro: "Altro" };
   var dati = { notizie: [], approfondimenti: [] };
   var filtroCat = "";
   var filtroZona = "";
@@ -550,6 +598,83 @@
   }
   function peso(n) { return (n.rilevante ? 100 : 0) + (Array.isArray(n.fonti) ? n.fonti.length : 0); }
 
+  var NUBE = "M18 48h28a10 10 0 0 0 1.5-19.9A13 13 0 0 0 22.6 27 9.5 9.5 0 0 0 18 48z";
+  function sole(cx, cy, r) { return '<circle class="an-alone" cx="' + cx + '" cy="' + cy + '" r="' + (r + 4) + '" fill="#f7a529" opacity=".16"/><circle cx="' + cx + '" cy="' + cy + '" r="' + r + '" fill="url(#g-sole)"/>'; }
+  function luna(cx, cy, r) {
+    return '<path d="M' + (cx + r * 0.35) + ' ' + (cy - r) + 'a' + r + ' ' + r + ' 0 1 0 ' + (r * 0.65) + ' ' + (r * 1.75) +
+      'a' + (r * 0.82) + ' ' + (r * 0.82) + ' 0 1 1 ' + (-r * 0.65) + ' ' + (-r * 1.75) + 'z" fill="url(#g-luna)"/>';
+  }
+  function nube(scura, dx, dy, s) {
+    // il gruppo esterno si muove (animazione), quello interno tiene posizione e misura
+    return '<g class="an-nube"><g transform="translate(' + (dx || 0) + ' ' + (dy || 0) + ') scale(' + (s || 1) + ')"><path d="' + NUBE + '" fill="url(#' + (scura ? "g-nube-scura" : "g-nube") +
+      ')" stroke="' + (scura ? "#7f8b9b" : "#c9d3e0") + '" stroke-width="1"/></g></g>';
+  }
+  function gocce(n) {
+    var xs = n === 1 ? [30] : n === 2 ? [25, 36] : n === 3 ? [22, 31, 40] : [19, 27, 35, 43], s = "";
+    xs.forEach(function (x, k) { var y = 51 + (k % 2) * 4; s += '<path class="an-goccia" style="animation-delay:' + (k * 0.27).toFixed(2) + 's" d="M' + x + ' ' + y + 'c2 3 3 4.6 3 6a3 3 0 0 1-6 0c0-1.4 1-3 3-6z" fill="url(#g-goccia)"/>'; });
+    return s;
+  }
+  function icona(cond, notte) {
+    var astro = notte ? luna(24, 22, 12) : sole(24, 22, 12), s = "";
+    switch (cond) {
+      case "sereno": s = notte ? luna(32, 30, 17) : sole(32, 32, 17); break;
+      case "poco-nuvoloso": s = astro + nube(false, 6, 4, 0.92); break;
+      case "nuvoloso": s = (notte ? luna(22, 20, 10) : sole(22, 20, 10)) + nube(true, 10, -4, 0.8) + nube(false, 0, 6, 0.95); break;
+      case "coperto": s = nube(true, 10, -6, 0.85) + nube(false, -2, 4, 1.02); break;
+      case "nebbia": s = nube(false, 0, -6, 1) + '<g fill="#b7c2d0"><rect class="an-nebbia" x="12" y="46" width="40" height="4" rx="2"/><rect class="an-nebbia" style="animation-delay:-2.5s" x="16" y="54" width="32" height="4" rx="2"/></g>'; break;
+      case "possibili-piogge": s = astro + nube(false, 6, -2, 0.92) + gocce(1); break;
+      case "pioggia-debole": s = nube(false, 0, -6, 1) + gocce(2); break;
+      case "pioggia": s = nube(true, 10, -12, 0.8) + nube(false, 0, -6, 1) + gocce(3); break;
+      case "pioggia-forte": s = nube(true, 0, -6, 1) + gocce(4); break;
+      case "temporale": s = nube(true, 0, -8, 1) + '<path class="an-fulmine" d="M33 40l-7 11h6l-3 10 11-14h-6l4-7z" fill="url(#g-fulmine)" stroke="#d48a00" stroke-width=".8"/>' + gocce(1).replace("M30", "M20"); break;
+      case "neve": s = nube(false, 0, -6, 1) + '<g fill="#8fbcef"><circle class="an-fiocco" cx="22" cy="53" r="2.4"/><circle class="an-fiocco" style="animation-delay:-.8s" cx="32" cy="57" r="2.4"/><circle class="an-fiocco" style="animation-delay:-1.6s" cx="42" cy="53" r="2.4"/><circle class="an-fiocco" style="animation-delay:-.4s" cx="27" cy="61" r="2"/><circle class="an-fiocco" style="animation-delay:-1.2s" cx="37" cy="62" r="2"/></g>'; break;
+      default: s = nube(false, 0, 0, 1);
+    }
+    return '<svg viewBox="0 0 64 64" aria-hidden="true">' + s + "</svg>";
+  }
+  var meteo = null;
+  function oraChiave(d) {
+    var g = {};
+    new Intl.DateTimeFormat("en-CA", { timeZone: TZ, year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", hourCycle: "h23" })
+      .formatToParts(d).forEach(function (x) { g[x.type] = x.value; });
+    return g.year + "-" + g.month + "-" + g.day + "T" + g.hour + ":00";
+  }
+  var COND = { "sereno": "Sereno", "poco-nuvoloso": "Poco nuvoloso", "nuvoloso": "Nuvoloso", "coperto": "Coperto", "nebbia": "Nebbia",
+    "possibili-piogge": "Possibili piogge", "pioggia-debole": "Pioggia debole", "pioggia": "Pioggia", "pioggia-forte": "Pioggia forte", "temporale": "Temporale", "neve": "Neve" };
+  // Il meteo di adesso dal file della pagina Meteo (8 modelli): null se manca o è vecchio.
+  function meteoAdesso() {
+    if (!meteo) return null;
+    var k = oraChiave(new Date()), i = meteo.ore.t.indexOf(k);
+    if (i < 0) return null;
+    var oggi = k.slice(0, 10), giorni = meteo.giorni.filter(function (g) { return g.data >= oggi; }).slice(0, 3);
+    return { i: i, oggi: oggi, giorni: giorni };
+  }
+  function riquadroMeteo() {
+    var a = meteoAdesso();
+    if (!a) return null;
+    var o = meteo.ore, i = a.i, box = el("a", "meteo-box", []);
+    box.href = "meteo.html";
+    var gradi = function (v) { return v == null ? "–" : Math.round(v) + "°"; };
+    var html = '<div class="mb-tit">Meteo Benevento<span>' + meteo.modelli.length + ' modelli a confronto</span></div>' +
+      '<div class="mb-ora">' + icona(o.cond[i], o.giorno[i] === 0) + '<div class="mb-t">' + Math.round(o.temp[i]) + '°</div><div class="mb-c">' +
+      (COND[o.cond[i]] || "") + "<small>percepita " + gradi(o.perc[i]) + "</small></div></div>";
+    var dom = a.giorni[1];
+    if (dom && dom.prob >= 0.5) html += '<p class="mb-frase">Domani pioggia secondo ' + Math.round(dom.prob * Object.keys(dom.modelli).length) + " modelli su " + Object.keys(dom.modelli).length + ".</p>";
+    html += '<div class="mb-giorni">' + a.giorni.map(function (g, k) {
+      var et = k === 0 ? "Oggi" : k === 1 ? "Domani" : new Date(g.data + "T12:00:00Z").toLocaleDateString("it-IT", { timeZone: TZ, weekday: "short" }).replace(".", "");
+      return '<div class="mb-g">' + et + icona(g.cond, false) + "<b>" + gradi(g.max) + '</b> <span class="mn">' + gradi(g.min) + '</span><span class="pp">' +
+        (g.prob >= 0.2 ? "💧 " + Math.round(g.prob * 100) + "%" : "") + "</span></div>";
+    }).join("") + '</div><span class="mb-link">Previsioni ora per ora, vento, aria e pollini ›</span>';
+    box.innerHTML = html;
+    return box;
+  }
+  function voceMeteo() {
+    var a = meteoAdesso();
+    if (!a) return;
+    document.getElementById("link-meteo-ico").innerHTML = icona(meteo.ore.cond[a.i], meteo.ore.giorno[a.i] === 0);
+    document.getElementById("link-meteo-t").textContent = Math.round(meteo.ore.temp[a.i]) + "°";
+  }
+
   function disegnaHome(box) {
     var lista = filtrate();
     if (!lista.length) {
@@ -573,6 +698,8 @@
     var c1 = el("div", "col", []), c2 = el("div", "col", []), c3 = el("div", "col laterale", []);
     c1.appendChild(scheda(apertura, "apertura"));
     resto.forEach(function (n, i) { (i % 2 === 0 ? c2 : c1).appendChild(scheda(n)); });
+    var rm = riquadroMeteo();
+    if (rm) c3.appendChild(rm);
     c3.appendChild(el("h3", "titolo-col", ["Approfondimenti"]));
     var appro = dati.approfondimenti || [];
     if (appro.length) appro.forEach(function (ap) { c3.appendChild(schedaAppro(ap)); });
@@ -1196,6 +1323,17 @@
     location.hash = q ? "#cerca/" + encodeURIComponent(q) : "#archivio";
   });
   window.addEventListener("hashchange", function () { if ("speechSynthesis" in window) speechSynthesis.cancel(); disegna(); });
+
+  fetch("meteo.json?t=" + Date.now(), { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (j) {
+      meteo = j;
+      voceMeteo();
+      // se la prima pagina è già disegnata, aggiunge il riquadro meteo in cima alla colonna di destra
+      var lat = document.querySelector(".griglia .laterale");
+      if (lat && !lat.querySelector(".meteo-box")) { var rm = riquadroMeteo(); if (rm) lat.insertBefore(rm, lat.firstChild); }
+    })
+    .catch(function () { /* senza meteo il sito funziona lo stesso */ });
 
   fetch("notizie.json?t=" + Date.now(), { cache: "no-store" })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
