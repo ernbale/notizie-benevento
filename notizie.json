@@ -1,7 +1,76 @@
 {
- "aggiornato": "2026-10-20T16:09:00+02:00",
+ "aggiornato": "2026-10-20T18:06:00+02:00",
  "giornali_letti": 15,
  "notizie": [
+  {
+   "id": "acqua-giovedi-22-ottobre-paduli-alto-calore",
+   "titolo": "Paduli e altri sette Comuni del Sannio senz'acqua giovedì 22 ottobre dalle 14 alle 24 per lavori sulla condotta",
+   "sintesi": "Alto Calore Servizi sospende l'acqua giovedì 22 ottobre dalle 14 alle 24 per lavori urgenti sulla condotta a Paduli, località Torre. Restano senz'acqua Paduli, Pietrelcina, Pesco Sannita, Pago Veiano, Campolattaro, Pontelandolfo, Fragneto Monforte e Sant'Arcangelo Trimonte.",
+   "categoria": "altro",
+   "zona": "provincia",
+   "luogo": "Paduli",
+   "pubblicato": "2026-10-20",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "in_vigore_fino": "2026-10-22",
+   "fonti": [
+    {
+     "nome": "Comune di Pietrelcina",
+     "url": "https://www.comune.pietrelcina.bn.it/novita/avvisi/novita_374.html"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/20/acqua-giovedi-stop-allerogazione-per-dieci-ore-disagi-in-diversi-comuni-del-sannio/"
+    }
+   ],
+   "articolo": {
+    "cosa": "Giovedì 22 ottobre, dalle 14 alle 24, Alto Calore Servizi sospende l'erogazione dell'acqua in diversi Comuni del Sannio. Servono lavori che non si possono rimandare sulla condotta principale a Paduli, in località Torre, eseguiti dall'Acquedotto Campano per conto della Regione Campania. Secondo NTR24 lo stop riguarda Paduli, Pietrelcina, Pesco Sannita, Pago Veiano, Campolattaro, Pontelandolfo, Fragneto Monforte e Sant'Arcangelo Trimonte, oltre all'impianto STIR di Casalduni; ad Apice solo le utenze di Ferrovie dello Stato e Alta Velocità.",
+    "cronologia": [
+     {
+      "data": "20 ottobre",
+      "fatto": "Alto Calore Servizi comunica lo stop programmato dell'acqua per giovedì 22 ottobre dalle 14 alle 24; il Comune di Pietrelcina pubblica l'avviso.",
+      "fonti": [
+       "Comune di Pietrelcina",
+       "NTR24"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Acqua sospesa giovedì 22 ottobre dalle 14:00 alle 24:00 per lavori sulla condotta nel territorio di Paduli, località Torre, eseguiti da Acquedotto Campano per conto della Regione.",
+      "fonti": [
+       "Comune di Pietrelcina",
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Alla riapertura l'acqua può uscire torbida per poco tempo, senza rischi per la potabilità: Alto Calore consiglia di lasciarla scorrere dai rubinetti per qualche minuto. Per casi di reale necessità c'è il numero verde 800 954 430.",
+      "fonti": [
+       "Comune di Pietrelcina",
+       "NTR24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Se i lavori finiranno davvero entro mezzanotte: Alto Calore dice che avviserà gli utenti sul suo sito www.altocalore.it."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Pietrelcina",
+      "titolo": "Alto Calore Servizi S.p.A. - Fuori servizio idrico programmato del 22 Ottobre 2026",
+      "url": "https://www.comune.pietrelcina.bn.it/novita/avvisi/novita_374.html",
+      "data": "20 ott"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Acqua, giovedì stop all’erogazione per dieci ore: disagi in diversi comuni del Sannio",
+      "url": "https://www.ntr24.tv/2026/10/20/acqua-giovedi-stop-allerogazione-per-dieci-ore-disagi-in-diversi-comuni-del-sannio/",
+      "data": "20 ott"
+     }
+    ]
+   }
+  },
   {
    "id": "benevento-comune-smartworking-dipendenti",
    "titolo": "Benevento, il sindaco Mastella chiede lo smart working per i dipendenti comunali che abitano fuori città, per il caro carburante",
@@ -228,12 +297,12 @@
   },
   {
    "id": "allerta-arancione-sannio-21-ottobre",
-   "titolo": "Sannio, allerta arancione per maltempo mercoledì 21 ottobre: a Benevento e Montesarchio chiusi scuole, parchi e cimitero",
-   "sintesi": "La Protezione civile della Regione Campania ha emesso un'allerta arancione per tutta la giornata di mercoledì 21 ottobre, anche per la zona «Alta Irpinia e Sannio»: temporali anche forti, soprattutto al mattino. A Benevento e a Montesarchio le ordinanze dei sindaci chiudono scuole, villa comunale, parchi e cimitero.",
+   "titolo": "Sannio, allerta arancione per maltempo mercoledì 21 ottobre: chiusi scuole, parchi e cimiteri a Benevento, Montesarchio, Sant'Agata de' Goti e Pietrelcina",
+   "sintesi": "La Protezione civile ha confermato l'allerta arancione per mercoledì 21 ottobre in tutte e tre le zone del Sannio: rischio frane e temporali, soprattutto al mattino. Scuole, parchi e cimiteri chiusi a Benevento, Montesarchio, Sant'Agata de' Goti e Pietrelcina.",
    "categoria": "meteo",
    "zona": "provincia",
    "luogo": "Sannio",
-   "pubblicato": "2026-10-20T14:54:00+02:00",
+   "pubblicato": "2026-10-20T15:21:00+02:00",
    "stato": "ufficiale",
    "rilevante": true,
    "in_vigore_fino": "2026-10-21",
@@ -265,10 +334,22 @@
     {
      "nome": "Meteoalarm",
      "url": "https://meteoalarm.org?geocode=EMMA_ID:IT016"
+    },
+    {
+     "nome": "Comune di Sant'Agata de' Goti",
+     "url": "https://www.comune.santagatadegoti.bn.it/novita/avvisi/novita_202.html"
+    },
+    {
+     "nome": "Comune di Pietrelcina",
+     "url": "https://www.comune.pietrelcina.bn.it/novita/avvisi/novita_375.html"
+    },
+    {
+     "nome": "Protezione civile (bollettino)",
+     "url": "https://notiziebenevento.it/meteo.json"
     }
    ],
    "articolo": {
-    "cosa": "La Protezione civile della Regione Campania ha emanato un avviso di allerta arancione valido dalla mezzanotte e per tutta la giornata di mercoledì 21 ottobre per le zone 1, 2, 3 e 4, cioè anche per l'Alto Volturno e Matese (Telese, Cerreto, Airola…) e per l'Alta Irpinia e Sannio (Benevento, Montesarchio, Fortore…). Si prevedono piogge e temporali, anche forti, soprattutto nella prima parte della giornata, con possibili frane, caduta di massi, allagamenti e torrenti che si ingrossano. Il sindaco di Montesarchio ha già chiuso scuole, villa comunale, parchi e cimitero; a Benevento il sindaco Mastella ha firmato un'ordinanza che chiude per mercoledì scuole di ogni ordine e grado (asili nido compresi), villa comunale, parchi cittadini e cimitero (restano garantiti i funerali).",
+    "cosa": "La Protezione civile della Regione Campania ha emanato un avviso di allerta arancione valido dalla mezzanotte e per tutta la giornata di mercoledì 21 ottobre per le zone 1, 2, 3 e 4, cioè anche per l'Alto Volturno e Matese (Telese, Cerreto, Airola…) e per l'Alta Irpinia e Sannio (Benevento, Montesarchio, Fortore…). Si prevedono piogge e temporali, anche forti, soprattutto nella prima parte della giornata, con possibili frane, caduta di massi, allagamenti e torrenti che si ingrossano. Il sindaco di Montesarchio ha già chiuso scuole, villa comunale, parchi e cimitero; a Benevento il sindaco Mastella ha firmato un'ordinanza che chiude per mercoledì scuole di ogni ordine e grado (asili nido compresi), villa comunale, parchi cittadini e cimitero (restano garantiti i funerali). Il bollettino della Protezione civile nazionale delle 15:21 di oggi conferma il livello arancione (rischio frane) per tutte e tre le zone del Sannio. Ordinanze di chiusura anche a Sant'Agata de' Goti (n. 77, con attivazione del centro operativo comunale) e a Pietrelcina (n. 27: scuole, cimitero, impianti sportivi, parchi e ville comunali).",
     "cronologia": [
      {
       "data": "20 ottobre, 12:09",
@@ -293,6 +374,21 @@
        "Anteprima24",
        "NTR24",
        "BeneventoNews24"
+      ]
+     },
+     {
+      "data": "20 ottobre",
+      "fatto": "Anche i Comuni di Sant'Agata de' Goti (ordinanza n. 77: chiusi scuole, parchi e cimiteri, attivato il centro operativo comunale) e di Pietrelcina (ordinanza n. 27: chiusi scuole, cimitero, impianti sportivi, parchi e ville comunali) chiudono per mercoledì 21.",
+      "fonti": [
+       "Comune di Sant'Agata de' Goti",
+       "Comune di Pietrelcina"
+      ]
+     },
+     {
+      "data": "20 ottobre, 15:21",
+      "fatto": "Esce il bollettino della Protezione civile nazionale per il 21 ottobre: arancione per rischio frane nelle zone «Alta Irpinia e Sannio», «Alto Volturno e Matese» e «Penisola sorrentino-amalfitana, Monti di Sarno e Monti Picentini» (in quest'ultima gialla per il rischio fiumi).",
+      "fonti": [
+       "Protezione civile (bollettino)"
       ]
      }
     ],
@@ -327,6 +423,20 @@
        "Anteprima24",
        "NTR24"
       ]
+     },
+     {
+      "testo": "Sant'Agata de' Goti (zona «Alto Volturno e Matese»): ordinanza del sindaco per mercoledì 21 ottobre dalle 00:00 alle 23:59, con chiusura di scuole, parchi e cimiteri e attivazione del centro operativo comunale. Pietrelcina: ordinanza n. 27 con chiusura di scuole, cimitero, impianti sportivi, parchi e ville comunali.",
+      "fonti": [
+       "Comune di Sant'Agata de' Goti",
+       "Comune di Pietrelcina"
+      ]
+     },
+     {
+      "testo": "Il bollettino nazionale della Protezione civile (ore 15:21 del 20 ottobre) dà arancione per rischio frane nelle tre zone del Sannio; Meteoalarm conferma arancione per pioggia e temporali dalle 02:00 alle 19:59 del 21 e gialla per vento dalle 08:00 del 21 all'01:59 del 22.",
+      "fonti": [
+       "Protezione civile (bollettino)",
+       "Meteoalarm"
+      ]
      }
     ],
     "divergono": [
@@ -339,7 +449,6 @@
      }
     ],
     "non_si_sa": [
-     "Il livello dell'allerta per le tre zone del Sannio nel bollettino nazionale della Protezione civile, che per il 21 ottobre non è ancora uscito.",
      "Quali altri Comuni del Sannio chiuderanno scuole, parchi e cimiteri: NTR24 scrive che a Moiano la didattica è sospesa, ma non ho trovato l'ordinanza del Comune."
     ],
     "fonti": [
@@ -384,6 +493,24 @@
       "titolo": "Orange Rain Warning / Orange Thunderstorm Warning / Yellow Wind Warning – Campania",
       "url": "https://meteoalarm.org?geocode=EMMA_ID:IT016",
       "data": "20 ott, 12:09"
+     },
+     {
+      "nome": "Comune di Sant'Agata de' Goti",
+      "titolo": "Allerta Meteo ARANCIONE dalle ore 00:00 alle 23:59 di Mercoledì 21 Ottobre 2026-Ordinanza chiusura scuole, parchi e cimiteri ed Attivazione COC",
+      "url": "https://www.comune.santagatadegoti.bn.it/novita/avvisi/novita_202.html",
+      "data": "20 ott"
+     },
+     {
+      "nome": "Comune di Pietrelcina",
+      "titolo": "Ordinanza N. 27/2026 - Chiusura scuole, cimitero comunale, impianti sportivi, parchi e ville per il giorno 21/10/2026",
+      "url": "https://www.comune.pietrelcina.bn.it/novita/avvisi/novita_375.html",
+      "data": "20 ott"
+     },
+     {
+      "nome": "Protezione civile (bollettino)",
+      "titolo": "Bollettino del 20 ottobre 2026 ore 15:21 (dati ripresi dal sito meteo di Notizie Benevento)",
+      "url": "https://notiziebenevento.it/meteo.json",
+      "data": "20 ott, 15:21"
      }
     ]
    }
