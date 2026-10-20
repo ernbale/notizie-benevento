@@ -638,7 +638,7 @@
   // Avvisi ufficiali su strade e lavori ancora validi: hanno il loro riquadro nella colonna di destra.
   function eAvviso(n) {
     if (n.in_vigore_fino) return n.in_vigore_fino >= new Date().toLocaleDateString("sv-SE", { timeZone: TZ });
-    return n.categoria === "strade" && n.stato === "ufficiale";
+    return (n.categoria === "strade" || n.categoria === "meteo") && n.stato === "ufficiale";
   }
   // Se la spalla viene molto più lunga dell'apertura (titoli lunghi), l'ultima notizia della spalla
   // scende tra «Le altre notizie», al suo posto in ordine di tempo: niente buco sotto l'apertura.
@@ -659,7 +659,7 @@
     }
   }
   function riquadroAvvisi(avvisi) {
-    var sez = el("section", "avvisi-box", [el("h3", "titolo-col", ["Strade, avvisi in vigore"])]);
+    var sez = el("section", "avvisi-box", [el("h3", "titolo-col", ["Avvisi in vigore"])]);
     var ul = el("ul", "", []);
     avvisi.forEach(function (n) {
       var li = el("li", "", []);
@@ -667,7 +667,7 @@
       a.href = linkArticolo(n);
       li.appendChild(a);
       var fino = n.in_vigore_fino ? "fino al " + new Date(n.in_vigore_fino + "T12:00:00Z").toLocaleDateString("it-IT", { timeZone: TZ, day: "numeric", month: "long" }) : quando(n.pubblicato);
-      li.appendChild(el("span", "dove", [(n.luogo ? n.luogo + " · " : "") + fino]));
+      li.appendChild(el("span", "dove", [(NOMI_CAT[n.categoria] || "") + " · " + (n.luogo ? n.luogo + " · " : "") + fino]));
       ul.appendChild(li);
     });
     sez.appendChild(ul);
