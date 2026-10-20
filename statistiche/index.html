@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Statistiche – Notizie Benevento</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  /* Pagina privata: i numeri del sito per il proprietario. Stessi colori e caratteri del giornale. */
+  :root {
+    --carta: #fdeedd;
+    --scheda: #fff8f0;
+    --riga: #e3c9ad;
+    --nero: #111111;
+    --grigio: #5b5249;
+    --rosso: #c4161c;
+    --blu: #1d4f91;
+    --verde: #2e6b3f;
+    --barra: #c4161c;
+    --barra-chiara: #f0b9a6;
+    --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --sans: Inter, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--carta); color: var(--nero); font: 16px/1.5 var(--sans); }
+  .pagina { max-width: 1120px; margin: 0 auto; padding: 18px max(16px, env(safe-area-inset-right, 0px)) 60px max(16px, env(safe-area-inset-left, 0px)); }
+  header { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; flex-wrap: wrap; border-bottom: 3px solid var(--nero); padding-bottom: 10px; }
+  header .nome { font: 700 30px/1 var(--serif); letter-spacing: -.5px; color: var(--nero); text-decoration: none; }
+  header .nome small { display: block; font: 600 12px var(--sans); letter-spacing: 2px; text-transform: uppercase; color: var(--rosso); margin-top: 6px; }
+  header .agg { font-size: 13px; color: var(--grigio); text-align: right; }
+  header button { font: 600 13px var(--sans); background: none; border: 1px solid var(--riga); border-radius: 4px; padding: 4px 10px; cursor: pointer; color: var(--grigio); margin-left: 8px; }
+  h2 { font: 700 26px/1.2 var(--serif); margin: 34px 0 4px; letter-spacing: -.3px; }
+  h2 + .sotto { font-size: 14px; color: var(--grigio); margin: 0 0 14px; }
+  h3 { font: 700 12px var(--sans); text-transform: uppercase; letter-spacing: .7px; margin: 0 0 10px; color: var(--nero); }
+  a { color: var(--blu); }
+  :focus-visible { outline: 2px solid var(--blu); outline-offset: 2px; }
+
+  /* lucchetto */
+  .lucchetto { max-width: 420px; margin: 70px auto; background: var(--scheda); border: 1px solid var(--riga); border-radius: 6px; padding: 26px; }
+  .lucchetto h1 { font: 700 26px/1.2 var(--serif); margin: 0 0 6px; }
+  .lucchetto p { color: var(--grigio); font-size: 14px; margin: 0 0 16px; }
+  .lucchetto label { display: block; font: 600 13px var(--sans); margin-bottom: 6px; }
+  .lucchetto input[type=password] { width: 100%; font: 16px var(--sans); padding: 10px 12px; border: 1px solid var(--riga); border-radius: 4px; background: #fff; }
+  .lucchetto .ricorda { display: flex; align-items: center; gap: 8px; font-weight: 500; margin: 12px 0 16px; }
+  .lucchetto button { font: 600 15px var(--sans); background: var(--nero); color: #fff; border: 0; border-radius: 4px; padding: 10px 18px; cursor: pointer; }
+  .lucchetto button:disabled { opacity: .6; cursor: wait; }
+  .errore { color: var(--rosso); font: 600 14px var(--sans); min-height: 21px; margin-top: 10px; }
+
+  /* numeri grandi */
+  .numeri { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; }
+  .numero { background: var(--scheda); border: 1px solid var(--riga); border-radius: 6px; padding: 14px 16px; }
+  .numero .et { font: 600 12px var(--sans); color: var(--grigio); text-transform: uppercase; letter-spacing: .5px; }
+  .numero .v { font: 700 36px/1.1 var(--serif); margin-top: 4px; font-variant-numeric: tabular-nums; }
+  .numero .d { font-size: 13px; color: var(--grigio); margin-top: 2px; }
+
+  .griglia { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; margin-top: 14px; align-items: start; }
+  .riquadro { background: var(--scheda); border: 1px solid var(--riga); border-radius: 6px; padding: 16px; min-width: 0; }
+  .riquadro.largo { grid-column: 1 / -1; }
+  .nota { font-size: 13px; color: var(--grigio); margin: 10px 0 0; }
+  .vuoto { font-size: 14px; color: var(--grigio); padding: 8px 0; }
+  .avviso { background: var(--scheda); border: 1px solid var(--riga); border-left: 4px solid var(--rosso); border-radius: 6px; padding: 14px 16px; font-size: 15px; }
+  .avviso b { display: block; font-family: var(--serif); font-size: 18px; margin-bottom: 2px; }
+
+  /* grafici */
+  svg { display: block; width: 100%; height: auto; overflow: visible; }
+  svg text { font: 11px var(--sans); fill: var(--grigio); }
+  .legenda { display: flex; gap: 16px; font-size: 13px; color: var(--grigio); margin-top: 8px; flex-wrap: wrap; }
+  .legenda i { display: inline-block; width: 12px; height: 12px; border-radius: 2px; vertical-align: -1px; margin-right: 6px; }
+
+  /* barre orizzontali */
+  .barre { list-style: none; margin: 0; padding: 0; display: grid; gap: 7px; }
+  .barre li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 10px; font-size: 14px; }
+  .barre .n { font-variant-numeric: tabular-nums; font-weight: 600; }
+  .barre .fila { grid-column: 1 / -1; height: 6px; background: rgba(17, 17, 17, .06); border-radius: 3px; overflow: hidden; }
+  .barre .fila span { display: block; height: 100%; background: var(--barra); border-radius: 3px; }
+  .barre .nome { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+  /* tabella pagine */
+  .tabella { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th { text-align: left; font: 600 12px var(--sans); color: var(--grigio); text-transform: uppercase; letter-spacing: .4px; padding: 6px 8px; border-bottom: 1px solid var(--riga); }
+  td { padding: 8px; border-bottom: 1px solid rgba(227, 201, 173, .6); vertical-align: top; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td a { color: var(--nero); text-decoration: none; }
+  td a:hover { color: var(--blu); text-decoration: underline; }
+  td .perc { display: block; font-size: 12px; color: var(--grigio); }
+
+  footer { margin-top: 40px; font-size: 13px; color: var(--grigio); border-top: 1px solid var(--riga); padding-top: 12px; }
+  @media (max-width: 560px) { header .nome { font-size: 24px; } .numero .v { font-size: 30px; } h2 { font-size: 22px; } }
+  @media (prefers-reduced-motion: no-preference) { .barre .fila span { transition: width .4s ease; } }
+</style>
+</head>
+<body>
+<div class="pagina">
+  <header>
+    <a class="nome" href="/">Notizie Benevento<small>Statistiche</small></a>
+    <div class="agg" id="agg"></div>
+  </header>
+
+  <form class="lucchetto" id="lucchetto" hidden>
+    <h1>Statistiche del sito</h1>
+    <p>Pagina privata. I numeri sono cifrati: si aprono solo con la parola d'ordine scelta da te.</p>
+    <label for="parola">Parola d'ordine</label>
+    <input type="password" id="parola" autocomplete="current-password" required>
+    <label class="ricorda"><input type="checkbox" id="ricorda" checked> Ricordala su questo dispositivo</label>
+    <button type="submit" id="apri">Apri</button>
+    <div class="errore" id="errore" role="alert"></div>
+  </form>
+
+  <main id="cruscotto" hidden></main>
+
+  <footer>
+    Visite contate da Cloudflare Web Analytics, senza cookie: conta le visite e le pagine viste, non le persone, e non
+    vede chi usa un blocco della pubblicità. I numeri si aggiornano ogni ora.
+    Pannelli completi: <a href="https://dash.cloudflare.com/d76a7e4eebbfb46bb9fbd03910507063/web-analytics" rel="noopener">Cloudflare</a> ·
+    <a href="https://search.google.com/search-console?resource_id=sc-domain%3Anotiziebenevento.it" rel="noopener">Search Console</a> ·
+    <a href="https://www.bing.com/webmasters/home?siteUrl=https://notiziebenevento.it/" rel="noopener">Bing</a>
+  </footer>
+</div>
+
+<script>
+(function () {
+  var CHIAVE_SALVATA = "nb-statistiche-chiave";
+  var busta = null;
+
+  function b64(s) { return Uint8Array.from(atob(s), function (c) { return c.charCodeAt(0); }); }
+  function a64(buf) { return btoa(String.fromCharCode.apply(null, new Uint8Array(buf))); }
+  function el(tag, cls, testo) { var e = document.createElement(tag); if (cls) e.className = cls; if (testo != null) e.textContent = testo; return e; }
+  var FORMATO = new Intl.NumberFormat("it-IT", { useGrouping: "always" });
+  function num(n) { return n == null ? "–" : FORMATO.format(n); }
+  var PAESI = null;
+  try { PAESI = new Intl.DisplayNames(["it"], { type: "region" }); } catch (e) {}
+  function paese(c) { try { return /^[A-Z]{2}$/.test(c) && PAESI ? PAESI.of(c) : c; } catch (e) { return c; } }
+  function leggiSalvata() { try { return localStorage.getItem(CHIAVE_SALVATA); } catch (e) { return null; } }
+  function salva(v) { try { if (v) localStorage.setItem(CHIAVE_SALVATA, v); else localStorage.removeItem(CHIAVE_SALVATA); } catch (e) {} }
+
+  function chiaveDa(parola) {
+    var enc = new TextEncoder();
+    return crypto.subtle.importKey("raw", enc.encode(parola), "PBKDF2", false, ["deriveKey"]).then(function (base) {
+      return crypto.subtle.deriveKey({ name: "PBKDF2", salt: b64(busta.sale), iterations: busta.iterazioni, hash: "SHA-256" },
+        base, { name: "AES-GCM", length: 256 }, true, ["decrypt"]);
+    });
+  }
+  function apriCon(chiave) {
+    return crypto.subtle.decrypt({ name: "AES-GCM", iv: b64(busta.iv) }, chiave, b64(busta.dati)).then(function (b) {
+      return JSON.parse(new TextDecoder().decode(b));
+    });
+  }
+
+  function mostraLucchetto(msg) {
+    document.getElementById("cruscotto").hidden = true;
+    document.getElementById("lucchetto").hidden = false;
+    document.getElementById("errore").textContent = msg || "";
+    document.getElementById("parola").focus();
+  }
+
+  document.getElementById("lucchetto").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var p = document.getElementById("parola").value, bt = document.getElementById("apri");
+    if (!busta) return;
+    bt.disabled = true; bt.textContent = "Apro…";
+    document.getElementById("errore").textContent = "";
+    var chiave;
+    chiaveDa(p).then(function (k) { chiave = k; return apriCon(k); }).then(function (dati) {
+      if (document.getElementById("ricorda").checked) {
+        crypto.subtle.exportKey("raw", chiave).then(function (raw) { salva(a64(raw)); });
+      }
+      document.getElementById("parola").value = "";
+      disegna(dati);
+    }).catch(function () {
+      mostraLucchetto("Parola d'ordine sbagliata. Controlla maiuscole e trattini.");
+    }).then(function () { bt.disabled = false; bt.textContent = "Apri"; });
+  });
+
+  // ---------- grafici ----------
+  var NS = "http://www.w3.org/2000/svg";
+  function svgEl(tag, att, testo) { var e = document.createElementNS(NS, tag); for (var k in att) e.setAttribute(k, att[k]); if (testo != null) e.textContent = testo; return e; }
+  function scala(max) {
+    // un massimo «tondo» con 4 tacche
+    if (!max) return { max: 4, passo: 1 };
+    var grezzo = max / 4, mag = Math.pow(10, Math.floor(Math.log10(grezzo))), passi = [1, 2, 2.5, 5, 10];
+    var passo = passi.map(function (p) { return p * mag; }).filter(function (p) { return p >= grezzo; })[0];
+    passo = Math.max(1, Math.round(passo));
+    return { max: passo * 4, passo: passo };
+  }
+  // colonne (barre) con una seconda serie facoltativa disegnata come barra più chiara dietro
+  function colonne(dati, opz) {
+    var W = 720, H = 220, sx = 34, dx = 6, su = 10, giu = 26;
+    var max = Math.max.apply(null, dati.map(function (d) { return Math.max(d.v || 0, d.v2 || 0); }));
+    var s = scala(max), n = dati.length, larg = (W - sx - dx) / n;
+    var y = function (v) { return su + (H - su - giu) * (1 - v / s.max); };
+    var svg = svgEl("svg", { viewBox: "0 0 " + W + " " + H, role: "img", "aria-label": opz.titolo });
+    for (var t = 0; t <= 4; t++) {
+      var v = s.passo * t;
+      svg.appendChild(svgEl("line", { x1: sx, x2: W - dx, y1: y(v), y2: y(v), stroke: "#e3c9ad", "stroke-width": t ? 0.6 : 1 }));
+      svg.appendChild(svgEl("text", { x: sx - 6, y: y(v) + 4, "text-anchor": "end" }, num(v)));
+    }
+    dati.forEach(function (d, i) {
+      var x = sx + i * larg, w = Math.max(2, larg * 0.7), ox = x + (larg - w) / 2;
+      var g = svgEl("g", {});
+      if (d.v2 != null) g.appendChild(svgEl("rect", { x: ox, y: y(d.v2), width: w, height: Math.max(0, y(0) - y(d.v2)), fill: "#f0b9a6", rx: 1.5 }));
+      g.appendChild(svgEl("rect", { x: ox, y: y(d.v || 0), width: w, height: Math.max(0, y(0) - y(d.v || 0)), fill: opz.colore || "#c4161c", rx: 1.5 }));
+      g.appendChild(svgEl("title", {}, d.titolo));
+      svg.appendChild(g);
+      if (d.etichetta) svg.appendChild(svgEl("text", { x: x + larg / 2, y: H - 8, "text-anchor": "middle" }, d.etichetta));
+    });
+    return svg;
+  }
+  function barre(righe, campo, link) {
+    if (!righe || !righe.length) return el("p", "vuoto", "Ancora nessun dato.");
+    var max = Math.max.apply(null, righe.map(function (r) { return r[campo]; })) || 1;
+    var ul = el("ul", "barre");
+    righe.forEach(function (r) {
+      var li = el("li");
+      li.appendChild(el("span", "nome", r.nome));
+      li.appendChild(el("span", "n", num(r[campo])));
+      var f = el("span", "fila"), b = el("span");
+      b.style.width = Math.max(1.5, 100 * r[campo] / max) + "%";
+      f.appendChild(b); li.appendChild(f); ul.appendChild(li);
+    });
+    return ul;
+  }
+  function giornoBreve(iso) { var d = new Date(iso + "T12:00:00Z"); return d.toLocaleDateString("it-IT", { day: "numeric", month: "short", timeZone: "Europe/Rome" }); }
+  function riquadro(tit, figlio, cls) { var r = el("section", "riquadro" + (cls ? " " + cls : "")); r.appendChild(el("h3", "", tit)); if (figlio) r.appendChild(figlio); return r; }
+  function numero(et, v, d) { var b = el("div", "numero"); b.appendChild(el("div", "et", et)); b.appendChild(el("div", "v", v)); if (d) b.appendChild(el("div", "d", d)); return b; }
+  function somma(lista, campo, ultimi) { return lista.slice(-ultimi).reduce(function (s, x) { return s + (x[campo] || 0); }, 0); }
+
+  // ---------- il cruscotto ----------
+  function disegna(D) {
+    var m = document.getElementById("cruscotto");
+    m.textContent = "";
+    document.getElementById("lucchetto").hidden = true;
+    m.hidden = false;
+    var agg = document.getElementById("agg");
+    agg.textContent = "Aggiornato " + new Date(D.aggiornato).toLocaleString("it-IT", { timeZone: "Europe/Rome", day: "numeric", month: "long", hour: "2-digit", minute: "2-digit" });
+    var esci = el("button", "", "Esci");
+    esci.type = "button";
+    esci.addEventListener("click", function () { salva(null); mostraLucchetto("Uscito. Su questo dispositivo la parola d'ordine non è più ricordata."); });
+    agg.appendChild(esci);
+
+    // --- visite ---
+    var V = D.visite || {};
+    m.appendChild(el("h2", "", "Visite"));
+    m.appendChild(el("p", "sotto", "Quante volte il sito è stato aperto e quante pagine sono state lette. Ultimi " + D.giorni + " giorni."));
+    if (V.stato !== "ok") {
+      var a = el("div", "avviso"); a.appendChild(el("b", "", V.stato === "errore" ? "Il contatore non ha risposto" : "Contatore da collegare"));
+      a.appendChild(document.createTextNode(V.messaggio || "")); m.appendChild(a);
+    } else {
+      var tot30v = somma(V.giorni, "visite", 30), tot30p = somma(V.giorni, "pagine", 30);
+      var tot7v = somma(V.giorni, "visite", 7), tot7p = somma(V.giorni, "pagine", 7);
+      var oggiG = V.giorni[V.giorni.length - 1] || {};
+      var nn = el("div", "numeri");
+      nn.appendChild(numero("Oggi", num(oggiG.visite), num(oggiG.pagine) + " pagine lette"));
+      nn.appendChild(numero("Ultime 24 ore", num(V.ultime24.visite), num(V.ultime24.pagine) + " pagine lette"));
+      nn.appendChild(numero("Ultimi 7 giorni", num(tot7v), num(tot7p) + " pagine lette"));
+      nn.appendChild(numero("Ultimi 30 giorni", num(tot30v), num(tot30p) + " pagine lette"));
+      m.appendChild(nn);
+      var g = el("div", "griglia");
+      var rg = riquadro("Giorno per giorno");
+      rg.appendChild(colonne(V.giorni.map(function (x, i) {
+        return { v: x.visite, v2: x.pagine, etichetta: i % 5 === 4 || i === V.giorni.length - 1 ? giornoBreve(x.data) : "",
+                 titolo: giornoBreve(x.data) + ": " + num(x.visite) + " visite, " + num(x.pagine) + " pagine lette" };
+      }), { titolo: "Visite per giorno" }));
+      var lg = el("div", "legenda"); lg.innerHTML = '<span><i style="background:#c4161c"></i>Visite</span><span><i style="background:#f0b9a6"></i>Pagine lette</span>';
+      rg.appendChild(lg); rg.classList.add("largo"); g.appendChild(rg);
+
+      // pagine più lette
+      var tb = el("div", "tabella");
+      if (V.pagine && V.pagine.length) {
+        var t = el("table"), th = el("thead"), tr = el("tr");
+        ["Pagina", "Visite", "Lette"].forEach(function (h, i) { var c = el("th", i ? "num" : "", h); tr.appendChild(c); });
+        th.appendChild(tr); t.appendChild(th);
+        var tbo = el("tbody");
+        V.pagine.slice(0, 20).forEach(function (p) {
+          var r = el("tr"), c = el("td"), l = el("a", "", p.titolo || p.percorso);
+          l.href = p.percorso; l.target = "_blank"; l.rel = "noopener";
+          c.appendChild(l); if (p.titolo) c.appendChild(el("span", "perc", p.percorso));
+          r.appendChild(c); r.appendChild(el("td", "num", num(p.visite))); r.appendChild(el("td", "num", num(p.pagine)));
+          tbo.appendChild(r);
+        });
+        t.appendChild(tbo); tb.appendChild(t);
+      } else tb.appendChild(el("p", "vuoto", "Ancora nessuna pagina letta."));
+      var rp = riquadro("Le pagine più lette", tb); rp.classList.add("largo"); g.appendChild(rp);
+
+      var rd = riquadro("Da dove arrivano", barre(V.provenienza, "visite"));
+      rd.appendChild(el("p", "nota", "«Diretto» comprende chi scrive l'indirizzo, i preferiti e i link aperti da WhatsApp e da molte app, che non dicono da dove arrivano."));
+      var ro = riquadro("A che ora leggono");
+      ro.appendChild(colonne(V.ore.map(function (x) {
+        return { v: x.visite, etichetta: x.ora % 3 === 0 ? String(x.ora) : "", titolo: "Dalle " + x.ora + " alle " + (x.ora + 1) + ": " + num(x.visite) + " visite" };
+      }), { titolo: "Visite per ora del giorno", colore: "#1d4f91" }));
+      ro.appendChild(el("p", "nota", "Ora italiana, somma degli ultimi " + D.giorni + " giorni."));
+      ro.classList.add("largo");
+      g.appendChild(ro);
+      g.appendChild(rd);
+      g.appendChild(riquadro("Con cosa leggono", barre(V.dispositivi, "visite")));
+      g.appendChild(riquadro("Da quale paese", barre((V.paesi || []).slice(0, 8).map(function (x) { return { nome: paese(x.nome), visite: x.visite }; }), "visite")));
+      m.appendChild(g);
+    }
+
+    // --- Google ---
+    var G = D.google || {};
+    m.appendChild(el("h2", "", "Google"));
+    m.appendChild(el("p", "sotto", "Quante volte il sito compare nelle ricerche, quanti clic riceve e con quali parole."));
+    if (G.stato !== "ok") {
+      var ag = el("div", "avviso"); ag.appendChild(el("b", "", "Da collegare"));
+      ag.appendChild(document.createTextNode((G.messaggio || "") + " Intanto i numeri si vedono in "));
+      var lk = el("a", "", "Search Console"); lk.href = "https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Anotiziebenevento.it"; lk.rel = "noopener";
+      ag.appendChild(lk); ag.appendChild(document.createTextNode(" (i primi dati arrivano 2-3 giorni dopo l'iscrizione).")); m.appendChild(ag);
+    }
+
+    // --- il sito ---
+    var S = D.sito || {};
+    m.appendChild(el("h2", "", "Il giornale"));
+    m.appendChild(el("p", "sotto", "Cosa ha pubblicato l'agente negli ultimi " + D.giorni + " giorni."));
+    var ns = el("div", "numeri");
+    ns.appendChild(numero("Notizie pubblicate", num(S.ultimi_giorni), num(S.totale) + " in tutto, archivio compreso"));
+    ns.appendChild(numero("In prima pagina", num(S.in_prima_pagina), "ora"));
+    ns.appendChild(numero("Fonti per notizia", S.media_fonti == null ? "–" : String(S.media_fonti).replace(".", ","), "in media"));
+    ns.appendChild(numero("Da fonti ufficiali", num(S.ufficiali), num(S.rilevanti) + " segnate come importanti"));
+    m.appendChild(ns);
+    var gs = el("div", "griglia");
+    var rn = riquadro("Notizie al giorno");
+    rn.appendChild(colonne((S.giorni || []).map(function (x, i, a) {
+      return { v: x.notizie, etichetta: i % 5 === 4 || i === a.length - 1 ? giornoBreve(x.data) : "", titolo: giornoBreve(x.data) + ": " + num(x.notizie) + " notizie" };
+    }), { titolo: "Notizie pubblicate per giorno", colore: "#2e6b3f" }));
+    rn.classList.add("largo"); gs.appendChild(rn);
+    gs.appendChild(riquadro("Per sezione", barre(S.sezioni, "notizie")));
+    gs.appendChild(riquadro("Per zona", barre(S.zone, "notizie")));
+    var rf = riquadro("Giornali e fonti più citati", barre(S.fonti, "notizie"));
+    rf.appendChild(el("p", "nota", "In quante notizie compare ciascuna fonte. L'ultimo giro dell'agente ha letto " + num(S.giornali_letti) + " giornali."));
+    gs.appendChild(rf);
+    m.appendChild(gs);
+  }
+
+  // ---------- avvio ----------
+  fetch("dati.json?t=" + Date.now(), { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (j) {
+      busta = j;
+      var salvata = leggiSalvata();
+      if (!salvata) { mostraLucchetto(); return; }
+      crypto.subtle.importKey("raw", b64(salvata), { name: "AES-GCM" }, true, ["decrypt"])
+        .then(apriCon).then(disegna)
+        .catch(function () { salva(null); mostraLucchetto("La parola d'ordine è cambiata: scrivi quella nuova."); });
+    })
+    .catch(function () {
+      document.getElementById("lucchetto").hidden = false;
+      document.getElementById("apri").disabled = true;
+      document.getElementById("errore").textContent = "I numeri non sono ancora pronti: arrivano alla prossima pubblicazione del sito (al massimo un'ora).";
+    });
+})();
+</script>
+</body>
+</html>

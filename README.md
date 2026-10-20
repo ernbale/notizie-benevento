@@ -17,6 +17,8 @@ Sito: https://notiziebenevento.it (notiziebenevento.com rimanda qui)
   le pagine delle sezioni e delle zone, l'immagine di anteprima di ogni notizia, `sitemap.xml`, `sitemap-notizie.xml`
   (Google News), `feed.xml` (RSS) e avvisa Bing con IndexNow. Niente di questo va nel repository.
 - `404.html`: se la pagina di una notizia manca, apre la notizia nella prima pagina.
+- `strumenti/statistiche.py` + `statistiche/`: pagina privata con visite (Cloudflare Web Analytics), Google e numeri del giornale;
+  i dati sono cifrati con la parola d'ordine (segreto `STATISTICHE_PAROLA`), non vanno nel repository.
 - L'agente (routine Claude ogni 2 ore, 6-22) pubblica con git, in un solo commit; GitHub Actions ripubblica il sito.
 - `AGENTE.md`: le istruzioni dell'agente che aggiorna il sito.
 

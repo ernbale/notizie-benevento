@@ -306,7 +306,7 @@
 <div class="pagina">
   <header class="testata">
     <div class="data" id="data"></div>
-    <a class="nome" href="#">
+    <a class="nome" href="/">
       <h1 class="grande">Notizie Benevento</h1>
       <span class="piccolo">Benevento e provincia</span>
     </a>
@@ -357,8 +357,19 @@
   var TZ = "Europe/Rome";
   // Le pagine fatte da strumenti/pagine.py (una per notizia, sezione o zona) dicono cosa mostrare all'apertura.
   var FISSA = window.NB_PAGINA || null;
-  function rotta() { return location.hash || (FISSA && FISSA.rotta) || ""; }
-  function vaiA(h) { if (FISSA) location.href = "/" + h; else location.hash = h; }
+  // Cosa mostrare: il #frammento (archivio, ricerca, vecchi link #articolo/…), poi l'indirizzo vero di una notizia
+  // (/notizia/<id>/, anche aperta dalla prima pagina senza ricaricare), poi quello che dice la pagina fissa.
+  function rotta() {
+    if (location.hash) return location.hash;
+    var p = location.pathname.match(/^\/(notizia|approfondimento)\/([^\/]+)\/$/);
+    if (p) return "#" + (p[1] === "notizia" ? "articolo" : "approfondimento") + "/" + p[2];
+    return (FISSA && FISSA.rotta) || "";
+  }
+  function vaiA(h) {
+    if (FISSA) location.href = "/" + h;
+    else if (location.pathname !== "/") { history.pushState(null, "", "/" + h); cambiaPagina(); }
+    else location.hash = h;
+  }
 
   function testo(s) { return document.createTextNode(s == null ? "" : String(s)); }
   function el(tag, cls, figli) {
@@ -392,7 +403,7 @@
     return d.toLocaleDateString("it-IT", { timeZone: TZ, day: "numeric", month: "short" }) + " " + soloOra(iso);
   }
   // Ogni notizia ha la sua pagina vera (la fa strumenti/pagine.py): è il link che segue Google e che si condivide.
-  // In prima pagina il clic la apre lo stesso senza ricaricare (vedi «apriQui» in fondo).
+  // In prima pagina il clic la apre lo stesso senza ricaricare, ma con l'indirizzo vero (vedi «apriQui» in fondo).
   function linkArticolo(n) { return "/notizia/" + encodeURIComponent(n.id) + "/"; }
   function linkAppro(a) { return "/approfondimento/" + encodeURIComponent(a.id) + "/"; }
 
@@ -899,7 +910,7 @@
   }
   function testataPagina(art, occhiello, luogo, titolo) {
     var ind = el("a", "indietro", ["← Tutte le notizie"]);
-    ind.href = "#";
+    ind.href = "/";
     art.appendChild(ind);
     var occ = el("div", "occhiello", [occhiello]);
     if (luogo) occ.appendChild(el("span", "luogo", [luogo]));
@@ -1382,7 +1393,9 @@
     });
   }
 
+  var TITOLO = document.title;
   function disegna() {
+    document.title = TITOLO;
     var box = document.getElementById("contenuto");
     var menu = document.getElementById("menu");
     box.textContent = "";
@@ -1401,7 +1414,7 @@
       var id = decodeURIComponent(m[2]);
       if (m[1] === "articolo") {
         var n = (dati.notizie || []).filter(function (x) { return x.id === id && x.articolo; })[0];
-        if (n) { menu.style.display = "none"; disegnaArticolo(box, n); window.scrollTo(0, 0); return; }
+        if (n) { menu.style.display = "none"; disegnaArticolo(box, n); if (!FISSA) document.title = n.titolo + " – Notizie Benevento"; window.scrollTo(0, 0); return; }
       } else {
         var ap = (dati.approfondimenti || []).filter(function (x) { return x.id === id; })[0];
         if (ap) { menu.style.display = "none"; disegnaApprofondimento(box, ap); window.scrollTo(0, 0); return; }
@@ -1460,15 +1473,30 @@
     ricerca.ritorno = false;
     vaiA(q ? "#cerca/" + encodeURIComponent(q) : "#archivio");
   });
-  window.addEventListener("hashchange", function () { if ("speechSynthesis" in window) speechSynthesis.cancel(); disegna(); });
-  // apriQui: in prima pagina un clic su una notizia la apre senza ricaricare, come sempre (si torna indietro allo stesso punto).
+  // Cambio di pagina dentro il sito (frammento o indirizzo): si ridisegna una volta sola, anche se arrivano
+  // sia «popstate» sia «hashchange».
+  var mostrato = location.pathname + location.hash;
+  function cambiaPagina() {
+    var ora = location.pathname + location.hash;
+    if (ora === mostrato) return;
+    mostrato = ora;
+    if ("speechSynthesis" in window) speechSynthesis.cancel();
+    disegna();
+  }
+  window.addEventListener("hashchange", cambiaPagina);
+  window.addEventListener("popstate", cambiaPagina);
+  // apriQui: in prima pagina un clic su una notizia (o su «Tutte le notizie») cambia pagina senza ricaricare,
+  // con l'indirizzo vero nella barra: si condivide copiandolo, il tasto Indietro torna allo stesso punto
+  // e il contatore delle visite conta la notizia letta.
   document.addEventListener("click", function (e) {
     if (FISSA || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
     var a = e.target.closest ? e.target.closest("a[href]") : null;
-    var m = a && !a.target && a.getAttribute("href").match(/^\/(notizia|approfondimento)\/([^\/]+)\/$/);
-    if (!m) return;
+    var h = a && !a.target ? a.getAttribute("href") : "";
+    if (h !== "/" && !/^\/(notizia|approfondimento)\/[^\/]+\/$/.test(h)) return;
     e.preventDefault();
-    location.hash = "#" + (m[1] === "notizia" ? "articolo" : "approfondimento") + "/" + m[2];
+    if (h === location.pathname && !location.hash) { window.scrollTo(0, 0); return; }
+    history.pushState(null, "", h);
+    cambiaPagina();
   });
   // sezioni e zone: la prima pagina parte già filtrata
   if (FISSA && (FISSA.cat || FISSA.zona)) {

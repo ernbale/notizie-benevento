@@ -3,6 +3,7 @@ Allow: /
 Disallow: /strumenti/
 Disallow: /AGENTE.md
 Disallow: /README.md
+Disallow: /statistiche/
 
 Sitemap: https://notiziebenevento.it/sitemap.xml
 Sitemap: https://notiziebenevento.it/sitemap-notizie.xml
