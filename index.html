@@ -1523,7 +1523,33 @@
     .catch(function () { stato(); document.getElementById("stato").textContent = "Notizie non disponibili, riprova tra poco"; disegna(); });
 })();
 </script>
-<!-- Cloudflare Web Analytics: conta le visite senza cookie e senza dati personali -->
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "d26cc020fff942868bb646d8209b3ad6"}'></script>
+<!-- Cloudflare Web Analytics: conta le visite senza cookie e senza dati personali.
+     Con ?non-contarmi questo browser non viene più contato (il proprietario non deve gonfiare i numeri),
+     con ?contami torna a esserlo. -->
+<script>
+(function () {
+  var CHIAVE = "nb-non-contarmi", msg = "";
+  try {
+    if (/[?&]non-contarmi\b/.test(location.search)) { localStorage.setItem(CHIAVE, "1"); msg = "Da ora questo browser non viene contato nelle statistiche del sito."; }
+    else if (/[?&]contami\b/.test(location.search)) { localStorage.removeItem(CHIAVE); msg = "Da ora questo browser viene di nuovo contato nelle statistiche del sito."; }
+    if (msg) history.replaceState(null, "", location.pathname + location.hash);
+    if (localStorage.getItem(CHIAVE)) { avviso(msg); return; }
+  } catch (e) {}
+  var s = document.createElement("script");
+  s.defer = true;
+  s.src = "https://static.cloudflareinsights.com/beacon.min.js";
+  s.setAttribute("data-cf-beacon", '{"token": "d26cc020fff942868bb646d8209b3ad6"}');
+  document.body.appendChild(s);
+  avviso(msg);
+  function avviso(t) {
+    if (!t) return;
+    var d = document.createElement("div");
+    d.textContent = t;
+    d.style.cssText = "position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:#111;color:#fff;font:600 14px/1.4 Inter,Arial,sans-serif;padding:10px 16px;border-radius:6px;z-index:99;max-width:90%";
+    document.body.appendChild(d);
+    setTimeout(function () { d.remove(); }, 6000);
+  }
+})();
+</script>
 </body>
 </html>
