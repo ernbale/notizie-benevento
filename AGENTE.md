@@ -120,13 +120,68 @@ Regole:
 3. **Confronta**: cosa dicono tutti (concordano), cosa dicono in modo diverso (divergono: scrivilo), cosa manca
    (non si sa). Se un giornale ha sbagliato una data o un dato verificabile su una fonte ufficiale, scrivilo
    nella `nota` con garbo.
-4. **Scrivi** titolo, sintesi e articolo seguendo le regole sopra.
+4. **Scrivi** titolo, sintesi e articolo seguendo le regole sopra e «Come si scrive l'articolo» qui sotto.
 5. **Rileggi prima di pubblicare** (obbligatorio), per ogni notizia nuova o cambiata:
    - ogni frase dell'articolo ha almeno una fonte che hai davvero letto, e la fonte dice proprio quello?
+   - il racconto si capisce da solo, da chi non ha letto nessun giornale? dice chi è chi, dove e perché?
    - date, orari, numeri, nomi di strade e paesi sono identici alle fonti?
    - titolo: dice il fatto? è senza acchiappa-clic? parole semplici?
    - è un fatto di oggi o ancora attuale?
    Se qualcosa non torna, correggi; se non riesci a verificarlo, togli quella frase o la notizia.
+
+## Come si scrive l'articolo
+
+Il cuore della notizia è il **racconto** (`articolo.racconto`): la storia scritta per intero, come la spiegheresti a
+un vicino che non ne sa niente. Non un riassunto e non un elenco: paragrafi veri, uno dopo l'altro.
+
+- **Da 3 a 6 paragrafi** di 2-4 frasi. Un avviso semplice (orari del cimitero, acqua sospesa) può averne 2-3; un fatto
+  di cronaca o una storia che dura da giorni anche 6. La lunghezza la decide quello che hai letto: tutto quello che le
+  fonti dicono e serve a chi legge, niente riempitivi, niente frasi fatte, niente ripetizioni.
+- **L'ordine**, saltando i punti di cui le fonti non dicono niente (mai inventare un perché):
+  1. **il fatto**: chi, cosa, dove, quando. Chi legge solo il primo paragrafo deve aver capito;
+  2. **come è andata**: i dettagli nell'ordine in cui sono successi, con orari, luoghi precisi (via, contrada,
+     chilometro della statale), chi è intervenuto;
+  3. **perché**: la causa, i precedenti, il contesto (anche fatti già usciti nell'archivio, con la loro fonte);
+  4. **cosa cambia per la gente**: chi è toccato, cosa deve fare, strade alternative, numeri utili, scadenze;
+  5. **cosa succede adesso**: le prossime tappe con le date.
+- **Spiega chi è chi** la prima volta che lo nomini: «Alto Calore Servizi, la società che porta l'acqua in buona parte
+  del Sannio»; «lo STIR di Casalduni, l'impianto dove si lavorano i rifiuti». Le sigle si sciolgono. Dei paesi piccoli
+  di' dove stanno se aiuta a capire («Pannarano, in Valle Caudina»).
+- **Frasi brevi**: una cosa per frase, prima chi fa e poi cosa fa. Niente frasi da 50 parole, niente passivi da ufficio
+  («è stata disposta la chiusura» → «il sindaco ha chiuso»). Un elenco lungo di paesi o di nomi va in una frase sua.
+- **Leggi tutti gli articoli per intero e metti insieme i dettagli di ognuno**: spesso un giornale dà l'orario, un altro
+  il nome della strada, il Comune il numero da chiamare. Il racconto deve essere più completo di ogni singolo giornale:
+  è questo il valore del sito.
+- **Ogni paragrafo ha le sue fonti** (`fonti`, nomi identici a `articolo.fonti`). Con parole tue puoi spiegare (cos'è
+  una condotta, dove sta un paese), ma ogni fatto deve stare scritto in una fonte che hai letto. Se le fonti dicono cose
+  diverse, nel racconto scrivi la versione più sicura e la differenza va in `divergono`.
+
+Dopo il racconto vengono le altre parti, che **non lo ripetono**:
+- `cronologia` («I fatti»): solo se la storia ha **almeno due momenti** diversi (l'incidente alle 7, la strada
+  riaperta alle 11, l'aggiornamento del giorno dopo). Righe brevi, con data e ora. Con un solo momento lasciala vuota.
+- `concordano`: solo quando **almeno due fonti** dicono la stessa cosa. Righe brevi con i punti chiave confermati e chi
+  li conferma (es. «L'ora dell'incidente, le 7:30, e il ferito portato al Rummo»). Con una sola fonte, per esempio solo
+  il comunicato del Comune, lascialo vuoto.
+- `divergono`: cosa dice ognuna e quale vale.
+- `non_si_sa`: le domande che si farebbe un lettore e a cui le fonti non rispondono ancora.
+
+**Esempio.** Così NO (com'era prima): «Giovedì 22 ottobre, dalle 14 alle 24, Alto Calore Servizi sospende l'erogazione
+dell'acqua in diversi Comuni del Sannio», poi «I fatti: Alto Calore comunica lo stop» e «Concordano: acqua sospesa
+giovedì dalle 14 alle 24»: tre volte la stessa frase, e non si capisce chi resta a secco e perché. Così SÌ:
+1. «Giovedì 22 ottobre, dalle 14 a mezzanotte, otto paesi del Sannio restano senz'acqua: Paduli, Pietrelcina, Pesco
+   Sannita, Pago Veiano, Campolattaro, Pontelandolfo, Fragneto Monforte e Sant'Arcangelo Trimonte. Lo ha comunicato
+   Alto Calore Servizi, la società che porta l'acqua in buona parte della provincia.»
+2. «Il motivo sono lavori urgenti sulla condotta principale, il tubo grande che rifornisce questi paesi, nel tratto di
+   località Torre a Paduli. Li fa l'Acquedotto Campano per conto della Regione Campania.»
+3. «Senz'acqua restano anche lo STIR di Casalduni, l'impianto dove si lavorano i rifiuti, e ad Apice le utenze di
+   Ferrovie dello Stato e dell'Alta Velocità.»
+4. «Quando l'acqua torna può uscire torbida per qualche minuto: Alto Calore dice che resta potabile e consiglia di
+   lasciarla scorrere. Per i casi di vera necessità c'è il numero verde 800 954 430; se i lavori durano di più,
+   l'avviso sarà su altocalore.it.»
+
+**Le notizie in prima pagina scritte col formato vecchio** (con `cosa` e senza `racconto`): a ogni giro riscrivine
+almeno 8, partendo dalle più recenti e dalle `rilevanti`. Riapri gli articoli fonte, scrivi il racconto da capo,
+togli `cosa` e sistema cronologia e concordano con le regole qui sopra. Le notizie in `archivio/` non si toccano.
 
 ## Gli approfondimenti
 
@@ -159,7 +214,7 @@ Regole:
     "fonti": [ {"nome": "Testata", "url": "link all'articolo"} ],
     "nota": "solo se serve una correzione",
     "articolo": {
-      "cosa": "2-4 frasi",
+      "racconto": [ {"testo": "un paragrafo", "fonti": ["Nome fonte come in articolo.fonti"]} ],
       "cronologia": [ {"data": "19 ottobre | 10:30 | notte 19-20", "fatto": "", "fonti": ["Nome fonte come in articolo.fonti"]} ],
       "concordano": [ {"testo": "", "fonti": []} ], "divergono": [ {"testo": "", "fonti": []} ],
       "non_si_sa": [ "" ],

@@ -309,9 +309,13 @@ def html_articolo(n, appro_collegato):
     h = _testata_pagina(NOMI_CAT.get(n.get("categoria"), "Altro"), n.get("luogo"), n["titolo"])
     meta = ("Dall'archivio · " if n["_arch"] else "") + (data_it(n.get("pubblicato")) + " · " if n.get("pubblicato") else "")
     h += f'<div class="meta">{e(meta)}{len(fonti)} {"fonte" if len(fonti) == 1 else "fonti confrontate"}</div>' + POSTO_ASCOLTA
-    if a.get("cosa"):
+    if isinstance(a.get("racconto"), list) and a["racconto"]:
+        h += '<div class="racconto">' + "".join(_frase("p", r, fonti) for r in a["racconto"]) + "</div>"
+    elif a.get("cosa"):
         h += f"<h3>Cosa è successo</h3><p>{e(a['cosa'])}</p>"
-    h += _cronologia(a.get("cronologia"), fonti, "I fatti")
+    # con il racconto, una cronologia di un solo momento non aggiunge niente
+    if not a.get("racconto") or len(a.get("cronologia") or []) > 1:
+        h += _cronologia(a.get("cronologia"), fonti, "I fatti")
     h += _elenco("Su cosa concordano i giornali", a.get("concordano"), fonti)
     h += _elenco("Su cosa non concordano", a.get("divergono"), fonti)
     h += _elenco("Cosa non si sa ancora", a.get("non_si_sa"), fonti)

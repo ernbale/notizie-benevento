@@ -126,8 +126,8 @@ def controlla(d, err, avv, adesso=None):
             if len(testate) < 2:
                 err.append(f"{w}: 'confermata' con meno di 2 testate")
         a = n.get("articolo") or {}
-        if vuoto(a.get("cosa")):
-            err.append(f"{w}: articolo.cosa vuoto")
+        if vuoto(a.get("cosa")) and vuoto(a.get("racconto")):
+            err.append(f"{w}: articolo senza racconto (né cosa)")
         nomi = [f.get("nome") for f in a.get("fonti", [])]
         if not nomi:
             err.append(f"{w}: articolo.fonti vuoto")
@@ -137,7 +137,7 @@ def controlla(d, err, avv, adesso=None):
             for k in ("nome", "titolo", "url", "data"):
                 if vuoto(f.get(k)):
                     err.append(f"{w}: articolo.fonti {f.get('nome')} senza {k}")
-        for sez in ("cronologia", "concordano", "divergono"):
+        for sez in ("racconto", "cronologia", "concordano", "divergono"):
             for x in a.get(sez) or []:
                 if vuoto(x.get("fatto" if sez == "cronologia" else "testo")):
                     err.append(f"{w}: {sez} con testo vuoto")
@@ -183,11 +183,19 @@ def controlla(d, err, avv, adesso=None):
         url_validi(ap, w)
 
 
+def cosa_breve(a):
+    """Per l'indice della ricerca: «cosa», oppure il primo paragrafo del racconto."""
+    if a.get("cosa"):
+        return a["cosa"]
+    r = a.get("racconto") or []
+    return (r[0] or {}).get("testo", "") if r and isinstance(r[0], dict) else ""
+
+
 def voce_indice(x, tipo, mese):
     if tipo == "notizia":
         return {"id": x["id"], "tipo": "notizia", "titolo": x.get("titolo", ""), "sintesi": x.get("sintesi", ""),
                 "luogo": x.get("luogo", ""), "categoria": x.get("categoria", ""), "zona": x.get("zona", ""),
-                "pubblicato": x.get("pubblicato", ""), "cosa": (x.get("articolo") or {}).get("cosa", ""), "mese": mese}
+                "pubblicato": x.get("pubblicato", ""), "cosa": cosa_breve(x.get("articolo") or {}), "mese": mese}
     return {"id": x["id"], "tipo": "approfondimento", "titolo": x.get("titolo", ""), "sintesi": x.get("sommario", ""),
             "luogo": x.get("luogo", ""), "pubblicato": x.get("aggiornato", ""), "cosa": "", "mese": mese}
 
