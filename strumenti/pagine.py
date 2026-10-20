@@ -303,12 +303,25 @@ def _testata_pagina(occhiello, luogo, titolo):
 POSTO_ASCOLTA = '<div class="ascolta" style="min-height:38px"></div>'
 
 
+def foto_tema(n):
+    """La foto illustrativa della notizia (img/temi/<tema>.jpg), se c'è: mai sulla cronaca."""
+    t = n.get("immagine")
+    if not t or n.get("categoria") == "cronaca" or not re.match(r"^[a-z0-9-]+$", str(t)):
+        return None
+    return f"/img/temi/{t}.jpg"
+
+
 def html_articolo(n, appro_collegato):
     a = n["articolo"]
     fonti = a.get("fonti") if isinstance(a.get("fonti"), list) else []
     h = _testata_pagina(NOMI_CAT.get(n.get("categoria"), "Altro"), n.get("luogo"), n["titolo"])
     meta = ("Dall'archivio · " if n["_arch"] else "") + (data_it(n.get("pubblicato")) + " · " if n.get("pubblicato") else "")
     h += f'<div class="meta">{e(meta)}{len(fonti)} {"fonte" if len(fonti) == 1 else "fonti confrontate"}</div>' + POSTO_ASCOLTA
+    if foto_tema(n):
+        b = foto_tema(n)[:-4]
+        h += (f'<figure class="foto-tema"><img src="{b}-m.jpg" srcset="{b}-m.jpg 768w, {b}.jpg 1536w" '
+              'sizes="(max-width: 800px) 100vw, 760px" width="1536" height="1024" alt="" decoding="async">'
+              "<figcaption>Immagine illustrativa creata con l'intelligenza artificiale: non è una foto del fatto.</figcaption></figure>")
     if isinstance(a.get("racconto"), list) and a["racconto"]:
         h += '<div class="racconto">' + "".join(_frase("p", r, fonti) for r in a["racconto"]) + "</div>"
     elif a.get("cosa"):
@@ -468,7 +481,7 @@ def main():
         jsonld = {"@context": "https://schema.org", "@graph": [
             {"@type": "NewsArticle", "@id": url + "#articolo", "headline": breve(n["titolo"], 110),
              "description": n.get("sintesi"), "datePublished": n.get("pubblicato"), "dateModified": modificato,
-             "image": [SITO + im], "inLanguage": "it-IT", "articleSection": sez, "isAccessibleForFree": True,
+             "image": ([SITO + foto_tema(n)] if foto_tema(n) else []) + [SITO + im], "inLanguage": "it-IT", "articleSection": sez, "isAccessibleForFree": True,
              "mainEntityOfPage": url, "author": {"@type": "Organization", "name": NOME, "url": SITO + "/"},
              "publisher": ORG, "contentLocation": {"@type": "Place", "name": n.get("luogo")},
              "isBasedOn": [f["url"] for f in fonti if re.match(r"^https?://", str(f.get("url") or ""))]},

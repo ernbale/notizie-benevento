@@ -183,6 +183,18 @@ giovedì dalle 14 alle 24»: tre volte la stessa frase, e non si capisce chi res
 almeno 8, partendo dalle più recenti e dalle `rilevanti`. Riapri gli articoli fonte, scrivi il racconto da capo,
 togli `cosa` e sistema cronologia e concordano con le regole qui sopra. Le notizie in `archivio/` non si toccano.
 
+## La foto illustrativa (`immagine`)
+
+- In `img/temi/temi.json` c'è l'elenco delle foto illustrative già pronte, fatte una volta sola con l'AI: ogni tema ha
+  un nome (es. `acqua`) e `quando` usarlo. Sul sito escono con la scritta «Immagine illustrativa».
+- Per ogni notizia scegli **il tema che corrisponde al fatto** e scrivilo nella notizia: `"immagine": "acqua"`. Se
+  nessun tema va bene davvero, non mettere il campo: meglio niente che una foto che non c'entra.
+- **Mai sulla cronaca** (`"categoria": "cronaca"`): arresti, incidenti, feriti, morti, processi e indagini restano
+  senza foto. Lo stesso per le notizie di altre sezioni che parlano di una persona precisa accusata o ferita.
+- Solo i temi dell'elenco: non crearne di nuovi e mai foto dei giornali. Se manca un tema che servirebbe spesso,
+  scrivilo nel resoconto.
+- Alle notizie in prima pagina senza `immagine` aggiungila a ogni giro, dove c'è un tema adatto.
+
 ## Gli approfondimenti
 
 - Solo per le **notizie più rilevanti** per chi vive nel Sannio: riportate da **almeno 3 testate**, oppure che
@@ -208,6 +220,7 @@ togli `cosa` e sistema cronologia e concordano con le regole qui sopra. Le notiz
     "titolo": "", "sintesi": "2-3 frasi",
     "categoria": "strade|cronaca|meteo|politica|eventi|altro",
     "zona": "benevento|telesina|caudina|fortore|provincia",
+    "immagine": "tema da img/temi/temi.json (facoltativo, mai per la cronaca)",
     "luogo": "paese o località", "pubblicato": "ISO dell'articolo fonte più recente, oppure solo AAAA-MM-GG se l'ora non è scritta",
     "stato": "confermata|ufficiale", "rilevante": false,
     "in_vigore_fino": "AAAA-MM-GG, solo per avvisi ufficiali con una scadenza (lavori, divieti, ordinanze)",

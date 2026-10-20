@@ -66,6 +66,16 @@ def nel_futuro(iso, adesso):
         return False
 
 
+def temi_foto():
+    """I temi delle foto illustrative (img/temi/temi.json) che hanno davvero il file."""
+    cart = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "img", "temi")
+    try:
+        temi = json.load(open(os.path.join(cart, "temi.json"), encoding="utf-8"))
+    except Exception:
+        return set()
+    return {t for t in temi if os.path.exists(os.path.join(cart, t + ".jpg"))}
+
+
 def controlla(d, err, avv, adesso=None):
     """Le stesse regole di AGENTE.md, sul file della prima pagina."""
     for k in ("aggiornato", "giornali_letti", "notizie", "approfondimenti"):
@@ -125,6 +135,11 @@ def controlla(d, err, avv, adesso=None):
             testate = {re.sub(r"\s*\(.*\)$", "", x or "") for x in nomi_prima}
             if len(testate) < 2:
                 err.append(f"{w}: 'confermata' con meno di 2 testate")
+        if "immagine" in n:
+            if n.get("categoria") == "cronaca":
+                err.append(f"{w}: niente immagine sulla cronaca (togli il campo immagine)")
+            elif n["immagine"] not in temi_foto():
+                err.append(f"{w}: immagine {n['immagine']!r} non è un tema di img/temi/temi.json")
         a = n.get("articolo") or {}
         if vuoto(a.get("cosa")) and vuoto(a.get("racconto")):
             err.append(f"{w}: articolo senza racconto (né cosa)")
