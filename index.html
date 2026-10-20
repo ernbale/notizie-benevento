@@ -265,6 +265,93 @@
   .collegate a { color: var(--blu); }
   .laterale .sommario-breve { font-size: 15px; color: #2a2520; margin: 0 0 8px; }
 
+  /* calendario degli eventi */
+  .calendario { margin: 4px 0 26px; }
+  .cal-testa { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; border-top: 3px solid var(--nero); padding-top: 8px; }
+  .cal-testa h2 { font: 700 28px/1.1 var(--serif); margin: 0; }
+  .cal-nav { display: flex; gap: 6px; }
+  .cal-nav button, .cal-filtri button { font: 600 13px var(--sans); background: #fff; color: var(--nero); border: 1px solid var(--riga); border-radius: 16px; padding: 5px 12px; cursor: pointer; }
+  .cal-nav button:hover, .cal-filtri button:hover { border-color: var(--nero); }
+  .cal-filtri { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0 14px; }
+  .cal-filtri button[aria-pressed="true"] { background: var(--nero); color: #fff; border-color: var(--nero); }
+  .cal-filtri .cal-punto { margin-right: 6px; }
+  .cal-punto { display: inline-block; width: 8px; height: 8px; border-radius: 50%; vertical-align: 1px; }
+  .cal-lunghi { display: flex; flex-wrap: wrap; gap: 6px 8px; align-items: stretch; margin: 0 0 12px; }
+  .cal-lunghi .etich { flex-basis: 100%; font: 700 12px var(--sans); text-transform: uppercase; letter-spacing: 1px; color: var(--grigio); }
+  .cal-lunghi button { display: flex; flex-direction: column; align-items: flex-start; max-width: 100%; text-align: left; cursor: pointer; font: inherit; color: var(--nero);
+                       background: #fff; background: color-mix(in srgb, var(--c) 12%, #fff); border: 0; border-left: 3px solid var(--c); border-radius: 4px; padding: 5px 10px; }
+  .cal-lunghi .t { font: 600 13.5px/1.3 var(--sans); }
+  .cal-lunghi .d { font-size: 12px; color: var(--grigio); }
+  .cal-lunghi button:hover .t { text-decoration: underline; }
+  .cal-sett-nomi { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); font: 600 12px var(--sans); color: var(--grigio); text-transform: uppercase; letter-spacing: .5px; padding: 0 0 4px 6px; }
+  .cal-mese { border-bottom: 1px solid var(--riga); background: #fff8f0; }
+  .cal-sett { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); grid-template-rows: 28px repeat(3, 22px) 20px; row-gap: 2px; border-top: 1px solid var(--riga); padding-bottom: 4px; }
+  .cal-g { grid-row: 1 / -1; margin: 0 0 -4px; border: 0; border-left: 1px solid var(--riga); background: none; padding: 4px 6px; text-align: left; cursor: pointer; font: inherit; color: var(--nero); display: flex; flex-direction: column; align-items: flex-start; }
+  .cal-g:first-child { border-left: 0; }
+  .cal-g:hover { background: rgba(196, 22, 28, .04); }
+  .cal-g.fuori { background: rgba(91, 82, 73, .06); color: #9a8d80; }
+  .cal-g.scelto { background: rgba(29, 79, 145, .07); }
+  .cal-num { font: 600 13px/22px var(--sans); min-width: 22px; height: 22px; text-align: center; border-radius: 11px; }
+  .cal-g.oggi .cal-num { background: var(--rosso); color: #fff; }
+  .cal-punti { display: none; }
+  .cal-ev { z-index: 1; margin: 0 3px; min-width: 0; height: 22px; border: 0; border-radius: 4px; background: none; padding: 0 5px; font: 500 12px/22px var(--sans); color: var(--nero);
+            text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: pointer; }
+  .cal-ev::before { content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--c); margin-right: 5px; vertical-align: 1px; }
+  .cal-ev:hover { background: rgba(0, 0, 0, .05); }
+  .cal-ev.barra { background: #fff; background: color-mix(in srgb, var(--c) 16%, #fff); border-left: 3px solid var(--c); }
+  .cal-ev.barra::before { display: none; }
+  .cal-ev .ora { font-weight: 700; margin-right: 4px; }
+  .cal-ev.annullato { text-decoration: line-through; opacity: .6; }
+  .cal-altri { z-index: 1; border: 0; background: none; padding: 0 8px; font: 600 11.5px/20px var(--sans); color: var(--blu); text-align: left; cursor: pointer; }
+  .cal-giorno { margin-top: 16px; }
+  .cal-lista { list-style: none; padding: 0; margin: 0; }
+  .cal-lista li { border-bottom: 1px solid var(--riga); }
+  .cal-lista button { display: grid; grid-template-columns: 92px 1fr; gap: 2px 12px; width: 100%; padding: 10px 0; border: 0; background: none; text-align: left; cursor: pointer; font: inherit; color: var(--nero); }
+  .cal-lista .q { grid-row: 1 / 3; font: 700 13px var(--sans); color: var(--c); padding-top: 3px; }
+  .cal-lista .t { font: 700 18px/1.25 var(--serif); }
+  .cal-lista button:hover .t { color: var(--blu); text-decoration: underline; text-decoration-thickness: 1px; }
+  .cal-lista .d { font-size: 13px; color: var(--grigio); }
+  .vuoto-piccolo { color: var(--grigio); font-size: 14px; margin: 4px 0; }
+  .pulsante { display: inline-flex; align-items: center; gap: 6px; font: 600 14px var(--sans); background: #fff; color: var(--nero); border: 1px solid var(--nero); border-radius: 20px;
+              padding: 7px 16px; cursor: pointer; text-decoration: none; }
+  .pulsante.pieno { background: var(--nero); color: #fff; }
+  .ev-azioni { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 16px 0 4px; }
+  .ev-annullato { display: inline-block; font: 700 12px var(--sans); text-transform: uppercase; letter-spacing: 1px; color: #fff; background: var(--rosso); padding: 3px 8px; border-radius: 3px; }
+  /* la finestrella di un evento */
+  body.con-popup { overflow: hidden; }
+  .pop-fondo { position: fixed; inset: 0; z-index: 50; background: rgba(17, 17, 17, .45); display: flex; align-items: center; justify-content: center; padding: 16px; }
+  .pop { position: relative; background: var(--carta); width: 100%; max-width: 520px; max-height: calc(100vh - 32px); overflow: auto; border-radius: 10px; box-shadow: 0 18px 50px rgba(0, 0, 0, .3); padding: 0 20px 18px; }
+  .pop .foto-tema { margin: 0 -20px 12px; }
+  .pop .foto-tema img { border-radius: 10px 10px 0 0; aspect-ratio: 16 / 9; }
+  .pop .foto-tema figcaption { padding: 0 20px; }
+  .pop h2 { font: 700 26px/1.15 var(--serif); margin: 4px 0 8px; }
+  .pop .occhiello { padding-top: 16px; }
+  .pop .foto-tema + .occhiello { padding-top: 0; }
+  .pop-quando { font: 700 15px var(--sans); margin: 0 0 2px; }
+  .pop-dove { font-size: 14px; color: var(--grigio); margin: 0 0 2px; }
+  .pop-breve { font: 400 17px/1.5 var(--serif); margin: 10px 0 0; }
+  .pop-chiudi { position: absolute; top: 8px; right: 8px; z-index: 2; width: 34px; height: 34px; border-radius: 50%; border: 0; background: rgba(255, 255, 255, .92);
+                font: 400 24px/34px var(--sans); color: var(--nero); cursor: pointer; box-shadow: 0 1px 4px rgba(0, 0, 0, .2); }
+  .pop .fonti { margin-top: 12px; }
+  /* la pagina di un evento */
+  .scheda-evento { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; margin: 16px 0 0; padding: 14px 16px; background: var(--carta-scura); border-left: 4px solid var(--rosso); }
+  .scheda-evento dt { font: 700 12px/22px var(--sans); text-transform: uppercase; letter-spacing: 1px; color: var(--grigio); }
+  .scheda-evento dd { margin: 0; font: 500 16px/1.4 var(--sans); }
+  .scheda-evento dd a { color: var(--blu); font-size: 14px; margin-left: 4px; }
+  @media (max-width: 700px) {
+    .cal-testa h2 { font-size: 23px; }
+    .cal-sett { grid-template-rows: 46px; padding-bottom: 0; }
+    .cal-g { margin: 0; align-items: center; padding: 4px 0; }
+    .cal-ev, .cal-altri { display: none; }
+    .cal-punti { display: flex; gap: 3px; margin-top: 3px; }
+    .cal-punti .cal-punto { width: 6px; height: 6px; }
+    .cal-sett-nomi { padding-left: 0; text-align: center; }
+    .cal-filtri { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-right: -16px; padding-right: 16px; }
+    .cal-filtri button { flex: none; }
+    .cal-lista button { grid-template-columns: 70px 1fr; }
+    .pop h2 { font-size: 22px; }
+  }
+
   /* condividi */
   .condividi { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 14px 0 6px; }
   .condividi .etich { font: 700 12px var(--sans); text-transform: uppercase; letter-spacing: 1px; color: var(--grigio); margin-right: 4px; }
@@ -373,8 +460,8 @@
   // (/notizia/<id>/, anche aperta dalla prima pagina senza ricaricare), poi quello che dice la pagina fissa.
   function rotta() {
     if (location.hash) return location.hash;
-    var p = location.pathname.match(/^\/(notizia|approfondimento)\/([^\/]+)\/$/);
-    if (p) return "#" + (p[1] === "notizia" ? "articolo" : "approfondimento") + "/" + p[2];
+    var p = location.pathname.match(/^\/(notizia|approfondimento|evento)\/([^\/]+)\/$/);
+    if (p) return "#" + (p[1] === "notizia" ? "articolo" : p[1]) + "/" + p[2];
     return (FISSA && FISSA.rotta) || "";
   }
   function vaiA(h) {
@@ -840,6 +927,11 @@
   function disegnaHome(box) {
     if (FISSA && FISSA.h1 && filtroCat === (FISSA.cat || "") && filtroZona === (FISSA.zona || "")) box.appendChild(el("h1", "titolo-sezione", [FISSA.h1]));
     var lista = filtrate();
+    if (filtroCat === "eventi") {
+      box.appendChild(calendario());
+      if (!lista.length) return;
+      box.appendChild(el("h3", "titolo-col", ["Le notizie sugli eventi"]));
+    }
     if (!lista.length) {
       box.appendChild(el("p", "vuoto", [(dati.notizie || []).length ? "Nessuna notizia con questi filtri." : "Il primo aggiornamento arriva a breve."]));
       return;
@@ -1435,6 +1527,342 @@
     });
   }
 
+  // ---------- calendario degli eventi (eventi.json: lo aggiorna l'agente, vedi AGENTE.md) ----------
+  // Sul computer un mese a griglia come Google Calendar (gli eventi di più giorni sono una barra), sul telefono
+  // il mese con i pallini e sotto l'elenco del giorno toccato. Un clic su un evento apre la finestrella con il breve
+  // e i pulsanti per la pagina dell'evento e per il calendario del telefono.
+  var NOMI_TIPO = { teatro: "Teatro", danza: "Danza", concerto: "Concerto", lirica: "Lirica", mostra: "Mostra", museo: "Museo", cinema: "Cinema",
+    sagra: "Sagra", festa: "Festa", mercatino: "Mercatino", natale: "Natale", carnevale: "Carnevale", altro: "Evento" };
+  var TIPO_GRUPPO = { teatro: "teatro", danza: "teatro", concerto: "musica", lirica: "musica", mostra: "mostre", museo: "mostre", cinema: "cinema",
+    sagra: "feste", festa: "feste", mercatino: "feste", natale: "feste", carnevale: "feste" };
+  var COLORE_GRUPPO = { teatro: "#b3261e", musica: "#1d4f91", mostre: "#2e6b3f", cinema: "#7a4f24", feste: "#c25e00", altro: "#5b5249" };
+  var GRUPPI_FILTRO = [["", "Tutti"], ["teatro", "Teatro e danza"], ["musica", "Musica"], ["mostre", "Mostre e musei"], ["cinema", "Cinema"], ["feste", "Sagre e feste"]];
+  // la foto del tema se l'agente non l'ha scelta (di solito la mette già archivia.py)
+  var TEMA_TIPO = { teatro: "teatro", danza: "danza", concerto: "concerto", lirica: "musica-classica", mostra: "mostra", museo: "museo", cinema: "cinema",
+    sagra: "sagra", festa: "luminarie", mercatino: "mercato", natale: "natale", carnevale: "carnevale" };
+  var CORSIE = 3;   // eventi per giorno visibili nella griglia; gli altri sono in «+2 altri»
+  var cal = { mese: null, giorno: null, gruppo: "" };
+
+  function linkEvento(ev) { return "/evento/" + encodeURIComponent(ev.id) + "/"; }
+  function dataG(g) { return new Date(g + "T12:00:00Z"); }
+  function piuGiorni(g, n) { var d = dataG(g); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); }
+  function fmtG(g, opz) { return dataG(g).toLocaleDateString("it-IT", Object.assign({ timeZone: "UTC" }, opz)); }
+  function maiuscola(t) { t = String(t || ""); return t.charAt(0).toUpperCase() + t.slice(1); }
+  function fineEv(ev) { return ev.fine && ev.fine > ev.inizio ? ev.fine : ev.inizio; }
+  function coloreEv(ev) { return COLORE_GRUPPO[TIPO_GRUPPO[ev.tipo] || "altro"]; }
+  function conTema(ev) { return ev.immagine ? ev : Object.assign({}, ev, { immagine: TEMA_TIPO[ev.tipo] }); }
+  function oggiG() { return new Date().toLocaleDateString("sv-SE", { timeZone: TZ }); }
+  // Un evento che non è tutti i giorni (per esempio solo i fine settimana) ha l'elenco dei suoi «giorni».
+  function cadeIl(ev, g) { return Array.isArray(ev.giorni) && ev.giorni.length ? ev.giorni.indexOf(g) >= 0 : ev.inizio <= g && g <= fineEv(ev); }
+  // «Da giovedì 29 ottobre a domenica 1 novembre 2026», «Sabato 24 ottobre 2026, ore 21:00»,
+  // «26 e 27 dicembre 2026, 2 e 3 gennaio 2027»
+  function quandoEv(ev) {
+    var gg = Array.isArray(ev.giorni) ? ev.giorni : [];
+    if (gg.length > 1 && gg.length <= 8) {
+      var mesi = [];
+      gg.forEach(function (g) {
+        var u = mesi[mesi.length - 1];
+        if (u && u.m === g.slice(0, 7)) u.d.push(+g.slice(8)); else mesi.push({ m: g.slice(0, 7), d: [+g.slice(8)] });
+      });
+      return maiuscola(mesi.map(function (u, i) {
+        var dd = u.d.length > 1 ? u.d.slice(0, -1).join(", ") + " e " + u.d[u.d.length - 1] : String(u.d[0]);
+        var anno = !mesi[i + 1] || mesi[i + 1].m.slice(0, 4) !== u.m.slice(0, 4) ? " " + u.m.slice(0, 4) : "";
+        return dd + " " + fmtG(u.m + "-01", { month: "long" }) + anno;
+      }).join(", ") + (ev.ora ? ", ore " + ev.ora : ""));
+    }
+    if (gg.length > 8) return maiuscola("da " + fmtG(ev.inizio, { day: "numeric", month: "long" }) + " a " + fmtG(fineEv(ev), { day: "numeric", month: "long" }) + " " + fineEv(ev).slice(0, 4) + ", in " + gg.length + " giorni");
+    var o = { weekday: "long", day: "numeric", month: "long" };
+    var t = fineEv(ev) > ev.inizio ? "da " + fmtG(ev.inizio, o) + " a " + fmtG(fineEv(ev), o) : fmtG(ev.inizio, o);
+    return maiuscola(t + " " + fineEv(ev).slice(0, 4) + (ev.ora ? ", ore " + ev.ora : ""));
+  }
+  function ordineEv(a, b) {
+    return (fineEv(b) > b.inizio) - (fineEv(a) > a.inizio) || String(a.ora || "").localeCompare(String(b.ora || "")) || String(a.titolo).localeCompare(String(b.titolo), "it");
+  }
+  function eventiVisibili() {
+    return (eventi || []).filter(function (ev) {
+      return (!cal.gruppo || (TIPO_GRUPPO[ev.tipo] || "altro") === cal.gruppo) && (!filtroZona || ev.zona === filtroZona);
+    });
+  }
+  function eventiDelGiorno(lista, g) { return lista.filter(function (ev) { return cadeIl(ev, g); }).sort(ordineEv); }
+  // Mostre, pista sul ghiaccio e simili, aperte tutti i giorni per più di una settimana: stanno nella fascia
+  // «In corso questo mese» sopra la griglia, così nella griglia restano visibili gli eventi di un giorno preciso.
+  function lungo(ev) { return !(Array.isArray(ev.giorni) && ev.giorni.length) && (dataG(fineEv(ev)) - dataG(ev.inizio)) / 864e5 >= 7; }
+  // Google Calendar: senza ora è un evento di tutto il giorno (la fine è il giorno dopo); con l'ora, 2 ore (la fine non la sappiamo).
+  function linkGoogle(ev) {
+    var d = ev.inizio.replace(/-/g, ""), date;
+    if (ev.ora) {
+      var h = +ev.ora.slice(0, 2), m = ev.ora.slice(3, 5), f = h + 2;
+      var g2 = f >= 24 ? piuGiorni(ev.inizio, 1).replace(/-/g, "") : d;
+      date = d + "T" + ev.ora.replace(":", "") + "00/" + g2 + "T" + ("0" + (f % 24)).slice(-2) + m + "00";
+    } else date = d + "/" + piuGiorni(fineEv(ev), 1).replace(/-/g, "");
+    return "https://calendar.google.com/calendar/render?action=TEMPLATE&ctz=Europe%2FRome&text=" + encodeURIComponent(ev.titolo) +
+      "&dates=" + date + "&location=" + encodeURIComponent(ev.luogo + ", " + ev.comune) +
+      "&details=" + encodeURIComponent(ev.breve + (ev.ora ? "\nOrario di fine non indicato." : "") + "\nhttps://notiziebenevento.it" + linkEvento(ev));
+  }
+  function pulsantiCalendario(ev) {
+    var az = el("div", "ev-azioni", []);
+    var ics = el("a", "pulsante", ["Aggiungi al calendario"]);
+    ics.href = linkEvento(ev) + "evento.ics";
+    az.appendChild(ics);
+    var gc = linkSicuro(linkGoogle(ev), "Google Calendar");
+    gc.className = "pulsante";
+    az.appendChild(gc);
+    return az;
+  }
+
+  function calendario() {
+    var box = el("section", "calendario", []);
+    box.setAttribute("aria-label", "Calendario degli eventi");
+    if (eventi === null) {
+      box.appendChild(el("p", "vuoto", ["Caricamento del calendario…"]));
+      eventiPronti.then(function () { if (box.parentNode) box.parentNode.replaceChild(calendario(), box); });
+      return box;
+    }
+    var oggi = oggiG();
+    if (!cal.mese) cal.mese = oggi.slice(0, 7);
+    var lista = eventiVisibili();
+    var primo = cal.mese + "-01";
+    var ultimo = new Date(Date.UTC(+cal.mese.slice(0, 4), +cal.mese.slice(5, 7), 0, 12)).toISOString().slice(0, 10);
+    var ridisegna = function () { if (box.parentNode) box.parentNode.replaceChild(calendario(), box); };
+
+    var testa = el("div", "cal-testa", [el("h2", "", [maiuscola(fmtG(primo, { month: "long", year: "numeric" }))])]);
+    var nav = el("div", "cal-nav", []);
+    [["‹", "Mese prima", -1], ["Oggi", "Torna a oggi", 0], ["›", "Mese dopo", 1]].forEach(function (b) {
+      var x = el("button", "", [b[0]]);
+      x.type = "button";
+      x.setAttribute("aria-label", b[1]);
+      x.addEventListener("click", function () {
+        if (!b[2]) { cal.mese = oggi.slice(0, 7); cal.giorno = oggi; }
+        else { var d = dataG(primo); d.setUTCMonth(d.getUTCMonth() + b[2]); cal.mese = d.toISOString().slice(0, 7); cal.giorno = null; }
+        ridisegna();
+      });
+      nav.appendChild(x);
+    });
+    testa.appendChild(nav);
+    box.appendChild(testa);
+
+    var filtri = el("div", "cal-filtri", []);
+    GRUPPI_FILTRO.forEach(function (g) {
+      var x = el("button", "", []);
+      x.type = "button";
+      if (g[0]) { var p = el("span", "cal-punto", []); p.style.background = COLORE_GRUPPO[g[0]]; x.appendChild(p); }
+      x.appendChild(testo(g[1]));
+      x.setAttribute("aria-pressed", cal.gruppo === g[0] ? "true" : "false");
+      x.addEventListener("click", function () { cal.gruppo = g[0]; ridisegna(); });
+      filtri.appendChild(x);
+    });
+    box.appendChild(filtri);
+
+    var inCorso = lista.filter(function (ev) { return lungo(ev) && ev.inizio <= ultimo && fineEv(ev) >= primo; }).sort(function (a, b) { return a.inizio < b.inizio ? -1 : 1; });
+    if (inCorso.length) {
+      var fascia = el("div", "cal-lunghi", [el("span", "etich", ["In corso questo mese"])]);
+      inCorso.forEach(function (ev) {
+        var b = el("button", "", []), corto = { day: "numeric", month: "short" };
+        b.type = "button";
+        b.style.setProperty("--c", coloreEv(ev));
+        b.appendChild(el("span", "t", [ev.titolo]));
+        b.appendChild(el("span", "d", [ev.comune + " · " + (ev.inizio >= primo ? "dal " + fmtG(ev.inizio, corto) + " " : "") + "al " + fmtG(fineEv(ev), corto)]));
+        b.addEventListener("click", function () { popupEvento(ev); });
+        fascia.appendChild(b);
+      });
+      box.appendChild(fascia);
+    }
+    var nellaGriglia = lista.filter(function (ev) { return !lungo(ev); });
+
+    // il giorno scelto: oggi se è in questo mese, sennò il primo giorno del mese con eventi
+    if (!cal.giorno || cal.giorno.slice(0, 7) !== cal.mese) {
+      cal.giorno = oggi.slice(0, 7) === cal.mese ? oggi : primo;
+      if (cal.giorno !== oggi) for (var g = primo; g <= ultimo; g = piuGiorni(g, 1)) if (eventiDelGiorno(nellaGriglia, g).length) { cal.giorno = g; break; }
+    }
+    var nomi = el("div", "cal-sett-nomi", []);
+    ["lun", "mar", "mer", "gio", "ven", "sab", "dom"].forEach(function (n) { nomi.appendChild(el("div", "", [n])); });
+    box.appendChild(nomi);
+    var mese = el("div", "cal-mese", []);
+    for (var s = piuGiorni(primo, -((dataG(primo).getUTCDay() + 6) % 7)); s <= ultimo; s = piuGiorni(s, 7)) mese.appendChild(settimana(s, nellaGriglia, oggi, ridisegna));
+    box.appendChild(mese);
+    box.appendChild(elencoGiorno(cal.giorno, lista));
+    return box;
+  }
+
+  function settimana(s, lista, oggi, ridisegna) {
+    var w = el("div", "cal-sett", []), giorni = [];
+    for (var i = 0; i < 7; i++) giorni.push(piuGiorni(s, i));
+    var fineS = giorni[6];
+    giorni.forEach(function (g, i) {
+      var del = eventiDelGiorno(lista, g);
+      var c = el("button", "cal-g" + (g.slice(0, 7) !== cal.mese ? " fuori" : "") + (g === oggi ? " oggi" : "") + (g === cal.giorno ? " scelto" : ""), []);
+      c.type = "button";
+      c.style.gridColumn = String(i + 1);
+      c.setAttribute("data-g", g);
+      c.setAttribute("aria-label", fmtG(g, { weekday: "long", day: "numeric", month: "long" }) + (del.length ? ", " + del.length + (del.length === 1 ? " evento" : " eventi") : ""));
+      c.appendChild(el("span", "cal-num", [String(+g.slice(8))]));
+      var punti = el("span", "cal-punti", []);
+      del.slice(0, 4).forEach(function (ev) { var p = el("span", "cal-punto", []); p.style.background = coloreEv(ev); punti.appendChild(p); });
+      c.appendChild(punti);
+      c.addEventListener("click", function () {
+        if (g.slice(0, 7) !== cal.mese) { cal.mese = g.slice(0, 7); cal.giorno = g; ridisegna(); }
+        else scegliGiorno(g, lista);
+      });
+      w.appendChild(c);
+    });
+    // le barre: una per ogni tratto di giorni di fila dell'evento in questa settimana; per giorno d'inizio,
+    // poi la più lunga; ognuna nella prima corsia libera
+    var pezzi = [];
+    lista.forEach(function (ev) {
+      if (ev.inizio > fineS || fineEv(ev) < s) return;
+      var a = -1;
+      for (var i = 0; i <= 7; i++) {
+        var c = i < 7 && cadeIl(ev, giorni[i]);
+        if (c && a < 0) a = i;
+        if (!c && a >= 0) { pezzi.push({ ev: ev, a: a, b: i - 1 }); a = -1; }
+      }
+    });
+    pezzi.sort(function (x, y) { return x.a - y.a || (y.b - y.a) - (x.b - x.a) || ordineEv(x.ev, y.ev); });
+    var corsie = [], altri = [0, 0, 0, 0, 0, 0, 0];
+    pezzi.forEach(function (p) {
+      var k = 0;
+      while (corsie[k] && corsie[k].some(function (q) { return q.a <= p.b && p.a <= q.b; })) k++;
+      (corsie[k] = corsie[k] || []).push(p);
+      if (k >= CORSIE) { for (var j = p.a; j <= p.b; j++) altri[j]++; return; }
+      var b = el("button", "cal-ev" + (p.b > p.a || !p.ev.ora ? " barra" : "") + (p.ev.annullato ? " annullato" : ""), []);
+      b.type = "button";
+      b.style.gridColumn = (p.a + 1) + " / " + (p.b + 2);
+      b.style.gridRow = String(k + 2);
+      b.style.setProperty("--c", coloreEv(p.ev));
+      if (p.ev.ora && p.b === p.a) b.appendChild(el("span", "ora", [p.ev.ora]));
+      b.appendChild(testo(p.ev.titolo));
+      b.title = p.ev.titolo + " · " + p.ev.comune;
+      b.addEventListener("click", function () { popupEvento(p.ev); });
+      w.appendChild(b);
+    });
+    altri.forEach(function (n, i) {
+      if (!n) return;
+      var b = el("button", "cal-altri", ["+" + n + (n === 1 ? " altro" : " altri")]);
+      b.type = "button";
+      b.style.gridColumn = String(i + 1);
+      b.style.gridRow = String(CORSIE + 2);
+      b.addEventListener("click", function () { scegliGiorno(giorni[i], lista, true); });
+      w.appendChild(b);
+    });
+    return w;
+  }
+
+  function elencoGiorno(g, lista) {
+    var box = el("div", "cal-giorno", [el("h3", "titolo-col", [maiuscola(fmtG(g, { weekday: "long", day: "numeric", month: "long" }))])]);
+    var del = eventiDelGiorno(lista, g);
+    del = del.filter(function (ev) { return !lungo(ev); }).concat(del.filter(lungo));   // in fondo quelli lunghi
+    if (!del.length) { box.appendChild(el("p", "vuoto-piccolo", ["Nessun evento in calendario per questo giorno."])); return box; }
+    var ul = el("ul", "cal-lista", []);
+    del.forEach(function (ev) {
+      var b = el("button", "", []);
+      b.type = "button";
+      b.style.setProperty("--c", coloreEv(ev));
+      b.appendChild(el("span", "q", [ev.ora || (fineEv(ev) > ev.inizio ? "fino al " + fmtG(fineEv(ev), { day: "numeric", month: "short" }) : NOMI_TIPO[ev.tipo] || "Evento")]));
+      b.appendChild(el("span", "t", [ev.titolo + (ev.annullato ? " (annullato)" : "")]));
+      b.appendChild(el("span", "d", [(NOMI_TIPO[ev.tipo] || "Evento") + " · " + ev.luogo + ", " + ev.comune]));
+      b.addEventListener("click", function () { popupEvento(ev); });
+      ul.appendChild(el("li", "", [b]));
+    });
+    box.appendChild(ul);
+    return box;
+  }
+  function scegliGiorno(g, lista, scorri) {
+    cal.giorno = g;
+    var box = document.querySelector(".calendario");
+    if (!box) return;
+    box.querySelectorAll(".cal-g").forEach(function (c) { c.classList.toggle("scelto", c.getAttribute("data-g") === g); });
+    var nuovo = elencoGiorno(g, lista);
+    box.replaceChild(nuovo, box.querySelector(".cal-giorno"));
+    if (scorri) nuovo.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }
+
+  function popupEvento(ev) {
+    chiudiEvento();
+    ev = conTema(ev);
+    var fondo = el("div", "pop-fondo", []), p = el("div", "pop", []);
+    p.setAttribute("role", "dialog");
+    p.setAttribute("aria-modal", "true");
+    p.setAttribute("aria-label", ev.titolo);
+    var x = el("button", "pop-chiudi", ["×"]);
+    x.type = "button";
+    x.setAttribute("aria-label", "Chiudi");
+    x.addEventListener("click", chiudiEvento);
+    p.appendChild(x);
+    var ft = fotoTema(ev, "Immagine illustrativa");
+    if (ft) p.appendChild(ft);
+    var occ = el("div", "occhiello", [NOMI_TIPO[ev.tipo] || "Evento"]);
+    occ.appendChild(el("span", "luogo", [ev.comune]));
+    p.appendChild(occ);
+    p.appendChild(el("h2", "", [ev.titolo]));
+    if (ev.annullato) p.appendChild(el("p", "ev-annullato", ["Annullato"]));
+    p.appendChild(el("p", "pop-quando", [quandoEv(ev)]));
+    p.appendChild(el("p", "pop-dove", [ev.luogo + ", " + ev.comune]));
+    if (ev.prezzo) p.appendChild(el("p", "pop-dove", [maiuscola(ev.prezzo)]));
+    p.appendChild(el("p", "pop-breve", [ev.breve]));
+    var az = pulsantiCalendario(ev);
+    var dett = el("a", "pulsante pieno", ["Tutti i dettagli ›"]);
+    dett.href = linkEvento(ev);
+    dett.addEventListener("click", chiudiEvento);
+    az.insertBefore(dett, az.firstChild);
+    p.appendChild(az);
+    var fonti = ev.fonti || [];
+    if (fonti.length) {
+      var fr = el("div", "fonti", [testo(fonti.length === 1 ? "Fonte: " : "Fonti: ")]);
+      fonti.forEach(function (f, i) { if (i) fr.appendChild(testo(", ")); fr.appendChild(linkSicuro(f.url, f.nome)); });
+      p.appendChild(fr);
+    }
+    fondo.appendChild(p);
+    fondo.addEventListener("click", function (e) { if (e.target === fondo) chiudiEvento(); });
+    document.body.appendChild(fondo);
+    document.body.classList.add("con-popup");
+    x.focus();
+  }
+  function chiudiEvento() {
+    var f = document.querySelector(".pop-fondo");
+    if (f) f.parentNode.removeChild(f);
+    document.body.classList.remove("con-popup");
+  }
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") chiudiEvento(); });
+
+  function disegnaEvento(box, ev) {
+    ev = conTema(ev);
+    var fonti = Array.isArray(ev.fonti) ? ev.fonti : [];
+    var art = el("article", "appro", []);
+    testataPagina(art, NOMI_TIPO[ev.tipo] || "Evento", ev.comune, ev.titolo);
+    var ind = art.querySelector(".indietro");
+    ind.textContent = "← Calendario degli eventi";
+    ind.href = "/sezione/eventi/";
+    if (ev.annullato) art.appendChild(el("p", "ev-annullato", ["Annullato"]));
+    var sch = el("dl", "scheda-evento", []);
+    var voce = function (t, v) { sch.appendChild(el("dt", "", [t])); sch.appendChild(v.nodeType ? v : el("dd", "", [v])); };
+    voce("Quando", quandoEv(ev));
+    if (ev.orari) voce("Orari", maiuscola(ev.orari));
+    var dove = el("dd", "", [ev.luogo + ", " + ev.comune]);
+    if (!/da annunciare/i.test(ev.luogo)) dove.appendChild(linkSicuro("https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(ev.luogo + ", " + ev.comune), "Come arrivare ›"));
+    voce("Dove", dove);
+    if (ev.prezzo) voce("Ingresso", maiuscola(ev.prezzo));
+    art.appendChild(sch);
+    var az = pulsantiCalendario(ev);
+    az.appendChild(condividi(ev.titolo, linkEvento(ev), true));
+    art.appendChild(az);
+    var ft = fotoTema(ev, "Immagine illustrativa creata con l'intelligenza artificiale: non è una foto dell'evento.", true);
+    if (ft) art.appendChild(ft);
+    var rc = el("div", "racconto", []);
+    if (Array.isArray(ev.descrizione) && ev.descrizione.length) ev.descrizione.forEach(function (r) { rc.appendChild(frase("p", r, fonti)); });
+    else rc.appendChild(el("p", "", [ev.breve]));
+    art.appendChild(rc);
+    if (ev.notizia) {
+      var n = (dati.notizie || []).filter(function (x) { return x.id === ev.notizia; })[0];
+      art.appendChild(el("h3", "", ["La notizia"]));
+      var pc = el("p", "collegate", []), l = el("a", "", [(n ? n.titolo : "Leggi la notizia") + " ›"]);
+      l.href = linkArticolo({ id: ev.notizia });
+      pc.appendChild(l);
+      art.appendChild(pc);
+    }
+    elencoFonti(art, fonti);
+    box.appendChild(art);
+  }
+
   var TITOLO = document.title;
   function disegna() {
     document.title = TITOLO;
@@ -1451,6 +1879,36 @@
       return;
     }
     ricerca.ritorno = ricerca.ritorno && /^#(articolo|approfondimento)\//.test(rotta());
+    chiudiEvento();
+    var me = rotta().match(/^#evento\/(.+)$/);
+    if (me) {
+      menu.style.display = "none";
+      var idE = decodeURIComponent(me[1]), cercatoE = rotta();
+      // l'evento sta in eventi.json; se è già in archivio, la sua pagina lo porta con sé (NB_PAGINA.evento)
+      var trovaE = function () {
+        return (eventi || []).filter(function (x) { return x.id === idE; })[0] || (FISSA && FISSA.evento && FISSA.evento.id === idE ? FISSA.evento : null);
+      };
+      var mostraE = function () {
+        if (rotta() !== cercatoE) return;
+        box.textContent = "";
+        var ev = trovaE();
+        if (ev) { disegnaEvento(box, ev); if (!FISSA) document.title = ev.titolo + " – Eventi – Notizie Benevento"; }
+        else {
+          var art = el("article", "appro", []);
+          testataPagina(art, "Eventi", "", "Evento non trovato");
+          var pe = el("p", "", ["Questo evento non c'è più. Guarda il "]), le = el("a", "", ["calendario degli eventi"]);
+          le.href = "/sezione/eventi/";
+          pe.appendChild(le);
+          pe.appendChild(testo("."));
+          art.appendChild(pe);
+          box.appendChild(art);
+        }
+        window.scrollTo(0, 0);
+      };
+      if (trovaE() || eventi !== null) mostraE();
+      else { box.appendChild(el("p", "vuoto", ["Caricamento…"])); eventiPronti.then(mostraE); }
+      return;
+    }
     var m = rotta().match(/^#(articolo|approfondimento)\/(.+)$/);
     if (m) {
       var id = decodeURIComponent(m[2]);
@@ -1534,7 +1992,7 @@
     if (FISSA || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
     var a = e.target.closest ? e.target.closest("a[href]") : null;
     var h = a && !a.target ? a.getAttribute("href") : "";
-    if (h !== "/" && !/^\/(notizia|approfondimento)\/[^\/]+\/$/.test(h)) return;
+    if (h !== "/" && !/^\/(notizia|approfondimento|evento)\/[^\/]+\/$/.test(h)) return;
     e.preventDefault();
     if (h === location.pathname && !location.hash) { window.scrollTo(0, 0); return; }
     history.pushState(null, "", h);
@@ -1558,6 +2016,13 @@
       if (lat && !lat.querySelector(".meteo-box")) { var rm = riquadroMeteo(); if (rm) lat.insertBefore(rm, lat.firstChild); }
     })
     .catch(function () { /* senza meteo il sito funziona lo stesso */ });
+
+  // gli eventi arrivano a parte: il calendario e la pagina di un evento li aspettano (eventiPronti)
+  var eventi = null;
+  var eventiPronti = fetch("eventi.json?t=" + Date.now(), { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (j) { eventi = (j && j.eventi) || []; })
+    .catch(function () { eventi = []; });
 
   fetch("notizie.json?t=" + Date.now(), { cache: "no-store" })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })

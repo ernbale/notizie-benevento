@@ -197,6 +197,57 @@ togli `cosa` e sistema cronologia e concordano con le regole qui sopra. Le notiz
 - Il campo `foto` non lo scrivi tu: lo mette `strumenti/archivia.py`, che sceglie tra le versioni della foto di quel
   tema quella meno usata in prima pagina, così due notizie dello stesso tema non hanno la stessa foto.
 
+## Il calendario degli eventi (`eventi.json`)
+
+Sul sito la sezione **«Eventi»** è un calendario come quello del telefono: ogni evento ha la sua pagina
+(`notiziebenevento.it/evento/<id>/`), un riquadro con il breve e il pulsante per salvarlo nel calendario. Lo leggi e lo
+aggiorni a ogni giro, come notizie.json.
+
+- **Cosa ci va** (scelta del proprietario): **cultura** (teatro, danza, concerti, lirica, mostre, musei, cinema) e
+  **feste e sagre** (sagre, feste patronali, mercatini, Natale, Carnevale). **Non ci vanno**: presentazioni di libri,
+  convegni, incontri politici, corsi, sport. Solo nei 78 Comuni della provincia di Benevento.
+- **La fonte**: basta l'annuncio di **chi lo organizza** (Comune, teatro, Pro Loco, associazione, museo,
+  conservatorio), sul suo sito o riportato anche da un solo giornale. Data, ora, luogo e prezzo si scrivono **solo se
+  sono scritti nella fonte**: senza ora non metti `ora`, senza prezzo non metti `prezzo`. Mai date «probabili».
+- **Quanto avanti**: a ogni giro cerca gli eventi **dei prossimi 2 mesi**. Se un evento più lontano è già annunciato
+  con la data (per esempio la stagione teatrale fino ad aprile), mettilo lo stesso.
+- **Dove cercarli**: negli stessi giornali e siti dei Comuni del giro (sezioni cultura, eventi, spettacoli), più almeno
+  2 ricerche mirate a giro («eventi Benevento questa settimana», «teatro Benevento stagione», «sagra Sannio»,
+  «concerto Benevento», «mostra Benevento»). Una stagione teatrale o una rassegna = **un evento per ogni spettacolo**,
+  con la sua data.
+- **Aggiornali**: se un evento è rinviato cambia le date e scrivilo nella descrizione; se è annullato metti
+  `"annullato": true` (resta nel calendario, barrato). Non cancellare mai un evento: quelli finiti da 60 giorni li
+  sposta da solo `strumenti/archivia.py` in `archivio/eventi-AAAA-MM.json`.
+- **Il testo**: `titolo` chiaro e corto (il nome dell'evento, non quello dell'articolo); `breve` = 1-2 frasi semplici
+  per il riquadro («cos'è e cosa c'è»); `descrizione` = i dettagli in paragrafi con le fonti (programma, artisti, cosa si
+  mangia, come prenotare), con le stesse regole di scrittura delle notizie.
+- `immagine`: un tema di `img/temi/temi.json` (teatro, concerto, musica-classica, mostra, museo, cinema, sagra,
+  castagne, funghi, luminarie, natale, presepe, mercato…). Se non lo metti, `archivia.py` usa quello del tipo; `foto`
+  lo sceglie lui.
+- `giorni`: solo per gli eventi che **non** sono tutti i giorni tra inizio e fine (per esempio solo i fine settimana, o
+  26-27 dicembre e 2-3 gennaio): l'elenco di tutti i giorni in cui c'è, dal primo (= `inizio`) all'ultimo (= `fine`).
+  Nel calendario l'evento compare solo in quei giorni. Se la fonte non dice quali giorni, non metterlo e scrivi in
+  `orari` quello che dice.
+- `notizia`: l'`id` della notizia collegata, se l'evento è anche una notizia in prima pagina o in archivio.
+- L'`id` è per sempre (è l'indirizzo della pagina): parole chiave e anno, es. `sagra-castagna-vitulano-2026`.
+
+```json
+{
+  "aggiornato": "ISO con fuso",
+  "eventi": [ {
+    "id": "traviata-teatro-romano-2026", "titolo": "La Traviata al Teatro Romano",
+    "tipo": "teatro|danza|concerto|lirica|mostra|museo|cinema|sagra|festa|mercatino|natale|carnevale|altro",
+    "inizio": "AAAA-MM-GG", "fine": "AAAA-MM-GG (solo se dura più giorni)", "ora": "HH:MM (solo se scritta)",
+    "giorni": ["AAAA-MM-GG", "… solo se non è tutti i giorni tra inizio e fine"],
+    "orari": "gli orari per esteso, se ci sono", "luogo": "teatro, piazza, chiesa…", "comune": "Benevento",
+    "zona": "benevento|telesina|caudina|fortore|provincia", "prezzo": "solo se scritto",
+    "breve": "1-2 frasi", "descrizione": [ {"testo": "", "fonti": ["Nome fonte"]} ],
+    "immagine": "tema (facoltativo)", "notizia": "id (facoltativo)", "annullato": false,
+    "fonti": [ {"nome": "", "titolo": "titolo esatto", "url": "", "data": "20 ott"} ]
+  } ]
+}
+```
+
 ## Gli approfondimenti
 
 - Solo per le **notizie più rilevanti** per chi vive nel Sannio: riportate da **almeno 3 testate**, oppure che
@@ -278,7 +329,7 @@ togli `cosa` e sistema cronologia e concordano con le regole qui sopra. Le notiz
 
 ## Prima di consegnare (obbligatorio)
 
-Esegui `python3 strumenti/archivia.py`. Controlla `notizie.json` (JSON valido, id unici anche rispetto
+Esegui `python3 strumenti/archivia.py`. Controlla `notizie.json` ed `eventi.json` (JSON valido, id unici anche rispetto
 all'archivio, categorie e zone ammesse, ogni nome citato nell'elenco fonti, url validi, campi obbligatori pieni,
 niente acchiappa-clic nei titoli) e solo se è tutto giusto archivia e scrive.
 - Se stampa **ERRORE**, non ha scritto niente: correggi `notizie.json` e rilancialo finché stampa **OK**.
