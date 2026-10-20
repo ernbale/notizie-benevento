@@ -56,6 +56,16 @@ jobs:
             echo "::warning::Pagine non generate: il sito funziona lo stesso (404.html apre le notizie nella prima pagina)"
           fi
 
+      - name: Statistiche private (cifrate con la parola d'ordine)
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          STATISTICHE_PAROLA: ${{ secrets.STATISTICHE_PAROLA }}
+        run: |
+          pip install --quiet cryptography || echo "::warning::cryptography non installato"
+          if ! python3 strumenti/statistiche.py; then
+            echo "::warning::Statistiche non aggiornate (il sito si pubblica lo stesso)"
+          fi
+
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3
