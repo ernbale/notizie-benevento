@@ -5,3 +5,13 @@ Una notizia compare solo se la riportano almeno due testate diverse oppure una f
 Le notizie appartengono ai giornali citati: qui ci sono solo un riassunto breve e i link agli articoli originali.
 
 Sito: https://ernbale.github.io/notizie-benevento/
+
+## Come è fatto
+
+- `notizie.json`: la prima pagina (ultimi 3 giorni, avvisi ancora in vigore, approfondimenti attivi).
+- `archivio/AAAA-MM.json`: le notizie uscite dalla prima pagina, complete di articolo e fonti. Non si cancellano.
+- `archivio/indice.json`: elenco leggero di tutto l'archivio, per la ricerca e per i link già condivisi.
+- `strumenti/archivia.py`: controlla `notizie.json` e sposta in archivio; non scrive niente se trova un errore.
+- `AGENTE.md`: le istruzioni dell'agente che aggiorna il sito.
+
+Lo storico di GitHub conserva in più ogni versione di ogni file.
