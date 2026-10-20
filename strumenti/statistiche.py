@@ -83,6 +83,13 @@ def cloudflare(token, inizio, fine):
     return j["data"]["viewer"]["accounts"][0]
 
 
+def chiave_cloudflare(testo):
+    """La chiave anche se nel segreto è stato incollato qualcosa in più (un'altra riga, il comando di prova di
+    Cloudflare «curl … Bearer <chiave>»): le chiavi di Cloudflare sono una parola sola di 40 caratteri."""
+    m = re.findall(r"[A-Za-z0-9_-]{35,}", testo or "")
+    return m[0] if m else ""
+
+
 def da_dove(host):
     h = (host or "").lower()
     if not h:
@@ -214,7 +221,7 @@ def main():
     adesso = dt.datetime.now(dt.timezone.utc)
     dati = {"aggiornato": adesso.astimezone(fuso()).isoformat(timespec="minutes"), "giorni": GIORNI}
     try:
-        dati["visite"] = visite(a.sito, os.environ.get("CLOUDFLARE_API_TOKEN", "").strip(), adesso)
+        dati["visite"] = visite(a.sito, chiave_cloudflare(os.environ.get("CLOUDFLARE_API_TOKEN", "")), adesso)
         print("Visite:", dati["visite"]["stato"])
     except Exception as e:
         dati["visite"] = {"stato": "errore", "messaggio": f"Cloudflare non ha risposto: {e}"}
