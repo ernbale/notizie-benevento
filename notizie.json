@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-20T18:06:00+02:00",
+ "aggiornato": "2026-10-20T20:05:00+02:00",
  "giornali_letti": 15,
  "notizie": [
   {
@@ -297,12 +297,12 @@
   },
   {
    "id": "allerta-arancione-sannio-21-ottobre",
-   "titolo": "Sannio, allerta arancione per maltempo mercoledì 21 ottobre: chiusi scuole, parchi e cimiteri a Benevento, Montesarchio, Sant'Agata de' Goti e Pietrelcina",
-   "sintesi": "La Protezione civile ha confermato l'allerta arancione per mercoledì 21 ottobre in tutte e tre le zone del Sannio: rischio frane e temporali, soprattutto al mattino. Scuole, parchi e cimiteri chiusi a Benevento, Montesarchio, Sant'Agata de' Goti e Pietrelcina.",
+   "titolo": "Sannio, allerta arancione per maltempo mercoledì 21 ottobre: chiusi scuole, parchi e cimiteri a Benevento, Montesarchio, Sant'Agata de' Goti e Pietrelcina; scuole chiuse anche a Guardia Sanframondi",
+   "sintesi": "La Protezione civile ha confermato l'allerta arancione per mercoledì 21 ottobre in tutte e tre le zone del Sannio: rischio frane e temporali, soprattutto al mattino. Scuole, parchi e cimiteri chiusi a Benevento, Montesarchio, Sant'Agata de' Goti e Pietrelcina; scuole chiuse anche a Guardia Sanframondi.",
    "categoria": "meteo",
    "zona": "provincia",
    "luogo": "Sannio",
-   "pubblicato": "2026-10-20T15:21:00+02:00",
+   "pubblicato": "2026-10-20T20:05:00+02:00",
    "stato": "ufficiale",
    "rilevante": true,
    "in_vigore_fino": "2026-10-21",
@@ -344,12 +344,16 @@
      "url": "https://www.comune.pietrelcina.bn.it/novita/avvisi/novita_375.html"
     },
     {
+     "nome": "Comune di Guardia Sanframondi",
+     "url": "https://www.comune.guardiasanframondi.bn.it/novita/avvisi/novita_205.html"
+    },
+    {
      "nome": "Protezione civile (bollettino)",
      "url": "https://notiziebenevento.it/meteo.json"
     }
    ],
    "articolo": {
-    "cosa": "La Protezione civile della Regione Campania ha emanato un avviso di allerta arancione valido dalla mezzanotte e per tutta la giornata di mercoledì 21 ottobre per le zone 1, 2, 3 e 4, cioè anche per l'Alto Volturno e Matese (Telese, Cerreto, Airola…) e per l'Alta Irpinia e Sannio (Benevento, Montesarchio, Fortore…). Si prevedono piogge e temporali, anche forti, soprattutto nella prima parte della giornata, con possibili frane, caduta di massi, allagamenti e torrenti che si ingrossano. Il sindaco di Montesarchio ha già chiuso scuole, villa comunale, parchi e cimitero; a Benevento il sindaco Mastella ha firmato un'ordinanza che chiude per mercoledì scuole di ogni ordine e grado (asili nido compresi), villa comunale, parchi cittadini e cimitero (restano garantiti i funerali). Il bollettino della Protezione civile nazionale delle 15:21 di oggi conferma il livello arancione (rischio frane) per tutte e tre le zone del Sannio. Ordinanze di chiusura anche a Sant'Agata de' Goti (n. 77, con attivazione del centro operativo comunale) e a Pietrelcina (n. 27: scuole, cimitero, impianti sportivi, parchi e ville comunali).",
+    "cosa": "La Protezione civile della Regione Campania ha emanato un avviso di allerta arancione valido dalla mezzanotte e per tutta la giornata di mercoledì 21 ottobre per le zone 1, 2, 3 e 4, cioè anche per l'Alto Volturno e Matese (Telese, Cerreto, Airola…) e per l'Alta Irpinia e Sannio (Benevento, Montesarchio, Fortore…). Si prevedono piogge e temporali, anche forti, soprattutto nella prima parte della giornata, con possibili frane, caduta di massi, allagamenti e torrenti che si ingrossano. Il sindaco di Montesarchio ha già chiuso scuole, villa comunale, parchi e cimitero; a Benevento il sindaco Mastella ha firmato un'ordinanza che chiude per mercoledì scuole di ogni ordine e grado (asili nido compresi), villa comunale, parchi cittadini e cimitero (restano garantiti i funerali). Il bollettino della Protezione civile nazionale delle 15:21 di oggi conferma il livello arancione (rischio frane) per tutte e tre le zone del Sannio. Ordinanze di chiusura anche a Sant'Agata de' Goti (n. 77, con attivazione del centro operativo comunale) e a Pietrelcina (n. 27: scuole, cimitero, impianti sportivi, parchi e ville comunali). Il Comune di Guardia Sanframondi ha pubblicato l'ordinanza sindacale n. 8 del 20 ottobre con la chiusura delle scuole di ogni ordine e grado.",
     "cronologia": [
      {
       "data": "20 ottobre, 12:09",
@@ -389,6 +393,13 @@
       "fatto": "Esce il bollettino della Protezione civile nazionale per il 21 ottobre: arancione per rischio frane nelle zone «Alta Irpinia e Sannio», «Alto Volturno e Matese» e «Penisola sorrentino-amalfitana, Monti di Sarno e Monti Picentini» (in quest'ultima gialla per il rischio fiumi).",
       "fonti": [
        "Protezione civile (bollettino)"
+      ]
+     },
+     {
+      "data": "20 ottobre",
+      "fatto": "Il Comune di Guardia Sanframondi pubblica l'ordinanza sindacale n. 8 del 20 ottobre 2026: chiusura delle scuole di ogni ordine e grado.",
+      "fonti": [
+       "Comune di Guardia Sanframondi"
       ]
      }
     ],
@@ -436,6 +447,12 @@
       "fonti": [
        "Protezione civile (bollettino)",
        "Meteoalarm"
+      ]
+     },
+     {
+      "testo": "Guardia Sanframondi (zona «Alto Volturno e Matese»): l'ordinanza sindacale n. 8 del 20 ottobre chiude le scuole di ogni ordine e grado; dal titolo dell'avviso non risulta se chiudano anche parchi e cimitero.",
+      "fonti": [
+       "Comune di Guardia Sanframondi"
       ]
      }
     ],
@@ -504,6 +521,12 @@
       "nome": "Comune di Pietrelcina",
       "titolo": "Ordinanza N. 27/2026 - Chiusura scuole, cimitero comunale, impianti sportivi, parchi e ville per il giorno 21/10/2026",
       "url": "https://www.comune.pietrelcina.bn.it/novita/avvisi/novita_375.html",
+      "data": "20 ott"
+     },
+     {
+      "nome": "Comune di Guardia Sanframondi",
+      "titolo": "Ordinanza Sindacale n.08 del 20-10-2026 Chiusura Scuole ogni ordine e grado",
+      "url": "https://www.comune.guardiasanframondi.bn.it/novita/avvisi/novita_205.html",
       "data": "20 ott"
      },
      {
