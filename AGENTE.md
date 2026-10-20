@@ -48,6 +48,13 @@ Lavora in parallelo (6-8 letture insieme). Per ogni fonte tieni nota: letta / no
   `https://webservices.ingv.it/fdsnws/event/1/query?starttime=<3h fa UTC>&lat=41.2&lon=14.65&maxradius=0.4&orderby=time&format=text`
   (riportare solo magnitudo ≥ 2.5 o sciami di ≥ 10 scosse)
 - San Marco dei Cavoti (feed): `https://www.comune.sanmarcodeicavoti.bn.it/feed/`
+- **Allerte ufficiali già confrontate (leggile per prime):** `https://notiziebenevento.it/meteo.json`, campo `allerte`.
+  Lo aggiorna ogni ora il programma del meteo (`strumenti/meteo.py`): per oggi e domani dà il livello di ognuna
+  delle 3 zone del Sannio dal **bollettino nazionale della Protezione civile** (`zone`: livello, rischio
+  idrogeologico = frane, idraulico = fiumi, temporali, e i Comuni), le allerte **Meteoalarm** della Campania
+  (`meteoalarm`, orari già in ora italiana) e una `nota` che dice se le due fonti concordano. `zone: null` = il
+  bollettino di quel giorno non è ancora uscito (esce verso le 15-16). Se il sito non risponde:
+  `python3 strumenti/meteo.py --uscita /tmp/meteo.json` fa lo stesso.
 - Allerte meteo ufficiali (Meteoalarm, il servizio europeo con i dati della Protezione civile italiana):
   `https://feeds.meteoalarm.org/feeds/meteoalarm-legacy-atom-italy` → solo le voci «Campania». Dà livello (Yellow =
   gialla, Orange = arancione, Red = rossa), tipo (Rain = pioggia, Thunderstorm = temporali, Wind = vento, Snow = neve…)
@@ -76,14 +83,26 @@ Sul sito la sezione si chiama **«Allerte»**. Ci vanno:
 - **terremoti** (INGV, con le soglie scritte sopra) e **danni del maltempo** (alberi caduti, allagamenti, frane).
 
 Regole:
-- Un'allerta esce solo da **fonte ufficiale**: Meteoalarm, Protezione civile o Regione Campania, Comune, Prefettura.
-  Meteoalarm vale per tutta la Campania: per dire che riguarda **il Sannio** serve il comunicato della Regione o della
-  Protezione civile, o un Comune del Sannio, o almeno due giornali che citano le **zone di allerta** del Sannio. Se le
-  zone non si trovano, scrivi «allerta in Campania» e, tra le cose che non si sanno, che le zone vanno verificate.
-- Le zone: la Campania ha 8 zone di allerta; il Sannio, compresa Benevento città, è nella **Zona 4 «Alta Irpinia e
-  Sannio»**. I Comuni del Matese al confine (Cusano Mutri, Pietraroja e vicini) possono ricadere nella **Zona 2 «Alto
-  Volturno e Matese»**: se la zona 2 ha un livello diverso, dillo. La pagina di protezione civile del Comune di
-  Benevento (sit.comune.benevento.it) non è aggiornata (ferma a luglio 2024): non usarla come fonte dello stato di allerta.
+- Un'allerta esce solo da **fonte ufficiale**: bollettino della Protezione civile, Regione Campania, Meteoalarm,
+  Comune, Prefettura. **Confronta sempre** almeno due fonti: parti dal campo `allerte` di meteo.json (bollettino +
+  Meteoalarm) e controlla l'avviso della Regione Campania o i giornali. Meteoalarm vale per tutta la Campania: per
+  dire che riguarda **il Sannio** vale il livello delle zone nel bollettino. Se il bollettino non è ancora uscito,
+  scrivi «allerta in Campania (Meteoalarm)» e, tra le cose che non si sanno, il livello per le zone del Sannio.
+  Se le fonti non concordano, scrivi cosa dice ognuna e quale vale (il bollettino per zona vale più di Meteoalarm).
+- Le zone: la Campania ha 8 zone di allerta e i 78 Comuni del Sannio stanno in **tre** (elenco ufficiale del
+  bollettino, lo stesso che usa meteo.json):
+  - **Zona 4 «Alta Irpinia e Sannio»**, 49 Comuni: Benevento città, Montesarchio, Morcone, San Giorgio del Sannio,
+    Apice, Pietrelcina, Paduli, Ceppaloni, San Bartolomeo in Galdo e tutto il Fortore, Torrecuso, Ponte, Paupisi,
+    Foglianise, Campoli del Monte Taburno, San Martino Sannita, Sant'Angelo a Cupolo, Apollosa, Arpaise, Castelpoto…
+  - **Zona 2 «Alto Volturno e Matese»**, 25 Comuni (Valle Telesina, parte della Valle Caudina e Matese): Airola,
+    Amorosi, Bonea, Bucciano, Castelvenere, Cautano, Cerreto Sannita, Cusano Mutri, Dugenta, Durazzano, Faicchio,
+    Frasso Telesino, Guardia Sanframondi, Limatola, Melizzano, Moiano, Pietraroja, Puglianello, San Lorenzello,
+    San Salvatore Telesino, Sant'Agata de' Goti, Solopaca, Telese Terme, Tocco Caudio, Vitulano.
+  - **Zona 3 «Penisola sorrentino-amalfitana, Monti di Sarno e Monti Picentini»**, 4 Comuni: Arpaia, Forchia,
+    Pannarano, Paolisi.
+  Se le zone hanno livelli diversi, dillo con i Comuni (es. «arancione nella zona 2: Telese, Sant'Agata, Airola…;
+  gialla a Benevento»). La pagina di protezione civile del Comune di Benevento (sit.comune.benevento.it) non è
+  aggiornata (ferma a luglio 2024): non usarla come fonte dello stato di allerta.
 - Scrivi sempre livello, tipo (pioggia, temporali, vento…), **da quando a quando** in ora italiana, e cosa
   raccomanda la Protezione civile se lo dice. Niente toni allarmisti: i fatti e gli orari.
 - `in_vigore_fino` = il giorno in cui finisce l'allerta o la chiusura. Allerta **arancione o rossa**: `rilevante: true`.

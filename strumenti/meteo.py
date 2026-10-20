@@ -13,6 +13,7 @@ import datetime as dt
 import json
 import math
 import os
+import re
 import statistics
 import sys
 import time
@@ -104,6 +105,129 @@ def condizione(nuvole, prob, mm, neve, temporale, visib, temp):
     if nuvole < 85:
         return "nuvoloso"
     return "coperto"
+
+
+# ---------- Allerte ufficiali: bollettino della Protezione civile + Meteoalarm, confrontati ----------
+# I 78 Comuni della provincia di Benevento (elenco ISTAT): servono a dire quali Comuni del Sannio stanno in ogni zona.
+COMUNI_BN = ["Airola", "Amorosi", "Apice", "Apollosa", "Arpaia", "Arpaise", "Baselice", "Benevento", "Bonea", "Bucciano", "Buonalbergo", "Calvi", "Campolattaro", "Campoli del Monte Taburno", "Casalduni", "Castelfranco in Miscano", "Castelpagano", "Castelpoto", "Castelvenere", "Castelvetere in Val Fortore", "Cautano", "Ceppaloni", "Cerreto Sannita", "Circello", "Colle Sannita", "Cusano Mutri", "Dugenta", "Durazzano", "Faicchio", "Foglianise", "Foiano di Val Fortore", "Forchia", "Fragneto Monforte", "Fragneto l'Abate", "Frasso Telesino", "Ginestra degli Schiavoni", "Guardia Sanframondi", "Limatola", "Melizzano", "Moiano", "Molinara", "Montefalcone di Val Fortore", "Montesarchio", "Morcone", "Paduli", "Pago Veiano", "Pannarano", "Paolisi", "Paupisi", "Pesco Sannita", "Pietraroja", "Pietrelcina", "Ponte", "Pontelandolfo", "Puglianello", "Reino", "San Bartolomeo in Galdo", "San Giorgio La Molara", "San Giorgio del Sannio", "San Leucio del Sannio", "San Lorenzello", "San Lorenzo Maggiore", "San Lupo", "San Marco dei Cavoti", "San Martino Sannita", "San Nazzaro", "San Nicola Manfredi", "San Salvatore Telesino", "Sant'Agata de' Goti", "Sant'Angelo a Cupolo", "Sant'Arcangelo Trimonte", "Santa Croce del Sannio", "Sassinoro", "Solopaca", "Telese Terme", "Tocco Caudio", "Torrecuso", "Vitulano"]
+DPC_REPO = "pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica"
+METEOALARM = "https://feeds.meteoalarm.org/feeds/meteoalarm-legacy-atom-italy"
+LIV = {"verde": 0, "gialla": 1, "arancione": 2, "rossa": 3}
+TIPI_MA = {"Rain": "pioggia", "Thunderstorm": "temporali", "Wind": "vento", "Snow/Ice": "neve e ghiaccio", "Snow": "neve",
+           "Flooding": "alluvioni", "Fog": "nebbia", "High-Temperature": "caldo", "Low-Temperature": "freddo",
+           "Forest-Fire": "incendi", "Coastal Event": "mareggiate", "Avalanches": "valanghe"}
+
+
+def livello(testo):
+    t = (testo or "").upper()
+    return "rossa" if "ROSSA" in t else "arancione" if "ARANCIONE" in t else "gialla" if "GIALLA" in t else "verde"
+
+
+def api_github(percorso):
+    h = {"Accept": "application/vnd.github+json", "User-Agent": "notizie-benevento meteo"}
+    if os.environ.get("GITHUB_TOKEN"):
+        h["Authorization"] = "Bearer " + os.environ["GITHUB_TOKEN"]
+    with urllib.request.urlopen(urllib.request.Request("https://api.github.com" + percorso, headers=h), timeout=40) as r:
+        return json.load(r)
+
+
+def bollettino_dpc():
+    """L'ultimo bollettino di criticità della Protezione civile: livello per zona di allerta, oggi e domani."""
+    sha = api_github(f"/repos/{DPC_REPO}/commits?path=files/topojson&per_page=1")[0]["sha"]
+    nomi = [re.search(r"files/topojson/(\d{8}_\d{4})_", f["filename"]) for f in api_github(f"/repos/{DPC_REPO}/commits/{sha}")["files"]]
+    nome = next(m.group(1) for m in nomi if m)
+    meta = scarica(f"https://raw.githubusercontent.com/{DPC_REPO}/master/files/{nome}.json")
+    giorno0 = dt.date(int(nome[:4]), int(nome[4:6]), int(nome[6:8]))
+    out = {"nome": meta.get("name"), "pubblicato": meta.get("date"), "giorni": {}}
+    for chiave, delta in (("today", 0), ("tomorrow", 1)):
+        geom = list(scarica(meta[chiave]["topo_json"])["objects"].values())[0]["geometries"]
+        zone = {}
+        for g in geom:
+            p = g.get("properties", {})
+            comuni = [c for c in p.get("Comuni", []) if c in COMUNI_BN]
+            if not comuni:
+                continue
+            zone[p.get("Nome zona")] = {
+                "livello": livello(p.get("Rappresentata nella mappa")),
+                "idrogeologico": livello(p.get("Per rischio idrogeologico")),
+                "idraulico": livello(p.get("Per rischio idraulico")),
+                "temporali": livello(p.get("Per rischio temporali")),
+                "comuni": comuni,
+            }
+        if sum(len(z["comuni"]) for z in zone.values()) != len(COMUNI_BN):
+            raise RuntimeError("nel bollettino non ci sono tutti i Comuni del Sannio")
+        out["giorni"][(giorno0 + dt.timedelta(days=delta)).isoformat()] = zone
+    return out
+
+
+def ora_roma(iso_utc):
+    t = dt.datetime.fromisoformat(iso_utc.replace("Z", "+00:00"))
+    try:
+        from zoneinfo import ZoneInfo
+        return t.astimezone(ZoneInfo(FUSO)).isoformat(timespec="minutes")
+    except Exception:
+        return t.isoformat(timespec="minutes")
+
+
+def meteoalarm_campania():
+    """Le allerte di Meteoalarm per la Campania (valgono per tutta la regione, non per zona)."""
+    req = urllib.request.Request(METEOALARM, headers={"User-Agent": "notizie-benevento meteo"})
+    with urllib.request.urlopen(req, timeout=40) as r:
+        xml = r.read().decode("utf-8", "ignore")
+    out = []
+    for e in re.findall(r"<entry>(.*?)</entry>", xml, re.S):
+        if "<cap:areaDesc>Campania</cap:areaDesc>" not in e:
+            continue
+        g = lambda k: (re.search(rf"<cap:{k}>([^<]*)</cap:{k}>", e) or [None, ""])[1].strip()
+        if g("message_type").lower() == "cancel" or g("status").lower() not in ("", "actual"):
+            continue
+        ev = g("event").split()
+        if len(ev) < 2:
+            continue
+        lv = {"yellow": "gialla", "orange": "arancione", "red": "rossa"}.get(ev[0].lower())
+        if not lv:
+            continue
+        tipo = " ".join(ev[1:]).replace(" Warning", "")
+        out.append({"livello": lv, "tipo": TIPI_MA.get(tipo, tipo.lower()), "inizio": ora_roma(g("onset") or g("effective")),
+                    "fine": ora_roma(g("expires"))})
+    return out
+
+
+def allerte_ufficiali(oggi):
+    """Bollettino e Meteoalarm, e per oggi e domani se le due fonti concordano."""
+    errori, dpc, ma = [], None, None
+    try:
+        dpc = bollettino_dpc()
+    except Exception as e:
+        errori.append(f"bollettino Protezione civile non disponibile: {e}")
+    try:
+        ma = meteoalarm_campania()
+    except Exception as e:
+        errori.append(f"Meteoalarm non disponibile: {e}")
+    giorni = {}
+    for d in (oggi, oggi + dt.timedelta(days=1)):
+        k = d.isoformat()
+        zone = (dpc or {}).get("giorni", {}).get(k)
+        del_giorno = [w for w in (ma or []) if w["inizio"][:10] <= k <= w["fine"][:10]]
+        idro = max((LIV[w["livello"]] for w in del_giorno if w["tipo"] in ("pioggia", "temporali", "alluvioni")), default=0)
+        dpc_max = max((LIV[z["livello"]] for z in zone.values()), default=0) if zone else None
+        if dpc is None and ma is None:
+            nota = "Fonti ufficiali non raggiungibili: controlla gli avvisi della Regione Campania."
+        elif zone is None:
+            nota = ("Il bollettino della Protezione civile per questo giorno non è ancora uscito (di solito esce verso le 15-16): "
+                    "per ora c'è solo Meteoalarm, che vale per tutta la Campania.")
+        elif ma is None:
+            nota = "Meteoalarm non raggiungibile: c'è solo il bollettino della Protezione civile."
+        elif idro > dpc_max:
+            nota = ("Meteoalarm dà un livello più alto per la Campania: riguarda altre zone della regione. "
+                    "Per il Sannio vale il bollettino.")
+        elif idro < dpc_max:
+            nota = "Il bollettino della Protezione civile è più grave di Meteoalarm: vale il bollettino."
+        else:
+            nota = "Il bollettino della Protezione civile e Meteoalarm concordano."
+        giorni[k] = {"zone": zone, "meteoalarm": del_giorno, "nota": nota}
+    return {"dpc_bollettino": (dpc or {}).get("nome"), "dpc_pubblicato": (dpc or {}).get("pubblicato"),
+            "giorni": giorni, "errori": errori}
 
 
 def main():
@@ -246,8 +370,12 @@ def main():
         adesso = dt.datetime.now(ZoneInfo(FUSO))
     except Exception:
         pass
+    allerte = allerte_ufficiali(adesso.date())
+    for x in allerte["errori"]:
+        print("AVVISO:", x, file=sys.stderr)
     uscita = {
         "aggiornato": adesso.isoformat(timespec="minutes"),
+        "allerte": allerte,
         "luogo": LUOGO, "quota": m.get("elevation"),
         "modelli": attivi,
         "fonte": "Open-Meteo (CC BY 4.0) con i modelli dei servizi meteo nazionali; aria e pollini: Copernicus CAMS",

@@ -159,6 +159,25 @@
   .spaghi-legenda { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 12px; color: var(--grigio); margin: 8px 0 14px; }
   .spaghi-legenda i { display: inline-block; width: 14px; height: 3px; border-radius: 2px; vertical-align: 3px; margin-right: 5px; }
 
+  /* allerte ufficiali */
+  .allerte { padding: 14px 18px; margin-bottom: 18px; }
+  .allerte .testa { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .allerte .testa .tit { font: 700 15px var(--sans); }
+  .allerte .testa .fonte { font-size: 12px; color: var(--grigio); }
+  .al-giorno { padding: 10px 0; border-top: 1px solid var(--riga-chiara); }
+  .al-giorno:first-of-type { border-top: 0; }
+  .al-tit { display: flex; align-items: center; gap: 10px; font: 600 15px var(--sans); flex-wrap: wrap; }
+  .al-pill { display: inline-block; font: 700 12px var(--sans); color: #fff; padding: 3px 10px; border-radius: 12px; text-transform: uppercase; letter-spacing: .4px; }
+  .al-pill.gialla { color: #3a2c00; }
+  .al-righe { list-style: none; padding: 0; margin: 6px 0 0; }
+  .al-righe li { font-size: 14px; padding: 3px 0 3px 18px; position: relative; }
+  .al-righe li::before { content: ""; position: absolute; left: 2px; top: 9px; width: 9px; height: 9px; border-radius: 50%; background: var(--c, #3f9b4a); }
+  .al-righe details { display: inline; }
+  .al-righe summary { display: inline; cursor: pointer; color: var(--blu); }
+  .al-righe .comuni { display: block; font-size: 13px; color: var(--grigio); margin-top: 2px; }
+  .al-nota { font-size: 12.5px; color: var(--grigio); margin-top: 4px; }
+  .al-ok { font-size: 14px; }
+
   /* animazioni: pioggia, neve, vento, sole, nuvole, nebbia, fulmini */
   .an-goccia { animation: goccia 1.1s linear infinite; }
   @keyframes goccia { 0% { transform: translateY(-3px); opacity: 0; } 30% { opacity: 1; } 100% { transform: translateY(7px); opacity: 0; } }
@@ -482,6 +501,84 @@
     return s + "</svg>";
   }
   function misura(et, va) { return '<div><div class="et">' + esc(et) + '</div><div class="va">' + va + "</div></div>"; }
+
+  // ---------- allerte ufficiali: bollettino della Protezione civile + Meteoalarm ----------
+  var ORD_LIV = ["verde", "gialla", "arancione", "rossa"];
+  var COL_LIV = { verde: "#3f9b4a", gialla: "#f2c200", arancione: "#ef7f1a", rossa: "#c4161c" };
+  var NOME_LIV = { verde: "Nessuna allerta", gialla: "Allerta gialla", arancione: "Allerta arancione", rossa: "Allerta rossa" };
+  var NOME_ZONA = { "Alta Irpinia e Sannio": "Zona 4 · Alta Irpinia e Sannio", "Alto Volturno e Matese": "Zona 2 · Alto Volturno e Matese",
+    "Penisola sorrentino-amalfitana, Monti di Sarno e Monti Picentini": "Zona 3 · Monti di Sarno e Picentini" };
+  var ORDINE_ZONE = ["Alta Irpinia e Sannio", "Alto Volturno e Matese", "Penisola sorrentino-amalfitana, Monti di Sarno e Monti Picentini"];
+  function oraBreve(iso) { return String(iso).slice(11, 16).replace(/^0/, ""); }
+  function giornoBreve(iso) { return new Date(String(iso).slice(0, 10) + "T12:00:00Z").toLocaleDateString("it-IT", { timeZone: TZ, weekday: "long" }); }
+  // Il livello del giorno: il bollettino per zona se c'è, altrimenti Meteoalarm (che vale per tutta la Campania).
+  function livelloGiorno(g) {
+    var m = 0;
+    if (g.zone) Object.keys(g.zone).forEach(function (z) { m = Math.max(m, ORD_LIV.indexOf(g.zone[z].livello)); });
+    (g.meteoalarm || []).forEach(function (w) {
+      var idro = /pioggia|temporali|alluvioni/.test(w.tipo);
+      if (!g.zone || !idro) m = Math.max(m, ORD_LIV.indexOf(w.livello));
+    });
+    return ORD_LIV[m];
+  }
+  function allerteSintesi() {
+    var a = D.allerte;
+    if (!a || !a.giorni) return null;
+    var giorni = Object.keys(a.giorni).sort(), peggio = null;
+    giorni.forEach(function (k) {
+      var l = livelloGiorno(a.giorni[k]);
+      if (l !== "verde" && (!peggio || ORD_LIV.indexOf(l) > ORD_LIV.indexOf(peggio.livello))) peggio = { livello: l, giorno: k };
+    });
+    return peggio;
+  }
+  function disegnaAllerte() {
+    var a = D.allerte;
+    if (!a || !a.giorni) return "";
+    var giorni = Object.keys(a.giorni).sort();
+    var fonti = "Fonti: " + (a.dpc_bollettino ? "Protezione civile (" + esc(a.dpc_bollettino.replace("Bollettino del ", "bollettino del ")) + ")" : "Protezione civile non raggiungibile") +
+      " e Meteoalarm, controllate ogni ora";
+    var tutto_verde = giorni.every(function (k) { return livelloGiorno(a.giorni[k]) === "verde"; });
+    var h = '<section class="card allerte" id="allerte" aria-label="Allerte ufficiali"><div class="testa"><span class="tit">Allerte ufficiali per il Sannio</span>' +
+      '<span class="fonte">' + fonti + "</span></div>";
+    if (tutto_verde) {
+      h += '<p class="al-ok"><span class="pallino" style="background:#3f9b4a"></span>Nessuna allerta per oggi e domani in nessuna delle tre zone del Sannio.</p>';
+    }
+    giorni.forEach(function (k) {
+      var g = a.giorni[k], l = livelloGiorno(g);
+      if (tutto_verde) return;
+      var et = k === oggi ? "Oggi" : "Domani, " + giornoBreve(k);
+      h += '<div class="al-giorno"><div class="al-tit"><span class="al-pill ' + l + '" style="background:' + COL_LIV[l] + '">' + NOME_LIV[l] + "</span>" +
+        esc(et) + " " + +k.slice(8, 10) + "</div><ul class=\"al-righe\">";
+      if (g.zone) {
+        ORDINE_ZONE.forEach(function (zn) {
+          var z = g.zone[zn];
+          if (!z) return;
+          var rischi = [];
+          if (z.temporali !== "verde") rischi.push("temporali");
+          if (z.idrogeologico !== "verde") rischi.push("frane e smottamenti");
+          if (z.idraulico !== "verde") rischi.push("fiumi e torrenti");
+          var com = z.comuni.slice().sort(function (x, y) { return (y === "Benevento") - (x === "Benevento") || x.localeCompare(y, "it"); });
+          var primi = com.slice(0, 4).join(", ");
+          h += '<li style="--c:' + COL_LIV[z.livello] + '"><b>' + esc(NOME_ZONA[zn] || zn) + "</b>: " + NOME_LIV[z.livello].toLowerCase() +
+            (rischi.length ? " (" + rischi.join(", ") + ")" : "") +
+            '<span class="comuni">' + esc(primi) + (com.length > 4 ? ' e altri <details><summary>' + (com.length - 4) + " Comuni</summary> " +
+            esc(com.slice(4).join(", ")) + "</details>" : "") + "</span></li>";
+        });
+      }
+      (g.meteoalarm || []).forEach(function (w) {
+        var idro = /pioggia|temporali|alluvioni/.test(w.tipo);
+        if (g.zone && idro) return; // per pioggia e temporali, se c'è il bollettino per zona, vale quello
+        var fine = w.fine.slice(0, 10) !== k ? " di " + giornoBreve(w.fine) : "";
+        h += '<li style="--c:' + COL_LIV[w.livello] + '">' + NOME_LIV[w.livello] + " per <b>" + esc(w.tipo) + "</b> in Campania, dalle " + oraBreve(w.inizio) +
+          (w.inizio.slice(0, 10) !== k ? " di " + giornoBreve(w.inizio) : "") + " alle " + oraBreve(w.fine) + fine + " (Meteoalarm)</li>";
+      });
+      if (!g.zone && !(g.meteoalarm || []).length) h += '<li style="--c:#3f9b4a">Nessuna allerta.</li>';
+      h += '</ul><div class="al-nota">' + esc(g.nota) + "</div></div>";
+    });
+    h += '<div class="al-nota">Le allerte ufficiali valgono più delle previsioni. Avvisi completi: <a href="https://centrofunzionale.regione.campania.it/" rel="noopener">Protezione civile Campania</a> · ' +
+      '<a href="https://mappe.protezionecivile.gov.it/it/mappe-rischi/bollettino-di-criticita/" rel="noopener">bollettino nazionale</a>.</div></section>';
+    return h;
+  }
 
   // ---------- consigli: ombrello, vestiti, sole, bucato, strade, aria ----------
   var CAPO = "M22 12L32 17 42 12 53 20 48 30 44 28V56H20V28L16 30 11 20z";
@@ -1029,7 +1126,7 @@
   // ---------- tutto insieme ----------
   function disegnaTutto() {
     var c = document.getElementById("contenuto");
-    c.innerHTML = '<div class="sopra">' + disegnaAttuale() + disegnaConsigli() + "</div>" +
+    c.innerHTML = disegnaAllerte() + '<div class="sopra">' + disegnaAttuale() + disegnaConsigli() + "</div>" +
       '<section class="ogni-ora"><div class="riga-titolo"><h2>Ogni ora</h2><div class="schede" role="tablist">' +
       SCHEDE.map(function (sc) { return '<button type="button" role="tab" data-s="' + sc[0] + '" aria-selected="' + (sc[0] === scheda) + '">' + esc(sc[1]) + "</button>"; }).join("") +
       '</div></div><div class="giorni-box"><button type="button" class="scorri sx" aria-label="Giorni precedenti">‹</button><div class="giorni" id="giorni">' + disegnaGiorni() +
