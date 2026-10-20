@@ -27,6 +27,9 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Meteo da 8 modelli
+        env:
+          # per leggere il bollettino della Protezione civile su GitHub senza finire nel limite delle richieste anonime
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
           if ! python3 strumenti/meteo.py; then
             echo "Meteo non aggiornato: tengo quello già pubblicato"

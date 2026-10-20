@@ -145,6 +145,7 @@
   .meteo-box .mb-g b { font-weight: 700; }
   .meteo-box .mb-g .mn { color: var(--grigio); }
   .meteo-box .mb-g .pp { display: block; color: #3a78c9; font-weight: 600; font-size: 12px; min-height: 16px; }
+  .meteo-box .mb-allerta { font: 700 13px var(--sans); color: #fff; border-radius: 4px; padding: 6px 10px; margin: 0 0 8px; }
   .meteo-box .mb-link { display: block; margin-top: 10px; font: 600 13px var(--sans); color: var(--blu); }
   .meteo-box:hover .mb-link { text-decoration: underline; }
   .an-goccia { animation: goccia 1.1s linear infinite; }
@@ -731,8 +732,25 @@
     if (!a) return null;
     var o = meteo.ore, i = a.i, box = el("a", "meteo-box", []);
     box.href = "meteo.html";
+    // allerta ufficiale (bollettino della Protezione civile o Meteoalarm), la peggiore tra oggi e domani
+    var al = meteo.allerte && meteo.allerte.giorni ? Object.keys(meteo.allerte.giorni).sort().map(function (k) {
+      var g = meteo.allerte.giorni[k], ord = ["verde", "gialla", "arancione", "rossa"], m = 0, tipi = [];
+      if (g.zone) Object.keys(g.zone).forEach(function (z) { var l = ord.indexOf(g.zone[z].livello); if (l > m) m = l; });
+      (g.meteoalarm || []).forEach(function (w) {
+        var idro = /pioggia|temporali|alluvioni/.test(w.tipo);
+        if (!g.zone || !idro) { var l = ord.indexOf(w.livello); if (l > m) m = l; tipi.push([l, w.tipo]); }
+      });
+      // nella riga breve solo i fenomeni del livello più alto (es. «pioggia, temporali», non anche il vento giallo)
+      tipi = tipi.filter(function (t) { return t[0] === m && m > 0; }).map(function (t) { return t[1]; })
+        .filter(function (t, i, v) { return v.indexOf(t) === i; });
+      return { giorno: k, livello: ord[m], tipi: tipi };
+    }).filter(function (x) { return x.livello !== "verde"; }).sort(function (x, y) { return ["verde", "gialla", "arancione", "rossa"].indexOf(y.livello) - ["verde", "gialla", "arancione", "rossa"].indexOf(x.livello); })[0] : null;
+    if (al) box.href = "meteo.html#allerte";
     var gradi = function (v) { return v == null ? "–" : Math.round(v) + "°"; };
-    var html = '<div class="mb-tit">Meteo Benevento<span>' + meteo.modelli.length + ' modelli a confronto</span></div>' +
+    var colori = { gialla: "#f2c200", arancione: "#ef7f1a", rossa: "#c4161c" };
+    var html = (al ? '<div class="mb-allerta" style="background:' + colori[al.livello] + (al.livello === "gialla" ? ';color:#3a2c00' : "") + '">Allerta ' + al.livello + " " +
+      (al.giorno === a.oggi ? "oggi" : "domani") + (al.tipi.length ? " · " + al.tipi.join(", ") : "") + " ›</div>" : "") +
+      '<div class="mb-tit">Meteo Benevento<span>' + meteo.modelli.length + ' modelli a confronto</span></div>' +
       '<div class="mb-ora">' + icona(o.cond[i], o.giorno[i] === 0) + '<div class="mb-t">' + Math.round(o.temp[i]) + '°</div><div class="mb-c">' +
       (COND[o.cond[i]] || "") + "<small>percepita " + gradi(o.perc[i]) + "</small></div></div>";
     var dom = a.giorni[1];
