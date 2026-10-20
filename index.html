@@ -341,7 +341,7 @@
 
   <footer>
     <p>Notizie Benevento è un report automatico: le notizie appartengono ai giornali citati. Qui ci sono solo un riassunto breve e i link agli articoli originali, da leggere per i dettagli.</p>
-    <p>Una notizia compare solo se la riportano almeno due testate diverse oppure una fonte ufficiale (ANAS, INGV, Comuni, Prefettura, forze dell'ordine). Le accuse sono riportate con le parole usate dai giornali. Aggiornato ogni 2 ore, dalle 6 alle 22.</p>
+    <p>Una notizia compare solo se la riportano almeno due testate diverse oppure una fonte ufficiale (ANAS, INGV, Comuni, Prefettura, forze dell'ordine). Le accuse sono riportate con le parole usate dai giornali. Aggiornato ogni 2 ore, dalle 6 alle 22. Le visite si contano in forma anonima, senza cookie.</p>
     <p>Nessuna notizia viene cancellata: quando esce dalla prima pagina resta nell'<a href="#archivio">archivio</a>, allo stesso indirizzo.</p>
     <p class="sezioni-link">Sezioni: <a href="/sezione/strade/">Strade</a> · <a href="/sezione/cronaca/">Cronaca</a> · <a href="/sezione/politica/">Politica</a> · <a href="/sezione/eventi/">Eventi</a> · <a href="/sezione/allerte/">Allerte</a> · <a href="/sezione/altro/">Altro</a> · <a href="/meteo.html">Meteo Benevento</a><br>
       Zone: <a href="/zona/benevento/">Benevento città</a> · <a href="/zona/valle-telesina/">Valle Telesina</a> · <a href="/zona/valle-caudina/">Valle Caudina</a> · <a href="/zona/fortore/">Fortore e Tammaro</a> · <a href="/zona/altri-comuni/">Altri comuni</a> · <a href="/feed.xml">Feed RSS</a></p>
@@ -1495,5 +1495,7 @@
     .catch(function () { stato(); document.getElementById("stato").textContent = "Notizie non disponibili, riprova tra poco"; disegna(); });
 })();
 </script>
+<!-- Cloudflare Web Analytics: conta le visite senza cookie e senza dati personali -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "d26cc020fff942868bb646d8209b3ad6"}'></script>
 </body>
 </html>
