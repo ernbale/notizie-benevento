@@ -81,6 +81,21 @@
   .apertura .sintesi { font-size: 16px; }
 
   .laterale .notizia h2 { font-size: 18px; }
+  .principale { grid-column: 1 / 3; }
+  .testa-pagina { display: grid; grid-template-columns: 1.35fr 1fr; align-items: start; }
+  .testa-pagina > div { min-width: 0; }
+  .testa-pagina > div + div { border-left: 1px solid var(--riga); padding-left: 20px; margin-left: 20px; }
+  .spalla h2 { font-size: 22px; }
+  .spalla .sintesi { display: none; } /* come nei giornali: in spalla solo il titolo, il riassunto è nell'articolo */
+  .altre { margin-top: 6px; }
+  .altre-griglia { display: grid; grid-template-columns: 1fr 1fr; column-gap: 28px; align-items: start; }
+  .altre-griglia .notizia:last-child { border-bottom: 1px solid var(--riga); }
+  .avvisi-box { margin-bottom: 18px; }
+  .avvisi-box ul { list-style: none; padding: 0; margin: 0; }
+  .avvisi-box li { padding: 8px 0; border-bottom: 1px solid var(--riga); font: 600 15px/1.3 var(--serif); }
+  .avvisi-box li a { color: var(--nero); text-decoration: none; }
+  .avvisi-box li a:hover { text-decoration: underline; }
+  .avvisi-box .dove { display: block; font: 500 12px var(--sans); color: var(--rosso); margin-top: 3px; }
   .vuoto { color: var(--grigio); padding: 30px 0; }
 
   /* approfondimento */
@@ -175,6 +190,7 @@
   @media (max-width: 900px) {
     .griglia { grid-template-columns: 1fr 1fr; }
     .laterale { grid-column: 1 / -1; border-left: 0 !important; padding: 20px 0 0 !important; border-top: 1px solid var(--riga); margin-top: 10px; }
+    .principale { grid-column: 1 / -1; padding-right: 0 !important; }
     .ultimora { grid-template-columns: repeat(3, 1fr); }
     .ultimora a:nth-child(n+4) { display: none; }
   }
@@ -198,6 +214,9 @@
     .col + .col { border-top: 1px solid var(--riga); padding-top: 16px !important; margin-top: 4px; }
     .apertura { margin-left: -16px; margin-right: -16px; padding: 16px; }
     .apertura h2 { font-size: 27px; }
+    .testa-pagina, .altre-griglia { grid-template-columns: 1fr; }
+    .testa-pagina > div + div { border-left: 0; padding-left: 0; margin-left: 0; }
+    .spalla h2 { font-size: 22px; }
     .appro h1 { font-size: 30px; }
     .appro p, .appro li { font-size: 17px; }
     .cronologia li { grid-template-columns: 1fr; gap: 2px; }
@@ -594,9 +613,61 @@
   function filtrate() {
     return (dati.notizie || []).filter(function (n) {
       return (!filtroCat || n.categoria === filtroCat) && (!filtroZona || n.zona === filtroZona);
-    }).sort(function (a, b) { return String(b.pubblicato).localeCompare(String(a.pubblicato)); });
+    }).sort(function (a, b) { return tempo(b) - tempo(a); });
   }
-  function peso(n) { return (n.rilevante ? 100 : 0) + (Array.isArray(n.fonti) ? n.fonti.length : 0); }
+  // Ora della notizia. Se l'articolo dice solo il giorno: per i giorni passati conta come mezzogiorno;
+  // per oggi a metà tra mezzanotte e adesso (non si sa quando è uscita, ma di sicuro non nel futuro).
+  function tempo(n) {
+    var p = String(n.pubblicato || "");
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(p)) { var t = Date.parse(p); return isNaN(t) ? 0 : t; }
+    var mezzanotte = Date.parse(p + "T00:00:00+01:00"), adesso = Date.now();
+    return Math.min(Date.parse(p + "T12:00:00+01:00"), mezzanotte + Math.max(0, adesso - mezzanotte) / 2);
+  }
+  // Importanza che cala col tempo (metà ogni 18 ore): una notizia importante tiene l'apertura
+  // circa un giorno e mezzo, poi lascia il posto a quelle nuove.
+  function rilievo(n, adesso) {
+    var ore = Math.max(0, (adesso - tempo(n)) / 36e5);
+    var importanza = (n.rilevante ? 5 : 1) + Math.min(Array.isArray(n.fonti) ? n.fonti.length : 1, 6) * 0.25;
+    return importanza * Math.pow(0.5, ore / 18);
+  }
+  // Avvisi ufficiali su strade e lavori ancora validi: hanno il loro riquadro nella colonna di destra.
+  function eAvviso(n) {
+    if (n.in_vigore_fino) return n.in_vigore_fino >= new Date().toLocaleDateString("sv-SE", { timeZone: TZ });
+    return n.categoria === "strade" && n.stato === "ufficiale";
+  }
+  // Se la spalla viene molto più lunga dell'apertura (titoli lunghi), l'ultima notizia della spalla
+  // scende tra «Le altre notizie», al suo posto in ordine di tempo: niente buco sotto l'apertura.
+  function bilancia(sx, dx, ag, altre) {
+    if (window.matchMedia("(max-width: 620px)").matches) return;
+    var perId = {};
+    (dati.notizie || []).forEach(function (n) { perId[n.id] = n; });
+    while (dx.children.length > 1 && dx.offsetHeight > sx.offsetHeight + 90) {
+      var art = dx.lastElementChild, n = perId[art.getAttribute("data-id")];
+      art.classList.remove("spalla");
+      var prima = null;
+      for (var k = 0; k < ag.children.length; k++) {
+        var m = perId[ag.children[k].getAttribute("data-id")];
+        if (m && tempo(m) < tempo(n)) { prima = ag.children[k]; break; }
+      }
+      ag.insertBefore(art, prima);
+      altre.style.display = "";
+    }
+  }
+  function riquadroAvvisi(avvisi) {
+    var sez = el("section", "avvisi-box", [el("h3", "titolo-col", ["Strade, avvisi in vigore"])]);
+    var ul = el("ul", "", []);
+    avvisi.forEach(function (n) {
+      var li = el("li", "", []);
+      var a = el("a", "", [n.titolo]);
+      a.href = linkArticolo(n);
+      li.appendChild(a);
+      var fino = n.in_vigore_fino ? "fino al " + new Date(n.in_vigore_fino + "T12:00:00Z").toLocaleDateString("it-IT", { timeZone: TZ, day: "numeric", month: "long" }) : quando(n.pubblicato);
+      li.appendChild(el("span", "dove", [(n.luogo ? n.luogo + " · " : "") + fino]));
+      ul.appendChild(li);
+    });
+    sez.appendChild(ul);
+    return sez;
+  }
 
   var NUBE = "M18 48h28a10 10 0 0 0 1.5-19.9A13 13 0 0 0 22.6 27 9.5 9.5 0 0 0 18 48z";
   function sole(cx, cy, r) { return '<circle class="an-alone" cx="' + cx + '" cy="' + cy + '" r="' + (r + 4) + '" fill="#f7a529" opacity=".16"/><circle cx="' + cx + '" cy="' + cy + '" r="' + r + '" fill="url(#g-sole)"/>'; }
@@ -686,26 +757,45 @@
       var a = el("a", "", []);
       a.href = n.articolo ? linkArticolo(n) : "#";
       var q = quando(n.pubblicato);
-      a.appendChild(el("div", "ora", [q.indexOf("oggi ") === 0 ? q.slice(5) : soloData(n.pubblicato)]));
+      var oggiSenzaOra = /^\d{4}-\d{2}-\d{2}$/.test(String(n.pubblicato)) && n.pubblicato === new Date().toLocaleDateString("sv-SE", { timeZone: TZ });
+      a.appendChild(el("div", "ora", [q.indexOf("oggi ") === 0 ? q.slice(5) : oggiSenzaOra ? "oggi" : soloData(n.pubblicato)]));
       a.appendChild(el("div", "tit", [n.titolo]));
       striscia.appendChild(a);
     });
     box.appendChild(striscia);
 
-    var apertura = lista.slice().sort(function (a, b) { return peso(b) - peso(a); })[0];
-    var resto = lista.filter(function (n) { return n !== apertura; });
+    var adesso = Date.now(), soloStrade = filtroCat === "strade";
+    var avvisi = soloStrade ? [] : lista.filter(eAvviso);
+    // gli avvisi stanno nel loro riquadro; in pagina restano solo quelli importanti
+    var principali = lista.filter(function (n) { return avvisi.indexOf(n) < 0 || n.rilevante; });
+    if (!principali.length) { principali = lista; avvisi = []; }
+    var perRilievo = principali.slice().sort(function (a, b) { return rilievo(b, adesso) - rilievo(a, adesso); });
+    var apertura = perRilievo[0], spalla = perRilievo.slice(1, 4);
+    var resto = principali.filter(function (n) { return n !== apertura && spalla.indexOf(n) < 0; });
     var griglia = el("section", "griglia", []);
-    var c1 = el("div", "col", []), c2 = el("div", "col", []), c3 = el("div", "col laterale", []);
-    c1.appendChild(scheda(apertura, "apertura"));
-    resto.forEach(function (n, i) { (i % 2 === 0 ? c2 : c1).appendChild(scheda(n)); });
+    var c1 = el("div", "col principale", []), c3 = el("div", "col laterale", []);
+    var testa = el("div", "testa-pagina", []), sx = el("div", "", []), dx = el("div", "", []);
+    sx.appendChild(scheda(apertura, "apertura"));
+    spalla.forEach(function (n) { dx.appendChild(scheda(n, "spalla")); });
+    testa.appendChild(sx);
+    if (spalla.length) testa.appendChild(dx);
+    c1.appendChild(testa);
+    var altre = el("section", "altre", [el("h3", "titolo-col", ["Le altre notizie, dalla più recente"])]);
+    var ag = el("div", "altre-griglia", []);
+    resto.forEach(function (n) { ag.appendChild(scheda(n)); });
+    altre.appendChild(ag);
+    c1.appendChild(altre);
+    if (!resto.length) altre.style.display = "none";
     var rm = riquadroMeteo();
     if (rm) c3.appendChild(rm);
+    if (avvisi.length) c3.appendChild(riquadroAvvisi(avvisi));
     c3.appendChild(el("h3", "titolo-col", ["Approfondimenti"]));
     var appro = dati.approfondimenti || [];
     if (appro.length) appro.forEach(function (ap) { c3.appendChild(schedaAppro(ap)); });
     else c3.appendChild(el("p", "vuoto", ["Nessun approfondimento per ora."]));
-    griglia.appendChild(c1); griglia.appendChild(c2); griglia.appendChild(c3);
+    griglia.appendChild(c1); griglia.appendChild(c3);
     box.appendChild(griglia);
+    bilancia(sx, dx, ag, altre);
   }
 
   // Nomi delle fonti citate in una frase, con i link presi dall'elenco fonti.
