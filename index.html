@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Notizie Benevento</title>
+<meta name="description" content="Le notizie di Benevento e provincia, confrontate tra i giornali locali. Aggiornato ogni ora.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Notizie Benevento">
+<meta property="og:title" content="Notizie Benevento">
+<meta property="og:description" content="Le notizie di Benevento e provincia, confrontate tra i giornali locali. Esce solo ciò che è riportato da almeno due fonti o da una fonte ufficiale.">
+<meta property="og:locale" content="it_IT">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --carta: #fdeedd;
+    --carta-scura: #f8dfc6;
+    --riga: #e3c9ad;
+    --nero: #111111;
+    --grigio: #5b5249;
+    --rosso: #c4161c;
+    --blu: #1d4f91;
+    --verde: #2e6b3f;
+    --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --sans: Inter, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--carta); color: var(--nero); font: 16px/1.5 var(--sans); }
+  a { color: inherit; }
+  .pagina { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+
+  /* testata */
+  .testata { display: grid; grid-template-columns: 1fr auto 1fr; align-items: end; gap: 12px; padding: 18px 0 10px; }
+  .testata .data, .testata .agg { font-size: 13px; color: var(--grigio); }
+  .testata .agg { text-align: right; }
+  .testata .nome { text-align: center; text-decoration: none; }
+  .testata .nome .grande { display: block; font: 700 44px/1 var(--serif); letter-spacing: -1px; }
+  .testata .nome .piccolo { display: block; font: 600 13px/1.4 var(--sans); letter-spacing: 2px; text-transform: uppercase; margin-top: 4px; }
+  .menu { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 4px 22px;
+          padding: 10px 0; border-top: 1px solid var(--nero); border-bottom: 1px solid var(--riga); }
+  .menu button { font: 600 15px var(--sans); background: none; border: 0; padding: 4px 0; color: var(--nero); cursor: pointer; border-bottom: 2px solid transparent; }
+  .menu button[aria-pressed="true"] { border-bottom-color: var(--rosso); }
+  .menu select { font: 500 14px var(--sans); background: transparent; border: 1px solid var(--riga); padding: 4px 6px; color: var(--nero); }
+
+  /* ultim'ora */
+  .ultimora { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; padding: 16px 0 14px; border-bottom: 1px solid var(--riga); }
+  .ultimora a { display: block; text-decoration: none; padding-right: 16px; }
+  .ultimora a + a { border-left: 1px solid var(--riga); padding-left: 14px; }
+  .ultimora .ora { display: flex; align-items: center; gap: 8px; color: var(--rosso); font: 600 13px var(--sans); margin-bottom: 6px; }
+  .ultimora .ora::after { content: ""; flex: 1; border-bottom: 2px dotted #b7a48f; }
+  .ultimora .tit { font: 500 14px/1.35 var(--sans); }
+  .ultimora a:hover .tit { text-decoration: underline; }
+
+  /* griglia */
+  .griglia { display: grid; grid-template-columns: 1.35fr 1fr 0.85fr; gap: 0; padding: 20px 0 30px; }
+  .col { padding: 0 20px; }
+  .col:first-child { padding-left: 0; }
+  .col:last-child { padding-right: 0; }
+  .col + .col { border-left: 1px solid var(--riga); }
+  .titolo-col { font: 700 13px var(--sans); text-transform: uppercase; letter-spacing: 1px; border-top: 3px solid var(--nero); padding-top: 6px; margin: 0 0 12px; }
+
+  .notizia { padding: 0 0 16px; margin: 0 0 16px; border-bottom: 1px solid var(--riga); }
+  .notizia:last-child { border-bottom: 0; }
+  .occhiello { font: 700 12px var(--sans); text-transform: uppercase; letter-spacing: .6px; color: var(--rosso); margin-bottom: 4px; }
+  .occhiello .luogo { color: var(--grigio); font-weight: 600; margin-left: 6px; }
+  .notizia h2 { margin: 0 0 6px; font: 700 22px/1.2 var(--serif); }
+  .notizia h2 a { text-decoration: none; }
+  .notizia h2 a:hover { color: var(--blu); text-decoration: underline; text-decoration-thickness: 1px; }
+  .notizia h2 a .segno { color: var(--blu); font-weight: 600; }
+  .notizia .sintesi { margin: 0 0 8px; font-size: 15px; color: #2a2520; }
+  .fonti { font-size: 13px; color: var(--grigio); }
+  .fonti a { color: var(--blu); }
+  .fonti .conferma { color: var(--verde); font-weight: 700; }
+  .fonti .ufficiale { color: #fff; background: var(--verde); padding: 0 5px; border-radius: 2px; font-weight: 700; }
+  .nota { font-size: 13px; margin-top: 8px; padding: 6px 10px; border-left: 3px solid var(--rosso); background: rgba(255,255,255,.45); }
+
+  .apertura { background: var(--carta-scura); padding: 18px 18px 6px; margin-bottom: 18px; }
+  .apertura h2 { font-size: 34px; line-height: 1.12; letter-spacing: -.3px; }
+  .apertura .sintesi { font-size: 16px; }
+
+  .laterale .notizia h2 { font-size: 18px; }
+  .vuoto { color: var(--grigio); padding: 30px 0; }
+
+  /* approfondimento */
+  .appro { max-width: 760px; margin: 0 auto; padding: 24px 0 40px; }
+  .appro .indietro { font: 600 14px var(--sans); color: var(--blu); text-decoration: none; }
+  .appro .occhiello { margin-top: 18px; }
+  .appro h1 { font: 700 40px/1.12 var(--serif); letter-spacing: -.5px; margin: 6px 0 10px; }
+  .appro .meta { font-size: 14px; color: var(--grigio); padding-bottom: 14px; border-bottom: 1px solid var(--nero); }
+  .appro h3 { font: 700 13px var(--sans); text-transform: uppercase; letter-spacing: 1px; border-top: 3px solid var(--nero); padding-top: 6px; margin: 28px 0 10px; }
+  .appro p, .appro li { font: 400 19px/1.6 var(--serif); }
+  .appro ul { padding-left: 20px; margin: 0; }
+  .cronologia { list-style: none; padding: 0 !important; }
+  .cronologia li { display: grid; grid-template-columns: 110px 1fr; gap: 12px; padding: 10px 0; border-bottom: 1px dotted #b7a48f; }
+  .cronologia .giorno { font: 700 14px var(--sans); color: var(--rosso); padding-top: 4px; }
+  .cita { font: 400 13px var(--sans); color: var(--grigio); }
+  .cita a { color: var(--blu); }
+  .elenco-fonti li { font: 400 15px/1.5 var(--sans); padding: 3px 0; }
+  .elenco-fonti a { color: var(--blu); }
+
+  footer { border-top: 1px solid var(--nero); padding: 14px 0 40px; font-size: 13px; color: var(--grigio); }
+  footer p { margin: 4px 0; max-width: 820px; }
+
+  @media (max-width: 900px) {
+    .griglia { grid-template-columns: 1fr 1fr; }
+    .laterale { grid-column: 1 / -1; border-left: 0 !important; padding: 20px 0 0 !important; border-top: 1px solid var(--riga); margin-top: 10px; }
+    .ultimora { grid-template-columns: repeat(3, 1fr); }
+    .ultimora a:nth-child(n+4) { display: none; }
+  }
+  @media (max-width: 620px) {
+    .testata { grid-template-columns: 1fr; text-align: center; gap: 4px; }
+    .testata .agg, .testata .data { text-align: center; }
+    .testata .data { order: 2; }
+    .testata .nome .grande { font-size: 36px; }
+    .menu { justify-content: flex-start; gap: 4px 16px; }
+    .menu select { width: 100%; }
+    .ultimora { grid-template-columns: 1fr; padding: 10px 0; }
+    .ultimora a { padding: 6px 0 !important; border-left: 0 !important; }
+    .ultimora a:nth-child(n+4) { display: none; }
+    .griglia { grid-template-columns: 1fr; }
+    .col { padding: 0 !important; border-left: 0 !important; }
+    .col + .col { border-top: 1px solid var(--riga); padding-top: 16px !important; margin-top: 4px; }
+    .apertura { margin-left: -16px; margin-right: -16px; padding: 16px; }
+    .apertura h2 { font-size: 27px; }
+    .appro h1 { font-size: 30px; }
+    .appro p, .appro li { font-size: 17px; }
+    .cronologia li { grid-template-columns: 1fr; gap: 2px; }
+  }
+
+  /* approfondimento vero */
+  .sommario { font: 400 21px/1.45 var(--serif); color: #3a332c; margin: 6px 0 14px; }
+  .inbreve { background: var(--carta-scura); border-left: 4px solid var(--rosso); padding: 12px 16px; margin: 18px 0 6px; }
+  .inbreve strong { display: block; font: 700 13px var(--sans); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+  .inbreve ul { padding-left: 18px; margin: 0; }
+  .inbreve li { font: 500 16px/1.5 var(--sans) !important; padding: 2px 0; }
+  .domanda { font: 700 18px/1.35 var(--serif); margin: 14px 0 4px; }
+  .collegate a { color: var(--blu); }
+  .laterale .sommario-breve { font-size: 15px; color: #2a2520; margin: 0 0 8px; }
+
+  /* condividi */
+  .condividi { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 14px 0 6px; }
+  .condividi .etich { font: 700 12px var(--sans); text-transform: uppercase; letter-spacing: 1px; color: var(--grigio); margin-right: 4px; }
+  .tondo { width: 38px; height: 38px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;
+           border: 0; cursor: pointer; text-decoration: none; color: #fff; padding: 0; transition: transform .12s; }
+  .tondo:hover { transform: scale(1.08); }
+  .tondo svg { width: 18px; height: 18px; fill: currentColor; }
+  .tondo.wa { background: #25d366; } .tondo.fb { background: #1877f2; } .tondo.tg { background: #229ed9; }
+  .tondo.xx { background: #111; } .tondo.ml { background: #5b5249; }
+  .tondo.cp, .tondo.ap { background: #fff; color: var(--nero); border: 1px solid var(--nero); }
+  .tondo.cp svg, .tondo.ap svg, .tondo.ml svg { fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .avviso-copia { font: 600 13px var(--sans); color: var(--verde); }
+  .apri-condividi { display: inline-flex; align-items: center; gap: 5px; margin-top: 8px; padding: 0; background: none; border: 0;
+                    font: 600 13px var(--sans); color: var(--grigio); cursor: pointer; }
+  .apri-condividi svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .apri-condividi:hover { color: var(--nero); }
+  .notizia .condividi { margin: 8px 0 0; gap: 6px; }
+  .notizia .tondo { width: 32px; height: 32px; }
+  .notizia .tondo svg { width: 15px; height: 15px; }
+
+  /* ascolta */
+  .ascolta { display: flex; align-items: center; gap: 8px; margin: 14px 0 0; }
+  .ascolta > button { display: inline-flex; align-items: center; gap: 7px; font: 600 14px var(--sans); background: var(--nero); color: #fff;
+                    border: 1px solid var(--nero); border-radius: 20px; padding: 7px 16px; cursor: pointer; }
+  .ascolta > button.secondario { background: #fff; color: var(--nero); }
+  .ascolta .stato-voce { font: 500 13px var(--sans); color: var(--grigio); }
+
+  /* condividi a comparsa */
+  .cond-wrap { position: relative; display: inline-block; }
+  .cond-pop { position: absolute; top: calc(100% + 6px); left: 0; z-index: 30; background: #fff; border: 1px solid var(--riga);
+              border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,.14); padding: 10px; margin: 0 !important; width: max-content; max-width: 86vw; }
+  .cond-pop .avviso-copia { flex-basis: 100%; }
+  .apri-condividi.grande { margin-top: 0; font: 600 14px var(--sans); color: var(--nero); background: #fff; border: 1px solid var(--nero);
+                           border-radius: 20px; padding: 7px 16px; gap: 7px; }
+  .apri-condividi.grande svg { width: 16px; height: 16px; }
+  .apri-condividi[aria-expanded="true"] { color: var(--nero); }
+  .apri-condividi.grande[aria-expanded="true"] { background: var(--nero); color: #fff; }
+</style>
+</head>
+<body>
+<div class="pagina">
+  <header class="testata">
+    <div class="data" id="data"></div>
+    <a class="nome" href="#">
+      <span class="grande">Notizie Benevento</span>
+      <span class="piccolo">Benevento e provincia</span>
+    </a>
+    <div class="agg" id="stato">Caricamento…</div>
+  </header>
+
+  <nav class="menu" id="menu" aria-label="Sezioni">
+    <button type="button" data-cat="" aria-pressed="true">Tutte</button>
+    <button type="button" data-cat="strade" aria-pressed="false">Strade</button>
+    <button type="button" data-cat="cronaca" aria-pressed="false">Cronaca</button>
+    <button type="button" data-cat="meteo" aria-pressed="false">Meteo e terremoti</button>
+    <button type="button" data-cat="politica" aria-pressed="false">Politica</button>
+    <button type="button" data-cat="eventi" aria-pressed="false">Eventi</button>
+    <button type="button" data-cat="altro" aria-pressed="false">Altro</button>
+    <select id="zona" aria-label="Zona">
+      <option value="">Tutte le zone</option>
+      <option value="benevento">Benevento città</option>
+      <option value="telesina">Valle Telesina</option>
+      <option value="caudina">Valle Caudina</option>
+      <option value="fortore">Fortore e Tammaro</option>
+      <option value="provincia">Altri comuni</option>
+    </select>
+  </nav>
+
+  <main id="contenuto"></main>
+
+  <footer>
+    <p>Notizie Benevento è un report automatico: le notizie appartengono ai giornali citati. Qui ci sono solo un riassunto breve e i link agli articoli originali, da leggere per i dettagli.</p>
+    <p>Una notizia compare solo se la riportano almeno due testate diverse oppure una fonte ufficiale (ANAS, INGV, Comuni, Prefettura, forze dell'ordine). Le accuse sono riportate con le parole usate dai giornali. Aggiornato ogni ora, dalle 6 alle 23.</p>
+  </footer>
+</div>
+
+<script>
+(function () {
+  var NOMI_CAT = { strade: "Strade", cronaca: "Cronaca", meteo: "Meteo e terremoti", politica: "Politica", eventi: "Eventi", altro: "Altro" };
+  var dati = { notizie: [], approfondimenti: [] };
+  var filtroCat = "";
+  var filtroZona = "";
+  var TZ = "Europe/Rome";
+
+  function testo(s) { return document.createTextNode(s == null ? "" : String(s)); }
+  function el(tag, cls, figli) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    (figli || []).forEach(function (f) { e.appendChild(typeof f === "string" ? testo(f) : f); });
+    return e;
+  }
+  function linkSicuro(url, etichetta) {
+    var a = document.createElement("a");
+    if (/^https?:\/\//i.test(url || "")) { a.href = url; a.target = "_blank"; a.rel = "noopener nofollow"; }
+    a.appendChild(testo(etichetta));
+    return a;
+  }
+  function soloData(iso) {
+    var d = new Date(String(iso).slice(0, 10) + "T12:00:00Z");
+    return isNaN(d) ? "" : d.toLocaleDateString("it-IT", { timeZone: TZ, day: "numeric", month: "short" });
+  }
+  // Un orario solo-data ("2026-10-19") mostra il giorno, mai un'ora inventata.
+  function soloOra(iso) {
+    if (/^\d{4}-\d{2}-\d{2}$/.test(String(iso))) return soloData(iso);
+    var d = new Date(iso);
+    return isNaN(d) ? "" : d.toLocaleTimeString("it-IT", { timeZone: TZ, hour: "2-digit", minute: "2-digit" });
+  }
+  function quando(iso) {
+    if (/^\d{4}-\d{2}-\d{2}$/.test(String(iso))) return soloData(iso);
+    var d = new Date(iso);
+    if (isNaN(d)) return "";
+    var g = function (x) { return x.toLocaleDateString("it-IT", { timeZone: TZ }); };
+    if (g(d) === g(new Date())) return "oggi " + soloOra(iso);
+    return d.toLocaleDateString("it-IT", { timeZone: TZ, day: "numeric", month: "short" }) + " " + soloOra(iso);
+  }
+  function linkArticolo(n) { return "#articolo/" + encodeURIComponent(n.id); }
+  function linkAppro(a) { return "#approfondimento/" + encodeURIComponent(a.id); }
+
+
+  // Condividi. Le pagine hanno la fila di pulsanti tondi; le schede un piccolo «Condividi» che sul telefono apre il menù
+  // del telefono, altrimenti mostra la stessa fila.
+  var ICONE = {"whatsapp": "M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z", "facebook": "M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z", "telegram": "M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z", "x": "M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"};
+  var PIU = '<path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M12 3v12"/><path d="M7 8l5-5 5 5"/>';
+  var LINK = '<path d="M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1 1"/><path d="M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1-1"/>';
+  var MAIL = '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/>';
+  function svg(contenuto, piena) {
+    var s = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    s.setAttribute("viewBox", "0 0 24 24");
+    s.setAttribute("aria-hidden", "true");
+    s.innerHTML = piena ? '<path d="' + contenuto + '"/>' : contenuto;
+    return s;
+  }
+  function tondo(classe, etichetta, icona, href) {
+    var a = document.createElement(href ? "a" : "button");
+    a.className = "tondo " + classe;
+    a.title = etichetta;
+    a.setAttribute("aria-label", etichetta);
+    if (href) { a.href = href; a.target = "_blank"; a.rel = "noopener"; } else { a.type = "button"; }
+    a.appendChild(icona);
+    return a;
+  }
+  function filaCondividi(titolo, hash, conEtichetta) {
+    var url = location.origin + location.pathname + hash;
+    var testoMsg = titolo + " – Notizie Benevento";
+    var box = el("div", "condividi", []);
+    if (conEtichetta) box.appendChild(el("span", "etich", ["Condividi"]));
+    if (navigator.share) {
+      var ap = tondo("ap", "Altre app", svg(PIU));
+      ap.addEventListener("click", function () { navigator.share({ title: testoMsg, text: testoMsg, url: url }).catch(function () {}); });
+      box.appendChild(ap);
+    }
+    box.appendChild(tondo("wa", "WhatsApp", svg(ICONE.whatsapp, true), "https://wa.me/?text=" + encodeURIComponent(testoMsg + "\n" + url)));
+    box.appendChild(tondo("fb", "Facebook", svg(ICONE.facebook, true), "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(url)));
+    box.appendChild(tondo("tg", "Telegram", svg(ICONE.telegram, true), "https://t.me/share/url?url=" + encodeURIComponent(url) + "&text=" + encodeURIComponent(testoMsg)));
+    box.appendChild(tondo("xx", "X", svg(ICONE.x, true), "https://x.com/intent/post?text=" + encodeURIComponent(testoMsg) + "&url=" + encodeURIComponent(url)));
+    var ml = tondo("ml", "Email", svg(MAIL), "mailto:?subject=" + encodeURIComponent(testoMsg) + "&body=" + encodeURIComponent(url));
+    ml.removeAttribute("target");
+    box.appendChild(ml);
+    var cp = tondo("cp", "Copia link", svg(LINK));
+    var avviso = el("span", "avviso-copia", []);
+    cp.addEventListener("click", function () {
+      var fatto = function () { avviso.textContent = "Link copiato"; setTimeout(function () { avviso.textContent = ""; }, 2000); };
+      if (navigator.clipboard) navigator.clipboard.writeText(url).then(fatto, function () { avviso.textContent = url; });
+      else avviso.textContent = url;
+    });
+    box.appendChild(cp);
+    box.appendChild(avviso);
+    return box;
+  }
+  var popAperto = null;
+  function chiudiPop() {
+    if (!popAperto) return;
+    popAperto.fila.remove();
+    popAperto.bottone.setAttribute("aria-expanded", "false");
+    popAperto = null;
+  }
+  document.addEventListener("click", function (e) { if (popAperto && !popAperto.wrap.contains(e.target)) chiudiPop(); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") chiudiPop(); });
+  // Un solo pulsante «Condividi»: al clic compaiono le icone; spariscono al secondo clic o cliccando altrove.
+  function condividi(titolo, hash, grande) {
+    var wrap = el("div", "cond-wrap", []);
+    var b = el("button", "apri-condividi" + (grande ? " grande" : ""), []);
+    b.type = "button";
+    b.setAttribute("aria-expanded", "false");
+    b.appendChild(svg(PIU));
+    b.appendChild(testo("Condividi"));
+    b.addEventListener("click", function () {
+      if (popAperto && popAperto.wrap === wrap) { chiudiPop(); return; }
+      chiudiPop();
+      var fila = filaCondividi(titolo, hash, false);
+      fila.classList.add("cond-pop");
+      wrap.appendChild(fila);
+      b.setAttribute("aria-expanded", "true");
+      popAperto = { wrap: wrap, fila: fila, bottone: b };
+    });
+    wrap.appendChild(b);
+    return wrap;
+  }
+
+  // Ascolta: legge il testo con la voce italiana del dispositivo (gratis, niente server).
+  function pulisci(t) { return String(t || "").replace(/\s+/g, " ").trim(); }
+  function testoArticolo(n) {
+    var a = n.articolo || {}, p = [n.titolo + "."];
+    if (a.cosa) p.push(a.cosa);
+    (a.cronologia || []).forEach(function (c) { p.push((c.data ? c.data + ": " : "") + c.fatto); });
+    if ((a.non_si_sa || []).length) p.push("Cosa non si sa ancora. " + a.non_si_sa.join(" "));
+    return p;
+  }
+  function testoApprofondimento(ap) {
+    var p = [ap.titolo + "."];
+    if (ap.sommario) p.push(ap.sommario);
+    if ((ap.in_breve || []).length) p.push("In breve. " + ap.in_breve.map(function (r) { return r.testo; }).join(" "));
+    (ap.sezioni || []).forEach(function (s) {
+      p.push(s.titolo + ".");
+      (s.paragrafi || []).forEach(function (r) { p.push(r.testo); });
+      (s.punti || []).forEach(function (r) { p.push(r.testo); });
+    });
+    (ap.domande || []).forEach(function (q) { p.push(q.d + " " + q.r); });
+    return p;
+  }
+  function vocePreferita() {
+    var voci = (window.speechSynthesis && speechSynthesis.getVoices()) || [];
+    var it = voci.filter(function (v) { return /^it/i.test(v.lang); });
+    var migliori = ["Alice", "Federica", "Elsa", "Isabella", "Google italiano", "Paola", "Luca"];
+    for (var i = 0; i < migliori.length; i++) {
+      var trovata = it.filter(function (v) { return v.name.indexOf(migliori[i]) >= 0; });
+      var premium = trovata.filter(function (v) { return /premium|enhanced|natural/i.test(v.name); });
+      if (premium.length) return premium[0];
+      if (trovata.length) return trovata[0];
+    }
+    return it[0] || null;
+  }
+  function ascolta(parti) {
+    var box = el("div", "ascolta", []);
+    if (!("speechSynthesis" in window)) return box; // senza voce resta solo Condividi
+    var play = el("button", "", ["▶ Ascolta"]);
+    var stop = el("button", "secondario", ["■ Stop"]);
+    var stato = el("span", "stato-voce", []);
+    play.type = stop.type = "button";
+    stop.style.display = "none";
+    var inCorso = false;
+    function fine() { inCorso = false; play.textContent = "▶ Ascolta"; stop.style.display = "none"; stato.textContent = ""; }
+    play.addEventListener("click", function () {
+      if (inCorso && !speechSynthesis.paused) { speechSynthesis.pause(); play.textContent = "▶ Riprendi"; stato.textContent = "In pausa"; return; }
+      if (inCorso && speechSynthesis.paused) { speechSynthesis.resume(); play.textContent = "❚❚ Pausa"; stato.textContent = "Sto leggendo…"; return; }
+      speechSynthesis.cancel();
+      // Frasi corte: alcuni browser si fermano da soli sui testi lunghi.
+      var frasi = [];
+      parti.map(pulisci).filter(Boolean).forEach(function (t) {
+        (t.match(/[^.!?;]+[.!?;]*/g) || [t]).forEach(function (f) { if (pulisci(f)) frasi.push(pulisci(f)); });
+      });
+      var voce = vocePreferita();
+      frasi.forEach(function (f, i) {
+        var u = new SpeechSynthesisUtterance(f);
+        u.lang = "it-IT";
+        if (voce) u.voice = voce;
+        u.rate = 1;
+        if (i === frasi.length - 1) u.onend = fine;
+        speechSynthesis.speak(u);
+      });
+      inCorso = true;
+      play.textContent = "❚❚ Pausa";
+      stop.style.display = "";
+      stato.textContent = "Sto leggendo…";
+    });
+    stop.addEventListener("click", function () { speechSynthesis.cancel(); fine(); });
+    box.appendChild(play); box.appendChild(stop); box.appendChild(stato);
+    return box;
+  }
+  if ("speechSynthesis" in window) speechSynthesis.getVoices();
+
+  function rigaFonti(n) {
+    var r = el("div", "fonti", []);
+    var lista = Array.isArray(n.fonti) ? n.fonti : [];
+    if (n.stato === "ufficiale") r.appendChild(el("span", "ufficiale", ["Fonte ufficiale"]));
+    else r.appendChild(el("span", "conferma", ["✓ " + lista.length + " fonti"]));
+    r.appendChild(testo(" · "));
+    lista.forEach(function (f, i) {
+      if (i > 0) r.appendChild(testo(i === lista.length - 1 ? " e " : ", "));
+      r.appendChild(linkSicuro(f.url, f.nome || "fonte"));
+    });
+    if (n.pubblicato) r.appendChild(testo(" · " + quando(n.pubblicato)));
+    return r;
+  }
+
+  function scheda(n, classe) {
+    var art = el("article", "notizia" + (classe ? " " + classe : ""), []);
+    if (n.id) art.setAttribute("data-id", n.id);
+    var occ = el("div", "occhiello", [NOMI_CAT[n.categoria] || "Altro"]);
+    if (n.luogo) occ.appendChild(el("span", "luogo", [n.luogo]));
+    art.appendChild(occ);
+    var h = el("h2", "", []);
+    if (n.articolo && n.id) {
+      var a = el("a", "", [n.titolo]);
+      a.href = linkArticolo(n);
+      h.appendChild(a);
+    } else {
+      h.appendChild(testo(n.titolo));
+    }
+    art.appendChild(h);
+    if (n.sintesi) art.appendChild(el("p", "sintesi", [n.sintesi]));
+    art.appendChild(rigaFonti(n));
+    if (n.nota) art.appendChild(el("div", "nota", [n.nota]));
+    if (n.articolo && n.id) art.appendChild(condividi(n.titolo, linkArticolo(n)));
+    return art;
+  }
+
+  function schedaAppro(ap) {
+    var art = el("article", "notizia", []);
+    art.appendChild(el("div", "occhiello", ["Approfondimento"]));
+    var h = el("h2", "", []);
+    var a = el("a", "", [ap.titolo]);
+    a.href = linkAppro(ap);
+    a.appendChild(el("span", "segno", [" ›"]));
+    h.appendChild(a);
+    art.appendChild(h);
+    if (ap.sommario) art.appendChild(el("p", "sommario-breve", [ap.sommario]));
+    var n = Array.isArray(ap.fonti) ? ap.fonti.length : 0;
+    art.appendChild(el("div", "fonti", [el("span", "conferma", ["✓ " + n + " fonti confrontate"]), " · aggiornato " + quando(ap.aggiornato)]));
+    art.appendChild(condividi(ap.titolo, linkAppro(ap)));
+    return art;
+  }
+
+  function filtrate() {
+    return (dati.notizie || []).filter(function (n) {
+      return (!filtroCat || n.categoria === filtroCat) && (!filtroZona || n.zona === filtroZona);
+    }).sort(function (a, b) { return String(b.pubblicato).localeCompare(String(a.pubblicato)); });
+  }
+  function peso(n) { return (n.rilevante ? 100 : 0) + (Array.isArray(n.fonti) ? n.fonti.length : 0); }
+
+  function disegnaHome(box) {
+    var lista = filtrate();
+    if (!lista.length) {
+      box.appendChild(el("p", "vuoto", [(dati.notizie || []).length ? "Nessuna notizia con questi filtri." : "Il primo aggiornamento arriva a breve."]));
+      return;
+    }
+    var striscia = el("section", "ultimora", []);
+    lista.slice(0, 5).forEach(function (n) {
+      var a = el("a", "", []);
+      a.href = n.articolo ? linkArticolo(n) : "#";
+      var q = quando(n.pubblicato);
+      a.appendChild(el("div", "ora", [q.indexOf("oggi ") === 0 ? q.slice(5) : soloData(n.pubblicato)]));
+      a.appendChild(el("div", "tit", [n.titolo]));
+      striscia.appendChild(a);
+    });
+    box.appendChild(striscia);
+
+    var apertura = lista.slice().sort(function (a, b) { return peso(b) - peso(a); })[0];
+    var resto = lista.filter(function (n) { return n !== apertura; });
+    var griglia = el("section", "griglia", []);
+    var c1 = el("div", "col", []), c2 = el("div", "col", []), c3 = el("div", "col laterale", []);
+    c1.appendChild(scheda(apertura, "apertura"));
+    resto.forEach(function (n, i) { (i % 2 === 0 ? c2 : c1).appendChild(scheda(n)); });
+    c3.appendChild(el("h3", "titolo-col", ["Approfondimenti"]));
+    var appro = dati.approfondimenti || [];
+    if (appro.length) appro.forEach(function (ap) { c3.appendChild(schedaAppro(ap)); });
+    else c3.appendChild(el("p", "vuoto", ["Nessun approfondimento per ora."]));
+    griglia.appendChild(c1); griglia.appendChild(c2); griglia.appendChild(c3);
+    box.appendChild(griglia);
+  }
+
+  // Nomi delle fonti citate in una frase, con i link presi dall'elenco fonti.
+  function citazione(nomi, elencoFonti) {
+    var span = el("span", "cita", []);
+    if (!Array.isArray(nomi) || !nomi.length) return span;
+    span.appendChild(testo(" ("));
+    nomi.forEach(function (nome, i) {
+      if (i > 0) span.appendChild(testo(", "));
+      var f = (elencoFonti || []).filter(function (x) { return x.nome === nome; })[0];
+      span.appendChild(f ? linkSicuro(f.url, nome) : testo(nome));
+    });
+    span.appendChild(testo(")"));
+    return span;
+  }
+  function frase(tag, r, fonti) {
+    var e = el(tag, "", [typeof r === "string" ? r : (r.testo || "")]);
+    if (r && r.fonti) e.appendChild(citazione(r.fonti, fonti));
+    return e;
+  }
+  function sezioneElenco(box, titolo, righe, fonti) {
+    if (!Array.isArray(righe) || !righe.length) return;
+    box.appendChild(el("h3", "", [titolo]));
+    var ul = el("ul", "", []);
+    righe.forEach(function (r) { ul.appendChild(frase("li", r, fonti)); });
+    box.appendChild(ul);
+  }
+  function cronologia(box, righe, fonti, titolo) {
+    if (!Array.isArray(righe) || !righe.length) return;
+    box.appendChild(el("h3", "", [titolo || "Giorno per giorno"]));
+    var ol = el("ol", "cronologia", []);
+    righe.forEach(function (c) {
+      var li = el("li", "", []);
+      li.appendChild(el("span", "giorno", [c.data || ""]));
+      var d = el("span", "", [c.fatto || ""]);
+      d.appendChild(citazione(c.fonti, fonti));
+      li.appendChild(d);
+      ol.appendChild(li);
+    });
+    box.appendChild(ol);
+  }
+  function elencoFonti(box, fonti) {
+    if (!fonti.length) return;
+    box.appendChild(el("h3", "", ["Fonti"]));
+    var ul = el("ul", "elenco-fonti", []);
+    fonti.forEach(function (f) {
+      var li = el("li", "", []);
+      li.appendChild(linkSicuro(f.url, f.nome + (f.titolo ? ": " + f.titolo : "")));
+      if (f.data) li.appendChild(testo(" · " + f.data));
+      ul.appendChild(li);
+    });
+    box.appendChild(ul);
+  }
+  function testataPagina(art, occhiello, luogo, titolo) {
+    var ind = el("a", "indietro", ["← Tutte le notizie"]);
+    ind.href = "#";
+    art.appendChild(ind);
+    var occ = el("div", "occhiello", [occhiello]);
+    if (luogo) occ.appendChild(el("span", "luogo", [luogo]));
+    art.appendChild(occ);
+    art.appendChild(el("h1", "", [titolo]));
+  }
+
+  function disegnaArticolo(box, n) {
+    var a = n.articolo;
+    var fonti = Array.isArray(a.fonti) ? a.fonti : [];
+    var art = el("article", "appro", []);
+    testataPagina(art, NOMI_CAT[n.categoria] || "Altro", n.luogo, n.titolo);
+    art.appendChild(el("div", "meta", [(n.pubblicato ? quando(n.pubblicato) + " · " : "") + fonti.length + (fonti.length === 1 ? " fonte" : " fonti confrontate")]));
+    var az = ascolta(testoArticolo(n));
+    az.appendChild(condividi(n.titolo, linkArticolo(n), true));
+    art.appendChild(az);
+    if (a.cosa) { art.appendChild(el("h3", "", ["Cosa è successo"])); art.appendChild(el("p", "", [a.cosa])); }
+    cronologia(art, a.cronologia, fonti, "I fatti");
+    sezioneElenco(art, "Su cosa concordano i giornali", a.concordano, fonti);
+    sezioneElenco(art, "Su cosa non concordano", a.divergono, fonti);
+    sezioneElenco(art, "Cosa non si sa ancora", a.non_si_sa, fonti);
+    var ap = (dati.approfondimenti || []).filter(function (x) { return (x.collegate || []).indexOf(n.id) >= 0; })[0];
+    if (ap) {
+      art.appendChild(el("h3", "", ["Approfondimento"]));
+      var p = el("p", "collegate", []);
+      var l = el("a", "", [ap.titolo + " ›"]);
+      l.href = linkAppro(ap);
+      p.appendChild(l);
+      art.appendChild(p);
+    }
+    elencoFonti(art, fonti);
+    box.appendChild(art);
+  }
+
+  function disegnaApprofondimento(box, ap) {
+    var fonti = Array.isArray(ap.fonti) ? ap.fonti : [];
+    var art = el("article", "appro", []);
+    testataPagina(art, "Approfondimento", ap.luogo, ap.titolo);
+    if (ap.sommario) art.appendChild(el("p", "sommario", [ap.sommario]));
+    art.appendChild(el("div", "meta", ["Aggiornato " + quando(ap.aggiornato) + " · " + fonti.length + " fonti confrontate"]));
+    var az = ascolta(testoApprofondimento(ap));
+    az.appendChild(condividi(ap.titolo, linkAppro(ap), true));
+    art.appendChild(az);
+    if (Array.isArray(ap.in_breve) && ap.in_breve.length) {
+      var ib = el("div", "inbreve", [el("strong", "", ["In breve"])]);
+      var ul = el("ul", "", []);
+      ap.in_breve.forEach(function (r) { ul.appendChild(frase("li", r, fonti)); });
+      ib.appendChild(ul);
+      art.appendChild(ib);
+    }
+    (ap.sezioni || []).forEach(function (s) {
+      art.appendChild(el("h3", "", [s.titolo || ""]));
+      (s.paragrafi || []).forEach(function (p) { art.appendChild(frase("p", p, fonti)); });
+      if (Array.isArray(s.punti)) {
+        var u = el("ul", "", []);
+        s.punti.forEach(function (r) { u.appendChild(frase("li", r, fonti)); });
+        art.appendChild(u);
+      }
+    });
+    if (Array.isArray(ap.domande) && ap.domande.length) {
+      art.appendChild(el("h3", "", ["Domande e risposte"]));
+      ap.domande.forEach(function (q) {
+        art.appendChild(el("p", "domanda", [q.d || ""]));
+        art.appendChild(frase("p", { testo: q.r, fonti: q.fonti }, fonti));
+      });
+    }
+    cronologia(art, ap.cronologia, fonti);
+    sezioneElenco(art, "Cosa non si sa ancora", ap.non_si_sa, fonti);
+    var coll = (ap.collegate || []).map(function (id) { return (dati.notizie || []).filter(function (n) { return n.id === id; })[0]; }).filter(Boolean);
+    if (coll.length) {
+      art.appendChild(el("h3", "", ["Le notizie collegate"]));
+      var uc = el("ul", "collegate", []);
+      coll.forEach(function (n) { var li = el("li", "", []); var l = el("a", "", [n.titolo]); l.href = linkArticolo(n); li.appendChild(l); uc.appendChild(li); });
+      art.appendChild(uc);
+    }
+    elencoFonti(art, fonti);
+    box.appendChild(art);
+  }
+
+  function disegna() {
+    var box = document.getElementById("contenuto");
+    var menu = document.getElementById("menu");
+    box.textContent = "";
+    var m = location.hash.match(/^#(articolo|approfondimento)\/(.+)$/);
+    if (m) {
+      var id = decodeURIComponent(m[2]);
+      if (m[1] === "articolo") {
+        var n = (dati.notizie || []).filter(function (x) { return x.id === id && x.articolo; })[0];
+        if (n) { menu.style.display = "none"; disegnaArticolo(box, n); window.scrollTo(0, 0); return; }
+      } else {
+        var ap = (dati.approfondimenti || []).filter(function (x) { return x.id === id; })[0];
+        if (ap) { menu.style.display = "none"; disegnaApprofondimento(box, ap); window.scrollTo(0, 0); return; }
+      }
+    }
+    menu.style.display = "";
+    disegnaHome(box);
+  }
+
+  function stato() {
+    document.getElementById("data").textContent =
+      new Date().toLocaleDateString("it-IT", { timeZone: TZ, weekday: "long", day: "numeric", month: "long", year: "numeric" });
+    var s = document.getElementById("stato");
+    s.textContent = "";
+    if (!dati.aggiornato) { s.appendChild(testo("In attesa del primo aggiornamento")); return; }
+    s.appendChild(testo("Aggiornato " + quando(dati.aggiornato)));
+    if (dati.giornali_letti) { s.appendChild(el("br", "", [])); s.appendChild(testo(dati.giornali_letti + " giornali letti")); }
+  }
+
+  document.querySelectorAll(".menu button").forEach(function (b) {
+    b.addEventListener("click", function () {
+      filtroCat = b.getAttribute("data-cat");
+      document.querySelectorAll(".menu button").forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
+      disegna();
+    });
+  });
+  document.getElementById("zona").addEventListener("change", function (e) { filtroZona = e.target.value; disegna(); });
+  window.addEventListener("hashchange", function () { if ("speechSynthesis" in window) speechSynthesis.cancel(); disegna(); });
+
+  fetch("notizie.json?t=" + Date.now(), { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (j) { dati = j || { notizie: [] }; stato(); disegna(); })
+    .catch(function () { stato(); document.getElementById("stato").textContent = "Notizie non disponibili, riprova tra poco"; disegna(); });
+})();
+</script>
+</body>
+</html>

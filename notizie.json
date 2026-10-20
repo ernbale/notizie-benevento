@@ -1,0 +1,1113 @@
+{
+ "aggiornato": "2026-10-20T08:45:00+02:00",
+ "giornali_letti": 8,
+ "notizie": [
+  {
+   "id": "tir-appia-telesina",
+   "titolo": "Caro gasolio, tir fermi sull'Appia a Tufara Valle e al casello di Castel del Lago",
+   "sintesi": "Dal 19 ottobre gli autotrasportatori protestano contro il prezzo del gasolio: camion fermi sulla statale Appia e all'ingresso dell'autostrada a Castel del Lago, auto che passano a rilento. Nella notte tra il 19 e il 20 blocchi anche sulla Telesina a San Salvatore Telesino.",
+   "categoria": "strade",
+   "zona": "provincia",
+   "luogo": "Tufara Valle",
+   "pubblicato": "2026-10-20T07:41:00+02:00",
+   "stato": "confermata",
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/441543/protesta-caro-carburanti-continuano-i-blocchi-nel-sannio.shtml"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/19/caro-carburanti-la-protesta-nel-sannio-camion-fermi-sullappia-e-a-castel-del-lago-da-giovedi-si-mobilitano-gli-agricoltori/"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/20/la-protesta-degli-autotrasportatori-arriva-nel-sannio-blocchi-sullappia-e-a-castel-del-lago-cosi-non-possiamo-andare-avanti/"
+    }
+   ],
+   "articolo": {
+    "aggiornato": "2026-10-20T08:28:00+02:00",
+    "cosa": "Gli autotrasportatori protestano contro l'aumento dei prezzi di gasolio e benzina. Nel Sannio i blocchi sono cominciati lunedì 19 ottobre sulla statale Appia e al casello di Castel del Lago, e si sono estesi nella notte alla Telesina. Gli effetti si vedono nei supermercati e ai distributori. Da giovedì 22 si aggiungono gli agricoltori.",
+    "cronologia": [
+     {
+      "data": "18 ottobre",
+      "fatto": "A San Marco dei Cavoti gli imprenditori agricoli si riuniscono per decidere le proteste.",
+      "fonti": [
+       "Ottopagine (19/10)",
+       "NTR24"
+      ]
+     },
+     {
+      "data": "19 ottobre",
+      "fatto": "Dalle prime ore del mattino tir fermi sulla statale Appia all'altezza di Tufara Valle e all'imbocco dell'autostrada a Castel del Lago. Le auto passano lentamente; i manifestanti chiedono agli altri camionisti di aderire.",
+      "fonti": [
+       "Ottopagine (19/10)",
+       "NTR24",
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "data": "19 ottobre",
+      "fatto": "I mezzi dell'Asia per la raccolta rifiuti in fila per il rifornimento al distributore di contrada San Vitale. Alcuni distributori restano senza benzina e gasolio.",
+      "fonti": [
+       "Ottopagine (19/10)",
+       "NTR24"
+      ]
+     },
+     {
+      "data": "notte 19-20",
+      "fatto": "Blocchi anche sulla Telesina, soprattutto a San Salvatore Telesino; code sulla Telesina e sull'Appia. Forze dell'ordine sul posto per far scorrere il traffico.",
+      "fonti": [
+       "Ottopagine (20/10)"
+      ]
+     },
+     {
+      "data": "22 ottobre",
+      "fatto": "Annunciati i presidi degli agricoltori sulla Sannitica, sulla statale 212 e a Benevento in zona Ponte delle Tavole.",
+      "fonti": [
+       "Ottopagine (19/10)",
+       "NTR24"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "La causa è il prezzo di gasolio e benzina.",
+      "fonti": [
+       "Ottopagine (19/10)",
+       "NTR24",
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "I punti dei blocchi nel Sannio sono la statale Appia a Tufara Valle e il casello di Castel del Lago.",
+      "fonti": [
+       "Ottopagine (19/10)",
+       "NTR24",
+       "Il Sannio Quotidiano"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Quanto durerà: i manifestanti parlano di protesta a oltranza, fino a una risposta del Governo, senza una data di fine.",
+     "Quanti mezzi sono coinvolti: nessuno dei giornali letti dà un numero.",
+     "I blocchi sulla Telesina a San Salvatore Telesino sono riportati per ora da un solo giornale."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine (19/10)",
+      "titolo": "Caro carburante. Blocco dei camion sulla Statale Appia e a Castel del Lago",
+      "url": "https://www.ottopagine.it/bn/cronaca/441432/caro-carburante-blocco-dei-camion-sulla-statale-appia-e-a-castel-del-lago.shtml",
+      "data": "19 ott, 08:48"
+     },
+     {
+      "nome": "Ottopagine (20/10)",
+      "titolo": "Protesta caro carburanti. Continuano i blocchi nel Sannio",
+      "url": "https://www.ottopagine.it/bn/cronaca/441543/protesta-caro-carburanti-continuano-i-blocchi-nel-sannio.shtml",
+      "data": "20 ott, 07:41"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Caro carburanti, la protesta nel Sannio: camion fermi sull'Appia e a Castel del Lago",
+      "url": "https://www.ntr24.tv/2026/10/19/caro-carburanti-la-protesta-nel-sannio-camion-fermi-sullappia-e-a-castel-del-lago-da-giovedi-si-mobilitano-gli-agricoltori/",
+      "data": "19 ott"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "La protesta degli autotrasportatori arriva nel Sannio, blocchi sull'Appia e a Castel del Lago",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/20/la-protesta-degli-autotrasportatori-arriva-nel-sannio-blocchi-sullappia-e-a-castel-del-lago-cosi-non-possiamo-andare-avanti/",
+      "data": "20 ott"
+     }
+    ]
+   },
+   "rilevante": true
+  },
+  {
+   "id": "scaffali-vuoti",
+   "titolo": "Sciopero dei tir, mancano frutta, verdura e carne in alcuni supermercati del Sannio",
+   "sintesi": "Con i camion fermi, in diversi supermercati di Benevento e provincia i reparti dei prodotti freschi restano sguarniti. Alcuni distributori hanno finito benzina e gasolio.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-20",
+   "stato": "confermata",
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/19/benevento-scaffali-vuoti-e-carenze-di-prodotti-freschi-nei-supermarket-si-fa-sentire-lo-sciopero-degli-autotrasportatori/"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/20/blocco-tir-scorte-esaurite-come-durante-il-lockdown-cresce-la-preoccupazione/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/441432/caro-carburante-blocco-dei-camion-sulla-statale-appia-e-a-castel-del-lago.shtml"
+    }
+   ],
+   "articolo": {
+    "aggiornato": "2026-10-20T08:28:00+02:00",
+    "cosa": "Il fermo degli autotrasportatori contro il caro gasolio blocca le consegne ai supermercati. Nel Sannio mancano soprattutto i prodotti freschi.",
+    "cronologia": [
+     {
+      "data": "19 ottobre",
+      "fatto": "Aumentano a Benevento i supermercati con scaffali vuoti per il mancato rifornimento; molti distributori senza benzina e gasolio.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "data": "19 ottobre",
+      "fatto": "Nei reparti mancano frutta, verdura, carne e alcuni prodotti di prima necessità; c'è chi gira più supermercati.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "data": "20 ottobre",
+      "fatto": "Mancano i prodotti ortofrutticoli e, con il passare dei giorni, anche altri alimentari.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Mancano soprattutto i prodotti freschi, a partire da frutta e verdura.",
+      "fonti": [
+       "NTR24",
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "La causa è il fermo dei tir contro il caro gasolio.",
+      "fonti": [
+       "NTR24",
+       "Il Sannio Quotidiano",
+       "Ottopagine"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "Quali supermercati sono coinvolti e in che misura: i giornali non danno numeri.",
+     "Quando torneranno regolari le consegne."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Caro carburante. Blocco dei camion sulla Statale Appia e a Castel del Lago",
+      "url": "https://www.ottopagine.it/bn/cronaca/441432/caro-carburante-blocco-dei-camion-sulla-statale-appia-e-a-castel-del-lago.shtml",
+      "data": "19 ott, 08:48"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Benevento, scaffali vuoti e carenze di prodotti freschi nei supermarket",
+      "url": "https://www.ntr24.tv/2026/10/19/benevento-scaffali-vuoti-e-carenze-di-prodotti-freschi-nei-supermarket-si-fa-sentire-lo-sciopero-degli-autotrasportatori/",
+      "data": "19 ott"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Blocco tir, scorte esaurite come durante il lockdown",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/20/blocco-tir-scorte-esaurite-come-durante-il-lockdown-cresce-la-preoccupazione/",
+      "data": "20 ott"
+     }
+    ]
+   }
+  },
+  {
+   "id": "agricoltori-22-ottobre",
+   "titolo": "Dal 22 ottobre presidi degli agricoltori sulla Sannitica, sulla statale 212 e a Ponte delle Tavole",
+   "sintesi": "Gli agricoltori sanniti si uniscono alla protesta contro il caro gasolio e i costi di produzione. Da giovedì presidi a oltranza, senza una data di fine.",
+   "categoria": "strade",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-19T09:33:00+02:00",
+   "stato": "confermata",
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/441436/caro-carburanti-anche-gli-agricoltori-si-mobilitano-da-giovedi-proteste.shtml"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/19/caro-carburanti-la-protesta-nel-sannio-camion-fermi-sullappia-e-a-castel-del-lago-da-giovedi-si-mobilitano-gli-agricoltori/"
+    }
+   ],
+   "articolo": {
+    "aggiornato": "2026-10-20T08:28:00+02:00",
+    "cosa": "Da giovedì 22 ottobre agricoltori e autotrasportatori del Sannio avviano una protesta contro il prezzo del gasolio e i costi di produzione, a oltranza. Lo slogan è «La Campania si compatta».",
+    "cronologia": [
+     {
+      "data": "18 ottobre",
+      "fatto": "Riunione degli imprenditori agricoli a San Marco dei Cavoti per organizzare la protesta.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "data": "22 ottobre",
+      "fatto": "Presidi previsti sulla Sannitica (statale 87), sulla statale 212 e a Benevento, in zona Ponte delle Tavole.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24"
+      ]
+     },
+     {
+      "data": "22 ottobre",
+      "fatto": "Lo stesso giorno manifestazione di Coldiretti Campania a Napoli.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Si comincia giovedì 22 ottobre, sulla Sannitica, sulla statale 212 e a Ponte delle Tavole.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "La protesta è a oltranza, senza una data di fine.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "Se i presidi bloccheranno del tutto il traffico o lo rallenteranno soltanto.",
+     "In quali orari."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Caro carburanti, anche gli agricoltori si mobilitano: da giovedì proteste",
+      "url": "https://www.ottopagine.it/bn/cronaca/441436/caro-carburanti-anche-gli-agricoltori-si-mobilitano-da-giovedi-proteste.shtml",
+      "data": "19 ott, 09:33"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Caro carburanti, la protesta nel Sannio: camion fermi sull'Appia e a Castel del Lago",
+      "url": "https://www.ntr24.tv/2026/10/19/caro-carburanti-la-protesta-nel-sannio-camion-fermi-sullappia-e-a-castel-del-lago-da-giovedi-si-mobilitano-gli-agricoltori/",
+      "data": "19 ott"
+     }
+    ]
+   }
+  },
+  {
+   "id": "mozione-caro-carburanti",
+   "titolo": "Caro carburanti, mozione in Consiglio regionale: chiesto un fondo straordinario per autotrasporto e agricoltura",
+   "sintesi": "Il gruppo Casa Riformista–Italia Viva–Noi di Centro, primo firmatario il consigliere sannita Pellegrino Mastella, chiede alla Regione un fondo straordinario, un tavolo permanente e un intervento del Governo sulle accise.",
+   "categoria": "politica",
+   "zona": "benevento",
+   "luogo": "Napoli, Consiglio regionale",
+   "pubblicato": "2026-10-19T16:16:00+02:00",
+   "stato": "confermata",
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/politica/441493/caro-carburanti-mozione-casa-riformista-italia-viva-noi-di-centro-in-regione.shtml"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/19/caro-carburanti-allarme-in-campania-casa-riformista-chiede-un-fondo-straordinario/"
+    }
+   ],
+   "articolo": {
+    "aggiornato": "2026-10-20T08:28:00+02:00",
+    "cosa": "Una mozione urgente presentata in Consiglio regionale della Campania chiede misure per le imprese di autotrasporto e le aziende agricole colpite dal prezzo dei carburanti.",
+    "cronologia": [
+     {
+      "data": "19 ottobre",
+      "fatto": "Presentata la mozione: primo firmatario Pellegrino Mastella, con Vincenzo Alaia, Giuseppe Barra, Ciro Buonajuto e Pietro Smarrazzo.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "La richiesta principale è un fondo straordinario regionale per il caro carburanti.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "Quando la mozione sarà discussa e votata."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Caro carburanti: mozione Casa Riformista–Italia Viva–Noi di Centro in Regione",
+      "url": "https://www.ottopagine.it/bn/politica/441493/caro-carburanti-mozione-casa-riformista-italia-viva-noi-di-centro-in-regione.shtml",
+      "data": "19 ott, 16:16"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Caro carburanti, allarme in Campania: Casa Riformista chiede un fondo straordinario",
+      "url": "https://www.ntr24.tv/2026/10/19/caro-carburanti-allarme-in-campania-casa-riformista-chiede-un-fondo-straordinario/",
+      "data": "19 ott"
+     }
+    ]
+   }
+  },
+  {
+   "id": "bus-linea-5",
+   "titolo": "Benevento, giovane in scooter minaccia il personale di un autobus urbano: si sente male un controllore",
+   "sintesi": "Lunedì 19 ottobre, nel primo pomeriggio, un giovane in scooter ha affiancato un autobus della linea urbana 05 di AIR Campania, ha insultato alcuni passeggeri e minacciato il personale. Un controllore dei biglietti si è sentito male.",
+   "categoria": "cronaca",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-20",
+   "stato": "confermata",
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/arriva-in-motorino-insulta-i-passeggeri-e-minaccia-il-personale-del-bus-verificatore-si-sente-male/"
+    },
+    {
+     "nome": "LabTV",
+     "url": "https://www.labtv.net/cronaca/2026/10/19/benevento-minacce-al-personale-air-campania-su-linea-urbana-verificatore-accusa-malore-intervengono-polizia-e-carabinieri/"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/20/addetti-air-minacciati-da-un-giovane-sullo-scooter-uno-di-loro-accusa-un-malore/"
+    }
+   ],
+   "articolo": {
+    "aggiornato": "2026-10-20T08:28:00+02:00",
+    "cosa": "Un episodio di minacce contro il personale di un autobus urbano di AIR Campania a Benevento riapre il tema della sicurezza sui mezzi pubblici.",
+    "cronologia": [
+     {
+      "data": "19 ottobre",
+      "fatto": "Nel primo pomeriggio un giovane in scooter affianca l'autobus della linea urbana 05, insulta alcuni passeggeri e minaccia il personale dalla strada.",
+      "fonti": [
+       "Anteprima24",
+       "LabTV"
+      ]
+     },
+     {
+      "data": "19 ottobre",
+      "fatto": "Un controllore dei biglietti (i giornali lo chiamano «verificatore») si sente male; arrivano i sanitari, la Polizia e i Carabinieri per gli accertamenti.",
+      "fonti": [
+       "Anteprima24",
+       "LabTV"
+      ]
+     },
+     {
+      "data": "19 ottobre",
+      "fatto": "L'amministratore unico di AIR Campania esprime solidarietà al personale; l'azienda aveva proposto alla Prefettura un tavolo tecnico con le forze dell'ordine sulla sicurezza nel trasporto pubblico.",
+      "fonti": [
+       "Anteprima24",
+       "LabTV"
+      ]
+     },
+     {
+      "data": "19 ottobre",
+      "fatto": "Il consigliere regionale Fernando Errico esprime solidarietà e chiede più sicurezza.",
+      "fonti": [
+       "LabTV (Errico)",
+       "Anteprima24"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Il giovane era in scooter e ha minacciato il personale da fuori dell'autobus; uno degli addetti si è sentito male.",
+      "fonti": [
+       "Anteprima24",
+       "LabTV",
+       "Il Sannio Quotidiano"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "Se il giovane sia stato identificato: gli articoli non lo dicono.",
+     "In quale strada è avvenuto."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Arriva in motorino, insulta i passeggeri e minaccia il personale del bus",
+      "url": "https://www.anteprima24.it/benevento/arriva-in-motorino-insulta-i-passeggeri-e-minaccia-il-personale-del-bus-verificatore-si-sente-male/",
+      "data": "19 ott"
+     },
+     {
+      "nome": "LabTV",
+      "titolo": "Benevento, minacce al personale AIR Campania su linea urbana",
+      "url": "https://www.labtv.net/cronaca/2026/10/19/benevento-minacce-al-personale-air-campania-su-linea-urbana-verificatore-accusa-malore-intervengono-polizia-e-carabinieri/",
+      "data": "19 ott"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Addetti Air minacciati da un giovane sullo scooter: uno di loro accusa un malore",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/20/addetti-air-minacciati-da-un-giovane-sullo-scooter-uno-di-loro-accusa-un-malore/",
+      "data": "20 ott"
+     },
+     {
+      "nome": "LabTV (Errico)",
+      "titolo": "Minacce al personale Air Campania, Errico: piena solidarietà, serve più sicurezza",
+      "url": "https://www.labtv.net/politica/2026/10/19/minacce-al-personale-air-campania-errico-piena-solidarieta-serve-piu-sicurezza/",
+      "data": "19 ott"
+     }
+    ]
+   }
+  },
+  {
+   "id": "sciame-cusano-mutri",
+   "titolo": "Sciame sismico tra Cusano Mutri e Gioia Sannitica: 29 scosse nella notte, la più forte di magnitudo 2.6",
+   "sintesi": "Nella notte tra venerdì 17 e sabato 18 ottobre l'INGV ha registrato 29 scosse tra Cusano Mutri, Gioia Sannitica e Faicchio, dalle 23:43 alle 5:50. Due di magnitudo 2.6, tutte a 10-22 km di profondità.",
+   "categoria": "meteo",
+   "zona": "telesina",
+   "luogo": "Cusano Mutri",
+   "pubblicato": "2026-10-18",
+   "stato": "ufficiale",
+   "fonti": [
+    {
+     "nome": "INGV",
+     "url": "https://webservices.ingv.it/fdsnws/event/1/query?starttime=2026-10-17T18:00:00&endtime=2026-10-18T06:00:00&lat=41.33&lon=14.47&maxradius=0.25&orderby=time-asc&format=text"
+    },
+    {
+     "nome": "PaeseNews",
+     "url": "https://www.paesenews.it/?p=313059"
+    }
+   ],
+   "articolo": {
+    "aggiornato": "2026-10-20T08:28:00+02:00",
+    "cosa": "Uno sciame di scosse deboli ha interessato per circa sei ore la zona tra Cusano Mutri (Benevento) e Gioia Sannitica (Caserta). I dati sono dell'INGV, l'Istituto nazionale di geofisica e vulcanologia.",
+    "cronologia": [
+     {
+      "data": "23:43",
+      "fatto": "Prima scossa, magnitudo 0.9, 5 km a ovest di Cusano Mutri.",
+      "fonti": [
+       "INGV"
+      ]
+     },
+     {
+      "data": "00:40",
+      "fatto": "Magnitudo 2.6, 4 km a nord-est di Gioia Sannitica, profondità 14 km.",
+      "fonti": [
+       "INGV",
+       "PaeseNews"
+      ]
+     },
+     {
+      "data": "01:13",
+      "fatto": "Magnitudo 2.3, 4 km a ovest di Cusano Mutri, profondità 17 km.",
+      "fonti": [
+       "INGV",
+       "PaeseNews"
+      ]
+     },
+     {
+      "data": "02:02",
+      "fatto": "Magnitudo 2.6, 5 km a ovest di Cusano Mutri, profondità 16 km.",
+      "fonti": [
+       "INGV",
+       "PaeseNews"
+      ]
+     },
+     {
+      "data": "03:49",
+      "fatto": "Magnitudo 2.2, 2 km a ovest di Cusano Mutri.",
+      "fonti": [
+       "INGV"
+      ]
+     },
+     {
+      "data": "05:50",
+      "fatto": "Ultima scossa, magnitudo 1.2, 2 km a ovest di Cusano Mutri.",
+      "fonti": [
+       "INGV"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Le scosse sono 29 e la più forte è di magnitudo 2.6.",
+      "fonti": [
+       "INGV",
+       "PaeseNews"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "Nessuno dei giornali letti riporta danni o segnalazioni dalla popolazione."
+    ],
+    "fonti": [
+     {
+      "nome": "INGV",
+      "titolo": "Elenco ufficiale delle scosse (dati grezzi, orari in UTC)",
+      "url": "https://webservices.ingv.it/fdsnws/event/1/query?starttime=2026-10-17T18:00:00&endtime=2026-10-18T06:00:00&lat=41.33&lon=14.47&maxradius=0.25&orderby=time-asc&format=text",
+      "data": "dati consultati il 20 ott"
+     },
+     {
+      "nome": "PaeseNews",
+      "titolo": "Gioia Sannitica / Cusano Mutri – Terremoto: 29 scosse nella notte",
+      "url": "https://www.paesenews.it/?p=313059",
+      "data": "18 ott"
+     }
+    ]
+   }
+  },
+  {
+   "id": "esercitazione-terremoto",
+   "titolo": "Esercitazione di Protezione civile: terremoto simulato ad Apollosa, Arpaise, Ceppaloni e San Leucio del Sannio",
+   "sintesi": "Lunedì 19 ottobre i quattro Comuni hanno simulato un forte terremoto: evacuazione delle scuole, ricerca di un disperso, soccorso ai feriti e prove di comunicazione senza telefono e internet.",
+   "categoria": "eventi",
+   "zona": "provincia",
+   "luogo": "San Leucio del Sannio",
+   "pubblicato": "2026-10-19",
+   "stato": "confermata",
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/19/terremoto-simulato-nel-sannio-quattro-comuni-in-campo-testata-la-macchina-dei-soccorsi/"
+    },
+    {
+     "nome": "LabTV",
+     "url": "https://www.labtv.net/attualita/2026/10/19/terremoto-esercitazione-di-protezione-civile-nel-sannio/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/441518/comuni-insieme-per-la-prevenzione-terremoti-esercitazione-nel-sannio-video.shtml"
+    }
+   ],
+   "articolo": {
+    "aggiornato": "2026-10-20T08:28:00+02:00",
+    "cosa": "Nell'ambito della settimana della Protezione civile, Regione Campania e Prefettura di Benevento hanno provato con quattro Comuni la risposta a un terremoto.",
+    "cronologia": [
+     {
+      "data": "prima",
+      "fatto": "Corso di formazione per sindaci, amministratori e responsabili delle funzioni di supporto.",
+      "fonti": [
+       "LabTV"
+      ]
+     },
+     {
+      "data": "19 ott, 10:00",
+      "fatto": "Simulazione della scossa; attivati i centri operativi dei quattro Comuni e il centro intercomunale a San Leucio del Sannio.",
+      "fonti": [
+       "NTR24",
+       "LabTV"
+      ]
+     },
+     {
+      "data": "19 ottobre",
+      "fatto": "Evacuazione delle scuole di Apollosa, Ceppaloni e San Leucio; prove nella struttura Asl di Arpaise; ricerca di un disperso con unità cinofile; prove di radiocomunicazioni alternative.",
+      "fonti": [
+       "LabTV",
+       "NTR24"
+      ]
+     },
+     {
+      "data": "19 ottobre",
+      "fatto": "Ad Arpaise partecipa l'Esercito con mezzi per la logistica.",
+      "fonti": [
+       "NTR24",
+       "LabTV"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "I Comuni coinvolti sono Apollosa, Arpaise, Ceppaloni e San Leucio del Sannio, con il coordinamento della Prefettura.",
+      "fonti": [
+       "NTR24",
+       "LabTV"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "L'esito: i giornali non riportano una valutazione dell'esercitazione."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Terremoto simulato nel Sannio, quattro Comuni in campo",
+      "url": "https://www.ntr24.tv/2026/10/19/terremoto-simulato-nel-sannio-quattro-comuni-in-campo-testata-la-macchina-dei-soccorsi/",
+      "data": "19 ott"
+     },
+     {
+      "nome": "LabTV",
+      "titolo": "Terremoto, esercitazione di Protezione Civile nel Sannio",
+      "url": "https://www.labtv.net/attualita/2026/10/19/terremoto-esercitazione-di-protezione-civile-nel-sannio/",
+      "data": "19 ott"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Comuni insieme per la prevenzione terremoti. Esercitazione nel Sannio",
+      "url": "https://www.ottopagine.it/bn/cronaca/441518/comuni-insieme-per-la-prevenzione-terremoti-esercitazione-nel-sannio-video.shtml"
+     }
+    ]
+   }
+  },
+  {
+   "id": "cocchia-cavour-asfalto",
+   "titolo": "Benevento, nuovo asfalto in via Cocchia e via Cavour: senso unico alternato e divieti di sosta fino al 31 ottobre",
+   "sintesi": "Dal 19 ottobre si rifà l'asfalto: strada ristretta con senso unico alternato, regolato da operai con la paletta e da semafori, e divieto di sosta con rimozione su entrambi i lati nei tratti dei lavori. Fine prevista entro la mattina di sabato 31 ottobre.",
+   "categoria": "strade",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-15",
+   "stato": "ufficiale",
+   "fonti": [
+    {
+     "nome": "Comune di Benevento",
+     "url": "https://comune.benevento.it/novita/da-luned-19-ottobre-divieti-di-sosta-in-via-cocchia-e-via-cavour-per-il-rifacimento-dellasfalto/"
+    }
+   ],
+   "articolo": {
+    "cosa": "Il Comune di Benevento rifà l'asfalto di via Cocchia e via Cavour. I lavori vanno avanti un tratto alla volta, con la strada ristretta.",
+    "cronologia": [
+     {
+      "data": "19 ottobre",
+      "fatto": "Inizio dei lavori dalla mattina, un tratto alla volta.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "data": "durante i lavori",
+      "fatto": "Senso unico alternato regolato da operai con la paletta e da semafori mobili; divieto di sosta con rimozione su entrambi i lati, solo per il tempo necessario in ciascun tratto.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "data": "31 ottobre",
+      "fatto": "Fine prevista entro la mattinata, salvo conclusione anticipata.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     }
+    ],
+    "concordano": [],
+    "non_si_sa": [
+     "In quali giorni i lavori interesseranno ciascun tratto: il Comune non dà un calendario."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Benevento",
+      "titolo": "Da lunedì 19 ottobre divieti di sosta in via Cocchia e via Cavour per il rifacimento dell'asfalto",
+      "url": "https://comune.benevento.it/novita/da-luned-19-ottobre-divieti-di-sosta-in-via-cocchia-e-via-cavour-per-il-rifacimento-dellasfalto/",
+      "data": "15 ott"
+     }
+    ]
+   }
+  },
+  {
+   "id": "mellusi-annunziata",
+   "titolo": "Benevento, divieti di sosta in viale Mellusi il 21 e 22 ottobre; piazzetta Santa Rita chiusa fino ad aprile per il cantiere dell'Annunziata",
+   "sintesi": "Viale Mellusi, tra via Meomartini e via Nicola Sala: sosta vietata con rimozione dalle 8 alle 18, mercoledì 21 sul lato destro e giovedì 22 sul sinistro. Da mercoledì piazzetta Santa Rita chiusa a transito e sosta e divieto di fermata in un tratto di via Rampa Annunziata, anche per i residenti con permesso ZTL.",
+   "categoria": "strade",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-19",
+   "stato": "ufficiale",
+   "fonti": [
+    {
+     "nome": "Comune di Benevento",
+     "url": "https://comune.benevento.it/novita/da-mercoled-21-ottobre-divieti-di-sosta-su-parte-di-viale-mellusi-piazzetta-s-rita-e-rampa-annunziata/"
+    }
+   ],
+   "articolo": {
+    "cosa": "Due interventi in centro a Benevento: la pulizia straordinaria delle caditoie (le griglie di scolo dell'acqua piovana) in viale Mellusi e il restauro della Chiesa della SS. Annunziata, con un cantiere che durerà mesi.",
+    "cronologia": [
+     {
+      "data": "21 ottobre",
+      "fatto": "Viale Mellusi, tra via Meomartini e via Nicola Sala: divieto di sosta con rimozione dalle 8 alle 18 sul lato destro del senso di marcia.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "data": "22 ottobre",
+      "fatto": "Stesso tratto di viale Mellusi, stessi orari, sul lato sinistro.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "data": "dal 21 ottobre",
+      "fatto": "Piazzetta Santa Rita, accanto a via Annunziata: transito e sosta vietati a tutti, anche ai residenti con permesso ZTL Annunziata, per il cantiere della chiesa.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "data": "dal 21 ottobre",
+      "fatto": "Via Rampa Annunziata, dal civico 12 al 4: divieto di sosta e di fermata con rimozione, perché l'impalcatura sulla chiesa restringe la strada.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "data": "fine aprile 2027",
+      "fatto": "Fine prevista del cantiere in piazzetta Santa Rita, salvo conclusione anticipata.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     }
+    ],
+    "concordano": [],
+    "non_si_sa": [
+     "Fino a quando resterà il divieto in via Rampa Annunziata: il Comune non lo indica."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Benevento",
+      "titolo": "Da mercoledì 21 ottobre divieti di sosta su parte di viale Mellusi, piazzetta S. Rita e rampa Annunziata",
+      "url": "https://comune.benevento.it/novita/da-mercoled-21-ottobre-divieti-di-sosta-su-parte-di-viale-mellusi-piazzetta-s-rita-e-rampa-annunziata/",
+      "data": "19 ott"
+     }
+    ]
+   }
+  }
+ ],
+ "approfondimenti": [
+  {
+   "id": "caro-gasolio-sannio",
+   "titolo": "Caro gasolio, la protesta di tir e agricoltori nel Sannio: dove sono i blocchi, cosa manca e cosa succede adesso",
+   "sommario": "Da lunedì 19 ottobre gli autotrasportatori fermano i camion sull'Appia e a Castel del Lago, nella notte anche sulla Telesina; da giovedì 22 si aggiungono gli agricoltori. Nei supermercati mancano i prodotti freschi. Il Governo ha convocato le associazioni per il 27 ottobre.",
+   "luogo": "Provincia di Benevento",
+   "aggiornato": "2026-10-20T08:45:00+02:00",
+   "collegate": [
+    "tir-appia-telesina",
+    "scaffali-vuoti",
+    "agricoltori-22-ottobre",
+    "mozione-caro-carburanti"
+   ],
+   "in_breve": [
+    {
+     "testo": "Si protesta contro il prezzo del gasolio, risalito a circa 2,30 euro al litro dopo la fine dello sconto sulle accise, il 6 ottobre.",
+     "fonti": [
+      "Il Post"
+     ]
+    },
+    {
+     "testo": "Nel Sannio i camion sono fermi sulla statale Appia a Tufara Valle e al casello di Castel del Lago; le auto passano, ma a rilento.",
+     "fonti": [
+      "Ottopagine (19/10)",
+      "NTR24",
+      "Il Sannio Quotidiano"
+     ]
+    },
+    {
+     "testo": "Nei supermercati mancano frutta, verdura e carne; alcuni distributori sono rimasti senza carburante.",
+     "fonti": [
+      "NTR24 (supermercati)",
+      "Il Sannio Quotidiano (scorte)",
+      "Ottopagine (19/10)"
+     ]
+    },
+    {
+     "testo": "Da giovedì 22 ottobre presidi degli agricoltori sulla Sannitica, sulla statale 212 e a Ponte delle Tavole.",
+     "fonti": [
+      "Ottopagine (agricoltori)",
+      "NTR24"
+     ]
+    },
+    {
+     "testo": "Il ministero dei Trasporti ha convocato le associazioni dell'autotrasporto per il 27 ottobre.",
+     "fonti": [
+      "Il Post"
+     ]
+    }
+   ],
+   "sezioni": [
+    {
+     "titolo": "Perché si protesta",
+     "paragrafi": [
+      {
+       "testo": "Lo sconto fisso sulle accise è finito il 6 ottobre e il prezzo medio del gasolio è tornato a circa 2,30 euro al litro. Le proteste sono cominciate a inizio mese in Calabria e Puglia e da venerdì 16 ottobre si sono estese a Campania, Sicilia e Basilicata.",
+       "fonti": [
+        "Il Post"
+       ]
+      },
+      {
+       "testo": "Nel Sannio gli autotrasportatori dicono che i costi non sono più sostenibili e temono per il lavoro delle loro famiglie. Chiedono al Governo una risposta concreta e annunciano una protesta a oltranza.",
+       "fonti": [
+        "Il Sannio Quotidiano",
+        "Ottopagine (20/10)"
+       ]
+      }
+     ]
+    },
+    {
+     "titolo": "Dove sono i blocchi",
+     "punti": [
+      {
+       "testo": "Statale Appia, all'altezza di Tufara Valle: tir fermi dal 19 ottobre.",
+       "fonti": [
+        "Ottopagine (19/10)",
+        "NTR24",
+        "Il Sannio Quotidiano"
+       ]
+      },
+      {
+       "testo": "Casello autostradale di Castel del Lago: tir fermi all'imbocco dell'autostrada.",
+       "fonti": [
+        "Ottopagine (19/10)",
+        "NTR24",
+        "Il Sannio Quotidiano"
+       ]
+      },
+      {
+       "testo": "Telesina, soprattutto a San Salvatore Telesino: blocchi nella notte tra il 19 e il 20 ottobre, con code. Per ora lo riporta un solo giornale.",
+       "fonti": [
+        "Ottopagine (20/10)"
+       ]
+      },
+      {
+       "testo": "Fuori provincia, presidi ai caselli di Caianello, Caserta Sud e Nola.",
+       "fonti": [
+        "LabTV",
+        "Ottopagine (mozione)"
+       ]
+      },
+      {
+       "testo": "Da giovedì 22: Sannitica (statale 87), statale 212 e Benevento, zona Ponte delle Tavole.",
+       "fonti": [
+        "Ottopagine (agricoltori)",
+        "NTR24"
+       ]
+      }
+     ]
+    },
+    {
+     "titolo": "Cosa cambia per chi vive nel Sannio",
+     "paragrafi": [
+      {
+       "testo": "Nei supermercati di Benevento e provincia i reparti dei prodotti freschi sono sguarniti: mancano frutta, verdura, carne e alcuni prodotti di prima necessità.",
+       "fonti": [
+        "NTR24 (supermercati)",
+        "Il Sannio Quotidiano (scorte)"
+       ]
+      },
+      {
+       "testo": "Diversi distributori hanno finito benzina e gasolio; il 19 ottobre i mezzi dell'Asia per la raccolta dei rifiuti erano in fila per rifornirsi al distributore di contrada San Vitale.",
+       "fonti": [
+        "Ottopagine (19/10)",
+        "Ottopagine (20/10)",
+        "NTR24"
+       ]
+      },
+      {
+       "testo": "Le aziende agroalimentari sannite segnalano ritardi su semola, mangimi, imballaggi e prodotti freschi, e il rischio di fermarsi e ricorrere alla cassa integrazione.",
+       "fonti": [
+        "NTR24 (sindacati)"
+       ]
+      }
+     ]
+    },
+    {
+     "titolo": "Cosa chiedono e cosa fa la politica",
+     "punti": [
+      {
+       "testo": "I sindacati Fai Cisl, Flai Cgil e Uila Uil chiedono un tavolo di crisi, corridoi di transito per le merci deperibili e un credito d'imposta sul gasolio professionale.",
+       "fonti": [
+        "NTR24 (sindacati)"
+       ]
+      },
+      {
+       "testo": "L'associazione Aslimitaly di Limatola chiede la riduzione delle accise e una moratoria fiscale per le piccole imprese del settore.",
+       "fonti": [
+        "LabTV"
+       ]
+      },
+      {
+       "testo": "In Consiglio regionale una mozione urgente, primo firmatario Pellegrino Mastella, chiede un fondo straordinario per autotrasporto e agricoltura.",
+       "fonti": [
+        "Ottopagine (mozione)",
+        "NTR24 (mozione)"
+       ]
+      },
+      {
+       "testo": "Il ministero dei Trasporti ha convocato le associazioni per il 27 ottobre; il ministro Urso ha detto che eventuali nuove misure arriveranno dopo quell'incontro.",
+       "fonti": [
+        "Il Post"
+       ]
+      }
+     ]
+    }
+   ],
+   "domande": [
+    {
+     "d": "Le auto riescono a passare?",
+     "r": "Sì, secondo i giornali le auto transitano lentamente; i manifestanti fermano i camion e chiedono ai colleghi di aderire. Il Sannio Quotidiano parla comunque di forti disagi e code.",
+     "fonti": [
+      "Ottopagine (19/10)",
+      "NTR24",
+      "Il Sannio Quotidiano"
+     ]
+    },
+    {
+     "d": "Quanto durerà?",
+     "r": "Non c'è una data di fine: i manifestanti parlano di protesta a oltranza fino a una risposta del Governo. Il prossimo appuntamento è l'incontro al ministero del 27 ottobre.",
+     "fonti": [
+      "Ottopagine (20/10)",
+      "Il Post"
+     ]
+    },
+    {
+     "d": "Cosa succede giovedì 22 ottobre?",
+     "r": "Partono i presidi degli agricoltori sulla Sannitica, sulla statale 212 e a Ponte delle Tavole; lo stesso giorno Coldiretti Campania manifesta a Napoli.",
+     "fonti": [
+      "Ottopagine (agricoltori)",
+      "NTR24"
+     ]
+    }
+   ],
+   "cronologia": [
+    {
+     "data": "inizio ottobre",
+     "fatto": "Prime proteste in Calabria e Puglia.",
+     "fonti": [
+      "Il Post"
+     ]
+    },
+    {
+     "data": "6 ottobre",
+     "fatto": "Finisce lo sconto fisso sulle accise; il gasolio torna a circa 2,30 euro al litro.",
+     "fonti": [
+      "Il Post"
+     ]
+    },
+    {
+     "data": "16 ottobre",
+     "fatto": "La protesta si estende a Campania, Sicilia e Basilicata.",
+     "fonti": [
+      "Il Post"
+     ]
+    },
+    {
+     "data": "18 ottobre",
+     "fatto": "Riunione degli imprenditori agricoli a San Marco dei Cavoti.",
+     "fonti": [
+      "Ottopagine (19/10)",
+      "NTR24"
+     ]
+    },
+    {
+     "data": "19 ottobre",
+     "fatto": "Tir fermi sull'Appia a Tufara Valle e al casello di Castel del Lago; scaffali vuoti nei supermercati; mozione in Consiglio regionale; i sindacati chiedono un tavolo di crisi.",
+     "fonti": [
+      "Ottopagine (19/10)",
+      "NTR24",
+      "Il Sannio Quotidiano",
+      "NTR24 (supermercati)",
+      "Ottopagine (mozione)",
+      "NTR24 (sindacati)"
+     ]
+    },
+    {
+     "data": "notte 19-20",
+     "fatto": "Blocchi anche sulla Telesina, a San Salvatore Telesino.",
+     "fonti": [
+      "Ottopagine (20/10)"
+     ]
+    },
+    {
+     "data": "22 ottobre",
+     "fatto": "Al via i presidi degli agricoltori.",
+     "fonti": [
+      "Ottopagine (agricoltori)",
+      "NTR24"
+     ]
+    },
+    {
+     "data": "27 ottobre",
+     "fatto": "Incontro al ministero dei Trasporti con le associazioni dell'autotrasporto.",
+     "fonti": [
+      "Il Post"
+     ]
+    }
+   ],
+   "non_si_sa": [
+    "Quanti camion sono coinvolti nel Sannio: nessun giornale dà un numero.",
+    "Se i blocchi sulla Telesina continueranno: per ora li riporta un solo giornale.",
+    "Cosa deciderà il Governo dopo l'incontro del 27 ottobre."
+   ],
+   "fonti": [
+    {
+     "nome": "Ottopagine (19/10)",
+     "titolo": "Caro carburante. Blocco dei camion sulla Statale Appia e a Castel del Lago",
+     "url": "https://www.ottopagine.it/bn/cronaca/441432/caro-carburante-blocco-dei-camion-sulla-statale-appia-e-a-castel-del-lago.shtml",
+     "data": "19 ott, 08:48"
+    },
+    {
+     "nome": "Ottopagine (20/10)",
+     "titolo": "Protesta caro carburanti. Continuano i blocchi nel Sannio",
+     "url": "https://www.ottopagine.it/bn/cronaca/441543/protesta-caro-carburanti-continuano-i-blocchi-nel-sannio.shtml",
+     "data": "20 ott, 07:41"
+    },
+    {
+     "nome": "Ottopagine (agricoltori)",
+     "titolo": "Caro carburanti, anche gli agricoltori si mobilitano: da giovedì proteste",
+     "url": "https://www.ottopagine.it/bn/cronaca/441436/caro-carburanti-anche-gli-agricoltori-si-mobilitano-da-giovedi-proteste.shtml",
+     "data": "19 ott, 09:33"
+    },
+    {
+     "nome": "Ottopagine (mozione)",
+     "titolo": "Caro carburanti: mozione Casa Riformista–Italia Viva–Noi di Centro in Regione",
+     "url": "https://www.ottopagine.it/bn/politica/441493/caro-carburanti-mozione-casa-riformista-italia-viva-noi-di-centro-in-regione.shtml",
+     "data": "19 ott, 16:16"
+    },
+    {
+     "nome": "NTR24",
+     "titolo": "Caro carburanti, la protesta nel Sannio: camion fermi sull'Appia e a Castel del Lago",
+     "url": "https://www.ntr24.tv/2026/10/19/caro-carburanti-la-protesta-nel-sannio-camion-fermi-sullappia-e-a-castel-del-lago-da-giovedi-si-mobilitano-gli-agricoltori/",
+     "data": "19 ott"
+    },
+    {
+     "nome": "NTR24 (supermercati)",
+     "titolo": "Benevento, scaffali vuoti e carenze di prodotti freschi nei supermarket",
+     "url": "https://www.ntr24.tv/2026/10/19/benevento-scaffali-vuoti-e-carenze-di-prodotti-freschi-nei-supermarket-si-fa-sentire-lo-sciopero-degli-autotrasportatori/",
+     "data": "19 ott"
+    },
+    {
+     "nome": "NTR24 (mozione)",
+     "titolo": "Caro carburanti, allarme in Campania: Casa Riformista chiede un fondo straordinario",
+     "url": "https://www.ntr24.tv/2026/10/19/caro-carburanti-allarme-in-campania-casa-riformista-chiede-un-fondo-straordinario/",
+     "data": "19 ott"
+    },
+    {
+     "nome": "NTR24 (sindacati)",
+     "titolo": "Caro gasolio, rallentano le aziende agroalimentari sannite: i sindacati chiedono un tavolo di crisi",
+     "url": "https://www.ntr24.tv/2026/10/19/caro-gasolio-rallentano-le-aziende-agroalimentari-sannite-i-sindacati-chiedono-un-tavolo-di-crisi/",
+     "data": "19 ott"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "titolo": "La protesta degli autotrasportatori arriva nel Sannio, blocchi sull'Appia e a Castel del Lago",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/20/la-protesta-degli-autotrasportatori-arriva-nel-sannio-blocchi-sullappia-e-a-castel-del-lago-cosi-non-possiamo-andare-avanti/",
+     "data": "20 ott"
+    },
+    {
+     "nome": "Il Sannio Quotidiano (scorte)",
+     "titolo": "Blocco tir, scorte esaurite come durante il lockdown",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/20/blocco-tir-scorte-esaurite-come-durante-il-lockdown-cresce-la-preoccupazione/",
+     "data": "20 ott"
+    },
+    {
+     "nome": "LabTV",
+     "titolo": "Caro carburanti, Aslimitaly lancia l'allarme: Campania paralizzata",
+     "url": "https://www.labtv.net/attualita/2026/10/19/caro-carburanti-aslimitaly-lancia-lallarme-campania-paralizzata-sciopero-a-oltranza-e-nodi-stradali-bloccati/",
+     "data": "19 ott"
+    },
+    {
+     "nome": "Il Post",
+     "titolo": "Le proteste degli autotrasportatori al Sud",
+     "url": "https://www.ilpost.it/2026/10/16/proteste-autotrasportatori-sud-italia/",
+     "data": "16 ott"
+    }
+   ]
+  }
+ ]
+}
