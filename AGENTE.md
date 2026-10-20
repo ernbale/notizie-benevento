@@ -221,9 +221,12 @@ aggiorni a ogni giro, come notizie.json.
 - **Il testo**: `titolo` chiaro e corto (il nome dell'evento, non quello dell'articolo); `breve` = 1-2 frasi semplici
   per il riquadro («cos'è e cosa c'è»); `descrizione` = i dettagli in paragrafi con le fonti (programma, artisti, cosa si
   mangia, come prenotare), con le stesse regole di scrittura delle notizie.
-- `immagine`: un tema di `img/temi/temi.json` (teatro, concerto, musica-classica, mostra, museo, cinema, sagra,
-  castagne, funghi, luminarie, natale, presepe, mercato…). Se non lo metti, `archivia.py` usa quello del tipo; `foto`
-  lo sceglie lui.
+- `immagine`: il tema di `img/temi/temi.json` che **somiglia davvero all'evento** (un mercatino di Natale non è un
+  mercato della frutta). Per gli eventi ci sono: teatro, teatro-ragazzi, musical, lirica, danza, concerto, jazz,
+  pianoforte, violoncello, orchestra, musica-classica, mandolino (canzone napoletana, musica popolare), cinema, mostra,
+  arte-contemporanea, mostra-archivio, cartoline, museo, sagra, castagne, vino-novello, funghi, luminarie, fuochi, janare
+  (Halloween, streghe), mercatino-natale, castello-natale, casa-babbo-natale, borgo-natale, pista-ghiaccio, natale,
+  presepe, presepe-vivente, carnevale. Se non lo metti, `archivia.py` usa quello del tipo; `foto` lo sceglie lui.
 - `giorni`: solo per gli eventi che **non** sono tutti i giorni tra inizio e fine (per esempio solo i fine settimana, o
   26-27 dicembre e 2-3 gennaio): l'elenco di tutti i giorni in cui c'è, dal primo (= `inizio`) all'ultimo (= `fine`).
   Nel calendario l'evento compare solo in quei giorni. Se la fonte non dice quali giorni, non metterlo e scrivi in
