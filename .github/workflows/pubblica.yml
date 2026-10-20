@@ -30,7 +30,7 @@ jobs:
         run: |
           if ! python3 strumenti/meteo.py; then
             echo "Meteo non aggiornato: tengo quello già pubblicato"
-            curl -fsS --max-time 30 "https://ernbale.github.io/notizie-benevento/meteo.json" -o meteo.json || echo "nessun meteo precedente"
+            curl -fsSL --max-time 30 "https://ernbale.github.io/notizie-benevento/meteo.json" -o meteo.json || echo "nessun meteo precedente"
           fi
 
       - uses: actions/configure-pages@v5
