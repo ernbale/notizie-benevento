@@ -3,7 +3,7 @@
 
 - Visite: Cloudflare Web Analytics (senza cookie: conta visite e pagine viste, non le persone), ultimi 30 giorni.
 - Il sito: notizie pubblicate, sezioni, zone, giornali e fonti citati (da notizie.json e dall'archivio).
-- Google: Search Console, quando sarà collegato.
+- Google: Search Console (account di servizio con permesso «Limitata», chiave nel segreto GSC_CHIAVE), ultimi 28 giorni.
 
 Il file è cifrato con la parola d'ordine (AES-GCM, chiave da PBKDF2-SHA256): chi trova l'indirizzo vede solo
 numeri illeggibili; la pagina statistiche/index.html lo apre nel browser con la stessa parola.
@@ -22,6 +22,8 @@ import json
 import os
 import re
 import sys
+import urllib.error
+import urllib.parse
 import urllib.request
 
 CF_ACCOUNT = "d76a7e4eebbfb46bb9fbd03910507063"   # l'account Cloudflare (non è un segreto: sta negli indirizzi)
@@ -165,6 +167,78 @@ def visite(sito, token, adesso):
     }
 
 
+# ---------- Google (Search Console) ----------
+GSC_SITO = "sc-domain:notiziebenevento.it"
+
+
+def gsc_token(chiave):
+    """Un accesso di sola lettura a Search Console con la chiave dell'account di servizio (JWT firmato RS256)."""
+    from cryptography.hazmat.primitives import hashes, serialization
+    from cryptography.hazmat.primitives.asymmetric import padding
+    b64 = lambda b: base64.urlsafe_b64encode(b).rstrip(b"=")
+    ora = int(dt.datetime.now(dt.timezone.utc).timestamp())
+    testa = b64(json.dumps({"alg": "RS256", "typ": "JWT"}).encode())
+    corpo = b64(json.dumps({"iss": chiave["client_email"], "scope": "https://www.googleapis.com/auth/webmasters.readonly",
+                            "aud": "https://oauth2.googleapis.com/token", "iat": ora, "exp": ora + 3600}).encode())
+    privata = serialization.load_pem_private_key(chiave["private_key"].encode(), password=None)
+    firma = b64(privata.sign(testa + b"." + corpo, padding.PKCS1v15(), hashes.SHA256()))
+    dati = urllib.parse.urlencode({"grant_type": "urn:ietf:params:oauth:grant-type:jwt-bearer",
+                                   "assertion": (testa + b"." + corpo + b"." + firma).decode()}).encode()
+    with urllib.request.urlopen(urllib.request.Request("https://oauth2.googleapis.com/token", data=dati), timeout=30) as r:
+        return json.load(r)["access_token"]
+
+
+def gsc_query(token, corpo):
+    url = ("https://www.googleapis.com/webmasters/v3/sites/" + urllib.parse.quote(GSC_SITO, safe="")
+           + "/searchAnalytics/query")
+    req = urllib.request.Request(url, data=json.dumps(corpo).encode(), method="POST",
+                                 headers={"Authorization": "Bearer " + token, "Content-Type": "application/json"})
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            return json.load(r).get("rows", [])
+    except urllib.error.HTTPError as e:
+        raise RuntimeError(f"Search Console {e.code}: {e.read().decode(errors='ignore')[:200]}")
+
+
+def google(sito, testo_chiave, adesso):
+    if not testo_chiave.strip():
+        return {"stato": "da collegare", "messaggio": "Manca la chiave dell'account di servizio (GSC_CHIAVE)."}
+    chiave = json.loads(testo_chiave[testo_chiave.index("{"):testo_chiave.rindex("}") + 1])
+    token = gsc_token(chiave)
+    fine = adesso.astimezone(fuso()).date()
+    inizio = fine - dt.timedelta(days=27)
+    base = {"startDate": inizio.isoformat(), "endDate": fine.isoformat(), "dataState": "all"}
+    def riga(r):
+        return {"clic": r.get("clicks", 0), "impressioni": r.get("impressions", 0),
+                "ctr": round(100 * r.get("ctr", 0), 1), "posizione": round(r.get("position", 0), 1)}
+    tot = gsc_query(token, base)
+    per_giorno = {r["keys"][0]: riga(r) for r in gsc_query(token, dict(base, dimensions=["date"], rowLimit=100))}
+    titoli = titoli_pagine(sito)
+    pagine = []
+    for r in gsc_query(token, dict(base, dimensions=["page"], rowLimit=25)):
+        percorso = urllib.parse.urlsplit(r["keys"][0]).path or "/"
+        pagine.append(dict(riga(r), percorso=percorso, titolo=titoli.get(percorso)))
+    altri = {}
+    for tipo in ("discover", "googleNews"):
+        try:
+            t = gsc_query(token, dict(base, type=tipo))
+            altri[tipo] = riga(t[0]) if t else riga({})
+        except RuntimeError:
+            altri[tipo] = None
+    nomi_disp = {"MOBILE": "Telefono", "DESKTOP": "Computer", "TABLET": "Tablet"}
+    return {
+        "stato": "ok", "dal": inizio.isoformat(), "al": fine.isoformat(),
+        "totali": riga(tot[0]) if tot else riga({}),
+        "giorni": [dict(per_giorno.get((inizio + dt.timedelta(days=i)).isoformat(), riga({})),
+                        data=(inizio + dt.timedelta(days=i)).isoformat()) for i in range(28)],
+        "ricerche": [dict(riga(r), ricerca=r["keys"][0]) for r in gsc_query(token, dict(base, dimensions=["query"], rowLimit=30))],
+        "pagine": pagine,
+        "dispositivi": [dict(riga(r), nome=nomi_disp.get(r["keys"][0], r["keys"][0]))
+                        for r in gsc_query(token, dict(base, dimensions=["device"]))],
+        "discover": altri.get("discover"), "news": altri.get("googleNews"),
+    }
+
+
 # ---------- il sito: notizie e fonti ----------
 def sito_numeri(sito, adesso):
     oggi = adesso.astimezone(fuso()).date()
@@ -227,7 +301,12 @@ def main():
         dati["visite"] = {"stato": "errore", "messaggio": f"Cloudflare non ha risposto: {e}"}
         print("AVVISO visite:", e, file=sys.stderr)
     dati["sito"] = sito_numeri(a.sito, adesso)
-    dati["google"] = {"stato": "da collegare", "messaggio": "Search Console non è ancora collegata."}
+    try:
+        dati["google"] = google(a.sito, os.environ.get("GSC_CHIAVE", ""), adesso)
+        print("Google:", dati["google"]["stato"])
+    except Exception as e:
+        dati["google"] = {"stato": "errore", "messaggio": f"Search Console non ha risposto: {e}"}
+        print("AVVISO Google:", e, file=sys.stderr)
     if a.in_chiaro:
         with open(a.in_chiaro, "w", encoding="utf-8") as f:
             json.dump(dati, f, ensure_ascii=False, indent=1)
