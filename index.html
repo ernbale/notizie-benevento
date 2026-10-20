@@ -638,7 +638,8 @@
   // Avvisi ufficiali su strade e lavori ancora validi: hanno il loro riquadro nella colonna di destra.
   function eAvviso(n) {
     if (n.in_vigore_fino) return n.in_vigore_fino >= new Date().toLocaleDateString("sv-SE", { timeZone: TZ });
-    return (n.categoria === "strade" || n.categoria === "meteo") && n.stato === "ufficiale";
+    // allerte e chiusure hanno sempre una data di fine; senza data è avviso solo un comunicato ufficiale sulle strade
+    return n.categoria === "strade" && n.stato === "ufficiale";
   }
   // Se la spalla viene molto più lunga dell'apertura (titoli lunghi), l'ultima notizia della spalla
   // scende tra «Le altre notizie», al suo posto in ordine di tempo: niente buco sotto l'apertura.
