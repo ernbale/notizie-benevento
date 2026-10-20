@@ -1,0 +1,43 @@
+# Pubblica il sito su GitHub Pages: a ogni modifica (notizie nuove) e ogni ora (meteo aggiornato).
+name: Pubblica il sito
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "12 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  pubblica:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Meteo da 8 modelli
+        run: |
+          if ! python3 strumenti/meteo.py; then
+            echo "Meteo non aggiornato: tengo quello già pubblicato"
+            curl -fsS --max-time 30 "https://ernbale.github.io/notizie-benevento/meteo.json" -o meteo.json || echo "nessun meteo precedente"
+          fi
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - id: deploy
+        uses: actions/deploy-pages@v4

@@ -241,6 +241,7 @@
       <option value="fortore">Fortore e Tammaro</option>
       <option value="provincia">Altri comuni</option>
     </select>
+    <a class="link-archivio" href="meteo.html">Previsioni meteo</a>
     <a class="link-archivio" href="#archivio">Archivio</a>
     <form class="cerca-campo" id="cerca-home" role="search">
       <input type="search" id="cerca-home-q" placeholder="Cerca tra le notizie" aria-label="Cerca tra le notizie" autocomplete="off" enterkeyhint="search">
@@ -1043,7 +1044,7 @@
       }
       var filtrato = ricerca.cat || ricerca.zona || ricerca.periodo;
       conta.textContent = a.vuota
-        ? trovati.length + (trovati.length === 1 ? " notizia" : " notizie") + (filtrato ? " con questi filtri" : " in archivio") + ", dalla più recente"
+        ? trovati.length + (trovati.length === 1 ? " notizia" : " notizie") + (filtrato ? " con questi filtri" : " in tutto") + ", dalla più recente"
         : (trovati.length ? trovati.length + (trovati.length === 1 ? " notizia trovata" : " notizie trovate") : "Nessuna notizia trovata") + " per «" + q + "»" + (filtrato ? " con questi filtri" : "");
       lista.textContent = "";
       if (!trovati.length) {
