@@ -196,6 +196,13 @@ Regole:
 - **Gli `id` sono unici per sempre**, anche rispetto all'archivio: se l'id che vuoi usare esiste già (lo script te lo
   dice), aggiungi la data, per esempio `incidente-telesina-2026-11-03`. Un fatto vecchio che torna d'attualità è una
   notizia nuova, con un id nuovo; nella cronologia puoi ricordare il fatto di prima.
+- **L'`id` è l'indirizzo della notizia su Google**: `notiziebenevento.it/notizia/<id>/`. Una volta pubblicato non si
+  cambia mai, nemmeno se correggi il titolo. Sceglilo con le parole che la gente cerca (luogo + fatto), corto:
+  `montesarchio-droga-due-arresti`, non `notizia-1`. Le pagine, la sitemap, il feed e le immagini di anteprima li fa
+  GitHub da solo (`strumenti/pagine.py`): tu non devi creare né committare niente di tutto questo.
+- **Il titolo è quello che si legge su Google**: luogo e fatto all'inizio («Telese Terme, chiusa la statale 372 per un
+  incidente»), le parole che userebbe chi cerca, niente sigle non spiegate. La `sintesi` è la descrizione sotto il
+  titolo su Google: le prime 150 lettere devono bastare a capire il fatto.
 - Non modificare mai i file in `archivio/`, con una sola eccezione: se scopri un errore in una notizia archiviata,
   correggi quella notizia nel file del suo mese e spiega la correzione nel campo `nota`. Mai cancellarla.
 
