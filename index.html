@@ -105,7 +105,8 @@
   .spalla h2 { font-size: 22px; }
   .spalla .sintesi { display: none; } /* come nei giornali: in spalla solo il titolo, il riassunto è nell'articolo */
   .altre { margin-top: 6px; }
-  .altre-griglia { display: grid; grid-template-columns: 1fr 1fr; column-gap: 28px; align-items: start; }
+  /* stretch: le due notizie affiancate hanno la stessa altezza, così le righe di separazione stanno in fila */
+  .altre-griglia { display: grid; grid-template-columns: 1fr 1fr; column-gap: 28px; align-items: stretch; }
   .altre-griglia .notizia:last-child { border-bottom: 1px solid var(--riga); }
   .avvisi-box { margin-bottom: 18px; }
   .avvisi-box ul { list-style: none; padding: 0; margin: 0; }
