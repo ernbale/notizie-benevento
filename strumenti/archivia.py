@@ -56,7 +56,17 @@ def testo_json(d):
     return json.dumps(d, ensure_ascii=False, indent=1) + "\n"
 
 
-def controlla(d, err, avv):
+def nel_futuro(iso, adesso):
+    """True se una data ISO con fuso (o solo giorno) è dopo adesso + 10 minuti."""
+    try:
+        if GIORNO.match(iso):
+            return dt.date.fromisoformat(iso) > adesso.date()
+        return dt.datetime.fromisoformat(iso) > adesso + dt.timedelta(minutes=10)
+    except Exception:
+        return False
+
+
+def controlla(d, err, avv, adesso=None):
     """Le stesse regole di AGENTE.md, sul file della prima pagina."""
     for k in ("aggiornato", "giornali_letti", "notizie", "approfondimenti"):
         if k not in d:
@@ -65,6 +75,8 @@ def controlla(d, err, avv):
         return
     if not ISO.match(str(d.get("aggiornato", ""))):
         err.append("aggiornato non è una data ISO")
+    elif adesso and nel_futuro(d["aggiornato"], adesso):
+        err.append(f"aggiornato è nel futuro ({d['aggiornato']}): usa l'ora vera, TZ=Europe/Rome date -Iminutes")
 
     def url_validi(o, dove):
         if isinstance(o, dict):
@@ -95,6 +107,8 @@ def controlla(d, err, avv):
             err.append(f"{w}: rilevante deve essere true o false")
         if not ISO.match(str(n.get("pubblicato", ""))):
             err.append(f"{w}: pubblicato non ISO {n.get('pubblicato')!r}")
+        elif adesso and nel_futuro(n["pubblicato"], adesso):
+            err.append(f"{w}: pubblicato è nel futuro ({n['pubblicato']})")
         if "in_vigore_fino" in n and not GIORNO.match(str(n.get("in_vigore_fino"))):
             err.append(f"{w}: in_vigore_fino deve essere AAAA-MM-GG")
         tl = str(n.get("titolo", "")).lower()
@@ -199,7 +213,14 @@ def main():
     if d is None:
         print("ERRORE: manca notizie.json")
         sys.exit(1)
-    controlla(d, err, avv)
+    adesso_roma = None
+    if not a.oggi:
+        try:
+            from zoneinfo import ZoneInfo
+            adesso_roma = dt.datetime.now(ZoneInfo("Europe/Rome"))
+        except Exception:
+            adesso_roma = None
+    controlla(d, err, avv, adesso_roma)
 
     # Archivio esistente: si legge tutto, non si toglie mai niente.
     mesi = {}
@@ -312,8 +333,10 @@ def main():
     vecchio_indice = leggi(p_indice, {}) if os.path.exists(p_indice) else None
     if vecchio_indice is None or vecchio_indice.get("voci") != voci:
         da_scrivere.append((p_indice, testo_json(indice)))
-    if vanno or vanno_ap:
-        da_scrivere.append((p_notizie, testo_json(nuovo)))
+    # sempre nello stesso formato (indent 1): così su GitHub si vedono solo le righe cambiate davvero
+    with open(p_notizie, encoding="utf-8") as f:
+        if vanno or vanno_ap or f.read() != testo_json(nuovo):
+            da_scrivere.append((p_notizie, testo_json(nuovo)))
 
     print(f"Oggi {oggi.isoformat()}: in prima pagina {len(restano)} notizie e {len(restano_ap)} approfondimenti; "
           f"archiviate ora {len(vanno)} notizie e {len(vanno_ap)} approfondimenti; in archivio in tutto {len(voci)}.")

@@ -1,7 +1,471 @@
 {
- "aggiornato": "2026-10-20T09:25:00+02:00",
+ "aggiornato": "2026-10-20T12:04:00+02:00",
  "giornali_letti": 15,
  "notizie": [
+  {
+   "id": "airola-incendio-diossine-latte",
+   "titolo": "Incendio di Airola, controlli sugli alimenti: diossine nel latte di pecora a Cervinara, il latte è stato bloccato",
+   "sintesi": "Nell'ultimo aggiornamento dei controlli (10-16 ottobre) dopo l'incendio di Airola sono state confermate due irregolarità per diossine nel latte di pecora a Cervinara; il latte è stato bloccato e non va in commercio. Altre irregolarità riguardano erba da pascolo e mais trinciato. Nei terreni agricoli finora non risultano soglie superate.",
+   "categoria": "altro",
+   "zona": "caudina",
+   "luogo": "Airola e Valle Caudina",
+   "pubblicato": "2026-10-20T11:29:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/441556/incendio-di-airola-aggiornamento-controlli-suoli-e-produzioni-agroalimentari.shtml"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/20/incendio-di-airola-nuovi-controlli-due-non-conformita-per-diossine-nel-latte-ovino-a-cervinara/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/incendio-airola-diossine-latte-ovino-immediatamente-bloccato"
+    }
+   ],
+   "articolo": {
+    "cosa": "Istituto Zooprofilattico del Mezzogiorno, ASL e ARPAC (l'agenzia regionale per l'ambiente) continuano i controlli sulle conseguenze dell'incendio di Airola. Nell'aggiornamento relativo al 10-16 ottobre sono state confermate due non conformità (valori fuori norma) per diossine nel latte di pecora a Cervinara: il latte è stato bloccato ed escluso dalla catena alimentare dai servizi veterinari dell'ASL di Avellino, che cercano come gli animali siano stati esposti, anche guardando i pascoli. Il Comitato Salute e Ambiente di Airola e della Valle Caudina chiede a allevatori e produttori di richiedere loro stessi i controlli all'ASL.",
+    "cronologia": [
+     {
+      "data": "10-16 ottobre",
+      "fatto": "Periodo coperto dall'ultimo aggiornamento dei controlli: due non conformità per diossine nel latte di pecora a Cervinara, già bloccato. Prima erano state comunicate un'irregolarità su erba da pascolo ad Airola, una su mais trinciato a Bonea e una su erba da pascolo a Forchia.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "data": "20 ottobre",
+      "fatto": "Gli esiti vengono resi noti. Il Comitato Salute e Ambiente lancia un appello alla filiera del latte perché chieda i controlli all'ASL.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Due non conformità per diossine nel latte di pecora a Cervinara; latte bloccato. Suoli agricoli: nessun superamento delle soglie nei nove esiti definitivi (3 Airola, 2 San Martino Valle Caudina, uno ciascuno Arienzo, Cervinara, Rotondi, Santa Maria a Vico).",
+      "fonti": [
+       "Ottopagine",
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Esiti favorevoli per uva, melanzane ed erba medica ad Airola, uva a San Martino Valle Caudina, zucca a Cervinara. A Forchia restano «in conferma» due risultati sulle olive e uno sul latte di pecora; altre 14 registrazioni sui suoli sono in lavorazione.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Come gli animali di Cervinara siano stati esposti alle diossine: le verifiche sono in corso.",
+     "Gli esiti ancora «in conferma» a Forchia (olive e latte di pecora)."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Incendio di Airola: aggiornamento controlli suoli e produzioni agroalimentari",
+      "url": "https://www.ottopagine.it/bn/attualita/441556/incendio-di-airola-aggiornamento-controlli-suoli-e-produzioni-agroalimentari.shtml",
+      "data": "20 ott"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Incendio di Airola, nuovi controlli: due non conformità per diossine nel latte ovino a Cervinara",
+      "url": "https://www.ntr24.tv/2026/10/20/incendio-di-airola-nuovi-controlli-due-non-conformita-per-diossine-nel-latte-ovino-a-cervinara/",
+      "data": "20 ott, 10:24"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Incendio Airola: diossine nel latte ovino, immediatamente bloccato",
+      "url": "https://www.cronachedelsannio.it/sannionews24/incendio-airola-diossine-latte-ovino-immediatamente-bloccato",
+      "data": "20 ott, 11:29"
+     }
+    ]
+   },
+   "nota": "I dati si riferiscono ai prospetti dell'Istituto Zooprofilattico al 16 ottobre e dell'ARPAC al 13 ottobre; secondo Cronache del Sannio vengono da una nota della Regione Campania."
+  },
+  {
+   "id": "asia-ecocentro-chiuso-protesta",
+   "titolo": "Benevento, ecocentro di Margiacca chiuso: i mezzi dell'Asia sono bloccati dalla protesta degli autotrasportatori, possibili disservizi nella raccolta",
+   "sintesi": "Da oggi, 20 ottobre, l'ecocentro comunale di Margiacca è chiuso al pubblico. I mezzi pesanti dell'Asia non possono circolare per i blocchi e non riescono a scaricare i rifiuti raccolti. L'azienda avverte che potrebbero esserci disservizi anche nella raccolta.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-20T10:18:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/20/protesta-autotrasportatori-mezzi-dellasia-bloccati-da-oggi-chiuso-lecocentro-possibili-disservizi/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/protesta-autotrasportatori-mezzi-asia-bloccati-raccolta-dei-rifiuti-a-rischio/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/protesta-autotrasportatori-mezzi-asia-bloccati-chiuso-ecocentro/"
+    }
+   ],
+   "articolo": {
+    "cosa": "Per la protesta degli autotrasportatori, che da giorni interessa le principali strade del Sud, i mezzi dell'Asia (la società dei rifiuti di Benevento) sono fermi all'ecocentro di Margiacca: essendo pesanti non possono circolare e non raggiungono i siti dove scaricare i rifiuti. Per questo da oggi l'ecocentro è chiuso al pubblico e, dice l'azienda, in seguito potrebbero esserci problemi nella raccolta. L'Asia si scusa e chiede collaborazione ai cittadini.",
+    "cronologia": [
+     {
+      "data": "20 ottobre",
+      "fatto": "L'Asia comunica la chiusura al pubblico dell'ecocentro di Margiacca «a partire da oggi» e possibili disservizi nella raccolta.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Nota dell'Asia: mezzi bloccati all'ecocentro di Margiacca, ecocentro chiuso, possibili disservizi nella raccolta.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Per quanti giorni resterà chiuso l'ecocentro.",
+     "Se e dove la raccolta dei rifiuti salterà."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Protesta autotrasportatori, mezzi dell’Asia bloccati. Da oggi chiuso l’ecocentro, possibili disservizi",
+      "url": "https://www.ntr24.tv/2026/10/20/protesta-autotrasportatori-mezzi-dellasia-bloccati-da-oggi-chiuso-lecocentro-possibili-disservizi/",
+      "data": "20 ott, 10:18"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Protesta autotrasportatori, mezzi Asia bloccati: raccolta dei rifiuti a rischio",
+      "url": "https://www.anteprima24.it/benevento/protesta-autotrasportatori-mezzi-asia-bloccati-raccolta-dei-rifiuti-a-rischio/",
+      "data": "20 ott, 10:04"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rummo-produzione-ferma",
+   "titolo": "Benevento, il pastificio Rummo ferma la produzione: per i blocchi dei camion non arrivano più le materie prime",
+   "sintesi": "Il presidente Cosimo Rummo dice che lo stabilimento di Benevento è fermo dal 19 ottobre: non arrivano camion né cisterne e le scorte sono finite. Se lo stop dura pochi giorni la produzione si recupera, se la protesta si prolunga, avverte, il Sud rischia di restare «senza cibo né medicine».",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-20T11:10:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/20/caro-carburanti-cosimo-rummo-fermi-gli-stabilimenti-senza-grano-non-possiamo-produrre/"
+    },
+    {
+     "nome": "LabTV",
+     "url": "https://www.labtv.net/attualita/2026/10/20/caro-carburanti-rummo-ferma-la-produzione-a-benevento-se-la-protesta-continua-sud-senza-cibo-e-medicine/"
+    },
+    {
+     "nome": "Fremondoweb",
+     "url": "https://www.fremondoweb.com/attualita/pastificio-rummo-produzione-ferma-a-benevento-mancano-le-forniture-di-semola"
+    }
+   ],
+   "articolo": {
+    "cosa": "In un'intervista a Repubblica, ripresa dai giornali locali, Cosimo Rummo, presidente e amministratore delegato dell'omonimo pastificio, racconta che lo stabilimento di Benevento è fermo perché i blocchi legati alla protesta degli autotrasportatori impediscono l'arrivo delle materie prime. Per la pasta secca i supermercati hanno ancora scorte, perché dura circa due anni; i primi problemi si vedono sui prodotti freschi come frutta e verdura.",
+    "cronologia": [
+     {
+      "data": "19 ottobre",
+      "fatto": "Primo giorno di stop per lo stabilimento, senza camion né cisterne e con le scorte finite; la situazione va avanti da circa una settimana.",
+      "fonti": [
+       "NTR24",
+       "LabTV"
+      ]
+     },
+     {
+      "data": "20 ottobre",
+      "fatto": "Rummo lancia l'allarme: se il blocco dura pochi giorni la produzione si recupera, se si prolunga ci saranno gravi conseguenze sulle forniture.",
+      "fonti": [
+       "NTR24",
+       "LabTV",
+       "Fremondoweb"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Il pastificio di Benevento è fermo per mancanza di materie prime; con una protesta lunga i danni sarebbero gravi.",
+      "fonti": [
+       "NTR24",
+       "LabTV",
+       "Fremondoweb"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "NTR24 e LabTV parlano di grano che non arriva; Fremondoweb precisa che a mancare è la semola di grano duro dai mulini pugliesi.",
+      "fonti": [
+       "NTR24",
+       "LabTV",
+       "Fremondoweb"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "Quando lo stabilimento potrà ripartire.",
+     "Quanta produzione andrà persa."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Caro carburanti, Cosimo Rummo: “Fermi gli stabilimenti, senza grano non possiamo produrre”",
+      "url": "https://www.ntr24.tv/2026/10/20/caro-carburanti-cosimo-rummo-fermi-gli-stabilimenti-senza-grano-non-possiamo-produrre/",
+      "data": "20 ott, 09:52"
+     },
+     {
+      "nome": "LabTV",
+      "titolo": "Caro carburanti, Rummo ferma la produzione a Benevento: “Se la protesta continua, Sud senza cibo e medicine”",
+      "url": "https://www.labtv.net/attualita/2026/10/20/caro-carburanti-rummo-ferma-la-produzione-a-benevento-se-la-protesta-continua-sud-senza-cibo-e-medicine/",
+      "data": "20 ott, 09:43"
+     },
+     {
+      "nome": "Fremondoweb",
+      "titolo": "Pastificio Rummo, produzione ferma a Benevento: mancano le forniture di semola",
+      "url": "https://www.fremondoweb.com/attualita/pastificio-rummo-produzione-ferma-a-benevento-mancano-le-forniture-di-semola",
+      "data": "20 ott, 11:10"
+     }
+    ]
+   }
+  },
+  {
+   "id": "trenitalia-carnet-smart-working",
+   "titolo": "Trenitalia cancella i carnet Smart Working e mette 2 euro a prenotazione sull'Alta Velocità: il consigliere regionale Mastella chiede un incontro per i pendolari di Benevento e Caserta",
+   "sintesi": "Secondo il consigliere regionale Pellegrino Mastella, lo stop ai carnet Smart Working e il costo di 2 euro per ogni prenotazione dell'abbonamento Alta Velocità farebbero salire la spesa dei pendolari verso Roma. Chiede un incontro urgente con i vertici campani di Trenitalia.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-20T11:22:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/20/trenitalia-stop-a-carnet-smart-working-e-nuove-tariffe-pellegrino-mastella-chiede-incontro-per-tutelare-pendolari-di-benevento-e-caserta/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/cancellazione-carnet-smart-working-mastella-chiesto-confronto-con-vertici-trenitalia/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/stop-carnet-smart-working-pellegrino-mastella-chiede-incontro-urgente-trenitalia/"
+    }
+   ],
+   "articolo": {
+    "cosa": "Trenitalia cancella i carnet Smart Working (10 corse al mese da e per Roma) e introduce un costo di 2 euro per ogni prenotazione dell'abbonamento Alta Velocità, finora gratuita secondo i pendolari. Il consigliere regionale Pellegrino Mastella (Casa Riformista - Italia Viva - Noi di Centro) sostiene che oggi il carnet costa 129 euro al mese sia da Caserta sia da Benevento e che, per lo stesso numero di viaggi, da Benevento si potrebbero spendere 387 euro (342 da Caserta). Chiede un incontro urgente con Trenitalia, il ripristino del carnet e la revisione del costo delle prenotazioni.",
+    "cronologia": [
+     {
+      "data": "20 ottobre",
+      "fatto": "Mastella annuncia la richiesta di un incontro urgente ai vertici campani di Trenitalia.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Le cifre e le richieste sono quelle date dal consigliere regionale Mastella; i giornali riportano il suo comunicato.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "La posizione di Trenitalia, che negli articoli letti non è riportata.",
+     "Da quando le nuove regole valgono."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Trenitalia, stop a carnet Smart Working e nuove tariffe: Pellegrino Mastella chiede incontro per tutelare pendolari di Benevento e Caserta",
+      "url": "https://www.ntr24.tv/2026/10/20/trenitalia-stop-a-carnet-smart-working-e-nuove-tariffe-pellegrino-mastella-chiede-incontro-per-tutelare-pendolari-di-benevento-e-caserta/",
+      "data": "20 ott, 11:09"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Cancellazione carnet Smart Working, Mastella: “Chiesto confronto con vertici Trenitalia”",
+      "url": "https://www.anteprima24.it/benevento/cancellazione-carnet-smart-working-mastella-chiesto-confronto-con-vertici-trenitalia/",
+      "data": "20 ott, 11:22"
+     }
+    ]
+   }
+  },
+  {
+   "id": "droga-montesarchio-due-arresti",
+   "titolo": "Montesarchio, sequestrati oltre un chilo e mezzo di hashish e marijuana: arrestati due uomini",
+   "sintesi": "I Carabinieri della Compagnia di Montesarchio hanno sequestrato più di un chilo e mezzo tra hashish e marijuana dopo una perquisizione e hanno arrestato due uomini. Sono stati portati ai loro domicili in attesa dell'udienza di convalida davanti al giudice.",
+   "categoria": "cronaca",
+   "zona": "caudina",
+   "luogo": "Montesarchio",
+   "pubblicato": "2026-10-20T09:26:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/20/droga-lungo-lasse-napoli-valle-caudina-sequestrato-oltre-un-kg-e-mezzo-di-hashish-e-marijuana-due-arresti/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/blitz-antidroga-dei-carabinieri-sequestrato-oltre-un-chilo-e-mezzo-di-hashish-e-marijuana/"
+    },
+    {
+     "nome": "Il Mattino",
+     "url": "https://www.ilmattino.it/benevento/benevento_arrestati_due_uomini_per_possesso_droga_sull_asse_napoli_montesarchio_l_intervento_dei_carabinieri-9836926.html"
+    }
+   ],
+   "articolo": {
+    "cosa": "Il Nucleo Operativo e Radiomobile dei Carabinieri della Compagnia di Montesarchio, in un'attività contro lo spaccio lungo l'asse Napoli-Montesarchio, ha sequestrato oltre un chilo e mezzo di hashish e marijuana dopo una perquisizione e ha arrestato due uomini. Le loro posizioni sono al vaglio dell'Autorità giudiziaria: sono ritenuti, allo stato degli atti, responsabili di detenzione ai fini di spaccio. Sono presunti innocenti fino a sentenza definitiva.",
+    "cronologia": [
+     {
+      "data": "20 ottobre",
+      "fatto": "I Carabinieri rendono noto il sequestro e i due arresti; i due sono ai domicili in attesa della convalida davanti al giudice.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Oltre un chilo e mezzo tra hashish e marijuana; due arresti; misura pre-cautelare ai domicili in attesa della convalida.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Chi sono i due arrestati e quando è stata fatta la perquisizione (non indicati nei comunicati letti)."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Droga lungo l’asse Napoli-Valle Caudina: sequestrato oltre un kg e mezzo di hashish e marijuana. Due arresti",
+      "url": "https://www.ntr24.tv/2026/10/20/droga-lungo-lasse-napoli-valle-caudina-sequestrato-oltre-un-kg-e-mezzo-di-hashish-e-marijuana-due-arresti/",
+      "data": "20 ott, 09:26"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Blitz antidroga dei Carabinieri: sequestrato oltre un chilo e mezzo di hashish e marijuana",
+      "url": "https://www.anteprima24.it/benevento/blitz-antidroga-dei-carabinieri-sequestrato-oltre-un-chilo-e-mezzo-di-hashish-e-marijuana/",
+      "data": "20 ott, 09:23"
+     }
+    ]
+   }
+  },
+  {
+   "id": "pago-veiano-lite-ferito-marito",
+   "titolo": "Pago Veiano, lite tra marito e moglie: uomo ferito all'addome, la donna è stata fermata dai Carabinieri",
+   "sintesi": "Dopo una lite in casa a Pago Veiano un uomo è stato ferito con un oggetto acuminato ed è ricoverato al San Pio di Benevento. I giornali dicono che la moglie, una 55enne, è stata fermata dai Carabinieri; per Ottopagine è in carcere con l'ipotesi di reato di tentato omicidio.",
+   "categoria": "cronaca",
+   "zona": "fortore",
+   "luogo": "Pago Veiano",
+   "pubblicato": "2026-10-20T11:34:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/441559/litigano-poi-lei-accoltella-il-marito-arrestata-per-tentato-omicidio.shtml"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/lite-familiare-sangue-ferito-fermata/"
+    }
+   ],
+   "articolo": {
+    "cosa": "Nella notte tra il 19 e il 20 ottobre, a Pago Veiano, marito e moglie hanno litigato in casa. L'uomo è stato colpito all'addome con un oggetto acuminato ed è stato portato al San Pio di Benevento. La donna è stata fermata dai Carabinieri; per Ottopagine è una 55enne di nazionalità polacca e l'ipotesi di reato è tentato omicidio. Le indagini sono in corso: si tratta di ipotesi, non di accertamenti definitivi.",
+    "cronologia": [
+     {
+      "data": "notte 19-20",
+      "fatto": "Lite in casa, uomo ferito, arrivano Carabinieri e 118; la donna viene fermata.",
+      "fonti": [
+       "Ottopagine",
+       "Anteprima24"
+      ]
+     },
+     {
+      "data": "20 ottobre",
+      "fatto": "Ottopagine riferisce che la donna, su disposizione della sostituta procuratrice, è stata portata nel carcere di Capodimonte ed è difesa da un avvocato.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Lite tra marito e moglie a Pago Veiano; uomo ferito all'addome e ricoverato al San Pio; donna fermata dai Carabinieri.",
+      "fonti": [
+       "Ottopagine",
+       "Anteprima24"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "Ottopagine scrive che la donna «lo avrebbe accoltellato», è finita in carcere e ipotizza il tentato omicidio; Anteprima24 parla di «oggetto acuminato», di stato di fermo e dice che anche la donna è rimasta ferita, in modo più lieve.",
+      "fonti": [
+       "Ottopagine",
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Sulle condizioni dell'uomo: Ottopagine dice che era in prognosi riservata e sono migliorate dopo l'operazione; Anteprima24 le definisce gravi ma senza pericolo di vita.",
+      "fonti": [
+       "Ottopagine",
+       "Anteprima24"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "L'esatta dinamica e l'orario del fatto.",
+     "Cosa deciderà il giudice sulla convalida."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Litigano, poi lei accoltella il marito: arrestata per tentato omicidio",
+      "url": "https://www.ottopagine.it/bn/cronaca/441559/litigano-poi-lei-accoltella-il-marito-arrestata-per-tentato-omicidio.shtml",
+      "data": "20 ott, 11:04"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Lite familiare finisce nel sangue: lui ferito all’addome, lei in stato di fermo",
+      "url": "https://www.anteprima24.it/benevento/lite-familiare-sangue-ferito-fermata/",
+      "data": "20 ott, 11:34"
+     }
+    ]
+   }
+  },
   {
    "id": "tir-appia-telesina",
    "titolo": "Caro gasolio, tir fermi sull'Appia a Tufara Valle e a Castel del Lago, blocchi anche sulla Telesina a San Salvatore Telesino",
@@ -1880,7 +2344,9 @@
     "tir-appia-telesina",
     "scaffali-vuoti",
     "agricoltori-22-ottobre",
-    "mozione-caro-carburanti"
+    "mozione-caro-carburanti",
+    "rummo-produzione-ferma",
+    "asia-ecocentro-chiuso-protesta"
    ],
    "in_breve": [
     {
@@ -1923,6 +2389,13 @@
       "Il Post",
       "ANSA (17/10)",
       "Il Sole 24 Ore"
+     ]
+    },
+    {
+     "testo": "Il 20 ottobre il pastificio Rummo di Benevento risulta fermo per mancanza di materie prime e l'Asia ha chiuso l'ecocentro di Margiacca perché i suoi mezzi pesanti sono bloccati.",
+     "fonti": [
+      "NTR24 (Rummo)",
+      "NTR24 (Asia)"
      ]
     }
    ],
@@ -2212,6 +2685,15 @@
       "Ottopagine (agricoltori)",
       "NTR24"
      ]
+    },
+    {
+     "data": "19-20 ottobre",
+     "fatto": "Il pastificio Rummo di Benevento si ferma per mancanza di materie prime; a Benevento chiude l'ecocentro di Margiacca perché i mezzi dell'Asia sono bloccati.",
+     "fonti": [
+      "NTR24 (Rummo)",
+      "LabTV (Rummo)",
+      "NTR24 (Asia)"
+     ]
     }
    ],
    "non_si_sa": [
@@ -2333,6 +2815,24 @@
      "titolo": "HGV protest: road haulage talks to be held on Tuesday. Salvini ready to release the funds",
      "url": "https://en.ilsole24ore.com/art/truckers-protest-on-tuesday-round-table-discussion-on-road-haulage-salvini-ready-to-release-funds-AJzZUUnB",
      "data": "18 ott"
+    },
+    {
+     "nome": "NTR24 (Rummo)",
+     "titolo": "Caro carburanti, Cosimo Rummo: “Fermi gli stabilimenti, senza grano non possiamo produrre”",
+     "url": "https://www.ntr24.tv/2026/10/20/caro-carburanti-cosimo-rummo-fermi-gli-stabilimenti-senza-grano-non-possiamo-produrre/",
+     "data": "20 ott"
+    },
+    {
+     "nome": "LabTV (Rummo)",
+     "titolo": "Caro carburanti, Rummo ferma la produzione a Benevento: “Se la protesta continua, Sud senza cibo e medicine”",
+     "url": "https://www.labtv.net/attualita/2026/10/20/caro-carburanti-rummo-ferma-la-produzione-a-benevento-se-la-protesta-continua-sud-senza-cibo-e-medicine/",
+     "data": "20 ott"
+    },
+    {
+     "nome": "NTR24 (Asia)",
+     "titolo": "Protesta autotrasportatori, mezzi dell’Asia bloccati. Da oggi chiuso l’ecocentro, possibili disservizi",
+     "url": "https://www.ntr24.tv/2026/10/20/protesta-autotrasportatori-mezzi-dellasia-bloccati-da-oggi-chiuso-lecocentro-possibili-disservizi/",
+     "data": "20 ott"
     }
    ],
    "nota": "Correzione: nella versione delle 8:45 scrivevamo che il ministero dei Trasporti aveva convocato le associazioni per il 27 ottobre, come riportava Il Post il 16 ottobre. ANSA (17 ottobre) e Il Sole 24 Ore (18 ottobre) riportano che il ministro Salvini ha anticipato il tavolo a oggi, martedì 20 ottobre, in Prefettura a Milano. Abbiamo corretto sommario, «In breve», sezioni, domande e cronologia."
