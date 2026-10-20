@@ -1,26 +1,254 @@
 {
- "aggiornato": "2026-10-20T14:06:00+02:00",
+ "aggiornato": "2026-10-20T16:09:00+02:00",
  "giornali_letti": 15,
  "notizie": [
   {
+   "id": "benevento-comune-smartworking-dipendenti",
+   "titolo": "Benevento, il sindaco Mastella chiede lo smart working per i dipendenti comunali che abitano fuori città, per il caro carburante",
+   "sintesi": "Il sindaco ha dato indicazione alla Segretaria generale, responsabile del personale, di preparare gli atti per il lavoro a distanza dei dipendenti del Comune che non risiedono a Benevento. Il motivo è il costo del carburante e l'inflazione; l'attivazione dipenderà dalle esigenze del Comune.",
+   "categoria": "politica",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-20T13:42:00+02:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Comune di Benevento",
+     "url": "https://comune.benevento.it/novita/carovita-indirizzo-sindacale-per-smartworking-per-i-dipendenti-residenti-fuori-citt/"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/20/carovita-e-dipendenti-fuori-citta-mastella-indica-alla-segretaria-generale-la-strada-dello-smartworking/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/mastella-smartworking-dipendenti-comunali/"
+    }
+   ],
+   "articolo": {
+    "cosa": "Il sindaco Clemente Mastella ha indicato alla Segretaria generale Maria Luisa Dovetto, che guida le Risorse umane del Comune, di predisporre gli atti per dare il diritto al lavoro a distanza (smart working) ai dipendenti che risiedono fuori dal territorio di Benevento. Il sindaco cita l'inflazione di settembre al 4,1% (il dato più alto dell'ultimo triennio) e il forte aumento dei prezzi del carburante. Lo strumento sarà attivato «nei limiti del possibile» e compatibilmente con le esigenze del Comune.",
+    "cronologia": [
+     {
+      "data": "20 ottobre",
+      "fatto": "Il Comune pubblica l'indirizzo del sindaco alla Segretaria generale.",
+      "fonti": [
+       "Comune di Benevento",
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Il sindaco chiede di predisporre gli atti per lo smart working dei dipendenti comunali residenti fuori Benevento, per il caro carburante e il carovita.",
+      "fonti": [
+       "Comune di Benevento",
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando gli atti saranno pronti e da quando varrà il lavoro a distanza.",
+     "Quanti dipendenti ne potranno usufruire."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Benevento",
+      "titolo": "Carovita, indirizzo sindacale per smartworking per i dipendenti residenti fuori città",
+      "url": "https://comune.benevento.it/novita/carovita-indirizzo-sindacale-per-smartworking-per-i-dipendenti-residenti-fuori-citt/",
+      "data": "20 ott"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Carovita e dipendenti fuori città, Mastella indica alla segretaria generale la strada dello smartworking",
+      "url": "https://www.ntr24.tv/2026/10/20/carovita-e-dipendenti-fuori-citta-mastella-indica-alla-segretaria-generale-la-strada-dello-smartworking/",
+      "data": "20 ott"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Mastella: “Carovita e dipendenti comunali fuori città, applicare smartworking”",
+      "url": "https://www.cronachedelsannio.it/sannionews24/mastella-smartworking-dipendenti-comunali/",
+      "data": "20 ott"
+     }
+    ]
+   }
+  },
+  {
+   "id": "benevento-cimitero-orari-defunti",
+   "titolo": "Benevento, cimitero comunale aperto dalle 7 alle 17.30 da mercoledì 28 ottobre a martedì 3 novembre per la Commemorazione dei Defunti",
+   "sintesi": "Il Comune di Benevento comunica che il cimitero resta aperto al pubblico dal 28 ottobre al 3 novembre, dalle 7 alle 17.30. Lunedì 2 novembre alle 10 è in programma la Messa nella Chiesa Madre del cimitero.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-20T13:17:00+02:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "in_vigore_fino": "2026-11-03",
+   "fonti": [
+    {
+     "nome": "Comune di Benevento",
+     "url": "https://comune.benevento.it/novita/commemorazione-dei-defunti-gli-orari-di-apertura-del-cimitero-comunale/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/commemorazione-defunti-nuovi-orari-cimitero-benevento/"
+    }
+   ],
+   "articolo": {
+    "cosa": "In occasione della Commemorazione dei Defunti il cimitero comunale di Benevento sarà aperto al pubblico da mercoledì 28 ottobre a martedì 3 novembre 2026, dalle 7 alle 17.30. Lunedì 2 novembre, alle 10, nella Chiesa Madre all'interno del cimitero, si celebra la Messa in suffragio dei defunti.",
+    "cronologia": [
+     {
+      "data": "20 ottobre",
+      "fatto": "Il Comune comunica gli orari di apertura del cimitero per la Commemorazione dei Defunti.",
+      "fonti": [
+       "Comune di Benevento",
+       "Cronache del Sannio"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Apertura dal 28 ottobre al 3 novembre; Messa lunedì 2 novembre alle 10.",
+      "fonti": [
+       "Comune di Benevento",
+       "Cronache del Sannio"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di Benevento",
+      "titolo": "Commemorazione dei Defunti, gli orari di apertura del Cimitero Comunale",
+      "url": "https://comune.benevento.it/novita/commemorazione-dei-defunti-gli-orari-di-apertura-del-cimitero-comunale/",
+      "data": "20 ott"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Commemorazione defunti, dal 28 ottobre al 3 novembre nuovi orari per il cimitero",
+      "url": "https://www.cronachedelsannio.it/sannionews24/commemorazione-defunti-nuovi-orari-cimitero-benevento/",
+      "data": "20 ott"
+     }
+    ]
+   }
+  },
+  {
+   "id": "telese-gepos-licenziamenti-sit-in",
+   "titolo": "Telese Terme, clinica Gepos: licenziati due tecnici di laboratorio dopo oltre 30 anni, sit-in dei sindacati lunedì 26 ottobre",
+   "sintesi": "FP Cgil e Uil Fpl denunciano il licenziamento di due tecnici del laboratorio analisi della clinica Gepos di Telese Terme, con oltre trent'anni di servizio. Chiedono chiarimenti all'azienda e verifiche all'Asl, e annunciano un sit-in davanti alla clinica lunedì 26 ottobre dalle 10 alle 13.",
+   "categoria": "altro",
+   "zona": "telesina",
+   "luogo": "Telese Terme",
+   "pubblicato": "2026-10-20",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/20/gepos-licenziati-due-tecnici-di-laboratorio-dopo-oltre-30-anni-sit-in-dei-sindacati-lunedi-a-telese/"
+    },
+    {
+     "nome": "LabTV",
+     "url": "https://www.labtv.net/attualita/2026/10/20/gepos-due-tecnici-di-laboratorio-licenziati-dopo-oltre-30-anni-i-sindacati-proclamano-un-sit-in/"
+    },
+    {
+     "nome": "Fremondoweb",
+     "url": "https://www.fremondoweb.com/notizie-dalla-valle-telesina/gepos-licenziati-due-tecnici-di-laboratorio-i-sindacati-annunciano-un-sit-in-a-telese/"
+    }
+   ],
+   "articolo": {
+    "cosa": "I sindacati FP Cgil e Uil Fpl dicono che alla clinica Gepos di Telese Terme due tecnici di laboratorio, entrambi con più di trent'anni di servizio, sono stati o stanno per essere licenziati. Chiedono all'azienda di spiegare i motivi e all'Asl di Benevento di controllare l'organizzazione del laboratorio. Il sit-in (presidio di protesta) è fissato davanti alla clinica per lunedì 26 ottobre, dalle 10 alle 13. La versione dell'azienda non è riportata dai giornali letti.",
+    "cronologia": [
+     {
+      "data": "20 ottobre",
+      "fatto": "I sindacati rendono nota la vicenda: secondo NTR24 quella mattina hanno saputo del licenziamento di un tecnico, mentre la lettera per il secondo non sarebbe ancora stata consegnata perché è in ferie. Annunciano il sit-in del 26 ottobre.",
+      "fonti": [
+       "NTR24",
+       "LabTV",
+       "Fremondoweb"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Due tecnici di laboratorio con oltre trent'anni di servizio alla Gepos di Telese Terme; la vertenza è sollevata da FP Cgil e Uil Fpl; sit-in davanti alla clinica lunedì 26 ottobre.",
+      "fonti": [
+       "NTR24",
+       "LabTV",
+       "Fremondoweb"
+      ]
+     },
+     {
+      "testo": "I sindacati chiedono all'azienda di chiarire le ragioni e all'Asl di Benevento di fare verifiche sul laboratorio.",
+      "fonti": [
+       "NTR24",
+       "Fremondoweb"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "Fremondoweb scrive che i due tecnici sono «interessati da provvedimenti di licenziamento»; NTR24 precisa che per ora i sindacati hanno appreso di un solo licenziamento e che al secondo lavoratore la lettera non sarebbe stata ancora consegnata.",
+      "fonti": [
+       "Fremondoweb",
+       "NTR24"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "Le ragioni dei licenziamenti secondo l'azienda.",
+     "Se l'Asl farà verifiche.",
+     "L'orario esatto in cui è stato dato l'annuncio ai lavoratori."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "GEPOS, licenziati due tecnici di laboratorio dopo oltre 30 anni. Sit-in dei sindacati lunedì a Telese",
+      "url": "https://www.ntr24.tv/2026/10/20/gepos-licenziati-due-tecnici-di-laboratorio-dopo-oltre-30-anni-sit-in-dei-sindacati-lunedi-a-telese/",
+      "data": "20 ott"
+     },
+     {
+      "nome": "LabTV",
+      "titolo": "GEPOS, due tecnici di laboratorio licenziati dopo oltre 30 anni: i sindacati proclamano un sit-in",
+      "url": "https://www.labtv.net/attualita/2026/10/20/gepos-due-tecnici-di-laboratorio-licenziati-dopo-oltre-30-anni-i-sindacati-proclamano-un-sit-in/",
+      "data": "20 ott"
+     },
+     {
+      "nome": "Fremondoweb",
+      "titolo": "Gepos, licenziati due tecnici di laboratorio: i sindacati annunciano un sit-in a Telese",
+      "url": "https://www.fremondoweb.com/notizie-dalla-valle-telesina/gepos-licenziati-due-tecnici-di-laboratorio-i-sindacati-annunciano-un-sit-in-a-telese/",
+      "data": "20 ott"
+     }
+    ]
+   }
+  },
+  {
    "id": "allerta-arancione-sannio-21-ottobre",
-   "titolo": "Sannio, allerta arancione per maltempo mercoledì 21 ottobre: scuole, parchi e cimitero chiusi a Montesarchio, a Benevento scuole chiuse in arrivo",
-   "sintesi": "La Protezione civile della Regione Campania ha emesso un'allerta arancione, per tutta la giornata di mercoledì 21 ottobre, anche per la zona «Alta Irpinia e Sannio» e per «Alto Volturno e Matese»: temporali anche forti, soprattutto al mattino. A Montesarchio un'ordinanza chiude scuole, villa comunale, parchi e cimitero; a Benevento si attende l'ordinanza per fermare le lezioni.",
+   "titolo": "Sannio, allerta arancione per maltempo mercoledì 21 ottobre: a Benevento e Montesarchio chiusi scuole, parchi e cimitero",
+   "sintesi": "La Protezione civile della Regione Campania ha emesso un'allerta arancione per tutta la giornata di mercoledì 21 ottobre, anche per la zona «Alta Irpinia e Sannio»: temporali anche forti, soprattutto al mattino. A Benevento e a Montesarchio le ordinanze dei sindaci chiudono scuole, villa comunale, parchi e cimitero.",
    "categoria": "meteo",
    "zona": "provincia",
    "luogo": "Sannio",
-   "pubblicato": "2026-10-20",
+   "pubblicato": "2026-10-20T14:54:00+02:00",
    "stato": "ufficiale",
    "rilevante": true,
    "in_vigore_fino": "2026-10-21",
    "fonti": [
+    {
+     "nome": "Comune di Benevento",
+     "url": "https://comune.benevento.it/novita/allerta-meteo-domani-21-ottobre-chiuse-scuole-villa-comunale-parchi-e-cimitero/"
+    },
     {
      "nome": "Cronache del Sannio",
      "url": "https://www.cronachedelsannio.it/sannionews24/maltempo-allerta-meteo-arancione-scuole-chiuse-montesarchio/"
     },
     {
      "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/20/benevento-mercoledi-scuole-chiuse-per-maltempo-si-attende-lufficialita-ordinanze-anche-in-provincia/"
+     "url": "https://www.ntr24.tv/2026/10/20/benevento-mercoledi-scuole-chiuse-per-maltempo-ordinanze-anche-in-provincia/"
     },
     {
      "nome": "Fremondoweb",
@@ -28,11 +256,11 @@
     },
     {
      "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/maltempo-scuole-chiuse-a-benevento-dopo-lallerta-arancione/"
+     "url": "https://www.anteprima24.it/benevento/allerta-meteo-scattano-le-chiusure-per-domani-21-ottobre-ecco-tutti-i-provvedimenti/"
     },
     {
      "nome": "BeneventoNews24",
-     "url": "https://www.beneventonews24.it/2026/10/20/allerta-meteo-arancione-nel-sannio-mercoledi-giornata-di-maltempo/"
+     "url": "https://www.beneventonews24.it/2026/10/20/allerta-maltempo-domani-a-benevento-scuole-chiuse/"
     },
     {
      "nome": "Meteoalarm",
@@ -40,7 +268,7 @@
     }
    ],
    "articolo": {
-    "cosa": "La Protezione civile della Regione Campania ha emanato un avviso di allerta arancione valido dalla mezzanotte e per tutta la giornata di mercoledì 21 ottobre per le zone 1, 2, 3 e 4, cioè anche per l'Alto Volturno e Matese (Telese, Cerreto, Airola…) e per l'Alta Irpinia e Sannio (Benevento, Montesarchio, Fortore…). Si prevedono piogge e temporali, anche forti, soprattutto nella prima parte della giornata, con possibili frane, caduta di massi, allagamenti e torrenti che si ingrossano. Il sindaco di Montesarchio ha già chiuso scuole, villa comunale, parchi e cimitero; a Benevento le scuole chiuderanno, ma l'ordinanza non era ancora uscita.",
+    "cosa": "La Protezione civile della Regione Campania ha emanato un avviso di allerta arancione valido dalla mezzanotte e per tutta la giornata di mercoledì 21 ottobre per le zone 1, 2, 3 e 4, cioè anche per l'Alto Volturno e Matese (Telese, Cerreto, Airola…) e per l'Alta Irpinia e Sannio (Benevento, Montesarchio, Fortore…). Si prevedono piogge e temporali, anche forti, soprattutto nella prima parte della giornata, con possibili frane, caduta di massi, allagamenti e torrenti che si ingrossano. Il sindaco di Montesarchio ha già chiuso scuole, villa comunale, parchi e cimitero; a Benevento il sindaco Mastella ha firmato un'ordinanza che chiude per mercoledì scuole di ogni ordine e grado (asili nido compresi), villa comunale, parchi cittadini e cimitero (restano garantiti i funerali).",
     "cronologia": [
      {
       "data": "20 ottobre, 12:09",
@@ -59,11 +287,12 @@
      },
      {
       "data": "20 ottobre",
-      "fatto": "A Benevento il sindaco Mastella ha deciso di fermare le lezioni di mercoledì, ma il provvedimento formale è ancora atteso.",
+      "fatto": "Il sindaco di Benevento, Clemente Mastella, firma l'ordinanza: per mercoledì 21 chiudono scuole pubbliche, private e paritarie di ogni ordine e grado, asili nido compresi (esclusi Conservatorio «N. Sala» e Università, che decidono da sé), villa comunale, parchi cittadini e cimitero, con funerali e attività interne urgenti garantiti.",
       "fonti": [
+       "Comune di Benevento",
        "Anteprima24",
-       "Cronache del Sannio",
-       "NTR24"
+       "NTR24",
+       "BeneventoNews24"
       ]
      }
     ],
@@ -92,10 +321,10 @@
       ]
      },
      {
-      "testo": "Benevento: scuole chiuse mercoledì per decisione del sindaco, ordinanza formale attesa.",
+      "testo": "Benevento: scuole di ogni ordine e grado (asili nido compresi), villa comunale, parchi e cimitero chiusi mercoledì 21 ottobre; esclusi Conservatorio e Università; funerali garantiti. Il sindaco invita alla prudenza per rischio frane e raffiche di vento.",
       "fonti": [
+       "Comune di Benevento",
        "Anteprima24",
-       "Cronache del Sannio",
        "NTR24"
       ]
      }
@@ -111,10 +340,15 @@
     ],
     "non_si_sa": [
      "Il livello dell'allerta per le tre zone del Sannio nel bollettino nazionale della Protezione civile, che per il 21 ottobre non è ancora uscito.",
-     "Quali altri Comuni del Sannio chiuderanno scuole, parchi e cimiteri.",
-     "L'orario esatto dell'ordinanza di Benevento e se riguarderà anche parchi e cimitero."
+     "Quali altri Comuni del Sannio chiuderanno scuole, parchi e cimiteri: NTR24 scrive che a Moiano la didattica è sospesa, ma non ho trovato l'ordinanza del Comune."
     ],
     "fonti": [
+     {
+      "nome": "Comune di Benevento",
+      "titolo": "Allerta meteo, domani 21 ottobre chiuse le scuole, la villa comunale, i parchi e il cimitero",
+      "url": "https://comune.benevento.it/novita/allerta-meteo-domani-21-ottobre-chiuse-scuole-villa-comunale-parchi-e-cimitero/",
+      "data": "20 ott"
+     },
      {
       "nome": "Cronache del Sannio",
       "titolo": "Maltempo, allerta meteo arancione domani: attesi provvedimenti, scuole chiuse a Montesarchio",
@@ -123,8 +357,8 @@
      },
      {
       "nome": "NTR24",
-      "titolo": "Benevento, mercoledì scuole chiuse per maltempo: si attende l’ufficialità. Ordinanze anche in provincia",
-      "url": "https://www.ntr24.tv/2026/10/20/benevento-mercoledi-scuole-chiuse-per-maltempo-si-attende-lufficialita-ordinanze-anche-in-provincia/",
+      "titolo": "Benevento, mercoledì scuole chiuse per maltempo. Ordinanze anche in provincia",
+      "url": "https://www.ntr24.tv/2026/10/20/benevento-mercoledi-scuole-chiuse-per-maltempo-ordinanze-anche-in-provincia/",
       "data": "20 ott"
      },
      {
@@ -135,14 +369,14 @@
      },
      {
       "nome": "Anteprima24",
-      "titolo": "Maltempo, scuole chiuse domani a Benevento dopo l’allerta arancione",
-      "url": "https://www.anteprima24.it/benevento/maltempo-scuole-chiuse-a-benevento-dopo-lallerta-arancione/",
+      "titolo": "Allerta meteo, scattano le chiusure per domani 21 ottobre: ecco tutti i provvedimenti",
+      "url": "https://www.anteprima24.it/benevento/allerta-meteo-scattano-le-chiusure-per-domani-21-ottobre-ecco-tutti-i-provvedimenti/",
       "data": "20 ott"
      },
      {
       "nome": "BeneventoNews24",
-      "titolo": "Allerta meteo arancione nel Sannio, mercoledì giornata di maltempo",
-      "url": "https://www.beneventonews24.it/2026/10/20/allerta-meteo-arancione-nel-sannio-mercoledi-giornata-di-maltempo/",
+      "titolo": "Allerta maltempo, domani a Benevento scuole chiuse",
+      "url": "https://www.beneventonews24.it/2026/10/20/allerta-maltempo-domani-a-benevento-scuole-chiuse/",
       "data": "20 ott"
      },
      {
@@ -537,7 +771,7 @@
   {
    "id": "pago-veiano-lite-ferito-marito",
    "titolo": "Pago Veiano, lite tra marito e moglie: uomo ferito all'addome, la donna è stata fermata dai Carabinieri",
-   "sintesi": "Dopo una lite in casa a Pago Veiano un uomo è stato ferito con un oggetto acuminato ed è ricoverato al San Pio di Benevento. I giornali dicono che la moglie, una 55enne, è stata fermata dai Carabinieri; per Ottopagine è in carcere con l'ipotesi di reato di tentato omicidio.",
+   "sintesi": "Dopo una lite in casa a Pago Veiano un uomo di circa 70 anni è stato ferito ed è ricoverato al San Pio di Benevento, dove è stato operato. La moglie, una 55enne, è stata fermata dai Carabinieri; per Ottopagine e BeneventoNews24 è in carcere con l'ipotesi di reato di tentato omicidio.",
    "categoria": "cronaca",
    "zona": "fortore",
    "luogo": "Pago Veiano",
@@ -552,6 +786,10 @@
     {
      "nome": "Anteprima24",
      "url": "https://www.anteprima24.it/benevento/lite-familiare-sangue-ferito-fermata/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/20/pago-veiano-accoltella-il-marito-al-torace-e-alladdome-55enne-arrestata-per-tentato-omicidio/"
     }
    ],
    "articolo": {
@@ -580,6 +818,12 @@
        "Ottopagine",
        "Anteprima24"
       ]
+     },
+     {
+      "testo": "L'uomo, di circa 70 anni, è stato operato al San Pio; le condizioni sono gravi ma non sarebbe in pericolo di vita; il movente della lite non è chiaro.",
+      "fonti": [
+       "BeneventoNews24"
+      ]
      }
     ],
     "divergono": [
@@ -596,10 +840,17 @@
        "Ottopagine",
        "Anteprima24"
       ]
+     },
+     {
+      "testo": "BeneventoNews24 scrive che la donna avrebbe colpito il marito con più fendenti «al torace e all'addome» e che è stata portata nel carcere di Benevento con l'accusa di tentato omicidio; Anteprima24 parla solo di addome.",
+      "fonti": [
+       "BeneventoNews24",
+       "Anteprima24"
+      ]
      }
     ],
     "non_si_sa": [
-     "L'esatta dinamica e l'orario del fatto.",
+     "L'esatta dinamica e l'orario del fatto (BeneventoNews24 scrive «ieri sera», gli altri la notte).",
      "Cosa deciderà il giudice sulla convalida."
     ],
     "fonti": [
@@ -614,6 +865,12 @@
       "titolo": "Lite familiare finisce nel sangue: lui ferito all’addome, lei in stato di fermo",
       "url": "https://www.anteprima24.it/benevento/lite-familiare-sangue-ferito-fermata/",
       "data": "20 ott, 11:34"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Pago Veiano, accoltella il marito al torace e all’addome: 55enne arrestata per tentato omicidio",
+      "url": "https://www.beneventonews24.it/2026/10/20/pago-veiano-accoltella-il-marito-al-torace-e-alladdome-55enne-arrestata-per-tentato-omicidio/",
+      "data": "20 ott"
      }
     ]
    }
