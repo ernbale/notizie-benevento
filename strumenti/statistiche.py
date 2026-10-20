@@ -130,7 +130,24 @@ def visite(sito, token, adesso):
     fz = fuso()
     oggi = adesso.astimezone(fz).date()
     inizio_locale = dt.datetime.combine(oggi - dt.timedelta(days=GIORNI - 1), dt.time(0), fz)
-    a = cloudflare(token, inizio_locale.astimezone(dt.timezone.utc), adesso.astimezone(dt.timezone.utc))
+    # Cloudflare risponde vuoto (senza errore) se il periodo supera 8 giorni: si chiede una settimana alla volta
+    # e si sommano i pezzi.
+    a = {"ore": [], "pagine": [], "da": [], "dispositivi": [], "paesi": [], "browser": []}
+    da, fine = inizio_locale.astimezone(dt.timezone.utc), adesso.astimezone(dt.timezone.utc)
+    while da < fine:
+        a_fine = min(da + dt.timedelta(days=7), fine)
+        pezzo = cloudflare(token, da, a_fine)
+        for k in a:
+            a[k] += pezzo.get(k, [])
+        da = a_fine
+    for k, dim in (("pagine", "requestPath"), ("da", "refererHost"), ("dispositivi", "deviceType"),
+                   ("paesi", "countryName"), ("browser", "userAgentBrowser")):
+        somme = collections.OrderedDict()
+        for r in a[k]:
+            chiave = r["dimensions"][dim]
+            t = somme.setdefault(chiave, {"count": 0, "sum": {"visits": 0}, "dimensions": {dim: chiave}})
+            t["count"] += r["count"]; t["sum"]["visits"] += r["sum"]["visits"]
+        a[k] = sorted(somme.values(), key=lambda r: (r["count"] if k == "pagine" else r["sum"]["visits"]), reverse=True)
     per_giorno = collections.OrderedDict(((oggi - dt.timedelta(days=GIORNI - 1 - i)).isoformat(), [0, 0])
                                          for i in range(GIORNI))
     per_ora = [[0, 0] for _ in range(24)]
