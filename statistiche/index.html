@@ -306,10 +306,58 @@
     m.appendChild(el("h2", "", "Google"));
     m.appendChild(el("p", "sotto", "Quante volte il sito compare nelle ricerche, quanti clic riceve e con quali parole."));
     if (G.stato !== "ok") {
-      var ag = el("div", "avviso"); ag.appendChild(el("b", "", "Da collegare"));
+      var ag = el("div", "avviso"); ag.appendChild(el("b", "", G.stato === "errore" ? "Search Console non ha risposto" : "Da collegare"));
       ag.appendChild(document.createTextNode((G.messaggio || "") + " Intanto i numeri si vedono in "));
       var lk = el("a", "", "Search Console"); lk.href = "https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Anotiziebenevento.it"; lk.rel = "noopener";
-      ag.appendChild(lk); ag.appendChild(document.createTextNode(" (i primi dati arrivano 2-3 giorni dopo l'iscrizione).")); m.appendChild(ag);
+      ag.appendChild(lk); ag.appendChild(document.createTextNode(".")); m.appendChild(ag);
+    } else {
+      var T = G.totali || {};
+      var ng = el("div", "numeri");
+      ng.appendChild(numero("Clic da Google", num(T.clic), "ultimi 28 giorni"));
+      ng.appendChild(numero("Comparse nelle ricerche", num(T.impressioni), "volte che il sito è apparso"));
+      ng.appendChild(numero("Clic su 100 comparse", T.impressioni ? String(T.ctr).replace(".", ",") + "%" : "–", "quanti scelgono il sito"));
+      ng.appendChild(numero("Posizione media", T.impressioni ? String(T.posizione).replace(".", ",") : "–", "1 = primo risultato"));
+      m.appendChild(ng);
+      if (!T.impressioni) {
+        var a0 = el("div", "avviso"); a0.style.marginTop = "12px"; a0.appendChild(el("b", "", "Ancora nessun dato da Google"));
+        a0.appendChild(document.createTextNode("Search Console è collegata. Su un sito nuovo i primi numeri arrivano di solito 2-3 giorni dopo l'iscrizione."));
+        m.appendChild(a0);
+      }
+      var gg = el("div", "griglia");
+      var rgg = riquadro("Giorno per giorno");
+      rgg.appendChild(colonne((G.giorni || []).map(function (x, i, arr) {
+        return { v: x.clic, v2: null, etichetta: i % 5 === 4 || i === arr.length - 1 ? giornoBreve(x.data) : "",
+                 titolo: giornoBreve(x.data) + ": " + num(x.clic) + " clic, " + num(x.impressioni) + " comparse" };
+      }), { titolo: "Clic da Google per giorno", colore: "#1d4f91" }));
+      rgg.appendChild(el("p", "nota", "Clic al giorno. Gli ultimi 2 giorni sono provvisori: Google li completa dopo."));
+      rgg.classList.add("largo"); gg.appendChild(rgg);
+      function tabellaG(righe, chiave, titoloCol, link) {
+        var box = el("div", "tabella");
+        if (!righe || !righe.length) { box.appendChild(el("p", "vuoto", "Ancora nessun dato.")); return box; }
+        var t = el("table"), th = el("thead"), tr = el("tr");
+        [titoloCol, "Clic", "Comparse", "Posizione"].forEach(function (h, i) { tr.appendChild(el("th", i ? "num" : "", h)); });
+        th.appendChild(tr); t.appendChild(th);
+        var tb = el("tbody");
+        righe.slice(0, 20).forEach(function (r) {
+          var x = el("tr"), c = el("td");
+          if (link) { var l = el("a", "", r.titolo || r.percorso); l.href = r.percorso; l.target = "_blank"; l.rel = "noopener"; c.appendChild(l); }
+          else c.textContent = r[chiave];
+          x.appendChild(c); x.appendChild(el("td", "num", num(r.clic))); x.appendChild(el("td", "num", num(r.impressioni)));
+          x.appendChild(el("td", "num", String(r.posizione).replace(".", ",")));
+          tb.appendChild(x);
+        });
+        t.appendChild(tb); box.appendChild(t); return box;
+      }
+      gg.appendChild(riquadro("Le ricerche che portano al sito", tabellaG(G.ricerche, "ricerca", "Ricerca")));
+      gg.appendChild(riquadro("Le pagine che escono su Google", tabellaG(G.pagine, "percorso", "Pagina", true)));
+      var extra = el("div");
+      extra.appendChild(barre((G.dispositivi || []).map(function (d) { return { nome: d.nome, visite: d.clic }; }), "visite"));
+      var dn = [];
+      if (G.news) dn.push("Google News: " + num(G.news.clic) + " clic su " + num(G.news.impressioni) + " comparse");
+      if (G.discover) dn.push("Discover (le notizie consigliate sul telefono): " + num(G.discover.clic) + " clic su " + num(G.discover.impressioni) + " comparse");
+      if (dn.length) extra.appendChild(el("p", "nota", dn.join(". ") + "."));
+      gg.appendChild(riquadro("Clic per dispositivo", extra));
+      m.appendChild(gg);
     }
 
     // --- il sito ---
