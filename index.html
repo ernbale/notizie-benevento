@@ -105,11 +105,12 @@
   .spalla h2 { font-size: 22px; }
   .spalla .sintesi { display: none; } /* come nei giornali: in spalla solo il titolo, il riassunto è nell'articolo */
   .altre { margin-top: 6px; }
-  /* stretch: le due notizie affiancate hanno la stessa altezza, così le righe di separazione stanno in fila */
-  .altre-griglia { display: grid; grid-template-columns: 1fr 1fr; column-gap: 40px; align-items: stretch; position: relative; }
+  /* due colonne che scorrono ognuna per conto suo (sfalsate, senza buchi), come nei giornali */
+  .altre-griglia { display: grid; grid-template-columns: 1fr 1fr; column-gap: 40px; align-items: start; position: relative; }
+  .altre-col { min-width: 0; }
   /* la riga verticale tra le due colonne, come tra l'apertura e la spalla */
   .altre-griglia::before { content: ""; position: absolute; top: 0; bottom: 16px; left: 50%; border-left: 1px solid var(--riga); }
-  .altre-griglia .notizia:last-child { border-bottom: 1px solid var(--riga); }
+  .altre-col .notizia:last-child { border-bottom: 1px solid var(--riga); }
   .avvisi-box { margin-bottom: 18px; }
   .avvisi-box ul { list-style: none; padding: 0; margin: 0; }
   .avvisi-box li { padding: 8px 0; border-bottom: 1px solid var(--riga); font: 600 15px/1.3 var(--serif); }
@@ -249,6 +250,9 @@
     .testa-pagina, .altre-griglia { grid-template-columns: 1fr; }
     .testa-pagina > div + div { border-left: 0; padding-left: 0; margin-left: 0; }
     .altre-griglia::before { display: none; }
+    /* sul telefono una colonna sola, dalla più recente: le notizie tornano nel loro ordine */
+    .altre-griglia { display: flex; flex-direction: column; }
+    .altre-col { display: contents; }
     .spalla h2 { font-size: 22px; }
     .appro h1 { font-size: 30px; }
     .appro p, .appro li { font-size: 17px; }
@@ -965,8 +969,17 @@
     if (spalla.length) testa.appendChild(dx);
     c1.appendChild(testa);
     var altre = el("section", "altre", [el("h3", "titolo-col", ["Le altre notizie, dalla più recente"])]);
-    var ag = el("div", "altre-griglia", []);
-    resto.forEach(function (n) { ag.appendChild(scheda(n)); });
+    // ogni notizia va nella colonna più corta finora (altezza stimata: foto, titolo, riassunto), così le due
+    // colonne finiscono più o meno insieme; «order» tiene l'ordine giusto sul telefono, dove la colonna è una sola
+    var ag = el("div", "altre-griglia", []), colonne = [el("div", "altre-col", []), el("div", "altre-col", [])], alto = [0, 0];
+    resto.forEach(function (n, i) {
+      var k = alto[0] <= alto[1] ? 0 : 1, sc = scheda(n);
+      sc.style.order = String(i);
+      colonne[k].appendChild(sc);
+      alto[k] += 120 + (fotoTema(n, "") ? 230 : 0) + String(n.titolo || "").length * 0.4 + String(n.sintesi || "").length * 0.15;
+    });
+    ag.appendChild(colonne[0]);
+    ag.appendChild(colonne[1]);
     altre.appendChild(ag);
     c1.appendChild(altre);
     if (!resto.length) altre.style.display = "none";
