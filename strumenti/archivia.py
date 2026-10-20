@@ -319,9 +319,14 @@ def main():
           f"archiviate ora {len(vanno)} notizie e {len(vanno_ap)} approfondimenti; in archivio in tutto {len(voci)}.")
     for x in avv:
         print("AVVISO:", x)
+    # notizie.json va sempre pubblicato: l'agente lo ha appena aggiornato anche quando non si archivia niente
+    # (se è uguale a quello online, pubblica.py dice «niente da pubblicare»).
+    notizie_da_segnare = not any(p == p_notizie for p, _ in da_scrivere)
     if a.prova:
         for p, _ in da_scrivere:
             print("CAMBIEREBBE:", os.path.relpath(p, base))
+        if notizie_da_segnare:
+            print("CAMBIEREBBE: notizie.json")
         print("PROVA: niente è stato scritto")
         return
     os.makedirs(cart_arch, exist_ok=True)
@@ -332,6 +337,8 @@ def main():
             f.write(t)
         os.replace(tmp, p)
         print("CAMBIATO:", os.path.relpath(p, base))
+    if notizie_da_segnare:
+        print("CAMBIATO: notizie.json")
     print("OK")
 
 
