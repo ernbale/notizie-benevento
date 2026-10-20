@@ -4,7 +4,7 @@ Report automatico delle notizie di Benevento e provincia, confrontate tra i gior
 Una notizia compare solo se la riportano almeno due testate diverse oppure una fonte ufficiale.
 Le notizie appartengono ai giornali citati: qui ci sono solo un riassunto breve e i link agli articoli originali.
 
-Sito: https://ernbale.github.io/notizie-benevento/
+Sito: https://notiziebenevento.it (notiziebenevento.com rimanda qui)
 
 ## Come è fatto
 
