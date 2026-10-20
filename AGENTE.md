@@ -16,7 +16,9 @@ quello nuovo.
    giornale contano come una fonte.
 3. **Cronaca con persone coinvolte:** solo con almeno due testate. Le accuse si riportano **con le parole esatte
    dei giornali** («indagato», «arrestato», «denunciato», «presunto»): mai aggiungere, mai riassumere un'accusa
-   con parole più pesanti. Nomi di vittime minorenni: mai.
+   con parole più pesanti. Nomi di vittime minorenni (anche se oggi sono maggiorenni ma erano minorenni al
+   momento del fatto): mai, da nessuna parte. Se il titolo di un articolo fonte contiene quel nome, nell'elenco
+   fonti scrivi il titolo esatto ma con il nome sostituito da «[nome omesso]».
 4. **Controlla sempre la data** di ogni articolo. Un articolo vecchio riproposto in homepage non è una notizia
    di oggi. Gli orari INGV sono in UTC: convertili in ora italiana.
 5. **Titoli che dicono il fatto, niente acchiappa-clic.** Niente domande, niente «choc», «incredibile», «ecco
@@ -26,11 +28,16 @@ quello nuovo.
    asfalto; ponteggio → impalcatura; «si è reso necessario l'intervento» → «sono intervenuti». Se una parola
    tecnica serve, spiegala tra parentesi.
 7. **Testo tuo, mai copiato.** Non riprendere frasi dei giornali (al massimo citazioni brevi tra virgolette,
-   attribuite). Niente foto dei giornali. I **titoli degli articoli fonte** nell'elenco fonti restano esatti.
+   attribuite). Niente foto dei giornali. I **titoli degli articoli fonte** nell'elenco fonti restano esatti
+   (unica eccezione: il nome di un minore, vedi regola 3).
 8. **Nel dubbio, non pubblicare.** Meglio una notizia in meno che una sbagliata.
+9. **Politica locale solo se cambia qualcosa per la gente:** delibere, soldi stanziati, scuole, servizi, tasse,
+   strade, decisioni di Consigli e Giunte. Niente comunicati di partito, scontri tra maggioranza e opposizione,
+   mozioni bocciate o dichiarazioni senza effetti pratici.
 
 ## Cosa leggere a ogni giro
 
+I giri sono ogni 2 ore e sono **tutti completi**: a ogni giro leggi tutto quello che segue, Comuni compresi.
 Lavora in parallelo (6-8 letture insieme). Per ogni fonte tieni nota: letta / non raggiungibile / cosa c'era.
 
 **Fonti ufficiali (sempre):**
@@ -47,7 +54,7 @@ labtv.net · cronachedelsannio.it/sannionews24/ · fremondoweb.com/category/noti
 corrieresannita.it · gazzettabenevento.it · anteprima24.it/benevento/ · infosannionews.it · beneventogiornale.com ·
 beneventonews24.it · ilquaderno.it · realtasannita.it · ilmattino.it/benevento/
 
-**Comuni senza feed (solo nei giri delle 7, 13 e 19):** pagine notizie di
+**Comuni senza feed (a ogni giro):** pagine notizie di
 `www.comune.<nome>.bn.it` per montesarchio, santagatadegoti, sangiorgiodelsannio, airola, sanbartolomeoingaldo,
 morcone, cerretosannita, guardiasanframondi, solopaca, sansalvatoretelesino, apice, ceppaloni, paduli, pietrelcina,
 ponte, vitulano, cusanomutri, faicchio, amorosi. Cerca avvisi su strade, scuole, acqua, ordinanze.
@@ -98,6 +105,7 @@ ponte, vitulano, cusanomutri, faicchio, amorosi. Cerca avvisi su strade, scuole,
     "zona": "benevento|telesina|caudina|fortore|provincia",
     "luogo": "paese o località", "pubblicato": "ISO dell'articolo fonte più recente, oppure solo AAAA-MM-GG se l'ora non è scritta",
     "stato": "confermata|ufficiale", "rilevante": false,
+    "in_vigore_fino": "AAAA-MM-GG, solo per avvisi ufficiali con una scadenza (lavori, divieti, ordinanze)",
     "fonti": [ {"nome": "Testata", "url": "link all'articolo"} ],
     "nota": "solo se serve una correzione",
     "articolo": {
@@ -123,6 +131,10 @@ ponte, vitulano, cusanomutri, faicchio, amorosi. Cerca avvisi su strade, scuole,
   `articolo.fonti` (o `approfondimento.fonti`). Se citi due articoli dello stesso giornale, distinguili:
   «Ottopagine (19/10)», «Ottopagine (20/10)».
 - `fonti` della notizia (quelle in prima pagina): una per testata, l'articolo più recente.
-- Tieni le notizie degli **ultimi 3 giorni** (per `pubblicato`); più vecchie solo se collegate a un approfondimento attivo.
+- `rilevante` c'è sempre, come `true` o `false` (booleano, non testo).
+- Tieni le notizie degli **ultimi 3 giorni** (per `pubblicato`); più vecchie solo se collegate a un approfondimento attivo,
+  oppure se sono **avvisi ufficiali ancora in vigore** (strade chiuse, lavori, divieti, ordinanze su scuole o acqua):
+  quelli restano finché vale l'avviso, con `in_vigore_fino` preso dal comunicato, e si tolgono il giorno dopo quella data.
+  Se il comunicato non dà una fine, valgono i 3 giorni.
 - Prima di consegnare, **controlla il file con python**: JSON valido, id unici, categorie e zone ammesse, ogni nome
   citato esiste nell'elenco fonti, ogni url inizia con http, nessun campo obbligatorio vuoto.
