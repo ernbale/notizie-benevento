@@ -1,2 +1,11 @@
 meteo.json
 *.tmp
+# pagine fatte da strumenti/pagine.py a ogni pubblicazione (non vanno nel repository)
+/notizia/
+/approfondimento/
+/sezione/
+/zona/
+/img/n/
+/sitemap.xml
+/sitemap-notizie.xml
+/feed.xml

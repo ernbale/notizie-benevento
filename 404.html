@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Pagina non trovata – Notizie Benevento</title>
+<script>
+  // Se la pagina di una notizia non c'è ancora (o non è stata generata), la notizia si apre dentro il sito.
+  (function () {
+    var m = location.pathname.match(/^\/(notizia|approfondimento)\/([a-z0-9-]+)\/?$/);
+    if (m) location.replace("/#" + (m[1] === "notizia" ? "articolo" : "approfondimento") + "/" + m[2]);
+  })();
+</script>
+<style>
+  body { margin: 0; background: #fdeedd; color: #111; font: 17px/1.5 Georgia, serif; }
+  main { max-width: 560px; margin: 0 auto; padding: 60px 16px; }
+  h1 { font-size: 30px; margin: 0 0 12px; }
+  a { color: #1d4f91; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Pagina non trovata</h1>
+  <p>Questo indirizzo non esiste. Le notizie non vengono mai cancellate: cercale nell'<a href="/#archivio">archivio</a> o torna alla <a href="/">prima pagina</a>.</p>
+</main>
+</body>
+</html>

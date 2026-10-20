@@ -8,13 +8,24 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#fdeedd">
-<title>Notizie Benevento</title>
-<meta name="description" content="Le notizie di Benevento e provincia, confrontate tra i giornali locali. Aggiornato ogni ora.">
+<!--seo-->
+<title>Notizie Benevento oggi: ultime notizie da Benevento e provincia</title>
+<meta name="description" content="Le ultime notizie di oggi da Benevento e dal Sannio: cronaca, strade, politica, eventi e allerte, confrontate tra i giornali locali. Esce solo ciò che riportano almeno due testate o una fonte ufficiale.">
+<link rel="canonical" href="https://notiziebenevento.it/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Notizie Benevento">
 <meta property="og:title" content="Notizie Benevento">
-<meta property="og:description" content="Le notizie di Benevento e provincia, confrontate tra i giornali locali. Esce solo ciò che è riportato da almeno due fonti o da una fonte ufficiale.">
+<meta property="og:description" content="Le notizie di Benevento e provincia, confrontate tra i giornali locali. Esce solo ciò che riportano almeno due testate o una fonte ufficiale.">
+<meta property="og:url" content="https://notiziebenevento.it/">
+<meta property="og:image" content="https://notiziebenevento.it/condivisione.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:locale" content="it_IT">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"NewsMediaOrganization","@id":"https://notiziebenevento.it/#org","name":"Notizie Benevento","url":"https://notiziebenevento.it/","logo":{"@type":"ImageObject","url":"https://notiziebenevento.it/icona-512.png","width":512,"height":512},"areaServed":{"@type":"AdministrativeArea","name":"Provincia di Benevento"}},{"@type":"WebSite","@id":"https://notiziebenevento.it/#sito","url":"https://notiziebenevento.it/","name":"Notizie Benevento","inLanguage":"it-IT","publisher":{"@id":"https://notiziebenevento.it/#org"}}]}</script>
+<!--/seo-->
+<meta name="robots" content="max-image-preview:large">
+<link rel="alternate" type="application/rss+xml" title="Notizie Benevento" href="/feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -41,7 +52,7 @@
   .testata .data, .testata .agg { font-size: 13px; color: var(--grigio); }
   .testata .agg { text-align: right; }
   .testata .nome { text-align: center; text-decoration: none; }
-  .testata .nome .grande { display: block; font: 700 44px/1 var(--serif); letter-spacing: -1px; }
+  .testata .nome .grande { display: block; font: 700 44px/1 var(--serif); letter-spacing: -1px; margin: 0; }
   .testata .nome .piccolo { display: block; font: 600 13px/1.4 var(--sans); letter-spacing: 2px; text-transform: uppercase; margin-top: 4px; }
   .menu { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 4px 16px;
           padding: 10px 0; border-top: 1px solid var(--nero); border-bottom: 1px solid var(--riga); }
@@ -105,6 +116,9 @@
 
   /* approfondimento */
   .appro { max-width: 760px; margin: 0 auto; padding: 24px 0 40px; }
+  .titolo-sezione { font: 700 28px/1.2 var(--serif); letter-spacing: -.3px; margin: 6px 0 14px; }
+  .sezioni-link { font-size: 13px; }
+  .sezioni-link a { color: inherit; }
   .appro .indietro { font: 600 14px var(--sans); color: var(--blu); text-decoration: none; }
   .appro .occhiello { margin-top: 18px; }
   .appro h1 { font: 700 40px/1.12 var(--serif); letter-spacing: -.5px; margin: 6px 0 10px; }
@@ -292,7 +306,7 @@
   <header class="testata">
     <div class="data" id="data"></div>
     <a class="nome" href="#">
-      <span class="grande">Notizie Benevento</span>
+      <h1 class="grande">Notizie Benevento</h1>
       <span class="piccolo">Benevento e provincia</span>
     </a>
     <div class="agg" id="stato">Caricamento…</div>
@@ -328,6 +342,8 @@
     <p>Notizie Benevento è un report automatico: le notizie appartengono ai giornali citati. Qui ci sono solo un riassunto breve e i link agli articoli originali, da leggere per i dettagli.</p>
     <p>Una notizia compare solo se la riportano almeno due testate diverse oppure una fonte ufficiale (ANAS, INGV, Comuni, Prefettura, forze dell'ordine). Le accuse sono riportate con le parole usate dai giornali. Aggiornato ogni 2 ore, dalle 6 alle 22.</p>
     <p>Nessuna notizia viene cancellata: quando esce dalla prima pagina resta nell'<a href="#archivio">archivio</a>, allo stesso indirizzo.</p>
+    <p class="sezioni-link">Sezioni: <a href="/sezione/strade/">Strade</a> · <a href="/sezione/cronaca/">Cronaca</a> · <a href="/sezione/politica/">Politica</a> · <a href="/sezione/eventi/">Eventi</a> · <a href="/sezione/allerte/">Allerte</a> · <a href="/sezione/altro/">Altro</a> · <a href="/meteo.html">Meteo Benevento</a><br>
+      Zone: <a href="/zona/benevento/">Benevento città</a> · <a href="/zona/valle-telesina/">Valle Telesina</a> · <a href="/zona/valle-caudina/">Valle Caudina</a> · <a href="/zona/fortore/">Fortore e Tammaro</a> · <a href="/zona/altri-comuni/">Altri comuni</a> · <a href="/feed.xml">Feed RSS</a></p>
   </footer>
 </div>
 
@@ -338,6 +354,10 @@
   var filtroCat = "";
   var filtroZona = "";
   var TZ = "Europe/Rome";
+  // Le pagine fatte da strumenti/pagine.py (una per notizia, sezione o zona) dicono cosa mostrare all'apertura.
+  var FISSA = window.NB_PAGINA || null;
+  function rotta() { return location.hash || (FISSA && FISSA.rotta) || ""; }
+  function vaiA(h) { if (FISSA) location.href = "/" + h; else location.hash = h; }
 
   function testo(s) { return document.createTextNode(s == null ? "" : String(s)); }
   function el(tag, cls, figli) {
@@ -370,8 +390,10 @@
     if (g(d) === g(new Date())) return "oggi " + soloOra(iso);
     return d.toLocaleDateString("it-IT", { timeZone: TZ, day: "numeric", month: "short" }) + " " + soloOra(iso);
   }
-  function linkArticolo(n) { return "#articolo/" + encodeURIComponent(n.id); }
-  function linkAppro(a) { return "#approfondimento/" + encodeURIComponent(a.id); }
+  // Ogni notizia ha la sua pagina vera (la fa strumenti/pagine.py): è il link che segue Google e che si condivide.
+  // In prima pagina il clic la apre lo stesso senza ricaricare (vedi «apriQui» in fondo).
+  function linkArticolo(n) { return "/notizia/" + encodeURIComponent(n.id) + "/"; }
+  function linkAppro(a) { return "/approfondimento/" + encodeURIComponent(a.id) + "/"; }
 
   // Archivio: archivio/indice.json (una voce per notizia) + archivio/AAAA-MM.json (notizie complete del mese).
   var archivio = { indice: null, mesi: {} };
@@ -434,8 +456,8 @@
     a.appendChild(icona);
     return a;
   }
-  function filaCondividi(titolo, hash, conEtichetta) {
-    var url = location.origin + location.pathname + hash;
+  function filaCondividi(titolo, link, conEtichetta) {
+    var url = new URL(link, location.origin + "/").href;
     var testoMsg = titolo + " – Notizie Benevento";
     var box = el("div", "condividi", []);
     if (conEtichetta) box.appendChild(el("span", "etich", ["Condividi"]));
@@ -472,7 +494,7 @@
   document.addEventListener("click", function (e) { if (popAperto && !popAperto.wrap.contains(e.target)) chiudiPop(); });
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") chiudiPop(); });
   // Un solo pulsante «Condividi»: al clic compaiono le icone; spariscono al secondo clic o cliccando altrove.
-  function condividi(titolo, hash, grande) {
+  function condividi(titolo, link, grande) {
     var wrap = el("div", "cond-wrap", []);
     var b = el("button", "apri-condividi" + (grande ? " grande" : ""), []);
     b.type = "button";
@@ -482,7 +504,7 @@
     b.addEventListener("click", function () {
       if (popAperto && popAperto.wrap === wrap) { chiudiPop(); return; }
       chiudiPop();
-      var fila = filaCondividi(titolo, hash, false);
+      var fila = filaCondividi(titolo, link, false);
       fila.classList.add("cond-pop");
       wrap.appendChild(fila);
       b.setAttribute("aria-expanded", "true");
@@ -771,6 +793,7 @@
   }
 
   function disegnaHome(box) {
+    if (FISSA && FISSA.h1 && filtroCat === (FISSA.cat || "") && filtroZona === (FISSA.zona || "")) box.appendChild(el("h1", "titolo-sezione", [FISSA.h1]));
     var lista = filtrate();
     if (!lista.length) {
       box.appendChild(el("p", "vuoto", [(dati.notizie || []).length ? "Nessuna notizia con questi filtri." : "Il primo aggiornamento arriva a breve."]));
@@ -1316,7 +1339,7 @@
         if (!perGiorno) dove += " · " + soloData(v.pubblicato) + " " + String(v.pubblicato || "").slice(0, 4);
         var li = el("li", "", [el("span", "dove", [dove])]);
         var l = evidenzia("a", "tit-ris", it.titolo.o, a.vuota ? [] : intervalli(it.titolo, a));
-        l.href = (tipo === "approfondimento" ? "#approfondimento/" : "#articolo/") + encodeURIComponent(v.id);
+        l.href = tipo === "approfondimento" ? linkAppro(v) : linkArticolo(v);
         l.addEventListener("click", function () { ricerca.ritorno = true; ricerca.scroll = window.scrollY; });
         li.appendChild(l);
         if (it.sintesi.o || !a.vuota) li.appendChild(estratto(it, a));
@@ -1362,7 +1385,7 @@
     var box = document.getElementById("contenuto");
     var menu = document.getElementById("menu");
     box.textContent = "";
-    var mc = location.hash.match(/^#(?:archivio|cerca\/(.*))$/);
+    var mc = rotta().match(/^#(?:archivio|cerca\/(.*))$/);
     if (mc) {
       var q = "";
       try { q = decodeURIComponent(mc[1] || ""); } catch (e) { q = mc[1] || ""; }
@@ -1371,8 +1394,8 @@
       disegnaRicerca(box, q);
       return;
     }
-    ricerca.ritorno = ricerca.ritorno && /^#(articolo|approfondimento)\//.test(location.hash);
-    var m = location.hash.match(/^#(articolo|approfondimento)\/(.+)$/);
+    ricerca.ritorno = ricerca.ritorno && /^#(articolo|approfondimento)\//.test(rotta());
+    var m = rotta().match(/^#(articolo|approfondimento)\/(.+)$/);
     if (m) {
       var id = decodeURIComponent(m[2]);
       if (m[1] === "articolo") {
@@ -1385,10 +1408,10 @@
       // Non è in prima pagina: si cerca nell'archivio.
       menu.style.display = "none";
       box.appendChild(el("p", "vuoto", ["Caricamento…"]));
-      var cercato = location.hash;
+      var cercato = rotta();
       var tipo = m[1] === "articolo" ? "notizia" : "approfondimento";
       cercaInArchivio(tipo, id).then(function (x) {
-        if (location.hash !== cercato) return;
+        if (rotta() !== cercato) return;
         box.textContent = "";
         if (x && tipo === "notizia" && x.articolo) disegnaArticolo(box, x, true);
         else if (x && tipo === "approfondimento") disegnaApprofondimento(box, x, true);
@@ -1434,9 +1457,25 @@
     var q = campoHome.value.trim();
     campoHome.blur();
     ricerca.ritorno = false;
-    location.hash = q ? "#cerca/" + encodeURIComponent(q) : "#archivio";
+    vaiA(q ? "#cerca/" + encodeURIComponent(q) : "#archivio");
   });
   window.addEventListener("hashchange", function () { if ("speechSynthesis" in window) speechSynthesis.cancel(); disegna(); });
+  // apriQui: in prima pagina un clic su una notizia la apre senza ricaricare, come sempre (si torna indietro allo stesso punto).
+  document.addEventListener("click", function (e) {
+    if (FISSA || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    var a = e.target.closest ? e.target.closest("a[href]") : null;
+    var m = a && !a.target && a.getAttribute("href").match(/^\/(notizia|approfondimento)\/([^\/]+)\/$/);
+    if (!m) return;
+    e.preventDefault();
+    location.hash = "#" + (m[1] === "notizia" ? "articolo" : "approfondimento") + "/" + m[2];
+  });
+  // sezioni e zone: la prima pagina parte già filtrata
+  if (FISSA && (FISSA.cat || FISSA.zona)) {
+    filtroCat = FISSA.cat || "";
+    filtroZona = FISSA.zona || "";
+    document.querySelectorAll(".menu button").forEach(function (x) { x.setAttribute("aria-pressed", x.getAttribute("data-cat") === filtroCat ? "true" : "false"); });
+    document.getElementById("zona").value = filtroZona;
+  }
 
   fetch("meteo.json?t=" + Date.now(), { cache: "no-store" })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })

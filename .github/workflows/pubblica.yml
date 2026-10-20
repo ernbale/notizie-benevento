@@ -26,6 +26,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Python con pip che funziona (quello di sistema di Ubuntu non lascia installare Pillow)
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
       - name: Meteo da 8 modelli
         env:
           # per leggere il bollettino della Protezione civile su GitHub senza finire nel limite delle richieste anonime
@@ -33,7 +38,22 @@ jobs:
         run: |
           if ! python3 strumenti/meteo.py; then
             echo "Meteo non aggiornato: tengo quello già pubblicato"
-            curl -fsSL --max-time 30 "https://ernbale.github.io/notizie-benevento/meteo.json" -o meteo.json || echo "nessun meteo precedente"
+            curl -fsSL --max-time 30 "https://notiziebenevento.it/meteo.json" -o meteo.json || echo "nessun meteo precedente"
+          fi
+
+      # le immagini di anteprima già fatte: si rifanno solo quelle delle notizie nuove o cambiate
+      - uses: actions/cache@v4
+        with:
+          path: img/n
+          key: anteprime-${{ hashFiles('notizie.json', 'archivio/*.json', 'strumenti/pagine.py') }}
+          restore-keys: anteprime-
+
+      - name: Pagine per Google (una per notizia), sitemap, feed e anteprime
+        run: |
+          pip install --quiet pillow || echo "::warning::Pillow non installato: anteprime uguali per tutte"
+          curl -fsSL --max-time 30 "https://notiziebenevento.it/sitemap.xml" -o "$RUNNER_TEMP/sitemap-prima.xml" || true
+          if ! python3 strumenti/pagine.py --sitemap-prima "$RUNNER_TEMP/sitemap-prima.xml" --indexnow "$RUNNER_TEMP/indexnow.json"; then
+            echo "::warning::Pagine non generate: il sito funziona lo stesso (404.html apre le notizie nella prima pagina)"
           fi
 
       - uses: actions/configure-pages@v5
@@ -44,3 +64,9 @@ jobs:
 
       - id: deploy
         uses: actions/deploy-pages@v4
+
+      - name: Avvisa Bing delle pagine nuove (IndexNow)
+        run: |
+          if [ -f "$RUNNER_TEMP/indexnow.json" ]; then
+            python3 strumenti/pagine.py --invia-indexnow "$RUNNER_TEMP/indexnow.json" || echo "::warning::IndexNow non ha risposto"
+          fi

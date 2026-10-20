@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /strumenti/
+Disallow: /AGENTE.md
+Disallow: /README.md
+
+Sitemap: https://notiziebenevento.it/sitemap.xml
+Sitemap: https://notiziebenevento.it/sitemap-notizie.xml
