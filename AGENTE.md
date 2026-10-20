@@ -103,7 +103,6 @@ ponte, vitulano, cusanomutri, faicchio, amorosi. Cerca avvisi su strade, scuole,
     "id": "parole-chiave-con-trattini (stabile, non cambia mai, unico anche rispetto all'archivio)",
     "titolo": "", "sintesi": "2-3 frasi",
     "categoria": "strade|cronaca|meteo|politica|eventi|altro",
-    "_nota_categoria_meteo": "la sezione si chiama «Terremoti e allerte»: scosse INGV, allerte della Protezione civile, danni del maltempo. Le previsioni del tempo NO: stanno nella pagina Meteo, fatta da un programma.",
     "zona": "benevento|telesina|caudina|fortore|provincia",
     "luogo": "paese o località", "pubblicato": "ISO dell'articolo fonte più recente, oppure solo AAAA-MM-GG se l'ora non è scritta",
     "stato": "confermata|ufficiale", "rilevante": false,
@@ -134,6 +133,8 @@ ponte, vitulano, cusanomutri, faicchio, amorosi. Cerca avvisi su strade, scuole,
   «Ottopagine (19/10)», «Ottopagine (20/10)».
 - `fonti` della notizia (quelle in prima pagina): una per testata, l'articolo più recente.
 - `rilevante` c'è sempre, come `true` o `false` (booleano, non testo).
+- La categoria `meteo` sul sito si chiama **«Terremoti e allerte»**: scosse INGV, allerte della Protezione civile,
+  danni del maltempo. Le previsioni del tempo **no**: stanno nella pagina Meteo, che fa un programma a parte.
 - Per gli **avvisi ufficiali con una scadenza** (strade chiuse, lavori, divieti, ordinanze su scuole o acqua) scrivi
   `in_vigore_fino` con la data presa dal comunicato: restano in prima pagina finché vale l'avviso. Se il comunicato
   non dà una fine, non mettere il campo.
