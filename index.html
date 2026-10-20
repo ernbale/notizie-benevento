@@ -100,6 +100,37 @@
   .elenco-fonti li { font: 400 15px/1.5 var(--sans); padding: 3px 0; }
   .elenco-fonti a { color: var(--blu); }
 
+  /* ricerca e archivio */
+  .menu .link-archivio { font: 600 15px var(--sans); color: var(--blu); text-decoration: none; padding: 4px 0; }
+  .menu .link-archivio:hover { text-decoration: underline; }
+  .cerca-campo { display: flex; align-items: stretch; }
+  .cerca-campo input { font: 500 15px var(--sans); padding: 6px 10px; border: 1px solid var(--nero); border-right: 0; border-radius: 4px 0 0 4px;
+                       background: #fff; color: var(--nero); min-width: 0; width: 210px; -webkit-appearance: none; appearance: none; }
+  .cerca-campo button { display: inline-flex; align-items: center; justify-content: center; width: 40px; border: 1px solid var(--nero);
+                        border-radius: 0 4px 4px 0; background: var(--nero); color: #fff; cursor: pointer; padding: 0; }
+  .cerca-campo svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; }
+  .ricerca .cerca-campo { margin: 18px 0 6px; }
+  .ricerca .cerca-campo input { flex: 1; width: auto; font-size: 18px; padding: 10px 12px; }
+  .ricerca .cerca-campo button { width: 52px; }
+  .ricerca .aiuto { font: 400 13px/1.45 var(--sans); color: var(--grigio); margin: 0 0 12px; }
+  .ricerca .filtri { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding-bottom: 12px; border-bottom: 1px solid var(--nero); }
+  .ricerca .filtri select { font: 500 14px var(--sans); padding: 6px 8px; border: 1px solid var(--riga); background: #fff; color: var(--nero); border-radius: 4px; }
+  .ricerca .ordine { display: inline-flex; margin-left: auto; border: 1px solid var(--nero); border-radius: 4px; overflow: hidden; }
+  .ricerca .ordine button { font: 600 13px var(--sans); background: #fff; color: var(--nero); border: 0; padding: 6px 10px; cursor: pointer; }
+  .ricerca .ordine button[aria-pressed="true"] { background: var(--nero); color: #fff; }
+  .ricerca .conta { font: 600 14px var(--sans); margin: 14px 0 0; }
+  .ricerca .suggerimento { font: 400 16px var(--sans); margin: 10px 0 0; }
+  .ricerca .suggerimento a { color: var(--blu); font-weight: 600; }
+  .ricerca ul.risultati { list-style: none; padding: 0 !important; }
+  .ricerca ul.risultati li { padding: 11px 0; border-bottom: 1px solid var(--riga); font: inherit; }
+  .ricerca .dove { display: block; font: 600 12px var(--sans); color: var(--grigio); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 3px; }
+  .ricerca .tit-ris { font: 600 19px/1.3 var(--serif); color: var(--nero); text-decoration: none; }
+  .ricerca .tit-ris:hover { text-decoration: underline; }
+  .ricerca .estratto { font: 400 15px/1.5 var(--sans) !important; color: #3d3d3d; margin: 4px 0 0; }
+  .ricerca .altre { margin: 18px 0 0; font: 600 14px var(--sans); background: #fff; color: var(--nero); border: 1px solid var(--nero);
+                    border-radius: 20px; padding: 8px 18px; cursor: pointer; }
+  mark { background: #f7d774; color: inherit; padding: 0 1px; border-radius: 2px; }
+
   footer { border-top: 1px solid var(--nero); padding: 14px 0 40px; font-size: 13px; color: var(--grigio); }
   footer p { margin: 4px 0; max-width: 820px; }
 
@@ -116,6 +147,11 @@
     .testata .nome .grande { font-size: 36px; }
     .menu { justify-content: flex-start; gap: 4px 16px; }
     .menu select { width: 100%; }
+    .menu .cerca-campo { width: 100%; order: -1; margin-bottom: 4px; }
+    .menu .cerca-campo input { flex: 1; width: auto; font-size: 16px; padding: 8px 10px; }
+    .ricerca .ordine { margin-left: 0; }
+    /* sotto i 16px l'iPhone ingrandisce la pagina quando si tocca il campo */
+    .menu select, .ricerca .filtri select { font-size: 16px; }
     .ultimora { grid-template-columns: 1fr; padding: 10px 0; }
     .ultimora a { padding: 6px 0 !important; border-left: 0 !important; }
     .ultimora a:nth-child(n+4) { display: none; }
@@ -205,13 +241,19 @@
       <option value="fortore">Fortore e Tammaro</option>
       <option value="provincia">Altri comuni</option>
     </select>
+    <a class="link-archivio" href="#archivio">Archivio</a>
+    <form class="cerca-campo" id="cerca-home" role="search">
+      <input type="search" id="cerca-home-q" placeholder="Cerca tra le notizie" aria-label="Cerca tra le notizie" autocomplete="off" enterkeyhint="search">
+      <button type="submit" aria-label="Cerca"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg></button>
+    </form>
   </nav>
 
   <main id="contenuto"></main>
 
   <footer>
     <p>Notizie Benevento è un report automatico: le notizie appartengono ai giornali citati. Qui ci sono solo un riassunto breve e i link agli articoli originali, da leggere per i dettagli.</p>
-    <p>Una notizia compare solo se la riportano almeno due testate diverse oppure una fonte ufficiale (ANAS, INGV, Comuni, Prefettura, forze dell'ordine). Le accuse sono riportate con le parole usate dai giornali. Aggiornato ogni ora, dalle 6 alle 23.</p>
+    <p>Una notizia compare solo se la riportano almeno due testate diverse oppure una fonte ufficiale (ANAS, INGV, Comuni, Prefettura, forze dell'ordine). Le accuse sono riportate con le parole usate dai giornali. Aggiornato ogni 2 ore, dalle 6 alle 22.</p>
+    <p>Nessuna notizia viene cancellata: quando esce dalla prima pagina resta nell'<a href="#archivio">archivio</a>, allo stesso indirizzo.</p>
   </footer>
 </div>
 
@@ -256,6 +298,44 @@
   }
   function linkArticolo(n) { return "#articolo/" + encodeURIComponent(n.id); }
   function linkAppro(a) { return "#approfondimento/" + encodeURIComponent(a.id); }
+
+  // Archivio: archivio/indice.json (una voce per notizia) + archivio/AAAA-MM.json (notizie complete del mese).
+  var archivio = { indice: null, mesi: {} };
+  function prendiJson(url) {
+    return fetch(url + "?t=" + Date.now(), { cache: "no-store" })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); });
+  }
+  function indiceArchivio() {
+    if (!archivio.indice) {
+      archivio.indice = prendiJson("archivio/indice.json")
+        .then(function (j) { return (j && Array.isArray(j.voci)) ? j.voci : []; })
+        .catch(function () { archivio.indice = null; return []; });
+    }
+    return archivio.indice;
+  }
+  function meseArchivio(mese) {
+    if (!/^\d{4}-\d{2}$/.test(String(mese))) return Promise.resolve({});
+    if (!archivio.mesi[mese]) {
+      archivio.mesi[mese] = prendiJson("archivio/" + mese + ".json")
+        .catch(function () { delete archivio.mesi[mese]; return {}; });
+    }
+    return archivio.mesi[mese];
+  }
+  // Una notizia uscita dalla prima pagina resta allo stesso indirizzo: i link già condivisi continuano a funzionare.
+  function cercaInArchivio(tipo, id) {
+    return indiceArchivio().then(function (voci) {
+      var v = voci.filter(function (x) { return x.id === id && (x.tipo || "notizia") === tipo; })[0];
+      if (!v) return null;
+      return meseArchivio(v.mese).then(function (m) {
+        var lista = (tipo === "notizia" ? m.notizie : m.approfondimenti) || [];
+        return lista.filter(function (x) { return x.id === id; })[0] || null;
+      });
+    });
+  }
+  function giornoLungo(g) {
+    var d = new Date(g + "T12:00:00Z");
+    return isNaN(d) ? "Senza data" : d.toLocaleDateString("it-IT", { timeZone: TZ, weekday: "long", day: "numeric", month: "long", year: "numeric" });
+  }
 
 
   // Condividi. Le pagine hanno la fila di pulsanti tondi; le schede un piccolo «Condividi» che sul telefono apre il menù
@@ -561,12 +641,12 @@
     art.appendChild(el("h1", "", [titolo]));
   }
 
-  function disegnaArticolo(box, n) {
+  function disegnaArticolo(box, n, dallArchivio) {
     var a = n.articolo;
     var fonti = Array.isArray(a.fonti) ? a.fonti : [];
     var art = el("article", "appro", []);
     testataPagina(art, NOMI_CAT[n.categoria] || "Altro", n.luogo, n.titolo);
-    art.appendChild(el("div", "meta", [(n.pubblicato ? quando(n.pubblicato) + " · " : "") + fonti.length + (fonti.length === 1 ? " fonte" : " fonti confrontate")]));
+    art.appendChild(el("div", "meta", [(dallArchivio ? "Dall'archivio · " : "") + (n.pubblicato ? quando(n.pubblicato) + " · " : "") + fonti.length + (fonti.length === 1 ? " fonte" : " fonti confrontate")]));
     var az = ascolta(testoArticolo(n));
     az.appendChild(condividi(n.titolo, linkArticolo(n), true));
     art.appendChild(az);
@@ -588,12 +668,12 @@
     box.appendChild(art);
   }
 
-  function disegnaApprofondimento(box, ap) {
+  function disegnaApprofondimento(box, ap, dallArchivio) {
     var fonti = Array.isArray(ap.fonti) ? ap.fonti : [];
     var art = el("article", "appro", []);
     testataPagina(art, "Approfondimento", ap.luogo, ap.titolo);
     if (ap.sommario) art.appendChild(el("p", "sommario", [ap.sommario]));
-    art.appendChild(el("div", "meta", ["Aggiornato " + quando(ap.aggiornato) + " · " + fonti.length + " fonti confrontate"]));
+    art.appendChild(el("div", "meta", [(dallArchivio ? "Dall'archivio · " : "") + "Aggiornato " + quando(ap.aggiornato) + " · " + fonti.length + " fonti confrontate"]));
     var az = ascolta(testoApprofondimento(ap));
     az.appendChild(condividi(ap.titolo, linkAppro(ap), true));
     art.appendChild(az);
@@ -622,21 +702,434 @@
     }
     cronologia(art, ap.cronologia, fonti);
     sezioneElenco(art, "Cosa non si sa ancora", ap.non_si_sa, fonti);
-    var coll = (ap.collegate || []).map(function (id) { return (dati.notizie || []).filter(function (n) { return n.id === id; })[0]; }).filter(Boolean);
-    if (coll.length) {
-      art.appendChild(el("h3", "", ["Le notizie collegate"]));
+    var ids = ap.collegate || [];
+    if (ids.length) {
+      var hc = el("h3", "", ["Le notizie collegate"]);
       var uc = el("ul", "collegate", []);
-      coll.forEach(function (n) { var li = el("li", "", []); var l = el("a", "", [n.titolo]); l.href = linkArticolo(n); li.appendChild(l); uc.appendChild(li); });
+      art.appendChild(hc);
       art.appendChild(uc);
+      var elencaCollegate = function (lista) {
+        uc.textContent = "";
+        ids.forEach(function (id) {
+          var n = lista.filter(function (x) { return x.id === id && (x.tipo || "notizia") === "notizia"; })[0];
+          if (!n) return;
+          var li = el("li", "", []); var l = el("a", "", [n.titolo]); l.href = linkArticolo(n); li.appendChild(l); uc.appendChild(li);
+        });
+        hc.style.display = uc.childNodes.length ? "" : "none";
+      };
+      elencaCollegate(dati.notizie || []);
+      // Le notizie collegate già uscite dalla prima pagina si prendono dall'archivio.
+      if (uc.childNodes.length < ids.length) indiceArchivio().then(function (voci) { elencaCollegate((dati.notizie || []).concat(voci)); });
     }
     elencoFonti(art, fonti);
     box.appendChild(art);
+  }
+
+  // ---------- Ricerca (prima pagina + archivio) ----------
+  // Sigle e nomi comuni delle statali del Sannio: cercare l'uno trova anche l'altro.
+  var SINONIMI = [
+    ["telesina", "ss372", "ss 372", "statale 372"],
+    ["appia", "ss7", "ss 7", "statale 7"],
+    ["sannitica", "ss87", "ss 87", "statale 87"],
+    ["casilina", "ss6", "ss 6", "statale 6"],
+    ["due principati", "ss88", "ss 88", "statale 88"],
+    ["val fortore", "fortorina", "ss212", "ss 212", "statale 212"]
+  ];
+  var VUOTE = {};
+  ("il lo la i gli le un uno una di a da in con su per tra fra e ed o del dello della dei degli delle al allo alla ai agli alle " +
+   "dal dallo dalla dai dagli dalle nel nello nella nei negli nelle sul sullo sulla sui sugli sulle che non si ci").split(" ").forEach(function (w) { VUOTE[w] = true; });
+  var PESI = { titolo: 5, luogo: 4, sintesi: 2, corpo: 1 };
+  var CAMPI = ["titolo", "luogo", "sintesi", "corpo"];
+  var PAGINA = 30;
+  var ricerca = { cat: "", zona: "", periodo: "", ordine: "data", mostrate: PAGINA, ritorno: false, scroll: 0 };
+  var corpus = null;
+
+  // Minuscole, senza accenti, punteggiatura e apostrofi come spazi. Stessa lunghezza del testo originale,
+  // così le posizioni trovate servono anche per evidenziare.
+  function piega(s) {
+    s = String(s == null ? "" : s);
+    var r = "";
+    for (var i = 0; i < s.length; i++) {
+      var c = s.charAt(i).toLowerCase();
+      if (s.charCodeAt(i) > 127) c = c.normalize("NFD").charAt(0);
+      r += (c >= "a" && c <= "z") || (c >= "0" && c <= "9") ? c : " ";
+    }
+    return r;
+  }
+  // p = testo piegato tra due spazi; c = lo stesso senza spazi, con segnati i punti dove comincia una parola.
+  function campo(t) {
+    t = String(t || "");
+    var p = " " + piega(t) + " ", c = "", inizi = {};
+    for (var i = 1; i < p.length; i++) {
+      var ch = p.charAt(i);
+      if (ch === " ") continue;
+      if (p.charAt(i - 1) === " ") inizi[c.length] = true;
+      c += ch;
+    }
+    return { o: t, p: p, c: c, inizi: inizi };
+  }
+  // Parole scritte unite («santagata» per «Sant'Agata»): vale solo se comincia dove comincia una parola,
+  // così «cusano» non trova «accusano».
+  function trovaUnita(c, w) {
+    if (w.length < 6) return false;
+    var j = c.c.indexOf(w);
+    while (j >= 0) {
+      if (c.inizi[j]) return true;
+      j = c.c.indexOf(w, j + 1);
+    }
+    return false;
+  }
+  function testiNotizia(n) {
+    var a = n.articolo || {}, t = [a.cosa];
+    (a.cronologia || []).forEach(function (x) { t.push(x.fatto); });
+    (a.concordano || []).concat(a.divergono || []).forEach(function (x) { t.push(x.testo); });
+    (a.non_si_sa || []).forEach(function (x) { t.push(typeof x === "string" ? x : x && x.testo); });
+    (a.fonti || []).forEach(function (f) { t.push(f.titolo); });
+    return t.filter(Boolean).join(" · ");
+  }
+  function testiAppro(ap) {
+    var t = [];
+    (ap.in_breve || []).forEach(function (x) { t.push(x.testo); });
+    (ap.sezioni || []).forEach(function (s) { t.push(s.titolo); (s.paragrafi || []).concat(s.punti || []).forEach(function (x) { t.push(x.testo); }); });
+    (ap.domande || []).forEach(function (q) { t.push(q.d, q.r); });
+    (ap.cronologia || []).forEach(function (x) { t.push(x.fatto || x.testo); });
+    return t.filter(Boolean).join(" · ");
+  }
+  // Tutte le notizie cercabili, dalla più recente: prima pagina (testo completo) + archivio (titolo, sintesi, luogo, cosa).
+  function costruisciCorpus(voci) {
+    var lista = [], visti = {};
+    function aggiungi(v, corpo) {
+      var k = v.tipo + "/" + v.id;
+      if (!v.id || visti[k]) return;
+      visti[k] = true;
+      lista.push({ v: v, giorno: String(v.pubblicato || "").slice(0, 10),
+                   titolo: campo(v.titolo), luogo: campo(v.luogo), sintesi: campo(v.sintesi), corpo: campo(corpo) });
+    }
+    (dati.notizie || []).forEach(function (n) {
+      if (n.articolo) aggiungi({ id: n.id, tipo: "notizia", titolo: n.titolo, sintesi: n.sintesi, luogo: n.luogo, categoria: n.categoria, zona: n.zona, pubblicato: n.pubblicato }, testiNotizia(n));
+    });
+    (dati.approfondimenti || []).forEach(function (a) {
+      aggiungi({ id: a.id, tipo: "approfondimento", titolo: a.titolo, sintesi: a.sommario, luogo: a.luogo, pubblicato: a.aggiornato }, testiAppro(a));
+    });
+    voci.forEach(function (v) {
+      aggiungi({ id: v.id, tipo: v.tipo || "notizia", titolo: v.titolo, sintesi: v.sintesi, luogo: v.luogo, categoria: v.categoria, zona: v.zona, pubblicato: v.pubblicato }, v.cosa);
+    });
+    lista.sort(function (a, b) { return String(b.v.pubblicato || "").localeCompare(String(a.v.pubblicato || "")); });
+    var voc = {};
+    lista.forEach(function (it) {
+      CAMPI.forEach(function (k) { it[k].p.split(" ").forEach(function (w) { if (w.length >= 4) voc[w] = (voc[w] || 0) + 1; }); });
+    });
+    return { lista: lista, vocabolario: voc };
+  }
+
+  // Cosa ha scritto chi cerca: frasi tra virgolette, sigle/nomi delle statali, parole sciolte.
+  function analizza(q) {
+    var frasi = [], gruppi = [], parole = [];
+    var resto = String(q || "").replace(/["“”«»]([^"“”«»]+)["“”«»]/g, function (x, f) {
+      var p = piega(f).replace(/\s+/g, " ").trim();
+      if (p) frasi.push(p);
+      return " ";
+    });
+    var p = " " + piega(resto).replace(/\s+/g, " ").trim() + " ";
+    SINONIMI.forEach(function (g) {
+      var trovato = false;
+      g.slice().sort(function (a, b) { return b.length - a.length; }).forEach(function (forma) {
+        while (p.indexOf(" " + forma + " ") >= 0) { p = p.replace(" " + forma + " ", " "); trovato = true; }
+      });
+      if (trovato) gruppi.push(g);
+    });
+    p.trim().split(" ").forEach(function (w) { if (w) parole.push(w); });
+    var utili = parole.filter(function (w) { return !VUOTE[w]; });
+    // Se ha scritto solo parole vuote («la», «di»…) si cercano quelle.
+    if (utili.length || frasi.length || gruppi.length) parole = utili;
+    return { frasi: frasi, gruppi: gruppi, parole: parole, vuota: !frasi.length && !gruppi.length && !parole.length };
+  }
+  // 3 = parola intera, 2 = inizio di parola, 1 = dentro parole scritte unite («santagata» ↔ «Sant'Agata»), 0 = niente.
+  function trovaParola(c, w) {
+    var i = c.p.indexOf(" " + w), q = 0;
+    while (i >= 0) {
+      if (c.p.charAt(i + 1 + w.length) === " ") return 3;
+      q = 2;
+      i = c.p.indexOf(" " + w, i + 1);
+    }
+    if (q) return q;
+    return trovaUnita(c, w) ? 1 : 0;
+  }
+  function trovaFrase(c, f) {
+    if (c.p.indexOf(" " + f + " ") >= 0) return 3;
+    if (c.p.indexOf(" " + f) >= 0) return 2;
+    return trovaUnita(c, f.replace(/ /g, "")) ? 1 : 0;
+  }
+  function trovaGruppo(c, g) {
+    return g.some(function (forma) { return c.p.indexOf(" " + forma + " ") >= 0; }) ? 3 : 0;
+  }
+  // Ogni parola, frase o strada cercata deve esserci; il punteggio premia titolo e luogo.
+  function punteggio(it, a) {
+    var tot = 0, ok = true;
+    function migliore(fn) {
+      var m = 0;
+      CAMPI.forEach(function (k) { var q = fn(it[k]); if (q * PESI[k] > m) m = q * PESI[k]; });
+      if (!m) ok = false;
+      tot += m;
+    }
+    a.parole.forEach(function (w) { if (ok) migliore(function (c) { return trovaParola(c, w); }); });
+    a.frasi.forEach(function (f) { if (ok) migliore(function (c) { return trovaFrase(c, f); }); });
+    a.gruppi.forEach(function (g) { if (ok) migliore(function (c) { return trovaGruppo(c, g); }); });
+    return ok ? tot : 0;
+  }
+  function intervalli(c, a) {
+    var r = [];
+    function segna(t, intera) {
+      var i = c.p.indexOf(" " + t);
+      while (i >= 0) {
+        if (!intera || c.p.charAt(i + 1 + t.length) === " ") r.push([i, i + t.length]);
+        i = c.p.indexOf(" " + t, i + 1);
+      }
+    }
+    a.parole.forEach(function (w) { segna(w, false); });
+    a.frasi.forEach(function (f) { segna(f, false); });
+    a.gruppi.forEach(function (g) { g.forEach(function (forma) { segna(forma, true); }); });
+    r.sort(function (x, y) { return x[0] - y[0]; });
+    var m = [];
+    r.forEach(function (x) { var u = m[m.length - 1]; if (u && x[0] <= u[1]) u[1] = Math.max(u[1], x[1]); else m.push(x); });
+    return m;
+  }
+  function evidenzia(tag, cls, t, r) {
+    var e = el(tag, cls, []), pos = 0;
+    r.forEach(function (x) {
+      if (x[0] > pos) e.appendChild(testo(t.slice(pos, x[0])));
+      e.appendChild(el("mark", "", [t.slice(x[0], x[1])]));
+      pos = x[1];
+    });
+    if (pos < t.length) e.appendChild(testo(t.slice(pos)));
+    return e;
+  }
+  // Il pezzo di testo da mostrare sotto il titolo: la sintesi, o il punto dell'articolo dove c'è la parola cercata.
+  function estratto(it, a) {
+    var rs = a.vuota ? [] : intervalli(it.sintesi, a);
+    if (rs.length || a.vuota || !it.corpo.o) return evidenzia("p", "estratto", it.sintesi.o, rs);
+    var rc = intervalli(it.corpo, a);
+    if (!rc.length) return evidenzia("p", "estratto", it.sintesi.o, []);
+    var t = it.corpo.o, ini = Math.max(0, rc[0][0] - 90), fin;
+    if (ini > 0) { var sp = t.indexOf(" ", ini); ini = sp >= 0 && sp < rc[0][0] ? sp + 1 : ini; }
+    fin = Math.min(t.length, ini + 260);
+    if (fin < t.length) { var sf = t.lastIndexOf(" ", fin); if (sf > rc[0][1]) fin = sf; }
+    var dentro = rc.filter(function (x) { return x[0] >= ini && x[1] <= fin; }).map(function (x) { return [x[0] - ini, x[1] - ini]; });
+    var p = evidenzia("p", "estratto", t.slice(ini, fin), dentro);
+    if (ini > 0) p.insertBefore(testo("… "), p.firstChild);
+    if (fin < t.length) p.appendChild(testo(" …"));
+    return p;
+  }
+  function distanza(a, b, max) {
+    if (Math.abs(a.length - b.length) > max) return max + 1;
+    var prec = [], i, j;
+    for (j = 0; j <= b.length; j++) prec[j] = j;
+    for (i = 1; i <= a.length; i++) {
+      var cur = [i], minimo = i;
+      for (j = 1; j <= b.length; j++) {
+        cur[j] = Math.min(prec[j] + 1, cur[j - 1] + 1, prec[j - 1] + (a.charAt(i - 1) === b.charAt(j - 1) ? 0 : 1));
+        if (cur[j] < minimo) minimo = cur[j];
+      }
+      if (minimo > max) return max + 1;
+      prec = cur;
+    }
+    return prec[b.length];
+  }
+  // «Forse cercavi»: solo per parole che non compaiono da nessuna parte, mai applicato da solo.
+  function suggerisci(q, a) {
+    var voc = corpus.vocabolario, parole = Object.keys(voc), nuova = q, cambiata = false;
+    a.parole.forEach(function (w) {
+      if (w.length < 5) return;
+      if (parole.some(function (v) { return v.indexOf(w) === 0; })) return;
+      // Parole corte: si propone solo una parola lunga almeno uguale (niente «cita» per «citta»).
+      var max = w.length >= 7 ? 2 : 1, meglio = null, dm = max + 1;
+      parole.forEach(function (v) {
+        if (w.length <= 6 && v.length < w.length) return;
+        var d = distanza(w, v, max);
+        if (d < dm || (d === dm && meglio && voc[v] > voc[meglio])) { dm = d; meglio = v; }
+      });
+      if (!meglio || dm > max) return;
+      // piega() conserva le posizioni: si sostituisce proprio quella parola nel testo scritto.
+      var pq = " " + piega(nuova) + " ", i = pq.indexOf(" " + w + " ");
+      if (i < 0) return;
+      nuova = nuova.slice(0, i) + meglio + nuova.slice(i + w.length);
+      cambiata = true;
+    });
+    return cambiata ? nuova : null;
+  }
+  function oggiMeno(giorni) {
+    return new Date(Date.now() - giorni * 864e5).toLocaleDateString("sv-SE", { timeZone: TZ });
+  }
+  function selezione(etichetta, opzioni, valore, cambia) {
+    var s = document.createElement("select");
+    s.setAttribute("aria-label", etichetta);
+    opzioni.forEach(function (o) { var op = document.createElement("option"); op.value = o[0]; op.textContent = o[1]; s.appendChild(op); });
+    s.value = valore;
+    s.addEventListener("change", function () { cambia(s.value); });
+    return s;
+  }
+  function campoRicerca(valore) {
+    var f = el("form", "cerca-campo", []);
+    f.setAttribute("role", "search");
+    var inp = document.createElement("input");
+    inp.type = "search";
+    inp.value = valore || "";
+    inp.placeholder = "Un paese, una strada, una parola…";
+    inp.setAttribute("aria-label", "Cerca tra le notizie");
+    inp.setAttribute("autocomplete", "off");
+    inp.setAttribute("enterkeyhint", "search");
+    var b = el("button", "", []);
+    b.type = "submit";
+    b.setAttribute("aria-label", "Cerca");
+    b.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>';
+    f.appendChild(inp);
+    f.appendChild(b);
+    return f;
+  }
+
+  function disegnaRicerca(box, qIniziale) {
+    var art = el("article", "appro ricerca", []);
+    testataPagina(art, "Archivio", "", "Cerca tra le notizie");
+    var form = campoRicerca(qIniziale);
+    var inp = form.querySelector("input");
+    art.appendChild(form);
+    art.appendChild(el("p", "aiuto", ["Con più parole trova le notizie che le contengono tutte. Tra virgolette cerca la frase esatta, per esempio \"via Cocchia\". Funzionano anche le sigle delle strade: SS372 trova la Telesina."]));
+    var filtri = el("div", "filtri", []);
+    var ordine = el("div", "ordine", []);
+    var bData = el("button", "", ["Più recenti"]), bPert = el("button", "", ["Più pertinenti"]);
+    bData.type = bPert.type = "button";
+    ordine.appendChild(bData);
+    ordine.appendChild(bPert);
+    filtri.appendChild(selezione("Sezione", [["", "Tutte le sezioni"]].concat(Object.keys(NOMI_CAT).map(function (k) { return [k, NOMI_CAT[k]]; })).concat([["approfondimento", "Approfondimenti"]]),
+      ricerca.cat, function (v) { ricerca.cat = v; nuovaRicerca(); }));
+    filtri.appendChild(selezione("Zona", [["", "Tutte le zone"], ["benevento", "Benevento città"], ["telesina", "Valle Telesina"], ["caudina", "Valle Caudina"], ["fortore", "Fortore e Tammaro"], ["provincia", "Altri comuni"]],
+      ricerca.zona, function (v) { ricerca.zona = v; nuovaRicerca(); }));
+    filtri.appendChild(selezione("Periodo", [["", "Sempre"], ["7", "Ultima settimana"], ["30", "Ultimo mese"], ["365", "Ultimo anno"]],
+      ricerca.periodo, function (v) { ricerca.periodo = v; nuovaRicerca(); }));
+    filtri.appendChild(ordine);
+    art.appendChild(filtri);
+    var conta = el("p", "conta", []);
+    conta.setAttribute("aria-live", "polite");
+    var lista = el("div", "", [el("p", "vuoto", ["Caricamento dell'archivio…"])]);
+    art.appendChild(conta);
+    art.appendChild(lista);
+    box.appendChild(art);
+
+    function nuovaRicerca() { ricerca.mostrate = PAGINA; mostra(); }
+    function segnaOrdine() {
+      bData.setAttribute("aria-pressed", ricerca.ordine === "data" ? "true" : "false");
+      bPert.setAttribute("aria-pressed", ricerca.ordine === "pertinenza" ? "true" : "false");
+    }
+    bData.addEventListener("click", function () { ricerca.ordine = "data"; segnaOrdine(); nuovaRicerca(); });
+    bPert.addEventListener("click", function () { ricerca.ordine = "pertinenza"; segnaOrdine(); nuovaRicerca(); });
+    segnaOrdine();
+
+    function mostra() {
+      if (!corpus) return;
+      var q = inp.value.trim(), a = analizza(q);
+      ordine.style.display = a.vuota ? "none" : "";
+      var limite = ricerca.periodo ? oggiMeno(+ricerca.periodo) : "";
+      var trovati = [];
+      corpus.lista.forEach(function (it) {
+        var v = it.v;
+        if (ricerca.cat === "approfondimento" ? v.tipo !== "approfondimento" : (ricerca.cat && v.categoria !== ricerca.cat)) return;
+        if (ricerca.zona && v.zona !== ricerca.zona) return;
+        if (limite && it.giorno < limite) return;
+        var s = a.vuota ? 1 : punteggio(it, a);
+        if (s) trovati.push({ it: it, s: s });
+      });
+      if (!a.vuota && ricerca.ordine === "pertinenza") {
+        trovati.sort(function (x, y) { return y.s - x.s || String(y.it.v.pubblicato || "").localeCompare(String(x.it.v.pubblicato || "")); });
+      }
+      var filtrato = ricerca.cat || ricerca.zona || ricerca.periodo;
+      conta.textContent = a.vuota
+        ? trovati.length + (trovati.length === 1 ? " notizia" : " notizie") + (filtrato ? " con questi filtri" : " in archivio") + ", dalla più recente"
+        : (trovati.length ? trovati.length + (trovati.length === 1 ? " notizia trovata" : " notizie trovate") : "Nessuna notizia trovata") + " per «" + q + "»" + (filtrato ? " con questi filtri" : "");
+      lista.textContent = "";
+      if (!trovati.length) {
+        var sug = a.vuota ? null : suggerisci(q, a);
+        if (sug) {
+          var ps = el("p", "suggerimento", ["Forse cercavi "]);
+          var ls = el("a", "", [sug]);
+          ls.href = "#cerca/" + encodeURIComponent(sug);
+          ps.appendChild(ls);
+          ps.appendChild(testo("?"));
+          lista.appendChild(ps);
+        } else if (!a.vuota) {
+          lista.appendChild(el("p", "vuoto", [filtrato ? "Prova a togliere qualche filtro, a usare meno parole o a controllare come sono scritte." : "Prova con meno parole o controlla come sono scritte."]));
+        }
+        return;
+      }
+      var perGiorno = a.vuota || ricerca.ordine === "data";
+      var giorno = null, ul = null;
+      trovati.slice(0, ricerca.mostrate).forEach(function (t) {
+        var it = t.it, v = it.v, tipo = v.tipo || "notizia";
+        if (perGiorno && it.giorno !== giorno) {
+          giorno = it.giorno;
+          lista.appendChild(el("h3", "", [giornoLungo(giorno)]));
+          ul = null;
+        }
+        if (!ul) { ul = el("ul", "risultati", []); lista.appendChild(ul); }
+        var dove = (tipo === "approfondimento" ? "Approfondimento" : (NOMI_CAT[v.categoria] || "Altro")) + (v.luogo ? " · " + v.luogo : "");
+        if (!perGiorno) dove += " · " + soloData(v.pubblicato) + " " + String(v.pubblicato || "").slice(0, 4);
+        var li = el("li", "", [el("span", "dove", [dove])]);
+        var l = evidenzia("a", "tit-ris", it.titolo.o, a.vuota ? [] : intervalli(it.titolo, a));
+        l.href = (tipo === "approfondimento" ? "#approfondimento/" : "#articolo/") + encodeURIComponent(v.id);
+        l.addEventListener("click", function () { ricerca.ritorno = true; ricerca.scroll = window.scrollY; });
+        li.appendChild(l);
+        if (it.sintesi.o || !a.vuota) li.appendChild(estratto(it, a));
+        ul.appendChild(li);
+      });
+      if (trovati.length > ricerca.mostrate) {
+        var altre = el("button", "altre", ["Mostra altre " + Math.min(PAGINA, trovati.length - ricerca.mostrate)]);
+        altre.type = "button";
+        altre.addEventListener("click", function () { ricerca.mostrate += PAGINA; mostra(); });
+        lista.appendChild(altre);
+      }
+    }
+
+    var attesa = null;
+    inp.addEventListener("input", function () {
+      clearTimeout(attesa);
+      attesa = setTimeout(function () {
+        var q = inp.value.trim();
+        // Aggiorna l'indirizzo senza riempire la cronologia del tasto Indietro.
+        history.replaceState(null, "", q ? "#cerca/" + encodeURIComponent(q) : "#archivio");
+        nuovaRicerca();
+      }, 180);
+    });
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      clearTimeout(attesa);
+      var q = inp.value.trim();
+      history.replaceState(null, "", q ? "#cerca/" + encodeURIComponent(q) : "#archivio");
+      inp.blur();
+      nuovaRicerca();
+    });
+
+    var segno = location.hash;
+    indiceArchivio().then(function (voci) {
+      if (location.hash !== segno && !/^#(cerca\/|archivio$)/.test(location.hash)) return;
+      corpus = costruisciCorpus(voci);
+      mostra();
+      if (ricerca.ritorno) { ricerca.ritorno = false; window.scrollTo(0, ricerca.scroll); }
+    });
   }
 
   function disegna() {
     var box = document.getElementById("contenuto");
     var menu = document.getElementById("menu");
     box.textContent = "";
+    var mc = location.hash.match(/^#(?:archivio|cerca\/(.*))$/);
+    if (mc) {
+      var q = "";
+      try { q = decodeURIComponent(mc[1] || ""); } catch (e) { q = mc[1] || ""; }
+      menu.style.display = "none";
+      if (!ricerca.ritorno) { ricerca.mostrate = PAGINA; window.scrollTo(0, 0); }
+      disegnaRicerca(box, q);
+      return;
+    }
+    ricerca.ritorno = ricerca.ritorno && /^#(articolo|approfondimento)\//.test(location.hash);
     var m = location.hash.match(/^#(articolo|approfondimento)\/(.+)$/);
     if (m) {
       var id = decodeURIComponent(m[2]);
@@ -647,6 +1140,30 @@
         var ap = (dati.approfondimenti || []).filter(function (x) { return x.id === id; })[0];
         if (ap) { menu.style.display = "none"; disegnaApprofondimento(box, ap); window.scrollTo(0, 0); return; }
       }
+      // Non è in prima pagina: si cerca nell'archivio.
+      menu.style.display = "none";
+      box.appendChild(el("p", "vuoto", ["Caricamento…"]));
+      var cercato = location.hash;
+      var tipo = m[1] === "articolo" ? "notizia" : "approfondimento";
+      cercaInArchivio(tipo, id).then(function (x) {
+        if (location.hash !== cercato) return;
+        box.textContent = "";
+        if (x && tipo === "notizia" && x.articolo) disegnaArticolo(box, x, true);
+        else if (x && tipo === "approfondimento") disegnaApprofondimento(box, x, true);
+        else {
+          var art = el("article", "appro", []);
+          testataPagina(art, "Archivio", "", "Notizia non trovata");
+          var p = el("p", "", ["Questa notizia non c'è più. Puoi cercarla nell'"]);
+          var l = el("a", "", ["archivio"]);
+          l.href = "#archivio";
+          p.appendChild(l);
+          p.appendChild(testo("."));
+          art.appendChild(p);
+          box.appendChild(art);
+        }
+        window.scrollTo(0, 0);
+      });
+      return;
     }
     menu.style.display = "";
     disegnaHome(box);
@@ -670,6 +1187,14 @@
     });
   });
   document.getElementById("zona").addEventListener("change", function (e) { filtroZona = e.target.value; disegna(); });
+  document.getElementById("cerca-home").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var campoHome = document.getElementById("cerca-home-q");
+    var q = campoHome.value.trim();
+    campoHome.blur();
+    ricerca.ritorno = false;
+    location.hash = q ? "#cerca/" + encodeURIComponent(q) : "#archivio";
+  });
   window.addEventListener("hashchange", function () { if ("speechSynthesis" in window) speechSynthesis.cancel(); disegna(); });
 
   fetch("notizie.json?t=" + Date.now(), { cache: "no-store" })

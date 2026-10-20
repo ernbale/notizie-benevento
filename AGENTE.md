@@ -90,7 +90,8 @@ ponte, vitulano, cusanomutri, faicchio, amorosi. Cerca avvisi su strade, scuole,
 - **Aggiornali a ogni giro** quando esce qualcosa di nuovo sulla storia: allunga la cronologia, aggiorna
   «In breve», sezioni e domande, togli da «Cosa non si sa ancora» quello che ora si sa, aggiungi le nuove fonti,
   aggiorna `aggiornato`. Non cancellare fatti già verificati; se una fonte li corregge, correggi e spiega nella nota.
-- Un approfondimento senza novità da 7 giorni si toglie dalla colonna (resta nel file con `"archiviato": true`).
+- Un approfondimento senza novità da 7 giorni passa da solo in archivio (vedi «Archivio»); se una storia è chiusa
+  prima, puoi segnarlo `"archiviato": true`.
 
 ## Formato del file
 
@@ -99,7 +100,7 @@ ponte, vitulano, cusanomutri, faicchio, amorosi. Cerca avvisi su strade, scuole,
   "aggiornato": "ISO con fuso +01:00/+02:00",
   "giornali_letti": 0,
   "notizie": [ {
-    "id": "parole-chiave-con-trattini (stabile, non cambia mai)",
+    "id": "parole-chiave-con-trattini (stabile, non cambia mai, unico anche rispetto all'archivio)",
     "titolo": "", "sintesi": "2-3 frasi",
     "categoria": "strade|cronaca|meteo|politica|eventi|altro",
     "zona": "benevento|telesina|caudina|fortore|provincia",
@@ -132,9 +133,26 @@ ponte, vitulano, cusanomutri, faicchio, amorosi. Cerca avvisi su strade, scuole,
   «Ottopagine (19/10)», «Ottopagine (20/10)».
 - `fonti` della notizia (quelle in prima pagina): una per testata, l'articolo più recente.
 - `rilevante` c'è sempre, come `true` o `false` (booleano, non testo).
-- Tieni le notizie degli **ultimi 3 giorni** (per `pubblicato`); più vecchie solo se collegate a un approfondimento attivo,
-  oppure se sono **avvisi ufficiali ancora in vigore** (strade chiuse, lavori, divieti, ordinanze su scuole o acqua):
-  quelli restano finché vale l'avviso, con `in_vigore_fino` preso dal comunicato, e si tolgono il giorno dopo quella data.
-  Se il comunicato non dà una fine, valgono i 3 giorni.
-- Prima di consegnare, **controlla il file con python**: JSON valido, id unici, categorie e zone ammesse, ogni nome
-  citato esiste nell'elenco fonti, ogni url inizia con http, nessun campo obbligatorio vuoto.
+- Per gli **avvisi ufficiali con una scadenza** (strade chiuse, lavori, divieti, ordinanze su scuole o acqua) scrivi
+  `in_vigore_fino` con la data presa dal comunicato: restano in prima pagina finché vale l'avviso. Se il comunicato
+  non dà una fine, non mettere il campo.
+
+## Archivio: nessuna notizia si cancella
+
+- **Non togliere tu le notizie vecchie.** Lo fa `strumenti/archivia.py`, che sposta in `archivio/AAAA-MM.json`
+  (con articolo e fonti complete) le notizie più vecchie di 3 giorni, tranne gli avvisi ancora in vigore e quelle
+  collegate a un approfondimento attivo; sposta anche gli approfondimenti senza novità da 7 giorni o con
+  `"archiviato": true`. Rifà `archivio/indice.json`, che serve alla ricerca del sito e ai link già condivisi.
+- **Gli `id` sono unici per sempre**, anche rispetto all'archivio: se l'id che vuoi usare esiste già (lo script te lo
+  dice), aggiungi la data, per esempio `incidente-telesina-2026-11-03`. Un fatto vecchio che torna d'attualità è una
+  notizia nuova, con un id nuovo; nella cronologia puoi ricordare il fatto di prima.
+- Non modificare mai i file in `archivio/`, con una sola eccezione: se scopri un errore in una notizia archiviata,
+  correggi quella notizia nel file del suo mese e spiega la correzione nel campo `nota`. Mai cancellarla.
+
+## Prima di consegnare (obbligatorio)
+
+Esegui `python3 strumenti/archivia.py`. Controlla `notizie.json` (JSON valido, id unici anche rispetto
+all'archivio, categorie e zone ammesse, ogni nome citato nell'elenco fonti, url validi, campi obbligatori pieni,
+niente acchiappa-clic nei titoli) e solo se è tutto giusto archivia e scrive.
+- Se stampa **ERRORE**, non ha scritto niente: correggi `notizie.json` e rilancialo finché stampa **OK**.
+- Pubblica **tutti** i file che stampa come `CAMBIATO:`, insieme nello stesso aggiornamento.
