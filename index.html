@@ -128,6 +128,13 @@
   .appro p, .appro li { font: 400 19px/1.6 var(--serif); }
   .appro ul { padding-left: 20px; margin: 0; }
   .appro .racconto { margin-top: 18px; }
+  /* foto illustrativa del tema (img/temi), mai sulla cronaca */
+  .foto-tema { margin: 0 0 10px; }
+  .foto-tema img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; background: var(--riga); }
+  .foto-tema figcaption { font: 400 11.5px var(--sans); color: var(--grigio); margin-top: 4px; }
+  .altre-griglia .foto-tema img { aspect-ratio: 16 / 9; }
+  .appro .foto-tema { margin: 18px 0 0; }
+  .appro .foto-tema figcaption { font-size: 12.5px; }
   .cronologia { list-style: none; padding: 0 !important; }
   .cronologia li { display: grid; grid-template-columns: 110px 1fr; gap: 12px; padding: 10px 0; border-bottom: 1px dotted #b7a48f; }
   .cronologia .giorno { font: 700 14px var(--sans); color: var(--rosso); padding-top: 4px; }
@@ -616,9 +623,25 @@
     return r;
   }
 
+  // La foto illustrativa scelta dall'agente tra quelle di img/temi (non è una foto del fatto: lo dice la didascalia).
+  function fotoTema(n, didascalia, grande) {
+    if (!n.immagine || n.categoria === "cronaca" || !/^[a-z0-9-]+$/.test(n.immagine)) return null;
+    var f = el("figure", "foto-tema", []), im = document.createElement("img"), b = "/img/temi/" + n.immagine;
+    im.src = b + "-m.jpg";
+    im.srcset = b + "-m.jpg 768w, " + b + ".jpg 1536w";
+    im.sizes = grande ? "(max-width: 800px) 100vw, 760px" : "(max-width: 800px) 100vw, 420px";
+    im.width = 1536; im.height = 1024; im.alt = ""; im.decoding = "async";
+    if (!grande) im.loading = "lazy";
+    f.appendChild(im);
+    f.appendChild(el("figcaption", "", [didascalia]));
+    return f;
+  }
+
   function scheda(n, classe) {
     var art = el("article", "notizia" + (classe ? " " + classe : ""), []);
     if (n.id) art.setAttribute("data-id", n.id);
+    var ft = classe === "spalla" ? null : fotoTema(n, "Immagine illustrativa");
+    if (ft) art.appendChild(ft);
     var occ = el("div", "occhiello", [NOMI_CAT[n.categoria] || "Altro"]);
     if (n.luogo) occ.appendChild(el("span", "luogo", [n.luogo]));
     art.appendChild(occ);
@@ -931,6 +954,8 @@
     var az = ascolta(testoArticolo(n));
     az.appendChild(condividi(n.titolo, linkArticolo(n), true));
     art.appendChild(az);
+    var ft = fotoTema(n, "Immagine illustrativa creata con l'intelligenza artificiale: non è una foto del fatto.", true);
+    if (ft) art.appendChild(ft);
     // Il racconto: la notizia scritta per intero, paragrafo per paragrafo (le notizie più vecchie hanno solo «cosa»).
     if (Array.isArray(a.racconto) && a.racconto.length) {
       var rc = el("div", "racconto", []);
