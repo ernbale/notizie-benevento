@@ -34,7 +34,7 @@ MODELLI = [
     {"id": "gem_seamless", "nome": "GEM", "ente": "Servizio meteo del Canada"},
     {"id": "jma_seamless", "nome": "JMA", "ente": "Servizio meteo del Giappone"},
 ]
-VAR_MODELLI = ["temperature_2m", "apparent_temperature", "precipitation", "snowfall", "weather_code", "cloud_cover",
+VAR_MODELLI = ["temperature_2m", "precipitation", "snowfall", "weather_code", "cloud_cover",
                "wind_speed_10m", "wind_direction_10m", "wind_gusts_10m", "relative_humidity_2m", "dew_point_2m",
                "pressure_msl"]
 POLLINI = {"alder_pollen": "ontano", "birch_pollen": "betulla", "grass_pollen": "graminacee",
@@ -65,6 +65,30 @@ def url(base, **p):
 def mediana(v):
     v = [x for x in v if x is not None]
     return round(statistics.median(v), 1) if v else None
+
+
+def percepita(t, ur, v):
+    """Temperatura percepita come la calcola il servizio meteo americano (NWS), usata anche dalle app più diffuse:
+    sotto i 10° con vento l'effetto del vento (wind chill), sopra i 27° l'effetto dell'umidità (indice di calore),
+    in mezzo la temperatura vera. La «apparent temperature» dei modelli (Steadman) alza la percepita con l'umidità
+    anche col fresco: con la pioggia a 16° diceva 20°, mentre bagnato e fresco si sente più freddo, non più caldo."""
+    if t is None:
+        return None
+    if t <= 10 and v is not None and v > 4.8:
+        k = v ** 0.16          # vento in km/h
+        return round(min(t, 13.12 + 0.6215 * t - 11.37 * k + 0.3965 * t * k), 1)
+    if t >= 26.7 and ur is not None:
+        f = t * 9 / 5 + 32     # le formule dell'indice di calore sono in gradi Fahrenheit
+        hi = 0.5 * (f + 61 + (f - 68) * 1.2 + ur * 0.094)
+        if (hi + f) / 2 >= 80:
+            hi = (-42.379 + 2.04901523 * f + 10.14333127 * ur - 0.22475541 * f * ur - 6.83783e-3 * f * f
+                  - 5.481717e-2 * ur * ur + 1.22874e-3 * f * f * ur + 8.5282e-4 * f * ur * ur - 1.99e-6 * f * f * ur * ur)
+            if ur < 13 and f <= 112:
+                hi -= (13 - ur) / 4 * ((17 - abs(f - 95)) / 17) ** 0.5
+            elif ur > 85 and f <= 87:
+                hi += (ur - 85) / 10 * (87 - f) / 5
+        return round((hi - 32) * 5 / 9, 1)
+    return t
 
 
 def direzione_media(dirs, vel):
@@ -278,7 +302,9 @@ def main():
         neve = mediana(val["snowfall"])
         vis = b["hourly"]["visibility"][i]
         o["temp"].append(t)
-        o["perc"].append(mediana(val["apparent_temperature"]))
+        # percepita di ogni modello con la sua temperatura, umidità e vento, poi la mediana come per il resto
+        o["perc"].append(mediana([percepita(a, b_, c) for a, b_, c in
+                                  zip(val["temperature_2m"], val["relative_humidity_2m"], val["wind_speed_10m"])]))
         o["pioggia"].append(mm)
         o["prob"].append(prob)
         o["neve"].append(neve)
