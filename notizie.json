@@ -1,7 +1,159 @@
 {
- "aggiornato": "2026-10-20T12:04:00+02:00",
+ "aggiornato": "2026-10-20T14:06:00+02:00",
  "giornali_letti": 15,
  "notizie": [
+  {
+   "id": "allerta-arancione-sannio-21-ottobre",
+   "titolo": "Sannio, allerta arancione per maltempo mercoledì 21 ottobre: scuole, parchi e cimitero chiusi a Montesarchio, a Benevento scuole chiuse in arrivo",
+   "sintesi": "La Protezione civile della Regione Campania ha emesso un'allerta arancione, per tutta la giornata di mercoledì 21 ottobre, anche per la zona «Alta Irpinia e Sannio» e per «Alto Volturno e Matese»: temporali anche forti, soprattutto al mattino. A Montesarchio un'ordinanza chiude scuole, villa comunale, parchi e cimitero; a Benevento si attende l'ordinanza per fermare le lezioni.",
+   "categoria": "meteo",
+   "zona": "provincia",
+   "luogo": "Sannio",
+   "pubblicato": "2026-10-20",
+   "stato": "ufficiale",
+   "rilevante": true,
+   "in_vigore_fino": "2026-10-21",
+   "fonti": [
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/maltempo-allerta-meteo-arancione-scuole-chiuse-montesarchio/"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/20/benevento-mercoledi-scuole-chiuse-per-maltempo-si-attende-lufficialita-ordinanze-anche-in-provincia/"
+    },
+    {
+     "nome": "Fremondoweb",
+     "url": "https://www.fremondoweb.com/notizie-sannio/protezione-civile-allerta-meteo-arancione-nel-sannio/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/maltempo-scuole-chiuse-a-benevento-dopo-lallerta-arancione/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/20/allerta-meteo-arancione-nel-sannio-mercoledi-giornata-di-maltempo/"
+    },
+    {
+     "nome": "Meteoalarm",
+     "url": "https://meteoalarm.org?geocode=EMMA_ID:IT016"
+    }
+   ],
+   "articolo": {
+    "cosa": "La Protezione civile della Regione Campania ha emanato un avviso di allerta arancione valido dalla mezzanotte e per tutta la giornata di mercoledì 21 ottobre per le zone 1, 2, 3 e 4, cioè anche per l'Alto Volturno e Matese (Telese, Cerreto, Airola…) e per l'Alta Irpinia e Sannio (Benevento, Montesarchio, Fortore…). Si prevedono piogge e temporali, anche forti, soprattutto nella prima parte della giornata, con possibili frane, caduta di massi, allagamenti e torrenti che si ingrossano. Il sindaco di Montesarchio ha già chiuso scuole, villa comunale, parchi e cimitero; a Benevento le scuole chiuderanno, ma l'ordinanza non era ancora uscita.",
+    "cronologia": [
+     {
+      "data": "20 ottobre, 12:09",
+      "fatto": "Meteoalarm aggiorna gli avvisi per la Campania: arancione per pioggia e temporali dalle 02:00 alle 19:59 di mercoledì 21, gialla per vento dalle 08:00 del 21 all'01:59 del 22.",
+      "fonti": [
+       "Meteoalarm"
+      ]
+     },
+     {
+      "data": "20 ottobre",
+      "fatto": "Il sindaco di Montesarchio, Carmelo Sandomenico, firma l'ordinanza n. 34 con la chiusura per mercoledì di tutte le scuole, della villa comunale, dei parchi e del cimitero (garantiti i funerali).",
+      "fonti": [
+       "Cronache del Sannio",
+       "NTR24"
+      ]
+     },
+     {
+      "data": "20 ottobre",
+      "fatto": "A Benevento il sindaco Mastella ha deciso di fermare le lezioni di mercoledì, ma il provvedimento formale è ancora atteso.",
+      "fonti": [
+       "Anteprima24",
+       "Cronache del Sannio",
+       "NTR24"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Allerta arancione della Protezione civile regionale dalla mezzanotte e per tutta la giornata di mercoledì 21 ottobre, con piogge e temporali anche forti soprattutto nella prima parte della giornata, per le zone 1, 2, 3 e 4 della Campania; sul resto della regione è gialla.",
+      "fonti": [
+       "Cronache del Sannio",
+       "NTR24",
+       "Fremondoweb",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Rischi indicati: frane e caduta di massi (anche dove gli incendi dei boschi hanno indebolito il terreno), allagamenti di cantine e piani terra, acqua sulle strade, corsi d'acqua minori che si alzano. Ai sindaci si raccomanda di attivare i centri operativi comunali.",
+      "fonti": [
+       "Cronache del Sannio",
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Montesarchio: scuole di ogni ordine e grado, villa comunale, parchi e cimitero chiusi mercoledì 21 ottobre.",
+      "fonti": [
+       "Cronache del Sannio",
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Benevento: scuole chiuse mercoledì per decisione del sindaco, ordinanza formale attesa.",
+      "fonti": [
+       "Anteprima24",
+       "Cronache del Sannio",
+       "NTR24"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "Cronache del Sannio scrive che la chiusura di Montesarchio è dovuta a un'allerta «gialla», mentre l'avviso regionale che lo stesso articolo riporta è arancione anche per la zona del Sannio. Meteoalarm dà arancione per pioggia e temporali dalle 02:00 alle 19:59, i giornali parlano di tutta la giornata.",
+      "fonti": [
+       "Cronache del Sannio",
+       "Meteoalarm"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "Il livello dell'allerta per le tre zone del Sannio nel bollettino nazionale della Protezione civile, che per il 21 ottobre non è ancora uscito.",
+     "Quali altri Comuni del Sannio chiuderanno scuole, parchi e cimiteri.",
+     "L'orario esatto dell'ordinanza di Benevento e se riguarderà anche parchi e cimitero."
+    ],
+    "fonti": [
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Maltempo, allerta meteo arancione domani: attesi provvedimenti, scuole chiuse a Montesarchio",
+      "url": "https://www.cronachedelsannio.it/sannionews24/maltempo-allerta-meteo-arancione-scuole-chiuse-montesarchio/",
+      "data": "20 ott"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Benevento, mercoledì scuole chiuse per maltempo: si attende l’ufficialità. Ordinanze anche in provincia",
+      "url": "https://www.ntr24.tv/2026/10/20/benevento-mercoledi-scuole-chiuse-per-maltempo-si-attende-lufficialita-ordinanze-anche-in-provincia/",
+      "data": "20 ott"
+     },
+     {
+      "nome": "Fremondoweb",
+      "titolo": "Protezione Civile, allerta meteo arancione nel Sannio",
+      "url": "https://www.fremondoweb.com/notizie-sannio/protezione-civile-allerta-meteo-arancione-nel-sannio/",
+      "data": "20 ott"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Maltempo, scuole chiuse domani a Benevento dopo l’allerta arancione",
+      "url": "https://www.anteprima24.it/benevento/maltempo-scuole-chiuse-a-benevento-dopo-lallerta-arancione/",
+      "data": "20 ott"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Allerta meteo arancione nel Sannio, mercoledì giornata di maltempo",
+      "url": "https://www.beneventonews24.it/2026/10/20/allerta-meteo-arancione-nel-sannio-mercoledi-giornata-di-maltempo/",
+      "data": "20 ott"
+     },
+     {
+      "nome": "Meteoalarm",
+      "titolo": "Orange Rain Warning / Orange Thunderstorm Warning / Yellow Wind Warning – Campania",
+      "url": "https://meteoalarm.org?geocode=EMMA_ID:IT016",
+      "data": "20 ott, 12:09"
+     }
+    ]
+   }
+  },
   {
    "id": "airola-incendio-diossine-latte",
    "titolo": "Incendio di Airola, controlli sugli alimenti: diossine nel latte di pecora a Cervinara, il latte è stato bloccato",
