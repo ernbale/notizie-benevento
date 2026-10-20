@@ -30,6 +30,14 @@ ISO = re.compile(r"^\d{4}-\d{2}-\d{2}(T\d{2}:\d{2}(:\d{2})?[+-]\d{2}:\d{2})?$")
 GIORNO = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 GIORNI_PRIMA_PAGINA = 3      # oggi + i 2 giorni prima
 GIORNI_APPROFONDIMENTO = 7
+# eventi del calendario (eventi.json)
+TIPI_EVENTO = {"teatro", "danza", "concerto", "lirica", "mostra", "museo", "cinema", "sagra", "festa", "mercatino",
+               "natale", "carnevale", "altro"}
+TEMA_TIPO = {"teatro": "teatro", "danza": "danza", "concerto": "concerto", "lirica": "musica-classica", "mostra": "mostra",
+             "museo": "museo", "cinema": "cinema", "sagra": "sagra", "festa": "luminarie", "mercatino": "mercato",
+             "natale": "natale", "carnevale": "carnevale"}
+ORA = re.compile(r"^([01]\d|2[0-3]):[0-5]\d$")
+GIORNI_EVENTI = 60           # un evento finito da più di 60 giorni passa in archivio/eventi-AAAA-MM.json
 
 
 def oggi_roma():
@@ -112,6 +120,55 @@ def scegli_foto(notizie):
                 usate[f] -= 1
             n["foto"] = libera
             usate[libera] = usate.get(libera, 0) + 1
+
+
+def controlla_eventi(ev, err):
+    """Le regole di AGENTE.md («Il calendario degli eventi») su eventi.json."""
+    if not isinstance(ev.get("eventi"), list):
+        err.append("eventi.json: manca la lista eventi")
+        return
+    temi = temi_foto()
+    for x in ev["eventi"]:
+        w = "evento " + str(x.get("id", "?"))
+        for k in ("id", "titolo", "tipo", "inizio", "luogo", "comune", "zona", "breve", "fonti"):
+            if vuoto(x.get(k)):
+                err.append(f"{w}: campo vuoto o mancante {k}")
+        if not re.match(r"^[a-z0-9]+(-[a-z0-9]+)*$", str(x.get("id", ""))):
+            err.append(f"{w}: id non valido (solo minuscole, numeri e trattini)")
+        if x.get("tipo") not in TIPI_EVENTO:
+            err.append(f"{w}: tipo {x.get('tipo')!r} non ammesso ({', '.join(sorted(TIPI_EVENTO))})")
+        if x.get("zona") not in ZONE:
+            err.append(f"{w}: zona {x.get('zona')!r} non ammessa")
+        if not GIORNO.match(str(x.get("inizio", ""))):
+            err.append(f"{w}: inizio deve essere AAAA-MM-GG")
+        if "fine" in x and (not GIORNO.match(str(x["fine"])) or str(x["fine"]) < str(x.get("inizio", ""))):
+            err.append(f"{w}: fine deve essere AAAA-MM-GG, non prima di inizio")
+        if "giorni" in x:
+            gg = x["giorni"]
+            if (not isinstance(gg, list) or len(gg) < 2 or not all(GIORNO.match(str(g)) for g in gg) or gg != sorted(set(gg))
+                    or gg[0] != x.get("inizio") or gg[-1] != x.get("fine")):
+                err.append(f"{w}: giorni deve essere l'elenco ordinato dei giorni AAAA-MM-GG, dal giorno di inizio a quello di fine")
+        if "ora" in x and not ORA.match(str(x["ora"])):
+            err.append(f"{w}: ora deve essere HH:MM")
+        if "annullato" in x and not isinstance(x["annullato"], bool):
+            err.append(f"{w}: annullato deve essere true o false")
+        if x.get("immagine") and x["immagine"] not in temi:
+            err.append(f"{w}: immagine {x['immagine']!r} non è un tema di img/temi/temi.json")
+        nomi = [f.get("nome") for f in x.get("fonti") or []]
+        if len(nomi) != len(set(nomi)):
+            err.append(f"{w}: nomi ripetuti nelle fonti")
+        for f in x.get("fonti") or []:
+            for k in ("nome", "titolo", "url", "data"):
+                if vuoto(f.get(k)):
+                    err.append(f"{w}: fonte {f.get('nome')} senza {k}")
+            if f.get("url") and not re.match(r"^https?://", str(f["url"])):
+                err.append(f"{w}: url non valido {f['url']!r}")
+        for r in x.get("descrizione") or []:
+            if vuoto(r.get("testo")) or vuoto(r.get("fonti")):
+                err.append(f"{w}: paragrafo della descrizione senza testo o senza fonti")
+            for nm in r.get("fonti", []):
+                if nm not in nomi:
+                    err.append(f"{w}: la descrizione cita {nm!r} che non è nelle fonti")
 
 
 def controlla(d, err, avv, adesso=None):
@@ -282,6 +339,27 @@ def main():
         except Exception:
             adesso_roma = None
     controlla(d, err, avv, adesso_roma)
+    p_eventi = os.path.join(base, "eventi.json")
+    try:
+        ev = leggi(p_eventi)
+    except Exception as e:
+        print("ERRORE: eventi.json non è un JSON valido:", e)
+        sys.exit(1)
+    if ev is not None:
+        controlla_eventi(ev, err)
+        ev_arch = {}
+        for p in sorted(glob.glob(os.path.join(cart_arch, "eventi-[0-9][0-9][0-9][0-9]-[0-9][0-9].json"))):
+            ev_arch[os.path.basename(p)[7:14]] = leggi(p)
+        ev_originali = {k: testo_json(v) for k, v in ev_arch.items()}
+        visti_ev = {}
+        for mese, m in ev_arch.items():
+            for x in m.get("eventi", []):
+                visti_ev.setdefault(x.get("id"), []).append("archivio " + mese)
+        for x in ev.get("eventi") or []:
+            visti_ev.setdefault(x.get("id"), []).append("eventi.json")
+        for i, dove in visti_ev.items():
+            if len(dove) > 1:
+                err.append(f"evento {i!r}: id usato più volte ({', '.join(dove)}): scegline un altro")
 
     # Archivio esistente: si legge tutto, non si toglie mai niente.
     mesi = {}
@@ -364,6 +442,24 @@ def main():
         print(f"ARCHIVIATO APPROFONDIMENTO: {ap_['id']} → archivio/{mese}.json")
 
     scegli_foto(restano)
+    if ev is not None:
+        # gli eventi finiti da più di GIORNI_EVENTI giorni passano in archivio/eventi-AAAA-MM.json (mese della fine)
+        soglia_ev = (oggi - dt.timedelta(days=GIORNI_EVENTI)).isoformat()
+        restano_ev = []
+        for x in ev["eventi"]:
+            fine = x.get("fine") or x["inizio"]
+            if fine < soglia_ev:
+                y = dict(x, archiviato_il=oggi.isoformat())
+                ev_arch.setdefault(fine[:7], {"eventi": []})["eventi"].append(y)
+                print(f"ARCHIVIATO EVENTO: {x['id']} ({fine}) → archivio/eventi-{fine[:7]}.json")
+            else:
+                restano_ev.append(x)
+        for x in restano_ev:
+            if not x.get("immagine") and TEMA_TIPO.get(x.get("tipo")) in temi_foto():
+                x["immagine"] = TEMA_TIPO[x["tipo"]]
+        restano_ev.sort(key=lambda x: (x["inizio"], x.get("ora") or "", x["id"]))
+        scegli_foto(restano_ev)
+        ev_nuovo = dict(ev, eventi=restano_ev)
     nuovo = dict(d)
     nuovo["notizie"] = restano
     nuovo["approfondimenti"] = restano_ap
@@ -395,6 +491,14 @@ def main():
     vecchio_indice = leggi(p_indice, {}) if os.path.exists(p_indice) else None
     if vecchio_indice is None or vecchio_indice.get("voci") != voci:
         da_scrivere.append((p_indice, testo_json(indice)))
+    if ev is not None:
+        for mese, m in sorted(ev_arch.items()):
+            m["eventi"].sort(key=lambda x: (x["inizio"], x["id"]))
+            if ev_originali.get(mese) != testo_json(m):
+                da_scrivere.append((os.path.join(cart_arch, f"eventi-{mese}.json"), testo_json(m)))
+        with open(p_eventi, encoding="utf-8") as f:
+            if f.read() != testo_json(ev_nuovo):
+                da_scrivere.append((p_eventi, testo_json(ev_nuovo)))
     # sempre nello stesso formato (indent 1): così su GitHub si vedono solo le righe cambiate davvero
     with open(p_notizie, encoding="utf-8") as f:
         if vanno or vanno_ap or f.read() != testo_json(nuovo):

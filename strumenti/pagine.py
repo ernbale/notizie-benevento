@@ -5,6 +5,8 @@
   È index.html con titolo, descrizione, anteprima (og:), dati strutturati (NewsArticle) e l'articolo già scritto
   nella pagina: Google lo legge subito e WhatsApp/Facebook mostrano titolo e immagine. Poi il sito funziona come sempre.
 - sezione/<nome>/ e zona/<nome>/: la prima pagina già filtrata, con titolo e descrizione propri.
+- evento/<id>/index.html ed evento/<id>/evento.ics: la pagina di ogni evento del calendario (eventi.json e
+  archivio/eventi-*.json), con i dati strutturati Event, e il file per aggiungerlo al calendario del telefono.
 - img/n/<id>-<impronta>.png: l'immagine di anteprima di ogni notizia (titolo grande, sezione, luogo, fonti).
 - sitemap.xml (tutto), sitemap-notizie.xml (Google News, ultimi 2 giorni), feed.xml (RSS, ultime 50).
 
@@ -47,8 +49,9 @@ SEZIONI = [
     ("sezione/politica", {"cat": "politica"}, "Politica Benevento: Comune, Provincia e paesi del Sannio",
      "Politica a Benevento e nel Sannio", "Consiglio comunale, Provincia, Regione e paesi del Sannio: "
      "le notizie di politica di Benevento confrontate tra i giornali locali."),
-    ("sezione/eventi", {"cat": "eventi"}, "Eventi a Benevento e provincia: cosa fare nel Sannio",
-     "Eventi a Benevento e provincia", "Feste, sagre, concerti, mostre e incontri a Benevento e nei paesi del Sannio."),
+    ("sezione/eventi", {"cat": "eventi"}, "Eventi a Benevento e provincia: calendario di teatro, concerti, mostre e sagre",
+     "Eventi a Benevento e provincia", "Il calendario degli eventi nel Sannio: teatro, concerti, mostre, cinema, sagre e "
+     "feste a Benevento e provincia, con date, orari, luoghi e fonti."),
     ("sezione/allerte", {"cat": "meteo"}, "Allerte Benevento: allerta meteo, scuole chiuse e terremoti nel Sannio",
      "Allerte a Benevento e nel Sannio", "Allerte meteo della Protezione civile per le zone del Sannio, chiusure di "
      "scuole e parchi decise dai Comuni, terremoti e danni del maltempo a Benevento e provincia."),
@@ -119,7 +122,7 @@ def quando_dt(iso):
 
 
 def percorso(tipo, id_):
-    return f"/{'notizia' if tipo == 'notizia' else 'approfondimento'}/{id_}/"
+    return f"/{tipo if tipo in ('notizia', 'evento') else 'approfondimento'}/{id_}/"
 
 
 # ---------- dati: prima pagina + archivio ----------
@@ -369,13 +372,141 @@ def html_approfondimento(ap, notizie_per_id):
     return f'<article class="appro">{h}</article>'
 
 
+# ---------- eventi del calendario ----------
+NOMI_TIPO = {"teatro": "Teatro", "danza": "Danza", "concerto": "Concerto", "lirica": "Lirica", "mostra": "Mostra",
+             "museo": "Museo", "cinema": "Cinema", "sagra": "Sagra", "festa": "Festa", "mercatino": "Mercatino",
+             "natale": "Natale", "carnevale": "Carnevale", "altro": "Evento"}
+GIORNI = ["lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato", "domenica"]
+
+
+def tutti_gli_eventi(sito):
+    """eventi.json più quelli già in archivio (archivio/eventi-AAAA-MM.json): ognuno ha la sua pagina per sempre."""
+    out, visti = [], set()
+    files = [os.path.join(sito, "eventi.json")] + sorted(glob.glob(os.path.join(sito, "archivio", "eventi-*.json")), reverse=True)
+    for f in files:
+        if not os.path.exists(f):
+            continue
+        for ev in leggi(f).get("eventi", []):
+            if ev.get("id") and ev.get("inizio") and ev["id"] not in visti:
+                out.append(ev)
+                visti.add(ev["id"])
+    return out
+
+
+def fine_ev(ev):
+    return ev["fine"] if ev.get("fine") and ev["fine"] > ev["inizio"] else ev["inizio"]
+
+
+def quando_ev(ev):
+    """«Da giovedì 29 ottobre a domenica 1 novembre 2026», «Sabato 24 ottobre 2026, ore 21:00»,
+    «26 e 27 dicembre 2026, 2 e 3 gennaio 2027» (come quandoEv in index.html)."""
+    gg = ev.get("giorni") if isinstance(ev.get("giorni"), list) else []
+    if 1 < len(gg) <= 8:
+        mesi = []
+        for x in gg:
+            if mesi and mesi[-1][0] == x[:7]:
+                mesi[-1][1].append(int(x[8:]))
+            else:
+                mesi.append((x[:7], [int(x[8:])]))
+        pezzi = []
+        for i, (m, dd) in enumerate(mesi):
+            d = ", ".join(map(str, dd[:-1])) + " e " + str(dd[-1]) if len(dd) > 1 else str(dd[0])
+            anno = f" {m[:4]}" if i == len(mesi) - 1 or mesi[i + 1][0][:4] != m[:4] else ""
+            pezzi.append(f"{d} {MESI_LUNGHI[int(m[5:7]) - 1]}{anno}")
+        t = ", ".join(pezzi) + (f", ore {ev['ora']}" if ev.get("ora") else "")
+        return t[0].upper() + t[1:]
+    if len(gg) > 8:
+        a, b = dt.date.fromisoformat(ev["inizio"]), dt.date.fromisoformat(fine_ev(ev))
+        return f"Da {a.day} {MESI_LUNGHI[a.month - 1]} a {b.day} {MESI_LUNGHI[b.month - 1]} {b.year}, in {len(gg)} giorni"
+
+    def g(s):
+        d = dt.date.fromisoformat(s)
+        return f"{GIORNI[d.weekday()]} {d.day} {MESI_LUNGHI[d.month - 1]}"
+    f = fine_ev(ev)
+    t = f"da {g(ev['inizio'])} a {g(f)}" if f > ev["inizio"] else g(ev["inizio"])
+    t += f" {f[:4]}" + (f", ore {ev['ora']}" if ev.get("ora") else "")
+    return t[0].upper() + t[1:]
+
+
+def inizio_dt(ev):
+    """Inizio con l'ora italiana (solo se c'è l'ora)."""
+    from zoneinfo import ZoneInfo
+    return dt.datetime.fromisoformat(f"{ev['inizio']}T{ev['ora']}").replace(tzinfo=ZoneInfo("Europe/Rome"))
+
+
+def ics_evento(ev, url):
+    """Il file .ics: senza ora è un evento di tutto il giorno; con l'ora dura 2 ore (la fine non la sappiamo)."""
+    def esc(t):
+        return str(t or "").replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,").replace("\n", "\\n")
+
+    def piega(riga):   # righe di al massimo 75 byte, come vuole il formato
+        out, b = [], riga.encode("utf-8")
+        while len(b) > 75:
+            taglio = 75 if not out else 74
+            while taglio > 0 and (b[taglio] & 0xC0) == 0x80:
+                taglio -= 1
+            out.append(b[:taglio].decode("utf-8"))
+            b = b[taglio:]
+        out.append(b.decode("utf-8"))
+        return "\r\n ".join(out)
+    adesso = dt.datetime.now(dt.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    descr = ev.get("breve", "") + ("\nOrario di fine non indicato." if ev.get("ora") else "") + "\n" + url
+    righe = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Notizie Benevento//Eventi//IT", "CALSCALE:GREGORIAN",
+             "METHOD:PUBLISH", "BEGIN:VEVENT", f"UID:{ev['id']}@notiziebenevento.it", f"DTSTAMP:{adesso}"]
+    if ev.get("ora"):
+        a = inizio_dt(ev).astimezone(dt.timezone.utc)
+        righe += [f"DTSTART:{a.strftime('%Y%m%dT%H%M%SZ')}", f"DTEND:{(a + dt.timedelta(hours=2)).strftime('%Y%m%dT%H%M%SZ')}"]
+    else:
+        dopo = dt.date.fromisoformat(fine_ev(ev)) + dt.timedelta(days=1)
+        righe += [f"DTSTART;VALUE=DATE:{ev['inizio'].replace('-', '')}", f"DTEND;VALUE=DATE:{dopo.strftime('%Y%m%d')}"]
+        # solo alcuni giorni (per esempio i fine settimana): gli altri si tolgono
+        gg = set(ev.get("giorni") or [])
+        if gg:
+            fuori, d = [], dt.date.fromisoformat(ev["inizio"])
+            while d <= dt.date.fromisoformat(fine_ev(ev)):
+                if d.isoformat() not in gg:
+                    fuori.append(d.strftime("%Y%m%d"))
+                d += dt.timedelta(days=1)
+            if fuori:
+                righe += [f"RRULE:FREQ=DAILY;UNTIL={fine_ev(ev).replace('-', '')}", "EXDATE;VALUE=DATE:" + ",".join(fuori)]
+                righe[-3] = f"DTEND;VALUE=DATE:{(dt.date.fromisoformat(ev['inizio']) + dt.timedelta(days=1)).strftime('%Y%m%d')}"
+    righe += [f"SUMMARY:{esc(ev['titolo'])}", f"LOCATION:{esc(ev.get('luogo', '') + ', ' + ev.get('comune', ''))}",
+              f"DESCRIPTION:{esc(descr)}", f"URL:{url}", "STATUS:" + ("CANCELLED" if ev.get("annullato") else "CONFIRMED"),
+              "END:VEVENT", "END:VCALENDAR"]
+    return "\r\n".join(piega(r) for r in righe) + "\r\n"
+
+
+def html_evento(ev):
+    fonti = ev.get("fonti") if isinstance(ev.get("fonti"), list) else []
+    h = _testata_pagina(NOMI_TIPO.get(ev.get("tipo"), "Evento"), ev.get("comune"), ev["titolo"]).replace(
+        '<a class="indietro" href="/">← Tutte le notizie</a>', '<a class="indietro" href="/sezione/eventi/">← Calendario degli eventi</a>')
+    if ev.get("annullato"):
+        h += '<p class="ev-annullato">Annullato</p>'
+    dove = f'{e(ev.get("luogo"))}, {e(ev.get("comune"))}'
+    righe = [("Quando", e(quando_ev(ev)))] + ([("Orari", e(ev["orari"][:1].upper() + ev["orari"][1:]))] if ev.get("orari") else [])
+    righe.append(("Dove", dove))
+    if ev.get("prezzo"):
+        righe.append(("Ingresso", e(ev["prezzo"][:1].upper() + ev["prezzo"][1:])))
+    h += '<dl class="scheda-evento">' + "".join(f"<dt>{t}</dt><dd>{v}</dd>" for t, v in righe) + "</dl>"
+    h += '<div class="ev-azioni" style="min-height:38px"></div>'
+    if foto_tema(ev):
+        b = foto_tema(ev)[:-4]
+        h += (f'<figure class="foto-tema"><img src="{b}-m.jpg" srcset="{b}-m.jpg 768w, {b}.jpg 1536w" '
+              'sizes="(max-width: 800px) 100vw, 760px" width="1536" height="1024" alt="" decoding="async">'
+              "<figcaption>Immagine illustrativa creata con l'intelligenza artificiale: non è una foto dell'evento.</figcaption></figure>")
+    par = ev.get("descrizione") if isinstance(ev.get("descrizione"), list) and ev.get("descrizione") else [ev.get("breve", "")]
+    h += '<div class="racconto">' + "".join(_frase("p", r, fonti) for r in par) + "</div>"
+    h += _fonti(fonti)
+    return f'<article class="appro">{h}</article>'
+
+
 # ---------- la testa della pagina (titolo, descrizione, anteprima, dati strutturati) ----------
 ORG = {"@type": "NewsMediaOrganization", "@id": SITO + "/#org", "name": NOME, "url": SITO + "/",
        "logo": {"@type": "ImageObject", "url": SITO + "/icona-512.png", "width": 512, "height": 512},
        "areaServed": {"@type": "AdministrativeArea", "name": "Provincia di Benevento"}}
 
 
-def blocco_seo(title, descr, url, immagine, tipo="website", jsonld=None, extra=""):
+def blocco_seo(title, descr, url, immagine, tipo="website", jsonld=None, extra="", dim=(1200, 630)):
     h = [f"<title>{e(title)}</title>",
          f'<meta name="description" content="{e(descr)}">',
          f'<link rel="canonical" href="{e(url)}">',
@@ -385,8 +516,8 @@ def blocco_seo(title, descr, url, immagine, tipo="website", jsonld=None, extra="
          f'<meta property="og:description" content="{e(descr)}">',
          f'<meta property="og:url" content="{e(url)}">',
          f'<meta property="og:image" content="{e(SITO + immagine)}">',
-         '<meta property="og:image:width" content="1200">',
-         '<meta property="og:image:height" content="630">',
+         f'<meta property="og:image:width" content="{dim[0]}">',
+         f'<meta property="og:image:height" content="{dim[1]}">',
          '<meta property="og:locale" content="it_IT">',
          '<meta name="twitter:card" content="summary_large_image">']
     if extra:
@@ -460,7 +591,7 @@ def main():
     except ImportError:
         con_immagini = False
         print("AVVISO: Pillow non c'è, uso l'immagine del sito per tutte le notizie", file=sys.stderr)
-    for d in ("notizia", "approfondimento", "sezione", "zona"):
+    for d in ("notizia", "approfondimento", "sezione", "zona", "evento"):
         shutil.rmtree(os.path.join(sito, d), ignore_errors=True)
     per_id = {n["id"]: n for n in notizie}
     usate, mappa = set(), []   # mappa: (url, lastmod)
@@ -512,6 +643,32 @@ def main():
         scrivi(os.path.join(sito, "approfondimento", x["id"], "index.html"),
                pagina(modello, seo, {"rotta": "#approfondimento/" + x["id"]}, html_approfondimento(x, per_id), articolo=True))
         mappa.append((url, x.get("aggiornato")))
+
+    # eventi del calendario: una pagina e un .ics ciascuno
+    eventi = tutti_gli_eventi(sito)
+    for ev in eventi:
+        url = SITO + percorso("evento", ev["id"])
+        ft = foto_tema(dict(ev, immagine=ev.get("immagine") or ""))
+        luogo = {"@type": "Place", "name": ev.get("luogo"), "address": {"@type": "PostalAddress",
+                 "addressLocality": ev.get("comune"), "addressRegion": "BN", "addressCountry": "IT"}}
+        jsonld = {"@context": "https://schema.org", "@type": "Event", "name": ev["titolo"], "url": url,
+                  "startDate": inizio_dt(ev).isoformat(timespec="minutes") if ev.get("ora") else ev["inizio"],
+                  "eventStatus": "https://schema.org/Event" + ("Cancelled" if ev.get("annullato") else "Scheduled"),
+                  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": luogo,
+                  "description": ev.get("breve"), "image": [SITO + (ft or "/condivisione.png")]}
+        if fine_ev(ev) > ev["inizio"]:
+            jsonld["endDate"] = fine_ev(ev)
+        if re.search(r"gratuit|gratis|libero", str(ev.get("prezzo") or ""), re.I):
+            jsonld["isAccessibleForFree"] = True
+        # anteprima su WhatsApp e Facebook: la foto del tema (1536×1024), sennò l'immagine del sito
+        seo = blocco_seo(f"{ev['titolo']}, {ev.get('comune')} – {quando_ev(ev)} – {NOME}", breve(ev.get("breve")), url,
+                         ft or "/condivisione.png", jsonld=jsonld, dim=(1536, 1024) if ft else (1200, 630))
+        cartella = os.path.join(sito, "evento", ev["id"])
+        scrivi(os.path.join(cartella, "index.html"),
+               pagina(modello, seo, {"rotta": "#evento/" + ev["id"], "evento": ev}, html_evento(ev), articolo=True))
+        with open(os.path.join(cartella, "evento.ics"), "w", encoding="utf-8", newline="") as f:
+            f.write(ics_evento(ev, url))
+        mappa.append((url, None))
 
     # sezioni e zone: la prima pagina filtrata
     for perc, filtro, title, h1, descr in SEZIONI:
@@ -581,7 +738,7 @@ def main():
         with open(a.indexnow, "w", encoding="utf-8") as f:
             json.dump(cambiate[:10000], f)
         print(f"IndexNow: {len(cambiate)} pagine cambiate")
-    print(f"OK pagine: {len(notizie)} notizie, {len(appro)} approfondimenti, {len(SEZIONI)} sezioni e zone; "
+    print(f"OK pagine: {len(notizie)} notizie, {len(appro)} approfondimenti, {len(eventi)} eventi, {len(SEZIONI)} sezioni e zone; "
           f"{len(usate)} immagini; sitemap {len(mappa)} indirizzi")
 
 
