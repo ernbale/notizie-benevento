@@ -1177,7 +1177,6 @@
     s.textContent = "";
     if (!dati.aggiornato) { s.appendChild(testo("In attesa del primo aggiornamento")); return; }
     s.appendChild(testo("Aggiornato " + quando(dati.aggiornato)));
-    if (dati.giornali_letti) { s.appendChild(el("br", "", [])); s.appendChild(testo(dati.giornali_letti + " giornali letti")); }
   }
 
   document.querySelectorAll(".menu button").forEach(function (b) {
