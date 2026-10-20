@@ -1,15 +1,27 @@
 {
  "acqua": {
   "quando": "acqua sospesa, guasti alla rete idrica, acqua non potabile",
-  "foto": "an old chrome kitchen tap on a simple stone sink in an Italian village home, one single drop of water falling from the spout, no water flowing"
+  "foto": "an old chrome kitchen tap on a simple stone sink in an Italian village home, one single drop of water falling from the spout, no water flowing",
+  "varianti": [
+   "a row of plastic water bottles and a large jug on a kitchen counter",
+   "a close-up of a closed water valve with a blue handle on a metal pipe"
+  ]
  },
  "strada-chiusa": {
   "quando": "strade chiuse, deviazioni, ponti chiusi",
-  "foto": "a red and white striped road barrier closing a narrow country road that winds through green hills"
+  "foto": "a red and white striped road barrier closing a narrow country road that winds through green hills",
+  "varianti": [
+   "red and white plastic road barriers with a flashing amber lamp closing a street in a small town",
+   "a mountain road blocked by a metal barrier with a plain red and white panel"
+  ]
  },
  "lavori-stradali": {
   "quando": "asfalto nuovo, cantieri stradali, senso unico alternato",
-  "foto": "fresh black asphalt on a town street with orange traffic cones and a road roller parked in the background"
+  "foto": "fresh black asphalt on a town street with orange traffic cones and a road roller parked in the background",
+  "varianti": [
+   "an asphalt paving machine laying hot steaming asphalt on a road",
+   "a section of road dug up with sand, new pipes and orange safety netting"
+  ]
  },
  "divieto-sosta": {
   "quando": "divieti di sosta, ZTL, cambi di viabilità in città",
@@ -17,15 +29,27 @@
  },
  "frana": {
   "quando": "frane, smottamenti, strade invase dal fango",
-  "foto": "mud and stones slid down onto the edge of a mountain road after heavy rain, a few orange cones beside it"
+  "foto": "mud and stones slid down onto the edge of a mountain road after heavy rain, a few orange cones beside it",
+  "varianti": [
+   "a landslide scar on a green hillside above a road",
+   "the edge of a road partly collapsed after a landslide, with barriers"
+  ]
  },
  "pioggia": {
   "quando": "allerta pioggia, maltempo, piogge forti",
-  "foto": "heavy rain falling on a cobblestone street of an old Italian town, puddles and grey sky"
+  "foto": "heavy rain falling on a cobblestone street of an old Italian town, puddles and grey sky",
+  "varianti": [
+   "raindrops on a car windscreen with blurred red tail lights on a town street",
+   "a wet piazza in the rain with puddles reflecting old buildings"
+  ]
  },
  "temporale": {
   "quando": "allerta temporali, fulmini, grandine",
-  "foto": "dark storm clouds and a lightning bolt over green rolling hills at dusk"
+  "foto": "dark storm clouds and a lightning bolt over green rolling hills at dusk",
+  "varianti": [
+   "dark storm clouds rolling over a hill village",
+   "a curtain of heavy rain over green countryside and a country road"
+  ]
  },
  "vento": {
   "quando": "allerta vento, alberi caduti",
@@ -33,7 +57,11 @@
  },
  "neve": {
   "quando": "neve, ghiaccio, strade innevate",
-  "foto": "a quiet mountain road covered in fresh snow between pine trees"
+  "foto": "a quiet mountain road covered in fresh snow between pine trees",
+  "varianti": [
+   "a hill village under snow with smoke from chimneys",
+   "a plain snowplough clearing a mountain road"
+  ]
  },
  "allagamento": {
   "quando": "strade allagate, sottopassi pieni d'acqua, esondazioni",
@@ -41,7 +69,11 @@
  },
  "scuola": {
   "quando": "scuole chiuse, scuola, edifici scolastici, iscrizioni",
-  "foto": "an empty classroom with wooden desks, chairs and a blank green chalkboard, morning light"
+  "foto": "an empty classroom with wooden desks, chairs and a blank green chalkboard, morning light",
+  "varianti": [
+   "school backpacks hanging on hooks in a school corridor",
+   "a closed school gate with a chain on a rainy day"
+  ]
  },
  "mensa": {
   "quando": "mensa scolastica, pasti nelle scuole",
@@ -49,47 +81,91 @@
  },
  "cimitero": {
   "quando": "cimiteri, orari dei cimiteri, Commemorazione dei Defunti",
-  "foto": "white chrysanthemums and red votive candles on a stone ledge, cypress trees softly blurred behind"
+  "foto": "white chrysanthemums and red votive candles on a stone ledge, cypress trees softly blurred behind",
+  "varianti": [
+   "cypress trees along the path of a quiet Italian cemetery",
+   "flower pots and candles on marble ledges, no names or writing"
+  ]
  },
  "rifiuti": {
   "quando": "raccolta dei rifiuti, ecocentri, discariche",
-  "foto": "a row of colourful recycling bins for separate waste collection on a town street"
+  "foto": "a row of colourful recycling bins for separate waste collection on a town street",
+  "varianti": [
+   "a plain garbage truck collecting bins at dawn on a town street",
+   "door-to-door waste collection bins and bags outside a house door"
+  ]
  },
  "incendio": {
   "quando": "incendi di sterpaglie o boschi, fumo, roghi",
-  "foto": "smoke rising from a brush fire on a dry hillside seen from far away, hazy sky"
+  "foto": "smoke rising from a brush fire on a dry hillside seen from far away, hazy sky",
+  "varianti": [
+   "a burnt hillside with blackened trees after a wildfire",
+   "flames burning dry grass at the edge of a field"
+  ]
  },
  "terremoto": {
   "quando": "terremoti, scosse, sciami sismici, esercitazioni sul terremoto",
-  "foto": "close-up of a seismograph drum drawing a jagged seismic trace on paper"
+  "foto": "close-up of a seismograph drum drawing a jagged seismic trace on paper",
+  "varianti": [
+   "cracks in the plaster wall of an old building",
+   "a screen with seismic waveforms in a monitoring room"
+  ]
  },
  "ospedale": {
   "quando": "ospedali, pronto soccorso, sanità, ASL",
-  "foto": "an empty clean hospital corridor with soft light and closed doors"
+  "foto": "an empty clean hospital corridor with soft light and closed doors",
+  "varianti": [
+   "the exterior of a modern hospital building with many windows, no signs",
+   "an empty hospital room with a bed and medical monitors"
+  ]
  },
  "treno": {
   "quando": "treni, ferrovie, stazioni, orari e tariffe dei treni",
-  "foto": "railway tracks at a small rural train station in the hills, a plain regional train in the distance"
+  "foto": "railway tracks at a small rural train station in the hills, a plain regional train in the distance",
+  "varianti": [
+   "a plain regional train passing through green countryside",
+   "an empty platform of a small station with a canopy at dawn"
+  ]
  },
  "autobus": {
   "quando": "autobus, trasporto urbano ed extraurbano, fermate",
-  "foto": "a bus stop shelter on an Italian street at dusk, a plain city bus approaching"
+  "foto": "a bus stop shelter on an Italian street at dusk, a plain city bus approaching",
+  "varianti": [
+   "a plain city bus seen from behind in an old town street",
+   "the inside of an empty bus with seats and yellow handrails"
+  ]
  },
  "camion": {
   "quando": "autotrasportatori, tir fermi, blocchi dei camion",
-  "foto": "a long line of parked trucks on the shoulder of a highway among hills, overcast sky"
+  "foto": "a long line of parked trucks on the shoulder of a highway among hills, overcast sky",
+  "varianti": [
+   "trucks parked in a highway rest area at dawn",
+   "the cab of a plain truck seen from the front on a road among hills"
+  ]
  },
  "carburante": {
   "quando": "caro carburanti, prezzi della benzina e del gasolio",
-  "foto": "a fuel pump nozzle hanging on a petrol pump at a gas station"
+  "foto": "a fuel pump nozzle hanging on a petrol pump at a gas station",
+  "varianti": [
+   "a petrol station at night with lit pumps, no brand",
+   "a car dashboard fuel gauge pointing to empty"
+  ]
  },
  "supermercato": {
   "quando": "supermercati, scaffali vuoti, prezzi della spesa",
-  "foto": "half-empty supermarket shelves for fresh fruit and vegetables"
+  "foto": "half-empty supermarket shelves for fresh fruit and vegetables",
+  "varianti": [
+   "a shopping trolley in an empty supermarket aisle",
+   "empty refrigerated shelves for milk and dairy in a supermarket"
+  ]
  },
  "trattori": {
   "quando": "agricoltori, proteste e presidi degli agricoltori, mezzi agricoli",
-  "foto": "a row of tractors parked along a rural road beside fields"
+  "foto": "a row of tractors parked along a rural road beside fields",
+  "varianti": [
+   "a tractor ploughing a field on hills",
+   "a column of tractors driving along a country road"
+  ]
  },
  "campagna": {
   "quando": "agricoltura, olio, raccolti, aziende agricole",
@@ -105,7 +181,11 @@
  },
  "fabbrica": {
   "quando": "aziende, fabbriche, licenziamenti, crisi aziendali, lavoro",
-  "foto": "the exterior of a modern industrial building with closed loading doors, empty yard"
+  "foto": "the exterior of a modern industrial building with closed loading doors, empty yard",
+  "varianti": [
+   "an empty production line inside a factory with the machines switched off",
+   "a closed factory gate with a chain at dusk"
+  ]
  },
  "pasta": {
   "quando": "pastifici, industria alimentare",
@@ -113,11 +193,19 @@
  },
  "documenti": {
   "quando": "ordinanze, delibere, bandi, avvisi del Comune, tasse e tributi",
-  "foto": "official paper documents, a fountain pen and a rubber stamp on a wooden office desk"
+  "foto": "official paper documents, a fountain pen and a rubber stamp on a wooden office desk",
+  "varianti": [
+   "stacks of folders tied with string on the shelves of a municipal archive",
+   "an official document with a round ink stamp and a signature line, close-up, no readable text"
+  ]
  },
  "consiglio": {
   "quando": "Consiglio comunale, provinciale o regionale, sedute e votazioni",
-  "foto": "an empty council chamber with wooden benches, microphones and a hemicycle layout"
+  "foto": "an empty council chamber with wooden benches, microphones and a hemicycle layout",
+  "varianti": [
+   "a council chamber seen from the public seats, a long wooden table with microphones",
+   "a microphone and voting buttons on a wooden desk in a council chamber, close-up"
+  ]
  },
  "lavoro-da-casa": {
   "quando": "smart working, uffici pubblici, dipendenti",
@@ -125,7 +213,11 @@
  },
  "sagra": {
   "quando": "sagre, feste di paese",
-  "foto": "long wooden tables in a village square at evening under warm string lights, nobody there yet"
+  "foto": "long wooden tables in a village square at evening under warm string lights, nobody there yet",
+  "varianti": [
+   "a large pan of local food cooking at a village festival stand",
+   "a festival stand with local products and paper plates under string lights"
+  ]
  },
  "castagne": {
   "quando": "sagre della castagna, prodotti d'autunno",
@@ -133,23 +225,44 @@
  },
  "concerto": {
   "quando": "concerti, spettacoli all'aperto",
-  "foto": "an empty open-air stage with lights in a town square at night"
+  "foto": "an empty open-air stage with lights in a town square at night",
+  "varianti": [
+   "a microphone on a stand on a stage under spotlights",
+   "an outdoor stage in a village square at dusk with lights and empty chairs"
+  ]
  },
  "teatro": {
   "quando": "teatro, cinema, stagioni teatrali",
-  "foto": "rows of empty red velvet seats in an old Italian theatre"
+  "foto": "rows of empty red velvet seats in an old Italian theatre",
+  "varianti": [
+   "a theatre stage with a closed red curtain under spotlights",
+   "the gilded balconies and boxes of an old Italian opera house"
+  ]
  },
  "mercato": {
   "quando": "mercati settimanali, commercio, negozi",
-  "foto": "a market stall with crates of fruit and vegetables under an awning"
+  "foto": "a market stall with crates of fruit and vegetables under an awning",
+  "varianti": [
+   "a weekly street market with stalls and awnings in a village square",
+   "crates of fresh vegetables and fruit at a market stall, close-up"
+  ]
  },
  "calcio": {
   "quando": "calcio, Benevento Calcio, sport",
-  "foto": "a football resting on the grass of an empty stadium pitch"
+  "foto": "a football resting on the grass of an empty stadium pitch",
+  "varianti": [
+   "a football goal net seen from inside on an empty pitch",
+   "football boots on the grass near the touchline",
+   "the corner flag of a football pitch at sunset"
+  ]
  },
  "chiesa": {
   "quando": "feste religiose, chiese, processioni",
-  "foto": "lit candles inside an old church, soft warm light"
+  "foto": "lit candles inside an old church, soft warm light",
+  "varianti": [
+   "the bell tower of a village church against a blue sky",
+   "the nave of an old church with wooden pews and soft light"
+  ]
  },
  "luce": {
   "quando": "luce elettrica, interruzioni di corrente, illuminazione pubblica",
@@ -241,7 +354,11 @@
  },
  "buche": {
   "quando": "buche nelle strade, asfalto rotto in città",
-  "foto": "a large pothole full of rainwater on a damaged asphalt road"
+  "foto": "a large pothole full of rainwater on a damaged asphalt road",
+  "varianti": [
+   "a road with many patched potholes and cracks",
+   "a car tyre next to a deep pothole on a wet road"
+  ]
  },
  "strada-dissestata": {
   "quando": "strade di campagna o di montagna dissestate, provinciali da rifare",
@@ -309,23 +426,43 @@
  },
  "municipio": {
   "quando": "Comune, sindaco, giunta, decisioni dell'amministrazione",
-  "foto": "the facade of an old town hall in a southern Italian village with the Italian and European flags on the balcony"
+  "foto": "the facade of an old town hall in a southern Italian village with the Italian and European flags on the balcony",
+  "varianti": [
+   "the Italian and European flags on poles on the balcony of a historic palazzo, seen from below",
+   "the stone staircase and arched corridor inside an old town hall"
+  ]
  },
  "elezioni": {
   "quando": "elezioni, voto, candidati, liste",
-  "foto": "a transparent ballot box next to a voting booth with a curtain in a school gym"
+  "foto": "a transparent ballot box next to a voting booth with a curtain in a school gym",
+  "varianti": [
+   "ballot papers and a pencil on a table in a polling station, no readable text",
+   "a polling station in a school classroom with voting booths"
+  ]
  },
  "riunione": {
   "quando": "vertici, tavoli in Prefettura o in Regione, incontri istituzionali",
-  "foto": "a long meeting table with chairs, glasses of water and an Italian flag in an institutional room"
+  "foto": "a long meeting table with chairs, glasses of water and an Italian flag in an institutional room",
+  "varianti": [
+   "chairs around an oval table in an institutional meeting room with tall windows",
+   "notebooks, pens and small water bottles on a meeting table, close-up"
+  ]
  },
  "conferenza-stampa": {
   "quando": "conferenze stampa, presentazioni, annunci",
-  "foto": "a table with several microphones and blank name cards in a meeting room"
+  "foto": "a table with several microphones and blank name cards in a meeting room",
+  "varianti": [
+   "a lectern with microphones in front of a plain blue backdrop",
+   "a row of microphones and a video camera on a tripod in a hall"
+  ]
  },
  "tasse": {
   "quando": "tasse, TARI, IMU, tributi, cartelle",
-  "foto": "tax forms, euro coins and a calculator on a kitchen table"
+  "foto": "tax forms, euro coins and a calculator on a kitchen table",
+  "varianti": [
+   "an envelope, a bill and a pen on a table, no readable text",
+   "a calculator, paper receipts and euro coins on a desk"
+  ]
  },
  "bollette": {
   "quando": "bollette di luce e gas, rincari dell'energia",
@@ -333,7 +470,11 @@
  },
  "soldi": {
   "quando": "fondi, finanziamenti, contributi, bandi con soldi, stipendi",
-  "foto": "euro banknotes and coins on a wooden table"
+  "foto": "euro banknotes and coins on a wooden table",
+  "varianti": [
+   "euro coins stacked in columns on a desk",
+   "a ceramic piggy bank and euro coins on a wooden table"
+  ]
  },
  "mutui": {
   "quando": "mutui, banche, prestiti, casa",
@@ -357,7 +498,11 @@
  },
  "protesta": {
   "quando": "proteste, presidi, sit-in, sindacati, scioperi",
-  "foto": "a megaphone and a rolled-up banner resting on the steps of a public building"
+  "foto": "a megaphone and a rolled-up banner resting on the steps of a public building",
+  "varianti": [
+   "plain red flags without writing waving in front of a closed factory gate",
+   "blank protest placards leaning against the railings of a town square"
+  ]
  },
  "anziani": {
   "quando": "anziani, pensionati, pensioni",
@@ -373,7 +518,11 @@
  },
  "universita": {
   "quando": "università, UniSannio, Giustino Fortunato, convegni universitari",
-  "foto": "an empty university lecture hall with tiered wooden seats"
+  "foto": "an empty university lecture hall with tiered wooden seats",
+  "varianti": [
+   "a university corridor with stone arches and notice boards",
+   "books and a laptop on a desk in a university library"
+  ]
  },
  "asilo": {
   "quando": "asili nido, scuole dell'infanzia",
@@ -425,11 +574,19 @@
  },
  "pronto-soccorso": {
   "quando": "pronto soccorso, 118, emergenza sanitaria (mai per incidenti o feriti)",
-  "foto": "the entrance of a hospital emergency department at night with an ambulance parked, no logos, no text"
+  "foto": "the entrance of a hospital emergency department at night with an ambulance parked, no logos, no text",
+  "varianti": [
+   "an empty hospital emergency waiting room with rows of chairs",
+   "an empty stretcher in a hospital corridor"
+  ]
  },
  "medico": {
   "quando": "medici di famiglia, guardia medica, case di comunità, visite",
-  "foto": "a stethoscope and a prescription pad on a doctor's desk"
+  "foto": "a stethoscope and a prescription pad on a doctor's desk",
+  "varianti": [
+   "an empty doctor's surgery with an examination bed",
+   "a blood pressure monitor and a stethoscope on a desk"
+  ]
  },
  "farmacia": {
   "quando": "farmacie, farmaci",

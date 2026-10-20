@@ -194,6 +194,8 @@ togli `cosa` e sistema cronologia e concordano con le regole qui sopra. Le notiz
 - Solo i temi dell'elenco: non crearne di nuovi e mai foto dei giornali. Se manca un tema che servirebbe spesso,
   scrivilo nel resoconto.
 - Alle notizie in prima pagina senza `immagine` aggiungila a ogni giro, dove c'è un tema adatto.
+- Il campo `foto` non lo scrivi tu: lo mette `strumenti/archivia.py`, che sceglie tra le versioni della foto di quel
+  tema quella meno usata in prima pagina, così due notizie dello stesso tema non hanno la stessa foto.
 
 ## Gli approfondimenti
 

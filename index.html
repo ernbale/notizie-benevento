@@ -630,7 +630,9 @@
   // La foto illustrativa scelta dall'agente tra quelle di img/temi (non è una foto del fatto: lo dice la didascalia).
   function fotoTema(n, didascalia, grande) {
     if (!n.immagine || n.categoria === "cronaca" || !/^[a-z0-9-]+$/.test(n.immagine)) return null;
-    var f = el("figure", "foto-tema", []), im = document.createElement("img"), b = "/img/temi/" + n.immagine;
+    // «foto» è la versione scelta da archivia.py per non ripetere la stessa foto in prima pagina
+    var nome = /^[a-z0-9-]+$/.test(n.foto || "") ? n.foto : n.immagine;
+    var f = el("figure", "foto-tema", []), im = document.createElement("img"), b = "/img/temi/" + nome;
     im.src = b + "-m.jpg";
     im.srcset = b + "-m.jpg 768w, " + b + ".jpg 1536w";
     im.sizes = grande ? "(max-width: 800px) 100vw, 760px" : "(max-width: 800px) 100vw, 420px";

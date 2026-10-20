@@ -308,6 +308,9 @@ def foto_tema(n):
     t = n.get("immagine")
     if not t or n.get("categoria") == "cronaca" or not re.match(r"^[a-z0-9-]+$", str(t)):
         return None
+    # «foto» è la versione scelta da archivia.py per non ripetere la stessa foto in prima pagina
+    if re.match(r"^[a-z0-9-]+$", str(n.get("foto") or "")):
+        t = n["foto"]
     return f"/img/temi/{t}.jpg"
 
 
