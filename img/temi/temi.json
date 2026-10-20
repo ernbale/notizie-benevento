@@ -1,45 +1,598 @@
 {
- "acqua": {"quando": "acqua sospesa, guasti alla rete idrica, acqua non potabile", "foto": "an old chrome kitchen tap on a simple stone sink in an Italian village home, one single drop of water falling from the spout, no water flowing"},
- "strada-chiusa": {"quando": "strade chiuse, deviazioni, ponti chiusi", "foto": "a red and white striped road barrier closing a narrow country road that winds through green hills"},
- "lavori-stradali": {"quando": "asfalto nuovo, cantieri stradali, senso unico alternato", "foto": "fresh black asphalt on a town street with orange traffic cones and a road roller parked in the background"},
- "divieto-sosta": {"quando": "divieti di sosta, ZTL, cambi di viabilità in città", "foto": "a temporary round no-parking traffic sign on a metal stand on the sidewalk of an old Italian town street"},
- "frana": {"quando": "frane, smottamenti, strade invase dal fango", "foto": "mud and stones slid down onto the edge of a mountain road after heavy rain, a few orange cones beside it"},
- "pioggia": {"quando": "allerta pioggia, maltempo, piogge forti", "foto": "heavy rain falling on a cobblestone street of an old Italian town, puddles and grey sky"},
- "temporale": {"quando": "allerta temporali, fulmini, grandine", "foto": "dark storm clouds and a lightning bolt over green rolling hills at dusk"},
- "vento": {"quando": "allerta vento, alberi caduti", "foto": "tree branches bending in strong wind, leaves blowing, cloudy sky"},
- "neve": {"quando": "neve, ghiaccio, strade innevate", "foto": "a quiet mountain road covered in fresh snow between pine trees"},
- "allagamento": {"quando": "strade allagate, sottopassi pieni d'acqua, esondazioni", "foto": "a flooded country road with muddy water covering the asphalt, a guard rail half under water"},
- "scuola": {"quando": "scuole chiuse, scuola, edifici scolastici, iscrizioni", "foto": "an empty classroom with wooden desks, chairs and a blank green chalkboard, morning light"},
- "mensa": {"quando": "mensa scolastica, pasti nelle scuole", "foto": "a school canteen table with trays, plates of pasta and glasses of water, no children"},
- "cimitero": {"quando": "cimiteri, orari dei cimiteri, Commemorazione dei Defunti", "foto": "white chrysanthemums and red votive candles on a stone ledge, cypress trees softly blurred behind"},
- "rifiuti": {"quando": "raccolta dei rifiuti, ecocentri, discariche", "foto": "a row of colourful recycling bins for separate waste collection on a town street"},
- "incendio": {"quando": "incendi di sterpaglie o boschi, fumo, roghi", "foto": "smoke rising from a brush fire on a dry hillside seen from far away, hazy sky"},
- "terremoto": {"quando": "terremoti, scosse, sciami sismici, esercitazioni sul terremoto", "foto": "close-up of a seismograph drum drawing a jagged seismic trace on paper"},
- "ospedale": {"quando": "ospedali, pronto soccorso, sanità, ASL", "foto": "an empty clean hospital corridor with soft light and closed doors"},
- "treno": {"quando": "treni, ferrovie, stazioni, orari e tariffe dei treni", "foto": "railway tracks at a small rural train station in the hills, a plain regional train in the distance"},
- "autobus": {"quando": "autobus, trasporto urbano ed extraurbano, fermate", "foto": "a bus stop shelter on an Italian street at dusk, a plain city bus approaching"},
- "camion": {"quando": "autotrasportatori, tir fermi, blocchi dei camion", "foto": "a long line of parked trucks on the shoulder of a highway among hills, overcast sky"},
- "carburante": {"quando": "caro carburanti, prezzi della benzina e del gasolio", "foto": "a fuel pump nozzle hanging on a petrol pump at a gas station"},
- "supermercato": {"quando": "supermercati, scaffali vuoti, prezzi della spesa", "foto": "half-empty supermarket shelves for fresh fruit and vegetables"},
- "trattori": {"quando": "agricoltori, proteste e presidi degli agricoltori, mezzi agricoli", "foto": "a row of tractors parked along a rural road beside fields"},
- "campagna": {"quando": "agricoltura, olio, raccolti, aziende agricole", "foto": "olive trees and ploughed fields on gentle hills of southern Italy"},
- "vigneto": {"quando": "vino, vendemmia, cantine, vigneti", "foto": "rows of vineyards on rolling hills in autumn, golden light"},
- "pecore": {"quando": "allevamenti, latte, pastori, controlli sugli animali", "foto": "a flock of sheep grazing in a green hillside pasture"},
- "fabbrica": {"quando": "aziende, fabbriche, licenziamenti, crisi aziendali, lavoro", "foto": "the exterior of a modern industrial building with closed loading doors, empty yard"},
- "pasta": {"quando": "pastifici, industria alimentare", "foto": "dried short pasta spilling from a paper bag onto a wooden table"},
- "documenti": {"quando": "ordinanze, delibere, bandi, avvisi del Comune, tasse e tributi", "foto": "official paper documents, a fountain pen and a rubber stamp on a wooden office desk"},
- "consiglio": {"quando": "Consiglio comunale, provinciale o regionale, sedute e votazioni", "foto": "an empty council chamber with wooden benches, microphones and a hemicycle layout"},
- "lavoro-da-casa": {"quando": "smart working, uffici pubblici, dipendenti", "foto": "a laptop and a cup of coffee on a kitchen table at home, morning light"},
- "sagra": {"quando": "sagre, feste di paese", "foto": "long wooden tables in a village square at evening under warm string lights, nobody there yet"},
- "castagne": {"quando": "sagre della castagna, prodotti d'autunno", "foto": "roasted chestnuts in a perforated iron pan, autumn leaves around"},
- "concerto": {"quando": "concerti, spettacoli all'aperto", "foto": "an empty open-air stage with lights in a town square at night"},
- "teatro": {"quando": "teatro, cinema, stagioni teatrali", "foto": "rows of empty red velvet seats in an old Italian theatre"},
- "mercato": {"quando": "mercati settimanali, commercio, negozi", "foto": "a market stall with crates of fruit and vegetables under an awning"},
- "calcio": {"quando": "calcio, Benevento Calcio, sport", "foto": "a football resting on the grass of an empty stadium pitch"},
- "chiesa": {"quando": "feste religiose, chiese, processioni", "foto": "lit candles inside an old church, soft warm light"},
- "luce": {"quando": "luce elettrica, interruzioni di corrente, illuminazione pubblica", "foto": "an old street lamp lit at dusk with electricity wires in the sky"},
- "gas": {"quando": "gas, bollette, interruzioni del gas", "foto": "blue gas flames on a kitchen stove burner"},
- "libri": {"quando": "cultura, biblioteche, presentazioni di libri, università", "foto": "wooden library shelves full of old books"},
- "parco": {"quando": "parchi, ville comunali, giardini pubblici", "foto": "an empty park bench under trees in a public garden, autumn leaves on the ground"},
- "protezione-civile": {"quando": "Protezione civile, esercitazioni, emergenze", "foto": "plain blue emergency tents set up in a field, no logos"}
+ "acqua": {
+  "quando": "acqua sospesa, guasti alla rete idrica, acqua non potabile",
+  "foto": "an old chrome kitchen tap on a simple stone sink in an Italian village home, one single drop of water falling from the spout, no water flowing"
+ },
+ "strada-chiusa": {
+  "quando": "strade chiuse, deviazioni, ponti chiusi",
+  "foto": "a red and white striped road barrier closing a narrow country road that winds through green hills"
+ },
+ "lavori-stradali": {
+  "quando": "asfalto nuovo, cantieri stradali, senso unico alternato",
+  "foto": "fresh black asphalt on a town street with orange traffic cones and a road roller parked in the background"
+ },
+ "divieto-sosta": {
+  "quando": "divieti di sosta, ZTL, cambi di viabilità in città",
+  "foto": "a temporary round no-parking traffic sign on a metal stand on the sidewalk of an old Italian town street"
+ },
+ "frana": {
+  "quando": "frane, smottamenti, strade invase dal fango",
+  "foto": "mud and stones slid down onto the edge of a mountain road after heavy rain, a few orange cones beside it"
+ },
+ "pioggia": {
+  "quando": "allerta pioggia, maltempo, piogge forti",
+  "foto": "heavy rain falling on a cobblestone street of an old Italian town, puddles and grey sky"
+ },
+ "temporale": {
+  "quando": "allerta temporali, fulmini, grandine",
+  "foto": "dark storm clouds and a lightning bolt over green rolling hills at dusk"
+ },
+ "vento": {
+  "quando": "allerta vento, alberi caduti",
+  "foto": "tree branches bending in strong wind, leaves blowing, cloudy sky"
+ },
+ "neve": {
+  "quando": "neve, ghiaccio, strade innevate",
+  "foto": "a quiet mountain road covered in fresh snow between pine trees"
+ },
+ "allagamento": {
+  "quando": "strade allagate, sottopassi pieni d'acqua, esondazioni",
+  "foto": "a flooded country road with muddy water covering the asphalt, a guard rail half under water"
+ },
+ "scuola": {
+  "quando": "scuole chiuse, scuola, edifici scolastici, iscrizioni",
+  "foto": "an empty classroom with wooden desks, chairs and a blank green chalkboard, morning light"
+ },
+ "mensa": {
+  "quando": "mensa scolastica, pasti nelle scuole",
+  "foto": "a school canteen table with trays, plates of pasta and glasses of water, no children"
+ },
+ "cimitero": {
+  "quando": "cimiteri, orari dei cimiteri, Commemorazione dei Defunti",
+  "foto": "white chrysanthemums and red votive candles on a stone ledge, cypress trees softly blurred behind"
+ },
+ "rifiuti": {
+  "quando": "raccolta dei rifiuti, ecocentri, discariche",
+  "foto": "a row of colourful recycling bins for separate waste collection on a town street"
+ },
+ "incendio": {
+  "quando": "incendi di sterpaglie o boschi, fumo, roghi",
+  "foto": "smoke rising from a brush fire on a dry hillside seen from far away, hazy sky"
+ },
+ "terremoto": {
+  "quando": "terremoti, scosse, sciami sismici, esercitazioni sul terremoto",
+  "foto": "close-up of a seismograph drum drawing a jagged seismic trace on paper"
+ },
+ "ospedale": {
+  "quando": "ospedali, pronto soccorso, sanità, ASL",
+  "foto": "an empty clean hospital corridor with soft light and closed doors"
+ },
+ "treno": {
+  "quando": "treni, ferrovie, stazioni, orari e tariffe dei treni",
+  "foto": "railway tracks at a small rural train station in the hills, a plain regional train in the distance"
+ },
+ "autobus": {
+  "quando": "autobus, trasporto urbano ed extraurbano, fermate",
+  "foto": "a bus stop shelter on an Italian street at dusk, a plain city bus approaching"
+ },
+ "camion": {
+  "quando": "autotrasportatori, tir fermi, blocchi dei camion",
+  "foto": "a long line of parked trucks on the shoulder of a highway among hills, overcast sky"
+ },
+ "carburante": {
+  "quando": "caro carburanti, prezzi della benzina e del gasolio",
+  "foto": "a fuel pump nozzle hanging on a petrol pump at a gas station"
+ },
+ "supermercato": {
+  "quando": "supermercati, scaffali vuoti, prezzi della spesa",
+  "foto": "half-empty supermarket shelves for fresh fruit and vegetables"
+ },
+ "trattori": {
+  "quando": "agricoltori, proteste e presidi degli agricoltori, mezzi agricoli",
+  "foto": "a row of tractors parked along a rural road beside fields"
+ },
+ "campagna": {
+  "quando": "agricoltura, olio, raccolti, aziende agricole",
+  "foto": "olive trees and ploughed fields on gentle hills of southern Italy"
+ },
+ "vigneto": {
+  "quando": "vino, vendemmia, cantine, vigneti",
+  "foto": "rows of vineyards on rolling hills in autumn, golden light"
+ },
+ "pecore": {
+  "quando": "allevamenti, latte, pastori, controlli sugli animali",
+  "foto": "a flock of sheep grazing in a green hillside pasture"
+ },
+ "fabbrica": {
+  "quando": "aziende, fabbriche, licenziamenti, crisi aziendali, lavoro",
+  "foto": "the exterior of a modern industrial building with closed loading doors, empty yard"
+ },
+ "pasta": {
+  "quando": "pastifici, industria alimentare",
+  "foto": "dried short pasta spilling from a paper bag onto a wooden table"
+ },
+ "documenti": {
+  "quando": "ordinanze, delibere, bandi, avvisi del Comune, tasse e tributi",
+  "foto": "official paper documents, a fountain pen and a rubber stamp on a wooden office desk"
+ },
+ "consiglio": {
+  "quando": "Consiglio comunale, provinciale o regionale, sedute e votazioni",
+  "foto": "an empty council chamber with wooden benches, microphones and a hemicycle layout"
+ },
+ "lavoro-da-casa": {
+  "quando": "smart working, uffici pubblici, dipendenti",
+  "foto": "a laptop and a cup of coffee on a kitchen table at home, morning light"
+ },
+ "sagra": {
+  "quando": "sagre, feste di paese",
+  "foto": "long wooden tables in a village square at evening under warm string lights, nobody there yet"
+ },
+ "castagne": {
+  "quando": "sagre della castagna, prodotti d'autunno",
+  "foto": "roasted chestnuts in a perforated iron pan, autumn leaves around"
+ },
+ "concerto": {
+  "quando": "concerti, spettacoli all'aperto",
+  "foto": "an empty open-air stage with lights in a town square at night"
+ },
+ "teatro": {
+  "quando": "teatro, cinema, stagioni teatrali",
+  "foto": "rows of empty red velvet seats in an old Italian theatre"
+ },
+ "mercato": {
+  "quando": "mercati settimanali, commercio, negozi",
+  "foto": "a market stall with crates of fruit and vegetables under an awning"
+ },
+ "calcio": {
+  "quando": "calcio, Benevento Calcio, sport",
+  "foto": "a football resting on the grass of an empty stadium pitch"
+ },
+ "chiesa": {
+  "quando": "feste religiose, chiese, processioni",
+  "foto": "lit candles inside an old church, soft warm light"
+ },
+ "luce": {
+  "quando": "luce elettrica, interruzioni di corrente, illuminazione pubblica",
+  "foto": "an old street lamp lit at dusk with electricity wires in the sky"
+ },
+ "gas": {
+  "quando": "gas, bollette, interruzioni del gas",
+  "foto": "blue gas flames on a kitchen stove burner"
+ },
+ "libri": {
+  "quando": "cultura, biblioteche, presentazioni di libri, università",
+  "foto": "wooden library shelves full of old books"
+ },
+ "parco": {
+  "quando": "parchi, ville comunali, giardini pubblici",
+  "foto": "an empty park bench under trees in a public garden, autumn leaves on the ground"
+ },
+ "protezione-civile": {
+  "quando": "Protezione civile, esercitazioni, emergenze",
+  "foto": "plain blue emergency tents set up in a field, no logos"
+ },
+ "caldo": {
+  "quando": "ondate di calore, caldo, temperature alte",
+  "foto": "a deserted sunny village square at noon in summer, harsh light and heat haze"
+ },
+ "nebbia": {
+  "quando": "nebbia, visibilità ridotta",
+  "foto": "a country road disappearing into thick fog among fields"
+ },
+ "grandine": {
+  "quando": "grandinate",
+  "foto": "hailstones covering the ground and the bonnet of a parked car"
+ },
+ "albero-caduto": {
+  "quando": "alberi caduti per il vento o il maltempo",
+  "foto": "a large tree fallen across a country road after a storm"
+ },
+ "tetti-danneggiati": {
+  "quando": "trombe d'aria, tetti scoperchiati, danni del vento",
+  "foto": "roof tiles and debris scattered on a village street after a windstorm"
+ },
+ "fiume": {
+  "quando": "fiumi in piena, Calore, Volturno, ponti sui fiumi",
+  "foto": "a swollen brown river flowing fast under an old stone bridge"
+ },
+ "argini": {
+  "quando": "lavori su fiumi e torrenti, messa in sicurezza, dissesto idrogeologico",
+  "foto": "concrete riverbank reinforcement works along a stream with an excavator parked"
+ },
+ "impianto-rifiuti": {
+  "quando": "impianti dei rifiuti, STIR, biometano, compostaggio",
+  "foto": "the exterior of a waste treatment plant with large industrial sheds and loading bays"
+ },
+ "depuratore": {
+  "quando": "depuratori, fogne, acque reflue",
+  "foto": "the circular tanks of a wastewater treatment plant seen from above at an angle"
+ },
+ "cinghiali": {
+  "quando": "cinghiali, fauna selvatica, danni alle colture",
+  "foto": "a wild boar in a field at the edge of a wood at dusk"
+ },
+ "cani": {
+  "quando": "cani randagi, canili, animali da compagnia",
+  "foto": "dogs looking out from the fence of an animal shelter kennel"
+ },
+ "bosco": {
+  "quando": "boschi, foreste, Taburno, Matese, tagli di alberi",
+  "foto": "a beech forest with autumn colours on a mountain slope"
+ },
+ "montagna": {
+  "quando": "montagna, escursioni, sentieri, aree interne",
+  "foto": "green mountains with a deep valley under a clear sky"
+ },
+ "lago": {
+  "quando": "laghi, Campolattaro, lago di Telese, oasi",
+  "foto": "a calm lake surrounded by trees and hills"
+ },
+ "eolico": {
+  "quando": "pale eoliche, parchi eolici, Fortore",
+  "foto": "wind turbines on top of rolling hills"
+ },
+ "fotovoltaico": {
+  "quando": "pannelli solari, energia rinnovabile, comunità energetiche",
+  "foto": "rows of solar panels in a green field"
+ },
+ "potatura": {
+  "quando": "potatura e taglio di alberi in città, verde pubblico",
+  "foto": "a tree with freshly pruned branches on a town avenue, cut branches on the ground"
+ },
+ "buche": {
+  "quando": "buche nelle strade, asfalto rotto in città",
+  "foto": "a large pothole full of rainwater on a damaged asphalt road"
+ },
+ "strada-dissestata": {
+  "quando": "strade di campagna o di montagna dissestate, provinciali da rifare",
+  "foto": "a narrow mountain road with cracked and broken asphalt"
+ },
+ "degrado": {
+  "quando": "degrado urbano, marciapiedi rotti, decoro",
+  "foto": "a cracked sidewalk with weeds next to a faded old wall"
+ },
+ "rifiuti-abbandonati": {
+  "quando": "rifiuti abbandonati, discariche abusive",
+  "foto": "black garbage bags and an old mattress dumped at the side of a country road"
+ },
+ "autostrada": {
+  "quando": "autostrade, A16, raccordi, pedaggi",
+  "foto": "a motorway with light traffic among hills"
+ },
+ "traffico": {
+  "quando": "traffico, code, viabilità in città",
+  "foto": "a traffic jam on a town road at dusk with red brake lights, no readable plates"
+ },
+ "parcheggio": {
+  "quando": "parcheggi, strisce blu, sosta a pagamento",
+  "foto": "a parking lot with blue painted lines and a parking meter"
+ },
+ "viadotto": {
+  "quando": "viadotti, ponti stradali, lavori sui ponti",
+  "foto": "a road viaduct on tall concrete pillars crossing a green valley"
+ },
+ "galleria": {
+  "quando": "gallerie stradali, chiusure in galleria",
+  "foto": "the entrance of a road tunnel in a mountain"
+ },
+ "bici": {
+  "quando": "piste ciclabili, mobilità sostenibile",
+  "foto": "a bicycle lane along a tree-lined avenue with a painted bike symbol"
+ },
+ "ferrovia-dismessa": {
+  "quando": "linee ferroviarie chiuse o abbandonate, Benevento-Cancello",
+  "foto": "an abandoned railway line with rusty tracks overgrown with weeds"
+ },
+ "alta-velocita": {
+  "quando": "Alta velocità/Alta capacità Napoli-Bari, cantieri ferroviari",
+  "foto": "a new concrete railway viaduct under construction crossing a valley, with cranes"
+ },
+ "cantiere": {
+  "quando": "cantieri edili, opere pubbliche, lavori PNRR",
+  "foto": "a building construction site with a tower crane and scaffolding"
+ },
+ "impalcature": {
+  "quando": "ristrutturazioni, facciate, palazzi da mettere in sicurezza",
+  "foto": "scaffolding covering the facade of an old building being renovated"
+ },
+ "case-popolari": {
+  "quando": "case popolari, alloggi ACER, emergenza abitativa",
+  "foto": "public housing apartment blocks in a southern Italian town with laundry on balconies"
+ },
+ "autovelox": {
+  "quando": "autovelox, controlli della velocità",
+  "foto": "a speed camera box at the side of a country road"
+ },
+ "telecamere": {
+  "quando": "videosorveglianza, sicurezza urbana",
+  "foto": "a CCTV security camera on a pole over a town square"
+ },
+ "municipio": {
+  "quando": "Comune, sindaco, giunta, decisioni dell'amministrazione",
+  "foto": "the facade of an old town hall in a southern Italian village with the Italian and European flags on the balcony"
+ },
+ "elezioni": {
+  "quando": "elezioni, voto, candidati, liste",
+  "foto": "a transparent ballot box next to a voting booth with a curtain in a school gym"
+ },
+ "riunione": {
+  "quando": "vertici, tavoli in Prefettura o in Regione, incontri istituzionali",
+  "foto": "a long meeting table with chairs, glasses of water and an Italian flag in an institutional room"
+ },
+ "conferenza-stampa": {
+  "quando": "conferenze stampa, presentazioni, annunci",
+  "foto": "a table with several microphones and blank name cards in a meeting room"
+ },
+ "tasse": {
+  "quando": "tasse, TARI, IMU, tributi, cartelle",
+  "foto": "tax forms, euro coins and a calculator on a kitchen table"
+ },
+ "bollette": {
+  "quando": "bollette di luce e gas, rincari dell'energia",
+  "foto": "utility bills on a table next to an old light bulb"
+ },
+ "soldi": {
+  "quando": "fondi, finanziamenti, contributi, bandi con soldi, stipendi",
+  "foto": "euro banknotes and coins on a wooden table"
+ },
+ "mutui": {
+  "quando": "mutui, banche, prestiti, casa",
+  "foto": "a calculator, a loan contract and a set of house keys on a desk"
+ },
+ "bilancio": {
+  "quando": "bilancio del Comune o della Provincia, conti pubblici",
+  "foto": "an open ledger, a calculator and printed bar charts on a desk"
+ },
+ "concorso": {
+  "quando": "concorsi pubblici, assunzioni, graduatorie",
+  "foto": "rows of empty desks with exam papers in a large hall"
+ },
+ "sportello": {
+  "quando": "uffici pubblici, sportelli, orari al pubblico, anagrafe",
+  "foto": "a public office service counter with a glass partition and empty waiting chairs"
+ },
+ "sicurezza-lavoro": {
+  "quando": "sicurezza sul lavoro, morti sul lavoro (solo per iniziative e commemorazioni)",
+  "foto": "a yellow safety helmet and work gloves on a wooden plank at a construction site"
+ },
+ "protesta": {
+  "quando": "proteste, presidi, sit-in, sindacati, scioperi",
+  "foto": "a megaphone and a rolled-up banner resting on the steps of a public building"
+ },
+ "anziani": {
+  "quando": "anziani, pensionati, pensioni",
+  "foto": "a wooden walking stick leaning on a bench in a sunny village square"
+ },
+ "disabili": {
+  "quando": "disabilità, barriere architettoniche, parcheggi per disabili",
+  "foto": "a wheelchair ramp at the entrance of a public building"
+ },
+ "edificio-scolastico": {
+  "quando": "edifici scolastici, lavori nelle scuole, poli scolastici",
+  "foto": "the exterior of a modern school building with a gate and an empty schoolyard"
+ },
+ "universita": {
+  "quando": "università, UniSannio, Giustino Fortunato, convegni universitari",
+  "foto": "an empty university lecture hall with tiered wooden seats"
+ },
+ "asilo": {
+  "quando": "asili nido, scuole dell'infanzia",
+  "foto": "small colourful chairs and toys in a kindergarten classroom"
+ },
+ "scuolabus": {
+  "quando": "scuolabus, trasporto scolastico",
+  "foto": "a yellow school minibus parked in front of a small village school"
+ },
+ "parco-giochi": {
+  "quando": "parchi giochi, bambini, spazi per famiglie",
+  "foto": "an empty children's playground with swings and a slide"
+ },
+ "palestra": {
+  "quando": "palestre, impianti sportivi, palazzetti",
+  "foto": "an empty school gymnasium with court lines on the floor"
+ },
+ "piscina": {
+  "quando": "piscine",
+  "foto": "the lanes of an empty indoor swimming pool"
+ },
+ "stadio": {
+  "quando": "stadi, lavori allo stadio, tribune",
+  "foto": "the empty stands of a football stadium under floodlights"
+ },
+ "basket": {
+  "quando": "basket, pallacanestro",
+  "foto": "a basketball hoop in an indoor arena"
+ },
+ "pallavolo": {
+  "quando": "pallavolo, volley",
+  "foto": "a volleyball resting near the net on an indoor court"
+ },
+ "tennis": {
+  "quando": "tennis, padel",
+  "foto": "a tennis racket and ball on a red clay court"
+ },
+ "ciclismo": {
+  "quando": "ciclismo, gare in bici",
+  "foto": "a racing bicycle leaning against a stone wall on a hill road"
+ },
+ "corsa": {
+  "quando": "corse podistiche, maratone, atletica",
+  "foto": "running shoes on an asphalt road at sunrise"
+ },
+ "rugby": {
+  "quando": "rugby",
+  "foto": "a rugby ball on a grass pitch with goal posts"
+ },
+ "pronto-soccorso": {
+  "quando": "pronto soccorso, 118, emergenza sanitaria (mai per incidenti o feriti)",
+  "foto": "the entrance of a hospital emergency department at night with an ambulance parked, no logos, no text"
+ },
+ "medico": {
+  "quando": "medici di famiglia, guardia medica, case di comunità, visite",
+  "foto": "a stethoscope and a prescription pad on a doctor's desk"
+ },
+ "farmacia": {
+  "quando": "farmacie, farmaci",
+  "foto": "a lit green cross pharmacy sign on a stone building at dusk"
+ },
+ "vaccini": {
+  "quando": "vaccini, campagne di prevenzione",
+  "foto": "a vaccine vial and a syringe on a medical tray"
+ },
+ "laboratorio-analisi": {
+  "quando": "analisi, laboratori, screening, ricerca",
+  "foto": "blood test tubes in a rack in a clinical laboratory with a microscope"
+ },
+ "negozi-chiusi": {
+  "quando": "negozi che chiudono, desertificazione commerciale, commercio in crisi",
+  "foto": "a row of shops with closed metal shutters on an old town street"
+ },
+ "centro-commerciale": {
+  "quando": "centri commerciali, grande distribuzione",
+  "foto": "the bright empty corridor of a shopping mall"
+ },
+ "artigiani": {
+  "quando": "artigiani, botteghe, piccole imprese",
+  "foto": "hand tools on an old wooden workbench in an artisan workshop"
+ },
+ "ristorante": {
+  "quando": "ristoranti, trattorie, pizzerie, cucina",
+  "foto": "a set table in a rustic Italian trattoria with a checked tablecloth"
+ },
+ "bar": {
+  "quando": "bar, caffè, esercizi pubblici, movida",
+  "foto": "an espresso cup on the counter of an Italian café"
+ },
+ "borgo": {
+  "quando": "turismo, borghi, paesi, spopolamento, aree interne",
+  "foto": "a medieval hill village of stone houses at sunset seen from afar"
+ },
+ "terme": {
+  "quando": "terme, Telese Terme, turismo termale",
+  "foto": "a steaming outdoor thermal pool surrounded by trees"
+ },
+ "olio": {
+  "quando": "olio, raccolta delle olive, frantoi",
+  "foto": "olive oil pouring into a small bowl with fresh olives and leaves"
+ },
+ "formaggi": {
+  "quando": "formaggi, pecorino, caseifici",
+  "foto": "wheels of pecorino cheese ageing on wooden shelves"
+ },
+ "cantina": {
+  "quando": "vino, cantine, enoturismo",
+  "foto": "oak wine barrels in a stone cellar"
+ },
+ "grano": {
+  "quando": "grano, cereali, mulini",
+  "foto": "a golden wheat field on gentle hills"
+ },
+ "pomodori": {
+  "quando": "pomodori, orti, prezzi della frutta e verdura",
+  "foto": "ripe tomatoes in a wooden crate"
+ },
+ "siccita": {
+  "quando": "siccità, crisi idrica, campi senz'acqua",
+  "foto": "cracked dry soil of a parched field"
+ },
+ "castagneto": {
+  "quando": "castagneti, raccolta delle castagne",
+  "foto": "chestnuts in spiky burrs on the floor of a chestnut wood"
+ },
+ "funghi": {
+  "quando": "funghi, sagre dei funghi, raccolta nei boschi",
+  "foto": "porcini mushrooms growing on a forest floor"
+ },
+ "api": {
+  "quando": "api, miele, apicoltori",
+  "foto": "wooden beehives in a flowering meadow"
+ },
+ "mucche": {
+  "quando": "allevamenti di mucche, stalle, latte vaccino",
+  "foto": "dairy cows in a clean barn"
+ },
+ "maiali": {
+  "quando": "allevamenti di maiali, peste suina",
+  "foto": "pigs in a farm pen"
+ },
+ "logistica": {
+  "quando": "logistica, magazzini, zone industriali",
+  "foto": "a logistics warehouse with tall shelves of boxes and a forklift"
+ },
+ "lotteria": {
+  "quando": "vincite al lotto, Superenalotto, gratta e vinci",
+  "foto": "a lottery play slip and a pen on a counter"
+ },
+ "digitale": {
+  "quando": "innovazione, digitale, informatica, servizi online del Comune",
+  "foto": "a laptop showing lines of code with a server rack in the background"
+ },
+ "internet": {
+  "quando": "internet, fibra, antenne, telefonia",
+  "foto": "a telecommunication tower with antennas on a hill at sunset"
+ },
+ "museo": {
+  "quando": "musei, mostre archeologiche, inaugurazioni di musei",
+  "foto": "a museum hall with ancient artefacts in glass cases"
+ },
+ "archeologia": {
+  "quando": "archeologia, scavi, monumenti antichi",
+  "foto": "ancient Roman stone columns and ruins in a grassy archaeological site"
+ },
+ "mostra": {
+  "quando": "mostre d'arte, pittura, gallerie",
+  "foto": "an art exhibition with framed paintings on white walls"
+ },
+ "musica-classica": {
+  "quando": "musica classica, conservatorio, orchestre, lirica",
+  "foto": "a violin and bow resting on a chair in a concert hall"
+ },
+ "cinema": {
+  "quando": "cinema, festival del cinema, film",
+  "foto": "an empty cinema hall with a glowing screen"
+ },
+ "danza": {
+  "quando": "danza, scuole di ballo",
+  "foto": "ballet pointe shoes on a wooden stage floor"
+ },
+ "natale": {
+  "quando": "Natale, mercatini, luci di Natale, eventi di Natale",
+  "foto": "Christmas lights strung across an old town street at night with a decorated tree"
+ },
+ "carnevale": {
+  "quando": "Carnevale",
+  "foto": "colourful confetti and paper streamers on a cobblestone street with a carnival mask"
+ },
+ "fuochi": {
+  "quando": "fuochi d'artificio, feste patronali",
+  "foto": "fireworks bursting over a hill village at night"
+ },
+ "luminarie": {
+  "quando": "feste patronali, luminarie, feste di paese",
+  "foto": "traditional southern Italian festival light arches over a narrow village street at night"
+ },
+ "presepe": {
+  "quando": "presepi, presepi viventi",
+  "foto": "a traditional Neapolitan nativity scene with small terracotta figurines"
+ },
+ "premio": {
+  "quando": "premi, riconoscimenti, concorsi vinti",
+  "foto": "a crystal award trophy and a framed certificate on a table"
+ },
+ "commemorazione": {
+  "quando": "commemorazioni, anniversari, giornate della memoria",
+  "foto": "a laurel wreath with an Italian tricolour ribbon at the foot of a stone memorial"
+ },
+ "cammino": {
+  "quando": "cammini, pellegrinaggi, trekking",
+  "foto": "a dirt path through green hills with a wooden signpost without writing"
+ },
+ "solidarieta": {
+  "quando": "volontariato, Caritas, raccolte alimentari, solidarietà",
+  "foto": "boxes of donated food with pasta, canned goods and milk on a table"
+ },
+ "fontana": {
+  "quando": "fontane pubbliche, acqua non potabile, sorgenti",
+  "foto": "an old stone public drinking fountain in a village square"
+ }
 }
