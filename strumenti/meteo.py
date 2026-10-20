@@ -212,8 +212,10 @@ def meteoalarm_campania():
         if not lv:
             continue
         tipo = " ".join(ev[1:]).replace(" Warning", "")
-        out.append({"livello": lv, "tipo": TIPI_MA.get(tipo, tipo.lower()), "inizio": ora_roma(g("onset") or g("effective")),
-                    "fine": ora_roma(g("expires"))})
+        w = {"livello": lv, "tipo": TIPI_MA.get(tipo, tipo.lower()), "inizio": ora_roma(g("onset") or g("effective")),
+             "fine": ora_roma(g("expires"))}
+        if w not in out:  # il feed ripete ogni allerta (una voce per lingua)
+            out.append(w)
     return out
 
 

@@ -168,16 +168,23 @@
   .spaghi-legenda { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 12px; color: var(--grigio); margin: 8px 0 14px; }
   .spaghi-legenda i { display: inline-block; width: 14px; height: 3px; border-radius: 2px; vertical-align: 3px; margin-right: 5px; }
 
-  /* allerte ufficiali */
-  .allerte { padding: 14px 18px; margin-bottom: 18px; }
-  .allerte .testa { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; }
-  .allerte .testa .tit { font: 700 15px var(--sans); }
-  .allerte .testa .fonte { font-size: 12px; color: var(--grigio); }
+  /* allerte ufficiali: una riga sola, i dettagli si aprono */
+  .allerte { margin: 0 0 16px; }
+  .allerte > details > summary { list-style: none; cursor: pointer; display: flex; align-items: baseline; gap: 10px;
+                                 font-size: 14.5px; line-height: 1.45; padding: 9px 14px; border-radius: 8px; }
+  .allerte > details > summary::-webkit-details-marker { display: none; }
+  .allerte.attiva > details > summary { background: var(--card); border: 1px solid var(--riga); border-left: 4px solid var(--c); }
+  .allerte.calma > details > summary { padding: 2px 0; color: var(--grigio); font-size: 13.5px; }
+  .allerte .al-segno { flex: none; width: 9px; height: 9px; border-radius: 50%; background: var(--c); align-self: center; }
+  .allerte.attiva .al-segno { display: none; }
+  .allerte .al-frase { flex: 1; }
+  .allerte .al-apri { flex: none; font: 600 13px var(--sans); color: var(--blu); white-space: nowrap; }
+  .allerte .al-apri::after { content: "Dettagli ▾"; }
+  .allerte details[open] .al-apri::after { content: "Chiudi ▴"; }
+  .al-dettagli { padding: 4px 14px 2px; }
   .al-giorno { padding: 10px 0; border-top: 1px solid var(--riga-chiara); }
-  .al-giorno:first-of-type { border-top: 0; }
-  .al-tit { display: flex; align-items: center; gap: 10px; font: 600 15px var(--sans); flex-wrap: wrap; }
-  .al-pill { display: inline-block; font: 700 12px var(--sans); color: #fff; padding: 3px 10px; border-radius: 12px; text-transform: uppercase; letter-spacing: .4px; }
-  .al-pill.gialla { color: #3a2c00; }
+  .al-giorno:first-child { border-top: 0; }
+  .al-tit { font: 600 14.5px var(--sans); }
   .al-righe { list-style: none; padding: 0; margin: 6px 0 0; }
   .al-righe li { font-size: 14px; padding: 3px 0 3px 18px; position: relative; }
   .al-righe li::before { content: ""; position: absolute; left: 2px; top: 9px; width: 9px; height: 9px; border-radius: 50%; background: var(--c, #3f9b4a); }
@@ -185,7 +192,6 @@
   .al-righe summary { display: inline; cursor: pointer; color: var(--blu); }
   .al-righe .comuni { display: block; font-size: 13px; color: var(--grigio); margin-top: 2px; }
   .al-nota { font-size: 12.5px; color: var(--grigio); margin-top: 4px; }
-  .al-ok { font-size: 14px; }
 
   /* animazioni: pioggia, neve, vento, sole, nuvole, nebbia, fulmini */
   .an-goccia { animation: goccia 1.1s linear infinite; }
@@ -540,32 +546,73 @@
     });
     return peggio;
   }
+  // «alle 8», ma «all'1:59»
+  function allOra(iso, prep) { var o = oraBreve(iso); return prep + (/^1(:|$)/.test(o) ? "l'" : "lle ") + o.replace(/:00$/, ""); }
+  // Meteoalarm che contano per il giorno: per pioggia e temporali, se c'è il bollettino per zona, vale quello.
+  function meteoalarmGiorno(g) {
+    var visti = {};
+    return (g.meteoalarm || []).filter(function (w) {
+      var chiave = w.livello + w.tipo + w.inizio + w.fine;
+      if (visti[chiave] || (g.zone && /pioggia|temporali|alluvioni/.test(w.tipo))) return false;
+      return (visti[chiave] = true);
+    });
+  }
+  function rischiZona(z) {
+    var r = [];
+    if (z.idrogeologico !== "verde") r.push("frane e smottamenti");
+    if (z.idraulico !== "verde") r.push("fiumi e torrenti");
+    if (z.temporali !== "verde") r.push("temporali");
+    return r;
+  }
+  var DOVE_ZONA = { "Alta Irpinia e Sannio": "a Benevento e in gran parte della provincia", "Alto Volturno e Matese": "in Valle Telesina, Valle Caudina e Matese",
+    "Penisola sorrentino-amalfitana, Monti di Sarno e Monti Picentini": "ad Arpaia, Forchia, Pannarano e Paolisi" };
+  // Il giorno in una frase: «Domani, mercoledì 21: allerta arancione in tutto il Sannio per frane e smottamenti; gialla per vento dalle 8».
+  function fraseGiorno(k, g) {
+    var l = livelloGiorno(g);
+    if (l === "verde") return "";
+    var pezzi = [];
+    if (g.zone) {
+      ["rossa", "arancione", "gialla"].forEach(function (lv) {
+        var zn = ORDINE_ZONE.filter(function (n) { return g.zone[n] && g.zone[n].livello === lv; });
+        if (!zn.length) return;
+        // i rischi che valgono per tutte queste zone (gli altri sono nei dettagli)
+        var rischi = zn.reduce(function (r, n) { return r.filter(function (x) { return rischiZona(g.zone[n]).indexOf(x) >= 0; }); }, rischiZona(g.zone[zn[0]]));
+        pezzi.push({ lv: lv, t: (zn.length === Object.keys(g.zone).length ? "in tutto il Sannio" : zn.map(function (n) { return DOVE_ZONA[n] || n; }).join(" e ")) +
+          (rischi.length ? " per " + rischi.join(", ") : "") });
+      });
+    }
+    meteoalarmGiorno(g).forEach(function (w) {
+      pezzi.push({ lv: w.livello, t: "per " + w.tipo + (g.zone ? "" : " in Campania") + (w.inizio.slice(0, 10) === k && oraBreve(w.inizio) !== "0:00" ? allOra(w.inizio, " da") : "") });
+    });
+    pezzi.sort(function (x, y) { return ORD_LIV.indexOf(y.lv) - ORD_LIV.indexOf(x.lv); });
+    var et = k === oggi ? "Oggi" : "Domani, " + giornoBreve(k) + " " + +k.slice(8, 10);
+    return "<b>" + esc(et) + ": allerta " + pezzi[0].lv + "</b> " + esc(pezzi[0].t) +
+      pezzi.slice(1).map(function (p) { return "; " + p.lv + " " + esc(p.t); }).join("") + (g.zone ? "" : " (Meteoalarm)") + ".";
+  }
   function disegnaAllerte() {
     var a = D.allerte;
     if (!a || !a.giorni) return "";
     var giorni = Object.keys(a.giorni).sort();
-    var fonti = "Fonti: " + (a.dpc_bollettino ? "Protezione civile (" + esc(a.dpc_bollettino.replace("Bollettino del ", "bollettino del ")) + ")" : "Protezione civile non raggiungibile") +
-      " e Meteoalarm, controllate ogni ora";
-    var tutto_verde = giorni.every(function (k) { return livelloGiorno(a.giorni[k]) === "verde"; });
-    var h = '<section class="card allerte" id="allerte" aria-label="Allerte ufficiali"><div class="testa"><span class="tit">Allerte ufficiali per il Sannio</span>' +
-      '<span class="fonte">' + fonti + "</span></div>";
-    if (tutto_verde) {
-      h += '<p class="al-ok"><span class="pallino" style="background:#3f9b4a"></span>Nessuna allerta per oggi e domani in nessuna delle tre zone del Sannio.</p>';
-    }
+    var peggio = 0, frasi = [], calmi = [];
+    giorni.forEach(function (k) {
+      var g = a.giorni[k], f = fraseGiorno(k, g);
+      peggio = Math.max(peggio, ORD_LIV.indexOf(livelloGiorno(g)));
+      if (f) frasi.push(f);
+      else if (g.zone) calmi.push(k === oggi ? "oggi" : "domani");
+    });
+    var frase = frasi.length ? frasi.join(" ") + (calmi.length ? " " + calmi[0].charAt(0).toUpperCase() + calmi[0].slice(1) + " nessuna allerta." : "")
+      : "Nessuna allerta ufficiale " + (calmi.length > 1 ? "per oggi e domani" : "per oggi") + " nel Sannio.";
+    var h = '<section class="allerte ' + (frasi.length ? "attiva" : "calma") + '" id="allerte" aria-label="Allerte ufficiali" style="--c:' + COL_LIV[ORD_LIV[peggio]] + '">' +
+      '<details><summary><span class="al-segno"></span><span class="al-frase">' + frase + '</span><span class="al-apri"></span></summary><div class="al-dettagli">';
     giorni.forEach(function (k) {
       var g = a.giorni[k], l = livelloGiorno(g);
-      if (tutto_verde) return;
       var et = k === oggi ? "Oggi" : "Domani, " + giornoBreve(k);
-      h += '<div class="al-giorno"><div class="al-tit"><span class="al-pill ' + l + '" style="background:' + COL_LIV[l] + '">' + NOME_LIV[l] + "</span>" +
-        esc(et) + " " + +k.slice(8, 10) + "</div><ul class=\"al-righe\">";
+      h += '<div class="al-giorno"><div class="al-tit">' + esc(et) + " " + +k.slice(8, 10) + " · " + NOME_LIV[l].toLowerCase() + '</div><ul class="al-righe">';
       if (g.zone) {
         ORDINE_ZONE.forEach(function (zn) {
           var z = g.zone[zn];
           if (!z) return;
-          var rischi = [];
-          if (z.temporali !== "verde") rischi.push("temporali");
-          if (z.idrogeologico !== "verde") rischi.push("frane e smottamenti");
-          if (z.idraulico !== "verde") rischi.push("fiumi e torrenti");
+          var rischi = rischiZona(z);
           var com = z.comuni.slice().sort(function (x, y) { return (y === "Benevento") - (x === "Benevento") || x.localeCompare(y, "it"); });
           var primi = com.slice(0, 4).join(", ");
           h += '<li style="--c:' + COL_LIV[z.livello] + '"><b>' + esc(NOME_ZONA[zn] || zn) + "</b>: " + NOME_LIV[z.livello].toLowerCase() +
@@ -574,18 +621,18 @@
             esc(com.slice(4).join(", ")) + "</details>" : "") + "</span></li>";
         });
       }
-      (g.meteoalarm || []).forEach(function (w) {
-        var idro = /pioggia|temporali|alluvioni/.test(w.tipo);
-        if (g.zone && idro) return; // per pioggia e temporali, se c'è il bollettino per zona, vale quello
+      meteoalarmGiorno(g).forEach(function (w) {
         var fine = w.fine.slice(0, 10) !== k ? " di " + giornoBreve(w.fine) : "";
-        h += '<li style="--c:' + COL_LIV[w.livello] + '">' + NOME_LIV[w.livello] + " per <b>" + esc(w.tipo) + "</b> in Campania, dalle " + oraBreve(w.inizio) +
-          (w.inizio.slice(0, 10) !== k ? " di " + giornoBreve(w.inizio) : "") + " alle " + oraBreve(w.fine) + fine + " (Meteoalarm)</li>";
+        h += '<li style="--c:' + COL_LIV[w.livello] + '">' + NOME_LIV[w.livello] + " per <b>" + esc(w.tipo) + "</b> in Campania," + allOra(w.inizio, " da") +
+          (w.inizio.slice(0, 10) !== k ? " di " + giornoBreve(w.inizio) : "") + allOra(w.fine, " a") + fine + " (Meteoalarm)</li>";
       });
       if (!g.zone && !(g.meteoalarm || []).length) h += '<li style="--c:#3f9b4a">Nessuna allerta.</li>';
       h += '</ul><div class="al-nota">' + esc(g.nota) + "</div></div>";
     });
-    h += '<div class="al-nota">Le allerte ufficiali valgono più delle previsioni. Avvisi completi: <a href="https://centrofunzionale.regione.campania.it/" rel="noopener">Protezione civile Campania</a> · ' +
-      '<a href="https://mappe.protezionecivile.gov.it/it/mappe-rischi/bollettino-di-criticita/" rel="noopener">bollettino nazionale</a>.</div></section>';
+    h += '<div class="al-nota">Fonti: ' + (a.dpc_bollettino ? "Protezione civile (" + esc(a.dpc_bollettino.replace("Bollettino del ", "bollettino del ")) + ")" : "Protezione civile non raggiungibile") +
+      " e Meteoalarm, controllate ogni ora. Le allerte ufficiali valgono più delle previsioni. Avvisi completi: " +
+      '<a href="https://centrofunzionale.regione.campania.it/" rel="noopener">Protezione civile Campania</a> · ' +
+      '<a href="https://mappe.protezionecivile.gov.it/it/mappe-rischi/bollettino-di-criticita/" rel="noopener">bollettino nazionale</a>.</div></div></details></section>';
     return h;
   }
 

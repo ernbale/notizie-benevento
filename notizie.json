@@ -24,27 +24,39 @@
     }
    ],
    "articolo": {
-    "cosa": "Giovedì 22 ottobre, dalle 14 alle 24, Alto Calore Servizi sospende l'erogazione dell'acqua in diversi Comuni del Sannio. Servono lavori che non si possono rimandare sulla condotta principale a Paduli, in località Torre, eseguiti dall'Acquedotto Campano per conto della Regione Campania. Secondo NTR24 lo stop riguarda Paduli, Pietrelcina, Pesco Sannita, Pago Veiano, Campolattaro, Pontelandolfo, Fragneto Monforte e Sant'Arcangelo Trimonte, oltre all'impianto STIR di Casalduni; ad Apice solo le utenze di Ferrovie dello Stato e Alta Velocità.",
-    "cronologia": [
+    "racconto": [
      {
-      "data": "20 ottobre",
-      "fatto": "Alto Calore Servizi comunica lo stop programmato dell'acqua per giovedì 22 ottobre dalle 14 alle 24; il Comune di Pietrelcina pubblica l'avviso.",
+      "testo": "Giovedì 22 ottobre, dalle 14 a mezzanotte, otto paesi del Sannio restano senz'acqua: Paduli, Pietrelcina, Pesco Sannita, Pago Veiano, Campolattaro, Pontelandolfo, Fragneto Monforte e Sant'Arcangelo Trimonte. Lo ha comunicato Alto Calore Servizi, la società che porta l'acqua in questa parte della provincia.",
       "fonti": [
-       "Comune di Pietrelcina",
-       "NTR24"
+       "NTR24",
+       "Comune di Pietrelcina"
       ]
-     }
-    ],
-    "concordano": [
+     },
      {
-      "testo": "Acqua sospesa giovedì 22 ottobre dalle 14:00 alle 24:00 per lavori sulla condotta nel territorio di Paduli, località Torre, eseguiti da Acquedotto Campano per conto della Regione.",
+      "testo": "Il motivo sono lavori urgenti sulla condotta adduttrice (il tubo grande che porta l'acqua dalle sorgenti ai paesi) nel tratto di località Torre, a Paduli. Li fa l'Acquedotto Campano per conto della Regione Campania.",
       "fonti": [
-       "Comune di Pietrelcina",
+       "NTR24",
+       "Comune di Pietrelcina"
+      ]
+     },
+     {
+      "testo": "Senz'acqua restano anche lo STIR di Casalduni, l'impianto dove si lavorano i rifiuti. Ad Apice, invece, lo stop tocca solo le utenze di Ferrovie dello Stato e dell'Alta Velocità.",
+      "fonti": [
        "NTR24"
       ]
      },
      {
-      "testo": "Alla riapertura l'acqua può uscire torbida per poco tempo, senza rischi per la potabilità: Alto Calore consiglia di lasciarla scorrere dai rubinetti per qualche minuto. Per casi di reale necessità c'è il numero verde 800 954 430.",
+      "testo": "Quando l'acqua torna può uscire torbida per qualche minuto: Alto Calore dice che resta potabile e consiglia di lasciarla scorrere dai rubinetti finché non torna limpida. Per i casi di vera necessità c'è il numero verde 800 954 430; gli aggiornamenti sono sul sito altocalore.it.",
+      "fonti": [
+       "NTR24",
+       "Comune di Pietrelcina"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Il giorno e l'orario dello stop (giovedì 22, dalle 14 alle 24), il motivo (lavori a Paduli, località Torre) e il numero verde 800 954 430.",
       "fonti": [
        "Comune di Pietrelcina",
        "NTR24"

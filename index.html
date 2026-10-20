@@ -127,6 +127,7 @@
   .appro h3 { font: 700 13px var(--sans); text-transform: uppercase; letter-spacing: 1px; border-top: 3px solid var(--nero); padding-top: 6px; margin: 28px 0 10px; }
   .appro p, .appro li { font: 400 19px/1.6 var(--serif); }
   .appro ul { padding-left: 20px; margin: 0; }
+  .appro .racconto { margin-top: 18px; }
   .cronologia { list-style: none; padding: 0 !important; }
   .cronologia li { display: grid; grid-template-columns: 110px 1fr; gap: 12px; padding: 10px 0; border-bottom: 1px dotted #b7a48f; }
   .cronologia .giorno { font: 700 14px var(--sans); color: var(--rosso); padding-top: 4px; }
@@ -340,7 +341,7 @@
   <main id="contenuto"></main>
 
   <footer>
-    <p>Notizie Benevento è un report automatico: le notizie appartengono ai giornali citati. Qui ci sono solo un riassunto breve e i link agli articoli originali, da leggere per i dettagli.</p>
+    <p>Notizie Benevento è un report automatico: le notizie appartengono ai giornali citati. Qui le raccontiamo con parole nostre, confrontando le fonti, con i link agli articoli originali.</p>
     <p>Una notizia compare solo se la riportano almeno due testate diverse oppure una fonte ufficiale (ANAS, INGV, Comuni, Prefettura, forze dell'ordine). Le accuse sono riportate con le parole usate dai giornali. Aggiornato ogni 2 ore, dalle 6 alle 22. Le visite si contano in forma anonima, senza cookie.</p>
     <p>Nessuna notizia viene cancellata: quando esce dalla prima pagina resta nell'<a href="#archivio">archivio</a>, allo stesso indirizzo.</p>
     <p class="sezioni-link">Sezioni: <a href="/sezione/strade/">Strade</a> · <a href="/sezione/cronaca/">Cronaca</a> · <a href="/sezione/politica/">Politica</a> · <a href="/sezione/eventi/">Eventi</a> · <a href="/sezione/allerte/">Allerte</a> · <a href="/sezione/altro/">Altro</a> · <a href="/meteo.html">Meteo Benevento</a><br>
@@ -530,8 +531,11 @@
   function pulisci(t) { return String(t || "").replace(/\s+/g, " ").trim(); }
   function testoArticolo(n) {
     var a = n.articolo || {}, p = [n.titolo + "."];
-    if (a.cosa) p.push(a.cosa);
-    (a.cronologia || []).forEach(function (c) { p.push((c.data ? c.data + ": " : "") + c.fatto); });
+    if (Array.isArray(a.racconto) && a.racconto.length) a.racconto.forEach(function (r) { p.push(r.testo); });
+    else {
+      if (a.cosa) p.push(a.cosa);
+      (a.cronologia || []).forEach(function (c) { p.push((c.data ? c.data + ": " : "") + c.fatto); });
+    }
     if ((a.non_si_sa || []).length) p.push("Cosa non si sa ancora. " + a.non_si_sa.join(" "));
     return p;
   }
@@ -927,8 +931,14 @@
     var az = ascolta(testoArticolo(n));
     az.appendChild(condividi(n.titolo, linkArticolo(n), true));
     art.appendChild(az);
-    if (a.cosa) { art.appendChild(el("h3", "", ["Cosa è successo"])); art.appendChild(el("p", "", [a.cosa])); }
-    cronologia(art, a.cronologia, fonti, "I fatti");
+    // Il racconto: la notizia scritta per intero, paragrafo per paragrafo (le notizie più vecchie hanno solo «cosa»).
+    if (Array.isArray(a.racconto) && a.racconto.length) {
+      var rc = el("div", "racconto", []);
+      a.racconto.forEach(function (r) { rc.appendChild(frase("p", r, fonti)); });
+      art.appendChild(rc);
+    } else if (a.cosa) { art.appendChild(el("h3", "", ["Cosa è successo"])); art.appendChild(el("p", "", [a.cosa])); }
+    // Con il racconto, una cronologia di un solo momento non aggiunge niente.
+    if (!a.racconto || (a.cronologia || []).length > 1) cronologia(art, a.cronologia, fonti, "I fatti");
     sezioneElenco(art, "Su cosa concordano i giornali", a.concordano, fonti);
     sezioneElenco(art, "Su cosa non concordano", a.divergono, fonti);
     sezioneElenco(art, "Cosa non si sa ancora", a.non_si_sa, fonti);
@@ -1058,6 +1068,7 @@
   }
   function testiNotizia(n) {
     var a = n.articolo || {}, t = [a.cosa];
+    (a.racconto || []).forEach(function (x) { t.push(x.testo); });
     (a.cronologia || []).forEach(function (x) { t.push(x.fatto); });
     (a.concordano || []).concat(a.divergono || []).forEach(function (x) { t.push(x.testo); });
     (a.non_si_sa || []).forEach(function (x) { t.push(typeof x === "string" ? x : x && x.testo); });
