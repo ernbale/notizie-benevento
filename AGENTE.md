@@ -48,6 +48,10 @@ Lavora in parallelo (6-8 letture insieme). Per ogni fonte tieni nota: letta / no
   `https://webservices.ingv.it/fdsnws/event/1/query?starttime=<3h fa UTC>&lat=41.2&lon=14.65&maxradius=0.4&orderby=time&format=text`
   (riportare solo magnitudo ≥ 2.5 o sciami di ≥ 10 scosse)
 - San Marco dei Cavoti (feed): `https://www.comune.sanmarcodeicavoti.bn.it/feed/`
+- Allerte meteo ufficiali (Meteoalarm, il servizio europeo con i dati della Protezione civile italiana):
+  `https://feeds.meteoalarm.org/feeds/meteoalarm-legacy-atom-italy` → solo le voci «Campania». Dà livello (Yellow =
+  gialla, Orange = arancione, Red = rossa), tipo (Rain = pioggia, Thunderstorm = temporali, Wind = vento, Snow = neve…)
+  e orari **in UTC** (convertili in ora italiana). Vale per tutta la regione: vedi le regole delle Allerte qui sotto.
 
 **Giornali del Sannio (sempre, homepage o sezione):** ottopagine.it/bn/ · ilsannioquotidiano.it · ntr24.tv ·
 labtv.net · cronachedelsannio.it/sannionews24/ · fremondoweb.com/category/notizie-dalla-valle-telesina/ ·
@@ -57,10 +61,32 @@ beneventonews24.it · ilquaderno.it · realtasannita.it · ilmattino.it/benevent
 **Comuni senza feed (a ogni giro):** pagine notizie di
 `www.comune.<nome>.bn.it` per montesarchio, santagatadegoti, sangiorgiodelsannio, airola, sanbartolomeoingaldo,
 morcone, cerretosannita, guardiasanframondi, solopaca, sansalvatoretelesino, apice, ceppaloni, paduli, pietrelcina,
-ponte, vitulano, cusanomutri, faicchio, amorosi. Cerca avvisi su strade, scuole, acqua, ordinanze.
+ponte, vitulano, cusanomutri, faicchio, amorosi. Cerca avvisi su strade, scuole, acqua, ordinanze, e soprattutto
+**chiusure** di scuole, parchi e ville comunali, cimiteri, impianti sportivi, mercati per allerta o maltempo.
 
 **Ricerche mirate (almeno 4 per giro):** fatti trovati in un solo giornale (per cercare la seconda fonte),
 «Benevento oggi», «Sannio incidente», «strada chiusa provincia Benevento».
+
+## Le Allerte (categoria `meteo`)
+
+Sul sito la sezione si chiama **«Allerte»**. Ci vanno:
+- **allerte meteo della Protezione civile** (gialla, arancione, rossa) che riguardano il Sannio;
+- **chiusure decise dai Comuni** per allerta o maltempo: scuole, parchi e ville comunali, cimiteri, impianti
+  sportivi, mercati, uffici;
+- **terremoti** (INGV, con le soglie scritte sopra) e **danni del maltempo** (alberi caduti, allagamenti, frane).
+
+Regole:
+- Un'allerta esce solo da **fonte ufficiale**: Meteoalarm, Protezione civile o Regione Campania, Comune, Prefettura.
+  Meteoalarm vale per tutta la Campania: per dire che riguarda **il Sannio** serve il comunicato della Regione o della
+  Protezione civile, o un Comune del Sannio, o almeno due giornali che citano le **zone di allerta** del Sannio. Se le
+  zone non si trovano, scrivi «allerta in Campania» e, tra le cose che non si sanno, che le zone vanno verificate.
+- Scrivi sempre livello, tipo (pioggia, temporali, vento…), **da quando a quando** in ora italiana, e cosa
+  raccomanda la Protezione civile se lo dice. Niente toni allarmisti: i fatti e gli orari.
+- `in_vigore_fino` = il giorno in cui finisce l'allerta o la chiusura. Allerta **arancione o rossa**: `rilevante: true`.
+- Le chiusure di più Comuni per la stessa allerta: **una sola notizia** aggiornata a ogni giro con l'elenco dei Comuni
+  e cosa chiude (es. «Allerta arancione: chiusi scuole e parchi a Benevento, Montesarchio e Telese»), ogni Comune con
+  la sua fonte (comunicato o ordinanza del Comune, oppure due giornali).
+- Le **previsioni del tempo no**: stanno nella pagina Meteo, che fa un programma a parte.
 
 ## Come lavorare una notizia
 
@@ -133,8 +159,7 @@ ponte, vitulano, cusanomutri, faicchio, amorosi. Cerca avvisi su strade, scuole,
   «Ottopagine (19/10)», «Ottopagine (20/10)».
 - `fonti` della notizia (quelle in prima pagina): una per testata, l'articolo più recente.
 - `rilevante` c'è sempre, come `true` o `false` (booleano, non testo).
-- La categoria `meteo` sul sito si chiama **«Allerte»**: scosse INGV, allerte della Protezione civile,
-  danni del maltempo. Le previsioni del tempo **no**: stanno nella pagina Meteo, che fa un programma a parte.
+- La categoria `meteo` sul sito si chiama **«Allerte»**: vedi la sezione «Le Allerte» sopra.
 - Per gli **avvisi ufficiali con una scadenza** (strade chiuse, lavori, divieti, ordinanze su scuole o acqua) scrivi
   `in_vigore_fino` con la data presa dal comunicato: restano in prima pagina finché vale l'avviso. Se il comunicato
   non dà una fine, non mettere il campo.
