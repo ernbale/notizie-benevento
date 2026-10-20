@@ -36,8 +36,8 @@
      "data": "1 set"
     }
    ],
-   "immagine": "mostra",
-   "foto": "mostra"
+   "immagine": "arte-contemporanea",
+   "foto": "arte-contemporanea"
   },
   {
    "id": "mostra-cio-che-resta-archivio-stato-benevento-2026",
@@ -73,8 +73,8 @@
      "data": "senza data (letta 20 ott)"
     }
    ],
-   "immagine": "mostra",
-   "foto": "mostra"
+   "immagine": "mostra-archivio",
+   "foto": "mostra-archivio"
   },
   {
    "id": "mostra-strega-leggenda-liquore-casa-pisani-2026",
@@ -110,8 +110,8 @@
      "data": "senza data (letta 20 ott)"
     }
    ],
-   "immagine": "mostra",
-   "foto": "mostra"
+   "immagine": "cartoline",
+   "foto": "cartoline"
   },
   {
    "id": "moti-paralleli-sequenze-sollima-2026",
@@ -146,8 +146,8 @@
      "data": "10 ott"
     }
    ],
-   "immagine": "concerto",
-   "foto": "concerto"
+   "immagine": "violoncello",
+   "foto": "violoncello"
   },
   {
    "id": "sannio-festival-canzone-napoletana-2026",
@@ -190,8 +190,8 @@
      "data": "15 ott"
     }
    ],
-   "immagine": "concerto",
-   "foto": "concerto-2"
+   "immagine": "mandolino",
+   "foto": "mandolino"
   },
   {
    "id": "sagra-castagna-vitulano-2026",
@@ -245,8 +245,8 @@
      "data": "19 ott"
     }
    ],
-   "immagine": "sagra",
-   "foto": "sagra"
+   "immagine": "castagne",
+   "foto": "castagne"
   },
   {
    "id": "stregati-dai-vicoli-ponte-2026",
@@ -288,8 +288,8 @@
      "data": "9 ott"
     }
    ],
-   "immagine": "luminarie",
-   "foto": "luminarie"
+   "immagine": "janare",
+   "foto": "janare"
   },
   {
    "id": "neri-per-caso-accademia-santa-sofia-2026",
@@ -330,7 +330,7 @@
     }
    ],
    "immagine": "concerto",
-   "foto": "concerto-3"
+   "foto": "concerto"
   },
   {
    "id": "cadeaux-al-castello-limatola-2026",
@@ -402,8 +402,8 @@
      "data": "senza data (letta 20 ott)"
     }
    ],
-   "immagine": "mercato",
-   "foto": "mercato"
+   "immagine": "castello-natale",
+   "foto": "castello-natale"
   },
   {
    "id": "novello-castagne-torrecuso-2026",
@@ -450,8 +450,8 @@
      "data": "28 set"
     }
    ],
-   "immagine": "sagra",
-   "foto": "sagra-2"
+   "immagine": "vino-novello",
+   "foto": "vino-novello"
   },
   {
    "id": "la-cara-dei-vecchi-solot-mulino-pacifico-benevento-2026",
@@ -551,8 +551,8 @@
      "data": "16 ott"
     }
    ],
-   "immagine": "natale",
-   "foto": "natale"
+   "immagine": "castello-natale",
+   "foto": "castello-natale-2"
   },
   {
    "id": "moti-paralleli-duo-la-meraviglia-2026",
@@ -587,8 +587,8 @@
      "data": "senza data (letta 20 ott)"
     }
    ],
-   "immagine": "concerto",
-   "foto": "concerto"
+   "immagine": "musica-classica",
+   "foto": "musica-classica"
   },
   {
    "id": "natale-sul-ghiaccio-pista-piazza-roma-benevento-2026",
@@ -628,8 +628,8 @@
      "data": "15 set"
     }
    ],
-   "immagine": "natale",
-   "foto": "natale"
+   "immagine": "pista-ghiaccio",
+   "foto": "pista-ghiaccio"
   },
   {
    "id": "alienazione-del-bene-solot-mulino-pacifico-benevento-2026",
@@ -733,8 +733,8 @@
      "data": "8 ott"
     }
    ],
-   "immagine": "natale",
-   "foto": "natale"
+   "immagine": "casa-babbo-natale",
+   "foto": "casa-babbo-natale"
   },
   {
    "id": "sotto-una-buona-stella-santagata-de-goti-2026",
@@ -773,8 +773,8 @@
      "data": "8 ott"
     }
    ],
-   "immagine": "natale",
-   "foto": "natale"
+   "immagine": "borgo-natale",
+   "foto": "borgo-natale"
   },
   {
    "id": "sei-regine-sfortunate-teatro-san-marco-benevento-2026",
@@ -849,8 +849,8 @@
      "data": "12 ott"
     }
    ],
-   "immagine": "concerto",
-   "foto": "concerto-2"
+   "immagine": "jazz",
+   "foto": "jazz"
   },
   {
    "id": "cio-che-vide-il-maggiordomo-teatro-comunale-benevento-2026",
@@ -899,7 +899,7 @@
     }
    ],
    "immagine": "teatro",
-   "foto": "teatro"
+   "foto": "teatro-4"
   },
   {
    "id": "peppe-lanzetta-parole-stonate-teatro-san-marco-benevento-2026",
@@ -941,7 +941,7 @@
     }
    ],
    "immagine": "teatro",
-   "foto": "teatro-2"
+   "foto": "teatro-5"
   },
   {
    "id": "amedeo-minghi-anniversari-tour-teatro-comunale-benevento-2026",
@@ -982,8 +982,8 @@
      "data": "10 ott"
     }
    ],
-   "immagine": "concerto",
-   "foto": "concerto-3"
+   "immagine": "pianoforte",
+   "foto": "pianoforte"
   },
   {
    "id": "musica-da-vedere-lucio-caputo-teatro-san-marco-benevento-2026",
@@ -1022,8 +1022,8 @@
      "data": "5 ago"
     }
    ],
-   "immagine": "concerto",
-   "foto": "concerto"
+   "immagine": "orchestra",
+   "foto": "orchestra"
   },
   {
    "id": "sarajevo-solot-mulino-pacifico-benevento-2026",
@@ -1065,7 +1065,7 @@
     }
    ],
    "immagine": "teatro",
-   "foto": "teatro-3"
+   "foto": "teatro"
   },
   {
    "id": "sergio-rubini-fratelli-de-filippo-teatro-comunale-benevento-2026",
@@ -1102,7 +1102,7 @@
     }
    ],
    "immagine": "teatro",
-   "foto": "teatro"
+   "foto": "teatro-2"
   },
   {
    "id": "assassinio-per-due-teatro-san-marco-benevento-2026",
@@ -1142,8 +1142,8 @@
      "data": "5 ago"
     }
    ],
-   "immagine": "teatro",
-   "foto": "teatro-2"
+   "immagine": "musical",
+   "foto": "musical"
   },
   {
    "id": "maledette-feste-isabella-pedicini-mulino-pacifico-benevento-2026",
@@ -1219,8 +1219,8 @@
      "data": "12 ott"
     }
    ],
-   "immagine": "concerto",
-   "foto": "concerto-2"
+   "immagine": "mandolino",
+   "foto": "mandolino-2"
   },
   {
    "id": "presepe-vivente-casali-faicchio-2026",
@@ -1262,8 +1262,8 @@
      "data": "23 set"
     }
    ],
-   "immagine": "natale",
-   "foto": "natale"
+   "immagine": "presepe-vivente",
+   "foto": "presepe-vivente"
   },
   {
    "id": "frozen-la-magia-di-elsa-teatro-san-marco-benevento-2026",
@@ -1303,8 +1303,8 @@
      "data": "5 ago"
     }
    ],
-   "immagine": "teatro",
-   "foto": "teatro"
+   "immagine": "teatro-ragazzi",
+   "foto": "teatro-ragazzi"
   }
  ]
 }

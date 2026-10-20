@@ -236,7 +236,9 @@
   "foto": "rows of empty red velvet seats in an old Italian theatre",
   "varianti": [
    "a theatre stage with a closed red curtain under spotlights",
-   "the gilded balconies and boxes of an old Italian opera house"
+   "the gilded balconies and boxes of an old Italian opera house",
+   "a single spotlight on a wooden chair in the middle of an empty theatre stage",
+   "the gilded proscenium arch of a historic Italian theatre seen from the stalls"
   ]
  },
  "mercato": {
@@ -714,7 +716,11 @@
  },
  "natale": {
   "quando": "Natale, mercatini, luci di Natale, eventi di Natale",
-  "foto": "Christmas lights strung across an old town street at night with a decorated tree"
+  "foto": "Christmas lights strung across an old town street at night with a decorated tree",
+  "varianti": [
+   "a tall decorated Christmas tree in a town square at night",
+   "strings of star-shaped Christmas lights over an old town street at dusk"
+  ]
  },
  "carnevale": {
   "quando": "Carnevale",
@@ -751,5 +757,100 @@
  "fontana": {
   "quando": "fontane pubbliche, acqua non potabile, sorgenti",
   "foto": "an old stone public drinking fountain in a village square"
+ },
+ "mercatino-natale": {
+  "quando": "mercatini di Natale, casette di legno, idee regalo",
+  "foto": "wooden Christmas market stalls with warm lights, garlands and handmade decorations in an old stone town square at dusk",
+  "varianti": [
+   "a wooden Christmas market hut selling handmade ornaments and candles, warm fairy lights, close-up",
+   "a Christmas market street in a medieval village at night with lit wooden huts and a big decorated tree"
+  ]
+ },
+ "castello-natale": {
+  "quando": "Natale nei castelli, villaggi di Natale in castelli e palazzi storici",
+  "foto": "the courtyard of a medieval stone castle decorated for Christmas with lights, small wooden huts and a tall tree at dusk",
+  "varianti": [
+   "the illuminated walls and tower of a medieval castle at night with Christmas lights and garlands at the entrance"
+  ]
+ },
+ "casa-babbo-natale": {
+  "quando": "villaggi e parchi di Natale, casa di Babbo Natale, eventi di Natale per bambini",
+  "foto": "a cosy Santa Claus house interior with a big armchair, fireplace, wrapped gifts and a decorated tree, no people"
+ },
+ "pista-ghiaccio": {
+  "quando": "piste di pattinaggio sul ghiaccio",
+  "foto": "an outdoor ice skating rink in an Italian town square at night with Christmas lights, no people",
+  "varianti": [
+   "a pair of ice skates resting on the edge of an outdoor ice rink with blurred Christmas lights"
+  ]
+ },
+ "borgo-natale": {
+  "quando": "Natale nei borghi e nei centri storici, luci e allestimenti di Natale",
+  "foto": "a narrow stone alley of an old hill village decorated with Christmas lights and stars at night",
+  "varianti": [
+   "lanterns and Christmas garlands on the stone steps of an old village at dusk"
+  ]
+ },
+ "presepe-vivente": {
+  "quando": "presepi viventi",
+  "foto": "a rustic stone stable with hay, a wooden manger, lanterns and an old cart in a medieval village at night, no people",
+  "varianti": [
+   "old craft workshops set up in stone cellars for a living nativity, with lanterns, baskets and tools, no people"
+  ]
+ },
+ "janare": {
+  "quando": "Halloween, janare e streghe di Benevento, feste a tema streghe",
+  "foto": "a witch's broom, carved pumpkins with candles and old lanterns in a stone alley at night"
+ },
+ "jazz": {
+  "quando": "concerti jazz",
+  "foto": "a saxophone resting on a stand on a dark stage under a warm spotlight"
+ },
+ "mandolino": {
+  "quando": "canzone napoletana, musica popolare, concerti di tradizione",
+  "foto": "a mandolin and a tambourine on a wooden chair on a stage with warm light",
+  "varianti": [
+   "traditional southern Italian folk instruments, a tammorra, castanets and an accordion on a wooden table"
+  ]
+ },
+ "pianoforte": {
+  "quando": "concerti di pianoforte, cantautori, recital",
+  "foto": "a black grand piano on an empty concert stage under a spotlight"
+ },
+ "violoncello": {
+  "quando": "musica da camera, violoncello, concerti di archi",
+  "foto": "a cello and bow leaning on a chair on a wooden stage with soft warm light"
+ },
+ "orchestra": {
+  "quando": "orchestre, concerti sinfonici, musica da film",
+  "foto": "empty orchestra chairs and music stands with sheet music on a concert hall stage"
+ },
+ "musical": {
+  "quando": "musical, gialli musicali, spettacoli con musica",
+  "foto": "a theatre stage with colourful spotlights, haze and a sparkling curtain"
+ },
+ "teatro-ragazzi": {
+  "quando": "spettacoli per bambini e famiglie, teatro ragazzi",
+  "foto": "a small colourful theatre stage with stars, balloons and a painted fairy-tale castle backdrop"
+ },
+ "arte-contemporanea": {
+  "quando": "mostre di arte contemporanea, sculture, installazioni",
+  "foto": "a white gallery room with contemporary sculptures on plinths and large abstract works on the walls"
+ },
+ "mostra-archivio": {
+  "quando": "mostre di documenti, archivi, storia della città, fotografie d'epoca",
+  "foto": "old maps, historical documents and black and white photographs displayed under glass in an exhibition hall"
+ },
+ "cartoline": {
+  "quando": "mostre di cartoline e collezioni, storia locale",
+  "foto": "vintage illustrated postcards spread on a wooden table, seen from above, no readable writing"
+ },
+ "vino-novello": {
+  "quando": "vino novello, feste del vino e delle castagne",
+  "foto": "glasses of young red wine and a basket of roasted chestnuts on a rustic table"
+ },
+ "lirica": {
+  "quando": "opera lirica",
+  "foto": "a grand opera stage set with dramatic red lighting and a sweeping staircase, no people"
  }
 }
