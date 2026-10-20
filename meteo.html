@@ -70,15 +70,19 @@
   .misure .va svg { width: 13px; height: 13px; vertical-align: -1px; }
   .pallino { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 4px; vertical-align: 1px; }
 
-  .modelli-card { padding: 16px 18px 0; display: flex; flex-direction: column; overflow: hidden; }
-  .modelli-card .testa { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
-  .modelli-card .testa .tit { font: 600 15px var(--sans); }
+  .consigli-card { padding: 16px 18px 0; display: flex; flex-direction: column; overflow: hidden; }
+  .consigli-card .testa { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+  .consigli-card .testa .tit { font: 600 15px var(--sans); }
+  .consigli-card .quando { font-size: 12px; color: var(--grigio); }
+  .consigli { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 16px; margin: 12px 0 auto; }
+  .consiglio { display: flex; gap: 10px; align-items: flex-start; padding: 8px 0; border-top: 1px solid var(--riga-chiara); }
+  .consiglio svg { width: 46px; height: 46px; flex: none; }
+  .consiglio b { display: block; font: 600 14.5px/1.25 var(--sans); }
+  .consiglio span { display: block; font-size: 12.5px; line-height: 1.35; color: var(--grigio); margin-top: 2px; }
   .accordo { font: 600 12px var(--sans); border-radius: 12px; padding: 3px 9px; white-space: nowrap; }
   .accordo.alto { background: #e3f1e6; color: var(--verde); }
   .accordo.medio { background: #fbefd3; color: #8a5a00; }
   .accordo.basso { background: #fbe1df; color: var(--rosso); }
-  .modelli-card .riassunto { font-size: 14px; color: var(--grigio); margin: 4px 0 8px; }
-  .forbice { width: 100%; height: auto; display: block; }
   .striscia-allerta { margin: 12px -18px 0; padding: 10px 18px; background: var(--blu); color: #fff; font: 600 13px var(--sans); display: flex; justify-content: space-between; gap: 10px; }
   .striscia-allerta a { color: #fff; }
 
@@ -202,6 +206,9 @@
     .sopra { grid-template-columns: 1fr; }
   }
   @media (max-width: 620px) {
+    .consigli { gap: 4px 12px; }
+    .consiglio { flex-direction: column; gap: 4px; }
+    .consiglio svg { width: 40px; height: 40px; }
     .scorri { display: none; }
     .pagina { padding: 0 14px; }
     .testata { grid-template-columns: 1fr; text-align: center; gap: 4px; }
@@ -228,6 +235,13 @@
     <linearGradient id="g-nube-scura" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c3ccd8"/><stop offset="1" stop-color="#8f9bab"/></linearGradient>
     <linearGradient id="g-goccia" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7db3ef"/><stop offset="1" stop-color="#2f6fc4"/></linearGradient>
     <linearGradient id="g-fulmine" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe46b"/><stop offset="1" stop-color="#f3a712"/></linearGradient>
+    <linearGradient id="g-ombrello" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f06a5a"/><stop offset="1" stop-color="#b3141a"/></linearGradient>
+    <linearGradient id="g-giacca" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6496da"/><stop offset="1" stop-color="#1d4f91"/></linearGradient>
+    <linearGradient id="g-felpa" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7bd76"/><stop offset="1" stop-color="#d9772b"/></linearGradient>
+    <linearGradient id="g-maglia" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe385"/><stop offset="1" stop-color="#f2b33a"/></linearGradient>
+    <linearGradient id="g-lente" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5a606e"/><stop offset="1" stop-color="#15171c"/></linearGradient>
+    <linearGradient id="g-auto" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6aa0e0"/><stop offset="1" stop-color="#2a5ea8"/></linearGradient>
+    <linearGradient id="g-foglia" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a6dc88"/><stop offset="1" stop-color="#3f9b4a"/></linearGradient>
   </defs>
 </svg>
 <div class="pagina">
@@ -465,38 +479,127 @@
   }
   function misura(et, va) { return '<div><div class="et">' + esc(et) + '</div><div class="va">' + va + "</div></div>"; }
 
-  // ---------- gli 8 modelli (forbice delle temperature) ----------
-  function disegnaModelliCard() {
-    var g = D.giorni.filter(function (x) { return x.data > oggi; })[0] || D.giorni[D.giorni.length - 1];
-    var ids = D.modelli.map(function (m) { return m.id; }).filter(function (id) { return g.modelli[id]; });
-    var nomi = {}; D.modelli.forEach(function (m) { nomi[m.id] = m.nome; });
-    var lo = Infinity, hi = -Infinity;
-    ids.forEach(function (id) { lo = Math.min(lo, g.modelli[id].min); hi = Math.max(hi, g.modelli[id].max); });
-    lo = Math.floor(lo - 1); hi = Math.ceil(hi + 1);
-    // sul telefono un disegno più stretto, così le scritte restano leggibili
-    var stretto = window.innerWidth < 620, W = stretto ? 340 : 520, rh = stretto ? 24 : 22, top = 8, L = stretto ? 82 : 104, R = stretto ? 64 : 70, H = top + ids.length * rh + 24;
-    var x = function (t) { return L + (t - lo) / (hi - lo) * (W - L - R); };
-    var s = '<svg class="forbice" viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Minime e massime di domani secondo ogni modello">';
-    for (var t = Math.ceil(lo / 2) * 2; t <= hi; t += 2) {
-      s += '<line x1="' + x(t) + '" x2="' + x(t) + '" y1="' + top + '" y2="' + (H - 18) + '" stroke="#f1e0cc"/>' +
-        '<text x="' + x(t) + '" y="' + (H - 4) + '" font-size="11" fill="#8a7d70" text-anchor="middle">' + t + "°</text>";
+  // ---------- consigli: ombrello, vestiti, sole, bucato, strade, aria ----------
+  var CAPO = "M22 12L32 17 42 12 53 20 48 30 44 28V56H20V28L16 30 11 20z";
+  var MAGLIA = "M22 13L32 17 42 13 54 21 49 29 44 27V54H20V27L15 29 10 21z";
+  function iconaConsiglio(tipo, extra) {
+    var s = "";
+    switch (tipo) {
+      case "ombrello":
+        s = (extra === "pioggia" ? '<g transform="translate(0 -44)">' + gocce(3) + "</g>" : "") +
+          '<path d="M8 34A24 21 0 0 1 56 34Q50 30 44 34Q38 30 32 34Q26 30 20 34Q14 30 8 34z" fill="url(#g-ombrello)"/>' +
+          '<path d="M32 13V34M20 34Q24 22 32 13Q40 22 44 34" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="1.2"/>' +
+          '<path d="M32 34V52a4 4 0 0 1-8 0" fill="none" stroke="#5b5249" stroke-width="3" stroke-linecap="round"/>';
+        if (extra === "borsa") s = nube(false, 14, -20, 0.6) + s;
+        break;
+      case "ombrello-chiuso":
+        s = sole(46, 16, 9) + '<path d="M36 12l7 3-11 28-6-2z" fill="url(#g-ombrello)"/><path d="M29 42l-5 12a3.5 3.5 0 0 1-6.5-2.5" fill="none" stroke="#5b5249" stroke-width="3" stroke-linecap="round"/>';
+        break;
+      case "cappotto":
+        s = '<path d="' + CAPO + '" fill="url(#g-giacca)"/><path d="M32 17V56" stroke="#fff" stroke-opacity=".55" stroke-width="1.5"/>' +
+          '<circle cx="36" cy="30" r="1.6" fill="#fff" fill-opacity=".7"/><circle cx="36" cy="40" r="1.6" fill="#fff" fill-opacity=".7"/>' +
+          (extra ? '<path d="M24 14Q32 22 40 14L42 18Q32 27 22 18z" fill="url(#g-ombrello)"/><rect x="35" y="20" width="5" height="16" rx="2" fill="url(#g-ombrello)"/>' : "");
+        break;
+      case "felpa":
+        s = '<path d="' + CAPO + '" fill="url(#g-felpa)"/><path d="M26 14Q32 22 38 14" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="2"/>' +
+          '<rect x="20" y="51" width="24" height="5" fill="#b85f1d" fill-opacity=".35"/>';
+        break;
+      case "maglietta":
+        s = '<path d="' + MAGLIA + '" fill="url(#g-maglia)"/><path d="M27 15Q32 20 37 15" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="2"/>' + (extra ? sole(50, 12, 6) : "");
+        break;
+      case "occhiali":
+        s = sole(50, 14, 8) + '<path d="M12 30h40" stroke="#15171c" stroke-width="3"/><ellipse cx="22" cy="36" rx="10" ry="8" fill="url(#g-lente)"/><ellipse cx="42" cy="36" rx="10" ry="8" fill="url(#g-lente)"/>' +
+          '<path d="M30 33q2-2 4 0" fill="none" stroke="#15171c" stroke-width="2.5"/><ellipse cx="18" cy="33" rx="3" ry="1.6" fill="#fff" fill-opacity=".45"/><ellipse cx="38" cy="33" rx="3" ry="1.6" fill="#fff" fill-opacity=".45"/>';
+        break;
+      case "nuvole":
+        s = nube(false, 0, -2, 1);
+        break;
+      case "bucato":
+        s = (extra === "pioggia" ? nube(true, 18, -26, 0.6) : sole(52, 10, 7)) + '<path d="M4 20Q32 26 60 20" fill="none" stroke="#8a7d70" stroke-width="1.6"/>' +
+          '<g transform="translate(6 10) scale(.55)"><path d="' + MAGLIA + '" fill="url(#g-giacca)"/></g>' +
+          '<path d="M40 22h9v18l6 6-4 4-11-10z" fill="url(#g-felpa)"/><rect x="18" y="19" width="3" height="7" rx="1" fill="#c4161c"/><rect x="43" y="19" width="3" height="7" rx="1" fill="#c4161c"/>';
+        break;
+      case "auto":
+        s = (extra === "pioggia" ? '<g transform="translate(2 -34)">' + gocce(3) + "</g>" : extra === "nebbia" ? '<g fill="#b7c2d0"><rect class="an-nebbia" x="8" y="12" width="48" height="4" rx="2"/><rect class="an-nebbia" style="animation-delay:-2s" x="14" y="20" width="36" height="4" rx="2"/></g>' : "") +
+          '<path d="M8 42l6-11q2-4 8-4h20q6 0 8 4l6 11q2 0 2 4v4H6v-4q0-4 2-4z" fill="url(#g-auto)"/><path d="M17 40l4-8q1-2 4-2h6v10zM35 40V30h5q3 0 4 2l4 8z" fill="#e8f1fb" fill-opacity=".85"/>' +
+          '<circle cx="18" cy="50" r="6" fill="#2b2b33"/><circle cx="46" cy="50" r="6" fill="#2b2b33"/><circle cx="18" cy="50" r="2.4" fill="#b9bec8"/><circle cx="46" cy="50" r="2.4" fill="#b9bec8"/>' +
+          (extra === "ghiaccio" ? '<g fill="#8fbcef"><circle class="an-fiocco" cx="14" cy="14" r="2.4"/><circle class="an-fiocco" style="animation-delay:-1s" cx="30" cy="10" r="2.4"/><circle class="an-fiocco" style="animation-delay:-.5s" cx="46" cy="14" r="2.4"/></g>' : "");
+        break;
+      case "foglia":
+        s = '<path d="M12 52C12 28 28 12 54 10 54 36 38 52 12 52z" fill="url(#g-foglia)"/><path d="M14 50Q30 34 48 16" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="2"/>' +
+          (extra ? '<g fill="#e2b007"><circle class="an-fiocco" cx="48" cy="40" r="2.2"/><circle class="an-fiocco" style="animation-delay:-1.2s" cx="54" cy="48" r="1.8"/><circle class="an-fiocco" style="animation-delay:-.6s" cx="42" cy="50" r="1.8"/></g>' : "");
+        break;
     }
-    ids.forEach(function (id, k) {
-      var v = g.modelli[id], y = top + k * rh + rh / 2;
-      s += '<text x="0" y="' + (y + 4) + '" font-size="12.5" fill="#111" font-weight="500">' + esc(nomi[id]) + "</text>" +
-        '<line x1="' + x(v.min) + '" x2="' + x(v.max) + '" y1="' + y + '" y2="' + y + '" stroke="url(#g-forbice)" stroke-width="8" stroke-linecap="round"/>' +
-        '<text x="' + (W - R + 8) + '" y="' + (y + 4) + '" font-size="12" fill="' + (v.mm >= 1 ? "#3a78c9" : "#8a7d70") + '" font-weight="600">' + (v.mm >= 0.1 ? num(v.mm, 1) + " mm" : "asciutto") + "</text>";
-    });
-    s += '<line x1="' + x(g.max) + '" x2="' + x(g.max) + '" y1="' + (top - 2) + '" y2="' + (H - 18) + '" stroke="#111" stroke-dasharray="3 3"/>';
-    s += '<defs><linearGradient id="g-forbice" gradientUnits="userSpaceOnUse" x1="' + x(lo) + '" x2="' + x(hi) + '" y1="0" y2="0">' +
-      '<stop offset="0" stop-color="' + coloreT(lo) + '"/><stop offset="1" stop-color="' + coloreT(hi) + '"/></linearGradient></defs></svg>';
-    var piove = ids.filter(function (id) { return g.modelli[id].mm >= 1; }).length;
-    var riass = "Massima " + gradi(g.max) + " (i modelli vanno da " + gradi(Math.min.apply(null, ids.map(function (id) { return g.modelli[id].max; }))) +
-      " a " + gradi(Math.max.apply(null, ids.map(function (id) { return g.modelli[id].max; }))) + "). " +
-      (piove ? "Pioggia per " + piove + " modelli su " + ids.length + "." : "Nessun modello prevede pioggia.");
-    return '<section class="card modelli-card" aria-label="Cosa dicono i modelli per domani">' +
-      '<div class="testa"><span class="tit">' + (g.data > oggi ? "Domani, " + esc(dataLunga(g.data)) : esc(dataLunga(g.data))) + '</span><span class="accordo ' + g.accordo + '">Accordo ' + g.accordo + "</span></div>" +
-      '<p class="riassunto">' + esc(riass) + "</p>" + s +
+    return '<svg viewBox="0 0 64 64" aria-hidden="true">' + s + "</svg>";
+  }
+  function consiglio(icona, titolo, testo) {
+    return '<div class="consiglio">' + icona + "<div><b>" + esc(titolo) + "</b><span>" + esc(testo) + "</span></div></div>";
+  }
+  function disegnaConsigli() {
+    // fino alle 19 i consigli sono per il resto di oggi (fino alle 21), dopo per domani dalle 7 alle 21
+    var h = +ORE[iAdesso].slice(11, 13), domani = D.giorni.filter(function (x) { return x.data > oggi; })[0];
+    var perDomani = h >= 19 && domani, i0, i1;
+    if (perDomani) { i0 = ORE.indexOf(domani.data + "T07:00"); i1 = ORE.indexOf(domani.data + "T21:00"); }
+    else { i0 = iAdesso; i1 = Math.max(ORE.indexOf(oggi + "T21:00"), iAdesso + 3); }
+    if (i0 < 0 || i1 < 0) { i0 = iAdesso; i1 = Math.min(iAdesso + 12, ORE.length - 1); }
+    function valori(serie) { var v = []; for (var i = i0; i <= i1; i++) if (valido(serie[i])) v.push(serie[i]); return v; }
+    function maxDi(serie) { var v = valori(serie); return v.length ? Math.max.apply(null, v) : null; }
+    function minDi(serie) { var v = valori(serie); return v.length ? Math.min.apply(null, v) : null; }
+    function media(serie) { var v = valori(serie); return v.length ? v.reduce(function (a, b) { return a + b; }, 0) / v.length : null; }
+    function primaOra(cond) { for (var i = i0; i <= i1; i++) if (cond(i)) return i; return -1; }
+    var out = [], pmax = maxDi(O.prob) || 0, iP = primaOra(function (i) { return O.prob[i] >= 0.5; }), iP2 = primaOra(function (i) { return O.prob[i] >= 0.25; });
+
+    // 1. ombrello
+    if (iP >= 0) {
+      var nm = O.nmod[iP] || D.modelli.length, pg = sommaPioggiaModelli(i0, i1 + 1);
+      out.push(consiglio(iconaConsiglio("ombrello", "pioggia"), "Prendi l'ombrello",
+        "Pioggia probabile dalle " + ora(ORE[iP]) + " (" + Math.round(O.prob[iP] * nm) + " modelli su " + nm + ")" + (pg.mm >= 1 ? ", circa " + num(pg.mm, 0) + " mm." : ".")));
+    } else if (iP2 >= 0) {
+      out.push(consiglio(iconaConsiglio("ombrello", "borsa"), "Meglio averlo in borsa", "Qualche modello prevede pioggia verso le " + ora(ORE[iP2]) + "."));
+    } else {
+      out.push(consiglio(iconaConsiglio("ombrello-chiuso"), "L'ombrello non serve", "Nessun modello prevede pioggia " + (perDomani ? "domani." : "fino a sera.")));
+    }
+    // 2. come vestirsi (temperatura percepita)
+    var pmn = minDi(O.perc), pmx = maxDi(O.perc), raff = maxDi(O.raffiche) || 0, vest, ic;
+    if (pmx < 5) { vest = "Cappotto, sciarpa e guanti"; ic = iconaConsiglio("cappotto", true); }
+    else if (pmx < 12) { vest = "Cappotto o giaccone"; ic = iconaConsiglio("cappotto"); }
+    else if (pmx < 17) { vest = "Giacca e maglione"; ic = iconaConsiglio("cappotto"); }
+    else if (pmx < 22) { vest = "Felpa o giacca leggera"; ic = iconaConsiglio("felpa"); }
+    else if (pmx < 27) { vest = pmn < 17 ? "Maniche corte, ma una felpa per la sera" : "Maniche corte"; ic = iconaConsiglio(pmn < 17 ? "felpa" : "maglietta"); }
+    else { vest = "Vestiti leggeri"; ic = iconaConsiglio("maglietta", true); }
+    var tv = "Si sentiranno da " + gradi(pmn) + " a " + gradi(pmx) + "." + (pmx - pmn >= 8 ? " Meglio vestirsi a strati." : "") + (raff >= 35 ? " Vento forte: serve qualcosa che ripari." : "");
+    out.push(consiglio(ic, vest, tv));
+    // 3. sole e UV
+    var uvm = maxDi(O.uv) || 0, iUv = primaOra(function (i) { return O.uv[i] === uvm; }), nuv = media(O.nuvole) || 0;
+    if (uvm >= 6) out.push(consiglio(iconaConsiglio("occhiali"), "Crema solare e occhiali", "UV fino a " + num(uvm, 0) + " (" + catUV(uvm).toLowerCase() + ") verso le " + ora(ORE[iUv]) + "."));
+    else if (uvm >= 3) out.push(consiglio(iconaConsiglio("occhiali"), "Occhiali da sole", "Sole moderato: UV fino a " + num(uvm, 0) + " verso le " + ora(ORE[iUv]) + "."));
+    else if (nuv >= 70) out.push(consiglio(iconaConsiglio("nuvole"), "Niente sole forte", "Cielo per lo più coperto, UV basso."));
+    else out.push(consiglio(iconaConsiglio("occhiali"), "Sole debole", "UV basso (" + num(uvm, 0) + "): niente crema."));
+    // 4. bucato
+    var umm = media(O.umid) || 0, vm = media(O.vento) || 0;
+    if (pmax >= 0.25) out.push(consiglio(iconaConsiglio("bucato", "pioggia"), "Meglio stendere in casa", iP >= 0 ? "Pioggia probabile dalle " + ora(ORE[iP]) + "." : "C'è qualche rischio di pioggia."));
+    else if (umm < 80 && (nuv < 70 || vm >= 10)) out.push(consiglio(iconaConsiglio("bucato"), "Si può stendere fuori", "Niente pioggia e aria abbastanza asciutta (umidità " + num(umm) + "%)."));
+    else out.push(consiglio(iconaConsiglio("bucato"), "Asciuga lentamente", "Niente pioggia, ma aria umida (" + num(umm) + "%)" + (nuv >= 70 ? " e poco sole." : ".")));
+    // 5. strade
+    var tmin = minDi(O.temp), nebbia = primaOra(function (i) { return O.cond[i] === "nebbia"; });
+    if (nebbia >= 0) out.push(consiglio(iconaConsiglio("auto", "nebbia"), "Nebbia: guida con prudenza", "Visibilità ridotta verso le " + ora(ORE[nebbia]) + "."));
+    else if (tmin != null && tmin <= 1 && (pmax >= 0.3 || (maxDi(O.umid) || 0) >= 90)) out.push(consiglio(iconaConsiglio("auto", "ghiaccio"), "Possibile ghiaccio", "Temperature vicine allo zero: attenzione a ponti e curve in ombra."));
+    else if (iP >= 0) out.push(consiglio(iconaConsiglio("auto", "pioggia"), "Strade bagnate", "Allunga le distanze e accendi i fari."));
+    else if (raff >= 50) out.push(consiglio(iconaConsiglio("auto"), "Raffiche forti", "Fino a " + num(raff) + " km/h: attenzione ai mezzi alti e ai viadotti."));
+    else out.push(consiglio(iconaConsiglio("auto"), "Strade asciutte", "Il meteo non crea problemi alla guida."));
+    // 6. aria e pollini
+    var aqm = maxDi(O.aqi || []), pol = 0, nomeP = "";
+    Object.keys(O.pollini || {}).forEach(function (nm) { var m = maxDi(O.pollini[nm]); if (m != null && m > pol) { pol = m; nomeP = nm; } });
+    var allergia = pol >= 10 ? " Pollini di " + nomeP + (pol >= 50 ? " alti." : " medi.") : "";
+    if (aqm == null) out.push(consiglio(iconaConsiglio("foglia", pol >= 10), "Aria", "Dato sulla qualità dell'aria non disponibile." + allergia));
+    else if (aqm < 40) out.push(consiglio(iconaConsiglio("foglia", pol >= 10), "Bene per stare all'aperto", "Aria " + catAria(aqm).toLowerCase() + "." + (allergia || " Pollini quasi assenti.")));
+    else if (aqm < 60) out.push(consiglio(iconaConsiglio("foglia", pol >= 10), "Aria discreta", "Qualità moderata (" + aqm + "): sport all'aperto senza esagerare." + allergia));
+    else out.push(consiglio(iconaConsiglio("foglia", true), "Evita sforzi all'aperto", "Aria " + catAria(aqm).toLowerCase() + " (" + aqm + ")." + allergia));
+
+    return '<section class="card consigli-card" aria-label="Consigli">' +
+      '<div class="testa"><span class="tit">Consigli per ' + (perDomani ? "domani" : "oggi") + '</span><span class="quando">' +
+      (perDomani ? esc(dataLunga(domani.data)) + ", dalle 7 alle 21" : "da adesso alle " + ora(ORE[i1])) + "</span></div>" +
+      '<div class="consigli">' + out.join("") + "</div>" +
       '<div class="striscia-allerta"><span>Allerte meteo ufficiali</span><a href="https://centrofunzionale.regione.campania.it/" rel="noopener">Protezione civile Campania ›</a></div></section>';
   }
 
@@ -922,7 +1025,7 @@
   // ---------- tutto insieme ----------
   function disegnaTutto() {
     var c = document.getElementById("contenuto");
-    c.innerHTML = '<div class="sopra">' + disegnaAttuale() + disegnaModelliCard() + "</div>" +
+    c.innerHTML = '<div class="sopra">' + disegnaAttuale() + disegnaConsigli() + "</div>" +
       '<section class="ogni-ora"><div class="riga-titolo"><h2>Ogni ora</h2><div class="schede" role="tablist">' +
       SCHEDE.map(function (sc) { return '<button type="button" role="tab" data-s="' + sc[0] + '" aria-selected="' + (sc[0] === scheda) + '">' + esc(sc[1]) + "</button>"; }).join("") +
       '</div></div><div class="giorni-box"><button type="button" class="scorri sx" aria-label="Giorni precedenti">‹</button><div class="giorni" id="giorni">' + disegnaGiorni() +
