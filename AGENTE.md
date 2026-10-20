@@ -133,7 +133,7 @@ ponte, vitulano, cusanomutri, faicchio, amorosi. Cerca avvisi su strade, scuole,
   «Ottopagine (19/10)», «Ottopagine (20/10)».
 - `fonti` della notizia (quelle in prima pagina): una per testata, l'articolo più recente.
 - `rilevante` c'è sempre, come `true` o `false` (booleano, non testo).
-- La categoria `meteo` sul sito si chiama **«Terremoti e allerte»**: scosse INGV, allerte della Protezione civile,
+- La categoria `meteo` sul sito si chiama **«Allerte»**: scosse INGV, allerte della Protezione civile,
   danni del maltempo. Le previsioni del tempo **no**: stanno nella pagina Meteo, che fa un programma a parte.
 - Per gli **avvisi ufficiali con una scadenza** (strade chiuse, lavori, divieti, ordinanze su scuole o acqua) scrivi
   `in_vigore_fino` con la data presa dal comunicato: restano in prima pagina finché vale l'avviso. Se il comunicato

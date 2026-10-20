@@ -277,9 +277,9 @@
     <button type="button" data-cat="" aria-pressed="true">Tutte</button>
     <button type="button" data-cat="strade" aria-pressed="false">Strade</button>
     <button type="button" data-cat="cronaca" aria-pressed="false">Cronaca</button>
-    <button type="button" data-cat="meteo" aria-pressed="false">Terremoti e allerte</button>
     <button type="button" data-cat="politica" aria-pressed="false">Politica</button>
     <button type="button" data-cat="eventi" aria-pressed="false">Eventi</button>
+    <button type="button" data-cat="meteo" aria-pressed="false">Allerte</button>
     <button type="button" data-cat="altro" aria-pressed="false">Altro</button>
     <select id="zona" aria-label="Zona">
       <option value="">Tutte le zone</option>
@@ -308,7 +308,7 @@
 
 <script>
 (function () {
-  var NOMI_CAT = { strade: "Strade", cronaca: "Cronaca", meteo: "Terremoti e allerte", politica: "Politica", eventi: "Eventi", altro: "Altro" };
+  var NOMI_CAT = { strade: "Strade", cronaca: "Cronaca", politica: "Politica", eventi: "Eventi", meteo: "Allerte", altro: "Altro" };
   var dati = { notizie: [], approfondimenti: [] };
   var filtroCat = "";
   var filtroZona = "";
