@@ -245,7 +245,8 @@
     // --- visite ---
     var V = D.visite || {};
     m.appendChild(el("h2", "", "Visite"));
-    m.appendChild(el("p", "sotto", "Quante volte il sito è stato aperto e quante pagine sono state lette. Ultimi " + D.giorni + " giorni."));
+    m.appendChild(el("p", "sotto", "Quante volte il sito è stato aperto e quante pagine sono state lette. Ultimi " + D.giorni + " giorni" +
+      (V.solo_italia ? ", solo dall'Italia: le visite dall'estero sono quasi tutte programmi automatici e non si contano." : ".")));
     if (V.stato !== "ok") {
       var a = el("div", "avviso"); a.appendChild(el("b", "", V.stato === "errore" ? "Il contatore non ha risposto" : "Contatore da collegare"));
       a.appendChild(document.createTextNode(V.messaggio || "")); m.appendChild(a);
@@ -297,7 +298,13 @@
       g.appendChild(ro);
       g.appendChild(rd);
       g.appendChild(riquadro("Con cosa leggono", barre(V.dispositivi, "visite")));
-      g.appendChild(riquadro("Da quale paese", barre((V.paesi || []).slice(0, 8).map(function (x) { return { nome: paese(x.nome), visite: x.visite }; }), "visite")));
+      if (V.solo_italia) {
+        // le visite dall'estero: non contate sopra, qui solo per sapere quante restano fuori
+        var est = (V.paesi || []).filter(function (x) { return x.nome !== "IT"; });
+        var rx = riquadro("Dall'estero, non contate", est.length ? barre(est.slice(0, 6).map(function (x) { return { nome: paese(x.nome), visite: x.visite }; }), "visite") : el("p", "vuoto", "Nessuna."));
+        rx.appendChild(el("p", "nota", num(V.estero || 0) + " visite in " + D.giorni + " giorni, quasi sempre programmi automatici (motori di ricerca, controlli, anteprime dei link) e non persone."));
+        g.appendChild(rx);
+      } else g.appendChild(riquadro("Da quale paese", barre((V.paesi || []).slice(0, 8).map(function (x) { return { nome: paese(x.nome), visite: x.visite }; }), "visite")));
       m.appendChild(g);
     }
 

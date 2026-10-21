@@ -62,10 +62,14 @@ def leggi(path, predefinito=None):
 
 # ---------- visite (Cloudflare Web Analytics) ----------
 def cloudflare(token, inizio, fine):
+    # Si contano solo le visite dall'Italia: quelle dall'estero (Stati Uniti, Canada…) arrivano a raffiche dopo ogni
+    # pubblicazione e sono quasi tutte programmi automatici (motori, controlli, anteprime dei link). I paesi si
+    # chiedono senza filtro, per mostrare quante ne restano fuori.
     filtro = f'filter: {{datetime_geq: $start, datetime_lt: $end, requestHost: "{HOST}", bot: 0}}'
+    italia = f'filter: {{datetime_geq: $start, datetime_lt: $end, requestHost: "{HOST}", bot: 0, countryName: "IT"}}'
     def gruppo(nome, limite, ordine, dim):
-        return (f"{nome}: rumPageloadEventsAdaptiveGroups(limit: {limite}, {filtro}, orderBy: [{ordine}]) "
-                f"{{ count sum {{ visits }} dimensions {{ {dim} }} }}")
+        return (f"{nome}: rumPageloadEventsAdaptiveGroups(limit: {limite}, {filtro if nome == 'paesi' else italia}, "
+                f"orderBy: [{ordine}]) {{ count sum {{ visits }} dimensions {{ {dim} }} }}")
     q = ("query ($account: String!, $start: Time!, $end: Time!) { viewer { accounts(filter: {accountTag: $account}) { "
          + " ".join([gruppo("ore", 1000, "datetimeHour_ASC", "datetimeHour"),
                      gruppo("pagine", 100, "count_DESC", "requestPath"),
@@ -180,6 +184,8 @@ def visite(sito, token, adesso):
         "dispositivi": [{"nome": nomi_disp.get(r["dimensions"]["deviceType"], r["dimensions"]["deviceType"] or "Altro"),
                          "visite": r["sum"]["visits"]} for r in a["dispositivi"]],
         "paesi": [{"nome": r["dimensions"]["countryName"] or "?", "visite": r["sum"]["visits"]} for r in a["paesi"]],
+        "solo_italia": True,
+        "estero": sum(r["sum"]["visits"] for r in a["paesi"] if r["dimensions"]["countryName"] != "IT"),
         "browser": [{"nome": r["dimensions"]["userAgentBrowser"] or "?", "visite": r["sum"]["visits"]} for r in a["browser"]],
     }
 
