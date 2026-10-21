@@ -81,3 +81,9 @@ jobs:
           if [ -f "$RUNNER_TEMP/indexnow.json" ]; then
             python3 strumenti/pagine.py --invia-indexnow "$RUNNER_TEMP/indexnow.json" || echo "::warning::IndexNow non ha risposto"
           fi
+
+      # dopo la pubblicazione, così Facebook trova già online la pagina della notizia (titolo e anteprima)
+      - name: Facebook (una notizia nuova sulla Pagina, se è il momento)
+        env:
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+        run: python3 strumenti/facebook.py || echo "::warning::Facebook non ha pubblicato (vedi l'avviso sopra)"
