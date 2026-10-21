@@ -1,4 +1,29 @@
 {
- "aggiornato": "2026-10-20T09:25:00+02:00",
- "voci": []
+ "aggiornato": "2026-10-21T06:05:00+02:00",
+ "voci": [
+  {
+   "id": "scontro-rione-ferrovia",
+   "tipo": "notizia",
+   "titolo": "Benevento, scontro tra due auto al Rione Ferrovia: ferite due donne di 47 e 51 anni",
+   "sintesi": "Domenica mattina, 18 ottobre, due auto si sono scontrate al Rione Ferrovia, all'incrocio con via Grimoaldo Re. Due donne di 47 e 51 anni sono state portate in ospedale, una al San Pio e l'altra al Fatebenefratelli.",
+   "luogo": "Benevento",
+   "categoria": "cronaca",
+   "zona": "benevento",
+   "pubblicato": "2026-10-18",
+   "cosa": "Incidente tra due auto in un incrocio del Rione Ferrovia a Benevento. Le cause sono ancora da accertare.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "sciame-cusano-mutri",
+   "tipo": "notizia",
+   "titolo": "Sciame sismico tra Cusano Mutri e Gioia Sannitica: 29 scosse nella notte, la più forte di magnitudo 2.6",
+   "sintesi": "Nella notte tra venerdì 17 e sabato 18 ottobre l'INGV ha registrato 29 scosse tra Cusano Mutri, Gioia Sannitica e Faicchio, dalle 23:43 alle 5:50. Due di magnitudo 2.6, tutte a 10-22 km di profondità.",
+   "luogo": "Cusano Mutri",
+   "categoria": "meteo",
+   "zona": "telesina",
+   "pubblicato": "2026-10-18",
+   "cosa": "Uno sciame di scosse deboli ha interessato per circa sei ore la zona tra Cusano Mutri (Benevento) e Gioia Sannitica (Caserta). I dati sono dell'INGV, l'Istituto nazionale di geofisica e vulcanologia.",
+   "mese": "2026-10"
+  }
+ ]
 }
