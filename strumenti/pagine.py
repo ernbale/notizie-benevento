@@ -521,18 +521,25 @@ def html_evento(ev):
 
 
 # ---------- la testa della pagina (titolo, descrizione, anteprima, dati strutturati) ----------
+FACEBOOK = "https://www.facebook.com/notiziebenevento"
 ORG = {"@type": "NewsMediaOrganization", "@id": SITO + "/#org", "name": NOME, "url": SITO + "/",
+       "sameAs": [FACEBOOK], "publishingPrinciples": SITO + "/chi-siamo/",
        "logo": {"@type": "ImageObject", "url": SITO + "/icona-512.png", "width": 512, "height": 512},
        "areaServed": {"@type": "AdministrativeArea", "name": "Provincia di Benevento"}}
 
 
-def blocco_seo(title, descr, url, immagine, tipo="website", jsonld=None, extra="", dim=(1200, 630)):
+def titolo_google(x):
+    """Il titolo per Google (<title>): quello corto scritto apposta, se c'è; Google ne mostra circa 60 caratteri."""
+    return re.sub(r"\s+", " ", str(x.get("titolo_google") or x["titolo"])).strip()
+
+
+def blocco_seo(title, descr, url, immagine, tipo="website", jsonld=None, extra="", dim=(1200, 630), og_title=None):
     h = [f"<title>{e(title)}</title>",
          f'<meta name="description" content="{e(descr)}">',
          f'<link rel="canonical" href="{e(url)}">',
          f'<meta property="og:type" content="{tipo}">',
          f'<meta property="og:site_name" content="{NOME}">',
-         f'<meta property="og:title" content="{e(title)}">',
+         f'<meta property="og:title" content="{e(og_title or title)}">',
          f'<meta property="og:description" content="{e(descr)}">',
          f'<meta property="og:url" content="{e(url)}">',
          f'<meta property="og:image" content="{e(SITO + immagine)}">',
@@ -633,7 +640,7 @@ def main():
         coll = next((x for x in appro if n["id"] in (x.get("collegate") or [])), None)
         fonti = a_.get("fonti") if isinstance(a_.get("fonti"), list) else []
         jsonld = {"@context": "https://schema.org", "@graph": [
-            {"@type": "NewsArticle", "@id": url + "#articolo", "headline": breve(n["titolo"], 110),
+            {"@type": "NewsArticle", "@id": url + "#articolo", "headline": breve(titolo_google(n), 110),
              "description": n.get("sintesi"), "datePublished": n.get("pubblicato"), "dateModified": modificato,
              "image": ([SITO + foto_tema(n)] if foto_tema(n) else []) + [SITO + im], "inLanguage": "it-IT", "articleSection": sez, "isAccessibleForFree": True,
              "mainEntityOfPage": url, "author": {"@type": "Organization", "name": NOME, "url": SITO + "/"},
@@ -645,7 +652,8 @@ def main():
                 {"@type": "ListItem", "position": 3, "name": n["titolo"]}]}]}
         extra = (f'<meta property="article:published_time" content="{e(n.get("pubblicato"))}">\n'
                  f'<meta property="article:section" content="{e(sez)}">')
-        seo = blocco_seo(f"{n['titolo']} – {NOME}", breve(n.get("sintesi")), url, im, "article", jsonld, extra)
+        seo = blocco_seo(f"{titolo_google(n)} – {NOME}", breve(n.get("sintesi")), url, im, "article", jsonld, extra,
+                         og_title=f"{n['titolo']} – {NOME}")
         scrivi(os.path.join(sito, "notizia", n["id"], "index.html"),
                pagina(modello, seo, {"rotta": "#articolo/" + n["id"]}, html_articolo(n, coll), articolo=True))
         mappa.append((url, modificato))
@@ -654,12 +662,13 @@ def main():
         url = SITO + percorso("approfondimento", x["id"])
         im = img(x, "approfondimento")
         jsonld = {"@context": "https://schema.org", "@type": "NewsArticle", "@id": url + "#articolo",
-                  "headline": breve(x["titolo"], 110), "description": x.get("sommario"),
+                  "headline": breve(titolo_google(x), 110), "description": x.get("sommario"),
                   "datePublished": x.get("pubblicato") or x.get("aggiornato"), "dateModified": x.get("aggiornato"),
                   "image": [SITO + im], "inLanguage": "it-IT", "articleSection": "Approfondimento",
                   "mainEntityOfPage": url, "author": {"@type": "Organization", "name": NOME, "url": SITO + "/"},
                   "publisher": ORG}
-        seo = blocco_seo(f"{x['titolo']} – {NOME}", breve(x.get("sommario")), url, im, "article", jsonld)
+        seo = blocco_seo(f"{titolo_google(x)} – {NOME}", breve(x.get("sommario")), url, im, "article", jsonld,
+                         og_title=f"{x['titolo']} – {NOME}")
         scrivi(os.path.join(sito, "approfondimento", x["id"], "index.html"),
                pagina(modello, seo, {"rotta": "#approfondimento/" + x["id"]}, html_approfondimento(x, per_id), articolo=True))
         mappa.append((url, x.get("aggiornato")))
@@ -731,7 +740,7 @@ def main():
             righe.append(f'<url><loc>{SITO}{percorso("notizia", n["id"])}</loc><news:news><news:publication>'
                          f'<news:name>{NOME}</news:name><news:language>it</news:language></news:publication>'
                          f'<news:publication_date>{e(n["pubblicato"])}</news:publication_date>'
-                         f'<news:title>{e(n["titolo"])}</news:title></news:news></url>')
+                         f'<news:title>{e(titolo_google(n))}</news:title></news:news></url>')
     righe.append("</urlset>")
     scrivi(os.path.join(sito, "sitemap-notizie.xml"), "\n".join(righe) + "\n")
 

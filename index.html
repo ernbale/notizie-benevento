@@ -1930,7 +1930,7 @@
       var id = decodeURIComponent(m[2]);
       if (m[1] === "articolo") {
         var n = (dati.notizie || []).filter(function (x) { return x.id === id && x.articolo; })[0];
-        if (n) { menu.style.display = "none"; disegnaArticolo(box, n); if (!FISSA) document.title = n.titolo + " – Notizie Benevento"; window.scrollTo(0, 0); return; }
+        if (n) { menu.style.display = "none"; disegnaArticolo(box, n); if (!FISSA) document.title = (n.titolo_google || n.titolo) + " – Notizie Benevento"; window.scrollTo(0, 0); return; }
       } else {
         var ap = (dati.approfondimenti || []).filter(function (x) { return x.id === id; })[0];
         if (ap) { menu.style.display = "none"; disegnaApprofondimento(box, ap); window.scrollTo(0, 0); return; }
