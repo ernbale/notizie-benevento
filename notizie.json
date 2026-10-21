@@ -1,7 +1,504 @@
 {
- "aggiornato": "2026-10-21T14:06:00+02:00",
+ "aggiornato": "2026-10-21T16:13:00+02:00",
  "giornali_letti": 13,
  "notizie": [
+  {
+   "id": "benevento-mastella-appello-no-acquisti-panico-spostamenti",
+   "titolo": "Benevento, il sindaco Mastella ai cittadini per la crisi dei camion: niente acquisti per paura, meno spostamenti in auto",
+   "sintesi": "Il sindaco di Benevento Clemente Mastella invita i cittadini a non fare acquisti compulsivi e a ridurre gli spostamenti in auto ai casi di necessità, mentre la protesta degli autotrasportatori e la carenza di carburante creano disagi.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "immagine": "supermercato",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-21",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/21/mastella-invito-a-ragionevolezza-in-acquisti-e-spostamenti-declino-ceto-medio-e-venir-meno-degli-equilibri-sociali-sono-emergenze-istituzionali/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/invito-mastella-acquisti-spostamenti/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/sciopero-autotrasportatori-mastella-invito-ragionevolezza/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Mercoledì 21 ottobre il sindaco di Benevento Clemente Mastella ha chiesto ai cittadini di evitare gli acquisti compulsivi o dettati dal panico, perché riducono ancora la merce disponibile in un momento difficile. Lo ha scritto in una nota, dopo i disagi nella distribuzione di merci e carburante provocati dalle proteste in corso.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Mastella invita ad acquistare con ragionevolezza e a ridurre gli spostamenti in auto a quelli davvero necessari e urgenti. Spiega che come sindaco non può intervenire direttamente sulla crisi.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Il sindaco scrive anche che la protesta dell'autotrasporto è «tutt'altro che irragionevole» e che la situazione economica è difficile per l'inflazione e per l'aumento delle materie prime. Si augura che il Governo intervenga con misure urgenti da concordare in sede europea, e chiede la massima collaborazione tra le istituzioni per alleviare i disagi alle famiglie.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "L'invito del sindaco a non fare acquisti per paura e a limitare gli spostamenti in auto.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24",
+       "Cronache del Sannio"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Se il Comune di Benevento prenderà misure concrete: il sindaco dice che non ha margini di intervento diretto."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Mastella: “Invito a ragionevolezza in acquisti e spostamenti, declino ceto medio e venir meno degli equilibri sociali sono emergenze istituzionali”",
+      "url": "https://www.ntr24.tv/2026/10/21/mastella-invito-a-ragionevolezza-in-acquisti-e-spostamenti-declino-ceto-medio-e-venir-meno-degli-equilibri-sociali-sono-emergenze-istituzionali/",
+      "data": "21 ott"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "L’invito di Mastella: “No ad acquisti compulsivi e spostamenti immotivati”",
+      "url": "https://www.anteprima24.it/benevento/invito-mastella-acquisti-spostamenti/",
+      "data": "21 ott"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Sciopero autotrasportatori, Mastella: “Invito a ragionevolezza in acquisti e spostamenti”",
+      "url": "https://www.cronachedelsannio.it/sannionews24/sciopero-autotrasportatori-mastella-invito-ragionevolezza/",
+      "data": "21 ott"
+     }
+    ]
+   },
+   "foto": "supermercato-2"
+  },
+  {
+   "id": "montesarchio-scuola-foscolo-chiusa-22-ottobre",
+   "titolo": "Montesarchio, giovedì 22 ottobre chiusa la scuola media «Ugo Foscolo» per la sanificazione dopo la presenza di topi",
+   "sintesi": "Il sindaco di Montesarchio ha chiuso per giovedì 22 ottobre il plesso della scuola media «Ugo Foscolo»: la dirigente ha segnalato topi e loro escrementi, e i locali vanno sanificati.",
+   "categoria": "altro",
+   "zona": "caudina",
+   "immagine": "scuola",
+   "luogo": "Montesarchio",
+   "pubblicato": "2026-10-21",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "in_vigore_fino": "2026-10-22",
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/21/montesarchio-topi-nella-scuola-ugo-foscolo-giovedi-plesso-chiuso-per-la-sanificazione/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il plesso della scuola secondaria di primo grado «Ugo Foscolo» di Montesarchio resta chiuso giovedì 22 ottobre per una sanificazione. Lo ha deciso il sindaco Carmelo Sandomenico con un'ordinanza.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "La chiusura è partita dalla segnalazione della dirigente scolastica dell'Istituto comprensivo «Ilaria Alpi», che ha riferito della presenza di roditori e di escrementi riconducibili ai topi dentro la struttura. Il Comune ha ritenuto necessario chiudere il plesso per ripulire i locali interessati e l'area intorno.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Se le lezioni riprendono venerdì 23 ottobre: la notizia parla solo della chiusura di giovedì.",
+     "In quali locali sono stati trovati i topi."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Montesarchio, topi nella scuola “Ugo Foscolo”: giovedì plesso chiuso per la sanificazione",
+      "url": "https://www.ntr24.tv/2026/10/21/montesarchio-topi-nella-scuola-ugo-foscolo-giovedi-plesso-chiuso-per-la-sanificazione/",
+      "data": "21 ott"
+     }
+    ]
+   },
+   "foto": "scuola"
+  },
+  {
+   "id": "benevento-via-capodimonte-auto-fuori-strada-62enne",
+   "titolo": "Benevento, via Capodimonte: auto fuori strada abbatte tre centraline, ferita una donna di 62 anni",
+   "sintesi": "Nel primo pomeriggio di mercoledì 21 ottobre una donna di 62 anni ha perso il controllo della sua Citroën C1 sulla provinciale tra Apice e Benevento, in via Capodimonte. Ha abbattuto tre centraline di telefono e luce ed è stata portata al San Pio.",
+   "categoria": "cronaca",
+   "zona": "benevento",
+   "luogo": "Benevento, via Capodimonte",
+   "pubblicato": "2026-10-21",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/21/auto-fuori-strada-alle-porte-di-benevento-ferita-una-62enne/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/21/benevento-incidente-in-via-capodimonte-62enne-finisce-fuori-strada-trasportata-al-san-pio/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/centraline-telefono-elettricita-incidente/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Nel primo pomeriggio di mercoledì 21 ottobre una donna di 62 anni è finita fuori strada con la sua Citroën C1 in via Capodimonte, a Benevento, lungo la strada provinciale che collega Apice a Benevento. Stava andando verso Benevento.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24",
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Secondo Anteprima24 l'incidente è avvenuto a circa un chilometro dalla casa circondariale (il carcere); BeneventoNews24 indica il civico 28. L'auto ha abbattuto tre centraline che servono le reti del telefono e della luce.",
+      "fonti": [
+       "Anteprima24",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "La donna è rimasta ferita ed è stata portata in ambulanza all'ospedale San Pio di Benevento. Sul posto sono intervenuti il 118, la Polizia Municipale e i Vigili del Fuoco, che hanno messo in sicurezza la zona. Le cause dell'incidente sono ancora da accertare.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24",
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Donna di 62 anni, auto fuori strada in via Capodimonte lungo la provinciale Apice-Benevento, trasportata al San Pio; cause in accertamento.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24",
+       "Anteprima24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Le condizioni della donna: i giornali scrivono solo che ha riportato ferite.",
+     "Se le centraline abbattute hanno lasciato senza telefono o luce qualche zona."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Auto fuori strada alle porte di Benevento: ferita una 62enne",
+      "url": "https://www.ntr24.tv/2026/10/21/auto-fuori-strada-alle-porte-di-benevento-ferita-una-62enne/",
+      "data": "21 ott"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Benevento| Incidente in via Capodimonte, 62enne fuori strada: trasportata al San Pio",
+      "url": "https://www.beneventonews24.it/2026/10/21/benevento-incidente-in-via-capodimonte-62enne-finisce-fuori-strada-trasportata-al-san-pio/",
+      "data": "21 ott"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Auto abbatte le centraline telefoniche ed elettriche: ferita una donna",
+      "url": "https://www.anteprima24.it/benevento/centraline-telefono-elettricita-incidente/",
+      "data": "21 ott"
+     }
+    ]
+   }
+  },
+  {
+   "id": "montesarchio-hashish-34-grammi-arresto",
+   "titolo": "Montesarchio, i Carabinieri arrestano un uomo con 34 grammi di hashish in casa",
+   "sintesi": "I Carabinieri di Montesarchio hanno arrestato un uomo trovato in casa con 34 grammi di hashish e il materiale per pesarlo e confezionarlo. È ai domiciliari in attesa delle decisioni della magistratura.",
+   "categoria": "cronaca",
+   "zona": "caudina",
+   "luogo": "Montesarchio",
+   "pubblicato": "2026-10-21",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/21/montesarchio-arrestato-con-34-grammi-di-hashish-sequestrato-anche-materiale-per-il-confezionamento/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/hashish-materiale-confezionamento-arresto-montesarchio/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/21/montesarchio-hashish-e-materiale-per-il-confezionamento-in-casa-arrestato-34enne/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "I Carabinieri del Nucleo Operativo e Radiomobile della Compagnia di Montesarchio hanno arrestato un uomo trovato in possesso di 34 grammi di hashish e del materiale per pesare e confezionare la droga. L'arresto è scattato dopo una perquisizione nella sua abitazione, a Montesarchio.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "La sua posizione è ora al vaglio della Procura di Benevento: per ora è ritenuto, allo stato degli atti, responsabile di detenzione di droga ai fini di spaccio. Dopo l'arresto è stato messo a casa sua, ai domiciliari, in attesa delle decisioni dell'autorità giudiziaria. Come ricordano i Carabinieri, è da ritenere presunto innocente fino a una sentenza definitiva.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Un altro sequestro di droga sull'asse Napoli-Montesarchio, di oltre un chilo e mezzo tra hashish e marijuana, è raccontato in una notizia a parte.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "34 grammi di hashish e materiale per il confezionamento trovati nella perquisizione; arrestato, in attesa della Procura, a casa sua.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "BeneventoNews24 titola «arrestato 34enne», mentre gli altri giornali non scrivono l'età dell'uomo: il «34» potrebbe essere una confusione con i 34 grammi di droga. L'età non è confermata.",
+      "fonti": [
+       "BeneventoNews24",
+       "NTR24"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "Il nome e l'età dell'arrestato: i Carabinieri non li hanno comunicati."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Montesarchio, arrestato con 34 grammi di hashish: sequestrato anche materiale per il confezionamento",
+      "url": "https://www.ntr24.tv/2026/10/21/montesarchio-arrestato-con-34-grammi-di-hashish-sequestrato-anche-materiale-per-il-confezionamento/",
+      "data": "21 ott"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Hashish e materiale per il confezionamento in casa: un arresto a Montesarchio",
+      "url": "https://www.cronachedelsannio.it/sannionews24/hashish-materiale-confezionamento-arresto-montesarchio/",
+      "data": "21 ott"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Montesarchio, hashish e materiale per il confezionamento in casa: arrestato 34enne",
+      "url": "https://www.beneventonews24.it/2026/10/21/montesarchio-hashish-e-materiale-per-il-confezionamento-in-casa-arrestato-34enne/",
+      "data": "21 ott"
+     }
+    ]
+   }
+  },
+  {
+   "id": "sannio-acque-convenzione-eic-servizio-idrico",
+   "titolo": "Sannio, firmata la convenzione: il servizio idrico di tutti i 78 Comuni passa a Sannio Acque per 27 anni",
+   "sintesi": "Mercoledì 21 ottobre a Napoli l'Ente Idrico Campano ha firmato con Sannio Acque la convenzione per affidarle il servizio idrico dei 78 Comuni della provincia di Benevento. Sono previsti oltre 265 milioni di investimenti in 27 anni.",
+   "categoria": "altro",
+   "zona": "provincia",
+   "immagine": "acqua",
+   "luogo": "Napoli, Sannio",
+   "pubblicato": "2026-10-21",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/21/servizio-idrico-integrato-firmata-la-convenzione-tra-eic-e-sannio-acque/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/sannio-acque-firmata-convenzione-eic-investimenti/"
+    },
+    {
+     "nome": "Infosannio",
+     "url": "https://www.infosannionews.it/attualita/2026/servizio-idrico-integrato-firmata-la-convenzione-tra-eic-e-sannio-acque.html"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Mercoledì 21 ottobre, nella sede centrale dell'Ente Idrico Campano (EIC) a Napoli, è stata firmata la convenzione che affida a Sannio Acque il servizio idrico integrato (acquedotto, fognature e depurazione) nei Comuni della provincia di Benevento. L'EIC è l'ente che governa il servizio idrico in Campania.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "L'affidamento riguarda 78 Comuni, circa 272.000 abitanti e 117.000 utenze, su un territorio di oltre 2.000 chilometri quadrati. La rete comprende oltre 4.200 chilometri di tubi dell'acqua e 1.300 chilometri di fognature. Nei 27 anni di gestione sono previsti investimenti per oltre 265 milioni di euro, per rimodernare le reti, risolvere i problemi e migliorare via via il servizio.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Per il presidente dell'EIC, Luca Mascolo, l'affidamento serve a superare la frammentazione delle gestioni di oggi e a creare un modello unico. Il sindaco di Benevento Clemente Mastella parla di «una svolta cruciale» e assicura che «l'acqua resta pubblica, perché pubblica è la maggioranza in Sannio Acque»; la partnership con il privato, dice, garantisce sostenibilità e solidità. Il presidente di Sannio Acque, Pompilio Forgione, parla di «una responsabilità»: gestire bene, investire nelle reti e migliorare il servizio.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Dalle fonti lette non risulta da quando il nuovo gestore prenderà in carico il servizio nei singoli Comuni.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Firma a Napoli il 21 ottobre, 78 Comuni, circa 272.000 abitanti, 27 anni di gestione, oltre 265 milioni di investimenti.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Da quando Sannio Acque gestirà il servizio nei singoli Comuni e cosa cambia per le bollette.",
+     "Cosa succede agli attuali gestori, come Alto Calore Servizi."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Servizio idrico integrato, firmata la convenzione tra EIC e Sannio Acque",
+      "url": "https://www.ntr24.tv/2026/10/21/servizio-idrico-integrato-firmata-la-convenzione-tra-eic-e-sannio-acque/",
+      "data": "21 ott"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Sannio Acque, firmata convenzione con Eic: investimenti per oltre 265 milioni in 27 anni",
+      "url": "https://www.cronachedelsannio.it/sannionews24/sannio-acque-firmata-convenzione-eic-investimenti/",
+      "data": "21 ott"
+     },
+     {
+      "nome": "Infosannio",
+      "titolo": "Servizio idrico integrato, firmata la convenzione tra EIC e Sannio Acque",
+      "url": "https://www.infosannionews.it/attualita/2026/servizio-idrico-integrato-firmata-la-convenzione-tra-eic-e-sannio-acque.html",
+      "data": "21 ott"
+     }
+    ]
+   },
+   "foto": "acqua-2"
+  },
+  {
+   "id": "unisannio-lezioni-a-distanza-22-ottobre",
+   "titolo": "Benevento, Unisannio: da giovedì 22 ottobre lezioni a distanza per i disagi del carburante",
+   "sintesi": "Da giovedì 22 ottobre e fino a nuova comunicazione l'Università del Sannio tiene le lezioni a distanza, per le difficoltà di spostamento dovute alla protesta degli autotrasportatori e alla mancanza di carburante. Gli esami e le lauree restano in presenza.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "immagine": "universita",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-21",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/21/unisannio-da-giovedi-lezioni-a-distanza-per-i-disagi-legati-allapprovvigionamento-di-carburante/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/unisannio-lezioni-a-distanza-per-i-disagi-legati-al-carburante/"
+    },
+    {
+     "nome": "Benevento Giornale",
+     "url": "https://www.beneventogiornale.com/2026/10/21/unisannio-lezioni-a-distanza-dal-22-ottobre-per-i-disagi-legati-allapprovvigionamento-di-carburante/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Da giovedì 22 ottobre l'Università del Sannio (Unisannio) fa le lezioni a distanza, al computer. Lo ha deciso la rettrice Maria Moreno per limitare i disagi legati alla protesta degli autotrasportatori e alle difficoltà a trovare carburante, che possono rendere difficile arrivare alle sedi dell'università. Le lezioni e le altre attività in aula si fanno a distanza fino a nuova comunicazione, agli orari già previsti dai calendari.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24",
+       "Benevento Giornale"
+      ]
+     },
+     {
+      "testo": "Gli esami già fissati si svolgono invece regolarmente in presenza, compatibilmente con l'organizzazione e con la disponibilità dei docenti. Per chi non riesce a raggiungere le sedi sono previste, a breve distanza di tempo, sedute straordinarie di recupero: gli studenti devono motivare la richiesta e riceveranno le date.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Laboratori, tirocini e le altre attività che richiedono di essere sul posto le organizzano i presidenti dei corsi di studio, caso per caso. Le sedute di laurea restano in presenza. Anche i test di orientamento TOLC, gli eventi e le conferenze per ora sono confermati. L'università dice che seguirà l'evolversi della situazione e darà altre indicazioni.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Lezioni a distanza da giovedì 22 ottobre 2026 e fino a nuova comunicazione; esami e sedute di laurea in presenza.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Fino a quando durerà la didattica a distanza: l'università parla solo di «nuova comunicazione»."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Unisannio, da giovedì lezioni a distanza per i disagi legati all’approvvigionamento di carburante",
+      "url": "https://www.ntr24.tv/2026/10/21/unisannio-da-giovedi-lezioni-a-distanza-per-i-disagi-legati-allapprovvigionamento-di-carburante/",
+      "data": "21 ott"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Unisannio, lezioni a distanza per i disagi legati al carburante",
+      "url": "https://www.anteprima24.it/benevento/unisannio-lezioni-a-distanza-per-i-disagi-legati-al-carburante/",
+      "data": "21 ott"
+     },
+     {
+      "nome": "Benevento Giornale",
+      "titolo": "UNISANNIO, lezioni a distanza dal 22 ottobre per i disagi legati all’approvvigionamento di carburante",
+      "url": "https://www.beneventogiornale.com/2026/10/21/unisannio-lezioni-a-distanza-dal-22-ottobre-per-i-disagi-legati-allapprovvigionamento-di-carburante/",
+      "data": "21 ott"
+     }
+    ]
+   },
+   "foto": "universita"
+  },
   {
    "id": "benevento-via-masseria-cancelleria-asfalto-22-ottobre",
    "titolo": "Benevento, da giovedì 22 ottobre senso unico alternato in via Masseria Cancelleria per rifare l'asfalto; poi lavori in via Cancelleria",
@@ -466,7 +963,7 @@
    "categoria": "altro",
    "zona": "provincia",
    "luogo": "Sannio",
-   "pubblicato": "2026-10-21T14:06:00+02:00",
+   "pubblicato": "2026-10-21T16:13:00+02:00",
    "stato": "ufficiale",
    "rilevante": false,
    "fonti": [
@@ -489,6 +986,10 @@
     {
      "nome": "Comune di San Giorgio del Sannio",
      "url": "https://www.comune.sangiorgiodelsannio.bn.it/novita/avvisi/novita_161.html"
+    },
+    {
+     "nome": "Comune di Pietrelcina",
+     "url": "https://www.comune.pietrelcina.bn.it/novita/avvisi/novita_376.html"
     }
    ],
    "articolo": {
@@ -507,10 +1008,11 @@
       ]
      },
      {
-      "testo": "Ad Apice è chiusa dal 20 ottobre l'isola ecologica, cioè il centro dove i cittadini portano ingombranti e rifiuti speciali. Lo ha comunicato il Comune: il Consorzio Campale Stabile, che gestisce la raccolta e il centro, ha scritto che i blocchi stradali e le difficoltà a trovare carburante gli impediscono di svuotare i cassoni e di portare i materiali negli impianti. A Cusano Mutri il Comune ha pubblicato un avviso su possibili disservizi nella raccolta e nel trasporto dei rifiuti per «forza maggiore».",
+      "testo": "Ad Apice è chiusa dal 20 ottobre l'isola ecologica, cioè il centro dove i cittadini portano ingombranti e rifiuti speciali. Lo ha comunicato il Comune: il Consorzio Campale Stabile, che gestisce la raccolta e il centro, ha scritto che i blocchi stradali e le difficoltà a trovare carburante gli impediscono di svuotare i cassoni e di portare i materiali negli impianti. A Cusano Mutri il Comune ha pubblicato un avviso su possibili disservizi nella raccolta e nel trasporto dei rifiuti per «forza maggiore». A Pietrelcina il Comune ha chiuso al pubblico il centro di raccolta comunale, da subito e fino a nuovo avviso, perché lo sciopero e i blocchi delle strade principali impediscono di raggiungere gli impianti dove si smaltiscono i rifiuti.",
       "fonti": [
        "Comune di Apice",
-       "Comune di Cusano Mutri"
+       "Comune di Cusano Mutri",
+       "Comune di Pietrelcina"
       ]
      },
      {
@@ -542,6 +1044,13 @@
       "fonti": [
        "Comune di San Giorgio del Sannio",
        "Comune di Sant'Agata de' Goti"
+      ]
+     },
+     {
+      "data": "21 ottobre",
+      "fatto": "Il Comune di Pietrelcina chiude il centro di raccolta comunale fino a nuovo avviso.",
+      "fonti": [
+       "Comune di Pietrelcina"
       ]
      }
     ],
@@ -581,6 +1090,12 @@
       "nome": "Comune di San Giorgio del Sannio",
       "titolo": "Avviso disservizio raccolta rifiuti 21.10.26",
       "url": "https://www.comune.sangiorgiodelsannio.bn.it/novita/avvisi/novita_161.html",
+      "data": "21 ott"
+     },
+     {
+      "nome": "Comune di Pietrelcina",
+      "titolo": "Chiusura del Centro di Raccolta Comunale - Avviso",
+      "url": "https://www.comune.pietrelcina.bn.it/novita/avvisi/novita_376.html",
       "data": "21 ott"
      }
     ]
@@ -1171,12 +1686,12 @@
   {
    "id": "allerta-arancione-sannio-21-ottobre",
    "titolo": "Sannio, allerta arancione per maltempo mercoledì 21 ottobre: scuole chiuse a Benevento e in molti Comuni, chiusi anche parchi e cimiteri in diversi centri",
-   "sintesi": "La Protezione civile ha confermato l'allerta arancione per mercoledì 21 ottobre in tutte e tre le zone del Sannio: rischio frane e temporali, soprattutto al mattino. Scuole chiuse a Benevento e in molti Comuni; a Benevento, Montesarchio, Sant'Agata de' Goti, Pietrelcina e Frasso Telesino chiusi anche parchi o cimiteri. Per giovedì 22 ottobre la Regione ha poi emesso un'allerta gialla, dalle 00 alle 16, su tutta la Campania.",
+   "sintesi": "La Protezione civile ha confermato l'allerta arancione per mercoledì 21 ottobre in tutte e tre le zone del Sannio: rischio frane e temporali, soprattutto al mattino. Scuole chiuse a Benevento e in molti Comuni; a Benevento, Montesarchio, Sant'Agata de' Goti, Pietrelcina e Frasso Telesino chiusi anche parchi o cimiteri. Per giovedì 22 ottobre l'allerta scende a gialla, dalle 00 alle 16, su tutta la Campania e nelle tre zone del Sannio.",
    "categoria": "meteo",
    "zona": "provincia",
    "immagine": "pioggia",
    "luogo": "Sannio",
-   "pubblicato": "2026-10-21T14:06:00+02:00",
+   "pubblicato": "2026-10-21T16:13:00+02:00",
    "stato": "ufficiale",
    "rilevante": true,
    "in_vigore_fino": "2026-10-22",
@@ -1240,6 +1755,10 @@
     {
      "nome": "NTR24 (allerta 22)",
      "url": "https://www.ntr24.tv/2026/10/21/sannio-allerta-meteo-gialla-fino-a-giovedi-pomeriggio-piogge-in-diminuzione-gia-dal-mattino/"
+    },
+    {
+     "nome": "Protezione civile (bollettino 21/10)",
+     "url": "https://notiziebenevento.it/meteo.json"
     }
    ],
    "articolo": {
@@ -1304,6 +1823,13 @@
       "fatto": "La Regione Campania emette l'allerta gialla per giovedì 22 ottobre, dalle 00 alle 16, su tutta la regione.",
       "fonti": [
        "NTR24 (allerta 22)"
+      ]
+     },
+     {
+      "data": "21 ottobre, 14:36",
+      "fatto": "Esce il bollettino della Protezione civile nazionale per il 22 ottobre: gialla per rischio frane nelle tre zone del Sannio.",
+      "fonti": [
+       "Protezione civile (bollettino 21/10)"
       ]
      }
     ],
@@ -1371,7 +1897,7 @@
     ],
     "non_si_sa": [
      "Cosa chiudono, oltre alle scuole, i Comuni elencati solo dai giornali (Airola, Paolisi, Arpaia, Telese Terme, Limatola e gli altri): parchi, cimiteri e impianti sportivi non sono precisati.",
-     "Se giovedì 22 ottobre ci saranno chiusure di scuole o parchi: al momento della lettura non ho trovato ordinanze dei Comuni per quel giorno."
+     "Se giovedì 22 ottobre ci saranno chiusure di scuole o parchi: nei siti dei Comuni letti alle 16 non ci sono ordinanze di chiusura per quel giorno, tranne la scuola «Foscolo» di Montesarchio chiusa per la sanificazione (non per l'allerta)."
     ],
     "fonti": [
      {
@@ -1463,6 +1989,12 @@
       "titolo": "Sannio, allerta meteo gialla fino a giovedì pomeriggio. Piogge in diminuzione già dal mattino",
       "url": "https://www.ntr24.tv/2026/10/21/sannio-allerta-meteo-gialla-fino-a-giovedi-pomeriggio-piogge-in-diminuzione-gia-dal-mattino/",
       "data": "21 ott"
+     },
+     {
+      "nome": "Protezione civile (bollettino 21/10)",
+      "titolo": "Bollettino del 21 ottobre 2026 ore 14:36 (dati ripresi dal sito meteo di Notizie Benevento)",
+      "url": "https://notiziebenevento.it/meteo.json",
+      "data": "21 ott, 14:36"
      }
     ],
     "racconto": [
@@ -1517,10 +2049,12 @@
       ]
      },
      {
-      "testo": "Giovedì 22 ottobre l'allerta scende a gialla. La Protezione civile della Regione Campania ha emesso un avviso giallo valido dalle 00 alle 16 su tutta la regione. Sono previste piogge isolate, anche a rovescio o temporale, che nelle zone 2 («Alto Volturno e Matese») e 4 («Alta Irpinia e Sannio») dovrebbero finire in mattinata. Il rischio indicato è localizzato: acqua che scorre sulle strade, tombini che rigurgitano, allagamenti nelle zone basse e piccoli corsi d'acqua che si alzano. Il bollettino nazionale del 22 non era ancora uscito al momento di scrivere. Meteoalarm dà per il 22 solo allerta gialla per il vento.",
+      "testo": "Giovedì 22 ottobre l'allerta scende a gialla. Il bollettino nazionale della Protezione civile delle 14:36 di mercoledì 21 dà giallo, per il rischio frane, in tutte e tre le zone del Sannio. La Protezione civile della Regione Campania ha emesso un avviso giallo valido dalle 00 alle 16 su tutta la regione: piogge isolate, anche a rovescio o temporale, che nelle zone 2 («Alto Volturno e Matese») e 4 («Alta Irpinia e Sannio») dovrebbero finire in mattinata. Il rischio indicato è localizzato: acqua che scorre sulle strade, tombini che rigurgitano, allagamenti nelle zone basse e piccoli corsi d'acqua che si alzano. Meteoalarm dà per il 22 solo allerta gialla per il vento, dalle 02:00 alle 19:59. Il Comune di Sant'Agata de' Goti ha pubblicato l'avviso dell'allerta gialla e non risultano chiusure per giovedì.",
       "fonti": [
        "NTR24 (allerta 22)",
-       "Meteoalarm"
+       "Meteoalarm",
+       "Protezione civile (bollettino 21/10)",
+       "Comune di Sant'Agata de' Goti"
       ]
      }
     ]
@@ -4310,7 +4844,7 @@
    "titolo": "Caro gasolio, la protesta di tir e agricoltori nel Sannio: dove sono i blocchi, cosa manca e cosa succede adesso",
    "sommario": "Da lunedì 19 ottobre gli autotrasportatori fermano i camion sull'Appia a Tufara Valle e a Castel del Lago; ci sono stati blocchi anche sulla Telesina a San Salvatore Telesino. Nei supermercati mancano i prodotti freschi e alcuni distributori hanno finito il gasolio. Da giovedì 22 si aggiungono gli agricoltori. Oggi, 20 ottobre, il ministro Salvini incontra a Milano associazioni e gruppi di protesta, anche della Campania.",
    "luogo": "Provincia di Benevento",
-   "aggiornato": "2026-10-21T14:06:00+02:00",
+   "aggiornato": "2026-10-21T16:13:00+02:00",
    "collegate": [
     "tir-appia-telesina",
     "scaffali-vuoti",
@@ -4318,7 +4852,9 @@
     "mozione-caro-carburanti",
     "rummo-produzione-ferma",
     "asia-ecocentro-chiuso-protesta",
-    "rifiuti-blocco-tir-apice-morcone-cusano-sant-angelo-a-cupolo"
+    "rifiuti-blocco-tir-apice-morcone-cusano-sant-angelo-a-cupolo",
+    "unisannio-lezioni-a-distanza-22-ottobre",
+    "benevento-mastella-appello-no-acquisti-panico-spostamenti"
    ],
    "in_breve": [
     {
@@ -4690,6 +5226,15 @@
       "Comune di Sant'Agata de' Goti",
       "Comune di San Giorgio del Sannio"
      ]
+    },
+    {
+     "data": "21 ottobre",
+     "fatto": "L'Università del Sannio annuncia lezioni a distanza da giovedì 22 ottobre per le difficoltà di spostamento e di carburante. Il sindaco di Benevento Mastella invita a non fare acquisti per paura e a ridurre gli spostamenti in auto; il Comune di Pietrelcina chiude il centro di raccolta rifiuti.",
+     "fonti": [
+      "NTR24 (Unisannio)",
+      "NTR24 (Mastella)",
+      "Comune di Pietrelcina"
+     ]
     }
    ],
    "non_si_sa": [
@@ -4864,6 +5409,24 @@
      "nome": "Comune di San Giorgio del Sannio",
      "titolo": "Avviso disservizio raccolta rifiuti 21.10.26",
      "url": "https://www.comune.sangiorgiodelsannio.bn.it/novita/avvisi/novita_161.html",
+     "data": "21 ott"
+    },
+    {
+     "nome": "NTR24 (Unisannio)",
+     "titolo": "Unisannio, da giovedì lezioni a distanza per i disagi legati all’approvvigionamento di carburante",
+     "url": "https://www.ntr24.tv/2026/10/21/unisannio-da-giovedi-lezioni-a-distanza-per-i-disagi-legati-allapprovvigionamento-di-carburante/",
+     "data": "21 ott"
+    },
+    {
+     "nome": "NTR24 (Mastella)",
+     "titolo": "Mastella: “Invito a ragionevolezza in acquisti e spostamenti, declino ceto medio e venir meno degli equilibri sociali sono emergenze istituzionali”",
+     "url": "https://www.ntr24.tv/2026/10/21/mastella-invito-a-ragionevolezza-in-acquisti-e-spostamenti-declino-ceto-medio-e-venir-meno-degli-equilibri-sociali-sono-emergenze-istituzionali/",
+     "data": "21 ott"
+    },
+    {
+     "nome": "Comune di Pietrelcina",
+     "titolo": "Chiusura del Centro di Raccolta Comunale - Avviso",
+     "url": "https://www.comune.pietrelcina.bn.it/novita/avvisi/novita_376.html",
      "data": "21 ott"
     }
    ],
