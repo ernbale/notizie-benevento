@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-20T20:05:00+02:00",
+ "aggiornato": "2026-10-21T06:05:00+02:00",
  "giornali_letti": 15,
  "notizie": [
   {
@@ -656,13 +656,13 @@
   },
   {
    "id": "asia-ecocentro-chiuso-protesta",
-   "titolo": "Benevento, ecocentro di Margiacca chiuso: i mezzi dell'Asia sono bloccati dalla protesta degli autotrasportatori, possibili disservizi nella raccolta",
-   "sintesi": "Da oggi, 20 ottobre, l'ecocentro comunale di Margiacca è chiuso al pubblico. I mezzi pesanti dell'Asia non possono circolare per i blocchi e non riescono a scaricare i rifiuti raccolti. L'azienda avverte che potrebbero esserci disservizi anche nella raccolta.",
+   "titolo": "Benevento, protesta dei camion: l'Asia chiude l'ecocentro di Margiacca e sospende dal 21 ottobre i cassonetti dei tessili e il ritiro degli ingombranti",
+   "sintesi": "I mezzi dell'Asia, la società dei rifiuti di Benevento, restano bloccati dalla protesta degli autotrasportatori e non riescono a scaricare. L'ecocentro di Margiacca è chiuso dal 20 ottobre; dal 21 si fermano anche la raccolta nei contenitori dei tessili e il ritiro a domicilio degli ingombranti.",
    "categoria": "altro",
    "zona": "benevento",
    "immagine": "rifiuti",
    "luogo": "Benevento",
-   "pubblicato": "2026-10-20T10:18:00+02:00",
+   "pubblicato": "2026-10-20T20:00:00+02:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
@@ -675,8 +675,24 @@
      "url": "https://www.anteprima24.it/benevento/protesta-autotrasportatori-mezzi-asia-bloccati-raccolta-dei-rifiuti-a-rischio/"
     },
     {
-     "nome": "Cronache del Sannio",
-     "url": "https://www.cronachedelsannio.it/sannionews24/protesta-autotrasportatori-mezzi-asia-bloccati-chiuso-ecocentro/"
+     "nome": "Fremondoweb",
+     "url": "https://www.fremondoweb.com/notizie-sannio/protesta-autotrasportatori-asia-sospende-a-benevento-il-conferimento-dei-tessili-e-il-ritiro-ingombranti/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/441613/protesta-autotrasportatori-stop-conferimento-rifiuti-tessili-e-ingombranti.shtml"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/20/proteste-autotrasportatori-stop-a-conferimento-rifiuti-tessili-e-ritiro-ingombranti/"
+    },
+    {
+     "nome": "Infosannio",
+     "url": "https://www.infosannionews.it/attualita/2026/protesta-autotrasportatori-stop-a-conferimento-rifiuti-tessili-e-ritiro-ingombranti-le-ragioni-del-rinvio.html"
+    },
+    {
+     "nome": "Lab TV",
+     "url": "https://www.labtv.net/attualita/2026/10/20/protesta-autotrasportatori-stop-a-conferimento-rifiuti-tessili-e-ingombranti/"
     }
    ],
    "articolo": {
@@ -684,26 +700,46 @@
     "cronologia": [
      {
       "data": "20 ottobre",
-      "fatto": "L'Asia comunica la chiusura al pubblico dell'ecocentro di Margiacca «a partire da oggi» e possibili disservizi nella raccolta.",
+      "fatto": "L'Asia chiude al pubblico l'ecocentro di Margiacca e avverte di possibili disservizi nella raccolta.",
       "fonti": [
        "NTR24",
        "Anteprima24"
+      ]
+     },
+     {
+      "data": "21 ottobre",
+      "fatto": "Si fermano il conferimento dei tessili nei contenitori stradali e il ritiro a domicilio degli ingombranti.",
+      "fonti": [
+       "Fremondoweb",
+       "Ottopagine",
+       "BeneventoNews24",
+       "Infosannio"
       ]
      }
     ],
     "concordano": [
      {
-      "testo": "Nota dell'Asia: mezzi bloccati all'ecocentro di Margiacca, ecocentro chiuso, possibili disservizi nella raccolta.",
+      "testo": "Mezzi dell'Asia bloccati dalla protesta degli autotrasportatori, ecocentro di Margiacca chiuso, possibili disservizi nella raccolta.",
       "fonti": [
        "NTR24",
        "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Dal 21 ottobre stop temporaneo ai tessili nei contenitori stradali e al ritiro a domicilio degli ingombranti.",
+      "fonti": [
+       "Fremondoweb",
+       "Ottopagine",
+       "BeneventoNews24",
+       "Infosannio",
+       "Lab TV"
       ]
      }
     ],
     "divergono": [],
     "non_si_sa": [
-     "Per quanti giorni resterà chiuso l'ecocentro.",
-     "Se e dove la raccolta dei rifiuti salterà."
+     "Per quanti giorni dureranno le sospensioni, che dipendono dalla fine dei blocchi.",
+     "Se anche la raccolta ordinaria dei rifiuti salterà."
     ],
     "fonti": [
      {
@@ -717,6 +753,68 @@
       "titolo": "Protesta autotrasportatori, mezzi Asia bloccati: raccolta dei rifiuti a rischio",
       "url": "https://www.anteprima24.it/benevento/protesta-autotrasportatori-mezzi-asia-bloccati-raccolta-dei-rifiuti-a-rischio/",
       "data": "20 ott, 10:04"
+     },
+     {
+      "nome": "Fremondoweb",
+      "titolo": "Protesta autotrasportatori, ASIA sospende a Benevento il conferimento dei tessili e il ritiro ingombranti",
+      "url": "https://www.fremondoweb.com/notizie-sannio/protesta-autotrasportatori-asia-sospende-a-benevento-il-conferimento-dei-tessili-e-il-ritiro-ingombranti/",
+      "data": "20 ott"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Protesta autotrasportatori: stop conferimento rifiuti tessili e ingombranti",
+      "url": "https://www.ottopagine.it/bn/attualita/441613/protesta-autotrasportatori-stop-conferimento-rifiuti-tessili-e-ingombranti.shtml",
+      "data": "20 ott"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Proteste autotrasportatori, stop a conferimento rifiuti tessili e ritiro ingombranti",
+      "url": "https://www.beneventonews24.it/2026/10/20/proteste-autotrasportatori-stop-a-conferimento-rifiuti-tessili-e-ritiro-ingombranti/",
+      "data": "20 ott"
+     },
+     {
+      "nome": "Infosannio",
+      "titolo": "Protesta autotrasportatori, stop a conferimento rifiuti tessili e ritiro ingombranti, le ragioni del rinvio",
+      "url": "https://www.infosannionews.it/attualita/2026/protesta-autotrasportatori-stop-a-conferimento-rifiuti-tessili-e-ritiro-ingombranti-le-ragioni-del-rinvio.html",
+      "data": "20 ott"
+     },
+     {
+      "nome": "Lab TV",
+      "titolo": "Protesta autotrasportatori, stop a conferimento rifiuti tessili e ingombranti",
+      "url": "https://www.labtv.net/attualita/2026/10/20/protesta-autotrasportatori-stop-a-conferimento-rifiuti-tessili-e-ingombranti/",
+      "data": "20 ott"
+     }
+    ],
+    "racconto": [
+     {
+      "testo": "Il blocco dei camion in Campania ha messo in difficoltà la raccolta dei rifiuti a Benevento. I mezzi pesanti dell'Asia, la società che si occupa dei rifiuti in città, non possono circolare e non arrivano agli impianti dove scaricare quello che raccolgono.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24",
+       "Fremondoweb"
+      ]
+     },
+     {
+      "testo": "Per questo da martedì 20 ottobre l'ecocentro comunale di Margiacca, dove i cittadini portano i rifiuti ingombranti, è chiuso al pubblico. L'Asia avverte che potrebbero esserci disagi anche nella raccolta e chiede collaborazione ai cittadini.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Dopo un incontro in Prefettura, l'Asia ha deciso altre misure temporanee. Da mercoledì 21 ottobre sospende il conferimento dei rifiuti tessili (vestiti e simili) nei contenitori che stanno sulla strada e il ritiro a domicilio degli ingombranti.",
+      "fonti": [
+       "Fremondoweb",
+       "Ottopagine",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Chi aveva già prenotato il ritiro di un ingombrante sarà chiamato in queste ore dagli operatori del call center. Appena i mezzi pesanti potranno circolare di nuovo, i ritiri saranno fatti seguendo l'ordine delle prenotazioni.",
+      "fonti": [
+       "Fremondoweb",
+       "Infosannio"
+      ]
      }
     ]
    },
@@ -950,12 +1048,12 @@
   },
   {
    "id": "pago-veiano-lite-ferito-marito",
-   "titolo": "Pago Veiano, lite tra marito e moglie: uomo ferito all'addome, la donna è stata fermata dai Carabinieri",
-   "sintesi": "Dopo una lite in casa a Pago Veiano un uomo di circa 70 anni è stato ferito ed è ricoverato al San Pio di Benevento, dove è stato operato. La moglie, una 55enne, è stata fermata dai Carabinieri; per Ottopagine e BeneventoNews24 è in carcere con l'ipotesi di reato di tentato omicidio.",
+   "titolo": "Pago Veiano, lite in casa: uomo di 72 anni accoltellato, la moglie di 55 è stata arrestata per tentato omicidio",
+   "sintesi": "A Pago Veiano un pensionato di 72 anni è stato ferito con un coltello al torace e all'addome durante una lite con la moglie, una donna di 55 anni di origine polacca. Lui è stato operato al San Pio di Benevento e le sue condizioni sono migliorate; lei è stata arrestata dai Carabinieri con l'ipotesi di tentato omicidio ed è in carcere.",
    "categoria": "cronaca",
    "zona": "fortore",
    "luogo": "Pago Veiano",
-   "pubblicato": "2026-10-20T11:34:00+02:00",
+   "pubblicato": "2026-10-21T00:15:00+02:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
@@ -970,68 +1068,81 @@
     {
      "nome": "BeneventoNews24",
      "url": "https://www.beneventonews24.it/2026/10/20/pago-veiano-accoltella-il-marito-al-torace-e-alladdome-55enne-arrestata-per-tentato-omicidio/"
+    },
+    {
+     "nome": "Il Mattino",
+     "url": "https://www.ilmattino.it/benevento/pago_veiano_accoltella_marito_dopo_la_lite_carcere-9837727.html"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/20/pago-veiano-accoltella-il-marito-durante-una-lite-arrestata-55enne/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/accoltella-marito-arrestata-55enne-pago-veiano/"
+    },
+    {
+     "nome": "Lab TV",
+     "url": "https://www.labtv.net/cronaca/2026/10/20/lite-familiare-finisce-nel-sangue-moglie-accoltella-il-marito-a-pago-veiano/"
     }
    ],
    "articolo": {
-    "cosa": "Nella notte tra il 19 e il 20 ottobre, a Pago Veiano, marito e moglie hanno litigato in casa. L'uomo è stato colpito all'addome con un oggetto acuminato ed è stato portato al San Pio di Benevento. La donna è stata fermata dai Carabinieri; per Ottopagine è una 55enne di nazionalità polacca e l'ipotesi di reato è tentato omicidio. Le indagini sono in corso: si tratta di ipotesi, non di accertamenti definitivi.",
     "cronologia": [
      {
-      "data": "notte 19-20",
-      "fatto": "Lite in casa, uomo ferito, arrivano Carabinieri e 118; la donna viene fermata.",
+      "data": "sera/notte 19-20 ottobre",
+      "fatto": "Lite in casa a Pago Veiano; l'uomo è ferito al torace e all'addome, arrivano 118 e Carabinieri.",
       "fonti": [
+       "Il Mattino",
        "Ottopagine",
-       "Anteprima24"
+       "NTR24"
       ]
      },
      {
       "data": "20 ottobre",
-      "fatto": "Ottopagine riferisce che la donna, su disposizione della sostituta procuratrice, è stata portata nel carcere di Capodimonte ed è difesa da un avvocato.",
+      "fatto": "La donna viene portata nel carcere di contrada Capodimonte su disposizione del sostituto procuratore; il marito, operato al San Pio, migliora.",
       "fonti": [
+       "Il Mattino",
        "Ottopagine"
       ]
      }
     ],
     "concordano": [
      {
-      "testo": "Lite tra marito e moglie a Pago Veiano; uomo ferito all'addome e ricoverato al San Pio; donna fermata dai Carabinieri.",
+      "testo": "Lite tra marito e moglie a Pago Veiano; l'uomo, ferito da una lama al torace e all'addome, è stato portato al San Pio; la donna di 55 anni, originaria della Polonia, è stata arrestata dai Carabinieri con l'ipotesi di tentato omicidio.",
       "fonti": [
        "Ottopagine",
-       "Anteprima24"
+       "Il Mattino",
+       "NTR24",
+       "BeneventoNews24",
+       "Cronache del Sannio",
+       "Lab TV"
       ]
      },
      {
-      "testo": "L'uomo, di circa 70 anni, è stato operato al San Pio; le condizioni sono gravi ma non sarebbe in pericolo di vita; il movente della lite non è chiaro.",
+      "testo": "L'uomo ha 72 anni, è stato curato e operato al San Pio e le sue condizioni sono migliorate.",
       "fonti": [
-       "BeneventoNews24"
+       "Ottopagine",
+       "Il Mattino",
+       "Lab TV"
       ]
      }
     ],
     "divergono": [
      {
-      "testo": "Ottopagine scrive che la donna «lo avrebbe accoltellato», è finita in carcere e ipotizza il tentato omicidio; Anteprima24 parla di «oggetto acuminato», di stato di fermo e dice che anche la donna è rimasta ferita, in modo più lieve.",
+      "testo": "Quando: tarda serata di lunedì (Il Mattino, Ottopagine), «durante la notte» (NTR24, Cronache del Sannio, che riprende l'Ansa), «ieri sera» (Lab TV). Anteprima24 dice che anche la donna sarebbe rimasta ferita in modo lieve: gli altri non lo scrivono.",
       "fonti": [
+       "Il Mattino",
        "Ottopagine",
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "Sulle condizioni dell'uomo: Ottopagine dice che era in prognosi riservata e sono migliorate dopo l'operazione; Anteprima24 le definisce gravi ma senza pericolo di vita.",
-      "fonti": [
-       "Ottopagine",
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "BeneventoNews24 scrive che la donna avrebbe colpito il marito con più fendenti «al torace e all'addome» e che è stata portata nel carcere di Benevento con l'accusa di tentato omicidio; Anteprima24 parla solo di addome.",
-      "fonti": [
-       "BeneventoNews24",
+       "NTR24",
+       "Cronache del Sannio",
+       "Lab TV",
        "Anteprima24"
       ]
      }
     ],
     "non_si_sa": [
-     "L'esatta dinamica e l'orario del fatto (BeneventoNews24 scrive «ieri sera», gli altri la notte).",
-     "Cosa deciderà il giudice sulla convalida."
+     "Il motivo della lite: i giornali scrivono solo che era molto accesa.",
+     "Cosa deciderà il giudice sulla convalida dell'arresto."
     ],
     "fonti": [
      {
@@ -1051,6 +1162,73 @@
       "titolo": "Pago Veiano, accoltella il marito al torace e all’addome: 55enne arrestata per tentato omicidio",
       "url": "https://www.beneventonews24.it/2026/10/20/pago-veiano-accoltella-il-marito-al-torace-e-alladdome-55enne-arrestata-per-tentato-omicidio/",
       "data": "20 ott"
+     },
+     {
+      "nome": "Il Mattino",
+      "titolo": "Accoltella il marito dopo la lite: 55enne in carcere, l'uomo è in codice rosso all’ospedale San Pio",
+      "url": "https://www.ilmattino.it/benevento/pago_veiano_accoltella_marito_dopo_la_lite_carcere-9837727.html",
+      "data": "21 ott, 00:15"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Pago Veiano, accoltella il marito durante una lite: arrestata 55enne",
+      "url": "https://www.ntr24.tv/2026/10/20/pago-veiano-accoltella-il-marito-durante-una-lite-arrestata-55enne/",
+      "data": "20 ott"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Accoltella il marito: arrestata 55enne a Pago Veiano",
+      "url": "https://www.cronachedelsannio.it/sannionews24/accoltella-marito-arrestata-55enne-pago-veiano/",
+      "data": "20 ott"
+     },
+     {
+      "nome": "Lab TV",
+      "titolo": "Lite familiare finisce nel sangue: moglie accoltella il marito a Pago Veiano",
+      "url": "https://www.labtv.net/cronaca/2026/10/20/lite-familiare-finisce-nel-sangue-moglie-accoltella-il-marito-a-pago-veiano/",
+      "data": "20 ott"
+     }
+    ],
+    "racconto": [
+     {
+      "testo": "Un uomo di 72 anni è stato ferito con un coltello dalla moglie, una donna di 55 anni di origine polacca, durante una lite nella loro casa di Pago Veiano. Lei è stata arrestata dai Carabinieri con l'ipotesi di reato di tentato omicidio ed è stata portata in carcere a Benevento.",
+      "fonti": [
+       "Ottopagine",
+       "Il Mattino",
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Per Il Mattino e Ottopagine il fatto è successo nella tarda serata di lunedì 19 ottobre; per NTR24 e Cronache del Sannio durante la notte. La coppia abitava in una villetta insieme al figlio, scrive Lab TV. Secondo i giornali i due hanno cominciato a discutere in modo sempre più acceso, poi la donna avrebbe preso un coltello e colpito il marito al torace e all'addome. Il Mattino parla di due coltellate.",
+      "fonti": [
+       "Il Mattino",
+       "Ottopagine",
+       "Lab TV",
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "L'allarme è partito dai vicini, che hanno chiamato il 118. L'uomo è stato portato al pronto soccorso del San Pio, l'ospedale di Benevento. Qui è stato curato e operato. Il Mattino scrive che era in «codice rosso» (cioè molto grave), Ottopagine che aveva la prognosi riservata; per NTR24 non era in pericolo di vita. Ottopagine e Il Mattino aggiungono che nelle ore successive le sue condizioni sono migliorate.",
+      "fonti": [
+       "Il Mattino",
+       "Ottopagine",
+       "NTR24",
+       "Lab TV"
+      ]
+     },
+     {
+      "testo": "Sono arrivati i Carabinieri della stazione di Pietrelcina e della Compagnia di Benevento. Il sostituto procuratore Marilia Capitanio, il magistrato di turno, ha disposto il trasferimento della donna nel carcere di contrada Capodimonte. La donna è difesa dall'avvocato Vittorio Lamberti. Il Mattino scrive che sarà interrogata dal giudice per le indagini preliminari, che deve decidere se confermare l'arresto.",
+      "fonti": [
+       "Il Mattino",
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Le indagini sono dei Carabinieri e quella contro la donna è per ora un'ipotesi di reato: non ci sono accertamenti definitivi.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24"
+      ]
      }
     ]
    }
@@ -1631,7 +1809,7 @@
    "zona": "provincia",
    "immagine": "fabbrica",
    "luogo": "Morcone",
-   "pubblicato": "2026-10-20",
+   "pubblicato": "2026-10-20T19:00:00+02:00",
    "stato": "confermata",
    "rilevante": true,
    "fonti": [
@@ -1650,14 +1828,21 @@
     {
      "nome": "Cronache del Sannio",
      "url": "https://www.cronachedelsannio.it/sannionews24/ficomirrors-morcone-riconversione-stabilimento/"
+    },
+    {
+     "nome": "Lab TV",
+     "url": "https://www.labtv.net/attualita/2026/10/20/ficomirrors-negoziato-aperto-fiom-guardinga-mastella-al-tavolo-delle-trattative/"
+    },
+    {
+     "nome": "Anteprima24 (Stamplast)",
+     "url": "https://www.anteprima24.it/benevento/ficomirrors-morcone-stamplast-allarme-indotto/"
     }
    ],
    "articolo": {
     "aggiornato": "2026-10-20T09:25:00+02:00",
-    "cosa": "Ficomirrors, del gruppo spagnolo Ficosa International (controllato da Panasonic), produce a Morcone specchietti retrovisori per il Fiat Ducato. La settimana scorsa l'azienda ha annunciato di voler spostare le attività in Polonia dalla seconda metà del 2029 e i lavoratori hanno risposto con sciopero e presidio davanti alla fabbrica. Il vertice in Prefettura ha riaperto il dialogo, ma non ha preso decisioni definitive.",
     "cronologia": [
      {
-      "data": "settimana scorsa",
+      "data": "settimana scorsa (13-17 ottobre)",
       "fatto": "L'azienda annuncia di voler spostare le attività in Polonia dalla seconda metà del 2029; i lavoratori proclamano sciopero e un presidio fisso davanti alla fabbrica.",
       "fonti": [
        "Il Sannio Quotidiano"
@@ -1679,6 +1864,14 @@
       "fonti": [
        "Ottopagine",
        "Anteprima24"
+      ]
+     },
+     {
+      "data": "20 ottobre",
+      "fatto": "Riprende la produzione in fabbrica, con i picchetti pronti a ripartire (Lab TV); Stamplast, azienda dell'indotto, lancia l'allarme.",
+      "fonti": [
+       "Lab TV",
+       "Anteprima24 (Stamplast)"
       ]
      },
      {
@@ -1715,16 +1908,24 @@
        "Anteprima24",
        "Cronache del Sannio"
       ]
+     },
+     {
+      "testo": "Nuovo incontro a metà dicembre; Anteprima24 e Lab TV indicano il 15 dicembre.",
+      "fonti": [
+       "Anteprima24",
+       "Lab TV"
+      ]
      }
     ],
     "divergono": [
      {
-      "testo": "Quanti posti: Ottopagine scrive 209 lavoratori, di cui 160 a rischio; Anteprima24 parla di 210 lavoratori a rischio; Cronache del Sannio di oltre duecento posti; Il Sannio Quotidiano di circa 200 dipendenti.",
+      "testo": "Quanti posti: Ottopagine scrive 209 lavoratori, di cui 160 a rischio; Anteprima24 parla di 210 lavoratori a rischio; Cronache del Sannio di oltre duecento posti; Il Sannio Quotidiano di circa 200 dipendenti. Lab TV scrive 211 dipendenti.",
       "fonti": [
        "Ottopagine",
        "Anteprima24",
        "Cronache del Sannio",
-       "Il Sannio Quotidiano"
+       "Il Sannio Quotidiano",
+       "Lab TV"
       ]
      },
      {
@@ -1738,7 +1939,8 @@
     "non_si_sa": [
      "Il piano preciso dell'azienda: secondo Anteprima24 sarà spiegato nei prossimi giorni.",
      "Quanti lavoratori resterebbero con le nuove produzioni.",
-     "Se e quando ci sarà l'incontro con la Regione chiesto dai sindacati."
+     "Se e quando ci sarà l'incontro con la Regione chiesto dai sindacati.",
+     "Cosa farà Stamplast e quanti lavoratori dell'indotto sono a rischio: il numero non è scritto."
     ],
     "fonti": [
      {
@@ -1764,6 +1966,58 @@
       "titolo": "Vicenda Ficomirrors, spiragli dal vertice in Prefettura: l'azienda apre alla riconversione produttiva",
       "url": "https://www.ilsannioquotidiano.it/2026/10/20/vicenda-ficomirrors-spiragli-dal-vertice-in-prefettura-lazienda-apre-alla-riconversione-produttiva/",
       "data": "20 ott"
+     },
+     {
+      "nome": "Lab TV",
+      "titolo": "Ficomirrors: negoziato aperto, Fiom guardinga. Mastella al tavolo delle trattative",
+      "url": "https://www.labtv.net/attualita/2026/10/20/ficomirrors-negoziato-aperto-fiom-guardinga-mastella-al-tavolo-delle-trattative/",
+      "data": "20 ott"
+     },
+     {
+      "nome": "Anteprima24 (Stamplast)",
+      "titolo": "Crisi Ficomirrors a Morcone: Stamplast srl lancia l’allarme per l’indotto: \"Lasciati a noi stessi\"",
+      "url": "https://www.anteprima24.it/benevento/ficomirrors-morcone-stamplast-allarme-indotto/",
+      "data": "20 ott"
+     }
+    ],
+    "racconto": [
+     {
+      "testo": "Lunedì 19 ottobre, nella Prefettura di Benevento, l'azienda Ficomirrors di Morcone ha incontrato sindacati, Confindustria e sindaci del territorio. La fabbrica produce specchietti retrovisori per il Fiat Ducato e ha circa 200 dipendenti. Dal vertice è uscita una possibile strada: l'azienda si è detta pronta a cambiare produzione nello stabilimento.",
+      "fonti": [
+       "Il Sannio Quotidiano",
+       "Ottopagine",
+       "Anteprima24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Ficomirrors fa parte del gruppo spagnolo Ficosa International, controllato da Panasonic. La settimana scorsa il gruppo ha annunciato di voler spostare in Polonia la produzione degli specchietti dalla seconda metà del 2029. I lavoratori hanno risposto con lo sciopero e un presidio davanti alla fabbrica.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "Al tavolo c'erano il dirigente di Ficosa Josep Maria Serra, la Fiom (il sindacato dei metalmeccanici della Cgil) con Giuseppe Morsa, Confindustria e i sindaci di Benevento, Morcone, Sassinoro, Campolattaro, Fragneto Monforte e Pontelandolfo. L'azienda ha parlato di nuove produzioni: Ottopagine cita soprattutto l'aerospazio, Anteprima24 le energie rinnovabili. La Fiom chiede che nessun posto di lavoro vada perso e che anche la Regione Campania entri nella trattativa.",
+      "fonti": [
+       "Ottopagine",
+       "Anteprima24",
+       "Cronache del Sannio",
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "Secondo Lab TV, che parla di 211 lavoratori, la produzione in fabbrica è ripresa martedì mattina, ma i lavoratori tengono pronti i picchetti e il sindacato resta prudente. Si torna al tavolo a metà dicembre: Anteprima24 e Lab TV indicano il 15 dicembre.",
+      "fonti": [
+       "Lab TV",
+       "Anteprima24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "La crisi preoccupa anche le aziende che lavorano con lo stabilimento. Stamplast, un'azienda di Morcone che fa da quarant'anni da fornitrice di Ficomirrors, dice di essere «lasciata a se stessa» e chiede che la vertenza non ignori l'indotto (le aziende che lavorano per la fabbrica) e le decine di famiglie che ci lavorano.",
+      "fonti": [
+       "Anteprima24 (Stamplast)"
+      ]
      }
     ]
    },
@@ -2460,84 +2714,6 @@
    }
   },
   {
-   "id": "scontro-rione-ferrovia",
-   "titolo": "Benevento, scontro tra due auto al Rione Ferrovia: ferite due donne di 47 e 51 anni",
-   "sintesi": "Domenica mattina, 18 ottobre, due auto si sono scontrate al Rione Ferrovia, all'incrocio con via Grimoaldo Re. Due donne di 47 e 51 anni sono state portate in ospedale, una al San Pio e l'altra al Fatebenefratelli.",
-   "categoria": "cronaca",
-   "zona": "benevento",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-18",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Ottopagine",
-     "url": "https://www.ottopagine.it/bn/cronaca/441380/benevento-scontro-al-rione-ferrovia-due-donne-ferite.shtml"
-    },
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/18/benevento-scontro-tra-due-auto-al-rione-ferrovia-ferite-due-donne/"
-    }
-   ],
-   "articolo": {
-    "aggiornato": "2026-10-20T09:25:00+02:00",
-    "cosa": "Incidente tra due auto in un incrocio del Rione Ferrovia a Benevento. Le cause sono ancora da accertare.",
-    "cronologia": [
-     {
-      "data": "18 ottobre, mattina",
-      "fatto": "Scontro tra due auto all'incrocio tra via Grimoaldo Re e via Francesco Campagna (NTR24 scrive Compagna). Sul posto i sanitari, che portano le due donne ferite in ospedale.",
-      "fonti": [
-       "Ottopagine",
-       "NTR24"
-      ]
-     }
-    ],
-    "concordano": [
-     {
-      "testo": "Le ferite sono due donne di 47 e 51 anni, portate una al San Pio e l'altra al Fatebenefratelli.",
-      "fonti": [
-       "Ottopagine",
-       "NTR24"
-      ]
-     },
-     {
-      "testo": "Le cause e la dinamica sono ancora da accertare.",
-      "fonti": [
-       "Ottopagine",
-       "NTR24"
-      ]
-     }
-    ],
-    "divergono": [
-     {
-      "testo": "Il nome della seconda strada: «via Francesco Campagna» per Ottopagine, «via Francesco Compagna» per NTR24.",
-      "fonti": [
-       "Ottopagine",
-       "NTR24"
-      ]
-     }
-    ],
-    "non_si_sa": [
-     "Come stanno le due donne: gli articoli non lo dicono.",
-     "Come è avvenuto lo scontro."
-    ],
-    "fonti": [
-     {
-      "nome": "Ottopagine",
-      "titolo": "Benevento: scontro al Rione Ferrovia, due donne ferite",
-      "url": "https://www.ottopagine.it/bn/cronaca/441380/benevento-scontro-al-rione-ferrovia-due-donne-ferite.shtml",
-      "data": "18 ott, 12:58"
-     },
-     {
-      "nome": "NTR24",
-      "titolo": "Benevento, scontro tra due auto al Rione Ferrovia: ferite due donne",
-      "url": "https://www.ntr24.tv/2026/10/18/benevento-scontro-tra-due-auto-al-rione-ferrovia-ferite-due-donne/",
-      "data": "18 ott"
-     }
-    ]
-   }
-  },
-  {
    "id": "esercitazione-terremoto",
    "titolo": "Esercitazione di Protezione civile: terremoto simulato ad Apollosa, Arpaise, Ceppaloni e San Leucio del Sannio",
    "sintesi": "Lunedì 19 ottobre i quattro Comuni hanno simulato un forte terremoto: evacuazione delle scuole, ricerca di un disperso, soccorso ai feriti e prove di comunicazione senza telefono e internet.",
@@ -2633,107 +2809,6 @@
    },
    "rilevante": false,
    "foto": "protezione-civile"
-  },
-  {
-   "id": "sciame-cusano-mutri",
-   "titolo": "Sciame sismico tra Cusano Mutri e Gioia Sannitica: 29 scosse nella notte, la più forte di magnitudo 2.6",
-   "sintesi": "Nella notte tra venerdì 17 e sabato 18 ottobre l'INGV ha registrato 29 scosse tra Cusano Mutri, Gioia Sannitica e Faicchio, dalle 23:43 alle 5:50. Due di magnitudo 2.6, tutte a 10-22 km di profondità.",
-   "categoria": "meteo",
-   "zona": "telesina",
-   "immagine": "terremoto",
-   "luogo": "Cusano Mutri",
-   "pubblicato": "2026-10-18",
-   "stato": "ufficiale",
-   "fonti": [
-    {
-     "nome": "INGV",
-     "url": "https://webservices.ingv.it/fdsnws/event/1/query?starttime=2026-10-17T18:00:00&endtime=2026-10-18T06:00:00&lat=41.33&lon=14.47&maxradius=0.25&orderby=time-asc&format=text"
-    },
-    {
-     "nome": "PaeseNews",
-     "url": "https://www.paesenews.it/?p=313059"
-    }
-   ],
-   "articolo": {
-    "aggiornato": "2026-10-20T08:28:00+02:00",
-    "cosa": "Uno sciame di scosse deboli ha interessato per circa sei ore la zona tra Cusano Mutri (Benevento) e Gioia Sannitica (Caserta). I dati sono dell'INGV, l'Istituto nazionale di geofisica e vulcanologia.",
-    "cronologia": [
-     {
-      "data": "23:43",
-      "fatto": "Prima scossa, magnitudo 0.9, 5 km a ovest di Cusano Mutri.",
-      "fonti": [
-       "INGV"
-      ]
-     },
-     {
-      "data": "00:40",
-      "fatto": "Magnitudo 2.6, 4 km a nord-est di Gioia Sannitica, profondità 14 km.",
-      "fonti": [
-       "INGV",
-       "PaeseNews"
-      ]
-     },
-     {
-      "data": "01:13",
-      "fatto": "Magnitudo 2.3, 4 km a ovest di Cusano Mutri, profondità 17 km.",
-      "fonti": [
-       "INGV",
-       "PaeseNews"
-      ]
-     },
-     {
-      "data": "02:02",
-      "fatto": "Magnitudo 2.6, 5 km a ovest di Cusano Mutri, profondità 16 km.",
-      "fonti": [
-       "INGV",
-       "PaeseNews"
-      ]
-     },
-     {
-      "data": "03:49",
-      "fatto": "Magnitudo 2.2, 2 km a ovest di Cusano Mutri.",
-      "fonti": [
-       "INGV"
-      ]
-     },
-     {
-      "data": "05:50",
-      "fatto": "Ultima scossa, magnitudo 1.2, 2 km a ovest di Cusano Mutri.",
-      "fonti": [
-       "INGV"
-      ]
-     }
-    ],
-    "concordano": [
-     {
-      "testo": "Le scosse sono 29 e la più forte è di magnitudo 2.6.",
-      "fonti": [
-       "INGV",
-       "PaeseNews"
-      ]
-     }
-    ],
-    "non_si_sa": [
-     "Nessuno dei giornali letti riporta danni o segnalazioni dalla popolazione."
-    ],
-    "fonti": [
-     {
-      "nome": "INGV",
-      "titolo": "Elenco ufficiale delle scosse (dati grezzi, orari in UTC)",
-      "url": "https://webservices.ingv.it/fdsnws/event/1/query?starttime=2026-10-17T18:00:00&endtime=2026-10-18T06:00:00&lat=41.33&lon=14.47&maxradius=0.25&orderby=time-asc&format=text",
-      "data": "dati consultati il 20 ott"
-     },
-     {
-      "nome": "PaeseNews",
-      "titolo": "Gioia Sannitica / Cusano Mutri – Terremoto: 29 scosse nella notte",
-      "url": "https://www.paesenews.it/?p=313059",
-      "data": "18 ott"
-     }
-    ],
-    "divergono": []
-   },
-   "rilevante": false,
-   "foto": "terremoto"
   },
   {
    "id": "cocchia-cavour-asfalto",

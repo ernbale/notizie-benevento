@@ -1,0 +1,186 @@
+{
+ "notizie": [
+  {
+   "id": "scontro-rione-ferrovia",
+   "titolo": "Benevento, scontro tra due auto al Rione Ferrovia: ferite due donne di 47 e 51 anni",
+   "sintesi": "Domenica mattina, 18 ottobre, due auto si sono scontrate al Rione Ferrovia, all'incrocio con via Grimoaldo Re. Due donne di 47 e 51 anni sono state portate in ospedale, una al San Pio e l'altra al Fatebenefratelli.",
+   "categoria": "cronaca",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-18",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/441380/benevento-scontro-al-rione-ferrovia-due-donne-ferite.shtml"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/18/benevento-scontro-tra-due-auto-al-rione-ferrovia-ferite-due-donne/"
+    }
+   ],
+   "articolo": {
+    "aggiornato": "2026-10-20T09:25:00+02:00",
+    "cosa": "Incidente tra due auto in un incrocio del Rione Ferrovia a Benevento. Le cause sono ancora da accertare.",
+    "cronologia": [
+     {
+      "data": "18 ottobre, mattina",
+      "fatto": "Scontro tra due auto all'incrocio tra via Grimoaldo Re e via Francesco Campagna (NTR24 scrive Compagna). Sul posto i sanitari, che portano le due donne ferite in ospedale.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Le ferite sono due donne di 47 e 51 anni, portate una al San Pio e l'altra al Fatebenefratelli.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Le cause e la dinamica sono ancora da accertare.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "Il nome della seconda strada: «via Francesco Campagna» per Ottopagine, «via Francesco Compagna» per NTR24.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "Come stanno le due donne: gli articoli non lo dicono.",
+     "Come è avvenuto lo scontro."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Benevento: scontro al Rione Ferrovia, due donne ferite",
+      "url": "https://www.ottopagine.it/bn/cronaca/441380/benevento-scontro-al-rione-ferrovia-due-donne-ferite.shtml",
+      "data": "18 ott, 12:58"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Benevento, scontro tra due auto al Rione Ferrovia: ferite due donne",
+      "url": "https://www.ntr24.tv/2026/10/18/benevento-scontro-tra-due-auto-al-rione-ferrovia-ferite-due-donne/",
+      "data": "18 ott"
+     }
+    ]
+   },
+   "archiviato_il": "2026-10-21"
+  },
+  {
+   "id": "sciame-cusano-mutri",
+   "titolo": "Sciame sismico tra Cusano Mutri e Gioia Sannitica: 29 scosse nella notte, la più forte di magnitudo 2.6",
+   "sintesi": "Nella notte tra venerdì 17 e sabato 18 ottobre l'INGV ha registrato 29 scosse tra Cusano Mutri, Gioia Sannitica e Faicchio, dalle 23:43 alle 5:50. Due di magnitudo 2.6, tutte a 10-22 km di profondità.",
+   "categoria": "meteo",
+   "zona": "telesina",
+   "immagine": "terremoto",
+   "luogo": "Cusano Mutri",
+   "pubblicato": "2026-10-18",
+   "stato": "ufficiale",
+   "fonti": [
+    {
+     "nome": "INGV",
+     "url": "https://webservices.ingv.it/fdsnws/event/1/query?starttime=2026-10-17T18:00:00&endtime=2026-10-18T06:00:00&lat=41.33&lon=14.47&maxradius=0.25&orderby=time-asc&format=text"
+    },
+    {
+     "nome": "PaeseNews",
+     "url": "https://www.paesenews.it/?p=313059"
+    }
+   ],
+   "articolo": {
+    "aggiornato": "2026-10-20T08:28:00+02:00",
+    "cosa": "Uno sciame di scosse deboli ha interessato per circa sei ore la zona tra Cusano Mutri (Benevento) e Gioia Sannitica (Caserta). I dati sono dell'INGV, l'Istituto nazionale di geofisica e vulcanologia.",
+    "cronologia": [
+     {
+      "data": "23:43",
+      "fatto": "Prima scossa, magnitudo 0.9, 5 km a ovest di Cusano Mutri.",
+      "fonti": [
+       "INGV"
+      ]
+     },
+     {
+      "data": "00:40",
+      "fatto": "Magnitudo 2.6, 4 km a nord-est di Gioia Sannitica, profondità 14 km.",
+      "fonti": [
+       "INGV",
+       "PaeseNews"
+      ]
+     },
+     {
+      "data": "01:13",
+      "fatto": "Magnitudo 2.3, 4 km a ovest di Cusano Mutri, profondità 17 km.",
+      "fonti": [
+       "INGV",
+       "PaeseNews"
+      ]
+     },
+     {
+      "data": "02:02",
+      "fatto": "Magnitudo 2.6, 5 km a ovest di Cusano Mutri, profondità 16 km.",
+      "fonti": [
+       "INGV",
+       "PaeseNews"
+      ]
+     },
+     {
+      "data": "03:49",
+      "fatto": "Magnitudo 2.2, 2 km a ovest di Cusano Mutri.",
+      "fonti": [
+       "INGV"
+      ]
+     },
+     {
+      "data": "05:50",
+      "fatto": "Ultima scossa, magnitudo 1.2, 2 km a ovest di Cusano Mutri.",
+      "fonti": [
+       "INGV"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Le scosse sono 29 e la più forte è di magnitudo 2.6.",
+      "fonti": [
+       "INGV",
+       "PaeseNews"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "Nessuno dei giornali letti riporta danni o segnalazioni dalla popolazione."
+    ],
+    "fonti": [
+     {
+      "nome": "INGV",
+      "titolo": "Elenco ufficiale delle scosse (dati grezzi, orari in UTC)",
+      "url": "https://webservices.ingv.it/fdsnws/event/1/query?starttime=2026-10-17T18:00:00&endtime=2026-10-18T06:00:00&lat=41.33&lon=14.47&maxradius=0.25&orderby=time-asc&format=text",
+      "data": "dati consultati il 20 ott"
+     },
+     {
+      "nome": "PaeseNews",
+      "titolo": "Gioia Sannitica / Cusano Mutri – Terremoto: 29 scosse nella notte",
+      "url": "https://www.paesenews.it/?p=313059",
+      "data": "18 ott"
+     }
+    ],
+    "divergono": []
+   },
+   "rilevante": false,
+   "foto": "terremoto",
+   "archiviato_il": "2026-10-21"
+  }
+ ],
+ "approfondimenti": []
+}
