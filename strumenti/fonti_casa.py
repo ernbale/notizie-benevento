@@ -59,19 +59,16 @@ def fuso():
 
 
 def scarica(url, ctx=None):
+    # prima curl, con 3 tentativi: TV7 (dietro Cloudflare) a volte resta muto con Python e risponde a curl, e la sera
+    # del 21 ott 2026 ci metteva da 1 a 30 secondi a richiesta. L'ASL (ctx col certificato aggiunto) va solo con Python.
+    if ctx is None:
+        p = subprocess.run(["curl", "-sfL", "--compressed", "-m", "60", "--retry", "2", "--retry-all-errors",
+                            "-A", UA, "-H", "Accept-Language: it-IT,it;q=0.9", url], capture_output=True)
+        if p.returncode == 0:
+            return p.stdout.decode("utf-8", "replace")
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "it-IT,it;q=0.9"})
-    try:
-        with urllib.request.urlopen(req, timeout=30, context=ctx) as r:
-            return r.read().decode(r.headers.get_content_charset() or "utf-8", "replace")
-    except (OSError, ValueError):
-        if ctx is not None:
-            raise
-        # TV7 (dietro Cloudflare) a volte non risponde a Python e a curl sì, nello stesso momento (21 ott 2026)
-        p = subprocess.run(["curl", "-sfL", "--compressed", "-m", "60", "-A", UA, "-H", "Accept-Language: it-IT,it;q=0.9",
-                            url], capture_output=True)
-        if p.returncode:
-            raise
-        return p.stdout.decode("utf-8", "replace")
+    with urllib.request.urlopen(req, timeout=30, context=ctx) as r:
+        return r.read().decode(r.headers.get_content_charset() or "utf-8", "replace")
 
 
 def contesto_asl():
