@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-21T12:07:00+02:00",
+ "aggiornato": "2026-10-21T14:06:00+02:00",
  "eventi": [
   {
    "id": "mostra-cosmogonie-meact-torrecuso-2026",
@@ -192,6 +192,50 @@
    ],
    "immagine": "mandolino",
    "foto": "mandolino"
+  },
+  {
+   "id": "domeniche-olio-cerreto-sannita-2026",
+   "titolo": "Domeniche dell'Olio a Cerreto Sannita",
+   "tipo": "sagra",
+   "inizio": "2026-10-25",
+   "fine": "2026-11-15",
+   "giorni": [
+    "2026-10-25",
+    "2026-11-01",
+    "2026-11-08",
+    "2026-11-14",
+    "2026-11-15"
+   ],
+   "orari": "25 ottobre, 1 e 8 novembre, 14 e 15 novembre",
+   "luogo": "Centro storico",
+   "comune": "Cerreto Sannita",
+   "zona": "telesina",
+   "breve": "Cinque giorni dedicati all'olio nuovo del Titerno, con visite ai frantoi, degustazioni, stand, passeggiate tra gli olivi e musica.",
+   "descrizione": [
+    {
+     "testo": "La Pro Loco Cominium organizza le Domeniche dell'Olio a Cerreto Sannita il 25 ottobre, il 1° e l'8 novembre e nel fine settimana del 14 e 15 novembre. La festa è dedicata all'olio extravergine d'oliva del Titerno.",
+     "fonti": [
+      "Fremondoweb"
+     ]
+    },
+    {
+     "testo": "Il programma prevede visite guidate ai frantoi, degustazioni, stand con prodotti tipici, passeggiate tra gli olivi, visite al centro storico e al parco archeologico e appuntamenti musicali. Orari, luoghi e prezzi non sono indicati nell'articolo.",
+     "fonti": [
+      "Fremondoweb"
+     ]
+    }
+   ],
+   "immagine": "olio",
+   "annullato": false,
+   "fonti": [
+    {
+     "nome": "Fremondoweb",
+     "titolo": "Cerreto Sannita celebra l’olio nuovo: tornano le Domeniche dell’Olio",
+     "url": "https://www.fremondoweb.com/eventi-nel-sannio/cerreto-sannita-celebra-lolio-nuovo-tornano-le-domeniche-dellolio/",
+     "data": "21 ott"
+    }
+   ],
+   "foto": "olio"
   },
   {
    "id": "sagra-castagna-vitulano-2026",
