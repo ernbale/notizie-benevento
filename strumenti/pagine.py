@@ -7,7 +7,8 @@
 - sezione/<nome>/ e zona/<nome>/: la prima pagina già filtrata, con titolo e descrizione propri.
 - evento/<id>/index.html ed evento/<id>/evento.ics: la pagina di ogni evento del calendario (eventi.json e
   archivio/eventi-*.json), con i dati strutturati Event, e il file per aggiungerlo al calendario del telefono.
-- img/n/<id>-<impronta>.png: l'immagine di anteprima di ogni notizia (titolo grande, sezione, luogo, fonti).
+- img/n/<id>.png: l'immagine di anteprima di ogni notizia (titolo grande, sezione, luogo, fonti), sempre con lo
+  stesso nome anche quando si ridisegna.
 - sitemap.xml (tutto), sitemap-notizie.xml (Google News, ultimi 2 giorni), feed.xml (RSS, ultime 50).
 
 Uso:  python3 strumenti/pagine.py [--sito .] [--sitemap-prima vecchia.xml --indexnow cambiati.json]
@@ -179,8 +180,8 @@ def _testata(d, W):
     d.line([60, 152, W - 60, 152], fill="#e3c9ad", width=3)
 
 
-def immagine(path, titolo, occhiello, luogo, piede):
-    from PIL import Image, ImageDraw
+def immagine(path, titolo, occhiello, luogo, piede, impronta=None):
+    from PIL import Image, ImageDraw, PngImagePlugin
     W, H = 1200, 630
     im = Image.new("RGB", (W, H), "#fdeedd")
     d = ImageDraw.Draw(im)
@@ -217,7 +218,20 @@ def immagine(path, titolo, occhiello, luogo, piede):
         d.rectangle([0, H - 14, W, H], fill="#c4161c")
         d.text((x, 585), piede, font=_font(FONT_BOLD, 26), fill="#5b5249", anchor="lm")
     os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
-    im.save(path, optimize=True)
+    info = PngImagePlugin.PngInfo()
+    if impronta:
+        info.add_text("impronta", impronta)
+    im.save(path, optimize=True, pnginfo=info)
+
+
+def _impronta_png(path):
+    """L'impronta scritta dentro un'immagine già fatta (None se non c'è)."""
+    from PIL import Image
+    try:
+        with Image.open(path) as im:
+            return im.info.get("impronta")
+    except (OSError, ValueError):
+        return None
 
 
 def immagine_generica(path):
@@ -237,17 +251,19 @@ def immagine_generica(path):
 
 
 def immagine_notizia(sito, n, tipo):
-    """Percorso dell'immagine (sul sito) della notizia: si rifà solo se cambiano titolo, sezione, luogo o fonti."""
+    """Percorso dell'immagine (sul sito) della notizia: si rifà solo se cambiano titolo, sezione, luogo o fonti.
+    Il nome resta sempre lo stesso: Facebook si tiene l'indirizzo dell'immagine letto quando esce il post, e se
+    cambiasse a ogni fonte nuova il post resterebbe col riquadro vuoto (21 ott 2026)."""
     fonti = (n.get("articolo") or {}).get("fonti") or n.get("fonti") or []
     occ = "Approfondimento" if tipo == "approfondimento" else NOMI_CAT.get(n.get("categoria"), "Altro")
     piede = (f"{len(fonti)} {'fonte' if len(fonti) == 1 else 'fonti confrontate'} · "
              f"{data_it(n.get('pubblicato') or n.get('aggiornato'), lunga=True)}")
     impronta = hashlib.sha1(json.dumps([n["titolo"], occ, n.get("luogo"), piede, 2], ensure_ascii=False)
                             .encode()).hexdigest()[:10]
-    rel = f"img/n/{n['id']}-{impronta}.png"
+    rel = f"img/n/{'approfondimento-' if tipo == 'approfondimento' else ''}{n['id']}.png"
     full = os.path.join(sito, rel)
-    if not os.path.exists(full):
-        immagine(full, n["titolo"], occ, n.get("luogo"), piede)
+    if _impronta_png(full) != impronta:
+        immagine(full, n["titolo"], occ, n.get("luogo"), piede, impronta)
     return "/" + rel
 
 
@@ -689,9 +705,12 @@ def main():
     mappa.insert(0, (SITO + "/", prima.get("aggiornato")))
     mappa.insert(1, (SITO + "/meteo.html", adesso.isoformat(timespec="minutes")))
 
-    # immagini non più usate
+    # immagini non più usate; quelle col nome di prima (<id>-<impronta>.png, fino al 21 ott 2026) restano finché c'è
+    # la notizia, perché i post di Facebook usciti fino ad allora puntano lì
+    ids = {x["id"] for x in notizie} | {x["id"] for x in appro}
     for f in glob.glob(os.path.join(sito, "img", "n", "*.png")):
-        if os.path.relpath(f, sito).replace(os.sep, "/") not in usate:
+        vecchia = re.match(r"(.+)-[0-9a-f]{10}\.png$", os.path.basename(f))
+        if os.path.relpath(f, sito).replace(os.sep, "/") not in usate and not (vecchia and vecchia.group(1) in ids):
             os.remove(f)
 
     # sitemap.xml
