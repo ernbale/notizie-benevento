@@ -409,6 +409,13 @@ def main():
                        f"per esempio {i}-{oggi.isoformat()}")
 
     tutti_gli_id = set(correnti) | set(in_archivio)
+    rimandi = (leggi(os.path.join(cart_arch, "rimandi.json"), {}) or {}).get("notizie") or {}
+    for i in correnti:
+        if i in rimandi:
+            err.append(f"id {i!r} è di una notizia già unita in {rimandi[i]!r} (archivio/rimandi.json): scegline un altro")
+    for vecchio, nuovo in rimandi.items():
+        if nuovo not in tutti_gli_id:
+            err.append(f"archivio/rimandi.json: {vecchio!r} porta a {nuovo!r}, che non esiste")
     for x in d.get("approfondimenti", []):
         for c in x.get("collegate", []):
             if c not in tutti_gli_id:

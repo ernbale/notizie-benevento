@@ -145,7 +145,10 @@ Regole:
 ## Come lavorare una notizia
 
 1. **Raggruppa**: articoli diversi sullo stesso fatto sono **una sola notizia**. Se il fatto è già nel file,
-   **aggiorna** quella notizia (nuove fonti, nuovi fatti), non crearne un'altra.
+   **aggiorna** quella notizia (nuove fonti, nuovi fatti), non crearne un'altra. Se in prima pagina trovi due
+   notizie sullo stesso fatto, uniscile in quella uscita prima (fonti e dettagli di tutte e due), togli l'altra e
+   scrivi in `archivio/rimandi.json` → `notizie` la riga `"id tolto": "id rimasto"`: il vecchio indirizzo porterà
+   alla notizia rimasta.
 2. **Apri gli articoli veri**, non fermarti al riassunto in homepage: per scrivere l'articolo servono data, ora,
    luogo preciso e fatti letti nel testo. Se un articolo è a pagamento e si legge solo l'inizio, usa solo quello.
 3. **Confronta**: cosa dicono tutti (concordano), cosa dicono in modo diverso (divergono: scrivilo), cosa manca

@@ -691,6 +691,18 @@ def main():
                pagina(modello, seo, {"rotta": "#articolo/" + n["id"]}, html_articolo(n, coll), articolo=True))
         mappa.append((url, modificato))
 
+    # notizie unite in un'altra (archivio/rimandi.json): il vecchio indirizzo porta a quella rimasta
+    p_rim = os.path.join(sito, "archivio", "rimandi.json")
+    for vecchio, nuovo in ((leggi(p_rim).get("notizie") or {}) if os.path.exists(p_rim) else {}).items():
+        if nuovo in per_id and vecchio not in per_id:
+            dest, tit = SITO + percorso("notizia", nuovo), per_id[nuovo]["titolo"]
+            scrivi(os.path.join(sito, "notizia", vecchio, "index.html"),
+                   f'<!doctype html><meta charset="utf-8"><title>{e(tit)} – {NOME}</title>'
+                   f'<link rel="canonical" href="{e(dest)}"><meta name="robots" content="noindex">'
+                   f'<meta http-equiv="refresh" content="0; url={e(dest)}">'
+                   f'<script>location.replace({json.dumps(dest)})</script>'
+                   f'<p>Questa notizia è stata unita a <a href="{e(dest)}">{e(tit)}</a>.</p>\n')
+
     for x in appro:
         url = SITO + percorso("approfondimento", x["id"])
         im = img(x, "approfondimento")
