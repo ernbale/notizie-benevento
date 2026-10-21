@@ -52,12 +52,13 @@ Lavora in parallelo (6-8 letture insieme). Per ogni fonte tieni nota: letta / no
 **Fonti ufficiali (sempre):**
 - Comune di Benevento, comunicati (feed): `https://comune.benevento.it/tipi_notizia/comunicati/feed/`
 - Provincia di Benevento (feed): `https://www.provincia.benevento.it/rss.xml`
-- ANAS (feed nazionale, tieni solo Campania/Benevento/statali del Sannio): `https://www.stradeanas.it/it/rss.xml`
+- ANAS, comunicati della Campania (tieni solo Benevento e le statali del Sannio): file `anas.json` delle fonti lette da
+  casa (vedi sotto).
 - INGV, scosse delle ultime 3 ore entro ~40 km da Benevento-Telese:
   `https://webservices.ingv.it/fdsnws/event/1/query?starttime=<3h fa UTC>&lat=41.2&lon=14.65&maxradius=0.4&orderby=time&format=text`
   (riportare solo magnitudo ≥ 2.5 o sciami di ≥ 10 scosse)
 - San Marco dei Cavoti (feed): `https://www.comune.sanmarcodeicavoti.bn.it/feed/`
-- ASL Benevento, notizie e avvisi (screening, servizi, vaccini, ambulatori): `https://www.aslbenevento.it/notizie`
+- ASL Benevento, notizie e avvisi (screening, servizi, vaccini, ambulatori): file `asl.json` delle fonti lette da casa.
 - Ospedale San Pio di Benevento, news e avvisi: `https://www.aosanpio.it/categoria/news-ed-eventi/`
 - **Allerte ufficiali già confrontate (leggile per prime):** `https://notiziebenevento.it/meteo.json`, campo `allerte`.
   Lo aggiorna ogni ora il programma del meteo (`strumenti/meteo.py`): per oggi e domani dà il livello di ognuna
@@ -71,16 +72,27 @@ Lavora in parallelo (6-8 letture insieme). Per ogni fonte tieni nota: letta / no
   gialla, Orange = arancione, Red = rossa), tipo (Rain = pioggia, Thunderstorm = temporali, Wind = vento, Snow = neve…)
   e orari **in UTC** (convertili in ora italiana). Vale per tutta la regione: vedi le regole delle Allerte qui sotto.
 
+**Fonti lette da casa (ANAS, ASL, TV7).** Questi tre siti dal cloud non si aprono: ANAS e TV7 rifiutano le
+connessioni dall'estero, l'ASL ha il certificato incompleto. Non provare ad aprirli e non segnarli «non
+raggiungibili» per questo: li scarica ogni 30 minuti un computer di casa nell'archivio privato
+`ernbale/notizie-benevento-fonti`, che trovi già clonato accanto a questo (`../notizie-benevento-fonti/`; se non c'è,
+cercalo con `ls /home/user`). File `anas.json`, `asl.json`, `tv7.json`: `controllato` = ultimo tentativo, `esito`,
+`voci` con titolo, `link` originale (è quello da citare tra le fonti), `data` e `testo` intero, che vale come
+articolo aperto. Nel registro delle fonti scrivi `letta (da casa, controllato HH:MM)`. Se `controllato` è più
+vecchio di 3 ore o `esito` dice «non raggiungibile», scrivi `non raggiungibile (copia di casa ferma dalle HH:MM)`;
+solo per l'ASL prova allora `curl -sk https://www.aslbenevento.it/notizie` (il -k serve per il certificato).
+
 **Giornali del Sannio (sempre, homepage o sezione):** ottopagine.it/bn/ · ilsannioquotidiano.it · ntr24.tv ·
 labtv.net · cronachedelsannio.it/sannionews24/ · fremondoweb.com/category/notizie-dalla-valle-telesina/ ·
 gazzettabenevento.it · anteprima24.it/benevento/ · infosannionews.it · beneventogiornale.com ·
-beneventonews24.it · ilmattino.it/benevento/ · tvsette.net (TV7 Benevento: tieni solo le notizie del Sannio) ·
+beneventonews24.it · ilmattino.it/benevento/ · TV7 Benevento, file `tv7.json` delle fonti lette da casa (tieni solo le
+notizie del Sannio) ·
 ilcaudino.it/feed/ (Valle Caudina: tieni solo i Comuni della provincia di Benevento, non Cervinara, Rotondi, San
 Martino Valle Caudina e gli altri irpini). Il Sannio Quotidiano esce tutto tra le 7:30 e le 7:50 ed è spesso la
 seconda fonte dei fatti del giorno prima: al giro delle 8 controlla i fatti di ieri rimasti con una sola fonte.
 
 **Comuni senza feed (a ogni giro):** pagine notizie di
-`www.comune.<nome>.bn.it` per montesarchio, santagatadegoti, sangiorgiodelsannio, airola, sanbartolomeoingaldo,
+`www.comune.<nome>.bn.it` per montesarchio, santagatadegoti, sangiorgiodelsannio, airola, sanbartolomeoingaldo (`/new/`),
 morcone, cerretosannita, guardiasanframondi, solopaca, sansalvatoretelesino, apice, ceppaloni, paduli, pietrelcina,
 ponte, vitulano, cusanomutri, faicchio, amorosi. Cerca avvisi su strade, scuole, acqua, ordinanze, e soprattutto
 **chiusure** di scuole, parchi e ville comunali, cimiteri, impianti sportivi, mercati per allerta o maltempo.
