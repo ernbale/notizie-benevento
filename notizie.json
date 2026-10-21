@@ -97,81 +97,6 @@
    "foto": "autobus"
   },
   {
-   "id": "appia-hashish-marijuana-acerra-due-arresti",
-   "titolo": "Statale Appia nel Sannio, sequestrati oltre un chilo e mezzo di hashish e marijuana: arrestati un 19enne e un 23enne di Acerra",
-   "titolo_google": "Appia, oltre 1,5 kg di hashish: arrestati due di Acerra",
-   "sintesi": "I Carabinieri di Montesarchio hanno fermato in auto sulla statale Appia, in provincia di Benevento, due giovani di Acerra e trovato più di un chilo e mezzo tra hashish e marijuana. Per loro la Procura ha disposto i domiciliari.",
-   "categoria": "cronaca",
-   "zona": "caudina",
-   "luogo": "Statale Appia (Valle Caudina)",
-   "pubblicato": "2026-10-21",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Ottopagine",
-     "url": "https://www.ottopagine.it/bn/cronaca/441579/un-chilo-e-mezzo-di-hashish-e-marijuana-arrestati-19enne-e-23enne-di-acerra.shtml"
-    },
-    {
-     "nome": "Il Sannio Quotidiano",
-     "url": "https://www.ilsannioquotidiano.it/2026/10/21/beccati-con-oltre-un-chilo-di-droga-lungo-lasse-montesarchio-napoli-due-persone-in-manette/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "I Carabinieri del Nucleo operativo e radiomobile della Compagnia di Montesarchio hanno arrestato due giovani di Acerra, in provincia di Napoli, di 19 e 23 anni. Nella loro auto c'erano più di un chilo e mezzo tra hashish e marijuana, che per i militari era probabilmente destinata allo spaccio.",
-      "fonti": [
-       "Ottopagine",
-       "Il Sannio Quotidiano"
-      ]
-     },
-     {
-      "testo": "Secondo Ottopagine i due sono stati fermati alcuni giorni fa mentre viaggiavano sulla statale Appia, nel tratto che attraversa il Sannio. I militari hanno controllato l'auto e fatto una perquisizione, e così hanno trovato la droga, che è stata sequestrata. Il Sannio Quotidiano parla di controlli decisi dal Comando provinciale di Benevento contro lo spaccio lungo la strada tra Napoli e Montesarchio.",
-      "fonti": [
-       "Ottopagine",
-       "Il Sannio Quotidiano"
-      ]
-     },
-     {
-      "testo": "Ai due è contestata l'ipotesi di detenzione di droga ai fini di spaccio. La Procura ha disposto gli arresti domiciliari: dopo un passaggio in caserma sono stati riportati nelle loro case di Acerra. Sono da considerare presunti innocenti fino a una sentenza definitiva.",
-      "fonti": [
-       "Ottopagine"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "Due arrestati dai Carabinieri della Compagnia di Montesarchio, con oltre un chilo e mezzo tra hashish e marijuana sequestrati.",
-      "fonti": [
-       "Ottopagine",
-       "Il Sannio Quotidiano"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [
-     "Il giorno preciso del controllo: Ottopagine scrive «alcuni giorni fa», Il Sannio Quotidiano non lo dice nella parte che si legge senza abbonamento.",
-     "Se sarà chiesta la convalida davanti al giudice."
-    ],
-    "fonti": [
-     {
-      "nome": "Ottopagine",
-      "titolo": "Un chilo e mezzo di hashish e marijuana, arrestati 19enne e 23enne di Acerra",
-      "url": "https://www.ottopagine.it/bn/cronaca/441579/un-chilo-e-mezzo-di-hashish-e-marijuana-arrestati-19enne-e-23enne-di-acerra.shtml",
-      "data": "21 ott"
-     },
-     {
-      "nome": "Il Sannio Quotidiano",
-      "titolo": "Beccati con oltre un chilo di droga lungo l’asse Montesarchio-Napoli, due persone in manette",
-      "url": "https://www.ilsannioquotidiano.it/2026/10/21/beccati-con-oltre-un-chilo-di-droga-lungo-lasse-montesarchio-napoli-due-persone-in-manette/",
-      "data": "21 ott"
-     }
-    ]
-   }
-  },
-  {
    "id": "benevento-via-nenni-distributore-assalto-benzina",
    "titolo": "Benevento, via Nenni: lunghe code e strada bloccata per il distributore che aveva ancora benzina",
    "titolo_google": "Benevento, via Nenni: code e strada bloccata per la benzina",
@@ -3016,13 +2941,13 @@
   },
   {
    "id": "droga-montesarchio-due-arresti",
-   "titolo": "Montesarchio, sequestrati oltre un chilo e mezzo di hashish e marijuana: arrestati due uomini",
-   "titolo_google": "Montesarchio, oltre 1,5 kg di droga: arrestati due uomini",
-   "sintesi": "I Carabinieri della Compagnia di Montesarchio hanno sequestrato più di un chilo e mezzo tra hashish e marijuana dopo una perquisizione e hanno arrestato due uomini. Sono stati portati ai loro domicili in attesa dell'udienza di convalida davanti al giudice.",
+   "titolo": "Montesarchio, sequestrati oltre un chilo e mezzo di hashish e marijuana: arrestati due giovani di Acerra",
+   "titolo_google": "Montesarchio, oltre 1,5 kg di droga: arrestati due di Acerra",
+   "sintesi": "I Carabinieri della Compagnia di Montesarchio hanno fermato sulla statale Appia due giovani di Acerra, di 19 e 23 anni, e nella loro auto hanno trovato più di un chilo e mezzo tra hashish e marijuana. Sono ai domiciliari in attesa della convalida davanti al giudice.",
    "categoria": "cronaca",
    "zona": "caudina",
    "luogo": "Montesarchio",
-   "pubblicato": "2026-10-20T09:26:00+02:00",
+   "pubblicato": "2026-10-21",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
@@ -3037,6 +2962,14 @@
     {
      "nome": "Il Mattino",
      "url": "https://www.ilmattino.it/benevento/benevento_arrestati_due_uomini_per_possesso_droga_sull_asse_napoli_montesarchio_l_intervento_dei_carabinieri-9836926.html"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/441579/un-chilo-e-mezzo-di-hashish-e-marijuana-arrestati-19enne-e-23enne-di-acerra.shtml"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/21/beccati-con-oltre-un-chilo-di-droga-lungo-lasse-montesarchio-napoli-due-persone-in-manette/"
     }
    ],
    "articolo": {
@@ -3052,16 +2985,19 @@
     ],
     "concordano": [
      {
-      "testo": "Oltre un chilo e mezzo tra hashish e marijuana; due arresti; misura pre-cautelare ai domicili in attesa della convalida.",
+      "testo": "Due arrestati dai Carabinieri della Compagnia di Montesarchio e oltre un chilo e mezzo tra hashish e marijuana sequestrati; i due sono ai domiciliari.",
       "fonti": [
        "NTR24",
-       "Anteprima24"
+       "Anteprima24",
+       "Ottopagine",
+       "Il Sannio Quotidiano"
       ]
      }
     ],
     "divergono": [],
     "non_si_sa": [
-     "Chi sono i due arrestati e quando è stata fatta la perquisizione (non indicati nei comunicati letti)."
+     "Il giorno preciso del controllo: NTR24 e Anteprima24 danno la notizia il 20 ottobre, Ottopagine scrive «alcuni giorni fa».",
+     "Quando ci sarà l'udienza di convalida e cosa deciderà il giudice."
     ],
     "fonti": [
      {
@@ -3075,31 +3011,56 @@
       "titolo": "Blitz antidroga dei Carabinieri: sequestrato oltre un chilo e mezzo di hashish e marijuana",
       "url": "https://www.anteprima24.it/benevento/blitz-antidroga-dei-carabinieri-sequestrato-oltre-un-chilo-e-mezzo-di-hashish-e-marijuana/",
       "data": "20 ott, 09:23"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Un chilo e mezzo di hashish e marijuana, arrestati 19enne e 23enne di Acerra",
+      "url": "https://www.ottopagine.it/bn/cronaca/441579/un-chilo-e-mezzo-di-hashish-e-marijuana-arrestati-19enne-e-23enne-di-acerra.shtml",
+      "data": "21 ott"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Beccati con oltre un chilo di droga lungo l’asse Montesarchio-Napoli, due persone in manette",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/21/beccati-con-oltre-un-chilo-di-droga-lungo-lasse-montesarchio-napoli-due-persone-in-manette/",
+      "data": "21 ott"
      }
     ],
     "racconto": [
      {
-      "testo": "I Carabinieri della Compagnia di Montesarchio hanno sequestrato oltre un chilo e mezzo tra hashish e marijuana e hanno arrestato due uomini. Lo hanno reso noto martedì 20 ottobre. L'operazione è del Nucleo Operativo e Radiomobile e riguarda lo spaccio lungo l'asse tra Napoli e Montesarchio.",
+      "testo": "I Carabinieri del Nucleo operativo e radiomobile della Compagnia di Montesarchio hanno arrestato due giovani di Acerra, in provincia di Napoli, di 19 e 23 anni, e hanno sequestrato più di un chilo e mezzo tra hashish e marijuana. Lo hanno reso noto martedì 20 ottobre.",
       "fonti": [
+       "NTR24",
+       "Anteprima24",
+       "Ottopagine",
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "Secondo Ottopagine i due sono stati fermati alcuni giorni fa mentre viaggiavano in auto sulla statale Appia, nel tratto che attraversa il Sannio. I militari hanno controllato l'auto e fatto una perquisizione, e così hanno trovato la droga, che per loro era probabilmente destinata allo spaccio.",
+      "fonti": [
+       "Ottopagine",
        "NTR24",
        "Anteprima24"
       ]
      },
      {
-      "testo": "La droga è stata trovata durante una perquisizione fatta ai due. Sono accusati, allo stato degli atti, di detenzione di droga per spaccio. Dopo l'arresto sono stati portati nelle loro case, come misura prima dell'udienza di convalida davanti al giudice per le indagini preliminari: sarà lui a decidere se l'arresto è valido.",
+      "testo": "Ai due è contestata, allo stato degli atti, la detenzione di droga ai fini di spaccio. Dopo un passaggio in caserma sono stati portati nelle loro case: Ottopagine scrive che i domiciliari li ha disposti la Procura, NTR24 e Anteprima24 che è la misura in attesa dell'udienza di convalida davanti al giudice per le indagini preliminari, che deciderà se l'arresto è valido.",
       "fonti": [
+       "Ottopagine",
        "NTR24",
        "Anteprima24"
       ]
      },
      {
-      "testo": "I Carabinieri spiegano che l'operazione fa parte dei controlli del Comando provinciale di Benevento contro la diffusione della droga. Come ricorda Anteprima24, gli arrestati sono sottoposti a indagini e sono da considerare innocenti fino a una sentenza definitiva.",
+      "testo": "I Carabinieri spiegano che l'operazione fa parte dei controlli del Comando provinciale di Benevento contro lo spaccio lungo la strada tra Napoli e Montesarchio. I due sono da considerare innocenti fino a una sentenza definitiva.",
       "fonti": [
        "NTR24",
-       "Anteprima24"
+       "Anteprima24",
+       "Il Sannio Quotidiano"
       ]
      }
-    ]
+    ],
+    "aggiornato": "2026-10-21T22:32+02:00"
    }
   },
   {
