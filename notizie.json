@@ -1,7 +1,154 @@
 {
- "aggiornato": "2026-10-21T12:07:00+02:00",
- "giornali_letti": 15,
+ "aggiornato": "2026-10-21T14:06:00+02:00",
+ "giornali_letti": 13,
  "notizie": [
+  {
+   "id": "benevento-via-masseria-cancelleria-asfalto-22-ottobre",
+   "titolo": "Benevento, da giovedì 22 ottobre senso unico alternato in via Masseria Cancelleria per rifare l'asfalto; poi lavori in via Cancelleria",
+   "sintesi": "Da giovedì 22 ottobre in via Masseria Cancelleria, tra via Cancelleria e via Ginestra, si passa a senso unico alternato con operai e semafori per rifare l'asfalto. Lunedì 26 e martedì 27 i lavori toccano via Cancelleria, fino a via Capodimonte.",
+   "categoria": "strade",
+   "zona": "benevento",
+   "immagine": "lavori-stradali",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-21T12:27:00+02:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "in_vigore_fino": "2026-10-30",
+   "fonti": [
+    {
+     "nome": "Comune di Benevento",
+     "url": "https://comune.benevento.it/novita/ancora-limitazioni-della-circolazione-in-via-masseria-cancelleria-e-via-cancelleria/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/441687/via-masseria-cancelleria-e-via-cancelleria-limitazioni-per-rifacimento-asfalto.shtml"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/21/benevento-ancora-limitazioni-della-circolazione-in-via-masseria-cancelleria-e-via-cancelleria/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/21/lavori-stradali-in-via-masseria-cancelleria-e-via-cancelleria-modifiche-temporanee-alla-viabilita/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Da giovedì 22 ottobre via Masseria Cancelleria, a Benevento, torna ad avere limitazioni al traffico. Nel tratto dall'incrocio con via Cancelleria all'incrocio con via Ginestra si passa a senso unico alternato, con operai e semafori che regolano il passaggio. Lo ha comunicato il Comune di Benevento.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "I lavori servono a finire di rifare l'asfalto e a sistemare la strada, che nei mesi scorsi era stata aperta per fare scavi.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "Quando l'intervento su via Masseria Cancelleria sarà finito, lunedì 26 e martedì 27 ottobre gli stessi lavori si faranno sul tratto vicino di via Cancelleria, tra via Masseria Cancelleria e via Capodimonte (la strada provinciale per Apice). Quel tratto resta comunque raggiungibile in direzione via Masseria Cancelleria dalla strada alternativa con ingresso dai civici 115 e 117 di via Capodimonte.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "Con il maltempo o altri imprevisti le date possono slittare e i lavori potrebbero andare avanti anche mercoledì 28, giovedì 29 e venerdì 30 ottobre.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "A che ora comincia e finisce ogni giornata di lavori: il comunicato del Comune non lo dice."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Benevento",
+      "titolo": "Ancora limitazioni della circolazione in via Masseria Cancelleria e via Cancelleria",
+      "url": "https://comune.benevento.it/novita/ancora-limitazioni-della-circolazione-in-via-masseria-cancelleria-e-via-cancelleria/",
+      "data": "21 ott"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Via Masseria Cancelleria e via Cancelleria: limitazioni per rifacimento asfalto",
+      "url": "https://www.ottopagine.it/bn/attualita/441687/via-masseria-cancelleria-e-via-cancelleria-limitazioni-per-rifacimento-asfalto.shtml",
+      "data": "21 ott"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Benevento, ancora limitazioni della circolazione in via Masseria Cancelleria e via Cancelleria",
+      "url": "https://www.ntr24.tv/2026/10/21/benevento-ancora-limitazioni-della-circolazione-in-via-masseria-cancelleria-e-via-cancelleria/",
+      "data": "21 ott"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Lavori stradali in via Masseria Cancelleria e via Cancelleria: modifiche temporanee alla viabilità",
+      "url": "https://www.beneventonews24.it/2026/10/21/lavori-stradali-in-via-masseria-cancelleria-e-via-cancelleria-modifiche-temporanee-alla-viabilita/",
+      "data": "21 ott"
+     }
+    ]
+   },
+   "foto": "lavori-stradali-2"
+  },
+  {
+   "id": "asl-benevento-farmacie-screening-oncologici",
+   "titolo": "Provincia di Benevento, l'ASL porta gli screening dei tumori nelle farmacie: informazioni, adesione e kit per il colon-retto",
+   "sintesi": "Martedì 20 ottobre l'ASL Benevento ha incontrato farmacisti e Federfarma per un accordo che farà delle farmacie un punto di accesso agli screening gratuiti. Si potrà informarsi, aderire, prenotare e ritirare il kit per il colon-retto.",
+   "categoria": "altro",
+   "zona": "provincia",
+   "immagine": "farmacia",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-20",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "ASL Benevento",
+     "url": "https://www.aslbenevento.it/notizie/asl-benevento-e-farmacie-insieme-gli-screening-oncologici"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Le farmacie della provincia di Benevento entreranno nella rete degli screening dei tumori dell'ASL. L'incontro per definire l'accordo (un protocollo d'intesa) si è tenuto martedì 20 ottobre nella sede dell'ASL Benevento, con la direttrice generale Tiziana Spinosa, il presidente dell'Ordine dei Farmacisti Maurizio Manna e il presidente di Federfarma Benevento Tommaso Cusano.",
+      "fonti": [
+       "ASL Benevento"
+      ]
+     },
+     {
+      "testo": "Nelle farmacie che aderiranno i cittadini potranno avere informazioni, controllare se possono partecipare ai programmi, aderire e prenotare gli esami. Per lo screening del colon-retto si potrà anche ritirare in farmacia il kit per cercare il sangue nascosto nelle feci. Le modalità precise saranno definite dal protocollo.",
+      "fonti": [
+       "ASL Benevento"
+      ]
+     },
+     {
+      "testo": "Gli screening dell'ASL sono gratuiti. Quello della cervice uterina è per le donne dai 25 ai 64 anni, quello con la mammografia per le donne dai 50 ai 69 anni, quello del colon-retto per donne e uomini dai 50 ai 69 anni. L'ASL spera così di raggiungere anche chi finora non ha aderito.",
+      "fonti": [
+       "ASL Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Da quando le farmacie saranno operative e quali farmacie aderiranno: il comunicato dice che le modalità saranno definite dal protocollo."
+    ],
+    "fonti": [
+     {
+      "nome": "ASL Benevento",
+      "titolo": "ASL Benevento e farmacie insieme per gli screening oncologici",
+      "url": "https://www.aslbenevento.it/notizie/asl-benevento-e-farmacie-insieme-gli-screening-oncologici",
+      "data": "20 ott"
+     }
+    ]
+   },
+   "foto": "farmacia"
+  },
   {
    "id": "benevento-tangenziale-est-scontro-tre-veicoli-20-ottobre",
    "titolo": "Benevento, tangenziale Est: scontro tra tre veicoli all'uscita Benevento Est, un ferito e lunghe code",
@@ -314,12 +461,12 @@
   },
   {
    "id": "rifiuti-blocco-tir-apice-morcone-cusano-sant-angelo-a-cupolo",
-   "titolo": "Blocco dei tir, rifiuti a rischio nel Sannio: a Sant'Angelo a Cupolo salta la raccolta, a Apice chiusa l'isola ecologica",
-   "sintesi": "Con le strade bloccate dai camion e il gasolio che scarseggia, in diversi Comuni del Sannio la raccolta dei rifiuti salta o rischia di saltare. A Sant'Angelo a Cupolo la raccolta è stata fermata; a Apice è chiusa l'isola ecologica dal 20 ottobre; Morcone e Cusano Mutri avvisano di possibili disservizi.",
+   "titolo": "Blocco dei tir, rifiuti a rischio nel Sannio: raccolta ferma a Sant'Angelo a Cupolo, da giovedì sospesa a Sant'Agata de' Goti, a San Giorgio del Sannio non si conferisce l'indifferenziata",
+   "sintesi": "Con le strade bloccate dai camion e il gasolio che scarseggia, in diversi Comuni del Sannio la raccolta dei rifiuti salta o rischia di saltare. A Sant'Agata de' Goti sarà sospesa da giovedì 22 ottobre; a San Giorgio del Sannio mercoledì sera non va conferito l'indifferenziato; ad Apice è chiusa l'isola ecologica.",
    "categoria": "altro",
    "zona": "provincia",
    "luogo": "Sannio",
-   "pubblicato": "2026-10-21T08:00:00+02:00",
+   "pubblicato": "2026-10-21T14:06:00+02:00",
    "stato": "ufficiale",
    "rilevante": false,
    "fonti": [
@@ -334,6 +481,14 @@
     {
      "nome": "Il Sannio Quotidiano",
      "url": "https://www.ilsannioquotidiano.it/2026/10/21/blocco-tir-stop-alla-raccolta-dei-rifiuti-a-santangelo-a-cupolo-a-rischio-pure-a-morcone-e-in-altri-centri/"
+    },
+    {
+     "nome": "Comune di Sant'Agata de' Goti",
+     "url": "https://www.comune.santagatadegoti.bn.it/novita/avvisi/novita_205.html"
+    },
+    {
+     "nome": "Comune di San Giorgio del Sannio",
+     "url": "https://www.comune.sangiorgiodelsannio.bn.it/novita/avvisi/novita_161.html"
     }
    ],
    "articolo": {
@@ -357,6 +512,13 @@
        "Comune di Apice",
        "Comune di Cusano Mutri"
       ]
+     },
+     {
+      "testo": "A Sant'Agata de' Goti il Comune ha avvisato che da giovedì 22 ottobre il servizio di raccolta potrà fermarsi, per lo sciopero degli autotrasportatori, i blocchi stradali e le difficoltà a trovare carburante, che rendono difficile portare i rifiuti agli impianti. Ai cittadini e alle attività chiede di non esporre i rifiuti e di tenerli in casa o nei locali fino a nuova comunicazione. A San Giorgio del Sannio il Comune scrive che la raccolta sta incontrando difficoltà e che mercoledì sera, 21 ottobre, la frazione indifferenziata (i rifiuti non separati) e gli ingombranti non vanno conferiti.",
+      "fonti": [
+       "Comune di Sant'Agata de' Goti",
+       "Comune di San Giorgio del Sannio"
+      ]
      }
     ],
     "cronologia": [
@@ -373,13 +535,22 @@
       "fonti": [
        "Il Sannio Quotidiano"
       ]
+     },
+     {
+      "data": "21 ottobre",
+      "fatto": "Il Comune di San Giorgio del Sannio chiede di non conferire l'indifferenziato e gli ingombranti la sera del 21; il Comune di Sant'Agata de' Goti annuncia la possibile sospensione della raccolta da giovedì 22 e chiede di non esporre i rifiuti.",
+      "fonti": [
+       "Comune di San Giorgio del Sannio",
+       "Comune di Sant'Agata de' Goti"
+      ]
      }
     ],
     "concordano": [],
     "divergono": [],
     "non_si_sa": [
      "Quali altri Comuni, oltre a quelli citati, hanno già saltato la raccolta.",
-     "Quando riprenderà la raccolta a Sant'Angelo a Cupolo e quando riaprirà l'isola ecologica di Apice."
+     "Quando riprenderà la raccolta a Sant'Angelo a Cupolo e a Sant'Agata de' Goti, e quando riaprirà l'isola ecologica di Apice.",
+     "Fino a quando San Giorgio del Sannio chiederà di non conferire l'indifferenziato: l'avviso parla solo della sera del 21 ottobre."
     ],
     "fonti": [
      {
@@ -398,6 +569,18 @@
       "nome": "Il Sannio Quotidiano",
       "titolo": "Blocco tir, stop alla raccolta dei rifiuti a Sant’Angelo a Cupolo. A rischio pure a Morcone e in altri centri",
       "url": "https://www.ilsannioquotidiano.it/2026/10/21/blocco-tir-stop-alla-raccolta-dei-rifiuti-a-santangelo-a-cupolo-a-rischio-pure-a-morcone-e-in-altri-centri/",
+      "data": "21 ott"
+     },
+     {
+      "nome": "Comune di Sant'Agata de' Goti",
+      "titolo": "SOSPENSIONE TEMPORANEA DEL SERVIZIO DI RACCOLTA RIFIUTI",
+      "url": "https://www.comune.santagatadegoti.bn.it/novita/avvisi/novita_205.html",
+      "data": "21 ott"
+     },
+     {
+      "nome": "Comune di San Giorgio del Sannio",
+      "titolo": "Avviso disservizio raccolta rifiuti 21.10.26",
+      "url": "https://www.comune.sangiorgiodelsannio.bn.it/novita/avvisi/novita_161.html",
       "data": "21 ott"
      }
     ]
@@ -988,15 +1171,15 @@
   {
    "id": "allerta-arancione-sannio-21-ottobre",
    "titolo": "Sannio, allerta arancione per maltempo mercoledì 21 ottobre: scuole chiuse a Benevento e in molti Comuni, chiusi anche parchi e cimiteri in diversi centri",
-   "sintesi": "La Protezione civile ha confermato l'allerta arancione per mercoledì 21 ottobre in tutte e tre le zone del Sannio: rischio frane e temporali, soprattutto al mattino. Scuole chiuse a Benevento e in molti Comuni; a Benevento, Montesarchio, Sant'Agata de' Goti, Pietrelcina e Frasso Telesino chiusi anche parchi o cimiteri.",
+   "sintesi": "La Protezione civile ha confermato l'allerta arancione per mercoledì 21 ottobre in tutte e tre le zone del Sannio: rischio frane e temporali, soprattutto al mattino. Scuole chiuse a Benevento e in molti Comuni; a Benevento, Montesarchio, Sant'Agata de' Goti, Pietrelcina e Frasso Telesino chiusi anche parchi o cimiteri. Per giovedì 22 ottobre la Regione ha poi emesso un'allerta gialla, dalle 00 alle 16, su tutta la Campania.",
    "categoria": "meteo",
    "zona": "provincia",
    "immagine": "pioggia",
    "luogo": "Sannio",
-   "pubblicato": "2026-10-21T08:30:00+02:00",
+   "pubblicato": "2026-10-21T14:06:00+02:00",
    "stato": "ufficiale",
    "rilevante": true,
-   "in_vigore_fino": "2026-10-21",
+   "in_vigore_fino": "2026-10-22",
    "fonti": [
     {
      "nome": "Comune di Benevento",
@@ -1053,6 +1236,10 @@
     {
      "nome": "Il Sannio Quotidiano",
      "url": "https://www.ilsannioquotidiano.it/2026/10/21/allerta-meteo-scuole-chiuse-in-diversi-centri-della-provincia/"
+    },
+    {
+     "nome": "NTR24 (allerta 22)",
+     "url": "https://www.ntr24.tv/2026/10/21/sannio-allerta-meteo-gialla-fino-a-giovedi-pomeriggio-piogge-in-diminuzione-gia-dal-mattino/"
     }
    ],
    "articolo": {
@@ -1110,6 +1297,13 @@
       "fonti": [
        "Comune di Frasso Telesino",
        "Comune di Moiano"
+      ]
+     },
+     {
+      "data": "21 ottobre",
+      "fatto": "La Regione Campania emette l'allerta gialla per giovedì 22 ottobre, dalle 00 alle 16, su tutta la regione.",
+      "fonti": [
+       "NTR24 (allerta 22)"
       ]
      }
     ],
@@ -1177,7 +1371,7 @@
     ],
     "non_si_sa": [
      "Cosa chiudono, oltre alle scuole, i Comuni elencati solo dai giornali (Airola, Paolisi, Arpaia, Telese Terme, Limatola e gli altri): parchi, cimiteri e impianti sportivi non sono precisati.",
-     "Se le chiusure saranno prorogate a giovedì 22 ottobre: non ho trovato ordinanze per quel giorno. Il bollettino del 22 non è ancora uscito."
+     "Se giovedì 22 ottobre ci saranno chiusure di scuole o parchi: al momento della lettura non ho trovato ordinanze dei Comuni per quel giorno."
     ],
     "fonti": [
      {
@@ -1263,6 +1457,12 @@
       "titolo": "Allerta meteo, scuole chiuse in diversi centri della provincia",
       "url": "https://www.ilsannioquotidiano.it/2026/10/21/allerta-meteo-scuole-chiuse-in-diversi-centri-della-provincia/",
       "data": "21 ott"
+     },
+     {
+      "nome": "NTR24 (allerta 22)",
+      "titolo": "Sannio, allerta meteo gialla fino a giovedì pomeriggio. Piogge in diminuzione già dal mattino",
+      "url": "https://www.ntr24.tv/2026/10/21/sannio-allerta-meteo-gialla-fino-a-giovedi-pomeriggio-piogge-in-diminuzione-gia-dal-mattino/",
+      "data": "21 ott"
      }
     ],
     "racconto": [
@@ -1314,6 +1514,13 @@
       "fonti": [
        "NTR24",
        "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "Giovedì 22 ottobre l'allerta scende a gialla. La Protezione civile della Regione Campania ha emesso un avviso giallo valido dalle 00 alle 16 su tutta la regione. Sono previste piogge isolate, anche a rovescio o temporale, che nelle zone 2 («Alto Volturno e Matese») e 4 («Alta Irpinia e Sannio») dovrebbero finire in mattinata. Il rischio indicato è localizzato: acqua che scorre sulle strade, tombini che rigurgitano, allagamenti nelle zone basse e piccoli corsi d'acqua che si alzano. Il bollettino nazionale del 22 non era ancora uscito al momento di scrivere. Meteoalarm dà per il 22 solo allerta gialla per il vento.",
+      "fonti": [
+       "NTR24 (allerta 22)",
+       "Meteoalarm"
       ]
      }
     ]
@@ -2067,7 +2274,7 @@
    "zona": "provincia",
    "immagine": "camion",
    "luogo": "Tufara Valle",
-   "pubblicato": "2026-10-21T00:05:00+02:00",
+   "pubblicato": "2026-10-21T13:27:00+02:00",
    "stato": "confermata",
    "fonti": [
     {
@@ -2089,6 +2296,14 @@
     {
      "nome": "Cronache del Sannio",
      "url": "https://www.cronachedelsannio.it/sannionews24/autotrasportatori-sciopero-appia-castel-del-lago/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/caro-carburanti-protesta-nel-sannio-cittadini-in-strada-e-traffico-rallentato-sulla-statale-87/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/caro-carburanti-protesta-nel-sannio-cittadini-in-strada-sulla-statale-87-video/"
     }
    ],
    "articolo": {
@@ -2172,6 +2387,14 @@
       "fonti": [
        "Il Mattino (21/10)"
       ]
+     },
+     {
+      "data": "21 ottobre, mattina",
+      "fatto": "Decine di cittadini rallentano il traffico sulla statale 87 allo svincolo di Campolattaro.",
+      "fonti": [
+       "Anteprima24",
+       "TV7 Benevento"
+      ]
      }
     ],
     "concordano": [
@@ -2199,6 +2422,13 @@
       "fonti": [
        "Ottopagine (20/10)",
        "Il Mattino"
+      ]
+     },
+     {
+      "testo": "Protesta di decine di cittadini sulla statale 87 allo svincolo di Campolattaro, con traffico rallentato, il 21 ottobre.",
+      "fonti": [
+       "Anteprima24",
+       "TV7 Benevento"
       ]
      }
     ],
@@ -2289,6 +2519,18 @@
       "titolo": "Benevento, proteste degli autotrasportatori non-stop: dall’Appia all’autostrada",
       "url": "https://www.ilmattino.it/benevento/benevento_proteste_autotrasportatori_autostrada-9837732.html",
       "data": "21 ott, 00:05"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Caro carburanti, protesta nel Sannio: cittadini in strada e traffico rallentato sulla Statale 87",
+      "url": "https://www.anteprima24.it/benevento/caro-carburanti-protesta-nel-sannio-cittadini-in-strada-e-traffico-rallentato-sulla-statale-87/",
+      "data": "21 ott"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Caro carburanti, protesta nel Sannio: cittadini in strada sulla Statale 87 (video)",
+      "url": "https://www.tvsette.net/caro-carburanti-protesta-nel-sannio-cittadini-in-strada-sulla-statale-87-video/",
+      "data": "21 ott, 13:27"
      }
     ],
     "racconto": [
@@ -2339,6 +2581,13 @@
        "Il Mattino (21/10)",
        "Ottopagine (19/10)",
        "NTR24"
+      ]
+     },
+     {
+      "testo": "Mercoledì 21 ottobre, in mattinata, decine di cittadini sono scesi in strada anche sulla statale 87 Benevento-Campobasso, vicino allo svincolo di Campolattaro, e hanno rallentato la circolazione. Il punto è un nodo per chi va verso Circello, Colle Sannita, Castelpagano e Riccia (in Molise), verso la diga sul Tammaro, Casalduni, Ponte e la Valle Telesina. I manifestanti protestano per il caro carburanti e il costo della vita e temono la paralisi dei trasporti, la chiusura di fabbriche e il blocco della vendita dei prodotti agricoli. Le due testate ricordano che sono gli stessi cittadini che avevano protestato contro l'impianto di trattamento dei rifiuti di Sassinoro.",
+      "fonti": [
+       "Anteprima24",
+       "TV7 Benevento"
       ]
      }
     ]
@@ -4061,7 +4310,7 @@
    "titolo": "Caro gasolio, la protesta di tir e agricoltori nel Sannio: dove sono i blocchi, cosa manca e cosa succede adesso",
    "sommario": "Da lunedì 19 ottobre gli autotrasportatori fermano i camion sull'Appia a Tufara Valle e a Castel del Lago; ci sono stati blocchi anche sulla Telesina a San Salvatore Telesino. Nei supermercati mancano i prodotti freschi e alcuni distributori hanno finito il gasolio. Da giovedì 22 si aggiungono gli agricoltori. Oggi, 20 ottobre, il ministro Salvini incontra a Milano associazioni e gruppi di protesta, anche della Campania.",
    "luogo": "Provincia di Benevento",
-   "aggiornato": "2026-10-21T10:06:00+02:00",
+   "aggiornato": "2026-10-21T14:06:00+02:00",
    "collegate": [
     "tir-appia-telesina",
     "scaffali-vuoti",
@@ -4432,6 +4681,15 @@
       "Il Sannio Quotidiano (rifiuti)",
       "Comune di Apice"
      ]
+    },
+    {
+     "data": "21 ottobre",
+     "fatto": "Decine di cittadini rallentano il traffico sulla statale 87 a Campolattaro. I Comuni di Sant'Agata de' Goti e San Giorgio del Sannio avvisano dello stop alla raccolta dei rifiuti.",
+     "fonti": [
+      "Anteprima24 (SS87)",
+      "Comune di Sant'Agata de' Goti",
+      "Comune di San Giorgio del Sannio"
+     ]
     }
    ],
    "non_si_sa": [
@@ -4589,6 +4847,24 @@
      "titolo": "Avviso pubblico per segnalazione di possibili disservizi nel servizio di raccolta rifiuti",
      "url": "https://www.comune.apice.bn.it/novita/notizie/novita_140.html",
      "data": "20 ott"
+    },
+    {
+     "nome": "Anteprima24 (SS87)",
+     "titolo": "Caro carburanti, protesta nel Sannio: cittadini in strada e traffico rallentato sulla Statale 87",
+     "url": "https://www.anteprima24.it/benevento/caro-carburanti-protesta-nel-sannio-cittadini-in-strada-e-traffico-rallentato-sulla-statale-87/",
+     "data": "21 ott"
+    },
+    {
+     "nome": "Comune di Sant'Agata de' Goti",
+     "titolo": "SOSPENSIONE TEMPORANEA DEL SERVIZIO DI RACCOLTA RIFIUTI",
+     "url": "https://www.comune.santagatadegoti.bn.it/novita/avvisi/novita_205.html",
+     "data": "21 ott"
+    },
+    {
+     "nome": "Comune di San Giorgio del Sannio",
+     "titolo": "Avviso disservizio raccolta rifiuti 21.10.26",
+     "url": "https://www.comune.sangiorgiodelsannio.bn.it/novita/avvisi/novita_161.html",
+     "data": "21 ott"
     }
    ],
    "nota": "Correzione: nella versione delle 8:45 scrivevamo che il ministero dei Trasporti aveva convocato le associazioni per il 27 ottobre, come riportava Il Post il 16 ottobre. ANSA (17 ottobre) e Il Sole 24 Ore (18 ottobre) riportano che il ministro Salvini ha anticipato il tavolo a oggi, martedì 20 ottobre, in Prefettura a Milano. Abbiamo corretto sommario, «In breve», sezioni, domande e cronologia."
