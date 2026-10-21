@@ -1,7 +1,90 @@
 {
- "aggiornato": "2026-10-21T06:05:00+02:00",
+ "aggiornato": "2026-10-21T08:05:00+02:00",
  "giornali_letti": 15,
  "notizie": [
+  {
+   "id": "san-pio-pronto-soccorso-medici-prorogati",
+   "titolo": "Benevento, ospedale San Pio: prorogati fino al 31 dicembre i contratti di sei medici del Pronto soccorso, tre dei quali in pensione",
+   "sintesi": "L'azienda ospedaliera San Pio ha prorogato fino al 31 dicembre 2026 gli incarichi di sei medici del Pronto soccorso: tre lavorano nell'ambulatorio per i casi meno gravi, tre sono medici in pensione richiamati in servizio.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "immagine": "pronto-soccorso",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-21T07:33:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/20/san-pio-il-pronto-soccorso-non-resta-scoperto-prorogati-sei-medici-tre-sono-pensionati-fino-a-fine-anno/"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/21/pronto-soccorso-prorogati-incarichi-a-tempo-sei-medici-tre-dei-quali-in-pensione-resteranno-fino-a-fine-anno/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Pronto soccorso dell'ospedale San Pio di Benevento non resta senza medici fino a fine anno. La direttrice generale dell'azienda ospedaliera, Maria Morgante, ha firmato martedì 20 ottobre due delibere, la n. 993 e la n. 994, che prorogano sei incarichi da libero professionista (contratti di lavoro non da dipendente).",
+      "fonti": [
+       "NTR24",
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "La prima delibera riguarda tre medici dell'ambulatorio del Pronto soccorso per i pazienti con codice bianco e verde, cioè con problemi meno gravi. I loro contratti scadevano il 31 ottobre e ora vanno avanti fino al 31 dicembre 2026. L'ambulatorio serve a ridurre i tempi per i casi meno urgenti e a contenere il sovraffollamento del Pronto soccorso.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "La seconda delibera riguarda tre medici in pensione, richiamati in servizio con incarichi da libero professionista nella Medicina d'urgenza. Il Sannio Quotidiano precisa che sono specialisti in medicina di emergenza-urgenza e si occupano di tutti i codici, non solo di quelli minori. I loro contratti, firmati ad aprile per sei mesi, scadevano il 20 ottobre: la proroga vale dal 21 ottobre al 31 dicembre 2026.",
+      "fonti": [
+       "NTR24",
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "In tutti e due i casi la proroga serve a coprire il servizio finché l'azienda non assume nuovi medici con le procedure ordinarie. Un'ulteriore proroga, fino a un massimo di sei mesi complessivi, sarà possibile solo se nel 2027 resteranno in vigore le norme che permettono di usare medici in pensione e questo tipo di incarichi.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Sei incarichi da libero professionista al Pronto soccorso del San Pio sono prorogati fino a fine anno: tre medici dei codici minori e tre medici in pensione.",
+      "fonti": [
+       "NTR24",
+       "Il Sannio Quotidiano"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Quanti nuovi medici arriveranno con i concorsi e quando.",
+     "Cosa succede dopo il 31 dicembre 2026.",
+     "Del Sannio Quotidiano si legge solo l'inizio dell'articolo: il resto è a pagamento."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "San Pio, il Pronto Soccorso non resta scoperto: prorogati sei medici – tre sono pensionati – fino a fine anno",
+      "url": "https://www.ntr24.tv/2026/10/20/san-pio-il-pronto-soccorso-non-resta-scoperto-prorogati-sei-medici-tre-sono-pensionati-fino-a-fine-anno/",
+      "data": "20 ott, 17:12"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Pronto soccorso, prorogati incarichi a tempo: sei medici, tre dei quali in pensione, resteranno fino a fine anno",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/21/pronto-soccorso-prorogati-incarichi-a-tempo-sei-medici-tre-dei-quali-in-pensione-resteranno-fino-a-fine-anno/",
+      "data": "21 ott, 07:33"
+     }
+    ]
+   },
+   "foto": "pronto-soccorso"
+  },
   {
    "id": "acqua-giovedi-22-ottobre-paduli-alto-calore",
    "titolo": "Paduli e altri sette Comuni del Sannio senz'acqua giovedì 22 ottobre dalle 14 alle 24 per lavori sulla condotta",
@@ -111,21 +194,10 @@
     }
    ],
    "articolo": {
-    "cosa": "Il sindaco Clemente Mastella ha indicato alla Segretaria generale Maria Luisa Dovetto, che guida le Risorse umane del Comune, di predisporre gli atti per dare il diritto al lavoro a distanza (smart working) ai dipendenti che risiedono fuori dal territorio di Benevento. Il sindaco cita l'inflazione di settembre al 4,1% (il dato più alto dell'ultimo triennio) e il forte aumento dei prezzi del carburante. Lo strumento sarà attivato «nei limiti del possibile» e compatibilmente con le esigenze del Comune.",
-    "cronologia": [
-     {
-      "data": "20 ottobre",
-      "fatto": "Il Comune pubblica l'indirizzo del sindaco alla Segretaria generale.",
-      "fonti": [
-       "Comune di Benevento",
-       "NTR24",
-       "Cronache del Sannio"
-      ]
-     }
-    ],
+    "cronologia": [],
     "concordano": [
      {
-      "testo": "Il sindaco chiede di predisporre gli atti per lo smart working dei dipendenti comunali residenti fuori Benevento, per il caro carburante e il carovita.",
+      "testo": "Il sindaco ha dato indicazione alla Segretaria generale di preparare gli atti per il lavoro a distanza dei dipendenti che non risiedono a Benevento, per l'inflazione al 4,1% e il carburante, nei limiti del possibile e delle esigenze del Comune.",
       "fonti": [
        "Comune di Benevento",
        "NTR24",
@@ -157,6 +229,32 @@
       "url": "https://www.cronachedelsannio.it/sannionews24/mastella-smartworking-dipendenti-comunali/",
       "data": "20 ott"
      }
+    ],
+    "racconto": [
+     {
+      "testo": "Il sindaco di Benevento, Clemente Mastella, vuole che i dipendenti del Comune che abitano fuori città possano lavorare da casa. Martedì 20 ottobre ha chiesto alla Segretaria generale, Maria Luisa Dovetto, che guida anche l'ufficio del personale, di preparare gli atti necessari.",
+      "fonti": [
+       "Comune di Benevento",
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Il motivo è il costo della vita. Il sindaco ricorda l'inflazione di settembre al 4,1%, il dato più alto degli ultimi tre anni, e l'aumento molto forte dei prezzi del carburante. Secondo lui questi rincari mangiano gli stipendi di chi è «di fatto obbligato» a prendere l'auto ogni giorno per raggiungere il posto di lavoro.",
+      "fonti": [
+       "Comune di Benevento",
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Per ora è un indirizzo del sindaco, non una regola già in vigore. Il lavoro a distanza (smart working) sarà attivato «nei limiti del possibile» e solo se è compatibile con le esigenze del Comune, che deve continuare a funzionare bene. Gli atti devono ancora essere preparati.",
+      "fonti": [
+       "Comune di Benevento",
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     }
     ]
    },
    "foto": "lavoro-da-casa"
@@ -184,20 +282,10 @@
     }
    ],
    "articolo": {
-    "cosa": "In occasione della Commemorazione dei Defunti il cimitero comunale di Benevento sarà aperto al pubblico da mercoledì 28 ottobre a martedì 3 novembre 2026, dalle 7 alle 17.30. Lunedì 2 novembre, alle 10, nella Chiesa Madre all'interno del cimitero, si celebra la Messa in suffragio dei defunti.",
-    "cronologia": [
-     {
-      "data": "20 ottobre",
-      "fatto": "Il Comune comunica gli orari di apertura del cimitero per la Commemorazione dei Defunti.",
-      "fonti": [
-       "Comune di Benevento",
-       "Cronache del Sannio"
-      ]
-     }
-    ],
+    "cronologia": [],
     "concordano": [
      {
-      "testo": "Apertura dal 28 ottobre al 3 novembre; Messa lunedì 2 novembre alle 10.",
+      "testo": "La messa in suffragio dei defunti è lunedì 2 novembre alle 10 nella Chiesa Madre del cimitero.",
       "fonti": [
        "Comune di Benevento",
        "Cronache del Sannio"
@@ -218,6 +306,22 @@
       "titolo": "Commemorazione defunti, dal 28 ottobre al 3 novembre nuovi orari per il cimitero",
       "url": "https://www.cronachedelsannio.it/sannionews24/commemorazione-defunti-nuovi-orari-cimitero-benevento/",
       "data": "20 ott"
+     }
+    ],
+    "racconto": [
+     {
+      "testo": "Per la Commemorazione dei Defunti il cimitero comunale di Benevento resta aperto al pubblico da mercoledì 28 ottobre a martedì 3 novembre 2026, tutti i giorni dalle 7 alle 17.30. Lo comunica il Comune.",
+      "fonti": [
+       "Cronache del Sannio",
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "Lunedì 2 novembre, alle 10, nella Chiesa Madre che sta dentro il cimitero si celebra la messa in suffragio dei defunti.",
+      "fonti": [
+       "Comune di Benevento",
+       "Cronache del Sannio"
+      ]
      }
     ]
    },
@@ -249,11 +353,18 @@
     }
    ],
    "articolo": {
-    "cosa": "I sindacati FP Cgil e Uil Fpl dicono che alla clinica Gepos di Telese Terme due tecnici di laboratorio, entrambi con più di trent'anni di servizio, sono stati o stanno per essere licenziati. Chiedono all'azienda di spiegare i motivi e all'Asl di Benevento di controllare l'organizzazione del laboratorio. Il sit-in (presidio di protesta) è fissato davanti alla clinica per lunedì 26 ottobre, dalle 10 alle 13. La versione dell'azienda non è riportata dai giornali letti.",
     "cronologia": [
      {
-      "data": "20 ottobre",
-      "fatto": "I sindacati rendono nota la vicenda: secondo NTR24 quella mattina hanno saputo del licenziamento di un tecnico, mentre la lettera per il secondo non sarebbe ancora stata consegnata perché è in ferie. Annunciano il sit-in del 26 ottobre.",
+      "data": "20 ottobre, mattina",
+      "fatto": "I sindacati dicono di aver saputo del licenziamento di un tecnico; la lettera per il secondo non sarebbe ancora arrivata.",
+      "fonti": [
+       "NTR24",
+       "LabTV"
+      ]
+     },
+     {
+      "data": "26 ottobre, 10-13",
+      "fatto": "Sit-in di FP Cgil e Uil Fpl davanti alla clinica Gepos di Telese Terme.",
       "fonti": [
        "NTR24",
        "LabTV",
@@ -263,7 +374,7 @@
     ],
     "concordano": [
      {
-      "testo": "Due tecnici di laboratorio con oltre trent'anni di servizio alla Gepos di Telese Terme; la vertenza è sollevata da FP Cgil e Uil Fpl; sit-in davanti alla clinica lunedì 26 ottobre.",
+      "testo": "Due tecnici del laboratorio analisi della Gepos, con oltre trent'anni di servizio, sono interessati dai licenziamenti, denunciati da FP Cgil e Uil Fpl.",
       "fonti": [
        "NTR24",
        "LabTV",
@@ -271,22 +382,15 @@
       ]
      },
      {
-      "testo": "I sindacati chiedono all'azienda di chiarire le ragioni e all'Asl di Benevento di fare verifiche sul laboratorio.",
+      "testo": "Il sit-in davanti alla clinica è lunedì 26 ottobre dalle 10 alle 13; i sindacati chiedono chiarezza all'azienda e verifiche all'Asl.",
       "fonti": [
        "NTR24",
+       "LabTV",
        "Fremondoweb"
       ]
      }
     ],
-    "divergono": [
-     {
-      "testo": "Fremondoweb scrive che i due tecnici sono «interessati da provvedimenti di licenziamento»; NTR24 precisa che per ora i sindacati hanno appreso di un solo licenziamento e che al secondo lavoratore la lettera non sarebbe stata ancora consegnata.",
-      "fonti": [
-       "Fremondoweb",
-       "NTR24"
-      ]
-     }
-    ],
+    "divergono": [],
     "non_si_sa": [
      "Le ragioni dei licenziamenti secondo l'azienda.",
      "Se l'Asl farà verifiche.",
@@ -310,6 +414,37 @@
       "titolo": "Gepos, licenziati due tecnici di laboratorio: i sindacati annunciano un sit-in a Telese",
       "url": "https://www.fremondoweb.com/notizie-dalla-valle-telesina/gepos-licenziati-due-tecnici-di-laboratorio-i-sindacati-annunciano-un-sit-in-a-telese/",
       "data": "20 ott"
+     }
+    ],
+    "racconto": [
+     {
+      "testo": "Alla clinica Gepos di Telese Terme due tecnici del laboratorio analisi sono stati licenziati dopo più di trent'anni di lavoro. Lo denunciano la FP Cgil e la Uil Fpl, i sindacati dei dipendenti pubblici e della sanità, che lunedì 26 ottobre, dalle 10 alle 13, fanno un sit-in (una protesta in piazza) davanti alla clinica.",
+      "fonti": [
+       "NTR24",
+       "LabTV",
+       "Fremondoweb"
+      ]
+     },
+     {
+      "testo": "Secondo i sindacati, martedì 20 ottobre in mattinata hanno saputo del licenziamento di un tecnico. Per il secondo la lettera non sarebbe stata ancora consegnata, perché è in ferie. Il primo lavoratore, dicono, sarebbe l'unico in famiglia a portare a casa uno stipendio.",
+      "fonti": [
+       "NTR24",
+       "LabTV"
+      ]
+     },
+     {
+      "testo": "I sindacati chiedono all'azienda di spiegare perché ha licenziato e se ha rispettato i criteri previsti, come gli anni di servizio e i carichi di famiglia. Ricordano che il laboratorio, secondo i loro dati, fa più di 200mila prestazioni all'anno, con i prelievi affidati a personale esterno, e chiedono se avere meno personale sia compatibile con la qualità e la sicurezza degli esami.",
+      "fonti": [
+       "NTR24",
+       "LabTV"
+      ]
+     },
+     {
+      "testo": "Chiedono anche all'Asl di Benevento di fare le verifiche di sua competenza e al sindaco di Telese Terme di essere davanti alla clinica lunedì per incontrare i lavoratori. Richiamano infine il tema dei soldi pubblici che vanno alle strutture private accreditate, cioè quelle che fanno prestazioni per conto del servizio sanitario.",
+      "fonti": [
+       "NTR24",
+       "LabTV"
+      ]
      }
     ]
    },
@@ -374,7 +509,6 @@
     }
    ],
    "articolo": {
-    "cosa": "La Protezione civile della Regione Campania ha emanato un avviso di allerta arancione valido dalla mezzanotte e per tutta la giornata di mercoledì 21 ottobre per le zone 1, 2, 3 e 4, cioè anche per l'Alto Volturno e Matese (Telese, Cerreto, Airola…) e per l'Alta Irpinia e Sannio (Benevento, Montesarchio, Fortore…). Si prevedono piogge e temporali, anche forti, soprattutto nella prima parte della giornata, con possibili frane, caduta di massi, allagamenti e torrenti che si ingrossano. Il sindaco di Montesarchio ha già chiuso scuole, villa comunale, parchi e cimitero; a Benevento il sindaco Mastella ha firmato un'ordinanza che chiude per mercoledì scuole di ogni ordine e grado (asili nido compresi), villa comunale, parchi cittadini e cimitero (restano garantiti i funerali). Il bollettino della Protezione civile nazionale delle 15:21 di oggi conferma il livello arancione (rischio frane) per tutte e tre le zone del Sannio. Ordinanze di chiusura anche a Sant'Agata de' Goti (n. 77, con attivazione del centro operativo comunale) e a Pietrelcina (n. 27: scuole, cimitero, impianti sportivi, parchi e ville comunali). Il Comune di Guardia Sanframondi ha pubblicato l'ordinanza sindacale n. 8 del 20 ottobre con la chiusura delle scuole di ogni ordine e grado.",
     "cronologia": [
      {
       "data": "20 ottobre, 12:09",
@@ -487,7 +621,8 @@
      }
     ],
     "non_si_sa": [
-     "Quali altri Comuni del Sannio chiuderanno scuole, parchi e cimiteri: NTR24 scrive che a Moiano la didattica è sospesa, ma non ho trovato l'ordinanza del Comune."
+     "Cosa chiudono, oltre alle scuole, i Comuni elencati solo da NTR24: parchi, cimiteri e impianti sportivi non sono precisati.",
+     "Se le chiusure saranno prorogate a giovedì 22 ottobre: non ho trovato ordinanze per quel giorno. Il bollettino del 22 non è ancora uscito."
     ],
     "fonti": [
      {
@@ -556,6 +691,55 @@
       "url": "https://notiziebenevento.it/meteo.json",
       "data": "20 ott, 15:21"
      }
+    ],
+    "racconto": [
+     {
+      "testo": "Mercoledì 21 ottobre nel Sannio c'è l'allerta arancione della Protezione civile per frane e temporali. Il bollettino nazionale delle 15:21 di martedì 20 ottobre dà arancione per il rischio frane nelle tre zone di allerta in cui sono divisi i 78 Comuni del Sannio. Nella zona che comprende Arpaia, Forchia, Pannarano e Paolisi è gialla anche l'allerta per i fiumi che si gonfiano.",
+      "fonti": [
+       "Protezione civile (bollettino)"
+      ]
+     },
+     {
+      "testo": "L'avviso della Protezione civile regionale vale dalla mezzanotte e per tutta la giornata di mercoledì, per quattro zone della Campania; sul resto della regione l'allerta è gialla. Sono previste piogge e temporali, anche forti, soprattutto nella prima parte della giornata. I rischi indicati sono frane e caduta di massi, anche dove gli incendi dei boschi hanno indebolito il terreno, allagamenti di cantine e piani terra, acqua sulle strade e piccoli corsi d'acqua che si alzano. Ai sindaci è raccomandato di attivare i centri operativi comunali.",
+      "fonti": [
+       "Cronache del Sannio",
+       "NTR24",
+       "Fremondoweb",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Meteoalarm, il servizio europeo con i dati della Protezione civile, conferma l'arancione per pioggia e temporali dalle 02:00 alle 19:59 di mercoledì. Aggiunge un'allerta gialla per il vento, dalle 08:00 di mercoledì all'01:59 di giovedì 22. Bollettino e Meteoalarm concordano.",
+      "fonti": [
+       "Meteoalarm",
+       "Protezione civile (bollettino)"
+      ]
+     },
+     {
+      "testo": "A Benevento il sindaco Clemente Mastella ha chiuso per mercoledì le scuole pubbliche, private e paritarie di ogni ordine e grado, asili nido compresi, la villa comunale, i parchi cittadini e il cimitero, dove restano garantiti i funerali e le attività interne urgenti. Il Conservatorio «N. Sala» e l'Università decidono da sé. Secondo NTR24 l'Università del Sannio sospende le attività in presenza in tutte le sedi, tranne i laboratori indifferibili, e i servizi agli studenti sono a distanza. Il sindaco invita alla prudenza per il rischio frane e le raffiche di vento.",
+      "fonti": [
+       "Comune di Benevento",
+       "Anteprima24",
+       "NTR24",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "A Montesarchio il sindaco Carmelo Sandomenico ha firmato l'ordinanza n. 34: chiusi scuole, villa comunale, parchi e cimitero, con i funerali garantiti. A Sant'Agata de' Goti l'ordinanza (n. 77, dalle 00:00 alle 23:59) chiude scuole, parchi e cimiteri e attiva il centro operativo comunale. A Pietrelcina l'ordinanza n. 27 chiude scuole, cimitero, impianti sportivi, parchi e ville comunali. A Guardia Sanframondi l'ordinanza n. 8 chiude le scuole di ogni ordine e grado.",
+      "fonti": [
+       "Cronache del Sannio",
+       "NTR24",
+       "Comune di Sant'Agata de' Goti",
+       "Comune di Pietrelcina",
+       "Comune di Guardia Sanframondi"
+      ]
+     },
+     {
+      "testo": "NTR24 elenca molti altri Comuni con le scuole chiuse. In Valle Caudina: Airola, Moiano, Paolisi e Arpaia. In Valle Telesina e nell'area del Titerno: Telese Terme, Solopaca, Dugenta, Melizzano, Faicchio, San Lorenzello, Castelvenere, Cerreto Sannita, Frasso Telesino, San Lorenzo Maggiore, Limatola e Durazzano. Nell'area del Taburno e del Vitulanese: Apollosa e Cautano. Tra Fortore e Alto Tammaro: San Marco dei Cavoti, Pesco Sannita, Colle Sannita e Circello. Di questi Comuni non ho letto le ordinanze: l'elenco è solo di NTR24.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
     ]
    },
    "foto": "pioggia"
@@ -586,38 +770,10 @@
     }
    ],
    "articolo": {
-    "cosa": "Istituto Zooprofilattico del Mezzogiorno, ASL e ARPAC (l'agenzia regionale per l'ambiente) continuano i controlli sulle conseguenze dell'incendio di Airola. Nell'aggiornamento relativo al 10-16 ottobre sono state confermate due non conformità (valori fuori norma) per diossine nel latte di pecora a Cervinara: il latte è stato bloccato ed escluso dalla catena alimentare dai servizi veterinari dell'ASL di Avellino, che cercano come gli animali siano stati esposti, anche guardando i pascoli. Il Comitato Salute e Ambiente di Airola e della Valle Caudina chiede a allevatori e produttori di richiedere loro stessi i controlli all'ASL.",
-    "cronologia": [
-     {
-      "data": "10-16 ottobre",
-      "fatto": "Periodo coperto dall'ultimo aggiornamento dei controlli: due non conformità per diossine nel latte di pecora a Cervinara, già bloccato. Prima erano state comunicate un'irregolarità su erba da pascolo ad Airola, una su mais trinciato a Bonea e una su erba da pascolo a Forchia.",
-      "fonti": [
-       "Ottopagine",
-       "NTR24",
-       "Cronache del Sannio"
-      ]
-     },
-     {
-      "data": "20 ottobre",
-      "fatto": "Gli esiti vengono resi noti. Il Comitato Salute e Ambiente lancia un appello alla filiera del latte perché chieda i controlli all'ASL.",
-      "fonti": [
-       "Ottopagine",
-       "NTR24",
-       "Cronache del Sannio"
-      ]
-     }
-    ],
+    "cronologia": [],
     "concordano": [
      {
-      "testo": "Due non conformità per diossine nel latte di pecora a Cervinara; latte bloccato. Suoli agricoli: nessun superamento delle soglie nei nove esiti definitivi (3 Airola, 2 San Martino Valle Caudina, uno ciascuno Arienzo, Cervinara, Rotondi, Santa Maria a Vico).",
-      "fonti": [
-       "Ottopagine",
-       "NTR24",
-       "Cronache del Sannio"
-      ]
-     },
-     {
-      "testo": "Esiti favorevoli per uva, melanzane ed erba medica ad Airola, uva a San Martino Valle Caudina, zucca a Cervinara. A Forchia restano «in conferma» due risultati sulle olive e uno sul latte di pecora; altre 14 registrazioni sui suoli sono in lavorazione.",
+      "testo": "Nell'aggiornamento del 10-16 ottobre sono confermate due non conformità per diossine nel latte di pecora a Cervinara, bloccato dall'Asl di Avellino; nei nove esiti definitivi sui terreni nessun superamento delle soglie.",
       "fonti": [
        "Ottopagine",
        "NTR24",
@@ -648,6 +804,46 @@
       "titolo": "Incendio Airola: diossine nel latte ovino, immediatamente bloccato",
       "url": "https://www.cronachedelsannio.it/sannionews24/incendio-airola-diossine-latte-ovino-immediatamente-bloccato",
       "data": "20 ott, 11:29"
+     }
+    ],
+    "racconto": [
+     {
+      "testo": "Dopo l'incendio di Airola, in Valle Caudina, i controlli sugli alimenti hanno trovato diossine (sostanze inquinanti che si formano quando bruciano certi materiali) nel latte di pecora di Cervinara, in provincia di Avellino. Nell'ultimo aggiornamento, che riguarda i giorni dal 10 al 16 ottobre, le irregolarità confermate sono due. Il latte è stato bloccato subito e tolto dalla catena alimentare, quindi non va in commercio: l'ha deciso il servizio veterinario dell'Asl di Avellino.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "I controlli sono fatti insieme dall'Istituto Zooprofilattico Sperimentale del Mezzogiorno (il laboratorio pubblico che analizza alimenti e animali), dalle Asl e dall'Arpac, l'agenzia regionale per l'ambiente. Cronache del Sannio scrive che l'aggiornamento è una nota della Regione Campania. I dati sono dell'Istituto al 16 ottobre e dell'Arpac al 13 ottobre.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Le altre irregolarità, già comunicate, sono: erba da pascolo ad Airola, mais trinciato (mais tagliato a pezzi per i mangimi) a Bonea ed erba da pascolo a Forchia. Gli esiti buoni riguardano uva, melanzane ed erba medica ad Airola, uva a San Martino Valle Caudina e zucca a Cervinara. A Forchia restano «in conferma» due risultati sulle olive e uno sul latte di pecora.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Sui terreni agricoli non ci sono superamenti delle soglie di contaminazione nei nove esiti definitivi: tre di Airola, due di San Martino Valle Caudina e uno ciascuno per Arienzo, Cervinara, Rotondi e Santa Maria a Vico. Un altro risultato di Airola, senza superamenti, è ancora in verifica e altre 14 analisi sono in lavorazione.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Il servizio veterinario dell'Asl di Avellino ha avviato le verifiche per capire come gli animali di Cervinara siano stati esposti, guardando anche ai pascoli. Intanto il Comitato Salute e Ambiente di Airola e della Valle Caudina chiede ad allevatori, produttori di latte e caseifici di domandare per primi i controlli all'Asl: dice che non è allarmismo ma tutela dei consumatori e delle produzioni tipiche, e chiede accertamenti su tutti gli allevamenti della valle.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio"
+      ]
      }
     ]
    },
@@ -846,11 +1042,10 @@
     }
    ],
    "articolo": {
-    "cosa": "In un'intervista a Repubblica, ripresa dai giornali locali, Cosimo Rummo, presidente e amministratore delegato dell'omonimo pastificio, racconta che lo stabilimento di Benevento è fermo perché i blocchi legati alla protesta degli autotrasportatori impediscono l'arrivo delle materie prime. Per la pasta secca i supermercati hanno ancora scorte, perché dura circa due anni; i primi problemi si vedono sui prodotti freschi come frutta e verdura.",
     "cronologia": [
      {
       "data": "19 ottobre",
-      "fatto": "Primo giorno di stop per lo stabilimento, senza camion né cisterne e con le scorte finite; la situazione va avanti da circa una settimana.",
+      "fatto": "Primo giorno di stop al pastificio Rummo di Benevento, per mancanza di materie prime e scorte finite.",
       "fonti": [
        "NTR24",
        "LabTV"
@@ -858,7 +1053,7 @@
      },
      {
       "data": "20 ottobre",
-      "fatto": "Rummo lancia l'allarme: se il blocco dura pochi giorni la produzione si recupera, se si prolunga ci saranno gravi conseguenze sulle forniture.",
+      "fatto": "Cosimo Rummo lancia l'allarme in un'intervista a Repubblica, ripresa dai giornali locali.",
       "fonti": [
        "NTR24",
        "LabTV",
@@ -868,7 +1063,7 @@
     ],
     "concordano": [
      {
-      "testo": "Il pastificio di Benevento è fermo per mancanza di materie prime; con una protesta lunga i danni sarebbero gravi.",
+      "testo": "Lo stabilimento di Benevento è fermo perché i blocchi dei trasporti impediscono l'arrivo delle materie prime; se lo stop dura pochi giorni la produzione si può recuperare, se si prolunga i disagi si estendono alla filiera alimentare.",
       "fonti": [
        "NTR24",
        "LabTV",
@@ -876,16 +1071,7 @@
       ]
      }
     ],
-    "divergono": [
-     {
-      "testo": "NTR24 e LabTV parlano di grano che non arriva; Fremondoweb precisa che a mancare è la semola di grano duro dai mulini pugliesi.",
-      "fonti": [
-       "NTR24",
-       "LabTV",
-       "Fremondoweb"
-      ]
-     }
-    ],
+    "divergono": [],
     "non_si_sa": [
      "Quando lo stabilimento potrà ripartire.",
      "Quanta produzione andrà persa."
@@ -908,6 +1094,35 @@
       "titolo": "Pastificio Rummo, produzione ferma a Benevento: mancano le forniture di semola",
       "url": "https://www.fremondoweb.com/attualita/pastificio-rummo-produzione-ferma-a-benevento-mancano-le-forniture-di-semola",
       "data": "20 ott, 11:10"
+     }
+    ],
+    "racconto": [
+     {
+      "testo": "Il pastificio Rummo di Benevento si è fermato. Lo ha detto Cosimo Rummo, presidente e amministratore delegato dell'azienda, in un'intervista a Repubblica: l'altro giorno è stato il primo giorno di stop, perché non arrivano né camion né cisterne e le scorte sono finite. «È ormai da una settimana che questa situazione va avanti», ha spiegato.",
+      "fonti": [
+       "NTR24",
+       "LabTV"
+      ]
+     },
+     {
+      "testo": "La causa sono i blocchi di strade e autostrade della protesta degli autotrasportatori contro il caro gasolio. Secondo Fremondoweb, in Puglia le interruzioni impediscono di portare la semola di grano duro dai mulini pugliesi agli stabilimenti, Benevento compreso. Rummo aveva già avvisato le autorità e chiesto un intervento urgente. L'azienda, aggiunge Fremondoweb, aveva già accettato gli aumenti dei costi di trasporto dovuti al carburante.",
+      "fonti": [
+       "Fremondoweb"
+      ]
+     },
+     {
+      "testo": "Non è l'unico caso. La Molisana ha ridotto di molto la produzione e quasi tutti i principali pastifici pugliesi, dice Rummo, hanno difficoltà simili. Per lui la maggior parte della pasta italiana oggi è ferma o quasi.",
+      "fonti": [
+       "NTR24",
+       "LabTV"
+      ]
+     },
+     {
+      "testo": "Se lo stop dura pochi giorni, secondo Rummo la produzione si recupera. Se la protesta va avanti a lungo, avverte, «si lascerà praticamente il Sud senza cibo né medicine». La pasta secca dura in media due anni e molti supermercati hanno ancora scorte. I primi problemi riguardano invece i prodotti freschi: frutta e verdura, dice, già cominciano a mancare.",
+      "fonti": [
+       "NTR24",
+       "LabTV"
+      ]
      }
     ]
    },
@@ -939,20 +1154,10 @@
     }
    ],
    "articolo": {
-    "cosa": "Trenitalia cancella i carnet Smart Working (10 corse al mese da e per Roma) e introduce un costo di 2 euro per ogni prenotazione dell'abbonamento Alta Velocità, finora gratuita secondo i pendolari. Il consigliere regionale Pellegrino Mastella (Casa Riformista - Italia Viva - Noi di Centro) sostiene che oggi il carnet costa 129 euro al mese sia da Caserta sia da Benevento e che, per lo stesso numero di viaggi, da Benevento si potrebbero spendere 387 euro (342 da Caserta). Chiede un incontro urgente con Trenitalia, il ripristino del carnet e la revisione del costo delle prenotazioni.",
-    "cronologia": [
-     {
-      "data": "20 ottobre",
-      "fatto": "Mastella annuncia la richiesta di un incontro urgente ai vertici campani di Trenitalia.",
-      "fonti": [
-       "NTR24",
-       "Anteprima24"
-      ]
-     }
-    ],
+    "cronologia": [],
     "concordano": [
      {
-      "testo": "Le cifre e le richieste sono quelle date dal consigliere regionale Mastella; i giornali riportano il suo comunicato.",
+      "testo": "Mastella chiede un incontro urgente a Trenitalia e cita gli stessi numeri: carnet a 129 euro oggi, 387 euro da Benevento e 342 da Caserta per lo stesso numero di viaggi, più 2 euro a prenotazione.",
       "fonti": [
        "NTR24",
        "Anteprima24"
@@ -976,6 +1181,29 @@
       "titolo": "Cancellazione carnet Smart Working, Mastella: “Chiesto confronto con vertici Trenitalia”",
       "url": "https://www.anteprima24.it/benevento/cancellazione-carnet-smart-working-mastella-chiesto-confronto-con-vertici-trenitalia/",
       "data": "20 ott, 11:22"
+     }
+    ],
+    "racconto": [
+     {
+      "testo": "Il consigliere regionale Pellegrino Mastella (gruppo Casa Riformista – Italia Viva – Noi di Centro) chiede un incontro urgente ai vertici campani di Trenitalia. Il tema è la cancellazione dei carnet Smart Working e il nuovo costo di 2 euro per ogni prenotazione dell'abbonamento Alta Velocità. Secondo lui i pendolari di Benevento e Caserta che vanno a Roma rischiano di spendere molto di più.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "I conti li fa Mastella, non Trenitalia. Oggi il carnet da dieci corse da e per Roma costa 129 euro al mese, sia da Caserta sia da Benevento. Per avere lo stesso numero di viaggi, dice, chi parte da Benevento potrebbe arrivare a 387 euro e chi parte da Caserta a 342. A questo si aggiungono i 2 euro per ogni prenotazione, che finora secondo i pendolari era gratuita.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Il consigliere ammette che l'obiettivo possa essere ridurre le prenotazioni non usate, ma chiede strumenti mirati che non penalizzino chi usa il treno per lavorare. Vuole risposte chiare e soluzioni alternative, a partire dal ritorno del carnet Smart Working e da una revisione del costo delle prenotazioni. I collegamenti con Roma, dice, sono essenziali per lavoratori e professionisti delle aree interne.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
      }
     ]
    },
@@ -1236,12 +1464,12 @@
   {
    "id": "tir-appia-telesina",
    "titolo": "Caro gasolio, tir fermi sull'Appia a Tufara Valle e a Castel del Lago, blocchi anche sulla Telesina a San Salvatore Telesino",
-   "sintesi": "Dal 19 ottobre gli autotrasportatori protestano contro il prezzo del gasolio: camion fermi sulla statale Appia a Tufara Valle e all'ingresso dell'autostrada a Castel del Lago, auto che passano a rilento. Ci sono stati blocchi anche sulla Telesina a San Salvatore Telesino. Oggi, 20 ottobre, il ministro Salvini incontra a Milano associazioni e gruppi di protesta, anche della Campania.",
+   "sintesi": "Dal 19 ottobre gli autotrasportatori protestano contro il prezzo del gasolio e i blocchi continuano per la seconda notte: tre presìdi a Castel del Lago, a Tufara Valle sull'Appia e a San Salvatore Telesino sulla Telesina. Da giovedì 22 si aggiungono gli agricoltori.",
    "categoria": "strade",
    "zona": "provincia",
    "immagine": "camion",
    "luogo": "Tufara Valle",
-   "pubblicato": "2026-10-20T07:41:00+02:00",
+   "pubblicato": "2026-10-21T00:05:00+02:00",
    "stato": "confermata",
    "fonti": [
     {
@@ -1250,7 +1478,7 @@
     },
     {
      "nome": "Il Mattino",
-     "url": "https://www.ilmattino.it/benevento/autotrasporto_la_protesta_arriva_anche_nel_sannio_tir_incolonnati_gia_dalla_notte_e_disagi_per_la_viabilita-9835330.html"
+     "url": "https://www.ilmattino.it/benevento/benevento_proteste_autotrasportatori_autostrada-9837732.html"
     },
     {
      "nome": "Il Sannio Quotidiano",
@@ -1267,7 +1495,6 @@
    ],
    "articolo": {
     "aggiornato": "2026-10-20T09:25:00+02:00",
-    "cosa": "Gli autotrasportatori protestano contro l'aumento dei prezzi di gasolio e benzina. Nel Sannio i blocchi sono cominciati tra la notte e l'alba di lunedì 19 ottobre sulla statale Appia e al casello di Castel del Lago, e si sono estesi alla Telesina a San Salvatore Telesino. A Tufara Valle i camionisti dicono che resteranno fermi almeno fino al tavolo tecnico con il Governo; oggi a Milano il ministro Salvini incontra associazioni e gruppi di protesta. Gli effetti si vedono nei supermercati e ai distributori; da giovedì 22 si aggiungono gli agricoltori.",
     "cronologia": [
      {
       "data": "18 ottobre",
@@ -1333,6 +1560,20 @@
        "Ottopagine (19/10)",
        "NTR24"
       ]
+     },
+     {
+      "data": "notte 20-21",
+      "fatto": "Seconda notte consecutiva di blocchi: tre presìdi attivi a Castel del Lago, a Tufara Valle e a San Salvatore Telesino.",
+      "fonti": [
+       "Il Mattino (21/10)"
+      ]
+     },
+     {
+      "data": "21 ottobre",
+      "fatto": "Mobilitazione della Coldiretti Campania a Napoli, in piazza del Plebiscito.",
+      "fonti": [
+       "Il Mattino (21/10)"
+      ]
      }
     ],
     "concordano": [
@@ -1380,9 +1621,9 @@
      }
     ],
     "non_si_sa": [
-     "Quanto durerà: a Tufara Valle i camionisti dicono che non si muoveranno almeno fino al tavolo tecnico con il Governo; nessuno indica una data di fine.",
-     "Cosa uscirà dal tavolo di oggi a Milano.",
-     "Se stamattina i blocchi sulla Telesina sono ancora in corso: l'ultimo aggiornamento letto è quello di Ottopagine delle 7:41."
+     "Quanto durerà la protesta: gli autotrasportatori dicono che andranno avanti, nessuno indica una data di fine.",
+     "Cosa è uscito dal tavolo di martedì 20 a Milano con il ministro Salvini.",
+     "Se i blocchi proseguono nella giornata di mercoledì 21: l'ultimo aggiornamento letto è quello di Il Mattino, mezzanotte e cinque."
     ],
     "fonti": [
      {
@@ -1444,6 +1685,63 @@
       "titolo": "HGV protest: road haulage talks to be held on Tuesday. Salvini ready to release the funds",
       "url": "https://en.ilsole24ore.com/art/truckers-protest-on-tuesday-round-table-discussion-on-road-haulage-salvini-ready-to-release-funds-AJzZUUnB",
       "data": "18 ott"
+     },
+     {
+      "nome": "Il Mattino (21/10)",
+      "titolo": "Benevento, proteste degli autotrasportatori non-stop: dall’Appia all’autostrada",
+      "url": "https://www.ilmattino.it/benevento/benevento_proteste_autotrasportatori_autostrada-9837732.html",
+      "data": "21 ott, 00:05"
+     }
+    ],
+    "racconto": [
+     {
+      "testo": "Da lunedì 19 ottobre gli autotrasportatori protestano contro il prezzo del gasolio e i blocchi vanno avanti anche nella notte tra martedì 20 e mercoledì 21. Il Mattino conta tre presìdi attivi nel Sannio: il casello di Castel del Lago, vicino all'uscita di Benevento sull'A16, la statale 7 Appia a Tufara Valle e la statale 372 Telesina a San Salvatore Telesino, vicino all'imbocco della Fondovalle Isclero che porta verso Caserta. I blocchi sono in tutte e due le direzioni. Gli autotrasportatori dicono che andranno avanti.",
+      "fonti": [
+       "Il Mattino (21/10)"
+      ]
+     },
+     {
+      "testo": "La protesta è cominciata nella notte tra domenica e lunedì: dalle 3 tir, camion e furgoni si sono fermati sull'Appia a Tufara Valle. BeneventoNews24 scrive che mezzi pesanti erano fermi già dalla sera del 18. Nella mattinata di lunedì i camion erano fermi anche all'ingresso dell'autostrada a Castel del Lago. Le auto passavano lentamente e i manifestanti chiedevano agli altri camionisti di unirsi.",
+      "fonti": [
+       "Il Mattino",
+       "BeneventoNews24",
+       "Ottopagine (19/10)",
+       "NTR24",
+       "Il Sannio Quotidiano",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "In tarda mattinata a Tufara Valle i camionisti hanno lasciato passare il traffico su un lato della strada per alcune ore. Sono arrivati a portare solidarietà i sindaci di Apollosa, Danilo Parente, e di San Martino Valle Caudina, Pasquale Pisano.",
+      "fonti": [
+       "Il Mattino"
+      ]
+     },
+     {
+      "testo": "Martedì mattina, scrive Ottopagine, i blocchi c'erano anche sulla statale 372 Benevento-Telese-Caianello, soprattutto a San Salvatore Telesino, con code lungo la Telesina e l'Appia. In ogni presidio c'erano le forze dell'ordine per far scorrere il traffico e segnalare la presenza dei manifestanti in strada. La protesta è pacifica.",
+      "fonti": [
+       "Ottopagine (20/10)",
+       "Il Mattino"
+      ]
+     },
+     {
+      "testo": "Gli effetti si vedono ogni giorno di più. In alcuni supermercati mancano prodotti, in molti distributori la benzina è finita e il gasolio scarseggia. Lunedì i mezzi dell'Asia, la società dei rifiuti di Benevento, erano in fila per fare rifornimento al distributore di contrada San Vitale. Il Mattino precisa che non sono bloccati i mezzi che portano ossigeno agli ospedali, medicinali e altri servizi essenziali per la salute, e che molti automobilisti hanno espresso solidarietà ai camionisti.",
+      "fonti": [
+       "Ottopagine (20/10)",
+       "Ottopagine (19/10)",
+       "NTR24",
+       "Il Mattino (21/10)"
+      ]
+     },
+     {
+      "testo": "Martedì 20 ottobre a Milano il ministro dei Trasporti, Matteo Salvini, ha incontrato sindacati e associazioni dell'autotrasporto e poi i gruppi di protesta di Puglia, Sicilia, Calabria e Campania. Gli articoli letti non dicono come è finito l'incontro. Mercoledì 21 la Coldiretti Campania scende in piazza a Napoli, in piazza del Plebiscito, per il prezzo del gasolio agricolo; da giovedì 22 sono annunciati presìdi degli agricoltori sulla Sannitica, sulla statale 212 e a Benevento in zona Ponte delle Tavole.",
+      "fonti": [
+       "ANSA (17/10)",
+       "Il Sole 24 Ore",
+       "Il Mattino (21/10)",
+       "Ottopagine (19/10)",
+       "NTR24"
+      ]
      }
     ]
    },
@@ -3027,7 +3325,7 @@
    "titolo": "Caro gasolio, la protesta di tir e agricoltori nel Sannio: dove sono i blocchi, cosa manca e cosa succede adesso",
    "sommario": "Da lunedì 19 ottobre gli autotrasportatori fermano i camion sull'Appia a Tufara Valle e a Castel del Lago; ci sono stati blocchi anche sulla Telesina a San Salvatore Telesino. Nei supermercati mancano i prodotti freschi e alcuni distributori hanno finito il gasolio. Da giovedì 22 si aggiungono gli agricoltori. Oggi, 20 ottobre, il ministro Salvini incontra a Milano associazioni e gruppi di protesta, anche della Campania.",
    "luogo": "Provincia di Benevento",
-   "aggiornato": "2026-10-20T09:25:00+02:00",
+   "aggiornato": "2026-10-21T08:05:00+02:00",
    "collegate": [
     "tir-appia-telesina",
     "scaffali-vuoti",
@@ -3382,6 +3680,13 @@
       "LabTV (Rummo)",
       "NTR24 (Asia)"
      ]
+    },
+    {
+     "data": "notte 20-21 ottobre",
+     "fatto": "Seconda notte di blocchi nel Sannio: tre presìdi attivi a Castel del Lago, Tufara Valle e San Salvatore Telesino. Mercoledì 21 la Coldiretti Campania manifesta a Napoli.",
+     "fonti": [
+      "Il Mattino (21/10)"
+     ]
     }
    ],
    "non_si_sa": [
@@ -3521,6 +3826,12 @@
      "titolo": "Protesta autotrasportatori, mezzi dell’Asia bloccati. Da oggi chiuso l’ecocentro, possibili disservizi",
      "url": "https://www.ntr24.tv/2026/10/20/protesta-autotrasportatori-mezzi-dellasia-bloccati-da-oggi-chiuso-lecocentro-possibili-disservizi/",
      "data": "20 ott"
+    },
+    {
+     "nome": "Il Mattino (21/10)",
+     "titolo": "Benevento, proteste degli autotrasportatori non-stop: dall’Appia all’autostrada",
+     "url": "https://www.ilmattino.it/benevento/benevento_proteste_autotrasportatori_autostrada-9837732.html",
+     "data": "21 ott, 00:05"
     }
    ],
    "nota": "Correzione: nella versione delle 8:45 scrivevamo che il ministero dei Trasporti aveva convocato le associazioni per il 27 ottobre, come riportava Il Post il 16 ottobre. ANSA (17 ottobre) e Il Sole 24 Ore (18 ottobre) riportano che il ministro Salvini ha anticipato il tavolo a oggi, martedì 20 ottobre, in Prefettura a Milano. Abbiamo corretto sommario, «In breve», sezioni, domande e cronologia."
