@@ -27,6 +27,7 @@ import urllib.parse
 import urllib.request
 
 SITO = "https://notiziebenevento.it"
+PAGINA = "Notizie Benevento"
 GRAPH = "https://graph.facebook.com"
 MAX_GIORNO = 15
 PAUSA_MINUTI = 50
@@ -132,6 +133,10 @@ def main():
     if not DALLE <= adesso.hour < ALLE:
         print(f"Facebook: sono le {adesso:%H:%M}, si pubblica dalle {DALLE} alle {ALLE}")
         return
+    # la chiave deve essere quella della Pagina Notizie Benevento: mai pubblicare altrove (profilo, altre pagine)
+    chi = chiama("GET", "me", token, {"fields": "name"}).get("name")
+    if chi != PAGINA:
+        raise RuntimeError(f"la chiave non è della Pagina «{PAGINA}»: non pubblico niente")
     gia, oggi, ultimo = gia_pubblicate(token, adesso)
     if oggi >= MAX_GIORNO:
         print(f"Facebook: già {oggi} notizie oggi, basta così")
