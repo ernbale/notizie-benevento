@@ -74,7 +74,10 @@ def candidate(notizie, gia, adesso):
 
 
 def messaggio(n):
-    return n["titolo"].strip() + ("\n\n" + n["sintesi"].strip() if n.get("sintesi") else "")
+    m = n["titolo"].strip() + ("\n\n" + n["sintesi"].strip() if n.get("sintesi") else "")
+    if n.get("stato") == "una_fonte" and n.get("fonti"):
+        m += f"\n\nPer ora lo riporta solo {n['fonti'][0].get('nome', '')}."
+    return m
 
 
 def chiama(metodo, percorso, token, dati=None):

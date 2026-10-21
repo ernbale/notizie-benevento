@@ -10,12 +10,12 @@
 <meta name="theme-color" content="#fdeedd">
 <!--seo-->
 <title>Notizie Benevento oggi: ultime notizie da Benevento e provincia</title>
-<meta name="description" content="Le ultime notizie di oggi da Benevento e dal Sannio: cronaca, strade, politica, eventi e allerte, confrontate tra i giornali locali. Esce solo ciò che riportano almeno due testate o una fonte ufficiale.">
+<meta name="description" content="Le ultime notizie di oggi da Benevento e dal Sannio: cronaca, strade, politica, eventi e allerte, confrontate tra i giornali locali, con i link agli articoli originali.">
 <link rel="canonical" href="https://notiziebenevento.it/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Notizie Benevento">
 <meta property="og:title" content="Notizie Benevento">
-<meta property="og:description" content="Le notizie di Benevento e provincia, confrontate tra i giornali locali. Esce solo ciò che riportano almeno due testate o una fonte ufficiale.">
+<meta property="og:description" content="Le notizie di Benevento e provincia, confrontate tra i giornali locali, con i link agli articoli originali.">
 <meta property="og:url" content="https://notiziebenevento.it/">
 <meta property="og:image" content="https://notiziebenevento.it/condivisione.png">
 <meta property="og:image:width" content="1200">
@@ -91,6 +91,7 @@
   .fonti a { color: var(--blu); }
   .fonti .conferma { color: var(--verde); font-weight: 700; }
   .fonti .ufficiale { color: #fff; background: var(--verde); padding: 0 5px; border-radius: 2px; font-weight: 700; }
+  .fonti .unafonte { color: #8a5300; font-weight: 700; }
   .nota { font-size: 13px; margin-top: 8px; padding: 6px 10px; border-left: 3px solid var(--rosso); background: rgba(255,255,255,.45); }
 
   .apertura { background: var(--carta-scura); padding: 18px 18px 6px; margin-bottom: 18px; }
@@ -444,7 +445,7 @@
 
   <footer>
     <p>Notizie Benevento è un report automatico: le notizie appartengono ai giornali citati. Qui le raccontiamo con parole nostre, confrontando le fonti, con i link agli articoli originali.</p>
-    <p>Una notizia compare solo se la riportano almeno due testate diverse oppure una fonte ufficiale (ANAS, INGV, Comuni, Prefettura, forze dell'ordine). Le accuse sono riportate con le parole usate dai giornali. Aggiornato ogni 2 ore, dalle 6 alle 22. Le visite si contano in forma anonima, senza cookie.</p>
+    <p>Una notizia compare se la riportano almeno due testate diverse oppure una fonte ufficiale (ANAS, INGV, Comuni, Prefettura, ASL, forze dell'ordine). La cronaca riportata da un solo giornale autorevole porta la scritta «Una sola fonte». Le accuse sono riportate con le parole usate dai giornali. Aggiornato ogni 2 ore, dalle 6 alle 22. Le visite si contano in forma anonima, senza cookie.</p>
     <p>Nessuna notizia viene cancellata: quando esce dalla prima pagina resta nell'<a href="#archivio">archivio</a>, allo stesso indirizzo.</p>
     <p class="sezioni-link">Sezioni: <a href="/sezione/strade/">Strade</a> · <a href="/sezione/cronaca/">Cronaca</a> · <a href="/sezione/politica/">Politica</a> · <a href="/sezione/eventi/">Eventi</a> · <a href="/sezione/allerte/">Allerte</a> · <a href="/sezione/altro/">Altro</a> · <a href="/meteo.html">Meteo Benevento</a><br>
       Zone: <a href="/zona/benevento/">Benevento città</a> · <a href="/zona/valle-telesina/">Valle Telesina</a> · <a href="/zona/valle-caudina/">Valle Caudina</a> · <a href="/zona/fortore/">Fortore e Tammaro</a> · <a href="/zona/altri-comuni/">Altri comuni</a> · <a href="/feed.xml">Feed RSS</a></p>
@@ -708,6 +709,7 @@
     var r = el("div", "fonti", []);
     var lista = Array.isArray(n.fonti) ? n.fonti : [];
     if (n.stato === "ufficiale") r.appendChild(el("span", "ufficiale", ["Fonte ufficiale"]));
+    else if (n.stato === "una_fonte") r.appendChild(el("span", "unafonte", ["Una sola fonte"]));
     else r.appendChild(el("span", "conferma", ["✓ " + lista.length + " fonti"]));
     r.appendChild(testo(" · "));
     lista.forEach(function (f, i) {
@@ -1062,6 +1064,7 @@
     var art = el("article", "appro", []);
     testataPagina(art, NOMI_CAT[n.categoria] || "Altro", n.luogo, n.titolo);
     art.appendChild(el("div", "meta", [(dallArchivio ? "Dall'archivio · " : "") + (n.pubblicato ? quando(n.pubblicato) + " · " : "") + fonti.length + (fonti.length === 1 ? " fonte" : " fonti confrontate")]));
+    if (n.stato === "una_fonte") art.appendChild(el("div", "nota", ["Per ora questo fatto lo riporta solo " + ((n.fonti || [])[0] || {}).nome + ". Lo aggiorniamo se arrivano altre fonti."]));
     var az = ascolta(testoArticolo(n));
     az.appendChild(condividi(n.titolo, linkArticolo(n), true));
     art.appendChild(az);
