@@ -4,8 +4,8 @@
 Lo esegue GitHub dopo ogni pubblicazione del sito (a ogni giro dell'agente e ogni ora), così la pagina della
 notizia è già online quando Facebook ne legge titolo e immagine di anteprima.
 
-- Al massimo una notizia per volta, almeno 90 minuti tra un post e l'altro, al massimo 6 al giorno, solo dalle 7
-  alle 22: una Pagina nuova che pubblica decine di link al giorno sembra spam.
+- Al massimo una notizia all'ora (almeno 50 minuti tra un post e l'altro), quindi fino a 15 al giorno, solo dalle 7
+  alle 22: come le pagine dei giornali locali, senza raffiche che sembrano spam.
 - Sceglie la più importante tra le notizie delle ultime 12 ore non ancora pubblicate (stessa importanza della prima
   pagina del sito: rilevante e numero di fonti, che calano col tempo).
 - Cosa è già uscito lo legge dalla Pagina stessa (i link dei post): niente file da tenere nel repository. Se Facebook
@@ -28,8 +28,8 @@ import urllib.request
 
 SITO = "https://notiziebenevento.it"
 GRAPH = "https://graph.facebook.com"
-MAX_GIORNO = 6
-PAUSA_MINUTI = 90
+MAX_GIORNO = 15
+PAUSA_MINUTI = 50
 ORE_FINESTRA = 12
 DALLE, ALLE = 7, 22
 
