@@ -449,6 +449,7 @@
     <p>Nessuna notizia viene cancellata: quando esce dalla prima pagina resta nell'<a href="#archivio">archivio</a>, allo stesso indirizzo.</p>
     <p class="sezioni-link">Sezioni: <a href="/sezione/strade/">Strade</a> · <a href="/sezione/cronaca/">Cronaca</a> · <a href="/sezione/politica/">Politica</a> · <a href="/sezione/eventi/">Eventi</a> · <a href="/sezione/allerte/">Allerte</a> · <a href="/sezione/altro/">Altro</a> · <a href="/meteo.html">Meteo Benevento</a><br>
       Zone: <a href="/zona/benevento/">Benevento città</a> · <a href="/zona/valle-telesina/">Valle Telesina</a> · <a href="/zona/valle-caudina/">Valle Caudina</a> · <a href="/zona/fortore/">Fortore e Tammaro</a> · <a href="/zona/altri-comuni/">Altri comuni</a> · <a href="/feed.xml">Feed RSS</a></p>
+    <p class="sezioni-link"><a href="/chi-siamo/">Chi siamo</a> · Seguici su <a href="https://www.facebook.com/notiziebenevento" target="_blank" rel="noopener">Facebook</a></p>
   </footer>
 </div>
 
@@ -1884,6 +1885,7 @@
     document.title = TITOLO;
     var box = document.getElementById("contenuto");
     var menu = document.getElementById("menu");
+    if (FISSA && FISSA.statica) return;   // pagina già scritta (Chi siamo): resta com'è
     box.textContent = "";
     var mc = rotta().match(/^#(?:archivio|cerca\/(.*))$/);
     if (mc) {

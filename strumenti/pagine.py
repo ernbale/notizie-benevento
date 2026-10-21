@@ -5,6 +5,7 @@
   È index.html con titolo, descrizione, anteprima (og:), dati strutturati (NewsArticle) e l'articolo già scritto
   nella pagina: Google lo legge subito e WhatsApp/Facebook mostrano titolo e immagine. Poi il sito funziona come sempre.
 - sezione/<nome>/ e zona/<nome>/: la prima pagina già filtrata, con titolo e descrizione propri.
+- chi-siamo/index.html: come lavora il sito (testo in html_chi_siamo).
 - evento/<id>/index.html ed evento/<id>/evento.ics: la pagina di ogni evento del calendario (eventi.json e
   archivio/eventi-*.json), con i dati strutturati Event, e il file per aggiungerlo al calendario del telefono.
 - img/n/<id>.png: l'immagine di anteprima di ogni notizia (titolo grande, sezione, luogo, fonti), sempre con lo
@@ -392,6 +393,38 @@ def html_approfondimento(ap, notizie_per_id):
     return f'<article class="appro">{h}</article>'
 
 
+
+# ---------- chi siamo (pagina fissa) ----------
+def html_chi_siamo():
+    fb = f'<a href="{FACEBOOK}" target="_blank" rel="noopener">Pagina Facebook Notizie Benevento</a>'
+    h = _testata_pagina(NOME, "", "Chi siamo")
+    h += ('<p class="sommario">Notizie Benevento raccoglie in un solo posto le notizie di Benevento e della provincia: '
+          'le confronta tra i giornali locali e i siti ufficiali e le racconta in modo semplice, con i link agli articoli '
+          'originali.</p>')
+    h += ("<h3>Da dove vengono le notizie</h3>"
+          "<p>Ogni giorno leggiamo i giornali del Sannio e i siti ufficiali: Prefettura, Provincia, Comuni, Protezione "
+          "civile della Campania, ASL Benevento, ospedale San Pio, ANAS e INGV. Le notizie sono dei giornali che le hanno "
+          "scritte: noi non le diamo per primi e non facciamo inchieste. In ogni articolo trovi i link per leggerle da "
+          "loro.</p>")
+    h += ("<h3>Come scegliamo cosa pubblicare</h3><ul>"
+          "<li>Una notizia esce se la riportano almeno due testate diverse oppure una fonte ufficiale.</li>"
+          "<li>La cronaca riportata da un solo giornale autorevole porta la scritta «Una sola fonte».</li>"
+          "<li>Se i giornali dicono cose diverse lo scriviamo, e diciamo anche cosa non si sa ancora.</li>"
+          "<li>Le accuse sono riportate con le parole usate dai giornali.</li></ul>")
+    h += ("<h3>Come sono scritti gli articoli</h3>"
+          "<p>I testi sono scritti con l'intelligenza artificiale partendo dagli articoli citati, con regole precise: ogni "
+          "frase viene da una fonte, e date, numeri e nomi sono quelli degli originali. Le foto illustrative sono create "
+          "con l'intelligenza artificiale e lo dicono sotto l'immagine. Il sito si aggiorna ogni 2 ore, dalle 6 alle 22.</p>")
+    h += ('<h3>Meteo e allerte</h3><p>Le <a href="/meteo.html">previsioni</a> mettono insieme 8 modelli dei servizi '
+          "meteo nazionali ed europei. Per le allerte valgono solo gli avvisi ufficiali del Centro funzionale della "
+          "Regione Campania e della Protezione civile.</p>")
+    h += ('<h3>Archivio</h3><p>Nessuna notizia viene cancellata: quando esce dalla prima pagina resta '
+          'nell\'<a href="/#archivio">archivio</a>, allo stesso indirizzo.</p>')
+    h += f"<h3>Contatti</h3><p>Per segnalare un errore o una notizia che manca, scrivici un messaggio sulla {fb}.</p>"
+    h += ("<h3>Privacy</h3><p>Le visite si contano in forma anonima, senza cookie. Non serve nessuna registrazione.</p>")
+    return f'<article class="appro">{h}</article>'
+
+
 # ---------- eventi del calendario ----------
 NOMI_TIPO = {"teatro": "Teatro", "danza": "Danza", "concerto": "Concerto", "lirica": "Lirica", "mostra": "Mostra",
              "museo": "Museo", "cinema": "Cinema", "sagra": "Sagra", "festa": "Festa", "mercatino": "Mercatino",
@@ -710,6 +743,15 @@ def main():
         scrivi(os.path.join(sito, perc, "index.html"),
                pagina(modello, seo, dict(filtro, h1=h1), f'<h1 class="titolo-sezione">{e(h1)}</h1>'))
         mappa.append((url, dentro[0].get("pubblicato") if dentro else None))
+
+    # chi siamo: già scritta nella pagina, index.html la lascia com'è (NB_PAGINA.statica)
+    url = SITO + "/chi-siamo/"
+    seo = blocco_seo(f"Chi siamo – {NOME}", "Come lavora Notizie Benevento: le notizie di Benevento e del Sannio "
+                     "confrontate tra i giornali locali e i siti ufficiali, con i link agli articoli originali.", url,
+                     "/condivisione.png", jsonld={"@context": "https://schema.org", "@type": "AboutPage",
+                                                  "name": "Chi siamo", "url": url, "mainEntity": ORG})
+    scrivi(os.path.join(sito, "chi-siamo", "index.html"), pagina(modello, seo, {"statica": True}, html_chi_siamo(), articolo=True))
+    mappa.append((url, None))
 
     mappa.insert(0, (SITO + "/", prima.get("aggiornato")))
     mappa.insert(1, (SITO + "/meteo.html", adesso.isoformat(timespec="minutes")))

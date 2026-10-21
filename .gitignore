@@ -5,6 +5,7 @@ meteo.json
 /approfondimento/
 /sezione/
 /zona/
+/chi-siamo/
 /evento/
 /img/n/
 # (tranne le immagini col nome di prima a cui puntano i post di Facebook usciti fino al 21 ott 2026: aggiunte con git add -f)
