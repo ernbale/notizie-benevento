@@ -5,6 +5,7 @@
   {
    "id": "air-campania-carburante-forniture-benevento-22-ottobre",
    "titolo": "Benevento, AIR Campania: carburante per i bus atteso giovedì 22 ottobre, già arrivato ad Avellino e Caserta",
+   "titolo_google": "Benevento, bus AIR Campania: il carburante arriva giovedì",
    "sintesi": "AIR Campania, la società dei bus extraurbani, dice che giovedì 22 ottobre sono attese le forniture di carburante a Benevento e Salerno. Mercoledì sono già arrivate ad Avellino e a Caserta. Intanto i blocchi dei tir possono causare ritardi sulla linea Arpaia-Napoli.",
    "categoria": "altro",
    "zona": "benevento",
@@ -98,6 +99,7 @@
   {
    "id": "appia-hashish-marijuana-acerra-due-arresti",
    "titolo": "Statale Appia nel Sannio, sequestrati oltre un chilo e mezzo di hashish e marijuana: arrestati un 19enne e un 23enne di Acerra",
+   "titolo_google": "Appia, oltre 1,5 kg di hashish: arrestati due di Acerra",
    "sintesi": "I Carabinieri di Montesarchio hanno fermato in auto sulla statale Appia, in provincia di Benevento, due giovani di Acerra e trovato più di un chilo e mezzo tra hashish e marijuana. Per loro la Procura ha disposto i domiciliari.",
    "categoria": "cronaca",
    "zona": "caudina",
@@ -172,6 +174,7 @@
   {
    "id": "benevento-via-nenni-distributore-assalto-benzina",
    "titolo": "Benevento, via Nenni: lunghe code e strada bloccata per il distributore che aveva ancora benzina",
+   "titolo_google": "Benevento, via Nenni: code e strada bloccata per la benzina",
    "sintesi": "Mercoledì pomeriggio a Benevento è corsa al distributore di via Nenni, uno dei pochi con carburante. Il traffico verso viale Mellusi si è paralizzato e la Polizia Municipale è intervenuta per calmare gli animi.",
    "categoria": "altro",
    "zona": "benevento",
@@ -228,6 +231,7 @@
   {
    "id": "benevento-tre-ponti-smart-in-fiamme",
    "titolo": "Benevento, Smart in fiamme sulla statale Appia a Tre Ponti: il conducente scende in tempo",
+   "titolo_google": "Benevento, Smart in fiamme sull'Appia a Tre Ponti",
    "sintesi": "Mercoledì 21 ottobre una Smart ha preso fuoco mentre andava verso Benevento sulla statale Appia, in località Tre Ponti. Il conducente si è fermato ed è sceso in tempo; i vigili del fuoco hanno spento le fiamme.",
    "categoria": "cronaca",
    "zona": "benevento",
@@ -316,6 +320,7 @@
   {
    "id": "sant-angelo-a-cupolo-morto-in-chiesa-archiviazione",
    "titolo": "Sant'Angelo a Cupolo, morto a 62 anni mentre tinteggiava una chiesa: la Procura chiede l'archiviazione",
+   "titolo_google": "Sant'Angelo a Cupolo, morto in chiesa: chiesta l'archiviazione",
    "sintesi": "Il pubblico ministero ha chiesto di archiviare l'inchiesta sulla morte di un uomo di 62 anni, avvenuta il 23 luglio 2025 nella chiesa della frazione Motta. I familiari si opporranno.",
    "categoria": "cronaca",
    "zona": "benevento",
@@ -375,6 +380,7 @@
   {
    "id": "san-pio-open-day-sclerodermia-22-ottobre",
    "titolo": "Ospedale San Pio, giovedì 22 ottobre visite gratuite per la sclerodermia",
+   "titolo_google": "San Pio Benevento, visite gratuite sclerodermia il 22 ottobre",
    "sintesi": "Giovedì 22 ottobre, dalle 9 alle 12, la Reumatologia del San Pio di Benevento fa visite gratuite per la sclerodermia, nel Padiglione Rummo.",
    "categoria": "altro",
    "zona": "benevento",
@@ -423,6 +429,7 @@
   {
    "id": "benevento-mastella-appello-no-acquisti-panico-spostamenti",
    "titolo": "Benevento, il sindaco Mastella ai cittadini per la crisi dei camion: niente acquisti per paura, meno spostamenti in auto",
+   "titolo_google": "Benevento, Mastella: niente acquisti per paura, meno auto",
    "sintesi": "Il sindaco di Benevento Clemente Mastella invita i cittadini a non fare acquisti compulsivi e a ridurre gli spostamenti in auto ai casi di necessità, mentre la protesta degli autotrasportatori e la carenza di carburante creano disagi.",
    "categoria": "altro",
    "zona": "benevento",
@@ -507,6 +514,7 @@
   {
    "id": "montesarchio-scuola-foscolo-chiusa-22-ottobre",
    "titolo": "Montesarchio, giovedì 22 ottobre chiusa la scuola media «Ugo Foscolo» per la sanificazione dopo la presenza di topi",
+   "titolo_google": "Montesarchio, scuola Foscolo chiusa il 22 ottobre per i topi",
    "sintesi": "Il sindaco di Montesarchio ha chiuso per giovedì 22 ottobre il plesso della scuola media «Ugo Foscolo»: la dirigente ha segnalato topi e loro escrementi, e i locali vanno sanificati.",
    "categoria": "altro",
    "zona": "caudina",
@@ -558,6 +566,7 @@
   {
    "id": "benevento-via-capodimonte-auto-fuori-strada-62enne",
    "titolo": "Benevento, via Capodimonte: auto fuori strada abbatte tre centraline, ferita una donna di 62 anni",
+   "titolo_google": "Benevento, via Capodimonte: auto fuori strada, ferita una donna",
    "sintesi": "Nel primo pomeriggio di mercoledì 21 ottobre una donna di 62 anni ha perso il controllo della sua Citroën C1 sulla provinciale tra Apice e Benevento, in via Capodimonte. Ha abbattuto tre centraline di telefono e luce ed è stata portata al San Pio.",
    "categoria": "cronaca",
    "zona": "benevento",
@@ -646,6 +655,7 @@
   {
    "id": "montesarchio-hashish-34-grammi-arresto",
    "titolo": "Montesarchio, i Carabinieri arrestano un uomo con 34 grammi di hashish in casa",
+   "titolo_google": "Montesarchio, 34 grammi di hashish in casa: arrestato",
    "sintesi": "I Carabinieri di Montesarchio hanno arrestato un giovane (20 anni secondo Ottopagine) con 34 grammi di hashish e il materiale per pesarlo e confezionarlo. È ai domiciliari in attesa della convalida.",
    "categoria": "cronaca",
    "zona": "caudina",
@@ -756,6 +766,7 @@
   {
    "id": "sannio-acque-convenzione-eic-servizio-idrico",
    "titolo": "Sannio, firmata la convenzione: il servizio idrico di tutti i 78 Comuni passa a Sannio Acque per 27 anni",
+   "titolo_google": "Acqua nel Sannio, 78 Comuni passano a Sannio Acque per 27 anni",
    "sintesi": "Mercoledì 21 ottobre a Napoli l'Ente Idrico Campano ha firmato con Sannio Acque la convenzione per affidarle il servizio idrico dei 78 Comuni della provincia di Benevento. Sono previsti oltre 265 milioni di investimenti in 27 anni.",
    "categoria": "altro",
    "zona": "provincia",
@@ -849,6 +860,7 @@
   {
    "id": "unisannio-lezioni-a-distanza-22-ottobre",
    "titolo": "Benevento, Unisannio: da giovedì 22 ottobre lezioni a distanza per i disagi del carburante",
+   "titolo_google": "Unisannio, lezioni a distanza dal 22 ottobre per il carburante",
    "sintesi": "Da giovedì 22 ottobre e fino a nuova comunicazione l'Università del Sannio tiene le lezioni a distanza, per le difficoltà di spostamento dovute alla protesta degli autotrasportatori e alla mancanza di carburante. Gli esami e le lauree restano in presenza.",
    "categoria": "altro",
    "zona": "benevento",
@@ -936,6 +948,7 @@
   {
    "id": "benevento-via-masseria-cancelleria-asfalto-22-ottobre",
    "titolo": "Benevento, da giovedì 22 ottobre senso unico alternato in via Masseria Cancelleria per rifare l'asfalto; poi lavori in via Cancelleria",
+   "titolo_google": "Benevento, via Masseria Cancelleria: senso unico dal 22 ottobre",
    "sintesi": "Da giovedì 22 ottobre in via Masseria Cancelleria, tra via Cancelleria e via Ginestra, si passa a senso unico alternato con operai e semafori per rifare l'asfalto. Lunedì 26 e martedì 27 i lavori toccano via Cancelleria, fino a via Capodimonte.",
    "categoria": "strade",
    "zona": "benevento",
@@ -1028,6 +1041,7 @@
   {
    "id": "asl-benevento-farmacie-screening-oncologici",
    "titolo": "Provincia di Benevento, l'ASL porta gli screening dei tumori nelle farmacie: informazioni, adesione e kit per il colon-retto",
+   "titolo_google": "ASL Benevento, screening dei tumori ora anche in farmacia",
    "sintesi": "Martedì 20 ottobre l'ASL Benevento ha incontrato farmacisti e Federfarma per un accordo che farà delle farmacie un punto di accesso agli screening gratuiti. Si potrà informarsi, aderire, prenotare e ritirare il kit per il colon-retto.",
    "categoria": "altro",
    "zona": "provincia",
@@ -1083,6 +1097,7 @@
   {
    "id": "benevento-tangenziale-est-scontro-tre-veicoli-20-ottobre",
    "titolo": "Benevento, tangenziale Est: scontro tra tre veicoli all'uscita Benevento Est, un ferito e lunghe code",
+   "titolo_google": "Benevento, tangenziale Est: scontro tra tre veicoli, un ferito",
    "sintesi": "Martedì 20 ottobre in prima serata, sul raccordo per la Napoli-Canosa, si sono scontrati una Ford Focus, una Fiat e un furgoncino. Una persona è ferita, non in condizioni gravi.",
    "categoria": "cronaca",
    "zona": "benevento",
@@ -1131,6 +1146,7 @@
   {
    "id": "benevento-polstrada-controlli-weekend-4-patenti",
    "titolo": "Benevento, controlli della Polizia Stradale nel fine settimana: 4 patenti ritirate per telefonino e sorpassi",
+   "titolo_google": "Benevento, controlli della Stradale: ritirate 4 patenti",
    "sintesi": "Dal 16 al 18 ottobre la Polizia Stradale ha fatto 11 contestazioni e ritirato quattro patenti: due per l'uso del telefono alla guida e due per sorpasso vietato. Tolti 30 punti in totale.",
    "categoria": "cronaca",
    "zona": "provincia",
@@ -1207,6 +1223,7 @@
   {
    "id": "benevento-via-montecalvo-limite-30-kmh",
    "titolo": "Benevento, via Montecalvo: limite di 30 km/h dopo le segnalazioni sulle auto troppo veloci",
+   "titolo_google": "Benevento, via Montecalvo: arriva il limite di 30 km/h",
    "sintesi": "Un'ordinanza del Servizio Traffico del Comune, firmata il 21 ottobre, mette il limite di 30 km/h in un tratto di via Montecalvo, tra via Madonna della Salute e i civici 33 e 68. Vale quando saranno montati i cartelli.",
    "categoria": "strade",
    "zona": "benevento",
@@ -1256,6 +1273,7 @@
   {
    "id": "benevento-carta-dedicata-a-te-graduatoria-2025",
    "titolo": "Benevento, pubblicata la graduatoria per la «Carta Dedicata a te»: come ritirare la carta",
+   "titolo_google": "Benevento, Carta Dedicata a te: graduatoria e come ritirarla",
    "sintesi": "Il Comune ha pubblicato la graduatoria dei nuclei familiari beneficiari della misura per il 2025, senza nomi ma con il numero di protocollo della DSU ISEE. I nuovi beneficiari ritirano il codice a Palazzo De Gasperi, poi la carta alle Poste.",
    "categoria": "altro",
    "zona": "benevento",
@@ -1323,6 +1341,7 @@
   {
    "id": "benevento-via-goduti-divieto-sosta-22-23-ottobre",
    "titolo": "Benevento, via Goduti: divieto di sosta nella notte tra il 22 e il 23 ottobre per lavori a una cabina",
+   "titolo_google": "Benevento, via Goduti: divieto di sosta la notte del 22 ottobre",
    "sintesi": "Dalle 22 di giovedì 22 ottobre alle 6 di venerdì 23 la sosta è vietata su entrambi i lati di via Goduti, tra piazza Orsini-corso Garibaldi e via Pasquali-piazza Dogana, per la manutenzione della cabina Dogana.",
    "categoria": "strade",
    "zona": "benevento",
@@ -1393,6 +1412,7 @@
   {
    "id": "rifiuti-blocco-tir-apice-morcone-cusano-sant-angelo-a-cupolo",
    "titolo": "Blocco dei tir, rifiuti a rischio nel Sannio: raccolta ferma a Sant'Angelo a Cupolo, da giovedì sospesa a Sant'Agata de' Goti, a San Giorgio del Sannio non si conferisce l'indifferenziata",
+   "titolo_google": "Tir, rifiuti a rischio nel Sannio: dove salta la raccolta",
    "sintesi": "Con le strade bloccate dai camion e il gasolio che scarseggia, in diversi Comuni del Sannio la raccolta dei rifiuti salta o rischia di saltare. A Sant'Agata de' Goti sarà sospesa da giovedì 22 ottobre; a San Giorgio del Sannio mercoledì sera non va conferito l'indifferenziato; ad Apice è chiusa l'isola ecologica. Possibili ritardi anche a Colle Sannita.",
    "categoria": "altro",
    "zona": "provincia",
@@ -1561,6 +1581,7 @@
   {
    "id": "limatola-aggressione-volpino-misure-confermate",
    "titolo": "Limatola, pestaggio in una sala giochi in aprile: il giudice conferma le misure per tre uomini, due restano in carcere",
+   "titolo_google": "Limatola, pestaggio in sala giochi: confermate le misure",
    "sintesi": "Il giudice ha confermato le misure contro tre uomini indagati per un'aggressione avvenuta ad aprile a Limatola, in cui la vittima ha perso un occhio. Due restano in carcere, uno ha l'obbligo di firma.",
    "categoria": "cronaca",
    "zona": "telesina",
@@ -1642,6 +1663,7 @@
   {
    "id": "benevento-cardiologi-fatebenefratelli-assolti",
    "titolo": "Benevento, assolti due cardiologi del Fatebenefratelli accusati di lesioni a un paziente: il giudice dice che «il fatto non sussiste»",
+   "titolo_google": "Benevento, assolti due cardiologi del Fatebenefratelli",
    "sintesi": "Il giudice Sergio Pezza ha assolto due cardiologi dell'ospedale Fatebenefratelli di Benevento, accusati di lesioni colpose per la cura di un 59enne di Fragneto Monforte nel gennaio 2021. Anche il pubblico ministero aveva chiesto l'assoluzione.",
    "categoria": "cronaca",
    "zona": "benevento",
@@ -1695,6 +1717,7 @@
   {
    "id": "san-pio-pronto-soccorso-medici-prorogati",
    "titolo": "Benevento, ospedale San Pio: prorogati fino al 31 dicembre i contratti di sei medici del Pronto soccorso, tre dei quali in pensione",
+   "titolo_google": "Benevento, San Pio: prorogati sei medici del Pronto soccorso",
    "sintesi": "L'azienda ospedaliera San Pio ha prorogato fino al 31 dicembre 2026 gli incarichi di sei medici del Pronto soccorso: tre lavorano nell'ambulatorio per i casi meno gravi, tre sono medici in pensione richiamati in servizio.",
    "categoria": "altro",
    "zona": "benevento",
@@ -1778,6 +1801,7 @@
   {
    "id": "acqua-giovedi-22-ottobre-paduli-alto-calore",
    "titolo": "Paduli e altri sette Comuni del Sannio senz'acqua giovedì 22 ottobre dalle 14 alle 24 per lavori sulla condotta",
+   "titolo_google": "Paduli e altri 7 Comuni senz'acqua giovedì 22 ottobre",
    "sintesi": "Alto Calore Servizi sospende l'acqua giovedì 22 ottobre dalle 14 alle 24 per lavori urgenti sulla condotta a Paduli, località Torre. Restano senz'acqua Paduli, Pietrelcina, Pesco Sannita, Pago Veiano, Campolattaro, Pontelandolfo, Fragneto Monforte e Sant'Arcangelo Trimonte.",
    "categoria": "altro",
    "zona": "provincia",
@@ -1861,6 +1885,7 @@
   {
    "id": "benevento-comune-smartworking-dipendenti",
    "titolo": "Benevento, il sindaco Mastella chiede lo smart working per i dipendenti comunali che abitano fuori città, per il caro carburante",
+   "titolo_google": "Benevento, Mastella chiede lo smart working per i comunali",
    "sintesi": "Il sindaco ha dato indicazione alla Segretaria generale, responsabile del personale, di preparare gli atti per il lavoro a distanza dei dipendenti del Comune che non risiedono a Benevento. Il motivo è il costo del carburante e l'inflazione; l'attivazione dipenderà dalle esigenze del Comune.",
    "categoria": "politica",
    "zona": "benevento",
@@ -1952,6 +1977,7 @@
   {
    "id": "benevento-cimitero-orari-defunti",
    "titolo": "Benevento, cimitero comunale aperto dalle 7 alle 17.30 da mercoledì 28 ottobre a martedì 3 novembre per la Commemorazione dei Defunti",
+   "titolo_google": "Cimitero di Benevento, orari per i Defunti dal 28 ottobre",
    "sintesi": "Il Comune di Benevento comunica che il cimitero resta aperto al pubblico dal 28 ottobre al 3 novembre, dalle 7 alle 17.30. Lunedì 2 novembre alle 10 è in programma la Messa nella Chiesa Madre del cimitero.",
    "categoria": "altro",
    "zona": "benevento",
@@ -2020,6 +2046,7 @@
   {
    "id": "telese-gepos-licenziamenti-sit-in",
    "titolo": "Telese Terme, clinica Gepos: licenziati due tecnici di laboratorio dopo oltre 30 anni, sit-in dei sindacati lunedì 26 ottobre",
+   "titolo_google": "Telese Terme, Gepos licenzia due tecnici: sit-in il 26 ottobre",
    "sintesi": "FP Cgil e Uil Fpl denunciano il licenziamento di due tecnici del laboratorio analisi della clinica Gepos di Telese Terme, con oltre trent'anni di servizio. Chiedono chiarimenti all'azienda e verifiche all'Asl, e annunciano un sit-in davanti alla clinica lunedì 26 ottobre dalle 10 alle 13.",
    "categoria": "altro",
    "zona": "telesina",
@@ -2143,6 +2170,7 @@
   {
    "id": "allerta-arancione-sannio-21-ottobre",
    "titolo": "Sannio, allerta arancione per maltempo mercoledì 21 ottobre: scuole chiuse a Benevento e in molti Comuni, chiusi anche parchi e cimiteri in diversi centri",
+   "titolo_google": "Allerta arancione nel Sannio il 21 ottobre: scuole chiuse",
    "sintesi": "La Protezione civile ha confermato l'allerta arancione per mercoledì 21 ottobre in tutte e tre le zone del Sannio: rischio frane e temporali, soprattutto al mattino. Scuole chiuse a Benevento e in molti Comuni; a Benevento, Montesarchio, Sant'Agata de' Goti, Pietrelcina e Frasso Telesino chiusi anche parchi o cimiteri. Per giovedì 22 ottobre l'allerta scende a gialla, dalle 00 alle 16, su tutta la Campania e nelle tre zone del Sannio.",
    "categoria": "meteo",
    "zona": "provincia",
@@ -2521,6 +2549,7 @@
   {
    "id": "airola-incendio-diossine-latte",
    "titolo": "Incendio di Airola, controlli sugli alimenti: diossine nel latte di pecora a Cervinara, il latte è stato bloccato",
+   "titolo_google": "Incendio di Airola, diossine nel latte di pecora a Cervinara",
    "sintesi": "Nell'ultimo aggiornamento dei controlli (10-16 ottobre) dopo l'incendio di Airola sono state confermate due irregolarità per diossine nel latte di pecora a Cervinara; il latte è stato bloccato e non va in commercio. Altre irregolarità riguardano erba da pascolo e mais trinciato. Nei terreni agricoli finora non risultano soglie superate.",
    "categoria": "altro",
    "zona": "caudina",
@@ -2627,6 +2656,7 @@
   {
    "id": "asia-ecocentro-chiuso-protesta",
    "titolo": "Benevento, protesta dei camion: l'Asia chiude l'ecocentro di Margiacca e sospende dal 21 ottobre i cassonetti dei tessili e il ritiro degli ingombranti",
+   "titolo_google": "Benevento, Asia chiude l'ecocentro di Margiacca per la protesta",
    "sintesi": "I mezzi dell'Asia, la società dei rifiuti di Benevento, restano bloccati dalla protesta degli autotrasportatori e non riescono a scaricare. L'ecocentro di Margiacca è chiuso dal 20 ottobre; dal 21 si fermano anche la raccolta nei contenitori dei tessili e il ritiro a domicilio degli ingombranti.",
    "categoria": "altro",
    "zona": "benevento",
@@ -2792,6 +2822,7 @@
   {
    "id": "rummo-produzione-ferma",
    "titolo": "Benevento, il pastificio Rummo ferma la produzione: per i blocchi dei camion non arrivano più le materie prime",
+   "titolo_google": "Benevento, Rummo ferma la produzione per il blocco dei camion",
    "sintesi": "Il presidente Cosimo Rummo dice che lo stabilimento di Benevento è fermo dal 19 ottobre: non arrivano camion né cisterne e le scorte sono finite. Se lo stop dura pochi giorni la produzione si recupera, se la protesta si prolunga, avverte, il Sud rischia di restare «senza cibo né medicine».",
    "categoria": "altro",
    "zona": "benevento",
@@ -2904,6 +2935,7 @@
   {
    "id": "trenitalia-carnet-smart-working",
    "titolo": "Trenitalia cancella i carnet Smart Working e mette 2 euro a prenotazione sull'Alta Velocità: il consigliere regionale Mastella chiede un incontro per i pendolari di Benevento e Caserta",
+   "titolo_google": "Benevento, addio carnet Smart Working di Trenitalia",
    "sintesi": "Secondo il consigliere regionale Pellegrino Mastella, lo stop ai carnet Smart Working e il costo di 2 euro per ogni prenotazione dell'abbonamento Alta Velocità farebbero salire la spesa dei pendolari verso Roma. Chiede un incontro urgente con i vertici campani di Trenitalia.",
    "categoria": "altro",
    "zona": "benevento",
@@ -2985,6 +3017,7 @@
   {
    "id": "droga-montesarchio-due-arresti",
    "titolo": "Montesarchio, sequestrati oltre un chilo e mezzo di hashish e marijuana: arrestati due uomini",
+   "titolo_google": "Montesarchio, oltre 1,5 kg di droga: arrestati due uomini",
    "sintesi": "I Carabinieri della Compagnia di Montesarchio hanno sequestrato più di un chilo e mezzo tra hashish e marijuana dopo una perquisizione e hanno arrestato due uomini. Sono stati portati ai loro domicili in attesa dell'udienza di convalida davanti al giudice.",
    "categoria": "cronaca",
    "zona": "caudina",
@@ -3072,6 +3105,7 @@
   {
    "id": "pago-veiano-lite-ferito-marito",
    "titolo": "Pago Veiano, lite in casa: uomo di 72 anni accoltellato, la moglie di 55 è stata arrestata per tentato omicidio",
+   "titolo_google": "Pago Veiano, 72enne accoltellato in casa: arrestata la moglie",
    "sintesi": "A Pago Veiano un pensionato di 72 anni è stato ferito con un coltello al torace e all'addome durante una lite con la moglie, una donna di 55 anni di origine polacca. Lui è stato operato al San Pio di Benevento e le sue condizioni sono migliorate; lei è stata arrestata dai Carabinieri con l'ipotesi di tentato omicidio ed è in carcere.",
    "categoria": "cronaca",
    "zona": "fortore",
@@ -3259,6 +3293,7 @@
   {
    "id": "tir-appia-telesina",
    "titolo": "Caro gasolio, tir fermi sull'Appia a Tufara Valle e a Castel del Lago, blocchi anche sulla Telesina a San Salvatore Telesino",
+   "titolo_google": "Tir fermi sull'Appia e sulla Telesina per il caro gasolio",
    "sintesi": "Dal 19 ottobre gli autotrasportatori protestano contro il prezzo del gasolio e i blocchi continuano per la seconda notte: tre presìdi a Castel del Lago, a Tufara Valle sull'Appia e a San Salvatore Telesino sulla Telesina. Da giovedì 22 si aggiungono gli agricoltori.",
    "categoria": "strade",
    "zona": "provincia",
@@ -3588,6 +3623,7 @@
   {
    "id": "scaffali-vuoti",
    "titolo": "Sciopero dei tir, mancano frutta, verdura e carne in alcuni supermercati del Sannio",
+   "titolo_google": "Tir fermi, mancano frutta e carne in supermercati del Sannio",
    "sintesi": "Con i camion fermi, in diversi supermercati di Benevento e provincia i reparti dei prodotti freschi restano sguarniti: mancano frutta, verdura e carne, e secondo BeneventoNews24 anche pasta e latticini. Alcuni distributori hanno finito il gasolio.",
    "categoria": "altro",
    "zona": "benevento",
@@ -3724,6 +3760,7 @@
   {
    "id": "agricoltori-22-ottobre",
    "titolo": "Dal 22 ottobre presidi degli agricoltori sulla Sannitica, sulla statale 212 e a Ponte delle Tavole",
+   "titolo_google": "Agricoltori, presidi dal 22 ottobre sulla Sannitica e sulla 212",
    "sintesi": "Gli agricoltori sanniti si uniscono alla protesta contro il caro gasolio e i costi di produzione. Da giovedì 22 ottobre presidi a oltranza sulla Sannitica, sulla statale 212 e a Ponte delle Tavole; lo stesso giorno Coldiretti Campania manifesta a Napoli. Il 21 ottobre Coldiretti Campania ha fermato la manifestazione di Napoli dopo la promessa della Regione di fino a venti milioni di euro.",
    "categoria": "strade",
    "zona": "benevento",
@@ -3948,6 +3985,7 @@
   {
    "id": "mozione-caro-carburanti",
    "titolo": "Caro carburanti, mozione in Consiglio regionale: chiesto un fondo straordinario per autotrasporto e agricoltura",
+   "titolo_google": "Caro carburanti, mozione in Regione per un fondo straordinario",
    "sintesi": "Il gruppo Casa Riformista–Italia Viva–Noi di Centro, primo firmatario il consigliere sannita Pellegrino Mastella, chiede alla Regione un fondo straordinario, un tavolo permanente e un intervento del Governo sulle accise.",
    "categoria": "politica",
    "zona": "benevento",
@@ -4033,6 +4071,7 @@
   {
    "id": "ficomirrors-morcone-vertice",
    "titolo": "Morcone, vertice in Prefettura sulla Ficomirrors: l'azienda, che vuole spostare la produzione in Polonia dal 2029, apre a nuove produzioni; nuovo incontro a dicembre",
+   "titolo_google": "Morcone, vertice sulla Ficomirrors: nuovo incontro a dicembre",
    "sintesi": "Lunedì 19 ottobre in Prefettura a Benevento azienda, sindacati, Confindustria e sindaci hanno discusso il futuro dello stabilimento di Morcone, con circa 200 dipendenti, da cui il gruppo Ficosa vuole spostare in Polonia la produzione degli specchietti per il Fiat Ducato dalla seconda metà del 2029. L'azienda si è detta aperta a nuove produzioni; il sindacato chiede di salvare tutti i posti. Si torna al tavolo a metà dicembre.",
    "categoria": "altro",
    "zona": "provincia",
@@ -4255,6 +4294,7 @@
   {
    "id": "mensa-pasto-da-casa",
    "titolo": "Benevento, mensa scolastica: resta il no al pasto portato da casa, i presidi difendono la scelta e alcuni genitori pensano al Tar",
+   "titolo_google": "Benevento, mensa: resta il no al pasto portato da casa",
    "sintesi": "L'associazione dei presidi (Anp) difende i dirigenti che non fanno mangiare nei locali della mensa il pasto portato da casa, per igiene, spazi e personale. Comune e Pd si accusano a vicenda su chi abbia deciso il divieto; al plesso Lucarelli due genitori valutano il ricorso al Tar (il tribunale amministrativo) e la Lega porta in Parlamento il caso delle cucine del Conservatorio usate per la mensa.",
    "categoria": "politica",
    "zona": "benevento",
@@ -4467,6 +4507,7 @@
   {
    "id": "condanne-tentato-omicidio-montesarchio",
    "titolo": "Montesarchio, tentato omicidio di un 17enne nel 2025: quattro ventenni condannati in primo grado, pene da 6 anni a 8 anni e 20 giorni",
+   "titolo_google": "Montesarchio, tentato omicidio di un 17enne: quattro condanne",
    "sintesi": "Lunedì 19 ottobre il giudice Roberto Nuzzo ha condannato con rito abbreviato quattro ventenni imputati di tentato omicidio per l'aggressione a un ragazzo di Vitulano, che allora aveva 17 anni, colpito anche con una mazza da baseball fuori da un locale di Montesarchio nella notte del 5 ottobre 2025. Le pene sono più basse di quelle chieste dalla Procura.",
    "categoria": "cronaca",
    "zona": "caudina",
@@ -4602,6 +4643,7 @@
   {
    "id": "telese-concorso-carabinieri-indagati",
    "titolo": "Telese Terme, soldi per entrare nei Carabinieri: otto indagati per traffico di influenze illecite, la Procura esclude il coinvolgimento dell'Arma",
+   "titolo_google": "Telese Terme, soldi per entrare nei Carabinieri: otto indagati",
    "sintesi": "La Procura di Benevento ha chiuso le indagini su otto persone, indagate a vario titolo per concorso in traffico di influenze illecite. Secondo l'accusa un 76enne di Telese Terme avrebbe preso soldi in contanti da un aspirante carabiniere e dai suoi genitori vantando conoscenze; la Procura precisa che l'Arma non è coinvolta.",
    "categoria": "cronaca",
    "zona": "telesina",
@@ -4743,6 +4785,7 @@
   {
    "id": "bus-linea-5",
    "titolo": "Benevento, giovane in scooter minaccia il personale di un autobus urbano: si sente male un controllore",
+   "titolo_google": "Benevento, minacce sul bus urbano: si sente male un controllore",
    "sintesi": "Lunedì 19 ottobre, nel primo pomeriggio, un giovane in scooter ha affiancato un autobus della linea urbana 05 di AIR Campania, ha insultato alcuni passeggeri e minacciato il personale. Un controllore dei biglietti si è sentito male.",
    "categoria": "cronaca",
    "zona": "benevento",
@@ -4849,6 +4892,7 @@
   {
    "id": "ferrovia-benevento-cancello-rfi",
    "titolo": "Ferrovia Benevento-Cancello per la Valle Caudina chiusa dal 2021: comitato utenti ed Errico chiedono di passarla a RFI",
+   "titolo_google": "Ferrovia Benevento-Cancello, chiesto il passaggio a RFI",
    "sintesi": "Il Nuovo Comitato Utenti Ferrovia Valle Caudina e il consigliere regionale di Forza Italia Fernando Errico chiedono che la linea, chiusa dal 2021 per lavori, passi a RFI (Rete Ferroviaria Italiana, la società della rete nazionale). La riapertura è ipotizzata per i primi mesi del 2027.",
    "categoria": "politica",
    "zona": "caudina",
@@ -4962,6 +5006,7 @@
   {
    "id": "sentenza-spaccio-valle-caudina",
    "titolo": "Droga tra Caserta e Valle Caudina, cade l'accusa di associazione: tre condannati per alcuni episodi di spaccio, tra loro un 60enne di Bonea",
+   "titolo_google": "Valle Caudina, spaccio: cade l'associazione, tre condannati",
    "sintesi": "Il Tribunale di Santa Maria Capua Vetere ha assolto tre imputati dall'accusa di associazione finalizzata al traffico di droga e da diversi episodi di spaccio, e li ha condannati per altri episodi: 8 anni a un 41enne di San Felice a Cancello, 6 anni a un 60enne di Bonea e a una 47enne di Pozzuoli. La Dda aveva chiesto 26 e 13 anni.",
    "categoria": "cronaca",
    "zona": "caudina",
@@ -5061,6 +5106,7 @@
   {
    "id": "esercitazione-terremoto",
    "titolo": "Esercitazione di Protezione civile: terremoto simulato ad Apollosa, Arpaise, Ceppaloni e San Leucio del Sannio",
+   "titolo_google": "Terremoto simulato a San Leucio, Apollosa, Arpaise e Ceppaloni",
    "sintesi": "Lunedì 19 ottobre i quattro Comuni hanno simulato un forte terremoto: evacuazione delle scuole, ricerca di un disperso, soccorso ai feriti e prove di comunicazione senza telefono e internet.",
    "categoria": "eventi",
    "zona": "provincia",
@@ -5171,6 +5217,7 @@
   {
    "id": "cocchia-cavour-asfalto",
    "titolo": "Benevento, nuovo asfalto in via Cocchia e via Cavour: senso unico alternato e divieti di sosta fino al 31 ottobre",
+   "titolo_google": "Benevento, nuovo asfalto in via Cocchia e via Cavour",
    "sintesi": "Dal 19 ottobre si rifà l'asfalto: strada ristretta con senso unico alternato, regolato da operai con la paletta e da semafori, e divieto di sosta con rimozione su entrambi i lati nei tratti dei lavori. Fine prevista entro la mattina di sabato 31 ottobre.",
    "categoria": "strade",
    "zona": "benevento",
@@ -5221,6 +5268,7 @@
   {
    "id": "mellusi-annunziata",
    "titolo": "Benevento, divieti di sosta in viale Mellusi il 21 e 22 ottobre; piazzetta Santa Rita chiusa fino ad aprile per il cantiere dell'Annunziata",
+   "titolo_google": "Benevento, viale Mellusi: divieti di sosta il 21 e 22 ottobre",
    "sintesi": "Viale Mellusi, tra via Meomartini e via Nicola Sala: sosta vietata con rimozione dalle 8 alle 18, mercoledì 21 sul lato destro e giovedì 22 sul sinistro. Da mercoledì piazzetta Santa Rita chiusa a transito e sosta e divieto di fermata in un tratto di via Rampa Annunziata, anche per i residenti con permesso ZTL.",
    "categoria": "strade",
    "zona": "benevento",
@@ -5276,6 +5324,7 @@
   {
    "id": "sagra-castagna-vitulano",
    "titolo": "Vitulano, dal 29 ottobre al 1° novembre la 33ª Sagra della castagna e del pecorino, con escursioni nei castagneti di Monte Drago",
+   "titolo_google": "Vitulano, Sagra della castagna dal 29 ottobre al 1° novembre",
    "sintesi": "Quattro giorni di sagra a Vitulano, promossa dalla Pro Loco Camposauro con il Comune: escursioni nei castagneti di Monte Drago dal 29 al 31 ottobre, passeggiate nel centro storico il 31 ottobre e il 1° novembre e lo Stand del Contadino in piazza San Menna.",
    "categoria": "eventi",
    "zona": "provincia",
@@ -5353,6 +5402,7 @@
   {
    "id": "caro-gasolio-sannio",
    "titolo": "Caro gasolio, la protesta di tir e agricoltori nel Sannio: dove sono i blocchi, cosa manca e cosa succede adesso",
+   "titolo_google": "Caro gasolio nel Sannio: blocchi, cosa manca, cosa succede",
    "sommario": "Da lunedì 19 ottobre gli autotrasportatori fermano i camion sull'Appia a Tufara Valle e a Castel del Lago; ci sono stati blocchi anche sulla Telesina a San Salvatore Telesino. Nei supermercati mancano i prodotti freschi e alcuni distributori hanno finito il gasolio. Da giovedì 22 si aggiungono gli agricoltori. Oggi, 20 ottobre, il ministro Salvini incontra a Milano associazioni e gruppi di protesta, anche della Campania.",
    "luogo": "Provincia di Benevento",
    "aggiornato": "2026-10-21T20:05:00+02:00",

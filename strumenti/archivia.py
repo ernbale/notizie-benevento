@@ -219,7 +219,12 @@ def controlla(d, err, avv, adesso=None):
             err.append(f"{w}: pubblicato è nel futuro ({n['pubblicato']})")
         if "in_vigore_fino" in n and not GIORNO.match(str(n.get("in_vigore_fino"))):
             err.append(f"{w}: in_vigore_fino deve essere AAAA-MM-GG")
-        tl = str(n.get("titolo", "")).lower()
+        tg = str(n.get("titolo_google") or "")
+        if not tg.strip():
+            avv.append(f"{w}: manca titolo_google (Google mostrerà il titolo lungo tagliato)")
+        elif len(tg) > 70:
+            err.append(f"{w}: titolo_google di {len(tg)} caratteri: al massimo 65")
+        tl = (str(n.get("titolo", "")) + " " + tg).lower()
         for b in VIETATE:
             if b in tl:
                 err.append(f"{w}: titolo con {b!r}")

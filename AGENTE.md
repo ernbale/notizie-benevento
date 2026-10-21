@@ -151,12 +151,18 @@ Regole:
 3. **Confronta**: cosa dicono tutti (concordano), cosa dicono in modo diverso (divergono: scrivilo), cosa manca
    (non si sa). Se un giornale ha sbagliato una data o un dato verificabile su una fonte ufficiale, scrivilo
    nella `nota` con garbo.
-4. **Scrivi** titolo, sintesi e articolo seguendo le regole sopra e «Come si scrive l'articolo» qui sotto.
+4. **Scrivi** titolo, `titolo_google`, sintesi e articolo seguendo le regole sopra e «Come si scrive l'articolo» qui sotto.
+   `titolo_google` è il titolo corto che compare su Google (il sito ci aggiunge «– Notizie Benevento»): Google
+   mostra circa 60 caratteri e taglia il resto, il titolo lungo resta sul sito e su Facebook. Regole: 45-60
+   caratteri (mai più di 65); prima il paese o la strada, poi il fatto, con le parole che uno scriverebbe su
+   Google («Rifiuti, raccolta ferma a Sant'Angelo a Cupolo per i tir», «SS 7 chiusa a Paduli per una frana»);
+   gli stessi fatti del titolo, senza acchiappa-clic e senza il nome del sito. Se cambia il fatto principale,
+   aggiornalo; quando riscrivi una notizia vecchia che non ce l'ha, aggiungilo.
 5. **Rileggi prima di pubblicare** (obbligatorio), per ogni notizia nuova o cambiata:
    - ogni frase dell'articolo ha almeno una fonte che hai davvero letto, e la fonte dice proprio quello?
    - il racconto si capisce da solo, da chi non ha letto nessun giornale? dice chi è chi, dove e perché?
    - date, orari, numeri, nomi di strade e paesi sono identici alle fonti?
-   - titolo: dice il fatto? è senza acchiappa-clic? parole semplici?
+   - titolo: dice il fatto? è senza acchiappa-clic? parole semplici? `titolo_google` sta in 60 caratteri, con paese e fatto?
    - è un fatto di oggi o ancora attuale?
    Se qualcosa non torna, correggi; se non riesci a verificarlo, togli quella frase o la notizia.
 
@@ -304,7 +310,7 @@ aggiorni a ogni giro, come notizie.json.
   "giornali_letti": 0,
   "notizie": [ {
     "id": "parole-chiave-con-trattini (stabile, non cambia mai, unico anche rispetto all'archivio)",
-    "titolo": "", "sintesi": "2-3 frasi",
+    "titolo": "", "titolo_google": "45-60 caratteri: paese e fatto (regola al punto 4)", "sintesi": "2-3 frasi",
     "categoria": "strade|cronaca|meteo|politica|eventi|altro",
     "zona": "benevento|telesina|caudina|fortore|provincia",
     "immagine": "tema da img/temi/temi.json (facoltativo, mai per la cronaca)",
@@ -322,7 +328,7 @@ aggiorni a ogni giro, come notizie.json.
     }
   } ],
   "approfondimenti": [ {
-    "id": "", "titolo": "", "sommario": "3-4 frasi", "luogo": "", "aggiornato": "ISO",
+    "id": "", "titolo": "", "titolo_google": "45-60 caratteri", "sommario": "3-4 frasi", "luogo": "", "aggiornato": "ISO",
     "collegate": ["id delle notizie"],
     "in_breve": [ {"testo": "", "fonti": []} ],
     "sezioni": [ {"titolo": "", "paragrafi": [ {"testo": "", "fonti": []} ], "punti": [ {"testo": "", "fonti": []} ]} ],
