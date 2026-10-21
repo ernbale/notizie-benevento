@@ -1,7 +1,202 @@
 {
- "aggiornato": "2026-10-21T16:13:00+02:00",
+ "aggiornato": "2026-10-21T18:11:00+02:00",
  "giornali_letti": 13,
  "notizie": [
+  {
+   "id": "benevento-tre-ponti-smart-in-fiamme",
+   "titolo": "Benevento, Smart in fiamme sulla statale Appia a Tre Ponti: il conducente scende in tempo",
+   "sintesi": "Mercoledì 21 ottobre una Smart ha preso fuoco mentre andava verso Benevento sulla statale Appia, in località Tre Ponti. Il conducente si è fermato ed è sceso in tempo; i vigili del fuoco hanno spento le fiamme.",
+   "categoria": "cronaca",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-21",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/441716/tre-ponti-smart-in-fiamme-paura-per-il-conducente.shtml"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/21/foto-smart-in-fiamme-lungo-la-statale-appia-conducente-riesce-a-mettersi-in-salvo/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/auto-fiamme-tragitto-vigili-del-fuoco/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Mercoledì 21 ottobre una Smart ha preso fuoco lungo la statale Appia, in località Tre Ponti, a Benevento. Il conducente, che stava andando verso Benevento, si è accorto in tempo del pericolo ed è sceso dall'auto senza conseguenze.",
+      "fonti": [
+       "Ottopagine",
+       "BeneventoNews24",
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Prima è uscito del fumo, poi sono comparse le fiamme. Secondo Anteprima24 l'incendio è partito dal vano motore, cioè dalla parte davanti dell'auto dove sta il motore. L'uomo ha fermato la macchina subito e si è messo in salvo.",
+      "fonti": [
+       "Ottopagine",
+       "BeneventoNews24",
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Sul posto sono arrivati i vigili del fuoco del comando provinciale di Benevento, che hanno spento le fiamme e messo in sicurezza la zona. La Smart è rimasta danneggiata dal rogo.",
+      "fonti": [
+       "Ottopagine",
+       "BeneventoNews24",
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Smart in fiamme sulla statale Appia a Tre Ponti, conducente illeso, vigili del fuoco intervenuti.",
+      "fonti": [
+       "Ottopagine",
+       "BeneventoNews24",
+       "Anteprima24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "L'ora dell'incendio e la causa: le fonti non le dicono."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Tre Ponti: Smart in fiamme, paura per il conducente - FOTO",
+      "url": "https://www.ottopagine.it/bn/cronaca/441716/tre-ponti-smart-in-fiamme-paura-per-il-conducente.shtml",
+      "data": "21 ott"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "FOTO – Smart in fiamme lungo la Statale Appia: conducente riesce a mettersi in salvo",
+      "url": "https://www.beneventonews24.it/2026/10/21/foto-smart-in-fiamme-lungo-la-statale-appia-conducente-riesce-a-mettersi-in-salvo/",
+      "data": "21 ott"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Auto in fiamme durante il tragitto: intervento dei Vigili del Fuoco",
+      "url": "https://www.anteprima24.it/benevento/auto-fiamme-tragitto-vigili-del-fuoco/",
+      "data": "21 ott"
+     }
+    ]
+   }
+  },
+  {
+   "id": "sant-angelo-a-cupolo-morto-in-chiesa-archiviazione",
+   "titolo": "Sant'Angelo a Cupolo, morto a 62 anni mentre tinteggiava una chiesa: la Procura chiede l'archiviazione",
+   "sintesi": "Il pubblico ministero ha chiesto di archiviare l'inchiesta sulla morte di un uomo di 62 anni, avvenuta il 23 luglio 2025 nella chiesa della frazione Motta. I familiari si opporranno.",
+   "categoria": "cronaca",
+   "zona": "benevento",
+   "luogo": "Sant'Angelo a Cupolo",
+   "pubblicato": "2026-10-21",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/441700/muore-a-62-anni-mentre-tinteggia-la-chiesa-chiesta-archiviazione-dell-inchiesta.shtml"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il sostituto procuratore Carmine Pignatiello ha chiesto di archiviare l'inchiesta sulla morte di un uomo di 62 anni, avvenuta il 23 luglio 2025 nella chiesa di Maria Santissima della Neve, alla frazione Motta di Sant'Angelo a Cupolo. L'inchiesta è contro ignoti, cioè senza persone indagate.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Secondo una prima ricostruzione, l'uomo stava tinteggiando la chiesa su una scala. Avrebbe bevuto un bicchiere d'acqua chiesto a una persona che era con lui e poi sarebbe caduto, probabilmente dopo un malore. Per lui non c'era stato niente da fare.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "L'autopsia, fatta dal medico legale Francesco La Sala, ha concluso per una morte dovuta a un problema al cuore. Da qui la richiesta di archiviazione.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "I familiari, assistiti dall'avvocato Michele Ciruolo, si opporranno e chiederanno di continuare le indagini, guardando meglio l'intervento che l'uomo, dipendente di un'azienda, faceva in chiesa a titolo privato. Probabilmente sarà fissata un'udienza davanti al giudice per le indagini preliminari, che deciderà se archiviare. Le indagini erano state condotte dai carabinieri.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando sarà fissata l'udienza davanti al giudice e cosa deciderà."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Muore a 62 anni mentre tinteggia la chiesa, chiesta archiviazione dell'inchiesta",
+      "url": "https://www.ottopagine.it/bn/cronaca/441700/muore-a-62-anni-mentre-tinteggia-la-chiesa-chiesta-archiviazione-dell-inchiesta.shtml",
+      "data": "21 ott"
+     }
+    ]
+   }
+  },
+  {
+   "id": "san-pio-open-day-sclerodermia-22-ottobre",
+   "titolo": "Ospedale San Pio, giovedì 22 ottobre visite gratuite per la sclerodermia",
+   "sintesi": "Giovedì 22 ottobre, dalle 9 alle 12, la Reumatologia del San Pio di Benevento fa visite gratuite per la sclerodermia, nel Padiglione Rummo.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-13",
+   "in_vigore_fino": "2026-10-22",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Ospedale San Pio",
+     "url": "https://www.aosanpio.it/2026/10/13/aorn-san-pio-22-ottobre-open-day-dedicato-alla-sclerodermia/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Giovedì 22 ottobre l'ospedale San Pio di Benevento aderisce alla campagna nazionale di sensibilizzazione sulla sclerodermia, una malattia che colpisce più organi, causa invalidità e ha bisogno di cure e assistenza continue. Colpisce soprattutto le donne.",
+      "fonti": [
+       "Ospedale San Pio"
+      ]
+     },
+     {
+      "testo": "Le visite sono gratuite e si fanno dalle 9 alle 12 negli ambulatori della Reumatologia, al piano terra del Padiglione Rummo. Le fa la Reumatologia, diretta da Mariagrazia Ferrucci. Sono per chi ha il fenomeno di Raynaud o disturbi dei vasi sanguigni delle mani.",
+      "fonti": [
+       "Ospedale San Pio"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Se serve prenotare: l'avviso non lo dice."
+    ],
+    "fonti": [
+     {
+      "nome": "Ospedale San Pio",
+      "titolo": "AORN SAN PIO, 22 OTTOBRE OPEN DAY DEDICATO ALLA SCLERODERMIA",
+      "url": "https://www.aosanpio.it/2026/10/13/aorn-san-pio-22-ottobre-open-day-dedicato-alla-sclerodermia/",
+      "data": "13 ott"
+     }
+    ]
+   }
+  },
   {
    "id": "benevento-mastella-appello-no-acquisti-panico-spostamenti",
    "titolo": "Benevento, il sindaco Mastella ai cittadini per la crisi dei camion: niente acquisti per paura, meno spostamenti in auto",
@@ -228,7 +423,7 @@
   {
    "id": "montesarchio-hashish-34-grammi-arresto",
    "titolo": "Montesarchio, i Carabinieri arrestano un uomo con 34 grammi di hashish in casa",
-   "sintesi": "I Carabinieri di Montesarchio hanno arrestato un uomo trovato in casa con 34 grammi di hashish e il materiale per pesarlo e confezionarlo. È ai domiciliari in attesa delle decisioni della magistratura.",
+   "sintesi": "I Carabinieri di Montesarchio hanno arrestato un giovane (20 anni secondo Ottopagine) con 34 grammi di hashish e il materiale per pesarlo e confezionarlo. È ai domiciliari in attesa della convalida.",
    "categoria": "cronaca",
    "zona": "caudina",
    "luogo": "Montesarchio",
@@ -247,6 +442,10 @@
     {
      "nome": "BeneventoNews24",
      "url": "https://www.beneventonews24.it/2026/10/21/montesarchio-hashish-e-materiale-per-il-confezionamento-in-casa-arrestato-34enne/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/441724/scontro-egiziani-italiani-per-la-droga-poi-perquisizione-e-arresto-di-un-20enne.shtml"
     }
    ],
    "articolo": {
@@ -257,6 +456,12 @@
        "NTR24",
        "Cronache del Sannio",
        "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Secondo Ottopagine, l'uomo ha 20 anni e vive a Montesarchio. La perquisizione sarebbe scattata dopo una lite accesa, lunedì sera, tra giovani egiziani e italiani che, secondo i carabinieri, si contendevano il territorio dello spaccio. L'hashish era in pacchetti di gomme da masticare e in involucri di cellophane sistemati sul frigorifero e su un mobile. La misura, i domiciliari, è stata decisa dalla Procura e giovedì 22 ottobre c'è l'udienza di convalida davanti al giudice (era «domani» nell'articolo del 21).",
+      "fonti": [
+       "Ottopagine"
       ]
      },
      {
@@ -287,15 +492,15 @@
     ],
     "divergono": [
      {
-      "testo": "BeneventoNews24 titola «arrestato 34enne», mentre gli altri giornali non scrivono l'età dell'uomo: il «34» potrebbe essere una confusione con i 34 grammi di droga. L'età non è confermata.",
+      "testo": "BeneventoNews24 titola «arrestato 34enne»; Ottopagine scrive che il giovane ha 20 anni. Il «34» è con ogni probabilità il numero dei grammi di droga: vale l'età di Ottopagine, ma la dà solo una testata.",
       "fonti": [
        "BeneventoNews24",
-       "NTR24"
+       "Ottopagine"
       ]
      }
     ],
     "non_si_sa": [
-     "Il nome e l'età dell'arrestato: i Carabinieri non li hanno comunicati."
+     "Il nome dell'arrestato non è riportato qui. Il motivo della lite tra giovani, per ora solo «una prima ricostruzione»."
     ],
     "fonti": [
      {
@@ -314,6 +519,12 @@
       "nome": "BeneventoNews24",
       "titolo": "Montesarchio, hashish e materiale per il confezionamento in casa: arrestato 34enne",
       "url": "https://www.beneventonews24.it/2026/10/21/montesarchio-hashish-e-materiale-per-il-confezionamento-in-casa-arrestato-34enne/",
+      "data": "21 ott"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Scontro egiziani-italiani per la droga, poi perquisizione e arresto di un 20enne",
+      "url": "https://www.ottopagine.it/bn/cronaca/441724/scontro-egiziani-italiani-per-la-droga-poi-perquisizione-e-arresto-di-un-20enne.shtml",
       "data": "21 ott"
      }
     ]
@@ -3268,12 +3479,12 @@
   {
    "id": "agricoltori-22-ottobre",
    "titolo": "Dal 22 ottobre presidi degli agricoltori sulla Sannitica, sulla statale 212 e a Ponte delle Tavole",
-   "sintesi": "Gli agricoltori sanniti si uniscono alla protesta contro il caro gasolio e i costi di produzione. Da giovedì 22 ottobre presidi a oltranza sulla Sannitica, sulla statale 212 e a Ponte delle Tavole; lo stesso giorno Coldiretti Campania manifesta a Napoli.",
+   "sintesi": "Gli agricoltori sanniti si uniscono alla protesta contro il caro gasolio e i costi di produzione. Da giovedì 22 ottobre presidi a oltranza sulla Sannitica, sulla statale 212 e a Ponte delle Tavole; lo stesso giorno Coldiretti Campania manifesta a Napoli. Il 21 ottobre Coldiretti Campania ha fermato la manifestazione di Napoli dopo la promessa della Regione di fino a venti milioni di euro.",
    "categoria": "strade",
    "zona": "benevento",
    "immagine": "trattori",
    "luogo": "Benevento",
-   "pubblicato": "2026-10-19",
+   "pubblicato": "2026-10-21",
    "stato": "confermata",
    "fonti": [
     {
@@ -3295,10 +3506,18 @@
     {
      "nome": "LabTV",
      "url": "https://www.labtv.net/cultura/eventi/2026/10/19/benevento-protesta-di-agricoltori-e-autotrasportatori-contro-il-carovita/"
+    },
+    {
+     "nome": "NTR24 (Coldiretti)",
+     "url": "https://www.ntr24.tv/2026/10/21/coldiretti-campania-stop-alla-mobilitazione-in-arrivo-risorse-dalla-regione-campania/"
+    },
+    {
+     "nome": "Infosannio (Coldiretti)",
+     "url": "https://www.infosannionews.it/attualita/2026/coldiretti-campania-stop-alla-mobilitazione-in-arrivo-risorse-dalla-regione-campania.html"
     }
    ],
    "articolo": {
-    "aggiornato": "2026-10-20T09:25:00+02:00",
+    "aggiornato": "2026-10-21T18:11:00+02:00",
     "cronologia": [
      {
       "data": "18 ottobre",
@@ -3323,6 +3542,14 @@
       "fonti": [
        "NTR24",
        "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "data": "21 ottobre",
+      "fatto": "Coldiretti Campania ferma la manifestazione di Napoli dopo l'incontro in Regione.",
+      "fonti": [
+       "NTR24 (Coldiretti)",
+       "BeneventoNews24 (Coldiretti)"
       ]
      }
     ],
@@ -3356,7 +3583,8 @@
     ],
     "non_si_sa": [
      "La data esatta della manifestazione di Coldiretti a Napoli.",
-     "Quanti agricoltori e trattori saranno nei presidi sanniti e dove precisamente."
+     "Quanti agricoltori e trattori saranno nei presidi sanniti e dove precisamente.",
+     "Se i presidi degli agricoltori sanniti di giovedì 22 restano o no dopo lo stop alla manifestazione di Napoli: le fonti lette parlano solo di Napoli."
     ],
     "fonti": [
      {
@@ -3394,6 +3622,30 @@
       "titolo": "Benevento, protesta di agricoltori e autotrasportatori contro il carovita",
       "url": "https://www.labtv.net/cultura/eventi/2026/10/19/benevento-protesta-di-agricoltori-e-autotrasportatori-contro-il-carovita/",
       "data": "19 ott"
+     },
+     {
+      "nome": "NTR24 (Coldiretti)",
+      "titolo": "Coldiretti Campania: stop alla mobilitazione, in arrivo risorse dalla Regione Campania",
+      "url": "https://www.ntr24.tv/2026/10/21/coldiretti-campania-stop-alla-mobilitazione-in-arrivo-risorse-dalla-regione-campania/",
+      "data": "21 ott"
+     },
+     {
+      "nome": "BeneventoNews24 (Coldiretti)",
+      "titolo": "Coldiretti Campania: stop alla mobilitazione, in arrivo 20mln dalla Regione Campania",
+      "url": "https://www.beneventonews24.it/2026/10/21/coldiretti-campania-stop-alla-mobilitazione-in-arrivo-20mln-dalla-regione-campania/",
+      "data": "21 ott"
+     },
+     {
+      "nome": "Infosannio (Coldiretti)",
+      "titolo": "Coldiretti Campania: stop alla mobilitazione in arrivo risorse dalla Regione Campania",
+      "url": "https://www.infosannionews.it/attualita/2026/coldiretti-campania-stop-alla-mobilitazione-in-arrivo-risorse-dalla-regione-campania.html",
+      "data": "21 ott"
+     },
+     {
+      "nome": "Infosannio (13 milioni)",
+      "titolo": "Dalla Regione Campania risorse per 13 milioni di euro a sostegno delle imprese agricole",
+      "url": "https://www.infosannionews.it/politica/2026/dalla-regione-campania-risorse-per-13-milioni-di-euro-a-sostegno-delle-imprese-agricole.html",
+      "data": "21 ott"
      }
     ],
     "divergono": [
@@ -3402,6 +3654,13 @@
       "fonti": [
        "Il Sannio Quotidiano",
        "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Sulla cifra stanziata dalla Regione: NTR24 e BeneventoNews24 scrivono «fino a venti milioni» (Coldiretti); Infosannio ha un altro articolo che titola «13 milioni» per le imprese agricole. Non è chiaro se sia la stessa misura.",
+      "fonti": [
+       "BeneventoNews24 (Coldiretti)",
+       "Infosannio (13 milioni)"
       ]
      }
     ],
@@ -3427,6 +3686,13 @@
        "Il Sannio Quotidiano",
        "Ottopagine",
        "LabTV"
+      ]
+     },
+     {
+      "testo": "Mercoledì 21 ottobre Coldiretti Campania ha deciso di fermare la manifestazione di Napoli prevista per giovedì 22 in piazza del Plebiscito. Dopo un incontro in Regione con il presidente Roberto Fico e l'assessora all'agricoltura Maria Carmela Serluca, la Regione ha promesso fino a venti milioni di euro per i primi ristori agli agricoltori, per far scendere il gasolio agricolo sotto un euro al litro. Per il direttore regionale Roberto Mazzei è una scelta responsabile, per non appesantire una situazione già difficile per il blocco dei camion. Giovedì c'è un'altra riunione in Regione. Coldiretti dice che ortofrutta e latte restano fermi e che l'attenzione ora va alle Prefetture, per garantire il trasporto dei prodotti agricoli.",
+      "fonti": [
+       "NTR24 (Coldiretti)",
+       "BeneventoNews24 (Coldiretti)"
       ]
      }
     ]
