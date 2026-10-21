@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Scarica dal K12 di casa le fonti di Notizie Benevento che dal cloud dell'agente non si aprono e le mette
+"""Scarica da casa (Raspberry Pi del nodo Ingresso, 192.168.50.6) le fonti di Notizie Benevento che dal cloud dell'agente non si aprono e le mette
 nell'archivio privato ernbale/notizie-benevento-fonti, che l'agente trova accanto al suo.
 
 - ANAS: i comunicati della Campania (escono più o meno una volta a settimana) più quelli della Campania nel feed
@@ -10,12 +10,13 @@ nell'archivio privato ernbale/notizie-benevento-fonti, che l'agente trova accant
 
 ANAS e TV7 rifiutano le connessioni dall'estero (il cloud dell'agente, GitHub), da casa si aprono.
 
-Gira ogni 30 minuti dal cron del K12, solo libreria standard di Python. Per ogni fonte tiene le voci degli ultimi
+Gira ogni 30 minuti dal cron del Pi (fino al 21 ott 2026 era sul K12, che cade con la corrente dello stanzino);
+libreria standard di Python, più curl e git. Per ogni fonte tiene le voci degli ultimi
 giorni, aggiunge le nuove e scrive l'esito della lettura; se una fonte non risponde lascia le voci vecchie e lo
 scrive. Pubblica sempre un commit solo (riscritto ogni volta), così l'archivio resta piccolo.
-La chiave per scrivere è una chiave di deploy valida solo per quell'archivio (~/.ssh/nb_fonti sul K12).
+La chiave per scrivere è una chiave di deploy valida solo per quell'archivio (~/.ssh/nb_fonti sul Pi).
 
-Uso sul K12:  python3 ~/nb-fonti/fonti_casa.py            (scarica e pubblica)
+Uso sul Pi:   python3 ~/nb-fonti/fonti_casa.py            (scarica e pubblica)
               python3 ~/nb-fonti/fonti_casa.py --prova    (scarica e stampa, senza pubblicare)
 """
 import argparse
@@ -59,8 +60,18 @@ def fuso():
 
 def scarica(url, ctx=None):
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "it-IT,it;q=0.9"})
-    with urllib.request.urlopen(req, timeout=30, context=ctx) as r:
-        return r.read().decode(r.headers.get_content_charset() or "utf-8", "replace")
+    try:
+        with urllib.request.urlopen(req, timeout=30, context=ctx) as r:
+            return r.read().decode(r.headers.get_content_charset() or "utf-8", "replace")
+    except (OSError, ValueError):
+        if ctx is not None:
+            raise
+        # TV7 (dietro Cloudflare) a volte non risponde a Python e a curl sì, nello stesso momento (21 ott 2026)
+        p = subprocess.run(["curl", "-sfL", "--compressed", "-m", "60", "-A", UA, "-H", "Accept-Language: it-IT,it;q=0.9",
+                            url], capture_output=True)
+        if p.returncode:
+            raise
+        return p.stdout.decode("utf-8", "replace")
 
 
 def contesto_asl():
@@ -215,7 +226,7 @@ def leggi(nome, adesso):
 
 LEGGIMI = """# Fonti lette da casa per Notizie Benevento
 
-Le scarica ogni 30 minuti il K12 di casa (`strumenti/fonti_casa.py` nell'archivio del sito), perché dal cloud
+Le scarica ogni 30 minuti il Raspberry Pi di casa (`strumenti/fonti_casa.py` nell'archivio del sito), perché dal cloud
 dell'agente non si aprono: ANAS e TV7 rifiutano le connessioni dall'estero, il sito dell'ASL ha il certificato
 incompleto.
 
@@ -235,7 +246,7 @@ def pubblica(adesso):
     if not os.path.isdir(os.path.join(ARCHIVIO, ".git")):
         git("init", "-q", "-b", "main")
         git("remote", "add", "origin", REMOTO)
-        git("config", "user.name", "K12 di casa")
+        git("config", "user.name", "Pi di casa")
         git("config", "user.email", "ernbale@users.noreply.github.com")
     git("add", "-A")
     msg = f"Fonti lette da casa alle {adesso:%H:%M} del {adesso:%d/%m}"
