@@ -706,7 +706,7 @@ def main():
     mappa.insert(1, (SITO + "/meteo.html", adesso.isoformat(timespec="minutes")))
 
     # immagini non più usate; quelle col nome di prima (<id>-<impronta>.png, fino al 21 ott 2026) restano finché c'è
-    # la notizia, perché i post di Facebook usciti fino ad allora puntano lì
+    # la notizia, perché i post di Facebook usciti fino ad allora puntano lì (quelle dei post sono anche nel repository)
     ids = {x["id"] for x in notizie} | {x["id"] for x in appro}
     for f in glob.glob(os.path.join(sito, "img", "n", "*.png")):
         vecchia = re.match(r"(.+)-[0-9a-f]{10}\.png$", os.path.basename(f))
