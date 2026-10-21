@@ -14,6 +14,7 @@ notizia è già online quando Facebook ne legge titolo e immagine di anteprima.
   Il repository è pubblico: nei log si stampano solo gli esiti, mai la chiave.
 
 Uso:  FB_PAGE_TOKEN=… python3 strumenti/facebook.py [--sito .]
+      FB_SUBITO=2 …   (lanciato a mano da GitHub: 2 notizie adesso, senza aspettare la pausa tra un post e l'altro)
       python3 strumenti/facebook.py --prova      (dice cosa pubblicherebbe, senza chiave e senza toccare Facebook)
 """
 import argparse
@@ -141,16 +142,18 @@ def main():
     if oggi >= MAX_GIORNO:
         print(f"Facebook: già {oggi} notizie oggi, basta così")
         return
-    if ultimo and adesso - ultimo < dt.timedelta(minutes=PAUSA_MINUTI):
+    subito = int(os.environ.get("FB_SUBITO") or 0)   # solo quando lo chiede il proprietario, dal pulsante di GitHub
+    if not subito and ultimo and adesso - ultimo < dt.timedelta(minutes=PAUSA_MINUTI):
         print(f"Facebook: l'ultimo post è delle {ultimo:%H:%M}, aspetto")
         return
     lista = candidate(notizie, gia, adesso)
     if not lista:
         print("Facebook: nessuna notizia nuova da pubblicare")
         return
-    n = lista[0]
-    chiama("POST", "me/feed", token, {"message": messaggio(n), "link": f"{SITO}/notizia/{n['id']}/"})
-    print(f"Facebook: pubblicata {n['id']} ({oggi + 1} oggi)")
+    for n in lista[:min(max(subito, 1), MAX_GIORNO - oggi)]:
+        chiama("POST", "me/feed", token, {"message": messaggio(n), "link": f"{SITO}/notizia/{n['id']}/"})
+        oggi += 1
+        print(f"Facebook: pubblicata {n['id']} ({oggi} oggi)")
 
 
 if __name__ == "__main__":
