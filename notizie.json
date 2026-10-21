@@ -1,7 +1,232 @@
 {
- "aggiornato": "2026-10-21T08:05:00+02:00",
+ "aggiornato": "2026-10-21T10:06:00+02:00",
  "giornali_letti": 15,
  "notizie": [
+  {
+   "id": "rifiuti-blocco-tir-apice-morcone-cusano-sant-angelo-a-cupolo",
+   "titolo": "Blocco dei tir, rifiuti a rischio nel Sannio: a Sant'Angelo a Cupolo salta la raccolta, a Apice chiusa l'isola ecologica",
+   "sintesi": "Con le strade bloccate dai camion e il gasolio che scarseggia, in diversi Comuni del Sannio la raccolta dei rifiuti salta o rischia di saltare. A Sant'Angelo a Cupolo la raccolta è stata fermata; a Apice è chiusa l'isola ecologica dal 20 ottobre; Morcone e Cusano Mutri avvisano di possibili disservizi.",
+   "categoria": "altro",
+   "zona": "provincia",
+   "luogo": "Sannio",
+   "pubblicato": "2026-10-21T08:00:00+02:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Comune di Apice",
+     "url": "https://www.comune.apice.bn.it/novita/notizie/novita_140.html"
+    },
+    {
+     "nome": "Comune di Cusano Mutri",
+     "url": "https://www.comune.cusanomutri.bn.it/it/novita/page/comunicazione-di-possibili-disservizi-nella-raccolta-e-nel-trasporto-dei-rifiuti-urbani-a-causa-di-forza-maggiore"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/21/blocco-tir-stop-alla-raccolta-dei-rifiuti-a-santangelo-a-cupolo-a-rischio-pure-a-morcone-e-in-altri-centri/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il blocco degli autotrasportatori arriva anche sui rifiuti. In alcuni Comuni del Sannio la raccolta non si fa, o potrebbe non farsi, perché i camion faticano a passare e a scaricare e il gasolio scarseggia.",
+      "fonti": [
+       "Il Sannio Quotidiano",
+       "Comune di Apice"
+      ]
+     },
+     {
+      "testo": "A Sant'Angelo a Cupolo la raccolta è già stata fermata. A Morcone il Comune ha avvisato i cittadini che le agitazioni dell'autotrasporto potrebbero rendere difficile il passaggio dei camion della raccolta, con il rischio che l'indifferenziato (i rifiuti non separati) non venga ritirato nel giorno previsto. Secondo Il Sannio Quotidiano il rischio riguarda anche altri centri.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "Ad Apice è chiusa dal 20 ottobre l'isola ecologica, cioè il centro dove i cittadini portano ingombranti e rifiuti speciali. Lo ha comunicato il Comune: il Consorzio Campale Stabile, che gestisce la raccolta e il centro, ha scritto che i blocchi stradali e le difficoltà a trovare carburante gli impediscono di svuotare i cassoni e di portare i materiali negli impianti. A Cusano Mutri il Comune ha pubblicato un avviso su possibili disservizi nella raccolta e nel trasporto dei rifiuti per «forza maggiore».",
+      "fonti": [
+       "Comune di Apice",
+       "Comune di Cusano Mutri"
+      ]
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "20 ottobre",
+      "fatto": "Il Consorzio Campale Stabile comunica al Comune di Apice la chiusura dell'isola ecologica a partire dal 20 ottobre.",
+      "fonti": [
+       "Comune di Apice"
+      ]
+     },
+     {
+      "data": "21 ottobre",
+      "fatto": "Il Sannio Quotidiano scrive che a Sant'Angelo a Cupolo la raccolta è stata fermata e che il rischio c'è anche a Morcone.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     }
+    ],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quali altri Comuni, oltre a quelli citati, hanno già saltato la raccolta.",
+     "Quando riprenderà la raccolta a Sant'Angelo a Cupolo e quando riaprirà l'isola ecologica di Apice."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Apice",
+      "titolo": "Avviso pubblico per segnalazione di possibili disservizi nel servizio di raccolta rifiuti",
+      "url": "https://www.comune.apice.bn.it/novita/notizie/novita_140.html",
+      "data": "20 ott"
+     },
+     {
+      "nome": "Comune di Cusano Mutri",
+      "titolo": "Avviso: Comunicazione di possibili disservizi nella raccolta e nel trasporto dei rifiuti urbani a causa di forza maggiore",
+      "url": "https://www.comune.cusanomutri.bn.it/it/novita/page/comunicazione-di-possibili-disservizi-nella-raccolta-e-nel-trasporto-dei-rifiuti-urbani-a-causa-di-forza-maggiore",
+      "data": "20 ott"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Blocco tir, stop alla raccolta dei rifiuti a Sant’Angelo a Cupolo. A rischio pure a Morcone e in altri centri",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/21/blocco-tir-stop-alla-raccolta-dei-rifiuti-a-santangelo-a-cupolo-a-rischio-pure-a-morcone-e-in-altri-centri/",
+      "data": "21 ott"
+     }
+    ]
+   }
+  },
+  {
+   "id": "limatola-aggressione-volpino-misure-confermate",
+   "titolo": "Limatola, pestaggio in una sala giochi in aprile: il giudice conferma le misure per tre uomini, due restano in carcere",
+   "sintesi": "Il giudice ha confermato le misure contro tre uomini indagati per un'aggressione avvenuta ad aprile a Limatola, in cui la vittima ha perso un occhio. Due restano in carcere, uno ha l'obbligo di firma.",
+   "categoria": "cronaca",
+   "zona": "telesina",
+   "luogo": "Limatola",
+   "pubblicato": "2026-10-21T08:00:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/441592/picchiato-con-volpino-due-indagati-si-difendono-il-gip-li-lascia-in-carcere.shtml"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/21/aggredito-per-un-debito-di-droga-confermate-le-misure-cautelari-per-tre-persone/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il giudice per le indagini preliminari ha confermato le misure cautelari (le restrizioni decise prima del processo) per tre uomini indagati per un'aggressione avvenuta ad aprile a Limatola. Dopo gli interrogatori, due restano in carcere: un 31enne di Sant'Agata de' Goti e un 58enne di Caivano. Il terzo, un 34enne di Telese Terme, resta con l'obbligo di firma.",
+      "fonti": [
+       "Ottopagine",
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "L'indagine è del pubblico ministero Viviana Vacca e dei Carabinieri della Stazione di Dugenta. Secondo l'accusa, un uomo sarebbe stato picchiato nella sala giochi di Limatola, anche con un nervo di bue (una frusta), e avrebbe riportato lesioni gravissime: ha perso un occhio. Ottopagine scrive che al 58enne viene attribuito di aver chiesto più volte alla vittima di pagare un debito di gioco.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Nell'interrogatorio i due in carcere hanno escluso di aver minacciato la vittima. Sulle ferite all'occhio hanno detto che sarebbero successe quando un «volpino» (un bastone usato come arma) fu raccolto da terra nella sala. Il giudice non ha ritenuto credibile la loro versione. Il 34enne ha detto di aver solo telefonato alla vittima per avvertirla che il 58enne la cercava, senza sapere cosa sarebbe successo. Sono tutti indagati e presunti innocenti fino a una sentenza definitiva.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Il giudice ha confermato le misure per tre persone dopo gli interrogatori.",
+      "fonti": [
+       "Ottopagine",
+       "Il Sannio Quotidiano"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "Il debito che avrebbe fatto scattare l'aggressione: Ottopagine parla di un debito di gioco, il titolo de Il Sannio Quotidiano di un debito di droga. Del testo de Il Sannio Quotidiano ho letto solo il titolo; qui vale Ottopagine, che riporta l'atto del giudice.",
+      "fonti": [
+       "Ottopagine",
+       "Il Sannio Quotidiano"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "Quando comincerà un eventuale processo.",
+     "I nomi degli indagati sono stati omessi in questo articolo."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Picchiato con 'volpino', due indagati si difendono. Il Gip li lascia in carcere",
+      "url": "https://www.ottopagine.it/bn/cronaca/441592/picchiato-con-volpino-due-indagati-si-difendono-il-gip-li-lascia-in-carcere.shtml",
+      "data": "21 ott"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Aggredito per un debito di droga, confermate le misure cautelari per... tre persone",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/21/aggredito-per-un-debito-di-droga-confermate-le-misure-cautelari-per-tre-persone/",
+      "data": "21 ott"
+     }
+    ]
+   }
+  },
+  {
+   "id": "benevento-cardiologi-fatebenefratelli-assolti",
+   "titolo": "Benevento, assolti due cardiologi del Fatebenefratelli accusati di lesioni a un paziente: il giudice dice che «il fatto non sussiste»",
+   "sintesi": "Il giudice Sergio Pezza ha assolto due cardiologi dell'ospedale Fatebenefratelli di Benevento, accusati di lesioni colpose per la cura di un 59enne di Fragneto Monforte nel gennaio 2021. Anche il pubblico ministero aveva chiesto l'assoluzione.",
+   "categoria": "cronaca",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-21T08:00:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/441594/erano-accusati-di-aver-causato-lesioni-ad-un-paziente-assolti-due-cardiologi.shtml"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il giudice Sergio Pezza ha assolto due cardiologi dell'ospedale Fatebenefratelli di Benevento con la formula «il fatto non sussiste». Erano accusati di lesioni colpose, cioè di aver causato un danno a un paziente per negligenza, imperizia o imprudenza. L'assoluzione è stata chiesta anche dal pubblico ministero, dopo i risultati di una perizia.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Il paziente è un 59enne di Fragneto Monforte. Si era ricoverato l'11 gennaio 2021 e tre giorni dopo era stato operato con un'angioplastica alla coronaria destra (un intervento per riaprire un'arteria del cuore), con l'impianto di stent medicati. Fu dimesso il 15 gennaio.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Ai due medici si contestava di non aver sospeso la metformina, un farmaco contro il diabete che il paziente prendeva, prima dell'intervento con il mezzo di contrasto e nelle 48 ore dopo. Secondo l'accusa questo avrebbe provocato il 16 gennaio 2021 un'insufficienza renale acuta con acidosi lattica (troppo acido nel sangue), mettendo in pericolo la vita dell'uomo. Il giudice ha concluso che il fatto non sussiste.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando saranno depositate le motivazioni della sentenza."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Erano accusati di aver causato lesioni ad un paziente: assolti due cardiologi",
+      "url": "https://www.ottopagine.it/bn/cronaca/441594/erano-accusati-di-aver-causato-lesioni-ad-un-paziente-assolti-due-cardiologi.shtml",
+      "data": "21 ott"
+     }
+    ]
+   }
+  },
   {
    "id": "san-pio-pronto-soccorso-medici-prorogati",
    "titolo": "Benevento, ospedale San Pio: prorogati fino al 31 dicembre i contratti di sei medici del Pronto soccorso, tre dei quali in pensione",
@@ -452,13 +677,13 @@
   },
   {
    "id": "allerta-arancione-sannio-21-ottobre",
-   "titolo": "Sannio, allerta arancione per maltempo mercoledì 21 ottobre: chiusi scuole, parchi e cimiteri a Benevento, Montesarchio, Sant'Agata de' Goti e Pietrelcina; scuole chiuse anche a Guardia Sanframondi",
-   "sintesi": "La Protezione civile ha confermato l'allerta arancione per mercoledì 21 ottobre in tutte e tre le zone del Sannio: rischio frane e temporali, soprattutto al mattino. Scuole, parchi e cimiteri chiusi a Benevento, Montesarchio, Sant'Agata de' Goti e Pietrelcina; scuole chiuse anche a Guardia Sanframondi.",
+   "titolo": "Sannio, allerta arancione per maltempo mercoledì 21 ottobre: scuole chiuse a Benevento e in molti Comuni, chiusi anche parchi e cimiteri in diversi centri",
+   "sintesi": "La Protezione civile ha confermato l'allerta arancione per mercoledì 21 ottobre in tutte e tre le zone del Sannio: rischio frane e temporali, soprattutto al mattino. Scuole chiuse a Benevento e in molti Comuni; a Benevento, Montesarchio, Sant'Agata de' Goti, Pietrelcina e Frasso Telesino chiusi anche parchi o cimiteri.",
    "categoria": "meteo",
    "zona": "provincia",
    "immagine": "pioggia",
    "luogo": "Sannio",
-   "pubblicato": "2026-10-20T20:05:00+02:00",
+   "pubblicato": "2026-10-21T08:30:00+02:00",
    "stato": "ufficiale",
    "rilevante": true,
    "in_vigore_fino": "2026-10-21",
@@ -506,6 +731,18 @@
     {
      "nome": "Protezione civile (bollettino)",
      "url": "https://notiziebenevento.it/meteo.json"
+    },
+    {
+     "nome": "Comune di Frasso Telesino",
+     "url": "https://comune.frassotelesino.bn.it/novita/allerta-meteo-chiusura-scuole-21-10-2026/"
+    },
+    {
+     "nome": "Comune di Moiano",
+     "url": "https://www.comune.moiano.bn.it/novita/notizie/novita_52.html"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/21/allerta-meteo-scuole-chiuse-in-diversi-centri-della-provincia/"
     }
    ],
    "articolo": {
@@ -555,6 +792,14 @@
       "fatto": "Il Comune di Guardia Sanframondi pubblica l'ordinanza sindacale n. 8 del 20 ottobre 2026: chiusura delle scuole di ogni ordine e grado.",
       "fonti": [
        "Comune di Guardia Sanframondi"
+      ]
+     },
+     {
+      "data": "20 ottobre",
+      "fatto": "Il Comune di Frasso Telesino pubblica l'ordinanza n. 26: per mercoledì 21 chiudono scuole di ogni ordine e grado, cimitero e villette giochi. Il Comune di Moiano pubblica l'ordinanza di chiusura delle scuole.",
+      "fonti": [
+       "Comune di Frasso Telesino",
+       "Comune di Moiano"
       ]
      }
     ],
@@ -621,7 +866,7 @@
      }
     ],
     "non_si_sa": [
-     "Cosa chiudono, oltre alle scuole, i Comuni elencati solo da NTR24: parchi, cimiteri e impianti sportivi non sono precisati.",
+     "Cosa chiudono, oltre alle scuole, i Comuni elencati solo dai giornali (Airola, Paolisi, Arpaia, Telese Terme, Limatola e gli altri): parchi, cimiteri e impianti sportivi non sono precisati.",
      "Se le chiusure saranno prorogate a giovedì 22 ottobre: non ho trovato ordinanze per quel giorno. Il bollettino del 22 non è ancora uscito."
     ],
     "fonti": [
@@ -690,6 +935,24 @@
       "titolo": "Bollettino del 20 ottobre 2026 ore 15:21 (dati ripresi dal sito meteo di Notizie Benevento)",
       "url": "https://notiziebenevento.it/meteo.json",
       "data": "20 ott, 15:21"
+     },
+     {
+      "nome": "Comune di Frasso Telesino",
+      "titolo": "Allerta meteo-idrogeologica e idraulica: avviso alla cittadinanza per mercoledì 21 ottobre 2026",
+      "url": "https://comune.frassotelesino.bn.it/novita/allerta-meteo-chiusura-scuole-21-10-2026/",
+      "data": "20 ott"
+     },
+     {
+      "nome": "Comune di Moiano",
+      "titolo": "Avviso di allerta meteo-idrogeologica ed idraulica, n. 87/2026 - Chiusura scuole statali di ogni ordine e grado per il 21/10/2026.",
+      "url": "https://www.comune.moiano.bn.it/novita/notizie/novita_52.html",
+      "data": "20 ott"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Allerta meteo, scuole chiuse in diversi centri della provincia",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/21/allerta-meteo-scuole-chiuse-in-diversi-centri-della-provincia/",
+      "data": "21 ott"
      }
     ],
     "racconto": [
@@ -725,19 +988,22 @@
       ]
      },
      {
-      "testo": "A Montesarchio il sindaco Carmelo Sandomenico ha firmato l'ordinanza n. 34: chiusi scuole, villa comunale, parchi e cimitero, con i funerali garantiti. A Sant'Agata de' Goti l'ordinanza (n. 77, dalle 00:00 alle 23:59) chiude scuole, parchi e cimiteri e attiva il centro operativo comunale. A Pietrelcina l'ordinanza n. 27 chiude scuole, cimitero, impianti sportivi, parchi e ville comunali. A Guardia Sanframondi l'ordinanza n. 8 chiude le scuole di ogni ordine e grado.",
+      "testo": "A Montesarchio il sindaco Carmelo Sandomenico ha firmato l'ordinanza n. 34: chiusi scuole, villa comunale, parchi e cimitero, con i funerali garantiti. A Sant'Agata de' Goti l'ordinanza (n. 77, dalle 00:00 alle 23:59) chiude scuole, parchi e cimiteri e attiva il centro operativo comunale. A Pietrelcina l'ordinanza n. 27 chiude scuole, cimitero, impianti sportivi, parchi e ville comunali. A Guardia Sanframondi l'ordinanza n. 8 chiude le scuole di ogni ordine e grado. A Frasso Telesino l'ordinanza n. 26 del 20 ottobre chiude le scuole di ogni ordine e grado, il cimitero e le villette giochi. A Moiano un'ordinanza chiude le scuole statali di ogni ordine e grado.",
       "fonti": [
        "Cronache del Sannio",
        "NTR24",
        "Comune di Sant'Agata de' Goti",
        "Comune di Pietrelcina",
-       "Comune di Guardia Sanframondi"
+       "Comune di Guardia Sanframondi",
+       "Comune di Frasso Telesino",
+       "Comune di Moiano"
       ]
      },
      {
-      "testo": "NTR24 elenca molti altri Comuni con le scuole chiuse. In Valle Caudina: Airola, Moiano, Paolisi e Arpaia. In Valle Telesina e nell'area del Titerno: Telese Terme, Solopaca, Dugenta, Melizzano, Faicchio, San Lorenzello, Castelvenere, Cerreto Sannita, Frasso Telesino, San Lorenzo Maggiore, Limatola e Durazzano. Nell'area del Taburno e del Vitulanese: Apollosa e Cautano. Tra Fortore e Alto Tammaro: San Marco dei Cavoti, Pesco Sannita, Colle Sannita e Circello. Di questi Comuni non ho letto le ordinanze: l'elenco è solo di NTR24.",
+      "testo": "NTR24 elenca altri Comuni con le scuole chiuse. In Valle Caudina: Airola, Paolisi e Arpaia. In Valle Telesina e nell'area del Titerno: Telese Terme, Solopaca, Dugenta, Melizzano, Faicchio, San Lorenzello, Castelvenere, Cerreto Sannita, San Lorenzo Maggiore, Limatola e Durazzano. Nell'area del Taburno e del Vitulanese: Apollosa e Cautano. Tra Fortore e Alto Tammaro: San Marco dei Cavoti, Pesco Sannita, Colle Sannita e Circello. Il Sannio Quotidiano di mercoledì 21 conferma che le scuole restano chiuse a Benevento, Sant'Agata de' Goti, Limatola, Frasso Telesino, Moiano e Arpaia, e scrive che altri enti non hanno preso misure particolari. Di questi Comuni, oltre a quelli citati sopra, non ho letto le ordinanze sul sito comunale: l'elenco viene dai giornali.",
       "fonti": [
-       "NTR24"
+       "NTR24",
+       "Il Sannio Quotidiano"
       ]
      }
     ]
@@ -1234,7 +1500,6 @@
     }
    ],
    "articolo": {
-    "cosa": "Il Nucleo Operativo e Radiomobile dei Carabinieri della Compagnia di Montesarchio, in un'attività contro lo spaccio lungo l'asse Napoli-Montesarchio, ha sequestrato oltre un chilo e mezzo di hashish e marijuana dopo una perquisizione e ha arrestato due uomini. Le loro posizioni sono al vaglio dell'Autorità giudiziaria: sono ritenuti, allo stato degli atti, responsabili di detenzione ai fini di spaccio. Sono presunti innocenti fino a sentenza definitiva.",
     "cronologia": [
      {
       "data": "20 ottobre",
@@ -1270,6 +1535,29 @@
       "titolo": "Blitz antidroga dei Carabinieri: sequestrato oltre un chilo e mezzo di hashish e marijuana",
       "url": "https://www.anteprima24.it/benevento/blitz-antidroga-dei-carabinieri-sequestrato-oltre-un-chilo-e-mezzo-di-hashish-e-marijuana/",
       "data": "20 ott, 09:23"
+     }
+    ],
+    "racconto": [
+     {
+      "testo": "I Carabinieri della Compagnia di Montesarchio hanno sequestrato oltre un chilo e mezzo tra hashish e marijuana e hanno arrestato due uomini. Lo hanno reso noto martedì 20 ottobre. L'operazione è del Nucleo Operativo e Radiomobile e riguarda lo spaccio lungo l'asse tra Napoli e Montesarchio.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "La droga è stata trovata durante una perquisizione fatta ai due. Sono accusati, allo stato degli atti, di detenzione di droga per spaccio. Dopo l'arresto sono stati portati nelle loro case, come misura prima dell'udienza di convalida davanti al giudice per le indagini preliminari: sarà lui a decidere se l'arresto è valido.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "I Carabinieri spiegano che l'operazione fa parte dei controlli del Comando provinciale di Benevento contro la diffusione della droga. Come ricorda Anteprima24, gli arrestati sono sottoposti a indagini e sono da considerare innocenti fino a una sentenza definitiva.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
      }
     ]
    }
@@ -1782,39 +2070,20 @@
    ],
    "articolo": {
     "aggiornato": "2026-10-20T09:25:00+02:00",
-    "cosa": "Il fermo degli autotrasportatori contro il caro gasolio blocca le consegne ai supermercati. Nel Sannio mancano soprattutto i prodotti freschi.",
     "cronologia": [
      {
       "data": "19 ottobre",
-      "fatto": "Aumentano a Benevento i supermercati con scaffali vuoti per il mancato rifornimento; molti distributori senza benzina e gasolio.",
+      "fatto": "Primi scaffali vuoti e prime file ai distributori nel Sannio.",
       "fonti": [
+       "NTR24",
+       "Cronache del Sannio",
+       "BeneventoNews24",
        "Ottopagine"
       ]
      },
      {
-      "data": "19 ottobre",
-      "fatto": "Nei reparti mancano frutta, verdura, carne e alcuni prodotti di prima necessità; c'è chi gira più supermercati.",
-      "fonti": [
-       "NTR24"
-      ]
-     },
-     {
-      "data": "19 ottobre",
-      "fatto": "In diverse catene di Benevento mancano frutta, verdura e tagli di carne perché non arrivano le consegne di ogni giorno; ai distributori si formano code e comincia a mancare il gasolio, perché le cisterne faticano a rifornire.",
-      "fonti": [
-       "Cronache del Sannio"
-      ]
-     },
-     {
-      "data": "19 ottobre",
-      "fatto": "Carenze anche di pasta, carne e latticini; alcuni distributori espongono cartelli di gasolio finito.",
-      "fonti": [
-       "BeneventoNews24"
-      ]
-     },
-     {
       "data": "20 ottobre",
-      "fatto": "Mancano i prodotti ortofrutticoli e, con il passare dei giorni, anche altri alimentari.",
+      "fatto": "Il Sannio Quotidiano racconta scorte esaurite e «cresce la preoccupazione».",
       "fonti": [
        "Il Sannio Quotidiano"
       ]
@@ -1822,36 +2091,17 @@
     ],
     "concordano": [
      {
-      "testo": "Mancano soprattutto i prodotti freschi, a partire da frutta e verdura.",
+      "testo": "Mancano frutta, verdura e carne nei supermercati; ci sono code ai distributori e carenze di gasolio.",
       "fonti": [
        "NTR24",
-       "Il Sannio Quotidiano",
-       "Cronache del Sannio",
-       "BeneventoNews24"
-      ]
-     },
-     {
-      "testo": "Alcuni distributori sono rimasti senza gasolio.",
-      "fonti": [
-       "Ottopagine",
-       "Cronache del Sannio",
-       "BeneventoNews24"
-      ]
-     },
-     {
-      "testo": "La causa è il fermo dei tir contro il caro gasolio.",
-      "fonti": [
-       "NTR24",
-       "Il Sannio Quotidiano",
-       "Ottopagine",
        "Cronache del Sannio",
        "BeneventoNews24"
       ]
      }
     ],
     "non_si_sa": [
-     "Quali supermercati sono coinvolti e in che misura: i giornali non danno numeri.",
-     "Quando torneranno regolari le consegne."
+     "Quanto dureranno le carenze e se arriveranno nuove consegne.",
+     "Quali catene e quanti punti vendita sono toccati: i giornali parlano di «diversi» supermercati senza fare l'elenco."
     ],
     "fonti": [
      {
@@ -1885,7 +2135,39 @@
       "data": "19 ott"
      }
     ],
-    "divergono": []
+    "divergono": [],
+    "racconto": [
+     {
+      "testo": "Dal 19 ottobre, con i camion fermi per la protesta contro il caro gasolio, in diversi supermercati di Benevento e provincia mancano i prodotti freschi. Gli scaffali sono parzialmente vuoti e le cassette di frutta e verdura quasi sguarnite.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Mancano soprattutto frutta, verdura e carne. BeneventoNews24 scrive che i banchi di frutta, verdura e pasta sono i più sguarniti e che mancano anche latticini e alcuni prodotti di uso quotidiano. NTR24 racconta che qualcuno passa da un supermercato all'altro per riuscire a fare la spesa.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "I prodotti freschi finiscono prima perché hanno bisogno di consegne ogni giorno. Il Sannio Quotidiano scrive che neanche nel marzo 2020, quando all'inizio del Covid ci fu l'assalto ai supermercati, nel Sannio c'erano scene così: all'inizio mancava l'ortofrutta, poi anche altri alimenti.",
+      "fonti": [
+       "Il Sannio Quotidiano",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Il fermo dei camion pesa anche sui rifornimenti di carburante: Cronache del Sannio scrive di code ai distributori e prime carenze di gasolio, con le cisterne che faticano a rifornire le stazioni. BeneventoNews24 aggiunge che alcune stazioni hanno esposto cartelli di carburante non disponibile. Resta incerto cosa succederà nei prossimi giorni, con l'arrivo degli agricoltori giovedì 22 ottobre.",
+      "fonti": [
+       "Cronache del Sannio",
+       "BeneventoNews24",
+       "Ottopagine"
+      ]
+     }
+    ]
    },
    "rilevante": false,
    "foto": "supermercato"
@@ -1924,7 +2206,6 @@
    ],
    "articolo": {
     "aggiornato": "2026-10-20T09:25:00+02:00",
-    "cosa": "Da giovedì 22 ottobre agricoltori e autotrasportatori del Sannio avviano una protesta contro il prezzo del gasolio e i costi di produzione, a oltranza. Lo slogan è «La Campania si compatta».",
     "cronologia": [
      {
       "data": "18 ottobre",
@@ -1981,8 +2262,8 @@
      }
     ],
     "non_si_sa": [
-     "Se i presidi bloccheranno del tutto il traffico o lo rallenteranno soltanto.",
-     "In quali orari."
+     "La data esatta della manifestazione di Coldiretti a Napoli.",
+     "Quanti agricoltori e trattori saranno nei presidi sanniti e dove precisamente."
     ],
     "fonti": [
      {
@@ -2024,11 +2305,35 @@
     ],
     "divergono": [
      {
-      "testo": "La data di partenza: LabTV, che riprende la locandina, scrive che l'avvio di giovedì 22 è ancora «a data da destinarsi»; gli altri giornali danno il 22 come certo.",
+      "testo": "Il giorno della manifestazione di Coldiretti a Napoli: Il Sannio Quotidiano (19 ottobre) scrive giovedì 22 ottobre, in via Santa Lucia; Il Mattino (21 ottobre, 00:05) parla di «domani» in piazza del Plebiscito. Non ho trovato una conferma ufficiale: la data va verificata.",
       "fonti": [
-       "LabTV",
+       "Il Sannio Quotidiano",
+       "Ottopagine"
+      ]
+     }
+    ],
+    "racconto": [
+     {
+      "testo": "Da giovedì 22 ottobre anche gli agricoltori del Sannio si uniscono alla protesta contro il caro gasolio e i costi di produzione. Il fermo di agricoltori e autotrasportatori parte a oltranza, a tempo indeterminato, con lo slogan «La Campania si compatta».",
+      "fonti": [
        "Ottopagine",
+       "LabTV",
        "NTR24"
+      ]
+     },
+     {
+      "testo": "A Benevento i presidi sono annunciati sulla strada statale 87 (la Sannitica), sulla statale 212 e a Ponte delle Tavole, secondo il volantino che circola e che citano Ottopagine e LabTV. Le richieste sono i costi di produzione troppo alti, il gasolio, i prezzi alla spesa e il caro vita.",
+      "fonti": [
+       "Ottopagine",
+       "LabTV"
+      ]
+     },
+     {
+      "testo": "Il Sannio Quotidiano riferisce l'appello di Coldiretti Campania alla Regione per interventi urgenti: migliaia di agricoltori con i trattori da tutta la regione a Napoli, in via Santa Lucia davanti all'assessorato all'agricoltura. A San Marco dei Cavoti gli imprenditori agricoli si erano riuniti per decidere il da farsi. Intanto già dal 19 ottobre gli autotrasportatori erano in strada: una decina di camion rallentava l'Appia a Tufara Valle.",
+      "fonti": [
+       "Il Sannio Quotidiano",
+       "Ottopagine",
+       "LabTV"
       ]
      }
     ]
@@ -2058,7 +2363,6 @@
    ],
    "articolo": {
     "aggiornato": "2026-10-20T08:28:00+02:00",
-    "cosa": "Una mozione urgente presentata in Consiglio regionale della Campania chiede misure per le imprese di autotrasporto e le aziende agricole colpite dal prezzo dei carburanti.",
     "cronologia": [
      {
       "data": "19 ottobre",
@@ -2078,7 +2382,7 @@
      }
     ],
     "non_si_sa": [
-     "Quando la mozione sarà discussa e votata."
+     "Quando la mozione sarà discussa in Consiglio regionale e se la Giunta stanzierà fondi."
     ],
     "fonti": [
      {
@@ -2094,7 +2398,30 @@
       "data": "19 ott"
      }
     ],
-    "divergono": []
+    "divergono": [],
+    "racconto": [
+     {
+      "testo": "Lunedì 19 ottobre il gruppo Casa Riformista–Italia Viva–Noi di Centro ha presentato una mozione urgente al Consiglio regionale della Campania. Chiede alla Giunta regionale e al presidente misure per le imprese di autotrasporto e per l'agricoltura, colpite dal prezzo dei carburanti. Il primo firmatario è il consigliere sannita Pellegrino Mastella, con Vincenzo Alaia, Giuseppe Barra, Ciro Buonajuto e Pietro Smarrazzo.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Il gruppo avverte che il caro carburanti può diventare un'emergenza economica e sociale. Con i presìdi già in corso, in Campania, sull'Appia a Tufara Valle e agli accessi autostradali di Castel del Lago, Caianello e Caserta Sud, teme conseguenze sulla circolazione delle merci, sull'approvvigionamento dei mercati e sull'occupazione.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "La mozione propone un fondo straordinario regionale per autotrasporto e agricoltura, un tavolo permanente con le categorie e un intervento del Governo sulle accise, le tasse sui carburanti. È una proposta di un gruppo politico: per ora non ci sono decisioni della Regione.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24"
+      ]
+     }
+    ]
    },
    "rilevante": false,
    "foto": "carburante"
@@ -2352,7 +2679,6 @@
    ],
    "articolo": {
     "aggiornato": "2026-10-20T09:25:00+02:00",
-    "cosa": "Il Comune di Benevento ha annunciato l'avvio della mensa scolastica dal 14 ottobre, dopo un rinvio, usando in via provvisoria le cucine del Conservatorio. Intanto continua lo scontro sul pasto portato da casa: alcune famiglie lo chiedono, i dirigenti scolastici non lo permettono nei locali della mensa.",
     "cronologia": [
      {
       "data": "24 febbraio 2026",
@@ -2440,18 +2766,16 @@
     ],
     "divergono": [
      {
-      "testo": "Chi ha deciso il divieto: per il Pd fu il Comune, con una nota del 24 febbraio; per Palladino il Comune non l'ha mai vietato e il dirigente aveva escluso solo i locali della mensa.",
+      "testo": "Chi ha vietato il pasto da casa: per il Comune (Palladino) non è mai stato vietato, la regola era solo non mangiarlo nei locali della mensa; per il Pd la nota del 24 febbraio lo vietava e ha creato il caso. Il testo della nota non l'ho letto.",
       "fonti": [
-       "Ottopagine (Pd)",
-       "Il Sannio Quotidiano",
-       "NTR24 (Palladino)"
+       "NTR24 (Palladino)",
+       "Ottopagine (Pd)"
       ]
      }
     ],
     "non_si_sa": [
-     "Se i genitori del plesso Lucarelli presenteranno davvero il ricorso al Tar.",
-     "Quanti alunni chiedono il pasto da casa: nessun giornale dà numeri.",
-     "Quando arriverà la risposta dei ministri all'interrogazione."
+     "Se le famiglie faranno ricorso al Tar e quando.",
+     "Come risponderanno i ministeri all'interrogazione della Lega."
     ],
     "fonti": [
      {
@@ -2496,6 +2820,42 @@
       "url": "https://www.ilsannioquotidiano.it/2026/10/19/mensa-lopposizione-replica-a-palladino-a-febbraio-fu-il-comune-a-vietare-il-pasto-da-casa/",
       "data": "19 ott"
      }
+    ],
+    "racconto": [
+     {
+      "testo": "A Benevento continua lo scontro sul pasto portato da casa nelle mense delle scuole. Il Comune ha fatto partire la mensa scolastica il 14 ottobre, dopo un rinvio, usando in via provvisoria le cucine del Conservatorio «Nicola Sala» in via dei Mulini. Alcune famiglie vogliono dare ai figli il pasto preparato a casa, ma i dirigenti scolastici non lo permettono nei locali della mensa.",
+      "fonti": [
+       "Ottopagine (Lega)",
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Lunedì 19 ottobre l'Anp, l'associazione dei presidi, ha ringraziato i dirigenti che hanno scelto quasi tutti di non ammettere il pasto da casa nelle sale della mensa. Richiama una sentenza della Cassazione a sezioni unite del 2019 (la n. 20504): non esiste un diritto assoluto a portare il pasto da casa e mangiarlo a scuola durante la mensa. Secondo i giudici, pasti diversi per ognuno toccano l'uguaglianza del servizio tra gli alunni.",
+      "fonti": [
+       "Ottopagine (Anp)",
+       "NTR24 (Anp)"
+      ]
+     },
+     {
+      "testo": "Al plesso Bosco Lucarelli, per il tempo pieno, il dirigente ha detto ancora no a due genitori. Ora valutano il ricorso al Tar, il tribunale amministrativo. Dicono che il pasto da casa aiuterebbe chi non può riprendere i figli dopo mezzogiorno o chi ha intolleranze come la celiachia. Alle richieste di accesso agli atti la scuola ha risposto, scrive Anteprima24, solo in parte.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Il Comune e il Pd si accusano a vicenda. Il consigliere delegato all'Istruzione, Marcello Palladino, dice che il Comune non ha mai vietato il pasto da casa: la nota dell'allora dirigente Alessandro Verdicchio vietava solo di consumarlo negli stessi locali della mensa, per l'igiene, e l'Asl ad aprile ha ribadito che serve uno spazio adatto. I consiglieri Pd (Farese, Varricchio, Fioretti, De Lorenzo, De Longis) rispondono che il 24 febbraio una nota del Comune (n. 23177) vietò l'accesso ai refettori agli alunni col pasto domestico, e che da lì è nato il caso.",
+      "fonti": [
+       "NTR24 (Palladino)",
+       "Ottopagine (Pd)",
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "Il deputato della Lega Gianpiero Zinzi ha presentato un'interrogazione ai ministri dell'Università, dell'Istruzione e della Salute. Chiede chiarezza sulla legittimità dell'uso delle cucine del Conservatorio da parte di Autenthica, l'impresa privata che gestisce la mensa del Comune: sulla natura dell'accordo, gli atti che lo autorizzano, le condizioni economiche e le responsabilità.",
+      "fonti": [
+       "Ottopagine (Lega)"
+      ]
+     }
     ]
    },
    "foto": "mensa"
@@ -2522,7 +2882,6 @@
    ],
    "articolo": {
     "aggiornato": "2026-10-20T09:25:00+02:00",
-    "cosa": "Secondo l'accusa, nella notte del 5 ottobre 2025 un gruppo di giovani partito da Benevento con quattro auto raggiunse il locale Xuè di Montesarchio, dove c'erano coetanei di Foglianise con cui c'erano già stati scontri. Il ragazzo fu colpito con calci, pugni e una mazza da baseball anche quando era a terra e finì in coma. Il processo si è svolto con rito abbreviato (un processo più rapido, deciso sugli atti delle indagini, che in caso di condanna riduce la pena).",
     "cronologia": [
      {
       "data": "notte 4-5 ottobre 2025",
@@ -2580,7 +2939,7 @@
     ],
     "divergono": [
      {
-      "testo": "Le pene di tre imputati: per NTR24 uno ha avuto 8 anni e 20 giorni e due 8 anni; per Il Mattino tutti e tre hanno avuto 8 anni e 20 giorni. Il quarto ha avuto 6 anni per entrambi.",
+      "testo": "Le pene di due dei quattro: NTR24 scrive «otto anni» per due di loro, Il Mattino «otto anni e venti giorni» per tutti e tre. Qui vale Il Mattino, perché NTR24 dà «otto anni e venti giorni» per il primo e sembra riportare la cifra tonda per gli altri.",
       "fonti": [
        "NTR24",
        "Il Mattino"
@@ -2588,9 +2947,8 @@
      }
     ],
     "non_si_sa": [
-     "Se le difese faranno appello.",
-     "Come sta oggi il ragazzo: gli articoli letti non lo dicono.",
-     "L'esito per gli altri giovani imputati: il loro processo è previsto dal 10 novembre."
+     "Se la difesa farà appello (le motivazioni non sono ancora note).",
+     "Quando sarà deciso il risarcimento."
     ],
     "fonti": [
      {
@@ -2604,6 +2962,35 @@
       "titolo": "Violenza nel Beneventano, botte con mazza da baseball a Montesarchio: condannati 4 giovanissimi",
       "url": "https://www.ilmattino.it/benevento/violenza_nel_beneventano_botte_con_mazza_da_baseball_a_montesarchio_condannati_4_giovanissimi-9835274.html",
       "data": "20 ott, 00:35"
+     }
+    ],
+    "racconto": [
+     {
+      "testo": "Lunedì 19 ottobre il giudice dell'udienza preliminare Roberto Nuzzo ha condannato quattro ventenni per il tentato omicidio di un ragazzo di Vitulano, che aveva 17 anni quando fu picchiato a Montesarchio. Il processo era con il rito abbreviato: è più rapido, si decide sugli atti dell'indagine e in caso di condanna la pena si riduce.",
+      "fonti": [
+       "NTR24",
+       "Il Mattino"
+      ]
+     },
+     {
+      "testo": "Le pene sono sei anni per uno dei quattro e otto anni e venti giorni per gli altri tre. Il giudice ha anche disposto un risarcimento alla parte civile, da stabilire in un altro procedimento, con un anticipo di 5mila euro. Il pubblico ministero Marilia Capitanio aveva chiesto otto anni per il primo e dieci per gli altri tre, dopo aver riconosciuto le attenuanti.",
+      "fonti": [
+       "NTR24",
+       "Il Mattino"
+      ]
+     },
+     {
+      "testo": "L'aggressione risale alla notte tra il 4 e il 5 ottobre 2025, fuori da un locale di Montesarchio. Il ragazzo fu colpito con calci, pugni e una mazza da baseball anche quando era a terra e rimase in fin di vita. I quattro erano stati arrestati nell'ottobre scorso.",
+      "fonti": [
+       "NTR24",
+       "Il Mattino"
+      ]
+     },
+     {
+      "testo": "L'inchiesta dei Carabinieri non è chiusa. Secondo Il Mattino, in tutto sono 12 i giovani indagati per la maxi rissa: a marzo un'altra ordinanza ha riguardato altri cinque, accusati di concorso in tentato omicidio, e altri tre, accusati di lesioni aggravate.",
+      "fonti": [
+       "Il Mattino"
+      ]
      }
     ]
    }
@@ -2638,7 +3025,6 @@
    ],
    "articolo": {
     "aggiornato": "2026-10-20T09:25:00+02:00",
-    "cosa": "Il reato contestato è il traffico di influenze illecite (farsi dare soldi vantando rapporti con chi ha un ruolo pubblico, per influire sulle sue decisioni). La Procura ha mandato agli indagati l'avviso di conclusione delle indagini, il passo che di solito precede la richiesta di processo, e ha diffuso una nota dopo alcuni articoli di stampa. Come ricorda Anteprima24, gli indagati sono da considerare innocenti fino a una sentenza definitiva.",
     "cronologia": [
      {
       "data": "periodo non indicato",
@@ -2691,9 +3077,8 @@
     ],
     "divergono": [],
     "non_si_sa": [
-     "Quanti soldi sono stati pagati e in che periodo: gli articoli non lo dicono.",
-     "Chi sono gli altri sette indagati e che ruolo avrebbero avuto.",
-     "Se si andrà a processo."
+     "Se la Procura chiederà il processo per tutti e otto.",
+     "Le altre persone indagate e le loro posizioni non sono indicate nella nota."
     ],
     "fonti": [
      {
@@ -2719,6 +3104,34 @@
       "titolo": "Concorso carabinieri, otto indagati. Procura: \"Arma non coinvolta nel traffico di influenze illecite\"",
       "url": "https://www.cronachedelsannio.it/sannionews24/concorso-carabinieri-procura-traffico-influenze-illecite/",
       "data": "19 ott"
+     }
+    ],
+    "racconto": [
+     {
+      "testo": "La Procura di Benevento ha chiuso le indagini su otto persone, indagate a vario titolo per concorso in traffico di influenze illecite: il reato di chi si fa dare soldi dicendo di avere conoscenze tra chi decide in un ente pubblico. Ha mandato agli indagati l'avviso di conclusione delle indagini preliminari, il passo che di solito precede la richiesta di rinvio a giudizio.",
+      "fonti": [
+       "NTR24",
+       "LabTV",
+       "Anteprima24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Tra le accuse c'è il pagamento di una somma in contanti a un 76enne di Telese Terme da parte di un giovane che voleva entrare nell'Arma dei Carabinieri e dei suoi genitori. Secondo l'accusa il 76enne avrebbe fatto leva su conoscenze istituzionali vantate o presunte. Il giovane è stato poi arruolato. Al 76enne sono contestati anche altri casi simili, in concorso con altri indagati.",
+      "fonti": [
+       "NTR24",
+       "LabTV",
+       "Anteprima24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "La Procura ha diffuso una nota dopo alcuni articoli di stampa per chiarire che dalle indagini non emerge alcun elemento di coinvolgimento, nemmeno marginale, dell'Arma dei Carabinieri o di chi gestisce i concorsi. Per la Procura i contatti istituzionali promessi dall'indagato si sono rivelati privi di fondamento. Gli indagati sono da considerare innocenti fino a una sentenza definitiva.",
+      "fonti": [
+       "LabTV",
+       "Anteprima24",
+       "Cronache del Sannio"
+      ]
      }
     ]
    }
@@ -2752,58 +3165,21 @@
    ],
    "articolo": {
     "aggiornato": "2026-10-20T09:25:00+02:00",
-    "cosa": "Un episodio di minacce contro il personale di un autobus urbano di AIR Campania a Benevento riapre il tema della sicurezza sui mezzi pubblici.",
-    "cronologia": [
-     {
-      "data": "19 ottobre",
-      "fatto": "Nel primo pomeriggio un giovane in scooter affianca l'autobus della linea urbana 05, insulta alcuni passeggeri e minaccia il personale dalla strada.",
-      "fonti": [
-       "Anteprima24",
-       "LabTV",
-       "Cronache del Sannio"
-      ]
-     },
-     {
-      "data": "19 ottobre",
-      "fatto": "Un controllore dei biglietti (i giornali lo chiamano «verificatore») si sente male; arrivano i sanitari, la Polizia e i Carabinieri per gli accertamenti.",
-      "fonti": [
-       "Anteprima24",
-       "LabTV",
-       "Cronache del Sannio"
-      ]
-     },
-     {
-      "data": "19 ottobre",
-      "fatto": "L'amministratore unico di AIR Campania esprime solidarietà al personale; l'azienda aveva proposto alla Prefettura un tavolo tecnico con le forze dell'ordine sulla sicurezza nel trasporto pubblico.",
-      "fonti": [
-       "Anteprima24",
-       "LabTV",
-       "Cronache del Sannio"
-      ]
-     },
-     {
-      "data": "19 ottobre",
-      "fatto": "Il consigliere regionale Fernando Errico esprime solidarietà e chiede più sicurezza.",
-      "fonti": [
-       "LabTV (Errico)",
-       "Anteprima24"
-      ]
-     }
-    ],
+    "cronologia": [],
     "concordano": [
      {
-      "testo": "Il giovane era in scooter e ha minacciato il personale da fuori dell'autobus; uno degli addetti si è sentito male.",
+      "testo": "Un giovane in scooter ha minacciato personale e passeggeri del bus della linea 05; un addetto si è sentito male; sono intervenuti Polizia e Carabinieri.",
       "fonti": [
        "Anteprima24",
        "LabTV",
-       "Il Sannio Quotidiano",
-       "Cronache del Sannio"
+       "Cronache del Sannio",
+       "Il Sannio Quotidiano"
       ]
      }
     ],
     "non_si_sa": [
-     "Se il giovane sia stato identificato: gli articoli non lo dicono.",
-     "In quale strada è avvenuto."
+     "Chi è il giovane e se è stato denunciato.",
+     "Come sta l'addetto che si è sentito male."
     ],
     "fonti": [
      {
@@ -2837,7 +3213,32 @@
       "data": "19 ott"
      }
     ],
-    "divergono": []
+    "divergono": [],
+    "racconto": [
+     {
+      "testo": "Lunedì 19 ottobre, nel primo pomeriggio, a Benevento un giovane su uno scooter ha raggiunto un autobus della linea urbana 05 di Air Campania. Ha urlato contro alcuni passeggeri e ha minacciato, da terra, il personale a bordo. Uno dei verificatori (i controllori dei biglietti) si è sentito male ed è servito l'intervento dei sanitari.",
+      "fonti": [
+       "Anteprima24",
+       "LabTV",
+       "Cronache del Sannio",
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "Sono intervenuti Polizia e Carabinieri per gli accertamenti. Il Sannio Quotidiano scrive che il giovane, al momento, non è stato identificato. La notizia è stata data da Air Campania con un comunicato sui suoi canali social.",
+      "fonti": [
+       "Cronache del Sannio",
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "L'amministratore unico di Air Campania ha espresso solidarietà al personale. L'azienda ricorda di aver proposto nei giorni scorsi alla Prefettura di Benevento un tavolo tecnico con le forze dell'ordine per un protocollo d'intesa sulla sicurezza e sulla legalità nel trasporto pubblico. Il consigliere regionale Fernando Errico ha espresso solidarietà e chiesto più sicurezza.",
+      "fonti": [
+       "Anteprima24",
+       "LabTV (Errico)"
+      ]
+     }
+    ]
    },
    "rilevante": false
   },
@@ -3325,14 +3726,15 @@
    "titolo": "Caro gasolio, la protesta di tir e agricoltori nel Sannio: dove sono i blocchi, cosa manca e cosa succede adesso",
    "sommario": "Da lunedì 19 ottobre gli autotrasportatori fermano i camion sull'Appia a Tufara Valle e a Castel del Lago; ci sono stati blocchi anche sulla Telesina a San Salvatore Telesino. Nei supermercati mancano i prodotti freschi e alcuni distributori hanno finito il gasolio. Da giovedì 22 si aggiungono gli agricoltori. Oggi, 20 ottobre, il ministro Salvini incontra a Milano associazioni e gruppi di protesta, anche della Campania.",
    "luogo": "Provincia di Benevento",
-   "aggiornato": "2026-10-21T08:05:00+02:00",
+   "aggiornato": "2026-10-21T10:06:00+02:00",
    "collegate": [
     "tir-appia-telesina",
     "scaffali-vuoti",
     "agricoltori-22-ottobre",
     "mozione-caro-carburanti",
     "rummo-produzione-ferma",
-    "asia-ecocentro-chiuso-protesta"
+    "asia-ecocentro-chiuso-protesta",
+    "rifiuti-blocco-tir-apice-morcone-cusano-sant-angelo-a-cupolo"
    ],
    "in_breve": [
     {
@@ -3687,6 +4089,14 @@
      "fonti": [
       "Il Mattino (21/10)"
      ]
+    },
+    {
+     "data": "20-21 ottobre",
+     "fatto": "La raccolta dei rifiuti salta a Sant'Angelo a Cupolo, è a rischio a Morcone e a Cusano Mutri; ad Apice è chiusa l'isola ecologica dal 20 ottobre.",
+     "fonti": [
+      "Il Sannio Quotidiano (rifiuti)",
+      "Comune di Apice"
+     ]
     }
    ],
    "non_si_sa": [
@@ -3832,6 +4242,18 @@
      "titolo": "Benevento, proteste degli autotrasportatori non-stop: dall’Appia all’autostrada",
      "url": "https://www.ilmattino.it/benevento/benevento_proteste_autotrasportatori_autostrada-9837732.html",
      "data": "21 ott, 00:05"
+    },
+    {
+     "nome": "Il Sannio Quotidiano (rifiuti)",
+     "titolo": "Blocco tir, stop alla raccolta dei rifiuti a Sant’Angelo a Cupolo. A rischio pure a Morcone e in altri centri",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/21/blocco-tir-stop-alla-raccolta-dei-rifiuti-a-santangelo-a-cupolo-a-rischio-pure-a-morcone-e-in-altri-centri/",
+     "data": "21 ott"
+    },
+    {
+     "nome": "Comune di Apice",
+     "titolo": "Avviso pubblico per segnalazione di possibili disservizi nel servizio di raccolta rifiuti",
+     "url": "https://www.comune.apice.bn.it/novita/notizie/novita_140.html",
+     "data": "20 ott"
     }
    ],
    "nota": "Correzione: nella versione delle 8:45 scrivevamo che il ministero dei Trasporti aveva convocato le associazioni per il 27 ottobre, come riportava Il Post il 16 ottobre. ANSA (17 ottobre) e Il Sole 24 Ore (18 ottobre) riportano che il ministro Salvini ha anticipato il tavolo a oggi, martedì 20 ottobre, in Prefettura a Milano. Abbiamo corretto sommario, «In breve», sezioni, domande e cronologia."
