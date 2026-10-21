@@ -1,7 +1,230 @@
 {
- "aggiornato": "2026-10-21T18:11:00+02:00",
- "giornali_letti": 13,
+ "aggiornato": "2026-10-21T20:05:00+02:00",
+ "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "air-campania-carburante-forniture-benevento-22-ottobre",
+   "titolo": "Benevento, AIR Campania: carburante per i bus atteso giovedì 22 ottobre, già arrivato ad Avellino e Caserta",
+   "sintesi": "AIR Campania, la società dei bus extraurbani, dice che giovedì 22 ottobre sono attese le forniture di carburante a Benevento e Salerno. Mercoledì sono già arrivate ad Avellino e a Caserta. Intanto i blocchi dei tir possono causare ritardi sulla linea Arpaia-Napoli.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "immagine": "autobus",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-21T18:27:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/air-campania-forniture-carburante-domani-benevento/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/carburante-air-campania-rifornimenti-arrivati-anche-a-caserta-attese-domani-le-forniture-a-benevento-e-salerno/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Per i bus di AIR Campania, la società che gestisce il trasporto pubblico fuori città, a Benevento il carburante dovrebbe arrivare giovedì 22 ottobre. Lo ha comunicato l'azienda mercoledì 21 ottobre: le forniture sono attese anche a Salerno.",
+      "fonti": [
+       "Cronache del Sannio",
+       "TV7 Benevento"
+      ]
+     },
+     {
+      "testo": "Nella mattinata di mercoledì il rifornimento è arrivato ad Avellino e nel corso della giornata anche a Caserta. A Napoli la Prefettura, su richiesta di AIR, ha chiesto aiuto alla Questura per portare la fornitura in sicurezza. L'amministratore unico, Anthony Acconcia, ringrazia le Prefetture per la collaborazione e dice che l'azienda continuerà a controllare la situazione e ad avvisare gli utenti se il servizio cambia.",
+      "fonti": [
+       "Cronache del Sannio",
+       "TV7 Benevento"
+      ]
+     },
+     {
+      "testo": "Un altro avviso di AIR, diffuso in mattinata, spiega che i blocchi stradali dello sciopero dei tir possono causare ritardi e cambi di percorso. Nel bacino di Benevento (la zona servita dai bus con base a Benevento) le difficoltà maggiori riguardano la linea Arpaia-Napoli. L'azienda si scusa con i viaggiatori.",
+      "fonti": [
+       "TV7 Benevento"
+      ]
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "21 ottobre, mattina",
+      "fatto": "Arriva il carburante ad Avellino; AIR segnala ritardi per i blocchi, tra gli altri sulla direttrice Arpaia-Napoli.",
+      "fonti": [
+       "Cronache del Sannio",
+       "TV7 Benevento"
+      ]
+     },
+     {
+      "data": "21 ottobre, pomeriggio",
+      "fatto": "Arriva la fornitura a Caserta; per il giorno dopo sono attese quelle di Benevento e Salerno.",
+      "fonti": [
+       "Cronache del Sannio",
+       "TV7 Benevento"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Fornitura arrivata ad Avellino e a Caserta; attese giovedì 22 ottobre Benevento e Salerno.",
+      "fonti": [
+       "Cronache del Sannio",
+       "TV7 Benevento"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "A che ora arriverà il carburante a Benevento e se basterà a far girare tutte le corse.",
+     "Se le corse della linea Arpaia-Napoli saranno cancellate o solo in ritardo."
+    ],
+    "fonti": [
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Air Campania: forniture carburante attese per domani a Benevento",
+      "url": "https://www.cronachedelsannio.it/sannionews24/air-campania-forniture-carburante-domani-benevento/",
+      "data": "21 ott"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Carburante, AIR Campania: “Rifornimenti arrivati anche a Caserta, attese domani le forniture a Benevento e Salerno”",
+      "url": "https://www.tvsette.net/carburante-air-campania-rifornimenti-arrivati-anche-a-caserta-attese-domani-le-forniture-a-benevento-e-salerno/",
+      "data": "21 ott, 18:27"
+     }
+    ]
+   },
+   "foto": "autobus"
+  },
+  {
+   "id": "appia-hashish-marijuana-acerra-due-arresti",
+   "titolo": "Statale Appia nel Sannio, sequestrati oltre un chilo e mezzo di hashish e marijuana: arrestati un 19enne e un 23enne di Acerra",
+   "sintesi": "I Carabinieri di Montesarchio hanno fermato in auto sulla statale Appia, in provincia di Benevento, due giovani di Acerra e trovato più di un chilo e mezzo tra hashish e marijuana. Per loro la Procura ha disposto i domiciliari.",
+   "categoria": "cronaca",
+   "zona": "caudina",
+   "luogo": "Statale Appia (Valle Caudina)",
+   "pubblicato": "2026-10-21",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/441579/un-chilo-e-mezzo-di-hashish-e-marijuana-arrestati-19enne-e-23enne-di-acerra.shtml"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/21/beccati-con-oltre-un-chilo-di-droga-lungo-lasse-montesarchio-napoli-due-persone-in-manette/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "I Carabinieri del Nucleo operativo e radiomobile della Compagnia di Montesarchio hanno arrestato due giovani di Acerra, in provincia di Napoli, di 19 e 23 anni. Nella loro auto c'erano più di un chilo e mezzo tra hashish e marijuana, che per i militari era probabilmente destinata allo spaccio.",
+      "fonti": [
+       "Ottopagine",
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "Secondo Ottopagine i due sono stati fermati alcuni giorni fa mentre viaggiavano sulla statale Appia, nel tratto che attraversa il Sannio. I militari hanno controllato l'auto e fatto una perquisizione, e così hanno trovato la droga, che è stata sequestrata. Il Sannio Quotidiano parla di controlli decisi dal Comando provinciale di Benevento contro lo spaccio lungo la strada tra Napoli e Montesarchio.",
+      "fonti": [
+       "Ottopagine",
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "Ai due è contestata l'ipotesi di detenzione di droga ai fini di spaccio. La Procura ha disposto gli arresti domiciliari: dopo un passaggio in caserma sono stati riportati nelle loro case di Acerra. Sono da considerare presunti innocenti fino a una sentenza definitiva.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Due arrestati dai Carabinieri della Compagnia di Montesarchio, con oltre un chilo e mezzo tra hashish e marijuana sequestrati.",
+      "fonti": [
+       "Ottopagine",
+       "Il Sannio Quotidiano"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Il giorno preciso del controllo: Ottopagine scrive «alcuni giorni fa», Il Sannio Quotidiano non lo dice nella parte che si legge senza abbonamento.",
+     "Se sarà chiesta la convalida davanti al giudice."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Un chilo e mezzo di hashish e marijuana, arrestati 19enne e 23enne di Acerra",
+      "url": "https://www.ottopagine.it/bn/cronaca/441579/un-chilo-e-mezzo-di-hashish-e-marijuana-arrestati-19enne-e-23enne-di-acerra.shtml",
+      "data": "21 ott"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Beccati con oltre un chilo di droga lungo l’asse Montesarchio-Napoli, due persone in manette",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/21/beccati-con-oltre-un-chilo-di-droga-lungo-lasse-montesarchio-napoli-due-persone-in-manette/",
+      "data": "21 ott"
+     }
+    ]
+   }
+  },
+  {
+   "id": "benevento-via-nenni-distributore-assalto-benzina",
+   "titolo": "Benevento, via Nenni: lunghe code e strada bloccata per il distributore che aveva ancora benzina",
+   "sintesi": "Mercoledì pomeriggio a Benevento è corsa al distributore di via Nenni, uno dei pochi con carburante. Il traffico verso viale Mellusi si è paralizzato e la Polizia Municipale è intervenuta per calmare gli animi.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "immagine": "carburante",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-21",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/benzina-distrubutore/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Nel pomeriggio di mercoledì 21 ottobre, a Benevento, decine di automobilisti si sono precipitati al distributore di via Nenni. Secondo Anteprima24, una segnalazione arrivata nel pomeriggio ha fatto sapere che lì c'era ancora una certa scorta di benzina.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "In città, scrive il giornale, le telefonate ai distributori davano quasi tutte la stessa risposta: carburante esaurito. Con il blocco dei camion l'autonomia è ridotta e nessuno sa quanto durerà. Per questo la voce ha rimesso in moto la corsa di chi non aveva ancora fatto rifornimento.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "La strada si è bloccata e il traffico è rimasto fermo lungo la via che porta a viale Mellusi. Ci sono stati momenti di tensione, ma la Polizia Municipale è arrivata sul posto, ha calmato gli animi e ha fatto scorrere le auto quasi normalmente.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quante auto c'erano in coda e per quanto tempo la strada è rimasta bloccata.",
+     "Se il distributore ha finito la benzina."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Segnalata benzina: lunghe code per l’assalto al distributore",
+      "url": "https://www.anteprima24.it/benevento/benzina-distrubutore/",
+      "data": "21 ott"
+     }
+    ]
+   },
+   "foto": "carburante-2"
+  },
   {
    "id": "benevento-tre-ponti-smart-in-fiamme",
    "titolo": "Benevento, Smart in fiamme sulla statale Appia a Tre Ponti: il conducente scende in tempo",
@@ -1170,7 +1393,7 @@
   {
    "id": "rifiuti-blocco-tir-apice-morcone-cusano-sant-angelo-a-cupolo",
    "titolo": "Blocco dei tir, rifiuti a rischio nel Sannio: raccolta ferma a Sant'Angelo a Cupolo, da giovedì sospesa a Sant'Agata de' Goti, a San Giorgio del Sannio non si conferisce l'indifferenziata",
-   "sintesi": "Con le strade bloccate dai camion e il gasolio che scarseggia, in diversi Comuni del Sannio la raccolta dei rifiuti salta o rischia di saltare. A Sant'Agata de' Goti sarà sospesa da giovedì 22 ottobre; a San Giorgio del Sannio mercoledì sera non va conferito l'indifferenziato; ad Apice è chiusa l'isola ecologica.",
+   "sintesi": "Con le strade bloccate dai camion e il gasolio che scarseggia, in diversi Comuni del Sannio la raccolta dei rifiuti salta o rischia di saltare. A Sant'Agata de' Goti sarà sospesa da giovedì 22 ottobre; a San Giorgio del Sannio mercoledì sera non va conferito l'indifferenziato; ad Apice è chiusa l'isola ecologica. Possibili ritardi anche a Colle Sannita.",
    "categoria": "altro",
    "zona": "provincia",
    "luogo": "Sannio",
@@ -1201,6 +1424,10 @@
     {
      "nome": "Comune di Pietrelcina",
      "url": "https://www.comune.pietrelcina.bn.it/novita/avvisi/novita_376.html"
+    },
+    {
+     "nome": "Il Sannio Quotidiano (Colle Sannita)",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/21/raccolta-rifiuti-possibili-ritardi-anche-a-colle-sannita/"
     }
    ],
    "articolo": {
@@ -1232,6 +1459,12 @@
        "Comune di Sant'Agata de' Goti",
        "Comune di San Giorgio del Sannio"
       ]
+     },
+     {
+      "testo": "Anche a Colle Sannita, nel Fortore, il Comune ha avvisato i cittadini di possibili ritardi. La ditta che fa la raccolta, la Irpinia Global Service, ha scritto ai Comuni che i blocchi stradali rallentano la circolazione e limitano l'accesso agli impianti dove vanno i rifiuti: possono quindi saltare o slittare alcune raccolte e, nei giorni peggiori, alcuni servizi non essere fatti.",
+      "fonti": [
+       "Il Sannio Quotidiano (Colle Sannita)"
+      ]
      }
     ],
     "cronologia": [
@@ -1262,6 +1495,13 @@
       "fatto": "Il Comune di Pietrelcina chiude il centro di raccolta comunale fino a nuovo avviso.",
       "fonti": [
        "Comune di Pietrelcina"
+      ]
+     },
+     {
+      "data": "21 ottobre",
+      "fatto": "Il Comune di Colle Sannita avvisa di possibili ritardi nella raccolta, dopo la lettera della ditta Irpinia Global Service.",
+      "fonti": [
+       "Il Sannio Quotidiano (Colle Sannita)"
       ]
      }
     ],
@@ -1307,6 +1547,12 @@
       "nome": "Comune di Pietrelcina",
       "titolo": "Chiusura del Centro di Raccolta Comunale - Avviso",
       "url": "https://www.comune.pietrelcina.bn.it/novita/avvisi/novita_376.html",
+      "data": "21 ott"
+     },
+     {
+      "nome": "Il Sannio Quotidiano (Colle Sannita)",
+      "titolo": "Raccolta rifiuti, possibili ritardi anche a Colle Sannita",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/21/raccolta-rifiuti-possibili-ritardi-anche-a-colle-sannita/",
       "data": "21 ott"
      }
     ]
@@ -2420,7 +2666,6 @@
     }
    ],
    "articolo": {
-    "cosa": "Per la protesta degli autotrasportatori, che da giorni interessa le principali strade del Sud, i mezzi dell'Asia (la società dei rifiuti di Benevento) sono fermi all'ecocentro di Margiacca: essendo pesanti non possono circolare e non raggiungono i siti dove scaricare i rifiuti. Per questo da oggi l'ecocentro è chiuso al pubblico e, dice l'azienda, in seguito potrebbero esserci problemi nella raccolta. L'Asia si scusa e chiede collaborazione ai cittadini.",
     "cronologia": [
      {
       "data": "20 ottobre",
@@ -5110,7 +5355,7 @@
    "titolo": "Caro gasolio, la protesta di tir e agricoltori nel Sannio: dove sono i blocchi, cosa manca e cosa succede adesso",
    "sommario": "Da lunedì 19 ottobre gli autotrasportatori fermano i camion sull'Appia a Tufara Valle e a Castel del Lago; ci sono stati blocchi anche sulla Telesina a San Salvatore Telesino. Nei supermercati mancano i prodotti freschi e alcuni distributori hanno finito il gasolio. Da giovedì 22 si aggiungono gli agricoltori. Oggi, 20 ottobre, il ministro Salvini incontra a Milano associazioni e gruppi di protesta, anche della Campania.",
    "luogo": "Provincia di Benevento",
-   "aggiornato": "2026-10-21T16:13:00+02:00",
+   "aggiornato": "2026-10-21T20:05:00+02:00",
    "collegate": [
     "tir-appia-telesina",
     "scaffali-vuoti",
@@ -5501,6 +5746,16 @@
       "NTR24 (Mastella)",
       "Comune di Pietrelcina"
      ]
+    },
+    {
+     "data": "21 ottobre, sera",
+     "fatto": "AIR Campania dice che il carburante per i bus è arrivato ad Avellino e a Caserta e che giovedì 22 sono attese le forniture a Benevento e Salerno. A Benevento, nel pomeriggio, corsa al distributore di via Nenni, uno dei pochi con benzina. A Colle Sannita il Comune avvisa di possibili ritardi nella raccolta dei rifiuti.",
+     "fonti": [
+      "Cronache del Sannio (AIR)",
+      "TV7 Benevento (AIR)",
+      "Anteprima24 (via Nenni)",
+      "Il Sannio Quotidiano (Colle Sannita)"
+     ]
     }
    ],
    "non_si_sa": [
@@ -5693,6 +5948,30 @@
      "nome": "Comune di Pietrelcina",
      "titolo": "Chiusura del Centro di Raccolta Comunale - Avviso",
      "url": "https://www.comune.pietrelcina.bn.it/novita/avvisi/novita_376.html",
+     "data": "21 ott"
+    },
+    {
+     "nome": "Cronache del Sannio (AIR)",
+     "titolo": "Air Campania: forniture carburante attese per domani a Benevento",
+     "url": "https://www.cronachedelsannio.it/sannionews24/air-campania-forniture-carburante-domani-benevento/",
+     "data": "21 ott"
+    },
+    {
+     "nome": "TV7 Benevento (AIR)",
+     "titolo": "Carburante, AIR Campania: “Rifornimenti arrivati anche a Caserta, attese domani le forniture a Benevento e Salerno”",
+     "url": "https://www.tvsette.net/carburante-air-campania-rifornimenti-arrivati-anche-a-caserta-attese-domani-le-forniture-a-benevento-e-salerno/",
+     "data": "21 ott, 18:27"
+    },
+    {
+     "nome": "Anteprima24 (via Nenni)",
+     "titolo": "Segnalata benzina: lunghe code per l’assalto al distributore",
+     "url": "https://www.anteprima24.it/benevento/benzina-distrubutore/",
+     "data": "21 ott"
+    },
+    {
+     "nome": "Il Sannio Quotidiano (Colle Sannita)",
+     "titolo": "Raccolta rifiuti, possibili ritardi anche a Colle Sannita",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/21/raccolta-rifiuti-possibili-ritardi-anche-a-colle-sannita/",
      "data": "21 ott"
     }
    ],
