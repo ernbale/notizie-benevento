@@ -45,7 +45,7 @@ SEZIONI = [
      "con le fonti ufficiali (ANAS, Provincia, Comuni) e i giornali locali messi a confronto."),
     ("sezione/cronaca", {"cat": "cronaca"}, "Cronaca Benevento: ultime notizie di cronaca dal Sannio",
      "Cronaca di Benevento e provincia", "Le notizie di cronaca di oggi da Benevento e dai paesi del Sannio, "
-     "confrontate tra i giornali locali: esce solo ciò che riportano almeno due testate o una fonte ufficiale."),
+     "confrontate tra i giornali locali, con i link agli articoli originali."),
     ("sezione/politica", {"cat": "politica"}, "Politica Benevento: Comune, Provincia e paesi del Sannio",
      "Politica a Benevento e nel Sannio", "Consiglio comunale, Provincia, Regione e paesi del Sannio: "
      "le notizie di politica di Benevento confrontate tra i giornali locali."),
@@ -75,7 +75,7 @@ SEZIONI = [
 ]
 CAT_PERCORSO = {s[1]["cat"]: s[0] for s in SEZIONI if "cat" in s[1]}
 DESCR_HOME = ("Le ultime notizie di oggi da Benevento e dal Sannio: cronaca, strade, politica, eventi e allerte, "
-              "confrontate tra i giornali locali. Esce solo ciò che riportano almeno due testate o una fonte ufficiale.")
+              "confrontate tra i giornali locali, con i link agli articoli originali.")
 
 
 def e(s):
@@ -230,7 +230,7 @@ def immagine_generica(path):
     y = 262
     for r in _a_capo("Le notizie di Benevento e provincia, confrontate tra i giornali locali", f, W - 120):
         d.text((60, y), r, font=f, fill="#111111"); y += 74
-    d.text((60, y + 30), "Esce solo ciò che riportano almeno due testate o una fonte ufficiale.",
+    d.text((60, y + 30), "Con le fonti e i link agli articoli originali.",
            font=_font(FONT_BOLD, 28), fill="#5b5249")
     d.rectangle([0, H - 14, W, H], fill="#c4161c")
     im.save(path, optimize=True)
@@ -322,7 +322,11 @@ def html_articolo(n, appro_collegato):
     fonti = a.get("fonti") if isinstance(a.get("fonti"), list) else []
     h = _testata_pagina(NOMI_CAT.get(n.get("categoria"), "Altro"), n.get("luogo"), n["titolo"])
     meta = ("Dall'archivio · " if n["_arch"] else "") + (data_it(n.get("pubblicato")) + " · " if n.get("pubblicato") else "")
-    h += f'<div class="meta">{e(meta)}{len(fonti)} {"fonte" if len(fonti) == 1 else "fonti confrontate"}</div>' + POSTO_ASCOLTA
+    h += f'<div class="meta">{e(meta)}{len(fonti)} {"fonte" if len(fonti) == 1 else "fonti confrontate"}</div>'
+    if n.get("stato") == "una_fonte" and n.get("fonti"):
+        h += (f'<div class="nota">Per ora questo fatto lo riporta solo {e(n["fonti"][0].get("nome", ""))}. '
+              'Lo aggiorniamo se arrivano altre fonti.</div>')
+    h += POSTO_ASCOLTA
     if foto_tema(n):
         b = foto_tema(n)[:-4]
         h += (f'<figure class="foto-tema"><img src="{b}-m.jpg" srcset="{b}-m.jpg 768w, {b}.jpg 1536w" '

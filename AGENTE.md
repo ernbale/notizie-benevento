@@ -11,10 +11,19 @@ quello nuovo.
 
 1. **Solo notizie vere.** Mai inventare un fatto, un numero, un nome, un orario o una fonte. Se non l'hai letto
    in un articolo o in una fonte ufficiale, non esiste.
-2. **Una notizia esce solo se** la riportano **almeno due testate diverse**, oppure **una fonte ufficiale**
-   (Comune, Provincia, Prefettura, ANAS, INGV, Protezione Civile, forze dell'ordine). Due articoli dello stesso
-   giornale contano come una fonte.
-3. **Cronaca con persone coinvolte:** solo con almeno due testate. Le accuse si riportano **con le parole esatte
+2. **Una notizia esce se** la riportano **almeno due testate diverse**, oppure **una fonte ufficiale**
+   (Comune, Provincia, Prefettura, ASL, ospedale San Pio, ANAS, INGV, Protezione Civile, forze dell'ordine). Due
+   articoli dello stesso giornale contano come una fonte.
+   **Eccezione: cronaca da un solo giornale autorevole** (voluta dal proprietario il 21 ottobre 2026). Un fatto di
+   cronaca, di strade o di servizi (categorie `cronaca`, `strade`, `altro`) riportato da **una sola** di queste
+   testate può uscire con `"stato": "una_fonte"`: Il Mattino (Benevento), Il Sannio Quotidiano, NTR24, Ottopagine, Anteprima24, Lab TV, Cronache del Sannio, BeneventoNews24, TV7 Benevento. Prima fai una ricerca mirata per trovare la seconda fonte.
+   Il sito mostra da solo la scritta «Una sola fonte» e il nome del giornale. Non vale mai per: politica, allerte,
+   eventi, notizie `rilevante`, fatti scritti solo da altre testate (Infosannio, Fremondoweb, Gazzetta di Benevento,
+   Benevento Giornale, Il Caudino: con loro servono due testate). Appena una seconda testata riporta il fatto,
+   aggiungila e passa a `confermata`.
+3. **Cronaca con persone coinvolte:** almeno due testate, oppure una sola testata autorevole (regola 2). Con **una
+   sola fonte**, se il fatto accusa qualcuno (indagato, arrestato, denunciato, processato, condannato) **non
+   scrivere nome e cognome**: età, paese e ruolo bastano («un 53enne di Benevento»). Le accuse si riportano **con le parole esatte
    dei giornali** («indagato», «arrestato», «denunciato», «presunto»): mai aggiungere, mai riassumere un'accusa
    con parole più pesanti. Nomi di vittime minorenni (anche se oggi sono maggiorenni ma erano minorenni al
    momento del fatto): mai, da nessuna parte. Se il titolo di un articolo fonte contiene quel nome, nell'elenco
@@ -48,6 +57,8 @@ Lavora in parallelo (6-8 letture insieme). Per ogni fonte tieni nota: letta / no
   `https://webservices.ingv.it/fdsnws/event/1/query?starttime=<3h fa UTC>&lat=41.2&lon=14.65&maxradius=0.4&orderby=time&format=text`
   (riportare solo magnitudo ≥ 2.5 o sciami di ≥ 10 scosse)
 - San Marco dei Cavoti (feed): `https://www.comune.sanmarcodeicavoti.bn.it/feed/`
+- ASL Benevento, notizie e avvisi (screening, servizi, vaccini, ambulatori): `https://www.aslbenevento.it/notizie`
+- Ospedale San Pio di Benevento, news e avvisi: `https://www.aosanpio.it/categoria/news-ed-eventi/`
 - **Allerte ufficiali già confrontate (leggile per prime):** `https://notiziebenevento.it/meteo.json`, campo `allerte`.
   Lo aggiorna ogni ora il programma del meteo (`strumenti/meteo.py`): per oggi e domani dà il livello di ognuna
   delle 3 zone del Sannio dal **bollettino nazionale della Protezione civile** (`zone`: livello, rischio
@@ -62,8 +73,11 @@ Lavora in parallelo (6-8 letture insieme). Per ogni fonte tieni nota: letta / no
 
 **Giornali del Sannio (sempre, homepage o sezione):** ottopagine.it/bn/ · ilsannioquotidiano.it · ntr24.tv ·
 labtv.net · cronachedelsannio.it/sannionews24/ · fremondoweb.com/category/notizie-dalla-valle-telesina/ ·
-corrieresannita.it · gazzettabenevento.it · anteprima24.it/benevento/ · infosannionews.it · beneventogiornale.com ·
-beneventonews24.it · ilquaderno.it · realtasannita.it · ilmattino.it/benevento/
+gazzettabenevento.it · anteprima24.it/benevento/ · infosannionews.it · beneventogiornale.com ·
+beneventonews24.it · ilmattino.it/benevento/ · tvsette.net (TV7 Benevento: tieni solo le notizie del Sannio) ·
+ilcaudino.it/feed/ (Valle Caudina: tieni solo i Comuni della provincia di Benevento, non Cervinara, Rotondi, San
+Martino Valle Caudina e gli altri irpini). Il Sannio Quotidiano esce tutto tra le 7:30 e le 7:50 ed è spesso la
+seconda fonte dei fatti del giorno prima: al giro delle 8 controlla i fatti di ieri rimasti con una sola fonte.
 
 **Comuni senza feed (a ogni giro):** pagine notizie di
 `www.comune.<nome>.bn.it` per montesarchio, santagatadegoti, sangiorgiodelsannio, airola, sanbartolomeoingaldo,
@@ -109,6 +123,11 @@ Regole:
 - Le chiusure di più Comuni per la stessa allerta: **una sola notizia** aggiornata a ogni giro con l'elenco dei Comuni
   e cosa chiude (es. «Allerta arancione: chiusi scuole e parchi a Benevento, Montesarchio e Telese»), ogni Comune con
   la sua fonte (comunicato o ordinanza del Comune, oppure due giornali).
+- **Nei giorni di allerta** (gialla, arancione o rossa per oggi o domani), a ogni giro, oltre alle fonti solite:
+  cerca «scuole chiuse», «ordinanza» e «allerta» nei titoli di tutti i giornali letti e fai una ricerca mirata
+  («scuole chiuse <giorno> Sannio», «allerta <giorno> Comuni Benevento chiusure»). Per **ogni Comune nominato**
+  apri il suo sito (`www.comune.<nome>.bn.it`, anche se non è tra i 19 di sempre) e cerca l'ordinanza. Aggiorna
+  l'elenco della notizia delle chiusure anche se l'hai già scritta: deve crescere finché escono Comuni nuovi.
 - Le **previsioni del tempo no**: stanno nella pagina Meteo, che fa un programma a parte.
 
 ## Come lavorare una notizia
@@ -278,7 +297,7 @@ aggiorni a ogni giro, come notizie.json.
     "zona": "benevento|telesina|caudina|fortore|provincia",
     "immagine": "tema da img/temi/temi.json (facoltativo, mai per la cronaca)",
     "luogo": "paese o località", "pubblicato": "ISO dell'articolo fonte più recente, oppure solo AAAA-MM-GG se l'ora non è scritta",
-    "stato": "confermata|ufficiale", "rilevante": false,
+    "stato": "confermata|ufficiale|una_fonte (vedi regola 2)", "rilevante": false,
     "in_vigore_fino": "AAAA-MM-GG, solo per avvisi ufficiali con una scadenza (lavori, divieti, ordinanze)",
     "fonti": [ {"nome": "Testata", "url": "link all'articolo"} ],
     "nota": "solo se serve una correzione",

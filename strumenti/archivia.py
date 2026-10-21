@@ -24,7 +24,10 @@ import sys
 
 CAT = {"strade", "cronaca", "meteo", "politica", "eventi", "altro"}
 ZONE = {"benevento", "telesina", "caudina", "fortore", "provincia"}
-STATI = {"confermata", "ufficiale"}
+STATI = {"confermata", "ufficiale", "una_fonte"}
+# le testate che da sole bastano per la cronaca (regola 2 di AGENTE.md), scritte senza spazi né maiuscole
+AUTOREVOLI = {"ilmattino", "ilsannioquotidiano", "ntr24", "ottopagine", "anteprima24", "labtv", "cronachedelsannio",
+              "beneventonews24", "tv7benevento"}
 VIETATE = ["choc", "shock", "incredibile", "ecco cosa", "non crederai", "!", "?"]
 ISO = re.compile(r"^\d{4}-\d{2}-\d{2}(T\d{2}:\d{2}(:\d{2})?[+-]\d{2}:\d{2})?$")
 GIORNO = re.compile(r"^\d{4}-\d{2}-\d{2}$")
@@ -230,6 +233,16 @@ def controlla(d, err, avv, adesso=None):
             testate = {re.sub(r"\s*\(.*\)$", "", x or "") for x in nomi_prima}
             if len(testate) < 2:
                 err.append(f"{w}: 'confermata' con meno di 2 testate")
+        if n.get("stato") == "una_fonte":
+            testate = {re.sub(r"[^a-z0-9]", "", re.sub(r"\s*\(.*\)$", "", x or "").lower()) for x in nomi_prima}
+            if len(testate) != 1:
+                err.append(f"{w}: 'una_fonte' vuole una sola testata (con due è 'confermata')")
+            elif not testate <= AUTOREVOLI:
+                err.append(f"{w}: 'una_fonte' solo con una testata autorevole (regola 2), non {nomi_prima[0]!r}")
+            if n.get("categoria") not in ("cronaca", "strade", "altro"):
+                err.append(f"{w}: 'una_fonte' solo per cronaca, strade o altro")
+            if n.get("rilevante"):
+                err.append(f"{w}: una notizia con una sola fonte non può essere 'rilevante'")
         if "immagine" in n:
             if n.get("categoria") == "cronaca":
                 err.append(f"{w}: niente immagine sulla cronaca (togli il campo immagine)")
