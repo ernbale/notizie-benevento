@@ -1,7 +1,317 @@
 {
- "aggiornato": "2026-10-21T10:06:00+02:00",
+ "aggiornato": "2026-10-21T12:07:00+02:00",
  "giornali_letti": 15,
  "notizie": [
+  {
+   "id": "benevento-tangenziale-est-scontro-tre-veicoli-20-ottobre",
+   "titolo": "Benevento, tangenziale Est: scontro tra tre veicoli all'uscita Benevento Est, un ferito e lunghe code",
+   "sintesi": "Martedì 20 ottobre in prima serata, sul raccordo per la Napoli-Canosa, si sono scontrati una Ford Focus, una Fiat e un furgoncino. Una persona è ferita, non in condizioni gravi.",
+   "categoria": "cronaca",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-20T19:25:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/scontro-tra-tre-veicoli-sulla-tangenziale-un-ferito-e-lunghe-code/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Martedì 20 ottobre, in prima serata, tre veicoli si sono scontrati sulla tangenziale Est di Benevento, lungo il raccordo autostradale per la Napoli-Canosa, all'altezza dell'uscita Benevento Est. Sono coinvolti una Ford Focus, una Fiat e un furgoncino.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Una persona è rimasta ferita, ma secondo l'articolo non sarebbe in condizioni gravi. I Carabinieri hanno fatto i rilievi e la Polizia Stradale ha disciplinato il traffico. L'incidente ha causato una lunghissima coda di auto.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "L'ora esatta e la causa dello scontro.",
+     "Dove è stato portato il ferito."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Scontro tra tre veicoli sulla tangenziale: un ferito e lunghe code",
+      "url": "https://www.anteprima24.it/benevento/scontro-tra-tre-veicoli-sulla-tangenziale-un-ferito-e-lunghe-code/",
+      "data": "20 ott, 19:25"
+     }
+    ]
+   }
+  },
+  {
+   "id": "benevento-polstrada-controlli-weekend-4-patenti",
+   "titolo": "Benevento, controlli della Polizia Stradale nel fine settimana: 4 patenti ritirate per telefonino e sorpassi",
+   "sintesi": "Dal 16 al 18 ottobre la Polizia Stradale ha fatto 11 contestazioni e ritirato quattro patenti: due per l'uso del telefono alla guida e due per sorpasso vietato. Tolti 30 punti in totale.",
+   "categoria": "cronaca",
+   "zona": "provincia",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-20T14:00:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/20/benevento-controlli-della-polstrada-nel-weekend-4-patenti-ritirate-per-sorpassi-e-uso-del-telefonino/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/20/benevento-controlli-della-polizia-stradale-nel-weekend-4-patenti-ritirate/"
+    },
+    {
+     "nome": "Infosannionews",
+     "url": "https://www.infosannionews.it/cronaca/2026/polizia-stradale-intensificati-i-controlli-nel-week-end-4-patenti-ritirate-per-sorpassi-e-uso-del-cellulare"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Nel fine settimana dal 16 al 18 ottobre la Sezione Polizia Stradale di Benevento ha intensificato i controlli contro le condotte pericolose alla guida. Il bilancio è di 11 contestazioni e quattro patenti ritirate: due per l'uso del telefono mentre si guida e due per sorpasso in un punto dove è vietato.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Ai conducenti sanzionati sono stati tolti in tutto 30 punti dalla patente. Gli agenti sono intervenuti anche per due soccorsi a veicoli in difficoltà. Le verifiche fanno parte del programma di prevenzione e sicurezza stradale della Polizia di Stato.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Quattro patenti ritirate nei controlli del fine settimana per sorpassi vietati e uso del telefonino.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24",
+       "Infosannionews"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "In quali strade si sono fatti i controlli: l'articolo letto non lo dice."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Benevento, controlli della Polstrada nel weekend: 4 patenti ritirate per sorpassi e uso del telefonino",
+      "url": "https://www.ntr24.tv/2026/10/20/benevento-controlli-della-polstrada-nel-weekend-4-patenti-ritirate-per-sorpassi-e-uso-del-telefonino/",
+      "data": "20 ott"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Benevento, controlli della Polizia Stradale nel weekend: 4 patenti ritirate",
+      "url": "https://www.beneventonews24.it/2026/10/20/benevento-controlli-della-polizia-stradale-nel-weekend-4-patenti-ritirate/",
+      "data": "20 ott"
+     },
+     {
+      "nome": "Infosannionews",
+      "titolo": "Polizia Stradale: intensificati i controlli nel week end, 4 patenti ritirate per sorpassi e uso del cellulare",
+      "url": "https://www.infosannionews.it/cronaca/2026/polizia-stradale-intensificati-i-controlli-nel-week-end-4-patenti-ritirate-per-sorpassi-e-uso-del-cellulare",
+      "data": "20 ott"
+     }
+    ]
+   }
+  },
+  {
+   "id": "benevento-via-montecalvo-limite-30-kmh",
+   "titolo": "Benevento, via Montecalvo: limite di 30 km/h dopo le segnalazioni sulle auto troppo veloci",
+   "sintesi": "Un'ordinanza del Servizio Traffico del Comune, firmata il 21 ottobre, mette il limite di 30 km/h in un tratto di via Montecalvo, tra via Madonna della Salute e i civici 33 e 68. Vale quando saranno montati i cartelli.",
+   "categoria": "strade",
+   "zona": "benevento",
+   "immagine": "autovelox",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-21T11:00:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/21/benevento-limite-di-30-km-h-in-via-montecalvo-ordinanza-contro-lalta-velocita-dei-veicoli/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Benevento, in via Montecalvo, arriva il limite di velocità di 30 km/h. Lo prevede un'ordinanza dirigenziale del Servizio Traffico del Comune, firmata la mattina di mercoledì 21 ottobre. Il limite vale nel tratto tra l'incrocio con via Madonna della Salute e il punto dei civici 33 e 68.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Il Comune ha deciso dopo molte segnalazioni di auto che passano a velocità elevata, un possibile pericolo per chi è in strada. L'ordinanza dice di adeguare la segnaletica e di mettere i nuovi cartelli, visibili da entrambe le direzioni. Il limite diventa operativo solo quando i cartelli sono installati. I controlli spettano alla Polizia Municipale.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Da quando varrà il limite: dipende dall'installazione dei cartelli, per cui non c'è una data."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Benevento, limite di 30 km/h in via Montecalvo: ordinanza contro l’alta velocità dei veicoli",
+      "url": "https://www.ntr24.tv/2026/10/21/benevento-limite-di-30-km-h-in-via-montecalvo-ordinanza-contro-lalta-velocita-dei-veicoli/",
+      "data": "21 ott"
+     }
+    ]
+   },
+   "foto": "autovelox"
+  },
+  {
+   "id": "benevento-carta-dedicata-a-te-graduatoria-2025",
+   "titolo": "Benevento, pubblicata la graduatoria per la «Carta Dedicata a te»: come ritirare la carta",
+   "sintesi": "Il Comune ha pubblicato la graduatoria dei nuclei familiari beneficiari della misura per il 2025, senza nomi ma con il numero di protocollo della DSU ISEE. I nuovi beneficiari ritirano il codice a Palazzo De Gasperi, poi la carta alle Poste.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-21T09:41:00+02:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Comune di Benevento",
+     "url": "https://comune.benevento.it/novita/pubblicata-la-graduatoria-dei-nuclei-familiari-beneficiari-della-misura-carta-dedicata-a-te/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/441677/pubblicata-graduatoria-nuclei-familiari-beneficiari-misura-carta-dedicata-a-te.shtml"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/21/benevento-pubblicata-la-graduatoria-dei-nuclei-familiari-beneficiari"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Comune di Benevento ha pubblicato la graduatoria dei nuclei familiari che ricevono la «Carta Dedicata a te» per il 2025, la misura che dà una carta per la spesa alle famiglie in difficoltà. Per tutelare la privacy non ci sono i nomi: ogni nucleo si riconosce dal numero di protocollo della sua DSU ISEE, la dichiarazione con cui si calcola l'ISEE.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "Chi ha già la carta riceve l'accredito direttamente su quella che possiede. I nuovi beneficiari devono prima ritirare la comunicazione con il codice identificativo negli uffici comunali di viale Principe di Napoli 91 (Palazzo De Gasperi), dal lunedì al venerdì, dalle 9 alle 12. Poi vanno in un qualsiasi ufficio di Poste Italiane per ritirare la carta.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Da quando le carte sono utilizzabili e di quale importo: l'avviso del Comune non lo dice."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Benevento",
+      "titolo": "Pubblicata la graduatoria dei nuclei familiari beneficiari della misura “Carta Dedicata a Te”",
+      "url": "https://comune.benevento.it/novita/pubblicata-la-graduatoria-dei-nuclei-familiari-beneficiari-della-misura-carta-dedicata-a-te/",
+      "data": "21 ott, 09:41"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Pubblicata graduatoria nuclei familiari beneficiari misura \"Carta Dedicata a te\"",
+      "url": "https://www.ottopagine.it/bn/attualita/441677/pubblicata-graduatoria-nuclei-familiari-beneficiari-misura-carta-dedicata-a-te.shtml",
+      "data": "21 ott"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Benevento, pubblicata la graduatoria dei nuclei familiari beneficiari della misura “Carta Dedicata a Te”",
+      "url": "https://www.ntr24.tv/2026/10/21/benevento-pubblicata-la-graduatoria-dei-nuclei-familiari-beneficiari",
+      "data": "21 ott"
+     }
+    ]
+   }
+  },
+  {
+   "id": "benevento-via-goduti-divieto-sosta-22-23-ottobre",
+   "titolo": "Benevento, via Goduti: divieto di sosta nella notte tra il 22 e il 23 ottobre per lavori a una cabina",
+   "sintesi": "Dalle 22 di giovedì 22 ottobre alle 6 di venerdì 23 la sosta è vietata su entrambi i lati di via Goduti, tra piazza Orsini-corso Garibaldi e via Pasquali-piazza Dogana, per la manutenzione della cabina Dogana.",
+   "categoria": "strade",
+   "zona": "benevento",
+   "immagine": "divieto-sosta",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-21T09:59:00+02:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "in_vigore_fino": "2026-10-23",
+   "fonti": [
+    {
+     "nome": "Comune di Benevento",
+     "url": "https://comune.benevento.it/novita/divieto-di-sosta-in-via-goduti-per-lavori-di-manutenzione-di-una-cabina/"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/21/benevento-divieto-di-sosta-in-via-goduti-per-lavori-di-manutenzione-di-una-cabina/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/divieto-sosta-via-goduti-lavori-manutenzione-cabina/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Nella notte tra giovedì 22 e venerdì 23 ottobre a Benevento non si può parcheggiare in via Ennio Goduti. Il divieto vale su entrambi i lati, dalle 22 di giovedì alle 6 di venerdì, nel tratto tra l'incrocio con piazza Orsini-corso Garibaldi e quello con via Pasquali-piazza Dogana.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "Il motivo è un intervento straordinario di manutenzione alla cabina Dogana, che si trova sotto la strada, vicino al civico 4. Il divieto serve a far lavorare gli operai.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Che tipo di cabina sia (elettrica o altro): il Comune scrive solo «cabina Dogana»."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Benevento",
+      "titolo": "Divieto di sosta in via Goduti per lavori di manutenzione di una cabina",
+      "url": "https://comune.benevento.it/novita/divieto-di-sosta-in-via-goduti-per-lavori-di-manutenzione-di-una-cabina/",
+      "data": "21 ott, 09:59"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Benevento, divieto di sosta in via Goduti per lavori di manutenzione di una cabina",
+      "url": "https://www.ntr24.tv/2026/10/21/benevento-divieto-di-sosta-in-via-goduti-per-lavori-di-manutenzione-di-una-cabina/",
+      "data": "21 ott"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Divieto di sosta in via Goduti per lavori di manutenzione a una cabina",
+      "url": "https://www.cronachedelsannio.it/sannionews24/divieto-sosta-via-goduti-lavori-manutenzione-cabina/",
+      "data": "21 ott"
+     }
+    ]
+   },
+   "foto": "divieto-sosta"
+  },
   {
    "id": "rifiuti-blocco-tir-apice-morcone-cusano-sant-angelo-a-cupolo",
    "titolo": "Blocco dei tir, rifiuti a rischio nel Sannio: a Sant'Angelo a Cupolo salta la raccolta, a Apice chiusa l'isola ecologica",
@@ -3245,7 +3555,7 @@
   {
    "id": "ferrovia-benevento-cancello-rfi",
    "titolo": "Ferrovia Benevento-Cancello per la Valle Caudina chiusa dal 2021: comitato utenti ed Errico chiedono di passarla a RFI",
-   "sintesi": "Il Nuovo Comitato Utenti Ferrovia Valle Caudina e il consigliere regionale di Forza Italia Fernando Errico chiedono che la linea, ferma per lavori, passi a RFI (Rete Ferroviaria Italiana, la società della rete ferroviaria nazionale). La riapertura è prevista nei primi mesi del 2027; il comitato teme che i treni arrivino solo a Benevento Appia e non alla stazione Centrale.",
+   "sintesi": "Il Nuovo Comitato Utenti Ferrovia Valle Caudina e il consigliere regionale di Forza Italia Fernando Errico chiedono che la linea, chiusa dal 2021 per lavori, passi a RFI (Rete Ferroviaria Italiana, la società della rete nazionale). La riapertura è ipotizzata per i primi mesi del 2027.",
    "categoria": "politica",
    "zona": "caudina",
    "immagine": "treno",
@@ -3265,7 +3575,6 @@
    ],
    "articolo": {
     "aggiornato": "2026-10-20T09:25:00+02:00",
-    "cosa": "La linea Benevento-Cancello, che attraversa la Valle Caudina, è chiusa dal 2021 per i lavori di ammodernamento. Il comitato denuncia i disagi per pendolari, studenti e lavoratori e giudica i bus sostitutivi una soluzione non adeguata.",
     "cronologia": [
      {
       "data": "2021",
@@ -3276,21 +3585,15 @@
      },
      {
       "data": "19 ottobre",
-      "fatto": "Il comitato, con una nota firmata da Cosimo Nicchiniello e Giuseppe Iodice, chiede il passaggio della linea a RFI richiamando una legge del 2017 e i casi di Piemonte e Umbria; ricorda i 109 milioni di euro di fondi Pnrr per i lavori e si dice preoccupato per le parole dei vertici di EAV sui costi della linea.",
+      "fatto": "Il comitato chiede il passaggio a RFI; Errico rilancia la proposta già fatta in Consiglio regionale.",
       "fonti": [
-       "NTR24"
-      ]
-     },
-     {
-      "data": "19 ottobre",
-      "fatto": "Errico rilancia la proposta, già fatta in Consiglio regionale, e chiede di separare la gestione dei binari dal servizio dei treni, tutelando i lavoratori.",
-      "fonti": [
+       "NTR24",
        "LabTV"
       ]
      },
      {
       "data": "primi mesi del 2027",
-      "fatto": "Riapertura prevista, dopo lavori, collaudi e autorizzazioni dell'Ansfisa (l'agenzia nazionale per la sicurezza delle ferrovie).",
+      "fatto": "Riapertura ipotizzata, dopo lavori, collaudi e autorizzazioni ANSFISA.",
       "fonti": [
        "NTR24",
        "LabTV"
@@ -3299,14 +3602,7 @@
     ],
     "concordano": [
      {
-      "testo": "La riapertura è prevista nei primi mesi del 2027.",
-      "fonti": [
-       "NTR24",
-       "LabTV"
-      ]
-     },
-     {
-      "testo": "Si chiede di affidare la linea a RFI.",
+      "testo": "La riapertura è ipotizzata per i primi mesi del 2027 e si chiede di affidare la linea a RFI.",
       "fonti": [
        "NTR24",
        "LabTV"
@@ -3316,7 +3612,7 @@
     "divergono": [],
     "non_si_sa": [
      "Cosa risponde la Regione Campania alla richiesta di passare la linea a RFI.",
-     "Se alla riapertura i treni arriveranno di nuovo alla stazione di Benevento Centrale."
+     "Se alla riapertura i treni arriveranno anche alla stazione di Benevento Centrale: gli articoli non lo dicono."
     ],
     "fonti": [
      {
@@ -3330,6 +3626,40 @@
       "titolo": "Linea ferroviaria Napoli-Benevento, Errico: «Basta rinvii, gestione passi a Rfi come ho già proposto in Consiglio Regionale»",
       "url": "https://www.labtv.net/politica/2026/10/19/linea-ferroviaria-napoli-benevento-errico-basta-rinvii-gestione-passi-a-rfi-come-ho-gia-proposto-in-consiglio-regionale/",
       "data": "19 ott"
+     }
+    ],
+    "racconto": [
+     {
+      "testo": "La ferrovia Benevento-Cancello, che attraversa la Valle Caudina, è chiusa dal 2021 per lavori di ammodernamento. Lunedì 19 ottobre il Nuovo Comitato Utenti Ferrovia Valle Caudina e il consigliere regionale di Forza Italia Fernando Errico hanno chiesto che la linea passi a RFI, Rete Ferroviaria Italiana, la società che gestisce la rete ferroviaria nazionale.",
+      "fonti": [
+       "NTR24",
+       "LabTV"
+      ]
+     },
+     {
+      "testo": "Il comitato, in una nota firmata da Cosimo Nicchiniello e Giuseppe Iodice, dice che sei anni di chiusura totale «non sono un semplice cantiere». Secondo i firmatari pendolari, studenti e lavoratori pagano il disagio e gli autobus sostitutivi non sono una soluzione adeguata e duratura.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "La riapertura è ipotizzata per i primi mesi del 2027, dopo la fine dei lavori, i collaudi e le autorizzazioni di ANSFISA, l'agenzia nazionale per la sicurezza delle ferrovie. Per il comitato non basta: i rinvii e le scadenze saltate hanno creato sfiducia, e preoccupano le parole attribuite ai vertici di EAV, l'azienda regionale dei trasporti, sulla difficoltà di sostenere i costi della linea.",
+      "fonti": [
+       "NTR24",
+       "LabTV"
+      ]
+     },
+     {
+      "testo": "Il comitato ricorda i 109 milioni di euro di fondi PNRR indicati per i lavori e si chiede che senso abbia spenderli se poi il servizio non può essere garantito. Chiede quindi di trasferire l'intera linea a RFI, richiamando l'articolo 47 della legge 96 del 2017, e vede nel collegamento con il nodo di Cancello il punto da cui partire.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Errico, in una dichiarazione dello stesso giorno, dice di aver già proposto il passaggio a RFI nel Consiglio regionale dedicato ai trasporti. Chiede di separare la gestione dei binari dall'affidamento del servizio dei treni, di tutelare i lavoratori e di avere dalla Regione un programma credibile, con tempi verificabili e risorse adeguate.",
+      "fonti": [
+       "LabTV"
+      ]
      }
     ]
    },
@@ -3357,11 +3687,10 @@
    ],
    "articolo": {
     "aggiornato": "2026-10-20T09:25:00+02:00",
-    "cosa": "Secondo l'accusa della Dda (la Direzione distrettuale antimafia, l'ufficio della Procura che indaga sulla criminalità organizzata), il gruppo consegnava droga spostandosi da un posto all'altro, con appuntamenti presi al telefono, su WhatsApp e su Facebook, tra Caserta, Valle Caudina, Valle di Suessola e Valle di Maddaloni. Il tribunale non ha riconosciuto l'associazione.",
     "cronologia": [
      {
       "data": "19 ottobre",
-      "fatto": "Sentenza del Tribunale di Santa Maria Capua Vetere: assoluzione dall'associazione e da diversi episodi di spaccio, condanna per alcuni episodi.",
+      "fatto": "Sentenza del Tribunale di Santa Maria Capua Vetere: assoluzione dall'associazione e da diversi episodi di spaccio, condanna per altri.",
       "fonti": [
        "Anteprima24",
        "BeneventoNews24"
@@ -3369,7 +3698,7 @@
      },
      {
       "data": "prossimi passi",
-      "fatto": "La difesa, con gli avvocati Vittorio Fucci e Daniela Martino, annuncia l'appello; per due imputati valuterà di collegare questi fatti a condanne già avute (la cosiddetta «continuazione»), cosa che può cambiare il calcolo della pena.",
+      "fatto": "La difesa annuncia l'appello.",
       "fonti": [
        "Anteprima24",
        "BeneventoNews24"
@@ -3378,14 +3707,7 @@
     ],
     "concordano": [
      {
-      "testo": "I tre sono stati assolti dall'accusa di associazione e condannati solo per alcuni episodi di spaccio: 8, 6 e 6 anni.",
-      "fonti": [
-       "Anteprima24",
-       "BeneventoNews24"
-      ]
-     },
-     {
-      "testo": "La Dda aveva chiesto 26 anni per quello che considerava il promotore e 13 anni per ciascuno degli altri due.",
+      "testo": "Assolti dall'associazione e condannati solo per alcuni episodi di spaccio; la Dda aveva chiesto pene più alte.",
       "fonti": [
        "Anteprima24",
        "BeneventoNews24"
@@ -3394,7 +3716,8 @@
     ],
     "divergono": [],
     "non_si_sa": [
-     "In che periodo sono avvenuti i fatti: gli articoli non lo indicano."
+     "In che periodo sono avvenuti i fatti: gli articoli non lo indicano.",
+     "Quando si terrà l'appello."
     ],
     "fonti": [
      {
@@ -3408,6 +3731,35 @@
       "titolo": "Narcotraffico| Assolti dall'accusa di associazione a delinquere Morgillo, Iovino e Rocco",
       "url": "https://www.beneventonews24.it/2026/10/19/narcotraffico-assolti-dallaccusa-di-associazione-a-delinquere-morgillo-iovino-e-rocco/",
       "data": "19 ott"
+     }
+    ],
+    "racconto": [
+     {
+      "testo": "Il Tribunale di Santa Maria Capua Vetere ha escluso l'accusa più grave in un processo per droga tra Caserta e la Valle Caudina: quella di far parte di un'associazione finalizzata al traffico di stupefacenti. Lunedì 19 ottobre ha assolto i tre imputati dal reato associativo e da diversi episodi di spaccio, condannandoli però per altri episodi: 8 anni a un 41enne di San Felice a Cancello, 6 anni a un 60enne di Bonea e 6 anni a una 47enne di Pozzuoli.",
+      "fonti": [
+       "Anteprima24",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Le pene sono più basse di quelle chieste dalla Dda, la Direzione distrettuale antimafia, cioè l'ufficio della Procura che indaga sulla criminalità organizzata: 26 anni per chi era indicato come promotore e 13 anni per ciascuno degli altri due.",
+      "fonti": [
+       "Anteprima24",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Secondo l'accusa, il gruppo era attivo tra Caserta, la Valle Caudina, la Valle di Suessola e la Valle di Maddaloni e consegnava la droga spostandosi da un posto all'altro. Gli appuntamenti con gli acquirenti sarebbero stati fissati al telefono e sui social, con espressioni che gli investigatori ritenevano legate alla compravendita. Alla fine del processo il tribunale ha riconosciuto la responsabilità per una parte delle singole vendite, non per l'organizzazione.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "La difesa contesta anche le condanne rimaste e annuncia l'appello. Per due degli imputati valuterà inoltre di chiedere la «continuazione» con reati già giudicati in altri processi, cioè di considerarli un unico disegno: può cambiare il calcolo della pena, ma l'esito non è ancora definito. Gli imputati sono presunti innocenti fino a sentenza definitiva.",
+      "fonti": [
+       "Anteprima24",
+       "BeneventoNews24"
+      ]
      }
     ]
    }
@@ -3438,51 +3790,35 @@
    ],
    "articolo": {
     "aggiornato": "2026-10-20T08:28:00+02:00",
-    "cosa": "Nell'ambito della settimana della Protezione civile, Regione Campania e Prefettura di Benevento hanno provato con quattro Comuni la risposta a un terremoto.",
     "cronologia": [
      {
-      "data": "prima",
-      "fatto": "Corso di formazione per sindaci, amministratori e responsabili delle funzioni di supporto.",
-      "fonti": [
-       "LabTV"
-      ]
-     },
-     {
-      "data": "19 ott, 10:00",
-      "fatto": "Simulazione della scossa; attivati i centri operativi dei quattro Comuni e il centro intercomunale a San Leucio del Sannio.",
+      "data": "19 ottobre, 10:00",
+      "fatto": "Simulata la scossa; attivati i centri operativi dei quattro Comuni.",
       "fonti": [
        "NTR24",
-       "LabTV"
+       "Ottopagine"
       ]
      },
      {
       "data": "19 ottobre",
-      "fatto": "Evacuazione delle scuole di Apollosa, Ceppaloni e San Leucio; prove nella struttura Asl di Arpaise; ricerca di un disperso con unità cinofile; prove di radiocomunicazioni alternative.",
-      "fonti": [
-       "LabTV",
-       "NTR24"
-      ]
-     },
-     {
-      "data": "19 ottobre",
-      "fatto": "Ad Arpaise partecipa l'Esercito con mezzi per la logistica.",
+      "fatto": "Prove sul campo: scuola crollata ad Apollosa, campo con tende ad Arpaise, logistica dell'Esercito.",
       "fonti": [
        "NTR24",
-       "LabTV"
+       "Ottopagine"
       ]
      }
     ],
     "concordano": [
      {
-      "testo": "I Comuni coinvolti sono Apollosa, Arpaise, Ceppaloni e San Leucio del Sannio, con il coordinamento della Prefettura.",
+      "testo": "Hanno partecipato Apollosa, Arpaise, Ceppaloni e San Leucio del Sannio, con il coordinamento della Prefettura.",
       "fonti": [
        "NTR24",
-       "LabTV"
+       "Ottopagine"
       ]
      }
     ],
     "non_si_sa": [
-     "L'esito: i giornali non riportano una valutazione dell'esercitazione."
+     "L'esito: gli articoli non riportano una valutazione dell'esercitazione."
     ],
     "fonti": [
      {
@@ -3504,7 +3840,36 @@
       "data": "19 ott, 18:46"
      }
     ],
-    "divergono": []
+    "divergono": [],
+    "racconto": [
+     {
+      "testo": "Lunedì 19 ottobre quattro Comuni del Sannio hanno simulato un forte terremoto: Apollosa, Arpaise, Ceppaloni e San Leucio del Sannio. L'esercitazione, coordinata dalla Prefettura di Benevento, ha provato evacuazioni delle scuole, soccorso ai feriti, ricerca di dispersi e comunicazioni quando telefono e internet non funzionano.",
+      "fonti": [
+       "NTR24",
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "La scossa finta è stata «fatta» alle 10. Subito dopo si sono attivati i centri operativi comunali, le sale da cui ogni Comune dirige i soccorsi, e a San Leucio del Sannio ha lavorato il centro operativo intercomunale. In Prefettura è stata allestita la sala operativa con vigili del fuoco, forze dell'ordine e protezione civile regionale e comunale.",
+      "fonti": [
+       "NTR24",
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Ad Apollosa è stato ricostruito il crollo di una scuola, con i vigili del fuoco al lavoro; ad Arpaise è stato montato un campo base con tende per le persone evacuate. All'esercitazione ha partecipato anche l'Esercito, con il Battaglione Mezzi Mobili Campali, per la logistica.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "I quattro Comuni hanno scritto insieme un piano di protezione civile contro il rischio sismico, con un programma finanziato dalla Regione Campania. A San Leucio la dirigente regionale della protezione civile ha spiegato il senso dell'unione: «pianificare insieme per soccorrere insieme».",
+      "fonti": [
+       "Ottopagine"
+      ]
+     }
+    ]
    },
    "rilevante": false,
    "foto": "protezione-civile"
@@ -3526,30 +3891,7 @@
     }
    ],
    "articolo": {
-    "cosa": "Il Comune di Benevento rifà l'asfalto di via Cocchia e via Cavour. I lavori vanno avanti un tratto alla volta, con la strada ristretta.",
-    "cronologia": [
-     {
-      "data": "19 ottobre",
-      "fatto": "Inizio dei lavori dalla mattina, un tratto alla volta.",
-      "fonti": [
-       "Comune di Benevento"
-      ]
-     },
-     {
-      "data": "durante i lavori",
-      "fatto": "Senso unico alternato regolato da operai con la paletta e da semafori mobili; divieto di sosta con rimozione su entrambi i lati, solo per il tempo necessario in ciascun tratto.",
-      "fonti": [
-       "Comune di Benevento"
-      ]
-     },
-     {
-      "data": "31 ottobre",
-      "fatto": "Fine prevista entro la mattinata, salvo conclusione anticipata.",
-      "fonti": [
-       "Comune di Benevento"
-      ]
-     }
-    ],
+    "cronologia": [],
     "concordano": [],
     "non_si_sa": [
      "In quali giorni i lavori interesseranno ciascun tratto: il Comune non dà un calendario."
@@ -3561,7 +3903,22 @@
       "url": "https://comune.benevento.it/novita/da-luned-19-ottobre-divieti-di-sosta-in-via-cocchia-e-via-cavour-per-il-rifacimento-dellasfalto/",
       "data": "15 ott"
      }
-    ]
+    ],
+    "racconto": [
+     {
+      "testo": "Dal 19 ottobre il Comune di Benevento rifà l'asfalto di via Cocchia e via Cavour. I lavori avanzano un tratto alla volta e dovrebbero finire entro la mattina di sabato 31 ottobre, salvo conclusione anticipata.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "Nei tratti dove si lavora la strada si restringe e si passa a senso unico alternato, regolato da operai con la paletta e da semafori mobili. Su entrambi i lati scatta il divieto di sosta con rimozione dell'auto, solo per il tempo che serve in ciascun tratto.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     }
+    ],
+    "divergono": []
    },
    "rilevante": false,
    "in_vigore_fino": "2026-10-31",
@@ -3584,44 +3941,7 @@
     }
    ],
    "articolo": {
-    "cosa": "Due interventi in centro a Benevento: la pulizia straordinaria delle caditoie (le griglie di scolo dell'acqua piovana) in viale Mellusi e il restauro della Chiesa della SS. Annunziata, con un cantiere che durerà mesi.",
-    "cronologia": [
-     {
-      "data": "21 ottobre",
-      "fatto": "Viale Mellusi, tra via Meomartini e via Nicola Sala: divieto di sosta con rimozione dalle 8 alle 18 sul lato destro del senso di marcia.",
-      "fonti": [
-       "Comune di Benevento"
-      ]
-     },
-     {
-      "data": "22 ottobre",
-      "fatto": "Stesso tratto di viale Mellusi, stessi orari, sul lato sinistro.",
-      "fonti": [
-       "Comune di Benevento"
-      ]
-     },
-     {
-      "data": "dal 21 ottobre",
-      "fatto": "Piazzetta Santa Rita, accanto a via Annunziata: transito e sosta vietati a tutti, anche ai residenti con permesso ZTL Annunziata, per il cantiere della chiesa.",
-      "fonti": [
-       "Comune di Benevento"
-      ]
-     },
-     {
-      "data": "dal 21 ottobre",
-      "fatto": "Via Rampa Annunziata, dal civico 12 al 4: divieto di sosta e di fermata con rimozione, perché l'impalcatura sulla chiesa restringe la strada.",
-      "fonti": [
-       "Comune di Benevento"
-      ]
-     },
-     {
-      "data": "fine aprile 2027",
-      "fatto": "Fine prevista del cantiere in piazzetta Santa Rita, salvo conclusione anticipata.",
-      "fonti": [
-       "Comune di Benevento"
-      ]
-     }
-    ],
+    "cronologia": [],
     "concordano": [],
     "non_si_sa": [
      "Fino a quando resterà il divieto in via Rampa Annunziata: il Comune non lo indica."
@@ -3634,7 +3954,27 @@
       "data": "19 ott"
      }
     ],
-    "divergono": []
+    "divergono": [],
+    "racconto": [
+     {
+      "testo": "Mercoledì 21 e giovedì 22 ottobre, dalle 8 alle 18, in viale Mellusi a Benevento la sosta è vietata, con rimozione dell'auto, nel tratto tra via Meomartini e via Nicola Sala. Mercoledì il divieto vale sul lato destro del senso di marcia, giovedì sul lato sinistro. Serve per la pulizia straordinaria delle caditoie, le griglie dove scende l'acqua piovana.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "Da mercoledì mattina cambia anche la zona della chiesa della SS. Annunziata, dove comincia il cantiere per completare il restauro, nel progetto promosso da Soprintendenza e Ministero della Cultura. Piazzetta Santa Rita, vicino a via Annunziata, è chiusa al transito e alla sosta per tutti, anche ai residenti con autorizzazione per la ZTL Annunziata (la zona a traffico limitato). Il cantiere dovrebbe chiudere entro fine aprile 2027, salvo conclusione anticipata.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "In via Rampa Annunziata, dal civico 12 al civico 4, è vietato sostare e fermarsi, con rimozione forzata, anche per i residenti con autorizzazione ZTL. Il motivo è l'impalcatura montata sul lato sud della chiesa, che restringe la strada.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     }
+    ]
    },
    "rilevante": false,
    "foto": "divieto-sosta"
@@ -3662,36 +4002,10 @@
    ],
    "articolo": {
     "aggiornato": "2026-10-20T09:25:00+02:00",
-    "cosa": "Alla 33ª edizione, la sagra mette insieme i piatti della cucina contadina e le camminate per conoscere i boschi e il centro del paese.",
-    "cronologia": [
-     {
-      "data": "29, 30 e 31 ottobre",
-      "fatto": "Escursioni in montagna nei castagneti di Monte Drago, con ritrovo in piazza Trinità.",
-      "fonti": [
-       "Anteprima24",
-       "InfoSannioNews"
-      ]
-     },
-     {
-      "data": "31 ottobre e 1° novembre",
-      "fatto": "Passeggiate a piedi nel centro storico (trekking urbano).",
-      "fonti": [
-       "Anteprima24",
-       "InfoSannioNews"
-      ]
-     },
-     {
-      "data": "29 ottobre - 1° novembre",
-      "fatto": "Stand del Contadino in piazza San Menna con piatti della tradizione, tra cui la zuppa d'autunno con zucca, ceci e castagne.",
-      "fonti": [
-       "Anteprima24",
-       "InfoSannioNews"
-      ]
-     }
-    ],
+    "cronologia": [],
     "concordano": [
      {
-      "testo": "Organizza la Pro Loco Camposauro, con il patrocinio del Comune di Vitulano e di UNPLI Benevento; le escursioni sono con Trekking Camposauro – ASD La Dormiente.",
+      "testo": "Date, organizzatori e luoghi sono gli stessi nei due articoli.",
       "fonti": [
        "Anteprima24",
        "InfoSannioNews"
@@ -3700,7 +4014,7 @@
     ],
     "divergono": [],
     "non_si_sa": [
-     "Gli orari: gli articoli non li indicano."
+     "Gli orari delle giornate: gli articoli non li indicano."
     ],
     "fonti": [
      {
@@ -3714,6 +4028,27 @@
       "titolo": "Al via la 33ª Sagra della Castagna e del Pecorino Vitulanese dal 29 ottobre al 1° novembre",
       "url": "https://www.infosannionews.it/attualita/2026/al-via-la-33a-sagra-della-castagna-e-del-pecorino-vitulanese-dal-29-ottobre-al-1-novembre.html",
       "data": "19 ott"
+     }
+    ],
+    "racconto": [
+     {
+      "testo": "Da giovedì 29 ottobre a domenica 1° novembre Vitulano ospita la 33ª Sagra della Castagna e del Pecorino Vitulanese. La organizza la Pro Loco Camposauro, con il patrocinio e la collaborazione del Comune, di UNPLI Benevento e delle associazioni del paese.",
+      "fonti": [
+       "Anteprima24",
+       "InfoSannioNews"
+      ]
+     },
+     {
+      "testo": "Il programma punta anche sul camminare. Le escursioni nei castagneti di Monte Drago sono giovedì 29, venerdì 30 e sabato 31 ottobre; il trekking urbano, una passeggiata nel centro storico, è sabato 31 ottobre e domenica 1° novembre. Il ritrovo è in piazza Trinità e le escursioni si fanno con Trekking Camposauro – ASD La Dormiente. Per informazioni si può chiamare Giancarlo al 339 2230330 o Nicola al 339 7204416.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Per mangiare c'è lo Stand del Contadino della Pro Loco in piazza San Menna. Tra i piatti: antipasto del contadino, mezza manica del pecoraro, pennette al sugo, zuppa d'autunno con zucca, ceci e castagne, spezzatino di vitello con patate e castagne, ciambotto di rape e patate, pizzilli e montanara, con vino e bevande.",
+      "fonti": [
+       "Anteprima24"
+      ]
      }
     ]
    },
