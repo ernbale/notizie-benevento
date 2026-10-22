@@ -374,12 +374,13 @@
       var oggiF = (st[st.length - 1] || {}).data, prima7 = st.filter(function (x) { return x.data <= (fgi[fgi.length - 8] || {}).data; }).pop();
       var dalGiorno = prima7 ? " in 7 giorni" : st.length > 1 ? " dal " + giornoBreve(st[0].data) : "";
       if (!prima7 && st.length > 1 && st[0].data !== oggiF) prima7 = st[0];
-      var daFb = ((V.provenienza || []).filter(function (x) { return x.nome === "Facebook"; })[0] || {}).visite;
+      var daFb = V.da_facebook || {};
       var nf = el("div", "numeri");
       nf.appendChild(numero("Follower", num(F.follower), prima7 ? (F.follower - prima7.follower >= 0 ? "+" : "") + num(F.follower - prima7.follower) + dalGiorno : "il conto giorno per giorno parte da oggi"));
       nf.appendChild(numero("Post", num(somma(fgi, "post", 7)), "ultimi 7 giorni · " + num(somma(fgi, "post", 30)) + " in 30"));
       nf.appendChild(numero("Reazioni, commenti, condivisioni", num(somma(fgi, "interazioni", 30)), "ultimi 30 giorni"));
-      nf.appendChild(numero("Visite al sito da Facebook", V.stato === "ok" ? num(daFb || 0) : "–", "ultimi " + D.giorni + " giorni (molte risultano «Diretto»)"));
+      nf.appendChild(numero("Lettori arrivati da Facebook", V.stato === "ok" ? num(daFb.italia || 0) : "–",
+        "dall'Italia, ultimi " + D.giorni + " giorni" + (daFb.estero ? " · altre " + num(daFb.estero) + " aperture dall'estero sono i controlli automatici di Facebook" : "")));
       m.appendChild(nf);
       var gf = el("div", "griglia");
       var rpi = riquadro("Post e interazioni al giorno");
