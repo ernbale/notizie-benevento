@@ -427,6 +427,94 @@ def comuni(vecchie):
     return voci, {"comuni_letti": f"{len(COMUNI) - len(non_letti)} su {len(COMUNI)}", "comuni_non_letti": non_letti}
 
 
+POSTA_CONF = os.path.join(CARTELLA, "posta.conf")   # indirizzo e password della casella, li scrive --imposta-posta
+POSTA_SERVER = "imaps.aruba.it"
+
+
+def _testo_mail(m):
+    """Il testo di una mail (la parte di testo semplice, se no l'HTML ripulito) e quello degli allegati PDF."""
+    corpo, allegati, pdf = "", [], []
+    for parte in m.walk():
+        tipo, nome = parte.get_content_type(), parte.get_filename()
+        if nome:
+            allegati.append(nome)
+            if tipo == "application/pdf" or nome.lower().endswith(".pdf"):
+                try:   # pdftotext (poppler) se c'è sul Pi; se no l'allegato resta solo nel nome
+                    r = subprocess.run(["pdftotext", "-layout", "-", "-"], input=parte.get_payload(decode=True),
+                                       capture_output=True, timeout=30)
+                    pdf.append(f"[allegato {nome}]\n" + r.stdout.decode("utf-8", "replace"))
+                except (OSError, subprocess.SubprocessError):
+                    pass
+            continue
+        if tipo in ("text/plain", "text/html") and (not corpo or tipo == "text/plain"):
+            t = parte.get_payload(decode=True) or b""
+            t = t.decode(parte.get_content_charset() or "utf-8", "replace")
+            corpo = testo(t) if tipo == "text/html" else t
+    tutto = re.sub(r"\n{3,}", "\n\n", (corpo.strip() + "\n\n" + "\n\n".join(pdf)).strip())
+    return tutto[:TESTO_MAX], allegati
+
+
+def posta(vecchie):
+    """I comunicati arrivati a comunicati@notiziebenevento.it (Aruba): ultimi 7 giorni, casella aperta in sola lettura
+    (non si segna niente come letto). Del mittente si tengono nome e dominio, non l'indirizzo."""
+    import email
+    import email.header
+    import email.utils as eu
+    import imaplib
+    try:
+        with open(POSTA_CONF, encoding="utf-8") as f:
+            conf = json.load(f)
+    except OSError:
+        raise RuntimeError("casella non ancora collegata (manca posta.conf: fonti_casa.py --imposta-posta)") from None
+    dec = lambda x: str(email.header.make_header(email.header.decode_header(x or "")))
+    voci = []
+    with imaplib.IMAP4_SSL(conf.get("server", POSTA_SERVER), 993, timeout=60) as M:
+        M.login(conf["utente"], conf["password"])
+        M.select("INBOX", readonly=True)
+        dal = (dt.date.today() - dt.timedelta(days=7)).strftime("%d-%b-%Y")
+        _, num = M.search(None, "SINCE", dal)
+        for n in num[0].split()[-40:]:
+            _, dati = M.fetch(n, "(BODY.PEEK[])")
+            m = email.message_from_bytes(dati[0][1])
+            mid = (m.get("Message-ID") or f"{m.get('Date')}-{m.get('Subject')}").strip()
+            link = "posta:" + re.sub(r"[<>\s]", "", mid)
+            if link in vecchie:
+                continue
+            nome, indirizzo = eu.parseaddr(dec(m.get("From")))
+            try:
+                quando = eu.parsedate_to_datetime(m.get("Date")).astimezone(fuso()).isoformat(timespec="minutes")
+            except (TypeError, ValueError):
+                quando = dt.datetime.now(fuso()).isoformat(timespec="minutes")
+            corpo, allegati = _testo_mail(m)
+            voci.append({"titolo": dec(m.get("Subject")) or "(senza oggetto)", "link": link, "data": quando,
+                         "mittente": nome or indirizzo.split("@")[0], "dominio": indirizzo.rsplit("@", 1)[-1].lower(),
+                         "allegati": allegati, "testo": corpo})
+    return voci
+
+
+def imposta_posta():
+    """Chiede indirizzo e password della casella (la password non si vede), prova ad entrare e li salva sul Pi."""
+    import getpass
+    import imaplib
+    utente = input("Indirizzo della casella [comunicati@notiziebenevento.it]: ").strip() or "comunicati@notiziebenevento.it"
+    password = getpass.getpass("Password della casella (non si vede mentre la scrivi): ")
+    try:
+        with imaplib.IMAP4_SSL(POSTA_SERVER, 993, timeout=60) as M:
+            M.login(utente, password)
+            M.select("INBOX", readonly=True)
+    except Exception as e:
+        sys.exit(f"Non riesco a entrare nella casella ({type(e).__name__}): controlla indirizzo e password. Niente salvato.")
+    os.makedirs(CARTELLA, exist_ok=True)
+    vecchio = os.umask(0o077)
+    try:
+        with open(POSTA_CONF, "w", encoding="utf-8") as f:
+            json.dump({"utente": utente, "password": password, "server": POSTA_SERVER}, f)
+    finally:
+        os.umask(vecchio)
+    os.chmod(POSTA_CONF, 0o600)
+    print(f"✓ casella {utente} collegata: dal prossimo giro (ogni 30 minuti) i comunicati vanno in comunicati.json")
+
+
 PROVA = False
 FONTI = {
     "anas": ("ANAS, comunicati della Campania", ANAS_LISTA, anas, 10),
@@ -435,6 +523,8 @@ FONTI = {
     "comuni": ("I siti dei 78 Comuni della provincia, avvisi e notizie nuovi", "siti dei Comuni", comuni, 4),
     "albo": ("Albo pretorio del Comune di Benevento, ordinanze", ALBO_BN, albo_bn, 7),
     "regione": ("Regione Campania, comunicati stampa col testo", REGIONE, regione, 4),
+    "comunicati": ("Comunicati arrivati per posta a comunicati@notiziebenevento.it", "comunicati@notiziebenevento.it",
+                   posta, 7),
 }
 
 
@@ -482,6 +572,9 @@ incompleto.
 - `comuni.json`: avvisi e notizie NUOVI dei siti dei 78 Comuni della provincia, ultimi 4 giorni: `comune`,
   `primo_visto` (quando è comparso sul sito: per sapere cosa è nuovo dall'ultimo giro), `data_avviso` (la prima data
   scritta nella pagina, se c'è), `testo`. `comuni_letti` e `comuni_non_letti` dicono quali siti si sono letti.
+- `comunicati.json`: i comunicati arrivati per posta a comunicati@notiziebenevento.it, ultimi 7 giorni: `titolo` =
+  oggetto, `data` = quando è arrivata, `mittente` (nome) e `dominio` (dopo la @), `allegati`, `testo` (con quello
+  dei PDF allegati). Il `link` è «posta:…»: non è un indirizzo da citare.
 
 In ogni file: `controllato` = ultimo tentativo, `esito`, `ultima_lettura_riuscita`, `voci` (titolo, link, data,
 testo). Il `link` è quello originale da citare tra le fonti. Archivio privato: i testi restano di chi li ha scritti.
@@ -508,7 +601,10 @@ def pubblica(adesso):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--prova", action="store_true", help="scarica e stampa, senza pubblicare")
+    ap.add_argument("--imposta-posta", action="store_true", help="collega la casella dei comunicati (chiede la password)")
     a = ap.parse_args()
+    if a.imposta_posta:
+        return imposta_posta()
     global PROVA
     PROVA = a.prova
     adesso = dt.datetime.now(fuso())

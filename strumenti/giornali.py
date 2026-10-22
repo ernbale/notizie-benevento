@@ -53,11 +53,36 @@ TESTATE = [
     ("Il Mattino", True, "rss", "https://www.ilmattino.it/rss/benevento.xml", "https://www.ilmattino.it/benevento/"),
     ("TV7 Benevento", True, "casa", "tv7.json", ""),
     ("Il Caudino", False, "wp", "https://ilcaudino.it/feed/", "https://ilcaudino.it/"),
-    # società sportive: i loro comunicati sono fonte ufficiale (AGENTE.md, «Lo sport»)
+    # lo sport di NTR24 sta su un sito a parte (dal 2023 il feed sport del sito principale è fermo)
+    ("NTR24 Sport", True, "wp", "https://sport.ntr24.tv/feed/", "https://sport.ntr24.tv/"),
+    ("SannioSport", False, "wp", "https://sanniosport.it/feed/", "https://sanniosport.it/"),
+    # società sportive del Sannio con un sito che pubblica comunicati (censimento del 22 ott 2026): fonte ufficiale
     ("Benevento Calcio", True, "beneventocalcio", "https://www.beneventocalcio.club/news/1.shtml",
      "https://www.beneventocalcio.club/news/"),
+    ("Miwa Basket Benevento", True, "wp", "https://www.cestisticabenevento.it/feed/", "https://www.cestisticabenevento.it/"),
+    ("Benevento 5", True, "wp", "https://ssdbenevento5.it/feed/", "https://ssdbenevento5.it/"),
+    ("Accademia Volley Benevento", True, "wp", "https://www.accademiavolley.com/feed/", "https://www.accademiavolley.com/"),
+    ("Rugby Benevento", True, "wp", "https://beneventorugby.com/feed/", "https://beneventorugby.com/"),
+    ("Rugby IV Circolo Benevento", True, "wp", "https://www.rugbyivcircolobenevento.com/feed/",
+     "https://www.rugbyivcircolobenevento.com/"),
+    ("Apice Calcio", True, "wp", "https://www.apicecalcio1964.it/feed/", "https://www.apicecalcio1964.it/"),
+    ("Tennis Club 2002 Benevento", True, "wp", "https://www.tennisclub2002.it/feed/", "https://www.tennisclub2002.it/"),
+    ("GS Meomartini", True, "wp", "https://www.gsmeomartini.it/feed/", "https://www.gsmeomartini.it/"),
+    # leghe e federazioni: i comunicati della LND di Benevento (dilettanti) e, dai feed nazionali, solo le squadre sannite
+    ("LND Benevento", True, "wp",
+     "https://campania.lnd.it/category/comunicati-ufficiali-2026-2027/delegazioni-provinciali-comunicati-ufficiali-2026-2027/"
+     "delegaz-prov-di-benevento-delegazioni-provinciali-comunicati-ufficiali-2026-2027/feed/",
+     "https://campania.lnd.it/comunicati-ufficiali-deleg-prov-di-benevento-2026-2027/"),
+    ("Divisione Calcio a 5", True, "wp-sannio", "https://divisionecalcioa5.it/feed/", "https://divisionecalcioa5.it/"),
+    ("Federazione Pallamano", True, "wp-sannio", "https://www.federhandball.it/feed/", "https://www.federhandball.it/"),
+    ("Federazione Rugby", True, "wp-sannio", "https://federugby.it/feed/", "https://federugby.it/"),
 ]
-UFFICIALI = {"Benevento Calcio"}   # fonti ufficiali (regola 2): bastano da sole
+# fonti ufficiali (regola 2: bastano da sole). ⛔ FIPAV (pallavolo): i suoi siti vietano la lettura automatica
+UFFICIALI = {"Benevento Calcio", "Miwa Basket Benevento", "Benevento 5", "Accademia Volley Benevento", "Rugby Benevento",
+             "Rugby IV Circolo Benevento", "Apice Calcio", "Tennis Club 2002 Benevento", "GS Meomartini", "LND Benevento",
+             "Divisione Calcio a 5", "Federazione Pallamano", "Federazione Rugby"}
+SANNIO = re.compile(r"benevent|sanni|telese|montesarchio|airola|apice|ceppaloni|paduli|morcone|cerreto|"
+                    r"san giorgio del sannio|sant'agata|solopaca|vitulano|faicchio|cusano", re.I)
 
 # parole che non dicono di quale fatto si parla
 VUOTE = set("""benevento sannio sannita sanniti provincia provinciale comune comunale citta oggi domani ieri anche ancora
@@ -127,7 +152,7 @@ def voci_rss(testo):
 
 def leggi_feed(tipo, url, dal_contesto):
     """Le voci di un feed; per WordPress va alle pagine dopo finché non arriva a quelle più vecchie del contesto."""
-    voci, pagine = [], 4 if tipo.startswith("wp") else 1
+    voci, pagine = [], 4 if tipo in ("wp", "wp-benevento") else 1
     for n in range(1, pagine + 1):
         u = url if n == 1 else f"{url}{'&' if '?' in url else '?'}paged={n}"
         try:
@@ -142,6 +167,8 @@ def leggi_feed(tipo, url, dal_contesto):
             break
     if tipo == "wp-benevento":   # Anteprima24 è di tutta la Campania: solo la sezione Benevento
         voci = [v for v in voci if "/benevento/" in v["url"]]
+    elif tipo == "wp-sannio":    # feed nazionali (leghe, federazioni): solo i titoli con squadre o paesi del Sannio
+        voci = [v for v in voci if SANNIO.search(v["titolo"])]
     return voci
 
 

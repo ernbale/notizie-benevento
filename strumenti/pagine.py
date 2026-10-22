@@ -257,6 +257,80 @@ def immagine_generica(path):
     im.save(path, optimize=True)
 
 
+def immagine_ig(sito, n):
+    """L'immagine per Instagram (img/ig/<id>.jpg, 1080×1350, il formato verticale del feed): testata, la foto
+    illustrativa se la notizia ce l'ha (con la scritta che è fatta con l'IA), sezione, titolo grande e, senza foto,
+    anche il riassunto. Si rifà solo se cambia qualcosa (impronta nel commento del JPEG)."""
+    from PIL import Image, ImageDraw
+    W, H = 1080, 1350
+    occ, foto = _categoria(n), foto_tema(n)
+    impronta = hashlib.sha1(json.dumps([n["titolo"], occ, n.get("luogo"), n.get("sintesi"), foto, 1],
+                                       ensure_ascii=False).encode()).hexdigest()[:10]
+    rel = f"img/ig/{n['id']}.jpg"
+    full = os.path.join(sito, rel)
+    try:
+        with Image.open(full) as vecchia:
+            if (vecchia.info.get("comment") or b"").decode(errors="ignore") == impronta:
+                return rel
+    except (OSError, ValueError):
+        pass
+    im = Image.new("RGB", (W, H), "#fdeedd")
+    d = ImageDraw.Draw(im)
+    _testata(d, W)
+    x, larg = 60, W - 120
+    y = 190
+    if foto and os.path.exists(os.path.join(sito, foto.lstrip("/"))):
+        with Image.open(os.path.join(sito, foto.lstrip("/"))) as f:
+            f = f.convert("RGB")
+            alto_foto = 600
+            r = max(W / f.width, alto_foto / f.height)
+            f = f.resize((round(f.width * r), round(f.height * r)))
+            sx, sy = (f.width - W) // 2, (f.height - alto_foto) // 2
+            im.paste(f.crop((sx, sy, sx + W, sy + alto_foto)), (0, y))
+        nota = "Immagine illustrativa creata con l'intelligenza artificiale"
+        fn = _font(FONT_BOLD, 22)
+        d.rectangle([0, y + alto_foto - 40, fn.getlength(nota) + 40, y + alto_foto], fill="#111111")
+        d.text((20, y + alto_foto - 20), nota, font=fn, fill="#ffffff", anchor="lm")
+        y += alto_foto + 50
+    else:
+        y += 50
+    fo = _font(FONT_BOLD, 30)
+    d.text((x, y), occ.upper(), font=fo, fill="#c4161c", anchor="lm")
+    if n.get("luogo"):
+        d.text((x + fo.getlength(occ.upper()) + 18, y), breve(n["luogo"], 40).upper(), font=fo, fill="#5b5249", anchor="lm")
+    y += 44
+    basso = H - 110
+    spazio = (basso - y) if foto else (basso - y) * 0.62   # senza foto: sotto il titolo c'è il riassunto
+    for size in range(92 if not foto else 70, 40, -2):
+        ft = _font(FONT_BOLD, size)
+        righe = _a_capo(n["titolo"], ft, larg)
+        if len(righe) * size * 1.14 <= spazio:
+            break
+    else:
+        righe = righe[:max(1, int(spazio // (42 * 1.14)))]
+        righe[-1] += "…"
+    for rg in righe:
+        d.text((x, y), rg, font=ft, fill="#111111")
+        y += size * 1.14
+    if not foto and n.get("sintesi"):
+        y += 24
+        fs = _font(FONT_BOLD, 34)
+        rr = _a_capo(n["sintesi"], fs, larg)
+        massimo = max(0, int((basso - y) // (34 * 1.3)))
+        if len(rr) > massimo:
+            rr = rr[:massimo]
+            if rr:
+                rr[-1] = rr[-1].rstrip(",;:.") + "…"
+        for rg in rr:
+            d.text((x, y), rg, font=fs, fill="#5b5249")
+            y += 34 * 1.3
+    d.rectangle([0, H - 14, W, H], fill="#c4161c")
+    d.text((x, H - 56), "Leggi tutto su notiziebenevento.it", font=_font(FONT_BOLD, 30), fill="#111111", anchor="lm")
+    os.makedirs(os.path.dirname(full), exist_ok=True)
+    im.save(full, "JPEG", quality=88, optimize=True, comment=impronta.encode())
+    return rel
+
+
 def immagine_notizia(sito, n, tipo):
     """Percorso dell'immagine (sul sito) della notizia: si rifà solo se cambiano titolo, sezione, luogo o fonti.
     Il nome resta sempre lo stesso: Facebook si tiene l'indirizzo dell'immagine letto quando esce il post, e se
@@ -813,6 +887,21 @@ def main():
 
     mappa.insert(0, (SITO + "/", prima.get("aggiornato")))
     mappa.insert(1, (SITO + "/meteo.html", adesso.isoformat(timespec="minutes")))
+
+    # immagini per Instagram: solo le notizie della prima pagina delle ultime 48 ore (strumenti/instagram.py)
+    if con_immagini:
+        usate_ig = set()
+        for x in prima.get("notizie", []):
+            try:
+                t = dt.datetime.fromisoformat(str(x.get("pubblicato")))
+                t = t if t.tzinfo else t.replace(tzinfo=adesso.tzinfo)
+            except ValueError:
+                continue
+            if adesso - t <= dt.timedelta(hours=48):
+                usate_ig.add(immagine_ig(sito, x))
+        for f in glob.glob(os.path.join(sito, "img", "ig", "*.jpg")):
+            if os.path.relpath(f, sito).replace(os.sep, "/") not in usate_ig:
+                os.remove(f)
 
     # immagini non più usate; quelle col nome di prima (<id>-<impronta>.png, fino al 21 ott 2026) restano finché c'è
     # la notizia, perché i post di Facebook usciti fino ad allora puntano lì (quelle dei post sono anche nel repository)

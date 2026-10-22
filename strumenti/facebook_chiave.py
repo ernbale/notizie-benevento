@@ -7,7 +7,8 @@ Si lancia una volta sola, dal Terminale del Mac (serve `gh` collegato a GitHub):
 
 Chiede l'ID dell'app, la sua chiave segreta e il token utente del Graph API Explorer (con i permessi
 pages_show_list, pages_read_engagement, pages_manage_posts, read_insights e pages_read_user_content: gli ultimi
-due servono alle statistiche, chi vede i post e i commenti). Poi:
+due servono alle statistiche, chi vede i post e i commenti; per Instagram anche instagram_basic e
+instagram_content_publish). Poi:
   token utente breve → token utente lungo (60 giorni) → token della Pagina, che da un token lungo non scade
   → controlla nome della Pagina, permessi e scadenza → lo salva in GitHub.
 Le chiavi non si vedono mentre si incollano e non si stampano mai: a schermo solo gli esiti.
@@ -26,6 +27,7 @@ PAGINA = "Notizie Benevento"
 REPO = "ernbale/notizie-benevento"
 PERMESSI = {"pages_show_list", "pages_read_engagement", "pages_manage_posts", "read_insights",
             "pages_read_user_content"}
+INSTAGRAM = {"instagram_basic", "instagram_content_publish"}   # per strumenti/instagram.py (facoltativi)
 
 
 def get(percorso, **par):
@@ -55,7 +57,7 @@ def main():
         sys.exit("Facebook non ha allungato il token utente.")
     print("✓ token utente allungato")
 
-    pagine = get("me/accounts", fields="name,access_token", access_token=lungo).get("data", [])
+    pagine = get("me/accounts", fields="id,name,access_token", access_token=lungo).get("data", [])
     pag = next((p for p in pagine if p.get("name") == PAGINA), None)
     if not pag:
         sys.exit(f"La Pagina «{PAGINA}» non è nell'elenco: nel Graph API Explorer va scelta e autorizzata.")
@@ -68,6 +70,13 @@ def main():
     scade = info.get("expires_at", 1)
     print(f"✓ token della Pagina «{pag['name']}», permessi a posto, scadenza: "
           + ("mai" if scade == 0 else "ATTENZIONE, scade"))
+    if INSTAGRAM <= set(info.get("scopes", [])):
+        ig = get(pag["id"] if "id" in pag else "me", fields="instagram_business_account{username}",
+                 access_token=token).get("instagram_business_account")
+        print(f"✓ Instagram: account @{ig['username']} collegato alla Pagina" if ig else
+              "✗ Instagram: permessi a posto, ma alla Pagina non è collegato nessun account Instagram professionale")
+    else:
+        print("- Instagram: permessi non chiesti (" + ", ".join(sorted(INSTAGRAM)) + "): su Instagram non si pubblica")
     if scade != 0:
         sys.exit("Il token scade: qualcosa non è andato, non lo salvo.")
 
