@@ -16,8 +16,8 @@ quello nuovo.
    Alto Calore, GESESA, EAV, AIR Campania, RFI, Regione Campania). Due
    articoli dello stesso giornale contano come una fonte.
    **Eccezione: un solo giornale autorevole** (voluta dal proprietario il 21 ottobre 2026, estesa alla politica il
-   22 ottobre). Un fatto delle categorie `cronaca`, `strade`, `altro` e `politica` (per la politica vale sempre la
-   regola 9) riportato da **una sola** di queste testate può uscire con `"stato": "una_fonte"`: Il Mattino (Benevento), Il Sannio Quotidiano, NTR24, Ottopagine, Anteprima24, Lab TV, Cronache del Sannio, BeneventoNews24, TV7 Benevento. Prima fai una ricerca mirata per trovare la seconda fonte.
+   22 ottobre). Un fatto delle categorie `cronaca`, `strade`, `altro`, `sport` e `politica` (per la politica vale
+   sempre la regola 9) riportato da **una sola** di queste testate può uscire con `"stato": "una_fonte"`: Il Mattino (Benevento), Il Sannio Quotidiano, NTR24, Ottopagine, Anteprima24, Lab TV, Cronache del Sannio, BeneventoNews24, TV7 Benevento. Prima fai una ricerca mirata per trovare la seconda fonte.
    Il sito mostra da solo la scritta «Una sola fonte» e il nome del giornale. Non vale mai per: allerte,
    eventi, notizie `rilevante`, fatti scritti solo da altre testate (Infosannio, Fremondoweb, Gazzetta di Benevento,
    Benevento Giornale, Il Caudino: con loro servono due testate). Appena una seconda testata riporta il fatto,
@@ -182,6 +182,28 @@ ufficiale da cui viene (Comune, EAV, AIR, Alto Calore…, nei loro feed e pagine
 
 **Ricerche mirate (almeno 4 per giro, più una per ogni storia in corso):** fatti trovati in un solo giornale (per cercare la seconda fonte),
 «Benevento oggi», «Sannio incidente», «strada chiusa provincia Benevento».
+
+## Lo sport (categoria `sport`)
+
+Dal 22 ottobre 2026 il sito ha la sezione **Sport** (voluta dal proprietario: «tutto lo sport: calcio, rugby, pallavolo,
+basket, scherma, tutto»). Ogni notizia di sport ha `"categoria": "sport"` e `"sport"` con la disciplina: `calcio`,
+`calcio_a_5`, `basket`, `pallavolo`, `rugby`, `scherma`, `atletica`, `tennis`, `ciclismo`, `nuoto`, oppure `altro`
+(ciclismo su strada, motori, arti marziali, nuoto… quando non c'è la voce sua).
+- **Cosa entra:** il Benevento Calcio e tutte le squadre e gli atleti della provincia, di ogni sport e categoria,
+  maschili e femminili, compresi i dilettanti e i giovani che vincono qualcosa: risultati e marcatori, classifiche,
+  infortuni e squalifiche comunicati dalla società o dalla lega, cambi di allenatore, biglietti, orari e campo delle
+  partite, gare e tornei che si giocano nel Sannio, atleti sanniti che vincono fuori.
+- **Cosa resta fuori:** voci di calciomercato e indiscrezioni non confermate (`voce_non_confermata`), pagelle,
+  commenti e opinioni, interviste senza fatti, sport nazionale senza squadre o atleti del Sannio (`fuori_provincia`).
+- **Fonti:** le regole di sempre (regola 2: basta anche una sola testata autorevole). In più sono **fonti
+  ufficiali** il sito e i comunicati della società, della lega o della federazione (Lega B, FIGC, FIP, FIPAV, FIR,
+  Federscherma…) per risultati, classifiche, calendari e comunicati.
+- **Titolo:** squadra o atleta, il fatto, il dato che conta («Benevento-Avellino 2-1: decide Lanini al 90'»).
+  Niente toni da tifoso, niente «impresa», «disfatta», «capolavoro».
+- **In prima pagina** lo sport sta nel riquadro «Sport» della colonna di destra e nella pagina Sport, non in mezzo
+  alla cronaca. `rilevante: true` solo per un fatto che riguarda tutta la città (una promozione, disordini allo
+  stadio, una chiusura di strade per una partita): allora va anche tra le notizie principali.
+- Niente `immagine` di temi non sportivi; se non c'è un tema adatto in img/temi/temi.json, niente immagine.
 
 ## Le Allerte (categoria `meteo`)
 
@@ -441,7 +463,8 @@ aggiorni a ogni giro, come notizie.json.
   "notizie": [ {
     "id": "parole-chiave-con-trattini (stabile, non cambia mai, unico anche rispetto all'archivio)",
     "titolo": "", "titolo_google": "45-60 caratteri: paese e fatto (regola al punto 4)", "sintesi": "2-3 frasi",
-    "categoria": "strade|cronaca|meteo|politica|eventi|altro",
+    "categoria": "strade|cronaca|meteo|politica|sport|eventi|altro",
+    "sport": "solo per categoria sport: calcio|calcio_a_5|basket|pallavolo|rugby|scherma|atletica|tennis|ciclismo|nuoto|altro",
     "zona": "benevento|telesina|caudina|fortore|provincia",
     "immagine": "tema da img/temi/temi.json (facoltativo, mai per la cronaca)",
     "luogo": "paese o località", "pubblicato": "ISO dell'articolo fonte più recente, oppure solo AAAA-MM-GG se l'ora non è scritta",
@@ -475,6 +498,7 @@ aggiorni a ogni giro, come notizie.json.
 - `fonti` della notizia (quelle in prima pagina): una per testata, l'articolo più recente.
 - `rilevante` c'è sempre, come `true` o `false` (booleano, non testo).
 - La categoria `meteo` sul sito si chiama **«Allerte»**: vedi la sezione «Le Allerte» sopra.
+- La categoria `sport` vuole anche il campo `sport` (la disciplina): vedi «Lo sport».
 - Per gli **avvisi ufficiali con una scadenza** (strade chiuse, lavori, divieti, ordinanze su scuole o acqua) scrivi
   `in_vigore_fino` con la data presa dal comunicato: restano in prima pagina finché vale l'avviso. Se il comunicato
   non dà una fine, non mettere il campo.
@@ -542,8 +566,9 @@ mette in `diario/AAAA-MM-GG.json`; le notizie nuove e aggiornate, le fonti e le 
   `{}` se l'elenco è vuoto. `archivia.py` controlla che ci siano tutte, che la notizia «nuova» sia nata in questo
   giro e che quella «aggiornata» sia cambiata davvero. I soli motivi per scartare un fatto dei giornali:
   `fuori_provincia`, `vecchia`, `una_fonte_non_autorevole` (solo testate non autorevoli e nessuna conferma),
-  `politica_senza_effetti` (regola 9), `pubblicita`, `non_notizia` (opinioni, rubriche, ricorrenze, sport,
-  telegiornali), `non_leggibile` (l'articolo non si apre). `nota` (facoltativa) dice il perché in breve. Nella pagina
+  `politica_senza_effetti` (regola 9), `pubblicita`, `non_notizia` (opinioni, rubriche, ricorrenze, telegiornali),
+  `voce_non_confermata` (indiscrezioni, calciomercato), `non_leggibile` (l'articolo non si apre). Lo sport del Sannio
+  non si scarta: ha la sua sezione (vedi «Lo sport»). `nota` (facoltativa) dice il perché in breve. Nella pagina
   privata le scartate dei giornali compaiono da sole con il titolo e il link: in `scartate` metti solo quelle che
   vengono da altre fonti (ufficiali, Comuni, ricerche).
 - In `scartate` va **ogni fatto che hai considerato e non hai pubblicato**: una sola fonte non verificabile, fuori
