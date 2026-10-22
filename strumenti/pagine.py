@@ -425,7 +425,7 @@ def html_chi_siamo():
     h += ("<h3>Come sono scritti gli articoli</h3>"
           "<p>I testi sono scritti con l'intelligenza artificiale partendo dagli articoli citati, con regole precise: ogni "
           "frase viene da una fonte, e date, numeri e nomi sono quelli degli originali. Le foto illustrative sono create "
-          "con l'intelligenza artificiale e lo dicono sotto l'immagine. Il sito si aggiorna ogni 2 ore, dalle 6 alle 22.</p>")
+          "con l'intelligenza artificiale e lo dicono sotto l'immagine. Il sito si aggiorna ogni ora, dalle 6 alle 22.</p>")
     h += ('<h3>Meteo e allerte</h3><p>Le <a href="/meteo.html">previsioni</a> mettono insieme 8 modelli dei servizi '
           "meteo nazionali ed europei. Per le allerte valgono solo gli avvisi ufficiali del Centro funzionale della "
           "Regione Campania e della Protezione civile.</p>")

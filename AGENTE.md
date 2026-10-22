@@ -46,7 +46,11 @@ quello nuovo.
 
 ## Cosa leggere a ogni giro
 
-I giri sono ogni 2 ore e sono **tutti completi**: a ogni giro leggi tutto quello che segue, Comuni compresi.
+I giri sono **ogni ora** e sono **tutti completi**: a ogni giro leggi tutto quello che segue, Comuni compresi.
+**Arrivare prima degli altri:** un fatto che ha già le fonti che servono (regole 2 e 3) esce **in questo giro**, con
+quello che si sa, senza aspettare il giro dopo per avere tutti i dettagli: quelli che arrivano dopo si aggiungono con
+l'«aggiornamento» (vedi «Quando aggiorni una notizia già uscita»). Prima le notizie nuove, poi eventi e ritocchi.
+Le regole non cambiano: nel dubbio, una notizia in meno.
 Lavora in parallelo (6-8 letture insieme). Per ogni fonte tieni nota: letta / non raggiungibile / cosa c'era.
 
 **Fonti ufficiali (sempre):**
