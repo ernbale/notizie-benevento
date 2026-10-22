@@ -40,7 +40,8 @@ quello nuovo.
 7. **Testo tuo, mai copiato.** Non riprendere frasi dei giornali (al massimo citazioni brevi tra virgolette,
    attribuite). Niente foto dei giornali. I **titoli degli articoli fonte** nell'elenco fonti restano esatti
    (unica eccezione: il nome di un minore, vedi regola 3).
-8. **Nel dubbio, non pubblicare.** Meglio una notizia in meno che una sbagliata.
+8. **Nel dubbio, non pubblicare.** Meglio una notizia in meno che una sbagliata. Il dubbio è sul **fatto** (è vero? è
+   confermato?), non sulla sua importanza: un fatto locale vero e ben documentato esce anche se è piccolo.
 9. **Politica locale solo se cambia qualcosa per la gente:** delibere, soldi stanziati, scuole, servizi, tasse,
    strade, decisioni di Consigli e Giunte. Niente comunicati di partito, scontri tra maggioranza e opposizione,
    mozioni bocciate o dichiarazioni senza effetti pratici.
