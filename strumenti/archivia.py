@@ -8,7 +8,9 @@ Nessuna notizia viene mai cancellata:
 - un approfondimento passa in archivio quando ha `"archiviato": true` o non è aggiornato da più di 7 giorni;
 - archivio/indice.json si rifà ogni volta da tutti i mesi (serve alla ricerca e ai link vecchi).
 
-Uso:  python3 strumenti/archivia.py            controlla, archivia e scrive i file
+Uso:  python3 strumenti/archivia.py --giro     (l'agente, a fine giro) in più controlla il registro delle fonti
+                                               /tmp/fonti.txt e mette in `aggiornato` l'ora di adesso
+      python3 strumenti/archivia.py            controlla, archivia e scrive i file
       python3 strumenti/archivia.py --prova    controlla e dice cosa farebbe, senza scrivere
       python3 strumenti/archivia.py --oggi 2026-10-25   (solo per le prove)
 Esce con codice 1, senza scrivere niente, se trova un errore.
@@ -75,6 +77,56 @@ NOMI_MESI = "|".join(MESI)
 MOMENTI = [("notte", "23:30"), ("alba", "06:00"), ("tarda mattinata", "11:30"), ("mattin", "09:00"),
            ("mezzogiorno", "12:00"), ("pomeriggio", "15:00"), ("sera", "20:00")]
 QUANDO = re.compile(r"^\d{4}-\d{2}-\d{2}(T\d{2}:\d{2})?$")
+
+
+# Il registro delle fonti del giro (/tmp/fonti.txt, una riga «nome | letta / non raggiungibile / vuota | novità»):
+# con --giro archivia.py non chiude il giro se manca una fonte (22 ott 2026: un giro l'aveva saltato).
+FONTI_GIRO = [  # (nome da scrivere nel registro, pezzi che lo riconoscono anche scritto in altro modo)
+    ("Comune di Benevento", ["comunedibenevento", "comunebenevento"]), ("Provincia di Benevento", ["provincia"]),
+    ("ANAS", ["anas"]), ("INGV", ["ingv"]), ("San Marco dei Cavoti", ["sanmarco"]), ("ASL Benevento", ["asl"]),
+    ("Ospedale San Pio", ["sanpio"]), ("Alto Calore", ["altocalore"]), ("GESESA", ["gesesa"]),
+    ("Prefettura", ["prefettura"]), ("Questura", ["questura"]), ("EAV", ["eav"]), ("AIR Campania", ["aircampania"]),
+    ("RFI", ["rfi"]),
+    ("Ottopagine", ["ottopagine"]), ("Il Sannio Quotidiano", ["sannioquotidiano"]), ("NTR24", ["ntr24"]),
+    ("Lab TV", ["labtv"]), ("Cronache del Sannio", ["cronachedelsannio", "sannionews24"]), ("Fremondoweb", ["fremondo"]),
+    ("Gazzetta di Benevento", ["gazzetta"]), ("Anteprima24", ["anteprima"]), ("InfoSannio", ["infosannio"]),
+    ("Benevento Giornale", ["beneventogiornale"]), ("BeneventoNews24", ["beneventonews"]), ("Il Mattino", ["mattino"]),
+    ("TV7 Benevento", ["tv7"]), ("Il Caudino", ["caudino"]),
+]
+
+
+def controlla_registro(percorso, err):
+    def norma(x):
+        import unicodedata
+        x = unicodedata.normalize("NFKD", x).encode("ascii", "ignore").decode().lower()
+        return re.sub(r"[^a-z0-9]", "", x)
+    try:
+        with open(percorso, encoding="utf-8") as f:
+            righe = [r.strip() for r in f if r.strip()]
+    except OSError:
+        err.append(f"manca il registro delle fonti {percorso}: scrivi una riga per fonte, «nome | letta / non "
+                   "raggiungibile / vuota | cosa c'era di nuovo» (i nomi sono in AGENTE.md, «Il registro delle fonti»)")
+        return
+    voci = []
+    for r in righe:
+        pezzi = [x.strip() for x in r.split("|")]
+        if len(pezzi) < 2:
+            continue
+        voci.append((norma(pezzi[0]), pezzi[1].lower(), r.lower()))
+        stato = pezzi[1].lower()
+        if not stato.startswith(("letta", "non raggiungibile", "vuota")):
+            err.append(f"registro delle fonti: stato {pezzi[1]!r} per {pezzi[0]!r} (scrivi letta, non raggiungibile o vuota)")
+        elif stato.startswith("non raggiungibile") and not any(k in r.lower() for k in ("riprov", "copia di casa ferma")):
+            err.append(f"registro delle fonti: {pezzi[0]!r} non raggiungibile senza secondo tentativo: riprova con un altro "
+                       "indirizzo (home, sezione, feed, http) e scrivi «riprovato con …»")
+    mancano = [nome for nome, pezzi in FONTI_GIRO if not any(any(p in v[0] for p in pezzi) for v in voci)]
+    if mancano:
+        err.append(f"registro delle fonti: {'manca 1 fonte' if len(mancano) == 1 else f'mancano {len(mancano)} fonti'}: "
+                   f"{', '.join(mancano)}. Leggile e aggiungi una riga per ognuna, col nome scritto così")
+    comuni = any("comuni" in v[0] for v in voci) or sum(v[0].startswith("comune") for v in voci) >= 19
+    if not comuni:
+        err.append("registro delle fonti: manca la riga dei Comuni (file comuni.json da casa, oppure i 19 Comuni a mano, "
+                   "una riga per Comune)")
 
 
 def chiave_momento(c, rif):
@@ -448,6 +500,9 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--prova", action="store_true", help="non scrive niente")
     ap.add_argument("--oggi", help="data AAAA-MM-GG da usare al posto di oggi (prove)")
+    ap.add_argument("--giro", action="store_true", help="fine del giro dell'agente: controlla il registro delle fonti "
+                    "e mette l'ora di adesso in «aggiornato»")
+    ap.add_argument("--registro", default="/tmp/fonti.txt", help="il registro delle fonti del giro")
     ap.add_argument("--cartella", default=os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     a = ap.parse_args()
     base = a.cartella
@@ -473,6 +528,8 @@ def main():
         except Exception:
             adesso_roma = None
     controlla(d, err, avv, adesso_roma)
+    if a.giro:
+        controlla_registro(a.registro, err)
     p_eventi = os.path.join(base, "eventi.json")
     try:
         ev = leggi(p_eventi)
@@ -546,6 +603,8 @@ def main():
         sys.exit(1)
 
     # L'ora dei riquadri «Aggiornamento» e i fatti in ordine di tempo: li fa il programma, così non si sbagliano.
+    if a.giro:   # il sito dice a che ora è stato controllato l'ultima volta, anche quando non c'è niente di nuovo
+        d["aggiornato"] = (adesso_roma or dt.datetime.now(dt.timezone.utc).astimezone()).isoformat(timespec="minutes")
     segna_aggiornamenti(d, pubblicate_prima(base), adesso_roma or dt.datetime.now(dt.timezone.utc).astimezone(), avv)
     for x in d["notizie"] + d["approfondimenti"]:
         crono = x.get("cronologia") if "sommario" in x else (x.get("articolo") or {}).get("cronologia")
