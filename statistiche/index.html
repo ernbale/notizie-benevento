@@ -89,6 +89,32 @@
   td a:hover { color: var(--blu); text-decoration: underline; }
   td .perc { display: block; font-size: 12px; color: var(--grigio); }
 
+  /* le due schede: i numeri e «Dietro le quinte» */
+  .schede { display: flex; gap: 6px; margin-top: 16px; border-bottom: 1px solid var(--riga); }
+  .schede button { font: 600 15px var(--sans); background: none; border: 0; border-bottom: 3px solid transparent; padding: 8px 12px; cursor: pointer; color: var(--grigio); }
+  .schede button.attiva { color: var(--nero); border-bottom-color: var(--rosso); }
+  /* dietro le quinte: un riquadro per giro */
+  .giro { background: var(--scheda); border: 1px solid var(--riga); border-radius: 6px; padding: 14px 16px; margin-top: 12px; }
+  .giro > summary { cursor: pointer; list-style: none; }
+  .giro > summary::-webkit-details-marker { display: none; }
+  .giro .testa { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px; }
+  .giro .quando { font: 700 18px var(--serif); }
+  .giro .durata { font-size: 13px; color: var(--grigio); }
+  .giro .bollo { font: 600 12px var(--sans); padding: 1px 8px; border-radius: 10px; background: rgba(17, 17, 17, .06); }
+  .giro .bollo.nuove { background: rgba(46, 107, 63, .14); color: var(--verde); }
+  .giro .bollo.agg { background: rgba(29, 79, 145, .12); color: var(--blu); }
+  .giro .bollo.scart { background: rgba(196, 22, 28, .12); color: var(--rosso); }
+  .giro .bollo.err { background: var(--rosso); color: #fff; }
+  .giro .riassunto { margin: 8px 0 0; font-size: 15px; }
+  .giro h4 { font: 700 12px var(--sans); text-transform: uppercase; letter-spacing: .6px; margin: 14px 0 6px; }
+  .giro h4.scart { color: var(--rosso); }
+  .giro ul { margin: 0; padding-left: 18px; font-size: 14px; }
+  .giro li { margin: 4px 0; }
+  .giro .perche { color: var(--grigio); }
+  .giro details.dentro { margin-top: 10px; font-size: 14px; }
+  .giro details.dentro summary { cursor: pointer; font-weight: 600; }
+  .giro .ko { color: var(--rosso); font-weight: 600; }
+
   footer { margin-top: 40px; font-size: 13px; color: var(--grigio); border-top: 1px solid var(--riga); padding-top: 12px; }
   @media (max-width: 560px) { header .nome { font-size: 24px; } .numero .v { font-size: 30px; } h2 { font-size: 22px; } }
   @media (prefers-reduced-motion: no-preference) { .barre .fila span { transition: width .4s ease; } }
@@ -232,10 +258,27 @@
 
   // ---------- il cruscotto ----------
   function disegna(D) {
-    var m = document.getElementById("cruscotto");
-    m.textContent = "";
+    var radice = document.getElementById("cruscotto");
+    radice.textContent = "";
     document.getElementById("lucchetto").hidden = true;
-    m.hidden = false;
+    radice.hidden = false;
+    // due schede: i numeri del sito e «Dietro le quinte» (cosa fa l'agente); la scelta resta su questo dispositivo
+    var m = el("div", "vista"), mq = el("div", "vista"), nav = el("nav", "schede");
+    [["Numeri", m], ["Dietro le quinte", mq]].forEach(function (sc, i) {
+      var b = el("button", "", sc[0]);
+      b.type = "button";
+      b.addEventListener("click", function () {
+        m.hidden = sc[1] !== m; mq.hidden = sc[1] !== mq;
+        [].forEach.call(nav.children, function (x) { x.classList.toggle("attiva", x === b); });
+        try { localStorage.setItem("nb-statistiche-scheda", String(i)); history.replaceState(null, "", i ? "#dietro-le-quinte" : location.pathname); } catch (e) {}
+      });
+      nav.appendChild(b);
+    });
+    radice.appendChild(nav); radice.appendChild(m); radice.appendChild(mq);
+    disegnaAgente(mq, D);
+    var scelta = location.hash === "#dietro-le-quinte" ? 1 : 0;
+    try { if (location.hash !== "#dietro-le-quinte") scelta = +localStorage.getItem("nb-statistiche-scheda") || 0; } catch (e) {}
+    nav.children[scelta === 1 ? 1 : 0].click();
     var agg = document.getElementById("agg");
     agg.textContent = "Aggiornato " + new Date(D.aggiornato).toLocaleString("it-IT", { timeZone: "Europe/Rome", day: "numeric", month: "long", hour: "2-digit", minute: "2-digit" });
     var esci = el("button", "", "Esci");
@@ -455,6 +498,111 @@
     rf.appendChild(el("p", "nota", "In quante notizie compare ciascuna fonte. L'ultimo giro dell'agente ha letto " + num(S.giornali_letti) + " giornali."));
     gs.appendChild(rf);
     m.appendChild(gs);
+  }
+
+  // ---------- dietro le quinte: il diario dell'agente ----------
+  function oraIt(iso, conGiorno) {
+    var d = new Date(iso);
+    if (isNaN(d)) return "–";
+    var o = d.toLocaleTimeString("it-IT", { timeZone: "Europe/Rome", hour: "2-digit", minute: "2-digit" });
+    if (!conGiorno) return o;
+    var g = function (x) { return x.toLocaleDateString("sv-SE", { timeZone: "Europe/Rome" }); };
+    var oggi = new Date(), domani = new Date(Date.now() + 864e5);
+    return (g(d) === g(oggi) ? "oggi" : g(d) === g(domani) ? "domani" : d.toLocaleDateString("it-IT", { timeZone: "Europe/Rome", day: "numeric", month: "short" })) + " alle " + o;
+  }
+  function giornoLungo(g) {
+    var d = new Date(g + "T12:00:00Z");
+    return d.toLocaleDateString("it-IT", { timeZone: "Europe/Rome", weekday: "long", day: "numeric", month: "long" });
+  }
+  function elenco(titolo, righe, cls, fare) {
+    var f = document.createDocumentFragment();
+    f.appendChild(el("h4", cls || "", titolo));
+    var ul = el("ul");
+    righe.forEach(function (r) { ul.appendChild(fare(r)); });
+    f.appendChild(ul);
+    return f;
+  }
+  function schedaGiro(g, aperta) {
+    var box = el("details", "giro");
+    if (aperta) box.open = true;
+    var sm = el("summary"), testa = el("div", "testa");
+    testa.appendChild(el("span", "quando", giornoLungo(g.giorno) + " · " + (g.ora || "")));
+    if (g.durata_min != null && g.durata_min > 0) testa.appendChild(el("span", "durata", String(g.durata_min).replace(".", ",") + " min"));
+    if (g.errore) testa.appendChild(el("span", "bollo err", g.errore));
+    var nn = (g.nuove || []).length, na = (g.aggiornate || []).length, ns = (g.scartate || []).length;
+    testa.appendChild(el("span", "bollo nuove", nn + (nn === 1 ? " nuova" : " nuove")));
+    testa.appendChild(el("span", "bollo agg", na + (na === 1 ? " aggiornata" : " aggiornate")));
+    testa.appendChild(el("span", "bollo scart", ns + (ns === 1 ? " scartata" : " scartate")));
+    sm.appendChild(testa);
+    if (g.riassunto) sm.appendChild(el("p", "riassunto", g.riassunto));
+    box.appendChild(sm);
+    if (g.errore) return box;
+    // le scartate per prime: è quello che dal sito non si vede
+    if (ns) box.appendChild(elenco("Scartate", g.scartate, "scart", function (x) {
+      var li = el("li");
+      li.appendChild(el("strong", "", x.fatto));
+      var dett = " — " + x.motivo + ((x.fonti || []).length ? " (" + x.fonti.join(", ") + ")" : "");
+      li.appendChild(el("span", "perche", dett));
+      return li;
+    }));
+    else box.appendChild(el("p", "nota", "Nessuna notizia scartata in questo giro."));
+    if (nn) box.appendChild(elenco("Nuove", g.nuove, "", function (x) {
+      var li = el("li"), a = el("a", "", x.titolo || x.id);
+      a.href = "/notizia/" + encodeURIComponent(x.id) + "/"; a.target = "_blank"; a.rel = "noopener";
+      li.appendChild(a);
+      var extra = (x.stato === "una_fonte" ? " · una sola fonte" : x.stato === "ufficiale" ? " · fonte ufficiale" : "") + ((x.fonti || []).length ? " · " + x.fonti.join(", ") : "");
+      if (extra) li.appendChild(el("span", "perche", extra));
+      return li;
+    }));
+    if (na) box.appendChild(elenco("Aggiornate", g.aggiornate, "", function (x) {
+      var li = el("li"), a = el("a", "", x.titolo || x.id);
+      a.href = "/notizia/" + encodeURIComponent(x.id) + "/"; a.target = "_blank"; a.rel = "noopener";
+      li.appendChild(a);
+      if (x.aggiornamento) li.appendChild(el("span", "perche", " — «" + x.aggiornamento + "»"));
+      if ((x.fonti_nuove || []).length) li.appendChild(el("span", "perche", " · fonti nuove: " + x.fonti_nuove.join(", ")));
+      return li;
+    }));
+    if ((g.dubbi || []).length) box.appendChild(elenco("Dubbi", g.dubbi, "", function (x) { return el("li", "", typeof x === "string" ? x : JSON.stringify(x)); }));
+    if ((g.archiviate || []).length) box.appendChild(el("p", "nota", "Passate in archivio: " + g.archiviate.length + (g.archiviate.length === 1 ? " notizia." : " notizie.")));
+    var fonti = g.fonti || [], ko = fonti.filter(function (x) { return /^non raggiungibile/i.test(x.stato || ""); });
+    if (fonti.length) {
+      var df = el("details", "dentro");
+      df.appendChild(el("summary", "", "Fonti lette: " + (fonti.length - ko.length) + " · non raggiungibili: " + ko.length));
+      var t = el("table"), tb = el("tbody");
+      fonti.forEach(function (x) {
+        var r = el("tr"); r.appendChild(el("td", "", x.nome));
+        r.appendChild(el("td", /^non raggiungibile/i.test(x.stato || "") ? "ko" : "", x.stato));
+        r.appendChild(el("td", "", x.novita || "")); tb.appendChild(r);
+      });
+      t.appendChild(tb); df.appendChild(t); box.appendChild(df);
+    }
+    if ((g.ricerche || []).length) {
+      var dr = el("details", "dentro");
+      dr.appendChild(el("summary", "", "Ricerche fatte: " + g.ricerche.length));
+      dr.appendChild((elenco("", g.ricerche, "", function (x) { var li = el("li"); li.appendChild(el("strong", "", x.cosa)); li.appendChild(el("span", "perche", " — " + (x.trovato || ""))); return li; })));
+      box.appendChild(dr);
+    }
+    return box;
+  }
+  function disegnaAgente(box, D) {
+    var A = D.agente || {};
+    box.appendChild(el("h2", "", "Dietro le quinte"));
+    box.appendChild(el("p", "sotto", "Cosa fa l'agente a ogni giro: le fonti che legge, le notizie che pubblica, aggiorna e scarta, e perché. Ultimi 4 giorni."));
+    if (A.stato !== "ok") {
+      var av = el("div", "avviso"); av.appendChild(el("b", "", A.stato === "errore" ? "Il diario non si legge" : "Da collegare"));
+      av.appendChild(document.createTextNode(A.messaggio || "")); box.appendChild(av); return;
+    }
+    var giri = A.giri || [], oggi = new Date().toLocaleDateString("sv-SE", { timeZone: "Europe/Rome" });
+    var gOggi = giri.filter(function (g) { return g.giorno === oggi; });
+    var conta = function (k) { return gOggi.reduce(function (s, g) { return s + (g[k] || []).length; }, 0); };
+    var nn = el("div", "numeri"), u = giri[0];
+    nn.appendChild(numero("Ultimo giro", u ? u.ora : "–", u ? giornoLungo(u.giorno) : "nessun giro nel diario"));
+    nn.appendChild(numero("Prossimo giro", A.prossimo ? oraIt(A.prossimo.ora) : "–", A.prossimo ? (oraIt(A.prossimo.ora, true) + (A.prossimo.nota ? " · " + A.prossimo.nota : "")) : ""));
+    nn.appendChild(numero("Giri oggi", num(gOggi.length), "uno ogni ora dalle 6 alle 22"));
+    nn.appendChild(numero("Oggi", num(conta("nuove")) + " · " + num(conta("aggiornate")) + " · " + num(conta("scartate")), "nuove · aggiornate · scartate"));
+    box.appendChild(nn);
+    if (!giri.length) { box.appendChild(el("p", "vuoto", "Il diario comincia dal prossimo giro dell'agente.")); return; }
+    giri.forEach(function (g, i) { box.appendChild(schedaGiro(g, i === 0)); });
   }
 
   // ---------- avvio ----------
