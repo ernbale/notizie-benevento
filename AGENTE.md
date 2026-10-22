@@ -145,7 +145,8 @@ Regole:
 ## Come lavorare una notizia
 
 1. **Raggruppa**: articoli diversi sullo stesso fatto sono **una sola notizia**. Se il fatto è già nel file,
-   **aggiorna** quella notizia (nuove fonti, nuovi fatti), non crearne un'altra. Se in prima pagina trovi due
+   **aggiorna** quella notizia (nuove fonti, nuovi fatti), non crearne un'altra: come, lo dice «Quando aggiorni una
+   notizia già uscita» qui sotto. Se in prima pagina trovi due
    notizie sullo stesso fatto, uniscile in quella uscita prima (fonti e dettagli di tutte e due), togli l'altra e
    scrivi in `archivio/rimandi.json` → `notizie` la riga `"id tolto": "id rimasto"`: il vecchio indirizzo porterà
    alla notizia rimasta.
@@ -167,6 +168,7 @@ Regole:
    - date, orari, numeri, nomi di strade e paesi sono identici alle fonti?
    - titolo: dice il fatto? è senza acchiappa-clic? parole semplici? `titolo_google` sta in 60 caratteri, con paese e fatto?
    - è un fatto di oggi o ancora attuale?
+   - notizia già uscita con fatti nuovi: c'è `aggiornamento` con la novità? il primo paragrafo dice com'è la situazione adesso?
    Se qualcosa non torna, correggi; se non riesci a verificarlo, togli quella frase o la notizia.
 
 ## Come si scrive l'articolo
@@ -199,6 +201,10 @@ un vicino che non ne sa niente. Non un riassunto e non un elenco: paragrafi veri
 Dopo il racconto vengono le altre parti, che **non lo ripetono**:
 - `cronologia` («I fatti»): solo se la storia ha **almeno due momenti** diversi (l'incidente alle 7, la strada
   riaperta alle 11, l'aggiornamento del giorno dopo). Righe brevi, con data e ora. Con un solo momento lasciala vuota.
+  La `data` comincia sempre con **giorno e mese** («19 ottobre», «19 ottobre, 10:30», «21 ottobre, mattina»,
+  «notte 20-21 ottobre»; l'anno se non è quest'anno), mai l'ora da sola. Le righe le mette in ordine di tempo
+  `archivia.py` da solo; se il giorno non si può scrivere così, aggiungi `"quando": "AAAA-MM-GG"` (o `AAAA-MM-GGTHH:MM`).
+  Un fatto annunciato per un giorno futuro va col giorno in cui succederà.
 - `concordano`: solo quando **almeno due fonti** dicono la stessa cosa. Righe brevi con i punti chiave confermati e chi
   li conferma (es. «L'ora dell'incidente, le 7:30, e il ferito portato al Rummo»). Con una sola fonte, per esempio solo
   il comunicato del Comune, lascialo vuoto.
@@ -218,6 +224,24 @@ giovedì dalle 14 alle 24»: tre volte la stessa frase, e non si capisce chi res
 4. «Quando l'acqua torna può uscire torbida per qualche minuto: Alto Calore dice che resta potabile e consiglia di
    lasciarla scorrere. Per i casi di vera necessità c'è il numero verde 800 954 430; se i lavori durano di più,
    l'avviso sarà su altocalore.it.»
+
+## Quando aggiorni una notizia già uscita
+
+Una storia che va avanti per giorni (proteste, lavori, maltempo, un processo) resta **una sola notizia**: chi la
+riapre deve capire subito cosa è cambiato, e chi la legge per la prima volta deve trovare la storia intera. Come
+fanno i giornali con le dirette, la novità va in cima, non in fondo.
+- **`articolo.aggiornamento`**: `{"testo": "1-2 frasi", "fonti": ["Nome fonte"]}`. Sul sito esce sotto il titolo nel
+  riquadro «Aggiornamento · 22 ottobre, 10:05» e in prima pagina la notizia porta la scritta «aggiornata». Il testo
+  dice il fatto nuovo, da solo e con il giorno (per esempio «Giovedì alle 11 l'ANAS ha riaperto la statale; restano
+  i semafori per i lavori.»). **L'ora non scriverla**: la mette `archivia.py`,
+  che è l'ora in cui esce. A ogni novità **sostituisci** il testo di prima: la novità vecchia è già nel racconto e
+  nei fatti.
+- Scrivilo **solo per fatti nuovi**: una fonte in più che dice le stesse cose non è un aggiornamento (aggiungi la
+  fonte e basta). Su una notizia appena nata non serve (`archivia.py` lo toglie).
+- **Rimetti a posto il racconto**: il primo paragrafo dice **com'è la situazione adesso**; i fatti nuovi vanno al loro
+  posto nella storia, non attaccati in fondo all'ultimo paragrafo. Niente scritte «aggiornamento» dentro il racconto.
+- Aggiungi il momento nuovo nei fatti (`cronologia`) e aggiorna `sintesi`, `non_si_sa` (togli quello che ora si sa)
+  e, se è cambiato il fatto principale, `titolo` e `titolo_google`.
 
 **Le notizie in prima pagina scritte col formato vecchio** (con `cosa` e senza `racconto`): a ogni giro riscrivine
 almeno 8, partendo dalle più recenti e dalle `rilevanti`. Riapri gli articoli fonte, scrivi il racconto da capo,
@@ -323,8 +347,9 @@ aggiorni a ogni giro, come notizie.json.
     "fonti": [ {"nome": "Testata", "url": "link all'articolo"} ],
     "nota": "solo se serve una correzione",
     "articolo": {
+      "aggiornamento": {"testo": "solo su una notizia già uscita: 1-2 frasi con la novità (l'ora la mette archivia.py)", "fonti": ["Nome fonte"]},
       "racconto": [ {"testo": "un paragrafo", "fonti": ["Nome fonte come in articolo.fonti"]} ],
-      "cronologia": [ {"data": "19 ottobre | 10:30 | notte 19-20", "fatto": "", "fonti": ["Nome fonte come in articolo.fonti"]} ],
+      "cronologia": [ {"data": "19 ottobre | 19 ottobre, 10:30 | notte 19-20 ottobre", "fatto": "", "fonti": ["Nome fonte come in articolo.fonti"]} ],
       "concordano": [ {"testo": "", "fonti": []} ], "divergono": [ {"testo": "", "fonti": []} ],
       "non_si_sa": [ "" ],
       "fonti": [ {"nome": "", "titolo": "titolo esatto dell'articolo", "url": "", "data": "19 ott, 08:48"} ]
