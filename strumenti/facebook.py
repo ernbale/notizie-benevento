@@ -5,7 +5,8 @@ Lo esegue GitHub dopo ogni pubblicazione del sito (a ogni giro dell'agente e ogn
 notizia è già online quando Facebook ne legge titolo e immagine di anteprima.
 
 - Al massimo una notizia all'ora (almeno 50 minuti tra un post e l'altro), e al massimo 20 al giorno (per i giorni con tante notizie), solo dalle 7
-  alle 22: come le pagine dei giornali locali, senza raffiche che sembrano spam.
+  alle 22: come le pagine dei giornali locali, senza raffiche che sembrano spam. Dalle 23 alle 24 solo le allerte
+  importanti (`rilevante`): è il giro della sera prima di un'allerta arancione o rossa, con le scuole chiuse per domani.
 - Sceglie la più importante tra le notizie delle ultime 12 ore non ancora pubblicate (stessa importanza della prima
   pagina del sito: rilevante e numero di fonti, che calano col tempo).
 - Cosa è già uscito lo legge dalla Pagina stessa (i link dei post): niente file da tenere nel repository. Se Facebook
@@ -134,7 +135,8 @@ def main():
     if not token:
         print("Facebook: nessuna chiave (segreto FB_PAGE_TOKEN), non pubblico niente")
         return
-    if not DALLE <= adesso.hour < ALLE:
+    sera = adesso.hour == 23   # alle 23 solo le allerte: chi ha figli a scuola guarda la sera
+    if not DALLE <= adesso.hour < ALLE and not sera:
         print(f"Facebook: sono le {adesso:%H:%M}, si pubblica dalle {DALLE} alle {ALLE}")
         return
     # la chiave deve essere quella della Pagina Notizie Benevento: mai pubblicare altrove (profilo, altre pagine)
@@ -150,6 +152,11 @@ def main():
         print(f"Facebook: l'ultimo post è delle {ultimo:%H:%M}, aspetto")
         return
     lista = candidate(notizie, gia, adesso)
+    if sera:
+        lista = [n for n in lista if n.get("categoria") == "meteo" and n.get("rilevante")]
+        if not lista:
+            print("Facebook: sono le 23, a quest'ora si pubblicano solo le allerte importanti")
+            return
     if not lista:
         print("Facebook: nessuna notizia nuova da pubblicare")
         return
