@@ -1,7 +1,91 @@
 {
- "aggiornato": "2026-10-22T07:22+02:00",
+ "aggiornato": "2026-10-22T08:11+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-prefettura-protesta-tir-carburante-farmaci-scorte",
+   "titolo": "Benevento, protesta dei tir: la Prefettura segue i rifornimenti di carburante e cibo con scorte delle forze di polizia",
+   "titolo_google": "Benevento, Prefettura: scorte per carburante, cibo e farmaci",
+   "sintesi": "Mercoledì 21 ottobre il Prefetto Raffaela Moscarella ha fatto il punto sulla protesta degli autotrasportatori. La Prefettura segue con le compagnie petrolifere i rifornimenti di carburante e le consegne di cibo, con scorta delle forze di polizia. Hanno la precedenza farmaci, trasporti sanitari e servizi essenziali, rifiuti compresi.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "immagine": "camion",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-21T21:08:00+02:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Prefettura di Benevento",
+     "url": "https://prefettura.interno.gov.it/it/prefetture/benevento/notizie/protesta-autotrasportatori"
+    },
+    {
+     "nome": "Lab TV",
+     "url": "https://www.labtv.net/attualita/2026/10/21/benevento-tir-fermi-e-distributori-a-secco-la-prefettura-attiva-il-piano-scorte-per-farmaci-e-beni-essenziali/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Mercoledì 21 ottobre 2026, nel pomeriggio, il Prefetto di Benevento Raffaela Moscarella ha riunito un nuovo incontro a Palazzo del Governo (la sede della Prefettura) sulla protesta degli autotrasportatori. La protesta va avanti da più giorni in Campania e sta creando problemi alle forniture e ai servizi essenziali.",
+      "fonti": [
+       "Prefettura di Benevento",
+       "Lab TV"
+      ]
+     },
+     {
+      "testo": "I problemi più grandi, dice la Prefettura, sono il carburante nei distributori della zona e la consegna delle merci ai supermercati. Per questo la Prefettura segue, insieme ai responsabili delle principali compagnie petrolifere che lavorano sul territorio, i rifornimenti di carburante e l'arrivo dei prodotti alimentari. Per farlo attiva servizi di accompagnamento, cioè scorte, a cura delle forze di polizia.",
+      "fonti": [
+       "Prefettura di Benevento",
+       "Lab TV"
+      ]
+     },
+     {
+      "testo": "Tra le richieste arrivate finora hanno la precedenza quelle per i farmaci, i trasporti sanitari e le attività che servono a tenere in piedi i servizi pubblici essenziali, compreso il trasporto dei rifiuti.",
+      "fonti": [
+       "Prefettura di Benevento"
+      ]
+     },
+     {
+      "testo": "Chi deve chiedere un passaggio o una scorta deve scrivere alla Prefettura, all'indirizzo di posta certificata protocollo.prefbn@pec.interno.it. Nella richiesta vanno indicati il tipo di servizio, il percorso con partenza e arrivo, il tipo di merce da trasportare e un numero di telefono da chiamare. Con questi dati la Prefettura può valutare più in fretta le richieste e decidere quali hanno la priorità.",
+      "fonti": [
+       "Prefettura di Benevento",
+       "Lab TV"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Il vertice in Prefettura e le scorte delle forze di polizia per carburante e prodotti alimentari.",
+      "fonti": [
+       "Prefettura di Benevento",
+       "Lab TV"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Quante richieste di scorta sono già arrivate e quali sono state accolte.",
+     "Fino a quando resteranno in funzione queste misure."
+    ],
+    "fonti": [
+     {
+      "nome": "Prefettura di Benevento",
+      "titolo": "Protesta degli autotrasportatori",
+      "url": "https://prefettura.interno.gov.it/it/prefetture/benevento/notizie/protesta-autotrasportatori",
+      "data": "21 ott, 21:08"
+     },
+     {
+      "nome": "Lab TV",
+      "titolo": "Benevento, Tir fermi e distributori a secco: la Prefettura attiva il piano scorte per farmaci e beni essenziali",
+      "url": "https://www.labtv.net/attualita/2026/10/21/benevento-tir-fermi-e-distributori-a-secco-la-prefettura-attiva-il-piano-scorte-per-farmaci-e-beni-essenziali/",
+      "data": "21 ott"
+     }
+    ]
+   },
+   "foto": "camion-2"
+  },
   {
    "id": "air-campania-carburante-forniture-benevento-22-ottobre",
    "titolo": "Benevento, AIR Campania: carburante per i bus atteso giovedì 22 ottobre, già arrivato ad Avellino e Caserta",
