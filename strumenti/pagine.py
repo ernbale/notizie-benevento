@@ -38,8 +38,11 @@ FONT_BLACK = os.path.join(QUI, "font", "SourceSerif4-Black.ttf")
 MESI = ["gen", "feb", "mar", "apr", "mag", "giu", "lug", "ago", "set", "ott", "nov", "dic"]
 MESI_LUNGHI = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre",
                "ottobre", "novembre", "dicembre"]
-NOMI_CAT = {"strade": "Strade", "cronaca": "Cronaca", "politica": "Politica", "eventi": "Eventi", "meteo": "Allerte",
-            "altro": "Altro"}
+NOMI_CAT = {"strade": "Strade", "cronaca": "Cronaca", "politica": "Politica", "sport": "Sport", "eventi": "Eventi",
+            "meteo": "Allerte", "altro": "Altro"}
+NOMI_SPORT = {"calcio": "Calcio", "calcio_a_5": "Calcio a 5", "basket": "Basket", "pallavolo": "Pallavolo", "rugby": "Rugby",
+              "scherma": "Scherma", "atletica": "Atletica", "tennis": "Tennis", "ciclismo": "Ciclismo", "nuoto": "Nuoto",
+              "altro": "Altri sport"}
 # percorso, categoria o zona, <title>, h1, descrizione
 SEZIONI = [
     ("sezione/strade", {"cat": "strade"}, "Strade Benevento oggi: chiusure, cantieri e traffico nel Sannio",
@@ -51,6 +54,9 @@ SEZIONI = [
     ("sezione/politica", {"cat": "politica"}, "Politica Benevento: Comune, Provincia e paesi del Sannio",
      "Politica a Benevento e nel Sannio", "Consiglio comunale, Provincia, Regione e paesi del Sannio: "
      "le notizie di politica di Benevento confrontate tra i giornali locali."),
+    ("sezione/sport", {"cat": "sport"}, "Sport Benevento e Sannio: calcio, basket, pallavolo, rugby, scherma",
+     "Sport a Benevento e nel Sannio", "Il Benevento e tutte le squadre e gli atleti del Sannio: calcio, calcio a 5, "
+     "basket, pallavolo, rugby, scherma, atletica e gli altri sport, con risultati e notizie confrontate tra i giornali locali."),
     ("sezione/eventi", {"cat": "eventi"}, "Eventi a Benevento e provincia: calendario di teatro, concerti, mostre e sagre",
      "Eventi a Benevento e provincia", "Il calendario degli eventi nel Sannio: teatro, concerti, mostre, cinema, sagre e "
      "feste a Benevento e provincia, con date, orari, luoghi e fonti."),
@@ -58,7 +64,7 @@ SEZIONI = [
      "Allerte a Benevento e nel Sannio", "Allerte meteo della Protezione civile per le zone del Sannio, chiusure di "
      "scuole e parchi decise dai Comuni, terremoti e danni del maltempo a Benevento e provincia."),
     ("sezione/altro", {"cat": "altro"}, "Altre notizie da Benevento e provincia",
-     "Altre notizie dal Sannio", "Lavoro, salute, scuola, ambiente, sport e servizi: le altre notizie di Benevento "
+     "Altre notizie dal Sannio", "Lavoro, salute, scuola, ambiente e servizi: le altre notizie di Benevento "
      "e provincia confrontate tra i giornali locali."),
     ("zona/benevento", {"zona": "benevento"}, "Notizie Benevento città: cronaca, strade e politica in città",
      "Notizie da Benevento città", "Le notizie di oggi dalla città di Benevento: cronaca, strade, politica, eventi."),
@@ -76,7 +82,7 @@ SEZIONI = [
      "Paduli, Ponte e degli altri comuni della provincia di Benevento."),
 ]
 CAT_PERCORSO = {s[1]["cat"]: s[0] for s in SEZIONI if "cat" in s[1]}
-DESCR_HOME = ("Le ultime notizie di oggi da Benevento e dal Sannio: cronaca, strade, politica, eventi e allerte, "
+DESCR_HOME = ("Le ultime notizie di oggi da Benevento e dal Sannio: cronaca, strade, politica, sport, eventi e allerte, "
               "confrontate tra i giornali locali, con i link agli articoli originali.")
 
 
@@ -256,7 +262,7 @@ def immagine_notizia(sito, n, tipo):
     Il nome resta sempre lo stesso: Facebook si tiene l'indirizzo dell'immagine letto quando esce il post, e se
     cambiasse a ogni fonte nuova il post resterebbe col riquadro vuoto (21 ott 2026)."""
     fonti = (n.get("articolo") or {}).get("fonti") or n.get("fonti") or []
-    occ = "Approfondimento" if tipo == "approfondimento" else NOMI_CAT.get(n.get("categoria"), "Altro")
+    occ = "Approfondimento" if tipo == "approfondimento" else _categoria(n)
     piede = (f"{len(fonti)} {'fonte' if len(fonti) == 1 else 'fonti confrontate'} · "
              f"{data_it(n.get('pubblicato') or n.get('aggiornato'), lunga=True)}")
     impronta = hashlib.sha1(json.dumps([n["titolo"], occ, n.get("luogo"), piede, 2], ensure_ascii=False)
@@ -335,6 +341,12 @@ def _fonti(fonti):
     return f'<h3>Fonti</h3><ul class="elenco-fonti">{li}</ul>'
 
 
+def _categoria(n):
+    """«Cronaca», «Strade»… e per lo sport anche la disciplina: «Sport · Calcio»."""
+    c = NOMI_CAT.get(n.get("categoria"), "Altro")
+    return f"{c} · {NOMI_SPORT[n['sport']]}" if n.get("categoria") == "sport" and n.get("sport") in NOMI_SPORT else c
+
+
 def _testata_pagina(occhiello, luogo, titolo):
     lu = f'<span class="luogo">{e(luogo)}</span>' if luogo else ""
     return (f'<a class="indietro" href="/">← Tutte le notizie</a><div class="occhiello">{e(occhiello)}{lu}</div>'
@@ -369,7 +381,7 @@ def _aggiornamento(ag, fonti):
 def html_articolo(n, appro_collegato):
     a = n["articolo"]
     fonti = a.get("fonti") if isinstance(a.get("fonti"), list) else []
-    h = _testata_pagina(NOMI_CAT.get(n.get("categoria"), "Altro"), n.get("luogo"), n["titolo"])
+    h = _testata_pagina(_categoria(n), n.get("luogo"), n["titolo"])
     meta = ("Dall'archivio · " if n["_arch"] else "") + (data_it(n.get("pubblicato")) + " · " if n.get("pubblicato") else "")
     h += f'<div class="meta">{e(meta)}{len(fonti)} {"fonte" if len(fonti) == 1 else "fonti confrontate"}</div>'
     if n.get("stato") == "una_fonte" and n.get("fonti"):

@@ -55,7 +55,7 @@
   .testata .nome { text-align: center; text-decoration: none; }
   .testata .nome .grande { display: block; font: 700 44px/1 var(--serif); letter-spacing: -1px; margin: 0; }
   .testata .nome .piccolo { display: block; font: 600 13px/1.4 var(--sans); letter-spacing: 2px; text-transform: uppercase; margin-top: 4px; }
-  .menu { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 4px 16px;
+  .menu { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 4px 13px;
           padding: 10px 0; border-top: 1px solid var(--nero); border-bottom: 1px solid var(--riga); }
   .menu button { font: 600 15px var(--sans); background: none; border: 0; padding: 4px 0; color: var(--nero); cursor: pointer; border-bottom: 2px solid transparent; }
   .menu button[aria-pressed="true"] { border-bottom-color: var(--rosso); }
@@ -118,6 +118,11 @@
   .avvisi-box li a { color: var(--nero); text-decoration: none; }
   .avvisi-box li a:hover { text-decoration: underline; }
   .avvisi-box .dove { display: block; font: 500 12px var(--sans); color: var(--rosso); margin-top: 3px; }
+  .sport-box .tutto { display: inline-block; margin-top: 8px; font: 600 13px var(--sans); color: var(--blu); }
+  /* pagina Sport: le discipline */
+  .discipline { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 16px; }
+  .discipline button { font: 600 13px var(--sans); padding: 5px 12px; border: 1px solid var(--riga); background: rgba(255, 255, 255, .5); color: var(--nero); border-radius: 3px; cursor: pointer; }
+  .discipline button[aria-pressed="true"] { background: var(--nero); border-color: var(--nero); color: #fff; }
   .vuoto { color: var(--grigio); padding: 30px 0; }
 
   /* approfondimento */
@@ -208,7 +213,7 @@
   .menu .link-archivio:hover { text-decoration: underline; }
   .cerca-campo { display: flex; align-items: stretch; }
   .cerca-campo input { font: 500 15px var(--sans); padding: 6px 10px; border: 1px solid var(--nero); border-right: 0; border-radius: 4px 0 0 4px;
-                       background: #fff; color: var(--nero); min-width: 0; width: 182px; -webkit-appearance: none; appearance: none; }
+                       background: #fff; color: var(--nero); min-width: 0; width: 150px; -webkit-appearance: none; appearance: none; }
   .cerca-campo button { display: inline-flex; align-items: center; justify-content: center; width: 40px; border: 1px solid var(--nero);
                         border-radius: 0 4px 4px 0; background: var(--nero); color: #fff; cursor: pointer; padding: 0; }
   .cerca-campo svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; }
@@ -249,7 +254,8 @@
     .testata .agg, .testata .data { text-align: center; }
     .testata .data { order: 2; }
     .testata .nome .grande { font-size: 36px; }
-    .menu { justify-content: flex-start; gap: 4px 16px; }
+    .menu { justify-content: flex-start; gap: 4px 12px; }
+    .menu button { font-size: 14.5px; }
     .menu select { width: 100%; }
     .menu .cerca-campo { width: 100%; order: -1; margin-bottom: 4px; }
     .menu .cerca-campo input { flex: 1; width: auto; font-size: 16px; padding: 8px 10px; }
@@ -438,6 +444,7 @@
     <button type="button" data-cat="strade" aria-pressed="false">Strade</button>
     <button type="button" data-cat="cronaca" aria-pressed="false">Cronaca</button>
     <button type="button" data-cat="politica" aria-pressed="false">Politica</button>
+    <button type="button" data-cat="sport" aria-pressed="false">Sport</button>
     <button type="button" data-cat="eventi" aria-pressed="false">Eventi</button>
     <button type="button" data-cat="meteo" aria-pressed="false">Allerte</button>
     <button type="button" data-cat="altro" aria-pressed="false">Altro</button>
@@ -463,7 +470,7 @@
     <p>Notizie Benevento è un report automatico: le notizie appartengono ai giornali citati. Qui le raccontiamo con parole nostre, confrontando le fonti, con i link agli articoli originali.</p>
     <p>Una notizia compare se la riportano almeno due testate diverse oppure una fonte ufficiale (Comuni, Regione, Prefettura, Questura e forze dell'ordine, ASL, ANAS, INGV, le società dell'acqua, dei treni e dei bus). La cronaca riportata da un solo giornale autorevole porta la scritta «Una sola fonte». Le accuse sono riportate con le parole usate dai giornali. Aggiornato ogni ora, dalle 6 alle 22. Le visite si contano in forma anonima, senza cookie.</p>
     <p>Nessuna notizia viene cancellata: quando esce dalla prima pagina resta nell'<a href="#archivio">archivio</a>, allo stesso indirizzo.</p>
-    <p class="sezioni-link">Sezioni: <a href="/sezione/strade/">Strade</a> · <a href="/sezione/cronaca/">Cronaca</a> · <a href="/sezione/politica/">Politica</a> · <a href="/sezione/eventi/">Eventi</a> · <a href="/sezione/allerte/">Allerte</a> · <a href="/sezione/altro/">Altro</a> · <a href="/meteo.html">Meteo Benevento</a><br>
+    <p class="sezioni-link">Sezioni: <a href="/sezione/strade/">Strade</a> · <a href="/sezione/cronaca/">Cronaca</a> · <a href="/sezione/politica/">Politica</a> · <a href="/sezione/sport/">Sport</a> · <a href="/sezione/eventi/">Eventi</a> · <a href="/sezione/allerte/">Allerte</a> · <a href="/sezione/altro/">Altro</a> · <a href="/meteo.html">Meteo Benevento</a><br>
       Zone: <a href="/zona/benevento/">Benevento città</a> · <a href="/zona/valle-telesina/">Valle Telesina</a> · <a href="/zona/valle-caudina/">Valle Caudina</a> · <a href="/zona/fortore/">Fortore e Tammaro</a> · <a href="/zona/altri-comuni/">Altri comuni</a> · <a href="/feed.xml">Feed RSS</a></p>
     <p class="sezioni-link"><a href="/chi-siamo/">Chi siamo</a> · Seguici su <a href="https://www.facebook.com/notiziebenevento" target="_blank" rel="noopener">Facebook</a></p>
   </footer>
@@ -471,7 +478,10 @@
 
 <script>
 (function () {
-  var NOMI_CAT = { strade: "Strade", cronaca: "Cronaca", politica: "Politica", eventi: "Eventi", meteo: "Allerte", altro: "Altro" };
+  var NOMI_CAT = { strade: "Strade", cronaca: "Cronaca", politica: "Politica", sport: "Sport", eventi: "Eventi", meteo: "Allerte", altro: "Altro" };
+  var NOMI_SPORT = { calcio: "Calcio", calcio_a_5: "Calcio a 5", basket: "Basket", pallavolo: "Pallavolo", rugby: "Rugby",
+    scherma: "Scherma", atletica: "Atletica", tennis: "Tennis", ciclismo: "Ciclismo", nuoto: "Nuoto", altro: "Altri sport" };
+  var filtroSport = "";
   var dati = { notizie: [], approfondimenti: [] };
   var filtroCat = "";
   var filtroZona = "";
@@ -781,7 +791,7 @@
     var agr = aggiornamentoRecente(n);
     var occ = el("div", "occhiello", []);
     if (agr) occ.appendChild(el("span", "agg", [etichettaAggiornata(agr.quando)]));
-    occ.appendChild(testo(NOMI_CAT[n.categoria] || "Altro"));
+    occ.appendChild(testo(n.categoria === "sport" ? sportDi(n) : NOMI_CAT[n.categoria] || "Altro"));
     if (n.luogo) occ.appendChild(el("span", "luogo", [n.luogo]));
     art.appendChild(occ);
     var h = el("h2", "", []);
@@ -819,7 +829,8 @@
 
   function filtrate() {
     return (dati.notizie || []).filter(function (n) {
-      return (!filtroCat || n.categoria === filtroCat) && (!filtroZona || n.zona === filtroZona);
+      var cat = filtroCat ? n.categoria === filtroCat : n.categoria !== "sport" || n.rilevante;
+      return cat && (!filtroZona || n.zona === filtroZona) && (filtroCat !== "sport" || !filtroSport || n.sport === filtroSport);
     }).sort(function (a, b) { return tempo(b) - tempo(a); });
   }
   // Ora della notizia. Se l'articolo dice solo il giorno: per i giorni passati conta come mezzogiorno;
@@ -904,6 +915,41 @@
       colonne[scelta[i]].appendChild(s);
     });
   }
+  // Sport: nella prima pagina un riquadro con le ultime 5, il resto nella pagina Sport (divisa per disciplina).
+  function sportDi(n) { return "Sport" + (NOMI_SPORT[n.sport] ? " · " + NOMI_SPORT[n.sport] : ""); }
+  function riquadroSport() {
+    var sp = (dati.notizie || []).filter(function (n) { return n.categoria === "sport" && (!filtroZona || n.zona === filtroZona); })
+      .sort(function (a, b) { return tempo(b) - tempo(a); }).slice(0, 5);
+    if (!sp.length) return null;
+    var sez = el("section", "avvisi-box sport-box", [el("h3", "titolo-col", ["Sport"])]);
+    var ul = el("ul", "", []);
+    sp.forEach(function (n) {
+      var li = el("li", "", []), a = el("a", "", [n.titolo]);
+      a.href = linkArticolo(n);
+      li.appendChild(a);
+      li.appendChild(el("span", "dove", [(NOMI_SPORT[n.sport] || "Sport") + (n.luogo ? " · " + n.luogo : "") + " · " + quando(n.pubblicato)]));
+      ul.appendChild(li);
+    });
+    sez.appendChild(ul);
+    var t = el("a", "tutto", ["Tutto lo sport ›"]);
+    t.href = "/sezione/sport/";
+    sez.appendChild(t);
+    return sez;
+  }
+  function scelteSport() {
+    var ci = {};
+    (dati.notizie || []).forEach(function (n) { if (n.categoria === "sport" && n.sport) ci[n.sport] = true; });
+    var nav = el("nav", "discipline", []);
+    [""].concat(Object.keys(NOMI_SPORT).filter(function (k) { return ci[k]; })).forEach(function (k) {
+      var b = el("button", "", [k ? NOMI_SPORT[k] : "Tutti gli sport"]);
+      b.type = "button";
+      b.setAttribute("aria-pressed", filtroSport === k ? "true" : "false");
+      b.addEventListener("click", function () { filtroSport = k; disegna(); });
+      nav.appendChild(b);
+    });
+    return nav;
+  }
+
   function riquadroAvvisi(avvisi) {
     var sez = el("section", "avvisi-box", [el("h3", "titolo-col", ["Avvisi in vigore"])]);
     var ul = el("ul", "", []);
@@ -1017,6 +1063,7 @@
   function disegnaHome(box) {
     if (FISSA && FISSA.h1 && filtroCat === (FISSA.cat || "") && filtroZona === (FISSA.zona || "")) box.appendChild(el("h1", "titolo-sezione", [FISSA.h1]));
     var lista = filtrate();
+    if (filtroCat === "sport") box.appendChild(scelteSport());
     if (filtroCat === "eventi") {
       box.appendChild(calendario());
       if (!lista.length) return;
@@ -1072,6 +1119,7 @@
     var rm = riquadroMeteo();
     if (rm) c3.appendChild(rm);
     if (avvisi.length) c3.appendChild(riquadroAvvisi(avvisi));
+    if (!filtroCat) { var rs = riquadroSport(); if (rs) c3.appendChild(rs); }
     c3.appendChild(el("h3", "titolo-col", ["Approfondimenti"]));
     var appro = dati.approfondimenti || [];
     if (appro.length) appro.forEach(function (ap) { c3.appendChild(schedaAppro(ap)); });
@@ -1165,7 +1213,7 @@
     var a = n.articolo;
     var fonti = Array.isArray(a.fonti) ? a.fonti : [];
     var art = el("article", "appro", []);
-    testataPagina(art, NOMI_CAT[n.categoria] || "Altro", n.luogo, n.titolo);
+    testataPagina(art, n.categoria === "sport" ? sportDi(n) : NOMI_CAT[n.categoria] || "Altro", n.luogo, n.titolo);
     art.appendChild(el("div", "meta", [(dallArchivio ? "Dall'archivio · " : "") + (n.pubblicato ? quando(n.pubblicato) + " · " : "") + fonti.length + (fonti.length === 1 ? " fonte" : " fonti confrontate")]));
     if (n.stato === "una_fonte") art.appendChild(el("div", "nota", ["Per ora questo fatto lo riporta solo " + ((n.fonti || [])[0] || {}).nome + ". Lo aggiorniamo se arrivano altre fonti."]));
     var agg = riquadroAggiornamento(a.aggiornamento, fonti);
@@ -2088,6 +2136,7 @@
   document.querySelectorAll(".menu button").forEach(function (b) {
     b.addEventListener("click", function () {
       filtroCat = b.getAttribute("data-cat");
+      filtroSport = "";
       document.querySelectorAll(".menu button").forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
       disegna();
     });

@@ -25,7 +25,9 @@ import re
 import subprocess
 import sys
 
-CAT = {"strade", "cronaca", "meteo", "politica", "eventi", "altro"}
+CAT = {"strade", "cronaca", "meteo", "politica", "sport", "eventi", "altro"}
+SPORT = {"calcio", "calcio_a_5", "basket", "pallavolo", "rugby", "scherma", "atletica", "tennis", "ciclismo", "nuoto", "altro"}
+UNA_FONTE_CAT = ("cronaca", "strade", "altro", "politica", "sport")   # regola 2 (politica dal 22 ott 2026, con la regola 9)
 ZONE = {"benevento", "telesina", "caudina", "fortore", "provincia"}
 STATI = {"confermata", "ufficiale", "una_fonte"}
 # le testate che da sole bastano per la cronaca (regola 2 di AGENTE.md), scritte senza spazi né maiuscole
@@ -193,7 +195,8 @@ MOTIVI = {   # gli unici motivi per non pubblicare un fatto dei giornali (22 ott
     "una_fonte_non_autorevole": "una sola testata non autorevole, nessuna conferma",
     "politica_senza_effetti": "politica senza effetti per la gente (regola 9)",
     "pubblicita": "pubblicità o promozione",
-    "non_notizia": "non è una notizia per il sito (opinione, rubrica, ricorrenza, sport, telegiornale)",
+    "non_notizia": "non è una notizia per il sito (opinione, rubrica, ricorrenza, telegiornale)",
+    "voce_non_confermata": "voce o indiscrezione non confermata (anche calciomercato)",
     "non_leggibile": "l'articolo non si apre",
 }
 
@@ -557,6 +560,8 @@ def controlla(d, err, avv, adesso=None):
             err.append(f"{w}: id non valido (solo minuscole, numeri e trattini)")
         if n.get("categoria") not in CAT:
             err.append(f"{w}: categoria non ammessa {n.get('categoria')!r}")
+        if n.get("categoria") == "sport" and n.get("sport") not in SPORT:
+            err.append(f"{w}: una notizia di sport vuole «sport», uno di: {', '.join(sorted(SPORT))}")
         if n.get("zona") not in ZONE:
             err.append(f"{w}: zona non ammessa {n.get('zona')!r}")
         if n.get("stato") not in STATI:
@@ -594,8 +599,8 @@ def controlla(d, err, avv, adesso=None):
                 err.append(f"{w}: 'una_fonte' vuole una sola testata (con due è 'confermata')")
             elif not testate <= AUTOREVOLI:
                 err.append(f"{w}: 'una_fonte' solo con una testata autorevole (regola 2), non {nomi_prima[0]!r}")
-            if n.get("categoria") not in ("cronaca", "strade", "altro"):
-                err.append(f"{w}: 'una_fonte' solo per cronaca, strade o altro")
+            if n.get("categoria") not in UNA_FONTE_CAT:
+                err.append(f"{w}: 'una_fonte' solo per {', '.join(UNA_FONTE_CAT)} (mai allerte ed eventi)")
             if n.get("rilevante"):
                 err.append(f"{w}: una notizia con una sola fonte non può essere 'rilevante'")
         if "immagine" in n:
