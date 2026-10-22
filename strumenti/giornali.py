@@ -2,7 +2,7 @@
 """L'elenco degli articoli nuovi dei giornali del Sannio, per il giro dell'agente.
 
 Legge i 14 giornali (feed RSS; Ottopagine dalla sua pagina /bn/ con la data di ogni articolo; TV7 dal file tv7.json
-che scarica il computer di casa), tiene gli articoli usciti dall'ultimo giro e li raggruppa per fatto (titoli con
+che scarica il computer di casa) e i comunicati delle società sportive (fonte ufficiale), tiene gli articoli usciti dall'ultimo giro e li raggruppa per fatto (titoli con
 le stesse parole), mettendo accanto anche gli articoli delle ultime 24 ore sullo stesso fatto: così si vede subito
 quante testate lo riportano. Toglie i gruppi già citati in una notizia del sito.
 
@@ -53,7 +53,11 @@ TESTATE = [
     ("Il Mattino", True, "rss", "https://www.ilmattino.it/rss/benevento.xml", "https://www.ilmattino.it/benevento/"),
     ("TV7 Benevento", True, "casa", "tv7.json", ""),
     ("Il Caudino", False, "wp", "https://ilcaudino.it/feed/", "https://ilcaudino.it/"),
+    # società sportive: i loro comunicati sono fonte ufficiale (AGENTE.md, «Lo sport»)
+    ("Benevento Calcio", True, "beneventocalcio", "https://www.beneventocalcio.club/news/1.shtml",
+     "https://www.beneventocalcio.club/news/"),
 ]
+UFFICIALI = {"Benevento Calcio"}   # fonti ufficiali (regola 2): bastano da sole
 
 # parole che non dicono di quale fatto si parla
 VUOTE = set("""benevento sannio sannita sanniti provincia provinciale comune comunale citta oggi domani ieri anche ancora
@@ -62,7 +66,7 @@ sulle sullo sugli alla alle allo agli come dopo prima contro verso senza sotto s
 questa quella quello presso fino nuovo nuova nuovi nuove grande primo prima anni anno giorno giorni settimana mese
 lunedi martedi mercoledi giovedi venerdi sabato domenica ottobre novembre dicembre gennaio febbraio marzo aprile
 maggio giugno luglio agosto settembre video foto news live ecco cosa perche quando dove mentre sara saranno arriva
-fare fatto fatti dice dicono parla annuncia""".split())
+fare fatto fatti dice dicono parla annuncia serie bkt 2025 2026 2027 2028""".split())   # sport: «Serie BKT 2026-2027» è in tutti i titoli
 
 MESI_IT = {"gen": "Jan", "feb": "Feb", "mar": "Mar", "apr": "Apr", "mag": "May", "giu": "Jun", "lug": "Jul",
            "ago": "Aug", "set": "Sep", "ott": "Oct", "nov": "Nov", "dic": "Dec"}
@@ -150,22 +154,34 @@ def data_pagina(url):
     return d if d.tzinfo else d.replace(tzinfo=fuso())
 
 
-def leggi_ottopagine(url, dal):
-    """Ottopagine non ha un feed: i link della pagina /bn/, dal più nuovo (numero più alto), con la data di ogni articolo."""
+# siti senza feed ma con gli articoli numerati (il numero più alto è il più nuovo): dove sono i link
+NUMERATI = {
+    "ottopagine": ("https://www.ottopagine.it", r'<a [^>]*href="(/bn/[a-z-]+/(\d+)/[^"]+\.shtml)"[^>]*>(.*?)</a>'),
+    "beneventocalcio": ("https://www.beneventocalcio.club",
+                        r'<a [^>]*href="(/news/(?:notizie|comunicatistampa|iniziativegiallorosse)/(\d+)/[^"]+\.shtml)"[^>]*>(.*?)</a>'),
+}
+
+
+def leggi_numerati(tipo, url, dal):
+    """Ottopagine e il sito del Benevento Calcio non hanno un feed: i link della pagina, dal più nuovo (numero più
+    alto), con la data scritta in ogni articolo; si ferma quando arriva a quelli più vecchi dell'ultimo giro."""
+    base, schema = NUMERATI[tipo]
     t = scarica(url)
     visti = {}
-    for m in re.finditer(r'<a [^>]*href="(/bn/[a-z-]+/(\d+)/[^"]+\.shtml)"[^>]*>(.*?)</a>', t, re.S):
+    for m in re.finditer(schema, t, re.S):
         tit = pulisci(m.group(3))
-        if len(tit) > len(visti.get(m.group(1), ("", 0))[0]):
-            visti[m.group(1)] = (tit, int(m.group(2)))
+        if tit.lower() in ("leggi", "leggi tutto", "continua"):
+            tit = ""
+        if len(tit) > len(visti.get(m.group(1), ("", 0))[0]) or m.group(1) not in visti:
+            visti[m.group(1)] = (tit or visti.get(m.group(1), ("", 0))[0], int(m.group(2)))
     link = sorted(visti.items(), key=lambda x: -x[1][1])[:40]
     voci = []
     with cf.ThreadPoolExecutor(8) as ex:
         for i in range(0, len(link), 8):
             pezzo = link[i:i + 8]
-            date = list(ex.map(lambda x: _prova(data_pagina, "https://www.ottopagine.it" + x[0]), pezzo))
+            date = list(ex.map(lambda x: _prova(data_pagina, base + x[0]), pezzo))
             for (h, (tit, _)), d in zip(pezzo, date):
-                voci.append({"titolo": tit or h, "url": "https://www.ottopagine.it" + h, "data": d})
+                voci.append({"titolo": tit or h, "url": base + h, "data": d})
             if all(d and d < dal for d in date):
                 break
     return voci
@@ -260,8 +276,8 @@ def main():
         if tipo == "casa":
             voci, controllato = leggi_casa(url)
             return nome, voci, f"letta (da casa, controllato {str(controllato)[11:16]})"
-        if tipo == "ottopagine":
-            return nome, leggi_ottopagine(url, dal), "letta (pagina /bn/, data di ogni articolo)"
+        if tipo in NUMERATI:
+            return nome, leggi_numerati(tipo, url, dal), "letta (pagina delle notizie, data di ogni articolo)"
         try:
             return nome, leggi_feed(tipo, url, dal_contesto), "letta (feed)"
         except Exception:   # secondo tentativo, poi la homepage: se risponde quella, la legge l'agente a mano
@@ -325,6 +341,7 @@ def main():
             "ultimo": max(x["data"] for x in nuovi),
             "testate": sorted({x["testata"] for x in g}),
             "autorevoli": sorted({x["testata"] for x in g if x["autorevole"]}),
+            "ufficiali": sorted({x["testata"] for x in g if x["testata"] in UFFICIALI}),
             "citato_in": sorted({x["citato"] for x in g if x["citato"]}),
             "articoli": [{"testata": x["testata"], "titolo": x["titolo"], "url": x["url"],
                           "data": x["data"].astimezone(fuso()).isoformat(timespec="minutes"),
@@ -349,6 +366,8 @@ def main():
             print("ATTENZIONE:", r)
     for g in uscita["gruppi"]:
         aut = f"{len(g['autorevoli'])} autorevoli" if g["autorevoli"] else "nessuna autorevole"
+        if g["ufficiali"]:
+            aut += f", fonte ufficiale: {', '.join(g['ufficiali'])}"
         cit = f" · già in: {', '.join(g['citato_in'])}" if g["citato_in"] else ""
         print(f"{g['id']} · {len(g['testate'])} testate ({aut}){cit}")
         for x in g["articoli"]:
