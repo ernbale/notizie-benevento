@@ -1,6 +1,90 @@
 {
- "aggiornato": "2026-10-21T06:05:00+02:00",
+ "aggiornato": "2026-10-22T06:05:00+02:00",
  "voci": [
+  {
+   "id": "mensa-pasto-da-casa",
+   "tipo": "notizia",
+   "titolo": "Benevento, mensa scolastica: resta il no al pasto portato da casa, i presidi difendono la scelta e alcuni genitori pensano al Tar",
+   "sintesi": "L'associazione dei presidi (Anp) difende i dirigenti che non fanno mangiare nei locali della mensa il pasto portato da casa, per igiene, spazi e personale. Comune e Pd si accusano a vicenda su chi abbia deciso il divieto; al plesso Lucarelli due genitori valutano il ricorso al Tar (il tribunale amministrativo) e la Lega porta in Parlamento il caso delle cucine del Conservatorio usate per la mensa.",
+   "luogo": "Benevento",
+   "categoria": "politica",
+   "zona": "benevento",
+   "pubblicato": "2026-10-19T18:04:00+02:00",
+   "cosa": "A Benevento continua lo scontro sul pasto portato da casa nelle mense delle scuole. Il Comune ha fatto partire la mensa scolastica il 14 ottobre, dopo un rinvio, usando in via provvisoria le cucine del Conservatorio «Nicola Sala» in via dei Mulini. Alcune famiglie vogliono dare ai figli il pasto preparato a casa, ma i dirigenti scolastici non lo permettono nei locali della mensa.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "telese-concorso-carabinieri-indagati",
+   "tipo": "notizia",
+   "titolo": "Telese Terme, soldi per entrare nei Carabinieri: otto indagati per traffico di influenze illecite, la Procura esclude il coinvolgimento dell'Arma",
+   "sintesi": "La Procura di Benevento ha chiuso le indagini su otto persone, indagate a vario titolo per concorso in traffico di influenze illecite. Secondo l'accusa un 76enne di Telese Terme avrebbe preso soldi in contanti da un aspirante carabiniere e dai suoi genitori vantando conoscenze; la Procura precisa che l'Arma non è coinvolta.",
+   "luogo": "Telese Terme",
+   "categoria": "cronaca",
+   "zona": "telesina",
+   "pubblicato": "2026-10-19",
+   "cosa": "La Procura di Benevento ha chiuso le indagini su otto persone, indagate a vario titolo per concorso in traffico di influenze illecite: il reato di chi si fa dare soldi dicendo di avere conoscenze tra chi decide in un ente pubblico. Ha mandato agli indagati l'avviso di conclusione delle indagini preliminari, il passo che di solito precede la richiesta di rinvio a giudizio.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "ferrovia-benevento-cancello-rfi",
+   "tipo": "notizia",
+   "titolo": "Ferrovia Benevento-Cancello per la Valle Caudina chiusa dal 2021: comitato utenti ed Errico chiedono di passarla a RFI",
+   "sintesi": "Il Nuovo Comitato Utenti Ferrovia Valle Caudina e il consigliere regionale di Forza Italia Fernando Errico chiedono che la linea, chiusa dal 2021 per lavori, passi a RFI (Rete Ferroviaria Italiana, la società della rete nazionale). La riapertura è ipotizzata per i primi mesi del 2027.",
+   "luogo": "Valle Caudina",
+   "categoria": "politica",
+   "zona": "caudina",
+   "pubblicato": "2026-10-19",
+   "cosa": "La ferrovia Benevento-Cancello, che attraversa la Valle Caudina, è chiusa dal 2021 per lavori di ammodernamento. Lunedì 19 ottobre il Nuovo Comitato Utenti Ferrovia Valle Caudina e il consigliere regionale di Forza Italia Fernando Errico hanno chiesto che la linea passi a RFI, Rete Ferroviaria Italiana, la società che gestisce la rete ferroviaria nazionale.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "sentenza-spaccio-valle-caudina",
+   "tipo": "notizia",
+   "titolo": "Droga tra Caserta e Valle Caudina, cade l'accusa di associazione: tre condannati per alcuni episodi di spaccio, tra loro un 60enne di Bonea",
+   "sintesi": "Il Tribunale di Santa Maria Capua Vetere ha assolto tre imputati dall'accusa di associazione finalizzata al traffico di droga e da diversi episodi di spaccio, e li ha condannati per altri episodi: 8 anni a un 41enne di San Felice a Cancello, 6 anni a un 60enne di Bonea e a una 47enne di Pozzuoli. La Dda aveva chiesto 26 e 13 anni.",
+   "luogo": "Valle Caudina",
+   "categoria": "cronaca",
+   "zona": "caudina",
+   "pubblicato": "2026-10-19",
+   "cosa": "Il Tribunale di Santa Maria Capua Vetere ha escluso l'accusa più grave in un processo per droga tra Caserta e la Valle Caudina: quella di far parte di un'associazione finalizzata al traffico di stupefacenti. Lunedì 19 ottobre ha assolto i tre imputati dal reato associativo e da diversi episodi di spaccio, condannandoli però per altri episodi: 8 anni a un 41enne di San Felice a Cancello, 6 anni a un 60enne di Bonea e 6 anni a una 47enne di Pozzuoli.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "esercitazione-terremoto",
+   "tipo": "notizia",
+   "titolo": "Esercitazione di Protezione civile: terremoto simulato ad Apollosa, Arpaise, Ceppaloni e San Leucio del Sannio",
+   "sintesi": "Lunedì 19 ottobre i quattro Comuni hanno simulato un forte terremoto: evacuazione delle scuole, ricerca di un disperso, soccorso ai feriti e prove di comunicazione senza telefono e internet.",
+   "luogo": "San Leucio del Sannio",
+   "categoria": "eventi",
+   "zona": "provincia",
+   "pubblicato": "2026-10-19",
+   "cosa": "Lunedì 19 ottobre quattro Comuni del Sannio hanno simulato un forte terremoto: Apollosa, Arpaise, Ceppaloni e San Leucio del Sannio. L'esercitazione, coordinata dalla Prefettura di Benevento, ha provato evacuazioni delle scuole, soccorso ai feriti, ricerca di dispersi e comunicazioni quando telefono e internet non funzionano.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "mellusi-annunziata",
+   "tipo": "notizia",
+   "titolo": "Benevento, divieti di sosta in viale Mellusi il 21 e 22 ottobre; piazzetta Santa Rita chiusa fino ad aprile per il cantiere dell'Annunziata",
+   "sintesi": "Viale Mellusi, tra via Meomartini e via Nicola Sala: sosta vietata con rimozione dalle 8 alle 18, mercoledì 21 sul lato destro e giovedì 22 sul sinistro. Da mercoledì piazzetta Santa Rita chiusa a transito e sosta e divieto di fermata in un tratto di via Rampa Annunziata, anche per i residenti con permesso ZTL.",
+   "luogo": "Benevento",
+   "categoria": "strade",
+   "zona": "benevento",
+   "pubblicato": "2026-10-19",
+   "cosa": "Mercoledì 21 e giovedì 22 ottobre, dalle 8 alle 18, in viale Mellusi a Benevento la sosta è vietata, con rimozione dell'auto, nel tratto tra via Meomartini e via Nicola Sala. Mercoledì il divieto vale sul lato destro del senso di marcia, giovedì sul lato sinistro. Serve per la pulizia straordinaria delle caditoie, le griglie dove scende l'acqua piovana.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "sagra-castagna-vitulano",
+   "tipo": "notizia",
+   "titolo": "Vitulano, dal 29 ottobre al 1° novembre la 33ª Sagra della castagna e del pecorino, con escursioni nei castagneti di Monte Drago",
+   "sintesi": "Quattro giorni di sagra a Vitulano, promossa dalla Pro Loco Camposauro con il Comune: escursioni nei castagneti di Monte Drago dal 29 al 31 ottobre, passeggiate nel centro storico il 31 ottobre e il 1° novembre e lo Stand del Contadino in piazza San Menna.",
+   "luogo": "Vitulano",
+   "categoria": "eventi",
+   "zona": "provincia",
+   "pubblicato": "2026-10-19",
+   "cosa": "Da giovedì 29 ottobre a domenica 1° novembre Vitulano ospita la 33ª Sagra della Castagna e del Pecorino Vitulanese. La organizza la Pro Loco Camposauro, con il patrocinio e la collaborazione del Comune, di UNPLI Benevento e delle associazioni del paese.",
+   "mese": "2026-10"
+  },
   {
    "id": "scontro-rione-ferrovia",
    "tipo": "notizia",
