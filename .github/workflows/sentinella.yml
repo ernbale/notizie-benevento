@@ -1,0 +1,28 @@
+# La sentinella: ogni quarto d'ora controlla che giro, sito e canale Telegram stiano al passo e ripara quello che può
+# (pubblicazione ferma in coda, sito indietro, canale muto). Se resta qualcosa di storto finisce in rosso e GitHub
+# manda una mail. Vedi strumenti/sentinella.py.
+name: Sentinella
+
+on:
+  schedule:
+    - cron: "8,23,38,53 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write
+
+concurrency:
+  group: sentinella
+  cancel-in-progress: true
+
+jobs:
+  controlla:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Giro, sito e Telegram al passo
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 strumenti/sentinella.py

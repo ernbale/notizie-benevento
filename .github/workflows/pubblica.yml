@@ -30,6 +30,7 @@ concurrency:
 jobs:
   pubblica:
     runs-on: ubuntu-latest
+    timeout-minutes: 30   # un passo piantato non deve tenere ferme per ore le pubblicazioni dopo (vanno una alla volta)
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
