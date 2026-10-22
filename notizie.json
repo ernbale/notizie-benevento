@@ -1,7 +1,119 @@
 {
- "aggiornato": "2026-10-22T15:12+02:00",
+ "aggiornato": "2026-10-22T16:12+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "santagata-de-goti-interruzione-luce-28-ottobre",
+   "titolo": "Sant'Agata de' Goti, mercoledì 28 ottobre senza luce dalle 8 alle 15:30 per lavori urgenti",
+   "titolo_google": "Sant'Agata de' Goti, niente luce il 28 ottobre per lavori",
+   "sintesi": "Mercoledì 28 ottobre, dalle 8 alle 15:30, E-Distribuzione interrompe la corrente a Sant'Agata de' Goti per lavori urgenti. Le vie interessate sono negli avvisi allegati sul sito del Comune.",
+   "categoria": "altro",
+   "zona": "caudina",
+   "immagine": "luce",
+   "luogo": "Sant'Agata de' Goti",
+   "pubblicato": "2026-10-22T15:30:00+02:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "in_vigore_fino": "2026-10-28",
+   "fonti": [
+    {
+     "nome": "Comune di Sant'Agata de' Goti",
+     "url": "https://www.comune.santagatadegoti.bn.it/novita/avvisi/novita_44.html"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Mercoledì 28 ottobre, dalle 8 alle 15:30, a Sant'Agata de' Goti manca la corrente in alcune vie. Lo avvisa il Comune, che pubblica la comunicazione di E-Distribuzione, la società che gestisce la rete elettrica: servono lavori urgenti agli impianti.",
+      "fonti": [
+       "Comune di Sant'Agata de' Goti"
+      ]
+     },
+     {
+      "testo": "Le strade e i numeri civici interessati sono nei volantini allegati all'avviso sul sito del Comune. Durante i lavori la luce può tornare per un momento: E-Distribuzione invita a non fare imprudenze e a non usare gli ascensori.",
+      "fonti": [
+       "Comune di Sant'Agata de' Goti"
+      ]
+     },
+     {
+      "testo": "Per informazioni sui lavori si può usare il sito www.e-distribuzione.it, oppure mandare un SMS al 320 2041500 con il codice POD (quello scritto in bolletta). Per segnalare un guasto c'è il numero verde 803 500.",
+      "fonti": [
+       "Comune di Sant'Agata de' Goti"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quali vie sono interessate: l'elenco è solo negli allegati, che non ho potuto leggere."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Sant'Agata de' Goti",
+      "titolo": "Avviso di interruzione Energia Elettrica previste per il giorno Mercoledì 28 Ottobre 2026",
+      "url": "https://www.comune.santagatadegoti.bn.it/novita/avvisi/novita_44.html",
+      "data": "22 ott"
+     }
+    ]
+   },
+   "foto": "luce-2"
+  },
+  {
+   "id": "cautano-truffe-finti-carabinieri-avviso",
+   "titolo": "Cautano, il comandante dei Carabinieri avverte: false divise chiedono soldi e gioielli",
+   "titolo_google": "Cautano, truffe di finti carabinieri: l'avviso dell'Arma",
+   "sintesi": "Il comandante della Stazione dei Carabinieri di Cautano avverte che sul territorio girano persone che si spacciano per carabinieri o poliziotti e chiedono denaro, gioielli o altri valori.",
+   "categoria": "altro",
+   "zona": "caudina",
+   "luogo": "Cautano",
+   "pubblicato": "2026-10-22T15:24:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/non-consegnate-soldi-o-gioielli-lallerta-truffe-nel-sannio/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il comandante della Stazione dei Carabinieri di Cautano, paese della Valle Telesina, ha lanciato un avviso ai cittadini: sul territorio sono stati segnalati tentativi di truffa di persone che si presentano come appartenenti all'Arma o alla Questura e chiedono denaro, gioielli o altri oggetti di valore.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "I truffatori possono usare motivi urgenti per spingere le vittime ad agire senza riflettere. Il comandante raccomanda di non consegnare soldi o gioielli a sconosciuti e di non aprire la porta a chi non si è identificato.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Se arriva una telefonata sospetta, bisogna interrompere la conversazione e chiamare direttamente il 112 per le verifiche. Ogni episodio va segnalato subito alle forze dell'ordine. Il comandante chiede anche di avvisare gli anziani e le persone più fragili, spesso presi di mira, e di condividere l'avviso.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quanti tentativi ci sono stati e dove precisamente.",
+     "Se qualcuno ha già consegnato soldi o gioielli."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "“Non consegnate soldi o gioielli”: l’allerta truffe nel Sannio",
+      "url": "https://www.anteprima24.it/benevento/non-consegnate-soldi-o-gioielli-lallerta-truffe-nel-sannio/",
+      "data": "22 ott, 15:24"
+     }
+    ]
+   }
+  },
   {
    "id": "miwa-basket-benevento-ragusa-25-ottobre",
    "titolo": "Basket B Interregionale, la Miwa Benevento domenica 25 ottobre a Ragusa contro la Virtus Kleb",
@@ -4207,14 +4319,14 @@
   },
   {
    "id": "trenitalia-carnet-smart-working",
-   "titolo": "Trenitalia cancella i carnet Smart Working e mette 2 euro a prenotazione sull'Alta Velocità: il consigliere regionale Mastella chiede un incontro per i pendolari di Benevento e Caserta",
-   "titolo_google": "Benevento, addio carnet Smart Working di Trenitalia",
-   "sintesi": "Secondo il consigliere regionale Pellegrino Mastella, lo stop ai carnet Smart Working e il costo di 2 euro per ogni prenotazione dell'abbonamento Alta Velocità farebbero salire la spesa dei pendolari verso Roma. Chiede un incontro urgente con i vertici campani di Trenitalia.",
+   "titolo": "Trenitalia, sospese le nuove regole sui carnet Smart Working: il ministro Salvini annuncia un tavolo dopo le proteste dei pendolari di Benevento",
+   "titolo_google": "Carnet Smart Working Trenitalia sospesi, pendolari Benevento",
+   "sintesi": "Il ministro Salvini ha annunciato giovedì 22 ottobre la sospensione delle novità sui carnet Smart Working di Trenitalia, in attesa di un tavolo con i consumatori. Mastella aveva denunciato il rincaro per i pendolari di Benevento e Caserta.",
    "categoria": "altro",
    "zona": "benevento",
    "immagine": "treno",
    "luogo": "Benevento",
-   "pubblicato": "2026-10-20T11:22:00+02:00",
+   "pubblicato": "2026-10-22T15:45:00+02:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
@@ -4229,10 +4341,30 @@
     {
      "nome": "Cronache del Sannio",
      "url": "https://www.cronachedelsannio.it/sannionews24/stop-carnet-smart-working-pellegrino-mastella-chiede-incontro-urgente-trenitalia/"
+    },
+    {
+     "nome": "NTR24 (22/10)",
+     "url": "https://www.ntr24.tv/2026/10/22/carnet-ferroviari-trenitalia-sospende-le-nuove-regole-soddisfatto-pellegrino-mastella-ora-servono-garanzie-per-i-pendolari/"
     }
    ],
    "articolo": {
-    "cronologia": [],
+    "cronologia": [
+     {
+      "data": "20 ottobre",
+      "fatto": "Mastella chiede un incontro urgente ai vertici campani di Trenitalia per i carnet cancellati.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     },
+     {
+      "data": "22 ottobre",
+      "fatto": "Salvini annuncia la sospensione delle novità sui carnet, in attesa di un tavolo con le associazioni dei consumatori.",
+      "fonti": [
+       "NTR24 (22/10)"
+      ]
+     }
+    ],
     "concordano": [
      {
       "testo": "Mastella chiede un incontro urgente a Trenitalia e cita gli stessi numeri: carnet a 129 euro oggi, 387 euro da Benevento e 342 da Caserta per lo stesso numero di viaggi, più 2 euro a prenotazione.",
@@ -4244,8 +4376,8 @@
     ],
     "divergono": [],
     "non_si_sa": [
-     "La posizione di Trenitalia, che negli articoli letti non è riportata.",
-     "Da quando le nuove regole valgono."
+     "Quando si riunirà il tavolo con le associazioni dei consumatori.",
+     "Per quanto tempo restano sospese le nuove regole e se il carnet Smart Working tornerà com'era."
     ],
     "fonti": [
      {
@@ -4259,31 +4391,54 @@
       "titolo": "Cancellazione carnet Smart Working, Mastella: “Chiesto confronto con vertici Trenitalia”",
       "url": "https://www.anteprima24.it/benevento/cancellazione-carnet-smart-working-mastella-chiesto-confronto-con-vertici-trenitalia/",
       "data": "20 ott, 11:22"
+     },
+     {
+      "nome": "NTR24 (22/10)",
+      "titolo": "Carnet ferroviari, Trenitalia sospende le nuove regole. Soddisfatto Pellegrino Mastella: «Ora servono garanzie per i pendolari»",
+      "url": "https://www.ntr24.tv/2026/10/22/carnet-ferroviari-trenitalia-sospende-le-nuove-regole-soddisfatto-pellegrino-mastella-ora-servono-garanzie-per-i-pendolari/",
+      "data": "22 ott, 15:45"
      }
     ],
     "racconto": [
+     {
+      "testo": "Giovedì 22 ottobre il ministro dei Trasporti Matteo Salvini ha annunciato la sospensione delle novità sui carnet Smart Working di Trenitalia, in attesa di un tavolo di confronto con le associazioni dei consumatori. Pellegrino Mastella la chiama «una prima risposta positiva» a un disagio che aveva portato all'attenzione delle istituzioni, e dice che il passo è temporaneo: ora servono soluzioni concrete e durature.",
+      "fonti": [
+       "NTR24 (22/10)"
+      ],
+      "giorno": "2026-10-22"
+     },
      {
       "testo": "Il consigliere regionale Pellegrino Mastella (gruppo Casa Riformista – Italia Viva – Noi di Centro) chiede un incontro urgente ai vertici campani di Trenitalia. Il tema è la cancellazione dei carnet Smart Working e il nuovo costo di 2 euro per ogni prenotazione dell'abbonamento Alta Velocità. Secondo lui i pendolari di Benevento e Caserta che vanno a Roma rischiano di spendere molto di più.",
       "fonti": [
        "NTR24",
        "Anteprima24"
-      ]
+      ],
+      "giorno": "2026-10-20"
      },
      {
       "testo": "I conti li fa Mastella, non Trenitalia. Oggi il carnet da dieci corse da e per Roma costa 129 euro al mese, sia da Caserta sia da Benevento. Per avere lo stesso numero di viaggi, dice, chi parte da Benevento potrebbe arrivare a 387 euro e chi parte da Caserta a 342. A questo si aggiungono i 2 euro per ogni prenotazione, che finora secondo i pendolari era gratuita.",
       "fonti": [
        "NTR24",
        "Anteprima24"
-      ]
+      ],
+      "giorno": "2026-10-20"
      },
      {
       "testo": "Il consigliere ammette che l'obiettivo possa essere ridurre le prenotazioni non usate, ma chiede strumenti mirati che non penalizzino chi usa il treno per lavorare. Vuole risposte chiare e soluzioni alternative, a partire dal ritorno del carnet Smart Working e da una revisione del costo delle prenotazioni. I collegamenti con Roma, dice, sono essenziali per lavoratori e professionisti delle aree interne.",
       "fonti": [
        "NTR24",
        "Anteprima24"
-      ]
+      ],
+      "giorno": "2026-10-20"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Giovedì 22 ottobre il ministro Salvini ha annunciato la sospensione delle novità sui carnet Smart Working di Trenitalia, in attesa di un tavolo con le associazioni dei consumatori.",
+     "fonti": [
+      "NTR24 (22/10)"
+     ],
+     "quando": "2026-10-22T16:12+02:00"
+    }
    },
    "foto": "treno-2"
   },
@@ -4639,12 +4794,12 @@
    "id": "tir-appia-telesina",
    "titolo": "Caro gasolio, tir fermi sull'Appia a Tufara Valle e a Castel del Lago, blocchi anche sulla Telesina a San Salvatore Telesino",
    "titolo_google": "Tir fermi sull'Appia e sulla Telesina per il caro gasolio",
-   "sintesi": "Dal 19 ottobre gli autotrasportatori protestano contro il prezzo del gasolio e i blocchi continuano per la seconda notte: tre presìdi a Castel del Lago, a Tufara Valle sull'Appia e a San Salvatore Telesino sulla Telesina. Da giovedì 22 si aggiungono gli agricoltori. Giovedì 22 il Governo ha approvato il decreto «Aiuti».",
+   "sintesi": "Dal 19 ottobre gli autotrasportatori protestano contro il prezzo del gasolio e i blocchi continuano per la seconda notte: tre presìdi a Castel del Lago, a Tufara Valle sull'Appia e a San Salvatore Telesino sulla Telesina. Da giovedì 22 si aggiungono gli agricoltori. Giovedì 22 il Governo ha approvato il decreto «Aiuti» e Meloni ha detto che le associazioni hanno revocato i fermi, mentre in alcune zone i blocchi continuano.",
    "categoria": "strade",
    "zona": "provincia",
    "immagine": "camion",
    "luogo": "Tufara Valle",
-   "pubblicato": "2026-10-22T15:01:00+02:00",
+   "pubblicato": "2026-10-22T15:49:00+02:00",
    "stato": "confermata",
    "fonti": [
     {
@@ -4714,15 +4869,19 @@
     {
      "nome": "Lab TV (decreto Aiuti)",
      "url": "https://www.labtv.net/politica/2026/10/22/caro-carburanti-il-governo-approva-il-decreto-aiuti-sostegni-per-autotrasportatori-agricoltori-e-pescatori/"
+    },
+    {
+     "nome": "BeneventoNews24 (decreto)",
+     "url": "https://www.beneventonews24.it/2026/10/22/il-cdm-approva-il-decreto-sugli-aiuti-continuano-i-blocchi-dei-tir-al-sud-fermi-anche-i-pescherecci/"
     }
    ],
    "articolo": {
     "aggiornamento": {
-     "testo": "Giovedì 22 ottobre il Governo ha approvato il decreto «Aiuti» con sostegni per autotrasportatori, agricoltori e pescatori; le associazioni nazionali dell'autotrasporto sono convocate al Ministero dei Trasporti il 27 ottobre. Nel Sannio non risulta ancora la fine dei presìdi.",
+     "testo": "Giovedì 22 ottobre, dopo il Consiglio dei ministri, la premier Meloni ha detto che le associazioni dell'autotrasporto hanno revocato i fermi dopo l'accordo con il governo, ma che in alcune zone continuano i blocchi e saranno usate le norme che li puniscono come reato. Nel Sannio non risulta la fine dei presìdi.",
      "fonti": [
-      "Lab TV (decreto Aiuti)"
+      "BeneventoNews24 (decreto)"
      ],
-     "quando": "2026-10-22T15:12+02:00"
+     "quando": "2026-10-22T16:12+02:00"
     },
     "aggiornato": "2026-10-20T09:25:00+02:00",
     "cronologia": [
@@ -5051,9 +5210,22 @@
       "titolo": "Caro carburanti, il Governo approva il decreto Aiuti: sostegni per autotrasportatori, agricoltori e pescatori",
       "url": "https://www.labtv.net/politica/2026/10/22/caro-carburanti-il-governo-approva-il-decreto-aiuti-sostegni-per-autotrasportatori-agricoltori-e-pescatori/",
       "data": "22 ott, 15:01"
+     },
+     {
+      "nome": "BeneventoNews24 (decreto)",
+      "titolo": "Il Cdm approva il decreto sugli aiuti. Continuano i blocchi dei Tir al Sud, fermi anche i pescherecci",
+      "url": "https://www.beneventonews24.it/2026/10/22/il-cdm-approva-il-decreto-sugli-aiuti-continuano-i-blocchi-dei-tir-al-sud-fermi-anche-i-pescherecci/",
+      "data": "22 ott, 15:49"
      }
     ],
     "racconto": [
+     {
+      "testo": "Dopo il Consiglio dei ministri la premier Giorgia Meloni ha detto che il governo ha firmato un accordo con le associazioni dell'autotrasporto e che quelle associazioni hanno revocato i fermi e le manifestazioni. Ha aggiunto che «in alcune zone» pochi soggetti continuano a bloccare le strade, e che il governo userà tutti gli strumenti della legge, comprese le norme che hanno reso reato il blocco stradale. Il giornale non dice quali zone, né se il Sannio è tra queste: i presìdi sanniti, intanto, risultano ancora in piedi nelle altre fonti.",
+      "fonti": [
+       "BeneventoNews24 (decreto)"
+      ],
+      "giorno": "2026-10-22"
+     },
      {
       "testo": "Giovedì 22 ottobre, a livello nazionale, il Consiglio dei ministri ha approvato il decreto-legge «Aiuti» contro il caro carburante, secondo Lab TV. Per l'autotrasporto ci sono oltre 66 milioni in più di credito d'imposta sul gasolio comprato tra marzo e agosto 2026, 60 milioni per gli acquisti dal 1° settembre al 5 ottobre e la sospensione per sette mesi dei canoni di leasing dei mezzi per le piccole e medie imprese. Per l'agricoltura sono stanziati 60 milioni, con un contributo fino a 45 centesimi al litro, e per la pesca 10 milioni a fondo perduto.",
       "fonti": [
