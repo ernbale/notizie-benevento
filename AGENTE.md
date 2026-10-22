@@ -90,15 +90,15 @@ Lavora in parallelo (6-8 letture insieme). Per ogni fonte tieni nota: letta / no
   lavori e avvisi `https://www.rfi.it/content/rfi/it/news-e-media/infomobilita.rss.notices.campania.xml`. Tieni solo le
   linee che passano dal Sannio: Caserta–Benevento–Foggia (Telese, Solopaca, Benevento), Benevento–Avellino–Salerno,
   Benevento–Campobasso.
-- Albo pretorio del Comune di Benevento, le ultime pubblicazioni:
-  `https://albo.comune.benevento.it/mc/mc_p_ricerca.php?noHeaderFooter=1&` (la pagina è in latin-1). È la fonte più
+- Albo pretorio del Comune di Benevento: file `albo.json` delle fonti lette da casa (dal cloud il sito non si apre),
+  con le ordinanze dell'ultima settimana (`mittente`, `numero_atto`, `data`, `testo` = l'oggetto). È la fonte più
   diretta per strade chiuse, divieti, scuole e chiusure: le ordinanze escono qui prima che sui giornali. Tieni solo le
   **ordinanze** (Tipo «Ordinanza», mittenti come Servizio Traffico, Sindaco, Polizia Municipale) che cambiano qualcosa
   per molte persone (strade o incroci chiusi, sensi unici, chiusure di scuole e parchi, acqua, grandi eventi); salta
-  determine, decreti, nomine e i divieti di sosta per un singolo trasloco o cantiere privato. Da citare il link della
-  pubblicazione: `https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=<numero>` (il numero è nella pagina).
-- Regione Campania: comunicati stampa `https://www.regione.campania.it/comunicazione/area-stampa/comunicati` e notizie
-  nel feed `https://www.regione.campania.it/rss.xml`. Tieni solo quello che riguarda il Sannio (soldi e decisioni per
+  i divieti di sosta per un singolo trasloco o cantiere privato. Da citare il `link` della voce (la pubblicazione
+  nell'albo).
+- Regione Campania: file `regione.json` delle fonti lette da casa (dal cloud il sito risponde 403), con i comunicati
+  stampa e il loro testo. Tieni solo quello che riguarda il Sannio (soldi e decisioni per
   Benevento e i suoi Comuni, ospedali, strade, trasporti, lavoro) o tutta la Campania con effetti qui (allerte,
   sanità, scuole, trasporti).
 - **I comunicati di queste fonti bastano da soli** (regola 2, `"stato": "ufficiale"`) e spesso escono ore prima che i
@@ -117,11 +117,13 @@ Lavora in parallelo (6-8 letture insieme). Per ogni fonte tieni nota: letta / no
   gialla, Orange = arancione, Red = rossa), tipo (Rain = pioggia, Thunderstorm = temporali, Wind = vento, Snow = neve…)
   e orari **in UTC** (convertili in ora italiana). Vale per tutta la regione: vedi le regole delle Allerte qui sotto.
 
-**Fonti lette da casa (ANAS, ASL, TV7, Comuni).** ANAS, ASL e TV7 dal cloud non si aprono: ANAS e TV7 rifiutano le
+**Fonti lette da casa (ANAS, ASL, TV7, Comuni, Albo pretorio di Benevento, Regione).** ANAS, ASL, TV7, l'albo e la
+Regione dal cloud non si aprono: ANAS e TV7 rifiutano le
 connessioni dall'estero, l'ASL ha il certificato incompleto. Non provare ad aprirli e non segnarli «non
 raggiungibili» per questo: li scarica ogni 30 minuti un computer di casa nell'archivio privato
 `ernbale/notizie-benevento-fonti`, che trovi già clonato accanto a questo (`../notizie-benevento-fonti/`; se non c'è,
-cercalo con `ls /home/user`). File `anas.json`, `asl.json`, `tv7.json`, `comuni.json`: `controllato` = ultimo tentativo, `esito`,
+cercalo con `ls /home/user`). File `anas.json`, `asl.json`, `tv7.json`, `comuni.json`, `albo.json`, `regione.json`:
+`controllato` = ultimo tentativo, `esito`,
 `voci` con titolo, `link` originale (è quello da citare tra le fonti), `data` e `testo` intero, che vale come
 articolo aperto. Nel registro delle fonti scrivi `letta (da casa, controllato HH:MM)`. Se `controllato` è più
 vecchio di 3 ore o `esito` dice «non raggiungibile», scrivi `non raggiungibile (copia di casa ferma dalle HH:MM)`;

@@ -7,6 +7,8 @@ nell'archivio privato ernbale/notizie-benevento-fonti, che l'agente trova accant
 - ASL Benevento: notizie e avvisi. Il sito ha il certificato incompleto (manca il pezzo intermedio di Actalis,
   che Chrome si procura da solo e i programmi no): lo si scarica una volta e si aggiunge.
 - TV7 Benevento: il feed senza le notizie nazionali dell'agenzia AdnKronos, con il testo intero degli articoli.
+- Albo pretorio del Comune di Benevento (le ordinanze appena pubblicate) e comunicati stampa della Regione Campania:
+  dal cloud dell'agente non si aprono (22 ott 2026), da casa sì.
 - I 78 Comuni della provincia: gli avvisi e le notizie nuovi sui loro siti, col testo (dal 22 ott 2026). Ogni Comune
   ha il suo sistema (Halley, WordPress, Designers Italia…): si leggono le pagine con l'elenco e si aprono solo i link
   mai visti prima, ricordati in comuni-visti.json (fuori dall'archivio). La prima volta che si legge un Comune si
@@ -53,6 +55,8 @@ ASL_LISTA = "https://www.aslbenevento.it/notizie"
 ASL_INTERMEDIO = "http://cacert.actalis.it/certs/actalis-authovg3"   # dall'«Authority Information Access» del sito
 ANAS_RSS = "https://www.stradeanas.it/it/rss.xml"   # nazionale, solo gli ultimi 10: serve per i comunicati appena usciti
 TV7_FEED = "https://www.tvsette.net/feed/?cat=-228"   # 228 = AdnKronos: notizie nazionali d'agenzia, più di metà del feed
+ALBO_BN = "https://albo.comune.benevento.it/mc/mc_p_ricerca.php?noHeaderFooter=1&"
+REGIONE = "https://www.regione.campania.it/comunicazione/area-stampa/comunicati"
 
 
 def fuso():
@@ -63,14 +67,14 @@ def fuso():
         return dt.timezone(dt.timedelta(hours=1))
 
 
-def scarica(url, ctx=None):
+def scarica(url, ctx=None, codifica="utf-8"):
     # prima curl, con 3 tentativi: TV7 (dietro Cloudflare) a volte resta muto con Python e risponde a curl, e la sera
     # del 21 ott 2026 ci metteva da 1 a 30 secondi a richiesta. L'ASL (ctx col certificato aggiunto) va solo con Python.
     if ctx is None:
         p = subprocess.run(["curl", "-sfL", "--compressed", "-m", "60", "--retry", "2", "--retry-all-errors",
                             "-A", UA, "-H", "Accept-Language: it-IT,it;q=0.9", url], capture_output=True)
         if p.returncode == 0:
-            return p.stdout.decode("utf-8", "replace")
+            return p.stdout.decode(codifica, "replace")
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "it-IT,it;q=0.9"})
     with urllib.request.urlopen(req, timeout=30, context=ctx) as r:
         return r.read().decode(r.headers.get_content_charset() or "utf-8", "replace")
@@ -275,6 +279,50 @@ COMUNI = [   # (Comune, pagine con l'elenco di avvisi e notizie); None = sito ch
     ('Vitulano', ['https://comune.vitulano.bn.it/', 'https://comune.vitulano.bn.it/novita/']),
 ]
 
+def albo_bn(vecchie):
+    """L'albo pretorio del Comune di Benevento: le ordinanze (traffico, divieti, scuole…) delle prime pagine.
+    La pagina è in latin-1; ogni pubblicazione ha i suoi campi in una cella «visible-xs» («Tipo», «Oggetto»…)."""
+    voci = []
+    for pag in (1, 2, 3):
+        pagina = scarica(ALBO_BN + (f"&pag={pag}" if pag > 1 else ""), codifica="latin-1")
+        for id_, blocco in re.findall(r'<td data-id="(\d+)" class="visible-xs">(.*?)</td>', pagina, re.S):
+            campi = {testo(k).lower(): testo(v).replace("\n", " ")
+                     for k, v in re.findall(r"<strong>(.*?)</strong>\s*<div[^>]*>(.*?)</div>", blocco, re.S)}
+            if "ordinanz" not in campi.get("tipo", "").lower():
+                continue   # determine, decreti, nomine, notifiche: non sono notizie
+            g = re.match(r"(\d{2})/(\d{2})/(\d{4})", campi.get("data inizio", ""))
+            voci.append({"titolo": campi.get("oggetto", "")[:300],
+                         "link": f"https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl={id_}",
+                         "data": f"{g[3]}-{g[2]}-{g[1]}" if g else "", "mittente": campi.get("mittente", ""),
+                         "tipo": campi.get("tipo", ""), "numero_atto": campi.get("numero atto", ""),
+                         "data_atto": campi.get("data atto", ""), "testo": campi.get("oggetto", "")})
+    return voci
+
+
+def regione(vecchie):
+    """I comunicati stampa della Regione Campania, col testo (l'agente tiene solo quelli che riguardano il Sannio)."""
+    pagina = scarica(REGIONE)
+    voci, aperte = [], 0
+    for href, titolo in re.findall(r'<a href="(https://www\.regione\.campania\.it/comunicazione/area-stampa/comunicati/'
+                                   r'[^"#?]+)"\s+title="Vai a ([^"]+)"', pagina):
+        if href in vecchie:
+            voci.append(vecchie[href])
+            continue
+        if aperte >= NUOVE_PER_GIRO:
+            continue
+        aperte += 1
+        b = scarica(href)
+        i = b.find("<h1")
+        j = b.find("<footer", i if i >= 0 else 0)
+        g = re.match(r"(\d{2})/(\d{2})/(\d{4})", html.unescape(titolo))
+        righe = testo(b[i if i >= 0 else 0:j if j > 0 else len(b)]).split("\n")
+        inizio = next((k for k, r in enumerate(righe) if re.match(r"\d{2}/\d{2}/\d{4} - Comunicato", r)), 0)
+        voci.append({"titolo": html.unescape(titolo), "link": href,
+                     "data": f"{g[3]}-{g[2]}-{g[1]}" if g else "",
+                     "testo": "\n".join(righe[inizio + 1:])[:5000]})   # dopo il titolo: niente menu del sito
+    return voci
+
+
 # un link è un avviso o una notizia se ha la forma di quelli dei sistemi usati dai Comuni del Sannio
 VOCE_COMUNE = re.compile(r"/(novita|notizi[ae]|news|avvis[oi]|comunicat[oi](?:[-_]stampa)?|ordinanz[ae])(/|_)|novita_\d+\.html"
                          r"|mostra_news\.php\?id=\d+|[?&]art=\d+|/new/\d{3,}-[^/]+\.html$", re.I)
@@ -385,6 +433,8 @@ FONTI = {
     "asl": ("ASL Benevento, notizie e avvisi", ASL_LISTA, asl, 30),
     "tv7": ("TV7 Benevento (tvsette.net), feed con il testo degli articoli", TV7_FEED, tv7, 4),
     "comuni": ("I siti dei 78 Comuni della provincia, avvisi e notizie nuovi", "siti dei Comuni", comuni, 4),
+    "albo": ("Albo pretorio del Comune di Benevento, ordinanze", ALBO_BN, albo_bn, 7),
+    "regione": ("Regione Campania, comunicati stampa col testo", REGIONE, regione, 4),
 }
 
 
@@ -425,6 +475,10 @@ incompleto.
 - `anas.json`: comunicati ANAS della Campania, ultimi 10 giorni (`data` senza ora, `compartimento` = ufficio ANAS).
 - `asl.json`: notizie e avvisi dell'ASL Benevento, ultimi 30 giorni.
 - `tv7.json`: articoli di TV7 Benevento con il testo, ultimi 4 giorni (TV7 copre anche Irpinia e Campania).
+- `albo.json`: le ordinanze dell'albo pretorio del Comune di Benevento, ultimi 7 giorni (`mittente`, `numero_atto`,
+  `data` = inizio della pubblicazione; il `testo` è l'oggetto dell'ordinanza).
+- `regione.json`: i comunicati stampa della Regione Campania col testo, ultimi 4 giorni (tutta la Campania: tenere
+  solo quelli che riguardano il Sannio).
 - `comuni.json`: avvisi e notizie NUOVI dei siti dei 78 Comuni della provincia, ultimi 4 giorni: `comune`,
   `primo_visto` (quando è comparso sul sito: per sapere cosa è nuovo dall'ultimo giro), `data_avviso` (la prima data
   scritta nella pagina, se c'è), `testo`. `comuni_letti` e `comuni_non_letti` dicono quali siti si sono letti.
