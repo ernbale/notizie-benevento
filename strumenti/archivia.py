@@ -136,6 +136,102 @@ def controlla_registro(percorso, err):
                    "una riga per Comune)")
 
 
+GIORNI_DIARIO = 14   # il diario dei giri resta 14 giorni (diario/AAAA-MM-GG.json, cifrato)
+
+
+def leggi_diario(percorso, err):
+    """Il diario del giro scritto dall'agente (/tmp/diario.json): riassunto, notizie scartate e perché, dubbi."""
+    try:
+        with open(percorso, encoding="utf-8") as f:
+            g = json.load(f)
+    except OSError:
+        err.append(f"manca il diario del giro {percorso}: scrivi riassunto, scartate (fatto, fonti, motivo) e dubbi "
+                   "(AGENTE.md, «Il diario del giro»)")
+        return None
+    except ValueError as e:
+        err.append(f"il diario del giro {percorso} non è un JSON valido: {e}")
+        return None
+    if not isinstance(g, dict) or vuoto(g.get("riassunto")):
+        err.append("diario del giro: manca il «riassunto»")
+        return None
+    if not isinstance(g.get("scartate"), list):
+        err.append("diario del giro: «scartate» deve essere un elenco, anche vuoto []")
+    else:
+        for x in g["scartate"]:
+            if not isinstance(x, dict) or vuoto(x.get("fatto")) or vuoto(x.get("motivo")):
+                err.append(f"diario del giro: ogni scartata vuole «fatto» e «motivo» ({str(x)[:80]})")
+    return g
+
+
+def righe_registro(percorso):
+    """Il registro delle fonti diviso in fonti e ricerche, per il diario."""
+    fonti, ricerche = [], []
+    try:
+        with open(percorso, encoding="utf-8") as f:
+            righe = f.read().splitlines()
+    except OSError:
+        return fonti, ricerche
+    for r in righe:
+        p = [x.strip() for x in r.split("|")]
+        if len(p) < 2:
+            continue
+        if p[0].lower().startswith("ricerca"):
+            ricerche.append({"cosa": re.sub(r"^ricerca\w*\s*:?\s*", "", p[0], flags=re.I), "trovato": " | ".join(p[2:])})
+        else:
+            fonti.append({"nome": p[0], "stato": p[1], "novita": " | ".join(p[2:])})
+    return fonti, ricerche
+
+
+def voce_diario(giro, d, prima, vanno, registro, inizio, adesso):
+    """Quello che il giro ha fatto: le notizie nuove e aggiornate le calcola il programma (confronto con l'ultima
+    versione pubblicata), le scartate, i dubbi e il riassunto li scrive l'agente."""
+    vecchie = {n.get("id"): n for n in (prima or {}).get("notizie", [])}
+    impronta = lambda n: json.dumps({k: n.get(k) for k in ("titolo", "sintesi", "fonti", "stato", "rilevante",
+                                                           "in_vigore_fino", "articolo")},
+                                    ensure_ascii=False, sort_keys=True, default=str)
+    nuove, aggiornate = [], []
+    for n in d["notizie"]:
+        v = vecchie.get(n.get("id"))
+        if prima is not None and v is None:
+            nuove.append({"id": n["id"], "titolo": n.get("titolo"), "stato": n.get("stato"),
+                          "fonti": [f.get("nome") for f in n.get("fonti", [])]})
+        elif v is not None and impronta(n) != impronta(v):
+            ag = (n.get("articolo") or {}).get("aggiornamento") or {}
+            vag = (v.get("articolo") or {}).get("aggiornamento") or {}
+            aggiornate.append({"id": n["id"], "titolo": n.get("titolo"),
+                               "aggiornamento": ag.get("testo") if ag.get("testo") != vag.get("testo") else None,
+                               "fonti_nuove": sorted({f.get("nome") for f in (n.get("articolo") or {}).get("fonti", [])} -
+                                                     {f.get("nome") for f in (v.get("articolo") or {}).get("fonti", [])})})
+    fonti, ricerche = righe_registro(registro)
+    durata, partenza = None, adesso
+    try:   # il giro si chiama con l'ora in cui è partito (09:05), così rilanciare archivia non lo conta due volte
+        with open(inizio, encoding="utf-8") as f:
+            t = dt.datetime.fromisoformat(f.read().strip())
+        if dt.timedelta(0) <= adesso - t < dt.timedelta(hours=2):
+            durata, partenza = round((adesso - t).total_seconds() / 60, 1), t.astimezone(adesso.tzinfo)
+    except (OSError, ValueError, TypeError):
+        pass
+    return {"ora": partenza.strftime("%H:%M"), "fine": adesso.strftime("%H:%M"), "durata_min": durata,
+            "riassunto": giro.get("riassunto"),
+            "nuove": nuove, "aggiornate": aggiornate, "archiviate": [n["id"] for n in vanno],
+            "scartate": giro.get("scartate") or [], "dubbi": giro.get("dubbi") or [], "eventi": giro.get("eventi"),
+            "fonti": fonti, "ricerche": ricerche, "notizie_in_prima": len(d["notizie"]) - len(vanno)}
+
+
+def scrivi_diario(base, voce, oggi):
+    """Aggiunge la voce cifrata a diario/AAAA-MM-GG.json; dice quali file scrivere e quali giorni vecchi togliere."""
+    import diario
+    cart = os.path.join(base, "diario")
+    p = os.path.join(cart, f"{oggi.isoformat()}.json")
+    giorno = leggi(p, None) or {"giorno": oggi.isoformat(), "voci": []}
+    giorno["voci"] = [v for v in giorno.get("voci", []) if v.get("ora") != voce["ora"]]   # un giro rilanciato non si conta due volte
+    giorno["voci"].append({"ora": voce["ora"], "busta": diario.cifra(voce)})
+    soglia = (oggi - dt.timedelta(days=GIORNI_DIARIO)).isoformat()
+    vecchi = [x for x in glob.glob(os.path.join(cart, "[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].json"))
+              if os.path.basename(x)[:10] < soglia]
+    return (p, json.dumps(giorno, ensure_ascii=False, indent=1) + "\n"), vecchi
+
+
 def chiave_momento(c, rif):
     """Quando è successo un fatto della cronologia, per metterlo in ordine: «quando» se c'è, se no dal testo di «data»
     («19 ottobre», «20 ottobre, 10:30», «notte 18-19», «21 ottobre, mattina», «ottobre 2025»). None se non si capisce.
@@ -510,6 +606,8 @@ def main():
     ap.add_argument("--giro", action="store_true", help="fine del giro dell'agente: controlla il registro delle fonti "
                     "e mette l'ora di adesso in «aggiornato»")
     ap.add_argument("--registro", default="/tmp/fonti.txt", help="il registro delle fonti del giro")
+    ap.add_argument("--diario", default="/tmp/diario.json", help="il diario del giro scritto dall'agente")
+    ap.add_argument("--inizio", default="/tmp/inizio_giro", help="l'ora di inizio del giro (per la durata)")
     ap.add_argument("--cartella", default=os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     a = ap.parse_args()
     base = a.cartella
@@ -535,8 +633,10 @@ def main():
         except Exception:
             adesso_roma = None
     controlla(d, err, avv, adesso_roma)
+    giro = None
     if a.giro:
         controlla_registro(a.registro, err)
+        giro = leggi_diario(a.diario, err)
     p_eventi = os.path.join(base, "eventi.json")
     try:
         ev = leggi(p_eventi)
@@ -612,7 +712,8 @@ def main():
     # L'ora dei riquadri «Aggiornamento» e i fatti in ordine di tempo: li fa il programma, così non si sbagliano.
     if a.giro:   # il sito dice a che ora è stato controllato l'ultima volta, anche quando non c'è niente di nuovo
         d["aggiornato"] = (adesso_roma or dt.datetime.now(dt.timezone.utc).astimezone()).isoformat(timespec="minutes")
-    segna_aggiornamenti(d, pubblicate_prima(base), adesso_roma or dt.datetime.now(dt.timezone.utc).astimezone(), avv)
+    prima = pubblicate_prima(base)
+    segna_aggiornamenti(d, prima, adesso_roma or dt.datetime.now(dt.timezone.utc).astimezone(), avv)
     for x in d["notizie"] + d["approfondimenti"]:
         crono = x.get("cronologia") if "sommario" in x else (x.get("articolo") or {}).get("cronologia")
         rif = dt.date.fromisoformat(str(x.get("pubblicato") or x.get("aggiornato"))[:10])
@@ -719,6 +820,15 @@ def main():
         if vanno or vanno_ap or f.read() != testo_json(nuovo):
             da_scrivere.append((p_notizie, testo_json(nuovo)))
 
+    da_togliere = []
+    if giro is not None:   # il diario del giro, cifrato (strumenti/diario.py)
+        voce = voce_diario(giro, d, prima, vanno, a.registro, a.inizio,
+                           adesso_roma or dt.datetime.now(dt.timezone.utc).astimezone())
+        file_diario, da_togliere = scrivi_diario(base, voce, oggi)
+        da_scrivere.append(file_diario)
+        print(f"Diario del giro delle {voce['ora']}: {len(voce['nuove'])} nuove, {len(voce['aggiornate'])} aggiornate, "
+              f"{len(voce['scartate'])} scartate")
+
     print(f"Oggi {oggi.isoformat()}: in prima pagina {len(restano)} notizie e {len(restano_ap)} approfondimenti; "
           f"archiviate ora {len(vanno)} notizie e {len(vanno_ap)} approfondimenti; in archivio in tutto {len(voci)}.")
     for x in avv:
@@ -731,11 +841,14 @@ def main():
             print("CAMBIEREBBE:", os.path.relpath(p, base))
         if notizie_da_segnare:
             print("CAMBIEREBBE: notizie.json")
+        for p in da_togliere:
+            print("CAMBIEREBBE (tolto):", os.path.relpath(p, base))
         print("PROVA: niente è stato scritto")
         return
     os.makedirs(cart_arch, exist_ok=True)
     # Prima l'archivio, poi la prima pagina: se qualcosa va storto a metà, una notizia è al massimo in due posti, mai in nessuno.
     for p, t in da_scrivere:
+        os.makedirs(os.path.dirname(p), exist_ok=True)
         tmp = p + ".tmp"
         with open(tmp, "w", encoding="utf-8") as f:
             f.write(t)
@@ -743,6 +856,9 @@ def main():
         print("CAMBIATO:", os.path.relpath(p, base))
     if notizie_da_segnare:
         print("CAMBIATO: notizie.json")
+    for p in da_togliere:
+        os.remove(p)
+        print("CAMBIATO (tolto):", os.path.relpath(p, base))
     print("OK")
 
 

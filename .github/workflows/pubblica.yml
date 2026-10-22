@@ -66,6 +66,7 @@ jobs:
           STATISTICHE_PAROLA: ${{ secrets.STATISTICHE_PAROLA }}
           GSC_CHIAVE: ${{ secrets.GSC_CHIAVE }}
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          DIARIO_CHIAVE: ${{ secrets.DIARIO_CHIAVE }}
         run: |
           pip install --quiet cryptography || echo "::warning::cryptography non installato"
           if ! python3 strumenti/statistiche.py; then

@@ -13,3 +13,4 @@ meteo.json
 /sitemap-notizie.xml
 /feed.xml
 /statistiche/dati.json
+__pycache__/

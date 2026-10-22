@@ -490,6 +490,30 @@ Durante il giro scrivi in `/tmp/fonti.txt` una riga per ogni fonte: `nome | stat
 - Una riga per ogni **ricerca mirata**: `Ricerca: parole cercate | fatta | cosa ha trovato`. Almeno 6: 4 per le
   notizie (comprese quelle per le storie in corso) e 2 per gli eventi.
 
+## Il diario del giro (obbligatorio)
+
+All'inizio del giro segna l'ora: `TZ=Europe/Rome date -Iminutes | tee /tmp/inizio_giro`. Prima di consegnare scrivi
+`/tmp/diario.json`: il proprietario lo legge nella pagina privata delle statistiche («Dietro le quinte») per vedere
+cosa fai e soprattutto **cosa scarti**. `archivia.py --giro` lo cifra (il repository è pubblico, il diario no) e lo
+mette in `diario/AAAA-MM-GG.json`; le notizie nuove e aggiornate, le fonti e le ricerche le aggiunge da solo.
+
+```json
+{
+  "riassunto": "Una o due frasi: cosa c'era di nuovo in questo giro e cosa hai fatto.",
+  "scartate": [
+    {"fatto": "Di cosa si trattava, in poche parole", "fonti": ["Testata o fonte"],
+     "motivo": "Perché non l'hai pubblicata (o non hai aggiornato la notizia)"}
+  ],
+  "dubbi": ["Cose incerte che hai deciso in un modo, e perché (orari diversi tra due fonti, ecc.)"]
+}
+```
+- In `scartate` va **ogni fatto che hai considerato e non hai pubblicato**: una sola fonte non verificabile, fuori
+  provincia, vecchio o ripubblicato, già coperto da una notizia esistente (scrivi quale), pubblicità o comunicato
+  promozionale, voce non confermata, cronaca troppo piccola, ecc. Il motivo deve essere concreto. Elenco vuoto `[]`
+  solo se davvero non hai scartato niente.
+- Niente nomi di persone indagate, arrestate o coinvolte in fatti di cronaca, anche se il diario è privato.
+- Senza il diario `archivia.py --giro` stampa ERRORE e non scrive niente.
+
 ## Prima di consegnare (obbligatorio)
 
 Esegui `python3 strumenti/archivia.py --giro` (con `--giro` controlla anche il registro delle fonti e mette in

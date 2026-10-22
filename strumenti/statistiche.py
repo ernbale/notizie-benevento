@@ -4,6 +4,8 @@
 - Visite: Cloudflare Web Analytics (senza cookie: conta visite e pagine viste, non le persone), ultimi 30 giorni.
 - Il sito: notizie pubblicate, sezioni, zone, giornali e fonti citati (da notizie.json e dall'archivio).
 - Google: Search Console (account di servizio con permesso «Limitata», chiave nel segreto GSC_CHIAVE), ultimi 28 giorni.
+- Dietro le quinte: il diario cifrato dell'agente (diario/AAAA-MM-GG.json, scritto da archivia.py --giro), decifrato
+  qui con la chiave privata del segreto DIARIO_CHIAVE: giro per giro fonti, notizie nuove, aggiornate e scartate.
 - Facebook: la Pagina con la chiave FB_PAGE_TOKEN (la stessa che pubblica i post): follower, post, reazioni, commenti,
   condivisioni; persone raggiunte e visualizzazioni solo se la chiave ha anche il permesso read_insights. Facebook dà
   solo i follower di adesso: quelli dei giorni prima si riprendono dal dati.json già pubblicato.
@@ -382,6 +384,44 @@ def facebook(token, adesso, storico_prima):
     }
 
 
+# ---------- dietro le quinte: il diario dell'agente ----------
+GIORNI_AGENTE = 4
+
+
+def prossimo_giro(adesso):
+    """I giri partono alle :05 dalle 6 alle 22 (ora italiana); alle 23:05 solo la sera prima di un'allerta arancione o rossa."""
+    t = adesso.astimezone(fuso())
+    for h in range(t.hour, 23):
+        g = t.replace(hour=h, minute=5, second=0, microsecond=0)
+        if h >= 6 and g > t:
+            return {"ora": g.isoformat(timespec="minutes"), "nota": ""}
+    domani = (t + dt.timedelta(days=1)).replace(hour=6, minute=5, second=0, microsecond=0)
+    nota = "alle 23:05 c'è un giro solo se domani c'è un'allerta arancione o rossa" if t.hour < 23 else ""
+    return {"ora": domani.isoformat(timespec="minutes"), "nota": nota}
+
+
+def agente(sito, chiave_pem, adesso):
+    if not chiave_pem.strip():
+        return {"stato": "da collegare", "messaggio": "Manca la chiave del diario (segreto DIARIO_CHIAVE)."}
+    from cryptography.hazmat.primitives import serialization
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import diario
+    privata = serialization.load_pem_private_key(chiave_pem.encode(), password=None)
+    giri = []
+    for p in sorted(glob.glob(os.path.join(sito, "diario", "[0-9]*.json")), reverse=True)[:GIORNI_AGENTE]:
+        g = leggi(p, {}) or {}
+        for v in g.get("voci", []):
+            try:
+                x = diario.decifra(v["busta"], privata)
+            except Exception as e:
+                x = {"ora": v.get("ora"), "errore": f"questo giro non si legge ({type(e).__name__})"}
+            x["giorno"] = g.get("giorno")
+            giri.append(x)
+    giri.sort(key=lambda x: (x.get("giorno") or "", x.get("ora") or ""), reverse=True)
+    prima = leggi(os.path.join(sito, "notizie.json"), {}) or {}
+    return {"stato": "ok", "giri": giri, "prossimo": prossimo_giro(adesso), "ultimo_giro": prima.get("aggiornato")}
+
+
 # ---------- il sito: notizie e fonti ----------
 def sito_numeri(sito, adesso):
     oggi = adesso.astimezone(fuso()).date()
@@ -450,6 +490,13 @@ def main():
     except Exception as e:
         dati["google"] = {"stato": "errore", "messaggio": f"Search Console non ha risposto: {e}"}
         print("AVVISO Google:", e, file=sys.stderr)
+    try:
+        dati["agente"] = agente(a.sito, os.environ.get("DIARIO_CHIAVE", ""), adesso)
+        # nei log (pubblici) solo quanti giri, mai il contenuto
+        print("Dietro le quinte:", dati["agente"]["stato"], len(dati["agente"].get("giri") or []), "giri")
+    except Exception as e:
+        dati["agente"] = {"stato": "errore", "messaggio": f"Il diario non si legge: {e}"}
+        print("AVVISO diario:", e, file=sys.stderr)
     parola = os.environ.get("STATISTICHE_PAROLA", "")
     try:
         dati["facebook"] = facebook(os.environ.get("FB_PAGE_TOKEN", "").strip(), adesso,
