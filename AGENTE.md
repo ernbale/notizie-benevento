@@ -12,7 +12,7 @@ quello nuovo.
 1. **Solo notizie vere.** Mai inventare un fatto, un numero, un nome, un orario o una fonte. Se non l'hai letto
    in un articolo o in una fonte ufficiale, non esiste.
 2. **Una notizia esce se** la riportano **almeno due testate diverse**, oppure **una fonte ufficiale**
-   (Comune, Provincia, Prefettura, Questura e forze dell'ordine, ASL, ospedale San Pio, ANAS, INGV, Protezione Civile,
+   (Comune, Provincia, Prefettura, Questura e forze dell'ordine, Procura della Repubblica, ASL, ospedale San Pio, ANAS, INGV, Protezione Civile,
    Alto Calore, GESESA, EAV, AIR Campania, RFI). Due
    articoli dello stesso giornale contano come una fonte.
    **Eccezione: cronaca da un solo giornale autorevole** (voluta dal proprietario il 21 ottobre 2026). Un fatto di
@@ -74,7 +74,8 @@ Lavora in parallelo (6-8 letture insieme). Per ogni fonte tieni nota: letta / no
   (il vecchio indirizzo prefettura.it non porta più alla pagina di Benevento).
 - Questura di Benevento, «I fatti del giorno» (arresti, controlli, provvedimenti del Questore):
   `https://questure.poliziadistato.it/it/Benevento/archivio/category/5730dc9deb699622640306` (regola 3 per i nomi).
-- EAV, treni Napoli–Cancello–Benevento e bus: `https://www.eavsrl.it/infomobilita-ferrovia/`,
+- EAV, treni Napoli–Cancello–Benevento e bus: il feed `https://www.eavsrl.it/feed/` (ci sono anche i comunicati
+  stampa, per esempio quello del 20 ottobre sul carburante) e le pagine `https://www.eavsrl.it/infomobilita-ferrovia/`,
   `https://www.eavsrl.it/avvisi-infomobilita-autolinee/`, `https://www.eavsrl.it/avvisi-di-sciopero/`. Tieni solo
   quello che tocca il Sannio (linea per Benevento, Valle Caudina, bus da e per Benevento) e gli scioperi.
 - AIR Campania, i bus extraurbani (Benevento e provincia, collegamenti con Napoli, Avellino, Caserta): avvisi al
@@ -137,7 +138,16 @@ avviso del Comune è una fonte ufficiale (regola 2): basta da solo. Nel registro
   sanbartolomeoingaldo (`/new/`), morcone, cerretosannita, guardiasanframondi, solopaca, sansalvatoretelesino, apice,
   ceppaloni, paduli, pietrelcina, ponte, vitulano, cusanomutri, faicchio, amorosi, con una riga per Comune nel registro.
 
-**Ricerche mirate (almeno 4 per giro):** fatti trovati in un solo giornale (per cercare la seconda fonte),
+**Le storie in corso (a ogni giro):** per ogni notizia `rilevante` degli ultimi 2 giorni che è ancora in corso
+(proteste, blocchi, allerte, lavori, chiusure) fai **una ricerca mirata apposta** per sapere se c'è un seguito: nei
+giornali del Sannio, nelle fonti ufficiali e, per il quadro generale, nei nazionali seri (ANSA, Il Post, Il Sole 24
+Ore). Se c'è, aggiorna la notizia con l'«aggiornamento» (vedi «Quando aggiorni una notizia già uscita»). Esempio: il
+22 ottobre la protesta dei tir era ferma alle 14:10 del giorno prima mentre in Italia il governo cambiava linea.
+
+**Prima di scartare un fatto con una sola testata non autorevole** (Il Caudino, Infosannio…), cerca il comunicato
+ufficiale da cui viene (Comune, EAV, AIR, Alto Calore…, nei loro feed e pagine): se c'è, la notizia esce con quello.
+
+**Ricerche mirate (almeno 4 per giro, più una per ogni storia in corso):** fatti trovati in un solo giornale (per cercare la seconda fonte),
 «Benevento oggi», «Sannio incidente», «strada chiusa provincia Benevento».
 
 ## Le Allerte (categoria `meteo`)
@@ -435,9 +445,23 @@ aggiorni a ogni giro, come notizie.json.
 - Non modificare mai i file in `archivio/`, con una sola eccezione: se scopri un errore in una notizia archiviata,
   correggi quella notizia nel file del suo mese e spiega la correzione nel campo `nota`. Mai cancellarla.
 
+## Il registro delle fonti (obbligatorio)
+
+Durante il giro scrivi in `/tmp/fonti.txt` una riga per ogni fonte: `nome | stato | cosa c'era di nuovo`.
+- `stato` comincia con `letta`, `non raggiungibile` o `vuota` (per le fonti di casa: `letta (da casa, controllato HH:MM)`).
+- **Non raggiungibile** solo dopo un secondo tentativo con un altro indirizzo (home, sezione, feed, http), e lo scrivi:
+  `non raggiungibile (riprovato con https://…)`; per le fonti di casa ferme: `non raggiungibile (copia di casa ferma dalle HH:MM)`.
+- I nomi da usare (li controlla `archivia.py --giro`): Comune di Benevento, Provincia di Benevento, ANAS, INGV, San
+  Marco dei Cavoti, ASL Benevento, Ospedale San Pio, Alto Calore, GESESA, Prefettura, Questura, EAV, AIR Campania, RFI;
+  Ottopagine, Il Sannio Quotidiano, NTR24, Lab TV, Cronache del Sannio, Fremondoweb, Gazzetta di Benevento,
+  Anteprima24, InfoSannio, Benevento Giornale, BeneventoNews24, Il Mattino, TV7 Benevento, Il Caudino; più la riga
+  `Comuni (da casa, controllato HH:MM) | letta | N avvisi nuovi` (o una riga per ognuno dei 19 Comuni letti a mano).
+
 ## Prima di consegnare (obbligatorio)
 
-Esegui `python3 strumenti/archivia.py`. Controlla `notizie.json` ed `eventi.json` (JSON valido, id unici anche rispetto
+Esegui `python3 strumenti/archivia.py --giro` (con `--giro` controlla anche il registro delle fonti e mette in
+`aggiornato` l'ora di adesso, così il sito dice quando è stato controllato anche se non ci sono novità: notizie.json
+cambia sempre e va sempre pubblicato). Controlla `notizie.json` ed `eventi.json` (JSON valido, id unici anche rispetto
 all'archivio, categorie e zone ammesse, ogni nome citato nell'elenco fonti, url validi, campi obbligatori pieni,
 niente acchiappa-clic nei titoli) e solo se è tutto giusto archivia e scrive.
 - Se stampa **ERRORE**, non ha scritto niente: correggi `notizie.json` e rilancialo finché stampa **OK**.
