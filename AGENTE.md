@@ -79,7 +79,9 @@ Lavora in parallelo (6-8 letture insieme). Per ogni fonte tieni nota: letta / no
   quello che tocca il Sannio (linea per Benevento, Valle Caudina, bus da e per Benevento) e gli scioperi.
 - AIR Campania, i bus extraurbani (Benevento e provincia, collegamenti con Napoli, Avellino, Caserta): avvisi al
   pubblico e comunicati stampa nel feed `https://aircampania.it/feed/` (senza «www»: con il www il certificato è
-  sbagliato). Tieni solo quello che tocca il Sannio (linee, corse, scioperi, carburante) e i fatti di Benevento.
+  sbagliato). AIR serve tutta la Campania: **tieni solo quello che riguarda la provincia di Benevento** (linee e corse
+  che servono i Comuni del Sannio, fatti successi in provincia). Gli avvisi per tutta la regione (scioperi, carburante)
+  solo se dicono cosa cambia per le linee del Sannio; quelli di Avellino, Caserta, Napoli e Salerno no.
 - RFI, treni in Campania: in tempo reale `https://www.rfi.it/content/rfi/it/news-e-media/infomobilita.rss.updates.campania.xml`,
   lavori e avvisi `https://www.rfi.it/content/rfi/it/news-e-media/infomobilita.rss.notices.campania.xml`. Tieni solo le
   linee che passano dal Sannio: Caserta–Benevento–Foggia (Telese, Solopaca, Benevento), Benevento–Avellino–Salerno,
