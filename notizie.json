@@ -1,7 +1,427 @@
 {
- "aggiornato": "2026-10-22T13:12+02:00",
+ "aggiornato": "2026-10-22T14:16+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "virtus-academy-benevento-serie-b-femminile-presentazione-unifortunato",
+   "titolo": "Virtus Academy Benevento, presentata la squadra di Serie B femminile 2026-27 targata UniFortunato",
+   "titolo_google": "Virtus Academy Benevento: presentata la Serie B femminile",
+   "sintesi": "Giovedì 22 ottobre, nella sede di Confindustria Benevento, è stata presentata la Virtus Academy Benevento che giocherà la Serie B femminile 2026-2027 con il nome dell'università UniFortunato.",
+   "categoria": "sport",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-22T13:15:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/virtus-academy-benevento-presentata-la-nuova-stagione-in-serie-b-femminile-targata-unifortunato-video-e-foto/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Giovedì 22 ottobre la Virtus Academy Benevento ha presentato, nella sede di Confindustria a Benevento, la stagione 2026-2027: la squadra giocherà il campionato di Serie B femminile con il nome dell'UniFortunato, l'università Giustino Fortunato.",
+      "fonti": [
+       "TV7 Benevento"
+      ]
+     },
+     {
+      "testo": "Sono intervenuti la presidente Luisa Musco, l'allenatore Giulio Musco, il delegato provinciale del CONI Mario Collarile e il direttore amministrativo dell'UniFortunato, Vincenzo Sciano. Ha moderato il giornalista Alfredo Salzano, con le atlete e lo staff, già al lavoro nel campionato. Sono stati illustrati gli obiettivi della stagione.",
+      "fonti": [
+       "TV7 Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quale sport: il testo letto parla solo di «Serie B femminile».",
+     "Gli obiettivi precisi della stagione."
+    ],
+    "fonti": [
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Virtus Academy Benevento, presentata la nuova stagione in Serie B femminile targata UniFortunato (VIDEO E FOTO)",
+      "url": "https://www.tvsette.net/virtus-academy-benevento-presentata-la-nuova-stagione-in-serie-b-femminile-targata-unifortunato-video-e-foto/",
+      "data": "22 ott, 13:15"
+     }
+    ]
+   },
+   "sport": "altro"
+  },
+  {
+   "id": "rugby-serie-b-ipvc-benevento-partenope-37-27",
+   "titolo": "Rugby Serie B, l'IPVC Benevento batte la Partenope 37-27 all'esordio",
+   "titolo_google": "Rugby Serie B: IPVC Benevento batte la Partenope 37-27",
+   "sintesi": "Alla prima giornata di Serie B l'IPVC Benevento ha vinto 37-27 in casa, al Dell'Oste di Pacevecchia, contro la Partenope. Ha segnato la meta decisiva nel recupero Claudio Russo.",
+   "categoria": "sport",
+   "zona": "benevento",
+   "luogo": "Benevento, stadio Dell'Oste",
+   "pubblicato": "2026-10-21T21:00:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/rugby-serie-b-lipvc-benevento-ottiene-una-brillante-vittoria-37-a-27-contro-la-partenope-nella-prima-di-campionato/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "L'IPVC Benevento ha vinto 37 a 27 contro la Partenope nella prima giornata del campionato di rugby di Serie B, giocata al Dell'Oste di Pacevecchia con la tribuna piena. In panchina è tornato Alessandro Valente.",
+      "fonti": [
+       "TV7 Benevento"
+      ]
+     },
+     {
+      "testo": "Il Benevento è passato in vantaggio dopo un minuto con un calcio di Cioffi, poi ha segnato mete con Carandente, Cioffi e Carmine Russo e ha chiuso il primo tempo sul 22 a 15. Nella ripresa ha segnato D'Onofrio; la Partenope è tornata a 32-27 con la seconda meta dell'ala Strino. La meta decisiva, nel recupero, l'ha segnata l'ala Claudio Russo dopo un'azione di D'Onofrio.",
+      "fonti": [
+       "TV7 Benevento"
+      ]
+     },
+     {
+      "testo": "Prima della partita, nel riscaldamento, il pilone e capitano della Partenope Fabrizio Caterino si è fatto male a una gamba, con una frattura. Nel Benevento ha esordito in Serie B Matteo Fanzo, classe 2009, da poco convocato nella nazionale under 18; altri esordienti sono stati Alessio Savino, Luca Tretola, Pietro Sagrafena e Raffaele Cimino.",
+      "fonti": [
+       "TV7 Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "La classifica dopo la prima giornata."
+    ],
+    "fonti": [
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "RUGBY – SERIE B – L’IPVC Benevento ottiene una brillante vittoria (37 a 27) contro la Partenope  nella prima di campionato",
+      "url": "https://www.tvsette.net/rugby-serie-b-lipvc-benevento-ottiene-una-brillante-vittoria-37-a-27-contro-la-partenope-nella-prima-di-campionato/",
+      "data": "21 ott, 21:00"
+     }
+    ]
+   },
+   "sport": "rugby"
+  },
+  {
+   "id": "benevento-calcio-arezzo-24-ottobre-catanzaro-27-ottobre-biglietti",
+   "titolo": "Benevento Calcio: sabato 24 ottobre ad Arezzo, martedì 27 al Vigorito con il Catanzaro, via alla prevendita",
+   "titolo_google": "Benevento Calcio: Arezzo sabato, Catanzaro martedì, biglietti",
+   "sintesi": "Il Benevento gioca sabato 24 ottobre alle 19:30 ad Arezzo (arbitro Fourneau) e martedì 27 alle 19:00 al Vigorito con il Catanzaro. Biglietti solo nei punti vendita ETES autorizzati, non online.",
+   "categoria": "sport",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-21T18:20:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/benevento-calcio-al-via-la-prevendita-per-il-turno-infrasettimanale-col-catanzaro-niente-online-e-ospiti-solo-con-fidelity/"
+    },
+    {
+     "nome": "TV7 Benevento (Arezzo)",
+     "url": "https://www.tvsette.net/serie-bkt-2026-2027-arezzo-benevento-dirige-fourneau/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Benevento ha due partite di Serie B in quattro giorni. Sabato 24 ottobre alle 19:30 gioca ad Arezzo, allo stadio «Città di Arezzo», nell'ottava giornata: arbitra Francesco Fourneau di Roma 1.",
+      "fonti": [
+       "TV7 Benevento (Arezzo)"
+      ]
+     },
+     {
+      "testo": "Martedì 27 ottobre alle 19:00 al Ciro Vigorito arriva il Catanzaro, per la nona giornata: è la sesta partita casalinga dei giallorossi, che in casa hanno battuto Verona 3-1 e Cesena 2-0, pareggiato con Sudtirol 1-1 e Vicenza 2-2 e perso con il Modena 2-1.",
+      "fonti": [
+       "TV7 Benevento"
+      ]
+     },
+     {
+      "testo": "La prevendita è aperta dalle 15 di mercoledì 21 ottobre fino alle 19 del 27, solo nei punti vendita ETES autorizzati: non si compra online e non si può cambiare il nome sul biglietto. Si parte da 13 euro (curva sud e curva nord family; 11 il ridotto) fino a 50 euro per la tribuna centrale; il settore ospiti costa 13 euro. In più ci sono 2 euro di commissioni.",
+      "fonti": [
+       "TV7 Benevento"
+      ]
+     },
+     {
+      "testo": "I botteghini del Vigorito sono aperti fino a lunedì 26 ottobre in orari diversi di giorno in giorno (per esempio giovedì 22 e venerdì 23 dalle 9 alle 12 e dalle 15 alle 18) e restano chiusi il giorno della partita. Lo stadio si apre alle 17 e il parcheggio davanti ai distinti, in via Casselli, dalle 16. Alle 18:05 di mercoledì i biglietti emessi erano 9.",
+      "fonti": [
+       "TV7 Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando comincia la vendita per i tifosi ospiti a Arezzo: non è nei testi letti."
+    ],
+    "fonti": [
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Benevento calcio, al via la prevendita per il turno infrasettimanale col Catanzaro: niente online e ospiti solo con Fidelity",
+      "url": "https://www.tvsette.net/benevento-calcio-al-via-la-prevendita-per-il-turno-infrasettimanale-col-catanzaro-niente-online-e-ospiti-solo-con-fidelity/",
+      "data": "21 ott, 15:39"
+     },
+     {
+      "nome": "TV7 Benevento (Arezzo)",
+      "titolo": "SERIE BKT 2026-2027: AREZZO-BENEVENTO, DIRIGE FOURNEAU.",
+      "url": "https://www.tvsette.net/serie-bkt-2026-2027-arezzo-benevento-dirige-fourneau/",
+      "data": "21 ott, 13:19"
+     }
+    ]
+   },
+   "sport": "calcio",
+   "immagine": "calcio",
+   "foto": "calcio"
+  },
+  {
+   "id": "benevento-via-cosentini-bonazzi-vitelli-scavi-fibra-30-ottobre",
+   "titolo": "Benevento, fino al 30 ottobre scavi per la fibra in via Cosentini, via Bonazzi e via Vitelli: strada ristretta e senso unico alternato",
+   "titolo_google": "Benevento, scavi per la fibra in via Cosentini fino al 30 ottobre",
+   "sintesi": "Fino a venerdì 30 ottobre, per scavi legati all'allaccio alla fibra, in alcuni tratti di via Cosentini, via Bonazzi e via Vitelli a Benevento la strada si restringe, c'è il divieto di sosta e, se serve, il senso unico alternato con operai con la paletta o semafori mobili.",
+   "categoria": "strade",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-21",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Albo pretorio Benevento",
+     "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=79997"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Fino a venerdì 30 ottobre in alcuni tratti di via Cosentini, via Bonazzi e via Vitelli a Benevento la strada sarà più stretta e ci sarà il divieto di sosta e di fermata con rimozione dei veicoli, anche su entrambi i lati. Lo prevede l'ordinanza n. 437 del 21 ottobre del Servizio Traffico del Comune.",
+      "fonti": [
+       "Albo pretorio Benevento"
+      ]
+     },
+     {
+      "testo": "Il motivo sono gli scavi sulla strada per collegare nuove utenze alla rete in fibra. Dove serve, il traffico sarà regolato con il senso unico alternato, con operai con la paletta o semafori mobili. I lavori vanno avanti a tratti, in modo graduale.",
+      "fonti": [
+       "Albo pretorio Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "In quali giorni preciso si lavora in ogni strada."
+    ],
+    "fonti": [
+     {
+      "nome": "Albo pretorio Benevento",
+      "titolo": "Ordinanza n. 437 del 21/10/2026 – Restringimento carreggiata e divieto di sosta in tratti di Via Cosentini, Via Bonazzi e Via Vitelli",
+      "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=79997",
+      "data": "21 ott"
+     }
+    ]
+   },
+   "in_vigore_fino": "2026-10-30",
+   "immagine": "lavori-stradali",
+   "foto": "lavori-stradali"
+  },
+  {
+   "id": "benevento-divieti-sosta-rifacimento-strisce-pedonali-26-ottobre-28-novembre",
+   "titolo": "Benevento, dal 26 ottobre al 28 novembre limiti alla sosta in varie strade per rifare strisce pedonali e segnaletica",
+   "titolo_google": "Benevento, limiti alla sosta per le strisce fino al 28 novembre",
+   "sintesi": "Per il rifacimento degli attraversamenti pedonali e delle strisce dei parcheggi, dal 26 ottobre al 28 novembre il Comune di Benevento limita la sosta nelle strade di volta in volta interessate, dal lunedì al venerdì, nelle fasce 8:30-17:30 o 15:00-24:00.",
+   "categoria": "strade",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-22",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Albo pretorio Benevento",
+     "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80063"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Con l'ordinanza n. 446, firmata il 22 ottobre dal Servizio Traffico del Comune di Benevento, da lunedì 26 ottobre fino alle prime ore di sabato 28 novembre la sosta sarà limitata nelle strade dove, di volta in volta, si lavora al rifacimento degli attraversamenti pedonali e delle strisce dei parcheggi.",
+      "fonti": [
+       "Albo pretorio Benevento"
+      ]
+     },
+     {
+      "testo": "Le limitazioni valgono dal lunedì al venerdì, solo nelle fasce 8:30-17:30 oppure 15:00-24:00. Riguardano gli stalli a pagamento, quelli riservati ai residenti e ad altre categorie di autorizzati e quelli a sosta libera.",
+      "fonti": [
+       "Albo pretorio Benevento"
+      ]
+     },
+     {
+      "testo": "I lavori procedono in modo graduale e progressivo: i cartelli di divieto saranno messi in ogni zona non oltre 24 ore prima dell'inizio dell'intervento in quella strada.",
+      "fonti": [
+       "Albo pretorio Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quali strade saranno interessate e in quale ordine: l'ordinanza dice solo che dipende dai lavori."
+    ],
+    "fonti": [
+     {
+      "nome": "Albo pretorio Benevento",
+      "titolo": "Ordinanza n. 446 del 22/10/2026 – Limitazioni alla sosta per lavori di restyling attraversamenti pedonali e segnaletica orizzontale",
+      "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80063",
+      "data": "22 ott"
+     }
+    ]
+   },
+   "in_vigore_fino": "2026-11-28",
+   "immagine": "divieto-sosta",
+   "foto": "divieto-sosta"
+  },
+  {
+   "id": "benevento-mensa-scolastica-app-credito-genitori",
+   "titolo": "Benevento, mensa scolastica: bambini senza pasto per un problema con l'app dei buoni, genitori protestano",
+   "titolo_google": "Benevento, mensa scolastica: problema con l'app dei buoni pasto",
+   "sintesi": "Secondo Anteprima24 al plesso Moscati di Benevento alcuni bambini da martedì non hanno avuto il pasto perché l'app dei buoni mostrava credito insufficiente. Dopo le proteste dei genitori il problema è stato risolto, ma non si sa cosa lo abbia causato.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento, plesso Moscati",
+   "pubblicato": "2026-10-22T13:24:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/mensa-scolastica-applicazione-genitori/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Secondo Anteprima24, nel plesso Moscati di Benevento alcuni bambini da martedì scorso non hanno potuto mangiare alla mensa perché il loro credito risultava insufficiente. I buoni pasto si gestiscono con un'applicazione a cui i genitori si sono dovuti iscrivere entro il 30 agosto.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Un padre racconta di aver fatto tutto in regola e di aver pagato, ma che il bonifico non sarebbe stato accreditato per l'intera somma. Il giornale scrive che il problema non sarebbe isolato e che altri genitori avrebbero la stessa situazione.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "I genitori hanno segnalato il caso al sindaco Clemente Mastella e alla dirigente comunale Moretti. Dopo qualche attesa i problemi sono stati risolti, ma i genitori restano preoccupati per il futuro perché non è chiaro cosa li abbia causati: per il giornale potrebbe trattarsi del software dell'applicazione, ma molti dubitano.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Cosa ha causato il mancato accredito.",
+     "Quanti bambini sono stati senza pasto e per quanti giorni.",
+     "Cosa dice il Comune: nell'articolo letto non c'è una sua dichiarazione."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Mensa scolastica, problemi sulla gestione dell’applicazione. Genitori su tutte le furie",
+      "url": "https://www.anteprima24.it/benevento/mensa-scolastica-applicazione-genitori/",
+      "data": "22 ott, 13:24"
+     }
+    ]
+   },
+   "immagine": "mensa",
+   "foto": "mensa"
+  },
+  {
+   "id": "benevento-terapia-aba-minori-avvocati-asl",
+   "titolo": "Benevento, terapia ABA per minori: tre avvocati scrivono all'ASL, «istanze senza riscontro»",
+   "titolo_google": "Benevento, terapia ABA per minori: avvocati chiedono all'ASL",
+   "sintesi": "Tre avvocati di Benevento dicono che per i bambini e i ragazzi autistici è difficile trovare terapisti ABA con ore libere e che le loro richieste all'ASL sono rimaste senza risposta. Chiedono un confronto con le famiglie e soluzioni alternative.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-22T13:43:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/22/autismo-e-minori-tre-avvocati-scrivono-allasl-difficolta-nel-reperire-terapisti-aba-disponibili-e-istanze-legali-senza-riscontro/"
+    },
+    {
+     "nome": "LabTV",
+     "url": "https://www.labtv.net/attualita/2026/10/22/benevento-terapia-aba-per-minori-gli-avvocati-romano-renza-e-franzese-chiedono-risposte-allasl/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Giovedì 22 ottobre tre avvocati di Benevento, Francesco Romano, Silvana Renza ed Elvira Franzese, hanno scritto all'ASL Benevento, l'azienda sanitaria della provincia. Dicono che per i minori che hanno bisogno della terapia ABA (Applied Behavior Analysis, un percorso usato per l'autismo) è sempre più difficile trovare terapisti con ore libere.",
+      "fonti": [
+       "NTR24",
+       "LabTV"
+      ]
+     },
+     {
+      "testo": "L'ASL ha elenchi di terapisti esterni accreditati, ma secondo i legali avere un nome nell'elenco non basta: molti professionisti hanno le agende piene o non hanno più ore. Così, scrivono, rischia di interrompersi la continuità delle cure dei bambini.",
+      "fonti": [
+       "NTR24",
+       "LabTV"
+      ]
+     },
+     {
+      "testo": "I tre avvocati dicono di aver chiesto formalmente all'ASL di esaminare il problema e di valutare soluzioni organizzative alternative, ma che finora non hanno ricevuto risposta. Definiscono «grave e inaccettabile» il silenzio dell'azienda e chiedono risposte precise e un confronto con le famiglie. Aggiungono di aver seguito in passato procedimenti sul diritto alla salute dei minori, chiusi anche con sentenze favorevoli.",
+      "fonti": [
+       "NTR24",
+       "LabTV"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "I tre avvocati dicono che le loro richieste all'ASL sono rimaste senza risposta e chiedono soluzioni alternative per le terapie ABA.",
+      "fonti": [
+       "NTR24",
+       "LabTV"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Cosa risponde l'ASL: nei testi letti non c'è una sua replica.",
+     "Quante famiglie sono coinvolte."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Autismo e minori, tre avvocati scrivono all'Asl: 'Difficoltà nel reperire terapisti ABA disponibili e istanze legali senza riscontro'",
+      "url": "https://www.ntr24.tv/2026/10/22/autismo-e-minori-tre-avvocati-scrivono-allasl-difficolta-nel-reperire-terapisti-aba-disponibili-e-istanze-legali-senza-riscontro/",
+      "data": "22 ott, 13:29"
+     },
+     {
+      "nome": "LabTV",
+      "titolo": "Benevento, terapia ABA per minori: gli avvocati Romano, Renza e Franzese chiedono risposte all’ASL",
+      "url": "https://www.labtv.net/attualita/2026/10/22/benevento-terapia-aba-per-minori-gli-avvocati-romano-renza-e-franzese-chiedono-risposte-allasl/",
+      "data": "22 ott, 13:43"
+     }
+    ]
+   }
+  },
   {
    "id": "sifa-imprese-funebri-carburante-prefetti",
    "titolo": "Caro carburante, le imprese funebri chiedono ai prefetti di essere servizio essenziale: «Rischiamo di non poter fare i funerali»",
@@ -4194,17 +4614,24 @@
     {
      "nome": "InfoSannio (USB)",
      "url": "https://www.infosannionews.it/cronaca/2026/manifestazione-davanti-la-prefettura-di-protesta-della-usb-alla-quale-hanno-partecipato-anche-gli-studenti.html"
+    },
+    {
+     "nome": "Il Mattino (presidi)",
+     "url": "https://www.ilmattino.it/benevento/protesta_tir_sannio_presidi_statale_87_ponte_delle_tavole-9841485.html"
+    },
+    {
+     "nome": "AIR Campania (22/10)",
+     "url": "https://aircampania.it/nuovo-aggiornamento-blocchi-stradali-per-sciopero-dei-tir-possibili-ritardi-alle-percorrenze-dei-bus/"
     }
    ],
    "articolo": {
     "aggiornamento": {
-     "testo": "Giovedì 22 ottobre i sindaci di San Giorgio del Sannio, Apice e Calvi sono andati al presidio di Castel del Lago per dire che sono vicini agli autotrasportatori; in mattinata ha manifestato davanti alla Prefettura anche la USB, con molti studenti, chiedendo tra l'altro di calmierare i prezzi dei carburanti.",
+     "testo": "Giovedì 22 ottobre i presidi nel Sannio sono diventati più numerosi: Ponte delle Tavole, statale 87, Ceppaloni, casello di Benevento dell'A16 e San Marco dei Cavoti; AIR Campania avvisa di possibili ritardi dei bus.",
      "fonti": [
-      "NTR24 (sindaci)",
-      "Ottopagine (22/10)",
-      "InfoSannio (USB)"
+      "Il Mattino (presidi)",
+      "AIR Campania (22/10)"
      ],
-     "quando": "2026-10-22T12:12+02:00"
+     "quando": "2026-10-22T14:16+02:00"
     },
     "aggiornato": "2026-10-20T09:25:00+02:00",
     "cronologia": [
@@ -4507,9 +4934,35 @@
       "titolo": "Manifestazione davanti la Prefettura di protesta della USB alla quale hanno partecipato anche gli studenti",
       "url": "https://www.infosannionews.it/cronaca/2026/manifestazione-davanti-la-prefettura-di-protesta-della-usb-alla-quale-hanno-partecipato-anche-gli-studenti.html",
       "data": "22 ott, 10:52"
+     },
+     {
+      "nome": "Il Mattino (presidi)",
+      "titolo": "Protesta Tir, nel Sannio altri due presidi sulla statale 87 e a Ponte delle Tavole",
+      "url": "https://www.ilmattino.it/benevento/protesta_tir_sannio_presidi_statale_87_ponte_delle_tavole-9841485.html",
+      "data": "22 ott, 11:13"
+     },
+     {
+      "nome": "AIR Campania (22/10)",
+      "titolo": "Nuovo aggiornamento: blocchi stradali per sciopero dei Tir. Possibili ritardi alle percorrenze dei bus",
+      "url": "https://aircampania.it/nuovo-aggiornamento-blocchi-stradali-per-sciopero-dei-tir-possibili-ritardi-alle-percorrenze-dei-bus/",
+      "data": "22 ott, 11:30"
      }
     ],
     "racconto": [
+     {
+      "testo": "Giovedì 22 ottobre mattina, secondo Il Mattino, i presìdi nel Sannio sono ancora più numerosi: oltre a quelli sulla Telesina, vicino allo svincolo con la Fondovalle Isclero, al casello di Benevento dell'A16 e sull'Appia a Ceppaloni e a Tufara Valle, se ne sono aggiunti a Benevento in zona Ponte delle Tavole e sulla statale 87, e c'è un presidio anche a San Marco dei Cavoti lungo la Fortorina. In strada ci sono anche agricoltori e trattori. Il giornale scrive che la viabilità è regolare e che le forze dell'ordine controllano. Restano le difficoltà a trovare carburante: poche stazioni di servizio lo erogano ancora.",
+      "fonti": [
+       "Il Mattino (presidi)"
+      ],
+      "giorno": "2026-10-22"
+     },
+     {
+      "testo": "AIR Campania, la società dei bus extraurbani, avvisa che per i blocchi ancora in corso in diverse zone servite alcune linee possono avere ritardi o cambi di percorso.",
+      "fonti": [
+       "AIR Campania (22/10)"
+      ],
+      "giorno": "2026-10-22"
+     },
      {
       "testo": "Giovedì 22 ottobre in mattinata tre sindaci sanniti sono andati al presidio degli autotrasportatori di Castel del Lago: Giuseppe Ricci di San Giorgio del Sannio, Angelo Pepe di Apice e Vincenzo Parziale di Calvi. Hanno espresso vicinanza a chi protesta. Ricci ha detto di sperare che le richieste vengano ascoltate con un dialogo costruttivo con le istituzioni. Al presidio c'erano anche degli agricoltori.",
       "fonti": [
@@ -4799,7 +5252,7 @@
    "zona": "benevento",
    "immagine": "trattori",
    "luogo": "Benevento",
-   "pubblicato": "2026-10-22T11:50:00+02:00",
+   "pubblicato": "2026-10-22T13:29:00+02:00",
    "stato": "confermata",
    "fonti": [
     {
@@ -4837,6 +5290,18 @@
     {
      "nome": "NTR24 (22/10)",
      "url": "https://www.ntr24.tv/2026/10/22/caro-gasolio-e-prezzi-alle-stelle-gli-agricoltori-sanniti-al-fianco-dei-camionisti-cosi-non-riusciamo-piu-ad-andare-avanti/"
+    },
+    {
+     "nome": "NTR24 (allevatori)",
+     "url": "https://www.ntr24.tv/2026/10/22/allevatori-senza-mangimi-a-rischio-il-lavoro-di-tante-famiglie-la-protesta-non-puo-fermare-la-vita-delle-aziende/"
+    },
+    {
+     "nome": "LabTV (allevatori)",
+     "url": "https://www.labtv.net/attualita/2026/10/22/aacm-gli-allevamenti-sono-senza-mangimi-a-rischio-il-lavoro-di-tante-famiglie/"
+    },
+    {
+     "nome": "Cronache del Sannio (allevatori)",
+     "url": "https://www.cronachedelsannio.it/sannionews24/associazione-allevatori-campania-molise-scorte-ormai-finite/"
     }
    ],
    "articolo": {
@@ -4981,6 +5446,24 @@
       "titolo": "Caro gasolio e prezzi alle stelle, gli agricoltori sanniti al fianco dei camionisti: ‘Così non riusciamo più ad andare avanti’",
       "url": "https://www.ntr24.tv/2026/10/22/caro-gasolio-e-prezzi-alle-stelle-gli-agricoltori-sanniti-al-fianco-dei-camionisti-cosi-non-riusciamo-piu-ad-andare-avanti/",
       "data": "22 ott, 11:27"
+     },
+     {
+      "nome": "NTR24 (allevatori)",
+      "titolo": "Allevatori: \"Senza mangimi, a rischio il lavoro di tante famiglie. La protesta non può fermare la vita delle aziende\"",
+      "url": "https://www.ntr24.tv/2026/10/22/allevatori-senza-mangimi-a-rischio-il-lavoro-di-tante-famiglie-la-protesta-non-puo-fermare-la-vita-delle-aziende/",
+      "data": "22 ott, 13:12"
+     },
+     {
+      "nome": "LabTV (allevatori)",
+      "titolo": "AACM: “Gli allevamenti sono senza mangimi, a rischio il lavoro di tante famiglie”",
+      "url": "https://www.labtv.net/attualita/2026/10/22/aacm-gli-allevamenti-sono-senza-mangimi-a-rischio-il-lavoro-di-tante-famiglie/",
+      "data": "22 ott, 13:17"
+     },
+     {
+      "nome": "Cronache del Sannio (allevatori)",
+      "titolo": "Associazione Allevatori Campania e Molise: “Scorte ormai finite, protesta non fermi aziende”",
+      "url": "https://www.cronachedelsannio.it/sannionews24/associazione-allevatori-campania-molise-scorte-ormai-finite/",
+      "data": "22 ott, 13:29"
      }
     ],
     "divergono": [
@@ -5000,6 +5483,15 @@
      }
     ],
     "racconto": [
+     {
+      "testo": "Giovedì 22 ottobre l'Associazione Allevatori della Campania e del Molise, il cui presidente è Davide Minicozzi, lancia l'allarme: in diversi allevamenti del territorio le scorte di mangime per gli animali sono finite o stanno per finire, perché i camion che portano mais e mangimi non riescono ad arrivare. L'associazione dice di capire i problemi del caro carburante, ma che la protesta non può mettere in difficoltà altre attività e le loro famiglie: «Gli animali non possono aspettare». Chiede alle istituzioni di intervenire con urgenza per garantire il trasporto di mangimi, latte, beni di prima necessità e medicinali.",
+      "fonti": [
+       "NTR24 (allevatori)",
+       "LabTV (allevatori)",
+       "Cronache del Sannio (allevatori)"
+      ],
+      "giorno": "2026-10-22"
+     },
      {
       "testo": "Giovedì 22 ottobre i presidi degli agricoltori ci sono davvero: secondo Lab TV si concentrano a Benevento, a Ponte delle Tavole e sulla statale 87, con forze dell'ordine sul posto per far scorrere il traffico. A Ponte delle Tavole si sono uniti trattori e camion. Gli agricoltori dicono che le misure uscite dall'incontro di mercoledì a Napoli non bastano e criticano i fondi ottenuti da Coldiretti dalla Regione; annunciano una mobilitazione a oltranza, cioè senza data di fine.",
       "fonti": [
@@ -5044,12 +5536,13 @@
      }
     ],
     "aggiornamento": {
-     "testo": "Giovedì 22 ottobre gli agricoltori sanniti sono in strada a Benevento, a Ponte delle Tavole e sulla statale 87 e dicono che i fondi regionali ottenuti da Coldiretti non bastano.",
+     "testo": "Giovedì 22 ottobre gli allevatori di Campania e Molise denunciano che in molti allevamenti il mangime sta finendo per i blocchi dei camion e chiedono interventi urgenti.",
      "fonti": [
-      "LabTV (22/10)",
-      "NTR24 (22/10)"
+      "NTR24 (allevatori)",
+      "LabTV (allevatori)",
+      "Cronache del Sannio (allevatori)"
      ],
-     "quando": "2026-10-22T12:12+02:00"
+     "quando": "2026-10-22T14:16+02:00"
     }
    },
    "rilevante": false,
