@@ -65,6 +65,7 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           STATISTICHE_PAROLA: ${{ secrets.STATISTICHE_PAROLA }}
           GSC_CHIAVE: ${{ secrets.GSC_CHIAVE }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
         run: |
           pip install --quiet cryptography || echo "::warning::cryptography non installato"
           if ! python3 strumenti/statistiche.py; then
