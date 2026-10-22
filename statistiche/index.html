@@ -535,12 +535,17 @@
     testa.appendChild(el("span", "bollo scart", ns + (ns === 1 ? " scartata" : " scartate")));
     sm.appendChild(testa);
     if (g.riassunto) sm.appendChild(el("p", "riassunto", g.riassunto));
+    var E = g.esame_giornali;
+    if (E && E.fatti != null) sm.appendChild(el("p", "nota", "Fatti nuovi dei giornali esaminati: " + E.fatti + " — " +
+      [[E.nuova, "nuove"], [E.aggiornata, "aggiornate"], [E.presente, "già sul sito"], [E.evento, "eventi"], [E.scartata, "scartati"]]
+        .filter(function (x) { return x[0]; }).map(function (x) { return x[0] + " " + x[1]; }).join(", ") + "."));
     box.appendChild(sm);
     if (g.errore) return box;
     // le scartate per prime: è quello che dal sito non si vede
     if (ns) box.appendChild(elenco("Scartate", g.scartate, "scart", function (x) {
-      var li = el("li");
-      li.appendChild(el("strong", "", x.fatto));
+      var li = el("li"), t = el(x.link ? "a" : "strong", "", x.fatto);
+      if (x.link && /^https?:\/\//.test(x.link)) { t.href = x.link; t.target = "_blank"; t.rel = "noopener"; t.style.fontWeight = "600"; }
+      li.appendChild(t);
       var dett = " — " + x.motivo + ((x.fonti || []).length ? " (" + x.fonti.join(", ") + ")" : "");
       li.appendChild(el("span", "perche", dett));
       return li;
