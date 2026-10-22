@@ -47,7 +47,10 @@ quello nuovo.
 
 ## Cosa leggere a ogni giro
 
-I giri sono **ogni ora** e sono **tutti completi**: a ogni giro leggi tutto quello che segue, Comuni compresi.
+I giri sono **ogni ora** dalle 6 alle 22 e sono **tutti completi**: a ogni giro leggi tutto quello che segue, Comuni
+compresi. In più c'è il **giro delle 23**, solo la sera prima di un'allerta arancione o rossa (lo dice
+`python3 strumenti/allerta_domani.py`): i sindaci firmano le chiusure di scuole, parchi e cimiteri spesso dopo le 22,
+e chi ha figli guarda la sera. È un giro completo come gli altri, con attenzione alle chiusure per domani.
 **Arrivare prima degli altri:** un fatto che ha già le fonti che servono (regole 2 e 3) esce **in questo giro**, con
 quello che si sa, senza aspettare il giro dopo per avere tutti i dettagli: quelli che arrivano dopo si aggiungono con
 l'«aggiornamento» (vedi «Quando aggiorni una notizia già uscita»). Prima le notizie nuove, poi eventi e ritocchi.
