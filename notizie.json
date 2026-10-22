@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-22T12:12+02:00",
+ "aggiornato": "2026-10-22T13:12+02:00",
  "giornali_letti": 14,
  "notizie": [
   {
@@ -3911,7 +3911,7 @@
    "categoria": "cronaca",
    "zona": "fortore",
    "luogo": "Pago Veiano",
-   "pubblicato": "2026-10-21T00:15:00+02:00",
+   "pubblicato": "2026-10-22T12:38:00+02:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
@@ -3942,6 +3942,10 @@
     {
      "nome": "Lab TV",
      "url": "https://www.labtv.net/cronaca/2026/10/20/lite-familiare-finisce-nel-sangue-moglie-accoltella-il-marito-a-pago-veiano/"
+    },
+    {
+     "nome": "Ottopagine (22/10)",
+     "url": "https://www.ottopagine.it/bn/cronaca/441834/le-coltellate-abbiamo-litigato-lui-ha-un-certo-carattere-la-55enne-si-difende.shtml"
     }
    ],
    "articolo": {
@@ -3961,6 +3965,13 @@
       "fonti": [
        "Il Mattino",
        "Ottopagine"
+      ]
+     },
+     {
+      "data": "22 ottobre",
+      "fatto": "Interrogatorio davanti al gip: la donna racconta la lite; il pm chiede che resti in carcere, la difesa nessuna misura.",
+      "fonti": [
+       "Ottopagine (22/10)"
       ]
      }
     ],
@@ -4000,7 +4011,7 @@
     ],
     "non_si_sa": [
      "Il motivo della lite: i giornali scrivono solo che era molto accesa.",
-     "Cosa deciderà il giudice sulla convalida dell'arresto."
+     "Cosa deciderà il giudice sulla misura per la donna."
     ],
     "fonti": [
      {
@@ -4044,16 +4055,30 @@
       "titolo": "Lite familiare finisce nel sangue: moglie accoltella il marito a Pago Veiano",
       "url": "https://www.labtv.net/cronaca/2026/10/20/lite-familiare-finisce-nel-sangue-moglie-accoltella-il-marito-a-pago-veiano/",
       "data": "20 ott"
+     },
+     {
+      "nome": "Ottopagine (22/10)",
+      "titolo": "Le coltellate, abbiamo litigato, lui ha un certo carattere: la 55enne si difende",
+      "url": "https://www.ottopagine.it/bn/cronaca/441834/le-coltellate-abbiamo-litigato-lui-ha-un-certo-carattere-la-55enne-si-difende.shtml",
+      "data": "22 ott, 12:38"
      }
     ],
     "racconto": [
+     {
+      "testo": "Giovedì 22 ottobre la donna è comparsa in carcere davanti al giudice per le indagini preliminari. Assistita dal suo avvocato, ha detto di non ricordare tutto con chiarezza: secondo la sua versione c'è stata una lite, cominciata per il carattere del marito e poi degenerata in una colluttazione, durante la quale lo ha colpito all'addome e al torace con un coltello da cucina e si è ferita a un braccio. Il pubblico ministero ha chiesto che resti in carcere, la difesa che non le venga applicata nessuna misura. Il giudice decide nelle prossime ore.",
+      "fonti": [
+       "Ottopagine (22/10)"
+      ],
+      "giorno": "2026-10-22"
+     },
      {
       "testo": "Un uomo di 72 anni è stato ferito con un coltello dalla moglie, una donna di 55 anni di origine polacca, durante una lite nella loro casa di Pago Veiano. Lei è stata arrestata dai Carabinieri con l'ipotesi di reato di tentato omicidio ed è stata portata in carcere a Benevento.",
       "fonti": [
        "Ottopagine",
        "Il Mattino",
        "NTR24"
-      ]
+      ],
+      "giorno": "2026-10-20"
      },
      {
       "testo": "Per Il Mattino e Ottopagine il fatto è successo nella tarda serata di lunedì 19 ottobre; per NTR24 e Cronache del Sannio durante la notte. La coppia abitava in una villetta insieme al figlio, scrive Lab TV. Secondo i giornali i due hanno cominciato a discutere in modo sempre più acceso, poi la donna avrebbe preso un coltello e colpito il marito al torace e all'addome. Il Mattino parla di due coltellate.",
@@ -4063,7 +4088,8 @@
        "Lab TV",
        "NTR24",
        "Cronache del Sannio"
-      ]
+      ],
+      "giorno": "2026-10-20"
      },
      {
       "testo": "L'allarme è partito dai vicini, che hanno chiamato il 118. L'uomo è stato portato al pronto soccorso del San Pio, l'ospedale di Benevento. Qui è stato curato e operato. Il Mattino scrive che era in «codice rosso» (cioè molto grave), Ottopagine che aveva la prognosi riservata; per NTR24 non era in pericolo di vita. Ottopagine e Il Mattino aggiungono che nelle ore successive le sue condizioni sono migliorate.",
@@ -4072,23 +4098,33 @@
        "Ottopagine",
        "NTR24",
        "Lab TV"
-      ]
+      ],
+      "giorno": "2026-10-20"
      },
      {
       "testo": "Sono arrivati i Carabinieri della stazione di Pietrelcina e della Compagnia di Benevento. Il sostituto procuratore Marilia Capitanio, il magistrato di turno, ha disposto il trasferimento della donna nel carcere di contrada Capodimonte. La donna è difesa dall'avvocato Vittorio Lamberti. Il Mattino scrive che sarà interrogata dal giudice per le indagini preliminari, che deve decidere se confermare l'arresto.",
       "fonti": [
        "Il Mattino",
        "Ottopagine"
-      ]
+      ],
+      "giorno": "2026-10-20"
      },
      {
       "testo": "Le indagini sono dei Carabinieri e quella contro la donna è per ora un'ipotesi di reato: non ci sono accertamenti definitivi.",
       "fonti": [
        "Ottopagine",
        "NTR24"
-      ]
+      ],
+      "giorno": "2026-10-20"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Giovedì 22 ottobre la donna ha risposto al giudice per le indagini preliminari: dice che c'è stata una lite finita in colluttazione. Il pubblico ministero chiede il carcere, la difesa nessuna misura; la decisione è attesa a breve.",
+     "fonti": [
+      "Ottopagine (22/10)"
+     ],
+     "quando": "2026-10-22T13:12+02:00"
+    }
    }
   },
   {
@@ -5672,6 +5708,216 @@
       "titolo": "Palazzo Mosti, Urbanistica: la dirigente Dovetto delega l’ing. De Marco. Gestirà edilizia, abusi, appalti e personale",
       "url": "https://www.ntr24.tv/2026/10/22/palazzo-mosti-urbanistica-la-dirigente-dovetto-delega-ling-de-marco-gestira-edilizia-abusi-appalti-e-personale/",
       "data": "22 ott, 08:02"
+     }
+    ]
+   }
+  },
+  {
+   "id": "benevento-usb-studenti-prefettura-carovita",
+   "titolo": "Benevento, studenti e sindacato USB in piazza davanti alla Prefettura contro il carovita",
+   "titolo_google": "Benevento, USB e studenti in piazza contro il carovita",
+   "sintesi": "Giovedì 22 ottobre, davanti alla Prefettura di Benevento, il sindacato USB e centinaia di studenti hanno protestato contro il carovita, i parcheggi a pagamento, i trasporti, la sanità e la scuola. Una delegazione è stata ricevuta dal viceprefetto.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "immagine": "protesta",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-22T12:52:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Il Mattino",
+     "url": "https://www.ilmattino.it/benevento/benevento_manifestazione_usb_carovita_studenti_lavoratori_prefettura-9841613.html"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/studenti-sindacati-protesta-futuro-benevento/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/441829/usb-e-studenti-in-piazza-per-dire-stop-a-caro-vita-e-azione-del-governo-video.shtml"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Giovedì 22 ottobre in mattinata il sindacato USB (Unione sindacale di base) ha fatto un presidio davanti alla Prefettura di Benevento, in corso Garibaldi. Con il sindacato c'erano lavoratori, pensionati, cittadini e centinaia di studenti delle scuole superiori. Secondo gli organizzatori la partecipazione è stata più alta del previsto.",
+      "fonti": [
+       "Il Mattino",
+       "Anteprima24",
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Al centro della protesta ci sono il caro vita, le scelte del Governo e alcune decisioni del Comune di Benevento: le strisce blu, cioè i parcheggi a pagamento, che per i manifestanti sono troppe, i trasporti, la sanità e la scuola. Sugli striscioni si leggeva «Soldi alla scuola, non alla guerra» e «Le vostre scelte rovinano il nostro futuro». Anteprima24 scrive che la manifestazione è stata pacifica e seguita dalle forze dell'ordine.",
+      "fonti": [
+       "Il Mattino",
+       "Anteprima24",
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Una delegazione guidata da Giovanni Venditti, dell'USB, è stata ricevuta dal viceprefetto per oltre un'ora. Tra le richieste ci sono gli abbonamenti ai bus, ora a 70 euro, e il numero dei pullman, giudicato insufficiente. Alla Prefettura è stato consegnato anche un documento sulla sanità, perché arrivi al Governo.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "La manifestazione sotto la Prefettura giovedì mattina, con studenti e USB, contro il carovita e contro le scelte di Governo e Comune.",
+      "fonti": [
+       "Il Mattino",
+       "Anteprima24",
+       "Ottopagine"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Quante persone hanno partecipato: le fonti parlano di «centinaia» di studenti e di una partecipazione superiore alle attese, senza un numero.",
+     "Come hanno risposto Prefettura e Comune alle richieste."
+    ],
+    "fonti": [
+     {
+      "nome": "Il Mattino",
+      "titolo": "Benevento, studenti e lavoratori in piazza contro il carovita: proteste e vertice in Prefettura",
+      "url": "https://www.ilmattino.it/benevento/benevento_manifestazione_usb_carovita_studenti_lavoratori_prefettura-9841613.html",
+      "data": "22 ott, 12:52"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "FOTO/ Studenti e sindacati in protesta: Benevento si colora per un futuro migliore",
+      "url": "https://www.anteprima24.it/benevento/studenti-sindacati-protesta-futuro-benevento/",
+      "data": "22 ott, 12:32"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Usb e studenti in piazza per dire stop a caro vita e azione del governo - VIDEO",
+      "url": "https://www.ottopagine.it/bn/cronaca/441829/usb-e-studenti-in-piazza-per-dire-stop-a-caro-vita-e-azione-del-governo-video.shtml",
+      "data": "22 ott, 12:18"
+     }
+    ]
+   },
+   "foto": "protesta"
+  },
+  {
+   "id": "san-giorgio-la-molara-san-lazzaro-asfalto",
+   "titolo": "San Giorgio la Molara, nuovi lavori sull'asfalto in località San Lazzaro",
+   "titolo_google": "San Giorgio la Molara, lavori sull'asfalto a San Lazzaro",
+   "sintesi": "Il Comune di San Giorgio la Molara continua i lavori per sistemare e rifare l'asfalto in località San Lazzaro. Il comunicato non dice date né se ci sono limiti al traffico.",
+   "categoria": "strade",
+   "zona": "fortore",
+   "immagine": "lavori-stradali",
+   "luogo": "San Giorgio la Molara",
+   "pubblicato": "2026-10-22T12:10:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/sangiorgio-molara-miglioramenti-viabilita-localita-sanlazzaro/"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/lavori-di-sistemazione-e-rifacimento-del-manto-stradale"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Comune di San Giorgio la Molara, nel Fortore, va avanti con i lavori sulle strade in località San Lazzaro. Giovedì 22 ottobre ha comunicato che ci sono altri interventi per sistemare e rifare l'asfalto.",
+      "fonti": [
+       "Cronache del Sannio",
+       "Gazzetta di Benevento"
+      ]
+     },
+     {
+      "testo": "Secondo il comunicato l'obiettivo è rendere la strada più sicura e più comoda da usare. È la continuazione di interventi già cominciati nella stessa zona.",
+      "fonti": [
+       "Cronache del Sannio",
+       "Gazzetta di Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Il Comune prosegue i lavori di rifacimento dell'asfalto a San Lazzaro (stesso comunicato ripreso da entrambe le testate).",
+      "fonti": [
+       "Cronache del Sannio",
+       "Gazzetta di Benevento"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Dove esattamente e per quanti giorni si lavora.",
+     "Se ci sono restringimenti o chiusure della strada.",
+     "Quanto costano i lavori."
+    ],
+    "fonti": [
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "San Giorgio la Molara, miglioramenti alla viabilità in località San Lazzaro",
+      "url": "https://www.cronachedelsannio.it/sannionews24/sangiorgio-molara-miglioramenti-viabilita-localita-sanlazzaro/",
+      "data": "22 ott, 12:10"
+     },
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "Lavori di sistemazione e rifacimento del manto stradale",
+      "url": "https://www.gazzettabenevento.it/it/lavori-di-sistemazione-e-rifacimento-del-manto-stradale",
+      "data": "22 ott, 12:00"
+     }
+    ]
+   },
+   "foto": "lavori-stradali-3"
+  },
+  {
+   "id": "benevento-appello-omicidio-parrella-false-informazioni",
+   "titolo": "Benevento, omicidio Parrella: in appello due prescrizioni e un'assoluzione per le false informazioni ai magistrati",
+   "titolo_google": "Benevento, omicidio Parrella: appello sulle false informazioni",
+   "sintesi": "La Corte d'appello ha deciso per tre persone condannate in primo grado a un anno per false informazioni al pm e favoreggiamento nell'indagine sull'omicidio di Antonio Parrella: due non luoghi a procedere per prescrizione, un'assoluzione.",
+   "categoria": "cronaca",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-22T12:16:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/441828/omicidio-parrella-false-informazioni-a-pm-due-prosciolti-e-un-assolto.shtml"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "La Corte d'appello ha deciso su tre persone che nel luglio 2022 erano state condannate a un anno ciascuna perché, secondo l'accusa, con le loro dichiarazioni avevano ostacolato le indagini della Squadra mobile sull'omicidio di Antonio Parrella, 32 anni. Per due di loro, di 37 e 35 anni, di Benevento, il giudice ha dichiarato il non luogo a procedere perché il reato è prescritto. Il terzo, di 59 anni, di Moiano, è stato assolto «perché il fatto non sussiste» dall'accusa di false informazioni al pubblico ministero. Un quarto imputato è nel frattempo morto.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Parrella morì al Rummo il 27 luglio 2017 per le botte prese la sera prima durante una festa di compleanno. Per quell'omicidio la condanna per omicidio volontario di un uomo di Benevento è definitiva: la Cassazione l'ha confermata nel marzo 2021, con la pena ridotta in appello a 14 anni e 8 mesi.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Le motivazioni della sentenza d'appello."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Omicidio Parrella, \"false informazioni a Pm\": due prosciolti e un assolto",
+      "url": "https://www.ottopagine.it/bn/cronaca/441828/omicidio-parrella-false-informazioni-a-pm-due-prosciolti-e-un-assolto.shtml",
+      "data": "22 ott, 12:16"
      }
     ]
    }
