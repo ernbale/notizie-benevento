@@ -75,7 +75,8 @@ def cloudflare(token, inizio, fine):
                      gruppo("da", 100, "sum_visits_DESC", "refererHost"),
                      gruppo("dispositivi", 10, "sum_visits_DESC", "deviceType"),
                      gruppo("paesi", 15, "sum_visits_DESC", "countryName"),
-                     gruppo("browser", 10, "sum_visits_DESC", "userAgentBrowser")])
+                     gruppo("browser", 10, "sum_visits_DESC", "userAgentBrowser"),
+                     gruppo("da_paese", 300, "sum_visits_DESC", "refererHost countryName")])
          + " } } }")
     corpo = json.dumps({"query": q, "variables": {"account": CF_ACCOUNT, "start": inizio.isoformat(),
                                                   "end": fine.isoformat()}}).encode()
@@ -135,7 +136,7 @@ def visite(sito, token, adesso):
     inizio_locale = dt.datetime.combine(oggi - dt.timedelta(days=GIORNI - 1), dt.time(0), fz)
     # Cloudflare risponde vuoto (senza errore) se il periodo supera 8 giorni: si chiede una settimana alla volta
     # e si sommano i pezzi.
-    a = {"ore": [], "pagine": [], "da": [], "dispositivi": [], "paesi": [], "browser": []}
+    a = {"ore": [], "pagine": [], "da": [], "dispositivi": [], "paesi": [], "browser": [], "da_paese": []}
     da, fine = inizio_locale.astimezone(dt.timezone.utc), adesso.astimezone(dt.timezone.utc)
     while da < fine:
         a_fine = min(da + dt.timedelta(days=7), fine)
@@ -173,9 +174,15 @@ def visite(sito, token, adesso):
         nome = da_dove(r["dimensions"]["refererHost"])
         if nome:
             prov[nome] += r["sum"]["visits"]
+    # chi arriva da Facebook: dall'Italia sono lettori, dall'estero quasi sempre i controlli automatici di Meta
+    # sui link appena pubblicati (21 ott 2026: 72 aperture da USA, Irlanda e Svezia nel minuto del post)
+    da_fb = {"italia": 0, "estero": 0}
+    for r in a["da_paese"]:
+        if da_dove(r["dimensions"]["refererHost"]) == "Facebook":
+            da_fb["italia" if r["dimensions"]["countryName"] == "IT" else "estero"] += r["sum"]["visits"]
     nomi_disp = {"mobile": "Telefono", "desktop": "Computer", "tablet": "Tablet"}
     return {
-        "stato": "ok", "giorni": [{"data": k, "visite": v[0], "pagine": v[1]} for k, v in per_giorno.items()],
+        "stato": "ok", "da_facebook": da_fb, "giorni": [{"data": k, "visite": v[0], "pagine": v[1]} for k, v in per_giorno.items()],
         "ore": [{"ora": h, "visite": v[0], "pagine": v[1]} for h, v in enumerate(per_ora)],
         "ultime24": {"visite": ultime24[0], "pagine": ultime24[1]},
         "pagine": pagine[:40],
