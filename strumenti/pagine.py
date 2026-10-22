@@ -291,6 +291,28 @@ def _frase(tag, r, fonti):
     return f"<{tag}>{e(t)}{c}</{tag}>"
 
 
+def _giorno_racconto(g):
+    try:
+        d = dt.date.fromisoformat(str(g))
+    except ValueError:
+        return str(g)
+    anno = f" {d.year}" if d.year != dt.date.today().year else ""
+    return f"{GIORNI[d.weekday()]} {d.day} {MESI_LUNGHI[d.month - 1]}{anno}"
+
+
+def _racconto(righe, fonti):
+    """Storia di più giorni: sopra i paragrafi di ogni giorno la sua data (come disegna index.html)."""
+    piu_giorni = len({r.get("giorno") for r in righe if isinstance(r, dict) and r.get("giorno")}) > 1
+    h, prec = "", None
+    for r in righe:
+        g = r.get("giorno") if isinstance(r, dict) else None
+        if piu_giorni and g and g != prec:
+            h += f'<div class="giorno">{e(_giorno_racconto(g))}</div>'
+            prec = g
+        h += _frase("p", r, fonti)
+    return h
+
+
 def _elenco(titolo, righe, fonti):
     if not isinstance(righe, list) or not righe:
         return ""
@@ -361,7 +383,7 @@ def html_articolo(n, appro_collegato):
               'sizes="(max-width: 800px) 100vw, 760px" width="1536" height="1024" alt="" decoding="async">'
               "<figcaption>Immagine illustrativa creata con l'intelligenza artificiale: non è una foto del fatto.</figcaption></figure>")
     if isinstance(a.get("racconto"), list) and a["racconto"]:
-        h += '<div class="racconto">' + "".join(_frase("p", r, fonti) for r in a["racconto"]) + "</div>"
+        h += '<div class="racconto">' + _racconto(a["racconto"], fonti) + "</div>"
     elif a.get("cosa"):
         h += f"<h3>Cosa è successo</h3><p>{e(a['cosa'])}</p>"
     # con il racconto, una cronologia di un solo momento non aggiunge niente
