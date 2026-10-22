@@ -14,6 +14,9 @@ on:
       telegram_subito:
         description: "Quante delle ultime notizie mandare subito sul canale Telegram (0 = come sempre)"
         default: "0"
+      telegram_recupera:
+        description: "Telegram: mandare subito tutte le notizie arretrate delle ultime 12 ore (1 = sì, 0 = come sempre)"
+        default: "0"
 
 permissions:
   contents: read
@@ -117,6 +120,7 @@ jobs:
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TG_SUBITO: ${{ github.event.inputs.telegram_subito || '0' }}
+          TG_RECUPERA: ${{ github.event.inputs.telegram_recupera || '0' }}
         run: |
           mkdir -p "$RUNNER_TEMP/social"
           python3 strumenti/telegram.py --stato "$RUNNER_TEMP/social/telegram.json" || echo "::warning::Telegram non ha pubblicato (vedi l'avviso sopra)"
