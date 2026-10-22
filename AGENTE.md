@@ -15,10 +15,10 @@ quello nuovo.
    (Comune, Provincia, Prefettura, Questura e forze dell'ordine, Procura della Repubblica, ASL, ospedale San Pio, ANAS, INGV, Protezione Civile,
    Alto Calore, GESESA, EAV, AIR Campania, RFI, Regione Campania). Due
    articoli dello stesso giornale contano come una fonte.
-   **Eccezione: cronaca da un solo giornale autorevole** (voluta dal proprietario il 21 ottobre 2026). Un fatto di
-   cronaca, di strade o di servizi (categorie `cronaca`, `strade`, `altro`) riportato da **una sola** di queste
-   testate può uscire con `"stato": "una_fonte"`: Il Mattino (Benevento), Il Sannio Quotidiano, NTR24, Ottopagine, Anteprima24, Lab TV, Cronache del Sannio, BeneventoNews24, TV7 Benevento. Prima fai una ricerca mirata per trovare la seconda fonte.
-   Il sito mostra da solo la scritta «Una sola fonte» e il nome del giornale. Non vale mai per: politica, allerte,
+   **Eccezione: un solo giornale autorevole** (voluta dal proprietario il 21 ottobre 2026, estesa alla politica il
+   22 ottobre). Un fatto delle categorie `cronaca`, `strade`, `altro` e `politica` (per la politica vale sempre la
+   regola 9) riportato da **una sola** di queste testate può uscire con `"stato": "una_fonte"`: Il Mattino (Benevento), Il Sannio Quotidiano, NTR24, Ottopagine, Anteprima24, Lab TV, Cronache del Sannio, BeneventoNews24, TV7 Benevento. Prima fai una ricerca mirata per trovare la seconda fonte.
+   Il sito mostra da solo la scritta «Una sola fonte» e il nome del giornale. Non vale mai per: allerte,
    eventi, notizie `rilevante`, fatti scritti solo da altre testate (Infosannio, Fremondoweb, Gazzetta di Benevento,
    Benevento Giornale, Il Caudino: con loro servono due testate). Appena una seconda testata riporta il fatto,
    aggiungila e passa a `confermata`.
@@ -95,8 +95,9 @@ Lavora in parallelo (6-8 letture insieme). Per ogni fonte tieni nota: letta / no
   diretta per strade chiuse, divieti, scuole e chiusure: le ordinanze escono qui prima che sui giornali. Tieni solo le
   **ordinanze** (Tipo «Ordinanza», mittenti come Servizio Traffico, Sindaco, Polizia Municipale) che cambiano qualcosa
   per molte persone (strade o incroci chiusi, sensi unici, chiusure di scuole e parchi, acqua, grandi eventi); salta
-  i divieti di sosta per un singolo trasloco o cantiere privato. Da citare il `link` della voce (la pubblicazione
-  nell'albo).
+  i divieti di sosta per un singolo trasloco o cantiere privato. **Un'ordinanza che chiude una strada, un incrocio o
+  un passaggio a livello, o cambia la circolazione per giorni, è una notizia `strade`** (fonte ufficiale: esce da
+  sola), non una cosa da «non trattare». Da citare il `link` della voce (la pubblicazione nell'albo).
 - Regione Campania: file `regione.json` delle fonti lette da casa (dal cloud il sito risponde 403), con i comunicati
   stampa e il loro testo. Tieni solo quello che riguarda il Sannio (soldi e decisioni per
   Benevento e i suoi Comuni, ospedali, strade, trasporti, lavoro) o tutta la Campania con effetti qui (allerte,
@@ -129,7 +130,22 @@ articolo aperto. Nel registro delle fonti scrivi `letta (da casa, controllato HH
 vecchio di 3 ore o `esito` dice «non raggiungibile», scrivi `non raggiungibile (copia di casa ferma dalle HH:MM)`;
 solo per l'ASL prova allora `curl -sk https://www.aslbenevento.it/notizie` (il -k serve per il certificato).
 
-**Giornali del Sannio (sempre, homepage o sezione):** ottopagine.it/bn/ · ilsannioquotidiano.it · ntr24.tv ·
+**Giornali del Sannio: l'elenco degli articoli nuovi (obbligatorio, all'inizio del giro).** Esegui
+`python3 strumenti/giornali.py | tee /tmp/giornali.txt`: legge i 14 giornali (feed, Ottopagine dalla sua pagina, TV7
+dal file di casa), tiene gli articoli usciti dall'ultimo giro e li raggruppa per fatto (G1, G2…), con accanto gli
+articoli delle ultime 24 ore sullo stesso fatto: così vedi subito quante testate lo riportano e quali sono
+autorevoli. I fatti già citati in una notizia del sito non compaiono. Scrive anche le righe dei giornali del registro
+delle fonti (`/tmp/fonti_giornali.txt`, le legge `archivia.py`: non riscriverle). **Per ogni gruppo scrivi una
+decisione** nel diario del giro (vedi «Il diario del giro»): niente può restare senza decisione.
+- Apri gli articoli dei fatti che pubblichi o che ti servono per decidere: il titolo da solo non basta.
+- **Un fatto locale vero con una fonte autorevole si pubblica, anche se piccolo** (vandali al parco, un incidente,
+  un guasto, una chiusura, una nomina in Comune): per un sito locale è notizia. «Episodio minore» non è un motivo.
+- **Un fatto nuovo di una storia già sul sito non si scarta**: va nella notizia (paragrafo del giorno nel racconto,
+  la fonte, e il riquadro `aggiornamento` se cambia la situazione) ed è «aggiornata». Esempio: l'autocisterna
+  scortata in via Nenni e la Municipale senza carburante vanno nella notizia dei tir.
+- Se una testata è segnata «solo la homepage» o «non raggiungibile», leggila a mano dalla sua pagina qui sotto.
+
+Le pagine dei giornali (per aprirli a mano): ottopagine.it/bn/ · ilsannioquotidiano.it · ntr24.tv ·
 labtv.net · cronachedelsannio.it/sannionews24/ · fremondoweb.com/category/notizie-dalla-valle-telesina/ ·
 gazzettabenevento.it · anteprima24.it/benevento/ · infosannionews.it · beneventogiornale.com ·
 beneventonews24.it · ilmattino.it/benevento/ · TV7 Benevento, file `tv7.json` delle fonti lette da casa (tieni solo le
@@ -489,9 +505,10 @@ Durante il giro scrivi in `/tmp/fonti.txt` una riga per ogni fonte: `nome | stat
   `non raggiungibile (riprovato con https://…)`; per le fonti di casa ferme: `non raggiungibile (copia di casa ferma dalle HH:MM)`.
 - I nomi da usare (li controlla `archivia.py --giro`): Comune di Benevento, Provincia di Benevento, ANAS, INGV, San
   Marco dei Cavoti, ASL Benevento, Ospedale San Pio, Alto Calore, GESESA, Prefettura, Questura, EAV, AIR Campania, RFI,
-  Albo pretorio Benevento, Regione Campania;
-  Ottopagine, Il Sannio Quotidiano, NTR24, Lab TV, Cronache del Sannio, Fremondoweb, Gazzetta di Benevento,
-  Anteprima24, InfoSannio, Benevento Giornale, BeneventoNews24, Il Mattino, TV7 Benevento, Il Caudino; più la riga
+  Albo pretorio Benevento, Regione Campania; i 14 giornali (Ottopagine, Il Sannio Quotidiano, NTR24, Lab TV, Cronache
+  del Sannio, Fremondoweb, Gazzetta di Benevento, Anteprima24, InfoSannio, Benevento Giornale, BeneventoNews24, Il
+  Mattino, TV7 Benevento, Il Caudino) li scrive da solo `strumenti/giornali.py` in `/tmp/fonti_giornali.txt`: tu
+  aggiungi una riga solo per un giornale che hai dovuto leggere a mano; più la riga
   `Comuni (da casa, controllato HH:MM) | letta | N avvisi nuovi` (o una riga per ognuno dei 19 Comuni letti a mano).
 - Una riga per ogni **ricerca mirata**: `Ricerca: parole cercate | fatta | cosa ha trovato`. Almeno 6: 4 per le
   notizie (comprese quelle per le storie in corso) e 2 per gli eventi.
@@ -510,9 +527,24 @@ mette in `diario/AAAA-MM-GG.json`; le notizie nuove e aggiornate, le fonti e le 
     {"fatto": "Di cosa si trattava, in poche parole", "fonti": ["Testata o fonte"],
      "motivo": "Perché non l'hai pubblicata (o non hai aggiornato la notizia)"}
   ],
-  "dubbi": ["Cose incerte che hai deciso in un modo, e perché (orari diversi tra due fonti, ecc.)"]
+  "dubbi": ["Cose incerte che hai deciso in un modo, e perché (orari diversi tra due fonti, ecc.)"],
+  "decisioni": {
+    "G1": {"esito": "nuova", "notizia": "id-della-notizia"},
+    "G2": {"esito": "aggiornata", "notizia": "tir-appia-telesina"},
+    "G3": {"esito": "presente", "notizia": "id-della-notizia-che-lo-racconta-già"},
+    "G4": {"esito": "evento", "evento": "id-dell-evento"},
+    "G5": {"esito": "scartata", "motivo": "fuori_provincia", "nota": "Calabria, non riguarda il Sannio"}
+  }
 }
 ```
+- `decisioni`: una per **ogni** gruppo dell'elenco dei giornali (`/tmp/titoli.json`, vedi «Giornali del Sannio»),
+  `{}` se l'elenco è vuoto. `archivia.py` controlla che ci siano tutte, che la notizia «nuova» sia nata in questo
+  giro e che quella «aggiornata» sia cambiata davvero. I soli motivi per scartare un fatto dei giornali:
+  `fuori_provincia`, `vecchia`, `una_fonte_non_autorevole` (solo testate non autorevoli e nessuna conferma),
+  `politica_senza_effetti` (regola 9), `pubblicita`, `non_notizia` (opinioni, rubriche, ricorrenze, sport,
+  telegiornali), `non_leggibile` (l'articolo non si apre). `nota` (facoltativa) dice il perché in breve. Nella pagina
+  privata le scartate dei giornali compaiono da sole con il titolo e il link: in `scartate` metti solo quelle che
+  vengono da altre fonti (ufficiali, Comuni, ricerche).
 - In `scartate` va **ogni fatto che hai considerato e non hai pubblicato**: una sola fonte non verificabile, fuori
   provincia, vecchio o ripubblicato, già coperto da una notizia esistente (scrivi quale), pubblicità o comunicato
   promozionale, voce non confermata, cronaca troppo piccola, ecc. Il motivo deve essere concreto. Elenco vuoto `[]`

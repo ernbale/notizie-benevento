@@ -95,7 +95,7 @@ FONTI_GIRO = [  # (nome da scrivere nel registro, pezzi che lo riconoscono anche
 ]
 
 
-def controlla_registro(percorso, err):
+def controlla_registro(percorso, err, giornali=None):
     def norma(x):
         import unicodedata
         x = unicodedata.normalize("NFKD", x).encode("ascii", "ignore").decode().lower()
@@ -103,6 +103,9 @@ def controlla_registro(percorso, err):
     try:
         with open(percorso, encoding="utf-8") as f:
             righe = [r.strip() for r in f if r.strip()]
+        if giornali and os.path.exists(giornali):   # le righe dei giornali le scrive strumenti/giornali.py
+            with open(giornali, encoding="utf-8") as f:
+                righe += [r.strip() for r in f if r.strip()]
     except OSError:
         err.append(f"manca il registro delle fonti {percorso}: scrivi una riga per fonte, «nome | letta / non "
                    "raggiungibile / vuota | cosa c'era di nuovo» (i nomi sono in AGENTE.md, «Il registro delle fonti»)")
@@ -163,14 +166,15 @@ def leggi_diario(percorso, err):
     return g
 
 
-def righe_registro(percorso):
+def righe_registro(percorso, giornali=None):
     """Il registro delle fonti diviso in fonti e ricerche, per il diario."""
-    fonti, ricerche = [], []
-    try:
-        with open(percorso, encoding="utf-8") as f:
-            righe = f.read().splitlines()
-    except OSError:
-        return fonti, ricerche
+    fonti, ricerche, righe = [], [], []
+    for p in (giornali, percorso):
+        try:
+            with open(p, encoding="utf-8") as f:
+                righe += f.read().splitlines()
+        except (OSError, TypeError):
+            pass
     for r in righe:
         p = [x.strip() for x in r.split("|")]
         if len(p) < 2:
@@ -182,7 +186,75 @@ def righe_registro(percorso):
     return fonti, ricerche
 
 
-def voce_diario(giro, d, prima, vanno, registro, inizio, adesso):
+ESITI = ("nuova", "aggiornata", "presente", "evento", "scartata")
+MOTIVI = {   # gli unici motivi per non pubblicare un fatto dei giornali (22 ott 2026: «episodio minore» non vale)
+    "fuori_provincia": "fuori provincia",
+    "vecchia": "fatto vecchio o già passato",
+    "una_fonte_non_autorevole": "una sola testata non autorevole, nessuna conferma",
+    "politica_senza_effetti": "politica senza effetti per la gente (regola 9)",
+    "pubblicita": "pubblicità o promozione",
+    "non_notizia": "non è una notizia per il sito (opinione, rubrica, ricorrenza, sport, telegiornale)",
+    "non_leggibile": "l'articolo non si apre",
+}
+
+
+def controlla_decisioni(giro, percorso, d, prima, tutti_gli_id, ev, err):
+    """Una decisione per ogni fatto nuovo dei giornali (elenco di strumenti/giornali.py): niente sparisce in silenzio."""
+    try:
+        with open(percorso, encoding="utf-8") as f:
+            titoli = json.load(f)
+    except OSError:
+        err.append(f"manca l'elenco degli articoli nuovi {percorso}: all'inizio del giro esegui "
+                   "`python3 strumenti/giornali.py` (AGENTE.md, «L'elenco degli articoli nuovi»)")
+        return None
+    except ValueError as e:
+        err.append(f"l'elenco degli articoli nuovi {percorso} non è un JSON valido: {e}")
+        return None
+    dec = giro.get("decisioni")
+    if not isinstance(dec, dict):
+        err.append("diario del giro: manca «decisioni», una per ogni fatto dell'elenco dei giornali (G1, G2…), anche {} "
+                   "se l'elenco è vuoto")
+        return titoli
+    gruppi = {g["id"]: g for g in titoli.get("gruppi", [])}
+    mancano = [g for g in gruppi if g not in dec]
+    if mancano:
+        err.append(f"diario del giro: manca la decisione per {len(mancano)} fatti dei giornali ({', '.join(mancano[:20])}"
+                   f"{'…' if len(mancano) > 20 else ''}): per ognuno «nuova», «aggiornata», «presente», «evento» o "
+                   "«scartata» col motivo (AGENTE.md, «L'elenco degli articoli nuovi»)")
+    vecchie = {n.get("id"): n for n in (prima or {}).get("notizie", []) + (prima or {}).get("approfondimenti", [])}
+    attuali = {n.get("id"): n for n in d.get("notizie", []) + d.get("approfondimenti", [])}
+    eventi = {x.get("id") for x in (ev or {}).get("eventi", [])}
+    uguale = lambda a, b: json.dumps(a, sort_keys=True, ensure_ascii=False) == json.dumps(b, sort_keys=True, ensure_ascii=False)
+    for gid, x in dec.items():
+        w = f"decisione {gid}"
+        if gid not in gruppi:
+            err.append(f"{w}: nell'elenco dei giornali non c'è {gid}")
+            continue
+        if not isinstance(x, dict) or x.get("esito") not in ESITI:
+            err.append(f"{w}: «esito» deve essere uno di {', '.join(ESITI)}")
+            continue
+        e, nid = x["esito"], x.get("notizia")
+        if e in ("nuova", "aggiornata", "presente"):
+            if nid not in tutti_gli_id:
+                err.append(f"{w}: «notizia» {nid!r} non esiste (scrivi l'id della notizia)")
+            elif e == "nuova" and (nid not in attuali or (prima is not None and nid in vecchie)):
+                err.append(f"{w}: {nid} non è nuova in questo giro: scrivi «aggiornata» o «presente»")
+            elif e == "aggiornata" and nid not in attuali:
+                err.append(f"{w}: {nid} è in archivio: un fatto nuovo va in una notizia della prima pagina")
+            elif e == "aggiornata" and prima is not None and nid not in vecchie:
+                err.append(f"{w}: {nid} è nata in questo giro: scrivi «nuova»")
+            elif e == "aggiornata" and prima is not None and uguale(vecchie[nid], attuali[nid]):
+                err.append(f"{w}: dici «aggiornata» ma {nid} non è cambiata: aggiungi il fatto nuovo (paragrafo del "
+                           "giorno, fonte) oppure scrivi «presente» se non c'è niente di nuovo")
+        elif e == "evento" and x.get("evento") not in eventi:
+            err.append(f"{w}: «evento» {x.get('evento')!r} non è in eventi.json")
+        elif e == "scartata" and x.get("motivo") not in MOTIVI:
+            err.append(f"{w}: «motivo» deve essere uno di: {', '.join(MOTIVI)} (un fatto locale vero con una fonte "
+                       "autorevole non si scarta: esce, anche se piccolo)")
+    return titoli
+
+
+def voce_diario(giro, d, prima, vanno, registro, inizio, adesso, titoli=None, giornali=None):
     """Quello che il giro ha fatto: le notizie nuove e aggiornate le calcola il programma (confronto con l'ultima
     versione pubblicata), le scartate, i dubbi e il riassunto li scrive l'agente."""
     vecchie = {n.get("id"): n for n in (prima or {}).get("notizie", [])}
@@ -202,7 +274,24 @@ def voce_diario(giro, d, prima, vanno, registro, inizio, adesso):
                                "aggiornamento": ag.get("testo") if ag.get("testo") != vag.get("testo") else None,
                                "fonti_nuove": sorted({f.get("nome") for f in (n.get("articolo") or {}).get("fonti", [])} -
                                                      {f.get("nome") for f in (v.get("articolo") or {}).get("fonti", [])})})
-    fonti, ricerche = righe_registro(registro)
+    fonti, ricerche = righe_registro(registro, giornali)
+    # i fatti dei giornali scartati vanno con gli altri scartati, col motivo scritto per esteso
+    scartate = list(giro.get("scartate") or [])
+    esame = None
+    if titoli is not None and isinstance(giro.get("decisioni"), dict):
+        gruppi = {g["id"]: g for g in titoli.get("gruppi", [])}
+        esame = {e: 0 for e in ESITI}
+        for gid, x in giro["decisioni"].items():
+            g = gruppi.get(gid)
+            if not g or not isinstance(x, dict):
+                continue
+            esame[x.get("esito")] = esame.get(x.get("esito"), 0) + 1
+            if x.get("esito") == "scartata":
+                nota = x.get("nota") or ""
+                scartate.append({"fatto": g.get("titolo"), "fonti": g.get("testate"),
+                                 "motivo": MOTIVI.get(x.get("motivo"), x.get("motivo")) + (f": {nota}" if nota else ""),
+                                 "link": (g.get("articoli") or [{}])[-1].get("url")})
+        esame["fatti"] = len(gruppi)
     durata, partenza = None, adesso
     try:   # il giro si chiama con l'ora in cui è partito (09:05), così rilanciare archivia non lo conta due volte
         with open(inizio, encoding="utf-8") as f:
@@ -214,7 +303,7 @@ def voce_diario(giro, d, prima, vanno, registro, inizio, adesso):
     return {"ora": partenza.strftime("%H:%M"), "fine": adesso.strftime("%H:%M"), "durata_min": durata,
             "riassunto": giro.get("riassunto"),
             "nuove": nuove, "aggiornate": aggiornate, "archiviate": [n["id"] for n in vanno],
-            "scartate": giro.get("scartate") or [], "dubbi": giro.get("dubbi") or [], "eventi": giro.get("eventi"),
+            "scartate": scartate, "esame_giornali": esame, "dubbi": giro.get("dubbi") or [], "eventi": giro.get("eventi"),
             "fonti": fonti, "ricerche": ricerche, "notizie_in_prima": len(d["notizie"]) - len(vanno)}
 
 
@@ -622,6 +711,9 @@ def main():
     ap.add_argument("--registro", default="/tmp/fonti.txt", help="il registro delle fonti del giro")
     ap.add_argument("--diario", default="/tmp/diario.json", help="il diario del giro scritto dall'agente")
     ap.add_argument("--inizio", default="/tmp/inizio_giro", help="l'ora di inizio del giro (per la durata)")
+    ap.add_argument("--titoli", default="/tmp/titoli.json", help="l'elenco degli articoli nuovi (strumenti/giornali.py)")
+    ap.add_argument("--registro-giornali", default="/tmp/fonti_giornali.txt",
+                    help="le righe dei giornali per il registro (le scrive strumenti/giornali.py)")
     ap.add_argument("--cartella", default=os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     a = ap.parse_args()
     base = a.cartella
@@ -649,7 +741,7 @@ def main():
     controlla(d, err, avv, adesso_roma)
     giro = None
     if a.giro:
-        controlla_registro(a.registro, err)
+        controlla_registro(a.registro, err, a.registro_giornali)
         giro = leggi_diario(a.diario, err)
     p_eventi = os.path.join(base, "eventi.json")
     try:
@@ -714,6 +806,10 @@ def main():
         for c in x.get("collegate", []):
             if c not in tutti_gli_id:
                 err.append(f"{x.get('id')}: notizia collegata {c!r} non esiste")
+
+    titoli = None
+    if a.giro and giro is not None:   # una decisione per ogni fatto nuovo dei giornali (strumenti/giornali.py)
+        titoli = controlla_decisioni(giro, a.titoli, d, pubblicate_prima(base), tutti_gli_id, ev, err)
 
     if err:
         for x in avv:
@@ -837,7 +933,7 @@ def main():
     da_togliere = []
     if giro is not None:   # il diario del giro, cifrato (strumenti/diario.py)
         voce = voce_diario(giro, d, prima, vanno, a.registro, a.inizio,
-                           adesso_roma or dt.datetime.now(dt.timezone.utc).astimezone())
+                           adesso_roma or dt.datetime.now(dt.timezone.utc).astimezone(), titoli, a.registro_giornali)
         file_diario, da_togliere = scrivi_diario(base, voce, oggi)
         da_scrivere.append(file_diario)
         print(f"Diario del giro delle {voce['ora']}: {len(voce['nuove'])} nuove, {len(voce['aggiornate'])} aggiornate, "
