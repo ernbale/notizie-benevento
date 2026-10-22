@@ -131,6 +131,15 @@ articolo aperto. Nel registro delle fonti scrivi `letta (da casa, controllato HH
 vecchio di 3 ore o `esito` dice «non raggiungibile», scrivi `non raggiungibile (copia di casa ferma dalle HH:MM)`;
 solo per l'ASL prova allora `curl -sk https://www.aslbenevento.it/notizie` (il -k serve per il certificato).
 
+**Comunicati arrivati per posta: file `comunicati.json` delle fonti lette da casa** (quando la casella
+comunicati@notiziebenevento.it è collegata: `esito` dice «letta»). Società sportive, associazioni, Comuni e enti
+mandano lì i loro comunicati; ci sono `titolo` (l'oggetto), `data`, `mittente` (nome), `dominio` (dopo la @),
+`allegati` e `testo`. Leggi quelli arrivati dall'ultimo giro. Un comunicato da un dominio istituzionale (un
+Comune `*.bn.it`, la Provincia, la Regione, un ente pubblico) o dal sito della società che lo firma è una fonte
+ufficiale; uno da un indirizzo generico (gmail, libero…) vale come comunicato della società se il contenuto è
+verificabile (una partita, un evento con luogo e data), altrimenti cerca una conferma. Non si cita mai l'indirizzo
+email del mittente e niente numeri di telefono privati. Pubblicità, inviti a pagare e catene vanno scartati.
+
 **Giornali del Sannio: l'elenco degli articoli nuovi (obbligatorio, all'inizio del giro).** Esegui
 `python3 strumenti/giornali.py | tee /tmp/giornali.txt`: legge i 14 giornali (feed, Ottopagine dalla sua pagina, TV7
 dal file di casa), tiene gli articoli usciti dall'ultimo giro e li raggruppa per fatto (G1, G2…), con accanto gli
@@ -198,8 +207,15 @@ basket, scherma, tutto»). Ogni notizia di sport ha `"categoria": "sport"` e `"s
 - **Fonti:** le regole di sempre (regola 2: basta anche una sola testata autorevole). In più sono **fonti
   ufficiali** il sito e i comunicati della società, della lega o della federazione (Lega B, FIGC, FIP, FIPAV, FIR,
   Federscherma…) per risultati, classifiche, calendari e comunicati: un comunicato della società basta da solo
-  (`"stato": "ufficiale"`). I comunicati delle società che hanno un sito leggibile (oggi il Benevento Calcio) li
-  mette già `strumenti/giornali.py` nell'elenco degli articoli nuovi, segnati «fonte ufficiale». Il report
+  (`"stato": "ufficiale"`). I comunicati delle società che hanno un sito leggibile li mette già
+  `strumenti/giornali.py` nell'elenco degli articoli nuovi, segnati «fonte ufficiale»: Benevento Calcio, Miwa Basket
+  Benevento (anche la femminile YOLO+), Benevento 5 (calcio a 5), Accademia Volley Benevento, Rugby Benevento, Rugby
+  IV Circolo, Apice Calcio, Tennis Club 2002, GS Meomartini, i comunicati della LND di Benevento (dilettanti: il PDF
+  ha risultati e decisioni) e, dai feed nazionali, quelli che nominano squadre del Sannio (Divisione Calcio a 5,
+  pallamano, rugby). Nell'elenco ci sono anche NTR24 Sport (lo sport di NTR24 sta su sport.ntr24.tv) e SannioSport.
+  Le altre società (pallamano H.C. Sannio, scherma, tanti dilettanti…) usano solo Facebook e Instagram, che non si
+  leggono: i loro comunicati arrivano dai giornali, che li ripubblicano. ⛔ I siti della FIPAV (pallavolo) vietano
+  la lettura automatica: non leggerli con programmi. Il report
   dell'allenamento di ogni giorno non è una notizia (`non_notizia`), a meno che dica un fatto (un infortunio, un
   rientro).
 - **Titolo:** squadra o atleta, il fatto, il dato che conta («Benevento-Avellino 2-1: decide Lanini al 90'»).

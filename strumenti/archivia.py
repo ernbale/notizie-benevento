@@ -19,6 +19,7 @@ Alla fine stampa una riga «CAMBIATO: <file>» per ogni file da pubblicare.
 import argparse
 import datetime as dt
 import glob
+import hashlib
 import json
 import os
 import re
@@ -470,7 +471,8 @@ def scegli_foto(notizie):
         if not v:
             continue
         f = n.get("foto")
-        libera = min(v, key=lambda x: (usate.get(x, 0), v.index(x)))
+        # a parità, una versione «a caso» ma sempre la stessa per la stessa notizia: così le versioni girano tutte
+        libera = min(v, key=lambda x: (usate.get(x, 0), hashlib.md5((n["id"] + x).encode()).hexdigest()))
         if f is None or (usate[f] > 1 and usate.get(libera, 0) == 0):
             if f:
                 usate[f] -= 1

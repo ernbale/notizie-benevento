@@ -48,7 +48,9 @@ jobs:
       # le immagini di anteprima già fatte: si rifanno solo quelle delle notizie nuove o cambiate
       - uses: actions/cache@v4
         with:
-          path: img/n
+          path: |
+            img/n
+            img/ig
           key: anteprime-${{ hashFiles('notizie.json', 'archivio/*.json', 'strumenti/pagine.py') }}
           restore-keys: anteprime-
 
@@ -94,3 +96,29 @@ jobs:
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
           FB_SUBITO: ${{ github.event.inputs.facebook_subito || '0' }}
         run: python3 strumenti/facebook.py || echo "::warning::Facebook non ha pubblicato (vedi l'avviso sopra)"
+
+      - name: Instagram (una notizia ogni ora e mezza, se è il momento)
+        env:
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+        run: python3 strumenti/instagram.py || echo "::warning::Instagram non ha pubblicato (vedi l'avviso sopra)"
+
+      # Telegram: il bot non può rileggere il canale, cosa è già uscito lo ricorda un file che GitHub conserva tra
+      # una pubblicazione e l'altra (cache; le pubblicazioni vanno una alla volta, vedi «concurrency» in alto)
+      - uses: actions/cache/restore@v4
+        with:
+          path: ${{ runner.temp }}/social
+          key: social-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: social-
+
+      - name: Telegram (notizie nuove e aggiornamenti sul canale)
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/social"
+          python3 strumenti/telegram.py --stato "$RUNNER_TEMP/social/telegram.json" || echo "::warning::Telegram non ha pubblicato (vedi l'avviso sopra)"
+
+      - uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: ${{ runner.temp }}/social
+          key: social-${{ github.run_id }}-${{ github.run_attempt }}
