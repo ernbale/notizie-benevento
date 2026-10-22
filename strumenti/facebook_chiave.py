@@ -24,6 +24,7 @@ import urllib.request
 
 GRAPH = "https://graph.facebook.com"
 PAGINA = "Notizie Benevento"
+ID_PAGINA = "1441713825684388"
 REPO = "ernbale/notizie-benevento"
 PERMESSI = {"pages_show_list", "pages_read_engagement", "pages_manage_posts"}
 STATISTICHE = {"read_insights", "pages_read_user_content"}   # per le statistiche (facoltativi: l'app può non averli)
@@ -59,8 +60,20 @@ def main():
 
     pagine = get("me/accounts", fields="id,name,access_token", access_token=lungo).get("data", [])
     pag = next((p for p in pagine if p.get("name") == PAGINA), None)
+    if not pag:   # una Pagina passata in un portfolio business a volte non compare nell'elenco: la chiedo per ID
+        try:
+            with urllib.request.urlopen(f"{GRAPH}/{ID_PAGINA}?" + urllib.parse.urlencode(
+                    {"fields": "id,name,access_token", "access_token": lungo}), timeout=30) as r:
+                d = json.load(r)
+            if d.get("name") == PAGINA and d.get("access_token"):
+                pag = d
+        except urllib.error.HTTPError:
+            pass
     if not pag:
-        sys.exit(f"La Pagina «{PAGINA}» non è nell'elenco: nel Graph API Explorer va scelta e autorizzata.")
+        utente = get("debug_token", input_token=lungo, access_token=f"{app_id}|{segreto}").get("data", {})
+        print("  Pagine che il token vede: " + (", ".join(p.get("name", "?") for p in pagine) or "nessuna"))
+        print("  Permessi del token: " + ", ".join(sorted(utente.get("scopes", []))))
+        sys.exit(f"La Pagina «{PAGINA}» non è autorizzata: in «Generate Access Token» va spuntata la Pagina.")
     token = pag["access_token"]
 
     info = get("debug_token", input_token=token, access_token=f"{app_id}|{segreto}").get("data", {})
