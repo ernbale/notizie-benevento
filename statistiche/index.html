@@ -145,7 +145,10 @@
     Pannelli completi: <a href="https://dash.cloudflare.com/d76a7e4eebbfb46bb9fbd03910507063/web-analytics" rel="noopener">Cloudflare</a> ·
     <a href="https://search.google.com/search-console?resource_id=sc-domain%3Anotiziebenevento.it" rel="noopener">Search Console</a> ·
     <a href="https://www.bing.com/webmasters/home?siteUrl=https://notiziebenevento.it/" rel="noopener">Bing</a> ·
-    <a href="https://www.facebook.com/notiziebenevento" rel="noopener">Pagina Facebook</a>
+    <a href="https://www.facebook.com/notiziebenevento" rel="noopener">Pagina Facebook</a> ·
+    <a href="https://www.instagram.com/notiziebenevento.it/" rel="noopener">Instagram</a> ·
+    <a href="https://t.me/notiziebenevento" rel="noopener">Telegram</a> ·
+    <a href="https://github.com/ernbale/notizie-benevento/actions" rel="noopener">Pubblicazioni su GitHub</a>
   </footer>
 </div>
 
@@ -255,6 +258,40 @@
   function riquadro(tit, figlio, cls) { var r = el("section", "riquadro" + (cls ? " " + cls : "")); r.appendChild(el("h3", "", tit)); if (figlio) r.appendChild(figlio); return r; }
   function numero(et, v, d) { var b = el("div", "numero"); b.appendChild(el("div", "et", et)); b.appendChild(el("div", "v", v)); if (d) b.appendChild(el("div", "d", d)); return b; }
   function somma(lista, campo, ultimi) { return lista.slice(-ultimi).reduce(function (s, x) { return s + (x[campo] || 0); }, 0); }
+  function avvisoStato(X, nome) {
+    var a = el("div", "avviso"); a.appendChild(el("b", "", X.stato === "errore" ? nome + " non ha risposto" : "Da collegare"));
+    a.appendChild(document.createTextNode(" " + (X.messaggio || ""))); return a;
+  }
+  // il confronto con 7 giorni fa di uno storico giorno per giorno (follower, iscritti)
+  function variazione(st, campo, adesso) {
+    if (st.length < 2) return "il conto giorno per giorno parte da oggi";
+    var ultimo = st[st.length - 1], limite = new Date(Date.parse(ultimo.data + "T12:00:00Z") - 7 * 864e5).toISOString().slice(0, 10);
+    var prima = st.filter(function (x) { return x.data <= limite; }).pop() || st[0];
+    var d = ultimo[campo] - prima[campo];
+    return (d >= 0 ? "+" : "") + num(d) + (prima.data === limite || prima.data < limite ? " in 7 giorni" : " dal " + giornoBreve(prima.data));
+  }
+  function arrivatiDa(V, nome) {
+    var r = (V.provenienza || []).filter(function (x) { return x.nome === nome; })[0];
+    return V.stato === "ok" ? num(r ? r.visite : 0) : "–";
+  }
+  function quandoBreve(iso) { return new Date(iso).toLocaleString("it-IT", { timeZone: "Europe/Rome", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }); }
+  function tabellaPost(righe, colonneT, link) {
+    var box = el("div", "tabella");
+    if (!righe.length) { box.appendChild(el("p", "vuoto", "Ancora niente negli ultimi 30 giorni.")); return box; }
+    var t = el("table"), th = el("thead"), tr = el("tr");
+    colonneT.forEach(function (c, i) { tr.appendChild(el("th", i ? "num" : "", c[0])); });
+    th.appendChild(tr); t.appendChild(th);
+    var tb = el("tbody");
+    righe.forEach(function (p) {
+      var r = el("tr"), c = el("td"), l = el("a", "", p.titolo || "post");
+      l.href = p.link || link; l.target = "_blank"; l.rel = "noopener";
+      c.appendChild(l); c.appendChild(el("span", "perc", quandoBreve(p.quando)));
+      r.appendChild(c);
+      colonneT.slice(1).forEach(function (col) { r.appendChild(el("td", "num", p[col[1]] == null ? "–" : num(p[col[1]]))); });
+      tb.appendChild(r);
+    });
+    t.appendChild(tb); box.appendChild(t); return box;
+  }
 
   // ---------- il cruscotto ----------
   function disegna(D) {
@@ -476,6 +513,82 @@
       m.appendChild(gf);
     }
 
+    // --- Instagram ---
+    var I = D.instagram || {};
+    m.appendChild(el("h2", "", "Instagram"));
+    m.appendChild(el("p", "sotto", "Il profilo @" + (I.nome || "notiziebenevento.it") + ": follower, post e quanto piacciono. Ultimi " + D.giorni + " giorni."));
+    if (I.stato !== "ok") m.appendChild(avvisoStato(I, "Instagram"));
+    else {
+      var ist = I.storico || [], igi = I.giorni || [], ipost = I.post || [];
+      var ni = el("div", "numeri");
+      ni.appendChild(numero("Follower", num(I.follower), variazione(ist, "follower")));
+      ni.appendChild(numero("Post", num(somma(igi, "post", 7)), "ultimi 7 giorni · " + num(somma(igi, "post", 30)) + " in 30 · " + num(I.post_totali) + " in tutto"));
+      ni.appendChild(numero("«Mi piace» e commenti", num(somma(igi, "interazioni", 30)), "ultimi 30 giorni"));
+      ni.appendChild(numero("Lettori arrivati da Instagram", arrivatiDa(V, "Instagram"), "ultimi " + D.giorni + " giorni (il link è nella bio)"));
+      m.appendChild(ni);
+      var gi = el("div", "griglia");
+      var rig = riquadro("Post e «mi piace» al giorno");
+      rig.appendChild(colonne(igi.map(function (x, i) {
+        return { v: x.post, v2: x.interazioni, etichetta: i % 5 === 4 || i === igi.length - 1 ? giornoBreve(x.data) : "",
+                 titolo: giornoBreve(x.data) + ": " + num(x.post) + " post, " + num(x.interazioni) + " «mi piace» e commenti" };
+      }), { titolo: "Post e interazioni Instagram per giorno", colore: "#a3326b" }));
+      var li = el("div", "legenda"); li.innerHTML = '<span><i style="background:#a3326b"></i>Post</span><span><i style="background:#f0b9a6"></i>«Mi piace» e commenti</span>';
+      rig.appendChild(li); rig.classList.add("largo"); gi.appendChild(rig);
+      if (ist.length > 1) {
+        var rif = riquadro("Follower giorno per giorno");
+        rif.appendChild(colonne(ist.slice(-30).map(function (x, i, a) {
+          return { v: x.follower, etichetta: i % 5 === 4 || i === a.length - 1 ? giornoBreve(x.data) : "", titolo: giornoBreve(x.data) + ": " + num(x.follower) + " follower" };
+        }), { titolo: "Follower Instagram per giorno", colore: "#2e6b3f" }));
+        rif.classList.add("largo"); gi.appendChild(rif);
+      }
+      var mi = ipost.slice().sort(function (a, b) { return b.interazioni - a.interazioni || (a.quando < b.quando ? 1 : -1); }).slice(0, 15);
+      var rti = riquadro("I post che piacciono di più", tabellaPost(mi, [["Post"], ["Mi piace", "mi_piace"], ["Commenti", "commenti"]], I.profilo));
+      rti.classList.add("largo"); gi.appendChild(rti);
+      var NOMI_IG = { reach: "Persone raggiunte", views: "Visualizzazioni", profile_views: "Visite al profilo" };
+      var chiaviIg = Object.keys(I.meta || {});
+      var rmi2 = riquadro("Quante persone li vedono");
+      if (chiaviIg.length) rmi2.appendChild(barre(chiaviIg.map(function (k) { return { nome: NOMI_IG[k] || k, visite: I.meta[k] }; }), "visite"));
+      else rmi2.appendChild(el("p", "nota", "Instagram dà persone raggiunte e visualizzazioni solo con il permesso instagram_manage_insights, che l'app di Meta per ora non ha."));
+      gi.appendChild(rmi2);
+      m.appendChild(gi);
+    }
+
+    // --- Telegram ---
+    var T = D.telegram || {};
+    m.appendChild(el("h2", "", "Telegram"));
+    m.appendChild(el("p", "sotto", "Il canale t.me/notiziebenevento: iscritti, messaggi e quante volte sono stati visti. Ultimi " + D.giorni + " giorni."));
+    if (T.stato !== "ok") m.appendChild(avvisoStato(T, "Telegram"));
+    else {
+      var tst = T.storico || [], tgi = T.giorni || [], tmsg = T.messaggi || [];
+      var viste30 = somma(tgi, "viste", 30), msg30 = somma(tgi, "messaggi", 30);
+      var nt = el("div", "numeri");
+      nt.appendChild(numero("Iscritti", num(T.iscritti), variazione(tst, "iscritti")));
+      nt.appendChild(numero("Messaggi", num(somma(tgi, "messaggi", 7)), "ultimi 7 giorni · " + num(msg30) + " in 30"));
+      nt.appendChild(numero("Visualizzazioni", num(viste30), msg30 ? "in media " + num(Math.round(viste30 / msg30)) + " per messaggio" : "ultimi 30 giorni"));
+      nt.appendChild(numero("Lettori arrivati da Telegram", arrivatiDa(V, "Telegram"), "ultimi " + D.giorni + " giorni"));
+      m.appendChild(nt);
+      var gt = el("div", "griglia");
+      var rtg = riquadro("Messaggi e visualizzazioni al giorno");
+      rtg.appendChild(colonne(tgi.map(function (x, i) {
+        return { v: x.messaggi, v2: x.viste, etichetta: i % 5 === 4 || i === tgi.length - 1 ? giornoBreve(x.data) : "",
+                 titolo: giornoBreve(x.data) + ": " + num(x.messaggi) + " messaggi, " + num(x.viste) + " visualizzazioni" };
+      }), { titolo: "Messaggi e visualizzazioni Telegram per giorno", colore: "#1f7fb5" }));
+      var lt = el("div", "legenda"); lt.innerHTML = '<span><i style="background:#1f7fb5"></i>Messaggi</span><span><i style="background:#f0b9a6"></i>Visualizzazioni</span>';
+      rtg.appendChild(lt); rtg.classList.add("largo"); gt.appendChild(rtg);
+      if (tst.length > 1) {
+        var rts = riquadro("Iscritti giorno per giorno");
+        rts.appendChild(colonne(tst.slice(-30).map(function (x, i, a) {
+          return { v: x.iscritti, etichetta: i % 5 === 4 || i === a.length - 1 ? giornoBreve(x.data) : "", titolo: giornoBreve(x.data) + ": " + num(x.iscritti) + " iscritti" };
+        }), { titolo: "Iscritti al canale per giorno", colore: "#2e6b3f" }));
+        rts.classList.add("largo"); gt.appendChild(rts);
+      }
+      var piuViste = tmsg.slice().sort(function (a, b) { return (b.viste || 0) - (a.viste || 0) || (a.quando < b.quando ? 1 : -1); }).slice(0, 15);
+      var rtt = riquadro("I messaggi più visti", tabellaPost(piuViste, [["Messaggio"], ["Viste", "viste"]], T.canale));
+      rtt.appendChild(el("p", "nota", "Le visualizzazioni le conta Telegram; i messaggi «Aggiornamento» sono le novità delle notizie già uscite."));
+      rtt.classList.add("largo"); gt.appendChild(rtt);
+      m.appendChild(gt);
+    }
+
     // --- il sito ---
     var S = D.sito || {};
     m.appendChild(el("h2", "", "Il giornale"));
@@ -498,6 +611,56 @@
     rf.appendChild(el("p", "nota", "In quante notizie compare ciascuna fonte. L'ultimo giro dell'agente ha letto " + num(S.giornali_letti) + " giornali."));
     gs.appendChild(rf);
     m.appendChild(gs);
+
+    // --- puntualità ---
+    var P = D.puntualita || {};
+    m.appendChild(el("h2", "", "Puntualità"));
+    m.appendChild(el("p", "sotto", "I giri dell'agente (uno all'ora, dalle 6 alle 22) e quanto ci mette ogni giro ad arrivare sul sito."));
+    if (P.stato !== "ok") m.appendChild(avvisoStato(P, "GitHub"));
+    else {
+      var pg = P.giorni || [], ult7 = pg.slice(-7), giri7 = (P.giri || []).filter(function (g) { return g.giorno >= (ult7[0] || {}).data; });
+      var mis7 = giri7.filter(function (g) { return g.minuti != null; });
+      var lento = mis7.slice().sort(function (a, b) { return b.minuti - a.minuti; })[0];
+      var mancati7 = [];
+      ult7.forEach(function (g) { (g.mancati || []).forEach(function (h) { mancati7.push(giornoBreve(g.data) + " " + (h < 10 ? "0" : "") + h + ":05"); }); });
+      var np = el("div", "numeri");
+      np.appendChild(numero("Giri", num(somma(pg, "giri", 7)), "ultimi 7 giorni · " + (mancati7.length ? num(mancati7.length) + " mancati" : "nessuno mancato")));
+      np.appendChild(numero("Dal giro al sito", mis7.length ? num(Math.round(mis7.reduce(function (s, g) { return s + g.minuti; }, 0) / mis7.length)) + " min" : "–", "in media, ultimi 7 giorni"));
+      np.appendChild(numero("Il più lento", lento ? num(lento.minuti) + " min" : "–", lento ? "giro delle " + lento.ora + " del " + giornoBreve(lento.giorno) : ""));
+      np.appendChild(numero("Pubblicazioni rilanciate", num(P.rilanciate), num(P.annullate) + " annullate · sentinella rossa " + num(P.sentinella_rossa) + " volte (30 giorni)"));
+      m.appendChild(np);
+      var gp = el("div", "griglia");
+      var rpu = riquadro("Minuti dal giro al sito, giorno per giorno");
+      rpu.appendChild(colonne(pg.map(function (x, i) {
+        return { v: x.media, v2: x.max, etichetta: i % 5 === 4 || i === pg.length - 1 ? giornoBreve(x.data) : "",
+                 titolo: giornoBreve(x.data) + ": " + num(x.giri) + " giri, in media " + (x.media == null ? "–" : num(x.media)) + " min, il più lento " + (x.max == null ? "–" : num(x.max)) + " min" };
+      }), { titolo: "Minuti dal giro al sito per giorno", colore: "#1d4f91" }));
+      var lp = el("div", "legenda"); lp.innerHTML = '<span><i style="background:#1d4f91"></i>In media</span><span><i style="background:#f0b9a6"></i>Il più lento</span>';
+      rpu.appendChild(lp); rpu.classList.add("largo"); gp.appendChild(rpu);
+      var rma = riquadro("Giri mancati e giri lenti, ultimi 7 giorni");
+      var lenti = mis7.filter(function (g) { return g.minuti > 20; });
+      rma.appendChild(el("p", "", mancati7.length ? "Mancati: " + mancati7.join(", ") + "." : "Nessun giro mancato."));
+      rma.appendChild(el("p", "", lenti.length ? "Più di 20 minuti per andare online: " + lenti.map(function (g) { return giornoBreve(g.giorno) + " " + g.ora + " (" + num(g.minuti) + " min)"; }).join(", ") + "." : "Nessun giro ci ha messo più di 20 minuti."));
+      rma.appendChild(el("p", "nota", "Un giro lento è quasi sempre GitHub che tiene ferma la pubblicazione in coda: la sentinella del Pi la rilancia dopo 20 minuti. Ultimo controllo della sentinella su GitHub: " + (P.sentinella_ultima ? quandoBreve(P.sentinella_ultima) : "–") + "."));
+      rma.classList.add("largo"); gp.appendChild(rma);
+      m.appendChild(gp);
+    }
+
+    // --- comunicati per posta ---
+    var C = D.comunicati || {};
+    m.appendChild(el("h2", "", "Comunicati per posta"));
+    m.appendChild(el("p", "sotto", "Quelli arrivati a comunicati@notiziebenevento.it, contati a ogni giro (ultimi giorni del diario)."));
+    if (C.stato !== "ok") m.appendChild(el("p", "vuoto", "Il conto parte dal prossimo giro dell'agente."));
+    else {
+      var nc = el("div", "numeri");
+      nc.appendChild(numero("Comunicati arrivati", num(C.arrivati), "in " + num(C.giri) + " giri"));
+      nc.appendChild(numero("La casella", /^letta/.test(C.casella || "") ? "letta" : "da controllare", C.casella || ""));
+      m.appendChild(nc);
+      var gc = el("div", "griglia");
+      gc.appendChild(riquadro("Da chi (dominio)", barre(C.domini, "comunicati")));
+      gc.appendChild(riquadro("Al giorno", barre((C.giorni || []).map(function (x) { return { nome: giornoBreve(x.data), arrivati: x.arrivati }; }), "arrivati")));
+      m.appendChild(gc);
+    }
   }
 
   // ---------- dietro le quinte: il diario dell'agente ----------

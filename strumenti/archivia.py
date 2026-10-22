@@ -258,6 +258,29 @@ def controlla_decisioni(giro, percorso, d, prima, tutti_gli_id, ev, err):
     return titoli
 
 
+def comunicati_del_giro(prima, adesso):
+    """I comunicati arrivati per posta dall'ultimo giro (comunicati.json dell'archivio di casa, accanto al sito):
+    solo quanti, da quali domini e lo stato della casella, per le statistiche. None se il file non c'è."""
+    p = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
+                     "notizie-benevento-fonti", "comunicati.json")
+    c = leggi(p, None)
+    if not isinstance(c, dict):
+        return None
+    try:
+        dal = dt.datetime.fromisoformat((prima or {}).get("aggiornato"))
+    except (TypeError, ValueError):
+        dal = adesso - dt.timedelta(hours=1)
+    voci = []
+    for v in c.get("voci") or []:
+        try:
+            if dal < dt.datetime.fromisoformat(v["data"]) <= adesso:
+                voci.append(v)
+        except (KeyError, TypeError, ValueError):
+            continue
+    return {"arrivati": len(voci), "domini": sorted({v.get("dominio") for v in voci if v.get("dominio")}),
+            "casella": str(c.get("esito") or "")[:80]}
+
+
 def voce_diario(giro, d, prima, vanno, registro, inizio, adesso, titoli=None, giornali=None):
     """Quello che il giro ha fatto: le notizie nuove e aggiornate le calcola il programma (confronto con l'ultima
     versione pubblicata), le scartate, i dubbi e il riassunto li scrive l'agente."""
@@ -308,7 +331,8 @@ def voce_diario(giro, d, prima, vanno, registro, inizio, adesso, titoli=None, gi
             "riassunto": giro.get("riassunto"),
             "nuove": nuove, "aggiornate": aggiornate, "archiviate": [n["id"] for n in vanno],
             "scartate": scartate, "esame_giornali": esame, "dubbi": giro.get("dubbi") or [], "eventi": giro.get("eventi"),
-            "fonti": fonti, "ricerche": ricerche, "notizie_in_prima": len(d["notizie"]) - len(vanno)}
+            "fonti": fonti, "ricerche": ricerche, "notizie_in_prima": len(d["notizie"]) - len(vanno),
+            "comunicati": comunicati_del_giro(prima, adesso)}
 
 
 def scrivi_diario(base, voce, oggi):
