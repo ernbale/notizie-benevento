@@ -1,7 +1,87 @@
 {
- "aggiornato": "2026-10-22T10:11+02:00",
+ "aggiornato": "2026-10-22T11:09+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-cimitero-traffico-31-ottobre-2-novembre",
+   "titolo": "Benevento, 31 ottobre, 1 e 2 novembre chiusa via Cimitero e divieti di sosta attorno al cimitero: navette dal centro",
+   "titolo_google": "Benevento, cimitero: strade chiuse e navette dal 31 ottobre",
+   "sintesi": "Per Ognissanti e la Commemorazione dei defunti il Comune di Benevento chiude via Cimitero e un tratto di via Fontana Margiacca sabato 31 ottobre, domenica 1 e lunedì 2 novembre, dalle 7 alle 18.30. Ci sono divieti di sosta con rimozione e navette dal centro.",
+   "categoria": "strade",
+   "zona": "benevento",
+   "immagine": "cimitero",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-22T11:01:00+02:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "in_vigore_fino": "2026-11-02",
+   "fonti": [
+    {
+     "nome": "Albo pretorio Benevento",
+     "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80022"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/22/commemorazione-defunti-a-benevento-scatta-il-piano-traffico-navette-da-piazza-pacca-e-via-nicola-da-monteforte/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Per Ognissanti e la Commemorazione dei defunti il Comune di Benevento cambia la circolazione attorno al cimitero comunale. Le misure valgono sabato 31 ottobre, domenica 1 novembre e lunedì 2 novembre 2026, ogni giorno dalle 7 alle 18.30. Sono nell'ordinanza n. 445 del 21 ottobre, pubblicata nell'albo pretorio (l'elenco ufficiale degli atti del Comune).",
+      "fonti": [
+       "Albo pretorio Benevento",
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Via Cimitero è chiusa al traffico, con gli accessi da via Ponticelli e via Margiacca presidiati e transennati. Chiuso anche via Fontana Margiacca, nel tratto tra l'incrocio con via dei Dauni (l'ex strada statale 90 bis) e quello con via San Marco: lì possono passare i residenti. La Polizia Municipale può mettere altri sbarramenti e deviazioni se serve.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Divieto di sosta e di fermata, con rimozione dei veicoli, in via Cimitero, nel piazzale davanti al cimitero (tranne l'area riservata), in via Ponticelli, via San Pasquale, viale dei Rettori davanti all'Arco di Traiano e in via Nicola da Monteforte, sul lato destro verso il centro vicino a piazza Risorgimento.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Per non portare le auto private al cimitero ci saranno navette e autobus urbani dal centro, con capolinea in tre punti: via Cimitero (nel piazzale davanti agli ingressi), via Nicola da Monteforte e piazza Cardinal Pacca. Vicino ai capolinea saranno messi chioschi per comprare i biglietti.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "I divieti non valgono per navette e autobus del servizio, mezzi di soccorso, forze dell'ordine e ASIA, taxi e auto a noleggio con conducente, veicoli per disabili col contrassegno, mezzi di lavoro e fornitori autorizzati nel cimitero e commercianti autorizzati di fiori e articoli cimiteriali. Possono entrare anche i residenti, mostrando un documento o altra prova del domicilio. La Polizia Municipale controlla il rispetto delle regole.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Gli orari delle navette e il prezzo del biglietto: le fonti non li indicano ancora."
+    ],
+    "fonti": [
+     {
+      "nome": "Albo pretorio Benevento",
+      "titolo": "RESTRIZIONI TRAFFICO E SOSTA CON VIGENZA NEI GIORNI DI SABATO 31 OTTOBRE, DOMENICA 1^ NOVEMBRE E LUNEDI' 2 NOVEMBRE 2026, DALLE ORE 7:00 ALLE ORE 18:30, IN OCCASIONE DELLE RICORRENZE DI OGNISSANTI E COMMEMORAZIONE DEI DEFUNTI",
+      "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80022",
+      "data": "22 ott"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Commemorazione defunti, a Benevento scatta il piano traffico. Navette da piazza Pacca e via Nicola da Monteforte",
+      "url": "https://www.ntr24.tv/2026/10/22/commemorazione-defunti-a-benevento-scatta-il-piano-traffico-navette-da-piazza-pacca-e-via-nicola-da-monteforte/",
+      "data": "22 ott, 11:01"
+     }
+    ]
+   },
+   "foto": "cimitero-2"
+  },
   {
    "id": "frasso-telesino-benessere-aree-interne-volontariato",
    "titolo": "Frasso Telesino, parte «Il Benessere nelle Aree interne»: un incontro al mese contro la solitudine",
@@ -1914,6 +1994,10 @@
     {
      "nome": "Il Sannio Quotidiano (22/10)",
      "url": "https://www.ilsannioquotidiano.it/2026/10/22/blocco-tir-chiuso-il-centro-raccolta-rifiuti-di-apice-problemi-anche-a-san-giorgio-del-sannio/"
+    },
+    {
+     "nome": "Comune di Moiano",
+     "url": "https://www.comune.moiano.bn.it/novita/notizie/novita_56.html"
     }
    ],
    "articolo": {
@@ -1923,6 +2007,13 @@
       "fonti": [
        "Comune di Apollosa",
        "Il Sannio Quotidiano (22/10)"
+      ],
+      "giorno": "2026-10-22"
+     },
+     {
+      "testo": "A Moiano, in Valle Caudina, il Comune ha pubblicato giovedì 22 ottobre un avviso con titolo «Sospensione servizio trasporto scuolabus», legato alla protesta degli autotrasportatori. Il testo dell'avviso è in un allegato pdf e le motivazioni e le date non sono scritte nella pagina.",
+      "fonti": [
+       "Comune di Moiano"
       ],
       "giorno": "2026-10-22"
      },
@@ -2072,15 +2163,22 @@
       "titolo": "Blocco tir: chiuso il centro raccolta rifiuti di Apice, problemi anche a San Giorgio del Sannio",
       "url": "https://www.ilsannioquotidiano.it/2026/10/22/blocco-tir-chiuso-il-centro-raccolta-rifiuti-di-apice-problemi-anche-a-san-giorgio-del-sannio/",
       "data": "22 ott, 07:01"
+     },
+     {
+      "nome": "Comune di Moiano",
+      "titolo": "Sospensione servizio trasporto scuolabus",
+      "url": "https://www.comune.moiano.bn.it/novita/notizie/novita_56.html",
+      "data": "22 ott"
      }
     ],
     "aggiornamento": {
-     "testo": "Giovedì 22 ottobre il Comune di Apollosa ha avvisato che la raccolta dei rifiuti è sospesa da oggi per mancanza di carburante; a San Giorgio del Sannio il sindaco ha chiesto di non esporre il secco.",
+     "testo": "Giovedì 22 ottobre il Comune di Moiano ha annunciato la sospensione del servizio scuolabus per la protesta degli autotrasportatori; ad Apollosa la raccolta dei rifiuti è sospesa e a San Giorgio del Sannio non va esposto il secco.",
      "fonti": [
+      "Comune di Moiano",
       "Comune di Apollosa",
       "Il Sannio Quotidiano (22/10)"
      ],
-     "quando": "2026-10-22T10:11+02:00"
+     "quando": "2026-10-22T11:09+02:00"
     }
    }
   },
