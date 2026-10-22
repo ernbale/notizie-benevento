@@ -197,7 +197,11 @@ basket, scherma, tutto»). Ogni notizia di sport ha `"categoria": "sport"` e `"s
   commenti e opinioni, interviste senza fatti, sport nazionale senza squadre o atleti del Sannio (`fuori_provincia`).
 - **Fonti:** le regole di sempre (regola 2: basta anche una sola testata autorevole). In più sono **fonti
   ufficiali** il sito e i comunicati della società, della lega o della federazione (Lega B, FIGC, FIP, FIPAV, FIR,
-  Federscherma…) per risultati, classifiche, calendari e comunicati.
+  Federscherma…) per risultati, classifiche, calendari e comunicati: un comunicato della società basta da solo
+  (`"stato": "ufficiale"`). I comunicati delle società che hanno un sito leggibile (oggi il Benevento Calcio) li
+  mette già `strumenti/giornali.py` nell'elenco degli articoli nuovi, segnati «fonte ufficiale». Il report
+  dell'allenamento di ogni giorno non è una notizia (`non_notizia`), a meno che dica un fatto (un infortunio, un
+  rientro).
 - **Titolo:** squadra o atleta, il fatto, il dato che conta («Benevento-Avellino 2-1: decide Lanini al 90'»).
   Niente toni da tifoso, niente «impresa», «disfatta», «capolavoro».
 - **In prima pagina** lo sport sta nel riquadro «Sport» della colonna di destra e nella pagina Sport, non in mezzo
