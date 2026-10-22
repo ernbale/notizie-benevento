@@ -25,8 +25,8 @@ import urllib.request
 GRAPH = "https://graph.facebook.com"
 PAGINA = "Notizie Benevento"
 REPO = "ernbale/notizie-benevento"
-PERMESSI = {"pages_show_list", "pages_read_engagement", "pages_manage_posts", "read_insights",
-            "pages_read_user_content"}
+PERMESSI = {"pages_show_list", "pages_read_engagement", "pages_manage_posts"}
+STATISTICHE = {"read_insights", "pages_read_user_content"}   # per le statistiche (facoltativi: l'app può non averli)
 INSTAGRAM = {"instagram_basic", "instagram_content_publish"}   # per strumenti/instagram.py (facoltativi)
 
 
@@ -70,6 +70,9 @@ def main():
     scade = info.get("expires_at", 1)
     print(f"✓ token della Pagina «{pag['name']}», permessi a posto, scadenza: "
           + ("mai" if scade == 0 else "ATTENZIONE, scade"))
+    senza = STATISTICHE - set(info.get("scopes", []))
+    print("✓ statistiche: permessi a posto" if not senza else
+          "- statistiche: senza " + ", ".join(sorted(senza)) + " (persone raggiunte e commenti restano «–»)")
     if INSTAGRAM <= set(info.get("scopes", [])):
         ig = get(pag["id"] if "id" in pag else "me", fields="instagram_business_account{username}",
                  access_token=token).get("instagram_business_account")
