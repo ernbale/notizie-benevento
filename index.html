@@ -143,6 +143,12 @@
   .aggiornamento .quando { font: 700 12.5px var(--sans); text-transform: uppercase; letter-spacing: .6px; color: var(--rosso); }
   .appro .aggiornamento p { margin: 4px 0 0; font-size: 18px; line-height: 1.5; }
   .fonti .aggiornata { color: var(--rosso); font-weight: 700; }
+  /* notizia aggiornata nelle ultime 24 ore: etichetta in cima e la frase della novità sotto il titolo */
+  .occhiello .agg { display: inline-block; background: var(--rosso); color: #fff; padding: 1px 6px; border-radius: 2px; margin-right: 8px; }
+  .notizia .novita { margin: 0 0 8px; padding: 1px 0 1px 10px; border-left: 3px solid var(--rosso); font-size: 15px; line-height: 1.45; color: #2a2520;
+    display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; overflow: hidden; } /* il resto è nel riquadro dell'articolo */
+  @media (max-width: 560px) { .notizia .novita { -webkit-line-clamp: 3; } }
+  .notizia .novita b { color: var(--rosso); }
   /* foto illustrativa del tema (img/temi), mai sulla cronaca */
   .foto-tema { margin: 0 0 10px; }
   .foto-tema img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; background: var(--riga); }
@@ -729,7 +735,9 @@
     });
     // una notizia che va avanti da giorni dice quando è stata aggiornata (il riquadro «Aggiornamento» dell'articolo)
     var ag = (n.articolo || {}).aggiornamento;
-    if (ag && ag.quando && String(ag.testo || "").trim()) {
+    if (aggiornamentoRecente(n)) {
+      // l'ora è già nell'etichetta in cima alla scheda
+    } else if (ag && ag.quando && String(ag.testo || "").trim()) {
       r.appendChild(testo(" · "));
       r.appendChild(el("span", "aggiornata", ["aggiornata " + quando(ag.quando)]));
     } else if (n.pubblicato) r.appendChild(testo(" · " + quando(n.pubblicato)));
@@ -752,12 +760,28 @@
     return f;
   }
 
+  // Aggiornata nelle ultime 24 ore (riquadro «Aggiornamento» dell'articolo): in prima pagina si vede subito, in cima.
+  function aggiornamentoRecente(n) {
+    var ag = (n.articolo || {}).aggiornamento, t = ag && Date.parse(ag.quando);
+    if (!ag || isNaN(t) || !String(ag.testo || "").trim()) return null;
+    var ore = (Date.now() - t) / 36e5;
+    return ore >= -0.5 && ore < 24 ? ag : null;
+  }
+  function etichettaAggiornata(iso) {
+    var g = function (x) { return x.toLocaleDateString("it-IT", { timeZone: TZ }); };
+    var d = new Date(iso), ieri = new Date(Date.now() - 864e5);
+    return "Aggiornata " + (g(d) === g(new Date()) ? "" : g(d) === g(ieri) ? "ieri " : quando(iso).replace(/ \d+:\d+$/, " ")) + "alle " + soloOra(iso);
+  }
+
   function scheda(n, classe) {
     var art = el("article", "notizia" + (classe ? " " + classe : ""), []);
     if (n.id) art.setAttribute("data-id", n.id);
     var ft = classe === "spalla" ? null : fotoTema(n, "Immagine illustrativa");
     if (ft) art.appendChild(ft);
-    var occ = el("div", "occhiello", [NOMI_CAT[n.categoria] || "Altro"]);
+    var agr = aggiornamentoRecente(n);
+    var occ = el("div", "occhiello", []);
+    if (agr) occ.appendChild(el("span", "agg", [etichettaAggiornata(agr.quando)]));
+    occ.appendChild(testo(NOMI_CAT[n.categoria] || "Altro"));
     if (n.luogo) occ.appendChild(el("span", "luogo", [n.luogo]));
     art.appendChild(occ);
     var h = el("h2", "", []);
@@ -769,6 +793,7 @@
       h.appendChild(testo(n.titolo));
     }
     art.appendChild(h);
+    if (agr) art.appendChild(el("p", "novita", [el("b", "", ["Novità: "]), testo(agr.testo)]));
     if (n.sintesi) art.appendChild(el("p", "sintesi", [n.sintesi]));
     art.appendChild(rigaFonti(n));
     if (n.nota) art.appendChild(el("div", "nota", [n.nota]));
