@@ -133,6 +133,11 @@
   .appro p, .appro li { font: 400 19px/1.6 var(--serif); }
   .appro ul { padding-left: 20px; margin: 0; }
   .appro .racconto { margin-top: 18px; }
+  /* l'ultima novità di una notizia che va avanti da giorni, in cima all'articolo */
+  .aggiornamento { margin: 16px 0 6px; padding: 10px 14px 12px; border-left: 4px solid var(--rosso); background: rgba(255,255,255,.55); }
+  .aggiornamento .quando { font: 700 12.5px var(--sans); text-transform: uppercase; letter-spacing: .6px; color: var(--rosso); }
+  .appro .aggiornamento p { margin: 4px 0 0; font-size: 18px; line-height: 1.5; }
+  .fonti .aggiornata { color: var(--rosso); font-weight: 700; }
   /* foto illustrativa del tema (img/temi), mai sulla cronaca */
   .foto-tema { margin: 0 0 10px; }
   .foto-tema img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; background: var(--riga); }
@@ -717,7 +722,12 @@
       if (i > 0) r.appendChild(testo(i === lista.length - 1 ? " e " : ", "));
       r.appendChild(linkSicuro(f.url, f.nome || "fonte"));
     });
-    if (n.pubblicato) r.appendChild(testo(" · " + quando(n.pubblicato)));
+    // una notizia che va avanti da giorni dice quando è stata aggiornata (il riquadro «Aggiornamento» dell'articolo)
+    var ag = (n.articolo || {}).aggiornamento;
+    if (ag && ag.quando && String(ag.testo || "").trim()) {
+      r.appendChild(testo(" · "));
+      r.appendChild(el("span", "aggiornata", ["aggiornata " + quando(ag.quando)]));
+    } else if (n.pubblicato) r.appendChild(testo(" · " + quando(n.pubblicato)));
     return r;
   }
 
@@ -1059,6 +1069,16 @@
     art.appendChild(el("h1", "", [titolo]));
   }
 
+  // L'ultima novità di una notizia che va avanti da giorni, in cima all'articolo con data e ora (la mette archivia.py).
+  function riquadroAggiornamento(ag, fonti) {
+    if (!ag || !String(ag.testo || "").trim()) return null;
+    var d = new Date(ag.quando), q = "";
+    if (!isNaN(d)) q = " · " + d.toLocaleDateString("it-IT", { timeZone: TZ, day: "numeric", month: "long" }) + ", " + soloOra(ag.quando);
+    var b = el("div", "aggiornamento", [el("div", "quando", ["Aggiornamento" + q])]);
+    b.appendChild(frase("p", ag, fonti));
+    return b;
+  }
+
   function disegnaArticolo(box, n, dallArchivio) {
     var a = n.articolo;
     var fonti = Array.isArray(a.fonti) ? a.fonti : [];
@@ -1066,6 +1086,8 @@
     testataPagina(art, NOMI_CAT[n.categoria] || "Altro", n.luogo, n.titolo);
     art.appendChild(el("div", "meta", [(dallArchivio ? "Dall'archivio · " : "") + (n.pubblicato ? quando(n.pubblicato) + " · " : "") + fonti.length + (fonti.length === 1 ? " fonte" : " fonti confrontate")]));
     if (n.stato === "una_fonte") art.appendChild(el("div", "nota", ["Per ora questo fatto lo riporta solo " + ((n.fonti || [])[0] || {}).nome + ". Lo aggiorniamo se arrivano altre fonti."]));
+    var agg = riquadroAggiornamento(a.aggiornamento, fonti);
+    if (agg) art.appendChild(agg);
     var az = ascolta(testoArticolo(n));
     az.appendChild(condividi(n.titolo, linkArticolo(n), true));
     art.appendChild(az);

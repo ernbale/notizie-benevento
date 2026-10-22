@@ -334,6 +334,16 @@ def foto_tema(n):
     return f"/img/temi/{t}.jpg"
 
 
+def _aggiornamento(ag, fonti):
+    """L'ultima novità di una notizia che va avanti da giorni, in cima all'articolo con data e ora: come le dirette dei
+    giornali, chi torna vede subito cosa è cambiato (l'ora la mette archivia.py)."""
+    if not isinstance(ag, dict) or not str(ag.get("testo") or "").strip():
+        return ""
+    m = re.match(r"\d{4}-(\d{2})-(\d{2})T(\d{2}):(\d{2})", str(ag.get("quando") or ""))
+    q = f" · {int(m[2])} {MESI_LUNGHI[int(m[1]) - 1]}, {m[3]}:{m[4]}" if m else ""
+    return f'<div class="aggiornamento"><div class="quando">Aggiornamento{e(q)}</div>{_frase("p", ag, fonti)}</div>'
+
+
 def html_articolo(n, appro_collegato):
     a = n["articolo"]
     fonti = a.get("fonti") if isinstance(a.get("fonti"), list) else []
@@ -343,6 +353,7 @@ def html_articolo(n, appro_collegato):
     if n.get("stato") == "una_fonte" and n.get("fonti"):
         h += (f'<div class="nota">Per ora questo fatto lo riporta solo {e(n["fonti"][0].get("nome", ""))}. '
               'Lo aggiorniamo se arrivano altre fonti.</div>')
+    h += _aggiornamento(a.get("aggiornamento"), fonti)
     h += POSTO_ASCOLTA
     if foto_tema(n):
         b = foto_tema(n)[:-4]
@@ -668,7 +679,8 @@ def main():
         url = SITO + percorso("notizia", n["id"])
         im = img(n, "notizia")
         a_ = n["articolo"]
-        modificato = a_.get("aggiornato") or n.get("pubblicato")
+        modificato = max((x for x in (n.get("pubblicato"), a_.get("aggiornato"), (a_.get("aggiornamento") or {}).get("quando"))
+                          if quando_dt(x)), key=quando_dt, default=n.get("pubblicato"))
         sez = NOMI_CAT.get(n.get("categoria"), "Altro")
         coll = next((x for x in appro if n["id"] in (x.get("collegate") or [])), None)
         fonti = a_.get("fonti") if isinstance(a_.get("fonti"), list) else []

@@ -20,6 +20,7 @@ import glob
 import json
 import os
 import re
+import subprocess
 import sys
 
 CAT = {"strade", "cronaca", "meteo", "politica", "eventi", "altro"}
@@ -65,6 +66,111 @@ def leggi(path, predefinito=None):
 
 def testo_json(d):
     return json.dumps(d, ensure_ascii=False, indent=1) + "\n"
+
+
+MESI = {m: i + 1 for i, m in enumerate(["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto",
+                                        "settembre", "ottobre", "novembre", "dicembre"])}
+NOMI_MESI = "|".join(MESI)
+# l'ora di un momento scritto a parole («21 ottobre, mattina»): serve solo a metterlo in ordine
+MOMENTI = [("notte", "23:30"), ("alba", "06:00"), ("tarda mattinata", "11:30"), ("mattin", "09:00"),
+           ("mezzogiorno", "12:00"), ("pomeriggio", "15:00"), ("sera", "20:00")]
+QUANDO = re.compile(r"^\d{4}-\d{2}-\d{2}(T\d{2}:\d{2})?$")
+
+
+def chiave_momento(c, rif):
+    """Quando è successo un fatto della cronologia, per metterlo in ordine: «quando» se c'è, se no dal testo di «data»
+    («19 ottobre», «20 ottobre, 10:30», «notte 18-19», «21 ottobre, mattina», «ottobre 2025»). None se non si capisce.
+    rif = il giorno della notizia, per l'anno (e il mese di «notte 18-19») quando non sono scritti."""
+    q = str(c.get("quando") or "")
+    if QUANDO.match(q):
+        return q
+    s = str(c.get("data") or "").lower()
+    m = re.search(rf"(\d{{1,2}})(?:\s*-\s*\d{{1,2}})?\s+({NOMI_MESI})(?:\s+(\d{{4}}))?", s)
+    if m:
+        g, me, a = int(m[1]), MESI[m[2]], m[3]
+    elif re.search(r"\bnotte\s+(\d{1,2})\s*-\s*\d{1,2}\b", s):
+        g, me, a = int(re.search(r"\bnotte\s+(\d{1,2})", s)[1]), rif.month, None
+    elif re.search(rf"\b({NOMI_MESI})\b", s):   # «ottobre 2025», «metà dicembre», «inizio ottobre»
+        m = re.search(rf"\b({NOMI_MESI})\b(?:\s+(\d{{4}}))?", s)
+        g = 15 if "metà" in s else 28 if "fine" in s else 1
+        me, a = MESI[m[1]], m[2]
+    else:
+        return None
+    try:
+        giorno = dt.date(int(a) if a else rif.year, me, g)
+    except ValueError:
+        return None
+    if not a and giorno > rif + dt.timedelta(days=120):   # «28 dicembre» in una notizia di gennaio
+        giorno = giorno.replace(year=giorno.year - 1)
+    ora = re.search(r"\b([01]?\d|2[0-3])[:.]([0-5]\d)\b", s)
+    hh = f"{int(ora[1]):02d}:{ora[2]}" if ora else next((h for k, h in MOMENTI if k in s), None)
+    return giorno.isoformat() + (f"T{hh}" if hh else "")
+
+
+def ordina_cronologia(righe, rif, dove, avv):
+    """Mette i fatti in ordine di tempo (21 ott 2026: l'agente aggiungeva in fondo anche fatti di giorni prima).
+    Prima i giorni; dentro lo stesso giorno si mettono in ordine solo le righe con l'ora, quelle senza restano dove
+    le ha messe l'agente. Una riga di cui non si capisce il giorno resta attaccata a quella prima.
+    True se l'ordine è cambiato."""
+    if not isinstance(righe, list) or len(righe) < 2:
+        return False
+    chiavi, prec = [], ""
+    for c in righe:
+        k = chiave_momento(c, rif) if isinstance(c, dict) else None
+        if k is None:
+            avv.append(f"{dove}: nei fatti non capisco il giorno di {str((c or {}).get('data'))!r}: scrivi giorno e mese "
+                       "(«19 ottobre, 10:30») o aggiungi \"quando\": \"AAAA-MM-GGTHH:MM\"")
+            k = prec[:10]
+        chiavi.append(k)
+        prec = k
+    ordine = sorted(range(len(righe)), key=lambda i: (chiavi[i][:10], i))
+    for g in {k[:10] for k in chiavi}:
+        posti = [p for p, i in enumerate(ordine) if chiavi[i][:10] == g and len(chiavi[i]) > 10]
+        for p, i in zip(posti, sorted((ordine[p] for p in posti), key=lambda i: (chiavi[i], i))):
+            ordine[p] = i
+    nuove = [righe[i] for i in ordine]
+    if nuove == righe:
+        return False
+    righe[:] = nuove
+    return True
+
+
+def pubblicate_prima(base):
+    """notizie.json com'era all'ultimo salvataggio (git HEAD), per sapere cosa è cambiato in questo giro. None se git non c'è."""
+    try:
+        p = subprocess.run(["git", "-C", base, "show", "HEAD:notizie.json"], capture_output=True, timeout=30)
+        return json.loads(p.stdout.decode("utf-8")) if p.returncode == 0 else None
+    except Exception:
+        return None
+
+
+def segna_aggiornamenti(d, prima, adesso, avv):
+    """L'ora del riquadro «Aggiornamento» la mette il programma, non l'agente: è l'ora del giro in cui il testo è cambiato.
+    Se il testo è uguale a quello già pubblicato, resta l'ora di allora."""
+    vecchie = {n.get("id"): n for n in (prima or {}).get("notizie", [])}
+    ora = adesso.isoformat(timespec="minutes")
+    for n in d["notizie"]:
+        a = n.get("articolo") or {}
+        v = vecchie.get(n.get("id"))
+        va = (v or {}).get("articolo") or {}
+        ag = a.get("aggiornamento")
+        if not ag:
+            nuove_fonti = {f.get("nome") for f in a.get("fonti", [])} - {f.get("nome") for f in va.get("fonti", [])}
+            if v and nuove_fonti and a.get("racconto") != va.get("racconto"):
+                avv.append(f"{n.get('id')}: racconto e fonti nuove ({', '.join(sorted(map(str, nuove_fonti)))}) ma niente "
+                           "«aggiornamento»: se ci sono fatti nuovi scrivi in 1-2 frasi cosa è cambiato")
+            continue
+        if prima is not None and v is None:
+            avv.append(f"{n.get('id')}: è una notizia nuova, l'«aggiornamento» non serve: l'ho tolto")
+            del a["aggiornamento"]
+            continue
+        vag = va.get("aggiornamento") or {}
+        if vag.get("testo") == ag.get("testo") and ISO.match(str(vag.get("quando", ""))):
+            ag["quando"] = vag["quando"]
+        elif prima is None and ISO.match(str(ag.get("quando", ""))) and not nel_futuro(ag["quando"], adesso):
+            pass   # senza git non so cosa c'era prima: tengo l'ora scritta
+        else:
+            ag["quando"] = ora
 
 
 def nel_futuro(iso, adesso):
@@ -276,6 +382,16 @@ def controlla(d, err, avv, adesso=None):
                 for nm in x.get("fonti", []):
                     if nm not in nomi:
                         err.append(f"{w}: {sez} cita {nm!r} che non è in articolo.fonti")
+                if sez == "cronologia" and "quando" in x and not QUANDO.match(str(x["quando"])):
+                    err.append(f"{w}: cronologia con quando {x['quando']!r}: AAAA-MM-GG o AAAA-MM-GGTHH:MM")
+        if "aggiornamento" in a:
+            ag = a["aggiornamento"]
+            if not isinstance(ag, dict) or vuoto(ag.get("testo")) or vuoto(ag.get("fonti")):
+                err.append(f"{w}: aggiornamento vuole testo e fonti")
+            else:
+                for nm in ag["fonti"]:
+                    if nm not in nomi:
+                        err.append(f"{w}: aggiornamento cita {nm!r} che non è in articolo.fonti")
         url_validi(n, w)
 
     for ap in d["approfondimenti"]:
@@ -428,6 +544,14 @@ def main():
             print("ERRORE:", x)
         print(f"{len(err)} ERRORI: niente è stato scritto")
         sys.exit(1)
+
+    # L'ora dei riquadri «Aggiornamento» e i fatti in ordine di tempo: li fa il programma, così non si sbagliano.
+    segna_aggiornamenti(d, pubblicate_prima(base), adesso_roma or dt.datetime.now(dt.timezone.utc).astimezone(), avv)
+    for x in d["notizie"] + d["approfondimenti"]:
+        crono = x.get("cronologia") if "sommario" in x else (x.get("articolo") or {}).get("cronologia")
+        rif = dt.date.fromisoformat(str(x.get("pubblicato") or x.get("aggiornato"))[:10])
+        if ordina_cronologia(crono, rif, x["id"], avv):
+            print(f"FATTI MESSI IN ORDINE: {x['id']}")
 
     # Cosa resta in prima pagina e cosa va in archivio.
     soglia_pp = (oggi - dt.timedelta(days=GIORNI_PRIMA_PAGINA - 1)).isoformat()

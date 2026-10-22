@@ -3293,6 +3293,14 @@
     }
    ],
    "articolo": {
+    "aggiornamento": {
+     "testo": "Mercoledì 21 ottobre, in mattinata, decine di cittadini hanno rallentato il traffico anche sulla statale 87 Benevento-Campobasso, allo svincolo di Campolattaro, per protesta contro il caro carburanti e il costo della vita.",
+     "fonti": [
+      "Anteprima24",
+      "TV7 Benevento"
+     ],
+     "quando": "2026-10-21T14:10+02:00"
+    },
     "aggiornato": "2026-10-20T09:25:00+02:00",
     "cronologia": [
      {
@@ -3353,14 +3361,6 @@
       ]
      },
      {
-      "data": "22 ottobre",
-      "fatto": "Annunciati i presidi degli agricoltori sulla Sannitica, sulla statale 212 e a Benevento in zona Ponte delle Tavole.",
-      "fonti": [
-       "Ottopagine (19/10)",
-       "NTR24"
-      ]
-     },
-     {
       "data": "notte 20-21",
       "fatto": "Seconda notte consecutiva di blocchi: tre presìdi attivi a Castel del Lago, a Tufara Valle e a San Salvatore Telesino.",
       "fonti": [
@@ -3380,6 +3380,14 @@
       "fonti": [
        "Anteprima24",
        "TV7 Benevento"
+      ]
+     },
+     {
+      "data": "22 ottobre",
+      "fatto": "Annunciati i presidi degli agricoltori sulla Sannitica, sulla statale 212 e a Benevento in zona Ponte delle Tavole.",
+      "fonti": [
+       "Ottopagine (19/10)",
+       "NTR24"
       ]
      }
     ],
@@ -3770,6 +3778,14 @@
       ]
      },
      {
+      "data": "21 ottobre",
+      "fatto": "Coldiretti Campania ferma la manifestazione di Napoli dopo l'incontro in Regione.",
+      "fonti": [
+       "NTR24 (Coldiretti)",
+       "BeneventoNews24 (Coldiretti)"
+      ]
+     },
+     {
       "data": "22 ottobre",
       "fatto": "Presidi previsti sulla Sannitica (statale 87), sulla statale 212 e a Benevento, in zona Ponte delle Tavole.",
       "fonti": [
@@ -3785,14 +3801,6 @@
       "fonti": [
        "NTR24",
        "Il Sannio Quotidiano"
-      ]
-     },
-     {
-      "data": "21 ottobre",
-      "fatto": "Coldiretti Campania ferma la manifestazione di Napoli dopo l'incontro in Regione.",
-      "fonti": [
-       "NTR24 (Coldiretti)",
-       "BeneventoNews24 (Coldiretti)"
       ]
      }
     ],
@@ -4277,18 +4285,18 @@
     "aggiornato": "2026-10-20T09:25:00+02:00",
     "cronologia": [
      {
+      "data": "ottobre 2025",
+      "fatto": "I primi quattro arresti: sono i quattro giovani giudicati ora.",
+      "fonti": [
+       "Il Mattino"
+      ]
+     },
+     {
       "data": "notte 4-5 ottobre 2025",
       "fatto": "Dopo una telefonata, quattro auto partono da Benevento verso il locale Xuè di Montesarchio. All'uscita viene aggredito prima un 18enne di Foglianise, ferito in modo non grave, poi il 17enne di Vitulano, colpito con calci, pugni e una mazza da baseball anche a terra: finisce in coma.",
       "fonti": [
        "Il Mattino",
        "NTR24"
-      ]
-     },
-     {
-      "data": "ottobre 2025",
-      "fatto": "I primi quattro arresti: sono i quattro giovani giudicati ora.",
-      "fonti": [
-       "Il Mattino"
       ]
      },
      {
@@ -4889,28 +4897,20 @@
      ]
     },
     {
-     "data": "20 ottobre",
-     "fatto": "Tavolo tecnico in Prefettura a Milano con il ministro Salvini; nel pomeriggio i gruppi di protesta del Sud, compresa la Campania.",
-     "fonti": [
-      "ANSA (17/10)",
-      "Il Sole 24 Ore"
-     ]
-    },
-    {
-     "data": "22 ottobre",
-     "fatto": "Al via i presidi degli agricoltori.",
-     "fonti": [
-      "Ottopagine (agricoltori)",
-      "NTR24"
-     ]
-    },
-    {
      "data": "19-20 ottobre",
      "fatto": "Il pastificio Rummo di Benevento si ferma per mancanza di materie prime; a Benevento chiude l'ecocentro di Margiacca perché i mezzi dell'Asia sono bloccati.",
      "fonti": [
       "NTR24 (Rummo)",
       "LabTV (Rummo)",
       "NTR24 (Asia)"
+     ]
+    },
+    {
+     "data": "20 ottobre",
+     "fatto": "Tavolo tecnico in Prefettura a Milano con il ministro Salvini; nel pomeriggio i gruppi di protesta del Sud, compresa la Campania.",
+     "fonti": [
+      "ANSA (17/10)",
+      "Il Sole 24 Ore"
      ]
     },
     {
@@ -4954,6 +4954,14 @@
       "TV7 Benevento (AIR)",
       "Anteprima24 (via Nenni)",
       "Il Sannio Quotidiano (Colle Sannita)"
+     ]
+    },
+    {
+     "data": "22 ottobre",
+     "fatto": "Al via i presidi degli agricoltori.",
+     "fonti": [
+      "Ottopagine (agricoltori)",
+      "NTR24"
      ]
     }
    ],
