@@ -194,6 +194,43 @@
    "foto": "mandolino"
   },
   {
+   "id": "monumenti-aperti-benevento-2026",
+   "titolo": "Monumenti Aperti a Benevento",
+   "tipo": "mostra",
+   "inizio": "2026-10-24",
+   "fine": "2026-10-25",
+   "luogo": "Chiesa del Santissimo Salvatore e Rocca dei Rettori",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "prezzo": "Ingresso gratuito",
+   "breve": "Il 24 e 25 ottobre visite gratuite alla Chiesa del Santissimo Salvatore e alla Rocca dei Rettori, nella 30ª edizione di Monumenti Aperti.",
+   "descrizione": [
+    {
+     "testo": "Il 24 e 25 ottobre Benevento partecipa alla trentesima edizione di Monumenti Aperti, che si chiude l'8 novembre. Si possono visitare la Chiesa del Santissimo Salvatore, una delle parrocchie più antiche della città, e la Rocca dei Rettori, il complesso con il Torrione longobardo che ospita sezioni del Museo del Sannio.",
+     "fonti": [
+      "Ottopagine"
+     ]
+    },
+    {
+     "testo": "L'ingresso è gratuito. Le visite sono accompagnate da studenti, volontari e associazioni. Gli orari non sono indicati nell'articolo; informazioni e prenotazioni su www.monumentiaperti.com e nell'app Monumenti Aperti.",
+     "fonti": [
+      "Ottopagine"
+     ]
+    }
+   ],
+   "immagine": "museo",
+   "annullato": false,
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "titolo": "Il 24 e 25 ottobre alla scoperta della Chiesa del Santissimo Salvatore e della Rocca dei Rettori",
+     "url": "https://www.ottopagine.it/bn/attualita/441823/monumenti-aperti-benevento-protagonista-della-stagione-autunnale.shtml",
+     "data": "22 ott"
+    }
+   ],
+   "foto": "museo"
+  },
+  {
    "id": "domeniche-olio-cerreto-sannita-2026",
    "titolo": "Domeniche dell'Olio a Cerreto Sannita",
    "tipo": "sagra",

@@ -1,7 +1,124 @@
 {
- "aggiornato": "2026-10-22T11:09+02:00",
+ "aggiornato": "2026-10-22T12:12+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "sifa-imprese-funebri-carburante-prefetti",
+   "titolo": "Caro carburante, le imprese funebri chiedono ai prefetti di essere servizio essenziale: «Rischiamo di non poter fare i funerali»",
+   "titolo_google": "Imprese funebri: carburante, la richiesta ai prefetti",
+   "sintesi": "La SIFA, associazione di imprese funebri con sede a Montesarchio, ha chiesto ai prefetti della Campania, a partire da quello di Benevento, di mettere le imprese tra i servizi da rifornire per primi, perché senza gasolio i funerali rischiano di fermarsi.",
+   "categoria": "altro",
+   "zona": "provincia",
+   "luogo": "Montesarchio",
+   "pubblicato": "2026-10-22T12:04:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/441824/caro-carburante-sifa-ai-prefetti-imprese-funebri-tra-i-servizi-essenziali.shtml"
+    },
+    {
+     "nome": "Lab TV",
+     "url": "https://www.labtv.net/attualita/2026/10/22/caro-carburante-lallarme-delle-imprese-funebri-rischiamo-di-non-poter-garantire-i-funerali/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Giovedì 22 ottobre la SIFA, Sviluppo Imprese Funebri Associate, ha scritto ai prefetti della Campania, a partire da quello di Benevento. Chiede che le imprese funebri siano messe tra i servizi indispensabili, come le ambulanze e le forze dell'ordine, quando si decide a chi dare per primo il carburante nei distributori autorizzati. La SIFA ha sede a Montesarchio e riunisce 250 imprenditori campani, quasi la metà delle imprese funebri della regione.",
+      "fonti": [
+       "Ottopagine",
+       "Lab TV"
+      ]
+     },
+     {
+      "testo": "Il motivo sono le proteste per il caro carburante: secondo la SIFA possono rendere difficile rifornire i mezzi, e senza rifornimento le imprese rischiano di non poter svolgere i funerali, con «gravi criticità igienico-sanitarie». Il presidente Giuseppe Carbone sostiene che l'attività funebre sia un servizio pubblico essenziale e indifferibile e spera che la richiesta sia valutata il prima possibile.",
+      "fonti": [
+       "Ottopagine",
+       "Lab TV"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "La richiesta ai prefetti di inserire le imprese funebri tra i servizi indispensabili per il rifornimento.",
+      "fonti": [
+       "Ottopagine",
+       "Lab TV"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Se le Prefetture hanno risposto o risponderanno alla richiesta: gli articoli letti non riportano risposte."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "La nota a firma di Giuseppe Carbone: \"C'è il rischio che sarà un problema anche morire\"",
+      "url": "https://www.ottopagine.it/bn/attualita/441824/caro-carburante-sifa-ai-prefetti-imprese-funebri-tra-i-servizi-essenziali.shtml",
+      "data": "22 ott, 11:55"
+     },
+     {
+      "nome": "Lab TV",
+      "titolo": "Caro carburante, l’allarme delle imprese funebri: «Rischiamo di non poter garantire i funerali»",
+      "url": "https://www.labtv.net/attualita/2026/10/22/caro-carburante-lallarme-delle-imprese-funebri-rischiamo-di-non-poter-garantire-i-funerali/",
+      "data": "22 ott, 12:04"
+     }
+    ]
+   }
+  },
+  {
+   "id": "autolinee-bizzarro-corse-a-rischio-gasolio",
+   "titolo": "Autolinee Bizzarro: per mancanza di gasolio possibili ritardi e corse soppresse tra la Valle Vitulanese e Benevento",
+   "titolo_google": "Autolinee Bizzarro, corse a rischio per mancanza di gasolio",
+   "sintesi": "L'azienda di Torrecuso avvisa che nelle prossime ore le corse extraurbane, compresi i collegamenti tra la Valle Vitulanese e Benevento, possono subire riduzioni improvvise, ritardi o soppressioni.",
+   "categoria": "altro",
+   "zona": "provincia",
+   "luogo": "Torrecuso",
+   "pubblicato": "2026-10-22T11:58:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24 (Moiano)",
+     "url": "https://www.ntr24.tv/2026/10/22/emergenza-carburanti-nel-sannio-stop-a-scuolabus-a-moiano-e-corse-a-rischio-per-le-autolinee-bizzarro/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Giovedì 22 ottobre le Autolinee Bizzarro, l'azienda di trasporto con sede a Torrecuso, hanno avvisato i passeggeri che per una «severa e imprevedibile mancanza materiale di gasolio» nelle prossime ore le corse possono essere ridotte all'improvviso, ritardate o soppresse.",
+      "fonti": [
+       "NTR24 (Moiano)"
+      ]
+     },
+     {
+      "testo": "L'avviso riguarda le tratte extraurbane e i collegamenti tra la Valle Vitulanese e Benevento. L'articolo non indica linee singole: l'azienda invita a guardare il proprio sito per gli aggiornamenti. È uno dei disagi del trasporto legati alla mancanza di carburante dopo i blocchi degli autotrasportatori.",
+      "fonti": [
+       "NTR24 (Moiano)"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quali corse precise saltano e per quanto tempo.",
+     "Quando arriva il gasolio all'azienda."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24 (Moiano)",
+      "titolo": "Emergenza carburanti nel Sannio: stop a scuolabus a Moiano e corse a rischio per le Autolinee Bizzarro",
+      "url": "https://www.ntr24.tv/2026/10/22/emergenza-carburanti-nel-sannio-stop-a-scuolabus-a-moiano-e-corse-a-rischio-per-le-autolinee-bizzarro/",
+      "data": "22 ott, 11:58"
+     }
+    ]
+   }
+  },
   {
    "id": "benevento-cimitero-traffico-31-ottobre-2-novembre",
    "titolo": "Benevento, 31 ottobre, 1 e 2 novembre chiusa via Cimitero e divieti di sosta attorno al cimitero: navette dal centro",
@@ -1816,7 +1933,7 @@
    "categoria": "altro",
    "zona": "benevento",
    "luogo": "Benevento",
-   "pubblicato": "2026-10-21T09:41:00+02:00",
+   "pubblicato": "2026-10-22T10:53:00+02:00",
    "stato": "ufficiale",
    "rilevante": false,
    "fonti": [
@@ -1831,28 +1948,49 @@
     {
      "nome": "NTR24",
      "url": "https://www.ntr24.tv/2026/10/21/benevento-pubblicata-la-graduatoria-dei-nuclei-familiari-beneficiari"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/attualita/2026/card-dedicata-a-te-2026-2027-ritiro-presso-sportelli-postali-il-comune-pubblica-elenco-beneficiari.html"
     }
    ],
    "articolo": {
     "racconto": [
      {
+      "testo": "Giovedì 22 ottobre InfoSannio scrive che il Comune ha precisato che il ritiro della card non si fa nella sede comunale di via De Gasperi ma presso gli sportelli di Poste Italiane: i Comuni pubblicano solo gli elenchi, l'INPS manda le liste a Poste e Poste mette le carte a disposizione. Le card saranno attivate dal 4 novembre 2026. Il giornale titola «2026-2027», mentre l'avviso del Comune di ieri parlava del 2025.",
+      "fonti": [
+       "InfoSannio"
+      ],
+      "giorno": "2026-10-22"
+     },
+     {
       "testo": "Il Comune di Benevento ha pubblicato la graduatoria dei nuclei familiari che ricevono la «Carta Dedicata a te» per il 2025, la misura che dà una carta per la spesa alle famiglie in difficoltà. Per tutelare la privacy non ci sono i nomi: ogni nucleo si riconosce dal numero di protocollo della sua DSU ISEE, la dichiarazione con cui si calcola l'ISEE.",
       "fonti": [
        "Comune di Benevento"
-      ]
+      ],
+      "giorno": "2026-10-21"
      },
      {
       "testo": "Chi ha già la carta riceve l'accredito direttamente su quella che possiede. I nuovi beneficiari devono prima ritirare la comunicazione con il codice identificativo negli uffici comunali di viale Principe di Napoli 91 (Palazzo De Gasperi), dal lunedì al venerdì, dalle 9 alle 12. Poi vanno in un qualsiasi ufficio di Poste Italiane per ritirare la carta.",
       "fonti": [
        "Comune di Benevento"
-      ]
+      ],
+      "giorno": "2026-10-21"
      }
     ],
     "cronologia": [],
     "concordano": [],
-    "divergono": [],
+    "divergono": [
+     {
+      "testo": "L'avviso del Comune del 21 ottobre parlava di un passaggio a Palazzo De Gasperi per il codice prima delle Poste; InfoSannio il 22 scrive che nessun ritiro va fatto in sede comunale. Valgono le indicazioni del Comune: conviene verificarle prima di andare.",
+      "fonti": [
+       "Comune di Benevento",
+       "InfoSannio"
+      ]
+     }
+    ],
     "non_si_sa": [
-     "Da quando le carte sono utilizzabili e di quale importo: l'avviso del Comune non lo dice."
+     "Quale importo avranno le carte: le fonti lette non lo dicono."
     ],
     "fonti": [
      {
@@ -1872,8 +2010,21 @@
       "titolo": "Benevento, pubblicata la graduatoria dei nuclei familiari beneficiari della misura “Carta Dedicata a Te”",
       "url": "https://www.ntr24.tv/2026/10/21/benevento-pubblicata-la-graduatoria-dei-nuclei-familiari-beneficiari",
       "data": "21 ott"
+     },
+     {
+      "nome": "InfoSannio",
+      "titolo": "Card ‘Dedicata a te 2026-2027’: ritiro presso sportelli postali, il Comune pubblica elenco beneficiari",
+      "url": "https://www.infosannionews.it/attualita/2026/card-dedicata-a-te-2026-2027-ritiro-presso-sportelli-postali-il-comune-pubblica-elenco-beneficiari.html",
+      "data": "22 ott, 10:53"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Giovedì 22 ottobre, secondo InfoSannio, il Comune precisa che la card si ritira alle Poste e non in sede comunale, e che sarà attivata dal 4 novembre.",
+     "fonti": [
+      "InfoSannio"
+     ],
+     "quando": "2026-10-22T12:12+02:00"
+    }
    }
   },
   {
@@ -1998,6 +2149,10 @@
     {
      "nome": "Comune di Moiano",
      "url": "https://www.comune.moiano.bn.it/novita/notizie/novita_56.html"
+    },
+    {
+     "nome": "NTR24 (Moiano)",
+     "url": "https://www.ntr24.tv/2026/10/22/emergenza-carburanti-nel-sannio-stop-a-scuolabus-a-moiano-e-corse-a-rischio-per-le-autolinee-bizzarro/"
     }
    ],
    "articolo": {
@@ -2011,9 +2166,10 @@
       "giorno": "2026-10-22"
      },
      {
-      "testo": "A Moiano, in Valle Caudina, il Comune ha pubblicato giovedì 22 ottobre un avviso con titolo «Sospensione servizio trasporto scuolabus», legato alla protesta degli autotrasportatori. Il testo dell'avviso è in un allegato pdf e le motivazioni e le date non sono scritte nella pagina.",
+      "testo": "A Moiano, in Valle Caudina, il Comune ha sospeso il servizio scuolabus: lo stop vale da venerdì 23 ottobre «fino a nuova comunicazione», perché il Comune non riesce a rifornire di carburante il mezzo. Le famiglie devono accompagnare e riprendere i figli da sole.",
       "fonti": [
-       "Comune di Moiano"
+       "Comune di Moiano",
+       "NTR24 (Moiano)"
       ],
       "giorno": "2026-10-22"
      },
@@ -2169,16 +2325,21 @@
       "titolo": "Sospensione servizio trasporto scuolabus",
       "url": "https://www.comune.moiano.bn.it/novita/notizie/novita_56.html",
       "data": "22 ott"
+     },
+     {
+      "nome": "NTR24 (Moiano)",
+      "titolo": "Emergenza carburanti nel Sannio: stop a scuolabus a Moiano e corse a rischio per le Autolinee Bizzarro",
+      "url": "https://www.ntr24.tv/2026/10/22/emergenza-carburanti-nel-sannio-stop-a-scuolabus-a-moiano-e-corse-a-rischio-per-le-autolinee-bizzarro/",
+      "data": "22 ott, 11:58"
      }
     ],
     "aggiornamento": {
-     "testo": "Giovedì 22 ottobre il Comune di Moiano ha annunciato la sospensione del servizio scuolabus per la protesta degli autotrasportatori; ad Apollosa la raccolta dei rifiuti è sospesa e a San Giorgio del Sannio non va esposto il secco.",
+     "testo": "Giovedì 22 ottobre il Comune di Moiano ha comunicato che da venerdì 23 ottobre lo scuolabus resta fermo fino a nuova comunicazione, per mancanza di carburante.",
      "fonti": [
-      "Comune di Moiano",
-      "Comune di Apollosa",
-      "Il Sannio Quotidiano (22/10)"
+      "NTR24 (Moiano)",
+      "Comune di Moiano"
      ],
-     "quando": "2026-10-22T11:09+02:00"
+     "quando": "2026-10-22T12:12+02:00"
     }
    }
   },
@@ -3939,7 +4100,7 @@
    "zona": "provincia",
    "immagine": "camion",
    "luogo": "Tufara Valle",
-   "pubblicato": "2026-10-22T09:11:00+02:00",
+   "pubblicato": "2026-10-22T11:58:00+02:00",
    "stato": "confermata",
    "fonti": [
     {
@@ -3985,18 +4146,29 @@
     {
      "nome": "Il Sannio Quotidiano (22/10)",
      "url": "https://www.ilsannioquotidiano.it/2026/10/22/carburanti-autocisterna-in-citta-scortata-dalla-polizia-caos-e-traffico-in-via-nenni/"
+    },
+    {
+     "nome": "NTR24 (sindaci)",
+     "url": "https://www.ntr24.tv/2026/10/22/tre-sindaci-sanniti-a-castel-del-lago-vicinanza-alla-causa-degli-autotrasportatori/"
+    },
+    {
+     "nome": "Ottopagine (22/10)",
+     "url": "https://www.ottopagine.it/bn/attualita/441826/i-sindaci-di-san-giorgio-apice-e-calvi-al-presidio-degli-autotrasportatori.shtml"
+    },
+    {
+     "nome": "InfoSannio (USB)",
+     "url": "https://www.infosannionews.it/cronaca/2026/manifestazione-davanti-la-prefettura-di-protesta-della-usb-alla-quale-hanno-partecipato-anche-gli-studenti.html"
     }
    ],
    "articolo": {
     "aggiornamento": {
-     "testo": "Giovedì 22 ottobre, secondo Anteprima24 e LabTV, i tir restano fermi sull'Appia e sulla Telesina senza fermare la circolazione, mentre in Sicilia e Calabria i blocchi sono sospesi. La Municipale di Benevento ha cambiato fornitore di carburante e in città un'autocisterna è arrivata con la scorta della Polizia.",
+     "testo": "Giovedì 22 ottobre i sindaci di San Giorgio del Sannio, Apice e Calvi sono andati al presidio di Castel del Lago per dire che sono vicini agli autotrasportatori; in mattinata ha manifestato davanti alla Prefettura anche la USB, con molti studenti, chiedendo tra l'altro di calmierare i prezzi dei carburanti.",
      "fonti": [
-      "Anteprima24 (22/10)",
-      "LabTV (22/10)",
-      "NTR24 (22/10)",
-      "Il Sannio Quotidiano (22/10)"
+      "NTR24 (sindaci)",
+      "Ottopagine (22/10)",
+      "InfoSannio (USB)"
      ],
-     "quando": "2026-10-22T10:11+02:00"
+     "quando": "2026-10-22T12:12+02:00"
     },
     "aggiornato": "2026-10-20T09:25:00+02:00",
     "cronologia": [
@@ -4107,6 +4279,14 @@
       "fonti": [
        "NTR24 (22/10)",
        "Il Sannio Quotidiano (22/10)"
+      ]
+     },
+     {
+      "data": "22 ottobre, mattina",
+      "fatto": "I sindaci di San Giorgio del Sannio, Apice e Calvi vanno al presidio di Castel del Lago; la USB manifesta davanti alla Prefettura.",
+      "fonti": [
+       "NTR24 (sindaci)",
+       "InfoSannio (USB)"
       ]
      }
     ],
@@ -4273,9 +4453,42 @@
       "titolo": "Carburanti, autocisterna in città scortata dalla Polizia: caos e traffico in via Nenni",
       "url": "https://www.ilsannioquotidiano.it/2026/10/22/carburanti-autocisterna-in-citta-scortata-dalla-polizia-caos-e-traffico-in-via-nenni/",
       "data": "22 ott, 07:29"
+     },
+     {
+      "nome": "NTR24 (sindaci)",
+      "titolo": "Tre sindaci sanniti a Castel del Lago: ‘Vicinanza alla causa degli autotrasportatori’",
+      "url": "https://www.ntr24.tv/2026/10/22/tre-sindaci-sanniti-a-castel-del-lago-vicinanza-alla-causa-degli-autotrasportatori/",
+      "data": "22 ott, 11:49"
+     },
+     {
+      "nome": "Ottopagine (22/10)",
+      "titolo": "I sindaci di San Giorgio, Apice e Calvi al presidio degli autotrasportatori",
+      "url": "https://www.ottopagine.it/bn/attualita/441826/i-sindaci-di-san-giorgio-apice-e-calvi-al-presidio-degli-autotrasportatori.shtml",
+      "data": "22 ott, 11:58"
+     },
+     {
+      "nome": "InfoSannio (USB)",
+      "titolo": "Manifestazione davanti la Prefettura di protesta della USB alla quale hanno partecipato anche gli studenti",
+      "url": "https://www.infosannionews.it/cronaca/2026/manifestazione-davanti-la-prefettura-di-protesta-della-usb-alla-quale-hanno-partecipato-anche-gli-studenti.html",
+      "data": "22 ott, 10:52"
      }
     ],
     "racconto": [
+     {
+      "testo": "Giovedì 22 ottobre in mattinata tre sindaci sanniti sono andati al presidio degli autotrasportatori di Castel del Lago: Giuseppe Ricci di San Giorgio del Sannio, Angelo Pepe di Apice e Vincenzo Parziale di Calvi. Hanno espresso vicinanza a chi protesta. Ricci ha detto di sperare che le richieste vengano ascoltate con un dialogo costruttivo con le istituzioni. Al presidio c'erano anche degli agricoltori.",
+      "fonti": [
+       "NTR24 (sindaci)",
+       "Ottopagine (22/10)"
+      ],
+      "giorno": "2026-10-22"
+     },
+     {
+      "testo": "Sempre giovedì mattina, davanti alla Prefettura di Benevento, ha manifestato il sindacato USB, con molti studenti. Tra le richieste ci sono misure per calmierare i prezzi dei carburanti, salari adeguati all'inflazione e un salario minimo di almeno 12 euro l'ora. Alla fine i manifestanti hanno chiesto di essere ricevuti dal Prefetto.",
+      "fonti": [
+       "InfoSannio (USB)"
+      ],
+      "giorno": "2026-10-22"
+     },
      {
       "testo": "Giovedì 22 ottobre i blocchi degli autotrasportatori nel Sannio vanno avanti, nonostante l'allerta meteo di mercoledì. Il Mattino conta tre presìdi: il casello di Benevento sull'A16, l'Appia a Tufara e la Telesina a San Salvatore Telesino, in direzione sia di Caserta e Benevento sia dell'A1 verso Caianello. Sulla Telesina decine di mezzi pesanti sono fermi nelle aree di sosta e nei parcheggi, e da mercoledì mattina ci sono anche gli agricoltori con i trattori.",
       "fonti": [
@@ -4550,7 +4763,7 @@
    "zona": "benevento",
    "immagine": "trattori",
    "luogo": "Benevento",
-   "pubblicato": "2026-10-21",
+   "pubblicato": "2026-10-22T11:50:00+02:00",
    "stato": "confermata",
    "fonti": [
     {
@@ -4580,6 +4793,14 @@
     {
      "nome": "Infosannio (Coldiretti)",
      "url": "https://www.infosannionews.it/attualita/2026/coldiretti-campania-stop-alla-mobilitazione-in-arrivo-risorse-dalla-regione-campania.html"
+    },
+    {
+     "nome": "LabTV (22/10)",
+     "url": "https://www.labtv.net/attualita/2026/10/22/caro-gasolio-e-carovita-il-grido-di-dolore-degli-agricoltori-presidi-nel-sannio/"
+    },
+    {
+     "nome": "NTR24 (22/10)",
+     "url": "https://www.ntr24.tv/2026/10/22/caro-gasolio-e-prezzi-alle-stelle-gli-agricoltori-sanniti-al-fianco-dei-camionisti-cosi-non-riusciamo-piu-ad-andare-avanti/"
     }
    ],
    "articolo": {
@@ -4650,7 +4871,7 @@
     "non_si_sa": [
      "La data esatta della manifestazione di Coldiretti a Napoli.",
      "Quanti agricoltori e trattori saranno nei presidi sanniti e dove precisamente.",
-     "Se i presidi degli agricoltori sanniti di giovedì 22 restano o no dopo lo stop alla manifestazione di Napoli: le fonti lette parlano solo di Napoli."
+     "Fino a quando durano i presidi degli agricoltori sanniti: parlano di mobilitazione a oltranza, senza una data."
     ],
     "fonti": [
      {
@@ -4712,6 +4933,18 @@
       "titolo": "Dalla Regione Campania risorse per 13 milioni di euro a sostegno delle imprese agricole",
       "url": "https://www.infosannionews.it/politica/2026/dalla-regione-campania-risorse-per-13-milioni-di-euro-a-sostegno-delle-imprese-agricole.html",
       "data": "21 ott"
+     },
+     {
+      "nome": "LabTV (22/10)",
+      "titolo": "Caro gasolio e carovita, il grido di dolore degli agricoltori: presidi nel Sannio",
+      "url": "https://www.labtv.net/attualita/2026/10/22/caro-gasolio-e-carovita-il-grido-di-dolore-degli-agricoltori-presidi-nel-sannio/",
+      "data": "22 ott, 11:50"
+     },
+     {
+      "nome": "NTR24 (22/10)",
+      "titolo": "Caro gasolio e prezzi alle stelle, gli agricoltori sanniti al fianco dei camionisti: ‘Così non riusciamo più ad andare avanti’",
+      "url": "https://www.ntr24.tv/2026/10/22/caro-gasolio-e-prezzi-alle-stelle-gli-agricoltori-sanniti-al-fianco-dei-camionisti-cosi-non-riusciamo-piu-ad-andare-avanti/",
+      "data": "22 ott, 11:27"
      }
     ],
     "divergono": [
@@ -4732,19 +4965,29 @@
     ],
     "racconto": [
      {
+      "testo": "Giovedì 22 ottobre i presidi degli agricoltori ci sono davvero: secondo Lab TV si concentrano a Benevento, a Ponte delle Tavole e sulla statale 87, con forze dell'ordine sul posto per far scorrere il traffico. A Ponte delle Tavole si sono uniti trattori e camion. Gli agricoltori dicono che le misure uscite dall'incontro di mercoledì a Napoli non bastano e criticano i fondi ottenuti da Coldiretti dalla Regione; annunciano una mobilitazione a oltranza, cioè senza data di fine.",
+      "fonti": [
+       "LabTV (22/10)",
+       "NTR24 (22/10)"
+      ],
+      "giorno": "2026-10-22"
+     },
+     {
       "testo": "Da giovedì 22 ottobre anche gli agricoltori del Sannio si uniscono alla protesta contro il caro gasolio e i costi di produzione. Il fermo di agricoltori e autotrasportatori parte a oltranza, a tempo indeterminato, con lo slogan «La Campania si compatta».",
       "fonti": [
        "Ottopagine",
        "LabTV",
        "NTR24"
-      ]
+      ],
+      "giorno": "2026-10-21"
      },
      {
       "testo": "A Benevento i presidi sono annunciati sulla strada statale 87 (la Sannitica), sulla statale 212 e a Ponte delle Tavole, secondo il volantino che circola e che citano Ottopagine e LabTV. Le richieste sono i costi di produzione troppo alti, il gasolio, i prezzi alla spesa e il caro vita.",
       "fonti": [
        "Ottopagine",
        "LabTV"
-      ]
+      ],
+      "giorno": "2026-10-21"
      },
      {
       "testo": "Il Sannio Quotidiano riferisce l'appello di Coldiretti Campania alla Regione per interventi urgenti: migliaia di agricoltori con i trattori da tutta la regione a Napoli, in via Santa Lucia davanti all'assessorato all'agricoltura. A San Marco dei Cavoti gli imprenditori agricoli si erano riuniti per decidere il da farsi. Intanto già dal 19 ottobre gli autotrasportatori erano in strada: una decina di camion rallentava l'Appia a Tufara Valle.",
@@ -4752,16 +4995,26 @@
        "Il Sannio Quotidiano",
        "Ottopagine",
        "LabTV"
-      ]
+      ],
+      "giorno": "2026-10-21"
      },
      {
       "testo": "Mercoledì 21 ottobre Coldiretti Campania ha deciso di fermare la manifestazione di Napoli prevista per giovedì 22 in piazza del Plebiscito. Dopo un incontro in Regione con il presidente Roberto Fico e l'assessora all'agricoltura Maria Carmela Serluca, la Regione ha promesso fino a venti milioni di euro per i primi ristori agli agricoltori, per far scendere il gasolio agricolo sotto un euro al litro. Per il direttore regionale Roberto Mazzei è una scelta responsabile, per non appesantire una situazione già difficile per il blocco dei camion. Giovedì c'è un'altra riunione in Regione. Coldiretti dice che ortofrutta e latte restano fermi e che l'attenzione ora va alle Prefetture, per garantire il trasporto dei prodotti agricoli.",
       "fonti": [
        "NTR24 (Coldiretti)",
        "BeneventoNews24 (Coldiretti)"
-      ]
+      ],
+      "giorno": "2026-10-21"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Giovedì 22 ottobre gli agricoltori sanniti sono in strada a Benevento, a Ponte delle Tavole e sulla statale 87 e dicono che i fondi regionali ottenuti da Coldiretti non bastano.",
+     "fonti": [
+      "LabTV (22/10)",
+      "NTR24 (22/10)"
+     ],
+     "quando": "2026-10-22T12:12+02:00"
+    }
    },
    "rilevante": false,
    "foto": "trattori"
@@ -5368,6 +5621,60 @@
    "rilevante": false,
    "in_vigore_fino": "2026-10-31",
    "foto": "lavori-stradali"
+  },
+  {
+   "id": "benevento-comune-urbanistica-dovetto-de-marco",
+   "titolo": "Benevento, Urbanistica del Comune: Corsano lascia, la segretaria Dovetto è dirigente ad interim e delega edilizia e abusi all'ingegner De Marco",
+   "titolo_google": "Benevento, Urbanistica del Comune: nuova guida ad interim",
+   "sintesi": "L'architetto Giancarlo Corsano lascia l'Urbanistica di Palazzo Mosti dal 20 ottobre. La segretaria generale supplente Maria Luisa Dovetto guida il settore ad interim e ha delegato all'ingegner Luigi De Marco edilizia privata, abusi e appalti sotto soglia fino al 31 dicembre.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-22T08:02:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24 (Urbanistica)",
+     "url": "https://www.ntr24.tv/2026/10/22/palazzo-mosti-urbanistica-la-dirigente-dovetto-delega-ling-de-marco-gestira-edilizia-abusi-appalti-e-personale/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "L'architetto Giancarlo Corsano lascia in anticipo la guida dell'Urbanistica del Comune di Benevento (Palazzo Mosti). La fine della convenzione con la Provincia, con cui il Comune condivideva il suo incarico, vale dal 20 ottobre 2026. Il posto passa ad interim, cioè in via temporanea, a Maria Luisa Dovetto, segretaria generale supplente.",
+      "fonti": [
+       "NTR24 (Urbanistica)"
+      ]
+     },
+     {
+      "testo": "Con un provvedimento firmato il 21 ottobre, Dovetto ha delegato all'ingegner Luigi De Marco, funzionario del Comune, una parte delle funzioni di gestione. A lui passano l'edilizia privata (permessi di costruire, SCIA e CILA, agibilità), i certificati urbanistici, le ordinanze contro gli abusi edilizi, la pianificazione, gli appalti sotto soglia, le spese e la gestione ordinaria del personale. A Dovetto restano l'organizzazione del settore, la valutazione del personale e i pareri tecnici sulle delibere di Consiglio e Giunta.",
+      "fonti": [
+       "NTR24 (Urbanistica)"
+      ]
+     },
+     {
+      "testo": "La delega dura fino al 31 dicembre 2026, salvo revoca o proroga, e finisce comunque quando arriverà il dirigente titolare. Serve a garantire la continuità degli uffici in attesa di coprire il posto con una figura tecnica. De Marco deve riferire a Dovetto almeno una volta al mese.",
+      "fonti": [
+       "NTR24 (Urbanistica)"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando sarà scelto il nuovo dirigente titolare dell'Urbanistica."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24 (Urbanistica)",
+      "titolo": "Palazzo Mosti, Urbanistica: la dirigente Dovetto delega l’ing. De Marco. Gestirà edilizia, abusi, appalti e personale",
+      "url": "https://www.ntr24.tv/2026/10/22/palazzo-mosti-urbanistica-la-dirigente-dovetto-delega-ling-de-marco-gestira-edilizia-abusi-appalti-e-personale/",
+      "data": "22 ott, 08:02"
+     }
+    ]
+   }
   }
  ],
  "approfondimenti": [
