@@ -1,7 +1,95 @@
 {
- "aggiornato": "2026-10-22T14:16+02:00",
+ "aggiornato": "2026-10-22T15:12+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "miwa-basket-benevento-ragusa-25-ottobre",
+   "titolo": "Basket B Interregionale, la Miwa Benevento domenica 25 ottobre a Ragusa contro la Virtus Kleb",
+   "titolo_google": "Basket B: Miwa Benevento a Ragusa domenica alle 18",
+   "sintesi": "La Miwa Basket Benevento gioca domenica 25 ottobre alle 18 al PalaPadua di Ragusa contro la Virtus Kleb, che ha vinto le ultime due partite. I sanniti arrivano da una vittoria contro Messina.",
+   "categoria": "sport",
+   "sport": "basket",
+   "zona": "benevento",
+   "luogo": "Ragusa",
+   "pubblicato": "2026-10-22T14:53:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24 Sport",
+     "url": "https://sport.ntr24.tv/2026/10/22/basket-la-miwa-benevento-fa-tappa-a-ragusa-domenica-alle-18-il-match-di-b-interregionale-contro-la-virtus/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/22/la-miwa-fa-tappa-a-ragusa-domenica-alle-18-il-match-contro-la-virtus/"
+    },
+    {
+     "nome": "Benevento Giornale",
+     "url": "https://www.beneventogiornale.com/2026/10/22/la-miwa-fa-tappa-a-ragusa-domenica-alle-18-il-match-contro-la-virtus-kleb-ragusa/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "La Miwa Basket Benevento gioca domenica 25 ottobre alle 18 in trasferta contro la Virtus Kleb Ragusa, sul parquet del PalaPadua, nel campionato di Serie B Interregionale. A dirigere la partita saranno Matteo Bertoni di Anzio e Roberto Rizzuto di Latina.",
+      "fonti": [
+       "NTR24 Sport",
+       "BeneventoNews24",
+       "Benevento Giornale"
+      ]
+     },
+     {
+      "testo": "Il Ragusa arriva da due vittorie di fila, contro Marigliano e Rende, ed è considerata una delle squadre da battere. Ha una rosa profonda: tra i giocatori più citati ci sono la guardia olandese Vijber, con 16,8 punti di media, il playmaker Lanzi, le ali Bandiera e Fabi e il centro Peterson.",
+      "fonti": [
+       "NTR24 Sport",
+       "BeneventoNews24",
+       "Benevento Giornale"
+      ]
+     },
+     {
+      "testo": "La Miwa viene da una vittoria ben giocata contro Messina, che ha dato fiducia alla squadra dell'allenatore Parrillo. L'obiettivo dei sanniti è dare continuità ai risultati su un campo difficile.",
+      "fonti": [
+       "NTR24 Sport",
+       "BeneventoNews24",
+       "Benevento Giornale"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Data e ora della partita, domenica 25 ottobre alle 18 a Ragusa.",
+      "fonti": [
+       "NTR24 Sport",
+       "BeneventoNews24",
+       "Benevento Giornale"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "NTR24 Sport",
+      "titolo": "Basket, la Miwa Benevento fa tappa a Ragusa: domenica alle 18 il match di B Interregionale contro la Virtus",
+      "url": "https://sport.ntr24.tv/2026/10/22/basket-la-miwa-benevento-fa-tappa-a-ragusa-domenica-alle-18-il-match-di-b-interregionale-contro-la-virtus/",
+      "data": "22 ott, 10:49"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "La Miwa fa tappa a Ragusa: domenica alle 18 il match contro la Virtus",
+      "url": "https://www.beneventonews24.it/2026/10/22/la-miwa-fa-tappa-a-ragusa-domenica-alle-18-il-match-contro-la-virtus/",
+      "data": "22 ott, 12:21"
+     },
+     {
+      "nome": "Benevento Giornale",
+      "titolo": "La Miwa fa tappa a Ragusa – Domenica alle 18 il match contro la Virtus Kleb Ragusa",
+      "url": "https://www.beneventogiornale.com/2026/10/22/la-miwa-fa-tappa-a-ragusa-domenica-alle-18-il-match-contro-la-virtus-kleb-ragusa/",
+      "data": "22 ott, 14:53"
+     }
+    ]
+   }
+  },
   {
    "id": "virtus-academy-benevento-serie-b-femminile-presentazione-unifortunato",
    "titolo": "Virtus Academy Benevento, presentata la squadra di Serie B femminile 2026-27 targata UniFortunato",
@@ -229,7 +317,7 @@
    },
    "in_vigore_fino": "2026-10-30",
    "immagine": "lavori-stradali",
-   "foto": "lavori-stradali"
+   "foto": "lavori-stradali-4"
   },
   {
    "id": "benevento-divieti-sosta-rifacimento-strisce-pedonali-26-ottobre-28-novembre",
@@ -286,7 +374,7 @@
    },
    "in_vigore_fino": "2026-11-28",
    "immagine": "divieto-sosta",
-   "foto": "divieto-sosta"
+   "foto": "divieto-sosta-4"
   },
   {
    "id": "benevento-mensa-scolastica-app-credito-genitori",
@@ -4551,12 +4639,12 @@
    "id": "tir-appia-telesina",
    "titolo": "Caro gasolio, tir fermi sull'Appia a Tufara Valle e a Castel del Lago, blocchi anche sulla Telesina a San Salvatore Telesino",
    "titolo_google": "Tir fermi sull'Appia e sulla Telesina per il caro gasolio",
-   "sintesi": "Dal 19 ottobre gli autotrasportatori protestano contro il prezzo del gasolio e i blocchi continuano per la seconda notte: tre presìdi a Castel del Lago, a Tufara Valle sull'Appia e a San Salvatore Telesino sulla Telesina. Da giovedì 22 si aggiungono gli agricoltori.",
+   "sintesi": "Dal 19 ottobre gli autotrasportatori protestano contro il prezzo del gasolio e i blocchi continuano per la seconda notte: tre presìdi a Castel del Lago, a Tufara Valle sull'Appia e a San Salvatore Telesino sulla Telesina. Da giovedì 22 si aggiungono gli agricoltori. Giovedì 22 il Governo ha approvato il decreto «Aiuti».",
    "categoria": "strade",
    "zona": "provincia",
    "immagine": "camion",
    "luogo": "Tufara Valle",
-   "pubblicato": "2026-10-22T11:58:00+02:00",
+   "pubblicato": "2026-10-22T15:01:00+02:00",
    "stato": "confermata",
    "fonti": [
     {
@@ -4622,16 +4710,19 @@
     {
      "nome": "AIR Campania (22/10)",
      "url": "https://aircampania.it/nuovo-aggiornamento-blocchi-stradali-per-sciopero-dei-tir-possibili-ritardi-alle-percorrenze-dei-bus/"
+    },
+    {
+     "nome": "Lab TV (decreto Aiuti)",
+     "url": "https://www.labtv.net/politica/2026/10/22/caro-carburanti-il-governo-approva-il-decreto-aiuti-sostegni-per-autotrasportatori-agricoltori-e-pescatori/"
     }
    ],
    "articolo": {
     "aggiornamento": {
-     "testo": "Giovedì 22 ottobre i presidi nel Sannio sono diventati più numerosi: Ponte delle Tavole, statale 87, Ceppaloni, casello di Benevento dell'A16 e San Marco dei Cavoti; AIR Campania avvisa di possibili ritardi dei bus.",
+     "testo": "Giovedì 22 ottobre il Governo ha approvato il decreto «Aiuti» con sostegni per autotrasportatori, agricoltori e pescatori; le associazioni nazionali dell'autotrasporto sono convocate al Ministero dei Trasporti il 27 ottobre. Nel Sannio non risulta ancora la fine dei presìdi.",
      "fonti": [
-      "Il Mattino (presidi)",
-      "AIR Campania (22/10)"
+      "Lab TV (decreto Aiuti)"
      ],
-     "quando": "2026-10-22T14:16+02:00"
+     "quando": "2026-10-22T15:12+02:00"
     },
     "aggiornato": "2026-10-20T09:25:00+02:00",
     "cronologia": [
@@ -4751,6 +4842,13 @@
        "NTR24 (sindaci)",
        "InfoSannio (USB)"
       ]
+     },
+     {
+      "data": "22 ottobre, pomeriggio",
+      "fatto": "Il Consiglio dei ministri approva il decreto «Aiuti» per autotrasporto, agricoltura e pesca; le associazioni dell'autotrasporto sono convocate al Ministero il 27 ottobre.",
+      "fonti": [
+       "Lab TV (decreto Aiuti)"
+      ]
      }
     ],
     "concordano": [
@@ -4806,7 +4904,8 @@
     ],
     "non_si_sa": [
      "Quanto durerà la protesta: gli autotrasportatori dicono che andranno avanti, nessuno indica una data di fine.",
-     "Cosa è uscito dal tavolo di martedì 20 a Milano con il ministro Salvini."
+     "Cosa è uscito dal tavolo di martedì 20 a Milano con il ministro Salvini.",
+     "Se le misure del decreto bastano a far finire i presìdi nel Sannio."
     ],
     "fonti": [
      {
@@ -4946,9 +5045,22 @@
       "titolo": "Nuovo aggiornamento: blocchi stradali per sciopero dei Tir. Possibili ritardi alle percorrenze dei bus",
       "url": "https://aircampania.it/nuovo-aggiornamento-blocchi-stradali-per-sciopero-dei-tir-possibili-ritardi-alle-percorrenze-dei-bus/",
       "data": "22 ott, 11:30"
+     },
+     {
+      "nome": "Lab TV (decreto Aiuti)",
+      "titolo": "Caro carburanti, il Governo approva il decreto Aiuti: sostegni per autotrasportatori, agricoltori e pescatori",
+      "url": "https://www.labtv.net/politica/2026/10/22/caro-carburanti-il-governo-approva-il-decreto-aiuti-sostegni-per-autotrasportatori-agricoltori-e-pescatori/",
+      "data": "22 ott, 15:01"
      }
     ],
     "racconto": [
+     {
+      "testo": "Giovedì 22 ottobre, a livello nazionale, il Consiglio dei ministri ha approvato il decreto-legge «Aiuti» contro il caro carburante, secondo Lab TV. Per l'autotrasporto ci sono oltre 66 milioni in più di credito d'imposta sul gasolio comprato tra marzo e agosto 2026, 60 milioni per gli acquisti dal 1° settembre al 5 ottobre e la sospensione per sette mesi dei canoni di leasing dei mezzi per le piccole e medie imprese. Per l'agricoltura sono stanziati 60 milioni, con un contributo fino a 45 centesimi al litro, e per la pesca 10 milioni a fondo perduto.",
+      "fonti": [
+       "Lab TV (decreto Aiuti)"
+      ],
+      "giorno": "2026-10-22"
+     },
      {
       "testo": "Giovedì 22 ottobre mattina, secondo Il Mattino, i presìdi nel Sannio sono ancora più numerosi: oltre a quelli sulla Telesina, vicino allo svincolo con la Fondovalle Isclero, al casello di Benevento dell'A16 e sull'Appia a Ceppaloni e a Tufara Valle, se ne sono aggiunti a Benevento in zona Ponte delle Tavole e sulla statale 87, e c'è un presidio anche a San Marco dei Cavoti lungo la Fortorina. In strada ci sono anche agricoltori e trattori. Il giornale scrive che la viabilità è regolare e che le forze dell'ordine controllano. Restano le difficoltà a trovare carburante: poche stazioni di servizio lo erogano ancora.",
       "fonti": [
