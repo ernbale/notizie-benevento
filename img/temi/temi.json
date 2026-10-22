@@ -4,15 +4,24 @@
   "foto": "an old chrome kitchen tap on a simple stone sink in an Italian village home, one single drop of water falling from the spout, no water flowing",
   "varianti": [
    "a row of plastic water bottles and a large jug on a kitchen counter",
-   "a close-up of a closed water valve with a blue handle on a metal pipe"
-  ]
+   "a close-up of a closed water valve with a blue handle on a metal pipe",
+   "an old chrome kitchen tap on a simple stone sink in an Italian village home, one single drop of water falling from the spout, no water flowing, a close-up detail of the main subject, shallow depth of field",
+   "a row of plastic water bottles and a large jug on a kitchen counter, at golden hour in the late afternoon, warm light",
+   "a close-up of a closed water valve with a blue handle on a metal pipe, in winter, under a grey sky"
+  ],
+  "frequente": true
  },
  "strada-chiusa": {
   "quando": "strade chiuse, deviazioni, ponti chiusi",
   "foto": "a red and white striped road barrier closing a narrow country road that winds through green hills",
   "varianti": [
    "red and white plastic road barriers with a flashing amber lamp closing a street in a small town",
-   "a mountain road blocked by a metal barrier with a plain red and white panel"
+   "a mountain road blocked by a metal barrier with a plain red and white panel",
+   "a red and white striped road barrier closing a narrow country road that winds through green hills, seen from a different side and a higher angle, in soft morning light",
+   "red and white plastic road barriers with a flashing amber lamp closing a street in a small town, photographed from a low angle, at golden hour",
+   "a mountain road blocked by a metal barrier with a plain red and white panel, a different composition with the subject off-center, in winter under a grey sky",
+   "a red and white striped road barrier closing a narrow country road that winds through green hills, a view from above, in bright daylight",
+   "red and white plastic road barriers with a flashing amber lamp closing a street in a small town, at dusk, seen from further away, with the first lights on"
   ]
  },
  "lavori-stradali": {
@@ -20,27 +29,46 @@
   "foto": "fresh black asphalt on a town street with orange traffic cones and a road roller parked in the background",
   "varianti": [
    "an asphalt paving machine laying hot steaming asphalt on a road",
-   "a section of road dug up with sand, new pipes and orange safety netting"
+   "a section of road dug up with sand, new pipes and orange safety netting",
+   "fresh black asphalt on a town street with orange traffic cones and a road roller parked in the background, seen from a different side and a higher angle, in soft morning light",
+   "an asphalt paving machine laying hot steaming asphalt on a road, photographed from a low angle, at golden hour",
+   "a section of road dug up with sand, new pipes and orange safety netting, a different composition with the subject off-center, in winter under a grey sky",
+   "fresh black asphalt on a town street with orange traffic cones and a road roller parked in the background, a view from above, in bright daylight",
+   "an asphalt paving machine laying hot steaming asphalt on a road, at dusk, seen from further away, with the first lights on"
   ]
  },
  "divieto-sosta": {
   "quando": "divieti di sosta, ZTL, cambi di viabilità in città",
-  "foto": "a temporary round no-parking traffic sign on a metal stand on the sidewalk of an old Italian town street"
+  "foto": "a temporary round no-parking traffic sign on a metal stand on the sidewalk of an old Italian town street",
+  "varianti": [
+   "a temporary round no-parking traffic sign on a metal stand on the sidewalk of an old Italian town street, a close-up detail of the main subject, shallow depth of field",
+   "a temporary round no-parking traffic sign on a metal stand on the sidewalk of an old Italian town street, a wider view that shows more of the surroundings, on an overcast day",
+   "a temporary round no-parking traffic sign on a metal stand on the sidewalk of an old Italian town street, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "frana": {
   "quando": "frane, smottamenti, strade invase dal fango",
   "foto": "mud and stones slid down onto the edge of a mountain road after heavy rain, a few orange cones beside it",
   "varianti": [
    "a landslide scar on a green hillside above a road",
-   "the edge of a road partly collapsed after a landslide, with barriers"
-  ]
+   "the edge of a road partly collapsed after a landslide, with barriers",
+   "mud and stones slid down onto the edge of a mountain road after heavy rain, a few orange cones beside it, seen from a different side and a higher angle, in soft morning light",
+   "a landslide scar on a green hillside above a road, photographed from a low angle, at golden hour",
+   "the edge of a road partly collapsed after a landslide, with barriers, a different composition with the subject off-center, in winter under a grey sky"
+  ],
+  "frequente": true
  },
  "pioggia": {
   "quando": "allerta pioggia, maltempo, piogge forti",
   "foto": "heavy rain falling on a cobblestone street of an old Italian town, puddles and grey sky",
   "varianti": [
    "raindrops on a car windscreen with blurred red tail lights on a town street",
-   "a wet piazza in the rain with puddles reflecting old buildings"
+   "a wet piazza in the rain with puddles reflecting old buildings",
+   "heavy rain falling on a cobblestone street of an old Italian town, puddles and grey sky, seen from a different side and a higher angle, in soft morning light",
+   "raindrops on a car windscreen with blurred red tail lights on a town street, photographed from a low angle, at golden hour",
+   "a wet piazza in the rain with puddles reflecting old buildings, a different composition with the subject off-center, in winter under a grey sky",
+   "heavy rain falling on a cobblestone street of an old Italian town, puddles and grey sky, a view from above, in bright daylight",
+   "raindrops on a car windscreen with blurred red tail lights on a town street, at dusk, seen from further away, with the first lights on"
   ]
  },
  "temporale": {
@@ -48,51 +76,88 @@
   "foto": "dark storm clouds and a lightning bolt over green rolling hills at dusk",
   "varianti": [
    "dark storm clouds rolling over a hill village",
-   "a curtain of heavy rain over green countryside and a country road"
-  ]
+   "a curtain of heavy rain over green countryside and a country road",
+   "dark storm clouds and a lightning bolt over green rolling hills at dusk, seen from a different side and a higher angle, in soft morning light",
+   "dark storm clouds rolling over a hill village, photographed from a low angle, at golden hour",
+   "a curtain of heavy rain over green countryside and a country road, a different composition with the subject off-center, in winter under a grey sky"
+  ],
+  "frequente": true
  },
  "vento": {
   "quando": "allerta vento, alberi caduti",
-  "foto": "tree branches bending in strong wind, leaves blowing, cloudy sky"
+  "foto": "tree branches bending in strong wind, leaves blowing, cloudy sky",
+  "varianti": [
+   "tree branches bending in strong wind, leaves blowing, cloudy sky, a close-up detail of the main subject, shallow depth of field",
+   "tree branches bending in strong wind, leaves blowing, cloudy sky, a wider view that shows more of the surroundings, on an overcast day",
+   "tree branches bending in strong wind, leaves blowing, cloudy sky, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "neve": {
   "quando": "neve, ghiaccio, strade innevate",
   "foto": "a quiet mountain road covered in fresh snow between pine trees",
   "varianti": [
    "a hill village under snow with smoke from chimneys",
-   "a plain snowplough clearing a mountain road"
-  ]
+   "a plain snowplough clearing a mountain road",
+   "a quiet mountain road covered in fresh snow between pine trees, seen from a different side and a higher angle, in soft morning light",
+   "a hill village under snow with smoke from chimneys, photographed from a low angle, at golden hour",
+   "a plain snowplough clearing a mountain road, a different composition with the subject off-center, in winter under a grey sky"
+  ],
+  "frequente": true
  },
  "allagamento": {
   "quando": "strade allagate, sottopassi pieni d'acqua, esondazioni",
-  "foto": "a flooded country road with muddy water covering the asphalt, a guard rail half under water"
+  "foto": "a flooded country road with muddy water covering the asphalt, a guard rail half under water",
+  "varianti": [
+   "a flooded country road with muddy water covering the asphalt, a guard rail half under water, a close-up detail of the main subject, shallow depth of field",
+   "a flooded country road with muddy water covering the asphalt, a guard rail half under water, a wider view that shows more of the surroundings, on an overcast day",
+   "a flooded country road with muddy water covering the asphalt, a guard rail half under water, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "scuola": {
   "quando": "scuole chiuse, scuola, edifici scolastici, iscrizioni",
   "foto": "an empty classroom with wooden desks, chairs and a blank green chalkboard, morning light",
   "varianti": [
    "school backpacks hanging on hooks in a school corridor",
-   "a closed school gate with a chain on a rainy day"
+   "a closed school gate with a chain on a rainy day",
+   "an empty classroom with wooden desks, chairs and a blank green chalkboard, morning light, seen from a different side and a higher angle, in soft morning light",
+   "school backpacks hanging on hooks in a school corridor, photographed from a low angle, at golden hour",
+   "a closed school gate with a chain on a rainy day, a different composition with the subject off-center, in winter under a grey sky",
+   "an empty classroom with wooden desks, chairs and a blank green chalkboard, morning light, a view from above, in bright daylight",
+   "school backpacks hanging on hooks in a school corridor, at dusk, seen from further away, with the first lights on"
   ]
  },
  "mensa": {
   "quando": "mensa scolastica, pasti nelle scuole",
-  "foto": "a school canteen table with trays, plates of pasta and glasses of water, no children"
+  "foto": "a school canteen table with trays, plates of pasta and glasses of water, no children",
+  "varianti": [
+   "a school canteen table with trays, plates of pasta and glasses of water, no children, a close-up detail of the main subject, shallow depth of field",
+   "a school canteen table with trays, plates of pasta and glasses of water, no children, a wider view that shows more of the surroundings, on an overcast day",
+   "a school canteen table with trays, plates of pasta and glasses of water, no children, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "cimitero": {
   "quando": "cimiteri, orari dei cimiteri, Commemorazione dei Defunti",
   "foto": "white chrysanthemums and red votive candles on a stone ledge, cypress trees softly blurred behind",
   "varianti": [
    "cypress trees along the path of a quiet Italian cemetery",
-   "flower pots and candles on marble ledges, no names or writing"
-  ]
+   "flower pots and candles on marble ledges, no names or writing",
+   "white chrysanthemums and red votive candles on a stone ledge, cypress trees softly blurred behind, seen from a different side and a higher angle, in soft morning light",
+   "cypress trees along the path of a quiet Italian cemetery, photographed from a low angle, at golden hour",
+   "flower pots and candles on marble ledges, no names or writing, a different composition with the subject off-center, in winter under a grey sky"
+  ],
+  "frequente": true
  },
  "rifiuti": {
   "quando": "raccolta dei rifiuti, ecocentri, discariche",
   "foto": "a row of colourful recycling bins for separate waste collection on a town street",
   "varianti": [
    "a plain garbage truck collecting bins at dawn on a town street",
-   "door-to-door waste collection bins and bags outside a house door"
+   "door-to-door waste collection bins and bags outside a house door",
+   "a row of colourful recycling bins for separate waste collection on a town street, seen from a different side and a higher angle, in soft morning light",
+   "a plain garbage truck collecting bins at dawn on a town street, photographed from a low angle, at golden hour",
+   "door-to-door waste collection bins and bags outside a house door, a different composition with the subject off-center, in winter under a grey sky",
+   "a row of colourful recycling bins for separate waste collection on a town street, a view from above, in bright daylight",
+   "a plain garbage truck collecting bins at dawn on a town street, at dusk, seen from further away, with the first lights on"
   ]
  },
  "incendio": {
@@ -100,23 +165,36 @@
   "foto": "smoke rising from a brush fire on a dry hillside seen from far away, hazy sky",
   "varianti": [
    "a burnt hillside with blackened trees after a wildfire",
-   "flames burning dry grass at the edge of a field"
-  ]
+   "flames burning dry grass at the edge of a field",
+   "smoke rising from a brush fire on a dry hillside seen from far away, hazy sky, seen from a different side and a higher angle, in soft morning light",
+   "a burnt hillside with blackened trees after a wildfire, photographed from a low angle, at golden hour",
+   "flames burning dry grass at the edge of a field, a different composition with the subject off-center, in winter under a grey sky"
+  ],
+  "frequente": true
  },
  "terremoto": {
   "quando": "terremoti, scosse, sciami sismici, esercitazioni sul terremoto",
   "foto": "close-up of a seismograph drum drawing a jagged seismic trace on paper",
   "varianti": [
    "cracks in the plaster wall of an old building",
-   "a screen with seismic waveforms in a monitoring room"
-  ]
+   "a screen with seismic waveforms in a monitoring room",
+   "close-up of a seismograph drum drawing a jagged seismic trace on paper, seen from a different side and a higher angle, in soft morning light",
+   "cracks in the plaster wall of an old building, photographed from a low angle, at golden hour",
+   "a screen with seismic waveforms in a monitoring room, a different composition with the subject off-center, in winter under a grey sky"
+  ],
+  "frequente": true
  },
  "ospedale": {
   "quando": "ospedali, pronto soccorso, sanità, ASL",
   "foto": "an empty clean hospital corridor with soft light and closed doors",
   "varianti": [
    "the exterior of a modern hospital building with many windows, no signs",
-   "an empty hospital room with a bed and medical monitors"
+   "an empty hospital room with a bed and medical monitors",
+   "an empty clean hospital corridor with soft light and closed doors, seen from a different side and a higher angle, in soft morning light",
+   "the exterior of a modern hospital building with many windows, no signs, photographed from a low angle, at golden hour",
+   "an empty hospital room with a bed and medical monitors, a different composition with the subject off-center, in winter under a grey sky",
+   "an empty clean hospital corridor with soft light and closed doors, a view from above, in bright daylight",
+   "the exterior of a modern hospital building with many windows, no signs, at dusk, seen from further away, with the first lights on"
   ]
  },
  "treno": {
@@ -124,7 +202,12 @@
   "foto": "railway tracks at a small rural train station in the hills, a plain regional train in the distance",
   "varianti": [
    "a plain regional train passing through green countryside",
-   "an empty platform of a small station with a canopy at dawn"
+   "an empty platform of a small station with a canopy at dawn",
+   "railway tracks at a small rural train station in the hills, a plain regional train in the distance, seen from a different side and a higher angle, in soft morning light",
+   "a plain regional train passing through green countryside, photographed from a low angle, at golden hour",
+   "an empty platform of a small station with a canopy at dawn, a different composition with the subject off-center, in winter under a grey sky",
+   "railway tracks at a small rural train station in the hills, a plain regional train in the distance, a view from above, in bright daylight",
+   "a plain regional train passing through green countryside, at dusk, seen from further away, with the first lights on"
   ]
  },
  "autobus": {
@@ -132,7 +215,12 @@
   "foto": "a bus stop shelter on an Italian street at dusk, a plain city bus approaching",
   "varianti": [
    "a plain city bus seen from behind in an old town street",
-   "the inside of an empty bus with seats and yellow handrails"
+   "the inside of an empty bus with seats and yellow handrails",
+   "a bus stop shelter on an Italian street at dusk, a plain city bus approaching, seen from a different side and a higher angle, in soft morning light",
+   "a plain city bus seen from behind in an old town street, photographed from a low angle, at golden hour",
+   "the inside of an empty bus with seats and yellow handrails, a different composition with the subject off-center, in winter under a grey sky",
+   "a bus stop shelter on an Italian street at dusk, a plain city bus approaching, a view from above, in bright daylight",
+   "a plain city bus seen from behind in an old town street, at dusk, seen from further away, with the first lights on"
   ]
  },
  "camion": {
@@ -140,7 +228,12 @@
   "foto": "a long line of parked trucks on the shoulder of a highway among hills, overcast sky",
   "varianti": [
    "trucks parked in a highway rest area at dawn",
-   "the cab of a plain truck seen from the front on a road among hills"
+   "the cab of a plain truck seen from the front on a road among hills",
+   "a long line of parked trucks on the shoulder of a highway among hills, overcast sky, seen from a different side and a higher angle, in soft morning light",
+   "trucks parked in a highway rest area at dawn, photographed from a low angle, at golden hour",
+   "the cab of a plain truck seen from the front on a road among hills, a different composition with the subject off-center, in winter under a grey sky",
+   "a long line of parked trucks on the shoulder of a highway among hills, overcast sky, a view from above, in bright daylight",
+   "trucks parked in a highway rest area at dawn, at dusk, seen from further away, with the first lights on"
   ]
  },
  "carburante": {
@@ -148,7 +241,12 @@
   "foto": "a fuel pump nozzle hanging on a petrol pump at a gas station",
   "varianti": [
    "a petrol station at night with lit pumps, no brand",
-   "a car dashboard fuel gauge pointing to empty"
+   "a car dashboard fuel gauge pointing to empty",
+   "a fuel pump nozzle hanging on a petrol pump at a gas station, seen from a different side and a higher angle, in soft morning light",
+   "a petrol station at night with lit pumps, no brand, photographed from a low angle, at golden hour",
+   "a car dashboard fuel gauge pointing to empty, a different composition with the subject off-center, in winter under a grey sky",
+   "a fuel pump nozzle hanging on a petrol pump at a gas station, a view from above, in bright daylight",
+   "a petrol station at night with lit pumps, no brand, at dusk, seen from further away, with the first lights on"
   ]
  },
  "supermercato": {
@@ -156,80 +254,138 @@
   "foto": "half-empty supermarket shelves for fresh fruit and vegetables",
   "varianti": [
    "a shopping trolley in an empty supermarket aisle",
-   "empty refrigerated shelves for milk and dairy in a supermarket"
-  ]
+   "empty refrigerated shelves for milk and dairy in a supermarket",
+   "half-empty supermarket shelves for fresh fruit and vegetables, seen from a different side and a higher angle, in soft morning light",
+   "a shopping trolley in an empty supermarket aisle, photographed from a low angle, at golden hour",
+   "empty refrigerated shelves for milk and dairy in a supermarket, a different composition with the subject off-center, in winter under a grey sky"
+  ],
+  "frequente": true
  },
  "trattori": {
   "quando": "agricoltori, proteste e presidi degli agricoltori, mezzi agricoli",
   "foto": "a row of tractors parked along a rural road beside fields",
   "varianti": [
    "a tractor ploughing a field on hills",
-   "a column of tractors driving along a country road"
-  ]
+   "a column of tractors driving along a country road",
+   "a row of tractors parked along a rural road beside fields, seen from a different side and a higher angle, in soft morning light",
+   "a tractor ploughing a field on hills, photographed from a low angle, at golden hour",
+   "a column of tractors driving along a country road, a different composition with the subject off-center, in winter under a grey sky"
+  ],
+  "frequente": true
  },
  "campagna": {
   "quando": "agricoltura, olio, raccolti, aziende agricole",
-  "foto": "olive trees and ploughed fields on gentle hills of southern Italy"
+  "foto": "olive trees and ploughed fields on gentle hills of southern Italy",
+  "varianti": [
+   "olive trees and ploughed fields on gentle hills of southern Italy, a close-up detail of the main subject, shallow depth of field",
+   "olive trees and ploughed fields on gentle hills of southern Italy, a wider view that shows more of the surroundings, on an overcast day",
+   "olive trees and ploughed fields on gentle hills of southern Italy, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "vigneto": {
   "quando": "vino, vendemmia, cantine, vigneti",
-  "foto": "rows of vineyards on rolling hills in autumn, golden light"
+  "foto": "rows of vineyards on rolling hills in autumn, golden light",
+  "varianti": [
+   "rows of vineyards on rolling hills in autumn, golden light, a close-up detail of the main subject, shallow depth of field",
+   "rows of vineyards on rolling hills in autumn, golden light, a wider view that shows more of the surroundings, on an overcast day",
+   "rows of vineyards on rolling hills in autumn, golden light, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "pecore": {
   "quando": "allevamenti, latte, pastori, controlli sugli animali",
-  "foto": "a flock of sheep grazing in a green hillside pasture"
+  "foto": "a flock of sheep grazing in a green hillside pasture",
+  "varianti": [
+   "a flock of sheep grazing in a green hillside pasture, a close-up detail of the main subject, shallow depth of field",
+   "a flock of sheep grazing in a green hillside pasture, a wider view that shows more of the surroundings, on an overcast day",
+   "a flock of sheep grazing in a green hillside pasture, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "fabbrica": {
   "quando": "aziende, fabbriche, licenziamenti, crisi aziendali, lavoro",
   "foto": "the exterior of a modern industrial building with closed loading doors, empty yard",
   "varianti": [
    "an empty production line inside a factory with the machines switched off",
-   "a closed factory gate with a chain at dusk"
-  ]
+   "a closed factory gate with a chain at dusk",
+   "the exterior of a modern industrial building with closed loading doors, empty yard, seen from a different side and a higher angle, in soft morning light",
+   "an empty production line inside a factory with the machines switched off, photographed from a low angle, at golden hour",
+   "a closed factory gate with a chain at dusk, a different composition with the subject off-center, in winter under a grey sky"
+  ],
+  "frequente": true
  },
  "pasta": {
   "quando": "pastifici, industria alimentare",
-  "foto": "dried short pasta spilling from a paper bag onto a wooden table"
+  "foto": "dried short pasta spilling from a paper bag onto a wooden table",
+  "varianti": [
+   "dried short pasta spilling from a paper bag onto a wooden table, a close-up detail of the main subject, shallow depth of field",
+   "dried short pasta spilling from a paper bag onto a wooden table, a wider view that shows more of the surroundings, on an overcast day",
+   "dried short pasta spilling from a paper bag onto a wooden table, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "documenti": {
   "quando": "ordinanze, delibere, bandi, avvisi del Comune, tasse e tributi",
   "foto": "official paper documents, a fountain pen and a rubber stamp on a wooden office desk",
   "varianti": [
    "stacks of folders tied with string on the shelves of a municipal archive",
-   "an official document with a round ink stamp and a signature line, close-up, no readable text"
-  ]
+   "an official document with a round ink stamp and a signature line, close-up, no readable text",
+   "official paper documents, a fountain pen and a rubber stamp on a wooden office desk, seen from a different side and a higher angle, in soft morning light",
+   "stacks of folders tied with string on the shelves of a municipal archive, photographed from a low angle, at golden hour",
+   "an official document with a round ink stamp and a signature line, close-up, no readable text, a different composition with the subject off-center, in winter under a grey sky"
+  ],
+  "frequente": true
  },
  "consiglio": {
   "quando": "Consiglio comunale, provinciale o regionale, sedute e votazioni",
   "foto": "an empty council chamber with wooden benches, microphones and a hemicycle layout",
   "varianti": [
    "a council chamber seen from the public seats, a long wooden table with microphones",
-   "a microphone and voting buttons on a wooden desk in a council chamber, close-up"
-  ]
+   "a microphone and voting buttons on a wooden desk in a council chamber, close-up",
+   "an empty council chamber with wooden benches, microphones and a hemicycle layout, seen from a different side and a higher angle, in soft morning light",
+   "a council chamber seen from the public seats, a long wooden table with microphones, photographed from a low angle, at golden hour",
+   "a microphone and voting buttons on a wooden desk in a council chamber, close-up, a different composition with the subject off-center, in winter under a grey sky"
+  ],
+  "frequente": true
  },
  "lavoro-da-casa": {
   "quando": "smart working, uffici pubblici, dipendenti",
-  "foto": "a laptop and a cup of coffee on a kitchen table at home, morning light"
+  "foto": "a laptop and a cup of coffee on a kitchen table at home, morning light",
+  "varianti": [
+   "a laptop and a cup of coffee on a kitchen table at home, morning light, a close-up detail of the main subject, shallow depth of field",
+   "a laptop and a cup of coffee on a kitchen table at home, morning light, a wider view that shows more of the surroundings, on an overcast day",
+   "a laptop and a cup of coffee on a kitchen table at home, morning light, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "sagra": {
   "quando": "sagre, feste di paese",
   "foto": "long wooden tables in a village square at evening under warm string lights, nobody there yet",
   "varianti": [
    "a large pan of local food cooking at a village festival stand",
-   "a festival stand with local products and paper plates under string lights"
-  ]
+   "a festival stand with local products and paper plates under string lights",
+   "long wooden tables in a village square at evening under warm string lights, nobody there yet, seen from a different side and a higher angle, in soft morning light",
+   "a large pan of local food cooking at a village festival stand, photographed from a low angle, at golden hour",
+   "a festival stand with local products and paper plates under string lights, a different composition with the subject off-center, in winter under a grey sky"
+  ],
+  "frequente": true
  },
  "castagne": {
   "quando": "sagre della castagna, prodotti d'autunno",
-  "foto": "roasted chestnuts in a perforated iron pan, autumn leaves around"
+  "foto": "roasted chestnuts in a perforated iron pan, autumn leaves around",
+  "varianti": [
+   "roasted chestnuts in a perforated iron pan, autumn leaves around, a close-up detail of the main subject, shallow depth of field",
+   "roasted chestnuts in a perforated iron pan, autumn leaves around, a wider view that shows more of the surroundings, on an overcast day",
+   "roasted chestnuts in a perforated iron pan, autumn leaves around, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "concerto": {
   "quando": "concerti, spettacoli all'aperto",
   "foto": "an empty open-air stage with lights in a town square at night",
   "varianti": [
    "a microphone on a stand on a stage under spotlights",
-   "an outdoor stage in a village square at dusk with lights and empty chairs"
-  ]
+   "an outdoor stage in a village square at dusk with lights and empty chairs",
+   "an empty open-air stage with lights in a town square at night, seen from a different side and a higher angle, in soft morning light",
+   "a microphone on a stand on a stage under spotlights, photographed from a low angle, at golden hour",
+   "an outdoor stage in a village square at dusk with lights and empty chairs, a different composition with the subject off-center, in winter under a grey sky"
+  ],
+  "frequente": true
  },
  "teatro": {
   "quando": "teatro, cinema, stagioni teatrali",
@@ -238,7 +394,10 @@
    "a theatre stage with a closed red curtain under spotlights",
    "the gilded balconies and boxes of an old Italian opera house",
    "a single spotlight on a wooden chair in the middle of an empty theatre stage",
-   "the gilded proscenium arch of a historic Italian theatre seen from the stalls"
+   "the gilded proscenium arch of a historic Italian theatre seen from the stalls",
+   "rows of empty red velvet seats in an old Italian theatre, a different composition with the subject off-center, in winter under a grey sky",
+   "a theatre stage with a closed red curtain under spotlights, a view from above, in bright daylight",
+   "the gilded balconies and boxes of an old Italian opera house, at dusk, seen from further away, with the first lights on"
   ]
  },
  "mercato": {
@@ -246,8 +405,12 @@
   "foto": "a market stall with crates of fruit and vegetables under an awning",
   "varianti": [
    "a weekly street market with stalls and awnings in a village square",
-   "crates of fresh vegetables and fruit at a market stall, close-up"
-  ]
+   "crates of fresh vegetables and fruit at a market stall, close-up",
+   "a market stall with crates of fruit and vegetables under an awning, seen from a different side and a higher angle, in soft morning light",
+   "a weekly street market with stalls and awnings in a village square, photographed from a low angle, at golden hour",
+   "crates of fresh vegetables and fruit at a market stall, close-up, a different composition with the subject off-center, in winter under a grey sky"
+  ],
+  "frequente": true
  },
  "calcio": {
   "quando": "calcio, Benevento Calcio, sport",
@@ -255,7 +418,11 @@
   "varianti": [
    "a football goal net seen from inside on an empty pitch",
    "football boots on the grass near the touchline",
-   "the corner flag of a football pitch at sunset"
+   "the corner flag of a football pitch at sunset",
+   "a football resting on the grass of an empty stadium pitch, photographed from a low angle, at golden hour",
+   "a football goal net seen from inside on an empty pitch, a different composition with the subject off-center, in winter under a grey sky",
+   "football boots on the grass near the touchline, a view from above, in bright daylight",
+   "the corner flag of a football pitch at sunset, at dusk, seen from further away, with the first lights on"
   ]
  },
  "chiesa": {
@@ -263,594 +430,1235 @@
   "foto": "lit candles inside an old church, soft warm light",
   "varianti": [
    "the bell tower of a village church against a blue sky",
-   "the nave of an old church with wooden pews and soft light"
-  ]
+   "the nave of an old church with wooden pews and soft light",
+   "lit candles inside an old church, soft warm light, seen from a different side and a higher angle, in soft morning light",
+   "the bell tower of a village church against a blue sky, photographed from a low angle, at golden hour",
+   "the nave of an old church with wooden pews and soft light, a different composition with the subject off-center, in winter under a grey sky"
+  ],
+  "frequente": true
  },
  "luce": {
   "quando": "luce elettrica, interruzioni di corrente, illuminazione pubblica",
-  "foto": "an old street lamp lit at dusk with electricity wires in the sky"
+  "foto": "an old street lamp lit at dusk with electricity wires in the sky",
+  "varianti": [
+   "an old street lamp lit at dusk with electricity wires in the sky, a close-up detail of the main subject, shallow depth of field",
+   "an old street lamp lit at dusk with electricity wires in the sky, a wider view that shows more of the surroundings, on an overcast day",
+   "an old street lamp lit at dusk with electricity wires in the sky, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "gas": {
   "quando": "gas, bollette, interruzioni del gas",
-  "foto": "blue gas flames on a kitchen stove burner"
+  "foto": "blue gas flames on a kitchen stove burner",
+  "varianti": [
+   "blue gas flames on a kitchen stove burner, a close-up detail of the main subject, shallow depth of field",
+   "blue gas flames on a kitchen stove burner, a wider view that shows more of the surroundings, on an overcast day",
+   "blue gas flames on a kitchen stove burner, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "libri": {
   "quando": "cultura, biblioteche, presentazioni di libri, università",
-  "foto": "wooden library shelves full of old books"
+  "foto": "wooden library shelves full of old books",
+  "varianti": [
+   "wooden library shelves full of old books, a close-up detail of the main subject, shallow depth of field",
+   "wooden library shelves full of old books, a wider view that shows more of the surroundings, on an overcast day",
+   "wooden library shelves full of old books, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "parco": {
   "quando": "parchi, ville comunali, giardini pubblici",
-  "foto": "an empty park bench under trees in a public garden, autumn leaves on the ground"
+  "foto": "an empty park bench under trees in a public garden, autumn leaves on the ground",
+  "varianti": [
+   "an empty park bench under trees in a public garden, autumn leaves on the ground, a close-up detail of the main subject, shallow depth of field",
+   "an empty park bench under trees in a public garden, autumn leaves on the ground, a wider view that shows more of the surroundings, on an overcast day",
+   "an empty park bench under trees in a public garden, autumn leaves on the ground, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "protezione-civile": {
   "quando": "Protezione civile, esercitazioni, emergenze",
-  "foto": "plain blue emergency tents set up in a field, no logos"
+  "foto": "plain blue emergency tents set up in a field, no logos",
+  "varianti": [
+   "plain blue emergency tents set up in a field, no logos, a close-up detail of the main subject, shallow depth of field",
+   "plain blue emergency tents set up in a field, no logos, a wider view that shows more of the surroundings, on an overcast day",
+   "plain blue emergency tents set up in a field, no logos, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "caldo": {
   "quando": "ondate di calore, caldo, temperature alte",
-  "foto": "a deserted sunny village square at noon in summer, harsh light and heat haze"
+  "foto": "a deserted sunny village square at noon in summer, harsh light and heat haze",
+  "varianti": [
+   "a deserted sunny village square at noon in summer, harsh light and heat haze, a close-up detail of the main subject, shallow depth of field",
+   "a deserted sunny village square at noon in summer, harsh light and heat haze, a wider view that shows more of the surroundings, on an overcast day",
+   "a deserted sunny village square at noon in summer, harsh light and heat haze, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "nebbia": {
   "quando": "nebbia, visibilità ridotta",
-  "foto": "a country road disappearing into thick fog among fields"
+  "foto": "a country road disappearing into thick fog among fields",
+  "varianti": [
+   "a country road disappearing into thick fog among fields, a close-up detail of the main subject, shallow depth of field",
+   "a country road disappearing into thick fog among fields, a wider view that shows more of the surroundings, on an overcast day",
+   "a country road disappearing into thick fog among fields, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "grandine": {
   "quando": "grandinate",
-  "foto": "hailstones covering the ground and the bonnet of a parked car"
+  "foto": "hailstones covering the ground and the bonnet of a parked car",
+  "varianti": [
+   "hailstones covering the ground and the bonnet of a parked car, a close-up detail of the main subject, shallow depth of field",
+   "hailstones covering the ground and the bonnet of a parked car, a wider view that shows more of the surroundings, on an overcast day",
+   "hailstones covering the ground and the bonnet of a parked car, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "albero-caduto": {
   "quando": "alberi caduti per il vento o il maltempo",
-  "foto": "a large tree fallen across a country road after a storm"
+  "foto": "a large tree fallen across a country road after a storm",
+  "varianti": [
+   "a large tree fallen across a country road after a storm, a close-up detail of the main subject, shallow depth of field",
+   "a large tree fallen across a country road after a storm, a wider view that shows more of the surroundings, on an overcast day",
+   "a large tree fallen across a country road after a storm, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "tetti-danneggiati": {
   "quando": "trombe d'aria, tetti scoperchiati, danni del vento",
-  "foto": "roof tiles and debris scattered on a village street after a windstorm"
+  "foto": "roof tiles and debris scattered on a village street after a windstorm",
+  "varianti": [
+   "roof tiles and debris scattered on a village street after a windstorm, a close-up detail of the main subject, shallow depth of field",
+   "roof tiles and debris scattered on a village street after a windstorm, a wider view that shows more of the surroundings, on an overcast day",
+   "roof tiles and debris scattered on a village street after a windstorm, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "fiume": {
   "quando": "fiumi in piena, Calore, Volturno, ponti sui fiumi",
-  "foto": "a swollen brown river flowing fast under an old stone bridge"
+  "foto": "a swollen brown river flowing fast under an old stone bridge",
+  "varianti": [
+   "a swollen brown river flowing fast under an old stone bridge, a close-up detail of the main subject, shallow depth of field",
+   "a swollen brown river flowing fast under an old stone bridge, a wider view that shows more of the surroundings, on an overcast day",
+   "a swollen brown river flowing fast under an old stone bridge, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "argini": {
   "quando": "lavori su fiumi e torrenti, messa in sicurezza, dissesto idrogeologico",
-  "foto": "concrete riverbank reinforcement works along a stream with an excavator parked"
+  "foto": "concrete riverbank reinforcement works along a stream with an excavator parked",
+  "varianti": [
+   "concrete riverbank reinforcement works along a stream with an excavator parked, a close-up detail of the main subject, shallow depth of field",
+   "concrete riverbank reinforcement works along a stream with an excavator parked, a wider view that shows more of the surroundings, on an overcast day",
+   "concrete riverbank reinforcement works along a stream with an excavator parked, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "impianto-rifiuti": {
   "quando": "impianti dei rifiuti, STIR, biometano, compostaggio",
-  "foto": "the exterior of a waste treatment plant with large industrial sheds and loading bays"
+  "foto": "the exterior of a waste treatment plant with large industrial sheds and loading bays",
+  "varianti": [
+   "the exterior of a waste treatment plant with large industrial sheds and loading bays, a close-up detail of the main subject, shallow depth of field",
+   "the exterior of a waste treatment plant with large industrial sheds and loading bays, a wider view that shows more of the surroundings, on an overcast day",
+   "the exterior of a waste treatment plant with large industrial sheds and loading bays, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "depuratore": {
   "quando": "depuratori, fogne, acque reflue",
-  "foto": "the circular tanks of a wastewater treatment plant seen from above at an angle"
+  "foto": "the circular tanks of a wastewater treatment plant seen from above at an angle",
+  "varianti": [
+   "the circular tanks of a wastewater treatment plant seen from above at an angle, a close-up detail of the main subject, shallow depth of field",
+   "the circular tanks of a wastewater treatment plant seen from above at an angle, a wider view that shows more of the surroundings, on an overcast day",
+   "the circular tanks of a wastewater treatment plant seen from above at an angle, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "cinghiali": {
   "quando": "cinghiali, fauna selvatica, danni alle colture",
-  "foto": "a wild boar in a field at the edge of a wood at dusk"
+  "foto": "a wild boar in a field at the edge of a wood at dusk",
+  "varianti": [
+   "a wild boar in a field at the edge of a wood at dusk, a close-up detail of the main subject, shallow depth of field",
+   "a wild boar in a field at the edge of a wood at dusk, a wider view that shows more of the surroundings, on an overcast day",
+   "a wild boar in a field at the edge of a wood at dusk, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "cani": {
   "quando": "cani randagi, canili, animali da compagnia",
-  "foto": "dogs looking out from the fence of an animal shelter kennel"
+  "foto": "dogs looking out from the fence of an animal shelter kennel",
+  "varianti": [
+   "dogs looking out from the fence of an animal shelter kennel, a close-up detail of the main subject, shallow depth of field",
+   "dogs looking out from the fence of an animal shelter kennel, a wider view that shows more of the surroundings, on an overcast day",
+   "dogs looking out from the fence of an animal shelter kennel, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "bosco": {
   "quando": "boschi, foreste, Taburno, Matese, tagli di alberi",
-  "foto": "a beech forest with autumn colours on a mountain slope"
+  "foto": "a beech forest with autumn colours on a mountain slope",
+  "varianti": [
+   "a beech forest with autumn colours on a mountain slope, a close-up detail of the main subject, shallow depth of field",
+   "a beech forest with autumn colours on a mountain slope, a wider view that shows more of the surroundings, on an overcast day",
+   "a beech forest with autumn colours on a mountain slope, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "montagna": {
   "quando": "montagna, escursioni, sentieri, aree interne",
-  "foto": "green mountains with a deep valley under a clear sky"
+  "foto": "green mountains with a deep valley under a clear sky",
+  "varianti": [
+   "green mountains with a deep valley under a clear sky, a close-up detail of the main subject, shallow depth of field",
+   "green mountains with a deep valley under a clear sky, a wider view that shows more of the surroundings, on an overcast day",
+   "green mountains with a deep valley under a clear sky, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "lago": {
   "quando": "laghi, Campolattaro, lago di Telese, oasi",
-  "foto": "a calm lake surrounded by trees and hills"
+  "foto": "a calm lake surrounded by trees and hills",
+  "varianti": [
+   "a calm lake surrounded by trees and hills, a close-up detail of the main subject, shallow depth of field",
+   "a calm lake surrounded by trees and hills, a wider view that shows more of the surroundings, on an overcast day",
+   "a calm lake surrounded by trees and hills, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "eolico": {
   "quando": "pale eoliche, parchi eolici, Fortore",
-  "foto": "wind turbines on top of rolling hills"
+  "foto": "wind turbines on top of rolling hills",
+  "varianti": [
+   "wind turbines on top of rolling hills, a close-up detail of the main subject, shallow depth of field",
+   "wind turbines on top of rolling hills, a wider view that shows more of the surroundings, on an overcast day",
+   "wind turbines on top of rolling hills, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "fotovoltaico": {
   "quando": "pannelli solari, energia rinnovabile, comunità energetiche",
-  "foto": "rows of solar panels in a green field"
+  "foto": "rows of solar panels in a green field",
+  "varianti": [
+   "rows of solar panels in a green field, a close-up detail of the main subject, shallow depth of field",
+   "rows of solar panels in a green field, a wider view that shows more of the surroundings, on an overcast day",
+   "rows of solar panels in a green field, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "potatura": {
   "quando": "potatura e taglio di alberi in città, verde pubblico",
-  "foto": "a tree with freshly pruned branches on a town avenue, cut branches on the ground"
+  "foto": "a tree with freshly pruned branches on a town avenue, cut branches on the ground",
+  "varianti": [
+   "a tree with freshly pruned branches on a town avenue, cut branches on the ground, a close-up detail of the main subject, shallow depth of field",
+   "a tree with freshly pruned branches on a town avenue, cut branches on the ground, a wider view that shows more of the surroundings, on an overcast day",
+   "a tree with freshly pruned branches on a town avenue, cut branches on the ground, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "buche": {
   "quando": "buche nelle strade, asfalto rotto in città",
   "foto": "a large pothole full of rainwater on a damaged asphalt road",
   "varianti": [
    "a road with many patched potholes and cracks",
-   "a car tyre next to a deep pothole on a wet road"
-  ]
+   "a car tyre next to a deep pothole on a wet road",
+   "a large pothole full of rainwater on a damaged asphalt road, seen from a different side and a higher angle, in soft morning light",
+   "a road with many patched potholes and cracks, photographed from a low angle, at golden hour",
+   "a car tyre next to a deep pothole on a wet road, a different composition with the subject off-center, in winter under a grey sky"
+  ],
+  "frequente": true
  },
  "strada-dissestata": {
   "quando": "strade di campagna o di montagna dissestate, provinciali da rifare",
-  "foto": "a narrow mountain road with cracked and broken asphalt"
+  "foto": "a narrow mountain road with cracked and broken asphalt",
+  "varianti": [
+   "a narrow mountain road with cracked and broken asphalt, a close-up detail of the main subject, shallow depth of field",
+   "a narrow mountain road with cracked and broken asphalt, a wider view that shows more of the surroundings, on an overcast day",
+   "a narrow mountain road with cracked and broken asphalt, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "degrado": {
   "quando": "degrado urbano, marciapiedi rotti, decoro",
-  "foto": "a cracked sidewalk with weeds next to a faded old wall"
+  "foto": "a cracked sidewalk with weeds next to a faded old wall",
+  "varianti": [
+   "a cracked sidewalk with weeds next to a faded old wall, a close-up detail of the main subject, shallow depth of field",
+   "a cracked sidewalk with weeds next to a faded old wall, a wider view that shows more of the surroundings, on an overcast day",
+   "a cracked sidewalk with weeds next to a faded old wall, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "rifiuti-abbandonati": {
   "quando": "rifiuti abbandonati, discariche abusive",
-  "foto": "black garbage bags and an old mattress dumped at the side of a country road"
+  "foto": "black garbage bags and an old mattress dumped at the side of a country road",
+  "varianti": [
+   "black garbage bags and an old mattress dumped at the side of a country road, a close-up detail of the main subject, shallow depth of field",
+   "black garbage bags and an old mattress dumped at the side of a country road, a wider view that shows more of the surroundings, on an overcast day",
+   "black garbage bags and an old mattress dumped at the side of a country road, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "autostrada": {
   "quando": "autostrade, A16, raccordi, pedaggi",
-  "foto": "a motorway with light traffic among hills"
+  "foto": "a motorway with light traffic among hills",
+  "varianti": [
+   "a motorway with light traffic among hills, a close-up detail of the main subject, shallow depth of field",
+   "a motorway with light traffic among hills, a wider view that shows more of the surroundings, on an overcast day",
+   "a motorway with light traffic among hills, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "traffico": {
   "quando": "traffico, code, viabilità in città",
-  "foto": "a traffic jam on a town road at dusk with red brake lights, no readable plates"
+  "foto": "a traffic jam on a town road at dusk with red brake lights, no readable plates",
+  "varianti": [
+   "a traffic jam on a town road at dusk with red brake lights, no readable plates, a close-up detail of the main subject, shallow depth of field",
+   "a traffic jam on a town road at dusk with red brake lights, no readable plates, a wider view that shows more of the surroundings, on an overcast day",
+   "a traffic jam on a town road at dusk with red brake lights, no readable plates, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "parcheggio": {
   "quando": "parcheggi, strisce blu, sosta a pagamento",
-  "foto": "a parking lot with blue painted lines and a parking meter"
+  "foto": "a parking lot with blue painted lines and a parking meter",
+  "varianti": [
+   "a parking lot with blue painted lines and a parking meter, a close-up detail of the main subject, shallow depth of field",
+   "a parking lot with blue painted lines and a parking meter, a wider view that shows more of the surroundings, on an overcast day",
+   "a parking lot with blue painted lines and a parking meter, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "viadotto": {
   "quando": "viadotti, ponti stradali, lavori sui ponti",
-  "foto": "a road viaduct on tall concrete pillars crossing a green valley"
+  "foto": "a road viaduct on tall concrete pillars crossing a green valley",
+  "varianti": [
+   "a road viaduct on tall concrete pillars crossing a green valley, a close-up detail of the main subject, shallow depth of field",
+   "a road viaduct on tall concrete pillars crossing a green valley, a wider view that shows more of the surroundings, on an overcast day",
+   "a road viaduct on tall concrete pillars crossing a green valley, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "galleria": {
   "quando": "gallerie stradali, chiusure in galleria",
-  "foto": "the entrance of a road tunnel in a mountain"
+  "foto": "the entrance of a road tunnel in a mountain",
+  "varianti": [
+   "the entrance of a road tunnel in a mountain, a close-up detail of the main subject, shallow depth of field",
+   "the entrance of a road tunnel in a mountain, a wider view that shows more of the surroundings, on an overcast day",
+   "the entrance of a road tunnel in a mountain, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "bici": {
   "quando": "piste ciclabili, mobilità sostenibile",
-  "foto": "a bicycle lane along a tree-lined avenue with a painted bike symbol"
+  "foto": "a bicycle lane along a tree-lined avenue with a painted bike symbol",
+  "varianti": [
+   "a bicycle lane along a tree-lined avenue with a painted bike symbol, a close-up detail of the main subject, shallow depth of field",
+   "a bicycle lane along a tree-lined avenue with a painted bike symbol, a wider view that shows more of the surroundings, on an overcast day",
+   "a bicycle lane along a tree-lined avenue with a painted bike symbol, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "ferrovia-dismessa": {
   "quando": "linee ferroviarie chiuse o abbandonate, Benevento-Cancello",
-  "foto": "an abandoned railway line with rusty tracks overgrown with weeds"
+  "foto": "an abandoned railway line with rusty tracks overgrown with weeds",
+  "varianti": [
+   "an abandoned railway line with rusty tracks overgrown with weeds, a close-up detail of the main subject, shallow depth of field",
+   "an abandoned railway line with rusty tracks overgrown with weeds, a wider view that shows more of the surroundings, on an overcast day",
+   "an abandoned railway line with rusty tracks overgrown with weeds, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "alta-velocita": {
   "quando": "Alta velocità/Alta capacità Napoli-Bari, cantieri ferroviari",
-  "foto": "a new concrete railway viaduct under construction crossing a valley, with cranes"
+  "foto": "a new concrete railway viaduct under construction crossing a valley, with cranes",
+  "varianti": [
+   "a new concrete railway viaduct under construction crossing a valley, with cranes, a close-up detail of the main subject, shallow depth of field",
+   "a new concrete railway viaduct under construction crossing a valley, with cranes, a wider view that shows more of the surroundings, on an overcast day",
+   "a new concrete railway viaduct under construction crossing a valley, with cranes, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "cantiere": {
   "quando": "cantieri edili, opere pubbliche, lavori PNRR",
-  "foto": "a building construction site with a tower crane and scaffolding"
+  "foto": "a building construction site with a tower crane and scaffolding",
+  "varianti": [
+   "a building construction site with a tower crane and scaffolding, a close-up detail of the main subject, shallow depth of field",
+   "a building construction site with a tower crane and scaffolding, a wider view that shows more of the surroundings, on an overcast day",
+   "a building construction site with a tower crane and scaffolding, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "impalcature": {
   "quando": "ristrutturazioni, facciate, palazzi da mettere in sicurezza",
-  "foto": "scaffolding covering the facade of an old building being renovated"
+  "foto": "scaffolding covering the facade of an old building being renovated",
+  "varianti": [
+   "scaffolding covering the facade of an old building being renovated, a close-up detail of the main subject, shallow depth of field",
+   "scaffolding covering the facade of an old building being renovated, a wider view that shows more of the surroundings, on an overcast day",
+   "scaffolding covering the facade of an old building being renovated, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "case-popolari": {
   "quando": "case popolari, alloggi ACER, emergenza abitativa",
-  "foto": "public housing apartment blocks in a southern Italian town with laundry on balconies"
+  "foto": "public housing apartment blocks in a southern Italian town with laundry on balconies",
+  "varianti": [
+   "public housing apartment blocks in a southern Italian town with laundry on balconies, a close-up detail of the main subject, shallow depth of field",
+   "public housing apartment blocks in a southern Italian town with laundry on balconies, a wider view that shows more of the surroundings, on an overcast day",
+   "public housing apartment blocks in a southern Italian town with laundry on balconies, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "autovelox": {
   "quando": "autovelox, controlli della velocità",
-  "foto": "a speed camera box at the side of a country road"
+  "foto": "a speed camera box at the side of a country road",
+  "varianti": [
+   "a speed camera box at the side of a country road, a close-up detail of the main subject, shallow depth of field",
+   "a speed camera box at the side of a country road, a wider view that shows more of the surroundings, on an overcast day",
+   "a speed camera box at the side of a country road, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "telecamere": {
   "quando": "videosorveglianza, sicurezza urbana",
-  "foto": "a CCTV security camera on a pole over a town square"
+  "foto": "a CCTV security camera on a pole over a town square",
+  "varianti": [
+   "a CCTV security camera on a pole over a town square, a close-up detail of the main subject, shallow depth of field",
+   "a CCTV security camera on a pole over a town square, a wider view that shows more of the surroundings, on an overcast day",
+   "a CCTV security camera on a pole over a town square, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "municipio": {
   "quando": "Comune, sindaco, giunta, decisioni dell'amministrazione",
   "foto": "the facade of an old town hall in a southern Italian village with the Italian and European flags on the balcony",
   "varianti": [
    "the Italian and European flags on poles on the balcony of a historic palazzo, seen from below",
-   "the stone staircase and arched corridor inside an old town hall"
-  ]
+   "the stone staircase and arched corridor inside an old town hall",
+   "the facade of an old town hall in a southern Italian village with the Italian and European flags on the balcony, seen from a different side and a higher angle, in soft morning light",
+   "the Italian and European flags on poles on the balcony of a historic palazzo, seen from below, photographed from a low angle, at golden hour",
+   "the stone staircase and arched corridor inside an old town hall, a different composition with the subject off-center, in winter under a grey sky"
+  ],
+  "frequente": true
  },
  "elezioni": {
   "quando": "elezioni, voto, candidati, liste",
   "foto": "a transparent ballot box next to a voting booth with a curtain in a school gym",
   "varianti": [
    "ballot papers and a pencil on a table in a polling station, no readable text",
-   "a polling station in a school classroom with voting booths"
-  ]
+   "a polling station in a school classroom with voting booths",
+   "a transparent ballot box next to a voting booth with a curtain in a school gym, seen from a different side and a higher angle, in soft morning light",
+   "ballot papers and a pencil on a table in a polling station, no readable text, photographed from a low angle, at golden hour",
+   "a polling station in a school classroom with voting booths, a different composition with the subject off-center, in winter under a grey sky"
+  ],
+  "frequente": true
  },
  "riunione": {
   "quando": "vertici, tavoli in Prefettura o in Regione, incontri istituzionali",
   "foto": "a long meeting table with chairs, glasses of water and an Italian flag in an institutional room",
   "varianti": [
    "chairs around an oval table in an institutional meeting room with tall windows",
-   "notebooks, pens and small water bottles on a meeting table, close-up"
-  ]
+   "notebooks, pens and small water bottles on a meeting table, close-up",
+   "a long meeting table with chairs, glasses of water and an Italian flag in an institutional room, seen from a different side and a higher angle, in soft morning light",
+   "chairs around an oval table in an institutional meeting room with tall windows, photographed from a low angle, at golden hour",
+   "notebooks, pens and small water bottles on a meeting table, close-up, a different composition with the subject off-center, in winter under a grey sky"
+  ],
+  "frequente": true
  },
  "conferenza-stampa": {
   "quando": "conferenze stampa, presentazioni, annunci",
   "foto": "a table with several microphones and blank name cards in a meeting room",
   "varianti": [
    "a lectern with microphones in front of a plain blue backdrop",
-   "a row of microphones and a video camera on a tripod in a hall"
-  ]
+   "a row of microphones and a video camera on a tripod in a hall",
+   "a table with several microphones and blank name cards in a meeting room, seen from a different side and a higher angle, in soft morning light",
+   "a lectern with microphones in front of a plain blue backdrop, photographed from a low angle, at golden hour",
+   "a row of microphones and a video camera on a tripod in a hall, a different composition with the subject off-center, in winter under a grey sky"
+  ],
+  "frequente": true
  },
  "tasse": {
   "quando": "tasse, TARI, IMU, tributi, cartelle",
   "foto": "tax forms, euro coins and a calculator on a kitchen table",
   "varianti": [
    "an envelope, a bill and a pen on a table, no readable text",
-   "a calculator, paper receipts and euro coins on a desk"
-  ]
+   "a calculator, paper receipts and euro coins on a desk",
+   "tax forms, euro coins and a calculator on a kitchen table, seen from a different side and a higher angle, in soft morning light",
+   "an envelope, a bill and a pen on a table, no readable text, photographed from a low angle, at golden hour",
+   "a calculator, paper receipts and euro coins on a desk, a different composition with the subject off-center, in winter under a grey sky"
+  ],
+  "frequente": true
  },
  "bollette": {
   "quando": "bollette di luce e gas, rincari dell'energia",
-  "foto": "utility bills on a table next to an old light bulb"
+  "foto": "utility bills on a table next to an old light bulb",
+  "varianti": [
+   "utility bills on a table next to an old light bulb, a close-up detail of the main subject, shallow depth of field",
+   "utility bills on a table next to an old light bulb, a wider view that shows more of the surroundings, on an overcast day",
+   "utility bills on a table next to an old light bulb, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "soldi": {
   "quando": "fondi, finanziamenti, contributi, bandi con soldi, stipendi",
   "foto": "euro banknotes and coins on a wooden table",
   "varianti": [
    "euro coins stacked in columns on a desk",
-   "a ceramic piggy bank and euro coins on a wooden table"
-  ]
+   "a ceramic piggy bank and euro coins on a wooden table",
+   "euro banknotes and coins on a wooden table, seen from a different side and a higher angle, in soft morning light",
+   "euro coins stacked in columns on a desk, photographed from a low angle, at golden hour",
+   "a ceramic piggy bank and euro coins on a wooden table, a different composition with the subject off-center, in winter under a grey sky"
+  ],
+  "frequente": true
  },
  "mutui": {
   "quando": "mutui, banche, prestiti, casa",
-  "foto": "a calculator, a loan contract and a set of house keys on a desk"
+  "foto": "a calculator, a loan contract and a set of house keys on a desk",
+  "varianti": [
+   "a calculator, a loan contract and a set of house keys on a desk, a close-up detail of the main subject, shallow depth of field",
+   "a calculator, a loan contract and a set of house keys on a desk, a wider view that shows more of the surroundings, on an overcast day",
+   "a calculator, a loan contract and a set of house keys on a desk, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "bilancio": {
   "quando": "bilancio del Comune o della Provincia, conti pubblici",
-  "foto": "an open ledger, a calculator and printed bar charts on a desk"
+  "foto": "an open ledger, a calculator and printed bar charts on a desk",
+  "varianti": [
+   "an open ledger, a calculator and printed bar charts on a desk, a close-up detail of the main subject, shallow depth of field",
+   "an open ledger, a calculator and printed bar charts on a desk, a wider view that shows more of the surroundings, on an overcast day",
+   "an open ledger, a calculator and printed bar charts on a desk, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "concorso": {
   "quando": "concorsi pubblici, assunzioni, graduatorie",
-  "foto": "rows of empty desks with exam papers in a large hall"
+  "foto": "rows of empty desks with exam papers in a large hall",
+  "varianti": [
+   "rows of empty desks with exam papers in a large hall, a close-up detail of the main subject, shallow depth of field",
+   "rows of empty desks with exam papers in a large hall, a wider view that shows more of the surroundings, on an overcast day",
+   "rows of empty desks with exam papers in a large hall, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "sportello": {
   "quando": "uffici pubblici, sportelli, orari al pubblico, anagrafe",
-  "foto": "a public office service counter with a glass partition and empty waiting chairs"
+  "foto": "a public office service counter with a glass partition and empty waiting chairs",
+  "varianti": [
+   "a public office service counter with a glass partition and empty waiting chairs, a close-up detail of the main subject, shallow depth of field",
+   "a public office service counter with a glass partition and empty waiting chairs, a wider view that shows more of the surroundings, on an overcast day",
+   "a public office service counter with a glass partition and empty waiting chairs, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "sicurezza-lavoro": {
   "quando": "sicurezza sul lavoro, morti sul lavoro (solo per iniziative e commemorazioni)",
-  "foto": "a yellow safety helmet and work gloves on a wooden plank at a construction site"
+  "foto": "a yellow safety helmet and work gloves on a wooden plank at a construction site",
+  "varianti": [
+   "a yellow safety helmet and work gloves on a wooden plank at a construction site, a close-up detail of the main subject, shallow depth of field",
+   "a yellow safety helmet and work gloves on a wooden plank at a construction site, a wider view that shows more of the surroundings, on an overcast day",
+   "a yellow safety helmet and work gloves on a wooden plank at a construction site, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "protesta": {
   "quando": "proteste, presidi, sit-in, sindacati, scioperi",
   "foto": "a megaphone and a rolled-up banner resting on the steps of a public building",
   "varianti": [
    "plain red flags without writing waving in front of a closed factory gate",
-   "blank protest placards leaning against the railings of a town square"
-  ]
+   "blank protest placards leaning against the railings of a town square",
+   "a megaphone and a rolled-up banner resting on the steps of a public building, seen from a different side and a higher angle, in soft morning light",
+   "plain red flags without writing waving in front of a closed factory gate, photographed from a low angle, at golden hour",
+   "blank protest placards leaning against the railings of a town square, a different composition with the subject off-center, in winter under a grey sky"
+  ],
+  "frequente": true
  },
  "anziani": {
   "quando": "anziani, pensionati, pensioni",
-  "foto": "a wooden walking stick leaning on a bench in a sunny village square"
+  "foto": "a wooden walking stick leaning on a bench in a sunny village square",
+  "varianti": [
+   "a wooden walking stick leaning on a bench in a sunny village square, a close-up detail of the main subject, shallow depth of field",
+   "a wooden walking stick leaning on a bench in a sunny village square, a wider view that shows more of the surroundings, on an overcast day",
+   "a wooden walking stick leaning on a bench in a sunny village square, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "disabili": {
   "quando": "disabilità, barriere architettoniche, parcheggi per disabili",
-  "foto": "a wheelchair ramp at the entrance of a public building"
+  "foto": "a wheelchair ramp at the entrance of a public building",
+  "varianti": [
+   "a wheelchair ramp at the entrance of a public building, a close-up detail of the main subject, shallow depth of field",
+   "a wheelchair ramp at the entrance of a public building, a wider view that shows more of the surroundings, on an overcast day",
+   "a wheelchair ramp at the entrance of a public building, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "edificio-scolastico": {
   "quando": "edifici scolastici, lavori nelle scuole, poli scolastici",
-  "foto": "the exterior of a modern school building with a gate and an empty schoolyard"
+  "foto": "the exterior of a modern school building with a gate and an empty schoolyard",
+  "varianti": [
+   "the exterior of a modern school building with a gate and an empty schoolyard, a close-up detail of the main subject, shallow depth of field",
+   "the exterior of a modern school building with a gate and an empty schoolyard, a wider view that shows more of the surroundings, on an overcast day",
+   "the exterior of a modern school building with a gate and an empty schoolyard, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "universita": {
   "quando": "università, UniSannio, Giustino Fortunato, convegni universitari",
   "foto": "an empty university lecture hall with tiered wooden seats",
   "varianti": [
    "a university corridor with stone arches and notice boards",
-   "books and a laptop on a desk in a university library"
-  ]
+   "books and a laptop on a desk in a university library",
+   "an empty university lecture hall with tiered wooden seats, seen from a different side and a higher angle, in soft morning light",
+   "a university corridor with stone arches and notice boards, photographed from a low angle, at golden hour",
+   "books and a laptop on a desk in a university library, a different composition with the subject off-center, in winter under a grey sky"
+  ],
+  "frequente": true
  },
  "asilo": {
   "quando": "asili nido, scuole dell'infanzia",
-  "foto": "small colourful chairs and toys in a kindergarten classroom"
+  "foto": "small colourful chairs and toys in a kindergarten classroom",
+  "varianti": [
+   "small colourful chairs and toys in a kindergarten classroom, a close-up detail of the main subject, shallow depth of field",
+   "small colourful chairs and toys in a kindergarten classroom, a wider view that shows more of the surroundings, on an overcast day",
+   "small colourful chairs and toys in a kindergarten classroom, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "scuolabus": {
   "quando": "scuolabus, trasporto scolastico",
-  "foto": "a yellow school minibus parked in front of a small village school"
+  "foto": "a yellow school minibus parked in front of a small village school",
+  "varianti": [
+   "a yellow school minibus parked in front of a small village school, a close-up detail of the main subject, shallow depth of field",
+   "a yellow school minibus parked in front of a small village school, a wider view that shows more of the surroundings, on an overcast day",
+   "a yellow school minibus parked in front of a small village school, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "parco-giochi": {
   "quando": "parchi giochi, bambini, spazi per famiglie",
-  "foto": "an empty children's playground with swings and a slide"
+  "foto": "an empty children's playground with swings and a slide",
+  "varianti": [
+   "an empty children's playground with swings and a slide, a close-up detail of the main subject, shallow depth of field",
+   "an empty children's playground with swings and a slide, a wider view that shows more of the surroundings, on an overcast day",
+   "an empty children's playground with swings and a slide, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "palestra": {
   "quando": "palestre, impianti sportivi, palazzetti",
-  "foto": "an empty school gymnasium with court lines on the floor"
+  "foto": "an empty school gymnasium with court lines on the floor",
+  "varianti": [
+   "an empty school gymnasium with court lines on the floor, a close-up detail of the main subject, shallow depth of field",
+   "an empty school gymnasium with court lines on the floor, a wider view that shows more of the surroundings, on an overcast day",
+   "an empty school gymnasium with court lines on the floor, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "piscina": {
   "quando": "piscine",
-  "foto": "the lanes of an empty indoor swimming pool"
+  "foto": "the lanes of an empty indoor swimming pool",
+  "varianti": [
+   "the lanes of an empty indoor swimming pool, a close-up detail of the main subject, shallow depth of field",
+   "the lanes of an empty indoor swimming pool, a wider view that shows more of the surroundings, on an overcast day",
+   "the lanes of an empty indoor swimming pool, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "stadio": {
   "quando": "stadi, lavori allo stadio, tribune",
-  "foto": "the empty stands of a football stadium under floodlights"
+  "foto": "the empty stands of a football stadium under floodlights",
+  "varianti": [
+   "the empty stands of a football stadium under floodlights, a close-up detail of the main subject, shallow depth of field",
+   "the empty stands of a football stadium under floodlights, a wider view that shows more of the surroundings, on an overcast day",
+   "the empty stands of a football stadium under floodlights, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "basket": {
   "quando": "basket, pallacanestro",
-  "foto": "a basketball hoop in an indoor arena"
+  "foto": "a basketball hoop in an indoor arena",
+  "varianti": [
+   "a basketball hoop in an indoor arena, a close-up detail of the main subject, shallow depth of field",
+   "a basketball hoop in an indoor arena, a wider view that shows more of the surroundings, on an overcast day",
+   "a basketball hoop in an indoor arena, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "pallavolo": {
   "quando": "pallavolo, volley",
-  "foto": "a volleyball resting near the net on an indoor court"
+  "foto": "a volleyball resting near the net on an indoor court",
+  "varianti": [
+   "a volleyball resting near the net on an indoor court, a close-up detail of the main subject, shallow depth of field",
+   "a volleyball resting near the net on an indoor court, a wider view that shows more of the surroundings, on an overcast day",
+   "a volleyball resting near the net on an indoor court, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "tennis": {
   "quando": "tennis, padel",
-  "foto": "a tennis racket and ball on a red clay court"
+  "foto": "a tennis racket and ball on a red clay court",
+  "varianti": [
+   "a tennis racket and ball on a red clay court, a close-up detail of the main subject, shallow depth of field",
+   "a tennis racket and ball on a red clay court, a wider view that shows more of the surroundings, on an overcast day",
+   "a tennis racket and ball on a red clay court, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "ciclismo": {
   "quando": "ciclismo, gare in bici",
-  "foto": "a racing bicycle leaning against a stone wall on a hill road"
+  "foto": "a racing bicycle leaning against a stone wall on a hill road",
+  "varianti": [
+   "a racing bicycle leaning against a stone wall on a hill road, a close-up detail of the main subject, shallow depth of field",
+   "a racing bicycle leaning against a stone wall on a hill road, a wider view that shows more of the surroundings, on an overcast day",
+   "a racing bicycle leaning against a stone wall on a hill road, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "corsa": {
   "quando": "corse podistiche, maratone, atletica",
-  "foto": "running shoes on an asphalt road at sunrise"
+  "foto": "running shoes on an asphalt road at sunrise",
+  "varianti": [
+   "running shoes on an asphalt road at sunrise, a close-up detail of the main subject, shallow depth of field",
+   "running shoes on an asphalt road at sunrise, a wider view that shows more of the surroundings, on an overcast day",
+   "running shoes on an asphalt road at sunrise, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "rugby": {
   "quando": "rugby",
-  "foto": "a rugby ball on a grass pitch with goal posts"
+  "foto": "a rugby ball on a grass pitch with goal posts",
+  "varianti": [
+   "a rugby ball on a grass pitch with goal posts, a close-up detail of the main subject, shallow depth of field",
+   "a rugby ball on a grass pitch with goal posts, a wider view that shows more of the surroundings, on an overcast day",
+   "a rugby ball on a grass pitch with goal posts, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "pronto-soccorso": {
   "quando": "pronto soccorso, 118, emergenza sanitaria (mai per incidenti o feriti)",
   "foto": "the entrance of a hospital emergency department at night with an ambulance parked, no logos, no text",
   "varianti": [
    "an empty hospital emergency waiting room with rows of chairs",
-   "an empty stretcher in a hospital corridor"
-  ]
+   "an empty stretcher in a hospital corridor",
+   "the entrance of a hospital emergency department at night with an ambulance parked, no logos, no text, seen from a different side and a higher angle, in soft morning light",
+   "an empty hospital emergency waiting room with rows of chairs, photographed from a low angle, at golden hour",
+   "an empty stretcher in a hospital corridor, a different composition with the subject off-center, in winter under a grey sky"
+  ],
+  "frequente": true
  },
  "medico": {
   "quando": "medici di famiglia, guardia medica, case di comunità, visite",
   "foto": "a stethoscope and a prescription pad on a doctor's desk",
   "varianti": [
    "an empty doctor's surgery with an examination bed",
-   "a blood pressure monitor and a stethoscope on a desk"
-  ]
+   "a blood pressure monitor and a stethoscope on a desk",
+   "a stethoscope and a prescription pad on a doctor's desk, seen from a different side and a higher angle, in soft morning light",
+   "an empty doctor's surgery with an examination bed, photographed from a low angle, at golden hour",
+   "a blood pressure monitor and a stethoscope on a desk, a different composition with the subject off-center, in winter under a grey sky"
+  ],
+  "frequente": true
  },
  "farmacia": {
   "quando": "farmacie, farmaci",
-  "foto": "a lit green cross pharmacy sign on a stone building at dusk"
+  "foto": "a lit green cross pharmacy sign on a stone building at dusk",
+  "varianti": [
+   "a lit green cross pharmacy sign on a stone building at dusk, a close-up detail of the main subject, shallow depth of field",
+   "a lit green cross pharmacy sign on a stone building at dusk, a wider view that shows more of the surroundings, on an overcast day",
+   "a lit green cross pharmacy sign on a stone building at dusk, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "vaccini": {
   "quando": "vaccini, campagne di prevenzione",
-  "foto": "a vaccine vial and a syringe on a medical tray"
+  "foto": "a vaccine vial and a syringe on a medical tray",
+  "varianti": [
+   "a vaccine vial and a syringe on a medical tray, a close-up detail of the main subject, shallow depth of field",
+   "a vaccine vial and a syringe on a medical tray, a wider view that shows more of the surroundings, on an overcast day",
+   "a vaccine vial and a syringe on a medical tray, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "laboratorio-analisi": {
   "quando": "analisi, laboratori, screening, ricerca",
-  "foto": "blood test tubes in a rack in a clinical laboratory with a microscope"
+  "foto": "blood test tubes in a rack in a clinical laboratory with a microscope",
+  "varianti": [
+   "blood test tubes in a rack in a clinical laboratory with a microscope, a close-up detail of the main subject, shallow depth of field",
+   "blood test tubes in a rack in a clinical laboratory with a microscope, a wider view that shows more of the surroundings, on an overcast day",
+   "blood test tubes in a rack in a clinical laboratory with a microscope, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "negozi-chiusi": {
   "quando": "negozi che chiudono, desertificazione commerciale, commercio in crisi",
-  "foto": "a row of shops with closed metal shutters on an old town street"
+  "foto": "a row of shops with closed metal shutters on an old town street",
+  "varianti": [
+   "a row of shops with closed metal shutters on an old town street, a close-up detail of the main subject, shallow depth of field",
+   "a row of shops with closed metal shutters on an old town street, a wider view that shows more of the surroundings, on an overcast day",
+   "a row of shops with closed metal shutters on an old town street, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "centro-commerciale": {
   "quando": "centri commerciali, grande distribuzione",
-  "foto": "the bright empty corridor of a shopping mall"
+  "foto": "the bright empty corridor of a shopping mall",
+  "varianti": [
+   "the bright empty corridor of a shopping mall, a close-up detail of the main subject, shallow depth of field",
+   "the bright empty corridor of a shopping mall, a wider view that shows more of the surroundings, on an overcast day",
+   "the bright empty corridor of a shopping mall, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "artigiani": {
   "quando": "artigiani, botteghe, piccole imprese",
-  "foto": "hand tools on an old wooden workbench in an artisan workshop"
+  "foto": "hand tools on an old wooden workbench in an artisan workshop",
+  "varianti": [
+   "hand tools on an old wooden workbench in an artisan workshop, a close-up detail of the main subject, shallow depth of field",
+   "hand tools on an old wooden workbench in an artisan workshop, a wider view that shows more of the surroundings, on an overcast day",
+   "hand tools on an old wooden workbench in an artisan workshop, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "ristorante": {
   "quando": "ristoranti, trattorie, pizzerie, cucina",
-  "foto": "a set table in a rustic Italian trattoria with a checked tablecloth"
+  "foto": "a set table in a rustic Italian trattoria with a checked tablecloth",
+  "varianti": [
+   "a set table in a rustic Italian trattoria with a checked tablecloth, a close-up detail of the main subject, shallow depth of field",
+   "a set table in a rustic Italian trattoria with a checked tablecloth, a wider view that shows more of the surroundings, on an overcast day",
+   "a set table in a rustic Italian trattoria with a checked tablecloth, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "bar": {
   "quando": "bar, caffè, esercizi pubblici, movida",
-  "foto": "an espresso cup on the counter of an Italian café"
+  "foto": "an espresso cup on the counter of an Italian café",
+  "varianti": [
+   "an espresso cup on the counter of an Italian café, a close-up detail of the main subject, shallow depth of field",
+   "an espresso cup on the counter of an Italian café, a wider view that shows more of the surroundings, on an overcast day",
+   "an espresso cup on the counter of an Italian café, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "borgo": {
   "quando": "turismo, borghi, paesi, spopolamento, aree interne",
-  "foto": "a medieval hill village of stone houses at sunset seen from afar"
+  "foto": "a medieval hill village of stone houses at sunset seen from afar",
+  "varianti": [
+   "a medieval hill village of stone houses at sunset seen from afar, a close-up detail of the main subject, shallow depth of field",
+   "a medieval hill village of stone houses at sunset seen from afar, a wider view that shows more of the surroundings, on an overcast day",
+   "a medieval hill village of stone houses at sunset seen from afar, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "terme": {
   "quando": "terme, Telese Terme, turismo termale",
-  "foto": "a steaming outdoor thermal pool surrounded by trees"
+  "foto": "a steaming outdoor thermal pool surrounded by trees",
+  "varianti": [
+   "a steaming outdoor thermal pool surrounded by trees, a close-up detail of the main subject, shallow depth of field",
+   "a steaming outdoor thermal pool surrounded by trees, a wider view that shows more of the surroundings, on an overcast day",
+   "a steaming outdoor thermal pool surrounded by trees, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "olio": {
   "quando": "olio, raccolta delle olive, frantoi",
-  "foto": "olive oil pouring into a small bowl with fresh olives and leaves"
+  "foto": "olive oil pouring into a small bowl with fresh olives and leaves",
+  "varianti": [
+   "olive oil pouring into a small bowl with fresh olives and leaves, a close-up detail of the main subject, shallow depth of field",
+   "olive oil pouring into a small bowl with fresh olives and leaves, a wider view that shows more of the surroundings, on an overcast day",
+   "olive oil pouring into a small bowl with fresh olives and leaves, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "formaggi": {
   "quando": "formaggi, pecorino, caseifici",
-  "foto": "wheels of pecorino cheese ageing on wooden shelves"
+  "foto": "wheels of pecorino cheese ageing on wooden shelves",
+  "varianti": [
+   "wheels of pecorino cheese ageing on wooden shelves, a close-up detail of the main subject, shallow depth of field",
+   "wheels of pecorino cheese ageing on wooden shelves, a wider view that shows more of the surroundings, on an overcast day",
+   "wheels of pecorino cheese ageing on wooden shelves, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "cantina": {
   "quando": "vino, cantine, enoturismo",
-  "foto": "oak wine barrels in a stone cellar"
+  "foto": "oak wine barrels in a stone cellar",
+  "varianti": [
+   "oak wine barrels in a stone cellar, a close-up detail of the main subject, shallow depth of field",
+   "oak wine barrels in a stone cellar, a wider view that shows more of the surroundings, on an overcast day",
+   "oak wine barrels in a stone cellar, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "grano": {
   "quando": "grano, cereali, mulini",
-  "foto": "a golden wheat field on gentle hills"
+  "foto": "a golden wheat field on gentle hills",
+  "varianti": [
+   "a golden wheat field on gentle hills, a close-up detail of the main subject, shallow depth of field",
+   "a golden wheat field on gentle hills, a wider view that shows more of the surroundings, on an overcast day",
+   "a golden wheat field on gentle hills, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "pomodori": {
   "quando": "pomodori, orti, prezzi della frutta e verdura",
-  "foto": "ripe tomatoes in a wooden crate"
+  "foto": "ripe tomatoes in a wooden crate",
+  "varianti": [
+   "ripe tomatoes in a wooden crate, a close-up detail of the main subject, shallow depth of field",
+   "ripe tomatoes in a wooden crate, a wider view that shows more of the surroundings, on an overcast day",
+   "ripe tomatoes in a wooden crate, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "siccita": {
   "quando": "siccità, crisi idrica, campi senz'acqua",
-  "foto": "cracked dry soil of a parched field"
+  "foto": "cracked dry soil of a parched field",
+  "varianti": [
+   "cracked dry soil of a parched field, a close-up detail of the main subject, shallow depth of field",
+   "cracked dry soil of a parched field, a wider view that shows more of the surroundings, on an overcast day",
+   "cracked dry soil of a parched field, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "castagneto": {
   "quando": "castagneti, raccolta delle castagne",
-  "foto": "chestnuts in spiky burrs on the floor of a chestnut wood"
+  "foto": "chestnuts in spiky burrs on the floor of a chestnut wood",
+  "varianti": [
+   "chestnuts in spiky burrs on the floor of a chestnut wood, a close-up detail of the main subject, shallow depth of field",
+   "chestnuts in spiky burrs on the floor of a chestnut wood, a wider view that shows more of the surroundings, on an overcast day",
+   "chestnuts in spiky burrs on the floor of a chestnut wood, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "funghi": {
   "quando": "funghi, sagre dei funghi, raccolta nei boschi",
-  "foto": "porcini mushrooms growing on a forest floor"
+  "foto": "porcini mushrooms growing on a forest floor",
+  "varianti": [
+   "porcini mushrooms growing on a forest floor, a close-up detail of the main subject, shallow depth of field",
+   "porcini mushrooms growing on a forest floor, a wider view that shows more of the surroundings, on an overcast day",
+   "porcini mushrooms growing on a forest floor, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "api": {
   "quando": "api, miele, apicoltori",
-  "foto": "wooden beehives in a flowering meadow"
+  "foto": "wooden beehives in a flowering meadow",
+  "varianti": [
+   "wooden beehives in a flowering meadow, a close-up detail of the main subject, shallow depth of field",
+   "wooden beehives in a flowering meadow, a wider view that shows more of the surroundings, on an overcast day",
+   "wooden beehives in a flowering meadow, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "mucche": {
   "quando": "allevamenti di mucche, stalle, latte vaccino",
-  "foto": "dairy cows in a clean barn"
+  "foto": "dairy cows in a clean barn",
+  "varianti": [
+   "dairy cows in a clean barn, a close-up detail of the main subject, shallow depth of field",
+   "dairy cows in a clean barn, a wider view that shows more of the surroundings, on an overcast day",
+   "dairy cows in a clean barn, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "maiali": {
   "quando": "allevamenti di maiali, peste suina",
-  "foto": "pigs in a farm pen"
+  "foto": "pigs in a farm pen",
+  "varianti": [
+   "pigs in a farm pen, a close-up detail of the main subject, shallow depth of field",
+   "pigs in a farm pen, a wider view that shows more of the surroundings, on an overcast day",
+   "pigs in a farm pen, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "logistica": {
   "quando": "logistica, magazzini, zone industriali",
-  "foto": "a logistics warehouse with tall shelves of boxes and a forklift"
+  "foto": "a logistics warehouse with tall shelves of boxes and a forklift",
+  "varianti": [
+   "a logistics warehouse with tall shelves of boxes and a forklift, a close-up detail of the main subject, shallow depth of field",
+   "a logistics warehouse with tall shelves of boxes and a forklift, a wider view that shows more of the surroundings, on an overcast day",
+   "a logistics warehouse with tall shelves of boxes and a forklift, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "lotteria": {
   "quando": "vincite al lotto, Superenalotto, gratta e vinci",
-  "foto": "a lottery play slip and a pen on a counter"
+  "foto": "a lottery play slip and a pen on a counter",
+  "varianti": [
+   "a lottery play slip and a pen on a counter, a close-up detail of the main subject, shallow depth of field",
+   "a lottery play slip and a pen on a counter, a wider view that shows more of the surroundings, on an overcast day",
+   "a lottery play slip and a pen on a counter, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "digitale": {
   "quando": "innovazione, digitale, informatica, servizi online del Comune",
-  "foto": "a laptop showing lines of code with a server rack in the background"
+  "foto": "a laptop showing lines of code with a server rack in the background",
+  "varianti": [
+   "a laptop showing lines of code with a server rack in the background, a close-up detail of the main subject, shallow depth of field",
+   "a laptop showing lines of code with a server rack in the background, a wider view that shows more of the surroundings, on an overcast day",
+   "a laptop showing lines of code with a server rack in the background, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "internet": {
   "quando": "internet, fibra, antenne, telefonia",
-  "foto": "a telecommunication tower with antennas on a hill at sunset"
+  "foto": "a telecommunication tower with antennas on a hill at sunset",
+  "varianti": [
+   "a telecommunication tower with antennas on a hill at sunset, a close-up detail of the main subject, shallow depth of field",
+   "a telecommunication tower with antennas on a hill at sunset, a wider view that shows more of the surroundings, on an overcast day",
+   "a telecommunication tower with antennas on a hill at sunset, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "museo": {
   "quando": "musei, mostre archeologiche, inaugurazioni di musei",
-  "foto": "a museum hall with ancient artefacts in glass cases"
+  "foto": "a museum hall with ancient artefacts in glass cases",
+  "varianti": [
+   "a museum hall with ancient artefacts in glass cases, a close-up detail of the main subject, shallow depth of field",
+   "a museum hall with ancient artefacts in glass cases, a wider view that shows more of the surroundings, on an overcast day",
+   "a museum hall with ancient artefacts in glass cases, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "archeologia": {
   "quando": "archeologia, scavi, monumenti antichi",
-  "foto": "ancient Roman stone columns and ruins in a grassy archaeological site"
+  "foto": "ancient Roman stone columns and ruins in a grassy archaeological site",
+  "varianti": [
+   "ancient Roman stone columns and ruins in a grassy archaeological site, a close-up detail of the main subject, shallow depth of field",
+   "ancient Roman stone columns and ruins in a grassy archaeological site, a wider view that shows more of the surroundings, on an overcast day",
+   "ancient Roman stone columns and ruins in a grassy archaeological site, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "mostra": {
   "quando": "mostre d'arte, pittura, gallerie",
-  "foto": "an art exhibition with framed paintings on white walls"
+  "foto": "an art exhibition with framed paintings on white walls",
+  "varianti": [
+   "an art exhibition with framed paintings on white walls, a close-up detail of the main subject, shallow depth of field",
+   "an art exhibition with framed paintings on white walls, a wider view that shows more of the surroundings, on an overcast day",
+   "an art exhibition with framed paintings on white walls, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "musica-classica": {
   "quando": "musica classica, conservatorio, orchestre, lirica",
-  "foto": "a violin and bow resting on a chair in a concert hall"
+  "foto": "a violin and bow resting on a chair in a concert hall",
+  "varianti": [
+   "a violin and bow resting on a chair in a concert hall, a close-up detail of the main subject, shallow depth of field",
+   "a violin and bow resting on a chair in a concert hall, a wider view that shows more of the surroundings, on an overcast day",
+   "a violin and bow resting on a chair in a concert hall, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "cinema": {
   "quando": "cinema, festival del cinema, film",
-  "foto": "an empty cinema hall with a glowing screen"
+  "foto": "an empty cinema hall with a glowing screen",
+  "varianti": [
+   "an empty cinema hall with a glowing screen, a close-up detail of the main subject, shallow depth of field",
+   "an empty cinema hall with a glowing screen, a wider view that shows more of the surroundings, on an overcast day",
+   "an empty cinema hall with a glowing screen, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "danza": {
   "quando": "danza, scuole di ballo",
-  "foto": "ballet pointe shoes on a wooden stage floor"
+  "foto": "ballet pointe shoes on a wooden stage floor",
+  "varianti": [
+   "ballet pointe shoes on a wooden stage floor, a close-up detail of the main subject, shallow depth of field",
+   "ballet pointe shoes on a wooden stage floor, a wider view that shows more of the surroundings, on an overcast day",
+   "ballet pointe shoes on a wooden stage floor, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "natale": {
   "quando": "Natale, mercatini, luci di Natale, eventi di Natale",
   "foto": "Christmas lights strung across an old town street at night with a decorated tree",
   "varianti": [
    "a tall decorated Christmas tree in a town square at night",
-   "strings of star-shaped Christmas lights over an old town street at dusk"
-  ]
+   "strings of star-shaped Christmas lights over an old town street at dusk",
+   "Christmas lights strung across an old town street at night with a decorated tree, seen from a different side and a higher angle, in soft morning light",
+   "a tall decorated Christmas tree in a town square at night, photographed from a low angle, at golden hour",
+   "strings of star-shaped Christmas lights over an old town street at dusk, a different composition with the subject off-center, in winter under a grey sky"
+  ],
+  "frequente": true
  },
  "carnevale": {
   "quando": "Carnevale",
-  "foto": "colourful confetti and paper streamers on a cobblestone street with a carnival mask"
+  "foto": "colourful confetti and paper streamers on a cobblestone street with a carnival mask",
+  "varianti": [
+   "colourful confetti and paper streamers on a cobblestone street with a carnival mask, a close-up detail of the main subject, shallow depth of field",
+   "colourful confetti and paper streamers on a cobblestone street with a carnival mask, a wider view that shows more of the surroundings, on an overcast day",
+   "colourful confetti and paper streamers on a cobblestone street with a carnival mask, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "fuochi": {
   "quando": "fuochi d'artificio, feste patronali",
-  "foto": "fireworks bursting over a hill village at night"
+  "foto": "fireworks bursting over a hill village at night",
+  "varianti": [
+   "fireworks bursting over a hill village at night, a close-up detail of the main subject, shallow depth of field",
+   "fireworks bursting over a hill village at night, a wider view that shows more of the surroundings, on an overcast day",
+   "fireworks bursting over a hill village at night, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "luminarie": {
   "quando": "feste patronali, luminarie, feste di paese",
-  "foto": "traditional southern Italian festival light arches over a narrow village street at night"
+  "foto": "traditional southern Italian festival light arches over a narrow village street at night",
+  "varianti": [
+   "traditional southern Italian festival light arches over a narrow village street at night, a close-up detail of the main subject, shallow depth of field",
+   "traditional southern Italian festival light arches over a narrow village street at night, a wider view that shows more of the surroundings, on an overcast day",
+   "traditional southern Italian festival light arches over a narrow village street at night, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "presepe": {
   "quando": "presepi, presepi viventi",
-  "foto": "a traditional Neapolitan nativity scene with small terracotta figurines"
+  "foto": "a traditional Neapolitan nativity scene with small terracotta figurines",
+  "varianti": [
+   "a traditional Neapolitan nativity scene with small terracotta figurines, a close-up detail of the main subject, shallow depth of field",
+   "a traditional Neapolitan nativity scene with small terracotta figurines, a wider view that shows more of the surroundings, on an overcast day",
+   "a traditional Neapolitan nativity scene with small terracotta figurines, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "premio": {
   "quando": "premi, riconoscimenti, concorsi vinti",
-  "foto": "a crystal award trophy and a framed certificate on a table"
+  "foto": "a crystal award trophy and a framed certificate on a table",
+  "varianti": [
+   "a crystal award trophy and a framed certificate on a table, a close-up detail of the main subject, shallow depth of field",
+   "a crystal award trophy and a framed certificate on a table, a wider view that shows more of the surroundings, on an overcast day",
+   "a crystal award trophy and a framed certificate on a table, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "commemorazione": {
   "quando": "commemorazioni, anniversari, giornate della memoria",
-  "foto": "a laurel wreath with an Italian tricolour ribbon at the foot of a stone memorial"
+  "foto": "a laurel wreath with an Italian tricolour ribbon at the foot of a stone memorial",
+  "varianti": [
+   "a laurel wreath with an Italian tricolour ribbon at the foot of a stone memorial, a close-up detail of the main subject, shallow depth of field",
+   "a laurel wreath with an Italian tricolour ribbon at the foot of a stone memorial, a wider view that shows more of the surroundings, on an overcast day",
+   "a laurel wreath with an Italian tricolour ribbon at the foot of a stone memorial, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "cammino": {
   "quando": "cammini, pellegrinaggi, trekking",
-  "foto": "a dirt path through green hills with a wooden signpost without writing"
+  "foto": "a dirt path through green hills with a wooden signpost without writing",
+  "varianti": [
+   "a dirt path through green hills with a wooden signpost without writing, a close-up detail of the main subject, shallow depth of field",
+   "a dirt path through green hills with a wooden signpost without writing, a wider view that shows more of the surroundings, on an overcast day",
+   "a dirt path through green hills with a wooden signpost without writing, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "solidarieta": {
   "quando": "volontariato, Caritas, raccolte alimentari, solidarietà",
-  "foto": "boxes of donated food with pasta, canned goods and milk on a table"
+  "foto": "boxes of donated food with pasta, canned goods and milk on a table",
+  "varianti": [
+   "boxes of donated food with pasta, canned goods and milk on a table, a close-up detail of the main subject, shallow depth of field",
+   "boxes of donated food with pasta, canned goods and milk on a table, a wider view that shows more of the surroundings, on an overcast day",
+   "boxes of donated food with pasta, canned goods and milk on a table, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "fontana": {
   "quando": "fontane pubbliche, acqua non potabile, sorgenti",
-  "foto": "an old stone public drinking fountain in a village square"
+  "foto": "an old stone public drinking fountain in a village square",
+  "varianti": [
+   "an old stone public drinking fountain in a village square, a close-up detail of the main subject, shallow depth of field",
+   "an old stone public drinking fountain in a village square, a wider view that shows more of the surroundings, on an overcast day",
+   "an old stone public drinking fountain in a village square, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "mercatino-natale": {
   "quando": "mercatini di Natale, casette di legno, idee regalo",
   "foto": "wooden Christmas market stalls with warm lights, garlands and handmade decorations in an old stone town square at dusk",
   "varianti": [
    "a wooden Christmas market hut selling handmade ornaments and candles, warm fairy lights, close-up",
-   "a Christmas market street in a medieval village at night with lit wooden huts and a big decorated tree"
-  ]
+   "a Christmas market street in a medieval village at night with lit wooden huts and a big decorated tree",
+   "wooden Christmas market stalls with warm lights, garlands and handmade decorations in an old stone town square at dusk, seen from a different side and a higher angle, in soft morning light",
+   "a wooden Christmas market hut selling handmade ornaments and candles, warm fairy lights, close-up, photographed from a low angle, at golden hour",
+   "a Christmas market street in a medieval village at night with lit wooden huts and a big decorated tree, a different composition with the subject off-center, in winter under a grey sky"
+  ],
+  "frequente": true
  },
  "castello-natale": {
   "quando": "Natale nei castelli, villaggi di Natale in castelli e palazzi storici",
   "foto": "the courtyard of a medieval stone castle decorated for Christmas with lights, small wooden huts and a tall tree at dusk",
   "varianti": [
-   "the illuminated walls and tower of a medieval castle at night with Christmas lights and garlands at the entrance"
-  ]
+   "the illuminated walls and tower of a medieval castle at night with Christmas lights and garlands at the entrance",
+   "the courtyard of a medieval stone castle decorated for Christmas with lights, small wooden huts and a tall tree at dusk, a wider view that shows more of the surroundings, on an overcast day",
+   "the illuminated walls and tower of a medieval castle at night with Christmas lights and garlands at the entrance, seen from a different side and a higher angle, in soft morning light",
+   "the courtyard of a medieval stone castle decorated for Christmas with lights, small wooden huts and a tall tree at dusk, photographed from a low angle, at golden hour",
+   "the illuminated walls and tower of a medieval castle at night with Christmas lights and garlands at the entrance, a different composition with the subject off-center, in winter under a grey sky"
+  ],
+  "frequente": true
  },
  "casa-babbo-natale": {
   "quando": "villaggi e parchi di Natale, casa di Babbo Natale, eventi di Natale per bambini",
-  "foto": "a cosy Santa Claus house interior with a big armchair, fireplace, wrapped gifts and a decorated tree, no people"
+  "foto": "a cosy Santa Claus house interior with a big armchair, fireplace, wrapped gifts and a decorated tree, no people",
+  "varianti": [
+   "a cosy Santa Claus house interior with a big armchair, fireplace, wrapped gifts and a decorated tree, no people, a close-up detail of the main subject, shallow depth of field",
+   "a cosy Santa Claus house interior with a big armchair, fireplace, wrapped gifts and a decorated tree, no people, a wider view that shows more of the surroundings, on an overcast day",
+   "a cosy Santa Claus house interior with a big armchair, fireplace, wrapped gifts and a decorated tree, no people, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "pista-ghiaccio": {
   "quando": "piste di pattinaggio sul ghiaccio",
   "foto": "an outdoor ice skating rink in an Italian town square at night with Christmas lights, no people",
   "varianti": [
-   "a pair of ice skates resting on the edge of an outdoor ice rink with blurred Christmas lights"
-  ]
+   "a pair of ice skates resting on the edge of an outdoor ice rink with blurred Christmas lights",
+   "an outdoor ice skating rink in an Italian town square at night with Christmas lights, no people, a wider view that shows more of the surroundings, on an overcast day",
+   "a pair of ice skates resting on the edge of an outdoor ice rink with blurred Christmas lights, seen from a different side and a higher angle, in soft morning light",
+   "an outdoor ice skating rink in an Italian town square at night with Christmas lights, no people, photographed from a low angle, at golden hour",
+   "a pair of ice skates resting on the edge of an outdoor ice rink with blurred Christmas lights, a different composition with the subject off-center, in winter under a grey sky"
+  ],
+  "frequente": true
  },
  "borgo-natale": {
   "quando": "Natale nei borghi e nei centri storici, luci e allestimenti di Natale",
   "foto": "a narrow stone alley of an old hill village decorated with Christmas lights and stars at night",
   "varianti": [
-   "lanterns and Christmas garlands on the stone steps of an old village at dusk"
-  ]
+   "lanterns and Christmas garlands on the stone steps of an old village at dusk",
+   "a narrow stone alley of an old hill village decorated with Christmas lights and stars at night, a wider view that shows more of the surroundings, on an overcast day",
+   "lanterns and Christmas garlands on the stone steps of an old village at dusk, seen from a different side and a higher angle, in soft morning light",
+   "a narrow stone alley of an old hill village decorated with Christmas lights and stars at night, photographed from a low angle, at golden hour",
+   "lanterns and Christmas garlands on the stone steps of an old village at dusk, a different composition with the subject off-center, in winter under a grey sky"
+  ],
+  "frequente": true
  },
  "presepe-vivente": {
   "quando": "presepi viventi",
   "foto": "a rustic stone stable with hay, a wooden manger, lanterns and an old cart in a medieval village at night, no people",
   "varianti": [
-   "old craft workshops set up in stone cellars for a living nativity, with lanterns, baskets and tools, no people"
-  ]
+   "old craft workshops set up in stone cellars for a living nativity, with lanterns, baskets and tools, no people",
+   "a rustic stone stable with hay, a wooden manger, lanterns and an old cart in a medieval village at night, no people, a wider view that shows more of the surroundings, on an overcast day",
+   "old craft workshops set up in stone cellars for a living nativity, with lanterns, baskets and tools, no people, seen from a different side and a higher angle, in soft morning light",
+   "a rustic stone stable with hay, a wooden manger, lanterns and an old cart in a medieval village at night, no people, photographed from a low angle, at golden hour",
+   "old craft workshops set up in stone cellars for a living nativity, with lanterns, baskets and tools, no people, a different composition with the subject off-center, in winter under a grey sky"
+  ],
+  "frequente": true
  },
  "janare": {
   "quando": "Halloween, janare e streghe di Benevento, feste a tema streghe",
-  "foto": "a witch's broom, carved pumpkins with candles and old lanterns in a stone alley at night"
+  "foto": "a witch's broom, carved pumpkins with candles and old lanterns in a stone alley at night",
+  "varianti": [
+   "a witch's broom, carved pumpkins with candles and old lanterns in a stone alley at night, a close-up detail of the main subject, shallow depth of field",
+   "a witch's broom, carved pumpkins with candles and old lanterns in a stone alley at night, a wider view that shows more of the surroundings, on an overcast day",
+   "a witch's broom, carved pumpkins with candles and old lanterns in a stone alley at night, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "jazz": {
   "quando": "concerti jazz",
-  "foto": "a saxophone resting on a stand on a dark stage under a warm spotlight"
+  "foto": "a saxophone resting on a stand on a dark stage under a warm spotlight",
+  "varianti": [
+   "a saxophone resting on a stand on a dark stage under a warm spotlight, a close-up detail of the main subject, shallow depth of field",
+   "a saxophone resting on a stand on a dark stage under a warm spotlight, a wider view that shows more of the surroundings, on an overcast day",
+   "a saxophone resting on a stand on a dark stage under a warm spotlight, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "mandolino": {
   "quando": "canzone napoletana, musica popolare, concerti di tradizione",
   "foto": "a mandolin and a tambourine on a wooden chair on a stage with warm light",
   "varianti": [
-   "traditional southern Italian folk instruments, a tammorra, castanets and an accordion on a wooden table"
-  ]
+   "traditional southern Italian folk instruments, a tammorra, castanets and an accordion on a wooden table",
+   "a mandolin and a tambourine on a wooden chair on a stage with warm light, a wider view that shows more of the surroundings, on an overcast day",
+   "traditional southern Italian folk instruments, a tammorra, castanets and an accordion on a wooden table, seen from a different side and a higher angle, in soft morning light",
+   "a mandolin and a tambourine on a wooden chair on a stage with warm light, photographed from a low angle, at golden hour",
+   "traditional southern Italian folk instruments, a tammorra, castanets and an accordion on a wooden table, a different composition with the subject off-center, in winter under a grey sky"
+  ],
+  "frequente": true
  },
  "pianoforte": {
   "quando": "concerti di pianoforte, cantautori, recital",
-  "foto": "a black grand piano on an empty concert stage under a spotlight"
+  "foto": "a black grand piano on an empty concert stage under a spotlight",
+  "varianti": [
+   "a black grand piano on an empty concert stage under a spotlight, a close-up detail of the main subject, shallow depth of field",
+   "a black grand piano on an empty concert stage under a spotlight, a wider view that shows more of the surroundings, on an overcast day",
+   "a black grand piano on an empty concert stage under a spotlight, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "violoncello": {
   "quando": "musica da camera, violoncello, concerti di archi",
-  "foto": "a cello and bow leaning on a chair on a wooden stage with soft warm light"
+  "foto": "a cello and bow leaning on a chair on a wooden stage with soft warm light",
+  "varianti": [
+   "a cello and bow leaning on a chair on a wooden stage with soft warm light, a close-up detail of the main subject, shallow depth of field",
+   "a cello and bow leaning on a chair on a wooden stage with soft warm light, a wider view that shows more of the surroundings, on an overcast day",
+   "a cello and bow leaning on a chair on a wooden stage with soft warm light, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "orchestra": {
   "quando": "orchestre, concerti sinfonici, musica da film",
-  "foto": "empty orchestra chairs and music stands with sheet music on a concert hall stage"
+  "foto": "empty orchestra chairs and music stands with sheet music on a concert hall stage",
+  "varianti": [
+   "empty orchestra chairs and music stands with sheet music on a concert hall stage, a close-up detail of the main subject, shallow depth of field",
+   "empty orchestra chairs and music stands with sheet music on a concert hall stage, a wider view that shows more of the surroundings, on an overcast day",
+   "empty orchestra chairs and music stands with sheet music on a concert hall stage, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "musical": {
   "quando": "musical, gialli musicali, spettacoli con musica",
-  "foto": "a theatre stage with colourful spotlights, haze and a sparkling curtain"
+  "foto": "a theatre stage with colourful spotlights, haze and a sparkling curtain",
+  "varianti": [
+   "a theatre stage with colourful spotlights, haze and a sparkling curtain, a close-up detail of the main subject, shallow depth of field",
+   "a theatre stage with colourful spotlights, haze and a sparkling curtain, a wider view that shows more of the surroundings, on an overcast day",
+   "a theatre stage with colourful spotlights, haze and a sparkling curtain, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "teatro-ragazzi": {
   "quando": "spettacoli per bambini e famiglie, teatro ragazzi",
-  "foto": "a small colourful theatre stage with stars, balloons and a painted fairy-tale castle backdrop"
+  "foto": "a small colourful theatre stage with stars, balloons and a painted fairy-tale castle backdrop",
+  "varianti": [
+   "a small colourful theatre stage with stars, balloons and a painted fairy-tale castle backdrop, a close-up detail of the main subject, shallow depth of field",
+   "a small colourful theatre stage with stars, balloons and a painted fairy-tale castle backdrop, a wider view that shows more of the surroundings, on an overcast day",
+   "a small colourful theatre stage with stars, balloons and a painted fairy-tale castle backdrop, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "arte-contemporanea": {
   "quando": "mostre di arte contemporanea, sculture, installazioni",
-  "foto": "a white gallery room with contemporary sculptures on plinths and large abstract works on the walls"
+  "foto": "a white gallery room with contemporary sculptures on plinths and large abstract works on the walls",
+  "varianti": [
+   "a white gallery room with contemporary sculptures on plinths and large abstract works on the walls, a close-up detail of the main subject, shallow depth of field",
+   "a white gallery room with contemporary sculptures on plinths and large abstract works on the walls, a wider view that shows more of the surroundings, on an overcast day",
+   "a white gallery room with contemporary sculptures on plinths and large abstract works on the walls, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "mostra-archivio": {
   "quando": "mostre di documenti, archivi, storia della città, fotografie d'epoca",
-  "foto": "old maps, historical documents and black and white photographs displayed under glass in an exhibition hall"
+  "foto": "old maps, historical documents and black and white photographs displayed under glass in an exhibition hall",
+  "varianti": [
+   "old maps, historical documents and black and white photographs displayed under glass in an exhibition hall, a close-up detail of the main subject, shallow depth of field",
+   "old maps, historical documents and black and white photographs displayed under glass in an exhibition hall, a wider view that shows more of the surroundings, on an overcast day",
+   "old maps, historical documents and black and white photographs displayed under glass in an exhibition hall, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "cartoline": {
   "quando": "mostre di cartoline e collezioni, storia locale",
-  "foto": "vintage illustrated postcards spread on a wooden table, seen from above, no readable writing"
+  "foto": "vintage illustrated postcards spread on a wooden table, seen from above, no readable writing",
+  "varianti": [
+   "vintage illustrated postcards spread on a wooden table, seen from above, no readable writing, a close-up detail of the main subject, shallow depth of field",
+   "vintage illustrated postcards spread on a wooden table, seen from above, no readable writing, a wider view that shows more of the surroundings, on an overcast day",
+   "vintage illustrated postcards spread on a wooden table, seen from above, no readable writing, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "vino-novello": {
   "quando": "vino novello, feste del vino e delle castagne",
-  "foto": "glasses of young red wine and a basket of roasted chestnuts on a rustic table"
+  "foto": "glasses of young red wine and a basket of roasted chestnuts on a rustic table",
+  "varianti": [
+   "glasses of young red wine and a basket of roasted chestnuts on a rustic table, a close-up detail of the main subject, shallow depth of field",
+   "glasses of young red wine and a basket of roasted chestnuts on a rustic table, a wider view that shows more of the surroundings, on an overcast day",
+   "glasses of young red wine and a basket of roasted chestnuts on a rustic table, seen from a different side and a higher angle, in soft morning light"
+  ]
  },
  "lirica": {
   "quando": "opera lirica",
-  "foto": "a grand opera stage set with dramatic red lighting and a sweeping staircase, no people"
+  "foto": "a grand opera stage set with dramatic red lighting and a sweeping staircase, no people",
+  "varianti": [
+   "a grand opera stage set with dramatic red lighting and a sweeping staircase, no people, a close-up detail of the main subject, shallow depth of field",
+   "a grand opera stage set with dramatic red lighting and a sweeping staircase, no people, a wider view that shows more of the surroundings, on an overcast day",
+   "a grand opera stage set with dramatic red lighting and a sweeping staircase, no people, seen from a different side and a higher angle, in soft morning light"
+  ]
  }
 }

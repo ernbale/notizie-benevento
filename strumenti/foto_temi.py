@@ -3,8 +3,8 @@
 stesso tema non mostrano sempre la stessa foto, sul sito e sui social.
 
 Quante versioni (voluto dal proprietario il 22 ott 2026: «almeno 4 per ogni tema, quelle più frequenti anche di
-più»): almeno MINIMO per ogni tema; FREQUENTI per i temi che hanno già le «varianti» in temi.json (quelli che
-ricorrono di più nei titoli dei giornali); IN_TESTA per i temi più usati di tutti.
+più»): almeno MINIMO per ogni tema; FREQUENTI per i temi segnati «frequente» in temi.json (quelli che ricorrono di
+più nei titoli dei giornali); IN_TESTA per i temi più usati di tutti (TESTA).
 
 Le versioni nuove sono la stessa scena del tema (o di una sua variante) con un'altra luce, un'altra stagione o
 un'altra inquadratura: la frase è scritta in temi.json, nella lista «varianti» (variante i = file <tema>-<i+2>.jpg).
@@ -59,7 +59,7 @@ def piano(temi):
             continue
         ce = len(versioni(tema))
         varianti = t.get("varianti") or []
-        voglio = IN_TESTA if tema in TESTA else FREQUENTI if varianti else MINIMO
+        voglio = IN_TESTA if tema in TESTA else FREQUENTI if t.get("frequente") else MINIMO
         scene = [t["foto"]] + varianti[:max(0, ce - 1)]   # le scene vere (non quelle già «rifatte» con un modo)
         for i in range(max(0, voglio - ce)):
             numero = ce + i + 1
