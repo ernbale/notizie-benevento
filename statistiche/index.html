@@ -408,12 +408,13 @@
           l.href = p.link || F.pagina; l.target = "_blank"; l.rel = "noopener";
           c.appendChild(l);
           c.appendChild(el("span", "perc", new Date(p.quando).toLocaleString("it-IT", { timeZone: "Europe/Rome", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" })));
-          r.appendChild(c); r.appendChild(el("td", "num", num(p.reazioni))); r.appendChild(el("td", "num", num(p.commenti))); r.appendChild(el("td", "num", num(p.condivisioni)));
+          r.appendChild(c); r.appendChild(el("td", "num", p.reazioni == null ? "–" : num(p.reazioni))); r.appendChild(el("td", "num", p.commenti == null ? "–" : num(p.commenti))); r.appendChild(el("td", "num", num(p.condivisioni)));
           tb2.appendChild(r);
         });
         t2.appendChild(tb2); tf.appendChild(t2);
       } else tf.appendChild(el("p", "vuoto", "Nessun post negli ultimi " + D.giorni + " giorni."));
       var rmi = riquadro("I post che piacciono di più", tf); rmi.classList.add("largo"); gf.appendChild(rmi);
+      if (!F.commenti || !F.reazioni) rmi.appendChild(el("p", "nota", "«–» = Facebook non lo dà con la chiave di adesso: per " + (F.reazioni ? "i commenti" : "reazioni e commenti") + " serve anche il permesso pages_read_user_content (si aggiunge quando si rifà la chiave, vedi sotto)."));
       // le statistiche di Meta (persone raggiunte, visualizzazioni) ci sono solo se la chiave ha il permesso read_insights
       var NOMI_META = { page_total_media_view_unique: "Persone che hanno visto i post", page_media_view: "Visualizzazioni dei post",
         page_impressions_unique: "Persone raggiunte", page_post_engagements: "Interazioni con i post",
@@ -424,7 +425,7 @@
         rme.appendChild(barre(chiaviMeta.map(function (k) { return { nome: NOMI_META[k] || k, visite: somma(F.meta[k], "valore", 30) }; }), "visite"));
         rme.appendChild(el("p", "nota", "Dati di Meta, ultimi " + D.giorni + " giorni."));
       } else {
-        rme.appendChild(el("p", "nota", "Facebook dà questi numeri (persone raggiunte, visualizzazioni) solo se la chiave della Pagina ha anche il permesso read_insights: si rifà la chiave come la prima volta, aggiungendo quel permesso nel Graph API Explorer, e si rilancia facebook_chiave.py."));
+        rme.appendChild(el("p", "nota", "Facebook dà questi numeri (persone raggiunte, visualizzazioni) solo se la chiave della Pagina ha anche il permesso read_insights: si rifà la chiave come la prima volta, aggiungendo nel Graph API Explorer i permessi read_insights e pages_read_user_content, e si rilancia facebook_chiave.py."));
       }
       gf.appendChild(rme);
       m.appendChild(gf);
