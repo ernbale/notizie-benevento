@@ -349,8 +349,9 @@
         });
         t.appendChild(tb); box.appendChild(t); return box;
       }
-      gg.appendChild(riquadro("Le ricerche che portano al sito", tabellaG(G.ricerche, "ricerca", "Ricerca")));
-      gg.appendChild(riquadro("Le pagine che escono su Google", tabellaG(G.pagine, "percorso", "Pagina", true)));
+      // tabelle larghe: con i titoli lunghi delle notizie, in mezza pagina i numeri venivano tagliati
+      gg.appendChild(riquadro("Le ricerche che portano al sito", tabellaG(G.ricerche, "ricerca", "Ricerca"), "largo"));
+      gg.appendChild(riquadro("Le pagine che escono su Google", tabellaG(G.pagine, "percorso", "Pagina", true), "largo"));
       var extra = el("div");
       extra.appendChild(barre((G.dispositivi || []).map(function (d) { return { nome: d.nome, visite: d.clic }; }), "visite"));
       var dn = [];
