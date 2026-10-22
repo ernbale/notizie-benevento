@@ -1,7 +1,126 @@
 {
- "aggiornato": "2026-10-22T19:09+02:00",
+ "aggiornato": "2026-10-22T20:10+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-opposizione-mozione-sfiducia-mastella",
+   "titolo": "Benevento, l'opposizione presenta la mozione di sfiducia contro il sindaco Mastella e chiama la città in piazza domenica",
+   "titolo_google": "Benevento, mozione di sfiducia contro Mastella: 24 punti",
+   "sintesi": "I consiglieri di opposizione di Benevento hanno presentato giovedì 22 ottobre una mozione di sfiducia contro il sindaco Clemente Mastella e la Giunta, con un dossier di 24 punti. Domenica 25 sera manifestazione in corso Garibaldi.",
+   "categoria": "politica",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-22T19:21:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/politica/441885/benevento-l-opposizione-presenta-la-mozione-di-sfiducia-per-il-sindaco-mastella.shtml"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/22/benevento-lopposizione-presenta-dossier-in-24-punti-e-chiede-la-fine-dellamministrazione-mastella/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/apb-attacco-a-mastella-una-mozione-di-sfiducia-contro-la-giunta/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/sfiduciamo-mastella-opposizione-chiama-piazza/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Giovedì 22 ottobre i gruppi di opposizione del Consiglio comunale di Benevento hanno presentato una mozione di sfiducia contro il sindaco Clemente Mastella e la sua Giunta. Lo hanno fatto in una conferenza stampa a Palazzo Mosti, la sede del Comune. Dietro l'iniziativa ci sono Pd, Città Aperta, Sinistra Italiana-Avs, Civici e Riformisti e Civico 22, riuniti nella lista Alternativa per Benevento (ApB). Hanno invitato a firmare anche gli altri consiglieri di minoranza e tre consiglieri di centrodestra: Gerardo Giorgione, Luigia Piccaluga e Rosetta De Stasio.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24",
+       "Anteprima24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "La mozione ha 24 punti. Gli ultimi riguardano l'inchiesta giudiziaria nata dall'arresto di un ex dirigente del Comune, in cui secondo Ottopagine ci sono 19 indagati, tra amministratori e dirigenti. L'opposizione dice di essere «garantista», cioè di aspettare le sentenze, ma contesta al Comune di non aver espresso condanna. Il capogruppo Luigi Diego Perifano ricorda che quattro dirigenti su sette del Comune sono coinvolti nelle indagini e parla di macchina comunale in «paralisi». NTR24 aggiunge che il dirigente dell'Urbanistica, arrivato in prestito dalla Provincia, ha deciso di lasciare l'incarico prima del 31 dicembre 2026.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Gli altri punti sono problemi amministrativi rimasti aperti: opere incompiute e ritardi sul Pnrr (i fondi europei), il centro storico che si svuota, strisce blu e parcheggi, il terminal degli autobus, la mensa scolastica, i cattivi odori, gli impianti di energia e l'acqua. Anteprima24 cita anche i premi di produzione riconosciuti ai dirigenti. Perifano ha respinto l'accusa di «odio» fatta dal sindaco: «Noi non odiamo nessuno».",
+      "fonti": [
+       "Ottopagine",
+       "Anteprima24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Domenica 25 ottobre, in serata, l'opposizione ha convocato una manifestazione aperta ai cittadini lungo corso Garibaldi, con partenza dalla Biblioteca provinciale e arrivo alla Prefettura. Anteprima24 scrive che altri sviluppi dell'inchiesta sono attesi a novembre. Il sindaco non ha ancora risposto alla mozione nelle fonti lette.",
+      "fonti": [
+       "Ottopagine",
+       "Cronache del Sannio",
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "La mozione ha 24 punti, è presentata dall'opposizione e domenica sera c'è una manifestazione in corso Garibaldi.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24",
+       "Anteprima24",
+       "Cronache del Sannio"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "Ottopagine elenca i gruppi Pd, Città Aperta, Sinistra Italiana-Avs, Civici e Riformisti e Civico 22; Cronache del Sannio nomina Pd, Avs, Civico22 e Psi, tutti sotto la sigla ApB.",
+      "fonti": [
+       "Ottopagine",
+       "Cronache del Sannio"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "Quando la mozione sarà depositata e discussa in Consiglio, e se avrà le firme necessarie.",
+     "Se i consiglieri di maggioranza o di centrodestra la sosterranno.",
+     "Come risponderà il sindaco Mastella."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Benevento. L'opposizione presenta la mozione di sfiducia per il sindaco Mastella",
+      "url": "https://www.ottopagine.it/bn/politica/441885/benevento-l-opposizione-presenta-la-mozione-di-sfiducia-per-il-sindaco-mastella.shtml",
+      "data": "22 ott, 19:21"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Benevento, l’opposizione presenta dossier in 24 punti e chiede la fine dell’amministrazione Mastella",
+      "url": "https://www.ntr24.tv/2026/10/22/benevento-lopposizione-presenta-dossier-in-24-punti-e-chiede-la-fine-dellamministrazione-mastella/",
+      "data": "22 ott, 17:43"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "ApB, attacco a Mastella: una mozione di sfiducia contro la Giunta",
+      "url": "https://www.anteprima24.it/benevento/apb-attacco-a-mastella-una-mozione-di-sfiducia-contro-la-giunta/",
+      "data": "22 ott, 17:59"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "“Sfiduciamo Mastella”: l’opposizione chiama la città in piazza",
+      "url": "https://www.cronachedelsannio.it/sannionews24/sfiduciamo-mastella-opposizione-chiama-piazza/",
+      "data": "22 ott, 17:22"
+     }
+    ]
+   }
+  },
   {
    "id": "benevento-5-active-network-23-ottobre-palatedeschi",
    "titolo": "Calcio a 5, Serie A: il Benevento 5 ospita l'Active Network venerdì 23 ottobre al PalaTedeschi",
@@ -5246,12 +5365,12 @@
    "id": "tir-appia-telesina",
    "titolo": "Caro gasolio, tir fermi sull'Appia a Tufara Valle e a Castel del Lago, blocchi anche sulla Telesina a San Salvatore Telesino",
    "titolo_google": "Tir fermi sull'Appia e sulla Telesina per il caro gasolio",
-   "sintesi": "Dal 19 ottobre gli autotrasportatori protestano contro il prezzo del gasolio e i blocchi continuano per la seconda notte: tre presìdi a Castel del Lago, a Tufara Valle sull'Appia e a San Salvatore Telesino sulla Telesina. Da giovedì 22 si aggiungono gli agricoltori. Giovedì 22 il Governo ha approvato il decreto «Aiuti» e Meloni ha detto che le associazioni hanno revocato i fermi, mentre in alcune zone i blocchi continuano.",
+   "sintesi": "Dal 19 ottobre gli autotrasportatori protestano contro il prezzo del gasolio e i blocchi continuano per la seconda notte: tre presìdi a Castel del Lago, a Tufara Valle sull'Appia e a San Salvatore Telesino sulla Telesina. Da giovedì 22 si aggiungono gli agricoltori. Giovedì 22 il Governo ha approvato il decreto «Aiuti» e Meloni ha detto che le associazioni hanno revocato i fermi, mentre in alcune zone i blocchi continuano. In serata la Prefettura di Avellino ha comunicato la rimozione dei blocchi, compresi i piazzali dell'A16 nel Sannio.",
    "categoria": "strade",
    "zona": "provincia",
    "immagine": "camion",
    "luogo": "Tufara Valle",
-   "pubblicato": "2026-10-22T15:49:00+02:00",
+   "pubblicato": "2026-10-22T19:35:00+02:00",
    "stato": "confermata",
    "fonti": [
     {
@@ -5325,16 +5444,19 @@
     {
      "nome": "BeneventoNews24 (decreto)",
      "url": "https://www.beneventonews24.it/2026/10/22/il-cdm-approva-il-decreto-sugli-aiuti-continuano-i-blocchi-dei-tir-al-sud-fermi-anche-i-pescherecci/"
+    },
+    {
+     "nome": "Il Caudino (Prefettura di Avellino)",
+     "url": "https://ilcaudino.it/la-prefettura-di-avellino-annuncia-la-rimozione-dei-blocchi-stradali-uid-5/"
     }
    ],
    "articolo": {
     "aggiornamento": {
-     "testo": "Giovedì 22 ottobre la Croce Rossa Campania ha chiesto alla Regione un tavolo urgente per rifornire ambulanze e mezzi sanitari, e il sindaco Mastella ha incontrato i camionisti al casello dell'A16.",
+     "testo": "Giovedì 22 ottobre in serata la Prefettura di Avellino ha comunicato che i blocchi dell'autotrasporto sono stati rimossi e che nel Sannio risultano liberati i piazzali dell'A16; restano problemi nella distribuzione del carburante.",
      "fonti": [
-      "NTR24 (Croce Rossa)",
-      "NTR24 (Mastella)"
+      "Il Caudino (Prefettura di Avellino)"
      ],
-     "quando": "2026-10-22T17:13+02:00"
+     "quando": "2026-10-22T20:10+02:00"
     },
     "aggiornato": "2026-10-20T09:25:00+02:00",
     "cronologia": [
@@ -5469,6 +5591,13 @@
        "NTR24 (Mastella)",
        "NTR24 (Croce Rossa)"
       ]
+     },
+     {
+      "data": "22 ottobre, sera",
+      "fatto": "La Prefettura di Avellino annuncia la rimozione dei blocchi: liberati anche i piazzali dell'A16 nel Sannio, traffico delle merci in graduale ripresa.",
+      "fonti": [
+       "Il Caudino (Prefettura di Avellino)"
+      ]
      }
     ],
     "concordano": [
@@ -5525,7 +5654,7 @@
     "non_si_sa": [
      "Quanto durerà la protesta: gli autotrasportatori dicono che andranno avanti, nessuno indica una data di fine.",
      "Cosa è uscito dal tavolo di martedì 20 a Milano con il ministro Salvini.",
-     "Se le misure del decreto bastano a far finire i presìdi nel Sannio."
+     "Se i presìdi sull'Appia (Tufara Valle) e sulla Telesina (San Salvatore Telesino) sono stati tolti anche loro: il comunicato della Prefettura di Avellino parla dei piazzali dell'A16 e degli svincoli irpini."
     ],
     "fonti": [
      {
@@ -5689,9 +5818,29 @@
       "titolo": "Protesta autotrasportatori, l’allarme della Croce Rossa Campania: «Subito un tavolo regionale per garantire i rifornimenti»",
       "url": "https://www.ntr24.tv/2026/10/22/protesta-autotrasportatori-lallarme-della-croce-rossa-campania-subito-un-tavolo-regionale-per-garantire-i-rifornimenti/",
       "data": "22 ott, 16:56"
+     },
+     {
+      "nome": "Il Caudino (Prefettura di Avellino)",
+      "titolo": "La Prefettura di Avellino annuncia la rimozione dei blocchi stradali",
+      "url": "https://ilcaudino.it/la-prefettura-di-avellino-annuncia-la-rimozione-dei-blocchi-stradali-uid-5/",
+      "data": "22 ott, 19:35"
      }
     ],
     "racconto": [
+     {
+      "testo": "Giovedì sera, 22 ottobre, la Prefettura di Avellino ha comunicato che i blocchi dell'autotrasporto sono stati rimossi: agli svincoli autostradali irpini la circolazione è regolare e, nel Sannio, risultano liberati i piazzali dell'A16. Le merci hanno ripreso a muoversi poco alla volta. Il comunicato, riportato da Il Caudino, non parla dei presìdi sull'Appia e sulla Telesina, che le altre fonti di questa pagina davano ancora attivi nel corso della giornata.",
+      "fonti": [
+       "Il Caudino (Prefettura di Avellino)"
+      ],
+      "giorno": "2026-10-22"
+     },
+     {
+      "testo": "Sul carburante la Prefettura dice che restano problemi nella rete dei distributori: per rifornire i mezzi di soccorso, i servizi pubblici essenziali e i cittadini si sta prendendo carburante anche da depositi fuori dalla Campania. Il prefetto di Avellino, Franca Fico, ha incontrato su loro richiesta una delegazione di imprese irpine di autotrasporto, che ha consegnato un documento con le richieste della categoria: sono state inoltrate ai ministeri competenti.",
+      "fonti": [
+       "Il Caudino (Prefettura di Avellino)"
+      ],
+      "giorno": "2026-10-22"
+     },
      {
       "testo": "Dopo il Consiglio dei ministri la premier Giorgia Meloni ha detto che il governo ha firmato un accordo con le associazioni dell'autotrasporto e che quelle associazioni hanno revocato i fermi e le manifestazioni. Ha aggiunto che «in alcune zone» pochi soggetti continuano a bloccare le strade, e che il governo userà tutti gli strumenti della legge, comprese le norme che hanno reso reato il blocco stradale. Il giornale non dice quali zone, né se il Sannio è tra queste: i presìdi sanniti, intanto, risultano ancora in piedi nelle altre fonti.",
       "fonti": [
@@ -7675,6 +7824,13 @@
       "NTR24 (scuolabus)",
       "Regione Campania (13 milioni)"
      ]
+    },
+    {
+     "data": "22 ottobre, sera",
+     "fatto": "La Prefettura di Avellino comunica la rimozione dei blocchi dell'autotrasporto, compresi i piazzali dell'A16 nel Sannio; restano problemi nella distribuzione del carburante.",
+     "fonti": [
+      "Il Caudino (Prefettura di Avellino)"
+     ]
     }
    ],
    "non_si_sa": [
@@ -7904,6 +8060,12 @@
      "titolo": "22/10/2026 - Comunicato n. 668 – Agricoltura: la Regione Campania incontra le organizzazioni del comparto. Sul caro carburanti, individuati 13 milioni di euro per i ristori alle aziende.",
      "url": "https://www.regione.campania.it/comunicazione/area-stampa/comunicati/22102026-comunicato-n-668-agricoltura-regione-campania-incontra-organizzazioni-comparto-caro-carburanti-individuati-13-milioni-euro-ristori-alle-aziende",
      "data": "22 ott"
+    },
+    {
+     "nome": "Il Caudino (Prefettura di Avellino)",
+     "titolo": "La Prefettura di Avellino annuncia la rimozione dei blocchi stradali",
+     "url": "https://ilcaudino.it/la-prefettura-di-avellino-annuncia-la-rimozione-dei-blocchi-stradali-uid-5/",
+     "data": "22 ott, 19:35"
     }
    ],
    "nota": "Correzione: nella versione delle 8:45 scrivevamo che il ministero dei Trasporti aveva convocato le associazioni per il 27 ottobre, come riportava Il Post il 16 ottobre. ANSA (17 ottobre) e Il Sole 24 Ore (18 ottobre) riportano che il ministro Salvini ha anticipato il tavolo a oggi, martedì 20 ottobre, in Prefettura a Milano. Abbiamo corretto sommario, «In breve», sezioni, domande e cronologia."
