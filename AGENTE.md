@@ -97,11 +97,11 @@ Lavora in parallelo (6-8 letture insieme). Per ogni fonte tieni nota: letta / no
   gialla, Orange = arancione, Red = rossa), tipo (Rain = pioggia, Thunderstorm = temporali, Wind = vento, Snow = neve…)
   e orari **in UTC** (convertili in ora italiana). Vale per tutta la regione: vedi le regole delle Allerte qui sotto.
 
-**Fonti lette da casa (ANAS, ASL, TV7).** Questi tre siti dal cloud non si aprono: ANAS e TV7 rifiutano le
+**Fonti lette da casa (ANAS, ASL, TV7, Comuni).** ANAS, ASL e TV7 dal cloud non si aprono: ANAS e TV7 rifiutano le
 connessioni dall'estero, l'ASL ha il certificato incompleto. Non provare ad aprirli e non segnarli «non
 raggiungibili» per questo: li scarica ogni 30 minuti un computer di casa nell'archivio privato
 `ernbale/notizie-benevento-fonti`, che trovi già clonato accanto a questo (`../notizie-benevento-fonti/`; se non c'è,
-cercalo con `ls /home/user`). File `anas.json`, `asl.json`, `tv7.json`: `controllato` = ultimo tentativo, `esito`,
+cercalo con `ls /home/user`). File `anas.json`, `asl.json`, `tv7.json`, `comuni.json`: `controllato` = ultimo tentativo, `esito`,
 `voci` con titolo, `link` originale (è quello da citare tra le fonti), `data` e `testo` intero, che vale come
 articolo aperto. Nel registro delle fonti scrivi `letta (da casa, controllato HH:MM)`. Se `controllato` è più
 vecchio di 3 ore o `esito` dice «non raggiungibile», scrivi `non raggiungibile (copia di casa ferma dalle HH:MM)`;
@@ -116,11 +116,21 @@ ilcaudino.it/feed/ (Valle Caudina: tieni solo i Comuni della provincia di Beneve
 Martino Valle Caudina e gli altri irpini). Il Sannio Quotidiano esce tutto tra le 7:30 e le 7:50 ed è spesso la
 seconda fonte dei fatti del giorno prima: al giro delle 8 controlla i fatti di ieri rimasti con una sola fonte.
 
-**Comuni senza feed (a ogni giro):** pagine notizie di
-`www.comune.<nome>.bn.it` per montesarchio, santagatadegoti, sangiorgiodelsannio, airola, sanbartolomeoingaldo (`/new/`),
-morcone, cerretosannita, guardiasanframondi, solopaca, sansalvatoretelesino, apice, ceppaloni, paduli, pietrelcina,
-ponte, vitulano, cusanomutri, faicchio, amorosi. Cerca avvisi su strade, scuole, acqua, ordinanze, e soprattutto
-**chiusure** di scuole, parchi e ville comunali, cimiteri, impianti sportivi, mercati per allerta o maltempo.
+**I siti dei Comuni (a ogni giro): file `comuni.json` delle fonti lette da casa.** Il computer di casa legge ogni 30
+minuti i siti di **tutti i 78 Comuni** della provincia e ci mette solo gli avvisi e le notizie **nuovi**, col testo:
+`comune`, `titolo`, `link` (da citare), `primo_visto` (quando è comparso sul sito), `data_avviso` (la data scritta
+nella pagina) e `testo`, che vale come avviso aperto. Leggi tutte le voci con `primo_visto` nelle ultime 3 ore (e
+quelle che non trovi già in notizie.json). Cerca avvisi su strade, scuole, acqua, ordinanze, e soprattutto
+**chiusure** di scuole, parchi e ville comunali, cimiteri, impianti sportivi, mercati per allerta o maltempo. Un
+avviso del Comune è una fonte ufficiale (regola 2): basta da solo. Nel registro delle fonti scrivi una riga
+`Comuni (da casa, controllato HH:MM) | letta | N avvisi nuovi`.
+- `comuni_non_letti` dice quali siti non si leggono da casa (oggi Airola, Bonea, Bucciano, Pannarano, che mostrano gli
+  avvisi solo nel browser, e Montefalcone di Val Fortore, col sito rotto): per loro fai una ricerca mirata se c'è
+  allerta o un fatto che li riguarda.
+- **Se `comuni.json` è fermo** (`controllato` più vecchio di 3 ore) o `esito` dice «non raggiungibile», leggi a mano le
+  pagine notizie di `www.comune.<nome>.bn.it` per montesarchio, santagatadegoti, sangiorgiodelsannio, teleseterme,
+  sanbartolomeoingaldo (`/new/`), morcone, cerretosannita, guardiasanframondi, solopaca, sansalvatoretelesino, apice,
+  ceppaloni, paduli, pietrelcina, ponte, vitulano, cusanomutri, faicchio, amorosi, con una riga per Comune nel registro.
 
 **Ricerche mirate (almeno 4 per giro):** fatti trovati in un solo giornale (per cercare la seconda fonte),
 «Benevento oggi», «Sannio incidente», «strada chiusa provincia Benevento».
