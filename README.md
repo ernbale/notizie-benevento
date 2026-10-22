@@ -21,7 +21,7 @@ Sito: https://notiziebenevento.it (notiziebenevento.com rimanda qui)
   i dati sono cifrati con la parola d'ordine (segreto `STATISTICHE_PAROLA`), non vanno nel repository.
 - `strumenti/facebook.py`: dopo ogni pubblicazione mette sulla Pagina Facebook una notizia nuova (una all'ora,
   dalle 7 alle 22), con la chiave nel segreto `FB_PAGE_TOKEN`; senza chiave non fa niente.
-- L'agente (routine Claude ogni 2 ore, 6-22) pubblica con git, in un solo commit; GitHub Actions ripubblica il sito.
+- L'agente (routine Claude ogni ora, 6-22) pubblica con git, in un solo commit; GitHub Actions ripubblica il sito.
 - `AGENTE.md`: le istruzioni dell'agente che aggiorna il sito.
 
 Lo storico di GitHub conserva in più ogni versione di ogni file.
