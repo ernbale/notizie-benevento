@@ -550,6 +550,10 @@ def html_chi_siamo():
           "Regione Campania e della Protezione civile.</p>")
     h += ('<h3>Archivio</h3><p>Nessuna notizia viene cancellata: quando esce dalla prima pagina resta '
           'nell\'<a href="/#archivio">archivio</a>, allo stesso indirizzo.</p>')
+    h += ("<h3>Mandaci i comunicati</h3><p>Comuni, enti, scuole, associazioni e società sportive del Sannio possono "
+          'mandare i loro comunicati a <a href="mailto:comunicati@notiziebenevento.it">comunicati@notiziebenevento.it</a>, '
+          "meglio con il testo scritto nella mail. Li leggiamo a ogni aggiornamento del sito: se sono notizie della "
+          "provincia e si possono verificare, le pubblichiamo citando chi le firma.</p>")
     h += f"<h3>Contatti</h3><p>Per segnalare un errore o una notizia che manca, scrivici un messaggio sulla {fb}.</p>"
     h += ("<h3>Privacy</h3><p>Le visite si contano in forma anonima, senza cookie. Non serve nessuna registrazione.</p>")
     return f'<article class="appro">{h}</article>'
