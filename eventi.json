@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-22T13:30+02:00",
+ "aggiornato": "2026-10-22T14:13+02:00",
  "eventi": [
   {
    "id": "mostra-cosmogonie-meact-torrecuso-2026",
@@ -273,6 +273,33 @@
     }
    ],
    "foto": "olio"
+  },
+  {
+   "id": "omaggio-angelo-raffaele-scetta-telese-2026",
+   "titolo": "Omaggio al poeta Angelo Raffaele Scetta",
+   "tipo": "altro",
+   "inizio": "2026-10-28",
+   "ora": "18:30",
+   "luogo": "Sede della Fondazione Gerardino Romano, piazzetta G. Romano 15",
+   "comune": "Telese Terme",
+   "zona": "telesina",
+   "breve": "Serata di testimonianze e letture in ricordo del poeta sannita Angelo Raffaele Scetta, organizzata dalla Fondazione Gerardino Romano.",
+   "descrizione": [
+    {
+     "testo": "La Fondazione Gerardino Romano ETS dedica un incontro alla memoria di Angelo Raffaele Scetta (1936-2025), poeta e insegnante sannita, a cui nel 2019 la Fondazione aveva dato il titolo di «Buon Poeta». Felice Casucci, Gioconda Fappiano e Loredana Fraenza proporranno una serie di testimonianze letterarie pensata con lui.",
+     "fonti": [
+      "InfoSannio"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "nome": "InfoSannio",
+     "titolo": "Nel ricordo di Angelo Raffaele Scetta: la Fondazione Gerardino Romano celebra il grande poeta sannita",
+     "url": "https://www.infosannionews.it/cultura/2026/nel-ricordo-di-angelo-raffaele-scetta-la-fondazione-gerardino-romano-celebra-il-grande-poeta-sannita.html",
+     "data": "22 ott"
+    }
+   ]
   },
   {
    "id": "sagra-castagna-vitulano-2026",
