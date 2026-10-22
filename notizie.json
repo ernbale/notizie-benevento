@@ -1,7 +1,111 @@
 {
- "aggiornato": "2026-10-22T08:11+02:00",
+ "aggiornato": "2026-10-22T09:11+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "eav-carburante-bus-sostitutivi-napoli-benevento-sospesi-22-ottobre",
+   "titolo": "Valle Caudina, EAV sospende dal 22 ottobre i bus che sostituiscono il treno Napoli-Benevento per la mancanza di gasolio",
+   "titolo_google": "Valle Caudina, EAV ferma i bus sostitutivi del treno",
+   "sintesi": "EAV, l'azienda dei treni e dei bus della Campania, ha annunciato che da giovedì 22 ottobre sospende i servizi sostitutivi ferroviari fatti da D'Agostino Tour. Il Caudino scrive che tra questi c'è il bus che sostituisce il treno Napoli–Benevento per la Valle Caudina.",
+   "categoria": "altro",
+   "zona": "caudina",
+   "immagine": "treno",
+   "luogo": "Valle Caudina",
+   "pubblicato": "2026-10-21T15:27:00+02:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "EAV",
+     "url": "https://www.eavsrl.it/comunicato-stampa-eav-difficolta-di-rifornimento-carburante-aggiornamento-servizi-eav-2/"
+    },
+    {
+     "nome": "Il Caudino",
+     "url": "https://ilcaudino.it/valle-caudina-domani-e-sospeso-il-servizio-sostitutivo-eav-napoli-benevento-uid-5/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Da giovedì 22 ottobre EAV, l'Ente Autonomo Volturno che gestisce treni e bus in Campania, sospende tutti i servizi sostitutivi ferroviari fatti dalla società D'Agostino Tour, cioè i bus che prendono il posto dei treni quando la linea è ferma. Lo scrive EAV nel comunicato stampa del 20 ottobre.",
+      "fonti": [
+       "EAV"
+      ]
+     },
+     {
+      "testo": "Secondo Il Caudino la sospensione tocca anche il bus sostitutivo della linea Napoli–Benevento, che serve le fermate della Valle Caudina. Il giornale lo ricava dal comunicato, dove non si nomina Benevento, e dal fatto che il servizio sul tratto sarebbe svolto proprio da D'Agostino Tour.",
+      "fonti": [
+       "EAV",
+       "Il Caudino"
+      ]
+     },
+     {
+      "testo": "Il motivo è la mancanza di gasolio: i distributori non consegnano i rifornimenti mentre gli autotrasportatori protestano. EAV dice che dal 21 ottobre alcuni bus sono ridotti o soppressi e che dal 24 ottobre, se le forniture non tornano regolari, potrebbero fermarsi anche alcuni servizi ferroviari. Nel comunicato la lista delle sospensioni cresce giorno dopo giorno fino al 27 ottobre, con linee soprattutto nell'area di Napoli e nelle isole.",
+      "fonti": [
+       "EAV"
+      ]
+     },
+     {
+      "testo": "EAV segue la situazione e annuncia eventuali cambiamenti o il ritorno alla normalità sul sito www.eavsrl.it.",
+      "fonti": [
+       "EAV"
+      ]
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "20 ottobre",
+      "fatto": "EAV pubblica il comunicato con il calendario delle sospensioni per la mancanza di gasolio.",
+      "fonti": [
+       "EAV"
+      ]
+     },
+     {
+      "data": "22 ottobre",
+      "fatto": "Si fermano tutti i servizi sostitutivi ferroviari di D'Agostino Tour.",
+      "fonti": [
+       "EAV"
+      ]
+     },
+     {
+      "data": "24 ottobre",
+      "fatto": "Data da cui, senza nuove forniture, potrebbero fermarsi anche alcuni servizi ferroviari.",
+      "fonti": [
+       "EAV"
+      ]
+     }
+    ],
+    "concordano": [],
+    "divergono": [
+     {
+      "testo": "Il comunicato EAV non nomina la linea Napoli–Benevento: il collegamento con la Valle Caudina è un'interpretazione de Il Caudino. Vale il testo di EAV.",
+      "fonti": [
+       "EAV",
+       "Il Caudino"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "Se i treni Napoli–Benevento, ora in parte sostituiti da bus, saranno toccati dal 24 ottobre.",
+     "Fino a quando resterà sospeso il servizio dei bus sostitutivi."
+    ],
+    "fonti": [
+     {
+      "nome": "EAV",
+      "titolo": "COMUNICATO STAMPA EAV: DIFFICOLTA’ DI RIFORNIMENTO CARBURANTE – AGGIORNAMENTO SERVIZI EAV",
+      "url": "https://www.eavsrl.it/comunicato-stampa-eav-difficolta-di-rifornimento-carburante-aggiornamento-servizi-eav-2/",
+      "data": "20 ott"
+     },
+     {
+      "nome": "Il Caudino",
+      "titolo": "Valle Caudina: domani è sospeso il servizio sostitutivo Eav Napoli-Benevento",
+      "url": "https://ilcaudino.it/valle-caudina-domani-e-sospeso-il-servizio-sostitutivo-eav-napoli-benevento-uid-5/",
+      "data": "21 ott, 15:27"
+     }
+    ]
+   },
+   "foto": "treno"
+  },
   {
    "id": "benevento-prefettura-protesta-tir-carburante-farmaci-scorte",
    "titolo": "Benevento, protesta dei tir: la Prefettura segue i rifornimenti di carburante e cibo con scorte delle forze di polizia",
@@ -530,13 +634,17 @@
    "immagine": "scuola",
    "luogo": "Montesarchio",
    "pubblicato": "2026-10-21",
-   "stato": "una_fonte",
+   "stato": "confermata",
    "rilevante": false,
    "in_vigore_fino": "2026-10-22",
    "fonti": [
     {
      "nome": "NTR24",
      "url": "https://www.ntr24.tv/2026/10/21/montesarchio-topi-nella-scuola-ugo-foscolo-giovedi-plesso-chiuso-per-la-sanificazione/"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/22/topi-in-una-scuola-di-montesarchio-disposta-la-chiusura/"
     }
    ],
    "articolo": {
@@ -544,18 +652,28 @@
      {
       "testo": "Il plesso della scuola secondaria di primo grado «Ugo Foscolo» di Montesarchio resta chiuso giovedì 22 ottobre per una sanificazione. Lo ha deciso il sindaco Carmelo Sandomenico con un'ordinanza.",
       "fonti": [
-       "NTR24"
+       "NTR24",
+       "Il Sannio Quotidiano"
       ]
      },
      {
       "testo": "La chiusura è partita dalla segnalazione della dirigente scolastica dell'Istituto comprensivo «Ilaria Alpi», che ha riferito della presenza di roditori e di escrementi riconducibili ai topi dentro la struttura. Il Comune ha ritenuto necessario chiudere il plesso per ripulire i locali interessati e l'area intorno.",
       "fonti": [
-       "NTR24"
+       "NTR24",
+       "Il Sannio Quotidiano"
       ]
      }
     ],
     "cronologia": [],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "Chiusura del plesso «Ugo Foscolo» giovedì 22 ottobre per la presenza di topi, su segnalazione della dirigente dell'Istituto «Ilaria Alpi».",
+      "fonti": [
+       "NTR24",
+       "Il Sannio Quotidiano"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [
      "Se le lezioni riprendono venerdì 23 ottobre: la notizia parla solo della chiusura di giovedì.",
@@ -567,6 +685,12 @@
       "titolo": "Montesarchio, topi nella scuola “Ugo Foscolo”: giovedì plesso chiuso per la sanificazione",
       "url": "https://www.ntr24.tv/2026/10/21/montesarchio-topi-nella-scuola-ugo-foscolo-giovedi-plesso-chiuso-per-la-sanificazione/",
       "data": "21 ott"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Topi in una scuola di Montesarchio, disposta la chiusura",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/22/topi-in-una-scuola-di-montesarchio-disposta-la-chiusura/",
+      "data": "22 ott"
      }
     ]
    },
@@ -595,16 +719,21 @@
     {
      "nome": "Anteprima24",
      "url": "https://www.anteprima24.it/benevento/centraline-telefono-elettricita-incidente/"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/22/finisce-con-lauto-contro-un-muretto-ferita-una-62enne-di-apice/"
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Nel primo pomeriggio di mercoledì 21 ottobre una donna di 62 anni è finita fuori strada con la sua Citroën C1 in via Capodimonte, a Benevento, lungo la strada provinciale che collega Apice a Benevento. Stava andando verso Benevento.",
+      "testo": "Nel primo pomeriggio di mercoledì 21 ottobre una donna di 62 anni è finita fuori strada con la sua Citroën C1 in via Capodimonte, a Benevento, lungo la strada provinciale che collega Apice a Benevento. Stava andando verso Benevento. Il Sannio Quotidiano precisa che la donna abita ad Apice e che l'auto è finita contro un muretto, con la parte anteriore distrutta.",
       "fonti": [
        "NTR24",
        "BeneventoNews24",
-       "Anteprima24"
+       "Anteprima24",
+       "Il Sannio Quotidiano"
       ]
      },
      {
@@ -657,6 +786,12 @@
       "titolo": "Auto abbatte le centraline telefoniche ed elettriche: ferita una donna",
       "url": "https://www.anteprima24.it/benevento/centraline-telefono-elettricita-incidente/",
       "data": "21 ott"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Finisce con l’auto contro un muretto, ferita una 62enne di Apice",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/22/finisce-con-lauto-contro-un-muretto-ferita-una-62enne-di-apice/",
+      "data": "22 ott"
      }
     ]
    }
@@ -688,6 +823,10 @@
     {
      "nome": "Ottopagine",
      "url": "https://www.ottopagine.it/bn/cronaca/441724/scontro-egiziani-italiani-per-la-droga-poi-perquisizione-e-arresto-di-un-20enne.shtml"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/22/altro-arresto-per-droga-a-montesarchio-uomo-finisce-ai-domiciliari/"
     }
    ],
    "articolo": {
@@ -697,7 +836,8 @@
       "fonti": [
        "NTR24",
        "Cronache del Sannio",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Il Sannio Quotidiano"
       ]
      },
      {
@@ -768,6 +908,12 @@
       "titolo": "Scontro egiziani-italiani per la droga, poi perquisizione e arresto di un 20enne",
       "url": "https://www.ottopagine.it/bn/cronaca/441724/scontro-egiziani-italiani-per-la-droga-poi-perquisizione-e-arresto-di-un-20enne.shtml",
       "data": "21 ott"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Altro arresto per droga a Montesarchio: uomo finisce ai domiciliari",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/22/altro-arresto-per-droga-a-montesarchio-uomo-finisce-ai-domiciliari/",
+      "data": "22 ott"
      }
     ]
    }
@@ -2187,7 +2333,7 @@
    "luogo": "Sannio",
    "pubblicato": "2026-10-21T16:13:00+02:00",
    "stato": "ufficiale",
-   "rilevante": true,
+   "rilevante": false,
    "in_vigore_fino": "2026-10-21",
    "fonti": [
     {
@@ -3374,15 +3520,19 @@
     {
      "nome": "TV7 Benevento",
      "url": "https://www.tvsette.net/caro-carburanti-protesta-nel-sannio-cittadini-in-strada-sulla-statale-87-video/"
+    },
+    {
+     "nome": "LabTV (22/10)",
+     "url": "https://www.labtv.net/attualita/2026/10/22/protesta-tir-stretta-del-viminale-ma-nel-sannio-i-presidi-restano-tir-fermi-sullappia/"
     }
    ],
    "articolo": {
     "aggiornamento": {
-     "testo": "Giovedì 22 ottobre, secondo Il Mattino, i blocchi nel Sannio proseguono senza sosta: restano i presìdi al casello di Benevento sull'A16, sull'Appia a Tufara e sulla Telesina a San Salvatore Telesino. Per qualche ora si è aggiunto un presidio a Paolisi, vicino alla rotonda.",
+     "testo": "Giovedì 22 ottobre, secondo LabTV, i tir restano fermi sull'Appia tra Tufara Valle e Castel del Lago mentre il Viminale stringe i controlli al Sud: in Campania sono stati scortati 500 camion. Nel pomeriggio il Consiglio dei ministri esamina un decreto con misure per autotrasporto e agricoltura.",
      "fonti": [
-      "Il Mattino (22/10)"
+      "LabTV (22/10)"
      ],
-     "quando": "2026-10-22T07:22+02:00"
+     "quando": "2026-10-22T09:11+02:00"
     },
     "aggiornato": "2026-10-20T09:25:00+02:00",
     "cronologia": [
@@ -3478,6 +3628,13 @@
       "fatto": "I presìdi restano a Castel del Lago, Tufara e San Salvatore Telesino; per qualche ora anche a Paolisi, vicino alla rotonda.",
       "fonti": [
        "Il Mattino (22/10)"
+      ]
+     },
+     {
+      "data": "22 ottobre",
+      "fatto": "Il Viminale intensifica i controlli al Sud (in Campania 500 tir scortati); in Sicilia e Calabria i presidi sono stati sospesi, nel Sannio restano. Convocato il Consiglio dei ministri su un decreto per autotrasporto e agricoltura.",
+      "fonti": [
+       "LabTV (22/10)"
       ]
      }
     ],
@@ -3619,6 +3776,12 @@
       "nome": "Il Mattino (22/10)",
       "titolo": "Protesta degli autotrasportatori, nel Sannio restano i blocchi: ,mediazioni per i servizi",
       "url": "https://www.ilmattino.it/benevento/protesta_degli_autotrasportatori_nel_sannio_restano_i_blocchi_mediazioni_per_i_servizi-9839928.html",
+      "data": "22 ott"
+     },
+     {
+      "nome": "LabTV (22/10)",
+      "titolo": "Protesta Tir, stretta del Viminale ma nel Sannio i presidi restano: tir fermi sull’Appia",
+      "url": "https://www.labtv.net/attualita/2026/10/22/protesta-tir-stretta-del-viminale-ma-nel-sannio-i-presidi-restano-tir-fermi-sullappia/",
       "data": "22 ott"
      }
     ],
