@@ -118,6 +118,16 @@
   .avvisi-box li a { color: var(--nero); text-decoration: none; }
   .avvisi-box li a:hover { text-decoration: underline; }
   .avvisi-box .dove { display: block; font: 500 12px var(--sans); color: var(--rosso); margin-top: 3px; }
+  /* «Seguici»: come i pulsanti Ascolta e Condividi, il colore del marchio solo nel logo */
+  .segui { margin: 0 0 18px; }
+  .segui p { margin: 0 0 10px; font: 500 14px/1.4 var(--sans); color: var(--grigio); }
+  .segui .canali { display: flex; flex-wrap: wrap; gap: 8px; }
+  .segui .canali a { display: inline-flex; align-items: center; gap: 7px; font: 600 14px var(--sans); background: #fff; color: var(--nero);
+                     border: 1px solid var(--nero); border-radius: 20px; padding: 6px 15px 6px 11px; text-decoration: none; }
+  .segui .canali a:hover { background: var(--nero); color: #fff; }
+  .segui .canali svg { width: 18px; height: 18px; flex: none; }
+  .segui .canali .telegram svg { fill: #229ed9; }
+  .segui .canali .facebook svg { fill: #1877f2; }
   .sport-box .tutto { display: inline-block; margin-top: 8px; font: 600 13px var(--sans); color: var(--blu); }
   /* pagina Sport: le discipline */
   .discipline { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 16px; }
@@ -472,7 +482,7 @@
     <p>Nessuna notizia viene cancellata: quando esce dalla prima pagina resta nell'<a href="#archivio">archivio</a>, allo stesso indirizzo.</p>
     <p class="sezioni-link">Sezioni: <a href="/sezione/strade/">Strade</a> · <a href="/sezione/cronaca/">Cronaca</a> · <a href="/sezione/politica/">Politica</a> · <a href="/sezione/sport/">Sport</a> · <a href="/sezione/eventi/">Eventi</a> · <a href="/sezione/allerte/">Allerte</a> · <a href="/sezione/altro/">Altro</a> · <a href="/meteo.html">Meteo Benevento</a><br>
       Zone: <a href="/zona/benevento/">Benevento città</a> · <a href="/zona/valle-telesina/">Valle Telesina</a> · <a href="/zona/valle-caudina/">Valle Caudina</a> · <a href="/zona/fortore/">Fortore e Tammaro</a> · <a href="/zona/altri-comuni/">Altri comuni</a> · <a href="/feed.xml">Feed RSS</a></p>
-    <p class="sezioni-link"><a href="/chi-siamo/">Chi siamo</a> · Seguici su <a href="https://www.facebook.com/notiziebenevento" target="_blank" rel="noopener">Facebook</a></p>
+    <p class="sezioni-link"><a href="/chi-siamo/">Chi siamo</a> · Seguici su <a href="https://t.me/notiziebenevento" target="_blank" rel="noopener">Telegram</a> e <a href="https://www.facebook.com/notiziebenevento" target="_blank" rel="noopener">Facebook</a></p>
   </footer>
 </div>
 
@@ -950,6 +960,30 @@
     return nav;
   }
 
+  // Dove seguire le notizie: in fondo agli articoli e nella colonna di destra
+  // loghi: Simple Icons (CC0), i colori sono quelli dei due marchi
+  var CANALI = [
+    ["telegram", "Telegram", "https://t.me/notiziebenevento", "M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"],
+    ["facebook", "Facebook", "https://www.facebook.com/notiziebenevento", "M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"]];
+  function riquadroSegui(frase, inArticolo) {
+    var b = el("section", "segui", [el("h3", inArticolo ? "" : "titolo-col", ["Seguici"]), el("p", "", [frase])]);
+    var riga = el("div", "canali", []);
+    b.appendChild(riga);
+    CANALI.forEach(function (c) {
+      var a = linkSicuro(c[2], "");
+      a.className = c[0];
+      a.setAttribute("aria-label", c[1] + " di Notizie Benevento");
+      var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg"), pa = document.createElementNS("http://www.w3.org/2000/svg", "path");
+      svg.setAttribute("viewBox", "0 0 24 24"); svg.setAttribute("aria-hidden", "true");
+      pa.setAttribute("d", c[3]);
+      svg.appendChild(pa);
+      a.appendChild(svg);
+      a.appendChild(testo(c[1]));
+      riga.appendChild(a);
+    });
+    return b;
+  }
+
   function riquadroAvvisi(avvisi) {
     var sez = el("section", "avvisi-box", [el("h3", "titolo-col", ["Avvisi in vigore"])]);
     var ul = el("ul", "", []);
@@ -1118,6 +1152,7 @@
     if (!resto.length) altre.style.display = "none";
     var rm = riquadroMeteo();
     if (rm) c3.appendChild(rm);
+    if (!filtroCat) c3.appendChild(riquadroSegui("Le notizie del Sannio appena escono, sul telefono."));
     if (avvisi.length) c3.appendChild(riquadroAvvisi(avvisi));
     if (!filtroCat) { var rs = riquadroSport(); if (rs) c3.appendChild(rs); }
     c3.appendChild(el("h3", "titolo-col", ["Approfondimenti"]));
@@ -1249,6 +1284,7 @@
       p.appendChild(l);
       art.appendChild(p);
     }
+    art.appendChild(riquadroSegui("Le notizie di Benevento e del Sannio appena escono, sul telefono.", true));
     elencoFonti(art, fonti);
     box.appendChild(art);
   }
