@@ -311,9 +311,17 @@ def facebook(token, adesso, storico_prima):
     inizio = dt.datetime.combine(oggi - dt.timedelta(days=GIORNI - 1), dt.time(0), fz)
     # i post degli ultimi 30 giorni con reazioni, commenti e condivisioni
     post, url = [], None
-    campi = ("created_time,message,permalink_url,shares,reactions.summary(total_count).limit(0),"
-             "comments.summary(total_count).limit(0),attachments{unshimmed_url,url}")
-    r = fb_get("me/posts", token, fields=campi, limit=100, since=int(inizio.timestamp()))
+    # commenti e reazioni vogliono il permesso pages_read_user_content: senza, si prova con meno campi
+    base = "created_time,message,permalink_url,shares,attachments{unshimmed_url,url}"
+    for extra in (",reactions.summary(total_count).limit(0),comments.summary(total_count).limit(0)",
+                  ",reactions.summary(total_count).limit(0)", ""):
+        try:
+            r = fb_get("me/posts", token, fields=base + extra, limit=100, since=int(inizio.timestamp()))
+            break
+        except RuntimeError as e:
+            if not extra or "(#10)" not in str(e):
+                raise
+    con_commenti, con_reazioni = "comments" in extra, "reactions" in extra
     for _ in range(10):
         for p in r.get("data", []):
             t = dt.datetime.strptime(p["created_time"], "%Y-%m-%dT%H:%M:%S%z").astimezone(fz)
@@ -324,12 +332,12 @@ def facebook(token, adesso, storico_prima):
                 m = re.search(r"notiziebenevento\.it(/notizia/[a-z0-9-]+/)", u)
                 if m:
                     link = m.group(1)
-            reaz = ((p.get("reactions") or {}).get("summary") or {}).get("total_count", 0)
-            comm = ((p.get("comments") or {}).get("summary") or {}).get("total_count", 0)
+            reaz = ((p.get("reactions") or {}).get("summary") or {}).get("total_count", 0) if con_reazioni else None
+            comm = ((p.get("comments") or {}).get("summary") or {}).get("total_count", 0) if con_commenti else None
             cond = (p.get("shares") or {}).get("count", 0)
             post.append({"quando": t.isoformat(timespec="minutes"), "titolo": (p.get("message") or "").split("\n")[0][:160],
                          "link": p.get("permalink_url"), "notizia": link, "reazioni": reaz, "commenti": comm,
-                         "condivisioni": cond, "interazioni": reaz + comm + cond})
+                         "condivisioni": cond, "interazioni": (reaz or 0) + (comm or 0) + cond})
         url = (r.get("paging") or {}).get("next")
         if not url:
             break
@@ -363,7 +371,7 @@ def facebook(token, adesso, storico_prima):
         "follower": follower, "mi_piace": pag.get("fan_count"), "storico": storico,
         "giorni": [{"data": k, "post": v[0], "interazioni": v[1]} for k, v in per_giorno.items()],
         "post": sorted(post, key=lambda p: p["quando"], reverse=True),
-        "meta": meta,
+        "meta": meta, "commenti": con_commenti, "reazioni": con_reazioni,
     }
 
 
