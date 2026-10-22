@@ -1,7 +1,135 @@
 {
- "aggiornato": "2026-10-22T16:12+02:00",
+ "aggiornato": "2026-10-22T17:13+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-air-bus-deviazioni-rione-ferrovia-24-ottobre",
+   "titolo": "Benevento, sabato 24 ottobre dalle 15 alle 19 i bus AIR delle linee 01, 05, 07 e 11 cambiano percorso per una gara podistica",
+   "titolo_google": "Benevento, bus AIR deviati sabato 24 ottobre per la corsa",
+   "sintesi": "Sabato 24 ottobre, dalle 15 alle 19, quattro linee urbane di AIR Campania a Benevento seguono un percorso diverso e le fermate di viale Principe di Napoli sono soppresse, per la gara podistica nel Rione Ferrovia.",
+   "categoria": "strade",
+   "zona": "benevento",
+   "luogo": "Benevento, Rione Ferrovia",
+   "pubblicato": "2026-10-22T16:31:00+02:00",
+   "in_vigore_fino": "2026-10-24",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "AIR Campania",
+     "url": "https://aircampania.it/benevento-deviazioni-temporanee-alle-percorrenze/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Sabato 24 ottobre 2026, dalle 15 alle 19 e comunque fino a quando la viabilità torna regolare, le linee 01-UB, 05-UB, 07-UB e 11-UB di AIR Campania, la società dei bus extraurbani e urbani, cambiano percorso a Benevento. Tutte le fermate di viale Principe di Napoli sono soppresse.",
+      "fonti": [
+       "AIR Campania"
+      ]
+     },
+     {
+      "testo": "Il motivo è un'ordinanza del Comune di Benevento (la n. 429 del 20 ottobre, del Servizio Traffico) che limita il traffico in viale Principe di Napoli, piazza Bissolati, via Grimoaldo Re e via Campagna, nel Rione Ferrovia, per la seconda edizione della gara podistica «Corsa di Santa Maria di Costantinopoli – Trofeo Don Pompilio».",
+      "fonti": [
+       "AIR Campania"
+      ]
+     },
+     {
+      "testo": "Le corse delle linee 01, 07 e 11 in partenza da via Diacono vanno su via Nuzzolo, viale Virgilio, rotonda dei Pentri, contrada Pezzapiana, via Abete, via Valfortore, via dei Longobardi, via Vittime di Nassiriya, via del Pomerio e via Vittorio Emanuele III, poi tornano sul percorso normale. Quelle in arrivo a via Diacono passano da via del Pomerio, via Vittime di Nassiriya, via dei Longobardi, via Battaglia di Benevento, via XXV Luglio e via Mariano Russo. Anche la linea 05, da e per il centro commerciale «I Sanniti», ha deviazioni simili.",
+      "fonti": [
+       "AIR Campania"
+      ]
+     },
+     {
+      "testo": "Per chi abita o va nel Rione Ferrovia le fermate alternative sono in via XXV Luglio e in via Diacono.",
+      "fonti": [
+       "AIR Campania"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "L'orario di partenza e di arrivo della gara: l'avviso AIR dà solo la fascia delle deviazioni."
+    ],
+    "fonti": [
+     {
+      "nome": "AIR Campania",
+      "titolo": "Benevento: deviazioni temporanee alle percorrenze",
+      "url": "https://aircampania.it/benevento-deviazioni-temporanee-alle-percorrenze/",
+      "data": "22 ott, 16:31"
+     }
+    ]
+   }
+  },
+  {
+   "id": "provincia-reticolo-fluviale-monitoraggio-aree-rischio",
+   "titolo": "Provincia di Benevento, controlli sui fiumi Calore e Sabato nelle aree a rischio: il presidente Lombardi chiede fondi alla Regione",
+   "titolo_google": "Fiumi Calore e Sabato, la Provincia avvia i controlli",
+   "sintesi": "Il presidente della Provincia, Nino Lombardi, ha disposto un monitoraggio delle aree a maggior rischio lungo i fiumi principali del Sannio, dal Calore al Sabato. Alla Regione chiede fondi, perché la Provincia gestisce i fiumi ma non ha risorse per intervenire.",
+   "categoria": "altro",
+   "zona": "provincia",
+   "luogo": "Provincia di Benevento",
+   "pubblicato": "2026-10-22T16:42:00+02:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "immagine": "argini",
+   "fonti": [
+    {
+     "nome": "Provincia di Benevento",
+     "url": "https://www.provincia.benevento.it/node/61557"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/22/reticolo-fluviale-lombardi-sollecita-la-regione-sui-fondi-e-avvia-il-monitoraggio-delle-aree-a-rischio-nel-sannio/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Giovedì 22 ottobre il presidente della Provincia di Benevento, Nino Lombardi, ha disposto un monitoraggio delle aree a maggior rischio lungo i fiumi principali del territorio. Lo ha deciso al termine di una riunione con i dirigenti dei settori che si occupano di strade e di acque. Il controllo parte dai punti dove i fiumi si incontrano con altri corsi d'acqua.",
+      "fonti": [
+       "Provincia di Benevento"
+      ]
+     },
+     {
+      "testo": "Il monitoraggio riguarderà in particolare il fiume Calore, a Ponticelli e Pantano, e il fiume Sabato, al ponte Santa Maria degli Angeli, che attraversano la città di Benevento. Si estenderà poi al resto dei fiumi di competenza della Provincia, con attenzione all'Alto Sannio e al Tammaro. Si farà d'intesa con il Comune di Benevento e con il sindaco Mastella, anche con tecnologie avanzate. Lo scopo è presentare alla Regione Campania un quadro aggiornato di quello che serve al territorio.",
+      "fonti": [
+       "Provincia di Benevento"
+      ]
+     },
+     {
+      "testo": "Il motivo dell'appello alla Regione è che la Provincia ha la competenza sui fiumi principali ma nessuna risorsa assegnata per intervenire, e il suo bilancio dipende da fondi che arrivano da altri enti. Lombardi sottolinea che la Regione, invece, tiene per sé i fiumi secondari insieme ai soldi per curarli. Dice anche che la Provincia di Benevento è l'unica ad aver presentato alla Regione, insieme a Confindustria Benevento, un piano dei lavori di manutenzione dei fiumi.",
+      "fonti": [
+       "Provincia di Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando comincerà il monitoraggio e quanto durerà.",
+     "Se la Regione risponderà con dei fondi e di quanto."
+    ],
+    "fonti": [
+     {
+      "nome": "Provincia di Benevento",
+      "titolo": "IL PRESIDENTE DELLA PROVINCIA DISPONE PER UN MONITORAGGIO DI CONTROLLO SUL RETICOLO IDROGRAFICO PRINCIPALE E CHIEDE ALLA REGIONE CAMPANIA STANZIAMENTI ADEGUATI AI BISOGNI DEL TERRITORIO SANNITA",
+      "url": "https://www.provincia.benevento.it/node/61557",
+      "data": "22 ott, 16:42"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Reticolo fluviale, Lombardi sollecita la Regione sui fondi e avvia il monitoraggio delle aree a rischio nel Sannio",
+      "url": "https://www.ntr24.tv/2026/10/22/reticolo-fluviale-lombardi-sollecita-la-regione-sui-fondi-e-avvia-il-monitoraggio-delle-aree-a-rischio-nel-sannio/",
+      "data": "22 ott, 16:52"
+     }
+    ]
+   },
+   "foto": "argini-4"
+  },
   {
    "id": "santagata-de-goti-interruzione-luce-28-ottobre",
    "titolo": "Sant'Agata de' Goti, mercoledì 28 ottobre senza luce dalle 8 alle 15:30 per lavori urgenti",
@@ -4877,11 +5005,12 @@
    ],
    "articolo": {
     "aggiornamento": {
-     "testo": "Giovedì 22 ottobre, dopo il Consiglio dei ministri, la premier Meloni ha detto che le associazioni dell'autotrasporto hanno revocato i fermi dopo l'accordo con il governo, ma che in alcune zone continuano i blocchi e saranno usate le norme che li puniscono come reato. Nel Sannio non risulta la fine dei presìdi.",
+     "testo": "Giovedì 22 ottobre la Croce Rossa Campania ha chiesto alla Regione un tavolo urgente per rifornire ambulanze e mezzi sanitari, e il sindaco Mastella ha incontrato i camionisti al casello dell'A16.",
      "fonti": [
-      "BeneventoNews24 (decreto)"
+      "NTR24 (Croce Rossa)",
+      "NTR24 (Mastella)"
      ],
-     "quando": "2026-10-22T16:12+02:00"
+     "quando": "2026-10-22T17:13+02:00"
     },
     "aggiornato": "2026-10-20T09:25:00+02:00",
     "cronologia": [
@@ -5007,6 +5136,14 @@
       "fatto": "Il Consiglio dei ministri approva il decreto «Aiuti» per autotrasporto, agricoltura e pesca; le associazioni dell'autotrasporto sono convocate al Ministero il 27 ottobre.",
       "fonti": [
        "Lab TV (decreto Aiuti)"
+      ]
+     },
+     {
+      "data": "22 ottobre, pomeriggio",
+      "fatto": "Mastella incontra gli autotrasportatori al casello sannita dell'A16; la Croce Rossa Campania chiede un tavolo regionale per rifornire i mezzi di soccorso.",
+      "fonti": [
+       "NTR24 (Mastella)",
+       "NTR24 (Croce Rossa)"
       ]
      }
     ],
@@ -5216,6 +5353,18 @@
       "titolo": "Il Cdm approva il decreto sugli aiuti. Continuano i blocchi dei Tir al Sud, fermi anche i pescherecci",
       "url": "https://www.beneventonews24.it/2026/10/22/il-cdm-approva-il-decreto-sugli-aiuti-continuano-i-blocchi-dei-tir-al-sud-fermi-anche-i-pescherecci/",
       "data": "22 ott, 15:49"
+     },
+     {
+      "nome": "NTR24 (Mastella)",
+      "titolo": "Mastella incontra autotrasportatori sulla Napoli-Bari: “Ragioni ne avete, ma non penalizzate famiglie italiane”",
+      "url": "https://www.ntr24.tv/2026/10/22/mastella-incontra-autotrasportatori-sulla-napoli-bari-ragioni-ne-avete-ma-non-penalizzate-famiglie-italiane/",
+      "data": "22 ott, 17:04"
+     },
+     {
+      "nome": "NTR24 (Croce Rossa)",
+      "titolo": "Protesta autotrasportatori, l’allarme della Croce Rossa Campania: «Subito un tavolo regionale per garantire i rifornimenti»",
+      "url": "https://www.ntr24.tv/2026/10/22/protesta-autotrasportatori-lallarme-della-croce-rossa-campania-subito-un-tavolo-regionale-per-garantire-i-rifornimenti/",
+      "data": "22 ott, 16:56"
      }
     ],
     "racconto": [
@@ -5230,6 +5379,20 @@
       "testo": "Giovedì 22 ottobre, a livello nazionale, il Consiglio dei ministri ha approvato il decreto-legge «Aiuti» contro il caro carburante, secondo Lab TV. Per l'autotrasporto ci sono oltre 66 milioni in più di credito d'imposta sul gasolio comprato tra marzo e agosto 2026, 60 milioni per gli acquisti dal 1° settembre al 5 ottobre e la sospensione per sette mesi dei canoni di leasing dei mezzi per le piccole e medie imprese. Per l'agricoltura sono stanziati 60 milioni, con un contributo fino a 45 centesimi al litro, e per la pesca 10 milioni a fondo perduto.",
       "fonti": [
        "Lab TV (decreto Aiuti)"
+      ],
+      "giorno": "2026-10-22"
+     },
+     {
+      "testo": "Giovedì 22 ottobre il sindaco di Benevento, Clemente Mastella, ha incontrato gli autotrasportatori al presidio del casello sannita dell'autostrada Napoli-Bari. Ha detto che le loro ragioni ci sono, perché il costo dei carburanti riduce o azzera i ricavi, ma ha chiesto di non penalizzare le famiglie, a partire da chi resta senza cibo o senza carburante per andare al lavoro o a una visita medica. Ha ricordato che i Comuni non possono incidere sui costi delle materie prime, che la Regione Campania ha annunciato aiuti e che il Governo ha annunciato misure in Consiglio dei ministri.",
+      "fonti": [
+       "NTR24 (Mastella)"
+      ],
+      "giorno": "2026-10-22"
+     },
+     {
+      "testo": "Sempre giovedì 22 la Croce Rossa Italiana della Campania, con il presidente regionale Stefano Tangredi, ha lanciato un allarme: dai comitati arrivano segnalazioni che gran parte dei distributori in Campania ha finito le scorte e non c'è un rifornimento prioritario per i mezzi di servizio. Le ambulanze del 118 e i mezzi che portano i pazienti fragili potrebbero non circolare regolarmente. La Croce Rossa chiede alla Regione un tavolo urgente e soluzioni immediate per rifornire i mezzi sanitari e di soccorso.",
+      "fonti": [
+       "NTR24 (Croce Rossa)"
       ],
       "giorno": "2026-10-22"
      },
@@ -5748,6 +5911,12 @@
       "titolo": "Associazione Allevatori Campania e Molise: “Scorte ormai finite, protesta non fermi aziende”",
       "url": "https://www.cronachedelsannio.it/sannionews24/associazione-allevatori-campania-molise-scorte-ormai-finite/",
       "data": "22 ott, 13:29"
+     },
+     {
+      "nome": "InfoSannio (Liberiagricoltori)",
+      "titolo": "Caro gasolio, Liberiagricoltori Campania: “Aziende agricole a rischio chiusura. Servono interventi immediati”",
+      "url": "https://www.infosannionews.it/attualita/2026/caro-gasolio-liberiagricoltori-campania-aziende-agricole-a-rischio-chiusura-servono-interventi-immediati.html",
+      "data": "22 ott, 17:02"
      }
     ],
     "divergono": [
@@ -5781,6 +5950,13 @@
       "fonti": [
        "LabTV (22/10)",
        "NTR24 (22/10)"
+      ],
+      "giorno": "2026-10-22"
+     },
+     {
+      "testo": "Giovedì 22 ottobre Liberiagricoltori Campania, un'altra associazione del settore, ha dichiarato solidarietà agli autotrasportatori e ha chiesto al Governo misure subito sul costo del gasolio, tra cui meno accise sul gasolio agricolo, perché il credito d'imposta non basta: serve liquidità. Alla Regione, guidata da Roberto Fico, chiede un tavolo di crisi aperto a tutte le organizzazioni agricole, giudicando insufficienti le risorse annunciate e criticando il confronto con una sola organizzazione. L'associazione esclude nuovi blocchi stradali. Il testo parla di tutta la Campania e non cita il Sannio.",
+      "fonti": [
+       "InfoSannio (Liberiagricoltori)"
       ],
       "giorno": "2026-10-22"
      },
