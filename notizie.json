@@ -1,7 +1,246 @@
 {
- "aggiornato": "2026-10-22T17:13+02:00",
+ "aggiornato": "2026-10-22T18:11+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-scuolabus-contrade-sospeso-23-ottobre",
+   "titolo": "Benevento, da venerdì 23 ottobre niente scuolabus nelle contrade per la mancanza di carburante",
+   "titolo_google": "Benevento, stop agli scuolabus nelle contrade dal 23 ottobre",
+   "sintesi": "Il Comune di Benevento sospende da venerdì 23 ottobre il servizio scuolabus nelle contrade della città per la mancanza di carburante. Dal 24 ottobre, se la crisi continua, ferme anche le navette della scuola «Federico Torre».",
+   "categoria": "altro",
+   "zona": "benevento",
+   "immagine": "scuolabus",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-22T18:02:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/22/benevento-domani-niente-scuolabus-nelle-contrade-a-causa-della-carenza-di-carburante/"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/il-servizio-scuolabus-non-potra-essere-espletato-dalla-giornata-di-domani-venerdi-23-ottobre-nelle"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/441875/carenza-di-carburante-a-benevento-stop-agli-scuolabus-nelle-contrade.shtml"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Da domani, venerdì 23 ottobre, a Benevento lo scuolabus non passa più nelle contrade, le zone di campagna fuori dal centro. Lo ha comunicato il Comune: il servizio non si può svolgere per la mancanza di carburante.",
+      "fonti": [
+       "NTR24",
+       "Gazzetta di Benevento",
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Il Comune parla di «note vicende nazionali» legate alla carenza di carburante. Sono i giorni dei blocchi degli autotrasportatori, che hanno lasciato a secco molti distributori nel Sannio.",
+      "fonti": [
+       "NTR24",
+       "Gazzetta di Benevento"
+      ]
+     },
+     {
+      "testo": "Se la crisi di rifornimento dura, dal 24 ottobre si fermano anche le navette che servono il plesso scolastico «Federico Torre». Ottopagine scrive che la ripresa dei collegamenti dipende da come evolve la situazione e dalla possibilità di avere di nuovo il carburante necessario.",
+      "fonti": [
+       "NTR24",
+       "Gazzetta di Benevento",
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Per le famiglie delle contrade vuol dire accompagnare i figli a scuola in altro modo.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Lo stop agli scuolabus nelle contrade da venerdì 23 ottobre e quello alle navette del plesso «Federico Torre» dal 24 ottobre, se resta la crisi di carburante.",
+      "fonti": [
+       "NTR24",
+       "Gazzetta di Benevento",
+       "Ottopagine"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Fino a quando resta sospeso il servizio.",
+     "Se ci sono alternative per gli alunni delle contrade."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Benevento, domani niente scuolabus nelle contrade a causa della carenza di carburante",
+      "url": "https://www.ntr24.tv/2026/10/22/benevento-domani-niente-scuolabus-nelle-contrade-a-causa-della-carenza-di-carburante/",
+      "data": "22 ott, 17:29"
+     },
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "Il servizio scuolabus non potrà essere espletato dalla giornata di domani, venerdì 23 ottobre, nelle contrade cittadine",
+      "url": "https://www.gazzettabenevento.it/it/il-servizio-scuolabus-non-potra-essere-espletato-dalla-giornata-di-domani-venerdi-23-ottobre-nelle",
+      "data": "22 ott, 17:07"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "La nota del Comune con gli effetti che cominceranno a partire da domani",
+      "url": "https://www.ottopagine.it/bn/attualita/441875/carenza-di-carburante-a-benevento-stop-agli-scuolabus-nelle-contrade.shtml",
+      "data": "22 ott, 18:02"
+     }
+    ]
+   },
+   "foto": "scuolabus-4"
+  },
+  {
+   "id": "benevento-contrade-nord-ricorso-tar-impianto-accumulo",
+   "titolo": "Benevento, il Comitato Contrade Nord fa ricorso al Tar contro un nuovo impianto di accumulo di energia",
+   "titolo_google": "Benevento Nord, ricorso al Tar contro l'impianto di accumulo",
+   "sintesi": "Un gruppo di soci del Comitato Contrade Benevento Nord ha depositato il 21 ottobre al Tar il ricorso contro l'autorizzazione del Ministero dell'Ambiente a un impianto di accumulo (BESS) da 51 MW. Il Comitato chiede alla Provincia di sostenerlo anche contro un impianto fotovoltaico autorizzato dalla Regione.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-22T17:27:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/tutela-del-territorio-e-dellambiente-il-comitato-contrade-benevento-nord-ricorre-al-tar/"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/ambiente/2026/strutture-energetiche-il-comitato-contrade-benevento-area-nord-passa-allazione-con-un-ricorso-al-tar.html"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il 21 ottobre un gruppo di soci del Comitato «Contrade Benevento Nord per la tutela del territorio e l'ambiente – No Bess», con il sostegno del Comitato, ha notificato e depositato al Tar (il tribunale amministrativo) un ricorso contro il Decreto Direttoriale n. 205 del 30 luglio 2026 del Ministero dell'Ambiente e della Sicurezza Energetica.",
+      "fonti": [
+       "Anteprima24",
+       "InfoSannio"
+      ]
+     },
+     {
+      "testo": "Il decreto autorizza un impianto di accumulo elettrochimico di energia elettrica (BESS, in pratica grandi batterie) da 51 MW, con le opere collegate. Si aggiunge a un altro impianto da 120 MW già autorizzato dallo stesso Ministero in zona Murata.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Il Comitato scrive che nell'area nord di Benevento sono già autorizzati o in istruttoria 33 impianti di produzione di energia, per 1.792,32 MW: oltre il 28% della potenza autorizzata in tutta la provincia. Sono dati citati dal Comitato, che rimanda al portale SITI della Provincia e ai dati di Terna. Dice anche che la Provincia aveva dato parere non favorevole, che il Ministero ha respinto.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Il Comitato cita anche il decreto dirigenziale n. 67 del 23 settembre 2026 della Regione Campania, che ha autorizzato il fotovoltaico «Olivola» della società RWE Renewables Italia: 78 MW su circa 98 ettari, con oltre 112mila pannelli. Anche qui la Provincia aveva espresso parere contrario.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Il Comitato chiede alla Provincia di continuare a sostenerlo e di impugnare davanti al Tar anche il decreto regionale, chiedendo se possibile la sospensione dell'autorizzazione. Precisa che la sua non è una battaglia contro le energie rinnovabili, ma per la tutela delle aree agricole.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Il ricorso al Tar, depositato il 21 ottobre contro il Decreto Direttoriale n. 205 del 30 luglio 2026 del Ministero dell'Ambiente.",
+      "fonti": [
+       "Anteprima24",
+       "InfoSannio"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando il Tar fisserà l'udienza.",
+     "Se la Provincia deciderà di impugnare anche il decreto della Regione.",
+     "Cosa rispondono il Ministero e le società interessate: le fonti riportano solo il comunicato del Comitato."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Tutela del territorio e dell’ambiente, il Comitato Contrade Benevento Nord ricorre al Tar",
+      "url": "https://www.anteprima24.it/benevento/tutela-del-territorio-e-dellambiente-il-comitato-contrade-benevento-nord-ricorre-al-tar/",
+      "data": "22 ott, 17:27"
+     },
+     {
+      "nome": "InfoSannio",
+      "titolo": "Strutture energetiche.Il Comitato Contrade Benevento Area Nord passa all’azione con un ricorso al Tar",
+      "url": "https://www.infosannionews.it/ambiente/2026/strutture-energetiche-il-comitato-contrade-benevento-area-nord-passa-allazione-con-un-ricorso-al-tar.html",
+      "data": "22 ott, 16:40"
+     }
+    ]
+   }
+  },
+  {
+   "id": "carofano-mugello-fx-italian-series-pole-secondo",
+   "titolo": "Automobilismo, il pilota sannita Valentino Carofano in pole e secondo al Mugello nella FX Italian Series",
+   "titolo_google": "Carofano al Mugello: pole e secondo posto, FX Italian Series",
+   "sintesi": "Il pilota sannita Valentino Carofano, della Valentino Racing Team, ha conquistato la pole position e chiuso secondo nel quinto round della FX Italian Series sul circuito del Mugello.",
+   "categoria": "sport",
+   "sport": "altro",
+   "zona": "telesina",
+   "luogo": "Mugello",
+   "pubblicato": "2026-10-22T17:16:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/carofano-che-spettacolo-al-mugello-pole-position-e-secondo-posto-il-sannita-vola-nella-fx-italian-series/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Valentino Carofano, pilota sannita (Anteprima24 lo definisce «telesino», della Valle Telesina) che corre con la Valentino Racing Team, al Mugello ha conquistato la pole position (il primo posto in griglia) e ha chiuso la gara al secondo posto. Era il quinto round stagionale del campionato italiano FX Italian Series.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Il fine settimana era cominciato in salita: nelle prove libere del venerdì la monoposto non rispondeva come previsto e Carofano girava intorno al quinto tempo. Il team ha lavorato sull'assetto e al sabato mattina il pilota ha ottenuto il miglior tempo in qualifica.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "In gara non è arrivata la vittoria che sembrava possibile dopo la pole, ma il secondo posto vale punti importanti per il campionato. Carofano era arrivato al Mugello dopo il successo di Vallelunga.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "La classifica del campionato dopo il quinto round: l'articolo non la riporta."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Carofano, che spettacolo al Mugello! Pole position e secondo posto: il sannita vola nella FX Italian Series",
+      "url": "https://www.anteprima24.it/benevento/carofano-che-spettacolo-al-mugello-pole-position-e-secondo-posto-il-sannita-vola-nella-fx-italian-series/",
+      "data": "22 ott, 17:16"
+     }
+    ]
+   }
+  },
   {
    "id": "benevento-air-bus-deviazioni-rione-ferrovia-24-ottobre",
    "titolo": "Benevento, sabato 24 ottobre dalle 15 alle 19 i bus AIR delle linee 01, 05, 07 e 11 cambiano percorso per una gara podistica",
@@ -5694,12 +5933,12 @@
    "id": "agricoltori-22-ottobre",
    "titolo": "Dal 22 ottobre presidi degli agricoltori sulla Sannitica, sulla statale 212 e a Ponte delle Tavole",
    "titolo_google": "Agricoltori, presidi dal 22 ottobre sulla Sannitica e sulla 212",
-   "sintesi": "Gli agricoltori sanniti si uniscono alla protesta contro il caro gasolio e i costi di produzione. Da giovedì 22 ottobre presidi a oltranza sulla Sannitica, sulla statale 212 e a Ponte delle Tavole; lo stesso giorno Coldiretti Campania manifesta a Napoli. Il 21 ottobre Coldiretti Campania ha fermato la manifestazione di Napoli dopo la promessa della Regione di fino a venti milioni di euro.",
+   "sintesi": "Gli agricoltori sanniti si uniscono alla protesta contro il caro gasolio e i costi di produzione. Da giovedì 22 ottobre presidi a oltranza sulla Sannitica, sulla statale 212 e a Ponte delle Tavole; lo stesso giorno Coldiretti Campania manifesta a Napoli. Il 21 ottobre Coldiretti Campania ha fermato la manifestazione di Napoli dopo la promessa della Regione. Il 22 la Regione ha indicato 13 milioni di ristori e il Governo 60 milioni sul gasolio agricolo.",
    "categoria": "strade",
    "zona": "benevento",
    "immagine": "trattori",
    "luogo": "Benevento",
-   "pubblicato": "2026-10-22T13:29:00+02:00",
+   "pubblicato": "2026-10-22T18:03:00+02:00",
    "stato": "confermata",
    "fonti": [
     {
@@ -5749,6 +5988,18 @@
     {
      "nome": "Cronache del Sannio (allevatori)",
      "url": "https://www.cronachedelsannio.it/sannionews24/associazione-allevatori-campania-molise-scorte-ormai-finite/"
+    },
+    {
+     "nome": "Regione Campania (13 milioni)",
+     "url": "https://www.regione.campania.it/comunicazione/area-stampa/comunicati/22102026-comunicato-n-668-agricoltura-regione-campania-incontra-organizzazioni-comparto-caro-carburanti-individuati-13-milioni-euro-ristori-alle-aziende"
+    },
+    {
+     "nome": "NTR24 (Coldiretti, 60 milioni)",
+     "url": "https://www.ntr24.tv/2026/10/22/caro-gasolio-coldiretti-campania-bene-governo-su-nuovi-aiuti-per-60-milioni-di-euro-difendere-salute-dei-cittadini-e-reddito-agricoltori/"
+    },
+    {
+     "nome": "NTR24 (CIA)",
+     "url": "https://www.ntr24.tv/2026/10/22/cia-campania-il-blocco-dei-camion-mette-in-ginocchio-le-aziende-agricole-solidali-si-ma-non-danneggiati-servono-risposte-immediate/"
     }
    ],
    "articolo": {
@@ -5785,6 +6036,21 @@
       "fonti": [
        "NTR24",
        "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "data": "22 ottobre, mattina",
+      "fatto": "Incontro in Regione con le organizzazioni agricole: individuati 13 milioni di euro per i ristori, in attesa dell'autorizzazione europea.",
+      "fonti": [
+       "Regione Campania (13 milioni)",
+       "NTR24 (CIA)"
+      ]
+     },
+     {
+      "data": "22 ottobre, pomeriggio",
+      "fatto": "Coldiretti Campania accoglie con favore i 60 milioni del Governo sul gasolio agricolo.",
+      "fonti": [
+       "NTR24 (Coldiretti, 60 milioni)"
       ]
      }
     ],
@@ -5917,6 +6183,24 @@
       "titolo": "Caro gasolio, Liberiagricoltori Campania: “Aziende agricole a rischio chiusura. Servono interventi immediati”",
       "url": "https://www.infosannionews.it/attualita/2026/caro-gasolio-liberiagricoltori-campania-aziende-agricole-a-rischio-chiusura-servono-interventi-immediati.html",
       "data": "22 ott, 17:02"
+     },
+     {
+      "nome": "Regione Campania (13 milioni)",
+      "titolo": "22/10/2026 - Comunicato n. 668 – Agricoltura: la Regione Campania incontra le organizzazioni del comparto. Sul caro carburanti, individuati 13 milioni di euro per i ristori alle aziende.",
+      "url": "https://www.regione.campania.it/comunicazione/area-stampa/comunicati/22102026-comunicato-n-668-agricoltura-regione-campania-incontra-organizzazioni-comparto-caro-carburanti-individuati-13-milioni-euro-ristori-alle-aziende",
+      "data": "22 ott"
+     },
+     {
+      "nome": "NTR24 (Coldiretti, 60 milioni)",
+      "titolo": "Caro gasolio: Coldiretti Campania, bene Governo su nuovi aiuti per 60 milioni di euro, difendere salute dei cittadini e reddito agricoltori",
+      "url": "https://www.ntr24.tv/2026/10/22/caro-gasolio-coldiretti-campania-bene-governo-su-nuovi-aiuti-per-60-milioni-di-euro-difendere-salute-dei-cittadini-e-reddito-agricoltori/",
+      "data": "22 ott, 17:57"
+     },
+     {
+      "nome": "NTR24 (CIA)",
+      "titolo": "CIA Campania: «Il blocco dei camion mette in ginocchio le aziende agricole: solidali sì, ma non danneggiati. Servono risposte immediate»",
+      "url": "https://www.ntr24.tv/2026/10/22/cia-campania-il-blocco-dei-camion-mette-in-ginocchio-le-aziende-agricole-solidali-si-ma-non-danneggiati-servono-risposte-immediate/",
+      "data": "22 ott, 18:03"
      }
     ],
     "divergono": [
@@ -5936,6 +6220,21 @@
      }
     ],
     "racconto": [
+     {
+      "giorno": "2026-10-22",
+      "testo": "Giovedì 22 ottobre la Regione Campania ha incontrato a Palazzo Santa Lucia le organizzazioni agricole: il presidente Roberto Fico e l'assessora all'Agricoltura Maria Carmela Serluca hanno annunciato 13 milioni di euro presi dalle risorse non ancora spese della programmazione in corso. Andranno in ristori alle aziende iscritte al registro UMA (Utenti Motori Agricoli), ma solo dopo l'autorizzazione della Commissione europea. La Regione sta valutando altri fondi, anche dal FESR.",
+      "fonti": [
+       "Regione Campania (13 milioni)"
+      ]
+     },
+     {
+      "giorno": "2026-10-22",
+      "testo": "La CIA Campania apprezza l'impegno ma chiede «fatti e tempi certi» e il coinvolgimento del Ministero dell'Agricoltura per accelerare. Dice anche che il blocco dei camion impedisce alle aziende di consegnare frutta, verdura e latte. Coldiretti Campania ha accolto con favore i 60 milioni sul gasolio agricolo annunciati dal Governo e dal ministro Lollobrigida, e dice che le sue mobilitazioni continuano nelle regioni dove non c'è stato un intervento.",
+      "fonti": [
+       "NTR24 (CIA)",
+       "NTR24 (Coldiretti, 60 milioni)"
+      ]
+     },
      {
       "testo": "Giovedì 22 ottobre l'Associazione Allevatori della Campania e del Molise, il cui presidente è Davide Minicozzi, lancia l'allarme: in diversi allevamenti del territorio le scorte di mangime per gli animali sono finite o stanno per finire, perché i camion che portano mais e mangimi non riescono ad arrivare. L'associazione dice di capire i problemi del caro carburante, ma che la protesta non può mettere in difficoltà altre attività e le loro famiglie: «Gli animali non possono aspettare». Chiede alle istituzioni di intervenire con urgenza per garantire il trasporto di mangimi, latte, beni di prima necessità e medicinali.",
       "fonti": [
@@ -5996,13 +6295,12 @@
      }
     ],
     "aggiornamento": {
-     "testo": "Giovedì 22 ottobre gli allevatori di Campania e Molise denunciano che in molti allevamenti il mangime sta finendo per i blocchi dei camion e chiedono interventi urgenti.",
+     "testo": "Giovedì 22 ottobre la Regione Campania ha indicato 13 milioni di euro di ristori per le aziende agricole (serve il via libera della Commissione europea) e il Governo ha annunciato 60 milioni sul gasolio agricolo.",
      "fonti": [
-      "NTR24 (allevatori)",
-      "LabTV (allevatori)",
-      "Cronache del Sannio (allevatori)"
+      "Regione Campania (13 milioni)",
+      "NTR24 (Coldiretti, 60 milioni)"
      ],
-     "quando": "2026-10-22T14:16+02:00"
+     "quando": "2026-10-22T18:11+02:00"
     }
    },
    "rilevante": false,
@@ -6883,7 +7181,7 @@
    "titolo_google": "Caro gasolio nel Sannio: blocchi, cosa manca, cosa succede",
    "sommario": "Da lunedì 19 ottobre gli autotrasportatori fermano i camion sull'Appia a Tufara Valle e a Castel del Lago; ci sono stati blocchi anche sulla Telesina a San Salvatore Telesino. Nei supermercati mancano i prodotti freschi e alcuni distributori hanno finito il gasolio. Da giovedì 22 si aggiungono gli agricoltori. Oggi, 20 ottobre, il ministro Salvini incontra a Milano associazioni e gruppi di protesta, anche della Campania.",
    "luogo": "Provincia di Benevento",
-   "aggiornato": "2026-10-21T20:05:00+02:00",
+   "aggiornato": "2026-10-22T18:10:00+02:00",
    "collegate": [
     "tir-appia-telesina",
     "scaffali-vuoti",
@@ -7284,6 +7582,14 @@
       "Ottopagine (agricoltori)",
       "NTR24"
      ]
+    },
+    {
+     "data": "22 ottobre, sera",
+     "fatto": "Il Comune di Benevento sospende da venerdì 23 ottobre gli scuolabus nelle contrade per la mancanza di carburante; dal 24 ottobre, se la crisi continua, ferme anche le navette del plesso «Federico Torre». La Regione indica 13 milioni di ristori per le aziende agricole.",
+     "fonti": [
+      "NTR24 (scuolabus)",
+      "Regione Campania (13 milioni)"
+     ]
     }
    ],
    "non_si_sa": [
@@ -7501,6 +7807,18 @@
      "titolo": "Raccolta rifiuti, possibili ritardi anche a Colle Sannita",
      "url": "https://www.ilsannioquotidiano.it/2026/10/21/raccolta-rifiuti-possibili-ritardi-anche-a-colle-sannita/",
      "data": "21 ott"
+    },
+    {
+     "nome": "NTR24 (scuolabus)",
+     "titolo": "Benevento, domani niente scuolabus nelle contrade a causa della carenza di carburante",
+     "url": "https://www.ntr24.tv/2026/10/22/benevento-domani-niente-scuolabus-nelle-contrade-a-causa-della-carenza-di-carburante/",
+     "data": "22 ott, 17:29"
+    },
+    {
+     "nome": "Regione Campania (13 milioni)",
+     "titolo": "22/10/2026 - Comunicato n. 668 – Agricoltura: la Regione Campania incontra le organizzazioni del comparto. Sul caro carburanti, individuati 13 milioni di euro per i ristori alle aziende.",
+     "url": "https://www.regione.campania.it/comunicazione/area-stampa/comunicati/22102026-comunicato-n-668-agricoltura-regione-campania-incontra-organizzazioni-comparto-caro-carburanti-individuati-13-milioni-euro-ristori-alle-aziende",
+     "data": "22 ott"
     }
    ],
    "nota": "Correzione: nella versione delle 8:45 scrivevamo che il ministero dei Trasporti aveva convocato le associazioni per il 27 ottobre, come riportava Il Post il 16 ottobre. ANSA (17 ottobre) e Il Sole 24 Ore (18 ottobre) riportano che il ministro Salvini ha anticipato il tavolo a oggi, martedì 20 ottobre, in Prefettura a Milano. Abbiamo corretto sommario, «In breve», sezioni, domande e cronologia."
