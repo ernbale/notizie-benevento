@@ -407,6 +407,10 @@ def agente(sito, chiave_pem, adesso):
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     import diario
     privata = serialization.load_pem_private_key(chiave_pem.encode(), password=None)
+    pub = leggi(diario.CHIAVE_PUBBLICA, {}) or {}
+    if int(pub.get("n", "0"), 16) != privata.public_key().public_numbers().n:
+        return {"stato": "errore", "messaggio": "La chiave segreta del diario (DIARIO_CHIAVE) non è quella di "
+                                                "strumenti/diario_chiave_pubblica.json: il diario non si legge."}
     giri = []
     for p in sorted(glob.glob(os.path.join(sito, "diario", "[0-9]*.json")), reverse=True)[:GIORNI_AGENTE]:
         g = leggi(p, {}) or {}
