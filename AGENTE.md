@@ -13,7 +13,7 @@ quello nuovo.
    in un articolo o in una fonte ufficiale, non esiste.
 2. **Una notizia esce se** la riportano **almeno due testate diverse**, oppure **una fonte ufficiale**
    (Comune, Provincia, Prefettura, Questura e forze dell'ordine, ASL, ospedale San Pio, ANAS, INGV, Protezione Civile,
-   Alto Calore, GESESA, EAV, RFI). Due
+   Alto Calore, GESESA, EAV, AIR Campania, RFI). Due
    articoli dello stesso giornale contano come una fonte.
    **Eccezione: cronaca da un solo giornale autorevole** (voluta dal proprietario il 21 ottobre 2026). Un fatto di
    cronaca, di strade o di servizi (categorie `cronaca`, `strade`, `altro`) riportato da **una sola** di queste
@@ -77,6 +77,9 @@ Lavora in parallelo (6-8 letture insieme). Per ogni fonte tieni nota: letta / no
 - EAV, treni Napoli–Cancello–Benevento e bus: `https://www.eavsrl.it/infomobilita-ferrovia/`,
   `https://www.eavsrl.it/avvisi-infomobilita-autolinee/`, `https://www.eavsrl.it/avvisi-di-sciopero/`. Tieni solo
   quello che tocca il Sannio (linea per Benevento, Valle Caudina, bus da e per Benevento) e gli scioperi.
+- AIR Campania, i bus extraurbani (Benevento e provincia, collegamenti con Napoli, Avellino, Caserta): avvisi al
+  pubblico e comunicati stampa nel feed `https://aircampania.it/feed/` (senza «www»: con il www il certificato è
+  sbagliato). Tieni solo quello che tocca il Sannio (linee, corse, scioperi, carburante) e i fatti di Benevento.
 - RFI, treni in Campania: in tempo reale `https://www.rfi.it/content/rfi/it/news-e-media/infomobilita.rss.updates.campania.xml`,
   lavori e avvisi `https://www.rfi.it/content/rfi/it/news-e-media/infomobilita.rss.notices.campania.xml`. Tieni solo le
   linee che passano dal Sannio: Caserta–Benevento–Foggia (Telese, Solopaca, Benevento), Benevento–Avellino–Salerno,
