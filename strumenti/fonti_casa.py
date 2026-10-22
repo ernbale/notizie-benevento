@@ -7,6 +7,10 @@ nell'archivio privato ernbale/notizie-benevento-fonti, che l'agente trova accant
 - ASL Benevento: notizie e avvisi. Il sito ha il certificato incompleto (manca il pezzo intermedio di Actalis,
   che Chrome si procura da solo e i programmi no): lo si scarica una volta e si aggiunge.
 - TV7 Benevento: il feed senza le notizie nazionali dell'agenzia AdnKronos, con il testo intero degli articoli.
+- I 78 Comuni della provincia: gli avvisi e le notizie nuovi sui loro siti, col testo (dal 22 ott 2026). Ogni Comune
+  ha il suo sistema (Halley, WordPress, Designers Italia…): si leggono le pagine con l'elenco e si aprono solo i link
+  mai visti prima, ricordati in comuni-visti.json (fuori dall'archivio). La prima volta che si legge un Comune si
+  prende solo nota di quello che c'è, senza segnalarlo: le notizie vecchie non diventano «nuove».
 
 ANAS e TV7 rifiutano le connessioni dall'estero (il cloud dell'agente, GitHub), da casa si aprono.
 
@@ -32,8 +36,9 @@ import sys
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
+from concurrent.futures import ThreadPoolExecutor
 
-CARTELLA = os.path.expanduser("~/nb-fonti")
+CARTELLA = os.environ.get("NB_FONTI_CARTELLA") or os.path.expanduser("~/nb-fonti")   # la variabile serve per le prove
 ARCHIVIO = os.path.join(CARTELLA, "archivio")
 REMOTO = "git@github.com:ernbale/notizie-benevento-fonti.git"
 CHIAVE = os.path.expanduser("~/.ssh/nb_fonti")
@@ -189,10 +194,197 @@ def asl(vecchie):
     return voci
 
 
+COMUNI = [   # (Comune, pagine con l'elenco di avvisi e notizie); None = sito che non si legge senza browser
+    ('Airola', None),
+    ('Amorosi', ['https://comune.amorosi.bn.it/', 'https://comune.amorosi.bn.it/novita/']),
+    ('Apice', ['https://www.comune.apice.bn.it/']),
+    ('Apollosa', ['https://www.comune.apollosa.bn.it/', 'https://www.comune.apollosa.bn.it/Novita/Comunicati']),
+    ('Arpaia', ['https://www.comune.arpaia.bn.it/', 'https://www.comune.arpaia.bn.it/it/novita']),
+    ('Arpaise', ['https://comune.arpaise.bn.it/', 'https://comune.arpaise.bn.it/novita/']),
+    ('Baselice', ['https://comune.baselice.bn.it/', 'https://comune.baselice.bn.it/novita/']),
+    ('Benevento', ['https://comune.benevento.it/', 'https://comune.benevento.it/novita/']),
+    ('Bonea', None),
+    ('Bucciano', None),
+    ('Buonalbergo', ['https://www.comune.buonalbergo.bn.it/']),
+    ('Calvi', ['https://www.comune.calvi.bn.it/']),
+    ('Campolattaro', ['https://www.comune.campolattaro.bn.it/']),
+    ('Campoli del Monte Taburno', ['https://comune.campolidelmontetaburno.bn.it/', 'https://comune.campolidelmontetaburno.bn.it/novita/']),
+    ('Casalduni', ['https://www.comune.casalduni.bn.it/']),
+    ('Castelfranco in Miscano', ['https://www.comune.castelfrancoinmiscano.bn.it/']),
+    ('Castelpagano', ['https://www.comune.castelpagano.bn.it/']),
+    ('Castelpoto', ['https://comune.castelpoto.bn.it/', 'https://comune.castelpoto.bn.it/novita/']),
+    ('Castelvenere', ['https://www.comune.castelvenere.bn.it/']),
+    ('Castelvetere in Val Fortore', ['https://www.comune.castelvetereinvalfortore.bn.it/']),
+    ('Cautano', ['https://comune.cautano.bn.it/', 'https://comune.cautano.bn.it/novita/']),
+    ('Ceppaloni', ['https://www.comune.ceppaloni.bn.it/']),
+    ('Cerreto Sannita', ['https://www.comune.cerretosannita.bn.it/', 'https://www.comune.cerretosannita.bn.it/it/novita']),
+    ('Circello', ['https://comune.circello.bn.it/', 'https://comune.circello.bn.it/novita/']),
+    ('Colle Sannita', ['https://www.comune.collesannita.bn.it/c062025/po/elenco_news.php?&area=H']),
+    ('Cusano Mutri', ['https://www.comune.cusanomutri.bn.it/', 'https://www.comune.cusanomutri.bn.it/it/novita']),
+    ('Dugenta', ['https://comune.dugenta.bn.it/', 'https://comune.dugenta.bn.it/novita/']),
+    ('Durazzano', ['https://comune.durazzano.bn.it/', 'https://comune.durazzano.bn.it/novita/']),
+    ('Faicchio', ['https://comune.faicchio.bn.it/', 'https://comune.faicchio.bn.it/novita/']),
+    ('Foglianise', ['https://comune.foglianise.bn.it/', 'https://comune.foglianise.bn.it/novita/']),
+    ('Foiano di Val Fortore', ['https://comune.foianodivalfortore.bn.it/', 'https://comune.foianodivalfortore.bn.it/novita/']),
+    ('Forchia', ['https://www.comune.forchia.bn.it/c062032/po/elenco_news.php?&area=H']),
+    ("Fragneto l'Abate", ['https://www.comune.fragnetolabate.bn.it/']),
+    ('Fragneto Monforte', ['https://www.comune.fragnetomonforte.bn.it/']),
+    ('Frasso Telesino', ['https://comune.frassotelesino.bn.it/', 'https://comune.frassotelesino.bn.it/novita/']),
+    ('Ginestra degli Schiavoni', ['https://comune.ginestradeglischiavoni.bn.it/', 'https://comune.ginestradeglischiavoni.bn.it/novita/']),
+    ('Guardia Sanframondi', ['https://www.comune.guardiasanframondi.bn.it/']),
+    ('Limatola', ['https://www.comune.limatola.bn.it/']),
+    ('Melizzano', ['https://comune.melizzano.bn.it/', 'https://comune.melizzano.bn.it/novita/']),
+    ('Moiano', ['https://www.comune.moiano.bn.it/']),
+    ('Molinara', ['https://www.comune.molinara.bn.it/']),
+    ('Montefalcone di Val Fortore', None),
+    ('Montesarchio', ['https://www.comune.montesarchio.bn.it/', 'https://www.comune.montesarchio.bn.it/it/novita']),
+    ('Morcone', ['https://comune.morcone.bn.it/', 'https://comune.morcone.bn.it/novita/']),
+    ('Paduli', ['https://www.comune.paduli.bn.it/']),
+    ('Pago Veiano', ['https://www.comune.pagoveiano.bn.it/c062046/po/elenco_news.php?&area=H']),
+    ('Pannarano', None),
+    ('Paolisi', ['https://comune.paolisi.bn.it/', 'https://comune.paolisi.bn.it/novita/']),
+    ('Paupisi', ['https://www.comune.paupisi.bn.it/']),
+    ('Pesco Sannita', ['https://www.comune.pescosannita.bn.it/']),
+    ('Pietraroja', ['https://comune.pietraroja.bn.it/', 'https://comune.pietraroja.bn.it/novita/']),
+    ('Pietrelcina', ['https://www.comune.pietrelcina.bn.it/']),
+    ('Ponte', ['https://www.comune.ponte.bn.it/']),
+    ('Pontelandolfo', ['https://www.comune.pontelandolfo.bn.it/']),
+    ('Puglianello', ['https://comune.puglianello.bn.it/', 'https://comune.puglianello.bn.it/novita/']),
+    ('Reino', ['https://www.comune.reino.bn.it/']),
+    ('San Bartolomeo in Galdo', ['https://www.comune.sanbartolomeoingaldo.bn.it/new/']),
+    ('San Giorgio la Molara', ['https://comune.sangiorgiolamolara.bn.it/', 'https://comune.sangiorgiolamolara.bn.it/novita/']),
+    ('San Giorgio del Sannio', ['https://www.comune.sangiorgiodelsannio.bn.it/']),
+    ('San Leucio del Sannio', ['https://www.comune.sanleuciodelsannio.bn.it/']),
+    ('San Lorenzello', ['https://comune.sanlorenzello.bn.it/', 'https://comune.sanlorenzello.bn.it/it/novita']),
+    ('San Lorenzo Maggiore', ['https://comune.sanlorenzomaggiore.bn.it/', 'https://comune.sanlorenzomaggiore.bn.it/novita/']),
+    ('San Lupo', ['https://www.comune.sanlupo.bn.it/']),
+    ('San Marco dei Cavoti', ['https://www.comune.sanmarcodeicavoti.bn.it/', 'https://www.comune.sanmarcodeicavoti.bn.it/novita/']),
+    ('San Martino Sannita', ['https://comune.sanmartinosannita.bn.it/']),
+    ('San Nazzaro', ['https://www.comune.sannazzaro.bn.it/']),
+    ('San Nicola Manfredi', ['https://www.comune.sannicolamanfredi.bn.it/c062067/po/elenco_news.php?&area=H']),
+    ('San Salvatore Telesino', ['https://comune.sansalvatoretelesino.bn.it/', 'https://comune.sansalvatoretelesino.bn.it/novita/']),
+    ("Sant'Agata de' Goti", ['https://www.comune.santagatadegoti.bn.it/']),
+    ("Sant'Angelo a Cupolo", ['https://comune.santangeloacupolo.bn.it/', 'https://comune.santangeloacupolo.bn.it/novita/']),
+    ("Sant'Arcangelo Trimonte", ['https://www.comune.santarcangelotrimonte.bn.it/c062078/po/elenco_news.php?&area=H']),
+    ('Santa Croce del Sannio', ['https://www.comune.santacrocedelsannio.bn.it/']),
+    ('Sassinoro', ['https://www.comune.sassinoro.bn.it/']),
+    ('Solopaca', ['https://comune.solopaca.bn.it/', 'https://comune.solopaca.bn.it/novita/']),
+    ('Telese Terme', ['https://www.comune.teleseterme.bn.it/', 'https://www.comune.teleseterme.bn.it/it/novita']),
+    ('Tocco Caudio', ['https://comune.toccocaudio.bn.it/', 'https://comune.toccocaudio.bn.it/novita/']),
+    ('Torrecuso', ['https://www.comune.torrecuso.bn.it/', 'https://www.comune.torrecuso.bn.it/Novita/']),
+    ('Vitulano', ['https://comune.vitulano.bn.it/', 'https://comune.vitulano.bn.it/novita/']),
+]
+
+# un link è un avviso o una notizia se ha la forma di quelli dei sistemi usati dai Comuni del Sannio
+VOCE_COMUNE = re.compile(r"/(novita|notizi[ae]|news|avvis[oi]|comunicat[oi](?:[-_]stampa)?|ordinanz[ae])(/|_)|novita_\d+\.html"
+                         r"|mostra_news\.php\?id=\d+|[?&]art=\d+|/new/\d{3,}-[^/]+\.html$", re.I)
+NON_VOCE = re.compile(r"/(categor|argoment|tag)|/page/\d+/?$|feed|\?(page|paged)=|/(novita|notizie|avvisi|comunicati|news)/?$"
+                      r"|elenco_news", re.I)
+GENERICI = {"leggi di più", "leggi tutto", "ulteriori dettagli", "dettagli", "vai alla pagina", "leggi", "approfondisci",
+            "continua a leggere", "scopri di più"}
+NUOVE_COMUNI_PER_GIRO = 40
+DATA_IT = re.compile(r"\b(\d{1,2})[/.-](\d{1,2})[/.-](20\d\d)\b|\b(\d{1,2})\s+(" + "|".join(MESI) + r")\s+(20\d\d)\b", re.I)
+
+
+def voci_elenco(pagina, base):
+    """I link agli avvisi in una pagina di elenco del Comune: {indirizzo: testo del link}."""
+    host = urllib.parse.urlparse(base).netloc.removeprefix("www.")
+    out = {}
+    for href, t in re.findall(r'<a[^>]+href="([^"#]+)"[^>]*>(.*?)</a>', pagina, re.S):
+        u = assoluto(base, href)
+        if urllib.parse.urlparse(u).netloc.removeprefix("www.") != host or not VOCE_COMUNE.search(u) or NON_VOCE.search(u):
+            continue
+        t = testo(t).replace("\n", " ")
+        if t.lower() in GENERICI or len(t) < 12:
+            t = ""
+        if u not in out or len(t) > len(out[u]):
+            out[u] = t
+    return out
+
+
+def dettaglio_comune(nome, url, titolo_link, adesso):
+    """Apre l'avviso: titolo, data scritta nella pagina (se c'è) e testo."""
+    b = scarica(url)
+    i = b.find("<h1")
+    j = b.find("<footer", i if i >= 0 else 0)
+    corpo = testo(b[i if i >= 0 else 0:j if j > 0 else len(b)])
+    righe = corpo.split("\n")
+    titolo = (righe[0] if i >= 0 and righe else "") or titolo_link
+    if not titolo:
+        m = re.search(r"<title>(.*?)</title>", b, re.S)
+        titolo = testo(m.group(1)) if m else url
+    m = DATA_IT.search(corpo)
+    data_avviso = ""
+    if m:
+        try:
+            g, me, a = (m.group(1), m.group(2), m.group(3)) if m.group(1) else (m.group(4), MESI.index(m.group(5).lower()) + 1, m.group(6))
+            data_avviso = dt.date(int(a), int(me), int(g)).isoformat()
+        except ValueError:
+            pass
+    return {"comune": nome, "titolo": titolo[:300], "link": url, "data": adesso.date().isoformat(),
+            "primo_visto": adesso.isoformat(timespec="minutes"), "data_avviso": data_avviso,
+            "testo": "\n".join(righe[1:] if i >= 0 else righe)[:3000]}
+
+
+def comuni(vecchie):
+    adesso = dt.datetime.now(fuso())
+    p_visti = os.path.join(CARTELLA, "comuni-visti.json")
+    try:
+        with open(p_visti, encoding="utf-8") as f:
+            visti = json.load(f)
+    except (OSError, ValueError):
+        visti = {}
+
+    def elenco(c):
+        trovate, errore = {}, ""
+        for p in c[1]:
+            try:
+                trovate.update(voci_elenco(scarica(p), p))
+            except Exception as e:
+                errore = type(e).__name__
+        return c[0], trovate, errore
+
+    with ThreadPoolExecutor(8) as ex:
+        elenchi = list(ex.map(elenco, [c for c in COMUNI if c[1]]))
+    non_letti = [f"{n} (il sito si legge solo col browser o non funziona)" for n, p in COMUNI if not p]
+    da_aprire = []
+    for nome, trovate, errore in elenchi:
+        if not trovate:
+            non_letti.append(f"{nome} ({errore or 'nessun avviso trovato'})")
+        elif nome not in visti:   # prima lettura: si prende nota di tutto, non si segnala niente
+            visti[nome] = list(trovate)
+        else:
+            gia = set(visti[nome])
+            da_aprire += [(nome, u, t) for u, t in trovate.items() if u not in gia and u not in vecchie]
+
+    def apri(x):
+        try:
+            return dettaglio_comune(*x, adesso)
+        except Exception:
+            return None   # si riprova al prossimo giro
+
+    voci = []
+    with ThreadPoolExecutor(6) as ex:
+        for (nome, u, _), v in zip(da_aprire, ex.map(apri, da_aprire[:NUOVE_COMUNI_PER_GIRO])):
+            if v is None:
+                continue
+            visti[nome].append(u)
+            vecchio = v["data_avviso"] and v["data_avviso"] < (adesso.date() - dt.timedelta(days=10)).isoformat()
+            if not vecchio:   # un avviso di settimane fa ricomparso in pagina non è una notizia
+                voci.append(v)
+    if not PROVA:
+        with open(p_visti + ".tmp", "w", encoding="utf-8") as f:
+            json.dump({k: v[-300:] for k, v in visti.items()}, f, ensure_ascii=False)
+        os.replace(p_visti + ".tmp", p_visti)
+    return voci, {"comuni_letti": f"{len(COMUNI) - len(non_letti)} su {len(COMUNI)}", "comuni_non_letti": non_letti}
+
+
+PROVA = False
 FONTI = {
     "anas": ("ANAS, comunicati della Campania", ANAS_LISTA, anas, 10),
     "asl": ("ASL Benevento, notizie e avvisi", ASL_LISTA, asl, 30),
     "tv7": ("TV7 Benevento (tvsette.net), feed con il testo degli articoli", TV7_FEED, tv7, 4),
+    "comuni": ("I siti dei 78 Comuni della provincia, avvisi e notizie nuovi", "siti dei Comuni", comuni, 4),
 }
 
 
@@ -208,6 +400,9 @@ def leggi(nome, adesso):
     dati = {"fonte": titolo, "indirizzo": indirizzo, "controllato": adesso.isoformat(timespec="minutes")}
     try:
         nuove = funzione(vecchie)
+        if isinstance(nuove, tuple):   # i Comuni dicono anche quali siti non si sono letti
+            nuove, extra = nuove
+            dati.update(extra)
         dati["esito"] = f"letta: {len(nuove)} voci"
         dati["ultima_lettura_riuscita"] = dati["controllato"]
     except Exception as e:   # la fonte non risponde: restano le voci di prima, e lo si dice
@@ -230,6 +425,9 @@ incompleto.
 - `anas.json`: comunicati ANAS della Campania, ultimi 10 giorni (`data` senza ora, `compartimento` = ufficio ANAS).
 - `asl.json`: notizie e avvisi dell'ASL Benevento, ultimi 30 giorni.
 - `tv7.json`: articoli di TV7 Benevento con il testo, ultimi 4 giorni (TV7 copre anche Irpinia e Campania).
+- `comuni.json`: avvisi e notizie NUOVI dei siti dei 78 Comuni della provincia, ultimi 4 giorni: `comune`,
+  `primo_visto` (quando è comparso sul sito: per sapere cosa è nuovo dall'ultimo giro), `data_avviso` (la prima data
+  scritta nella pagina, se c'è), `testo`. `comuni_letti` e `comuni_non_letti` dicono quali siti si sono letti.
 
 In ogni file: `controllato` = ultimo tentativo, `esito`, `ultima_lettura_riuscita`, `voci` (titolo, link, data,
 testo). Il `link` è quello originale da citare tra le fonti. Archivio privato: i testi restano di chi li ha scritti.
@@ -257,6 +455,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--prova", action="store_true", help="scarica e stampa, senza pubblicare")
     a = ap.parse_args()
+    global PROVA
+    PROVA = a.prova
     adesso = dt.datetime.now(fuso())
     os.makedirs(ARCHIVIO, exist_ok=True)
     esiti = []
