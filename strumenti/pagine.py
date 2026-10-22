@@ -436,9 +436,9 @@ SEGUI = ('<section class="segui"><h3>Seguici</h3><p>Le notizie di Benevento e de
          '<div class="canali">' + "".join(
     f'<a class="{k}" href="{u}" target="_blank" rel="noopener nofollow" aria-label="{t} di Notizie Benevento">'
     f'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="{_LOGO[k]}"/></svg>{t}</a>'
-    for k, t, u in (("telegram", "Telegram", "https://t.me/notiziebenevento"),
+    for k, t, u in (("instagram", "Instagram", INSTAGRAM),
                     ("facebook", "Facebook", "https://www.facebook.com/notiziebenevento"),
-                    ("instagram", "Instagram", INSTAGRAM))) + '</div></section>')
+                    ("telegram", "Telegram", "https://t.me/notiziebenevento"))) + '</div></section>')
 
 # il posto dei pulsanti Ascolta e Condividi, che mette index.html: così la pagina non salta quando arrivano
 POSTO_ASCOLTA = '<div class="ascolta" style="min-height:38px"></div>'

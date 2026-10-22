@@ -9,12 +9,17 @@
 - Facebook: la Pagina con la chiave FB_PAGE_TOKEN (la stessa che pubblica i post): follower, post, reazioni, commenti,
   condivisioni; persone raggiunte e visualizzazioni solo se la chiave ha anche il permesso read_insights. Facebook dà
   solo i follower di adesso: quelli dei giorni prima si riprendono dal dati.json già pubblicato.
+- Instagram: stessa chiave (instagram_basic): follower, post, «mi piace» e commenti.
+- Telegram: dalla pagina pubblica del canale (t.me/s/…): iscritti e visualizzazioni di ogni messaggio.
+- Puntualità: dalle API di GitHub (GH_TOKEN): quanto ci mette ogni giro ad andare online, giri mancati,
+  pubblicazioni annullate o rilanciate, sentinelle rosse.
+- Comunicati per posta: quanti ne arrivano, dal diario dei giri.
 
 Il file è cifrato con la parola d'ordine (AES-GCM, chiave da PBKDF2-SHA256): chi trova l'indirizzo vede solo
 numeri illeggibili; la pagina statistiche/index.html lo apre nel browser con la stessa parola.
 Niente numeri nei log di GitHub (il repository è pubblico): si stampano solo gli esiti.
 
-Uso:  CLOUDFLARE_API_TOKEN=… STATISTICHE_PAROLA=… FB_PAGE_TOKEN=… python3 strumenti/statistiche.py [--sito .]
+Uso:  CLOUDFLARE_API_TOKEN=… STATISTICHE_PAROLA=… FB_PAGE_TOKEN=… GH_TOKEN=… python3 strumenti/statistiche.py [--sito .]
       python3 strumenti/statistiche.py --in-chiaro prova.json     (prova: scrive i dati senza cifrarli)
 """
 import argparse
@@ -291,10 +296,11 @@ def fb_get(percorso, token, **par):
         raise RuntimeError(f"Facebook {e.code}: {err.get('message', '')}") from None
 
 
-def fb_storico_prima(sito_online, parola):
-    """I follower dei giorni passati, dal dati.json già pubblicato (Facebook dà solo il numero di adesso)."""
+def dati_prima(sito_online, parola):
+    """Il dati.json già pubblicato, decifrato: da lì si riprendono i follower e gli iscritti dei giorni passati
+    (Facebook, Instagram e Telegram danno solo il numero di adesso)."""
     if not parola:
-        return []
+        return {}
     try:
         from cryptography.hazmat.primitives import hashes
         from cryptography.hazmat.primitives.ciphers.aead import AESGCM
@@ -303,10 +309,17 @@ def fb_storico_prima(sito_online, parola):
             b = json.load(r)
         k = PBKDF2HMAC(algorithm=hashes.SHA256(), length=32, salt=base64.b64decode(b["sale"]),
                        iterations=b["iterazioni"]).derive(parola.encode())
-        vecchi = json.loads(AESGCM(k).decrypt(base64.b64decode(b["iv"]), base64.b64decode(b["dati"]), None))
-        return (vecchi.get("facebook") or {}).get("storico") or []
+        return json.loads(AESGCM(k).decrypt(base64.b64decode(b["iv"]), base64.b64decode(b["dati"]), None))
     except Exception:
-        return []
+        return {}
+
+
+def storico_aggiornato(prima, oggi, valore, campo):
+    """Lo storico giorno per giorno (ultimi 90): quello di prima più il numero di oggi."""
+    st = {x["data"]: x[campo] for x in prima or [] if isinstance(x, dict) and x.get("data")}
+    if valore is not None:
+        st[oggi.isoformat()] = valore
+    return [{"data": k, campo: v} for k, v in sorted(st.items())][-90:]
 
 
 def facebook(token, adesso, storico_prima):
@@ -359,10 +372,7 @@ def facebook(token, adesso, storico_prima):
             g[0] += 1; g[1] += p["interazioni"]
     # i follower giorno per giorno: il numero di oggi si aggiunge a quelli salvati nei giorni prima
     follower = pag.get("followers_count")
-    storico = {x["data"]: x["follower"] for x in storico_prima if isinstance(x, dict) and x.get("data")}
-    if follower is not None:
-        storico[oggi.isoformat()] = follower
-    storico = [{"data": k, "follower": v} for k, v in sorted(storico.items())][-90:]
+    storico = storico_aggiornato(storico_prima, oggi, follower, "follower")
     # le statistiche di Meta, se la chiave ha il permesso
     meta = {}
     for nome in FB_METRICHE:
@@ -382,6 +392,223 @@ def facebook(token, adesso, storico_prima):
         "post": sorted(post, key=lambda p: p["quando"], reverse=True),
         "meta": meta, "commenti": con_commenti, "reazioni": con_reazioni,
     }
+
+
+# ---------- Instagram (l'account aziendale collegato alla Pagina) ----------
+def instagram(token, adesso, storico_prima):
+    """Con la stessa chiave della Pagina (permesso instagram_basic): follower, post, «mi piace» e commenti.
+    Persone raggiunte e visualizzazioni vorrebbero instagram_manage_insights: si provano, se non rispondono niente."""
+    if not token:
+        return {"stato": "da collegare", "messaggio": "Manca la chiave della Pagina (FB_PAGE_TOKEN)."}
+    fz = fuso()
+    acc = (fb_get("me", token, fields="instagram_business_account{id,username,followers_count,media_count}")
+           .get("instagram_business_account"))
+    if not acc:
+        return {"stato": "da collegare", "messaggio": "Alla Pagina non è collegato nessun account Instagram (o la chiave non ha instagram_basic)."}
+    oggi = adesso.astimezone(fz).date()
+    dal = dt.datetime.combine(oggi - dt.timedelta(days=GIORNI - 1), dt.time(0), fz)
+    post = []
+    r = fb_get(f"{acc['id']}/media", token, fields="caption,timestamp,like_count,comments_count,permalink", limit=100)
+    for _ in range(10):
+        vecchi = False
+        for x in r.get("data", []):
+            t = dt.datetime.strptime(x["timestamp"], "%Y-%m-%dT%H:%M:%S%z").astimezone(fz)
+            if t < dal:
+                vecchi = True
+                continue
+            cap = x.get("caption") or ""
+            m = re.search(r"notiziebenevento\.it(/notizia/[a-z0-9-]+/)", cap)
+            mp, cm = x.get("like_count"), x.get("comments_count")
+            post.append({"quando": t.isoformat(timespec="minutes"), "titolo": cap.split("\n")[0][:160],
+                         "link": x.get("permalink"), "notizia": m.group(1) if m else "", "mi_piace": mp,
+                         "commenti": cm, "interazioni": (mp or 0) + (cm or 0)})
+        url = (r.get("paging") or {}).get("next")
+        if vecchi or not url:
+            break
+        r = fb_get(url, token)
+    per_giorno = collections.OrderedDict(((oggi - dt.timedelta(days=GIORNI - 1 - i)).isoformat(), [0, 0])
+                                         for i in range(GIORNI))
+    for x in post:
+        g = per_giorno.get(x["quando"][:10])
+        if g is not None:
+            g[0] += 1; g[1] += x["interazioni"]
+    meta = {}
+    for nome in ("reach", "views", "profile_views"):
+        try:
+            j = fb_get(f"{acc['id']}/insights", token, metric=nome, period="day", metric_type="total_value",
+                       since=int(dal.timestamp()), until=int(adesso.timestamp()))
+            v = ((j.get("data") or [{}])[0].get("total_value") or {}).get("value")
+            if isinstance(v, (int, float)):
+                meta[nome] = v
+        except RuntimeError:
+            continue
+    return {"stato": "ok", "profilo": f"https://www.instagram.com/{acc.get('username')}/", "nome": acc.get("username"),
+            "follower": acc.get("followers_count"), "post_totali": acc.get("media_count"),
+            "storico": storico_aggiornato(storico_prima, oggi, acc.get("followers_count"), "follower"),
+            "giorni": [{"data": k, "post": v[0], "interazioni": v[1]} for k, v in per_giorno.items()],
+            "post": sorted(post, key=lambda x: x["quando"], reverse=True), "meta": meta}
+
+
+# ---------- Telegram (il canale t.me/notiziebenevento) ----------
+TG_WEB = "https://t.me/s/notiziebenevento"
+
+
+def numero_tg(t):
+    """«1.2K» → 1200 (Telegram scrive così iscritti e visualizzazioni)."""
+    t = (t or "").strip().replace(",", ".").replace(" ", "")
+    molt = {"K": 1000, "M": 1000000}.get(t[-1:].upper(), 1)
+    try:
+        return int(round(float(t[:-1] if molt > 1 else t) * molt))
+    except ValueError:
+        return None
+
+
+def telegram(adesso, storico_prima):
+    """Dalla pagina pubblica del canale (niente chiave): iscritti e, messaggio per messaggio, quante volte è stato
+    visto. Si va indietro pagina per pagina fino a 30 giorni fa."""
+    import html as H
+    fz = fuso()
+    oggi = adesso.astimezone(fz).date()
+    dal = dt.datetime.combine(oggi - dt.timedelta(days=GIORNI - 1), dt.time(0), fz)
+    messaggi, iscritti, prima_id = {}, None, None
+    for _ in range(20):
+        req = urllib.request.Request(TG_WEB + (f"?before={prima_id}" if prima_id else ""),
+                                     headers={"User-Agent": "Mozilla/5.0 (notiziebenevento.it)", "Accept-Language": "en"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            pagina = r.read().decode("utf-8", "replace")
+        if iscritti is None:
+            m = re.search(r'counter_value">([^<]+)</span>\s*<span class="counter_type">subscriber', pagina)
+            iscritti = numero_tg(m.group(1)) if m else None
+        ids, piu_vecchio = [], None
+        for b in re.split(r'(?=<div class="tgme_widget_message_wrap)', pagina)[1:]:
+            mid, t = re.search(r'data-post="[^"/]+/(\d+)"', b), re.search(r'<time[^>]*datetime="([^"]+)"', b)
+            if not mid or not t:
+                continue
+            mid, t = int(mid.group(1)), dt.datetime.fromisoformat(t.group(1)).astimezone(fz)
+            ids.append(mid)
+            piu_vecchio = min(piu_vecchio, t) if piu_vecchio else t
+            v = re.search(r'tgme_widget_message_views">([^<]+)<', b)
+            if not v or t < dal:   # i messaggi di servizio (canale creato, foto) non hanno visualizzazioni
+                continue
+            tx = re.search(r'tgme_widget_message_text[^>]*>(.*?)</div>', b, re.S)
+            testo = H.unescape(re.sub(r"<[^>]+>", " ", re.sub(r"<br\s*/?>", "\n", tx.group(1)))) if tx else ""
+            no = re.search(r"notiziebenevento\.it(/notizia/[a-z0-9-]+/)", b)
+            messaggi[mid] = {"quando": t.isoformat(timespec="minutes"),
+                             "titolo": re.sub(r"\s+", " ", testo.strip().split("\n")[0]).strip()[:160],
+                             "link": f"https://t.me/notiziebenevento/{mid}", "notizia": no.group(1) if no else "",
+                             "aggiornamento": testo.lstrip().startswith("🔴"), "viste": numero_tg(v.group(1))}
+        if not ids or min(ids) <= 1 or (piu_vecchio and piu_vecchio < dal):
+            break
+        prima_id = min(ids)
+    per_giorno = collections.OrderedDict(((oggi - dt.timedelta(days=GIORNI - 1 - i)).isoformat(), [0, 0])
+                                         for i in range(GIORNI))
+    for x in messaggi.values():
+        g = per_giorno.get(x["quando"][:10])
+        if g is not None:
+            g[0] += 1; g[1] += x["viste"] or 0
+    return {"stato": "ok", "canale": "https://t.me/notiziebenevento", "iscritti": iscritti,
+            "storico": storico_aggiornato(storico_prima, oggi, iscritti, "iscritti"),
+            "giorni": [{"data": k, "messaggi": v[0], "viste": v[1]} for k, v in per_giorno.items()],
+            "messaggi": sorted(messaggi.values(), key=lambda x: x["quando"], reverse=True)}
+
+
+# ---------- puntualità: i giri dell'agente e le pubblicazioni su GitHub ----------
+REPO = "ernbale/notizie-benevento"
+ORARIO_DAL = "2026-10-22"   # da qui un giro ogni ora, dalle 6 alle 22 (il giro delle 23 pubblica solo con l'allerta)
+ORE_GIRI = range(6, 23)
+
+
+def gh_get(percorso, token):
+    req = urllib.request.Request(f"https://api.github.com/{percorso}", headers={
+        "Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json", "User-Agent": "nb-statistiche"})
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            return json.load(r)
+    except urllib.error.HTTPError as e:
+        raise RuntimeError(f"GitHub {e.code}") from None
+
+
+def puntualita(token, adesso, giri_prima=None):
+    """Per ogni giro dell'agente (il commit «Notizie delle HH:MM»): quanto ci ha messo ad andare online (dalla spinta
+    su GitHub alla fine della prima pubblicazione riuscita partita dopo), i giri mancati, le pubblicazioni annullate
+    o rilanciate (dalla sentinella o a mano) e le sentinelle rosse."""
+    if not token:
+        return {"stato": "da collegare", "messaggio": "Manca la chiave di GitHub (GH_TOKEN) nel passo delle statistiche."}
+    fz = fuso()
+    oggi = adesso.astimezone(fz).date()
+    dal = oggi - dt.timedelta(days=GIORNI - 1)
+    iso = lambda x: dt.datetime.fromisoformat(x.replace("Z", "+00:00")).astimezone(fz)
+    corse = []
+    for pag in range(1, 11):
+        r = gh_get(f"repos/{REPO}/actions/workflows/pubblica.yml/runs?per_page=100&page={pag}&created=%3E%3D{dal.isoformat()}", token)
+        corse += r.get("workflow_runs", [])
+        if len(r.get("workflow_runs", [])) < 100:
+            break
+    # quando il giro è andato online: la fine della prima pubblicazione riuscita partita dopo la sua spinta (l'ora
+    # esatta la dà solo l'elenco dei lavori della pubblicazione: una domanda in più a GitHub, quindi i giri già
+    # misurati si riprendono dal dati.json di prima e si misurano solo quelli nuovi degli ultimi 7 giorni)
+    gia = {g["spinta"]: g["minuti"] for g in giri_prima or [] if isinstance(g, dict) and g.get("minuti") is not None}
+    riuscite = sorted((iso(c["created_at"]), c["id"]) for c in corse
+                      if c.get("status") == "completed" and c.get("conclusion") == "success")
+    fine_di = {}
+
+    def fine(id_corsa):
+        if id_corsa not in fine_di:
+            lavori = gh_get(f"repos/{REPO}/actions/runs/{id_corsa}/jobs", token).get("jobs", [])
+            fini = [iso(x["completed_at"]) for x in lavori if x.get("completed_at")]
+            fine_di[id_corsa] = max(fini) if fini else None
+        return fine_di[id_corsa]
+    giri = []
+    for c in corse:
+        m = re.match(r"Notizie delle (\d{1,2}):(\d{2})", c.get("display_title") or "")
+        if c.get("event") != "push" or not m:
+            continue
+        spinta = iso(c["created_at"])
+        chiave = spinta.isoformat(timespec="minutes")
+        minuti = gia.get(chiave)
+        if minuti is None and adesso - spinta < dt.timedelta(days=7):
+            dopo = next((rid for t, rid in riuscite if t >= spinta - dt.timedelta(seconds=5)), None)
+            online = fine(dopo) if dopo else None
+            minuti = round((online - spinta).total_seconds() / 60) if online else None
+        giri.append({"giorno": spinta.date().isoformat(), "ora": f"{int(m.group(1)):02d}:{m.group(2)}",
+                     "spinta": chiave, "minuti": minuti})
+    giri.sort(key=lambda g: g["spinta"])
+    giorni = []
+    for i in range(GIORNI):
+        d = (dal + dt.timedelta(days=i)).isoformat()
+        gg = [g for g in giri if g["giorno"] == d]
+        minuti = [g["minuti"] for g in gg if g["minuti"] is not None]
+        mancati = None
+        if d >= ORARIO_DAL:
+            fatte = {int(g["ora"][:2]) for g in gg}
+            limite = adesso.astimezone(fz) - dt.timedelta(minutes=75)
+            mancati = [h for h in ORE_GIRI if h not in fatte and
+                       dt.datetime.combine(dt.date.fromisoformat(d), dt.time(h, 5), fz) <= limite]
+        giorni.append({"data": d, "giri": len(gg), "mancati": mancati,
+                       "media": round(sum(minuti) / len(minuti)) if minuti else None, "max": max(minuti) if minuti else None})
+    sentinelle = gh_get(f"repos/{REPO}/actions/workflows/sentinella.yml/runs?per_page=100&created=%3E%3D{dal.isoformat()}",
+                        token).get("workflow_runs", [])
+    return {"stato": "ok", "giri": giri, "giorni": giorni,
+            "annullate": sum(1 for c in corse if c.get("conclusion") == "cancelled"),
+            "rilanciate": sum(1 for c in corse if c.get("event") == "workflow_dispatch"),
+            "sentinella_rossa": sum(1 for c in sentinelle if c.get("conclusion") == "failure"),
+            "sentinella_ultima": max((c["created_at"] for c in sentinelle), default=None)}
+
+
+def comunicati(agente_dati):
+    """I comunicati arrivati per posta, dal diario dei giri (archivia.py li conta a ogni giro)."""
+    giri = [g for g in (agente_dati or {}).get("giri") or [] if isinstance(g.get("comunicati"), dict)]
+    if not giri:
+        return {"stato": "vuoto"}
+    per_giorno, domini = collections.Counter(), collections.Counter()
+    for g in giri:
+        per_giorno[g.get("giorno")] += g["comunicati"].get("arrivati") or 0
+        for d in g["comunicati"].get("domini") or []:
+            domini[d] += 1
+    return {"stato": "ok", "giri": len(giri), "arrivati": sum(per_giorno.values()),
+            "giorni": [{"data": k, "arrivati": v} for k, v in sorted(per_giorno.items())],
+            "domini": [{"nome": k, "comunicati": v} for k, v in domini.most_common(15)],
+            "casella": giri[0]["comunicati"].get("casella")}
 
 
 # ---------- dietro le quinte: il diario dell'agente ----------
@@ -502,14 +729,27 @@ def main():
         dati["agente"] = {"stato": "errore", "messaggio": f"Il diario non si legge: {e}"}
         print("AVVISO diario:", e, file=sys.stderr)
     parola = os.environ.get("STATISTICHE_PAROLA", "")
+    prima = dati_prima("https://" + HOST, parola)
+    fb_token = os.environ.get("FB_PAGE_TOKEN", "").strip()
     try:
-        dati["facebook"] = facebook(os.environ.get("FB_PAGE_TOKEN", "").strip(), adesso,
-                                    fb_storico_prima("https://" + HOST, parola))
+        dati["facebook"] = facebook(fb_token, adesso, (prima.get("facebook") or {}).get("storico"))
         # nei log (pubblici) solo l'esito e i nomi delle statistiche di Meta che rispondono, mai i numeri
         print("Facebook:", dati["facebook"]["stato"], "· statistiche Meta:", ", ".join(dati["facebook"].get("meta") or {}) or "nessuna")
     except Exception as e:
         dati["facebook"] = {"stato": "errore", "messaggio": f"Facebook non ha risposto: {e}"}
         print("AVVISO Facebook:", e, file=sys.stderr)
+    # gli altri canali: stesso schema (nei log solo l'esito)
+    for nome, fare in (("instagram", lambda: instagram(fb_token, adesso, (prima.get("instagram") or {}).get("storico"))),
+                       ("telegram", lambda: telegram(adesso, (prima.get("telegram") or {}).get("storico"))),
+                       ("puntualita", lambda: puntualita(os.environ.get("GH_TOKEN", "").strip(), adesso,
+                                                      (prima.get("puntualita") or {}).get("giri")))):
+        try:
+            dati[nome] = fare()
+            print(f"{nome.capitalize()}:", dati[nome]["stato"])
+        except Exception as e:
+            dati[nome] = {"stato": "errore", "messaggio": f"non ha risposto: {e}"}
+            print(f"AVVISO {nome}:", e, file=sys.stderr)
+    dati["comunicati"] = comunicati(dati.get("agente"))
     if a.in_chiaro:
         with open(a.in_chiaro, "w", encoding="utf-8") as f:
             json.dump(dati, f, ensure_ascii=False, indent=1)
