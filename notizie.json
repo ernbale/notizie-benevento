@@ -1,7 +1,60 @@
 {
- "aggiornato": "2026-10-22T18:11+02:00",
+ "aggiornato": "2026-10-22T19:09+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-5-active-network-23-ottobre-palatedeschi",
+   "titolo": "Calcio a 5, Serie A: il Benevento 5 ospita l'Active Network venerdì 23 ottobre al PalaTedeschi",
+   "titolo_google": "Benevento 5-Active Network: venerdì 23 alle 20:30",
+   "sintesi": "Dopo la pausa torna la Serie A di calcio a 5: venerdì 23 ottobre alle 20:30 il GG Team Wear Benevento 5 gioca in casa contro l'Active Network. Rientra Davide De Crescenzo dopo un lungo infortunio.",
+   "categoria": "sport",
+   "sport": "calcio_a_5",
+   "zona": "benevento",
+   "luogo": "Benevento, PalaTedeschi",
+   "pubblicato": "2026-10-22T18:56:00+02:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Benevento 5",
+     "url": "https://ssdbenevento5.it/2026/10/22/serie-a-kinto-il-gg-team-wear-benevento-5-torna-al-palatedeschi-domani-ce-lactive-network/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Torna la Serie A di calcio a 5 dopo la pausa e il GG Team Wear Benevento 5 gioca in casa. Venerdì 23 ottobre alle 20:30, al PalaTedeschi, i giallorossi dell'allenatore Fausto Scarpitti ospitano l'Active Network.",
+      "fonti": [
+       "Benevento 5"
+      ]
+     },
+     {
+      "testo": "La partita è arbitrata da Salvatore Pagano di Catania e Denis Prekaj di Treviglio; il cronometrista è Antonio Nappo. Si può vedere in diretta sul canale YouTube della Divisione Calcio a 5.",
+      "fonti": [
+       "Benevento 5"
+      ]
+     },
+     {
+      "testo": "In casa Benevento c'è il rientro di Davide De Crescenzo, che torna a disposizione dopo un lungo stop per infortunio. Le ultime due gare erano andate male: il 3 ottobre la sconfitta per 5-1 nel derby col Napoli e il 10 ottobre quella a Roma, contro la Roma 1927.",
+      "fonti": [
+       "Benevento 5"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Benevento 5",
+      "titolo": "Serie A KINTO, il GG Team Wear Benevento 5 torna al PalaTedeschi: domani c’è l’Active Network",
+      "url": "https://ssdbenevento5.it/2026/10/22/serie-a-kinto-il-gg-team-wear-benevento-5-torna-al-palatedeschi-domani-ce-lactive-network/",
+      "data": "22 ott, 18:56"
+     }
+    ]
+   }
+  },
   {
    "id": "benevento-scuolabus-contrade-sospeso-23-ottobre",
    "titolo": "Benevento, da venerdì 23 ottobre niente scuolabus nelle contrade per la mancanza di carburante",
@@ -678,11 +731,11 @@
    "id": "benevento-calcio-arezzo-24-ottobre-catanzaro-27-ottobre-biglietti",
    "titolo": "Benevento Calcio: sabato 24 ottobre ad Arezzo, martedì 27 al Vigorito con il Catanzaro, via alla prevendita",
    "titolo_google": "Benevento Calcio: Arezzo sabato, Catanzaro martedì, biglietti",
-   "sintesi": "Il Benevento gioca sabato 24 ottobre alle 19:30 ad Arezzo (arbitro Fourneau) e martedì 27 alle 19:00 al Vigorito con il Catanzaro. Biglietti solo nei punti vendita ETES autorizzati, non online.",
+   "sintesi": "Il Benevento gioca sabato 24 ottobre alle 19:30 ad Arezzo (arbitro Fourneau) e martedì 27 alle 19:00 al Vigorito con il Catanzaro. Biglietti solo nei punti vendita ETES autorizzati, non online. Giovedì 22 alle 18:08 i biglietti emessi per il Catanzaro erano 249, di cui 210 per gli ospiti.",
    "categoria": "sport",
    "zona": "benevento",
    "luogo": "Benevento",
-   "pubblicato": "2026-10-21T18:20:00+02:00",
+   "pubblicato": "2026-10-22T18:23:00+02:00",
    "stato": "una_fonte",
    "rilevante": false,
    "fonti": [
@@ -698,31 +751,50 @@
    "articolo": {
     "racconto": [
      {
+      "testo": "Giovedì 22 ottobre alle 18:08 i biglietti emessi per Benevento-Catanzaro erano 249: 39 per il settore locali e 210 per il settore ospiti, riservato ai tifosi calabresi. Per la trasferta di Arezzo i tagliandi venduti nel settore ospiti erano 151. Mercoledì 21 alle 18:05 erano appena 9, secondo i dati diffusi da TV7.",
+      "fonti": [
+       "TV7 Benevento (22/10)"
+      ],
+      "giorno": "2026-10-22"
+     },
+     {
       "testo": "Il Benevento ha due partite di Serie B in quattro giorni. Sabato 24 ottobre alle 19:30 gioca ad Arezzo, allo stadio «Città di Arezzo», nell'ottava giornata: arbitra Francesco Fourneau di Roma 1.",
       "fonti": [
        "TV7 Benevento (Arezzo)"
-      ]
+      ],
+      "giorno": "2026-10-21"
      },
      {
       "testo": "Martedì 27 ottobre alle 19:00 al Ciro Vigorito arriva il Catanzaro, per la nona giornata: è la sesta partita casalinga dei giallorossi, che in casa hanno battuto Verona 3-1 e Cesena 2-0, pareggiato con Sudtirol 1-1 e Vicenza 2-2 e perso con il Modena 2-1.",
       "fonti": [
        "TV7 Benevento"
-      ]
+      ],
+      "giorno": "2026-10-21"
      },
      {
       "testo": "La prevendita è aperta dalle 15 di mercoledì 21 ottobre fino alle 19 del 27, solo nei punti vendita ETES autorizzati: non si compra online e non si può cambiare il nome sul biglietto. Si parte da 13 euro (curva sud e curva nord family; 11 il ridotto) fino a 50 euro per la tribuna centrale; il settore ospiti costa 13 euro. In più ci sono 2 euro di commissioni.",
       "fonti": [
        "TV7 Benevento"
-      ]
+      ],
+      "giorno": "2026-10-21"
      },
      {
       "testo": "I botteghini del Vigorito sono aperti fino a lunedì 26 ottobre in orari diversi di giorno in giorno (per esempio giovedì 22 e venerdì 23 dalle 9 alle 12 e dalle 15 alle 18) e restano chiusi il giorno della partita. Lo stadio si apre alle 17 e il parcheggio davanti ai distinti, in via Casselli, dalle 16. Alle 18:05 di mercoledì i biglietti emessi erano 9.",
       "fonti": [
        "TV7 Benevento"
+      ],
+      "giorno": "2026-10-21"
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "22 ottobre, 18:08",
+      "fatto": "249 biglietti emessi per Benevento-Catanzaro (39 locali, 210 ospiti); 151 ospiti per Arezzo.",
+      "fonti": [
+       "TV7 Benevento (22/10)"
       ]
      }
     ],
-    "cronologia": [],
     "concordano": [],
     "divergono": [],
     "non_si_sa": [
@@ -740,8 +812,21 @@
       "titolo": "SERIE BKT 2026-2027: AREZZO-BENEVENTO, DIRIGE FOURNEAU.",
       "url": "https://www.tvsette.net/serie-bkt-2026-2027-arezzo-benevento-dirige-fourneau/",
       "data": "21 ott, 13:19"
+     },
+     {
+      "nome": "TV7 Benevento (22/10)",
+      "titolo": "Calcio. Benevento-Catanzaro, 249 biglietti emessi: 210 per il settore ospiti",
+      "url": "https://www.tvsette.net/calcio-benevento-catanzaro-249-biglietti-emessi-210-per-il-settore-ospiti/",
+      "data": "22 ott, 18:23"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Giovedì 22 ottobre alle 18:08 i biglietti emessi per Benevento-Catanzaro erano 249 (39 locali, 210 ospiti); 151 quelli venduti per il settore ospiti di Arezzo.",
+     "fonti": [
+      "TV7 Benevento (22/10)"
+     ],
+     "quando": "2026-10-22T19:09+02:00"
+    }
    },
    "sport": "calcio",
    "immagine": "calcio",
