@@ -456,6 +456,8 @@ Durante il giro scrivi in `/tmp/fonti.txt` una riga per ogni fonte: `nome | stat
   Ottopagine, Il Sannio Quotidiano, NTR24, Lab TV, Cronache del Sannio, Fremondoweb, Gazzetta di Benevento,
   Anteprima24, InfoSannio, Benevento Giornale, BeneventoNews24, Il Mattino, TV7 Benevento, Il Caudino; più la riga
   `Comuni (da casa, controllato HH:MM) | letta | N avvisi nuovi` (o una riga per ognuno dei 19 Comuni letti a mano).
+- Una riga per ogni **ricerca mirata**: `Ricerca: parole cercate | fatta | cosa ha trovato`. Almeno 6: 4 per le
+  notizie (comprese quelle per le storie in corso) e 2 per gli eventi.
 
 ## Prima di consegnare (obbligatorio)
 

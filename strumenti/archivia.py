@@ -114,6 +114,8 @@ def controlla_registro(percorso, err):
             continue
         voci.append((norma(pezzi[0]), pezzi[1].lower(), r.lower()))
         stato = pezzi[1].lower()
+        if norma(pezzi[0]).startswith("ricerca"):
+            continue
         if not stato.startswith(("letta", "non raggiungibile", "vuota")):
             err.append(f"registro delle fonti: stato {pezzi[1]!r} per {pezzi[0]!r} (scrivi letta, non raggiungibile o vuota)")
         elif stato.startswith("non raggiungibile") and not any(k in r.lower() for k in ("riprov", "copia di casa ferma")):
@@ -123,6 +125,11 @@ def controlla_registro(percorso, err):
     if mancano:
         err.append(f"registro delle fonti: {'manca 1 fonte' if len(mancano) == 1 else f'mancano {len(mancano)} fonti'}: "
                    f"{', '.join(mancano)}. Leggile e aggiungi una riga per ognuna, col nome scritto così")
+    ricerche = sum(v[0].startswith("ricerca") for v in voci)
+    if ricerche < 6:   # 22 ott 2026: il giro di prova ne aveva fatte 4 su 6
+        err.append(f"registro delle fonti: {ricerche} ricerche mirate, ne servono almeno 6 (4 per le notizie, comprese le "
+                   "storie in corso, e 2 per gli eventi): fai quelle che mancano e scrivi per ognuna «Ricerca: parole "
+                   "cercate | fatta | cosa ha trovato»")
     comuni = any("comuni" in v[0] for v in voci) or sum(v[0].startswith("comune") for v in voci) >= 19
     if not comuni:
         err.append("registro delle fonti: manca la riga dei Comuni (file comuni.json da casa, oppure i 19 Comuni a mano, "
