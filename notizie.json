@@ -1,7 +1,310 @@
 {
- "aggiornato": "2026-10-22T09:11+02:00",
+ "aggiornato": "2026-10-22T10:11+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "frasso-telesino-benessere-aree-interne-volontariato",
+   "titolo": "Frasso Telesino, parte «Il Benessere nelle Aree interne»: un incontro al mese contro la solitudine",
+   "titolo_google": "Frasso Telesino, volontariato contro la solitudine",
+   "sintesi": "A Frasso Telesino associazioni e Comune promuovono un incontro al mese, sempre di lunedì, su memoria, prevenzione e socializzazione. Il primo si è già tenuto.",
+   "categoria": "altro",
+   "zona": "telesina",
+   "luogo": "Frasso Telesino",
+   "pubblicato": "2026-10-21T13:51:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/21/a-frasso-telesino-volontariato-contro-la-solitudine-nasce-il-benessere-nelle-aree-interne-succede-sempre-di-lunedi/"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/22/a-frasso-telesino-il-volontariato-fa-rete-contro-la-solitudine/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Frasso Telesino è nato il progetto «Il Benessere nelle Aree interne: succede sempre di lunedì!», contro solitudine ed emarginazione, con attenzione ai giovani. L'idea è della Pro Loco, insieme a Pubblica Assistenza Frasso Telesino, Frasso nel Cuore, Le Ali della Libertà e al Comune, con il sindaco Pasquale Viscusi. Li affianca il CSV Irpinia Sannio (Cesvolab), il centro che sostiene il volontariato.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Gli incontri sono uno al mese, sempre di lunedì, con una pausa a dicembre e la ripresa a gennaio. Il primo si è tenuto al Polo delle Associazioni ed era sulla sicurezza stradale, con Polizia di Stato, ANMIL e AIFVS. Seguiranno temi come violenza di genere, dipendenze, bullismo e cyberbullismo, emigrazione e radici.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Il programma ha quattro formati: «A memoria», con racconti e foto tra generazioni; «Dai, parliamone», sul benessere e la prevenzione con professionisti; un cineforum con dibattito; «Officina creativa», con laboratori di manualità, teatro e fotografia.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Il nome del progetto e i temi: cultura, memoria e prevenzione contro solitudine ed emarginazione.",
+      "fonti": [
+       "NTR24",
+       "Il Sannio Quotidiano"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Le date dei prossimi incontri e gli orari.",
+     "Come partecipare."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "A Frasso Telesino volontariato contro la solitudine: nasce “Il Benessere nelle Aree interne: succede sempre di lunedì”",
+      "url": "https://www.ntr24.tv/2026/10/21/a-frasso-telesino-volontariato-contro-la-solitudine-nasce-il-benessere-nelle-aree-interne-succede-sempre-di-lunedi/",
+      "data": "21 ott, 13:51"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "A Frasso Telesino il volontariato fa rete contro la solitudine",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/22/a-frasso-telesino-il-volontariato-fa-rete-contro-la-solitudine/",
+      "data": "22 ott, 07:15"
+     }
+    ]
+   }
+  },
+  {
+   "id": "benevento-via-annunziata-chiusa-sabato-24-ottobre",
+   "titolo": "Benevento, via Annunziata chiusa al traffico sabato 24 ottobre mattina tra via Pellegrini e via Borgia",
+   "titolo_google": "Benevento, via Annunziata chiusa sabato 24 ottobre",
+   "sintesi": "Sabato 24 ottobre, dalle 9:30 fino alle 13:30-14:00, il tratto di via Annunziata tra via Tenente Pellegrini e via Borgia sarà chiuso ai veicoli, tranne residenti, garage e mezzi di soccorso.",
+   "categoria": "strade",
+   "immagine": "strada-chiusa",
+   "zona": "benevento",
+   "luogo": "Benevento, via Annunziata",
+   "pubblicato": "2026-10-21",
+   "in_vigore_fino": "2026-10-24",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Albo pretorio Benevento",
+     "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80002"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Sabato 24 ottobre 2026 un tratto di via Annunziata, a Benevento, resta chiuso ai veicoli dalle 9:30. Il tratto va dall'incrocio con via Tenente Pellegrini a quello con via Borgia. Possono passare solo residenti, chi ha il garage in quel tratto, i mezzi di soccorso e quelli d'emergenza.",
+      "fonti": [
+       "Albo pretorio Benevento"
+      ]
+     },
+     {
+      "testo": "La chiusura dura fino a quando finisce un intervento, che l'ordinanza prevede si concluda non oltre le 13:30-14:00. Nel solo tratto vicino al civico 6 c'è anche il divieto di sosta e fermata con rimozione, valido per tutti, compresi i titolari del permesso per la zona a traffico limitato Annunziata. L'ordinanza è la n. 430 del Servizio Traffico, del 21 ottobre.",
+      "fonti": [
+       "Albo pretorio Benevento"
+      ]
+     }
+    ],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Che intervento sia in programma in via Annunziata: l'oggetto dell'ordinanza non lo dice."
+    ],
+    "fonti": [
+     {
+      "nome": "Albo pretorio Benevento",
+      "titolo": "Chiusura al traffico veicolare del tratto di Via Annunziata compreso tra l'incrocio con Via Tenente Pellegrini e l'incrocio con Via Borgia, eccetto residenti, titolari di autorimesse nel suddetto segmento interessato, mezzi di soccorso e mezzi d'emergenza, ed istituzione, nel solo tratto adiacente il civico 6 di Via Annunziata, divieto di sosta e fermata, con rimozione e valenza ambo i lati anche nei confronti dei titolari di Autorizzazione Transito e Sosta in Ztl Annunziata, limitatamente alla mattinata di Sabato 24 Ottobre 2026, a partire dalle ore 9:30 fino a cessate esigenze subordinate all'avvenuta esecuzione dell'intervento con conclusione prevista non oltre le ore 13:30 / 14:00",
+      "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80002",
+      "data": "21 ott"
+     }
+    ]
+   },
+   "foto": "strada-chiusa"
+  },
+  {
+   "id": "benevento-via-dei-canali-passaggio-a-livello-chiuso",
+   "titolo": "Benevento, chiuso il passaggio a livello di via dei Canali, in contrada Piano Morra",
+   "titolo_google": "Benevento, chiuso il passaggio a livello di via dei Canali",
+   "sintesi": "Con un'ordinanza del 21 ottobre il Comune di Benevento ha chiuso al traffico di auto e pedoni il passaggio a livello di via dei Canali, in contrada Piano Morra, sulla linea Avellino-Benevento.",
+   "categoria": "strade",
+   "immagine": "strada-chiusa",
+   "zona": "benevento",
+   "luogo": "Benevento, contrada Piano Morra",
+   "pubblicato": "2026-10-21",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Albo pretorio Benevento",
+     "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80016"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Comune di Benevento ha chiuso al traffico di veicoli e pedoni il passaggio a livello di via dei Canali, in contrada Piano Morra. L'ordinanza n. 443 del Servizio Traffico è del 21 ottobre 2026 ed è pubblicata nell'albo pretorio del Comune.",
+      "fonti": [
+       "Albo pretorio Benevento"
+      ]
+     },
+     {
+      "testo": "Il passaggio a livello è l'attraversamento della ferrovia al chilometro 27+022 della linea Avellino-Benevento. L'oggetto dell'ordinanza non dice da quando la chiusura vale, per quanto tempo, né il motivo.",
+      "fonti": [
+       "Albo pretorio Benevento"
+      ]
+     }
+    ],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Da quando e fino a quando resta chiuso.",
+     "Il motivo della chiusura.",
+     "Quale strada alternativa è consigliata."
+    ],
+    "fonti": [
+     {
+      "nome": "Albo pretorio Benevento",
+      "titolo": "Chiusura al traffico veicolare e pedonale dell'attraversamento a raso al servizio del passaggio a livello avente ubicazione in Via dei Canali (Contrada Piano Morra) in corrispondenza del km 27 + 022 della linea ferroviaria Avellino - Benevento",
+      "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80016",
+      "data": "21 ott"
+     }
+    ]
+   },
+   "foto": "strada-chiusa-2"
+  },
+  {
+   "id": "san-giorgio-del-sannio-vandali-parco-viale-spinelli",
+   "titolo": "San Giorgio del Sannio, vandali al parco di viale Spinelli: divelto il cancello dell'area giochi",
+   "titolo_google": "San Giorgio del Sannio, vandali nel parco di viale Spinelli",
+   "sintesi": "Martedì sera, intorno alle 23, alcuni giovani hanno divelto il cancello che chiude l'area giochi del parco di viale Spinelli. La Polizia Municipale sta cercando di identificare i responsabili.",
+   "categoria": "cronaca",
+   "zona": "benevento",
+   "luogo": "San Giorgio del Sannio",
+   "pubblicato": "2026-10-22T07:24:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/22/san-giorgio-del-sannio-nuovo-atto-di-vandalismo-al-parco-e-insulti-a-ipovedente-il-sindaco-municipale-al-lavoro-per-identificare-autori/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Martedì 20 ottobre, intorno alle 23, alcuni giovani hanno divelto, probabilmente a calci, un cancelletto di ferro nel parco di viale Spinelli a San Giorgio del Sannio. Il cancello, montato da anni, chiude l'area giochi dei bambini e impedisce di scendere nella parte più bassa del parco.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "Quella zona è pericolosa per i più piccoli: ci sono cocci di vetro e pezzi di marmo rotti. Secondo il giornale gli stessi ragazzi si sono poi uniti a un gruppo più numeroso e, tra viale Spinelli e via Aldo Moro, hanno insultato senza motivo un residente. Il giornale parla di un «nuovo atto» di vandalismo nello stesso parco e di episodi simili che si ripetono.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "Il titolo dell'articolo riferisce che il sindaco ha detto che la Polizia Municipale è al lavoro per identificare gli autori.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     }
+    ],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Chi sono gli autori e quanti erano.",
+     "Quando sarà riparato il cancello.",
+     "Quali sono gli episodi precedenti nel parco: il testo letto non li descrive."
+    ],
+    "fonti": [
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "San Giorgio del Sannio – Nuovo atto di vandalismo al Parco e insulti a ipovedente, il sindaco: “Municipale al lavoro per identificare autori”",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/22/san-giorgio-del-sannio-nuovo-atto-di-vandalismo-al-parco-e-insulti-a-ipovedente-il-sindaco-municipale-al-lavoro-per-identificare-autori/",
+      "data": "22 ott, 07:24"
+     }
+    ]
+   }
+  },
+  {
+   "id": "vaccini-farmacie-asl-benevento-avellino-alaia",
+   "titolo": "Vaccini in farmacia, il consigliere regionale Alaia denuncia: le ASL di Benevento e Avellino non consegnano le dosi",
+   "titolo_google": "Vaccini in farmacia, dosi ferme nelle ASL di Benevento",
+   "sintesi": "Il consigliere regionale Enzo Alaia sostiene che le ASL di Benevento e Avellino non hanno ancora consegnato i vaccini alle farmacie, mentre i medici di famiglia li hanno ricevuti. Chiede spiegazioni e tempi certi.",
+   "categoria": "altro",
+   "zona": "provincia",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-22T09:59:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/22/vaccini-in-farmacia-forniture-bloccate-ad-avellino-e-benevento-alaia-denuncia-le-asl-chiariscano-perche-non-arrivano-le-dosi/"
+    },
+    {
+     "nome": "Lab TV",
+     "url": "https://www.labtv.net/attualita/2026/10/22/vaccini-in-farmacia-forniture-bloccate-ad-avellino-e-benevento-alaia-denuncia-le-asl-chiariscano-perche-non-arrivano-le-dosi/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Giovedì 22 ottobre il consigliere regionale Enzo Alaia, capogruppo di Casa Riformista – Noi di Centro, ha denunciato che le ASL di Benevento e di Avellino non stanno consegnando i vaccini alle farmacie convenzionate. Secondo lui le dosi sono invece arrivate regolarmente ai medici di famiglia. Alaia chiede ai vertici delle due ASL di spiegare quali ostacoli, organizzativi o amministrativi, bloccano le consegne.",
+      "fonti": [
+       "NTR24",
+       "Lab TV"
+      ]
+     },
+     {
+      "testo": "Il contesto è la «Farmacia dei Servizi», il progetto con cui la Regione Campania porta alcune prestazioni gratuite nelle farmacie: la delibera regionale n. 355 del 9 luglio 2026 è stata approvata insieme a Federfarma e Assofarm Campania. Tra le prestazioni ci sono l'antinfluenzale per gli over 65, il vaccino anti-HPV per i 14-15enni e gli screening per l'epatite C e del cuore.",
+      "fonti": [
+       "NTR24",
+       "Lab TV"
+      ]
+     },
+     {
+      "testo": "Alaia dice che senza le dosi il piano rischia di restare sulla carta in Irpinia e nel Sannio, dove gli ospedali sono lontani e mancano medici di base. Il presidente dell'Ordine dei medici di Avellino, Sellitto, secondo l'articolo riconosce queste difficoltà. Il consigliere chiede tempi certi per le consegne e aggiunge che la sola ASL di Avellino non ha ancora attivato in farmacia lo screening del colon-retto.",
+      "fonti": [
+       "NTR24",
+       "Lab TV"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "La denuncia di Alaia, e le tre richieste alle ASL: spiegazioni, responsabilità, tempi certi per le consegne.",
+      "fonti": [
+       "NTR24",
+       "Lab TV"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Cosa rispondono le ASL di Benevento e di Avellino.",
+     "Perché le dosi non sono ancora arrivate alle farmacie."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Vaccini in farmacia, forniture bloccate ad Avellino e Benevento. Alaia denuncia: «Le ASL chiariscano perché non arrivano le dosi»",
+      "url": "https://www.ntr24.tv/2026/10/22/vaccini-in-farmacia-forniture-bloccate-ad-avellino-e-benevento-alaia-denuncia-le-asl-chiariscano-perche-non-arrivano-le-dosi/",
+      "data": "22 ott, 09:59"
+     },
+     {
+      "nome": "Lab TV",
+      "titolo": "Vaccini in farmacia, forniture bloccate ad Avellino e Benevento. Alaia denuncia: «Le ASL chiariscano perché non arrivano le dosi»",
+      "url": "https://www.labtv.net/attualita/2026/10/22/vaccini-in-farmacia-forniture-bloccate-ad-avellino-e-benevento-alaia-denuncia-le-asl-chiariscano-perche-non-arrivano-le-dosi/",
+      "data": "22 ott, 09:47"
+     }
+    ]
+   }
+  },
   {
    "id": "eav-carburante-bus-sostitutivi-napoli-benevento-sospesi-22-ottobre",
    "titolo": "Valle Caudina, EAV sospende dal 22 ottobre i bus che sostituiscono il treno Napoli-Benevento per la mancanza di gasolio",
@@ -1572,7 +1875,7 @@
    "categoria": "altro",
    "zona": "provincia",
    "luogo": "Sannio",
-   "pubblicato": "2026-10-21T16:13:00+02:00",
+   "pubblicato": "2026-10-22T09:30:00+02:00",
    "stato": "ufficiale",
    "rilevante": false,
    "fonti": [
@@ -1603,22 +1906,40 @@
     {
      "nome": "Il Sannio Quotidiano (Colle Sannita)",
      "url": "https://www.ilsannioquotidiano.it/2026/10/21/raccolta-rifiuti-possibili-ritardi-anche-a-colle-sannita/"
+    },
+    {
+     "nome": "Comune di Apollosa",
+     "url": "https://www.comune.apollosa.bn.it/Novita/Avvisi/AVVISO-ALLA-CITTADINANZA22"
+    },
+    {
+     "nome": "Il Sannio Quotidiano (22/10)",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/22/blocco-tir-chiuso-il-centro-raccolta-rifiuti-di-apice-problemi-anche-a-san-giorgio-del-sannio/"
     }
    ],
    "articolo": {
     "racconto": [
      {
+      "testo": "Giovedì 22 ottobre anche ad Apollosa la raccolta dei rifiuti è ferma. Il Comune ha avvisato che la Sogesi, la società che fa il servizio, dice di non poterlo svolgere perché con i blocchi stradali manca il carburante. La sospensione vale da oggi e dura fino a quando tornano le normali forniture di gasolio. A San Giorgio del Sannio, secondo Il Sannio Quotidiano, il sindaco Giuseppe Ricci ha chiesto di non portare fuori il secco indifferenziato previsto per la mattina del 22.",
+      "fonti": [
+       "Comune di Apollosa",
+       "Il Sannio Quotidiano (22/10)"
+      ],
+      "giorno": "2026-10-22"
+     },
+     {
       "testo": "Il blocco degli autotrasportatori arriva anche sui rifiuti. In alcuni Comuni del Sannio la raccolta non si fa, o potrebbe non farsi, perché i camion faticano a passare e a scaricare e il gasolio scarseggia.",
       "fonti": [
        "Il Sannio Quotidiano",
        "Comune di Apice"
-      ]
+      ],
+      "giorno": "2026-10-21"
      },
      {
       "testo": "A Sant'Angelo a Cupolo la raccolta è già stata fermata. A Morcone il Comune ha avvisato i cittadini che le agitazioni dell'autotrasporto potrebbero rendere difficile il passaggio dei camion della raccolta, con il rischio che l'indifferenziato (i rifiuti non separati) non venga ritirato nel giorno previsto. Secondo Il Sannio Quotidiano il rischio riguarda anche altri centri.",
       "fonti": [
        "Il Sannio Quotidiano"
-      ]
+      ],
+      "giorno": "2026-10-21"
      },
      {
       "testo": "Ad Apice è chiusa dal 20 ottobre l'isola ecologica, cioè il centro dove i cittadini portano ingombranti e rifiuti speciali. Lo ha comunicato il Comune: il Consorzio Campale Stabile, che gestisce la raccolta e il centro, ha scritto che i blocchi stradali e le difficoltà a trovare carburante gli impediscono di svuotare i cassoni e di portare i materiali negli impianti. A Cusano Mutri il Comune ha pubblicato un avviso su possibili disservizi nella raccolta e nel trasporto dei rifiuti per «forza maggiore». A Pietrelcina il Comune ha chiuso al pubblico il centro di raccolta comunale, da subito e fino a nuovo avviso, perché lo sciopero e i blocchi delle strade principali impediscono di raggiungere gli impianti dove si smaltiscono i rifiuti.",
@@ -1626,20 +1947,23 @@
        "Comune di Apice",
        "Comune di Cusano Mutri",
        "Comune di Pietrelcina"
-      ]
+      ],
+      "giorno": "2026-10-21"
      },
      {
       "testo": "A Sant'Agata de' Goti il Comune ha avvisato che da giovedì 22 ottobre il servizio di raccolta potrà fermarsi, per lo sciopero degli autotrasportatori, i blocchi stradali e le difficoltà a trovare carburante, che rendono difficile portare i rifiuti agli impianti. Ai cittadini e alle attività chiede di non esporre i rifiuti e di tenerli in casa o nei locali fino a nuova comunicazione. A San Giorgio del Sannio il Comune scrive che la raccolta sta incontrando difficoltà e che mercoledì sera, 21 ottobre, la frazione indifferenziata (i rifiuti non separati) e gli ingombranti non vanno conferiti.",
       "fonti": [
        "Comune di Sant'Agata de' Goti",
        "Comune di San Giorgio del Sannio"
-      ]
+      ],
+      "giorno": "2026-10-21"
      },
      {
       "testo": "Anche a Colle Sannita, nel Fortore, il Comune ha avvisato i cittadini di possibili ritardi. La ditta che fa la raccolta, la Irpinia Global Service, ha scritto ai Comuni che i blocchi stradali rallentano la circolazione e limitano l'accesso agli impianti dove vanno i rifiuti: possono quindi saltare o slittare alcune raccolte e, nei giorni peggiori, alcuni servizi non essere fatti.",
       "fonti": [
        "Il Sannio Quotidiano (Colle Sannita)"
-      ]
+      ],
+      "giorno": "2026-10-21"
      }
     ],
     "cronologia": [
@@ -1677,6 +2001,13 @@
       "fatto": "Il Comune di Colle Sannita avvisa di possibili ritardi nella raccolta, dopo la lettera della ditta Irpinia Global Service.",
       "fonti": [
        "Il Sannio Quotidiano (Colle Sannita)"
+      ]
+     },
+     {
+      "data": "22 ottobre",
+      "fatto": "Il Comune di Apollosa comunica la sospensione della raccolta dei rifiuti per mancanza di carburante.",
+      "fonti": [
+       "Comune di Apollosa"
       ]
      }
     ],
@@ -1729,8 +2060,28 @@
       "titolo": "Raccolta rifiuti, possibili ritardi anche a Colle Sannita",
       "url": "https://www.ilsannioquotidiano.it/2026/10/21/raccolta-rifiuti-possibili-ritardi-anche-a-colle-sannita/",
       "data": "21 ott"
+     },
+     {
+      "nome": "Comune di Apollosa",
+      "titolo": "AVVISO ALLA CITTADINANZA",
+      "url": "https://www.comune.apollosa.bn.it/Novita/Avvisi/AVVISO-ALLA-CITTADINANZA22",
+      "data": "22 ott"
+     },
+     {
+      "nome": "Il Sannio Quotidiano (22/10)",
+      "titolo": "Blocco tir: chiuso il centro raccolta rifiuti di Apice, problemi anche a San Giorgio del Sannio",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/22/blocco-tir-chiuso-il-centro-raccolta-rifiuti-di-apice-problemi-anche-a-san-giorgio-del-sannio/",
+      "data": "22 ott, 07:01"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Giovedì 22 ottobre il Comune di Apollosa ha avvisato che la raccolta dei rifiuti è sospesa da oggi per mancanza di carburante; a San Giorgio del Sannio il sindaco ha chiesto di non esporre il secco.",
+     "fonti": [
+      "Comune di Apollosa",
+      "Il Sannio Quotidiano (22/10)"
+     ],
+     "quando": "2026-10-22T10:11+02:00"
+    }
    }
   },
   {
@@ -3490,7 +3841,7 @@
    "zona": "provincia",
    "immagine": "camion",
    "luogo": "Tufara Valle",
-   "pubblicato": "2026-10-21T13:27:00+02:00",
+   "pubblicato": "2026-10-22T09:11:00+02:00",
    "stato": "confermata",
    "fonti": [
     {
@@ -3524,15 +3875,30 @@
     {
      "nome": "LabTV (22/10)",
      "url": "https://www.labtv.net/attualita/2026/10/22/protesta-tir-stretta-del-viminale-ma-nel-sannio-i-presidi-restano-tir-fermi-sullappia/"
+    },
+    {
+     "nome": "Anteprima24 (22/10)",
+     "url": "https://www.anteprima24.it/benevento/appia-telesina-protesta-viabilita/"
+    },
+    {
+     "nome": "NTR24 (22/10)",
+     "url": "https://www.ntr24.tv/2026/10/22/protesta-autotrasportatori-lemergenza-carburante-tocca-anche-la-municipale-di-benevento-cambio-temporaneo-di-fornitore/"
+    },
+    {
+     "nome": "Il Sannio Quotidiano (22/10)",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/22/carburanti-autocisterna-in-citta-scortata-dalla-polizia-caos-e-traffico-in-via-nenni/"
     }
    ],
    "articolo": {
     "aggiornamento": {
-     "testo": "Giovedì 22 ottobre, secondo LabTV, i tir restano fermi sull'Appia tra Tufara Valle e Castel del Lago mentre il Viminale stringe i controlli al Sud: in Campania sono stati scortati 500 camion. Nel pomeriggio il Consiglio dei ministri esamina un decreto con misure per autotrasporto e agricoltura.",
+     "testo": "Giovedì 22 ottobre, secondo Anteprima24 e LabTV, i tir restano fermi sull'Appia e sulla Telesina senza fermare la circolazione, mentre in Sicilia e Calabria i blocchi sono sospesi. La Municipale di Benevento ha cambiato fornitore di carburante e in città un'autocisterna è arrivata con la scorta della Polizia.",
      "fonti": [
-      "LabTV (22/10)"
+      "Anteprima24 (22/10)",
+      "LabTV (22/10)",
+      "NTR24 (22/10)",
+      "Il Sannio Quotidiano (22/10)"
      ],
-     "quando": "2026-10-22T09:11+02:00"
+     "quando": "2026-10-22T10:11+02:00"
     },
     "aggiornato": "2026-10-20T09:25:00+02:00",
     "cronologia": [
@@ -3635,6 +4001,14 @@
       "fatto": "Il Viminale intensifica i controlli al Sud (in Campania 500 tir scortati); in Sicilia e Calabria i presidi sono stati sospesi, nel Sannio restano. Convocato il Consiglio dei ministri su un decreto per autotrasporto e agricoltura.",
       "fonti": [
        "LabTV (22/10)"
+      ]
+     },
+     {
+      "data": "22 ottobre",
+      "fatto": "La Municipale di Benevento compra carburante da un nuovo fornitore; un'autocisterna scortata dalla Polizia arriva in via Nenni.",
+      "fonti": [
+       "NTR24 (22/10)",
+       "Il Sannio Quotidiano (22/10)"
       ]
      }
     ],
@@ -3783,6 +4157,24 @@
       "titolo": "Protesta Tir, stretta del Viminale ma nel Sannio i presidi restano: tir fermi sull’Appia",
       "url": "https://www.labtv.net/attualita/2026/10/22/protesta-tir-stretta-del-viminale-ma-nel-sannio-i-presidi-restano-tir-fermi-sullappia/",
       "data": "22 ott"
+     },
+     {
+      "nome": "Anteprima24 (22/10)",
+      "titolo": "Tir fermi lungo l’Appia e la Telesina: continua la protesta ma è garantita la viabilità",
+      "url": "https://www.anteprima24.it/benevento/appia-telesina-protesta-viabilita/",
+      "data": "22 ott, 08:56"
+     },
+     {
+      "nome": "NTR24 (22/10)",
+      "titolo": "Protesta autotrasportatori, l’emergenza carburante tocca anche la Municipale di Benevento: cambio temporaneo di fornitore",
+      "url": "https://www.ntr24.tv/2026/10/22/protesta-autotrasportatori-lemergenza-carburante-tocca-anche-la-municipale-di-benevento-cambio-temporaneo-di-fornitore/",
+      "data": "22 ott, 08:27"
+     },
+     {
+      "nome": "Il Sannio Quotidiano (22/10)",
+      "titolo": "Carburanti, autocisterna in città scortata dalla Polizia: caos e traffico in via Nenni",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/22/carburanti-autocisterna-in-citta-scortata-dalla-polizia-caos-e-traffico-in-via-nenni/",
+      "data": "22 ott, 07:29"
      }
     ],
     "racconto": [
@@ -3790,6 +4182,21 @@
       "testo": "Giovedì 22 ottobre i blocchi degli autotrasportatori nel Sannio vanno avanti, nonostante l'allerta meteo di mercoledì. Il Mattino conta tre presìdi: il casello di Benevento sull'A16, l'Appia a Tufara e la Telesina a San Salvatore Telesino, in direzione sia di Caserta e Benevento sia dell'A1 verso Caianello. Sulla Telesina decine di mezzi pesanti sono fermi nelle aree di sosta e nei parcheggi, e da mercoledì mattina ci sono anche gli agricoltori con i trattori.",
       "fonti": [
        "Il Mattino (22/10)"
+      ],
+      "giorno": "2026-10-22"
+     },
+     {
+      "testo": "Anteprima24 scrive che i presìdi vanno avanti sulla statale 7 Appia e sulla statale 372 Benevento-Caianello, con i tir fermi ad Arpaia e a San Salvatore Telesino. La circolazione non si è mai interrotta, ma è rallentata. Gli agricoltori scendono in piazza con i loro mezzi per il caro carburante e per i prodotti freschi rimasti invenduti. Le promesse di aiuti di categorie e istituzioni, scrive il giornale, non sono ritenute sufficienti.",
+      "fonti": [
+       "Anteprima24 (22/10)"
+      ],
+      "giorno": "2026-10-22"
+     },
+     {
+      "testo": "Il carburante manca anche al Comune. La Polizia Municipale di Benevento ha cambiato fornitore: il distributore abituale aveva finito le scorte, così con una determina di due giorni fa il Comune ha comprato benzina e gasolio da una ditta con un impianto vicino al Comando, per un massimo di 1.500 euro. È una soluzione temporanea: finisce quando torna la fornitura regolare o quando i soldi sono spesi. In città, scrive Il Sannio Quotidiano, un'autocisterna di carburante è arrivata scortata dalla Polizia e ha provocato traffico in via Nenni.",
+      "fonti": [
+       "NTR24 (22/10)",
+       "Il Sannio Quotidiano (22/10)"
       ],
       "giorno": "2026-10-22"
      },
