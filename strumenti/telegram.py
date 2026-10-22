@@ -113,11 +113,21 @@ def main():
             stato = json.load(f)
     except (OSError, ValueError):
         stato = None
+    subito = int(os.environ.get("TG_SUBITO") or 0)   # solo quando lo chiede il proprietario, dal pulsante di GitHub
     if stato is None:   # prima volta (o ricordo perso): segno tutto come già uscito
         gia = {n["id"] for n in notizie}
         gia |= {f"{n['id']}@{((n.get('articolo') or {}).get('aggiornamento') or {}).get('quando')}" for n in notizie}
         stato = {"mandati": {k: adesso.isoformat(timespec="minutes") for k in gia}}
         print(f"Telegram: nessun ricordo di cosa è già uscito, segno come già mandate {len(notizie)} notizie e riparto da qui")
+    if subito:   # le ultime notizie uscite, adesso (per il primo messaggio del canale)
+        ultime = sorted((x for x in notizie if quando(x, adesso) and quando(x, adesso) <= adesso),
+                        key=lambda x: quando(x, adesso))[-subito:]
+        for n in ultime:
+            chiama(token, "sendMessage", {"chat_id": CANALE, "text": testo("nuova", n), "parse_mode": "HTML",
+                                          "link_preview_options": {"url": f"{SITO}/notizia/{n['id']}/",
+                                                                   "prefer_large_media": True}})
+            stato["mandati"][n["id"]] = adesso.isoformat(timespec="minutes")
+            print(f"Telegram: mandata subito {n['id']}")
     else:
         sera = adesso.hour == 23
         if not DALLE <= adesso.hour < ALLE and not sera:
