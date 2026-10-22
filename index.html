@@ -801,11 +801,16 @@
     return Math.min(Date.parse(p + "T12:00:00+01:00"), mezzanotte + Math.max(0, adesso - mezzanotte) / 2);
   }
   // Importanza che cala col tempo (metà ogni 18 ore): una notizia importante tiene l'apertura
-  // circa un giorno e mezzo, poi lascia il posto a quelle nuove.
+  // circa un giorno e mezzo, poi lascia il posto a quelle nuove. Il tempo si conta dall'ultimo «Aggiornamento»,
+  // se c'è: una storia che va avanti oggi è una notizia di oggi (22 ott 2026: i tir aggiornati alle 7:22 contavano
+  // ancora da ieri). Un avviso scaduto (allerta finita, chiusura finita) non va più in testa alla pagina.
   function rilievo(n, adesso) {
-    var ore = Math.max(0, (adesso - tempo(n)) / 36e5);
+    var t = tempo(n), ag = ((n.articolo || {}).aggiornamento || {}).quando;
+    if (ag && !isNaN(Date.parse(ag))) t = Math.max(t, Date.parse(ag));
+    var ore = Math.max(0, (adesso - t) / 36e5);
     var importanza = (n.rilevante ? 5 : 1) + Math.min(Array.isArray(n.fonti) ? n.fonti.length : 1, 6) * 0.25;
-    return importanza * Math.pow(0.5, ore / 18);
+    var scaduto = n.in_vigore_fino && n.in_vigore_fino < new Date(adesso).toLocaleDateString("sv-SE", { timeZone: TZ });
+    return importanza * Math.pow(0.5, ore / 18) * (scaduto ? 0.1 : 1);
   }
   // Avvisi ufficiali su strade e lavori ancora validi: hanno il loro riquadro nella colonna di destra.
   function eAvviso(n) {
