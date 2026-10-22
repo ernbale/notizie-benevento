@@ -181,7 +181,10 @@ Regole:
   aggiornata (ferma a luglio 2024): non usarla come fonte dello stato di allerta.
 - Scrivi sempre livello, tipo (pioggia, temporali, vento…), **da quando a quando** in ora italiana, e cosa
   raccomanda la Protezione civile se lo dice. Niente toni allarmisti: i fatti e gli orari.
-- `in_vigore_fino` = il giorno in cui finisce l'allerta o la chiusura. Allerta **arancione o rossa**: `rilevante: true`.
+- `in_vigore_fino` = l'ultimo giorno **dell'allerta del titolo** (o della chiusura). Allerta **arancione o rossa**:
+  `rilevante: true`. Se il giorno dopo c'è un'allerta più bassa (per esempio gialla dopo l'arancione), non allungare
+  `in_vigore_fino` della notizia vecchia: l'allerta del giorno la mostra già il sito in alto; se serve, scrivi una
+  notizia nuova per il giorno nuovo. Il giorno dopo la fine togli `rilevante`: è finita.
 - Le chiusure di più Comuni per la stessa allerta: **una sola notizia** aggiornata a ogni giro con l'elenco dei Comuni
   e cosa chiude (es. «Allerta arancione: chiusi scuole e parchi a Benevento, Montesarchio e Telese»), ogni Comune con
   la sua fonte (comunicato o ordinanza del Comune, oppure due giornali).
@@ -274,6 +277,17 @@ giovedì dalle 14 alle 24»: tre volte la stessa frase, e non si capisce chi res
 4. «Quando l'acqua torna può uscire torbida per qualche minuto: Alto Calore dice che resta potabile e consiglia di
    lasciarla scorrere. Per i casi di vera necessità c'è il numero verde 800 954 430; se i lavori durano di più,
    l'avviso sarà su altocalore.it.»
+
+## Cosa va in testa alla prima pagina
+
+L'apertura e le tre notizie accanto le sceglie il sito da solo, con un punteggio: `rilevante` vale molto, poi il
+numero di fonti; il punteggio si dimezza ogni 18 ore, contate dall'ultimo «Aggiornamento» (o dall'uscita, se non
+ce n'è). Un avviso con `in_vigore_fino` passato non va più in testa. Quindi in testa c'è quello che conta **oggi**:
+- `rilevante: true` solo per i fatti che toccano molte persone **adesso** (strade principali chiuse, scuole, acqua,
+  allerte arancioni o rosse, blocchi, emergenze). Quando la storia è finita (strada riaperta, allerta passata,
+  protesta chiusa) togli `rilevante`.
+- Una storia che va avanti resta in testa perché ha l'«aggiornamento» di oggi; una che non si muove scende da sola.
+- `in_vigore_fino` giusto: l'ultimo giorno in cui l'avviso vale davvero.
 
 ## Quando aggiorni una notizia già uscita
 
