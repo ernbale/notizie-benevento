@@ -13,7 +13,7 @@ quello nuovo.
    in un articolo o in una fonte ufficiale, non esiste.
 2. **Una notizia esce se** la riportano **almeno due testate diverse**, oppure **una fonte ufficiale**
    (Comune, Provincia, Prefettura, Questura e forze dell'ordine, Procura della Repubblica, ASL, ospedale San Pio, ANAS, INGV, Protezione Civile,
-   Alto Calore, GESESA, EAV, AIR Campania, RFI). Due
+   Alto Calore, GESESA, EAV, AIR Campania, RFI, Regione Campania). Due
    articoli dello stesso giornale contano come una fonte.
    **Eccezione: cronaca da un solo giornale autorevole** (voluta dal proprietario il 21 ottobre 2026). Un fatto di
    cronaca, di strade o di servizi (categorie `cronaca`, `strade`, `altro`) riportato da **una sola** di queste
@@ -90,6 +90,17 @@ Lavora in parallelo (6-8 letture insieme). Per ogni fonte tieni nota: letta / no
   lavori e avvisi `https://www.rfi.it/content/rfi/it/news-e-media/infomobilita.rss.notices.campania.xml`. Tieni solo le
   linee che passano dal Sannio: Caserta–Benevento–Foggia (Telese, Solopaca, Benevento), Benevento–Avellino–Salerno,
   Benevento–Campobasso.
+- Albo pretorio del Comune di Benevento, le ultime pubblicazioni:
+  `https://albo.comune.benevento.it/mc/mc_p_ricerca.php?noHeaderFooter=1&` (la pagina è in latin-1). È la fonte più
+  diretta per strade chiuse, divieti, scuole e chiusure: le ordinanze escono qui prima che sui giornali. Tieni solo le
+  **ordinanze** (Tipo «Ordinanza», mittenti come Servizio Traffico, Sindaco, Polizia Municipale) che cambiano qualcosa
+  per molte persone (strade o incroci chiusi, sensi unici, chiusure di scuole e parchi, acqua, grandi eventi); salta
+  determine, decreti, nomine e i divieti di sosta per un singolo trasloco o cantiere privato. Da citare il link della
+  pubblicazione: `https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=<numero>` (il numero è nella pagina).
+- Regione Campania: comunicati stampa `https://www.regione.campania.it/comunicazione/area-stampa/comunicati` e notizie
+  nel feed `https://www.regione.campania.it/rss.xml`. Tieni solo quello che riguarda il Sannio (soldi e decisioni per
+  Benevento e i suoi Comuni, ospedali, strade, trasporti, lavoro) o tutta la Campania con effetti qui (allerte,
+  sanità, scuole, trasporti).
 - **I comunicati di queste fonti bastano da soli** (regola 2, `"stato": "ufficiale"`) e spesso escono ore prima che i
   giornali li riprendano: è il modo di arrivare primi. Scrivi l'articolo con parole tue, come nell'esempio di Alto
   Calore più sotto: chi resta senz'acqua o senza treno, dove, da quando a quando, cosa fare, il numero utile. Il
@@ -469,7 +480,8 @@ Durante il giro scrivi in `/tmp/fonti.txt` una riga per ogni fonte: `nome | stat
 - **Non raggiungibile** solo dopo un secondo tentativo con un altro indirizzo (home, sezione, feed, http), e lo scrivi:
   `non raggiungibile (riprovato con https://…)`; per le fonti di casa ferme: `non raggiungibile (copia di casa ferma dalle HH:MM)`.
 - I nomi da usare (li controlla `archivia.py --giro`): Comune di Benevento, Provincia di Benevento, ANAS, INGV, San
-  Marco dei Cavoti, ASL Benevento, Ospedale San Pio, Alto Calore, GESESA, Prefettura, Questura, EAV, AIR Campania, RFI;
+  Marco dei Cavoti, ASL Benevento, Ospedale San Pio, Alto Calore, GESESA, Prefettura, Questura, EAV, AIR Campania, RFI,
+  Albo pretorio Benevento, Regione Campania;
   Ottopagine, Il Sannio Quotidiano, NTR24, Lab TV, Cronache del Sannio, Fremondoweb, Gazzetta di Benevento,
   Anteprima24, InfoSannio, Benevento Giornale, BeneventoNews24, Il Mattino, TV7 Benevento, Il Caudino; più la riga
   `Comuni (da casa, controllato HH:MM) | letta | N avvisi nuovi` (o una riga per ognuno dei 19 Comuni letti a mano).

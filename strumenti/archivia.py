@@ -86,7 +86,7 @@ FONTI_GIRO = [  # (nome da scrivere nel registro, pezzi che lo riconoscono anche
     ("ANAS", ["anas"]), ("INGV", ["ingv"]), ("San Marco dei Cavoti", ["sanmarco"]), ("ASL Benevento", ["asl"]),
     ("Ospedale San Pio", ["sanpio"]), ("Alto Calore", ["altocalore"]), ("GESESA", ["gesesa"]),
     ("Prefettura", ["prefettura"]), ("Questura", ["questura"]), ("EAV", ["eav"]), ("AIR Campania", ["aircampania"]),
-    ("RFI", ["rfi"]),
+    ("RFI", ["rfi"]), ("Albo pretorio Benevento", ["albo"]), ("Regione Campania", ["regione"]),
     ("Ottopagine", ["ottopagine"]), ("Il Sannio Quotidiano", ["sannioquotidiano"]), ("NTR24", ["ntr24"]),
     ("Lab TV", ["labtv"]), ("Cronache del Sannio", ["cronachedelsannio", "sannionews24"]), ("Fremondoweb", ["fremondo"]),
     ("Gazzetta di Benevento", ["gazzetta"]), ("Anteprima24", ["anteprima"]), ("InfoSannio", ["infosannio"]),
