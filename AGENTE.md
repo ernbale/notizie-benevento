@@ -12,7 +12,8 @@ quello nuovo.
 1. **Solo notizie vere.** Mai inventare un fatto, un numero, un nome, un orario o una fonte. Se non l'hai letto
    in un articolo o in una fonte ufficiale, non esiste.
 2. **Una notizia esce se** la riportano **almeno due testate diverse**, oppure **una fonte ufficiale**
-   (Comune, Provincia, Prefettura, ASL, ospedale San Pio, ANAS, INGV, Protezione Civile, forze dell'ordine). Due
+   (Comune, Provincia, Prefettura, Questura e forze dell'ordine, ASL, ospedale San Pio, ANAS, INGV, Protezione Civile,
+   Alto Calore, GESESA, EAV, RFI). Due
    articoli dello stesso giornale contano come una fonte.
    **Eccezione: cronaca da un solo giornale autorevole** (voluta dal proprietario il 21 ottobre 2026). Un fatto di
    cronaca, di strade o di servizi (categorie `cronaca`, `strade`, `altro`) riportato da **una sola** di queste
@@ -22,7 +23,7 @@ quello nuovo.
    Benevento Giornale, Il Caudino: con loro servono due testate). Appena una seconda testata riporta il fatto,
    aggiungila e passa a `confermata`.
 3. **Cronaca con persone coinvolte:** almeno due testate, oppure una sola testata autorevole (regola 2). Con **una
-   sola fonte**, se il fatto accusa qualcuno (indagato, arrestato, denunciato, processato, condannato) **non
+   sola fonte** (anche un comunicato della Questura o di altre forze dell'ordine, che da solo basta per uscire), se il fatto accusa qualcuno (indagato, arrestato, denunciato, processato, condannato) **non
    scrivere nome e cognome**: età, paese e ruolo bastano («un 53enne di Benevento»). Le accuse si riportano **con le parole esatte
    dei giornali** («indagato», «arrestato», «denunciato», «presunto»): mai aggiungere, mai riassumere un'accusa
    con parole più pesanti. Nomi di vittime minorenni (anche se oggi sono maggiorenni ma erano minorenni al
@@ -64,6 +65,26 @@ Lavora in parallelo (6-8 letture insieme). Per ogni fonte tieni nota: letta / no
 - San Marco dei Cavoti (feed): `https://www.comune.sanmarcodeicavoti.bn.it/feed/`
 - ASL Benevento, notizie e avvisi (screening, servizi, vaccini, ambulatori): file `asl.json` delle fonti lette da casa.
 - Ospedale San Pio di Benevento, news e avvisi: `https://www.aosanpio.it/categoria/news-ed-eventi/`
+- Alto Calore Servizi, l'acqua in buona parte della provincia: avvisi di acqua sospesa (feed)
+  `https://altocalore.it/avvisi/feed/` e comunicati `https://altocalore.it/category/comunicati/feed/`. Serve anche
+  l'Irpinia: tieni solo i Comuni della provincia di Benevento.
+- GESESA, l'acqua a Benevento città e in altri Comuni del Sannio: avvisi di acqua sospesa, in JSON con titolo, data,
+  Comuni (`tags`) e `link` da citare: `https://www.gesesa.a-acqua.it/news/_jcr_content/root/avvisi_news_copy.jsonsearchmedia.json`
+- Prefettura di Benevento, notizie e comunicati: `https://prefettura.interno.gov.it/it/prefetture/benevento/notizie`
+  (il vecchio indirizzo prefettura.it non porta più alla pagina di Benevento).
+- Questura di Benevento, «I fatti del giorno» (arresti, controlli, provvedimenti del Questore):
+  `https://questure.poliziadistato.it/it/Benevento/archivio/category/5730dc9deb699622640306` (regola 3 per i nomi).
+- EAV, treni Napoli–Cancello–Benevento e bus: `https://www.eavsrl.it/infomobilita-ferrovia/`,
+  `https://www.eavsrl.it/avvisi-infomobilita-autolinee/`, `https://www.eavsrl.it/avvisi-di-sciopero/`. Tieni solo
+  quello che tocca il Sannio (linea per Benevento, Valle Caudina, bus da e per Benevento) e gli scioperi.
+- RFI, treni in Campania: in tempo reale `https://www.rfi.it/content/rfi/it/news-e-media/infomobilita.rss.updates.campania.xml`,
+  lavori e avvisi `https://www.rfi.it/content/rfi/it/news-e-media/infomobilita.rss.notices.campania.xml`. Tieni solo le
+  linee che passano dal Sannio: Caserta–Benevento–Foggia (Telese, Solopaca, Benevento), Benevento–Avellino–Salerno,
+  Benevento–Campobasso.
+- **I comunicati di queste fonti bastano da soli** (regola 2, `"stato": "ufficiale"`) e spesso escono ore prima che i
+  giornali li riprendano: è il modo di arrivare primi. Scrivi l'articolo con parole tue, come nell'esempio di Alto
+  Calore più sotto: chi resta senz'acqua o senza treno, dove, da quando a quando, cosa fare, il numero utile. Il
+  comunicato va tra le fonti col suo link. Se poi i giornali aggiungono dettagli, aggiungili con le loro fonti.
 - **Allerte ufficiali già confrontate (leggile per prime):** `https://notiziebenevento.it/meteo.json`, campo `allerte`.
   Lo aggiorna ogni ora il programma del meteo (`strumenti/meteo.py`): per oggi e domani dà il livello di ognuna
   delle 3 zone del Sannio dal **bollettino nazionale della Protezione civile** (`zone`: livello, rischio
