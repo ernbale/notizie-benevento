@@ -539,6 +539,20 @@ def controlla(d, err, avv, adesso=None):
                         err.append(f"{w}: {sez} cita {nm!r} che non è in articolo.fonti")
                 if sez == "cronologia" and "quando" in x and not QUANDO.match(str(x["quando"])):
                     err.append(f"{w}: cronologia con quando {x['quando']!r}: AAAA-MM-GG o AAAA-MM-GGTHH:MM")
+        # storia di più giorni (o aggiornata): ogni paragrafo dice di che giorno è; sul sito la data sta sopra i
+        # paragrafi di quel giorno, dal più recente al più vecchio
+        rac = [x for x in a.get("racconto") or [] if isinstance(x, dict)]
+        giorni = [str(x.get("giorno") or "") for x in rac]
+        if rac and (any(giorni) or "aggiornamento" in a):
+            if not all(giorni):
+                err.append(f"{w}: notizia di più giorni o aggiornata: ogni paragrafo del racconto vuole «giorno» "
+                           "(AAAA-MM-GG, il giorno dei fatti di quel paragrafo)")
+            elif not all(re.fullmatch(r"\d{4}-\d{2}-\d{2}", g) for g in giorni):
+                err.append(f"{w}: racconto con «giorno» non AAAA-MM-GG ({', '.join(giorni)})")
+            elif adesso and max(giorni) > adesso.date().isoformat():
+                err.append(f"{w}: racconto con «giorno» nel futuro ({max(giorni)})")
+            elif giorni != sorted(giorni, reverse=True):
+                err.append(f"{w}: il racconto va per giorni, dal più recente al più vecchio (ora: {' '.join(g[5:] for g in giorni)})")
         if "aggiornamento" in a:
             ag = a["aggiornamento"]
             if not isinstance(ag, dict) or vuoto(ag.get("testo")) or vuoto(ag.get("fonti")):

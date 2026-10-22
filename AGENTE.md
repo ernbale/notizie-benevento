@@ -318,8 +318,14 @@ fanno i giornali con le dirette, la novità va in cima, non in fondo.
   nei fatti.
 - Scrivilo **solo per fatti nuovi**: una fonte in più che dice le stesse cose non è un aggiornamento (aggiungi la
   fonte e basta). Su una notizia appena nata non serve (`archivia.py` lo toglie).
-- **Rimetti a posto il racconto**: il primo paragrafo dice **com'è la situazione adesso**; i fatti nuovi vanno al loro
-  posto nella storia, non attaccati in fondo all'ultimo paragrafo. Niente scritte «aggiornamento» dentro il racconto.
+- **Rimetti a posto il racconto, per giorni**: ogni paragrafo ha `"giorno": "AAAA-MM-GG"` (il giorno dei fatti che
+  racconta) e i paragrafi vanno **dal giorno più recente al più vecchio**: prima quelli di oggi (il primo dice
+  **com'è la situazione adesso**), poi quelli di ieri e così via; dentro lo stesso giorno, nell'ordine dei fatti. Sul
+  sito sopra i paragrafi di ogni giorno compare la sua data («GIOVEDÌ 22 OTTOBRE» con una riga), così il lettore vede
+  al volo cosa è di oggi e cosa di prima. Un paragrafo di quadro generale (effetti, contesto) va nel giorno
+  dell'informazione più recente che contiene. I fatti nuovi non si attaccano in fondo all'ultimo paragrafo; niente
+  scritte «aggiornamento» dentro il racconto. `archivia.py` dà ERRORE se una notizia aggiornata (o con più giorni) ha
+  un paragrafo senza `giorno` o i giorni fuori ordine.
 - Aggiungi il momento nuovo nei fatti (`cronologia`) e aggiorna `sintesi`, `non_si_sa` (togli quello che ora si sa)
   e, se è cambiato il fatto principale, `titolo` e `titolo_google`.
 
@@ -428,7 +434,7 @@ aggiorni a ogni giro, come notizie.json.
     "nota": "solo se serve una correzione",
     "articolo": {
       "aggiornamento": {"testo": "solo su una notizia già uscita: 1-2 frasi con la novità (l'ora la mette archivia.py)", "fonti": ["Nome fonte"]},
-      "racconto": [ {"testo": "un paragrafo", "fonti": ["Nome fonte come in articolo.fonti"]} ],
+      "racconto": [ {"testo": "un paragrafo", "fonti": ["Nome fonte come in articolo.fonti"], "giorno": "AAAA-MM-GG (obbligatorio sulle notizie aggiornate)"} ],
       "cronologia": [ {"data": "19 ottobre | 19 ottobre, 10:30 | notte 19-20 ottobre", "fatto": "", "fonti": ["Nome fonte come in articolo.fonti"]} ],
       "concordano": [ {"testo": "", "fonti": []} ], "divergono": [ {"testo": "", "fonti": []} ],
       "non_si_sa": [ "" ],

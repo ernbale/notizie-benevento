@@ -134,6 +134,11 @@
   .appro ul { padding-left: 20px; margin: 0; }
   .appro .racconto { margin-top: 18px; }
   /* l'ultima novità di una notizia che va avanti da giorni, in cima all'articolo */
+  /* storia di più giorni: sopra i paragrafi di ogni giorno la sua data, con una riga */
+  .racconto .giorno { display: flex; align-items: center; gap: 10px; margin: 30px 0 8px; font: 700 13.5px var(--sans); text-transform: uppercase; letter-spacing: .6px; color: var(--rosso); }
+  .racconto .giorno:first-child { margin-top: 6px; }
+  .racconto .giorno::after { content: ""; flex: 1; border-top: 1px solid var(--riga); }
+  .racconto .giorno + p { margin-top: 0; }
   .aggiornamento { margin: 16px 0 6px; padding: 10px 14px 12px; border-left: 4px solid var(--rosso); background: rgba(255,255,255,.55); }
   .aggiornamento .quando { font: 700 12.5px var(--sans); text-transform: uppercase; letter-spacing: .6px; color: var(--rosso); }
   .appro .aggiornamento p { margin: 4px 0 0; font-size: 18px; line-height: 1.5; }
@@ -1066,6 +1071,13 @@
     span.appendChild(testo(")"));
     return span;
   }
+  function giornoRacconto(g) {
+    var d = new Date(g + "T12:00:00Z");
+    if (isNaN(d)) return g;
+    var o = { timeZone: TZ, weekday: "long", day: "numeric", month: "long" };
+    if (d.getUTCFullYear() !== new Date().getFullYear()) o.year = "numeric";
+    return d.toLocaleDateString("it-IT", o);
+  }
   function frase(tag, r, fonti) {
     var e = el(tag, "", [typeof r === "string" ? r : (r.testo || "")]);
     if (r && r.fonti) e.appendChild(citazione(r.fonti, fonti));
@@ -1141,7 +1153,13 @@
     // Il racconto: la notizia scritta per intero, paragrafo per paragrafo (le notizie più vecchie hanno solo «cosa»).
     if (Array.isArray(a.racconto) && a.racconto.length) {
       var rc = el("div", "racconto", []);
-      a.racconto.forEach(function (r) { rc.appendChild(frase("p", r, fonti)); });
+      // Storia di più giorni: sopra i paragrafi di ogni giorno la sua data, così si vede al volo cosa è di oggi e cosa di prima.
+      var piuGiorni = a.racconto.filter(function (r, i, t) { return r.giorno && t.findIndex(function (x) { return x.giorno === r.giorno; }) === i; }).length > 1;
+      var prec = null;
+      a.racconto.forEach(function (r) {
+        if (piuGiorni && r.giorno && r.giorno !== prec) { rc.appendChild(el("div", "giorno", [giornoRacconto(r.giorno)])); prec = r.giorno; }
+        rc.appendChild(frase("p", r, fonti));
+      });
       art.appendChild(rc);
     } else if (a.cosa) { art.appendChild(el("h3", "", ["Cosa è successo"])); art.appendChild(el("p", "", [a.cosa])); }
     // Con il racconto, una cronologia di un solo momento non aggiunge niente.
