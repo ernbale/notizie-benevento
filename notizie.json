@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-22T06:05:00+02:00",
+ "aggiornato": "2026-10-22T07:22+02:00",
  "giornali_letti": 14,
  "notizie": [
   {
@@ -3294,12 +3294,11 @@
    ],
    "articolo": {
     "aggiornamento": {
-     "testo": "Mercoledì 21 ottobre, in mattinata, decine di cittadini hanno rallentato il traffico anche sulla statale 87 Benevento-Campobasso, allo svincolo di Campolattaro, per protesta contro il caro carburanti e il costo della vita.",
+     "testo": "Giovedì 22 ottobre, secondo Il Mattino, i blocchi nel Sannio proseguono senza sosta: restano i presìdi al casello di Benevento sull'A16, sull'Appia a Tufara e sulla Telesina a San Salvatore Telesino. Per qualche ora si è aggiunto un presidio a Paolisi, vicino alla rotonda.",
      "fonti": [
-      "Anteprima24",
-      "TV7 Benevento"
+      "Il Mattino (22/10)"
      ],
-     "quando": "2026-10-21T14:10+02:00"
+     "quando": "2026-10-22T07:22+02:00"
     },
     "aggiornato": "2026-10-20T09:25:00+02:00",
     "cronologia": [
@@ -3389,6 +3388,13 @@
        "Ottopagine (19/10)",
        "NTR24"
       ]
+     },
+     {
+      "data": "22 ottobre",
+      "fatto": "I presìdi restano a Castel del Lago, Tufara e San Salvatore Telesino; per qualche ora anche a Paolisi, vicino alla rotonda.",
+      "fonti": [
+       "Il Mattino (22/10)"
+      ]
      }
     ],
     "concordano": [
@@ -3444,8 +3450,7 @@
     ],
     "non_si_sa": [
      "Quanto durerà la protesta: gli autotrasportatori dicono che andranno avanti, nessuno indica una data di fine.",
-     "Cosa è uscito dal tavolo di martedì 20 a Milano con il ministro Salvini.",
-     "Se i blocchi proseguono nella giornata di mercoledì 21: l'ultimo aggiornamento letto è quello di Il Mattino, mezzanotte e cinque."
+     "Cosa è uscito dal tavolo di martedì 20 a Milano con il ministro Salvini."
     ],
     "fonti": [
      {
@@ -3525,9 +3530,21 @@
       "titolo": "Caro carburanti, protesta nel Sannio: cittadini in strada sulla Statale 87 (video)",
       "url": "https://www.tvsette.net/caro-carburanti-protesta-nel-sannio-cittadini-in-strada-sulla-statale-87-video/",
       "data": "21 ott, 13:27"
+     },
+     {
+      "nome": "Il Mattino (22/10)",
+      "titolo": "Protesta degli autotrasportatori, nel Sannio restano i blocchi: ,mediazioni per i servizi",
+      "url": "https://www.ilmattino.it/benevento/protesta_degli_autotrasportatori_nel_sannio_restano_i_blocchi_mediazioni_per_i_servizi-9839928.html",
+      "data": "22 ott"
      }
     ],
     "racconto": [
+     {
+      "testo": "Giovedì 22 ottobre i blocchi degli autotrasportatori nel Sannio vanno avanti, nonostante l'allerta meteo di mercoledì. Il Mattino conta tre presìdi: il casello di Benevento sull'A16, l'Appia a Tufara e la Telesina a San Salvatore Telesino, in direzione sia di Caserta e Benevento sia dell'A1 verso Caianello. Sulla Telesina decine di mezzi pesanti sono fermi nelle aree di sosta e nei parcheggi, e da mercoledì mattina ci sono anche gli agricoltori con i trattori.",
+      "fonti": [
+       "Il Mattino (22/10)"
+      ]
+     },
      {
       "testo": "Da lunedì 19 ottobre gli autotrasportatori protestano contro il prezzo del gasolio e i blocchi vanno avanti anche nella notte tra martedì 20 e mercoledì 21. Il Mattino conta tre presìdi attivi nel Sannio: il casello di Castel del Lago, vicino all'uscita di Benevento sull'A16, la statale 7 Appia a Tufara Valle e la statale 372 Telesina a San Salvatore Telesino, vicino all'imbocco della Fondovalle Isclero che porta verso Caserta. I blocchi sono in tutte e due le direzioni. Gli autotrasportatori dicono che andranno avanti.",
       "fonti": [
@@ -3593,7 +3610,7 @@
    "id": "scaffali-vuoti",
    "titolo": "Sciopero dei tir, mancano frutta, verdura e carne in alcuni supermercati del Sannio",
    "titolo_google": "Tir fermi, mancano frutta e carne in supermercati del Sannio",
-   "sintesi": "Con i camion fermi, in diversi supermercati di Benevento e provincia i reparti dei prodotti freschi restano sguarniti: mancano frutta, verdura e carne, e secondo BeneventoNews24 anche pasta e latticini. Alcuni distributori hanno finito il gasolio.",
+   "sintesi": "Con i camion fermi, in diversi supermercati di Benevento e provincia i reparti dei prodotti freschi restano sguarniti: mancano frutta, verdura e carne, e secondo BeneventoNews24 anche pasta e latticini. Alcuni distributori hanno finito il gasolio. Il Mattino scrive che i supermercati di Benevento sono al quarto giorno senza rifornimenti.",
    "categoria": "altro",
    "zona": "benevento",
    "immagine": "supermercato",
@@ -3641,6 +3658,13 @@
       "fonti": [
        "Il Sannio Quotidiano"
       ]
+     },
+     {
+      "data": "21 ottobre",
+      "fatto": "Il gruppo Idal denuncia il blocco delle consegne dei prodotti freschi dalla sede di Benevento.",
+      "fonti": [
+       "Il Mattino (22/10)"
+      ]
      }
     ],
     "concordano": [
@@ -3687,10 +3711,28 @@
       "titolo": "VIDEO – Caro carburante e proteste: nel Sannio primi scaffali vuoti e pompe a secco",
       "url": "https://www.beneventonews24.it/2026/10/19/video-caro-carburante-e-protesta-autotrasportatori-nel-sannio-primi-scaffali-vuoti-e-pompe-a-secco/",
       "data": "19 ott"
+     },
+     {
+      "nome": "Il Mattino (22/10)",
+      "titolo": "Caccia ai prodotti locali in negozi e mercatini. Carburanti introvabili",
+      "url": "https://www.ilmattino.it/benevento/caccia_ai_prodotti_locali_negozi_mercatini_carburanti_introvabili-9839929.html",
+      "data": "22 ott"
      }
     ],
     "divergono": [],
     "racconto": [
+     {
+      "testo": "Giovedì 22 ottobre, secondo Il Mattino, i supermercati di Benevento sono al quarto giorno consecutivo senza rifornimenti. Mancano latte fresco, carne, ortofrutta e anche i surgelati stanno finendo; chi può compra scorte a lunga scadenza. Mercoledì i mercatini rionali sono stati presi d'assalto per le verdure dei coltivatori della zona, vendute a prezzi più alti e finite in fretta.",
+      "fonti": [
+       "Il Mattino (22/10)"
+      ]
+     },
+     {
+      "testo": "Il gruppo Idal, che produce e distribuisce alimentari freschi in Campania, Puglia, Molise e Basilicata, ha denunciato in una nota «paralisi operativa»: la sede di Benevento non riceve più prodotti freschi e mercoledì ai suoi mezzi è stato impedito di consegnare in tutta la Valle Caudina e lungo l'Ofantina. Il Mattino riferisce che, secondo previsioni non ufficiali, il latte a lunga conservazione potrebbe bastare fino a venerdì o sabato.",
+      "fonti": [
+       "Il Mattino (22/10)"
+      ]
+     },
      {
       "testo": "Dal 19 ottobre, con i camion fermi per la protesta contro il caro gasolio, in diversi supermercati di Benevento e provincia mancano i prodotti freschi. Gli scaffali sono parzialmente vuoti e le cassette di frutta e verdura quasi sguarnite.",
       "fonti": [
@@ -3721,7 +3763,14 @@
        "Ottopagine"
       ]
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Giovedì 22 ottobre Il Mattino scrive che i supermercati di Benevento sono al quarto giorno senza rifornimenti. Il gruppo Idal, che produce e distribuisce alimentari freschi, denuncia il fermo delle consegne dalla sua sede di Benevento.",
+     "fonti": [
+      "Il Mattino (22/10)"
+     ],
+     "quando": "2026-10-22T07:22+02:00"
+    }
    },
    "rilevante": false,
    "foto": "supermercato"
