@@ -820,21 +820,59 @@
   }
   // Se la spalla viene molto più lunga dell'apertura (titoli lunghi), l'ultima notizia della spalla
   // scende tra «Le altre notizie», al suo posto in ordine di tempo: niente buco sotto l'apertura.
-  function bilancia(sx, dx, ag, altre) {
+  function bilancia(sx, dx, colonne, altre) {
     if (window.matchMedia("(max-width: 620px)").matches) return;
-    var perId = {};
-    (dati.notizie || []).forEach(function (n) { perId[n.id] = n; });
     while (dx.children.length > 1 && dx.offsetHeight > sx.offsetHeight + 90) {
-      var art = dx.lastElementChild, n = perId[art.getAttribute("data-id")];
+      var art = dx.lastElementChild;
       art.classList.remove("spalla");
-      var prima = null;
-      for (var k = 0; k < ag.children.length; k++) {
-        var m = perId[ag.children[k].getAttribute("data-id")];
-        if (m && tempo(m) < tempo(n)) { prima = ag.children[k]; break; }
-      }
-      ag.insertBefore(art, prima);
+      colonne[0].appendChild(art);   // il posto giusto, in ordine di tempo, lo trova pareggiaColonne
       altre.style.display = "";
     }
+    pareggiaColonne(colonne);
+  }
+  // «Le altre notizie» in due colonne: in ordine di tempo, ogni scheda nella colonna più corta, con le altezze vere
+  // misurate dopo il disegno (22 ott 2026: la stima e una scheda finita fuori dalle colonne lasciavano ~800 px vuoti
+  // in fondo a sinistra). Alla fine, se conviene, l'ultima scheda della colonna lunga passa all'altra.
+  function pareggiaColonne(colonne) {
+    if (window.matchMedia("(max-width: 620px)").matches) return;   // sul telefono la colonna è una sola
+    var perId = {};
+    (dati.notizie || []).forEach(function (n) { perId[n.id] = n; });
+    var schede = [];
+    colonne.forEach(function (c) { schede = schede.concat([].slice.call(c.children)); });
+    schede.sort(function (a, b) {
+      var na = perId[a.getAttribute("data-id")], nb = perId[b.getAttribute("data-id")];
+      return (nb ? tempo(nb) : 0) - (na ? tempo(na) : 0);
+    });
+    var alt = function (s) { var cs = getComputedStyle(s); return s.offsetHeight + parseFloat(cs.marginTop) + parseFloat(cs.marginBottom); };
+    var h = schede.map(function (s) { return Math.round(alt(s)); });
+    // tra tutte le divisioni in cui le colonne non si staccano mai di più di LIM pixel (così le notizie più nuove
+    // restano in alto da tutte e due le parti) si sceglie quella che le fa finire più pari; a parità, la più simile
+    // a «ogni scheda nella colonna più corta»
+    var LIM = 700, passi = [], stati = {0: true};
+    h.forEach(function (hi) {
+      var nuovi = {}, da = {};
+      Object.keys(stati).forEach(function (ds) {
+        var d = +ds, scelte = d <= 0 ? [0, 1] : [1, 0];   // d = colonna 0 meno colonna 1
+        scelte.forEach(function (k) {
+          var nd = d + (k === 0 ? hi : -hi);
+          if (Math.abs(nd) > LIM || nuovi[nd]) return;
+          nuovi[nd] = true; da[nd] = [d, k];
+        });
+      });
+      passi.push(da); stati = nuovi;
+    });
+    var finali = Object.keys(stati).map(Number), scelta = [];
+    if (finali.length) {
+      var d = finali.sort(function (a, b) { return Math.abs(a) - Math.abs(b); })[0];
+      for (var i = passi.length - 1; i >= 0; i--) { scelta[i] = passi[i][d][1]; d = passi[i][d][0]; }
+    } else {   // una scheda altissima: ogni scheda nella colonna più corta
+      var alto = [0, 0];
+      h.forEach(function (hi, i) { scelta[i] = alto[0] <= alto[1] ? 0 : 1; alto[scelta[i]] += hi; });
+    }
+    schede.forEach(function (s, i) {
+      s.style.order = String(i);
+      colonne[scelta[i]].appendChild(s);
+    });
   }
   function riquadroAvvisi(avvisi) {
     var sez = el("section", "avvisi-box", [el("h3", "titolo-col", ["Avvisi in vigore"])]);
@@ -1010,7 +1048,9 @@
     else c3.appendChild(el("p", "vuoto", ["Nessun approfondimento per ora."]));
     griglia.appendChild(c1); griglia.appendChild(c3);
     box.appendChild(griglia);
-    bilancia(sx, dx, ag, altre);
+    bilancia(sx, dx, colonne, altre);
+    // i caratteri del sito arrivano dopo e cambiano l'altezza dei titoli: si ripareggia quando sono pronti
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { pareggiaColonne(colonne); });
   }
 
   // Nomi delle fonti citate in una frase, con i link presi dall'elenco fonti.
