@@ -4,12 +4,15 @@
 - Visite: Cloudflare Web Analytics (senza cookie: conta visite e pagine viste, non le persone), ultimi 30 giorni.
 - Il sito: notizie pubblicate, sezioni, zone, giornali e fonti citati (da notizie.json e dall'archivio).
 - Google: Search Console (account di servizio con permesso «Limitata», chiave nel segreto GSC_CHIAVE), ultimi 28 giorni.
+- Facebook: la Pagina con la chiave FB_PAGE_TOKEN (la stessa che pubblica i post): follower, post, reazioni, commenti,
+  condivisioni; persone raggiunte e visualizzazioni solo se la chiave ha anche il permesso read_insights. Facebook dà
+  solo i follower di adesso: quelli dei giorni prima si riprendono dal dati.json già pubblicato.
 
 Il file è cifrato con la parola d'ordine (AES-GCM, chiave da PBKDF2-SHA256): chi trova l'indirizzo vede solo
 numeri illeggibili; la pagina statistiche/index.html lo apre nel browser con la stessa parola.
 Niente numeri nei log di GitHub (il repository è pubblico): si stampano solo gli esiti.
 
-Uso:  CLOUDFLARE_API_TOKEN=… STATISTICHE_PAROLA=… python3 strumenti/statistiche.py [--sito .]
+Uso:  CLOUDFLARE_API_TOKEN=… STATISTICHE_PAROLA=… FB_PAGE_TOKEN=… python3 strumenti/statistiche.py [--sito .]
       python3 strumenti/statistiche.py --in-chiaro prova.json     (prova: scrive i dati senza cifrarli)
 """
 import argparse
@@ -256,6 +259,114 @@ def google(sito, testo_chiave, adesso):
     }
 
 
+# ---------- Facebook (la Pagina Notizie Benevento) ----------
+GRAPH = "https://graph.facebook.com"
+FB_PAGINA = "Notizie Benevento"
+# le statistiche di Meta (persone raggiunte, visualizzazioni): servono il permesso read_insights sulla chiave; Meta
+# cambia spesso i nomi, quindi si provano uno per uno e si tengono quelli che rispondono
+FB_METRICHE = ["page_follows", "page_daily_follows_unique", "page_total_media_view_unique", "page_media_view",
+               "page_impressions_unique", "page_post_engagements", "page_views_total"]
+
+
+def fb_get(percorso, token, **par):
+    url = percorso if percorso.startswith("https://") else f"{GRAPH}/{percorso}?" + urllib.parse.urlencode(dict(par, access_token=token))
+    try:
+        with urllib.request.urlopen(url, timeout=60) as r:
+            return json.load(r)
+    except urllib.error.HTTPError as e:
+        # il messaggio di Facebook dice cosa non va e non contiene la chiave
+        try:
+            err = json.load(e).get("error", {})
+        except ValueError:
+            err = {}
+        raise RuntimeError(f"Facebook {e.code}: {err.get('message', '')}") from None
+
+
+def fb_storico_prima(sito_online, parola):
+    """I follower dei giorni passati, dal dati.json già pubblicato (Facebook dà solo il numero di adesso)."""
+    if not parola:
+        return []
+    try:
+        from cryptography.hazmat.primitives import hashes
+        from cryptography.hazmat.primitives.ciphers.aead import AESGCM
+        from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
+        with urllib.request.urlopen(sito_online + "/statistiche/dati.json", timeout=30) as r:
+            b = json.load(r)
+        k = PBKDF2HMAC(algorithm=hashes.SHA256(), length=32, salt=base64.b64decode(b["sale"]),
+                       iterations=b["iterazioni"]).derive(parola.encode())
+        vecchi = json.loads(AESGCM(k).decrypt(base64.b64decode(b["iv"]), base64.b64decode(b["dati"]), None))
+        return (vecchi.get("facebook") or {}).get("storico") or []
+    except Exception:
+        return []
+
+
+def facebook(token, adesso, storico_prima):
+    if not token:
+        return {"stato": "da collegare", "messaggio": "Manca la chiave della Pagina (FB_PAGE_TOKEN)."}
+    fz = fuso()
+    pag = fb_get("me", token, fields="name,followers_count,fan_count,link")
+    if pag.get("name") != FB_PAGINA:
+        raise RuntimeError(f"la chiave non è della Pagina «{FB_PAGINA}»")
+    oggi = adesso.astimezone(fz).date()
+    inizio = dt.datetime.combine(oggi - dt.timedelta(days=GIORNI - 1), dt.time(0), fz)
+    # i post degli ultimi 30 giorni con reazioni, commenti e condivisioni
+    post, url = [], None
+    campi = ("created_time,message,permalink_url,shares,reactions.summary(total_count).limit(0),"
+             "comments.summary(total_count).limit(0),attachments{unshimmed_url,url}")
+    r = fb_get("me/posts", token, fields=campi, limit=100, since=int(inizio.timestamp()))
+    for _ in range(10):
+        for p in r.get("data", []):
+            t = dt.datetime.strptime(p["created_time"], "%Y-%m-%dT%H:%M:%S%z").astimezone(fz)
+            link = ""
+            for a in (p.get("attachments") or {}).get("data", []):
+                u = a.get("unshimmed_url") or a.get("url") or ""
+                u = urllib.parse.parse_qs(urllib.parse.urlparse(u).query).get("u", [u])[0]
+                m = re.search(r"notiziebenevento\.it(/notizia/[a-z0-9-]+/)", u)
+                if m:
+                    link = m.group(1)
+            reaz = ((p.get("reactions") or {}).get("summary") or {}).get("total_count", 0)
+            comm = ((p.get("comments") or {}).get("summary") or {}).get("total_count", 0)
+            cond = (p.get("shares") or {}).get("count", 0)
+            post.append({"quando": t.isoformat(timespec="minutes"), "titolo": (p.get("message") or "").split("\n")[0][:160],
+                         "link": p.get("permalink_url"), "notizia": link, "reazioni": reaz, "commenti": comm,
+                         "condivisioni": cond, "interazioni": reaz + comm + cond})
+        url = (r.get("paging") or {}).get("next")
+        if not url:
+            break
+        r = fb_get(url, token)
+    per_giorno = collections.OrderedDict(((oggi - dt.timedelta(days=GIORNI - 1 - i)).isoformat(), [0, 0])
+                                         for i in range(GIORNI))
+    for p in post:
+        g = per_giorno.get(p["quando"][:10])
+        if g is not None:
+            g[0] += 1; g[1] += p["interazioni"]
+    # i follower giorno per giorno: il numero di oggi si aggiunge a quelli salvati nei giorni prima
+    follower = pag.get("followers_count")
+    storico = {x["data"]: x["follower"] for x in storico_prima if isinstance(x, dict) and x.get("data")}
+    if follower is not None:
+        storico[oggi.isoformat()] = follower
+    storico = [{"data": k, "follower": v} for k, v in sorted(storico.items())][-90:]
+    # le statistiche di Meta, se la chiave ha il permesso
+    meta = {}
+    for nome in FB_METRICHE:
+        try:
+            j = fb_get("me/insights", token, metric=nome, period="day", since=int(inizio.timestamp()),
+                       until=int(adesso.timestamp()))
+        except RuntimeError:
+            continue
+        valori = (j.get("data") or [{}])[0].get("values") or []
+        if valori:
+            meta[nome] = [{"data": v["end_time"][:10], "valore": v.get("value") if isinstance(v.get("value"), (int, float)) else 0}
+                          for v in valori]
+    return {
+        "stato": "ok", "pagina": pag.get("link") or "https://www.facebook.com/notiziebenevento",
+        "follower": follower, "mi_piace": pag.get("fan_count"), "storico": storico,
+        "giorni": [{"data": k, "post": v[0], "interazioni": v[1]} for k, v in per_giorno.items()],
+        "post": sorted(post, key=lambda p: p["quando"], reverse=True),
+        "meta": meta,
+    }
+
+
 # ---------- il sito: notizie e fonti ----------
 def sito_numeri(sito, adesso):
     oggi = adesso.astimezone(fuso()).date()
@@ -324,12 +435,20 @@ def main():
     except Exception as e:
         dati["google"] = {"stato": "errore", "messaggio": f"Search Console non ha risposto: {e}"}
         print("AVVISO Google:", e, file=sys.stderr)
+    parola = os.environ.get("STATISTICHE_PAROLA", "")
+    try:
+        dati["facebook"] = facebook(os.environ.get("FB_PAGE_TOKEN", "").strip(), adesso,
+                                    fb_storico_prima("https://" + HOST, parola))
+        # nei log (pubblici) solo l'esito e i nomi delle statistiche di Meta che rispondono, mai i numeri
+        print("Facebook:", dati["facebook"]["stato"], "· statistiche Meta:", ", ".join(dati["facebook"].get("meta") or {}) or "nessuna")
+    except Exception as e:
+        dati["facebook"] = {"stato": "errore", "messaggio": f"Facebook non ha risposto: {e}"}
+        print("AVVISO Facebook:", e, file=sys.stderr)
     if a.in_chiaro:
         with open(a.in_chiaro, "w", encoding="utf-8") as f:
             json.dump(dati, f, ensure_ascii=False, indent=1)
         print("OK in chiaro:", a.in_chiaro)
         return
-    parola = os.environ.get("STATISTICHE_PAROLA", "")
     if not parola:
         print("AVVISO: manca STATISTICHE_PAROLA, statistiche non scritte", file=sys.stderr)
         return

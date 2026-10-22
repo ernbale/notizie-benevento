@@ -118,7 +118,8 @@
     vede chi usa un blocco della pubblicità. I numeri si aggiornano ogni ora.
     Pannelli completi: <a href="https://dash.cloudflare.com/d76a7e4eebbfb46bb9fbd03910507063/web-analytics" rel="noopener">Cloudflare</a> ·
     <a href="https://search.google.com/search-console?resource_id=sc-domain%3Anotiziebenevento.it" rel="noopener">Search Console</a> ·
-    <a href="https://www.bing.com/webmasters/home?siteUrl=https://notiziebenevento.it/" rel="noopener">Bing</a>
+    <a href="https://www.bing.com/webmasters/home?siteUrl=https://notiziebenevento.it/" rel="noopener">Bing</a> ·
+    <a href="https://www.facebook.com/notiziebenevento" rel="noopener">Pagina Facebook</a>
   </footer>
 </div>
 
@@ -358,6 +359,75 @@
       if (dn.length) extra.appendChild(el("p", "nota", dn.join(". ") + "."));
       gg.appendChild(riquadro("Clic per dispositivo", extra));
       m.appendChild(gg);
+    }
+
+    // --- Facebook ---
+    var F = D.facebook || {};
+    m.appendChild(el("h2", "", "Facebook"));
+    m.appendChild(el("p", "sotto", "La Pagina Notizie Benevento: follower, post e quanto piacciono. Ultimi " + D.giorni + " giorni."));
+    if (F.stato !== "ok") {
+      var af = el("div", "avviso"); af.appendChild(el("b", "", F.stato === "errore" ? "Facebook non ha risposto" : "Da collegare"));
+      af.appendChild(document.createTextNode(F.messaggio || "")); m.appendChild(af);
+    } else {
+      var st = F.storico || [], fgi = F.giorni || [], fpost = F.post || [];
+      // il confronto con 7 giorni fa; finché lo storico è più corto, col primo giorno salvato
+      var oggiF = (st[st.length - 1] || {}).data, prima7 = st.filter(function (x) { return x.data <= (fgi[fgi.length - 8] || {}).data; }).pop();
+      var dalGiorno = prima7 ? " in 7 giorni" : st.length > 1 ? " dal " + giornoBreve(st[0].data) : "";
+      if (!prima7 && st.length > 1 && st[0].data !== oggiF) prima7 = st[0];
+      var daFb = ((V.provenienza || []).filter(function (x) { return x.nome === "Facebook"; })[0] || {}).visite;
+      var nf = el("div", "numeri");
+      nf.appendChild(numero("Follower", num(F.follower), prima7 ? (F.follower - prima7.follower >= 0 ? "+" : "") + num(F.follower - prima7.follower) + dalGiorno : "il conto giorno per giorno parte da oggi"));
+      nf.appendChild(numero("Post", num(somma(fgi, "post", 7)), "ultimi 7 giorni · " + num(somma(fgi, "post", 30)) + " in 30"));
+      nf.appendChild(numero("Reazioni, commenti, condivisioni", num(somma(fgi, "interazioni", 30)), "ultimi 30 giorni"));
+      nf.appendChild(numero("Visite al sito da Facebook", V.stato === "ok" ? num(daFb || 0) : "–", "ultimi " + D.giorni + " giorni (molte risultano «Diretto»)"));
+      m.appendChild(nf);
+      var gf = el("div", "griglia");
+      var rpi = riquadro("Post e interazioni al giorno");
+      rpi.appendChild(colonne(fgi.map(function (x, i) {
+        return { v: x.post, v2: x.interazioni, etichetta: i % 5 === 4 || i === fgi.length - 1 ? giornoBreve(x.data) : "",
+                 titolo: giornoBreve(x.data) + ": " + num(x.post) + " post, " + num(x.interazioni) + " reazioni, commenti e condivisioni" };
+      }), { titolo: "Post e interazioni per giorno", colore: "#1d4f91" }));
+      var lf = el("div", "legenda"); lf.innerHTML = '<span><i style="background:#1d4f91"></i>Post</span><span><i style="background:#f0b9a6"></i>Reazioni, commenti e condivisioni</span>';
+      rpi.appendChild(lf); rpi.classList.add("largo"); gf.appendChild(rpi);
+      if (st.length > 1) {
+        var rfo = riquadro("Follower giorno per giorno");
+        rfo.appendChild(colonne(st.slice(-30).map(function (x, i, a) {
+          return { v: x.follower, etichetta: i % 5 === 4 || i === a.length - 1 ? giornoBreve(x.data) : "", titolo: giornoBreve(x.data) + ": " + num(x.follower) + " follower" };
+        }), { titolo: "Follower per giorno", colore: "#2e6b3f" }));
+        rfo.classList.add("largo"); gf.appendChild(rfo);
+      }
+      var tf = el("div", "tabella");
+      var migliori = fpost.slice().sort(function (a, b) { return b.interazioni - a.interazioni || (a.quando < b.quando ? 1 : -1); }).slice(0, 15);
+      if (migliori.length) {
+        var t2 = el("table"), th2 = el("thead"), tr2 = el("tr");
+        ["Post", "Reazioni", "Commenti", "Condivisioni"].forEach(function (h, i) { tr2.appendChild(el("th", i ? "num" : "", h)); });
+        th2.appendChild(tr2); t2.appendChild(th2);
+        var tb2 = el("tbody");
+        migliori.forEach(function (p) {
+          var r = el("tr"), c = el("td"), l = el("a", "", p.titolo || "post");
+          l.href = p.link || F.pagina; l.target = "_blank"; l.rel = "noopener";
+          c.appendChild(l);
+          c.appendChild(el("span", "perc", new Date(p.quando).toLocaleString("it-IT", { timeZone: "Europe/Rome", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" })));
+          r.appendChild(c); r.appendChild(el("td", "num", num(p.reazioni))); r.appendChild(el("td", "num", num(p.commenti))); r.appendChild(el("td", "num", num(p.condivisioni)));
+          tb2.appendChild(r);
+        });
+        t2.appendChild(tb2); tf.appendChild(t2);
+      } else tf.appendChild(el("p", "vuoto", "Nessun post negli ultimi " + D.giorni + " giorni."));
+      var rmi = riquadro("I post che piacciono di più", tf); rmi.classList.add("largo"); gf.appendChild(rmi);
+      // le statistiche di Meta (persone raggiunte, visualizzazioni) ci sono solo se la chiave ha il permesso read_insights
+      var NOMI_META = { page_total_media_view_unique: "Persone che hanno visto i post", page_media_view: "Visualizzazioni dei post",
+        page_impressions_unique: "Persone raggiunte", page_post_engagements: "Interazioni con i post",
+        page_follows: "Follower (Meta)", page_daily_follows_unique: "Nuovi follower", page_views_total: "Visite alla Pagina" };
+      var chiaviMeta = Object.keys(F.meta || {}).filter(function (k) { return k !== "page_follows"; });
+      var rme = riquadro("Quante persone li vedono");
+      if (chiaviMeta.length) {
+        rme.appendChild(barre(chiaviMeta.map(function (k) { return { nome: NOMI_META[k] || k, visite: somma(F.meta[k], "valore", 30) }; }), "visite"));
+        rme.appendChild(el("p", "nota", "Dati di Meta, ultimi " + D.giorni + " giorni."));
+      } else {
+        rme.appendChild(el("p", "nota", "Facebook dà questi numeri (persone raggiunte, visualizzazioni) solo se la chiave della Pagina ha anche il permesso read_insights: si rifà la chiave come la prima volta, aggiungendo quel permesso nel Graph API Explorer, e si rilancia facebook_chiave.py."));
+      }
+      gf.appendChild(rme);
+      m.appendChild(gf);
     }
 
     // --- il sito ---
