@@ -1,7 +1,166 @@
 {
- "aggiornato": "2026-10-23T15:10+02:00",
+ "aggiornato": "2026-10-23T16:16+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "montesarchio-cocaina-229-grammi-donna-arrestata",
+   "titolo": "Montesarchio, oltre 229 grammi di cocaina trovati a una donna: arrestata dai Carabinieri",
+   "titolo_google": "Montesarchio, 229 grammi di cocaina: donna arrestata",
+   "sintesi": "I Carabinieri della Compagnia di Montesarchio hanno arrestato una donna dopo aver trovato oltre 229 grammi di cocaina in una perquisizione personale e dell'auto. È agli arresti domiciliari in attesa delle decisioni della Procura di Benevento.",
+   "categoria": "cronaca",
+   "zona": "caudina",
+   "luogo": "Montesarchio",
+   "pubblicato": "2026-10-23T16:09:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/i-carabinieri-hanno-tratto-arresto-una-donna-trovata-possesso-di-cocaina-oltre-229-grammi"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/sequestrati-due-etti-di-cocaina-in-valle-caudina-arrestata-una-persona/"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/23/montesarchio-scoperta-con-la-cocaina-ai-domiciliari-una-donna/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/23/montesarchio-sequestrati-oltre-due-etti-di-cocaina-una-donna-in-arresto/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Venerdì 23 ottobre i Carabinieri della Compagnia di Montesarchio hanno reso noto l'arresto di una donna, trovata con oltre 229 grammi di cocaina. A Montesarchio, in provincia di Benevento, i militari del Nucleo operativo e radiomobile l'hanno fermata e hanno fatto una perquisizione sulla persona e sull'auto.",
+      "fonti": [
+       "Gazzetta di Benevento",
+       "Anteprima24",
+       "NTR24",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "La donna è accusata di detenzione di droga a fini di spaccio. La sua posizione è ora al vaglio della Procura della Repubblica di Benevento. Dopo l'arresto è stata portata a casa, dove resta agli arresti domiciliari in attesa delle decisioni dei magistrati.",
+      "fonti": [
+       "Gazzetta di Benevento",
+       "Anteprima24",
+       "NTR24",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "I Carabinieri spiegano che l'operazione rientra nei controlli del Comando provinciale di Benevento contro lo spaccio nel Sannio. Ricordano anche che la persona arrestata è indagata e, come ogni indagato, si presume innocente fino a una sentenza definitiva.",
+      "fonti": [
+       "Gazzetta di Benevento",
+       "Anteprima24",
+       "NTR24",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Arresto a Montesarchio da parte dei Carabinieri, oltre 229 grammi di cocaina trovati con una perquisizione personale e dell'auto, la donna ai domiciliari in attesa della Procura.",
+      "fonti": [
+       "Gazzetta di Benevento",
+       "Anteprima24",
+       "NTR24",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Età e paese della donna: le fonti non li dicono.",
+     "Quando il fatto è avvenuto e quando ci sarà la convalida dell'arresto."
+    ],
+    "fonti": [
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "I Carabinieri hanno tratto in arresto una donna trovata in possesso di cocaina per oltre 229 grammi",
+      "url": "https://www.gazzettabenevento.it/it/i-carabinieri-hanno-tratto-arresto-una-donna-trovata-possesso-di-cocaina-oltre-229-grammi",
+      "data": "23 ott, 16:03"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Sequestrati due etti di cocaina in Valle Caudina: arrestata una persona",
+      "url": "https://www.anteprima24.it/benevento/sequestrati-due-etti-di-cocaina-in-valle-caudina-arrestata-una-persona/",
+      "data": "23 ott, 16:06"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Montesarchio, scoperta con la cocaina: ai domiciliari una donna",
+      "url": "https://www.ntr24.tv/2026/10/23/montesarchio-scoperta-con-la-cocaina-ai-domiciliari-una-donna/",
+      "data": "23 ott, 16:09"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Montesarchio, sequestrati oltre due etti di cocaina: donna arrestata dai Carabinieri",
+      "url": "https://www.beneventonews24.it/2026/10/23/montesarchio-sequestrati-oltre-due-etti-di-cocaina-una-donna-in-arresto/",
+      "data": "23 ott, 16:09"
+     }
+    ]
+   }
+  },
+  {
+   "id": "paolisi-nasce-squadra-terza-categoria",
+   "titolo": "Paolisi, nasce la squadra di Terza Categoria: si comincia domenica 25 ottobre a Rotondi",
+   "titolo_google": "Paolisi, nasce la squadra di calcio di Terza Categoria",
+   "sintesi": "A Paolisi, in Valle Caudina, torna il calcio dilettantistico con una squadra di Terza Categoria, in gran parte di ragazzi cresciuti nella scuola calcio del paese. Prima partita domenica 25 ottobre alle 14:30 a Rotondi.",
+   "categoria": "sport",
+   "sport": "calcio",
+   "zona": "caudina",
+   "luogo": "Paolisi",
+   "pubblicato": "2026-10-23T15:46:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://sport.ntr24.tv/2026/10/23/paolisi-il-calcio-riparte-dai-giovani-nasce-la-squadra-di-terza-categoria/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Paolisi, in Valle Caudina, nasce una squadra di calcio di Terza Categoria, la serie più bassa del calcio dilettantistico. Il paese torna ad avere una squadra in campionato e in campo ci sono anche tanti ragazzi cresciuti nella scuola calcio locale, che conta quasi 150 tra bambini e ragazzi.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "In panchina c'è l'allenatore Federico Falco, affiancato dal dirigente accompagnatore Giuseppe Cioffi e dal direttore generale Benito Lostorto. La società è formata dai soci Giuseppe Mainolfi, Salvatore Falco, Raffaele Cioffi, Luigi Farese e Fabio Mazza, e dice di voler offrire ai giovani un'alternativa concreta alla noia e alle cattive compagnie.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "La prima partita di campionato è domenica 25 ottobre alle 14:30 all'impianto sportivo «L. Gallo» di Rotondi. A breve sarà disponibile anche la tessera del tifoso per sostenere la società.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Contro quale squadra e in quale girone si gioca la prima partita: l'articolo non lo dice."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Paolisi, il calcio riparte dai giovani: nasce la squadra di Terza Categoria",
+      "url": "https://sport.ntr24.tv/2026/10/23/paolisi-il-calcio-riparte-dai-giovani-nasce-la-squadra-di-terza-categoria/",
+      "data": "23 ott, 15:46"
+     }
+    ]
+   }
+  },
   {
    "id": "benevento-gesesa-guasto-via-avellino-acqua-15-17-23-ottobre",
    "titolo": "Benevento, guasto alla rete: niente acqua dalle 15 alle 17 nella zona di via Avellino e piazza Castello",
@@ -4055,14 +4214,14 @@
   },
   {
    "id": "unisannio-lezioni-a-distanza-22-ottobre",
-   "titolo": "Benevento, Unisannio: da giovedì 22 ottobre lezioni a distanza per i disagi del carburante",
-   "titolo_google": "Unisannio, lezioni a distanza dal 22 ottobre per il carburante",
-   "sintesi": "Da giovedì 22 ottobre e fino a nuova comunicazione l'Università del Sannio tiene le lezioni a distanza, per le difficoltà di spostamento dovute alla protesta degli autotrasportatori e alla mancanza di carburante. Gli esami e le lauree restano in presenza.",
+   "titolo": "Benevento, Unisannio: lezioni a distanza dal 22 ottobre, da martedì 27 si torna in presenza",
+   "titolo_google": "Unisannio, da martedì 27 ottobre lezioni di nuovo in presenza",
+   "sintesi": "Dopo la didattica a distanza iniziata giovedì 22 ottobre per i disagi del carburante, l'Università del Sannio ha annunciato che da martedì 27 ottobre le lezioni tornano in presenza.",
    "categoria": "altro",
    "zona": "benevento",
    "immagine": "universita",
    "luogo": "Benevento",
-   "pubblicato": "2026-10-21",
+   "pubblicato": "2026-10-23T16:06:00+02:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
@@ -4077,34 +4236,85 @@
     {
      "nome": "Benevento Giornale",
      "url": "https://www.beneventogiornale.com/2026/10/21/unisannio-lezioni-a-distanza-dal-22-ottobre-per-i-disagi-legati-allapprovvigionamento-di-carburante/"
+    },
+    {
+     "nome": "NTR24 (23/10)",
+     "url": "https://www.ntr24.tv/2026/10/23/unisannio-martedi-riprendono-le-attivita-didattiche-in-presenza/"
+    },
+    {
+     "nome": "Benevento Giornale (23/10)",
+     "url": "https://www.beneventogiornale.com/2026/10/23/unisannio-dal-27-ottobre-riprendono-in-presenza-le-attivita-didattiche/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/23/unisannio-dal-27-ottobre-riprendono-in-presenza-le-attivita-didattiche/"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Venerdì 23 ottobre l'Università del Sannio ha comunicato che da martedì 27 ottobre le lezioni e le altre attività didattiche tornano regolarmente in presenza. Finisce così la didattica a distanza, adottata da giovedì 22 per le agitazioni degli autotrasportatori e le difficoltà a trovare carburante.",
+      "fonti": [
+       "NTR24 (23/10)",
+       "Benevento Giornale (23/10)",
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-23"
+     },
+     {
+      "testo": "L'ateneo spiega che il ritorno alla normalità è possibile perché l'emergenza sta rientrando poco alla volta. Fino a martedì le lezioni restano a distanza.",
+      "fonti": [
+       "NTR24 (23/10)",
+       "Benevento Giornale (23/10)",
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-23"
+     },
      {
       "testo": "Da giovedì 22 ottobre l'Università del Sannio (Unisannio) fa le lezioni a distanza, al computer. Lo ha deciso la rettrice Maria Moreno per limitare i disagi legati alla protesta degli autotrasportatori e alle difficoltà a trovare carburante, che possono rendere difficile arrivare alle sedi dell'università. Le lezioni e le altre attività in aula si fanno a distanza fino a nuova comunicazione, agli orari già previsti dai calendari.",
       "fonti": [
        "NTR24",
        "Anteprima24",
        "Benevento Giornale"
-      ]
+      ],
+      "giorno": "2026-10-21"
      },
      {
       "testo": "Gli esami già fissati si svolgono invece regolarmente in presenza, compatibilmente con l'organizzazione e con la disponibilità dei docenti. Per chi non riesce a raggiungere le sedi sono previste, a breve distanza di tempo, sedute straordinarie di recupero: gli studenti devono motivare la richiesta e riceveranno le date.",
       "fonti": [
        "NTR24",
        "Anteprima24"
-      ]
+      ],
+      "giorno": "2026-10-21"
      },
      {
       "testo": "Laboratori, tirocini e le altre attività che richiedono di essere sul posto le organizzano i presidenti dei corsi di studio, caso per caso. Le sedute di laurea restano in presenza. Anche i test di orientamento TOLC, gli eventi e le conferenze per ora sono confermati. L'università dice che seguirà l'evolversi della situazione e darà altre indicazioni.",
       "fonti": [
        "NTR24",
        "Anteprima24"
+      ],
+      "giorno": "2026-10-21"
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "22 ottobre",
+      "fatto": "Partono le lezioni a distanza.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     },
+     {
+      "data": "23 ottobre",
+      "fatto": "L'università annuncia il ritorno in presenza da martedì 27 ottobre.",
+      "fonti": [
+       "NTR24 (23/10)",
+       "Benevento Giornale (23/10)",
+       "BeneventoNews24"
       ]
      }
     ],
-    "cronologia": [],
     "concordano": [
      {
       "testo": "Lezioni a distanza da giovedì 22 ottobre 2026 e fino a nuova comunicazione; esami e sedute di laurea in presenza.",
@@ -4115,9 +4325,7 @@
      }
     ],
     "divergono": [],
-    "non_si_sa": [
-     "Fino a quando durerà la didattica a distanza: l'università parla solo di «nuova comunicazione»."
-    ],
+    "non_si_sa": [],
     "fonti": [
      {
       "nome": "NTR24",
@@ -4136,8 +4344,34 @@
       "titolo": "UNISANNIO, lezioni a distanza dal 22 ottobre per i disagi legati all’approvvigionamento di carburante",
       "url": "https://www.beneventogiornale.com/2026/10/21/unisannio-lezioni-a-distanza-dal-22-ottobre-per-i-disagi-legati-allapprovvigionamento-di-carburante/",
       "data": "21 ott"
+     },
+     {
+      "nome": "NTR24 (23/10)",
+      "titolo": "Unisannio, martedì riprendono le attività didattiche in presenza",
+      "url": "https://www.ntr24.tv/2026/10/23/unisannio-martedi-riprendono-le-attivita-didattiche-in-presenza/",
+      "data": "23 ott, 15:07"
+     },
+     {
+      "nome": "Benevento Giornale (23/10)",
+      "titolo": "Unisannio, dal 27 ottobre riprendono in presenza le attività didattiche",
+      "url": "https://www.beneventogiornale.com/2026/10/23/unisannio-dal-27-ottobre-riprendono-in-presenza-le-attivita-didattiche/",
+      "data": "23 ott, 15:11"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "UNISANNIO, dal 27 ottobre riprendono in presenza le attività didattiche",
+      "url": "https://www.beneventonews24.it/2026/10/23/unisannio-dal-27-ottobre-riprendono-in-presenza-le-attivita-didattiche/",
+      "data": "23 ott, 16:06"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Venerdì 23 ottobre l'Unisannio ha annunciato che da martedì 27 ottobre le lezioni tornano in presenza.",
+     "fonti": [
+      "NTR24 (23/10)",
+      "BeneventoNews24"
+     ],
+     "quando": "2026-10-23T16:16+02:00"
+    }
    },
    "foto": "universita"
   },
@@ -6265,12 +6499,12 @@
    "id": "tir-appia-telesina",
    "titolo": "Caro gasolio, tir fermi sull'Appia a Tufara Valle e a Castel del Lago, blocchi anche sulla Telesina a San Salvatore Telesino",
    "titolo_google": "Tir fermi sull'Appia e sulla Telesina per il caro gasolio",
-   "sintesi": "Dal 19 ottobre gli autotrasportatori protestano contro il prezzo del gasolio e i blocchi continuano per la seconda notte: tre presìdi a Castel del Lago, a Tufara Valle sull'Appia e a San Salvatore Telesino sulla Telesina. Da giovedì 22 si aggiungono gli agricoltori. Giovedì 22 il Governo ha approvato il decreto «Aiuti» e Meloni ha detto che le associazioni hanno revocato i fermi, mentre in alcune zone i blocchi continuano. In serata la Prefettura di Avellino ha comunicato la rimozione dei blocchi, compresi i piazzali dell'A16 nel Sannio. Venerdì 23 mattina nuovo presidio di agricoltori e autotrasportatori sulla statale 87.",
+   "sintesi": "Dal 19 ottobre gli autotrasportatori protestano contro il prezzo del gasolio e i blocchi continuano per la seconda notte: tre presìdi a Castel del Lago, a Tufara Valle sull'Appia e a San Salvatore Telesino sulla Telesina. Da giovedì 22 si aggiungono gli agricoltori. Giovedì 22 il Governo ha approvato il decreto «Aiuti» e Meloni ha detto che le associazioni hanno revocato i fermi, mentre in alcune zone i blocchi continuano. In serata la Prefettura di Avellino ha comunicato la rimozione dei blocchi, compresi i piazzali dell'A16 nel Sannio. Venerdì 23 mattina nuovo presidio di agricoltori e autotrasportatori sulla statale 87. Verso le 13 gli agricoltori hanno sospeso i presìdi in vista della manifestazione del 27 ottobre a Roma.",
    "categoria": "strade",
    "zona": "provincia",
    "immagine": "camion",
    "luogo": "Tufara Valle",
-   "pubblicato": "2026-10-23T14:20:00+02:00",
+   "pubblicato": "2026-10-23T15:21:00+02:00",
    "stato": "confermata",
    "fonti": [
     {
@@ -6372,15 +6606,19 @@
     {
      "nome": "Lab TV (Fortore)",
      "url": "https://www.labtv.net/attualita/2026/10/23/fortore-allarme-carburante-e-farmaci-per-il-blocco-degli-autotrasportatori-a-rischio-le-fasce-piu-fragili/"
+    },
+    {
+     "nome": "Ottopagine (23/10 pomeriggio)",
+     "url": "https://www.ottopagine.it/bn/cronaca/441963/caro-carburante-gli-agricoltori-protesta-solo-sospesa-ora-iniziative-comuni.shtml"
     }
    ],
    "articolo": {
     "aggiornamento": {
-     "testo": "Venerdì 23 ottobre Cronache del Sannio scrive che il presidio degli autotrasportatori e degli agricoltori si è spostato sulla statale 87, in località Torre Palazzo, e che gli organizzatori annunciano l'adesione allo sciopero generale del 30 ottobre, con un corteo a Benevento.",
+     "testo": "Venerdì 23 ottobre verso le 13 gli agricoltori hanno sospeso i presìdi sulla statale 87, sulla 212 e a Ponte delle Tavole, in vista della manifestazione nazionale del 27 ottobre a Roma.",
      "fonti": [
-      "Cronache del Sannio (23/10)"
+      "Ottopagine (23/10 pomeriggio)"
      ],
-     "quando": "2026-10-23T15:10+02:00"
+     "quando": "2026-10-23T16:16+02:00"
     },
     "aggiornato": "2026-10-20T09:25:00+02:00",
     "cronologia": [
@@ -6542,6 +6780,13 @@
       "fatto": "Il presidio degli agricoltori e degli autotrasportatori si sposta sulla statale 87 a Torre Palazzo; annunciata l'adesione allo sciopero generale del 30 ottobre con corteo a Benevento.",
       "fonti": [
        "Cronache del Sannio (23/10)"
+      ]
+     },
+     {
+      "data": "23 ottobre, verso le 13",
+      "fatto": "Sospesi i tre presìdi degli agricoltori nel Beneventano, in vista della manifestazione nazionale a Roma del 27 ottobre.",
+      "fonti": [
+       "Ottopagine (23/10 pomeriggio)"
       ]
      }
     ],
@@ -6812,9 +7057,22 @@
       "titolo": "Fortore, allarme carburante e farmaci per il blocco degli autotrasportatori: «A rischio le fasce più fragili»",
       "url": "https://www.labtv.net/attualita/2026/10/23/fortore-allarme-carburante-e-farmaci-per-il-blocco-degli-autotrasportatori-a-rischio-le-fasce-piu-fragili/",
       "data": "23 ott, 15:05"
+     },
+     {
+      "nome": "Ottopagine (23/10 pomeriggio)",
+      "titolo": "Caro carburanti. Gli agricoltori: protesta solo sospesa, ora iniziative comuni",
+      "url": "https://www.ottopagine.it/bn/cronaca/441963/caro-carburante-gli-agricoltori-protesta-solo-sospesa-ora-iniziative-comuni.shtml",
+      "data": "23 ott, 15:21"
      }
     ],
     "racconto": [
+     {
+      "testo": "Venerdì 23 ottobre verso le 13 gli organizzatori dei tre presìdi degli agricoltori del Beneventano (statale 87, statale 212 e Ponte delle Tavole) hanno deciso di sospenderli temporaneamente, in vista della manifestazione nazionale del 27 ottobre a Roma con agricoltori e autotrasportatori. Per loro non è la fine della protesta: dopo il 27 valuteranno nuove mosse in base alle risposte delle istituzioni.",
+      "fonti": [
+       "Ottopagine (23/10 pomeriggio)"
+      ],
+      "giorno": "2026-10-23"
+     },
      {
       "testo": "Venerdì 23 ottobre, secondo Cronache del Sannio, i presìdi sulle autostrade campane sono stati sciolti dopo le misure del Consiglio dei ministri e le consegne ai supermercati e ai distributori ricominciano. Nel Sannio però la protesta continua: gli organizzatori hanno portato il presidio permanente sulla statale 87, in località Torre Palazzo, vicino alla stazione di servizio Ewa, senza bloccare il traffico. L'appello è rivolto anche a cittadini, studenti, artigiani e commercianti, perché la protesta ora riguarda anche carovita, bollette e tasse. Hanno annunciato l'adesione allo sciopero generale del 30 ottobre, con un corteo a Benevento.",
       "fonti": [
@@ -7202,12 +7460,12 @@
    "id": "agricoltori-22-ottobre",
    "titolo": "Dal 22 ottobre presidi degli agricoltori sulla Sannitica, sulla statale 212 e a Ponte delle Tavole",
    "titolo_google": "Agricoltori, presidi dal 22 ottobre sulla Sannitica e sulla 212",
-   "sintesi": "Gli agricoltori sanniti si uniscono alla protesta contro il caro gasolio e i costi di produzione. Da giovedì 22 ottobre presidi a oltranza sulla Sannitica, sulla statale 212 e a Ponte delle Tavole; lo stesso giorno Coldiretti Campania manifesta a Napoli. Il 21 ottobre Coldiretti Campania ha fermato la manifestazione di Napoli dopo la promessa della Regione. Il 22 la Regione ha indicato 13 milioni di ristori e il Governo 60 milioni sul gasolio agricolo.",
+   "sintesi": "Gli agricoltori sanniti si uniscono alla protesta contro il caro gasolio e i costi di produzione. Da giovedì 22 ottobre presidi a oltranza sulla Sannitica, sulla statale 212 e a Ponte delle Tavole; lo stesso giorno Coldiretti Campania manifesta a Napoli. Il 21 ottobre Coldiretti Campania ha fermato la manifestazione di Napoli dopo la promessa della Regione. Il 22 la Regione ha indicato 13 milioni di ristori e il Governo 60 milioni sul gasolio agricolo. Venerdì 23 i tre presìdi sono stati sospesi in vista della manifestazione nazionale del 27 ottobre a Roma.",
    "categoria": "strade",
    "zona": "benevento",
    "immagine": "trattori",
    "luogo": "Benevento",
-   "pubblicato": "2026-10-22T18:03:00+02:00",
+   "pubblicato": "2026-10-23T15:21:00+02:00",
    "stato": "confermata",
    "fonti": [
     {
@@ -7269,6 +7527,10 @@
     {
      "nome": "NTR24 (CIA)",
      "url": "https://www.ntr24.tv/2026/10/22/cia-campania-il-blocco-dei-camion-mette-in-ginocchio-le-aziende-agricole-solidali-si-ma-non-danneggiati-servono-risposte-immediate/"
+    },
+    {
+     "nome": "Ottopagine (23/10 pomeriggio)",
+     "url": "https://www.ottopagine.it/bn/cronaca/441963/caro-carburante-gli-agricoltori-protesta-solo-sospesa-ora-iniziative-comuni.shtml"
     }
    ],
    "articolo": {
@@ -7320,6 +7582,13 @@
       "fatto": "Coldiretti Campania accoglie con favore i 60 milioni del Governo sul gasolio agricolo.",
       "fonti": [
        "NTR24 (Coldiretti, 60 milioni)"
+      ]
+     },
+     {
+      "data": "23 ottobre, verso le 13",
+      "fatto": "Sospesi i tre presìdi degli agricoltori nel Beneventano, in vista della manifestazione nazionale a Roma del 27 ottobre.",
+      "fonti": [
+       "Ottopagine (23/10 pomeriggio)"
       ]
      }
     ],
@@ -7470,6 +7739,12 @@
       "titolo": "CIA Campania: «Il blocco dei camion mette in ginocchio le aziende agricole: solidali sì, ma non danneggiati. Servono risposte immediate»",
       "url": "https://www.ntr24.tv/2026/10/22/cia-campania-il-blocco-dei-camion-mette-in-ginocchio-le-aziende-agricole-solidali-si-ma-non-danneggiati-servono-risposte-immediate/",
       "data": "22 ott, 18:03"
+     },
+     {
+      "nome": "Ottopagine (23/10 pomeriggio)",
+      "titolo": "Caro carburanti. Gli agricoltori: protesta solo sospesa, ora iniziative comuni",
+      "url": "https://www.ottopagine.it/bn/cronaca/441963/caro-carburante-gli-agricoltori-protesta-solo-sospesa-ora-iniziative-comuni.shtml",
+      "data": "23 ott, 15:21"
      }
     ],
     "divergono": [
@@ -7489,6 +7764,13 @@
      }
     ],
     "racconto": [
+     {
+      "testo": "Venerdì 23 ottobre verso le 13 gli organizzatori dei tre presìdi degli agricoltori del Beneventano (statale 87, statale 212 e Ponte delle Tavole) hanno deciso di sospenderli temporaneamente, in vista della manifestazione nazionale del 27 ottobre a Roma con agricoltori e autotrasportatori. Per loro non è la fine della protesta: dopo il 27 valuteranno nuove mosse in base alle risposte delle istituzioni.",
+      "fonti": [
+       "Ottopagine (23/10 pomeriggio)"
+      ],
+      "giorno": "2026-10-23"
+     },
      {
       "giorno": "2026-10-22",
       "testo": "Giovedì 22 ottobre la Regione Campania ha incontrato a Palazzo Santa Lucia le organizzazioni agricole: il presidente Roberto Fico e l'assessora all'Agricoltura Maria Carmela Serluca hanno annunciato 13 milioni di euro presi dalle risorse non ancora spese della programmazione in corso. Andranno in ristori alle aziende iscritte al registro UMA (Utenti Motori Agricoli), ma solo dopo l'autorizzazione della Commissione europea. La Regione sta valutando altri fondi, anche dal FESR.",
@@ -7564,12 +7846,11 @@
      }
     ],
     "aggiornamento": {
-     "testo": "Giovedì 22 ottobre la Regione Campania ha indicato 13 milioni di euro di ristori per le aziende agricole (serve il via libera della Commissione europea) e il Governo ha annunciato 60 milioni sul gasolio agricolo.",
+     "testo": "Venerdì 23 ottobre verso le 13 gli agricoltori hanno sospeso i presìdi sulla statale 87, sulla 212 e a Ponte delle Tavole, in vista della manifestazione nazionale del 27 ottobre a Roma.",
      "fonti": [
-      "Regione Campania (13 milioni)",
-      "NTR24 (Coldiretti, 60 milioni)"
+      "Ottopagine (23/10 pomeriggio)"
      ],
-     "quando": "2026-10-22T18:11+02:00"
+     "quando": "2026-10-23T16:16+02:00"
     }
    },
    "rilevante": false,
@@ -7984,7 +8265,7 @@
    "titolo_google": "Caro gasolio nel Sannio: blocchi, cosa manca, cosa succede",
    "sommario": "Da lunedì 19 ottobre gli autotrasportatori fermano i camion sull'Appia a Tufara Valle e a Castel del Lago; ci sono stati blocchi anche sulla Telesina a San Salvatore Telesino. Nei supermercati mancano i prodotti freschi e alcuni distributori hanno finito il gasolio. Da giovedì 22 si aggiungono gli agricoltori. Oggi, 20 ottobre, il ministro Salvini incontra a Milano associazioni e gruppi di protesta, anche della Campania.",
    "luogo": "Provincia di Benevento",
-   "aggiornato": "2026-10-22T18:10:00+02:00",
+   "aggiornato": "2026-10-23T16:20:00+02:00",
    "collegate": [
     "tir-appia-telesina",
     "scaffali-vuoti",
@@ -8400,6 +8681,13 @@
      "fonti": [
       "Il Caudino (Prefettura di Avellino)"
      ]
+    },
+    {
+     "data": "23 ottobre, verso le 13",
+     "fatto": "Gli agricoltori sospendono i tre presìdi del Beneventano in vista della manifestazione nazionale del 27 ottobre a Roma; dicono che la protesta non finisce.",
+     "fonti": [
+      "Ottopagine (23/10 pomeriggio)"
+     ]
     }
    ],
    "non_si_sa": [
@@ -8635,6 +8923,12 @@
      "titolo": "La Prefettura di Avellino annuncia la rimozione dei blocchi stradali",
      "url": "https://ilcaudino.it/la-prefettura-di-avellino-annuncia-la-rimozione-dei-blocchi-stradali-uid-5/",
      "data": "22 ott, 19:35"
+    },
+    {
+     "nome": "Ottopagine (23/10 pomeriggio)",
+     "titolo": "Caro carburanti. Gli agricoltori: protesta solo sospesa, ora iniziative comuni",
+     "url": "https://www.ottopagine.it/bn/cronaca/441963/caro-carburante-gli-agricoltori-protesta-solo-sospesa-ora-iniziative-comuni.shtml",
+     "data": "23 ott, 15:21"
     }
    ],
    "nota": "Correzione: nella versione delle 8:45 scrivevamo che il ministero dei Trasporti aveva convocato le associazioni per il 27 ottobre, come riportava Il Post il 16 ottobre. ANSA (17 ottobre) e Il Sole 24 Ore (18 ottobre) riportano che il ministro Salvini ha anticipato il tavolo a oggi, martedì 20 ottobre, in Prefettura a Milano. Abbiamo corretto sommario, «In breve», sezioni, domande e cronologia."
