@@ -1,7 +1,158 @@
 {
- "aggiornato": "2026-10-23T17:11+02:00",
+ "aggiornato": "2026-10-23T18:13+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "bonea-frana-localita-capo-strade-chiuse",
+   "titolo": "Bonea, frana in località Capo: chiuse via Capo, via Capo di sotto e via Punituro",
+   "titolo_google": "Bonea, frana in località Capo: tre strade chiuse",
+   "sintesi": "Il sindaco di Bonea ha chiuso al transito di auto e pedoni via Capo, via Capo di sotto e via Punituro dopo una frana provocata dalle piogge. Il Comune ha chiesto alla Regione lo stato di emergenza.",
+   "categoria": "strade",
+   "zona": "telesina",
+   "immagine": "frana",
+   "luogo": "Bonea",
+   "pubblicato": "2026-10-23T17:24:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/bonea-frana-capo-strade-ordinanza/"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/23/bonea-frana-in-localita-capo-chiuse-tre-strade-il-comune-chiede-lo-stato-di-emergenza/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Venerdì 23 ottobre il sindaco di Bonea, Giampietro Roviezzo, ha chiuso con un'ordinanza urgente (la numero 17/2026) via Capo, via Capo di sotto e via Punituro, in località Capo. Il divieto vale subito e riguarda sia le auto sia chi va a piedi: possono entrare solo le persone autorizzate.",
+      "fonti": [
+       "Anteprima24",
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "La chiusura è scattata dopo la segnalazione dei Carabinieri Forestali di Montesarchio, che il 22 ottobre, durante un controllo, hanno trovato una frana superficiale. Le piogge degli ultimi giorni hanno portato a valle fango, cenere dell'incendio nel bosco del Demanio regionale del 22 settembre e pietre anche molto grosse. L'ultimo tratto di via Capo non si può più percorrere.",
+      "fonti": [
+       "Anteprima24",
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Nella zona della frana c'è un edificio rurale, il «Casino Colonico», e più in basso, in via Capo di sotto, un gruppo di case che potrebbe correre rischi. I rilievi fatti dai Carabinieri Forestali con i droni mostrano che i versanti sono ancora instabili e che nuove colate di detriti sono possibili se tornerà a piovere.",
+      "fonti": [
+       "Anteprima24",
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Nella stessa giornata la Giunta comunale ha chiesto al presidente della Regione Campania di dichiarare lo stato di emergenza per Bonea, per gli eventi di pioggia eccezionali del 21 ottobre. Il sindaco dice: «Spero di non rimanere solo per fronteggiare un'emergenza per la quale non abbiamo né mezzi né risorse».",
+      "fonti": [
+       "Anteprima24",
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "22 ottobre",
+      "fatto": "I Carabinieri Forestali di Montesarchio accertano la frana superficiale in località Capo.",
+      "fonti": [
+       "Anteprima24",
+       "NTR24"
+      ]
+     },
+     {
+      "data": "23 ottobre",
+      "fatto": "Il sindaco firma l'ordinanza che chiude le tre strade e la Giunta chiede lo stato di emergenza.",
+      "fonti": [
+       "Anteprima24",
+       "NTR24"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Chiusura di via Capo, via Capo di sotto e via Punituro con l'ordinanza 17/2026 del 23 ottobre, dopo la segnalazione dei Carabinieri Forestali, e richiesta di stato di emergenza.",
+      "fonti": [
+       "Anteprima24",
+       "NTR24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Fino a quando resteranno chiuse le strade.",
+     "Se le famiglie di via Capo di sotto dovranno lasciare le case.",
+     "Cosa deciderà la Regione sullo stato di emergenza."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Bonea, frana in località Capo: chiuse tre strade con ordinanza urgente",
+      "url": "https://www.anteprima24.it/benevento/bonea-frana-capo-strade-ordinanza/",
+      "data": "23 ott, 17:24"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Bonea, frana in località Capo: chiuse tre strade. Il Comune chiede lo stato di emergenza",
+      "url": "https://www.ntr24.tv/2026/10/23/bonea-frana-in-localita-capo-chiuse-tre-strade-il-comune-chiede-lo-stato-di-emergenza/",
+      "data": "23 ott, 17:23"
+     }
+    ]
+   },
+   "foto": "frana-6"
+  },
+  {
+   "id": "benevento-corso-garibaldi-commercianti-associazione-halloween",
+   "titolo": "Benevento, i commercianti di Corso Garibaldi fondano un'associazione e preparano eventi per Halloween",
+   "titolo_google": "Corso Garibaldi, nasce l'associazione dei commercianti",
+   "sintesi": "A Benevento i commercianti di Corso Garibaldi si sono uniti in una nuova associazione di promozione del territorio. Il primo appuntamento sarà nel fine settimana di Halloween.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-23T17:24:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/corso-garibaldi-i-commercianti-passano-allazione-ecco-cosa-bolle-in-pentola/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "I commercianti di Corso Garibaldi, a Benevento, si sono uniti in una nuova associazione di promozione del territorio. Vogliono riportare persone, iniziative e movimento lungo il Corso, con eventi, attività culturali e occasioni di incontro, insieme a negozi, cittadini, associazioni e istituzioni.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Il primo banco di prova sarà il fine settimana di Halloween: sono già stati coinvolti diversi artisti di strada e il programma sarà annunciato a breve. L'iniziativa arriva dopo la stretta del Comune sulle vetrine dismesse e dopo la scelta di far tornare gli autobus sul Corso, chiesta dai commercianti.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Il programma e le date precise degli eventi di Halloween."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Corso Garibaldi, i commercianti passano all’azione: ecco cosa bolle in pentola",
+      "url": "https://www.anteprima24.it/benevento/corso-garibaldi-i-commercianti-passano-allazione-ecco-cosa-bolle-in-pentola/",
+      "data": "23 ott, 17:24"
+     }
+    ]
+   }
+  },
   {
    "id": "benevento-benzinabn-web-app-pompe-di-benzina",
    "titolo": "Benevento, tre giovani sanniti lanciano benzinabn.it: una mappa dei distributori con le segnalazioni degli automobilisti",
