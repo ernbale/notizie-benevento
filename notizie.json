@@ -1,7 +1,93 @@
 {
- "aggiornato": "2026-10-23T07:09+02:00",
+ "aggiornato": "2026-10-23T08:13+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-san-pio-sindacati-lettera-fico",
+   "titolo": "Benevento, ospedale San Pio: i sindacati scrivono a Fico contro la direttrice generale e minacciano un presidio alla Regione",
+   "titolo_google": "Benevento, San Pio: i sindacati scrivono a Fico",
+   "sintesi": "FP CGIL, UIL FP e USB hanno mandato una lettera aperta a Roberto Fico sull'azienda ospedaliera San Pio di Benevento: accusano la direttrice generale di non aprire al dialogo. Se non arrivano risposte, portano la protesta a Napoli, sotto la Regione.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "immagine": "protesta",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-23T07:36:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/23/san-pio-sindacati-a-fico-pronti-al-presidio-sotto-la-sede-della-regione-se-non-arriveranno-risposte-concrete-dalla-diggi/"
+    },
+    {
+     "nome": "Benevento Giornale",
+     "url": "https://www.beneventogiornale.com/2026/10/23/segreterie-sindacali-cgil-uil-usb-richiesta-urgente-di-intervento-istituzionale-sulla-gestione-dellaorn-san-pio-di-benevento/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "I sindacati dei dipendenti dell'ospedale San Pio di Benevento rilanciano la protesta. FP CGIL, UIL FP e USB hanno scritto una lettera aperta a Roberto Fico e gli chiedono di intervenire subito sulla gestione dell'azienda ospedaliera.",
+      "fonti": [
+       "NTR24",
+       "Benevento Giornale"
+      ]
+     },
+     {
+      "testo": "Nella lettera i sindacati accusano la direttrice generale, Maria Morgante, di chiudersi al dialogo: dicono che da gennaio 2026 ignora le segnalazioni e le richieste del personale. A firmare sono Raffa per la FP CGIL, De Luca per la UIL FP e Ruggiero per l'USB.",
+      "fonti": [
+       "NTR24",
+       "Benevento Giornale"
+      ]
+     },
+     {
+      "testo": "Tra i problemi elencati ci sono la carenza di personale e i carichi di lavoro pesanti, la stabilizzazione dei precari che non è partita e la mancanza di percorsi per far crescere i dipendenti. I sindacati citano poi la forte pressione sul Pronto soccorso, con sovraffollamento per operatori e pazienti, e disservizi di ogni giorno: dal parcheggio gestito in modo caotico a una mensa che non è garantita nemmeno a chi fa turni lunghi.",
+      "fonti": [
+       "NTR24",
+       "Benevento Giornale"
+      ]
+     },
+     {
+      "testo": "La lettera arriva dopo un sit-in davanti all'ospedale, svolto nei giorni scorsi, a cui hanno partecipato molti lavoratori. Se la richiesta a Fico resterà senza risposta, i tre sindacati annunciano di voler spostare la protesta a Napoli, con un nuovo sit-in sotto la sede della Regione Campania.",
+      "fonti": [
+       "NTR24",
+       "Benevento Giornale"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "La lettera aperta a Fico di FP CGIL, UIL FP e USB, le accuse alla direttrice generale e il possibile sit-in sotto la Regione a Napoli.",
+      "fonti": [
+       "NTR24",
+       "Benevento Giornale"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Cosa risponderanno la direzione dell'ospedale e la Regione.",
+     "Quando si farebbe l'eventuale sit-in a Napoli.",
+     "I due giornali riportano il comunicato dei sindacati: la versione della direzione generale non è ancora uscita."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "San Pio, sindacati a Fico: “Pronti al presidio sotto la sede della Regione se non arriveranno risposte concrete dalla diggi”",
+      "url": "https://www.ntr24.tv/2026/10/23/san-pio-sindacati-a-fico-pronti-al-presidio-sotto-la-sede-della-regione-se-non-arriveranno-risposte-concrete-dalla-diggi/",
+      "data": "23 ott, 07:20"
+     },
+     {
+      "nome": "Benevento Giornale",
+      "titolo": "Segreterie Sindacali CGIL, UIL ,USB :”Richiesta urgente di intervento istituzionale sulla gestione dell’AORN “San Pio” di Benevento”",
+      "url": "https://www.beneventogiornale.com/2026/10/23/segreterie-sindacali-cgil-uil-usb-richiesta-urgente-di-intervento-istituzionale-sulla-gestione-dellaorn-san-pio-di-benevento/",
+      "data": "23 ott, 07:36"
+     }
+    ]
+   },
+   "foto": "protesta-6"
+  },
   {
    "id": "accademia-volley-benevento-serie-c-koala-bears-24-ottobre",
    "titolo": "Pallavolo, Serie C femminile: la Pasta Rummo Accademia gioca a San Giuseppe Vesuviano sabato 24 ottobre",
