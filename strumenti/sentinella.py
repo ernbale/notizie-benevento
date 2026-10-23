@@ -10,8 +10,10 @@ nessuno se ne accorgesse.
    pubblicazione in corso: ne lancia una.
 3. Canale Telegram muto: dalle 8 alle 22, sul sito c'è una notizia più nuova dell'ultimo messaggio del canale, da più
    di TG_MAX minuti: lancia una pubblicazione con gli arretrati di Telegram.
-4. Giro mancato: notizie.json non aggiornato da più di GIRO_MAX minuti (dalle 7:30 a mezzanotte). Lo può solo
-   segnalare: l'agente gira sui server di Anthropic.
+4. Giro mancato: notizie.json non aggiornato da più di GIRO_MAX minuti, dalle 7:30 alle 23; dalle 23 a mezzanotte
+   solo se per domani c'è allerta arancione o rossa, perché il giro delle 23 l'agente lo fa solo allora (stessa prova,
+   allerta_domani.py; il 22 ott la sentinella è finita in rosso alle 23:32 per un giro che giustamente non c'era).
+   Lo può solo segnalare: l'agente gira sui server di Anthropic.
 
 Dove gira: sul Pi di casa ogni 15 minuti (cron, --pi), perché gli orari di GitHub saltano proprio quando GitHub è
 carico (la sera del 22 ott non è mai partita); e su GitHub (sentinella.yml) come riserva. Se qualcosa non va, su
@@ -40,6 +42,7 @@ import urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from facebook import SITO, fuso, quando
 from telegram import DALLE, ALLE, sul_canale
+from allerta_domani import allerte
 
 REPO = "ernbale/notizie-benevento"
 API = "https://api.github.com"
@@ -170,7 +173,8 @@ def controlla(gh, su_main, adesso, prova):
                 lancia = recupera = not attive
 
     # 4. giro mancato
-    if (adesso.hour, adesso.minute) >= (7, 30) and adesso - a_main > dt.timedelta(minutes=GIRO_MAX):
+    if ((adesso.hour, adesso.minute) >= (7, 30) and adesso - a_main > dt.timedelta(minutes=GIRO_MAX)
+            and (adesso.hour < 23 or giro_delle_23(adesso))):
         problemi.append(f"nessun giro dell'agente da {minuti(adesso - a_main)} minuti (l'ultimo è delle {a_main:%H:%M})")
 
     if lancia:
@@ -188,6 +192,14 @@ def controlla(gh, su_main, adesso, prova):
         except ValueError:
             pass
     return riparati, problemi
+
+
+def giro_delle_23(adesso):
+    """Stasera c'è il giro delle 23? Solo se per domani c'è allerta arancione o rossa: la stessa prova dell'agente."""
+    try:
+        return bool(allerte(adesso)[1])
+    except Exception:   # come l'agente: se meteo.json non si legge, il giro delle 23 non lo fa
+        return False
 
 
 def main():

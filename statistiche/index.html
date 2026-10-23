@@ -641,7 +641,7 @@
       var lenti = mis7.filter(function (g) { return g.minuti > 20; });
       rma.appendChild(el("p", "", mancati7.length ? "Mancati: " + mancati7.join(", ") + "." : "Nessun giro mancato."));
       rma.appendChild(el("p", "", lenti.length ? "Più di 20 minuti per andare online: " + lenti.map(function (g) { return giornoBreve(g.giorno) + " " + g.ora + " (" + num(g.minuti) + " min)"; }).join(", ") + "." : "Nessun giro ci ha messo più di 20 minuti."));
-      rma.appendChild(el("p", "nota", "Un giro lento è quasi sempre GitHub che tiene ferma la pubblicazione in coda: la sentinella del Pi la rilancia dopo 20 minuti. Ultimo controllo della sentinella su GitHub: " + (P.sentinella_ultima ? quandoBreve(P.sentinella_ultima) : "–") + "."));
+      rma.appendChild(el("p", "nota", "Un giro lento è quasi sempre GitHub che tiene ferma la pubblicazione in coda: la sentinella la rilancia dopo 20 minuti. La sentinella controlla dal Pi ogni 15 minuti e ripara da sola quello che può; se resta un problema finisce in rosso su GitHub e arriva la mail. Ultimo allarme: " + (P.sentinella_allarme ? quandoBreve(P.sentinella_allarme) : "nessuno negli ultimi 30 giorni") + "."));
       rma.classList.add("largo"); gp.appendChild(rma);
       m.appendChild(gp);
     }
