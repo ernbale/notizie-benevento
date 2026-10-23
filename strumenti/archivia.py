@@ -199,7 +199,12 @@ MOTIVI = {   # gli unici motivi per non pubblicare un fatto dei giornali (22 ott
     "non_notizia": "non è una notizia per il sito (opinione, rubrica, ricorrenza, telegiornale)",
     "voce_non_confermata": "voce o indiscrezione non confermata (anche calciomercato)",
     "non_leggibile": "l'articolo non si apre",
+    "allerta_gialla": "allerta gialla senza chiusure (la mostra la pagina Meteo)",   # 23 ott 2026, scelta del proprietario
 }
+# una notizia che è solo un'allerta gialla (la gialla non si pubblica; le chiusure per la gialla sì)
+GIALLA = re.compile(r"\bgiall[ae]\b", re.I)
+PIU_ALTA = re.compile(r"\b(arancion[ei]|ross[ae])\b", re.I)
+CHIUSURE = re.compile(r"chius|scuol|parch|cimiter|sospes|ordinanz|sgombr|evacu|allag|frana|crollo|danni", re.I)
 
 
 def controlla_decisioni(giro, percorso, d, prima, tutti_gli_id, ev, err):
@@ -605,7 +610,11 @@ def controlla(d, err, avv, adesso=None):
             avv.append(f"{w}: manca titolo_google (Google mostrerà il titolo lungo tagliato)")
         elif len(tg) > 70:
             err.append(f"{w}: titolo_google di {len(tg)} caratteri: al massimo 65")
-        tl = (str(n.get("titolo", "")) + " " + tg).lower()
+        tit = str(n.get("titolo", ""))
+        if n.get("categoria") == "meteo" and GIALLA.search(tit) and not PIU_ALTA.search(tit) and not CHIUSURE.search(tit):
+            err.append(f"{w}: è solo un'allerta gialla, che non si pubblica (AGENTE.md, «Le Allerte»): togli la notizia "
+                       "(nel diario `allerta_gialla`); se un Comune chiude qualcosa, il titolo dica la chiusura")
+        tl = (tit + " " + tg).lower()
         for b in VIETATE:
             if b in tl:
                 err.append(f"{w}: titolo con {b!r}")
