@@ -29,6 +29,9 @@ import re
 import shutil
 import sys
 
+from chiusure import slug       # gli stessi nomi di img/stemmi (strumenti/stemmi.py)
+from meteo import COMUNI_BN
+
 SITO = "https://notiziebenevento.it"
 INDEXNOW_CHIAVE = "dbcf36df6ea73bedfd5f2e121caca034"   # pubblica per costruzione: il file <chiave>.txt sta sul sito
 NOME = "Notizie Benevento"
@@ -622,7 +625,7 @@ def _categoria(n):
 
 
 def _testata_pagina(occhiello, luogo, titolo):
-    lu = f'<span class="luogo">{e(luogo)}</span>' if luogo else ""
+    lu = f'<span class="luogo">{_luogo_link(luogo)}</span>' if luogo else ""
     return (f'<a class="indietro" href="/">← Tutte le notizie</a><div class="occhiello">{e(occhiello)}{lu}</div>'
             f"<h1>{e(titolo)}</h1>")
 
@@ -759,6 +762,114 @@ def html_chi_siamo():
           "provincia e si possono verificare, le pubblichiamo citando chi le firma.</p>")
     h += f"<h3>Contatti</h3><p>Per segnalare un errore o una notizia che manca, scrivici un messaggio sulla {fb}.</p>"
     h += ("<h3>Privacy</h3><p>Le visite si contano in forma anonima, senza cookie. Non serve nessuna registrazione.</p>")
+    return f'<article class="appro">{h}</article>'
+
+
+# ---------- i Comuni: comune/<nome>/ e comuni/ ----------
+COMUNE_MINIMO = 3   # notizie + eventi: sotto, la pagina c'è ma con noindex e fuori dalla sitemap (Google penalizza le pagine quasi vuote)
+_COMUNI = {c.lower(): c for c in COMUNI_BN}
+_COMUNI["sant'agata dei goti"] = "Sant'Agata de' Goti"
+SEP_LUOGO = r"([,()]| e )"   # come in luogoConLink (index.html)
+
+
+def _comune(pezzo):
+    return _COMUNI.get(pezzo.replace("’", "'").strip().lower())
+
+
+def comuni_di(luogo):
+    """I Comuni nel «luogo» di una notizia: «Cusano Mutri, frazione Civitella» → Cusano Mutri, «Airola e Valle
+    Caudina» → Airola. Solo i pezzi che sono proprio il nome di un Comune: nel titolo «Ponte» sarebbe ovunque."""
+    trovati = []
+    for p in re.split(SEP_LUOGO, str(luogo or "")):
+        c = _comune(p)
+        if c and c not in trovati:
+            trovati.append(c)
+    return trovati
+
+
+def url_comune(c):
+    return "/zona/benevento/" if c == "Benevento" else f"/comune/{slug(c)}/"
+
+
+def _luogo_link(luogo):
+    """Il luogo sotto il titolo, con i Comuni che portano alla loro pagina."""
+    out = ""
+    for p in re.split(SEP_LUOGO, str(luogo or "")):
+        c = _comune(p)
+        if c:
+            prima, nome, dopo = re.match(r"(\s*)(.*?)(\s*)$", p, re.S).groups()
+            out += f'{e(prima)}<a href="{url_comune(c)}">{e(nome)}</a>{e(dopo)}'
+        else:
+            out += e(p)
+    return out
+
+
+def _allerta_comune(c, allerte, oggi):
+    """«Allerta meteo … zona «Alta Irpinia e Sannio»: oggi verde, domani gialla.» dal bollettino della Protezione civile."""
+    giorni = allerte.get("giorni") or {}
+    livelli, zona = [], None
+    for nome, d in (("oggi", oggi), ("domani", oggi + dt.timedelta(days=1))):
+        for z, x in ((giorni.get(d.isoformat()) or {}).get("zone") or {}).items():
+            if c in (x.get("comuni") or []):
+                zona = z
+                livelli.append(f"{nome} {x.get('livello') or 'verde'}")
+    if not zona:
+        return ""
+    bol = f" ({allerte['dpc_bollettino'][0].lower()}{allerte['dpc_bollettino'][1:]})" if allerte.get("dpc_bollettino") else ""
+    return (f'<p class="agg-chiusure">Allerta meteo della Protezione civile per la zona «{e(zona)}»: '
+            f'{e(", ".join(livelli))}{e(bol)}. <a href="/meteo.html">Le previsioni del tempo</a>.</p>')
+
+
+def html_comune(c, notizie, eventi, chiusure, allerte, stemma, oggi):
+    titolo = f"Notizie da {c}"
+    h = _testata_pagina("Comuni del Sannio", "Provincia di Benevento", titolo)
+    somm = (f'<p class="sommario">Le notizie di {e(c)}, in provincia di Benevento: cronaca, strade, politica, sport ed '
+            f'eventi, confrontati tra i giornali locali e i siti ufficiali, con i link agli articoli originali.</p>')
+    if stemma:   # accanto al titolo; disegni liberi di Wikimedia Commons: autore e licenza vanno citati
+        lic = e(stemma.get("licenza"))
+        if stemma.get("url_licenza", "").startswith("http"):
+            lic = f'<a href="{e(stemma["url_licenza"])}" target="_blank" rel="noopener nofollow">{lic}</a>'
+        fig = (f'<figure class="stemma"><img src="{e(stemma["file"])}" width="{stemma["larghezza"] // 2}" '
+               f'height="{stemma["altezza"] // 2}" alt="Stemma del Comune di {e(c)}"><figcaption>Stemma: '
+               f'<a href="{e(stemma["pagina"])}" target="_blank" rel="noopener nofollow">Wikimedia Commons</a>'
+               + (f", {e(stemma['autore'])}" if stemma.get("autore") else "") + f", {lic}</figcaption></figure>")
+        h = h.replace(f"<h1>{e(titolo)}</h1>", f'<div class="testata-comune"><div><h1>{e(titolo)}</h1>{somm}</div>{fig}</div>')
+    else:
+        h += somm
+    visti = set()
+    for g, cs in chiusure_per_giorno(chiusure, oggi).items():
+        for x in cs:
+            if x["comune"] == c and x.get("id") not in visti:
+                visti.add(x.get("id"))
+                h += (f'<a class="striscia-chiusure" href="/scuole-chiuse/#{e(x.get("id"))}">'
+                      f'{e(_giorno_chiusura(g, oggi))}: {e(x["cosa"])}</a>')
+    h += _allerta_comune(c, allerte, oggi)
+    if eventi:
+        h += f"<h3>Prossimi eventi a {e(c)}</h3><ul class=\"notizie-comune\">" + "".join(
+            f'<li><a href="{percorso("evento", ev["id"])}">{e(ev["titolo"])}</a>'
+            f'<span class="dove">{e(quando_ev(ev))}</span></li>' for ev in eventi) + "</ul>"
+    h += f"<h3>Le notizie da {e(c)}</h3>"
+    if notizie:
+        h += '<ul class="notizie-comune">' + "".join(
+            f'<li><a href="{percorso("notizia", n["id"])}">{e(n["titolo"])}</a>'
+            f'<span class="dove">{e(_categoria(n))} · {e(data_it(n.get("pubblicato"), lunga=True))}</span>'
+            + (f"<p>{e(breve(n['sintesi'], 220))}</p>" if n.get("sintesi") else "") + "</li>" for n in notizie[:100]) + "</ul>"
+    else:
+        h += f"<p>Per ora non ci sono notizie da {e(c)}: le trovi qui appena escono.</p>"
+    h += '<p class="sezioni-link">Gli altri paesi: <a href="/comuni/">tutti i Comuni del Sannio</a></p>'
+    h += SEGUI
+    return f'<article class="appro">{h}</article>'
+
+
+def html_comuni(quante):
+    h = _testata_pagina("Comuni del Sannio", "", "I Comuni della provincia di Benevento")
+    h += ('<p class="sommario">Una pagina per ognuno dei 78 Comuni del Sannio, con le sue notizie, gli eventi, le '
+          "scuole chiuse e l'allerta meteo della sua zona.</p>")
+    h += '<ul class="elenco-comuni">' + "".join(
+        f'<li><a href="{url_comune(c)}">{e(c)}</a>' + (f" <span>{quante[c]}</span>" if quante.get(c) else "") + "</li>"
+        for c in COMUNI_BN) + "</ul>"
+    h += '<p class="agg-chiusure">Accanto al nome, quante notizie ci sono.</p>'
+    h += SEGUI
     return f'<article class="appro">{h}</article>'
 
 
@@ -993,7 +1104,7 @@ def main():
     except ImportError:
         con_immagini = False
         print("AVVISO: Pillow non c'è, uso l'immagine del sito per tutte le notizie", file=sys.stderr)
-    for d in ("notizia", "approfondimento", "sezione", "zona", "evento"):
+    for d in ("notizia", "approfondimento", "sezione", "zona", "evento", "comune", "comuni"):
         shutil.rmtree(os.path.join(sito, d), ignore_errors=True)
     per_id = {n["id"]: n for n in notizie}
     usate, mappa = set(), []   # mappa: (url, lastmod)
@@ -1121,6 +1232,61 @@ def main():
                   html_scuole_chiuse(chius, adesso.astimezone(fuso()).date()), articolo=True))
     mappa.append((url, chius.get("aggiornato")))
 
+    # i Comuni: una pagina per ognuno (Benevento ha zona/benevento) e l'elenco comuni/
+    oggi = adesso.astimezone(fuso()).date()
+    try:
+        allerte = leggi(os.path.join(sito, "meteo.json")).get("allerte") or {}
+    except (OSError, ValueError):   # meteo.json lo fa meteo.py nello stesso giro: senza, la pagina non ha l'allerta
+        allerte = {}
+    try:
+        stemmi = leggi(os.path.join(sito, "img", "stemmi", "stemmi.json"))
+    except (OSError, ValueError):
+        stemmi = {}
+    per_comune = {c: [] for c in COMUNI_BN}
+    for n in notizie:
+        for c in comuni_di(n.get("luogo")):
+            per_comune[c].append(n)
+    ev_comune = {c: [] for c in COMUNI_BN}
+    for ev in sorted(eventi, key=lambda x: x["inizio"]):
+        if fine_ev(ev) >= oggi.isoformat() and not ev.get("annullato"):
+            for c in comuni_di(ev.get("comune"))[:1]:
+                ev_comune[c].append(ev)
+    indicizzate = 0
+    for c in COMUNI_BN:
+        if c == "Benevento":
+            continue
+        url = SITO + url_comune(c)
+        dentro, evc = per_comune[c], ev_comune[c]
+        visibile = len(dentro) + len(evc) >= COMUNE_MINIMO
+        jsonld = {"@context": "https://schema.org", "@graph": [
+            {"@type": "CollectionPage", "name": f"Notizie da {c}", "url": url,
+             "about": {"@type": "AdministrativeArea", "name": c,
+                       "containedInPlace": {"@type": "AdministrativeArea", "name": "Provincia di Benevento"}},
+             "isPartOf": {"@type": "WebSite", "name": NOME, "url": SITO + "/"}},
+            {"@type": "BreadcrumbList", "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": NOME, "item": SITO + "/"},
+                {"@type": "ListItem", "position": 2, "name": "Comuni del Sannio", "item": SITO + "/comuni/"},
+                {"@type": "ListItem", "position": 3, "name": c}]}]}
+        seo = blocco_seo(f"Notizie {c} oggi: cronaca, eventi e allerte – {NOME}",
+                         breve(f"Le ultime notizie da {c} (BN): cronaca, strade, politica, eventi, scuole chiuse e allerta "
+                               "meteo, confrontate tra i giornali locali e i siti ufficiali."), url, "/condivisione.png",
+                         jsonld=jsonld, extra="" if visibile else '<meta name="robots" content="noindex, follow">')
+        scrivi(os.path.join(sito, url_comune(c).strip("/"), "index.html"),
+               pagina(modello, seo, {"statica": True},
+                      html_comune(c, dentro, evc, chius.get("chiusure") or [], allerte, stemmi.get(c), oggi), articolo=True))
+        if visibile:
+            indicizzate += 1
+            mappa.append((url, dentro[0].get("pubblicato") if dentro else None))
+    url = SITO + "/comuni/"
+    quante = {c: len(v) for c, v in per_comune.items()}
+    seo = blocco_seo(f"I Comuni del Sannio: notizie paese per paese – {NOME}", "Le notizie dei 78 Comuni della provincia "
+                     "di Benevento, una pagina per ogni paese: cronaca, eventi, scuole chiuse e allerta meteo.", url,
+                     "/condivisione.png", jsonld={"@context": "https://schema.org", "@type": "CollectionPage",
+                                                  "name": "I Comuni del Sannio", "url": url,
+                                                  "isPartOf": {"@type": "WebSite", "name": NOME, "url": SITO + "/"}})
+    scrivi(os.path.join(sito, "comuni", "index.html"), pagina(modello, seo, {"statica": True}, html_comuni(quante), articolo=True))
+    mappa.append((url, None))
+
     mappa.insert(0, (SITO + "/", prima.get("aggiornato")))
     mappa.insert(1, (SITO + "/meteo.html", adesso.isoformat(timespec="minutes")))
 
@@ -1197,7 +1363,8 @@ def main():
         with open(a.indexnow, "w", encoding="utf-8") as f:
             json.dump(cambiate[:10000], f)
         print(f"IndexNow: {len(cambiate)} pagine cambiate")
-    print(f"OK pagine: {len(notizie)} notizie, {len(appro)} approfondimenti, {len(eventi)} eventi, {len(SEZIONI)} sezioni e zone; "
+    print(f"OK pagine: {len(notizie)} notizie, {len(appro)} approfondimenti, {len(eventi)} eventi, {len(SEZIONI)} sezioni e zone, "
+          f"{len(COMUNI_BN) - 1} Comuni ({indicizzate} per Google); "
           f"{len(usate)} immagini; sitemap {len(mappa)} indirizzi")
 
 
