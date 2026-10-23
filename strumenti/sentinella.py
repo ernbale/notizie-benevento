@@ -8,7 +8,7 @@ nessuno se ne accorgesse.
    prende tutte le notizie fino a quel momento.
 2. Sito indietro: notizie.json del ramo main più nuovo di quello online da più di RITARDO_MAX minuti e nessuna
    pubblicazione in corso: ne lancia una.
-3. Canale Telegram muto: dalle 8 alle 22, sul sito c'è una notizia più nuova dell'ultimo messaggio del canale, da più
+3. Canale Telegram muto: dalle 7 alle 23 (un'ora dopo l'inizio dei post), sul sito c'è una notizia più nuova dell'ultimo messaggio del canale, da più
    di TG_MAX minuti: lancia una pubblicazione con gli arretrati di Telegram.
 4. Giro mancato: notizie.json non aggiornato da più di GIRO_MAX minuti, dalle 7:30 alle 23; dalle 23 a mezzanotte
    solo se per domani c'è allerta arancione o rossa, perché il giro delle 23 l'agente lo fa solo allora (stessa prova,

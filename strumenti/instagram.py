@@ -2,14 +2,15 @@
 """Pubblica su Instagram (l'account aziendale collegato alla Pagina Facebook) le notizie più importanti, una alla volta.
 
 Lo esegue GitHub dopo ogni pubblicazione del sito, come facebook.py, che ne è il modello:
-- Al massimo una notizia ogni PAUSA_MINUTI e MAX_GIORNO al giorno, dalle 8 alle 21: su Instagram poche e buone.
+- Al massimo una notizia ogni PAUSA_MINUTI e MAX_GIORNO al giorno, dalle 6 fino al giro delle 22 compreso
+  (come Facebook e Telegram): su Instagram poche e buone.
 - Sceglie la più importante tra le notizie delle ultime 12 ore non ancora uscite (stessa importanza di facebook.py).
 - L'immagine è img/ig/<id>.jpg (1080×1350, la fa pagine.py): titolo grande e, se c'è, la foto illustrativa con la
   scritta che è fatta con l'intelligenza artificiale. Instagram la scarica dal sito, che deve essere già online.
 - Cosa è già uscito lo legge da Instagram stesso (il link della notizia scritto nella didascalia).
 - Dalle RIEPILOGO_DALLE, come ultimo post del giorno, il riepilogo della giornata («Il Sannio oggi»): un carosello con
   la copertina e le immagini delle notizie più importanti uscite oggi. La scelta e la copertina le fa pagine.py
-  (img/ig/oggi.json), così sul sito c'è già tutto quando Instagram scarica le immagini. Prima delle 19 un posto del
+  (img/ig/oggi.json), così sul sito c'è già tutto quando Instagram scarica le immagini. Prima di allora un posto del
   giorno resta libero per il riepilogo.
 - La chiave è la stessa della Pagina (segreto FB_PAGE_TOKEN), con i permessi instagram_basic e
   instagram_content_publish. Senza account Instagram collegato alla Pagina non fa niente.
@@ -31,8 +32,8 @@ from facebook import PAGINA, SITO, candidate, chiama, fuso, quando, rilievo   # 
 
 MAX_GIORNO = 8
 PAUSA_MINUTI = 90
-DALLE, ALLE = 8, 21
-RIEPILOGO_DALLE = 19   # il riepilogo della giornata, l'ultimo post del giorno
+DALLE, ALLE = 6, 23   # come facebook.py
+RIEPILOGO_DALLE = 20   # il riepilogo della giornata, l'ultimo post del giorno (dalle 20: voluto dal proprietario)
 RIEPILOGO_PAUSA = 30   # minuti dall'ultimo post
 QUANTE, ALMENO = 5, 3  # notizie nel riepilogo; con meno di ALMENO notizie oggi niente riepilogo
 TITOLO_RIEPILOGO = "Il Sannio oggi"
@@ -156,7 +157,7 @@ def main():
         print("Instagram: nessuna chiave (segreto FB_PAGE_TOKEN), non pubblico niente")
         return
     if not DALLE <= adesso.hour < ALLE:
-        print(f"Instagram: sono le {adesso:%H:%M}, si pubblica dalle {DALLE} alle {ALLE}")
+        print(f"Instagram: sono le {adesso:%H:%M}, si pubblica dalle {DALLE} fino al giro delle {ALLE - 1}")
         return
     pag = chiama("GET", "me", token, {"fields": "name,instagram_business_account{id,username}"})
     if pag.get("name") != PAGINA:
