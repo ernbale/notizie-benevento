@@ -350,6 +350,7 @@
    "pubblicato": "2026-10-23T17:24:00+02:00",
    "stato": "confermata",
    "rilevante": false,
+   "traffico": "chiusa",
    "fonti": [
     {
      "nome": "Anteprima24",
@@ -1159,6 +1160,8 @@
    "luogo": "Cusano Mutri, frazione Civitella",
    "pubblicato": "2026-10-23T11:56:00+02:00",
    "in_vigore_fino": "2026-10-31",
+   "traffico": "bus",
+   "in_vigore_dal": "2026-10-24",
    "stato": "ufficiale",
    "fonti": [
     {
@@ -1706,6 +1709,8 @@
    },
    "immagine": "divieto-sosta",
    "in_vigore_fino": "2026-10-24",
+   "traffico": "chiusa",
+   "in_vigore_dal": "2026-10-24",
    "foto": "divieto-sosta-2"
   },
   {
@@ -2642,6 +2647,8 @@
    "luogo": "Benevento, Rione Ferrovia",
    "pubblicato": "2026-10-22T16:31:00+02:00",
    "in_vigore_fino": "2026-10-24",
+   "traffico": "bus",
+   "in_vigore_dal": "2026-10-24",
    "stato": "ufficiale",
    "rilevante": false,
    "fonti": [
@@ -3294,6 +3301,7 @@
     ]
    },
    "in_vigore_fino": "2026-10-30",
+   "traffico": "ristretta",
    "immagine": "lavori-stradali",
    "foto": "lavori-stradali-4"
   },
@@ -3618,6 +3626,8 @@
    "stato": "ufficiale",
    "rilevante": false,
    "in_vigore_fino": "2026-11-02",
+   "traffico": "chiusa",
+   "in_vigore_dal": "2026-10-31",
    "fonti": [
     {
      "nome": "Albo pretorio Benevento",
@@ -3768,6 +3778,8 @@
    "luogo": "Benevento, via Annunziata",
    "pubblicato": "2026-10-21",
    "in_vigore_fino": "2026-10-24",
+   "traffico": "chiusa",
+   "in_vigore_dal": "2026-10-24",
    "stato": "ufficiale",
    "rilevante": false,
    "fonti": [
@@ -3843,6 +3855,7 @@
    "pubblicato": "2026-10-21",
    "stato": "ufficiale",
    "rilevante": false,
+   "traffico": "chiusa",
    "fonti": [
     {
      "nome": "Albo pretorio Benevento",
@@ -5232,6 +5245,7 @@
    "stato": "ufficiale",
    "rilevante": false,
    "in_vigore_fino": "2026-10-30",
+   "traffico": "senso_unico",
    "fonti": [
     {
      "nome": "Comune di Benevento",
@@ -8859,6 +8873,7 @@
    },
    "rilevante": false,
    "in_vigore_fino": "2026-10-31",
+   "traffico": "senso_unico",
    "foto": "lavori-stradali"
   },
   {
