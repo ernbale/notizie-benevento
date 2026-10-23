@@ -1,5 +1,14 @@
 {
- "aggiornato": null,
- "viste": [],
- "chiusure": []
+ "aggiornato": "2026-10-23T11:31+02:00",
+ "viste": [
+  "1131ffc78db3"
+ ],
+ "chiusure": [],
+ "scartate": [
+  {
+   "pista": "1131ffc78db3",
+   "motivo": "Piano traffico per corsa podistica: nessuna chiusura di scuole, parchi, cimiteri, impianti o mercati",
+   "quando": "2026-10-23T11:31+02:00"
+  }
+ ]
 }
