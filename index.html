@@ -118,6 +118,31 @@
   .avvisi-box li a { color: var(--nero); text-decoration: none; }
   .avvisi-box li a:hover { text-decoration: underline; }
   .avvisi-box .dove { display: block; font: 500 12px var(--sans); color: var(--rosso); margin-top: 3px; }
+  /* carburanti: i 5 distributori meno cari (carburanti.json, strumenti/carburanti.py) e la pagina carburanti/ */
+  .carburanti-box { margin-bottom: 18px; }
+  .carburanti-box .cb-scelta { display: flex; gap: 6px; margin: 0 0 4px; }
+  .carburanti-box .cb-scelta button { font: 600 13px var(--sans); background: #fff; color: var(--nero); border: 1px solid var(--riga); border-radius: 16px; padding: 4px 12px; cursor: pointer; }
+  .carburanti-box .cb-scelta button[aria-pressed="true"] { background: var(--nero); color: #fff; border-color: var(--nero); }
+  .carburanti-box ol { list-style: none; padding: 0; margin: 0; }
+  .carburanti-box li a { display: flex; gap: 10px; align-items: baseline; padding: 7px 0; border-bottom: 1px solid var(--riga); color: var(--nero); text-decoration: none; }
+  .carburanti-box li a:hover .cb-dove b { text-decoration: underline; }
+  .carburanti-box .cb-prezzo { flex: none; min-width: 48px; font: 700 16px var(--sans); }
+  .carburanti-box .cb-dove { font: 500 13px/1.35 var(--sans); color: var(--grigio); }
+  .carburanti-box .cb-dove b { color: var(--nero); font-weight: 700; }
+  .carburanti-box .cb-nota { font: 500 12px/1.4 var(--sans); color: var(--grigio); margin: 6px 0 0; }
+  .appro table.prezzi { width: 100%; border-collapse: collapse; font: 500 15px/1.35 var(--sans); margin: 0 0 8px; }
+  .appro table.prezzi th { text-align: left; font: 700 12px var(--sans); text-transform: uppercase; letter-spacing: .5px; color: var(--grigio); padding: 4px 8px 4px 0; border-bottom: 1px solid var(--nero); }
+  .appro table.prezzi td { padding: 7px 8px 7px 0; border-bottom: 1px solid var(--riga); vertical-align: baseline; }
+  .appro table.prezzi td:first-child { color: var(--grigio); width: 22px; }
+  .appro table.prezzi td.pr { font-weight: 700; white-space: nowrap; }
+  .appro table.prezzi td a { color: var(--nero); font-weight: 700; }
+  .appro table.prezzi td span { color: var(--grigio); font-size: 13.5px; }
+  .appro .cb-comune { font: 700 20px/1.2 var(--serif); margin: 26px 0 8px; scroll-margin-top: 12px; }
+  .appro .distributori li { scroll-margin-top: 12px; }
+  .appro .distributori .cb-nome { display: block; font: 700 17px/1.3 var(--serif); }
+  .appro .distributori .cb-prezzi { margin: 6px 0 2px; font: 500 15px/1.5 var(--sans); }
+  .appro .distributori .cb-prezzi span { display: block; }
+  .appro .distributori li:target { background: rgba(196, 22, 28, .06); outline: 6px solid rgba(196, 22, 28, .06); }
   /* «Seguici»: come i pulsanti Ascolta e Condividi, il colore del marchio solo nel logo */
   .segui { margin: 0 0 18px; }
   .segui p { margin: 0 0 10px; font: 500 14px/1.4 var(--sans); color: var(--grigio); }
@@ -511,7 +536,7 @@
     <p>Notizie Benevento è un report automatico: le notizie appartengono ai giornali citati. Qui le raccontiamo con parole nostre, confrontando le fonti, con i link agli articoli originali.</p>
     <p>Una notizia compare se la riportano almeno due testate diverse oppure una fonte ufficiale (Comuni, Regione, Prefettura, Questura e forze dell'ordine, ASL, ANAS, INGV, le società dell'acqua, dei treni e dei bus). La cronaca riportata da un solo giornale autorevole porta la scritta «Una sola fonte». Le accuse sono riportate con le parole usate dai giornali. Aggiornato ogni ora, dalle 6 alle 22. Le visite si contano in forma anonima, senza cookie.</p>
     <p>Nessuna notizia viene cancellata: quando esce dalla prima pagina resta nell'<a href="#archivio">archivio</a>, allo stesso indirizzo.</p>
-    <p class="sezioni-link">Sezioni: <a href="/sezione/strade/">Strade</a> · <a href="/sezione/cronaca/">Cronaca</a> · <a href="/sezione/politica/">Politica</a> · <a href="/sezione/sport/">Sport</a> · <a href="/sezione/eventi/">Eventi</a> · <a href="/sezione/allerte/">Allerte</a> · <a href="/sezione/altro/">Altro</a> · <a href="/meteo.html">Meteo Benevento</a> · <a href="/strade-chiuse/">Strade chiuse oggi</a><br>
+    <p class="sezioni-link">Sezioni: <a href="/sezione/strade/">Strade</a> · <a href="/sezione/cronaca/">Cronaca</a> · <a href="/sezione/politica/">Politica</a> · <a href="/sezione/sport/">Sport</a> · <a href="/sezione/eventi/">Eventi</a> · <a href="/sezione/allerte/">Allerte</a> · <a href="/sezione/altro/">Altro</a> · <a href="/meteo.html">Meteo Benevento</a> · <a href="/strade-chiuse/">Strade chiuse oggi</a> · <a href="/carburanti/">Prezzi carburanti</a><br>
       Zone: <a href="/zona/benevento/">Benevento città</a> · <a href="/zona/valle-telesina/">Valle Telesina</a> · <a href="/zona/valle-caudina/">Valle Caudina</a> · <a href="/zona/fortore/">Fortore e Tammaro</a> · <a href="/zona/altri-comuni/">Altri comuni</a> · <a href="/comuni/">Tutti i Comuni</a> · <a href="/feed.xml">Feed RSS</a></p>
     <p class="sezioni-link"><a href="/chi-siamo/">Chi siamo</a> · Seguici su <a href="https://www.instagram.com/notiziebenevento.it/" target="_blank" rel="noopener">Instagram</a>, <a href="https://www.facebook.com/notiziebenevento" target="_blank" rel="noopener">Facebook</a> e <a href="https://t.me/notiziebenevento" target="_blank" rel="noopener">Telegram</a></p>
   </footer>
@@ -1203,6 +1228,7 @@
     if (!resto.length) altre.style.display = "none";
     var rm = riquadroMeteo();
     if (rm) c3.appendChild(rm);
+    if (!filtroCat) { var rc = riquadroCarburanti(); if (rc) c3.appendChild(rc); }
     if (!filtroCat) c3.appendChild(riquadroSegui("Le notizie del Sannio appena escono, sul telefono."));
     if (avvisi.length) c3.appendChild(riquadroAvvisi(avvisi));
     if (!filtroCat) { var rs = riquadroSport(); if (rs) c3.appendChild(rs); }
@@ -2300,6 +2326,54 @@
       if (lat && !lat.querySelector(".meteo-box")) { var rm = riquadroMeteo(); if (rm) lat.insertBefore(rm, lat.firstChild); }
     })
     .catch(function () { /* senza meteo il sito funziona lo stesso */ });
+
+  // I 5 distributori meno cari della provincia (prezzi self comunicati al Ministero), in prima pagina tra il meteo e
+  // «Seguici»: benzina o diesel, con il link alla pagina di tutti i distributori.
+  var carburanti = null, tipoCarburante = "benzina";
+  function prezzoIt(x) { return x.toFixed(3).replace(".", ","); }
+  function riquadroCarburanti() {
+    var c = carburanti;
+    if (!c || !c.classifiche || !c.impianti) return null;
+    var per = {};
+    c.impianti.forEach(function (i) { per[i.id] = i; });
+    var box = el("section", "carburanti-box", [el("h3", "titolo-col", ["Carburanti, i meno cari"])]);
+    var scelta = el("div", "cb-scelta", []), lista = el("ol", "", []);
+    function mostra() {
+      lista.innerHTML = "";
+      (c.classifiche[tipoCarburante] || []).slice(0, 5).forEach(function (id) {
+        var i = per[id], p = i && i.prezzi[tipoCarburante] && i.prezzi[tipoCarburante].self;
+        if (!p) return;
+        var a = el("a", "", [el("span", "cb-prezzo", [prezzoIt(p.prezzo)]),
+          el("span", "cb-dove", [el("b", "", [i.bandiera === "Pompa bianca" && i.nome && i.nome !== i.comune ? i.nome : i.bandiera]), " " + i.comune + (i.indirizzo ? ", " + i.indirizzo : "")])]);
+        a.href = "/carburanti/#d" + i.id;
+        lista.appendChild(el("li", "", [a]));
+      });
+      scelta.querySelectorAll("button").forEach(function (b) { b.setAttribute("aria-pressed", b.getAttribute("data-tipo") === tipoCarburante ? "true" : "false"); });
+    }
+    [["benzina", "Benzina"], ["gasolio", "Diesel"]].forEach(function (t) {
+      var b = el("button", "", [t[1]]);
+      b.type = "button";
+      b.setAttribute("data-tipo", t[0]);
+      b.addEventListener("click", function () { tipoCarburante = t[0]; mostra(); });
+      scelta.appendChild(b);
+    });
+    box.appendChild(scelta);
+    box.appendChild(lista);
+    mostra();
+    var d = new Date(c.estrazione + "T12:00:00Z").toLocaleDateString("it-IT", { timeZone: TZ, day: "numeric", month: "long" });
+    box.appendChild(el("p", "cb-nota", ["Euro al litro, self service: prezzi comunicati dai gestori al Ministero, in vigore il " + d + "."]));
+    box.appendChild(linkTutte("/carburanti/", "Tutti i distributori della provincia ›"));
+    return box;
+  }
+  fetch("/carburanti.json?t=" + Date.now(), { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (j) {
+      carburanti = j;
+      // se la prima pagina è già disegnata, il riquadro va prima di «Seguici»
+      var lat = document.querySelector(".griglia .laterale"), segui = lat && lat.querySelector(".segui");
+      if (!filtroCat && segui && !lat.querySelector(".carburanti-box")) { var rc = riquadroCarburanti(); if (rc) lat.insertBefore(rc, segui); }
+    })
+    .catch(function () { /* senza prezzi il sito funziona lo stesso */ });
 
   // gli eventi arrivano a parte: il calendario e la pagina di un evento li aspettano (eventiPronti)
   var eventi = null;

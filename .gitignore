@@ -19,3 +19,5 @@ __pycache__/
 /comune/
 /comuni/
 /strade-chiuse/
+/carburanti/
+carburanti.json

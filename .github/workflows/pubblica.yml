@@ -53,6 +53,11 @@ jobs:
             curl -fsSL --max-time 30 "https://notiziebenevento.it/meteo.json" -o meteo.json || echo "nessun meteo precedente"
           fi
 
+      - name: Prezzi dei carburanti (dati del Ministero, riscaricati ogni 6 ore)
+        run: |
+          curl -fsSL --max-time 30 "https://notiziebenevento.it/carburanti.json" -o carburanti.json || echo "nessun prezzo pubblicato prima"
+          python3 strumenti/carburanti.py --se-piu-vecchio-di 6 || echo "Prezzi dei carburanti non aggiornati: tengo quelli già pubblicati"
+
       # le immagini di anteprima già fatte: si rifanno solo quelle delle notizie nuove o cambiate
       - uses: actions/cache@v4
         with:
