@@ -50,8 +50,8 @@ quello nuovo.
 
 I giri sono **ogni ora** dalle 6 alle 22 e sono **tutti completi**: a ogni giro leggi tutto quello che segue, Comuni
 compresi. In più c'è il **giro delle 23**, solo la sera prima di un'allerta arancione o rossa (lo dice
-`python3 strumenti/allerta_domani.py`): i sindaci firmano le chiusure di scuole, parchi e cimiteri spesso dopo le 22,
-e chi ha figli guarda la sera. È un giro completo come gli altri, con attenzione alle chiusure per domani.
+`python3 strumenti/allerta_domani.py`): è un giro completo come gli altri. Le chiusure di scuole, parchi e cimiteri
+**non le fai tu**: le pubblica il giro Chiusure (vedi «Le Allerte»).
 **Arrivare prima degli altri:** un fatto che ha già le fonti che servono (regole 2 e 3) esce **in questo giro**, con
 quello che si sa, senza aspettare il giro dopo per avere tutti i dettagli: quelli che arrivano dopo si aggiungono con
 l'«aggiornamento» (vedi «Quando aggiorni una notizia già uscita»). Prima le notizie nuove, poi eventi e ritocchi.
@@ -231,11 +231,16 @@ Sul sito la sezione si chiama **«Allerte»**. Ci vanno:
 - **allerte meteo della Protezione civile arancioni e rosse** che riguardano il Sannio. L'allerta **gialla non è una
   notizia** (scelta del proprietario, 23 ott 2026): la mostrano già il riquadro del meteo in prima pagina e la pagina
   Meteo, e non esce né sul sito né sui social. Un articolo dei giornali sulla sola allerta gialla si scarta con
-  `allerta_gialla`. Se però per un'allerta gialla un Comune chiude scuole, parchi o cimiteri, la **chiusura** è una
-  notizia: il titolo dice cosa chiude e dove (es. «Montesarchio, domani scuole chiuse per il maltempo»), non solo
-  «allerta gialla». `archivia.py` dà ERRORE se in prima pagina c'è una notizia che è solo un'allerta gialla;
-- **chiusure decise dai Comuni** per allerta o maltempo: scuole, parchi e ville comunali, cimiteri, impianti
-  sportivi, mercati, uffici;
+  `allerta_gialla`. Se per un'allerta gialla un Comune chiude scuole, parchi o cimiteri, la chiusura la pubblica il
+  giro Chiusure (qui sotto). `archivia.py` dà ERRORE se in prima pagina c'è una notizia che è solo un'allerta gialla;
+- le **chiusure decise dai Comuni** (scuole, parchi e ville comunali, cimiteri, impianti sportivi, mercati, uffici)
+  **non le scrivi tu**. Dal 23 ott 2026 le pubblica il **giro Chiusure**, una routine a parte che parte appena la
+  vedetta del Pi trova un'ordinanza (e comunque ogni ora), giorno e notte: le mette nella pagina «Scuole chiuse»
+  (https://notiziebenevento.it/scuole-chiuse/, file chiusure.json) e su tutti i social a qualsiasi ora. Tu **non crei
+  notizie sulle chiusure** (sui social sarebbero un doppione) e non tocchi chiusure.json: nella notizia di
+  un'allerta scrivi solo che l'elenco dei Comuni con le chiusure è nella pagina «Scuole chiuse». Un articolo dei
+  giornali su una chiusura: nel diario `{"esito": "chiusure"}`. `archivia.py` dà ERRORE se una notizia nuova del giro
+  parla di scuole (o parchi, cimiteri…) chiuse;
 - **terremoti** (INGV, con le soglie scritte sopra) e **danni del maltempo** (alberi caduti, allagamenti, frane).
 
 Regole:
@@ -264,15 +269,10 @@ Regole:
 - `in_vigore_fino` = l'ultimo giorno **dell'allerta del titolo** (o della chiusura). Allerta **arancione o rossa**:
   `rilevante: true`. Se il giorno dopo c'è un'allerta più bassa (per esempio gialla dopo l'arancione), non allungare
   `in_vigore_fino` della notizia vecchia: l'allerta del giorno la mostra già il sito in alto; per una gialla niente
-  notizia nuova (solo le chiusure, se ci sono). Il giorno dopo la fine togli `rilevante`: è finita.
-- Le chiusure di più Comuni per la stessa allerta: **una sola notizia** aggiornata a ogni giro con l'elenco dei Comuni
-  e cosa chiude (es. «Allerta arancione: chiusi scuole e parchi a Benevento, Montesarchio e Telese»), ogni Comune con
-  la sua fonte (comunicato o ordinanza del Comune, oppure due giornali).
-- **Nei giorni di allerta** (gialla, arancione o rossa per oggi o domani), a ogni giro, oltre alle fonti solite:
-  cerca «scuole chiuse», «ordinanza» e «allerta» nei titoli di tutti i giornali letti e fai una ricerca mirata
-  («scuole chiuse <giorno> Sannio», «allerta <giorno> Comuni Benevento chiusure»). Per **ogni Comune nominato**
-  apri il suo sito (`www.comune.<nome>.bn.it`, anche se non è tra i 19 di sempre) e cerca l'ordinanza. Aggiorna
-  l'elenco della notizia delle chiusure anche se l'hai già scritta: deve crescere finché escono Comuni nuovi.
+  notizia nuova (le chiusure le pubblica il giro Chiusure). Il giorno dopo la fine togli `rilevante`: è finita.
+- **Nei giorni di allerta** le ordinanze dei Comuni le cerca il giro Chiusure (ogni ora e appena la vedetta del Pi
+  trova qualcosa): tu continua a leggere tutto il resto, e per gli articoli sulle chiusure scrivi `chiusure` nel
+  diario.
 - Le **previsioni del tempo no**: stanno nella pagina Meteo, che fa un programma a parte.
 
 ## Come lavorare una notizia
@@ -583,13 +583,15 @@ mette in `diario/AAAA-MM-GG.json`; le notizie nuove e aggiornate, le fonti e le 
     "G2": {"esito": "aggiornata", "notizia": "tir-appia-telesina"},
     "G3": {"esito": "presente", "notizia": "id-della-notizia-che-lo-racconta-già"},
     "G4": {"esito": "evento", "evento": "id-dell-evento"},
-    "G5": {"esito": "scartata", "motivo": "fuori_provincia", "nota": "Calabria, non riguarda il Sannio"}
+    "G5": {"esito": "scartata", "motivo": "fuori_provincia", "nota": "Calabria, non riguarda il Sannio"},
+    "G6": {"esito": "chiusure", "nota": "scuole chiuse a Montesarchio: la pubblica il giro Chiusure"}
   }
 }
 ```
 - `decisioni`: una per **ogni** gruppo dell'elenco dei giornali (`/tmp/titoli.json`, vedi «Giornali del Sannio»),
   `{}` se l'elenco è vuoto. `archivia.py` controlla che ci siano tutte, che la notizia «nuova» sia nata in questo
-  giro e che quella «aggiornata» sia cambiata davvero. I soli motivi per scartare un fatto dei giornali:
+  giro e che quella «aggiornata» sia cambiata davvero. `chiusure` è per gli articoli sulle chiusure decise dai Comuni
+  (le pubblica il giro Chiusure, vedi «Le Allerte»). I soli motivi per scartare un fatto dei giornali:
   `fuori_provincia`, `vecchia`, `una_fonte_non_autorevole` (solo testate non autorevoli e nessuna conferma),
   `politica_senza_effetti` (regola 9), `pubblicita`, `non_notizia` (opinioni, rubriche, ricorrenze, telegiornali),
   `voce_non_confermata` (indiscrezioni, calciomercato), `non_leggibile` (l'articolo non si apre), `allerta_gialla`

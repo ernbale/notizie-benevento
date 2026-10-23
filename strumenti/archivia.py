@@ -189,7 +189,7 @@ def righe_registro(percorso, giornali=None):
     return fonti, ricerche
 
 
-ESITI = ("nuova", "aggiornata", "presente", "evento", "scartata")
+ESITI = ("nuova", "aggiornata", "presente", "evento", "scartata", "chiusure")   # chiusure: le fa il giro Chiusure
 MOTIVI = {   # gli unici motivi per non pubblicare un fatto dei giornali (22 ott 2026: «episodio minore» non vale)
     "fuori_provincia": "fuori provincia",
     "vecchia": "fatto vecchio o già passato",
@@ -204,6 +204,10 @@ MOTIVI = {   # gli unici motivi per non pubblicare un fatto dei giornali (22 ott
 # una notizia che è solo un'allerta gialla (la gialla non si pubblica; le chiusure per la gialla sì)
 GIALLA = re.compile(r"\bgiall[ae]\b", re.I)
 PIU_ALTA = re.compile(r"\b(arancion[ei]|ross[ae])\b", re.I)
+# una notizia che è una chiusura decisa da un Comune (le pubblica il giro Chiusure, strumenti/chiusure.py)
+CHIUSURA = re.compile(r"scuol\w*\s+chius|chius[aeiou]\w*\s+(?:(?:le|i|gli|dei|delle|degli|il|la)\s+)?(?:scuol|plessi|"
+                      r"istitut\w*\s+scolastic|parch|vill[ae]\s+comunal|cimiter)|sospensione\s+(?:delle\s+)?attivit[àa]\s+"
+                      r"didattic|niente\s+scuola\b|stop\s+alle\s+lezioni|lezioni\s+sospese", re.I)
 CHIUSURE = re.compile(r"chius|scuol|parch|cimiter|sospes|ordinanz|sgombr|evacu|allag|frana|crollo|danni", re.I)
 
 
@@ -613,7 +617,7 @@ def controlla(d, err, avv, adesso=None):
         tit = str(n.get("titolo", ""))
         if n.get("categoria") == "meteo" and GIALLA.search(tit) and not PIU_ALTA.search(tit) and not CHIUSURE.search(tit):
             err.append(f"{w}: è solo un'allerta gialla, che non si pubblica (AGENTE.md, «Le Allerte»): togli la notizia "
-                       "(nel diario `allerta_gialla`); se un Comune chiude qualcosa, il titolo dica la chiusura")
+                       "(nel diario `allerta_gialla`); le chiusure dei Comuni le pubblica il giro Chiusure")
         tl = (tit + " " + tg).lower()
         for b in VIETATE:
             if b in tl:
@@ -781,6 +785,13 @@ def main():
     controlla(d, err, avv, adesso_roma)
     giro = None
     if a.giro:
+        # le chiusure dei Comuni le pubblica il giro Chiusure (chiusure.json): una notizia in più sarebbe un doppione
+        gia = {n.get("id") for n in (pubblicate_prima(base) or {}).get("notizie", [])}
+        for n in d.get("notizie", []):
+            if n.get("id") not in gia and CHIUSURA.search(str(n.get("titolo") or "")):
+                err.append(f"{n.get('id')}: parla di una chiusura decisa da un Comune, che la pubblica il giro Chiusure "
+                           "(pagina Scuole chiuse e social): togli la notizia e nel diario scrivi «chiusure» (AGENTE.md, "
+                           "«Le Allerte»)")
         controlla_registro(a.registro, err, a.registro_giornali)
         giro = leggi_diario(a.diario, err)
     p_eventi = os.path.join(base, "eventi.json")

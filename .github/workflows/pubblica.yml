@@ -99,6 +99,27 @@ jobs:
             python3 strumenti/pagine.py --invia-indexnow "$RUNNER_TEMP/indexnow.json" || echo "::warning::IndexNow non ha risposto"
           fi
 
+      # Telegram e le chiusure: cosa è già uscito lo ricorda un file che GitHub conserva tra una pubblicazione e
+      # l'altra (cache; le pubblicazioni vanno una alla volta, vedi «concurrency» in alto)
+      - uses: actions/cache/restore@v4
+        with:
+          path: ${{ runner.temp }}/social
+          key: social-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: social-
+
+      # le chiusure dei Comuni per prime e a qualsiasi ora, su Telegram (col suono), Facebook e Instagram
+      # (strumenti/chiusure_social.py). Se un canale non va, il resto della pubblicazione continua, ma alla fine il
+      # lavoro diventa rosso (mail al proprietario) e la sentinella rilancia la pubblicazione.
+      - name: Chiusure dei Comuni sui social (a qualsiasi ora)
+        id: chiusure
+        continue-on-error: true
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/social"
+          python3 strumenti/chiusure_social.py --stato "$RUNNER_TEMP/social/chiusure.json"
+
       # dopo la pubblicazione, così Facebook trova già online la pagina della notizia (titolo e anteprima)
       - name: Facebook (una notizia nuova sulla Pagina, se è il momento)
         env:
@@ -110,14 +131,6 @@ jobs:
         env:
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
         run: python3 strumenti/instagram.py || echo "::warning::Instagram non ha pubblicato (vedi l'avviso sopra)"
-
-      # Telegram: il bot non può rileggere il canale, cosa è già uscito lo ricorda un file che GitHub conserva tra
-      # una pubblicazione e l'altra (cache; le pubblicazioni vanno una alla volta, vedi «concurrency» in alto)
-      - uses: actions/cache/restore@v4
-        with:
-          path: ${{ runner.temp }}/social
-          key: social-${{ github.run_id }}-${{ github.run_attempt }}
-          restore-keys: social-
 
       - name: Telegram (notizie nuove e aggiornamenti sul canale)
         env:
@@ -133,3 +146,9 @@ jobs:
         with:
           path: ${{ runner.temp }}/social
           key: social-${{ github.run_id }}-${{ github.run_attempt }}
+
+      - name: Chiusure non uscite su tutti i canali (lavoro in rosso, mail al proprietario)
+        if: steps.chiusure.outcome == 'failure'
+        run: |
+          echo "::error::Le chiusure dei Comuni non sono uscite su tutti i canali: vedi il passo «Chiusure dei Comuni sui social». La prossima pubblicazione riprova da sola."
+          exit 1

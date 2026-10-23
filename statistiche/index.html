@@ -700,7 +700,7 @@
     if (g.riassunto) sm.appendChild(el("p", "riassunto", g.riassunto));
     var E = g.esame_giornali;
     if (E && E.fatti != null) sm.appendChild(el("p", "nota", "Fatti nuovi dei giornali esaminati: " + E.fatti + " — " +
-      [[E.nuova, "nuove"], [E.aggiornata, "aggiornate"], [E.presente, "già sul sito"], [E.evento, "eventi"], [E.scartata, "scartati"]]
+      [[E.nuova, "nuove"], [E.aggiornata, "aggiornate"], [E.presente, "già sul sito"], [E.evento, "eventi"], [E.chiusure, "chiusure (giro Chiusure)"], [E.scartata, "scartati"]]
         .filter(function (x) { return x[0]; }).map(function (x) { return x[0] + " " + x[1]; }).join(", ") + "."));
     box.appendChild(sm);
     if (g.errore) return box;

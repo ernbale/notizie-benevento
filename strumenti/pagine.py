@@ -445,6 +445,141 @@ def riepilogo_ig(sito, notizie, adesso):
     return {rel}
 
 
+# ---------- chiusure dei Comuni (strumenti/chiusure.py) ----------
+def chiusure_per_giorno(chiusure, oggi):
+    """{giorno: [chiusure]} da oggi in poi, in ordine (una chiusura di più giorni sta sotto ognuno)."""
+    per = {}
+    for c in chiusure:
+        if c.get("revocata"):
+            continue
+        for g in c.get("giorni") or []:
+            if g >= oggi.isoformat():
+                per.setdefault(g, []).append(c)
+    return {g: sorted(per[g], key=lambda c: c["comune"]) for g in sorted(per)}
+
+
+def _giorno_chiusura(g, oggi):
+    d = dt.date.fromisoformat(g)
+    nome = f"{GIORNI[d.weekday()]} {d.day} {MESI_LUNGHI[d.month - 1]}"
+    if d == oggi:
+        return f"Oggi, {nome}"
+    if d == oggi + dt.timedelta(days=1):
+        return f"Domani, {nome}"
+    return nome[0].upper() + nome[1:]
+
+
+def html_scuole_chiuse(dati, oggi):
+    """La pagina «Scuole chiuse»: le chiusure di oggi e dei prossimi giorni, con l'ordinanza. index.html la ridisegna
+    da chiusure.json appena si apre (NB_PAGINA.chiusure), così è sempre quella di adesso."""
+    h = _testata_pagina("Chiusure dei Comuni", "", "Scuole chiuse nel Sannio")
+    h += ('<p class="sommario">Le scuole e gli altri luoghi che i Comuni della provincia di Benevento chiudono oggi e '
+          'nei prossimi giorni, ognuno con la sua ordinanza. La pagina si aggiorna da sola, anche di notte.</p>')
+    agg = dati.get("aggiornato")
+    if agg:
+        t = dt.datetime.fromisoformat(agg)
+        h += (f'<p class="agg-chiusure" id="agg-chiusure">Aggiornato alle {t:%H:%M} di {GIORNI[t.weekday()]} '
+              f'{t.day} {MESI_LUNGHI[t.month - 1]}.</p>')
+    per = chiusure_per_giorno(dati.get("chiusure") or [], oggi)
+    el_, con_id = "", set()   # l'id (…/scuole-chiuse/#id, i link dei messaggi di Telegram) sulla prima riga di ognuna
+    for g, cs in per.items():
+        el_ += f"<h3>{e(_giorno_chiusura(g, oggi))}</h3><ul class=\"chiusure\">"
+        for c in cs:
+            f = c.get("fonte") or {}
+            ide = f' id="{e(c["id"])}"' if c.get("id") and c["id"] not in con_id else ""
+            con_id.add(c.get("id"))
+            el_ += (f"<li{ide}><b>{e(c['comune'])}</b>: {e(c['cosa'])}." + (f" {e(c['motivo'])}." if c.get("motivo") else "")
+                    + (f' <a href="{e(f["url"])}" target="_blank" rel="noopener nofollow">{e(f.get("nome") or "Ordinanza")}</a>'
+                       if str(f.get("url") or "").startswith("http") else "") + "</li>")
+        el_ += "</ul>"
+    if not per:
+        el_ = "<p>Nessuna chiusura annunciata dai Comuni per oggi e per i prossimi giorni.</p>"
+    h += f'<div id="elenco-chiusure">{el_}</div>'
+    h += ('<p class="agg-chiusure">I siti dei Comuni li controlliamo ogni 5 minuti nei giorni di allerta e ogni 10 '
+          'negli altri, giorno e notte: una chiusura nuova esce qui e sui nostri canali a qualsiasi ora.</p>')
+    h += SEGUI
+    return f'<article class="appro">{h}</article>'
+
+
+def immagine_chiusure(sito, dati, adesso):
+    """L'immagine delle chiusure per Instagram e Facebook (img/ig/chiusure-<impronta>.jpg, 1080×1350) e
+    img/ig/chiusure.json col suo nome, per strumenti/chiusure_social.py. Restituisce i file da tenere."""
+    from PIL import Image, ImageDraw
+    from facebook import fuso
+    oggi = adesso.astimezone(fuso()).date()
+    per = chiusure_per_giorno(dati.get("chiusure") or [], oggi)
+    pj = os.path.join(sito, "img", "ig", "chiusure.json")
+    if not per:
+        if os.path.exists(pj):
+            os.remove(pj)
+        return set()
+    impronta = hashlib.sha1(json.dumps([dati.get("aggiornato"), 1] + [[g, [(c["comune"], c["cosa"]) for c in cs]]
+                                                                       for g, cs in per.items()],
+                                       ensure_ascii=False).encode()).hexdigest()[:8]
+    rel = f"img/ig/chiusure-{impronta}.jpg"
+    full = os.path.join(sito, rel)
+    if not os.path.exists(full):
+        W, H = 1080, 1350
+        im = Image.new("RGB", (W, H), "#fdeedd")
+        d = ImageDraw.Draw(im)
+        _testata(d, W)
+        x, larg = 60, W - 120
+        fo = _font(FONT_BOLD, 30)
+        d.text((x, 205), "CHIUSURE DEI COMUNI", font=fo, fill="#c4161c", anchor="lm")
+        if dati.get("aggiornato"):
+            ora = f"AGGIORNATO ALLE {dt.datetime.fromisoformat(dati['aggiornato']):%H:%M}"
+            d.text((x + fo.getlength("CHIUSURE DEI COMUNI") + 18, 205), ora, font=fo, fill="#5b5249", anchor="lm")
+        scuole = any("scuol" in c["cosa"].lower() for cs in per.values() for c in cs)
+        d.text((x, 285), "Scuole chiuse" if scuole else "Chiusure dei Comuni", font=_font(FONT_BLACK, 70),
+               fill="#111111", anchor="lm")
+        alto, basso = 360, H - 110
+        voci = [(g, c) for g, cs in per.items() for c in cs]
+
+        def blocchi(size, quante):
+            fc, fd = _font(FONT_BLACK, size), _font(FONT_BOLD, round(size * 0.8))
+            out, g_prec = [], None
+            for g, c in voci[:quante]:
+                if g != g_prec:
+                    out.append(("giorno", _giorno_chiusura(g, oggi).upper(), 30 + 18))
+                    g_prec = g
+                righe = _a_capo(c["cosa"], fd, larg)[:2]
+                out.append(("voce", (c["comune"], righe, fc, fd), size * 1.15 + len(righe) * size * 0.8 * 1.2 + 16))
+            return out
+
+        quante, size = len(voci), 40
+        while True:
+            for size in range(40, 23, -2):
+                bl = blocchi(size, quante)
+                if sum(b[2] for b in bl) + (50 if quante < len(voci) else 0) <= basso - alto:
+                    break
+            else:
+                quante -= 1
+                continue
+            break
+        y = alto
+        for tipo, val, alt in bl:
+            if tipo == "giorno":
+                d.text((x, y + 18), val, font=_font(FONT_BOLD, 30), fill="#c4161c", anchor="lm")
+            else:
+                comune, righe, fc, fd = val
+                d.text((x, y), comune, font=fc, fill="#111111")
+                yy = y + size * 1.15
+                for r in righe:
+                    d.text((x, yy), r, font=fd, fill="#5b5249")
+                    yy += size * 0.8 * 1.2
+            y += alt
+        if quante < len(voci):
+            d.text((x, y + 10), f"e altre {len(voci) - quante} chiusure: l'elenco completo è sul sito",
+                   font=_font(FONT_BOLD, 30), fill="#c4161c")
+        d.rectangle([0, H - 14, W, H], fill="#c4161c")
+        d.text((x, H - 56), "Elenco con le ordinanze: notiziebenevento.it/scuole-chiuse", font=_font(FONT_BOLD, 30),
+               fill="#111111", anchor="lm")
+        os.makedirs(os.path.dirname(full), exist_ok=True)
+        im.save(full, "JPEG", quality=88, optimize=True)
+    with open(pj, "w", encoding="utf-8") as f:
+        json.dump({"immagine": rel, "aggiornato": dati.get("aggiornato")}, f, ensure_ascii=False)
+    return {rel}
+
+
 def _racconto(righe, fonti):
     """Storia di più giorni: sopra i paragrafi di ogni giorno la sua data (come disegna index.html)."""
     piu_giorni = len({r.get("giorno") for r in righe if isinstance(r, dict) and r.get("giorno")}) > 1
@@ -848,6 +983,11 @@ def main():
         raise SystemExit("index.html senza il blocco <!--seo-->")
     prima, notizie, appro = tutte(sito)
     try:
+        with open(os.path.join(sito, "chiusure.json"), encoding="utf-8") as f:
+            chius = json.load(f)
+    except (OSError, ValueError):
+        chius = {"chiusure": []}
+    try:
         import PIL  # noqa: F401
         con_immagini = True
     except ImportError:
@@ -968,6 +1108,19 @@ def main():
     scrivi(os.path.join(sito, "chi-siamo", "index.html"), pagina(modello, seo, {"statica": True}, html_chi_siamo(), articolo=True))
     mappa.append((url, None))
 
+    # le chiusure dei Comuni (strumenti/chiusure.py): la pagina c'è sempre, anche vuota (la cercano su Google)
+    url = SITO + "/scuole-chiuse/"
+    seo = blocco_seo(f"Scuole chiuse oggi e domani nel Sannio – {NOME}", "Le scuole chiuse a Benevento e in provincia, "
+                     "oggi e domani: i Comuni con le ordinanze dei sindaci, aggiornati anche di notte.", url,
+                     "/condivisione.png", jsonld={"@context": "https://schema.org", "@type": "WebPage",
+                                                  "name": "Scuole chiuse nel Sannio", "url": url,
+                                                  "isPartOf": {"@type": "WebSite", "name": NOME, "url": SITO + "/"}})
+    from facebook import fuso
+    scrivi(os.path.join(sito, "scuole-chiuse", "index.html"),
+           pagina(modello, seo, {"statica": True, "chiusure": True},
+                  html_scuole_chiuse(chius, adesso.astimezone(fuso()).date()), articolo=True))
+    mappa.append((url, chius.get("aggiornato")))
+
     mappa.insert(0, (SITO + "/", prima.get("aggiornato")))
     mappa.insert(1, (SITO + "/meteo.html", adesso.isoformat(timespec="minutes")))
 
@@ -983,6 +1136,7 @@ def main():
             if adesso - t <= dt.timedelta(hours=48):
                 usate_ig.add(immagine_ig(sito, x))
         usate_ig |= riepilogo_ig(sito, prima.get("notizie", []), adesso)
+        usate_ig |= immagine_chiusure(sito, chius, adesso)
         for f in glob.glob(os.path.join(sito, "img", "ig", "*.jpg")):
             if os.path.relpath(f, sito).replace(os.sep, "/") not in usate_ig:
                 os.remove(f)
