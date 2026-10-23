@@ -1,7 +1,341 @@
 {
- "aggiornato": "2026-10-23T16:16+02:00",
+ "aggiornato": "2026-10-23T17:11+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-benzinabn-web-app-pompe-di-benzina",
+   "titolo": "Benevento, tre giovani sanniti lanciano benzinabn.it: una mappa dei distributori con le segnalazioni degli automobilisti",
+   "titolo_google": "Benevento, benzinabn.it: la mappa delle pompe di benzina",
+   "sintesi": "Tre giovani del Sannio hanno creato il sito benzinabn.it. Mostra le pompe di benzina di Benevento e si aggiorna con le segnalazioni di chi fa rifornimento, utile nei giorni di carenza di carburante.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "immagine": "carburante",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-23T17:07:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/23/dove-fare-benzina-a-benevento-tre-giovani-sanniti-lanciano-una-web-app-per-trovare-le-pompe-disponibili/"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/23/dove-fare-benzina-a-benevento-ci-pensa-una-web-app-nata-dallidea-di-tre-giovani/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Si chiama benzinabn.it ed è un sito pensato per sapere quali pompe di benzina di Benevento hanno carburante. L'hanno realizzato tre giovani del territorio: Nicola Salvatore Cardone, ingegnere della provincia di Benevento, e gli amici informatici Mariano Iscaro e Antonio Pennino.",
+      "fonti": [
+       "BeneventoNews24",
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "Funziona con le segnalazioni condivise: chi va a una pompa può scrivere com'è la situazione, così chi arriva dopo sa se vale la pena andarci. Sul sito si vede la mappa dei distributori e ognuno può aggiungere quelli che mancano.",
+      "fonti": [
+       "BeneventoNews24",
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "Servono soprattutto le «pompe bianche», cioè i distributori indipendenti, senza un marchio petrolifero grande, che non sono ancora tutti sulla mappa. BeneventoNews24 ricorda che l'idea arriva nei giorni dello stop degli autotrasportatori e della carenza di carburante.",
+      "fonti": [
+       "BeneventoNews24",
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "Gli ideatori chiedono ai cittadini di usare il sito e di aggiornarlo: più segnalazioni arrivano, più le informazioni sono affidabili. Le segnalazioni sono degli utenti e non sono verificate dai giornali né da questa redazione.",
+      "fonti": [
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Chi ha creato benzinabn.it e come funziona: mappa dei distributori aggiornata con le segnalazioni degli automobilisti.",
+      "fonti": [
+       "BeneventoNews24",
+       "Il Sannio Quotidiano"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Quante pompe sono già sulla mappa.",
+     "Quanto sono aggiornate le segnalazioni degli utenti."
+    ],
+    "fonti": [
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Dove fare benzina a Benevento? Tre giovani sanniti lanciano una web-app per trovare le pompe disponibili",
+      "url": "https://www.beneventonews24.it/2026/10/23/dove-fare-benzina-a-benevento-tre-giovani-sanniti-lanciano-una-web-app-per-trovare-le-pompe-disponibili/",
+      "data": "23 ott, 17:07"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Dove fare benzina a Benevento? Ci pensa una web-app nata dall’idea di tre giovani",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/23/dove-fare-benzina-a-benevento-ci-pensa-una-web-app-nata-dallidea-di-tre-giovani/",
+      "data": "23 ott, 16:33"
+     }
+    ]
+   },
+   "foto": "carburante-4"
+  },
+  {
+   "id": "san-pio-concorso-8-infermieri-pediatrici",
+   "titolo": "Ospedale San Pio di Benevento, concorso per 8 infermieri pediatrici a tempo indeterminato",
+   "titolo_google": "San Pio Benevento, concorso per 8 infermieri pediatrici",
+   "sintesi": "L'ospedale San Pio ha indetto un concorso per 8 posti di infermiere pediatrico a tempo indeterminato. Le domande si fanno online, entro 30 giorni dalla pubblicazione del bando in Gazzetta Ufficiale.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "immagine": "concorso",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-23T17:01:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/23/ospedale-san-pio-via-libera-al-concorso-per-8-infermieri-pediatrici-bando-e-come-candidarsi/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "L'ospedale San Pio di Benevento ha indetto un concorso pubblico, per titoli ed esami, per 8 posti a tempo indeterminato da infermiere pediatrico. La delibera è stata firmata venerdì 23 ottobre dalla direttrice generale Maria Morgante.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Il concorso risponde al piano del personale 2025-2027 della Regione Campania. Secondo NTR24 serve a dare stabilità ai reparti e a garantire i livelli essenziali di assistenza, perché sulla piattaforma regionale «Sinfonia» non ci sono graduatorie attive per questa figura.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Per partecipare servono la laurea in Infermieristica pediatrica (o un titolo equipollente) e l'iscrizione all'albo. Due posti sono riservati ai volontari delle Forze Armate congedati senza demerito e uno a chi ha fatto il servizio civile. La domanda si presenta solo online, sul portale concorsi.aosanpio.netservizi.it, dal giorno dopo la pubblicazione dell'estratto del bando in Gazzetta Ufficiale fino alla mezzanotte del trentesimo giorno. Il contributo di segreteria è di 10 euro, da pagare con MyPay della Regione.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Le prove sono una scritta (fino a 30 punti), una pratica (fino a 20) e un'orale (fino a 20); i titoli valgono al massimo 30 punti. Se le domande superano le 100 ci sarà una preselezione: passano i primi 50.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "La data di pubblicazione in Gazzetta Ufficiale, da cui parte il termine per le domande.",
+     "Quando saranno le prove."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Ospedale “San Pio”, via libera al concorso per 8 infermieri pediatrici: bando e come candidarsi",
+      "url": "https://www.ntr24.tv/2026/10/23/ospedale-san-pio-via-libera-al-concorso-per-8-infermieri-pediatrici-bando-e-come-candidarsi/",
+      "data": "23 ott, 17:01"
+     }
+    ]
+   },
+   "foto": "concorso-4"
+  },
+  {
+   "id": "ss265var-fondo-valle-isclero-pavimentazione-melizzano-dugenta",
+   "titolo": "SS 265 Fondo Valle Isclero, Anas ha finito il nuovo asfalto tra Melizzano e Dugenta; altri lavori da novembre",
+   "titolo_google": "SS 265 Fondo Valle Isclero, nuovo asfalto tra Melizzano e Dugenta",
+   "sintesi": "Venerdì 23 ottobre l'Anas ha concluso il rifacimento dell'asfalto sulla statale 265 var tra Melizzano e Dugenta. Da novembre un altro intervento da 1,1 milioni di euro in tratti sparsi.",
+   "categoria": "strade",
+   "zona": "telesina",
+   "immagine": "lavori-stradali",
+   "luogo": "Melizzano e Dugenta",
+   "pubblicato": "2026-10-23T16:38:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/fondo-valle-isclero-eseguite-le-attivita-di-pavimentazione-stradale/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Sulla statale 265 var «Fondo Valle Isclero» l'Anas ha concluso venerdì 23 ottobre i lavori puntuali di nuovo asfalto tra i territori di Melizzano e Dugenta. Erano cominciati la settimana scorsa.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "I lavori fanno parte dell'appalto principale da 3,2 milioni di euro, che ha riguardato anche la statale 372 «Telesina», tra le province di Benevento e Caserta.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Da novembre sulla stessa statale 265 var è previsto un altro intervento di nuovo asfalto, in tratti sparsi, per 1,1 milioni di euro. Il calendario preciso non c'è ancora: l'Anas lo comunicherà quando sarà deciso con l'impresa.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "La strada è molto importante per i collegamenti tra Benevento e Caserta e ha molto traffico pesante, anche per il cantiere vicino della linea ferroviaria dell'Alta Velocità.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Le date e i tratti dei lavori di novembre.",
+     "Se serviranno restringimenti o chiusure durante i lavori."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Fondo Valle Isclero, eseguite le attività di pavimentazione stradale",
+      "url": "https://www.anteprima24.it/benevento/fondo-valle-isclero-eseguite-le-attivita-di-pavimentazione-stradale/",
+      "data": "23 ott, 16:38"
+     }
+    ]
+   },
+   "foto": "lavori-stradali-6"
+  },
+  {
+   "id": "colle-sannita-decorata-biometano-osservazioni-8-novembre",
+   "titolo": "Colle Sannita, frazione Decorata: gli abitanti contro l'impianto di biometano, osservazioni entro l'8 novembre",
+   "titolo_google": "Colle Sannita, Decorata: biometano, osservazioni entro l'8 novembre",
+   "sintesi": "L'associazione «Tutti per l'Ambiente, l'Ambiente per Tutti» è contraria al progetto di impianto di biometano a Decorata, frazione di Colle Sannita. Le osservazioni sulla VINCA si possono presentare al Comune fino all'8 novembre.",
+   "categoria": "altro",
+   "zona": "fortore",
+   "immagine": "impianto-rifiuti",
+   "luogo": "Colle Sannita (Decorata)",
+   "pubblicato": "2026-10-23T17:07:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/impianto-biometano-decorata-associazione-ambiente/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "L'associazione «Tutti per l'Ambiente, l'Ambiente per Tutti», formata da residenti, ha diffuso una nota contro il progetto di un impianto privato di biometano (gas ricavato da reflui agricoli e di allevamento), di potenza 500 Smc, previsto a Decorata, frazione di Colle Sannita. Il testo è una presa di posizione dell'associazione, pubblicata da Anteprima24 come nota stampa.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Secondo l'associazione il primo progetto risale al 2019 e i residenti lo hanno saputo solo nel 2023. Dopo le loro sollecitazioni, il Comune ha chiesto la VINCA, la Valutazione di Incidenza Ambientale. Dopo una prima proposta archiviata in Regione, la pratica ora è all'esame del Comune e il termine per presentare le osservazioni scade l'8 novembre.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "L'associazione sostiene che a Decorata non ci siano allevamenti sufficienti per alimentare l'impianto, che costringerebbe quindi a portare scarti da fuori con più traffico, e teme miasmi simili a quelli lamentati a Benevento in contrada San Domenico. Dice anche che alla società è stato revocato il parere sanitario e che è in corso un ricorso al TAR, senza ancora una decisione di merito.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "L'associazione dice che presenterà le sue osservazioni e invita i cittadini a fare lo stesso entro l'8 novembre. Queste sono le affermazioni dell'associazione: la nota non riporta la posizione della società né quella del Comune.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Cosa dicono la società proponente e il Comune di Colle Sannita.",
+     "Dove si presentano le osservazioni e con quali modalità."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Mega impianto di biometano a Decorata, la nota dell’Associazione ‘Tutti per l’Ambiente’",
+      "url": "https://www.anteprima24.it/benevento/impianto-biometano-decorata-associazione-ambiente/",
+      "data": "23 ott, 17:07"
+     }
+    ]
+   },
+   "foto": "impianto-rifiuti"
+  },
+  {
+   "id": "benevento-inchiesta-comune-incidente-probatorio-3-novembre",
+   "titolo": "Inchiesta sul Comune di Benevento, l'incidente probatorio parte il 3 novembre e cambia un difensore dell'ex dirigente",
+   "titolo_google": "Inchiesta Comune di Benevento, incidente probatorio il 3 novembre",
+   "sintesi": "Nell'inchiesta sul Comune di Benevento l'incidente probatorio comincerà il 3 novembre davanti al gip. L'ex dirigente comunale ha cambiato uno dei suoi avvocati.",
+   "categoria": "cronaca",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-23T16:28:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/441971/inchiesta-sul-comune-un-nuovo-difensore-per-l-ex-dirigente-gennaro-santamaria.shtml"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Nell'inchiesta sul Comune di Benevento l'ex dirigente comunale, arrestato dai carabinieri il 30 marzo e dal 28 settembre in libertà per una presunta concussione ai danni di un geometra, ha cambiato avvocato. Lo scrive Ottopagine: un legale che lo seguiva da circa sette mesi non è più suo difensore e al suo posto è subentrato un avvocato del Foro di Avellino, che lavorerà con il collega già in squadra.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Secondo il giornale all'ex dirigente sono contestati 70mila euro che avrebbe preteso dal geometra, amministratore di una società di progettazione, per sbloccare alcune pratiche edilizie.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "L'incidente probatorio, cioè la fase in cui si raccolgono prove prima del processo con le difese presenti, comincerà il 3 novembre davanti alla gip Maria Amoruso. In quella sede l'ex dirigente dovrà ripetere le sue dichiarazioni rispondendo anche alle domande delle difese.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "La gip dovrà anche decidere su un'altra richiesta di incidente probatorio, depositata da un avvocato dopo l'udienza del 9 ottobre: riguarda la copia forense (la copia completa dei dati) di telefoni e computer di sedici dei diciannove indagati. Una ventesima posizione è stata stralciata per motivi di salute. Gli indagati sono funzionari e dipendenti del Comune e della Regione, tecnici, imprenditori e due sindaci della provincia; le ipotesi di reato vanno, a vario titolo, dalla concussione alla corruzione, dalla ricettazione alla violazione della legge sul finanziamento ai partiti.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Se la gip accoglierà la richiesta di perizia sui dispositivi.",
+     "Quando finirà l'incidente probatorio."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Inchiesta sul Comune, un nuovo difensore per l'ex dirigente [nome omesso]",
+      "url": "https://www.ottopagine.it/bn/cronaca/441971/inchiesta-sul-comune-un-nuovo-difensore-per-l-ex-dirigente-gennaro-santamaria.shtml",
+      "data": "23 ott, 16:28"
+     }
+    ]
+   }
+  },
   {
    "id": "montesarchio-cocaina-229-grammi-donna-arrestata",
    "titolo": "Montesarchio, oltre 229 grammi di cocaina trovati a una donna: arrestata dai Carabinieri",
