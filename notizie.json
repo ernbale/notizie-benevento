@@ -1,7 +1,259 @@
 {
- "aggiornato": "2026-10-23T18:13+02:00",
+ "aggiornato": "2026-10-23T19:10+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "campania-numero-unico-112-benevento-24-novembre",
+   "titolo": "Campania, arriva il numero unico di emergenza 112: a Benevento e provincia dal 24 novembre",
+   "titolo_google": "Numero unico 112 in Campania: a Benevento dal 24 novembre",
+   "sintesi": "Dal 24 novembre anche nel distretto telefonico di Benevento (prefisso 0824) si potrà chiamare il 112 per ogni emergenza: Carabinieri, Polizia, Vigili del Fuoco e soccorso sanitario. Restano attivi 113, 115 e 118.",
+   "categoria": "altro",
+   "zona": "provincia",
+   "luogo": "Benevento e provincia",
+   "pubblicato": "2026-10-23T18:22:00+02:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Regione Campania",
+     "url": "https://www.regione.campania.it/comunicazione/area-stampa/comunicati/23102026-comunicato-n-673-parte-numero-un"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/23/parte-il-numero-unico-di-emergenza-112-in-campania-dal-24-novembre-sara-attivo-nel-sannio/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Dal 24 novembre anche a Benevento e provincia, per qualsiasi emergenza, si potrà chiamare il 112, il Numero unico europeo di emergenza (NUE). Vale per il distretto telefonico di Benevento, quello con il prefisso 0824. La chiamata è gratuita sia da telefono fisso sia da cellulare.",
+      "fonti": [
+       "Regione Campania",
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Con il 112 si chiede aiuto a Carabinieri, Polizia di Stato, Vigili del Fuoco o soccorso sanitario: risponde una Centrale unica che capisce cosa è successo e dove serve intervenire, poi passa la chiamata al servizio giusto. Il sistema raccoglie i dati disponibili per localizzare chi chiama, da fisso e da cellulare.",
+      "fonti": [
+       "Regione Campania"
+      ]
+     },
+     {
+      "testo": "I vecchi numeri non spariscono: 113, 115 e 118 restano utilizzabili e le chiamate arrivano comunque alla Centrale unica del 112, che le gira alla centrale competente.",
+      "fonti": [
+       "Regione Campania"
+      ]
+     },
+     {
+      "testo": "Il servizio parte per tappe in tutta la Campania, secondo i distretti telefonici: dal 27 ottobre Salerno, Battipaglia, Vallo della Lucania e Sala Consilina (prefissi 089, 0828, 0974, 0975); dal 10 novembre Avellino e Sant'Angelo dei Lombardi (0825 e 0827); dal 24 novembre Caserta e Benevento (0823 e 0824); il 9 dicembre Napoli (081).",
+      "fonti": [
+       "Regione Campania",
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "27 ottobre",
+      "fatto": "Il 112 parte nei distretti di Salerno, Battipaglia, Vallo della Lucania e Sala Consilina.",
+      "fonti": [
+       "Regione Campania"
+      ]
+     },
+     {
+      "data": "10 novembre",
+      "fatto": "Tocca ad Avellino e Sant'Angelo dei Lombardi.",
+      "fonti": [
+       "Regione Campania"
+      ]
+     },
+     {
+      "data": "24 novembre",
+      "fatto": "Il 112 diventa attivo nei distretti di Caserta e Benevento.",
+      "fonti": [
+       "Regione Campania",
+       "NTR24"
+      ]
+     },
+     {
+      "data": "9 dicembre",
+      "fatto": "Ultima tappa: il distretto di Napoli.",
+      "fonti": [
+       "Regione Campania"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Il 112 sarà attivo nel distretto di Benevento (prefisso 0824) dal 24 novembre.",
+      "fonti": [
+       "Regione Campania",
+       "NTR24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Dove si trova la Centrale unica di risposta che prenderà le chiamate del Sannio."
+    ],
+    "fonti": [
+     {
+      "nome": "Regione Campania",
+      "titolo": "23/10/2026 - Comunicato n. 673 - Parte il numero unico di emergenza \"112\" in Campania",
+      "url": "https://www.regione.campania.it/comunicazione/area-stampa/comunicati/23102026-comunicato-n-673-parte-numero-un",
+      "data": "23 ott"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Parte il numero unico di emergenza ‘112’ in Campania: dal 24 novembre sarà attivo nel Sannio",
+      "url": "https://www.ntr24.tv/2026/10/23/parte-il-numero-unico-di-emergenza-112-in-campania-dal-24-novembre-sara-attivo-nel-sannio/",
+      "data": "23 ott, 18:22"
+     }
+    ]
+   }
+  },
+  {
+   "id": "benevento-marotta-premio-eccellenze-2026",
+   "titolo": "Benevento, al professor Giuseppe Marotta il Premio Eccellenze 2026 alla Camera dei Deputati",
+   "titolo_google": "Benevento, Premio Eccellenze 2026 al prof. Giuseppe Marotta",
+   "sintesi": "Il 22 ottobre a Roma, alla Camera dei Deputati, il Premio Eccellenze 2026 è andato a Giuseppe Marotta, professore emerito dell'Università del Sannio, per il contributo allo sviluppo delle aree rurali e fragili.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-23T18:40:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/23/il-prof-emerito-giuseppe-marotta-insignito-del-premio-eccellenze-2026/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/23/il-prof-emerito-marotta-insignito-del-premio-eccellenze-2026-alla-camera-dei-deputati/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il professor Giuseppe Marotta, professore emerito dell'Università degli Studi del Sannio, ha ricevuto il Premio Eccellenze 2026. Il riconoscimento gli è stato consegnato il 22 ottobre a Roma, nell'Aula dei Gruppi Parlamentari della Camera dei Deputati.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Il premio fa parte dell'iniziativa Eccellenze Italiane 2026, promossa dall'Intergruppo Parlamentare «Sviluppo Sud, Aree Fragili e Isole Minori», presieduto dall'onorevole Alessandro Caramiello, insieme al vicepresidente della Camera Sergio Costa. La motivazione parla di «alto contributo scientifico allo sviluppo delle aree rurali e fragili».",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Marotta dirige la Scuola di Economia Vitale, organizzata dall'ente di formazione Sabiria e avviata il 9 e 10 ottobre a Pietrelcina, e presiede il Comitato tecnico scientifico della Fondazione di Comunità di Benevento. La notizia è stata data dalla Scuola stessa.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Il premio è stato assegnato il 22 ottobre alla Camera dei Deputati.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Il prof. emerito Giuseppe Marotta insignito del “Premio Eccellenze 2026”",
+      "url": "https://www.ntr24.tv/2026/10/23/il-prof-emerito-giuseppe-marotta-insignito-del-premio-eccellenze-2026/",
+      "data": "23 ott, 17:06"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Il Prof. Emerito Marotta insignito del «Premio Eccellenze 2026» alla Camera dei Deputati",
+      "url": "https://www.beneventonews24.it/2026/10/23/il-prof-emerito-marotta-insignito-del-premio-eccellenze-2026-alla-camera-dei-deputati/",
+      "data": "23 ott, 18:40"
+     }
+    ]
+   }
+  },
+  {
+   "id": "benevento-csv-prevenzione-screening-seno-mellusi",
+   "titolo": "Benevento, al Palazzo del Volontariato screening al seno con la Croce Rossa: 15 donne visitate",
+   "titolo_google": "Benevento, screening al seno al CSV di viale Mellusi",
+   "sintesi": "Al Palazzo del Volontariato di viale Mellusi, sede del CSV Irpinia Sannio, giornata sulla prevenzione del tumore al seno con visite della Croce Rossa: 15 donne hanno fatto lo screening.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-23T18:47:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/23/nove-realta-in-rete-per-la-prevenzione-il-csv-irpinia-sannio-ets-valorizza-il-ruolo-del-terzo-settore-nella-salute-della-comunita/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/23/nove-realta-in-rete-per-la-prevenzione-il-csv-irpinia-sannio-ets-valorizza-il-ruolo-del-terzo-settore-nella-salute/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Al Palazzo del Volontariato «Suor Floriana Tirelli», in viale Antonio Mellusi 68 a Benevento, si è svolta l'iniziativa «Prevenzione: l'unica difesa che anticipa il giudizio». Lì ha sede il CSV Irpinia Sannio ETS, il centro che sostiene le associazioni di volontariato.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Al centro c'era la prevenzione del tumore al seno. La Croce Rossa Italiana – Comitato di Benevento ha fatto visite di screening (controllo per scoprire il problema in anticipo) affidate a Ettore Gentile, chirurgo senologo dell'AORN San Pio. Le donne che si sono prenotate e hanno fatto lo screening sono state 15.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Hanno collaborato nove realtà, tra cui ASL Benevento, AORN San Pio, Ordine degli Avvocati, AIGA, Ordine dei Medici, Camera Civile, Lions Club Benevento Host e lo stesso CSV.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "L'iniziativa sulla prevenzione, ospitata dal CSV Irpinia Sannio, con nove realtà in rete.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Nove realtà in rete per la prevenzione: il CSV Irpinia Sannio ETS valorizza il ruolo del Terzo settore nella salute della comunità",
+      "url": "https://www.ntr24.tv/2026/10/23/nove-realta-in-rete-per-la-prevenzione-il-csv-irpinia-sannio-ets-valorizza-il-ruolo-del-terzo-settore-nella-salute-della-comunita/",
+      "data": "23 ott, 17:30"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Nove realtà in rete per la prevenzione: il CSV Irpinia Sannio ETS valorizza il ruolo del Terzo settore nella salute",
+      "url": "https://www.beneventonews24.it/2026/10/23/nove-realta-in-rete-per-la-prevenzione-il-csv-irpinia-sannio-ets-valorizza-il-ruolo-del-terzo-settore-nella-salute/",
+      "data": "23 ott, 18:47"
+     }
+    ]
+   }
+  },
   {
    "id": "bonea-frana-localita-capo-strade-chiuse",
    "titolo": "Bonea, frana in località Capo: chiuse via Capo, via Capo di sotto e via Punituro",
@@ -5247,10 +5499,21 @@
     {
      "nome": "Il Sannio Quotidiano (23/10)",
      "url": "https://www.ilsannioquotidiano.it/2026/10/23/servizio-rifiuti-ripercussioni-diffuse-in-valle-caudina-e-anche-in-altri-centri/"
+    },
+    {
+     "nome": "Comune di Moiano (23/10)",
+     "url": "https://www.comune.moiano.bn.it/novita/notizie/novita_57.html"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Venerdì 23 ottobre il Comune di Moiano, in Valle Caudina, ha pubblicato sul suo sito l'avviso «Ripresa servizio trasporto scolastico»: lo scuolabus, sospeso per il blocco degli autotrasportatori, torna in servizio. La comunicazione è in un allegato e la pagina non dà altri dettagli.",
+      "fonti": [
+       "Comune di Moiano (23/10)"
+      ],
+      "giorno": "2026-10-23"
+     },
      {
       "testo": "Il Sannio Quotidiano scrive che fino a giovedì sera, 22 ottobre, in tutta la Valle Caudina non c'era nessuna stazione di servizio in grado di dare carburante. A Sant'Agata de' Goti la raccolta dei rifiuti è stata sospesa ufficialmente, perché non si riescono a rifornire i compattatori (i camion che schiacciano i rifiuti). Una situazione simile, con gradi diversi, si ripete nel resto della Valle Caudina.",
       "fonti": [
@@ -5373,6 +5636,13 @@
       "fonti": [
        "Comune di Apollosa"
       ]
+     },
+     {
+      "data": "23 ottobre",
+      "fatto": "Il Comune di Moiano annuncia la ripresa del trasporto scolastico.",
+      "fonti": [
+       "Comune di Moiano (23/10)"
+      ]
      }
     ],
     "concordano": [],
@@ -5472,14 +5742,20 @@
       "titolo": "Servizio rifiuti, ripercussioni diffuse in Valle Caudina e anche in altri centri",
       "url": "https://www.ilsannioquotidiano.it/2026/10/23/servizio-rifiuti-ripercussioni-diffuse-in-valle-caudina-e-anche-in-altri-centri/",
       "data": "23 ott, 08:30"
+     },
+     {
+      "nome": "Comune di Moiano (23/10)",
+      "titolo": "Ripresa servizio trasporto scolastico",
+      "url": "https://www.comune.moiano.bn.it/novita/notizie/novita_57.html",
+      "data": "23 ott"
      }
     ],
     "aggiornamento": {
-     "testo": "Secondo Il Sannio Quotidiano, fino a giovedì sera in tutta la Valle Caudina non c'era un distributore con carburante e a Sant'Agata de' Goti la raccolta dei rifiuti è stata sospesa ufficialmente; avvisi di disservizi anche a Montesarchio, Forchia e Bonea.",
+     "testo": "Venerdì 23 ottobre il Comune di Moiano ha annunciato la ripresa del servizio di trasporto scolastico, sospeso per il blocco degli autotrasportatori.",
      "fonti": [
-      "Il Sannio Quotidiano (23/10)"
+      "Comune di Moiano (23/10)"
      ],
-     "quando": "2026-10-23T09:11+02:00"
+     "quando": "2026-10-23T19:10+02:00"
     }
    }
   },
