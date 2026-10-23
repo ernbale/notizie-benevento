@@ -205,6 +205,13 @@
   .meteo-box .mb-g b { font-weight: 700; }
   .meteo-box .mb-g .mn { color: var(--grigio); }
   .meteo-box .mb-g .pp { display: block; color: #3a78c9; font-weight: 600; font-size: 12px; min-height: 16px; }
+  /* chiusure dei Comuni (chiusure.json): la striscia in cima alle pagine, come l'allerta del riquadro meteo, e
+     l'elenco della pagina «Scuole chiuse» */
+  .striscia-chiusure { display: block; margin: 12px 0 0; padding: 9px 14px; border-radius: 4px; background: var(--rosso); color: #fff; font: 700 15px/1.35 var(--sans); text-decoration: none; }
+  .striscia-chiusure[hidden] { display: none; }
+  .striscia-chiusure:hover { text-decoration: underline; }
+  .appro .agg-chiusure { font: 600 14px/1.45 var(--sans); color: var(--grigio); }
+  .chiusure li { margin: 0 0 10px; }
   .meteo-box .mb-allerta { font: 700 13px var(--sans); color: #fff; border-radius: 4px; padding: 6px 10px; margin: 0 0 8px; }
   .meteo-box .mb-link { display: block; margin-top: 10px; font: 600 13px var(--sans); color: var(--blu); }
   .meteo-box:hover .mb-link { text-decoration: underline; }
@@ -474,6 +481,8 @@
       <button type="submit" aria-label="Cerca"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg></button>
     </form>
   </nav>
+
+  <a class="striscia-chiusure" id="striscia-chiusure" href="/scuole-chiuse/" hidden></a>
 
   <main id="contenuto"></main>
 
@@ -2238,6 +2247,61 @@
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(function (j) { eventi = (j && j.eventi) || []; })
     .catch(function () { eventi = []; });
+
+  // Le chiusure decise dai Comuni (chiusure.json, strumenti/chiusure.py): la striscia rossa in cima a ogni pagina
+  // finché ce n'è una per oggi o i prossimi giorni, e l'elenco della pagina «Scuole chiuse», ridisegnato qui così è
+  // sempre quello di adesso (la pagina scritta da GitHub può essere di qualche minuto prima).
+  function giornoChiusura(g, oggi, domani) {
+    var t = new Date(g + "T12:00:00Z").toLocaleDateString("it-IT", { timeZone: TZ, weekday: "long", day: "numeric", month: "long" });
+    return g === oggi ? "Oggi, " + t : g === domani ? "Domani, " + t : t.charAt(0).toUpperCase() + t.slice(1);
+  }
+  function mostraChiusure(j) {
+    var oggi = new Date().toLocaleDateString("sv-SE", { timeZone: TZ });
+    var domani = new Date(Date.now() + 864e5).toLocaleDateString("sv-SE", { timeZone: TZ });
+    var per = {};
+    ((j && j.chiusure) || []).forEach(function (c) {
+      if (c.revocata) return;
+      (c.giorni || []).forEach(function (g) { if (g >= oggi) (per[g] = per[g] || []).push(c); });
+    });
+    var giorni = Object.keys(per).sort();
+    var s = document.getElementById("striscia-chiusure");
+    if (s && giorni.length && !(FISSA && FISSA.chiusure)) {
+      var cs = per[giorni[0]], comuni = cs.map(function (c) { return c.comune; }).sort(function (a, b) { return a.localeCompare(b, "it"); });
+      var quando = giorni[0] === oggi ? "oggi" : giorni[0] === domani ? "domani" : giornoChiusura(giorni[0], oggi, domani).toLowerCase();
+      s.textContent = (cs.some(function (c) { return /scuol/i.test(c.cosa || ""); }) ? "Scuole chiuse " : "Chiusure dei Comuni ") +
+        quando + ": " + (comuni.length > 4 ? comuni.slice(0, 3).join(", ") + " e altri " + (comuni.length - 3) + " Comuni" :
+        comuni.length > 1 ? comuni.slice(0, -1).join(", ") + " e " + comuni[comuni.length - 1] : comuni[0]) +
+        " · elenco completo ›";
+      s.hidden = false;
+    }
+    var box = document.getElementById("elenco-chiusure");
+    if (!box || !(FISSA && FISSA.chiusure)) return;
+    box.textContent = "";
+    var conId = {};   // l'id (…/scuole-chiuse/#id, i link dei messaggi di Telegram) sulla prima riga di ognuna
+    giorni.forEach(function (g) {
+      box.appendChild(el("h3", "", [giornoChiusura(g, oggi, domani)]));
+      var ul = el("ul", "chiusure", []);
+      per[g].sort(function (a, b) { return a.comune.localeCompare(b.comune, "it"); }).forEach(function (c) {
+        var li = el("li", "", [el("b", "", [c.comune]), ": " + c.cosa + "." + (c.motivo ? " " + c.motivo + "." : "") + " "]);
+        if (c.id && !conId[c.id]) { li.id = c.id; conId[c.id] = true; }
+        if (c.fonte && c.fonte.url) li.appendChild(linkSicuro(c.fonte.url, c.fonte.nome || "Ordinanza"));
+        ul.appendChild(li);
+      });
+      box.appendChild(ul);
+    });
+    if (!giorni.length) box.appendChild(el("p", "", ["Nessuna chiusura annunciata dai Comuni per oggi e per i prossimi giorni."]));
+    if (location.hash.length > 1) { var su = document.getElementById(decodeURIComponent(location.hash.slice(1))); if (su) su.scrollIntoView(); }
+    if (j.aggiornato) {
+      var agg = document.getElementById("agg-chiusure"), t = new Date(j.aggiornato);
+      if (!agg) { agg = el("p", "agg-chiusure", []); agg.id = "agg-chiusure"; box.parentNode.insertBefore(agg, box); }
+      agg.textContent = "Aggiornato alle " + t.toLocaleTimeString("it-IT", { timeZone: TZ, hour: "2-digit", minute: "2-digit" }) +
+        " di " + t.toLocaleDateString("it-IT", { timeZone: TZ, weekday: "long", day: "numeric", month: "long" }) + ".";
+    }
+  }
+  fetch("chiusure.json?t=" + Date.now(), { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(mostraChiusure)
+    .catch(function () { /* senza il file delle chiusure il sito funziona lo stesso */ });
 
   fetch("notizie.json?t=" + Date.now(), { cache: "no-store" })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })

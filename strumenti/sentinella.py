@@ -10,6 +10,10 @@ nessuno se ne accorgesse.
    pubblicazione in corso: ne lancia una.
 3. Canale Telegram muto: dalle 7 alle 23 (un'ora dopo l'inizio dei post), sul sito c'è una notizia più nuova dell'ultimo messaggio del canale, da più
    di TG_MAX minuti: lancia una pubblicazione con gli arretrati di Telegram.
+5. Chiusure dei Comuni (dal 23 ott 2026, vedi strumenti/chiusure.py): la vedetta del Pi ferma da più di VEDETTA_MAX
+   minuti, una pista non vista dal giro Chiusure dopo PISTA_MAX minuti (solo sul Pi), una chiusura del sito che dopo
+   TG_CHIUSURE minuti non è sul canale Telegram, o l'ultima pubblicazione col passo delle chiusure in rosso: nei due
+   ultimi casi rilancia la pubblicazione, che rimanda solo quello che manca (niente doppioni).
 4. Giro mancato: notizie.json non aggiornato da più di GIRO_MAX minuti, dalle 7:30 alle 23; dalle 23 a mezzanotte
    solo se per domani c'è allerta arancione o rossa, perché il giro delle 23 l'agente lo fa solo allora (stessa prova,
    allerta_domani.py; il 22 ott la sentinella è finita in rosso alle 23:32 per un giro che giustamente non c'era).
@@ -34,6 +38,7 @@ import datetime as dt
 import getpass
 import json
 import os
+import re
 import sys
 import time
 import urllib.error
@@ -52,6 +57,9 @@ RITARDO_MAX = 25    # minuti di ritardo del sito rispetto a main
 TG_MAX = 75         # minuti di silenzio del canale con una notizia nuova sul sito
 GIRO_MAX = 80       # minuti dall'ultimo giro (uno all'ora)
 AVVISO_ORE = 2      # dal Pi, la sentinella di GitHub (la mail) al massimo una volta ogni tante ore
+VEDETTA_MAX = 20    # minuti senza un giro della vedetta delle chiusure (sul Pi)
+PISTA_MAX = 45      # minuti: una pista della vedetta non ancora vista dal giro Chiusure
+TG_CHIUSURE = 20    # minuti: una chiusura del sito non ancora sul canale Telegram
 CARTELLA_PI = os.path.expanduser("~/nb-fonti")
 
 
@@ -202,6 +210,65 @@ def giro_delle_23(adesso):
         return False
 
 
+def chiusure(gh, adesso, pi, sito, prova):
+    """Le chiusure dei Comuni arrivano dappertutto? (punto 5 in cima). Restituisce (riparati, problemi)."""
+    riparati, problemi = [], []
+    if pi:
+        sito_c = json.loads(gh.chiama("GET", f"repos/{REPO}/contents/chiusure.json?ref=main", grezzo=True))
+        try:
+            with open(os.path.join(CARTELLA_PI, "vedetta.json"), encoding="utf-8") as f:
+                ultimo = iso(json.load(f)["ultimo_giro"])
+        except (OSError, ValueError, KeyError):
+            ultimo = None
+        if not ultimo or adesso - ultimo > dt.timedelta(minutes=VEDETTA_MAX):
+            problemi.append("la vedetta delle chiusure è ferma" + (f" dalle {ultimo:%H:%M}" if ultimo else "") +
+                            " (cron del Pi, ~/nb-fonti/vedetta.log)")
+        try:
+            with open(os.path.join(CARTELLA_PI, "archivio", "chiusure.json"), encoding="utf-8") as f:
+                piste = json.load(f).get("piste") or []
+        except (OSError, ValueError):
+            piste = []
+        viste = set(sito_c.get("viste") or [])
+        for p in piste:
+            if p["id"] not in viste and adesso - iso(p["trovata"]) > dt.timedelta(minutes=PISTA_MAX):
+                problemi.append(f"la pista di {p.get('comune') or '?'} trovata alle {iso(p['trovata']):%H:%M} "
+                                f"({p.get('titolo', '')[:60]}) non è ancora stata vista dal giro Chiusure")
+    else:
+        with open(os.path.join(sito, "chiusure.json"), encoding="utf-8") as f:
+            sito_c = json.load(f)
+    oggi = adesso.date().isoformat()
+    attive = [c for c in sito_c.get("chiusure") or [] if max(c.get("giorni") or [""]) >= oggi]
+    rilancia = False
+    if attive:
+        ritardo = [c for c in attive if adesso - iso(c.get("aggiornata") or c["aggiunta"]) > dt.timedelta(minutes=TG_CHIUSURE)]
+        if ritardo:
+            req = urllib.request.Request("https://t.me/s/notiziebenevento", headers={"User-Agent": "Mozilla/5.0 (notiziebenevento.it)"})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                pagina = r.read().decode("utf-8", "replace")
+            sul_canale_ = set(re.findall(r"notiziebenevento\.it/scuole-chiuse/#([a-z0-9-]+)", pagina))
+            ore = [dt.datetime.fromisoformat(x) for x in re.findall(r'<time datetime="([^"]+)"', pagina)]
+            mancano = [c for c in ritardo if c["id"] not in sul_canale_ and (not ore or iso(c.get("aggiornata") or c["aggiunta"]) > min(ore))]
+            if mancano:
+                problemi.append(f"chiusure non ancora sul canale Telegram: {', '.join(c['comune'] for c in mancano)}")
+                rilancia = True
+        corse = gh.chiama("GET", f"repos/{REPO}/actions/workflows/{FLUSSO}/runs?per_page=5").get("workflow_runs", [])
+        if any(c["status"] != "completed" for c in corse):
+            rilancia = False   # una pubblicazione è già in corso: rimanda lei quello che manca
+        else:
+            fatta = next((c for c in corse if c["status"] == "completed"), None)
+            if fatta and fatta.get("conclusion") == "failure":
+                lavori = gh.chiama("GET", f"repos/{REPO}/actions/runs/{fatta['id']}/jobs").get("jobs", [])
+                if any(st.get("name", "").startswith("Chiusure non uscite") and st.get("conclusion") == "failure"
+                       for j in lavori for st in j.get("steps") or []):
+                    problemi.append("l'ultima pubblicazione non ha mandato le chiusure su tutti i canali")
+                    rilancia = True
+        if rilancia:
+            riparati.append("rilanciata la pubblicazione per le chiusure" + (" (prova: in realtà no)" if prova else ""))
+            if not prova:
+                gh.lancia(FLUSSO, {"telegram_recupera": "0"})
+    return riparati, problemi
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--sito", default=os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -220,6 +287,12 @@ def main():
         with open(os.path.join(a.sito, "notizie.json"), encoding="utf-8") as f:
             su_main = json.load(f)
     riparati, problemi = controlla(gh, su_main, adesso, a.prova)
+    try:
+        r2, p2 = chiusure(gh, adesso, a.pi, a.sito, a.prova)
+        riparati += r2
+        problemi += p2
+    except Exception as e:
+        problemi.append(f"non riesco a controllare le chiusure dei Comuni ({type(e).__name__}: {e})")
 
     ora = f"{adesso:%d/%m %H:%M}"
     for m in riparati:
