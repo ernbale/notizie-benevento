@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-23T10:11+02:00",
+ "aggiornato": "2026-10-23T11:11+02:00",
  "giornali_letti": 14,
  "notizie": [
   {
@@ -2063,13 +2063,13 @@
   },
   {
    "id": "vaccini-farmacie-asl-benevento-avellino-alaia",
-   "titolo": "Vaccini in farmacia, il consigliere regionale Alaia denuncia: le ASL di Benevento e Avellino non consegnano le dosi",
-   "titolo_google": "Vaccini in farmacia, dosi ferme nelle ASL di Benevento",
-   "sintesi": "Il consigliere regionale Enzo Alaia sostiene che le ASL di Benevento e Avellino non hanno ancora consegnato i vaccini alle farmacie, mentre i medici di famiglia li hanno ricevuti. Chiede spiegazioni e tempi certi.",
+   "titolo": "Vaccini in farmacia, Alaia denuncia le dosi ferme; ASL, Federfarma e farmacisti: antinfluenzali già disponibili in provincia di Benevento",
+   "titolo_google": "Vaccini antinfluenzali in farmacia, l'ASL: dosi disponibili",
+   "sintesi": "Venerdì 23 ottobre l'ASL Benevento, Federfarma e l'Ordine dei farmacisti hanno risposto alla denuncia del consigliere regionale Alaia: nelle farmacie convenzionate della provincia i vaccini antinfluenzali sono già disponibili e non ci sono impedimenti.",
    "categoria": "altro",
    "zona": "provincia",
    "luogo": "Benevento",
-   "pubblicato": "2026-10-22T09:59:00+02:00",
+   "pubblicato": "2026-10-23T10:49:00+02:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
@@ -2080,30 +2080,61 @@
     {
      "nome": "Lab TV",
      "url": "https://www.labtv.net/attualita/2026/10/22/vaccini-in-farmacia-forniture-bloccate-ad-avellino-e-benevento-alaia-denuncia-le-asl-chiariscano-perche-non-arrivano-le-dosi/"
+    },
+    {
+     "nome": "NTR24 (23/10)",
+     "url": "https://www.ntr24.tv/2026/10/23/vaccini-antinfluenzali-gia-disponibili-nelle-farmacie-della-provincia-di-benevento/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/441921/benevento-vaccini-antinfluenzali-gia-disponibili-nelle-farmacie.shtml"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/nella-provincia-di-benevento-i-vaccini-antinfluenzali-destinati-alla-somministrazione-farmacia-sono"
     }
    ],
    "articolo": {
     "racconto": [
      {
+      "testo": "Venerdì 23 ottobre l'ASL Benevento, Federfarma Benevento e l'Ordine dei farmacisti della provincia hanno diffuso un comunicato comune per rispondere alle notizie su presunti problemi nelle forniture. Scrivono che nella provincia di Benevento i vaccini antinfluenzali da fare in farmacia sono già disponibili presso le farmacie convenzionate, per la campagna 2026/2027, e che non risultano impedimenti alle vaccinazioni.",
+      "fonti": [
+       "NTR24 (23/10)",
+       "Ottopagine",
+       "Gazzetta di Benevento"
+      ],
+      "giorno": "2026-10-23"
+     },
+     {
+      "testo": "Il comunicato spiega che dosi e distribuzione sono state assicurate secondo la programmazione regionale e gli accordi con le categorie, in base alla delibera regionale n. 355 del 9 luglio 2026 e all'Accordo integrativo regionale del 3 settembre 2026. ASL, Federfarma e Ordine dicono di lavorare insieme e di controllare le scorte per tutta la campagna, per rispondere a nuove necessità. Ricordano anche che il 20 ottobre è partito, con le farmacie, lo screening oncologico per colon-retto, mammella e cervice uterina.",
+      "fonti": [
+       "NTR24 (23/10)"
+      ],
+      "giorno": "2026-10-23"
+     },
+     {
       "testo": "Giovedì 22 ottobre il consigliere regionale Enzo Alaia, capogruppo di Casa Riformista – Noi di Centro, ha denunciato che le ASL di Benevento e di Avellino non stanno consegnando i vaccini alle farmacie convenzionate. Secondo lui le dosi sono invece arrivate regolarmente ai medici di famiglia. Alaia chiede ai vertici delle due ASL di spiegare quali ostacoli, organizzativi o amministrativi, bloccano le consegne.",
       "fonti": [
        "NTR24",
        "Lab TV"
-      ]
+      ],
+      "giorno": "2026-10-22"
      },
      {
       "testo": "Il contesto è la «Farmacia dei Servizi», il progetto con cui la Regione Campania porta alcune prestazioni gratuite nelle farmacie: la delibera regionale n. 355 del 9 luglio 2026 è stata approvata insieme a Federfarma e Assofarm Campania. Tra le prestazioni ci sono l'antinfluenzale per gli over 65, il vaccino anti-HPV per i 14-15enni e gli screening per l'epatite C e del cuore.",
       "fonti": [
        "NTR24",
        "Lab TV"
-      ]
+      ],
+      "giorno": "2026-10-22"
      },
      {
       "testo": "Alaia dice che senza le dosi il piano rischia di restare sulla carta in Irpinia e nel Sannio, dove gli ospedali sono lontani e mancano medici di base. Il presidente dell'Ordine dei medici di Avellino, Sellitto, secondo l'articolo riconosce queste difficoltà. Il consigliere chiede tempi certi per le consegne e aggiunge che la sola ASL di Avellino non ha ancora attivato in farmacia lo screening del colon-retto.",
       "fonti": [
        "NTR24",
        "Lab TV"
-      ]
+      ],
+      "giorno": "2026-10-22"
      }
     ],
     "concordano": [
@@ -2115,10 +2146,18 @@
       ]
      }
     ],
-    "divergono": [],
+    "divergono": [
+     {
+      "testo": "Alaia, il 22 ottobre, dice che le ASL di Benevento e Avellino non consegnano le dosi alle farmacie; il 23 ottobre l'ASL Benevento, con Federfarma e l'Ordine dei farmacisti, scrive che in provincia di Benevento le dosi sono già nelle farmacie. Per Benevento vale il comunicato dell'ASL, che è la fonte che gestisce la distribuzione.",
+      "fonti": [
+       "NTR24",
+       "NTR24 (23/10)"
+      ]
+     }
+    ],
     "non_si_sa": [
-     "Cosa rispondono le ASL di Benevento e di Avellino.",
-     "Perché le dosi non sono ancora arrivate alle farmacie."
+     "Se Alaia replica al comunicato.",
+     "Cosa succede ad Avellino, che il comunicato non riguarda."
     ],
     "fonti": [
      {
@@ -2132,6 +2171,50 @@
       "titolo": "Vaccini in farmacia, forniture bloccate ad Avellino e Benevento. Alaia denuncia: «Le ASL chiariscano perché non arrivano le dosi»",
       "url": "https://www.labtv.net/attualita/2026/10/22/vaccini-in-farmacia-forniture-bloccate-ad-avellino-e-benevento-alaia-denuncia-le-asl-chiariscano-perche-non-arrivano-le-dosi/",
       "data": "22 ott, 09:47"
+     },
+     {
+      "nome": "NTR24 (23/10)",
+      "titolo": "Vaccini antinfluenzali già disponibili nelle farmacie della provincia di Benevento",
+      "url": "https://www.ntr24.tv/2026/10/23/vaccini-antinfluenzali-gia-disponibili-nelle-farmacie-della-provincia-di-benevento/",
+      "data": "23 ott, 10:49"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Provincia Benevento: vaccini antinfluenzali già disponibili nelle farmacie",
+      "url": "https://www.ottopagine.it/bn/attualita/441921/benevento-vaccini-antinfluenzali-gia-disponibili-nelle-farmacie.shtml",
+      "data": "23 ott, 11:04"
+     },
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "Nella provincia di Benevento i vaccini antinfluenzali destinati alla somministrazione in farmacia sono già disponibili",
+      "url": "https://www.gazzettabenevento.it/it/nella-provincia-di-benevento-i-vaccini-antinfluenzali-destinati-alla-somministrazione-farmacia-sono",
+      "data": "23 ott, 10:45"
+     }
+    ],
+    "aggiornamento": {
+     "testo": "Venerdì 23 ottobre l'ASL Benevento, Federfarma e l'Ordine dei farmacisti hanno comunicato che i vaccini antinfluenzali sono già disponibili nelle farmacie convenzionate della provincia, rispondendo alla denuncia di Alaia.",
+     "fonti": [
+      "NTR24 (23/10)",
+      "Ottopagine"
+     ],
+     "quando": "2026-10-23T11:11+02:00"
+    },
+    "cronologia": [
+     {
+      "data": "22 ottobre",
+      "fatto": "Alaia denuncia che le ASL di Benevento e Avellino non consegnano i vaccini alle farmacie.",
+      "fonti": [
+       "NTR24",
+       "Lab TV"
+      ]
+     },
+     {
+      "data": "23 ottobre",
+      "fatto": "ASL Benevento, Federfarma e Ordine dei farmacisti: vaccini già disponibili nelle farmacie convenzionate della provincia.",
+      "fonti": [
+       "NTR24 (23/10)",
+       "Ottopagine"
+      ]
      }
     ]
    }
@@ -5257,12 +5340,12 @@
    "id": "tir-appia-telesina",
    "titolo": "Caro gasolio, tir fermi sull'Appia a Tufara Valle e a Castel del Lago, blocchi anche sulla Telesina a San Salvatore Telesino",
    "titolo_google": "Tir fermi sull'Appia e sulla Telesina per il caro gasolio",
-   "sintesi": "Dal 19 ottobre gli autotrasportatori protestano contro il prezzo del gasolio e i blocchi continuano per la seconda notte: tre presìdi a Castel del Lago, a Tufara Valle sull'Appia e a San Salvatore Telesino sulla Telesina. Da giovedì 22 si aggiungono gli agricoltori. Giovedì 22 il Governo ha approvato il decreto «Aiuti» e Meloni ha detto che le associazioni hanno revocato i fermi, mentre in alcune zone i blocchi continuano. In serata la Prefettura di Avellino ha comunicato la rimozione dei blocchi, compresi i piazzali dell'A16 nel Sannio.",
+   "sintesi": "Dal 19 ottobre gli autotrasportatori protestano contro il prezzo del gasolio e i blocchi continuano per la seconda notte: tre presìdi a Castel del Lago, a Tufara Valle sull'Appia e a San Salvatore Telesino sulla Telesina. Da giovedì 22 si aggiungono gli agricoltori. Giovedì 22 il Governo ha approvato il decreto «Aiuti» e Meloni ha detto che le associazioni hanno revocato i fermi, mentre in alcune zone i blocchi continuano. In serata la Prefettura di Avellino ha comunicato la rimozione dei blocchi, compresi i piazzali dell'A16 nel Sannio. Venerdì 23 mattina nuovo presidio di agricoltori e autotrasportatori sulla statale 87.",
    "categoria": "strade",
    "zona": "provincia",
    "immagine": "camion",
    "luogo": "Tufara Valle",
-   "pubblicato": "2026-10-23T00:00:00+02:00",
+   "pubblicato": "2026-10-23T10:59:00+02:00",
    "stato": "confermata",
    "fonti": [
     {
@@ -5344,15 +5427,19 @@
     {
      "nome": "Il Mattino (23/10)",
      "url": "https://www.ilmattino.it/benevento/proteste_autotrasportatori_a_benevento_liberata_la_statale_telesina_dai_tir_ma_restano_ancora_due_presidi-9842195.html"
+    },
+    {
+     "nome": "Ottopagine (23/10)",
+     "url": "https://www.ottopagine.it/bn/cronaca/441920/nel-sannio-prosegue-la-protesta-degli-agricoltori-e-autotrasportatori.shtml"
     }
    ],
    "articolo": {
     "aggiornamento": {
-     "testo": "Secondo Il Mattino giovedì 22 ottobre il blocco sulla Telesina a San Salvatore Telesino è stato tolto poco prima delle 13; restano i presìdi al casello di Benevento, sull'Appia, a Ponte delle Tavole e sulla statale 87 a Torrepalazzo.",
+     "testo": "Venerdì 23 ottobre mattina agricoltori e autotrasportatori sono tornati in strada per ore sulla statale 87 Benevento-Campobasso: dicono di non essere soddisfatti delle misure del governo.",
      "fonti": [
-      "Il Mattino (23/10)"
+      "Ottopagine (23/10)"
      ],
-     "quando": "2026-10-23T06:10+02:00"
+     "quando": "2026-10-23T11:11+02:00"
     },
     "aggiornato": "2026-10-20T09:25:00+02:00",
     "cronologia": [
@@ -5500,6 +5587,13 @@
       "fatto": "Tolto il blocco sulla Telesina a San Salvatore Telesino; restano gli altri presìdi.",
       "fonti": [
        "Il Mattino (23/10)"
+      ]
+     },
+     {
+      "data": "23 ottobre, mattina",
+      "fatto": "Presidio di agricoltori e autotrasportatori sulla statale 87 Benevento-Campobasso, con traffico rallentato.",
+      "fonti": [
+       "Ottopagine (23/10)"
       ]
      }
     ],
@@ -5733,9 +5827,22 @@
       "titolo": "Proteste autotrasportatori a Benevento, liberata la statale Telesina dai tir: ma restano ancora due presidi",
       "url": "https://www.ilmattino.it/benevento/proteste_autotrasportatori_a_benevento_liberata_la_statale_telesina_dai_tir_ma_restano_ancora_due_presidi-9842195.html",
       "data": "23 ott, 00:00"
+     },
+     {
+      "nome": "Ottopagine (23/10)",
+      "titolo": "Nel Sannio prosegue la protesta degli agricoltori e autotrasportatori",
+      "url": "https://www.ottopagine.it/bn/cronaca/441920/nel-sannio-prosegue-la-protesta-degli-agricoltori-e-autotrasportatori.shtml",
+      "data": "23 ott, 10:59"
      }
     ],
     "racconto": [
+     {
+      "testo": "Venerdì 23 ottobre mattina agricoltori e autotrasportatori del Sannio sono tornati a protestare per ore lungo la statale 87 Benevento-Campobasso, con camion e trattori in fila nei due sensi e traffico rallentato. Dicono: «Non siamo soddisfatti delle misure messe in campo dal governo. Ci sentiamo presi in giro». Secondo Ottopagine, mentre in Campania si va verso la fine delle proteste, nel Sannio la protesta continua.",
+      "fonti": [
+       "Ottopagine (23/10)"
+      ],
+      "giorno": "2026-10-23"
+     },
      {
       "testo": "Secondo Il Mattino, giovedì 22 ottobre poco prima delle 13 è stato tolto il blocco sulla statale 372 Telesina, vicino allo svincolo con la Fondovalle Isclero a San Salvatore Telesino, e i mezzi pesanti fermi sono ripartiti. Restano attivi i presìdi al casello di Benevento dell'A16 e sull'Appia, e si sono aggiunti quelli di Ponte delle Tavole e della statale 87 in località Torrepalazzo, in direzione Campobasso. Gli agricoltori con i trattori sono in strada, ma a parte qualche rallentamento la Fortorina a San Marco dei Cavoti è regolare. Le ragioni restano il caro gasolio e il costo della vita.",
       "fonti": [

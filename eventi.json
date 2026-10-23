@@ -883,6 +883,42 @@
    "foto": "teatro-8"
   },
   {
+   "id": "festa-novello-cantine-sciore-ponte-2026",
+   "titolo": "Festa del Novello alle Cantine Sciore",
+   "tipo": "festa",
+   "inizio": "2026-11-21",
+   "fine": "2026-11-22",
+   "luogo": "Cantine Sciore",
+   "comune": "Ponte",
+   "zona": "provincia",
+   "breve": "Seconda edizione della festa dedicata al vino Novello, con stand gastronomici, dolci d'autunno e caldarroste. Domenica 22 novembre c'è anche il pranzo.",
+   "descrizione": [
+    {
+     "testo": "Sabato 21 e domenica 22 novembre le Cantine Sciore, a Ponte, ospitano la seconda edizione della Festa del Novello. Protagonista è il Novello della cantina, insieme a specialità della cucina sannita, stand gastronomici, dolci d'autunno e caldarroste.",
+     "fonti": [
+      "NTR24"
+     ]
+    },
+    {
+     "testo": "Domenica 22 novembre si può fermare anche a pranzo. Il programma dettagliato sarà presentato nei prossimi giorni.",
+     "fonti": [
+      "NTR24"
+     ]
+    }
+   ],
+   "immagine": "vino-novello",
+   "annullato": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "titolo": "Ponte, torna la Festa del Novello: due giorni tra vino, sapori e tradizione alle ‘Cantine Sciore’",
+     "url": "https://www.ntr24.tv/2026/10/23/ponte-torna-la-festa-del-novello-due-giorni-tra-vino-sapori-e-tradizione-alle-cantine-sciore/",
+     "data": "23 ott"
+    }
+   ],
+   "foto": "vino-novello-2"
+  },
+  {
    "id": "magico-parco-di-natale-grassano-2026",
    "titolo": "«Il Magico Parco di Natale» al Parco del Grassano",
    "tipo": "natale",
