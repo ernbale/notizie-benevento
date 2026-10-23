@@ -165,13 +165,32 @@ Martino Valle Caudina e gli altri irpini). Il Sannio Quotidiano esce tutto tra l
 seconda fonte dei fatti del giorno prima: al giro delle 8 controlla i fatti di ieri rimasti con una sola fonte.
 
 **I siti dei Comuni (a ogni giro): file `comuni.json` delle fonti lette da casa.** Il computer di casa legge ogni 30
-minuti i siti di **tutti i 78 Comuni** della provincia e ci mette solo gli avvisi e le notizie **nuovi**, col testo:
-`comune`, `titolo`, `link` (da citare), `primo_visto` (quando è comparso sul sito), `data_avviso` (la data scritta
-nella pagina) e `testo`, che vale come avviso aperto. Leggi tutte le voci con `primo_visto` nelle ultime 3 ore (e
-quelle che non trovi già in notizie.json). Cerca avvisi su strade, scuole, acqua, ordinanze, e soprattutto
-**chiusure** di scuole, parchi e ville comunali, cimiteri, impianti sportivi, mercati per allerta o maltempo. Un
-avviso del Comune è una fonte ufficiale (regola 2): basta da solo. Nel registro delle fonti scrivi una riga
+minuti i siti di **tutti i 78 Comuni** della provincia e, dal 23 ottobre, gli **albi pretori di 57 Comuni**
+(ordinanze, avvisi, bandi: `fonte` «albo pretorio», col testo del PDF allegato quando si legge), e ci mette solo le
+voci **nuove**, col testo: `comune`, `titolo`, `link` (da citare), `primo_visto` (quando è comparso sul sito),
+`data_avviso` (la data scritta nella pagina, o l'inizio della pubblicazione all'albo) e `testo`, che vale come avviso
+aperto. **Le voci nuove sono già nell'elenco di `giornali.py`** come «Comune di …» (fonte ufficiale), da sole o nel
+gruppo dei giornali sullo stesso fatto: **una decisione per ognuna**, come per i giornali. Un avviso del Comune è una
+fonte ufficiale (regola 2): basta da solo. Nel registro delle fonti scrivi una riga
 `Comuni (da casa, controllato HH:MM) | letta | N avvisi nuovi`.
+- **Il proprietario vuole molte più notizie dai Comuni** (23 ott: «il giro si deve impegnare molto di più, troppo poche
+  pubblicate»): per un sito locale l'avviso del Comune è spesso la notizia del giorno di quel paese, e ogni notizia
+  riempie la pagina del suo Comune (`/comune/<nome>/`). **Si pubblica tutto quello che serve a chi ci abita**, anche se
+  piccolo: strade chiuse e lavori (con `traffico`), raccolta dei rifiuti, acqua, luce, gas, cimitero (orari, aperture,
+  lampade votive con la scadenza), mercato, scuola, scuolabus e mensa, trasporti, sanità e vaccini, bandi, contributi e
+  agevolazioni (Carta Dedicata a te, bonus, borse di studio) con la scadenza, concorsi e lavoro, licenze, censimento,
+  elezioni (scrutatori, elettori fuori sede), allerta e protezione civile, eventi (in eventi.json). Categoria `altro`
+  (o `strade`, `meteo`), `stato` «ufficiale», racconto breve (1-2 paragrafi: cosa, dove, quando, chi può, scadenza,
+  dove informarsi), `in_vigore_fino` = scadenza o ultimo giorno, titolo che comincia col paese («Paupisi, cimitero
+  aperto anche lunedì 26 ottobre e lunedì 2 novembre»).
+- **Lo stesso avviso in più Comuni** (sospensione dei rifiuti, Carta Dedicata a te, lampade votive) è una notizia sola
+  con tutti i paesi nel `luogo` («San Leucio del Sannio e Sant'Arcangelo Trimonte») e tutte le fonti; se la notizia
+  c'è già, aggiungi i paesi nuovi (aggiornata).
+- Si scarta solo con un motivo vero: `atto_interno` (turni del personale, nomine, gare, liquidazioni, documenti
+  d'ufficio), `vecchia` (già scaduto), `non_leggibile` (titolo vuoto e niente testo: apri prima il link). Per ogni
+  avviso dei Comuni scartato scrivi in `nota` cosa diceva e perché alla gente non serve: `archivia.py` lo controlla.
+- Le **chiusure** decise dai Comuni (scuole, parchi e ville comunali, cimiteri, impianti sportivi), per qualunque motivo,
+  non le scrivi tu: le pubblica il giro Chiusure (esito «chiusure»).
 - `comuni_non_letti` dice quali siti non si leggono da casa (oggi Airola, Bonea, Bucciano, Pannarano, che mostrano gli
   avvisi solo nel browser, e Montefalcone di Val Fortore, col sito rotto): per loro fai una ricerca mirata se c'è
   allerta o un fatto che li riguarda.
@@ -606,8 +625,9 @@ mette in `diario/AAAA-MM-GG.json`; le notizie nuove e aggiornate, le fonti e le 
   `fuori_provincia`, `vecchia`, `una_fonte_non_autorevole` (solo testate non autorevoli e nessuna conferma),
   `politica_senza_effetti` (regola 9), `pubblicita`, `non_notizia` (opinioni, rubriche, ricorrenze, telegiornali),
   `voce_non_confermata` (indiscrezioni, calciomercato), `non_leggibile` (l'articolo non si apre), `allerta_gialla`
-  (la sola allerta gialla, senza chiusure: vedi «Le Allerte»). Lo sport del Sannio
-  non si scarta: ha la sua sezione (vedi «Lo sport»). `nota` (facoltativa) dice il perché in breve. Nella pagina
+  (la sola allerta gialla, senza chiusure: vedi «Le Allerte»), `atto_interno` (solo per gli avvisi dei Comuni: turni,
+  nomine, gare, liquidazioni). Lo sport del Sannio non si scarta: ha la sua sezione (vedi «Lo sport»). `nota` dice il
+  perché in breve; per i gruppi con un avviso dei Comuni («Comune di …» nell'elenco) è **obbligatoria**. Nella pagina
   privata le scartate dei giornali compaiono da sole con il titolo e il link: in `scartate` metti solo quelle che
   vengono da altre fonti (ufficiali, Comuni, ricerche).
 - In `scartate` va **ogni fatto che hai considerato e non hai pubblicato**: una sola fonte non verificabile, fuori

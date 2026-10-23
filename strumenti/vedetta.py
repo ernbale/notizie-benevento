@@ -10,7 +10,8 @@ salta un giro su due (ogni 10 minuti). Leggere tutti i Comuni prende una ventina
 Guarda:
 - i siti dei Comuni (le pagine con l'elenco degli avvisi di fonti_casa.py): apre gli avvisi mai visti e, per quelli
   che sono ordinanze o avvisi, anche i PDF allegati (pdftotext);
-- l'albo pretorio di Benevento (le ordinanze);
+- l'albo pretorio di Benevento (le ordinanze) e, dal 23 ott 2026, quelli di altri 57 Comuni (fonti_casa.ALBI): ordinanze
+  e avvisi, col PDF allegato;
 - i titoli dei giornali del Sannio (i feed di giornali.py): servono anche per i Comuni che mettono l'ordinanza solo su
   Facebook, che non si legge.
 Una «pista» è un avviso o un articolo che parla di una chiusura. Le piste nuove vanno in chiusure.json dell'archivio
@@ -210,6 +211,55 @@ def dall_albo(stato, adesso):
     return trovate, f"albo {len(voci)}"
 
 
+def dagli_albi(stato, adesso):
+    """Gli albi pretori di 57 Comuni (fonti_casa.ALBI, dal 23 ott 2026): le ordinanze e gli avvisi nuovi che parlano di
+    una chiusura, nell'oggetto o nel PDF allegato (che si apre per le ordinanze e per gli avvisi su scuole e meteo)."""
+    visti = stato["visti"].setdefault("albi", {})
+
+    def leggi_albo(x):
+        nome, (tipo, url) = x
+        try:
+            return nome, tipo, F.atti_albo(tipo, url, adesso)
+        except Exception:
+            return nome, tipo, None
+
+    with ThreadPoolExecutor(8) as ex:
+        albi = list(ex.map(leggi_albo, F.ALBI.items()))
+    da_aprire = []
+    for nome, tipo, atti in albi:
+        if atti is None:
+            continue
+        if nome not in visti:   # prima volta: solo nota di quello che c'è
+            visti[nome] = [a["link"] for a in atti]
+            continue
+        da_aprire += [(nome, tipo, a) for a in atti if a["link"] not in visti[nome]]
+
+    def apri(x):
+        nome, tipo, a = x
+        frase, testo = parla_di_chiusura(a["oggetto"]), a["oggetto"]
+        if frase or re.search(r"ordinanz", a["tipo"], re.I) or re.search(r"scuol|allert|maltempo|meteo", a["oggetto"], re.I):
+            try:
+                allegato = F.testo_allegato(tipo, a)
+            except Exception:
+                return x, None   # si riprova al giro dopo
+            if allegato:
+                frase = frase or parla_di_chiusura(allegato)
+                testo = a["oggetto"] + "\n\n--- PDF allegato\n" + (contesto(allegato, frase, 4000) if frase else allegato[:2000])
+        if not frase:
+            return x, False
+        return x, pista(nome, f"albo pretorio del Comune di {nome}", a["oggetto"], a["link"], testo, adesso)
+
+    trovate = []
+    with ThreadPoolExecutor(6) as ex:
+        for (nome, _, a), esito in ex.map(apri, da_aprire[:NUOVE_MAX]):
+            if esito is None:
+                continue
+            visti[nome] = (visti[nome] + [a["link"]])[-1000:]
+            if esito:
+                trovate.append(esito)
+    return trovate, f"albi {sum(1 for _, _, x in albi if x is not None)}/{len(F.ALBI)}"
+
+
 def dai_giornali(stato, adesso):
     visti = stato["visti"].setdefault("giornali", [])
     prima_volta = not visti
@@ -352,7 +402,7 @@ def main():
         return   # niente allerta: ogni 10 minuti basta
 
     nuove, esiti = [], []
-    for fonte in (dai_comuni, dall_albo, dai_giornali):
+    for fonte in (dai_comuni, dall_albo, dagli_albi, dai_giornali):
         try:
             p, e = fonte(stato, adesso)
             nuove += p

@@ -35,6 +35,7 @@ import re
 import ssl
 import subprocess
 import sys
+import tempfile
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -420,11 +421,171 @@ def comuni(vecchie):
             vecchio = v["data_avviso"] and v["data_avviso"] < (adesso.date() - dt.timedelta(days=10)).isoformat()
             if not vecchio:   # un avviso di settimane fa ricomparso in pagina non è una notizia
                 voci.append(v)
+
+    # gli albi pretori: ricordati a parte («albo:<Comune>»), perché l'elenco wp ha tutte le pubblicazioni in corso
+    def albo(x):
+        nome, (tipo, url) = x
+        try:
+            return nome, tipo, atti_albo(tipo, url, adesso)
+        except Exception:
+            return nome, tipo, None
+    with ThreadPoolExecutor(8) as ex:
+        albi = list(ex.map(albo, ALBI.items()))
+    albi_non_letti = sorted(n for n, _, atti in albi if atti is None)
+    atti_nuovi = []
+    for nome, tipo, atti in albi:
+        if atti is None:
+            continue
+        chiave = "albo:" + nome
+        if chiave not in visti:   # prima lettura: solo nota
+            visti[chiave] = [a["link"] for a in atti]
+            continue
+        gia = set(visti[chiave])
+        atti_nuovi += [(nome, tipo, a) for a in atti if a["link"] not in gia and a["link"] not in vecchie]
+
+    def apri_atto(x):
+        nome, tipo, a = x
+        try:
+            allegato = testo_allegato(tipo, a)
+        except Exception:
+            allegato = ""   # l'atto esce lo stesso, con l'oggetto
+        oggetto = re.sub(r"^POSTA CERTIFICATA:\s*", "", a["oggetto"]).strip()
+        return {"comune": nome, "titolo": oggetto[:300], "link": a["link"], "data": adesso.date().isoformat(),
+                "primo_visto": adesso.isoformat(timespec="minutes"), "data_avviso": a["data"], "fonte": "albo pretorio",
+                "testo": (f"Albo pretorio del Comune di {nome}: {a['tipo']}" + (f" n. {a['numero']}" if a["numero"] else "")
+                          + f", pubblicato il {a['data']}.\nOggetto: {oggetto}"
+                          + (f"\n\nDal PDF allegato:\n{allegato}" if allegato else ""))[:6000]}
+    with ThreadPoolExecutor(6) as ex:
+        for (nome, _, a), v in zip(atti_nuovi, ex.map(apri_atto, atti_nuovi[:NUOVI_ATTI_PER_GIRO])):
+            visti["albo:" + nome].append(a["link"])
+            voci.append(v)
     if not PROVA:
         with open(p_visti + ".tmp", "w", encoding="utf-8") as f:
-            json.dump({k: v[-300:] for k, v in visti.items()}, f, ensure_ascii=False)
+            json.dump({k: v[-(1000 if k.startswith("albo:") else 300):] for k, v in visti.items()}, f, ensure_ascii=False)
         os.replace(p_visti + ".tmp", p_visti)
-    return voci, {"comuni_letti": f"{len(COMUNI) - len(non_letti)} su {len(COMUNI)}", "comuni_non_letti": non_letti}
+    return voci, {"comuni_letti": f"{len(COMUNI) - len(non_letti)} su {len(COMUNI)}", "comuni_non_letti": non_letti,
+                  "albi_letti": f"{len(ALBI) - len(albi_non_letti)} su {len(ALBI)}", "albi_non_letti": albi_non_letti}
+
+
+# Gli albi pretori dei Comuni (dal 23 ott 2026, «il giro agente si deve impegnare molto di più» sui Comuni): le
+# ordinanze, gli avvisi e i bandi che non escono tra le notizie dei loro siti. Due sistemi coprono 57 Comuni (Benevento
+# ha il suo, albo_bn): «halley» = mc_p_ricerca.php, come l'albo di Benevento; «wp» = tema design-comuni-italia, che dà
+# l'elenco in JSON (?proxy_albo=1) e il dettaglio con gli allegati (?proxy_dettaglio_id=). Indirizzi trovati il 23 ott
+# dalla homepage o dal codice ISTAT (halleyweb.com/c062NNN), controllando che la pagina fosse di quel Comune.
+ALBI = {
+    'Amorosi': ('wp', 'https://comune.amorosi.bn.it/albo-pretorio/'),
+    'Apice': ('halley', 'https://www.halleyweb.com/c062003/mc/mc_p_ricerca.php'),
+    'Arpaia': ('halley', 'https://halleyweb.com/c062005/mc/mc_p_ricerca.php'),
+    'Arpaise': ('wp', 'https://comune.arpaise.bn.it/albo-pretorio/'),
+    'Buonalbergo': ('halley', 'https://www.halleyweb.com/c062011/mc/mc_p_ricerca.php'),
+    'Calvi': ('halley', 'https://calvi.halleyweb.it/mc/mc_p_ricerca.php'),
+    'Campolattaro': ('halley', 'https://www.halleyweb.com/c062013/mc/mc_p_ricerca.php'),
+    'Campoli del Monte Taburno': ('wp', 'https://comune.campolidelmontetaburno.bn.it/albo-pretorio/'),
+    'Castelfranco in Miscano': ('halley', 'https://www.halleyweb.com/c062016/mc/mc_p_ricerca.php'),
+    'Castelpagano': ('halley', 'https://castelpagano.halleyweb.it/mc/mc_p_ricerca.php'),
+    'Castelpoto': ('wp', 'https://comune.castelpoto.bn.it/albo-pretorio/'),
+    'Castelvetere in Val Fortore': ('halley', 'https://castelvetereinvalfortore.halleyweb.it/c062020/mc/mc_p_ricerca.php'),
+    'Cautano': ('wp', 'https://comune.cautano.bn.it/albo-pretorio/'),
+    'Ceppaloni': ('halley', 'https://ceppaloni.halleyweb.it/mc/mc_p_ricerca.php'),
+    'Circello': ('wp', 'https://comune.circello.bn.it/albo-pretorio/'),
+    'Colle Sannita': ('halley', 'https://www.halleyweb.com/c062025/mc/mc_p_ricerca.php'),
+    'Dugenta': ('wp', 'https://comune.dugenta.bn.it/albo-pretorio/'),
+    'Durazzano': ('wp', 'https://comune.durazzano.bn.it/albo-pretorio/'),
+    'Faicchio': ('wp', 'https://comune.faicchio.bn.it/albo-pretorio/'),
+    'Foglianise': ('wp', 'https://comune.foglianise.bn.it/albo-pretorio/'),
+    'Forchia': ('halley', 'https://www.halleyweb.com/c062032/mc/mc_p_ricerca.php'),
+    "Fragneto l'Abate": ('halley', 'https://www.halleyweb.com/c062033/mc/mc_p_ricerca.php'),
+    'Fragneto Monforte': ('halley', 'https://www.halleyweb.com/c062034/mc/mc_p_ricerca.php'),
+    'Frasso Telesino': ('wp', 'https://comune.frassotelesino.bn.it/albo-pretorio/'),
+    'Limatola': ('halley', 'https://limatola.halleyweb.it/mc/mc_p_ricerca.php'),
+    'Melizzano': ('wp', 'https://comune.melizzano.bn.it/albo-pretorio/'),
+    'Molinara': ('halley', 'https://molinara.halleyweb.it/c062041/mc/mc_p_ricerca.php'),
+    'Morcone': ('wp', 'https://comune.morcone.bn.it/albo-pretorio/'),
+    'Paduli': ('halley', 'https://www.halleyweb.com/c062045/mc/mc_p_ricerca.php'),
+    'Pago Veiano': ('halley', 'https://www.halleyweb.com/c062046/mc/mc_p_ricerca.php'),
+    'Pannarano': ('halley', 'https://www.halleyweb.com/c062047/mc/mc_p_ricerca.php'),
+    'Paolisi': ('halley', 'https://www.halleyweb.com/c062048/mc/mc_p_ricerca.php'),
+    'Paupisi': ('halley', 'https://paupisi.halleyweb.it/c062049/mc/mc_p_ricerca.php'),
+    'Pesco Sannita': ('halley', 'https://www.halleyweb.com/c062050/mc/mc_p_ricerca.php'),
+    'Pietraroja': ('wp', 'https://comune.pietraroja.bn.it/albo-pretorio/'),
+    'Pietrelcina': ('halley', 'https://www.halleyweb.com/c062052/mc/mc_p_ricerca.php'),
+    'Ponte': ('halley', 'https://ponte.halleyweb.it/c062053/mc/mc_p_ricerca.php'),
+    'Pontelandolfo': ('halley', 'https://www.halleyweb.com/c062054/mc/mc_p_ricerca.php'),
+    'Puglianello': ('wp', 'https://comune.puglianello.bn.it/albo-pretorio/'),
+    'Reino': ('halley', 'https://www.halleyweb.com/c062056/mc/mc_p_ricerca.php'),
+    'San Giorgio la Molara': ('wp', 'https://comune.sangiorgiolamolara.bn.it/albo-pretorio/'),
+    'San Giorgio del Sannio': ('halley', 'https://www.halleyweb.com/c062058/mc/mc_p_ricerca.php'),
+    'San Leucio del Sannio': ('halley', 'https://www.halleyweb.com/c062060/mc/mc_p_ricerca.php'),
+    'San Lorenzo Maggiore': ('wp', 'https://comune.sanlorenzomaggiore.bn.it/albo-pretorio/'),
+    'San Lupo': ('halley', 'https://www.halleyweb.com/c062063/mc/mc_p_ricerca.php'),
+    'San Martino Sannita': ('halley', 'https://www.halleyweb.com/c062065/mc/mc_p_ricerca.php'),
+    'San Nazzaro': ('halley', 'https://www.halleyweb.com/c062066/mc/mc_p_ricerca.php'),
+    'San Nicola Manfredi': ('halley', 'https://www.halleyweb.com/c062067/mc/mc_p_ricerca.php'),
+    "Sant'Agata de' Goti": ('halley', 'https://santagatadegoti.halleyweb.it/mc/mc_p_ricerca.php'),
+    "Sant'Angelo a Cupolo": ('wp', 'https://comune.santangeloacupolo.bn.it/albo-pretorio/'),
+    "Sant'Arcangelo Trimonte": ('halley', 'https://www.halleyweb.com/c062078/mc/mc_p_ricerca.php'),
+    'Santa Croce del Sannio': ('halley', 'https://www.halleyweb.com/c062069/mc/mc_p_ricerca.php'),
+    'Sassinoro': ('halley', 'https://sassinoro.halleyweb.it/mc/mc_p_ricerca.php'),
+    'Solopaca': ('halley', 'https://www.halleyweb.com/c062073/mc/mc_p_ricerca.php'),
+    'Tocco Caudio': ('wp', 'https://comune.toccocaudio.bn.it/albo-pretorio/'),
+    'Torrecuso': ('halley', 'https://torrecuso.halleyweb.it/c062076/mc/mc_p_ricerca.php'),
+    'Vitulano': ('wp', 'https://comune.vitulano.bn.it/albo-pretorio/'),
+}
+ATTO_SI = re.compile(r"ordinanz|avvis|bando di concorso|bandi e avvisi|rende noto|manifest|concors", re.I)
+ATTO_NO = re.compile(r"deposit|esproprio|accertament|creditor|espletamento|gar[ae]\b|elettoral|riunione|consiglio comunale"
+                     r"|liquidazion|altri enti|altre pa|paesaggistic|reperibilit|pronta disponibilit|turni", re.I)
+OGGETTO_NO = re.compile(r"liquidazion|pubblicazion[ei] di matrimonio|deposito|notifica|esproprio|abusiv|pronta disponibilit"
+                        r"|reperibilit|turni (di )?p\.? ?d|catasto|autorizzazione paesaggistica|permesso di costruire"
+                        r"|errata corrige", re.I)
+GIORNI_ALBO = 3            # gli atti pubblicati da tanti giorni (quelli più vecchi non sono notizie nuove)
+NUOVI_ATTI_PER_GIRO = 30   # dettagli e PDF aperti al massimo per giro
+
+
+def atti_albo(tipo, url, adesso):
+    """Gli atti dell'albo di un Comune che possono interessare la gente (ordinanze, avvisi, bandi), pubblicati negli
+    ultimi GIORNI_ALBO giorni: [{tipo, oggetto, data, numero, link, dettaglio}]."""
+    limite = (adesso.date() - dt.timedelta(days=GIORNI_ALBO)).isoformat()
+    out = []
+    if tipo == "wp":
+        for x in json.loads(scarica(url + "?proxy_albo=1")):
+            out.append({"tipo": str(x.get("tipo") or ""), "oggetto": str(x.get("oggetto") or ""),
+                        "data": str(x.get("dataPubblicazione") or "")[:10], "numero": str(x.get("numero") or ""),
+                        "link": f"{url}?dettaglio_id={x.get('id')}", "dettaglio": f"{url}?proxy_dettaglio_id={x.get('id')}"})
+    else:
+        cartella = url.rsplit("/", 1)[0] + "/"
+        for pag in (1, 2):
+            pagina = scarica(url + "?noHeaderFooter=1" + (f"&pag={pag}" if pag > 1 else ""), codifica="latin-1")
+            for id_, blocco in re.findall(r'<td data-id="(\d+)" class="visible-xs">(.*?)</td>', pagina, re.S):
+                campi = {testo(k).lower(): testo(v).replace("\n", " ")
+                         for k, v in re.findall(r"<strong>(.*?)</strong>\s*<div[^>]*>(.*?)</div>", blocco, re.S)}
+                g = re.match(r"(\d{2})/(\d{2})/(\d{4})", campi.get("data inizio", ""))
+                out.append({"tipo": campi.get("tipo", ""), "oggetto": campi.get("oggetto", ""),
+                            "data": f"{g[3]}-{g[2]}-{g[1]}" if g else "", "numero": campi.get("numero atto", ""),
+                            "link": f"{cartella}mc_p_dettaglio.php?id_pubbl={id_}",
+                            "dettaglio": f"{cartella}mc_p_dettaglio.php?id_pubbl={id_}"})
+    return [a for a in out if a["data"] >= limite and ATTO_SI.search(a["tipo"]) and not ATTO_NO.search(a["tipo"])
+            and not OGGETTO_NO.search(a["oggetto"])]
+
+
+def testo_allegato(tipo, a):
+    """Il testo del primo PDF allegato all'atto (le prime 3 pagine), se c'è e si legge: «» altrimenti."""
+    if tipo == "wp":
+        allegati = [x.get("url") for x in json.loads(scarica(a["dettaglio"])).get("allegati") or []]
+    else:
+        pagina = scarica(a["dettaglio"], codifica="latin-1")
+        allegati = [assoluto(a["dettaglio"], h) for h in dict.fromkeys(re.findall(r"mc_attachment\.php\?mc=\d+", pagina))]
+    for u in [x for x in allegati if x][:2]:
+        with tempfile.NamedTemporaryFile(suffix=".pdf") as f:
+            if subprocess.run(["curl", "-sfL", "-m", "60", "-A", UA, "-o", f.name, u], capture_output=True).returncode:
+                continue
+            with open(f.name, "rb") as fh:
+                if fh.read(5) != b"%PDF-":   # i .p7m firmati e gli altri formati non si leggono qui
+                    continue
+            r = subprocess.run(["pdftotext", "-l", "3", "-layout", f.name, "-"], capture_output=True, timeout=60)
+            t = re.sub(r"[ \t]+", " ", r.stdout.decode("utf-8", "replace")).strip()
+            if t:
+                return t
+    return ""
 
 
 POSTA_CONF = os.path.join(CARTELLA, "posta.conf")   # indirizzo e password della casella, li scrive --imposta-posta
@@ -552,7 +713,7 @@ def leggi(nome, adesso):
     tutte = {v["link"]: v for v in list(vecchie.values()) + nuove}
     limite = (adesso - dt.timedelta(days=giorni)).date().isoformat()
     dati["voci"] = sorted((v for v in tutte.values() if v.get("data", "")[:10] >= limite),
-                          key=lambda v: v.get("data", ""), reverse=True)[:80]
+                          key=lambda v: v.get("data", ""), reverse=True)[:200 if nome == "comuni" else 80]
     return dati
 
 
@@ -572,6 +733,9 @@ incompleto.
 - `comuni.json`: avvisi e notizie NUOVI dei siti dei 78 Comuni della provincia, ultimi 4 giorni: `comune`,
   `primo_visto` (quando è comparso sul sito: per sapere cosa è nuovo dall'ultimo giro), `data_avviso` (la prima data
   scritta nella pagina, se c'è), `testo`. `comuni_letti` e `comuni_non_letti` dicono quali siti si sono letti.
+  Dal 23 ott 2026 ci sono anche gli atti nuovi degli albi pretori di 57 Comuni (`fonte`: «albo pretorio»): ordinanze,
+  avvisi e bandi (niente determine, delibere, permessi), con `data_avviso` = inizio della pubblicazione e nel `testo`
+  tipo, numero, oggetto e il testo del PDF allegato quando si legge. `albi_letti` e `albi_non_letti`.
 - `comunicati.json`: i comunicati arrivati per posta a comunicati@notiziebenevento.it, ultimi 7 giorni: `titolo` =
   oggetto, `data` = quando è arrivata, `mittente` (nome) e `dominio` (dopo la @), `allegati`, `testo` (con quello
   dei PDF allegati). Il `link` è «posta:…»: non è un indirizzo da citare.
