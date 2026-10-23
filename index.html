@@ -212,6 +212,24 @@
   .striscia-chiusure:hover { text-decoration: underline; }
   .appro .agg-chiusure { font: 600 14px/1.45 var(--sans); color: var(--grigio); }
   .chiusure li { margin: 0 0 10px; }
+  /* pagine dei Comuni (comune/<nome>/ e comuni/, strumenti/pagine.py) e luogo cliccabile sotto i titoli */
+  .occhiello .luogo a { color: inherit; }
+  .appro .testata-comune { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+  .appro .stemma { flex: none; width: 84px; margin: 4px 0 0; text-align: center; }
+  .appro .stemma img { display: block; width: 100%; height: auto; }
+  .appro .stemma figcaption { font: 400 10.5px/1.3 var(--sans); color: var(--grigio); margin-top: 4px; overflow-wrap: anywhere; }
+  .appro .stemma figcaption a { color: inherit; }
+  .appro .notizie-comune { list-style: none; padding: 0; }
+  .appro .notizie-comune li { margin: 0 0 16px; }
+  .appro .notizie-comune a { font: 700 20px/1.3 var(--serif); color: var(--nero); text-decoration: none; }
+  .appro .notizie-comune a:hover { text-decoration: underline; }
+  .appro .notizie-comune .dove { display: block; font: 600 12.5px var(--sans); color: var(--grigio); margin-top: 3px; }
+  .appro .notizie-comune p { margin: 4px 0 0; font-size: 17px; line-height: 1.5; }
+  .appro .elenco-comuni { list-style: none; padding: 0; columns: 2; column-gap: 24px; }
+  @media (min-width: 640px) { .appro .elenco-comuni { columns: 3; } }
+  .appro .elenco-comuni li { font: 500 16px/1.9 var(--sans); break-inside: avoid; }
+  .appro .elenco-comuni a { color: var(--nero); }
+  .appro .elenco-comuni span { color: var(--grigio); font-size: 13px; }
   .meteo-box .mb-allerta { font: 700 13px var(--sans); color: #fff; border-radius: 4px; padding: 6px 10px; margin: 0 0 8px; }
   .meteo-box .mb-link { display: block; margin-top: 10px; font: 600 13px var(--sans); color: var(--blu); }
   .meteo-box:hover .mb-link { text-decoration: underline; }
@@ -491,7 +509,7 @@
     <p>Una notizia compare se la riportano almeno due testate diverse oppure una fonte ufficiale (Comuni, Regione, Prefettura, Questura e forze dell'ordine, ASL, ANAS, INGV, le società dell'acqua, dei treni e dei bus). La cronaca riportata da un solo giornale autorevole porta la scritta «Una sola fonte». Le accuse sono riportate con le parole usate dai giornali. Aggiornato ogni ora, dalle 6 alle 22. Le visite si contano in forma anonima, senza cookie.</p>
     <p>Nessuna notizia viene cancellata: quando esce dalla prima pagina resta nell'<a href="#archivio">archivio</a>, allo stesso indirizzo.</p>
     <p class="sezioni-link">Sezioni: <a href="/sezione/strade/">Strade</a> · <a href="/sezione/cronaca/">Cronaca</a> · <a href="/sezione/politica/">Politica</a> · <a href="/sezione/sport/">Sport</a> · <a href="/sezione/eventi/">Eventi</a> · <a href="/sezione/allerte/">Allerte</a> · <a href="/sezione/altro/">Altro</a> · <a href="/meteo.html">Meteo Benevento</a><br>
-      Zone: <a href="/zona/benevento/">Benevento città</a> · <a href="/zona/valle-telesina/">Valle Telesina</a> · <a href="/zona/valle-caudina/">Valle Caudina</a> · <a href="/zona/fortore/">Fortore e Tammaro</a> · <a href="/zona/altri-comuni/">Altri comuni</a> · <a href="/feed.xml">Feed RSS</a></p>
+      Zone: <a href="/zona/benevento/">Benevento città</a> · <a href="/zona/valle-telesina/">Valle Telesina</a> · <a href="/zona/valle-caudina/">Valle Caudina</a> · <a href="/zona/fortore/">Fortore e Tammaro</a> · <a href="/zona/altri-comuni/">Altri comuni</a> · <a href="/comuni/">Tutti i Comuni</a> · <a href="/feed.xml">Feed RSS</a></p>
     <p class="sezioni-link"><a href="/chi-siamo/">Chi siamo</a> · Seguici su <a href="https://www.instagram.com/notiziebenevento.it/" target="_blank" rel="noopener">Instagram</a>, <a href="https://www.facebook.com/notiziebenevento" target="_blank" rel="noopener">Facebook</a> e <a href="https://t.me/notiziebenevento" target="_blank" rel="noopener">Telegram</a></p>
   </footer>
 </div>
@@ -1235,12 +1253,33 @@
     });
     box.appendChild(ul);
   }
+  // I 78 Comuni del Sannio (COMUNI_BN in strumenti/meteo.py): nel luogo sotto il titolo portano alla pagina del
+  // Comune (comune/<nome>/, strumenti/pagine.py: stessa divisione del luogo e stessi nomi di _luogo_link)
+  var COMUNI = {};
+  ["Airola", "Amorosi", "Apice", "Apollosa", "Arpaia", "Arpaise", "Baselice", "Benevento", "Bonea", "Bucciano", "Buonalbergo", "Calvi", "Campolattaro", "Campoli del Monte Taburno", "Casalduni", "Castelfranco in Miscano", "Castelpagano", "Castelpoto", "Castelvenere", "Castelvetere in Val Fortore", "Cautano", "Ceppaloni", "Cerreto Sannita", "Circello", "Colle Sannita", "Cusano Mutri", "Dugenta", "Durazzano", "Faicchio", "Foglianise", "Foiano di Val Fortore", "Forchia", "Fragneto Monforte", "Fragneto l'Abate", "Frasso Telesino", "Ginestra degli Schiavoni", "Guardia Sanframondi", "Limatola", "Melizzano", "Moiano", "Molinara", "Montefalcone di Val Fortore", "Montesarchio", "Morcone", "Paduli", "Pago Veiano", "Pannarano", "Paolisi", "Paupisi", "Pesco Sannita", "Pietraroja", "Pietrelcina", "Ponte", "Pontelandolfo", "Puglianello", "Reino", "San Bartolomeo in Galdo", "San Giorgio La Molara", "San Giorgio del Sannio", "San Leucio del Sannio", "San Lorenzello", "San Lorenzo Maggiore", "San Lupo", "San Marco dei Cavoti", "San Martino Sannita", "San Nazzaro", "San Nicola Manfredi", "San Salvatore Telesino", "Sant'Agata de' Goti", "Sant'Angelo a Cupolo", "Sant'Arcangelo Trimonte", "Santa Croce del Sannio", "Sassinoro", "Solopaca", "Telese Terme", "Tocco Caudio", "Torrecuso", "Vitulano"].forEach(function (c) { COMUNI[c.toLowerCase()] = c; });
+  COMUNI["sant'agata dei goti"] = "Sant'Agata de' Goti";
+  function urlComune(c) {
+    return c === "Benevento" ? "/zona/benevento/" : "/comune/" + c.normalize("NFKD").replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "") + "/";
+  }
+  function luogoConLink(luogo) {
+    var sp = el("span", "luogo", []);
+    String(luogo).split(/([,()]| e )/).forEach(function (p) {
+      var m = p.match(/^(\s*)([\s\S]*?)(\s*)$/), c = COMUNI[m[2].replace(/’/g, "'").toLowerCase()];
+      if (!c) { sp.appendChild(testo(p)); return; }
+      var a = el("a", "", [m[2]]);
+      a.href = urlComune(c);
+      sp.appendChild(testo(m[1])); sp.appendChild(a); sp.appendChild(testo(m[3]));
+    });
+    return sp;
+  }
+
   function testataPagina(art, occhiello, luogo, titolo) {
     var ind = el("a", "indietro", ["← Tutte le notizie"]);
     ind.href = "/";
     art.appendChild(ind);
     var occ = el("div", "occhiello", [occhiello]);
-    if (luogo) occ.appendChild(el("span", "luogo", [luogo]));
+    if (luogo) occ.appendChild(luogoConLink(luogo));
     art.appendChild(occ);
     art.appendChild(el("h1", "", [titolo]));
   }
