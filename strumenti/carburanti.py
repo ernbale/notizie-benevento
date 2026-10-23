@@ -38,10 +38,10 @@ MINIMO_IMPIANTI = 100   # in provincia sono circa 175: molti meno vuol dire un f
 
 
 def scarica(nome):
-    p = subprocess.run(["curl", "-sfL", "--compressed", "-m", "120", "--retry", "2", "--retry-all-errors", "-A", UA,
-                        BASE + nome], capture_output=True)
-    if p.returncode:
-        raise RuntimeError(f"{nome}: curl {p.returncode}")
+    p = subprocess.run(["curl", "-sSfL", "--compressed", "--connect-timeout", "20", "-m", "240", "--retry", "2",
+                        "--retry-all-errors", "-A", UA, BASE + nome], capture_output=True)
+    if p.returncode:   # curl 28 col collegamento fermo = il sito non risponde a chi è all'estero (come ANAS e TV7)
+        raise RuntimeError(f"{nome}: curl {p.returncode} {p.stderr.decode(errors='replace').strip()[:150]}")
     righe = p.stdout.decode("utf-8", "replace").splitlines()
     m = re.match(r"Estrazione del (\d{4}-\d{2}-\d{2})", righe[0] if righe else "")
     if not m:
