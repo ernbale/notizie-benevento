@@ -1,7 +1,64 @@
 {
- "aggiornato": "2026-10-23T12:11+02:00",
+ "aggiornato": "2026-10-23T13:09+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-megaparcheggio-abbonamento-commercianti-confesercenti",
+   "titolo": "Benevento, abbonamento mensile ridotto al Megaparcheggio di via del Pomerio per i commercianti",
+   "titolo_google": "Benevento, Megaparcheggio: abbonamento ridotto commercianti",
+   "sintesi": "Comune e Bemobi, la società che gestisce il Megaparcheggio di via del Pomerio, hanno concordato una tariffa mensile ridotta per gli operatori commerciali della città. Secondo NTR24 la riduzione è più bassa di quella chiesta da Confesercenti.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "immagine": "parcheggio",
+   "luogo": "Benevento, via del Pomerio",
+   "pubblicato": "2026-10-23T12:26:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/23/confesercenti-soddisfatta-per-abbonamento-agevolato-agli-operatori-commerciali-presso-il-megaparcheggio/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Gli operatori commerciali di Benevento potranno avere un abbonamento mensile a tariffa ridotta al Megaparcheggio di via del Pomerio. L'accordo è tra l'Amministrazione comunale e Bemobi, la società che ha in concessione il parcheggio. Lo comunica Confesercenti Sannio, l'associazione dei commercianti, che si dice soddisfatta.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Secondo NTR24 Confesercenti aveva chiesto uno sconto più grande, che non è stato ottenuto. L'articolo non dice quanto costi l'abbonamento ridotto né quale fosse il prezzo normale.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Per averlo bisogna ritirare il modulo alla sede provinciale di Confesercenti, in via Ennio Goduti 27, e consegnarlo compilato agli uffici del parcheggio in via del Pomerio, che attivano la convenzione e la tariffa ridotta.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "A quanto ammonta la tariffa ridotta e quella normale.",
+     "Da quando vale la convenzione e fino a quando si può fare domanda."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Confesercenti soddisfatta per abbonamento agevolato agli operatori commerciali presso il Megaparcheggio",
+      "url": "https://www.ntr24.tv/2026/10/23/confesercenti-soddisfatta-per-abbonamento-agevolato-agli-operatori-commerciali-presso-il-megaparcheggio/",
+      "data": "23 ott, 12:26"
+     }
+    ]
+   },
+   "foto": "parcheggio-2"
+  },
   {
    "id": "asl-benevento-enti-terzo-settore-case-comunita-20-novembre",
    "titolo": "ASL Benevento, avviso per gli enti del terzo settore nelle Case della Comunità: domande entro il 20 novembre",
@@ -4956,17 +5013,21 @@
   },
   {
    "id": "asia-ecocentro-chiuso-protesta",
-   "titolo": "Benevento, protesta dei camion: l'Asia chiude l'ecocentro di Margiacca e sospende dal 21 ottobre i cassonetti dei tessili e il ritiro degli ingombranti",
-   "titolo_google": "Benevento, Asia chiude l'ecocentro di Margiacca per la protesta",
-   "sintesi": "I mezzi dell'Asia, la società dei rifiuti di Benevento, restano bloccati dalla protesta degli autotrasportatori e non riescono a scaricare. L'ecocentro di Margiacca è chiuso dal 20 ottobre; dal 21 si fermano anche la raccolta nei contenitori dei tessili e il ritiro a domicilio degli ingombranti.",
+   "titolo": "Benevento, l'Asia riapre da lunedì 26 ottobre l'ecocentro di Margiacca e riprende ingombranti e tessili",
+   "titolo_google": "Benevento, Asia: da lunedì riapre l'ecocentro di Margiacca",
+   "sintesi": "Da lunedì 26 ottobre l'Asia, la società dei rifiuti di Benevento, riapre l'ecocentro di Margiacca e riprende ritiro degli ingombranti e raccolta dei tessili, fermi dal 20-21 ottobre per la protesta degli autotrasportatori.",
    "categoria": "altro",
    "zona": "benevento",
    "immagine": "rifiuti",
    "luogo": "Benevento",
-   "pubblicato": "2026-10-20T20:00:00+02:00",
+   "pubblicato": "2026-10-23T13:01:00+02:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
+    {
+     "nome": "NTR24 (23/10)",
+     "url": "https://www.ntr24.tv/2026/10/23/asia-da-lunedi-tornano-operativi-tutti-i-servizi/"
+    },
     {
      "nome": "NTR24",
      "url": "https://www.ntr24.tv/2026/10/20/protesta-autotrasportatori-mezzi-dellasia-bloccati-da-oggi-chiuso-lecocentro-possibili-disservizi/"
@@ -5015,6 +5076,13 @@
        "BeneventoNews24",
        "Infosannio"
       ]
+     },
+     {
+      "data": "26 ottobre",
+      "fatto": "Data indicata dall'Asia per il ritorno di tutti i servizi: ecocentro aperto dal lunedì al sabato, dalle 11 alle 18.",
+      "fonti": [
+       "NTR24 (23/10)"
+      ]
      }
     ],
     "concordano": [
@@ -5038,10 +5106,15 @@
     ],
     "divergono": [],
     "non_si_sa": [
-     "Per quanti giorni dureranno le sospensioni, che dipendono dalla fine dei blocchi.",
-     "Se anche la raccolta ordinaria dei rifiuti salterà."
+     "Se la ripresa sarà rimandata nel caso in cui tornino i blocchi o manchi ancora il carburante."
     ],
     "fonti": [
+     {
+      "nome": "NTR24 (23/10)",
+      "titolo": "Asia: da lunedì tornano operativi tutti i servizi",
+      "url": "https://www.ntr24.tv/2026/10/23/asia-da-lunedi-tornano-operativi-tutti-i-servizi/",
+      "data": "23 ott, 13:01"
+     },
      {
       "nome": "NTR24",
       "titolo": "Protesta autotrasportatori, mezzi dell’Asia bloccati. Da oggi chiuso l’ecocentro, possibili disservizi",
@@ -5087,19 +5160,18 @@
     ],
     "racconto": [
      {
-      "testo": "Il blocco dei camion in Campania ha messo in difficoltà la raccolta dei rifiuti a Benevento. I mezzi pesanti dell'Asia, la società che si occupa dei rifiuti in città, non possono circolare e non arrivano agli impianti dove scaricare quello che raccolgono.",
+      "testo": "Da lunedì 26 ottobre tornano pienamente operativi tutti i servizi dell'Asia, perché la protesta degli autotrasportatori sta rientrando poco alla volta. L'ecocentro di contrada Fontana Margiacca riapre ai cittadini dal lunedì al sabato, dalle 11 alle 18.",
       "fonti": [
-       "NTR24",
-       "Anteprima24",
-       "Fremondoweb"
-      ]
+       "NTR24 (23/10)"
+      ],
+      "giorno": "2026-10-23"
      },
      {
-      "testo": "Per questo da martedì 20 ottobre l'ecocentro comunale di Margiacca, dove i cittadini portano i rifiuti ingombranti, è chiuso al pubblico. L'Asia avverte che potrebbero esserci disagi anche nella raccolta e chiede collaborazione ai cittadini.",
+      "testo": "Torna attivo anche il servizio di prenotazione per il ritiro a domicilio degli ingombranti, e le richieste rimaste in sospeso saranno smaltite. Riprende inoltre lo svuotamento dei contenitori stradali dei tessili, dove si possono di nuovo lasciare abiti e stoffe. L'amministratore unico Donato Madaro dice che la raccolta dei rifiuti non è mai stata interrotta, nemmeno nei giorni più difficili, e ringrazia la Prefettura di Benevento e i cittadini.",
       "fonti": [
-       "NTR24",
-       "Anteprima24"
-      ]
+       "NTR24 (23/10)"
+      ],
+      "giorno": "2026-10-23"
      },
      {
       "testo": "Dopo un incontro in Prefettura, l'Asia ha deciso altre misure temporanee. Da mercoledì 21 ottobre sospende il conferimento dei rifiuti tessili (vestiti e simili) nei contenitori che stanno sulla strada e il ritiro a domicilio degli ingombranti.",
@@ -5107,16 +5179,42 @@
        "Fremondoweb",
        "Ottopagine",
        "BeneventoNews24"
-      ]
+      ],
+      "giorno": "2026-10-21"
      },
      {
       "testo": "Chi aveva già prenotato il ritiro di un ingombrante sarà chiamato in queste ore dagli operatori del call center. Appena i mezzi pesanti potranno circolare di nuovo, i ritiri saranno fatti seguendo l'ordine delle prenotazioni.",
       "fonti": [
        "Fremondoweb",
        "Infosannio"
-      ]
+      ],
+      "giorno": "2026-10-21"
+     },
+     {
+      "testo": "Il blocco dei camion in Campania ha messo in difficoltà la raccolta dei rifiuti a Benevento. I mezzi pesanti dell'Asia, la società che si occupa dei rifiuti in città, non possono circolare e non arrivano agli impianti dove scaricare quello che raccolgono.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24",
+       "Fremondoweb"
+      ],
+      "giorno": "2026-10-20"
+     },
+     {
+      "testo": "Per questo da martedì 20 ottobre l'ecocentro comunale di Margiacca, dove i cittadini portano i rifiuti ingombranti, è chiuso al pubblico. L'Asia avverte che potrebbero esserci disagi anche nella raccolta e chiede collaborazione ai cittadini.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ],
+      "giorno": "2026-10-20"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Venerdì 23 ottobre l'Asia ha annunciato che da lunedì 26 ottobre l'ecocentro di Margiacca, il ritiro degli ingombranti e la raccolta dei tessili ripartono.",
+     "fonti": [
+      "NTR24 (23/10)"
+     ],
+     "quando": "2026-10-23T13:09+02:00"
+    }
    },
    "foto": "rifiuti"
   },
