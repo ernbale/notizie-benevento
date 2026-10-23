@@ -1,10 +1,29 @@
 {
- "aggiornato": "2026-10-23T17:21+02:00",
+ "aggiornato": "2026-10-23T21:41+02:00",
  "viste": [
   "1131ffc78db3",
-  "a4f3f5a64d51"
+  "a4f3f5a64d51",
+  "d12186721458"
  ],
- "chiusure": [],
+ "chiusure": [
+  {
+   "comune": "Sassinoro",
+   "cosa": "cimitero comunale (dalle 8 del 23 alle 8 del 24 ottobre)",
+   "giorni": [
+    "2026-10-23",
+    "2026-10-24"
+   ],
+   "motivo": "Lavori di esumazione ed estumulazione",
+   "fonte": {
+    "nome": "Ordinanza sindacale n. 17 del 22/10/2026",
+    "url": "https://sassinoro.halleyweb.it/mc/mc_p_dettaglio.php?id_pubbl=8364"
+   },
+   "id": "sassinoro-2026-10-23",
+   "pista": "d12186721458",
+   "trovata": "2026-10-23T21:40:02+02:00",
+   "aggiunta": "2026-10-23T21:41:02+02:00"
+  }
+ ],
  "scartate": [
   {
    "pista": "1131ffc78db3",
