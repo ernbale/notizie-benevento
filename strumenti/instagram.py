@@ -66,9 +66,10 @@ def didascalia(n):
     if n.get("immagine") and n.get("categoria") != "cronaca":
         m += "\n\nImmagine illustrativa creata con l'intelligenza artificiale: non è una foto del fatto."
     tag = ["#Benevento", "#Sannio"]
-    luogo = re.sub(r"[^A-Za-zÀ-ÿ0-9]", "", (n.get("luogo") or "").title())
-    if luogo and luogo.lower() != "benevento":
-        tag.append("#" + luogo)
+    for luogo in re.split(r"[,;/]| e ", n.get("luogo") or ""):   # «Napoli, Sannio» → #Napoli (#Sannio c'è già)
+        t = "#" + re.sub(r"[^A-Za-zÀ-ÿ0-9]", "", luogo.title())
+        if len(t) > 1 and t.lower() not in (x.lower() for x in tag):
+            tag.append(t)
     return m + "\n\n" + " ".join(tag + ["#notizie"])
 
 
