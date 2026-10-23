@@ -181,8 +181,10 @@ fonte ufficiale (regola 2): basta da solo. Nel registro delle fonti scrivi una r
   agevolazioni (Carta Dedicata a te, bonus, borse di studio) con la scadenza, concorsi e lavoro, licenze, censimento,
   elezioni (scrutatori, elettori fuori sede), allerta e protezione civile, eventi (in eventi.json). Categoria `altro`
   (o `strade`, `meteo`), `stato` «ufficiale», racconto breve (1-2 paragrafi: cosa, dove, quando, chi può, scadenza,
-  dove informarsi), `in_vigore_fino` = scadenza o ultimo giorno, titolo che comincia col paese («Paupisi, cimitero
-  aperto anche lunedì 26 ottobre e lunedì 2 novembre»).
+  dove informarsi), `in_vigore_fino` = ultimo giorno o scadenza **solo se è entro 30 giorni** (le scadenze più lontane,
+  come un canone da pagare a febbraio, vanno nel titolo e nel testo, senza `in_vigore_fino`: se no l'avviso resta per
+  mesi nel riquadro «Avvisi in vigore»), titolo che comincia col paese («Paupisi, cimitero aperto anche lunedì 26
+  ottobre e lunedì 2 novembre»).
 - **Lo stesso avviso in più Comuni** (sospensione dei rifiuti, Carta Dedicata a te, lampade votive) è una notizia sola
   con tutti i paesi nel `luogo` («San Leucio del Sannio e Sant'Arcangelo Trimonte») e tutte le fonti; se la notizia
   c'è già, aggiungi i paesi nuovi (aggiornata).
