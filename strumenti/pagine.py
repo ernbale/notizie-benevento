@@ -659,6 +659,88 @@ def html_strade_chiuse(ora, poi, oggi, aggiornato):
     return f'<article class="appro">{h}</article>'
 
 
+# ---------- prezzi dei carburanti (strumenti/carburanti.py → carburanti.json) ----------
+NOMI_CARBURANTI = {"benzina": "Benzina", "gasolio": "Diesel", "gpl": "GPL", "metano": "Metano"}
+
+
+def _euro(x):
+    return f"{x:.3f}".replace(".", ",")
+
+
+def _nome_distributore(i):
+    """Il marchio; per le pompe bianche il nome dell'impianto, se non è solo il paese (come in index.html)."""
+    if i["bandiera"] == "Pompa bianca" and i["nome"] and i["nome"] != i["comune"]:
+        return i["nome"]
+    return i["bandiera"]
+
+
+def _classifica(dati, tipo, quanti):
+    per = {i["id"]: i for i in dati.get("impianti") or []}
+    righe = ""
+    for n, k in enumerate((dati.get("classifiche") or {}).get(tipo, [])[:quanti], 1):
+        i = per[k]
+        righe += (f'<tr><td>{n}</td><td class="pr">{_euro(i["prezzi"][tipo]["self"]["prezzo"])}</td>'
+                  f'<td><a href="#d{e(k)}">{e(_nome_distributore(i))}</a> <span>{e(i["comune"])}'
+                  + (f", {e(i['indirizzo'])}" if i["indirizzo"] else "") + "</span></td></tr>")
+    return f'<table class="prezzi"><thead><tr><th></th><th>€/litro</th><th>Distributore</th></tr></thead><tbody>{righe}</tbody></table>'
+
+
+def html_carburanti(dati, oggi):
+    h = _testata_pagina("Carburanti", "", "Prezzi di benzina e diesel a Benevento e provincia")
+    h += ('<p class="sommario">I prezzi di benzina, diesel, GPL e metano di tutti i distributori della provincia di '
+          "Benevento, self e servito, con le classifiche dei meno cari. Sono i prezzi che i gestori comunicano al "
+          "Ministero delle Imprese e del Made in Italy: li aggiorniamo ogni mattina.</p>")
+    impianti = dati.get("impianti") or []
+    if not impianti:
+        h += "<p>I prezzi del Ministero ora non sono disponibili: riprova più tardi.</p>" + SEGUI
+        return f'<article class="appro">{h}</article>'
+    d = dt.date.fromisoformat(dati["estrazione"])
+    medie = dati.get("medie_self") or {}
+    h += (f'<p class="agg-chiusure">Prezzi in vigore {GIORNI[d.weekday()]} {d.day} {MESI_LUNGHI[d.month - 1]} alle 8, '
+          f"per {len(impianti)} distributori." + (f" Media in provincia, self: benzina {_euro(medie['benzina'])} €, "
+                                                   f"diesel {_euro(medie['gasolio'])} €." if medie.get("benzina") and medie.get("gasolio") else "")
+          + "</p>")
+    h += "<h3>Benzina self, i 10 meno cari</h3>" + _classifica(dati, "benzina", 10)
+    h += "<h3>Diesel self, i 10 meno cari</h3>" + _classifica(dati, "gasolio", 10)
+    h += (f'<p class="agg-chiusure">Nelle classifiche ci sono solo i prezzi comunicati negli ultimi '
+          f'{dati.get("giorni_validi", 8)} giorni. Il prezzo giusto è sempre quello sul cartello alla pompa.</p>')
+    per_comune = {}
+    for i in impianti:
+        per_comune.setdefault(i["comune"], []).append(i)
+    h += "<h3>Tutti i distributori, paese per paese</h3>"
+    h += '<ul class="elenco-comuni">' + "".join(
+        f'<li><a href="#c-{slug(c)}">{e(c)}</a> <span>{len(v)}</span></li>' for c, v in sorted(per_comune.items())) + "</ul>"
+    for c, v in sorted(per_comune.items()):
+        h += f'<h4 class="cb-comune" id="c-{slug(c)}">{e(c)}</h4><ul class="notizie-comune distributori">'
+        for i in v:
+            mappa = (f' · <a href="https://www.google.com/maps/search/?api=1&amp;query={i["lat"]},{i["lon"]}" '
+                     'target="_blank" rel="noopener nofollow">mappa</a>' if i.get("lat") and i.get("lon") else "")
+            righe, quando = "", []
+            for tipo, nome in NOMI_CARBURANTI.items():
+                p = i["prezzi"].get(tipo) or {}
+                parti = [f"{_euro(p[m]['prezzo'])} {m}" for m in ("self", "servito") if m in p]
+                if parti:
+                    righe += f"<span><b>{nome}</b> {' · '.join(parti)}</span>"
+                    quando += [p[m]["dt"][:10] for m in ("self", "servito") if m in p]
+            ultimo = dt.date.fromisoformat(max(quando))
+            vecchio = not any((i["prezzi"].get(t) or {}).get(m, {}).get("valido") for t in NOMI_CARBURANTI for m in ("self", "servito"))
+            # il nome dell'impianto dei marchi è spesso un codice interno («8336 Telese Terme»): si mostra l'indirizzo
+            nome = i["nome"] if i["bandiera"] == "Pompa bianca" else ""
+            h += (f'<li id="d{e(i["id"])}"><div class="occhiello">{e(i["bandiera"])}</div>'
+                  f'<b class="cb-nome">{e(i["indirizzo"] or i["nome"] or c)}</b>'
+                  f'<span class="dove">{e(nome + " · " if nome else "")}{e(c)}{mappa}</span><p class="cb-prezzi">{righe}</p>'
+                  f'<span class="dove">{"⚠️ prezzi vecchi: " if vecchio else ""}comunicati il {ultimo.day} '
+                  f'{MESI_LUNGHI[ultimo.month - 1]}</span></li>')
+        h += "</ul>"
+    h += ('<p class="agg-chiusure">Fonte: <a href="https://www.mimit.gov.it/it/open-data/elenco-dataset/carburanti-prezzi-'
+          'praticati-e-anagrafica-degli-impianti" target="_blank" rel="noopener nofollow">Ministero delle Imprese e del '
+          "Made in Italy, Osservatorio prezzi carburanti</a> (dati aperti, licenza IODL 2.0). I prezzi li comunicano i "
+          "gestori: un distributore può averli cambiati dopo.</p>")
+    h += '<p class="collegate"><a href="/strade-chiuse/">Strade chiuse oggi ›</a></p>'
+    h += SEGUI
+    return f'<article class="appro">{h}</article>'
+
+
 def _racconto(righe, fonti):
     """Storia di più giorni: sopra i paragrafi di ogni giorno la sua data (come disegna index.html)."""
     piu_giorni = len({r.get("giorno") for r in righe if isinstance(r, dict) and r.get("giorno")}) > 1
@@ -896,7 +978,7 @@ def _allerta_comune(c, allerte, oggi):
             f'{e(", ".join(livelli))}{e(bol)}. <a href="/meteo.html">Le previsioni del tempo</a>.</p>')
 
 
-def html_comune(c, notizie, eventi, chiusure, allerte, stemma, oggi):
+def html_comune(c, notizie, eventi, chiusure, allerte, stemma, oggi, distributori=0):
     titolo = f"Notizie da {c}"
     h = _testata_pagina("Comuni del Sannio", "Provincia di Benevento", titolo)
     somm = (f'<p class="sommario">Le notizie di {e(c)}, in provincia di Benevento: cronaca, strade, politica, sport ed '
@@ -932,6 +1014,10 @@ def html_comune(c, notizie, eventi, chiusure, allerte, stemma, oggi):
             + (f"<p>{e(breve(n['sintesi'], 220))}</p>" if n.get("sintesi") else "") + "</li>" for n in notizie[:100]) + "</ul>"
     else:
         h += f"<p>Per ora non ci sono notizie da {e(c)}: le trovi qui appena escono.</p>"
+    if distributori:
+        quali = f"dei {distributori} distributori" if distributori > 1 else "del distributore"
+        h += (f'<p class="sezioni-link">Carburante: <a href="/carburanti/#c-{slug(c)}">i prezzi di oggi {quali} di '
+              f'{e(c)} ›</a></p>')
     h += '<p class="sezioni-link">Gli altri paesi: <a href="/comuni/">tutti i Comuni del Sannio</a></p>'
     h += SEGUI
     return f'<article class="appro">{h}</article>'
@@ -1180,7 +1266,7 @@ def main():
     except ImportError:
         con_immagini = False
         print("AVVISO: Pillow non c'è, uso l'immagine del sito per tutte le notizie", file=sys.stderr)
-    for d in ("notizia", "approfondimento", "sezione", "zona", "evento", "comune", "comuni"):
+    for d in ("notizia", "approfondimento", "sezione", "zona", "evento", "comune", "comuni", "carburanti"):
         shutil.rmtree(os.path.join(sito, d), ignore_errors=True)
     per_id = {n["id"]: n for n in notizie}
     usate, mappa = set(), []   # mappa: (url, lastmod)
@@ -1322,6 +1408,24 @@ def main():
                   articolo=True))
     mappa.append((url, prima.get("aggiornato")))
 
+    # i prezzi dei carburanti (strumenti/carburanti.py, nello stesso giro): la pagina c'è sempre
+    try:
+        carb = leggi(os.path.join(sito, "carburanti.json"))
+    except (OSError, ValueError):
+        carb = {}
+    url = SITO + "/carburanti/"
+    seo = blocco_seo(f"Prezzi benzina e diesel oggi a Benevento e provincia – {NOME}", "I prezzi di benzina, diesel, GPL "
+                     "e metano di tutti i distributori di Benevento e provincia, con i più economici: dati del Ministero "
+                     "aggiornati ogni mattina.", url, "/condivisione.png",
+                     jsonld={"@context": "https://schema.org", "@type": "WebPage", "name": "Prezzi dei carburanti nel Sannio",
+                             "url": url, "isPartOf": {"@type": "WebSite", "name": NOME, "url": SITO + "/"}})
+    scrivi(os.path.join(sito, "carburanti", "index.html"),
+           pagina(modello, seo, {"statica": True}, html_carburanti(carb, oggi), articolo=True))
+    mappa.append((url, carb.get("estrazione")))
+    distributori = {}
+    for i in carb.get("impianti") or []:
+        distributori[i["comune"]] = distributori.get(i["comune"], 0) + 1
+
     # i Comuni: una pagina per ognuno (Benevento ha zona/benevento) e l'elenco comuni/
     try:
         allerte = leggi(os.path.join(sito, "meteo.json")).get("allerte") or {}
@@ -1362,7 +1466,8 @@ def main():
                          jsonld=jsonld, extra="" if visibile else '<meta name="robots" content="noindex, follow">')
         scrivi(os.path.join(sito, url_comune(c).strip("/"), "index.html"),
                pagina(modello, seo, {"statica": True},
-                      html_comune(c, dentro, evc, chius.get("chiusure") or [], allerte, stemmi.get(c), oggi), articolo=True))
+                      html_comune(c, dentro, evc, chius.get("chiusure") or [], allerte, stemmi.get(c), oggi,
+                                  distributori.get(c, 0)), articolo=True))
         if visibile:
             indicizzate += 1
             mappa.append((url, dentro[0].get("pubblicato") if dentro else None))
