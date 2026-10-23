@@ -1,7 +1,230 @@
 {
- "aggiornato": "2026-10-23T13:09+02:00",
+ "aggiornato": "2026-10-23T14:11+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "filippide-runners-maratone-monaco-chicago-napoli",
+   "titolo": "Maratone d'ottobre per la Filippide Runners: sei atleti al traguardo a Monaco, Chicago e Napoli",
+   "titolo_google": "Filippide Runners, sei atleti alla maratona: Monaco, Chicago, Napoli",
+   "sintesi": "Sei atleti dell'ASD Filippide Runners hanno finito una maratona a ottobre: Nicola Bianco a Monaco in 2h44'29\" (record personale), Luigi Tedesco a Chicago in 2h54'11\" e quattro alla Neapolis Marathon di Napoli.",
+   "categoria": "sport",
+   "sport": "atletica",
+   "zona": "provincia",
+   "luogo": "Monaco, Chicago, Napoli",
+   "pubblicato": "2026-10-23T13:50:00+02:00",
+   "stato": "una_fonte",
+   "fonti": [
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/filippide-runners-ottobre-atleti-traguardo/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Sei atleti dell'ASD Filippide Runners hanno concluso una maratona a ottobre, tra Monaco di Baviera, Chicago e Napoli.",
+      "fonti": [
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Domenica 11 ottobre alla Marathon München, la 39ª edizione con 40.930 iscritti da 130 Paesi, Nicola Bianco ha chiuso in 2h44'29\": è il suo record personale e il primo tempo sotto le 2h45'. A Chicago, alla maratona, Luigi Tedesco ha corso in 2h54'11\": il giornale scrive che non è stata la gara sperata, perché il suo personale è molto più basso, ma finire una Major sotto le 3 ore resta un risultato di livello.",
+      "fonti": [
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Domenica 18 ottobre alla 6ª Neapolis Marathon di Napoli, con partenza e arrivo in piazza del Plebiscito e circa 8.000 atleti da quasi 100 Paesi (vinta dal keniano Joel Kipsang Kositany in 2h12'32\"), la società ha avuto quattro arrivi: Emidio Inglese in 3h14'02\", Vito Tozzi in 3h35'38\" (record personale), Andrea Accarino in 4h19'36\" e Fernando Palumbo in 4h43'25\", questi ultimi due al loro esordio in maratona.",
+      "fonti": [
+       "Cronache del Sannio"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Filippide Runners: da Monaco a Napoli e Chicago, ottobre da sogno con sei atleti al traguardo",
+      "url": "https://www.cronachedelsannio.it/sannionews24/filippide-runners-ottobre-atleti-traguardo/",
+      "data": "23 ott, 13:50"
+     }
+    ]
+   },
+   "rilevante": false
+  },
+  {
+   "id": "cusano-mutri-civitella-bus-air-deviati-sagra-castagna",
+   "titolo": "Cusano Mutri, sabato 24 e 31 ottobre i bus AIR non passano da Civitella per la Sagra della Castagna",
+   "titolo_google": "Cusano Mutri, bus AIR deviati a Civitella 24 e 31 ottobre",
+   "sintesi": "Sabato 24 e 31 ottobre, dalle 11 alle 24, le corse AIR delle linee EBN002 e EBN018 non passano dalla frazione Civitella di Cusano Mutri per la Sagra della Castagna.",
+   "categoria": "strade",
+   "zona": "telesina",
+   "luogo": "Cusano Mutri, frazione Civitella",
+   "pubblicato": "2026-10-23T11:56:00+02:00",
+   "in_vigore_fino": "2026-10-31",
+   "stato": "ufficiale",
+   "fonti": [
+    {
+     "nome": "AIR Campania",
+     "url": "https://aircampania.it/cusano-mutri-bn-frazione-di-civitella-deviazioni-temporanee/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il 24 e il 31 ottobre 2026, dalle 11 alle 24 di ogni giornata, le corse dei bus AIR Campania delle linee EBN002 «Pietraroja – Telese – Napoli» e EBN018 «Pietraroja – Cerreto – S. Lorenzo M. – Ponte – Benevento» non passano dalla frazione Civitella di Cusano Mutri.",
+      "fonti": [
+       "AIR Campania"
+      ]
+     },
+     {
+      "testo": "AIR spiega che la deviazione nasce da una comunicazione del Comune di Cusano Mutri sulla «Sagra della Castagna 2026». L'avviso non dice dove i bus si fermano al posto di Civitella.",
+      "fonti": [
+       "AIR Campania"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Dove si fermano i bus al posto di Civitella: l'avviso non lo dice."
+    ],
+    "fonti": [
+     {
+      "nome": "AIR Campania",
+      "titolo": "Cusano Mutri (BN), frazione di Civitella: deviazioni temporanee",
+      "url": "https://aircampania.it/cusano-mutri-bn-frazione-di-civitella-deviazioni-temporanee/",
+      "data": "23 ott, 11:56"
+     }
+    ]
+   },
+   "rilevante": false
+  },
+  {
+   "id": "air-campania-sciopero-28-ottobre",
+   "titolo": "Mercoledì 28 ottobre sciopero di 8 ore in AIR Campania: possibili riduzioni dei bus extraurbani",
+   "titolo_google": "AIR Campania, sciopero bus mercoledì 28 ottobre dalle 8 alle 16",
+   "sintesi": "Mercoledì 28 ottobre 2026 i lavoratori di AIR Campania, la società dei bus extraurbani, scioperano per 8 ore. Il servizio può ridursi, con corse garantite dalle 13 alle 15.",
+   "categoria": "strade",
+   "zona": "provincia",
+   "immagine": "autobus",
+   "luogo": "Campania, provincia di Benevento",
+   "pubblicato": "2026-10-23T11:29:00+02:00",
+   "in_vigore_fino": "2026-10-28",
+   "stato": "ufficiale",
+   "fonti": [
+    {
+     "nome": "AIR Campania",
+     "url": "https://aircampania.it/avviso-di-sciopero-avvpco/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Mercoledì 28 ottobre 2026 c'è uno sciopero di 8 ore dei lavoratori di AIR Campania, la società che gestisce i bus extraurbani della regione. L'ha proclamato un gruppo di sindacati regionali (FILT CGIL, FIT CISL, UILTRASPORTI, UGL FNA e FAISA CISAL), che con questo annunciano una seconda azione di sciopero.",
+      "fonti": [
+       "AIR Campania"
+      ]
+     },
+     {
+      "testo": "Il personale turnista e di esercizio si ferma dalle 8 alle 16, rispettando le fasce di garanzia, cioè le ore in cui il servizio deve essere assicurato: dalle 13 alle 15. Il resto del personale, quello non legato direttamente al trasporto delle persone, si ferma per l'intero turno di lavoro.",
+      "fonti": [
+       "AIR Campania"
+      ]
+     },
+     {
+      "testo": "AIR avvisa che durante lo sciopero «potrebbero verificarsi delle riduzioni di servizi». L'avviso vale per tutta l'azienda e non elenca le linee: chi viaggia da e per il Sannio può controllare gli avvisi sul sito aircampania.it.",
+      "fonti": [
+       "AIR Campania"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quali linee del Sannio avranno meno corse: l'avviso non lo dice.",
+     "Quando si è svolto o è stato proclamato il primo sciopero: l'avviso parla di una «seconda azione» ma non dà la data della prima."
+    ],
+    "fonti": [
+     {
+      "nome": "AIR Campania",
+      "titolo": "Avviso di sciopero",
+      "url": "https://aircampania.it/avviso-di-sciopero-avvpco/",
+      "data": "23 ott, 11:29"
+     }
+    ]
+   },
+   "rilevante": false,
+   "foto": "autobus-5"
+  },
+  {
+   "id": "busgo-nuove-linee-sannio-roma-fiumicino-perugia-camerino",
+   "titolo": "Dal 9 novembre BusGo collega il Sannio con Roma, Fiumicino, Perugia e Camerino con due nuove linee",
+   "titolo_google": "BusGo, dal 9 novembre bus Sannio-Roma, Fiumicino, Camerino",
+   "sintesi": "Da lunedì 9 novembre 2026 BusGo avvia due linee dal Sannio: Benevento–Camerino (lunedì e venerdì) e San Giorgio del Sannio–Fiumicino (martedì, mercoledì e giovedì). I biglietti si comprano online su busgo.it.",
+   "categoria": "altro",
+   "zona": "provincia",
+   "immagine": "autobus",
+   "luogo": "Benevento, San Giorgio del Sannio",
+   "pubblicato": "2026-10-23T13:41:00+02:00",
+   "stato": "una_fonte",
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/busgo-novembre-collegamenti-sannio-roma-fiumicino-perugia-camerino/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Da lunedì 9 novembre 2026 BusGo, un servizio di autobus a lunga percorrenza, avvia due nuove linee che collegano il Sannio con il Centro Italia: Roma, Fiumicino, Perugia e Camerino.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "La Benevento–Camerino va il lunedì e il venerdì. Parte da Benevento alle 5:00, ferma a Telese Terme, Dragoni, Caianello, Frosinone, Roma Tiburtina e Perugia e arriva a Camerino alle 11:50. Il ritorno parte da Camerino alle 14:00 e arriva a Benevento alle 21:05.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "La San Giorgio del Sannio–Fiumicino va il martedì, il mercoledì e il giovedì. Parte alle 5:20 da San Giorgio del Sannio, ferma a Benevento, Telese Terme, Dragoni, Caianello, Frosinone e Roma Tiburtina e arriva a Fiumicino alle 9:55. Il ritorno parte alle 16:35 e torna a San Giorgio del Sannio alle 21:20. La domenica pomeriggio c'è una corsa in più, con partenza da San Giorgio alle 17:20 e arrivo a Roma Tiburtina alle 20:55 e a Fiumicino alle 21:55.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "I biglietti si comprano e si prenotano sul sito www.busgo.it, scegliendo partenza, arrivo e giorno. Dopo il pagamento arriva un biglietto elettronico con un codice QR da mostrare al personale a bordo. Il giornale scrive che le linee possono servire in particolare gli studenti universitari fuori sede.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quanto costano i biglietti: l'articolo letto non dà i prezzi.",
+     "Dove si trovano le fermate nelle città: l'articolo elenca solo le località."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "BusGo, due nuove linee per collegare il Sannio al Centro Italia",
+      "url": "https://www.anteprima24.it/benevento/busgo-novembre-collegamenti-sannio-roma-fiumicino-perugia-camerino/",
+      "data": "23 ott, 13:41"
+     }
+    ]
+   },
+   "rilevante": false,
+   "foto": "autobus-3"
+  },
   {
    "id": "benevento-megaparcheggio-abbonamento-commercianti-confesercenti",
    "titolo": "Benevento, abbonamento mensile ridotto al Megaparcheggio di via del Pomerio per i commercianti",
@@ -401,21 +624,31 @@
    "immagine": "protesta",
    "luogo": "Telese Terme",
    "pubblicato": "2026-10-23T09:28:00+02:00",
-   "stato": "una_fonte",
+   "stato": "confermata",
    "rilevante": false,
    "in_vigore_fino": "2026-10-26",
    "fonti": [
     {
      "nome": "Anteprima24",
      "url": "https://www.anteprima24.it/benevento/gepos-licenziamenti-sindacati-conti-sit-in/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/gepos-cgil-uil-chiarezza-licenziamenti-nuove-assunzioni/"
+    },
+    {
+     "nome": "Fremondoweb",
+     "url": "https://www.fremondoweb.com/notizie-dalla-valle-telesina/gepos-nuovo-licenziamento-a-telese-i-sindacati-chiedono-chiarezza-sui-conti-e-sulle-assunzioni/"
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Alla clinica Gepos di Telese Terme c'è un nuovo licenziamento: secondo Anteprima24 a perdere il posto sarebbe una cuoca della cucina. La notizia non è ancora confermata ufficialmente. I sindacati FP CGIL e UIL FP, che seguono la vertenza, hanno diffuso una nota per chiedere chiarezza sui conti dell'azienda e sulle scelte fatte sul personale.",
+      "testo": "Alla clinica Gepos di Telese Terme c'è un nuovo licenziamento: secondo FP CGIL e UIL FP, che lo riferiscono in una nota ripresa da Anteprima24, Cronache del Sannio e Fremondoweb, a perdere il posto sarebbe una cuoca della cucina. Il licenziamento non è confermato ufficialmente dall'azienda.",
       "fonti": [
-       "Anteprima24"
+       "Anteprima24",
+       "Cronache del Sannio",
+       "Fremondoweb"
       ]
      },
      {
@@ -459,7 +692,16 @@
       ]
      }
     ],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "Il nuovo licenziamento di una cuoca, la richiesta di chiarezza sui conti (una cifra vicina ai sette milioni di euro, tra perdita ed esposizione debitoria) e il sit-in del 26 ottobre dalle 10 alle 13.",
+      "fonti": [
+       "Anteprima24",
+       "Cronache del Sannio",
+       "Fremondoweb"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [
      "Se il licenziamento della cuoca sia confermato dall'azienda.",
@@ -472,6 +714,18 @@
       "titolo": "Gepos, licenziamenti e presunte nuove assunzioni: i sindacati chiedono risposte",
       "url": "https://www.anteprima24.it/benevento/gepos-licenziamenti-sindacati-conti-sit-in/",
       "data": "23 ott, 09:28"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Gepos, Fp Cgil e Uil Fp: “Chiarezza su licenziamenti e nuove assunzioni”",
+      "url": "https://www.cronachedelsannio.it/sannionews24/gepos-cgil-uil-chiarezza-licenziamenti-nuove-assunzioni/",
+      "data": "23 ott, 09:43"
+     },
+     {
+      "nome": "Fremondoweb",
+      "titolo": "Gepos, nuovo licenziamento a Telese: i sindacati chiedono chiarezza sui conti e sulle assunzioni",
+      "url": "https://www.fremondoweb.com/notizie-dalla-valle-telesina/gepos-nuovo-licenziamento-a-telese-i-sindacati-chiedono-chiarezza-sui-conti-e-sulle-assunzioni/",
+      "data": "23 ott, 13:34"
      }
     ]
    },
@@ -1721,12 +1975,12 @@
    "id": "benevento-calcio-arezzo-24-ottobre-catanzaro-27-ottobre-biglietti",
    "titolo": "Benevento Calcio: sabato 24 ottobre ad Arezzo, martedì 27 al Vigorito con il Catanzaro, via alla prevendita",
    "titolo_google": "Benevento Calcio: Arezzo sabato, Catanzaro martedì, biglietti",
-   "sintesi": "Il Benevento gioca sabato 24 ottobre alle 19:30 ad Arezzo (arbitro Fourneau) e martedì 27 alle 19:00 al Vigorito con il Catanzaro. Biglietti solo nei punti vendita ETES autorizzati, non online. Giovedì 22 alle 18:08 i biglietti emessi per il Catanzaro erano 249, di cui 210 per gli ospiti.",
+   "sintesi": "Il Benevento gioca sabato 24 ottobre alle 19:30 ad Arezzo e martedì 27 alle 19:00 al Vigorito con il Catanzaro. Per Arezzo Floro Flores ha convocato 24 giocatori: torna Sernicola, fuori Talia e Schimmenti. Biglietti solo nei punti vendita ETES.",
    "categoria": "sport",
    "zona": "benevento",
    "luogo": "Benevento",
-   "pubblicato": "2026-10-22T18:23:00+02:00",
-   "stato": "una_fonte",
+   "pubblicato": "2026-10-23T13:31:00+02:00",
+   "stato": "ufficiale",
    "rilevante": false,
    "fonti": [
     {
@@ -1736,10 +1990,37 @@
     {
      "nome": "TV7 Benevento (Arezzo)",
      "url": "https://www.tvsette.net/serie-bkt-2026-2027-arezzo-benevento-dirige-fourneau/"
+    },
+    {
+     "nome": "Benevento Calcio",
+     "url": "https://www.beneventocalcio.club/news/notizie/7666/serie-bkt-2026-2027-arezzo-benevento-i-convocati-di-mister-floro-flores.shtml"
+    },
+    {
+     "nome": "BeneventoNews24 (convocati)",
+     "url": "https://www.beneventonews24.it/2026/10/23/arezzo-benevento-i-convocati-di-floro-flores-torna-sernicola-out-talia-e-schimmenti/"
+    },
+    {
+     "nome": "Cronache del Sannio (Floro Flores)",
+     "url": "https://www.cronachedelsannio.it/sannionews24/benevento-floro-flores-arezzo-difficolta/"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Venerdì 23 ottobre, dopo l'ultimo allenamento, il Benevento ha diramato i 24 convocati di Antonio Floro Flores per Arezzo-Benevento, ottava giornata di Serie B. Torna Leonardo Sernicola, rimasto fuori per la parotite. Saio è convocato ma non giocherà dall'inizio per l'affaticamento di questa settimana. Restano fuori l'infortunato Sylla (al suo posto è convocato Mandato), Talia e Schimmenti, anche se Schimmenti è tornato ad allenarsi con la squadra.",
+      "fonti": [
+       "Benevento Calcio",
+       "BeneventoNews24 (convocati)"
+      ],
+      "giorno": "2026-10-23"
+     },
+     {
+      "testo": "Nella conferenza della vigilia Floro Flores ha detto che Arezzo, dove ha giocato e dove sono nati i suoi figli, è stata una tappa fondamentale della sua carriera, ma che ora pensa solo al Benevento e vuole vincere. Ha avvertito che l'Arezzo ha un solo punto meno dei giallorossi e che sottovalutarlo sarebbe un errore. Con tre partite in una settimana darà spazio a chi ha giocato meno, soprattutto dalla gara di martedì; la formazione di sabato non l'ha ancora decisa.",
+      "fonti": [
+       "Cronache del Sannio (Floro Flores)"
+      ],
+      "giorno": "2026-10-23"
+     },
      {
       "testo": "Giovedì 22 ottobre alle 18:08 i biglietti emessi per Benevento-Catanzaro erano 249: 39 per il settore locali e 210 per il settore ospiti, riservato ai tifosi calabresi. Per la trasferta di Arezzo i tagliandi venduti nel settore ospiti erano 151. Mercoledì 21 alle 18:05 erano appena 9, secondo i dati diffusi da TV7.",
       "fonti": [
@@ -1783,6 +2064,13 @@
       "fonti": [
        "TV7 Benevento (22/10)"
       ]
+     },
+     {
+      "data": "23 ottobre",
+      "fatto": "Floro Flores diffonde i 24 convocati per Arezzo: torna Sernicola, fuori Talia e Schimmenti.",
+      "fonti": [
+       "Benevento Calcio"
+      ]
      }
     ],
     "concordano": [],
@@ -1808,14 +2096,33 @@
       "titolo": "Calcio. Benevento-Catanzaro, 249 biglietti emessi: 210 per il settore ospiti",
       "url": "https://www.tvsette.net/calcio-benevento-catanzaro-249-biglietti-emessi-210-per-il-settore-ospiti/",
       "data": "22 ott, 18:23"
+     },
+     {
+      "nome": "Benevento Calcio",
+      "titolo": "SERIE BKT 2026-2027: AREZZO-BENEVENTO I CONVOCATI DI MISTER FLORO FLORES",
+      "url": "https://www.beneventocalcio.club/news/notizie/7666/serie-bkt-2026-2027-arezzo-benevento-i-convocati-di-mister-floro-flores.shtml",
+      "data": "23 ott, 13:10"
+     },
+     {
+      "nome": "BeneventoNews24 (convocati)",
+      "titolo": "Arezzo-Benevento, i convocati di Floro Flores: torna Sernicola, out Talia e Schimmenti",
+      "url": "https://www.beneventonews24.it/2026/10/23/arezzo-benevento-i-convocati-di-floro-flores-torna-sernicola-out-talia-e-schimmenti/",
+      "data": "23 ott, 13:31"
+     },
+     {
+      "nome": "Cronache del Sannio (Floro Flores)",
+      "titolo": "Benevento, Floro Flores: “L’Arezzo non è affatto in difficoltà”",
+      "url": "https://www.cronachedelsannio.it/sannionews24/benevento-floro-flores-arezzo-difficolta/",
+      "data": "23 ott, 12:21"
      }
     ],
     "aggiornamento": {
-     "testo": "Giovedì 22 ottobre alle 18:08 i biglietti emessi per Benevento-Catanzaro erano 249 (39 locali, 210 ospiti); 151 quelli venduti per il settore ospiti di Arezzo.",
+     "testo": "Venerdì 23 ottobre il Benevento ha convocato 24 giocatori per Arezzo: torna Sernicola dopo la parotite, mentre sono fuori Talia, Schimmenti e l'infortunato Sylla; Saio c'è ma non giocherà dal 1' per un affaticamento.",
      "fonti": [
-      "TV7 Benevento (22/10)"
+      "Benevento Calcio",
+      "BeneventoNews24 (convocati)"
      ],
-     "quando": "2026-10-22T19:09+02:00"
+     "quando": "2026-10-23T14:11+02:00"
     }
    },
    "sport": "calcio",
@@ -5055,6 +5362,10 @@
     {
      "nome": "Lab TV",
      "url": "https://www.labtv.net/attualita/2026/10/20/protesta-autotrasportatori-stop-a-conferimento-rifiuti-tessili-e-ingombranti/"
+    },
+    {
+     "nome": "Gazzetta di Benevento (23/10)",
+     "url": "https://www.gazzettabenevento.it/it/con-il-graduale-rientro-della-protesta-degli-autotrasportatori-asia-comunica-che-partire-da-lunedi"
     }
    ],
    "articolo": {
@@ -5156,13 +5467,20 @@
       "titolo": "Protesta autotrasportatori, stop a conferimento rifiuti tessili e ingombranti",
       "url": "https://www.labtv.net/attualita/2026/10/20/protesta-autotrasportatori-stop-a-conferimento-rifiuti-tessili-e-ingombranti/",
       "data": "20 ott"
+     },
+     {
+      "nome": "Gazzetta di Benevento (23/10)",
+      "titolo": "Con il graduale rientro della protesta degli autotrasportatori, Asia comunica che, a partire da lunedì 26 ottobre, torneranno pienamente operativi tutti i servizi",
+      "url": "https://www.gazzettabenevento.it/it/con-il-graduale-rientro-della-protesta-degli-autotrasportatori-asia-comunica-che-partire-da-lunedi",
+      "data": "23 ott, 12:53"
      }
     ],
     "racconto": [
      {
       "testo": "Da lunedì 26 ottobre tornano pienamente operativi tutti i servizi dell'Asia, perché la protesta degli autotrasportatori sta rientrando poco alla volta. L'ecocentro di contrada Fontana Margiacca riapre ai cittadini dal lunedì al sabato, dalle 11 alle 18.",
       "fonti": [
-       "NTR24 (23/10)"
+       "NTR24 (23/10)",
+       "Gazzetta di Benevento (23/10)"
       ],
       "giorno": "2026-10-23"
      },
@@ -5928,6 +6246,10 @@
     {
      "nome": "Anteprima24 (23/10)",
      "url": "https://www.anteprima24.it/benevento/protesta-statale-87-agricoltori-tir/"
+    },
+    {
+     "nome": "Lab TV (23/10)",
+     "url": "https://www.labtv.net/attualita/2026/10/23/benevento-agricoltori-e-autotrasportatori-ancora-in-protesta-sulla-ss-87-gli-aiuti-non-bastano/"
     }
    ],
    "articolo": {
@@ -6143,6 +6465,13 @@
        "BeneventoNews24",
        "Il Mattino"
       ]
+     },
+     {
+      "testo": "Sul traffico di venerdì mattina sulla statale 87 le fonti non coincidono: Ottopagine scrive di traffico rallentato con file di camion e trattori nei due sensi, Lab TV di una manifestazione pacifica «senza blocchi stradali né rallentamenti». Per Ottopagine la protesta è durata ore.",
+      "fonti": [
+       "Ottopagine (23/10)",
+       "Lab TV (23/10)"
+      ]
      }
     ],
     "non_si_sa": [
@@ -6336,14 +6665,21 @@
       "titolo": "Statale 87, resta il presidio di agricoltori e tir: “Fondi insufficienti”",
       "url": "https://www.anteprima24.it/benevento/protesta-statale-87-agricoltori-tir/",
       "data": "23 ott, 11:18"
+     },
+     {
+      "nome": "Lab TV (23/10)",
+      "titolo": "Benevento, agricoltori e autotrasportatori ancora in protesta sulla SS 87: «Gli aiuti non bastano»",
+      "url": "https://www.labtv.net/attualita/2026/10/23/benevento-agricoltori-e-autotrasportatori-ancora-in-protesta-sulla-ss-87-gli-aiuti-non-bastano/",
+      "data": "23 ott, 11:57"
      }
     ],
     "racconto": [
      {
-      "testo": "Venerdì 23 ottobre mattina agricoltori e autotrasportatori del Sannio sono tornati a protestare per ore lungo la statale 87 Benevento-Campobasso, con camion e trattori in fila nei due sensi e traffico rallentato. Dicono: «Non siamo soddisfatti delle misure messe in campo dal governo. Ci sentiamo presi in giro». Secondo Ottopagine, mentre in Campania si va verso la fine delle proteste, nel Sannio la protesta continua.",
+      "testo": "Venerdì 23 ottobre mattina agricoltori e autotrasportatori del Sannio sono tornati a protestare per ore lungo la statale 87 Benevento-Campobasso, con camion e trattori in fila nei due sensi e traffico rallentato. Dicono: «Non siamo soddisfatti delle misure messe in campo dal governo. Ci sentiamo presi in giro». Secondo Ottopagine, mentre in Campania si va verso la fine delle proteste, nel Sannio la protesta continua. Lab TV aggiunge che al presidio di Benevento c'è anche il segretario della Filt Cgil Avellino-Benevento, Giuseppe Anzalone, e che i controlli sono di Polizia, Guardia di Finanza e Carabinieri.",
       "fonti": [
        "Ottopagine (23/10)",
-       "Anteprima24 (23/10)"
+       "Anteprima24 (23/10)",
+       "Lab TV (23/10)"
       ],
       "giorno": "2026-10-23"
      },
