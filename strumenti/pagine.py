@@ -583,6 +583,82 @@ def immagine_chiusure(sito, dati, adesso):
     return {rel}
 
 
+# ---------- strade chiuse: le notizie con «traffico» (AGENTE.md) ----------
+TRAFFICO = {"chiusa": "Strada chiusa", "blocchi": "Blocchi", "senso_unico": "Senso unico",
+            "ristretta": "Carreggiata ristretta", "bus": "Bus deviati"}   # dal disagio più forte
+GIORNI_SENZA_FINE = 3   # senza data di fine resta 3 giorni dall'ultima novità, come in prima pagina
+
+
+def strade_chiuse(notizie, oggi):
+    """(in vigore oggi, dei prossimi giorni): le notizie della prima pagina con «traffico» non ancora finite."""
+    o, soglia = oggi.isoformat(), (oggi - dt.timedelta(days=GIORNI_SENZA_FINE - 1)).isoformat()
+    ora, poi = [], []
+    for n in sorted(notizie, key=lambda n: str(n.get("pubblicato") or ""), reverse=True):
+        if n.get("traffico") not in TRAFFICO or n.get("_arch"):
+            continue
+        fino, dal = str(n.get("in_vigore_fino") or ""), str(n.get("in_vigore_dal") or "")
+        ag = str(((n.get("articolo") or {}).get("aggiornamento") or {}).get("quando") or "")
+        if fino and fino < o:
+            continue
+        if not fino and max(str(n.get("pubblicato") or "")[:10], ag[:10], dal) < soglia:
+            continue
+        (poi if dal > o else ora).append(n)
+    peso = list(TRAFFICO)
+    ora.sort(key=lambda n: (not n.get("rilevante"), peso.index(n["traffico"])))
+    poi.sort(key=lambda n: (n["in_vigore_dal"], peso.index(n["traffico"])))
+    return ora, poi
+
+
+def _quando_strada(n, oggi):
+    """«fino a venerdì 30 ottobre», «da sabato 31 ottobre a lunedì 2 novembre», «solo domani», «fine non annunciata»."""
+    def g(x):
+        d = dt.date.fromisoformat(x)
+        return "oggi" if d == oggi else "domani" if d == oggi + dt.timedelta(days=1) else \
+            f"{GIORNI[d.weekday()]} {d.day} {MESI_LUNGHI[d.month - 1]}"
+    o, dal, fino = oggi.isoformat(), n.get("in_vigore_dal"), n.get("in_vigore_fino")
+    if dal and dal > o:
+        if fino == dal:
+            return f"solo {g(dal)}"
+        return f"da {g(dal)} " + (f"a {g(fino)}" if fino else "(fine non annunciata)")
+    if fino == o:
+        return "solo oggi" if dal == o else "fino a oggi"
+    return f"fino a {g(fino)}" if fino else "fine non annunciata"
+
+
+def _voci_strade(voci, oggi):
+    h = '<ul class="notizie-comune">'
+    for n in voci:
+        f = next((x for x in n.get("fonti") or [] if str(x.get("url") or "").startswith("http")), None)
+        h += (f'<li><div class="occhiello">{e(TRAFFICO[n["traffico"]])}</div>'
+              f'<a href="{percorso("notizia", n["id"])}">{e(n["titolo"])}</a><span class="dove">'
+              + (f"{_luogo_link(n['luogo'])} · " if n.get("luogo") else "") + e(_quando_strada(n, oggi))
+              + (f' · <a href="{e(f["url"])}" target="_blank" rel="noopener nofollow">{e(f.get("nome") or "Fonte")}</a>'
+                 if f else "") + "</span></li>")
+    return h + "</ul>"
+
+
+def html_strade_chiuse(ora, poi, oggi, aggiornato):
+    h = _testata_pagina("Strade", "", "Strade chiuse a Benevento e nel Sannio")
+    h += ('<p class="sommario">Le strade chiuse, i sensi unici, i lavori che restringono la strada, i blocchi e i bus '
+          "deviati a Benevento e in provincia, oggi e nei prossimi giorni. Ogni voce porta alla notizia con le fonti: "
+          "ordinanze dei Comuni, comunicati dell'ANAS e della Provincia, giornali locali.</p>")
+    t = quando_dt(aggiornato)
+    if t:
+        from facebook import fuso
+        t = t.astimezone(fuso())
+        h += (f'<p class="agg-chiusure">Aggiornato alle {t:%H:%M} di {GIORNI[t.weekday()]} {t.day} '
+              f'{MESI_LUNGHI[t.month - 1]}.</p>')
+    h += f"<h3>{e(_giorno_chiusura(oggi.isoformat(), oggi))}</h3>"
+    h += _voci_strade(ora, oggi) if ora else "<p>Nessuna strada chiusa o con lavori annunciata per oggi.</p>"
+    if poi:
+        h += "<h3>Nei prossimi giorni</h3>" + _voci_strade(poi, oggi)
+    h += ('<p class="agg-chiusure">Ogni ora leggiamo le ordinanze dei Comuni, i comunicati dell\'ANAS e della '
+          "Provincia e i giornali locali. Le date sono quelle annunciate: un cantiere può finire prima o durare di più.</p>")
+    h += '<p class="collegate"><a href="/sezione/strade/">Tutte le notizie sulle strade ›</a></p>'
+    h += SEGUI
+    return f'<article class="appro">{h}</article>'
+
+
 def _racconto(righe, fonti):
     """Storia di più giorni: sopra i paragrafi di ogni giorno la sua data (come disegna index.html)."""
     piu_giorni = len({r.get("giorno") for r in righe if isinstance(r, dict) and r.get("giorno")}) > 1
@@ -1232,8 +1308,21 @@ def main():
                   html_scuole_chiuse(chius, adesso.astimezone(fuso()).date()), articolo=True))
     mappa.append((url, chius.get("aggiornato")))
 
-    # i Comuni: una pagina per ognuno (Benevento ha zona/benevento) e l'elenco comuni/
+    # le strade chiuse: le notizie con «traffico» (AGENTE.md); la pagina c'è sempre, anche vuota
     oggi = adesso.astimezone(fuso()).date()
+    url = SITO + "/strade-chiuse/"
+    seo = blocco_seo(f"Strade chiuse oggi a Benevento e nel Sannio – {NOME}", "Strade chiuse, sensi unici, lavori e "
+                     "bus deviati a Benevento e in provincia, oggi e nei prossimi giorni, con le ordinanze dei Comuni e "
+                     "i comunicati ANAS. Aggiornato ogni ora.", url, "/condivisione.png",
+                     jsonld={"@context": "https://schema.org", "@type": "WebPage", "name": "Strade chiuse nel Sannio",
+                             "url": url, "isPartOf": {"@type": "WebSite", "name": NOME, "url": SITO + "/"}})
+    ora, poi = strade_chiuse(notizie, oggi)
+    scrivi(os.path.join(sito, "strade-chiuse", "index.html"),
+           pagina(modello, seo, {"statica": True}, html_strade_chiuse(ora, poi, oggi, prima.get("aggiornato")),
+                  articolo=True))
+    mappa.append((url, prima.get("aggiornato")))
+
+    # i Comuni: una pagina per ognuno (Benevento ha zona/benevento) e l'elenco comuni/
     try:
         allerte = leggi(os.path.join(sito, "meteo.json")).get("allerte") or {}
     except (OSError, ValueError):   # meteo.json lo fa meteo.py nello stesso giro: senza, la pagina non ha l'allerta
@@ -1364,7 +1453,7 @@ def main():
             json.dump(cambiate[:10000], f)
         print(f"IndexNow: {len(cambiate)} pagine cambiate")
     print(f"OK pagine: {len(notizie)} notizie, {len(appro)} approfondimenti, {len(eventi)} eventi, {len(SEZIONI)} sezioni e zone, "
-          f"{len(COMUNI_BN) - 1} Comuni ({indicizzate} per Google); "
+          f"{len(COMUNI_BN) - 1} Comuni ({indicizzate} per Google), strade chiuse {len(ora)} oggi e {len(poi)} poi; "
           f"{len(usate)} immagini; sitemap {len(mappa)} indirizzi")
 
 

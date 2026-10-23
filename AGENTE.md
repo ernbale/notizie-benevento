@@ -495,6 +495,8 @@ aggiorni a ogni giro, come notizie.json.
     "luogo": "paese o località", "pubblicato": "ISO dell'articolo fonte più recente, oppure solo AAAA-MM-GG se l'ora non è scritta",
     "stato": "confermata|ufficiale|una_fonte (vedi regola 2)", "rilevante": false,
     "in_vigore_fino": "AAAA-MM-GG, solo per avvisi ufficiali con una scadenza (lavori, divieti, ordinanze)",
+    "in_vigore_dal": "AAAA-MM-GG, il primo giorno dell'avviso (facoltativo; serve quando comincia più avanti)",
+    "traffico": "chiusa|blocchi|senso_unico|ristretta|bus, solo per strade chiuse o con disagi (vedi sotto)",
     "fonti": [ {"nome": "Testata", "url": "link all'articolo"} ],
     "nota": "solo se serve una correzione",
     "articolo": {
@@ -527,6 +529,15 @@ aggiorni a ogni giro, come notizie.json.
 - Per gli **avvisi ufficiali con una scadenza** (strade chiuse, lavori, divieti, ordinanze su scuole o acqua) scrivi
   `in_vigore_fino` con la data presa dal comunicato: restano in prima pagina finché vale l'avviso. Se il comunicato
   non dà una fine, non mettere il campo.
+- **Strade chiuse e disagi al traffico** (qualunque categoria, di solito `strade`): scrivi anche `traffico`, il
+  disagio più forte in quest'ordine: `chiusa` (strada, incrocio, ponte o passaggio a livello chiusi, anche per poche
+  ore), `blocchi` (presidi, cortei o mezzi fermi che bloccano la strada), `senso_unico` (senso unico, anche alternato),
+  `ristretta` (cantiere che restringe la strada), `bus` (linee deviate o fermate saltate per lavori o eventi). Se
+  l'avviso comincia in un giorno dopo, scrivi `in_vigore_dal` (il primo giorno, AAAA-MM-GG). Queste notizie fanno la
+  pagina «Strade chiuse» del sito (notiziebenevento.it/strade-chiuse/): oggi e prossimi giorni, ognuna fino a
+  `in_vigore_fino`; senza fine annunciata ci restano 3 giorni dall'ultima novità. **Niente `traffico`** per i soli
+  divieti di sosta, i limiti di velocità, gli scioperi, i lavori finiti o una strada riaperta. Quando una strada
+  riapre o un blocco finisce, nell'aggiornamento togli `traffico` (esce dalla pagina) e `rilevante`.
 
 ## Archivio: nessuna notizia si cancella
 

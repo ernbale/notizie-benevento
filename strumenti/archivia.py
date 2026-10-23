@@ -31,6 +31,7 @@ SPORT = {"calcio", "calcio_a_5", "basket", "pallavolo", "rugby", "scherma", "atl
 UNA_FONTE_CAT = ("cronaca", "strade", "altro", "politica", "sport")   # regola 2 (politica dal 22 ott 2026, con la regola 9)
 ZONE = {"benevento", "telesina", "caudina", "fortore", "provincia"}
 STATI = {"confermata", "ufficiale", "una_fonte"}
+TRAFFICO = {"chiusa", "blocchi", "senso_unico", "ristretta", "bus"}   # la pagina «Strade chiuse» (pagine.py)
 # le testate che da sole bastano per la cronaca (regola 2 di AGENTE.md), scritte senza spazi né maiuscole
 AUTOREVOLI = {"ilmattino", "ilsannioquotidiano", "ntr24", "ottopagine", "anteprima24", "labtv", "cronachedelsannio",
               "beneventonews24", "tv7benevento"}
@@ -622,6 +623,13 @@ def controlla(d, err, avv, adesso=None):
             err.append(f"{w}: pubblicato è nel futuro ({n['pubblicato']})")
         if "in_vigore_fino" in n and not GIORNO.match(str(n.get("in_vigore_fino"))):
             err.append(f"{w}: in_vigore_fino deve essere AAAA-MM-GG")
+        if "in_vigore_dal" in n and not GIORNO.match(str(n.get("in_vigore_dal"))):
+            err.append(f"{w}: in_vigore_dal deve essere AAAA-MM-GG")
+        elif n.get("in_vigore_dal") and str(n.get("in_vigore_fino") or "9") < n["in_vigore_dal"]:
+            err.append(f"{w}: in_vigore_dal ({n['in_vigore_dal']}) è dopo in_vigore_fino ({n['in_vigore_fino']})")
+        if "traffico" in n and n["traffico"] not in TRAFFICO:
+            err.append(f"{w}: traffico non ammesso {n['traffico']!r}: uno di {', '.join(sorted(TRAFFICO))} "
+                       "(oppure togli il campo)")
         tg = str(n.get("titolo_google") or "")
         if not tg.strip():
             avv.append(f"{w}: manca titolo_google (Google mostrerà il titolo lungo tagliato)")
@@ -911,6 +919,8 @@ def main():
         if giorno >= soglia_pp:
             restano.append(n)
         elif n.get("in_vigore_fino") and n["in_vigore_fino"] >= oggi.isoformat():
+            restano.append(n)
+        elif n.get("in_vigore_dal") and n["in_vigore_dal"] >= soglia_pp:   # comincia più avanti: aspetta il suo giorno
             restano.append(n)
         elif n["id"] in collegate_attive:
             restano.append(n)

@@ -225,6 +225,10 @@
   .appro .notizie-comune a:hover { text-decoration: underline; }
   .appro .notizie-comune .dove { display: block; font: 600 12.5px var(--sans); color: var(--grigio); margin-top: 3px; }
   .appro .notizie-comune p { margin: 4px 0 0; font-size: 17px; line-height: 1.5; }
+  /* pagina «Strade chiuse» (strade-chiuse/, strumenti/pagine.py): il tipo di disagio sopra il titolo, come l'occhiello */
+  .appro .notizie-comune .occhiello { margin: 0 0 3px; }
+  .appro .notizie-comune .dove a { font: inherit; color: inherit; text-decoration: underline; }
+  .link-tutte { display: block; margin: 10px 0 0; font: 600 13px var(--sans); color: var(--blu); }
   .appro .elenco-comuni { list-style: none; padding: 0; columns: 2; column-gap: 24px; }
   @media (min-width: 640px) { .appro .elenco-comuni { columns: 3; } }
   .appro .elenco-comuni li { font: 500 16px/1.9 var(--sans); break-inside: avoid; }
@@ -508,7 +512,7 @@
     <p>Notizie Benevento è un report automatico: le notizie appartengono ai giornali citati. Qui le raccontiamo con parole nostre, confrontando le fonti, con i link agli articoli originali.</p>
     <p>Una notizia compare se la riportano almeno due testate diverse oppure una fonte ufficiale (Comuni, Regione, Prefettura, Questura e forze dell'ordine, ASL, ANAS, INGV, le società dell'acqua, dei treni e dei bus). La cronaca riportata da un solo giornale autorevole porta la scritta «Una sola fonte». Le accuse sono riportate con le parole usate dai giornali. Aggiornato ogni ora, dalle 6 alle 22. Le visite si contano in forma anonima, senza cookie.</p>
     <p>Nessuna notizia viene cancellata: quando esce dalla prima pagina resta nell'<a href="#archivio">archivio</a>, allo stesso indirizzo.</p>
-    <p class="sezioni-link">Sezioni: <a href="/sezione/strade/">Strade</a> · <a href="/sezione/cronaca/">Cronaca</a> · <a href="/sezione/politica/">Politica</a> · <a href="/sezione/sport/">Sport</a> · <a href="/sezione/eventi/">Eventi</a> · <a href="/sezione/allerte/">Allerte</a> · <a href="/sezione/altro/">Altro</a> · <a href="/meteo.html">Meteo Benevento</a><br>
+    <p class="sezioni-link">Sezioni: <a href="/sezione/strade/">Strade</a> · <a href="/sezione/cronaca/">Cronaca</a> · <a href="/sezione/politica/">Politica</a> · <a href="/sezione/sport/">Sport</a> · <a href="/sezione/eventi/">Eventi</a> · <a href="/sezione/allerte/">Allerte</a> · <a href="/sezione/altro/">Altro</a> · <a href="/meteo.html">Meteo Benevento</a> · <a href="/strade-chiuse/">Strade chiuse oggi</a><br>
       Zone: <a href="/zona/benevento/">Benevento città</a> · <a href="/zona/valle-telesina/">Valle Telesina</a> · <a href="/zona/valle-caudina/">Valle Caudina</a> · <a href="/zona/fortore/">Fortore e Tammaro</a> · <a href="/zona/altri-comuni/">Altri comuni</a> · <a href="/comuni/">Tutti i Comuni</a> · <a href="/feed.xml">Feed RSS</a></p>
     <p class="sezioni-link"><a href="/chi-siamo/">Chi siamo</a> · Seguici su <a href="https://www.instagram.com/notiziebenevento.it/" target="_blank" rel="noopener">Instagram</a>, <a href="https://www.facebook.com/notiziebenevento" target="_blank" rel="noopener">Facebook</a> e <a href="https://t.me/notiziebenevento" target="_blank" rel="noopener">Telegram</a></p>
   </footer>
@@ -1021,12 +1025,28 @@
       var a = el("a", "", [n.titolo]);
       a.href = linkArticolo(n);
       li.appendChild(a);
-      var fino = n.in_vigore_fino ? "fino al " + new Date(n.in_vigore_fino + "T12:00:00Z").toLocaleDateString("it-IT", { timeZone: TZ, day: "numeric", month: "long" }) : quando(n.pubblicato);
-      li.appendChild(el("span", "dove", [(NOMI_CAT[n.categoria] || "") + " · " + (n.luogo ? n.luogo + " · " : "") + fino]));
+      var dal = n.in_vigore_dal > oggiTZ() ? n.in_vigore_dal : "", fino = n.in_vigore_fino;
+      var stessoMese = dal && fino && dal.slice(0, 7) === fino.slice(0, 7);   // «dal 24 al 31 ottobre»
+      var quandoVale = dal ? (fino === dal ? "solo " + conData("", dal) : (stessoMese ? conData("da", dal).replace(/ [a-z]+$/, "") : conData("da", dal)) + (fino ? " " + conData("a", fino) : ""))
+        : fino ? conData("fino a", fino) : quando(n.pubblicato);
+      li.appendChild(el("span", "dove", [(NOMI_CAT[n.categoria] || "") + " · " + (n.luogo ? n.luogo + " · " : "") + quandoVale]));
       ul.appendChild(li);
     });
     sez.appendChild(ul);
+    if (avvisi.some(function (n) { return n.traffico; })) sez.appendChild(linkTutte("/strade-chiuse/", "Tutte le strade chiuse ›"));
     return sez;
+  }
+  function oggiTZ() { return new Date().toLocaleDateString("sv-SE", { timeZone: TZ }); }
+  // «fino al 30 ottobre», «dall'8 novembre», «al 1° novembre»; senza preposizione «il 24 ottobre», «l'11 novembre»
+  function conData(prep, giorno) {
+    var d = new Date(giorno + "T12:00:00Z"), g = d.getUTCDate(), elisa = g === 8 || g === 11;
+    var art = prep ? prep + (elisa ? "ll'" : "l ") : (elisa ? "l'" : "il ");
+    return art + (g === 1 ? "1°" : g) + " " + d.toLocaleDateString("it-IT", { timeZone: "UTC", month: "long" });
+  }
+  function linkTutte(href, etichetta) {
+    var a = el("a", "link-tutte", [etichetta]);
+    a.href = href;
+    return a;
   }
 
   var NUBE = "M18 48h28a10 10 0 0 0 1.5-19.9A13 13 0 0 0 22.6 27 9.5 9.5 0 0 0 18 48z";
@@ -1125,6 +1145,7 @@
 
   function disegnaHome(box) {
     if (FISSA && FISSA.h1 && filtroCat === (FISSA.cat || "") && filtroZona === (FISSA.zona || "")) box.appendChild(el("h1", "titolo-sezione", [FISSA.h1]));
+    if (filtroCat === "strade") box.appendChild(linkTutte("/strade-chiuse/", "Le strade chiuse oggi e nei prossimi giorni ›"));
     var lista = filtrate();
     if (filtroCat === "sport") box.appendChild(scelteSport());
     if (filtroCat === "eventi") {
