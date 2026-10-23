@@ -106,7 +106,7 @@ jobs:
           FB_SUBITO: ${{ github.event.inputs.facebook_subito || '0' }}
         run: python3 strumenti/facebook.py || echo "::warning::Facebook non ha pubblicato (vedi l'avviso sopra)"
 
-      - name: Instagram (una notizia ogni ora e mezza, se è il momento)
+      - name: Instagram (una notizia ogni ora e mezza e il riepilogo della sera, se è il momento)
         env:
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
         run: python3 strumenti/instagram.py || echo "::warning::Instagram non ha pubblicato (vedi l'avviso sopra)"

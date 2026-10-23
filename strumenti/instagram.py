@@ -7,6 +7,10 @@ Lo esegue GitHub dopo ogni pubblicazione del sito, come facebook.py, che ne è i
 - L'immagine è img/ig/<id>.jpg (1080×1350, la fa pagine.py): titolo grande e, se c'è, la foto illustrativa con la
   scritta che è fatta con l'intelligenza artificiale. Instagram la scarica dal sito, che deve essere già online.
 - Cosa è già uscito lo legge da Instagram stesso (il link della notizia scritto nella didascalia).
+- Dalle RIEPILOGO_DALLE, come ultimo post del giorno, il riepilogo della giornata («Il Sannio oggi»): un carosello con
+  la copertina e le immagini delle notizie più importanti uscite oggi. La scelta e la copertina le fa pagine.py
+  (img/ig/oggi.json), così sul sito c'è già tutto quando Instagram scarica le immagini. Prima delle 19 un posto del
+  giorno resta libero per il riepilogo.
 - La chiave è la stessa della Pagina (segreto FB_PAGE_TOKEN), con i permessi instagram_basic e
   instagram_content_publish. Senza account Instagram collegato alla Pagina non fa niente.
 
@@ -23,11 +27,27 @@ import time
 import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from facebook import PAGINA, SITO, candidate, chiama, fuso   # stessa chiave, stessa scelta delle notizie
+from facebook import PAGINA, SITO, candidate, chiama, fuso, quando, rilievo   # stessa chiave, stessa scelta
 
 MAX_GIORNO = 8
 PAUSA_MINUTI = 90
 DALLE, ALLE = 8, 21
+RIEPILOGO_DALLE = 19   # il riepilogo della giornata, l'ultimo post del giorno
+RIEPILOGO_PAUSA = 30   # minuti dall'ultimo post
+QUANTE, ALMENO = 5, 3  # notizie nel riepilogo; con meno di ALMENO notizie oggi niente riepilogo
+TITOLO_RIEPILOGO = "Il Sannio oggi"
+
+
+def del_giorno(notizie, adesso):
+    """Le notizie più importanti uscite oggi, per il riepilogo: il rilievo di facebook.py senza lo sconto per le ore
+    passate (a pari rilievo la più recente). La usa pagine.py per la copertina."""
+    out = []
+    for n in notizie:
+        t = quando(n, adesso)
+        if t and t.astimezone(fuso()).date() == adesso.date() and t <= adesso:
+            out.append((rilievo(n, adesso, adesso), t, n))
+    out.sort(key=lambda x: (-x[0], -x[1].timestamp()))
+    return [n for _, _, n in out[:QUANTE]]
 
 
 def didascalia(n):
@@ -51,17 +71,59 @@ def didascalia(n):
     return m + "\n\n" + " ".join(tag + ["#notizie"])
 
 
+def didascalia_riepilogo(giorno, notizie):
+    m = f"{TITOLO_RIEPILOGO}, {giorno}: le notizie più importanti della giornata.\n\n"
+    m += "\n".join(f"{i}. {n['titolo'].strip()}" for i, n in enumerate(notizie, 1))
+    m += "\n\nScorri le immagini. Leggi tutto su notiziebenevento.it (link nella bio)."
+    if any(n.get("immagine") and n.get("categoria") != "cronaca" for n in notizie):
+        m += "\n\nLe immagini illustrative sono create con l'intelligenza artificiale: non sono foto dei fatti."
+    return m + "\n\n#Benevento #Sannio #notizie"
+
+
 def gia_pubblicate(ig, token, adesso):
+    """Gli id delle notizie già uscite, quanti post oggi, l'ora dell'ultimo e se il riepilogo di oggi c'è già."""
     r = chiama("GET", f"{ig}/media", token, {"fields": "caption,timestamp", "limit": 50})
-    ids, oggi, ultimo = set(), 0, None
+    ids, oggi, ultimo, riepilogo = set(), 0, None, False
     for p in r.get("data", []):
         t = dt.datetime.strptime(p["timestamp"], "%Y-%m-%dT%H:%M:%S%z").astimezone(fuso())
         m = re.search(r"notiziebenevento\.it/notizia/([a-z0-9-]+)", p.get("caption") or "")
         if m:
             ids.add(m.group(1))
         oggi += t.date() == adesso.date()
+        riepilogo |= t.date() == adesso.date() and (p.get("caption") or "").startswith(TITOLO_RIEPILOGO)
         ultimo = max(ultimo, t) if ultimo else t
-    return ids, oggi, ultimo
+    return ids, oggi, ultimo, riepilogo
+
+
+def riepilogo_pronto(sito, notizie, adesso):
+    """(giorno, notizie, indirizzi delle immagini) del riepilogo di oggi preparato da pagine.py, o None."""
+    try:
+        with open(os.path.join(sito, "img", "ig", "oggi.json"), encoding="utf-8") as f:
+            r = json.load(f)
+    except (OSError, ValueError):
+        return None
+    per_id = {n.get("id"): n for n in notizie}
+    scelte = [per_id[i] for i in r.get("ids", []) if i in per_id]
+    if r.get("data") != adesso.date().isoformat() or len(scelte) < ALMENO or len(scelte) != len(r["ids"]):
+        return None
+    return r["giorno"], scelte, [f"{SITO}/{r['copertina']}"] + [f"{SITO}/img/ig/{n['id']}.jpg" for n in scelte]
+
+
+def aspetta(cont, token):
+    for _ in range(12):   # Instagram scarica e prepara l'immagine: di solito pochi secondi
+        if chiama("GET", cont, token, {"fields": "status_code"}).get("status_code") == "FINISHED":
+            return
+        time.sleep(5)
+
+
+def pubblica_riepilogo(ig, token, giorno, scelte, immagini):
+    figli = [chiama("POST", f"{ig}/media", token, {"image_url": u, "is_carousel_item": "true"})["id"] for u in immagini]
+    for c in figli:
+        aspetta(c, token)
+    cont = chiama("POST", f"{ig}/media", token, {"media_type": "CAROUSEL", "children": ",".join(figli),
+                                                 "caption": didascalia_riepilogo(giorno, scelte)})["id"]
+    aspetta(cont, token)
+    chiama("POST", f"{ig}/media_publish", token, {"creation_id": cont})
 
 
 def online(url):
@@ -84,6 +146,9 @@ def main():
     if a.prova:
         for n in candidate(notizie, set(), adesso)[:3]:
             print(f"--- {SITO}/img/ig/{n['id']}.jpg\n{didascalia(n)}\n")
+        r = riepilogo_pronto(a.sito, notizie, adesso)
+        print(f"--- riepilogo: {', '.join(r[2])}\n{didascalia_riepilogo(r[0], r[1])}" if r
+              else "--- riepilogo: oggi non c'è (manca img/ig/oggi.json o poche notizie)")
         return
 
     token = os.environ.get("FB_PAGE_TOKEN", "").strip()
@@ -100,9 +165,25 @@ def main():
     if not ig:
         print("Instagram: la Pagina non ha ancora un account Instagram collegato, non pubblico niente")
         return
-    gia, oggi, ultimo = gia_pubblicate(ig, token, adesso)
+    gia, oggi, ultimo, riepilogo = gia_pubblicate(ig, token, adesso)
     if oggi >= MAX_GIORNO:
         print(f"Instagram: già {oggi} post oggi, basta così")
+        return
+    if riepilogo:
+        print("Instagram: il riepilogo di oggi è già uscito, a domani")
+        return
+    if adesso.hour >= RIEPILOGO_DALLE:
+        r = riepilogo_pronto(a.sito, notizie, adesso)
+        if r and ultimo and adesso - ultimo < dt.timedelta(minutes=RIEPILOGO_PAUSA):
+            print(f"Instagram: l'ultimo post è delle {ultimo:%H:%M}, il riepilogo al prossimo giro")
+            return
+        if r and all(online(u) for u in r[2]):
+            pubblica_riepilogo(ig, token, *r)
+            print(f"Instagram: pubblicato il riepilogo della giornata ({len(r[1])} notizie, {oggi + 1} post oggi)")
+            return
+        print("Instagram: niente riepilogo oggi (poche notizie o immagini non ancora online)")
+    elif oggi >= MAX_GIORNO - 1:
+        print(f"Instagram: già {oggi} post oggi, l'ultimo posto è per il riepilogo delle {RIEPILOGO_DALLE}")
         return
     if ultimo and adesso - ultimo < dt.timedelta(minutes=PAUSA_MINUTI):
         print(f"Instagram: l'ultimo post è delle {ultimo:%H:%M}, aspetto")
@@ -112,10 +193,7 @@ def main():
         if not online(img):   # l'immagine si fa solo per le notizie recenti della prima pagina
             continue
         cont = chiama("POST", f"{ig}/media", token, {"image_url": img, "caption": didascalia(n)})["id"]
-        for _ in range(12):   # Instagram scarica e prepara l'immagine: di solito pochi secondi
-            if chiama("GET", cont, token, {"fields": "status_code"}).get("status_code") == "FINISHED":
-                break
-            time.sleep(5)
+        aspetta(cont, token)
         chiama("POST", f"{ig}/media_publish", token, {"creation_id": cont})
         print(f"Instagram: pubblicata {n['id']} ({oggi + 1} oggi)")
         return
