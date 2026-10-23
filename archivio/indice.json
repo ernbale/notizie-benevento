@@ -1,6 +1,126 @@
 {
- "aggiornato": "2026-10-22T06:05:00+02:00",
+ "aggiornato": "2026-10-23T06:10+02:00",
  "voci": [
+  {
+   "id": "benevento-tangenziale-est-scontro-tre-veicoli-20-ottobre",
+   "tipo": "notizia",
+   "titolo": "Benevento, tangenziale Est: scontro tra tre veicoli all'uscita Benevento Est, un ferito e lunghe code",
+   "sintesi": "Martedì 20 ottobre in prima serata, sul raccordo per la Napoli-Canosa, si sono scontrati una Ford Focus, una Fiat e un furgoncino. Una persona è ferita, non in condizioni gravi.",
+   "luogo": "Benevento",
+   "categoria": "cronaca",
+   "zona": "benevento",
+   "pubblicato": "2026-10-20T19:25:00+02:00",
+   "cosa": "Martedì 20 ottobre, in prima serata, tre veicoli si sono scontrati sulla tangenziale Est di Benevento, lungo il raccordo autostradale per la Napoli-Canosa, all'altezza dell'uscita Benevento Est. Sono coinvolti una Ford Focus, una Fiat e un furgoncino.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "ficomirrors-morcone-vertice",
+   "tipo": "notizia",
+   "titolo": "Morcone, vertice in Prefettura sulla Ficomirrors: l'azienda, che vuole spostare la produzione in Polonia dal 2029, apre a nuove produzioni; nuovo incontro a dicembre",
+   "sintesi": "Lunedì 19 ottobre in Prefettura a Benevento azienda, sindacati, Confindustria e sindaci hanno discusso il futuro dello stabilimento di Morcone, con circa 200 dipendenti, da cui il gruppo Ficosa vuole spostare in Polonia la produzione degli specchietti per il Fiat Ducato dalla seconda metà del 2029. L'azienda si è detta aperta a nuove produzioni; il sindacato chiede di salvare tutti i posti. Si torna al tavolo a metà dicembre.",
+   "luogo": "Morcone",
+   "categoria": "altro",
+   "zona": "provincia",
+   "pubblicato": "2026-10-20T19:00:00+02:00",
+   "cosa": "Lunedì 19 ottobre, nella Prefettura di Benevento, l'azienda Ficomirrors di Morcone ha incontrato sindacati, Confindustria e sindaci del territorio. La fabbrica produce specchietti retrovisori per il Fiat Ducato e ha circa 200 dipendenti. Dal vertice è uscita una possibile strada: l'azienda si è detta pronta a cambiare produzione nello stabilimento.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "benevento-polstrada-controlli-weekend-4-patenti",
+   "tipo": "notizia",
+   "titolo": "Benevento, controlli della Polizia Stradale nel fine settimana: 4 patenti ritirate per telefonino e sorpassi",
+   "sintesi": "Dal 16 al 18 ottobre la Polizia Stradale ha fatto 11 contestazioni e ritirato quattro patenti: due per l'uso del telefono alla guida e due per sorpasso vietato. Tolti 30 punti in totale.",
+   "luogo": "Benevento",
+   "categoria": "cronaca",
+   "zona": "provincia",
+   "pubblicato": "2026-10-20T14:00:00+02:00",
+   "cosa": "Nel fine settimana dal 16 al 18 ottobre la Sezione Polizia Stradale di Benevento ha intensificato i controlli contro le condotte pericolose alla guida. Il bilancio è di 11 contestazioni e quattro patenti ritirate: due per l'uso del telefono mentre si guida e due per sorpasso in un punto dove è vietato.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "benevento-comune-smartworking-dipendenti",
+   "tipo": "notizia",
+   "titolo": "Benevento, il sindaco Mastella chiede lo smart working per i dipendenti comunali che abitano fuori città, per il caro carburante",
+   "sintesi": "Il sindaco ha dato indicazione alla Segretaria generale, responsabile del personale, di preparare gli atti per il lavoro a distanza dei dipendenti del Comune che non risiedono a Benevento. Il motivo è il costo del carburante e l'inflazione; l'attivazione dipenderà dalle esigenze del Comune.",
+   "luogo": "Benevento",
+   "categoria": "politica",
+   "zona": "benevento",
+   "pubblicato": "2026-10-20T13:42:00+02:00",
+   "cosa": "Il sindaco di Benevento, Clemente Mastella, vuole che i dipendenti del Comune che abitano fuori città possano lavorare da casa. Martedì 20 ottobre ha chiesto alla Segretaria generale, Maria Luisa Dovetto, che guida anche l'ufficio del personale, di preparare gli atti necessari.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "airola-incendio-diossine-latte",
+   "tipo": "notizia",
+   "titolo": "Incendio di Airola, controlli sugli alimenti: diossine nel latte di pecora a Cervinara, il latte è stato bloccato",
+   "sintesi": "Nell'ultimo aggiornamento dei controlli (10-16 ottobre) dopo l'incendio di Airola sono state confermate due irregolarità per diossine nel latte di pecora a Cervinara; il latte è stato bloccato e non va in commercio. Altre irregolarità riguardano erba da pascolo e mais trinciato. Nei terreni agricoli finora non risultano soglie superate.",
+   "luogo": "Airola e Valle Caudina",
+   "categoria": "altro",
+   "zona": "caudina",
+   "pubblicato": "2026-10-20T11:29:00+02:00",
+   "cosa": "Dopo l'incendio di Airola, in Valle Caudina, i controlli sugli alimenti hanno trovato diossine (sostanze inquinanti che si formano quando bruciano certi materiali) nel latte di pecora di Cervinara, in provincia di Avellino. Nell'ultimo aggiornamento, che riguarda i giorni dal 10 al 16 ottobre, le irregolarità confermate sono due. Il latte è stato bloccato subito e tolto dalla catena alimentare, quindi non va in commercio: l'ha deciso il servizio veterinario dell'Asl di Avellino.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "condanne-tentato-omicidio-montesarchio",
+   "tipo": "notizia",
+   "titolo": "Montesarchio, tentato omicidio di un 17enne nel 2025: quattro ventenni condannati in primo grado, pene da 6 anni a 8 anni e 20 giorni",
+   "sintesi": "Lunedì 19 ottobre il giudice Roberto Nuzzo ha condannato con rito abbreviato quattro ventenni imputati di tentato omicidio per l'aggressione a un ragazzo di Vitulano, che allora aveva 17 anni, colpito anche con una mazza da baseball fuori da un locale di Montesarchio nella notte del 5 ottobre 2025. Le pene sono più basse di quelle chieste dalla Procura.",
+   "luogo": "Montesarchio",
+   "categoria": "cronaca",
+   "zona": "caudina",
+   "pubblicato": "2026-10-20T00:35:00+02:00",
+   "cosa": "Lunedì 19 ottobre il giudice dell'udienza preliminare Roberto Nuzzo ha condannato quattro ventenni per il tentato omicidio di un ragazzo di Vitulano, che aveva 17 anni quando fu picchiato a Montesarchio. Il processo era con il rito abbreviato: è più rapido, si decide sugli atti dell'indagine e in caso di condanna la pena si riduce.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "asl-benevento-farmacie-screening-oncologici",
+   "tipo": "notizia",
+   "titolo": "Provincia di Benevento, l'ASL porta gli screening dei tumori nelle farmacie: informazioni, adesione e kit per il colon-retto",
+   "sintesi": "Martedì 20 ottobre l'ASL Benevento ha incontrato farmacisti e Federfarma per un accordo che farà delle farmacie un punto di accesso agli screening gratuiti. Si potrà informarsi, aderire, prenotare e ritirare il kit per il colon-retto.",
+   "luogo": "Benevento",
+   "categoria": "altro",
+   "zona": "provincia",
+   "pubblicato": "2026-10-20",
+   "cosa": "Le farmacie della provincia di Benevento entreranno nella rete degli screening dei tumori dell'ASL. L'incontro per definire l'accordo (un protocollo d'intesa) si è tenuto martedì 20 ottobre nella sede dell'ASL Benevento, con la direttrice generale Tiziana Spinosa, il presidente dell'Ordine dei Farmacisti Maurizio Manna e il presidente di Federfarma Benevento Tommaso Cusano.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "acqua-giovedi-22-ottobre-paduli-alto-calore",
+   "tipo": "notizia",
+   "titolo": "Paduli e altri sette Comuni del Sannio senz'acqua giovedì 22 ottobre dalle 14 alle 24 per lavori sulla condotta",
+   "sintesi": "Alto Calore Servizi sospende l'acqua giovedì 22 ottobre dalle 14 alle 24 per lavori urgenti sulla condotta a Paduli, località Torre. Restano senz'acqua Paduli, Pietrelcina, Pesco Sannita, Pago Veiano, Campolattaro, Pontelandolfo, Fragneto Monforte e Sant'Arcangelo Trimonte.",
+   "luogo": "Paduli",
+   "categoria": "altro",
+   "zona": "provincia",
+   "pubblicato": "2026-10-20",
+   "cosa": "Giovedì 22 ottobre, dalle 14 a mezzanotte, otto paesi del Sannio restano senz'acqua: Paduli, Pietrelcina, Pesco Sannita, Pago Veiano, Campolattaro, Pontelandolfo, Fragneto Monforte e Sant'Arcangelo Trimonte. Lo ha comunicato Alto Calore Servizi, la società che porta l'acqua in questa parte della provincia.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "telese-gepos-licenziamenti-sit-in",
+   "tipo": "notizia",
+   "titolo": "Telese Terme, clinica Gepos: licenziati due tecnici di laboratorio dopo oltre 30 anni, sit-in dei sindacati lunedì 26 ottobre",
+   "sintesi": "FP Cgil e Uil Fpl denunciano il licenziamento di due tecnici del laboratorio analisi della clinica Gepos di Telese Terme, con oltre trent'anni di servizio. Chiedono chiarimenti all'azienda e verifiche all'Asl, e annunciano un sit-in davanti alla clinica lunedì 26 ottobre dalle 10 alle 13.",
+   "luogo": "Telese Terme",
+   "categoria": "altro",
+   "zona": "telesina",
+   "pubblicato": "2026-10-20",
+   "cosa": "Alla clinica Gepos di Telese Terme due tecnici del laboratorio analisi sono stati licenziati dopo più di trent'anni di lavoro. Lo denunciano la FP Cgil e la Uil Fpl, i sindacati dei dipendenti pubblici e della sanità, che lunedì 26 ottobre, dalle 10 alle 13, fanno un sit-in (una protesta in piazza) davanti alla clinica.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "bus-linea-5",
+   "tipo": "notizia",
+   "titolo": "Benevento, giovane in scooter minaccia il personale di un autobus urbano: si sente male un controllore",
+   "sintesi": "Lunedì 19 ottobre, nel primo pomeriggio, un giovane in scooter ha affiancato un autobus della linea urbana 05 di AIR Campania, ha insultato alcuni passeggeri e minacciato il personale. Un controllore dei biglietti si è sentito male.",
+   "luogo": "Benevento",
+   "categoria": "cronaca",
+   "zona": "benevento",
+   "pubblicato": "2026-10-20",
+   "cosa": "Lunedì 19 ottobre, nel primo pomeriggio, a Benevento un giovane su uno scooter ha raggiunto un autobus della linea urbana 05 di Air Campania. Ha urlato contro alcuni passeggeri e ha minacciato, da terra, il personale a bordo. Uno dei verificatori (i controllori dei biglietti) si è sentito male ed è servito l'intervento dei sanitari.",
+   "mese": "2026-10"
+  },
   {
    "id": "mensa-pasto-da-casa",
    "tipo": "notizia",
@@ -107,6 +227,18 @@
    "zona": "telesina",
    "pubblicato": "2026-10-18",
    "cosa": "Uno sciame di scosse deboli ha interessato per circa sei ore la zona tra Cusano Mutri (Benevento) e Gioia Sannitica (Caserta). I dati sono dell'INGV, l'Istituto nazionale di geofisica e vulcanologia.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "san-pio-open-day-sclerodermia-22-ottobre",
+   "tipo": "notizia",
+   "titolo": "Ospedale San Pio, giovedì 22 ottobre visite gratuite per la sclerodermia",
+   "sintesi": "Giovedì 22 ottobre, dalle 9 alle 12, la Reumatologia del San Pio di Benevento fa visite gratuite per la sclerodermia, nel Padiglione Rummo.",
+   "luogo": "Benevento",
+   "categoria": "altro",
+   "zona": "benevento",
+   "pubblicato": "2026-10-13",
+   "cosa": "Giovedì 22 ottobre l'ospedale San Pio di Benevento aderisce alla campagna nazionale di sensibilizzazione sulla sclerodermia, una malattia che colpisce più organi, causa invalidità e ha bisogno di cure e assistenza continue. Colpisce soprattutto le donne.",
    "mese": "2026-10"
   }
  ]
