@@ -1,7 +1,91 @@
 {
- "aggiornato": "2026-10-23T20:08+02:00",
+ "aggiornato": "2026-10-23T21:08+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-corso-garibaldi-ragazza-aggredita-23-ottobre",
+   "titolo": "Benevento, ragazza colpita con uno schiaffo a Corso Garibaldi: portata al San Pio, la Polizia cerca l'aggressore",
+   "titolo_google": "Corso Garibaldi, ragazza aggredita: Polizia sul caso",
+   "sintesi": "Venerdì 23 ottobre, verso le 20, una ragazza è stata colpita al volto da un giovane sul Corso Garibaldi, a Benevento. È stata portata in ambulanza al San Pio con ferite a viso e naso. La Polizia ha avviato le ricerche.",
+   "categoria": "cronaca",
+   "zona": "benevento",
+   "luogo": "Benevento, Corso Garibaldi",
+   "pubblicato": "2026-10-23T20:33:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/23/benevento-ancora-violenza-al-corso-garibaldi-ragazza-picchiata-davanti-a-negozio-si-cerca-laggressore/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/442005/un-calcio-poi-uno-schiaffo-lei-col-volto-sul-muro-ferita-paura-al-corso.shtml"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Venerdì sera, 23 ottobre, una ragazza è stata aggredita a Benevento, sul Corso Garibaldi, poco prima dell'incrocio con via Traiano e piazza Roma. Un giovane l'ha colpita al volto con uno schiaffo. La ragazza è stata portata in ambulanza all'ospedale San Pio.",
+      "fonti": [
+       "NTR24",
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Secondo la prima ricostruzione di Ottopagine, la ragazza era seduta con un'amica sui gradini di un negozio. Il giovane, che sembra non conoscesse, le ha detto di spostarsi e le ha dato un calcio. Lei si è alzata e gli ha chiesto perché lo facesse: per risposta è arrivato lo schiaffo, che l'ha fatta finire contro un muro. NTR24 scrive che era seduta all'ingresso di un locale con i distributori automatici h24 e che la discussione è nata dopo un calcetto.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Il giovane se n'è andato insieme a un altro ragazzo. Sono intervenute le Volanti della Polizia e un'ambulanza. La ragazza ha ferite al viso e al naso e sul posto c'era del sangue. Gli agenti hanno avviato le ricerche e gli accertamenti, anche con le immagini delle telecamere e le testimonianze di chi era presente.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "La ragazza è stata colpita con uno schiaffo dopo che il giovane le aveva dato un calcio (o calcetto) perché si spostasse; il giovane è andato via con un altro ragazzo e la Polizia è intervenuta.",
+      "fonti": [
+       "NTR24",
+       "Ottopagine"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "L'ora: NTR24 scrive verso le 19:30, Ottopagine poco prima delle 20. Dove ha battuto la ragazza: contro un muro (Ottopagine) o contro lo spigolo di un distributore h24 (NTR24). Sull'aggressore: Ottopagine scrive che sarebbe già stato identificato, NTR24 che gli agenti lavorano per identificarlo.",
+      "fonti": [
+       "NTR24",
+       "Ottopagine"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "Le condizioni della ragazza dopo le cure al San Pio.",
+     "Se l'aggressore è stato identificato e rintracciato, e i motivi del gesto."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Benevento, ancora violenza al corso Garibaldi: ragazza picchiata davanti a negozio. Si cerca l’aggressore",
+      "url": "https://www.ntr24.tv/2026/10/23/benevento-ancora-violenza-al-corso-garibaldi-ragazza-picchiata-davanti-a-negozio-si-cerca-laggressore/",
+      "data": "23 ott, 20:33"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Un calcio, poi uno schiaffo, lei col volto sul muro, ferita: paura al Corso",
+      "url": "https://www.ottopagine.it/bn/cronaca/442005/un-calcio-poi-uno-schiaffo-lei-col-volto-sul-muro-ferita-paura-al-corso.shtml",
+      "data": "23 ott, 20:32"
+     }
+    ]
+   }
+  },
   {
    "id": "campania-numero-unico-112-benevento-24-novembre",
    "titolo": "Campania, arriva il numero unico di emergenza 112: a Benevento e provincia dal 24 novembre",
@@ -3012,10 +3096,21 @@
     {
      "nome": "Cronache del Sannio (Floro Flores)",
      "url": "https://www.cronachedelsannio.it/sannionews24/benevento-floro-flores-arezzo-difficolta/"
+    },
+    {
+     "nome": "BeneventoNews24 (tifosi)",
+     "url": "https://www.beneventonews24.it/2026/10/23/arezzo-benevento-saranno-piu-di-300-i-tifosi-giallorossi-in-toscana-il-dato-definitivo/"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Venerdì 23 ottobre alle 18:06 i biglietti emessi per Benevento-Catanzaro erano 386: 63 per i tifosi di casa e 323 per gli ospiti, a cui si aggiungono i 4.845 abbonati del Benevento. Per Arezzo i tifosi giallorossi in trasferta saranno 325.",
+      "fonti": [
+       "BeneventoNews24 (tifosi)"
+      ],
+      "giorno": "2026-10-23"
+     },
      {
       "testo": "Venerdì 23 ottobre, dopo l'ultimo allenamento, il Benevento ha diramato i 24 convocati di Antonio Floro Flores per Arezzo-Benevento, ottava giornata di Serie B. Torna Leonardo Sernicola, rimasto fuori per la parotite. Saio è convocato ma non giocherà dall'inizio per l'affaticamento di questa settimana. Restano fuori l'infortunato Sylla (al suo posto è convocato Mandato), Talia e Schimmenti, anche se Schimmenti è tornato ad allenarsi con la squadra.",
       "fonti": [
@@ -3081,6 +3176,13 @@
       "fonti": [
        "Benevento Calcio"
       ]
+     },
+     {
+      "data": "23 ottobre, 18:06",
+      "fatto": "386 biglietti emessi per Benevento-Catanzaro; 325 tifosi del Benevento attesi ad Arezzo.",
+      "fonti": [
+       "BeneventoNews24 (tifosi)"
+      ]
      }
     ],
     "concordano": [],
@@ -3124,15 +3226,20 @@
       "titolo": "Benevento, Floro Flores: “L’Arezzo non è affatto in difficoltà”",
       "url": "https://www.cronachedelsannio.it/sannionews24/benevento-floro-flores-arezzo-difficolta/",
       "data": "23 ott, 12:21"
+     },
+     {
+      "nome": "BeneventoNews24 (tifosi)",
+      "titolo": "Arezzo-Benevento, saranno più di 300 i tifosi giallorossi in Toscana: il dato definitivo",
+      "url": "https://www.beneventonews24.it/2026/10/23/arezzo-benevento-saranno-piu-di-300-i-tifosi-giallorossi-in-toscana-il-dato-definitivo/",
+      "data": "23 ott, 20:13"
      }
     ],
     "aggiornamento": {
-     "testo": "Venerdì 23 ottobre il Benevento ha convocato 24 giocatori per Arezzo: torna Sernicola dopo la parotite, mentre sono fuori Talia, Schimmenti e l'infortunato Sylla; Saio c'è ma non giocherà dal 1' per un affaticamento.",
+     "testo": "Venerdì 23 ottobre sera: saranno 325 i tifosi del Benevento ad Arezzo; per Benevento-Catanzaro sono 386 i biglietti emessi (63 locali, 323 ospiti).",
      "fonti": [
-      "Benevento Calcio",
-      "BeneventoNews24 (convocati)"
+      "BeneventoNews24 (tifosi)"
      ],
-     "quando": "2026-10-23T14:11+02:00"
+     "quando": "2026-10-23T21:08+02:00"
     }
    },
    "sport": "calcio",
