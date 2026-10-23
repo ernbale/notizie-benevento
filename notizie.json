@@ -1,7 +1,167 @@
 {
- "aggiornato": "2026-10-23T09:11+02:00",
+ "aggiornato": "2026-10-23T10:11+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "telese-gepos-sindacati-conti-assunzioni-sit-in-26-ottobre",
+   "titolo": "Telese Terme, clinica Gepos: un nuovo licenziamento, i sindacati chiedono chiarezza sui conti e confermano il sit-in del 26 ottobre",
+   "titolo_google": "Telese Terme, clinica Gepos: sindacati chiedono chiarezza",
+   "sintesi": "FP CGIL e UIL FP chiedono chiarezza sui conti della clinica Gepos di Telese Terme dopo un nuovo licenziamento, quello di una cuoca. Il sit-in resta confermato per il 26 ottobre dalle 10 alle 13.",
+   "categoria": "altro",
+   "zona": "telesina",
+   "immagine": "protesta",
+   "luogo": "Telese Terme",
+   "pubblicato": "2026-10-23T09:28:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "in_vigore_fino": "2026-10-26",
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/gepos-licenziamenti-sindacati-conti-sit-in/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Alla clinica Gepos di Telese Terme c'è un nuovo licenziamento: secondo Anteprima24 a perdere il posto sarebbe una cuoca della cucina. La notizia non è ancora confermata ufficialmente. I sindacati FP CGIL e UIL FP, che seguono la vertenza, hanno diffuso una nota per chiedere chiarezza sui conti dell'azienda e sulle scelte fatte sul personale.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Il caso era già uscito il 20 ottobre, quando i sindacati avevano denunciato il licenziamento di due tecnici di laboratorio dopo oltre trent'anni di lavoro. Ora ricordano che c'è stata anche una procedura di licenziamento collettivo (più lavoratori mandati via insieme) che ha coinvolto 15 persone. Tra loro c'erano otto infermieri, che poi avrebbero dato le dimissioni volontarie. In questi giorni, però, sarebbe stato assunto un nuovo infermiere: i sindacati chiedono come mai si assuma se si dichiarano esuberi, e se invece serve personale perché si sia arrivati ai licenziamenti.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Sui conti, nei tavoli con i sindacati sarebbe stata indicata una situazione economica vicina ai sette milioni di euro, descritta come perdita o come debito. Il giornale precisa che sono due cose diverse, da chiarire con bilanci e documenti ufficiali. I sindacati chiedono anche di fare luce sui cambiamenti tra i soci della società: in passato una famiglia aveva una quota di minoranza e la maggioranza era di un altro socio, poi la stessa famiglia avrebbe comprato altre quote. Vogliono sapere cosa sapeva quando era socia di minoranza e quali controlli ha fatto. Scrivono di non fare accuse né di attribuire responsabilità non accertate.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Un altro punto riguarda l'ASL di Benevento: secondo i sindacati non ha ancora dato la risposta attesa, prevista al tavolo in Prefettura, nonostante i molti solleciti. Chiedono che Procura, Regione Campania e ASL \"accendano un faro\" sulla clinica, e non escludono denunce ed esposti se dagli approfondimenti emergeranno elementi.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Il sit-in (la protesta in piazza) è confermato per lunedì 26 ottobre, dalle 10 alle 13, a Telese Terme. Ci saranno diversi sindaci del territorio, compreso quello di Telese Terme, e rappresentanti dei Comuni vicini. I sindacati chiederanno documenti e chiarimenti su debiti, soci, licenziamenti, nuove assunzioni e sul silenzio dell'ASL.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "20 ottobre",
+      "fatto": "I sindacati denunciano il licenziamento di due tecnici di laboratorio e annunciano il sit-in.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "data": "23 ottobre",
+      "fatto": "Nuova nota di FP CGIL e UIL FP: un altro licenziamento (una cuoca), richieste sui conti e sul personale, sit-in confermato.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Se il licenziamento della cuoca sia confermato dall'azienda.",
+     "Cosa risponderà la direzione della clinica sulle nuove assunzioni.",
+     "Se l'ASL di Benevento darà la risposta chiesta dai sindacati."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Gepos, licenziamenti e presunte nuove assunzioni: i sindacati chiedono risposte",
+      "url": "https://www.anteprima24.it/benevento/gepos-licenziamenti-sindacati-conti-sit-in/",
+      "data": "23 ott, 09:28"
+     }
+    ]
+   },
+   "foto": "protesta-5"
+  },
+  {
+   "id": "yolo-benevento-dinamo-taranto-24-ottobre",
+   "titolo": "Basket B femminile, la YOLO+ Miwa Benevento ospita la Dinamo Taranto sabato 24 ottobre alle 18 al PalaMiwa",
+   "titolo_google": "Basket: YOLO+ Benevento contro Taranto sabato alle 18",
+   "sintesi": "Sabato 24 ottobre alle 18 la YOLO+ Miwa Basket Benevento gioca in casa, al PalaMiwa, contro la Dinamo Taranto, capolista imbattuta del girone. L'ingresso è gratuito.",
+   "categoria": "sport",
+   "sport": "basket",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-23T09:54:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24 Sport",
+     "url": "https://sport.ntr24.tv/2026/10/23/basket-serie-b-la-yolo-benevento-torna-in-casa-sabato-il-match-contro-la-dinamo-taranto/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/23/basket-la-yolo-torna-in-casa-sabato-il-match-contro-la-dinamo-taranto/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Sabato 24 ottobre alle 18 la YOLO+ Miwa Basket Benevento torna a giocare in casa, al PalaMiwa di Benevento, contro la Dinamo Taranto. L'ingresso al palazzetto è gratuito.",
+      "fonti": [
+       "NTR24 Sport",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Il Taranto è la squadra da battere: guida il girone e dopo cinque giornate non ha ancora perso. La YOLO+ finora ha vinto una sola partita. Per le beneventane, allenate da coach Pasquariello, è il terzo impegno in meno di una settimana.",
+      "fonti": [
+       "NTR24 Sport",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Tra le giocatrici del Taranto le due testate citano soprattutto l'ala Jauregui, che segna 19,4 punti a partita, le guardie Mondano e Buranello e, sotto canestro, Llorente e Palmisano.",
+      "fonti": [
+       "NTR24 Sport",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Data, ora e luogo della partita (sabato 24 ottobre, ore 18, PalaMiwa), l'ingresso gratuito e il Taranto capolista imbattuto.",
+      "fonti": [
+       "NTR24 Sport",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "NTR24 Sport",
+      "titolo": "Basket serie B, la YOLO+ Benevento torna in casa: sabato il match contro la Dinamo Taranto",
+      "url": "https://sport.ntr24.tv/2026/10/23/basket-serie-b-la-yolo-benevento-torna-in-casa-sabato-il-match-contro-la-dinamo-taranto/",
+      "data": "23 ott, 09:51"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Basket, la YOLO+ torna in casa: sabato il match contro la Dinamo Taranto",
+      "url": "https://www.beneventonews24.it/2026/10/23/basket-la-yolo-torna-in-casa-sabato-il-match-contro-la-dinamo-taranto/",
+      "data": "23 ott, 09:54"
+     }
+    ]
+   }
+  },
   {
    "id": "cusano-mutri-erasmus-stem-girls-ic-kennedy",
    "titolo": "Cusano Mutri, all’istituto Kennedy si chiude la settimana del progetto Erasmus+ STEM Girls",

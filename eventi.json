@@ -336,6 +336,46 @@
    "foto": "olio"
   },
   {
+   "id": "festival-campano-made-in-italy-notte-della-moda-benevento-2026",
+   "titolo": "Festival Campano del Made in Italy – Notte della Moda al Teatro Romano",
+   "tipo": "altro",
+   "inizio": "2026-10-27",
+   "ora": "10:00",
+   "orari": "dalle 10 alle 14",
+   "luogo": "Teatro Romano di Benevento",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "breve": "Sfilate e spettacoli di studenti di sei istituti della Campania al Teatro Romano, martedì 27 ottobre dalle 10 alle 14. Lo coordina l'istituto Lombardi di Airola.",
+   "descrizione": [
+    {
+     "testo": "Martedì 27 ottobre, dalle 10 alle 14, al Teatro Romano di Benevento va in scena il Festival Campano del Made in Italy, nella Notte della Moda. Lo coordina l'istituto «Alessandro Lombardi» di Airola, con il patrocinio del Comune di Benevento e dei ministeri della Cultura e dell'Istruzione e del Merito. L'articolo non indica il prezzo.",
+     "fonti": [
+      "NTR24"
+     ]
+    },
+    {
+     "testo": "Apre la sfilata delle studentesse e degli studenti di Moda del Lombardi di Airola con la collezione «Campania Felix». Seguono l'istituto Dalla Chiesa di Afragola («Trame sostenibili in Costiera Amalfitana»), il Carafa Giustiniani di Cerreto Sannita («L'Utopia Serica», sulla seta di San Leucio), il Levi Montalcini–Ferraris di Saviano («Abiti di scena»), il Don Geremia Piscopo di Arzano (ispirato a «L'Oro di Napoli») e l'Europa di Pomigliano d'Arco (accessori). Chiude la sfilata «I fili di memoria» dell'istituto Palmieri–Rampone–Polo di Benevento, con momenti musicali e quadri scenici.",
+     "fonti": [
+      "NTR24"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "titolo": "Al Teatro Romano di Benevento va in scena il “Festival Campano del Made in Italy – Notte della Moda”",
+     "url": "https://www.ntr24.tv/2026/10/23/al-teatro-romano-di-benevento-va-in-scena-il-festival-campano-del-made-in-italy-notte-della-moda/",
+     "data": "23 ott"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "titolo": "Al Teatro Romano di Benevento va in scena il ‘Festival Campano del Made in Italy – Notte della Moda’",
+     "url": "https://www.beneventonews24.it/2026/10/23/al-teatro-romano-di-benevento-va-in-scena-il-festival-campano-del-made-in-italy-notte-della-moda/",
+     "data": "23 ott"
+    }
+   ]
+  },
+  {
    "id": "omaggio-angelo-raffaele-scetta-telese-2026",
    "titolo": "Omaggio al poeta Angelo Raffaele Scetta",
    "tipo": "altro",
