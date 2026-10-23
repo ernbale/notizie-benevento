@@ -2340,6 +2340,9 @@
   var carburanti = null, tipoCarburante = "benzina";
   function prezzoIt(x) { return x.toFixed(3).replace(".", ","); }
   function riquadroCarburanti() {
+    try { return costruisciCarburanti(); } catch (e) { return null; }   // un file rotto non deve fermare la prima pagina
+  }
+  function costruisciCarburanti() {
     var c = carburanti;
     if (!c || !c.classifiche || !c.impianti) return null;
     var per = {};

@@ -10,14 +10,20 @@ GIORNI_VALIDI giorni: un prezzo vecchio può non essere più quello alla pompa.
 Voluto dal proprietario il 23 ott 2026: «una piccola tabellina con la classifica dei prezzi benzina e diesel» in prima
 pagina (i 5 meno cari) e una pagina con tutti i distributori di Benevento e provincia.
 
-Uso:  python3 strumenti/carburanti.py [--uscita carburanti.json] [--se-piu-vecchio-di ORE]
-Esce con codice 1 senza scrivere niente se i file non arrivano o non tornano. Con --se-piu-vecchio-di non riscarica
-se il file che c'è già (quello pubblicato, nel giro di GitHub) è stato scaricato da meno ore: il Ministero cambia i
-dati una volta al giorno.
+Il sito del Ministero non risponde a chi si collega dall'estero (23 ott 2026: da GitHub «Failed to connect … after
+20000 ms»), come ANAS e TV7: i prezzi li scarica il Pi di casa (cron, con --manda) e li passa alla pubblicazione su
+GitHub (pubblica.yml, campo «carburanti»: il file compresso, 14 KB) con la chiave della sentinella, che può solo
+avviare le pubblicazioni. Lo fa solo quando il Ministero ha dati più nuovi di quelli sul sito.
+
+Uso:  python3 strumenti/carburanti.py [--uscita carburanti.json]               (scarica e scrive, per le prove)
+      python3 carburanti.py --uscita ~/nb-fonti/carburanti.json --manda ~/nb-fonti/github.conf   (sul Pi, dal cron)
+Esce con codice 1 senza scrivere niente se i file non arrivano o non tornano.
 """
 import argparse
+import base64
 import csv
 import datetime as dt
+import gzip
 import io
 import json
 import os
@@ -26,11 +32,14 @@ import statistics
 import subprocess
 import sys
 import unicodedata
+import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from meteo import COMUNI_BN   # noqa: E402
 
 BASE = "https://www.mimit.gov.it/images/exportCSV/"
+SITO = "https://notiziebenevento.it"
+REPO = "ernbale/notizie-benevento"
 UA = "NotizieBenevento/1.0 (https://notiziebenevento.it)"
 CARBURANTI = {"Benzina": "benzina", "Gasolio": "gasolio", "GPL": "gpl", "Metano": "metano"}
 GIORNI_VALIDI = 8
@@ -82,16 +91,18 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--uscita", default=os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
                                                      "carburanti.json"))
-    ap.add_argument("--se-piu-vecchio-di", type=float, help="ore: non riscaricare se il file è più recente")
+    ap.add_argument("--manda", metavar="CHIAVE", help="file con la chiave di GitHub: passa i prezzi alla pubblicazione "
+                                                     "se sono più nuovi di quelli sul sito")
     a = ap.parse_args()
-    if a.se_piu_vecchio_di:
+    if a.manda:
+        # il Ministero mette i prezzi di ieri (estrazione) una volta al giorno: se ce li abbiamo già, niente da scaricare
         try:
             with open(a.uscita, encoding="utf-8") as f:
-                prima = dt.datetime.fromisoformat(json.load(f)["scaricato"])
-            if dt.datetime.now(dt.timezone.utc) - prima < dt.timedelta(hours=a.se_piu_vecchio_di):
-                print(f"carburanti: tengo quelli scaricati alle {prima:%H:%M} UTC")
-                return
-        except (OSError, ValueError, KeyError, TypeError):
+                gia = json.load(f)
+            ieri = (dt.datetime.now(dt.timezone.utc) + dt.timedelta(hours=1)).date() - dt.timedelta(days=1)
+            if gia.get("estrazione", "") >= ieri.isoformat():
+                return manda(gia, a.manda)
+        except (OSError, ValueError):
             pass
     try:
         est_a, anag = scarica("anagrafica_impianti_attivi.csv")
@@ -153,6 +164,45 @@ def main():
     print(f"carburanti: {len(con_prezzi)} distributori con prezzi su {len(impianti)} (estrazione {est_p}); "
           f"benzina self meno cara {impianti[classifiche['benzina'][0]]['prezzi']['benzina']['self']['prezzo']:.3f}, "
           f"gasolio {impianti[classifiche['gasolio'][0]]['prezzi']['gasolio']['self']['prezzo']:.3f}")
+    if a.manda:
+        manda(out, a.manda)
+
+
+def manda(dati, chiave):
+    """Fa partire la pubblicazione su GitHub coi prezzi (compressi) se sul sito ci sono quelli di un giorno prima. Non
+    più di una volta ogni ora per gli stessi prezzi: se la pubblicazione non va, si riprova al giro dopo."""
+    try:
+        with urllib.request.urlopen(urllib.request.Request(f"{SITO}/carburanti.json", headers={"User-Agent": UA}),
+                                    timeout=30) as r:
+            sul_sito = json.load(r).get("estrazione", "")
+    except Exception:   # il file non c'è ancora (prima volta) o il sito non risponde: si manda
+        sul_sito = ""
+    if sul_sito >= dati["estrazione"]:
+        print(f"carburanti: sul sito ci sono già i prezzi del {sul_sito}")
+        return
+    stato_p = os.path.join(os.path.dirname(os.path.abspath(chiave)), "carburanti-mandati.json")
+    try:
+        with open(stato_p, encoding="utf-8") as f:
+            stato = json.load(f)
+    except (OSError, ValueError):
+        stato = {}
+    if stato.get("estrazione") == dati["estrazione"] and \
+            dt.datetime.now(dt.timezone.utc) - dt.datetime.fromisoformat(stato["quando"]) < dt.timedelta(minutes=60):
+        print(f"carburanti: prezzi del {dati['estrazione']} già mandati alle {stato['quando'][11:16]} UTC, aspetto")
+        return
+    with open(chiave, encoding="utf-8") as f:
+        token = json.load(f)["token"].strip()
+    pacco = base64.b64encode(gzip.compress(json.dumps(dati, ensure_ascii=False, separators=(",", ":")).encode(), 9)).decode()
+    req = urllib.request.Request(f"https://api.github.com/repos/{REPO}/actions/workflows/pubblica.yml/dispatches",
+                                 method="POST", data=json.dumps({"ref": "main", "inputs": {"carburanti": pacco}}).encode(),
+                                 headers={"Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json",
+                                          "X-GitHub-Api-Version": "2022-11-28", "User-Agent": "nb-carburanti"})
+    with urllib.request.urlopen(req, timeout=60):
+        pass
+    with open(stato_p, "w", encoding="utf-8") as f:
+        json.dump({"estrazione": dati["estrazione"], "quando": dt.datetime.now(dt.timezone.utc).isoformat()}, f)
+    print(f"carburanti: mandati alla pubblicazione i prezzi del {dati['estrazione']} ({len(pacco)} caratteri; "
+          f"sul sito erano del {sul_sito or 'mai'})")
 
 
 if __name__ == "__main__":

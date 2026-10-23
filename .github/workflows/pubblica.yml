@@ -17,6 +17,9 @@ on:
       telegram_recupera:
         description: "Telegram: mandare subito tutte le notizie arretrate delle ultime 12 ore (1 = sì, 0 = come sempre)"
         default: "0"
+      carburanti:
+        description: "Prezzi dei carburanti (li manda il Pi di casa: carburanti.json compresso e in base64). Vuoto = quelli già pubblicati"
+        default: ""
 
 permissions:
   contents: read
@@ -53,10 +56,19 @@ jobs:
             curl -fsSL --max-time 30 "https://notiziebenevento.it/meteo.json" -o meteo.json || echo "nessun meteo precedente"
           fi
 
-      - name: Prezzi dei carburanti (dati del Ministero, riscaricati ogni 6 ore)
+      # il sito del Ministero da GitHub non si apre: i prezzi li scarica il Pi di casa (strumenti/carburanti.py --manda)
+      # e li manda qui quando sono nuovi; nelle altre pubblicazioni restano quelli già sul sito
+      - name: Prezzi dei carburanti (dal Pi di casa, o quelli già pubblicati)
+        env:
+          CARBURANTI: ${{ github.event.inputs.carburanti }}
         run: |
-          curl -fsSL --max-time 30 "https://notiziebenevento.it/carburanti.json" -o carburanti.json || echo "nessun prezzo pubblicato prima"
-          python3 strumenti/carburanti.py --se-piu-vecchio-di 6 || echo "Prezzi dei carburanti non aggiornati: tengo quelli già pubblicati"
+          if [ -n "$CARBURANTI" ] && printf '%s' "$CARBURANTI" | base64 -d | gunzip > carburanti.nuovo \
+             && python3 -c "import json; d = json.load(open('carburanti.nuovo')); assert len(d['impianti']) > 60 and d['classifiche']['benzina'] and d['estrazione']; print('carburanti: arrivati dal Pi i prezzi del', d['estrazione'])"; then
+            mv carburanti.nuovo carburanti.json
+          else
+            rm -f carburanti.nuovo
+            curl -fsSL --max-time 30 "https://notiziebenevento.it/carburanti.json" -o carburanti.json || echo "nessun prezzo pubblicato prima"
+          fi
 
       # le immagini di anteprima già fatte: si rifanno solo quelle delle notizie nuove o cambiate
       - uses: actions/cache@v4
