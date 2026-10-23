@@ -107,6 +107,10 @@ def unisci(dati, nuove, adesso, err):
     oggi = adesso.date()
     per_id = {c["id"]: c for c in dati.setdefault("chiusure", [])}
     fatte = []
+    # l'ora in cui la vedetta ha trovato la chiusura (per le statistiche: quanto ci mette ad arrivare sul sito): la pista
+    # indicata, o la prima delle piste viste in questo giro con lo stesso Comune
+    piste = {p.get("id"): p for p in leggi(PISTE, {}).get("piste") or []}
+    viste_ora = [piste[v] for v in nuove.get("viste") or [] if v in piste]
     for c in nuove.get("chiusure") or []:
         if not isinstance(c, dict):
             err.append(f"chiusura non valida: {c!r}")
@@ -114,23 +118,36 @@ def unisci(dati, nuove, adesso, err):
         controlla_una(c, oggi, err)
         if err:
             continue
-        c = {k: c[k] for k in ("comune", "cosa", "giorni", "motivo", "fonte", "revocata", "nota") if k in c}
+        c = {k: c[k] for k in ("comune", "cosa", "giorni", "motivo", "fonte", "revocata", "nota", "pista") if k in c}
         c["giorni"] = sorted(set(c["giorni"]))
         c["id"] = f"{slug(c['comune'])}-{c['giorni'][0]}"
         ora = adesso.isoformat(timespec="seconds")   # al secondo: chiusure_social.py la confronta con l'ora dei post
+        p = piste.get(c.get("pista")) or min((x for x in viste_ora if (x.get("comune") or "").lower() == c["comune"].lower()),
+                                              key=lambda x: x.get("trovata") or "", default=None)
+        if p:
+            c["pista"], c["trovata"] = p["id"], p.get("trovata")
         if c["id"] in per_id:
             vecchia = per_id[c["id"]]
-            confronta = lambda x: {k: v for k, v in x.items() if k not in ("id", "aggiunta", "aggiornata")}
+            for k in ("pista", "trovata"):   # restano quelle della prima volta
+                if vecchia.get(k):
+                    c[k] = vecchia[k]
+            confronta = lambda x: {k: v for k, v in x.items() if k not in ("id", "aggiunta", "aggiornata", "pista", "trovata")}
             if confronta(vecchia) != confronta(c):
                 c["aggiunta"], c["aggiornata"] = vecchia.get("aggiunta") or ora, ora
                 per_id[c["id"]].clear()
                 per_id[c["id"]].update(c)
-                fatte.append(f"aggiornata {c['id']}")
+                fatte.append(f"aggiornata {c['comune']} {dt.date.fromisoformat(c['giorni'][0]):%d/%m}")
         else:
             c["aggiunta"] = ora
             dati["chiusure"].append(c)
             per_id[c["id"]] = c
-            fatte.append(f"nuova {c['id']}")
+            fatte.append(f"nuova {c['comune']} {dt.date.fromisoformat(c['giorni'][0]):%d/%m}")
+    scartate = {s.get("pista"): s for s in dati.get("scartate") or []}
+    for s in nuove.get("scartate") or []:
+        if isinstance(s, dict) and s.get("pista"):
+            scartate[s["pista"]] = {"pista": s["pista"], "motivo": str(s.get("motivo") or "")[:200],
+                                    "quando": adesso.isoformat(timespec="minutes")}
+    dati["scartate"] = list(scartate.values())[-200:]   # per le statistiche: perché una pista non è uscita
     viste = dati.setdefault("viste", [])
     for v in (nuove.get("viste") or []) + [s.get("pista") for s in nuove.get("scartate") or [] if isinstance(s, dict)]:
         if v and v not in viste:
