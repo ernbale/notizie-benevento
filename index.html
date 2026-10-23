@@ -55,7 +55,7 @@
   .testata .nome { text-align: center; text-decoration: none; }
   .testata .nome .grande { display: block; font: 700 44px/1 var(--serif); letter-spacing: -1px; margin: 0; }
   .testata .nome .piccolo { display: block; font: 600 13px/1.4 var(--sans); letter-spacing: 2px; text-transform: uppercase; margin-top: 4px; }
-  .menu { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 4px 12px;
+  .menu { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 4px 13px;
           padding: 10px 0; border-top: 1px solid var(--nero); border-bottom: 1px solid var(--riga); }
   .menu button { font: 600 15px var(--sans); background: none; border: 0; padding: 4px 0; color: var(--nero); cursor: pointer; border-bottom: 2px solid transparent; }
   .menu button[aria-pressed="true"] { border-bottom-color: var(--rosso); }
@@ -184,11 +184,6 @@
   .menu .link-archivio { font: 600 15px var(--sans); color: var(--blu); text-decoration: none; padding: 4px 0; }
   .menu .link-comuni { font: 600 15px var(--sans); color: var(--nero); text-decoration: none; padding: 4px 0; border-bottom: 2px solid transparent; }
   .menu .link-comuni:hover { border-bottom-color: var(--rosso); }
-  .menu .link-meteo { display: inline-flex; align-items: center; gap: 5px; font: 600 15px var(--sans); color: var(--nero); text-decoration: none;
-                      padding: 4px 0; border-bottom: 2px solid transparent; }
-  .menu .link-meteo:hover { border-bottom-color: var(--rosso); }
-  .menu .link-meteo .ico svg { width: 26px; height: 26px; display: block; }
-  .menu .link-meteo b { font-weight: 700; }
   @media (prefers-reduced-motion: reduce) { .an-goccia, .an-fiocco, .an-alone, .an-nube, .an-fulmine, .an-nebbia { animation: none !important; } }
   /* riquadro meteo nella colonna di destra */
   .meteo-box { display: block; text-decoration: none; color: var(--nero); border-top: 3px solid var(--nero); padding: 8px 0 14px; margin-bottom: 18px; }
@@ -255,7 +250,7 @@
   .menu .link-archivio:hover { text-decoration: underline; }
   .cerca-campo { display: flex; align-items: stretch; }
   .cerca-campo input { font: 500 15px var(--sans); padding: 6px 10px; border: 1px solid var(--nero); border-right: 0; border-radius: 4px 0 0 4px;
-                       background: #fff; color: var(--nero); min-width: 0; width: 140px; -webkit-appearance: none; appearance: none; }
+                       background: #fff; color: var(--nero); min-width: 0; width: 150px; -webkit-appearance: none; appearance: none; }
   .cerca-campo button { display: inline-flex; align-items: center; justify-content: center; width: 40px; border: 1px solid var(--nero);
                         border-radius: 0 4px 4px 0; background: var(--nero); color: #fff; cursor: pointer; padding: 0; }
   .cerca-campo svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; }
@@ -499,7 +494,6 @@
       <option value="fortore">Fortore e Tammaro</option>
       <option value="provincia">Altri comuni</option>
     </select>
-    <a class="link-meteo" href="meteo.html" id="link-meteo"><span class="ico" id="link-meteo-ico"></span>Meteo <b id="link-meteo-t"></b></a>
     <a class="link-archivio" href="#archivio">Archivio</a>
     <form class="cerca-campo" id="cerca-home" role="search">
       <input type="search" id="cerca-home-q" placeholder="Cerca tra le notizie" aria-label="Cerca tra le notizie" autocomplete="off" enterkeyhint="search">
@@ -1138,12 +1132,6 @@
     }).join("") + '</div><span class="mb-link">Previsioni ora per ora, vento, aria e pollini ›</span>';
     box.innerHTML = html;
     return box;
-  }
-  function voceMeteo() {
-    var a = meteoAdesso();
-    if (!a) return;
-    document.getElementById("link-meteo-ico").innerHTML = icona(meteo.ore.cond[a.i], meteo.ore.giorno[a.i] === 0);
-    document.getElementById("link-meteo-t").textContent = Math.round(meteo.ore.temp[a.i]) + "°";
   }
 
   function disegnaHome(box) {
@@ -2297,7 +2285,6 @@
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(function (j) {
       meteo = j;
-      voceMeteo();
       // se la prima pagina è già disegnata, aggiunge il riquadro meteo in cima alla colonna di destra
       var lat = document.querySelector(".griglia .laterale");
       if (lat && !lat.querySelector(".meteo-box")) { var rm = riquadroMeteo(); if (rm) lat.insertBefore(rm, lat.firstChild); }
