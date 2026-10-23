@@ -81,6 +81,8 @@
 
   /* tabella pagine */
   .tabella { overflow-x: auto; }
+  .elenco-chiusure li { margin: 0 0 8px; }
+  .elenco-chiusure .perche { color: var(--grigio); }
   table { width: 100%; border-collapse: collapse; font-size: 14px; }
   th { text-align: left; font: 600 12px var(--sans); color: var(--grigio); text-transform: uppercase; letter-spacing: .4px; padding: 6px 8px; border-bottom: 1px solid var(--riga); }
   td { padding: 8px; border-bottom: 1px solid rgba(227, 201, 173, .6); vertical-align: top; }
@@ -89,7 +91,7 @@
   td a:hover { color: var(--blu); text-decoration: underline; }
   td .perc { display: block; font-size: 12px; color: var(--grigio); }
 
-  /* le due schede: i numeri e «Dietro le quinte» */
+  /* le tre schede: i numeri, «Dietro le quinte» e le chiusure dei Comuni */
   .schede { display: flex; gap: 6px; margin-top: 16px; border-bottom: 1px solid var(--riga); }
   .schede button { font: 600 15px var(--sans); background: none; border: 0; border-bottom: 3px solid transparent; padding: 8px 12px; cursor: pointer; color: var(--grigio); }
   .schede button.attiva { color: var(--nero); border-bottom-color: var(--rosso); }
@@ -299,23 +301,26 @@
     radice.textContent = "";
     document.getElementById("lucchetto").hidden = true;
     radice.hidden = false;
-    // due schede: i numeri del sito e «Dietro le quinte» (cosa fa l'agente); la scelta resta su questo dispositivo
-    var m = el("div", "vista"), mq = el("div", "vista"), nav = el("nav", "schede");
-    [["Numeri", m], ["Dietro le quinte", mq]].forEach(function (sc, i) {
+    // tre schede: i numeri del sito, «Dietro le quinte» (cosa fa l'agente) e le chiusure dei Comuni; la scelta resta
+    // su questo dispositivo
+    var m = el("div", "vista"), mq = el("div", "vista"), mc = el("div", "vista"), nav = el("nav", "schede");
+    var SCHEDE = [["Numeri", m, ""], ["Dietro le quinte", mq, "#dietro-le-quinte"], ["Chiusure", mc, "#chiusure"]];
+    SCHEDE.forEach(function (sc, i) {
       var b = el("button", "", sc[0]);
       b.type = "button";
       b.addEventListener("click", function () {
-        m.hidden = sc[1] !== m; mq.hidden = sc[1] !== mq;
+        SCHEDE.forEach(function (x) { x[1].hidden = x[1] !== sc[1]; });
         [].forEach.call(nav.children, function (x) { x.classList.toggle("attiva", x === b); });
-        try { localStorage.setItem("nb-statistiche-scheda", String(i)); history.replaceState(null, "", i ? "#dietro-le-quinte" : location.pathname); } catch (e) {}
+        try { localStorage.setItem("nb-statistiche-scheda", String(i)); history.replaceState(null, "", sc[2] || location.pathname); } catch (e) {}
       });
       nav.appendChild(b);
     });
-    radice.appendChild(nav); radice.appendChild(m); radice.appendChild(mq);
+    radice.appendChild(nav); radice.appendChild(m); radice.appendChild(mq); radice.appendChild(mc);
     disegnaAgente(mq, D);
-    var scelta = location.hash === "#dietro-le-quinte" ? 1 : 0;
-    try { if (location.hash !== "#dietro-le-quinte") scelta = +localStorage.getItem("nb-statistiche-scheda") || 0; } catch (e) {}
-    nav.children[scelta === 1 ? 1 : 0].click();
+    disegnaChiusure(mc, D);
+    var scelta = SCHEDE.map(function (x) { return x[2]; }).indexOf(location.hash);
+    if (scelta < 1) { scelta = 0; try { scelta = +localStorage.getItem("nb-statistiche-scheda") || 0; } catch (e) {} }
+    nav.children[scelta >= 0 && scelta < SCHEDE.length ? scelta : 0].click();
     var agg = document.getElementById("agg");
     agg.textContent = "Aggiornato " + new Date(D.aggiornato).toLocaleString("it-IT", { timeZone: "Europe/Rome", day: "numeric", month: "long", hour: "2-digit", minute: "2-digit" });
     var esci = el("button", "", "Esci");
@@ -771,6 +776,84 @@
     box.appendChild(nn);
     if (!giri.length) { box.appendChild(el("p", "vuoto", "Il diario comincia dal prossimo giro dell'agente.")); return; }
     giri.forEach(function (g, i) { box.appendChild(schedaGiro(g, i === 0)); });
+  }
+
+  // ---------- la scheda «Chiusure» (strumenti/chiusure.py, vedetta.py, chiusure_social.py) ----------
+  function disegnaChiusure(box, D) {
+    var C = D.chiusure || {};
+    box.appendChild(el("h2", "", "Chiusure dei Comuni"));
+    box.appendChild(el("p", "sotto", "Scuole, parchi e cimiteri chiusi dai Comuni. La vedetta del Pi controlla i siti dei Comuni, l'albo di Benevento e i giornali ogni 5 minuti nei giorni di allerta e ogni 10 negli altri, giorno e notte; il giro Chiusure controlla ogni chiusura e la pubblica; il sito la manda su Telegram, Facebook e Instagram a qualsiasi ora."));
+    if (C.stato !== "ok") { box.appendChild(avvisoStato(C, "Le chiusure")); return; }
+    var V = C.vedetta, mins = (C.minuti_vedetta_sito || []).slice().sort(function (a, b) { return a - b; });
+    var nn = el("div", "numeri");
+    nn.appendChild(numero("In corso", num((C.in_corso || []).length), "chiusure per oggi e i prossimi giorni"));
+    nn.appendChild(numero("Vedetta del Pi", V && V.controllato ? oraIt(V.controllato) : "–",
+      V ? (V.allerta ? "ogni 5 minuti: " + V.allerta : "ogni 10 minuti, niente allerta") : "non ancora nel diario dei giri"));
+    nn.appendChild(numero("Dalla vedetta al sito", mins.length ? num(mins[Math.floor(mins.length / 2)]) + " min" : "–",
+      mins.length ? "a metà, su " + num(mins.length) + " chiusure" : "nessuna chiusura misurata"));
+    nn.appendChild(numero("Pubblicazioni del giro Chiusure", num((C.storico || []).length), "ultimi 30 giorni"));
+    box.appendChild(nn);
+    if (V && V.esito) box.appendChild(el("p", "nota", "Ultimo controllo della vedetta visto dal giro delle notizie: " + quandoBreve(V.controllato) + " · " + V.esito + "."));
+
+    var g = el("div", "griglia");
+    // le chiusure in corso, coi tempi: trovata, sul sito, sui social
+    var rc = riquadro("Chiusure in corso");
+    if (!(C.in_corso || []).length) rc.appendChild(el("p", "vuoto", "Nessuna chiusura per oggi e i prossimi giorni."));
+    else {
+      var ul = el("ul", "elenco-chiusure");
+      C.in_corso.forEach(function (c) {
+        var li = el("li"), t = el("strong", "", c.comune);
+        li.appendChild(t);
+        li.appendChild(document.createTextNode(": " + c.cosa + " · " + (c.giorni || []).map(giornoBreve).join(", ") + (c.revocata ? " (revocata)" : "")));
+        var u = c.uscite || {}, tempi = [];
+        if (c.trovata) tempi.push("trovata " + oraIt(c.trovata, true));
+        tempi.push("sul sito " + oraIt(c.aggiornata || c.aggiunta, true));
+        [["telegram", "Telegram"], ["facebook", "Facebook"], ["instagram", "Instagram"]].forEach(function (x) {
+          tempi.push(x[1] + " " + (u[x[0]] ? oraIt(u[x[0]]) : "–"));
+        });
+        li.appendChild(el("span", "perche", " — " + tempi.join(" · ")));
+        if (c.fonte && /^https?:\/\//.test(c.fonte.url || "")) {
+          var a = el("a", "", c.fonte.nome || "ordinanza"); a.href = c.fonte.url; a.target = "_blank"; a.rel = "noopener";
+          li.appendChild(document.createTextNode(" · ")); li.appendChild(a);
+        }
+        ul.appendChild(li);
+      });
+      rc.appendChild(ul);
+      rc.appendChild(el("p", "nota", "I tempi dei social sono quelli della pubblicazione precedente: una chiusura appena uscita compare qui alla pubblicazione dopo."));
+    }
+    rc.classList.add("largo"); g.appendChild(rc);
+
+    // le piste della vedetta e cosa ne ha fatto il giro Chiusure
+    var rp = riquadro("Piste della vedetta, ultimi giorni");
+    var piste = C.piste || [];
+    if (!piste.length) rp.appendChild(el("p", "vuoto", "Nessuna pista: la vedetta non ha trovato chiusure."));
+    else {
+      var tb = el("div", "tabella"), t = el("table"), th = el("thead"), tr = el("tr");
+      ["Pista", "Comune", "Da dove", "Esito"].forEach(function (x) { tr.appendChild(el("th", "", x)); });
+      th.appendChild(tr); t.appendChild(th);
+      var body = el("tbody");
+      piste.forEach(function (p) {
+        var r = el("tr"), c1 = el("td"), l = el("a", "", p.titolo || p.link || "pista");
+        if (/^https?:\/\//.test(p.link || "")) { l.href = p.link; l.target = "_blank"; l.rel = "noopener"; }
+        c1.appendChild(l); c1.appendChild(el("span", "perc", p.trovata ? quandoBreve(p.trovata) : ""));
+        r.appendChild(c1); r.appendChild(el("td", "", p.comune || "?")); r.appendChild(el("td", "", p.fonte || ""));
+        r.appendChild(el("td", "", p.esito || ""));
+        body.appendChild(r);
+      });
+      t.appendChild(body); tb.appendChild(t); rp.appendChild(tb);
+    }
+    rp.classList.add("largo"); g.appendChild(rp);
+
+    // le pubblicazioni del giro Chiusure
+    var rs = riquadro("Pubblicazioni del giro Chiusure, ultimi 30 giorni");
+    if (!(C.storico || []).length) rs.appendChild(el("p", "vuoto", "Ancora nessuna."));
+    else {
+      var us = el("ul");
+      C.storico.forEach(function (x) { var li = el("li"); li.appendChild(el("strong", "", quandoBreve(x.quando))); li.appendChild(document.createTextNode(" — " + x.messaggio.replace(/^Chiusure delle \d\d:\d\d: ?/, ""))); us.appendChild(li); });
+      rs.appendChild(us);
+    }
+    rs.classList.add("largo"); g.appendChild(rs);
+    box.appendChild(g);
   }
 
   // ---------- avvio ----------

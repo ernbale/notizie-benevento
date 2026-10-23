@@ -267,6 +267,19 @@ def controlla_decisioni(giro, percorso, d, prima, tutti_gli_id, ev, err):
     return titoli
 
 
+def vedetta_del_giro():
+    """La vedetta delle chiusure vista da questo giro (chiusure.json dell'archivio di casa): l'ultimo controllo, l'esito
+    e le piste degli ultimi giorni, per la scheda «Chiusure» delle statistiche. None se il file non c'è."""
+    p = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
+                     "notizie-benevento-fonti", "chiusure.json")
+    c = leggi(p, None)
+    if not isinstance(c, dict):
+        return None
+    return {"controllato": c.get("controllato"), "esito": str(c.get("esito") or "")[:200], "allerta": c.get("allerta"),
+            "piste": [{k: str(x.get(k) or "")[:160] for k in ("id", "comune", "fonte", "titolo", "link", "trovata")}
+                      for x in (c.get("piste") or [])[-60:]]}
+
+
 def comunicati_del_giro(prima, adesso):
     """I comunicati arrivati per posta dall'ultimo giro (comunicati.json dell'archivio di casa, accanto al sito):
     solo quanti, da quali domini e lo stato della casella, per le statistiche. None se il file non c'è."""
@@ -341,7 +354,7 @@ def voce_diario(giro, d, prima, vanno, registro, inizio, adesso, titoli=None, gi
             "nuove": nuove, "aggiornate": aggiornate, "archiviate": [n["id"] for n in vanno],
             "scartate": scartate, "esame_giornali": esame, "dubbi": giro.get("dubbi") or [], "eventi": giro.get("eventi"),
             "fonti": fonti, "ricerche": ricerche, "notizie_in_prima": len(d["notizie"]) - len(vanno),
-            "comunicati": comunicati_del_giro(prima, adesso)}
+            "comunicati": comunicati_del_giro(prima, adesso), "vedetta": vedetta_del_giro()}
 
 
 def scrivi_diario(base, voce, oggi):

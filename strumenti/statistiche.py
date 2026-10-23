@@ -596,6 +596,42 @@ def puntualita(token, adesso, giri_prima=None):
                                       default=None)}
 
 
+def chiusure(sito, token, adesso, agente_dati):
+    """La scheda «Chiusure»: le chiusure in corso (chiusure.json) con quando sono uscite sui social (il ricordo di
+    chiusure_social.py, che GitHub ripristina prima di questo passo: è quello della pubblicazione precedente), le piste
+    della vedetta del Pi con il loro esito (dal diario dell'ultimo giro) e le pubblicazioni del giro Chiusure (i commit
+    di chiusure.json, 30 giorni)."""
+    c = leggi(os.path.join(sito, "chiusure.json"), {}) or {}
+    oggi = adesso.astimezone(fuso()).date().isoformat()
+    social = leggi(os.environ.get("CHIUSURE_STATO") or "-", {}) or {}
+
+    def uscite(x):
+        k = f"{x['id']}@{x.get('aggiornata') or x.get('aggiunta')}"
+        return {can: (social.get(can) or {}).get(k) for can in ("telegram", "facebook", "instagram")}
+    tutte = c.get("chiusure") or []
+    in_corso = [dict(x, uscite=uscite(x)) for x in tutte if max(x.get("giorni") or [""]) >= oggi]
+    ved = next((g["vedetta"] for g in (agente_dati or {}).get("giri") or [] if isinstance(g.get("vedetta"), dict)), None)
+    viste, scart = set(c.get("viste") or []), {s.get("pista"): s for s in c.get("scartate") or []}
+    pubbl = {x.get("pista") for x in tutte if x.get("pista")}
+    piste = []
+    for p in (ved or {}).get("piste") or []:
+        esito = ("pubblicata" if p["id"] in pubbl else f"scartata: {scart[p['id']].get('motivo') or ''}" if p["id"] in scart
+                 else "vista" if p["id"] in viste else "in attesa")
+        piste.append(dict(p, esito=esito))
+    storico = []
+    if token:
+        dal = (adesso - dt.timedelta(days=30)).astimezone(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+        for x in gh_get(f"repos/{REPO}/commits?path=chiusure.json&since={dal}&per_page=100", token):
+            m = x["commit"]["message"].split("\n")[0]
+            if m.startswith("Chiusure delle"):
+                storico.append({"quando": x["commit"]["committer"]["date"], "messaggio": m[:200]})
+    minuti = [round((dt.datetime.fromisoformat(x["aggiunta"]) - dt.datetime.fromisoformat(x["trovata"])).total_seconds() / 60)
+              for x in tutte if x.get("trovata") and x.get("aggiunta")]
+    return {"stato": "ok", "aggiornato": c.get("aggiornato"), "in_corso": in_corso, "piste": piste[::-1], "storico": storico,
+            "minuti_vedetta_sito": minuti,
+            "vedetta": {k: (ved or {}).get(k) for k in ("controllato", "esito", "allerta")} if ved else None}
+
+
 def comunicati(agente_dati):
     """I comunicati arrivati per posta, dal diario dei giri (archivia.py li conta a ogni giro)."""
     giri = [g for g in (agente_dati or {}).get("giri") or [] if isinstance(g.get("comunicati"), dict)]
@@ -751,6 +787,12 @@ def main():
             dati[nome] = {"stato": "errore", "messaggio": f"non ha risposto: {e}"}
             print(f"AVVISO {nome}:", e, file=sys.stderr)
     dati["comunicati"] = comunicati(dati.get("agente"))
+    try:
+        dati["chiusure"] = chiusure(a.sito, os.environ.get("GH_TOKEN", "").strip(), adesso, dati.get("agente"))
+        print("Chiusure:", dati["chiusure"]["stato"])
+    except Exception as e:
+        dati["chiusure"] = {"stato": "errore", "messaggio": f"non si leggono: {e}"}
+        print("AVVISO chiusure:", e, file=sys.stderr)
     if a.in_chiaro:
         with open(a.in_chiaro, "w", encoding="utf-8") as f:
             json.dump(dati, f, ensure_ascii=False, indent=1)
