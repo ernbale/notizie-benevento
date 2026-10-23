@@ -64,8 +64,14 @@ def attive(dati, oggi):
 
 
 def allerta(oggi):
-    """Il livello di allerta più alto per oggi e per domani, da meteo.json (bollettino o Meteoalarm)."""
-    m = leggi(os.path.join(SITO, "meteo.json"), {})
+    """Il livello di allerta più alto per oggi e per domani, da meteo.json (bollettino o Meteoalarm). meteo.json non
+    è nel repository (lo rifà ogni pubblicazione): si legge dal sito, come allerta_domani.py (23 ott 2026: nel cloud
+    il giro Chiusure lo leggeva «verde» anche con l'allerta gialla). Se non si legge, «sconosciuta»: nel dubbio si cerca."""
+    from allerta_domani import meteo
+    try:
+        m = meteo()
+    except Exception:
+        return {g.isoformat(): "sconosciuta (meteo.json non si legge)" for g in (oggi, oggi + dt.timedelta(days=1))}
     out = {}
     for g in (oggi, oggi + dt.timedelta(days=1)):
         x = ((m.get("allerte") or {}).get("giorni") or {}).get(g.isoformat()) or {}
@@ -193,7 +199,7 @@ def da_fare(adesso):
             if p.get(k):
                 print(f"  {k}: {', '.join(p[k])}")
         print("  testo: " + str(p.get("testo") or "")[:2500].replace("\n", "\n    "))
-    in_allerta = any(LIVELLI.index(l) >= 1 for l in al.values() if l in LIVELLI)
+    in_allerta = any(l not in LIVELLI or LIVELLI.index(l) >= 1 for l in al.values())   # sconosciuta = come allerta
     vedetta_ferma = not ctrl or adesso - dt.datetime.fromisoformat(ctrl) > dt.timedelta(minutes=45)
     if not nuove and not in_allerta and not vedetta_ferma:
         print("\nNIENTE DA FARE: nessuna pista nuova, nessuna allerta per oggi o domani, la vedetta del Pi lavora.")
