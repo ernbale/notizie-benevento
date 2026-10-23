@@ -317,11 +317,11 @@ def viste_sul_sito():
 def imposta_avvio():
     print("Dalla pagina della routine «Notizie Benevento – chiusure» su claude.ai: l'indirizzo dell'avvio (…/fire)")
     url = input("Indirizzo: ").strip()
-    if not re.match(r"^https://api\.anthropic\.com/v1/claude_code/routines/trig_\w+/fire$", url):
-        sys.exit("L'indirizzo deve essere https://api.anthropic.com/v1/claude_code/routines/trig_…/fire: niente salvato.")
+    if not re.match(r"^https://\S*anthropic\.com/\S*trig_\w+\S*/fire$", url):
+        sys.exit("L'indirizzo deve cominciare con https:// , essere di anthropic.com e finire con /fire: niente salvato.")
     token = getpass.getpass("Chiave della routine (non si vede mentre la incolli): ").strip()
-    if not token.startswith("sk-ant-"):
-        sys.exit("La chiave della routine comincia con sk-ant-: niente salvato.")
+    if len(token) < 20 or re.search(r"\s", token):
+        sys.exit("La chiave sembra incompleta (troppo corta o con spazi): niente salvato.")
     vecchio = os.umask(0o077)
     try:
         scrivi(CONF, {"url": url, "token": token})
