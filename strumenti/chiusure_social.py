@@ -28,10 +28,7 @@ import html
 import json
 import os
 import re
-import socket
 import sys
-import time
-import urllib.error
 import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -46,21 +43,7 @@ MESI = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", 
         "novembre", "dicembre"]
 
 
-def riprova(fare, cosa, lettura=False):
-    """Tre tentativi (dopo 5 e 30 secondi): un errore di passaggio non deve perdere una chiusura. Una lettura si
-    riprova sempre; un invio solo se il canale ha risposto di no (errore HTTP) o la connessione non è nemmeno partita:
-    se la risposta si è persa per strada (tempo scaduto) il messaggio potrebbe essere uscito, e riprovare alla cieca
-    farebbe un doppione. In quel caso si finisce con errore e alla pubblicazione dopo il canale si ricontrolla."""
-    for attesa in (5, 30, None):
-        try:
-            return fare()
-        except Exception as e:
-            incerto = isinstance(e, (TimeoutError, socket.timeout)) or (
-                isinstance(e, urllib.error.URLError) and isinstance(e.reason, (TimeoutError, socket.timeout)))
-            if attesa is None or (incerto and not lettura):
-                raise RuntimeError(f"{cosa}: {e}" + (" (forse è uscito: si ricontrolla dopo)" if incerto else "")) from None
-            print(f"  {cosa}: {e} — riprovo tra {attesa} s")
-            time.sleep(attesa)
+riprova = facebook.riprova   # la stessa regola per i tentativi (niente doppioni)
 
 
 def chiave(c):
@@ -190,12 +173,7 @@ def gia_nel_post(c, posts):
 
 # ---------------------------------------------------------------- l'invio
 
-def online(url):
-    try:
-        with urllib.request.urlopen(urllib.request.Request(url, method="HEAD"), timeout=20) as r:
-            return r.status == 200
-    except Exception:
-        return False
+online = facebook.online
 
 
 def manda_telegram(token, testi):
@@ -206,23 +184,8 @@ def manda_telegram(token, testi):
 
 
 def manda_facebook(token, testo, foto):
-    """La foto dell'elenco col testo; se Facebook dice di no alla foto, il post col link alla pagina. Se la foto è
-    uscita non si fa mai anche il post col link: il testo, se manca, si aggiunge al post della foto."""
-    if foto and online(foto):
-        r = None
-        try:
-            r = riprova(lambda: facebook.chiama("POST", "me/photos", token, {"url": foto, "caption": testo}), "Facebook (foto)")
-        except RuntimeError as e:
-            if "forse è uscito" in str(e):
-                raise
-            print(f"  Facebook: la foto non è passata ({e}): pubblico il post col link")
-        if r:
-            pid = r.get("post_id") or f"{r.get('page_id', '')}_{r.get('id')}"
-            letto = riprova(lambda: facebook.chiama("GET", pid, token, {"fields": "message"}), "Facebook (rilettura)", True)
-            if not (letto.get("message") or "").strip():   # il testo deve esserci: se manca, lo si scrive nel post
-                riprova(lambda: facebook.chiama("POST", pid, token, {"message": testo}), "Facebook (testo del post)")
-            return
-    riprova(lambda: facebook.chiama("POST", "me/feed", token, {"message": testo, "link": PAGINA_CHIUSURE}), "Facebook")
+    """La foto dell'elenco col testo (facebook.foto_con_testo: mai un doppio post); se la foto non passa, il link."""
+    facebook.foto_con_testo(token, foto, testo, PAGINA_CHIUSURE)
 
 
 def manda_instagram(token, ig, testo, foto):

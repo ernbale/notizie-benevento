@@ -10,8 +10,8 @@ Lo esegue GitHub dopo ogni pubblicazione del sito, come facebook.py, che ne è i
 - Cosa è già uscito lo legge da Instagram stesso (il link della notizia scritto nella didascalia).
 - Dalle RIEPILOGO_DALLE, come ultimo post del giorno, il riepilogo della giornata («Il Sannio oggi»): un carosello con
   la copertina e le immagini delle notizie più importanti uscite oggi. La scelta e la copertina le fa pagine.py
-  (img/ig/oggi.json), così sul sito c'è già tutto quando Instagram scarica le immagini. Prima di allora un posto del
-  giorno resta libero per il riepilogo.
+  (img/ig/oggi.json), così sul sito c'è già tutto quando Instagram scarica le immagini. È in più delle MAX_GIORNO
+  notizie (scelta del proprietario, 23 ott 2026: «20 + riepilogo per entrambi»); il riepilogo e le chiusure non contano.
 - Alle 23 (il giro delle sere di allerta) solo la notizia di un'allerta arancione o rossa, come su Facebook e
   Telegram, anche dopo il riepilogo e oltre MAX_GIORNO: è la più utile per chi ha figli a scuola. La gialla no.
 - La chiave è la stessa della Pagina (segreto FB_PAGE_TOKEN), con i permessi instagram_basic e
@@ -30,15 +30,13 @@ import time
 import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from facebook import PAGINA, SITO, allerta_seria, candidate, chiama, fuso, quando, rilievo   # stessa chiave e scelta
+from facebook import (PAGINA, RIEPILOGO_DALLE, RIEPILOGO_PAUSA, SITO, TITOLO_RIEPILOGO, allerta_seria,  # come Facebook
+                      candidate, chiama, fuso, quando, rilievo)
 
 MAX_GIORNO = 20
 PAUSA_MINUTI = 50
 DALLE, ALLE = 6, 23   # come facebook.py
-RIEPILOGO_DALLE = 20   # il riepilogo della giornata, l'ultimo post del giorno (dalle 20: voluto dal proprietario)
-RIEPILOGO_PAUSA = 30   # minuti dall'ultimo post
 QUANTE, ALMENO = 5, 3  # notizie nel riepilogo; con meno di ALMENO notizie oggi niente riepilogo
-TITOLO_RIEPILOGO = "Il Sannio oggi"
 
 
 def del_giorno(notizie, adesso):
@@ -84,7 +82,8 @@ def didascalia_riepilogo(giorno, notizie):
 
 
 def gia_pubblicate(ig, token, adesso):
-    """Gli id delle notizie già uscite, quanti post oggi, l'ora dell'ultimo e se il riepilogo di oggi c'è già."""
+    """Gli id delle notizie già uscite, quante notizie oggi (il riepilogo e le chiusure non contano), l'ora dell'ultimo
+    post e se il riepilogo di oggi c'è già."""
     r = chiama("GET", f"{ig}/media", token, {"fields": "caption,timestamp", "limit": 50})
     ids, oggi, ultimo, riepilogo = set(), 0, None, False
     for p in r.get("data", []):
@@ -92,8 +91,9 @@ def gia_pubblicate(ig, token, adesso):
         m = re.search(r"notiziebenevento\.it/notizia/([a-z0-9-]+)", p.get("caption") or "")
         if m:
             ids.add(m.group(1))
-        oggi += t.date() == adesso.date()
-        riepilogo |= t.date() == adesso.date() and (p.get("caption") or "").startswith(TITOLO_RIEPILOGO)
+        didascalia_ = p.get("caption") or ""
+        oggi += t.date() == adesso.date() and not didascalia_.startswith((TITOLO_RIEPILOGO, "🚸"))
+        riepilogo |= t.date() == adesso.date() and didascalia_.startswith(TITOLO_RIEPILOGO)
         ultimo = max(ultimo, t) if ultimo else t
     return ids, oggi, ultimo, riepilogo
 
@@ -189,9 +189,6 @@ def main():
                 return
         print("Instagram: sono le 23, a quest'ora si pubblicano solo le allerte arancioni o rosse")
         return
-    if oggi >= MAX_GIORNO:
-        print(f"Instagram: già {oggi} post oggi, basta così")
-        return
     if riepilogo:
         print("Instagram: il riepilogo di oggi è già uscito, a domani")
         return
@@ -205,8 +202,8 @@ def main():
             print(f"Instagram: pubblicato il riepilogo della giornata ({len(r[1])} notizie, {oggi + 1} post oggi)")
             return
         print("Instagram: niente riepilogo oggi (poche notizie o immagini non ancora online)")
-    elif oggi >= MAX_GIORNO - 1:
-        print(f"Instagram: già {oggi} post oggi, l'ultimo posto è per il riepilogo delle {RIEPILOGO_DALLE}")
+    if oggi >= MAX_GIORNO:
+        print(f"Instagram: già {oggi} notizie oggi (il massimo è {MAX_GIORNO}, più il riepilogo), basta così")
         return
     if ultimo and adesso - ultimo < dt.timedelta(minutes=PAUSA_MINUTI):
         print(f"Instagram: l'ultimo post è delle {ultimo:%H:%M}, aspetto")
