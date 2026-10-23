@@ -713,8 +713,11 @@ def html_carburanti(dati, oggi):
     for c, v in sorted(per_comune.items()):
         h += f'<h4 class="cb-comune" id="c-{slug(c)}">{e(c)}</h4><ul class="notizie-comune distributori">'
         for i in v:
-            mappa = (f' · <a href="https://www.google.com/maps/search/?api=1&amp;query={i["lat"]},{i["lon"]}" '
-                     'target="_blank" rel="noopener nofollow">mappa</a>' if i.get("lat") and i.get("lon") else "")
+            try:   # i numeri si controllano: il file arriva da fuori (il Pi, attraverso la pubblicazione)
+                mappa = (f' · <a href="https://www.google.com/maps/search/?api=1&amp;query={float(i["lat"])},'
+                         f'{float(i["lon"])}" target="_blank" rel="noopener nofollow">mappa</a>')
+            except (KeyError, TypeError, ValueError):
+                mappa = ""
             righe, quando = "", []
             for tipo, nome in NOMI_CARBURANTI.items():
                 p = i["prezzi"].get(tipo) or {}
@@ -1419,8 +1422,12 @@ def main():
                      "aggiornati ogni mattina.", url, "/condivisione.png",
                      jsonld={"@context": "https://schema.org", "@type": "WebPage", "name": "Prezzi dei carburanti nel Sannio",
                              "url": url, "isPartOf": {"@type": "WebSite", "name": NOME, "url": SITO + "/"}})
-    scrivi(os.path.join(sito, "carburanti", "index.html"),
-           pagina(modello, seo, {"statica": True}, html_carburanti(carb, oggi), articolo=True))
+    try:
+        corpo = html_carburanti(carb, oggi)
+    except Exception as ex:   # un file dei prezzi rotto non deve fermare la pubblicazione: la pagina dice «non disponibili»
+        print(f"AVVISO: carburanti.json non torna ({type(ex).__name__}: {ex}): pagina senza prezzi", file=sys.stderr)
+        carb, corpo = {}, html_carburanti({}, oggi)
+    scrivi(os.path.join(sito, "carburanti", "index.html"), pagina(modello, seo, {"statica": True}, corpo, articolo=True))
     mappa.append((url, carb.get("estrazione")))
     distributori = {}
     for i in carb.get("impianti") or []:
