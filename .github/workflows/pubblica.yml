@@ -127,7 +127,7 @@ jobs:
         env:
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
           FB_SUBITO: ${{ github.event.inputs.facebook_subito || '0' }}
-        run: python3 strumenti/facebook.py || echo "::warning::Facebook non ha pubblicato (vedi l'avviso sopra)"
+        run: python3 strumenti/facebook.py --stato "$RUNNER_TEMP/social/facebook.json" || echo "::warning::Facebook non ha pubblicato (vedi l'avviso sopra)"
 
       - name: Instagram (una notizia ogni ora e mezza e il riepilogo della sera, se è il momento)
         env:
