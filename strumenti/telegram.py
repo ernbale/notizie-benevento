@@ -3,7 +3,7 @@
 
 Lo esegue GitHub dopo ogni pubblicazione del sito, come facebook.py. Su Telegram si legge tutto di seguito, come un
 notiziario: qui niente pausa di un'ora come su Facebook, ma al massimo POR_GIRO messaggi per volta e MAX_GIORNO al
-giorno, solo dalle 7 alle 22 (alle 23 solo le allerte importanti, come su Facebook).
+giorno, solo dalle 6 fino al giro delle 22 compreso (alle 23 solo le allerte importanti, come su Facebook).
 - Notizia nuova: titolo, riassunto, link (Telegram mostra l'anteprima con l'immagine della notizia).
 - Aggiornamento (il riquadro «Aggiornamento» dell'articolo): «Aggiornamento» + titolo + la frase della novità.
 - Il bot non può rileggere il canale: cosa è già uscito lo ricorda in un file (--stato) che GitHub conserva tra
@@ -43,7 +43,7 @@ MAX_GIORNO = 80             # solo un freno contro un errore che manda a raffica
 PAUSA = 3                   # secondi tra un messaggio e l'altro (Telegram ne accetta una ventina al minuto)
 ORE_FINESTRA = 12           # notizie e aggiornamenti più vecchi di così non si mandano più (l'ora è quella
                             # dell'articolo fonte: una notizia trovata tardi ha l'ora del mattino)
-DALLE, ALLE = 7, 22
+DALLE, ALLE = 6, 23   # come facebook.py
 GIORNI_STATO = 4            # quanto si ricorda di cosa è già uscito
 
 
@@ -192,7 +192,7 @@ def main():
         else:
             sera = adesso.hour == 23
             if not DALLE <= adesso.hour < ALLE and not sera:
-                print(f"Telegram: sono le {adesso:%H:%M}, si pubblica dalle {DALLE} alle {ALLE}")
+                print(f"Telegram: sono le {adesso:%H:%M}, si pubblica dalle {DALLE} fino al giro delle {ALLE - 1}")
             else:
                 gia = set(stato["mandati"])
                 if canale:   # una notizia già sul canale non si rimanda, qualunque cosa dica il ricordo

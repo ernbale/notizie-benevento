@@ -20,7 +20,7 @@ Sito: https://notiziebenevento.it (notiziebenevento.com rimanda qui)
 - `strumenti/statistiche.py` + `statistiche/`: pagina privata con visite (Cloudflare Web Analytics), Google e numeri del giornale;
   i dati sono cifrati con la parola d'ordine (segreto `STATISTICHE_PAROLA`), non vanno nel repository.
 - `strumenti/facebook.py`: dopo ogni pubblicazione mette sulla Pagina Facebook una notizia nuova (una all'ora,
-  dalle 7 alle 22), con la chiave nel segreto `FB_PAGE_TOKEN`; senza chiave non fa niente.
+  dalle 6 fino al giro delle 22), con la chiave nel segreto `FB_PAGE_TOKEN`; senza chiave non fa niente.
 - L'agente (routine Claude ogni ora, 6-22) pubblica con git, in un solo commit; GitHub Actions ripubblica il sito.
 - `AGENTE.md`: le istruzioni dell'agente che aggiorna il sito.
 
