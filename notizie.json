@@ -1,7 +1,339 @@
 {
- "aggiornato": "2026-10-23T11:11+02:00",
+ "aggiornato": "2026-10-23T12:11+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "asl-benevento-enti-terzo-settore-case-comunita-20-novembre",
+   "titolo": "ASL Benevento, avviso per gli enti del terzo settore nelle Case della Comunità: domande entro il 20 novembre",
+   "titolo_google": "ASL Benevento, avviso agli enti del terzo settore: scadenza 20/11",
+   "sintesi": "L'ASL Benevento ha aperto una manifestazione di interesse per associazioni ed enti del terzo settore che vogliono collaborare alle attività sociosanitarie nelle Case della Comunità. Le domande scadono il 20 novembre.",
+   "categoria": "altro",
+   "zona": "provincia",
+   "luogo": "Benevento e provincia",
+   "pubblicato": "2026-10-20",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "ASL Benevento",
+     "url": "https://www.aslbenevento.it/notizie/avviso-gli-enti-del-terzo-settore"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "L'ASL Benevento ha pubblicato un avviso per formare un elenco di enti del terzo settore (associazioni e organizzazioni senza scopo di lucro) disposti a collaborare alle attività sociosanitarie nelle Case della Comunità, le strutture di assistenza vicine ai cittadini. Le domande si presentano entro il 20 novembre. L'avviso è stato approvato con la delibera n. 699 del 14 ottobre 2026.",
+      "fonti": [
+       "ASL Benevento"
+      ]
+     },
+     {
+      "testo": "Nelle Case della Comunità l'ASL ha previsto spazi chiamati «Punti Associazione». Riguarda le sedi di Benevento, Cerreto Sannita, Montesarchio, Morcone, Pietrelcina, San Bartolomeo in Galdo, San Giorgio del Sannio, San Marco dei Cavoti, Sant'Agata de' Goti e Telese Terme.",
+      "fonti": [
+       "ASL Benevento"
+      ]
+     },
+     {
+      "testo": "Gli enti possono occuparsi di informazione sui servizi, promozione della salute, prevenzione, gruppi di cammino e attività fisica adattata. Sono previste anche attività per anziani, giovani, famiglie e persone fragili, mediazione culturale e linguistica e sostegno ai familiari di chi è assistito a casa o in cure palliative.",
+      "fonti": [
+       "ASL Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "ASL Benevento",
+      "titolo": "Avviso per gli enti del terzo settore",
+      "url": "https://www.aslbenevento.it/notizie/avviso-gli-enti-del-terzo-settore",
+      "data": "20 ott"
+     }
+    ]
+   },
+   "in_vigore_fino": "2026-11-20"
+  },
+  {
+   "id": "asl-benevento-hpv-aperture-straordinarie-ottobre",
+   "titolo": "ASL Benevento, aperture straordinarie per il vaccino anti-HPV: date e sedi fino al 31 ottobre",
+   "titolo_google": "ASL Benevento, vaccino HPV: aperture straordinarie a ottobre",
+   "sintesi": "L'ASL Benevento ha fissato aperture straordinarie per il vaccino gratuito anti-HPV in sette sedi, dal 24 al 31 ottobre. Nelle sedi segnate con asterisco le donne possono fare anche il test HPV dello screening.",
+   "categoria": "altro",
+   "zona": "provincia",
+   "luogo": "Benevento e provincia",
+   "pubblicato": "2026-10-23",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "ASL Benevento",
+     "url": "https://www.aslbenevento.it/notizie/prevenzione-hpv-vaccinazione-e-screening-sul-territorio"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Durante ottobre l'ASL Benevento fa aperture straordinarie per il vaccino contro l'HPV (il papillomavirus). È gratuito per ragazze e ragazzi nel dodicesimo anno di vita, per le ragazze nate dal 1995 e per i ragazzi nati dal 2006.",
+      "fonti": [
+       "ASL Benevento"
+      ]
+     },
+     {
+      "testo": "Le date: a Benevento, consultorio di via Lungo Sabato, il 24 ottobre dalle 8:30 alle 13:30 e il 28 dalle 15 alle 18. A Vitulano, consultorio di via San Pietro, il 24 dalle 8:30 alle 13:30. A Pietrelcina, Casa di Comunità in contrada Guardiola, il 27 dalle 14:30 alle 17:30. A San Giorgio del Sannio, consultorio di via Manzoni 19, il 31 dalle 8:30 alle 13:30. A San Giorgio la Molara, punto vaccinale, il 26 dalle 12 alle 14. A Morcone, centro vaccinale, il 27 dalle 9 alle 13.",
+      "fonti": [
+       "ASL Benevento"
+      ]
+     },
+     {
+      "testo": "Nelle sedi di Benevento, Vitulano, Pietrelcina e San Giorgio del Sannio le donne nella fascia d'età prevista dallo screening possono fare anche il test HPV.",
+      "fonti": [
+       "ASL Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "ASL Benevento",
+      "titolo": "Prevenzione HPV: vaccinazione e screening sul territorio",
+      "url": "https://www.aslbenevento.it/notizie/prevenzione-hpv-vaccinazione-e-screening-sul-territorio",
+      "data": "23 ott"
+     }
+    ]
+   },
+   "immagine": "vaccini",
+   "in_vigore_fino": "2026-10-31",
+   "foto": "vaccini"
+  },
+  {
+   "id": "paduli-geieffe-polo-industriale-raee-inaugurazione",
+   "titolo": "Paduli, inaugurato il nuovo polo industriale della Geieffe per il riciclo dei rifiuti elettronici",
+   "titolo_google": "Paduli, inaugurato il polo Geieffe per il riciclo dei Raee",
+   "sintesi": "Venerdì 23 ottobre è stato inaugurato nella zona industriale di Paduli il nuovo stabilimento della Geieffe, azienda che tratta e recupera i Raee, i rifiuti di apparecchiature elettriche ed elettroniche. Presenti sindaci, Confindustria Benevento e la Regione.",
+   "categoria": "altro",
+   "zona": "fortore",
+   "luogo": "Paduli",
+   "pubblicato": "2026-10-23T11:59:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/riciclo-raee-geieffe-inaugura-nuovo-polo-industriale/"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/23/mastella-replica-allopposizione-dimissioni-vado-avanti-fino-al-prossimo-anno-perdera-anche-alle-prossime-elezioni/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Venerdì 23 ottobre 2026 è stato inaugurato il nuovo polo industriale della Geieffe, nella zona industriale di Paduli. L'azienda tratta e recupera i Raee, cioè i rifiuti di apparecchiature elettriche ed elettroniche, come vecchi elettrodomestici e computer.",
+      "fonti": [
+       "Cronache del Sannio",
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Hanno partecipato i sindaci di Paduli, Mimmo Vessichelli, e di Benevento, Clemente Mastella, il presidente di Confindustria Benevento Andrea Esposito e, per la Regione Campania, l'assessore Fulvio Bonavitacola e il consigliere Pellegrino Mastella. L'amministratore delegato, Michele Ferringo, ha detto che il progetto è nato cinque anni fa e vuole essere un modello anche a livello nazionale.",
+      "fonti": [
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Esposito ha parlato di un investimento complesso da sostenere, intorno al quale si può costruire un «ecosistema molto produttivo». Bonavitacola ha sottolineato il valore di una nuova attività produttiva in un'area interna e ha detto che la raccolta dei Raee andrebbe incentivata, come avviene per i rifiuti urbani.",
+      "fonti": [
+       "Cronache del Sannio"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "L'inaugurazione del polo Geieffe a Paduli è avvenuta venerdì 23 ottobre.",
+      "fonti": [
+       "Cronache del Sannio",
+       "NTR24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Quanti posti di lavoro dà lo stabilimento e quanto è costato: l'articolo non lo dice."
+    ],
+    "fonti": [
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Riciclo dei raee, la Geieffe inaugura il nuovo polo industriale",
+      "url": "https://www.cronachedelsannio.it/sannionews24/riciclo-raee-geieffe-inaugura-nuovo-polo-industriale/",
+      "data": "23 ott, 11:59"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Mastella replica all’opposizione: ‘Dimissioni? Vado avanti fino al prossimo anno. Perderà anche alle prossime elezioni’",
+      "url": "https://www.ntr24.tv/2026/10/23/mastella-replica-allopposizione-dimissioni-vado-avanti-fino-al-prossimo-anno-perdera-anche-alle-prossime-elezioni/",
+      "data": "23 ott, 10:13"
+     }
+    ]
+   },
+   "immagine": "impianto-rifiuti",
+   "foto": "impianto-rifiuti-2"
+  },
+  {
+   "id": "telese-terme-furto-rame-ferrovia-domiciliari-revocati",
+   "titolo": "Telese Terme, il Tribunale revoca i domiciliari a un 42enne arrestato a luglio con l'accusa di furto di rame in una stazione",
+   "titolo_google": "Telese Terme, revocati i domiciliari al 42enne del furto di rame",
+   "sintesi": "Il Tribunale di Benevento ha revocato gli arresti domiciliari a un 42enne di Telese Terme, arrestato a luglio con l'accusa di furto aggravato di una cinquantina di chili di cavi di rame in una stazione ferroviaria. Ora ha l'obbligo di presentazione.",
+   "categoria": "cronaca",
+   "zona": "telesina",
+   "luogo": "Telese Terme",
+   "pubblicato": "2026-10-23T11:54:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/accusato-furto-50-chili-rame-42enne-lascia-domiciliari/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/23/scarcerato-noto-pregiudicato-di-telese-terme-era-accusato-di-furto/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Tribunale di Benevento ha revocato gli arresti domiciliari a un 42enne di Telese Terme, arrestato a luglio con l'accusa di furto aggravato di rame in una stazione ferroviaria. Al posto dei domiciliari gli ha imposto l'obbligo di presentarsi alla polizia giudiziaria. La Procura aveva dato parere contrario.",
+      "fonti": [
+       "Anteprima24",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Secondo l'accusa, l'uomo era stato arrestato in flagranza, cioè sul fatto, dai Carabinieri della stazione locale. Si sarebbe impossessato di cavi di rame e ne aveva già caricati in auto circa cinquanta chili, quando i militari sono intervenuti e hanno impedito che continuasse. Il reato è aggravato perché riguarda un'infrastruttura pubblica, quella ferroviaria.",
+      "fonti": [
+       "Anteprima24",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "La decisione è arrivata dopo la richiesta dei difensori dell'uomo. Si tratta di una misura cautelare, cioè provvisoria, e non di un giudizio sulla colpevolezza: l'uomo è accusato e per lui vale la presunzione di innocenza.",
+      "fonti": [
+       "Anteprima24",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Il Tribunale ha revocato i domiciliari su richiesta dei difensori, con la Procura contraria, e ha imposto l'obbligo di presentazione; l'accusa è furto aggravato di circa 50 chili di rame in una stazione, con arresto a luglio.",
+      "fonti": [
+       "Anteprima24",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando comincia il processo.",
+     "In quale stazione è avvenuto il fatto: gli articoli non lo dicono."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Accusato del furto di 50 chili di rame, 42enne lascia i domiciliari",
+      "url": "https://www.anteprima24.it/benevento/accusato-furto-50-chili-rame-42enne-lascia-domiciliari/",
+      "data": "23 ott, 11:51"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Scarcerato noto pregiudicato di Telese Terme: era accusato di furto",
+      "url": "https://www.beneventonews24.it/2026/10/23/scarcerato-noto-pregiudicato-di-telese-terme-era-accusato-di-furto/",
+      "data": "23 ott, 11:54"
+     }
+    ]
+   }
+  },
+  {
+   "id": "benevento-corsa-don-pompilio-divieti-sosta-24-ottobre",
+   "titolo": "Benevento, sabato 24 ottobre corsa podistica nel Rione Ferrovia: divieto di sosta dalle 10:30 e strade chiuse dalle 15",
+   "titolo_google": "Benevento, corsa nel Rione Ferrovia: divieti e strade chiuse",
+   "sintesi": "Sabato 24 ottobre a Benevento, per la corsa «Trofeo Don Pompilio» (inizio alle 16:30), da mattina vale il divieto di sosta in viale Principe di Napoli e nelle strade vicine; dalle 15 il circuito di gara è chiuso al traffico.",
+   "categoria": "strade",
+   "zona": "benevento",
+   "luogo": "Benevento, Rione Ferrovia",
+   "pubblicato": "2026-10-23T11:34:00+02:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Comune di Benevento",
+     "url": "https://comune.benevento.it/novita/corsa-podistica-in-memoria-di-don-pompilio-a-rione-ferrovia-c-il-piano-traffico/"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/23/corsa-podistica-in-memoria-di-don-pompilio-a-rione-ferrovia-ce-il-piano-traffico/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Sabato 24 ottobre 2026, dalle 16:30, nel Rione Ferrovia di Benevento si corre la seconda «Corsa Santa Maria di Costantinopoli – Trofeo Don Pompilio», una gara podistica. Il circuito è di 3,3 chilometri, da ripetere tre volte in entrambi i sensi di marcia, per un totale di 10 chilometri. Passa da viale Principe di Napoli, piazza Bissolati e via Grimoaldo Re.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "Per la gara il Comune ha firmato un'ordinanza. Dalle 10:30 e fino alla fine della manifestazione (prevista tra le 18:30 e le 19) c'è il divieto di sosta e fermata, con rimozione dei veicoli, su tutto viale Principe di Napoli, in via Padre de Giovanni, in via Grimoaldo Re e in piazza Bissolati (lato dei numeri civici pari). Il divieto vale anche per i residenti e per chi ha permessi: il Comune li invita a cercare un altro posto per l'auto.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "Dalle 15 e fino alla fine della gara le strade del circuito sono chiuse al traffico. Chiudono anche tratti di via San Giovanni di Dio (tra via Fatebenefratelli e via Romoaldo II), via Vittorio Veneto (tra via Fatebenefratelli e viale Principe di Napoli), via Adua (tra via De Longis e viale Principe di Napoli), via Nuzzolo (tra via Diacono e via Adua) e via Leonardo Bianchi.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "Piazza Bissolati è percorsa dai podisti solo in una corsia, quella verso il ponte Vanvitelli. L'altra resta libera per le auto e per arrivare al pronto soccorso dell'ospedale Fatebenefratelli, in via Paga. L'organizzatore deve anche lasciare corridoi per i mezzi di soccorso. Come parcheggio alternativo il Comune indica, tra le altre, via Paga, via XXV Luglio, via Valfortore, via Mariano Russo, via Diacono e il parcheggio del Pala Parente. I bus AIR della zona cambiano percorso: se ne parla nella notizia dedicata.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Se i divieti del mattino valgano davvero fino alle 10:30 o inizino prima per i cantieri: il Comune parla di attuazione «graduale e progressiva»."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Benevento",
+      "titolo": "Corsa podistica in memoria di don Pompilio a Rione Ferrovia, c’è il piano traffico",
+      "url": "https://comune.benevento.it/novita/corsa-podistica-in-memoria-di-don-pompilio-a-rione-ferrovia-c-il-piano-traffico/",
+      "data": "23 ott, 09:29"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Corsa podistica in memoria di don Pompilio a Rione Ferrovia, c’è il piano traffico",
+      "url": "https://www.ntr24.tv/2026/10/23/corsa-podistica-in-memoria-di-don-pompilio-a-rione-ferrovia-ce-il-piano-traffico/",
+      "data": "23 ott, 11:34"
+     }
+    ]
+   },
+   "immagine": "divieto-sosta",
+   "in_vigore_fino": "2026-10-24",
+   "foto": "divieto-sosta-2"
+  },
   {
    "id": "telese-gepos-sindacati-conti-assunzioni-sit-in-26-ottobre",
    "titolo": "Telese Terme, clinica Gepos: un nuovo licenziamento, i sindacati chiedono chiarezza sui conti e confermano il sit-in del 26 ottobre",
@@ -453,7 +785,7 @@
    "categoria": "politica",
    "zona": "benevento",
    "luogo": "Benevento",
-   "pubblicato": "2026-10-22T19:21:00+02:00",
+   "pubblicato": "2026-10-23T11:41:00+02:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
@@ -472,10 +804,26 @@
     {
      "nome": "Cronache del Sannio",
      "url": "https://www.cronachedelsannio.it/sannionews24/sfiduciamo-mastella-opposizione-chiama-piazza/"
+    },
+    {
+     "nome": "Ottopagine (23/10)",
+     "url": "https://www.ottopagine.it/bn/politica/441924/mastella-replica-all-opposizione-ho-le-mani-pulite-pronto-a-querelare.shtml"
+    },
+    {
+     "nome": "NTR24 (23/10)",
+     "url": "https://www.ntr24.tv/2026/10/23/mastella-replica-allopposizione-dimissioni-vado-avanti-fino-al-prossimo-anno-perdera-anche-alle-prossime-elezioni/"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Venerdì 23 ottobre il sindaco Clemente Mastella ha risposto all'opposizione: dice di non volersi dimettere e di voler andare avanti fino alle elezioni del prossimo anno. «Ho le mani pulite, pulitissime», ha detto, e ha aggiunto che valuterà se fare querele. Ha contestato anche i numeri della mensa scolastica (meno di 1.500 alunni, non 2.000) e ha definito i 24 punti del dossier «non le tavole di Mosè». Sulla manifestazione di domenica ha detto: «Anche se saranno 1.000 persone il 60% è con me».",
+      "fonti": [
+       "Ottopagine (23/10)",
+       "NTR24 (23/10)"
+      ],
+      "giorno": "2026-10-23"
+     },
      {
       "testo": "Giovedì 22 ottobre i gruppi di opposizione del Consiglio comunale di Benevento hanno presentato una mozione di sfiducia contro il sindaco Clemente Mastella e la sua Giunta. Lo hanno fatto in una conferenza stampa a Palazzo Mosti, la sede del Comune. Dietro l'iniziativa ci sono Pd, Città Aperta, Sinistra Italiana-Avs, Civici e Riformisti e Civico 22, riuniti nella lista Alternativa per Benevento (ApB). Hanno invitato a firmare anche gli altri consiglieri di minoranza e tre consiglieri di centrodestra: Gerardo Giorgione, Luigia Piccaluga e Rosetta De Stasio.",
       "fonti": [
@@ -483,7 +831,8 @@
        "NTR24",
        "Anteprima24",
        "Cronache del Sannio"
-      ]
+      ],
+      "giorno": "2026-10-22"
      },
      {
       "testo": "La mozione ha 24 punti. Gli ultimi riguardano l'inchiesta giudiziaria nata dall'arresto di un ex dirigente del Comune, in cui secondo Ottopagine ci sono 19 indagati, tra amministratori e dirigenti. L'opposizione dice di essere «garantista», cioè di aspettare le sentenze, ma contesta al Comune di non aver espresso condanna. Il capogruppo Luigi Diego Perifano ricorda che quattro dirigenti su sette del Comune sono coinvolti nelle indagini e parla di macchina comunale in «paralisi». NTR24 aggiunge che il dirigente dell'Urbanistica, arrivato in prestito dalla Provincia, ha deciso di lasciare l'incarico prima del 31 dicembre 2026.",
@@ -491,7 +840,8 @@
        "Ottopagine",
        "NTR24",
        "Cronache del Sannio"
-      ]
+      ],
+      "giorno": "2026-10-22"
      },
      {
       "testo": "Gli altri punti sono problemi amministrativi rimasti aperti: opere incompiute e ritardi sul Pnrr (i fondi europei), il centro storico che si svuota, strisce blu e parcheggi, il terminal degli autobus, la mensa scolastica, i cattivi odori, gli impianti di energia e l'acqua. Anteprima24 cita anche i premi di produzione riconosciuti ai dirigenti. Perifano ha respinto l'accusa di «odio» fatta dal sindaco: «Noi non odiamo nessuno».",
@@ -499,7 +849,8 @@
        "Ottopagine",
        "Anteprima24",
        "Cronache del Sannio"
-      ]
+      ],
+      "giorno": "2026-10-22"
      },
      {
       "testo": "Domenica 25 ottobre, in serata, l'opposizione ha convocato una manifestazione aperta ai cittadini lungo corso Garibaldi, con partenza dalla Biblioteca provinciale e arrivo alla Prefettura. Anteprima24 scrive che altri sviluppi dell'inchiesta sono attesi a novembre. Il sindaco non ha ancora risposto alla mozione nelle fonti lette.",
@@ -507,7 +858,8 @@
        "Ottopagine",
        "Cronache del Sannio",
        "Anteprima24"
-      ]
+      ],
+      "giorno": "2026-10-22"
      }
     ],
     "cronologia": [],
@@ -533,8 +885,7 @@
     ],
     "non_si_sa": [
      "Quando la mozione sarà depositata e discussa in Consiglio, e se avrà le firme necessarie.",
-     "Se i consiglieri di maggioranza o di centrodestra la sosterranno.",
-     "Come risponderà il sindaco Mastella."
+     "Se i consiglieri di maggioranza o di centrodestra la sosterranno."
     ],
     "fonti": [
      {
@@ -560,8 +911,28 @@
       "titolo": "“Sfiduciamo Mastella”: l’opposizione chiama la città in piazza",
       "url": "https://www.cronachedelsannio.it/sannionews24/sfiduciamo-mastella-opposizione-chiama-piazza/",
       "data": "22 ott, 17:22"
+     },
+     {
+      "nome": "Ottopagine (23/10)",
+      "titolo": "Mastella replica all'opposizione: \"Ho le mani pulite, pronto a querelare\"",
+      "url": "https://www.ottopagine.it/bn/politica/441924/mastella-replica-all-opposizione-ho-le-mani-pulite-pronto-a-querelare.shtml",
+      "data": "23 ott, 11:41"
+     },
+     {
+      "nome": "NTR24 (23/10)",
+      "titolo": "Mastella replica all’opposizione: ‘Dimissioni? Vado avanti fino al prossimo anno. Perderà anche alle prossime elezioni’",
+      "url": "https://www.ntr24.tv/2026/10/23/mastella-replica-allopposizione-dimissioni-vado-avanti-fino-al-prossimo-anno-perdera-anche-alle-prossime-elezioni/",
+      "data": "23 ott, 10:13"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Venerdì 23 ottobre il sindaco Mastella ha risposto alla mozione di sfiducia: non si dimette, dice di avere «le mani pulite» e valuta querele.",
+     "fonti": [
+      "Ottopagine (23/10)",
+      "NTR24 (23/10)"
+     ],
+     "quando": "2026-10-23T12:11+02:00"
+    }
    }
   },
   {
@@ -1922,36 +2293,60 @@
     {
      "nome": "Albo pretorio Benevento",
      "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80002"
+    },
+    {
+     "nome": "Comune di Benevento",
+     "url": "https://comune.benevento.it/novita/lavori-edilizi-sabato-mattina-interdizione-al-traffico-per-un-tratto-di-via-annunziata/"
     }
    ],
    "articolo": {
     "racconto": [
      {
+      "testo": "Il Comune di Benevento spiega che la chiusura serve per posizionare un'autogru (un mezzo con braccio per sollevare materiali) e lavorare in sicurezza al completamento della ristrutturazione di un palazzo al civico 11 di via Annunziata. Sabato 24 ottobre il tratto resta chiuso dalle 9:30 alle 13:30, salvo fine anticipata dei lavori. Il divieto di sosta e fermata, con rimozione, vale tra i civici 8 e 4, anche per i residenti con permesso nella zona a traffico limitato.",
+      "fonti": [
+       "Comune di Benevento"
+      ],
+      "giorno": "2026-10-23"
+     },
+     {
       "testo": "Sabato 24 ottobre 2026 un tratto di via Annunziata, a Benevento, resta chiuso ai veicoli dalle 9:30. Il tratto va dall'incrocio con via Tenente Pellegrini a quello con via Borgia. Possono passare solo residenti, chi ha il garage in quel tratto, i mezzi di soccorso e quelli d'emergenza.",
       "fonti": [
        "Albo pretorio Benevento"
-      ]
+      ],
+      "giorno": "2026-10-21"
      },
      {
       "testo": "La chiusura dura fino a quando finisce un intervento, che l'ordinanza prevede si concluda non oltre le 13:30-14:00. Nel solo tratto vicino al civico 6 c'è anche il divieto di sosta e fermata con rimozione, valido per tutti, compresi i titolari del permesso per la zona a traffico limitato Annunziata. L'ordinanza è la n. 430 del Servizio Traffico, del 21 ottobre.",
       "fonti": [
        "Albo pretorio Benevento"
-      ]
+      ],
+      "giorno": "2026-10-21"
      }
     ],
     "concordano": [],
     "divergono": [],
-    "non_si_sa": [
-     "Che intervento sia in programma in via Annunziata: l'oggetto dell'ordinanza non lo dice."
-    ],
+    "non_si_sa": [],
     "fonti": [
      {
       "nome": "Albo pretorio Benevento",
       "titolo": "Chiusura al traffico veicolare del tratto di Via Annunziata compreso tra l'incrocio con Via Tenente Pellegrini e l'incrocio con Via Borgia, eccetto residenti, titolari di autorimesse nel suddetto segmento interessato, mezzi di soccorso e mezzi d'emergenza, ed istituzione, nel solo tratto adiacente il civico 6 di Via Annunziata, divieto di sosta e fermata, con rimozione e valenza ambo i lati anche nei confronti dei titolari di Autorizzazione Transito e Sosta in Ztl Annunziata, limitatamente alla mattinata di Sabato 24 Ottobre 2026, a partire dalle ore 9:30 fino a cessate esigenze subordinate all'avvenuta esecuzione dell'intervento con conclusione prevista non oltre le ore 13:30 / 14:00",
       "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80002",
       "data": "21 ott"
+     },
+     {
+      "nome": "Comune di Benevento",
+      "titolo": "Lavori edilizi, sabato mattina interdizione al traffico per un tratto di via Annunziata",
+      "url": "https://comune.benevento.it/novita/lavori-edilizi-sabato-mattina-interdizione-al-traffico-per-un-tratto-di-via-annunziata/",
+      "data": "22 ott, 10:50"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Il Comune ha chiarito il motivo: serve una autogru per i lavori di ristrutturazione di un palazzo al civico 11; la chiusura va dalle 9:30 alle 13:30.",
+     "fonti": [
+      "Comune di Benevento"
+     ],
+     "quando": "2026-10-23T12:11+02:00"
+    }
    },
    "foto": "strada-chiusa"
   },
@@ -5431,6 +5826,10 @@
     {
      "nome": "Ottopagine (23/10)",
      "url": "https://www.ottopagine.it/bn/cronaca/441920/nel-sannio-prosegue-la-protesta-degli-agricoltori-e-autotrasportatori.shtml"
+    },
+    {
+     "nome": "Anteprima24 (23/10)",
+     "url": "https://www.anteprima24.it/benevento/protesta-statale-87-agricoltori-tir/"
     }
    ],
    "articolo": {
@@ -5833,13 +6232,20 @@
       "titolo": "Nel Sannio prosegue la protesta degli agricoltori e autotrasportatori",
       "url": "https://www.ottopagine.it/bn/cronaca/441920/nel-sannio-prosegue-la-protesta-degli-agricoltori-e-autotrasportatori.shtml",
       "data": "23 ott, 10:59"
+     },
+     {
+      "nome": "Anteprima24 (23/10)",
+      "titolo": "Statale 87, resta il presidio di agricoltori e tir: “Fondi insufficienti”",
+      "url": "https://www.anteprima24.it/benevento/protesta-statale-87-agricoltori-tir/",
+      "data": "23 ott, 11:18"
      }
     ],
     "racconto": [
      {
       "testo": "Venerdì 23 ottobre mattina agricoltori e autotrasportatori del Sannio sono tornati a protestare per ore lungo la statale 87 Benevento-Campobasso, con camion e trattori in fila nei due sensi e traffico rallentato. Dicono: «Non siamo soddisfatti delle misure messe in campo dal governo. Ci sentiamo presi in giro». Secondo Ottopagine, mentre in Campania si va verso la fine delle proteste, nel Sannio la protesta continua.",
       "fonti": [
-       "Ottopagine (23/10)"
+       "Ottopagine (23/10)",
+       "Anteprima24 (23/10)"
       ],
       "giorno": "2026-10-23"
      },
