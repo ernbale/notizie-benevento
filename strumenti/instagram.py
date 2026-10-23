@@ -3,7 +3,7 @@
 
 Lo esegue GitHub dopo ogni pubblicazione del sito, come facebook.py, che ne è il modello:
 - Al massimo una notizia ogni PAUSA_MINUTI e MAX_GIORNO al giorno, dalle 6 fino al giro delle 22 compreso
-  (come Facebook e Telegram): su Instagram poche e buone.
+  (come Facebook: 50 minuti e 20 al giorno, scelta del proprietario il 23 ott 2026; prima erano 90 minuti e 8).
 - Sceglie la più importante tra le notizie delle ultime 12 ore non ancora uscite (stessa importanza di facebook.py).
 - L'immagine è img/ig/<id>.jpg (1080×1350, la fa pagine.py): titolo grande e, se c'è, la foto illustrativa con la
   scritta che è fatta con l'intelligenza artificiale. Instagram la scarica dal sito, che deve essere già online.
@@ -32,8 +32,8 @@ import urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from facebook import PAGINA, SITO, allerta_seria, candidate, chiama, fuso, quando, rilievo   # stessa chiave e scelta
 
-MAX_GIORNO = 8
-PAUSA_MINUTI = 90
+MAX_GIORNO = 20
+PAUSA_MINUTI = 50
 DALLE, ALLE = 6, 23   # come facebook.py
 RIEPILOGO_DALLE = 20   # il riepilogo della giornata, l'ultimo post del giorno (dalle 20: voluto dal proprietario)
 RIEPILOGO_PAUSA = 30   # minuti dall'ultimo post
