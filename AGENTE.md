@@ -228,7 +228,12 @@ basket, scherma, tutto»). Ogni notizia di sport ha `"categoria": "sport"` e `"s
 ## Le Allerte (categoria `meteo`)
 
 Sul sito la sezione si chiama **«Allerte»**. Ci vanno:
-- **allerte meteo della Protezione civile** (gialla, arancione, rossa) che riguardano il Sannio;
+- **allerte meteo della Protezione civile arancioni e rosse** che riguardano il Sannio. L'allerta **gialla non è una
+  notizia** (scelta del proprietario, 23 ott 2026): la mostrano già il riquadro del meteo in prima pagina e la pagina
+  Meteo, e non esce né sul sito né sui social. Un articolo dei giornali sulla sola allerta gialla si scarta con
+  `allerta_gialla`. Se però per un'allerta gialla un Comune chiude scuole, parchi o cimiteri, la **chiusura** è una
+  notizia: il titolo dice cosa chiude e dove (es. «Montesarchio, domani scuole chiuse per il maltempo»), non solo
+  «allerta gialla». `archivia.py` dà ERRORE se in prima pagina c'è una notizia che è solo un'allerta gialla;
 - **chiusure decise dai Comuni** per allerta o maltempo: scuole, parchi e ville comunali, cimiteri, impianti
   sportivi, mercati, uffici;
 - **terremoti** (INGV, con le soglie scritte sopra) e **danni del maltempo** (alberi caduti, allagamenti, frane).
@@ -258,8 +263,8 @@ Regole:
   raccomanda la Protezione civile se lo dice. Niente toni allarmisti: i fatti e gli orari.
 - `in_vigore_fino` = l'ultimo giorno **dell'allerta del titolo** (o della chiusura). Allerta **arancione o rossa**:
   `rilevante: true`. Se il giorno dopo c'è un'allerta più bassa (per esempio gialla dopo l'arancione), non allungare
-  `in_vigore_fino` della notizia vecchia: l'allerta del giorno la mostra già il sito in alto; se serve, scrivi una
-  notizia nuova per il giorno nuovo. Il giorno dopo la fine togli `rilevante`: è finita.
+  `in_vigore_fino` della notizia vecchia: l'allerta del giorno la mostra già il sito in alto; per una gialla niente
+  notizia nuova (solo le chiusure, se ci sono). Il giorno dopo la fine togli `rilevante`: è finita.
 - Le chiusure di più Comuni per la stessa allerta: **una sola notizia** aggiornata a ogni giro con l'elenco dei Comuni
   e cosa chiude (es. «Allerta arancione: chiusi scuole e parchi a Benevento, Montesarchio e Telese»), ogni Comune con
   la sua fonte (comunicato o ordinanza del Comune, oppure due giornali).
@@ -587,7 +592,8 @@ mette in `diario/AAAA-MM-GG.json`; le notizie nuove e aggiornate, le fonti e le 
   giro e che quella «aggiornata» sia cambiata davvero. I soli motivi per scartare un fatto dei giornali:
   `fuori_provincia`, `vecchia`, `una_fonte_non_autorevole` (solo testate non autorevoli e nessuna conferma),
   `politica_senza_effetti` (regola 9), `pubblicita`, `non_notizia` (opinioni, rubriche, ricorrenze, telegiornali),
-  `voce_non_confermata` (indiscrezioni, calciomercato), `non_leggibile` (l'articolo non si apre). Lo sport del Sannio
+  `voce_non_confermata` (indiscrezioni, calciomercato), `non_leggibile` (l'articolo non si apre), `allerta_gialla`
+  (la sola allerta gialla, senza chiusure: vedi «Le Allerte»). Lo sport del Sannio
   non si scarta: ha la sua sezione (vedi «Lo sport»). `nota` (facoltativa) dice il perché in breve. Nella pagina
   privata le scartate dei giornali compaiono da sole con il titolo e il link: in `scartate` metti solo quelle che
   vengono da altre fonti (ufficiali, Comuni, ricerche).
