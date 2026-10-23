@@ -380,6 +380,71 @@ def _giorno_racconto(g):
     return f"{GIORNI[d.weekday()]} {d.day} {MESI_LUNGHI[d.month - 1]}{anno}"
 
 
+def riepilogo_ig(sito, notizie, adesso):
+    """Il riepilogo serale di Instagram (strumenti/instagram.py): la copertina img/ig/oggi-<data>-<impronta>.jpg
+    con le notizie più importanti di oggi e img/ig/oggi.json con la scelta. Con poche notizie niente (e via il json).
+    Restituisce i file da tenere."""
+    from PIL import Image, ImageDraw
+    from facebook import fuso
+    from instagram import ALMENO, del_giorno
+    oggi = adesso.astimezone(fuso())
+    scelte = del_giorno(notizie, oggi)
+    pj = os.path.join(sito, "img", "ig", "oggi.json")
+    if len(scelte) < ALMENO:
+        if os.path.exists(pj):
+            os.remove(pj)
+        return set()
+    giorno = f"{GIORNI[oggi.weekday()]} {oggi.day} {MESI_LUNGHI[oggi.month - 1]}"
+    impronta = hashlib.sha1(json.dumps([giorno, 1] + [[n["id"], n["titolo"], _categoria(n), n.get("luogo")]
+                                                      for n in scelte], ensure_ascii=False).encode()).hexdigest()[:8]
+    rel = f"img/ig/oggi-{oggi.date().isoformat()}-{impronta}.jpg"
+    full = os.path.join(sito, rel)
+    if not os.path.exists(full):
+        W, H = 1080, 1350
+        im = Image.new("RGB", (W, H), "#fdeedd")
+        d = ImageDraw.Draw(im)
+        _testata(d, W)
+        x = 60
+        fo = _font(FONT_BOLD, 30)
+        d.text((x, 205), "IL SANNIO OGGI", font=fo, fill="#c4161c", anchor="lm")
+        d.text((x + fo.getlength("IL SANNIO OGGI") + 18, 205), giorno.upper(), font=fo, fill="#5b5249", anchor="lm")
+        d.text((x, 285), "Le notizie della giornata", font=_font(FONT_BLACK, 66), fill="#111111", anchor="lm")
+        xt = x + 84
+        lt, alto, basso = W - 60 - xt, 370, H - 110
+        for size in range(46, 28, -2):   # i titoli più grandi possibile, al massimo 3 righe l'uno
+            ft = _font(FONT_BOLD, size)
+            blocchi = [_a_capo(n["titolo"], ft, lt) for n in scelte]
+            if sum(34 + min(len(b), 3) * size * 1.18 + 30 for b in blocchi) <= basso - alto:
+                break
+        fc, fn = _font(FONT_BOLD, 22), _font(FONT_BLACK, 34)
+        y = alto
+        for i, (n, b) in enumerate(zip(scelte, blocchi), 1):
+            d.rounded_rectangle([x, y, x + 58, y + 58], radius=12, fill="#c4161c")
+            d.text((x + 29, y + 30), str(i), font=fn, fill="#ffffff", anchor="mm")
+            cat = " · ".join(([_categoria(n)] if n.get("categoria") in NOMI_CAT and n["categoria"] != "altro" else [])
+                             + ([breve(n["luogo"], 30)] if n.get("luogo") else [])).upper()
+            d.text((xt, y + 12), cat, font=fc, fill="#5b5249", anchor="lm")
+            y += 34
+            if len(b) > 3:
+                b = b[:3]
+                while ft.getlength(b[-1] + "…") > lt and " " in b[-1]:
+                    b[-1] = b[-1].rsplit(" ", 1)[0]
+                b[-1] = b[-1].rstrip(",;:.") + "…"
+            for rg in b:
+                d.text((xt, y), rg, font=ft, fill="#111111")
+                y += size * 1.18
+            y += 30
+        d.rectangle([0, H - 14, W, H], fill="#c4161c")
+        d.text((x, H - 56), "Scorri per leggerle · tutto su notiziebenevento.it", font=_font(FONT_BOLD, 30),
+               fill="#111111", anchor="lm")
+        os.makedirs(os.path.dirname(full), exist_ok=True)
+        im.save(full, "JPEG", quality=88, optimize=True)
+    with open(pj, "w", encoding="utf-8") as f:
+        json.dump({"data": oggi.date().isoformat(), "giorno": giorno, "ids": [n["id"] for n in scelte],
+                   "copertina": rel}, f, ensure_ascii=False)
+    return {rel}
+
+
 def _racconto(righe, fonti):
     """Storia di più giorni: sopra i paragrafi di ogni giorno la sua data (come disegna index.html)."""
     piu_giorni = len({r.get("giorno") for r in righe if isinstance(r, dict) and r.get("giorno")}) > 1
@@ -917,6 +982,7 @@ def main():
                 continue
             if adesso - t <= dt.timedelta(hours=48):
                 usate_ig.add(immagine_ig(sito, x))
+        usate_ig |= riepilogo_ig(sito, prima.get("notizie", []), adesso)
         for f in glob.glob(os.path.join(sito, "img", "ig", "*.jpg")):
             if os.path.relpath(f, sito).replace(os.sep, "/") not in usate_ig:
                 os.remove(f)
