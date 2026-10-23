@@ -778,10 +778,18 @@
     else if (n.stato === "una_fonte") r.appendChild(el("span", "unafonte", ["Una sola fonte"]));
     else r.appendChild(el("span", "conferma", ["✓ " + lista.length + " fonti"]));
     r.appendChild(testo(" · "));
-    lista.forEach(function (f, i) {
-      if (i > 0) r.appendChild(testo(i === lista.length - 1 ? " e " : ", "));
+    // in prima pagina al massimo 3 fonti: tutte le altre sono nella pagina della notizia
+    var tante = lista.length > 3, mostrate = tante ? lista.slice(0, 3) : lista;
+    mostrate.forEach(function (f, i) {
+      if (i > 0) r.appendChild(testo(!tante && i === mostrate.length - 1 ? " e " : ", "));
       r.appendChild(linkSicuro(f.url, f.nome || "fonte"));
     });
+    if (tante) {
+      var altre = el("a", "", [lista.length === 4 ? "un'altra" : "altre " + (lista.length - 3)]);
+      altre.href = linkArticolo(n);
+      r.appendChild(testo(" e "));
+      r.appendChild(altre);
+    }
     // una notizia che va avanti da giorni dice quando è stata aggiornata (il riquadro «Aggiornamento» dell'articolo)
     var ag = (n.articolo || {}).aggiornamento;
     if (aggiornamentoRecente(n)) {
