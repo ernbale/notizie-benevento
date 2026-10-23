@@ -592,7 +592,8 @@ def puntualita(token, adesso, giri_prima=None):
             "annullate": sum(1 for c in corse if c.get("conclusion") == "cancelled"),
             "rilanciate": sum(1 for c in corse if c.get("event") == "workflow_dispatch"),
             "sentinella_rossa": sum(1 for c in sentinelle if c.get("conclusion") == "failure"),
-            "sentinella_ultima": max((c["created_at"] for c in sentinelle), default=None)}
+            "sentinella_allarme": max((c["created_at"] for c in sentinelle if c.get("conclusion") == "failure"),
+                                      default=None)}
 
 
 def comunicati(agente_dati):

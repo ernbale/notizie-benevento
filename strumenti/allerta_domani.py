@@ -28,19 +28,26 @@ def meteo():
             return json.load(f)
 
 
-def main():
+def allerte(adesso=None):
+    """(domani, allerte arancioni o rosse per domani, zone del bollettino). Eccezione se meteo.json non si legge.
+    La usa anche la sentinella, per sapere se stasera c'è il giro delle 23."""
     from zoneinfo import ZoneInfo
-    domani = (dt.datetime.now(ZoneInfo("Europe/Rome")) + dt.timedelta(days=1)).date().isoformat()
-    try:
-        g = (meteo().get("allerte") or {}).get("giorni", {}).get(domani) or {}
-    except Exception as e:
-        print(f"NO: meteo.json non si legge ({type(e).__name__}): controlla a mano il bollettino della Protezione civile")
-        sys.exit(2)
+    domani = ((adesso or dt.datetime.now(ZoneInfo("Europe/Rome"))) + dt.timedelta(days=1)).date().isoformat()
+    g = (meteo().get("allerte") or {}).get("giorni", {}).get(domani) or {}
     zone = g.get("zone") or {}
     gravi = [f"{z} ({v.get('livello')})" for z, v in zone.items() if v.get("livello") in GRAVI]
     if not zone:   # bollettino non ancora uscito: Meteoalarm, che vale per tutta la Campania
         gravi = [f"Meteoalarm Campania ({m.get('livello')}, {m.get('tipo')})" for m in g.get("meteoalarm") or []
                  if m.get("livello") in GRAVI]
+    return domani, gravi, zone
+
+
+def main():
+    try:
+        domani, gravi, zone = allerte()
+    except Exception as e:
+        print(f"NO: meteo.json non si legge ({type(e).__name__}): controlla a mano il bollettino della Protezione civile")
+        sys.exit(2)
     if gravi:
         print(f"SÌ: allerta per domani {domani}: {', '.join(gravi)}")
         sys.exit(0)
