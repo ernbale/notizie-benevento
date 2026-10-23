@@ -1,7 +1,8 @@
 {
- "aggiornato": "2026-10-23T11:31+02:00",
+ "aggiornato": "2026-10-23T17:21+02:00",
  "viste": [
-  "1131ffc78db3"
+  "1131ffc78db3",
+  "a4f3f5a64d51"
  ],
  "chiusure": [],
  "scartate": [
@@ -9,6 +10,11 @@
    "pista": "1131ffc78db3",
    "motivo": "Piano traffico per corsa podistica: nessuna chiusura di scuole, parchi, cimiteri, impianti o mercati",
    "quando": "2026-10-23T11:31+02:00"
+  },
+  {
+   "pista": "a4f3f5a64d51",
+   "motivo": "Ordinanza di Apollosa n.41/26 per il 21/10/2026: chiusura già finita (oggi è il 23/10)",
+   "quando": "2026-10-23T17:21+02:00"
   }
  ]
 }
