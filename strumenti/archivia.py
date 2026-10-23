@@ -201,6 +201,7 @@ MOTIVI = {   # gli unici motivi per non pubblicare un fatto dei giornali (22 ott
     "voce_non_confermata": "voce o indiscrezione non confermata (anche calciomercato)",
     "non_leggibile": "l'articolo non si apre",
     "allerta_gialla": "allerta gialla senza chiusure (la mostra la pagina Meteo)",   # 23 ott 2026, scelta del proprietario
+    "atto_interno": "atto interno del Comune, che alla gente non serve (turni, nomine, gare, liquidazioni)",   # 23 ott
 }
 # una notizia che è solo un'allerta gialla (la gialla non si pubblica; le chiusure per la gialla sì)
 GIALLA = re.compile(r"\bgiall[ae]\b", re.I)
@@ -265,6 +266,9 @@ def controlla_decisioni(giro, percorso, d, prima, tutti_gli_id, ev, err):
         elif e == "scartata" and x.get("motivo") not in MOTIVI:
             err.append(f"{w}: «motivo» deve essere uno di: {', '.join(MOTIVI)} (un fatto locale vero con una fonte "
                        "autorevole non si scarta: esce, anche se piccolo)")
+        elif e == "scartata" and gruppi[gid].get("comuni") and len(str(x.get("nota") or "").strip()) < 15:
+            err.append(f"{w}: è un avviso di {', '.join(gruppi[gid]['comuni'])}: scrivi in «nota» cosa diceva e perché "
+                       "alla gente non serve (AGENTE.md, «I siti dei Comuni»: quello che serve a chi ci abita si pubblica)")
     return titoli
 
 

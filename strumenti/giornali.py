@@ -331,6 +331,21 @@ def main():
                                 "riprova a mano più tardi")
                 risultati[nome] = (autorevole, [])
 
+    # gli avvisi e gli atti nuovi dei Comuni (comuni.json da casa: i loro siti e, dal 23 ott 2026, gli albi pretori),
+    # fonte ufficiale, con l'ora in cui sono comparsi: anche per loro una decisione ciascuno, come per i giornali
+    # (lui, 23 ott: «per i comuni il giro agente si deve impegnare molto di più, troppo poche pubblicate»)
+    comunali = set()
+    try:
+        with open(os.path.join(FONTI_CASA, "comuni.json"), encoding="utf-8") as f:
+            for v in json.load(f).get("voci", []):
+                nome = f"Comune di {v.get('comune')}"
+                comunali.add(nome)
+                risultati.setdefault(nome, (True, []))[1].append(
+                    {"titolo": v.get("titolo", ""), "url": v.get("link", ""), "data": data_rss(v.get("primo_visto"))})
+    except (OSError, ValueError) as e:
+        print(f"ATTENZIONE: comuni.json (siti e albi dei Comuni) non si legge ({type(e).__name__}): guardalo a mano")
+    n_comuni = sum(1 for nome in comunali for v in risultati[nome][1] if v["data"] and v["data"] >= dal)
+
     gia = citati()
     articoli = []
     for nome, (autorevole, voci) in risultati.items():
@@ -368,7 +383,8 @@ def main():
             "ultimo": max(x["data"] for x in nuovi),
             "testate": sorted({x["testata"] for x in g}),
             "autorevoli": sorted({x["testata"] for x in g if x["autorevole"]}),
-            "ufficiali": sorted({x["testata"] for x in g if x["testata"] in UFFICIALI}),
+            "ufficiali": sorted({x["testata"] for x in g if x["testata"] in UFFICIALI or x["testata"] in comunali}),
+            "comuni": sorted({x["testata"] for x in g if x["testata"] in comunali}),
             "citato_in": sorted({x["citato"] for x in g if x["citato"]}),
             "articoli": [{"testata": x["testata"], "titolo": x["titolo"], "url": x["url"],
                           "data": x["data"].astimezone(fuso()).isoformat(timespec="minutes"),
@@ -382,12 +398,14 @@ def main():
               "gruppi": [{"id": g.pop("id"), **g} for g in elenco]}
     with open(a.uscita, "w", encoding="utf-8") as f:
         json.dump(uscita, f, ensure_ascii=False, indent=1)
-    registro.sort(key=lambda r: [t[0] for t in TESTATE].index(r.split(" | ")[0]))
+    ordine = [t[0] for t in TESTATE]
+    registro.sort(key=lambda r: ordine.index(r.split(" | ")[0]) if r.split(" | ")[0] in ordine else len(ordine))
     with open(a.registro, "w", encoding="utf-8") as f:
         f.write("\n".join(registro) + "\n")
 
-    print(f"Articoli dei giornali usciti dalle {dal.strftime('%H:%M')} del {dal.strftime('%d/%m')}: "
-          f"{len(elenco)} fatti da decidere (scrivi una decisione per ognuno in «decisioni» del diario)\n")
+    print(f"Articoli dei giornali e avvisi dei Comuni ({n_comuni} nuovi da siti e albi pretori) usciti dalle "
+          f"{dal.strftime('%H:%M')} del {dal.strftime('%d/%m')}: {len(elenco)} fatti da decidere (scrivi una decisione "
+          "per ognuno in «decisioni» del diario)\n")
     for r in registro:
         if "non raggiungibile" in r or "solo la homepage" in r:
             print("ATTENZIONE:", r)
