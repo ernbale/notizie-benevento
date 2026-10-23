@@ -1,6 +1,1071 @@
 {
  "notizie": [
   {
+   "id": "benevento-tangenziale-est-scontro-tre-veicoli-20-ottobre",
+   "titolo": "Benevento, tangenziale Est: scontro tra tre veicoli all'uscita Benevento Est, un ferito e lunghe code",
+   "titolo_google": "Benevento, tangenziale Est: scontro tra tre veicoli, un ferito",
+   "sintesi": "Martedì 20 ottobre in prima serata, sul raccordo per la Napoli-Canosa, si sono scontrati una Ford Focus, una Fiat e un furgoncino. Una persona è ferita, non in condizioni gravi.",
+   "categoria": "cronaca",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-20T19:25:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/scontro-tra-tre-veicoli-sulla-tangenziale-un-ferito-e-lunghe-code/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Martedì 20 ottobre, in prima serata, tre veicoli si sono scontrati sulla tangenziale Est di Benevento, lungo il raccordo autostradale per la Napoli-Canosa, all'altezza dell'uscita Benevento Est. Sono coinvolti una Ford Focus, una Fiat e un furgoncino.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Una persona è rimasta ferita, ma secondo l'articolo non sarebbe in condizioni gravi. I Carabinieri hanno fatto i rilievi e la Polizia Stradale ha disciplinato il traffico. L'incidente ha causato una lunghissima coda di auto.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "L'ora esatta e la causa dello scontro.",
+     "Dove è stato portato il ferito."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Scontro tra tre veicoli sulla tangenziale: un ferito e lunghe code",
+      "url": "https://www.anteprima24.it/benevento/scontro-tra-tre-veicoli-sulla-tangenziale-un-ferito-e-lunghe-code/",
+      "data": "20 ott, 19:25"
+     }
+    ]
+   },
+   "archiviato_il": "2026-10-23"
+  },
+  {
+   "id": "ficomirrors-morcone-vertice",
+   "titolo": "Morcone, vertice in Prefettura sulla Ficomirrors: l'azienda, che vuole spostare la produzione in Polonia dal 2029, apre a nuove produzioni; nuovo incontro a dicembre",
+   "titolo_google": "Morcone, vertice sulla Ficomirrors: nuovo incontro a dicembre",
+   "sintesi": "Lunedì 19 ottobre in Prefettura a Benevento azienda, sindacati, Confindustria e sindaci hanno discusso il futuro dello stabilimento di Morcone, con circa 200 dipendenti, da cui il gruppo Ficosa vuole spostare in Polonia la produzione degli specchietti per il Fiat Ducato dalla seconda metà del 2029. L'azienda si è detta aperta a nuove produzioni; il sindacato chiede di salvare tutti i posti. Si torna al tavolo a metà dicembre.",
+   "categoria": "altro",
+   "zona": "provincia",
+   "immagine": "fabbrica",
+   "luogo": "Morcone",
+   "pubblicato": "2026-10-20T19:00:00+02:00",
+   "stato": "confermata",
+   "rilevante": true,
+   "fonti": [
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/20/vicenda-ficomirrors-spiragli-dal-vertice-in-prefettura-lazienda-apre-alla-riconversione-produttiva/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/441466/vertenza-ficomirrors-un-cronoprogramma-per-salvare-i-posti-di-lavoro.shtml"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/vertenza-ficomirrors-possibile-riconversione-della-produzione-ce-lapertura-da-parte-dellazienda/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/ficomirrors-morcone-riconversione-stabilimento/"
+    },
+    {
+     "nome": "Lab TV",
+     "url": "https://www.labtv.net/attualita/2026/10/20/ficomirrors-negoziato-aperto-fiom-guardinga-mastella-al-tavolo-delle-trattative/"
+    },
+    {
+     "nome": "Anteprima24 (Stamplast)",
+     "url": "https://www.anteprima24.it/benevento/ficomirrors-morcone-stamplast-allarme-indotto/"
+    }
+   ],
+   "articolo": {
+    "aggiornato": "2026-10-20T09:25:00+02:00",
+    "cronologia": [
+     {
+      "data": "settimana scorsa (13-17 ottobre)",
+      "fatto": "L'azienda annuncia di voler spostare le attività in Polonia dalla seconda metà del 2029; i lavoratori proclamano sciopero e un presidio fisso davanti alla fabbrica.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "data": "19 ottobre, mattina",
+      "fatto": "Lavoratori in presidio davanti alla Prefettura di Benevento. Al tavolo il dirigente di Ficosa Josep Maria Serra, la Fiom con Giuseppe Morsa, Confindustria e i sindaci di Benevento, Morcone, Sassinoro, Campolattaro, Fragneto Monforte e Pontelandolfo.",
+      "fonti": [
+       "Ottopagine",
+       "Anteprima24",
+       "Cronache del Sannio",
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "data": "19 ottobre",
+      "fatto": "L'azienda si dice aperta a nuove produzioni nello stabilimento: si parla di aerospazio ed energie rinnovabili. Secondo Ottopagine riprende il lavoro in fabbrica, fermo dalla settimana prima per la protesta.",
+      "fonti": [
+       "Ottopagine",
+       "Anteprima24"
+      ]
+     },
+     {
+      "data": "20 ottobre",
+      "fatto": "Riprende la produzione in fabbrica, con i picchetti pronti a ripartire (Lab TV); Stamplast, azienda dell'indotto, lancia l'allarme.",
+      "fonti": [
+       "Lab TV",
+       "Anteprima24 (Stamplast)"
+      ]
+     },
+     {
+      "data": "metà dicembre",
+      "fatto": "Nuovo incontro con l'azienda; Anteprima24 indica il 15 dicembre.",
+      "fonti": [
+       "Anteprima24",
+       "Cronache del Sannio"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "L'azienda si è detta disposta a cambiare o allargare la produzione a Morcone.",
+      "fonti": [
+       "Ottopagine",
+       "Anteprima24",
+       "Cronache del Sannio",
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "La Fiom, con Giuseppe Morsa, chiede che non si perda nessun posto di lavoro.",
+      "fonti": [
+       "Ottopagine",
+       "Anteprima24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Il sindacato chiede che anche la Regione Campania entri nella trattativa.",
+      "fonti": [
+       "Ottopagine",
+       "Anteprima24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Nuovo incontro a metà dicembre; Anteprima24 e Lab TV indicano il 15 dicembre.",
+      "fonti": [
+       "Anteprima24",
+       "Lab TV"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "Quanti posti: Ottopagine scrive 209 lavoratori, di cui 160 a rischio; Anteprima24 parla di 210 lavoratori a rischio; Cronache del Sannio di oltre duecento posti; Il Sannio Quotidiano di circa 200 dipendenti. Lab TV scrive 211 dipendenti.",
+      "fonti": [
+       "Ottopagine",
+       "Anteprima24",
+       "Cronache del Sannio",
+       "Il Sannio Quotidiano",
+       "Lab TV"
+      ]
+     },
+     {
+      "testo": "Le nuove produzioni: Ottopagine cita soprattutto l'aerospazio; Anteprima24 parla di impianti per le energie rinnovabili e di un settore che chiama «aeromotive».",
+      "fonti": [
+       "Ottopagine",
+       "Anteprima24"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "Il piano preciso dell'azienda: secondo Anteprima24 sarà spiegato nei prossimi giorni.",
+     "Quanti lavoratori resterebbero con le nuove produzioni.",
+     "Se e quando ci sarà l'incontro con la Regione chiesto dai sindacati.",
+     "Cosa farà Stamplast e quanti lavoratori dell'indotto sono a rischio: il numero non è scritto."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Vertenza Ficomirrors: un cronoprogramma per salvare i posti di lavoro",
+      "url": "https://www.ottopagine.it/bn/attualita/441466/vertenza-ficomirrors-un-cronoprogramma-per-salvare-i-posti-di-lavoro.shtml",
+      "data": "19 ott, 13:14"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Vertenza Ficomirrors, possibile riconversione della produzione: c’e’ l’apertura da parte dell’azienda",
+      "url": "https://www.anteprima24.it/benevento/vertenza-ficomirrors-possibile-riconversione-della-produzione-ce-lapertura-da-parte-dellazienda/",
+      "data": "19 ott"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Ficomirrors Morcone, passi in avanti per la riconversione dello stabilimento",
+      "url": "https://www.cronachedelsannio.it/sannionews24/ficomirrors-morcone-riconversione-stabilimento/",
+      "data": "19 ott"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Vicenda Ficomirrors, spiragli dal vertice in Prefettura: l'azienda apre alla riconversione produttiva",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/20/vicenda-ficomirrors-spiragli-dal-vertice-in-prefettura-lazienda-apre-alla-riconversione-produttiva/",
+      "data": "20 ott"
+     },
+     {
+      "nome": "Lab TV",
+      "titolo": "Ficomirrors: negoziato aperto, Fiom guardinga. Mastella al tavolo delle trattative",
+      "url": "https://www.labtv.net/attualita/2026/10/20/ficomirrors-negoziato-aperto-fiom-guardinga-mastella-al-tavolo-delle-trattative/",
+      "data": "20 ott"
+     },
+     {
+      "nome": "Anteprima24 (Stamplast)",
+      "titolo": "Crisi Ficomirrors a Morcone: Stamplast srl lancia l’allarme per l’indotto: \"Lasciati a noi stessi\"",
+      "url": "https://www.anteprima24.it/benevento/ficomirrors-morcone-stamplast-allarme-indotto/",
+      "data": "20 ott"
+     }
+    ],
+    "racconto": [
+     {
+      "testo": "Lunedì 19 ottobre, nella Prefettura di Benevento, l'azienda Ficomirrors di Morcone ha incontrato sindacati, Confindustria e sindaci del territorio. La fabbrica produce specchietti retrovisori per il Fiat Ducato e ha circa 200 dipendenti. Dal vertice è uscita una possibile strada: l'azienda si è detta pronta a cambiare produzione nello stabilimento.",
+      "fonti": [
+       "Il Sannio Quotidiano",
+       "Ottopagine",
+       "Anteprima24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Ficomirrors fa parte del gruppo spagnolo Ficosa International, controllato da Panasonic. La settimana scorsa il gruppo ha annunciato di voler spostare in Polonia la produzione degli specchietti dalla seconda metà del 2029. I lavoratori hanno risposto con lo sciopero e un presidio davanti alla fabbrica.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "Al tavolo c'erano il dirigente di Ficosa Josep Maria Serra, la Fiom (il sindacato dei metalmeccanici della Cgil) con Giuseppe Morsa, Confindustria e i sindaci di Benevento, Morcone, Sassinoro, Campolattaro, Fragneto Monforte e Pontelandolfo. L'azienda ha parlato di nuove produzioni: Ottopagine cita soprattutto l'aerospazio, Anteprima24 le energie rinnovabili. La Fiom chiede che nessun posto di lavoro vada perso e che anche la Regione Campania entri nella trattativa.",
+      "fonti": [
+       "Ottopagine",
+       "Anteprima24",
+       "Cronache del Sannio",
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "Secondo Lab TV, che parla di 211 lavoratori, la produzione in fabbrica è ripresa martedì mattina, ma i lavoratori tengono pronti i picchetti e il sindacato resta prudente. Si torna al tavolo a metà dicembre: Anteprima24 e Lab TV indicano il 15 dicembre.",
+      "fonti": [
+       "Lab TV",
+       "Anteprima24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "La crisi preoccupa anche le aziende che lavorano con lo stabilimento. Stamplast, un'azienda di Morcone che fa da quarant'anni da fornitrice di Ficomirrors, dice di essere «lasciata a se stessa» e chiede che la vertenza non ignori l'indotto (le aziende che lavorano per la fabbrica) e le decine di famiglie che ci lavorano.",
+      "fonti": [
+       "Anteprima24 (Stamplast)"
+      ]
+     }
+    ]
+   },
+   "foto": "fabbrica",
+   "archiviato_il": "2026-10-23"
+  },
+  {
+   "id": "benevento-polstrada-controlli-weekend-4-patenti",
+   "titolo": "Benevento, controlli della Polizia Stradale nel fine settimana: 4 patenti ritirate per telefonino e sorpassi",
+   "titolo_google": "Benevento, controlli della Stradale: ritirate 4 patenti",
+   "sintesi": "Dal 16 al 18 ottobre la Polizia Stradale ha fatto 11 contestazioni e ritirato quattro patenti: due per l'uso del telefono alla guida e due per sorpasso vietato. Tolti 30 punti in totale.",
+   "categoria": "cronaca",
+   "zona": "provincia",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-20T14:00:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/20/benevento-controlli-della-polstrada-nel-weekend-4-patenti-ritirate-per-sorpassi-e-uso-del-telefonino/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/20/benevento-controlli-della-polizia-stradale-nel-weekend-4-patenti-ritirate/"
+    },
+    {
+     "nome": "Infosannionews",
+     "url": "https://www.infosannionews.it/cronaca/2026/polizia-stradale-intensificati-i-controlli-nel-week-end-4-patenti-ritirate-per-sorpassi-e-uso-del-cellulare"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Nel fine settimana dal 16 al 18 ottobre la Sezione Polizia Stradale di Benevento ha intensificato i controlli contro le condotte pericolose alla guida. Il bilancio è di 11 contestazioni e quattro patenti ritirate: due per l'uso del telefono mentre si guida e due per sorpasso in un punto dove è vietato.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Ai conducenti sanzionati sono stati tolti in tutto 30 punti dalla patente. Gli agenti sono intervenuti anche per due soccorsi a veicoli in difficoltà. Le verifiche fanno parte del programma di prevenzione e sicurezza stradale della Polizia di Stato.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Quattro patenti ritirate nei controlli del fine settimana per sorpassi vietati e uso del telefonino.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24",
+       "Infosannionews"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "In quali strade si sono fatti i controlli: l'articolo letto non lo dice."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Benevento, controlli della Polstrada nel weekend: 4 patenti ritirate per sorpassi e uso del telefonino",
+      "url": "https://www.ntr24.tv/2026/10/20/benevento-controlli-della-polstrada-nel-weekend-4-patenti-ritirate-per-sorpassi-e-uso-del-telefonino/",
+      "data": "20 ott"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Benevento, controlli della Polizia Stradale nel weekend: 4 patenti ritirate",
+      "url": "https://www.beneventonews24.it/2026/10/20/benevento-controlli-della-polizia-stradale-nel-weekend-4-patenti-ritirate/",
+      "data": "20 ott"
+     },
+     {
+      "nome": "Infosannionews",
+      "titolo": "Polizia Stradale: intensificati i controlli nel week end, 4 patenti ritirate per sorpassi e uso del cellulare",
+      "url": "https://www.infosannionews.it/cronaca/2026/polizia-stradale-intensificati-i-controlli-nel-week-end-4-patenti-ritirate-per-sorpassi-e-uso-del-cellulare",
+      "data": "20 ott"
+     }
+    ]
+   },
+   "archiviato_il": "2026-10-23"
+  },
+  {
+   "id": "benevento-comune-smartworking-dipendenti",
+   "titolo": "Benevento, il sindaco Mastella chiede lo smart working per i dipendenti comunali che abitano fuori città, per il caro carburante",
+   "titolo_google": "Benevento, Mastella chiede lo smart working per i comunali",
+   "sintesi": "Il sindaco ha dato indicazione alla Segretaria generale, responsabile del personale, di preparare gli atti per il lavoro a distanza dei dipendenti del Comune che non risiedono a Benevento. Il motivo è il costo del carburante e l'inflazione; l'attivazione dipenderà dalle esigenze del Comune.",
+   "categoria": "politica",
+   "zona": "benevento",
+   "immagine": "lavoro-da-casa",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-20T13:42:00+02:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Comune di Benevento",
+     "url": "https://comune.benevento.it/novita/carovita-indirizzo-sindacale-per-smartworking-per-i-dipendenti-residenti-fuori-citt/"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/20/carovita-e-dipendenti-fuori-citta-mastella-indica-alla-segretaria-generale-la-strada-dello-smartworking/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/mastella-smartworking-dipendenti-comunali/"
+    }
+   ],
+   "articolo": {
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Il sindaco ha dato indicazione alla Segretaria generale di preparare gli atti per il lavoro a distanza dei dipendenti che non risiedono a Benevento, per l'inflazione al 4,1% e il carburante, nei limiti del possibile e delle esigenze del Comune.",
+      "fonti": [
+       "Comune di Benevento",
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando gli atti saranno pronti e da quando varrà il lavoro a distanza.",
+     "Quanti dipendenti ne potranno usufruire."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Benevento",
+      "titolo": "Carovita, indirizzo sindacale per smartworking per i dipendenti residenti fuori città",
+      "url": "https://comune.benevento.it/novita/carovita-indirizzo-sindacale-per-smartworking-per-i-dipendenti-residenti-fuori-citt/",
+      "data": "20 ott"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Carovita e dipendenti fuori città, Mastella indica alla segretaria generale la strada dello smartworking",
+      "url": "https://www.ntr24.tv/2026/10/20/carovita-e-dipendenti-fuori-citta-mastella-indica-alla-segretaria-generale-la-strada-dello-smartworking/",
+      "data": "20 ott"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Mastella: “Carovita e dipendenti comunali fuori città, applicare smartworking”",
+      "url": "https://www.cronachedelsannio.it/sannionews24/mastella-smartworking-dipendenti-comunali/",
+      "data": "20 ott"
+     }
+    ],
+    "racconto": [
+     {
+      "testo": "Il sindaco di Benevento, Clemente Mastella, vuole che i dipendenti del Comune che abitano fuori città possano lavorare da casa. Martedì 20 ottobre ha chiesto alla Segretaria generale, Maria Luisa Dovetto, che guida anche l'ufficio del personale, di preparare gli atti necessari.",
+      "fonti": [
+       "Comune di Benevento",
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Il motivo è il costo della vita. Il sindaco ricorda l'inflazione di settembre al 4,1%, il dato più alto degli ultimi tre anni, e l'aumento molto forte dei prezzi del carburante. Secondo lui questi rincari mangiano gli stipendi di chi è «di fatto obbligato» a prendere l'auto ogni giorno per raggiungere il posto di lavoro.",
+      "fonti": [
+       "Comune di Benevento",
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Per ora è un indirizzo del sindaco, non una regola già in vigore. Il lavoro a distanza (smart working) sarà attivato «nei limiti del possibile» e solo se è compatibile con le esigenze del Comune, che deve continuare a funzionare bene. Gli atti devono ancora essere preparati.",
+      "fonti": [
+       "Comune di Benevento",
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     }
+    ]
+   },
+   "foto": "lavoro-da-casa",
+   "archiviato_il": "2026-10-23"
+  },
+  {
+   "id": "airola-incendio-diossine-latte",
+   "titolo": "Incendio di Airola, controlli sugli alimenti: diossine nel latte di pecora a Cervinara, il latte è stato bloccato",
+   "titolo_google": "Incendio di Airola, diossine nel latte di pecora a Cervinara",
+   "sintesi": "Nell'ultimo aggiornamento dei controlli (10-16 ottobre) dopo l'incendio di Airola sono state confermate due irregolarità per diossine nel latte di pecora a Cervinara; il latte è stato bloccato e non va in commercio. Altre irregolarità riguardano erba da pascolo e mais trinciato. Nei terreni agricoli finora non risultano soglie superate.",
+   "categoria": "altro",
+   "zona": "caudina",
+   "immagine": "pecore",
+   "luogo": "Airola e Valle Caudina",
+   "pubblicato": "2026-10-20T11:29:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/441556/incendio-di-airola-aggiornamento-controlli-suoli-e-produzioni-agroalimentari.shtml"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/20/incendio-di-airola-nuovi-controlli-due-non-conformita-per-diossine-nel-latte-ovino-a-cervinara/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/incendio-airola-diossine-latte-ovino-immediatamente-bloccato"
+    }
+   ],
+   "articolo": {
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Nell'aggiornamento del 10-16 ottobre sono confermate due non conformità per diossine nel latte di pecora a Cervinara, bloccato dall'Asl di Avellino; nei nove esiti definitivi sui terreni nessun superamento delle soglie.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Come gli animali di Cervinara siano stati esposti alle diossine: le verifiche sono in corso.",
+     "Gli esiti ancora «in conferma» a Forchia (olive e latte di pecora)."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Incendio di Airola: aggiornamento controlli suoli e produzioni agroalimentari",
+      "url": "https://www.ottopagine.it/bn/attualita/441556/incendio-di-airola-aggiornamento-controlli-suoli-e-produzioni-agroalimentari.shtml",
+      "data": "20 ott"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Incendio di Airola, nuovi controlli: due non conformità per diossine nel latte ovino a Cervinara",
+      "url": "https://www.ntr24.tv/2026/10/20/incendio-di-airola-nuovi-controlli-due-non-conformita-per-diossine-nel-latte-ovino-a-cervinara/",
+      "data": "20 ott, 10:24"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Incendio Airola: diossine nel latte ovino, immediatamente bloccato",
+      "url": "https://www.cronachedelsannio.it/sannionews24/incendio-airola-diossine-latte-ovino-immediatamente-bloccato",
+      "data": "20 ott, 11:29"
+     }
+    ],
+    "racconto": [
+     {
+      "testo": "Dopo l'incendio di Airola, in Valle Caudina, i controlli sugli alimenti hanno trovato diossine (sostanze inquinanti che si formano quando bruciano certi materiali) nel latte di pecora di Cervinara, in provincia di Avellino. Nell'ultimo aggiornamento, che riguarda i giorni dal 10 al 16 ottobre, le irregolarità confermate sono due. Il latte è stato bloccato subito e tolto dalla catena alimentare, quindi non va in commercio: l'ha deciso il servizio veterinario dell'Asl di Avellino.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "I controlli sono fatti insieme dall'Istituto Zooprofilattico Sperimentale del Mezzogiorno (il laboratorio pubblico che analizza alimenti e animali), dalle Asl e dall'Arpac, l'agenzia regionale per l'ambiente. Cronache del Sannio scrive che l'aggiornamento è una nota della Regione Campania. I dati sono dell'Istituto al 16 ottobre e dell'Arpac al 13 ottobre.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Le altre irregolarità, già comunicate, sono: erba da pascolo ad Airola, mais trinciato (mais tagliato a pezzi per i mangimi) a Bonea ed erba da pascolo a Forchia. Gli esiti buoni riguardano uva, melanzane ed erba medica ad Airola, uva a San Martino Valle Caudina e zucca a Cervinara. A Forchia restano «in conferma» due risultati sulle olive e uno sul latte di pecora.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Sui terreni agricoli non ci sono superamenti delle soglie di contaminazione nei nove esiti definitivi: tre di Airola, due di San Martino Valle Caudina e uno ciascuno per Arienzo, Cervinara, Rotondi e Santa Maria a Vico. Un altro risultato di Airola, senza superamenti, è ancora in verifica e altre 14 analisi sono in lavorazione.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Il servizio veterinario dell'Asl di Avellino ha avviato le verifiche per capire come gli animali di Cervinara siano stati esposti, guardando anche ai pascoli. Intanto il Comitato Salute e Ambiente di Airola e della Valle Caudina chiede ad allevatori, produttori di latte e caseifici di domandare per primi i controlli all'Asl: dice che non è allarmismo ma tutela dei consumatori e delle produzioni tipiche, e chiede accertamenti su tutti gli allevamenti della valle.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     }
+    ]
+   },
+   "nota": "I dati si riferiscono ai prospetti dell'Istituto Zooprofilattico al 16 ottobre e dell'ARPAC al 13 ottobre; secondo Cronache del Sannio vengono da una nota della Regione Campania.",
+   "foto": "pecore",
+   "archiviato_il": "2026-10-23"
+  },
+  {
+   "id": "condanne-tentato-omicidio-montesarchio",
+   "titolo": "Montesarchio, tentato omicidio di un 17enne nel 2025: quattro ventenni condannati in primo grado, pene da 6 anni a 8 anni e 20 giorni",
+   "titolo_google": "Montesarchio, tentato omicidio di un 17enne: quattro condanne",
+   "sintesi": "Lunedì 19 ottobre il giudice Roberto Nuzzo ha condannato con rito abbreviato quattro ventenni imputati di tentato omicidio per l'aggressione a un ragazzo di Vitulano, che allora aveva 17 anni, colpito anche con una mazza da baseball fuori da un locale di Montesarchio nella notte del 5 ottobre 2025. Le pene sono più basse di quelle chieste dalla Procura.",
+   "categoria": "cronaca",
+   "zona": "caudina",
+   "luogo": "Montesarchio",
+   "pubblicato": "2026-10-20T00:35:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Il Mattino",
+     "url": "https://www.ilmattino.it/benevento/violenza_nel_beneventano_botte_con_mazza_da_baseball_a_montesarchio_condannati_4_giovanissimi-9835274.html"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/19/tentato-omicidio-a-montesarchio-condanne-per-i-quattro-giovani-che-hanno-scelto-il-rito-abbreviato/"
+    }
+   ],
+   "articolo": {
+    "aggiornato": "2026-10-20T09:25:00+02:00",
+    "cronologia": [
+     {
+      "data": "ottobre 2025",
+      "fatto": "I primi quattro arresti: sono i quattro giovani giudicati ora.",
+      "fonti": [
+       "Il Mattino"
+      ]
+     },
+     {
+      "data": "notte 4-5 ottobre 2025",
+      "fatto": "Dopo una telefonata, quattro auto partono da Benevento verso il locale Xuè di Montesarchio. All'uscita viene aggredito prima un 18enne di Foglianise, ferito in modo non grave, poi il 17enne di Vitulano, colpito con calci, pugni e una mazza da baseball anche a terra: finisce in coma.",
+      "fonti": [
+       "Il Mattino",
+       "NTR24"
+      ]
+     },
+     {
+      "data": "marzo 2026",
+      "fatto": "Una nuova ordinanza riguarda altri cinque giovani, imputati di concorso in tentato omicidio, e altri tre per lesioni aggravate.",
+      "fonti": [
+       "Il Mattino"
+      ]
+     },
+     {
+      "data": "19 ottobre 2026",
+      "fatto": "Il giudice dell'udienza preliminare Roberto Nuzzo condanna i quattro: la pena più bassa è 6 anni, la più alta 8 anni e 20 giorni. Disposto il risarcimento alla parte civile, da calcolare in un'altra causa; NTR24 riporta un anticipo (provvisionale) di 5mila euro.",
+      "fonti": [
+       "NTR24",
+       "Il Mattino"
+      ]
+     },
+     {
+      "data": "10 novembre",
+      "fatto": "Previsto il processo con rito immediato (si va direttamente al processo, senza udienza preliminare) per gli altri cinque giovani imputati di tentato omicidio.",
+      "fonti": [
+       "Il Mattino"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Il ragazzo, allora 17enne, fu colpito con calci, pugni e una mazza da baseball, anche quando era già a terra.",
+      "fonti": [
+       "NTR24",
+       "Il Mattino"
+      ]
+     },
+     {
+      "testo": "La pm Marilia Capitanio aveva chiesto 8 anni per uno degli imputati e 10 anni per gli altri tre: le pene decise sono più basse.",
+      "fonti": [
+       "NTR24",
+       "Il Mattino"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "Le pene di due dei quattro: NTR24 scrive «otto anni» per due di loro, Il Mattino «otto anni e venti giorni» per tutti e tre. Qui vale Il Mattino, perché NTR24 dà «otto anni e venti giorni» per il primo e sembra riportare la cifra tonda per gli altri.",
+      "fonti": [
+       "NTR24",
+       "Il Mattino"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "Se la difesa farà appello (le motivazioni non sono ancora note).",
+     "Quando sarà deciso il risarcimento."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Tentato omicidio a Montesarchio: condanne per i quattro giovani che hanno scelto il rito abbreviato",
+      "url": "https://www.ntr24.tv/2026/10/19/tentato-omicidio-a-montesarchio-condanne-per-i-quattro-giovani-che-hanno-scelto-il-rito-abbreviato/",
+      "data": "19 ott"
+     },
+     {
+      "nome": "Il Mattino",
+      "titolo": "Violenza nel Beneventano, botte con mazza da baseball a Montesarchio: condannati 4 giovanissimi",
+      "url": "https://www.ilmattino.it/benevento/violenza_nel_beneventano_botte_con_mazza_da_baseball_a_montesarchio_condannati_4_giovanissimi-9835274.html",
+      "data": "20 ott, 00:35"
+     }
+    ],
+    "racconto": [
+     {
+      "testo": "Lunedì 19 ottobre il giudice dell'udienza preliminare Roberto Nuzzo ha condannato quattro ventenni per il tentato omicidio di un ragazzo di Vitulano, che aveva 17 anni quando fu picchiato a Montesarchio. Il processo era con il rito abbreviato: è più rapido, si decide sugli atti dell'indagine e in caso di condanna la pena si riduce.",
+      "fonti": [
+       "NTR24",
+       "Il Mattino"
+      ]
+     },
+     {
+      "testo": "Le pene sono sei anni per uno dei quattro e otto anni e venti giorni per gli altri tre. Il giudice ha anche disposto un risarcimento alla parte civile, da stabilire in un altro procedimento, con un anticipo di 5mila euro. Il pubblico ministero Marilia Capitanio aveva chiesto otto anni per il primo e dieci per gli altri tre, dopo aver riconosciuto le attenuanti.",
+      "fonti": [
+       "NTR24",
+       "Il Mattino"
+      ]
+     },
+     {
+      "testo": "L'aggressione risale alla notte tra il 4 e il 5 ottobre 2025, fuori da un locale di Montesarchio. Il ragazzo fu colpito con calci, pugni e una mazza da baseball anche quando era a terra e rimase in fin di vita. I quattro erano stati arrestati nell'ottobre scorso.",
+      "fonti": [
+       "NTR24",
+       "Il Mattino"
+      ]
+     },
+     {
+      "testo": "L'inchiesta dei Carabinieri non è chiusa. Secondo Il Mattino, in tutto sono 12 i giovani indagati per la maxi rissa: a marzo un'altra ordinanza ha riguardato altri cinque, accusati di concorso in tentato omicidio, e altri tre, accusati di lesioni aggravate.",
+      "fonti": [
+       "Il Mattino"
+      ]
+     }
+    ]
+   },
+   "archiviato_il": "2026-10-23"
+  },
+  {
+   "id": "asl-benevento-farmacie-screening-oncologici",
+   "titolo": "Provincia di Benevento, l'ASL porta gli screening dei tumori nelle farmacie: informazioni, adesione e kit per il colon-retto",
+   "titolo_google": "ASL Benevento, screening dei tumori ora anche in farmacia",
+   "sintesi": "Martedì 20 ottobre l'ASL Benevento ha incontrato farmacisti e Federfarma per un accordo che farà delle farmacie un punto di accesso agli screening gratuiti. Si potrà informarsi, aderire, prenotare e ritirare il kit per il colon-retto.",
+   "categoria": "altro",
+   "zona": "provincia",
+   "immagine": "farmacia",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-20",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "ASL Benevento",
+     "url": "https://www.aslbenevento.it/notizie/asl-benevento-e-farmacie-insieme-gli-screening-oncologici"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Le farmacie della provincia di Benevento entreranno nella rete degli screening dei tumori dell'ASL. L'incontro per definire l'accordo (un protocollo d'intesa) si è tenuto martedì 20 ottobre nella sede dell'ASL Benevento, con la direttrice generale Tiziana Spinosa, il presidente dell'Ordine dei Farmacisti Maurizio Manna e il presidente di Federfarma Benevento Tommaso Cusano.",
+      "fonti": [
+       "ASL Benevento"
+      ]
+     },
+     {
+      "testo": "Nelle farmacie che aderiranno i cittadini potranno avere informazioni, controllare se possono partecipare ai programmi, aderire e prenotare gli esami. Per lo screening del colon-retto si potrà anche ritirare in farmacia il kit per cercare il sangue nascosto nelle feci. Le modalità precise saranno definite dal protocollo.",
+      "fonti": [
+       "ASL Benevento"
+      ]
+     },
+     {
+      "testo": "Gli screening dell'ASL sono gratuiti. Quello della cervice uterina è per le donne dai 25 ai 64 anni, quello con la mammografia per le donne dai 50 ai 69 anni, quello del colon-retto per donne e uomini dai 50 ai 69 anni. L'ASL spera così di raggiungere anche chi finora non ha aderito.",
+      "fonti": [
+       "ASL Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Da quando le farmacie saranno operative e quali farmacie aderiranno: il comunicato dice che le modalità saranno definite dal protocollo."
+    ],
+    "fonti": [
+     {
+      "nome": "ASL Benevento",
+      "titolo": "ASL Benevento e farmacie insieme per gli screening oncologici",
+      "url": "https://www.aslbenevento.it/notizie/asl-benevento-e-farmacie-insieme-gli-screening-oncologici",
+      "data": "20 ott"
+     }
+    ]
+   },
+   "foto": "farmacia",
+   "archiviato_il": "2026-10-23"
+  },
+  {
+   "id": "acqua-giovedi-22-ottobre-paduli-alto-calore",
+   "titolo": "Paduli e altri sette Comuni del Sannio senz'acqua giovedì 22 ottobre dalle 14 alle 24 per lavori sulla condotta",
+   "titolo_google": "Paduli e altri 7 Comuni senz'acqua giovedì 22 ottobre",
+   "sintesi": "Alto Calore Servizi sospende l'acqua giovedì 22 ottobre dalle 14 alle 24 per lavori urgenti sulla condotta a Paduli, località Torre. Restano senz'acqua Paduli, Pietrelcina, Pesco Sannita, Pago Veiano, Campolattaro, Pontelandolfo, Fragneto Monforte e Sant'Arcangelo Trimonte.",
+   "categoria": "altro",
+   "zona": "provincia",
+   "immagine": "acqua",
+   "luogo": "Paduli",
+   "pubblicato": "2026-10-20",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "in_vigore_fino": "2026-10-22",
+   "fonti": [
+    {
+     "nome": "Comune di Pietrelcina",
+     "url": "https://www.comune.pietrelcina.bn.it/novita/avvisi/novita_374.html"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/20/acqua-giovedi-stop-allerogazione-per-dieci-ore-disagi-in-diversi-comuni-del-sannio/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Giovedì 22 ottobre, dalle 14 a mezzanotte, otto paesi del Sannio restano senz'acqua: Paduli, Pietrelcina, Pesco Sannita, Pago Veiano, Campolattaro, Pontelandolfo, Fragneto Monforte e Sant'Arcangelo Trimonte. Lo ha comunicato Alto Calore Servizi, la società che porta l'acqua in questa parte della provincia.",
+      "fonti": [
+       "NTR24",
+       "Comune di Pietrelcina"
+      ]
+     },
+     {
+      "testo": "Il motivo sono lavori urgenti sulla condotta adduttrice (il tubo grande che porta l'acqua dalle sorgenti ai paesi) nel tratto di località Torre, a Paduli. Li fa l'Acquedotto Campano per conto della Regione Campania.",
+      "fonti": [
+       "NTR24",
+       "Comune di Pietrelcina"
+      ]
+     },
+     {
+      "testo": "Senz'acqua restano anche lo STIR di Casalduni, l'impianto dove si lavorano i rifiuti. Ad Apice, invece, lo stop tocca solo le utenze di Ferrovie dello Stato e dell'Alta Velocità.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Quando l'acqua torna può uscire torbida per qualche minuto: Alto Calore dice che resta potabile e consiglia di lasciarla scorrere dai rubinetti finché non torna limpida. Per i casi di vera necessità c'è il numero verde 800 954 430; gli aggiornamenti sono sul sito altocalore.it.",
+      "fonti": [
+       "NTR24",
+       "Comune di Pietrelcina"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Il giorno e l'orario dello stop (giovedì 22, dalle 14 alle 24), il motivo (lavori a Paduli, località Torre) e il numero verde 800 954 430.",
+      "fonti": [
+       "Comune di Pietrelcina",
+       "NTR24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Se i lavori finiranno davvero entro mezzanotte: Alto Calore dice che avviserà gli utenti sul suo sito www.altocalore.it."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Pietrelcina",
+      "titolo": "Alto Calore Servizi S.p.A. - Fuori servizio idrico programmato del 22 Ottobre 2026",
+      "url": "https://www.comune.pietrelcina.bn.it/novita/avvisi/novita_374.html",
+      "data": "20 ott"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Acqua, giovedì stop all’erogazione per dieci ore: disagi in diversi comuni del Sannio",
+      "url": "https://www.ntr24.tv/2026/10/20/acqua-giovedi-stop-allerogazione-per-dieci-ore-disagi-in-diversi-comuni-del-sannio/",
+      "data": "20 ott"
+     }
+    ]
+   },
+   "foto": "acqua",
+   "archiviato_il": "2026-10-23"
+  },
+  {
+   "id": "telese-gepos-licenziamenti-sit-in",
+   "titolo": "Telese Terme, clinica Gepos: licenziati due tecnici di laboratorio dopo oltre 30 anni, sit-in dei sindacati lunedì 26 ottobre",
+   "titolo_google": "Telese Terme, Gepos licenzia due tecnici: sit-in il 26 ottobre",
+   "sintesi": "FP Cgil e Uil Fpl denunciano il licenziamento di due tecnici del laboratorio analisi della clinica Gepos di Telese Terme, con oltre trent'anni di servizio. Chiedono chiarimenti all'azienda e verifiche all'Asl, e annunciano un sit-in davanti alla clinica lunedì 26 ottobre dalle 10 alle 13.",
+   "categoria": "altro",
+   "zona": "telesina",
+   "immagine": "ospedale",
+   "luogo": "Telese Terme",
+   "pubblicato": "2026-10-20",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/20/gepos-licenziati-due-tecnici-di-laboratorio-dopo-oltre-30-anni-sit-in-dei-sindacati-lunedi-a-telese/"
+    },
+    {
+     "nome": "LabTV",
+     "url": "https://www.labtv.net/attualita/2026/10/20/gepos-due-tecnici-di-laboratorio-licenziati-dopo-oltre-30-anni-i-sindacati-proclamano-un-sit-in/"
+    },
+    {
+     "nome": "Fremondoweb",
+     "url": "https://www.fremondoweb.com/notizie-dalla-valle-telesina/gepos-licenziati-due-tecnici-di-laboratorio-i-sindacati-annunciano-un-sit-in-a-telese/"
+    }
+   ],
+   "articolo": {
+    "cronologia": [
+     {
+      "data": "20 ottobre, mattina",
+      "fatto": "I sindacati dicono di aver saputo del licenziamento di un tecnico; la lettera per il secondo non sarebbe ancora arrivata.",
+      "fonti": [
+       "NTR24",
+       "LabTV"
+      ]
+     },
+     {
+      "data": "26 ottobre, 10-13",
+      "fatto": "Sit-in di FP Cgil e Uil Fpl davanti alla clinica Gepos di Telese Terme.",
+      "fonti": [
+       "NTR24",
+       "LabTV",
+       "Fremondoweb"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Due tecnici del laboratorio analisi della Gepos, con oltre trent'anni di servizio, sono interessati dai licenziamenti, denunciati da FP Cgil e Uil Fpl.",
+      "fonti": [
+       "NTR24",
+       "LabTV",
+       "Fremondoweb"
+      ]
+     },
+     {
+      "testo": "Il sit-in davanti alla clinica è lunedì 26 ottobre dalle 10 alle 13; i sindacati chiedono chiarezza all'azienda e verifiche all'Asl.",
+      "fonti": [
+       "NTR24",
+       "LabTV",
+       "Fremondoweb"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Le ragioni dei licenziamenti secondo l'azienda.",
+     "Se l'Asl farà verifiche.",
+     "L'orario esatto in cui è stato dato l'annuncio ai lavoratori."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "GEPOS, licenziati due tecnici di laboratorio dopo oltre 30 anni. Sit-in dei sindacati lunedì a Telese",
+      "url": "https://www.ntr24.tv/2026/10/20/gepos-licenziati-due-tecnici-di-laboratorio-dopo-oltre-30-anni-sit-in-dei-sindacati-lunedi-a-telese/",
+      "data": "20 ott"
+     },
+     {
+      "nome": "LabTV",
+      "titolo": "GEPOS, due tecnici di laboratorio licenziati dopo oltre 30 anni: i sindacati proclamano un sit-in",
+      "url": "https://www.labtv.net/attualita/2026/10/20/gepos-due-tecnici-di-laboratorio-licenziati-dopo-oltre-30-anni-i-sindacati-proclamano-un-sit-in/",
+      "data": "20 ott"
+     },
+     {
+      "nome": "Fremondoweb",
+      "titolo": "Gepos, licenziati due tecnici di laboratorio: i sindacati annunciano un sit-in a Telese",
+      "url": "https://www.fremondoweb.com/notizie-dalla-valle-telesina/gepos-licenziati-due-tecnici-di-laboratorio-i-sindacati-annunciano-un-sit-in-a-telese/",
+      "data": "20 ott"
+     }
+    ],
+    "racconto": [
+     {
+      "testo": "Alla clinica Gepos di Telese Terme due tecnici del laboratorio analisi sono stati licenziati dopo più di trent'anni di lavoro. Lo denunciano la FP Cgil e la Uil Fpl, i sindacati dei dipendenti pubblici e della sanità, che lunedì 26 ottobre, dalle 10 alle 13, fanno un sit-in (una protesta in piazza) davanti alla clinica.",
+      "fonti": [
+       "NTR24",
+       "LabTV",
+       "Fremondoweb"
+      ]
+     },
+     {
+      "testo": "Secondo i sindacati, martedì 20 ottobre in mattinata hanno saputo del licenziamento di un tecnico. Per il secondo la lettera non sarebbe stata ancora consegnata, perché è in ferie. Il primo lavoratore, dicono, sarebbe l'unico in famiglia a portare a casa uno stipendio.",
+      "fonti": [
+       "NTR24",
+       "LabTV"
+      ]
+     },
+     {
+      "testo": "I sindacati chiedono all'azienda di spiegare perché ha licenziato e se ha rispettato i criteri previsti, come gli anni di servizio e i carichi di famiglia. Ricordano che il laboratorio, secondo i loro dati, fa più di 200mila prestazioni all'anno, con i prelievi affidati a personale esterno, e chiedono se avere meno personale sia compatibile con la qualità e la sicurezza degli esami.",
+      "fonti": [
+       "NTR24",
+       "LabTV"
+      ]
+     },
+     {
+      "testo": "Chiedono anche all'Asl di Benevento di fare le verifiche di sua competenza e al sindaco di Telese Terme di essere davanti alla clinica lunedì per incontrare i lavoratori. Richiamano infine il tema dei soldi pubblici che vanno alle strutture private accreditate, cioè quelle che fanno prestazioni per conto del servizio sanitario.",
+      "fonti": [
+       "NTR24",
+       "LabTV"
+      ]
+     }
+    ]
+   },
+   "foto": "ospedale",
+   "archiviato_il": "2026-10-23"
+  },
+  {
+   "id": "bus-linea-5",
+   "titolo": "Benevento, giovane in scooter minaccia il personale di un autobus urbano: si sente male un controllore",
+   "titolo_google": "Benevento, minacce sul bus urbano: si sente male un controllore",
+   "sintesi": "Lunedì 19 ottobre, nel primo pomeriggio, un giovane in scooter ha affiancato un autobus della linea urbana 05 di AIR Campania, ha insultato alcuni passeggeri e minacciato il personale. Un controllore dei biglietti si è sentito male.",
+   "categoria": "cronaca",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-20",
+   "stato": "confermata",
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/arriva-in-motorino-insulta-i-passeggeri-e-minaccia-il-personale-del-bus-verificatore-si-sente-male/"
+    },
+    {
+     "nome": "LabTV",
+     "url": "https://www.labtv.net/cronaca/2026/10/19/benevento-minacce-al-personale-air-campania-su-linea-urbana-verificatore-accusa-malore-intervengono-polizia-e-carabinieri/"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/20/addetti-air-minacciati-da-un-giovane-sullo-scooter-uno-di-loro-accusa-un-malore/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/minaccia-air-dipendente-accusa-malore/"
+    }
+   ],
+   "articolo": {
+    "aggiornato": "2026-10-20T09:25:00+02:00",
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Un giovane in scooter ha minacciato personale e passeggeri del bus della linea 05; un addetto si è sentito male; sono intervenuti Polizia e Carabinieri.",
+      "fonti": [
+       "Anteprima24",
+       "LabTV",
+       "Cronache del Sannio",
+       "Il Sannio Quotidiano"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "Chi è il giovane e se è stato denunciato.",
+     "Come sta l'addetto che si è sentito male."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Arriva in motorino, insulta i passeggeri e minaccia il personale del bus",
+      "url": "https://www.anteprima24.it/benevento/arriva-in-motorino-insulta-i-passeggeri-e-minaccia-il-personale-del-bus-verificatore-si-sente-male/",
+      "data": "19 ott"
+     },
+     {
+      "nome": "LabTV",
+      "titolo": "Benevento, minacce al personale AIR Campania su linea urbana",
+      "url": "https://www.labtv.net/cronaca/2026/10/19/benevento-minacce-al-personale-air-campania-su-linea-urbana-verificatore-accusa-malore-intervengono-polizia-e-carabinieri/",
+      "data": "19 ott"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Addetti Air minacciati da un giovane sullo scooter: uno di loro accusa un malore",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/20/addetti-air-minacciati-da-un-giovane-sullo-scooter-uno-di-loro-accusa-un-malore/",
+      "data": "20 ott"
+     },
+     {
+      "nome": "LabTV (Errico)",
+      "titolo": "Minacce al personale Air Campania, Errico: piena solidarietà, serve più sicurezza",
+      "url": "https://www.labtv.net/politica/2026/10/19/minacce-al-personale-air-campania-errico-piena-solidarieta-serve-piu-sicurezza/",
+      "data": "19 ott"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Minaccia in motorino personale e passeggeri Air: dipendente accusa malore",
+      "url": "https://www.cronachedelsannio.it/sannionews24/minaccia-air-dipendente-accusa-malore/",
+      "data": "19 ott"
+     }
+    ],
+    "divergono": [],
+    "racconto": [
+     {
+      "testo": "Lunedì 19 ottobre, nel primo pomeriggio, a Benevento un giovane su uno scooter ha raggiunto un autobus della linea urbana 05 di Air Campania. Ha urlato contro alcuni passeggeri e ha minacciato, da terra, il personale a bordo. Uno dei verificatori (i controllori dei biglietti) si è sentito male ed è servito l'intervento dei sanitari.",
+      "fonti": [
+       "Anteprima24",
+       "LabTV",
+       "Cronache del Sannio",
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "Sono intervenuti Polizia e Carabinieri per gli accertamenti. Il Sannio Quotidiano scrive che il giovane, al momento, non è stato identificato. La notizia è stata data da Air Campania con un comunicato sui suoi canali social.",
+      "fonti": [
+       "Cronache del Sannio",
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "L'amministratore unico di Air Campania ha espresso solidarietà al personale. L'azienda ricorda di aver proposto nei giorni scorsi alla Prefettura di Benevento un tavolo tecnico con le forze dell'ordine per un protocollo d'intesa sulla sicurezza e sulla legalità nel trasporto pubblico. Il consigliere regionale Fernando Errico ha espresso solidarietà e chiesto più sicurezza.",
+      "fonti": [
+       "Anteprima24",
+       "LabTV (Errico)"
+      ]
+     }
+    ]
+   },
+   "rilevante": false,
+   "archiviato_il": "2026-10-23"
+  },
+  {
    "id": "mensa-pasto-da-casa",
    "titolo": "Benevento, mensa scolastica: resta il no al pasto portato da casa, i presidi difendono la scelta e alcuni genitori pensano al Tar",
    "titolo_google": "Benevento, mensa: resta il no al pasto portato da casa",
@@ -999,6 +2064,56 @@
    "rilevante": false,
    "foto": "terremoto",
    "archiviato_il": "2026-10-21"
+  },
+  {
+   "id": "san-pio-open-day-sclerodermia-22-ottobre",
+   "titolo": "Ospedale San Pio, giovedì 22 ottobre visite gratuite per la sclerodermia",
+   "titolo_google": "San Pio Benevento, visite gratuite sclerodermia il 22 ottobre",
+   "sintesi": "Giovedì 22 ottobre, dalle 9 alle 12, la Reumatologia del San Pio di Benevento fa visite gratuite per la sclerodermia, nel Padiglione Rummo.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-13",
+   "in_vigore_fino": "2026-10-22",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Ospedale San Pio",
+     "url": "https://www.aosanpio.it/2026/10/13/aorn-san-pio-22-ottobre-open-day-dedicato-alla-sclerodermia/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Giovedì 22 ottobre l'ospedale San Pio di Benevento aderisce alla campagna nazionale di sensibilizzazione sulla sclerodermia, una malattia che colpisce più organi, causa invalidità e ha bisogno di cure e assistenza continue. Colpisce soprattutto le donne.",
+      "fonti": [
+       "Ospedale San Pio"
+      ]
+     },
+     {
+      "testo": "Le visite sono gratuite e si fanno dalle 9 alle 12 negli ambulatori della Reumatologia, al piano terra del Padiglione Rummo. Le fa la Reumatologia, diretta da Mariagrazia Ferrucci. Sono per chi ha il fenomeno di Raynaud o disturbi dei vasi sanguigni delle mani.",
+      "fonti": [
+       "Ospedale San Pio"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Se serve prenotare: l'avviso non lo dice."
+    ],
+    "fonti": [
+     {
+      "nome": "Ospedale San Pio",
+      "titolo": "AORN SAN PIO, 22 OTTOBRE OPEN DAY DEDICATO ALLA SCLERODERMIA",
+      "url": "https://www.aosanpio.it/2026/10/13/aorn-san-pio-22-ottobre-open-day-dedicato-alla-sclerodermia/",
+      "data": "13 ott"
+     }
+    ]
+   },
+   "archiviato_il": "2026-10-23"
   }
  ],
  "approfondimenti": []

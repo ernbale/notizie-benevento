@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-22T14:13+02:00",
+ "aggiornato": "2026-10-23T06:30+02:00",
  "eventi": [
   {
    "id": "mostra-cosmogonie-meact-torrecuso-2026",
@@ -194,6 +194,37 @@
    "foto": "mandolino"
   },
   {
+   "id": "festa-castagna-birra-san-giorgio-del-sannio-2026",
+   "titolo": "Festa della castagna e della birra a San Giorgio del Sannio",
+   "tipo": "sagra",
+   "inizio": "2026-10-23",
+   "fine": "2026-10-24",
+   "ora": "20:00",
+   "luogo": "Via Michele Bocchini, dietro la chiesa di Sant'Agnese e Santa Margherita",
+   "comune": "San Giorgio del Sannio",
+   "zona": "benevento",
+   "breve": "Venerdì e sabato sera la parrocchia organizza zuppa di fagioli, carne alla brace, caldarroste e birra, con musica dal vivo.",
+   "descrizione": [
+    {
+     "testo": "La parrocchia di Sant'Agnese e Santa Margherita organizza la festa venerdì 23 e sabato 24 ottobre, dalle 20, in via Michele Bocchini. Il menù: zuppa di fagioli, salsiccia e castagne, carne alla brace, caldarroste, montanare e dolci tradizionali, con birra e bibite. Ci sono musica dal vivo e animazione.",
+     "fonti": [
+      "NTR24"
+     ]
+    }
+   ],
+   "immagine": "castagne",
+   "annullato": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "titolo": "Monumenti Aperti, castagne e olio, Walking Marathon: gli eventi del week end a Benevento e nel Sannio",
+     "url": "https://www.ntr24.tv/2026/10/23/eventi-23-24-25-ottobre/",
+     "data": "23 ott"
+    }
+   ],
+   "foto": "castagne-3"
+  },
+  {
    "id": "monumenti-aperti-benevento-2026",
    "titolo": "Monumenti Aperti a Benevento",
    "tipo": "mostra",
@@ -229,6 +260,36 @@
     }
    ],
    "foto": "museo"
+  },
+  {
+   "id": "sapori-autunno-foiano-valfortore-2026",
+   "titolo": "Sapori d'Autunno a Foiano di Val Fortore",
+   "tipo": "sagra",
+   "inizio": "2026-10-24",
+   "fine": "2026-10-25",
+   "luogo": "Villa Comunale",
+   "comune": "Foiano di Val Fortore",
+   "zona": "fortore",
+   "breve": "Sesta edizione con vino locale, castagne arrostite e musica dal vivo, sabato e domenica.",
+   "descrizione": [
+    {
+     "testo": "L'ASD Feudum Mazzoccae 2021, con il patrocinio del Comune, organizza la sesta edizione nella Villa Comunale sabato 24 e domenica 25 ottobre: degustazioni di vino locale, castagne arrostite e altre specialità. Sabato suonano gli Zeketam (etno-folk), domenica la 081 Band.",
+     "fonti": [
+      "NTR24"
+     ]
+    }
+   ],
+   "immagine": "castagne",
+   "annullato": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "titolo": "Monumenti Aperti, castagne e olio, Walking Marathon: gli eventi del week end a Benevento e nel Sannio",
+     "url": "https://www.ntr24.tv/2026/10/23/eventi-23-24-25-ottobre/",
+     "data": "23 ott"
+    }
+   ],
+   "foto": "castagne-2"
   },
   {
    "id": "domeniche-olio-cerreto-sannita-2026",
