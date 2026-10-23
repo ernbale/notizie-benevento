@@ -35,10 +35,12 @@ Uso:  python3 strumenti/sentinella.py                 (su GitHub, con GH_TOKEN)
 """
 import argparse
 import datetime as dt
+import errno
 import getpass
 import json
 import os
 import re
+import socket
 import sys
 import time
 import urllib.error
@@ -61,6 +63,25 @@ VEDETTA_MAX = 20    # minuti senza un giro della vedetta delle chiusure (sul Pi)
 PISTA_MAX = 45      # minuti: una pista della vedetta non ancora vista dal giro Chiusure
 TG_CHIUSURE = 20    # minuti: una chiusura del sito non ancora sul canale Telegram
 CARTELLA_PI = os.path.expanduser("~/nb-fonti")
+PAUSA_RETE = 20     # secondi prima del secondo tentativo se la rete fa cilecca
+
+
+def apri(req, metodo="GET"):
+    """urlopen con un secondo tentativo dopo PAUSA_RETE se la rete fa cilecca (23 ott 08:32 «No route to host» sul Pi).
+    Le scritture (POST) si riprovano solo se la connessione non è proprio partita: dopo un timeout GitHub
+    potrebbe averle già ricevute, e un rilancio doppio non lo vogliamo."""
+    try:
+        return urllib.request.urlopen(req, timeout=30)
+    except urllib.error.HTTPError:   # il server ha risposto: non è la rete
+        raise
+    except OSError as e:   # URLError, timeout, SSL
+        motivo = getattr(e, "reason", e)
+        mai_partita = (isinstance(motivo, (socket.gaierror, ConnectionRefusedError))
+                       or getattr(motivo, "errno", None) in (errno.EHOSTUNREACH, errno.ENETUNREACH))
+        if metodo != "GET" and not mai_partita:
+            raise
+        time.sleep(PAUSA_RETE)
+        return urllib.request.urlopen(req, timeout=30)
 
 
 class GitHub:
@@ -75,7 +96,7 @@ class GitHub:
                                               "Accept": "application/vnd.github.raw" if grezzo else "application/vnd.github+json",
                                               "X-GitHub-Api-Version": "2022-11-28", "User-Agent": "nb-sentinella"})
         try:
-            with urllib.request.urlopen(req, timeout=30) as r:
+            with apri(req, metodo) as r:
                 self.scade = r.headers.get("github-authentication-token-expiration") or self.scade
                 corpo = r.read()
         except urllib.error.HTTPError as e:
@@ -153,7 +174,7 @@ def controlla(gh, su_main, adesso, prova):
             attive.append(c)
 
     # 2. sito indietro rispetto a main
-    with urllib.request.urlopen(f"{SITO}/notizie.json?sentinella={int(time.time())}", timeout=30) as r:
+    with apri(f"{SITO}/notizie.json?sentinella={int(time.time())}") as r:
         online = json.load(r)
     a_main, a_sito = iso(su_main["aggiornato"]), iso(online["aggiornato"])
     lancia, recupera = False, False
@@ -243,7 +264,7 @@ def chiusure(gh, adesso, pi, sito, prova):
         ritardo = [c for c in attive if adesso - iso(c.get("aggiornata") or c["aggiunta"]) > dt.timedelta(minutes=TG_CHIUSURE)]
         if ritardo:
             req = urllib.request.Request("https://t.me/s/notiziebenevento", headers={"User-Agent": "Mozilla/5.0 (notiziebenevento.it)"})
-            with urllib.request.urlopen(req, timeout=30) as r:
+            with apri(req) as r:
                 pagina = r.read().decode("utf-8", "replace")
             sul_canale_ = set(re.findall(r"notiziebenevento\.it/scuole-chiuse/#([a-z0-9-]+)", pagina))
             ore = [dt.datetime.fromisoformat(x) for x in re.findall(r'<time datetime="([^"]+)"', pagina)]
