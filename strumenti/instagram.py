@@ -12,6 +12,8 @@ Lo esegue GitHub dopo ogni pubblicazione del sito, come facebook.py, che ne è i
   la copertina e le immagini delle notizie più importanti uscite oggi. La scelta e la copertina le fa pagine.py
   (img/ig/oggi.json), così sul sito c'è già tutto quando Instagram scarica le immagini. Prima di allora un posto del
   giorno resta libero per il riepilogo.
+- Alle 23 (il giro delle sere di allerta) solo la notizia di un'allerta arancione o rossa, come su Facebook e
+  Telegram, anche dopo il riepilogo e oltre MAX_GIORNO: è la più utile per chi ha figli a scuola. La gialla no.
 - La chiave è la stessa della Pagina (segreto FB_PAGE_TOKEN), con i permessi instagram_basic e
   instagram_content_publish. Senza account Instagram collegato alla Pagina non fa niente.
 
@@ -28,7 +30,7 @@ import time
 import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from facebook import PAGINA, SITO, candidate, chiama, fuso, quando, rilievo   # stessa chiave, stessa scelta
+from facebook import PAGINA, SITO, allerta_seria, candidate, chiama, fuso, quando, rilievo   # stessa chiave e scelta
 
 MAX_GIORNO = 8
 PAUSA_MINUTI = 90
@@ -117,6 +119,18 @@ def aspetta(cont, token):
         time.sleep(5)
 
 
+def pubblica_notizia(ig, token, n):
+    """Un post con l'immagine della notizia; False se l'immagine non è online (si fa solo per le notizie recenti
+    della prima pagina)."""
+    img = f"{SITO}/img/ig/{n['id']}.jpg"
+    if not online(img):
+        return False
+    cont = chiama("POST", f"{ig}/media", token, {"image_url": img, "caption": didascalia(n)})["id"]
+    aspetta(cont, token)
+    chiama("POST", f"{ig}/media_publish", token, {"creation_id": cont})
+    return True
+
+
 def pubblica_riepilogo(ig, token, giorno, scelte, immagini):
     figli = [chiama("POST", f"{ig}/media", token, {"image_url": u, "is_carousel_item": "true"})["id"] for u in immagini]
     for c in figli:
@@ -156,7 +170,8 @@ def main():
     if not token:
         print("Instagram: nessuna chiave (segreto FB_PAGE_TOKEN), non pubblico niente")
         return
-    if not DALLE <= adesso.hour < ALLE:
+    sera = adesso.hour == 23   # alle 23 solo le allerte arancioni o rosse, come Facebook e Telegram
+    if not DALLE <= adesso.hour < ALLE and not sera:
         print(f"Instagram: sono le {adesso:%H:%M}, si pubblica dalle {DALLE} fino al giro delle {ALLE - 1}")
         return
     pag = chiama("GET", "me", token, {"fields": "name,instagram_business_account{id,username}"})
@@ -167,6 +182,13 @@ def main():
         print("Instagram: la Pagina non ha ancora un account Instagram collegato, non pubblico niente")
         return
     gia, oggi, ultimo, riepilogo = gia_pubblicate(ig, token, adesso)
+    if sera:
+        for n in candidate(notizie, gia, adesso):
+            if allerta_seria(n) and pubblica_notizia(ig, token, n):
+                print(f"Instagram: pubblicata l'allerta {n['id']} ({oggi + 1} oggi)")
+                return
+        print("Instagram: sono le 23, a quest'ora si pubblicano solo le allerte arancioni o rosse")
+        return
     if oggi >= MAX_GIORNO:
         print(f"Instagram: già {oggi} post oggi, basta così")
         return
@@ -190,14 +212,9 @@ def main():
         print(f"Instagram: l'ultimo post è delle {ultimo:%H:%M}, aspetto")
         return
     for n in candidate(notizie, gia, adesso):
-        img = f"{SITO}/img/ig/{n['id']}.jpg"
-        if not online(img):   # l'immagine si fa solo per le notizie recenti della prima pagina
-            continue
-        cont = chiama("POST", f"{ig}/media", token, {"image_url": img, "caption": didascalia(n)})["id"]
-        aspetta(cont, token)
-        chiama("POST", f"{ig}/media_publish", token, {"creation_id": cont})
-        print(f"Instagram: pubblicata {n['id']} ({oggi + 1} oggi)")
-        return
+        if pubblica_notizia(ig, token, n):
+            print(f"Instagram: pubblicata {n['id']} ({oggi + 1} oggi)")
+            return
     print("Instagram: nessuna notizia nuova da pubblicare")
 
 

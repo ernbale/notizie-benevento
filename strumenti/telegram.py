@@ -3,7 +3,7 @@
 
 Lo esegue GitHub dopo ogni pubblicazione del sito, come facebook.py. Su Telegram si legge tutto di seguito, come un
 notiziario: qui niente pausa di un'ora come su Facebook, ma al massimo POR_GIRO messaggi per volta e MAX_GIORNO al
-giorno, solo dalle 6 fino al giro delle 22 compreso (alle 23 solo le allerte importanti, come su Facebook).
+giorno, solo dalle 6 fino al giro delle 22 compreso (alle 23 solo le allerte arancioni o rosse, come su Facebook).
 - Notizia nuova: titolo, riassunto, link (Telegram mostra l'anteprima con l'immagine della notizia).
 - Aggiornamento (il riquadro «Aggiornamento» dell'articolo): «Aggiornamento» + titolo + la frase della novità.
 - Il bot non può rileggere il canale: cosa è già uscito lo ricorda in un file (--stato) che GitHub conserva tra
@@ -32,7 +32,7 @@ import urllib.parse
 import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from facebook import SITO, fuso, quando   # stessa ora delle notizie di facebook.py
+from facebook import SITO, allerta_seria, fuso, quando   # stessa ora delle notizie e stesse allerte di facebook.py
 
 CANALE = "@notiziebenevento"
 TITOLO_CANALE = "Notizie Benevento"
@@ -200,7 +200,7 @@ def main():
                 oggi = sum(1 for v in stato["inviati"] if v[:10] == adesso.date().isoformat())
                 lista = da_mandare(notizie, gia, adesso)
                 if sera:
-                    lista = [x for x in lista if x[3].get("categoria") == "meteo" and x[3].get("rilevante")]
+                    lista = [x for x in lista if allerta_seria(x[3])]
                 quante = max(0, MAX_GIORNO - oggi) if recupera else max(0, min(POR_GIRO, MAX_GIORNO - oggi))
                 fatte = 0
                 for _, chiave, tipo, n in lista[:quante]:

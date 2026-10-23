@@ -6,7 +6,8 @@ notizia è già online quando Facebook ne legge titolo e immagine di anteprima.
 
 - Al massimo una notizia all'ora (almeno 50 minuti tra un post e l'altro), e al massimo 20 al giorno (per i giorni con tante notizie), solo dalle 6
   fino al giro delle 22 compreso, come i giri (scelta del proprietario, 23 ott 2026): come le pagine dei giornali locali, senza raffiche che sembrano spam. Dalle 23 alle 24 solo le allerte
-  importanti (`rilevante`): è il giro della sera prima di un'allerta arancione o rossa, con le scuole chiuse per domani.
+  arancioni o rosse (allerta_seria): è il giro della sera prima di un'allerta arancione o rossa, con le scuole chiuse
+  per domani. La gialla alle 23 no (scelta del proprietario, 23 ott 2026: vale per Facebook, Telegram e Instagram).
 - Sceglie la più importante tra le notizie delle ultime 12 ore non ancora pubblicate (stessa importanza della prima
   pagina del sito: rilevante e numero di fonti, che calano col tempo).
 - Cosa è già uscito lo legge dalla Pagina stessa (i link dei post): niente file da tenere nel repository. Se Facebook
@@ -62,6 +63,12 @@ def rilievo(n, t, adesso):
     ore = max(0.0, (adesso - t).total_seconds() / 3600)
     fonti = n.get("fonti") if isinstance(n.get("fonti"), list) else [1]
     return ((5 if n.get("rilevante") else 1) + min(len(fonti), 6) * 0.25) * 0.5 ** (ore / 18)
+
+
+def allerta_seria(n):
+    """La notizia di un'allerta arancione o rossa, l'unica che esce alle 23 su tutti i social (la gialla no)."""
+    return (n.get("categoria") == "meteo" and bool(n.get("rilevante"))
+            and re.search(r"\b(arancion[ei]|ross[ae])\b", n.get("titolo") or "", re.I) is not None)
 
 
 def candidate(notizie, gia, adesso):
@@ -135,7 +142,7 @@ def main():
     if not token:
         print("Facebook: nessuna chiave (segreto FB_PAGE_TOKEN), non pubblico niente")
         return
-    sera = adesso.hour == 23   # alle 23 solo le allerte: chi ha figli a scuola guarda la sera
+    sera = adesso.hour == 23   # alle 23 solo le allerte arancioni o rosse: chi ha figli a scuola guarda la sera
     if not DALLE <= adesso.hour < ALLE and not sera:
         print(f"Facebook: sono le {adesso:%H:%M}, si pubblica dalle {DALLE} fino al giro delle {ALLE - 1}")
         return
@@ -153,9 +160,9 @@ def main():
         return
     lista = candidate(notizie, gia, adesso)
     if sera:
-        lista = [n for n in lista if n.get("categoria") == "meteo" and n.get("rilevante")]
+        lista = [n for n in lista if allerta_seria(n)]
         if not lista:
-            print("Facebook: sono le 23, a quest'ora si pubblicano solo le allerte importanti")
+            print("Facebook: sono le 23, a quest'ora si pubblicano solo le allerte arancioni o rosse")
             return
     if not lista:
         print("Facebook: nessuna notizia nuova da pubblicare")
