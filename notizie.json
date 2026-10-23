@@ -1,7 +1,121 @@
 {
- "aggiornato": "2026-10-23T14:11+02:00",
+ "aggiornato": "2026-10-23T15:10+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-gesesa-guasto-via-avellino-acqua-15-17-23-ottobre",
+   "titolo": "Benevento, guasto alla rete: niente acqua dalle 15 alle 17 nella zona di via Avellino e piazza Castello",
+   "titolo_google": "Benevento, stop acqua 15-17 in via Avellino e centro",
+   "sintesi": "Venerdì 23 ottobre Gesesa ha sospeso l'acqua dalle 15 alle 17 nelle strade del distretto di via Avellino e piazza Castello, a Benevento, per un guasto improvviso con una forte perdita.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "immagine": "acqua",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-23T14:22:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "in_vigore_fino": "2026-10-23",
+   "fonti": [
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/guasto-zona-alta-benevento-stop-erogazione-idrica/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/441956/guasto-a-benevento-due-ore-di-stop-all-acqua-in-diverse-zone.shtml"
+    },
+    {
+     "nome": "Lab TV",
+     "url": "https://www.labtv.net/attualita/2026/10/23/gesesa-ancora-un-guasto-tra-via-avellino-e-piazza-castello-stop-erogazione-dalle-15-alle-17/"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/23/benevento-guasto-alla-rete-idrica-sospensione-dellacqua-dalle-15-alle-17-in-numerose-strade-della-citta/"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/associazioni/2026/benevento-interruzione-idrica-dalle-15-alle-17-nel-distretto-i-via-avellino-e-piazza-castello.html"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Venerdì 23 ottobre, dalle 15 alle 17, a Benevento manca l'acqua nelle strade del distretto di via Avellino e piazza Castello. Lo ha annunciato Gesesa, la società che gestisce l'acqua in città, spiegando che c'è stato un guasto improvviso con una forte perdita d'acqua.",
+      "fonti": [
+       "Cronache del Sannio",
+       "Ottopagine",
+       "Lab TV",
+       "NTR24",
+       "InfoSannio"
+      ]
+     },
+     {
+      "testo": "Le strade interessate, secondo l'elenco diffuso da Gesesa e ripreso dai giornali, sono: via Avellino, via Isernia, via Antonio de Rienzo, via Gaetano Cangiano, via San Benedetto da Benevento, via Piana degli Orti, via Saragat, via Filippo Serino, via Fontanelle, via Benito Rossi, via Mainella, parte di via delle Puglie, via del Sole, piazza Castello, via IV Novembre e piazza IV Novembre, via XXIV Maggio, piazza Risorgimento, viale Mellusi, viale dei Rettori, via Pertini, corso Garibaldi (da piazza IV Novembre a via Camerario), via Annunziata, via Umberto I, piazza Arechi II, via Verdi, piazza Piano di Corte e viale Atlantici.",
+      "fonti": [
+       "Cronache del Sannio",
+       "Ottopagine",
+       "Lab TV"
+      ]
+     },
+     {
+      "testo": "Lab TV scrive che è «ancora un guasto» in quella zona. Le fonti non dicono se l'acqua tornerà normale alle 17 né dove sia il punto preciso della rottura.",
+      "fonti": [
+       "Lab TV"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Sospensione dell'acqua dalle 15 alle 17 nel distretto di via Avellino e piazza Castello per un guasto improvviso con una perdita.",
+      "fonti": [
+       "Cronache del Sannio",
+       "Ottopagine",
+       "Lab TV",
+       "NTR24",
+       "InfoSannio"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Dove sia esattamente la rottura.",
+     "Se l'acqua tornerà regolare subito dopo le 17 o se serviranno più ore."
+    ],
+    "fonti": [
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Guasto nella zona alta di Benevento, stop erogazione idrica: le strade interessate",
+      "url": "https://www.cronachedelsannio.it/sannionews24/guasto-zona-alta-benevento-stop-erogazione-idrica/",
+      "data": "23 ott, 14:16"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Guasto a Benevento: due ore di stop all'acqua in diverse zone",
+      "url": "https://www.ottopagine.it/bn/attualita/441956/guasto-a-benevento-due-ore-di-stop-all-acqua-in-diverse-zone.shtml",
+      "data": "23 ott, 14:22"
+     },
+     {
+      "nome": "Lab TV",
+      "titolo": "Gesesa, ancora un guasto tra Via Avellino e Piazza Castello. Stop erogazione dalle 15 alle 17",
+      "url": "https://www.labtv.net/attualita/2026/10/23/gesesa-ancora-un-guasto-tra-via-avellino-e-piazza-castello-stop-erogazione-dalle-15-alle-17/",
+      "data": "23 ott, 14:10"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Benevento, guasto alla rete idrica: sospensione dell’acqua dalle 15 alle 17 in numerose strade della città",
+      "url": "https://www.ntr24.tv/2026/10/23/benevento-guasto-alla-rete-idrica-sospensione-dellacqua-dalle-15-alle-17-in-numerose-strade-della-citta/",
+      "data": "23 ott, 14:08"
+     },
+     {
+      "nome": "InfoSannio",
+      "titolo": "Benevento. Interruzione idrica dalle 15 alle 17 nel distretto di Via Avellino e Piazza Castello",
+      "url": "https://www.infosannionews.it/associazioni/2026/benevento-interruzione-idrica-dalle-15-alle-17-nel-distretto-i-via-avellino-e-piazza-castello.html",
+      "data": "23 ott, 14:14"
+     }
+    ]
+   },
+   "foto": "acqua-4"
+  },
   {
    "id": "filippide-runners-maratone-monaco-chicago-napoli",
    "titolo": "Maratone d'ottobre per la Filippide Runners: sei atleti al traguardo a Monaco, Chicago e Napoli",
@@ -6156,7 +6270,7 @@
    "zona": "provincia",
    "immagine": "camion",
    "luogo": "Tufara Valle",
-   "pubblicato": "2026-10-23T10:59:00+02:00",
+   "pubblicato": "2026-10-23T14:20:00+02:00",
    "stato": "confermata",
    "fonti": [
     {
@@ -6250,15 +6364,23 @@
     {
      "nome": "Lab TV (23/10)",
      "url": "https://www.labtv.net/attualita/2026/10/23/benevento-agricoltori-e-autotrasportatori-ancora-in-protesta-sulla-ss-87-gli-aiuti-non-bastano/"
+    },
+    {
+     "nome": "Cronache del Sannio (23/10)",
+     "url": "https://www.cronachedelsannio.it/sannionews24/via-blocchi-ecco-rifornimenti-sannio-resta-presidio/"
+    },
+    {
+     "nome": "Lab TV (Fortore)",
+     "url": "https://www.labtv.net/attualita/2026/10/23/fortore-allarme-carburante-e-farmaci-per-il-blocco-degli-autotrasportatori-a-rischio-le-fasce-piu-fragili/"
     }
    ],
    "articolo": {
     "aggiornamento": {
-     "testo": "Venerdì 23 ottobre mattina agricoltori e autotrasportatori sono tornati in strada per ore sulla statale 87 Benevento-Campobasso: dicono di non essere soddisfatti delle misure del governo.",
+     "testo": "Venerdì 23 ottobre Cronache del Sannio scrive che il presidio degli autotrasportatori e degli agricoltori si è spostato sulla statale 87, in località Torre Palazzo, e che gli organizzatori annunciano l'adesione allo sciopero generale del 30 ottobre, con un corteo a Benevento.",
      "fonti": [
-      "Ottopagine (23/10)"
+      "Cronache del Sannio (23/10)"
      ],
-     "quando": "2026-10-23T11:11+02:00"
+     "quando": "2026-10-23T15:10+02:00"
     },
     "aggiornato": "2026-10-20T09:25:00+02:00",
     "cronologia": [
@@ -6413,6 +6535,13 @@
       "fatto": "Presidio di agricoltori e autotrasportatori sulla statale 87 Benevento-Campobasso, con traffico rallentato.",
       "fonti": [
        "Ottopagine (23/10)"
+      ]
+     },
+     {
+      "data": "23 ottobre",
+      "fatto": "Il presidio degli agricoltori e degli autotrasportatori si sposta sulla statale 87 a Torre Palazzo; annunciata l'adesione allo sciopero generale del 30 ottobre con corteo a Benevento.",
+      "fonti": [
+       "Cronache del Sannio (23/10)"
       ]
      }
     ],
@@ -6671,9 +6800,35 @@
       "titolo": "Benevento, agricoltori e autotrasportatori ancora in protesta sulla SS 87: «Gli aiuti non bastano»",
       "url": "https://www.labtv.net/attualita/2026/10/23/benevento-agricoltori-e-autotrasportatori-ancora-in-protesta-sulla-ss-87-gli-aiuti-non-bastano/",
       "data": "23 ott, 11:57"
+     },
+     {
+      "nome": "Cronache del Sannio (23/10)",
+      "titolo": "Via i blocchi dei tir, ecco i primi rifornimenti. Ma nel Sannio resta presidio sulla Statale 87",
+      "url": "https://www.cronachedelsannio.it/sannionews24/via-blocchi-ecco-rifornimenti-sannio-resta-presidio/",
+      "data": "23 ott, 14:20"
+     },
+     {
+      "nome": "Lab TV (Fortore)",
+      "titolo": "Fortore, allarme carburante e farmaci per il blocco degli autotrasportatori: «A rischio le fasce più fragili»",
+      "url": "https://www.labtv.net/attualita/2026/10/23/fortore-allarme-carburante-e-farmaci-per-il-blocco-degli-autotrasportatori-a-rischio-le-fasce-piu-fragili/",
+      "data": "23 ott, 15:05"
      }
     ],
     "racconto": [
+     {
+      "testo": "Venerdì 23 ottobre, secondo Cronache del Sannio, i presìdi sulle autostrade campane sono stati sciolti dopo le misure del Consiglio dei ministri e le consegne ai supermercati e ai distributori ricominciano. Nel Sannio però la protesta continua: gli organizzatori hanno portato il presidio permanente sulla statale 87, in località Torre Palazzo, vicino alla stazione di servizio Ewa, senza bloccare il traffico. L'appello è rivolto anche a cittadini, studenti, artigiani e commercianti, perché la protesta ora riguarda anche carovita, bollette e tasse. Hanno annunciato l'adesione allo sciopero generale del 30 ottobre, con un corteo a Benevento.",
+      "fonti": [
+       "Cronache del Sannio (23/10)"
+      ],
+      "giorno": "2026-10-23"
+     },
+     {
+      "testo": "Nel Fortore, scrive Lab TV, quasi tutti i distributori di San Giorgio La Molara, Molinara e San Marco dei Cavoti sono rimasti senza carburante per ore e le farmacie hanno avvertito che la prossima settimana potrebbero esserci ritardi nelle forniture: chi ha bisogno di farmaci distribuiti dall'ASL (DPC) è invitato a richiederli subito. Il racconto arriva da una residente, la giornalista Maria Chiara Petrone.",
+      "fonti": [
+       "Lab TV (Fortore)"
+      ],
+      "giorno": "2026-10-23"
+     },
      {
       "testo": "Venerdì 23 ottobre mattina agricoltori e autotrasportatori del Sannio sono tornati a protestare per ore lungo la statale 87 Benevento-Campobasso, con camion e trattori in fila nei due sensi e traffico rallentato. Dicono: «Non siamo soddisfatti delle misure messe in campo dal governo. Ci sentiamo presi in giro». Secondo Ottopagine, mentre in Campania si va verso la fine delle proteste, nel Sannio la protesta continua. Lab TV aggiunge che al presidio di Benevento c'è anche il segretario della Filt Cgil Avellino-Benevento, Giuseppe Anzalone, e che i controlli sono di Polizia, Guardia di Finanza e Carabinieri.",
       "fonti": [
