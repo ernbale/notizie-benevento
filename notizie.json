@@ -1,7 +1,60 @@
 {
- "aggiornato": "2026-10-23T06:10+02:00",
+ "aggiornato": "2026-10-23T07:09+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "accademia-volley-benevento-serie-c-koala-bears-24-ottobre",
+   "titolo": "Pallavolo, Serie C femminile: la Pasta Rummo Accademia gioca a San Giuseppe Vesuviano sabato 24 ottobre",
+   "titolo_google": "Accademia Volley Benevento a San Giuseppe Vesuviano, 24/10",
+   "sintesi": "Sabato 24 ottobre alle 18:30 la Pasta Rummo Accademia di Benevento gioca la prima trasferta della Serie C femminile contro le Koala Bears a San Giuseppe Vesuviano. All'esordio ha vinto 3-0 con la Volley Project Pontecagnano.",
+   "categoria": "sport",
+   "sport": "pallavolo",
+   "zona": "benevento",
+   "luogo": "San Giuseppe Vesuviano (Napoli)",
+   "pubblicato": "2026-10-23T06:31:00+02:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Accademia Volley Benevento",
+     "url": "https://www.accademiavolley.com/pasta-rummo-accademia-alla-prima-trasferta-stagionale/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Sabato 24 ottobre alle 18:30 la Pasta Rummo Accademia, squadra femminile dell'Accademia Volley Benevento, gioca la sua prima partita fuori casa della stagione. Va a San Giuseppe Vesuviano, in provincia di Napoli, contro le Koala Bears, per la seconda giornata del campionato di Serie C femminile.",
+      "fonti": [
+       "Accademia Volley Benevento"
+      ]
+     },
+     {
+      "testo": "Le beneventane arrivano dalla vittoria per 3-0 contro la Volley Project Pontecagnano, ottenuta sabato scorso alla Palestra Rampone. L'allenatore è Vittorio Ruscello. Le Koala Bears, secondo la società, vengono dalla sconfitta per 3-0 sul campo dell'Arzano e cercano il riscatto.",
+      "fonti": [
+       "Accademia Volley Benevento"
+      ]
+     },
+     {
+      "testo": "Dopo la trasferta, sabato 31 ottobre la squadra torna alla Palestra Rampone per affrontare proprio l'Arzano.",
+      "fonti": [
+       "Accademia Volley Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Accademia Volley Benevento",
+      "titolo": "Pasta Rummo Accademia alla prima trasferta stagionale",
+      "url": "https://www.accademiavolley.com/pasta-rummo-accademia-alla-prima-trasferta-stagionale/",
+      "data": "23 ott, 06:31"
+     }
+    ]
+   }
+  },
   {
    "id": "montesarchio-ambito-b3-assegni-di-cura-voucher-saldo",
    "titolo": "Montesarchio, assegni di cura e voucher: pronta la determina per il saldo, soldi attesi a inizio della prossima settimana",
