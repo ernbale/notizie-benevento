@@ -1,7 +1,76 @@
 {
- "aggiornato": "2026-10-23T08:13+02:00",
+ "aggiornato": "2026-10-23T09:11+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "cusano-mutri-erasmus-stem-girls-ic-kennedy",
+   "titolo": "Cusano Mutri, all’istituto Kennedy si chiude la settimana del progetto Erasmus+ STEM Girls",
+   "titolo_google": "Cusano Mutri, scuola Kennedy: progetto Erasmus+ STEM Girls",
+   "sintesi": "Nei giorni scorsi l’istituto comprensivo Kennedy di Cusano Mutri ha ospitato delegazioni dalla Polonia e dalla Turchia per la quinta mobilità del progetto europeo Erasmus+ STEM Girls, sulle materie scientifiche per le ragazze.",
+   "categoria": "altro",
+   "zona": "telesina",
+   "immagine": "scuola",
+   "luogo": "Cusano Mutri",
+   "pubblicato": "2026-10-23T09:01:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/23/concluso-alli-c-j-f-kennedy-di-cusano-mutri-il-progetto-erasmus-stem-girls/"
+    },
+    {
+     "nome": "Fremondoweb",
+     "url": "https://www.fremondoweb.com/notizie-dalla-valle-telesina/cusano-mutri-ic-kennedy-concluso-il-progetto-erasmus-stem-girls/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Nei giorni scorsi l'istituto comprensivo «J. F. Kennedy» di Cusano Mutri ha ospitato la quinta tappa di scambio del progetto europeo Erasmus+ «STEM Girls – Rockets are being launched». La scuola è la capofila e coordina il lavoro delle scuole europee coinvolte. STEM sono le materie scientifiche e tecniche: scienza, tecnologia, ingegneria e matematica; il progetto punta a ridurre le differenze tra ragazzi e ragazze in questi studi.",
+      "fonti": [
+       "NTR24",
+       "Fremondoweb"
+      ]
+     },
+     {
+      "testo": "Per le prime quattro tappe, nell'anno scolastico scorso, i contatti si erano svolti a distanza. Stavolta a Cusano Mutri sono arrivate le delegazioni delle città di Tychy, in Polonia, e di Izmir, in Turchia, per una settimana di scambio e lezioni. Si è cominciato con una cerimonia di benvenuto nella sede della scuola, con il Comune e la comunità locale.",
+      "fonti": [
+       "NTR24",
+       "Fremondoweb"
+      ]
+     },
+     {
+      "testo": "Le alunne dell'istituto hanno guidato i laboratori su robotica educativa, coding (programmazione) e stampa 3D. C'è stato anche un «Cultural Lunch»: i ragazzi hanno preparato piatti tipici del posto e ogni scuola ha presentato un prodotto simbolo della propria terra. Le delegazioni hanno poi visitato la Città della Scienza di Napoli e la Reggia di Caserta, con l'Acquedotto Carolino.",
+      "fonti": [
+       "NTR24",
+       "Fremondoweb"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quante studentesse e docenti hanno partecipato e quali sono le prossime tappe del progetto: i due articoli, che riprendono lo stesso testo, non lo dicono."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Concluso all’I.C. “J. F. Kennedy” di Cusano Mutri il Progetto Erasmus+ “STEM Girls”",
+      "url": "https://www.ntr24.tv/2026/10/23/concluso-alli-c-j-f-kennedy-di-cusano-mutri-il-progetto-erasmus-stem-girls/",
+      "data": "23 ott, 08:35"
+     },
+     {
+      "nome": "Fremondoweb",
+      "titolo": "Cusano Mutri, IC Kennedy: concluso il progetto Erasmus+ STEM Girls",
+      "url": "https://www.fremondoweb.com/notizie-dalla-valle-telesina/cusano-mutri-ic-kennedy-concluso-il-progetto-erasmus-stem-girls/",
+      "data": "23 ott, 09:01"
+     }
+    ]
+   },
+   "foto": "scuola-7"
+  },
   {
    "id": "benevento-san-pio-sindacati-lettera-fico",
    "titolo": "Benevento, ospedale San Pio: i sindacati scrivono a Fico contro la direttrice generale e minacciano un presidio alla Regione",
@@ -3280,7 +3349,7 @@
    "categoria": "altro",
    "zona": "provincia",
    "luogo": "Sannio",
-   "pubblicato": "2026-10-23T00:30:00+02:00",
+   "pubblicato": "2026-10-23T08:30:00+02:00",
    "stato": "ufficiale",
    "rilevante": false,
    "fonti": [
@@ -3339,10 +3408,28 @@
     {
      "nome": "Comune di San Giorgio del Sannio (22/10)",
      "url": "https://www.comune.sangiorgiodelsannio.bn.it/novita/avvisi/novita_164.html"
+    },
+    {
+     "nome": "Il Sannio Quotidiano (23/10)",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/23/servizio-rifiuti-ripercussioni-diffuse-in-valle-caudina-e-anche-in-altri-centri/"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Il Sannio Quotidiano scrive che fino a giovedì sera, 22 ottobre, in tutta la Valle Caudina non c'era nessuna stazione di servizio in grado di dare carburante. A Sant'Agata de' Goti la raccolta dei rifiuti è stata sospesa ufficialmente, perché non si riescono a rifornire i compattatori (i camion che schiacciano i rifiuti). Una situazione simile, con gradi diversi, si ripete nel resto della Valle Caudina.",
+      "fonti": [
+       "Il Sannio Quotidiano (23/10)"
+      ],
+      "giorno": "2026-10-22"
+     },
+     {
+      "testo": "Avvisi sui possibili disservizi sono arrivati da Moiano e da altri Comuni serviti dalla Sogesi, la ditta della raccolta: Montesarchio, Forchia e Bonea. Problemi simili li ha segnalati anche la ditta Irpinia Global Service per Bucciano, Calvi, Campolattaro, Cusano Mutri, Dugenta, Foiano di Val Fortore, Fragneto l'Abate, Fragneto Monforte, Guardia Sanframondi, Molinara, Pontelandolfo, Solopaca, Tocco Caudio e Vitulano.",
+      "fonti": [
+       "Il Sannio Quotidiano (23/10)"
+      ],
+      "giorno": "2026-10-22"
+     },
      {
       "testo": "Giovedì 22 ottobre altri due Comuni hanno dato avvisi sulla raccolta. A San Martino Sannita il Comune scrive che la ditta Ricicla ha comunicato una possibile sospensione del servizio da lunedì 26 ottobre, per i blocchi che impediscono di portare i rifiuti agli impianti e di fare rifornimento. Fino a sabato 24 la raccolta è garantita; nei giorni di stop i cittadini non devono esporre i rifiuti e aspettare nuovi avvisi. A Pontelandolfo il Comune ha pubblicato un avviso di sospensione della raccolta per la carenza di carburante (i dettagli sono nell'allegato, che non ho letto). A San Giorgio del Sannio, invece, il Comune dice che la sera di giovedì 22 si possono conferire regolarmente umido e vetro.",
       "fonti": [
@@ -3544,15 +3631,20 @@
       "titolo": "Raccolta rifiuti 22.10.26 - servizio GARANTITO",
       "url": "https://www.comune.sangiorgiodelsannio.bn.it/novita/avvisi/novita_164.html",
       "data": "22 ott"
+     },
+     {
+      "nome": "Il Sannio Quotidiano (23/10)",
+      "titolo": "Servizio rifiuti, ripercussioni diffuse in Valle Caudina e anche in altri centri",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/23/servizio-rifiuti-ripercussioni-diffuse-in-valle-caudina-e-anche-in-altri-centri/",
+      "data": "23 ott, 08:30"
      }
     ],
     "aggiornamento": {
-     "testo": "Giovedì 22 ottobre il Comune di San Martino Sannita ha avvisato di una possibile sospensione della raccolta da lunedì 26 ottobre; anche Pontelandolfo ha annunciato lo stop per la mancanza di carburante.",
+     "testo": "Secondo Il Sannio Quotidiano, fino a giovedì sera in tutta la Valle Caudina non c'era un distributore con carburante e a Sant'Agata de' Goti la raccolta dei rifiuti è stata sospesa ufficialmente; avvisi di disservizi anche a Montesarchio, Forchia e Bonea.",
      "fonti": [
-      "Comune di San Martino Sannita",
-      "Comune di Pontelandolfo"
+      "Il Sannio Quotidiano (23/10)"
      ],
-     "quando": "2026-10-23T06:10+02:00"
+     "quando": "2026-10-23T09:11+02:00"
     }
    }
   },
@@ -5661,7 +5753,7 @@
    "zona": "benevento",
    "immagine": "supermercato",
    "luogo": "Benevento",
-   "pubblicato": "2026-10-20",
+   "pubblicato": "2026-10-23T08:50:00+02:00",
    "stato": "confermata",
    "fonti": [
     {
@@ -5683,6 +5775,10 @@
     {
      "nome": "BeneventoNews24",
      "url": "https://www.beneventonews24.it/2026/10/19/video-caro-carburante-e-protesta-autotrasportatori-nel-sannio-primi-scaffali-vuoti-e-pompe-a-secco/"
+    },
+    {
+     "nome": "Il Sannio Quotidiano (23/10)",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/23/scaffali-ancora-vuoti-ai-distributori-solo-gpl-e-metano/"
     }
    ],
    "articolo": {
@@ -5763,10 +5859,23 @@
       "titolo": "Caccia ai prodotti locali in negozi e mercatini. Carburanti introvabili",
       "url": "https://www.ilmattino.it/benevento/caccia_ai_prodotti_locali_negozi_mercatini_carburanti_introvabili-9839929.html",
       "data": "22 ott"
+     },
+     {
+      "nome": "Il Sannio Quotidiano (23/10)",
+      "titolo": "Scaffali ancora vuoti, ai distributori solo gpl e metano",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/23/scaffali-ancora-vuoti-ai-distributori-solo-gpl-e-metano/",
+      "data": "23 ott, 08:50"
      }
     ],
     "divergono": [],
     "racconto": [
+     {
+      "testo": "Giovedì 22 ottobre, scrive Il Sannio Quotidiano, gli scaffali dei supermercati apparivano semivuoti in modo più evidente dei giorni precedenti: senza uova, farine e tanti altri prodotti, con l'ortofrutta quasi introvabile. In diversi punti vendita della provincia c'è stata una corsa alle scorte, con carrelli pieni di pasta e latte. Ai distributori, titola il giornale, restano solo gpl e metano.",
+      "fonti": [
+       "Il Sannio Quotidiano (23/10)"
+      ],
+      "giorno": "2026-10-22"
+     },
      {
       "testo": "Giovedì 22 ottobre, secondo Il Mattino, i supermercati di Benevento sono al quarto giorno consecutivo senza rifornimenti. Mancano latte fresco, carne, ortofrutta e anche i surgelati stanno finendo; chi può compra scorte a lunga scadenza. Mercoledì i mercatini rionali sono stati presi d'assalto per le verdure dei coltivatori della zona, vendute a prezzi più alti e finite in fretta.",
       "fonti": [
@@ -5817,11 +5926,11 @@
      }
     ],
     "aggiornamento": {
-     "testo": "Giovedì 22 ottobre Il Mattino scrive che i supermercati di Benevento sono al quarto giorno senza rifornimenti. Il gruppo Idal, che produce e distribuisce alimentari freschi, denuncia il fermo delle consegne dalla sua sede di Benevento.",
+     "testo": "Giovedì 22 ottobre, secondo Il Sannio Quotidiano, gli scaffali dei supermercati del Sannio erano più vuoti dei giorni prima: mancavano uova, farine e altri prodotti, e l'ortofrutta era quasi introvabile.",
      "fonti": [
-      "Il Mattino (22/10)"
+      "Il Sannio Quotidiano (23/10)"
      ],
-     "quando": "2026-10-22T07:22+02:00"
+     "quando": "2026-10-23T09:11+02:00"
     }
    },
    "rilevante": false,
