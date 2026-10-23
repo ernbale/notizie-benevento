@@ -55,7 +55,7 @@
   .testata .nome { text-align: center; text-decoration: none; }
   .testata .nome .grande { display: block; font: 700 44px/1 var(--serif); letter-spacing: -1px; margin: 0; }
   .testata .nome .piccolo { display: block; font: 600 13px/1.4 var(--sans); letter-spacing: 2px; text-transform: uppercase; margin-top: 4px; }
-  .menu { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 4px 13px;
+  .menu { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 4px 12px;
           padding: 10px 0; border-top: 1px solid var(--nero); border-bottom: 1px solid var(--riga); }
   .menu button { font: 600 15px var(--sans); background: none; border: 0; padding: 4px 0; color: var(--nero); cursor: pointer; border-bottom: 2px solid transparent; }
   .menu button[aria-pressed="true"] { border-bottom-color: var(--rosso); }
@@ -182,6 +182,8 @@
 
   /* ricerca e archivio */
   .menu .link-archivio { font: 600 15px var(--sans); color: var(--blu); text-decoration: none; padding: 4px 0; }
+  .menu .link-comuni { font: 600 15px var(--sans); color: var(--nero); text-decoration: none; padding: 4px 0; border-bottom: 2px solid transparent; }
+  .menu .link-comuni:hover { border-bottom-color: var(--rosso); }
   .menu .link-meteo { display: inline-flex; align-items: center; gap: 5px; font: 600 15px var(--sans); color: var(--nero); text-decoration: none;
                       padding: 4px 0; border-bottom: 2px solid transparent; }
   .menu .link-meteo:hover { border-bottom-color: var(--rosso); }
@@ -253,7 +255,7 @@
   .menu .link-archivio:hover { text-decoration: underline; }
   .cerca-campo { display: flex; align-items: stretch; }
   .cerca-campo input { font: 500 15px var(--sans); padding: 6px 10px; border: 1px solid var(--nero); border-right: 0; border-radius: 4px 0 0 4px;
-                       background: #fff; color: var(--nero); min-width: 0; width: 150px; -webkit-appearance: none; appearance: none; }
+                       background: #fff; color: var(--nero); min-width: 0; width: 140px; -webkit-appearance: none; appearance: none; }
   .cerca-campo button { display: inline-flex; align-items: center; justify-content: center; width: 40px; border: 1px solid var(--nero);
                         border-radius: 0 4px 4px 0; background: var(--nero); color: #fff; cursor: pointer; padding: 0; }
   .cerca-campo svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; }
@@ -295,7 +297,7 @@
     .testata .data { order: 2; }
     .testata .nome .grande { font-size: 36px; }
     .menu { justify-content: flex-start; gap: 4px 12px; }
-    .menu button { font-size: 14.5px; }
+    .menu button, .menu .link-comuni { font-size: 14.5px; }
     .menu select { width: 100%; }
     .menu .cerca-campo { width: 100%; order: -1; margin-bottom: 4px; }
     .menu .cerca-campo input { flex: 1; width: auto; font-size: 16px; padding: 8px 10px; }
@@ -481,13 +483,14 @@
 
   <nav class="menu" id="menu" aria-label="Sezioni">
     <button type="button" data-cat="" aria-pressed="true">Tutte</button>
-    <button type="button" data-cat="strade" aria-pressed="false">Strade</button>
     <button type="button" data-cat="cronaca" aria-pressed="false">Cronaca</button>
     <button type="button" data-cat="politica" aria-pressed="false">Politica</button>
     <button type="button" data-cat="sport" aria-pressed="false">Sport</button>
     <button type="button" data-cat="eventi" aria-pressed="false">Eventi</button>
     <button type="button" data-cat="meteo" aria-pressed="false">Allerte</button>
     <button type="button" data-cat="altro" aria-pressed="false">Altro</button>
+    <button type="button" data-cat="strade" aria-pressed="false">Strade</button>
+    <a class="link-comuni" href="/comuni/">Comuni</a>
     <select id="zona" aria-label="Zona">
       <option value="">Tutte le zone</option>
       <option value="benevento">Benevento città</option>
