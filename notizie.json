@@ -1,7 +1,323 @@
 {
- "aggiornato": "2026-10-23T21:08+02:00",
+ "aggiornato": "2026-10-23T22:10+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-via-vanvitelli-scontro-auto-ribaltata-due-ferite",
+   "titolo": "Benevento, scontro tra due auto in via Vanvitelli: una si ribalta, ferite due ragazze",
+   "titolo_google": "Benevento, via Vanvitelli: scontro, auto ribaltata, 2 ferite",
+   "sintesi": "Venerdì sera, 23 ottobre, in via Vanvitelli a Benevento due auto si sono scontrate e una si è ribaltata, finendo su un'auto in sosta. Due ragazze sono rimaste ferite, in condizioni non gravi, e la strada è stata chiusa.",
+   "categoria": "cronaca",
+   "zona": "benevento",
+   "luogo": "Benevento, via Vanvitelli",
+   "pubblicato": "2026-10-23T21:43:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/scontro-ribaltamento-ferimento-ragazze-benevento/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/scontro-auto-via-vanvitelli-ferite-due-ragazze/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/442007/via-vanvitelli-incidente-e-paura-per-alcune-persone-chiusa-la-strada.shtml"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/scontro-tra-due-auto-ferite-due-persone-foto/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Venerdì sera, 23 ottobre, in via Vanvitelli a Benevento, nel quartiere Mellusi, due auto si sono scontrate e una si è ribaltata. Alla guida delle due auto, una Peugeot e una Mercedes, c'erano due ragazze: sono rimaste ferite, ma secondo le prime notizie non sono gravi.",
+      "fonti": [
+       "Anteprima24",
+       "Cronache del Sannio",
+       "TV7 Benevento"
+      ]
+     },
+     {
+      "testo": "Dopo l'urto la Peugeot si è ribaltata e ha colpito un'altra auto che era parcheggiata. Il 118 ha soccorso le due ferite e, secondo Ottopagine, le ha portate in ospedale. Sono intervenuti anche i Vigili del fuoco e la Polizia municipale, che ha fatto i rilievi. La strada è stata chiusa al traffico.",
+      "fonti": [
+       "Anteprima24",
+       "Ottopagine",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "La causa è ancora da accertare. Anteprima24 scrive che la Mercedes «probabilmente» non avrebbe rispettato uno stop; gli altri giornali parlano solo di cause in corso di accertamento.",
+      "fonti": [
+       "Anteprima24",
+       "TV7 Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Due auto si sono scontrate in via Vanvitelli, una si è ribaltata e due persone sono rimaste ferite.",
+      "fonti": [
+       "Anteprima24",
+       "Cronache del Sannio",
+       "Ottopagine",
+       "TV7 Benevento"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "La Mercedes: Ottopagine la indica come classe A, le altre fonti parlano solo di Mercedes. Il dettaglio dello stop non rispettato è solo di Anteprima24 e va preso come ipotesi.",
+      "fonti": [
+       "Ottopagine",
+       "Anteprima24"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "Come sono le ferite delle due ragazze.",
+     "Di chi sia la responsabilità dello scontro.",
+     "A che ora è stata riaperta la strada."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Prima lo scontro, poi il ribaltamento: ferite due ragazze",
+      "url": "https://www.anteprima24.it/benevento/scontro-ribaltamento-ferimento-ragazze-benevento/",
+      "data": "23 ott, 21:23"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Scontro tra auto in via Vanvitelli: ferite due ragazze",
+      "url": "https://www.cronachedelsannio.it/sannionews24/scontro-auto-via-vanvitelli-ferite-due-ragazze/",
+      "data": "23 ott, 21:43"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Via Vanvitelli: incidente, auto si ribalta, paura per occupanti. Strada chiusa",
+      "url": "https://www.ottopagine.it/bn/cronaca/442007/via-vanvitelli-incidente-e-paura-per-alcune-persone-chiusa-la-strada.shtml",
+      "data": "23 ott, 21:16"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "SCONTRO TRA DUE AUTO. FERITE DUE PERSONE (foto)",
+      "url": "https://www.tvsette.net/scontro-tra-due-auto-ferite-due-persone-foto/",
+      "data": "23 ott, 21:34"
+     }
+    ]
+   }
+  },
+  {
+   "id": "san-leucio-del-sannio-dreams-graduatoria-definitiva",
+   "titolo": "San Leucio del Sannio, progetto D.R.E.A.M.S.: pubblicata la graduatoria definitiva per i contributi allo sport dei minori",
+   "titolo_google": "San Leucio del Sannio, graduatoria contributi sport minori",
+   "sintesi": "Il Comune di San Leucio del Sannio ha pubblicato la graduatoria definitiva del progetto D.R.E.A.M.S. 2026/2027, il contributo per la frequenza di attività sportive o culturali dei minori dell'Ambito B1.",
+   "categoria": "altro",
+   "zona": "provincia",
+   "luogo": "San Leucio del Sannio",
+   "pubblicato": "2026-10-23T22:00:00+02:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Comune di San Leucio del Sannio",
+     "url": "https://www.halleyweb.com/c062060/mc/mc_p_dettaglio.php?id_pubbl=12210"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Comune di San Leucio del Sannio ha pubblicato all'albo la graduatoria definitiva del progetto D.R.E.A.M.S. per la stagione 2026/2027. È l'elenco delle domande ammesse al contributo per la frequenza di attività sportive e culturali a favore dei minori dell'Ambito B1 (il gruppo di Comuni che gestisce insieme i servizi sociali).",
+      "fonti": [
+       "Comune di San Leucio del Sannio"
+      ]
+     },
+     {
+      "testo": "La graduatoria è stata approvata con la determina dirigenziale n. 1494 del 22 ottobre 2026 e l'avviso è del 22 ottobre. Le domande sono indicate con i codici e il punteggio, senza i nomi. Per chiarimenti sulla propria posizione ci si può rivolgere al Comune.",
+      "fonti": [
+       "Comune di San Leucio del Sannio"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quanti contributi saranno assegnati e di quale importo."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di San Leucio del Sannio",
+      "titolo": "Prot. N.118720 del 22-10-2026 - Progetto D.R.E.A.M.S.-Stagione 2026/2027. Avviso Pubblico per riconoscimento contributo frequenza per attività sportive e/o culturali a favore di minori Ambito B1. Trasmissione graduatoria definitiva",
+      "url": "https://www.halleyweb.com/c062060/mc/mc_p_dettaglio.php?id_pubbl=12210",
+      "data": "23 ott"
+     }
+    ]
+   }
+  },
+  {
+   "id": "foglianise-via-roma-chiusa-notte-27-28-ottobre",
+   "titolo": "Foglianise, via Roma chiusa di notte il 27 e il 28 ottobre per i lavori sul costone del monte Caruso",
+   "titolo_google": "Foglianise, via Roma chiusa di notte il 27 e 28 ottobre",
+   "sintesi": "Il sindaco di Foglianise ha chiuso al traffico il tratto di via Roma fino all'ingresso di via Fontana dalle 00:01 alle 06:30 nelle notti del 27 e del 28 ottobre, per lavori sul costone del monte Caruso.",
+   "categoria": "strade",
+   "zona": "caudina",
+   "luogo": "Foglianise, via Roma",
+   "pubblicato": "2026-10-23T22:00:00+02:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Comune di Foglianise",
+     "url": "https://comune.foglianise.bn.it/albo-pretorio/?dettaglio_id=306037"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Foglianise il tratto di via Roma fino all'ingresso di via Fontana sarà chiuso al traffico dalle 00:01 alle 06:30 del 27 ottobre e, di nuovo, dalle 00:01 alle 06:30 del 28 ottobre 2026. Lo ha ordinato il sindaco con l'ordinanza n. 48 del 23 ottobre.",
+      "fonti": [
+       "Comune di Foglianise"
+      ]
+     },
+     {
+      "testo": "La chiusura serve a una ditta del paese che lavora al risanamento del costone del monte Caruso, un intervento per mettere in sicurezza il territorio dal rischio frane. La chiusura vale solo per il tratto dove si lavora. La ditta deve mettere la segnaletica di cantiere.",
+      "fonti": [
+       "Comune di Foglianise"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Dove passa il traffico durante la chiusura notturna."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Foglianise",
+      "titolo": "Ordinanza n. 48 - Chiusura strada tratto Via Roma - Ingresso via fontana",
+      "url": "https://comune.foglianise.bn.it/albo-pretorio/?dettaglio_id=306037",
+      "data": "23 ott"
+     }
+    ]
+   },
+   "immagine": "lavori-stradali",
+   "traffico": "chiusa",
+   "in_vigore_dal": "2026-10-27",
+   "in_vigore_fino": "2026-10-28",
+   "foto": "lavori-stradali-5"
+  },
+  {
+   "id": "faicchio-luci-votive-canone-2027-scadenza-28-febbraio",
+   "titolo": "Faicchio, luci votive al cimitero: canone 2027 di 20 euro, da pagare entro il 28 febbraio",
+   "titolo_google": "Faicchio, luci votive: canone 2027 di 20 euro entro il 28/2",
+   "sintesi": "Il Comune di Faicchio conferma per il 2027 il canone di 20 euro, Iva compresa, per ogni punto luce delle lampade votive del cimitero. Si paga con PagoPA entro il 28 febbraio 2027.",
+   "categoria": "altro",
+   "zona": "telesina",
+   "luogo": "Faicchio",
+   "pubblicato": "2026-10-23T22:00:00+02:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Comune di Faicchio",
+     "url": "https://comune.faicchio.bn.it/novita/illuminazione-votiva-cimiteriale-pagamento-canone-annuale-2027-nuove-attivazioni-e-cessazioni/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Comune di Faicchio ha pubblicato l'avviso sul canone 2027 delle luci votive, le lampade che restano accese sulle tombe del cimitero comunale. Il canone è confermato in 20 euro per ogni punto luce, Iva compresa.",
+      "fonti": [
+       "Comune di Faicchio"
+      ]
+     },
+     {
+      "testo": "Chi ha già il servizio paga con il sistema PagoPA e non deve presentare una nuova domanda. Chi vuole un nuovo allaccio o vuole disdire deve consegnare il modulo agli uffici comunali. Il termine per pagare e per presentare le richieste è il 28 febbraio 2027: poiché cade di domenica, le domande portate a mano vanno consegnate entro l'ultimo giorno di apertura prima di quella data.",
+      "fonti": [
+       "Comune di Faicchio"
+      ]
+     },
+     {
+      "testo": "Dal 25 ottobre 2026 si può chiedere informazioni agli uffici comunali nei giorni e negli orari di apertura. Un servizio informativo ci sarà anche al cimitero il 31 ottobre, il 1° e il 2 novembre, negli orari del personale incaricato, che saranno comunicati sul posto.",
+      "fonti": [
+       "Comune di Faicchio"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di Faicchio",
+      "titolo": "Illuminazione votiva cimiteriale – Pagamento canone annuale 2027, nuove attivazioni e cessazioni.",
+      "url": "https://comune.faicchio.bn.it/novita/illuminazione-votiva-cimiteriale-pagamento-canone-annuale-2027-nuove-attivazioni-e-cessazioni/",
+      "data": "23 ott"
+     }
+    ]
+   },
+   "immagine": "cimitero",
+   "in_vigore_fino": "2027-02-28",
+   "foto": "cimitero-3"
+  },
+  {
+   "id": "paupisi-cimitero-aperto-26-ottobre-2-novembre",
+   "titolo": "Paupisi, cimitero aperto anche lunedì 26 ottobre e lunedì 2 novembre per la Commemorazione dei Defunti",
+   "titolo_google": "Paupisi, cimitero aperto lunedì 26 ottobre e 2 novembre",
+   "sintesi": "Con un'ordinanza del 23 ottobre il sindaco di Paupisi apre il cimitero anche lunedì 26 ottobre e lunedì 2 novembre, giorni in cui di solito è chiuso, e allunga l'orario di circa un'ora.",
+   "categoria": "altro",
+   "zona": "caudina",
+   "luogo": "Paupisi",
+   "pubblicato": "2026-10-23T22:00:00+02:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Comune di Paupisi",
+     "url": "https://paupisi.halleyweb.it/c062049/mc/mc_p_dettaglio.php?id_pubbl=7671"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il sindaco di Paupisi ha deciso di tenere aperto il cimitero comunale anche lunedì 26 ottobre e lunedì 2 novembre 2026, due giorni in cui di solito resta chiuso. Lo dice l'ordinanza n. 21 del 23 ottobre, pubblicata all'albo del Comune.",
+      "fonti": [
+       "Comune di Paupisi"
+      ]
+     },
+     {
+      "testo": "Nei due giorni l'orario sarà allungato di circa un'ora, per il tempo che serve alla Commemorazione dei Defunti. L'ordinanza non indica gli orari precisi: per quelli ci si può rivolgere al Comune (piazza don Tommaso Boscaino).",
+      "fonti": [
+       "Comune di Paupisi"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Gli orari precisi di apertura e chiusura nei due giorni."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Paupisi",
+      "titolo": "APERTURA STRAORDINARIA AREA CIMITERIALE NEI GIORNI 26.10.2026 E 02.11.2026 PER COMMEMORAZIONE DEFUNTI.",
+      "url": "https://paupisi.halleyweb.it/c062049/mc/mc_p_dettaglio.php?id_pubbl=7671",
+      "data": "23 ott"
+     }
+    ]
+   },
+   "immagine": "cimitero",
+   "in_vigore_fino": "2026-11-02",
+   "foto": "cimitero-4"
+  },
   {
    "id": "benevento-corso-garibaldi-ragazza-aggredita-23-ottobre",
    "titolo": "Benevento, ragazza colpita con uno schiaffo a Corso Garibaldi: portata al San Pio, la Polizia cerca l'aggressore",
@@ -4112,7 +4428,7 @@
    "id": "eav-carburante-bus-sostitutivi-napoli-benevento-sospesi-22-ottobre",
    "titolo": "Valle Caudina, EAV sospende dal 22 ottobre i bus che sostituiscono il treno Napoli-Benevento per la mancanza di gasolio",
    "titolo_google": "Valle Caudina, EAV ferma i bus sostitutivi del treno",
-   "sintesi": "EAV, l'azienda dei treni e dei bus della Campania, ha annunciato che da giovedì 22 ottobre sospende i servizi sostitutivi ferroviari fatti da D'Agostino Tour. Il Caudino scrive che tra questi c'è il bus che sostituisce il treno Napoli–Benevento per la Valle Caudina.",
+   "sintesi": "EAV, l'azienda dei treni e dei bus della Campania, ha annunciato che da giovedì 22 ottobre sospende i servizi sostitutivi ferroviari fatti da D'Agostino Tour. Il Caudino scrive che tra questi c'è il bus che sostituisce il treno Napoli–Benevento per la Valle Caudina. Venerdì 23 EAV dice che i rifornimenti sono ripresi e prevede il ritorno alla normalità dei bus dal 27 ottobre.",
    "categoria": "altro",
    "zona": "caudina",
    "immagine": "treno",
@@ -4128,34 +4444,49 @@
     {
      "nome": "Il Caudino",
      "url": "https://ilcaudino.it/valle-caudina-domani-e-sospeso-il-servizio-sostitutivo-eav-napoli-benevento-uid-5/"
+    },
+    {
+     "nome": "EAV (23/10)",
+     "url": "https://www.eavsrl.it/aggiornamento-rifornimenti-gasolio-e-piano-di-ripresa-del-servizio-impianti-dta/"
     }
    ],
    "articolo": {
     "racconto": [
      {
+      "testo": "Venerdì 23 ottobre EAV ha comunicato che sono ripresi i rifornimenti di gasolio presso i depositi dei bus. Con il ritorno graduale delle forniture, i servizi bus sostitutivi e di supporto al servizio ferroviario risultano effettuati regolarmente. EAV scrive che da sabato 24 e domenica 25 ottobre il servizio automobilistico sarà regolare su tutti i bacini, tranne Ischia, e che dal 27 ottobre è previsto il ritorno alla normalità. Il comunicato non nomina la linea Napoli–Benevento.",
+      "fonti": [
+       "EAV (23/10)"
+      ],
+      "giorno": "2026-10-23"
+     },
+     {
       "testo": "Da giovedì 22 ottobre EAV, l'Ente Autonomo Volturno che gestisce treni e bus in Campania, sospende tutti i servizi sostitutivi ferroviari fatti dalla società D'Agostino Tour, cioè i bus che prendono il posto dei treni quando la linea è ferma. Lo scrive EAV nel comunicato stampa del 20 ottobre.",
       "fonti": [
        "EAV"
-      ]
+      ],
+      "giorno": "2026-10-22"
      },
      {
       "testo": "Secondo Il Caudino la sospensione tocca anche il bus sostitutivo della linea Napoli–Benevento, che serve le fermate della Valle Caudina. Il giornale lo ricava dal comunicato, dove non si nomina Benevento, e dal fatto che il servizio sul tratto sarebbe svolto proprio da D'Agostino Tour.",
       "fonti": [
        "EAV",
        "Il Caudino"
-      ]
+      ],
+      "giorno": "2026-10-22"
      },
      {
       "testo": "Il motivo è la mancanza di gasolio: i distributori non consegnano i rifornimenti mentre gli autotrasportatori protestano. EAV dice che dal 21 ottobre alcuni bus sono ridotti o soppressi e che dal 24 ottobre, se le forniture non tornano regolari, potrebbero fermarsi anche alcuni servizi ferroviari. Nel comunicato la lista delle sospensioni cresce giorno dopo giorno fino al 27 ottobre, con linee soprattutto nell'area di Napoli e nelle isole.",
       "fonti": [
        "EAV"
-      ]
+      ],
+      "giorno": "2026-10-21"
      },
      {
       "testo": "EAV segue la situazione e annuncia eventuali cambiamenti o il ritorno alla normalità sul sito www.eavsrl.it.",
       "fonti": [
        "EAV"
-      ]
+      ],
+      "giorno": "2026-10-21"
      }
     ],
     "cronologia": [
@@ -4171,6 +4502,13 @@
       "fatto": "Si fermano tutti i servizi sostitutivi ferroviari di D'Agostino Tour.",
       "fonti": [
        "EAV"
+      ]
+     },
+     {
+      "data": "23 ottobre",
+      "fatto": "EAV annuncia la ripresa dei rifornimenti di gasolio e il piano di ritorno alla normalità dei servizi bus entro il 27 ottobre.",
+      "fonti": [
+       "EAV (23/10)"
       ]
      },
      {
@@ -4192,8 +4530,7 @@
      }
     ],
     "non_si_sa": [
-     "Se i treni Napoli–Benevento, ora in parte sostituiti da bus, saranno toccati dal 24 ottobre.",
-     "Fino a quando resterà sospeso il servizio dei bus sostitutivi."
+     "Se il bus sostitutivo Napoli–Benevento per la Valle Caudina è tornato a circolare: EAV non nomina questa linea."
     ],
     "fonti": [
      {
@@ -4207,8 +4544,21 @@
       "titolo": "Valle Caudina: domani è sospeso il servizio sostitutivo Eav Napoli-Benevento",
       "url": "https://ilcaudino.it/valle-caudina-domani-e-sospeso-il-servizio-sostitutivo-eav-napoli-benevento-uid-5/",
       "data": "21 ott, 15:27"
+     },
+     {
+      "nome": "EAV (23/10)",
+      "titolo": "Aggiornamento rifornimenti gasolio e piano di ripresa del servizio – Impianti DTA",
+      "url": "https://www.eavsrl.it/aggiornamento-rifornimenti-gasolio-e-piano-di-ripresa-del-servizio-impianti-dta/",
+      "data": "23 ott, 18:57"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Venerdì 23 ottobre EAV ha annunciato la ripresa dei rifornimenti di gasolio, i bus sostitutivi del treno regolari e il ritorno alla normalità dei servizi bus dal 27 ottobre.",
+     "fonti": [
+      "EAV (23/10)"
+     ],
+     "quando": "2026-10-23T22:10+02:00"
+    }
    },
    "foto": "treno"
   },
@@ -5553,7 +5903,7 @@
    "id": "rifiuti-blocco-tir-apice-morcone-cusano-sant-angelo-a-cupolo",
    "titolo": "Blocco dei tir, rifiuti a rischio nel Sannio: raccolta ferma a Sant'Angelo a Cupolo, da giovedì sospesa a Sant'Agata de' Goti, a San Giorgio del Sannio non si conferisce l'indifferenziata",
    "titolo_google": "Tir, rifiuti a rischio nel Sannio: dove salta la raccolta",
-   "sintesi": "Con le strade bloccate dai camion e il gasolio che scarseggia, in diversi Comuni del Sannio la raccolta dei rifiuti salta o rischia di saltare. A Sant'Agata de' Goti sarà sospesa da giovedì 22 ottobre; a San Giorgio del Sannio mercoledì sera non va conferito l'indifferenziato; ad Apice è chiusa l'isola ecologica. Possibili ritardi anche a Colle Sannita. Giovedì 22 si aggiungono Pontelandolfo e San Martino Sannita (possibile stop dal 26 ottobre).",
+   "sintesi": "Con le strade bloccate dai camion e il gasolio che scarseggia, in diversi Comuni del Sannio la raccolta dei rifiuti salta o rischia di saltare. A Sant'Agata de' Goti sarà sospesa da giovedì 22 ottobre; a San Giorgio del Sannio mercoledì sera non va conferito l'indifferenziato; ad Apice è chiusa l'isola ecologica. Possibili ritardi anche a Colle Sannita. Giovedì 22 si aggiungono Pontelandolfo e San Martino Sannita (possibile stop dal 26 ottobre). Venerdì 23 si aggiungono Circello (stop dal 24 ottobre) e Sant'Arcangelo Trimonte (dal 26).",
    "categoria": "altro",
    "zona": "provincia",
    "luogo": "Sannio",
@@ -5624,10 +5974,26 @@
     {
      "nome": "Comune di Moiano (23/10)",
      "url": "https://www.comune.moiano.bn.it/novita/notizie/novita_57.html"
+    },
+    {
+     "nome": "Comune di Circello",
+     "url": "https://comune.circello.bn.it/albo-pretorio/?dettaglio_id=306020"
+    },
+    {
+     "nome": "Comune di Sant'Arcangelo Trimonte",
+     "url": "https://www.halleyweb.com/c062078/mc/mc_p_dettaglio.php?id_pubbl=5840"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Venerdì 23 ottobre altri due Comuni hanno pubblicato avvisi all'albo. A Circello il sindaco, con l'ordinanza n. 47, ha chiuso per ora il centro di raccolta comunale e sospeso la raccolta dei rifiuti urbani indifferenziati dal 24 ottobre. A Sant'Arcangelo Trimonte il Comune ha annunciato la sospensione temporanea della raccolta dei rifiuti urbani da lunedì 26 ottobre, per i blocchi stradali e per i problemi a trovare carburante. In nessuno dei due casi la pagina indica quando il servizio riprenderà.",
+      "fonti": [
+       "Comune di Circello",
+       "Comune di Sant'Arcangelo Trimonte"
+      ],
+      "giorno": "2026-10-23"
+     },
      {
       "testo": "Venerdì 23 ottobre il Comune di Moiano, in Valle Caudina, ha pubblicato sul suo sito l'avviso «Ripresa servizio trasporto scolastico»: lo scuolabus, sospeso per il blocco degli autotrasportatori, torna in servizio. La comunicazione è in un allegato e la pagina non dà altri dettagli.",
       "fonti": [
@@ -5764,6 +6130,14 @@
       "fonti": [
        "Comune di Moiano (23/10)"
       ]
+     },
+     {
+      "data": "23 ottobre",
+      "fatto": "Circello sospende la raccolta dal 24 ottobre; Sant'Arcangelo Trimonte la sospende da lunedì 26 ottobre.",
+      "fonti": [
+       "Comune di Circello",
+       "Comune di Sant'Arcangelo Trimonte"
+      ]
      }
     ],
     "concordano": [],
@@ -5869,14 +6243,27 @@
       "titolo": "Ripresa servizio trasporto scolastico",
       "url": "https://www.comune.moiano.bn.it/novita/notizie/novita_57.html",
       "data": "23 ott"
+     },
+     {
+      "nome": "Comune di Circello",
+      "titolo": "Ordinanza sindacale n.47 contingibile ed urgente per chiusura temporanea centro di raccolta comunale e sospensione temporanea della raccolta RSU dal 24/10/2026",
+      "url": "https://comune.circello.bn.it/albo-pretorio/?dettaglio_id=306020",
+      "data": "23 ott"
+     },
+     {
+      "nome": "Comune di Sant'Arcangelo Trimonte",
+      "titolo": "Avviso sospensione temporanea del servizio di raccolta rifiuti urbani a decorrere da lunedì 26.10.2026 in merito alle criticità connesse ai blocchi stradali e problemi di approviggionamento carburante in corso.",
+      "url": "https://www.halleyweb.com/c062078/mc/mc_p_dettaglio.php?id_pubbl=5840",
+      "data": "23 ott"
      }
     ],
     "aggiornamento": {
-     "testo": "Venerdì 23 ottobre il Comune di Moiano ha annunciato la ripresa del servizio di trasporto scolastico, sospeso per il blocco degli autotrasportatori.",
+     "testo": "Venerdì 23 ottobre Circello (dal 24 ottobre) e Sant'Arcangelo Trimonte (da lunedì 26) hanno annunciato la sospensione della raccolta dei rifiuti.",
      "fonti": [
-      "Comune di Moiano (23/10)"
+      "Comune di Circello",
+      "Comune di Sant'Arcangelo Trimonte"
      ],
-     "quando": "2026-10-23T19:10+02:00"
+     "quando": "2026-10-23T22:10+02:00"
     }
    }
   },
