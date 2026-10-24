@@ -1,7 +1,68 @@
 {
- "aggiornato": "2026-10-24T06:10+02:00",
+ "aggiornato": "2026-10-24T07:10+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "nel-cuore-del-sannio-dieci-comuni-riabitare-il-sud",
+   "titolo": "Dieci Comuni del Sannio, nasce «Nel Cuore del Sannio»: nidi, case per studenti e car sharing contro lo spopolamento",
+   "titolo_google": "Nel Cuore del Sannio: dieci Comuni contro lo spopolamento",
+   "sintesi": "Pietrelcina, Morcone, San Marco dei Cavoti e altri sette Comuni portano avanti una strategia per servizi, abitare e trasporti nelle aree interne. Il progetto N.C.S. vale 600mila euro e dura 40 mesi.",
+   "categoria": "altro",
+   "zona": "fortore",
+   "luogo": "Pietrelcina, Morcone, San Marco dei Cavoti e altri Comuni",
+   "pubblicato": "2026-10-24T07:00:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/24/ritorno-al-futuro-nelle-aree-interne-nasce-nel-cuore-del-sannio-strategia-che-rivoluziona-i-servizi-e-contrasta-lo-spopolamento/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Dieci Comuni del Sannio lavorano insieme a una strategia per combattere lo spopolamento delle aree interne, chiamata «Nel Cuore del Sannio». Sono Pietrelcina, Pesco Sannita, San Marco dei Cavoti, Baselice, Molinara, Foiano di Val Fortore, Fragneto l'Abate, Campolattaro, Morcone e Sassinoro. Il piano nasce dal bando «Riabitare il Sud» della Fondazione Con il Sud.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Si allarga ora con il progetto «N.C.S. – Nidi, Cantieri, Spazi comuni», cofinanziato anche dall'Impresa Sociale Con i Bambini: vale 600mila euro in 40 mesi e punta a coinvolgere circa 400 minori da 0 a 17 anni. Prevede il nido comunale di San Marco dei Cavoti e un Polo 0-6, più le «Officine 1000 giorni» nelle Case della Comunità di San Marco dei Cavoti, Pietrelcina e Morcone, con l'ASL di Benevento, per accompagnare le famiglie dalla gravidanza ai tre anni del bambino.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Altri punti: spazi comuni per attività culturali, doposcuola e giovani in edifici già sistemati (Casa della Cultura di Campolattaro, Palazzo Lembo a Baselice, area vicina al Palavetro di Pietrelcina, ex Cinema Vittoria di Morcone); uno studentato diffuso con 14 posti tra San Marco dei Cavoti, Pietrelcina e Pesco Sannita; una piccola distribuzione organizzata per i prodotti dei piccoli agricoltori.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Sul fronte dei trasporti sono previsti un car sharing con 5-10 auto ibride, il car pooling di comunità per i circa 20.000 residenti e mezzi per il trasporto sociale di disabili, bambini e anziani. Il responsabile è il Consorzio Sale della Terra, con enti locali, Università del Sannio, ASL, cooperative e associazioni. Il Comune di Fragneto l'Abate ha aderito formalmente il 22 ottobre.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando partiranno i singoli servizi (nido, car sharing, studentato).",
+     "La notizia è nota solo da NTR24: non sono usciti altri articoli indipendenti."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Ritorno al futuro nelle aree interne: nasce “Nel Cuore del Sannio”, strategia che rivoluziona i servizi e contrasta lo spopolamento",
+      "url": "https://www.ntr24.tv/2026/10/24/ritorno-al-futuro-nelle-aree-interne-nasce-nel-cuore-del-sannio-strategia-che-rivoluziona-i-servizi-e-contrasta-lo-spopolamento/",
+      "data": "24 ott, 07:00"
+     }
+    ]
+   }
+  },
   {
    "id": "benevento-cloud-finance-nuova-sede-via-collevaccino",
    "titolo": "Benevento, inaugurata in via Pietro Collevaccino la nuova sede di Cloud Finance",
@@ -1229,47 +1290,73 @@
    "immagine": "impianto-rifiuti",
    "luogo": "Colle Sannita (Decorata)",
    "pubblicato": "2026-10-23T17:07:00+02:00",
-   "stato": "una_fonte",
+   "stato": "confermata",
    "rilevante": false,
    "fonti": [
     {
      "nome": "Anteprima24",
      "url": "https://www.anteprima24.it/benevento/impianto-biometano-decorata-associazione-ambiente/"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/23/biometano-a-colle-sannita-lassociazione-tutti-per-lambiente-blocchiamo-un-impianto-di-cui-il-territorio-non-ha-bisogno/"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/24/impianto-biometano-a-decorata-no-del-comitato-rischia-di-ripetersi-lincubo-dei-miasmi/"
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "L'associazione «Tutti per l'Ambiente, l'Ambiente per Tutti», formata da residenti, ha diffuso una nota contro il progetto di un impianto privato di biometano (gas ricavato da reflui agricoli e di allevamento), di potenza 500 Smc, previsto a Decorata, frazione di Colle Sannita. Il testo è una presa di posizione dell'associazione, pubblicata da Anteprima24 come nota stampa.",
+      "testo": "L'associazione «Tutti per l'Ambiente, l'Ambiente per Tutti», formata da residenti, ha diffuso una nota contro il progetto di un impianto privato di biometano (gas ricavato da reflui agricoli e di allevamento), di potenza 500 Smc, previsto a Decorata, frazione di Colle Sannita. Il testo è una presa di posizione dell'associazione, ripresa come nota stampa da Anteprima24, NTR24 e Il Sannio Quotidiano.",
       "fonti": [
-       "Anteprima24"
+       "Anteprima24",
+       "NTR24",
+       "Il Sannio Quotidiano"
       ]
      },
      {
       "testo": "Secondo l'associazione il primo progetto risale al 2019 e i residenti lo hanno saputo solo nel 2023. Dopo le loro sollecitazioni, il Comune ha chiesto la VINCA, la Valutazione di Incidenza Ambientale. Dopo una prima proposta archiviata in Regione, la pratica ora è all'esame del Comune e il termine per presentare le osservazioni scade l'8 novembre.",
       "fonti": [
-       "Anteprima24"
+       "Anteprima24",
+       "NTR24",
+       "Il Sannio Quotidiano"
       ]
      },
      {
       "testo": "L'associazione sostiene che a Decorata non ci siano allevamenti sufficienti per alimentare l'impianto, che costringerebbe quindi a portare scarti da fuori con più traffico, e teme miasmi simili a quelli lamentati a Benevento in contrada San Domenico. Dice anche che alla società è stato revocato il parere sanitario e che è in corso un ricorso al TAR, senza ancora una decisione di merito.",
       "fonti": [
-       "Anteprima24"
+       "Anteprima24",
+       "NTR24",
+       "Il Sannio Quotidiano"
       ]
      },
      {
       "testo": "L'associazione dice che presenterà le sue osservazioni e invita i cittadini a fare lo stesso entro l'8 novembre. Queste sono le affermazioni dell'associazione: la nota non riporta la posizione della società né quella del Comune.",
       "fonti": [
-       "Anteprima24"
+       "Anteprima24",
+       "NTR24",
+       "Il Sannio Quotidiano"
       ]
      }
     ],
     "cronologia": [],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "Le tre testate riportano la stessa nota dell'associazione: progetto del 2019 scoperto nel 2023, VINCA al vaglio del Comune, osservazioni da presentare entro l'8 novembre.",
+      "fonti": [
+       "Anteprima24",
+       "NTR24",
+       "Il Sannio Quotidiano"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [
      "Cosa dicono la società proponente e il Comune di Colle Sannita.",
-     "Dove si presentano le osservazioni e con quali modalità."
+     "Dove si presentano le osservazioni e con quali modalità.",
+     "Le tre testate riprendono la sola nota dell'associazione: la versione della società e del Comune non è uscita."
     ],
     "fonti": [
      {
@@ -1277,6 +1364,18 @@
       "titolo": "Mega impianto di biometano a Decorata, la nota dell’Associazione ‘Tutti per l’Ambiente’",
       "url": "https://www.anteprima24.it/benevento/impianto-biometano-decorata-associazione-ambiente/",
       "data": "23 ott, 17:07"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Biometano a Colle Sannita, l’associazione ‘Tutti per l’Ambiente’: “Blocchiamo un impianto di cui il territorio non ha bisogno”",
+      "url": "https://www.ntr24.tv/2026/10/23/biometano-a-colle-sannita-lassociazione-tutti-per-lambiente-blocchiamo-un-impianto-di-cui-il-territorio-non-ha-bisogno/",
+      "data": "23 ott, 17:11"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Impianto biometano a Decorata, no del comitato: “Rischia di ripetersi l’incubo dei miasmi”",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/24/impianto-biometano-a-decorata-no-del-comitato-rischia-di-ripetersi-lincubo-dei-miasmi/",
+      "data": "24 ott, 07:03"
      }
     ]
    },
@@ -1286,47 +1385,84 @@
    "id": "benevento-inchiesta-comune-incidente-probatorio-3-novembre",
    "titolo": "Inchiesta sul Comune di Benevento, l'incidente probatorio parte il 3 novembre e cambia un difensore dell'ex dirigente",
    "titolo_google": "Inchiesta Comune di Benevento, incidente probatorio il 3 novembre",
-   "sintesi": "Nell'inchiesta sul Comune di Benevento l'incidente probatorio comincerà il 3 novembre davanti al gip. L'ex dirigente comunale ha cambiato uno dei suoi avvocati.",
+   "sintesi": "Nell'inchiesta sul Comune di Benevento l'incidente probatorio comincerà il 3 novembre. Altra Benevento è Possibile dice di aver consegnato alla Procura un esposto sui 17 concorsi del 2023-2025.",
    "categoria": "cronaca",
    "zona": "benevento",
    "luogo": "Benevento",
-   "pubblicato": "2026-10-23T16:28:00+02:00",
-   "stato": "una_fonte",
+   "pubblicato": "2026-10-24T06:30:00+02:00",
+   "stato": "confermata",
    "rilevante": false,
    "fonti": [
     {
      "nome": "Ottopagine",
      "url": "https://www.ottopagine.it/bn/cronaca/441971/inchiesta-sul-comune-un-nuovo-difensore-per-l-ex-dirigente-gennaro-santamaria.shtml"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/24/concorsi-al-comune-corona-esposto-in-procura-non-finira-a-tarallucci-e-vino-2-321-partecipanti-ingannati/"
     }
    ],
    "articolo": {
     "racconto": [
      {
+      "testo": "Sul fronte dei concorsi del Comune, venerdì sera Gabriele Corona, referente dell'associazione Altra Benevento è Possibile, ha tenuto una conferenza stampa e ha detto di aver consegnato alla Procura un esposto sui 17 concorsi banditi dal Comune di Benevento tra il 2023 e il 2025, ai quali hanno partecipato 2.321 persone. Il suo lavoro parte, dice, dalle dichiarazioni e dagli appunti dell'ex dirigente comunale.",
+      "fonti": [
+       "NTR24"
+      ],
+      "giorno": "2026-10-24"
+     },
+     {
+      "testo": "Secondo Corona, su 27 posti messi a bando 24 vincitori sarebbero in un elenco di 125 persone segnalate, annotato dall'ex dirigente, e per gli scorrimenti delle graduatorie le assunzioni sarebbero salite a 63. Sono affermazioni dell'associazione: la Procura sta ancora verificando le dichiarazioni dell'ex dirigente e, secondo Corona, accanto ai magistrati lavorano Carabinieri e Guardia di Finanza.",
+      "fonti": [
+       "NTR24"
+      ],
+      "giorno": "2026-10-24"
+     },
+     {
       "testo": "Nell'inchiesta sul Comune di Benevento l'ex dirigente comunale, arrestato dai carabinieri il 30 marzo e dal 28 settembre in libertà per una presunta concussione ai danni di un geometra, ha cambiato avvocato. Lo scrive Ottopagine: un legale che lo seguiva da circa sette mesi non è più suo difensore e al suo posto è subentrato un avvocato del Foro di Avellino, che lavorerà con il collega già in squadra.",
       "fonti": [
        "Ottopagine"
-      ]
+      ],
+      "giorno": "2026-10-23"
      },
      {
       "testo": "Secondo il giornale all'ex dirigente sono contestati 70mila euro che avrebbe preteso dal geometra, amministratore di una società di progettazione, per sbloccare alcune pratiche edilizie.",
       "fonti": [
        "Ottopagine"
-      ]
+      ],
+      "giorno": "2026-10-23"
      },
      {
       "testo": "L'incidente probatorio, cioè la fase in cui si raccolgono prove prima del processo con le difese presenti, comincerà il 3 novembre davanti alla gip Maria Amoruso. In quella sede l'ex dirigente dovrà ripetere le sue dichiarazioni rispondendo anche alle domande delle difese.",
       "fonti": [
        "Ottopagine"
-      ]
+      ],
+      "giorno": "2026-10-23"
      },
      {
       "testo": "La gip dovrà anche decidere su un'altra richiesta di incidente probatorio, depositata da un avvocato dopo l'udienza del 9 ottobre: riguarda la copia forense (la copia completa dei dati) di telefoni e computer di sedici dei diciannove indagati. Una ventesima posizione è stata stralciata per motivi di salute. Gli indagati sono funzionari e dipendenti del Comune e della Regione, tecnici, imprenditori e due sindaci della provincia; le ipotesi di reato vanno, a vario titolo, dalla concussione alla corruzione, dalla ricettazione alla violazione della legge sul finanziamento ai partiti.",
       "fonti": [
        "Ottopagine"
+      ],
+      "giorno": "2026-10-23"
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "23 ottobre",
+      "fatto": "Conferenza stampa di Altra Benevento è Possibile e consegna dell'esposto alla Procura, secondo Corona.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "data": "3 novembre",
+      "fatto": "Inizio dell'incidente probatorio davanti alla gip.",
+      "fonti": [
+       "Ottopagine"
       ]
      }
     ],
-    "cronologia": [],
     "concordano": [],
     "divergono": [],
     "non_si_sa": [
@@ -1339,8 +1475,21 @@
       "titolo": "Inchiesta sul Comune, un nuovo difensore per l'ex dirigente [nome omesso]",
       "url": "https://www.ottopagine.it/bn/cronaca/441971/inchiesta-sul-comune-un-nuovo-difensore-per-l-ex-dirigente-gennaro-santamaria.shtml",
       "data": "23 ott, 16:28"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Concorsi al Comune, Corona: “Esposto in Procura, non finirà a tarallucci e vino. 2.321 partecipanti ingannati”",
+      "url": "https://www.ntr24.tv/2026/10/24/concorsi-al-comune-corona-esposto-in-procura-non-finira-a-tarallucci-e-vino-2-321-partecipanti-ingannati/",
+      "data": "24 ott, 06:30"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Venerdì 23 ottobre Altra Benevento è Possibile ha annunciato un esposto alla Procura sui 17 concorsi del Comune tra il 2023 e il 2025; le cifre sono quelle dell'associazione, non ancora verificate dalla Procura.",
+     "fonti": [
+      "NTR24"
+     ],
+     "quando": "2026-10-24T07:10+02:00"
+    }
    }
   },
   {
@@ -2512,6 +2661,18 @@
     {
      "nome": "Benevento Giornale",
      "url": "https://www.beneventogiornale.com/2026/10/23/segreterie-sindacali-cgil-uil-usb-richiesta-urgente-di-intervento-istituzionale-sulla-gestione-dellaorn-san-pio-di-benevento/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/sindacati-lettera-fico-ospedale-sanpio-benevento/"
+    },
+    {
+     "nome": "Il Mattino",
+     "url": "https://www.ilmattino.it/benevento/benevento_ospedale_rummo_sindacati_chiedono_incontro_con_la_manager_se_non_saremo_ricevuti_protesteremo_a_napoli-9844426.html"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/24/ospedale-san-pio-si-inasprisce-lo-scontro-sindacati-chiedono-intervento-di-fico/"
     }
    ],
    "articolo": {
@@ -2551,7 +2712,10 @@
       "testo": "La lettera aperta a Fico di FP CGIL, UIL FP e USB, le accuse alla direttrice generale e il possibile sit-in sotto la Regione a Napoli.",
       "fonti": [
        "NTR24",
-       "Benevento Giornale"
+       "Benevento Giornale",
+       "Cronache del Sannio",
+       "Il Mattino",
+       "Il Sannio Quotidiano"
       ]
      }
     ],
@@ -2573,6 +2737,24 @@
       "titolo": "Segreterie Sindacali CGIL, UIL ,USB :”Richiesta urgente di intervento istituzionale sulla gestione dell’AORN “San Pio” di Benevento”",
       "url": "https://www.beneventogiornale.com/2026/10/23/segreterie-sindacali-cgil-uil-usb-richiesta-urgente-di-intervento-istituzionale-sulla-gestione-dellaorn-san-pio-di-benevento/",
       "data": "23 ott, 07:36"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Sindacati scrivono a Fico: “Senza risposte dg Morgante pronti a sit-in sotto la Regione”",
+      "url": "https://www.cronachedelsannio.it/sannionews24/sindacati-lettera-fico-ospedale-sanpio-benevento/",
+      "data": "23 ott, 08:57"
+     },
+     {
+      "nome": "Il Mattino",
+      "titolo": "Benevento, ospedale Rummo. Sindacati chiedono incontro con la manager: «Se non saremo ricevuti protesteremo a Napoli»",
+      "url": "https://www.ilmattino.it/benevento/benevento_ospedale_rummo_sindacati_chiedono_incontro_con_la_manager_se_non_saremo_ricevuti_protesteremo_a_napoli-9844426.html",
+      "data": "24 ott, 00:10"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Ospedale ‘San Pio’, si inasprisce lo scontro: sindacati chiedono intervento di Fico",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/24/ospedale-san-pio-si-inasprisce-lo-scontro-sindacati-chiedono-intervento-di-fico/",
+      "data": "24 ott, 07:00"
      }
     ]
    },
