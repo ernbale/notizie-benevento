@@ -131,14 +131,23 @@ articolo aperto. Nel registro delle fonti scrivi `letta (da casa, controllato HH
 vecchio di 3 ore o `esito` dice «non raggiungibile», scrivi `non raggiungibile (copia di casa ferma dalle HH:MM)`;
 solo per l'ASL prova allora `curl -sk https://www.aslbenevento.it/notizie` (il -k serve per il certificato).
 
-**Comunicati arrivati per posta: file `comunicati.json` delle fonti lette da casa** (quando la casella
-comunicati@notiziebenevento.it è collegata: `esito` dice «letta»). Società sportive, associazioni, Comuni e enti
-mandano lì i loro comunicati; ci sono `titolo` (l'oggetto), `data`, `mittente` (nome), `dominio` (dopo la @),
-`allegati` e `testo`. Leggi quelli arrivati dall'ultimo giro. Un comunicato da un dominio istituzionale (un
-Comune `*.bn.it`, la Provincia, la Regione, un ente pubblico) o dal sito della società che lo firma è una fonte
-ufficiale; uno da un indirizzo generico (gmail, libero…) vale come comunicato della società se il contenuto è
-verificabile (una partita, un evento con luogo e data), altrimenti cerca una conferma. Non si cita mai l'indirizzo
-email del mittente e niente numeri di telefono privati. Pubblicità, inviti a pagare e catene vanno scartati.
+**Comunicati arrivati per posta: file `comunicati.json` delle fonti lette da casa** (la casella
+comunicati@notiziebenevento.it, letta dal Pi ogni 5 minuti; rimbalzi e risposte automatiche sono già tolti).
+Società sportive, associazioni, sindacati, Comuni ed enti mandano lì i loro comunicati; ci sono `id`, `titolo`
+(l'oggetto), `data`, `arrivata`, `mittente` (nome), `dominio` (dopo la @), `allegati` e `testo`. **Appena ne arriva
+uno lo pubblica il giro lampo** (COMUNICATI.md, `strumenti/comunicati.py`), che segna ogni comunicato trattato in
+`comunicati_visti.json` e mette il suo `id` nel campo `comunicati` della notizia. Tu decidi solo quelli che
+`strumenti/giornali.py` mette nell'elenco come «Comunicato per email: …» (url `posta:<id>`): quelli che il giro
+lampo ha scartato o non è riuscito a trattare. Non pubblicare comunicati che non sono nell'elenco (ci sta già
+lavorando il giro lampo: sarebbero doppioni). Per quelli dell'elenco valgono le regole di COMUNICATI.md: se lo
+pubblichi metti il suo `id` in `"comunicati": ["…"]` della notizia (anche quando lo aggiungi a una notizia che c'è
+già), se lo scarti scrivi in «nota» cosa diceva e perché. Un comunicato da un dominio istituzionale (un Comune
+`*.bn.it`, la Provincia, la Regione, un ente pubblico) o della società, del sindacato o dell'associazione che lo
+firma è una fonte ufficiale; uno da un indirizzo generico (gmail, libero…) vale come comunicato della società se il
+contenuto è verificabile (una partita, un evento con luogo e data), altrimenti cerca una conferma. Tra le fonti il
+comunicato si cita col nome di chi lo firma e l'indirizzo del suo sito ufficiale (meglio la pagina del comunicato,
+se c'è): mai «posta:…», mai l'indirizzo email del mittente, niente numeri di telefono privati. Pubblicità, inviti a
+pagare e catene vanno scartati. I campi `subito` e `comunicati` delle notizie del giro lampo non si toccano.
 
 **Giornali del Sannio: l'elenco degli articoli nuovi (obbligatorio, all'inizio del giro).** Esegui
 `python3 strumenti/giornali.py | tee /tmp/giornali.txt`: legge i 14 giornali (feed, Ottopagine dalla sua pagina, TV7

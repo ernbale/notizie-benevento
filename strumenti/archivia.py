@@ -266,6 +266,9 @@ def controlla_decisioni(giro, percorso, d, prima, tutti_gli_id, ev, err):
         elif e == "scartata" and x.get("motivo") not in MOTIVI:
             err.append(f"{w}: «motivo» deve essere uno di: {', '.join(MOTIVI)} (un fatto locale vero con una fonte "
                        "autorevole non si scarta: esce, anche se piccolo)")
+        elif e == "scartata" and gruppi[gid].get("comunicati") and len(str(x.get("nota") or "").strip()) < 15:
+            err.append(f"{w}: c'è un comunicato arrivato per email ({', '.join(gruppi[gid]['comunicati'])}): scrivi in "
+                       "«nota» cosa diceva e perché non si pubblica (AGENTE.md, «Comunicati arrivati per posta»)")
         elif e == "scartata" and gruppi[gid].get("comuni") and len(str(x.get("nota") or "").strip()) < 15:
             err.append(f"{w}: è un avviso di {', '.join(gruppi[gid]['comuni'])}: scrivi in «nota» cosa diceva e perché "
                        "alla gente non serve (AGENTE.md, «I siti dei Comuni»: quello che serve a chi ci abita si pubblica)")
@@ -653,6 +656,12 @@ def controlla(d, err, avv, adesso=None):
         for f in n.get("fonti", []):
             if vuoto(f.get("nome")) or vuoto(f.get("url")):
                 err.append(f"{w}: fonte di prima pagina incompleta {f}")
+        # i campi del giro lampo dei comunicati per email (strumenti/comunicati.py): non vanno toccati
+        if "subito" in n and not isinstance(n["subito"], bool):
+            err.append(f"{w}: «subito» è vero o falso (lo mette il giro lampo: non toccarlo)")
+        if "comunicati" in n and (not isinstance(n["comunicati"], list)
+                                  or any(not re.fullmatch(r"[0-9a-f]{12}", str(c)) for c in n["comunicati"])):
+            err.append(f"{w}: «comunicati» è l'elenco degli id (12 caratteri) dei comunicati per email da cui viene")
         if n.get("stato") == "confermata":
             testate = {re.sub(r"\s*\(.*\)$", "", x or "") for x in nomi_prima}
             if len(testate) < 2:

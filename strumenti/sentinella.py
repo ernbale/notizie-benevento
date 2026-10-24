@@ -17,6 +17,9 @@ nessuno se ne accorgesse.
 6. Curiosità del Sannio (dal 24 ott 2026, vedi CURIOSITA.md): la scorta in curiosita.json basta per meno di
    SCORTA_MINIMA giorni (la routine del lunedì non l'ha rifornita), o dopo le 12:30 la curiosità di oggi non è ancora
    sul sito o sul canale Telegram: in quel caso rilancia la pubblicazione (curiosita_social.py non fa doppioni).
+7. Comunicati per email (dal 24 ott 2026, vedi COMUNICATI.md): solo sul Pi, un comunicato arrivato da più di
+   COMUNICATO_MAX minuti che il giro lampo non ha ancora trattato (comunicati_visti.json del sito). Il Pi lo rilancia
+   da solo (comunicati_lampo.py): qui si dà l'allarme.
 4. Giro mancato: notizie.json non aggiornato da più di GIRO_MAX minuti, dalle 7:30 alle 23; dalle 23 a mezzanotte
    solo se per domani c'è allerta arancione o rossa, perché il giro delle 23 l'agente lo fa solo allora (stessa prova,
    allerta_domani.py; il 22 ott la sentinella è finita in rosso alle 23:32 per un giro che giustamente non c'era).
@@ -66,6 +69,7 @@ VEDETTA_MAX = 20    # minuti senza un giro della vedetta delle chiusure (sul Pi)
 PISTA_MAX = 45      # minuti: una pista della vedetta non ancora vista dal giro Chiusure
 TG_CHIUSURE = 20    # minuti: una chiusura del sito non ancora sul canale Telegram
 SCORTA_MINIMA = 14  # giorni di curiosità in programma: sotto, la routine del lunedì non ha rifornito
+COMUNICATO_MAX = 30  # minuti: un comunicato per email non ancora trattato dal giro lampo
 CARTELLA_PI = os.path.expanduser("~/nb-fonti")
 PAUSA_RETE = 20     # secondi prima del secondo tentativo se la rete fa cilecca
 
@@ -334,6 +338,33 @@ def curiosita(gh, adesso, pi, sito, prova):
     return riparati, problemi
 
 
+def comunicati(gh, adesso, pi):
+    """I comunicati per email sono stati trattati dal giro lampo? (punto 7 in cima). Restituisce i problemi."""
+    if not pi:
+        return []
+    try:
+        with open(os.path.join(CARTELLA_PI, "archivio", "comunicati.json"), encoding="utf-8") as f:
+            voci = json.load(f).get("voci") or []
+    except (OSError, ValueError):
+        return ["non leggo comunicati.json dell'archivio di casa (~/nb-fonti/archivio)"]
+    visti = json.loads(gh.chiama("GET", f"repos/{REPO}/contents/comunicati_visti.json?ref=main", grezzo=True)).get("visti") or {}
+    try:
+        with open(os.path.join(CARTELLA_PI, "comunicati_lampo.json"), encoding="utf-8") as f:
+            vecchi = {k for k, x in (json.load(f).get("lanciati") or {}).items() if x.get("gia")}
+    except (OSError, ValueError):
+        vecchi = set()
+    problemi = []
+    for v in voci:
+        quando = v.get("arrivata") or v.get("data")
+        arrivata = iso(quando) if quando else None
+        if (v.get("id") and v["id"] not in visti and v["id"] not in vecchi and arrivata
+                and dt.timedelta(minutes=COMUNICATO_MAX) < adesso - arrivata < dt.timedelta(hours=24)):
+            problemi.append(f"il comunicato di {v.get('mittente') or v.get('dominio')} arrivato alle {arrivata:%H:%M} "
+                            f"(«{str(v.get('titolo'))[:60]}») non è ancora stato trattato dal giro lampo "
+                            "(~/nb-fonti/comunicati.log)")
+    return problemi
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--sito", default=os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -364,6 +395,10 @@ def main():
         problemi += p3
     except Exception as e:
         problemi.append(f"non riesco a controllare le curiosità ({type(e).__name__}: {e})")
+    try:
+        problemi += comunicati(gh, adesso, a.pi)
+    except Exception as e:
+        problemi.append(f"non riesco a controllare i comunicati per email ({type(e).__name__}: {e})")
 
     ora = f"{adesso:%d/%m %H:%M}"
     for m in riparati:
