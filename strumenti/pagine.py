@@ -981,7 +981,7 @@ def _allerta_comune(c, allerte, oggi):
             f'{e(", ".join(livelli))}{e(bol)}. <a href="/meteo.html">Le previsioni del tempo</a>.</p>')
 
 
-def html_comune(c, notizie, eventi, chiusure, allerte, stemma, oggi, distributori=0):
+def html_comune(c, notizie, eventi, allerte, stemma, oggi, distributori=0):
     titolo = f"Notizie da {c}"
     h = _testata_pagina("Comuni del Sannio", "Provincia di Benevento", titolo)
     somm = (f'<p class="sommario">Le notizie di {e(c)}, in provincia di Benevento: cronaca, strade, politica, sport ed '
@@ -997,13 +997,6 @@ def html_comune(c, notizie, eventi, chiusure, allerte, stemma, oggi, distributor
         h = h.replace(f"<h1>{e(titolo)}</h1>", f'<div class="testata-comune"><div><h1>{e(titolo)}</h1>{somm}</div>{fig}</div>')
     else:
         h += somm
-    visti = set()
-    for g, cs in chiusure_per_giorno(chiusure, oggi).items():
-        for x in cs:
-            if x["comune"] == c and x.get("id") not in visti:
-                visti.add(x.get("id"))
-                h += (f'<a class="striscia-chiusure" href="/scuole-chiuse/#{e(x.get("id"))}">'
-                      f'{e(_giorno_chiusura(g, oggi))}: {e(x["cosa"])}</a>')
     h += _allerta_comune(c, allerte, oggi)
     if eventi:
         h += f"<h3>Prossimi eventi a {e(c)}</h3><ul class=\"notizie-comune\">" + "".join(
@@ -1473,7 +1466,7 @@ def main():
                          jsonld=jsonld, extra="" if visibile else '<meta name="robots" content="noindex, follow">')
         scrivi(os.path.join(sito, url_comune(c).strip("/"), "index.html"),
                pagina(modello, seo, {"statica": True},
-                      html_comune(c, dentro, evc, chius.get("chiusure") or [], allerte, stemmi.get(c), oggi,
+                      html_comune(c, dentro, evc, allerte, stemmi.get(c), oggi,
                                   distributori.get(c, 0)), articolo=True))
         if visibile:
             indicizzate += 1
