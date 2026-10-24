@@ -1,7 +1,62 @@
 {
- "aggiornato": "2026-10-24T17:09+02:00",
+ "aggiornato": "2026-10-24T18:09+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-primavera-2-avellino-5-2-24-ottobre",
+   "titolo": "Benevento Primavera, derby vinto 5-2 contro l'Avellino: la squadra sale a 13 punti",
+   "titolo_google": "Benevento Primavera 2, 5-2 all'Avellino all'Avellola",
+   "sintesi": "Sabato 24 ottobre, a Avellola, il Benevento Primavera ha battuto 5-2 l'Avellino nella sesta giornata del girone B di Primavera 2. I giallorossi salgono a 13 punti, quarto posto.",
+   "categoria": "sport",
+   "sport": "calcio",
+   "zona": "benevento",
+   "luogo": "Benevento, Avellola",
+   "pubblicato": "2026-10-24T17:54:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/24/benevento-il-derby-di-primavera-2-e-giallorosso-5-2-allavellino-allavellola/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Sabato 24 ottobre la Primavera del Benevento, la squadra dei giovani giallorossi, ha vinto 5-2 il derby con l'Avellino. Si è giocato all'Avellola, nella sesta giornata del girone B del campionato Primavera 2.",
+      "fonti": [
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "I gol del Benevento sono di Del Gaudio nel primo tempo, al 35', e nella ripresa di Giugliano al 4', Coltorti al 14', Amico al 39' e Battista al 49'. Per l'Avellino hanno segnato Tosti al 45' e Raimondi al 48' della ripresa. In panchina c'erano Luigi Panarelli per il Benevento e Luigi Molino per l'Avellino.",
+      "fonti": [
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Con questa vittoria il Benevento sale a 13 punti e si porta al quarto posto del girone.",
+      "fonti": [
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "La prossima partita della Primavera."
+    ],
+    "fonti": [
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Benevento, il derby di Primavera 2 è giallorosso: 5-2 all’Avellino all’Avellola",
+      "url": "https://www.beneventonews24.it/2026/10/24/benevento-il-derby-di-primavera-2-e-giallorosso-5-2-allavellino-allavellola/",
+      "data": "24 ott, 17:54"
+     }
+    ]
+   }
+  },
   {
    "id": "san-giorgio-la-molara-via-straniera-chiusa-26-ottobre-10-novembre",
    "titolo": "San Giorgio la Molara, via Straniera chiusa dal 26 ottobre al 10 novembre per lavori sulla strada",
@@ -3908,14 +3963,14 @@
   },
   {
    "id": "benevento-scuolabus-contrade-sospeso-23-ottobre",
-   "titolo": "Benevento, da venerdì 23 ottobre niente scuolabus nelle contrade per la mancanza di carburante",
-   "titolo_google": "Benevento, stop agli scuolabus nelle contrade dal 23 ottobre",
-   "sintesi": "Il Comune di Benevento sospende da venerdì 23 ottobre il servizio scuolabus nelle contrade della città per la mancanza di carburante. Dal 24 ottobre, se la crisi continua, ferme anche le navette della scuola «Federico Torre».",
+   "titolo": "Benevento, da lunedì 26 ottobre riprende il trasporto scolastico nelle contrade e per la scuola «Federico Torre»",
+   "titolo_google": "Benevento, scuolabus nelle contrade ripartono lunedì 26",
+   "sintesi": "Il Comune di Benevento annuncia che da lunedì 26 ottobre il trasporto scolastico riprende regolarmente, nelle contrade e con le navette per la scuola «Federico Torre». La crisi del carburante, dice il Comune, è finita.",
    "categoria": "altro",
    "zona": "benevento",
    "immagine": "scuolabus",
    "luogo": "Benevento",
-   "pubblicato": "2026-10-22T18:02:00+02:00",
+   "pubblicato": "2026-10-24T17:54:00+02:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
@@ -3924,30 +3979,62 @@
      "url": "https://www.ntr24.tv/2026/10/22/benevento-domani-niente-scuolabus-nelle-contrade-a-causa-della-carenza-di-carburante/"
     },
     {
-     "nome": "Gazzetta di Benevento",
-     "url": "https://www.gazzettabenevento.it/it/il-servizio-scuolabus-non-potra-essere-espletato-dalla-giornata-di-domani-venerdi-23-ottobre-nelle"
-    },
-    {
      "nome": "Ottopagine",
      "url": "https://www.ottopagine.it/bn/attualita/441875/carenza-di-carburante-a-benevento-stop-agli-scuolabus-nelle-contrade.shtml"
+    },
+    {
+     "nome": "Gazzetta di Benevento (24/10)",
+     "url": "https://www.gazzettabenevento.it/it/da-lunedi-26-ottobre-il-servizio-di-trasporto-scolastico-riprendera-regolarmente-sia-nelle-contrade"
+    },
+    {
+     "nome": "NTR24 (24/10)",
+     "url": "https://www.ntr24.tv/2026/10/24/benevento-lunedi-riprende-il-servizio-di-trasporto-scolastico/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/24/benevento-servizio-di-trasporto-scolastico-riprende-regolarmente-da-lunedi/"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/il-servizio-scuolabus-non-potra-essere-espletato-dalla-giornata-di-domani-venerdi-23-ottobre-nelle"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Da lunedì 26 ottobre il trasporto scolastico a Benevento riprende regolarmente. Vale sia per lo scuolabus nelle contrade, le zone di campagna fuori dal centro, sia per le navette degli alunni della scuola «Federico Torre». Lo comunicano il sindaco Clemente Mastella e il delegato all'Istruzione Marcello Palladino.",
+      "fonti": [
+       "Gazzetta di Benevento (24/10)",
+       "NTR24 (24/10)",
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-24"
+     },
+     {
+      "testo": "Il Comune spiega che il servizio riparte perché la crisi nell'approvvigionamento di carburante, che lo aveva fermato, è cessata. Prima della ripartenza ha ricevuto una comunicazione ufficiale dall'azienda che svolge il trasporto.",
+      "fonti": [
+       "Gazzetta di Benevento (24/10)",
+       "NTR24 (24/10)",
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-24"
+     },
      {
       "testo": "Da domani, venerdì 23 ottobre, a Benevento lo scuolabus non passa più nelle contrade, le zone di campagna fuori dal centro. Lo ha comunicato il Comune: il servizio non si può svolgere per la mancanza di carburante.",
       "fonti": [
        "NTR24",
        "Gazzetta di Benevento",
        "Ottopagine"
-      ]
+      ],
+      "giorno": "2026-10-22"
      },
      {
       "testo": "Il Comune parla di «note vicende nazionali» legate alla carenza di carburante. Sono i giorni dei blocchi degli autotrasportatori, che hanno lasciato a secco molti distributori nel Sannio.",
       "fonti": [
        "NTR24",
        "Gazzetta di Benevento"
-      ]
+      ],
+      "giorno": "2026-10-22"
      },
      {
       "testo": "Se la crisi di rifornimento dura, dal 24 ottobre si fermano anche le navette che servono il plesso scolastico «Federico Torre». Ottopagine scrive che la ripresa dei collegamenti dipende da come evolve la situazione e dalla possibilità di avere di nuovo il carburante necessario.",
@@ -3955,16 +4042,37 @@
        "NTR24",
        "Gazzetta di Benevento",
        "Ottopagine"
-      ]
+      ],
+      "giorno": "2026-10-22"
      },
      {
       "testo": "Per le famiglie delle contrade vuol dire accompagnare i figli a scuola in altro modo.",
       "fonti": [
        "Ottopagine"
+      ],
+      "giorno": "2026-10-22"
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "22 ottobre",
+      "fatto": "Il Comune annuncia lo stop agli scuolabus nelle contrade dal 23 ottobre per mancanza di carburante.",
+      "fonti": [
+       "NTR24",
+       "Gazzetta di Benevento",
+       "Ottopagine"
+      ]
+     },
+     {
+      "data": "26 ottobre",
+      "fatto": "Il trasporto scolastico riprende regolarmente, nelle contrade e per la scuola «Federico Torre».",
+      "fonti": [
+       "Gazzetta di Benevento (24/10)",
+       "NTR24 (24/10)",
+       "BeneventoNews24"
       ]
      }
     ],
-    "cronologia": [],
     "concordano": [
      {
       "testo": "Lo stop agli scuolabus nelle contrade da venerdì 23 ottobre e quello alle navette del plesso «Federico Torre» dal 24 ottobre, se resta la crisi di carburante.",
@@ -3973,13 +4081,18 @@
        "Gazzetta di Benevento",
        "Ottopagine"
       ]
+     },
+     {
+      "testo": "La ripresa regolare del trasporto scolastico da lunedì 26 ottobre, nelle contrade e per le navette della scuola «Federico Torre», perché la crisi del carburante è finita.",
+      "fonti": [
+       "Gazzetta di Benevento (24/10)",
+       "NTR24 (24/10)",
+       "BeneventoNews24"
+      ]
      }
     ],
     "divergono": [],
-    "non_si_sa": [
-     "Fino a quando resta sospeso il servizio.",
-     "Se ci sono alternative per gli alunni delle contrade."
-    ],
+    "non_si_sa": [],
     "fonti": [
      {
       "nome": "NTR24",
@@ -3988,18 +4101,45 @@
       "data": "22 ott, 17:29"
      },
      {
-      "nome": "Gazzetta di Benevento",
-      "titolo": "Il servizio scuolabus non potrà essere espletato dalla giornata di domani, venerdì 23 ottobre, nelle contrade cittadine",
-      "url": "https://www.gazzettabenevento.it/it/il-servizio-scuolabus-non-potra-essere-espletato-dalla-giornata-di-domani-venerdi-23-ottobre-nelle",
-      "data": "22 ott, 17:07"
-     },
-     {
       "nome": "Ottopagine",
       "titolo": "La nota del Comune con gli effetti che cominceranno a partire da domani",
       "url": "https://www.ottopagine.it/bn/attualita/441875/carenza-di-carburante-a-benevento-stop-agli-scuolabus-nelle-contrade.shtml",
       "data": "22 ott, 18:02"
+     },
+     {
+      "nome": "Gazzetta di Benevento (24/10)",
+      "titolo": "Da lunedì 26 ottobre il servizio di trasporto scolastico riprenderà regolarmente sia nelle contrade sia per le navette",
+      "url": "https://www.gazzettabenevento.it/it/da-lunedi-26-ottobre-il-servizio-di-trasporto-scolastico-riprendera-regolarmente-sia-nelle-contrade",
+      "data": "24 ott, 17:28"
+     },
+     {
+      "nome": "NTR24 (24/10)",
+      "titolo": "Benevento, lunedì riprende il servizio di trasporto scolastico",
+      "url": "https://www.ntr24.tv/2026/10/24/benevento-lunedi-riprende-il-servizio-di-trasporto-scolastico/",
+      "data": "24 ott, 17:43"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Benevento| Servizio di trasporto scolastico riprende regolarmente da lunedì",
+      "url": "https://www.beneventonews24.it/2026/10/24/benevento-servizio-di-trasporto-scolastico-riprende-regolarmente-da-lunedi/",
+      "data": "24 ott, 17:43"
+     },
+     {
+      "nome": "Gazzetta di Benevento",
+      "url": "https://www.gazzettabenevento.it/it/il-servizio-scuolabus-non-potra-essere-espletato-dalla-giornata-di-domani-venerdi-23-ottobre-nelle",
+      "titolo": "Il servizio scuolabus non potrà essere espletato dalla giornata di domani, venerdì 23 ottobre, nelle contrade cittadine",
+      "data": "22 ott, 17:07"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Sabato 24 ottobre il Comune ha annunciato che da lunedì 26 ottobre il trasporto scolastico, nelle contrade e per la scuola «Federico Torre», riprende regolarmente.",
+     "fonti": [
+      "Gazzetta di Benevento (24/10)",
+      "NTR24 (24/10)",
+      "BeneventoNews24"
+     ],
+     "quando": "2026-10-24T18:09+02:00"
+    }
    },
    "foto": "scuolabus-4"
   },
