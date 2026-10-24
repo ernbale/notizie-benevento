@@ -334,6 +334,82 @@ def immagine_ig(sito, n):
     return rel
 
 
+def credito_breve(c):
+    return ((c.get("immagine") or {}).get("credito") or "").strip()
+
+
+def immagine_curiosita(sito, c):
+    """L'immagine della curiosità per Instagram, Facebook e Telegram (img/ig/curiosita-<slug>.jpg, 1080×1350), come
+    quelle delle notizie (immagine_ig): testata, la foto libera con l'autore, «Curiosità del Sannio», titolo e inizio
+    del racconto. Si rifà solo se cambia qualcosa (impronta nel commento del JPEG)."""
+    from PIL import Image, ImageDraw
+    W, H = 1080, 1350
+    foto = (c.get("immagine") or {}).get("file")
+    impronta = hashlib.sha1(json.dumps([c["titolo"], c["testo"], c["categoria"], c["luogo"], foto, credito_breve(c), 1],
+                                       ensure_ascii=False).encode()).hexdigest()[:10]
+    rel = f"img/ig/curiosita-{c['slug']}.jpg"
+    full = os.path.join(sito, rel)
+    try:
+        with Image.open(full) as vecchia:
+            if (vecchia.info.get("comment") or b"").decode(errors="ignore") == impronta:
+                return rel
+    except (OSError, ValueError):
+        pass
+    im = Image.new("RGB", (W, H), "#fdeedd")
+    d = ImageDraw.Draw(im)
+    _testata(d, W)
+    x, larg, y = 60, W - 120, 190
+    if foto and os.path.exists(os.path.join(sito, foto.lstrip("/"))):
+        with Image.open(os.path.join(sito, foto.lstrip("/"))) as f:
+            f = f.convert("RGB")
+            alto = 600
+            r = max(W / f.width, alto / f.height)
+            f = f.resize((round(f.width * r), round(f.height * r)))
+            sx, sy = (f.width - W) // 2, (f.height - alto) // 2
+            im.paste(f.crop((sx, sy, sx + W, sy + alto)), (0, y))
+        nota = credito_breve(c) + " · Wikimedia Commons"
+        fn = _font(FONT_BOLD, 22)
+        d.rectangle([0, y + alto - 40, fn.getlength(nota) + 40, y + alto], fill="#111111")
+        d.text((20, y + alto - 20), nota, font=fn, fill="#ffffff", anchor="lm")
+        y += alto + 50
+    else:
+        foto = None
+        y += 60
+    fo = _font(FONT_BOLD, 30)
+    occ = "CURIOSITÀ DEL SANNIO"
+    d.text((x, y), occ, font=fo, fill="#c4161c", anchor="lm")
+    d.text((x + fo.getlength(occ) + 18, y), f"{CAT_CURIOSITA.get(c['categoria'], '')} · {c['luogo']}".upper(),
+           font=fo, fill="#5b5249", anchor="lm")
+    y += 44
+    basso = H - 110
+    spazio = (basso - y) * (0.55 if foto else 0.45)
+    for size in range(66 if foto else 84, 40, -2):
+        ft = _font(FONT_BOLD, size)
+        righe = _a_capo(c["titolo"], ft, larg)
+        if len(righe) * size * 1.14 <= spazio:
+            break
+    for rg in righe:
+        d.text((x, y), rg, font=ft, fill="#111111")
+        y += size * 1.14
+    y += 22
+    fs = _font(FONT_BOLD, 33)
+    par = _paragrafi_curiosita(c["testo"])
+    rr = _a_capo(par[0] if foto else " ".join(par[:2]), fs, larg)
+    massimo = max(0, int((basso - y) // (33 * 1.32)))
+    if len(rr) > massimo:
+        rr = rr[:massimo]
+        if rr:
+            rr[-1] = rr[-1].rstrip(",;:.") + "…"
+    for rg in rr:
+        d.text((x, y), rg, font=fs, fill="#5b5249")
+        y += 33 * 1.32
+    d.rectangle([0, H - 14, W, H], fill="#c4161c")
+    d.text((x, H - 56), "La storia intera su notiziebenevento.it", font=_font(FONT_BOLD, 30), fill="#111111", anchor="lm")
+    os.makedirs(os.path.dirname(full), exist_ok=True)
+    im.save(full, "JPEG", quality=88, optimize=True, comment=impronta.encode())
+    return rel
+
+
 def immagine_notizia(sito, n, tipo):
     """Percorso dell'immagine (sul sito) della notizia: si rifà solo se cambiano titolo, sezione, luogo o fonti.
     Il nome resta sempre lo stesso: Facebook si tiene l'indirizzo dell'immagine letto quando esce il post, e se
@@ -769,6 +845,74 @@ def _cronologia(righe, fonti, titolo):
     li = "".join(f'<li><span class="giorno">{e(c.get("data"))}</span><span>{e(c.get("fatto"))}'
                  f'{_cita(c.get("fonti"), fonti)}</span></li>' for c in righe)
     return f'<h3>{e(titolo)}</h3><ol class="cronologia">{li}</ol>'
+
+
+# ---------- Curiosità del Sannio (curiosita.json: una al giorno, alle 12; sui social strumenti/curiosita_social.py) ----------
+# Voluta dal proprietario il 24 ott 2026: «un post al giorno alle 12: una curiosità, una storia, un fatto del passato,
+# un detto, una superstizione, una leggenda… di Benevento», «andare avanti all'infinito», «nessuna storia scritta male».
+# Sul sito esce col primo giro dopo le 12 del suo giorno (prima non c'è: né pagina, né riquadro, né sitemap).
+ORA_CURIOSITA = 12
+CAT_CURIOSITA = {"leggenda": "Leggenda", "storia": "Storia", "detto": "Detto", "superstizione": "Superstizione",
+                 "tradizione": "Tradizione", "cibo": "Sapori", "paese": "Paesi del Sannio", "accadde oggi": "Accadde oggi"}
+
+
+def curiosita_uscite(curiosita, adesso):
+    """Le curiosità già uscite (dalle 12 del loro giorno), dalla più nuova."""
+    from facebook import fuso
+    t = adesso.astimezone(fuso())
+    oggi = t.date().isoformat()
+    return sorted((c for c in curiosita if c["data"] < oggi or (c["data"] == oggi and t.hour >= ORA_CURIOSITA)),
+                  key=lambda c: c["data"], reverse=True)
+
+
+def _data_curiosita(iso):
+    d = dt.date.fromisoformat(iso)
+    return f"{GIORNI[d.weekday()]} {d.day} {MESI_LUNGHI[d.month - 1]} {d.year}"
+
+
+def _paragrafi_curiosita(testo):
+    """I paragrafi del racconto; l'ultima riga, la domanda per i commenti dei social, sul sito non c'è."""
+    par = [x.strip() for x in testo.split("\n\n") if x.strip()]
+    if len(par) > 1 and par[-1].endswith("?") and len(par[-1]) < 140:
+        par = par[:-1]
+    return par
+
+
+def html_curiosita(c, altre):
+    h = _testata_pagina("Curiosità del Sannio", c["luogo"], c["titolo"])
+    h += (f'<p class="agg-chiusure">{e(CAT_CURIOSITA.get(c["categoria"], "Curiosità"))} · '
+          f'{e(_data_curiosita(c["data"]))}</p>')
+    im = c.get("immagine")
+    if im:
+        h += (f'<figure class="foto-tema"><img src="{e(im["file"])}" alt="{e(c["titolo"])}" loading="lazy">'
+              f'<figcaption><a href="{e(im["pagina"])}" target="_blank" rel="noopener nofollow">{e(im["credito"])}'
+              "</a>, da Wikimedia Commons</figcaption></figure>")
+    h += "".join(f"<p>{e(x)}</p>" for x in _paragrafi_curiosita(c["testo"]))
+    h += '<h3>Fonti</h3><ul class="elenco-fonti">' + "".join(
+        f"<li>{_link_fonte(f, f['titolo'])}</li>" for f in c.get("fonti") or []) + "</ul>"
+    if altre:
+        h += '<h3>Altre curiosità</h3><ul class="notizie-comune">' + "".join(
+            f'<li><a href="/curiosita/{e(x["slug"])}/">{e(x["titolo"])}</a><span class="dove">'
+            f'{e(CAT_CURIOSITA.get(x["categoria"], ""))} · {e(x["luogo"])}</span></li>' for x in altre) + "</ul>"
+    h += '<p class="collegate"><a href="/curiosita/">Tutte le curiosità del Sannio ›</a></p>'
+    h += SEGUI
+    return f'<article class="appro">{h}</article>'
+
+
+def html_curiosita_elenco(uscite):
+    h = _testata_pagina("Curiosità del Sannio", "", "Curiosità del Sannio: leggende, storia e tradizioni")
+    h += ('<p class="sommario">Ogni giorno alle 12 una storia di Benevento e dei paesi della provincia: leggende, fatti '
+          "del passato, detti, superstizioni, tradizioni e sapori. Ogni fatto è controllato sulle fonti, che trovi in "
+          "fondo a ogni racconto; le leggende sono raccontate come leggende.</p>")
+    if uscite:
+        h += '<ul class="notizie-comune">' + "".join(
+            f'<li><a href="/curiosita/{e(x["slug"])}/">{e(x["titolo"])}</a><span class="dove">'
+            f'{e(CAT_CURIOSITA.get(x["categoria"], ""))} · {e(x["luogo"])} · {e(_data_curiosita(x["data"]))}</span></li>'
+            for x in uscite) + "</ul>"
+    else:
+        h += "<p>La prima esce oggi alle 12.</p>"
+    h += SEGUI
+    return f'<article class="appro">{h}</article>'
 
 
 def _fonti(fonti):
@@ -1262,7 +1406,7 @@ def main():
     except ImportError:
         con_immagini = False
         print("AVVISO: Pillow non c'è, uso l'immagine del sito per tutte le notizie", file=sys.stderr)
-    for d in ("notizia", "approfondimento", "sezione", "zona", "evento", "comune", "comuni", "carburanti"):
+    for d in ("notizia", "approfondimento", "sezione", "zona", "evento", "comune", "comuni", "carburanti", "curiosita"):
         shutil.rmtree(os.path.join(sito, d), ignore_errors=True)
     per_id = {n["id"]: n for n in notizie}
     usate, mappa = set(), []   # mappa: (url, lastmod)
@@ -1426,6 +1570,50 @@ def main():
     for i in carb.get("impianti") or []:
         distributori[i["comune"]] = distributori.get(i["comune"], 0) + 1
 
+    # le curiosità del Sannio (curiosita.json): sul sito solo quelle già uscite, dalle 12 del loro giorno
+    try:
+        curiosita = leggi(os.path.join(sito, "curiosita.json")).get("curiosita") or []
+    except (OSError, ValueError) as ex:
+        print(f"AVVISO: curiosita.json non si legge ({type(ex).__name__}: {ex}): niente curiosità", file=sys.stderr)
+        curiosita = []
+    cur_uscite = curiosita_uscite(curiosita, adesso)
+    os.makedirs(os.path.join(sito, "curiosita"), exist_ok=True)
+    url = SITO + "/curiosita/"
+    seo = blocco_seo(f"Curiosità del Sannio: leggende, storia e tradizioni di Benevento – {NOME}", "Ogni giorno una "
+                     "storia di Benevento e della provincia: leggende come le janare, fatti del passato, detti, "
+                     "superstizioni e tradizioni dei paesi del Sannio, con le fonti.", url, "/condivisione.png",
+                     jsonld={"@context": "https://schema.org", "@type": "CollectionPage", "name": "Curiosità del Sannio",
+                             "url": url, "isPartOf": {"@type": "WebSite", "name": NOME, "url": SITO + "/"}})
+    scrivi(os.path.join(sito, "curiosita", "index.html"),
+           pagina(modello, seo, {"statica": True}, html_curiosita_elenco(cur_uscite), articolo=True))
+    mappa.append((url, cur_uscite[0]["data"] if cur_uscite else None))
+    for c in cur_uscite:
+        url = f"{SITO}/curiosita/{c['slug']}/"
+        im = c.get("immagine") or {}
+        jsonld = {"@context": "https://schema.org", "@type": "Article", "headline": breve(c["titolo"], 110),
+                  "datePublished": dt.datetime.combine(dt.date.fromisoformat(c["data"]), dt.time(ORA_CURIOSITA),
+                                                       fuso()).isoformat(),
+                  "image": [SITO + im["file"]] if im else [], "inLanguage": "it-IT", "mainEntityOfPage": url,
+                  "author": {"@type": "Organization", "name": NOME, "url": SITO + "/"}, "publisher": ORG,
+                  "contentLocation": {"@type": "Place", "name": c["luogo"]},
+                  "isBasedOn": [f["url"] for f in c.get("fonti") or [] if re.match(r"^https?://", str(f.get("url") or ""))]}
+        dim = (1200, 630)
+        if im and con_immagini:
+            from PIL import Image
+            with Image.open(os.path.join(sito, im["file"].lstrip("/"))) as f_:
+                dim = f_.size
+        seo = blocco_seo(f"{breve(c['titolo'], 70)} – Curiosità del Sannio", breve(" ".join(_paragrafi_curiosita(c["testo"]))),
+                         url, im.get("file") or "/condivisione.png", "article", jsonld, dim=dim)
+        altre = [x for x in cur_uscite if x["slug"] != c["slug"]][:5]
+        scrivi(os.path.join(sito, "curiosita", c["slug"], "index.html"),
+               pagina(modello, seo, {"statica": True}, html_curiosita(c, altre), articolo=True))
+        mappa.append((url, c["data"]))
+    with open(os.path.join(sito, "curiosita", "ultime.json"), "w", encoding="utf-8") as f:   # il riquadro in prima pagina
+        json.dump({"curiosita": [{k: c.get(k) for k in ("slug", "titolo", "categoria", "luogo", "data")}
+                                 | {"immagine": (c.get("immagine") or {}).get("file"),
+                                    "categoria_nome": CAT_CURIOSITA.get(c["categoria"], "")}
+                                 for c in cur_uscite[:3]]}, f, ensure_ascii=False)
+
     # i Comuni: una pagina per ognuno (Benevento ha zona/benevento) e l'elenco comuni/
     try:
         allerte = leggi(os.path.join(sito, "meteo.json")).get("allerte") or {}
@@ -1497,6 +1685,14 @@ def main():
                 usate_ig.add(immagine_ig(sito, x))
         usate_ig |= riepilogo_ig(sito, prima.get("notizie", []), adesso)
         usate_ig |= immagine_chiusure(sito, chius, adesso)
+        oggi_cur = adesso.astimezone(fuso()).date().isoformat()
+        for c in curiosita:   # anche quella di oggi prima delle 12: alle 12 i social la trovano già online
+            if c["data"] <= oggi_cur:
+                try:
+                    usate_ig.add(immagine_curiosita(sito, c))
+                except Exception as ex:
+                    print(f"AVVISO: immagine della curiosità {c.get('slug')} non fatta ({type(ex).__name__}: {ex})",
+                          file=sys.stderr)
         for f in glob.glob(os.path.join(sito, "img", "ig", "*.jpg")):
             if os.path.relpath(f, sito).replace(os.sep, "/") not in usate_ig:
                 os.remove(f)

@@ -130,6 +130,13 @@
   .carburanti-box .cb-dove { font: 500 13px/1.35 var(--sans); color: var(--grigio); }
   .carburanti-box .cb-dove b { color: var(--nero); font-weight: 700; }
   .carburanti-box .cb-nota { font: 500 12px/1.4 var(--sans); color: var(--grigio); margin: 6px 0 0; }
+  /* la curiosità del Sannio di oggi (curiosita/ultime.json, la scrive pagine.py dalle 12): prima di «Seguici» */
+  .curiosita-box { margin-bottom: 18px; }
+  .curiosita-box .cu-link { display: block; color: var(--nero); text-decoration: none; }
+  .curiosita-box img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; background: var(--riga); margin-bottom: 8px; }
+  .curiosita-box .cu-cat { display: block; font: 700 11px var(--sans); text-transform: uppercase; letter-spacing: .06em; color: var(--rosso); margin-bottom: 3px; }
+  .curiosita-box .cu-tit { display: block; font: 700 18px/1.25 var(--serif); }
+  .curiosita-box .cu-link:hover .cu-tit { text-decoration: underline; }
   .appro table.prezzi { width: 100%; border-collapse: collapse; font: 500 15px/1.35 var(--sans); margin: 0 0 8px; }
   .appro table.prezzi th { text-align: left; font: 700 12px var(--sans); text-transform: uppercase; letter-spacing: .5px; color: var(--grigio); padding: 4px 8px 4px 0; border-bottom: 1px solid var(--nero); }
   .appro table.prezzi td { padding: 7px 8px 7px 0; border-bottom: 1px solid var(--riga); vertical-align: baseline; }
@@ -538,7 +545,7 @@
     <p>Notizie Benevento è un report automatico: le notizie appartengono ai giornali citati. Qui le raccontiamo con parole nostre, confrontando le fonti, con i link agli articoli originali.</p>
     <p>Una notizia compare se la riportano almeno due testate diverse oppure una fonte ufficiale (Comuni, Regione, Prefettura, Questura e forze dell'ordine, ASL, ANAS, INGV, le società dell'acqua, dei treni e dei bus). La cronaca riportata da un solo giornale autorevole porta la scritta «Una sola fonte». Le accuse sono riportate con le parole usate dai giornali. Aggiornato ogni ora, dalle 6 alle 22. Le visite si contano in forma anonima, senza cookie.</p>
     <p>Nessuna notizia viene cancellata: quando esce dalla prima pagina resta nell'<a href="#archivio">archivio</a>, allo stesso indirizzo.</p>
-    <p class="sezioni-link">Sezioni: <a href="/sezione/strade/">Strade</a> · <a href="/sezione/cronaca/">Cronaca</a> · <a href="/sezione/politica/">Politica</a> · <a href="/sezione/sport/">Sport</a> · <a href="/sezione/eventi/">Eventi</a> · <a href="/sezione/allerte/">Allerte</a> · <a href="/sezione/altro/">Altro</a> · <a href="/meteo.html">Meteo Benevento</a> · <a href="/strade-chiuse/">Strade chiuse oggi</a> · <a href="/carburanti/">Prezzi carburanti</a><br>
+    <p class="sezioni-link">Sezioni: <a href="/sezione/strade/">Strade</a> · <a href="/sezione/cronaca/">Cronaca</a> · <a href="/sezione/politica/">Politica</a> · <a href="/sezione/sport/">Sport</a> · <a href="/sezione/eventi/">Eventi</a> · <a href="/sezione/allerte/">Allerte</a> · <a href="/sezione/altro/">Altro</a> · <a href="/meteo.html">Meteo Benevento</a> · <a href="/strade-chiuse/">Strade chiuse oggi</a> · <a href="/carburanti/">Prezzi carburanti</a> · <a href="/curiosita/">Curiosità del Sannio</a><br>
       Zone: <a href="/zona/benevento/">Benevento città</a> · <a href="/zona/valle-telesina/">Valle Telesina</a> · <a href="/zona/valle-caudina/">Valle Caudina</a> · <a href="/zona/fortore/">Fortore e Tammaro</a> · <a href="/zona/altri-comuni/">Altri comuni</a> · <a href="/comuni/">Tutti i Comuni</a> · <a href="/feed.xml">Feed RSS</a></p>
     <p class="sezioni-link"><a href="/chi-siamo/">Chi siamo</a> · Seguici su <a href="https://www.instagram.com/notiziebenevento.it/" target="_blank" rel="noopener">Instagram</a>, <a href="https://www.facebook.com/notiziebenevento" target="_blank" rel="noopener">Facebook</a> e <a href="https://t.me/notiziebenevento" target="_blank" rel="noopener">Telegram</a></p>
   </footer>
@@ -1233,6 +1240,7 @@
     var rm = riquadroMeteo();
     if (rm) c3.appendChild(rm);
     if (!filtroCat) { var rc = riquadroCarburanti(); if (rc) c3.appendChild(rc); }
+    if (!filtroCat) { var rq = riquadroCuriosita(); if (rq) c3.appendChild(rq); }
     if (!filtroCat) c3.appendChild(riquadroSegui("Le notizie del Sannio appena escono, sul telefono."));
     if (avvisi.length) c3.appendChild(riquadroAvvisi(avvisi));
     if (!filtroCat) { var rs = riquadroSport(); if (rs) c3.appendChild(rs); }
@@ -2373,6 +2381,30 @@
     box.appendChild(linkTutte("/carburanti/", "Tutti i distributori della provincia ›"));
     return box;
   }
+  // La curiosità del Sannio (una al giorno, dalle 12: curiosita/ultime.json), tra i carburanti e «Seguici»
+  var curiosita = null;
+  function riquadroCuriosita() {
+    try {
+      var c = curiosita && curiosita.curiosita && curiosita.curiosita[0];
+      if (!c || !c.slug || !c.titolo) return null;
+      var a = el("a", "cu-link", []);
+      a.href = "/curiosita/" + c.slug + "/";
+      if (c.immagine) { var im = document.createElement("img"); im.src = c.immagine; im.alt = ""; im.loading = "lazy"; a.appendChild(im); }
+      a.appendChild(el("span", "cu-cat", [(c.categoria_nome || "Curiosità") + (c.luogo ? " · " + c.luogo : "")]));
+      a.appendChild(el("span", "cu-tit", [c.titolo]));
+      return el("section", "curiosita-box", [el("h3", "titolo-col", ["Curiosità del Sannio"]), a,
+        linkTutte("/curiosita/", "Tutte le curiosità ›")]);
+    } catch (e) { return null; }   // un file rotto non deve fermare la prima pagina
+  }
+  fetch("/curiosita/ultime.json?t=" + Date.now(), { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (j) {
+      curiosita = j;
+      var lat = document.querySelector(".griglia .laterale"), segui = lat && lat.querySelector(".segui");
+      if (!filtroCat && segui && !lat.querySelector(".curiosita-box")) { var rq = riquadroCuriosita(); if (rq) lat.insertBefore(rq, segui); }
+    })
+    .catch(function () { /* senza curiosità il sito funziona lo stesso */ });
+
   fetch("/carburanti.json?t=" + Date.now(), { cache: "no-store" })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(function (j) {
