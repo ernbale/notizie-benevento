@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-24T09:08+02:00",
+ "aggiornato": "2026-10-24T10:08+02:00",
  "giornali_letti": 14,
  "notizie": [
   {
@@ -584,7 +584,7 @@
    "categoria": "cronaca",
    "zona": "benevento",
    "luogo": "Benevento, Corso Garibaldi",
-   "pubblicato": "2026-10-23T22:55:00+02:00",
+   "pubblicato": "2026-10-24T09:48:00+02:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
@@ -611,10 +611,26 @@
     {
      "nome": "Gazzetta di Benevento",
      "url": "https://www.gazzettabenevento.it/it/un-nuovo-episodio-di-aggressione-si-e-verificato-lungo-corso-garibaldi-e-di-cui-e-stata-vittima-una"
+    },
+    {
+     "nome": "Anteprima24 (24/10)",
+     "url": "https://www.anteprima24.it/benevento/aggressione-al-corso-garibaldi-identificato-laggressore-si-va-verso-la-denuncia-in-stato-di-liberta/"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/24/nuova-aggressione-in-centro-ragazza-picchiata-lungo-corso-garibaldi/"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Sabato 24 ottobre Anteprima24 scrive che il giovane è stato identificato già nella serata di venerdì. Gli agenti hanno visto le immagini di alcune telecamere di videosorveglianza: secondo il giornale non sarebbero emerse precise responsabilità penali da parte dell'uomo e, per questo, sarebbe probabile una denuncia a piede libero (in stato di libertà). Il Sannio Quotidiano scrive invece che l'autore sarebbe un giovane di origine straniera e che la Polizia si era messa sulle sue tracce.",
+      "fonti": [
+       "Anteprima24 (24/10)",
+       "Il Sannio Quotidiano"
+      ],
+      "giorno": "2026-10-24"
+     },
      {
       "testo": "BeneventoNews24 scrive che la donna ferita ha 30 anni e che il 118 l'ha portata all'ospedale di Benevento: le sue condizioni sono in valutazione ma, secondo quanto emerso finora, non sarebbe in pericolo di vita. Sempre secondo BeneventoNews24 il giovane coinvolto sarebbe stato rintracciato, mentre Anteprima24 e Cronache del Sannio scrivono che non era stato individuato. Gli accertamenti della Polizia proseguono.",
       "fonti": [
@@ -676,11 +692,19 @@
        "Gazzetta di Benevento",
        "Ottopagine"
       ]
+     },
+     {
+      "testo": "Sull'aggressore: Anteprima24 (24 ottobre) scrive che è stato identificato la sera stessa; i giornali del 23 sera lo davano ancora in fuga.",
+      "fonti": [
+       "Anteprima24 (24/10)",
+       "Anteprima24",
+       "Cronache del Sannio"
+      ]
      }
     ],
     "non_si_sa": [
      "Le condizioni della ragazza dopo le cure al San Pio.",
-     "Se l'aggressore è stato identificato e rintracciato, e i motivi del gesto."
+     "Se ci sarà davvero una denuncia e per quale fatto, e i motivi del gesto: la Polizia non ha diffuso comunicati."
     ],
     "fonti": [
      {
@@ -718,14 +742,26 @@
       "titolo": "Un nuovo episodio di aggressione si è verificato lungo corso Garibaldi e di cui è stata vittima una giovane",
       "url": "https://www.gazzettabenevento.it/it/un-nuovo-episodio-di-aggressione-si-e-verificato-lungo-corso-garibaldi-e-di-cui-e-stata-vittima-una",
       "data": "23 ott, 22:26"
+     },
+     {
+      "nome": "Anteprima24 (24/10)",
+      "titolo": "Aggressione al Corso Garibaldi, identificato l’aggressore: si va verso la denuncia in stato di libertà",
+      "url": "https://www.anteprima24.it/benevento/aggressione-al-corso-garibaldi-identificato-laggressore-si-va-verso-la-denuncia-in-stato-di-liberta/",
+      "data": "24 ott, 09:48"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Nuova aggressione in centro: ragazza picchiata lungo corso Garibaldi",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/24/nuova-aggressione-in-centro-ragazza-picchiata-lungo-corso-garibaldi/",
+      "data": "24 ott, 07:15"
      }
     ],
     "aggiornamento": {
-     "testo": "Secondo BeneventoNews24 la ragazza ha 30 anni, non sarebbe in pericolo di vita e il giovane sarebbe stato rintracciato; gli altri giornali lo davano ancora in fuga.",
+     "testo": "Sabato 24 ottobre Anteprima24 scrive che il giovane è stato identificato e che si va verso una denuncia in stato di libertà, perché dalle telecamere non sarebbero emerse precise responsabilità penali.",
      "fonti": [
-      "BeneventoNews24"
+      "Anteprima24 (24/10)"
      ],
-     "quando": "2026-10-24T06:10+02:00"
+     "quando": "2026-10-24T10:08+02:00"
     }
    }
   },
