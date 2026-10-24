@@ -35,6 +35,11 @@ riuscita» (o cosa non va) con l'esito dei comandi. In prova non pubblichi nient
      effetti per la gente (regola 9 di AGENTE.md: niente comunicati di partito, polemiche, dichiarazioni), chiusure di
      scuole/parchi/cimiteri decise da un Comune (le pubblica il giro Chiusure), un fatto che non si capisce o non si può
      verificare (mittente generico come gmail o libero e niente di controllabile), fatti vecchi.
+
+   Una **risposta alla nostra mail** «Comunicati stampa per Notizie Benevento» arriva qui solo se ha un allegato o
+   del testo scritto da loro: conta solo quello e gli allegati, non la nostra mail citata sotto. Se dentro non c'è un
+   comunicato (solo «grazie, vi abbiamo aggiunti», casella piena, «scriveteci alla PEC») è **scartato** col motivo
+   «risposta alla nostra mail, nessun comunicato».
 4. **L'articolo.** Sei un bravo giornalista che ha in mano un comunicato: scrivi la notizia, non copi il comunicato e
    non lo commenti.
    - **Niente invenzioni, niente deduzioni.** Ogni fatto, numero, data, orario, indirizzo, nome e ruolo deve essere
