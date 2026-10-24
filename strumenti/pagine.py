@@ -822,6 +822,114 @@ def html_carburanti(dati, oggi):
     return f'<article class="appro">{h}</article>'
 
 
+# ---------- Benevento Calcio (strumenti/calcio.py → calcio.json) ----------
+# La pagina scritta qui è quella che legge Google e che si vede subito; poi calcio.js la ridisegna uguale e, durante
+# le partite, la tiene in diretta (tabellone, cronaca, statistiche, formazioni, gli altri campi, classifica).
+def _cal_logo(d, i, px):
+    lg = (d["squadre"].get(i) or {}).get("logo")
+    return f'<img src="{e(lg)}" width="{px}" height="{px}" alt="" loading="lazy">' if lg else '<span class="logo-vuoto"></span>'
+
+
+def _cal_nome(d, i):
+    return e((d["squadre"].get(i) or {}).get("nome", "?"))
+
+
+def _cal_quando(p, ora=True):
+    t = dt.datetime.fromisoformat(p["quando"])
+    g = f"{GIORNI[t.weekday()]} {t.day} {MESI_LUNGHI[t.month - 1]}"
+    return g + (f", {t:%H:%M}" if ora and p.get("ora_certa") else (", orario da definire" if ora else ""))
+
+
+def _cal_clou(d, adesso):
+    """La partita da mostrare in alto, come calcio.js: in corso, se no l'ultima finita da meno di 36 ore, se no la prossima."""
+    ps = d["partite"]
+    for p in ps:
+        if p["stato"] == "in":
+            return p
+    finite = [p for p in ps if p["stato"] == "post"]
+    if finite and adesso - dt.datetime.fromisoformat(finite[-1]["quando"]) < dt.timedelta(hours=36):
+        return finite[-1]
+    return next((p for p in ps if p["stato"] == "pre"), finite[-1] if finite else None)
+
+
+def _cal_lista(d, ps, finite):
+    h = '<ul class="calendario">'
+    for p in ps:
+        t = dt.datetime.fromisoformat(p["quando"])
+        sx = (f'<span class="cal-g">{t.day} {MESI[t.month - 1]}<small>{p["giornata"]}ª</small></span>'
+              f'<span class="cal-sq">{_cal_logo(d, p["casa"], 20)}{_cal_nome(d, p["casa"])} – '
+              f'{_cal_logo(d, p["fuori"], 20)}{_cal_nome(d, p["fuori"])}</span>')
+        if finite:
+            noi = (p["gol_casa"], p["gol_fuori"]) if p["casa"] == d["benevento"] else (p["gol_fuori"], p["gol_casa"])
+            esito = "V" if noi[0] > noi[1] else "N" if noi[0] == noi[1] else "P"
+            h += f'<li>{sx}<span class="cal-r {esito}">{p["gol_casa"]}–{p["gol_fuori"]}</span></li>'
+        else:
+            dx = "rinviata" if p["stato"] == "rinviata" else (f"{t:%H:%M}" if p.get("ora_certa") else "da def.")
+            h += f'<li>{sx}<span class="cal-r">{dx}</span></li>'
+    return h + "</ul>"
+
+
+def html_calcio(d, adesso):
+    h = _testata_pagina("Calcio · Serie B", "", "Benevento Calcio: risultati, classifica e partite in diretta")
+    h += ('<p class="sommario">Il Benevento in Serie B: la partita in diretta con la cronaca minuto per minuto, i '
+          "risultati degli altri campi, la classifica che si aggiorna mentre si gioca, il calendario e i risultati.</p>")
+    if not (d or {}).get("partite"):
+        return f'<article class="calcio">{h}<p>I dati del campionato ora non sono disponibili: riprova più tardi.</p></article>'
+    ben, p = d["benevento"], _cal_clou(d, adesso)
+    vivo = ""
+    if p:
+        info = (f'{e(d["campionato"])} · {p["giornata"]}ª giornata · {_cal_quando(p)}'
+                + (f' · {e(p["stadio"])}' if p.get("stadio") else ""))
+        if p["stato"] in ("in", "post"):
+            centro = f'<div class="tb-ris">{p["gol_casa"]} – {p["gol_fuori"]}</div>'
+            stato = '<span class="stato-live">In diretta</span>' if p["stato"] == "in" else '<span class="stato-fine">Finita</span>'
+        else:
+            centro = f'<div class="tb-ris vs">{dt.datetime.fromisoformat(p["quando"]):%H:%M}</div>' if p.get("ora_certa") else '<div class="tb-ris vs">–</div>'
+            stato = f'<span class="stato-pre">{e(_cal_quando(p))}</span>'
+        lati = [f'<div class="tb-sq">{_cal_logo(d, i, 72)}<div class="tb-nome">{_cal_nome(d, i)}</div></div>'
+                for i in (p["casa"], p["fuori"])]
+        vivo += (f'<section class="tabellone"><div class="tb-info">{info}</div><div class="tb-campo">{lati[0]}'
+                 f'<div class="tb-centro">{centro}<div class="tb-stato">{stato}</div></div>{lati[1]}</div></section>')
+    prossime = [x for x in d["partite"] if x["stato"] in ("pre", "rinviata")][:5]
+    finite = [x for x in d["partite"] if x["stato"] == "post"][-5:][::-1]
+    sx = (f'<section class="cal-sez"><h3 class="titolo-col">Prossime partite</h3>{_cal_lista(d, prossime, False)}</section>'
+          f'<section class="cal-sez"><h3 class="titolo-col">Ultimi risultati</h3>{_cal_lista(d, finite, True)}</section>')
+    g = d.get("giornata") or {}
+    righe = ""
+    for x in g.get("partite", []):
+        if x["stato"] in ("in", "post"):
+            r = f'{x["gol_casa"]}–{x["gol_fuori"]}'
+        else:
+            t = dt.datetime.fromisoformat(x["quando"])
+            r = "rinv." if x["stato"] == "rinviata" else f'{GIORNI[t.weekday()][:3]} {t:%H:%M}'
+        noi = " noi" if ben in (x["casa"], x["fuori"]) else ""
+        righe += (f'<li class="{"live" if x["stato"] == "in" else x["stato"]}{noi}"><span class="c">{_cal_nome(d, x["casa"])}'
+                  f'{_cal_logo(d, x["casa"], 18)}</span><span class="r">{r}</span><span class="f">'
+                  f'{_cal_logo(d, x["fuori"], 18)}{_cal_nome(d, x["fuori"])}</span></li>')
+    dx = f'<section class="cal-sez"><h3 class="titolo-col">{g.get("numero", "")}ª giornata, gli altri campi</h3><ul class="giornata">{righe}</ul></section>'
+    n = len(d["classifica"])
+    tab = ('<table class="classifica"><thead><tr><th></th><th class="sq">Squadra</th><th>Pt</th><th>G</th><th>V</th>'
+           "<th>N</th><th>P</th><th>DR</th></tr></thead><tbody>")
+    for r in d["classifica"]:
+        pos = r["pos"]
+        zona = "zona-a" if pos <= 2 else "zona-po" if pos <= 8 else "zona-r" if pos >= n - 2 else "zona-pl" if pos >= n - 4 else ""
+        dr = r["gf"] - r["gs"]
+        pen = f' <span class="pen">(−{r["penalita"]})</span>' if r.get("penalita") else ""
+        tab += (f'<tr class="{"noi " if r["id"] == ben else ""}{zona}"><td class="pos">{pos}</td><td class="sq">'
+                f'{_cal_logo(d, r["id"], 18)}{_cal_nome(d, r["id"])}{pen}</td><td class="pt">{r["pt"]}</td><td>{r["pg"]}</td>'
+                f'<td>{r["v"]}</td><td>{r["n"]}</td><td>{r["p"]}</td><td>{"+" if dr > 0 else ""}{dr}</td></tr>')
+    note = ["1ª e 2ª in Serie A, dalla 3ª all'8ª playoff, 16ª e 17ª playout, ultime tre in Serie C."]
+    note += [f'{_cal_nome(d, r["id"])}: {r["penalita"]} punti di penalizzazione.' for r in d["classifica"] if r.get("penalita")]
+    dx += (f'<section class="cal-sez"><h3 class="titolo-col">Classifica {e(d["campionato"])}</h3>{tab}</tbody></table>'
+           f'<p class="nota-cl">{" ".join(note)}</p></section>')
+    t = dt.datetime.fromisoformat(d["aggiornato"])
+    vivo += (f'<div class="calcio-griglia"><div>{sx}</div><div>{dx}</div></div><p class="cal-fonte">Dati: ESPN, '
+             f"aggiornati in diretta ogni 15 secondi durante le partite; calendario e classifica controllati alle "
+             f"{t:%H:%M}. La cronaca è scritta in automatico dai fatti della partita (gol, cartellini, cambi). I loghi "
+             "sono delle società.</p>")
+    return f'<article class="calcio">{h}<div id="calcio-vivo">{vivo}</div>{SEGUI}</article>'
+
+
 def _racconto(righe, fonti):
     """Storia di più giorni: sopra i paragrafi di ogni giorno la sua data (come disegna index.html)."""
     piu_giorni = len({r.get("giorno") for r in righe if isinstance(r, dict) and r.get("giorno")}) > 1
@@ -1409,7 +1517,7 @@ def main():
     except ImportError:
         con_immagini = False
         print("AVVISO: Pillow non c'è, uso l'immagine del sito per tutte le notizie", file=sys.stderr)
-    for d in ("notizia", "approfondimento", "sezione", "zona", "evento", "comune", "comuni", "carburanti", "curiosita"):
+    for d in ("notizia", "approfondimento", "sezione", "zona", "evento", "comune", "comuni", "carburanti", "curiosita", "calcio"):
         shutil.rmtree(os.path.join(sito, d), ignore_errors=True)
     per_id = {n["id"]: n for n in notizie}
     usate, mappa = set(), []   # mappa: (url, lastmod)
@@ -1569,6 +1677,25 @@ def main():
         carb, corpo = {}, html_carburanti({}, oggi)
     scrivi(os.path.join(sito, "carburanti", "index.html"), pagina(modello, seo, {"statica": True}, corpo, articolo=True))
     mappa.append((url, carb.get("estrazione")))
+    # Benevento Calcio (strumenti/calcio.py, nello stesso giro): la pagina c'è sempre, la diretta la fa calcio.js
+    try:
+        cal = leggi(os.path.join(sito, "calcio.json"))
+    except (OSError, ValueError):
+        cal = {}
+    url = SITO + "/calcio/"
+    seo = blocco_seo(f"Benevento Calcio: risultati, classifica Serie B e partite in diretta – {NOME}",
+                     "Il Benevento in Serie B: la partita in diretta con la cronaca minuto per minuto, i risultati degli "
+                     "altri campi, la classifica in diretta, il calendario e i risultati.", url, "/condivisione.png",
+                     jsonld={"@context": "https://schema.org", "@type": "WebPage", "name": "Benevento Calcio",
+                             "url": url, "isPartOf": {"@type": "WebSite", "name": NOME, "url": SITO + "/"}})
+    try:
+        corpo = html_calcio(cal, dt.datetime.now(dt.timezone.utc).astimezone())
+    except Exception as ex:   # un calcio.json rotto non deve fermare la pubblicazione
+        print(f"AVVISO: calcio.json non torna ({type(ex).__name__}: {ex}): pagina senza dati", file=sys.stderr)
+        cal, corpo = {}, html_calcio({}, dt.datetime.now(dt.timezone.utc).astimezone())
+    scrivi(os.path.join(sito, "calcio", "index.html"), pagina(modello, seo, {"statica": True, "calcio": True}, corpo, articolo=True))
+    mappa.append((url, cal.get("aggiornato")))
+
     distributori = {}
     for i in carb.get("impianti") or []:
         distributori[i["comune"]] = distributori.get(i["comune"], 0) + 1

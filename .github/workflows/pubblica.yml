@@ -70,6 +70,15 @@ jobs:
             curl -fsSL --max-time 30 "https://notiziebenevento.it/carburanti.json" -o carburanti.json || echo "nessun prezzo pubblicato prima"
           fi
 
+      # calendario, risultati e classifica della Serie B per la pagina calcio/ e il riquadro in prima pagina (la diretta
+      # la legge poi calcio.js nel browser); se la fonte non risponde restano quelli già pubblicati
+      - name: Benevento Calcio (calendario, risultati e classifica di Serie B)
+        run: |
+          if ! python3 strumenti/calcio.py; then
+            echo "::warning::Calcio non aggiornato: tengo quello già pubblicato"
+            curl -fsSL --max-time 30 "https://notiziebenevento.it/calcio.json" -o calcio.json || echo "nessun calcio pubblicato prima"
+          fi
+
       # le immagini di anteprima già fatte: si rifanno solo quelle delle notizie nuove o cambiate
       - uses: actions/cache@v4
         with:
