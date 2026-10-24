@@ -47,10 +47,6 @@
   body { margin: 0; background: var(--carta); color: var(--nero); font: 15px/1.45 var(--sans); }
   a { color: var(--blu); }
   .pagina { max-width: 1180px; margin: 0 auto; padding: 0 20px; }
-  /* le chiusure dei Comuni (chiusure.json): la stessa striscia della prima pagina */
-  .striscia-chiusure { display: block; margin: 12px 0 0; padding: 9px 14px; border-radius: 4px; background: var(--rosso); color: #fff; font: 700 15px/1.35 var(--sans); text-decoration: none; }
-  .striscia-chiusure[hidden] { display: none; }
-  .striscia-chiusure:hover { text-decoration: underline; }
   svg text { font-family: var(--sans); }
 
   /* testata come il resto del sito */
@@ -300,8 +296,6 @@
     <a href="./">← Notizie</a>
     <span class="qui">Meteo</span>
   </nav>
-
-  <a class="striscia-chiusure" id="striscia-chiusure" href="scuole-chiuse/" hidden></a>
 
   <main id="meteo">
     <h1>Meteo Benevento</h1>
@@ -1225,27 +1219,6 @@
   }
 
   document.getElementById("data").textContent = new Date().toLocaleDateString("it-IT", { timeZone: TZ, weekday: "long", day: "numeric", month: "long", year: "numeric" });
-  // la striscia delle chiusure dei Comuni, come in index.html (mostraChiusure)
-  fetch("chiusure.json?t=" + Date.now(), { cache: "no-store" })
-    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-    .then(function (j) {
-      var oggi = new Date().toLocaleDateString("sv-SE", { timeZone: TZ }), domani = new Date(Date.now() + 864e5).toLocaleDateString("sv-SE", { timeZone: TZ });
-      var per = {};
-      ((j && j.chiusure) || []).forEach(function (c) {
-        if (c.revocata) return;
-        (c.giorni || []).forEach(function (g) { if (g >= oggi) (per[g] = per[g] || []).push(c); });
-      });
-      var giorni = Object.keys(per).sort(), s = document.getElementById("striscia-chiusure");
-      if (!giorni.length || !s) return;
-      var cs = per[giorni[0]], comuni = cs.map(function (c) { return c.comune; }).sort(function (a, b) { return a.localeCompare(b, "it"); });
-      var quando = giorni[0] === oggi ? "oggi" : giorni[0] === domani ? "domani" :
-        new Date(giorni[0] + "T12:00:00Z").toLocaleDateString("it-IT", { timeZone: TZ, weekday: "long", day: "numeric", month: "long" });
-      s.textContent = (cs.some(function (c) { return /scuol/i.test(c.cosa || ""); }) ? "Scuole chiuse " : "Chiusure dei Comuni ") + quando + ": " +
-        (comuni.length > 4 ? comuni.slice(0, 3).join(", ") + " e altri " + (comuni.length - 3) + " Comuni" :
-         comuni.length > 1 ? comuni.slice(0, -1).join(", ") + " e " + comuni[comuni.length - 1] : comuni[0]) + " · elenco completo ›";
-      s.hidden = false;
-    })
-    .catch(function () { /* senza il file delle chiusure la pagina funziona lo stesso */ });
   fetch("meteo.json?t=" + Date.now(), { cache: "no-store" })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(function (j) {
