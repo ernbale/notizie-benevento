@@ -14,6 +14,9 @@ nessuno se ne accorgesse.
    minuti, una pista non vista dal giro Chiusure dopo PISTA_MAX minuti (solo sul Pi), una chiusura del sito che dopo
    TG_CHIUSURE minuti non è sul canale Telegram, o l'ultima pubblicazione col passo delle chiusure in rosso: nei due
    ultimi casi rilancia la pubblicazione, che rimanda solo quello che manca (niente doppioni).
+6. Curiosità del Sannio (dal 24 ott 2026, vedi CURIOSITA.md): la scorta in curiosita.json basta per meno di
+   SCORTA_MINIMA giorni (la routine del lunedì non l'ha rifornita), o dopo le 12:30 la curiosità di oggi non è ancora
+   sul sito o sul canale Telegram: in quel caso rilancia la pubblicazione (curiosita_social.py non fa doppioni).
 4. Giro mancato: notizie.json non aggiornato da più di GIRO_MAX minuti, dalle 7:30 alle 23; dalle 23 a mezzanotte
    solo se per domani c'è allerta arancione o rossa, perché il giro delle 23 l'agente lo fa solo allora (stessa prova,
    allerta_domani.py; il 22 ott la sentinella è finita in rosso alle 23:32 per un giro che giustamente non c'era).
@@ -62,6 +65,7 @@ AVVISO_ORE = 2      # dal Pi, la sentinella di GitHub (la mail) al massimo una v
 VEDETTA_MAX = 20    # minuti senza un giro della vedetta delle chiusure (sul Pi)
 PISTA_MAX = 45      # minuti: una pista della vedetta non ancora vista dal giro Chiusure
 TG_CHIUSURE = 20    # minuti: una chiusura del sito non ancora sul canale Telegram
+SCORTA_MINIMA = 14  # giorni di curiosità in programma: sotto, la routine del lunedì non ha rifornito
 CARTELLA_PI = os.path.expanduser("~/nb-fonti")
 PAUSA_RETE = 20     # secondi prima del secondo tentativo se la rete fa cilecca
 
@@ -290,6 +294,46 @@ def chiusure(gh, adesso, pi, sito, prova):
     return riparati, problemi
 
 
+def curiosita(gh, adesso, pi, sito, prova):
+    """Le curiosità del Sannio: scorta e uscita di oggi (punto 6 in cima). Restituisce (riparati, problemi)."""
+    riparati, problemi = [], []
+    if pi:
+        tutte = json.loads(gh.chiama("GET", f"repos/{REPO}/contents/curiosita.json?ref=main", grezzo=True)).get("curiosita") or []
+    else:
+        with open(os.path.join(sito, "curiosita.json"), encoding="utf-8") as f:
+            tutte = json.load(f).get("curiosita") or []
+    oggi = adesso.date()
+    ultima = max((dt.date.fromisoformat(c["data"]) for c in tutte), default=None)
+    if not ultima or (ultima - oggi).days < SCORTA_MINIMA:
+        problemi.append("la scorta delle curiosità " + (f"finisce il {ultima:%d/%m} ({(ultima - oggi).days} giorni)"
+                        if ultima else "è vuota") + ": la routine del lunedì non l'ha rifornita (CURIOSITA.md)")
+    di_oggi = next((c for c in tutte if c["data"] == oggi.isoformat()), None)
+    if di_oggi and (adesso.hour, adesso.minute) >= (12, 30) and adesso.hour < 22:
+        mancano = []
+        req = urllib.request.Request(f"{SITO}/curiosita/ultime.json?t={int(adesso.timestamp())}",
+                                     headers={"User-Agent": "nb-sentinella", "Cache-Control": "no-cache"})
+        try:
+            with apri(req) as r:
+                ultime = json.load(r).get("curiosita") or []
+            if not ultime or ultime[0].get("slug") != di_oggi["slug"]:
+                mancano.append("sul sito")
+        except Exception:
+            mancano.append("sul sito (non risponde)")
+        req = urllib.request.Request("https://t.me/s/notiziebenevento", headers={"User-Agent": "Mozilla/5.0 (notiziebenevento.it)"})
+        with apri(req) as r:
+            if f"notiziebenevento.it/curiosita/{di_oggi['slug']}/" not in r.read().decode("utf-8", "replace"):
+                mancano.append("sul canale Telegram")
+        if mancano:
+            problemi.append(f"la curiosità di oggi («{di_oggi['titolo'][:50]}») alle {adesso:%H:%M} non è ancora "
+                            + " né ".join(mancano))
+            corse = gh.chiama("GET", f"repos/{REPO}/actions/workflows/{FLUSSO}/runs?per_page=5").get("workflow_runs", [])
+            if not any(c["status"] != "completed" for c in corse):
+                riparati.append("rilanciata la pubblicazione per la curiosità" + (" (prova: in realtà no)" if prova else ""))
+                if not prova:
+                    gh.lancia(FLUSSO)
+    return riparati, problemi
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--sito", default=os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -314,6 +358,12 @@ def main():
         problemi += p2
     except Exception as e:
         problemi.append(f"non riesco a controllare le chiusure dei Comuni ({type(e).__name__}: {e})")
+    try:
+        r3, p3 = curiosita(gh, adesso, a.pi, a.sito, a.prova)
+        riparati += r3
+        problemi += p3
+    except Exception as e:
+        problemi.append(f"non riesco a controllare le curiosità ({type(e).__name__}: {e})")
 
     ora = f"{adesso:%d/%m %H:%M}"
     for m in riparati:
