@@ -1,7 +1,107 @@
 {
- "aggiornato": "2026-10-23T22:10+02:00",
+ "aggiornato": "2026-10-24T06:10+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-cloud-finance-nuova-sede-via-collevaccino",
+   "titolo": "Benevento, inaugurata in via Pietro Collevaccino la nuova sede di Cloud Finance",
+   "titolo_google": "Benevento, nuova sede di Cloud Finance in via Collevaccino",
+   "sintesi": "Inaugurata a Benevento, in via Pietro Collevaccino, la nuova sede di Cloud Finance, azienda che sviluppa software per l'analisi economico-finanziaria di imprese e professionisti.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-23T22:51:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/inaugurata-a-benevento-la-nuova-sede-di-cloud-finance-video-e-foto/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Venerdì 23 ottobre a Benevento è stata inaugurata la nuova sede di Cloud Finance, in via Pietro Collevaccino.",
+      "fonti": [
+       "TV7 Benevento"
+      ]
+     },
+     {
+      "testo": "Cloud Finance è una PMI innovativa (piccola impresa che lavora su tecnologie nuove) del settore Fintech, cioè dei servizi finanziari digitali. Sviluppa software cloud, che funzionano via internet, per l'analisi economico-finanziaria, il controllo di gestione, la tesoreria e l'intelligenza artificiale, destinati a imprese e professionisti.",
+      "fonti": [
+       "TV7 Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quante persone lavorano nella nuova sede."
+    ],
+    "fonti": [
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Inaugurata a Benevento la nuova sede di “CLOUD FINANCE” (VIDEO E FOTO)",
+      "url": "https://www.tvsette.net/inaugurata-a-benevento-la-nuova-sede-di-cloud-finance-video-e-foto/",
+      "data": "23 ott, 22:51"
+     }
+    ]
+   }
+  },
+  {
+   "id": "olio-campania-igp-barbati-presidente-di-giambattista-segretario",
+   "titolo": "Consorzio Olio Campania IGP, Veronica Barbati presidente e il beneventano Armando Di Giambattista segretario",
+   "titolo_google": "Olio Campania IGP: nuova presidente, segretario sannita",
+   "sintesi": "L'assemblea del Consorzio di Tutela Olio Campania IGP ha rinnovato i vertici: presidente Veronica Barbati, di Avellino. Segretario è Armando Di Giambattista, olivicoltore beneventano.",
+   "categoria": "altro",
+   "zona": "provincia",
+   "luogo": "Campania",
+   "pubblicato": "2026-10-23T17:28:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/23/igp-olio-campania-nominata-presidente-lirpina-barbati-segretario-il-sannita-di-giambattista/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Cambio al vertice per il Consorzio di Tutela Olio Campania IGP, l'ente che difende e promuove l'olio con il marchio IGP (indicazione geografica protetta) prodotto in Campania. L'assemblea dei soci ha rinnovato la squadra dirigente e ha nominato presidente Veronica Barbati, imprenditrice agricola della provincia di Avellino, presidente provinciale di Coldiretti Avellino e di Aprol Campania.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Vicepresidente è Antonio Naimoli, imprenditore agricolo e frantoiano salernitano. La carica di segretario va ad Armando Di Giambattista, olivicoltore beneventano ed esperto di politica agricola comunitaria.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Il Consorzio ha il compito di valorizzare l'olio campano e di vigilare sulla denominazione, in collaborazione con l'Ispettorato centrale della tutela della qualità e repressione frodi dei prodotti agroalimentari (ICQRF), per proteggere i produttori da imitazioni e concorrenza sleale. Barbati parla di «una sfida ardua ma estremamente avvincente» in un momento non privo di difficoltà.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "IGP Olio Campania: nominata presidente l’irpina Barbati. Segretario il sannita Di Giambattista",
+      "url": "https://www.ntr24.tv/2026/10/23/igp-olio-campania-nominata-presidente-lirpina-barbati-segretario-il-sannita-di-giambattista/",
+      "data": "23 ott, 17:28"
+     }
+    ]
+   }
+  },
   {
    "id": "benevento-via-vanvitelli-scontro-auto-ribaltata-due-ferite",
    "titolo": "Benevento, scontro tra due auto in via Vanvitelli: una si ribalta, ferite due ragazze",
@@ -29,6 +129,14 @@
     {
      "nome": "TV7 Benevento",
      "url": "https://www.tvsette.net/scontro-tra-due-auto-ferite-due-persone-foto/"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/23/benevento-incidente-al-quartiere-mellusi-auto-si-ribalta-dopo-lo-scontro-ferite-mamma-e-figlia/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/23/benevento-scontro-tra-due-auto-una-si-ribalta-feriti/"
     }
    ],
    "articolo": {
@@ -55,6 +163,13 @@
        "Anteprima24",
        "TV7 Benevento"
       ]
+     },
+     {
+      "testo": "NTR24 precisa che lo scontro è avvenuto all'incrocio tra via Vanvitelli e via Salvemini e che sull'auto ribaltata viaggiavano una mamma e la figlia, entrambe ferite e portate in ospedale per accertamenti. I Vigili del fuoco hanno messo in sicurezza l'auto capovolta. BeneventoNews24 conferma i due feriti soccorsi dal 118 e portati in ospedale.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24"
+      ]
      }
     ],
     "cronologia": [],
@@ -75,6 +190,14 @@
       "fonti": [
        "Ottopagine",
        "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Chi c'era a bordo: Anteprima24 e Cronache del Sannio scrivono che alla guida delle due auto c'erano due ragazze; NTR24 che sull'auto ribaltata viaggiavano una mamma e la figlia. Non è chiaro chi guidasse.",
+      "fonti": [
+       "Anteprima24",
+       "Cronache del Sannio",
+       "NTR24"
       ]
      }
     ],
@@ -107,6 +230,18 @@
       "titolo": "SCONTRO TRA DUE AUTO. FERITE DUE PERSONE (foto)",
       "url": "https://www.tvsette.net/scontro-tra-due-auto-ferite-due-persone-foto/",
       "data": "23 ott, 21:34"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Benevento, incidente al quartiere Mellusi: auto si ribalta dopo lo scontro, ferite mamma e figlia",
+      "url": "https://www.ntr24.tv/2026/10/23/benevento-incidente-al-quartiere-mellusi-auto-si-ribalta-dopo-lo-scontro-ferite-mamma-e-figlia/",
+      "data": "23 ott, 22:38"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Benevento, scontro tra due auto, una si ribalta: feriti",
+      "url": "https://www.beneventonews24.it/2026/10/23/benevento-scontro-tra-due-auto-una-si-ribalta-feriti/",
+      "data": "23 ott, 23:15"
      }
     ]
    }
@@ -325,7 +460,7 @@
    "categoria": "cronaca",
    "zona": "benevento",
    "luogo": "Benevento, Corso Garibaldi",
-   "pubblicato": "2026-10-23T20:33:00+02:00",
+   "pubblicato": "2026-10-23T22:55:00+02:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
@@ -336,30 +471,58 @@
     {
      "nome": "Ottopagine",
      "url": "https://www.ottopagine.it/bn/cronaca/442005/un-calcio-poi-uno-schiaffo-lei-col-volto-sul-muro-ferita-paura-al-corso.shtml"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/lite-corso-garibaldi-donna-testa/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/23/abenevento-paura-in-corso-garibaldi-30enne-ferita-alla-testa/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/lite-corso-garibaldi-ferita-ragazza-caccia-aggressore/"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/un-nuovo-episodio-di-aggressione-si-e-verificato-lungo-corso-garibaldi-e-di-cui-e-stata-vittima-una"
     }
    ],
    "articolo": {
     "racconto": [
      {
+      "testo": "BeneventoNews24 scrive che la donna ferita ha 30 anni e che il 118 l'ha portata all'ospedale di Benevento: le sue condizioni sono in valutazione ma, secondo quanto emerso finora, non sarebbe in pericolo di vita. Sempre secondo BeneventoNews24 il giovane coinvolto sarebbe stato rintracciato, mentre Anteprima24 e Cronache del Sannio scrivono che non era stato individuato. Gli accertamenti della Polizia proseguono.",
+      "fonti": [
+       "BeneventoNews24",
+       "Anteprima24",
+       "Cronache del Sannio"
+      ],
+      "giorno": "2026-10-23"
+     },
+     {
       "testo": "Venerdì sera, 23 ottobre, una ragazza è stata aggredita a Benevento, sul Corso Garibaldi, poco prima dell'incrocio con via Traiano e piazza Roma. Un giovane l'ha colpita al volto con uno schiaffo. La ragazza è stata portata in ambulanza all'ospedale San Pio.",
       "fonti": [
        "NTR24",
        "Ottopagine"
-      ]
+      ],
+      "giorno": "2026-10-23"
      },
      {
       "testo": "Secondo la prima ricostruzione di Ottopagine, la ragazza era seduta con un'amica sui gradini di un negozio. Il giovane, che sembra non conoscesse, le ha detto di spostarsi e le ha dato un calcio. Lei si è alzata e gli ha chiesto perché lo facesse: per risposta è arrivato lo schiaffo, che l'ha fatta finire contro un muro. NTR24 scrive che era seduta all'ingresso di un locale con i distributori automatici h24 e che la discussione è nata dopo un calcetto.",
       "fonti": [
        "Ottopagine",
        "NTR24"
-      ]
+      ],
+      "giorno": "2026-10-23"
      },
      {
       "testo": "Il giovane se n'è andato insieme a un altro ragazzo. Sono intervenute le Volanti della Polizia e un'ambulanza. La ragazza ha ferite al viso e al naso e sul posto c'era del sangue. Gli agenti hanno avviato le ricerche e gli accertamenti, anche con le immagini delle telecamere e le testimonianze di chi era presente.",
       "fonti": [
        "Ottopagine",
        "NTR24"
-      ]
+      ],
+      "giorno": "2026-10-23"
      }
     ],
     "cronologia": [],
@@ -377,6 +540,16 @@
       "testo": "L'ora: NTR24 scrive verso le 19:30, Ottopagine poco prima delle 20. Dove ha battuto la ragazza: contro un muro (Ottopagine) o contro lo spigolo di un distributore h24 (NTR24). Sull'aggressore: Ottopagine scrive che sarebbe già stato identificato, NTR24 che gli agenti lavorano per identificarlo.",
       "fonti": [
        "NTR24",
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Sull'aggressore: BeneventoNews24 scrive che sarebbe stato rintracciato; Anteprima24 e Cronache del Sannio che non è stato individuato. Sul luogo dell'urto: muretto o spigolo di un distributore automatico (Anteprima24, BeneventoNews24, Gazzetta di Benevento) o muro (Ottopagine).",
+      "fonti": [
+       "BeneventoNews24",
+       "Anteprima24",
+       "Cronache del Sannio",
+       "Gazzetta di Benevento",
        "Ottopagine"
       ]
      }
@@ -397,8 +570,39 @@
       "titolo": "Un calcio, poi uno schiaffo, lei col volto sul muro, ferita: paura al Corso",
       "url": "https://www.ottopagine.it/bn/cronaca/442005/un-calcio-poi-uno-schiaffo-lei-col-volto-sul-muro-ferita-paura-al-corso.shtml",
       "data": "23 ott, 20:32"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Lite lungo il Corso, donna schiaffeggiata cade e batte la testa. E’ caccia all’aggressore",
+      "url": "https://www.anteprima24.it/benevento/lite-corso-garibaldi-donna-testa/",
+      "data": "23 ott, 21:41"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Benevento, paura in Corso Garibaldi: 30enne ferita alla testa",
+      "url": "https://www.beneventonews24.it/2026/10/23/abenevento-paura-in-corso-garibaldi-30enne-ferita-alla-testa/",
+      "data": "23 ott, 22:55"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Lite lungo corso Garibaldi, ferita una ragazza: caccia all’aggressore",
+      "url": "https://www.cronachedelsannio.it/sannionews24/lite-corso-garibaldi-ferita-ragazza-caccia-aggressore/",
+      "data": "23 ott, 22:32"
+     },
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "Un nuovo episodio di aggressione si è verificato lungo corso Garibaldi e di cui è stata vittima una giovane",
+      "url": "https://www.gazzettabenevento.it/it/un-nuovo-episodio-di-aggressione-si-e-verificato-lungo-corso-garibaldi-e-di-cui-e-stata-vittima-una",
+      "data": "23 ott, 22:26"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Secondo BeneventoNews24 la ragazza ha 30 anni, non sarebbe in pericolo di vita e il giovane sarebbe stato rintracciato; gli altri giornali lo davano ancora in fuga.",
+     "fonti": [
+      "BeneventoNews24"
+     ],
+     "quando": "2026-10-24T06:10+02:00"
+    }
    }
   },
   {
@@ -3333,61 +3537,6 @@
    "sport": "altro"
   },
   {
-   "id": "rugby-serie-b-ipvc-benevento-partenope-37-27",
-   "titolo": "Rugby Serie B, l'IPVC Benevento batte la Partenope 37-27 all'esordio",
-   "titolo_google": "Rugby Serie B: IPVC Benevento batte la Partenope 37-27",
-   "sintesi": "Alla prima giornata di Serie B l'IPVC Benevento ha vinto 37-27 in casa, al Dell'Oste di Pacevecchia, contro la Partenope. Ha segnato la meta decisiva nel recupero Claudio Russo.",
-   "categoria": "sport",
-   "zona": "benevento",
-   "luogo": "Benevento, stadio Dell'Oste",
-   "pubblicato": "2026-10-21T21:00:00+02:00",
-   "stato": "una_fonte",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "TV7 Benevento",
-     "url": "https://www.tvsette.net/rugby-serie-b-lipvc-benevento-ottiene-una-brillante-vittoria-37-a-27-contro-la-partenope-nella-prima-di-campionato/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "L'IPVC Benevento ha vinto 37 a 27 contro la Partenope nella prima giornata del campionato di rugby di Serie B, giocata al Dell'Oste di Pacevecchia con la tribuna piena. In panchina è tornato Alessandro Valente.",
-      "fonti": [
-       "TV7 Benevento"
-      ]
-     },
-     {
-      "testo": "Il Benevento è passato in vantaggio dopo un minuto con un calcio di Cioffi, poi ha segnato mete con Carandente, Cioffi e Carmine Russo e ha chiuso il primo tempo sul 22 a 15. Nella ripresa ha segnato D'Onofrio; la Partenope è tornata a 32-27 con la seconda meta dell'ala Strino. La meta decisiva, nel recupero, l'ha segnata l'ala Claudio Russo dopo un'azione di D'Onofrio.",
-      "fonti": [
-       "TV7 Benevento"
-      ]
-     },
-     {
-      "testo": "Prima della partita, nel riscaldamento, il pilone e capitano della Partenope Fabrizio Caterino si è fatto male a una gamba, con una frattura. Nel Benevento ha esordito in Serie B Matteo Fanzo, classe 2009, da poco convocato nella nazionale under 18; altri esordienti sono stati Alessio Savino, Luca Tretola, Pietro Sagrafena e Raffaele Cimino.",
-      "fonti": [
-       "TV7 Benevento"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "La classifica dopo la prima giornata."
-    ],
-    "fonti": [
-     {
-      "nome": "TV7 Benevento",
-      "titolo": "RUGBY – SERIE B – L’IPVC Benevento ottiene una brillante vittoria (37 a 27) contro la Partenope  nella prima di campionato",
-      "url": "https://www.tvsette.net/rugby-serie-b-lipvc-benevento-ottiene-una-brillante-vittoria-37-a-27-contro-la-partenope-nella-prima-di-campionato/",
-      "data": "21 ott, 21:00"
-     }
-    ]
-   },
-   "sport": "rugby"
-  },
-  {
    "id": "benevento-calcio-arezzo-24-ottobre-catanzaro-27-ottobre-biglietti",
    "titolo": "Benevento Calcio: sabato 24 ottobre ad Arezzo, martedì 27 al Vigorito con il Catanzaro, via alla prevendita",
    "titolo_google": "Benevento Calcio: Arezzo sabato, Catanzaro martedì, biglietti",
@@ -4011,78 +4160,6 @@
    "foto": "cimitero-2"
   },
   {
-   "id": "frasso-telesino-benessere-aree-interne-volontariato",
-   "titolo": "Frasso Telesino, parte «Il Benessere nelle Aree interne»: un incontro al mese contro la solitudine",
-   "titolo_google": "Frasso Telesino, volontariato contro la solitudine",
-   "sintesi": "A Frasso Telesino associazioni e Comune promuovono un incontro al mese, sempre di lunedì, su memoria, prevenzione e socializzazione. Il primo si è già tenuto.",
-   "categoria": "altro",
-   "zona": "telesina",
-   "luogo": "Frasso Telesino",
-   "pubblicato": "2026-10-21T13:51:00+02:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/21/a-frasso-telesino-volontariato-contro-la-solitudine-nasce-il-benessere-nelle-aree-interne-succede-sempre-di-lunedi/"
-    },
-    {
-     "nome": "Il Sannio Quotidiano",
-     "url": "https://www.ilsannioquotidiano.it/2026/10/22/a-frasso-telesino-il-volontariato-fa-rete-contro-la-solitudine/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "A Frasso Telesino è nato il progetto «Il Benessere nelle Aree interne: succede sempre di lunedì!», contro solitudine ed emarginazione, con attenzione ai giovani. L'idea è della Pro Loco, insieme a Pubblica Assistenza Frasso Telesino, Frasso nel Cuore, Le Ali della Libertà e al Comune, con il sindaco Pasquale Viscusi. Li affianca il CSV Irpinia Sannio (Cesvolab), il centro che sostiene il volontariato.",
-      "fonti": [
-       "NTR24"
-      ]
-     },
-     {
-      "testo": "Gli incontri sono uno al mese, sempre di lunedì, con una pausa a dicembre e la ripresa a gennaio. Il primo si è tenuto al Polo delle Associazioni ed era sulla sicurezza stradale, con Polizia di Stato, ANMIL e AIFVS. Seguiranno temi come violenza di genere, dipendenze, bullismo e cyberbullismo, emigrazione e radici.",
-      "fonti": [
-       "NTR24"
-      ]
-     },
-     {
-      "testo": "Il programma ha quattro formati: «A memoria», con racconti e foto tra generazioni; «Dai, parliamone», sul benessere e la prevenzione con professionisti; un cineforum con dibattito; «Officina creativa», con laboratori di manualità, teatro e fotografia.",
-      "fonti": [
-       "NTR24"
-      ]
-     }
-    ],
-    "concordano": [
-     {
-      "testo": "Il nome del progetto e i temi: cultura, memoria e prevenzione contro solitudine ed emarginazione.",
-      "fonti": [
-       "NTR24",
-       "Il Sannio Quotidiano"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [
-     "Le date dei prossimi incontri e gli orari.",
-     "Come partecipare."
-    ],
-    "fonti": [
-     {
-      "nome": "NTR24",
-      "titolo": "A Frasso Telesino volontariato contro la solitudine: nasce “Il Benessere nelle Aree interne: succede sempre di lunedì”",
-      "url": "https://www.ntr24.tv/2026/10/21/a-frasso-telesino-volontariato-contro-la-solitudine-nasce-il-benessere-nelle-aree-interne-succede-sempre-di-lunedi/",
-      "data": "21 ott, 13:51"
-     },
-     {
-      "nome": "Il Sannio Quotidiano",
-      "titolo": "A Frasso Telesino il volontariato fa rete contro la solitudine",
-      "url": "https://www.ilsannioquotidiano.it/2026/10/22/a-frasso-telesino-il-volontariato-fa-rete-contro-la-solitudine/",
-      "data": "22 ott, 07:15"
-     }
-    ]
-   }
-  },
-  {
    "id": "benevento-via-annunziata-chiusa-sabato-24-ottobre",
    "titolo": "Benevento, via Annunziata chiusa al traffico sabato 24 ottobre mattina tra via Pellegrini e via Borgia",
    "titolo_google": "Benevento, via Annunziata chiusa sabato 24 ottobre",
@@ -4157,58 +4234,6 @@
     }
    },
    "foto": "strada-chiusa"
-  },
-  {
-   "id": "benevento-via-dei-canali-passaggio-a-livello-chiuso",
-   "titolo": "Benevento, chiuso il passaggio a livello di via dei Canali, in contrada Piano Morra",
-   "titolo_google": "Benevento, chiuso il passaggio a livello di via dei Canali",
-   "sintesi": "Con un'ordinanza del 21 ottobre il Comune di Benevento ha chiuso al traffico di auto e pedoni il passaggio a livello di via dei Canali, in contrada Piano Morra, sulla linea Avellino-Benevento.",
-   "categoria": "strade",
-   "immagine": "strada-chiusa",
-   "zona": "benevento",
-   "luogo": "Benevento, contrada Piano Morra",
-   "pubblicato": "2026-10-21",
-   "stato": "ufficiale",
-   "rilevante": false,
-   "traffico": "chiusa",
-   "fonti": [
-    {
-     "nome": "Albo pretorio Benevento",
-     "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80016"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Il Comune di Benevento ha chiuso al traffico di veicoli e pedoni il passaggio a livello di via dei Canali, in contrada Piano Morra. L'ordinanza n. 443 del Servizio Traffico è del 21 ottobre 2026 ed è pubblicata nell'albo pretorio del Comune.",
-      "fonti": [
-       "Albo pretorio Benevento"
-      ]
-     },
-     {
-      "testo": "Il passaggio a livello è l'attraversamento della ferrovia al chilometro 27+022 della linea Avellino-Benevento. L'oggetto dell'ordinanza non dice da quando la chiusura vale, per quanto tempo, né il motivo.",
-      "fonti": [
-       "Albo pretorio Benevento"
-      ]
-     }
-    ],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Da quando e fino a quando resta chiuso.",
-     "Il motivo della chiusura.",
-     "Quale strada alternativa è consigliata."
-    ],
-    "fonti": [
-     {
-      "nome": "Albo pretorio Benevento",
-      "titolo": "Chiusura al traffico veicolare e pedonale dell'attraversamento a raso al servizio del passaggio a livello avente ubicazione in Via dei Canali (Contrada Piano Morra) in corrispondenza del km 27 + 022 della linea ferroviaria Avellino - Benevento",
-      "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80016",
-      "data": "21 ott"
-     }
-    ]
-   },
-   "foto": "strada-chiusa-2"
   },
   {
    "id": "san-giorgio-del-sannio-vandali-parco-viale-spinelli",
@@ -4424,528 +4449,6 @@
    }
   },
   {
-   "id": "eav-carburante-bus-sostitutivi-napoli-benevento-sospesi-22-ottobre",
-   "titolo": "Valle Caudina, EAV sospende dal 22 ottobre i bus che sostituiscono il treno Napoli-Benevento per la mancanza di gasolio",
-   "titolo_google": "Valle Caudina, EAV ferma i bus sostitutivi del treno",
-   "sintesi": "EAV, l'azienda dei treni e dei bus della Campania, ha annunciato che da giovedì 22 ottobre sospende i servizi sostitutivi ferroviari fatti da D'Agostino Tour. Il Caudino scrive che tra questi c'è il bus che sostituisce il treno Napoli–Benevento per la Valle Caudina. Venerdì 23 EAV dice che i rifornimenti sono ripresi e prevede il ritorno alla normalità dei bus dal 27 ottobre.",
-   "categoria": "altro",
-   "zona": "caudina",
-   "immagine": "treno",
-   "luogo": "Valle Caudina",
-   "pubblicato": "2026-10-21T15:27:00+02:00",
-   "stato": "ufficiale",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "EAV",
-     "url": "https://www.eavsrl.it/comunicato-stampa-eav-difficolta-di-rifornimento-carburante-aggiornamento-servizi-eav-2/"
-    },
-    {
-     "nome": "Il Caudino",
-     "url": "https://ilcaudino.it/valle-caudina-domani-e-sospeso-il-servizio-sostitutivo-eav-napoli-benevento-uid-5/"
-    },
-    {
-     "nome": "EAV (23/10)",
-     "url": "https://www.eavsrl.it/aggiornamento-rifornimenti-gasolio-e-piano-di-ripresa-del-servizio-impianti-dta/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Venerdì 23 ottobre EAV ha comunicato che sono ripresi i rifornimenti di gasolio presso i depositi dei bus. Con il ritorno graduale delle forniture, i servizi bus sostitutivi e di supporto al servizio ferroviario risultano effettuati regolarmente. EAV scrive che da sabato 24 e domenica 25 ottobre il servizio automobilistico sarà regolare su tutti i bacini, tranne Ischia, e che dal 27 ottobre è previsto il ritorno alla normalità. Il comunicato non nomina la linea Napoli–Benevento.",
-      "fonti": [
-       "EAV (23/10)"
-      ],
-      "giorno": "2026-10-23"
-     },
-     {
-      "testo": "Da giovedì 22 ottobre EAV, l'Ente Autonomo Volturno che gestisce treni e bus in Campania, sospende tutti i servizi sostitutivi ferroviari fatti dalla società D'Agostino Tour, cioè i bus che prendono il posto dei treni quando la linea è ferma. Lo scrive EAV nel comunicato stampa del 20 ottobre.",
-      "fonti": [
-       "EAV"
-      ],
-      "giorno": "2026-10-22"
-     },
-     {
-      "testo": "Secondo Il Caudino la sospensione tocca anche il bus sostitutivo della linea Napoli–Benevento, che serve le fermate della Valle Caudina. Il giornale lo ricava dal comunicato, dove non si nomina Benevento, e dal fatto che il servizio sul tratto sarebbe svolto proprio da D'Agostino Tour.",
-      "fonti": [
-       "EAV",
-       "Il Caudino"
-      ],
-      "giorno": "2026-10-22"
-     },
-     {
-      "testo": "Il motivo è la mancanza di gasolio: i distributori non consegnano i rifornimenti mentre gli autotrasportatori protestano. EAV dice che dal 21 ottobre alcuni bus sono ridotti o soppressi e che dal 24 ottobre, se le forniture non tornano regolari, potrebbero fermarsi anche alcuni servizi ferroviari. Nel comunicato la lista delle sospensioni cresce giorno dopo giorno fino al 27 ottobre, con linee soprattutto nell'area di Napoli e nelle isole.",
-      "fonti": [
-       "EAV"
-      ],
-      "giorno": "2026-10-21"
-     },
-     {
-      "testo": "EAV segue la situazione e annuncia eventuali cambiamenti o il ritorno alla normalità sul sito www.eavsrl.it.",
-      "fonti": [
-       "EAV"
-      ],
-      "giorno": "2026-10-21"
-     }
-    ],
-    "cronologia": [
-     {
-      "data": "20 ottobre",
-      "fatto": "EAV pubblica il comunicato con il calendario delle sospensioni per la mancanza di gasolio.",
-      "fonti": [
-       "EAV"
-      ]
-     },
-     {
-      "data": "22 ottobre",
-      "fatto": "Si fermano tutti i servizi sostitutivi ferroviari di D'Agostino Tour.",
-      "fonti": [
-       "EAV"
-      ]
-     },
-     {
-      "data": "23 ottobre",
-      "fatto": "EAV annuncia la ripresa dei rifornimenti di gasolio e il piano di ritorno alla normalità dei servizi bus entro il 27 ottobre.",
-      "fonti": [
-       "EAV (23/10)"
-      ]
-     },
-     {
-      "data": "24 ottobre",
-      "fatto": "Data da cui, senza nuove forniture, potrebbero fermarsi anche alcuni servizi ferroviari.",
-      "fonti": [
-       "EAV"
-      ]
-     }
-    ],
-    "concordano": [],
-    "divergono": [
-     {
-      "testo": "Il comunicato EAV non nomina la linea Napoli–Benevento: il collegamento con la Valle Caudina è un'interpretazione de Il Caudino. Vale il testo di EAV.",
-      "fonti": [
-       "EAV",
-       "Il Caudino"
-      ]
-     }
-    ],
-    "non_si_sa": [
-     "Se il bus sostitutivo Napoli–Benevento per la Valle Caudina è tornato a circolare: EAV non nomina questa linea."
-    ],
-    "fonti": [
-     {
-      "nome": "EAV",
-      "titolo": "COMUNICATO STAMPA EAV: DIFFICOLTA’ DI RIFORNIMENTO CARBURANTE – AGGIORNAMENTO SERVIZI EAV",
-      "url": "https://www.eavsrl.it/comunicato-stampa-eav-difficolta-di-rifornimento-carburante-aggiornamento-servizi-eav-2/",
-      "data": "20 ott"
-     },
-     {
-      "nome": "Il Caudino",
-      "titolo": "Valle Caudina: domani è sospeso il servizio sostitutivo Eav Napoli-Benevento",
-      "url": "https://ilcaudino.it/valle-caudina-domani-e-sospeso-il-servizio-sostitutivo-eav-napoli-benevento-uid-5/",
-      "data": "21 ott, 15:27"
-     },
-     {
-      "nome": "EAV (23/10)",
-      "titolo": "Aggiornamento rifornimenti gasolio e piano di ripresa del servizio – Impianti DTA",
-      "url": "https://www.eavsrl.it/aggiornamento-rifornimenti-gasolio-e-piano-di-ripresa-del-servizio-impianti-dta/",
-      "data": "23 ott, 18:57"
-     }
-    ],
-    "aggiornamento": {
-     "testo": "Venerdì 23 ottobre EAV ha annunciato la ripresa dei rifornimenti di gasolio, i bus sostitutivi del treno regolari e il ritorno alla normalità dei servizi bus dal 27 ottobre.",
-     "fonti": [
-      "EAV (23/10)"
-     ],
-     "quando": "2026-10-23T22:10+02:00"
-    }
-   },
-   "foto": "treno"
-  },
-  {
-   "id": "benevento-prefettura-protesta-tir-carburante-farmaci-scorte",
-   "titolo": "Benevento, protesta dei tir: la Prefettura segue i rifornimenti di carburante e cibo con scorte delle forze di polizia",
-   "titolo_google": "Benevento, Prefettura: scorte per carburante, cibo e farmaci",
-   "sintesi": "Mercoledì 21 ottobre il Prefetto Raffaela Moscarella ha fatto il punto sulla protesta degli autotrasportatori. La Prefettura segue con le compagnie petrolifere i rifornimenti di carburante e le consegne di cibo, con scorta delle forze di polizia. Hanno la precedenza farmaci, trasporti sanitari e servizi essenziali, rifiuti compresi.",
-   "categoria": "altro",
-   "zona": "benevento",
-   "immagine": "camion",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-21T21:08:00+02:00",
-   "stato": "ufficiale",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Prefettura di Benevento",
-     "url": "https://prefettura.interno.gov.it/it/prefetture/benevento/notizie/protesta-autotrasportatori"
-    },
-    {
-     "nome": "Lab TV",
-     "url": "https://www.labtv.net/attualita/2026/10/21/benevento-tir-fermi-e-distributori-a-secco-la-prefettura-attiva-il-piano-scorte-per-farmaci-e-beni-essenziali/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Mercoledì 21 ottobre 2026, nel pomeriggio, il Prefetto di Benevento Raffaela Moscarella ha riunito un nuovo incontro a Palazzo del Governo (la sede della Prefettura) sulla protesta degli autotrasportatori. La protesta va avanti da più giorni in Campania e sta creando problemi alle forniture e ai servizi essenziali.",
-      "fonti": [
-       "Prefettura di Benevento",
-       "Lab TV"
-      ]
-     },
-     {
-      "testo": "I problemi più grandi, dice la Prefettura, sono il carburante nei distributori della zona e la consegna delle merci ai supermercati. Per questo la Prefettura segue, insieme ai responsabili delle principali compagnie petrolifere che lavorano sul territorio, i rifornimenti di carburante e l'arrivo dei prodotti alimentari. Per farlo attiva servizi di accompagnamento, cioè scorte, a cura delle forze di polizia.",
-      "fonti": [
-       "Prefettura di Benevento",
-       "Lab TV"
-      ]
-     },
-     {
-      "testo": "Tra le richieste arrivate finora hanno la precedenza quelle per i farmaci, i trasporti sanitari e le attività che servono a tenere in piedi i servizi pubblici essenziali, compreso il trasporto dei rifiuti.",
-      "fonti": [
-       "Prefettura di Benevento"
-      ]
-     },
-     {
-      "testo": "Chi deve chiedere un passaggio o una scorta deve scrivere alla Prefettura, all'indirizzo di posta certificata protocollo.prefbn@pec.interno.it. Nella richiesta vanno indicati il tipo di servizio, il percorso con partenza e arrivo, il tipo di merce da trasportare e un numero di telefono da chiamare. Con questi dati la Prefettura può valutare più in fretta le richieste e decidere quali hanno la priorità.",
-      "fonti": [
-       "Prefettura di Benevento",
-       "Lab TV"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "Il vertice in Prefettura e le scorte delle forze di polizia per carburante e prodotti alimentari.",
-      "fonti": [
-       "Prefettura di Benevento",
-       "Lab TV"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [
-     "Quante richieste di scorta sono già arrivate e quali sono state accolte.",
-     "Fino a quando resteranno in funzione queste misure."
-    ],
-    "fonti": [
-     {
-      "nome": "Prefettura di Benevento",
-      "titolo": "Protesta degli autotrasportatori",
-      "url": "https://prefettura.interno.gov.it/it/prefetture/benevento/notizie/protesta-autotrasportatori",
-      "data": "21 ott, 21:08"
-     },
-     {
-      "nome": "Lab TV",
-      "titolo": "Benevento, Tir fermi e distributori a secco: la Prefettura attiva il piano scorte per farmaci e beni essenziali",
-      "url": "https://www.labtv.net/attualita/2026/10/21/benevento-tir-fermi-e-distributori-a-secco-la-prefettura-attiva-il-piano-scorte-per-farmaci-e-beni-essenziali/",
-      "data": "21 ott"
-     }
-    ]
-   },
-   "foto": "camion-2"
-  },
-  {
-   "id": "air-campania-carburante-forniture-benevento-22-ottobre",
-   "titolo": "Benevento, AIR Campania: carburante per i bus atteso giovedì 22 ottobre, già arrivato ad Avellino e Caserta",
-   "titolo_google": "Benevento, bus AIR Campania: il carburante arriva giovedì",
-   "sintesi": "AIR Campania, la società dei bus extraurbani, dice che giovedì 22 ottobre sono attese le forniture di carburante a Benevento e Salerno. Mercoledì sono già arrivate ad Avellino e a Caserta. Intanto i blocchi dei tir possono causare ritardi sulla linea Arpaia-Napoli.",
-   "categoria": "altro",
-   "zona": "benevento",
-   "immagine": "autobus",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-21T18:27:00+02:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Cronache del Sannio",
-     "url": "https://www.cronachedelsannio.it/sannionews24/air-campania-forniture-carburante-domani-benevento/"
-    },
-    {
-     "nome": "TV7 Benevento",
-     "url": "https://www.tvsette.net/carburante-air-campania-rifornimenti-arrivati-anche-a-caserta-attese-domani-le-forniture-a-benevento-e-salerno/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Per i bus di AIR Campania, la società che gestisce il trasporto pubblico fuori città, a Benevento il carburante dovrebbe arrivare giovedì 22 ottobre. Lo ha comunicato l'azienda mercoledì 21 ottobre: le forniture sono attese anche a Salerno.",
-      "fonti": [
-       "Cronache del Sannio",
-       "TV7 Benevento"
-      ]
-     },
-     {
-      "testo": "Nella mattinata di mercoledì il rifornimento è arrivato ad Avellino e nel corso della giornata anche a Caserta. A Napoli la Prefettura, su richiesta di AIR, ha chiesto aiuto alla Questura per portare la fornitura in sicurezza. L'amministratore unico, Anthony Acconcia, ringrazia le Prefetture per la collaborazione e dice che l'azienda continuerà a controllare la situazione e ad avvisare gli utenti se il servizio cambia.",
-      "fonti": [
-       "Cronache del Sannio",
-       "TV7 Benevento"
-      ]
-     },
-     {
-      "testo": "Un altro avviso di AIR, diffuso in mattinata, spiega che i blocchi stradali dello sciopero dei tir possono causare ritardi e cambi di percorso. Nel bacino di Benevento (la zona servita dai bus con base a Benevento) le difficoltà maggiori riguardano la linea Arpaia-Napoli. L'azienda si scusa con i viaggiatori.",
-      "fonti": [
-       "TV7 Benevento"
-      ]
-     }
-    ],
-    "cronologia": [
-     {
-      "data": "21 ottobre, mattina",
-      "fatto": "Arriva il carburante ad Avellino; AIR segnala ritardi per i blocchi, tra gli altri sulla direttrice Arpaia-Napoli.",
-      "fonti": [
-       "Cronache del Sannio",
-       "TV7 Benevento"
-      ]
-     },
-     {
-      "data": "21 ottobre, pomeriggio",
-      "fatto": "Arriva la fornitura a Caserta; per il giorno dopo sono attese quelle di Benevento e Salerno.",
-      "fonti": [
-       "Cronache del Sannio",
-       "TV7 Benevento"
-      ]
-     }
-    ],
-    "concordano": [
-     {
-      "testo": "Fornitura arrivata ad Avellino e a Caserta; attese giovedì 22 ottobre Benevento e Salerno.",
-      "fonti": [
-       "Cronache del Sannio",
-       "TV7 Benevento"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [
-     "A che ora arriverà il carburante a Benevento e se basterà a far girare tutte le corse.",
-     "Se le corse della linea Arpaia-Napoli saranno cancellate o solo in ritardo."
-    ],
-    "fonti": [
-     {
-      "nome": "Cronache del Sannio",
-      "titolo": "Air Campania: forniture carburante attese per domani a Benevento",
-      "url": "https://www.cronachedelsannio.it/sannionews24/air-campania-forniture-carburante-domani-benevento/",
-      "data": "21 ott"
-     },
-     {
-      "nome": "TV7 Benevento",
-      "titolo": "Carburante, AIR Campania: “Rifornimenti arrivati anche a Caserta, attese domani le forniture a Benevento e Salerno”",
-      "url": "https://www.tvsette.net/carburante-air-campania-rifornimenti-arrivati-anche-a-caserta-attese-domani-le-forniture-a-benevento-e-salerno/",
-      "data": "21 ott, 18:27"
-     }
-    ]
-   },
-   "foto": "autobus"
-  },
-  {
-   "id": "benevento-via-nenni-distributore-assalto-benzina",
-   "titolo": "Benevento, via Nenni: lunghe code e strada bloccata per il distributore che aveva ancora benzina",
-   "titolo_google": "Benevento, via Nenni: code e strada bloccata per la benzina",
-   "sintesi": "Mercoledì pomeriggio a Benevento è corsa al distributore di via Nenni, uno dei pochi con carburante. Il traffico verso viale Mellusi si è paralizzato e la Polizia Municipale è intervenuta per calmare gli animi.",
-   "categoria": "altro",
-   "zona": "benevento",
-   "immagine": "carburante",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-21",
-   "stato": "una_fonte",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/benzina-distrubutore/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Nel pomeriggio di mercoledì 21 ottobre, a Benevento, decine di automobilisti si sono precipitati al distributore di via Nenni. Secondo Anteprima24, una segnalazione arrivata nel pomeriggio ha fatto sapere che lì c'era ancora una certa scorta di benzina.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "In città, scrive il giornale, le telefonate ai distributori davano quasi tutte la stessa risposta: carburante esaurito. Con il blocco dei camion l'autonomia è ridotta e nessuno sa quanto durerà. Per questo la voce ha rimesso in moto la corsa di chi non aveva ancora fatto rifornimento.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "La strada si è bloccata e il traffico è rimasto fermo lungo la via che porta a viale Mellusi. Ci sono stati momenti di tensione, ma la Polizia Municipale è arrivata sul posto, ha calmato gli animi e ha fatto scorrere le auto quasi normalmente.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Quante auto c'erano in coda e per quanto tempo la strada è rimasta bloccata.",
-     "Se il distributore ha finito la benzina."
-    ],
-    "fonti": [
-     {
-      "nome": "Anteprima24",
-      "titolo": "Segnalata benzina: lunghe code per l’assalto al distributore",
-      "url": "https://www.anteprima24.it/benevento/benzina-distrubutore/",
-      "data": "21 ott"
-     }
-    ]
-   },
-   "foto": "carburante-2"
-  },
-  {
-   "id": "benevento-tre-ponti-smart-in-fiamme",
-   "titolo": "Benevento, Smart in fiamme sulla statale Appia a Tre Ponti: il conducente scende in tempo",
-   "titolo_google": "Benevento, Smart in fiamme sull'Appia a Tre Ponti",
-   "sintesi": "Mercoledì 21 ottobre una Smart ha preso fuoco mentre andava verso Benevento sulla statale Appia, in località Tre Ponti. Il conducente si è fermato ed è sceso in tempo; i vigili del fuoco hanno spento le fiamme.",
-   "categoria": "cronaca",
-   "zona": "benevento",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-21",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Ottopagine",
-     "url": "https://www.ottopagine.it/bn/cronaca/441716/tre-ponti-smart-in-fiamme-paura-per-il-conducente.shtml"
-    },
-    {
-     "nome": "BeneventoNews24",
-     "url": "https://www.beneventonews24.it/2026/10/21/foto-smart-in-fiamme-lungo-la-statale-appia-conducente-riesce-a-mettersi-in-salvo/"
-    },
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/auto-fiamme-tragitto-vigili-del-fuoco/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Mercoledì 21 ottobre una Smart ha preso fuoco lungo la statale Appia, in località Tre Ponti, a Benevento. Il conducente, che stava andando verso Benevento, si è accorto in tempo del pericolo ed è sceso dall'auto senza conseguenze.",
-      "fonti": [
-       "Ottopagine",
-       "BeneventoNews24",
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "Prima è uscito del fumo, poi sono comparse le fiamme. Secondo Anteprima24 l'incendio è partito dal vano motore, cioè dalla parte davanti dell'auto dove sta il motore. L'uomo ha fermato la macchina subito e si è messo in salvo.",
-      "fonti": [
-       "Ottopagine",
-       "BeneventoNews24",
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "Sul posto sono arrivati i vigili del fuoco del comando provinciale di Benevento, che hanno spento le fiamme e messo in sicurezza la zona. La Smart è rimasta danneggiata dal rogo.",
-      "fonti": [
-       "Ottopagine",
-       "BeneventoNews24",
-       "Anteprima24"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "Smart in fiamme sulla statale Appia a Tre Ponti, conducente illeso, vigili del fuoco intervenuti.",
-      "fonti": [
-       "Ottopagine",
-       "BeneventoNews24",
-       "Anteprima24"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [
-     "L'ora dell'incendio e la causa: le fonti non le dicono."
-    ],
-    "fonti": [
-     {
-      "nome": "Ottopagine",
-      "titolo": "Tre Ponti: Smart in fiamme, paura per il conducente - FOTO",
-      "url": "https://www.ottopagine.it/bn/cronaca/441716/tre-ponti-smart-in-fiamme-paura-per-il-conducente.shtml",
-      "data": "21 ott"
-     },
-     {
-      "nome": "BeneventoNews24",
-      "titolo": "FOTO – Smart in fiamme lungo la Statale Appia: conducente riesce a mettersi in salvo",
-      "url": "https://www.beneventonews24.it/2026/10/21/foto-smart-in-fiamme-lungo-la-statale-appia-conducente-riesce-a-mettersi-in-salvo/",
-      "data": "21 ott"
-     },
-     {
-      "nome": "Anteprima24",
-      "titolo": "Auto in fiamme durante il tragitto: intervento dei Vigili del Fuoco",
-      "url": "https://www.anteprima24.it/benevento/auto-fiamme-tragitto-vigili-del-fuoco/",
-      "data": "21 ott"
-     }
-    ]
-   }
-  },
-  {
-   "id": "sant-angelo-a-cupolo-morto-in-chiesa-archiviazione",
-   "titolo": "Sant'Angelo a Cupolo, morto a 62 anni mentre tinteggiava una chiesa: la Procura chiede l'archiviazione",
-   "titolo_google": "Sant'Angelo a Cupolo, morto in chiesa: chiesta l'archiviazione",
-   "sintesi": "Il pubblico ministero ha chiesto di archiviare l'inchiesta sulla morte di un uomo di 62 anni, avvenuta il 23 luglio 2025 nella chiesa della frazione Motta. I familiari si opporranno.",
-   "categoria": "cronaca",
-   "zona": "benevento",
-   "luogo": "Sant'Angelo a Cupolo",
-   "pubblicato": "2026-10-21",
-   "stato": "una_fonte",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Ottopagine",
-     "url": "https://www.ottopagine.it/bn/cronaca/441700/muore-a-62-anni-mentre-tinteggia-la-chiesa-chiesta-archiviazione-dell-inchiesta.shtml"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Il sostituto procuratore Carmine Pignatiello ha chiesto di archiviare l'inchiesta sulla morte di un uomo di 62 anni, avvenuta il 23 luglio 2025 nella chiesa di Maria Santissima della Neve, alla frazione Motta di Sant'Angelo a Cupolo. L'inchiesta è contro ignoti, cioè senza persone indagate.",
-      "fonti": [
-       "Ottopagine"
-      ]
-     },
-     {
-      "testo": "Secondo una prima ricostruzione, l'uomo stava tinteggiando la chiesa su una scala. Avrebbe bevuto un bicchiere d'acqua chiesto a una persona che era con lui e poi sarebbe caduto, probabilmente dopo un malore. Per lui non c'era stato niente da fare.",
-      "fonti": [
-       "Ottopagine"
-      ]
-     },
-     {
-      "testo": "L'autopsia, fatta dal medico legale Francesco La Sala, ha concluso per una morte dovuta a un problema al cuore. Da qui la richiesta di archiviazione.",
-      "fonti": [
-       "Ottopagine"
-      ]
-     },
-     {
-      "testo": "I familiari, assistiti dall'avvocato Michele Ciruolo, si opporranno e chiederanno di continuare le indagini, guardando meglio l'intervento che l'uomo, dipendente di un'azienda, faceva in chiesa a titolo privato. Probabilmente sarà fissata un'udienza davanti al giudice per le indagini preliminari, che deciderà se archiviare. Le indagini erano state condotte dai carabinieri.",
-      "fonti": [
-       "Ottopagine"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Quando sarà fissata l'udienza davanti al giudice e cosa deciderà."
-    ],
-    "fonti": [
-     {
-      "nome": "Ottopagine",
-      "titolo": "Muore a 62 anni mentre tinteggia la chiesa, chiesta archiviazione dell'inchiesta",
-      "url": "https://www.ottopagine.it/bn/cronaca/441700/muore-a-62-anni-mentre-tinteggia-la-chiesa-chiesta-archiviazione-dell-inchiesta.shtml",
-      "data": "21 ott"
-     }
-    ]
-   }
-  },
-  {
    "id": "benevento-mastella-appello-no-acquisti-panico-spostamenti",
    "titolo": "Benevento, il sindaco Mastella ai cittadini per la crisi dei camion: niente acquisti per paura, meno spostamenti in auto",
    "titolo_google": "Benevento, Mastella: niente acquisti per paura, meno auto",
@@ -5029,394 +4532,6 @@
     ]
    },
    "foto": "supermercato-2"
-  },
-  {
-   "id": "montesarchio-scuola-foscolo-chiusa-22-ottobre",
-   "titolo": "Montesarchio, giovedì 22 ottobre chiusa la scuola media «Ugo Foscolo» per la sanificazione dopo la presenza di topi",
-   "titolo_google": "Montesarchio, scuola Foscolo chiusa il 22 ottobre per i topi",
-   "sintesi": "Il sindaco di Montesarchio ha chiuso per giovedì 22 ottobre il plesso della scuola media «Ugo Foscolo»: la dirigente ha segnalato topi e loro escrementi, e i locali vanno sanificati.",
-   "categoria": "altro",
-   "zona": "caudina",
-   "immagine": "scuola",
-   "luogo": "Montesarchio",
-   "pubblicato": "2026-10-21",
-   "stato": "confermata",
-   "rilevante": false,
-   "in_vigore_fino": "2026-10-22",
-   "fonti": [
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/21/montesarchio-topi-nella-scuola-ugo-foscolo-giovedi-plesso-chiuso-per-la-sanificazione/"
-    },
-    {
-     "nome": "Il Sannio Quotidiano",
-     "url": "https://www.ilsannioquotidiano.it/2026/10/22/topi-in-una-scuola-di-montesarchio-disposta-la-chiusura/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Il plesso della scuola secondaria di primo grado «Ugo Foscolo» di Montesarchio resta chiuso giovedì 22 ottobre per una sanificazione. Lo ha deciso il sindaco Carmelo Sandomenico con un'ordinanza.",
-      "fonti": [
-       "NTR24",
-       "Il Sannio Quotidiano"
-      ]
-     },
-     {
-      "testo": "La chiusura è partita dalla segnalazione della dirigente scolastica dell'Istituto comprensivo «Ilaria Alpi», che ha riferito della presenza di roditori e di escrementi riconducibili ai topi dentro la struttura. Il Comune ha ritenuto necessario chiudere il plesso per ripulire i locali interessati e l'area intorno.",
-      "fonti": [
-       "NTR24",
-       "Il Sannio Quotidiano"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "Chiusura del plesso «Ugo Foscolo» giovedì 22 ottobre per la presenza di topi, su segnalazione della dirigente dell'Istituto «Ilaria Alpi».",
-      "fonti": [
-       "NTR24",
-       "Il Sannio Quotidiano"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [
-     "Se le lezioni riprendono venerdì 23 ottobre: la notizia parla solo della chiusura di giovedì.",
-     "In quali locali sono stati trovati i topi."
-    ],
-    "fonti": [
-     {
-      "nome": "NTR24",
-      "titolo": "Montesarchio, topi nella scuola “Ugo Foscolo”: giovedì plesso chiuso per la sanificazione",
-      "url": "https://www.ntr24.tv/2026/10/21/montesarchio-topi-nella-scuola-ugo-foscolo-giovedi-plesso-chiuso-per-la-sanificazione/",
-      "data": "21 ott"
-     },
-     {
-      "nome": "Il Sannio Quotidiano",
-      "titolo": "Topi in una scuola di Montesarchio, disposta la chiusura",
-      "url": "https://www.ilsannioquotidiano.it/2026/10/22/topi-in-una-scuola-di-montesarchio-disposta-la-chiusura/",
-      "data": "22 ott"
-     }
-    ]
-   },
-   "foto": "scuola"
-  },
-  {
-   "id": "benevento-via-capodimonte-auto-fuori-strada-62enne",
-   "titolo": "Benevento, via Capodimonte: auto fuori strada abbatte tre centraline, ferita una donna di 62 anni",
-   "titolo_google": "Benevento, via Capodimonte: auto fuori strada, ferita una donna",
-   "sintesi": "Nel primo pomeriggio di mercoledì 21 ottobre una donna di 62 anni ha perso il controllo della sua Citroën C1 sulla provinciale tra Apice e Benevento, in via Capodimonte. Ha abbattuto tre centraline di telefono e luce ed è stata portata al San Pio.",
-   "categoria": "cronaca",
-   "zona": "benevento",
-   "luogo": "Benevento, via Capodimonte",
-   "pubblicato": "2026-10-21",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/21/auto-fuori-strada-alle-porte-di-benevento-ferita-una-62enne/"
-    },
-    {
-     "nome": "BeneventoNews24",
-     "url": "https://www.beneventonews24.it/2026/10/21/benevento-incidente-in-via-capodimonte-62enne-finisce-fuori-strada-trasportata-al-san-pio/"
-    },
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/centraline-telefono-elettricita-incidente/"
-    },
-    {
-     "nome": "Il Sannio Quotidiano",
-     "url": "https://www.ilsannioquotidiano.it/2026/10/22/finisce-con-lauto-contro-un-muretto-ferita-una-62enne-di-apice/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Nel primo pomeriggio di mercoledì 21 ottobre una donna di 62 anni è finita fuori strada con la sua Citroën C1 in via Capodimonte, a Benevento, lungo la strada provinciale che collega Apice a Benevento. Stava andando verso Benevento. Il Sannio Quotidiano precisa che la donna abita ad Apice e che l'auto è finita contro un muretto, con la parte anteriore distrutta.",
-      "fonti": [
-       "NTR24",
-       "BeneventoNews24",
-       "Anteprima24",
-       "Il Sannio Quotidiano"
-      ]
-     },
-     {
-      "testo": "Secondo Anteprima24 l'incidente è avvenuto a circa un chilometro dalla casa circondariale (il carcere); BeneventoNews24 indica il civico 28. L'auto ha abbattuto tre centraline che servono le reti del telefono e della luce.",
-      "fonti": [
-       "Anteprima24",
-       "BeneventoNews24"
-      ]
-     },
-     {
-      "testo": "La donna è rimasta ferita ed è stata portata in ambulanza all'ospedale San Pio di Benevento. Sul posto sono intervenuti il 118, la Polizia Municipale e i Vigili del Fuoco, che hanno messo in sicurezza la zona. Le cause dell'incidente sono ancora da accertare.",
-      "fonti": [
-       "NTR24",
-       "BeneventoNews24",
-       "Anteprima24"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "Donna di 62 anni, auto fuori strada in via Capodimonte lungo la provinciale Apice-Benevento, trasportata al San Pio; cause in accertamento.",
-      "fonti": [
-       "NTR24",
-       "BeneventoNews24",
-       "Anteprima24"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [
-     "Le condizioni della donna: i giornali scrivono solo che ha riportato ferite.",
-     "Se le centraline abbattute hanno lasciato senza telefono o luce qualche zona."
-    ],
-    "fonti": [
-     {
-      "nome": "NTR24",
-      "titolo": "Auto fuori strada alle porte di Benevento: ferita una 62enne",
-      "url": "https://www.ntr24.tv/2026/10/21/auto-fuori-strada-alle-porte-di-benevento-ferita-una-62enne/",
-      "data": "21 ott"
-     },
-     {
-      "nome": "BeneventoNews24",
-      "titolo": "Benevento| Incidente in via Capodimonte, 62enne fuori strada: trasportata al San Pio",
-      "url": "https://www.beneventonews24.it/2026/10/21/benevento-incidente-in-via-capodimonte-62enne-finisce-fuori-strada-trasportata-al-san-pio/",
-      "data": "21 ott"
-     },
-     {
-      "nome": "Anteprima24",
-      "titolo": "Auto abbatte le centraline telefoniche ed elettriche: ferita una donna",
-      "url": "https://www.anteprima24.it/benevento/centraline-telefono-elettricita-incidente/",
-      "data": "21 ott"
-     },
-     {
-      "nome": "Il Sannio Quotidiano",
-      "titolo": "Finisce con l’auto contro un muretto, ferita una 62enne di Apice",
-      "url": "https://www.ilsannioquotidiano.it/2026/10/22/finisce-con-lauto-contro-un-muretto-ferita-una-62enne-di-apice/",
-      "data": "22 ott"
-     }
-    ]
-   }
-  },
-  {
-   "id": "montesarchio-hashish-34-grammi-arresto",
-   "titolo": "Montesarchio, i Carabinieri arrestano un uomo con 34 grammi di hashish in casa",
-   "titolo_google": "Montesarchio, 34 grammi di hashish in casa: arrestato",
-   "sintesi": "I Carabinieri di Montesarchio hanno arrestato un giovane (20 anni secondo Ottopagine) con 34 grammi di hashish e il materiale per pesarlo e confezionarlo. È ai domiciliari in attesa della convalida.",
-   "categoria": "cronaca",
-   "zona": "caudina",
-   "luogo": "Montesarchio",
-   "pubblicato": "2026-10-21",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/21/montesarchio-arrestato-con-34-grammi-di-hashish-sequestrato-anche-materiale-per-il-confezionamento/"
-    },
-    {
-     "nome": "Cronache del Sannio",
-     "url": "https://www.cronachedelsannio.it/sannionews24/hashish-materiale-confezionamento-arresto-montesarchio/"
-    },
-    {
-     "nome": "BeneventoNews24",
-     "url": "https://www.beneventonews24.it/2026/10/21/montesarchio-hashish-e-materiale-per-il-confezionamento-in-casa-arrestato-34enne/"
-    },
-    {
-     "nome": "Ottopagine",
-     "url": "https://www.ottopagine.it/bn/cronaca/441724/scontro-egiziani-italiani-per-la-droga-poi-perquisizione-e-arresto-di-un-20enne.shtml"
-    },
-    {
-     "nome": "Il Sannio Quotidiano",
-     "url": "https://www.ilsannioquotidiano.it/2026/10/22/altro-arresto-per-droga-a-montesarchio-uomo-finisce-ai-domiciliari/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "I Carabinieri del Nucleo Operativo e Radiomobile della Compagnia di Montesarchio hanno arrestato un uomo trovato in possesso di 34 grammi di hashish e del materiale per pesare e confezionare la droga. L'arresto è scattato dopo una perquisizione nella sua abitazione, a Montesarchio.",
-      "fonti": [
-       "NTR24",
-       "Cronache del Sannio",
-       "BeneventoNews24",
-       "Il Sannio Quotidiano"
-      ]
-     },
-     {
-      "testo": "Secondo Ottopagine, l'uomo ha 20 anni e vive a Montesarchio. La perquisizione sarebbe scattata dopo una lite accesa, lunedì sera, tra giovani egiziani e italiani che, secondo i carabinieri, si contendevano il territorio dello spaccio. L'hashish era in pacchetti di gomme da masticare e in involucri di cellophane sistemati sul frigorifero e su un mobile. La misura, i domiciliari, è stata decisa dalla Procura e giovedì 22 ottobre c'è l'udienza di convalida davanti al giudice (era «domani» nell'articolo del 21).",
-      "fonti": [
-       "Ottopagine"
-      ]
-     },
-     {
-      "testo": "La sua posizione è ora al vaglio della Procura di Benevento: per ora è ritenuto, allo stato degli atti, responsabile di detenzione di droga ai fini di spaccio. Dopo l'arresto è stato messo a casa sua, ai domiciliari, in attesa delle decisioni dell'autorità giudiziaria. Come ricordano i Carabinieri, è da ritenere presunto innocente fino a una sentenza definitiva.",
-      "fonti": [
-       "NTR24",
-       "Cronache del Sannio",
-       "BeneventoNews24"
-      ]
-     },
-     {
-      "testo": "Un altro sequestro di droga sull'asse Napoli-Montesarchio, di oltre un chilo e mezzo tra hashish e marijuana, è raccontato in una notizia a parte.",
-      "fonti": [
-       "NTR24"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "34 grammi di hashish e materiale per il confezionamento trovati nella perquisizione; arrestato, in attesa della Procura, a casa sua.",
-      "fonti": [
-       "NTR24",
-       "Cronache del Sannio",
-       "BeneventoNews24"
-      ]
-     }
-    ],
-    "divergono": [
-     {
-      "testo": "BeneventoNews24 titola «arrestato 34enne»; Ottopagine scrive che il giovane ha 20 anni. Il «34» è con ogni probabilità il numero dei grammi di droga: vale l'età di Ottopagine, ma la dà solo una testata.",
-      "fonti": [
-       "BeneventoNews24",
-       "Ottopagine"
-      ]
-     }
-    ],
-    "non_si_sa": [
-     "Il nome dell'arrestato non è riportato qui. Il motivo della lite tra giovani, per ora solo «una prima ricostruzione»."
-    ],
-    "fonti": [
-     {
-      "nome": "NTR24",
-      "titolo": "Montesarchio, arrestato con 34 grammi di hashish: sequestrato anche materiale per il confezionamento",
-      "url": "https://www.ntr24.tv/2026/10/21/montesarchio-arrestato-con-34-grammi-di-hashish-sequestrato-anche-materiale-per-il-confezionamento/",
-      "data": "21 ott"
-     },
-     {
-      "nome": "Cronache del Sannio",
-      "titolo": "Hashish e materiale per il confezionamento in casa: un arresto a Montesarchio",
-      "url": "https://www.cronachedelsannio.it/sannionews24/hashish-materiale-confezionamento-arresto-montesarchio/",
-      "data": "21 ott"
-     },
-     {
-      "nome": "BeneventoNews24",
-      "titolo": "Montesarchio, hashish e materiale per il confezionamento in casa: arrestato 34enne",
-      "url": "https://www.beneventonews24.it/2026/10/21/montesarchio-hashish-e-materiale-per-il-confezionamento-in-casa-arrestato-34enne/",
-      "data": "21 ott"
-     },
-     {
-      "nome": "Ottopagine",
-      "titolo": "Scontro egiziani-italiani per la droga, poi perquisizione e arresto di un 20enne",
-      "url": "https://www.ottopagine.it/bn/cronaca/441724/scontro-egiziani-italiani-per-la-droga-poi-perquisizione-e-arresto-di-un-20enne.shtml",
-      "data": "21 ott"
-     },
-     {
-      "nome": "Il Sannio Quotidiano",
-      "titolo": "Altro arresto per droga a Montesarchio: uomo finisce ai domiciliari",
-      "url": "https://www.ilsannioquotidiano.it/2026/10/22/altro-arresto-per-droga-a-montesarchio-uomo-finisce-ai-domiciliari/",
-      "data": "22 ott"
-     }
-    ]
-   }
-  },
-  {
-   "id": "sannio-acque-convenzione-eic-servizio-idrico",
-   "titolo": "Sannio, firmata la convenzione: il servizio idrico di tutti i 78 Comuni passa a Sannio Acque per 27 anni",
-   "titolo_google": "Acqua nel Sannio, 78 Comuni passano a Sannio Acque per 27 anni",
-   "sintesi": "Mercoledì 21 ottobre a Napoli l'Ente Idrico Campano ha firmato con Sannio Acque la convenzione per affidarle il servizio idrico dei 78 Comuni della provincia di Benevento. Sono previsti oltre 265 milioni di investimenti in 27 anni.",
-   "categoria": "altro",
-   "zona": "provincia",
-   "immagine": "acqua",
-   "luogo": "Napoli, Sannio",
-   "pubblicato": "2026-10-21",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/21/servizio-idrico-integrato-firmata-la-convenzione-tra-eic-e-sannio-acque/"
-    },
-    {
-     "nome": "Cronache del Sannio",
-     "url": "https://www.cronachedelsannio.it/sannionews24/sannio-acque-firmata-convenzione-eic-investimenti/"
-    },
-    {
-     "nome": "Infosannio",
-     "url": "https://www.infosannionews.it/attualita/2026/servizio-idrico-integrato-firmata-la-convenzione-tra-eic-e-sannio-acque.html"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Mercoledì 21 ottobre, nella sede centrale dell'Ente Idrico Campano (EIC) a Napoli, è stata firmata la convenzione che affida a Sannio Acque il servizio idrico integrato (acquedotto, fognature e depurazione) nei Comuni della provincia di Benevento. L'EIC è l'ente che governa il servizio idrico in Campania.",
-      "fonti": [
-       "NTR24",
-       "Cronache del Sannio"
-      ]
-     },
-     {
-      "testo": "L'affidamento riguarda 78 Comuni, circa 272.000 abitanti e 117.000 utenze, su un territorio di oltre 2.000 chilometri quadrati. La rete comprende oltre 4.200 chilometri di tubi dell'acqua e 1.300 chilometri di fognature. Nei 27 anni di gestione sono previsti investimenti per oltre 265 milioni di euro, per rimodernare le reti, risolvere i problemi e migliorare via via il servizio.",
-      "fonti": [
-       "NTR24",
-       "Cronache del Sannio"
-      ]
-     },
-     {
-      "testo": "Per il presidente dell'EIC, Luca Mascolo, l'affidamento serve a superare la frammentazione delle gestioni di oggi e a creare un modello unico. Il sindaco di Benevento Clemente Mastella parla di «una svolta cruciale» e assicura che «l'acqua resta pubblica, perché pubblica è la maggioranza in Sannio Acque»; la partnership con il privato, dice, garantisce sostenibilità e solidità. Il presidente di Sannio Acque, Pompilio Forgione, parla di «una responsabilità»: gestire bene, investire nelle reti e migliorare il servizio.",
-      "fonti": [
-       "NTR24"
-      ]
-     },
-     {
-      "testo": "Dalle fonti lette non risulta da quando il nuovo gestore prenderà in carico il servizio nei singoli Comuni.",
-      "fonti": [
-       "NTR24",
-       "Cronache del Sannio"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "Firma a Napoli il 21 ottobre, 78 Comuni, circa 272.000 abitanti, 27 anni di gestione, oltre 265 milioni di investimenti.",
-      "fonti": [
-       "NTR24",
-       "Cronache del Sannio"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [
-     "Da quando Sannio Acque gestirà il servizio nei singoli Comuni e cosa cambia per le bollette.",
-     "Cosa succede agli attuali gestori, come Alto Calore Servizi."
-    ],
-    "fonti": [
-     {
-      "nome": "NTR24",
-      "titolo": "Servizio idrico integrato, firmata la convenzione tra EIC e Sannio Acque",
-      "url": "https://www.ntr24.tv/2026/10/21/servizio-idrico-integrato-firmata-la-convenzione-tra-eic-e-sannio-acque/",
-      "data": "21 ott"
-     },
-     {
-      "nome": "Cronache del Sannio",
-      "titolo": "Sannio Acque, firmata convenzione con Eic: investimenti per oltre 265 milioni in 27 anni",
-      "url": "https://www.cronachedelsannio.it/sannionews24/sannio-acque-firmata-convenzione-eic-investimenti/",
-      "data": "21 ott"
-     },
-     {
-      "nome": "Infosannio",
-      "titolo": "Servizio idrico integrato, firmata la convenzione tra EIC e Sannio Acque",
-      "url": "https://www.infosannionews.it/attualita/2026/servizio-idrico-integrato-firmata-la-convenzione-tra-eic-e-sannio-acque.html",
-      "data": "21 ott"
-     }
-    ]
-   },
-   "foto": "acqua-2"
   },
   {
    "id": "unisannio-lezioni-a-distanza-22-ottobre",
@@ -5676,56 +4791,6 @@
    "foto": "lavori-stradali-2"
   },
   {
-   "id": "benevento-via-montecalvo-limite-30-kmh",
-   "titolo": "Benevento, via Montecalvo: limite di 30 km/h dopo le segnalazioni sulle auto troppo veloci",
-   "titolo_google": "Benevento, via Montecalvo: arriva il limite di 30 km/h",
-   "sintesi": "Un'ordinanza del Servizio Traffico del Comune, firmata il 21 ottobre, mette il limite di 30 km/h in un tratto di via Montecalvo, tra via Madonna della Salute e i civici 33 e 68. Vale quando saranno montati i cartelli.",
-   "categoria": "strade",
-   "zona": "benevento",
-   "immagine": "autovelox",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-21T11:00:00+02:00",
-   "stato": "una_fonte",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/21/benevento-limite-di-30-km-h-in-via-montecalvo-ordinanza-contro-lalta-velocita-dei-veicoli/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "A Benevento, in via Montecalvo, arriva il limite di velocità di 30 km/h. Lo prevede un'ordinanza dirigenziale del Servizio Traffico del Comune, firmata la mattina di mercoledì 21 ottobre. Il limite vale nel tratto tra l'incrocio con via Madonna della Salute e il punto dei civici 33 e 68.",
-      "fonti": [
-       "NTR24"
-      ]
-     },
-     {
-      "testo": "Il Comune ha deciso dopo molte segnalazioni di auto che passano a velocità elevata, un possibile pericolo per chi è in strada. L'ordinanza dice di adeguare la segnaletica e di mettere i nuovi cartelli, visibili da entrambe le direzioni. Il limite diventa operativo solo quando i cartelli sono installati. I controlli spettano alla Polizia Municipale.",
-      "fonti": [
-       "NTR24"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Da quando varrà il limite: dipende dall'installazione dei cartelli, per cui non c'è una data."
-    ],
-    "fonti": [
-     {
-      "nome": "NTR24",
-      "titolo": "Benevento, limite di 30 km/h in via Montecalvo: ordinanza contro l’alta velocità dei veicoli",
-      "url": "https://www.ntr24.tv/2026/10/21/benevento-limite-di-30-km-h-in-via-montecalvo-ordinanza-contro-lalta-velocita-dei-veicoli/",
-      "data": "21 ott"
-     }
-    ]
-   },
-   "foto": "autovelox"
-  },
-  {
    "id": "benevento-carta-dedicata-a-te-graduatoria-2025",
    "titolo": "Benevento, pubblicata la graduatoria per la «Carta Dedicata a te»: come ritirare la carta",
    "titolo_google": "Benevento, Carta Dedicata a te: graduatoria e come ritirarla",
@@ -5826,77 +4891,6 @@
      "quando": "2026-10-22T12:12+02:00"
     }
    }
-  },
-  {
-   "id": "benevento-via-goduti-divieto-sosta-22-23-ottobre",
-   "titolo": "Benevento, via Goduti: divieto di sosta nella notte tra il 22 e il 23 ottobre per lavori a una cabina",
-   "titolo_google": "Benevento, via Goduti: divieto di sosta la notte del 22 ottobre",
-   "sintesi": "Dalle 22 di giovedì 22 ottobre alle 6 di venerdì 23 la sosta è vietata su entrambi i lati di via Goduti, tra piazza Orsini-corso Garibaldi e via Pasquali-piazza Dogana, per la manutenzione della cabina Dogana.",
-   "categoria": "strade",
-   "zona": "benevento",
-   "immagine": "divieto-sosta",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-21T09:59:00+02:00",
-   "stato": "ufficiale",
-   "rilevante": false,
-   "in_vigore_fino": "2026-10-23",
-   "fonti": [
-    {
-     "nome": "Comune di Benevento",
-     "url": "https://comune.benevento.it/novita/divieto-di-sosta-in-via-goduti-per-lavori-di-manutenzione-di-una-cabina/"
-    },
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/21/benevento-divieto-di-sosta-in-via-goduti-per-lavori-di-manutenzione-di-una-cabina/"
-    },
-    {
-     "nome": "Cronache del Sannio",
-     "url": "https://www.cronachedelsannio.it/sannionews24/divieto-sosta-via-goduti-lavori-manutenzione-cabina/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Nella notte tra giovedì 22 e venerdì 23 ottobre a Benevento non si può parcheggiare in via Ennio Goduti. Il divieto vale su entrambi i lati, dalle 22 di giovedì alle 6 di venerdì, nel tratto tra l'incrocio con piazza Orsini-corso Garibaldi e quello con via Pasquali-piazza Dogana.",
-      "fonti": [
-       "Comune di Benevento"
-      ]
-     },
-     {
-      "testo": "Il motivo è un intervento straordinario di manutenzione alla cabina Dogana, che si trova sotto la strada, vicino al civico 4. Il divieto serve a far lavorare gli operai.",
-      "fonti": [
-       "Comune di Benevento"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Che tipo di cabina sia (elettrica o altro): il Comune scrive solo «cabina Dogana»."
-    ],
-    "fonti": [
-     {
-      "nome": "Comune di Benevento",
-      "titolo": "Divieto di sosta in via Goduti per lavori di manutenzione di una cabina",
-      "url": "https://comune.benevento.it/novita/divieto-di-sosta-in-via-goduti-per-lavori-di-manutenzione-di-una-cabina/",
-      "data": "21 ott, 09:59"
-     },
-     {
-      "nome": "NTR24",
-      "titolo": "Benevento, divieto di sosta in via Goduti per lavori di manutenzione di una cabina",
-      "url": "https://www.ntr24.tv/2026/10/21/benevento-divieto-di-sosta-in-via-goduti-per-lavori-di-manutenzione-di-una-cabina/",
-      "data": "21 ott"
-     },
-     {
-      "nome": "Cronache del Sannio",
-      "titolo": "Divieto di sosta in via Goduti per lavori di manutenzione a una cabina",
-      "url": "https://www.cronachedelsannio.it/sannionews24/divieto-sosta-via-goduti-lavori-manutenzione-cabina/",
-      "data": "21 ott"
-     }
-    ]
-   },
-   "foto": "divieto-sosta"
   },
   {
    "id": "rifiuti-blocco-tir-apice-morcone-cusano-sant-angelo-a-cupolo",
@@ -6267,226 +5261,6 @@
    }
   },
   {
-   "id": "limatola-aggressione-volpino-misure-confermate",
-   "titolo": "Limatola, pestaggio in una sala giochi in aprile: il giudice conferma le misure per tre uomini, due restano in carcere",
-   "titolo_google": "Limatola, pestaggio in sala giochi: confermate le misure",
-   "sintesi": "Il giudice ha confermato le misure contro tre uomini indagati per un'aggressione avvenuta ad aprile a Limatola, in cui la vittima ha perso un occhio. Due restano in carcere, uno ha l'obbligo di firma.",
-   "categoria": "cronaca",
-   "zona": "telesina",
-   "luogo": "Limatola",
-   "pubblicato": "2026-10-21T08:00:00+02:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Ottopagine",
-     "url": "https://www.ottopagine.it/bn/cronaca/441592/picchiato-con-volpino-due-indagati-si-difendono-il-gip-li-lascia-in-carcere.shtml"
-    },
-    {
-     "nome": "Il Sannio Quotidiano",
-     "url": "https://www.ilsannioquotidiano.it/2026/10/21/aggredito-per-un-debito-di-droga-confermate-le-misure-cautelari-per-tre-persone/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Il giudice per le indagini preliminari ha confermato le misure cautelari (le restrizioni decise prima del processo) per tre uomini indagati per un'aggressione avvenuta ad aprile a Limatola. Dopo gli interrogatori, due restano in carcere: un 31enne di Sant'Agata de' Goti e un 58enne di Caivano. Il terzo, un 34enne di Telese Terme, resta con l'obbligo di firma.",
-      "fonti": [
-       "Ottopagine",
-       "Il Sannio Quotidiano"
-      ]
-     },
-     {
-      "testo": "L'indagine è del pubblico ministero Viviana Vacca e dei Carabinieri della Stazione di Dugenta. Secondo l'accusa, un uomo sarebbe stato picchiato nella sala giochi di Limatola, anche con un nervo di bue (una frusta), e avrebbe riportato lesioni gravissime: ha perso un occhio. Ottopagine scrive che al 58enne viene attribuito di aver chiesto più volte alla vittima di pagare un debito di gioco.",
-      "fonti": [
-       "Ottopagine"
-      ]
-     },
-     {
-      "testo": "Nell'interrogatorio i due in carcere hanno escluso di aver minacciato la vittima. Sulle ferite all'occhio hanno detto che sarebbero successe quando un «volpino» (un bastone usato come arma) fu raccolto da terra nella sala. Il giudice non ha ritenuto credibile la loro versione. Il 34enne ha detto di aver solo telefonato alla vittima per avvertirla che il 58enne la cercava, senza sapere cosa sarebbe successo. Sono tutti indagati e presunti innocenti fino a una sentenza definitiva.",
-      "fonti": [
-       "Ottopagine"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "Il giudice ha confermato le misure per tre persone dopo gli interrogatori.",
-      "fonti": [
-       "Ottopagine",
-       "Il Sannio Quotidiano"
-      ]
-     }
-    ],
-    "divergono": [
-     {
-      "testo": "Il debito che avrebbe fatto scattare l'aggressione: Ottopagine parla di un debito di gioco, il titolo de Il Sannio Quotidiano di un debito di droga. Del testo de Il Sannio Quotidiano ho letto solo il titolo; qui vale Ottopagine, che riporta l'atto del giudice.",
-      "fonti": [
-       "Ottopagine",
-       "Il Sannio Quotidiano"
-      ]
-     }
-    ],
-    "non_si_sa": [
-     "Quando comincerà un eventuale processo.",
-     "I nomi degli indagati sono stati omessi in questo articolo."
-    ],
-    "fonti": [
-     {
-      "nome": "Ottopagine",
-      "titolo": "Picchiato con 'volpino', due indagati si difendono. Il Gip li lascia in carcere",
-      "url": "https://www.ottopagine.it/bn/cronaca/441592/picchiato-con-volpino-due-indagati-si-difendono-il-gip-li-lascia-in-carcere.shtml",
-      "data": "21 ott"
-     },
-     {
-      "nome": "Il Sannio Quotidiano",
-      "titolo": "Aggredito per un debito di droga, confermate le misure cautelari per... tre persone",
-      "url": "https://www.ilsannioquotidiano.it/2026/10/21/aggredito-per-un-debito-di-droga-confermate-le-misure-cautelari-per-tre-persone/",
-      "data": "21 ott"
-     }
-    ]
-   }
-  },
-  {
-   "id": "benevento-cardiologi-fatebenefratelli-assolti",
-   "titolo": "Benevento, assolti due cardiologi del Fatebenefratelli accusati di lesioni a un paziente: il giudice dice che «il fatto non sussiste»",
-   "titolo_google": "Benevento, assolti due cardiologi del Fatebenefratelli",
-   "sintesi": "Il giudice Sergio Pezza ha assolto due cardiologi dell'ospedale Fatebenefratelli di Benevento, accusati di lesioni colpose per la cura di un 59enne di Fragneto Monforte nel gennaio 2021. Anche il pubblico ministero aveva chiesto l'assoluzione.",
-   "categoria": "cronaca",
-   "zona": "benevento",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-21T08:00:00+02:00",
-   "stato": "una_fonte",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Ottopagine",
-     "url": "https://www.ottopagine.it/bn/cronaca/441594/erano-accusati-di-aver-causato-lesioni-ad-un-paziente-assolti-due-cardiologi.shtml"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Il giudice Sergio Pezza ha assolto due cardiologi dell'ospedale Fatebenefratelli di Benevento con la formula «il fatto non sussiste». Erano accusati di lesioni colpose, cioè di aver causato un danno a un paziente per negligenza, imperizia o imprudenza. L'assoluzione è stata chiesta anche dal pubblico ministero, dopo i risultati di una perizia.",
-      "fonti": [
-       "Ottopagine"
-      ]
-     },
-     {
-      "testo": "Il paziente è un 59enne di Fragneto Monforte. Si era ricoverato l'11 gennaio 2021 e tre giorni dopo era stato operato con un'angioplastica alla coronaria destra (un intervento per riaprire un'arteria del cuore), con l'impianto di stent medicati. Fu dimesso il 15 gennaio.",
-      "fonti": [
-       "Ottopagine"
-      ]
-     },
-     {
-      "testo": "Ai due medici si contestava di non aver sospeso la metformina, un farmaco contro il diabete che il paziente prendeva, prima dell'intervento con il mezzo di contrasto e nelle 48 ore dopo. Secondo l'accusa questo avrebbe provocato il 16 gennaio 2021 un'insufficienza renale acuta con acidosi lattica (troppo acido nel sangue), mettendo in pericolo la vita dell'uomo. Il giudice ha concluso che il fatto non sussiste.",
-      "fonti": [
-       "Ottopagine"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Quando saranno depositate le motivazioni della sentenza."
-    ],
-    "fonti": [
-     {
-      "nome": "Ottopagine",
-      "titolo": "Erano accusati di aver causato lesioni ad un paziente: assolti due cardiologi",
-      "url": "https://www.ottopagine.it/bn/cronaca/441594/erano-accusati-di-aver-causato-lesioni-ad-un-paziente-assolti-due-cardiologi.shtml",
-      "data": "21 ott"
-     }
-    ]
-   }
-  },
-  {
-   "id": "san-pio-pronto-soccorso-medici-prorogati",
-   "titolo": "Benevento, ospedale San Pio: prorogati fino al 31 dicembre i contratti di sei medici del Pronto soccorso, tre dei quali in pensione",
-   "titolo_google": "Benevento, San Pio: prorogati sei medici del Pronto soccorso",
-   "sintesi": "L'azienda ospedaliera San Pio ha prorogato fino al 31 dicembre 2026 gli incarichi di sei medici del Pronto soccorso: tre lavorano nell'ambulatorio per i casi meno gravi, tre sono medici in pensione richiamati in servizio.",
-   "categoria": "altro",
-   "zona": "benevento",
-   "immagine": "pronto-soccorso",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-21T07:33:00+02:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/20/san-pio-il-pronto-soccorso-non-resta-scoperto-prorogati-sei-medici-tre-sono-pensionati-fino-a-fine-anno/"
-    },
-    {
-     "nome": "Il Sannio Quotidiano",
-     "url": "https://www.ilsannioquotidiano.it/2026/10/21/pronto-soccorso-prorogati-incarichi-a-tempo-sei-medici-tre-dei-quali-in-pensione-resteranno-fino-a-fine-anno/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Il Pronto soccorso dell'ospedale San Pio di Benevento non resta senza medici fino a fine anno. La direttrice generale dell'azienda ospedaliera, Maria Morgante, ha firmato martedì 20 ottobre due delibere, la n. 993 e la n. 994, che prorogano sei incarichi da libero professionista (contratti di lavoro non da dipendente).",
-      "fonti": [
-       "NTR24",
-       "Il Sannio Quotidiano"
-      ]
-     },
-     {
-      "testo": "La prima delibera riguarda tre medici dell'ambulatorio del Pronto soccorso per i pazienti con codice bianco e verde, cioè con problemi meno gravi. I loro contratti scadevano il 31 ottobre e ora vanno avanti fino al 31 dicembre 2026. L'ambulatorio serve a ridurre i tempi per i casi meno urgenti e a contenere il sovraffollamento del Pronto soccorso.",
-      "fonti": [
-       "NTR24"
-      ]
-     },
-     {
-      "testo": "La seconda delibera riguarda tre medici in pensione, richiamati in servizio con incarichi da libero professionista nella Medicina d'urgenza. Il Sannio Quotidiano precisa che sono specialisti in medicina di emergenza-urgenza e si occupano di tutti i codici, non solo di quelli minori. I loro contratti, firmati ad aprile per sei mesi, scadevano il 20 ottobre: la proroga vale dal 21 ottobre al 31 dicembre 2026.",
-      "fonti": [
-       "NTR24",
-       "Il Sannio Quotidiano"
-      ]
-     },
-     {
-      "testo": "In tutti e due i casi la proroga serve a coprire il servizio finché l'azienda non assume nuovi medici con le procedure ordinarie. Un'ulteriore proroga, fino a un massimo di sei mesi complessivi, sarà possibile solo se nel 2027 resteranno in vigore le norme che permettono di usare medici in pensione e questo tipo di incarichi.",
-      "fonti": [
-       "NTR24"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "Sei incarichi da libero professionista al Pronto soccorso del San Pio sono prorogati fino a fine anno: tre medici dei codici minori e tre medici in pensione.",
-      "fonti": [
-       "NTR24",
-       "Il Sannio Quotidiano"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [
-     "Quanti nuovi medici arriveranno con i concorsi e quando.",
-     "Cosa succede dopo il 31 dicembre 2026.",
-     "Del Sannio Quotidiano si legge solo l'inizio dell'articolo: il resto è a pagamento."
-    ],
-    "fonti": [
-     {
-      "nome": "NTR24",
-      "titolo": "San Pio, il Pronto Soccorso non resta scoperto: prorogati sei medici – tre sono pensionati – fino a fine anno",
-      "url": "https://www.ntr24.tv/2026/10/20/san-pio-il-pronto-soccorso-non-resta-scoperto-prorogati-sei-medici-tre-sono-pensionati-fino-a-fine-anno/",
-      "data": "20 ott, 17:12"
-     },
-     {
-      "nome": "Il Sannio Quotidiano",
-      "titolo": "Pronto soccorso, prorogati incarichi a tempo: sei medici, tre dei quali in pensione, resteranno fino a fine anno",
-      "url": "https://www.ilsannioquotidiano.it/2026/10/21/pronto-soccorso-prorogati-incarichi-a-tempo-sei-medici-tre-dei-quali-in-pensione-resteranno-fino-a-fine-anno/",
-      "data": "21 ott, 07:33"
-     }
-    ]
-   },
-   "foto": "pronto-soccorso"
-  },
-  {
    "id": "benevento-cimitero-orari-defunti",
    "titolo": "Benevento, cimitero comunale aperto dalle 7 alle 17.30 da mercoledì 28 ottobre a martedì 3 novembre per la Commemorazione dei Defunti",
    "titolo_google": "Cimitero di Benevento, orari per i Defunti dal 28 ottobre",
@@ -6554,385 +5328,6 @@
     ]
    },
    "foto": "cimitero"
-  },
-  {
-   "id": "allerta-arancione-sannio-21-ottobre",
-   "titolo": "Sannio, allerta arancione per maltempo mercoledì 21 ottobre: scuole chiuse a Benevento e in molti Comuni, chiusi anche parchi e cimiteri in diversi centri",
-   "titolo_google": "Allerta arancione nel Sannio il 21 ottobre: scuole chiuse",
-   "sintesi": "La Protezione civile ha confermato l'allerta arancione per mercoledì 21 ottobre in tutte e tre le zone del Sannio: rischio frane e temporali, soprattutto al mattino. Scuole chiuse a Benevento e in molti Comuni; a Benevento, Montesarchio, Sant'Agata de' Goti, Pietrelcina e Frasso Telesino chiusi anche parchi o cimiteri. Per giovedì 22 ottobre l'allerta scende a gialla, dalle 00 alle 16, su tutta la Campania e nelle tre zone del Sannio.",
-   "categoria": "meteo",
-   "zona": "provincia",
-   "immagine": "pioggia",
-   "luogo": "Sannio",
-   "pubblicato": "2026-10-21T16:13:00+02:00",
-   "stato": "ufficiale",
-   "rilevante": false,
-   "in_vigore_fino": "2026-10-21",
-   "fonti": [
-    {
-     "nome": "Comune di Benevento",
-     "url": "https://comune.benevento.it/novita/allerta-meteo-domani-21-ottobre-chiuse-scuole-villa-comunale-parchi-e-cimitero/"
-    },
-    {
-     "nome": "Cronache del Sannio",
-     "url": "https://www.cronachedelsannio.it/sannionews24/maltempo-allerta-meteo-arancione-scuole-chiuse-montesarchio/"
-    },
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/20/benevento-mercoledi-scuole-chiuse-per-maltempo-ordinanze-anche-in-provincia/"
-    },
-    {
-     "nome": "Fremondoweb",
-     "url": "https://www.fremondoweb.com/notizie-sannio/protezione-civile-allerta-meteo-arancione-nel-sannio/"
-    },
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/allerta-meteo-scattano-le-chiusure-per-domani-21-ottobre-ecco-tutti-i-provvedimenti/"
-    },
-    {
-     "nome": "BeneventoNews24",
-     "url": "https://www.beneventonews24.it/2026/10/20/allerta-maltempo-domani-a-benevento-scuole-chiuse/"
-    },
-    {
-     "nome": "Meteoalarm",
-     "url": "https://meteoalarm.org?geocode=EMMA_ID:IT016"
-    },
-    {
-     "nome": "Comune di Sant'Agata de' Goti",
-     "url": "https://www.comune.santagatadegoti.bn.it/novita/avvisi/novita_202.html"
-    },
-    {
-     "nome": "Comune di Pietrelcina",
-     "url": "https://www.comune.pietrelcina.bn.it/novita/avvisi/novita_375.html"
-    },
-    {
-     "nome": "Comune di Guardia Sanframondi",
-     "url": "https://www.comune.guardiasanframondi.bn.it/novita/avvisi/novita_205.html"
-    },
-    {
-     "nome": "Protezione civile (bollettino)",
-     "url": "https://notiziebenevento.it/meteo.json"
-    },
-    {
-     "nome": "Comune di Frasso Telesino",
-     "url": "https://comune.frassotelesino.bn.it/novita/allerta-meteo-chiusura-scuole-21-10-2026/"
-    },
-    {
-     "nome": "Comune di Moiano",
-     "url": "https://www.comune.moiano.bn.it/novita/notizie/novita_52.html"
-    },
-    {
-     "nome": "Il Sannio Quotidiano",
-     "url": "https://www.ilsannioquotidiano.it/2026/10/21/allerta-meteo-scuole-chiuse-in-diversi-centri-della-provincia/"
-    },
-    {
-     "nome": "NTR24 (allerta 22)",
-     "url": "https://www.ntr24.tv/2026/10/21/sannio-allerta-meteo-gialla-fino-a-giovedi-pomeriggio-piogge-in-diminuzione-gia-dal-mattino/"
-    },
-    {
-     "nome": "Protezione civile (bollettino 21/10)",
-     "url": "https://notiziebenevento.it/meteo.json"
-    }
-   ],
-   "articolo": {
-    "cronologia": [
-     {
-      "data": "20 ottobre, 12:09",
-      "fatto": "Meteoalarm aggiorna gli avvisi per la Campania: arancione per pioggia e temporali dalle 02:00 alle 19:59 di mercoledì 21, gialla per vento dalle 08:00 del 21 all'01:59 del 22.",
-      "fonti": [
-       "Meteoalarm"
-      ]
-     },
-     {
-      "data": "20 ottobre",
-      "fatto": "Il sindaco di Montesarchio, Carmelo Sandomenico, firma l'ordinanza n. 34 con la chiusura per mercoledì di tutte le scuole, della villa comunale, dei parchi e del cimitero (garantiti i funerali).",
-      "fonti": [
-       "Cronache del Sannio",
-       "NTR24"
-      ]
-     },
-     {
-      "data": "20 ottobre",
-      "fatto": "Il sindaco di Benevento, Clemente Mastella, firma l'ordinanza: per mercoledì 21 chiudono scuole pubbliche, private e paritarie di ogni ordine e grado, asili nido compresi (esclusi Conservatorio «N. Sala» e Università, che decidono da sé), villa comunale, parchi cittadini e cimitero, con funerali e attività interne urgenti garantiti.",
-      "fonti": [
-       "Comune di Benevento",
-       "Anteprima24",
-       "NTR24",
-       "BeneventoNews24"
-      ]
-     },
-     {
-      "data": "20 ottobre",
-      "fatto": "Anche i Comuni di Sant'Agata de' Goti (ordinanza n. 77: chiusi scuole, parchi e cimiteri, attivato il centro operativo comunale) e di Pietrelcina (ordinanza n. 27: chiusi scuole, cimitero, impianti sportivi, parchi e ville comunali) chiudono per mercoledì 21.",
-      "fonti": [
-       "Comune di Sant'Agata de' Goti",
-       "Comune di Pietrelcina"
-      ]
-     },
-     {
-      "data": "20 ottobre, 15:21",
-      "fatto": "Esce il bollettino della Protezione civile nazionale per il 21 ottobre: arancione per rischio frane nelle zone «Alta Irpinia e Sannio», «Alto Volturno e Matese» e «Penisola sorrentino-amalfitana, Monti di Sarno e Monti Picentini» (in quest'ultima gialla per il rischio fiumi).",
-      "fonti": [
-       "Protezione civile (bollettino)"
-      ]
-     },
-     {
-      "data": "20 ottobre",
-      "fatto": "Il Comune di Guardia Sanframondi pubblica l'ordinanza sindacale n. 8 del 20 ottobre 2026: chiusura delle scuole di ogni ordine e grado.",
-      "fonti": [
-       "Comune di Guardia Sanframondi"
-      ]
-     },
-     {
-      "data": "20 ottobre",
-      "fatto": "Il Comune di Frasso Telesino pubblica l'ordinanza n. 26: per mercoledì 21 chiudono scuole di ogni ordine e grado, cimitero e villette giochi. Il Comune di Moiano pubblica l'ordinanza di chiusura delle scuole.",
-      "fonti": [
-       "Comune di Frasso Telesino",
-       "Comune di Moiano"
-      ]
-     },
-     {
-      "data": "21 ottobre",
-      "fatto": "La Regione Campania emette l'allerta gialla per giovedì 22 ottobre, dalle 00 alle 16, su tutta la regione.",
-      "fonti": [
-       "NTR24 (allerta 22)"
-      ]
-     },
-     {
-      "data": "21 ottobre, 14:36",
-      "fatto": "Esce il bollettino della Protezione civile nazionale per il 22 ottobre: gialla per rischio frane nelle tre zone del Sannio.",
-      "fonti": [
-       "Protezione civile (bollettino 21/10)"
-      ]
-     }
-    ],
-    "concordano": [
-     {
-      "testo": "Allerta arancione della Protezione civile regionale dalla mezzanotte e per tutta la giornata di mercoledì 21 ottobre, con piogge e temporali anche forti soprattutto nella prima parte della giornata, per le zone 1, 2, 3 e 4 della Campania; sul resto della regione è gialla.",
-      "fonti": [
-       "Cronache del Sannio",
-       "NTR24",
-       "Fremondoweb",
-       "BeneventoNews24"
-      ]
-     },
-     {
-      "testo": "Rischi indicati: frane e caduta di massi (anche dove gli incendi dei boschi hanno indebolito il terreno), allagamenti di cantine e piani terra, acqua sulle strade, corsi d'acqua minori che si alzano. Ai sindaci si raccomanda di attivare i centri operativi comunali.",
-      "fonti": [
-       "Cronache del Sannio",
-       "NTR24"
-      ]
-     },
-     {
-      "testo": "Montesarchio: scuole di ogni ordine e grado, villa comunale, parchi e cimitero chiusi mercoledì 21 ottobre.",
-      "fonti": [
-       "Cronache del Sannio",
-       "NTR24"
-      ]
-     },
-     {
-      "testo": "Benevento: scuole di ogni ordine e grado (asili nido compresi), villa comunale, parchi e cimitero chiusi mercoledì 21 ottobre; esclusi Conservatorio e Università; funerali garantiti. Il sindaco invita alla prudenza per rischio frane e raffiche di vento.",
-      "fonti": [
-       "Comune di Benevento",
-       "Anteprima24",
-       "NTR24"
-      ]
-     },
-     {
-      "testo": "Sant'Agata de' Goti (zona «Alto Volturno e Matese»): ordinanza del sindaco per mercoledì 21 ottobre dalle 00:00 alle 23:59, con chiusura di scuole, parchi e cimiteri e attivazione del centro operativo comunale. Pietrelcina: ordinanza n. 27 con chiusura di scuole, cimitero, impianti sportivi, parchi e ville comunali.",
-      "fonti": [
-       "Comune di Sant'Agata de' Goti",
-       "Comune di Pietrelcina"
-      ]
-     },
-     {
-      "testo": "Il bollettino nazionale della Protezione civile (ore 15:21 del 20 ottobre) dà arancione per rischio frane nelle tre zone del Sannio; Meteoalarm conferma arancione per pioggia e temporali dalle 02:00 alle 19:59 del 21 e gialla per vento dalle 08:00 del 21 all'01:59 del 22.",
-      "fonti": [
-       "Protezione civile (bollettino)",
-       "Meteoalarm"
-      ]
-     },
-     {
-      "testo": "Guardia Sanframondi (zona «Alto Volturno e Matese»): l'ordinanza sindacale n. 8 del 20 ottobre chiude le scuole di ogni ordine e grado; dal titolo dell'avviso non risulta se chiudano anche parchi e cimitero.",
-      "fonti": [
-       "Comune di Guardia Sanframondi"
-      ]
-     }
-    ],
-    "divergono": [
-     {
-      "testo": "Cronache del Sannio scrive che la chiusura di Montesarchio è dovuta a un'allerta «gialla», mentre l'avviso regionale che lo stesso articolo riporta è arancione anche per la zona del Sannio. Meteoalarm dà arancione per pioggia e temporali dalle 02:00 alle 19:59, i giornali parlano di tutta la giornata.",
-      "fonti": [
-       "Cronache del Sannio",
-       "Meteoalarm"
-      ]
-     }
-    ],
-    "non_si_sa": [
-     "Cosa chiudono, oltre alle scuole, i Comuni elencati solo dai giornali (Airola, Paolisi, Arpaia, Telese Terme, Limatola e gli altri): parchi, cimiteri e impianti sportivi non sono precisati.",
-     "Se giovedì 22 ottobre ci saranno chiusure di scuole o parchi: nei siti dei Comuni letti alle 16 non ci sono ordinanze di chiusura per quel giorno, tranne la scuola «Foscolo» di Montesarchio chiusa per la sanificazione (non per l'allerta)."
-    ],
-    "fonti": [
-     {
-      "nome": "Comune di Benevento",
-      "titolo": "Allerta meteo, domani 21 ottobre chiuse le scuole, la villa comunale, i parchi e il cimitero",
-      "url": "https://comune.benevento.it/novita/allerta-meteo-domani-21-ottobre-chiuse-scuole-villa-comunale-parchi-e-cimitero/",
-      "data": "20 ott"
-     },
-     {
-      "nome": "Cronache del Sannio",
-      "titolo": "Maltempo, allerta meteo arancione domani: attesi provvedimenti, scuole chiuse a Montesarchio",
-      "url": "https://www.cronachedelsannio.it/sannionews24/maltempo-allerta-meteo-arancione-scuole-chiuse-montesarchio/",
-      "data": "20 ott"
-     },
-     {
-      "nome": "NTR24",
-      "titolo": "Benevento, mercoledì scuole chiuse per maltempo. Ordinanze anche in provincia",
-      "url": "https://www.ntr24.tv/2026/10/20/benevento-mercoledi-scuole-chiuse-per-maltempo-ordinanze-anche-in-provincia/",
-      "data": "20 ott"
-     },
-     {
-      "nome": "Fremondoweb",
-      "titolo": "Protezione Civile, allerta meteo arancione nel Sannio",
-      "url": "https://www.fremondoweb.com/notizie-sannio/protezione-civile-allerta-meteo-arancione-nel-sannio/",
-      "data": "20 ott"
-     },
-     {
-      "nome": "Anteprima24",
-      "titolo": "Allerta meteo, scattano le chiusure per domani 21 ottobre: ecco tutti i provvedimenti",
-      "url": "https://www.anteprima24.it/benevento/allerta-meteo-scattano-le-chiusure-per-domani-21-ottobre-ecco-tutti-i-provvedimenti/",
-      "data": "20 ott"
-     },
-     {
-      "nome": "BeneventoNews24",
-      "titolo": "Allerta maltempo, domani a Benevento scuole chiuse",
-      "url": "https://www.beneventonews24.it/2026/10/20/allerta-maltempo-domani-a-benevento-scuole-chiuse/",
-      "data": "20 ott"
-     },
-     {
-      "nome": "Meteoalarm",
-      "titolo": "Orange Rain Warning / Orange Thunderstorm Warning / Yellow Wind Warning – Campania",
-      "url": "https://meteoalarm.org?geocode=EMMA_ID:IT016",
-      "data": "20 ott, 12:09"
-     },
-     {
-      "nome": "Comune di Sant'Agata de' Goti",
-      "titolo": "Allerta Meteo ARANCIONE dalle ore 00:00 alle 23:59 di Mercoledì 21 Ottobre 2026-Ordinanza chiusura scuole, parchi e cimiteri ed Attivazione COC",
-      "url": "https://www.comune.santagatadegoti.bn.it/novita/avvisi/novita_202.html",
-      "data": "20 ott"
-     },
-     {
-      "nome": "Comune di Pietrelcina",
-      "titolo": "Ordinanza N. 27/2026 - Chiusura scuole, cimitero comunale, impianti sportivi, parchi e ville per il giorno 21/10/2026",
-      "url": "https://www.comune.pietrelcina.bn.it/novita/avvisi/novita_375.html",
-      "data": "20 ott"
-     },
-     {
-      "nome": "Comune di Guardia Sanframondi",
-      "titolo": "Ordinanza Sindacale n.08 del 20-10-2026 Chiusura Scuole ogni ordine e grado",
-      "url": "https://www.comune.guardiasanframondi.bn.it/novita/avvisi/novita_205.html",
-      "data": "20 ott"
-     },
-     {
-      "nome": "Protezione civile (bollettino)",
-      "titolo": "Bollettino del 20 ottobre 2026 ore 15:21 (dati ripresi dal sito meteo di Notizie Benevento)",
-      "url": "https://notiziebenevento.it/meteo.json",
-      "data": "20 ott, 15:21"
-     },
-     {
-      "nome": "Comune di Frasso Telesino",
-      "titolo": "Allerta meteo-idrogeologica e idraulica: avviso alla cittadinanza per mercoledì 21 ottobre 2026",
-      "url": "https://comune.frassotelesino.bn.it/novita/allerta-meteo-chiusura-scuole-21-10-2026/",
-      "data": "20 ott"
-     },
-     {
-      "nome": "Comune di Moiano",
-      "titolo": "Avviso di allerta meteo-idrogeologica ed idraulica, n. 87/2026 - Chiusura scuole statali di ogni ordine e grado per il 21/10/2026.",
-      "url": "https://www.comune.moiano.bn.it/novita/notizie/novita_52.html",
-      "data": "20 ott"
-     },
-     {
-      "nome": "Il Sannio Quotidiano",
-      "titolo": "Allerta meteo, scuole chiuse in diversi centri della provincia",
-      "url": "https://www.ilsannioquotidiano.it/2026/10/21/allerta-meteo-scuole-chiuse-in-diversi-centri-della-provincia/",
-      "data": "21 ott"
-     },
-     {
-      "nome": "NTR24 (allerta 22)",
-      "titolo": "Sannio, allerta meteo gialla fino a giovedì pomeriggio. Piogge in diminuzione già dal mattino",
-      "url": "https://www.ntr24.tv/2026/10/21/sannio-allerta-meteo-gialla-fino-a-giovedi-pomeriggio-piogge-in-diminuzione-gia-dal-mattino/",
-      "data": "21 ott"
-     },
-     {
-      "nome": "Protezione civile (bollettino 21/10)",
-      "titolo": "Bollettino del 21 ottobre 2026 ore 14:36 (dati ripresi dal sito meteo di Notizie Benevento)",
-      "url": "https://notiziebenevento.it/meteo.json",
-      "data": "21 ott, 14:36"
-     }
-    ],
-    "racconto": [
-     {
-      "testo": "Mercoledì 21 ottobre nel Sannio c'è l'allerta arancione della Protezione civile per frane e temporali. Il bollettino nazionale delle 15:21 di martedì 20 ottobre dà arancione per il rischio frane nelle tre zone di allerta in cui sono divisi i 78 Comuni del Sannio. Nella zona che comprende Arpaia, Forchia, Pannarano e Paolisi è gialla anche l'allerta per i fiumi che si gonfiano.",
-      "fonti": [
-       "Protezione civile (bollettino)"
-      ]
-     },
-     {
-      "testo": "L'avviso della Protezione civile regionale vale dalla mezzanotte e per tutta la giornata di mercoledì, per quattro zone della Campania; sul resto della regione l'allerta è gialla. Sono previste piogge e temporali, anche forti, soprattutto nella prima parte della giornata. I rischi indicati sono frane e caduta di massi, anche dove gli incendi dei boschi hanno indebolito il terreno, allagamenti di cantine e piani terra, acqua sulle strade e piccoli corsi d'acqua che si alzano. Ai sindaci è raccomandato di attivare i centri operativi comunali.",
-      "fonti": [
-       "Cronache del Sannio",
-       "NTR24",
-       "Fremondoweb",
-       "BeneventoNews24"
-      ]
-     },
-     {
-      "testo": "Meteoalarm, il servizio europeo con i dati della Protezione civile, conferma l'arancione per pioggia e temporali dalle 02:00 alle 19:59 di mercoledì. Aggiunge un'allerta gialla per il vento, dalle 08:00 di mercoledì all'01:59 di giovedì 22. Bollettino e Meteoalarm concordano.",
-      "fonti": [
-       "Meteoalarm",
-       "Protezione civile (bollettino)"
-      ]
-     },
-     {
-      "testo": "A Benevento il sindaco Clemente Mastella ha chiuso per mercoledì le scuole pubbliche, private e paritarie di ogni ordine e grado, asili nido compresi, la villa comunale, i parchi cittadini e il cimitero, dove restano garantiti i funerali e le attività interne urgenti. Il Conservatorio «N. Sala» e l'Università decidono da sé. Secondo NTR24 l'Università del Sannio sospende le attività in presenza in tutte le sedi, tranne i laboratori indifferibili, e i servizi agli studenti sono a distanza. Il sindaco invita alla prudenza per il rischio frane e le raffiche di vento.",
-      "fonti": [
-       "Comune di Benevento",
-       "Anteprima24",
-       "NTR24",
-       "BeneventoNews24"
-      ]
-     },
-     {
-      "testo": "A Montesarchio il sindaco Carmelo Sandomenico ha firmato l'ordinanza n. 34: chiusi scuole, villa comunale, parchi e cimitero, con i funerali garantiti. A Sant'Agata de' Goti l'ordinanza (n. 77, dalle 00:00 alle 23:59) chiude scuole, parchi e cimiteri e attiva il centro operativo comunale. A Pietrelcina l'ordinanza n. 27 chiude scuole, cimitero, impianti sportivi, parchi e ville comunali. A Guardia Sanframondi l'ordinanza n. 8 chiude le scuole di ogni ordine e grado. A Frasso Telesino l'ordinanza n. 26 del 20 ottobre chiude le scuole di ogni ordine e grado, il cimitero e le villette giochi. A Moiano un'ordinanza chiude le scuole statali di ogni ordine e grado.",
-      "fonti": [
-       "Cronache del Sannio",
-       "NTR24",
-       "Comune di Sant'Agata de' Goti",
-       "Comune di Pietrelcina",
-       "Comune di Guardia Sanframondi",
-       "Comune di Frasso Telesino",
-       "Comune di Moiano"
-      ]
-     },
-     {
-      "testo": "NTR24 elenca altri Comuni con le scuole chiuse. In Valle Caudina: Airola, Paolisi e Arpaia. In Valle Telesina e nell'area del Titerno: Telese Terme, Solopaca, Dugenta, Melizzano, Faicchio, San Lorenzello, Castelvenere, Cerreto Sannita, San Lorenzo Maggiore, Limatola e Durazzano. Nell'area del Taburno e del Vitulanese: Apollosa e Cautano. Tra Fortore e Alto Tammaro: San Marco dei Cavoti, Pesco Sannita, Colle Sannita e Circello. Il Sannio Quotidiano di mercoledì 21 conferma che le scuole restano chiuse a Benevento, Sant'Agata de' Goti, Limatola, Frasso Telesino, Moiano e Arpaia, e scrive che altri enti non hanno preso misure particolari. Di questi Comuni, oltre a quelli citati sopra, non ho letto le ordinanze sul sito comunale: l'elenco viene dai giornali.",
-      "fonti": [
-       "NTR24",
-       "Il Sannio Quotidiano"
-      ]
-     },
-     {
-      "testo": "Giovedì 22 ottobre l'allerta scende a gialla. Il bollettino nazionale della Protezione civile delle 14:36 di mercoledì 21 dà giallo, per il rischio frane, in tutte e tre le zone del Sannio. La Protezione civile della Regione Campania ha emesso un avviso giallo valido dalle 00 alle 16 su tutta la regione: piogge isolate, anche a rovescio o temporale, che nelle zone 2 («Alto Volturno e Matese») e 4 («Alta Irpinia e Sannio») dovrebbero finire in mattinata. Il rischio indicato è localizzato: acqua che scorre sulle strade, tombini che rigurgitano, allagamenti nelle zone basse e piccoli corsi d'acqua che si alzano. Meteoalarm dà per il 22 solo allerta gialla per il vento, dalle 02:00 alle 19:59. Il Comune di Sant'Agata de' Goti ha pubblicato l'avviso dell'allerta gialla e non risultano chiusure per giovedì.",
-      "fonti": [
-       "NTR24 (allerta 22)",
-       "Meteoalarm",
-       "Protezione civile (bollettino 21/10)",
-       "Comune di Sant'Agata de' Goti"
-      ]
-     }
-    ]
-   },
-   "foto": "pioggia"
   },
   {
    "id": "asia-ecocentro-chiuso-protesta",
@@ -7391,130 +5786,6 @@
    "foto": "treno-2"
   },
   {
-   "id": "droga-montesarchio-due-arresti",
-   "titolo": "Montesarchio, sequestrati oltre un chilo e mezzo di hashish e marijuana: arrestati due giovani di Acerra",
-   "titolo_google": "Montesarchio, oltre 1,5 kg di droga: arrestati due di Acerra",
-   "sintesi": "I Carabinieri della Compagnia di Montesarchio hanno fermato sulla statale Appia due giovani di Acerra, di 19 e 23 anni, e nella loro auto hanno trovato più di un chilo e mezzo tra hashish e marijuana. Sono ai domiciliari in attesa della convalida davanti al giudice.",
-   "categoria": "cronaca",
-   "zona": "caudina",
-   "luogo": "Montesarchio",
-   "pubblicato": "2026-10-21",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/20/droga-lungo-lasse-napoli-valle-caudina-sequestrato-oltre-un-kg-e-mezzo-di-hashish-e-marijuana-due-arresti/"
-    },
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/blitz-antidroga-dei-carabinieri-sequestrato-oltre-un-chilo-e-mezzo-di-hashish-e-marijuana/"
-    },
-    {
-     "nome": "Il Mattino",
-     "url": "https://www.ilmattino.it/benevento/benevento_arrestati_due_uomini_per_possesso_droga_sull_asse_napoli_montesarchio_l_intervento_dei_carabinieri-9836926.html"
-    },
-    {
-     "nome": "Ottopagine",
-     "url": "https://www.ottopagine.it/bn/cronaca/441579/un-chilo-e-mezzo-di-hashish-e-marijuana-arrestati-19enne-e-23enne-di-acerra.shtml"
-    },
-    {
-     "nome": "Il Sannio Quotidiano",
-     "url": "https://www.ilsannioquotidiano.it/2026/10/21/beccati-con-oltre-un-chilo-di-droga-lungo-lasse-montesarchio-napoli-due-persone-in-manette/"
-    }
-   ],
-   "articolo": {
-    "cronologia": [
-     {
-      "data": "20 ottobre",
-      "fatto": "I Carabinieri rendono noto il sequestro e i due arresti; i due sono ai domicili in attesa della convalida davanti al giudice.",
-      "fonti": [
-       "NTR24",
-       "Anteprima24"
-      ]
-     }
-    ],
-    "concordano": [
-     {
-      "testo": "Due arrestati dai Carabinieri della Compagnia di Montesarchio e oltre un chilo e mezzo tra hashish e marijuana sequestrati; i due sono ai domiciliari.",
-      "fonti": [
-       "NTR24",
-       "Anteprima24",
-       "Ottopagine",
-       "Il Sannio Quotidiano"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [
-     "Il giorno preciso del controllo: NTR24 e Anteprima24 danno la notizia il 20 ottobre, Ottopagine scrive «alcuni giorni fa».",
-     "Quando ci sarà l'udienza di convalida e cosa deciderà il giudice."
-    ],
-    "fonti": [
-     {
-      "nome": "NTR24",
-      "titolo": "Droga lungo l’asse Napoli-Valle Caudina: sequestrato oltre un kg e mezzo di hashish e marijuana. Due arresti",
-      "url": "https://www.ntr24.tv/2026/10/20/droga-lungo-lasse-napoli-valle-caudina-sequestrato-oltre-un-kg-e-mezzo-di-hashish-e-marijuana-due-arresti/",
-      "data": "20 ott, 09:26"
-     },
-     {
-      "nome": "Anteprima24",
-      "titolo": "Blitz antidroga dei Carabinieri: sequestrato oltre un chilo e mezzo di hashish e marijuana",
-      "url": "https://www.anteprima24.it/benevento/blitz-antidroga-dei-carabinieri-sequestrato-oltre-un-chilo-e-mezzo-di-hashish-e-marijuana/",
-      "data": "20 ott, 09:23"
-     },
-     {
-      "nome": "Ottopagine",
-      "titolo": "Un chilo e mezzo di hashish e marijuana, arrestati 19enne e 23enne di Acerra",
-      "url": "https://www.ottopagine.it/bn/cronaca/441579/un-chilo-e-mezzo-di-hashish-e-marijuana-arrestati-19enne-e-23enne-di-acerra.shtml",
-      "data": "21 ott"
-     },
-     {
-      "nome": "Il Sannio Quotidiano",
-      "titolo": "Beccati con oltre un chilo di droga lungo l’asse Montesarchio-Napoli, due persone in manette",
-      "url": "https://www.ilsannioquotidiano.it/2026/10/21/beccati-con-oltre-un-chilo-di-droga-lungo-lasse-montesarchio-napoli-due-persone-in-manette/",
-      "data": "21 ott"
-     }
-    ],
-    "racconto": [
-     {
-      "testo": "I Carabinieri del Nucleo operativo e radiomobile della Compagnia di Montesarchio hanno arrestato due giovani di Acerra, in provincia di Napoli, di 19 e 23 anni, e hanno sequestrato più di un chilo e mezzo tra hashish e marijuana. Lo hanno reso noto martedì 20 ottobre.",
-      "fonti": [
-       "NTR24",
-       "Anteprima24",
-       "Ottopagine",
-       "Il Sannio Quotidiano"
-      ]
-     },
-     {
-      "testo": "Secondo Ottopagine i due sono stati fermati alcuni giorni fa mentre viaggiavano in auto sulla statale Appia, nel tratto che attraversa il Sannio. I militari hanno controllato l'auto e fatto una perquisizione, e così hanno trovato la droga, che per loro era probabilmente destinata allo spaccio.",
-      "fonti": [
-       "Ottopagine",
-       "NTR24",
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "Ai due è contestata, allo stato degli atti, la detenzione di droga ai fini di spaccio. Dopo un passaggio in caserma sono stati portati nelle loro case: Ottopagine scrive che i domiciliari li ha disposti la Procura, NTR24 e Anteprima24 che è la misura in attesa dell'udienza di convalida davanti al giudice per le indagini preliminari, che deciderà se l'arresto è valido.",
-      "fonti": [
-       "Ottopagine",
-       "NTR24",
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "I Carabinieri spiegano che l'operazione fa parte dei controlli del Comando provinciale di Benevento contro lo spaccio lungo la strada tra Napoli e Montesarchio. I due sono da considerare innocenti fino a una sentenza definitiva.",
-      "fonti": [
-       "NTR24",
-       "Anteprima24",
-       "Il Sannio Quotidiano"
-      ]
-     }
-    ],
-    "aggiornato": "2026-10-21T22:32+02:00"
-   }
-  },
-  {
    "id": "pago-veiano-lite-ferito-marito",
    "titolo": "Pago Veiano, 72enne accoltellato in casa: la moglie di 55 anni, arrestata per tentato omicidio, va ai domiciliari",
    "titolo_google": "Pago Veiano, 72enne accoltellato: la moglie ai domiciliari",
@@ -7765,9 +6036,9 @@
   },
   {
    "id": "tir-appia-telesina",
-   "titolo": "Caro gasolio, tir fermi sull'Appia a Tufara Valle e a Castel del Lago, blocchi anche sulla Telesina a San Salvatore Telesino",
-   "titolo_google": "Tir fermi sull'Appia e sulla Telesina per il caro gasolio",
-   "sintesi": "Dal 19 ottobre gli autotrasportatori protestano contro il prezzo del gasolio e i blocchi continuano per la seconda notte: tre presìdi a Castel del Lago, a Tufara Valle sull'Appia e a San Salvatore Telesino sulla Telesina. Da giovedì 22 si aggiungono gli agricoltori. Giovedì 22 il Governo ha approvato il decreto «Aiuti» e Meloni ha detto che le associazioni hanno revocato i fermi, mentre in alcune zone i blocchi continuano. In serata la Prefettura di Avellino ha comunicato la rimozione dei blocchi, compresi i piazzali dell'A16 nel Sannio. Venerdì 23 mattina nuovo presidio di agricoltori e autotrasportatori sulla statale 87. Verso le 13 gli agricoltori hanno sospeso i presìdi in vista della manifestazione del 27 ottobre a Roma.",
+   "titolo": "Caro gasolio, nel Sannio sospesi i presìdi di tir e agricoltori: la protesta prosegue a Roma il 27 ottobre",
+   "titolo_google": "Sannio, sospesi i presìdi di tir e agricoltori: ora Roma",
+   "sintesi": "Nel primo pomeriggio di venerdì 23 ottobre sono stati sospesi anche gli ultimi presìdi di tir e agricoltori nel Sannio, sulla statale 87, sulla 212 e a Ponte delle Tavole. La protesta contro il caro carburante continua a Roma il 27 ottobre; a Benevento tornano merci e carburante, ma la ripresa sarà graduale.",
    "categoria": "strade",
    "zona": "provincia",
    "immagine": "camion",
@@ -7878,15 +6149,24 @@
     {
      "nome": "Ottopagine (23/10 pomeriggio)",
      "url": "https://www.ottopagine.it/bn/cronaca/441963/caro-carburante-gli-agricoltori-protesta-solo-sospesa-ora-iniziative-comuni.shtml"
+    },
+    {
+     "nome": "Il Mattino (24/10)",
+     "url": "https://www.ilmattino.it/benevento/protesta_autotrasportatori_a_benevento_carovita_e_crisi_carburanti_i_tir_lasciano_libere_le_strade_della_provincia-9844404.html"
+    },
+    {
+     "nome": "Il Mattino (24/10, ripresa)",
+     "url": "https://www.ilmattino.it/benevento/tornano_carichi_e_cisterne_a_benevento_ossigeno_anche_nei_mercati_cittadini_la_ripresa_sara_graduale-9844407.html"
     }
    ],
    "articolo": {
     "aggiornamento": {
-     "testo": "Venerdì 23 ottobre verso le 13 gli agricoltori hanno sospeso i presìdi sulla statale 87, sulla 212 e a Ponte delle Tavole, in vista della manifestazione nazionale del 27 ottobre a Roma.",
+     "testo": "Venerdì 23 ottobre nel Sannio i presìdi sono stati tutti sciolti o sospesi, e a Benevento sono tornati merci e carburante; la protesta proseguirà a Roma il 27 ottobre.",
      "fonti": [
-      "Ottopagine (23/10 pomeriggio)"
+      "Il Mattino (24/10)",
+      "Il Mattino (24/10, ripresa)"
      ],
-     "quando": "2026-10-23T16:16+02:00"
+     "quando": "2026-10-24T06:10+02:00"
     },
     "aggiornato": "2026-10-20T09:25:00+02:00",
     "cronologia": [
@@ -8056,6 +6336,13 @@
       "fonti": [
        "Ottopagine (23/10 pomeriggio)"
       ]
+     },
+     {
+      "data": "23 ottobre, primo pomeriggio",
+      "fatto": "Sospesi i presìdi di Torrepalazzo (statale 87), della statale 212 a San Marco dei Cavoti e di Ponte delle Tavole.",
+      "fonti": [
+       "Il Mattino (24/10)"
+      ]
      }
     ],
     "concordano": [
@@ -8119,7 +6406,7 @@
     "non_si_sa": [
      "Quanto durerà la protesta: gli autotrasportatori dicono che andranno avanti, nessuno indica una data di fine.",
      "Cosa è uscito dal tavolo di martedì 20 a Milano con il ministro Salvini.",
-     "Se i presìdi rimasti (casello di Benevento, Appia, Ponte delle Tavole, statale 87) sono stati tolti dopo il comunicato della Prefettura di Avellino."
+     "Se le proteste riprenderanno nel Sannio dopo la manifestazione del 27 ottobre a Roma o con lo sciopero generale del 30 ottobre."
     ],
     "fonti": [
      {
@@ -8331,9 +6618,42 @@
       "titolo": "Caro carburanti. Gli agricoltori: protesta solo sospesa, ora iniziative comuni",
       "url": "https://www.ottopagine.it/bn/cronaca/441963/caro-carburante-gli-agricoltori-protesta-solo-sospesa-ora-iniziative-comuni.shtml",
       "data": "23 ott, 15:21"
+     },
+     {
+      "nome": "Il Mattino (24/10)",
+      "titolo": "Protesta autotrasportatori a Benevento, carovita e crisi carburanti: i tir lasciano libere le strade della provincia",
+      "url": "https://www.ilmattino.it/benevento/protesta_autotrasportatori_a_benevento_carovita_e_crisi_carburanti_i_tir_lasciano_libere_le_strade_della_provincia-9844404.html",
+      "data": "24 ott, 00:05"
+     },
+     {
+      "nome": "Il Mattino (24/10, ripresa)",
+      "titolo": "Tornano carichi e cisterne a Benevento, ossigeno anche nei mercati cittadini: «La ripresa sarà graduale»",
+      "url": "https://www.ilmattino.it/benevento/tornano_carichi_e_cisterne_a_benevento_ossigeno_anche_nei_mercati_cittadini_la_ripresa_sara_graduale-9844407.html",
+      "data": "24 ott, 00:10"
      }
     ],
     "racconto": [
+     {
+      "testo": "Secondo Il Mattino i presìdi che avevano paralizzato i trasporti nel Sannio sono ormai tutti sciolti o sospesi: dalla statale 372 Telesina al casello di Benevento sull'A16 a Castel del Lago, fino alla statale 7 Appia. Nel primo pomeriggio di venerdì 23 sono stati sospesi anche quelli di Torrepalazzo sulla statale 87, della statale 212 Fortorina a San Marco dei Cavoti e di Ponte delle Tavole, perché la protesta proseguirà a Roma il 27 ottobre. Gli organizzatori dicono che la protesta «non si ferma ma si unisce e si organizza»; il giornale scrive che potrebbe riprendere in vista dello sciopero generale del 30 ottobre, sul quale in rete girano appelli.",
+      "fonti": [
+       "Il Mattino (24/10)"
+      ],
+      "giorno": "2026-10-24"
+     },
+     {
+      "testo": "A Benevento la vita torna alla normalità un po' alla volta. Da venerdì con la fine dei blocchi sono arrivati in città i primi carichi di merce e le autocisterne, e dal pomeriggio tutte le stazioni di servizio hanno riaperto, con lunghe file di auto. Nei mercati rionali sono tornati pesce, frutta e verdura. Nei supermercati gli scaffali vuoti non si riempiono subito: sono stati chiamati autisti e dipendenti delle piattaforme logistiche per caricare in fretta surgelati, carni, latticini e formaggi. Il direttore di IperConad, Luigi Micco, dice che sabato i supermercati in franchising saranno riforniti anche di frutta, verdura e generi di prima necessità, e invita a non fare spese massicce.",
+      "fonti": [
+       "Il Mattino (24/10, ripresa)"
+      ],
+      "giorno": "2026-10-24"
+     },
+     {
+      "testo": "Resta la delusione per le risposte del governo. Il Consiglio dei ministri ha stanziato con un decreto 175 milioni di euro per trasportatori, agricoltori e pescatori, e la Regione Campania nei giorni scorsi 20 milioni, ma l'agricoltore Gabriele Forte, dal presidio della statale 87, le chiama «poco più di un'elemosina» perché le imprese non hanno liquidità. Chiede alla Regione un tavolo per «una filiera vera».",
+      "fonti": [
+       "Il Mattino (24/10)"
+      ],
+      "giorno": "2026-10-24"
+     },
      {
       "testo": "Venerdì 23 ottobre verso le 13 gli organizzatori dei tre presìdi degli agricoltori del Beneventano (statale 87, statale 212 e Ponte delle Tavole) hanno deciso di sospenderli temporaneamente, in vista della manifestazione nazionale del 27 ottobre a Roma con agricoltori e autotrasportatori. Per loro non è la fine della protesta: dopo il 27 valuteranno nuove mosse in base alle risposte delle istituzioni.",
       "fonti": [
@@ -8529,7 +6849,7 @@
      }
     ]
    },
-   "rilevante": true,
+   "rilevante": false,
    "foto": "camion"
   },
   {
