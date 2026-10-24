@@ -1,7 +1,143 @@
 {
- "aggiornato": "2026-10-24T21:07+02:00",
+ "aggiornato": "2026-10-24T22:09+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "arezzo-benevento-0-3-24-ottobre",
+   "titolo": "Serie B, Arezzo-Benevento 0-3: reti di Siatounis, Okereke e Mignani",
+   "titolo_google": "Serie B: Arezzo-Benevento 0-3, il Benevento sale a 14 punti",
+   "sintesi": "Sabato 24 ottobre il Benevento ha battuto 3-0 l'Arezzo nell'ottava giornata di Serie B, con tutti i gol nel secondo tempo: Siatounis, Okereke e Mignani. I giallorossi salgono a 14 punti.",
+   "categoria": "sport",
+   "sport": "calcio",
+   "zona": "benevento",
+   "luogo": "Arezzo",
+   "pubblicato": "2026-10-24T21:40:00+02:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Benevento Calcio",
+     "url": "https://www.beneventocalcio.club/news/notizie/7673/serie-bkt-2026-2027-arezzo-benevento-0-3-il-tabellino-della-gara.shtml"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/arezzo-benevento-ripresa-sballo-strega-conquista-tre-punti/"
+    },
+    {
+     "nome": "NTR24 Sport",
+     "url": "https://sport.ntr24.tv/2026/10/24/il-benevento-strapazza-larezzo-tris-della-strega-in-toscana/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/24/arezzo-benevento-0-0-allintervallo-la-strega-crea-e-attacca-ma-non-la-sblocca/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Benevento ha vinto 3-0 ad Arezzo, sabato 24 ottobre, nell'ottava giornata del campionato di Serie B. Tutti i gol sono arrivati nel secondo tempo: li hanno fatti Siatounis, Okereke e Mignani. Con questi tre punti i giallorossi di Floro Flores salgono a 14 punti, mentre l'Arezzo resta a 10.",
+      "fonti": [
+       "Benevento Calcio",
+       "Cronache del Sannio",
+       "NTR24 Sport",
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-24"
+     },
+     {
+      "testo": "Il primo tempo è finito 0-0, con diverse occasioni per il Benevento: un colpo di testa di Dalle Mura al 4', un tiro di Beruatto parato dall'ex Nunziante, il portiere dell'Arezzo, e un tiro di Cherubini al 37' finito tra le braccia dello stesso Nunziante. L'Arezzo si è fatto vedere con un colpo di testa di Cerri al 13' e un tiro di Tavernelli al 36', parato da Vannucchi.",
+      "fonti": [
+       "Cronache del Sannio",
+       "NTR24 Sport"
+      ],
+      "giorno": "2026-10-24"
+     },
+     {
+      "testo": "Nel secondo tempo, al 51' secondo il tabellino del Benevento, Siatounis ha spinto in rete da pochi passi un passaggio di Okereke. Il gol è stato prima annullato per fuorigioco ma, dopo il controllo al Var (l'arbitro che rivede le immagini), è stato convalidato. Per il greco è il terzo gol di fila, dopo quelli con Cesena e Vicenza.",
+      "fonti": [
+       "Benevento Calcio",
+       "Cronache del Sannio",
+       "NTR24 Sport"
+      ],
+      "giorno": "2026-10-24"
+     },
+     {
+      "testo": "Al 66' Okereke ha fatto 2-0 battendo Nunziante, e all'87' Mignani, entrato al 70' al posto di Salvemini, ha fatto 3-0 dopo un'azione personale in cui ha superato tre difensori. Al 40' Okereke aveva sfiorato il terzo gol, fermato da Nunziante con un piede; l'Arezzo si era rivisto dalle parti di Vannucchi solo al 36', con un tiro di Renzi bloccato.",
+      "fonti": [
+       "Benevento Calcio",
+       "Cronache del Sannio",
+       "NTR24 Sport",
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-24"
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "24 ottobre, 19:30",
+      "fatto": "Arezzo-Benevento comincia allo stadio «Città di Arezzo»; il primo tempo finisce 0-0.",
+      "fonti": [
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "data": "24 ottobre, secondo tempo",
+      "fatto": "Gol di Siatounis (51'), Okereke (66') e Mignani (87'): finisce 0-3.",
+      "fonti": [
+       "Benevento Calcio",
+       "NTR24 Sport"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Il risultato, 0-3, e i marcatori Siatounis, Okereke e Mignani, con il gol di Siatounis convalidato dopo il Var.",
+      "fonti": [
+       "Benevento Calcio",
+       "Cronache del Sannio",
+       "NTR24 Sport",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "Il primo gol è al 49' per NTR24 Sport e al 51' per il tabellino del Benevento: nel racconto vale il tabellino, che è del club.",
+      "fonti": [
+       "Benevento Calcio",
+       "NTR24 Sport"
+      ]
+     }
+    ],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Benevento Calcio",
+      "titolo": "SERIE BKT 2026-2027: AREZZO-BENEVENTO 0-3 IL TABELLINO DELLA GARA",
+      "url": "https://www.beneventocalcio.club/news/notizie/7673/serie-bkt-2026-2027-arezzo-benevento-0-3-il-tabellino-della-gara.shtml",
+      "data": "24 ott, 21:27"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Arezzo-Benevento 0-3: ripresa da sballo e la Strega conquista i tre punti",
+      "url": "https://www.cronachedelsannio.it/sannionews24/arezzo-benevento-ripresa-sballo-strega-conquista-tre-punti/",
+      "data": "24 ott, 21:23"
+     },
+     {
+      "nome": "NTR24 Sport",
+      "titolo": "Il Benevento strapazza l’Arezzo. Tris della Strega in Toscana",
+      "url": "https://sport.ntr24.tv/2026/10/24/il-benevento-strapazza-larezzo-tris-della-strega-in-toscana/",
+      "data": "24 ott, 21:40"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Arezzo-Benevento 0-3: la Strega torna a vincere con Siatounis, Okereke e Mignani",
+      "url": "https://www.beneventonews24.it/2026/10/24/arezzo-benevento-0-0-allintervallo-la-strega-crea-e-attacca-ma-non-la-sblocca/",
+      "data": "24 ott, 20:18"
+     }
+    ]
+   }
+  },
   {
    "id": "benevento-corso-garibaldi-bambino-investito-da-bici",
    "titolo": "Benevento, bambino investito da una bici sul corso Garibaldi: portato in ospedale",
@@ -11,12 +147,16 @@
    "zona": "benevento",
    "luogo": "Benevento, corso Garibaldi",
    "pubblicato": "2026-10-24T20:19:00+02:00",
-   "stato": "una_fonte",
+   "stato": "confermata",
    "rilevante": false,
    "fonti": [
     {
      "nome": "Anteprima24",
      "url": "https://www.anteprima24.it/benevento/benevento-bambino-investito-da-una-bici-sul-corso-garibaldi-trasportato-in-ospedale/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/24/ciclista-investe-bambino-sul-corso-garibaldi-trasportato-in-ospedale/"
     }
    ],
    "articolo": {
@@ -24,7 +164,8 @@
      {
       "testo": "Sabato sera, 24 ottobre, verso le 19:30, un bambino è stato investito da una bicicletta sul corso Garibaldi a Benevento, vicino agli incroci con via Pacca e via Rampone. Era con i genitori.",
       "fonti": [
-       "Anteprima24"
+       "Anteprima24",
+       "BeneventoNews24"
       ]
      },
      {
@@ -36,12 +177,21 @@
      {
       "testo": "Il ciclista si è fermato per soccorrerlo ed è stato poi fermato dagli agenti della Polizia municipale. In quel tratto di zona a traffico limitato, ricorda il giornale, è vietato da tempo anche il passaggio delle biciclette.",
       "fonti": [
-       "Anteprima24"
+       "Anteprima24",
+       "BeneventoNews24"
       ]
      }
     ],
     "cronologia": [],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "Un bambino che era con i genitori è stato investito da una bici sul corso Garibaldi, è stato portato al pronto soccorso del San Pio e le sue condizioni non sono gravi; il ciclista è stato fermato dalla Polizia municipale perché in quella zona le biciclette non possono passare.",
+      "fonti": [
+       "Anteprima24",
+       "BeneventoNews24"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [
      "Le condizioni del bambino dopo i controlli in ospedale.",
@@ -53,6 +203,12 @@
       "titolo": "Benevento, bambino investito da una bici sul corso Garibaldi: trasportato in ospedale",
       "url": "https://www.anteprima24.it/benevento/benevento-bambino-investito-da-una-bici-sul-corso-garibaldi-trasportato-in-ospedale/",
       "data": "24 ott, 20:19"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Benevento, ciclista investe bambino sul Corso Garibaldi: trasportato in ospedale",
+      "url": "https://www.beneventonews24.it/2026/10/24/ciclista-investe-bambino-sul-corso-garibaldi-trasportato-in-ospedale/",
+      "data": "24 ott, 21:40"
      }
     ]
    }
