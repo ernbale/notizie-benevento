@@ -782,7 +782,9 @@ def main():
                                                       (prima.get("puntualita") or {}).get("giri")))):
         try:
             dati[nome] = fare()
-            print(f"{nome.capitalize()}:", dati[nome]["stato"])
+            print(f"{nome.capitalize()}:", dati[nome]["stato"],
+                  *(["· statistiche Meta:", ", ".join(dati[nome].get("meta") or {}) or "nessuna"]
+                    if nome == "instagram" else []))
         except Exception as e:
             dati[nome] = {"stato": "errore", "messaggio": f"non ha risposto: {e}"}
             print(f"AVVISO {nome}:", e, file=sys.stderr)
