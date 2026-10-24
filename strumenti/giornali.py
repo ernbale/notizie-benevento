@@ -34,6 +34,7 @@ AGENTE = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KH
 MARGINE = dt.timedelta(minutes=20)       # prima dell'ultimo giro: gli articoli usciti mentre lavorava
 CONTESTO = dt.timedelta(hours=24)        # articoli più vecchi che servono solo a contare le testate di un fatto
 MAX_INDIETRO = dt.timedelta(hours=14)    # il primo giro del mattino guarda dalla sera prima, non oltre
+LAMPO_MINUTI = 40   # un comunicato per email non ancora trattato dal giro lampo dopo tanto lo decide il giro di ogni ora
 
 # nome come nel registro delle fonti, autorevole per la regola 2, come si legge, homepage (se il feed non risponde)
 TESTATE = [
@@ -276,6 +277,8 @@ def citati():
             for fo in (n.get("fonti") or []) + ((n.get("articolo") or {}).get("fonti") or []):
                 if fo.get("url"):
                     out.setdefault(norma_url(fo["url"]), n.get("id"))
+            for c in n.get("comunicati") or []:   # i comunicati per email da cui viene la notizia (id di comunicati.json)
+                out.setdefault(norma_url("posta:" + str(c)), n.get("id"))
     return out
 
 
@@ -346,7 +349,39 @@ def main():
         print(f"ATTENZIONE: comuni.json (siti e albi dei Comuni) non si legge ({type(e).__name__}): guardalo a mano")
     n_comuni = sum(1 for nome in comunali for v in risultati[nome][1] if v["data"] and v["data"] >= dal)
 
+    # i comunicati arrivati per posta (comunicati.json da casa): appena arrivano li pubblica il giro lampo
+    # (COMUNICATI.md, strumenti/comunicati.py). Qui entrano quelli che il giro lampo ha scartato e quelli che dopo
+    # LAMPO_MINUTI non ha ancora trattato (anche se arrivati prima dell'ultimo giro): una decisione ciascuno, come per i
+    # giornali. Il 24 ott 2026 il comunicato della CISL FP, in mezzo a 13 rimbalzi, è sfuggito al giro delle 12:06.
     gia = citati()
+    postali, n_posta, in_lampo = set(), 0, 0
+    try:
+        with open(os.path.join(SITO, "comunicati_visti.json"), encoding="utf-8") as f:
+            visti = json.load(f).get("visti") or {}
+    except (OSError, ValueError):
+        visti = {}
+    try:
+        with open(os.path.join(FONTI_CASA, "comunicati.json"), encoding="utf-8") as f:
+            posta = json.load(f).get("voci", [])
+    except (OSError, ValueError) as e:
+        posta = []
+        print(f"ATTENZIONE: comunicati.json (posta) non si legge ({type(e).__name__}): guardalo a mano")
+    for v in posta:
+        arrivata = data_rss(v.get("arrivata") or v.get("data"))
+        if not v.get("id") or not arrivata or adesso - arrivata > dt.timedelta(hours=24):
+            continue
+        n_posta += 1
+        esito = visti.get(v["id"]) or {}
+        if esito.get("esito") in ("pubblicato", "gia_nel_sito"):
+            gia[norma_url("posta:" + v["id"])] = esito.get("notizia")
+        elif not esito and adesso - arrivata < dt.timedelta(minutes=LAMPO_MINUTI):
+            in_lampo += 1   # ci sta lavorando il giro lampo
+            continue
+        nome = f"Comunicato per email: {v.get('mittente') or v.get('dominio')}"
+        postali.add(nome)
+        quando = arrivata if (esito or arrivata >= dal) else dal   # non trattato dal giro lampo: è da decidere adesso
+        risultati.setdefault(nome, (True, []))[1].append(
+            {"titolo": v.get("titolo", ""), "url": "posta:" + v["id"], "data": quando})
     articoli = []
     for nome, (autorevole, voci) in risultati.items():
         for v in voci:
@@ -383,8 +418,10 @@ def main():
             "ultimo": max(x["data"] for x in nuovi),
             "testate": sorted({x["testata"] for x in g}),
             "autorevoli": sorted({x["testata"] for x in g if x["autorevole"]}),
-            "ufficiali": sorted({x["testata"] for x in g if x["testata"] in UFFICIALI or x["testata"] in comunali}),
+            "ufficiali": sorted({x["testata"] for x in g if x["testata"] in UFFICIALI or x["testata"] in comunali
+                                 or x["testata"] in postali}),
             "comuni": sorted({x["testata"] for x in g if x["testata"] in comunali}),
+            "comunicati": sorted({x["testata"] for x in g if x["testata"] in postali}),
             "citato_in": sorted({x["citato"] for x in g if x["citato"]}),
             "articoli": [{"testata": x["testata"], "titolo": x["titolo"], "url": x["url"],
                           "data": x["data"].astimezone(fuso()).isoformat(timespec="minutes"),
@@ -405,7 +442,10 @@ def main():
 
     print(f"Articoli dei giornali e avvisi dei Comuni ({n_comuni} nuovi da siti e albi pretori) usciti dalle "
           f"{dal.strftime('%H:%M')} del {dal.strftime('%d/%m')}: {len(elenco)} fatti da decidere (scrivi una decisione "
-          "per ognuno in «decisioni» del diario)\n")
+          "per ognuno in «decisioni» del diario)")
+    print(f"Comunicati per email delle ultime 24 ore: {n_posta} (quelli già pubblicati dal giro lampo non sono "
+          f"nell'elenco; {in_lampo} in lavorazione adesso dal giro lampo: non toccarli). Quelli nell'elenco "
+          "(«Comunicato per email: …», url «posta:<id>») leggili in comunicati.json dell'archivio di casa (campo id).\n")
     for r in registro:
         if "non raggiungibile" in r or "solo la homepage" in r:
             print("ATTENZIONE:", r)

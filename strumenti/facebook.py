@@ -4,6 +4,7 @@
 Lo esegue GitHub dopo ogni pubblicazione del sito (a ogni giro dell'agente e ogni ora), così la pagina della
 notizia è già online quando Facebook ne legge titolo e immagine di anteprima.
 
+- Le notizie dei comunicati arrivati per posta («subito», giro lampo) escono appena ci sono, senza pausa né tetto.
 - Al massimo una notizia ogni PAUSA_MINUTI (25) e MAX_GIORNO (35) al giorno, solo dalle 6
   fino al giro delle 22 compreso, come i giri: senza raffiche che sembrano spam (scelta del proprietario: 23 ott 2026
   50 minuti e 20 al giorno; 24 ott 2026 «aumenta i limiti» → 25 minuti e 35, con un giro in più alle :40 che fa
@@ -246,6 +247,15 @@ def main():
     if chi != PAGINA:
         raise RuntimeError(f"la chiave non è della Pagina «{PAGINA}»: non pubblico niente")
     gia, oggi, ultimo, riepilogo = gia_pubblicate(token, adesso)
+    # un comunicato ufficiale arrivato per posta (giro lampo: «subito» in notizie.json, strumenti/comunicati.py) esce
+    # adesso: niente pausa, niente tetto del giorno, anche dopo il riepilogo (lui, 24 ott 2026: «pubblicazione istantanea»)
+    urgenti = [] if sera else [n for n in candidate(notizie, gia, adesso) if n.get("subito")]
+    for n in urgenti[:3]:
+        chiama("POST", "me/feed", token, {"message": messaggio(n), "link": f"{SITO}/notizia/{n['id']}/"})
+        oggi += 1
+        print(f"Facebook: pubblicata subito {n['id']} (comunicato, {oggi} oggi)")
+    if urgenti:
+        return
     if not sera:
         if riepilogo:
             print("Facebook: il riepilogo di oggi è già uscito, a domani")

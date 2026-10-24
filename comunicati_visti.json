@@ -1,0 +1,10 @@
+{
+ "nota": "Comunicati arrivati per posta e già trattati dal giro lampo (strumenti/comunicati.py): id, esito, notizia, ora.",
+ "visti": {
+  "d34d9997cfbe": {
+   "esito": "gia_nel_sito",
+   "notizia": "benevento-cisl-fp-sportello-precari-pubblica-amministrazione",
+   "quando": "2026-10-24T13:06+02:00"
+  }
+ }
+}

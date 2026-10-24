@@ -2,6 +2,7 @@
 """Pubblica su Instagram (l'account aziendale collegato alla Pagina Facebook) le notizie più importanti, una alla volta.
 
 Lo esegue GitHub dopo ogni pubblicazione del sito, come facebook.py, che ne è il modello:
+- Le notizie dei comunicati arrivati per posta («subito», giro lampo) escono appena ci sono, senza pausa né tetto.
 - Al massimo una notizia ogni PAUSA_MINUTI e MAX_GIORNO al giorno, dalle 6 fino al giro delle 22 compreso
   (come Facebook: 25 minuti e 35 al giorno, scelta del proprietario il 24 ott 2026; prima 50 minuti e 20, all'inizio
   90 minuti e 8).
@@ -186,6 +187,11 @@ def main():
         print("Instagram: la Pagina non ha ancora un account Instagram collegato, non pubblico niente")
         return
     gia, oggi, ultimo, riepilogo = gia_pubblicate(ig, token, adesso)
+    if not sera:   # un comunicato ufficiale (giro lampo, «subito»): esce adesso, senza pausa né tetto (come facebook.py)
+        for n in candidate(notizie, gia, adesso):
+            if n.get("subito") and pubblica_notizia(ig, token, n):
+                print(f"Instagram: pubblicata subito {n['id']} (comunicato, {oggi + 1} oggi)")
+                return
     if sera:
         for n in candidate(notizie, gia, adesso):
             if allerta_seria(n) and pubblica_notizia(ig, token, n):

@@ -32,6 +32,7 @@ Uso sul Pi:   python3 ~/nb-fonti/fonti_casa.py            (scarica e pubblica)
 import argparse
 import datetime as dt
 import email.utils
+import hashlib
 import html
 import json
 import os
@@ -594,6 +595,34 @@ def testo_allegato(tipo, a):
 
 POSTA_CONF = os.path.join(CARTELLA, "posta.conf")   # indirizzo e password della casella, li scrive --imposta-posta
 POSTA_SERVER = "imaps.aruba.it"
+# Nella casella arrivano anche cose che non sono comunicati: rimbalzi, risposte automatiche, avvisi di Aruba e le
+# risposte alla nostra mail agli uffici stampa del 24 ott 2026. Non vanno all'agente: il 24 ott alle 12:06 il giro ha
+# visto 13 rimbalzi e un comunicato vero (CISL FP) e ha scritto «0 utili, solo risposte automatiche».
+NON_COMUNICATO_DA = re.compile(r"mailer-daemon|mail-daemon|postmaster|mail delivery|no-?reply.*aruba", re.I)
+NON_COMUNICATO_OGGETTO = re.compile(
+    r"^\s*(undeliver|undelivered|recapito fallito|mancato recapito|delivery status|returned mail|mail delivery|"
+    r"auto(matic)?\s*(reply|risposta)?\s*:|risposta automatica|out of office|fuori sede|assente)"
+    r"|comunicati stampa per notizie benevento", re.I)
+NON_COMUNICATO_DOMINI = ("staff.aruba.it", ".ad.aruba.it")
+
+
+def id_posta(link):
+    """L'id breve di un comunicato: lo stesso sul Pi, nel giro lampo (comunicati_visti.json) e nelle notizie."""
+    return hashlib.sha1(link.encode("utf-8")).hexdigest()[:12]
+
+
+def non_comunicato(titolo, mittente, dominio, m=None):
+    """Il motivo per cui una mail non è un comunicato (rimbalzo, risposta automatica, avviso del provider), o ''."""
+    if NON_COMUNICATO_DA.search(mittente or "") or (dominio or "").endswith(NON_COMUNICATO_DOMINI):
+        return "rimbalzo o avviso del provider"
+    if NON_COMUNICATO_OGGETTO.search(titolo or ""):
+        return "risposta automatica o alla nostra mail"
+    if m is not None:
+        if (m.get("Auto-Submitted") or "no").strip().lower() != "no" or m.get("X-Autoreply") or m.get("X-Autorespond"):
+            return "risposta automatica"
+        if m.get_content_type() == "multipart/report":
+            return "rimbalzo"
+    return ""
 
 
 def _testo_mail(m):
@@ -633,6 +662,8 @@ def posta(vecchie):
         raise RuntimeError("casella non ancora collegata (manca posta.conf: fonti_casa.py --imposta-posta)") from None
     dec = lambda x: str(email.header.make_header(email.header.decode_header(x or "")))
     voci = []
+    scartate = [l for l, v in vecchie.items() if not v]   # le mail già riconosciute come non comunicati
+    adesso = dt.datetime.now(fuso()).isoformat(timespec="minutes")
     with imaplib.IMAP4_SSL(conf.get("server", POSTA_SERVER), 993, timeout=60) as M:
         M.login(conf["utente"], conf["password"])
         M.select("INBOX", readonly=True)
@@ -646,15 +677,19 @@ def posta(vecchie):
             if link in vecchie:
                 continue
             nome, indirizzo = eu.parseaddr(dec(m.get("From")))
+            mittente, dominio = nome or indirizzo.split("@")[0], indirizzo.rsplit("@", 1)[-1].lower()
+            if non_comunicato(dec(m.get("Subject")), f"{nome} {indirizzo}", dominio, m):
+                scartate.append(link)
+                continue
             try:
                 quando = eu.parsedate_to_datetime(m.get("Date")).astimezone(fuso()).isoformat(timespec="minutes")
             except (TypeError, ValueError):
                 quando = dt.datetime.now(fuso()).isoformat(timespec="minutes")
             corpo, allegati = _testo_mail(m)
-            voci.append({"titolo": dec(m.get("Subject")) or "(senza oggetto)", "link": link, "data": quando,
-                         "mittente": nome or indirizzo.split("@")[0], "dominio": indirizzo.rsplit("@", 1)[-1].lower(),
+            voci.append({"id": id_posta(link), "titolo": dec(m.get("Subject")) or "(senza oggetto)", "link": link,
+                         "data": quando, "arrivata": adesso, "mittente": mittente, "dominio": dominio,
                          "allegati": allegati, "testo": corpo})
-    return voci
+    return voci, {"scartate": scartate[-300:]}
 
 
 def imposta_posta():
@@ -703,8 +738,8 @@ def leggi(nome, adesso):
         prima = {}
     vecchie = {v["link"]: v for v in prima.get("voci", [])}
     dati = {"fonte": titolo, "indirizzo": indirizzo, "controllato": adesso.isoformat(timespec="minutes")}
-    try:
-        nuove = funzione(vecchie)
+    try:   # le mail scartate (non comunicati) restano note, così non si riaprono a ogni giro
+        nuove = funzione({**{l: {} for l in prima.get("scartate", [])}, **vecchie})
         if isinstance(nuove, tuple):   # i Comuni dicono anche quali siti non si sono letti
             nuove, extra = nuove
             dati.update(extra)
@@ -715,6 +750,15 @@ def leggi(nome, adesso):
         dati["esito"] = f"non raggiungibile: {type(e).__name__}: {e}"[:300]
         dati["ultima_lettura_riuscita"] = prima.get("ultima_lettura_riuscita", "")
     tutte = {v["link"]: v for v in list(vecchie.values()) + nuove}
+    if nome == "comunicati":   # le voci di prima che non sono comunicati (rimbalzi…) escono; a tutte il loro id
+        if "scartate" not in dati:
+            dati["scartate"] = prima.get("scartate", [])
+        for l, v in list(tutte.items()):
+            if non_comunicato(v.get("titolo"), v.get("mittente"), v.get("dominio")):
+                del tutte[l]
+                dati["scartate"] = (dati["scartate"] + [l])[-300:]
+            else:
+                v.setdefault("id", id_posta(l))
     limite = (adesso - dt.timedelta(days=giorni)).date().isoformat()
     dati["voci"] = sorted((v for v in tutte.values() if v.get("data", "")[:10] >= limite),
                           key=lambda v: v.get("data", ""), reverse=True)[:200 if nome == "comuni" else 80]
@@ -740,9 +784,11 @@ incompleto. La casella dei comunicati la legge ogni 5 minuti.
   Dal 23 ott 2026 ci sono anche gli atti nuovi degli albi pretori di 57 Comuni (`fonte`: «albo pretorio»): ordinanze,
   avvisi e bandi (niente determine, delibere, permessi), con `data_avviso` = inizio della pubblicazione e nel `testo`
   tipo, numero, oggetto e il testo del PDF allegato quando si legge. `albi_letti` e `albi_non_letti`.
-- `comunicati.json`: i comunicati arrivati per posta a comunicati@notiziebenevento.it, ultimi 7 giorni: `titolo` =
-  oggetto, `data` = quando è arrivata, `mittente` (nome) e `dominio` (dopo la @), `allegati`, `testo` (con quello
-  dei PDF allegati). Il `link` è «posta:…»: non è un indirizzo da citare.
+- `comunicati.json`: i comunicati arrivati per posta a comunicati@notiziebenevento.it, ultimi 7 giorni: `id` (breve,
+  lo stesso di comunicati_visti.json del sito), `titolo` = oggetto, `data` = la data della mail, `arrivata` = quando
+  il Pi l'ha vista, `mittente` (nome) e `dominio` (dopo la @), `allegati`, `testo` (con quello dei PDF allegati). Il
+  `link` è «posta:…»: non è un indirizzo da citare. Rimbalzi, risposte automatiche e avvisi di Aruba non ci sono
+  (`scartate`: solo i loro riferimenti). Appena ne arriva uno il Pi fa partire il giro lampo (COMUNICATI.md del sito).
 
 In ogni file: `controllato` = ultimo tentativo, `esito`, `ultima_lettura_riuscita`, `voci` (titolo, link, data,
 testo). Il `link` è quello originale da citare tra le fonti. Archivio privato: i testi restano di chi li ha scritti.
