@@ -57,6 +57,9 @@ def main():
     if not lungo:
         sys.exit("Facebook non ha allungato il token utente.")
     print("✓ token utente allungato")
+    # quali permessi ha dato il Graph API Explorer: il 24 ott il token già scritto sulla pagina era quello vecchio
+    dato = get("debug_token", input_token=breve, access_token=f"{app_id}|{segreto}").get("data", {})
+    print("  permessi del token incollato: " + ", ".join(sorted(dato.get("scopes", []))))
 
     pagine = get("me/accounts", fields="id,name,access_token", access_token=lungo).get("data", [])
     pag = next((p for p in pagine if p.get("name") == PAGINA), None)
@@ -85,7 +88,8 @@ def main():
           + ("mai" if scade == 0 else "ATTENZIONE, scade"))
     senza = STATISTICHE - set(info.get("scopes", []))
     print("✓ statistiche: permessi a posto" if not senza else
-          "- statistiche: senza " + ", ".join(sorted(senza)) + " (persone raggiunte e commenti restano «–»)")
+          "- statistiche: senza " + ", ".join(sorted(senza)) + " (persone raggiunte e commenti restano «–»): nel "
+          "Graph API Explorer aggiungili e premi «Generate Access Token», poi incolla il token nuovo")
     if INSTAGRAM <= set(info.get("scopes", [])):
         ig = get(pag["id"] if "id" in pag else "me", fields="instagram_business_account{username}",
                  access_token=token).get("instagram_business_account")
