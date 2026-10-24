@@ -1,7 +1,70 @@
 {
- "aggiornato": "2026-10-24T07:10+02:00",
+ "aggiornato": "2026-10-24T08:09+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-mensa-scolastica-centro-cottura-authentica-30-novembre",
+   "titolo": "Benevento, mensa scolastica: Authentica promette il centro di cottura in città, a Ponte Valentino, entro il 30 novembre",
+   "titolo_google": "Benevento, mensa scuole: centro di cottura in città entro il 30/11",
+   "sintesi": "Authentica, la ditta della mensa scolastica di Benevento, ha detto alla commissione mensa che entro il 30 novembre cucinerà i pasti nell'ex centro di cottura Ristorò, nell'area Asi di Ponte Valentino. Il Comune ha intanto contestato alla ditta l'uso di aree senza i permessi.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "immagine": "mensa",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-24T07:13:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/24/mensa-scolastica-authentica-assicura-entro-il-30-novembre-il-centro-di-cottura-sara-trasferito-in-citta/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Entro il 30 novembre i pasti per le scuole di Benevento saranno cucinati in città, nell'area Asi di Ponte Valentino, alla periferia. Lo hanno garantito alla commissione mensa i responsabili di Authentica, la ditta che gestisce il servizio di mensa scolastica. Il centro di cottura sarà l'ex centro della società Ristorò.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "Oggi i pasti sono circa 1.500 al giorno in media, in questi primi giorni di servizio. Il giornale riferisce che c'è chi giudica le previsioni troppo ottimistiche, perché servono le autorizzazioni del Comune e soprattutto quelle sanitarie dell'ASL.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "La commissione mensa ha chiesto anche dove siano custoditi gli alimenti, ma la risposta sul sito esatto non è arrivata. Authentica ha assicurato che non stanno più nella parte nuova del centro di cottura di Beltiglio, che non ha i permessi edilizi e sanitari, ma sono divisi tra Beltiglio e il Conservatorio.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "La responsabile unica del procedimento (la dirigente comunale che segue l'appalto), Paola Reale, dice di aver attivato subito i controlli e di aver mandato ad Authentica una contestazione formale. Richiama la determina dirigenziale n. 13 del 13 ottobre 2026, che vieta in modo assoluto di usare aree o strutture senza i permessi edilizi e igienico-sanitari richiesti.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Se le autorizzazioni di Comune e ASL arriveranno in tempo per il 30 novembre.",
+     "Dove si trovino esattamente gli alimenti, secondo la commissione mensa."
+    ],
+    "fonti": [
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Mensa scolastica, Authentica assicura: entro il 30 novembre il centro di cottura sarà trasferito in città",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/24/mensa-scolastica-authentica-assicura-entro-il-30-novembre-il-centro-di-cottura-sara-trasferito-in-citta/",
+      "data": "24 ott, 07:13"
+     }
+    ]
+   },
+   "foto": "mensa-2"
+  },
   {
    "id": "nel-cuore-del-sannio-dieci-comuni-riabitare-il-sud",
    "titolo": "Dieci Comuni del Sannio, nasce «Nel Cuore del Sannio»: nidi, case per studenti e car sharing contro lo spopolamento",
@@ -1227,12 +1290,16 @@
    "immagine": "lavori-stradali",
    "luogo": "Melizzano e Dugenta",
    "pubblicato": "2026-10-23T16:38:00+02:00",
-   "stato": "una_fonte",
+   "stato": "confermata",
    "rilevante": false,
    "fonti": [
     {
      "nome": "Anteprima24",
      "url": "https://www.anteprima24.it/benevento/fondo-valle-isclero-eseguite-le-attivita-di-pavimentazione-stradale/"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/24/fondovalle-isclero-al-via-i-lavori-di-pavimentazione-tra-melizzano-e-dugenta/"
     }
    ],
    "articolo": {
@@ -1263,7 +1330,15 @@
      }
     ],
     "cronologia": [],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "L'Anas ha concluso venerdì 23 ottobre il nuovo asfalto tra Melizzano e Dugenta, cominciato la settimana prima, nell'appalto da 3,2 milioni di euro che ha toccato anche la statale 372 «Telesina».",
+      "fonti": [
+       "Anteprima24",
+       "Il Sannio Quotidiano"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [
      "Le date e i tratti dei lavori di novembre.",
@@ -1275,6 +1350,12 @@
       "titolo": "Fondo Valle Isclero, eseguite le attività di pavimentazione stradale",
       "url": "https://www.anteprima24.it/benevento/fondo-valle-isclero-eseguite-le-attivita-di-pavimentazione-stradale/",
       "data": "23 ott, 16:38"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Fondovalle Isclero, al via i lavori di pavimentazione tra Melizzano e Dugenta",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/24/fondovalle-isclero-al-via-i-lavori-di-pavimentazione-tra-melizzano-e-dugenta/",
+      "data": "24 ott, 07:20"
      }
     ]
    },
@@ -6339,16 +6420,19 @@
     {
      "nome": "Il Mattino (24/10, ripresa)",
      "url": "https://www.ilmattino.it/benevento/tornano_carichi_e_cisterne_a_benevento_ossigeno_anche_nei_mercati_cittadini_la_ripresa_sara_graduale-9844407.html"
+    },
+    {
+     "nome": "Il Sannio Quotidiano (24/10)",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/24/torna-la-disponibilita-di-carburanti-ma-i-prezzi-sono-alle-stelle-il-diesel-tocca-i-263-euro-a-litro/"
     }
    ],
    "articolo": {
     "aggiornamento": {
-     "testo": "Venerdì 23 ottobre nel Sannio i presìdi sono stati tutti sciolti o sospesi, e a Benevento sono tornati merci e carburante; la protesta proseguirà a Roma il 27 ottobre.",
+     "testo": "Venerdì 23 ottobre è tornata la disponibilità di benzina e gasolio nella maggior parte dei distributori della città, con lunghe file; secondo Il Sannio Quotidiano il diesel arriva a 2,63 euro al litro. Il giornale lega la ripresa allo sblocco dei presìdi, favorito dall'intervento delle Prefetture.",
      "fonti": [
-      "Il Mattino (24/10)",
-      "Il Mattino (24/10, ripresa)"
+      "Il Sannio Quotidiano (24/10)"
      ],
-     "quando": "2026-10-24T06:10+02:00"
+     "quando": "2026-10-24T08:09+02:00"
     },
     "aggiornato": "2026-10-20T09:25:00+02:00",
     "cronologia": [
@@ -6517,6 +6601,13 @@
       "fatto": "Sospesi i tre presìdi degli agricoltori nel Beneventano, in vista della manifestazione nazionale a Roma del 27 ottobre.",
       "fonti": [
        "Ottopagine (23/10 pomeriggio)"
+      ]
+     },
+     {
+      "data": "23 ottobre, mattina",
+      "fatto": "Torna la disponibilità di benzina e gasolio nella maggior parte dei distributori della città, con lunghe file; il diesel tocca i 2,63 euro al litro.",
+      "fonti": [
+       "Il Sannio Quotidiano (24/10)"
       ]
      },
      {
@@ -6812,6 +6903,12 @@
       "titolo": "Tornano carichi e cisterne a Benevento, ossigeno anche nei mercati cittadini: «La ripresa sarà graduale»",
       "url": "https://www.ilmattino.it/benevento/tornano_carichi_e_cisterne_a_benevento_ossigeno_anche_nei_mercati_cittadini_la_ripresa_sara_graduale-9844407.html",
       "data": "24 ott, 00:10"
+     },
+     {
+      "nome": "Il Sannio Quotidiano (24/10)",
+      "titolo": "Torna la disponibilità di carburanti, ma i prezzi sono alle stelle: il diesel tocca i 2,63 euro a litro",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/24/torna-la-disponibilita-di-carburanti-ma-i-prezzi-sono-alle-stelle-il-diesel-tocca-i-263-euro-a-litro/",
+      "data": "24 ott, 07:16"
      }
     ],
     "racconto": [
@@ -6833,6 +6930,13 @@
       "testo": "Resta la delusione per le risposte del governo. Il Consiglio dei ministri ha stanziato con un decreto 175 milioni di euro per trasportatori, agricoltori e pescatori, e la Regione Campania nei giorni scorsi 20 milioni, ma l'agricoltore Gabriele Forte, dal presidio della statale 87, le chiama «poco più di un'elemosina» perché le imprese non hanno liquidità. Chiede alla Regione un tavolo per «una filiera vera».",
       "fonti": [
        "Il Mattino (24/10)"
+      ],
+      "giorno": "2026-10-24"
+     },
+     {
+      "testo": "Il Sannio Quotidiano scrive che da venerdì mattina 23 ottobre benzina e gasolio sono tornati disponibili nella maggior parte dei distributori della città. Ci sono state lunghe file, perché molti automobilisti avevano il serbatoio quasi vuoto dopo giorni di difficoltà. Il giornale lega la ripresa allo sblocco dei presìdi degli autotrasportatori, favorito dall'intervento delle Prefetture. I prezzi però restano molto alti: il diesel arriva a 2,63 euro al litro.",
+      "fonti": [
+       "Il Sannio Quotidiano (24/10)"
       ],
       "giorno": "2026-10-24"
      },
@@ -7036,9 +7140,9 @@
   },
   {
    "id": "scaffali-vuoti",
-   "titolo": "Sciopero dei tir, mancano frutta, verdura e carne in alcuni supermercati del Sannio",
-   "titolo_google": "Tir fermi, mancano frutta e carne in supermercati del Sannio",
-   "sintesi": "Con i camion fermi, in diversi supermercati di Benevento e provincia i reparti dei prodotti freschi restano sguarniti: mancano frutta, verdura e carne, e secondo BeneventoNews24 anche pasta e latticini. Alcuni distributori hanno finito il gasolio. Il Mattino scrive che i supermercati di Benevento sono al quarto giorno senza rifornimenti.",
+   "titolo": "Dopo lo stop dei tir, nei supermercati del Sannio tornano ortofrutta, latte e uova; la ripresa è graduale",
+   "titolo_google": "Supermercati del Sannio: tornano ortofrutta, latte e uova",
+   "sintesi": "Da venerdì 23 ottobre nella grande distribuzione del Sannio sono tornati ortofrutta, latte fresco, latticini e uova, ma non ancora l'esposizione di prima. Nei giorni dei blocchi dei tir i reparti dei freschi erano rimasti sguarniti.",
    "categoria": "altro",
    "zona": "benevento",
    "immagine": "supermercato",
@@ -7069,6 +7173,10 @@
     {
      "nome": "Il Sannio Quotidiano (23/10)",
      "url": "https://www.ilsannioquotidiano.it/2026/10/23/scaffali-ancora-vuoti-ai-distributori-solo-gpl-e-metano/"
+    },
+    {
+     "nome": "Il Sannio Quotidiano (24/10)",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/24/graduale-ritorno-alla-normalita-nei-supermercati-e-gli-agricoltori-sospendono-i-presidi/"
     }
    ],
    "articolo": {
@@ -7097,6 +7205,13 @@
       "fonti": [
        "Il Mattino (22/10)"
       ]
+     },
+     {
+      "data": "23 ottobre, mattina",
+      "fatto": "Nei supermercati tornano ortofrutta, latte fresco, latticini e uova dopo la fine dei blocchi.",
+      "fonti": [
+       "Il Sannio Quotidiano (24/10)"
+      ]
      }
     ],
     "concordano": [
@@ -7110,8 +7225,7 @@
      }
     ],
     "non_si_sa": [
-     "Quanto dureranno le carenze e se arriveranno nuove consegne.",
-     "Quali catene e quanti punti vendita sono toccati: i giornali parlano di «diversi» supermercati senza fare l'elenco."
+     "Quando le esposizioni dei supermercati torneranno complete."
     ],
     "fonti": [
      {
@@ -7155,10 +7269,23 @@
       "titolo": "Scaffali ancora vuoti, ai distributori solo gpl e metano",
       "url": "https://www.ilsannioquotidiano.it/2026/10/23/scaffali-ancora-vuoti-ai-distributori-solo-gpl-e-metano/",
       "data": "23 ott, 08:50"
+     },
+     {
+      "nome": "Il Sannio Quotidiano (24/10)",
+      "titolo": "Graduale ritorno alla normalità nei supermercati. E gli agricoltori sospendono i presidi",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/24/graduale-ritorno-alla-normalita-nei-supermercati-e-gli-agricoltori-sospendono-i-presidi/",
+      "data": "24 ott, 07:14"
      }
     ],
     "divergono": [],
     "racconto": [
+     {
+      "testo": "Da venerdì mattina 23 ottobre la grande distribuzione del Sannio sta tornando alla normalità. Secondo Il Sannio Quotidiano sono arrivati di nuovo ortofrutta, latte fresco, latticini e uova. Non c'è ancora il ritorno completo alle esposizioni di prima, ma il giornale parla di scaffali e bancali vuoti ormai alle spalle.",
+      "fonti": [
+       "Il Sannio Quotidiano (24/10)"
+      ],
+      "giorno": "2026-10-23"
+     },
      {
       "testo": "Giovedì 22 ottobre, scrive Il Sannio Quotidiano, gli scaffali dei supermercati apparivano semivuoti in modo più evidente dei giorni precedenti: senza uova, farine e tanti altri prodotti, con l'ortofrutta quasi introvabile. In diversi punti vendita della provincia c'è stata una corsa alle scorte, con carrelli pieni di pasta e latte. Ai distributori, titola il giornale, restano solo gpl e metano.",
       "fonti": [
@@ -7216,11 +7343,11 @@
      }
     ],
     "aggiornamento": {
-     "testo": "Giovedì 22 ottobre, secondo Il Sannio Quotidiano, gli scaffali dei supermercati del Sannio erano più vuoti dei giorni prima: mancavano uova, farine e altri prodotti, e l'ortofrutta era quasi introvabile.",
+     "testo": "Venerdì 23 ottobre, scrive Il Sannio Quotidiano, nella grande distribuzione sono tornati ortofrutta, latte fresco, latticini e uova: non è ancora l'esposizione di sempre, ma le scorte stanno rientrando.",
      "fonti": [
-      "Il Sannio Quotidiano (23/10)"
+      "Il Sannio Quotidiano (24/10)"
      ],
-     "quando": "2026-10-23T09:11+02:00"
+     "quando": "2026-10-24T08:09+02:00"
     }
    },
    "rilevante": false,
