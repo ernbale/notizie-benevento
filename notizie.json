@@ -1,7 +1,156 @@
 {
- "aggiornato": "2026-10-24T11:08+02:00",
+ "aggiornato": "2026-10-24T12:10+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-ordine-medici-raccolta-aiuti-odessa",
+   "titolo": "Benevento, l'Ordine dei Medici raccoglie aiuti per un centro sanitario di Odessa fino al 13 novembre",
+   "titolo_google": "Benevento, raccolta di aiuti per Odessa dei medici",
+   "sintesi": "L'Ordine dei Medici della provincia di Benevento chiede a cittadini, famiglie, associazioni e aziende materiale sanitario e cibo per il centro «Raphael» di Odessa, in Ucraina. Si consegna in segreteria, in viale Mellusi 168, fino al 13 novembre.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento, viale Mellusi 168",
+   "pubblicato": "2026-10-24T11:26:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "in_vigore_fino": "2026-11-13",
+   "immagine": "solidarieta",
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/24/lordine-dei-medici-di-benevento-chiama-a-raccolta-la-cittadinanza-e-le-aziende-scende-in-campo-la-solidarieta-sannita-per-la-popolazione-di-odessa/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/lordine-dei-medici-di-benevento-chiama-a-raccolta-la-cittadinanza-e-le-aziende-scende-in-campo-la-solidarieta-sannita-per-la-popolazione-di-odessa/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/442038/l-ordine-dei-medici-appello-alla-solidarieta-per-la-popolazione-di-odessa.shtml"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "L'Ordine dei Medici della provincia di Benevento ha lanciato una raccolta di aiuti per il centro sanitario «Raphael» di Odessa, in Ucraina, colpito dalle conseguenze della guerra. L'appello non è solo per i medici: lo rivolge anche a cittadini, famiglie, associazioni, commercianti e aziende del Sannio.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "L'idea nasce dalla missione umanitaria «Adesso, Odesa 2026», promossa dal MEAN (Movimento Europeo di Azione Nonviolenta), a cui l'Ordine sannita ha partecipato. Lì ha visto da vicino le condizioni del centro e ha individuato le cose più urgenti. Secondo i dati citati dall'Ordine nella missione, i casi di diabete tra i bambini a Odessa sarebbero cresciuti del 60-70% per lo stress dei bombardamenti, con oltre 340 bambini seguiti da un solo centro.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Servono materiale per le emergenze (farmaci da banco, garze e bende, kit di primo soccorso, lacci emostatici), i sensori per la glicemia FreeStyle Libre 2 per i bambini con il diabete, cibo a lunga conservazione (scatolame, pasta, riso, legumi) e alimenti per l'infanzia. Le aziende possono anche donare forniture.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "La raccolta dura fino al 13 novembre 2026. Si consegna alla segreteria dell'Ordine dei Medici, in viale Mellusi 168 a Benevento, dal lunedì al venerdì dalle 9 alle 12. Chi vuole donare grandi quantità può accordarsi prima con la segreteria, telefonando allo 0824 51792.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Dove e come i materiali raccolti arriveranno a Odessa."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "L’Ordine dei Medici di Benevento chiama a raccolta la cittadinanza e le aziende: “Scende in campo la solidarietà sannita per la popolazione di Odessa”",
+      "url": "https://www.ntr24.tv/2026/10/24/lordine-dei-medici-di-benevento-chiama-a-raccolta-la-cittadinanza-e-le-aziende-scende-in-campo-la-solidarieta-sannita-per-la-popolazione-di-odessa/",
+      "data": "24 ott, 11:25"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "L’Ordine dei Medici di Benevento chiama a raccolta la cittadinanza e le aziende: “Scende in campo la solidarietà sannita per la popolazione di Odessa”",
+      "url": "https://www.tvsette.net/lordine-dei-medici-di-benevento-chiama-a-raccolta-la-cittadinanza-e-le-aziende-scende-in-campo-la-solidarieta-sannita-per-la-popolazione-di-odessa/",
+      "data": "24 ott, 10:41"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "L'ordine dei medici appello alla solidarietà per la popolazione di Odessa",
+      "url": "https://www.ottopagine.it/bn/attualita/442038/l-ordine-dei-medici-appello-alla-solidarieta-per-la-popolazione-di-odessa.shtml",
+      "data": "24 ott, 11:26"
+     }
+    ]
+   },
+   "foto": "solidarieta-2"
+  },
+  {
+   "id": "solopaca-via-sannitica-senso-unico-17-novembre-fibra",
+   "titolo": "Solopaca, martedì 17 novembre senso unico alternato in via Sannitica per i lavori della fibra",
+   "titolo_google": "Solopaca, via Sannitica a senso unico il 17 novembre",
+   "sintesi": "Martedì 17 novembre, dalle 9 alle 17, in via Sannitica al civico 86 a Solopaca la strada sarà ristretta, con senso unico alternato, per gli scavi di Open Fiber per la rete in fibra.",
+   "categoria": "strade",
+   "zona": "telesina",
+   "luogo": "Solopaca, via Sannitica 86",
+   "pubblicato": "2026-10-24T11:30:00+02:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "traffico": "senso_unico",
+   "in_vigore_dal": "2026-11-17",
+   "in_vigore_fino": "2026-11-17",
+   "immagine": "lavori-stradali",
+   "fonti": [
+    {
+     "nome": "Comune di Solopaca",
+     "url": "https://www.halleyweb.com/c062073/mc/mc_p_dettaglio.php?id_pubbl=4632"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Solopaca martedì 17 novembre 2026, dalle 9 alle 17, la strada sarà in parte chiusa in via Sannitica, all'altezza del civico 86. Nei tratti dove avanzano i lavori si passerà a senso unico alternato, cioè una macchina alla volta.",
+      "fonti": [
+       "Comune di Solopaca"
+      ]
+     },
+     {
+      "testo": "Lo ha deciso il responsabile della Vigilanza del Comune con un'ordinanza, dopo la richiesta di Open Fiber, la società che stende la rete in fibra ottica. Servono scavi per allacciare le utenze alla rete a banda ultra-larga.",
+      "fonti": [
+       "Comune di Solopaca"
+      ]
+     },
+     {
+      "testo": "Open Fiber e la ditta che lavora devono gestire il traffico con operai con la paletta o semafori temporanei, mettere la segnaletica e lasciare sempre passare i mezzi di soccorso. A fine giornata devono pulire la strada.",
+      "fonti": [
+       "Comune di Solopaca"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [
+     {
+      "testo": "Nel titolo dell'albo pretorio compare anche la dicitura «Via Variante del 27/11/2026», che non corrisponde al testo dell'ordinanza: valgono via Sannitica e il 17 novembre scritti nel provvedimento.",
+      "fonti": [
+       "Comune di Solopaca"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "Dove passeranno i veicoli se il traffico si ferma più a lungo."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Solopaca",
+      "titolo": "Interventi di allaccio delle utenze - Ordinanza regolamentazione del traffico Via Variante del 27/11/2026",
+      "url": "https://www.halleyweb.com/c062073/mc/mc_p_dettaglio.php?id_pubbl=4632",
+      "data": "24 ott"
+     }
+    ]
+   },
+   "foto": "lavori-stradali-7"
+  },
   {
    "id": "eav-sciopero-generale-30-ottobre-napoli-benevento",
    "titolo": "EAV, venerdì 30 ottobre sciopero generale di 24 ore: sulla Napoli-Benevento bus sostitutivi regolari",
