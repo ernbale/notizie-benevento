@@ -22,8 +22,12 @@ giorni, aggiunge le nuove e scrive l'esito della lettura; se una fonte non rispo
 scrive. Pubblica sempre un commit solo (riscritto ogni volta), così l'archivio resta piccolo.
 La chiave per scrivere è una chiave di deploy valida solo per quell'archivio (~/.ssh/nb_fonti sul Pi).
 
+La casella dei comunicati si legge anche da sola ogni 5 minuti (--solo comunicati, dal 24 ott 2026: «dobbiamo
+essere rapidi»): l'archivio si pubblica solo se è arrivato qualcosa di nuovo.
+
 Uso sul Pi:   python3 ~/nb-fonti/fonti_casa.py            (scarica e pubblica)
               python3 ~/nb-fonti/fonti_casa.py --prova    (scarica e stampa, senza pubblicare)
+              python3 ~/nb-fonti/fonti_casa.py --solo comunicati   (solo la posta; pubblica se c'è un comunicato nuovo)
 """
 import argparse
 import datetime as dt
@@ -721,7 +725,7 @@ LEGGIMI = """# Fonti lette da casa per Notizie Benevento
 
 Le scarica ogni 30 minuti il Raspberry Pi di casa (`strumenti/fonti_casa.py` nell'archivio del sito), perché dal cloud
 dell'agente non si aprono: ANAS e TV7 rifiutano le connessioni dall'estero, il sito dell'ASL ha il certificato
-incompleto.
+incompleto. La casella dei comunicati la legge ogni 5 minuti.
 
 - `anas.json`: comunicati ANAS della Campania, ultimi 10 giorni (`data` senza ora, `compartimento` = ufficio ANAS).
 - `asl.json`: notizie e avvisi dell'ASL Benevento, ultimi 30 giorni.
@@ -766,6 +770,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--prova", action="store_true", help="scarica e stampa, senza pubblicare")
     ap.add_argument("--imposta-posta", action="store_true", help="collega la casella dei comunicati (chiede la password)")
+    ap.add_argument("--solo", nargs="+", choices=list(FONTI), help="legge solo queste fonti e pubblica solo se c'è "
+                    "qualcosa di nuovo (dal cron ogni 5 minuti per la posta)")
     a = ap.parse_args()
     if a.imposta_posta:
         return imposta_posta()
@@ -773,9 +779,15 @@ def main():
     PROVA = a.prova
     adesso = dt.datetime.now(fuso())
     os.makedirs(ARCHIVIO, exist_ok=True)
-    esiti = []
-    for nome in FONTI:
+    esiti, nuove = [], 0
+    for nome in a.solo or FONTI:
+        try:
+            with open(os.path.join(ARCHIVIO, f"{nome}.json"), encoding="utf-8") as f:
+                prima = {v["link"] for v in json.load(f).get("voci", [])}
+        except (OSError, ValueError):
+            prima = set()
         dati = leggi(nome, adesso)
+        nuove += sum(v["link"] not in prima for v in dati["voci"])
         esiti.append(f"{nome} {dati['esito']} ({len(dati['voci'])} tenute)")
         if a.prova:
             for v in dati["voci"][:3]:
@@ -783,6 +795,12 @@ def main():
             continue
         with open(os.path.join(ARCHIVIO, f"{nome}.json"), "w", encoding="utf-8") as f:
             json.dump(dati, f, ensure_ascii=False, indent=1)
+    if a.solo:   # ogni 5 minuti: si pubblica e si scrive nel registro solo se è arrivato qualcosa o la fonte non va
+        if nuove and not a.prova:
+            pubblica(adesso)
+        if nuove or any("non raggiungibile" in x for x in esiti):
+            print(f"{adesso:%Y-%m-%d %H:%M} solo " + " · ".join(esiti) + (f" · {nuove} nuove" + ("" if a.prova else ", pubblicate") if nuove else ""))
+        return
     if not a.prova:
         with open(os.path.join(ARCHIVIO, "LEGGIMI.md"), "w", encoding="utf-8") as f:
             f.write(LEGGIMI)
