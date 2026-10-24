@@ -83,8 +83,8 @@ def didascalia_riepilogo(giorno, notizie):
 
 
 def gia_pubblicate(ig, token, adesso):
-    """Gli id delle notizie già uscite, quante notizie oggi (il riepilogo e le chiusure non contano), l'ora dell'ultimo
-    post e se il riepilogo di oggi c'è già."""
+    """Gli id delle notizie già uscite, quante notizie oggi (il riepilogo, le chiusure e le curiosità non contano), l'ora
+    dell'ultimo post (le curiosità non contano neanche qui) e se il riepilogo di oggi c'è già."""
     r = chiama("GET", f"{ig}/media", token, {"fields": "caption,timestamp", "limit": 50})
     ids, oggi, ultimo, riepilogo = set(), 0, None, False
     for p in r.get("data", []):
@@ -93,6 +93,8 @@ def gia_pubblicate(ig, token, adesso):
         if m:
             ids.add(m.group(1))
         didascalia_ = p.get("caption") or ""
+        if "#CuriositàDelSannio" in didascalia_:   # la curiosità delle 12 (curiosita_social.py) non conta tra le notizie
+            continue
         oggi += t.date() == adesso.date() and not didascalia_.startswith((TITOLO_RIEPILOGO, "🚸"))
         riepilogo |= t.date() == adesso.date() and didascalia_.startswith(TITOLO_RIEPILOGO)
         ultimo = max(ultimo, t) if ultimo else t

@@ -1,0 +1,278 @@
+{
+ "nota": "Curiosità del Sannio: una al giorno alle 12 (strumenti/curiosita_social.py, pagine.py). Ogni fatto è controllato sulle fonti indicate; le leggende si raccontano come leggende.",
+ "curiosita": [
+  {
+   "slug": "noce-delle-streghe",
+   "data": "2026-10-24",
+   "categoria": "leggenda",
+   "luogo": "Benevento",
+   "titolo": "Il noce delle streghe: da dove nasce la leggenda",
+   "testo": "A Benevento tutti abbiamo sentito parlare del noce delle janare. Ma la storia comincia prima delle streghe, con i Longobardi.\n\nSecondo le fonti antiche, i guerrieri longobardi appendevano una pelle di caprone a un albero sacro vicino al fiume Sabato e la colpivano girandoci intorno a cavallo. La Vita di san Barbato, vescovo della città nel VII secolo, racconta che fu lui ad abbattere l'albero e a strapparne le radici: gli storici però la leggono come un racconto devoto, dove leggenda e storia si mescolano.\n\nPoi si disse che il noce era rinato. Nel 1428 a Todi una donna processata per stregoneria, Matteuccia, confessò sotto tortura di volare fino al noce di Benevento, e finì sul rogo. Nel Seicento il medico beneventano Pietro Piperno gli dedicò un intero trattato.\n\nSecondo i vostri nonni, dove stava il noce?",
+   "fonti": [
+    {
+     "titolo": "Wikipedia – Noce di Benevento",
+     "url": "https://it.wikipedia.org/wiki/Noce_di_Benevento"
+    },
+    {
+     "titolo": "Treccani, Dizionario Biografico degli Italiani – Barbato, santo (A. Pratesi, vol. 6, 1964)",
+     "url": "https://www.treccani.it/enciclopedia/santo-barbato_(Dizionario-Biografico)/"
+    },
+    {
+     "titolo": "Wikipedia – Matteuccia da Todi",
+     "url": "https://it.wikipedia.org/wiki/Matteuccia_da_Todi"
+    },
+    {
+     "titolo": "Wikisource – P. Piperno, Della superstitiosa noce di Benevento (1640)",
+     "url": "https://it.wikisource.org/wiki/Della_superstitiosa_noce_di_Benevento"
+    }
+   ],
+   "immagine": {
+    "file": "/img/curiosita/noce-delle-streghe.jpg",
+    "credito": "Incisione beneventana del XVIII secolo · pubblico dominio",
+    "pagina": "https://commons.wikimedia.org/wiki/File%3ASan_Barbato_abbatte_il_noce.JPG"
+   }
+  },
+  {
+   "slug": "maleventum-beneventum",
+   "data": "2026-10-25",
+   "categoria": "storia",
+   "luogo": "Benevento",
+   "titolo": "Maleventum o Beneventum? Il nome che i Romani vollero cambiare",
+   "testo": "Prima di chiamarsi Benevento, la nostra città aveva un nome che alle orecchie dei Romani suonava male: Maleventum.\n\nProbabilmente il \"male\" non c'entrava niente. Era la forma latina di un antico nome sannita, che in greco si scriveva Maloenton. Ma i Romani, attenti ai presagi, ci sentivano dentro un \"malum eventum\", un cattivo esito. Così, dopo la vittoria su Pirro, combattuta proprio da queste parti nel 275 a.C., e dopo la fondazione della colonia latina nel 268 a.C., la città diventò Beneventum: il buon esito.\n\nLo ricorda anche Plinio il Vecchio nella sua Storia naturale, dove scrive che il nome fu cambiato per avere un auspicio migliore. Da allora il \"bene\" non ce lo ha più tolto nessuno.\n\nA voi a scuola l'avevano raccontata così?",
+   "fonti": [
+    {
+     "titolo": "Treccani, Enciclopedia Italiana (1930) – Benevento",
+     "url": "https://www.treccani.it/enciclopedia/benevento_(Enciclopedia-Italiana)/"
+    },
+    {
+     "titolo": "Wikipedia – Benevento (Età romana)",
+     "url": "https://it.wikipedia.org/wiki/Benevento"
+    },
+    {
+     "titolo": "Wikipedia – Storia di Benevento (Origine del nome)",
+     "url": "https://it.wikipedia.org/wiki/Storia_di_Benevento"
+    },
+    {
+     "titolo": "Plinio il Vecchio, Naturalis Historia III, 105 (testo latino, LacusCurtius – Univ. di Chicago)",
+     "url": "https://penelope.uchicago.edu/Thayer/L/Roman/Texts/Pliny_the_Elder/3*.html"
+    }
+   ],
+   "immagine": {
+    "file": "/img/curiosita/maleventum-beneventum.jpg",
+    "credito": "Foto: Mongolo1984 · CC BY-SA 4.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File%3AArco_di_Traiano_%28Benevento%29_01.jpg"
+   }
+  },
+  {
+   "slug": "ciro-dinosauro-pietraroja",
+   "data": "2026-10-26",
+   "categoria": "paese",
+   "luogo": "Pietraroja",
+   "titolo": "Ciro, il piccolo dinosauro venuto alla luce a Pietraroja",
+   "testo": "A Pietraroja, sul Matese, è venuto alla luce un fossile che nel 1998 è finito sulla copertina di Nature, una delle riviste scientifiche più importanti. Gli studiosi lo chiamano Scipionyx samniticus, ma per tutti è Ciro.\n\nEra un cucciolo di dinosauro predatore vissuto più di 110 milioni di anni fa. Lo trovò all'inizio degli anni Ottanta un appassionato di fossili, Giovanni Todesco, ma la sua importanza fu riconosciuta solo nel 1993. Nella roccia si sono conservate tracce dell'intestino, della trachea, dei muscoli e perfino gli avanzi degli ultimi pasti: pesci e piccoli rettili.\n\nIl nome vuol dire \"artiglio di Scipione\", e samniticus sta per \"del Sannio\". L'originale è custodito a Benevento dalla Soprintendenza, una copia si trova al Paleolab di Pietraroja.\n\nVoi siete mai andati a trovarlo?",
+   "fonti": [
+    {
+     "titolo": "Ministero della Cultura – Soprintendenza ABAP Caserta e Benevento: Scipionyx samniticus",
+     "url": "https://cultura.gov.it/luogo/soprintendenza-archeologia-belle-arti-e-paesaggio-per-le-province-di-caserta-e-benevento-scipionyx-samniticus"
+    },
+    {
+     "titolo": "Wikipedia – Scipionyx samniticus",
+     "url": "https://it.wikipedia.org/wiki/Scipionyx_samniticus"
+    },
+    {
+     "titolo": "MuseiOnline – Paleolab di Pietraroja",
+     "url": "https://www.museionline.info/musei/paleolab-di-pietraroja"
+    }
+   ],
+   "immagine": {
+    "file": "/img/curiosita/ciro-dinosauro-pietraroja.jpg",
+    "credito": "Foto: Domenico Lombardi · GFDL / CC BY-SA 3.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File%3APietraroja.JPG"
+   }
+  },
+  {
+   "slug": "liquore-strega",
+   "data": "2026-10-27",
+   "categoria": "cibo",
+   "luogo": "Benevento",
+   "titolo": "Perché il liquore di Benevento si chiama Strega",
+   "testo": "Giallo come il sole e con un nome che a Benevento non poteva essere altro: lo Strega nasce qui nel 1860.\n\nLo creò Giuseppe Alberti, che in città aveva aperto un caffè nella piazza principale. Per il nome scelse di richiamare l'antica leggenda che voleva Benevento terra di sabba e di streghe. La ricetta parte ancora oggi dalla macinatura di circa 70 erbe e spezie, tra cui la menta del Sannio, il ginepro dell'Appennino e la cannella di Ceylon. Il colore giallo viene dallo zafferano, e prima di essere imbottigliato il liquore riposa a lungo in tini di rovere.\n\nC'è poi un'altra storia legata a quel nome: nel 1947 Guido Alberti, con Maria e Goffredo Bellonci, fece nascere il Premio Strega, oggi tra i premi letterari più importanti d'Italia.\n\nVoi lo usate nei dolci o lo bevete liscio?",
+   "fonti": [
+    {
+     "titolo": "Strega Alberti – La storia",
+     "url": "https://www.strega.it/la-storia/"
+    },
+    {
+     "titolo": "Strega Alberti – Liquore Strega",
+     "url": "https://www.strega.it/liquore-strega/"
+    },
+    {
+     "titolo": "Wikipedia – Liquore Strega",
+     "url": "https://it.wikipedia.org/wiki/Liquore_Strega"
+    }
+   ],
+   "immagine": {
+    "file": "/img/curiosita/liquore-strega.jpg",
+    "credito": "Foto: Calum Tomeny · CC BY 3.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File%3AStrega.jpg"
+   }
+  },
+  {
+   "slug": "scopa-dietro-la-porta-janara",
+   "data": "2026-10-28",
+   "categoria": "superstizione",
+   "luogo": "Benevento",
+   "titolo": "La scopa dietro la porta: il vecchio trucco contro la janara",
+   "testo": "Una scopa appoggiata dietro la porta, oppure un po' di sale sulla soglia. Una volta, nel Beneventano, si faceva così per tenere lontana la janara.\n\nSecondo la tradizione la nostra strega di notte entrava in casa passando sotto la porta. Davanti alla scopa o al sale, però, non resisteva: si fermava a contare i fili uno per uno, o i granelli. Intanto arrivava l'alba e doveva scappare. Lo stesso si faceva davanti alle stalle, perché si raccontava che la janara prendesse le giumente, le cavalcasse per tutta la notte e lasciasse le criniere piene di treccine.\n\nE forse anche il suo nome ha a che fare con la porta: c'è chi lo fa derivare dal latino ianua, che vuol dire proprio porta, e chi da Diana, la dea della luna.\n\nIn casa vostra la scopa stava dietro la porta?",
+   "fonti": [
+    {
+     "titolo": "Wikipedia – Janara",
+     "url": "https://it.wikipedia.org/wiki/Janara"
+    },
+    {
+     "titolo": "Wikipedia – Noce di Benevento (sezione I sabba e i malefici)",
+     "url": "https://it.wikipedia.org/wiki/Noce_di_Benevento"
+    },
+    {
+     "titolo": "Touring Club Italiano – Benevento: Percorsi Magici alla scoperta della Città delle Streghe",
+     "url": "https://www.touringclub.it/eventi/benevento-percorsi-magici-alla-scoperta-della-citta-delle-streghe"
+    }
+   ]
+  },
+  {
+   "slug": "gregorio-viii-terza-crociata",
+   "data": "2026-10-29",
+   "categoria": "accadde oggi",
+   "luogo": "Benevento",
+   "titolo": "29 ottobre 1187: il papa nato a Benevento e la Terza crociata",
+   "testo": "Il 29 ottobre 1187, a Ferrara, un papa nato a Benevento emanava l'appello da cui partì la Terza crociata.\n\nSi chiamava Alberto di Morra ed era stato eletto appena otto giorni prima, il 21 ottobre, prendendo il nome di Gregorio VIII. Per i regni cristiani di Terrasanta era un momento drammatico: Saladino aveva conquistato Gerusalemme. La risposta del nuovo papa fu la bolla Audita tremendi, che chiamava la cristianità a riprendersi la Città santa.\n\nIl suo pontificato durò appena 57 giorni. A dicembre era a Pisa, dove mise pace tra pisani e genovesi; lì si ammalò e morì il 17 dicembre 1187. Fu sepolto nel Duomo di Pisa.\n\nLo sapevate che tra i papi c'è stato anche un beneventano?",
+   "fonti": [
+    {
+     "titolo": "Treccani, Enciclopedia dei Papi (2000) – Gregorio VIII (T. di Carpegna Falconieri)",
+     "url": "https://www.treccani.it/enciclopedia/gregorio-viii_(Enciclopedia-dei-Papi)/"
+    },
+    {
+     "titolo": "Wikipedia – Papa Gregorio VIII",
+     "url": "https://it.wikipedia.org/wiki/Papa_Gregorio_VIII"
+    },
+    {
+     "titolo": "Wikipedia – Audita tremendi",
+     "url": "https://it.wikipedia.org/wiki/Audita_tremendi"
+    },
+    {
+     "titolo": "Wikipedia (en) – Audita tremendi (nota: Bird, Peters, Powell, Crusade and Christendom, Univ. of Pennsylvania Press 2014, p. 4)",
+     "url": "https://en.wikipedia.org/wiki/Audita_tremendi"
+    }
+   ],
+   "immagine": {
+    "file": "/img/curiosita/gregorio-viii-terza-crociata.jpg",
+    "credito": "Disegno del XVII secolo · pubblico dominio",
+    "pagina": "https://commons.wikimedia.org/wiki/File%3AA07_GREGORIO_VIII.jpg"
+   }
+  },
+  {
+   "slug": "forche-caudine",
+   "data": "2026-10-30",
+   "categoria": "paese",
+   "luogo": "Arpaia",
+   "titolo": "Forche Caudine: la trappola dei Sanniti che umiliò Roma",
+   "testo": "Quando diciamo \"passare sotto le forche caudine\" stiamo citando, senza saperlo, una storia della nostra terra.\n\nEra il 321 a.C., in piena guerra tra Roma e i Sanniti. Racconta Tito Livio che il comandante sannita Gaio Ponzio mandò dei soldati travestiti da pastori a spargere una notizia falsa: i Sanniti stavano assediando Luceria. I consoli romani, per arrivare prima, scelsero la strada più breve, una valle chiusa tra due gole strette. Le trovarono sbarrate. Senza via d'uscita, l'esercito si arrese e dovette passare sotto il giogo, disarmato e con una sola veste addosso: un'umiliazione che Roma ricordò per secoli.\n\nDove sia successo di preciso si discute ancora. L'ipotesi più seguita indica la valle tra Arpaia e Arienzo, con la stretta di Arpaia come seconda gola.\n\nSecondo voi dove stavano le Forche?",
+   "fonti": [
+    {
+     "titolo": "Treccani, Vocabolario – caudino (forche caudine)",
+     "url": "https://www.treccani.it/vocabolario/caudino/"
+    },
+    {
+     "titolo": "Wikipedia – Battaglia delle Forche Caudine",
+     "url": "https://it.wikipedia.org/wiki/Battaglia_delle_Forche_Caudine"
+    }
+   ],
+   "immagine": {
+    "file": "/img/curiosita/forche-caudine.jpg",
+    "credito": "Foto: Decan · CC BY-SA 4.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File%3AStretta_di_Arpaia_vista_da_Montesarchio.jpg"
+   }
+  },
+  {
+   "slug": "detto-pappecio-noce",
+   "data": "2026-10-31",
+   "categoria": "detto",
+   "luogo": "Solopaca",
+   "titolo": "«Dammi tempo che ti buco»: il detto del pàppecio e della noce",
+   "testo": "C'è un proverbio che si ritrova in più paesi del Sannio, ma non sempre con lo stesso significato. A Solopaca si dice: «Dicìu u pàppecio a nóce: dàmme tiémpo ca te spertóso». Vuol dire: disse il tonchio, un insettino, alla noce: dammi tempo che ti buco.\n\nPer i solopachesi la morale è che con la costanza si ottiene tutto. A Cerreto Sannita lo stesso detto suona «Diceu i puapp’c’ vicin’ a noc’: damm’ temp’ ca t’ sc’pr’tós’», ma la raccolta dei proverbi cerretesi gli dà un altro senso: la vendetta, prima o poi, arriva.\n\nLo conoscono anche a Napoli, nella versione con 'o pappice. Stessa noce, due morali diverse.\n\nAl vostro paese come si dice, e che cosa vuol dire?",
+   "fonti": [
+    {
+     "titolo": "P. Bello (a cura di), Proverbi, detti e frasari dialettali sannitici, 2014-2015 (PDF su vesuvioweb.com) – Solopaca p. 219, Cerreto Sannita p. 60",
+     "url": "https://www.vesuvioweb.com/it/wp-content/uploads/Proverbi-detti-e-frasari-dialettali-sannitici-Di-Pierino-Bello-vesuvioweb-2015.pdf"
+    },
+    {
+     "titolo": "Wikiquote – Proverbi napoletani (cita G. Tucci, Dicette Pulicenella..., 1966, p. 156)",
+     "url": "https://it.wikiquote.org/wiki/Proverbi_napoletani"
+    }
+   ],
+   "immagine": {
+    "file": "/img/curiosita/detto-pappecio-noce.jpg",
+    "credito": "Foto: George Chernilevsky · pubblico dominio",
+    "pagina": "https://commons.wikimedia.org/wiki/File%3AJuglans_regia_2009_G2.jpg"
+   }
+  },
+  {
+   "slug": "riti-settennali-guardia-sanframondi",
+   "data": "2026-11-01",
+   "categoria": "tradizione",
+   "luogo": "Guardia Sanframondi",
+   "titolo": "Guardia Sanframondi, il paese che ogni sette anni si ferma",
+   "testo": "Ogni sette anni, ad agosto, Guardia Sanframondi vive una settimana speciale: sono i Riti settennali di penitenza in onore dell'Assunta.\n\nSi comincia il lunedì dopo Ferragosto e si chiude la domenica. I quattro rioni, Croce, Portella, Fontanella e Piazza, sfilano a turno con i loro \"misteri\", scene viventi tratte dalla Bibbia e dalla vita dei santi, ognuno con il suo coro. La domenica c'è la processione generale con la statua della Madonna. Dietro il mistero di San Girolamo, portato dal rione Croce, camminano i battenti incappucciati: escono dal santuario all'indietro, per non voltare le spalle all'Assunta, e si percuotono il petto.\n\nL'ultima volta è stato dal 19 al 25 agosto 2024. La prossima toccherà al 2031.\n\nChi di voi c'era nel 2024?",
+   "fonti": [
+    {
+     "titolo": "Wikipedia – Riti settennali di penitenza in onore dell'Assunta",
+     "url": "https://it.wikipedia.org/wiki/Riti_settennali_di_penitenza_in_onore_dell%27Assunta"
+    },
+    {
+     "titolo": "Wikipedia – Guardia Sanframondi",
+     "url": "https://it.wikipedia.org/wiki/Guardia_Sanframondi"
+    },
+    {
+     "titolo": "Ritisettennali.org – Riti 2024, informazioni sulle processioni rionali",
+     "url": "https://www.ritisettennali.org/2024/08/riti-2024-informazioni-relative-alle-processioni-rionali/"
+    },
+    {
+     "titolo": "Ritisettennali.org – I battenti",
+     "url": "https://www.ritisettennali.org/le-componenti-dei-riti/i-battenti/"
+    }
+   ],
+   "immagine": {
+    "file": "/img/curiosita/riti-settennali-guardia-sanframondi.jpg",
+    "credito": "Foto: Adam91 · CC BY 3.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File%3APanorama_di_Guardia_Sanframondi.JPG"
+   }
+  },
+  {
+   "slug": "santa-sofia-longobardi",
+   "data": "2026-11-02",
+   "categoria": "storia",
+   "luogo": "Benevento",
+   "titolo": "Santa Sofia, la chiesa a stella dei Longobardi",
+   "testo": "Nel cuore di Benevento c'è una chiesa dalla forma rarissima. Santa Sofia la fece costruire intorno al 760 il duca longobardo Arechi II, e la dedicò alla Sapienza divina, come la grande Hagia Sophia di Costantinopoli.\n\nLa sua pianta è a stella: all'interno un anello di colonne disposte a esagono, intorno un giro di pilastri a forma di decagono. Per i Longobardi era il santuario nazionale del loro popolo. I terremoti, quello del 1688 soprattutto, e i rifacimenti barocchi la cambiarono molto; un restauro del Novecento le ha restituito la pianta originale.\n\nDal 25 giugno 2011 la chiesa e il suo chiostro fanno parte del patrimonio mondiale UNESCO, nel sito \"I Longobardi in Italia. I luoghi del potere\".\n\nQual è il vostro angolo preferito di Santa Sofia?",
+   "fonti": [
+    {
+     "titolo": "Italia Langobardorum – Chiesa di Santa Sofia (Benevento)",
+     "url": "https://longobardinitalia.it/scopri/benevento/chiesa-di-santa-sofia/"
+    },
+    {
+     "titolo": "Italia Langobardorum – Il sito UNESCO",
+     "url": "https://longobardinitalia.it/il-sito-unesco/"
+    },
+    {
+     "titolo": "Wikipedia – Chiesa di Santa Sofia (Benevento)",
+     "url": "https://it.wikipedia.org/wiki/Chiesa_di_Santa_Sofia_(Benevento)"
+    }
+   ],
+   "immagine": {
+    "file": "/img/curiosita/santa-sofia-longobardi.jpg",
+    "credito": "Foto: Bernard Gagnon · CC0",
+    "pagina": "https://commons.wikimedia.org/wiki/File%3ASanta_Sofia%2C_Benevento_01.jpg"
+   }
+  }
+ ]
+}
