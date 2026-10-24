@@ -1,7 +1,66 @@
 {
- "aggiornato": "2026-10-24T16:08+02:00",
+ "aggiornato": "2026-10-24T17:09+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "san-giorgio-la-molara-via-straniera-chiusa-26-ottobre-10-novembre",
+   "titolo": "San Giorgio la Molara, via Straniera chiusa dal 26 ottobre al 10 novembre per lavori sulla strada",
+   "titolo_google": "San Giorgio la Molara, via Straniera chiusa fino al 10 novembre",
+   "sintesi": "Dalle 8 di lunedì 26 ottobre alle 23:59 di martedì 10 novembre via Straniera, a San Giorgio la Molara, è chiusa a veicoli, biciclette e pedoni per scavi e lavori di manutenzione straordinaria. I residenti possono arrivare a casa dal punto più vicino.",
+   "categoria": "strade",
+   "zona": "fortore",
+   "luogo": "San Giorgio la Molara, via Straniera",
+   "pubblicato": "2026-10-24T17:00:00+02:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "immagine": "lavori-stradali",
+   "traffico": "chiusa",
+   "in_vigore_dal": "2026-10-26",
+   "in_vigore_fino": "2026-11-10",
+   "fonti": [
+    {
+     "nome": "Comune di San Giorgio la Molara",
+     "url": "https://comune.sangiorgiolamolara.bn.it/albo-pretorio/?dettaglio_id=306081"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A San Giorgio la Molara, nel Fortore, via Straniera resta chiusa dalle 8 di lunedì 26 ottobre alle 23:59 di martedì 10 novembre 2026. Il divieto di transito vale per l'intero tratto comunale della strada e per veicoli a motore, biciclette, pedoni e animali condotti. Lo ha stabilito il Comune con un'ordinanza firmata il 24 ottobre.",
+      "fonti": [
+       "Comune di San Giorgio la Molara"
+      ]
+     },
+     {
+      "testo": "La chiusura serve per i lavori di manutenzione straordinaria: bisogna scavare il piano stradale e fare le opere collegate. I residenti possono raggiungere le case dal punto più vicino, con senso unico alternato e compatibilmente con le manovre del cantiere. La ditta deve garantire il passaggio ai mezzi di soccorso, mettere la segnaletica di «strada chiusa» e usare operai con la paletta o i semafori mobili.",
+      "fonti": [
+       "Comune di San Giorgio la Molara"
+      ]
+     },
+     {
+      "testo": "La circolazione deve tornare normale dalle 00:00 dell'11 novembre 2026, con la strada e la segnaletica rimesse come prima.",
+      "fonti": [
+       "Comune di San Giorgio la Molara"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quali strade alternative siano consigliate durante la chiusura."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di San Giorgio la Molara",
+      "titolo": "CHIUSURA TEMPORANEA STRADA COMUNALE “VIA STRANIERA” DAL 26/10/2026 AL 10/11/2026, PER LAVORI DI MANUTENZIONE STRAORDINARIA.",
+      "url": "https://comune.sangiorgiolamolara.bn.it/albo-pretorio/?dettaglio_id=306081",
+      "data": "24 ott"
+     }
+    ]
+   },
+   "foto": "lavori-stradali-8"
+  },
   {
    "id": "benevento-monumenti-aperti-2026-salvatore-rocca-rettori",
    "titolo": "Benevento, Monumenti Aperti: visite alla chiesa del SS. Salvatore e alla Rocca dei Rettori con gli studenti come guide",
