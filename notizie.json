@@ -1,7 +1,108 @@
 {
- "aggiornato": "2026-10-24T19:08+02:00",
+ "aggiornato": "2026-10-24T20:08+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "sant-agata-de-goti-pronto-soccorso-h24-tar-puglianello",
+   "titolo": "Sant'Agata de' Goti, il TAR ordina all'ospedale San Pio di riportare il pronto soccorso h24",
+   "titolo_google": "Sant'Agata de' Goti, il TAR ordina il pronto soccorso h24",
+   "sintesi": "Il TAR Campania ha accolto il ricorso del Comune di Puglianello e ha ordinato all'Azienda ospedaliera San Pio di far tornare il pronto soccorso di Sant'Agata de' Goti aperto 24 ore su 24. Se non lo fa in 60 giorni, interviene un commissario già nominato.",
+   "categoria": "altro",
+   "zona": "caudina",
+   "immagine": "pronto-soccorso",
+   "luogo": "Sant'Agata de' Goti",
+   "pubblicato": "2026-10-24T19:18:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/24/ospedale-santagata-il-tar-accoglie-il-ricorso-del-comune-di-puglianello-il-pronto-soccorso-dovra-tornare-h24/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/sanita-rubano-dal-tar-un-altro-risultato-importante-sul-pronto-soccorso-di-santagata-de-goti/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il pronto soccorso dell'ospedale di Sant'Agata de' Goti dovrà tornare aperto 24 ore su 24. Lo ha ordinato il TAR Campania, il tribunale che giudica i ricorsi contro gli atti della pubblica amministrazione, con l'ordinanza n. 5913 del 23 ottobre 2026. Il ricorso era del Comune di Puglianello e l'ordine è rivolto all'Azienda ospedaliera San Pio, la società sanitaria che gestisce anche l'ospedale di Sant'Agata.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Se l'Azienda non esegue l'ordine entro 60 giorni, interviene un commissario ad acta, cioè una persona incaricata dal tribunale di fare al posto dell'ente. Secondo le due testate il commissario è già stato nominato.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "La notizia è stata diffusa dal sindaco di Puglianello, Francesco Maria Rubano, che è anche parlamentare di Forza Italia. Rubano ricorda che l'udienza del 23 ottobre è la seconda volta che un giudice interviene sul tema: una prima decisione del TAR, nel novembre dello scorso anno, aveva evitato la chiusura del pronto soccorso e dell'ospedale. Per Rubano il pronto soccorso «non può funzionare soltanto fino alle 18» e chiede alla direzione generale del San Pio di riaprirlo h24 subito.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Il consigliere regionale Fernando Errico ha commentato la decisione come un passaggio importante per il territorio e per il diritto alla salute nelle aree interne.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "novembre 2025",
+      "fatto": "Una prima decisione del TAR, su ricorso del Comune di Puglianello, evita la chiusura del pronto soccorso e dell'ospedale (secondo il sindaco Rubano).",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     },
+     {
+      "data": "23 ottobre",
+      "fatto": "Il TAR Campania accoglie il ricorso con l'ordinanza n. 5913 e ordina il ripristino del pronto soccorso h24 entro 60 giorni.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "L'ordinanza n. 5913 del 23 ottobre 2026, l'ordine di ripristinare il pronto soccorso h24 e il termine di 60 giorni con commissario ad acta già nominato.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Cosa risponde l'Azienda ospedaliera San Pio e se riaprirà il pronto soccorso h24 prima dei 60 giorni.",
+     "Chi è il commissario ad acta nominato."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Ospedale Sant’Agata, il TAR accoglie il ricorso del Comune di Puglianello: il Pronto Soccorso dovrà tornare h24",
+      "url": "https://www.ntr24.tv/2026/10/24/ospedale-santagata-il-tar-accoglie-il-ricorso-del-comune-di-puglianello-il-pronto-soccorso-dovra-tornare-h24/",
+      "data": "24 ott, 19:08"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Sanità, Rubano: “Dal Tar un altro risultato importante sul pronto soccorso di Sant’Agata de’ Goti”",
+      "url": "https://www.anteprima24.it/benevento/sanita-rubano-dal-tar-un-altro-risultato-importante-sul-pronto-soccorso-di-santagata-de-goti/",
+      "data": "24 ott, 19:18"
+     }
+    ]
+   },
+   "foto": "pronto-soccorso-2"
+  },
   {
    "id": "benevento-primavera-2-avellino-5-2-24-ottobre",
    "titolo": "Benevento Primavera, derby vinto 5-2 contro l'Avellino: la squadra sale a 13 punti",
@@ -12,12 +113,20 @@
    "zona": "benevento",
    "luogo": "Benevento, Avellola",
    "pubblicato": "2026-10-24T17:54:00+02:00",
-   "stato": "una_fonte",
+   "stato": "confermata",
    "rilevante": false,
    "fonti": [
     {
      "nome": "BeneventoNews24",
      "url": "https://www.beneventonews24.it/2026/10/24/benevento-il-derby-di-primavera-2-e-giallorosso-5-2-allavellino-allavellola/"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/calcio-primavera-2-vittoria-schiacciante-del-benevento-che-fa-suo-il-sentito-derby-con-lavellino"
+    },
+    {
+     "nome": "NTR24 Sport",
+     "url": "https://sport.ntr24.tv/2026/10/24/benevento-primavera-derby-senza-storia-avellino-travolto-5-2-decisivi-anche-i-rinforzi-della-prima-squadra/"
     }
    ],
    "articolo": {
@@ -35,15 +144,35 @@
       ]
      },
      {
-      "testo": "Con questa vittoria il Benevento sale a 13 punti e si porta al quarto posto del girone.",
+      "testo": "Con questa vittoria il Benevento sale a 13 punti e si porta al quarto posto del girone, a una sola lunghezza dal Palermo terzo. L'Avellino resta fermo a 9 punti. Del Gaudio, Giugliano e Battista sono tre dei giocatori arrivati dalla prima squadra per aiutare i ragazzi di Panarelli; per NTR24 Sport però il successo non si spiega solo con loro, perché la squadra ha mostrato organizzazione e ha colpito con più giocatori.",
       "fonti": [
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "NTR24 Sport",
+       "Gazzetta di Benevento"
       ]
      }
     ],
     "cronologia": [],
-    "concordano": [],
-    "divergono": [],
+    "concordano": [
+     {
+      "testo": "Il risultato, 5-2, e i marcatori del Benevento (Del Gaudio, Giugliano, Coltorti, Amico, Battista) e dell'Avellino (Tosti, Raimondi).",
+      "fonti": [
+       "BeneventoNews24",
+       "Gazzetta di Benevento",
+       "NTR24 Sport"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "Nell'elenco delle reti la Gazzetta di Benevento scrive 5' per il gol di Del Gaudio, mentre nel testo e per le altre due testate è al 35': vale il 35'.",
+      "fonti": [
+       "Gazzetta di Benevento",
+       "BeneventoNews24",
+       "NTR24 Sport"
+      ]
+     }
+    ],
     "non_si_sa": [
      "La prossima partita della Primavera."
     ],
@@ -53,6 +182,18 @@
       "titolo": "Benevento, il derby di Primavera 2 è giallorosso: 5-2 all’Avellino all’Avellola",
       "url": "https://www.beneventonews24.it/2026/10/24/benevento-il-derby-di-primavera-2-e-giallorosso-5-2-allavellino-allavellola/",
       "data": "24 ott, 17:54"
+     },
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "Calcio, Primavera 2: Vittoria schiacciante del Benevento che fa suo il sentito derby con l'Avellino",
+      "url": "https://www.gazzettabenevento.it/it/calcio-primavera-2-vittoria-schiacciante-del-benevento-che-fa-suo-il-sentito-derby-con-lavellino",
+      "data": "24 ott, 18:09"
+     },
+     {
+      "nome": "NTR24 Sport",
+      "titolo": "Benevento Primavera, derby senza storia: Avellino travolto 5-2. Decisivi anche i rinforzi della prima squadra",
+      "url": "https://sport.ntr24.tv/2026/10/24/benevento-primavera-derby-senza-storia-avellino-travolto-5-2-decisivi-anche-i-rinforzi-della-prima-squadra/",
+      "data": "24 ott, 19:49"
      }
     ]
    }
@@ -3312,15 +3453,15 @@
   },
   {
    "id": "yolo-benevento-dinamo-taranto-24-ottobre",
-   "titolo": "Basket B femminile, la YOLO+ Miwa Benevento ospita la Dinamo Taranto sabato 24 ottobre alle 18 al PalaMiwa",
-   "titolo_google": "Basket: YOLO+ Benevento contro Taranto sabato alle 18",
-   "sintesi": "Sabato 24 ottobre alle 18 la YOLO+ Miwa Basket Benevento gioca in casa, al PalaMiwa, contro la Dinamo Taranto, capolista imbattuta del girone. L'ingresso è gratuito.",
+   "titolo": "Basket B femminile, la YOLO+ Miwa Benevento perde 55-74 in casa con la capolista Taranto",
+   "titolo_google": "Basket: YOLO+ Benevento battuta 55-74 dal Taranto",
+   "sintesi": "Sabato 24 ottobre al PalaMiwa la YOLO+ Miwa Basket Benevento ha perso 55-74 contro la Dinamo Taranto, capolista ancora imbattuta. Le beneventane giocavano senza Tolardo e Manganiello.",
    "categoria": "sport",
    "sport": "basket",
    "zona": "benevento",
    "luogo": "Benevento",
-   "pubblicato": "2026-10-23T09:54:00+02:00",
-   "stato": "confermata",
+   "pubblicato": "2026-10-24T20:04:00+02:00",
+   "stato": "ufficiale",
    "rilevante": false,
    "fonti": [
     {
@@ -3330,33 +3471,53 @@
     {
      "nome": "BeneventoNews24",
      "url": "https://www.beneventonews24.it/2026/10/23/basket-la-yolo-torna-in-casa-sabato-il-match-contro-la-dinamo-taranto/"
+    },
+    {
+     "nome": "Miwa Basket Benevento",
+     "url": "https://www.cestisticabenevento.it/2026/10/24/unindomita-yolo-cede-il-passo-alla-capolista-taranto/"
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Sabato 24 ottobre alle 18 la YOLO+ Miwa Basket Benevento torna a giocare in casa, al PalaMiwa di Benevento, contro la Dinamo Taranto. L'ingresso al palazzetto è gratuito.",
+      "testo": "Sabato 24 ottobre la YOLO+ Miwa Basket Benevento ha perso 55-74 al PalaMiwa contro la Dinamo Taranto, capolista del girone e ancora imbattuta. Le sannite hanno giocato senza Tolardo e Manganiello, e secondo la società le rotazioni sono rimaste ridotte all'osso.",
       "fonti": [
-       "NTR24 Sport",
-       "BeneventoNews24"
-      ]
+       "Miwa Basket Benevento"
+      ],
+      "giorno": "2026-10-24"
      },
      {
-      "testo": "Il Taranto è la squadra da battere: guida il girone e dopo cinque giornate non ha ancora perso. La YOLO+ finora ha vinto una sola partita. Per le beneventane, allenate da coach Pasquariello, è il terzo impegno in meno di una settimana.",
+      "testo": "Il primo quarto è finito 19-23. Nel secondo il Taranto ha continuato a tirare bene da tre punti, con Buranella e Cenci, e a segnare sotto canestro con Jauregui: all'intervallo il punteggio era 32-42. Nel terzo quarto Buranella ha aggiunto altre tre triple e il Taranto è andato sul 42-64. L'ultimo periodo non ha cambiato la partita.",
       "fonti": [
-       "NTR24 Sport",
-       "BeneventoNews24"
-      ]
+       "Miwa Basket Benevento"
+      ],
+      "giorno": "2026-10-24"
      },
      {
-      "testo": "Tra le giocatrici del Taranto le due testate citano soprattutto l'ala Jauregui, che segna 19,4 punti a partita, le guardie Mondano e Buranello e, sotto canestro, Llorente e Palmisano.",
+      "testo": "Per la YOLO+ le più prolifiche sono state Grzenkowicz con 16 punti, Saccomanno con 14, Mantineo con 10 e Montella con 9; Savarese ne ha fatti 6. La società sottolinea che le giocatrici non hanno mollato e hanno messo grinta e atteggiamento fino alla fine.",
+      "fonti": [
+       "Miwa Basket Benevento"
+      ],
+      "giorno": "2026-10-24"
+     },
+     {
+      "testo": "Il Taranto, che guida il girone e dopo cinque giornate non aveva ancora perso, era la squadra da battere. La YOLO+ prima di questa gara aveva vinto una sola partita. Per le beneventane, allenate da coach Pasquariello, era il terzo impegno in meno di una settimana. L'ingresso al palazzetto era gratuito.",
       "fonti": [
        "NTR24 Sport",
        "BeneventoNews24"
+      ],
+      "giorno": "2026-10-23"
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "24 ottobre",
+      "fatto": "Al PalaMiwa Benevento-Taranto finisce 55-74 (19-23, 32-42, 42-64).",
+      "fonti": [
+       "Miwa Basket Benevento"
       ]
      }
     ],
-    "cronologia": [],
     "concordano": [
      {
       "testo": "Data, ora e luogo della partita (sabato 24 ottobre, ore 18, PalaMiwa), l'ingresso gratuito e il Taranto capolista imbattuto.",
@@ -3380,8 +3541,21 @@
       "titolo": "Basket, la YOLO+ torna in casa: sabato il match contro la Dinamo Taranto",
       "url": "https://www.beneventonews24.it/2026/10/23/basket-la-yolo-torna-in-casa-sabato-il-match-contro-la-dinamo-taranto/",
       "data": "23 ott, 09:54"
+     },
+     {
+      "nome": "Miwa Basket Benevento",
+      "titolo": "Un’indomita YOLO+ cede il passo alla capolista Taranto",
+      "url": "https://www.cestisticabenevento.it/2026/10/24/unindomita-yolo-cede-il-passo-alla-capolista-taranto/",
+      "data": "24 ott, 20:04"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Sabato 24 ottobre la YOLO+ ha perso in casa 55-74 con la Dinamo Taranto.",
+     "fonti": [
+      "Miwa Basket Benevento"
+     ],
+     "quando": "2026-10-24T20:08+02:00"
+    }
    }
   },
   {
