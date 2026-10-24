@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Sul Pi di casa, alle 12: fa partire la pubblicazione del sito su GitHub, così la curiosità del Sannio del giorno esce
 puntuale sui social (strumenti/curiosita_social.py) e sul sito. Con --controlla (12:25 e 12:50): se sul sito la
-curiosità di oggi ancora non c'è, la fa ripartire (gli orari di GitHub a volte saltano). Usa la chiave della
-sentinella (github.conf: solo Actions).
+curiosità di oggi ancora non c'è, la fa ripartire (gli orari di GitHub a volte saltano). Con --giro (alle :40 dalle 6
+alle 21): un giro in più ogni ora per i social, così escono fino a due notizie all'ora (facebook.py e instagram.py: una
+ogni 25 minuti; voluto dal proprietario il 24 ott 2026). Usa la chiave della sentinella (github.conf: solo Actions).
 
-Uso sul Pi:  python3 ~/nb-fonti/sentinella/curiosita_via.py [--controlla]
+Uso sul Pi:  python3 ~/nb-fonti/sentinella/curiosita_via.py [--controlla | --giro]
 """
 import argparse
 import datetime as dt
@@ -32,6 +33,7 @@ def sul_sito_oggi(oggi):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--controlla", action="store_true")
+    ap.add_argument("--giro", action="store_true")
     a = ap.parse_args()
     adesso = dt.datetime.now().astimezone()
     oggi = adesso.date().isoformat()
@@ -43,7 +45,8 @@ def main():
         except Exception as e:
             print(f"{adesso:%Y-%m-%d %H:%M} non leggo il sito ({type(e).__name__}: {e}): rilancio")
     GitHub(leggi_chiave(os.path.join(CARTELLA, "github.conf"))).lancia("pubblica.yml")
-    print(f"{adesso:%Y-%m-%d %H:%M} pubblicazione avviata" + (" (la curiosità non era ancora sul sito)" if a.controlla else ""))
+    print(f"{adesso:%Y-%m-%d %H:%M} pubblicazione avviata" + (" (la curiosità non era ancora sul sito)" if a.controlla
+                                                             else " (giro delle :40 per i social)" if a.giro else ""))
 
 
 if __name__ == "__main__":
