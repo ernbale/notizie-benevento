@@ -1,7 +1,64 @@
 {
- "aggiornato": "2026-10-24T10:08+02:00",
+ "aggiornato": "2026-10-24T11:08+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "eav-sciopero-generale-30-ottobre-napoli-benevento",
+   "titolo": "EAV, venerdì 30 ottobre sciopero generale di 24 ore: sulla Napoli-Benevento bus sostitutivi regolari",
+   "titolo_google": "EAV, sciopero 30 ottobre: linea Napoli-Benevento",
+   "sintesi": "Per venerdì 30 ottobre 2026 il sindacato USB ha proclamato uno sciopero generale nazionale di 24 ore che tocca treni e bus. EAV scrive che sulla linea Napoli-Benevento il servizio sostitutivo con autobus sarà effettuato regolarmente.",
+   "categoria": "strade",
+   "zona": "provincia",
+   "immagine": "treno",
+   "luogo": "Linea Napoli-Benevento",
+   "pubblicato": "2026-10-24T07:16:00+02:00",
+   "in_vigore_fino": "2026-10-30",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "EAV",
+     "url": "https://www.eavsrl.it/linee-suburbane-avviso-di-sciopero-nazionale-di-24-ore-del-30-ottobre-2026/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Venerdì 30 ottobre 2026 c'è uno sciopero generale nazionale di 24 ore. Lo ha proclamato il sindacato USB per tutte le categorie pubbliche e private e interessa i servizi su ferro e su gomma. Lo comunica EAV, l'Ente Autonomo Volturno, la società dei trasporti della Campania.",
+      "fonti": [
+       "EAV"
+      ]
+     },
+     {
+      "testo": "Per la linea Napoli–Benevento, EAV scrive che «il servizio sostitutivo autobus verrà effettuato regolarmente». Per la linea Napoli–Piedimonte Matese, invece, l'avviso elenca i treni garantiti. Durante lo sciopero le corse dipendono da quanti lavoratori aderiscono.",
+      "fonti": [
+       "EAV"
+      ]
+     },
+     {
+      "testo": "Il sindacato chiede misure a tutela del potere d'acquisto di lavoratori e pensionati, più salari, pensioni e tutele occupazionali. EAV ricorda che all'ultimo sciopero proclamato da USB, il 28 novembre 2025, l'adesione fu del 5,52%.",
+      "fonti": [
+       "EAV"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Gli orari delle corse dei bus sostitutivi sulla Napoli–Benevento: l'avviso non li elenca."
+    ],
+    "fonti": [
+     {
+      "nome": "EAV",
+      "titolo": "Linee Suburbane: Avviso di sciopero nazionale di 24 ore del 30 ottobre 2026",
+      "url": "https://www.eavsrl.it/linee-suburbane-avviso-di-sciopero-nazionale-di-24-ore-del-30-ottobre-2026/",
+      "data": "24 ott, 07:16"
+     }
+    ]
+   },
+   "foto": "treno-6"
+  },
   {
    "id": "benevento-mensa-scolastica-centro-cottura-authentica-30-novembre",
    "titolo": "Benevento, mensa scolastica: Authentica promette il centro di cottura in città, a Ponte Valentino, entro il 30 novembre",
@@ -584,7 +641,7 @@
    "categoria": "cronaca",
    "zona": "benevento",
    "luogo": "Benevento, Corso Garibaldi",
-   "pubblicato": "2026-10-24T09:48:00+02:00",
+   "pubblicato": "2026-10-24T10:48:00+02:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
@@ -619,10 +676,40 @@
     {
      "nome": "Il Sannio Quotidiano",
      "url": "https://www.ilsannioquotidiano.it/2026/10/24/nuova-aggressione-in-centro-ragazza-picchiata-lungo-corso-garibaldi/"
+    },
+    {
+     "nome": "NTR24 (Mastella)",
+     "url": "https://www.ntr24.tv/2026/10/24/mastella-episodio-di-violenza-al-corso-faccio-appello-ad-unintegrazione-intelligente-della-componente-straniera/"
+    },
+    {
+     "nome": "Ottopagine (Mastella)",
+     "url": "https://www.ottopagine.it/bn/attualita/442033/violenza-al-corso-mastella-piu-controlli-su-divieto-vendita-alcolici-a-minori.shtml"
+    },
+    {
+     "nome": "Anteprima24 (Mastella)",
+     "url": "https://www.anteprima24.it/benevento/mastella-faccio-appello-ad-unintegrazione-intelligente-della-componente-straniera/"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Sabato 24 ottobre il sindaco Clemente Mastella ha commentato il fatto con una nota. Dice di aver sentito il Questore e che le forze dell'ordine hanno ricostruito in fretta la vicenda e identificato il presunto responsabile: secondo il sindaco una lite per futili motivi sarebbe degenerata. Augura alla ragazza ferita di riprendersi presto.",
+      "fonti": [
+       "NTR24 (Mastella)",
+       "Ottopagine (Mastella)",
+       "Anteprima24 (Mastella)"
+      ],
+      "giorno": "2026-10-24"
+     },
+     {
+      "testo": "Mastella annuncia che chiederà più controlli e un giro di vite sulla vendita di alcol ai minori e sul consumo di sostanze. Fa anche un appello a un'integrazione «intelligente» della presenza straniera in città: chiede che i migranti rispettino le regole. Sono sue dichiarazioni, non risultano atti ufficiali.",
+      "fonti": [
+       "NTR24 (Mastella)",
+       "Ottopagine (Mastella)",
+       "Anteprima24 (Mastella)"
+      ],
+      "giorno": "2026-10-24"
+     },
      {
       "testo": "Sabato 24 ottobre Anteprima24 scrive che il giovane è stato identificato già nella serata di venerdì. Gli agenti hanno visto le immagini di alcune telecamere di videosorveglianza: secondo il giornale non sarebbero emerse precise responsabilità penali da parte dell'uomo e, per questo, sarebbe probabile una denuncia a piede libero (in stato di libertà). Il Sannio Quotidiano scrive invece che l'autore sarebbe un giovane di origine straniera e che la Polizia si era messa sulle sue tracce.",
       "fonti": [
@@ -672,6 +759,13 @@
       "fonti": [
        "NTR24",
        "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Il presunto responsabile è stato identificato: lo scrivono Anteprima24 (24/10) e, dopo aver sentito il Questore, il sindaco Mastella nella sua nota.",
+      "fonti": [
+       "Anteprima24 (24/10)",
+       "NTR24 (Mastella)"
       ]
      }
     ],
@@ -754,14 +848,34 @@
       "titolo": "Nuova aggressione in centro: ragazza picchiata lungo corso Garibaldi",
       "url": "https://www.ilsannioquotidiano.it/2026/10/24/nuova-aggressione-in-centro-ragazza-picchiata-lungo-corso-garibaldi/",
       "data": "24 ott, 07:15"
+     },
+     {
+      "nome": "NTR24 (Mastella)",
+      "titolo": "Mastella: \"Episodio di violenza al Corso, faccio appello ad un'integrazione intelligente della componente straniera\"",
+      "url": "https://www.ntr24.tv/2026/10/24/mastella-episodio-di-violenza-al-corso-faccio-appello-ad-unintegrazione-intelligente-della-componente-straniera/",
+      "data": "24 ott, 10:31"
+     },
+     {
+      "nome": "Ottopagine (Mastella)",
+      "titolo": "Violenza al Corso: Mastella \"più controlli su divieto vendita alcolici a minori\"",
+      "url": "https://www.ottopagine.it/bn/attualita/442033/violenza-al-corso-mastella-piu-controlli-su-divieto-vendita-alcolici-a-minori.shtml",
+      "data": "24 ott, 10:48"
+     },
+     {
+      "nome": "Anteprima24 (Mastella)",
+      "titolo": "Mastella: \"Faccio appello ad un'integrazione intelligente della componente straniera\"",
+      "url": "https://www.anteprima24.it/benevento/mastella-faccio-appello-ad-unintegrazione-intelligente-della-componente-straniera/",
+      "data": "24 ott, 10:46"
      }
     ],
     "aggiornamento": {
-     "testo": "Sabato 24 ottobre Anteprima24 scrive che il giovane è stato identificato e che si va verso una denuncia in stato di libertà, perché dalle telecamere non sarebbero emerse precise responsabilità penali.",
+     "testo": "Sabato 24 ottobre il sindaco Mastella dice di aver sentito il Questore: il presunto responsabile è stato identificato, la lite sarebbe nata per futili motivi. Annuncia più controlli sulla vendita di alcol ai minori.",
      "fonti": [
-      "Anteprima24 (24/10)"
+      "NTR24 (Mastella)",
+      "Ottopagine (Mastella)",
+      "Anteprima24 (Mastella)"
      ],
-     "quando": "2026-10-24T10:08+02:00"
+     "quando": "2026-10-24T11:08+02:00"
     }
    }
   },
