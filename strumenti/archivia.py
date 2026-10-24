@@ -469,10 +469,23 @@ def segna_aggiornamenti(d, prima, adesso, avv):
         vag = va.get("aggiornamento") or {}
         if vag.get("testo") == ag.get("testo") and ISO.match(str(vag.get("quando", ""))):
             ag["quando"] = vag["quando"]
+            tp = vag.get("titolo_prima")
         elif prima is None and ISO.match(str(ag.get("quando", ""))) and not nel_futuro(ag["quando"], adesso):
-            pass   # senza git non so cosa c'era prima: tengo l'ora scritta
+            tp = ag.get("titolo_prima")   # senza git non so cosa c'era prima: tengo l'ora scritta
         else:
             ag["quando"] = ora
+            # un cambio di titolo di poche ore fa (forse non ancora uscito sui social) resta; uno vecchio no
+            try:
+                recente = adesso - dt.datetime.fromisoformat(str(vag.get("quando"))) < dt.timedelta(hours=12)
+            except (ValueError, TypeError):
+                recente = False
+            tp = (vag.get("titolo_prima") if recente else None) or (v or {}).get("titolo")
+        # il titolo di prima dell'aggiornamento: se è cambiato, la notizia esce di nuovo su Facebook e Instagram
+        # come «Aggiornamento» (facebook.aggiornate). Lo scrive il programma, non l'agente.
+        if tp and tp != n.get("titolo"):
+            ag["titolo_prima"] = tp
+        else:
+            ag.pop("titolo_prima", None)
 
 
 def nel_futuro(iso, adesso):

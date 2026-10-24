@@ -412,6 +412,10 @@ fanno i giornali con le dirette, la novità va in cima, non in fondo.
   nei fatti.
 - Scrivilo **solo per fatti nuovi**: una fonte in più che dice le stesse cose non è un aggiornamento (aggiungi la
   fonte e basta). Su una notizia appena nata non serve (`archivia.py` lo toglie).
+- **Se il fatto nuovo cambia la notizia, cambia anche il titolo** (la presentazione della partita diventa il
+  risultato, il blocco annunciato diventa la strada riaperta): un aggiornamento col titolo cambiato esce di nuovo su
+  Facebook e Instagram come «Aggiornamento»; quelli col titolo uguale solo su Telegram. Per questo il titolo non
+  ritoccarlo per un dettaglio. `titolo_prima` non scriverlo: lo mette `archivia.py`.
 - **Rimetti a posto il racconto, per giorni**: ogni paragrafo ha `"giorno": "AAAA-MM-GG"` (il giorno dei fatti che
   racconta) e i paragrafi vanno **dal giorno più recente al più vecchio**: prima quelli di oggi (il primo dice
   **com'è la situazione adesso**), poi quelli di ieri e così via; dentro lo stesso giorno, nell'ordine dei fatti. Sul

@@ -47,6 +47,8 @@ RIEPILOGO_DALLE = 20   # il riepilogo della giornata, su Facebook e su Instagram
 RIEPILOGO_PAUSA = 30   # minuti dall'ultimo post
 TITOLO_RIEPILOGO = "Il Sannio oggi"
 DALLE, ALLE = 6, 23   # dalle 6 fino al giro delle 22 compreso (ALLE è l'ora in cui si smette)
+AGG = "🔴 Aggiornamento · "   # come su Telegram
+AGG_USCITO = "\0aggiornamento"   # tra i titoli già usciti di una notizia: il suo «Aggiornamento» è già uscito
 
 
 def fuso():
@@ -92,7 +94,45 @@ def candidate(notizie, gia, adesso):
     return [n for _, n in sorted(out, key=lambda x: -x[0])]
 
 
-def messaggio(n):
+def norma(t):
+    return re.sub(r"[^0-9a-zà-ÿ]+", " ", str(t or "").lower()).strip()
+
+
+def aggiornate(notizie, gia, adesso):
+    """Le notizie con un «Aggiornamento» delle ultime ORE_FINESTRA ore che ne ha cambiato il titolo (il risultato dopo la
+    presentazione della partita): escono ancora una volta, come «Aggiornamento» (scelta del proprietario, 24 ott 2026).
+    I ritocchi che lasciano il titolo com'è restano solo su Telegram. Il titolo di prima lo segna archivia.py
+    (aggiornamento.titolo_prima). gia: id → titoli già usciti; una notizia con un «Aggiornamento» già uscito non esce più,
+    e una ancora da pubblicare come nuova esce come nuova, col titolo di adesso."""
+    nuove = {n.get("id") for n in candidate(notizie, gia, adesso)}
+    out = []
+    for n in notizie:
+        ag = (n.get("articolo") or {}).get("aggiornamento") or {}
+        usciti = gia.get(n.get("id"), set())
+        try:
+            t = dt.datetime.fromisoformat(str(ag.get("quando")))
+        except ValueError:
+            continue
+        t = t if t.tzinfo else t.replace(tzinfo=fuso())
+        if (not ag.get("titolo_prima") or norma(ag["titolo_prima"]) == norma(n.get("titolo")) or n.get("id") in nuove
+                or AGG_USCITO in usciti or norma(n.get("titolo")) in usciti
+                or t > adesso or adesso - t > dt.timedelta(hours=ORE_FINESTRA)):
+            continue
+        out.append((n, t))
+    return out
+
+
+def coda(notizie, gia, adesso):
+    """Le notizie nuove e gli aggiornamenti col titolo cambiato, dal più importante: [(notizia, è un aggiornamento)].
+    Un aggiornamento conta dall'ora dell'aggiornamento, come in prima pagina."""
+    out = [(rilievo(n, quando(n, adesso), adesso), n, False) for n in candidate(notizie, gia, adesso)]
+    out += [(rilievo(n, t, adesso), n, True) for n, t in aggiornate(notizie, gia, adesso)]
+    return [(n, agg) for _, n, agg in sorted(out, key=lambda x: -x[0])]
+
+
+def messaggio(n, aggiornamento=False):
+    if aggiornamento:
+        return AGG + n["titolo"].strip() + "\n\n" + n["articolo"]["aggiornamento"]["testo"].strip()
     m = n["titolo"].strip() + ("\n\n" + n["sintesi"].strip() if n.get("sintesi") else "")
     if n.get("stato") == "una_fonte" and n.get("fonti"):
         m += f"\n\nPer ora lo riporta solo {n['fonti'][0].get('nome', '')}."
@@ -169,22 +209,54 @@ def testo_riepilogo(giorno, notizie):
     return m + f"\n\nTutte le notizie di Benevento e del Sannio: {SITO}/"
 
 
+def titoli_usciti(ids, nid, testo):
+    """Segna in ids (id → titoli) il titolo di un post, la prima riga del testo; e se era un «Aggiornamento»."""
+    riga = (testo or "").split("\n")[0]
+    s = ids.setdefault(nid, set())
+    if riga.startswith(AGG):
+        s.add(AGG_USCITO)
+        riga = riga[len(AGG):]
+    s.add(norma(riga))
+
+
+def pubblica(token, n, aggiornamento=False):
+    """Il post della notizia, col link. Per un aggiornamento Facebook deve prima rileggere la pagina: titolo e immagine
+    del link li ricorda dalla prima volta. Se non li rilegge, il post esce con l'immagine nuova e il link nel testo."""
+    link = f"{SITO}/notizia/{n['id']}/"
+    if aggiornamento:
+        try:
+            r = riprova(lambda: chiama("POST", "", token, {"id": link, "scrape": "true"}), "Facebook (rilettura del link)", True)
+            riletto = norma(n["titolo"]) in norma(r.get("title"))
+        except RuntimeError as e:
+            print(f"  {e}")
+            riletto = False
+        if not riletto:
+            print("  Facebook non ha riletto il link: pubblico l'aggiornamento con l'immagine")
+            foto_con_testo(token, f"{SITO}/img/ig/{n['id']}.jpg", messaggio(n, True) + "\n\n" + link, link)
+            return
+    chiama("POST", "me/feed", token, {"message": messaggio(n, aggiornamento), "link": link})
+
+
 def gia_pubblicate(token, adesso):
-    """Gli id delle notizie già sulla Pagina, quante notizie oggi (il riepilogo e le chiusure non contano), l'ora
-    dell'ultima e se il riepilogo di oggi c'è già."""
+    """Le notizie già sulla Pagina (id → titoli usciti), quante notizie oggi (il riepilogo e le chiusure non contano),
+    l'ora dell'ultima e se il riepilogo di oggi c'è già."""
     r = chiama("GET", "me/posts", token, {"fields": "created_time,message,attachments{unshimmed_url,url}", "limit": 50})
-    ids, oggi, ultimo, riepilogo = set(), 0, None, False
+    ids, oggi, ultimo, riepilogo = {}, 0, None, False
     for p in r.get("data", []):
         t = dt.datetime.strptime(p["created_time"], "%Y-%m-%dT%H:%M:%S%z").astimezone(fuso())
-        riepilogo |= t.date() == adesso.date() and (p.get("message") or "").startswith(TITOLO_RIEPILOGO)
-        for a in (p.get("attachments") or {}).get("data", []):
-            u = a.get("unshimmed_url") or a.get("url") or ""
+        testo = p.get("message") or ""
+        riepilogo |= t.date() == adesso.date() and testo.startswith(TITOLO_RIEPILOGO)
+        link = [a.get("unshimmed_url") or a.get("url") or "" for a in (p.get("attachments") or {}).get("data", [])]
+        if testo.startswith(AGG):   # un aggiornamento uscito con l'immagine (pubblica()) ha il link nel testo
+            link.append(testo)
+        for u in link:
             u = urllib.parse.parse_qs(urllib.parse.urlparse(u).query).get("u", [u])[0]  # link «l.facebook.com/l.php?u=»
             m = re.search(r"notiziebenevento\.it/notizia/([a-z0-9-]+)", u)
             if m:
-                ids.add(m.group(1))
+                titoli_usciti(ids, m.group(1), testo)
                 oggi += t.date() == adesso.date()
                 ultimo = max(ultimo, t) if ultimo else t
+                break
     return ids, oggi, ultimo, riepilogo
 
 
@@ -230,8 +302,8 @@ def main():
         notizie = json.load(f).get("notizie", [])
 
     if a.prova:
-        for n in candidate(notizie, set(), adesso)[:MAX_GIORNO]:
-            print(f"- {n['id']}\n  {messaggio(n)[:160]}…\n  {SITO}/notizia/{n['id']}/")
+        for n, agg in coda(notizie, {}, adesso)[:MAX_GIORNO]:
+            print(f"- {n['id']}\n  {messaggio(n, agg)[:160]}…\n  {SITO}/notizia/{n['id']}/")
         return
 
     token = os.environ.get("FB_PAGE_TOKEN", "").strip()
@@ -269,19 +341,20 @@ def main():
     if not subito and ultimo and adesso - ultimo < dt.timedelta(minutes=PAUSA_MINUTI):
         print(f"Facebook: l'ultimo post è delle {ultimo:%H:%M}, aspetto")
         return
-    lista = candidate(notizie, gia, adesso)
+    lista = coda(notizie, gia, adesso)
     if sera:
-        lista = [n for n in lista if allerta_seria(n)]
+        lista = [(n, False) for n in candidate(notizie, gia, adesso) if allerta_seria(n)]
         if not lista:
             print("Facebook: sono le 23, a quest'ora si pubblicano solo le allerte arancioni o rosse")
             return
     if not lista:
         print("Facebook: nessuna notizia nuova da pubblicare")
         return
-    for n in lista[:max(1, min(max(subito, 1), MAX_GIORNO - oggi))]:
-        chiama("POST", "me/feed", token, {"message": messaggio(n), "link": f"{SITO}/notizia/{n['id']}/"})
+    for n, agg in lista[:max(1, min(max(subito, 1), MAX_GIORNO - oggi))]:
+        pubblica(token, n, agg)
         oggi += 1
-        print(f"Facebook: pubblicata {n['id']} ({oggi} oggi)")
+        cosa = "pubblicato l'aggiornamento di" if agg else "pubblicata"
+        print(f"Facebook: {cosa} {n['id']} ({oggi} oggi)")
 
 
 if __name__ == "__main__":

@@ -32,8 +32,8 @@ import time
 import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from facebook import (PAGINA, RIEPILOGO_DALLE, RIEPILOGO_PAUSA, SITO, TITOLO_RIEPILOGO, allerta_seria,  # come Facebook
-                      candidate, chiama, fuso, quando, rilievo)
+from facebook import (AGG, PAGINA, RIEPILOGO_DALLE, RIEPILOGO_PAUSA, SITO, TITOLO_RIEPILOGO,  # come Facebook
+                      allerta_seria, candidate, chiama, coda, fuso, quando, rilievo, titoli_usciti)
 
 MAX_GIORNO = 35
 PAUSA_MINUTI = 25
@@ -53,9 +53,11 @@ def del_giorno(notizie, adesso):
     return [n for _, _, n in out[:QUANTE]]
 
 
-def didascalia(n):
+def didascalia(n, aggiornamento=False):
     m = n["titolo"].strip()
-    if n.get("sintesi"):
+    if aggiornamento:   # un aggiornamento che ha cambiato il titolo (facebook.aggiornate): la novità al posto della sintesi
+        m = AGG + m + "\n\n" + n["articolo"]["aggiornamento"]["testo"].strip()
+    elif n.get("sintesi"):
         m += "\n\n" + n["sintesi"].strip()
     fonti = [f.get("nome") for f in n.get("fonti") or [] if f.get("nome")]
     if n.get("stato") == "una_fonte" and fonti:
@@ -85,15 +87,15 @@ def didascalia_riepilogo(giorno, notizie):
 
 
 def gia_pubblicate(ig, token, adesso):
-    """Gli id delle notizie già uscite, quante notizie oggi (il riepilogo, le chiusure e le curiosità non contano), l'ora
-    dell'ultimo post (le curiosità non contano neanche qui) e se il riepilogo di oggi c'è già."""
+    """Le notizie già uscite (id → titoli usciti), quante notizie oggi (il riepilogo, le chiusure e le curiosità non
+    contano), l'ora dell'ultimo post (le curiosità non contano neanche qui) e se il riepilogo di oggi c'è già."""
     r = chiama("GET", f"{ig}/media", token, {"fields": "caption,timestamp", "limit": 50})
-    ids, oggi, ultimo, riepilogo = set(), 0, None, False
+    ids, oggi, ultimo, riepilogo = {}, 0, None, False
     for p in r.get("data", []):
         t = dt.datetime.strptime(p["timestamp"], "%Y-%m-%dT%H:%M:%S%z").astimezone(fuso())
         m = re.search(r"notiziebenevento\.it/notizia/([a-z0-9-]+)", p.get("caption") or "")
         if m:
-            ids.add(m.group(1))
+            titoli_usciti(ids, m.group(1), p.get("caption"))
         didascalia_ = p.get("caption") or ""
         if "#CuriositàDelSannio" in didascalia_:   # la curiosità delle 12 (curiosita_social.py) non conta tra le notizie
             continue
@@ -124,13 +126,13 @@ def aspetta(cont, token):
         time.sleep(5)
 
 
-def pubblica_notizia(ig, token, n):
+def pubblica_notizia(ig, token, n, aggiornamento=False):
     """Un post con l'immagine della notizia; False se l'immagine non è online (si fa solo per le notizie recenti
-    della prima pagina)."""
+    della prima pagina). L'immagine ha il titolo di adesso: pagine.py la rifà quando il titolo cambia."""
     img = f"{SITO}/img/ig/{n['id']}.jpg"
     if not online(img):
         return False
-    cont = chiama("POST", f"{ig}/media", token, {"image_url": img, "caption": didascalia(n)})["id"]
+    cont = chiama("POST", f"{ig}/media", token, {"image_url": img, "caption": didascalia(n, aggiornamento)})["id"]
     aspetta(cont, token)
     chiama("POST", f"{ig}/media_publish", token, {"creation_id": cont})
     return True
@@ -164,8 +166,8 @@ def main():
         notizie = json.load(f).get("notizie", [])
 
     if a.prova:
-        for n in candidate(notizie, set(), adesso)[:3]:
-            print(f"--- {SITO}/img/ig/{n['id']}.jpg\n{didascalia(n)}\n")
+        for n, agg in coda(notizie, {}, adesso)[:3]:
+            print(f"--- {SITO}/img/ig/{n['id']}.jpg\n{didascalia(n, agg)}\n")
         r = riepilogo_pronto(a.sito, notizie, adesso)
         print(f"--- riepilogo: {', '.join(r[2])}\n{didascalia_riepilogo(r[0], r[1])}" if r
               else "--- riepilogo: oggi non c'è (manca img/ig/oggi.json o poche notizie)")
@@ -218,9 +220,10 @@ def main():
     if ultimo and adesso - ultimo < dt.timedelta(minutes=PAUSA_MINUTI):
         print(f"Instagram: l'ultimo post è delle {ultimo:%H:%M}, aspetto")
         return
-    for n in candidate(notizie, gia, adesso):
-        if pubblica_notizia(ig, token, n):
-            print(f"Instagram: pubblicata {n['id']} ({oggi + 1} oggi)")
+    for n, agg in coda(notizie, gia, adesso):
+        if pubblica_notizia(ig, token, n, agg):
+            cosa = "pubblicato l'aggiornamento di" if agg else "pubblicata"
+            print(f"Instagram: {cosa} {n['id']} ({oggi + 1} oggi)")
             return
     print("Instagram: nessuna notizia nuova da pubblicare")
 
