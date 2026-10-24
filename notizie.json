@@ -1,7 +1,212 @@
 {
- "aggiornato": "2026-10-24T12:10+02:00",
+ "aggiornato": "2026-10-24T13:08+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "alto-calore-sportelli-chiusi-30-31-ottobre-2-novembre",
+   "titolo": "Alto Calore, sportelli al pubblico chiusi il 30 e 31 ottobre e il 2 novembre",
+   "titolo_google": "Alto Calore, sportelli chiusi 30-31 ottobre e 2 novembre",
+   "sintesi": "Alto Calore Servizi, la società dell'acqua in buona parte del Sannio e dell'Irpinia, tiene chiusi gli sportelli per gli utenti il 30 e 31 ottobre e il 2 novembre 2026.",
+   "categoria": "altro",
+   "zona": "provincia",
+   "luogo": "Provincia di Benevento",
+   "pubblicato": "2026-10-24T08:00:00+02:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "in_vigore_fino": "2026-11-02",
+   "fonti": [
+    {
+     "nome": "Alto Calore",
+     "url": "https://altocalore.it/avviso/comunicazione-chiusura-sportelli-utenza-di-alto-calore-servizi/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Alto Calore Servizi, la società che porta l'acqua in buona parte del Sannio e dell'Irpinia, ha annunciato che i suoi sportelli per gli utenti resteranno chiusi al pubblico venerdì 30 e sabato 31 ottobre e lunedì 2 novembre 2026.",
+      "fonti": [
+       "Alto Calore"
+      ]
+     },
+     {
+      "testo": "L'avviso non spiega il motivo della chiusura e non indica quali sportelli siano interessati né come fare per le pratiche urgenti. Per informazioni c'è il sito altocalore.it.",
+      "fonti": [
+       "Alto Calore"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Il motivo della chiusura e se lo sportello telefonico o online resta attivo."
+    ],
+    "fonti": [
+     {
+      "nome": "Alto Calore",
+      "titolo": "COMUNICAZIONE GIORNI DI CHIUSURA SPORTELLI UTENZA DI ALTO CALORE SERVIZI",
+      "url": "https://altocalore.it/avviso/comunicazione-chiusura-sportelli-utenza-di-alto-calore-servizi/",
+      "data": "24 ott, 08:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "benevento-unioncamere-terzo-trimestre-crescita-imprese-prima-italia",
+   "titolo": "Benevento prima in Italia per crescita delle imprese nel terzo trimestre: +0,60%, dice il Comune su dati Unioncamere",
+   "titolo_google": "Benevento prima in Italia per crescita delle imprese",
+   "sintesi": "Secondo i dati Unioncamere del terzo trimestre riportati dal Comune, Benevento è prima in Italia per tasso di crescita delle imprese: +0,60%, con 405 iscrizioni e 205 cessazioni.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-24T11:23:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/i-dati-ufficiali-di-unioncamere-relativi-al-terzo-trimestre-delineano-uno-scenario-di-assoluta"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/dati-unioncamere-benevento-prima-in-italia-mastella-e-ambrosone-con-la-nostra-amministrazione-risultati-di-crescita-economica-di-assoluta-eccellenza/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/442035/dati-unioncamere-benevento-da-primato-l-amministrazione-risultato-eccellente.shtml"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/24/trimestre-unioncamere-benevento-prima-in-italia-mastella-e-ambrosone-con-la-nostra-amministrazione-risultati-di-crescita-economica-di-assoluta-eccellenza/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Benevento è la prima città d'Italia per crescita delle imprese nel terzo trimestre dell'anno. Lo dicono i dati Unioncamere, l'ente che riunisce le Camere di commercio, riportati in una nota dal sindaco Clemente Mastella e dall'assessore alle Attività produttive Luigi Ambrosone. Il tasso di crescita è +0,60%, contro una media regionale di +0,16%.",
+      "fonti": [
+       "Gazzetta di Benevento",
+       "TV7 Benevento",
+       "Ottopagine",
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Nel trimestre ci sono state 405 nuove iscrizioni e 205 cessazioni, con un saldo positivo di 200 imprese. Secondo la nota del Comune dietro Benevento ci sono Roma al secondo posto, Aosta al terzo, Napoli al quarto e Milano al quinto.",
+      "fonti": [
+       "Ottopagine",
+       "Gazzetta di Benevento"
+      ]
+     },
+     {
+      "testo": "Mastella e Ambrosone parlano di un risultato «di assoluta eccellenza» e lo attribuiscono alle politiche dell'amministrazione per commercio, industria, agricoltura e artigianato. Ricordano che prima Benevento stava per decenni oltre la centesima posizione. Sono valutazioni del Comune: nei testi letti non c'è il numero totale delle imprese né il metodo di calcolo.",
+      "fonti": [
+       "Ottopagine",
+       "TV7 Benevento",
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Benevento prima in Italia nel terzo trimestre secondo Unioncamere, commento di Mastella e Ambrosone.",
+      "fonti": [
+       "Gazzetta di Benevento",
+       "TV7 Benevento",
+       "Ottopagine",
+       "NTR24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Il numero totale di imprese e come è calcolato il tasso di crescita: le fonti non lo dicono."
+    ],
+    "fonti": [
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "I dati ufficiali di Unioncamere relativi al terzo trimestre delineano uno scenario di assoluta eccellenza per ",
+      "url": "https://www.gazzettabenevento.it/it/i-dati-ufficiali-di-unioncamere-relativi-al-terzo-trimestre-delineano-uno-scenario-di-assoluta",
+      "data": "24 ott, 10:05"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Dati Unioncamere, Benevento prima in Italia, Mastella e Ambrosone: “Con la nostra Amministrazione risultati di crescita economica di assoluta eccellenza”",
+      "url": "https://www.tvsette.net/dati-unioncamere-benevento-prima-in-italia-mastella-e-ambrosone-con-la-nostra-amministrazione-risultati-di-crescita-economica-di-assoluta-eccellenza/",
+      "data": "24 ott, 10:21"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Dati Unioncamere: Benevento da primato, l'amministrazione \"risultato eccellente\"",
+      "url": "https://www.ottopagine.it/bn/attualita/442035/dati-unioncamere-benevento-da-primato-l-amministrazione-risultato-eccellente.shtml",
+      "data": "24 ott, 10:52"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Trimestre Unioncamere, Benevento prima in Italia. Mastella e Ambrosone: “Con la nostra Amministrazione risultati di crescita economica di assoluta eccellenza”",
+      "url": "https://www.ntr24.tv/2026/10/24/trimestre-unioncamere-benevento-prima-in-italia-mastella-e-ambrosone-con-la-nostra-amministrazione-risultati-di-crescita-economica-di-assoluta-eccellenza/",
+      "data": "24 ott, 11:23"
+     }
+    ]
+   }
+  },
+  {
+   "id": "benevento-cisl-fp-sportello-precari-pubblica-amministrazione",
+   "titolo": "Benevento, la CISL FP apre uno sportello per i precari della pubblica amministrazione",
+   "titolo_google": "Benevento, sportello CISL FP per i precari della PA",
+   "sintesi": "La CISL FP Irpinia Sannio apre due sportelli per i lavoratori precari della pubblica amministrazione, uno a Benevento in via dei Longobardi 6 (martedì e giovedì) e uno ad Avellino.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "immagine": "sportello",
+   "pubblicato": "2026-10-24T12:30:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/24/precari-nella-pa-la-cisl-fp-irpinia-sannio-apre-due-sportelli-ad-avellino-e-benevento/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "La CISL FP Irpinia Sannio, il sindacato dei dipendenti pubblici, apre due sportelli per i lavoratori precari della pubblica amministrazione. A Benevento lo sportello sta in via dei Longobardi 6, al terzo piano, ed è aperto il martedì e il giovedì. Quello di Avellino è in piazza San Francesco d'Assisi 14, al primo piano, aperto il lunedì e il mercoledì.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Lo sportello è per i precari di tutti i comparti, non solo della sanità: Comuni, Province, amministrazioni dello Stato, enti pubblici e agenzie, in provincia di Benevento e di Avellino. Offre ascolto e assistenza sul proprio contratto, la verifica di anzianità di servizio e requisiti, informazioni sui concorsi e sulle norme, e la segnalazione di problemi sulla continuità del lavoro.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Il sindacato precisa che non promette stabilizzazioni (assunzioni a tempo indeterminato) automatiche: valuta caso per caso le possibilità di stabilizzazione o i percorsi di concorso. Vuole anche mappare il precariato nelle due province e verificare se gli enti hanno contato il personale precario e programmato le assunzioni. Ne parlano la segretaria generale Sonia Petrucciani e il segretario territoriale Massimo Fiore.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Da quando esattamente i due sportelli sono aperti e gli orari di apertura durante la giornata."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Precari nella PA, la CISL FP Irpinia Sannio apre due sportelli ad Avellino e Benevento",
+      "url": "https://www.ntr24.tv/2026/10/24/precari-nella-pa-la-cisl-fp-irpinia-sannio-apre-due-sportelli-ad-avellino-e-benevento/",
+      "data": "24 ott, 12:30"
+     }
+    ]
+   },
+   "foto": "sportello-2"
+  },
   {
    "id": "benevento-ordine-medici-raccolta-aiuti-odessa",
    "titolo": "Benevento, l'Ordine dei Medici raccoglie aiuti per un centro sanitario di Odessa fino al 13 novembre",
@@ -1880,7 +2085,7 @@
    "categoria": "cronaca",
    "zona": "caudina",
    "luogo": "Montesarchio",
-   "pubblicato": "2026-10-23T16:09:00+02:00",
+   "pubblicato": "2026-10-24T12:33:00+02:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
@@ -1899,10 +2104,21 @@
     {
      "nome": "BeneventoNews24",
      "url": "https://www.beneventonews24.it/2026/10/23/montesarchio-sequestrati-oltre-due-etti-di-cocaina-una-donna-in-arresto/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/442041/in-auto-con-un-beauty-case-contenente-la-cocaina-arrestata-una-26enne.shtml"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Sabato 24 ottobre Ottopagine aggiunge qualche dettaglio: la donna arrestata ha 26 anni e viaggiava da sola in auto quando è stata fermata dai Carabinieri della Compagnia di Montesarchio durante un controllo stradale. I militari hanno sequestrato poco meno di 230 grammi di cocaina divisi in quattro involucri di cellophane e un telefono cellulare. I domiciliari sono stati disposti dal sostituto procuratore, in attesa dell'udienza di convalida davanti al giudice per le indagini preliminari. Il giornale parla di un borsello appoggiato sul sedile, mentre il titolo cita un beauty case.",
+      "fonti": [
+       "Ottopagine"
+      ],
+      "giorno": "2026-10-24"
+     },
      {
       "testo": "Venerdì 23 ottobre i Carabinieri della Compagnia di Montesarchio hanno reso noto l'arresto di una donna, trovata con oltre 229 grammi di cocaina. A Montesarchio, in provincia di Benevento, i militari del Nucleo operativo e radiomobile l'hanno fermata e hanno fatto una perquisizione sulla persona e sull'auto.",
       "fonti": [
@@ -1910,7 +2126,8 @@
        "Anteprima24",
        "NTR24",
        "BeneventoNews24"
-      ]
+      ],
+      "giorno": "2026-10-23"
      },
      {
       "testo": "La donna è accusata di detenzione di droga a fini di spaccio. La sua posizione è ora al vaglio della Procura della Repubblica di Benevento. Dopo l'arresto è stata portata a casa, dove resta agli arresti domiciliari in attesa delle decisioni dei magistrati.",
@@ -1919,7 +2136,8 @@
        "Anteprima24",
        "NTR24",
        "BeneventoNews24"
-      ]
+      ],
+      "giorno": "2026-10-23"
      },
      {
       "testo": "I Carabinieri spiegano che l'operazione rientra nei controlli del Comando provinciale di Benevento contro lo spaccio nel Sannio. Ricordano anche che la persona arrestata è indagata e, come ogni indagato, si presume innocente fino a una sentenza definitiva.",
@@ -1928,7 +2146,8 @@
        "Anteprima24",
        "NTR24",
        "BeneventoNews24"
-      ]
+      ],
+      "giorno": "2026-10-23"
      }
     ],
     "cronologia": [],
@@ -1943,10 +2162,17 @@
       ]
      }
     ],
-    "divergono": [],
+    "divergono": [
+     {
+      "testo": "Dove era nascosta la droga: un borsello (testo di Ottopagine) o un beauty case (titolo di Ottopagine).",
+      "fonti": [
+       "Ottopagine"
+      ]
+     }
+    ],
     "non_si_sa": [
-     "Età e paese della donna: le fonti non li dicono.",
-     "Quando il fatto è avvenuto e quando ci sarà la convalida dell'arresto."
+     "Quando ci sarà l'udienza di convalida dell'arresto.",
+     "Dove sia stata fermata esattamente e in quale giorno: le fonti non lo dicono."
     ],
     "fonti": [
      {
@@ -1972,8 +2198,21 @@
       "titolo": "Montesarchio, sequestrati oltre due etti di cocaina: donna arrestata dai Carabinieri",
       "url": "https://www.beneventonews24.it/2026/10/23/montesarchio-sequestrati-oltre-due-etti-di-cocaina-una-donna-in-arresto/",
       "data": "23 ott, 16:09"
+     },
+     {
+      "nome": "Ottopagine",
+      "url": "https://www.ottopagine.it/bn/cronaca/442041/in-auto-con-un-beauty-case-contenente-la-cocaina-arrestata-una-26enne.shtml",
+      "titolo": "In auto con un beauty case contenente la cocaina: arrestata una 26enne",
+      "data": "24 ott, 12:33"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Sabato 24 ottobre Ottopagine scrive che la donna ha 26 anni, è stata fermata durante un controllo stradale con quasi 230 grammi di cocaina in quattro involucri ed è ai domiciliari in attesa della convalida.",
+     "fonti": [
+      "Ottopagine"
+     ],
+     "quando": "2026-10-24T13:08+02:00"
+    }
    }
   },
   {
@@ -3428,55 +3667,105 @@
   },
   {
    "id": "benevento-5-active-network-23-ottobre-palatedeschi",
-   "titolo": "Calcio a 5, Serie A: il Benevento 5 ospita l'Active Network venerdì 23 ottobre al PalaTedeschi",
-   "titolo_google": "Benevento 5-Active Network: venerdì 23 alle 20:30",
-   "sintesi": "Dopo la pausa torna la Serie A di calcio a 5: venerdì 23 ottobre alle 20:30 il GG Team Wear Benevento 5 gioca in casa contro l'Active Network. Rientra Davide De Crescenzo dopo un lungo infortunio.",
+   "titolo": "Calcio a 5, Serie A: il Benevento 5 perde 1-0 in casa con l'Active Network, quarta sconfitta di fila",
+   "titolo_google": "Benevento 5-Active Network 0-1: quarto ko di fila",
+   "sintesi": "Venerdì 23 ottobre al PalaTedeschi il GG Team Wear Benevento 5 ha perso 1-0 con l'Active Network, gol di Calvanese a poco più di sette minuti dalla fine. È la quarta sconfitta consecutiva in Serie A.",
    "categoria": "sport",
    "sport": "calcio_a_5",
    "zona": "benevento",
    "luogo": "Benevento, PalaTedeschi",
-   "pubblicato": "2026-10-22T18:56:00+02:00",
+   "pubblicato": "2026-10-24T12:57:00+02:00",
    "stato": "ufficiale",
    "rilevante": false,
    "fonti": [
     {
      "nome": "Benevento 5",
      "url": "https://ssdbenevento5.it/2026/10/22/serie-a-kinto-il-gg-team-wear-benevento-5-torna-al-palatedeschi-domani-ce-lactive-network/"
+    },
+    {
+     "nome": "Benevento 5 (24/10)",
+     "url": "https://ssdbenevento5.it/2026/10/24/benevento-5-ancora-un-ko-lactive-network-passa-al-palatedeschi-nel-finale/"
     }
    ],
    "articolo": {
     "racconto": [
      {
+      "testo": "Il GG Team Wear Benevento 5 ha perso 1-0 in casa con l'Active Network nella partita di Serie A di venerdì 23 ottobre al PalaTedeschi. È la quarta sconfitta consecutiva dei giallorossi dell'allenatore Fausto Scarpitti. Il gol decisivo l'ha segnato Calvanese al 35' del secondo tempo, in superiorità numerica.",
+      "fonti": [
+       "Benevento 5 (24/10)"
+      ],
+      "giorno": "2026-10-23"
+     },
+     {
+      "testo": "Il primo tempo è finito 0-0, molto tattico. Scarpitti ha recuperato De Crescenzo per la prima volta in stagione, mentre è rimasto fuori Barichello. Il Benevento ha avuto le occasioni più grosse con Pires, che ha calciato a lato davanti al portiere. Nella ripresa si sono rese pericolose le due squadre, con Volonnino e ancora Pires per i padroni di casa.",
+      "fonti": [
+       "Benevento 5 (24/10)"
+      ],
+      "giorno": "2026-10-23"
+     },
+     {
+      "testo": "A 7 minuti e 34 secondi dalla fine l'arbitro ha mostrato il rosso diretto a Pires per un fallo su Guerini. Poco dopo il portiere del Benevento, Montefalcone, è uscito per infortunio dopo un intervento di Calvanese, e la squadra ha protestato. Subito dopo Calvanese ha segnato lo 0-1 su assist di Gabriel. Il Benevento ha attaccato con il portiere di movimento Volonnino, senza trovare il pari, e ha rischiato lo 0-2 per una traversa di Degan.",
+      "fonti": [
+       "Benevento 5 (24/10)"
+      ],
+      "giorno": "2026-10-23"
+     },
+     {
+      "testo": "Per Scarpitti nel secondo tempo «in campo ho visto soltanto il Benevento», e l'espulsione di Pires, a suo giudizio «un po' affrettata», ha pesato sul risultato. Il tecnico dice che il portiere è uscito dal campo con una mano rotta e che la squadra dovrà recuperare i tre punti a Sala Consilina. Arbitri Salvatore Pagano di Catania e Denis Prekaj di Treviglio.",
+      "fonti": [
+       "Benevento 5 (24/10)"
+      ],
+      "giorno": "2026-10-23"
+     },
+     {
       "testo": "Torna la Serie A di calcio a 5 dopo la pausa e il GG Team Wear Benevento 5 gioca in casa. Venerdì 23 ottobre alle 20:30, al PalaTedeschi, i giallorossi dell'allenatore Fausto Scarpitti ospitano l'Active Network.",
       "fonti": [
        "Benevento 5"
-      ]
+      ],
+      "giorno": "2026-10-22"
      },
      {
       "testo": "La partita è arbitrata da Salvatore Pagano di Catania e Denis Prekaj di Treviglio; il cronometrista è Antonio Nappo. Si può vedere in diretta sul canale YouTube della Divisione Calcio a 5.",
       "fonti": [
        "Benevento 5"
-      ]
+      ],
+      "giorno": "2026-10-22"
      },
      {
       "testo": "In casa Benevento c'è il rientro di Davide De Crescenzo, che torna a disposizione dopo un lungo stop per infortunio. Le ultime due gare erano andate male: il 3 ottobre la sconfitta per 5-1 nel derby col Napoli e il 10 ottobre quella a Roma, contro la Roma 1927.",
       "fonti": [
        "Benevento 5"
-      ]
+      ],
+      "giorno": "2026-10-22"
      }
     ],
     "cronologia": [],
     "concordano": [],
     "divergono": [],
-    "non_si_sa": [],
+    "non_si_sa": [
+     "Quanto sia grave l'infortunio alla mano del portiere Montefalcone."
+    ],
     "fonti": [
      {
       "nome": "Benevento 5",
       "titolo": "Serie A KINTO, il GG Team Wear Benevento 5 torna al PalaTedeschi: domani c’è l’Active Network",
       "url": "https://ssdbenevento5.it/2026/10/22/serie-a-kinto-il-gg-team-wear-benevento-5-torna-al-palatedeschi-domani-ce-lactive-network/",
       "data": "22 ott, 18:56"
+     },
+     {
+      "nome": "Benevento 5 (24/10)",
+      "url": "https://ssdbenevento5.it/2026/10/24/benevento-5-ancora-un-ko-lactive-network-passa-al-palatedeschi-nel-finale/",
+      "titolo": "Benevento 5, ancora un ko: l’Active Network passa al PalaTedeschi nel finale",
+      "data": "24 ott, 12:57"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Venerdì 23 ottobre il Benevento 5 ha perso 1-0 in casa con l'Active Network, gol di Calvanese al 35' del secondo tempo dopo il rosso a Pires. È la quarta sconfitta di fila.",
+     "fonti": [
+      "Benevento 5 (24/10)"
+     ],
+     "quando": "2026-10-24T13:08+02:00"
+    }
    }
   },
   {
