@@ -4,12 +4,14 @@
 Lo esegue GitHub dopo ogni pubblicazione del sito (a ogni giro dell'agente e ogni ora), così la pagina della
 notizia è già online quando Facebook ne legge titolo e immagine di anteprima.
 
-- Al massimo una notizia all'ora (almeno 50 minuti tra un post e l'altro), e al massimo 20 al giorno (per i giorni con tante notizie), solo dalle 6
-  fino al giro delle 22 compreso, come i giri (scelta del proprietario, 23 ott 2026): come le pagine dei giornali locali, senza raffiche che sembrano spam. Dalle 23 alle 24 solo le allerte
+- Al massimo una notizia ogni PAUSA_MINUTI (25) e MAX_GIORNO (35) al giorno, solo dalle 6
+  fino al giro delle 22 compreso, come i giri: senza raffiche che sembrano spam (scelta del proprietario: 23 ott 2026
+  50 minuti e 20 al giorno; 24 ott 2026 «aumenta i limiti» → 25 minuti e 35, con un giro in più alle :40 che fa
+  partire il Pi, curiosita_via.py --giro: ieri su 44 notizie ne erano uscite 13). Dalle 23 alle 24 solo le allerte
   arancioni o rosse (allerta_seria): è il giro della sera prima di un'allerta arancione o rossa, con le scuole chiuse
   per domani. La gialla alle 23 no (scelta del proprietario, 23 ott 2026: vale per Facebook, Telegram e Instagram).
 - Dalle RIEPILOGO_DALLE il riepilogo della giornata («Il Sannio oggi»): la copertina di Instagram (pagine.py) con le
-  notizie più importanti di oggi e i loro link. È in più delle 20 notizie (scelta del proprietario, 23 ott 2026: «20 +
+  notizie più importanti di oggi e i loro link. È in più delle MAX_GIORNO notizie (scelta del proprietario, 23 ott 2026: «20 +
   riepilogo per entrambi») e dopo, fino al mattino, solo le allerte delle 23.
 - Sceglie la più importante tra le notizie delle ultime 12 ore non ancora pubblicate (stessa importanza della prima
   pagina del sito: rilevante e numero di fonti, che calano col tempo).
@@ -37,8 +39,8 @@ import urllib.request
 SITO = "https://notiziebenevento.it"
 PAGINA = "Notizie Benevento"
 GRAPH = "https://graph.facebook.com"
-MAX_GIORNO = 20
-PAUSA_MINUTI = 50
+MAX_GIORNO = 35
+PAUSA_MINUTI = 25
 ORE_FINESTRA = 12
 RIEPILOGO_DALLE = 20   # il riepilogo della giornata, su Facebook e su Instagram (dalle 20: voluto dal proprietario)
 RIEPILOGO_PAUSA = 30   # minuti dall'ultimo post
