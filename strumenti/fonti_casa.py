@@ -601,9 +601,24 @@ POSTA_SERVER = "imaps.aruba.it"
 NON_COMUNICATO_DA = re.compile(r"mailer-daemon|mail-daemon|postmaster|mail delivery|no-?reply.*aruba", re.I)
 NON_COMUNICATO_OGGETTO = re.compile(
     r"^\s*(undeliver|undelivered|recapito fallito|mancato recapito|delivery status|returned mail|mail delivery|"
-    r"auto(matic)?\s*(reply|risposta)?\s*:|risposta automatica|out of office|fuori sede|assente)"
-    r"|comunicati stampa per notizie benevento", re.I)
+    r"auto(matic)?\s*(reply|risposta)?\s*:|risposta automatica|out of office|fuori sede|assente)", re.I)
 NON_COMUNICATO_DOMINI = ("staff.aruba.it", ".ad.aruba.it")
+# Le risposte alla nostra mail («grazie, vi abbiamo aggiunti») non sono comunicati, ma un ufficio stampa può anche
+# rispondere mandando un comunicato: allora vanno all'agente come gli altri (voluto il 24 ott 2026, dopo la risposta
+# della Soprintendenza delle 15:55). Conta un documento o un'immagine grande allegati, o testo scritto da loro.
+RISPOSTA_NOSTRA = re.compile(r"comunicati stampa per notizie benevento", re.I)   # l'oggetto della nostra mail
+NOSTRA_MAIL = "vi scriviamo da notizie benevento"   # dove comincia la nostra mail citata nella risposta
+RIGA_CITAZIONE = re.compile(r"^\s*(>|_{5,}|-{5,}|(da|from|inviato|sent|a|to|cc|oggetto|subject|data|date)\s*:)"
+                            r"|(ha scritto|wrote)\s*:\s*$", re.I)
+# Le righe della firma (social, sito, indirizzi): nella risposta della Soprintendenza del 24 ott valevano 131 caratteri
+RIGA_FIRMA = re.compile(r"https?:|www\.|@|^\s*(fb|ig|facebook|instagram|threads|spreaker|twitter|x|linkedin|youtube|"
+                        r"tel|telefono|cell|fax|pec|e-?mail|sito|web)\b\s*:", re.I)
+AVVISO_LEGALE = re.compile(r"d\.\s?lgs\.?\s*(n\.?\s*)?196|196/2003|gdpr|2016/679|informazioni contenute nella|"
+                           r"informazioni contenute in questa|questo messaggio e|this e-?mail|confidential|"
+                           r"stampare questa|prima di stampare", re.I)
+ALLEGATO_DOCUMENTO = re.compile(r"\.(pdf|docx?|odt|rtf|txt|pptx?|xlsx?)$", re.I)
+IMMAGINE_GRANDE = 150_000   # byte: una locandina sì, il logo della firma no
+PROSA_MIN = 200   # caratteri di frasi vere scritte da loro: più di un «grazie, vi abbiamo aggiunti» (nel dubbio passa)
 
 
 def id_posta(link):
@@ -612,17 +627,42 @@ def id_posta(link):
 
 
 def non_comunicato(titolo, mittente, dominio, m=None):
-    """Il motivo per cui una mail non è un comunicato (rimbalzo, risposta automatica, avviso del provider), o ''."""
+    """Il motivo per cui una mail non è un comunicato (rimbalzo, risposta automatica, avviso del provider, risposta
+    alla nostra mail senza un comunicato dentro), o ''. Senza la mail (m) le risposte alla nostra mail restano."""
     if NON_COMUNICATO_DA.search(mittente or "") or (dominio or "").endswith(NON_COMUNICATO_DOMINI):
         return "rimbalzo o avviso del provider"
     if NON_COMUNICATO_OGGETTO.search(titolo or ""):
-        return "risposta automatica o alla nostra mail"
+        return "risposta automatica"
     if m is not None:
         if (m.get("Auto-Submitted") or "no").strip().lower() != "no" or m.get("X-Autoreply") or m.get("X-Autorespond"):
             return "risposta automatica"
         if m.get_content_type() == "multipart/report":
             return "rimbalzo"
+        if RISPOSTA_NOSTRA.search(titolo or "") and not contenuto_risposta(m):
+            return "risposta alla nostra mail, senza comunicato"
     return ""
+
+
+def contenuto_risposta(m):
+    """Cosa porta una risposta alla nostra mail oltre al ringraziamento ('' se niente): un documento o un'immagine
+    grande allegati, o testo scritto da loro (prima della nostra mail citata; contano solo le righe lunghe, non quelle
+    della firma, le intestazioni della citazione e gli avvisi legali fino alla riga vuota) di almeno PROSA_MIN caratteri."""
+    for parte in m.walk():
+        nome = parte.get_filename() or ""
+        if ALLEGATO_DOCUMENTO.search(nome):
+            return f"allegato {nome}"
+        if parte.get_content_maintype() == "image" and len(parte.get_payload(decode=True) or b"") > IMMAGINE_GRANDE:
+            return f"immagine allegata {nome}".strip()
+    corpo = _testo_mail(m)[0]
+    i = corpo.lower().find(NOSTRA_MAIL)
+    loro = corpo[:i] if i >= 0 else corpo
+    prosa, avviso = 0, False
+    for r in loro.splitlines():
+        r = r.strip()
+        avviso = bool(r) and (avviso or bool(AVVISO_LEGALE.search(r)))
+        if not avviso and len(r) >= 60 and not RIGA_CITAZIONE.search(r) and not RIGA_FIRMA.search(r):
+            prosa += len(r)
+    return f"{prosa} caratteri scritti da loro" if prosa >= PROSA_MIN else ""
 
 
 def _testo_mail(m):
@@ -640,10 +680,12 @@ def _testo_mail(m):
                 except (OSError, subprocess.SubprocessError):
                     pass
             continue
-        if tipo in ("text/plain", "text/html") and (not corpo or tipo == "text/plain"):
+        if tipo in ("text/plain", "text/html"):
             t = parte.get_payload(decode=True) or b""
             t = t.decode(parte.get_content_charset() or "utf-8", "replace")
-            corpo = testo(t) if tipo == "text/html" else t
+            t = testo(t) if tipo == "text/html" else t
+            if t.strip() and (not corpo or tipo == "text/plain"):   # un testo semplice vuoto non copre l'HTML
+                corpo = t
     tutto = re.sub(r"\n{3,}", "\n\n", (corpo.strip() + "\n\n" + "\n\n".join(pdf)).strip())
     return tutto[:TESTO_MAX], allegati
 
