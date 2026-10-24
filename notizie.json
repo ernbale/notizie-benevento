@@ -1,7 +1,62 @@
 {
- "aggiornato": "2026-10-24T20:08+02:00",
+ "aggiornato": "2026-10-24T21:07+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-corso-garibaldi-bambino-investito-da-bici",
+   "titolo": "Benevento, bambino investito da una bici sul corso Garibaldi: portato in ospedale",
+   "titolo_google": "Benevento, corso Garibaldi: bambino urtato da una bici",
+   "sintesi": "Sabato sera, 24 ottobre, sul corso Garibaldi a Benevento un bambino è stato investito da una bicicletta ed è stato portato in ospedale per precauzione. Non sembra in condizioni gravi.",
+   "categoria": "cronaca",
+   "zona": "benevento",
+   "luogo": "Benevento, corso Garibaldi",
+   "pubblicato": "2026-10-24T20:19:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/benevento-bambino-investito-da-una-bici-sul-corso-garibaldi-trasportato-in-ospedale/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Sabato sera, 24 ottobre, verso le 19:30, un bambino è stato investito da una bicicletta sul corso Garibaldi a Benevento, vicino agli incroci con via Pacca e via Rampone. Era con i genitori.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Il bambino è stato colpito al volto e ha perso sangue. Secondo Anteprima24 le sue condizioni non sembrano gravi, ma per precauzione è stato accompagnato in ospedale.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Il ciclista si è fermato per soccorrerlo ed è stato poi fermato dagli agenti della Polizia municipale. In quel tratto di zona a traffico limitato, ricorda il giornale, è vietato da tempo anche il passaggio delle biciclette.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Le condizioni del bambino dopo i controlli in ospedale.",
+     "Se la Polizia municipale ha preso provvedimenti nei confronti del ciclista."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Benevento, bambino investito da una bici sul corso Garibaldi: trasportato in ospedale",
+      "url": "https://www.anteprima24.it/benevento/benevento-bambino-investito-da-una-bici-sul-corso-garibaldi-trasportato-in-ospedale/",
+      "data": "24 ott, 20:19"
+     }
+    ]
+   }
+  },
   {
    "id": "sant-agata-de-goti-pronto-soccorso-h24-tar-puglianello",
    "titolo": "Sant'Agata de' Goti, il TAR ordina all'ospedale San Pio di riportare il pronto soccorso h24",
