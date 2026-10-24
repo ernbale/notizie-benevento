@@ -2389,7 +2389,11 @@
       if (!c || !c.slug || !c.titolo) return null;
       var a = el("a", "cu-link", []);
       a.href = "/curiosita/" + c.slug + "/";
-      if (c.immagine) { var im = document.createElement("img"); im.src = c.immagine; im.alt = ""; im.loading = "lazy"; a.appendChild(im); }
+      if (c.immagine) {
+        var im = document.createElement("img"); im.src = c.immagine; im.alt = ""; im.loading = "lazy";
+        if (typeof c.fuoco_y === "number") im.style.objectPosition = "50% " + Math.round(c.fuoco_y * 100) + "%";
+        a.appendChild(im);
+      }
       a.appendChild(el("span", "cu-cat", [(c.categoria_nome || "Curiosità") + (c.luogo ? " · " + c.luogo : "")]));
       a.appendChild(el("span", "cu-tit", [c.titolo]));
       return el("section", "curiosita-box", [el("h3", "titolo-col", ["Curiosità del Sannio"]), a,

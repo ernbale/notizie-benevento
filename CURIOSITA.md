@@ -44,7 +44,8 @@ si leggono tutti i titoli e i testi già in `curiosita.json`.
 
 Solo file di Wikimedia Commons con licenza libera (CC BY, CC BY-SA, CC0, pubblico dominio) controllata sulla pagina del
 file; mai immagini generate. Meglio orizzontali e larghe almeno 900 pixel (sull'immagine dei social la foto è
-1080×600). Si salva in `img/curiosita/<slug>.jpg` (JPEG, lato lungo al massimo 1200, mai ingrandita). Nel campo
+1080×600). Per una foto verticale (un ritratto) il ritaglio si centra col campo `fuoco_y` di `immagine`: dove sta il
+soggetto, da 0 (in alto) a 1 (in basso); senza, 0.5. Si salva in `img/curiosita/<slug>.jpg` (JPEG, lato lungo al massimo 1200, mai ingrandita). Nel campo
 `credito`: «Foto: <autore> · <licenza>» oppure, per le opere antiche, «<che cos'è> · pubblico dominio». Se non c'è una
 foto adatta e libera, niente `immagine`: esce un cartoncino col titolo. Niente nudi, niente immagini macabre.
 

@@ -345,7 +345,8 @@ def immagine_curiosita(sito, c):
     from PIL import Image, ImageDraw
     W, H = 1080, 1350
     foto = (c.get("immagine") or {}).get("file")
-    impronta = hashlib.sha1(json.dumps([c["titolo"], c["testo"], c["categoria"], c["luogo"], foto, credito_breve(c), 1],
+    fuoco = float((c.get("immagine") or {}).get("fuoco_y", 0.5))   # dove sta il soggetto, dall'alto (0) al basso (1)
+    impronta = hashlib.sha1(json.dumps([c["titolo"], c["testo"], c["categoria"], c["luogo"], foto, credito_breve(c), fuoco, 1],
                                        ensure_ascii=False).encode()).hexdigest()[:10]
     rel = f"img/ig/curiosita-{c['slug']}.jpg"
     full = os.path.join(sito, rel)
@@ -365,7 +366,8 @@ def immagine_curiosita(sito, c):
             alto = 600
             r = max(W / f.width, alto / f.height)
             f = f.resize((round(f.width * r), round(f.height * r)))
-            sx, sy = (f.width - W) // 2, (f.height - alto) // 2
+            sx = (f.width - W) // 2
+            sy = min(max(0, round(f.height * fuoco - alto / 2)), f.height - alto)
             im.paste(f.crop((sx, sy, sx + W, sy + alto)), (0, y))
         nota = credito_breve(c) + " · Wikimedia Commons"
         fn = _font(FONT_BOLD, 22)
@@ -884,7 +886,8 @@ def html_curiosita(c, altre):
           f'{e(_data_curiosita(c["data"]))}</p>')
     im = c.get("immagine")
     if im:
-        h += (f'<figure class="foto-tema"><img src="{e(im["file"])}" alt="{e(c["titolo"])}" loading="lazy">'
+        pos = f' style="object-position: 50% {float(im.get("fuoco_y", 0.5)) * 100:.0f}%"' if "fuoco_y" in im else ""
+        h += (f'<figure class="foto-tema"><img src="{e(im["file"])}" alt="{e(c["titolo"])}" loading="lazy"{pos}>'
               f'<figcaption><a href="{e(im["pagina"])}" target="_blank" rel="noopener nofollow">{e(im["credito"])}'
               "</a>, da Wikimedia Commons</figcaption></figure>")
     h += "".join(f"<p>{e(x)}</p>" for x in _paragrafi_curiosita(c["testo"]))
@@ -1611,6 +1614,7 @@ def main():
     with open(os.path.join(sito, "curiosita", "ultime.json"), "w", encoding="utf-8") as f:   # il riquadro in prima pagina
         json.dump({"curiosita": [{k: c.get(k) for k in ("slug", "titolo", "categoria", "luogo", "data")}
                                  | {"immagine": (c.get("immagine") or {}).get("file"),
+                                    "fuoco_y": (c.get("immagine") or {}).get("fuoco_y", 0.5),
                                     "categoria_nome": CAT_CURIOSITA.get(c["categoria"], "")}
                                  for c in cur_uscite[:3]]}, f, ensure_ascii=False)
 
