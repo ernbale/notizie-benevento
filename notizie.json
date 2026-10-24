@@ -1,7 +1,59 @@
 {
- "aggiornato": "2026-10-24T13:08+02:00",
+ "aggiornato": "2026-10-24T14:08+02:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-monumenti-aperti-2026-salvatore-rocca-rettori",
+   "titolo": "Benevento, Monumenti Aperti: visite alla chiesa del SS. Salvatore e alla Rocca dei Rettori con gli studenti come guide",
+   "titolo_google": "Benevento, Monumenti Aperti alla Rocca dei Rettori",
+   "sintesi": "A Benevento si è svolto Monumenti Aperti 2026: numerosi gruppi hanno visitato la chiesa del SS. Salvatore e la Rocca dei Rettori, con gli studenti di due istituti superiori come guide.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-24T13:21:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/monumenti-aperti-gioielli-cicerone/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Benevento si è svolto il progetto «Monumenti Aperti Benevento 2026». La chiesa del SS. Salvatore e la Rocca dei Rettori sono state visitate da numerosi gruppi di persone.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "L'iniziativa è di Filiberto Parente, consigliere nazionale delle ACLI, ed è stata organizzata con l'associazione Imago Mundi. Ha partecipato Ferdinando Creta, direttore emerito del Teatro Romano. Hanno fatto da guide gli studenti di due scuole superiori, il «Palmieri – Rampone – Polo» e il «Galilei – Vetrone», dopo un breve corso con i loro docenti.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Monumenti Aperti è alla trentesima edizione e in Italia si svolge soprattutto a maggio e giugno e poi da settembre a novembre. A Benevento ha avuto il sostegno, tra gli altri, della Provincia, il cui presidente Nino Lombardi ha detto di aver aderito anche per il valore del progetto del Ministero della Cultura e della Regione Campania per i musei della Rete della Provincia e per il Museo del Tempio della dea Iside.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "“Monumenti aperti”: alla scoperta di gioielli nascosti con ciceroni d’eccezione",
+      "url": "https://www.anteprima24.it/benevento/monumenti-aperti-gioielli-cicerone/",
+      "data": "24 ott, 13:21"
+     }
+    ]
+   }
+  },
   {
    "id": "alto-calore-sportelli-chiusi-30-31-ottobre-2-novembre",
    "titolo": "Alto Calore, sportelli al pubblico chiusi il 30 e 31 ottobre e il 2 novembre",
