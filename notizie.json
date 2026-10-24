@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-24T14:08+02:00",
+ "aggiornato": "2026-10-24T15:10+02:00",
  "giornali_letti": 14,
  "notizie": [
   {
@@ -8791,6 +8791,114 @@
       "titolo": "Omicidio Parrella, \"false informazioni a Pm\": due prosciolti e un assolto",
       "url": "https://www.ottopagine.it/bn/cronaca/441828/omicidio-parrella-false-informazioni-a-pm-due-prosciolti-e-un-assolto.shtml",
       "data": "22 ott, 12:16"
+     }
+    ]
+   }
+  },
+  {
+   "id": "benevento-via-intorcia-erba-rami-marciapiedi",
+   "titolo": "Benevento, via Intorcia: erba e rami coprono il marciapiede, i residenti chiedono la pulizia",
+   "titolo_google": "Benevento, via Intorcia con erba e rami sul marciapiede",
+   "sintesi": "In via Intorcia, la strada tra via Avellola e l'ospedale San Pio, erba e alberi hanno invaso il marciapiede e in parte la strada. Una residente segnala il problema a Lab TV e chiede la pulizia del verde.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento, via Intorcia",
+   "immagine": "degrado",
+   "pubblicato": "2026-10-24T14:21:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Lab TV",
+     "url": "https://www.labtv.net/attualita/2026/10/24/benevento-via-intorcia-invasa-dellerba-e-rami-la-segnalazione-dei-residenti-marciapiedi-impraticabili/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "In via Intorcia, a Benevento, erba e alberi hanno invaso il marciapiede. La via collega via Avellola all'ospedale San Pio. La segnalazione arriva da una residente, che ha scritto a Lab TV: secondo lei le piante coprono il marciapiede e creano disagi a chi abita lì e in parte alla circolazione.",
+      "fonti": [
+       "Lab TV"
+      ]
+     },
+     {
+      "testo": "Con il marciapiede quasi impraticabile, i pedoni sono costretti a scendere in strada, con il rischio che ne deriva, soprattutto per gli anziani e per chi va a piedi verso l'ospedale. I rami che sporgono, inoltre, entrano in parte nella carreggiata (la strada) e riducono la visibilità per le auto.",
+      "fonti": [
+       "Lab TV"
+      ]
+     },
+     {
+      "testo": "I residenti chiedono un intervento di pulizia e manutenzione del verde, che secondo loro non si può più rinviare. Lab TV ricorda che segnalazioni simili per il verde incolto in città erano già state raccolte altre volte.",
+      "fonti": [
+       "Lab TV"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Se il Comune è stato avvisato e quando potrebbe intervenire: l'articolo non lo dice."
+    ],
+    "fonti": [
+     {
+      "nome": "Lab TV",
+      "titolo": "Benevento, via Intorcia invasa dell’erba e rami, la segnalazione dei residenti: marciapiedi impraticabili",
+      "url": "https://www.labtv.net/attualita/2026/10/24/benevento-via-intorcia-invasa-dellerba-e-rami-la-segnalazione-dei-residenti-marciapiedi-impraticabili/",
+      "data": "24 ott, 14:21"
+     }
+    ]
+   },
+   "foto": "degrado-2"
+  },
+  {
+   "id": "sannio-pensioni-occupati-cgia-2025",
+   "titolo": "Sannio: nel 2025 ci sono 27.847 pensioni in più degli occupati, dice la CGIA",
+   "titolo_google": "Sannio, 27.847 pensioni in più degli occupati (CGIA)",
+   "sintesi": "Secondo la CGIA di Mestre su dati Inps e Istat, nel 2025 in provincia di Benevento le pensioni sono 114.554 e gli occupati 86.707: 27.847 pensioni in più.",
+   "categoria": "altro",
+   "zona": "provincia",
+   "luogo": "Provincia di Benevento",
+   "pubblicato": "2026-10-24T14:15:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/24/pensioni-e-occupati-nel-sannio-il-divario-e-di-quasi-28mila-unita/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Nel 2025 in provincia di Benevento le pensioni sono più degli occupati: 114.554 pensioni contro 86.707 persone che lavorano, cioè 27.847 pensioni in più. Lo dice l'Ufficio studi della CGIA di Mestre, l'associazione degli artigiani, su dati Inps e Istat.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Il Sannio ha il secondo divario più contenuto della Campania, dopo Caserta (3.942). Gli altri: Napoli 52.425, Salerno 9.848, Avellino 8.750. In tutta la Campania nel 2025 le pensioni sono 1.869.492 e gli occupati 1.766.680, con 102.812 pensioni in più. In Italia invece gli occupati sono 24.117.235 e le pensioni 23.181.898, quindi gli occupati sono 935.337 in più.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "In Campania ci sono circa 106 pensioni ogni 100 occupati, in Italia circa 96. Secondo la CGIA dietro questo squilibrio ci sono meno nascite, popolazione che invecchia, pochi occupati e lavoro irregolare. Tra il 2025 e il 2029, secondo le previsioni citate, circa tre milioni di italiani lasceranno il lavoro. La CGIA indica come strada l'aumento di giovani e donne che lavorano.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Pensioni e occupati, nel Sannio il divario è di quasi 28mila unità",
+      "url": "https://www.ntr24.tv/2026/10/24/pensioni-e-occupati-nel-sannio-il-divario-e-di-quasi-28mila-unita/",
+      "data": "24 ott, 14:15"
      }
     ]
    }
