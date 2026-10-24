@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-24T15:10+02:00",
+ "aggiornato": "2026-10-24T16:08+02:00",
  "giornali_letti": 14,
  "notizie": [
   {
@@ -1047,7 +1047,7 @@
    "categoria": "cronaca",
    "zona": "benevento",
    "luogo": "Benevento, Corso Garibaldi",
-   "pubblicato": "2026-10-24T10:48:00+02:00",
+   "pubblicato": "2026-10-24T15:50:00+02:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
@@ -1094,10 +1094,26 @@
     {
      "nome": "Anteprima24 (Mastella)",
      "url": "https://www.anteprima24.it/benevento/mastella-faccio-appello-ad-unintegrazione-intelligente-della-componente-straniera/"
+    },
+    {
+     "nome": "NTR24 (Benevento Domani)",
+     "url": "https://www.ntr24.tv/2026/10/24/aggressione-in-centro-benevento-domani-non-e-piu-un-episodio-isolato-occorre-comitato-per-la-sicurezza/"
+    },
+    {
+     "nome": "TV7 Benevento (Benevento Domani)",
+     "url": "https://www.tvsette.net/ragazza-aggredita-in-corso-garibaldi-sangue-in-strada-e-allarme-sicurezza-in-centro-benevento-domani-chiede-la-convocazione-urgente-del-comitato-provinciale-per-lordine-e-la-sicu/"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Sabato 24 ottobre, nel pomeriggio, l'associazione civica Benevento Domani ha chiesto di convocare con urgenza in Prefettura il Comitato provinciale per l'ordine e la sicurezza pubblica. Per l'associazione l'aggressione non è «un episodio isolato» e non va ridotta a una semplice lite. Chiede più presenza di agenti nel centro la sera, più telecamere tra Corso Garibaldi, piazza Roma e piazza Bissolati e più illuminazione. È una richiesta dell'associazione: non risulta ancora nessuna decisione della Prefettura.",
+      "fonti": [
+       "NTR24 (Benevento Domani)",
+       "TV7 Benevento (Benevento Domani)"
+      ],
+      "giorno": "2026-10-24"
+     },
      {
       "testo": "Sabato 24 ottobre il sindaco Clemente Mastella ha commentato il fatto con una nota. Dice di aver sentito il Questore e che le forze dell'ordine hanno ricostruito in fretta la vicenda e identificato il presunto responsabile: secondo il sindaco una lite per futili motivi sarebbe degenerata. Augura alla ragazza ferita di riprendersi presto.",
       "fonti": [
@@ -1272,16 +1288,27 @@
       "titolo": "Mastella: \"Faccio appello ad un'integrazione intelligente della componente straniera\"",
       "url": "https://www.anteprima24.it/benevento/mastella-faccio-appello-ad-unintegrazione-intelligente-della-componente-straniera/",
       "data": "24 ott, 10:46"
+     },
+     {
+      "nome": "NTR24 (Benevento Domani)",
+      "titolo": "Aggressione in centro, Benevento Domani: “Non è più un episodio isolato, occorre Comitato per la Sicurezza”",
+      "url": "https://www.ntr24.tv/2026/10/24/aggressione-in-centro-benevento-domani-non-e-piu-un-episodio-isolato-occorre-comitato-per-la-sicurezza/",
+      "data": "24 ott, 15:50"
+     },
+     {
+      "nome": "TV7 Benevento (Benevento Domani)",
+      "titolo": "Ragazza aggredita in Corso Garibaldi: sangue in strada e allarme sicurezza in centro. Benevento Domani chiede  la convocazione urgente del Comitato provinciale per l’Ordine e la Sicurezza Pubblica.",
+      "url": "https://www.tvsette.net/ragazza-aggredita-in-corso-garibaldi-sangue-in-strada-e-allarme-sicurezza-in-centro-benevento-domani-chiede-la-convocazione-urgente-del-comitato-provinciale-per-lordine-e-la-sicu/",
+      "data": "24 ott, 15:50"
      }
     ],
     "aggiornamento": {
-     "testo": "Sabato 24 ottobre il sindaco Mastella dice di aver sentito il Questore: il presunto responsabile è stato identificato, la lite sarebbe nata per futili motivi. Annuncia più controlli sulla vendita di alcol ai minori.",
+     "testo": "Sabato 24 ottobre pomeriggio l'associazione Benevento Domani ha chiesto alla Prefettura di convocare con urgenza il Comitato per l'ordine e la sicurezza pubblica, con più presidi serali e telecamere in centro.",
      "fonti": [
-      "NTR24 (Mastella)",
-      "Ottopagine (Mastella)",
-      "Anteprima24 (Mastella)"
+      "NTR24 (Benevento Domani)",
+      "TV7 Benevento (Benevento Domani)"
      ],
-     "quando": "2026-10-24T11:08+02:00"
+     "quando": "2026-10-24T16:08+02:00"
     }
    }
   },
