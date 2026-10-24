@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-24T18:09+02:00",
+ "aggiornato": "2026-10-24T19:08+02:00",
  "giornali_letti": 14,
  "notizie": [
   {
@@ -4673,7 +4673,7 @@
    "categoria": "sport",
    "zona": "benevento",
    "luogo": "Benevento",
-   "pubblicato": "2026-10-23T13:31:00+02:00",
+   "pubblicato": "2026-10-24T18:53:00+02:00",
    "stato": "ufficiale",
    "rilevante": false,
    "fonti": [
@@ -4700,10 +4700,26 @@
     {
      "nome": "BeneventoNews24 (tifosi)",
      "url": "https://www.beneventonews24.it/2026/10/23/arezzo-benevento-saranno-piu-di-300-i-tifosi-giallorossi-in-toscana-il-dato-definitivo/"
+    },
+    {
+     "nome": "Benevento Calcio (formazioni)",
+     "url": "https://www.beneventocalcio.club/news/notizie/7672/serie-bkt-2026-2027-arezzo-benevento-le-formazioni-ufficiali.shtml"
+    },
+    {
+     "nome": "BeneventoNews24 (formazioni)",
+     "url": "https://www.beneventonews24.it/2026/10/24/arezzo-benevento-le-formazioni-ufficiali-ce-dalle-mura-cherubini-e-okereke-dal-1/"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Sabato 24 ottobre, poco prima del fischio d'inizio delle 19:30, il Benevento e l'Arezzo hanno comunicato le formazioni. Floro Flores schiera il 4-3-3: in porta Vannucchi; in difesa Pierozzi, Scognamillo, Dalle Mura e Beruatto; a centrocampo Siatounis, Maita e Kouan; in attacco Okereke, Salvemini e Cherubini. Dalle Mura gioca al posto di Saio, che resta in panchina. L'Arezzo di Cristian Bucchi risponde con un altro 4-3-3 guidato davanti da Arena, Cerri e Tavernelli.",
+      "fonti": [
+       "Benevento Calcio (formazioni)",
+       "BeneventoNews24 (formazioni)"
+      ],
+      "giorno": "2026-10-24"
+     },
      {
       "testo": "Venerdì 23 ottobre alle 18:06 i biglietti emessi per Benevento-Catanzaro erano 386: 63 per i tifosi di casa e 323 per gli ospiti, a cui si aggiungono i 4.845 abbonati del Benevento. Per Arezzo i tifosi giallorossi in trasferta saranno 325.",
       "fonti": [
@@ -4783,6 +4799,13 @@
       "fonti": [
        "BeneventoNews24 (tifosi)"
       ]
+     },
+     {
+      "data": "24 ottobre, 18:52",
+      "fatto": "Formazioni ufficiali di Arezzo-Benevento: Dalle Mura in difesa, Okereke, Salvemini e Cherubini in attacco.",
+      "fonti": [
+       "Benevento Calcio (formazioni)"
+      ]
      }
     ],
     "concordano": [],
@@ -4832,14 +4855,26 @@
       "titolo": "Arezzo-Benevento, saranno più di 300 i tifosi giallorossi in Toscana: il dato definitivo",
       "url": "https://www.beneventonews24.it/2026/10/23/arezzo-benevento-saranno-piu-di-300-i-tifosi-giallorossi-in-toscana-il-dato-definitivo/",
       "data": "23 ott, 20:13"
+     },
+     {
+      "nome": "Benevento Calcio (formazioni)",
+      "titolo": "SERIE BKT 2026-2027: AREZZO-BENEVENTO LE FORMAZIONI UFFICIALI",
+      "url": "https://www.beneventocalcio.club/news/notizie/7672/serie-bkt-2026-2027-arezzo-benevento-le-formazioni-ufficiali.shtml",
+      "data": "24 ott, 18:53"
+     },
+     {
+      "nome": "BeneventoNews24 (formazioni)",
+      "titolo": "Arezzo-Benevento, le formazioni ufficiali: c’è Dalle Mura, Cherubini e Okereke dal 1′",
+      "url": "https://www.beneventonews24.it/2026/10/24/arezzo-benevento-le-formazioni-ufficiali-ce-dalle-mura-cherubini-e-okereke-dal-1/",
+      "data": "24 ott, 18:53"
      }
     ],
     "aggiornamento": {
-     "testo": "Venerdì 23 ottobre sera: saranno 325 i tifosi del Benevento ad Arezzo; per Benevento-Catanzaro sono 386 i biglietti emessi (63 locali, 323 ospiti).",
+     "testo": "Sabato 24 ottobre sono uscite le formazioni ufficiali di Arezzo-Benevento: Dalle Mura gioca al posto di Saio, in attacco Okereke, Salvemini e Cherubini.",
      "fonti": [
-      "BeneventoNews24 (tifosi)"
+      "Benevento Calcio (formazioni)"
      ],
-     "quando": "2026-10-23T21:08+02:00"
+     "quando": "2026-10-24T19:08+02:00"
     }
    },
    "sport": "calcio",
