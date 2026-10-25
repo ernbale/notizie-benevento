@@ -34,6 +34,7 @@ from meteo import COMUNI_BN
 
 SITO = "https://notiziebenevento.it"
 INDEXNOW_CHIAVE = "dbcf36df6ea73bedfd5f2e121caca034"   # pubblica per costruzione: il file <chiave>.txt sta sul sito
+HUB = "https://pubsubhubbub.appspot.com/"   # WebSub (il hub di Google): avvisato dopo ogni pubblicazione con notizie nuove
 NOME = "Notizie Benevento"
 QUI = os.path.dirname(os.path.abspath(__file__))
 FONT_BOLD = os.path.join(QUI, "font", "SourceSerif4-Bold.ttf")
@@ -1432,6 +1433,40 @@ def html_comune(c, notizie, eventi, allerte, stemma, oggi, distributori=0):
     return f'<article class="appro">{h}</article>'
 
 
+def nome_mese(m):
+    return f"{MESI_LUNGHI[int(m[5:7]) - 1]} {m[:4]}"
+
+
+def html_archivio(mesi):
+    """La pagina archivio/: i mesi, dal più recente, con quante notizie."""
+    h = _testata_pagina("Archivio", "", "Tutte le notizie, mese per mese")
+    h += ('<p class="sommario">Nessuna notizia viene cancellata: quando esce dalla prima pagina resta qui, allo stesso '
+          "indirizzo. Le notizie di Benevento e del Sannio, mese per mese.</p>")
+    h += '<ul class="notizie-comune">' + "".join(
+        f'<li><a href="/archivio/{m}/">{e(nome_mese(m).capitalize())}</a>'
+        f'<span class="dove">{len(v)} {"notizia" if len(v) == 1 else "notizie"}</span></li>'
+        for m, v in sorted(mesi.items(), reverse=True)) + "</ul>"
+    h += SEGUI
+    return f'<article class="appro">{h}</article>'
+
+
+def html_archivio_mese(m, voci, k, pagine_mese):
+    """Una pagina dell'archivio di un mese: i link a tutte le sue notizie, dalla più recente."""
+    h = _testata_pagina("Archivio", "", f"Le notizie di {nome_mese(m)}" + (f", pagina {k}" if k > 1 else ""))
+    h += (f'<p class="sommario">Tutte le notizie di Benevento e del Sannio pubblicate a {e(nome_mese(m))}, dalla più '
+          "recente.</p>")
+    h += '<ul class="notizie-comune">' + "".join(
+        f'<li><a href="{percorso("notizia", n["id"])}">{e(n["titolo"])}</a><span class="dove">{e(_categoria(n))}'
+        + (f" · {e(n['luogo'])}" if n.get("luogo") else "") + f' · {e(data_it(n.get("pubblicato"), lunga=True))}</span></li>'
+        for n in voci) + "</ul>"
+    if pagine_mese > 1:
+        h += '<p class="sezioni-link">Pagine: ' + " · ".join(
+            (f"<strong>{i}</strong>" if i == k else f'<a href="/archivio/{m}/' + (f"{i}/" if i > 1 else "") + f'">{i}</a>')
+            for i in range(1, pagine_mese + 1)) + "</p>"
+    h += '<p class="sezioni-link"><a href="/archivio/">Tutti i mesi</a></p>' + SEGUI
+    return f'<article class="appro">{h}</article>'
+
+
 def html_comuni(quante):
     h = _testata_pagina("Comuni del Sannio", "", "I Comuni della provincia di Benevento")
     h += ('<p class="sommario">Una pagina per ognuno dei 78 Comuni del Sannio, con le sue notizie, gli eventi, le '
@@ -1621,9 +1656,47 @@ def blocco_seo(title, descr, url, immagine, tipo="website", jsonld=None, extra="
     return "<!--seo-->\n" + "\n".join(h) + "\n<!--/seo-->"
 
 
-def pagina(modello, seo, pagina_js, contenuto="", articolo=False):
-    """index.html con un'altra testa e (se c'è) il contenuto già scritto."""
-    s = modello
+# ---------- i link alle notizie scritti nell'HTML (per Google) ----------
+# Voluto dal proprietario il 25 ott 2026 («vai fai la cosa migliore per google»): le notizie le disegna index.html dopo
+# aver letto notizie.json, e nell'HTML delle pagine non c'era un solo link a una notizia (prima pagina, sezioni, zone,
+# articoli). Google li vede solo quando esegue il JavaScript, a volte ore dopo, e le notizie nuove le scopriva dalle
+# sitemap, che legge circa una volta al giorno: la Miwa a Ragusa, uscita alle 21:09, alle 23 per Google era ancora
+# «sconosciuta». Google: «ogni pagina che ti interessa deve avere un link da almeno un'altra pagina del sito», con un
+# <a href> vero (developers.google.com/search/docs/crawling-indexing/links-crawlable). Il riquadro sta tra <main> e il
+# piede (<!--ultime--> in index.html), fuori da quello che ridisegna index.html: la pagina non salta.
+ULTIME = 15          # «Le ultime notizie» in fondo a ogni pagina
+ULTIME_HOME = 30     # in prima pagina, la più visitata da Google
+DELLA_SEZIONE = 40   # nelle pagine delle sezioni e delle zone
+ARCHIVIO_PAGINA = 300   # notizie per pagina dell'archivio di un mese
+SEGNAPOSTO_ULTIME = re.compile(r"<!--ultime-->.*?<!--/ultime-->", re.S)
+
+
+def html_ultime(elenchi, archivio=True):
+    """Il riquadro dei link: elenchi = [(titolo, notizie)]; una notizia compare una volta sola."""
+    h, viste = "", set()
+    for titolo, voci in elenchi:
+        voci = [n for n in voci if n["id"] not in viste]
+        viste |= {n["id"] for n in voci}
+        if voci:
+            h += f"<h2>{e(titolo)}</h2><ul>" + "".join(
+                f'<li><a href="{percorso("notizia", n["id"])}">{e(n["titolo"])}</a> '
+                f'<span>{e(data_it(n.get("pubblicato"), lunga=True))}</span></li>' for n in voci) + "</ul>"
+    if h and archivio:
+        h += '<p class="tutte"><a href="/archivio/">Tutte le notizie, mese per mese ›</a></p>'
+    return f'<section class="ultime" aria-label="Altre notizie">{h}</section>' if h else ""
+
+
+def con_ultime(s, blocco):
+    if s.count("<!--ultime-->") != 1 or s.count("<!--/ultime-->") != 1 or len(SEGNAPOSTO_ULTIME.findall(s)) != 1:
+        raise RuntimeError("index.html è cambiato: il posto del riquadro <!--ultime--><!--/ultime--> deve esserci una "
+                           "volta sola (anche nei commenti)")
+    return SEGNAPOSTO_ULTIME.sub(lambda m: f"<!--ultime-->{blocco}<!--/ultime-->", s)
+
+
+def pagina(modello, seo, pagina_js, contenuto="", articolo=False, ultime=None):
+    """index.html con un'altra testa e (se c'è) il contenuto già scritto; `ultime`: il riquadro dei link al posto di
+    quello del modello (le ultime notizie)."""
+    s = modello if ultime is None else con_ultime(modello, ultime)
     def sostituisci(vecchio, nuovo, conta=1):
         nonlocal s
         if s.count(vecchio) != conta:
@@ -1641,14 +1714,30 @@ def pagina(modello, seo, pagina_js, contenuto="", articolo=False):
     return s
 
 
+def avvisa_websub():
+    """Dice al hub WebSub che feed.xml è cambiato (Google: «se usi RSS o Atom puoi usare WebSub per avvisare i motori di
+    ricerca, Google compreso delle modifiche»; dal 25 ott 2026)."""
+    import urllib.parse
+    import urllib.request
+    dati = urllib.parse.urlencode({"hub.mode": "publish", "hub.url": f"{SITO}/feed.xml"}).encode()
+    with urllib.request.urlopen(urllib.request.Request(HUB, data=dati, method="POST"), timeout=30) as r:
+        print(f"WebSub: feed annunciato al hub, risposta {r.status}")
+
+
 def invia_indexnow(path):
-    """Avvisa Bing (e gli altri motori di IndexNow) delle pagine nuove o cambiate. Google non usa IndexNow."""
+    """Avvisa Bing (e gli altri motori di IndexNow) delle pagine nuove o cambiate. Google non usa IndexNow: per Google,
+    se tra le pagine c'è una notizia, il hub WebSub del feed."""
     import urllib.request
     with open(path, encoding="utf-8") as f:
         urls = json.load(f)
     if not urls:
         print("IndexNow: niente di nuovo")
         return
+    if any("/notizia/" in u for u in urls):
+        try:
+            avvisa_websub()
+        except Exception as ex:   # non ferma IndexNow
+            print(f"WebSub: il hub non ha risposto ({type(ex).__name__}: {ex})")
     corpo = json.dumps({"host": "notiziebenevento.it", "key": INDEXNOW_CHIAVE,
                         "keyLocation": f"{SITO}/{INDEXNOW_CHIAVE}.txt", "urlList": urls}).encode()
     req = urllib.request.Request("https://api.indexnow.org/indexnow", data=corpo, method="POST",
@@ -1678,6 +1767,10 @@ def main():
     if "<!--seo-->" not in modello:
         raise SystemExit("index.html senza il blocco <!--seo-->")
     prima, notizie, appro = tutte(sito)
+    # il riquadro dei link (vedi html_ultime): nel modello quello di tutte le pagine, le ultime notizie
+    modello = con_ultime(modello, "")
+    modello_home = con_ultime(modello, html_ultime([("Le ultime notizie", notizie[:ULTIME_HOME])]))
+    modello = con_ultime(modello, html_ultime([("Le ultime notizie", notizie[:ULTIME])]))
     try:
         with open(os.path.join(sito, "chiusure.json"), encoding="utf-8") as f:
             chius = json.load(f)
@@ -1715,7 +1808,7 @@ def main():
             {"@type": "NewsArticle", "@id": url + "#articolo", "headline": breve(titolo_google(n), 110),
              "description": n.get("sintesi"), "datePublished": n.get("pubblicato"), "dateModified": modificato,
              "image": [SITO + x for x in dict.fromkeys([foto_in_alto(n) or foto_tema(n)] + foto_inviate(n)) if x] + [SITO + im], "inLanguage": "it-IT", "articleSection": sez, "isAccessibleForFree": True,
-             "mainEntityOfPage": url, "author": {"@type": "Organization", "name": NOME, "url": SITO + "/"},
+             "mainEntityOfPage": url, "author": {"@type": "Organization", "name": NOME, "url": SITO + "/chi-siamo/"},
              "publisher": ORG, "contentLocation": {"@type": "Place", "name": n.get("luogo")},
              "isBasedOn": [f["url"] for f in fonti if re.match(r"^https?://", str(f.get("url") or ""))]},
             {"@type": "BreadcrumbList", "itemListElement": [
@@ -1726,8 +1819,12 @@ def main():
                  f'<meta property="article:section" content="{e(sez)}">')
         seo = blocco_seo(f"{titolo_google(n)} – {NOME}", breve(n.get("sintesi")), url, im, "article", jsonld, extra,
                          og_title=f"{n['titolo']} – {NOME}")
+        altre = [x for x in notizie if x["id"] != n["id"]]
+        ultime = html_ultime([(f"Altre notizie: {sez}", [x for x in altre if x.get("categoria") == n.get("categoria")][:6]),
+                              ("Le ultime notizie", altre[:10])])
         scrivi(os.path.join(sito, "notizia", n["id"], "index.html"),
-               pagina(modello, seo, {"rotta": "#articolo/" + n["id"]}, html_articolo(n, coll), articolo=True))
+               pagina(modello, seo, {"rotta": "#articolo/" + n["id"]}, html_articolo(n, coll), articolo=True,
+                      ultime=ultime))
         mappa.append((url, modificato))
 
     # notizie unite in un'altra (archivio/rimandi.json): il vecchio indirizzo porta a quella rimasta
@@ -1749,7 +1846,7 @@ def main():
                   "headline": breve(titolo_google(x), 110), "description": x.get("sommario"),
                   "datePublished": x.get("pubblicato") or x.get("aggiornato"), "dateModified": x.get("aggiornato"),
                   "image": [SITO + im], "inLanguage": "it-IT", "articleSection": "Approfondimento",
-                  "mainEntityOfPage": url, "author": {"@type": "Organization", "name": NOME, "url": SITO + "/"},
+                  "mainEntityOfPage": url, "author": {"@type": "Organization", "name": NOME, "url": SITO + "/chi-siamo/"},
                   "publisher": ORG}
         seo = blocco_seo(f"{titolo_google(x)} – {NOME}", breve(x.get("sommario")), url, im, "article", jsonld,
                          og_title=f"{x['titolo']} – {NOME}")
@@ -1801,10 +1898,52 @@ def main():
         jsonld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": h1, "url": url,
                   "isPartOf": {"@type": "WebSite", "name": NOME, "url": SITO + "/"}}
         seo = blocco_seo(f"{title} – {NOME}", descr, url, "/condivisione.png", jsonld=jsonld)
-        # solo il titolo: le notizie le mette index.html (un elenco qui farebbe saltare la pagina quando arrivano)
+        # solo il titolo: le notizie le mette index.html (un elenco qui farebbe saltare la pagina quando arrivano);
+        # i link alle notizie della sezione stanno nel riquadro in fondo (html_ultime)
         scrivi(os.path.join(sito, perc, "index.html"),
-               pagina(modello, seo, dict(filtro, h1=h1), f'<h1 class="titolo-sezione">{e(h1)}</h1>'))
+               pagina(modello, seo, dict(filtro, h1=h1), f'<h1 class="titolo-sezione">{e(h1)}</h1>',
+                      ultime=html_ultime([(h1, dentro[:DELLA_SEZIONE]), ("Le ultime notizie", notizie[:10])])))
         mappa.append((url, dentro[0].get("pubblicato") if dentro else None))
+
+    # l'archivio mese per mese (archivio/, archivio/AAAA-MM/): i link a tutte le notizie, anche a quelle uscite dalla
+    # prima pagina. L'archivio di index.html («#archivio») per Google non è una pagina: senza queste, le notizie vecchie
+    # le trovava solo nella sitemap. Le pagine si rifanno a ogni pubblicazione (i file .json dell'archivio non si toccano)
+    mesi = {}
+    for n in notizie:
+        if re.match(r"^\d{4}-\d{2}", str(n.get("pubblicato") or "")):
+            mesi.setdefault(n["pubblicato"][:7], []).append(n)
+    for d in glob.glob(os.path.join(sito, "archivio", "[0-9][0-9][0-9][0-9]-[0-9][0-9]")):
+        if os.path.isdir(d):
+            shutil.rmtree(d)
+    briciole = lambda *x: {"@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": i, "name": nome, **({"item": u} if u else {})}
+        for i, (nome, u) in enumerate([(NOME, SITO + "/")] + list(x), 1)]}
+    for m, voci in mesi.items():
+        pezzi = [voci[i:i + ARCHIVIO_PAGINA] for i in range(0, len(voci), ARCHIVIO_PAGINA)]
+        for k, pezzo in enumerate(pezzi, 1):
+            rel = f"archivio/{m}/" + (f"{k}/" if k > 1 else "")
+            url = f"{SITO}/{rel}"
+            nome = nome_mese(m)
+            jsonld = {"@context": "https://schema.org", "@graph": [
+                {"@type": "CollectionPage", "name": f"Le notizie di {nome}", "url": url,
+                 "isPartOf": {"@type": "WebSite", "name": NOME, "url": SITO + "/"}},
+                briciole(("Archivio", SITO + "/archivio/"), (nome.capitalize(), None))]}
+            seo = blocco_seo(f"Notizie di {nome}" + (f" (pagina {k})" if k > 1 else "") + f": l'archivio – {NOME}",
+                             f"Tutte le notizie di Benevento e del Sannio pubblicate a {nome}: cronaca, strade, politica, "
+                             "sport ed eventi, con i link agli articoli originali.", url, "/condivisione.png", jsonld=jsonld)
+            scrivi(os.path.join(sito, rel, "index.html"),
+                   pagina(modello, seo, {"statica": True}, html_archivio_mese(m, pezzo, k, len(pezzi)), articolo=True))
+            mappa.append((url, pezzo[0].get("pubblicato")))
+    url = SITO + "/archivio/"
+    seo = blocco_seo(f"Archivio delle notizie, mese per mese – {NOME}", "Tutte le notizie di Benevento e del Sannio "
+                     "pubblicate da Notizie Benevento, mese per mese: nessuna viene cancellata.", url, "/condivisione.png",
+                     jsonld={"@context": "https://schema.org", "@graph": [
+                         {"@type": "CollectionPage", "name": "Archivio delle notizie", "url": url,
+                          "isPartOf": {"@type": "WebSite", "name": NOME, "url": SITO + "/"}},
+                         briciole(("Archivio", None))]})
+    scrivi(os.path.join(sito, "archivio", "index.html"),
+           pagina(modello, seo, {"statica": True}, html_archivio(mesi), articolo=True))
+    mappa.append((url, notizie[0].get("pubblicato") if notizie else None))
 
     # chi siamo: già scritta nella pagina, index.html la lascia com'è (NB_PAGINA.statica)
     url = SITO + "/chi-siamo/"
@@ -2020,6 +2159,10 @@ def main():
         if os.path.relpath(f, sito).replace(os.sep, "/") not in usate and not (vecchia and vecchia.group(1) in ids):
             os.remove(f)
 
+    # la prima pagina (index.html) col riquadro delle ultime notizie scritto dentro: la riscrive solo la pubblicazione
+    # su GitHub (questo programma non si lancia altrove; nel repository il riquadro resta vuoto)
+    scrivi(os.path.join(sito, "index.html"), modello_home)
+
     # sitemap.xml
     righe = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for url, lm in mappa:
@@ -2054,6 +2197,7 @@ def main():
     feed = ('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>'
             f"<title>{NOME}</title><link>{SITO}/</link><description>{e(DESCR_HOME)}</description><language>it</language>"
             f'<atom:link href="{SITO}/feed.xml" rel="self" type="application/rss+xml"/>'
+            f'<atom:link href="{HUB}" rel="hub"/>'
             f"<lastBuildDate>{email.utils.format_datetime(adesso)}</lastBuildDate>" + "".join(voci) + "</channel></rss>\n")
     scrivi(os.path.join(sito, "feed.xml"), feed)
 
