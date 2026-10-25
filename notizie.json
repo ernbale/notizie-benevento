@@ -1,7 +1,69 @@
 {
- "aggiornato": "2026-10-25T11:10+01:00",
+ "aggiornato": "2026-10-25T12:10+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "castelvenere-furgone-rubato-rame-inseguimento-carabinieri",
+   "titolo": "Telesina, non si ferma all'alt dei Carabinieri a Solopaca: furgone rubato abbandonato a Castelvenere, dentro c'era rame",
+   "titolo_google": "Castelvenere, fugge all'alt: nel furgone rubato c'era rame",
+   "sintesi": "Nella notte un furgone non si è fermato a un posto di blocco dei Carabinieri a Solopaca ed è fuggito sulla Telesina fino a Castelvenere, dove l'autista l'ha lasciato ed è scappato a piedi. Il furgone era rubato e dentro c'era molto rame, forse preso da un cantiere dell'Alta Velocità.",
+   "categoria": "cronaca",
+   "zona": "telesina",
+   "luogo": "Solopaca e Castelvenere",
+   "pubblicato": "2026-10-25T11:39+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/carabinieri-alt-telesina-inseguimento-castelvenere/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Nella notte tra sabato 24 e domenica 25 ottobre un furgone non si è fermato all'alt dei Carabinieri sulla statale Telesina, la strada che collega Benevento alla provincia di Caserta. I militari della Compagnia di Cerreto Sannita avevano fatto un posto di blocco a Solopaca, durante un servizio di controllo del territorio. Lo racconta Anteprima24.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Il furgone andava verso il confine con la provincia di Caserta. Invece di fermarsi, l'autista ha accelerato ed è andato avanti fino a Castelvenere. Lì ha lasciato il mezzo a bordo strada ed è scappato a piedi, al buio, nelle campagne.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "I Carabinieri hanno controllato il cassone: il furgone era rubato e dentro c'era una quantità di rame non ancora precisata ma, secondo il giornale, consistente. Probabilmente veniva da un cantiere dell'Alta Velocità ferroviaria.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "I Carabinieri della Compagnia stanno ricostruendo cosa è successo e cercano di risalire a chi guidava.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Chi guidava il furgone e se era da solo.",
+     "A che ora è successo e quanto rame c'era.",
+     "Da quale cantiere viene il rame e dove era stato rubato il furgone."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Non si ferma all’alt dei Carabinieri: inseguimento fino a Castelvenere",
+      "url": "https://www.anteprima24.it/benevento/carabinieri-alt-telesina-inseguimento-castelvenere/",
+      "data": "25 ott, 11:39"
+     }
+    ]
+   }
+  },
   {
    "id": "cusano-mutri-no-sannio-acque-ricorso-tar",
    "titolo": "Cusano Mutri, il Consiglio comunale vota all'unanimità contro il passaggio dell'acqua a Sannio Acque: ricorso al TAR",
@@ -11,7 +73,7 @@
    "zona": "telesina",
    "immagine": "consiglio",
    "luogo": "Cusano Mutri",
-   "pubblicato": "2026-10-25T10:31+01:00",
+   "pubblicato": "2026-10-25T12:06+01:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
@@ -26,6 +88,10 @@
     {
      "nome": "Fremondoweb",
      "url": "https://www.fremondoweb.com/notizie-dalla-valle-telesina/cusano-fronte-unito-per-la-tutela-delle-sorgenti-voto-unanime-contro-lingresso-in-sannio-acque/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/25/cusano-mutri-il-consiglio-approva-allunanimita-la-mozione-contro-lingresso-in-sannio-acque/"
     }
    ],
    "articolo": {
@@ -35,7 +101,8 @@
       "fonti": [
        "NTR24",
        "Anteprima24",
-       "Fremondoweb"
+       "Fremondoweb",
+       "BeneventoNews24"
       ],
       "giorno": "2026-10-23"
      },
@@ -44,7 +111,8 @@
       "fonti": [
        "NTR24",
        "Anteprima24",
-       "Fremondoweb"
+       "Fremondoweb",
+       "BeneventoNews24"
       ],
       "giorno": "2026-10-23"
      },
@@ -63,7 +131,8 @@
       "fonti": [
        "NTR24",
        "Anteprima24",
-       "Fremondoweb"
+       "Fremondoweb",
+       "BeneventoNews24"
       ],
       "giorno": "2026-10-23"
      }
@@ -119,7 +188,8 @@
       "fonti": [
        "NTR24",
        "Anteprima24",
-       "Fremondoweb"
+       "Fremondoweb",
+       "BeneventoNews24"
       ]
      }
     ],
@@ -153,6 +223,12 @@
       "titolo": "Servizio idrico integrato, firmata la convenzione tra EIC e Sannio Acque",
       "url": "https://www.ntr24.tv/2026/10/21/servizio-idrico-integrato-firmata-la-convenzione-tra-eic-e-sannio-acque/",
       "data": "21 ott"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Cusano Mutri, il Consiglio approva all’unanimità la mozione contro l’ingresso in Sannio Acque",
+      "url": "https://www.beneventonews24.it/2026/10/25/cusano-mutri-il-consiglio-approva-allunanimita-la-mozione-contro-lingresso-in-sannio-acque/",
+      "data": "25 ott, 12:06"
      }
     ]
    },
@@ -3165,13 +3241,13 @@
   },
   {
    "id": "montesarchio-cocaina-229-grammi-donna-arrestata",
-   "titolo": "Montesarchio, oltre 229 grammi di cocaina trovati a una donna: arrestata dai Carabinieri",
-   "titolo_google": "Montesarchio, 229 grammi di cocaina: donna arrestata",
-   "sintesi": "I Carabinieri della Compagnia di Montesarchio hanno arrestato una donna dopo aver trovato oltre 229 grammi di cocaina in una perquisizione personale e dell'auto. È agli arresti domiciliari in attesa delle decisioni della Procura di Benevento.",
+   "titolo": "Montesarchio, 26enne arrestata con circa 230 grammi di cocaina: lunedì l'udienza di convalida",
+   "titolo_google": "Montesarchio, 230 grammi di cocaina: 26enne arrestata",
+   "sintesi": "I Carabinieri di Montesarchio hanno arrestato una 26enne trovata in auto con circa 230 grammi di cocaina in un borsello. È agli arresti domiciliari; lunedì 26 ottobre, in mattinata, c'è l'udienza di convalida.",
    "categoria": "cronaca",
    "zona": "caudina",
    "luogo": "Montesarchio",
-   "pubblicato": "2026-10-24T12:33:00+02:00",
+   "pubblicato": "2026-10-25T12:05+01:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
@@ -3185,11 +3261,11 @@
     },
     {
      "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/23/montesarchio-scoperta-con-la-cocaina-ai-domiciliari-una-donna/"
+     "url": "https://www.ntr24.tv/2026/10/25/montesarchio-26enne-arrestata-con-230-gr-di-cocaina-domani-udienza-di-convalida/"
     },
     {
      "nome": "BeneventoNews24",
-     "url": "https://www.beneventonews24.it/2026/10/23/montesarchio-sequestrati-oltre-due-etti-di-cocaina-una-donna-in-arresto/"
+     "url": "https://www.beneventonews24.it/2026/10/25/montesarchio-26enne-arrestata-con-230-gr-di-cocaina-domani-udienza-di-convalida/"
     },
     {
      "nome": "Ottopagine",
@@ -3198,6 +3274,14 @@
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "La 26enne di Montesarchio arrestata dai Carabinieri con circa 230 grammi di cocaina resta agli arresti domiciliari: lunedì 26 ottobre, in mattinata, c'è l'udienza di convalida dell'arresto davanti al giudice. Lo scrivono domenica 25 ottobre NTR24 e BeneventoNews24, che confermano i dettagli: i militari della stazione di Montesarchio l'hanno fermata mentre era in auto e sul sedile hanno trovato un borsello da donna con quattro involucri di cellophane. È accusata di detenzione di droga a fini di spaccio; i domiciliari li ha disposti la Procura. All'udienza sarà assistita dal suo avvocato di fiducia.",
+      "fonti": [
+       "NTR24 (25/10)",
+       "BeneventoNews24 (25/10)"
+      ],
+      "giorno": "2026-10-25"
+     },
      {
       "testo": "Sabato 24 ottobre Ottopagine aggiunge qualche dettaglio: la donna arrestata ha 26 anni e viaggiava da sola in auto quando è stata fermata dai Carabinieri della Compagnia di Montesarchio durante un controllo stradale. I militari hanno sequestrato poco meno di 230 grammi di cocaina divisi in quattro involucri di cellophane e un telefono cellulare. I domiciliari sono stati disposti dal sostituto procuratore, in attesa dell'udienza di convalida davanti al giudice per le indagini preliminari. Il giornale parla di un borsello appoggiato sul sedile, mentre il titolo cita un beauty case.",
       "fonti": [
@@ -3236,7 +3320,24 @@
       "giorno": "2026-10-23"
      }
     ],
-    "cronologia": [],
+    "cronologia": [
+     {
+      "data": "23 ottobre",
+      "fatto": "I Carabinieri rendono noto l'arresto della donna, ai domiciliari.",
+      "fonti": [
+       "Gazzetta di Benevento",
+       "NTR24"
+      ]
+     },
+     {
+      "data": "26 ottobre, mattina",
+      "fatto": "Udienza di convalida dell'arresto.",
+      "fonti": [
+       "NTR24 (25/10)",
+       "BeneventoNews24 (25/10)"
+      ]
+     }
+    ],
     "concordano": [
      {
       "testo": "Arresto a Montesarchio da parte dei Carabinieri, oltre 229 grammi di cocaina trovati con una perquisizione personale e dell'auto, la donna ai domiciliari in attesa della Procura.",
@@ -3245,6 +3346,14 @@
        "Anteprima24",
        "NTR24",
        "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "La 26enne fermata in auto, i quattro involucri con circa 230 grammi di cocaina in un borsello sul sedile e l'udienza di convalida lunedì mattina.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24 (25/10)",
+       "BeneventoNews24 (25/10)"
       ]
      }
     ],
@@ -3257,7 +3366,7 @@
      }
     ],
     "non_si_sa": [
-     "Quando ci sarà l'udienza di convalida dell'arresto.",
+     "Cosa deciderà il giudice all'udienza di convalida di lunedì 26 ottobre.",
      "Dove sia stata fermata esattamente e in quale giorno: le fonti non lo dicono."
     ],
     "fonti": [
@@ -3290,14 +3399,28 @@
       "url": "https://www.ottopagine.it/bn/cronaca/442041/in-auto-con-un-beauty-case-contenente-la-cocaina-arrestata-una-26enne.shtml",
       "titolo": "In auto con un beauty case contenente la cocaina: arrestata una 26enne",
       "data": "24 ott, 12:33"
+     },
+     {
+      "nome": "NTR24 (25/10)",
+      "titolo": "Montesarchio, 26enne arrestata con 230 gr di cocaina: domani udienza di convalida",
+      "url": "https://www.ntr24.tv/2026/10/25/montesarchio-26enne-arrestata-con-230-gr-di-cocaina-domani-udienza-di-convalida/",
+      "data": "25 ott, 12:05"
+     },
+     {
+      "nome": "BeneventoNews24 (25/10)",
+      "titolo": "Montesarchio, 26enne arrestata con 230 gr di cocaina: domani udienza di convalida",
+      "url": "https://www.beneventonews24.it/2026/10/25/montesarchio-26enne-arrestata-con-230-gr-di-cocaina-domani-udienza-di-convalida/",
+      "data": "25 ott, 11:55"
      }
     ],
     "aggiornamento": {
-     "testo": "Sabato 24 ottobre Ottopagine scrive che la donna ha 26 anni, è stata fermata durante un controllo stradale con quasi 230 grammi di cocaina in quattro involucri ed è ai domiciliari in attesa della convalida.",
+     "testo": "Lunedì 26 ottobre, in mattinata, è fissata l'udienza di convalida dell'arresto della 26enne, che resta ai domiciliari.",
      "fonti": [
-      "Ottopagine"
+      "NTR24 (25/10)",
+      "BeneventoNews24 (25/10)"
      ],
-     "quando": "2026-10-24T13:08+02:00"
+     "quando": "2026-10-25T12:10+01:00",
+     "titolo_prima": "Montesarchio, oltre 229 grammi di cocaina trovati a una donna: arrestata dai Carabinieri"
     }
    }
   },
@@ -4560,6 +4683,10 @@
     {
      "nome": "Anteprima24",
      "url": "https://www.anteprima24.it/benevento/accademia-volley-vittoria-blitz-san-giuseppe-vesuviano/"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/sport/2026/la-pasta-rummo-concede-il-bis-superato-in-tre-set-il-s-giuseppe-vesuviano.html"
     }
    ],
    "articolo": {
@@ -4569,7 +4696,8 @@
       "fonti": [
        "Accademia Volley Benevento (24/10)",
        "NTR24 Sport",
-       "Anteprima24"
+       "Anteprima24",
+       "InfoSannio"
       ],
       "giorno": "2026-10-24"
      },
@@ -4635,7 +4763,8 @@
       "fonti": [
        "Accademia Volley Benevento (24/10)",
        "NTR24 Sport",
-       "Anteprima24"
+       "Anteprima24",
+       "InfoSannio"
       ]
      }
     ],
@@ -4667,6 +4796,12 @@
       "titolo": "Accademia Volley, blitz a San Giuseppe Vesuviano",
       "url": "https://www.anteprima24.it/benevento/accademia-volley-vittoria-blitz-san-giuseppe-vesuviano/",
       "data": "25 ott, 10:33"
+     },
+     {
+      "nome": "InfoSannio",
+      "titolo": "La Pasta Rummo concede il bis: superato in tre set il S. Giuseppe Vesuviano",
+      "url": "https://www.infosannionews.it/sport/2026/la-pasta-rummo-concede-il-bis-superato-in-tre-set-il-s-giuseppe-vesuviano.html",
+      "data": "25 ott, 11:23"
      }
     ],
     "aggiornamento": {

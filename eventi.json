@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T09:06+01:00",
+ "aggiornato": "2026-10-25T12:06+01:00",
  "eventi": [
   {
    "id": "mostra-cosmogonie-meact-torrecuso-2026",
@@ -664,6 +664,24 @@
      "titolo": "Al San Vittorino concerto della Wind Ensemble",
      "url": "https://www.anteprima24.it/benevento/concerto-wind-ensemble/",
      "data": "25 ott, 10:05"
+    },
+    {
+     "nome": "Ottopagine",
+     "titolo": "Musica, formazione e dialogo internazionale al Teatro San Vittorino",
+     "url": "https://www.ottopagine.it/bn/cultura/442107/la-u-s-navy-band-al-conservatorio-nicola-sala.shtml",
+     "data": "25 ott"
+    },
+    {
+     "nome": "InfoSannio",
+     "titolo": "Il Conservatorio “Nicola Sala” incontra la U.S. Navy Band: musica, formazione e dialogo internazionale al Teatro San Vittorino",
+     "url": "https://www.infosannionews.it/attualita/2026/il-conservatorio-nicola-sala-incontra-la-u-s-navy-band-musica-formazione-e-dialogo-internazionale-al-teatro-san-vittorino.html",
+     "data": "25 ott"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "titolo": "Il Conservatorio “N. Sala” incontra la U.S. Navy Band: musica e formazione al Teatro San Vittorino",
+     "url": "https://www.beneventonews24.it/2026/10/25/il-conservatorio-n-sala-incontra-la-u-s-navy-band-musica-e-formazione-al-teatro-san-vittorino/",
+     "data": "25 ott"
     }
    ],
    "foto": "orchestra-5"
