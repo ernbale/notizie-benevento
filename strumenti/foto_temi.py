@@ -3,8 +3,10 @@
 stesso tema non mostrano sempre la stessa foto, sul sito e sui social.
 
 Quante versioni (voluto dal proprietario il 22 ott 2026: «almeno 4 per ogni tema, quelle più frequenti anche di
-più»; il 25 ott: «raddoppiamo le foto», da 788 a 1576): almeno MINIMO per ogni tema; FREQUENTI per i temi segnati
-«frequente» in temi.json (quelli che ricorrono di più nei titoli dei giornali); IN_TESTA per i più usati (TESTA).
+più»; il 25 ott: «arriva a 12 € e fermati»): almeno MINIMO per ogni tema; FREQUENTI per i temi segnati «frequente»
+in temi.json (quelli che ricorrono di più nei titoli dei giornali); IN_TESTA per i più usati (TESTA). Con --budget si
+ferma prima di spendere di più: le foto si fanno a giri (prima una nuova per ogni tema, cominciando dai più usati,
+poi la seconda…), così se il budget finisce prima tutti i temi ne hanno avute in proporzione.
 
 Le versioni nuove sono la stessa scena del tema (o di una sua variante) con un'altra luce, un'altra stagione o
 un'altra inquadratura: la frase è scritta in temi.json, nella lista «varianti» (variante i = file <tema>-<i+2>.jpg).
@@ -25,7 +27,7 @@ import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 
 CART = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "img", "temi")
-MINIMO, FREQUENTI, IN_TESTA = 8, 12, 16
+MINIMO, FREQUENTI, IN_TESTA = 9, 14, 20
 TESTA = ["teatro", "calcio", "lavori-stradali", "strada-chiusa", "treno", "scuola", "pioggia", "autobus", "ospedale",
          "rifiuti", "carburante", "camion"]
 MODELLO, QUALITA, MISURA = "gpt-image-2.5-sunburst", "medium", "1536x1024"
@@ -73,9 +75,10 @@ def piano(temi):
         vere = [t["foto"]] + [v for v in varianti[:max(0, ce - 1)] if not any(m in v for m in MODI)]
         gia = {t["foto"]} | set(varianti)
         nuove = [f"{sc.rstrip('.')}, {m}" for m in MODI for sc in vere if f"{sc.rstrip('.')}, {m}" not in gia]
+        peso = 0 if tema in TESTA else 1 if t.get("frequente") else 2
         for i in range(voglio - ce):
-            lavoro.append((tema, ce + i + 1, nuove[i % len(nuove)]))
-    return lavoro
+            lavoro.append((i, peso, tema, ce + i + 1, nuove[i % len(nuove)]))
+    return [x[2:] for x in sorted(lavoro, key=lambda x: (x[0], x[1], x[2]))]
 
 
 def genera(chiave, frase):
@@ -110,6 +113,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--prova", action="store_true")
     ap.add_argument("--quante", type=int, default=0, help="al massimo queste (0 = tutte)")
+    ap.add_argument("--budget", type=float, default=0, help="dollari al massimo (dal consumo vero di ogni foto)")
     a = ap.parse_args()
     p_temi = os.path.join(CART, "temi.json")
     with open(p_temi, encoding="utf-8") as f:
@@ -117,7 +121,8 @@ def main():
     lavoro = piano(temi)
     if a.quante:
         lavoro = lavoro[:a.quante]
-    print(f"Foto da fare: {len(lavoro)} (circa {len(lavoro) * 0.0105:.2f} $)")
+    print(f"Foto da fare: {len(lavoro)} (circa {len(lavoro) * 0.0105:.2f} $)"
+          + (f"; budget {a.budget:.2f} $: circa {min(len(lavoro), int(a.budget / 0.0105))}" if a.budget else ""))
     if a.prova:
         for tema, numero, frase in lavoro[:12]:
             print(f"  {tema}-{numero}: {frase}")
@@ -134,16 +139,34 @@ def main():
         except Exception as e:
             return tema, numero, frase, {}, str(e)
 
-    fatte, errori, token = [], [], 0
+    # il costo vero di ogni foto dal suo consumo (listino: testo in 5 $, uscita 30 $ per milione di token); finché non
+    # se ne conosce nessuna si conta 0,0115 $ l'una (22 ott: 527 foto = 5,4 $, cioè 0,0102)
+    fatte, errori, token, speso = [], [], 0, 0.0
+    STIMA = 0.0115
+    from concurrent.futures import FIRST_COMPLETED, wait
+    coda, in_volo = list(lavoro), {}
     with ThreadPoolExecutor(6) as ex:
-        for tema, numero, frase, uso, err in ex.map(una, lavoro):
-            if err:
-                errori.append(f"{tema}-{numero}: {err}")
-                print(f"✗ {tema}-{numero}: {err}", flush=True)
-            else:
-                fatte.append((tema, numero, frase))
-                token += uso.get("output_tokens", 0)
-                print(f"✓ {tema}-{numero} ({len(fatte)}/{len(lavoro)})", flush=True)
+        while coda or in_volo:
+            while coda and len(in_volo) < 6 and (not a.budget or speso + STIMA * (len(in_volo) + 1) <= a.budget):
+                x = coda.pop(0)
+                in_volo[ex.submit(una, x)] = x
+            if not in_volo:
+                print(f"Budget raggiunto: speso circa {speso:.2f} $ su {a.budget:.2f} $, restano {len(coda)} foto da fare")
+                break
+            finite, _ = wait(in_volo, return_when=FIRST_COMPLETED)
+            for fu in finite:
+                in_volo.pop(fu)
+                tema, numero, frase, uso, err = fu.result()
+                speso += uso.get("input_tokens", 0) * 5e-6 + uso.get("output_tokens", 0) * 30e-6 if uso else 0
+                if err:
+                    errori.append(f"{tema}-{numero}: {err}")
+                    print(f"✗ {tema}-{numero}: {err}", flush=True)
+                    if "insufficient_quota" in err or "billing" in err.lower() or "limit" in err.lower():
+                        coda.clear()   # credito o tetto mensile finiti: inutile continuare
+                else:
+                    fatte.append((tema, numero, frase))
+                    token += uso.get("output_tokens", 0)
+                    print(f"✓ {tema}-{numero} ({len(fatte)}/{len(lavoro)}, speso circa {speso:.2f} $)", flush=True)
     # le frasi in temi.json, in ordine di file: varianti[i] è <tema>-<i+2>.jpg (solo se non ci sono buchi)
     for tema, numero, frase in sorted(fatte):
         v = temi[tema].setdefault("varianti", [])
@@ -154,7 +177,8 @@ def main():
     with open(p_temi, "w", encoding="utf-8") as f:
         json.dump(temi, f, ensure_ascii=False, indent=1)
         f.write("\n")
-    print(f"Fatte {len(fatte)}, errori {len(errori)}; token di uscita {token} (il conto vero è sul saldo OpenAI)")
+    print(f"Fatte {len(fatte)}, errori {len(errori)}; token di uscita {token}, speso circa {speso:.2f} $ "
+          "(il conto vero è sul saldo OpenAI)")
     if errori:
         sys.exit(1)
 
