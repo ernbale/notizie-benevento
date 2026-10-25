@@ -607,7 +607,8 @@ NON_COMUNICATO_DOMINI = ("staff.aruba.it", ".ad.aruba.it")
 # Le risposte alla nostra mail («grazie, vi abbiamo aggiunti») non sono comunicati, ma un ufficio stampa può anche
 # rispondere mandando un comunicato: allora vanno all'agente come gli altri (voluto il 24 ott 2026, dopo la risposta
 # della Soprintendenza delle 15:55). Conta un documento o un'immagine grande allegati, o testo scritto da loro.
-RISPOSTA_NOSTRA = re.compile(r"comunicati stampa per notizie benevento", re.I)   # l'oggetto della nostra mail
+# l'oggetto delle nostre mail: agli uffici stampa (24 ott 2026) e alle Pro Loco (25 ott 2026)
+RISPOSTA_NOSTRA = re.compile(r"comunicati stampa per notizie benevento|eventi delle pro loco su notizie benevento", re.I)
 NOSTRA_MAIL = "vi scriviamo da notizie benevento"   # dove comincia la nostra mail citata nella risposta
 RIGA_CITAZIONE = re.compile(r"^\s*(>|_{5,}|-{5,}|(da|from|inviato|sent|a|to|cc|oggetto|subject|data|date)\s*:)"
                             r"|(ha scritto|wrote)\s*:\s*$", re.I)
