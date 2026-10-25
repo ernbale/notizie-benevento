@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T08:09+01:00",
+ "aggiornato": "2026-10-25T09:10+01:00",
  "giornali_letti": 14,
  "notizie": [
   {
@@ -178,7 +178,7 @@
    "id": "arezzo-benevento-0-3-24-ottobre",
    "titolo": "Serie B, Arezzo-Benevento 0-3: reti di Siatounis, Okereke e Mignani",
    "titolo_google": "Serie B: Arezzo-Benevento 0-3, il Benevento sale a 14 punti",
-   "sintesi": "Sabato 24 ottobre il Benevento ha battuto 3-0 l'Arezzo nell'ottava giornata di Serie B, con tutti i gol nel secondo tempo: Siatounis, Okereke e Mignani. I giallorossi salgono a 14 punti.",
+   "sintesi": "Sabato 24 ottobre il Benevento ha battuto 3-0 l'Arezzo nell'ottava giornata di Serie B, con tutti i gol nel secondo tempo: Siatounis, Okereke e Mignani. I giallorossi salgono a 14 punti e al quinto posto in classifica.",
    "categoria": "sport",
    "sport": "calcio",
    "zona": "benevento",
@@ -202,6 +202,14 @@
     {
      "nome": "BeneventoNews24",
      "url": "https://www.beneventonews24.it/2026/10/24/arezzo-benevento-0-0-allintervallo-la-strega-crea-e-attacca-ma-non-la-sblocca/"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/25/il-benevento-va-veloce-tris-allarezzo-e-quinto-posto-in-classifica-foto/"
+    },
+    {
+     "nome": "Benevento Giornale",
+     "url": "https://www.beneventogiornale.com/2026/10/25/una-splendida-vittoria-ad-arezzo-porta-il-benevento-al-quinto-posto-in-classifica/"
     }
    ],
    "articolo": {
@@ -212,7 +220,17 @@
        "Benevento Calcio",
        "Cronache del Sannio",
        "NTR24 Sport",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Il Sannio Quotidiano",
+       "Benevento Giornale"
+      ],
+      "giorno": "2026-10-24"
+     },
+     {
+      "testo": "È la quarta vittoria del Benevento nelle ultime cinque partite, dopo il pareggio con il Vicenza della settimana prima, e porta i giallorossi al quinto posto in classifica.",
+      "fonti": [
+       "Il Sannio Quotidiano",
+       "Benevento Giornale"
       ],
       "giorno": "2026-10-24"
      },
@@ -242,6 +260,14 @@
        "BeneventoNews24"
       ],
       "giorno": "2026-10-24"
+     },
+     {
+      "testo": "Per Mignani, entrato dalla panchina, è il primo gol in Serie B. Dopo la partita l'attaccante ha detto che è stata «una delle migliori partite dell'anno» e che la squadra è stata brava «a non ripetere i piccoli errori di sabato scorso». Secondo Benevento Giornale nel corso della gara c'è stato anche un palo colpito da Cherubini.",
+      "fonti": [
+       "Il Sannio Quotidiano (Mignani)",
+       "Benevento Giornale"
+      ],
+      "giorno": "2026-10-24"
      }
     ],
     "cronologia": [
@@ -268,7 +294,16 @@
        "Benevento Calcio",
        "Cronache del Sannio",
        "NTR24 Sport",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Il Sannio Quotidiano",
+       "Benevento Giornale"
+      ]
+     },
+     {
+      "testo": "Il Benevento sale al quinto posto in classifica.",
+      "fonti": [
+       "Il Sannio Quotidiano",
+       "Benevento Giornale"
       ]
      }
     ],
@@ -306,6 +341,24 @@
       "titolo": "Arezzo-Benevento 0-3: la Strega torna a vincere con Siatounis, Okereke e Mignani",
       "url": "https://www.beneventonews24.it/2026/10/24/arezzo-benevento-0-0-allintervallo-la-strega-crea-e-attacca-ma-non-la-sblocca/",
       "data": "24 ott, 20:18"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Il Benevento va veloce: tris all’Arezzo e quinto posto in classifica [FOTO]",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/25/il-benevento-va-veloce-tris-allarezzo-e-quinto-posto-in-classifica-foto/",
+      "data": "25 ott, 08:46"
+     },
+     {
+      "nome": "Il Sannio Quotidiano (Mignani)",
+      "titolo": "Mignani si gode il primo gol in Serie B: “Stiamo facendo qualcosa di importante”",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/25/mignani-si-gode-il-primo-gol-in-serie-b-stiamo-facendo-qualcosa-di-importante/",
+      "data": "25 ott, 08:35"
+     },
+     {
+      "nome": "Benevento Giornale",
+      "titolo": "Una splendida vittoria ad Arezzo porta il Benevento al quinto posto in classifica",
+      "url": "https://www.beneventogiornale.com/2026/10/25/una-splendida-vittoria-ad-arezzo-porta-il-benevento-al-quinto-posto-in-classifica/",
+      "data": "25 ott, 08:14"
      }
     ]
    },
@@ -331,6 +384,10 @@
     {
      "nome": "BeneventoNews24",
      "url": "https://www.beneventonews24.it/2026/10/24/ciclista-investe-bambino-sul-corso-garibaldi-trasportato-in-ospedale/"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/25/bimbo-investito-da-una-bici-mentre-passeggia-con-i-genitori-lungo-il-corso-garibaldi/"
     }
    ],
    "articolo": {
@@ -339,21 +396,33 @@
       "testo": "Sabato sera, 24 ottobre, verso le 19:30, un bambino è stato investito da una bicicletta sul corso Garibaldi a Benevento, vicino agli incroci con via Pacca e via Rampone. Era con i genitori.",
       "fonti": [
        "Anteprima24",
-       "BeneventoNews24"
-      ]
+       "BeneventoNews24",
+       "Il Sannio Quotidiano"
+      ],
+      "giorno": "2026-10-24"
      },
      {
-      "testo": "Il bambino è stato colpito al volto e ha perso sangue. Secondo Anteprima24 le sue condizioni non sembrano gravi, ma per precauzione è stato accompagnato in ospedale.",
+      "testo": "Il bambino è stato colpito al volto e ha perso sangue. Secondo i primi controlli dei soccorritori del 118, riferiti da Il Sannio Quotidiano, ha abrasioni e ferite, anche al viso, che non sembrano gravi; è stato portato al pronto soccorso per altri esami.",
       "fonti": [
-       "Anteprima24"
-      ]
+       "Anteprima24",
+       "Il Sannio Quotidiano"
+      ],
+      "giorno": "2026-10-24"
      },
      {
       "testo": "Il ciclista si è fermato per soccorrerlo ed è stato poi fermato dagli agenti della Polizia municipale. In quel tratto di zona a traffico limitato, ricorda il giornale, è vietato da tempo anche il passaggio delle biciclette.",
       "fonti": [
        "Anteprima24",
        "BeneventoNews24"
-      ]
+      ],
+      "giorno": "2026-10-24"
+     },
+     {
+      "testo": "È il secondo episodio in due giorni sul corso Garibaldi: la sera di venerdì 23 ottobre lungo la stessa strada era stata ferita una ragazza.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ],
+      "giorno": "2026-10-24"
      }
     ],
     "cronologia": [],
@@ -362,7 +431,8 @@
       "testo": "Un bambino che era con i genitori è stato investito da una bici sul corso Garibaldi, è stato portato al pronto soccorso del San Pio e le sue condizioni non sono gravi; il ciclista è stato fermato dalla Polizia municipale perché in quella zona le biciclette non possono passare.",
       "fonti": [
        "Anteprima24",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Il Sannio Quotidiano"
       ]
      }
     ],
@@ -383,6 +453,12 @@
       "titolo": "Benevento, ciclista investe bambino sul Corso Garibaldi: trasportato in ospedale",
       "url": "https://www.beneventonews24.it/2026/10/24/ciclista-investe-bambino-sul-corso-garibaldi-trasportato-in-ospedale/",
       "data": "24 ott, 21:40"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Bimbo investito da una bici mentre passeggia con i genitori lungo il corso Garibaldi",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/25/bimbo-investito-da-una-bici-mentre-passeggia-con-i-genitori-lungo-il-corso-garibaldi/",
+      "data": "25 ott, 08:45"
      }
     ]
    }

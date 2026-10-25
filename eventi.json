@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T07:26+01:00",
+ "aggiornato": "2026-10-25T09:06+01:00",
  "eventi": [
   {
    "id": "mostra-cosmogonie-meact-torrecuso-2026",
@@ -659,6 +659,45 @@
    ],
    "immagine": "concerto",
    "foto": "concerto"
+  },
+  {
+   "id": "eterno-enigma-teatro-romano-benevento-2026",
+   "titolo": "«Eterno Enigma» al Teatro Romano",
+   "tipo": "teatro",
+   "inizio": "2026-11-01",
+   "ora": "11:30",
+   "luogo": "Teatro Romano di Benevento, piazza Ponzio Telesino",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "organizzatore": [
+    "Teatro Romano di Benevento",
+    "I Lupi"
+   ],
+   "breve": "Domenica 1 novembre alle 11:30 il Teatro Romano ospita «Eterno Enigma», uno spettacolo ispirato a Pinocchio e Lucignolo, per la Domenica al Museo. Non serve prenotare.",
+   "descrizione": [
+    {
+     "testo": "Domenica 1 novembre, alle 11:30, al Teatro Romano di Benevento va in scena «Eterno Enigma», uno spettacolo teatrale ispirato ai personaggi di Pinocchio e Lucignolo. Racconta il crescere, le scelte, la tentazione e la differenza tra verità e illusione. Lo propone la direzione del Teatro Romano insieme al gruppo I Lupi, per l'iniziativa Domenica al Museo del ministero della Cultura.",
+     "fonti": [
+      "Ministero della Cultura"
+     ]
+    },
+    {
+     "testo": "Quel giorno il Teatro Romano è aperto dalle 9 alle 17:40. La pagina del ministero dice che la prenotazione non serve; il prezzo non è indicato.",
+     "fonti": [
+      "Ministero della Cultura"
+     ]
+    }
+   ],
+   "immagine": "teatro",
+   "fonti": [
+    {
+     "nome": "Ministero della Cultura",
+     "titolo": "Domenica al Museo- Teatro romano di Benevento- 1 novembre 2026",
+     "url": "https://cultura.gov.it/evento/domenica-al-museo-teatro-romano-di-benevento-1-novembre-2026",
+     "data": "19 ott"
+    }
+   ],
+   "foto": "teatro-13"
   },
   {
    "id": "cadeaux-al-castello-limatola-2026",
