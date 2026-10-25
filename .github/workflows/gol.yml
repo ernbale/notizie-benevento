@@ -1,0 +1,77 @@
+# Le partite del Benevento in diretta su Telegram, Facebook e Instagram (strumenti/gol.py): ogni gol, la fine del primo
+# tempo e la fine della partita. La fa partire il Pi di casa 20 minuti prima del calcio d'inizio
+# (sentinella/gol_via.py) e gira fino al riassunto finale; se si ferma, il Pi la rilancia e lei riparte da dove era
+# (il file dello stato si conserva tra un lavoro e l'altro, come quello dei social della pubblicazione).
+name: Gol del Benevento
+run-name: "Gol ${{ inputs.partita || 'di oggi' }} · ${{ inputs.modo || 'diretta' }}"
+
+on:
+  workflow_dispatch:
+    inputs:
+      partita:
+        description: "id ESPN della partita (vuoto = quella di oggi del Benevento)"
+        default: ""
+      modo:
+        description: "diretta = pubblica; prova = legge la diretta e non pubblica; collaudo = prova i canali senza pubblicare"
+        default: "diretta"
+      squadra:
+        description: "solo per le prove: la squadra al posto del Benevento (id ESPN)"
+        default: "4059"
+
+permissions:
+  contents: write   # le immagini dei gol nel ramo gol-immagini (online subito, senza aspettare la pubblicazione del sito)
+
+concurrency:
+  group: gol
+  cancel-in-progress: false
+
+jobs:
+  gol:
+    runs-on: ubuntu-latest
+    timeout-minutes: 230
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install --quiet pillow
+
+      # il file dello stato sta nella cartella del lavoro (hashFiles guarda solo lì): non si salva se non c'è, così una
+      # prova non copre lo stato di una diretta
+      - uses: actions/cache/restore@v4
+        with:
+          path: .stato-gol/stato.json
+          key: gol-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: gol-
+
+      - name: La partita in diretta
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+          PARTITA: ${{ inputs.partita }}
+          MODO: ${{ inputs.modo }}
+          SQUADRA: ${{ inputs.squadra || '4059' }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/gol"
+          case "$MODO" in
+            prova)    python3 strumenti/gol.py --partita "$PARTITA" --squadra "$SQUADRA" --prova "$RUNNER_TEMP/gol/prova" ;;
+            collaudo) python3 strumenti/gol.py --collaudo "$RUNNER_TEMP/gol/collaudo" ;;
+            *)        python3 strumenti/gol.py --partita "$PARTITA" --squadra "$SQUADRA" --stato .stato-gol/stato.json ;;
+          esac
+
+      - uses: actions/cache/save@v4
+        if: always() && hashFiles('.stato-gol/stato.json') != ''
+        with:
+          path: .stato-gol/stato.json
+          key: gol-${{ github.run_id }}-${{ github.run_attempt }}
+
+      # in prova le immagini e i testi si possono scaricare dalla pagina del lavoro
+      - uses: actions/upload-artifact@v4
+        if: always() && inputs.modo == 'prova'
+        with:
+          name: prova-gol
+          path: ${{ runner.temp }}/gol/prova
+          if-no-files-found: ignore
