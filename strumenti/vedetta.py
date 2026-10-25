@@ -197,6 +197,8 @@ def dall_albo(stato, adesso):
     visti = stato["visti"].setdefault("albo", [])
     prima_volta = not visti
     voci = F.albo_bn(set())
+    if isinstance(voci, tuple):   # l'albo vero non risponde: fonti_casa dà le voci della riserva e l'esito (25 ott 2026)
+        voci = voci[0]
     trovate = []
     for v in voci:
         if v["link"] in visti:

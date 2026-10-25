@@ -7,6 +7,10 @@ on:
   schedule:
     - cron: "8,23,38,53 * * * *"
   workflow_dispatch:
+    inputs:
+      avviso:
+        description: "i problemi visti dalla sentinella del Pi (la lancia lei): finiscono nella mail"
+        default: ""
 
 permissions:
   contents: read
@@ -25,4 +29,5 @@ jobs:
       - name: Giro, sito e Telegram al passo
         env:
           GH_TOKEN: ${{ github.token }}
+          AVVISO_PI: ${{ inputs.avviso }}
         run: python3 strumenti/sentinella.py

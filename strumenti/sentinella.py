@@ -20,6 +20,12 @@ nessuno se ne accorgesse.
 7. Comunicati per email (dal 24 ott 2026, vedi COMUNICATI.md): solo sul Pi, un comunicato arrivato da più di
    COMUNICATO_MAX minuti che il giro lampo non ha ancora trattato (comunicati_visti.json del sito). Il Pi lo rilancia
    da solo (comunicati_lampo.py): qui si dà l'allarme.
+8. Fonti lette da casa (dal 25 ott 2026: l'albo di Benevento e 37 albi su Halley giù dalle 00:30, e nessuno se n'era
+   accorto): solo sul Pi, una fonte dell'archivio di casa (~/nb-fonti/archivio) che non si legge da più di
+   FONTE_FERMA_ORE ore, o che si legge solo dalla riserva, o gli albi dei Comuni letti meno di ALBI_MINIMI su 57: un
+   avviso solo, ripetuto dopo 24 ore se è ancora ferma (fonti_ferme.json); l'archivio che non si aggiorna proprio (il
+   cron di fonti_casa.py fermo). La sentinella di GitHub riprova gli indirizzi da fuori e dice se è giù per tutti o
+   solo per la connessione di casa.
 4. Giro mancato: notizie.json non aggiornato da più di GIRO_MAX minuti, dalle 7:30 alle 23; dalle 23 a mezzanotte
    solo se per domani c'è allerta arancione o rossa, perché il giro delle 23 l'agente lo fa solo allora (stessa prova,
    allerta_domani.py; il 22 ott la sentinella è finita in rosso alle 23:32 per un giro che giustamente non c'era).
@@ -27,8 +33,10 @@ nessuno se ne accorgesse.
 
 Dove gira: sul Pi di casa ogni 15 minuti (cron, --pi), perché gli orari di GitHub saltano proprio quando GitHub è
 carico (la sera del 22 ott non è mai partita); e su GitHub (sentinella.yml) come riserva. Se qualcosa non va, su
-GitHub finisce in rosso e GitHub manda una mail al proprietario; dal Pi fa partire la sentinella di GitHub, che
-ricontrolla e finisce in rosso lei (al massimo una volta ogni AVVISO_ORE ore). Le riparazioni restano tra gli avvisi.
+GitHub finisce in rosso e GitHub manda una mail al proprietario; dal Pi fa partire la sentinella di GitHub passandole
+i problemi visti dal Pi (input «avviso»: quelli che da GitHub non si vedono, come la vedetta ferma o una fonte di casa,
+fino al 25 ott non arrivavano nella mail), che ricontrolla, li aggiunge ai suoi e finisce in rosso (al massimo una volta
+ogni AVVISO_ORE ore). Le riparazioni restano tra gli avvisi.
 
 Parla con GitHub con le sue API: su GitHub con il GITHUB_TOKEN (GH_TOKEN), sul Pi con una chiave limitata a questo
 solo sito (Actions lettura e scrittura, Contents sola lettura) nel file --chiave, che scrive --imposta-chiave.
@@ -70,6 +78,11 @@ PISTA_MAX = 45      # minuti: una pista della vedetta non ancora vista dal giro 
 TG_CHIUSURE = 20    # minuti: una chiusura del sito non ancora sul canale Telegram
 SCORTA_MINIMA = 14  # giorni di curiosità in programma: sotto, la routine del lunedì non ha rifornito
 COMUNICATO_MAX = 30  # minuti: un comunicato per email non ancora trattato dal giro lampo
+FONTE_FERMA_ORE = 3  # ore senza una lettura riuscita di una fonte di casa (come la regola dell'agente in AGENTE.md)
+ARCHIVIO_FERMO = 90  # minuti senza un giro di fonti_casa.py (gira ogni 30)
+ALBI_MINIMI = 45     # albi pretori dei Comuni letti (su 57): sotto, per più di FONTE_FERMA_ORE ore, avviso
+RIPETI_ORE = 24      # una fonte ancora ferma si ricorda una volta al giorno
+NON_DA_FUORI = ("stradeanas.it", "tvsette.net")   # rifiutano le connessioni dall'estero: da GitHub non si prova
 CARTELLA_PI = os.path.expanduser("~/nb-fonti")
 PAUSA_RETE = 20     # secondi prima del secondo tentativo se la rete fa cilecca
 
@@ -365,6 +378,105 @@ def comunicati(gh, adesso, pi):
     return problemi
 
 
+def fonti_di_casa(adesso, prova):
+    """Le fonti lette da casa si leggono ancora? (punto 8 in cima). Solo sul Pi. Restituisce (problemi, note): i
+    problemi vanno nell'avviso, le note solo nel registro (una fonte già avvisata, una che è tornata)."""
+    cartella = os.path.join(CARTELLA_PI, "archivio")
+    stato_f = os.path.join(CARTELLA_PI, "fonti_ferme.json")
+    try:
+        with open(stato_f, encoding="utf-8") as f:
+            stato = json.load(f)
+    except (OSError, ValueError):
+        stato = {}
+    ferme, piu_recente, albi_bassi = {}, None, False   # ferme: chiave → (da quando, cosa dire, indirizzo da riprovare)
+    for nome in sorted(os.listdir(cartella)):
+        if not nome.endswith(".json") or nome == "chiusure.json":   # chiusure.json lo controlla il punto 5
+            continue
+        try:
+            with open(os.path.join(cartella, nome), encoding="utf-8") as f:
+                d = json.load(f)
+            controllato = iso(d["controllato"])
+        except (OSError, ValueError, KeyError, TypeError):
+            continue
+        piu_recente = max(piu_recente or controllato, controllato)
+        esito = str(d.get("esito") or "")
+        fonte = d.get("fonte") or nome
+        indirizzo = d.get("indirizzo") if str(d.get("indirizzo") or "").startswith("http") else ""
+        if not esito.startswith("letta") or esito.startswith("letta solo la riserva"):
+            try:
+                dal = iso(d["ultima_lettura_riuscita"])
+            except (KeyError, ValueError, TypeError):
+                dal = None
+            if not dal or adesso - dal > dt.timedelta(hours=FONTE_FERMA_ORE):
+                ferme[nome[:-5]] = (dal, f"{fonte}: {esito[:140]}", indirizzo)
+        if nome == "comuni.json":   # gli albi pretori dei Comuni: non c'è l'ora dell'ultima lettura, la si ricorda qui
+            m = re.match(r"(\d+) su (\d+)", str(d.get("albi_letti") or ""))
+            if m and int(m[1]) < ALBI_MINIMI:
+                albi_bassi = True
+                dal = iso(stato.get("albi", {}).get("dal") or adesso.isoformat())
+                if adesso - dal > dt.timedelta(hours=FONTE_FERMA_ORE):
+                    nl = d.get("albi_non_letti") or []
+                    ferme["albi"] = (dal, f"albi pretori dei Comuni: letti {m[1]} su {m[2]} (non si leggono "
+                                     f"{', '.join(nl[:6])}{'…' if len(nl) > 6 else ''})", albo_di_prova(nl))
+                else:
+                    stato.setdefault("albi", {"dal": dal.isoformat(timespec="minutes")})
+    problemi, note = [], []
+    if piu_recente and adesso - piu_recente > dt.timedelta(minutes=ARCHIVIO_FERMO):
+        problemi.append(f"le fonti di casa non si aggiornano dalle {piu_recente:%H:%M} (cron di fonti_casa.py, "
+                        "~/nb-fonti/fonti.log)")
+    nuovo = {}
+    for chiave, (dal, cosa, indirizzo) in ferme.items():
+        vecchio = stato.get(chiave) or {}
+        avvisato = vecchio.get("avvisato")
+        quando = f" dalle {dal.astimezone(fuso()):%H:%M del %d/%m}" if dal else ""
+        if avvisato and adesso - iso(avvisato) < dt.timedelta(hours=RIPETI_ORE):
+            note.append(f"ancora ferma{quando}, già avvisato: {cosa}")
+            nuovo[chiave] = vecchio
+        else:
+            problemi.append(f"fonte ferma{quando}: {cosa}" + (f" [prova: {indirizzo}]" if indirizzo else ""))
+            nuovo[chiave] = {"dal": dal.isoformat(timespec="minutes") if dal else "", "avvisato": adesso.isoformat(timespec="minutes")}
+    for chiave in stato:
+        if chiave not in ferme and stato[chiave].get("avvisato"):
+            note.append(f"tornata a funzionare: {chiave}")
+    if albi_bassi and "albi" not in ferme:
+        nuovo.setdefault("albi", stato["albi"])   # albi sotto soglia da poco: si ricorda da quando
+    if not prova:
+        with open(stato_f, "w", encoding="utf-8") as f:
+            json.dump(nuovo, f, ensure_ascii=False, indent=1)
+    return problemi, note
+
+
+def albo_di_prova(non_letti):
+    """L'indirizzo di uno degli albi non letti, per riprovarlo da GitHub (fonti_casa.ALBI, accanto sul Pi)."""
+    try:
+        sys.path.insert(0, CARTELLA_PI)
+        from fonti_casa import ALBI
+        return next(ALBI[n][1] for n in non_letti if n in ALBI)
+    except Exception:
+        return ""
+
+
+def da_fuori(avviso):
+    """Su GitHub: riprova gli indirizzi «[prova: …]» dell'avviso del Pi e dice se rispondono da fuori."""
+    righe = []
+    for riga in avviso.split(" | "):
+        m = re.search(r"\[prova: (https?://[^\]\s]+)\]", riga)
+        riga = re.sub(r"\s*\[prova: [^\]]*\]", "", riga).strip()
+        if m and any(h in m[1] for h in NON_DA_FUORI):
+            riga += " (da fuori non si può provare: quel sito rifiuta le connessioni dall'estero)"
+        elif m:
+            try:
+                req = urllib.request.Request(m[1], headers={"User-Agent": "Mozilla/5.0 (nb-sentinella)"})
+                with urllib.request.urlopen(req, timeout=30) as r:
+                    r.read(2000)
+                riga += " (da GitHub risponde: il problema è la connessione di casa o un blocco sul nostro indirizzo)"
+            except Exception as e:
+                riga += f" (non risponde nemmeno da GitHub, {type(e).__name__}: è giù per tutti)"
+        if riga:
+            righe.append(riga)
+    return righe
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--sito", default=os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -399,12 +511,23 @@ def main():
         problemi += comunicati(gh, adesso, a.pi)
     except Exception as e:
         problemi.append(f"non riesco a controllare i comunicati per email ({type(e).__name__}: {e})")
+    note = []
+    if a.pi:
+        try:
+            p4, note = fonti_di_casa(adesso, a.prova)
+            problemi += p4
+        except Exception as e:
+            problemi.append(f"non riesco a controllare le fonti di casa ({type(e).__name__}: {e})")
+    elif os.environ.get("AVVISO_PI", "").strip():   # i problemi visti dal Pi, che da qui non si vedono
+        problemi += [f"dal Pi: {x}" for x in da_fuori(os.environ["AVVISO_PI"].strip())]
 
     ora = f"{adesso:%d/%m %H:%M}"
     for m in riparati:
         print(f"{ora} riparato: {m}" if a.pi else f"::warning::Sentinella: {m}")
     for m in problemi:
         print(f"{ora} PROBLEMA: {m}" if a.pi else f"::error::Sentinella: {m}")
+    for m in note:
+        print(f"{ora} nota: {m}")
     if not riparati and not problemi:
         print(f"{ora} tutto al passo (giro delle {iso(su_main['aggiornato']):%H:%M})" if a.pi
               else f"Sentinella: tutto al passo (giro delle {iso(su_main['aggiornato']):%H:%M}, sito uguale)")
@@ -416,7 +539,7 @@ def main():
         except (OSError, ValueError, KeyError):
             ultimo = None
         if not ultimo or adesso - ultimo > dt.timedelta(hours=AVVISO_ORE):
-            gh.lancia("sentinella.yml")
+            gh.lancia("sentinella.yml", {"avviso": " | ".join(problemi)[:1000]})
             with open(stato_f, "w", encoding="utf-8") as f:
                 json.dump({"avviso": adesso.isoformat(timespec="minutes")}, f)
             print(f"{ora} avviso: lanciata la sentinella di GitHub (mail se resta rosso)")
