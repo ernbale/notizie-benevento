@@ -59,6 +59,11 @@ ORE_IN_ORARI = re.compile(r"\b(?:ore|alle|dalle|dall['’]|fino alle|entro le)\s
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # la cartella del sito (--cartella nelle prove)
 LOCANDINA = re.compile(r"^img/locandine/[a-z0-9-]+\.jpg$")
 RIF_LOCANDINA = re.compile(r"^(?:posta:)?([A-Za-z0-9_-]+)/(\d+)$")
+# Le foto arrivate per posta (voluto dal proprietario il 25 ott 2026: «se mandano foto usale», «anche più foto se ci
+# sono»): "foto_inviate": ["<id del comunicato>/<n>", …] e "foto_da" (chi le ha mandate) nella notizia. La prima va in
+# alto al posto della foto fatta con l'IA (se c'è la locandina, in alto va lei e le foto tutte sotto), le altre in fondo
+# all'articolo; sui social escono anche loro (instagram.py, facebook.py). risolvi_locandine() le copia in img/locandine/.
+FOTO_MAX = 10
 GIORNI_EVENTI = 60           # un evento finito da più di 60 giorni passa in archivio/eventi-AAAA-MM.json
 
 
@@ -607,49 +612,66 @@ def sorgente_locandina(rif):
     return p if p and os.path.exists(p) else None
 
 
-def controlla_locandina(x, w, err):
-    if "locandina" not in x:
-        return
-    r = str(x["locandina"])
+def _controlla_immagine(r, cosa, w, err):
+    r = str(r)
     if LOCANDINA.match(r):
         if not os.path.exists(os.path.join(BASE, r)):
-            err.append(f"{w}: la locandina {r} non c'è nel sito")
+            err.append(f"{w}: {cosa} {r} non c'è nel sito")
     elif not sorgente_locandina(r):
-        err.append(f"{w}: locandina {r!r}: scrivi «<id del comunicato>/<numero>» di un'immagine che c'è in "
+        err.append(f"{w}: {cosa} {r!r}: scrivi «<id del comunicato>/<numero>» di un'immagine che c'è in "
                    "comunicati.json («immagini», file allegati/<id>/<numero>.jpg)")
 
 
+def controlla_locandina(x, w, err):
+    if "locandina" in x:
+        _controlla_immagine(x["locandina"], "la locandina", w, err)
+    if "foto_inviate" not in x and "foto_da" not in x:
+        return
+    f = x.get("foto_inviate")
+    if not isinstance(f, list) or not 1 <= len(f) <= FOTO_MAX:
+        err.append(f"{w}: «foto_inviate» è un elenco da 1 a {FOTO_MAX} foto («<id del comunicato>/<numero>»)")
+        return
+    if len({str(r) for r in f}) < len(f) or str(x.get("locandina")) in {str(r) for r in f}:
+        err.append(f"{w}: la stessa immagine due volte (tra «foto_inviate» e «locandina»)")
+    for r in f:
+        _controlla_immagine(r, "la foto", w, err)
+    chi = x.get("foto_da")
+    if not isinstance(chi, str) or not 2 <= len(chi.strip()) <= 80:
+        err.append(f"{w}: con «foto_inviate» scrivi «foto_da»: chi le ha mandate (chi firma il comunicato)")
+
+
 def risolvi_locandine(voci):
-    """Copia in img/locandine/ le locandine indicate come "<id del comunicato>/<n>" e mette nel campo il percorso del
-    sito. Una locandina uguale già copiata (stesso contenuto) si riusa. Restituisce i file nuovi."""
+    """Copia in img/locandine/ le locandine e le foto («foto_inviate») indicate come "<id del comunicato>/<n>" e mette
+    nel campo il percorso del sito. Un'immagine uguale già copiata (stesso contenuto) si riusa. Restituisce i file nuovi."""
     copiati = []
     cart = os.path.join(BASE, "img", "locandine")
-    for x in voci:
-        src = sorgente_locandina(x.get("locandina")) if x.get("locandina") and not LOCANDINA.match(str(x["locandina"])) else None
+
+    def nel_sito(rif, nome):
+        src = sorgente_locandina(rif) if rif and not LOCANDINA.match(str(rif)) else None
         if not src:
-            continue
+            return rif
         with open(src, "rb") as f:
             dati = f.read()
         impronta = hashlib.sha1(dati).hexdigest()
-        uguale = None
         for q in sorted(glob.glob(os.path.join(cart, "*.jpg"))):
             with open(q, "rb") as f:
                 if hashlib.sha1(f.read()).hexdigest() == impronta:
-                    uguale = q
-                    break
-        if uguale:
-            rel = "img/locandine/" + os.path.basename(uguale)
-        else:
-            os.makedirs(cart, exist_ok=True)
-            nome, k = str(x.get("id")), 1
-            rel = f"img/locandine/{nome}.jpg"
-            while os.path.exists(os.path.join(BASE, rel)):
-                k += 1
-                rel = f"img/locandine/{nome}-{k}.jpg"
-            with open(os.path.join(BASE, rel), "wb") as f:
-                f.write(dati)
-            copiati.append(rel)
-        x["locandina"] = rel
+                    return "img/locandine/" + os.path.basename(q)
+        os.makedirs(cart, exist_ok=True)
+        k, rel = 1, f"img/locandine/{nome}.jpg"
+        while os.path.exists(os.path.join(BASE, rel)):
+            k += 1
+            rel = f"img/locandine/{nome}-{k}.jpg"
+        with open(os.path.join(BASE, rel), "wb") as f:
+            f.write(dati)
+        copiati.append(rel)
+        return rel
+
+    for x in voci:
+        if x.get("locandina"):
+            x["locandina"] = nel_sito(x["locandina"], str(x.get("id")))
+        if isinstance(x.get("foto_inviate"), list):
+            x["foto_inviate"] = list(dict.fromkeys(nel_sito(r, f"{x.get('id')}-foto") for r in x["foto_inviate"]))
     return copiati
 
 

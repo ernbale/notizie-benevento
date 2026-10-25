@@ -266,7 +266,7 @@ def immagine_ig(sito, n):
     anche il riassunto. Si rifà solo se cambia qualcosa (impronta nel commento del JPEG)."""
     from PIL import Image, ImageDraw
     W, H = 1080, 1350
-    occ, foto, loc = _categoria(n), foto_tema(n), locandina(n)
+    occ, foto, loc = _categoria(n), foto_tema(n), foto_in_alto(n)
     impronta = hashlib.sha1(json.dumps([n["titolo"], occ, n.get("luogo"), n.get("sintesi"), foto or loc, 1],
                                        ensure_ascii=False).encode()).hexdigest()[:10]
     rel = f"img/ig/{n['id']}.jpg"
@@ -296,7 +296,7 @@ def immagine_ig(sito, n):
         d.text((20, y + alto_foto - 20), nota, font=fn, fill="#ffffff", anchor="lm")
         y += alto_foto + 50
     elif loc and os.path.exists(os.path.join(sito, loc.lstrip("/"))):
-        # la locandina vera, intera (niente ritagli): al centro di una fascia scura alta quanto la foto
+        # la locandina o la foto inviata, intera (niente ritagli): al centro di una fascia scura alta quanto la foto
         alto_foto = 600
         d.rectangle([0, y, W, y + alto_foto], fill="#2b2622")
         with Image.open(os.path.join(sito, loc.lstrip("/"))) as f:
@@ -343,6 +343,43 @@ def immagine_ig(sito, n):
     os.makedirs(os.path.dirname(full), exist_ok=True)
     im.save(full, "JPEG", quality=88, optimize=True, comment=impronta.encode())
     return rel
+
+
+def immagini_ig_foto(sito, n):
+    """Le foto inviate col comunicato per il carosello di Instagram e per Facebook (img/ig/<id>-foto-<k>.jpg,
+    1080×1350 come la prima): ognuna intera su fondo scuro, con chi l'ha mandata. Si rifanno solo se cambiano."""
+    from PIL import Image, ImageDraw
+    W, H = 1080, 1350
+    out = []
+    for k, foto in enumerate(foto_inviate(n), 1):
+        src = os.path.join(sito, foto.lstrip("/"))
+        if not os.path.exists(src):
+            continue
+        with open(src, "rb") as f:
+            impronta = hashlib.sha1(f.read() + didascalia_foto(n).encode() + b"1").hexdigest()[:10]
+        rel = f"img/ig/{n['id']}-foto-{k}.jpg"
+        full = os.path.join(sito, rel)
+        out.append(rel)
+        try:
+            with Image.open(full) as vecchia:
+                if (vecchia.info.get("comment") or b"").decode(errors="ignore") == impronta:
+                    continue
+        except (OSError, ValueError):
+            pass
+        im = Image.new("RGB", (W, H), "#2b2622")
+        d = ImageDraw.Draw(im)
+        basso = 110
+        with Image.open(src) as f:
+            f = f.convert("RGB")
+            r = min((W - 40) / f.width, (H - basso - 40) / f.height)
+            f = f.resize((round(f.width * r), round(f.height * r)))
+            im.paste(f, ((W - f.width) // 2, 20 + (H - basso - 40 - f.height) // 2))
+        d.text((40, H - basso / 2 - 8), breve(didascalia_foto(n), 60), font=_font(FONT_BOLD, 30), fill="#ffffff", anchor="lm")
+        d.text((W - 40, H - basso / 2 - 8), "notiziebenevento.it", font=_font(FONT_BOLD, 26), fill="#d9cfc4", anchor="rm")
+        d.rectangle([0, H - 14, W, H], fill="#c4161c")
+        os.makedirs(os.path.dirname(full), exist_ok=True)
+        im.save(full, "JPEG", quality=88, optimize=True, comment=impronta.encode())
+    return out
 
 
 def credito_breve(c):
@@ -1133,11 +1170,55 @@ def html_locandina(rel, chi):
             f'<figcaption>{e("La locandina di " + chi if chi else "La locandina")}</figcaption></figure>')
 
 
+def foto_inviate(n):
+    """Le foto arrivate con il comunicato (img/locandine/<nome>.jpg, archivia.FOTO_MAX al massimo), in ordine."""
+    f = n.get("foto_inviate")
+    return ["/" + t for t in f if re.match(r"^img/locandine/[a-z0-9-]+\.jpg$", str(t))] if isinstance(f, list) else []
+
+
+def foto_in_alto(n):
+    """L'immagine vera in cima alla notizia: la locandina, se no la prima foto inviata (None se non ce ne sono)."""
+    return locandina(n) or next(iter(foto_inviate(n)), None)
+
+
+def foto_in_fondo(n):
+    """Le altre foto inviate, in fondo all'articolo: tutte, se in alto c'è la locandina."""
+    f = foto_inviate(n)
+    return f if locandina(n) else f[1:]
+
+
+def didascalia_foto(n, quante=1):
+    chi = str(n.get("foto_da") or "").strip()
+    return (("Le foto inviate da " if quante > 1 else "Foto inviata da ") + chi) if chi else \
+        ("Le foto inviate con il comunicato" if quante > 1 else "Foto inviata con il comunicato")
+
+
+def html_foto(rel, n):
+    w, h = dim_jpeg(rel)
+    misure = f' width="{w}" height="{h}"' if w and h else ""
+    return (f'<figure class="locandina foto-vera"><img src="{e(rel)}"{misure} alt="{e(didascalia_foto(n))}" '
+            f'decoding="async"><figcaption>{e(didascalia_foto(n))}</figcaption></figure>')
+
+
+def html_galleria(foto, n):
+    """Le altre foto inviate, in fondo all'articolo (come galleria() in index.html): ognuna si apre intera."""
+    if not foto:
+        return ""
+    h = ""
+    for rel in foto:
+        w, a = dim_jpeg(rel)
+        misure = f' width="{w}" height="{a}"' if w and a else ""
+        h += (f'<a href="{e(rel)}"><img src="{e(rel)}"{misure} alt="{e(didascalia_foto(n))}" loading="lazy" '
+              'decoding="async"></a>')
+    return (f'<figure class="galleria"><div class="galleria-foto">{h}</div>'
+            f'<figcaption>{e(didascalia_foto(n, len(foto)))}</figcaption></figure>')
+
+
 def foto_tema(n):
     """La foto illustrativa della notizia (img/temi/<tema>.jpg), se c'è: mai sulla cronaca, e mai quando c'è la
-    locandina vera (voluto dal proprietario il 25 ott 2026: «in questo caso niente immagini AI»)."""
+    locandina vera o una foto inviata (voluto dal proprietario il 25 ott 2026: «in questo caso niente immagini AI»)."""
     t = n.get("immagine")
-    if not t or n.get("categoria") == "cronaca" or not re.match(r"^[a-z0-9-]+$", str(t)) or locandina(n):
+    if not t or n.get("categoria") == "cronaca" or not re.match(r"^[a-z0-9-]+$", str(t)) or foto_in_alto(n):
         return None
     # «foto» è la versione scelta da archivia.py per non ripetere la stessa foto in prima pagina
     if re.match(r"^[a-z0-9-]+$", str(n.get("foto") or "")):
@@ -1168,6 +1249,8 @@ def html_articolo(n, appro_collegato):
     h += POSTO_ASCOLTA
     if locandina(n):
         h += html_locandina(locandina(n), (fonti[0].get("nome") if fonti else ""))
+    elif foto_inviate(n):
+        h += html_foto(foto_inviate(n)[0], n)
     if foto_tema(n):
         b = foto_tema(n)[:-4]
         h += (f'<figure class="foto-tema"><img src="{b}-m.jpg" srcset="{b}-m.jpg 768w, {b}.jpg 1536w" '
@@ -1177,6 +1260,7 @@ def html_articolo(n, appro_collegato):
         h += '<div class="racconto">' + _racconto(a["racconto"], fonti) + "</div>"
     elif a.get("cosa"):
         h += f"<h3>Cosa è successo</h3><p>{e(a['cosa'])}</p>"
+    h += html_galleria(foto_in_fondo(n), n)
     # con il racconto, una cronologia di un solo momento non aggiunge niente
     if not a.get("racconto") or len(a.get("cronologia") or []) > 1:
         h += _cronologia(a.get("cronologia"), fonti, "I fatti")
@@ -1630,7 +1714,7 @@ def main():
         jsonld = {"@context": "https://schema.org", "@graph": [
             {"@type": "NewsArticle", "@id": url + "#articolo", "headline": breve(titolo_google(n), 110),
              "description": n.get("sintesi"), "datePublished": n.get("pubblicato"), "dateModified": modificato,
-             "image": ([SITO + (locandina(n) or foto_tema(n))] if locandina(n) or foto_tema(n) else []) + [SITO + im], "inLanguage": "it-IT", "articleSection": sez, "isAccessibleForFree": True,
+             "image": [SITO + x for x in dict.fromkeys([foto_in_alto(n) or foto_tema(n)] + foto_inviate(n)) if x] + [SITO + im], "inLanguage": "it-IT", "articleSection": sez, "isAccessibleForFree": True,
              "mainEntityOfPage": url, "author": {"@type": "Organization", "name": NOME, "url": SITO + "/"},
              "publisher": ORG, "contentLocation": {"@type": "Place", "name": n.get("luogo")},
              "isBasedOn": [f["url"] for f in fonti if re.match(r"^https?://", str(f.get("url") or ""))]},
@@ -1913,6 +1997,7 @@ def main():
                 continue
             if adesso - t <= dt.timedelta(hours=48):
                 usate_ig.add(immagine_ig(sito, x))
+                usate_ig |= set(immagini_ig_foto(sito, x))
         usate_ig |= riepilogo_ig(sito, prima.get("notizie", []), adesso)
         usate_ig |= immagine_chiusure(sito, chius, adesso)
         oggi_cur = adesso.astimezone(fuso()).date().isoformat()

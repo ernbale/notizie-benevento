@@ -23,9 +23,14 @@ Il file per --unisci:
  "eventi": [ {un evento completo come in AGENTE.md} ],   (facoltativo)
  "esiti": [ {"comunicato": "id", "esito": "pubblicato", "notizia": "id della notizia nuova"},
             {"comunicato": "id", "esito": "gia_nel_sito", "notizia": "id della notizia che c'è già"},
+            {"comunicato": "id", "esito": "gia_nel_sito", "notizia": "id", "foto_inviate": ["id/1", "id/2"],
+             "foto_da": "chi firma il comunicato"},   (le foto o la locandina della mail sulla notizia che c'è già)
             {"comunicato": "id", "esito": "scartato", "motivo": "perché non si pubblica"} ]}
 Ogni comunicato di --da-fare deve avere il suo esito. Il motivo resta nel resoconto del giro: comunicati_visti.json
-(pubblico) tiene solo id, esito, notizia e ora.
+(pubblico) tiene solo id, esito, notizia e ora. Con «gia_nel_sito» la notizia della prima pagina prende «subito» (Facebook
+e Instagram la pubblicano adesso, se non c'è già) e l'id del comunicato in «comunicati»; con "locandina", "foto_inviate"
+e "foto_da" nell'esito anche le immagini della mail (voluto dal proprietario il 25 ott 2026: «se mandano foto usale»,
+«anche più foto se ci sono», «avevamo detto comunicati da pubblicare subito»).
 
 Uso:  python3 strumenti/comunicati.py --da-fare
       python3 strumenti/comunicati.py --unisci /tmp/comunicati_esito.json [--pubblica]
@@ -51,6 +56,7 @@ FILE = os.path.join(SITO, "comunicati_visti.json")
 NOTIZIE = os.path.join(SITO, "notizie.json")
 EVENTI = os.path.join(SITO, "eventi.json")
 ESITI = ("pubblicato", "gia_nel_sito", "scartato")
+IMMAGINI = {"locandina", "foto_inviate", "foto_da"}   # con «gia_nel_sito» si aggiungono alla notizia che c'è già
 GIORNI_DA_FARE = 3      # i comunicati arrivati da più giorni non sono più «da fare» per il giro lampo
 GIORNI_VISTI = 30       # quanto si ricordano i comunicati trattati
 
@@ -137,6 +143,7 @@ def unisci(d, visti, entrata, voci, adesso, err):
         return []
     ids_voci = {v["id"] for v in voci if v.get("id")}
     attuali = {n.get("id") for n in d.get("notizie", []) + d.get("approfondimenti", [])}
+    prima = {n.get("id"): n for n in d.get("notizie", [])}
     indice = leggi(os.path.join(SITO, "archivio", "indice.json"), {}).get("voci") or []
     in_archivio = {x.get("id") for x in indice}
     rimandi = (leggi(os.path.join(SITO, "archivio", "rimandi.json"), {}) or {}).get("notizie") or {}
@@ -173,6 +180,10 @@ def unisci(d, visti, entrata, voci, adesso, err):
                     per_id[e["notizia"]]["comunicati"].append(cid)
         elif es == "gia_nel_sito" and e.get("notizia") not in attuali | in_archivio:
             err.append(f"{w}: la notizia {e.get('notizia')!r} non c'è né in prima pagina né in archivio")
+        elif es == "gia_nel_sito" and IMMAGINI & e.keys() and e.get("notizia") not in prima:
+            err.append(f"{w}: la notizia {e.get('notizia')!r} è in archivio: le foto si aggiungono solo in prima pagina")
+        if es != "gia_nel_sito" and IMMAGINI & e.keys():
+            err.append(f"{w}: locandina e foto vanno nella notizia («notizie»); nell'esito solo con «gia_nel_sito»")
         elif es == "scartato" and len(str(e.get("motivo") or "").strip()) < 10:
             err.append(f"{w}: scrivi il «motivo» (serve al resoconto)")
     for i in per_id:
@@ -185,10 +196,24 @@ def unisci(d, visti, entrata, voci, adesso, err):
         n.setdefault("pubblicato", adesso.isoformat(timespec="seconds"))
         scegli_foto_nuova(n, d.get("notizie", []))
         d["notizie"].insert(0, n)
+    # un comunicato su una notizia che c'è già: è ufficiale, esce subito anche sui social se non c'è ancora uscita
+    # (lui, 25 ott 2026: «avevamo detto comunicati da pubblicare subito»), con la locandina e le foto della mail
+    altre = []
+    for e in esiti:
+        n = prima.get(e.get("notizia")) if e["esito"] == "gia_nel_sito" else None
+        if n is None:
+            continue
+        n["subito"] = True
+        n.setdefault("comunicati", [])
+        if e["comunicato"] not in n["comunicati"]:
+            n["comunicati"].append(e["comunicato"])
+        if IMMAGINI & e.keys():
+            n.update({k: copy.deepcopy(e[k]) for k in IMMAGINI if k in e})
+            altre.append(f"foto del comunicato su {n['id']}")
     ora = adesso.isoformat(timespec="minutes")
     for e in esiti:
         visti[e["comunicato"]] = {k: v for k, v in {"esito": e["esito"], "notizia": e.get("notizia"), "quando": ora}.items() if v}
-    return [n.get("titolo", "") for n in nuove]
+    return [n.get("titolo", "") for n in nuove] + altre
 
 
 def unisci_eventi(ev, entrata, err):

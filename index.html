@@ -228,6 +228,12 @@
   .notizia .locandina img { max-height: 360px; }
   .pop .locandina { margin: 0 -20px 12px; border-radius: 10px 10px 0 0; }
   .pop .locandina img { max-height: 420px; }
+  /* le altre foto vere mandate col comunicato («foto_inviate»): in fondo all'articolo, ognuna si apre intera */
+  .galleria { margin: 18px 0 0; }
+  .galleria-foto { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px; }
+  .galleria-foto a { display: block; background: var(--carta-scura); }
+  .galleria-foto img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+  .galleria figcaption { font: 400 12.5px var(--sans); color: var(--grigio); margin-top: 6px; }
   .cronologia { list-style: none; padding: 0 !important; }
   .cronologia li { display: grid; grid-template-columns: 110px 1fr; gap: 12px; padding: 10px 0; border-bottom: 1px dotted #b7a48f; }
   .cronologia .giorno { font: 700 14px var(--sans); color: var(--rosso); padding-top: 4px; }
@@ -984,6 +990,7 @@
   // La foto illustrativa scelta dall'agente tra quelle di img/temi (non è una foto del fatto: lo dice la didascalia).
   function fotoTema(n, didascalia, grande) {
     if (n.locandina) return locandinaFig(n, grande);   // la locandina vera: niente immagine fatta con l'IA
+    if (fotoInviate(n).length) return fotoVeraFig(n, grande);   // e così una foto vera mandata col comunicato
     if (!n.immagine || n.categoria === "cronaca" || !/^[a-z0-9-]+$/.test(n.immagine)) return null;
     // «foto» è la versione scelta da archivia.py per non ripetere la stessa foto in prima pagina
     var nome = /^[a-z0-9-]+$/.test(n.foto || "") ? n.foto : n.immagine;
@@ -1009,6 +1016,38 @@
     var chi = org || (((n.articolo || {}).fonti || [])[0] || {}).nome;
     f.appendChild(el("figcaption", "", [chi ? "La locandina di " + chi : "La locandina"]));
     return f;
+  }
+
+  // Le foto mandate col comunicato (img/locandine, «foto_inviate»): la prima in alto, intera, con chi l'ha mandata;
+  // le altre (tutte, se in alto c'è la locandina) in fondo all'articolo. Come pagine.py.
+  function fotoInviate(n) {
+    return (Array.isArray(n.foto_inviate) ? n.foto_inviate : []).filter(function (t) { return /^img\/locandine\/[a-z0-9-]+\.jpg$/.test(t); });
+  }
+  function didascaliaFoto(n, quante) {
+    var chi = String(n.foto_da || "").trim();
+    if (quante > 1) return chi ? "Le foto inviate da " + chi : "Le foto inviate con il comunicato";
+    return chi ? "Foto inviata da " + chi : "Foto inviata con il comunicato";
+  }
+  function fotoVeraFig(n, grande) {
+    var f = el("figure", "locandina foto-vera", []), im = document.createElement("img");
+    im.src = "/" + fotoInviate(n)[0]; im.alt = didascaliaFoto(n, 1); im.decoding = "async";
+    if (!grande) im.loading = "lazy";
+    f.appendChild(im);
+    f.appendChild(el("figcaption", "", [didascaliaFoto(n, 1)]));
+    return f;
+  }
+  function galleria(n) {
+    var foto = fotoInviate(n);
+    if (!/^img\/locandine\/[a-z0-9-]+\.jpg$/.test(n.locandina || "")) foto = foto.slice(1);
+    if (!foto.length) return null;
+    var g = el("div", "galleria-foto", []);
+    foto.forEach(function (t) {
+      var a = el("a", "", []), im = document.createElement("img");
+      a.href = "/" + t; im.src = "/" + t; im.alt = didascaliaFoto(n, 1); im.loading = "lazy"; im.decoding = "async";
+      a.appendChild(im);
+      g.appendChild(a);
+    });
+    return el("figure", "galleria", [g, el("figcaption", "", [didascaliaFoto(n, foto.length)])]);
   }
 
   // Aggiornata nelle ultime 24 ore (riquadro «Aggiornamento» dell'articolo): in prima pagina si vede subito, in cima.
@@ -1542,6 +1581,8 @@
       });
       art.appendChild(rc);
     } else if (a.cosa) { art.appendChild(el("h3", "", ["Cosa è successo"])); art.appendChild(el("p", "", [a.cosa])); }
+    var gl = galleria(n);
+    if (gl) art.appendChild(gl);
     // Con il racconto, una cronologia di un solo momento non aggiunge niente.
     if (!a.racconto || (a.cronologia || []).length > 1) cronologia(art, a.cronologia, fonti, "I fatti");
     sezioneElenco(art, "Su cosa concordano i giornali", a.concordano, fonti);

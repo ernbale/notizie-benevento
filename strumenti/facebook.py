@@ -224,8 +224,9 @@ def titoli_usciti(ids, nid, testo):
 
 
 def pubblica(token, n, aggiornamento=False):
-    """Il post della notizia, col link. Per un aggiornamento Facebook deve prima rileggere la pagina: titolo e immagine
-    del link li ricorda dalla prima volta. Se non li rilegge, il post esce con l'immagine nuova e il link nel testo."""
+    """Il post della notizia, col link (con le foto inviate col comunicato, un post con le foto: foto_inviate()). Per un
+    aggiornamento Facebook deve prima rileggere la pagina: titolo e immagine del link li ricorda dalla prima volta. Se
+    non li rilegge, il post esce con l'immagine nuova e il link nel testo."""
     link = f"{SITO}/notizia/{n['id']}/"
     if aggiornamento:
         try:
@@ -238,7 +239,33 @@ def pubblica(token, n, aggiornamento=False):
             print("  Facebook non ha riletto il link: pubblico l'aggiornamento con l'immagine")
             foto_con_testo(token, f"{SITO}/img/ig/{n['id']}.jpg", messaggio(n, True) + "\n\n" + link, link)
             return
+    elif n.get("foto_inviate"):
+        foto_inviate(token, n, link)
+        return
     chiama("POST", "me/feed", token, {"message": messaggio(n, aggiornamento), "link": link})
+
+
+def foto_inviate(token, n, link):
+    """Una notizia con le foto mandate col comunicato (voluto dal proprietario il 25 ott 2026: «se mandano foto usale»,
+    «anche più foto se ci sono»): un post con le foto vere e il link nel testo. Con una foto è un post foto
+    (foto_con_testo); con più foto si caricano senza pubblicarle e poi escono tutte insieme in un solo post."""
+    testo = messaggio(n) + f"\n\n{'Le foto inviate' if len(n['foto_inviate']) > 1 else 'Foto inviata'} da " \
+        f"{n.get('foto_da') or 'chi ha mandato il comunicato'}.\n\nLeggi tutto: {link}"
+    foto = [f"{SITO}/{r}" for r in n["foto_inviate"][:10] if re.match(r"^img/locandine/[a-z0-9-]+\.jpg$", str(r))]
+    foto = [u for u in foto if online(u)]
+    if len(foto) > 1:
+        try:
+            ids = [riprova(lambda u=u: chiama("POST", "me/photos", token, {"url": u, "published": "false"}),
+                           "Facebook (foto da unire)", True)["id"] for u in foto]
+        except RuntimeError as e:   # caricate senza pubblicarle: niente doppioni a riprovare con la prima
+            print(f"  Facebook: le foto non sono passate ({e}): pubblico la prima")
+            ids = []
+        if ids:
+            dati = {"message": testo}
+            dati.update({f"attached_media[{k}]": json.dumps({"media_fbid": i}) for k, i in enumerate(ids)})
+            riprova(lambda: chiama("POST", "me/feed", token, dati), "Facebook (post con le foto)")
+            return
+    foto_con_testo(token, foto[0] if foto else None, testo, link)
 
 
 def gia_pubblicate(token, adesso):
@@ -253,6 +280,7 @@ def gia_pubblicate(token, adesso):
         link = [a.get("unshimmed_url") or a.get("url") or "" for a in (p.get("attachments") or {}).get("data", [])]
         if testo.startswith(AGG):   # un aggiornamento uscito con l'immagine (pubblica()) ha il link nel testo
             link.append(testo)
+        link += re.findall(r"Leggi tutto: (\S+)", testo)   # anche un post con le foto inviate (foto_inviate())
         for u in link:
             u = urllib.parse.parse_qs(urllib.parse.urlparse(u).query).get("u", [u])[0]  # link «l.facebook.com/l.php?u=»
             m = re.search(r"notiziebenevento\.it/notizia/([a-z0-9-]+)", u)
@@ -327,7 +355,7 @@ def main():
     # adesso: niente pausa, niente tetto del giorno, anche dopo il riepilogo (lui, 24 ott 2026: «pubblicazione istantanea»)
     urgenti = [] if sera else [n for n in candidate(notizie, gia, adesso) if n.get("subito")]
     for n in urgenti[:3]:
-        chiama("POST", "me/feed", token, {"message": messaggio(n), "link": f"{SITO}/notizia/{n['id']}/"})
+        pubblica(token, n)
         oggi += 1
         print(f"Facebook: pubblicata subito {n['id']} (comunicato, {oggi} oggi)")
     if urgenti:

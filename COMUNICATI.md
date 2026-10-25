@@ -30,7 +30,13 @@ riuscita» (o cosa non va) con l'esito dei comandi. In prova non pubblichi nient
    - **pubblicato**: è un fatto della provincia di Benevento che serve a chi ci abita o lo interessa (servizi,
      sportelli, lavori, eventi con data e luogo, sport, scuole, salute, iniziative di enti, sindacati e associazioni);
    - **gia_nel_sito**: la riga «POSSIBILE STESSO FATTO» o notizie.json mostrano che il fatto è già sul sito (apri la
-     notizia e controlla che sia proprio lo stesso fatto). Non cambiare quella notizia;
+     notizia e controlla che sia proprio lo stesso fatto). Non cambiare il testo di quella notizia: la prende
+     strumenti/comunicati.py, che le mette «subito» (Facebook e Instagram la pubblicano adesso, anche dopo il
+     riepilogo della sera, se non c'è già uscita: lui, 25 ott 2026, «avevamo detto comunicati da pubblicare subito»).
+     **Se il comunicato ha immagini** (le righe «immagine <id>/<n>») e la notizia non ha già le sue foto vere,
+     guardale come al punto 4 e mettile **nell'esito**: `"foto_inviate": ["<id>/1", …], "foto_da": "<chi firma>"`
+     e/o `"locandina": "<id>/<n>"` (il formato è in testa a strumenti/comunicati.py). Successo il 25 ott 2026: la
+     Miwa Basket aveva mandato la foto della partita, la notizia c'era già e la foto era rimasta fuori;
    - **scartato**, col motivo: fuori provincia, pubblicità o vendita, catene, inviti a pagare, politica senza
      effetti per la gente (regola 9 di AGENTE.md: niente comunicati di partito, polemiche, dichiarazioni), chiusure di
      scuole/parchi/cimiteri decise da un Comune (le pubblica il giro Chiusure), un fatto che non si capisce o non si può
@@ -66,11 +72,18 @@ riuscita» (o cosa non va) con l'esito dei comandi. In prova non pubblichi nient
      privati (quelli di uffici e sportelli pubblici sì).
    - L'`immagine` dai temi di AGENTE.md («La foto illustrativa»; mai per la cronaca), `categoria`, `zona`, `luogo`
      come dice AGENTE.md. `pubblicato`, `subito`, `comunicati` e `foto` li mette strumenti/comunicati.py: non scriverli.
-   - **La locandina** (voluta dal proprietario il 25 ott 2026: «se mandano locandine noi le dobbiamo usare, in questo
-     caso niente immagini AI»): le righe «immagine <id>/<n>: <file>» del punto 1 sono le immagini della mail. Guardale
-     con Read: se una è proprio la locandina del fatto (titolo, date e luogo giusti) scrivi
-     `"locandina": "<id>/<n>"` nella notizia (e nell'evento, punto 4 bis) e **niente** `immagine`. Loghi, firme, foto
-     di persone o immagini che non sono la locandina non si usano. La copia nel sito la fa strumenti/comunicati.py.
+   - **La locandina e le foto** (volute dal proprietario il 25 ott 2026: «se mandano locandine noi le dobbiamo
+     usare, in questo caso niente immagini AI», «se mandano foto usale», «anche più foto se ci sono»): le righe
+     «immagine <id>/<n>: <file>» del punto 1 sono le immagini della mail. **Guardale tutte** con Read:
+     - la locandina del fatto (titolo, date e luogo giusti): `"locandina": "<id>/<n>"` nella notizia (e nell'evento,
+       punto 4 bis);
+     - le foto del fatto (la partita, la squadra, l'evento, il luogo, il cantiere, le persone del comunicato):
+       `"foto_inviate": ["<id>/1", "<id>/2", …]` (tutte quelle buone, la più bella per prima: va in alto, le altre in
+       una galleria in fondo; fino a 10) e `"foto_da": "<chi firma il comunicato>"` (va nella didascalia);
+     - con locandina o foto **niente** `immagine`. Escono così anche su Instagram (carosello) e Facebook (post con le
+       foto). Non si usano: loghi, firme, banner, screenshot, documenti con dati personali, foto che non c'entrano
+       col fatto; nella cronaca nessuna foto in cui si riconoscono indagati, vittime o minori. La copia nel sito la
+       fa strumenti/comunicati.py.
 4 bis. **Il calendario.** Se il comunicato annuncia un evento che va nel calendario (AGENTE.md, «Il calendario degli
    eventi»: cultura, feste e sagre, nei 78 Comuni) mettilo anche in «eventi» del file, con le regole di AGENTE.md
    (date, ora e prezzo solo se scritti, `organizzatore`, `artisti`, fonti con chi firma il comunicato e il suo sito,

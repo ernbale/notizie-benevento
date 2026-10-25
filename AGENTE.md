@@ -525,7 +525,13 @@ ce n'è). Un avviso con `in_vigore_fino` passato non va più in testa. Quindi in
 - Alle notizie in prima pagina senza `immagine` aggiungila a ogni giro, dove c'è un tema adatto.
 - Il campo `foto` non lo scrivi tu: lo mette `strumenti/archivia.py`, che sceglie tra le versioni della foto di quel
   tema quella meno usata in prima pagina, così due notizie dello stesso tema non hanno la stessa foto.
-- Con una **locandina** arrivata per posta, niente `immagine` (vedi «Il calendario degli eventi»).
+- Con una **locandina** arrivata per posta, niente `immagine` (vedi «Il calendario degli eventi»). Lo stesso con le
+  **foto arrivate per posta** (voluto dal proprietario il 25 ott 2026: «se mandano foto usale», «anche più foto se ci
+  sono»): per un comunicato dell'elenco con `immagini` guardale con Read e metti le foto del fatto in
+  `"foto_inviate": ["<id del comunicato>/<numero>", …]` (la migliore per prima, fino a 10) con
+  `"foto_da": "<chi firma il comunicato>"`, anche quando lo aggiungi a una notizia che c'è già. Le regole (cosa non si
+  usa) sono in COMUNICATI.md, punto 4; la copia nel sito la fa archivia.py (il campo diventa `img/locandine/…jpg`:
+  lascialo com'è).
 
 ## Il calendario degli eventi (`eventi.json`)
 
@@ -580,7 +586,8 @@ aggiorni a ogni giro, come notizie.json.
   con Read e, se una è proprio la locandina di quell'evento (titolo, date e luogo giusti), scrivi
   `"locandina": "<id del comunicato>/<numero>"` nell'evento e nella notizia, e niente `immagine`. La copia nel sito la
   fa archivia.py (la mette in `img/locandine/` e cambia il campo in `img/locandine/<nome>.jpg`: quello lascialo com'è).
-  Un logo, una foto di persone o un'immagine che non è la locandina non si usa.
+  Un logo o un'immagine che non è la locandina nell'evento non si usa (le foto del fatto vanno nella notizia, in
+  `foto_inviate`: vedi «La foto illustrativa»).
 - `notizia`: l'`id` della notizia collegata, se l'evento è anche una notizia in prima pagina o in archivio.
 - L'`id` è per sempre (è l'indirizzo della pagina): parole chiave e anno, es. `sagra-castagna-vitulano-2026`.
 
