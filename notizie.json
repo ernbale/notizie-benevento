@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T16:09+01:00",
+ "aggiornato": "2026-10-25T17:10+01:00",
  "giornali_letti": 14,
  "notizie": [
   {
@@ -10,7 +10,7 @@
    "categoria": "cronaca",
    "zona": "provincia",
    "luogo": "Monte Taburno",
-   "pubblicato": "2026-10-25T15:59+01:00",
+   "pubblicato": "2026-10-25T16:38+01:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
@@ -25,6 +25,10 @@
     {
      "nome": "Anteprima24",
      "url": "https://www.anteprima24.it/benevento/taburno-due-ragazze-dirupo-soccorse/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/25/paura-sul-monte-taburno-due-ragazze-cadono-in-un-dirupo-salvate-dai-vigili-del-fuoco/"
     }
    ],
    "articolo": {
@@ -35,21 +39,26 @@
        "Anteprima24",
        "Ottopagine",
        "NTR24"
-      ]
+      ],
+      "giorno": "2026-10-25"
      },
      {
       "testo": "Per il recupero sono intervenute le squadre di terra e l'elicottero dei vigili del fuoco del nucleo di Pontecagnano, in provincia di Salerno. Una delle due escursioniste è stata recuperata direttamente dall'equipaggio dell'elicottero; l'altra l'hanno raggiunta i vigili del fuoco a piedi. Anche lei è stata poi portata in ospedale con l'elicottero.",
       "fonti": [
        "Anteprima24",
-       "Ottopagine"
-      ]
+       "Ottopagine",
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-25"
      },
      {
-      "testo": "Secondo una prima ricostruzione riferita da Ottopagine, le ferite delle due ragazze non sarebbero gravi. Come sono cadute non si sa ancora: le cause sono da accertare.",
+      "testo": "Secondo una prima ricostruzione riferita da Ottopagine, le ferite delle due ragazze non sarebbero gravi; BeneventoNews24 precisa che l'ospedale non ha ancora diffuso notizie ufficiali sulle loro condizioni. Come sono cadute non si sa ancora: le cause sono da accertare.",
       "fonti": [
        "Ottopagine",
-       "Anteprima24"
-      ]
+       "Anteprima24",
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-25"
      }
     ],
     "cronologia": [],
@@ -58,7 +67,9 @@
       "testo": "Le due ragazze cadute in un dirupo durante un'escursione sul Taburno e il recupero dei vigili del fuoco, una con l'elicottero e una da terra, poi il trasporto al San Pio.",
       "fonti": [
        "Anteprima24",
-       "Ottopagine"
+       "Ottopagine",
+       "NTR24",
+       "BeneventoNews24"
       ]
      }
     ],
@@ -86,6 +97,12 @@
       "titolo": "Monte Taburno, due ragazze cadono in un dirupo durante un’escursione: soccorse dai vigili del fuoco",
       "url": "https://www.ntr24.tv/2026/10/25/monte-taburno-due-ragazze-cadono-in-un-dirupo-durante-unescursione-soccorse-dai-vigili-del-fuoco/",
       "data": "25 ott, 15:59"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Monte Taburno, due ragazze cadono in un dirupo: salvate dai Vigili del Fuoco",
+      "url": "https://www.beneventonews24.it/2026/10/25/paura-sul-monte-taburno-due-ragazze-cadono-in-un-dirupo-salvate-dai-vigili-del-fuoco/",
+      "data": "25 ott, 16:38"
      }
     ]
    }
