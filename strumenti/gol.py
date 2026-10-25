@@ -242,8 +242,10 @@ def come(k):
     return " di testa" if "header" in t else " su rigore" if "penalty" in t else " su punizione" if "free" in t else ""
 
 
-def verbo_gol(prima, dopo, squadra, p):
-    """«sblocca la partita», «pareggia», «raddoppia»… dal risultato prima e dopo il gol."""
+def verbo_gol(prima, dopo, squadra, p, precedenti=()):
+    """«sblocca la partita», «pareggia», «raddoppia»… dal risultato prima e dopo il gol. precedenti: i gol già segnati;
+    dal pareggio «riporta avanti» solo chi era già stato in vantaggio (1-0, 1-1, 2-1), se no «porta avanti» (0-1, 1-1,
+    2-1: è una rimonta). Voluto dal proprietario il 25 ott 2026: «ritorna in vantaggio dipende da chi ha segnato»."""
     altra = p["fuori"] if squadra == p["casa"] else p["casa"]
     mio, loro = dopo[squadra], dopo[altra]
     if mio == 1 and loro == 0:
@@ -251,6 +253,12 @@ def verbo_gol(prima, dopo, squadra, p):
     if mio == loro:
         return "pareggia"
     if mio - loro == 1 and prima[squadra] == prima[altra]:
+        conto = {squadra: 0, altra: 0}
+        for g in precedenti:
+            if g.get("valido", True) and g.get("squadra") in conto:
+                conto[g["squadra"]] += 1
+                if conto[squadra] > conto[altra]:
+                    return "riporta avanti " + con("", p["nomi"][squadra])
         return "porta avanti " + con("", p["nomi"][squadra])
     if mio == 2 and loro == 0:
         return "raddoppia"
@@ -264,7 +272,8 @@ def frase_gol(g, p):
     if g.get("autogol"):
         return f"{g['minuto']} Autogol di {g['chi']}." if g.get("chi") else f"{g['minuto']} Autogol."
     if not g.get("chi"):   # il gol c'è nel risultato ma non ancora l'azione: il soggetto è la squadra
-        v = "va in vantaggio" if g["verbo"].startswith("porta avanti") else g["verbo"]
+        v = "va in vantaggio" if g["verbo"].startswith("porta avanti") else \
+            "torna in vantaggio" if g["verbo"].startswith("riporta avanti") else g["verbo"]
         return f"{g['minuto']} {maiusc(con('', p['nomi'][g['squadra']]))} {v}.".strip()
     return f"{g['minuto']} {g['chi']} {g['verbo']}{g.get('come', '')}.".strip()
 
@@ -316,7 +325,8 @@ def racconto_gol(p, gol, noi):
               "allunga": "allunga", "accorcia le distanze": "accorcia"}
     pezzi, soggetto, gruppo = [], None, []
     for g in validi:
-        v = parole.get(g["verbo"], "passa in vantaggio" if g["verbo"].startswith("porta avanti") else "segna")
+        v = parole.get(g["verbo"], "passa in vantaggio" if g["verbo"].startswith("porta avanti") else
+                       "torna in vantaggio" if g["verbo"].startswith("riporta avanti") else "segna")
         quando = al_minuto(g["minuto"]) if g.get("minuto") else ""
         chi_ = f" con {g['chi']}" if g.get("chi") and not g.get("autogol") else (
             f" con un autogol di {g['chi']}" if g.get("chi") else " con un autogol" if g.get("autogol") else "")
@@ -835,7 +845,7 @@ class Cronista:
         g = {"n": n, "id": k.get("id") if k else None, "squadra": sq,
              "minuto": ((k.get("clock") or {}).get("displayValue") if k else p.get("minuto")) or "",
              "chi": chi(k, p) if k else "", "come": come(k) if k else "", "autogol": bool(k and "own" in tipo_azione(k)),
-             "verbo": verbo_gol(prima, ora, sq, p), "valido": True}
+             "verbo": verbo_gol(prima, ora, sq, p, self.s["gol"]), "valido": True}
         self.s["gol"].append(g)
         return (f"gol:{n}", "gol", {"gol": dict(g), "risultato": risultato(p, ora), "gol_ora": dict(ora),
                                     "gol_lista": [dict(x) for x in self.s["gol"]]})
