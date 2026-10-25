@@ -1238,6 +1238,12 @@ incompleto. La casella dei comunicati la legge ogni 5 minuti.
   gestore (oggetto, mittente e testo sono quelli della mail vera; niente ricevute di accettazione e consegna):
   `pec: true` = mandata da una casella PEC, il mittente è certificato. `pec` del file = se la PEC si è letta,
   `pec_ultima_lettura` = l'ultima volta che si è letta.
+- `ufficiali.json` (dal 25 ott 2026): gli articoli nuovi dei siti ufficiali (società sportive, Comune e Provincia di
+  Benevento, ASL, Alto Calore, GESESA, EAV, AIR, ANAS e Regione solo per il Sannio), letti dal Pi ogni 5 minuti
+  (`strumenti/ufficiali.py`), ultimi 3 giorni: `id` («u» e 11 caratteri, come quelli di comunicati_visti.json del
+  sito), `tipo` = «sito», `titolo`, `link` (da citare), `data` (quando è uscito), `arrivata` (quando l'ha visto il
+  Pi), `mittente` (la fonte), `dominio`, `testo` (quello del feed: spesso solo l'inizio). Appena ne arriva uno il Pi fa
+  partire il giro lampo, come per i comunicati per posta.
 - `stagioni.json` (dal 25 ott 2026): le date degli spettacoli scritte sulle pagine ufficiali delle stagioni (Città
   Spettacolo, Accademia di Santa Sofia, Teatro San Marco, Solot, la biglietteria Clappit), da ieri in poi: `data` = il
   giorno dello spettacolo, `ora` o `orari` se scritti, `titolo`, `luogo`, `comune`, `fonte` (chi la pubblica),

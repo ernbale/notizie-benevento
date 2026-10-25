@@ -366,6 +366,27 @@ def main():
     except (OSError, ValueError) as e:
         posta = []
         print(f"ATTENZIONE: comunicati.json (posta) non si legge ({type(e).__name__}): guardalo a mano")
+    # Dal 25 ott 2026 il giro lampo pubblica anche gli articoli nuovi dei siti ufficiali (ufficiali.json da casa, li
+    # trova il Pi ogni 5 minuti: strumenti/ufficiali.py). Quelli che ha in mano (e gli articoli dei giornali sullo
+    # stesso fatto) qui non entrano, e si elencano a parte: se li scrivesse anche il giro di ogni ora sarebbero doppioni.
+    try:
+        with open(os.path.join(FONTI_CASA, "ufficiali.json"), encoding="utf-8") as f:
+            dai_siti = json.load(f).get("voci", [])
+    except (OSError, ValueError):
+        dai_siti = []
+    lampo_url, lampo_parole, lampo_elenco = set(), [], []
+    for v in dai_siti:
+        arrivata = data_rss(v.get("arrivata"))
+        if not v.get("id") or not arrivata or adesso - arrivata > dt.timedelta(hours=24):
+            continue
+        esito = visti.get(v["id"]) or {}
+        if esito.get("esito") in ("pubblicato", "gia_nel_sito") and esito.get("notizia"):
+            gia.setdefault(norma_url(v.get("link", "")), esito["notizia"])
+        elif not esito and adesso - arrivata < dt.timedelta(minutes=LAMPO_MINUTI):
+            in_lampo += 1
+            lampo_url.add(norma_url(v.get("link", "")))
+            lampo_parole.append(parole(v.get("titolo", "")))
+            lampo_elenco.append(f"{v.get('mittente')} · {v.get('titolo', '')[:100]} · {v.get('link')}")
     for v in posta:
         arrivata = data_rss(v.get("arrivata") or v.get("data"))
         if not v.get("id") or not arrivata or adesso - arrivata > dt.timedelta(hours=24):
@@ -376,16 +397,23 @@ def main():
             gia[norma_url("posta:" + v["id"])] = esito.get("notizia")
         elif not esito and adesso - arrivata < dt.timedelta(minutes=LAMPO_MINUTI):
             in_lampo += 1   # ci sta lavorando il giro lampo
+            lampo_parole.append(parole(v.get("titolo", "")))
+            lampo_elenco.append(f"comunicato per email di {v.get('mittente') or v.get('dominio')} · "
+                                f"{v.get('titolo', '')[:100]}")
             continue
         nome = f"Comunicato per email: {v.get('mittente') or v.get('dominio')}"
         postali.add(nome)
         quando = arrivata if (esito or arrivata >= dal) else dal   # non trattato dal giro lampo: è da decidere adesso
         risultati.setdefault(nome, (True, []))[1].append(
             {"titolo": v.get("titolo", ""), "url": "posta:" + v["id"], "data": quando})
-    articoli = []
+    articoli, al_lampo = [], []
     for nome, (autorevole, voci) in risultati.items():
         for v in voci:
             if not v["data"] or v["data"] < dal_contesto or v["data"] > adesso + dt.timedelta(minutes=10):
+                continue
+            p = parole(v["titolo"])
+            if norma_url(v["url"]) in lampo_url or (v["data"] >= dal and any(stesso_fatto(p, q) for q in lampo_parole)):
+                al_lampo.append(f"{nome} · {v['titolo'][:100]}")   # lo stesso fatto che sta pubblicando il giro lampo
                 continue
             articoli.append({"testata": nome, "autorevole": autorevole, "titolo": v["titolo"], "url": v["url"],
                              "data": v["data"], "parole": parole(v["titolo"]), "citato": gia.get(norma_url(v["url"]))})
@@ -446,6 +474,16 @@ def main():
     print(f"Comunicati per email delle ultime 24 ore: {n_posta} (quelli già pubblicati dal giro lampo non sono "
           f"nell'elenco; {in_lampo} in lavorazione adesso dal giro lampo: non toccarli). Quelli nell'elenco "
           "(«Comunicato per email: …», url «posta:<id>») leggili in comunicati.json dell'archivio di casa (campo id).\n")
+    if lampo_elenco:
+        print(f"IN MANO AL GIRO LAMPO ADESSO ({len(lampo_elenco)}): comunicati per email e articoli dei siti ufficiali che sta "
+              "pubblicando lui (anche quelli che leggi tu dai siti ufficiali di AGENTE.md, come il feed del Comune): "
+              "NON scriverli, nemmeno da altre fonti; al prossimo giro aggiungi alle sue notizie le fonti nuove.")
+        for x in lampo_elenco:
+            print(f"  - {x}")
+        if al_lampo:
+            print(f"  Fuori dall'elenco perché sono lo stesso fatto ({len(al_lampo)}): " + "; ".join(al_lampo[:12])
+                  + ("…" if len(al_lampo) > 12 else ""))
+        print()
     for r in registro:
         if "non raggiungibile" in r or "solo la homepage" in r:
             print("ATTENZIONE:", r)

@@ -19,7 +19,8 @@ nessuno se ne accorgesse.
    sul sito o sul canale Telegram: in quel caso rilancia la pubblicazione (curiosita_social.py non fa doppioni).
 7. Comunicati per email (dal 24 ott 2026, vedi COMUNICATI.md): solo sul Pi, un comunicato arrivato da più di
    COMUNICATO_MAX minuti che il giro lampo non ha ancora trattato (comunicati_visti.json del sito). Il Pi lo rilancia
-   da solo (comunicati_lampo.py): qui si dà l'allarme.
+   da solo (comunicati_lampo.py): qui si dà l'allarme. Dal 25 ott 2026 anche gli articoli dei siti ufficiali
+   (ufficiali.json, strumenti/ufficiali.py), dopo SITO_MAX minuti.
 8. Fonti lette da casa (dal 25 ott 2026: l'albo di Benevento e 37 albi su Halley giù dalle 00:30, e nessuno se n'era
    accorto): solo sul Pi, una fonte dell'archivio di casa (~/nb-fonti/archivio) che non si legge da più di
    FONTE_FERMA_ORE ore, o che si legge solo dalla riserva, o gli albi dei Comuni letti meno di ALBI_MINIMI su 57: un
@@ -78,6 +79,7 @@ PISTA_MAX = 45      # minuti: una pista della vedetta non ancora vista dal giro 
 TG_CHIUSURE = 20    # minuti: una chiusura del sito non ancora sul canale Telegram
 SCORTA_MINIMA = 14  # giorni di curiosità in programma: sotto, la routine del lunedì non ha rifornito
 COMUNICATO_MAX = 30  # minuti: un comunicato per email non ancora trattato dal giro lampo
+SITO_MAX = 50        # minuti: un articolo dei siti ufficiali (può aspettare il giro di ogni ora fino alle :25)
 FONTE_FERMA_ORE = 3  # ore senza una lettura riuscita di una fonte di casa (come la regola dell'agente in AGENTE.md)
 ARCHIVIO_FERMO = 90  # minuti senza un giro di fonti_casa.py (gira ogni 30)
 ALBI_MINIMI = 45     # albi pretori dei Comuni letti (su 57): sotto, per più di FONTE_FERMA_ORE ore, avviso
@@ -370,6 +372,13 @@ def comunicati(gh, adesso, pi):
             voci = json.load(f).get("voci") or []
     except (OSError, ValueError):
         return ["non leggo comunicati.json dell'archivio di casa (~/nb-fonti/archivio)"]
+    try:   # gli articoli dei siti ufficiali (dal 25 ott 2026): il file c'è solo da quando gira strumenti/ufficiali.py
+        with open(os.path.join(CARTELLA_PI, "archivio", "ufficiali.json"), encoding="utf-8") as f:
+            voci += [v for v in json.load(f).get("voci") or [] if isinstance(v, dict)]
+    except FileNotFoundError:
+        pass
+    except (OSError, ValueError):
+        return ["non leggo ufficiali.json dell'archivio di casa (~/nb-fonti/archivio)"]
     visti = json.loads(gh.chiama("GET", f"repos/{REPO}/contents/comunicati_visti.json?ref=main", grezzo=True)).get("visti") or {}
     try:
         with open(os.path.join(CARTELLA_PI, "comunicati_lampo.json"), encoding="utf-8") as f:
@@ -380,10 +389,12 @@ def comunicati(gh, adesso, pi):
     for v in voci:
         quando = v.get("arrivata") or v.get("data")
         arrivata = iso(quando) if quando else None
+        sito = v.get("tipo") == "sito"
         if (v.get("id") and v["id"] not in visti and v["id"] not in vecchi and arrivata
-                and dt.timedelta(minutes=COMUNICATO_MAX) < adesso - arrivata < dt.timedelta(hours=24)):
-            problemi.append(f"il comunicato di {v.get('mittente') or v.get('dominio')} arrivato alle {arrivata:%H:%M} "
-                            f"(«{str(v.get('titolo'))[:60]}») non è ancora stato trattato dal giro lampo "
+                and dt.timedelta(minutes=SITO_MAX if sito else COMUNICATO_MAX) < adesso - arrivata < dt.timedelta(hours=24)):
+            problemi.append((f"l'articolo del sito di {v.get('mittente')} visto alle {arrivata:%H:%M}" if sito else
+                             f"il comunicato di {v.get('mittente') or v.get('dominio')} arrivato alle {arrivata:%H:%M}")
+                            + f" («{str(v.get('titolo'))[:60]}») non è ancora stato trattato dal giro lampo "
                             "(~/nb-fonti/comunicati.log)")
     return problemi
 

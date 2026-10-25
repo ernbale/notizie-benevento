@@ -105,8 +105,13 @@ jobs:
           key: social-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: social-
 
+      # Per un comunicato del giro lampo (commit «Comunicato delle …», dal 25 ott 2026: lui «dobbiamo recuperare qualche
+      # minuto») le statistiche non si rifanno se quelle pubblicate sono di meno di 20 minuti fa: una trentina di secondi
+      # in meno prima che la notizia esca sul sito e sui social. Se non si possono tenere, si rifanno come sempre.
       - name: Statistiche private (cifrate con la parola d'ordine)
         env:
+          EVENTO: ${{ github.event_name }}
+          MESSAGGIO: ${{ github.event.head_commit.message }}
           CHIUSURE_STATO: ${{ runner.temp }}/social/chiusure.json
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           STATISTICHE_PAROLA: ${{ secrets.STATISTICHE_PAROLA }}
@@ -115,6 +120,10 @@ jobs:
           DIARIO_CHIAVE: ${{ secrets.DIARIO_CHIAVE }}
           GH_TOKEN: ${{ github.token }}
         run: |
+          if [ "$EVENTO" = "push" ] && printf '%s\n' "$MESSAGGIO" | head -n 1 | grep -q '^Comunicato delle ' \
+             && python3 strumenti/statistiche.py --tieni-pubblicate 20; then
+            exit 0
+          fi
           pip install --quiet cryptography || echo "::warning::cryptography non installato"
           if ! python3 strumenti/statistiche.py; then
             echo "::warning::Statistiche non aggiornate (il sito si pubblica lo stesso)"

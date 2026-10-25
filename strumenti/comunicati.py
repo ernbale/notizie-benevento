@@ -18,6 +18,13 @@ nuovo che somiglia a uno che c'è già (stesso Comune, stessi giorni, titolo sim
 La locandina arrivata con la mail («immagini» del comunicato) si indica con "locandina": "<id del comunicato>/<n>",
 nella notizia e nell'evento: la copia in img/locandine/ archivia.risolvi_locandine(), e niente foto fatta con l'IA.
 
+Dal 25 ott 2026 (lui: «dobbiamo recuperare qualche minuto, dobbiamo arrivare prima») arrivano qui anche gli articoli
+nuovi dei siti ufficiali (società sportive, Comune e Provincia di Benevento, ASL, acqua, trasporti): li trova il Pi ogni 5
+minuti (strumenti/ufficiali.py, file ufficiali.json dell'archivio) e hanno `tipo` = «sito», il `link` della pagina e un
+id che comincia con «u». Si trattano come i comunicati (stessi esiti, stesso comunicati_visti.json); in più qui si
+controlla che la notizia pubblicata citi quel link tra le fonti, e per tutte che una notizia nuova non citi una pagina
+già citata da una notizia della prima pagina (sarebbe un doppione: va «gia_nel_sito»).
+
 Il file per --unisci:
 {"notizie": [ {una notizia completa come in AGENTE.md, «comunicati»: ["id del comunicato"]} ],
  "eventi": [ {un evento completo come in AGENTE.md} ],   (facoltativo)
@@ -74,13 +81,32 @@ def leggi(p, vuoto):
         return vuoto
 
 
-def comunicati():
-    """Le voci di comunicati.json dell'archivio di casa (accanto al sito, o in /home/user nel cloud)."""
+def comunicati(nome="comunicati.json"):
+    """Un file dell'archivio di casa (accanto al sito, o in /home/user nel cloud): comunicati.json (la posta) o
+    ufficiali.json (gli articoli dei siti ufficiali, strumenti/ufficiali.py)."""
     for base in (os.environ.get("NB_FONTI_ARCHIVIO") or G.FONTI_CASA, "/home/user/notizie-benevento-fonti"):
-        d = leggi(os.path.join(base, "comunicati.json"), None)
+        d = leggi(os.path.join(base, nome), None)
         if isinstance(d, dict):
             return d
     return {}
+
+
+def tutte_le_voci():
+    """I comunicati per posta e, dal 25 ott 2026, gli articoli nuovi dei siti ufficiali (`tipo` = «sito»)."""
+    return [v for nome in ("comunicati.json", "ufficiali.json") for v in comunicati(nome).get("voci") or []
+            if isinstance(v, dict)]
+
+
+def con_percorso(u):
+    """L'indirizzo di una pagina (con un percorso dopo il dominio), normalizzato: la homepage di un sito non conta."""
+    n = G.norma_url(u)
+    return n if re.match(r"^https?://", str(u or "").strip(), re.I) and "/" in n else ""
+
+
+def link_di(n):
+    """Gli indirizzi di pagina che una notizia cita tra le fonti (prima pagina e articolo)."""
+    return {con_percorso(f.get("url")) for f in (n.get("fonti") or []) + ((n.get("articolo") or {}).get("fonti") or [])
+            if isinstance(f, dict)} - {""}
 
 
 def git(*a, controlla=True):
@@ -102,25 +128,36 @@ def simili(c, notizie, adesso):
 
 
 def da_fare(adesso):
-    c = comunicati()
+    c, u = comunicati(), comunicati("ufficiali.json")
     visti = leggi(FILE, {}).get("visti") or {}
     limite = (adesso - dt.timedelta(days=GIORNI_DA_FARE)).isoformat()
-    voci = [v for v in c.get("voci") or [] if v.get("id") and v["id"] not in visti
+    voci = [v for v in tutte_le_voci() if v.get("id") and v["id"] not in visti
             and (v.get("arrivata") or v.get("data") or "") >= limite]
     notizie = leggi(NOTIZIE, {}).get("notizie") or []
+    citati = G.citati()
     print(f"Ora: {adesso:%Y-%m-%d %H:%M}")
     print(f"Casella comunicati@: ultimo controllo del Pi {c.get('controllato') or 'mai'} · {c.get('esito') or '?'}")
+    print(f"Siti ufficiali: ultimo controllo del Pi {u.get('controllato') or 'mai'} · {u.get('esito') or '?'}")
     print(f"Comunicati da trattare: {len(voci)}")
     for v in voci:
-        print(f"\n[{v['id']}] arrivato {v.get('arrivata') or v.get('data')} · da {v.get('mittente')} "
-              f"(dominio {v.get('dominio')})" + (f" · allegati: {', '.join(v['allegati'])}" if v.get("allegati") else ""))
-        print(f"  oggetto: {v.get('titolo')}")
+        if v.get("tipo") == "sito":
+            print(f"\n[{v['id']}] ARTICOLO DEL SITO UFFICIALE di {v.get('mittente')}: uscito {v.get('data')}, visto dal "
+                  f"Pi {v.get('arrivata')}\n  link (è la fonte da citare): {v.get('link')}")
+            print(f"  titolo: {v.get('titolo')}")
+            gia = citati.get(G.norma_url(v.get("link") or ""))
+            if gia:
+                print(f"  GIÀ SUL SITO, STESSO LINK: la notizia {gia} cita già questo articolo → «gia_nel_sito»")
+        else:
+            print(f"\n[{v['id']}] arrivato {v.get('arrivata') or v.get('data')} · da {v.get('mittente')} "
+                  f"(dominio {v.get('dominio')})" + (f" · allegati: {', '.join(v['allegati'])}" if v.get("allegati") else ""))
+            print(f"  oggetto: {v.get('titolo')}")
         for n in simili(v, notizie, adesso):
             print(f"  POSSIBILE STESSO FATTO già sul sito: {n['id']} · {n.get('pubblicato', '')[:16]} · {n.get('titolo')}")
         for k, im in enumerate(v.get("immagini") or [], 1):   # le locandine: guardale (Read) prima di usarle
             print(f"  immagine {v['id']}/{k}: {os.path.join(A.archivio_fonti() or '', im.get('file', ''))} "
                   f"({im.get('da')}, {im.get('larghezza')}×{im.get('altezza')})")
-        print("  testo:\n    " + str(v.get("testo") or "").strip().replace("\n", "\n    "))
+        print(("  testo del feed (può essere solo l'inizio: leggi la pagina intera dal link):\n    "
+               if v.get("tipo") == "sito" else "  testo:\n    ") + str(v.get("testo") or "").strip().replace("\n", "\n    "))
     print("\n" + (f"DA FARE: {len(voci)} comunicati" if voci else "NIENTE DA FARE: nessun comunicato nuovo"))
 
 
@@ -142,6 +179,7 @@ def unisci(d, visti, entrata, voci, adesso, err):
         err.append("«notizie» ed «esiti» devono essere elenchi")
         return []
     ids_voci = {v["id"] for v in voci if v.get("id")}
+    per_voce = {v["id"]: v for v in voci if v.get("id")}
     attuali = {n.get("id") for n in d.get("notizie", []) + d.get("approfondimenti", [])}
     prima = {n.get("id"): n for n in d.get("notizie", [])}
     indice = leggi(os.path.join(SITO, "archivio", "indice.json"), {}).get("voci") or []
@@ -178,6 +216,10 @@ def unisci(d, visti, entrata, voci, adesso, err):
                 per_id[e["notizia"]].setdefault("comunicati", [])
                 if cid not in per_id[e["notizia"]]["comunicati"]:
                     per_id[e["notizia"]]["comunicati"].append(cid)
+                link = con_percorso(per_voce[cid].get("link")) if per_voce[cid].get("tipo") == "sito" else ""
+                if link and link not in link_di(per_id[e["notizia"]]):
+                    err.append(f"{w}: è un articolo del sito di {per_voce[cid].get('mittente')}: mettilo tra le fonti "
+                               f"della notizia col suo link ({per_voce[cid].get('link')})")
         elif es == "gia_nel_sito" and e.get("notizia") not in attuali | in_archivio:
             err.append(f"{w}: la notizia {e.get('notizia')!r} non c'è né in prima pagina né in archivio")
         elif es == "gia_nel_sito" and IMMAGINI & e.keys() and e.get("notizia") not in prima:
@@ -189,6 +231,17 @@ def unisci(d, visti, entrata, voci, adesso, err):
     for i in per_id:
         if i not in pubblicate:
             err.append(f"{i}: notizia senza un comunicato con esito «pubblicato» che la indichi")
+    # niente doppioni: una notizia nuova che cita la stessa pagina di una notizia della prima pagina è lo stesso fatto
+    # (25 ott 2026: col giro di ogni ora che legge gli stessi siti ufficiali)
+    gia = {}
+    for n in d.get("notizie", []):
+        for l in link_di(n):
+            gia.setdefault(l, n.get("id"))
+    for i, n in per_id.items():
+        doppi = sorted({gia[l] for l in link_di(n) if l in gia})
+        if doppi:
+            err.append(f"{i}: cita una pagina che è già nella notizia {', '.join(doppi)}: è lo stesso fatto, usa "
+                       "«gia_nel_sito» con quella notizia (o togli quel link se è proprio un altro fatto)")
     if err:
         return []
     for n in reversed(nuove):
@@ -258,7 +311,7 @@ def main():
     if not isinstance(entrata, dict):
         print(f"ERRORE: {a.unisci} non è un JSON con «notizie» ed «esiti»")
         return 1
-    voci = comunicati().get("voci") or []
+    voci = tutte_le_voci()
     if a.pubblica:
         altro = [r for r in git("status", "--porcelain").stdout.splitlines()
                  if not r.endswith(("notizie.json", "comunicati_visti.json", "eventi.json")) and "img/locandine/" not in r]

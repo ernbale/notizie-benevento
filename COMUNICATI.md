@@ -6,9 +6,21 @@ uscito solo alle 13:06, ripreso da un giornale: «questi sono comunicati ufficia
 preparazione articolo, pubblicazione istantanea… non deve ricapitare assolutamente… l'agente deve essere super, niente
 deduzioni, niente invenzioni, un buon articolo di giornale».
 
+Dal 25 ott 2026 (lui: «dobbiamo recuperare qualche minuto, dobbiamo arrivare prima») arrivano qui anche gli
+**articoli nuovi dei siti ufficiali**: società sportive, Comune e Provincia di Benevento, ASL, Alto Calore, GESESA, EAV,
+AIR, ANAS e Regione (solo il Sannio). Sono comunicati anche loro, pubblicati sul sito di chi li firma invece che mandati
+per posta: stesse regole, più quelle del punto 3 bis.
+
+**Il minimo è un articolo perfetto** (lui, 25 ott 2026: «le cose che ci mandano il minimo è un articolo perfetto»,
+«qualche secondo da perdere in più per un articolo perfetto»). La velocità si guadagna prima di te (il Pi, i 5
+minuti, la pubblicazione); tu prenditi il tempo che serve per leggere tutto, controllare e rileggere. Mai un articolo
+più corto o più povero per fare prima.
+
 Come gira: il Pi di casa legge la casella ogni 5 minuti (strumenti/fonti_casa.py, che toglie rimbalzi e risposte
-automatiche) e appena c'è un comunicato nuovo fa partire questo giro (strumenti/comunicati_lampo.py), con un messaggio
-che comincia con «COMUNICATI». Se dopo 15 minuti il comunicato non risulta trattato in `comunicati_visti.json`, lo
+automatiche) e i siti ufficiali (strumenti/ufficiali.py), e appena c'è un comunicato o un articolo nuovo fa partire
+questo giro (strumenti/comunicati_lampo.py), con un messaggio che comincia con «COMUNICATI». Gli articoli dei siti che
+arrivano mentre lavora il giro di ogni ora (dalle :04 alle :25) aspettano che abbia pubblicato: spesso li trovi già
+sul sito. Se dopo 15 minuti il comunicato non risulta trattato in `comunicati_visti.json`, lo
 rilancia (al massimo 3 volte, poi la sentinella dà l'allarme). Quello che il giro lampo scarta o non riesce a fare lo
 decide poi il giro di ogni ora (strumenti/giornali.py lo mette nel suo elenco).
 
@@ -41,6 +53,22 @@ riuscita» (o cosa non va) con l'esito dei comandi. In prova non pubblichi nient
      effetti per la gente (regola 9 di AGENTE.md: niente comunicati di partito, polemiche, dichiarazioni), chiusure di
      scuole/parchi/cimiteri decise da un Comune (le pubblica il giro Chiusure), un fatto che non si capisce o non si può
      verificare (mittente generico come gmail o libero e niente di controllabile), fatti vecchi.
+
+3 bis. **Gli articoli dei siti ufficiali** (i blocchi «ARTICOLO DEL SITO UFFICIALE di …», id che comincia con «u»):
+   - **Leggi la pagina intera** col suo link (WebFetch): il testo del feed spesso è solo l'inizio, e per il Benevento
+     Calcio non c'è. Per ASL, ANAS e Regione no: quei siti dal cloud non si aprono, il testo intero è già nel blocco.
+     Se la pagina non si apre e il testo del blocco non basta per un articolo completo, **scartato** col motivo
+     «pagina non leggibile»: lo rivede il giro di ogni ora.
+   - **La fonte** è chi lo firma, col link esatto della pagina: `{"nome": "<la fonte del blocco>", "url": "<il link>"}`
+     (strumenti/comunicati.py dà errore se manca), e in `articolo.fonti` anche `titolo` (quello della pagina) e `data`.
+     `"stato": "ufficiale"`.
+   - **«GIÀ SUL SITO, STESSO LINK»** vuol dire che una notizia cita già quella pagina: è **gia_nel_sito** con quella
+     notizia (strumenti/comunicati.py dà errore anche se pubblichi una notizia nuova con una pagina già citata).
+   - Per EAV, AIR, Alto Calore, ANAS e Regione, che servono tutta la Campania, il Pi tiene solo quello che nomina il
+     Sannio, ma controlla tu: se non tocca la provincia di Benevento è **scartato** («fuori provincia»).
+   - Le foto delle pagine non si usano (solo quelle mandate per posta, punto 4): l'`immagine` dai temi come sempre.
+   - Un articolo vecchio ripubblicato o appena ritoccato (la data della pagina è di giorni fa) è **scartato** («fatto
+     vecchio»), a meno che non dica una cosa nuova.
 
    Una **risposta alla nostra mail** «Comunicati stampa per Notizie Benevento» arriva qui solo se ha un allegato o
    del testo scritto da loro: conta solo quello e gli allegati, non la nostra mail citata sotto. Se dentro non c'è un
@@ -101,8 +129,8 @@ riuscita» (o cosa non va) con l'esito dei comandi. In prova non pubblichi nient
    «esiti». Poi
    `python3 strumenti/comunicati.py --unisci /tmp/comunicati_esito.json --pubblica`. Se stampa ERRORE correggi il file
    e rilancia finché finisce con PUBBLICATO. Mai modificare notizie.json a mano, mai --force.
-6. Resoconto breve in italiano: per ogni comunicato mittente, oggetto, esito (col motivo se scartato) e l'id della
-   notizia; esito della pubblicazione.
+6. Resoconto breve in italiano: per ogni comunicato (e articolo dei siti ufficiali) mittente, oggetto, esito (col
+   motivo se scartato) e l'id della notizia; esito della pubblicazione.
 
 ## Limiti che non si superano
 

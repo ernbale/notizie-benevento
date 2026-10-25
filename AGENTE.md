@@ -90,7 +90,12 @@ meno. Lavora in parallelo (6-8 letture insieme).
 ### Fonti ufficiali
 
 Le leggi a ogni giro. **I loro comunicati bastano da soli** (regola 2, `"stato": "ufficiale"`) e spesso escono ore
-prima che i giornali li riprendano: è il modo di arrivare primi. Scrivi l'articolo con parole tue, come nell'esempio
+prima che i giornali li riprendano: è il modo di arrivare primi. Dal 25 ott 2026 molti di questi siti (Comune e
+Provincia di Benevento, ASL, Alto Calore, GESESA, EAV, AIR, ANAS, Regione e le società sportive) li legge anche il Pi
+ogni 5 minuti, e gli articoli nuovi li pubblica subito il giro lampo (COMUNICATI.md): tu continua a leggerli tutti (sei
+la riserva), ma **non scrivere quelli che giornali.py elenca «IN MANO AL GIRO LAMPO»**, nemmeno partendo da un
+giornale (sarebbero doppioni: al giro dopo aggiungi le fonti nuove alla sua notizia), e quelli già pubblicati li
+riconosci dal link tra le fonti di una notizia. Scrivi l'articolo con parole tue, come nell'esempio
 di Alto Calore più sotto: chi resta senz'acqua o senza treno, dove, da quando a quando, cosa fare, il numero utile. Il
 comunicato va tra le fonti col suo link. Se poi i giornali aggiungono dettagli, aggiungili con le loro fonti.
 

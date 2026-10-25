@@ -861,12 +861,41 @@ def cifra(dati, parola):
             "dati": b64(AESGCM(chiave).encrypt(iv, testo, None))}
 
 
+def tieni_pubblicate(sito, minuti, adesso, online=f"https://{HOST}"):
+    """Per i comunicati del giro lampo (dal 25 ott 2026, lui: «dobbiamo recuperare qualche minuto»): se le statistiche
+    pubblicate sono di meno di `minuti` fa (il campo «creato», in chiaro accanto ai dati cifrati) si rimettono uguali
+    nel sito invece di rifarle, e la pubblicazione risparmia una trentina di secondi. True se le ha tenute."""
+    try:
+        with urllib.request.urlopen(f"{online}/statistiche/dati.json?t={int(adesso.timestamp())}", timeout=20) as r:
+            testo = r.read()
+        busta = json.loads(testo)
+        creato = dt.datetime.fromisoformat(busta["creato"])
+    except Exception as e:
+        print(f"Statistiche: le rifaccio (quelle pubblicate non si leggono: {type(e).__name__})")
+        return False
+    eta = (adesso - creato).total_seconds() / 60
+    if not busta.get("dati") or not -2 <= eta <= minuti:
+        print("Statistiche: le rifaccio (" + (f"quelle pubblicate sono di {eta:.0f} minuti fa" if busta.get("dati")
+                                             else "quelle pubblicate sono vuote") + ")")
+        return False
+    uscita = os.path.join(sito, "statistiche", "dati.json")
+    os.makedirs(os.path.dirname(uscita), exist_ok=True)
+    with open(uscita, "wb") as f:
+        f.write(testo)
+    print(f"Statistiche: tenute quelle di {eta:.0f} minuti fa (comunicato del giro lampo)")
+    return True
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--sito", default=os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     ap.add_argument("--in-chiaro", help="scrive i dati senza cifrarli in questo file (solo per le prove)")
+    ap.add_argument("--tieni-pubblicate", type=int, metavar="MINUTI", help="se quelle pubblicate sono di meno di MINUTI "
+                    "minuti fa le rimette uguali (esce con 0), se no esce con 1 e non fa niente")
     a = ap.parse_args()
     adesso = dt.datetime.now(dt.timezone.utc)
+    if a.tieni_pubblicate is not None:
+        sys.exit(0 if tieni_pubblicate(a.sito, a.tieni_pubblicate, adesso) else 1)
     dati = {"aggiornato": adesso.astimezone(fuso()).isoformat(timespec="minutes"), "giorni": GIORNI}
     try:
         dati["visite"] = visite(a.sito, chiave_cloudflare(os.environ.get("CLOUDFLARE_API_TOKEN", "")), adesso)
@@ -936,8 +965,10 @@ def main():
         return
     uscita = os.path.join(a.sito, "statistiche", "dati.json")
     os.makedirs(os.path.dirname(uscita), exist_ok=True)
+    busta = cifra(dati, parola)
+    busta["creato"] = adesso.isoformat(timespec="seconds")   # in chiaro: lo legge tieni_pubblicate()
     with open(uscita, "w", encoding="utf-8") as f:
-        json.dump(cifra(dati, parola), f)
+        json.dump(busta, f)
     print("OK statistiche cifrate")
 
 

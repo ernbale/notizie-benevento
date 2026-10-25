@@ -844,9 +844,12 @@ def controlla(d, err, avv, adesso=None):
         # i campi del giro lampo dei comunicati per email (strumenti/comunicati.py): non vanno toccati
         if "subito" in n and not isinstance(n["subito"], bool):
             err.append(f"{w}: «subito» è vero o falso (lo mette il giro lampo: non toccarlo)")
+        # (gli id dei comunicati per email sono 12 cifre esadecimali; quelli degli articoli dei siti ufficiali, dal
+        # 25 ott 2026, «u» e 11: strumenti/ufficiali.py)
         if "comunicati" in n and (not isinstance(n["comunicati"], list)
-                                  or any(not re.fullmatch(r"[0-9a-f]{12}", str(c)) for c in n["comunicati"])):
-            err.append(f"{w}: «comunicati» è l'elenco degli id (12 caratteri) dei comunicati per email da cui viene")
+                                  or any(not re.fullmatch(r"u[0-9a-f]{11}|[0-9a-f]{12}", str(c)) for c in n["comunicati"])):
+            err.append(f"{w}: «comunicati» è l'elenco degli id (12 caratteri) dei comunicati per email o degli articoli "
+                       "dei siti ufficiali da cui viene")
         if n.get("stato") == "confermata":
             testate = {re.sub(r"\s*\(.*\)$", "", x or "") for x in nomi_prima}
             if len(testate) < 2:
