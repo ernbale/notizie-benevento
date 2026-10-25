@@ -332,6 +332,8 @@ Regole:
    - titolo: dice il fatto? è senza acchiappa-clic? parole semplici? `titolo_google` sta in 60 caratteri, con paese e fatto?
    - è un fatto di oggi o ancora attuale?
    - notizia già uscita con fatti nuovi: c'è `aggiornamento` con la novità? il primo paragrafo dice com'è la situazione adesso?
+   - notizia aggiornata: titolo, `titolo_google` e `sintesi`, letti adesso, dicono ancora il vero con tutti i fatti del
+     racconto, non solo con l'ultimo?
    Se qualcosa non torna, correggi; se non riesci a verificarlo, togli quella frase o la notizia.
 
 ## Come si scrive l'articolo
@@ -416,6 +418,13 @@ fanno i giornali con le dirette, la novità va in cima, non in fondo.
   risultato, il blocco annunciato diventa la strada riaperta): un aggiornamento col titolo cambiato esce di nuovo su
   Facebook e Instagram come «Aggiornamento»; quelli col titolo uguale solo su Telegram. Per questo il titolo non
   ritoccarlo per un dettaglio. `titolo_prima` non scriverlo: lo mette `archivia.py`.
+- **Titolo, `titolo_google` e `sintesi` devono dire ancora il vero.** Ogni volta che aggiungi un fatto a una notizia,
+  anche quando non è quello che metti nel riquadro `aggiornamento`, rileggili come se la notizia uscisse adesso, con
+  tutti i fatti del racconto. Se dicono una cosa che non è più vera, correggili nello stesso giro: «la Polizia cerca
+  l'aggressore» quando è stato identificato, «presìdi da giovedì» quando sono stati sospesi, «strada chiusa» quando è
+  riaperta, «disperso» quando è stato ritrovato, «in gravi condizioni» quando è fuori pericolo, «domani» quando il
+  giorno è passato. Togli da `non_si_sa` le domande che non valgono più. (Voluto dal proprietario il 25 ott 2026: due
+  titoli erano rimasti indietro di un giorno, perché la novità era nel racconto ma non nel titolo.)
 - **Rimetti a posto il racconto, per giorni**: ogni paragrafo ha `"giorno": "AAAA-MM-GG"` (il giorno dei fatti che
   racconta) e i paragrafi vanno **dal giorno più recente al più vecchio**: prima quelli di oggi (il primo dice
   **com'è la situazione adesso**), poi quelli di ieri e così via; dentro lo stesso giorno, nell'ordine dei fatti. Sul

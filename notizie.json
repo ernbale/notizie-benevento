@@ -1507,9 +1507,9 @@
   },
   {
    "id": "benevento-corso-garibaldi-ragazza-aggredita-23-ottobre",
-   "titolo": "Benevento, ragazza colpita con uno schiaffo a Corso Garibaldi: portata al San Pio, la Polizia cerca l'aggressore",
-   "titolo_google": "Corso Garibaldi, ragazza aggredita: Polizia sul caso",
-   "sintesi": "Venerdì 23 ottobre, verso le 20, una ragazza è stata colpita al volto da un giovane sul Corso Garibaldi, a Benevento. È stata portata in ambulanza al San Pio con ferite a viso e naso. La Polizia ha avviato le ricerche.",
+   "titolo": "Benevento, ragazza colpita con uno schiaffo a Corso Garibaldi: la Polizia ha identificato il giovane",
+   "titolo_google": "Corso Garibaldi, ragazza aggredita: identificato il giovane",
+   "sintesi": "Venerdì 23 ottobre, verso le 20, una ragazza è stata colpita al volto da un giovane sul Corso Garibaldi, a Benevento. È stata portata in ambulanza al San Pio con ferite a viso e naso. Il giovane è stato identificato già venerdì sera; secondo Anteprima24 si va verso una denuncia a piede libero.",
    "categoria": "cronaca",
    "zona": "benevento",
    "luogo": "Benevento, Corso Garibaldi",
@@ -8643,8 +8643,8 @@
   },
   {
    "id": "agricoltori-22-ottobre",
-   "titolo": "Dal 22 ottobre presidi degli agricoltori sulla Sannitica, sulla statale 212 e a Ponte delle Tavole",
-   "titolo_google": "Agricoltori, presidi dal 22 ottobre sulla Sannitica e sulla 212",
+   "titolo": "Agricoltori sanniti, sospesi i presìdi sulla Sannitica, sulla statale 212 e a Ponte delle Tavole: la protesta va a Roma il 27 ottobre",
+   "titolo_google": "Agricoltori, sospesi i presìdi sulla Sannitica e sulla 212",
    "sintesi": "Gli agricoltori sanniti si uniscono alla protesta contro il caro gasolio e i costi di produzione. Da giovedì 22 ottobre presidi a oltranza sulla Sannitica, sulla statale 212 e a Ponte delle Tavole; lo stesso giorno Coldiretti Campania manifesta a Napoli. Il 21 ottobre Coldiretti Campania ha fermato la manifestazione di Napoli dopo la promessa della Regione. Il 22 la Regione ha indicato 13 milioni di ristori e il Governo 60 milioni sul gasolio agricolo. Venerdì 23 i tre presìdi sono stati sospesi in vista della manifestazione nazionale del 27 ottobre a Roma.",
    "categoria": "strade",
    "zona": "benevento",
@@ -8807,8 +8807,7 @@
     ],
     "non_si_sa": [
      "La data esatta della manifestazione di Coldiretti a Napoli.",
-     "Quanti agricoltori e trattori saranno nei presidi sanniti e dove precisamente.",
-     "Fino a quando durano i presidi degli agricoltori sanniti: parlano di mobilitazione a oltranza, senza una data."
+     "Se i presìdi nel Sannio riprenderanno dopo la manifestazione del 27 ottobre a Roma."
     ],
     "fonti": [
      {
