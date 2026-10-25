@@ -14,6 +14,10 @@ nell'archivio privato ernbale/notizie-benevento-fonti, che l'agente trova accant
   mai visti prima, ricordati in comuni-visti.json (fuori dall'archivio). La prima volta che si legge un Comune si
   prende solo nota di quello che c'è, senza segnalarlo: le notizie vecchie non diventano «nuove».
 
+- Le stagioni di teatri e concerti (dal 25 ott 2026): le date ufficiali degli spettacoli dalle pagine di Città
+  Spettacolo, Accademia di Santa Sofia, Teatro San Marco, Solot e Clappit; il confronto col calendario lo fa
+  strumenti/stagioni.py nel giro dell'agente.
+
 ANAS e TV7 rifiutano le connessioni dall'estero (il cloud dell'agente, GitHub), da casa si aprono.
 
 Gira ogni 30 minuti dal cron del Pi (fino al 21 ott 2026 era sul K12, che cade con la corrente dello stanzino);
@@ -101,12 +105,12 @@ def contesto_asl():
     return ctx
 
 
-def testo(frammento):
+def testo(frammento, massimo=TESTO_MAX):
     s = re.sub(r"<(script|style|nav|svg|form)[^>]*>.*?</\1>", " ", frammento, flags=re.S | re.I)
     s = re.sub(r"<(br|/p|/h\d|/li|/div|/tr)[^>]*>", "\n", s, flags=re.I)
     s = html.unescape(re.sub(r"<[^>]+>", " ", s))
     righe = [r.strip() for r in re.sub(r"[ \t\xa0]+", " ", s).split("\n")]
-    return "\n".join(r for r in righe if r)[:TESTO_MAX]
+    return "\n".join(r for r in righe if r)[:massimo]
 
 
 def assoluto(base, href):
@@ -840,6 +844,190 @@ def imposta_posta():
     print(f"✓ casella {utente} collegata: dal prossimo giro (ogni 30 minuti) i comunicati vanno in comunicati.json")
 
 
+# ---------------------------------------------------------------- le stagioni di teatri e concerti
+
+# Le pagine ufficiali con le date degli spettacoli (voluto dal proprietario il 25 ott 2026: l'agente aggiunge al
+# calendario quelli che mancano e tiene aggiornate le stagioni; il confronto con eventi.json lo fa strumenti/stagioni.py
+# nel giro). Ogni voce è uno spettacolo in un giorno: `data` = il giorno dello spettacolo, `pagina` = l'indirizzo da
+# citare. Le schede dei singoli spettacoli si aprono una volta sola (stagioni-viste.json, fuori dall'archivio).
+STAGIONI = [   # (chi la pubblica, come si legge, indirizzo)
+    ("Città Spettacolo", "citta_spettacolo", "https://www.cittaspettacolo.it/teatro-comunale-vittorio-emmanuele/"),
+    ("Città Spettacolo", "citta_spettacolo", "https://www.cittaspettacolo.it/teatro-comunale-de-la-salle/"),
+    ("Accademia di Santa Sofia", "santa_sofia", "https://www.accademiadisantasofia.it/"),   # la stagione più recente
+    ("Teatro San Marco", "san_marco", "https://teatrosanmarco.com/spettacolo-sitemap.xml"),
+    ("Solot", "solot", "https://solot.it/feed/"),
+    ("Clappit (biglietteria)", "clappit", "https://www.clappit.com/elenco-date.html?doSearch=true&keyword=benevento"),
+]
+STAGIONI_VISTE = os.path.join(CARTELLA, "stagioni-viste.json")
+SETTIMANA = ["lun", "mar", "mer", "gio", "ven", "sab", "dom"]
+DATA_SPETTACOLO = re.compile(r"(?:\b(lunedì|martedì|mercoledì|giovedì|venerdì|sabato|domenica)\s+)?\b(\d{1,2})\s+("
+                             + "|".join(m[:3] for m in MESI) + r")[a-z]*\.?\s+(20\d\d)\b", re.I)
+
+
+def data_spettacolo(m):
+    """La data ISO da una corrispondenza di DATA_SPETTACOLO, e una nota. Se il giorno della settimana scritto non torna
+    con l'anno ma con quello dopo, vale l'anno dopo (25 ott 2026: la Solot scriveva «venerdì 22 gennaio 2026» per gli
+    spettacoli del 2027)."""
+    settimana, g, mese, anno = m.groups()
+    d = dt.date(int(anno), [x[:3] for x in MESI].index(mese.lower()[:3]) + 1, int(g))
+    if settimana and settimana.lower()[:3] in SETTIMANA:
+        w = SETTIMANA.index(settimana.lower()[:3])
+        if d.weekday() != w and dt.date(d.year + 1, d.month, min(d.day, 28 if d.month == 2 else 31)).weekday() == w:
+            return d.replace(year=d.year + 1).isoformat(), f"sulla pagina «{m.group(0)}»: di {settimana} è nel {d.year + 1}"
+    return d.isoformat(), ""
+
+
+def voce_stagione(chi, pagina, data, titolo, luogo, comune="Benevento", ora="", testo_="", nota="", link="", orari=""):
+    v = {"titolo": re.sub(r"\s+", " ", html.unescape(titolo)).strip(), "link": link or f"{pagina}#{data}",
+         "pagina": pagina, "data": data, "luogo": luogo, "comune": comune, "fonte": chi,
+         "testo": testo_.strip()[:800]}
+    if ora:
+        v["ora"] = ora.replace(".", ":").zfill(5)
+    if orari:   # più orari nello stesso giorno: niente «ora»
+        v["orari"] = orari
+    if nota:
+        v["nota"] = nota
+    return v
+
+
+def stagione_citta_spettacolo(chi, url, viste):
+    voci = []
+    for blocco in re.split(r'(?=<div class="swiper-slide")', scarica(url))[1:]:
+        m = re.match(r'<div class="swiper-slide" data-date="(\d{4}-\d\d-\d\d)"(?: data-time="(\d\d:\d\d)?")?', blocco)
+        a = re.search(r'<a href="([^"]+)"', blocco)
+        t = re.search(r"<h3>(.*?)</h3>", blocco, re.S)
+        if m and a and t:
+            luogo = "Teatro De La Salle" if "de-la-salle" in url else "Teatro Comunale Vittorio Emmanuele"
+            voci.append(voce_stagione(chi, a[1], m[1], t[1], luogo, ora=m[2] or "", link=a[1],
+                                      testo_=testo(blocco)))
+    return voci
+
+
+def stagione_santa_sofia(chi, url, viste):
+    """La pagina della stagione più recente: righe «TEATRO COMUNALE – Sabato 31 ottobre 2026 – ore 19:00», poi il titolo."""
+    pagine = re.findall(r'href="(https://www\.accademiadisantasofia\.it/stagione-(\d{4})-\d{4}/)"', scarica(url))
+    pagina = max(pagine, key=lambda p: p[1])[0]
+    righe = testo(scarica(pagina).split("<footer")[0], massimo=None).split("\n")
+    voci = []
+    for i, r in enumerate(righe):
+        m = DATA_SPETTACOLO.search(r)
+        if not m or not re.search(r"\bore\s+\d", r, re.I) or not r[:m.start()].strip(" –-"):   # «LUOGO – data – ore»
+            continue
+        data, nota = data_spettacolo(m)
+        dopo = []
+        for x in righe[i + 1:i + 8]:
+            if x.lower().startswith("acquista") or DATA_SPETTACOLO.search(x):
+                break
+            dopo.append(x)
+        ora = re.search(r"\bore\s+(\d{1,2}[:.]\d\d)", r, re.I)
+        link = f"{pagina}#{data}"
+        while any(v["link"] == link for v in voci):
+            link += "-2"
+        voci.append(voce_stagione(chi, pagina, data, " – ".join(dopo[:2]), r[:m.start()].strip(" –-").title(),
+                                  ora=ora[1] if ora else "", testo_="\n".join([r] + dopo), nota=nota, link=link))
+    return voci
+
+
+def scheda_spettacolo(link, viste, leggi_scheda):
+    """La voce di una scheda di spettacolo: si riapre solo dopo una settimana (se cambiano data o ora)."""
+    oggi = dt.date.today().isoformat()
+    vista = viste.get(link)
+    if not vista or vista.get("letta", "") < (dt.date.today() - dt.timedelta(days=7)).isoformat():
+        vista = viste[link] = {"letta": oggi, "voce": leggi_scheda(link)}
+    return vista["voce"]
+
+
+def stagione_san_marco(chi, url, viste):
+    def leggi_scheda(link):
+        b = scarica(link)
+        titolo = re.search(r'property="og:title" content="([^"]+)"', b)
+        t = testo(b[b.find("<h1"):], massimo=None).split("\n")
+        m = next((DATA_SPETTACOLO.search(r) for r in t[:12] if DATA_SPETTACOLO.search(r)), None)
+        if not m:
+            return None
+        ore = re.search(r"Orari spettacolo\n((?:\d{1,2}(?:[:.]\d\d)?\n)+)", "\n".join(t))
+        ore = [o if ":" in o or "." in o else o + ":00" for o in ore[1].split()] if ore else []
+        con = re.search(r"\nCon\n([^\n]+)", "\n".join(t))
+        data, nota = data_spettacolo(m)
+        return voce_stagione(chi, link, data, html.unescape(titolo[1]).split(" – ")[0] if titolo else t[0],
+                             "Teatro San Marco, via Traiano 35/37", link=link, nota=nota,
+                             ora=ore[0] if len(ore) == 1 else "", orari=" e ".join(ore) if len(ore) > 1 else "",
+                             testo_="\n".join(t[1:3] + ([f"Con {con[1]}"] if con else [])))
+    return [v for v in (scheda_spettacolo(l, viste, leggi_scheda)
+                        for l in re.findall(r"<loc>(https://teatrosanmarco\.com/spettacolo/[^<]+)</loc>", scarica(url)))
+            if v]
+
+
+def stagione_solot(chi, url, viste):
+    feed = ET.fromstring(scarica(url).encode())
+    titolo_feed = {it.findtext("link"): it.findtext("title") for it in feed.iter("item")}
+
+    def leggi_scheda(link):
+        t = testo(scarica(link).split("Scheda artistica", 1)[-1])
+        m = re.search(r"\nData\n([^\n]+)", t)
+        d = DATA_SPETTACOLO.search(m[1]) if m else None
+        if not d:
+            return None
+        ora = re.search(r"\nOre\s+(\d{1,2}[:.]\d\d)", t)
+        luogo = re.search(r"\nLuogo\n([^\n]+)", t)
+        data, nota = data_spettacolo(d)
+        return voce_stagione(chi, link, data, titolo_feed.get(link, link), luogo[1] if luogo else "Teatro Mulino Pacifico",
+                             link=link, nota=nota, ora=ora[1] if ora else "", testo_=t[:600])
+    return [v for v in (scheda_spettacolo(l, viste, leggi_scheda) for l in titolo_feed if "/stagione-teatrale/" in l)
+            if v]
+
+
+def stagione_clappit(chi, url, viste):
+    """Gli eventi in vendita su Clappit cercando «benevento»: dati strutturati (JSON-LD), solo nei Comuni della
+    provincia. L'ora no: Clappit la scrive a volte sbagliata (25 ott 2026: le 19 per tutti i concerti di Santa Sofia)."""
+    comuni = {c.lower() for c, _ in COMUNI}
+    voci = []
+    for b in re.findall(r'<script[^>]*application/ld\+json[^>]*>(.*?)</script>', scarica(url), re.S):
+        try:
+            d = json.loads(html.unescape(b.strip()))
+        except ValueError:
+            continue
+        for e in d if isinstance(d, list) else [d]:
+            if not isinstance(e, dict) or "Event" not in str(e.get("@type")) or not e.get("startDate"):
+                continue
+            luogo = e.get("location") or {}
+            luogo = luogo[0] if isinstance(luogo, list) else luogo
+            indirizzo = luogo.get("address") if isinstance(luogo.get("address"), dict) else {}
+            comune = (indirizzo.get("addressLocality") or "").strip()
+            if comune.lower() not in comuni:
+                continue
+            offerta = e.get("offers") or {}
+            offerta = offerta[0] if isinstance(offerta, list) and offerta else offerta
+            link = (offerta.get("url") if isinstance(offerta, dict) else "") or e.get("url") or url
+            data = e["startDate"][:10]
+            voci.append(voce_stagione(chi, link, data, e.get("name", ""), luogo.get("name", ""), comune=comune.title(),
+                                      link=f"{link}#{data}", testo_=re.sub(r"<[^>]+>", " ", e.get("description") or "")))
+    return voci
+
+
+def stagioni(vecchie):
+    try:
+        with open(STAGIONI_VISTE, encoding="utf-8") as f:
+            viste = json.load(f)
+    except (OSError, ValueError):
+        viste = {}
+    voci, lette, non_lette = [], [], []
+    for chi, come, url in STAGIONI:
+        try:
+            trovate = globals()[f"stagione_{come}"](chi, url, viste)
+            voci += trovate
+            lette.append(f"{chi}: {len(trovate)} date ({url})")
+        except Exception as e:   # una pagina che non va: restano le sue voci di prima
+            voci += [v for v in vecchie.values() if v.get("fonte") == chi and url.split("/")[2] in v.get("pagina", "")]
+            non_lette.append(f"{chi} ({url}): {type(e).__name__}: {e}"[:200])
+    if not PROVA:   # si ricordano solo le schede degli spettacoli ancora in elenco
+        attuali = {v["link"] for v in voci}
+        with open(STAGIONI_VISTE, "w", encoding="utf-8") as f:
+            json.dump({l: x for l, x in viste.items() if l in attuali or x.get("voce") is None}, f, ensure_ascii=False,
+                      indent=1)
+    return voci, {"stagioni_lette": lette, "stagioni_non_lette": non_lette}
+
+
 PROVA = False
 FONTI = {
     "anas": ("ANAS, comunicati della Campania", ANAS_LISTA, anas, 10),
@@ -850,6 +1038,8 @@ FONTI = {
     "regione": ("Regione Campania, comunicati stampa col testo", REGIONE, regione, 4),
     "comunicati": ("Comunicati arrivati per posta a comunicati@notiziebenevento.it", "comunicati@notiziebenevento.it",
                    posta, 7),
+    "stagioni": ("Stagioni di teatri e concerti: le date ufficiali degli spettacoli", "pagine ufficiali delle stagioni",
+                 stagioni, 1),
 }
 
 
@@ -875,6 +1065,8 @@ def leggi(nome, adesso):
         dati["esito"] = f"non raggiungibile: {type(e).__name__}: {e}"[:300]
         dati["ultima_lettura_riuscita"] = prima.get("ultima_lettura_riuscita", "")
     tutte = {v["link"]: v for v in list(vecchie.values()) + nuove}
+    if nome == "stagioni" and dati["esito"].startswith("letta"):   # solo le date in elenco adesso (uno spettacolo
+        tutte = {v["link"]: v for v in nuove}                         # spostato non resta anche nel giorno vecchio)
     if nome == "comunicati":   # le voci di prima che non sono comunicati (rimbalzi…) escono; a tutte il loro id
         if "scartate" not in dati:
             dati["scartate"] = prima.get("scartate", [])
@@ -886,7 +1078,7 @@ def leggi(nome, adesso):
                 v.setdefault("id", id_posta(l))
     limite = (adesso - dt.timedelta(days=giorni)).date().isoformat()
     dati["voci"] = sorted((v for v in tutte.values() if v.get("data", "")[:10] >= limite),
-                          key=lambda v: v.get("data", ""), reverse=True)[:200 if nome == "comuni" else 80]
+                          key=lambda v: v.get("data", ""), reverse=nome != "stagioni")[:200 if nome in ("comuni", "stagioni") else 80]
     if nome == "comunicati" and not PROVA:
         pulisci_allegati(dati["voci"])
     return dati
@@ -918,6 +1110,11 @@ incompleto. La casella dei comunicati la legge ogni 5 minuti.
   (`scartate`: solo i loro riferimenti). Appena ne arriva uno il Pi fa partire il giro lampo (COMUNICATI.md del sito).
   `immagini` (dal 25 ott 2026): le immagini grandi della mail e la prima pagina dei PDF di 1-2 pagine, in JPEG nella
   cartella `allegati/<id>/` (`file`, `da` = nome dell'allegato, `larghezza`, `altezza`): le locandine degli eventi.
+- `stagioni.json` (dal 25 ott 2026): le date degli spettacoli scritte sulle pagine ufficiali delle stagioni (Città
+  Spettacolo, Accademia di Santa Sofia, Teatro San Marco, Solot, la biglietteria Clappit), da ieri in poi: `data` = il
+  giorno dello spettacolo, `ora` o `orari` se scritti, `titolo`, `luogo`, `comune`, `fonte` (chi la pubblica),
+  `pagina` (da citare), `testo`, `nota` (se l'anno è stato corretto col giorno della settimana). `stagioni_lette` e
+  `stagioni_non_lette`. Quali mancano nel calendario lo dice `strumenti/stagioni.py` del sito.
 
 In ogni file: `controllato` = ultimo tentativo, `esito`, `ultima_lettura_riuscita`, `voci` (titolo, link, data,
 testo). Il `link` è quello originale da citare tra le fonti. Archivio privato: i testi restano di chi li ha scritti.

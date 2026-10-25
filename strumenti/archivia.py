@@ -650,6 +650,9 @@ def controlla_eventi(ev, err):
     if not isinstance(ev.get("eventi"), list):
         err.append("eventi.json: manca la lista eventi")
         return
+    esc = ev.get("stagioni_escluse", {})   # le date ufficiali da non riproporre (strumenti/stagioni.py)
+    if not isinstance(esc, dict) or not all(isinstance(m, str) and m.strip() for m in esc.values()):
+        err.append("eventi.json: «stagioni_escluse» dev'essere {\"chiave\": \"motivo\"} (la chiave la stampa strumenti/stagioni.py)")
     temi = temi_foto()
     for x in ev["eventi"]:
         w = "evento " + str(x.get("id", "?"))

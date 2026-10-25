@@ -712,6 +712,12 @@
       "L'eco del Sannio",
       "NTR24"
      ]
+    },
+    {
+     "testo": "Inizio alle 19.",
+     "fonti": [
+      "Accademia di Santa Sofia"
+     ]
     }
    ],
    "fonti": [
@@ -732,10 +738,17 @@
      "titolo": "Stagione Accademia S. Sofia: a Benevento Neri per Caso, Autieri, Francini",
      "url": "https://www.ottopagine.it/bn/cultura/438985/stagione-accademia-s-sofia-a-benevento-neri-per-caso-autieri-francini.shtml",
      "data": "22 set"
+    },
+    {
+     "nome": "Accademia di Santa Sofia",
+     "titolo": "Stagione 2026/2027",
+     "url": "https://www.accademiadisantasofia.it/stagione-2026-2027/",
+     "data": "senza data (letta 25 ott)"
     }
    ],
    "immagine": "concerto",
-   "foto": "concerto"
+   "foto": "concerto",
+   "ora": "19:00"
   },
   {
    "id": "eterno-enigma-teatro-romano-benevento-2026",
@@ -1335,7 +1348,7 @@
    "titolo": "Stefano Di Battista Quintet: «Composers – da Rota a Morricone»",
    "tipo": "concerto",
    "inizio": "2026-11-28",
-   "luogo": "Sede da annunciare",
+   "luogo": "Teatro Comunale «Vittorio Emmanuele»",
    "comune": "Benevento",
    "zona": "benevento",
    "organizzatore": "Accademia di Santa Sofia",
@@ -1345,10 +1358,16 @@
    "breve": "Il sassofonista Stefano Di Battista e il suo quintetto suonano in chiave jazz le musiche da film di Nino Rota ed Ennio Morricone.",
    "descrizione": [
     {
-     "testo": "Fa parte della stagione 2026-2027 dell'Accademia di Santa Sofia. Lo Stefano Di Battista Quintet presenta «Composers», un omaggio ai maestri Nino Rota ed Ennio Morricone. Gli annunci non dicono ancora la sede. I biglietti si comprano su clappit.it e alla libreria Ubik LiberiTutti di Benevento.",
+     "testo": "Fa parte della stagione 2026-2027 dell'Accademia di Santa Sofia. Lo Stefano Di Battista Quintet presenta «Composers», un omaggio ai maestri Nino Rota ed Ennio Morricone. I biglietti si comprano su clappit.it e alla libreria Ubik LiberiTutti di Benevento.",
      "fonti": [
       "L'eco del Sannio",
       "NTR24"
+     ]
+    },
+    {
+     "testo": "Al Teatro Comunale, inizio alle 19.",
+     "fonti": [
+      "Accademia di Santa Sofia"
      ]
     }
    ],
@@ -1364,10 +1383,17 @@
      "titolo": "Accademia di Santa Sofia, sold out campagna abbonamenti: al via la vendita dei biglietti per i singoli eventi",
      "url": "https://www.ntr24.tv/2026/10/12/accademia-di-santa-sofia-sold-out-campagna-abbonamenti-al-via-la-vendita-dei-biglietti-per-i-singoli-eventi/",
      "data": "12 ott"
+    },
+    {
+     "nome": "Accademia di Santa Sofia",
+     "titolo": "Stagione 2026/2027",
+     "url": "https://www.accademiadisantasofia.it/stagione-2026-2027/",
+     "data": "senza data (letta 25 ott)"
     }
    ],
    "immagine": "jazz",
-   "foto": "jazz"
+   "foto": "jazz",
+   "ora": "19:00"
   },
   {
    "id": "cio-che-vide-il-maggiordomo-teatro-comunale-benevento-2026",
@@ -1743,7 +1769,7 @@
    "titolo": "Nuova Compagnia di Canto Popolare: «Natale in… Compagnia»",
    "tipo": "concerto",
    "inizio": "2026-12-20",
-   "luogo": "Sede da annunciare",
+   "luogo": "Teatro Comunale «Vittorio Emmanuele»",
    "comune": "Benevento",
    "zona": "benevento",
    "organizzatore": "Accademia di Santa Sofia",
@@ -1753,10 +1779,16 @@
    "breve": "Concerto di Natale della Nuova Compagnia di Canto Popolare: un viaggio nella musica tradizionale e devozionale del Sud Italia.",
    "descrizione": [
     {
-     "testo": "È l'appuntamento natalizio della stagione 2026-2027 dell'Accademia di Santa Sofia. La Nuova Compagnia di Canto Popolare propone «Natale in… Compagnia», un viaggio nella tradizione musicale e devozionale del Sud Italia. La sede non è ancora indicata. I biglietti si comprano su clappit.it e alla libreria Ubik LiberiTutti di Benevento.",
+     "testo": "È l'appuntamento natalizio della stagione 2026-2027 dell'Accademia di Santa Sofia. La Nuova Compagnia di Canto Popolare propone «Natale in… Compagnia», un viaggio nella tradizione musicale e devozionale del Sud Italia. I biglietti si comprano su clappit.it e alla libreria Ubik LiberiTutti di Benevento.",
      "fonti": [
       "Ottopagine",
       "NTR24"
+     ]
+    },
+    {
+     "testo": "Al Teatro Comunale, inizio alle 19.",
+     "fonti": [
+      "Accademia di Santa Sofia"
      ]
     }
    ],
@@ -1772,10 +1804,17 @@
      "titolo": "Accademia di Santa Sofia, sold out campagna abbonamenti: al via la vendita dei biglietti per i singoli eventi",
      "url": "https://www.ntr24.tv/2026/10/12/accademia-di-santa-sofia-sold-out-campagna-abbonamenti-al-via-la-vendita-dei-biglietti-per-i-singoli-eventi/",
      "data": "12 ott"
+    },
+    {
+     "nome": "Accademia di Santa Sofia",
+     "titolo": "Stagione 2026/2027",
+     "url": "https://www.accademiadisantasofia.it/stagione-2026-2027/",
+     "data": "senza data (letta 25 ott)"
     }
    ],
    "immagine": "mandolino",
-   "foto": "mandolino-2"
+   "foto": "mandolino-2",
+   "ora": "19:00"
   },
   {
    "id": "presepe-vivente-casali-faicchio-2026",
@@ -1862,6 +1901,1096 @@
    ],
    "immagine": "teatro-ragazzi",
    "foto": "teatro-ragazzi"
+  },
+  {
+   "id": "avaro-solot-mulino-pacifico-benevento-2027",
+   "titolo": "«L'Avaro» di Molière al Teatro Mulino Pacifico (Obiettivo T)",
+   "tipo": "teatro",
+   "inizio": "2027-01-08",
+   "ora": "20:30",
+   "luogo": "Teatro Mulino Pacifico, via Appio Claudio 17",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "prezzo": "15 euro",
+   "organizzatore": "Solot Compagnia Stabile di Benevento",
+   "artisti": [
+    "Mario Autore",
+    "Chiara Vitiello",
+    "Franco Nappi"
+   ],
+   "breve": "La commedia di Molière sull'avaro Arpagone, che pensa più al suo tesoro che ai figli, riscritta e diretta da Mario Autore.",
+   "descrizione": [
+    {
+     "testo": "Drammaturgia, regia e musiche di Mario Autore, a partire da Molière; con Mario Autore, Chiara Vitiello e Franco Nappi. Biglietto 15 euro, informazioni al 338 145 76 88. Inizio alle 20.30.",
+     "fonti": [
+      "Solot"
+     ]
+    },
+    {
+     "testo": "Fa parte della stagione «Obiettivo T 2026/2027» della Solot Compagnia Stabile di Benevento.",
+     "fonti": [
+      "Benevento Turismo"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "nome": "Solot",
+     "titolo": "L’AVARO",
+     "url": "https://solot.it/stagione-teatrale/obiettivo-t-2026-2027/lavaro/",
+     "data": "senza data (letta 25 ott)"
+    },
+    {
+     "nome": "Benevento Turismo",
+     "titolo": "\"Obiettivo T\", la Solot presenta la nuova stagione teatrale",
+     "url": "https://beneventoturismo.it/obiettivo-t-la-solot-presenta-la-nuova-stagione-teatrale/",
+     "data": "set (giorno non scritto)"
+    }
+   ],
+   "immagine": "teatro",
+   "foto": "teatro-19"
+  },
+  {
+   "id": "buccirosso-esorcismo-don-tonino-teatro-comunale-benevento-2027",
+   "titolo": "Carlo Buccirosso in «L'esorcismo di Don Tonino» al Teatro Comunale",
+   "tipo": "teatro",
+   "inizio": "2027-01-12",
+   "ora": "20:45",
+   "luogo": "Teatro Comunale «Vittorio Emmanuele»",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "organizzatore": "Fondazione Benevento Città Spettacolo",
+   "artisti": [
+    "Carlo Buccirosso"
+   ],
+   "breve": "Carlo Buccirosso è un parroco chiamato in una casa dove una ragazza sembra posseduta: una commedia tra fede, superstizione e segreti di famiglia.",
+   "descrizione": [
+    {
+     "testo": "Fa parte della stagione «Città Spettacolo Teatro» 2026/2027. Don Tonino, parroco tranquillo, va a casa di una ragazza che la madre crede vittima di una presenza soprannaturale e trova una famiglia piena di dolori e segreti. Sipario alle 20.45.",
+     "fonti": [
+      "Città Spettacolo"
+     ]
+    },
+    {
+     "testo": "Biglietti alla biglietteria di Città Spettacolo Teatro, All Net Service, via Lungocalore Manfredi di Svevia 25, telefono 0824 42711.",
+     "fonti": [
+      "Città Spettacolo"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "nome": "Città Spettacolo",
+     "titolo": "Carlo Buccirosso in “L’esorcismo di Don Tonino”",
+     "url": "https://www.cittaspettacolo.it/tutti-gli-eventi/carlo-buccirosso-in-lesorcismo-di-don-tonino/",
+     "data": "senza data (letta 25 ott)"
+    }
+   ],
+   "immagine": "teatro",
+   "foto": "teatro-9"
+  },
+  {
+   "id": "viva-la-danza-orchestra-santa-sofia-2027",
+   "titolo": "«Viva la danza» con l'Orchestra dell'Accademia di Santa Sofia",
+   "tipo": "concerto",
+   "inizio": "2027-01-16",
+   "ora": "19:00",
+   "luogo": "Auditorium di Sant'Agostino",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "organizzatore": "Accademia di Santa Sofia",
+   "artisti": [
+    "Orchestra dell'Accademia di Santa Sofia"
+   ],
+   "breve": "Un concerto di brani famosi e brillanti: musiche di Delibes, Nino Rota, Čajkovskij e Johann Strauss figlio.",
+   "descrizione": [
+    {
+     "testo": "Fa parte della stagione 2026/2027 dell'Accademia di Santa Sofia. L'orchestra suona musiche di Léo Delibes, Nino Rota, Pëtr Il'ič Čajkovskij e Johann Strauss figlio. Inizio alle 19.",
+     "fonti": [
+      "Accademia di Santa Sofia"
+     ]
+    },
+    {
+     "testo": "Biglietti su clappit.it e alla libreria Ubik LiberiTutti, via Lungosabato Bacchelli 5, telefono 0824 1772484.",
+     "fonti": [
+      "Accademia di Santa Sofia"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "nome": "Accademia di Santa Sofia",
+     "titolo": "Stagione 2026/2027",
+     "url": "https://www.accademiadisantasofia.it/stagione-2026-2027/",
+     "data": "senza data (letta 25 ott)"
+    }
+   ],
+   "immagine": "orchestra",
+   "foto": "orchestra-6"
+  },
+  {
+   "id": "facimme-e-cunti-solot-mulino-pacifico-benevento-2027",
+   "titolo": "«Facimme 'e cunti» al Teatro Mulino Pacifico (Obiettivo T)",
+   "tipo": "teatro",
+   "inizio": "2027-01-22",
+   "ora": "20:30",
+   "luogo": "Teatro Mulino Pacifico, via Appio Claudio 17",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "prezzo": "15 euro",
+   "organizzatore": "Solot Compagnia Stabile di Benevento",
+   "artisti": [
+    "Daniela Ioia",
+    "Antimo Casertano"
+   ],
+   "breve": "Due genitori che non riescono a far dormire il figlio si sfidano a raccontare le fiabe del «Cunto de li cunti» di Basile.",
+   "descrizione": [
+    {
+     "testo": "Testo e regia di Antimo Casertano, dalle novelle del «Cunto de li cunti» di Giambattista Basile; con Daniela Ioia e Antimo Casertano. Biglietto 15 euro, informazioni al 338 145 76 88. Inizio alle 20.30.",
+     "fonti": [
+      "Solot"
+     ]
+    },
+    {
+     "testo": "Fa parte della stagione «Obiettivo T 2026/2027» della Solot Compagnia Stabile di Benevento.",
+     "fonti": [
+      "Benevento Turismo"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "nome": "Solot",
+     "titolo": "FACIMME ‘E CUNTI",
+     "url": "https://solot.it/stagione-teatrale/obiettivo-t-2026-2027/facimme-e-cunti/",
+     "data": "senza data (letta 25 ott)"
+    },
+    {
+     "nome": "Benevento Turismo",
+     "titolo": "\"Obiettivo T\", la Solot presenta la nuova stagione teatrale",
+     "url": "https://beneventoturismo.it/obiettivo-t-la-solot-presenta-la-nuova-stagione-teatrale/",
+     "data": "set (giorno non scritto)"
+    }
+   ],
+   "immagine": "teatro",
+   "foto": "teatro-10"
+  },
+  {
+   "id": "area-medina-scio-live-teatro-san-marco-benevento-2027",
+   "titolo": "Gli Area Medina e lo «Sciò Live» di Pino Daniele al Teatro San Marco",
+   "tipo": "concerto",
+   "inizio": "2027-01-22",
+   "ora": "21:00",
+   "luogo": "Teatro San Marco, via Traiano 35/37",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "organizzatore": "Teatro San Marco",
+   "artisti": [
+    "Area Medina"
+   ],
+   "breve": "Gli Area Medina suonano per intero la scaletta di «Sciò Live», il disco dal vivo di Pino Daniele del 1984.",
+   "descrizione": [
+    {
+     "testo": "Gli Area Medina, che da oltre vent'anni suonano le canzoni di Pino Daniele, tornano a Benevento dopo tre anni con la scaletta originale di «Sciò Live»: da «Napule è» a «Quanno chiove», da «Yes I Know My Way» a «Terra mia». Inizio alle 21, durata circa due ore.",
+     "fonti": [
+      "Teatro San Marco"
+     ]
+    },
+    {
+     "testo": "Biglietti alla biglietteria dell'Accademia delle Opere, via Piermarini 46 (9-13 e 16.30-20), telefono 375 120 4538.",
+     "fonti": [
+      "Teatro San Marco"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "nome": "Teatro San Marco",
+     "titolo": "SCIO’ dal vivo",
+     "url": "https://teatrosanmarco.com/spettacolo/scio-dal-vivo/",
+     "data": "senza data (letta 25 ott)"
+    }
+   ],
+   "immagine": "concerto",
+   "foto": "concerto-10"
+  },
+  {
+   "id": "piccole-donne-musical-teatro-comunale-benevento-2027",
+   "titolo": "«Piccole Donne», il musical al Teatro Comunale",
+   "tipo": "teatro",
+   "inizio": "2027-01-27",
+   "ora": "20:45",
+   "luogo": "Teatro Comunale «Vittorio Emmanuele»",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "organizzatore": "Fondazione Benevento Città Spettacolo",
+   "breve": "Il romanzo di Louisa May Alcott diventa un musical: le quattro sorelle March e Jo, che vuole fare la scrittrice.",
+   "descrizione": [
+    {
+     "testo": "Fa parte della stagione «Città Spettacolo Teatro» 2026/2027. Il musical racconta le sorelle Meg, Amy, Beth e Jo March nell'America dell'Ottocento, nella versione italiana di Gianfranco Vergoni con regia e coreografie di Fabrizio Angelini. Sipario alle 20.45.",
+     "fonti": [
+      "Città Spettacolo"
+     ]
+    },
+    {
+     "testo": "Biglietti alla biglietteria di Città Spettacolo Teatro, All Net Service, via Lungocalore Manfredi di Svevia 25, telefono 0824 42711.",
+     "fonti": [
+      "Città Spettacolo"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "nome": "Città Spettacolo",
+     "titolo": "Piccole Donne, il Musical di Broadway",
+     "url": "https://www.cittaspettacolo.it/tutti-gli-eventi/piccole-donne-il-musical-di-broadway/",
+     "data": "senza data (letta 25 ott)"
+    }
+   ],
+   "immagine": "musical",
+   "foto": "musical-7"
+  },
+  {
+   "id": "tango-buenos-aires-ayala-santa-sofia-2027",
+   "titolo": "«Tango Buenos Aires» della Marcos Ayala Tango Company al Teatro Comunale",
+   "tipo": "danza",
+   "inizio": "2027-01-30",
+   "ora": "19:00",
+   "luogo": "Teatro Comunale «Vittorio Emmanuele»",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "organizzatore": "Accademia di Santa Sofia",
+   "artisti": [
+    "Marcos Ayala Tango Company"
+   ],
+   "breve": "La storia del tango argentino in quadri di danza e musica, con la compagnia del ballerino Marcos Ayala.",
+   "descrizione": [
+    {
+     "testo": "Fa parte della stagione 2026/2027 dell'Accademia di Santa Sofia. Uno spettacolo ispirato all'età d'oro del tango, sotto la direzione di Marcos Ayala, fatto di quadri di danza e musica. Inizio alle 19.",
+     "fonti": [
+      "Accademia di Santa Sofia"
+     ]
+    },
+    {
+     "testo": "Biglietti su clappit.it e alla libreria Ubik LiberiTutti, via Lungosabato Bacchelli 5, telefono 0824 1772484.",
+     "fonti": [
+      "Accademia di Santa Sofia"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "nome": "Accademia di Santa Sofia",
+     "titolo": "Stagione 2026/2027",
+     "url": "https://www.accademiadisantasofia.it/stagione-2026-2027/",
+     "data": "senza data (letta 25 ott)"
+    }
+   ],
+   "immagine": "danza",
+   "foto": "danza-3"
+  },
+  {
+   "id": "otello-giacomo-giorgio-teatro-comunale-benevento-2027",
+   "titolo": "«Otello» con Giacomo Giorgio al Teatro Comunale",
+   "tipo": "teatro",
+   "inizio": "2027-02-03",
+   "ora": "20:45",
+   "luogo": "Teatro Comunale «Vittorio Emmanuele»",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "organizzatore": "Fondazione Benevento Città Spettacolo",
+   "artisti": [
+    "Giacomo Giorgio",
+    "Claudia Tosoni",
+    "Gerardo Maffei",
+    "Diego Migeni",
+    "Salvatore Rancatore",
+    "Andrea Papale",
+    "Dalia Aly"
+   ],
+   "breve": "L'Otello di Shakespeare con la regia di Giorgio Pasotti e il testo di Dacia Maraini; Otello è Giacomo Giorgio, attore di «Mare fuori».",
+   "descrizione": [
+    {
+     "testo": "Fa parte della stagione «Città Spettacolo Teatro» 2026/2027. Regia di Giorgio Pasotti, drammaturgia di Dacia Maraini: la gelosia e il possesso che portano Otello a uccidere Desdemona, raccontati come una storia di oggi. Con Giacomo Giorgio, Claudia Tosoni, Gerardo Maffei, Diego Migeni, Salvatore Rancatore, Andrea Papale e Dalia Aly. Sipario alle 20.45.",
+     "fonti": [
+      "Città Spettacolo"
+     ]
+    },
+    {
+     "testo": "Biglietti alla biglietteria di Città Spettacolo Teatro, All Net Service, via Lungocalore Manfredi di Svevia 25, telefono 0824 42711.",
+     "fonti": [
+      "Città Spettacolo"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "nome": "Città Spettacolo",
+     "titolo": "Giacomo Giorgio e Giorgio Pasotti in “Otello”",
+     "url": "https://www.cittaspettacolo.it/tutti-gli-eventi/giacomo-giorgio-e-giorgio-pasotti-in-otello/",
+     "data": "senza data (letta 25 ott)"
+    }
+   ],
+   "immagine": "teatro",
+   "foto": "teatro-11"
+  },
+  {
+   "id": "luci-della-citta-solot-mulino-pacifico-benevento-2027",
+   "titolo": "«Luci della città. Stefano Cucchi» al Teatro Mulino Pacifico (Obiettivo T)",
+   "tipo": "teatro",
+   "inizio": "2027-02-05",
+   "ora": "20:30",
+   "luogo": "Teatro Mulino Pacifico, via Appio Claudio 17",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "prezzo": "15 euro",
+   "organizzatore": "Solot Compagnia Stabile di Benevento",
+   "artisti": [
+    "Francesca De Nicolais"
+   ],
+   "breve": "Le ultime ore di Stefano Cucchi raccontate da un'attrice sola in scena, con la figura di Charlot.",
+   "descrizione": [
+    {
+     "testo": "Di Pino Carbone e Francesca De Nicolais, regia di Pino Carbone, con Francesca De Nicolais; produzione Progetto Nichel, Premio ByPass 2014. Lo spettacolo è nato nel 2013 dopo l'incontro con i genitori di Stefano Cucchi. Biglietto 15 euro, informazioni al 338 145 76 88. Inizio alle 20.30.",
+     "fonti": [
+      "Solot"
+     ]
+    },
+    {
+     "testo": "Fa parte della stagione «Obiettivo T 2026/2027» della Solot Compagnia Stabile di Benevento.",
+     "fonti": [
+      "Benevento Turismo"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "nome": "Solot",
+     "titolo": "LUCI DELLA CITTA’",
+     "url": "https://solot.it/stagione-teatrale/obiettivo-t-2026-2027/luci-della-citta/",
+     "data": "senza data (letta 25 ott)"
+    },
+    {
+     "nome": "Benevento Turismo",
+     "titolo": "\"Obiettivo T\", la Solot presenta la nuova stagione teatrale",
+     "url": "https://beneventoturismo.it/obiettivo-t-la-solot-presenta-la-nuova-stagione-teatrale/",
+     "data": "set (giorno non scritto)"
+    }
+   ],
+   "immagine": "teatro",
+   "foto": "teatro-18"
+  },
+  {
+   "id": "madre-per-sempre-laurito-teatro-san-marco-benevento-2027",
+   "titolo": "Marisa Laurito e Giorgia Würth in «Madre per sempre» al Teatro San Marco",
+   "tipo": "teatro",
+   "inizio": "2027-02-05",
+   "ora": "21:00",
+   "luogo": "Teatro San Marco, via Traiano 35/37",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "organizzatore": "Teatro San Marco",
+   "artisti": [
+    "Marisa Laurito",
+    "Giorgia Würth"
+   ],
+   "breve": "Due donne molto diverse decidono di costruire insieme una famiglia: una commedia sulla maternità di Marta Barceló.",
+   "descrizione": [
+    {
+     "testo": "Il testo della drammaturga catalana Marta Barceló, regia di Siddhartha Prestinari: una donna vicina alla pensione e una che lavora nel cinema e nella televisione creano una famiglia «scelta». Con Marisa Laurito e Giorgia Würth. Inizio alle 21, durata 90 minuti.",
+     "fonti": [
+      "Teatro San Marco"
+     ]
+    },
+    {
+     "testo": "Biglietti alla biglietteria dell'Accademia delle Opere, via Piermarini 46 (9-13 e 16.30-20), telefono 375 120 4538.",
+     "fonti": [
+      "Teatro San Marco"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "nome": "Teatro San Marco",
+     "titolo": "Madre per Sempre",
+     "url": "https://teatrosanmarco.com/spettacolo/madre-per-sempre/",
+     "data": "senza data (letta 25 ott)"
+    }
+   ],
+   "immagine": "teatro",
+   "foto": "teatro-16"
+  },
+  {
+   "id": "sindaco-rione-sanita-gleijeses-teatro-comunale-benevento-2027",
+   "titolo": "«Il sindaco del Rione Sanità» con Geppy Gleijeses al Teatro Comunale",
+   "tipo": "teatro",
+   "inizio": "2027-02-15",
+   "ora": "20:45",
+   "luogo": "Teatro Comunale «Vittorio Emmanuele»",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "organizzatore": "Fondazione Benevento Città Spettacolo",
+   "artisti": [
+    "Geppy Gleijeses",
+    "Pino Micol",
+    "Ciro Capano"
+   ],
+   "breve": "La commedia di Eduardo De Filippo su Antonio Barracano, l'uomo che fa giustizia da sé, con la regia e l'interpretazione di Geppy Gleijeses.",
+   "descrizione": [
+    {
+     "testo": "Fa parte della stagione «Città Spettacolo Teatro» 2026/2027. Geppy Gleijeses, allievo di Eduardo, firma la regia e recita con Pino Micol (il medico) e Ciro Capano (Arturo Santaniello). Lo spettacolo è sostenuto dal Teatro Nazionale di Napoli. Sipario alle 20.45.",
+     "fonti": [
+      "Città Spettacolo"
+     ]
+    },
+    {
+     "testo": "Biglietti alla biglietteria di Città Spettacolo Teatro, All Net Service, via Lungocalore Manfredi di Svevia 25, telefono 0824 42711.",
+     "fonti": [
+      "Città Spettacolo"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "nome": "Città Spettacolo",
+     "titolo": "Geppy Gleijeses in “Il sindaco del Rione Sanità”",
+     "url": "https://www.cittaspettacolo.it/tutti-gli-eventi/geppy-gleijeses-in-il-sindaco-del-rione-sanita/",
+     "data": "senza data (letta 25 ott)"
+    }
+   ],
+   "immagine": "teatro",
+   "foto": "teatro-14"
+  },
+  {
+   "id": "caduta-nella-rete-solot-mulino-pacifico-benevento-2027",
+   "titolo": "«Caduta nella rete» al Teatro Mulino Pacifico (Obiettivo T)",
+   "tipo": "teatro",
+   "inizio": "2027-02-19",
+   "ora": "20:30",
+   "luogo": "Teatro Mulino Pacifico, via Appio Claudio 17",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "prezzo": "15 euro",
+   "organizzatore": "Solot Compagnia Stabile di Benevento",
+   "artisti": [
+    "Gigliola De Feo",
+    "Diego Consiglio",
+    "Ester Chica",
+    "Pasquale Donnarumma"
+   ],
+   "breve": "Internet si spegne in tutto il mondo e un misterioso «Sistema» promette di riaccenderlo in cambio dell'umanità delle persone.",
+   "descrizione": [
+    {
+     "testo": "Testo di Ester Chica; con Gigliola De Feo, Diego Consiglio, Ester Chica e Pasquale Donnarumma. Agata e tre amici devono scegliere se rinunciare a sé stessi per riavere la rete, tra atmosfere alla Orwell e ironia. Biglietto 15 euro, informazioni al 338 145 76 88. Inizio alle 20.30.",
+     "fonti": [
+      "Solot"
+     ]
+    },
+    {
+     "testo": "Fa parte della stagione «Obiettivo T 2026/2027» della Solot Compagnia Stabile di Benevento.",
+     "fonti": [
+      "Benevento Turismo"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "nome": "Solot",
+     "titolo": "CADUTA NELLA RETE",
+     "url": "https://solot.it/stagione-teatrale/obiettivo-t-2026-2027/caduta-nella-rete/",
+     "data": "senza data (letta 25 ott)"
+    },
+    {
+     "nome": "Benevento Turismo",
+     "titolo": "\"Obiettivo T\", la Solot presenta la nuova stagione teatrale",
+     "url": "https://beneventoturismo.it/obiettivo-t-la-solot-presenta-la-nuova-stagione-teatrale/",
+     "data": "set (giorno non scritto)"
+    }
+   ],
+   "immagine": "teatro",
+   "foto": "teatro-12"
+  },
+  {
+   "id": "riflessi-d-europa-squitieri-santa-sofia-2027",
+   "titolo": "«Riflessi d'Europa» con il violoncellista Danilo Squitieri e l'Accademia di Santa Sofia",
+   "tipo": "concerto",
+   "inizio": "2027-02-20",
+   "ora": "19:00",
+   "luogo": "Auditorium di Sant'Agostino",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "organizzatore": "Accademia di Santa Sofia",
+   "artisti": [
+    "Danilo Squitieri",
+    "Orchestra dell'Accademia di Santa Sofia"
+   ],
+   "breve": "Il Concerto per violoncello di Saint-Saëns e musiche inglesi di Warlock e Holst, con il solista Danilo Squitieri.",
+   "descrizione": [
+    {
+     "testo": "Fa parte della stagione 2026/2027 dell'Accademia di Santa Sofia. Danilo Squitieri, prima parte dell'orchestra, guida un programma tra Francia e Inghilterra: il Concerto per violoncello e orchestra di Camille Saint-Saëns, la Capriol Suite di Peter Warlock e la St Paul's Suite di Gustav Holst. Inizio alle 19.",
+     "fonti": [
+      "Accademia di Santa Sofia"
+     ]
+    },
+    {
+     "testo": "Biglietti su clappit.it e alla libreria Ubik LiberiTutti, via Lungosabato Bacchelli 5, telefono 0824 1772484.",
+     "fonti": [
+      "Accademia di Santa Sofia"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "nome": "Accademia di Santa Sofia",
+     "titolo": "Stagione 2026/2027",
+     "url": "https://www.accademiadisantasofia.it/stagione-2026-2027/",
+     "data": "senza data (letta 25 ott)"
+    }
+   ],
+   "immagine": "violoncello",
+   "foto": "violoncello-3"
+  },
+  {
+   "id": "romeo-e-giulietta-margot-santa-sofia-2027",
+   "titolo": "«Romeo e Giulietta» della Margot Theatre Company al Teatro Comunale",
+   "tipo": "teatro",
+   "inizio": "2027-02-27",
+   "ora": "19:00",
+   "luogo": "Teatro Comunale «Vittorio Emmanuele»",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "organizzatore": "Accademia di Santa Sofia",
+   "artisti": [
+    "Margot Theatre Company"
+   ],
+   "breve": "La tragedia di Shakespeare in una versione essenziale con otto personaggi e le musiche degli Ashram.",
+   "descrizione": [
+    {
+     "testo": "Fa parte della stagione 2026/2027 dell'Accademia di Santa Sofia. La Margot Theatre Company porta in scena «Romeo e Giulietta» con la regia di Valentina Cognatti, ridotta a otto personaggi e con le musiche degli Ashram. Inizio alle 19.",
+     "fonti": [
+      "Accademia di Santa Sofia"
+     ]
+    },
+    {
+     "testo": "Biglietti su clappit.it e alla libreria Ubik LiberiTutti, via Lungosabato Bacchelli 5, telefono 0824 1772484.",
+     "fonti": [
+      "Accademia di Santa Sofia"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "nome": "Accademia di Santa Sofia",
+     "titolo": "Stagione 2026/2027",
+     "url": "https://www.accademiadisantasofia.it/stagione-2026-2027/",
+     "data": "senza data (letta 25 ott)"
+    }
+   ],
+   "immagine": "teatro",
+   "foto": "teatro-15"
+  },
+  {
+   "id": "quasi-quasi-ci-ritento-caiazzo-teatro-san-marco-benevento-2027",
+   "titolo": "Paolo Caiazzo in «Quasi quasi ci ritento» al Teatro San Marco",
+   "tipo": "teatro",
+   "inizio": "2027-03-03",
+   "ora": "21:00",
+   "luogo": "Teatro San Marco, via Traiano 35/37",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "organizzatore": "Teatro San Marco",
+   "artisti": [
+    "Paolo Caiazzo"
+   ],
+   "breve": "Una commedia di Paolo Caiazzo tra viaggi nel tempo e nostalgia degli anni Novanta: Lorenzo vuole tornare al 1994 per cambiare una scelta.",
+   "descrizione": [
+    {
+     "testo": "La sera dei suoi sessant'anni Lorenzo riceve la visita di Maya, una donna che arriva dal futuro, e pensa solo a tornare alla sera della finale Italia-Brasile del 1994. Testo, regia e interpretazione di Paolo Caiazzo. Inizio alle 21, durata 90 minuti.",
+     "fonti": [
+      "Teatro San Marco"
+     ]
+    },
+    {
+     "testo": "Biglietti alla biglietteria dell'Accademia delle Opere, via Piermarini 46 (9-13 e 16.30-20), telefono 375 120 4538.",
+     "fonti": [
+      "Teatro San Marco"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "nome": "Teatro San Marco",
+     "titolo": "Quasi Quasi ci ritento",
+     "url": "https://teatrosanmarco.com/spettacolo/quasi-quasi-ci-ritento/",
+     "data": "senza data (letta 25 ott)"
+    }
+   ],
+   "immagine": "teatro",
+   "foto": "teatro-17"
+  },
+  {
+   "id": "rainbow-solot-mulino-pacifico-benevento-2027",
+   "titolo": "«Rainbow» di Francesco Rivieccio al Teatro Mulino Pacifico (Obiettivo T)",
+   "tipo": "teatro",
+   "inizio": "2027-03-05",
+   "ora": "20:30",
+   "luogo": "Teatro Mulino Pacifico, via Appio Claudio 17",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "prezzo": "15 euro",
+   "organizzatore": "Solot Compagnia Stabile di Benevento",
+   "artisti": [
+    "Francesco Rivieccio"
+   ],
+   "breve": "La storia vera di un nonno portato via giovanissimo da un campo di calcio per servire su un sommergibile nella Seconda guerra mondiale.",
+   "descrizione": [
+    {
+     "testo": "Di e con Francesco Rivieccio, che racconta il nonno e i cinque anni che impiegò per tornare a casa tra il 1940 e il 1945. Lo spettacolo ha vinto il Roma Fringe Festival 2025. Biglietto 15 euro, informazioni al 338 145 76 88. Inizio alle 20.30.",
+     "fonti": [
+      "Solot"
+     ]
+    },
+    {
+     "testo": "È l'ultimo spettacolo della stagione «Obiettivo T 2026/2027» della Solot Compagnia Stabile di Benevento.",
+     "fonti": [
+      "Benevento Turismo"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "nome": "Solot",
+     "titolo": "RAINBOW",
+     "url": "https://solot.it/stagione-teatrale/obiettivo-t-2026-2027/rainbow/",
+     "data": "senza data (letta 25 ott)"
+    },
+    {
+     "nome": "Benevento Turismo",
+     "titolo": "\"Obiettivo T\", la Solot presenta la nuova stagione teatrale",
+     "url": "https://beneventoturismo.it/obiettivo-t-la-solot-presenta-la-nuova-stagione-teatrale/",
+     "data": "set (giorno non scritto)"
+    }
+   ],
+   "immagine": "teatro",
+   "foto": "teatro-13"
+  },
+  {
+   "id": "la-follia-zamuner-santa-sofia-2027",
+   "titolo": "«La Follia» con il violinista Riccardo Zamuner e l'Accademia di Santa Sofia",
+   "tipo": "concerto",
+   "inizio": "2027-03-13",
+   "ora": "19:00",
+   "luogo": "Auditorium di Sant'Agostino",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "organizzatore": "Accademia di Santa Sofia",
+   "artisti": [
+    "Riccardo Zamuner",
+    "Orchestra dell'Accademia di Santa Sofia"
+   ],
+   "breve": "Due secoli di musica sul tema della «Follia»: Corelli, Tartini, Durante, Vivaldi e Biber, con il violino solista di Riccardo Zamuner.",
+   "descrizione": [
+    {
+     "testo": "Fa parte della stagione 2026/2027 dell'Accademia di Santa Sofia. Riccardo Zamuner, violino solista, guida l'orchestra in musiche di Arcangelo Corelli, Giuseppe Tartini (il «Trillo del Diavolo»), Francesco Durante, Antonio Vivaldi e Heinrich Ignaz Franz Biber. Inizio alle 19.",
+     "fonti": [
+      "Accademia di Santa Sofia"
+     ]
+    },
+    {
+     "testo": "Biglietti su clappit.it e alla libreria Ubik LiberiTutti, via Lungosabato Bacchelli 5, telefono 0824 1772484.",
+     "fonti": [
+      "Accademia di Santa Sofia"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "nome": "Accademia di Santa Sofia",
+     "titolo": "Stagione 2026/2027",
+     "url": "https://www.accademiadisantasofia.it/stagione-2026-2027/",
+     "data": "senza data (letta 25 ott)"
+    }
+   ],
+   "immagine": "orchestra",
+   "foto": "orchestra-7"
+  },
+  {
+   "id": "lavia-dopo-la-prova-teatro-comunale-benevento-2027",
+   "titolo": "Gabriele Lavia e Federica Di Martino in «Dopo la prova» al Teatro Comunale",
+   "tipo": "teatro",
+   "inizio": "2027-03-16",
+   "fine": "2027-03-17",
+   "ora": "20:45",
+   "orari": "martedì 16 e mercoledì 17 marzo alle 20.45",
+   "luogo": "Teatro Comunale «Vittorio Emmanuele»",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "organizzatore": "Fondazione Benevento Città Spettacolo",
+   "artisti": [
+    "Gabriele Lavia",
+    "Federica Di Martino"
+   ],
+   "breve": "Il testo di Ingmar Bergman su un regista e un'attrice dopo una prova, con Gabriele Lavia, che firma anche la regia, e Federica Di Martino. Due serate.",
+   "descrizione": [
+    {
+     "testo": "Fa parte della stagione «Città Spettacolo Teatro» 2026/2027, in scena due sere di seguito. Su un palcoscenico vuoto il regista Vogler e la giovane attrice Rakel si confrontano dopo una prova: la storia del fallimento umano di un uomo di successo. Regia di Gabriele Lavia. Sipario alle 20.45.",
+     "fonti": [
+      "Città Spettacolo"
+     ]
+    },
+    {
+     "testo": "Biglietti alla biglietteria di Città Spettacolo Teatro, All Net Service, via Lungocalore Manfredi di Svevia 25, telefono 0824 42711.",
+     "fonti": [
+      "Città Spettacolo"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "nome": "Città Spettacolo",
+     "titolo": "Gabriele Lavia e Federica Di Martino in “Dopo la prova”",
+     "url": "https://www.cittaspettacolo.it/tutti-gli-eventi/gabriele-lavia-e-federica-di-martino-in-dopo-la-prova/",
+     "data": "senza data (letta 25 ott)"
+    }
+   ],
+   "immagine": "teatro",
+   "foto": "teatro-18"
+  },
+  {
+   "id": "serena-autieri-la-sciantosa-santa-sofia-2027",
+   "titolo": "Serena Autieri in «La Sciantosa» al Teatro San Marco",
+   "tipo": "concerto",
+   "inizio": "2027-03-22",
+   "ora": "19:00",
+   "luogo": "Teatro San Marco, via Traiano 35/37",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "organizzatore": "Accademia di Santa Sofia",
+   "artisti": [
+    "Serena Autieri"
+   ],
+   "breve": "Serena Autieri racconta e canta Elvira Donnarumma, la prima sciantosa, tra le canzoni napoletane della Belle Époque.",
+   "descrizione": [
+    {
+     "testo": "Fa parte della stagione 2026/2027 dell'Accademia di Santa Sofia. Scritto da Vincenzo Incenzo, regia di Gino Landi, produzione di Enrico Griselli: Serena Autieri e i suoi musicisti riportano in vita i café-chantant, da «'A tazza 'e café» a «Reginella». Inizio alle 19.",
+     "fonti": [
+      "Accademia di Santa Sofia"
+     ]
+    },
+    {
+     "testo": "Biglietti su clappit.it e alla libreria Ubik LiberiTutti, via Lungosabato Bacchelli 5, telefono 0824 1772484.",
+     "fonti": [
+      "Accademia di Santa Sofia"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "nome": "Accademia di Santa Sofia",
+     "titolo": "Stagione 2026/2027",
+     "url": "https://www.accademiadisantasofia.it/stagione-2026-2027/",
+     "data": "senza data (letta 25 ott)"
+    },
+    {
+     "nome": "Teatro San Marco",
+     "titolo": "Serena Autieri – La sciantosa",
+     "url": "https://teatrosanmarco.com/spettacolo/serena-autieri-la-sciantosa/",
+     "data": "senza data (letta 25 ott)"
+    }
+   ],
+   "immagine": "mandolino",
+   "foto": "mandolino-6"
+  },
+  {
+   "id": "non-tutti-i-mali-ceruti-teatro-san-marco-benevento-2027",
+   "titolo": "Ciro Ceruti in «Non tutti i mali vengono per nuocere» al Teatro San Marco",
+   "tipo": "teatro",
+   "inizio": "2027-03-26",
+   "ora": "21:00",
+   "luogo": "Teatro San Marco, via Traiano 35/37",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "organizzatore": "Teatro San Marco",
+   "artisti": [
+    "Ciro Ceruti",
+    "Laura Borrelli",
+    "Ludovica Artel",
+    "Ciro D'Errico",
+    "Antonio Colursi",
+    "Luca Ceruti",
+    "Noemi Coppola",
+    "Paco De Rosa"
+   ],
+   "breve": "Una commedia di Ciro Ceruti che racconta con ironia gli ultimi quindici anni, dalla crisi in poi.",
+   "descrizione": [
+    {
+     "testo": "Con Ciro Ceruti, Laura Borrelli, Ludovica Artel, Ciro D'Errico, Antonio Colursi, Luca Ceruti, Noemi Coppola e la partecipazione di Paco De Rosa. Inizio alle 21, durata 90 minuti.",
+     "fonti": [
+      "Teatro San Marco"
+     ]
+    },
+    {
+     "testo": "Biglietti alla biglietteria dell'Accademia delle Opere, via Piermarini 46 (9-13 e 16.30-20), telefono 375 120 4538.",
+     "fonti": [
+      "Teatro San Marco"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "nome": "Teatro San Marco",
+     "titolo": "Non tutti i mali vengono per nuocere",
+     "url": "https://teatrosanmarco.com/spettacolo/non-tutti-i-mali-vengono-per-nuocere/",
+     "data": "senza data (letta 25 ott)"
+    }
+   ],
+   "immagine": "teatro",
+   "foto": "teatro-10"
+  },
+  {
+   "id": "salotto-paolantoni-teatro-comunale-benevento-2027",
+   "titolo": "Francesco Paolantoni in «Salotto Paolantoni» al Teatro Comunale",
+   "tipo": "teatro",
+   "inizio": "2027-04-02",
+   "ora": "20:45",
+   "luogo": "Teatro Comunale «Vittorio Emmanuele»",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "organizzatore": "Fondazione Benevento Città Spettacolo",
+   "artisti": [
+    "Francesco Paolantoni"
+   ],
+   "breve": "Francesco Paolantoni trasforma il teatro in un salotto: lo spettacolo cambia ogni sera con le domande e le telefonate del pubblico.",
+   "descrizione": [
+    {
+     "testo": "Fa parte della stagione «Città Spettacolo Teatro» 2026/2027. Gli argomenti cambiano di sera in sera secondo il pubblico, che può tenere il telefono acceso e coinvolgere l'attore nelle chiamate; in scena c'è anche l'ospite indesiderato Arduino Speranza. Sipario alle 20.45.",
+     "fonti": [
+      "Città Spettacolo"
+     ]
+    },
+    {
+     "testo": "Biglietti alla biglietteria di Città Spettacolo Teatro, All Net Service, via Lungocalore Manfredi di Svevia 25, telefono 0824 42711.",
+     "fonti": [
+      "Città Spettacolo"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "nome": "Città Spettacolo",
+     "titolo": "Francesco Paolantoni in “Salotto Paolantoni”",
+     "url": "https://www.cittaspettacolo.it/tutti-gli-eventi/francesco-paolantoni-in-salotto-paolantoni/",
+     "data": "senza data (letta 25 ott)"
+    }
+   ],
+   "immagine": "teatro",
+   "foto": "teatro-11"
+  },
+  {
+   "id": "due-inghilterre-un-tango-di-bacco-santa-sofia-2027",
+   "titolo": "«Due Inghilterre, un Tango» con il sassofonista Gaetano Di Bacco e l'Accademia di Santa Sofia",
+   "tipo": "concerto",
+   "inizio": "2027-04-10",
+   "ora": "20:00",
+   "luogo": "Auditorium di Sant'Agostino",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "organizzatore": "Accademia di Santa Sofia",
+   "artisti": [
+    "Gaetano Di Bacco",
+    "Riccardo Zamuner",
+    "Danilo Squitieri",
+    "Orchestra dell'Accademia di Santa Sofia"
+   ],
+   "breve": "Tre solisti e l'orchestra tra il tango di Piazzolla e la musica inglese di Holst e Warlock.",
+   "descrizione": [
+    {
+     "testo": "Fa parte della stagione 2026/2027 dell'Accademia di Santa Sofia. Gaetano Di Bacco al sassofono, Riccardo Zamuner al violino e Danilo Squitieri al violoncello suonano con l'orchestra musiche di Astor Piazzolla, Gustav Holst e Peter Warlock. Inizio alle 20.",
+     "fonti": [
+      "Accademia di Santa Sofia"
+     ]
+    },
+    {
+     "testo": "Biglietti su clappit.it e alla libreria Ubik LiberiTutti, via Lungosabato Bacchelli 5, telefono 0824 1772484.",
+     "fonti": [
+      "Accademia di Santa Sofia"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "nome": "Accademia di Santa Sofia",
+     "titolo": "Stagione 2026/2027",
+     "url": "https://www.accademiadisantasofia.it/stagione-2026-2027/",
+     "data": "senza data (letta 25 ott)"
+    }
+   ],
+   "immagine": "orchestra",
+   "foto": "orchestra-3"
+  },
+  {
+   "id": "arte-della-truffa-biagio-izzo-teatro-san-marco-benevento-2027",
+   "titolo": "Biagio Izzo in «L'arte della truffa» al Teatro San Marco",
+   "tipo": "teatro",
+   "inizio": "2027-04-23",
+   "ora": "21:00",
+   "luogo": "Teatro San Marco, via Traiano 35/37",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "organizzatore": "Teatro San Marco",
+   "artisti": [
+    "Biagio Izzo",
+    "Carla Ferraro",
+    "Roberto Giordano",
+    "Arduino Speranza",
+    "Ciro Pauciullo",
+    "Adele Vitale"
+   ],
+   "breve": "La nuova commedia di Biagio Izzo: una coppia deve ospitare in casa il fratello di lei agli arresti domiciliari, e nasce una truffa a fin di bene.",
+   "descrizione": [
+    {
+     "testo": "La vita di Gianmario e della moglie Stefania cambia quando devono prendere in casa Francesco, il fratello di lei, perché possa avere gli arresti domiciliari. Con Biagio Izzo, Carla Ferraro, Roberto Giordano, Arduino Speranza, Ciro Pauciullo e Adele Vitale. Inizio alle 21, durata 90 minuti.",
+     "fonti": [
+      "Teatro San Marco"
+     ]
+    },
+    {
+     "testo": "Biglietti alla biglietteria dell'Accademia delle Opere, via Piermarini 46 (9-13 e 16.30-20), telefono 375 120 4538.",
+     "fonti": [
+      "Teatro San Marco"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "nome": "Teatro San Marco",
+     "titolo": "L’arte della truffa",
+     "url": "https://teatrosanmarco.com/spettacolo/larte-della-truffa/",
+     "data": "senza data (letta 25 ott)"
+    }
+   ],
+   "immagine": "teatro",
+   "foto": "teatro-7"
+  },
+  {
+   "id": "coppia-aperta-francini-federico-santa-sofia-2027",
+   "titolo": "Chiara Francini e Alessandro Federico in «Coppia aperta quasi spalancata» al Teatro Comunale",
+   "tipo": "teatro",
+   "inizio": "2027-04-24",
+   "ora": "20:00",
+   "luogo": "Teatro Comunale «Vittorio Emmanuele»",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "organizzatore": "Accademia di Santa Sofia",
+   "artisti": [
+    "Chiara Francini",
+    "Alessandro Federico"
+   ],
+   "breve": "La commedia di Dario Fo e Franca Rame su una moglie tradita che accetta la «coppia aperta» pur di non perdere il marito.",
+   "descrizione": [
+    {
+     "testo": "Fa parte della stagione 2026/2027 dell'Accademia di Santa Sofia. Il testo di Franca Rame e Dario Fo, regia di Alessandro Tedeschi, è al sesto anno di repliche: Chiara Francini è Antonia, Alessandro Federico il marito. Inizio alle 20.",
+     "fonti": [
+      "Accademia di Santa Sofia"
+     ]
+    },
+    {
+     "testo": "Biglietti su clappit.it e alla libreria Ubik LiberiTutti, via Lungosabato Bacchelli 5, telefono 0824 1772484.",
+     "fonti": [
+      "Accademia di Santa Sofia"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "nome": "Accademia di Santa Sofia",
+     "titolo": "Stagione 2026/2027",
+     "url": "https://www.accademiadisantasofia.it/stagione-2026-2027/",
+     "data": "senza data (letta 25 ott)"
+    }
+   ],
+   "immagine": "teatro",
+   "foto": "teatro-6"
+  },
+  {
+   "id": "rock-the-strings-santa-sofia-2027",
+   "titolo": "«Rock the Strings»: i classici del rock suonati dagli archi dell'Accademia di Santa Sofia",
+   "tipo": "concerto",
+   "inizio": "2027-05-15",
+   "ora": "20:00",
+   "luogo": "Auditorium di Sant'Agostino",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "organizzatore": "Accademia di Santa Sofia",
+   "artisti": [
+    "Orchestra dell'Accademia di Santa Sofia"
+   ],
+   "breve": "Queen, Pink Floyd, Led Zeppelin, AC/DC, U2 e Deep Purple arrangiati per orchestra d'archi.",
+   "descrizione": [
+    {
+     "testo": "Fa parte della stagione 2026/2027 dell'Accademia di Santa Sofia. L'orchestra d'archi suona i grandi brani del rock negli arrangiamenti del maestro Giorgio Mellone. Inizio alle 20.",
+     "fonti": [
+      "Accademia di Santa Sofia"
+     ]
+    },
+    {
+     "testo": "Biglietti su clappit.it e alla libreria Ubik LiberiTutti, via Lungosabato Bacchelli 5, telefono 0824 1772484.",
+     "fonti": [
+      "Accademia di Santa Sofia"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "nome": "Accademia di Santa Sofia",
+     "titolo": "Stagione 2026/2027",
+     "url": "https://www.accademiadisantasofia.it/stagione-2026-2027/",
+     "data": "senza data (letta 25 ott)"
+    }
+   ],
+   "immagine": "orchestra",
+   "foto": "orchestra-2"
+  },
+  {
+   "id": "barbiere-di-siviglia-santa-sofia-2027",
+   "titolo": "«Il Barbiere di Siviglia» di Rossini al Teatro Comunale",
+   "tipo": "lirica",
+   "inizio": "2027-05-29",
+   "fine": "2027-05-30",
+   "orari": "sabato 29 maggio alle 20, domenica 30 maggio alle 18",
+   "luogo": "Teatro Comunale «Vittorio Emmanuele»",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "organizzatore": "Accademia di Santa Sofia",
+   "artisti": [
+    "Orchestra del Conservatorio «Nicola Sala» di Benevento",
+    "Maurizio Petrolo"
+   ],
+   "breve": "L'opera buffa di Rossini con l'orchestra del Conservatorio di Benevento diretta da Maurizio Petrolo: due recite, sabato sera e domenica pomeriggio.",
+   "descrizione": [
+    {
+     "testo": "Chiude la stagione 2026/2027 dell'Accademia di Santa Sofia. Suona l'orchestra del Conservatorio «Nicola Sala» di Benevento, diretta da Maurizio Petrolo. Due recite: sabato 29 maggio alle 20 e domenica 30 maggio alle 18.",
+     "fonti": [
+      "Accademia di Santa Sofia"
+     ]
+    },
+    {
+     "testo": "Biglietti su clappit.it e alla libreria Ubik LiberiTutti, via Lungosabato Bacchelli 5, telefono 0824 1772484.",
+     "fonti": [
+      "Accademia di Santa Sofia"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "nome": "Accademia di Santa Sofia",
+     "titolo": "Stagione 2026/2027",
+     "url": "https://www.accademiadisantasofia.it/stagione-2026-2027/",
+     "data": "senza data (letta 25 ott)"
+    }
+   ],
+   "immagine": "lirica",
+   "foto": "lirica-3"
   }
  ]
 }

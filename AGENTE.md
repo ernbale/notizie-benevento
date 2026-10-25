@@ -482,6 +482,22 @@ aggiorni a ogni giro, come notizie.json.
   2 ricerche mirate a giro («eventi Benevento questa settimana», «teatro Benevento stagione», «sagra Sannio»,
   «concerto Benevento», «mostra Benevento»). Una stagione teatrale o una rassegna = **un evento per ogni spettacolo**,
   con la sua data.
+- **Le stagioni ufficiali (a ogni giro)**, volute dal proprietario il 25 ott 2026: il Pi di casa legge ogni 30 minuti
+  le pagine delle stagioni di Città Spettacolo (Teatro Comunale, De La Salle), Accademia di Santa Sofia, Teatro San
+  Marco, Solot e la biglietteria Clappit (file `stagioni.json` delle fonti lette da casa), e in fondo all'elenco di
+  `giornali.py` trovi **le date da oggi in poi che non hanno un evento in calendario** (le stampa anche
+  `python3 strumenti/stagioni.py`). Per ognuna:
+  - se è uno spettacolo che va nel calendario, **aggiungilo**: apri la pagina indicata (la scheda dello spettacolo ha
+    orari, attori, prezzo) e scrivi l'evento con le solite regole; la fonte è quella pagina, col nome di chi la
+    pubblica (`fonte`) e `"data": "senza data (letta GG mese)"`. Lo stesso spettacolo può comparire due volte (sulla
+    pagina di Santa Sofia e su Clappit, o due sere di fila): è **un evento solo** (due sere = `inizio` e `fine`, con le
+    ore in `orari`). Le ore di Clappit non sono affidabili: usa quelle della pagina dell'organizzatore;
+  - se `NOTA` dice che l'anno sulla pagina non torna col giorno della settimana, la data giusta è quella stampata
+    (controllala sulla pagina);
+  - se c'è già in calendario con un titolo diverso, o non va nel calendario (non è uno spettacolo, è fuori tema),
+    scrivi la sua `chiave` nel campo `"stagioni_escluse"` di eventi.json (in alto, accanto a `aggiornato`):
+    `"stagioni_escluse": {"<chiave>": "motivo breve"}`, così non torna. Non togliere chiavi già scritte.
+  Nel resoconto scrivi quanti ne hai aggiunti, e se l'elenco dice ATTENZIONE (copia di casa ferma, pagina non letta).
 - **Aggiornali**: se un evento è rinviato cambia le date e scrivilo nella descrizione; se è annullato metti
   `"annullato": true` (resta nel calendario, barrato). Non cancellare mai un evento: quelli finiti da 60 giorni li
   sposta da solo `strumenti/archivia.py` in `archivio/eventi-AAAA-MM.json`.

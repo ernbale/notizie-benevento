@@ -459,6 +459,11 @@ def main():
             print(f"   {'*' if x['nuovo'] else ' '} {x['data'][5:10].replace('-', '/')} {x['data'][11:16]} "
                   f"{x['testata']}: {x['titolo'][:110]}\n       {x['url']}")
     print(f"\n(* = uscito dall'ultimo giro) · elenco completo in {a.uscita} · righe del registro in {a.registro}")
+    try:   # le date ufficiali di teatri e concerti ancora senza evento (strumenti/stagioni.py, dal 25 ott 2026)
+        import stagioni
+        print("\n" + stagioni.riepilogo())
+    except Exception as e:
+        print(f"\nATTENZIONE: strumenti/stagioni.py non è andato ({type(e).__name__}: {e}): lancialo a mano")
 
 
 if __name__ == "__main__":
