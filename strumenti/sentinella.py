@@ -85,6 +85,16 @@ RIPETI_ORE = 24      # una fonte ancora ferma si ricorda una volta al giorno
 NON_DA_FUORI = ("stradeanas.it", "tvsette.net")   # rifiutano le connessioni dall'estero: da GitHub non si prova
 CARTELLA_PI = os.path.expanduser("~/nb-fonti")
 PAUSA_RETE = 20     # secondi prima del secondo tentativo se la rete fa cilecca
+# Dal Pi l'avviso arriva al proprietario anche su WhatsApp (Home Assistant) e per email (da comunicati@): voluto il
+# 25 ott 2026, «mi deve avvisare per email e wapp tramite ha». Dove mandarlo sta in avvisi.conf (solo sul Pi: indirizzo
+# e token di Home Assistant, servizio WhatsApp, email); la casella per mandare è quella di posta.conf.
+AVVISI_CONF = os.path.join(CARTELLA_PI, "avvisi.conf")
+POSTA_CONF = os.path.join(CARTELLA_PI, "posta.conf")
+# La password della PEC per i programmi di posta (verifica in 2 passaggi di Aruba) scade ogni 6 mesi: si avvisa prima.
+# La data è quella di pec.conf, che fonti_casa.py --imposta-pec riscrive quando se ne mette una nuova.
+PEC_CONF = os.path.join(CARTELLA_PI, "pec.conf")
+PEC_SCADE_GIORNI = 182
+PEC_PREAVVISO_GIORNI = 10
 
 
 def apri(req, metodo="GET"):
@@ -443,8 +453,19 @@ def fonti_di_casa(adesso, prova):
         else:
             problemi.append(f"fonte ferma{quando}: {cosa}" + (f" [prova: {indirizzo}]" if indirizzo else ""))
             nuovo[chiave] = {"dal": dal.isoformat(timespec="minutes") if dal else "", "avvisato": adesso.isoformat(timespec="minutes")}
+    if os.path.exists(PEC_CONF):   # la password della PEC per i programmi di posta: prima che scada
+        scade = dt.datetime.fromtimestamp(os.path.getmtime(PEC_CONF), fuso()) + dt.timedelta(days=PEC_SCADE_GIORNI)
+        if adesso >= scade - dt.timedelta(days=PEC_PREAVVISO_GIORNI):
+            vecchio = stato.get("pec_scade") or {}
+            if vecchio.get("avvisato") and adesso - iso(vecchio["avvisato"]) < dt.timedelta(hours=RIPETI_ORE):
+                nuovo["pec_scade"] = vecchio
+            else:
+                problemi.append(f"la password della PEC del sito per i programmi di posta scade verso il {scade:%d/%m/%Y}: "
+                                "farne una nuova (webmail PEC → Impostazioni → Account e sicurezza → Password per "
+                                "programmi di posta) e rimetterla sul Pi con fonti_casa.py --imposta-pec")
+                nuovo["pec_scade"] = {"avvisato": adesso.isoformat(timespec="minutes")}
     for chiave in stato:
-        if chiave not in ferme and stato[chiave].get("avvisato"):
+        if chiave not in ferme and chiave not in nuovo and stato[chiave].get("avvisato"):
             note.append(f"tornata a funzionare: {chiave}")
     if albi_bassi and "albi" not in ferme:
         nuovo.setdefault("albi", stato["albi"])   # albi sotto soglia da poco: si ricorda da quando
@@ -452,6 +473,50 @@ def fonti_di_casa(adesso, prova):
         with open(stato_f, "w", encoding="utf-8") as f:
             json.dump(nuovo, f, ensure_ascii=False, indent=1)
     return problemi, note
+
+
+def avvisa_casa(problemi, adesso):
+    """L'avviso al proprietario su WhatsApp (Home Assistant) e per email, con lo stesso testo della mail di GitHub.
+    Un canale che non va non ferma l'altro. Restituisce cosa è successo, per il registro."""
+    try:
+        with open(AVVISI_CONF, encoding="utf-8") as f:
+            conf = json.load(f)
+    except (OSError, ValueError):
+        return ["avvisi.conf manca: niente WhatsApp né email"]
+    testo = f"⚠️ Notizie Benevento, la sentinella ({adesso:%d/%m %H:%M}):\n" + "\n".join(f"• {p}" for p in problemi)
+    esiti = []
+    try:   # WhatsApp: il servizio notify di Home Assistant (CallMeBot, solo testo)
+        dominio, servizio = conf["whatsapp"].split(".", 1)
+        req = urllib.request.Request(f"{conf['ha_url'].rstrip('/')}/api/services/{dominio}/{servizio}", method="POST",
+                                     data=json.dumps({"message": testo[:1500]}).encode(),
+                                     headers={"Authorization": f"Bearer {conf['ha_token']}",
+                                              "Content-Type": "application/json"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            r.read()
+        esiti.append("WhatsApp mandato")
+    except Exception as e:
+        esiti.append(f"WhatsApp NON mandato ({type(e).__name__}: {str(e)[:120]})")
+    try:   # email: dalla casella dei comunicati (Aruba)
+        import smtplib
+        import ssl
+        from email.message import EmailMessage
+        from email.utils import formataddr, formatdate, make_msgid
+        with open(POSTA_CONF, encoding="utf-8") as f:
+            posta = json.load(f)
+        m = EmailMessage()
+        m["From"] = formataddr(("Sentinella di Notizie Benevento", posta["utente"]))
+        m["To"] = conf["email"]
+        m["Subject"] = f"⚠️ Notizie Benevento: {len(problemi)} {'problema' if len(problemi) == 1 else 'problemi'}"
+        m["Date"] = formatdate(localtime=True)
+        m["Message-ID"] = make_msgid(domain=posta["utente"].split("@")[1])
+        m.set_content(testo + "\n\nIl registro è sul Pi: ~/nb-fonti/sentinella.log\n")
+        with smtplib.SMTP_SSL("smtps.aruba.it", 465, context=ssl.create_default_context(), timeout=60) as s:
+            s.login(posta["utente"], posta["password"])
+            s.send_message(m)
+        esiti.append("email mandata")
+    except Exception as e:
+        esiti.append(f"email NON mandata ({type(e).__name__}: {str(e)[:120]})")
+    return esiti
 
 
 def albo_di_prova(non_letti):
@@ -492,10 +557,15 @@ def main():
     ap.add_argument("--chiave", default=os.path.join(CARTELLA_PI, "github.conf"))
     ap.add_argument("--imposta-chiave", action="store_true")
     ap.add_argument("--prova", action="store_true")
+    ap.add_argument("--prova-avviso", action="store_true", help="sul Pi: un avviso di prova su WhatsApp e per email")
     a = ap.parse_args()
     if a.imposta_chiave:
         return imposta_chiave(a.chiave)
     adesso = dt.datetime.now(fuso())
+    if a.prova_avviso:
+        print(", ".join(avvisa_casa(["PROVA: da adesso gli avvisi della sentinella arrivano anche qui, su WhatsApp e "
+                                     "per email. Non c'è niente da fare."], adesso)))
+        return
     gh = GitHub(leggi_chiave(a.chiave))
     if a.pi:   # sul Pi il sito non c'è: notizie.json del ramo main lo dà GitHub (senza la cache di raw.githubusercontent)
         su_main = json.loads(gh.chiama("GET", f"repos/{REPO}/contents/notizie.json?ref=main", grezzo=True))
@@ -547,10 +617,14 @@ def main():
         except (OSError, ValueError, KeyError):
             ultimo = None
         if not ultimo or adesso - ultimo > dt.timedelta(hours=AVVISO_ORE):
-            gh.lancia("sentinella.yml", {"avviso": " | ".join(problemi)[:1000]})
+            try:
+                gh.lancia("sentinella.yml", {"avviso": " | ".join(problemi)[:1000]})
+                print(f"{ora} avviso: lanciata la sentinella di GitHub (mail se resta rosso)")
+            except Exception as e:   # WhatsApp ed email partono lo stesso
+                print(f"{ora} avviso: sentinella di GitHub NON lanciata ({type(e).__name__}: {e})")
             with open(stato_f, "w", encoding="utf-8") as f:
                 json.dump({"avviso": adesso.isoformat(timespec="minutes")}, f)
-            print(f"{ora} avviso: lanciata la sentinella di GitHub (mail se resta rosso)")
+            print(f"{ora} avviso: {', '.join(avvisa_casa(problemi, adesso))}")
     if problemi and not a.pi:
         sys.exit(1)
 
