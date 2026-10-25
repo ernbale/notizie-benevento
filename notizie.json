@@ -3,6 +3,77 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "benevento-calcio-abbonati-ritiro-segnaposto-botteghino-vigorito",
+   "titolo": "Benevento Calcio, gli abbonati ritirano il segnaposto al botteghino del Vigorito da lunedì 26 ottobre",
+   "titolo_google": "Benevento Calcio, ritiro segnaposto abbonati dal 26 ottobre",
+   "sintesi": "Da lunedì 26 ottobre gli abbonati del Benevento Calcio alla stagione 2026/27 possono ritirare il segnaposto al botteghino dello stadio Ciro Vigorito. Martedì 27, giorno di Benevento-Catanzaro, solo dalle 9 alle 13.",
+   "categoria": "sport",
+   "sport": "calcio",
+   "zona": "benevento",
+   "immagine": "stadio",
+   "luogo": "Benevento",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "in_vigore_fino": "2026-10-30",
+   "fonti": [
+    {
+     "nome": "Benevento Calcio",
+     "url": "https://www.beneventocalcio.club/news/comunicatistampa/7679/abbonati-2026-27-il-tuo-segnaposto-e-pronto.shtml"
+    }
+   ],
+   "comunicati": [
+    "uf15ba30afc7"
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Da lunedì 26 ottobre gli abbonati del Benevento Calcio alla stagione 2026/27 possono ritirare il loro segnaposto. Si prende al botteghino dello stadio Ciro Vigorito di Benevento. Lo ha comunicato la società giallorossa domenica 25 ottobre sul suo sito.",
+      "fonti": [
+       "Benevento Calcio"
+      ]
+     },
+     {
+      "testo": "Il botteghino è aperto per il ritiro lunedì 26, mercoledì 28, giovedì 29 e venerdì 30 ottobre, dalle 9 alle 12 e dalle 15 alle 18. Martedì 27 ottobre, il giorno della partita Benevento-Catanzaro, l'orario è diverso: solo dalle 9 alle 13.",
+      "fonti": [
+       "Benevento Calcio"
+      ]
+     },
+     {
+      "testo": "Il segnaposto è una card con due codici QR. Il primo serve per entrare allo stadio alle partite. Il secondo dà diritto alle agevolazioni e alle iniziative riservate agli abbonati presso i partner del Benevento Calcio.",
+      "fonti": [
+       "Benevento Calcio"
+      ]
+     },
+     {
+      "testo": "Il primo partner è Spazio Conad: sempre da lunedì 26 ottobre, chi presenta il segnaposto può ritirare un blocchetto di buoni sconto riservato agli abbonati giallorossi. La società annuncia che più avanti si aggiungeranno le offerte degli altri partner. Per informazioni il Benevento Calcio indica il numero 0824 363722.",
+      "fonti": [
+       "Benevento Calcio"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Se il segnaposto si può ritirare anche dopo venerdì 30 ottobre e con quali orari.",
+     "Quali documenti servono per il ritiro e se può ritirarlo un'altra persona al posto dell'abbonato.",
+     "In quale punto vendita Spazio Conad si ritirano i buoni sconto e quanto valgono.",
+     "Quali sono gli altri partner che aderiranno all'iniziativa."
+    ],
+    "fonti": [
+     {
+      "nome": "Benevento Calcio",
+      "titolo": "ABBONATI 2026/27: IL TUO SEGNAPOSTO È PRONTO!",
+      "url": "https://www.beneventocalcio.club/news/comunicatistampa/7679/abbonati-2026-27-il-tuo-segnaposto-e-pronto.shtml",
+      "data": "25 ott, 22:07"
+     }
+    ]
+   },
+   "subito": true,
+   "pubblicato": "2026-10-25T23:04:33+01:00",
+   "foto": "stadio-5"
+  },
+  {
    "id": "miwa-basket-benevento-vince-ragusa-69-75",
    "titolo": "Basket B Interregionale, la Miwa Benevento vince 75-69 a Ragusa: 20 punti di Giacomi",
    "titolo_google": "Basket, la Miwa Benevento vince 75-69 a Ragusa",
