@@ -1,7 +1,65 @@
 {
- "aggiornato": "2026-10-25T20:09+01:00",
+ "aggiornato": "2026-10-25T21:09+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "miwa-basket-benevento-vince-ragusa-69-75",
+   "titolo": "Basket B Interregionale, la Miwa Benevento vince 75-69 a Ragusa: 20 punti di Giacomi",
+   "titolo_google": "Basket, la Miwa Benevento vince 75-69 a Ragusa",
+   "sintesi": "Domenica 25 ottobre la Miwa Basket Benevento ha battuto in trasferta la Virtus Kleb Ragusa 75-69 nella quinta giornata di Serie B Interregionale. I sanniti di coach Adolfo Parrillo sono stati sempre in vantaggio; il migliore è stato Giacomi con 20 punti.",
+   "categoria": "sport",
+   "sport": "basket",
+   "zona": "benevento",
+   "luogo": "Ragusa",
+   "pubblicato": "2026-10-25T21:01:00+01:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Miwa Basket Benevento",
+     "url": "https://www.cestisticabenevento.it/2026/10/25/la-miwa-spicca-il-volo-sbancata-ragusa/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "La Miwa Basket Benevento ha vinto 75-69 in trasferta contro la Virtus Kleb Ragusa, domenica 25 ottobre, al PalaPadua di Ragusa, nel campionato di Serie B Interregionale. Lo ha comunicato la società. I sanniti, allenati da coach Adolfo Parrillo, sono stati in vantaggio per tutta la partita. Per la società è la prova di un gruppo già unito dopo appena cinque giornate di campionato.",
+      "fonti": [
+       "Miwa Basket Benevento"
+      ],
+      "giorno": "2026-10-25"
+     },
+     {
+      "testo": "Il primo quarto è finito 17-9 per Benevento, con Migone, Giacomi e due tiri liberi di Murolo. Nel secondo Ragusa ha recuperato con un parziale di 8-0, ma la Miwa è tornata avanti e all'intervallo conduceva 36-31. Nel terzo quarto, con otto punti di Murolo in due minuti e due tiri da tre di Giacomi, Benevento è salita fino a +13; il periodo si è chiuso 56-48.",
+      "fonti": [
+       "Miwa Basket Benevento"
+      ],
+      "giorno": "2026-10-25"
+     },
+     {
+      "testo": "Nell'ultimo quarto Ragusa si è avvicinata fino a quattro punti a due minuti dalla fine, con Vijber. Un tiro da tre di Di Febo ha rimesso distanza e la Miwa ha chiuso sul 75-69. Il migliore dei sanniti è stato Giacomi con 20 punti, poi Murolo con 10 e Baker e Rianna con 9.",
+      "fonti": [
+       "Miwa Basket Benevento"
+      ],
+      "giorno": "2026-10-25"
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "La posizione in classifica della Miwa dopo questa giornata."
+    ],
+    "fonti": [
+     {
+      "nome": "Miwa Basket Benevento",
+      "titolo": "La Miwa spicca il volo: sbancata Ragusa!",
+      "url": "https://www.cestisticabenevento.it/2026/10/25/la-miwa-spicca-il-volo-sbancata-ragusa/",
+      "data": "25 ott, 21:01"
+     }
+    ]
+   }
+  },
   {
    "id": "paolisi-sportello-tributi-chiuso-26-ottobre",
    "titolo": "Paolisi, lunedì 26 ottobre chiuso lo sportello del concessionario dei tributi",
@@ -5463,7 +5521,7 @@
    "categoria": "politica",
    "zona": "benevento",
    "luogo": "Benevento",
-   "pubblicato": "2026-10-25T19:51:17+01:00",
+   "pubblicato": "2026-10-25T20:53:00+01:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
@@ -5490,21 +5548,32 @@
     {
      "nome": "Anteprima24 (25/10)",
      "url": "https://www.anteprima24.it/benevento/benevento-protesta-opposizioni-corso-garibaldi/"
+    },
+    {
+     "nome": "NTR24 (25/10)",
+     "url": "https://www.ntr24.tv/2026/10/25/benevento-in-300-alla-mobilitazione-dellopposizione-vogliamo-le-dimissioni-del-sindaco-mastella/"
+    },
+    {
+     "nome": "Ottopagine (25/10)",
+     "url": "https://www.ottopagine.it/bn/politica/442139/a-benevento-l-opposizione-scende-in-piazza-mastella-si-dimetta.shtml"
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Domenica 25 ottobre, in serata, l'opposizione ha sfilato in corteo lungo corso Garibaldi, dalla Biblioteca provinciale alla Prefettura, con cartelli come «La città sfiducia Mastella» e la richiesta di dimissioni della Giunta. Hanno promosso la manifestazione Pd, Avs, Città Aperta, Civici e Riformisti e Civico 22; c'era anche l'ex parlamentare Umberto Del Basso De Caro.",
+      "testo": "Domenica 25 ottobre, in serata, l'opposizione ha sfilato in corteo lungo corso Garibaldi, dalla Biblioteca provinciale alla Prefettura, con cartelli come «La città sfiducia Mastella» e la richiesta di dimissioni della Giunta. Secondo la Digos, citata da NTR24, i partecipanti erano circa 300. Hanno promosso la manifestazione Pd, Avs, Città Aperta, Civici e Riformisti e Civico 22; c'era anche l'ex parlamentare Umberto Del Basso De Caro.",
       "fonti": [
-       "Anteprima24 (25/10)"
+       "Anteprima24 (25/10)",
+       "NTR24 (25/10)",
+       "Ottopagine (25/10)"
       ],
       "giorno": "2026-10-25"
      },
      {
       "testo": "Durante il corteo i consiglieri Luigi Diego Perifano (Città Aperta), Angelo Moretti (Civico 22) e Francesco Farese (Pd) hanno chiesto al sindaco di fare un passo indietro e di lasciare il Comune a un commissario. Farese ha detto che l'opposizione porterà in Consiglio comunale il dossier di 24 punti, anche senza l'adesione degli altri consiglieri.",
       "fonti": [
-       "Anteprima24 (25/10)"
+       "Anteprima24 (25/10)",
+       "Ottopagine (25/10)"
       ],
       "giorno": "2026-10-25"
      },
@@ -5588,6 +5657,14 @@
        "Anteprima24",
        "Cronache del Sannio"
       ]
+     },
+     {
+      "testo": "Il percorso del corteo di domenica 25 ottobre, dalla Biblioteca provinciale alla Prefettura lungo corso Garibaldi, e la richiesta di dimissioni del sindaco.",
+      "fonti": [
+       "Anteprima24 (25/10)",
+       "NTR24 (25/10)",
+       "Ottopagine (25/10)"
+      ]
      }
     ],
     "divergono": [
@@ -5645,6 +5722,18 @@
       "titolo": "“La città sfiducia Mastella”: corteo a Benevento, le opposizioni chiedono un passo indietro",
       "url": "https://www.anteprima24.it/benevento/benevento-protesta-opposizioni-corso-garibaldi/",
       "data": "25 ott, 19:51"
+     },
+     {
+      "nome": "NTR24 (25/10)",
+      "titolo": "Benevento, in 300 alla mobilitazione dell’opposizione: ‘Vogliamo le dimissioni del sindaco Mastella’",
+      "url": "https://www.ntr24.tv/2026/10/25/benevento-in-300-alla-mobilitazione-dellopposizione-vogliamo-le-dimissioni-del-sindaco-mastella/",
+      "data": "25 ott, 20:53"
+     },
+     {
+      "nome": "Ottopagine (25/10)",
+      "titolo": "A Benevento l’opposizione scende in piazza: \"Mastella si dimetta\"",
+      "url": "https://www.ottopagine.it/bn/politica/442139/a-benevento-l-opposizione-scende-in-piazza-mastella-si-dimetta.shtml",
+      "data": "25 ott, 20:25"
      }
     ],
     "aggiornamento": {
