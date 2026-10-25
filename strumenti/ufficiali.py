@@ -28,12 +28,15 @@ Uso sul Pi:  python3 ~/nb-fonti/sentinella/ufficiali.py            (dal cron, og
              python3 ~/nb-fonti/sentinella/ufficiali.py --prova --tutte   (tutto quello delle ultime ore che passerebbe)
 """
 import argparse
+import contextlib
 import datetime as dt
+import fcntl
 import hashlib
 import json
 import os
 import re
 import sys
+import time
 import urllib.parse
 from concurrent.futures import ThreadPoolExecutor
 
@@ -50,6 +53,9 @@ GIORNI_VISTI = 30    # quanto si ricordano i link visti
 TESTO_MAX = 6000
 APRI_MAX = 6         # articoli del Benevento Calcio aperti al massimo per giro (per la data)
 GESESA = "https://www.gesesa.a-acqua.it/news/_jcr_content/root/avvisi_news_copy.jsonsearchmedia.json"
+# Il lucchetto di comunicati_lampo.py: mentre qui si scrivono le voci nuove e si pubblica l'archivio, il giro lampo non
+# parte (partirebbe con l'archivio non ancora su GitHub e non troverebbe le voci)
+LUCCHETTO_LAMPO = "/tmp/nb_comunicati.lock"
 
 # (nome della fonte, come si legge, indirizzo, solo quello che riguarda il Sannio). Il nome è quello da citare tra le
 # fonti. ⛔ FIPAV (pallavolo): i suoi siti vietano la lettura automatica. La LND (dilettanti) no: i suoi comunicati
@@ -216,6 +222,24 @@ def giro(adesso, tutte=False):
     return stato, nuove, lette, non_lette, prime
 
 
+@contextlib.contextmanager
+def lucchetto(percorso, attesa=240):
+    with open(percorso, "a") as l:
+        fine = time.time() + attesa
+        while True:
+            try:
+                fcntl.flock(l, fcntl.LOCK_EX | fcntl.LOCK_NB)
+                break
+            except BlockingIOError:
+                if time.time() > fine:
+                    raise RuntimeError(f"{percorso} occupato da più di {attesa} secondi")
+                time.sleep(2)
+        try:
+            yield
+        finally:
+            fcntl.flock(l, fcntl.LOCK_UN)
+
+
 def _prova(f, *a):
     try:
         return f(*a), None
@@ -241,6 +265,11 @@ def main():
         for v in nuove:
             print(f"  NUOVA {v['id']} · {v['mittente']} · {v['data']} · {v['titolo'][:90]}\n        {v['link']}")
         return
+    with lucchetto(LUCCHETTO_LAMPO):
+        scrivi_e_pubblica(adesso, ora, stato, nuove, lette, non_lette, prime)
+
+
+def scrivi_e_pubblica(adesso, ora, stato, nuove, lette, non_lette, prime):
     vecchio = V.leggi(ARCHIVIO_FILE, {}) or {}
     limite = (adesso - dt.timedelta(days=GIORNI_TIENI)).isoformat()
     ids = {v["id"] for v in nuove}
