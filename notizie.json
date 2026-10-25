@@ -3,6 +3,78 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "fragneto-monforte-takkarata-tournee-brasile-festival-cariri",
+   "titolo": "Fragneto Monforte, il gruppo folk La Takkarata in tournée in Brasile dal 29 ottobre al 15 novembre",
+   "titolo_google": "Fragneto Monforte, La Takkarata in tournée in Brasile",
+   "sintesi": "Il gruppo folk La Takkarata di Fragneto Monforte parte per il Brasile: dal 29 ottobre al 15 novembre sarà all'VIII Festival Internazionale do Cariri, a Taperoá, nello stato della Paraíba. È la sua 26ª tournée all'estero, nell'anno dei 58 anni di attività.",
+   "categoria": "altro",
+   "zona": "provincia",
+   "immagine": "mandolino",
+   "luogo": "Fragneto Monforte",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Pro Loco Fragnetana",
+     "url": "https://www.unplibenevento.it/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il gruppo folk La Takkarata di Fragneto Monforte, che è anche Centro Studi Arti e Tradizioni Popolari, va in Brasile dal 29 ottobre al 15 novembre. Una parte del gruppo partecipa all'VIII Festival Internazionale do Cariri, nel nord del Paese, con base nella città di Taperoá, nello stato della Paraíba. Lo comunica la Pro Loco Fragnetana.",
+      "fonti": [
+       "Pro Loco Fragnetana"
+      ]
+     },
+     {
+      "testo": "L'invito è arrivato dall'Organização Internacional de Folclore e Artes Populares, coordinata da Alice Monteiro Lima, attraverso le sezioni brasiliana e italiana della IOV, una rete internazionale che si occupa di tutela delle arti tradizionali e del folklore. Il tema del festival è lo «Spettacolo Cultura della Pace»: danza, musica e scambi tra le tradizioni dei popoli.",
+      "fonti": [
+       "Pro Loco Fragnetana"
+      ]
+     },
+     {
+      "testo": "Il festival è organizzato con il Comune di Taperoá, che si occupa di logistica, sicurezza e spazi, con l'Universidade Leiga do Trabalho, un istituto di formazione locale che prepara le guide turistiche bilingui per i gruppi stranieri, e con i Comuni di Santo André, Boa Vista, Areia de Baraúnas, Patos e Alcantil, che accolgono le «Caravane Culturali».",
+      "fonti": [
+       "Pro Loco Fragnetana"
+      ]
+     },
+     {
+      "testo": "Per La Takkarata, che quest'anno compie 58 anni di attività, è la 26ª tournée all'estero, dopo qualche anno di pausa dai viaggi internazionali. La prima fu nel 1990 in Spagna, a Muro de Alcoy e Alicante. Poi il gruppo è stato in molti Paesi europei, quattro volte negli Stati Uniti (1995, 1996, 2012 e 2016), due in Australia (1999 e 2001), in Malaysia (2001), in Russia (2002), due volte in Messico (2009 e 2015), in Honduras (2019) e in Kenya (2023).",
+      "fonti": [
+       "Pro Loco Fragnetana"
+      ]
+     },
+     {
+      "testo": "Il gruppo ringrazia l'amministrazione comunale di Fragneto Monforte e il sindaco Luigi Facchino per il sostegno. Il comunicato è firmato da Nino Capobianco, coordinatore e promotore del progetto e presidente della Pro Loco Fragnetana.",
+      "fonti": [
+       "Pro Loco Fragnetana"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quante persone del gruppo partono e in quali giorni si esibiranno al festival."
+    ],
+    "fonti": [
+     {
+      "nome": "Pro Loco Fragnetana",
+      "titolo": "Il gruppo La Takkarata vola in Brasile dal 29 di ottobre al 15 novembre",
+      "url": "https://www.unplibenevento.it/",
+      "data": "25 ott, 19:10"
+     }
+    ]
+   },
+   "comunicati": [
+    "63c64733d14b"
+   ],
+   "subito": true,
+   "pubblicato": "2026-10-25T19:16:46+01:00",
+   "foto": "mandolino-5"
+  },
+  {
    "id": "monte-taburno-escursioniste-cadute-dirupo-elicottero",
    "titolo": "Monte Taburno, due escursioniste cadono in un dirupo: salvate dai vigili del fuoco con l'elicottero e portate al San Pio",
    "titolo_google": "Monte Taburno, due escursioniste cadute in un dirupo",
