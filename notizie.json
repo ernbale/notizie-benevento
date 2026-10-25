@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T21:09+01:00",
+ "aggiornato": "2026-10-25T22:09+01:00",
  "giornali_letti": 14,
  "notizie": [
   {
@@ -18,6 +18,10 @@
     {
      "nome": "Miwa Basket Benevento",
      "url": "https://www.cestisticabenevento.it/2026/10/25/la-miwa-spicca-il-volo-sbancata-ragusa/"
+    },
+    {
+     "nome": "NTR24 Sport",
+     "url": "https://sport.ntr24.tv/2026/10/25/basket-b-interregionale-la-miwa-benevento-sbanca-ragusa/"
     }
    ],
    "articolo": {
@@ -25,7 +29,8 @@
      {
       "testo": "La Miwa Basket Benevento ha vinto 75-69 in trasferta contro la Virtus Kleb Ragusa, domenica 25 ottobre, al PalaPadua di Ragusa, nel campionato di Serie B Interregionale. Lo ha comunicato la società. I sanniti, allenati da coach Adolfo Parrillo, sono stati in vantaggio per tutta la partita. Per la società è la prova di un gruppo già unito dopo appena cinque giornate di campionato.",
       "fonti": [
-       "Miwa Basket Benevento"
+       "Miwa Basket Benevento",
+       "NTR24 Sport"
       ],
       "giorno": "2026-10-25"
      },
@@ -45,7 +50,15 @@
      }
     ],
     "cronologia": [],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "La vittoria 75-69 della Miwa a Ragusa, sempre in vantaggio.",
+      "fonti": [
+       "Miwa Basket Benevento",
+       "NTR24 Sport"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [
      "La posizione in classifica della Miwa dopo questa giornata."
@@ -56,6 +69,12 @@
       "titolo": "La Miwa spicca il volo: sbancata Ragusa!",
       "url": "https://www.cestisticabenevento.it/2026/10/25/la-miwa-spicca-il-volo-sbancata-ragusa/",
       "data": "25 ott, 21:01"
+     },
+     {
+      "nome": "NTR24 Sport",
+      "titolo": "Basket B Interregionale, la Miwa Benevento sbanca Ragusa",
+      "url": "https://sport.ntr24.tv/2026/10/25/basket-b-interregionale-la-miwa-benevento-sbanca-ragusa/",
+      "data": "25 ott, 21:10"
      }
     ]
    },
@@ -123,18 +142,22 @@
    "id": "linea-18-bn-air-campania-sanzione-regione-pendolari",
    "titolo": "Bus 18-BN Pietraroja-Cerreto-Benevento, la Regione multa AIR Campania per 14.800 euro dopo la fermata saltata a Santa Colomba",
    "titolo_google": "Linea 18-BN, la Regione multa AIR Campania per 14.800 euro",
-   "sintesi": "La Regione Campania ha contestato ad AIR Campania irregolarità sulla linea di bus 18-BN Pietraroja-Cerreto Sannita-Benevento, con sanzioni e penali per 14.800 euro. Lo raccontano i pendolari, che ora hanno ottenuto dal Difensore civico regionale 30 giorni per vedere i documenti della linea.",
+   "sintesi": "La Regione Campania ha contestato ad AIR Campania irregolarità sulla linea di bus 18-BN Pietraroja-Cerreto Sannita-Benevento, con sanzioni e penali per 14.800 euro. Lo raccontano i pendolari, che hanno ottenuto dal Difensore civico regionale 30 giorni per vedere i documenti della linea e annunciano un esposto.",
    "categoria": "altro",
    "zona": "telesina",
    "luogo": "Cerreto Sannita e Benevento",
    "immagine": "autobus",
-   "pubblicato": "2026-10-25T19:12:55+01:00",
-   "stato": "una_fonte",
+   "pubblicato": "2026-10-25T21:36:00+01:00",
+   "stato": "confermata",
    "rilevante": false,
    "fonti": [
     {
      "nome": "NTR24",
      "url": "https://www.ntr24.tv/2026/10/25/linea-18-bn-cusano-benevento-i-pendolari-dopo-la-sanzione-arriva-lultimatum-di-30-giorni-sugli-atti/"
+    },
+    {
+     "nome": "Fremondoweb",
+     "url": "https://www.fremondoweb.com/notizie-dalla-valle-telesina/air-campania-linea-cusano-benevento-arriva-ultimatum-dei-30-giorni-per-consegnare-gli-atti/"
     }
    ],
    "articolo": {
@@ -142,32 +165,42 @@
      {
       "testo": "La Regione Campania ha multato AIR Campania, la società dei bus extraurbani, per la linea 18-BN che collega Pietraroja, Cerreto Sannita e Benevento. Le sanzioni e le penali previste dal contratto arrivano a 14.800 euro. Lo raccontano i pendolari della linea, che da mesi contestano all'azienda come è stato gestito il servizio.",
       "fonti": [
-       "NTR24"
-      ]
+       "NTR24",
+       "Fremondoweb"
+      ],
+      "giorno": "2026-10-25"
      },
      {
       "testo": "Tutto parte dall'estate: dall'8 al 21 giugno 2026 la corsa delle 6.10 non è più arrivata fino al Terminal Santa Colomba di Benevento e la fermata è stata soppressa. Secondo i pendolari gli orari pubblicati da AIR davano quella fermata valida tutto l'anno, senza eccezioni per i mesi estivi, e il cambio ha penalizzato lavoratori e viaggiatori.",
       "fonti": [
-       "NTR24"
-      ]
+       "NTR24",
+       "Fremondoweb"
+      ],
+      "giorno": "2026-10-25"
      },
      {
       "testo": "Con una nota del 18 settembre la Direzione Mobilità della Regione ha contestato all'azienda le irregolarità di quelle due settimane: 9.800 euro per aver cambiato il programma delle corse senza autorizzazione e 5.000 euro per le informazioni mancanti o sbagliate date ai passeggeri, un problema che secondo la Regione si era ripetuto anche negli anni prima.",
       "fonti": [
-       "NTR24"
-      ]
+       "NTR24",
+       "Fremondoweb"
+      ],
+      "giorno": "2026-10-25"
      },
      {
       "testo": "C'è poi la questione dei documenti. I pendolari avevano chiesto di vedere gli atti e gli orari storici della linea e dicono di aver ricevuto risposte generiche. Il 20 ottobre il Difensore civico della Regione Campania, l'ufficio che tutela i cittadini nei rapporti con gli enti pubblici, ha dato ad AIR 30 giorni per mostrare i documenti sulla linea 18-BN e sulla fermata di Santa Colomba, oppure per spiegare per iscritto, una per una, quali ricerche ha fatto se non li trova.",
       "fonti": [
-       "NTR24"
-      ]
+       "NTR24",
+       "Fremondoweb"
+      ],
+      "giorno": "2026-10-25"
      },
      {
-      "testo": "I pendolari annunciano anche un esposto alla Procura della Repubblica di Benevento e alla Procura regionale della Corte dei Conti.",
+      "testo": "I pendolari annunciano anche un esposto alla Procura della Repubblica di Benevento e alla Procura regionale della Corte dei Conti. «Non permetteremo che una vicenda così grave finisca nel dimenticatoio o che le sanzioni economiche vengano scaricate sui cittadini», dice Adam Biondi, uno dei pendolari, nel comunicato ripreso da Fremondoweb.",
       "fonti": [
-       "NTR24"
-      ]
+       "NTR24",
+       "Fremondoweb"
+      ],
+      "giorno": "2026-10-25"
      }
     ],
     "cronologia": [
@@ -176,26 +209,45 @@
       "quando": "2026-06-08",
       "fatto": "La corsa delle 6.10 della linea 18-BN non arriva più al Terminal Santa Colomba di Benevento.",
       "fonti": [
-       "NTR24"
+       "NTR24",
+       "Fremondoweb"
       ]
      },
      {
       "data": "18 settembre",
       "fatto": "La Regione contesta le irregolarità ad AIR Campania: sanzioni e penali per 14.800 euro.",
       "fonti": [
-       "NTR24"
+       "NTR24",
+       "Fremondoweb"
       ]
      },
      {
       "data": "20 ottobre",
       "fatto": "Il Difensore civico regionale dà ad AIR 30 giorni per mostrare i documenti della linea.",
       "fonti": [
-       "NTR24"
+       "NTR24",
+       "Fremondoweb"
       ]
      }
     ],
-    "concordano": [],
-    "divergono": [],
+    "concordano": [
+     {
+      "testo": "Le sanzioni e penali da 14.800 euro decise dalla Regione il 18 settembre per il periodo 8-21 giugno, i 30 giorni dati ad AIR dal Difensore civico il 20 ottobre e l'esposto annunciato a Procura e Corte dei Conti.",
+      "fonti": [
+       "NTR24",
+       "Fremondoweb"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "Nel titolo NTR24 e Fremondoweb chiamano la linea «Cusano-Benevento»; nel testo tutte e due la indicano come linea 18-BN Pietraroja-Cerreto Sannita-Benevento.",
+      "fonti": [
+       "NTR24",
+       "Fremondoweb"
+      ]
+     }
+    ],
     "non_si_sa": [
      "Cosa risponde AIR Campania alle contestazioni della Regione e dei pendolari.",
      "Se la corsa delle 6.10 oggi arriva di nuovo a Santa Colomba."
@@ -206,6 +258,12 @@
       "titolo": "Linea 18-BN Cusano-Benevento, i pendolari: ‘Dopo la sanzione arriva l’ultimatum di 30 giorni sugli atti’",
       "url": "https://www.ntr24.tv/2026/10/25/linea-18-bn-cusano-benevento-i-pendolari-dopo-la-sanzione-arriva-lultimatum-di-30-giorni-sugli-atti/",
       "data": "25 ott, 19:12"
+     },
+     {
+      "nome": "Fremondoweb",
+      "titolo": "Air Campania, linea Cusano-Benevento: arriva ultimatum dei 30 giorni per consegnare gli atti",
+      "url": "https://www.fremondoweb.com/notizie-dalla-valle-telesina/air-campania-linea-cusano-benevento-arriva-ultimatum-dei-30-giorni-per-consegnare-gli-atti/",
+      "data": "25 ott, 21:36"
      }
     ]
    },
@@ -5529,7 +5587,7 @@
    "categoria": "politica",
    "zona": "benevento",
    "luogo": "Benevento",
-   "pubblicato": "2026-10-25T20:53:00+01:00",
+   "pubblicato": "2026-10-25T21:25:00+01:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
@@ -5564,24 +5622,36 @@
     {
      "nome": "Ottopagine (25/10)",
      "url": "https://www.ottopagine.it/bn/politica/442139/a-benevento-l-opposizione-scende-in-piazza-mastella-si-dimetta.shtml"
+    },
+    {
+     "nome": "InfoSannio (25/10)",
+     "url": "https://www.infosannionews.it/politica/2026/lopposizione-sfila-in-corteo-con-tanti-cittadini-e-chiede-le-dimissioni-del-sindaco-mastella.html"
+    },
+    {
+     "nome": "Cronache del Sannio (25/10)",
+     "url": "https://www.cronachedelsannio.it/sannionews24/dimissioni-mastella-parte-mobilitazione-verso-elezioni/"
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Domenica 25 ottobre, in serata, l'opposizione ha sfilato in corteo lungo corso Garibaldi, dalla Biblioteca provinciale alla Prefettura, con cartelli come «La città sfiducia Mastella» e la richiesta di dimissioni della Giunta. Secondo la Digos, citata da NTR24, i partecipanti erano circa 300. Hanno promosso la manifestazione Pd, Avs, Città Aperta, Civici e Riformisti e Civico 22; c'era anche l'ex parlamentare Umberto Del Basso De Caro.",
+      "testo": "Domenica 25 ottobre, in serata, l'opposizione ha sfilato in corteo lungo corso Garibaldi, dalla Biblioteca provinciale alla Prefettura, con cartelli come «La città sfiducia Mastella» e la richiesta di dimissioni della Giunta. Secondo la Digos, citata da NTR24, i partecipanti erano circa 300; Cronache del Sannio scrive «almeno 300», citando fonti ufficiali. Hanno promosso la manifestazione Pd, Avs, Città Aperta, Civici e Riformisti e Civico 22, con il Psi; c'era anche l'ex parlamentare Umberto Del Basso De Caro.",
       "fonti": [
        "Anteprima24 (25/10)",
        "NTR24 (25/10)",
-       "Ottopagine (25/10)"
+       "Ottopagine (25/10)",
+       "Cronache del Sannio (25/10)",
+       "InfoSannio (25/10)"
       ],
       "giorno": "2026-10-25"
      },
      {
-      "testo": "Durante il corteo i consiglieri Luigi Diego Perifano (Città Aperta), Angelo Moretti (Civico 22) e Francesco Farese (Pd) hanno chiesto al sindaco di fare un passo indietro e di lasciare il Comune a un commissario. Farese ha detto che l'opposizione porterà in Consiglio comunale il dossier di 24 punti, anche senza l'adesione degli altri consiglieri.",
+      "testo": "Durante il corteo i consiglieri Luigi Diego Perifano (Città Aperta), Angelo Moretti (Civico 22) e Francesco Farese (Pd) hanno chiesto al sindaco di fare un passo indietro e di lasciare il Comune a un commissario; Moretti ha chiesto anche l'intervento del prefetto. Farese ha detto che l'opposizione porterà in Consiglio comunale il dossier di 24 punti, anche senza l'adesione degli altri consiglieri, e che lavora con altri partiti e movimenti a una proposta alternativa per le prossime elezioni comunali.",
       "fonti": [
        "Anteprima24 (25/10)",
-       "Ottopagine (25/10)"
+       "Ottopagine (25/10)",
+       "Cronache del Sannio (25/10)",
+       "InfoSannio (25/10)"
       ],
       "giorno": "2026-10-25"
      },
@@ -5652,7 +5722,9 @@
       "data": "25 ottobre, sera",
       "fatto": "Corteo dell'opposizione in corso Garibaldi, dalla Biblioteca provinciale alla Prefettura.",
       "fonti": [
-       "Anteprima24 (25/10)"
+       "Anteprima24 (25/10)",
+       "NTR24 (25/10)",
+       "Cronache del Sannio (25/10)"
       ]
      }
     ],
@@ -5671,7 +5743,16 @@
       "fonti": [
        "Anteprima24 (25/10)",
        "NTR24 (25/10)",
-       "Ottopagine (25/10)"
+       "Ottopagine (25/10)",
+       "Cronache del Sannio (25/10)",
+       "InfoSannio (25/10)"
+      ]
+     },
+     {
+      "testo": "Circa 300 partecipanti al corteo di domenica sera.",
+      "fonti": [
+       "NTR24 (25/10)",
+       "Cronache del Sannio (25/10)"
       ]
      }
     ],
@@ -5742,6 +5823,18 @@
       "titolo": "A Benevento l’opposizione scende in piazza: \"Mastella si dimetta\"",
       "url": "https://www.ottopagine.it/bn/politica/442139/a-benevento-l-opposizione-scende-in-piazza-mastella-si-dimetta.shtml",
       "data": "25 ott, 20:25"
+     },
+     {
+      "nome": "InfoSannio (25/10)",
+      "titolo": "L’opposizione sfila in corteo con tanti cittadini e chiede le dimissioni del Sindaco Mastella",
+      "url": "https://www.infosannionews.it/politica/2026/lopposizione-sfila-in-corteo-con-tanti-cittadini-e-chiede-le-dimissioni-del-sindaco-mastella.html",
+      "data": "25 ott, 21:25"
+     },
+     {
+      "nome": "Cronache del Sannio (25/10)",
+      "titolo": "“Mastella si dimetta”: parte la mobilitazione verso le elezioni",
+      "url": "https://www.cronachedelsannio.it/sannionews24/dimissioni-mastella-parte-mobilitazione-verso-elezioni/",
+      "data": "25 ott, 21:09"
      }
     ],
     "aggiornamento": {
