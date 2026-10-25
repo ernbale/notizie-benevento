@@ -12,6 +12,7 @@
    "comune": "Torrecuso",
    "zona": "provincia",
    "prezzo": "ingresso libero",
+   "organizzatore": "Comune di Torrecuso",
    "breve": "La mostra che inaugura il nuovo museo d'arte contemporanea di Torrecuso, con opere di Vincenzo Rusciano, Gianluca Sità e Paolo Covino.",
    "descrizione": [
     {
@@ -49,6 +50,7 @@
    "luogo": "Archivio di Stato di Benevento, via G. De Vita 3 (secondo piano)",
    "comune": "Benevento",
    "zona": "benevento",
+   "organizzatore": "Archivio di Stato di Benevento",
    "breve": "Disegni, piante e documenti d'archivio sugli edifici di Benevento scomparsi, trasformati o recuperati nel tempo.",
    "descrizione": [
     {
@@ -86,6 +88,7 @@
    "luogo": "Casa Pisani, via Teatro Romano",
    "comune": "Benevento",
    "zona": "benevento",
+   "organizzatore": "Archeoclub di Benevento",
    "breve": "Cartoline rare che hanno per soggetto il liquore Strega, dalla collezione di Gianpaolo Bruno, esposte dall'Archeoclub a Casa Pisani.",
    "descrizione": [
     {
@@ -122,6 +125,12 @@
    "luogo": "Teatro De La Salle",
    "comune": "Benevento",
    "zona": "benevento",
+   "organizzatore": "Orchestra Filarmonica di Benevento",
+   "artisti": [
+    "Vittorio Coviello",
+    "Giovanni Sollima",
+    "Francesco Nicolosi"
+   ],
    "breve": "Concerto da camera del festival Moti Paralleli dell'Orchestra Filarmonica di Benevento: suonano Coviello (flauto), Sollima (violoncello) e Nicolosi (pianoforte).",
    "descrizione": [
     {
@@ -160,6 +169,11 @@
    "comune": "Benevento",
    "zona": "benevento",
    "prezzo": "ingresso gratuito fino a esaurimento posti",
+   "organizzatore": "Conservatorio statale di musica «Nicola Sala»",
+   "artisti": [
+    "Orchestra stabile della canzone napoletana del Conservatorio",
+    "Giancarlo Vorzitelli"
+   ],
    "breve": "Tre giorni di canzone napoletana organizzati dal Conservatorio «Nicola Sala»: concerti, Premio Sergio Bruni, premi alla carriera e festival della canzone inedita.",
    "descrizione": [
     {
@@ -203,6 +217,7 @@
    "luogo": "Via Michele Bocchini, dietro la chiesa di Sant'Agnese e Santa Margherita",
    "comune": "San Giorgio del Sannio",
    "zona": "benevento",
+   "organizzatore": "Parrocchia di Sant'Agnese e Santa Margherita",
    "breve": "Venerdì e sabato sera la parrocchia organizza zuppa di fagioli, carne alla brace, caldarroste e birra, con musica dal vivo.",
    "descrizione": [
     {
@@ -303,6 +318,11 @@
    "luogo": "Villa Comunale",
    "comune": "Foiano di Val Fortore",
    "zona": "fortore",
+   "organizzatore": "ASD Feudum Mazzoccae 2021",
+   "artisti": [
+    "Zeketam",
+    "081 Band"
+   ],
    "breve": "Sesta edizione con vino locale, castagne arrostite e musica dal vivo, sabato e domenica.",
    "descrizione": [
     {
@@ -341,6 +361,7 @@
    "luogo": "Centro storico",
    "comune": "Cerreto Sannita",
    "zona": "telesina",
+   "organizzatore": "Pro Loco Cominium",
    "breve": "Cinque giorni dedicati all'olio nuovo del Titerno, con visite ai frantoi, degustazioni, stand, passeggiate tra gli olivi e musica.",
    "descrizione": [
     {
@@ -378,6 +399,7 @@
    "luogo": "Teatro Romano di Benevento",
    "comune": "Benevento",
    "zona": "benevento",
+   "organizzatore": "Istituto «Alessandro Lombardi» di Airola",
    "breve": "Sfilate e spettacoli di studenti di sei istituti della Campania al Teatro Romano, martedì 27 ottobre dalle 10 alle 14. Lo coordina l'istituto Lombardi di Airola.",
    "descrizione": [
     {
@@ -417,6 +439,12 @@
    "luogo": "Sede della Fondazione Gerardino Romano, piazzetta G. Romano 15",
    "comune": "Telese Terme",
    "zona": "telesina",
+   "organizzatore": "Fondazione Gerardino Romano ETS",
+   "artisti": [
+    "Felice Casucci",
+    "Gioconda Fappiano",
+    "Loredana Fraenza"
+   ],
    "breve": "Serata di testimonianze e letture in ricordo del poeta sannita Angelo Raffaele Scetta, organizzata dalla Fondazione Gerardino Romano.",
    "descrizione": [
     {
@@ -445,6 +473,16 @@
    "luogo": "centro storico (Piazza San Menna, Piazza SS. Trinità, Fontana Reale, Pinacoteca Comunale)",
    "comune": "Vitulano",
    "zona": "provincia",
+   "organizzatore": "Pro Loco Camposauro APS",
+   "artisti": [
+    "ASSURD",
+    "Davide Zarrella",
+    "Sussifunky",
+    "Fortuna Folianensis",
+    "Orchestrina Sanamalocchio",
+    "Pegaonda",
+    "Popolo Vascio"
+   ],
    "breve": "Quattro giorni di castagne, pecorino vitulanese, street band, trekking nei castagneti, mostre e laboratori per bambini nel borgo di Vitulano.",
    "descrizione": [
     {
@@ -499,6 +537,7 @@
    "luogo": "Centro storico di Ponte (accoglienza dei gruppi agli Infopoint di Piazza Cardinal Pacca e Piazza Risorgimento a Benevento)",
    "comune": "Ponte",
    "zona": "provincia",
+   "organizzatore": "Pro Loco di Ponte APS",
    "breve": "Festa di Halloween nel borgo di Ponte: i vicoli diventano un percorso tra racconti, leggende delle janare, tradizioni e sapori del territorio.",
    "descrizione": [
     {
@@ -541,6 +580,10 @@
    "luogo": "Teatro Comunale «Vittorio Emmanuele»",
    "comune": "Benevento",
    "zona": "benevento",
+   "organizzatore": "Accademia di Santa Sofia",
+   "artisti": [
+    "Neri per Caso"
+   ],
    "breve": "I Neri per Caso aprono la stagione 2026-2027 dell'Accademia di Santa Sofia con le più belle canzoni italiane e internazionali.",
    "descrizione": [
     {
@@ -656,6 +699,10 @@
    "luogo": "Centro del paese: Piazza Caracciolo, Piazza Mellusi, Piazza Fusco e Largo Sant'Erasmo",
    "comune": "Torrecuso",
    "zona": "provincia",
+   "organizzatore": [
+    "Forum dei Giovani di Torrecuso",
+    "Nuova Pro Loco Torricolus APS"
+   ],
    "breve": "Tre giorni dedicati al vino novello e alle castagne, con stand gastronomici, produttori e artigiani nelle piazze del centro.",
    "descrizione": [
     {
@@ -705,6 +752,10 @@
    "comune": "Benevento",
    "zona": "benevento",
    "prezzo": "15 euro",
+   "organizzatore": "Solot Compagnia Stabile di Benevento",
+   "artisti": [
+    "Anna Carla Broegg"
+   ],
    "breve": "Una trentenne che vive coi nonni commenta in scena il film della propria vita: teatro e cinema insieme.",
    "descrizione": [
     {
@@ -764,6 +815,7 @@
    "luogo": "Castello medievale e centro storico (fino alla prima piazzetta di via Cortile)",
    "comune": "Ceppaloni",
    "zona": "provincia",
+   "organizzatore": "Immaginaria ETS",
    "breve": "Nei fine settimana e nei festivi il castello e il borgo di Ceppaloni ospitano Babbo e Mamma Natale, un mercatino artigianale, spettacoli e cibo di strada sannita.",
    "descrizione": [
     {
@@ -805,6 +857,10 @@
    "luogo": "Teatro De La Salle",
    "comune": "Benevento",
    "zona": "benevento",
+   "organizzatore": "Orchestra Filarmonica di Benevento",
+   "artisti": [
+    "Duo La Meraviglia"
+   ],
    "breve": "Musica barocca con violino e tiorba: è l'ultimo concerto del festival Moti Paralleli dell'Orchestra Filarmonica di Benevento.",
    "descrizione": [
     {
@@ -841,6 +897,7 @@
    "luogo": "Piazza Roma",
    "comune": "Benevento",
    "zona": "benevento",
+   "organizzatore": "Wake Up Srls",
    "breve": "Torna per la ventesima volta la pista di pattinaggio sul ghiaccio in Piazza Roma, da metà novembre a metà gennaio.",
    "descrizione": [
     {
@@ -883,6 +940,13 @@
    "comune": "Benevento",
    "zona": "benevento",
    "prezzo": "15 euro",
+   "organizzatore": "Solot Compagnia Stabile di Benevento",
+   "artisti": [
+    "Giancarlo Cosentino",
+    "Cinzia Mirabella",
+    "Lorenzo Sarcinelli",
+    "Chiara Babo"
+   ],
    "breve": "Commedia cinica e divertente: un giovane compra la nuda proprietà della casa dove vive l'anziano Attilio.",
    "descrizione": [
     {
@@ -924,6 +988,7 @@
    "luogo": "Cantine Sciore",
    "comune": "Ponte",
    "zona": "provincia",
+   "organizzatore": "Cantine Sciore",
    "breve": "Seconda edizione della festa dedicata al vino Novello, con stand gastronomici, dolci d'autunno e caldarroste. Domenica 22 novembre c'è anche il pranzo.",
    "descrizione": [
     {
@@ -981,6 +1046,11 @@
    "comune": "San Salvatore Telesino",
    "zona": "telesina",
    "prezzo": "sabato adulti 8 euro, domeniche e 8 dicembre 9 euro, 9-10-11 dicembre 7 euro; bambini 4-12 anni 5 euro, sotto i 3 anni gratis; famiglia (2 adulti + 2 bambini) 20 euro; residenti di San Salvatore Telesino e Telese Terme 5 euro; parcheggio 3 euro",
+   "artisti": [
+    "Otto Panzer",
+    "Scorpion",
+    "Lady Crystal"
+   ],
    "breve": "La quarta edizione del villaggio di Natale nel Parco del Grassano: più di 35 espositori, Babbo Natale e il Grinch, spettacoli di magia, artisti di strada e gospel.",
    "descrizione": [
     {
@@ -1034,6 +1104,7 @@
    "luogo": "Centro storico",
    "comune": "Sant'Agata de' Goti",
    "zona": "caudina",
+   "organizzatore": "Circolo Culturale Saticula",
    "breve": "Nei fine settimana prima di Natale il centro storico di Sant'Agata de' Goti si riempie di luci, allestimenti, iniziative culturali e visite guidate con artisti di strada.",
    "descrizione": [
     {
@@ -1063,6 +1134,11 @@
    "luogo": "Teatro San Marco, via Traiano 35/37",
    "comune": "Benevento",
    "zona": "benevento",
+   "organizzatore": "Teatro San Marco",
+   "artisti": [
+    "Amedeo Colella",
+    "I Guarracini"
+   ],
    "breve": "La storia del Regno delle Due Sicilie raccontata dalle sue regine, con musica napoletana dal vivo: apre la stagione del rinnovato Teatro San Marco.",
    "descrizione": [
     {
@@ -1103,6 +1179,10 @@
    "luogo": "Sede da annunciare",
    "comune": "Benevento",
    "zona": "benevento",
+   "organizzatore": "Accademia di Santa Sofia",
+   "artisti": [
+    "Stefano Di Battista Quintet"
+   ],
    "breve": "Il sassofonista Stefano Di Battista e il suo quintetto suonano in chiave jazz le musiche da film di Nino Rota ed Ennio Morricone.",
    "descrizione": [
     {
@@ -1140,6 +1220,12 @@
    "comune": "Benevento",
    "zona": "benevento",
    "prezzo": "abbonamento ai nove spettacoli 290 euro",
+   "organizzatore": "Fondazione Benevento Città Spettacolo",
+   "artisti": [
+    "Giampiero Ingrassia",
+    "Paolo Triestino",
+    "Claudia Campagnola"
+   ],
    "breve": "Apre la stagione 2026/2027 di Città Spettacolo Teatro: la commedia di Joe Orton con Giampiero Ingrassia, Paolo Triestino e Claudia Campagnola.",
    "descrizione": [
     {
@@ -1189,6 +1275,11 @@
    "comune": "Benevento",
    "zona": "benevento",
    "prezzo": "biglietti da 18 euro",
+   "organizzatore": "Teatro San Marco",
+   "artisti": [
+    "Peppe Lanzetta",
+    "Orchestra Harmonia Oltre"
+   ],
    "breve": "Monologhi seri e comici su Napoli e sui suoi «stonati», con l'orchestra dal vivo: anteprima nazionale.",
    "descrizione": [
     {
@@ -1231,6 +1322,10 @@
    "comune": "Benevento",
    "zona": "benevento",
    "prezzo": "abbonamento ai nove spettacoli 290 euro",
+   "organizzatore": "Fondazione Benevento Città Spettacolo",
+   "artisti": [
+    "Amedeo Minghi"
+   ],
    "breve": "Il cantautore festeggia sessant'anni di carriera con l'«Anniversari Tour», dentro la stagione di Città Spettacolo Teatro.",
    "descrizione": [
     {
@@ -1271,6 +1366,10 @@
    "luogo": "Teatro San Marco, via Traiano 35/37",
    "comune": "Benevento",
    "zona": "benevento",
+   "organizzatore": "Teatro San Marco",
+   "artisti": [
+    "Lucio Caputo"
+   ],
    "breve": "Concerto per pianoforte e proiezioni: brani originali ispirati alla musica da film.",
    "descrizione": [
     {
@@ -1313,6 +1412,12 @@
    "comune": "Benevento",
    "zona": "benevento",
    "prezzo": "15 euro",
+   "organizzatore": "Solot Compagnia Stabile di Benevento",
+   "artisti": [
+    "Giovanna Sannino",
+    "Francesco Ferrante",
+    "Roberto Caccioppoli"
+   ],
    "breve": "Tre fratelli si ritrovano all'ombra della madre, fotografa di guerra: trauma collettivo e legami di famiglia.",
    "descrizione": [
     {
@@ -1355,6 +1460,10 @@
    "comune": "Benevento",
    "zona": "benevento",
    "prezzo": "abbonamento ai nove spettacoli 290 euro",
+   "organizzatore": "Fondazione Benevento Città Spettacolo",
+   "artisti": [
+    "Sergio Rubini"
+   ],
    "breve": "Sergio Rubini racconta Eduardo, Peppino e Titina: spettacolo tratto dal libro di Maurizio Giammusso.",
    "descrizione": [
     {
@@ -1391,6 +1500,7 @@
    "luogo": "Teatro San Marco, via Traiano 35/37",
    "comune": "Benevento",
    "zona": "benevento",
+   "organizzatore": "Teatro San Marco",
    "breve": "Un delitto, due attori, un pianoforte e tredici sospettati: la versione italiana del musical «Murder for Two».",
    "descrizione": [
     {
@@ -1433,6 +1543,10 @@
    "comune": "Benevento",
    "zona": "benevento",
    "prezzo": "15 euro",
+   "organizzatore": "Solot Compagnia Stabile di Benevento",
+   "artisti": [
+    "Isabella Pedicini"
+   ],
    "breve": "Un monologo ironico sulle feste di Natale all'italiana, che durano da ottobre a febbraio, tra brindisi, regali e tanto cibo.",
    "descrizione": [
     {
@@ -1473,6 +1587,10 @@
    "luogo": "Sede da annunciare",
    "comune": "Benevento",
    "zona": "benevento",
+   "organizzatore": "Accademia di Santa Sofia",
+   "artisti": [
+    "Nuova Compagnia di Canto Popolare"
+   ],
    "breve": "Concerto di Natale della Nuova Compagnia di Canto Popolare: un viaggio nella musica tradizionale e devozionale del Sud Italia.",
    "descrizione": [
     {
@@ -1516,6 +1634,7 @@
    "luogo": "Borgo storico «Porti», Casali di Faicchio",
    "comune": "Faicchio",
    "zona": "telesina",
+   "organizzatore": "Parrocchia Ave Gratia Plena di Casali di Faicchio",
    "breve": "Torna per la 25ª volta il presepe vivente nel borgo antico di Casali di Faicchio: quattro giornate tra fede, tradizione e antichi mestieri.",
    "descrizione": [
     {
@@ -1552,6 +1671,7 @@
    "luogo": "Teatro San Marco, via Traiano 35/37",
    "comune": "Benevento",
    "zona": "benevento",
+   "organizzatore": "Teatro San Marco",
    "breve": "Musical tributo dal vivo al film Frozen, per grandi e bambini, nel pomeriggio del 28 dicembre.",
    "descrizione": [
     {

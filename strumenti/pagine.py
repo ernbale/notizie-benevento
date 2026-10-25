@@ -1337,6 +1337,13 @@ def tutti_gli_eventi(sito):
     return out
 
 
+GRUPPO = re.compile(r"orchestr|band\b|\bduo\b|trio\b|quartet|quintet|compagnia|\bcoro\b|gruppo|ensemble|^(i|gli|le) |\bper\b|^\S+$", re.I)
+
+
+def a_lista(v):
+    return [x for x in (v if isinstance(v, list) else [v]) if isinstance(x, str) and x.strip()]
+
+
 def fine_ev(ev):
     return ev["fine"] if ev.get("fine") and ev["fine"] > ev["inizio"] else ev["inizio"]
 
@@ -1431,6 +1438,10 @@ def html_evento(ev):
     righe.append(("Dove", dove))
     if ev.get("prezzo"):
         righe.append(("Ingresso", e(ev["prezzo"][:1].upper() + ev["prezzo"][1:])))
+    if a_lista(ev.get("artisti")):
+        righe.append(("Con", e(", ".join(a_lista(ev["artisti"])))))
+    if a_lista(ev.get("organizzatore")):
+        righe.append(("Organizza", e(" e ".join(a_lista(ev["organizzatore"])))))
     h += '<dl class="scheda-evento">' + "".join(f"<dt>{t}</dt><dd>{v}</dd>" for t, v in righe) + "</dl>"
     h += '<div class="ev-azioni" style="min-height:38px"></div>'
     if foto_tema(ev):
@@ -1627,10 +1638,20 @@ def main():
                   "eventStatus": "https://schema.org/Event" + ("Cancelled" if ev.get("annullato") else "Scheduled"),
                   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": luogo,
                   "description": ev.get("breve"), "image": [SITO + (ft or "/condivisione.png")]}
-        if fine_ev(ev) > ev["inizio"]:
-            jsonld["endDate"] = fine_ev(ev)
-        if re.search(r"gratuit|gratis|libero", str(ev.get("prezzo") or ""), re.I):
+        # Google la chiede anche per gli eventi di un giorno; con l'ora d'inizio e senza quella di fine, la stessa
+        jsonld["endDate"] = fine_ev(ev) if fine_ev(ev) > ev["inizio"] or not ev.get("ora") else jsonld["startDate"]
+        pz = str(ev.get("prezzo") or "")
+        if re.match(r"(ingresso |entrata )?(libero|gratuit|gratis)", pz.strip(), re.I):   # non «navetta gratuita» tra le tariffe
             jsonld["isAccessibleForFree"] = True
+            jsonld["offers"] = {"@type": "Offer", "price": "0", "priceCurrency": "EUR", "url": url}
+        elif re.fullmatch(r"(?:biglietto )?(\d+(?:,\d\d)?) euro", pz.strip(), re.I):   # un prezzo solo; gli elenchi di tariffe no
+            jsonld["offers"] = {"@type": "Offer", "price": re.search(r"[\d,]+", pz).group().replace(",", "."),
+                                "priceCurrency": "EUR", "url": url}
+        if ev.get("organizzatore"):
+            jsonld["organizer"] = [{"@type": "Organization", "name": x} for x in a_lista(ev["organizzatore"])]
+        if ev.get("artisti"):
+            jsonld["performer"] = [{"@type": "PerformingGroup" if GRUPPO.search(x) else "Person", "name": x}
+                                   for x in a_lista(ev["artisti"])]
         # anteprima su WhatsApp e Facebook: la foto del tema (1536×1024), sennò l'immagine del sito
         seo = blocco_seo(f"{ev['titolo']}, {ev.get('comune')} – {quando_ev(ev)} – {NOME}", breve(ev.get("breve")), url,
                          ft or "/condivisione.png", jsonld=jsonld, dim=(1536, 1024) if ft else (1200, 630))

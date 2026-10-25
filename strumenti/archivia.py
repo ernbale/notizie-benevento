@@ -575,6 +575,11 @@ def controlla_eventi(ev, err):
                 err.append(f"{w}: giorni deve essere l'elenco ordinato dei giorni AAAA-MM-GG, dal giorno di inizio a quello di fine")
         if "ora" in x and not ORA.match(str(x["ora"])):
             err.append(f"{w}: ora deve essere HH:MM")
+        nomi_ok = lambda v: isinstance(v, list) and v and all(isinstance(y, str) and y.strip() for y in v)
+        if "organizzatore" in x and not (nomi_ok(x["organizzatore"]) or isinstance(x["organizzatore"], str) and x["organizzatore"].strip()):
+            err.append(f"{w}: organizzatore deve essere un nome o un elenco di nomi")
+        if "artisti" in x and not nomi_ok(x["artisti"]):
+            err.append(f"{w}: artisti deve essere un elenco di nomi")
         if "annullato" in x and not isinstance(x["annullato"], bool):
             err.append(f"{w}: annullato deve essere true o false")
         if x.get("immagine") and x["immagine"] not in temi:

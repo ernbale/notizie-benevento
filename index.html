@@ -2299,6 +2299,9 @@
     if (!/da annunciare/i.test(ev.luogo)) dove.appendChild(linkSicuro("https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(ev.luogo + ", " + ev.comune), "Come arrivare ›"));
     voce("Dove", dove);
     if (ev.prezzo) voce("Ingresso", maiuscola(ev.prezzo));
+    var lista = function (v) { return (Array.isArray(v) ? v : [v]).filter(function (x) { return typeof x === "string" && x.trim(); }); };
+    if (lista(ev.artisti).length) voce("Con", lista(ev.artisti).join(", "));
+    if (lista(ev.organizzatore).length) voce("Organizza", lista(ev.organizzatore).join(" e "));
     art.appendChild(sch);
     var az = pulsantiCalendario(ev);
     az.appendChild(condividi(ev.titolo, linkEvento(ev), true));

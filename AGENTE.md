@@ -498,6 +498,10 @@ aggiorni a ogni giro, come notizie.json.
   26-27 dicembre e 2-3 gennaio): l'elenco di tutti i giorni in cui c'è, dal primo (= `inizio`) all'ultimo (= `fine`).
   Nel calendario l'evento compare solo in quei giorni. Se la fonte non dice quali giorni, non metterlo e scrivi in
   `orari` quello che dice.
+- `organizzatore` e `artisti` (li chiede Google per i risultati degli eventi): **chi lo organizza** (Comune, Pro Loco,
+  teatro, associazione; più d'uno = elenco) e **chi sale sul palco** (attori, cantanti, gruppi, orchestre; non il
+  regista, non gli artisti esposti in una mostra). Solo se sono scritti nella fonte, come il prezzo: se non li sai non
+  metterli. Se li trovi per un evento già in calendario, aggiungili.
 - `notizia`: l'`id` della notizia collegata, se l'evento è anche una notizia in prima pagina o in archivio.
 - L'`id` è per sempre (è l'indirizzo della pagina): parole chiave e anno, es. `sagra-castagna-vitulano-2026`.
 
@@ -511,6 +515,7 @@ aggiorni a ogni giro, come notizie.json.
     "giorni": ["AAAA-MM-GG", "… solo se non è tutti i giorni tra inizio e fine"],
     "orari": "gli orari per esteso, se ci sono", "luogo": "teatro, piazza, chiesa…", "comune": "Benevento",
     "zona": "benevento|telesina|caudina|fortore|provincia", "prezzo": "solo se scritto",
+    "organizzatore": "Pro Loco … (solo se scritto; più d'uno = elenco)", "artisti": ["solo se scritti"],
     "breve": "1-2 frasi", "descrizione": [ {"testo": "", "fonti": ["Nome fonte"]} ],
     "immagine": "tema (facoltativo)", "notizia": "id (facoltativo)", "annullato": false,
     "fonti": [ {"nome": "", "titolo": "titolo esatto", "url": "", "data": "20 ott"} ]
