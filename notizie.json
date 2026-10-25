@@ -58,7 +58,15 @@
       "data": "25 ott, 21:01"
      }
     ]
-   }
+   },
+   "subito": true,
+   "comunicati": [
+    "8249c0e518c5"
+   ],
+   "foto_inviate": [
+    "img/locandine/miwa-basket-benevento-vince-ragusa-69-75-foto.jpg"
+   ],
+   "foto_da": "Miwa Basket Benevento"
   },
   {
    "id": "paolisi-sportello-tributi-chiuso-26-ottobre",
