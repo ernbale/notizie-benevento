@@ -13,7 +13,8 @@ un'altra inquadratura: la frase è scritta in temi.json, nella lista «varianti�
 Le foto le fa OpenAI (gpt-image-2.5-sunburst, qualità media, 1536×1024, circa 1 centesimo l'una) con la chiave in
 ~/.config/openai/key, che non si stampa mai. Gira sul Mac, non su GitHub.
 
-Uso:  python3 strumenti/foto_temi.py --prova      (dice quante foto farebbe e con quali frasi, senza spendere)
+Uso:  python3 strumenti/foto_temi.py --scarta calcio-9 eolico-2   (una foto brutta: al suo posto va l'ultima del tema)
+      python3 strumenti/foto_temi.py --prova      (dice quante foto farebbe e con quali frasi, senza spendere)
       python3 strumenti/foto_temi.py              (le fa, 6 alla volta, e aggiorna temi.json)
 """
 import argparse
@@ -109,15 +110,55 @@ def salva(dati, tema, numero):
     m.save(os.path.join(CART, nome + "-m.jpg"), "JPEG", quality=80, optimize=True, progressive=True)
 
 
+def scarta(temi, nome):
+    """Toglie una foto scartata dal proprietario: al suo posto va l'ultima versione del tema (file e frase in
+    «varianti»), così i numeri restano senza buchi. Non tocca la prima foto del tema e non sposta un'ultima versione
+    già usata da una notizia o da un evento (il suo file sparirebbe)."""
+    import re
+    m = re.fullmatch(r"(.+)-(\d+)", nome)
+    if not m or m.group(1) not in temi or not os.path.exists(os.path.join(CART, nome + ".jpg")):
+        raise SystemExit(f"{nome}: non è una versione di un tema (la prima foto del tema non si scarta così)")
+    tema, n = m.group(1), int(m.group(2))
+    v = versioni(tema)
+    ultima = v[-1]
+    radice = os.path.dirname(os.path.dirname(CART))
+    usata = []
+    for f in ["notizie.json", "eventi.json"] + [os.path.join("archivio", x) for x in os.listdir(os.path.join(radice, "archivio"))]:
+        with open(os.path.join(radice, f), encoding="utf-8") as fh:
+            if f'"foto": "{ultima}"' in fh.read():
+                usata.append(f)
+    if ultima != nome and usata:
+        raise SystemExit(f"{nome}: l'ultima versione {ultima} è usata in {', '.join(usata)}: non la sposto")
+    var = temi[tema].setdefault("varianti", [])
+    for suf in (".jpg", "-m.jpg"):
+        if ultima == nome:
+            os.remove(os.path.join(CART, nome + suf))
+        else:
+            os.replace(os.path.join(CART, ultima + suf), os.path.join(CART, nome + suf))
+    k = int(ultima.rsplit("-", 1)[1]) - 2
+    if ultima != nome and k < len(var):
+        var[n - 2] = var[k]
+    del var[min(k, len(var) - 1):]
+    print(f"{nome} scartata" + (f": al suo posto {ultima}" if ultima != nome else "") + f"; {tema} ha {len(v) - 1} foto")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--prova", action="store_true")
     ap.add_argument("--quante", type=int, default=0, help="al massimo queste (0 = tutte)")
     ap.add_argument("--budget", type=float, default=0, help="dollari al massimo (dal consumo vero di ogni foto)")
+    ap.add_argument("--scarta", nargs="+", metavar="NOME", help="foto da togliere (es. calcio-9)")
     a = ap.parse_args()
     p_temi = os.path.join(CART, "temi.json")
     with open(p_temi, encoding="utf-8") as f:
         temi = json.load(f)
+    if a.scarta:
+        for nome in a.scarta:
+            scarta(temi, nome)
+        with open(p_temi, "w", encoding="utf-8") as f:
+            json.dump(temi, f, ensure_ascii=False, indent=1)
+            f.write("\n")
+        return
     lavoro = piano(temi)
     if a.quante:
         lavoro = lavoro[:a.quante]
