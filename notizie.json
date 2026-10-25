@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T12:10+01:00",
+ "aggiornato": "2026-10-25T13:09+01:00",
  "giornali_letti": 14,
  "notizie": [
   {
@@ -599,13 +599,13 @@
   },
   {
    "id": "benevento-corso-garibaldi-bambino-investito-da-bici",
-   "titolo": "Benevento, bambino investito da una bici sul corso Garibaldi: portato in ospedale",
+   "titolo": "Benevento, bambino investito da una bici sul corso Garibaldi: il sindaco chiede pattuglie fisse",
    "titolo_google": "Benevento, corso Garibaldi: bambino urtato da una bici",
-   "sintesi": "Sabato sera, 24 ottobre, sul corso Garibaldi a Benevento un bambino è stato investito da una bicicletta ed è stato portato in ospedale per precauzione. Non sembra in condizioni gravi.",
+   "sintesi": "Sabato sera, 24 ottobre, sul corso Garibaldi a Benevento un bambino è stato investito da una bicicletta e portato in ospedale; non sembra grave. Domenica il sindaco Mastella ha chiesto alla Polizia municipale pattuglie fisse per far rispettare il divieto per le bici.",
    "categoria": "cronaca",
    "zona": "benevento",
    "luogo": "Benevento, corso Garibaldi",
-   "pubblicato": "2026-10-24T20:19:00+02:00",
+   "pubblicato": "2026-10-25T12:29:00+01:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
@@ -615,15 +615,39 @@
     },
     {
      "nome": "BeneventoNews24",
-     "url": "https://www.beneventonews24.it/2026/10/24/ciclista-investe-bambino-sul-corso-garibaldi-trasportato-in-ospedale/"
+     "url": "https://www.beneventonews24.it/2026/10/25/mastella-dopo-linvestimento-sul-corso-scritto-al-comandante-intransigenza-e-massima-severita/"
     },
     {
      "nome": "Il Sannio Quotidiano",
      "url": "https://www.ilsannioquotidiano.it/2026/10/25/bimbo-investito-da-una-bici-mentre-passeggia-con-i-genitori-lungo-il-corso-garibaldi/"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/25/investimento-sul-corso-mastella-al-comandante-vecchio-massima-severita-per-chi-viola-le-regole/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/bambino-investito-da-bici-a-corso-garibaldi-mastella-intransigenza-per-chi-viola-regole/"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Domenica 25 ottobre il sindaco di Benevento, Clemente Mastella, ha scritto al comandante della Polizia municipale, Giuseppe Vecchio, per chiedere più controlli e pattuglie fisse sul corso Garibaldi. Lo scopo, dice il sindaco in una nota, è far rispettare l'ordinanza che vieta le biciclette nel centro storico: «Su questo occorre intransigenza».",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio",
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-25"
+     },
+     {
+      "testo": "Mastella aggiunge che secondo lui nei fine settimana il corso dovrebbe essere riservato solo ai pedoni, perché le famiglie possano passeggiare in sicurezza. Al bambino ha augurato una pronta guarigione.",
+      "fonti": [
+       "Cronache del Sannio"
+      ],
+      "giorno": "2026-10-25"
+     },
      {
       "testo": "Sabato sera, 24 ottobre, verso le 19:30, un bambino è stato investito da una bicicletta sul corso Garibaldi a Benevento, vicino agli incroci con via Pacca e via Rampone. Era con i genitori.",
       "fonti": [
@@ -657,7 +681,24 @@
       "giorno": "2026-10-24"
      }
     ],
-    "cronologia": [],
+    "cronologia": [
+     {
+      "data": "24 ottobre, 19:30",
+      "fatto": "Un bambino viene investito da una bici sul corso Garibaldi e portato al pronto soccorso.",
+      "fonti": [
+       "Anteprima24",
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "data": "25 ottobre, mattina",
+      "fatto": "Il sindaco scrive al comandante della Polizia municipale per chiedere più controlli sul corso.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     }
+    ],
     "concordano": [
      {
       "testo": "Un bambino che era con i genitori è stato investito da una bici sul corso Garibaldi, è stato portato al pronto soccorso del San Pio e le sue condizioni non sono gravi; il ciclista è stato fermato dalla Polizia municipale perché in quella zona le biciclette non possono passare.",
@@ -671,7 +712,8 @@
     "divergono": [],
     "non_si_sa": [
      "Le condizioni del bambino dopo i controlli in ospedale.",
-     "Se la Polizia municipale ha preso provvedimenti nei confronti del ciclista."
+     "Se la Polizia municipale ha multato il ciclista.",
+     "Da quando ci saranno le pattuglie fisse chieste dal sindaco."
     ],
     "fonti": [
      {
@@ -682,17 +724,38 @@
      },
      {
       "nome": "BeneventoNews24",
-      "titolo": "Benevento, ciclista investe bambino sul Corso Garibaldi: trasportato in ospedale",
-      "url": "https://www.beneventonews24.it/2026/10/24/ciclista-investe-bambino-sul-corso-garibaldi-trasportato-in-ospedale/",
-      "data": "24 ott, 21:40"
+      "titolo": "Mastella sull’investimento al Corso: “Scritto al Comandante, intransigenza e massima severità”",
+      "url": "https://www.beneventonews24.it/2026/10/25/mastella-dopo-linvestimento-sul-corso-scritto-al-comandante-intransigenza-e-massima-severita/",
+      "data": "25 ott, 12:14"
      },
      {
       "nome": "Il Sannio Quotidiano",
       "titolo": "Bimbo investito da una bici mentre passeggia con i genitori lungo il corso Garibaldi",
       "url": "https://www.ilsannioquotidiano.it/2026/10/25/bimbo-investito-da-una-bici-mentre-passeggia-con-i-genitori-lungo-il-corso-garibaldi/",
       "data": "25 ott, 08:45"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Investimento sul Corso, Mastella al comandante Vecchio: “Massima severità per chi vìola le regole”",
+      "url": "https://www.ntr24.tv/2026/10/25/investimento-sul-corso-mastella-al-comandante-vecchio-massima-severita-per-chi-viola-le-regole/",
+      "data": "25 ott, 12:29"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Bambino investito da bici a Corso Garibaldi. Mastella: “Intransigenza per chi viola regole”",
+      "url": "https://www.cronachedelsannio.it/sannionews24/bambino-investito-da-bici-a-corso-garibaldi-mastella-intransigenza-per-chi-viola-regole/",
+      "data": "25 ott, 12:20"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Domenica 25 ottobre il sindaco Mastella ha chiesto alla Polizia municipale pattuglie fisse sul corso Garibaldi per far rispettare il divieto di passaggio delle biciclette.",
+     "fonti": [
+      "NTR24",
+      "Cronache del Sannio"
+     ],
+     "quando": "2026-10-25T13:09+01:00",
+     "titolo_prima": "Benevento, bambino investito da una bici sul corso Garibaldi: portato in ospedale"
+    }
    }
   },
   {
