@@ -1,7 +1,163 @@
 {
- "aggiornato": "2026-10-25T10:10+01:00",
+ "aggiornato": "2026-10-25T11:10+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "cusano-mutri-no-sannio-acque-ricorso-tar",
+   "titolo": "Cusano Mutri, il Consiglio comunale vota all'unanimità contro il passaggio dell'acqua a Sannio Acque: ricorso al TAR",
+   "titolo_google": "Cusano Mutri, no a Sannio Acque: il Comune ricorre al TAR",
+   "sintesi": "Venerdì 23 ottobre il Consiglio comunale di Cusano Mutri ha votato all'unanimità contro il passaggio del servizio idrico a Sannio Acque e ha deciso il ricorso al TAR Campania per tenere la gestione delle sue sorgenti. Sannio Acque ha annunciato per giovedì 29 ottobre il sopralluogo per prendere in consegna gli impianti.",
+   "categoria": "politica",
+   "zona": "telesina",
+   "immagine": "consiglio",
+   "luogo": "Cusano Mutri",
+   "pubblicato": "2026-10-25T10:31+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/25/cusano-mutri-no-unanime-al-passaggio-a-sannio-acque-il-comune-ricorre-al-tar/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/cusano-mutri-mozione-ingresso-sannio-acque/"
+    },
+    {
+     "nome": "Fremondoweb",
+     "url": "https://www.fremondoweb.com/notizie-dalla-valle-telesina/cusano-fronte-unito-per-la-tutela-delle-sorgenti-voto-unanime-contro-lingresso-in-sannio-acque/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Consiglio comunale di Cusano Mutri, nel Matese, ha detto no all'unanimità al passaggio del servizio idrico (acquedotto, fogne e depurazione) a Sannio Acque, la società a cui è stata affidata l'acqua di tutta la provincia. Nella seduta di venerdì 23 ottobre maggioranza e opposizione hanno votato insieme anche il ricorso al TAR Campania, il tribunale amministrativo, per difendere la gestione autonoma dell'acqua e delle sorgenti del paese.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24",
+       "Fremondoweb"
+      ],
+      "giorno": "2026-10-23"
+     },
+     {
+      "testo": "La discussione è partita da una mozione presentata il 15 ottobre dal gruppo di opposizione «Nuova Cusano». La Giunta aveva già avviato le azioni in tribunale con una delibera del 20 ottobre. In aula, davanti a molti cittadini, il capogruppo di opposizione Marino Di Muzio ha detto: «Siamo qui per difendere un bene di tutti: l'acqua di Cusano Mutri, le nostre sorgenti». Ha chiesto anche chiarezza sulle spese legali del ricorso.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24",
+       "Fremondoweb"
+      ],
+      "giorno": "2026-10-23"
+     },
+     {
+      "testo": "Il Comune chiede di poter tenere da solo il servizio, come la legge sull'ambiente permette in alcuni casi, ma il 6 ottobre l'Ente Idrico Campano (EIC), l'ente che governa l'acqua in Campania, ha risposto di no. Il ricorso, a Napoli, sarà contro l'EIC, la Regione Campania e Sannio Acque: il Comune chiede di annullare quella risposta, una delibera dell'EIC del 2022 e un decreto del presidente della Regione del 23 settembre 2026, e di sospenderli intanto. Il 21 ottobre l'EIC aveva firmato con Sannio Acque la convenzione che le affida per 27 anni il servizio nei 78 Comuni della provincia.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24",
+       "Fremondoweb",
+       "NTR24 (21/10)"
+      ],
+      "giorno": "2026-10-23"
+     },
+     {
+      "testo": "Il tempo è poco: Sannio Acque ha comunicato al Comune che giovedì 29 ottobre farà il sopralluogo per prendere in consegna gli impianti.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24",
+       "Fremondoweb"
+      ],
+      "giorno": "2026-10-23"
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "6 ottobre",
+      "fatto": "L'Ente Idrico Campano dice no alla richiesta del Comune di tenere da solo il servizio idrico.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24",
+       "Fremondoweb"
+      ]
+     },
+     {
+      "data": "20 ottobre",
+      "fatto": "La Giunta di Cusano Mutri avvia le azioni in tribunale.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24",
+       "Fremondoweb"
+      ]
+     },
+     {
+      "data": "21 ottobre",
+      "fatto": "L'EIC firma con Sannio Acque la convenzione per l'acqua dei 78 Comuni del Sannio.",
+      "fonti": [
+       "NTR24 (21/10)"
+      ]
+     },
+     {
+      "data": "23 ottobre",
+      "fatto": "Il Consiglio comunale vota all'unanimità il no a Sannio Acque e il ricorso al TAR.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24",
+       "Fremondoweb"
+      ]
+     },
+     {
+      "data": "29 ottobre",
+      "fatto": "Annunciato il sopralluogo di Sannio Acque per prendere in consegna gli impianti.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24",
+       "Fremondoweb"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Il voto unanime del 23 ottobre, il ricorso al TAR Campania e il sopralluogo di Sannio Acque annunciato per il 29 ottobre.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24",
+       "Fremondoweb"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando il TAR esaminerà il ricorso e se deciderà sulla sospensione prima del 29 ottobre.",
+     "Quanto costeranno le spese legali.",
+     "Cosa risponde Sannio Acque."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Cusano Mutri, no unanime al passaggio a Sannio Acque: il Comune ricorre al Tar",
+      "url": "https://www.ntr24.tv/2026/10/25/cusano-mutri-no-unanime-al-passaggio-a-sannio-acque-il-comune-ricorre-al-tar/",
+      "data": "25 ott, 10:17"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "A Cusano Mutri passa una mozione unitaria contro l’ingresso di Sannio Acque",
+      "url": "https://www.anteprima24.it/benevento/cusano-mutri-mozione-ingresso-sannio-acque/",
+      "data": "25 ott, 10:20"
+     },
+     {
+      "nome": "Fremondoweb",
+      "titolo": "Cusano, fronte unito per la tutela delle sorgenti: voto unanime contro l’ingresso in Sannio Acque",
+      "url": "https://www.fremondoweb.com/notizie-dalla-valle-telesina/cusano-fronte-unito-per-la-tutela-delle-sorgenti-voto-unanime-contro-lingresso-in-sannio-acque/",
+      "data": "25 ott, 10:31"
+     },
+     {
+      "nome": "NTR24 (21/10)",
+      "titolo": "Servizio idrico integrato, firmata la convenzione tra EIC e Sannio Acque",
+      "url": "https://www.ntr24.tv/2026/10/21/servizio-idrico-integrato-firmata-la-convenzione-tra-eic-e-sannio-acque/",
+      "data": "21 ott"
+     }
+    ]
+   },
+   "foto": "consiglio-5"
+  },
   {
    "id": "benevento-pierozzi-infortunio-arezzo-floro-flores",
    "titolo": "Benevento, Pierozzi esce per un infortunio ad Arezzo: si aspettano gli esami prima del Catanzaro",
@@ -4396,6 +4552,14 @@
     {
      "nome": "Accademia Volley Benevento",
      "url": "https://www.accademiavolley.com/la-pasta-rummo-accademia-concede-il-bis/"
+    },
+    {
+     "nome": "NTR24 Sport",
+     "url": "https://sport.ntr24.tv/2026/10/25/volley-la-pasta-rummo-accademia-benevento-concede-il-bis-superato-in-tre-set-il-san-giuseppe-vesuviano/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/accademia-volley-vittoria-blitz-san-giuseppe-vesuviano/"
     }
    ],
    "articolo": {
@@ -4403,21 +4567,27 @@
      {
       "testo": "Sabato 24 ottobre la Pasta Rummo Accademia, la squadra femminile dell'Accademia Volley Benevento, ha vinto 3-0 sul campo delle Koala Bears a San Giuseppe Vesuviano, nella seconda giornata della Serie C femminile. I set sono finiti 25-23, 25-13 e 25-17. È la seconda vittoria di fila: la squadra di Vittorio Ruscello sale a sei punti e non ha ancora perso un set.",
       "fonti": [
-       "Accademia Volley Benevento (24/10)"
+       "Accademia Volley Benevento (24/10)",
+       "NTR24 Sport",
+       "Anteprima24"
       ],
       "giorno": "2026-10-24"
      },
      {
       "testo": "Il primo set è stato il più combattuto: le padrone di casa sono rimaste vicine fino alla fine e le beneventane l'hanno chiuso solo sul 25-23. Negli altri due la differenza si è vista di più.",
       "fonti": [
-       "Accademia Volley Benevento (24/10)"
+       "Accademia Volley Benevento (24/10)",
+       "NTR24 Sport",
+       "Anteprima24"
       ],
       "giorno": "2026-10-24"
      },
      {
       "testo": "Sabato 31 ottobre la Pasta Rummo Accademia torna alla Palestra Rampone di Benevento e ospita l'Arzano, che sabato ha perso in quattro set con l'Academy Volley Fiamma e alla prima giornata aveva battuto 3-0 proprio le Koala Bears.",
       "fonti": [
-       "Accademia Volley Benevento (24/10)"
+       "Accademia Volley Benevento (24/10)",
+       "NTR24 Sport",
+       "Anteprima24"
       ],
       "giorno": "2026-10-24"
      },
@@ -4459,7 +4629,16 @@
       ]
      }
     ],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "Il 3-0 con i parziali 25-23, 25-13, 25-17, i sei punti in classifica e la partita in casa con l'Arzano sabato 31 ottobre.",
+      "fonti": [
+       "Accademia Volley Benevento (24/10)",
+       "NTR24 Sport",
+       "Anteprima24"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [
      "A che ora si gioca la partita con l'Arzano del 31 ottobre."
@@ -4476,6 +4655,18 @@
       "titolo": "Pasta Rummo Accademia alla prima trasferta stagionale",
       "url": "https://www.accademiavolley.com/pasta-rummo-accademia-alla-prima-trasferta-stagionale/",
       "data": "23 ott, 06:31"
+     },
+     {
+      "nome": "NTR24 Sport",
+      "titolo": "Volley, la Pasta Rummo Accademia Benevento concede il bis: superato in tre set il San Giuseppe Vesuviano",
+      "url": "https://sport.ntr24.tv/2026/10/25/volley-la-pasta-rummo-accademia-benevento-concede-il-bis-superato-in-tre-set-il-san-giuseppe-vesuviano/",
+      "data": "25 ott, 10:24"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Accademia Volley, blitz a San Giuseppe Vesuviano",
+      "url": "https://www.anteprima24.it/benevento/accademia-volley-vittoria-blitz-san-giuseppe-vesuviano/",
+      "data": "25 ott, 10:33"
      }
     ],
     "aggiornamento": {
