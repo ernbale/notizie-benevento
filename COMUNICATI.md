@@ -81,8 +81,11 @@ riuscita» (o cosa non va) con l'esito dei comandi. In prova non pubblichi nient
        `"foto_inviate": ["<id>/1", "<id>/2", …]` (tutte quelle buone, la più bella per prima: va in alto, le altre in
        una galleria in fondo; fino a 10) e `"foto_da": "<chi firma il comunicato>"` (va nella didascalia);
      - con locandina o foto **niente** `immagine`. Escono così anche su Instagram (carosello) e Facebook (post con le
-       foto). Non si usano: loghi, firme, banner, screenshot, documenti con dati personali, foto che non c'entrano
-       col fatto; nella cronaca nessuna foto in cui si riconoscono indagati, vittime o minori. La copia nel sito la
+       foto). **Una foto con dentro persone, giocatori, pubblico, loghi, sponsor e scritte si usa** (le foto di sport
+       sono tutte così: lui, 25 ott 2026, «se foto di sport ci saranno sicuramente loghi persone»). Si scartano solo
+       le immagini che sono **soltanto** un logo, una firma o un banner (il logo della società in fondo alla mail),
+       gli screenshot, i documenti con dati personali e le foto che non c'entrano col fatto; e nella sola cronaca
+       (arresti, incidenti, indagini) le foto in cui si riconoscono indagati, vittime o minori. La copia nel sito la
        fa strumenti/comunicati.py.
 4 bis. **Il calendario.** Se il comunicato annuncia un evento che va nel calendario (AGENTE.md, «Il calendario degli
    eventi»: cultura, feste e sagre, nei 78 Comuni) mettilo anche in «eventi» del file, con le regole di AGENTE.md

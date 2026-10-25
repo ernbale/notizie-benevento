@@ -529,9 +529,10 @@ ce n'è). Un avviso con `in_vigore_fino` passato non va più in testa. Quindi in
   **foto arrivate per posta** (voluto dal proprietario il 25 ott 2026: «se mandano foto usale», «anche più foto se ci
   sono»): per un comunicato dell'elenco con `immagini` guardale con Read e metti le foto del fatto in
   `"foto_inviate": ["<id del comunicato>/<numero>", …]` (la migliore per prima, fino a 10) con
-  `"foto_da": "<chi firma il comunicato>"`, anche quando lo aggiungi a una notizia che c'è già. Le regole (cosa non si
-  usa) sono in COMUNICATI.md, punto 4; la copia nel sito la fa archivia.py (il campo diventa `img/locandine/…jpg`:
-  lascialo com'è).
+  `"foto_da": "<chi firma il comunicato>"`, anche quando lo aggiungi a una notizia che c'è già. Persone, giocatori,
+  loghi e sponsor dentro la foto vanno bene; si scartano solo le immagini che sono soltanto un logo o una firma (le
+  regole sono in COMUNICATI.md, punto 4). La copia nel sito la fa archivia.py (il campo diventa
+  `img/locandine/…jpg`: lascialo com'è).
 
 ## Il calendario degli eventi (`eventi.json`)
 
