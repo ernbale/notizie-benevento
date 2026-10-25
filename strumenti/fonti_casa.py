@@ -68,6 +68,7 @@ ANAS_RSS = "https://www.stradeanas.it/it/rss.xml"   # nazionale, solo gli ultimi
 TV7_FEED = "https://www.tvsette.net/feed/?cat=-228"   # 228 = AdnKronos: notizie nazionali d'agenzia, più di metà del feed
 ALBO_BN = "https://albo.comune.benevento.it/mc/mc_p_ricerca.php?noHeaderFooter=1&"
 REGIONE = "https://www.regione.campania.it/comunicazione/area-stampa/comunicati"
+ALBO_RISERVA = "https://comune.benevento.it/tipi_documento/documento-albo-pretorio/"   # + feed/: vedi albo_riserva()
 
 
 def fuso():
@@ -291,6 +292,33 @@ COMUNI = [   # (Comune, pagine con l'elenco di avvisi e notizie); None = sito ch
 ]
 
 def albo_bn(vecchie):
+    """L'albo pretorio del Comune di Benevento; se non risponde, la riserva, e l'esito lo dice."""
+    try:
+        return ordinanze_albo_bn()
+    except Exception as e:
+        perche = f"{type(e).__name__}: {e}"[:160]
+        try:
+            voci = albo_riserva()
+        except Exception as e2:
+            raise RuntimeError(f"albo: {perche}; riserva: {type(e2).__name__}: {e2}"[:300]) from e2
+        return voci, {"esito": f"letta solo la riserva ({ALBO_RISERVA}): l'albo vero non risponde ({perche})"}
+
+
+def albo_riserva():
+    """La riserva dell'albo (voluta dal proprietario il 25 ott 2026, coi server Halley degli albi giù dalle 00:30): la
+    sezione «Documento albo pretorio» del sito del Comune. Ha solo una scelta dei documenti (17 il 25 ott, l'ultimo
+    del 21), non tutte le ordinanze."""
+    voci = []
+    for it in ET.fromstring(scarica(ALBO_RISERVA + "feed/").encode()).iter("item"):
+        quando = email.utils.parsedate_to_datetime(it.findtext("pubDate")).astimezone(fuso())
+        corpo = it.findtext("{http://purl.org/rss/1.0/modules/content/}encoded") or it.findtext("description") or ""
+        voci.append({"titolo": html.unescape(it.findtext("title") or ""), "link": it.findtext("link"),
+                     "data": quando.date().isoformat(), "tipo": "documento della sezione «Documento albo pretorio»",
+                     "testo": testo(corpo)})
+    return voci
+
+
+def ordinanze_albo_bn():
     """L'albo pretorio del Comune di Benevento: le ordinanze (traffico, divieti, scuole…) delle prime pagine.
     La pagina è in latin-1; ogni pubblicazione ha i suoi campi in una cella «visible-xs» («Tipo», «Oggetto»…)."""
     voci = []
@@ -1058,8 +1086,11 @@ def leggi(nome, adesso):
         if isinstance(nuove, tuple):   # i Comuni dicono anche quali siti non si sono letti
             nuove, extra = nuove
             dati.update(extra)
-        dati["esito"] = f"letta: {len(nuove)} voci"
-        dati["ultima_lettura_riuscita"] = dati["controllato"]
+        if dati.get("esito"):   # l'albo letto solo dalla riserva: la fonte vera resta ferma
+            dati["ultima_lettura_riuscita"] = prima.get("ultima_lettura_riuscita", "")
+        else:
+            dati["esito"] = f"letta: {len(nuove)} voci"
+            dati["ultima_lettura_riuscita"] = dati["controllato"]
     except Exception as e:   # la fonte non risponde: restano le voci di prima, e lo si dice
         nuove = []
         dati["esito"] = f"non raggiungibile: {type(e).__name__}: {e}"[:300]
@@ -1094,7 +1125,9 @@ incompleto. La casella dei comunicati la legge ogni 5 minuti.
 - `asl.json`: notizie e avvisi dell'ASL Benevento, ultimi 30 giorni.
 - `tv7.json`: articoli di TV7 Benevento con il testo, ultimi 4 giorni (TV7 copre anche Irpinia e Campania).
 - `albo.json`: le ordinanze dell'albo pretorio del Comune di Benevento, ultimi 7 giorni (`mittente`, `numero_atto`,
-  `data` = inizio della pubblicazione; il `testo` è l'oggetto dell'ordinanza).
+  `data` = inizio della pubblicazione; il `testo` è l'oggetto dell'ordinanza). Se l'albo non risponde, `esito` comincia
+  con «letta solo la riserva» e le voci nuove vengono dalla sezione «Documento albo pretorio» del sito del Comune
+  (solo una scelta dei documenti, non tutte le ordinanze).
 - `regione.json`: i comunicati stampa della Regione Campania col testo, ultimi 4 giorni (tutta la Campania: tenere
   solo quelli che riguardano il Sannio).
 - `comuni.json`: avvisi e notizie NUOVI dei siti dei 78 Comuni della provincia, ultimi 4 giorni: `comune`,

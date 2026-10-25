@@ -129,7 +129,10 @@ cercalo con `ls /home/user`). File `anas.json`, `asl.json`, `tv7.json`, `comuni.
 `voci` con titolo, `link` originale (è quello da citare tra le fonti), `data` e `testo` intero, che vale come
 articolo aperto. Nel registro delle fonti scrivi `letta (da casa, controllato HH:MM)`. Se `controllato` è più
 vecchio di 3 ore o `esito` dice «non raggiungibile», scrivi `non raggiungibile (copia di casa ferma dalle HH:MM)`;
-solo per l'ASL prova allora `curl -sk https://www.aslbenevento.it/notizie` (il -k serve per il certificato).
+solo per l'ASL prova allora `curl -sk https://www.aslbenevento.it/notizie` (il -k serve per il certificato). Se l'`esito`
+di `albo.json` comincia con «letta solo la riserva», l'albo vero non risponde e le voci nuove vengono dalla sezione
+«Documento albo pretorio» del sito del Comune, che ha solo una scelta dei documenti: nel registro scrivi
+`letta solo la riserva (albo vero giù, controllato HH:MM)`.
 
 **Comunicati arrivati per posta: file `comunicati.json` delle fonti lette da casa** (la casella
 comunicati@notiziebenevento.it, letta dal Pi ogni 5 minuti; rimbalzi e risposte automatiche sono già tolti).
@@ -514,6 +517,9 @@ aggiorni a ogni giro, come notizie.json.
   26-27 dicembre e 2-3 gennaio): l'elenco di tutti i giorni in cui c'è, dal primo (= `inizio`) all'ultimo (= `fine`).
   Nel calendario l'evento compare solo in quei giorni. Se la fonte non dice quali giorni, non metterlo e scrivi in
   `orari` quello che dice.
+- `orari`: **le ore** («dalle 18 alle 23», «alle 20.45», «sabato alle 20, domenica alle 18»), o il momento del giorno
+  («a pranzo e a cena», «su appuntamento»). Mai i soli giorni: quelli la pagina li mostra già in «Quando» e la riga
+  «Orari» li ripeterebbe (25 ott 2026, il Presepe di Casali di Faicchio). Se la fonte non dice le ore, niente `orari`.
 - `organizzatore` e `artisti` (li chiede Google per i risultati degli eventi): **chi lo organizza** (Comune, Pro Loco,
   teatro, associazione; più d'uno = elenco) e **chi sale sul palco** (attori, cantanti, gruppi, orchestre; non il
   regista, non gli artisti esposti in una mostra). Solo se sono scritti nella fonte, come il prezzo: se non li sai non

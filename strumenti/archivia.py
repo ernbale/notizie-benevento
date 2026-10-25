@@ -47,6 +47,11 @@ TEMA_TIPO = {"teatro": "teatro", "danza": "danza", "concerto": "concerto", "liri
              "museo": "museo", "cinema": "cinema", "sagra": "sagra", "festa": "luminarie", "mercatino": "mercato",
              "natale": "natale", "carnevale": "carnevale"}
 ORA = re.compile(r"^([01]\d|2[0-3]):[0-5]\d$")
+# «orari» deve dire le ore (o almeno il momento del giorno): con i soli giorni la pagina ripeteva «Quando» (25 ott 2026,
+# Presepe di Casali di Faicchio: «Orari: 26 e 27 dicembre 2026, 2 e 3 gennaio 2027»)
+ORE_IN_ORARI = re.compile(r"\b(?:ore|alle|dalle|dall['’]|fino alle|entro le)\s*\d{1,2}\b|\b\d{1,2}[:.]\d\d\b|mattin|pomerigg|"
+                          r"\bser[ae]\b|serat|nott|pranzo|cena|appuntament|apertur|chiusur|tutto il giorno|orario continuato",
+                          re.I)
 # Le locandine arrivate per posta (voluto dal proprietario il 25 ott 2026: «se mandano locandine noi le dobbiamo usare,
 # in questo caso niente immagini AI»): l'agente scrive "locandina": "<id del comunicato>/<n>", cioè il file
 # allegati/<id>/<n>.jpg dell'archivio delle fonti (comunicati.json, «immagini»); risolvi_locandine() lo copia in
@@ -676,6 +681,9 @@ def controlla_eventi(ev, err):
                 err.append(f"{w}: giorni deve essere l'elenco ordinato dei giorni AAAA-MM-GG, dal giorno di inizio a quello di fine")
         if "ora" in x and not ORA.match(str(x["ora"])):
             err.append(f"{w}: ora deve essere HH:MM")
+        if x.get("orari") and (x.get("giorni") or not x.get("fine")) and not ORE_IN_ORARI.search(str(x["orari"])):
+            err.append(f"{w}: «orari» non dice le ore, ripete solo i giorni (che la pagina mostra già in «Quando»): "
+                       "se la fonte non dice le ore, togli «orari»")
         nomi_ok = lambda v: isinstance(v, list) and v and all(isinstance(y, str) and y.strip() for y in v)
         if "organizzatore" in x and not (nomi_ok(x["organizzatore"]) or isinstance(x["organizzatore"], str) and x["organizzatore"].strip()):
             err.append(f"{w}: organizzatore deve essere un nome o un elenco di nomi")
