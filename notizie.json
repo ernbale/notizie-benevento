@@ -1,7 +1,175 @@
 {
- "aggiornato": "2026-10-24T22:09+02:00",
+ "aggiornato": "2026-10-25T06:11+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-pierozzi-infortunio-arezzo-floro-flores",
+   "titolo": "Benevento, Pierozzi esce per un infortunio ad Arezzo: si aspettano gli esami prima del Catanzaro",
+   "titolo_google": "Benevento, Pierozzi infortunato ad Arezzo: si attendono esami",
+   "sintesi": "Nella vittoria per 3-0 ad Arezzo il giocatore del Benevento Pierozzi è uscito all'86' per un fastidio alla gamba. L'allenatore Floro Flores aspetta gli esami; secondo BeneventoNews24 ha parlato di un problema di qualche settimana. Martedì 27 ottobre al Vigorito arriva il Catanzaro.",
+   "categoria": "sport",
+   "sport": "calcio",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-24T22:27+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/24/benevento-floro-flores-questa-squadra-e-fantastica-ma-lobiettivo-resta-la-salvezza/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/benevento-super-ad-arezzo-floro-flores-ora-guai-a-sottovalutare-il-catanzaro/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/benevento-mignani-si-prende-la-scena-il-lavoro-ripaga-sempre-ora-testa-al-catanzaro/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Benevento potrebbe dover fare a meno di Pierozzi per un po'. Sabato 24 ottobre, nella partita vinta 3-0 ad Arezzo, il giocatore giallorosso è uscito all'86' per un fastidio. Nel dopo partita l'allenatore Antonio Floro Flores ha detto che bisogna aspettare gli esami per capire quanto è serio.",
+      "fonti": [
+       "Anteprima24",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Secondo BeneventoNews24, Floro Flores ha spiegato che Pierozzi ha sentito tirare dietro la gamba e che potrebbe essere qualcosa di grave; più avanti nella conferenza ha parlato di «un problema di qualche settimana». Ha aggiunto che la squadra ha giocatori all'altezza per sostituirlo.",
+      "fonti": [
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Guglielmo Mignani, entrato nel finale e autore del terzo gol, ha detto ai microfoni di OttoChannel che è stata una delle migliori partite della stagione. Vuole più spazio e dice di guadagnarselo lavorando, con grande stima per il compagno di reparto Salvemini.",
+      "fonti": [
+       "BeneventoNews24 (Mignani)",
+       "TV7 Benevento"
+      ]
+     },
+     {
+      "testo": "Il Benevento, salito a 14 punti e al quinto posto, gioca martedì 27 ottobre al Vigorito contro il Catanzaro, la seconda delle tre partite in sette giorni. «Sottovalutare il Catanzaro sarebbe una follia», ha detto Floro Flores.",
+      "fonti": [
+       "TV7 Benevento (partita)",
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Pierozzi uscito per un fastidio e la necessità di aspettare gli esami.",
+      "fonti": [
+       "Anteprima24",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "BeneventoNews24 riporta le parole di Floro Flores su «un problema di qualche settimana»; Anteprima24 scrive che l'allenatore non si è sbilanciato sui tempi. Vale l'attesa degli esami.",
+      "fonti": [
+       "BeneventoNews24",
+       "Anteprima24"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "Cosa diranno gli esami di Pierozzi e per quanto tempo starà fuori.",
+     "Chi giocherà al suo posto contro il Catanzaro."
+    ],
+    "fonti": [
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Benevento, Floro Flores: “Questa squadra è fantastica, ma l’obiettivo resta la salvezza”",
+      "url": "https://www.beneventonews24.it/2026/10/24/benevento-floro-flores-questa-squadra-e-fantastica-ma-lobiettivo-resta-la-salvezza/",
+      "data": "24 ott, 22:11"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Benevento super ad Arezzo, Floro Flores: “Ora guai a sottovalutare il Catanzaro”",
+      "url": "https://www.anteprima24.it/benevento/benevento-super-ad-arezzo-floro-flores-ora-guai-a-sottovalutare-il-catanzaro/",
+      "data": "24 ott, 22:27"
+     },
+     {
+      "nome": "BeneventoNews24 (Mignani)",
+      "titolo": "Benevento, Mignani: “Il lavoro ripaga sempre, provo a mettere in difficoltà il mister”",
+      "url": "https://www.beneventonews24.it/2026/10/24/benevento-mignani-il-lavoro-ripaga-sempre-provo-a-mettere-in-difficolta-il-mister/",
+      "data": "24 ott, 21:54"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Benevento, Mignani si prende la scena: «Il lavoro ripaga sempre. Ora testa al Catanzaro»",
+      "url": "https://www.tvsette.net/benevento-mignani-si-prende-la-scena-il-lavoro-ripaga-sempre-ora-testa-al-catanzaro/",
+      "data": "24 ott, 22:42"
+     },
+     {
+      "nome": "TV7 Benevento (partita)",
+      "titolo": "Benevento, tris da grande squadra: Arezzo travolto 3-0. La Strega vola al quinto posto",
+      "url": "https://www.tvsette.net/siatounis-apre-le-danze-okereke-raddoppia-e-mignani-cala-il-tris-nel-finale-i-giallorossi-conquistano-il-quinto-risultato-utile-consecutivo-e-salgono-a-quota-14-punti-martedi-al-vigorito-arriva-il/",
+      "data": "24 ott, 22:39"
+     }
+    ]
+   }
+  },
+  {
+   "id": "benevento-trofeo-don-pompilio-amatori-podismo-antonucci-secondo",
+   "titolo": "Benevento, Trofeo Don Pompilio al Rione Ferrovia: Antonucci dell'Amatori Podismo secondo in 33'23\"",
+   "titolo_google": "Trofeo Don Pompilio a Benevento, Antonucci secondo",
+   "sintesi": "Sabato 24 ottobre al Rione Ferrovia di Benevento si è corsa la seconda edizione del Trofeo Don Pompilio, 10 chilometri in memoria dello storico parroco del quartiere. Antonio Pio Antonucci dell'Amatori Podismo Benevento è arrivato secondo in 33'23\", Antonio Luongo quarto.",
+   "categoria": "sport",
+   "sport": "atletica",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-24T22:41+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/amatori-podismo-benevento-protagonista-al-trofeo-don-pompilio-antonucci-sfiora-la-vittoria-grande-prova-di-squadra-video-e-foto/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Sabato 24 ottobre il Rione Ferrovia di Benevento ha ospitato la seconda edizione del Trofeo Don Pompilio – Corsa di Santa Maria di Costantinopoli. La gara l'ha organizzata l'Amatori Podismo Benevento per ricordare don Pompilio, lo storico parroco del quartiere morto poco più di un anno fa.",
+      "fonti": [
+       "TV7 Benevento"
+      ]
+     },
+     {
+      "testo": "Il percorso, in piano, passava per viale Principe di Napoli e via Grimoaldo Re: tre giri per 10 chilometri, con l'arrivo davanti alla parrocchia di Santa Maria di Costantinopoli.",
+      "fonti": [
+       "TV7 Benevento"
+      ]
+     },
+     {
+      "testo": "Antonio Pio Antonucci dell'Amatori Podismo Benevento ha lottato a lungo per vincere ed è arrivato secondo per poco, in 33'23\". Quarto il compagno di squadra Antonio Luongo in 34'27\". Tra gli altri atleti della società, Antonio Carolla e Gerardo Tarantino hanno vinto la loro categoria, come Tania Yaremyn e Ludovica Peri tra le donne; Dina Caliro è stata quinta donna e Vera Ceniccola sesta.",
+      "fonti": [
+       "TV7 Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Chi ha vinto la gara: l'articolo letto riporta solo i risultati dell'Amatori Podismo Benevento."
+    ],
+    "fonti": [
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Amatori Podismo Benevento protagonista al Trofeo Don Pompilio: Antonucci sfiora la vittoria, grande prova di squadra (VIDEO E FOTO)",
+      "url": "https://www.tvsette.net/amatori-podismo-benevento-protagonista-al-trofeo-don-pompilio-antonucci-sfiora-la-vittoria-grande-prova-di-squadra-video-e-foto/",
+      "data": "24 ott, 22:41"
+     }
+    ]
+   }
+  },
   {
    "id": "arezzo-benevento-0-3-24-ottobre",
    "titolo": "Serie B, Arezzo-Benevento 0-3: reti di Siatounis, Okereke e Mignani",
@@ -217,12 +385,12 @@
    "id": "sant-agata-de-goti-pronto-soccorso-h24-tar-puglianello",
    "titolo": "Sant'Agata de' Goti, il TAR ordina all'ospedale San Pio di riportare il pronto soccorso h24",
    "titolo_google": "Sant'Agata de' Goti, il TAR ordina il pronto soccorso h24",
-   "sintesi": "Il TAR Campania ha accolto il ricorso del Comune di Puglianello e ha ordinato all'Azienda ospedaliera San Pio di far tornare il pronto soccorso di Sant'Agata de' Goti aperto 24 ore su 24. Se non lo fa in 60 giorni, interviene un commissario già nominato.",
+   "sintesi": "Il TAR Campania ha accolto il ricorso del Comune di Puglianello e ha ordinato all'Azienda ospedaliera San Pio di riaprire 24 ore su 24 il pronto soccorso di Sant'Agata de' Goti, oggi aperto dalle 8 alle 18. Se non lo fa in 60 giorni, interviene un commissario già nominato.",
    "categoria": "altro",
    "zona": "caudina",
    "immagine": "pronto-soccorso",
    "luogo": "Sant'Agata de' Goti",
-   "pubblicato": "2026-10-24T19:18:00+02:00",
+   "pubblicato": "2026-10-25T00:00+02:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
@@ -233,36 +401,68 @@
     {
      "nome": "Anteprima24",
      "url": "https://www.anteprima24.it/benevento/sanita-rubano-dal-tar-un-altro-risultato-importante-sul-pronto-soccorso-di-santagata-de-goti/"
+    },
+    {
+     "nome": "Il Mattino",
+     "url": "https://www.ilmattino.it/benevento/il_tar_pronto_soccorso_sia_riattivato_24_ore_su_24-9846472.html"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/24/ps-santagata-de-goti-errico-determinante-rubano-ora-si-attui-subito-lordinanza-del-tar/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/pronto-soccorso-santagata-degoti-errico-determinante-rubano-ora-si-attui-subito-lordinanza-del-tar/"
     }
    ],
    "articolo": {
     "racconto": [
      {
+      "testo": "Oggi il pronto soccorso dell'ospedale Sant'Alfonso Maria de' Liguori di Sant'Agata de' Goti è aperto solo dalle 8 alle 18, scrive Il Mattino. Con l'ordinanza n. 5913 il TAR obbliga l'Azienda ospedaliera San Pio a dare seguito a una sua decisione del 2025 (la n. 2514), che già chiedeva di riaprirlo 24 ore su 24 e a cui l'Azienda non aveva dato esecuzione. Per i giudici il numero di persone che lavorano nell'Azienda non mostra che sia impossibile tenerlo aperto tutto il giorno.",
+      "fonti": [
+       "Il Mattino"
+      ],
+      "giorno": "2026-10-25"
+     },
+     {
+      "testo": "Secondo il giornale a Sant'Agata lavorano tre medici di pronto soccorso, mentre ne servirebbero cinque o sei per coprire tutti i turni. Al pronto soccorso del Rummo, a Benevento, ci sono sei medici titolari sui dodici richiesti, più sei medici esterni con contratti di collaborazione.",
+      "fonti": [
+       "Il Mattino"
+      ],
+      "giorno": "2026-10-25"
+     },
+     {
       "testo": "Il pronto soccorso dell'ospedale di Sant'Agata de' Goti dovrà tornare aperto 24 ore su 24. Lo ha ordinato il TAR Campania, il tribunale che giudica i ricorsi contro gli atti della pubblica amministrazione, con l'ordinanza n. 5913 del 23 ottobre 2026. Il ricorso era del Comune di Puglianello e l'ordine è rivolto all'Azienda ospedaliera San Pio, la società sanitaria che gestisce anche l'ospedale di Sant'Agata.",
       "fonti": [
        "NTR24",
        "Anteprima24"
-      ]
+      ],
+      "giorno": "2026-10-24"
      },
      {
       "testo": "Se l'Azienda non esegue l'ordine entro 60 giorni, interviene un commissario ad acta, cioè una persona incaricata dal tribunale di fare al posto dell'ente. Secondo le due testate il commissario è già stato nominato.",
       "fonti": [
        "NTR24",
        "Anteprima24"
-      ]
+      ],
+      "giorno": "2026-10-24"
      },
      {
       "testo": "La notizia è stata diffusa dal sindaco di Puglianello, Francesco Maria Rubano, che è anche parlamentare di Forza Italia. Rubano ricorda che l'udienza del 23 ottobre è la seconda volta che un giudice interviene sul tema: una prima decisione del TAR, nel novembre dello scorso anno, aveva evitato la chiusura del pronto soccorso e dell'ospedale. Per Rubano il pronto soccorso «non può funzionare soltanto fino alle 18» e chiede alla direzione generale del San Pio di riaprirlo h24 subito.",
       "fonti": [
        "NTR24",
        "Anteprima24"
-      ]
+      ],
+      "giorno": "2026-10-24"
      },
      {
-      "testo": "Il consigliere regionale Fernando Errico ha commentato la decisione come un passaggio importante per il territorio e per il diritto alla salute nelle aree interne.",
+      "testo": "Il consigliere regionale Fernando Errico ha commentato la decisione come un passaggio importante per il territorio e per il diritto alla salute nelle aree interne. Ha chiesto alla direzione dell'Azienda ospedaliera San Pio di non aspettare la scadenza dei 60 giorni e di riaprire subito il pronto soccorso h24, e ha detto che all'ospedale di Sant'Agata servono anche più personale e più servizi.",
       "fonti": [
-       "NTR24"
-      ]
+       "NTR24",
+       "BeneventoNews24",
+       "TV7 Benevento"
+      ],
+      "giorno": "2026-10-24"
      }
     ],
     "cronologia": [
@@ -290,6 +490,14 @@
        "NTR24",
        "Anteprima24"
       ]
+     },
+     {
+      "testo": "L'ordinanza n. 5913 del TAR, il ricorso del Comune di Puglianello e i 60 giorni prima del commissario.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24",
+       "Il Mattino"
+      ]
      }
     ],
     "divergono": [],
@@ -309,8 +517,34 @@
       "titolo": "Sanità, Rubano: “Dal Tar un altro risultato importante sul pronto soccorso di Sant’Agata de’ Goti”",
       "url": "https://www.anteprima24.it/benevento/sanita-rubano-dal-tar-un-altro-risultato-importante-sul-pronto-soccorso-di-santagata-de-goti/",
       "data": "24 ott, 19:18"
+     },
+     {
+      "nome": "Il Mattino",
+      "titolo": "Ospedale San Pio di Benevento, Tar: «Il pronto soccorso sia riattivato 24 ore su 24»",
+      "url": "https://www.ilmattino.it/benevento/il_tar_pronto_soccorso_sia_riattivato_24_ore_su_24-9846472.html",
+      "data": "25 ott, 00:00"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "PS Sant’Agata De’ Goti, Errico: “Determinante Rubano. Ora si attui subito l’ordinanza del Tar”",
+      "url": "https://www.beneventonews24.it/2026/10/24/ps-santagata-de-goti-errico-determinante-rubano-ora-si-attui-subito-lordinanza-del-tar/",
+      "data": "24 ott, 21:03"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Pronto soccorso Sant’Agata De’Goti, Errico: «Determinante Rubano. Ora si attui subito l’ordinanza del Tar»",
+      "url": "https://www.tvsette.net/pronto-soccorso-santagata-degoti-errico-determinante-rubano-ora-si-attui-subito-lordinanza-del-tar/",
+      "data": "24 ott, 22:35"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Il Mattino scrive che oggi il pronto soccorso di Sant'Agata è aperto solo dalle 8 alle 18 e ha tre medici dei cinque o sei che servirebbero; il consigliere regionale Errico chiede di riaprirlo h24 senza aspettare i 60 giorni.",
+     "fonti": [
+      "Il Mattino",
+      "BeneventoNews24"
+     ],
+     "quando": "2026-10-25T06:11+01:00"
+    }
    },
    "foto": "pronto-soccorso-2"
   },
@@ -3680,12 +3914,16 @@
      "url": "https://sport.ntr24.tv/2026/10/23/basket-serie-b-la-yolo-benevento-torna-in-casa-sabato-il-match-contro-la-dinamo-taranto/"
     },
     {
-     "nome": "BeneventoNews24",
-     "url": "https://www.beneventonews24.it/2026/10/23/basket-la-yolo-torna-in-casa-sabato-il-match-contro-la-dinamo-taranto/"
-    },
-    {
      "nome": "Miwa Basket Benevento",
      "url": "https://www.cestisticabenevento.it/2026/10/24/unindomita-yolo-cede-il-passo-alla-capolista-taranto/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/24/basket-unindomita-yolo-cede-il-passo-alla-capolista-dinamo-taranto/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/unindomita-yolo-cede-il-passo-alla-capolista-taranto/"
     }
    ],
    "articolo": {
@@ -3693,7 +3931,9 @@
      {
       "testo": "Sabato 24 ottobre la YOLO+ Miwa Basket Benevento ha perso 55-74 al PalaMiwa contro la Dinamo Taranto, capolista del girone e ancora imbattuta. Le sannite hanno giocato senza Tolardo e Manganiello, e secondo la società le rotazioni sono rimaste ridotte all'osso.",
       "fonti": [
-       "Miwa Basket Benevento"
+       "Miwa Basket Benevento",
+       "Anteprima24",
+       "BeneventoNews24 (24/10)"
       ],
       "giorno": "2026-10-24"
      },
@@ -3736,6 +3976,14 @@
        "NTR24 Sport",
        "BeneventoNews24"
       ]
+     },
+     {
+      "testo": "Il risultato, 55-74, e le assenze di Tolardo e Manganiello.",
+      "fonti": [
+       "Miwa Basket Benevento",
+       "Anteprima24",
+       "BeneventoNews24 (24/10)"
+      ]
      }
     ],
     "divergono": [],
@@ -3758,6 +4006,18 @@
       "titolo": "Un’indomita YOLO+ cede il passo alla capolista Taranto",
       "url": "https://www.cestisticabenevento.it/2026/10/24/unindomita-yolo-cede-il-passo-alla-capolista-taranto/",
       "data": "24 ott, 20:04"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Un’indomita YOLO+ cede il passo alla capolista Taranto",
+      "url": "https://www.anteprima24.it/benevento/unindomita-yolo-cede-il-passo-alla-capolista-taranto/",
+      "data": "24 ott, 22:40"
+     },
+     {
+      "nome": "BeneventoNews24 (24/10)",
+      "titolo": "Basket, un’indomita YOLO+ cede il passo alla capolista Dinamo Taranto",
+      "url": "https://www.beneventonews24.it/2026/10/24/basket-unindomita-yolo-cede-il-passo-alla-capolista-dinamo-taranto/",
+      "data": "24 ott, 21:10"
      }
     ],
     "aggiornamento": {
@@ -3768,7 +4028,10 @@
      "quando": "2026-10-24T20:08+02:00",
      "titolo_prima": "Basket B femminile, la YOLO+ Miwa Benevento ospita la Dinamo Taranto sabato 24 ottobre alle 18 al PalaMiwa"
     }
-   }
+   },
+   "comunicati": [
+    "faf96231c61f"
+   ]
   },
   {
    "id": "cusano-mutri-erasmus-stem-girls-ic-kennedy",
@@ -3960,130 +4223,110 @@
   },
   {
    "id": "accademia-volley-benevento-serie-c-koala-bears-24-ottobre",
-   "titolo": "Pallavolo, Serie C femminile: la Pasta Rummo Accademia gioca a San Giuseppe Vesuviano sabato 24 ottobre",
-   "titolo_google": "Accademia Volley Benevento a San Giuseppe Vesuviano, 24/10",
-   "sintesi": "Sabato 24 ottobre alle 18:30 la Pasta Rummo Accademia di Benevento gioca la prima trasferta della Serie C femminile contro le Koala Bears a San Giuseppe Vesuviano. All'esordio ha vinto 3-0 con la Volley Project Pontecagnano.",
+   "titolo": "Pallavolo, Serie C femminile: la Pasta Rummo Accademia vince 3-0 a San Giuseppe Vesuviano",
+   "titolo_google": "Volley, Accademia Benevento vince 3-0 con le Koala Bears",
+   "sintesi": "Sabato 24 ottobre la Pasta Rummo Accademia di Benevento ha vinto 3-0 (25-23, 25-13, 25-17) sul campo delle Koala Bears a San Giuseppe Vesuviano, nella seconda giornata della Serie C femminile. Due vittorie su due, sei punti e nessun set perso; sabato 31 ottobre gioca in casa con l'Arzano.",
    "categoria": "sport",
    "sport": "pallavolo",
    "zona": "benevento",
    "luogo": "San Giuseppe Vesuviano (Napoli)",
-   "pubblicato": "2026-10-23T06:31:00+02:00",
+   "pubblicato": "2026-10-25T00:16+02:00",
    "stato": "ufficiale",
    "rilevante": false,
    "fonti": [
     {
      "nome": "Accademia Volley Benevento",
-     "url": "https://www.accademiavolley.com/pasta-rummo-accademia-alla-prima-trasferta-stagionale/"
+     "url": "https://www.accademiavolley.com/la-pasta-rummo-accademia-concede-il-bis/"
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Sabato 24 ottobre alle 18:30 la Pasta Rummo Accademia, squadra femminile dell'Accademia Volley Benevento, gioca la sua prima partita fuori casa della stagione. Va a San Giuseppe Vesuviano, in provincia di Napoli, contro le Koala Bears, per la seconda giornata del campionato di Serie C femminile.",
+      "testo": "Sabato 24 ottobre la Pasta Rummo Accademia, la squadra femminile dell'Accademia Volley Benevento, ha vinto 3-0 sul campo delle Koala Bears a San Giuseppe Vesuviano, nella seconda giornata della Serie C femminile. I set sono finiti 25-23, 25-13 e 25-17. È la seconda vittoria di fila: la squadra di Vittorio Ruscello sale a sei punti e non ha ancora perso un set.",
       "fonti": [
-       "Accademia Volley Benevento"
-      ]
+       "Accademia Volley Benevento (24/10)"
+      ],
+      "giorno": "2026-10-24"
+     },
+     {
+      "testo": "Il primo set è stato il più combattuto: le padrone di casa sono rimaste vicine fino alla fine e le beneventane l'hanno chiuso solo sul 25-23. Negli altri due la differenza si è vista di più.",
+      "fonti": [
+       "Accademia Volley Benevento (24/10)"
+      ],
+      "giorno": "2026-10-24"
+     },
+     {
+      "testo": "Sabato 31 ottobre la Pasta Rummo Accademia torna alla Palestra Rampone di Benevento e ospita l'Arzano, che sabato ha perso in quattro set con l'Academy Volley Fiamma e alla prima giornata aveva battuto 3-0 proprio le Koala Bears.",
+      "fonti": [
+       "Accademia Volley Benevento (24/10)"
+      ],
+      "giorno": "2026-10-24"
+     },
+     {
+      "testo": "Prima della partita: sabato 24 ottobre alle 18:30 la Pasta Rummo Accademia, squadra femminile dell'Accademia Volley Benevento, giocava la sua prima partita fuori casa della stagione, a San Giuseppe Vesuviano, in provincia di Napoli, contro le Koala Bears, per la seconda giornata del campionato di Serie C femminile.",
+      "fonti": [
+       "Accademia Volley Benevento (23/10)"
+      ],
+      "giorno": "2026-10-23"
      },
      {
       "testo": "Le beneventane arrivano dalla vittoria per 3-0 contro la Volley Project Pontecagnano, ottenuta sabato scorso alla Palestra Rampone. L'allenatore è Vittorio Ruscello. Le Koala Bears, secondo la società, vengono dalla sconfitta per 3-0 sul campo dell'Arzano e cercano il riscatto.",
       "fonti": [
-       "Accademia Volley Benevento"
+       "Accademia Volley Benevento (23/10)"
+      ],
+      "giorno": "2026-10-23"
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "17 ottobre",
+      "fatto": "All'esordio la Pasta Rummo Accademia batte 3-0 la Volley Project Pontecagnano alla Palestra Rampone.",
+      "fonti": [
+       "Accademia Volley Benevento (23/10)"
       ]
      },
      {
-      "testo": "Dopo la trasferta, sabato 31 ottobre la squadra torna alla Palestra Rampone per affrontare proprio l'Arzano.",
+      "data": "24 ottobre",
+      "fatto": "Vittoria 3-0 a San Giuseppe Vesuviano contro le Koala Bears.",
       "fonti": [
-       "Accademia Volley Benevento"
+       "Accademia Volley Benevento (24/10)"
+      ]
+     },
+     {
+      "data": "31 ottobre",
+      "fatto": "Partita in casa, alla Palestra Rampone, contro l'Arzano.",
+      "fonti": [
+       "Accademia Volley Benevento (24/10)"
       ]
      }
     ],
-    "cronologia": [],
     "concordano": [],
     "divergono": [],
-    "non_si_sa": [],
+    "non_si_sa": [
+     "A che ora si gioca la partita con l'Arzano del 31 ottobre."
+    ],
     "fonti": [
      {
-      "nome": "Accademia Volley Benevento",
+      "nome": "Accademia Volley Benevento (24/10)",
+      "titolo": "La Pasta Rummo Accademia concede il bis",
+      "url": "https://www.accademiavolley.com/la-pasta-rummo-accademia-concede-il-bis/",
+      "data": "25 ott, 00:16"
+     },
+     {
+      "nome": "Accademia Volley Benevento (23/10)",
       "titolo": "Pasta Rummo Accademia alla prima trasferta stagionale",
       "url": "https://www.accademiavolley.com/pasta-rummo-accademia-alla-prima-trasferta-stagionale/",
       "data": "23 ott, 06:31"
      }
-    ]
-   }
-  },
-  {
-   "id": "montesarchio-ambito-b3-assegni-di-cura-voucher-saldo",
-   "titolo": "Montesarchio, assegni di cura e voucher: pronta la determina per il saldo, soldi attesi a inizio della prossima settimana",
-   "titolo_google": "Assegni di cura e voucher, Ambito B3: saldo la prossima settimana",
-   "sintesi": "L'Ambito sociale B3, con capofila Montesarchio, ha firmato la determina per pagare il saldo di assegni di cura e voucher. Le somme dovrebbero arrivare alle famiglie nei primi giorni della prossima settimana.",
-   "categoria": "altro",
-   "zona": "caudina",
-   "luogo": "Montesarchio",
-   "pubblicato": "2026-10-22T22:35:00+02:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/22/assegni-di-cura-e-voucher-lambito-b3-completa-liter-per-il-saldo-accrediti-attesi-nei-primi-giorni-della-prossima-settimana/"
-    },
-    {
-     "nome": "Il Caudino",
-     "url": "https://ilcaudino.it/montesarchio-le-settimana-prossima-arrivano-gli-assegni-di-cura-e-i-voucher-uid-5/"
+    ],
+    "aggiornamento": {
+     "testo": "Sabato 24 ottobre la Pasta Rummo Accademia ha vinto 3-0 a San Giuseppe Vesuviano contro le Koala Bears.",
+     "fonti": [
+      "Accademia Volley Benevento (24/10)"
+     ],
+     "quando": "2026-10-25T06:11+01:00",
+     "titolo_prima": "Pallavolo, Serie C femminile: la Pasta Rummo Accademia gioca a San Giuseppe Vesuviano sabato 24 ottobre"
     }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Gli assegni di cura e i voucher del saldo arriveranno alle famiglie dell'Ambito sociale B3 probabilmente nei primi giorni della prossima settimana. Il Comune di Montesarchio, che è il capofila (guida) dei 14 Comuni dell'Ambito, ha completato la parte amministrativa con la determina di liquidazione, cioè l'atto che autorizza il pagamento: è la numero 338 del 21 ottobre 2026, registrata il 22 ottobre.",
-      "fonti": [
-       "NTR24",
-       "Il Caudino"
-      ]
-     },
-     {
-      "testo": "Si tratta del saldo delle risorse del Programma regionale assegni di cura e voucher, finanziato con il Fondo per le non autosufficienze. Ora devono essere emessi i mandati di pagamento, poi le somme saranno accreditate.",
-      "fonti": [
-       "NTR24",
-       "Il Caudino"
-      ]
-     },
-     {
-      "testo": "Il presidente dell'Ambito e assessore alle Politiche sociali di Montesarchio, Antonio De Mizio, dice di capire l'attesa delle famiglie. Spiega che i tempi dipendono dalla procedura prevista dalla legge: prima arrivano i fondi dalla Regione Campania, poi le famiglie rendicontano le spese sostenute (almeno il 70%), poi gli uffici fanno l'istruttoria finale e la determina.",
-      "fonti": [
-       "NTR24",
-       "Il Caudino"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "La determina di liquidazione è stata adottata e i soldi sono attesi all'inizio della prossima settimana.",
-      "fonti": [
-       "NTR24",
-       "Il Caudino"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [
-     "La data esatta dell'accredito e l'importo per ogni famiglia."
-    ],
-    "fonti": [
-     {
-      "nome": "NTR24",
-      "titolo": "Assegni di cura e voucher, l’Ambito B3 completa l’iter per il saldo: accrediti attesi nei primi giorni della prossima settimana",
-      "url": "https://www.ntr24.tv/2026/10/22/assegni-di-cura-e-voucher-lambito-b3-completa-liter-per-il-saldo-accrediti-attesi-nei-primi-giorni-della-prossima-settimana/",
-      "data": "22 ott, 22:35"
-     },
-     {
-      "nome": "Il Caudino",
-      "titolo": "Montesarchio: le settimana prossima arrivano gli assegni di cura e i voucher",
-      "url": "https://ilcaudino.it/montesarchio-le-settimana-prossima-arrivano-gli-assegni-di-cura-e-i-voucher-uid-5/",
-      "data": "22 ott, 19:43"
-     }
-    ]
    }
   },
   {
@@ -4531,148 +4774,6 @@
    "foto": "scuolabus-4"
   },
   {
-   "id": "benevento-contrade-nord-ricorso-tar-impianto-accumulo",
-   "titolo": "Benevento, il Comitato Contrade Nord fa ricorso al Tar contro un nuovo impianto di accumulo di energia",
-   "titolo_google": "Benevento Nord, ricorso al Tar contro l'impianto di accumulo",
-   "sintesi": "Un gruppo di soci del Comitato Contrade Benevento Nord ha depositato il 21 ottobre al Tar il ricorso contro l'autorizzazione del Ministero dell'Ambiente a un impianto di accumulo (BESS) da 51 MW. Il Comitato chiede alla Provincia di sostenerlo anche contro un impianto fotovoltaico autorizzato dalla Regione.",
-   "categoria": "altro",
-   "zona": "benevento",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-22T17:27:00+02:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/tutela-del-territorio-e-dellambiente-il-comitato-contrade-benevento-nord-ricorre-al-tar/"
-    },
-    {
-     "nome": "InfoSannio",
-     "url": "https://www.infosannionews.it/ambiente/2026/strutture-energetiche-il-comitato-contrade-benevento-area-nord-passa-allazione-con-un-ricorso-al-tar.html"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Il 21 ottobre un gruppo di soci del Comitato «Contrade Benevento Nord per la tutela del territorio e l'ambiente – No Bess», con il sostegno del Comitato, ha notificato e depositato al Tar (il tribunale amministrativo) un ricorso contro il Decreto Direttoriale n. 205 del 30 luglio 2026 del Ministero dell'Ambiente e della Sicurezza Energetica.",
-      "fonti": [
-       "Anteprima24",
-       "InfoSannio"
-      ]
-     },
-     {
-      "testo": "Il decreto autorizza un impianto di accumulo elettrochimico di energia elettrica (BESS, in pratica grandi batterie) da 51 MW, con le opere collegate. Si aggiunge a un altro impianto da 120 MW già autorizzato dallo stesso Ministero in zona Murata.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "Il Comitato scrive che nell'area nord di Benevento sono già autorizzati o in istruttoria 33 impianti di produzione di energia, per 1.792,32 MW: oltre il 28% della potenza autorizzata in tutta la provincia. Sono dati citati dal Comitato, che rimanda al portale SITI della Provincia e ai dati di Terna. Dice anche che la Provincia aveva dato parere non favorevole, che il Ministero ha respinto.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "Il Comitato cita anche il decreto dirigenziale n. 67 del 23 settembre 2026 della Regione Campania, che ha autorizzato il fotovoltaico «Olivola» della società RWE Renewables Italia: 78 MW su circa 98 ettari, con oltre 112mila pannelli. Anche qui la Provincia aveva espresso parere contrario.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "Il Comitato chiede alla Provincia di continuare a sostenerlo e di impugnare davanti al Tar anche il decreto regionale, chiedendo se possibile la sospensione dell'autorizzazione. Precisa che la sua non è una battaglia contro le energie rinnovabili, ma per la tutela delle aree agricole.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "Il ricorso al Tar, depositato il 21 ottobre contro il Decreto Direttoriale n. 205 del 30 luglio 2026 del Ministero dell'Ambiente.",
-      "fonti": [
-       "Anteprima24",
-       "InfoSannio"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [
-     "Quando il Tar fisserà l'udienza.",
-     "Se la Provincia deciderà di impugnare anche il decreto della Regione.",
-     "Cosa rispondono il Ministero e le società interessate: le fonti riportano solo il comunicato del Comitato."
-    ],
-    "fonti": [
-     {
-      "nome": "Anteprima24",
-      "titolo": "Tutela del territorio e dell’ambiente, il Comitato Contrade Benevento Nord ricorre al Tar",
-      "url": "https://www.anteprima24.it/benevento/tutela-del-territorio-e-dellambiente-il-comitato-contrade-benevento-nord-ricorre-al-tar/",
-      "data": "22 ott, 17:27"
-     },
-     {
-      "nome": "InfoSannio",
-      "titolo": "Strutture energetiche.Il Comitato Contrade Benevento Area Nord passa all’azione con un ricorso al Tar",
-      "url": "https://www.infosannionews.it/ambiente/2026/strutture-energetiche-il-comitato-contrade-benevento-area-nord-passa-allazione-con-un-ricorso-al-tar.html",
-      "data": "22 ott, 16:40"
-     }
-    ]
-   }
-  },
-  {
-   "id": "carofano-mugello-fx-italian-series-pole-secondo",
-   "titolo": "Automobilismo, il pilota sannita Valentino Carofano in pole e secondo al Mugello nella FX Italian Series",
-   "titolo_google": "Carofano al Mugello: pole e secondo posto, FX Italian Series",
-   "sintesi": "Il pilota sannita Valentino Carofano, della Valentino Racing Team, ha conquistato la pole position e chiuso secondo nel quinto round della FX Italian Series sul circuito del Mugello.",
-   "categoria": "sport",
-   "sport": "altro",
-   "zona": "telesina",
-   "luogo": "Mugello",
-   "pubblicato": "2026-10-22T17:16:00+02:00",
-   "stato": "una_fonte",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/carofano-che-spettacolo-al-mugello-pole-position-e-secondo-posto-il-sannita-vola-nella-fx-italian-series/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Valentino Carofano, pilota sannita (Anteprima24 lo definisce «telesino», della Valle Telesina) che corre con la Valentino Racing Team, al Mugello ha conquistato la pole position (il primo posto in griglia) e ha chiuso la gara al secondo posto. Era il quinto round stagionale del campionato italiano FX Italian Series.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "Il fine settimana era cominciato in salita: nelle prove libere del venerdì la monoposto non rispondeva come previsto e Carofano girava intorno al quinto tempo. Il team ha lavorato sull'assetto e al sabato mattina il pilota ha ottenuto il miglior tempo in qualifica.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "In gara non è arrivata la vittoria che sembrava possibile dopo la pole, ma il secondo posto vale punti importanti per il campionato. Carofano era arrivato al Mugello dopo il successo di Vallelunga.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "La classifica del campionato dopo il quinto round: l'articolo non la riporta."
-    ],
-    "fonti": [
-     {
-      "nome": "Anteprima24",
-      "titolo": "Carofano, che spettacolo al Mugello! Pole position e secondo posto: il sannita vola nella FX Italian Series",
-      "url": "https://www.anteprima24.it/benevento/carofano-che-spettacolo-al-mugello-pole-position-e-secondo-posto-il-sannita-vola-nella-fx-italian-series/",
-      "data": "22 ott, 17:16"
-     }
-    ]
-   }
-  },
-  {
    "id": "benevento-air-bus-deviazioni-rione-ferrovia-24-ottobre",
    "titolo": "Benevento, sabato 24 ottobre dalle 15 alle 19 i bus AIR delle linee 01, 05, 07 e 11 cambiano percorso per una gara podistica",
    "titolo_google": "Benevento, bus AIR deviati sabato 24 ottobre per la corsa",
@@ -4736,73 +4837,6 @@
    }
   },
   {
-   "id": "provincia-reticolo-fluviale-monitoraggio-aree-rischio",
-   "titolo": "Provincia di Benevento, controlli sui fiumi Calore e Sabato nelle aree a rischio: il presidente Lombardi chiede fondi alla Regione",
-   "titolo_google": "Fiumi Calore e Sabato, la Provincia avvia i controlli",
-   "sintesi": "Il presidente della Provincia, Nino Lombardi, ha disposto un monitoraggio delle aree a maggior rischio lungo i fiumi principali del Sannio, dal Calore al Sabato. Alla Regione chiede fondi, perché la Provincia gestisce i fiumi ma non ha risorse per intervenire.",
-   "categoria": "altro",
-   "zona": "provincia",
-   "luogo": "Provincia di Benevento",
-   "pubblicato": "2026-10-22T16:42:00+02:00",
-   "stato": "ufficiale",
-   "rilevante": false,
-   "immagine": "argini",
-   "fonti": [
-    {
-     "nome": "Provincia di Benevento",
-     "url": "https://www.provincia.benevento.it/node/61557"
-    },
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/22/reticolo-fluviale-lombardi-sollecita-la-regione-sui-fondi-e-avvia-il-monitoraggio-delle-aree-a-rischio-nel-sannio/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Giovedì 22 ottobre il presidente della Provincia di Benevento, Nino Lombardi, ha disposto un monitoraggio delle aree a maggior rischio lungo i fiumi principali del territorio. Lo ha deciso al termine di una riunione con i dirigenti dei settori che si occupano di strade e di acque. Il controllo parte dai punti dove i fiumi si incontrano con altri corsi d'acqua.",
-      "fonti": [
-       "Provincia di Benevento"
-      ]
-     },
-     {
-      "testo": "Il monitoraggio riguarderà in particolare il fiume Calore, a Ponticelli e Pantano, e il fiume Sabato, al ponte Santa Maria degli Angeli, che attraversano la città di Benevento. Si estenderà poi al resto dei fiumi di competenza della Provincia, con attenzione all'Alto Sannio e al Tammaro. Si farà d'intesa con il Comune di Benevento e con il sindaco Mastella, anche con tecnologie avanzate. Lo scopo è presentare alla Regione Campania un quadro aggiornato di quello che serve al territorio.",
-      "fonti": [
-       "Provincia di Benevento"
-      ]
-     },
-     {
-      "testo": "Il motivo dell'appello alla Regione è che la Provincia ha la competenza sui fiumi principali ma nessuna risorsa assegnata per intervenire, e il suo bilancio dipende da fondi che arrivano da altri enti. Lombardi sottolinea che la Regione, invece, tiene per sé i fiumi secondari insieme ai soldi per curarli. Dice anche che la Provincia di Benevento è l'unica ad aver presentato alla Regione, insieme a Confindustria Benevento, un piano dei lavori di manutenzione dei fiumi.",
-      "fonti": [
-       "Provincia di Benevento"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Quando comincerà il monitoraggio e quanto durerà.",
-     "Se la Regione risponderà con dei fondi e di quanto."
-    ],
-    "fonti": [
-     {
-      "nome": "Provincia di Benevento",
-      "titolo": "IL PRESIDENTE DELLA PROVINCIA DISPONE PER UN MONITORAGGIO DI CONTROLLO SUL RETICOLO IDROGRAFICO PRINCIPALE E CHIEDE ALLA REGIONE CAMPANIA STANZIAMENTI ADEGUATI AI BISOGNI DEL TERRITORIO SANNITA",
-      "url": "https://www.provincia.benevento.it/node/61557",
-      "data": "22 ott, 16:42"
-     },
-     {
-      "nome": "NTR24",
-      "titolo": "Reticolo fluviale, Lombardi sollecita la Regione sui fondi e avvia il monitoraggio delle aree a rischio nel Sannio",
-      "url": "https://www.ntr24.tv/2026/10/22/reticolo-fluviale-lombardi-sollecita-la-regione-sui-fondi-e-avvia-il-monitoraggio-delle-aree-a-rischio-nel-sannio/",
-      "data": "22 ott, 16:52"
-     }
-    ]
-   },
-   "foto": "argini-4"
-  },
-  {
    "id": "santagata-de-goti-interruzione-luce-28-ottobre",
    "titolo": "Sant'Agata de' Goti, mercoledì 28 ottobre senza luce dalle 8 alle 15:30 per lavori urgenti",
    "titolo_google": "Sant'Agata de' Goti, niente luce il 28 ottobre per lavori",
@@ -4858,199 +4892,6 @@
     ]
    },
    "foto": "luce-2"
-  },
-  {
-   "id": "cautano-truffe-finti-carabinieri-avviso",
-   "titolo": "Cautano, il comandante dei Carabinieri avverte: false divise chiedono soldi e gioielli",
-   "titolo_google": "Cautano, truffe di finti carabinieri: l'avviso dell'Arma",
-   "sintesi": "Il comandante della Stazione dei Carabinieri di Cautano avverte che sul territorio girano persone che si spacciano per carabinieri o poliziotti e chiedono denaro, gioielli o altri valori.",
-   "categoria": "altro",
-   "zona": "caudina",
-   "luogo": "Cautano",
-   "pubblicato": "2026-10-22T15:24:00+02:00",
-   "stato": "una_fonte",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/non-consegnate-soldi-o-gioielli-lallerta-truffe-nel-sannio/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Il comandante della Stazione dei Carabinieri di Cautano, paese della Valle Telesina, ha lanciato un avviso ai cittadini: sul territorio sono stati segnalati tentativi di truffa di persone che si presentano come appartenenti all'Arma o alla Questura e chiedono denaro, gioielli o altri oggetti di valore.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "I truffatori possono usare motivi urgenti per spingere le vittime ad agire senza riflettere. Il comandante raccomanda di non consegnare soldi o gioielli a sconosciuti e di non aprire la porta a chi non si è identificato.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "Se arriva una telefonata sospetta, bisogna interrompere la conversazione e chiamare direttamente il 112 per le verifiche. Ogni episodio va segnalato subito alle forze dell'ordine. Il comandante chiede anche di avvisare gli anziani e le persone più fragili, spesso presi di mira, e di condividere l'avviso.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Quanti tentativi ci sono stati e dove precisamente.",
-     "Se qualcuno ha già consegnato soldi o gioielli."
-    ],
-    "fonti": [
-     {
-      "nome": "Anteprima24",
-      "titolo": "“Non consegnate soldi o gioielli”: l’allerta truffe nel Sannio",
-      "url": "https://www.anteprima24.it/benevento/non-consegnate-soldi-o-gioielli-lallerta-truffe-nel-sannio/",
-      "data": "22 ott, 15:24"
-     }
-    ]
-   }
-  },
-  {
-   "id": "miwa-basket-benevento-ragusa-25-ottobre",
-   "titolo": "Basket B Interregionale, la Miwa Benevento domenica 25 ottobre a Ragusa contro la Virtus Kleb",
-   "titolo_google": "Basket B: Miwa Benevento a Ragusa domenica alle 18",
-   "sintesi": "La Miwa Basket Benevento gioca domenica 25 ottobre alle 18 al PalaPadua di Ragusa contro la Virtus Kleb, che ha vinto le ultime due partite. I sanniti arrivano da una vittoria contro Messina.",
-   "categoria": "sport",
-   "sport": "basket",
-   "zona": "benevento",
-   "luogo": "Ragusa",
-   "pubblicato": "2026-10-22T14:53:00+02:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "NTR24 Sport",
-     "url": "https://sport.ntr24.tv/2026/10/22/basket-la-miwa-benevento-fa-tappa-a-ragusa-domenica-alle-18-il-match-di-b-interregionale-contro-la-virtus/"
-    },
-    {
-     "nome": "BeneventoNews24",
-     "url": "https://www.beneventonews24.it/2026/10/22/la-miwa-fa-tappa-a-ragusa-domenica-alle-18-il-match-contro-la-virtus/"
-    },
-    {
-     "nome": "Benevento Giornale",
-     "url": "https://www.beneventogiornale.com/2026/10/22/la-miwa-fa-tappa-a-ragusa-domenica-alle-18-il-match-contro-la-virtus-kleb-ragusa/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "La Miwa Basket Benevento gioca domenica 25 ottobre alle 18 in trasferta contro la Virtus Kleb Ragusa, sul parquet del PalaPadua, nel campionato di Serie B Interregionale. A dirigere la partita saranno Matteo Bertoni di Anzio e Roberto Rizzuto di Latina.",
-      "fonti": [
-       "NTR24 Sport",
-       "BeneventoNews24",
-       "Benevento Giornale"
-      ]
-     },
-     {
-      "testo": "Il Ragusa arriva da due vittorie di fila, contro Marigliano e Rende, ed è considerata una delle squadre da battere. Ha una rosa profonda: tra i giocatori più citati ci sono la guardia olandese Vijber, con 16,8 punti di media, il playmaker Lanzi, le ali Bandiera e Fabi e il centro Peterson.",
-      "fonti": [
-       "NTR24 Sport",
-       "BeneventoNews24",
-       "Benevento Giornale"
-      ]
-     },
-     {
-      "testo": "La Miwa viene da una vittoria ben giocata contro Messina, che ha dato fiducia alla squadra dell'allenatore Parrillo. L'obiettivo dei sanniti è dare continuità ai risultati su un campo difficile.",
-      "fonti": [
-       "NTR24 Sport",
-       "BeneventoNews24",
-       "Benevento Giornale"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "Data e ora della partita, domenica 25 ottobre alle 18 a Ragusa.",
-      "fonti": [
-       "NTR24 Sport",
-       "BeneventoNews24",
-       "Benevento Giornale"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [],
-    "fonti": [
-     {
-      "nome": "NTR24 Sport",
-      "titolo": "Basket, la Miwa Benevento fa tappa a Ragusa: domenica alle 18 il match di B Interregionale contro la Virtus",
-      "url": "https://sport.ntr24.tv/2026/10/22/basket-la-miwa-benevento-fa-tappa-a-ragusa-domenica-alle-18-il-match-di-b-interregionale-contro-la-virtus/",
-      "data": "22 ott, 10:49"
-     },
-     {
-      "nome": "BeneventoNews24",
-      "titolo": "La Miwa fa tappa a Ragusa: domenica alle 18 il match contro la Virtus",
-      "url": "https://www.beneventonews24.it/2026/10/22/la-miwa-fa-tappa-a-ragusa-domenica-alle-18-il-match-contro-la-virtus/",
-      "data": "22 ott, 12:21"
-     },
-     {
-      "nome": "Benevento Giornale",
-      "titolo": "La Miwa fa tappa a Ragusa – Domenica alle 18 il match contro la Virtus Kleb Ragusa",
-      "url": "https://www.beneventogiornale.com/2026/10/22/la-miwa-fa-tappa-a-ragusa-domenica-alle-18-il-match-contro-la-virtus-kleb-ragusa/",
-      "data": "22 ott, 14:53"
-     }
-    ]
-   }
-  },
-  {
-   "id": "virtus-academy-benevento-serie-b-femminile-presentazione-unifortunato",
-   "titolo": "Virtus Academy Benevento, presentata la squadra di Serie B femminile 2026-27 targata UniFortunato",
-   "titolo_google": "Virtus Academy Benevento: presentata la Serie B femminile",
-   "sintesi": "Giovedì 22 ottobre, nella sede di Confindustria Benevento, è stata presentata la Virtus Academy Benevento che giocherà la Serie B femminile 2026-2027 con il nome dell'università UniFortunato.",
-   "categoria": "sport",
-   "zona": "benevento",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-22T13:15:00+02:00",
-   "stato": "una_fonte",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "TV7 Benevento",
-     "url": "https://www.tvsette.net/virtus-academy-benevento-presentata-la-nuova-stagione-in-serie-b-femminile-targata-unifortunato-video-e-foto/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Giovedì 22 ottobre la Virtus Academy Benevento ha presentato, nella sede di Confindustria a Benevento, la stagione 2026-2027: la squadra giocherà il campionato di Serie B femminile con il nome dell'UniFortunato, l'università Giustino Fortunato.",
-      "fonti": [
-       "TV7 Benevento"
-      ]
-     },
-     {
-      "testo": "Sono intervenuti la presidente Luisa Musco, l'allenatore Giulio Musco, il delegato provinciale del CONI Mario Collarile e il direttore amministrativo dell'UniFortunato, Vincenzo Sciano. Ha moderato il giornalista Alfredo Salzano, con le atlete e lo staff, già al lavoro nel campionato. Sono stati illustrati gli obiettivi della stagione.",
-      "fonti": [
-       "TV7 Benevento"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Quale sport: il testo letto parla solo di «Serie B femminile».",
-     "Gli obiettivi precisi della stagione."
-    ],
-    "fonti": [
-     {
-      "nome": "TV7 Benevento",
-      "titolo": "Virtus Academy Benevento, presentata la nuova stagione in Serie B femminile targata UniFortunato (VIDEO E FOTO)",
-      "url": "https://www.tvsette.net/virtus-academy-benevento-presentata-la-nuova-stagione-in-serie-b-femminile-targata-unifortunato-video-e-foto/",
-      "data": "22 ott, 13:15"
-     }
-    ]
-   },
-   "sport": "altro"
   },
   {
    "id": "benevento-calcio-arezzo-24-ottobre-catanzaro-27-ottobre-biglietti",
@@ -5378,257 +5219,6 @@
    "foto": "divieto-sosta-4"
   },
   {
-   "id": "benevento-mensa-scolastica-app-credito-genitori",
-   "titolo": "Benevento, mensa scolastica: bambini senza pasto per un problema con l'app dei buoni, genitori protestano",
-   "titolo_google": "Benevento, mensa scolastica: problema con l'app dei buoni pasto",
-   "sintesi": "Secondo Anteprima24 al plesso Moscati di Benevento alcuni bambini da martedì non hanno avuto il pasto perché l'app dei buoni mostrava credito insufficiente. Dopo le proteste dei genitori il problema è stato risolto, ma non si sa cosa lo abbia causato.",
-   "categoria": "altro",
-   "zona": "benevento",
-   "luogo": "Benevento, plesso Moscati",
-   "pubblicato": "2026-10-22T13:24:00+02:00",
-   "stato": "una_fonte",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/mensa-scolastica-applicazione-genitori/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Secondo Anteprima24, nel plesso Moscati di Benevento alcuni bambini da martedì scorso non hanno potuto mangiare alla mensa perché il loro credito risultava insufficiente. I buoni pasto si gestiscono con un'applicazione a cui i genitori si sono dovuti iscrivere entro il 30 agosto.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "Un padre racconta di aver fatto tutto in regola e di aver pagato, ma che il bonifico non sarebbe stato accreditato per l'intera somma. Il giornale scrive che il problema non sarebbe isolato e che altri genitori avrebbero la stessa situazione.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "I genitori hanno segnalato il caso al sindaco Clemente Mastella e alla dirigente comunale Moretti. Dopo qualche attesa i problemi sono stati risolti, ma i genitori restano preoccupati per il futuro perché non è chiaro cosa li abbia causati: per il giornale potrebbe trattarsi del software dell'applicazione, ma molti dubitano.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Cosa ha causato il mancato accredito.",
-     "Quanti bambini sono stati senza pasto e per quanti giorni.",
-     "Cosa dice il Comune: nell'articolo letto non c'è una sua dichiarazione."
-    ],
-    "fonti": [
-     {
-      "nome": "Anteprima24",
-      "titolo": "Mensa scolastica, problemi sulla gestione dell’applicazione. Genitori su tutte le furie",
-      "url": "https://www.anteprima24.it/benevento/mensa-scolastica-applicazione-genitori/",
-      "data": "22 ott, 13:24"
-     }
-    ]
-   },
-   "immagine": "mensa",
-   "foto": "mensa"
-  },
-  {
-   "id": "benevento-terapia-aba-minori-avvocati-asl",
-   "titolo": "Benevento, terapia ABA per minori: tre avvocati scrivono all'ASL, «istanze senza riscontro»",
-   "titolo_google": "Benevento, terapia ABA per minori: avvocati chiedono all'ASL",
-   "sintesi": "Tre avvocati di Benevento dicono che per i bambini e i ragazzi autistici è difficile trovare terapisti ABA con ore libere e che le loro richieste all'ASL sono rimaste senza risposta. Chiedono un confronto con le famiglie e soluzioni alternative.",
-   "categoria": "altro",
-   "zona": "benevento",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-22T13:43:00+02:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/22/autismo-e-minori-tre-avvocati-scrivono-allasl-difficolta-nel-reperire-terapisti-aba-disponibili-e-istanze-legali-senza-riscontro/"
-    },
-    {
-     "nome": "LabTV",
-     "url": "https://www.labtv.net/attualita/2026/10/22/benevento-terapia-aba-per-minori-gli-avvocati-romano-renza-e-franzese-chiedono-risposte-allasl/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Giovedì 22 ottobre tre avvocati di Benevento, Francesco Romano, Silvana Renza ed Elvira Franzese, hanno scritto all'ASL Benevento, l'azienda sanitaria della provincia. Dicono che per i minori che hanno bisogno della terapia ABA (Applied Behavior Analysis, un percorso usato per l'autismo) è sempre più difficile trovare terapisti con ore libere.",
-      "fonti": [
-       "NTR24",
-       "LabTV"
-      ]
-     },
-     {
-      "testo": "L'ASL ha elenchi di terapisti esterni accreditati, ma secondo i legali avere un nome nell'elenco non basta: molti professionisti hanno le agende piene o non hanno più ore. Così, scrivono, rischia di interrompersi la continuità delle cure dei bambini.",
-      "fonti": [
-       "NTR24",
-       "LabTV"
-      ]
-     },
-     {
-      "testo": "I tre avvocati dicono di aver chiesto formalmente all'ASL di esaminare il problema e di valutare soluzioni organizzative alternative, ma che finora non hanno ricevuto risposta. Definiscono «grave e inaccettabile» il silenzio dell'azienda e chiedono risposte precise e un confronto con le famiglie. Aggiungono di aver seguito in passato procedimenti sul diritto alla salute dei minori, chiusi anche con sentenze favorevoli.",
-      "fonti": [
-       "NTR24",
-       "LabTV"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "I tre avvocati dicono che le loro richieste all'ASL sono rimaste senza risposta e chiedono soluzioni alternative per le terapie ABA.",
-      "fonti": [
-       "NTR24",
-       "LabTV"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [
-     "Cosa risponde l'ASL: nei testi letti non c'è una sua replica.",
-     "Quante famiglie sono coinvolte."
-    ],
-    "fonti": [
-     {
-      "nome": "NTR24",
-      "titolo": "Autismo e minori, tre avvocati scrivono all'Asl: 'Difficoltà nel reperire terapisti ABA disponibili e istanze legali senza riscontro'",
-      "url": "https://www.ntr24.tv/2026/10/22/autismo-e-minori-tre-avvocati-scrivono-allasl-difficolta-nel-reperire-terapisti-aba-disponibili-e-istanze-legali-senza-riscontro/",
-      "data": "22 ott, 13:29"
-     },
-     {
-      "nome": "LabTV",
-      "titolo": "Benevento, terapia ABA per minori: gli avvocati Romano, Renza e Franzese chiedono risposte all’ASL",
-      "url": "https://www.labtv.net/attualita/2026/10/22/benevento-terapia-aba-per-minori-gli-avvocati-romano-renza-e-franzese-chiedono-risposte-allasl/",
-      "data": "22 ott, 13:43"
-     }
-    ]
-   }
-  },
-  {
-   "id": "sifa-imprese-funebri-carburante-prefetti",
-   "titolo": "Caro carburante, le imprese funebri chiedono ai prefetti di essere servizio essenziale: «Rischiamo di non poter fare i funerali»",
-   "titolo_google": "Imprese funebri: carburante, la richiesta ai prefetti",
-   "sintesi": "La SIFA, associazione di imprese funebri con sede a Montesarchio, ha chiesto ai prefetti della Campania, a partire da quello di Benevento, di mettere le imprese tra i servizi da rifornire per primi, perché senza gasolio i funerali rischiano di fermarsi.",
-   "categoria": "altro",
-   "zona": "provincia",
-   "luogo": "Montesarchio",
-   "pubblicato": "2026-10-22T12:04:00+02:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Ottopagine",
-     "url": "https://www.ottopagine.it/bn/attualita/441824/caro-carburante-sifa-ai-prefetti-imprese-funebri-tra-i-servizi-essenziali.shtml"
-    },
-    {
-     "nome": "Lab TV",
-     "url": "https://www.labtv.net/attualita/2026/10/22/caro-carburante-lallarme-delle-imprese-funebri-rischiamo-di-non-poter-garantire-i-funerali/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Giovedì 22 ottobre la SIFA, Sviluppo Imprese Funebri Associate, ha scritto ai prefetti della Campania, a partire da quello di Benevento. Chiede che le imprese funebri siano messe tra i servizi indispensabili, come le ambulanze e le forze dell'ordine, quando si decide a chi dare per primo il carburante nei distributori autorizzati. La SIFA ha sede a Montesarchio e riunisce 250 imprenditori campani, quasi la metà delle imprese funebri della regione.",
-      "fonti": [
-       "Ottopagine",
-       "Lab TV"
-      ]
-     },
-     {
-      "testo": "Il motivo sono le proteste per il caro carburante: secondo la SIFA possono rendere difficile rifornire i mezzi, e senza rifornimento le imprese rischiano di non poter svolgere i funerali, con «gravi criticità igienico-sanitarie». Il presidente Giuseppe Carbone sostiene che l'attività funebre sia un servizio pubblico essenziale e indifferibile e spera che la richiesta sia valutata il prima possibile.",
-      "fonti": [
-       "Ottopagine",
-       "Lab TV"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "La richiesta ai prefetti di inserire le imprese funebri tra i servizi indispensabili per il rifornimento.",
-      "fonti": [
-       "Ottopagine",
-       "Lab TV"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [
-     "Se le Prefetture hanno risposto o risponderanno alla richiesta: gli articoli letti non riportano risposte."
-    ],
-    "fonti": [
-     {
-      "nome": "Ottopagine",
-      "titolo": "La nota a firma di Giuseppe Carbone: \"C'è il rischio che sarà un problema anche morire\"",
-      "url": "https://www.ottopagine.it/bn/attualita/441824/caro-carburante-sifa-ai-prefetti-imprese-funebri-tra-i-servizi-essenziali.shtml",
-      "data": "22 ott, 11:55"
-     },
-     {
-      "nome": "Lab TV",
-      "titolo": "Caro carburante, l’allarme delle imprese funebri: «Rischiamo di non poter garantire i funerali»",
-      "url": "https://www.labtv.net/attualita/2026/10/22/caro-carburante-lallarme-delle-imprese-funebri-rischiamo-di-non-poter-garantire-i-funerali/",
-      "data": "22 ott, 12:04"
-     }
-    ]
-   }
-  },
-  {
-   "id": "autolinee-bizzarro-corse-a-rischio-gasolio",
-   "titolo": "Autolinee Bizzarro: per mancanza di gasolio possibili ritardi e corse soppresse tra la Valle Vitulanese e Benevento",
-   "titolo_google": "Autolinee Bizzarro, corse a rischio per mancanza di gasolio",
-   "sintesi": "L'azienda di Torrecuso avvisa che nelle prossime ore le corse extraurbane, compresi i collegamenti tra la Valle Vitulanese e Benevento, possono subire riduzioni improvvise, ritardi o soppressioni.",
-   "categoria": "altro",
-   "zona": "provincia",
-   "luogo": "Torrecuso",
-   "pubblicato": "2026-10-22T11:58:00+02:00",
-   "stato": "una_fonte",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "NTR24 (Moiano)",
-     "url": "https://www.ntr24.tv/2026/10/22/emergenza-carburanti-nel-sannio-stop-a-scuolabus-a-moiano-e-corse-a-rischio-per-le-autolinee-bizzarro/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Giovedì 22 ottobre le Autolinee Bizzarro, l'azienda di trasporto con sede a Torrecuso, hanno avvisato i passeggeri che per una «severa e imprevedibile mancanza materiale di gasolio» nelle prossime ore le corse possono essere ridotte all'improvviso, ritardate o soppresse.",
-      "fonti": [
-       "NTR24 (Moiano)"
-      ]
-     },
-     {
-      "testo": "L'avviso riguarda le tratte extraurbane e i collegamenti tra la Valle Vitulanese e Benevento. L'articolo non indica linee singole: l'azienda invita a guardare il proprio sito per gli aggiornamenti. È uno dei disagi del trasporto legati alla mancanza di carburante dopo i blocchi degli autotrasportatori.",
-      "fonti": [
-       "NTR24 (Moiano)"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Quali corse precise saltano e per quanto tempo.",
-     "Quando arriva il gasolio all'azienda."
-    ],
-    "fonti": [
-     {
-      "nome": "NTR24 (Moiano)",
-      "titolo": "Emergenza carburanti nel Sannio: stop a scuolabus a Moiano e corse a rischio per le Autolinee Bizzarro",
-      "url": "https://www.ntr24.tv/2026/10/22/emergenza-carburanti-nel-sannio-stop-a-scuolabus-a-moiano-e-corse-a-rischio-per-le-autolinee-bizzarro/",
-      "data": "22 ott, 11:58"
-     }
-    ]
-   }
-  },
-  {
    "id": "benevento-cimitero-traffico-31-ottobre-2-novembre",
    "titolo": "Benevento, 31 ottobre, 1 e 2 novembre chiusa via Cimitero e divieti di sosta attorno al cimitero: navette dal centro",
    "titolo_google": "Benevento, cimitero: strade chiuse e navette dal 31 ottobre",
@@ -5785,61 +5375,6 @@
     }
    },
    "foto": "strada-chiusa"
-  },
-  {
-   "id": "san-giorgio-del-sannio-vandali-parco-viale-spinelli",
-   "titolo": "San Giorgio del Sannio, vandali al parco di viale Spinelli: divelto il cancello dell'area giochi",
-   "titolo_google": "San Giorgio del Sannio, vandali nel parco di viale Spinelli",
-   "sintesi": "Martedì sera, intorno alle 23, alcuni giovani hanno divelto il cancello che chiude l'area giochi del parco di viale Spinelli. La Polizia Municipale sta cercando di identificare i responsabili.",
-   "categoria": "cronaca",
-   "zona": "benevento",
-   "luogo": "San Giorgio del Sannio",
-   "pubblicato": "2026-10-22T07:24:00+02:00",
-   "stato": "una_fonte",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Il Sannio Quotidiano",
-     "url": "https://www.ilsannioquotidiano.it/2026/10/22/san-giorgio-del-sannio-nuovo-atto-di-vandalismo-al-parco-e-insulti-a-ipovedente-il-sindaco-municipale-al-lavoro-per-identificare-autori/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Martedì 20 ottobre, intorno alle 23, alcuni giovani hanno divelto, probabilmente a calci, un cancelletto di ferro nel parco di viale Spinelli a San Giorgio del Sannio. Il cancello, montato da anni, chiude l'area giochi dei bambini e impedisce di scendere nella parte più bassa del parco.",
-      "fonti": [
-       "Il Sannio Quotidiano"
-      ]
-     },
-     {
-      "testo": "Quella zona è pericolosa per i più piccoli: ci sono cocci di vetro e pezzi di marmo rotti. Secondo il giornale gli stessi ragazzi si sono poi uniti a un gruppo più numeroso e, tra viale Spinelli e via Aldo Moro, hanno insultato senza motivo un residente. Il giornale parla di un «nuovo atto» di vandalismo nello stesso parco e di episodi simili che si ripetono.",
-      "fonti": [
-       "Il Sannio Quotidiano"
-      ]
-     },
-     {
-      "testo": "Il titolo dell'articolo riferisce che il sindaco ha detto che la Polizia Municipale è al lavoro per identificare gli autori.",
-      "fonti": [
-       "Il Sannio Quotidiano"
-      ]
-     }
-    ],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Chi sono gli autori e quanti erano.",
-     "Quando sarà riparato il cancello.",
-     "Quali sono gli episodi precedenti nel parco: il testo letto non li descrive."
-    ],
-    "fonti": [
-     {
-      "nome": "Il Sannio Quotidiano",
-      "titolo": "San Giorgio del Sannio – Nuovo atto di vandalismo al Parco e insulti a ipovedente, il sindaco: “Municipale al lavoro per identificare autori”",
-      "url": "https://www.ilsannioquotidiano.it/2026/10/22/san-giorgio-del-sannio-nuovo-atto-di-vandalismo-al-parco-e-insulti-a-ipovedente-il-sindaco-municipale-al-lavoro-per-identificare-autori/",
-      "data": "22 ott, 07:24"
-     }
-    ]
-   }
   },
   {
    "id": "vaccini-farmacie-asl-benevento-avellino-alaia",
@@ -6340,108 +5875,6 @@
     ]
    },
    "foto": "lavori-stradali-2"
-  },
-  {
-   "id": "benevento-carta-dedicata-a-te-graduatoria-2025",
-   "titolo": "Benevento, pubblicata la graduatoria per la «Carta Dedicata a te»: come ritirare la carta",
-   "titolo_google": "Benevento, Carta Dedicata a te: graduatoria e come ritirarla",
-   "sintesi": "Il Comune ha pubblicato la graduatoria dei nuclei familiari beneficiari della misura per il 2025, senza nomi ma con il numero di protocollo della DSU ISEE. I nuovi beneficiari ritirano il codice a Palazzo De Gasperi, poi la carta alle Poste.",
-   "categoria": "altro",
-   "zona": "benevento",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-22T10:53:00+02:00",
-   "stato": "ufficiale",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Comune di Benevento",
-     "url": "https://comune.benevento.it/novita/pubblicata-la-graduatoria-dei-nuclei-familiari-beneficiari-della-misura-carta-dedicata-a-te/"
-    },
-    {
-     "nome": "Ottopagine",
-     "url": "https://www.ottopagine.it/bn/attualita/441677/pubblicata-graduatoria-nuclei-familiari-beneficiari-misura-carta-dedicata-a-te.shtml"
-    },
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/21/benevento-pubblicata-la-graduatoria-dei-nuclei-familiari-beneficiari"
-    },
-    {
-     "nome": "InfoSannio",
-     "url": "https://www.infosannionews.it/attualita/2026/card-dedicata-a-te-2026-2027-ritiro-presso-sportelli-postali-il-comune-pubblica-elenco-beneficiari.html"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Giovedì 22 ottobre InfoSannio scrive che il Comune ha precisato che il ritiro della card non si fa nella sede comunale di via De Gasperi ma presso gli sportelli di Poste Italiane: i Comuni pubblicano solo gli elenchi, l'INPS manda le liste a Poste e Poste mette le carte a disposizione. Le card saranno attivate dal 4 novembre 2026. Il giornale titola «2026-2027», mentre l'avviso del Comune di ieri parlava del 2025.",
-      "fonti": [
-       "InfoSannio"
-      ],
-      "giorno": "2026-10-22"
-     },
-     {
-      "testo": "Il Comune di Benevento ha pubblicato la graduatoria dei nuclei familiari che ricevono la «Carta Dedicata a te» per il 2025, la misura che dà una carta per la spesa alle famiglie in difficoltà. Per tutelare la privacy non ci sono i nomi: ogni nucleo si riconosce dal numero di protocollo della sua DSU ISEE, la dichiarazione con cui si calcola l'ISEE.",
-      "fonti": [
-       "Comune di Benevento"
-      ],
-      "giorno": "2026-10-21"
-     },
-     {
-      "testo": "Chi ha già la carta riceve l'accredito direttamente su quella che possiede. I nuovi beneficiari devono prima ritirare la comunicazione con il codice identificativo negli uffici comunali di viale Principe di Napoli 91 (Palazzo De Gasperi), dal lunedì al venerdì, dalle 9 alle 12. Poi vanno in un qualsiasi ufficio di Poste Italiane per ritirare la carta.",
-      "fonti": [
-       "Comune di Benevento"
-      ],
-      "giorno": "2026-10-21"
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [
-     {
-      "testo": "L'avviso del Comune del 21 ottobre parlava di un passaggio a Palazzo De Gasperi per il codice prima delle Poste; InfoSannio il 22 scrive che nessun ritiro va fatto in sede comunale. Valgono le indicazioni del Comune: conviene verificarle prima di andare.",
-      "fonti": [
-       "Comune di Benevento",
-       "InfoSannio"
-      ]
-     }
-    ],
-    "non_si_sa": [
-     "Quale importo avranno le carte: le fonti lette non lo dicono."
-    ],
-    "fonti": [
-     {
-      "nome": "Comune di Benevento",
-      "titolo": "Pubblicata la graduatoria dei nuclei familiari beneficiari della misura “Carta Dedicata a Te”",
-      "url": "https://comune.benevento.it/novita/pubblicata-la-graduatoria-dei-nuclei-familiari-beneficiari-della-misura-carta-dedicata-a-te/",
-      "data": "21 ott, 09:41"
-     },
-     {
-      "nome": "Ottopagine",
-      "titolo": "Pubblicata graduatoria nuclei familiari beneficiari misura \"Carta Dedicata a te\"",
-      "url": "https://www.ottopagine.it/bn/attualita/441677/pubblicata-graduatoria-nuclei-familiari-beneficiari-misura-carta-dedicata-a-te.shtml",
-      "data": "21 ott"
-     },
-     {
-      "nome": "NTR24",
-      "titolo": "Benevento, pubblicata la graduatoria dei nuclei familiari beneficiari della misura “Carta Dedicata a Te”",
-      "url": "https://www.ntr24.tv/2026/10/21/benevento-pubblicata-la-graduatoria-dei-nuclei-familiari-beneficiari",
-      "data": "21 ott"
-     },
-     {
-      "nome": "InfoSannio",
-      "titolo": "Card ‘Dedicata a te 2026-2027’: ritiro presso sportelli postali, il Comune pubblica elenco beneficiari",
-      "url": "https://www.infosannionews.it/attualita/2026/card-dedicata-a-te-2026-2027-ritiro-presso-sportelli-postali-il-comune-pubblica-elenco-beneficiari.html",
-      "data": "22 ott, 10:53"
-     }
-    ],
-    "aggiornamento": {
-     "testo": "Giovedì 22 ottobre, secondo InfoSannio, il Comune precisa che la card si ritira alle Poste e non in sede comunale, e che sarà attivata dal 4 novembre.",
-     "fonti": [
-      "InfoSannio"
-     ],
-     "quando": "2026-10-22T12:12+02:00"
-    }
-   }
   },
   {
    "id": "rifiuti-blocco-tir-apice-morcone-cusano-sant-angelo-a-cupolo",
@@ -7212,131 +6645,6 @@
    "foto": "pasta"
   },
   {
-   "id": "trenitalia-carnet-smart-working",
-   "titolo": "Trenitalia, sospese le nuove regole sui carnet Smart Working: il ministro Salvini annuncia un tavolo dopo le proteste dei pendolari di Benevento",
-   "titolo_google": "Carnet Smart Working Trenitalia sospesi, pendolari Benevento",
-   "sintesi": "Il ministro Salvini ha annunciato giovedì 22 ottobre la sospensione delle novità sui carnet Smart Working di Trenitalia, in attesa di un tavolo con i consumatori. Mastella aveva denunciato il rincaro per i pendolari di Benevento e Caserta.",
-   "categoria": "altro",
-   "zona": "benevento",
-   "immagine": "treno",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-22T15:45:00+02:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/20/trenitalia-stop-a-carnet-smart-working-e-nuove-tariffe-pellegrino-mastella-chiede-incontro-per-tutelare-pendolari-di-benevento-e-caserta/"
-    },
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/cancellazione-carnet-smart-working-mastella-chiesto-confronto-con-vertici-trenitalia/"
-    },
-    {
-     "nome": "Cronache del Sannio",
-     "url": "https://www.cronachedelsannio.it/sannionews24/stop-carnet-smart-working-pellegrino-mastella-chiede-incontro-urgente-trenitalia/"
-    },
-    {
-     "nome": "NTR24 (22/10)",
-     "url": "https://www.ntr24.tv/2026/10/22/carnet-ferroviari-trenitalia-sospende-le-nuove-regole-soddisfatto-pellegrino-mastella-ora-servono-garanzie-per-i-pendolari/"
-    }
-   ],
-   "articolo": {
-    "cronologia": [
-     {
-      "data": "20 ottobre",
-      "fatto": "Mastella chiede un incontro urgente ai vertici campani di Trenitalia per i carnet cancellati.",
-      "fonti": [
-       "NTR24",
-       "Anteprima24"
-      ]
-     },
-     {
-      "data": "22 ottobre",
-      "fatto": "Salvini annuncia la sospensione delle novità sui carnet, in attesa di un tavolo con le associazioni dei consumatori.",
-      "fonti": [
-       "NTR24 (22/10)"
-      ]
-     }
-    ],
-    "concordano": [
-     {
-      "testo": "Mastella chiede un incontro urgente a Trenitalia e cita gli stessi numeri: carnet a 129 euro oggi, 387 euro da Benevento e 342 da Caserta per lo stesso numero di viaggi, più 2 euro a prenotazione.",
-      "fonti": [
-       "NTR24",
-       "Anteprima24"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [
-     "Quando si riunirà il tavolo con le associazioni dei consumatori.",
-     "Per quanto tempo restano sospese le nuove regole e se il carnet Smart Working tornerà com'era."
-    ],
-    "fonti": [
-     {
-      "nome": "NTR24",
-      "titolo": "Trenitalia, stop a carnet Smart Working e nuove tariffe: Pellegrino Mastella chiede incontro per tutelare pendolari di Benevento e Caserta",
-      "url": "https://www.ntr24.tv/2026/10/20/trenitalia-stop-a-carnet-smart-working-e-nuove-tariffe-pellegrino-mastella-chiede-incontro-per-tutelare-pendolari-di-benevento-e-caserta/",
-      "data": "20 ott, 11:09"
-     },
-     {
-      "nome": "Anteprima24",
-      "titolo": "Cancellazione carnet Smart Working, Mastella: “Chiesto confronto con vertici Trenitalia”",
-      "url": "https://www.anteprima24.it/benevento/cancellazione-carnet-smart-working-mastella-chiesto-confronto-con-vertici-trenitalia/",
-      "data": "20 ott, 11:22"
-     },
-     {
-      "nome": "NTR24 (22/10)",
-      "titolo": "Carnet ferroviari, Trenitalia sospende le nuove regole. Soddisfatto Pellegrino Mastella: «Ora servono garanzie per i pendolari»",
-      "url": "https://www.ntr24.tv/2026/10/22/carnet-ferroviari-trenitalia-sospende-le-nuove-regole-soddisfatto-pellegrino-mastella-ora-servono-garanzie-per-i-pendolari/",
-      "data": "22 ott, 15:45"
-     }
-    ],
-    "racconto": [
-     {
-      "testo": "Giovedì 22 ottobre il ministro dei Trasporti Matteo Salvini ha annunciato la sospensione delle novità sui carnet Smart Working di Trenitalia, in attesa di un tavolo di confronto con le associazioni dei consumatori. Pellegrino Mastella la chiama «una prima risposta positiva» a un disagio che aveva portato all'attenzione delle istituzioni, e dice che il passo è temporaneo: ora servono soluzioni concrete e durature.",
-      "fonti": [
-       "NTR24 (22/10)"
-      ],
-      "giorno": "2026-10-22"
-     },
-     {
-      "testo": "Il consigliere regionale Pellegrino Mastella (gruppo Casa Riformista – Italia Viva – Noi di Centro) chiede un incontro urgente ai vertici campani di Trenitalia. Il tema è la cancellazione dei carnet Smart Working e il nuovo costo di 2 euro per ogni prenotazione dell'abbonamento Alta Velocità. Secondo lui i pendolari di Benevento e Caserta che vanno a Roma rischiano di spendere molto di più.",
-      "fonti": [
-       "NTR24",
-       "Anteprima24"
-      ],
-      "giorno": "2026-10-20"
-     },
-     {
-      "testo": "I conti li fa Mastella, non Trenitalia. Oggi il carnet da dieci corse da e per Roma costa 129 euro al mese, sia da Caserta sia da Benevento. Per avere lo stesso numero di viaggi, dice, chi parte da Benevento potrebbe arrivare a 387 euro e chi parte da Caserta a 342. A questo si aggiungono i 2 euro per ogni prenotazione, che finora secondo i pendolari era gratuita.",
-      "fonti": [
-       "NTR24",
-       "Anteprima24"
-      ],
-      "giorno": "2026-10-20"
-     },
-     {
-      "testo": "Il consigliere ammette che l'obiettivo possa essere ridurre le prenotazioni non usate, ma chiede strumenti mirati che non penalizzino chi usa il treno per lavorare. Vuole risposte chiare e soluzioni alternative, a partire dal ritorno del carnet Smart Working e da una revisione del costo delle prenotazioni. I collegamenti con Roma, dice, sono essenziali per lavoratori e professionisti delle aree interne.",
-      "fonti": [
-       "NTR24",
-       "Anteprima24"
-      ],
-      "giorno": "2026-10-20"
-     }
-    ],
-    "aggiornamento": {
-     "testo": "Giovedì 22 ottobre il ministro Salvini ha annunciato la sospensione delle novità sui carnet Smart Working di Trenitalia, in attesa di un tavolo con le associazioni dei consumatori.",
-     "fonti": [
-      "NTR24 (22/10)"
-     ],
-     "quando": "2026-10-22T16:12+02:00"
-    }
-   },
-   "foto": "treno-2"
-  },
-  {
    "id": "pago-veiano-lite-ferito-marito",
    "titolo": "Pago Veiano, 72enne accoltellato in casa: la moglie di 55 anni, arrestata per tentato omicidio, va ai domiciliari",
    "titolo_google": "Pago Veiano, 72enne accoltellato: la moglie ai domiciliari",
@@ -7594,7 +6902,7 @@
    "zona": "provincia",
    "immagine": "camion",
    "luogo": "Tufara Valle",
-   "pubblicato": "2026-10-23T15:21:00+02:00",
+   "pubblicato": "2026-10-25T00:10+02:00",
    "stato": "confermata",
    "fonti": [
     {
@@ -7603,7 +6911,7 @@
     },
     {
      "nome": "Il Mattino",
-     "url": "https://www.ilmattino.it/benevento/benevento_proteste_autotrasportatori_autostrada-9837732.html"
+     "url": "https://www.ilmattino.it/benevento/blocco_tir_a_benevento_gli_autotrasportatori_liberano_le_strade_impegni_chiari_o_la_rabbia_riesplodera-9846474.html"
     },
     {
      "nome": "Il Sannio Quotidiano",
@@ -7716,11 +7024,11 @@
    ],
    "articolo": {
     "aggiornamento": {
-     "testo": "Venerdì 23 ottobre è tornata la disponibilità di benzina e gasolio nella maggior parte dei distributori della città, con lunghe file; secondo Il Sannio Quotidiano il diesel arriva a 2,63 euro al litro. Il giornale lega la ripresa allo sblocco dei presìdi, favorito dall'intervento delle Prefetture.",
+     "testo": "Le imprese di autotrasporto che erano al presidio della Telesina dicono a Il Mattino che, se dall'incontro del 27 ottobre al Ministero non arrivano impegni chiari, potrebbero fermare di nuovo i camion.",
      "fonti": [
-      "Il Sannio Quotidiano (24/10)"
+      "Il Mattino (25/10)"
      ],
-     "quando": "2026-10-24T08:09+02:00"
+     "quando": "2026-10-25T06:11+01:00"
     },
     "aggiornato": "2026-10-20T09:25:00+02:00",
     "cronologia": [
@@ -7903,6 +7211,13 @@
       "fatto": "Sospesi i presìdi di Torrepalazzo (statale 87), della statale 212 a San Marco dei Cavoti e di Ponte delle Tavole.",
       "fonti": [
        "Il Mattino (24/10)"
+      ]
+     },
+     {
+      "data": "27 ottobre",
+      "fatto": "Incontro tra autotrasportatori e Ministero delle Infrastrutture e dei Trasporti a Roma.",
+      "fonti": [
+       "Il Mattino (25/10)"
       ]
      }
     ],
@@ -8197,9 +7512,29 @@
       "titolo": "Torna la disponibilità di carburanti, ma i prezzi sono alle stelle: il diesel tocca i 2,63 euro a litro",
       "url": "https://www.ilsannioquotidiano.it/2026/10/24/torna-la-disponibilita-di-carburanti-ma-i-prezzi-sono-alle-stelle-il-diesel-tocca-i-263-euro-a-litro/",
       "data": "24 ott, 07:16"
+     },
+     {
+      "nome": "Il Mattino (25/10)",
+      "titolo": "Blocco tir a Benevento, gli autotrasportatori liberano le strade: «Impegni chiari o la rabbia riesploderà»",
+      "url": "https://www.ilmattino.it/benevento/blocco_tir_a_benevento_gli_autotrasportatori_liberano_le_strade_impegni_chiari_o_la_rabbia_riesplodera-9846474.html",
+      "data": "25 ott, 00:10"
      }
     ],
     "racconto": [
+     {
+      "testo": "Le strade del Sannio sono libere, ma la protesta non è finita. Il Mattino ha sentito due imprese che erano al presidio della statale 372 Telesina, la Iannotta Spa e la Essedi Trasporti: dicono che le misure del governo sono solo un punto di partenza e non bastano a coprire gli aumenti del gasolio. Chiedono tagli alle accise (le tasse sul carburante) e crediti d'imposta rapidi.",
+      "fonti": [
+       "Il Mattino (25/10)"
+      ],
+      "giorno": "2026-10-25"
+     },
+     {
+      "testo": "Ora guardano all'incontro del 27 ottobre al Ministero delle Infrastrutture e dei Trasporti. Vogliono impegni chiari e tempi certi; se non arrivano, dicono, non escludono di riprendere le proteste e di fermare di nuovo i camion.",
+      "fonti": [
+       "Il Mattino (25/10)"
+      ],
+      "giorno": "2026-10-25"
+     },
      {
       "testo": "Secondo Il Mattino i presìdi che avevano paralizzato i trasporti nel Sannio sono ormai tutti sciolti o sospesi: dalla statale 372 Telesina al casello di Benevento sull'A16 a Castel del Lago, fino alla statale 7 Appia. Nel primo pomeriggio di venerdì 23 sono stati sospesi anche quelli di Torrepalazzo sulla statale 87, della statale 212 Fortorina a San Marco dei Cavoti e di Ponte delle Tavole, perché la protesta proseguirà a Roma il 27 ottobre. Gli organizzatori dicono che la protesta «non si ferma ma si unisce e si organizza»; il giornale scrive che potrebbe riprendere in vista dello sciopero generale del 30 ottobre, sul quale in rete girano appelli.",
       "fonti": [
@@ -8428,14 +7763,14 @@
   },
   {
    "id": "scaffali-vuoti",
-   "titolo": "Dopo lo stop dei tir, nei supermercati del Sannio tornano ortofrutta, latte e uova; la ripresa è graduale",
-   "titolo_google": "Supermercati del Sannio: tornano ortofrutta, latte e uova",
-   "sintesi": "Da venerdì 23 ottobre nella grande distribuzione del Sannio sono tornati ortofrutta, latte fresco, latticini e uova, ma non ancora l'esposizione di prima. Nei giorni dei blocchi dei tir i reparti dei freschi erano rimasti sguarniti.",
+   "titolo": "Dopo lo stop dei tir, a Benevento supermercati di nuovo pieni e distributori senza file",
+   "titolo_google": "Benevento, supermercati di nuovo pieni dopo lo stop dei tir",
+   "sintesi": "Sabato 24 ottobre quasi tutti i supermercati di Benevento avevano di nuovo gli scaffali pieni e i distributori erano aperti senza file, scrive Il Mattino. Nei giorni dei blocchi dei tir erano mancati i prodotti freschi; da lunedì tornano anche scuolabus, raccolta dei rifiuti e autobus.",
    "categoria": "altro",
    "zona": "benevento",
    "immagine": "supermercato",
    "luogo": "Benevento",
-   "pubblicato": "2026-10-23T08:50:00+02:00",
+   "pubblicato": "2026-10-25T00:05+02:00",
    "stato": "confermata",
    "fonti": [
     {
@@ -8465,6 +7800,10 @@
     {
      "nome": "Il Sannio Quotidiano (24/10)",
      "url": "https://www.ilsannioquotidiano.it/2026/10/24/graduale-ritorno-alla-normalita-nei-supermercati-e-gli-agricoltori-sospendono-i-presidi/"
+    },
+    {
+     "nome": "Il Mattino",
+     "url": "https://www.ilmattino.it/benevento/sciopero_autotrasportatori_a_benevento_riecco_benzina_e_alimenti_la_citta_torna_alla_normalita-9846473.html"
     }
    ],
    "articolo": {
@@ -8500,6 +7839,13 @@
       "fonti": [
        "Il Sannio Quotidiano (24/10)"
       ]
+     },
+     {
+      "data": "24 ottobre",
+      "fatto": "Supermercati di Benevento di nuovo pieni, distributori aperti senza file.",
+      "fonti": [
+       "Il Mattino (25/10)"
+      ]
      }
     ],
     "concordano": [
@@ -8509,6 +7855,13 @@
        "NTR24",
        "Cronache del Sannio",
        "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Dal 23-24 ottobre i prodotti freschi tornano nei supermercati.",
+      "fonti": [
+       "Il Sannio Quotidiano (24/10)",
+       "Il Mattino (25/10)"
       ]
      }
     ],
@@ -8563,10 +7916,37 @@
       "titolo": "Graduale ritorno alla normalità nei supermercati. E gli agricoltori sospendono i presidi",
       "url": "https://www.ilsannioquotidiano.it/2026/10/24/graduale-ritorno-alla-normalita-nei-supermercati-e-gli-agricoltori-sospendono-i-presidi/",
       "data": "24 ott, 07:14"
+     },
+     {
+      "nome": "Il Mattino (25/10)",
+      "titolo": "Sciopero autotrasportatori a Benevento, riecco benzina e alimenti: la città torna alla normalità",
+      "url": "https://www.ilmattino.it/benevento/sciopero_autotrasportatori_a_benevento_riecco_benzina_e_alimenti_la_citta_torna_alla_normalita-9846473.html",
+      "data": "25 ott, 00:05"
      }
     ],
     "divergono": [],
     "racconto": [
+     {
+      "testo": "A Benevento si torna alla normalità dopo i blocchi dei tir. Sabato 24 ottobre, scrive Il Mattino, quasi tutti i supermercati della città avevano di nuovo gli scaffali pieni: frutta, verdura, latticini, acqua, carne, surgelati, farina e pesce fresco si trovavano senza difficoltà. I distributori di carburante erano aperti e senza file: il carburante è arrivato in abbondanza tra venerdì sera e la notte.",
+      "fonti": [
+       "Il Mattino (25/10)"
+      ],
+      "giorno": "2026-10-24"
+     },
+     {
+      "testo": "Un imprenditore della grande distribuzione, Luigi Micco, spiega che i banchi non sono ancora strapieni: i magazzini si sono svuotati e la merce andata a male è stata buttata. Le scorte, dice, torneranno abbondanti dalla prossima settimana. Il giornale segnala anche piccoli aumenti di prezzo su alcuni prodotti e sulla benzina in qualche distributore, e i danni delle aziende del latte e dell'agricoltura, che hanno perso quintali di merce.",
+      "fonti": [
+       "Il Mattino (25/10)"
+      ],
+      "giorno": "2026-10-24"
+     },
+     {
+      "testo": "Da lunedì 26 ottobre, secondo Il Mattino, ripartono anche la raccolta dei rifiuti dell'Asia, gli scuolabus delle contrade, gli autobus per i paesi vicini, e finisce il lavoro da casa concesso ai dipendenti per la crisi del carburante.",
+      "fonti": [
+       "Il Mattino (25/10)"
+      ],
+      "giorno": "2026-10-24"
+     },
      {
       "testo": "Da venerdì mattina 23 ottobre la grande distribuzione del Sannio sta tornando alla normalità. Secondo Il Sannio Quotidiano sono arrivati di nuovo ortofrutta, latte fresco, latticini e uova. Non c'è ancora il ritorno completo alle esposizioni di prima, ma il giornale parla di scaffali e bancali vuoti ormai alle spalle.",
       "fonti": [
@@ -8631,11 +8011,12 @@
      }
     ],
     "aggiornamento": {
-     "testo": "Venerdì 23 ottobre, scrive Il Sannio Quotidiano, nella grande distribuzione sono tornati ortofrutta, latte fresco, latticini e uova: non è ancora l'esposizione di sempre, ma le scorte stanno rientrando.",
+     "testo": "Sabato 24 ottobre quasi tutti i supermercati di Benevento avevano di nuovo gli scaffali pieni e i distributori erano aperti senza file.",
      "fonti": [
-      "Il Sannio Quotidiano (24/10)"
+      "Il Mattino (25/10)"
      ],
-     "quando": "2026-10-24T08:09+02:00"
+     "quando": "2026-10-25T06:11+01:00",
+     "titolo_prima": "Dopo lo stop dei tir, nei supermercati del Sannio tornano ortofrutta, latte e uova; la ripresa è graduale"
     }
    },
    "rilevante": false,
@@ -9177,270 +8558,6 @@
    "in_vigore_fino": "2026-10-31",
    "traffico": "senso_unico",
    "foto": "lavori-stradali"
-  },
-  {
-   "id": "benevento-comune-urbanistica-dovetto-de-marco",
-   "titolo": "Benevento, Urbanistica del Comune: Corsano lascia, la segretaria Dovetto è dirigente ad interim e delega edilizia e abusi all'ingegner De Marco",
-   "titolo_google": "Benevento, Urbanistica del Comune: nuova guida ad interim",
-   "sintesi": "L'architetto Giancarlo Corsano lascia l'Urbanistica di Palazzo Mosti dal 20 ottobre. La segretaria generale supplente Maria Luisa Dovetto guida il settore ad interim e ha delegato all'ingegner Luigi De Marco edilizia privata, abusi e appalti sotto soglia fino al 31 dicembre.",
-   "categoria": "altro",
-   "zona": "benevento",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-22T08:02:00+02:00",
-   "stato": "una_fonte",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "NTR24 (Urbanistica)",
-     "url": "https://www.ntr24.tv/2026/10/22/palazzo-mosti-urbanistica-la-dirigente-dovetto-delega-ling-de-marco-gestira-edilizia-abusi-appalti-e-personale/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "L'architetto Giancarlo Corsano lascia in anticipo la guida dell'Urbanistica del Comune di Benevento (Palazzo Mosti). La fine della convenzione con la Provincia, con cui il Comune condivideva il suo incarico, vale dal 20 ottobre 2026. Il posto passa ad interim, cioè in via temporanea, a Maria Luisa Dovetto, segretaria generale supplente.",
-      "fonti": [
-       "NTR24 (Urbanistica)"
-      ]
-     },
-     {
-      "testo": "Con un provvedimento firmato il 21 ottobre, Dovetto ha delegato all'ingegner Luigi De Marco, funzionario del Comune, una parte delle funzioni di gestione. A lui passano l'edilizia privata (permessi di costruire, SCIA e CILA, agibilità), i certificati urbanistici, le ordinanze contro gli abusi edilizi, la pianificazione, gli appalti sotto soglia, le spese e la gestione ordinaria del personale. A Dovetto restano l'organizzazione del settore, la valutazione del personale e i pareri tecnici sulle delibere di Consiglio e Giunta.",
-      "fonti": [
-       "NTR24 (Urbanistica)"
-      ]
-     },
-     {
-      "testo": "La delega dura fino al 31 dicembre 2026, salvo revoca o proroga, e finisce comunque quando arriverà il dirigente titolare. Serve a garantire la continuità degli uffici in attesa di coprire il posto con una figura tecnica. De Marco deve riferire a Dovetto almeno una volta al mese.",
-      "fonti": [
-       "NTR24 (Urbanistica)"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Quando sarà scelto il nuovo dirigente titolare dell'Urbanistica."
-    ],
-    "fonti": [
-     {
-      "nome": "NTR24 (Urbanistica)",
-      "titolo": "Palazzo Mosti, Urbanistica: la dirigente Dovetto delega l’ing. De Marco. Gestirà edilizia, abusi, appalti e personale",
-      "url": "https://www.ntr24.tv/2026/10/22/palazzo-mosti-urbanistica-la-dirigente-dovetto-delega-ling-de-marco-gestira-edilizia-abusi-appalti-e-personale/",
-      "data": "22 ott, 08:02"
-     }
-    ]
-   }
-  },
-  {
-   "id": "benevento-usb-studenti-prefettura-carovita",
-   "titolo": "Benevento, studenti e sindacato USB in piazza davanti alla Prefettura contro il carovita",
-   "titolo_google": "Benevento, USB e studenti in piazza contro il carovita",
-   "sintesi": "Giovedì 22 ottobre, davanti alla Prefettura di Benevento, il sindacato USB e centinaia di studenti hanno protestato contro il carovita, i parcheggi a pagamento, i trasporti, la sanità e la scuola. Una delegazione è stata ricevuta dal viceprefetto.",
-   "categoria": "altro",
-   "zona": "benevento",
-   "immagine": "protesta",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-22T12:52:00+02:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Il Mattino",
-     "url": "https://www.ilmattino.it/benevento/benevento_manifestazione_usb_carovita_studenti_lavoratori_prefettura-9841613.html"
-    },
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/studenti-sindacati-protesta-futuro-benevento/"
-    },
-    {
-     "nome": "Ottopagine",
-     "url": "https://www.ottopagine.it/bn/cronaca/441829/usb-e-studenti-in-piazza-per-dire-stop-a-caro-vita-e-azione-del-governo-video.shtml"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Giovedì 22 ottobre in mattinata il sindacato USB (Unione sindacale di base) ha fatto un presidio davanti alla Prefettura di Benevento, in corso Garibaldi. Con il sindacato c'erano lavoratori, pensionati, cittadini e centinaia di studenti delle scuole superiori. Secondo gli organizzatori la partecipazione è stata più alta del previsto.",
-      "fonti": [
-       "Il Mattino",
-       "Anteprima24",
-       "Ottopagine"
-      ]
-     },
-     {
-      "testo": "Al centro della protesta ci sono il caro vita, le scelte del Governo e alcune decisioni del Comune di Benevento: le strisce blu, cioè i parcheggi a pagamento, che per i manifestanti sono troppe, i trasporti, la sanità e la scuola. Sugli striscioni si leggeva «Soldi alla scuola, non alla guerra» e «Le vostre scelte rovinano il nostro futuro». Anteprima24 scrive che la manifestazione è stata pacifica e seguita dalle forze dell'ordine.",
-      "fonti": [
-       "Il Mattino",
-       "Anteprima24",
-       "Ottopagine"
-      ]
-     },
-     {
-      "testo": "Una delegazione guidata da Giovanni Venditti, dell'USB, è stata ricevuta dal viceprefetto per oltre un'ora. Tra le richieste ci sono gli abbonamenti ai bus, ora a 70 euro, e il numero dei pullman, giudicato insufficiente. Alla Prefettura è stato consegnato anche un documento sulla sanità, perché arrivi al Governo.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "La manifestazione sotto la Prefettura giovedì mattina, con studenti e USB, contro il carovita e contro le scelte di Governo e Comune.",
-      "fonti": [
-       "Il Mattino",
-       "Anteprima24",
-       "Ottopagine"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [
-     "Quante persone hanno partecipato: le fonti parlano di «centinaia» di studenti e di una partecipazione superiore alle attese, senza un numero.",
-     "Come hanno risposto Prefettura e Comune alle richieste."
-    ],
-    "fonti": [
-     {
-      "nome": "Il Mattino",
-      "titolo": "Benevento, studenti e lavoratori in piazza contro il carovita: proteste e vertice in Prefettura",
-      "url": "https://www.ilmattino.it/benevento/benevento_manifestazione_usb_carovita_studenti_lavoratori_prefettura-9841613.html",
-      "data": "22 ott, 12:52"
-     },
-     {
-      "nome": "Anteprima24",
-      "titolo": "FOTO/ Studenti e sindacati in protesta: Benevento si colora per un futuro migliore",
-      "url": "https://www.anteprima24.it/benevento/studenti-sindacati-protesta-futuro-benevento/",
-      "data": "22 ott, 12:32"
-     },
-     {
-      "nome": "Ottopagine",
-      "titolo": "Usb e studenti in piazza per dire stop a caro vita e azione del governo - VIDEO",
-      "url": "https://www.ottopagine.it/bn/cronaca/441829/usb-e-studenti-in-piazza-per-dire-stop-a-caro-vita-e-azione-del-governo-video.shtml",
-      "data": "22 ott, 12:18"
-     }
-    ]
-   },
-   "foto": "protesta"
-  },
-  {
-   "id": "san-giorgio-la-molara-san-lazzaro-asfalto",
-   "titolo": "San Giorgio la Molara, nuovi lavori sull'asfalto in località San Lazzaro",
-   "titolo_google": "San Giorgio la Molara, lavori sull'asfalto a San Lazzaro",
-   "sintesi": "Il Comune di San Giorgio la Molara continua i lavori per sistemare e rifare l'asfalto in località San Lazzaro. Il comunicato non dice date né se ci sono limiti al traffico.",
-   "categoria": "strade",
-   "zona": "fortore",
-   "immagine": "lavori-stradali",
-   "luogo": "San Giorgio la Molara",
-   "pubblicato": "2026-10-22T12:10:00+02:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Cronache del Sannio",
-     "url": "https://www.cronachedelsannio.it/sannionews24/sangiorgio-molara-miglioramenti-viabilita-localita-sanlazzaro/"
-    },
-    {
-     "nome": "Gazzetta di Benevento",
-     "url": "https://www.gazzettabenevento.it/it/lavori-di-sistemazione-e-rifacimento-del-manto-stradale"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Il Comune di San Giorgio la Molara, nel Fortore, va avanti con i lavori sulle strade in località San Lazzaro. Giovedì 22 ottobre ha comunicato che ci sono altri interventi per sistemare e rifare l'asfalto.",
-      "fonti": [
-       "Cronache del Sannio",
-       "Gazzetta di Benevento"
-      ]
-     },
-     {
-      "testo": "Secondo il comunicato l'obiettivo è rendere la strada più sicura e più comoda da usare. È la continuazione di interventi già cominciati nella stessa zona.",
-      "fonti": [
-       "Cronache del Sannio",
-       "Gazzetta di Benevento"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "Il Comune prosegue i lavori di rifacimento dell'asfalto a San Lazzaro (stesso comunicato ripreso da entrambe le testate).",
-      "fonti": [
-       "Cronache del Sannio",
-       "Gazzetta di Benevento"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [
-     "Dove esattamente e per quanti giorni si lavora.",
-     "Se ci sono restringimenti o chiusure della strada.",
-     "Quanto costano i lavori."
-    ],
-    "fonti": [
-     {
-      "nome": "Cronache del Sannio",
-      "titolo": "San Giorgio la Molara, miglioramenti alla viabilità in località San Lazzaro",
-      "url": "https://www.cronachedelsannio.it/sannionews24/sangiorgio-molara-miglioramenti-viabilita-localita-sanlazzaro/",
-      "data": "22 ott, 12:10"
-     },
-     {
-      "nome": "Gazzetta di Benevento",
-      "titolo": "Lavori di sistemazione e rifacimento del manto stradale",
-      "url": "https://www.gazzettabenevento.it/it/lavori-di-sistemazione-e-rifacimento-del-manto-stradale",
-      "data": "22 ott, 12:00"
-     }
-    ]
-   },
-   "foto": "lavori-stradali-3"
-  },
-  {
-   "id": "benevento-appello-omicidio-parrella-false-informazioni",
-   "titolo": "Benevento, omicidio Parrella: in appello due prescrizioni e un'assoluzione per le false informazioni ai magistrati",
-   "titolo_google": "Benevento, omicidio Parrella: appello sulle false informazioni",
-   "sintesi": "La Corte d'appello ha deciso per tre persone condannate in primo grado a un anno per false informazioni al pm e favoreggiamento nell'indagine sull'omicidio di Antonio Parrella: due non luoghi a procedere per prescrizione, un'assoluzione.",
-   "categoria": "cronaca",
-   "zona": "benevento",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-22T12:16:00+02:00",
-   "stato": "una_fonte",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Ottopagine",
-     "url": "https://www.ottopagine.it/bn/cronaca/441828/omicidio-parrella-false-informazioni-a-pm-due-prosciolti-e-un-assolto.shtml"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "La Corte d'appello ha deciso su tre persone che nel luglio 2022 erano state condannate a un anno ciascuna perché, secondo l'accusa, con le loro dichiarazioni avevano ostacolato le indagini della Squadra mobile sull'omicidio di Antonio Parrella, 32 anni. Per due di loro, di 37 e 35 anni, di Benevento, il giudice ha dichiarato il non luogo a procedere perché il reato è prescritto. Il terzo, di 59 anni, di Moiano, è stato assolto «perché il fatto non sussiste» dall'accusa di false informazioni al pubblico ministero. Un quarto imputato è nel frattempo morto.",
-      "fonti": [
-       "Ottopagine"
-      ]
-     },
-     {
-      "testo": "Parrella morì al Rummo il 27 luglio 2017 per le botte prese la sera prima durante una festa di compleanno. Per quell'omicidio la condanna per omicidio volontario di un uomo di Benevento è definitiva: la Cassazione l'ha confermata nel marzo 2021, con la pena ridotta in appello a 14 anni e 8 mesi.",
-      "fonti": [
-       "Ottopagine"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Le motivazioni della sentenza d'appello."
-    ],
-    "fonti": [
-     {
-      "nome": "Ottopagine",
-      "titolo": "Omicidio Parrella, \"false informazioni a Pm\": due prosciolti e un assolto",
-      "url": "https://www.ottopagine.it/bn/cronaca/441828/omicidio-parrella-false-informazioni-a-pm-due-prosciolti-e-un-assolto.shtml",
-      "data": "22 ott, 12:16"
-     }
-    ]
-   }
   },
   {
    "id": "benevento-via-intorcia-erba-rami-marciapiedi",
