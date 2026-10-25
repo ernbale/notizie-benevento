@@ -770,11 +770,12 @@ def _testo_mail(m):
 
 # Le locandine: le immagini grandi delle mail (allegate o nel testo) e la prima pagina dei PDF corti si salvano
 # nell'archivio, in allegati/<id del comunicato>/1.jpg …, per usarle al posto delle foto fatte con l'IA (voluto dal
-# proprietario il 25 ott 2026: «se mandano locandine noi le dobbiamo usare, in questo caso niente immagini AI»).
-# Pillow sta in un ambiente a parte sul Pi (~/nb-fonti/venv-img), solo per rimpicciolirle.
+# proprietario il 25 ott 2026: «se mandano locandine noi le dobbiamo usare, in questo caso niente immagini AI»), e
+# anche le foto, più d'una (lui, 25 ott 2026: «se mandano foto usale», «anche più foto se ci sono»): fino a 10, come
+# archivia.FOTO_MAX. Pillow sta in un ambiente a parte sul Pi (~/nb-fonti/venv-img), solo per rimpicciolirle.
 ALLEGATI = "allegati"
 IMMAGINE_MIN = 60_000   # byte: sotto sono loghi e firme
-IMMAGINI_PER_MAIL = 4
+IMMAGINI_PER_MAIL = 10
 PDF_PAGINE_MAX = 2      # un PDF più lungo è un documento, non una locandina
 LATO_MAX = 1600
 VENV_IMG = os.path.join(CARTELLA, "venv-img", "bin", "python3")
