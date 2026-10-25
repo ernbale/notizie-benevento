@@ -266,8 +266,8 @@ def immagine_ig(sito, n):
     anche il riassunto. Si rifà solo se cambia qualcosa (impronta nel commento del JPEG)."""
     from PIL import Image, ImageDraw
     W, H = 1080, 1350
-    occ, foto = _categoria(n), foto_tema(n)
-    impronta = hashlib.sha1(json.dumps([n["titolo"], occ, n.get("luogo"), n.get("sintesi"), foto, 1],
+    occ, foto, loc = _categoria(n), foto_tema(n), locandina(n)
+    impronta = hashlib.sha1(json.dumps([n["titolo"], occ, n.get("luogo"), n.get("sintesi"), foto or loc, 1],
                                        ensure_ascii=False).encode()).hexdigest()[:10]
     rel = f"img/ig/{n['id']}.jpg"
     full = os.path.join(sito, rel)
@@ -294,6 +294,17 @@ def immagine_ig(sito, n):
         fn = _font(FONT_BOLD, 22)
         d.rectangle([0, y + alto_foto - 40, fn.getlength(nota) + 40, y + alto_foto], fill="#111111")
         d.text((20, y + alto_foto - 20), nota, font=fn, fill="#ffffff", anchor="lm")
+        y += alto_foto + 50
+    elif loc and os.path.exists(os.path.join(sito, loc.lstrip("/"))):
+        # la locandina vera, intera (niente ritagli): al centro di una fascia scura alta quanto la foto
+        alto_foto = 600
+        d.rectangle([0, y, W, y + alto_foto], fill="#2b2622")
+        with Image.open(os.path.join(sito, loc.lstrip("/"))) as f:
+            f = f.convert("RGB")
+            r = min((W - 40) / f.width, (alto_foto - 20) / f.height)
+            f = f.resize((round(f.width * r), round(f.height * r)))
+            im.paste(f, ((W - f.width) // 2, y + (alto_foto - f.height) // 2))
+        foto = loc
         y += alto_foto + 50
     else:
         y += 50
@@ -1093,10 +1104,40 @@ SEGUI = ('<section class="segui"><h3>Seguici</h3><p>Le notizie di Benevento e de
 POSTO_ASCOLTA = '<div class="ascolta" style="min-height:38px"></div>'
 
 
+def locandina(n):
+    """La locandina arrivata con il comunicato (img/locandine/<nome>.jpg), se c'è: «/img/locandine/…jpg»."""
+    t = str(n.get("locandina") or "")
+    return "/" + t if re.match(r"^img/locandine/[a-z0-9-]+\.jpg$", t) else None
+
+
+def dim_jpeg(rel):
+    """Larghezza e altezza di un JPEG del sito (letti dall'intestazione, senza Pillow); (0, 0) se non si legge."""
+    try:
+        with open(os.path.join(os.path.dirname(QUI), rel.lstrip("/")), "rb") as f:
+            b = f.read()
+    except OSError:
+        return 0, 0
+    i = 2
+    while i + 9 < len(b) and b[i] == 0xFF:
+        m, lung = b[i + 1], int.from_bytes(b[i + 2:i + 4], "big")
+        if m in (0xC0, 0xC1, 0xC2):
+            return int.from_bytes(b[i + 7:i + 9], "big"), int.from_bytes(b[i + 5:i + 7], "big")
+        i += 2 + lung
+    return 0, 0
+
+
+def html_locandina(rel, chi):
+    w, h = dim_jpeg(rel)
+    misure = f' width="{w}" height="{h}"' if w and h else ""
+    return (f'<figure class="locandina"><img src="{e(rel)}"{misure} alt="La locandina" decoding="async">'
+            f'<figcaption>{e("La locandina di " + chi if chi else "La locandina")}</figcaption></figure>')
+
+
 def foto_tema(n):
-    """La foto illustrativa della notizia (img/temi/<tema>.jpg), se c'è: mai sulla cronaca."""
+    """La foto illustrativa della notizia (img/temi/<tema>.jpg), se c'è: mai sulla cronaca, e mai quando c'è la
+    locandina vera (voluto dal proprietario il 25 ott 2026: «in questo caso niente immagini AI»)."""
     t = n.get("immagine")
-    if not t or n.get("categoria") == "cronaca" or not re.match(r"^[a-z0-9-]+$", str(t)):
+    if not t or n.get("categoria") == "cronaca" or not re.match(r"^[a-z0-9-]+$", str(t)) or locandina(n):
         return None
     # «foto» è la versione scelta da archivia.py per non ripetere la stessa foto in prima pagina
     if re.match(r"^[a-z0-9-]+$", str(n.get("foto") or "")):
@@ -1125,6 +1166,8 @@ def html_articolo(n, appro_collegato):
               'Lo aggiorniamo se arrivano altre fonti.</div>')
     h += _aggiornamento(a.get("aggiornamento"), fonti)
     h += POSTO_ASCOLTA
+    if locandina(n):
+        h += html_locandina(locandina(n), (fonti[0].get("nome") if fonti else ""))
     if foto_tema(n):
         b = foto_tema(n)[:-4]
         h += (f'<figure class="foto-tema"><img src="{b}-m.jpg" srcset="{b}-m.jpg 768w, {b}.jpg 1536w" '
@@ -1444,6 +1487,9 @@ def html_evento(ev):
         righe.append(("Organizza", e(" e ".join(a_lista(ev["organizzatore"])))))
     h += '<dl class="scheda-evento">' + "".join(f"<dt>{t}</dt><dd>{v}</dd>" for t, v in righe) + "</dl>"
     h += '<div class="ev-azioni" style="min-height:38px"></div>'
+    if locandina(ev):
+        org = " e ".join(a_lista(ev.get("organizzatore")))
+        h += html_locandina(locandina(ev), org)
     if foto_tema(ev):
         b = foto_tema(ev)[:-4]
         h += (f'<figure class="foto-tema"><img src="{b}-m.jpg" srcset="{b}-m.jpg 768w, {b}.jpg 1536w" '
@@ -1583,7 +1629,7 @@ def main():
         jsonld = {"@context": "https://schema.org", "@graph": [
             {"@type": "NewsArticle", "@id": url + "#articolo", "headline": breve(titolo_google(n), 110),
              "description": n.get("sintesi"), "datePublished": n.get("pubblicato"), "dateModified": modificato,
-             "image": ([SITO + foto_tema(n)] if foto_tema(n) else []) + [SITO + im], "inLanguage": "it-IT", "articleSection": sez, "isAccessibleForFree": True,
+             "image": ([SITO + (locandina(n) or foto_tema(n))] if locandina(n) or foto_tema(n) else []) + [SITO + im], "inLanguage": "it-IT", "articleSection": sez, "isAccessibleForFree": True,
              "mainEntityOfPage": url, "author": {"@type": "Organization", "name": NOME, "url": SITO + "/"},
              "publisher": ORG, "contentLocation": {"@type": "Place", "name": n.get("luogo")},
              "isBasedOn": [f["url"] for f in fonti if re.match(r"^https?://", str(f.get("url") or ""))]},
@@ -1630,7 +1676,7 @@ def main():
     eventi = tutti_gli_eventi(sito)
     for ev in eventi:
         url = SITO + percorso("evento", ev["id"])
-        ft = foto_tema(dict(ev, immagine=ev.get("immagine") or ""))
+        ft = locandina(ev) or foto_tema(dict(ev, immagine=ev.get("immagine") or ""))
         luogo = {"@type": "Place", "name": ev.get("luogo"), "address": {"@type": "PostalAddress",
                  "addressLocality": ev.get("comune"), "addressRegion": "BN", "addressCountry": "IT"}}
         jsonld = {"@context": "https://schema.org", "@type": "Event", "name": ev["titolo"], "url": url,
@@ -1653,8 +1699,9 @@ def main():
             jsonld["performer"] = [{"@type": "PerformingGroup" if GRUPPO.search(x) else "Person", "name": x}
                                    for x in a_lista(ev["artisti"])]
         # anteprima su WhatsApp e Facebook: la foto del tema (1536×1024), sennò l'immagine del sito
+        dim = (dim_jpeg(ft) if locandina(ev) else (1536, 1024)) if ft else (1200, 630)
         seo = blocco_seo(f"{ev['titolo']}, {ev.get('comune')} – {quando_ev(ev)} – {NOME}", breve(ev.get("breve")), url,
-                         ft or "/condivisione.png", jsonld=jsonld, dim=(1536, 1024) if ft else (1200, 630))
+                         ft or "/condivisione.png", jsonld=jsonld, dim=dim if all(dim) else (1200, 630))
         cartella = os.path.join(sito, "evento", ev["id"])
         scrivi(os.path.join(cartella, "index.html"),
                pagina(modello, seo, {"rotta": "#evento/" + ev["id"], "evento": ev}, html_evento(ev), articolo=True))

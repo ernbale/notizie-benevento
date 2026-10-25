@@ -220,6 +220,14 @@
   .altre-griglia .foto-tema img { aspect-ratio: 16 / 9; }
   .appro .foto-tema { margin: 18px 0 0; }
   .appro .foto-tema figcaption { font-size: 12.5px; }
+  /* la locandina vera mandata da chi organizza (img/locandine): intera, mai ritagliata */
+  .locandina { margin: 18px 0 0; background: var(--carta-scura); padding: 10px; }
+  .locandina img { display: block; max-width: 100%; width: auto; height: auto; max-height: 82vh; margin: 0 auto; }
+  .locandina figcaption { font: 400 12.5px var(--sans); color: var(--grigio); margin-top: 6px; text-align: center; }
+  .notizia .locandina { margin: 0 0 10px; padding: 6px; }
+  .notizia .locandina img { max-height: 360px; }
+  .pop .locandina { margin: 0 -20px 12px; border-radius: 10px 10px 0 0; }
+  .pop .locandina img { max-height: 420px; }
   .cronologia { list-style: none; padding: 0 !important; }
   .cronologia li { display: grid; grid-template-columns: 110px 1fr; gap: 12px; padding: 10px 0; border-bottom: 1px dotted #b7a48f; }
   .cronologia .giorno { font: 700 14px var(--sans); color: var(--rosso); padding-top: 4px; }
@@ -975,6 +983,7 @@
 
   // La foto illustrativa scelta dall'agente tra quelle di img/temi (non è una foto del fatto: lo dice la didascalia).
   function fotoTema(n, didascalia, grande) {
+    if (n.locandina) return locandinaFig(n, grande);   // la locandina vera: niente immagine fatta con l'IA
     if (!n.immagine || n.categoria === "cronaca" || !/^[a-z0-9-]+$/.test(n.immagine)) return null;
     // «foto» è la versione scelta da archivia.py per non ripetere la stessa foto in prima pagina
     var nome = /^[a-z0-9-]+$/.test(n.foto || "") ? n.foto : n.immagine;
@@ -986,6 +995,19 @@
     if (!grande) im.loading = "lazy";
     f.appendChild(im);
     f.appendChild(el("figcaption", "", [didascalia]));
+    return f;
+  }
+
+  // La locandina mandata da chi organizza (comunicati per posta, img/locandine): intera, con chi la firma.
+  function locandinaFig(n, grande) {
+    if (!/^img\/locandine\/[a-z0-9-]+\.jpg$/.test(n.locandina || "")) return null;
+    var f = el("figure", "locandina", []), im = document.createElement("img");
+    im.src = "/" + n.locandina; im.alt = "La locandina"; im.decoding = "async";
+    if (!grande) im.loading = "lazy";
+    f.appendChild(im);
+    var org = Array.isArray(n.organizzatore) ? n.organizzatore.join(" e ") : n.organizzatore;
+    var chi = org || (((n.articolo || {}).fonti || [])[0] || {}).nome;
+    f.appendChild(el("figcaption", "", [chi ? "La locandina di " + chi : "La locandina"]));
     return f;
   }
 

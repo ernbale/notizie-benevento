@@ -67,7 +67,7 @@ def didascalia(n, aggiornamento=False):
     elif fonti:
         m += f"\n\n{len(fonti)} fonti confrontate: {', '.join(fonti[:6])}{' e altre.' if len(fonti) > 6 else '.'}"
     m += f"\n\nLeggi tutto su notiziebenevento.it (link nella bio):\n{SITO}/notizia/{n['id']}/"
-    if n.get("immagine") and n.get("categoria") != "cronaca":
+    if n.get("immagine") and n.get("categoria") != "cronaca" and not n.get("locandina"):   # la locandina è vera
         m += "\n\nImmagine illustrativa creata con l'intelligenza artificiale: non è una foto del fatto."
     tag = ["#Benevento", "#Sannio"]
     for luogo in re.split(r"[,;/]| e ", n.get("luogo") or ""):   # «Napoli, Sannio» → #Napoli (#Sannio c'è già)
@@ -81,7 +81,7 @@ def didascalia_riepilogo(giorno, notizie):
     m = f"{TITOLO_RIEPILOGO}, {giorno}: le notizie più importanti della giornata.\n\n"
     m += "\n".join(f"{i}. {n['titolo'].strip()}" for i, n in enumerate(notizie, 1))
     m += "\n\nScorri le immagini. Leggi tutto su notiziebenevento.it (link nella bio)."
-    if any(n.get("immagine") and n.get("categoria") != "cronaca" for n in notizie):
+    if any(n.get("immagine") and n.get("categoria") != "cronaca" and not n.get("locandina") for n in notizie):
         m += "\n\nLe immagini illustrative sono create con l'intelligenza artificiale: non sono foto dei fatti."
     return m + "\n\n#Benevento #Sannio #notizie"
 

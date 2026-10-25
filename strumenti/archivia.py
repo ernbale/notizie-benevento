@@ -47,6 +47,13 @@ TEMA_TIPO = {"teatro": "teatro", "danza": "danza", "concerto": "concerto", "liri
              "museo": "museo", "cinema": "cinema", "sagra": "sagra", "festa": "luminarie", "mercatino": "mercato",
              "natale": "natale", "carnevale": "carnevale"}
 ORA = re.compile(r"^([01]\d|2[0-3]):[0-5]\d$")
+# Le locandine arrivate per posta (voluto dal proprietario il 25 ott 2026: «se mandano locandine noi le dobbiamo usare,
+# in questo caso niente immagini AI»): l'agente scrive "locandina": "<id del comunicato>/<n>", cioè il file
+# allegati/<id>/<n>.jpg dell'archivio delle fonti (comunicati.json, «immagini»); risolvi_locandine() lo copia in
+# img/locandine/ del sito e il campo diventa il percorso.
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # la cartella del sito (--cartella nelle prove)
+LOCANDINA = re.compile(r"^img/locandine/[a-z0-9-]+\.jpg$")
+RIF_LOCANDINA = re.compile(r"^(?:posta:)?([A-Za-z0-9_-]+)/(\d+)$")
 GIORNI_EVENTI = 60           # un evento finito da più di 60 giorni passa in archivio/eventi-AAAA-MM.json
 
 
@@ -547,6 +554,97 @@ def scegli_foto(notizie):
             usate[libera] = usate.get(libera, 0) + 1
 
 
+def archivio_fonti():
+    """L'archivio delle fonti lette da casa: accanto al sito, o in /home/user nel cloud."""
+    for p in (os.environ.get("NB_FONTI_ARCHIVIO"), os.path.join(os.path.dirname(BASE), "notizie-benevento-fonti"),
+              "/home/user/notizie-benevento-fonti"):
+        if p and os.path.isdir(p):
+            return p
+    return None
+
+
+def sorgente_locandina(rif):
+    """Il file dell'archivio delle fonti indicato da "<id del comunicato>/<n>", se c'è."""
+    m, fonti = RIF_LOCANDINA.match(str(rif)), archivio_fonti()
+    p = m and fonti and os.path.join(fonti, "allegati", m[1], m[2] + ".jpg")
+    return p if p and os.path.exists(p) else None
+
+
+def controlla_locandina(x, w, err):
+    if "locandina" not in x:
+        return
+    r = str(x["locandina"])
+    if LOCANDINA.match(r):
+        if not os.path.exists(os.path.join(BASE, r)):
+            err.append(f"{w}: la locandina {r} non c'è nel sito")
+    elif not sorgente_locandina(r):
+        err.append(f"{w}: locandina {r!r}: scrivi «<id del comunicato>/<numero>» di un'immagine che c'è in "
+                   "comunicati.json («immagini», file allegati/<id>/<numero>.jpg)")
+
+
+def risolvi_locandine(voci):
+    """Copia in img/locandine/ le locandine indicate come "<id del comunicato>/<n>" e mette nel campo il percorso del
+    sito. Una locandina uguale già copiata (stesso contenuto) si riusa. Restituisce i file nuovi."""
+    copiati = []
+    cart = os.path.join(BASE, "img", "locandine")
+    for x in voci:
+        src = sorgente_locandina(x.get("locandina")) if x.get("locandina") and not LOCANDINA.match(str(x["locandina"])) else None
+        if not src:
+            continue
+        with open(src, "rb") as f:
+            dati = f.read()
+        impronta = hashlib.sha1(dati).hexdigest()
+        uguale = None
+        for q in sorted(glob.glob(os.path.join(cart, "*.jpg"))):
+            with open(q, "rb") as f:
+                if hashlib.sha1(f.read()).hexdigest() == impronta:
+                    uguale = q
+                    break
+        if uguale:
+            rel = "img/locandine/" + os.path.basename(uguale)
+        else:
+            os.makedirs(cart, exist_ok=True)
+            nome, k = str(x.get("id")), 1
+            rel = f"img/locandine/{nome}.jpg"
+            while os.path.exists(os.path.join(BASE, rel)):
+                k += 1
+                rel = f"img/locandine/{nome}-{k}.jpg"
+            with open(os.path.join(BASE, rel), "wb") as f:
+                f.write(dati)
+            copiati.append(rel)
+        x["locandina"] = rel
+    return copiati
+
+
+PAROLE_VUOTE = {"del", "della", "dello", "dei", "degli", "delle", "di", "da", "al", "alla", "allo", "ai", "agli", "alle",
+                "a", "in", "il", "lo", "la", "i", "gli", "le", "e", "con", "per", "su", "tra", "fra", "un", "una", "uno",
+                "nel", "nella", "sul", "sulla", "edizione", "2026", "2027"}
+
+
+def parole_titolo(t):
+    return {w for w in re.findall(r"[a-zà-ù0-9]+", str(t).lower().replace("'", " ")) if w not in PAROLE_VUOTE and len(w) > 2}
+
+
+def doppioni_eventi(eventi):
+    """Coppie di eventi che sembrano lo stesso: stesso Comune, giorni che si toccano, titoli simili (metà delle parole
+    importanti in comune). Voluto dal proprietario il 25 ott 2026 con gli eventi mandati per posta: «stai attento a non
+    creare doppioni»."""
+    out = []
+    for i, a in enumerate(eventi):
+        for b in eventi[i + 1:]:
+            if str(a.get("comune")).lower() != str(b.get("comune")).lower():
+                continue
+            fa, fb = a.get("fine") or a.get("inizio"), b.get("fine") or b.get("inizio")
+            if not (str(a.get("inizio")) <= str(fb) and str(b.get("inizio")) <= str(fa)):
+                continue
+            if a.get("ora") and b.get("ora") and a["ora"] != b["ora"] and a.get("inizio") == b.get("inizio") == fa == fb:
+                continue   # due spettacoli dello stesso giorno a ore diverse
+            pa, pb = parole_titolo(a.get("titolo")), parole_titolo(b.get("titolo"))
+            if pa and pb and len(pa & pb) >= max(2, min(len(pa), len(pb)) / 2):
+                out.append((a.get("id"), b.get("id")))
+    return out
+
+
 def controlla_eventi(ev, err):
     """Le regole di AGENTE.md («Il calendario degli eventi») su eventi.json."""
     if not isinstance(ev.get("eventi"), list):
@@ -580,6 +678,7 @@ def controlla_eventi(ev, err):
             err.append(f"{w}: organizzatore deve essere un nome o un elenco di nomi")
         if "artisti" in x and not nomi_ok(x["artisti"]):
             err.append(f"{w}: artisti deve essere un elenco di nomi")
+        controlla_locandina(x, w, err)
         if "annullato" in x and not isinstance(x["annullato"], bool):
             err.append(f"{w}: annullato deve essere true o false")
         if x.get("immagine") and x["immagine"] not in temi:
@@ -599,6 +698,9 @@ def controlla_eventi(ev, err):
             for nm in r.get("fonti", []):
                 if nm not in nomi:
                     err.append(f"{w}: la descrizione cita {nm!r} che non è nelle fonti")
+    for a, b in doppioni_eventi(ev["eventi"]):
+        err.append(f"eventi {a} e {b}: sembrano lo stesso evento (stesso Comune, stessi giorni, titolo simile): tienine "
+                   "uno solo e aggiorna quello (date, orari, fonti, locandina)")
 
 
 def controlla(d, err, avv, adesso=None):
@@ -695,6 +797,7 @@ def controlla(d, err, avv, adesso=None):
                 err.append(f"{w}: 'una_fonte' solo per {', '.join(UNA_FONTE_CAT)} (mai allerte ed eventi)")
             if n.get("rilevante"):
                 err.append(f"{w}: una notizia con una sola fonte non può essere 'rilevante'")
+        controlla_locandina(n, w, err)
         if "immagine" in n:
             if n.get("categoria") == "cronaca":
                 err.append(f"{w}: niente immagine sulla cronaca (togli il campo immagine)")
@@ -813,7 +916,8 @@ def main():
                     help="le righe dei giornali per il registro (le scrive strumenti/giornali.py)")
     ap.add_argument("--cartella", default=os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     a = ap.parse_args()
-    base = a.cartella
+    global BASE
+    base = BASE = a.cartella
     oggi = dt.date.fromisoformat(a.oggi) if a.oggi else oggi_roma()
     p_notizie = os.path.join(base, "notizie.json")
     cart_arch = os.path.join(base, "archivio")
@@ -922,6 +1026,8 @@ def main():
             print("ERRORE:", x)
         print(f"{len(err)} ERRORI: niente è stato scritto")
         sys.exit(1)
+    # le locandine arrivate per posta si copiano nel sito solo quando è tutto a posto
+    locandine = [] if a.prova else risolvi_locandine(d.get("notizie", []) + ((ev or {}).get("eventi") or []))
 
     # L'ora dei riquadri «Aggiornamento» e i fatti in ordine di tempo: li fa il programma, così non si sbagliano.
     if a.giro:   # il sito dice a che ora è stato controllato l'ultima volta, anche quando non c'è niente di nuovo
@@ -986,8 +1092,8 @@ def main():
                 print(f"ARCHIVIATO EVENTO: {x['id']} ({fine}) → archivio/eventi-{fine[:7]}.json")
             else:
                 restano_ev.append(x)
-        for x in restano_ev:
-            if not x.get("immagine") and TEMA_TIPO.get(x.get("tipo")) in temi_foto():
+        for x in restano_ev:   # con la locandina niente foto fatta con l'IA
+            if not x.get("immagine") and not x.get("locandina") and TEMA_TIPO.get(x.get("tipo")) in temi_foto():
                 x["immagine"] = TEMA_TIPO[x["tipo"]]
         restano_ev.sort(key=lambda x: (x["inizio"], x.get("ora") or "", x["id"]))
         scegli_foto(restano_ev)
@@ -1072,6 +1178,9 @@ def main():
         print("CAMBIATO:", os.path.relpath(p, base))
     if notizie_da_segnare:
         print("CAMBIATO: notizie.json")
+    for p in locandine:   # le mette lui nel commit: il giro aggiunge solo i file JSON (git add del prompt)
+        subprocess.run(["git", "-C", base, "add", p], capture_output=True)
+        print("CAMBIATO:", p)
     for p in da_togliere:
         os.remove(p)
         print("CAMBIATO (tolto):", os.path.relpath(p, base))

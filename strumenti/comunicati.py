@@ -11,8 +11,16 @@ segna il comunicato in comunicati_visti.json e (con --pubblica) fa il commit e i
 se nel frattempo qualcuno ha pubblicato. Non archivia e non tocca le altre notizie: così il giro di ogni ora, che può
 lavorare nello stesso momento, si unisce senza conflitti (strumenti/unisci_notizie.py).
 
+Dal 25 ott 2026 (il proprietario: «deve aggiungerlo anche al calendario, stai attento a non creare doppioni») un
+comunicato su un evento del calendario (AGENTE.md, «Il calendario degli eventi») va anche in eventi.json: in «eventi»
+l'evento completo; se è già in calendario, con lo stesso id (lo sostituisce: date, orari, fonti, locandina). Un evento
+nuovo che somiglia a uno che c'è già (stesso Comune, stessi giorni, titolo simile) è un errore: si aggiorna quello.
+La locandina arrivata con la mail («immagini» del comunicato) si indica con "locandina": "<id del comunicato>/<n>",
+nella notizia e nell'evento: la copia in img/locandine/ archivia.risolvi_locandine(), e niente foto fatta con l'IA.
+
 Il file per --unisci:
 {"notizie": [ {una notizia completa come in AGENTE.md, «comunicati»: ["id del comunicato"]} ],
+ "eventi": [ {un evento completo come in AGENTE.md} ],   (facoltativo)
  "esiti": [ {"comunicato": "id", "esito": "pubblicato", "notizia": "id della notizia nuova"},
             {"comunicato": "id", "esito": "gia_nel_sito", "notizia": "id della notizia che c'è già"},
             {"comunicato": "id", "esito": "scartato", "motivo": "perché non si pubblica"} ]}
@@ -25,6 +33,7 @@ Uso:  python3 strumenti/comunicati.py --da-fare
 import argparse
 import copy
 import datetime as dt
+import glob
 import hashlib
 import json
 import os
@@ -40,6 +49,7 @@ import giornali as G   # noqa: E402
 SITO = os.path.dirname(QUI)
 FILE = os.path.join(SITO, "comunicati_visti.json")
 NOTIZIE = os.path.join(SITO, "notizie.json")
+EVENTI = os.path.join(SITO, "eventi.json")
 ESITI = ("pubblicato", "gia_nel_sito", "scartato")
 GIORNI_DA_FARE = 3      # i comunicati arrivati da più giorni non sono più «da fare» per il giro lampo
 GIORNI_VISTI = 30       # quanto si ricordano i comunicati trattati
@@ -101,6 +111,9 @@ def da_fare(adesso):
         print(f"  oggetto: {v.get('titolo')}")
         for n in simili(v, notizie, adesso):
             print(f"  POSSIBILE STESSO FATTO già sul sito: {n['id']} · {n.get('pubblicato', '')[:16]} · {n.get('titolo')}")
+        for k, im in enumerate(v.get("immagini") or [], 1):   # le locandine: guardale (Read) prima di usarle
+            print(f"  immagine {v['id']}/{k}: {os.path.join(A.archivio_fonti() or '', im.get('file', ''))} "
+                  f"({im.get('da')}, {im.get('larghezza')}×{im.get('altezza')})")
         print("  testo:\n    " + str(v.get("testo") or "").strip().replace("\n", "\n    "))
     print("\n" + (f"DA FARE: {len(voci)} comunicati" if voci else "NIENTE DA FARE: nessun comunicato nuovo"))
 
@@ -178,6 +191,32 @@ def unisci(d, visti, entrata, voci, adesso, err):
     return [n.get("titolo", "") for n in nuove]
 
 
+def unisci_eventi(ev, entrata, err):
+    """Gli eventi del file in eventi.json: con un id che c'è già lo sostituiscono, se no si aggiungono. Restituisce i
+    titoli (i controlli, doppioni compresi, li fa poi archivia.controlla_eventi)."""
+    nuovi = entrata.get("eventi") or []
+    if not isinstance(nuovi, list) or not all(isinstance(x, dict) and x.get("id") for x in nuovi):
+        err.append("«eventi» deve essere un elenco di eventi, ognuno col suo «id»")
+        return []
+    in_archivio = set()
+    for q in glob.glob(os.path.join(SITO, "archivio", "eventi-*.json")):
+        in_archivio |= {x.get("id") for x in leggi(q, {}).get("eventi") or []}
+    lista = ev.setdefault("eventi", [])
+    titoli = []
+    for x in nuovi:
+        if x["id"] in in_archivio:
+            err.append(f"evento {x['id']}: id di un evento già in archivio: scegline un altro")
+            continue
+        i = next((k for k, y in enumerate(lista) if y.get("id") == x["id"]), None)
+        if i is None:
+            lista.append(x)
+            titoli.append("evento nuovo: " + str(x.get("titolo")))
+        else:
+            lista[i] = x
+            titoli.append("evento aggiornato: " + str(x.get("titolo")))
+    return titoli
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--da-fare", action="store_true")
@@ -197,10 +236,10 @@ def main():
     voci = comunicati().get("voci") or []
     if a.pubblica:
         altro = [r for r in git("status", "--porcelain").stdout.splitlines()
-                 if not r.endswith(("notizie.json", "comunicati_visti.json"))]
+                 if not r.endswith(("notizie.json", "comunicati_visti.json", "eventi.json")) and "img/locandine/" not in r]
         if altro:   # il giro lampo scrive solo con questo programma: il resto si perderebbe nel ripartire da capo
             print("ERRORE: ci sono altri file cambiati (" + "; ".join(altro[:5]) + "): il giro lampo scrive solo "
-                  "notizie.json e comunicati_visti.json, e solo con questo programma")
+                  "notizie.json, eventi.json, comunicati_visti.json e le locandine, e solo con questo programma")
             return 1
         git("fetch", "-q", "origin", "main")
         git("reset", "-q", "--hard", "origin/main")   # si parte dal main di adesso: la sessione può essere vecchia
@@ -213,6 +252,15 @@ def main():
         visti = cartella.get("visti") or {}
         err, avv = [], []
         titoli = unisci(d, visti, copy.deepcopy(entrata), voci, adesso, err)
+        ev = None
+        if entrata.get("eventi") and not err:
+            ev = leggi(EVENTI, None)
+            if not isinstance(ev, dict):
+                err.append("eventi.json non si legge")
+            else:
+                titoli += unisci_eventi(ev, copy.deepcopy(entrata), err)
+                if not err:
+                    A.controlla_eventi(ev, err)
         if not err:
             A.controlla(d, err, avv, adesso)
         if err:
@@ -220,17 +268,24 @@ def main():
                 print("AVVISO:", x)
             print("\n".join(f"ERRORE: {x}" for x in err) + "\nNiente è stato scritto: correggi il file e rilancia.")
             return 1
+        # le locandine si copiano nel sito solo adesso, con tutti i controlli passati
+        A.risolvi_locandine(d.get("notizie", []) + ((ev or {}).get("eventi") or []))
         limite = (adesso - dt.timedelta(days=GIORNI_VISTI)).isoformat()
         visti = {k: v for k, v in visti.items() if v.get("quando", "") >= limite}
         with open(NOTIZIE, "w", encoding="utf-8") as f:
             f.write(A.testo_json(d))
+        if ev is not None:
+            with open(EVENTI, "w", encoding="utf-8") as f:
+                f.write(A.testo_json(ev))
         with open(FILE, "w", encoding="utf-8") as f:
             f.write(A.testo_json({"nota": "Comunicati arrivati per posta e già trattati dal giro lampo "
                                           "(strumenti/comunicati.py): id, esito, notizia, ora.", "visti": visti}))
         print("OK: " + ("; ".join(titoli) if titoli else "nessuna notizia nuova (comunicati segnati come visti)"))
         if not a.pubblica:
             return 0
-        git("add", "notizie.json", "comunicati_visti.json")
+        git("add", "notizie.json", "comunicati_visti.json", "eventi.json")
+        if os.path.isdir(os.path.join(SITO, "img", "locandine")):
+            git("add", "img/locandine")
         msg = f"Comunicato delle {adesso:%H:%M}: " + ("; ".join(titoli)[:120] if titoli else "comunicati visti")
         git("commit", "-q", "-m", msg)
         if git("push", "-q", "origin", "HEAD:main", controlla=False).returncode == 0:

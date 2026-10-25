@@ -502,6 +502,18 @@ aggiorni a ogni giro, come notizie.json.
   teatro, associazione; più d'uno = elenco) e **chi sale sul palco** (attori, cantanti, gruppi, orchestre; non il
   regista, non gli artisti esposti in una mostra). Solo se sono scritti nella fonte, come il prezzo: se non li sai non
   metterli. Se li trovi per un evento già in calendario, aggiungili.
+- **Gli eventi mandati per posta** (Pro Loco, teatri, associazioni a comunicati@notiziebenevento.it): li mette in
+  calendario il giro lampo (COMUNICATI.md) insieme alla notizia. Quelli che il giro lampo ha lasciato a te
+  («Comunicato per email» nell'elenco di giornali.py) vanno anche qui, con le stesse regole. **Mai doppioni**: prima di
+  aggiungere un evento cerca in eventi.json lo stesso Comune negli stessi giorni; se c'è già, aggiorna quello (date,
+  orari, programma, fonti, locandina) e non crearne un altro. archivia.py ferma il giro se due eventi hanno lo stesso
+  Comune, gli stessi giorni e un titolo simile.
+- `locandina` (voluta dal proprietario il 25 ott 2026: «se mandano locandine noi le dobbiamo usare, in questo caso
+  niente immagini AI»): se il comunicato ha `immagini` (comunicati.json; i file sono in `allegati/<id>/` dell'archivio
+  delle fonti) **guardale** con Read e, se una è proprio la locandina di quell'evento (titolo, date e luogo giusti),
+  scrivi `"locandina": "<id del comunicato>/<numero>"` nell'evento e nella notizia, e niente `immagine`. La copia nel
+  sito la fa archivia.py (la mette in `img/locandine/` e cambia il campo in `img/locandine/<nome>.jpg`: quello lascialo
+  com'è). Un logo, una foto di persone o un'immagine che non è la locandina non si usa.
 - `notizia`: l'`id` della notizia collegata, se l'evento è anche una notizia in prima pagina o in archivio.
 - L'`id` è per sempre (è l'indirizzo della pagina): parole chiave e anno, es. `sagra-castagna-vitulano-2026`.
 
@@ -516,6 +528,7 @@ aggiorni a ogni giro, come notizie.json.
     "orari": "gli orari per esteso, se ci sono", "luogo": "teatro, piazza, chiesa…", "comune": "Benevento",
     "zona": "benevento|telesina|caudina|fortore|provincia", "prezzo": "solo se scritto",
     "organizzatore": "Pro Loco … (solo se scritto; più d'uno = elenco)", "artisti": ["solo se scritti"],
+    "locandina": "<id del comunicato>/<numero> (solo se è arrivata per posta)",
     "breve": "1-2 frasi", "descrizione": [ {"testo": "", "fonti": ["Nome fonte"]} ],
     "immagine": "tema (facoltativo)", "notizia": "id (facoltativo)", "annullato": false,
     "fonti": [ {"nome": "", "titolo": "titolo esatto", "url": "", "data": "20 ott"} ]

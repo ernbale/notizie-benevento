@@ -37,6 +37,7 @@ import html
 import json
 import os
 import re
+import shutil
 import ssl
 import subprocess
 import sys
@@ -690,6 +691,83 @@ def _testo_mail(m):
     return tutto[:TESTO_MAX], allegati
 
 
+# Le locandine: le immagini grandi delle mail (allegate o nel testo) e la prima pagina dei PDF corti si salvano
+# nell'archivio, in allegati/<id del comunicato>/1.jpg …, per usarle al posto delle foto fatte con l'IA (voluto dal
+# proprietario il 25 ott 2026: «se mandano locandine noi le dobbiamo usare, in questo caso niente immagini AI»).
+# Pillow sta in un ambiente a parte sul Pi (~/nb-fonti/venv-img), solo per rimpicciolirle.
+ALLEGATI = "allegati"
+IMMAGINE_MIN = 60_000   # byte: sotto sono loghi e firme
+IMMAGINI_PER_MAIL = 4
+PDF_PAGINE_MAX = 2      # un PDF più lungo è un documento, non una locandina
+LATO_MAX = 1600
+VENV_IMG = os.path.join(CARTELLA, "venv-img", "bin", "python3")
+RIDUCI = ("import io, sys\nfrom PIL import Image, ImageOps\n"
+          "im = ImageOps.exif_transpose(Image.open(io.BytesIO(sys.stdin.buffer.read())))\n"
+          "if im.mode in ('RGBA', 'LA', 'P'):\n"
+          "    im = im.convert('RGBA'); f = Image.new('RGB', im.size, 'white'); f.paste(im, mask=im.getchannel('A')); im = f\n"
+          f"im = im.convert('RGB'); im.thumbnail(({LATO_MAX}, {LATO_MAX}))\n"
+          "im.save(sys.stdout.buffer, 'JPEG', quality=85, optimize=True, progressive=True)\n"
+          "sys.stderr.write(f'{im.width} {im.height}')\n")
+
+
+def riduci(dati):
+    """Un'immagine (jpg, png, webp…) in JPEG di al massimo LATO_MAX px per lato: (byte, larghezza, altezza)."""
+    r = subprocess.run([VENV_IMG, "-c", RIDUCI], input=dati, capture_output=True, timeout=60)
+    if r.returncode:
+        raise RuntimeError(r.stderr.decode("utf-8", "replace")[-300:])
+    w, h = map(int, r.stderr.decode().split()[-2:])
+    return r.stdout, w, h
+
+
+def immagini_mail(m, ident):
+    """Le immagini grandi di una mail e la prima pagina dei suoi PDF corti, salvate in allegati/<ident>/ dell'archivio:
+    [{"file": "allegati/<ident>/1.jpg", "da": nome dell'allegato, "larghezza", "altezza"}]."""
+    out = []
+    for parte in m.walk():
+        if len(out) >= IMMAGINI_PER_MAIL:
+            break
+        if parte.is_multipart():
+            continue
+        nome = parte.get_filename() or ""
+        dati = parte.get_payload(decode=True) or b""
+        try:
+            if parte.get_content_maintype() == "image" and len(dati) >= IMMAGINE_MIN:
+                jpg, w, h = riduci(dati)
+            elif dati and (parte.get_content_type() == "application/pdf" or nome.lower().endswith(".pdf")):
+                with tempfile.TemporaryDirectory() as td:
+                    pdf = os.path.join(td, "a.pdf")
+                    with open(pdf, "wb") as f:
+                        f.write(dati)
+                    info = subprocess.run(["pdfinfo", pdf], capture_output=True, timeout=30).stdout.decode("utf-8", "replace")
+                    pagine = re.search(r"^Pages:\s+(\d+)", info, re.M)
+                    if not pagine or int(pagine[1]) > PDF_PAGINE_MAX:
+                        continue
+                    subprocess.run(["pdftoppm", "-png", "-r", "150", "-f", "1", "-l", "1", "-singlefile", pdf,
+                                    os.path.join(td, "p")], check=True, capture_output=True, timeout=60)
+                    with open(os.path.join(td, "p.png"), "rb") as f:
+                        jpg, w, h = riduci(f.read())
+            else:
+                continue
+        except (OSError, ValueError, RuntimeError, subprocess.SubprocessError) as e:
+            print(f"  immagine della mail {ident} ({nome or 'nel testo'}) non salvata: {e}", file=sys.stderr)
+            continue
+        rel = f"{ALLEGATI}/{ident}/{len(out) + 1}.jpg"
+        os.makedirs(os.path.join(ARCHIVIO, ALLEGATI, ident), exist_ok=True)
+        with open(os.path.join(ARCHIVIO, rel), "wb") as f:
+            f.write(jpg)
+        out.append({"file": rel, "da": nome or "immagine nel testo della mail", "larghezza": w, "altezza": h})
+    return out
+
+
+def pulisci_allegati(voci):
+    """Via le immagini dei comunicati che non sono più in comunicati.json (più vecchi di 7 giorni)."""
+    cartella = os.path.join(ARCHIVIO, ALLEGATI)
+    tenere = {v.get("id") for v in voci}
+    for d in os.listdir(cartella) if os.path.isdir(cartella) else []:
+        if d not in tenere:
+            shutil.rmtree(os.path.join(cartella, d), ignore_errors=True)
+
+
 def posta(vecchie):
     """I comunicati arrivati a comunicati@notiziebenevento.it (Aruba): ultimi 7 giorni, casella aperta in sola lettura
     (non si segna niente come letto). Del mittente si tengono nome e dominio, non l'indirizzo."""
@@ -728,9 +806,13 @@ def posta(vecchie):
             except (TypeError, ValueError):
                 quando = dt.datetime.now(fuso()).isoformat(timespec="minutes")
             corpo, allegati = _testo_mail(m)
-            voci.append({"id": id_posta(link), "titolo": dec(m.get("Subject")) or "(senza oggetto)", "link": link,
-                         "data": quando, "arrivata": adesso, "mittente": mittente, "dominio": dominio,
-                         "allegati": allegati, "testo": corpo})
+            v = {"id": id_posta(link), "titolo": dec(m.get("Subject")) or "(senza oggetto)", "link": link,
+                 "data": quando, "arrivata": adesso, "mittente": mittente, "dominio": dominio,
+                 "allegati": allegati, "testo": corpo}
+            immagini = immagini_mail(m, v["id"])
+            if immagini:
+                v["immagini"] = immagini
+            voci.append(v)
     return voci, {"scartate": scartate[-300:]}
 
 
@@ -804,6 +886,8 @@ def leggi(nome, adesso):
     limite = (adesso - dt.timedelta(days=giorni)).date().isoformat()
     dati["voci"] = sorted((v for v in tutte.values() if v.get("data", "")[:10] >= limite),
                           key=lambda v: v.get("data", ""), reverse=True)[:200 if nome == "comuni" else 80]
+    if nome == "comunicati" and not PROVA:
+        pulisci_allegati(dati["voci"])
     return dati
 
 
@@ -831,6 +915,8 @@ incompleto. La casella dei comunicati la legge ogni 5 minuti.
   il Pi l'ha vista, `mittente` (nome) e `dominio` (dopo la @), `allegati`, `testo` (con quello dei PDF allegati). Il
   `link` è «posta:…»: non è un indirizzo da citare. Rimbalzi, risposte automatiche e avvisi di Aruba non ci sono
   (`scartate`: solo i loro riferimenti). Appena ne arriva uno il Pi fa partire il giro lampo (COMUNICATI.md del sito).
+  `immagini` (dal 25 ott 2026): le immagini grandi della mail e la prima pagina dei PDF di 1-2 pagine, in JPEG nella
+  cartella `allegati/<id>/` (`file`, `da` = nome dell'allegato, `larghezza`, `altezza`): le locandine degli eventi.
 
 In ogni file: `controllato` = ultimo tentativo, `esito`, `ultima_lettura_riuscita`, `voci` (titolo, link, data,
 testo). Il `link` è quello originale da citare tra le fonti. Archivio privato: i testi restano di chi li ha scritti.
