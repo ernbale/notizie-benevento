@@ -640,7 +640,10 @@ PEC_INDIRIZZO = "notiziebenevento@pec.it"
 NON_COMUNICATO_DA = re.compile(r"mailer-daemon|mail-daemon|postmaster|mail delivery|no-?reply.*aruba", re.I)
 NON_COMUNICATO_OGGETTO = re.compile(
     r"^\s*(undeliver|undelivered|recapito fallito|mancato recapito|delivery status|returned mail|mail delivery|"
-    r"auto(matic)?\s*(reply|risposta)?\s*:|risposta automatica|out of office|fuori sede|assente)", re.I)
+    r"auto(matic)?\s*(reply|risposta)?\s*:|risposta automatica|out of office|fuori sede|assente|"
+    # i protocolli dei Comuni rispondono da soli alle PEC (dal 25 ott 2026, mail dalla PEC agli uffici)
+    r"(notifica|ricevuta|conferma)\s+(di\s+)?(avvenuta\s+)?(protocollazione|ricezione|eccezione)|"
+    r"aggiornamento\s+(di\s+)?conferma|annullamento\s+(di\s+)?protocollazione)", re.I)
 NON_COMUNICATO_DOMINI = ("staff.aruba.it", ".ad.aruba.it")
 # Le risposte alla nostra mail («grazie, vi abbiamo aggiunti») non sono comunicati, ma un ufficio stampa può anche
 # rispondere mandando un comunicato: allora vanno all'agente come gli altri (voluto il 24 ott 2026, dopo la risposta
