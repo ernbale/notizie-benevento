@@ -3,8 +3,8 @@
 stesso tema non mostrano sempre la stessa foto, sul sito e sui social.
 
 Quante versioni (voluto dal proprietario il 22 ott 2026: «almeno 4 per ogni tema, quelle più frequenti anche di
-più»): almeno MINIMO per ogni tema; FREQUENTI per i temi segnati «frequente» in temi.json (quelli che ricorrono di
-più nei titoli dei giornali); IN_TESTA per i temi più usati di tutti (TESTA).
+più»; il 25 ott: «raddoppiamo le foto», da 788 a 1576): almeno MINIMO per ogni tema; FREQUENTI per i temi segnati
+«frequente» in temi.json (quelli che ricorrono di più nei titoli dei giornali); IN_TESTA per i più usati (TESTA).
 
 Le versioni nuove sono la stessa scena del tema (o di una sua variante) con un'altra luce, un'altra stagione o
 un'altra inquadratura: la frase è scritta in temi.json, nella lista «varianti» (variante i = file <tema>-<i+2>.jpg).
@@ -25,7 +25,7 @@ import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 
 CART = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "img", "temi")
-MINIMO, FREQUENTI, IN_TESTA = 4, 6, 8
+MINIMO, FREQUENTI, IN_TESTA = 8, 12, 16
 TESTA = ["teatro", "calcio", "lavori-stradali", "strada-chiusa", "treno", "scuola", "pioggia", "autobus", "ospedale",
          "rifiuti", "carburante", "camion"]
 MODELLO, QUALITA, MISURA = "gpt-image-2.5-sunburst", "medium", "1536x1024"
@@ -39,7 +39,13 @@ MODI = ["a close-up detail of the main subject, shallow depth of field",
         "photographed from a low angle, at golden hour",
         "a different composition with the subject off-center, in winter under a grey sky",
         "a view from above, in bright daylight",
-        "at dusk, seen from further away, with the first lights on"]
+        "at dusk, seen from further away, with the first lights on",
+        # 25 ott 2026: per raddoppiare servono più modi, se no la stessa scena torna con lo stesso modo
+        "after the rain, with wet reflective surfaces, seen at eye level",
+        "on a foggy early morning, with soft muted colors",
+        "at night under warm street lights",
+        "in summer at midday, with strong sunlight and hard shadows",
+        "in spring, with fresh green around, photographed from a distance"]
 
 
 def versioni(tema):
@@ -60,12 +66,15 @@ def piano(temi):
         ce = len(versioni(tema))
         varianti = t.get("varianti") or []
         voglio = IN_TESTA if tema in TESTA else FREQUENTI if t.get("frequente") else MINIMO
-        scene = [t["foto"]] + varianti[:max(0, ce - 1)]   # le scene vere (non quelle già «rifatte» con un modo)
-        for i in range(max(0, voglio - ce)):
-            numero = ce + i + 1
-            scena = scene[i % len(scene)]
-            modo = MODI[(i + len(varianti)) % len(MODI)]
-            lavoro.append((tema, numero, f"{scena.rstrip('.')}, {modo}"))
+        if ce >= voglio:
+            continue
+        # le scene vere (la foto e le varianti scritte a mano, non quelle già «rifatte» con un modo), ognuna con un modo
+        # che non ha ancora: prima un modo per tutte le scene, poi il successivo, così le scene si alternano
+        vere = [t["foto"]] + [v for v in varianti[:max(0, ce - 1)] if not any(m in v for m in MODI)]
+        gia = {t["foto"]} | set(varianti)
+        nuove = [f"{sc.rstrip('.')}, {m}" for m in MODI for sc in vere if f"{sc.rstrip('.')}, {m}" not in gia]
+        for i in range(voglio - ce):
+            lavoro.append((tema, ce + i + 1, nuove[i % len(nuove)]))
     return lavoro
 
 
