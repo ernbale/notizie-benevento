@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T07:30+01:00",
+ "aggiornato": "2026-10-25T08:09+01:00",
  "giornali_letti": 14,
  "notizie": [
   {
@@ -10,6 +10,7 @@
    "categoria": "sport",
    "sport": "calcio",
    "zona": "benevento",
+   "immagine": "calcio",
    "luogo": "Benevento",
    "pubblicato": "2026-10-24T22:27+02:00",
    "stato": "confermata",
@@ -113,7 +114,8 @@
       "data": "24 ott, 22:39"
      }
     ]
-   }
+   },
+   "foto": "calcio-2"
   },
   {
    "id": "benevento-trofeo-don-pompilio-amatori-podismo-antonucci-secondo",
@@ -1243,6 +1245,7 @@
    "sintesi": "Pietrelcina, Morcone, San Marco dei Cavoti e altri sette Comuni portano avanti una strategia per servizi, abitare e trasporti nelle aree interne. Il progetto N.C.S. vale 600mila euro e dura 40 mesi.",
    "categoria": "altro",
    "zona": "fortore",
+   "immagine": "borgo",
    "luogo": "Pietrelcina, Morcone, San Marco dei Cavoti e altri Comuni",
    "pubblicato": "2026-10-24T07:00:00+02:00",
    "stato": "una_fonte",
@@ -1295,7 +1298,8 @@
       "data": "24 ott, 07:00"
      }
     ]
-   }
+   },
+   "foto": "borgo"
   },
   {
    "id": "benevento-cloud-finance-nuova-sede-via-collevaccino",
