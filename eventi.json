@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T06:40+01:00",
+ "aggiornato": "2026-10-25T07:26+01:00",
  "eventi": [
   {
    "id": "mostra-cosmogonie-meact-torrecuso-2026",
@@ -388,6 +388,49 @@
     }
    ],
    "foto": "olio"
+  },
+  {
+   "id": "sagra-cinghiale-dugenta-2026",
+   "titolo": "Sagra del Cinghiale a Dugenta",
+   "tipo": "sagra",
+   "inizio": "2026-10-25",
+   "fine": "2026-11-01",
+   "giorni": [
+    "2026-10-25",
+    "2026-10-30",
+    "2026-10-31",
+    "2026-11-01"
+   ],
+   "orari": "Aperta il venerdì, il sabato e la domenica; gli orari non sono indicati.",
+   "luogo": "Via Fossi",
+   "comune": "Dugenta",
+   "zona": "telesina",
+   "prezzo": "Ingresso libero",
+   "breve": "Gli ultimi giorni della sagra del cinghiale di Dugenta, aperta nei fine settimana dal 21 agosto: pappardelle al ragù di cinghiale, carne alla brace, musica dal vivo.",
+   "descrizione": [
+    {
+     "testo": "La sagra del cinghiale di Dugenta, in via Fossi, è aperta dal 21 agosto tutti i venerdì, i sabati e le domeniche, con un'area attrezzata e tavoli all'aperto. Gli ultimi giorni sono domenica 25 ottobre e il fine settimana da venerdì 30 ottobre a domenica 1 novembre. L'ingresso è libero: si paga quello che si mangia agli stand.",
+     "fonti": [
+      "Napolike"
+     ]
+    },
+    {
+     "testo": "Nel menù pappardelle al ragù di cinghiale, porchetta, carne alla brace e spiedini, con contorni di stagione, formaggi e vini della zona. Ci sono anche musica dal vivo, canti popolari e banchi di prodotti tipici; le serate speciali sono annunciate sulla pagina Facebook della sagra.",
+     "fonti": [
+      "Napolike"
+     ]
+    }
+   ],
+   "immagine": "sagra",
+   "fonti": [
+    {
+     "nome": "Napolike",
+     "titolo": "Sagra del Cinghiale di Dugenta 2026, ultimo weekend al 1 novembre",
+     "url": "https://napolike.it/sagra-del-cinghiale-dugenta-2026",
+     "data": "16 ott"
+    }
+   ],
+   "foto": "sagra-7"
   },
   {
    "id": "festival-campano-made-in-italy-notte-della-moda-benevento-2026",

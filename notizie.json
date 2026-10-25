@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T06:11+01:00",
+ "aggiornato": "2026-10-25T07:30+01:00",
  "giornali_letti": 14,
  "notizie": [
   {
@@ -168,7 +168,9 @@
       "data": "24 ott, 22:41"
      }
     ]
-   }
+   },
+   "immagine": "corsa",
+   "foto": "corsa-9"
   },
   {
    "id": "arezzo-benevento-0-3-24-ottobre",
@@ -304,7 +306,9 @@
       "data": "24 ott, 20:18"
      }
     ]
-   }
+   },
+   "immagine": "calcio",
+   "foto": "calcio-19"
   },
   {
    "id": "benevento-corso-garibaldi-bambino-investito-da-bici",
@@ -641,7 +645,9 @@
       "data": "24 ott, 19:49"
      }
     ]
-   }
+   },
+   "immagine": "calcio",
+   "foto": "calcio-14"
   },
   {
    "id": "san-giorgio-la-molara-via-straniera-chiusa-26-ottobre-10-novembre",
@@ -801,7 +807,9 @@
       "data": "24 ott, 08:00"
      }
     ]
-   }
+   },
+   "immagine": "sportello",
+   "foto": "sportello-7"
   },
   {
    "id": "benevento-unioncamere-terzo-trimestre-crescita-imprese-prima-italia",
@@ -1387,7 +1395,9 @@
       "data": "23 ott, 17:28"
      }
     ]
-   }
+   },
+   "immagine": "olio",
+   "foto": "olio-9"
   },
   {
    "id": "benevento-via-vanvitelli-scontro-auto-ribaltata-due-ferite",
@@ -2192,7 +2202,9 @@
       "data": "23 ott, 18:40"
      }
     ]
-   }
+   },
+   "immagine": "premio",
+   "foto": "premio-4"
   },
   {
    "id": "benevento-csv-prevenzione-screening-seno-mellusi",
@@ -2262,7 +2274,9 @@
       "data": "23 ott, 18:47"
      }
     ]
-   }
+   },
+   "immagine": "medico",
+   "foto": "medico-8"
   },
   {
    "id": "bonea-frana-localita-capo-strade-chiuse",
@@ -3047,7 +3061,9 @@
       "data": "23 ott, 15:46"
      }
     ]
-   }
+   },
+   "immagine": "calcio",
+   "foto": "calcio-10"
   },
   {
    "id": "benevento-gesesa-guasto-via-avellino-acqua-15-17-23-ottobre",
@@ -3214,7 +3230,9 @@
      }
     ]
    },
-   "rilevante": false
+   "rilevante": false,
+   "immagine": "corsa",
+   "foto": "corsa-6"
   },
   {
    "id": "cusano-mutri-civitella-bus-air-deviati-sagra-castagna",
@@ -3265,7 +3283,9 @@
      }
     ]
    },
-   "rilevante": false
+   "rilevante": false,
+   "immagine": "autobus",
+   "foto": "autobus-15"
   },
   {
    "id": "air-campania-sciopero-28-ottobre",
@@ -4031,7 +4051,9 @@
    },
    "comunicati": [
     "faf96231c61f"
-   ]
+   ],
+   "immagine": "basket",
+   "foto": "basket"
   },
   {
    "id": "cusano-mutri-erasmus-stem-girls-ic-kennedy",
@@ -4327,7 +4349,9 @@
      "quando": "2026-10-25T06:11+01:00",
      "titolo_prima": "Pallavolo, Serie C femminile: la Pasta Rummo Accademia gioca a San Giuseppe Vesuviano sabato 24 ottobre"
     }
-   }
+   },
+   "immagine": "pallavolo",
+   "foto": "pallavolo-4"
   },
   {
    "id": "benevento-opposizione-mozione-sfiducia-mastella",
@@ -4485,7 +4509,9 @@
      ],
      "quando": "2026-10-23T12:11+02:00"
     }
-   }
+   },
+   "immagine": "consiglio",
+   "foto": "consiglio-7"
   },
   {
    "id": "benevento-5-active-network-23-ottobre-palatedeschi",
@@ -4834,7 +4860,9 @@
       "data": "22 ott, 16:31"
      }
     ]
-   }
+   },
+   "immagine": "autobus",
+   "foto": "autobus-14"
   },
   {
    "id": "santagata-de-goti-interruzione-luce-28-ottobre",
@@ -5532,7 +5560,9 @@
       ]
      }
     ]
-   }
+   },
+   "immagine": "vaccini",
+   "foto": "vaccini-5"
   },
   {
    "id": "benevento-mastella-appello-no-acquisti-panico-spostamenti",
@@ -6242,7 +6272,9 @@
      ],
      "quando": "2026-10-23T22:10+02:00"
     }
-   }
+   },
+   "immagine": "rifiuti",
+   "foto": "rifiuti-14"
   },
   {
    "id": "benevento-cimitero-orari-defunti",
@@ -8665,7 +8697,9 @@
       "data": "24 ott, 14:15"
      }
     ]
-   }
+   },
+   "immagine": "anziani",
+   "foto": "anziani-5"
   }
  ],
  "approfondimenti": [
