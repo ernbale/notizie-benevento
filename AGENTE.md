@@ -719,4 +719,12 @@ cambia sempre e va sempre pubblicato). Controlla `notizie.json` ed `eventi.json`
 all'archivio, categorie e zone ammesse, ogni nome citato nell'elenco fonti, url validi, campi obbligatori pieni,
 niente acchiappa-clic nei titoli) e solo se è tutto giusto archivia e scrive.
 - Se stampa **ERRORE**, non ha scritto niente: correggi `notizie.json` e rilancialo finché stampa **OK**.
+- **La quarantena** (dal 25 ott 2026): se gli errori riguardano solo alcune notizie o alcuni eventi, `archivia.py` li
+  lascia fuori e pubblica il resto: una voce nuova esce da notizie.json o eventi.json, una già pubblicata torna com'era.
+  Stampa `QUARANTENA: …` e alla fine OK. Le versioni scartate, con gli errori, sono in `diario/quarantena.json`.
+  **Non è un via libera**: se hai tempo, correggi subito la voce (riprendila da lì, sistema gli errori, rimettila) e
+  rilancia. Se non ce la fai, la ritrovi in fondo all'elenco di `giornali.py` del giro dopo («IN QUARANTENA»): è la
+  prima cosa da sistemare. Quando la voce corretta passa i controlli esce da sola dalla quarantena; dopo 48 ore senza
+  correzione la quarantena la dimentica. Gli errori del giro intero (registro delle fonti, diario, decisioni, id
+  doppi) bloccano come sempre. Nel diario la decisione su una voce in quarantena resta quella che avevi scritto.
 - Pubblica **tutti** i file che stampa come `CAMBIATO:`, insieme nello stesso aggiornamento.

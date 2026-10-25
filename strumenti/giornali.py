@@ -464,6 +464,18 @@ def main():
         print("\n" + stagioni.riepilogo())
     except Exception as e:
         print(f"\nATTENZIONE: strumenti/stagioni.py non è andato ({type(e).__name__}: {e}): lancialo a mano")
+    try:   # le voci scartate da archivia.py al giro prima (diario/quarantena.json, dal 25 ott 2026)
+        with open(os.path.join(SITO, "diario", "quarantena.json"), encoding="utf-8") as f:
+            voci_q = json.load(f).get("voci") or []
+    except (OSError, ValueError):
+        voci_q = []
+    if voci_q:
+        print(f"\nIN QUARANTENA: {len(voci_q)} voci scartate da archivia.py per errori, da correggere e rimettere in "
+              "notizie.json o eventi.json (AGENTE.md, «La quarantena»):")
+        for x in voci_q:
+            q = str(x.get("quando", ""))
+            print(f"- {x.get('tipo')} {x.get('id')}: {x.get('stato')} (dalle {q[11:16]} del {q[8:10]}/{q[5:7]}); "
+                  f"errori: {' · '.join(str(e)[:160] for e in x.get('errori') or [])}")
 
 
 if __name__ == "__main__":

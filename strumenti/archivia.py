@@ -252,6 +252,7 @@ def controlla_decisioni(giro, percorso, d, prima, tutti_gli_id, ev, err):
     attuali = {n.get("id"): n for n in d.get("notizie", []) + d.get("approfondimenti", [])}
     eventi = {x.get("id") for x in (ev or {}).get("eventi", [])}
     uguale = lambda a, b: json.dumps(a, sort_keys=True, ensure_ascii=False) == json.dumps(b, sort_keys=True, ensure_ascii=False)
+    quarantena = in_quarantena()
     for gid, x in dec.items():
         w = f"decisione {gid}"
         if gid not in gruppi:
@@ -261,6 +262,8 @@ def controlla_decisioni(giro, percorso, d, prima, tutti_gli_id, ev, err):
             err.append(f"{w}: «esito» deve essere uno di {', '.join(ESITI)}")
             continue
         e, nid = x["esito"], x.get("notizia")
+        if ("notizia", nid) in quarantena or (e == "evento" and ("evento", x.get("evento")) in quarantena):
+            continue   # è in quarantena: la decisione vale, la voce torna al giro dopo
         if e in ("nuova", "aggiornata", "presente"):
             if nid not in tutti_gli_id:
                 err.append(f"{w}: «notizia» {nid!r} non esiste (scrivi l'id della notizia)")
@@ -913,6 +916,149 @@ def voce_indice(x, tipo, mese):
             "luogo": x.get("luogo", ""), "pubblicato": x.get("aggiornato", ""), "cosa": "", "mese": mese}
 
 
+# La quarantena, l'ultima rete (voluta dal proprietario il 25 ott 2026: «un solo errore blocca tutto il giro»): se gli
+# errori riguardano solo alcune notizie o alcuni eventi, quelli restano fuori (una notizia o un evento già pubblicati
+# tornano com'erano) e il resto esce. Le versioni scartate, con i loro errori, stanno in diario/quarantena.json, che
+# giornali.py mostra al giro dopo perché vengano corrette. Gli errori del giro intero (registro, diario, decisioni, id
+# doppi) bloccano come prima: sono lavoro da fare, non una voce sbagliata.
+QUARANTENA = os.path.join("diario", "quarantena.json")
+QUARANTENA_ORE = 48   # dopo, una voce mai corretta si toglie dalla quarantena (e lo si dice)
+DOPO_QUARANTENA = "ARCHIVIA_QUARANTENA"   # gli id in quarantena, per il secondo passaggio
+
+
+def voce_dell_errore(e, id_notizie, id_eventi):
+    """Le voci a cui si riferisce un errore: [("notizia"|"evento", id)], [("doppione", a, b)], o None se l'errore
+    riguarda il giro intero."""
+    if "usato più volte" in e or "doppio nell'archivio" in e:
+        return None
+    m = re.match(r"eventi ([a-z0-9-]+) e ([a-z0-9-]+): sembrano lo stesso evento", e)
+    if m:
+        return [("doppione", m[1], m[2])]
+    m = re.match(r"evento ([a-z0-9-]+): ", e)
+    if m and m[1] in id_eventi:
+        return [("evento", m[1])]
+    m = re.match(r"id '([a-z0-9-]+)' è (?:già usato|di una notizia già unita)", e) or re.match(r"([a-z0-9-]+): ", e)
+    if m and m[1] in id_notizie:
+        return [("notizia", m[1])]
+    return None
+
+
+def impronta(x):
+    return hashlib.sha1(json.dumps(x, sort_keys=True, ensure_ascii=False).encode()).hexdigest()[:12]
+
+
+def eventi_prima(base):
+    """eventi.json com'era all'ultimo salvataggio (git HEAD), o None."""
+    try:
+        p = subprocess.run(["git", "-C", base, "show", "HEAD:eventi.json"], capture_output=True, timeout=30)
+        return json.loads(p.stdout.decode("utf-8")) if p.returncode == 0 else None
+    except Exception:
+        return None
+
+
+def metti_in_quarantena(err, d, ev, base):
+    """Prova la quarantena: True se ha scritto tutto (il secondo passaggio ha finito con OK), False se gli errori non
+    si possono isolare o se anche dopo restano errori (allora rimette i file com'erano)."""
+    id_notizie = {x.get("id") for x in d.get("notizie", []) + d.get("approfondimenti", [])}
+    id_eventi = {x.get("id") for x in (ev or {}).get("eventi", [])}
+    prima_n, prima_e = pubblicate_prima(base) or {}, eventi_prima(base) or {}
+    vecchie_e = {x.get("id"): x for x in prima_e.get("eventi", [])}
+    colpe = {}
+    for e in err:
+        voci = voce_dell_errore(e, id_notizie, id_eventi)
+        if voci is None:
+            return False
+        for v in voci:
+            if v[0] == "doppione":   # resta fuori quello nuovo; se lo sono tutti e due, il secondo
+                nuovi = [i for i in v[1:] if i not in vecchie_e]
+                if not nuovi:
+                    return False
+                v = ("evento", nuovi[-1])
+            colpe.setdefault(v, []).append(e)
+    p_n, p_e, p_q = (os.path.join(base, x) for x in ("notizie.json", "eventi.json", QUARANTENA))
+    originali = {}
+    for p in (p_n, p_e, p_q):
+        originali[p] = open(p, encoding="utf-8").read() if os.path.exists(p) else None
+    q = leggi(p_q, {}) or {}
+    q_voci = [x for x in q.get("voci") or [] if (x.get("tipo"), x.get("id")) not in colpe]
+    adesso = dt.datetime.now(dt.timezone.utc).astimezone().isoformat(timespec="minutes")
+    for (tipo, i), errori in colpe.items():
+        if tipo == "notizia":
+            liste = [(d["notizie"], {x.get("id"): x for x in prima_n.get("notizie", [])}),
+                     (d["approfondimenti"], {x.get("id"): x for x in prima_n.get("approfondimenti", [])})]
+        else:
+            liste = [(ev["eventi"], vecchie_e)]
+        for lista, vecchie in liste:
+            k = next((n for n, x in enumerate(lista) if x.get("id") == i), None)
+            if k is None:
+                continue
+            scartata = lista[k]
+            if i in vecchie:
+                lista[k] = vecchie[i]
+                stato, impr = "rimessa com'era (la versione pubblicata)", impronta(vecchie[i])
+            else:
+                del lista[k]
+                stato, impr = "tolta (era nuova)", ""
+            q_voci.append({"tipo": tipo, "id": i, "quando": adesso, "stato": stato, "impronta_pubblicata": impr,
+                           "errori": errori, "versione_scartata": scartata})
+            print(f"QUARANTENA: {tipo} {i}: {stato}, per {len(errori)} errori: {errori[0][:160]}")
+    with open(p_n, "w", encoding="utf-8") as f:
+        f.write(testo_json(d))
+    if ev is not None:
+        with open(p_e, "w", encoding="utf-8") as f:
+            f.write(testo_json(ev))
+    os.makedirs(os.path.dirname(p_q), exist_ok=True)
+    with open(p_q, "w", encoding="utf-8") as f:
+        f.write(testo_json({"voci": q_voci}))
+    ids = ",".join(f"{t_}:{i}" for t_, i in colpe)
+    r = subprocess.run([sys.executable, os.path.abspath(__file__)] + sys.argv[1:], capture_output=True, text=True,
+                       env=dict(os.environ, **{DOPO_QUARANTENA: ids}))
+    if r.returncode == 0:
+        print(r.stdout, end="")
+        print(f"CAMBIATO: {QUARANTENA}")
+        print("QUARANTENA: il resto è uscito. Se puoi, correggi adesso le voci in quarantena (le trovi in "
+              f"{QUARANTENA}, con gli errori), rimettile e rilancia; se no restano per il giro dopo.")
+        return True
+    for p, testo_ in originali.items():   # anche così non va: tutto com'era, e gli errori di prima
+        if testo_ is None:
+            if os.path.exists(p):
+                os.remove(p)
+        else:
+            with open(p, "w", encoding="utf-8") as f:
+                f.write(testo_)
+    print("QUARANTENA NON BASTA: anche senza quelle voci restano errori; rimesso tutto com'era.")
+    print("\n".join("  " + x for x in r.stdout.splitlines() if x.startswith("ERRORE")))
+    return False
+
+
+def in_quarantena():
+    """Gli id messi in quarantena dal primo passaggio: {("notizia"|"evento", id)}."""
+    return {tuple(x.split(":", 1)) for x in os.environ.get(DOPO_QUARANTENA, "").split(",") if ":" in x}
+
+
+def pulisci_quarantena(base, d, ev, avv):
+    """Le voci in quarantena corrette e rimesse (o troppo vecchie) escono dal file. Restituisce il testo nuovo o None."""
+    p_q = os.path.join(base, QUARANTENA)
+    q = leggi(p_q, None)
+    if not q or not q.get("voci"):
+        return None
+    attuali = {("notizia", x.get("id")): x for x in d.get("notizie", []) + d.get("approfondimenti", [])}
+    attuali.update({("evento", x.get("id")): x for x in (ev or {}).get("eventi", [])})
+    limite = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(hours=QUARANTENA_ORE)).isoformat()
+    restano = []
+    for x in q["voci"]:
+        cur = attuali.get((x.get("tipo"), x.get("id")))
+        rifatta = cur is not None and (not x.get("impronta_pubblicata") or impronta(cur) != x["impronta_pubblicata"])
+        if rifatta:
+            print(f"QUARANTENA: {x['tipo']} {x['id']} corretta e rimessa: tolta dalla quarantena")
+        elif str(x.get("quando")) < limite:
+            avv.append(f"quarantena: {x['tipo']} {x['id']} non è mai stata corretta in {QUARANTENA_ORE} ore: tolta "
+                       "dalla quarantena (la versione scartata è nella storia di git)")
+        else:
+            restano.append(x)
+    return None if len(restano) == len(q["voci"]) else testo_json({"voci": restano})
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--prova", action="store_true", help="non scrive niente")
@@ -1030,6 +1176,8 @@ def main():
     if a.giro and giro is not None:   # una decisione per ogni fatto nuovo dei giornali (strumenti/giornali.py)
         titoli = controlla_decisioni(giro, a.titoli, d, pubblicate_prima(base), tutti_gli_id, ev, err)
 
+    if err and not a.prova and not os.environ.get(DOPO_QUARANTENA) and metti_in_quarantena(err, d, ev, base):
+        return   # il secondo passaggio, senza le voci in quarantena, ha scritto tutto e stampato OK
     if err:
         for x in avv:
             print("AVVISO:", x)
@@ -1162,6 +1310,9 @@ def main():
         print(f"Diario del giro delle {voce['ora']}: {len(voce['nuove'])} nuove, {len(voce['aggiornate'])} aggiornate, "
               f"{len(voce['scartate'])} scartate")
 
+    testo_q = pulisci_quarantena(base, nuovo, ev_nuovo if ev is not None else None, avv)
+    if testo_q is not None:
+        da_scrivere.append((os.path.join(base, QUARANTENA), testo_q))
     print(f"Oggi {oggi.isoformat()}: in prima pagina {len(restano)} notizie e {len(restano_ap)} approfondimenti; "
           f"archiviate ora {len(vanno)} notizie e {len(vanno_ap)} approfondimenti; in archivio in tutto {len(voci)}.")
     for x in avv:

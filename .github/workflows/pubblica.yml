@@ -120,6 +120,10 @@ jobs:
             echo "::warning::Statistiche non aggiornate (il sito si pubblica lo stesso)"
           fi
 
+      # le versioni scartate dalla quarantena di archivia.py servono all'agente, non al sito
+      - name: Togli i file interni
+        run: rm -f diario/quarantena.json
+
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3
