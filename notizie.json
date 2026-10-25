@@ -1,16 +1,16 @@
 {
- "aggiornato": "2026-10-25T17:10+01:00",
+ "aggiornato": "2026-10-25T18:09+01:00",
  "giornali_letti": 14,
  "notizie": [
   {
    "id": "monte-taburno-escursioniste-cadute-dirupo-elicottero",
    "titolo": "Monte Taburno, due escursioniste cadono in un dirupo: salvate dai vigili del fuoco con l'elicottero e portate al San Pio",
    "titolo_google": "Monte Taburno, due escursioniste cadute in un dirupo",
-   "sintesi": "Domenica 25 ottobre due ragazze sono cadute in un dirupo durante un'escursione sul monte Taburno. I vigili del fuoco le hanno recuperate, una con l'elicottero di Pontecagnano, e le hanno portate in elicottero all'ospedale San Pio di Benevento. Secondo Ottopagine le ferite non sarebbero gravi.",
+   "sintesi": "Domenica 25 ottobre due escursioniste sono cadute in un dirupo sul monte Taburno. Avevano dato l'allarme loro stesse: i vigili del fuoco le hanno recuperate, una con l'elicottero di Pontecagnano, e le hanno portate in elicottero all'ospedale San Pio di Benevento. Le loro condizioni non sarebbero gravi.",
    "categoria": "cronaca",
    "zona": "provincia",
    "luogo": "Monte Taburno",
-   "pubblicato": "2026-10-25T16:38+01:00",
+   "pubblicato": "2026-10-25T17:13+01:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
@@ -29,16 +29,28 @@
     {
      "nome": "BeneventoNews24",
      "url": "https://www.beneventonews24.it/2026/10/25/paura-sul-monte-taburno-due-ragazze-cadono-in-un-dirupo-salvate-dai-vigili-del-fuoco/"
+    },
+    {
+     "nome": "Il Mattino",
+     "url": "https://www.ilmattino.it/benevento/monte_taburno_benevento_escursioniste_salvate_dirupo_elicottero-9847994.html"
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Domenica 25 ottobre due ragazze sono cadute in un dirupo mentre facevano un'escursione sul monte Taburno, la montagna che sta tra la Valle Caudina e la Valle Telesina. Le hanno salvate i vigili del fuoco del Comando di Benevento e tutte e due sono state portate all'ospedale San Pio di Benevento.",
+      "testo": "Domenica 25 ottobre due escursioniste sono cadute in un dirupo mentre camminavano sul monte Taburno, la montagna che sta tra la Valle Caudina e la Valle Telesina. Le hanno salvate i vigili del fuoco del Comando di Benevento e tutte e due sono state portate all'ospedale San Pio di Benevento.",
       "fonti": [
        "Anteprima24",
        "Ottopagine",
-       "NTR24"
+       "NTR24",
+       "Il Mattino"
+      ],
+      "giorno": "2026-10-25"
+     },
+     {
+      "testo": "Secondo Il Mattino sono una donna di 34 anni di Castel Volturno, in provincia di Caserta, e una di 45 anni di Massa di Somma, in provincia di Napoli. L'allarme lo hanno dato loro stesse, indicando ai soccorritori dove si trovavano.",
+      "fonti": [
+       "Il Mattino"
       ],
       "giorno": "2026-10-25"
      },
@@ -47,16 +59,18 @@
       "fonti": [
        "Anteprima24",
        "Ottopagine",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Il Mattino"
       ],
       "giorno": "2026-10-25"
      },
      {
-      "testo": "Secondo una prima ricostruzione riferita da Ottopagine, le ferite delle due ragazze non sarebbero gravi; BeneventoNews24 precisa che l'ospedale non ha ancora diffuso notizie ufficiali sulle loro condizioni. Come sono cadute non si sa ancora: le cause sono da accertare.",
+      "testo": "Secondo le prime informazioni riferite da Ottopagine e dal Mattino, le ferite delle due donne non sarebbero gravi; BeneventoNews24 precisa che l'ospedale non ha ancora diffuso notizie ufficiali sulle loro condizioni. Come sono cadute non è ancora accertato: per Il Mattino una delle due potrebbe essere scivolata e l'altra, nel tentativo di aiutarla, sarebbe finita anche lei nel dirupo.",
       "fonti": [
        "Ottopagine",
        "Anteprima24",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Il Mattino"
       ],
       "giorno": "2026-10-25"
      }
@@ -69,15 +83,29 @@
        "Anteprima24",
        "Ottopagine",
        "NTR24",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Il Mattino"
+      ]
+     },
+     {
+      "testo": "Le condizioni delle due donne, che non sarebbero gravi secondo le prime informazioni.",
+      "fonti": [
+       "Ottopagine",
+       "Il Mattino"
       ]
      }
     ],
-    "divergono": [],
+    "divergono": [
+     {
+      "testo": "Il titolo del Mattino parla di «due 20enni», ma nel testo dello stesso articolo le età sono 34 e 45 anni; gli altri giornali scrivono «due ragazze» senza età. Qui si riportano le età scritte nel testo dell'articolo.",
+      "fonti": [
+       "Il Mattino"
+      ]
+     }
+    ],
     "non_si_sa": [
      "In quale punto del Taburno sono cadute e a che ora.",
-     "Quanti anni hanno e da dove vengono.",
-     "Come è successo l'incidente."
+     "Che ferite hanno: l'ospedale non ha diffuso un bollettino."
     ],
     "fonti": [
      {
@@ -103,8 +131,21 @@
       "titolo": "Monte Taburno, due ragazze cadono in un dirupo: salvate dai Vigili del Fuoco",
       "url": "https://www.beneventonews24.it/2026/10/25/paura-sul-monte-taburno-due-ragazze-cadono-in-un-dirupo-salvate-dai-vigili-del-fuoco/",
       "data": "25 ott, 16:38"
+     },
+     {
+      "nome": "Il Mattino",
+      "titolo": "Cadono in un dirupo durante un'escursione sul Monte Taburno, salvate due 20enni dai vigili del fuoco",
+      "url": "https://www.ilmattino.it/benevento/monte_taburno_benevento_escursioniste_salvate_dirupo_elicottero-9847994.html",
+      "data": "25 ott, 17:13"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Il Mattino dice chi sono le due escursioniste: una 34enne di Castel Volturno e una 45enne di Massa di Somma. L'allarme lo hanno dato loro stesse; le condizioni non sarebbero gravi.",
+     "fonti": [
+      "Il Mattino"
+     ],
+     "quando": "2026-10-25T18:09+01:00"
+    }
    }
   },
   {
