@@ -150,6 +150,22 @@
   .appro .distributori .cb-prezzi { margin: 6px 0 2px; font: 500 15px/1.5 var(--sans); }
   .appro .distributori .cb-prezzi span { display: block; }
   .appro .distributori li:target { background: rgba(196, 22, 28, .06); outline: 6px solid rgba(196, 22, 28, .06); }
+  /* la pagina carburanti/ con paese e carburante: tutti i distributori dal meno caro, il prezzo grande a sinistra */
+  .appro .cb-comandi { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; margin: 20px 0 0; padding: 12px 0; border-top: 3px solid var(--nero); border-bottom: 1px solid var(--riga); }
+  .appro .cb-comandi label { display: flex; align-items: center; gap: 8px; font: 600 14px var(--sans); }
+  .appro .cb-comandi select { font: 500 15px var(--sans); padding: 6px 8px; border: 1px solid var(--riga); background: #fff; color: var(--nero); border-radius: 4px; max-width: 100%; }
+  .appro .cb-scelta { display: flex; flex-wrap: wrap; gap: 6px; }
+  .appro .cb-scelta button { font: 600 13px var(--sans); background: #fff; color: var(--nero); border: 1px solid var(--riga); border-radius: 16px; padding: 5px 12px; cursor: pointer; }
+  .appro .cb-scelta button[aria-pressed="true"] { background: var(--nero); color: #fff; border-color: var(--nero); }
+  .appro .cb-riepilogo { font: 600 15px/1.45 var(--sans); margin: 12px 0 18px; }
+  .appro .cb-lista li { display: flex; gap: 14px; align-items: flex-start; margin: 0; padding: 12px 0; border-bottom: 1px solid var(--riga); }
+  .appro .cb-lista li[hidden] { display: none; }
+  .appro .cb-lista .cb-grande { flex: none; width: 68px; }
+  .appro .cb-grande b { display: block; font: 700 21px/1.15 var(--sans); }
+  .appro .cb-grande span { display: block; font: 500 12px/1.3 var(--sans); color: var(--grigio); }
+  .appro .cb-grande .cb-meno { color: var(--rosso); font-weight: 700; }
+  .appro .cb-lista .cb-testo { flex: 1; min-width: 0; }
+  .appro .cb-lista .cb-separa { display: block; font: 700 12px var(--sans); text-transform: uppercase; letter-spacing: .5px; color: var(--grigio); padding: 22px 0 6px; border-bottom: 1px solid var(--nero); }
   /* «Seguici»: come i pulsanti Ascolta e Condividi, il colore del marchio solo nel logo */
   .segui { margin: 0 0 18px; }
   .segui p { margin: 0 0 10px; font: 500 14px/1.4 var(--sans); color: var(--grigio); }
@@ -449,7 +465,7 @@
     .menu .cerca-campo input { flex: 1; width: auto; font-size: 16px; padding: 8px 10px; }
     .ricerca .ordine { margin-left: 0; }
     /* sotto i 16px l'iPhone ingrandisce la pagina quando si tocca il campo */
-    .menu select, .ricerca .filtri select { font-size: 16px; }
+    .menu select, .ricerca .filtri select, .appro .cb-comandi select { font-size: 16px; }
     .ultimora { grid-template-columns: 1fr; padding: 10px 0; }
     .ultimora a { padding: 6px 0 !important; border-left: 0 !important; }
     .ultimora a:nth-child(n+4) { display: none; }
@@ -2442,6 +2458,83 @@
     history.pushState(null, "", h);
     cambiaPagina();
   });
+  // Pagina dei carburanti (voluta dal proprietario il 25 ott 2026): si sceglie il paese (si parte da Benevento, c'è
+  // anche «Tutti i paesi») e il carburante, e sotto ci sono tutti i distributori dal meno caro. Le schede sono quelle
+  // scritte da pagine.py, spostate qui: restano tutte nella pagina, quelle degli altri paesi nascoste. Un link a un
+  // distributore o a un paese (#d…, #c-…: riquadro della prima pagina, pagine dei Comuni) sceglie il suo paese;
+  // ?paese=…&tipo=… nell'indirizzo per condividere la scelta.
+  if (FISSA && FISSA.carburanti) (function () {
+    var vivo = document.querySelector(".cb-vivo"), statico = document.querySelector(".cb-statico");
+    var sel = document.getElementById("cb-paese"), lista = vivo && vivo.querySelector(".cb-lista");
+    var riep = vivo && vivo.querySelector(".cb-riepilogo");
+    var schede = [].slice.call(document.querySelectorAll(".cb-statico li[data-comune]"));
+    if (!vivo || !statico || !sel || !lista || !riep || !schede.length) return;
+    var NOMI = { benzina: "Benzina", gasolio: "Diesel", gpl: "GPL", metano: "Metano" };
+    var DI = { benzina: "benzina self", gasolio: "diesel self", gpl: "GPL", metano: "metano" };
+    var q = new URLSearchParams(location.search), tipo = NOMI[q.get("tipo")] ? q.get("tipo") : "benzina";
+    function prezzo(li) {
+      var v = (li.getAttribute("data-" + tipo) || "").split(" ");
+      return v[0] ? { p: parseFloat(v[0]), m: v[1] } : null;
+    }
+    function euro(x) { return x.toFixed(3).replace(".", ","); }
+    function mostra(c) {
+      sel.value = c;
+      if (sel.value !== c) sel.value = c = "";   // un paese che oggi non c'è: tutti
+      var qui = schede.filter(function (li) { return !c || li.getAttribute("data-comune") === c; });
+      var con = qui.filter(prezzo).sort(function (a, b) { return prezzo(a).p - prezzo(b).p; });
+      var senza = qui.filter(function (li) { return !prezzo(li); });
+      lista.textContent = "";
+      con.forEach(function (li, n) {
+        var g = li.querySelector(".cb-grande"), x = prezzo(li);
+        g.textContent = "";
+        g.appendChild(el("b", "", [euro(x.p)]));
+        g.appendChild(el("span", "", [x.m]));
+        if (n === 0 && con.length > 1) g.appendChild(el("span", "cb-meno", ["il meno caro"]));
+        g.hidden = false;
+        li.hidden = false;
+        lista.appendChild(li);
+      });
+      if (senza.length) lista.appendChild(el("li", "cb-separa", ["Senza un prezzo recente di " + DI[tipo]]));
+      senza.forEach(function (li) { li.querySelector(".cb-grande").hidden = true; li.hidden = false; lista.appendChild(li); });
+      schede.forEach(function (li) { if (qui.indexOf(li) < 0) { li.hidden = true; lista.appendChild(li); } });
+      var dove = c ? "a " + c : "in provincia", t = NOMI[tipo] + (DI[tipo].indexOf(" self") > 0 ? " self" : "");
+      if (!con.length) riep.textContent = "Nessun distributore " + dove + " ha comunicato di recente un prezzo di " + DI[tipo] + ".";
+      else if (con.length === 1) riep.textContent = t + " " + dove + ": un distributore, " + euro(prezzo(con[0]).p) + " € al litro.";
+      else {
+        var tot = con.reduce(function (s, li) { return s + prezzo(li).p; }, 0);
+        riep.textContent = t + " " + dove + ": " + con.length + " distributori, da " + euro(prezzo(con[0]).p) + " a " +
+          euro(prezzo(con[con.length - 1]).p) + " € al litro (media " + euro(tot / con.length) + ").";
+      }
+      vivo.querySelectorAll(".cb-scelta button").forEach(function (b) { b.setAttribute("aria-pressed", b.getAttribute("data-tipo") === tipo ? "true" : "false"); });
+    }
+    function scriviIndirizzo() {
+      var p = new URLSearchParams();
+      if (sel.value !== "Benevento") p.set("paese", sel.value || "tutti");
+      if (tipo !== "benzina") p.set("tipo", tipo);
+      var s = p.toString();
+      history.replaceState(null, "", location.pathname + (s ? "?" + s : ""));   // senza #: il distributore evidenziato non c'è più
+    }
+    function dalLink() {
+      var h = "";
+      try { h = decodeURIComponent(location.hash.slice(1)); } catch (e) { return; }
+      var t = h && document.getElementById(h), c = t && t.getAttribute("data-comune");
+      if (!c) return;
+      if (t.tagName !== "LI") { mostra(c); vivo.scrollIntoView(); return; }   // un paese (#c-…, dalle pagine dei Comuni)
+      if (t.hidden) mostra(c);   // con «Tutti i paesi» si resta su tutti
+      t.scrollIntoView();
+    }
+    sel.addEventListener("change", function () { mostra(sel.value); scriviIndirizzo(); });
+    vivo.querySelectorAll(".cb-scelta button").forEach(function (b) {
+      b.addEventListener("click", function () { tipo = b.getAttribute("data-tipo"); mostra(sel.value); scriviIndirizzo(); });
+    });
+    window.addEventListener("hashchange", dalLink);
+    var paese = q.get("paese");
+    mostra(paese === "tutti" ? "" : paese || "Benevento");
+    vivo.hidden = false;
+    statico.hidden = true;
+    dalLink();
+  })();
+
   // sezioni e zone: la prima pagina parte già filtrata
   if (FISSA && (FISSA.cat || FISSA.zona)) {
     filtroCat = FISSA.cat || "";
@@ -2483,7 +2576,7 @@
         if (!p) return;
         var a = el("a", "", [el("span", "cb-prezzo", [prezzoIt(p.prezzo)]),
           el("span", "cb-dove", [el("b", "", [i.bandiera === "Pompa bianca" && i.nome && i.nome !== i.comune ? i.nome : i.bandiera]), " " + i.comune + (i.indirizzo ? ", " + i.indirizzo : "")])]);
-        a.href = "/carburanti/#d" + i.id;
+        a.href = "/carburanti/" + (tipoCarburante === "gasolio" ? "?tipo=gasolio" : "") + "#d" + i.id;
         lista.appendChild(el("li", "", [a]));
       });
       scelta.querySelectorAll("button").forEach(function (b) { b.setAttribute("aria-pressed", b.getAttribute("data-tipo") === tipoCarburante ? "true" : "false"); });

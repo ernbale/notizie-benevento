@@ -753,21 +753,34 @@ def _nome_distributore(i):
 
 
 def _classifica(dati, tipo, quanti):
+    """I distributori meno cari della provincia (prezzo self recente), per chi legge senza JavaScript e per Google: gli
+    altri vedono la lista con paese e carburante (index.html)."""
     per = {i["id"]: i for i in dati.get("impianti") or []}
     righe = ""
     for n, k in enumerate((dati.get("classifiche") or {}).get(tipo, [])[:quanti], 1):
         i = per[k]
+        # i link interi: con <base href="/"> un «#d…» da solo porta alla prima pagina (lo ha visto il proprietario)
         righe += (f'<tr><td>{n}</td><td class="pr">{_euro(i["prezzi"][tipo]["self"]["prezzo"])}</td>'
-                  f'<td><a href="#d{e(k)}">{e(_nome_distributore(i))}</a> <span>{e(i["comune"])}'
+                  f'<td><a href="/carburanti/#d{e(k)}">{e(_nome_distributore(i))}</a> <span>{e(i["comune"])}'
                   + (f", {e(i['indirizzo'])}" if i["indirizzo"] else "") + "</span></td></tr>")
     return f'<table class="prezzi"><thead><tr><th></th><th>€/litro</th><th>Distributore</th></tr></thead><tbody>{righe}</tbody></table>'
+
+
+def _per_lista(i, tipo):
+    """Il prezzo con cui un distributore va in ordine nella lista di un carburante («1.989 self»): il self comunicato
+    di recente; per GPL e metano, che quasi ovunque si fanno col servito, anche il servito."""
+    p = i["prezzi"].get(tipo) or {}
+    for m in ("self", "servito") if tipo in ("gpl", "metano") else ("self",):
+        if (p.get(m) or {}).get("valido"):
+            return f'{p[m]["prezzo"]:.3f} {m}'
+    return ""
 
 
 def html_carburanti(dati, oggi):
     h = _testata_pagina("Carburanti", "", "Prezzi di benzina e diesel a Benevento e provincia")
     h += ('<p class="sommario">I prezzi di benzina, diesel, GPL e metano di tutti i distributori della provincia di '
-          "Benevento, self e servito, con le classifiche dei meno cari. Sono i prezzi che i gestori comunicano al "
-          "Ministero delle Imprese e del Made in Italy: li aggiorniamo ogni mattina.</p>")
+          "Benevento, self e servito, dal meno caro. Sono i prezzi che i gestori comunicano al Ministero delle Imprese "
+          "e del Made in Italy: li aggiorniamo ogni mattina.</p>")
     impianti = dati.get("impianti") or []
     if not impianti:
         h += "<p>I prezzi del Ministero ora non sono disponibili: riprova più tardi.</p>" + SEGUI
@@ -778,18 +791,29 @@ def html_carburanti(dati, oggi):
           f"per {len(impianti)} distributori." + (f" Media in provincia, self: benzina {_euro(medie['benzina'])} €, "
                                                    f"diesel {_euro(medie['gasolio'])} €." if medie.get("benzina") and medie.get("gasolio") else "")
           + "</p>")
-    h += "<h3>Benzina self, i 10 meno cari</h3>" + _classifica(dati, "benzina", 10)
-    h += "<h3>Diesel self, i 10 meno cari</h3>" + _classifica(dati, "gasolio", 10)
-    h += (f'<p class="agg-chiusure">Nelle classifiche ci sono solo i prezzi comunicati negli ultimi '
-          f'{dati.get("giorni_validi", 8)} giorni. Il prezzo giusto è sempre quello sul cartello alla pompa.</p>')
     per_comune = {}
     for i in impianti:
         per_comune.setdefault(i["comune"], []).append(i)
+    # La pagina che si usa, voluta dal proprietario il 25 ott 2026 («un filtro a tendina per comune, di default
+    # Benevento», «anche tutti», «mostrali tutti, non solo i primi 10», «ripensa la pagina»): paese e carburante, poi
+    # tutti i distributori dal meno caro. La accende index.html spostando lì le schede scritte più sotto; senza
+    # JavaScript, e per Google, restano le classifiche dei 10 meno cari e i distributori paese per paese.
+    h += ('<div class="cb-vivo" hidden><div class="cb-comandi"><label>Paese <select id="cb-paese">'
+          f'<option value="">Tutti i paesi ({len(impianti)})</option>'
+          + "".join(f'<option value="{e(c)}">{e(c)} ({len(v)})</option>' for c, v in sorted(per_comune.items()))
+          + '</select></label><div class="cb-scelta">'
+          + "".join(f'<button type="button" data-tipo="{t}">{n}</button>' for t, n in NOMI_CARBURANTI.items())
+          + '</div></div><p class="cb-riepilogo"></p><ul class="notizie-comune distributori cb-lista"></ul></div>')
+    h += '<div class="cb-statico">'
+    h += "<h3>Benzina self, i 10 meno cari</h3>" + _classifica(dati, "benzina", 10)
+    h += "<h3>Diesel self, i 10 meno cari</h3>" + _classifica(dati, "gasolio", 10)
     h += "<h3>Tutti i distributori, paese per paese</h3>"
     h += '<ul class="elenco-comuni">' + "".join(
-        f'<li><a href="#c-{slug(c)}">{e(c)}</a> <span>{len(v)}</span></li>' for c, v in sorted(per_comune.items())) + "</ul>"
+        f'<li><a href="/carburanti/#c-{slug(c)}">{e(c)}</a> <span>{len(v)}</span></li>'
+        for c, v in sorted(per_comune.items())) + "</ul>"
     for c, v in sorted(per_comune.items()):
-        h += f'<h4 class="cb-comune" id="c-{slug(c)}">{e(c)}</h4><ul class="notizie-comune distributori">'
+        h += (f'<h4 class="cb-comune" id="c-{slug(c)}" data-comune="{e(c)}">{e(c)}</h4>'
+              '<ul class="notizie-comune distributori">')
         for i in v:
             try:   # i numeri si controllano: il file arriva da fuori (il Pi, attraverso la pubblicazione)
                 mappa = (f' · <a href="https://www.google.com/maps/search/?api=1&amp;query={float(i["lat"])},'
@@ -807,12 +831,18 @@ def html_carburanti(dati, oggi):
             vecchio = not any((i["prezzi"].get(t) or {}).get(m, {}).get("valido") for t in NOMI_CARBURANTI for m in ("self", "servito"))
             # il nome dell'impianto dei marchi è spesso un codice interno («8336 Telese Terme»): si mostra l'indirizzo
             nome = i["nome"] if i["bandiera"] == "Pompa bianca" else ""
-            h += (f'<li id="d{e(i["id"])}"><div class="occhiello">{e(i["bandiera"])}</div>'
+            in_lista = "".join(f' data-{t}="{x}"' for t in NOMI_CARBURANTI for x in [_per_lista(i, t)] if x)
+            h += (f'<li id="d{e(i["id"])}" data-comune="{e(c)}"{in_lista}><div class="cb-grande" hidden></div>'
+                  f'<div class="cb-testo"><div class="occhiello">{e(i["bandiera"])}</div>'
                   f'<b class="cb-nome">{e(i["indirizzo"] or i["nome"] or c)}</b>'
                   f'<span class="dove">{e(nome + " · " if nome else "")}{e(c)}{mappa}</span><p class="cb-prezzi">{righe}</p>'
                   f'<span class="dove">{"⚠️ prezzi vecchi: " if vecchio else ""}comunicati il {ultimo.day} '
-                  f'{MESI_LUNGHI[ultimo.month - 1]}</span></li>')
+                  f'{MESI_LUNGHI[ultimo.month - 1]}</span></div></li>')
         h += "</ul>"
+    h += "</div>"
+    h += (f'<p class="agg-chiusure">In ordine di prezzo ci sono solo i prezzi comunicati negli ultimi '
+          f'{dati.get("giorni_validi", 8)} giorni: self per benzina e diesel, anche servito per GPL e metano. Il prezzo '
+          "giusto è sempre quello sul cartello alla pompa.</p>")
     h += ('<p class="agg-chiusure">Fonte: <a href="https://www.mimit.gov.it/it/open-data/elenco-dataset/carburanti-prezzi-'
           'praticati-e-anagrafica-degli-impianti" target="_blank" rel="noopener nofollow">Ministero delle Imprese e del '
           "Made in Italy, Osservatorio prezzi carburanti</a> (dati aperti, licenza IODL 2.0). I prezzi li comunicano i "
@@ -1675,7 +1705,7 @@ def main():
     except Exception as ex:   # un file dei prezzi rotto non deve fermare la pubblicazione: la pagina dice «non disponibili»
         print(f"AVVISO: carburanti.json non torna ({type(ex).__name__}: {ex}): pagina senza prezzi", file=sys.stderr)
         carb, corpo = {}, html_carburanti({}, oggi)
-    scrivi(os.path.join(sito, "carburanti", "index.html"), pagina(modello, seo, {"statica": True}, corpo, articolo=True))
+    scrivi(os.path.join(sito, "carburanti", "index.html"), pagina(modello, seo, {"statica": True, "carburanti": True}, corpo, articolo=True))
     mappa.append((url, carb.get("estrazione")))
     # Benevento Calcio (strumenti/calcio.py, nello stesso giro): la pagina c'è sempre, la diretta la fa calcio.js
     try:
