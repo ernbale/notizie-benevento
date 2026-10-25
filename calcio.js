@@ -436,15 +436,15 @@
   function calendario(stato, quante) {
     var ps = nostre().filter(function (p) { return stato === "pre" ? p.stato === "pre" || p.stato === "rinviata" : p.stato === "post"; });
     ps = stato === "pre" ? ps.slice(0, quante) : ps.slice(-quante).reverse();
-    var l = el("ul", "calendario", []);
+    var l = el("ul", "calcio-cal", []);
     ps.forEach(function (p) {
       var noi = p.casa === dati.benevento ? [p.gol_casa, p.gol_fuori] : [p.gol_fuori, p.gol_casa];
       var esito = stato === "post" ? (noi[0] > noi[1] ? "V" : noi[0] === noi[1] ? "N" : "P") : null;
       l.appendChild(el("li", "", [
-        el("span", "cal-g", [fmt(p.quando, { day: "numeric", month: "short" }), el("small", "", [p.giornata + "ª"])]),
-        el("span", "cal-sq", [logo(p.casa, 20), sq(p.casa).nome, " – ", logo(p.fuori, 20), sq(p.fuori).nome]),
-        stato === "post" ? el("span", "cal-r " + esito, [p.gol_casa + "–" + p.gol_fuori]) :
-          el("span", "cal-r", [p.stato === "rinviata" ? "rinviata" : p.ora_certa ? fmt(p.quando, { hour: "2-digit", minute: "2-digit" }) : "da def."])]));
+        el("span", "cc-g", [fmt(p.quando, { day: "numeric", month: "short" }), el("small", "", [p.giornata + "ª"])]),
+        el("span", "cc-sq", [logo(p.casa, 20), sq(p.casa).nome, " – ", logo(p.fuori, 20), sq(p.fuori).nome]),
+        stato === "post" ? el("span", "cc-r " + esito, [p.gol_casa + "–" + p.gol_fuori]) :
+          el("span", "cc-r", [p.stato === "rinviata" ? "rinviata" : p.ora_certa ? fmt(p.quando, { hour: "2-digit", minute: "2-digit" }) : "da def."])]));
     });
     return l;
   }

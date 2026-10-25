@@ -883,19 +883,19 @@ def _cal_clou(d, adesso):
 
 
 def _cal_lista(d, ps, finite):
-    h = '<ul class="calendario">'
+    h = '<ul class="calcio-cal">'
     for p in ps:
         t = dt.datetime.fromisoformat(p["quando"])
-        sx = (f'<span class="cal-g">{t.day} {MESI[t.month - 1]}<small>{p["giornata"]}ª</small></span>'
-              f'<span class="cal-sq">{_cal_logo(d, p["casa"], 20)}{_cal_nome(d, p["casa"])} – '
+        sx = (f'<span class="cc-g">{t.day} {MESI[t.month - 1]}<small>{p["giornata"]}ª</small></span>'
+              f'<span class="cc-sq">{_cal_logo(d, p["casa"], 20)}{_cal_nome(d, p["casa"])} – '
               f'{_cal_logo(d, p["fuori"], 20)}{_cal_nome(d, p["fuori"])}</span>')
         if finite:
             noi = (p["gol_casa"], p["gol_fuori"]) if p["casa"] == d["benevento"] else (p["gol_fuori"], p["gol_casa"])
             esito = "V" if noi[0] > noi[1] else "N" if noi[0] == noi[1] else "P"
-            h += f'<li>{sx}<span class="cal-r {esito}">{p["gol_casa"]}–{p["gol_fuori"]}</span></li>'
+            h += f'<li>{sx}<span class="cc-r {esito}">{p["gol_casa"]}–{p["gol_fuori"]}</span></li>'
         else:
             dx = "rinviata" if p["stato"] == "rinviata" else (f"{t:%H:%M}" if p.get("ora_certa") else "da def.")
-            h += f'<li>{sx}<span class="cal-r">{dx}</span></li>'
+            h += f'<li>{sx}<span class="cc-r">{dx}</span></li>'
     return h + "</ul>"
 
 
