@@ -66,6 +66,9 @@ def chiave(s):
 COMUNE = {chiave(c): c for c in COMUNI_BN}
 
 
+MESI = "Gennaio|Febbraio|Marzo|Aprile|Maggio|Giugno|Luglio|Agosto|Settembre|Ottobre|Novembre|Dicembre"
+
+
 def bello(s):
     """«S.S. 7 APPIA KM 236 S/N 82011» → «S.S. 7 Appia km 236»: senza CAP, «snc», maiuscole a caso."""
     s = re.sub(r"\b\d{5}\b|\bs\.?\s?n\.?\s?c\.?(?=\s|$|,)|\bs/n\b", " ", s or "", flags=re.I)
@@ -79,11 +82,118 @@ def bello(s):
     return s[:1].upper() + s[1:]
 
 
-def marchio(b):
-    """«CONAD» → «Conad»; le sigle restano (Q8, IP, API)."""
+def strada(s, comune=""):
+    """L'indirizzo come lo scrive bello(), poi con le abbreviazioni tutte allo stesso modo («C/da» → «Contrada»,
+    «S.s.372» → «SS 372», «Km. 62,046» → «km 62+046») e senza il paese ripetuto («Via Via Roma 26 , Fragneto
+    Monforte (bn)» → «Via Roma 26»)."""
+    s = bello(s)
+    # il paese con la provincia in fondo, a volte con il numero dopo
+    m = re.search(r"\s*,\s*[^,()]*\(\s*bn\s*\)\s*(\d+\w*)?$", s, flags=re.I)
+    if m:
+        s, civico = s[:m.start()].strip(), m.group(1)
+        if civico and not s.endswith(" " + civico):
+            s += " " + civico
+    s = re.sub(r"\s+sn$", "", s, flags=re.I)
+    s = re.sub(r"\b([A-Z])([A-Z]{3,})\b", lambda m: m.group(1) + m.group(2).lower(), s)   # «dir. PADULI»
+    # il tipo di strada scritto due volte o abbreviato
+    s = re.sub(r"^(?:Via|V\.)\s+(?=(?:Via|Contrada|C\s?[./]\s?da|Strada|S\.\s?S\b|SS)\b)", "", s, flags=re.I)
+    s = re.sub(r"^V\.\s*", "Via ", s)
+    s = re.sub(r"\b[Cc]\s?[./]\s?[Dd]a\b\.?\s*", "Contrada ", s)
+    s = re.sub(r"\bLocalit[aà]'?(?=\s|$)|\bLoc\.\s*", "Località ", s)
+    s = re.sub(r"\bPrvinciale\b", "Provinciale", s)
+    s = re.sub(r"\bProv(?:\.le|\.)?\s+", "Provinciale ", s)
+    s = re.sub(r"\bZona Ind\.?(?=\s|$)", "Zona Industriale", s)
+    s = re.sub(r"\bS\.\s?sc\.\s?vel\.\s*", "Strada a scorrimento veloce ", s, flags=re.I)
+    s = re.sub(r"\b([IVXivx]{2,})\s+(?=(?:" + MESI + r")\b)", lambda m: m.group(1).upper() + " ", s)
+    # strade statali e provinciali: «S.S. 7», «S.s.372», «SS87», «Statale 90», «87 Sannitica» → «SS 7» …
+    s = re.sub(r"\bS\.\s?S(?:\.\s*|\s+|(?=\d))", "SS ", s, flags=re.I)
+    s = re.sub(r"\bS\.\s?P(?:\.\s*|\s+|(?=\d))", "SP ", s, flags=re.I)
+    s = re.sub(r"\b(SS|SP)(?=\d)", r"\1 ", s)
+    s = re.sub(r"\b(?:Strada\s+)?Statale\s+(?=\d|Appia\b)", "SS ", s)
+    s = re.sub(r"^(\d+)\s+(Sannitica|Telesina|Appia)\b", r"SS \1 \2", s)
+    s = re.sub(r"(?<=[a-z]{3})\s+(?=SS \d)", ", ", s)   # «Contrada Olivola SS 88» → «Contrada Olivola, SS 88»
+    s = re.sub(r"\bS\.\s?([a-z])", lambda m: "S. " + m.group(1).upper(), s)   # «S.giovanni» → «S. Giovanni»
+    # i chilometri: «Km. 62,046», «km.44+319», «km 51+ 515» → «km 62+046»
+    s = re.sub(r",?\s*\b[Kk]m\.?\s*", " km ", s)
+    s = re.sub(r"\bkm (\d+)\s*[.,+]\s*(\d{3})\b", r"km \1+\2", s)
+    s = re.sub(r"(km \d+(?:\+\d+)?)\s+(?:\d+|S\.C\.|Dx|Sx)$", r"\1", s)
+    s = re.sub(r"(km \d+(?:\+\d+)?)\s*-?\s*(?=(?:Contrada|Località|Via)\b)", r"\1, ", s)
+    s = re.sub(r"(km \d+(?:\+\d+)?)\s*-\s*([a-z])", lambda m: m.group(1) + ", " + m.group(2).upper(), s)
+    s = re.sub(r",?\s*\b(?:[Dd]irezione|[Dd]ir\.)\s*", ", direzione ", s)
+    s = re.sub(r"(?<=[a-z])-([a-z])", lambda m: "-" + m.group(1).upper(), s)   # «Sannita-castelpagano»
+    s = re.sub(r"\b(Località|Contrada|Frazione|direzione)\s+([a-z])", lambda m: m.group(1) + " " + m.group(2).upper(), s)
+    s = re.sub(r"(?<=[a-z])\s+(?=(?:Località|Zona Industriale)\b)", ", ", s)
+    s = re.sub(r"^(SS|SP) (\d+) (\d+)$", r"\1 \2, \3", s)   # «SP84 221»: il numero civico
+    s = re.sub(r"\s*/\s+", " / ", s)
+    s = re.sub(r"\s+,", ",", s)
+    s = re.sub(r",(?=[^\s\d])", ", ", s)
+    s = re.sub(r"\s+", " ", s).strip(" ,-")
+    if comune:   # «Contrada Ciofani Benevento»; ma non «… direzione Paduli» né «SP Colle Sannita-Castelpagano»
+        s = re.sub(r"(?<!direzione)(?<=\w)[\s,]+" + re.escape(comune) + "$", "", s, flags=re.I)
+    return s[:1].upper() + s[1:]
+
+
+# Indirizzi che il gestore ha scritto senza il tipo di strada («NAPOLI 50», senza «Via») o male, controllati uno per
+# uno sulla mappa (OpenStreetMap) il 25 ott 2026, voluto dal proprietario: «Oroil deve essere via Napoli». La chiave è
+# l'indirizzo come esce da strada(): se il gestore lo cambia, la correzione non vale più e resta il suo.
+INDIRIZZI = {
+    ("Benevento", "Napoli 50"): "Via Napoli 50",
+    ("Benevento", "Delle Puglie 25"): "Via delle Puglie 25",
+    ("Benevento", "Virgilio"): "Viale Virgilio",
+    ("Benevento", "Nenni 17"): "Via Pietro Nenni 17",
+    ("Benevento", "San Vitale"): "Contrada San Vitale",
+    ("Benevento", "Bachelet"): "Via Vittorio Bachelet",
+    ("Benevento", "Bissolati"): "Piazza Bissolati",
+    ("Benevento", "Contrada san vito presso centro commerciale Buonvento"): "Contrada San Vito, centro commerciale Buonvento",
+    ("Bonea", "Fizzo 52"): "Via Fizzo 52",
+    ("Bucciano", "Provinciale 28"): "Via Provinciale 28",
+    ("Calvi", "Strada Statale km 274+250, San Giorgio del Sannio"): "SS 7 Appia km 274+250",
+    ("Ceppaloni", "Appia, SS 7 km 251 - San Giovanni"): "SS 7 Appia km 251, San Giovanni",
+    ("Foglianise", "Silvio Pedicini"): "Via Silvio Pedicini",
+    ("Foiano di Val Fortore", "Nazionale"): "Via Nazionale",
+    ("Moiano", "Provinciale Moiano - Sant'Agata"): "Strada Provinciale Moiano-Sant'Agata",
+    ("Montefalcone di Val Fortore", "Renato Zeppa 10"): "Via Renato Zeppa 10",
+    ("Montesarchio", "Napoli 102"): "Via Napoli 102",
+    ("Montesarchio", "F. Caracciolo"): "Via Francesco Caracciolo",
+    ("Pago Veiano", "Vittorio Veneto 142"): "Via Vittorio Veneto 142",
+    ("Paolisi", "Appia 69"): "Via Appia 69",
+    ("San Giorgio del Sannio", "Alessandro Manzoni"): "Via Alessandro Manzoni",
+    ("San Giorgio La Molara", "SP S. G.la Molara Pago Veiano Contrada San Marcuccio"):
+        "SP San Giorgio La Molara-Pago Veiano, Contrada San Marcuccio",
+    ("San Lorenzello", "Cerreto 37"): "Via Cerreto 37",   # nell'elenco c'è anche «VIA CERRETO 41»
+    ("San Marco dei Cavoti", "XXV Aprile 34"): "Via XXV Aprile 34",
+    ("San Nicola Manfredi", "Palati 45"): "Contrada Palati 45",
+    ("Santa Croce del Sannio", "Generale de Maria"): "Corso Generale De Maria",
+    ("Telese Terme", "S. Giovanni, Località Piana"): "Via San Giovanni, località Piana",
+}
+
+
+def indirizzo(s, comune):
+    a = strada(s, comune)
+    return INDIRIZZI.get((comune, a), a)
+
+
+def nome_impianto(s, comune):
+    """Il nome che si vede per le pompe bianche: «Goil Bonea» → «Goil», «_sudpetroli1» → «Sudpetroli»; se è solo il
+    paese o comincia col paese («Benevento - Via Napoli», «Durazzano») è un'etichetta, non un nome: niente."""
+    n = bello(s)
+    if n.startswith("_"):
+        n = re.sub(r"\d+$", "", n.lstrip("_")).capitalize()
+    if not comune:
+        return n
+    if n.lower().startswith(comune.lower()):
+        return ""
+    return re.sub(r"[\s_-]*" + re.escape(comune) + "$", "", n, flags=re.I).strip()
+
+
+def marchio(b, nome=""):
+    """«CONAD» → «Conad»; le sigle restano (Q8, IP, API). Una bandiera fatta solo di numeri («357») è un codice: si
+    prende la prima parola del nome («Rainbow_Castelvenere» → «Rainbow»)."""
     b = (b or "").strip()
     if b.lower() == "pompe bianche":
         return "Pompa bianca"
+    if b.isdigit():
+        return re.split(r"[_\s-]", nome.strip())[0].capitalize() if nome.strip() else "Pompa bianca"
     return b.title() if len(b) > 3 and re.fullmatch(r"[A-Z ]+", b) else b   # API-IP, ESSO-X: come sono
 
 
@@ -116,14 +226,14 @@ def main():
             continue
         comune = COMUNE.get(chiave(r.get("Comune")), bello(r.get("Comune")))
         bandiera = (r.get("Bandiera") or "").strip()
-        nome = bello(r.get("Nome Impianto"))
+        nome = nome_impianto(r.get("Nome Impianto"), comune)
         try:
             lat, lon = float(r["Latitudine"]), float(r["Longitudine"])
         except (KeyError, TypeError, ValueError):
             lat = lon = None
         impianti[r["idImpianto"]] = {
-            "id": r["idImpianto"], "bandiera": marchio(bandiera),
-            "nome": nome, "indirizzo": bello(r.get("Indirizzo")), "comune": comune, "lat": lat, "lon": lon,
+            "id": r["idImpianto"], "bandiera": marchio(bandiera, r.get("Nome Impianto") or ""),
+            "nome": nome, "indirizzo": indirizzo(r.get("Indirizzo"), comune), "comune": comune, "lat": lat, "lon": lon,
             "prezzi": {}}
     limite = (dt.date.fromisoformat(est_p) - dt.timedelta(days=GIORNI_VALIDI)).isoformat()
     for r in prezzi:
