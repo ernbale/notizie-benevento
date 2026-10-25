@@ -175,7 +175,16 @@ def stato_partita(s):
         "cognomi": cognomi,
         "stats": stats,
         "stadio": ((s.get("gameInfo") or {}).get("venue") or {}).get("fullName") or "",
+        "_linescores": {"ht": primo_tempo(cs)},
     }
+
+
+def primo_tempo(cs):
+    """Il risultato del primo tempo (casa, fuori) dai «linescores» di ESPN, se ci sono."""
+    try:
+        return [int(cs[x]["linescores"][0]["displayValue"]) for x in ("home", "away")]
+    except (KeyError, IndexError, TypeError, ValueError):
+        return None
 
 
 def tipo_azione(k):
@@ -426,7 +435,212 @@ def testi(tipo, p, noi, dati, calcio=None):
         if dopo:
             righe += [""] + dopo
         corpo = "\n".join(righe).rstrip()
+    if dati.get("articolo"):
+        corpo += f"\n\nIl racconto della partita: {SITO}/notizia/{dati['articolo']}/"
+        piede_ig = piede_ig.replace("La diretta, la classifica e gli altri campi sul sito",
+                                    "Il racconto della partita, la classifica e gli altri campi sul sito")
+    if tipo == "finale" and dati.get("articolo"):
+        ig_corpo = corpo.rsplit("\n\nIl racconto della partita:", 1)[0]
+        return corpo + "\n\n" + piede_tg, corpo + "\n\n" + piede_fb, ig_corpo + "\n\n" + piede_ig
     return corpo + "\n\n" + piede_tg, corpo + "\n\n" + piede_fb, corpo + "\n\n" + piede_ig
+
+
+# ---------------------------------------------------------------- l'articolo per il sito, a fine partita
+
+ORDINALI = ["prima", "seconda", "terza", "quarta", "quinta", "sesta", "settima", "ottava", "nona", "decima", "undicesima",
+            "dodicesima", "tredicesima", "quattordicesima", "quindicesima", "sedicesima", "diciassettesima",
+            "diciottesima", "diciannovesima", "ventesima", "ventunesima", "ventiduesima", "ventitreesima",
+            "ventiquattresima", "venticinquesima", "ventiseiesima", "ventisettesima", "ventottesima", "ventinovesima",
+            "trentesima", "trentunesima", "trentaduesima", "trentatreesima", "trentaquattresima", "trentacinquesima",
+            "trentaseiesima", "trentasettesima", "trentottesima"]
+
+
+def elenco(xs):
+    return xs[0] if len(xs) == 1 else ", ".join(xs[:-1]) + " e " + xs[-1]
+
+
+def articolo_finale(p, noi, gol, calcio, adesso):
+    """La notizia per il sito a fine partita, come la scrive l'agente (AGENTE.md, «Lo sport»): titolo col risultato e
+    chi l'ha deciso, racconto dei gol, espulsi, numeri, classifica e prossima partita. Fonte ESPN, una sola:
+    «una_fonte»; i giornali e il club si aggiungono nei giri di ogni ora. «diretta_calcio»: i social l'hanno già avuta
+    come «Finale» (telegram.py, facebook.py e instagram.py non la mandano)."""
+    from chiusure import slug
+    casa, fuori = p["nomi"][p["casa"]], p["nomi"][p["fuori"]]
+    gc, gf = p["gol"][p["casa"]], p["gol"][p["fuori"]]
+    io = noi
+    altro = p["fuori"] if io == p["casa"] else p["casa"]
+    nome, avv = p["nomi"][io], p["nomi"][altro]
+    a, b = p["gol"][io], p["gol"][altro]
+    giorno = data(p.get("quando")).astimezone(fuso()) if p.get("quando") else adesso
+    quando = f"{GIORNI[giorno.weekday()]} {giorno.day} {MESI[giorno.month - 1]}"
+    questa = next((x for x in (calcio or {}).get("partite") or [] if x.get("id") == p["id"]), {})
+    giornata = questa.get("giornata")
+    nella = f"nella {ORDINALI[giornata - 1]} giornata di Serie B" if giornata and 0 < giornata <= 38 else "in Serie B"
+    validi = [g for g in gol if g.get("valido", True)]
+    # chi ha deciso: l'ultimo gol di chi ha vinto di uno, quello che l'ha messo avanti per sempre
+    decide = None
+    if abs(gc - gf) == 1 and validi:
+        vincente = p["casa"] if gc > gf else p["fuori"]
+        decide = [g for g in validi if g["squadra"] == vincente][-1]
+    nomi_gol = [f"{g.get('chi') or '?'}" + (" (autogol)" if g.get("autogol") else "") for g in validi]
+    if not validi:
+        titolo = f"Serie B, {casa}-{fuori} 0-0"
+    elif decide and decide.get("chi") and not decide.get("autogol"):
+        titolo = f"Serie B, {casa}-{fuori} {gc}-{gf}: decide {decide['chi']} {al_minuto(decide['minuto'])}".strip()
+    else:
+        titolo = f"Serie B, {casa}-{fuori} {gc}-{gf}: " + ("reti di " if len(validi) > 1 else "rete di ") + elenco(nomi_gol)
+    riga = next((r for r in (calcio or {}).get("classifica") or [] if r.get("id") == io), None)
+    frase, punti = esito(p, noi)
+    pt = None
+    if riga and riga.get("pt") is not None:
+        pt = riga["pt"] + (0 if questa.get("stato") == "post" else punti)
+    titolo_google = f"Serie B: {casa}-{fuori} {gc}-{gf}" + (f", il {nome} {'sale' if punti else 'resta'} a {pt} punti"
+                                                            if pt is not None and nome == "Benevento" else "")
+    if len(titolo_google) > 65:
+        titolo_google = f"{casa}-{fuori} {gc}-{gf}" + (f", {nome} a {pt} punti" if pt is not None else "")
+    in_casa = io == p["casa"]
+    if a > b:
+        fatto = f"{con('', nome)} ha battuto {a}-{b} {con('', avv)}" if in_casa else \
+            f"{con('', nome)} ha vinto {a}-{b} sul campo {con('di', avv)}"
+    elif a == b:
+        fatto = f"{con('', nome)} ha pareggiato {a}-{b} con {con('', avv)}" if in_casa else \
+            f"{con('', nome)} ha pareggiato {a}-{b} sul campo {con('di', avv)}"
+    else:
+        fatto = f"{con('', nome)} ha perso {a}-{b} in casa con {con('', avv)}" if in_casa else \
+            f"{con('', nome)} ha perso {a}-{b} sul campo {con('di', avv)}"
+    dove = f" allo stadio {p['stadio'].replace('Stadio ', '')}" if p.get("stadio") else ""
+    punti_frase = ""
+    if pt is not None:
+        punti_frase = (f" Con questi tre punti sale a {pt}." if punti == 3 else f" Con questo punto sale a {pt}."
+                       if punti == 1 else f" Resta a {pt} punti.")
+    racconto = [f"{maiusc(quando)}{dove} {fatto}, {nella}.{punti_frase}"]
+    linee = []
+    try:
+        comp = p.get("_linescores") or {}
+        ht = comp.get("ht")
+    except Exception:
+        ht = None
+    if ht:
+        linee.append(f"Il primo tempo è finito {ht[0]}-{ht[1]}.")
+    linee.append(racconto_gol(p, gol, noi) if validi else "Non ci sono stati gol.")
+    racconto.append(" ".join(linee))
+    rossi = cartellini(p, "rosso")
+    if rossi:
+        racconto.append(" ".join(f"{maiusc(al_minuto(m))} è stato espulso {n} {con('di', p['nomi'].get(s_, ''))}."
+                                 for m, n, s_ in rossi))
+    sa, sb = p["stats"].get(p["casa"]) or {}, p["stats"].get(p["fuori"]) or {}
+    pezzi = []
+    try:
+        pa = round(float(sa.get("possessionPct")))
+        pezzi.append(f"possesso palla {pa}% per {con('', casa)} e {100 - pa}% per {con('', fuori)}")
+    except (TypeError, ValueError):
+        pass
+    if sa.get("shotsOnTarget") is not None and sb.get("shotsOnTarget") is not None:
+        pezzi.append(f"tiri in porta {sa['shotsOnTarget']} a {sb['shotsOnTarget']}")
+    if sa.get("totalShots") is not None and sb.get("totalShots") is not None:
+        pezzi.append(f"tiri in tutto {sa['totalShots']} a {sb['totalShots']}")
+    if pezzi:
+        racconto.append(f"I numeri della partita, secondo ESPN: {'; '.join(pezzi)}.")
+    dopo = testi("finale", p, noi, {"risultato": risultato(p), "gol_lista": gol}, calcio)[0]
+    prossima = next((l for l in dopo.splitlines() if l.startswith("Prossima partita:")), None)
+    if prossima:
+        racconto.append(prossima.replace("Prossima partita:", "La prossima partita:"))
+    fonte = "ESPN"
+    url = f"https://www.espn.com/soccer/match/_/gameId/{p['id']}"
+    g0 = giorno.date().isoformat()
+    sintesi = f"{maiusc(quando)} {fatto}, {nella}."
+    if validi:
+        sintesi += " " + ("Gol di " if len(validi) > 1 else "Gol di ") + elenco(
+            [f"{x['chi'] or '?'} ({x['minuto']})" + (", autogol" if x.get("autogol") else "") for x in validi]) + "."
+    if pt is not None:
+        sintesi += f" {maiusc(con('', nome))} {'sale' if punti else 'resta'} a {pt} punti."
+    n = {
+        "id": f"{slug(casa)}-{slug(fuori)}-{gc}-{gf}-{giorno.day}-{MESI[giorno.month - 1]}",
+        "titolo": titolo, "titolo_google": titolo_google, "sintesi": sintesi,
+        "categoria": "sport", "sport": "calcio", "zona": "benevento", "luogo": p.get("stadio") or casa,
+        "pubblicato": adesso.isoformat(timespec="seconds"), "stato": "una_fonte", "rilevante": False,
+        "diretta_calcio": p["id"],
+        "fonti": [{"nome": fonte, "url": url}],
+        "articolo": {
+            "racconto": [{"testo": t, "fonti": [fonte], "giorno": g0} for t in racconto],
+            "cronologia": [{"data": f"{giorno.day} {MESI[giorno.month - 1]}, {giorno:%H:%M}",
+                            "fatto": f"Comincia {casa}-{fuori}{dove}.", "fonti": [fonte]},
+                           {"data": f"{giorno.day} {MESI[giorno.month - 1]}, fine partita",
+                            "fatto": f"Finisce {casa}-{fuori} {gc}-{gf}.", "fonti": [fonte]}],
+            "concordano": [], "divergono": [],
+            "non_si_sa": ["Il commento dell'allenatore e dei giocatori: arriva con le interviste del dopo partita."],
+            "fonti": [{"nome": fonte, "titolo": f"{casa} {gc}-{gf} {fuori}: tabellino e statistiche", "url": url,
+                       "data": f"{adesso.day} {MESI[adesso.month - 1][:3]}, {adesso:%H:%M}"}],
+        },
+    }
+    return n
+
+
+def git(*args, controlla=True):
+    import subprocess
+    return subprocess.run(["git", "-C", os.path.dirname(QUI), *args], capture_output=True, text=True, check=controlla)
+
+
+def pubblica_articolo(n, adesso, chiavi, prova=None):
+    """La notizia in testa a notizie.json (controllata con le regole di archivia.py), il commit e il push dal main di
+    adesso, poi la pubblicazione del sito (un push fatto da GitHub non la fa partire da solo). Se la notizia c'è già
+    (il lavoro è ripartito) non la rifà. Restituisce l'id, o None."""
+    import archivia as A
+    sito = os.path.dirname(QUI)
+    if not prova:
+        git("config", "user.name", "github-actions[bot]")
+        git("config", "user.email", "41898282+github-actions[bot]@users.noreply.github.com")
+    for tentativo in range(5):
+        if not prova:
+            git("fetch", "-q", "origin", "main")
+            git("reset", "-q", "--hard", "origin/main")
+        with open(os.path.join(sito, "notizie.json"), encoding="utf-8") as f:
+            d = json.load(f)
+        # c'è già (il lavoro è ripartito, o l'agente l'ha scritta coi giornali): si porta lì, non se ne fa un'altra
+        stessa = n["id"].rsplit("-", 4)[0] + "-"   # «benevento-catanzaro-»: la stessa partita, con lo stesso giorno
+        giorno = n["pubblicato"][:10]
+        for x in d.get("notizie", []):
+            if x.get("id") == n["id"] or x.get("diretta_calcio") == n["diretta_calcio"] or (
+                    str(x.get("id", "")).startswith(stessa) and str(x.get("pubblicato", ""))[:10] == giorno
+                    and x.get("categoria") == "sport"):
+                print(f"  articolo: c'è già, {x['id']}")
+                return x["id"]
+        indice = json.load(open(os.path.join(sito, "archivio", "indice.json"), encoding="utf-8")).get("voci") or []
+        if any(x.get("id") == n["id"] for x in indice):
+            print(f"  articolo: {n['id']} è già in archivio")
+            return n["id"]
+        prima, avv = [], []
+        A.controlla(json.loads(json.dumps(d)), prima, avv, adesso)
+        v = A.versioni_foto("calcio")
+        if v:
+            usate = [x.get("foto") for x in d.get("notizie", [])]
+            n["immagine"], n["foto"] = "calcio", min(v, key=lambda x: (usate.count(x), x))
+        d["notizie"].insert(0, n)
+        dopo = []
+        A.controlla(d, dopo, avv, adesso)
+        nuovi = [e for e in dopo if e not in prima]
+        if nuovi:
+            print("  AVVISO articolo non pubblicato: " + "; ".join(nuovi[:6]))
+            return None
+        if prova:
+            with open(os.path.join(prova, "articolo.json"), "w", encoding="utf-8") as f:
+                json.dump(n, f, ensure_ascii=False, indent=1)
+            print(f"  articolo (prova, controllato e non pubblicato): {n['titolo']}")
+            return n["id"]
+        with open(os.path.join(sito, "notizie.json"), "w", encoding="utf-8") as f:
+            f.write(A.testo_json(d))
+        git("add", "notizie.json")
+        git("commit", "-q", "-m", f"Fine partita: {n['titolo']}")
+        if git("push", "-q", "origin", "HEAD:main", controlla=False).returncode == 0:
+            try:
+                github("POST", "actions/workflows/pubblica.yml/dispatches", chiavi["github"], {"ref": "main"})
+            except Exception as e:
+                print(f"  AVVISO articolo: pubblicazione del sito non partita ({e}): uscirà col giro dopo")
+            print(f"  articolo pubblicato: {n['titolo']}")
+            return n["id"]
+        print(f"  articolo: push rifiutato (tentativo {tentativo + 1}), riparto dal main di adesso")
+        time.sleep(5)
+    return None
 
 
 # ---------------------------------------------------------------- l'immagine
@@ -1002,6 +1216,13 @@ def main():
             # il lavoro è ripartito senza il file: si guarda sui canali cosa è già uscito, per non rifarlo
             sui_canali = gia_sui_canali(p, chiavi, ig, adesso - dt.timedelta(hours=4))
         for chiave, tipo, dati in cronista.passo(p, adesso):
+            if tipo == "finale":   # prima l'articolo sul sito, così i social del finale portano lì
+                try:
+                    dati["articolo"] = pubblica_articolo(articolo_finale(p, noi, dati["gol_lista"], calcio, adesso),
+                                                         adesso, chiavi, prova)
+                except Exception as e:
+                    print(f"  AVVISO articolo non pubblicato: {e}")
+                    dati["articolo"] = None
             uscita = testi(tipo, p, noi, dati, calcio)
             u = stato["uscite"].setdefault(chiave, {"canali": {}})
             u.update(tipo=tipo, testi=list(uscita), dati=dati,

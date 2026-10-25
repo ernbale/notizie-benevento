@@ -90,6 +90,8 @@ def candidate(notizie, gia, adesso):
         t = quando(n, adesso)
         if not t or n.get("id") in gia or t > adesso or adesso - t > dt.timedelta(hours=ORE_FINESTRA):
             continue
+        if n.get("diretta_calcio"):   # l'articolo di fine partita: sui social è già uscito il «Finale» (gol.py)
+            continue
         out.append((rilievo(n, t, adesso), n))
     return [n for _, n in sorted(out, key=lambda x: -x[0])]
 
@@ -107,6 +109,8 @@ def aggiornate(notizie, gia, adesso):
     nuove = {n.get("id") for n in candidate(notizie, gia, adesso)}
     out = []
     for n in notizie:
+        if n.get("diretta_calcio"):   # come in candidate()
+            continue
         ag = (n.get("articolo") or {}).get("aggiornamento") or {}
         usciti = gia.get(n.get("id"), set())
         try:

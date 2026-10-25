@@ -254,6 +254,16 @@ basket, scherma, tutto»). Ogni notizia di sport ha `"categoria": "sport"` e `"s
   alla cronaca. `rilevante: true` solo per un fatto che riguarda tutta la città (una promozione, disordini allo
   stadio, una chiusura di strade per una partita): allora va anche tra le notizie principali.
 - Niente `immagine` di temi non sportivi; se non c'è un tema adatto in img/temi/temi.json, niente immagine.
+- **Le partite del Benevento Calcio** (voluto dal proprietario il 25 ott 2026: «articolo finale sul sito a fine
+  partita istantaneamente e articoli nuovi a giri programmati»): durante la partita gol, intervallo e fine escono da
+  soli sui social (`strumenti/gol.py`), e al fischio finale lo stesso programma pubblica l'articolo col risultato
+  (titolo «Serie B, Benevento-Catanzaro 2-1: decide …», fonte ESPN, `"stato": "una_fonte"`, campo `diretta_calcio`).
+  **Non scriverne un altro sulla stessa partita**: quando i giornali o il club pubblicano cronaca e tabellino,
+  aggiungili a quella notizia (fonti, paragrafi del giorno, `stato` → `confermata` con la seconda testata o
+  `ufficiale` col tabellino del club) e correggi minuti e nomi col tabellino del club se ESPN li scrive diversi
+  (scrivilo in `divergono`). `diretta_calcio` non toglierlo: così i social non la rimandano. Le dichiarazioni del
+  dopo partita con un fatto nuovo (un infortunio, una squalifica, le parole dell'allenatore sulla classifica) sono
+  invece una notizia nuova dei giri di ogni ora.
 
 ## Le Allerte (categoria `meteo`)
 

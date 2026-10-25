@@ -19,7 +19,8 @@ on:
         default: "4059"
 
 permissions:
-  contents: write   # le immagini dei gol nel ramo gol-immagini (online subito, senza aspettare la pubblicazione del sito)
+  contents: write   # le immagini dei gol nel ramo gol-immagini (online subito) e l'articolo di fine partita in notizie.json
+  actions: write    # poi fa partire la pubblicazione del sito (un push fatto da GitHub non la avvia da solo)
 
 concurrency:
   group: gol

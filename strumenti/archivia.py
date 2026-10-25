@@ -683,7 +683,8 @@ def controlla(d, err, avv, adesso=None):
             testate = {re.sub(r"[^a-z0-9]", "", re.sub(r"\s*\(.*\)$", "", x or "").lower()) for x in nomi_prima}
             if len(testate) != 1:
                 err.append(f"{w}: 'una_fonte' vuole una sola testata (con due è 'confermata')")
-            elif not testate <= AUTOREVOLI:
+            elif not testate <= AUTOREVOLI and not (n.get("diretta_calcio") and testate == {"espn"}):
+                # l'articolo di fine partita del Benevento (strumenti/gol.py): il risultato viene dai dati di ESPN
                 err.append(f"{w}: 'una_fonte' solo con una testata autorevole (regola 2), non {nomi_prima[0]!r}")
             if n.get("categoria") not in UNA_FONTE_CAT:
                 err.append(f"{w}: 'una_fonte' solo per {', '.join(UNA_FONTE_CAT)} (mai allerte ed eventi)")

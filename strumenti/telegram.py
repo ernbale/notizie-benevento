@@ -96,6 +96,8 @@ def da_mandare(notizie, gia, adesso):
     """Le notizie nuove e gli aggiornamenti delle ultime ORE_FINESTRA ore non ancora sul canale, dal più vecchio."""
     out = []
     for n in notizie:
+        if n.get("diretta_calcio"):   # l'articolo di fine partita: sul canale c'è già il «Finale» col link (gol.py)
+            continue
         t = quando(n, adesso)
         if t and n.get("id") not in gia and t <= adesso and adesso - t <= dt.timedelta(hours=ORE_FINESTRA):
             out.append((t, n["id"], "nuova", n))
