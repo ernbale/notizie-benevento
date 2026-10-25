@@ -121,6 +121,77 @@
   .giro details.dentro summary { cursor: pointer; font-weight: 600; }
   .giro .ko { color: var(--rosso); font-weight: 600; }
 
+  /* la scheda «Posta»: le tre caselle del sito lette dal Pi di casa, solo lettura (25 ott 2026) */
+  .posta-barra { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; margin: 4px 0 12px; }
+  .caselle, .cartelle { display: flex; flex-wrap: wrap; gap: 6px; }
+  .caselle button, .cartelle button { font: 600 14px var(--sans); background: var(--scheda); border: 1px solid var(--riga); border-radius: 16px; padding: 4px 12px; cursor: pointer; color: var(--nero); display: inline-flex; align-items: center; gap: 6px; }
+  .cartelle button { border-radius: 4px; font-weight: 500; }
+  .caselle button.attiva, .cartelle button.attiva { background: var(--nero); color: #fff; border-color: var(--nero); }
+  .caselle button:disabled { opacity: .5; cursor: default; }
+  .caselle .pallino { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+  .caselle .conta { font: 700 11px/16px var(--sans); background: var(--rosso); color: #fff; border-radius: 9px; padding: 0 6px; }
+  .posta-cerca { flex: 1 1 220px; font: 15px var(--sans); padding: 7px 10px; border: 1px solid var(--riga); border-radius: 4px; background: #fff; min-width: 0; }
+  .posta-scelte { display: flex; gap: 6px 16px; flex-wrap: wrap; font-size: 14px; color: var(--grigio); align-items: center; }
+  .posta-scelte label { display: inline-flex; gap: 6px; align-items: center; cursor: pointer; }
+  .posta-corpo { display: grid; grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .posta-elenco { background: var(--scheda); border: 1px solid var(--riga); border-radius: 6px; min-width: 0; }
+  .posta-lettura { background: #fff; border: 1px solid var(--riga); border-radius: 6px; padding: 18px 20px; min-width: 0; }
+  @media (min-width: 900px) {
+    .posta-corpo { grid-template-columns: minmax(300px, 38%) minmax(0, 1fr); height: calc(100vh - 250px); min-height: 520px; }
+    .posta-elenco, .posta-lettura { overflow-y: auto; }
+    .solo-telefono { display: none !important; }
+  }
+  @media (max-width: 899px) {
+    .posta-corpo.legge .posta-elenco, .posta-corpo:not(.legge) .posta-lettura { display: none; }
+    .posta-lettura { padding: 14px; }
+  }
+  .mail { display: block; width: 100%; text-align: left; background: none; border: 0; border-bottom: 1px solid rgba(227, 201, 173, .7); padding: 10px 12px 10px 16px; cursor: pointer; font: inherit; color: inherit; position: relative; }
+  .mail:hover { background: rgba(17, 17, 17, .03); }
+  .mail.scelta { background: #fff; box-shadow: inset 3px 0 0 var(--nero); }
+  .mail.nuova::before { content: ""; position: absolute; left: 5px; top: 17px; width: 6px; height: 6px; border-radius: 50%; background: var(--blu); }
+  .mail .r1 { display: flex; gap: 8px; align-items: baseline; }
+  .mail .chi { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 15px; }
+  .mail.nuova .chi, .mail.nuova .ogg { font-weight: 700; }
+  .mail .ora { font-size: 12px; color: var(--grigio); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .mail .ogg { display: block; font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-top: 1px; }
+  .mail .ant { font-size: 13px; color: var(--grigio); overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; margin-top: 2px; }
+  .et { font: 700 10px/16px var(--sans); text-transform: uppercase; letter-spacing: .5px; padding: 0 6px; border-radius: 3px; color: #fff; white-space: nowrap; display: inline-block; }
+  .et-pec { background: var(--verde); }
+  .et-redazione { background: var(--blu); }
+  .et-comunicati { background: var(--rosso); }
+  .bolli { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 5px; }
+  .bollo { font: 600 11px var(--sans); padding: 1px 7px; border-radius: 10px; background: rgba(17, 17, 17, .07); color: var(--grigio); }
+  .bollo.ok { background: rgba(46, 107, 63, .14); color: var(--verde); }
+  .bollo.ko { background: rgba(196, 22, 28, .12); color: var(--rosso); }
+  .bollo.info { background: rgba(29, 79, 145, .12); color: var(--blu); }
+  .lettura h3.oggetto { font: 700 22px/1.25 var(--serif); text-transform: none; letter-spacing: -.2px; margin: 0 0 10px; overflow-wrap: anywhere; }
+  .lettura .intest { font-size: 14px; color: var(--grigio); display: grid; gap: 2px; margin-bottom: 12px; overflow-wrap: anywhere; }
+  .lettura .intest b { color: var(--nero); font-weight: 600; }
+  .riga-azioni { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 12px; }
+  .bottone { font: 600 13px var(--sans); background: var(--scheda); border: 1px solid var(--riga); border-radius: 4px; padding: 5px 11px; cursor: pointer; color: var(--nero); text-decoration: none; display: inline-flex; gap: 6px; align-items: center; }
+  .bottone.attiva { background: var(--nero); color: #fff; border-color: var(--nero); }
+  .bottone:disabled { opacity: .6; cursor: wait; }
+  .riquadretto { border: 1px solid var(--riga); border-left-width: 4px; border-radius: 4px; padding: 8px 12px; font-size: 14px; margin: 0 0 12px; background: var(--scheda); }
+  .riquadretto.ok { border-left-color: var(--verde); }
+  .riquadretto.ko { border-left-color: var(--rosso); }
+  .riquadretto.info { border-left-color: var(--blu); }
+  .allegati { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 14px; }
+  .allegato { border: 1px solid var(--riga); border-radius: 6px; padding: 8px 10px; background: var(--scheda); font-size: 13px; display: grid; gap: 6px; max-width: 100%; }
+  .allegato .nome { font-weight: 600; overflow-wrap: anywhere; }
+  .allegato .dim { color: var(--grigio); font-weight: 400; }
+  .allegato .azioni { display: flex; gap: 6px; flex-wrap: wrap; }
+  .corpo-testo { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 15px; line-height: 1.55; margin: 0; font-family: var(--sans); }
+  .corpo-html { display: block; width: 100%; height: 62vh; border: 1px solid var(--riga); border-radius: 4px; background: #fff; }
+  .vista-allegato { position: fixed; inset: 0; background: rgba(17, 17, 17, .85); z-index: 50; display: flex; flex-direction: column; padding: 12px max(12px, env(safe-area-inset-right, 0px)) 12px max(12px, env(safe-area-inset-left, 0px)); }
+  .vista-allegato .barra { display: flex; gap: 8px; align-items: center; color: #fff; margin-bottom: 10px; }
+  .vista-allegato .barra .nome { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 600; }
+  .vista-allegato .dentro { flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center; }
+  .vista-allegato img { max-width: 100%; max-height: 100%; object-fit: contain; background: #fff; }
+  .vista-allegato iframe { width: 100%; height: 100%; border: 0; background: #fff; border-radius: 4px; }
+  .vista-allegato pre { background: #fff; color: var(--nero); width: 100%; max-width: 860px; height: 100%; overflow: auto; margin: 0; padding: 18px; border-radius: 4px; white-space: pre-wrap; font: 15px/1.55 var(--sans); }
+  .altri { display: block; width: 100%; padding: 12px; background: none; border: 0; font: 600 14px var(--sans); color: var(--blu); cursor: pointer; }
+  .posta-nota { font-size: 13px; color: var(--grigio); margin: 10px 0 0; }
+
   footer { margin-top: 40px; font-size: 13px; color: var(--grigio); border-top: 1px solid var(--riga); padding-top: 12px; }
   @media (max-width: 560px) { header .nome { font-size: 24px; } .numero .v { font-size: 30px; } h2 { font-size: 22px; } }
   @media (prefers-reduced-motion: no-preference) { .barre .fila span { transition: width .4s ease; } }
@@ -162,6 +233,7 @@
 (function () {
   var CHIAVE_SALVATA = "nb-statistiche-chiave";
   var busta = null;
+  var chiaveGrezza = null;   // la chiave delle statistiche (base64): la scheda «Posta» la mostra al Pi per entrare
 
   function b64(s) { return Uint8Array.from(atob(s), function (c) { return c.charCodeAt(0); }); }
   function a64(buf) { return btoa(String.fromCharCode.apply(null, new Uint8Array(buf))); }
@@ -202,9 +274,9 @@
     document.getElementById("errore").textContent = "";
     var chiave;
     chiaveDa(p).then(function (k) { chiave = k; return apriCon(k); }).then(function (dati) {
-      if (document.getElementById("ricorda").checked) {
-        crypto.subtle.exportKey("raw", chiave).then(function (raw) { salva(a64(raw)); });
-      }
+      return crypto.subtle.exportKey("raw", chiave).then(function (raw) { chiaveGrezza = a64(raw); return dati; });
+    }).then(function (dati) {
+      if (document.getElementById("ricorda").checked) salva(chiaveGrezza);
       document.getElementById("parola").value = "";
       disegna(dati);
     }).catch(function () {
@@ -309,17 +381,21 @@
     // calendario degli eventi, la salute di fonti e controlli, «Dietro le quinte» (cosa fa l'agente) e le chiusure dei
     // Comuni; la scelta resta su questo dispositivo
     var mL = el("div", "vista"), mS = el("div", "vista"), mG = el("div", "vista"), mE = el("div", "vista"),
-        mH = el("div", "vista"), mq = el("div", "vista"), mc = el("div", "vista"), nav = el("nav", "schede");
+        mH = el("div", "vista"), mq = el("div", "vista"), mc = el("div", "vista"), mP = el("div", "vista"),
+        nav = el("nav", "schede");
     var m = mL;
+    // la quarta voce, se c'è, disegna la scheda la prima volta che si apre (la «Posta» chiede le mail al Pi solo allora)
     var SCHEDE = [["Lettori", mL, ""], ["Social", mS, "#social"], ["Il giornale", mG, "#giornale"], ["Eventi", mE, "#eventi"],
-                  ["Salute", mH, "#salute"], ["Dietro le quinte", mq, "#dietro-le-quinte"], ["Chiusure", mc, "#chiusure"]];
+                  ["Salute", mH, "#salute"], ["Dietro le quinte", mq, "#dietro-le-quinte"], ["Chiusure", mc, "#chiusure"],
+                  ["Posta", mP, "#posta", disegnaPosta]];
     SCHEDE.forEach(function (sc, i) {
       var b = el("button", "", sc[0]);
       b.type = "button";
       b.addEventListener("click", function () {
         SCHEDE.forEach(function (x) { x[1].hidden = x[1] !== sc[1]; });
         [].forEach.call(nav.children, function (x) { x.classList.toggle("attiva", x === b); });
-        try { localStorage.setItem("nb-statistiche-scheda", String(i)); history.replaceState(null, "", sc[2] || location.pathname); } catch (e) {}
+        try { localStorage.setItem("nb-statistiche-scheda", String(i)); history.replaceState(null, "", sc[2] || location.pathname + location.search); } catch (e) {}
+        if (sc[3] && !sc[1].dataset.pronta) { sc[1].dataset.pronta = "1"; sc[3](sc[1]); }
       });
       nav.appendChild(b);
     });
@@ -336,7 +412,11 @@
     agg.textContent = "Aggiornato " + new Date(D.aggiornato).toLocaleString("it-IT", { timeZone: "Europe/Rome", day: "numeric", month: "long", hour: "2-digit", minute: "2-digit" });
     var esci = el("button", "", "Esci");
     esci.type = "button";
-    esci.addEventListener("click", function () { salva(null); mostraLucchetto("Uscito. Su questo dispositivo la parola d'ordine non è più ricordata."); });
+    esci.addEventListener("click", function () {
+      salva(null); chiaveGrezza = null; gettonePosta = null;
+      try { sessionStorage.removeItem("nb-posta-gettone"); } catch (e) {}
+      mostraLucchetto("Uscito. Su questo dispositivo la parola d'ordine non è più ricordata.");
+    });
     agg.appendChild(esci);
 
     // --- visite ---
@@ -976,6 +1056,406 @@
     box.appendChild(g);
   }
 
+  // ---------- la scheda «Posta» (25 ott 2026) ----------
+  // Le caselle PEC, redazione@ e comunicati@ lette in diretta dal Pi di casa (strumenti/posta_web.py), con l'etichetta
+  // della casella. SOLO LETTURA, voluto così («io voglio solo leggerle, non inviare e altro, compreso allegati»): non si
+  // segna niente come letto, non si sposta, non si manda niente. Il Pi apre la posta solo a chi ha la chiave di queste
+  // statistiche; le mail non passano dal sito e qui non restano salvate. L'HTML delle mail sta in un riquadro chiuso
+  // (sandbox: niente script; le immagini da internet solo se si chiede).
+  var POSTA = "https://casalego.duckdns.org:36092/posta/api/";
+  (function () {   // per le prove in casa: ?posta=http://127.0.0.1:…/posta/api/
+    try {
+      var q = new URLSearchParams(location.search).get("posta");
+      if (q && /^http:\/\/(127\.0\.0\.1|localhost|192\.168\.50\.\d{1,3}):\d{2,5}\/posta\/api\/$/.test(q)) POSTA = q;
+    } catch (e) {}
+  })();
+  var gettonePosta = null;
+  try { gettonePosta = sessionStorage.getItem("nb-posta-gettone"); } catch (e) {}
+  var TIPI_MAIL = { pec: ["Certificata", "ok"], anomalia: ["Non certificata", ""], ricevuta: ["Ricevuta PEC", ""],
+                    rimbalzo: ["Non consegnata", "ko"], automatica: ["Risposta automatica", ""], avviso: ["Avviso del gestore", ""] };
+  var ESITI_POSTA = { pubblicato: ["Pubblicato sul sito", "ok"], gia_nel_sito: ["Era già sul sito", "info"],
+                      scartato: ["Non pubblicato", "ko"], in_lavorazione: ["In lavorazione", "info"] };
+
+  function postaEntra() {
+    if (!chiaveGrezza) return Promise.reject(new Error("serve la parola d'ordine delle statistiche"));
+    return fetch(POSTA + "entra", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ chiave: chiaveGrezza }) })
+      .then(function (r) { return r.json().then(function (j) { if (!r.ok) throw new Error(j.errore || "errore " + r.status); return j; }); })
+      .then(function (j) { gettonePosta = j.gettone; try { sessionStorage.setItem("nb-posta-gettone", j.gettone); } catch (e) {} });
+  }
+  // una richiesta al Pi; se il gettone è scaduto (o il Pi è ripartito) si rientra da soli una volta
+  function postaChiedi(percorso, comeBlob) {
+    function prova() { return fetch(POSTA + percorso, { headers: { Authorization: "Bearer " + gettonePosta }, cache: "no-store" }); }
+    return (gettonePosta ? prova() : postaEntra().then(prova)).then(function (r) {
+      return r.status === 401 ? postaEntra().then(prova) : r;
+    }).then(function (r) {
+      if (!r.ok) return r.json().catch(function () { return {}; }).then(function (j) { throw new Error(j.errore || "errore " + r.status); });
+      return comeBlob ? r.blob() : r.json();
+    }, function (e) {
+      if (e instanceof TypeError) throw new Error("Il Pi di casa non risponde da fuori. Se la connessione di casa è sulla linea di riserva, la posta torna quando rientra la fibra.");
+      throw e;
+    });
+  }
+  function quandoPosta(iso, lungo) {
+    if (!iso) return "";
+    var d = new Date(iso), oggi = new Date(), tz = { timeZone: "Europe/Rome" };
+    if (lungo) return d.toLocaleString("it-IT", { timeZone: "Europe/Rome", weekday: "long", day: "numeric", month: "long", year: "numeric", hour: "2-digit", minute: "2-digit" });
+    function giorno(x) { return x.toLocaleDateString("it-IT", tz); }
+    var ora = d.toLocaleTimeString("it-IT", { timeZone: "Europe/Rome", hour: "2-digit", minute: "2-digit" });
+    if (giorno(d) === giorno(oggi)) return ora;
+    if (giorno(d) === giorno(new Date(oggi.getTime() - 864e5))) return "ieri " + ora;
+    if (d.getFullYear() === oggi.getFullYear()) return d.toLocaleDateString("it-IT", { timeZone: "Europe/Rome", day: "numeric", month: "short" });
+    return d.toLocaleDateString("it-IT", { timeZone: "Europe/Rome", day: "2-digit", month: "2-digit", year: "numeric" });
+  }
+  function peso(n) { return n < 1024 ? n + " byte" : n < 1048576 ? Math.round(n / 1024) + " KB" : (n / 1048576).toFixed(1).replace(".", ",") + " MB"; }
+  function etichetta(casella, nomi) { return el("span", "et et-" + casella, nomi[casella] || casella); }
+  // il testo semplice con i link cliccabili (senza innerHTML)
+  function testoConLink(testo) {
+    var pre = el("pre", "corpo-testo"), re = /(https?:\/\/[^\s<>"']+[^\s<>"'.,;:!?)\]])|([\w.+-]+@[\w-]+(\.[\w-]+)+)/g, ultimo = 0, x;
+    while ((x = re.exec(testo))) {
+      pre.appendChild(document.createTextNode(testo.slice(ultimo, x.index)));
+      var a = el("a", "", x[0]);
+      a.href = x[1] ? x[1] : "mailto:" + x[0]; a.target = "_blank"; a.rel = "noopener noreferrer";
+      pre.appendChild(a); ultimo = x.index + x[0].length;
+    }
+    pre.appendChild(document.createTextNode(testo.slice(ultimo)));
+    return pre;
+  }
+  function scaricaBlob(blob, nome) {
+    var u = URL.createObjectURL(blob), a = el("a");
+    a.href = u; a.download = nome; document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function () { URL.revokeObjectURL(u); }, 60000);
+  }
+  // un allegato a tutto schermo: immagine, PDF o testo (dei .docx e .odt); si chiude con «Chiudi», Esc o fuori
+  function vistaAllegato(nome, blob, come) {
+    var v = el("div", "vista-allegato"), b = el("div", "barra"), dentro = el("div", "dentro"), url = null;
+    b.appendChild(el("span", "nome", nome));
+    var sc = el("button", "bottone", "Scarica"); sc.type = "button";
+    sc.addEventListener("click", function () { scaricaBlob(blob, come === "testo" ? nome.replace(/(\.txt)?$/, ".txt") : nome); });
+    var ch = el("button", "bottone", "Chiudi"); ch.type = "button";
+    b.appendChild(sc); b.appendChild(ch); v.appendChild(b); v.appendChild(dentro);
+    function chiudi() { if (url) URL.revokeObjectURL(url); v.remove(); document.removeEventListener("keydown", esc); }
+    function esc(e) { if (e.key === "Escape") chiudi(); }
+    ch.addEventListener("click", chiudi);
+    v.addEventListener("click", function (e) { if (e.target === v || e.target === dentro) chiudi(); });
+    document.addEventListener("keydown", esc);
+    if (come === "testo") {
+      blob.text().then(function (t) { dentro.appendChild(el("pre", "", t)); });
+    } else {
+      url = URL.createObjectURL(come === "pdf" ? new Blob([blob], { type: "application/pdf" }) : blob);
+      var x = el(come === "pdf" ? "iframe" : "img");
+      x.src = url; if (come === "pdf") x.title = nome; else x.alt = nome;
+      dentro.appendChild(x);
+    }
+    document.body.appendChild(v);
+    ch.focus();
+  }
+
+  function disegnaPosta(box) {
+    var S = { casella: "tutte", cartella: "inbox", cerca: "", ricevute: false, nonLette: false, da: 0,
+              messaggi: [], altri: false, scelto: null, caselle: [], nomi: {} };
+    try {
+      var sv = JSON.parse(localStorage.getItem("nb-posta-scelte") || "{}");
+      if (sv.casella) S.casella = sv.casella;
+      S.ricevute = !!sv.ricevute;
+    } catch (e) {}
+    function ricorda() { try { localStorage.setItem("nb-posta-scelte", JSON.stringify({ casella: S.casella, ricevute: S.ricevute })); } catch (e) {} }
+
+    box.textContent = "";
+    box.appendChild(el("h2", "", "Posta"));
+    box.appendChild(el("p", "sotto", "Le caselle del sito, in sola lettura: qui si leggono, ma non si segna niente come letto e non si manda niente. " +
+      "Le legge in diretta il Pi di casa: le mail non passano dal sito."));
+    var barra = el("div", "posta-barra"), caselleBox = el("div", "caselle"), cartelleBox = el("div", "cartelle");
+    var cerca = el("input", "posta-cerca"); cerca.type = "search"; cerca.placeholder = "Cerca mittente, oggetto, testo…";
+    cerca.setAttribute("aria-label", "Cerca nella posta");
+    var scelte = el("div", "posta-scelte");
+    function spunta(testo, chiave) {
+      var l = el("label"), c = el("input"); c.type = "checkbox"; c.checked = S[chiave];
+      c.addEventListener("change", function () { S[chiave] = c.checked; ricorda(); carica(); });
+      l.appendChild(c); l.appendChild(document.createTextNode(testo)); return l;
+    }
+    scelte.appendChild(spunta("Solo non lette", "nonLette"));
+    scelte.appendChild(spunta("Mostra le ricevute PEC", "ricevute"));
+    var aggiorna = el("button", "bottone", "Aggiorna"); aggiorna.type = "button";
+    aggiorna.addEventListener("click", function () { caricaCaselle(); carica(); });
+    scelte.appendChild(aggiorna);
+    barra.appendChild(caselleBox); barra.appendChild(cartelleBox); barra.appendChild(cerca); barra.appendChild(scelte);
+    box.appendChild(barra);
+    var avvisi = el("div");
+    box.appendChild(avvisi);
+    var corpo = el("div", "posta-corpo"), elenco = el("div", "posta-elenco"), lettura = el("div", "posta-lettura lettura");
+    corpo.appendChild(elenco); corpo.appendChild(lettura); box.appendChild(corpo);
+    box.appendChild(el("p", "posta-nota", "PEC = notiziebenevento@pec.it · Redazione = redazione@notiziebenevento.it · Comunicati = comunicati@notiziebenevento.it. " +
+      "Le ricevute di accettazione e consegna delle PEC mandate sono nascoste, si vedono con «Mostra le ricevute PEC»."));
+    function vuotaLettura() {
+      lettura.textContent = "";
+      lettura.appendChild(el("p", "vuoto", "Scegli un messaggio dall'elenco."));
+      corpo.classList.remove("legge");
+    }
+    vuotaLettura();
+
+    // --- caselle e cartelle ---
+    function disegnaFiltri() {
+      caselleBox.textContent = ""; cartelleBox.textContent = "";
+      var totNonLette = 0;
+      S.caselle.forEach(function (c) { (c.cartelle || []).forEach(function (f) { if (f.id === "inbox") totNonLette += f.non_lette || 0; }); });
+      function bottone(id, testo, colore, conta, disattivo, titolo) {
+        var b = el("button"); b.type = "button";
+        if (colore) { var p = el("span", "pallino"); p.style.background = colore; b.appendChild(p); }
+        b.appendChild(document.createTextNode(testo));
+        if (conta) b.appendChild(el("span", "conta", String(conta)));
+        if (S.casella === id) b.classList.add("attiva");
+        if (disattivo) b.disabled = true;
+        if (titolo) b.title = titolo;
+        b.addEventListener("click", function () { S.casella = id; S.scelto = null; vuotaLettura(); ricorda(); disegnaFiltri(); carica(); });
+        caselleBox.appendChild(b);
+      }
+      bottone("tutte", "Tutte", "", totNonLette);
+      var COLORI = { pec: "var(--verde)", redazione: "var(--blu)", comunicati: "var(--rosso)" };
+      S.caselle.forEach(function (c) {
+        var nl = 0; (c.cartelle || []).forEach(function (f) { if (f.id === "inbox") nl = f.non_lette || 0; });
+        bottone(c.id, c.nome, COLORI[c.id], nl, !c.collegata, c.collegata ? c.indirizzo : c.indirizzo + ": non ancora collegata al Pi");
+      });
+      var presenti = {};
+      S.caselle.forEach(function (c) { if (S.casella === "tutte" || S.casella === c.id) (c.cartelle || []).forEach(function (f) { presenti[f.id] = f.nome; }); });
+      [["inbox", "In arrivo"], ["sent", "Inviati"], ["spam", "Spam"], ["trash", "Cestino"]].forEach(function (f) {
+        if (!presenti[f[0]] && f[0] !== "inbox") return;
+        var b = el("button", S.cartella === f[0] ? "attiva" : "", f[1]); b.type = "button";
+        b.addEventListener("click", function () { S.cartella = f[0]; S.scelto = null; vuotaLettura(); disegnaFiltri(); carica(); });
+        cartelleBox.appendChild(b);
+      });
+    }
+    function caricaCaselle() {
+      return postaChiedi("caselle").then(function (d) {
+        S.caselle = d.caselle || [];
+        S.nomi = {}; S.caselle.forEach(function (c) { S.nomi[c.id] = c.nome; });
+        if (S.casella !== "tutte" && !S.caselle.some(function (c) { return c.id === S.casella && c.collegata; })) S.casella = "tutte";
+        disegnaFiltri();
+        avvisi.textContent = "";
+        S.caselle.forEach(function (c) {
+          if (!c.collegata) avvisi.appendChild(el("div", "riquadretto info", c.indirizzo + " non è ancora collegata al Pi: per leggerla qui serve la sua password sul Pi."));
+          else if (c.errore) avvisi.appendChild(el("div", "riquadretto ko", c.nome + ": la casella " + c.errore + "."));
+        });
+      });
+    }
+
+    // --- l'elenco ---
+    var giro = 0;
+    function carica(altri) {
+      var mio = ++giro;
+      if (!altri) { S.da = 0; elenco.textContent = ""; elenco.appendChild(el("p", "vuoto", "Leggo la posta…")); elenco.firstChild.style.padding = "12px 16px"; }
+      var q = "messaggi?casella=" + encodeURIComponent(S.casella) + "&cartella=" + S.cartella + "&da=" + S.da +
+              "&cerca=" + encodeURIComponent(S.cerca) + (S.ricevute ? "&ricevute=1" : "") + (S.nonLette ? "&non_lette=1" : "");
+      return postaChiedi(q).then(function (d) {
+        if (mio !== giro) return;
+        S.messaggi = altri ? S.messaggi.concat(d.messaggi) : d.messaggi;
+        S.altri = d.altri;
+        disegnaElenco(d);
+      }).catch(function (e) {
+        if (mio !== giro) return;
+        elenco.textContent = "";
+        var a = el("div", "riquadretto ko", e.message); a.style.margin = "12px";
+        var r = el("button", "bottone", "Riprova"); r.type = "button"; r.style.marginLeft = "8px";
+        r.addEventListener("click", function () { caricaCaselle().catch(function () {}); carica(); });
+        a.appendChild(r); elenco.appendChild(a);
+      });
+    }
+    function disegnaElenco(d) {
+      elenco.textContent = "";
+      Object.keys(d.errori || {}).forEach(function (c) {
+        var a = el("div", "riquadretto ko", (S.nomi[c] || c) + " non risponde: " + d.errori[c]); a.style.margin = "10px";
+        elenco.appendChild(a);
+      });
+      var nascoste = d.ricevute_nascoste ? (d.ricevute_nascoste === 1 ? "1 ricevuta PEC nascosta" : d.ricevute_nascoste + " ricevute PEC nascoste") +
+                     ": si vedono con «Mostra le ricevute PEC»." : "";
+      if (!S.messaggi.length) {
+        var v = el("p", "vuoto", (S.cerca ? "Nessun messaggio con «" + S.cerca + "»." : S.nonLette ? "Nessun messaggio da leggere." : "Nessun messaggio.") +
+                                 (nascoste ? " " + nascoste : ""));
+        v.style.padding = "12px 16px"; elenco.appendChild(v); return;
+      }
+      S.messaggi.forEach(function (r) {
+        var b = el("button", "mail" + (r.letto ? "" : " nuova")); b.type = "button";
+        if (S.scelto && S.scelto.casella === r.casella && S.scelto.cartella === r.cartella && S.scelto.uid === r.uid) b.classList.add("scelta");
+        var r1 = el("span", "r1");
+        r1.appendChild(etichetta(r.casella, S.nomi));
+        var inviati = S.cartella === "sent";
+        r1.appendChild(el("span", "chi", inviati ? "A: " + (r.a || []).join(", ") : (r.da_nome || r.da || "(senza mittente)")));
+        r1.appendChild(el("span", "ora", quandoPosta(r.data)));
+        b.appendChild(r1);
+        b.appendChild(el("span", "ogg", r.oggetto));
+        if (r.anteprima) b.appendChild(el("span", "ant", r.anteprima));
+        var bolli = el("span", "bolli"), t = TIPI_MAIL[r.tipo], es = r.comunicato && ESITI_POSTA[r.comunicato.esito];
+        if (t) bolli.appendChild(el("span", "bollo " + t[1], t[0]));
+        if (es) bolli.appendChild(el("span", "bollo " + es[1], es[0]));
+        if (r.allegati) bolli.appendChild(el("span", "bollo", "📎 " + (r.allegati === 1 ? "1 allegato" : r.allegati + " allegati")));
+        if (bolli.children.length) b.appendChild(bolli);
+        b.addEventListener("click", function () {
+          [].forEach.call(elenco.querySelectorAll(".mail.scelta"), function (x) { x.classList.remove("scelta"); });
+          b.classList.add("scelta");
+          apri(r);
+        });
+        elenco.appendChild(b);
+      });
+      if (nascoste && !S.altri) { var nn = el("p", "vuoto", nascoste); nn.style.padding = "10px 16px"; nn.style.fontSize = "13px"; elenco.appendChild(nn); }
+      if (S.altri) {
+        var al = el("button", "altri", "Mostra altri messaggi"); al.type = "button";
+        al.addEventListener("click", function () { al.disabled = true; al.textContent = "Leggo…"; S.da += 50; carica(true); });
+        elenco.appendChild(al);
+      }
+    }
+
+    // --- la lettura ---
+    function apri(r) {
+      S.scelto = { casella: r.casella, cartella: r.cartella, uid: r.uid };
+      corpo.classList.add("legge");
+      lettura.textContent = "";
+      lettura.appendChild(el("p", "vuoto", "Apro il messaggio…"));
+      if (window.matchMedia("(max-width: 899px)").matches) corpo.scrollIntoView({ block: "start" });
+      var base = "casella=" + r.casella + "&cartella=" + r.cartella + "&uid=" + r.uid;
+      postaChiedi("messaggio?" + base).then(function (m) {
+        if (!S.scelto || S.scelto.uid !== r.uid || S.scelto.casella !== r.casella) return;
+        mostra(m, base);
+      }).catch(function (e) {
+        lettura.textContent = "";
+        lettura.appendChild(el("div", "riquadretto ko", e.message));
+      });
+    }
+    function mostra(m, base) {
+      lettura.textContent = "";
+      var az = el("div", "riga-azioni");
+      var torna = el("button", "bottone solo-telefono", "← Elenco"); torna.type = "button";
+      torna.addEventListener("click", function () { S.scelto = null; vuotaLettura(); });
+      az.appendChild(torna);
+      az.appendChild(etichetta(m.casella, S.nomi));
+      var t = TIPI_MAIL[m.tipo];
+      if (t) az.appendChild(el("span", "bollo " + t[1], t[0]));
+      var casella = S.caselle.filter(function (c) { return c.id === m.casella; })[0];
+      if (casella && casella.webmail) {
+        var wm = el("a", "bottone", "Apri nella webmail ↗"); wm.href = casella.webmail; wm.target = "_blank"; wm.rel = "noopener";
+        wm.style.marginLeft = "auto"; az.appendChild(wm);
+      }
+      lettura.appendChild(az);
+      lettura.appendChild(el("h3", "oggetto", m.oggetto));
+      var it = el("div", "intest");
+      function riga(et, val) { if (!val) return; var d = el("div"); d.appendChild(el("b", "", et + " ")); d.appendChild(document.createTextNode(val)); it.appendChild(d); }
+      riga("Da", m.da_nome ? m.da_nome + " <" + m.da + ">" : m.da);
+      riga("A", (m.a || []).map(function (x) { return x[0] ? x[0] + " <" + x[1] + ">" : x[1]; }).join(", "));
+      riga("Quando", quandoPosta(m.data, true));
+      lettura.appendChild(it);
+
+      // cosa ne ha fatto il sito (i comunicati) e la busta della PEC
+      var c = m.comunicato;
+      if (c && ESITI_POSTA[c.esito]) {
+        var rq = el("div", "riquadretto " + ESITI_POSTA[c.esito][1]);
+        rq.appendChild(el("b", "", ESITI_POSTA[c.esito][0]));
+        if (c.esito === "in_lavorazione") rq.appendChild(document.createTextNode(": il giro lampo lo sta scrivendo adesso."));
+        else if (c.esito === "scartato") rq.appendChild(document.createTextNode(" dal giro lampo" + (c.quando ? " (" + quandoPosta(c.quando) + ")" : "") + ": il motivo è nel resoconto del giro."));
+        else if (c.quando) rq.appendChild(document.createTextNode(" — " + quandoPosta(c.quando)));
+        if (c.url) { rq.appendChild(document.createTextNode(" · ")); var l = el("a", "", "leggi la notizia ↗"); l.href = c.url; l.target = "_blank"; l.rel = "noopener"; rq.appendChild(l); }
+        lettura.appendChild(rq);
+      }
+      if (m.busta) {
+        var bt = m.tipo === "pec" ? "Posta certificata: il mittente è garantito dal suo gestore PEC." :
+                 m.tipo === "anomalia" ? "Arrivata alla PEC da una casella normale (non certificata): il mittente non è garantito." :
+                 m.busta.ricevuta ? "Ricevuta del gestore PEC (" + m.busta.ricevuta.replace(/-/g, " ") + ")." : "";
+        if (bt) lettura.appendChild(el("div", "riquadretto " + (m.tipo === "pec" ? "ok" : "info"), bt));
+      }
+
+      // gli allegati
+      var visibili = (m.allegati || []).filter(function (a) { return !a.nel_testo; });
+      if (visibili.length) {
+        var ab = el("div", "allegati");
+        visibili.forEach(function (a) {
+          var x = el("div", "allegato"), n = el("div", "nome", "📎 " + a.nome + " ");
+          n.appendChild(el("span", "dim", peso(a.dim))); x.appendChild(n);
+          var azioni = el("div", "azioni");
+          var errore = el("div", "errore"); errore.style.minHeight = "0"; errore.style.margin = "0";
+          function bott(testo, fare) {
+            var b = el("button", "bottone", testo); b.type = "button";
+            b.addEventListener("click", function () {
+              b.disabled = true; errore.textContent = "";
+              fare().catch(function (e) { errore.textContent = e.message; }).then(function () { b.disabled = false; });
+            });
+            azioni.appendChild(b);
+          }
+          var url = "allegato?" + base + "&n=" + a.n;
+          if (a.vedi === "immagine" || a.vedi === "pdf") bott("Apri", function () { return postaChiedi(url, true).then(function (bl) { vistaAllegato(a.nome, bl, a.vedi); }); });
+          if (a.vedi === "p7m") bott("Apri il documento firmato", function () {
+            var dentro = a.nome.replace(/\.p7m$/i, ""), tipo = /\.pdf$/i.test(dentro) ? "pdf" : /\.(jpe?g|png|gif|webp)$/i.test(dentro) ? "immagine" : /\.(docx|odt)$/i.test(dentro) ? "testo" : "";
+            return postaChiedi(url + "&dentro=1" + (tipo === "testo" ? "&testo=1" : ""), true).then(function (bl) {
+              if (tipo) vistaAllegato(dentro, bl, tipo); else scaricaBlob(bl, dentro);
+            });
+          });
+          if (a.testo) bott("Leggi il testo", function () { return postaChiedi(url + "&testo=1", true).then(function (bl) { vistaAllegato(a.nome, bl, "testo"); }); });
+          bott("Scarica", function () { return postaChiedi(url, true).then(function (bl) { scaricaBlob(bl, a.nome); }); });
+          x.appendChild(azioni); x.appendChild(errore); ab.appendChild(x);
+        });
+        lettura.appendChild(ab);
+      }
+
+      // il testo: l'originale (HTML, nel riquadro chiuso) o il testo semplice
+      var dove = el("div");
+      var remote = /<img[^>]+src\s*=\s*["']?\s*https?:|url\(\s*["']?\s*https?:|background\s*=\s*["']?\s*https?:/i.test(m.html || "");
+      var stato = { html: !!m.html, immagini: false };
+      function disegnaCorpo() {
+        dove.textContent = "";
+        if (stato.html) {
+          var csp = "default-src 'none'; style-src 'unsafe-inline'; font-src data:; img-src data:" + (stato.immagini ? " https: http:" : "");
+          var f = el("iframe", "corpo-html");
+          f.setAttribute("sandbox", "allow-popups allow-popups-to-escape-sandbox");
+          f.setAttribute("referrerpolicy", "no-referrer");
+          f.title = "Testo della mail";
+          f.srcdoc = '<!doctype html><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="' + csp + '">' +
+            '<base target="_blank"><style>body{font:15px/1.5 -apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#111;margin:14px;overflow-wrap:anywhere}img{max-width:100%;height:auto}table{max-width:100%}</style>' + m.html;
+          dove.appendChild(f);
+        } else {
+          dove.appendChild(testoConLink(m.testo || "(messaggio senza testo)"));
+        }
+      }
+      if (m.html) {
+        var sc = el("div", "riga-azioni");
+        var bo = el("button", "bottone attiva", "Originale"), bt2 = el("button", "bottone", "Solo testo");
+        bo.type = bt2.type = "button";
+        bo.addEventListener("click", function () { stato.html = true; bo.classList.add("attiva"); bt2.classList.remove("attiva"); disegnaCorpo(); });
+        bt2.addEventListener("click", function () { stato.html = false; bt2.classList.add("attiva"); bo.classList.remove("attiva"); disegnaCorpo(); });
+        sc.appendChild(bo); sc.appendChild(bt2);
+        if (!m.testo) bt2.disabled = true;
+        if (remote) {
+          var im = el("button", "bottone", "Mostra le immagini da internet"); im.type = "button";
+          im.addEventListener("click", function () { stato.immagini = true; stato.html = true; im.remove(); bo.classList.add("attiva"); bt2.classList.remove("attiva"); disegnaCorpo(); });
+          sc.appendChild(im);
+        }
+        lettura.appendChild(sc);
+      }
+      lettura.appendChild(dove);
+      disegnaCorpo();
+    }
+
+    var attesa;
+    cerca.addEventListener("input", function () {
+      clearTimeout(attesa);
+      attesa = setTimeout(function () { S.cerca = cerca.value.trim(); carica(); }, 350);
+    });
+    // si aggiorna da sola ogni minuto, se la scheda è aperta e la pagina si vede (l'elenco, non il messaggio aperto)
+    if (box.giroPosta) clearInterval(box.giroPosta);
+    box.giroPosta = setInterval(function () {
+      if (box.hidden || document.visibilityState !== "visible" || S.da > 0) return;
+      caricaCaselle().catch(function () {});
+      postaChiedi("messaggi?casella=" + encodeURIComponent(S.casella) + "&cartella=" + S.cartella + "&cerca=" + encodeURIComponent(S.cerca) +
+                  (S.ricevute ? "&ricevute=1" : "") + (S.nonLette ? "&non_lette=1" : "")).then(function (d) {
+        var sopra = elenco.scrollTop;
+        S.messaggi = d.messaggi; S.altri = d.altri; disegnaElenco(d); elenco.scrollTop = sopra;
+      }).catch(function () {});
+    }, 60000);
+
+    caricaCaselle().then(function () { carica(); }, function (e) {
+      elenco.textContent = "";
+      var a = el("div", "riquadretto ko", e.message); a.style.margin = "12px";
+      var r = el("button", "bottone", "Riprova"); r.type = "button"; r.style.marginLeft = "8px";
+      r.addEventListener("click", function () { disegnaPosta(box); });
+      a.appendChild(r); elenco.appendChild(a);
+    });
+  }
+
   // ---------- avvio ----------
   fetch("dati.json?t=" + Date.now(), { cache: "no-store" })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
@@ -984,7 +1464,7 @@
       var salvata = leggiSalvata();
       if (!salvata) { mostraLucchetto(); return; }
       crypto.subtle.importKey("raw", b64(salvata), { name: "AES-GCM" }, true, ["decrypt"])
-        .then(apriCon).then(disegna)
+        .then(apriCon).then(function (dati) { chiaveGrezza = salvata; disegna(dati); })
         .catch(function () { salva(null); mostraLucchetto("La parola d'ordine è cambiata: scrivi quella nuova."); });
     })
     .catch(function () {
