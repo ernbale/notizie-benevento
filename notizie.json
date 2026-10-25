@@ -1,7 +1,150 @@
 {
- "aggiornato": "2026-10-25T19:08+01:00",
+ "aggiornato": "2026-10-25T20:09+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "paolisi-sportello-tributi-chiuso-26-ottobre",
+   "titolo": "Paolisi, lunedì 26 ottobre chiuso lo sportello del concessionario dei tributi",
+   "titolo_google": "Paolisi, sportello dei tributi chiuso lunedì 26 ottobre",
+   "sintesi": "A Paolisi lunedì 26 ottobre lo sportello del concessionario, che si occupa della riscossione delle tasse comunali, resta chiuso. Lo comunica l'Ufficio Tributi del Comune.",
+   "categoria": "altro",
+   "zona": "caudina",
+   "luogo": "Paolisi",
+   "immagine": "sportello",
+   "pubblicato": "2026-10-25",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "in_vigore_fino": "2026-10-26",
+   "fonti": [
+    {
+     "nome": "Comune di Paolisi",
+     "url": "https://comune.paolisi.bn.it/novita/sportello-concessionario-2/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Paolisi, in Valle Caudina, lunedì 26 ottobre resta chiuso lo sportello del concessionario, la società che per conto del Comune si occupa della riscossione delle tasse comunali. Lo ha comunicato l'Ufficio Tributi con un avviso pubblicato domenica 25 ottobre sul sito del Comune.",
+      "fonti": [
+       "Comune di Paolisi"
+      ]
+     },
+     {
+      "testo": "L'avviso non dice il motivo della chiusura né indica un giorno di recupero: per pratiche e pagamenti conviene rivolgersi all'Ufficio Tributi del Comune.",
+      "fonti": [
+       "Comune di Paolisi"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Perché lo sportello resta chiuso e quando riapre."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Paolisi",
+      "titolo": "sportello concessionario",
+      "url": "https://comune.paolisi.bn.it/novita/sportello-concessionario-2/",
+      "data": "25 ott"
+     }
+    ]
+   },
+   "foto": "sportello"
+  },
+  {
+   "id": "linea-18-bn-air-campania-sanzione-regione-pendolari",
+   "titolo": "Bus 18-BN Pietraroja-Cerreto-Benevento, la Regione multa AIR Campania per 14.800 euro dopo la fermata saltata a Santa Colomba",
+   "titolo_google": "Linea 18-BN, la Regione multa AIR Campania per 14.800 euro",
+   "sintesi": "La Regione Campania ha contestato ad AIR Campania irregolarità sulla linea di bus 18-BN Pietraroja-Cerreto Sannita-Benevento, con sanzioni e penali per 14.800 euro. Lo raccontano i pendolari, che ora hanno ottenuto dal Difensore civico regionale 30 giorni per vedere i documenti della linea.",
+   "categoria": "altro",
+   "zona": "telesina",
+   "luogo": "Cerreto Sannita e Benevento",
+   "immagine": "autobus",
+   "pubblicato": "2026-10-25T19:12:55+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/25/linea-18-bn-cusano-benevento-i-pendolari-dopo-la-sanzione-arriva-lultimatum-di-30-giorni-sugli-atti/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "La Regione Campania ha multato AIR Campania, la società dei bus extraurbani, per la linea 18-BN che collega Pietraroja, Cerreto Sannita e Benevento. Le sanzioni e le penali previste dal contratto arrivano a 14.800 euro. Lo raccontano i pendolari della linea, che da mesi contestano all'azienda come è stato gestito il servizio.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Tutto parte dall'estate: dall'8 al 21 giugno 2026 la corsa delle 6.10 non è più arrivata fino al Terminal Santa Colomba di Benevento e la fermata è stata soppressa. Secondo i pendolari gli orari pubblicati da AIR davano quella fermata valida tutto l'anno, senza eccezioni per i mesi estivi, e il cambio ha penalizzato lavoratori e viaggiatori.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Con una nota del 18 settembre la Direzione Mobilità della Regione ha contestato all'azienda le irregolarità di quelle due settimane: 9.800 euro per aver cambiato il programma delle corse senza autorizzazione e 5.000 euro per le informazioni mancanti o sbagliate date ai passeggeri, un problema che secondo la Regione si era ripetuto anche negli anni prima.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "C'è poi la questione dei documenti. I pendolari avevano chiesto di vedere gli atti e gli orari storici della linea e dicono di aver ricevuto risposte generiche. Il 20 ottobre il Difensore civico della Regione Campania, l'ufficio che tutela i cittadini nei rapporti con gli enti pubblici, ha dato ad AIR 30 giorni per mostrare i documenti sulla linea 18-BN e sulla fermata di Santa Colomba, oppure per spiegare per iscritto, una per una, quali ricerche ha fatto se non li trova.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "I pendolari annunciano anche un esposto alla Procura della Repubblica di Benevento e alla Procura regionale della Corte dei Conti.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "8-21 giugno",
+      "quando": "2026-06-08",
+      "fatto": "La corsa delle 6.10 della linea 18-BN non arriva più al Terminal Santa Colomba di Benevento.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "data": "18 settembre",
+      "fatto": "La Regione contesta le irregolarità ad AIR Campania: sanzioni e penali per 14.800 euro.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "data": "20 ottobre",
+      "fatto": "Il Difensore civico regionale dà ad AIR 30 giorni per mostrare i documenti della linea.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Cosa risponde AIR Campania alle contestazioni della Regione e dei pendolari.",
+     "Se la corsa delle 6.10 oggi arriva di nuovo a Santa Colomba."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Linea 18-BN Cusano-Benevento, i pendolari: ‘Dopo la sanzione arriva l’ultimatum di 30 giorni sugli atti’",
+      "url": "https://www.ntr24.tv/2026/10/25/linea-18-bn-cusano-benevento-i-pendolari-dopo-la-sanzione-arriva-lultimatum-di-30-giorni-sugli-atti/",
+      "data": "25 ott, 19:12"
+     }
+    ]
+   },
+   "foto": "autobus-12"
+  },
   {
    "id": "fragneto-monforte-takkarata-tournee-brasile-festival-cariri",
    "titolo": "Fragneto Monforte, il gruppo folk La Takkarata in tournée in Brasile dal 29 ottobre al 15 novembre",
@@ -5314,13 +5457,13 @@
   },
   {
    "id": "benevento-opposizione-mozione-sfiducia-mastella",
-   "titolo": "Benevento, l'opposizione presenta la mozione di sfiducia contro il sindaco Mastella e chiama la città in piazza domenica",
-   "titolo_google": "Benevento, mozione di sfiducia contro Mastella: 24 punti",
-   "sintesi": "I consiglieri di opposizione di Benevento hanno presentato giovedì 22 ottobre una mozione di sfiducia contro il sindaco Clemente Mastella e la Giunta, con un dossier di 24 punti. Domenica 25 sera manifestazione in corso Garibaldi.",
+   "titolo": "Benevento, l'opposizione presenta la mozione di sfiducia contro il sindaco Mastella e sfila in corteo in corso Garibaldi",
+   "titolo_google": "Benevento, sfiducia a Mastella: corteo in corso Garibaldi",
+   "sintesi": "I consiglieri di opposizione di Benevento hanno presentato giovedì 22 ottobre una mozione di sfiducia contro il sindaco Clemente Mastella e la Giunta, con un dossier di 24 punti. Domenica 25 sera hanno sfilato in corteo lungo corso Garibaldi fino alla Prefettura; il sindaco dice che non si dimette.",
    "categoria": "politica",
    "zona": "benevento",
    "luogo": "Benevento",
-   "pubblicato": "2026-10-23T11:41:00+02:00",
+   "pubblicato": "2026-10-25T19:51:17+01:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
@@ -5333,10 +5476,6 @@
      "url": "https://www.ntr24.tv/2026/10/22/benevento-lopposizione-presenta-dossier-in-24-punti-e-chiede-la-fine-dellamministrazione-mastella/"
     },
     {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/apb-attacco-a-mastella-una-mozione-di-sfiducia-contro-la-giunta/"
-    },
-    {
      "nome": "Cronache del Sannio",
      "url": "https://www.cronachedelsannio.it/sannionews24/sfiduciamo-mastella-opposizione-chiama-piazza/"
     },
@@ -5347,10 +5486,28 @@
     {
      "nome": "NTR24 (23/10)",
      "url": "https://www.ntr24.tv/2026/10/23/mastella-replica-allopposizione-dimissioni-vado-avanti-fino-al-prossimo-anno-perdera-anche-alle-prossime-elezioni/"
+    },
+    {
+     "nome": "Anteprima24 (25/10)",
+     "url": "https://www.anteprima24.it/benevento/benevento-protesta-opposizioni-corso-garibaldi/"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Domenica 25 ottobre, in serata, l'opposizione ha sfilato in corteo lungo corso Garibaldi, dalla Biblioteca provinciale alla Prefettura, con cartelli come «La città sfiducia Mastella» e la richiesta di dimissioni della Giunta. Hanno promosso la manifestazione Pd, Avs, Città Aperta, Civici e Riformisti e Civico 22; c'era anche l'ex parlamentare Umberto Del Basso De Caro.",
+      "fonti": [
+       "Anteprima24 (25/10)"
+      ],
+      "giorno": "2026-10-25"
+     },
+     {
+      "testo": "Durante il corteo i consiglieri Luigi Diego Perifano (Città Aperta), Angelo Moretti (Civico 22) e Francesco Farese (Pd) hanno chiesto al sindaco di fare un passo indietro e di lasciare il Comune a un commissario. Farese ha detto che l'opposizione porterà in Consiglio comunale il dossier di 24 punti, anche senza l'adesione degli altri consiglieri.",
+      "fonti": [
+       "Anteprima24 (25/10)"
+      ],
+      "giorno": "2026-10-25"
+     },
      {
       "testo": "Venerdì 23 ottobre il sindaco Clemente Mastella ha risposto all'opposizione: dice di non volersi dimettere e di voler andare avanti fino alle elezioni del prossimo anno. «Ho le mani pulite, pulitissime», ha detto, e ha aggiunto che valuterà se fare querele. Ha contestato anche i numeri della mensa scolastica (meno di 1.500 alunni, non 2.000) e ha definito i 24 punti del dossier «non le tavole di Mosè». Sulla manifestazione di domenica ha detto: «Anche se saranno 1.000 persone il 60% è con me».",
       "fonti": [
@@ -5388,7 +5545,7 @@
       "giorno": "2026-10-22"
      },
      {
-      "testo": "Domenica 25 ottobre, in serata, l'opposizione ha convocato una manifestazione aperta ai cittadini lungo corso Garibaldi, con partenza dalla Biblioteca provinciale e arrivo alla Prefettura. Anteprima24 scrive che altri sviluppi dell'inchiesta sono attesi a novembre. Il sindaco non ha ancora risposto alla mozione nelle fonti lette.",
+      "testo": "Domenica 25 ottobre, in serata, l'opposizione ha convocato una manifestazione aperta ai cittadini lungo corso Garibaldi, con partenza dalla Biblioteca provinciale e arrivo alla Prefettura. Anteprima24 scrive che altri sviluppi dell'inchiesta sono attesi a novembre.",
       "fonti": [
        "Ottopagine",
        "Cronache del Sannio",
@@ -5397,7 +5554,31 @@
       "giorno": "2026-10-22"
      }
     ],
-    "cronologia": [],
+    "cronologia": [
+     {
+      "data": "22 ottobre",
+      "fatto": "L'opposizione presenta la mozione di sfiducia con un dossier di 24 punti.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24"
+      ]
+     },
+     {
+      "data": "23 ottobre",
+      "fatto": "Il sindaco Mastella risponde: non si dimette e valuta querele.",
+      "fonti": [
+       "Ottopagine (23/10)",
+       "NTR24 (23/10)"
+      ]
+     },
+     {
+      "data": "25 ottobre, sera",
+      "fatto": "Corteo dell'opposizione in corso Garibaldi, dalla Biblioteca provinciale alla Prefettura.",
+      "fonti": [
+       "Anteprima24 (25/10)"
+      ]
+     }
+    ],
     "concordano": [
      {
       "testo": "La mozione ha 24 punti, è presentata dall'opposizione e domenica sera c'è una manifestazione in corso Garibaldi.",
@@ -5458,15 +5639,21 @@
       "titolo": "Mastella replica all’opposizione: ‘Dimissioni? Vado avanti fino al prossimo anno. Perderà anche alle prossime elezioni’",
       "url": "https://www.ntr24.tv/2026/10/23/mastella-replica-allopposizione-dimissioni-vado-avanti-fino-al-prossimo-anno-perdera-anche-alle-prossime-elezioni/",
       "data": "23 ott, 10:13"
+     },
+     {
+      "nome": "Anteprima24 (25/10)",
+      "titolo": "“La città sfiducia Mastella”: corteo a Benevento, le opposizioni chiedono un passo indietro",
+      "url": "https://www.anteprima24.it/benevento/benevento-protesta-opposizioni-corso-garibaldi/",
+      "data": "25 ott, 19:51"
      }
     ],
     "aggiornamento": {
-     "testo": "Venerdì 23 ottobre il sindaco Mastella ha risposto alla mozione di sfiducia: non si dimette, dice di avere «le mani pulite» e valuta querele.",
+     "testo": "Domenica sera l'opposizione ha sfilato in corteo lungo corso Garibaldi, dalla Biblioteca provinciale alla Prefettura, per chiedere le dimissioni del sindaco Mastella e della Giunta.",
      "fonti": [
-      "Ottopagine (23/10)",
-      "NTR24 (23/10)"
+      "Anteprima24 (25/10)"
      ],
-     "quando": "2026-10-23T12:11+02:00"
+     "quando": "2026-10-25T20:09+01:00",
+     "titolo_prima": "Benevento, l'opposizione presenta la mozione di sfiducia contro il sindaco Mastella e chiama la città in piazza domenica"
     }
    },
    "immagine": "consiglio",
