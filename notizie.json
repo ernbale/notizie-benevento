@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T09:10+01:00",
+ "aggiornato": "2026-10-25T10:10+01:00",
  "giornali_letti": 14,
  "notizie": [
   {
@@ -1831,13 +1831,13 @@
   },
   {
    "id": "benevento-corso-garibaldi-ragazza-aggredita-23-ottobre",
-   "titolo": "Benevento, ragazza colpita con uno schiaffo a Corso Garibaldi: la Polizia ha identificato il giovane",
-   "titolo_google": "Corso Garibaldi, ragazza aggredita: identificato il giovane",
-   "sintesi": "Venerdì 23 ottobre, verso le 20, una ragazza è stata colpita al volto da un giovane sul Corso Garibaldi, a Benevento. È stata portata in ambulanza al San Pio con ferite a viso e naso. Il giovane è stato identificato già venerdì sera; secondo Anteprima24 si va verso una denuncia a piede libero.",
+   "titolo": "Benevento, ragazza colpita a Corso Garibaldi: il giovane dà la sua versione in Questura, per ora nessuna denuncia",
+   "titolo_google": "Corso Garibaldi, ragazza colpita: il giovane va in Questura",
+   "sintesi": "Venerdì 23 ottobre sera una ragazza è stata colpita al volto da un giovane sul Corso Garibaldi, a Benevento, e portata al San Pio. Il giovane è stato identificato e domenica, scrive Ottopagine, ha dato in Questura la sua versione: una lite con la ragazza, sua ex. Senza la querela di lei, per ora non c'è denuncia.",
    "categoria": "cronaca",
    "zona": "benevento",
    "luogo": "Benevento, Corso Garibaldi",
-   "pubblicato": "2026-10-24T15:50:00+02:00",
+   "pubblicato": "2026-10-25T09:38:00+01:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
@@ -1892,10 +1892,28 @@
     {
      "nome": "TV7 Benevento (Benevento Domani)",
      "url": "https://www.tvsette.net/ragazza-aggredita-in-corso-garibaldi-sangue-in-strada-e-allarme-sicurezza-in-centro-benevento-domani-chiede-la-convocazione-urgente-del-comitato-provinciale-per-lordine-e-la-sicu/"
+    },
+    {
+     "nome": "Ottopagine (25/10)",
+     "url": "https://www.ottopagine.it/bn/cronaca/442099/siamo-stati-insieme-in-arabo-ha-insultato-me-e-mia-madre-che-e-morta.shtml"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Domenica 25 ottobre Ottopagine scrive che il giovane si è presentato in Questura con il suo avvocato e ha dato la sua versione. Secondo il suo racconto lui e la ragazza, che ha 18 anni, avevano avuto una relazione finita un mese fa; venerdì sera lei lo avrebbe offeso in arabo, insultando anche la madre morta da poco. Lui ammette di averle dato un calcio, «ma non violento»: lei si sarebbe alzata e lo avrebbe schiaffeggiato e graffiato, e lui l'avrebbe colpita a sua volta con lo schiaffo che l'ha fatta finire contro il muro.",
+      "fonti": [
+       "Ottopagine (25/10)"
+      ],
+      "giorno": "2026-10-25"
+     },
+     {
+      "testo": "Sempre secondo Ottopagine, i medici hanno dato alla ragazza 15 giorni di cure per le ferite al volto, e le immagini delle telecamere esaminate dagli agenti delle Volanti confermerebbero la ricostruzione del giovane. Per ora contro di lui non c'è nessuna denuncia, perché la ragazza non ha presentato querela.",
+      "fonti": [
+       "Ottopagine (25/10)"
+      ],
+      "giorno": "2026-10-25"
+     },
      {
       "testo": "Sabato 24 ottobre, nel pomeriggio, l'associazione civica Benevento Domani ha chiesto di convocare con urgenza in Prefettura il Comitato provinciale per l'ordine e la sicurezza pubblica. Per l'associazione l'aggressione non è «un episodio isolato» e non va ridotta a una semplice lite. Chiede più presenza di agenti nel centro la sera, più telecamere tra Corso Garibaldi, piazza Roma e piazza Bissolati e più illuminazione. È una richiesta dell'associazione: non risulta ancora nessuna decisione della Prefettura.",
       "fonti": [
@@ -1964,7 +1982,32 @@
       "giorno": "2026-10-23"
      }
     ],
-    "cronologia": [],
+    "cronologia": [
+     {
+      "data": "23 ottobre, sera",
+      "fatto": "La ragazza viene colpita sul Corso Garibaldi e portata al San Pio.",
+      "fonti": [
+       "NTR24",
+       "Ottopagine"
+      ]
+     },
+     {
+      "data": "24 ottobre",
+      "fatto": "Il giovane risulta identificato; il sindaco Mastella e Benevento Domani chiedono più controlli.",
+      "fonti": [
+       "Anteprima24 (24/10)",
+       "NTR24 (Mastella)",
+       "NTR24 (Benevento Domani)"
+      ]
+     },
+     {
+      "data": "25 ottobre",
+      "fatto": "Il giovane dà in Questura la sua versione; nessuna denuncia senza la querela della ragazza.",
+      "fonti": [
+       "Ottopagine (25/10)"
+      ]
+     }
+    ],
     "concordano": [
      {
       "testo": "La ragazza è stata colpita con uno schiaffo dopo che il giovane le aveva dato un calcio (o calcetto) perché si spostasse; il giovane è andato via con un altro ragazzo e la Polizia è intervenuta.",
@@ -2006,11 +2049,19 @@
        "Anteprima24",
        "Cronache del Sannio"
       ]
+     },
+     {
+      "testo": "L'età: BeneventoNews24 (23 ottobre) scriveva che la donna ferita ha 30 anni, Ottopagine (25 ottobre) scrive 18 anni. Il primo racconto di Ottopagine diceva che i due non sembravano conoscersi; quello del 25 riporta che, secondo il giovane, avevano avuto una relazione.",
+      "fonti": [
+       "BeneventoNews24",
+       "Ottopagine (25/10)",
+       "Ottopagine"
+      ]
      }
     ],
     "non_si_sa": [
-     "Le condizioni della ragazza dopo le cure al San Pio.",
-     "Se ci sarà davvero una denuncia e per quale fatto, e i motivi del gesto: la Polizia non ha diffuso comunicati."
+     "Se la ragazza presenterà querela e quale è la sua versione dei fatti.",
+     "Se la Polizia confermerà la ricostruzione: non ha diffuso comunicati."
     ],
     "fonti": [
      {
@@ -2090,15 +2141,21 @@
       "titolo": "Ragazza aggredita in Corso Garibaldi: sangue in strada e allarme sicurezza in centro. Benevento Domani chiede  la convocazione urgente del Comitato provinciale per l’Ordine e la Sicurezza Pubblica.",
       "url": "https://www.tvsette.net/ragazza-aggredita-in-corso-garibaldi-sangue-in-strada-e-allarme-sicurezza-in-centro-benevento-domani-chiede-la-convocazione-urgente-del-comitato-provinciale-per-lordine-e-la-sicu/",
       "data": "24 ott, 15:50"
+     },
+     {
+      "nome": "Ottopagine (25/10)",
+      "titolo": "Siamo stati insieme, in arabo ha insultato me e mia madre che è morta",
+      "url": "https://www.ottopagine.it/bn/cronaca/442099/siamo-stati-insieme-in-arabo-ha-insultato-me-e-mia-madre-che-e-morta.shtml",
+      "data": "25 ott, 09:38"
      }
     ],
     "aggiornamento": {
-     "testo": "Sabato 24 ottobre pomeriggio l'associazione Benevento Domani ha chiesto alla Prefettura di convocare con urgenza il Comitato per l'ordine e la sicurezza pubblica, con più presidi serali e telecamere in centro.",
+     "testo": "Domenica 25 ottobre Ottopagine scrive che il giovane ha dato in Questura la sua versione (una lite con la ragazza, sua ex): per ora nessuna denuncia, perché lei non ha presentato querela.",
      "fonti": [
-      "NTR24 (Benevento Domani)",
-      "TV7 Benevento (Benevento Domani)"
+      "Ottopagine (25/10)"
      ],
-     "quando": "2026-10-24T16:08+02:00"
+     "quando": "2026-10-25T10:10+01:00",
+     "titolo_prima": "Benevento, ragazza colpita con uno schiaffo a Corso Garibaldi: la Polizia ha identificato il giovane"
     }
    }
   },

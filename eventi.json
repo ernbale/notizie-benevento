@@ -616,6 +616,59 @@
    "foto": "janare"
   },
   {
+   "id": "us-navy-band-wind-ensemble-san-vittorino-2026",
+   "titolo": "La Wind Ensemble della U.S. Navy Band al Teatro San Vittorino",
+   "tipo": "concerto",
+   "inizio": "2026-10-30",
+   "ora": "19:30",
+   "luogo": "Teatro San Vittorino",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "organizzatore": "Conservatorio Statale di Musica «Nicola Sala»",
+   "artisti": [
+    "U.S. Naval Forces Europe and Africa Band – Wind Ensemble"
+   ],
+   "breve": "Venerdì 30 ottobre alle 19:30 il Conservatorio «Nicola Sala» ospita al San Vittorino la formazione di fiati della banda della Marina degli Stati Uniti.",
+   "descrizione": [
+    {
+     "testo": "Venerdì 30 ottobre alle 19:30 il Conservatorio Statale di Musica «Nicola Sala» di Benevento ospita al Teatro San Vittorino la U.S. Naval Forces Europe and Africa Band, la banda della Marina degli Stati Uniti che ha sede a Napoli, nella formazione di fiati Wind Ensemble. Dirige il lieutenant commander (capitano di corvetta) Luis Espinosa.",
+     "fonti": [
+      "Gazzetta di Benevento",
+      "Anteprima24"
+     ]
+    },
+    {
+     "testo": "Per il Conservatorio è soprattutto un'occasione per gli studenti, in particolare quelli di strumenti a fiato, percussioni, composizione e direzione, che possono ascoltare dal vivo un complesso professionale di fiati. Le fonti non dicono se l'ingresso è libero o a pagamento.",
+     "fonti": [
+      "Anteprima24",
+      "NTR24"
+     ]
+    }
+   ],
+   "immagine": "orchestra",
+   "fonti": [
+    {
+     "nome": "Gazzetta di Benevento",
+     "titolo": "Il Conservatorio Statale di Musica \"Nicola Sala\" ospita la U.S. Naval Forces Europe and Africa Band, nella formazione Wind Ensemble, diretta dal lieutenant commander Luis Espinosa",
+     "url": "https://www.gazzettabenevento.it/it/il-conservatorio-statale-di-musica-nicola-sala-ospita-la-us-naval-forces-europe-and-africa-band",
+     "data": "25 ott, 09:42"
+    },
+    {
+     "nome": "NTR24",
+     "titolo": "Il Conservatorio “Nicola Sala” incontra la U.S. Navy Band: musica, formazione e dialogo internazionale al Teatro San Vittorino",
+     "url": "https://www.ntr24.tv/2026/10/25/il-conservatorio-nicola-sala-incontra-la-u-s-navy-band-musica-formazione-e-dialogo-internazionale-al-teatro-san-vittorino/",
+     "data": "25 ott, 09:44"
+    },
+    {
+     "nome": "Anteprima24",
+     "titolo": "Al San Vittorino concerto della Wind Ensemble",
+     "url": "https://www.anteprima24.it/benevento/concerto-wind-ensemble/",
+     "data": "25 ott, 10:05"
+    }
+   ],
+   "foto": "orchestra-5"
+  },
+  {
    "id": "neri-per-caso-accademia-santa-sofia-2026",
    "titolo": "Neri per Caso al Teatro Comunale",
    "tipo": "concerto",
