@@ -144,7 +144,7 @@ INDIRIZZI = {
     ("Benevento", "San Vitale"): "Contrada San Vitale",
     ("Benevento", "Bachelet"): "Via Vittorio Bachelet",
     ("Benevento", "Bissolati"): "Piazza Bissolati",
-    ("Benevento", "Contrada san vito presso centro commerciale Buonvento"): "Contrada San Vito, centro commerciale Buonvento",
+    ("Benevento", "Contrada San vito presso centro commerciale Buonvento"): "Contrada San Vito, centro commerciale Buonvento",
     ("Bonea", "Fizzo 52"): "Via Fizzo 52",
     ("Bucciano", "Provinciale 28"): "Via Provinciale 28",
     ("Calvi", "Strada Statale km 274+250, San Giorgio del Sannio"): "SS 7 Appia km 274+250",
