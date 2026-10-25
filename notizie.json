@@ -1,7 +1,150 @@
 {
- "aggiornato": "2026-10-25T15:10+01:00",
+ "aggiornato": "2026-10-25T16:09+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "monte-taburno-escursioniste-cadute-dirupo-elicottero",
+   "titolo": "Monte Taburno, due escursioniste cadono in un dirupo: salvate dai vigili del fuoco con l'elicottero e portate al San Pio",
+   "titolo_google": "Monte Taburno, due escursioniste cadute in un dirupo",
+   "sintesi": "Domenica 25 ottobre due ragazze sono cadute in un dirupo durante un'escursione sul monte Taburno. I vigili del fuoco le hanno recuperate, una con l'elicottero di Pontecagnano, e le hanno portate in elicottero all'ospedale San Pio di Benevento. Secondo Ottopagine le ferite non sarebbero gravi.",
+   "categoria": "cronaca",
+   "zona": "provincia",
+   "luogo": "Monte Taburno",
+   "pubblicato": "2026-10-25T15:59+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/25/monte-taburno-due-ragazze-cadono-in-un-dirupo-durante-unescursione-soccorse-dai-vigili-del-fuoco/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/442118/escursioniste-finiscono-in-un-dirupo-sul-tabruno-salvate-dai-vigili-del-fuoco.shtml"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/taburno-due-ragazze-dirupo-soccorse/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Domenica 25 ottobre due ragazze sono cadute in un dirupo mentre facevano un'escursione sul monte Taburno, la montagna che sta tra la Valle Caudina e la Valle Telesina. Le hanno salvate i vigili del fuoco del Comando di Benevento e tutte e due sono state portate all'ospedale San Pio di Benevento.",
+      "fonti": [
+       "Anteprima24",
+       "Ottopagine",
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Per il recupero sono intervenute le squadre di terra e l'elicottero dei vigili del fuoco del nucleo di Pontecagnano, in provincia di Salerno. Una delle due escursioniste è stata recuperata direttamente dall'equipaggio dell'elicottero; l'altra l'hanno raggiunta i vigili del fuoco a piedi. Anche lei è stata poi portata in ospedale con l'elicottero.",
+      "fonti": [
+       "Anteprima24",
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Secondo una prima ricostruzione riferita da Ottopagine, le ferite delle due ragazze non sarebbero gravi. Come sono cadute non si sa ancora: le cause sono da accertare.",
+      "fonti": [
+       "Ottopagine",
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Le due ragazze cadute in un dirupo durante un'escursione sul Taburno e il recupero dei vigili del fuoco, una con l'elicottero e una da terra, poi il trasporto al San Pio.",
+      "fonti": [
+       "Anteprima24",
+       "Ottopagine"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "In quale punto del Taburno sono cadute e a che ora.",
+     "Quanti anni hanno e da dove vengono.",
+     "Come è successo l'incidente."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Due ragazze cadono in un dirupo sul Taburno: interviene l’elicottero, entrambe in ospedale",
+      "url": "https://www.anteprima24.it/benevento/taburno-due-ragazze-dirupo-soccorse/",
+      "data": "25 ott, 15:50"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Escursioniste finiscono in un dirupo sul Taburno, salvate dai vigili del fuoco",
+      "url": "https://www.ottopagine.it/bn/cronaca/442118/escursioniste-finiscono-in-un-dirupo-sul-tabruno-salvate-dai-vigili-del-fuoco.shtml",
+      "data": "25 ott, 15:55"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Monte Taburno, due ragazze cadono in un dirupo durante un’escursione: soccorse dai vigili del fuoco",
+      "url": "https://www.ntr24.tv/2026/10/25/monte-taburno-due-ragazze-cadono-in-un-dirupo-durante-unescursione-soccorse-dai-vigili-del-fuoco/",
+      "data": "25 ott, 15:59"
+     }
+    ]
+   }
+  },
+  {
+   "id": "benevento-18enne-assolto-truffa-poste-piacenza",
+   "titolo": "Benevento, 18enne assolto dal Tribunale di Piacenza: era accusato di una truffa con un finto numero delle Poste",
+   "titolo_google": "Benevento, 18enne assolto per una truffa a Piacenza",
+   "sintesi": "Il Tribunale di Piacenza ha assolto un 18enne di Benevento accusato di aver truffato una ragazza di Piacenza con una telefonata da un numero che sembrava delle Poste. Per il giudice non c'è la prova che fosse lui l'autore.",
+   "categoria": "cronaca",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-25T15:37+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/truffa-telefonica-assolto-18enne-benevento/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Un 18enne di Benevento è stato assolto dal Tribunale di Piacenza, dove era sotto accusa per una truffa a una ragazza di quella città. Il giudice Ivan Borasi, con il rito abbreviato (un processo più rapido, deciso sugli atti già raccolti), ha stabilito che non c'è la prova certa che fosse lui l'autore. Lo racconta Anteprima24.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Secondo l'accusa, la ragazza era stata chiamata da un numero clonato, cioè copiato, che sembrava quello delle Poste. Convinta che il suo conto corrente fosse in pericolo, aveva fatto il bonifico che le era stato chiesto per mettere al sicuro i soldi.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Il punto del processo era capire chi avesse fatto la truffa: gli elementi raccolti non hanno permesso di attribuirla con certezza al giovane. Il ragazzo, difeso dall'avvocato Massimo Viscusi, aveva a sua volta presentato una querela per sostituzione di persona: dice che qualcuno ha usato la sua identità.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando è avvenuta la truffa e quanti soldi ha perso la ragazza.",
+     "Se la Procura farà appello."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Truffa a una ragazza di Piacenza, assolto un giovane di Benevento",
+      "url": "https://www.anteprima24.it/benevento/truffa-telefonica-assolto-18enne-benevento/",
+      "data": "25 ott, 15:37"
+     }
+    ]
+   }
+  },
   {
    "id": "san-salvatore-telesino-potito-starace-siracusa-tennis-lab",
    "titolo": "San Salvatore Telesino, l'ex tennista azzurro Potito Starace ospite dell'ASD Siracusa Tennis Lab",
@@ -3422,7 +3565,7 @@
    "categoria": "cronaca",
    "zona": "caudina",
    "luogo": "Montesarchio",
-   "pubblicato": "2026-10-25T12:05+01:00",
+   "pubblicato": "2026-10-25T16:05+01:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
@@ -3432,7 +3575,7 @@
     },
     {
      "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/sequestrati-due-etti-di-cocaina-in-valle-caudina-arrestata-una-persona/"
+     "url": "https://www.anteprima24.it/benevento/montesarchio-cocaina-borsello-arrestata-26enne/"
     },
     {
      "nome": "NTR24",
@@ -3459,6 +3602,13 @@
        "NTR24 (25/10)",
        "BeneventoNews24 (25/10)",
        "TV7 Benevento"
+      ],
+      "giorno": "2026-10-25"
+     },
+     {
+      "testo": "Anteprima24 precisa che la cocaina era in quattro involucri di cellophane dentro un borsello appoggiato sul sedile dell'auto. I Carabinieri hanno sequestrato anche il telefono cellulare della giovane. La Procura ha disposto gli arresti domiciliari; all'udienza di convalida di lunedì mattina la assisterà il suo avvocato di fiducia.",
+      "fonti": [
+       "Anteprima24 (25/10)"
       ],
       "giorno": "2026-10-25"
      },
@@ -3597,6 +3747,12 @@
       "titolo": "Arrestata 26enne di Montesarchio con 230 gr di cocaina: domani udienza di convalida.",
       "url": "https://www.tvsette.net/arrestata-26enne-di-montesarchio-con-230-gr-di-cocaina-domani-udienza-di-convalida/",
       "data": "25 ott, 12:36"
+     },
+     {
+      "nome": "Anteprima24 (25/10)",
+      "titolo": "Fermata in auto con 230 grammi di cocaina nel borsello: arrestata una 26enne",
+      "url": "https://www.anteprima24.it/benevento/montesarchio-cocaina-borsello-arrestata-26enne/",
+      "data": "25 ott, 16:05"
      }
     ],
     "aggiornamento": {
