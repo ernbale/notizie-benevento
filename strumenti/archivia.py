@@ -303,6 +303,35 @@ def vedetta_del_giro():
                       for x in (c.get("piste") or [])[-60:]]}
 
 
+def casa_del_giro():
+    """Le fonti lette da casa viste da questo giro (i file dell'archivio di casa accanto al sito): ultimo controllo,
+    esito e, per Comuni e stagioni, quanti siti si leggono. Per la scheda «Salute» delle statistiche (dal 25 ott 2026).
+    None se l'archivio non c'è."""
+    cart = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
+                        "notizie-benevento-fonti")
+    if not os.path.isdir(cart):
+        return None
+    casa = []
+    for p in sorted(glob.glob(os.path.join(cart, "*.json"))):
+        if os.path.basename(p) == "chiusure.json":   # la vedetta: c'è già in «vedetta»
+            continue
+        x = leggi(p, None)
+        if not isinstance(x, dict) or "controllato" not in x:
+            continue
+        v = {k: str(x.get(k) or "")[:200] for k in ("fonte", "controllato", "esito", "ultima_lettura_riuscita")}
+        v["file"] = os.path.basename(p)
+        for k in ("comuni_letti", "albi_letti"):
+            if x.get(k):
+                v[k] = str(x[k])
+        for k in ("comuni_non_letti", "albi_non_letti", "stagioni_non_lette"):
+            if x.get(k):
+                v[k] = [str(y)[:80] for y in x[k]][:40]
+        if x.get("stagioni_lette"):
+            v["stagioni_lette"] = len(x["stagioni_lette"])
+        casa.append(v)
+    return casa
+
+
 def comunicati_del_giro(prima, adesso):
     """I comunicati arrivati per posta dall'ultimo giro (comunicati.json dell'archivio di casa, accanto al sito):
     solo quanti, da quali domini e lo stato della casella, per le statistiche. None se il file non c'è."""
@@ -377,7 +406,7 @@ def voce_diario(giro, d, prima, vanno, registro, inizio, adesso, titoli=None, gi
             "nuove": nuove, "aggiornate": aggiornate, "archiviate": [n["id"] for n in vanno],
             "scartate": scartate, "esame_giornali": esame, "dubbi": giro.get("dubbi") or [], "eventi": giro.get("eventi"),
             "fonti": fonti, "ricerche": ricerche, "notizie_in_prima": len(d["notizie"]) - len(vanno),
-            "comunicati": comunicati_del_giro(prima, adesso), "vedetta": vedetta_del_giro()}
+            "comunicati": comunicati_del_giro(prima, adesso), "vedetta": vedetta_del_giro(), "casa": casa_del_giro()}
 
 
 def scrivi_diario(base, voce, oggi):

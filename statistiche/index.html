@@ -92,7 +92,11 @@
   td .perc { display: block; font-size: 12px; color: var(--grigio); }
 
   /* le tre schede: i numeri, «Dietro le quinte» e le chiusure dei Comuni */
-  .schede { display: flex; gap: 6px; margin-top: 16px; border-bottom: 1px solid var(--riga); }
+  .schede { display: flex; gap: 6px; margin-top: 16px; border-bottom: 1px solid var(--riga); overflow-x: auto; scrollbar-width: none; }
+  .schede::-webkit-scrollbar { display: none; }
+  .schede button { white-space: nowrap; flex: 0 0 auto; }
+  tr.male td, tr.male td a { color: var(--rosso); }
+  tr.male td:first-child { font-weight: 600; }
   .schede button { font: 600 15px var(--sans); background: none; border: 0; border-bottom: 3px solid transparent; padding: 8px 12px; cursor: pointer; color: var(--grigio); }
   .schede button.attiva { color: var(--nero); border-bottom-color: var(--rosso); }
   /* dietro le quinte: un riquadro per giro */
@@ -301,10 +305,14 @@
     radice.textContent = "";
     document.getElementById("lucchetto").hidden = true;
     radice.hidden = false;
-    // tre schede: i numeri del sito, «Dietro le quinte» (cosa fa l'agente) e le chiusure dei Comuni; la scelta resta
-    // su questo dispositivo
-    var m = el("div", "vista"), mq = el("div", "vista"), mc = el("div", "vista"), nav = el("nav", "schede");
-    var SCHEDE = [["Numeri", m, ""], ["Dietro le quinte", mq, "#dietro-le-quinte"], ["Chiusure", mc, "#chiusure"]];
+    // le schede (25 ott 2026: «Numeri» era una pagina sola lunghissima): lettori e Google, social, il giornale, il
+    // calendario degli eventi, la salute di fonti e controlli, «Dietro le quinte» (cosa fa l'agente) e le chiusure dei
+    // Comuni; la scelta resta su questo dispositivo
+    var mL = el("div", "vista"), mS = el("div", "vista"), mG = el("div", "vista"), mE = el("div", "vista"),
+        mH = el("div", "vista"), mq = el("div", "vista"), mc = el("div", "vista"), nav = el("nav", "schede");
+    var m = mL;
+    var SCHEDE = [["Lettori", mL, ""], ["Social", mS, "#social"], ["Il giornale", mG, "#giornale"], ["Eventi", mE, "#eventi"],
+                  ["Salute", mH, "#salute"], ["Dietro le quinte", mq, "#dietro-le-quinte"], ["Chiusure", mc, "#chiusure"]];
     SCHEDE.forEach(function (sc, i) {
       var b = el("button", "", sc[0]);
       b.type = "button";
@@ -315,9 +323,12 @@
       });
       nav.appendChild(b);
     });
-    radice.appendChild(nav); radice.appendChild(m); radice.appendChild(mq); radice.appendChild(mc);
+    radice.appendChild(nav);
+    SCHEDE.forEach(function (sc) { radice.appendChild(sc[1]); });
     disegnaAgente(mq, D);
     disegnaChiusure(mc, D);
+    disegnaEventi(mE, D);
+    disegnaSalute(mH, D);
     var scelta = SCHEDE.map(function (x) { return x[2]; }).indexOf(location.hash);
     if (scelta < 1) { scelta = 0; try { scelta = +localStorage.getItem("nb-statistiche-scheda") || 0; } catch (e) {} }
     nav.children[scelta >= 0 && scelta < SCHEDE.length ? scelta : 0].click();
@@ -331,7 +342,8 @@
     // --- visite ---
     var V = D.visite || {};
     m.appendChild(el("h2", "", "Visite"));
-    m.appendChild(el("p", "sotto", "Quante volte il sito è stato aperto e quante pagine sono state lette. Ultimi " + D.giorni + " giorni."));
+    m.appendChild(el("p", "sotto", "Quante volte il sito è stato aperto e quante pagine sono state lette. Ultimi " + D.giorni + " giorni." +
+      (V.solo_lettori ? " Solo i lettori veri: tolte le " + num((V.da_facebook || {}).estero) + " aperture automatiche di Facebook dall'estero (i controlli di Meta sui link appena pubblicati)." : "")));
     if (V.stato !== "ok") {
       var a = el("div", "avviso"); a.appendChild(el("b", "", V.stato === "errore" ? "Il contatore non ha risposto" : "Contatore da collegare"));
       a.appendChild(document.createTextNode(V.messaggio || "")); m.appendChild(a);
@@ -447,6 +459,8 @@
       m.appendChild(gg);
     }
 
+    // --- i social: Facebook, Instagram, Telegram ---
+    m = mS;
     // --- Facebook ---
     var F = D.facebook || {};
     m.appendChild(el("h2", "", "Facebook"));
@@ -500,7 +514,7 @@
         });
         t2.appendChild(tb2); tf.appendChild(t2);
       } else tf.appendChild(el("p", "vuoto", "Nessun post negli ultimi " + D.giorni + " giorni."));
-      var rmi = riquadro("I post che piacciono di più", tf); rmi.classList.add("largo"); gf.appendChild(rmi);
+      var rmi = riquadro(migliori.some(function (p) { return p.interazioni; }) ? "I post che piacciono di più" : "Gli ultimi post (ancora nessuna reazione)", tf); rmi.classList.add("largo"); gf.appendChild(rmi);
       if (!F.commenti || !F.reazioni) rmi.appendChild(el("p", "nota", "«–» = Facebook non lo dà con la chiave di adesso: per " + (F.reazioni ? "i commenti" : "reazioni e commenti") + " serve anche il permesso pages_read_user_content (si aggiunge quando si rifà la chiave, vedi sotto)."));
       // le statistiche di Meta (persone raggiunte, visualizzazioni) ci sono solo se la chiave ha il permesso read_insights
       var NOMI_META = { page_total_media_view_unique: "Persone che hanno visto i post", page_media_view: "Visualizzazioni dei post",
@@ -547,7 +561,7 @@
         rif.classList.add("largo"); gi.appendChild(rif);
       }
       var mi = ipost.slice().sort(function (a, b) { return b.interazioni - a.interazioni || (a.quando < b.quando ? 1 : -1); }).slice(0, 15);
-      var rti = riquadro("I post che piacciono di più", tabellaPost(mi, [["Post"], ["Mi piace", "mi_piace"], ["Commenti", "commenti"]], I.profilo));
+      var rti = riquadro(mi.some(function (p) { return p.interazioni; }) ? "I post che piacciono di più" : "Gli ultimi post (ancora nessun «mi piace»)", tabellaPost(mi, [["Post"], ["Mi piace", "mi_piace"], ["Commenti", "commenti"]], I.profilo));
       rti.classList.add("largo"); gi.appendChild(rti);
       var NOMI_IG = { reach: "Persone raggiunte", views: "Visualizzazioni", profile_views: "Visite al profilo" };
       var chiaviIg = Object.keys(I.meta || {});
@@ -595,6 +609,7 @@
     }
 
     // --- il sito ---
+    m = mG;
     var S = D.sito || {};
     m.appendChild(el("h2", "", "Il giornale"));
     m.appendChild(el("p", "sotto", "Cosa ha pubblicato l'agente negli ultimi " + D.giorni + " giorni."));
@@ -617,7 +632,8 @@
     gs.appendChild(rf);
     m.appendChild(gs);
 
-    // --- puntualità ---
+    // --- puntualità (nella scheda «Salute», dopo fonti e quarantena) ---
+    m = mH;
     var P = D.puntualita || {};
     m.appendChild(el("h2", "", "Puntualità"));
     m.appendChild(el("p", "sotto", "I giri dell'agente (uno all'ora, dalle 6 alle 22) e quanto ci mette ogni giro ad arrivare sul sito."));
@@ -651,7 +667,8 @@
       m.appendChild(gp);
     }
 
-    // --- comunicati per posta ---
+    // --- comunicati per posta (nella scheda «Il giornale») ---
+    m = mG;
     var C = D.comunicati || {};
     m.appendChild(el("h2", "", "Comunicati per posta"));
     m.appendChild(el("p", "sotto", "Quelli arrivati a comunicati@notiziebenevento.it, contati a ogni giro (ultimi giorni del diario)."));
@@ -668,6 +685,109 @@
     }
   }
 
+
+  // ---------- tabelle semplici: righe = [[testo o {testo, link, sotto}, …], …] ----------
+  function tabellaSemplice(intestazioni, righe, classeRiga) {
+    var box = el("div", "tabella"), t = el("table"), th = el("thead"), tr = el("tr");
+    intestazioni.forEach(function (h, i) { tr.appendChild(el("th", i ? "num" : "", h)); });
+    th.appendChild(tr); t.appendChild(th);
+    var tb = el("tbody");
+    righe.forEach(function (r, k) {
+      var riga = el("tr", classeRiga ? classeRiga(k) : "");
+      r.forEach(function (c, i) {
+        var td = el("td", i ? "num" : "");
+        if (c && typeof c === "object") {
+          var a = c.link ? el("a", "", c.testo) : el("span", "", c.testo);
+          if (c.link) { a.href = c.link; a.target = "_blank"; a.rel = "noopener"; }
+          td.appendChild(a);
+          if (c.sotto) td.appendChild(el("span", "perc", c.sotto));
+        } else td.textContent = c == null ? "–" : String(c);
+        riga.appendChild(td);
+      });
+      tb.appendChild(riga);
+    });
+    t.appendChild(tb); box.appendChild(t);
+    return box;
+  }
+  var MESI_IT = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"];
+
+  // ---------- eventi: il calendario (dal 25 ott 2026) ----------
+  function disegnaEventi(box, D) {
+    var E = D.eventi || {};
+    box.appendChild(el("h2", "", "Eventi"));
+    box.appendChild(el("p", "sotto", "Il calendario degli eventi: quanti ce ne sono, quando e dove, da quali fonti arrivano e quanto vengono letti."));
+    if (E.stato !== "ok") { box.appendChild(avvisoStato(E, "Il calendario")); return; }
+    var ne = el("div", "numeri");
+    ne.appendChild(numero("In programma", num(E.futuri), num(E.totale) + " in calendario" + (E.annullati ? " · " + num(E.annullati) + " annullati" : "")));
+    ne.appendChild(numero("Nei prossimi 7 giorni", num(E.settimana), "eventi aperti almeno un giorno"));
+    ne.appendChild(numero("Con l'orario", num(E.con_ora), "su " + num(E.futuri) + " · " + num(E.con_prezzo) + " col prezzo · " + num(E.locandine) + " con la locandina"));
+    ne.appendChild(numero("Pagine degli eventi lette", E.visite == null ? "–" : num(E.visite), "ultimi " + D.giorni + " giorni, lettori veri"));
+    box.appendChild(ne);
+    var g = el("div", "griglia");
+    var p7 = E.prossimi_7 || [];
+    g.appendChild(riquadro("Nei prossimi 7 giorni", p7.length ? tabellaSemplice(["Evento", "Quando"], p7.map(function (x) {
+      return [{ testo: x.titolo, link: "/evento/" + x.id + "/", sotto: x.comune + " · " + x.tipo },
+              x.in_corso ? "in corso, fino al " + giornoBreve(x.fine) : giornoBreve(x.giorno) + (x.ora ? ", " + x.ora : "")];
+    })) : el("p", "vuoto", "Nessun evento nei prossimi 7 giorni."), "largo"));
+    g.appendChild(riquadro("Per mese in cui cominciano", barre((E.mesi || []).map(function (x) { return { nome: MESI_IT[+x.mese.slice(5, 7) - 1] + " " + x.mese.slice(0, 4), eventi: x.eventi }; }), "eventi")));
+    g.appendChild(riquadro("Per tipo", barre(E.tipi || [], "eventi")));
+    g.appendChild(riquadro("Per zona", barre(E.zone || [], "eventi")));
+    g.appendChild(riquadro("I Comuni con più eventi", barre(E.comuni || [], "eventi")));
+    var rd = riquadro("Da dove arrivano", barre(E.da_dove || [], "eventi"));
+    rd.appendChild(el("p", "nota", "Stagioni ufficiali = le pagine di Città Spettacolo, Teatro San Marco, Solot e Accademia di Santa Sofia, lette dal Pi ogni 30 minuti; posta = i comunicati e le locandine di Pro Loco e organizzatori."));
+    g.appendChild(rd);
+    var pl = E.pagine_lette || [];
+    g.appendChild(riquadro("Le pagine degli eventi più lette", pl.length ? tabellaSemplice(["Evento", "Visite"], pl.map(function (p) {
+      return [{ testo: p.titolo || p.percorso, link: p.percorso }, num(p.visite)];
+    })) : el("p", "vuoto", E.visite == null ? "Il contatore delle visite non ha risposto." : "Nessuna pagina di evento letta finora."), "largo"));
+    if (E.google) g.appendChild(riquadro("Gli eventi su Google", E.google.length ? tabellaSemplice(["Evento", "Clic", "Comparse", "Posizione"], E.google.map(function (p) {
+      return [{ testo: p.titolo || p.percorso, link: p.percorso }, num(p.clic), num(p.impressioni), String(p.posizione).replace(".", ",")];
+    })) : el("p", "vuoto", "Le pagine degli eventi non sono ancora uscite su Google."), "largo"));
+    box.appendChild(g);
+  }
+
+  // ---------- salute: fonti, file di casa, quarantena (dal 25 ott 2026; la puntualità si aggiunge sotto) ----------
+  function disegnaSalute(box, D) {
+    var H = D.salute || {};
+    box.appendChild(el("h2", "", "Salute"));
+    box.appendChild(el("p", "sotto", "Le fonti che si leggono e quelle che no, le fonti lette dal Pi di casa, le voci fermate dai controlli e quanto ci mettono i giri. Se una fonte resta ferma per ore la sentinella manda la mail."));
+    var Q = H.quarantena || [];
+    if (H.stato !== "ok") box.appendChild(el("p", "vuoto", H.stato === "vuoto" ? "Il conto parte dal prossimo giro dell'agente." : (H.messaggio || "")));
+    else {
+      var nh = el("div", "numeri");
+      nh.appendChild(numero("Fonti che non si leggono", num(H.fonti_male), "nell'ultimo giro, su " + num((H.fonti || []).length)));
+      nh.appendChild(numero("Giri nelle ultime 24 ore", num(H.giri_24h), H.durata_media == null ? "" : "in media " + String(H.durata_media).replace(".", ",") + " min, il più lungo " + String(H.durata_max).replace(".", ",")));
+      nh.appendChild(numero("Ricerche mirate", num(H.ricerche), "nell'ultimo giro (almeno 6)"));
+      nh.appendChild(numero("In quarantena", num(Q.length), Q.length ? "voci fermate dai controlli, da correggere" : "nessuna voce fermata dai controlli"));
+      box.appendChild(nh);
+      var g = el("div", "griglia");
+      var F = H.fonti || [];
+      var rf = riquadro("Le fonti nell'ultimo giro", tabellaSemplice(["Fonte", "Non lette nelle 24 ore"], F.map(function (f) {
+        return [{ testo: f.nome, sotto: f.stato }, f.male_24h ? num(f.male_24h) + (f.male_24h === 1 ? " giro" : " giri") + " su " + num(f.giri_24h) : "–"];
+      }), function (k) { return F[k].male ? "male" : ""; }), "largo");
+      rf.appendChild(el("p", "nota", "In rosso le fonti che l'ultimo giro non ha letto, o ha letto solo dalla riserva. Dal giro delle " + oraIt(H.ultimo_giro) + "."));
+      g.appendChild(rf);
+      var C = H.casa || [];
+      if (C.length) {
+        var rc = riquadro("Le fonti lette dal Pi di casa", tabellaSemplice(["Fonte", "Ultima lettura riuscita"], C.map(function (x) {
+          var extra = [x.comuni_letti ? "siti dei Comuni letti " + x.comuni_letti : "", x.albi_letti ? "albi pretori letti " + x.albi_letti : "",
+                       x.stagioni_lette ? "pagine delle stagioni lette " + x.stagioni_lette : ""].filter(Boolean).join(" · ");
+          return [{ testo: x.fonte || x.file, sotto: (x.esito || "") + (extra ? " · " + extra : "") }, x.ultima_lettura_riuscita ? quandoBreve(x.ultima_lettura_riuscita) : "–"];
+        }), function (k) { return /^letta/.test(C[k].esito || "") && !/riserva/.test(C[k].esito || "") ? "" : "male"; }), "largo");
+        var nonLetti = C.filter(function (x) { return (x.albi_non_letti || []).length || (x.comuni_non_letti || []).length; })[0];
+        if (nonLetti) rc.appendChild(el("p", "nota", "Non si leggono: " + [].concat(nonLetti.comuni_non_letti || [], (nonLetti.albi_non_letti || []).map(function (n) { return "albo di " + n; })).join(", ") + "."));
+        g.appendChild(rc);
+      }
+      box.appendChild(g);
+    }
+    if (Q.length) {
+      var gq = el("div", "griglia");
+      gq.appendChild(riquadro("In quarantena", tabellaSemplice(["Voce", "Da quando"], Q.map(function (x) {
+        return [{ testo: (x.tipo === "evento" ? "Evento " : "Notizia ") + x.id, sotto: (x.stato || "") + " · " + (x.errore || "") }, x.quando ? quandoBreve(x.quando) : "–"];
+      }), function () { return "male"; }), "largo"));
+      box.appendChild(gq);
+    }
+  }
   // ---------- dietro le quinte: il diario dell'agente ----------
   function oraIt(iso, conGiorno) {
     var d = new Date(iso);

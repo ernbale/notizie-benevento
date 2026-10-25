@@ -71,19 +71,29 @@ def leggi(path, predefinito=None):
 
 
 # ---------- visite (Cloudflare Web Analytics) ----------
-def cloudflare(token, inizio, fine):
-    filtro = f'filter: {{datetime_geq: $start, datetime_lt: $end, requestHost: "{HOST}", bot: 0}}'
-    def gruppo(nome, limite, ordine, dim):
-        return (f"{nome}: rumPageloadEventsAdaptiveGroups(limit: {limite}, {filtro}, orderBy: [{ordine}]) "
+# I controlli automatici di Meta: appena esce un post, Facebook apre il link da server negli Stati Uniti, in Irlanda e
+# in Svezia (21 ott 2026: 72 aperture nel minuto del post), e Cloudflare li conta come visite. Dal 25 ott 2026 i numeri
+# delle visite sono solo i lettori veri: tolte le aperture da Facebook fuori dall'Italia (le altre restano: 0 il 25 ott,
+# quando i controlli erano 582 su 739 «visite» della settimana).
+FILTRO_TUTTE = '{{datetime_geq: $start, datetime_lt: $end, requestHost: "{host}", bot: 0}}'
+FILTRO_LETTORI = ('{{AND: [{{datetime_geq: $start, datetime_lt: $end, requestHost: "{host}", bot: 0}}, '
+                  '{{OR: [{{countryName: "IT"}}, {{refererHost_notlike: "%facebook%"}}]}}]}}')
+
+
+def cloudflare(token, inizio, fine, solo_lettori=True):
+    filtro = "filter: " + (FILTRO_LETTORI if solo_lettori else FILTRO_TUTTE).format(host=HOST)
+    tutte = "filter: " + FILTRO_TUTTE.format(host=HOST)
+    def gruppo(nome, limite, ordine, dim, f=None):
+        return (f"{nome}: rumPageloadEventsAdaptiveGroups(limit: {limite}, {f or filtro}, orderBy: [{ordine}]) "
                 f"{{ count sum {{ visits }} dimensions {{ {dim} }} }}")
     q = ("query ($account: String!, $start: Time!, $end: Time!) { viewer { accounts(filter: {accountTag: $account}) { "
          + " ".join([gruppo("ore", 1000, "datetimeHour_ASC", "datetimeHour"),
-                     gruppo("pagine", 100, "count_DESC", "requestPath"),
+                     gruppo("pagine", 200, "count_DESC", "requestPath"),
                      gruppo("da", 100, "sum_visits_DESC", "refererHost"),
                      gruppo("dispositivi", 10, "sum_visits_DESC", "deviceType"),
                      gruppo("paesi", 15, "sum_visits_DESC", "countryName"),
                      gruppo("browser", 10, "sum_visits_DESC", "userAgentBrowser"),
-                     gruppo("da_paese", 300, "sum_visits_DESC", "refererHost countryName")])
+                     gruppo("da_paese", 300, "sum_visits_DESC", "refererHost countryName", tutte)])
          + " } } }")
     corpo = json.dumps({"query": q, "variables": {"account": CF_ACCOUNT, "start": inizio.isoformat(),
                                                   "end": fine.isoformat()}}).encode()
@@ -127,6 +137,10 @@ def titoli_pagine(sito):
         for a in d.get("approfondimenti", []):
             if a.get("id"):
                 t[f"/approfondimento/{a['id']}/"] = a.get("titolo") or a["id"]
+    for f in [os.path.join(sito, "eventi.json")] + glob.glob(os.path.join(sito, "archivio", "eventi-*.json")):
+        for x in (leggi(f, {}) or {}).get("eventi", []):
+            if x.get("id"):
+                t[f"/evento/{x['id']}/"] = x.get("titolo") or x["id"]
     for k, v in NOMI_CAT.items():
         t[f"/sezione/{'allerte' if k == 'meteo' else k}/"] = "Sezione " + v
     for k, v in {"benevento": "Benevento città", "valle-telesina": "Valle Telesina", "valle-caudina": "Valle Caudina",
@@ -145,9 +159,18 @@ def visite(sito, token, adesso):
     # e si sommano i pezzi.
     a = {"ore": [], "pagine": [], "da": [], "dispositivi": [], "paesi": [], "browser": [], "da_paese": []}
     da, fine = inizio_locale.astimezone(dt.timezone.utc), adesso.astimezone(dt.timezone.utc)
+    solo_lettori = True
     while da < fine:
         a_fine = min(da + dt.timedelta(days=7), fine)
-        pezzo = cloudflare(token, da, a_fine)
+        try:
+            pezzo = cloudflare(token, da, a_fine, solo_lettori)
+        except RuntimeError:   # se Cloudflare non accettasse il filtro dei lettori, i numeri di sempre (e lo si dice)
+            if not solo_lettori:
+                raise
+            solo_lettori = False
+            a = {k: [] for k in a}
+            da = inizio_locale.astimezone(dt.timezone.utc)
+            continue
         for k in a:
             a[k] += pezzo.get(k, [])
         da = a_fine
@@ -189,10 +212,12 @@ def visite(sito, token, adesso):
             da_fb["italia" if r["dimensions"]["countryName"] == "IT" else "estero"] += r["sum"]["visits"]
     nomi_disp = {"mobile": "Telefono", "desktop": "Computer", "tablet": "Tablet"}
     return {
-        "stato": "ok", "da_facebook": da_fb, "giorni": [{"data": k, "visite": v[0], "pagine": v[1]} for k, v in per_giorno.items()],
+        "stato": "ok", "da_facebook": da_fb, "solo_lettori": solo_lettori, "giorni": [{"data": k, "visite": v[0], "pagine": v[1]} for k, v in per_giorno.items()],
         "ore": [{"ora": h, "visite": v[0], "pagine": v[1]} for h, v in enumerate(per_ora)],
         "ultime24": {"visite": ultime24[0], "pagine": ultime24[1]},
         "pagine": pagine[:40],
+        "eventi_pagine": [p for p in pagine if p["percorso"].startswith("/evento/")][:30],
+        "eventi_visite": sum(p["visite"] for p in pagine if p["percorso"].startswith("/evento/")),
         "provenienza": [{"nome": k, "visite": v} for k, v in prov.most_common(12)],
         "dispositivi": [{"nome": nomi_disp.get(r["dimensions"]["deviceType"], r["dimensions"]["deviceType"] or "Altro"),
                          "visite": r["sum"]["visits"]} for r in a["dispositivi"]],
@@ -249,7 +274,7 @@ def google(sito, testo_chiave, adesso):
     per_giorno = {r["keys"][0]: riga(r) for r in gsc_query(token, dict(base, dimensions=["date"], rowLimit=100))}
     titoli = titoli_pagine(sito)
     pagine = []
-    for r in gsc_query(token, dict(base, dimensions=["page"], rowLimit=25)):
+    for r in gsc_query(token, dict(base, dimensions=["page"], rowLimit=200)):
         percorso = urllib.parse.urlsplit(r["keys"][0]).path or "/"
         pagine.append(dict(riga(r), percorso=percorso, titolo=titoli.get(percorso)))
     altri = {}
@@ -265,8 +290,11 @@ def google(sito, testo_chiave, adesso):
         "totali": riga(tot[0]) if tot else riga({}),
         "giorni": [dict(per_giorno.get((inizio + dt.timedelta(days=i)).isoformat(), riga({})),
                         data=(inizio + dt.timedelta(days=i)).isoformat()) for i in range(28)],
-        "ricerche": [dict(riga(r), ricerca=r["keys"][0]) for r in gsc_query(token, dict(base, dimensions=["query"], rowLimit=30))],
-        "pagine": pagine,
+        "ricerche": sorted((dict(riga(r), ricerca=r["keys"][0]) for r in
+                            gsc_query(token, dict(base, dimensions=["query"], rowLimit=200))),
+                           key=lambda x: (x["clic"], x["impressioni"]), reverse=True)[:30],
+        "pagine": sorted(pagine, key=lambda x: (x["clic"], x["impressioni"]), reverse=True)[:25],
+        "eventi_pagine": [x for x in pagine if x["percorso"].startswith("/evento/")][:20],
         "dispositivi": [dict(riga(r), nome=nomi_disp.get(r["keys"][0], r["keys"][0]))
                         for r in gsc_query(token, dict(base, dimensions=["device"]))],
         "discover": altri.get("discover"), "news": altri.get("googleNews"),
@@ -641,7 +669,8 @@ def comunicati(agente_dati):
     for g in giri:
         per_giorno[g.get("giorno")] += g["comunicati"].get("arrivati") or 0
         for d in g["comunicati"].get("domini") or []:
-            domini[d] += 1
+            if not re.search(r"(^|\.)aruba\.it$|mailer-daemon|postmaster", str(d)):   # rimbalzi e avvisi della casella
+                domini[d] += 1
     return {"stato": "ok", "giri": len(giri), "arrivati": sum(per_giorno.values()),
             "giorni": [{"data": k, "arrivati": v} for k, v in sorted(per_giorno.items())],
             "domini": [{"nome": k, "comunicati": v} for k, v in domini.most_common(15)],
@@ -702,10 +731,9 @@ def sito_numeri(sito, adesso):
     recenti = [n for n in notizie if str(n.get("pubblicato", ""))[:10] >= dal]
     per_giorno = collections.Counter(str(n.get("pubblicato", ""))[:10] for n in recenti)
     fonti = collections.Counter()
-    for n in recenti:
-        for f in n.get("fonti") or []:
-            if f.get("nome"):
-                fonti[f["nome"]] += 1
+    for n in recenti:   # «NTR24 (23/10)» è NTR24 e «LabTV» è Lab TV: ogni testata una volta per notizia
+        fonti.update({STESSA_FONTE.get(x, x) for x in (re.sub(r"\s*\(\d{1,2}/\d{1,2}\)\s*$", "", str(f.get("nome") or "")).strip()
+                                                     for f in n.get("fonti") or []) if x})
     n_fonti = [len(n.get("fonti") or []) for n in recenti]
     prima = leggi(os.path.join(sito, "notizie.json"), {}) or {}
     return {
@@ -723,6 +751,101 @@ def sito_numeri(sito, adesso):
         "in_prima_pagina": len(prima.get("notizie", [])),
         "giornali_letti": prima.get("giornali_letti"), "ultimo_giro": prima.get("aggiornato"),
     }
+
+
+STESSA_FONTE = {"LabTV": "Lab TV", "Lab Tv": "Lab TV", "Infosannio": "InfoSannio", "Il Mattino Benevento": "Il Mattino"}
+
+
+# ---------- il calendario degli eventi (dal 25 ott 2026) ----------
+NOMI_TIPO = {"teatro": "Teatro", "danza": "Danza", "concerto": "Concerti", "lirica": "Lirica", "mostra": "Mostre",
+             "museo": "Musei", "cinema": "Cinema", "sagra": "Sagre", "festa": "Feste", "mercatino": "Mercatini",
+             "natale": "Natale", "carnevale": "Carnevale", "altro": "Altro"}
+
+
+def giorni_evento(x):
+    if x.get("giorni"):
+        return list(x["giorni"])
+    a = dt.date.fromisoformat(x["inizio"])
+    b = dt.date.fromisoformat(x.get("fine") or x["inizio"])
+    return [(a + dt.timedelta(days=i)).isoformat() for i in range((b - a).days + 1)]
+
+
+def eventi_numeri(sito, adesso, vis, goo):
+    """La scheda «Eventi»: quanti eventi ha il calendario, i prossimi giorni, per tipo, zona e Comune, da dove vengono
+    (stagioni ufficiali, posta, giornali), le locandine; quante visite e quante comparse su Google hanno le loro pagine."""
+    ev = (leggi(os.path.join(sito, "eventi.json"), {}) or {}).get("eventi") or []
+    oggi = adesso.astimezone(fuso()).date()
+    futuri = [x for x in ev if (x.get("fine") or x.get("inizio") or "") >= oggi.isoformat() and not x.get("annullato")]
+    fra = lambda n: (oggi + dt.timedelta(days=n)).isoformat()
+    prossimi = []
+    for x in futuri:
+        gg = [g for g in giorni_evento(x) if oggi.isoformat() <= g <= fra(7)]
+        if gg:
+            prossimi.append({"id": x["id"], "titolo": x.get("titolo"), "comune": x.get("comune"), "giorno": gg[0],
+                             "ora": x.get("ora") or "", "tipo": NOMI_TIPO.get(x.get("tipo"), x.get("tipo")),
+                             "in_corso": x["inizio"] < oggi.isoformat(), "fine": x.get("fine") or x["inizio"]})
+    prossimi.sort(key=lambda x: (x["giorno"], x["ora"]))
+    mesi = collections.Counter(x["inizio"][:7] for x in futuri)
+    stagioni = ("Città Spettacolo", "Teatro San Marco", "Solot", "Accademia di Santa Sofia")
+    da_dove = collections.Counter()
+    for x in futuri:
+        nomi = {f.get("nome") for f in x.get("fonti") or []}
+        da_dove["stagioni ufficiali" if nomi & set(stagioni) else "comunicati per posta" if x.get("locandina")
+                or any("posta" in str(f.get("url")) for f in x.get("fonti") or []) else "giornali e siti"] += 1
+    return {
+        "stato": "ok", "totale": len(ev), "futuri": len(futuri), "annullati": sum(1 for x in ev if x.get("annullato")),
+        "prossimi_7": prossimi[:40], "settimana": len(prossimi),
+        "mesi": [{"mese": k, "eventi": v} for k, v in sorted(mesi.items())][:10],
+        "tipi": [{"nome": NOMI_TIPO.get(k, k), "eventi": v} for k, v in collections.Counter(x.get("tipo") for x in futuri).most_common()],
+        "zone": [{"nome": NOMI_ZONA.get(k, k), "eventi": v} for k, v in collections.Counter(x.get("zona") for x in futuri).most_common()],
+        "comuni": [{"nome": k, "eventi": v} for k, v in collections.Counter(x.get("comune") for x in futuri).most_common(12)],
+        "da_dove": [{"nome": k, "eventi": v} for k, v in da_dove.most_common()],
+        "locandine": sum(1 for x in futuri if x.get("locandina")),
+        "con_ora": sum(1 for x in futuri if x.get("ora") or x.get("orari")),
+        "con_prezzo": sum(1 for x in futuri if x.get("prezzo")),
+        "visite": (vis or {}).get("eventi_visite") if (vis or {}).get("stato") == "ok" else None,
+        "pagine_lette": ((vis or {}).get("eventi_pagine") or [])[:12],
+        "google": ((goo or {}).get("eventi_pagine") or [])[:12] if (goo or {}).get("stato") == "ok" else None,
+    }
+
+
+# ---------- la salute delle fonti e del giro (dal 25 ott 2026) ----------
+def salute(sito, agente_dati, adesso):
+    """La scheda «Salute»: come stanno le fonti (registro dell'ultimo giro e delle ultime 24 ore, file di casa), la
+    quarantena di archivia.py e la durata dei giri. Dal diario cifrato dei giri."""
+    giri = [g for g in (agente_dati or {}).get("giri") or [] if not g.get("errore")]
+    q = (leggi(os.path.join(sito, "diario", "quarantena.json"), {}) or {}).get("voci") or []
+    quarantena = [{"tipo": x.get("tipo"), "id": x.get("id"), "quando": x.get("quando"), "stato": x.get("stato"),
+                   "errore": str((x.get("errori") or [""])[0])[:200]} for x in q]
+    if not giri:
+        return {"stato": "vuoto", "quarantena": quarantena}
+    fz = fuso()
+    def quando(g):
+        try:
+            return dt.datetime.fromisoformat(f"{g.get('giorno')}T{g.get('ora')}").replace(tzinfo=fz)
+        except (TypeError, ValueError):
+            return None
+    recenti = [g for g in giri if (t := quando(g)) and adesso - t <= dt.timedelta(hours=24)]
+    male = lambda s: str(s).lower().startswith(("non raggiungibile", "letta solo la riserva")) or "ferma" in str(s).lower()
+    per_fonte = collections.OrderedDict()
+    for g in recenti:
+        for f in g.get("fonti") or []:
+            r = per_fonte.setdefault(f.get("nome"), {"giri": 0, "male": 0})
+            r["giri"] += 1
+            r["male"] += 1 if male(f.get("stato")) else 0
+    ultimo = giri[0]
+    fonti = []
+    for f in ultimo.get("fonti") or []:
+        r = per_fonte.get(f.get("nome"), {"giri": 0, "male": 0})
+        fonti.append({"nome": f.get("nome"), "stato": str(f.get("stato") or "")[:160], "male": male(f.get("stato")),
+                      "male_24h": r["male"], "giri_24h": r["giri"]})
+    fonti.sort(key=lambda x: (not x["male"], -x["male_24h"], x["nome"] or ""))
+    durate = [g["durata_min"] for g in recenti if isinstance(g.get("durata_min"), (int, float))]
+    casa = next((g["casa"] for g in giri if g.get("casa")), None)
+    return {"stato": "ok", "ultimo_giro": f"{ultimo.get('giorno')}T{ultimo.get('ora')}", "fonti": fonti,
+            "fonti_male": sum(1 for f in fonti if f["male"]), "ricerche": len(ultimo.get("ricerche") or []),
+            "giri_24h": len(recenti), "durata_media": round(sum(durate) / len(durate), 1) if durate else None,
+            "durata_max": max(durate) if durate else None, "casa": casa, "quarantena": quarantena}
 
 
 # ---------- cifratura ----------
@@ -789,6 +912,14 @@ def main():
             dati[nome] = {"stato": "errore", "messaggio": f"non ha risposto: {e}"}
             print(f"AVVISO {nome}:", e, file=sys.stderr)
     dati["comunicati"] = comunicati(dati.get("agente"))
+    for nome, fare in (("eventi", lambda: eventi_numeri(a.sito, adesso, dati.get("visite"), dati.get("google"))),
+                       ("salute", lambda: salute(a.sito, dati.get("agente"), adesso))):
+        try:
+            dati[nome] = fare()
+            print(f"{nome.capitalize()}:", dati[nome]["stato"])
+        except Exception as e:
+            dati[nome] = {"stato": "errore", "messaggio": f"non si legge: {e}"}
+            print(f"AVVISO {nome}:", e, file=sys.stderr)
     try:
         dati["chiusure"] = chiusure(a.sito, os.environ.get("GH_TOKEN", "").strip(), adesso, dati.get("agente"))
         print("Chiusure:", dati["chiusure"]["stato"])
