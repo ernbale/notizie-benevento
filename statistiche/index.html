@@ -1058,8 +1058,10 @@
 
   // ---------- la scheda «Posta» (25 ott 2026) ----------
   // Le caselle PEC, redazione@ e comunicati@ lette in diretta dal Pi di casa (strumenti/posta_web.py), con l'etichetta
-  // della casella. SOLO LETTURA, voluto così («io voglio solo leggerle, non inviare e altro, compreso allegati»): non si
-  // segna niente come letto, non si sposta, non si manda niente. Il Pi apre la posta solo a chi ha la chiave di queste
+  // della casella. SOLA LETTURA, voluto così («io voglio solo leggerle, non inviare e altro, compreso allegati»): aprire
+  // una mail non la segna come letta, non si sposta, non si manda niente. L'unica eccezione è il pulsante «Segna come
+  // letta» / «Segna come non letta» (lui, 25 ott 2026: «metti un pulsante letto e il contrario»), che cambia solo quel
+  // segno nella casella, anche per la webmail e il telefono. Il Pi apre la posta solo a chi ha la chiave di queste
   // statistiche; le mail non passano dal sito e qui non restano salvate. L'HTML delle mail sta in un riquadro chiuso
   // (sandbox: niente script; le immagini da internet solo se si chiede).
   var POSTA = "https://casalego.duckdns.org:36092/posta/api/";
@@ -1092,6 +1094,21 @@
       return comeBlob ? r.blob() : r.json();
     }, function (e) {
       if (e instanceof TypeError) throw new Error("Il Pi di casa non risponde da fuori. Se la connessione di casa è sulla linea di riserva, la posta torna quando rientra la fibra.");
+      throw e;
+    });
+  }
+  // un comando al Pi (POST col gettone): per ora solo «segna come letta / non letta»
+  function postaManda(percorso, dati) {
+    function prova() {
+      return fetch(POSTA + percorso, { method: "POST", cache: "no-store", body: JSON.stringify(dati),
+        headers: { Authorization: "Bearer " + gettonePosta, "Content-Type": "application/json" } });
+    }
+    return (gettonePosta ? prova() : postaEntra().then(prova)).then(function (r) {
+      return r.status === 401 ? postaEntra().then(prova) : r;
+    }).then(function (r) {
+      return r.json().catch(function () { return {}; }).then(function (j) { if (!r.ok) throw new Error(j.errore || "errore " + r.status); return j; });
+    }, function (e) {
+      if (e instanceof TypeError) throw new Error("Il Pi di casa non risponde da fuori: riprova tra poco.");
       throw e;
     });
   }
@@ -1162,7 +1179,7 @@
 
     box.textContent = "";
     box.appendChild(el("h2", "", "Posta"));
-    box.appendChild(el("p", "sotto", "Le caselle del sito, in sola lettura: qui si leggono, ma non si segna niente come letto e non si manda niente. " +
+    box.appendChild(el("p", "sotto", "Le caselle del sito, in sola lettura: qui si leggono e non si manda niente. Aprire una mail non la segna come letta: c'è il pulsante «Segna come letta» (e «come non letta»), che vale anche nella webmail e sul telefono. " +
       "Le legge in diretta il Pi di casa: le mail non passano dal sito."));
     var barra = el("div", "posta-barra"), caselleBox = el("div", "caselle"), cartelleBox = el("div", "cartelle");
     var cerca = el("input", "posta-cerca"); cerca.type = "search"; cerca.placeholder = "Cerca mittente, oggetto, testo…";
@@ -1329,9 +1346,31 @@
       var t = TIPI_MAIL[m.tipo];
       if (t) az.appendChild(el("span", "bollo " + t[1], t[0]));
       var casella = S.caselle.filter(function (c) { return c.id === m.casella; })[0];
+      if (typeof m.letto === "boolean") {   // l'unica cosa che si cambia nella casella: il segno di letta
+        var seg = el("button", "bottone", m.letto ? "Segna come non letta" : "Segna come letta"); seg.type = "button";
+        seg.style.marginLeft = "auto";
+        seg.addEventListener("click", function () {
+          seg.disabled = true; seg.textContent = "Un attimo…";
+          postaManda("segna", { casella: m.casella, cartella: m.cartella, uid: m.uid, letto: !m.letto }).then(function (d) {
+            m.letto = d.letto === true;
+            S.messaggi.forEach(function (r) { if (r.casella === m.casella && r.cartella === m.cartella && r.uid === m.uid) r.letto = m.letto; });
+            var sc = elenco.querySelector(".mail.scelta");
+            if (sc) sc.classList.toggle("nuova", !m.letto);
+            seg.textContent = m.letto ? "Segna come non letta" : "Segna come letta"; seg.disabled = false;
+            caricaCaselle().catch(function () {});   // i numeri accanto alle caselle
+          }).catch(function (e) {
+            seg.textContent = m.letto ? "Segna come non letta" : "Segna come letta"; seg.disabled = false;
+            var err = el("div", "riquadretto ko", "Non sono riuscito a cambiarla: " + e.message);
+            az.parentNode.insertBefore(err, az.nextSibling);
+            setTimeout(function () { if (err.parentNode) err.parentNode.removeChild(err); }, 6000);
+          });
+        });
+        az.appendChild(seg);
+      }
       if (casella && casella.webmail) {
         var wm = el("a", "bottone", "Apri nella webmail ↗"); wm.href = casella.webmail; wm.target = "_blank"; wm.rel = "noopener";
-        wm.style.marginLeft = "auto"; az.appendChild(wm);
+        if (typeof m.letto !== "boolean") wm.style.marginLeft = "auto";
+        az.appendChild(wm);
       }
       lettura.appendChild(az);
       lettura.appendChild(el("h3", "oggetto", m.oggetto));

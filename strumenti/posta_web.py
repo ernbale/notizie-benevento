@@ -6,9 +6,13 @@ Voluto dal proprietario il 25 ott 2026: «in statistiche una altra pagina, una s
 anche le email di notiziebenevento@pec.it, redazione@notiziebenevento.it e comunicati@notiziebenevento.it… con
 etichette da quale casella provengono»; e poi «io voglio solo leggerle, non inviare e altro, compreso allegati».
 
-SOLO LETTURA. Le caselle si aprono con EXAMINE e i messaggi con BODY.PEEK: non si segna niente come letto, non si
-sposta, non si cancella, non si manda niente. Gli allegati si aprono (immagini e PDF) o si scaricano; dei .docx e
-.odt si legge anche il testo, dei .p7m firmati (le PEC della PA) il documento che c'è dentro.
+SOLA LETTURA, tranne una cosa. Le caselle si aprono con EXAMINE e i messaggi con BODY.PEEK: aprire una mail non la segna
+come letta, e non si sposta, non si cancella, non si manda niente. L'unica cosa che la pagina cambia è il segno di
+letta di una mail, col pulsante «Segna come letta» / «Segna come non letta» (voluto dal proprietario il 25 ott 2026:
+«metti un pulsante letto e il contrario», dopo aver letto una mail nella pagina e trovato il pallino ancora acceso):
+/api/segna, solo il flag \\Seen di quel messaggio, e la cartella torna subito in sola lettura.
+Gli allegati si aprono (immagini e PDF) o si scaricano; dei .docx e .odt si legge anche il testo, dei .p7m firmati (le PEC
+della PA) il documento che c'è dentro.
 
 Perché qui e non nei dati delle statistiche: sono mail di altre persone, non vanno pubblicate sul sito neanche
 cifrate. Restano nelle caselle; il Pi le legge quando la pagina le chiede e non ne tiene copia su disco (solo in
@@ -228,6 +232,39 @@ class Casella:
                          "tipo": "", "anteprima": f"{type(e).__name__}", "mid": ""}
                 r["letto"] = "\\Seen" in testa
                 self.riassunti[(tipo, uv, u)] = r
+
+    def letto(self, tipo, uid):
+        """Se il messaggio è segnato come letto (\\Seen), o None se non c'è."""
+        with self.lock:
+            M = self.imap()
+            if not self.esamina(M, tipo):
+                raise KeyError("cartella")
+            return leggi_flag(M, [uid]).get(uid)
+
+    def segna(self, tipo, uid, letto):
+        """Segna un messaggio come letto o non letto: solo il flag \\Seen, col comando STORE sul suo uid (la cartella
+        si apre in scrittura solo per questo e torna subito in sola lettura). Restituisce il segno di adesso."""
+        with self.lock:
+            M = self.imap()
+            nome = self.trova_cartelle(M).get(tipo)
+            if not nome or M.select(f'"{nome}"')[0] != "OK":
+                raise KeyError("cartella")
+            try:
+                if uid not in leggi_flag(M, [uid]):
+                    raise KeyError("messaggio")
+                ok, _ = M.uid("STORE", str(uid), "+FLAGS.SILENT" if letto else "-FLAGS.SILENT", "(\\Seen)")
+                if ok != "OK":
+                    raise RuntimeError("Aruba non ha accettato il segno")
+                adesso = leggi_flag(M, [uid]).get(uid)
+            finally:
+                try:
+                    M.select(f'"{nome}"', readonly=True)
+                except Exception:
+                    self.chiudi()
+            for k, r in self.riassunti.items():
+                if k[0] == tipo and k[2] == uid:
+                    r["letto"] = adesso
+            return adesso
 
     def messaggio(self, tipo, uid):
         """Il messaggio intero (email.message.Message), dalla cartella in sola lettura."""
@@ -658,6 +695,10 @@ def messaggio_json(q):
            "da_nome": nome, "da": ind, "a": destinatari(vero), "data": d.isoformat(timespec="minutes") if d else "",
            "testo": testo[:400_000], "html": ripulisci_html(html_, allegati, parti)[:1_500_000] if html_ else "",
            "allegati": allegati, "tipo": tipo_mail(vero, tb, cartella)}
+    try:   # per il pulsante «Segna come letta / non letta»
+        out["letto"] = CASE[cid].letto(cartella, int(q["uid"]))
+    except Exception:
+        out["letto"] = None
     if tb in ("pec", "anomalia", "ricevuta"):   # la busta del gestore: chi l'ha certificata e quando
         out["busta"] = {"oggetto": dec(m.get("Subject")), "da": dec(m.get("From")), "data": (quando(m) or d).isoformat(timespec="minutes") if (quando(m) or d) else "",
                         "ricevuta": m.get("X-Ricevuta") or ""}
@@ -759,13 +800,27 @@ class Servizio(BaseHTTPRequestHandler):
 
     def do_POST(self):
         p, _ = self.percorso()
-        if p != "/api/entra":
+        if p not in ("/api/entra", "/api/segna"):
             return self.rispondi(404, {"errore": "non c'è"})
         try:
             n = min(int(self.headers.get("Content-Length") or 0), 4096)
             corpo = json.loads(self.rfile.read(n) or b"{}")
         except (ValueError, TypeError):
             return self.rispondi(400, {"errore": "richiesta storta"})
+        if p == "/api/segna":   # «Segna come letta / non letta»: l'unica cosa che la pagina cambia nelle caselle
+            if not self.autorizzato():
+                return self.rispondi(401, {"errore": "serve entrare"})
+            cid, cartella, uid = corpo.get("casella"), corpo.get("cartella"), corpo.get("uid")
+            if cid not in PER_ID or cartella not in dict(CARTELLE) or not isinstance(uid, int) or uid <= 0 \
+                    or not isinstance(corpo.get("letto"), bool):
+                return self.rispondi(400, {"errore": "richiesta storta"})
+            try:
+                return self.rispondi(200, {"letto": CASE[cid].segna(cartella, uid, corpo["letto"])})
+            except KeyError as e:
+                return self.rispondi(404, {"errore": f"non trovato ({e})"})
+            except Exception as e:
+                CASE[cid].chiudi()
+                return self.rispondi(502, {"errore": f"la casella non risponde ({type(e).__name__})"})
         chi = (self.headers.get("X-Forwarded-For") or self.client_address[0]).split(",")[0].strip()
         try:
             g, perche = entra(chi, str(corpo.get("chiave") or ""))
