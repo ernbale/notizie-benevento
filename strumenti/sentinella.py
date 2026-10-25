@@ -409,6 +409,14 @@ def fonti_di_casa(adesso, prova):
                 dal = None
             if not dal or adesso - dal > dt.timedelta(hours=FONTE_FERMA_ORE):
                 ferme[nome[:-5]] = (dal, f"{fonte}: {esito[:140]}", indirizzo)
+        if nome == "comunicati.json" and str(d.get("pec") or "").startswith("non letta"):   # la PEC del sito
+            try:                                                                             # (dal 25 ott 2026)
+                dal = iso(d["pec_ultima_lettura"])
+            except (KeyError, ValueError, TypeError):
+                dal = None
+            if not dal or adesso - dal > dt.timedelta(hours=FONTE_FERMA_ORE):
+                ferme["pec"] = (dal, f"PEC del sito notiziebenevento@pec.it: {d['pec'][:140]} (comunicati@ si legge lo "
+                                     "stesso; se è cambiata la password: fonti_casa.py --imposta-pec)", "")
         if nome == "comuni.json":   # gli albi pretori dei Comuni: non c'è l'ora dell'ultima lettura, la si ricorda qui
             m = re.match(r"(\d+) su (\d+)", str(d.get("albi_letti") or ""))
             if m and int(m[1]) < ALBI_MINIMI:

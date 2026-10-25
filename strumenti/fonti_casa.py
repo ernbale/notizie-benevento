@@ -628,6 +628,12 @@ def testo_allegato(tipo, a):
 
 POSTA_CONF = os.path.join(CARTELLA, "posta.conf")   # indirizzo e password della casella, li scrive --imposta-posta
 POSTA_SERVER = "imaps.aruba.it"
+# La PEC del sito (notiziebenevento@pec.it, comprata il 25 ott 2026: lui «facciamo la pec cosi prendiamo altri
+# ufficiali»): si legge insieme a comunicati@, se c'è pec.conf (lo scrive --imposta-pec). Se non si legge, comunicati@
+# si legge lo stesso e lo si scrive in «pec» di comunicati.json (la sentinella avvisa dopo 3 ore).
+PEC_CONF = os.path.join(CARTELLA, "pec.conf")
+PEC_SERVER = "imaps.pec.aruba.it"
+PEC_INDIRIZZO = "notiziebenevento@pec.it"
 # Nella casella arrivano anche cose che non sono comunicati: rimbalzi, risposte automatiche, avvisi di Aruba e le
 # risposte alla nostra mail agli uffici stampa del 24 ott 2026. Non vanno all'agente: il 24 ott alle 12:06 il giro ha
 # visto 13 rimbalzi e un comunicato vero (CISL FP) e ha scritto «0 utili, solo risposte automatiche».
@@ -653,6 +659,36 @@ AVVISO_LEGALE = re.compile(r"d\.\s?lgs\.?\s*(n\.?\s*)?196|196/2003|gdpr|2016/679
 ALLEGATO_DOCUMENTO = re.compile(r"\.(pdf|docx?|odt|rtf|txt|pptx?|xlsx?)$", re.I)
 IMMAGINE_GRANDE = 150_000   # byte: una locandina sì, il logo della firma no
 PROSA_MIN = 200   # caratteri di frasi vere scritte da loro: più di un «grazie, vi abbiamo aggiunti» (nel dubbio passa)
+
+
+def nome_allegato(parte):
+    """Il nome di un allegato, anche quando il programma di posta lo scrive codificato: «=?utf-8?Q?comunicato_stampa_-_
+    ADOTTATO.docx?=» della Pro Loco di Fragneto Monforte, 25 ott 2026 (così non si capiva che era un .docx)."""
+    nome = parte.get_filename() or ""
+    if "=?" in nome:
+        try:
+            import email.header
+            nome = str(email.header.make_header(email.header.decode_header(nome)))
+        except (ValueError, LookupError, UnicodeDecodeError):
+            pass
+    return nome.strip()
+
+
+def testo_documento(dati, nome):
+    """Il testo di un allegato Word (.docx) o LibreOffice (.odt), che sono zip con dentro l'XML; '' se non si legge.
+    Dal 25 ott 2026: il comunicato della Pro Loco di Fragneto Monforte era solo nel .docx e il giro lampo l'ha scartato."""
+    import io
+    import zipfile
+    try:
+        with zipfile.ZipFile(io.BytesIO(dati)) as z:
+            x = z.read("word/document.xml" if nome.lower().endswith(".docx") else "content.xml").decode("utf-8", "replace")
+    except (zipfile.BadZipFile, KeyError, OSError, ValueError):
+        return ""
+    x = re.sub(r"<(w:tab|text:tab)\b[^>]*/>", "\t", x)
+    x = re.sub(r"<text:s\b[^>]*/>", " ", x)
+    x = re.sub(r"<(w:br|w:cr|text:line-break)\b[^>]*/>|</(w:p|text:p|text:h)>", "\n", x)
+    x = html.unescape(re.sub(r"<[^>]+>", "", x))
+    return re.sub(r"\n{3,}", "\n\n", re.sub(r"[ \t]+\n", "\n", x)).strip()
 
 
 def id_posta(link):
@@ -682,7 +718,7 @@ def contenuto_risposta(m):
     grande allegati, o testo scritto da loro (prima della nostra mail citata; contano solo le righe lunghe, non quelle
     della firma, le intestazioni della citazione e gli avvisi legali fino alla riga vuota) di almeno PROSA_MIN caratteri."""
     for parte in m.walk():
-        nome = parte.get_filename() or ""
+        nome = nome_allegato(parte)
         if ALLEGATO_DOCUMENTO.search(nome):
             return f"allegato {nome}"
         if parte.get_content_maintype() == "image" and len(parte.get_payload(decode=True) or b"") > IMMAGINE_GRANDE:
@@ -700,19 +736,24 @@ def contenuto_risposta(m):
 
 
 def _testo_mail(m):
-    """Il testo di una mail (la parte di testo semplice, se no l'HTML ripulito) e quello degli allegati PDF."""
-    corpo, allegati, pdf = "", [], []
+    """Il testo di una mail (la parte di testo semplice, se no l'HTML ripulito) e quello degli allegati PDF, Word (.docx)
+    e LibreOffice (.odt)."""
+    corpo, allegati, documenti = "", [], []
     for parte in m.walk():
-        tipo, nome = parte.get_content_type(), parte.get_filename()
+        tipo, nome = parte.get_content_type(), nome_allegato(parte)
         if nome:
             allegati.append(nome)
             if tipo == "application/pdf" or nome.lower().endswith(".pdf"):
                 try:   # pdftotext (poppler) se c'è sul Pi; se no l'allegato resta solo nel nome
                     r = subprocess.run(["pdftotext", "-layout", "-", "-"], input=parte.get_payload(decode=True),
                                        capture_output=True, timeout=30)
-                    pdf.append(f"[allegato {nome}]\n" + r.stdout.decode("utf-8", "replace"))
+                    documenti.append(f"[allegato {nome}]\n" + r.stdout.decode("utf-8", "replace"))
                 except (OSError, subprocess.SubprocessError):
                     pass
+            elif nome.lower().endswith((".docx", ".odt")):
+                t = testo_documento(parte.get_payload(decode=True) or b"", nome)
+                if t:
+                    documenti.append(f"[allegato {nome}]\n" + t)
             continue
         if tipo in ("text/plain", "text/html"):
             t = parte.get_payload(decode=True) or b""
@@ -720,7 +761,7 @@ def _testo_mail(m):
             t = testo(t) if tipo == "text/html" else t
             if t.strip() and (not corpo or tipo == "text/plain"):   # un testo semplice vuoto non copre l'HTML
                 corpo = t
-    tutto = re.sub(r"\n{3,}", "\n\n", (corpo.strip() + "\n\n" + "\n\n".join(pdf)).strip())
+    tutto = re.sub(r"\n{3,}", "\n\n", (corpo.strip() + "\n\n" + "\n\n".join(documenti)).strip())
     return tutto[:TESTO_MAX], allegati
 
 
@@ -761,7 +802,7 @@ def immagini_mail(m, ident):
             break
         if parte.is_multipart():
             continue
-        nome = parte.get_filename() or ""
+        nome = nome_allegato(parte)
         dati = parte.get_payload(decode=True) or b""
         try:
             if parte.get_content_maintype() == "image" and len(dati) >= IMMAGINE_MIN:
@@ -801,33 +842,71 @@ def pulisci_allegati(voci):
             shutil.rmtree(os.path.join(cartella, d), ignore_errors=True)
 
 
+def busta_pec(m):
+    """Una mail arrivata come PEC: (la mail vera, tipo). La PEC arriva in una busta del gestore (oggetto «POSTA
+    CERTIFICATA: …», mittente «Per conto di: …», intestazione X-Trasporto) con la mail vera allegata come postacert.eml;
+    anche una mail normale arrivata alla PEC («ANOMALIA MESSAGGIO») è dentro postacert.eml. Le ricevute di accettazione
+    e di consegna delle PEC che mandiamo noi hanno l'intestazione X-Ricevuta. tipo: "ricevuta", "pec" (mandata da una
+    PEC), "anomalia" (da una casella normale) o "" (una mail normale: resta com'è)."""
+    if m.get("X-Ricevuta"):
+        return m, "ricevuta"
+    trasporto = (m.get("X-Trasporto") or "").strip().lower()
+    if trasporto:
+        for parte in m.walk():
+            if parte.get_content_type() == "message/rfc822" and (parte.get_filename() or "").lower() == "postacert.eml":
+                return parte.get_payload(0), "pec" if trasporto == "posta-certificata" else "anomalia"
+    return m, ""
+
+
 def posta(vecchie):
-    """I comunicati arrivati a comunicati@notiziebenevento.it (Aruba): ultimi 7 giorni, casella aperta in sola lettura
-    (non si segna niente come letto). Del mittente si tengono nome e dominio, non l'indirizzo."""
-    import email
-    import email.header
-    import email.utils as eu
-    import imaplib
+    """I comunicati arrivati a comunicati@notiziebenevento.it e alla PEC del sito (Aruba): ultimi 7 giorni, caselle
+    aperte in sola lettura (non si segna niente come letto). Del mittente si tengono nome e dominio, non l'indirizzo."""
     try:
         with open(POSTA_CONF, encoding="utf-8") as f:
             conf = json.load(f)
     except OSError:
         raise RuntimeError("casella non ancora collegata (manca posta.conf: fonti_casa.py --imposta-posta)") from None
-    dec = lambda x: str(email.header.make_header(email.header.decode_header(x or "")))
     voci = []
     scartate = [l for l, v in vecchie.items() if not v]   # le mail già riconosciute come non comunicati
+    viste = set(vecchie)
+    _casella(conf, POSTA_SERVER, vecchie, viste, voci, scartate)
+    extra = {}
+    if os.path.exists(PEC_CONF):   # la PEC: se non si legge, comunicati@ resta letta e lo si dice in «pec»
+        try:
+            with open(PEC_CONF, encoding="utf-8") as f:
+                _casella(json.load(f), PEC_SERVER, vecchie, viste, voci, scartate)
+            extra["pec"] = "letta"
+        except Exception as e:
+            extra["pec"] = f"non letta: {type(e).__name__}: {e}"[:200]
+    return voci, {"scartate": scartate[-300:], **extra}
+
+
+def _casella(conf, server, vecchie, viste, voci, scartate):
+    """Le mail di una casella (gli ultimi 7 giorni, le ultime 40) in voci; i non comunicati in scartate. viste: i link
+    già noti, anche di questo giro (lo stesso comunicato mandato a comunicati@ e alla PEC esce una volta)."""
+    import email
+    import email.header
+    import email.utils as eu
+    import imaplib
+    dec = lambda x: str(email.header.make_header(email.header.decode_header(x or "")))
     adesso = dt.datetime.now(fuso()).isoformat(timespec="minutes")
-    with imaplib.IMAP4_SSL(conf.get("server", POSTA_SERVER), 993, timeout=60) as M:
+    with imaplib.IMAP4_SSL(conf.get("server", server), 993, timeout=60) as M:
         M.login(conf["utente"], conf["password"])
         M.select("INBOX", readonly=True)
         dal = (dt.date.today() - dt.timedelta(days=7)).strftime("%d-%b-%Y")
         _, num = M.search(None, "SINCE", dal)
         for n in num[0].split()[-40:]:
             _, dati = M.fetch(n, "(BODY.PEEK[])")
-            m = email.message_from_bytes(dati[0][1])
-            mid = (m.get("Message-ID") or f"{m.get('Date')}-{m.get('Subject')}").strip()
-            link = "posta:" + re.sub(r"[<>\s]", "", mid)
-            if link in vecchie:
+            busta = email.message_from_bytes(dati[0][1])
+            m, tipo = busta_pec(busta)
+            link_busta, link = (
+                "posta:" + re.sub(r"[<>\s]", "", (x.get("Message-ID") or f"{x.get('Date')}-{x.get('Subject')}").strip())
+                for x in (busta, m))
+            if link in viste or link_busta in viste:
+                continue
+            viste.update((link, link_busta))
+            if tipo == "ricevuta":
+                scartate.append(link_busta)
                 continue
             nome, indirizzo = eu.parseaddr(dec(m.get("From")))
             mittente, dominio = nome or indirizzo.split("@")[0], indirizzo.rsplit("@", 1)[-1].lower()
@@ -842,21 +921,25 @@ def posta(vecchie):
             v = {"id": id_posta(link), "titolo": dec(m.get("Subject")) or "(senza oggetto)", "link": link,
                  "data": quando, "arrivata": adesso, "mittente": mittente, "dominio": dominio,
                  "allegati": allegati, "testo": corpo}
+            if tipo == "pec":   # mandata da una casella PEC: il mittente è certificato dal gestore
+                v["pec"] = True
             immagini = immagini_mail(m, v["id"])
             if immagini:
                 v["immagini"] = immagini
             voci.append(v)
-    return voci, {"scartate": scartate[-300:]}
 
 
-def imposta_posta():
-    """Chiede indirizzo e password della casella (la password non si vede), prova ad entrare e li salva sul Pi."""
+def imposta_posta(pec=False):
+    """Chiede indirizzo e password della casella (la password non si vede), prova ad entrare e li salva sul Pi.
+    pec: la PEC del sito (pec.conf; con la verifica in 2 passaggi di Aruba va la password per i programmi di posta)."""
     import getpass
     import imaplib
-    utente = input("Indirizzo della casella [comunicati@notiziebenevento.it]: ").strip() or "comunicati@notiziebenevento.it"
+    predefinito, server, file = (PEC_INDIRIZZO, PEC_SERVER, PEC_CONF) if pec else \
+        ("comunicati@notiziebenevento.it", POSTA_SERVER, POSTA_CONF)
+    utente = input(f"Indirizzo della casella [{predefinito}]: ").strip() or predefinito
     password = getpass.getpass("Password della casella (non si vede mentre la scrivi): ")
     try:
-        with imaplib.IMAP4_SSL(POSTA_SERVER, 993, timeout=60) as M:
+        with imaplib.IMAP4_SSL(server, 993, timeout=60) as M:
             M.login(utente, password)
             M.select("INBOX", readonly=True)
     except Exception as e:
@@ -864,12 +947,12 @@ def imposta_posta():
     os.makedirs(CARTELLA, exist_ok=True)
     vecchio = os.umask(0o077)
     try:
-        with open(POSTA_CONF, "w", encoding="utf-8") as f:
-            json.dump({"utente": utente, "password": password, "server": POSTA_SERVER}, f)
+        with open(file, "w", encoding="utf-8") as f:
+            json.dump({"utente": utente, "password": password, "server": server}, f)
     finally:
         os.umask(vecchio)
-    os.chmod(POSTA_CONF, 0o600)
-    print(f"✓ casella {utente} collegata: dal prossimo giro (ogni 30 minuti) i comunicati vanno in comunicati.json")
+    os.chmod(file, 0o600)
+    print(f"✓ casella {utente} collegata: dal prossimo giro (ogni 5 minuti) i comunicati vanno in comunicati.json")
 
 
 # ---------------------------------------------------------------- le stagioni di teatri e concerti
@@ -1064,8 +1147,8 @@ FONTI = {
     "comuni": ("I siti dei 78 Comuni della provincia, avvisi e notizie nuovi", "siti dei Comuni", comuni, 4),
     "albo": ("Albo pretorio del Comune di Benevento, ordinanze", ALBO_BN, albo_bn, 7),
     "regione": ("Regione Campania, comunicati stampa col testo", REGIONE, regione, 4),
-    "comunicati": ("Comunicati arrivati per posta a comunicati@notiziebenevento.it", "comunicati@notiziebenevento.it",
-                   posta, 7),
+    "comunicati": ("Comunicati arrivati per posta a comunicati@notiziebenevento.it e alla PEC notiziebenevento@pec.it",
+                   "comunicati@notiziebenevento.it", posta, 7),
     "stagioni": ("Stagioni di teatri e concerti: le date ufficiali degli spettacoli", "pagine ufficiali delle stagioni",
                  stagioni, 1),
 }
@@ -1101,6 +1184,10 @@ def leggi(nome, adesso):
     if nome == "comunicati":   # le voci di prima che non sono comunicati (rimbalzi…) escono; a tutte il loro id
         if "scartate" not in dati:
             dati["scartate"] = prima.get("scartate", [])
+        if dati.get("pec") or prima.get("pec"):   # la PEC: da quando non si legge (per la sentinella)
+            dati.setdefault("pec", prima.get("pec", ""))
+            dati["pec_ultima_lettura"] = dati["controllato"] if dati["pec"] == "letta" and \
+                not dati["esito"].startswith("non raggiungibile") else prima.get("pec_ultima_lettura", "")
         for l, v in list(tutte.items()):
             if non_comunicato(v.get("titolo"), v.get("mittente"), v.get("dominio")):
                 del tutte[l]
@@ -1143,6 +1230,10 @@ incompleto. La casella dei comunicati la legge ogni 5 minuti.
   (`scartate`: solo i loro riferimenti). Appena ne arriva uno il Pi fa partire il giro lampo (COMUNICATI.md del sito).
   `immagini` (dal 25 ott 2026): le immagini grandi della mail e la prima pagina dei PDF di 1-2 pagine, in JPEG nella
   cartella `allegati/<id>/` (`file`, `da` = nome dell'allegato, `larghezza`, `altezza`): le locandine degli eventi.
+  Dal 25 ott 2026 ci sono anche le mail arrivate alla PEC del sito, notiziebenevento@pec.it, già tolte dalla busta del
+  gestore (oggetto, mittente e testo sono quelli della mail vera; niente ricevute di accettazione e consegna):
+  `pec: true` = mandata da una casella PEC, il mittente è certificato. `pec` del file = se la PEC si è letta,
+  `pec_ultima_lettura` = l'ultima volta che si è letta.
 - `stagioni.json` (dal 25 ott 2026): le date degli spettacoli scritte sulle pagine ufficiali delle stagioni (Città
   Spettacolo, Accademia di Santa Sofia, Teatro San Marco, Solot, la biglietteria Clappit), da ieri in poi: `data` = il
   giorno dello spettacolo, `ora` o `orari` se scritti, `titolo`, `luogo`, `comune`, `fonte` (chi la pubblica),
@@ -1175,11 +1266,12 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--prova", action="store_true", help="scarica e stampa, senza pubblicare")
     ap.add_argument("--imposta-posta", action="store_true", help="collega la casella dei comunicati (chiede la password)")
+    ap.add_argument("--imposta-pec", action="store_true", help="collega la PEC del sito (chiede la password)")
     ap.add_argument("--solo", nargs="+", choices=list(FONTI), help="legge solo queste fonti e pubblica solo se c'è "
                     "qualcosa di nuovo (dal cron ogni 5 minuti per la posta)")
     a = ap.parse_args()
-    if a.imposta_posta:
-        return imposta_posta()
+    if a.imposta_posta or a.imposta_pec:
+        return imposta_posta(pec=a.imposta_pec)
     global PROVA
     PROVA = a.prova
     adesso = dt.datetime.now(fuso())
