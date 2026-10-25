@@ -1,7 +1,85 @@
 {
- "aggiornato": "2026-10-25T13:09+01:00",
+ "aggiornato": "2026-10-25T14:10+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "san-salvatore-telesino-potito-starace-siracusa-tennis-lab",
+   "titolo": "San Salvatore Telesino, l'ex tennista azzurro Potito Starace ospite dell'ASD Siracusa Tennis Lab",
+   "titolo_google": "San Salvatore Telesino, Potito Starace incontra i giovani",
+   "sintesi": "Domenica mattina, 25 ottobre, l'ex tennista Potito Starace, già numero 27 del mondo e giocatore della Nazionale in Coppa Davis, è stato ospite dell'ASD Siracusa Tennis Lab all'Open Spazio Sportivo di San Salvatore Telesino, soprattutto per i giovani atleti.",
+   "categoria": "sport",
+   "sport": "tennis",
+   "zona": "telesina",
+   "luogo": "San Salvatore Telesino",
+   "pubblicato": "2026-10-25T13:49+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24 Sport",
+     "url": "https://sport.ntr24.tv/2026/10/25/il-grande-tennis-nel-sannio-potito-starace-ospite-dellasd-siracusa-tennis-lab/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/il-grande-tennis-nel-sannio-potito-starace-ospite-dellasd-siracusa-tennis-lab/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Domenica mattina, 25 ottobre, Potito Starace, uno dei tennisti italiani più conosciuti degli ultimi vent'anni, è stato ospite dell'ASD Siracusa Tennis Lab a San Salvatore Telesino, in Valle Telesina. L'incontro si è svolto all'Open Spazio Sportivo, un centro per lo sport del paese.",
+      "fonti": [
+       "NTR24 Sport",
+       "TV7 Benevento"
+      ]
+     },
+     {
+      "testo": "Starace è stato numero 27 della classifica mondiale ATP e ha giocato a lungo per l'Italia in Coppa Davis. Oggi lavora come tecnico e allenatore: le due testate ricordano il Foro Italico di Roma e il lavoro accanto a Flavio Cobolli.",
+      "fonti": [
+       "NTR24 Sport",
+       "TV7 Benevento"
+      ]
+     },
+     {
+      "testo": "L'idea è venuta a Cosimo Romano e Lorenzo Leone e l'ha organizzata il maestro nazionale Salvatore Siracusa con la sua associazione, con l'aiuto di Luca Mattei dell'Open Spazio Sportivo. L'incontro era pensato soprattutto per i ragazzi che giocano a tennis, che hanno potuto conoscere da vicino un campione.",
+      "fonti": [
+       "NTR24 Sport",
+       "TV7 Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Starace ospite domenica mattina 25 ottobre dell'ASD Siracusa Tennis Lab all'Open Spazio Sportivo di San Salvatore Telesino, su idea di Cosimo Romano e Lorenzo Leone.",
+      "fonti": [
+       "NTR24 Sport",
+       "TV7 Benevento"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Quanti ragazzi hanno partecipato e se ci saranno altri incontri di questo tipo."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24 Sport",
+      "titolo": "Il grande tennis nel Sannio: Potito Starace ospite dell’ASD Siracusa Tennis Lab",
+      "url": "https://sport.ntr24.tv/2026/10/25/il-grande-tennis-nel-sannio-potito-starace-ospite-dellasd-siracusa-tennis-lab/",
+      "data": "25 ott, 12:25"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Il grande tennis nel Sannio: Potito Starace ospite dell’ASD Siracusa Tennis Lab",
+      "url": "https://www.tvsette.net/il-grande-tennis-nel-sannio-potito-starace-ospite-dellasd-siracusa-tennis-lab/",
+      "data": "25 ott, 13:49"
+     }
+    ]
+   },
+   "immagine": "tennis",
+   "foto": "tennis-6"
+  },
   {
    "id": "castelvenere-furgone-rubato-rame-inseguimento-carabinieri",
    "titolo": "Telesina, non si ferma all'alt dei Carabinieri a Solopaca: furgone rubato abbandonato a Castelvenere, dentro c'era rame",
@@ -628,6 +706,14 @@
     {
      "nome": "Cronache del Sannio",
      "url": "https://www.cronachedelsannio.it/sannionews24/bambino-investito-da-bici-a-corso-garibaldi-mastella-intransigenza-per-chi-viola-regole/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/442111/benevento-investimento-corso-mastella-controlli-severi-e-tolleranza-zero.shtml"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/il-sindaco-mastella-dopo-linvestimento-lungo-il-corso-scritto-al-comandante-esortandolo-allintransigenza-e-alla-massima-severita-per-chi-viola-le-regole-vigenti/"
     }
    ],
    "articolo": {
@@ -637,14 +723,18 @@
       "fonti": [
        "NTR24",
        "Cronache del Sannio",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Ottopagine",
+       "TV7 Benevento"
       ],
       "giorno": "2026-10-25"
      },
      {
       "testo": "Mastella aggiunge che secondo lui nei fine settimana il corso dovrebbe essere riservato solo ai pedoni, perché le famiglie possano passeggiare in sicurezza. Al bambino ha augurato una pronta guarigione.",
       "fonti": [
-       "Cronache del Sannio"
+       "Cronache del Sannio",
+       "Ottopagine",
+       "TV7 Benevento"
       ],
       "giorno": "2026-10-25"
      },
@@ -695,7 +785,8 @@
       "fatto": "Il sindaco scrive al comandante della Polizia municipale per chiedere più controlli sul corso.",
       "fonti": [
        "NTR24",
-       "Cronache del Sannio"
+       "Cronache del Sannio",
+       "Ottopagine"
       ]
      }
     ],
@@ -706,6 +797,15 @@
        "Anteprima24",
        "BeneventoNews24",
        "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "Il sindaco ha scritto al comandante della Polizia municipale, Giuseppe Vecchio, per chiedere pattuglie fisse sul corso e il rispetto del divieto per le bici; per lui il corso nei fine settimana dovrebbe essere solo pedonale.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio",
+       "Ottopagine",
+       "TV7 Benevento"
       ]
      }
     ],
@@ -745,6 +845,18 @@
       "titolo": "Bambino investito da bici a Corso Garibaldi. Mastella: “Intransigenza per chi viola regole”",
       "url": "https://www.cronachedelsannio.it/sannionews24/bambino-investito-da-bici-a-corso-garibaldi-mastella-intransigenza-per-chi-viola-regole/",
       "data": "25 ott, 12:20"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Benevento, investimento Corso: Mastella \"controlli severi e tolleranza zero\"",
+      "url": "https://www.ottopagine.it/bn/attualita/442111/benevento-investimento-corso-mastella-controlli-severi-e-tolleranza-zero.shtml",
+      "data": "25 ott, 12:28"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Il sindaco Mastella dopo l’investimento lungo il Corso: ” scritto al Comandante, esortandolo all’intransigenza e alla massima severità per chi viola le regole vigenti”",
+      "url": "https://www.tvsette.net/il-sindaco-mastella-dopo-linvestimento-lungo-il-corso-scritto-al-comandante-esortandolo-allintransigenza-e-alla-massima-severita-per-chi-viola-le-regole-vigenti/",
+      "data": "25 ott, 12:55"
      }
     ],
     "aggiornamento": {
@@ -3333,6 +3445,10 @@
     {
      "nome": "Ottopagine",
      "url": "https://www.ottopagine.it/bn/cronaca/442041/in-auto-con-un-beauty-case-contenente-la-cocaina-arrestata-una-26enne.shtml"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/arrestata-26enne-di-montesarchio-con-230-gr-di-cocaina-domani-udienza-di-convalida/"
     }
    ],
    "articolo": {
@@ -3341,7 +3457,8 @@
       "testo": "La 26enne di Montesarchio arrestata dai Carabinieri con circa 230 grammi di cocaina resta agli arresti domiciliari: lunedì 26 ottobre, in mattinata, c'è l'udienza di convalida dell'arresto davanti al giudice. Lo scrivono domenica 25 ottobre NTR24 e BeneventoNews24, che confermano i dettagli: i militari della stazione di Montesarchio l'hanno fermata mentre era in auto e sul sedile hanno trovato un borsello da donna con quattro involucri di cellophane. È accusata di detenzione di droga a fini di spaccio; i domiciliari li ha disposti la Procura. All'udienza sarà assistita dal suo avvocato di fiducia.",
       "fonti": [
        "NTR24 (25/10)",
-       "BeneventoNews24 (25/10)"
+       "BeneventoNews24 (25/10)",
+       "TV7 Benevento"
       ],
       "giorno": "2026-10-25"
      },
@@ -3474,6 +3591,12 @@
       "titolo": "Montesarchio, 26enne arrestata con 230 gr di cocaina: domani udienza di convalida",
       "url": "https://www.beneventonews24.it/2026/10/25/montesarchio-26enne-arrestata-con-230-gr-di-cocaina-domani-udienza-di-convalida/",
       "data": "25 ott, 11:55"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Arrestata 26enne di Montesarchio con 230 gr di cocaina: domani udienza di convalida.",
+      "url": "https://www.tvsette.net/arrestata-26enne-di-montesarchio-con-230-gr-di-cocaina-domani-udienza-di-convalida/",
+      "data": "25 ott, 12:36"
      }
     ],
     "aggiornamento": {
@@ -4750,6 +4873,14 @@
     {
      "nome": "InfoSannio",
      "url": "https://www.infosannionews.it/sport/2026/la-pasta-rummo-concede-il-bis-superato-in-tre-set-il-s-giuseppe-vesuviano.html"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/25/volley-la-pasta-rummo-accademia-concede-il-bis-vittoria-a-san-giuseppe-vesuviano/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/la-pasta-rummo-concede-il-bis-superato-in-tre-set-il-s-giuseppe-vesuviano/"
     }
    ],
    "articolo": {
@@ -4760,7 +4891,9 @@
        "Accademia Volley Benevento (24/10)",
        "NTR24 Sport",
        "Anteprima24",
-       "InfoSannio"
+       "InfoSannio",
+       "BeneventoNews24",
+       "TV7 Benevento"
       ],
       "giorno": "2026-10-24"
      },
@@ -4827,7 +4960,9 @@
        "Accademia Volley Benevento (24/10)",
        "NTR24 Sport",
        "Anteprima24",
-       "InfoSannio"
+       "InfoSannio",
+       "BeneventoNews24",
+       "TV7 Benevento"
       ]
      }
     ],
@@ -4865,6 +5000,18 @@
       "titolo": "La Pasta Rummo concede il bis: superato in tre set il S. Giuseppe Vesuviano",
       "url": "https://www.infosannionews.it/sport/2026/la-pasta-rummo-concede-il-bis-superato-in-tre-set-il-s-giuseppe-vesuviano.html",
       "data": "25 ott, 11:23"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Volley, la Pasta Rummo Accademia concede il bis: vittoria a San Giuseppe Vesuviano",
+      "url": "https://www.beneventonews24.it/2026/10/25/volley-la-pasta-rummo-accademia-concede-il-bis-vittoria-a-san-giuseppe-vesuviano/",
+      "data": "25 ott, 12:10"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "La Pasta Rummo concede il bis: superato in tre set il S. Giuseppe Vesuviano",
+      "url": "https://www.tvsette.net/la-pasta-rummo-concede-il-bis-superato-in-tre-set-il-s-giuseppe-vesuviano/",
+      "data": "25 ott, 13:53"
      }
     ],
     "aggiornamento": {
