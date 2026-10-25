@@ -1109,7 +1109,9 @@
 
   function filtrate() {
     return (dati.notizie || []).filter(function (n) {
-      var cat = filtroCat ? n.categoria === filtroCat : n.categoria !== "sport" || n.rilevante;
+      // in prima pagina lo sport sta nel suo riquadro; nell'elenco solo se è rilevante o viene da un comunicato
+      // arrivato per posta (lui, 25 ott 2026: «i comunicati compreso sport mostrali anche qui»)
+      var cat = filtroCat ? n.categoria === filtroCat : n.categoria !== "sport" || n.rilevante || (n.comunicati || []).length > 0;
       return cat && (!filtroZona || n.zona === filtroZona) && (filtroCat !== "sport" || !filtroSport || n.sport === filtroSport);
     }).sort(function (a, b) { return tempo(b) - tempo(a); });
   }
