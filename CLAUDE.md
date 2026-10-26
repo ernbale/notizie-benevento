@@ -35,6 +35,17 @@ claude.ai/code dal telefono): qui c'è quello che serve per riprendere il lavoro
 Dopo una modifica a `strumenti/`: `python3 -m py_compile` sui file toccati e una prova sui dati veri (come al punto 3),
 prima del push. Un errore in `archivia.py` ferma il giro di ogni ora.
 
+## Controllare le sentinelle da qualsiasi posto
+Il Pi di casa (vedetta, fonti, posta in diretta, giro lampo, sentinella) è solo nella LAN di casa, ma lascia tracce
+che si leggono da ovunque:
+- **Il Pi è vivo?** Nel repo ernbale/notizie-benevento-fonti il commit «Fonti lette da casa alle HH:MM» arriva ogni 5
+  minuti; in ogni file `controllato` ed `esito` (chiusure.json: «Comuni 73/78 · albi 57/57…», ufficiali.json: «23 fonti
+  su 23»).
+- **Il sito è al passo?** `GH_TOKEN="$(gh auth token)" python3 strumenti/sentinella.py --prova` (non tocca niente).
+- **Allarmi del Pi**: le esecuzioni in rosso di `.github/workflows/sentinella.yml` lanciate a mano (workflow_dispatch)
+  sono gli avvisi del Pi: `gh run view <id> --log | grep AVVISO_PI`.
+- La posta in diretta (posta_diretta.py) e le risposte di cortesia (risposte.py) da fuori non si vedono: solo dal Pi.
+
 ## Facebook
 Un post uscito senza immagine (l'anteprima della notizia è stata rinominata dopo il post): sulla Pagina, menu «…» del
 post → «Aggiorna l'allegato della condivisione» → Salva. Non toccare il sito per questo.
