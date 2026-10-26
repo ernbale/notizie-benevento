@@ -61,6 +61,7 @@ import socket
 import sys
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -351,10 +352,16 @@ def curiosita(gh, adesso, pi, sito, prova):
                 mancano.append("sul sito")
         except Exception:
             mancano.append("sul sito (non risponde)")
-        req = urllib.request.Request("https://t.me/s/notiziebenevento", headers={"User-Agent": "Mozilla/5.0 (notiziebenevento.it)"})
-        with apri(req) as r:
-            if f"notiziebenevento.it/curiosita/{di_oggi['slug']}/" not in r.read().decode("utf-8", "replace"):
-                mancano.append("sul canale Telegram")
+        # l'anteprima del canale ha solo gli ultimi 20 messaggi: se non è lì la si cerca (26 ott 2026: la curiosità delle
+        # 12 c'era, ma alle 15 era già fuori dall'anteprima e la sentinella rilanciava la pubblicazione ogni mezz'ora)
+        link = f"notiziebenevento.it/curiosita/{di_oggi['slug']}/"
+        for u in ("https://t.me/s/notiziebenevento", "https://t.me/s/notiziebenevento?q=" + urllib.parse.quote(di_oggi["slug"])):
+            req = urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0 (notiziebenevento.it)"})
+            with apri(req) as r:
+                if link in r.read().decode("utf-8", "replace"):
+                    break
+        else:
+            mancano.append("sul canale Telegram")
         if mancano:
             problemi.append(f"la curiosità di oggi («{di_oggi['titolo'][:50]}») alle {adesso:%H:%M} non è ancora "
                             + " né ".join(mancano))
