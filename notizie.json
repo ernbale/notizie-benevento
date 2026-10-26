@@ -3,6 +3,78 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "airola-incendio-controlli-diossine-latte-forchia",
+   "titolo": "Incendio di Airola, nuovi controlli sugli alimenti: diossine nel latte di pecora a Forchia",
+   "titolo_google": "Incendio di Airola, diossine nel latte di pecora a Forchia",
+   "sintesi": "Dopo l'incendio di Airola, le analisi sugli alimenti uscite dal 19 al 23 ottobre hanno trovato una nuova irregolarità per diossine nel latte di pecora a Forchia. In regola le uova di Paolisi e il latte di bufala di Bonea; per tre caciotte si attendono le analisi di conferma.",
+   "categoria": "altro",
+   "zona": "caudina",
+   "immagine": "pecore",
+   "luogo": "Airola e Valle Caudina",
+   "pubblicato": "2026-10-26",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Regione Campania",
+     "url": "https://www.regione.campania.it/comunicazione/area-stampa/comunicati/26102026-comunicato-n-674-incendio-airola-aggiornamento-sui-controlli-suoli-produzioni-agroalimentari",
+     "ufficiale": true
+    }
+   ],
+   "comunicati": [
+    "u0b9a0e60159"
+   ],
+   "articolo": {
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Regione Campania",
+      "titolo": "26/10/2026 - Comunicato n. 674 - Incendio di Airola: aggiornamento sui controlli di suoli e produzioni agroalimentari",
+      "url": "https://www.regione.campania.it/comunicazione/area-stampa/comunicati/26102026-comunicato-n-674-incendio-airola-aggiornamento-sui-controlli-suoli-produzioni-agroalimentari",
+      "data": "26 ott",
+      "ufficiale": true
+     }
+    ],
+    "racconto": [
+     {
+      "testo": "Dopo l'incendio di Airola, in Valle Caudina, i controlli sugli alimenti hanno trovato una nuova irregolarità per diossine nel latte di pecora a Forchia. Le diossine sono sostanze inquinanti che si formano quando bruciano certi materiali. È quello che dice l'ultimo aggiornamento della Regione Campania, basato sui cinque rapporti di analisi emessi dal 19 al 23 ottobre.",
+      "fonti": [
+       "Regione Campania"
+      ]
+     },
+     {
+      "testo": "Nelle stesse analisi sono risultate in regola le uova di Paolisi e il latte di bufala di Bonea. A Forchia sono in regola anche due campioni di olive, ma con valori superiori ai «livelli di azione». Per tre caciotte il primo esame ha dato un risultato non conforme: sono in corso le analisi di conferma e i risultati non sono ancora definitivi.",
+      "fonti": [
+       "Regione Campania"
+      ]
+     },
+     {
+      "testo": "Restano le irregolarità già comunicate: due campioni di latte di pecora a Cervinara, uno di erba da pascolo ad Airola, uno di trinciato di mais (il mais tritato per gli animali) a Bonea e uno di erba da pascolo a Forchia. Restano confermati anche gli esiti favorevoli, che valgono per i singoli campioni esaminati: uva, melanzane ed erba medica ad Airola, uva a San Martino Valle Caudina e zucca a Cervinara.",
+      "fonti": [
+       "Regione Campania"
+      ]
+     },
+     {
+      "testo": "Per i terreni agricoli l'ultimo prospetto dell'Arpac, l'agenzia regionale per l'ambiente, è aggiornato al 13 ottobre: riporta nove risultati definitivi senza superamenti delle soglie di contaminazione per i parametri esaminati. Un'altra registrazione è ancora in verifica e altre 14 sono in lavorazione.",
+      "fonti": [
+       "Regione Campania"
+      ]
+     },
+     {
+      "testo": "I controlli sono fatti insieme dall'Istituto Zooprofilattico Sperimentale del Mezzogiorno, il laboratorio pubblico che analizza alimenti e animali, le Asl competenti e l'Arpac. La Regione farà sapere i nuovi risultati dopo la conferma e la validazione dei dati.",
+      "fonti": [
+       "Regione Campania"
+      ]
+     }
+    ]
+   },
+   "subito": true,
+   "foto": "pecore-7"
+  },
+  {
    "id": "benevento-sciopero-gls-pezzapiana-cambio-appalto",
    "titolo": "Benevento, sciopero dei lavoratori GLS a Pezzapiana contro i cambi d'appalto: consegne a rischio",
    "titolo_google": "Sciopero GLS a Benevento: consegne a rischio a Pezzapiana",
@@ -6817,7 +6889,11 @@
    },
    "sport": "calcio",
    "immagine": "calcio",
-   "foto": "calcio"
+   "foto": "calcio",
+   "subito": true,
+   "comunicati": [
+    "ua028cefa343"
+   ]
   },
   {
    "id": "benevento-via-cosentini-bonazzi-vitelli-scavi-fibra-30-ottobre",
