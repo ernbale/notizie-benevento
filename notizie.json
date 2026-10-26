@@ -1,7 +1,58 @@
 {
- "aggiornato": "2026-10-26T18:11+01:00",
+ "aggiornato": "2026-10-26T19:16+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-viale-mellusi-divieto-sosta-caditoie-29-ottobre-4-novembre",
+   "titolo": "Benevento, viale Mellusi: divieto di sosta per la pulizia delle caditoie il 29 e 30 ottobre e dal 2 al 4 novembre",
+   "titolo_google": "Viale Mellusi Benevento, divieto di sosta 29 ottobre-4 novembre",
+   "sintesi": "A Benevento continua la pulizia straordinaria delle caditoie in viale Mellusi. Giovedì 29 e venerdì 30 ottobre e da lunedì 2 a mercoledì 4 novembre, dalle 8 alle 18, non si può parcheggiare sul lato destro tra il civico 147 e via Nicola Sala: le auto vengono rimosse, anche quelle dei residenti col permesso.",
+   "categoria": "strade",
+   "zona": "benevento",
+   "luogo": "Benevento, viale Mellusi",
+   "pubblicato": "2026-10-26",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "in_vigore_dal": "2026-10-29",
+   "in_vigore_fino": "2026-11-04",
+   "fonti": [
+    {
+     "nome": "Comune di Benevento, albo pretorio",
+     "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80116",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "In viale Mellusi, a Benevento, continua la pulizia straordinaria delle caditoie, le griglie dove scende l'acqua piovana. Per questo nel tratto tra il civico 147 e l'incrocio con via Nicola Sala non si potrà parcheggiare né fermarsi giovedì 29 e venerdì 30 ottobre e lunedì 2, martedì 3 e mercoledì 4 novembre, dalle 8 alle 18.",
+      "fonti": [
+       "Comune di Benevento, albo pretorio"
+      ]
+     },
+     {
+      "testo": "Il divieto vale solo per i posti sul lato destro nel senso di marcia. Le auto lasciate lì vengono rimosse dal carro attrezzi, anche quelle dei residenti con il permesso di parcheggio e delle altre persone autorizzate. Lo ha deciso il Servizio Traffico del Comune con un'ordinanza del 26 ottobre.",
+      "fonti": [
+       "Comune di Benevento, albo pretorio"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di Benevento, albo pretorio",
+      "titolo": "Divieti di sosta e fermata, con rimozione coatta e valenza anche per residenti titolari di permesso parcheggio ed altre categorie di autorizzati, mediante attuazione graduale e progressiva nel solo tratto del Viale Mellusi compreso tra l'incrocio con il civico 147 e l'incrocio con Via Nicola Sala, n",
+      "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80116",
+      "data": "26 ott",
+      "ufficiale": true
+     }
+    ]
+   }
+  },
   {
    "id": "walking-marathon-benevento-2026-400-partecipanti",
    "titolo": "Benevento, 400 persone alla seconda Walking Marathon",
@@ -23,6 +74,18 @@
     {
      "nome": "NTR24",
      "url": "https://www.ntr24.tv/2026/10/23/eventi-23-24-25-ottobre/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/walking-marathon-2026-lauro-evento-che-ha-coniugato-sport-e-sostenibilita/"
+    },
+    {
+     "nome": "NTR24 Sport",
+     "url": "https://sport.ntr24.tv/2026/10/26/successo-per-la-walking-marathon-lauro-evento-che-ha-coniugato-sport-e-sostenibilita/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/26/walking-marathon-2026-lauro-evento-che-ha-coniugato-sport-e-sostenibilita/"
     }
    ],
    "articolo": {
@@ -31,7 +94,10 @@
       "testo": "Sono state 400 le persone che hanno partecipato alla Walking Marathon Benevento 2026, la seconda edizione della camminata che domenica 25 ottobre è passata per le strade della città. Il numero lo dà Enzo Lauro, consigliere delegato allo Sport del Comune di Benevento.",
       "fonti": [
        "Comune di Benevento",
-       "NTR24"
+       "NTR24",
+       "Anteprima24",
+       "NTR24 Sport",
+       "BeneventoNews24"
       ]
      },
      {
@@ -43,7 +109,10 @@
      {
       "testo": "Per Lauro è stato «un bellissimo evento», con partecipanti arrivati da tutta Italia, «all'insegna dello sport, della salute e della sostenibilità ambientale». Il consigliere aggiunge che la camminata «ha aiutato a far conoscere la nostra città nelle sue bellezze» e che i 400 partecipanti sono la prova del successo della manifestazione.",
       "fonti": [
-       "Comune di Benevento"
+       "Comune di Benevento",
+       "Anteprima24",
+       "NTR24 Sport",
+       "BeneventoNews24"
       ]
      },
      {
@@ -70,6 +139,24 @@
       "titolo": "Monumenti Aperti, castagne, Walking Marathon: gli eventi del week end a Benevento e nel Sannio",
       "url": "https://www.ntr24.tv/2026/10/23/eventi-23-24-25-ottobre/",
       "data": "23 ott"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Walking Marathon 2026, Lauro: “Evento che ha coniugato sport e sostenibilità”",
+      "url": "https://www.anteprima24.it/benevento/walking-marathon-2026-lauro-evento-che-ha-coniugato-sport-e-sostenibilita/",
+      "data": "26 ott, 18:36"
+     },
+     {
+      "nome": "NTR24 Sport",
+      "titolo": "Successo per la Walking Marathon. Lauro: “Evento che ha coniugato sport e sostenibilità”",
+      "url": "https://sport.ntr24.tv/2026/10/26/successo-per-la-walking-marathon-lauro-evento-che-ha-coniugato-sport-e-sostenibilita/",
+      "data": "26 ott, 18:37"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Walking Marathon 2026, Lauro: “Evento che ha coniugato sport e sostenibilità”",
+      "url": "https://www.beneventonews24.it/2026/10/26/walking-marathon-2026-lauro-evento-che-ha-coniugato-sport-e-sostenibilita/",
+      "data": "26 ott, 18:45"
      }
     ]
    },
@@ -104,6 +191,10 @@
     {
      "nome": "Anteprima24",
      "url": "https://www.anteprima24.it/benevento/acqua-pubblica-comuni-sannio-gestione-autonoma/"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/i-sindaci-si-oppongono-al-processo-di-centralizzazione-coatta-imposto-dallente-idrico-campano-e"
     }
    ],
    "articolo": {
@@ -119,7 +210,8 @@
       "testo": "I Comuni sono Fragneto Monforte, Sassinoro, Circello, San Lupo, Fragneto l'Abate, Baselice, San Marco dei Cavoti, Castelvetere in Val Fortore, Pietraroja, San Giorgio la Molara e Casalduni. Alcuni curano reti e sorgenti da quasi un secolo, come il Consorzio Acquedotto di Fragneto Monforte e Fragneto l'Abate. I sindaci dicono di avere bilanci in ordine e tariffe giuste, e che la scorsa estate i loro paesi non hanno avuto problemi d'acqua.",
       "fonti": [
        "NTR24",
-       "Anteprima24"
+       "Anteprima24",
+       "Gazzetta di Benevento"
       ]
      },
      {
@@ -133,7 +225,8 @@
       "testo": "Hanno deciso quattro cose: un Coordinamento dei Comuni Sanniti a Gestione Autonoma, che resti in piedi stabilmente; ricorsi al TAR, il tribunale amministrativo, contro tutti i no dell'EIC, da soli o insieme; una diffida all'EIC con la richiesta di sospendere i passaggi di consegna e gli affidamenti; una campagna per informare i cittadini. Chiedono anche un incontro con la Regione Campania e l'EIC.",
       "fonti": [
        "NTR24",
-       "Anteprima24"
+       "Anteprima24",
+       "Gazzetta di Benevento"
       ]
      },
      {
@@ -157,7 +250,8 @@
       "testo": "Il coordinamento permanente e i ricorsi al TAR contro i no dell'Ente Idrico Campano.",
       "fonti": [
        "NTR24",
-       "Anteprima24"
+       "Anteprima24",
+       "Gazzetta di Benevento"
       ]
      }
     ],
@@ -184,6 +278,12 @@
       "titolo": "Cusano Mutri, no unanime al passaggio a Sannio Acque: il Comune ricorre al Tar",
       "url": "https://www.ntr24.tv/2026/10/25/cusano-mutri-no-unanime-al-passaggio-a-sannio-acque-il-comune-ricorre-al-tar/",
       "data": "25 ott"
+     },
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "I sindaci si oppongono al processo di centralizzazione coatta imposto dall'Ente Idrico Campano e rivendicano c",
+      "url": "https://www.gazzettabenevento.it/it/i-sindaci-si-oppongono-al-processo-di-centralizzazione-coatta-imposto-dallente-idrico-campano-e",
+      "data": "26 ott, 17:52"
      }
     ]
    },
@@ -439,6 +539,10 @@
     {
      "nome": "BeneventoNews24",
      "url": "https://www.beneventonews24.it/2026/10/26/benevento-catanzaro-i-convocati-di-floro-flores-tornano-talia-e-schimmenti/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/benevento-convocati-gara-catanzaro-due-assenti/"
     }
    ],
    "articolo": {
@@ -450,25 +554,36 @@
        "NTR24 Sport",
        "TV7 Benevento",
        "BeneventoNews24"
-      ]
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "La partita si gioca martedì 27 ottobre alle 19 allo stadio Ciro Vigorito ed è il primo turno infrasettimanale della stagione. Mancano gli infortunati Edoardo Pierozzi e Sylla; resta fuori anche Logan. Tornano invece Angelo Talia ed Emanuele Schimmenti, che erano stati lasciati a casa per scelta tecnica nella trasferta di Arezzo.",
+      "fonti": [
+       "Cronache del Sannio"
+      ],
+      "giorno": "2026-10-26"
      },
      {
       "testo": "In porta ci sono Manuel Esposito (numero 22) e Gianmarco Vannucchi (26). I difensori sono sette: Pietro Beruatto (20), Luca Caldirola (5), Christian Dalle Mura (15), Raffaele Romano (25), Pietro Saio (23), Stefano Scognamillo (14) e Leonardo Sernicola (17).",
       "fonti": [
        "Benevento Calcio"
-      ]
+      ],
+      "giorno": "2026-10-26"
      },
      {
       "testo": "Sette anche i centrocampisti: Christian Kouan (28), Mattia Maita (8), Mattia Mannini (16), Antonio Prisco (4), Antonis Siatounis (6), Pier Luigi Simonetti (18) e Angelo Talia (38).",
       "fonti": [
        "Benevento Calcio"
-      ]
+      ],
+      "giorno": "2026-10-26"
      },
      {
       "testo": "In attacco sono otto: Luigi Cherubini (10), Davide Lamesta (11), Guglielmo Mignani (32), David Okereke (29), Francesco Salvemini (9), Emanuele Schimmenti (21), Marco Tumminello (93) e Simone Verdi (90).",
       "fonti": [
        "Benevento Calcio"
-      ]
+      ],
+      "giorno": "2026-10-26"
      }
     ],
     "cronologia": [],
@@ -500,6 +615,12 @@
       "titolo": "Benevento-Catanzaro, i convocati di Floro Flores: tornano Talia e Schimmenti, out Pierozzi",
       "url": "https://www.beneventonews24.it/2026/10/26/benevento-catanzaro-i-convocati-di-floro-flores-tornano-talia-e-schimmenti/",
       "data": "26 ott, 17:57"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Benevento, i convocati per la gara con il Catanzaro: due assenti",
+      "url": "https://www.cronachedelsannio.it/sannionews24/benevento-convocati-gara-catanzaro-due-assenti/",
+      "data": "26 ott, 18:38"
      }
     ]
    },
@@ -2917,9 +3038,9 @@
   },
   {
    "id": "benevento-liceo-guacci-furto-distributore-computer",
-   "titolo": "Benevento, furto di notte al liceo Guacci di via Compagna: rubati due computer e candeggina sparsa nelle aule",
-   "titolo_google": "Benevento, furto al liceo Guacci: rubati due computer",
-   "sintesi": "Nella notte tra domenica 25 e lunedì 26 ottobre dei ladri sono entrati nella sede di Scienze Umane del liceo Guacci, in via Compagna a Benevento, forzando un infisso. Hanno rubato due computer e sparso candeggina al piano di sopra e negli armadietti: l'odore ha impedito agli studenti di fare lezione. Indagano i Carabinieri.",
+   "titolo": "Benevento, furto di notte al liceo Guacci di via Compagna: rubati computer e candeggina sparsa nelle aule",
+   "titolo_google": "Benevento, furto al liceo Guacci: rubati dei computer",
+   "sintesi": "Nella notte tra domenica 25 e lunedì 26 ottobre dei ladri sono entrati nella sede di Scienze Umane del liceo Guacci, in via Compagna a Benevento, forzando una finestra del piano terra. Hanno rubato dei computer, due o una decina a seconda dei giornali, e sparso candeggina nelle aule. Indagano i Carabinieri.",
    "categoria": "cronaca",
    "zona": "benevento",
    "luogo": "Benevento, via Compagna",
@@ -2938,16 +3059,21 @@
     {
      "nome": "Anteprima24",
      "url": "https://www.anteprima24.it/benevento/furto-in-una-scuola-ladri-forzano-un-infisso-e-scassinano-distributore-di-merendine/"
+    },
+    {
+     "nome": "Il Mattino",
+     "url": "https://www.ilmattino.it/benevento/benevento_furto_di_pc_all_istituto_guacci_i_ladri_forzano_la_finestra_al_piano_terra_per_entrare-9850069.html"
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Nella notte tra domenica 25 e lunedì 26 ottobre dei ladri sono entrati nel liceo Guacci di Benevento, nella sede dell'indirizzo Scienze Umane in via Francesco Compagna, al Rione Ferrovia. Hanno forzato un infisso, hanno frugato nelle stanze e se ne sono andati con due computer.",
+      "testo": "Nella notte tra domenica 25 e lunedì 26 ottobre dei ladri sono entrati nel liceo Guacci di Benevento, nella sede dell'indirizzo Scienze Umane in via Francesco Compagna, al Rione Ferrovia. Hanno forzato una finestra del piano terra, hanno frugato nelle stanze e se ne sono andati con dei computer: due secondo NTR24 e la Gazzetta di Benevento, una decina secondo Il Mattino.",
       "fonti": [
        "NTR24",
        "Gazzetta di Benevento",
-       "Anteprima24"
+       "Anteprima24",
+       "Il Mattino"
       ],
       "giorno": "2026-10-26"
      },
@@ -2955,7 +3081,8 @@
       "testo": "Prima di andarsene hanno anche sparso candeggina al piano di sopra e dentro gli armadietti. Lunedì mattina, all'arrivo del personale della scuola, l'odore era così forte da rendere l'aria irrespirabile, e gli studenti non hanno potuto restare in classe e seguire le lezioni come al solito.",
       "fonti": [
        "NTR24",
-       "Gazzetta di Benevento"
+       "Gazzetta di Benevento",
+       "Il Mattino"
       ],
       "giorno": "2026-10-26"
      },
@@ -2967,11 +3094,12 @@
       "giorno": "2026-10-26"
      },
      {
-      "testo": "La scuola ha chiamato i Carabinieri, che hanno cominciato le indagini per capire chi è stato e perché ha sparso la candeggina.",
+      "testo": "Il furto è stato scoperto lunedì mattina, alla riapertura della scuola dopo la domenica. Sono arrivati i Carabinieri della Compagnia di Benevento, che hanno cominciato le indagini per capire chi è stato e perché ha sparso la candeggina.",
       "fonti": [
        "NTR24",
        "Gazzetta di Benevento",
-       "Anteprima24"
+       "Anteprima24",
+       "Il Mattino"
       ],
       "giorno": "2026-10-26"
      }
@@ -2983,11 +3111,21 @@
       "fonti": [
        "NTR24",
        "Gazzetta di Benevento",
-       "Anteprima24"
+       "Anteprima24",
+       "Il Mattino"
       ]
      }
     ],
-    "divergono": [],
+    "divergono": [
+     {
+      "testo": "Quanti computer sono stati rubati: due per NTR24 e la Gazzetta di Benevento, una decina per Il Mattino.",
+      "fonti": [
+       "NTR24",
+       "Gazzetta di Benevento",
+       "Il Mattino"
+      ]
+     }
+    ],
     "non_si_sa": [
      "Quanto vale il danno.",
      "Se le lezioni riprendono normalmente martedì 27 ottobre."
@@ -3010,6 +3148,12 @@
       "titolo": "Furto in una scuola: ladri forzano un infisso e scassinano distributore di merendine",
       "url": "https://www.anteprima24.it/benevento/furto-in-una-scuola-ladri-forzano-un-infisso-e-scassinano-distributore-di-merendine/",
       "data": "26 ott, 08:54"
+     },
+     {
+      "nome": "Il Mattino",
+      "titolo": "Benevento, furto di pc all'Istituto Guacci: i ladri forzano la finestra al piano terra per entrare",
+      "url": "https://www.ilmattino.it/benevento/benevento_furto_di_pc_all_istituto_guacci_i_ladri_forzano_la_finestra_al_piano_terra_per_entrare-9850069.html",
+      "data": "26 ott, 18:34"
      }
     ],
     "aggiornamento": {
