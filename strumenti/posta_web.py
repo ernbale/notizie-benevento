@@ -491,11 +491,16 @@ def archivio():
     return _archivio
 
 
+def letta_dal_pi(casella, cartella):
+    """Le cartelle che fonti_casa.py legge per i comunicati: Posta in arrivo e Spam di comunicati@ e della PEC, lo Spam
+    di redazione@ (dal 26 ott 2026)."""
+    return (casella in ("comunicati", "pec") and cartella in ("inbox", "spam")) or (casella, cartella) == ("redazione", "spam")
+
+
 def comunicato(r):
     """Per le mail arrivate a comunicati@ e alla PEC: cosa ne ha fatto il giro lampo (pubblicato, già sul sito,
     scartato, in sospeso, in lavorazione) con l'indirizzo della notizia. None se non è un comunicato."""
-    if r["casella"] not in ("comunicati", "pec") or r["cartella"] != "inbox" or \
-            r.get("tipo") in ("ricevuta", "rimbalzo", "automatica", "avviso"):
+    if not letta_dal_pi(r["casella"], r["cartella"]) or r.get("tipo") in ("ricevuta", "rimbalzo", "automatica", "avviso"):
         return None
     ident = F.id_posta(r["mid"])
     v = visti().get(ident)
@@ -520,7 +525,7 @@ def valuta(corpo):
     """La decisione del proprietario su un comunicato da valutare: in valutati.json (e il mittente tra i fidati se lo
     chiede), poi la lettura della posta e il giro lampo partono subito. Restituisce la risposta per la pagina."""
     cid, cartella, uid, decisione = corpo.get("casella"), corpo.get("cartella"), corpo.get("uid"), corpo.get("decisione")
-    if cid not in ("comunicati", "pec") or cartella != "inbox" or not isinstance(uid, int) or uid <= 0 \
+    if not letta_dal_pi(cid, cartella) or not isinstance(uid, int) or uid <= 0 \
             or decisione not in ("pubblica", "scarta") or not isinstance(corpo.get("fidati", False), bool):
         raise ValueError("richiesta storta")
     vero, _ = tipo_e_vero(CASE[cid].messaggio(cartella, uid))

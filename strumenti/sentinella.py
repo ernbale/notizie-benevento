@@ -402,7 +402,7 @@ def comunicati(gh, adesso, pi):
         arrivata = iso(quando) if quando else None
         sito = v.get("tipo") == "sito"
         if v.get("fonte") == "da_valutare" and v.get("valutato") != "pubblica":   # decide il proprietario (dal 26 ott)
-            if (not v.get("valutato") and arrivata
+            if (not v.get("valutato") and arrivata and not v.get("spam")   # lo spam vero si ignora: l'avviso è uno
                     and dt.timedelta(hours=DA_VALUTARE_ORE) < adesso - arrivata < dt.timedelta(days=3)):
                 problemi.append(f"DA VALUTARE da {minuti(adesso - arrivata)} minuti il comunicato di "
                                 f"{v.get('mittente') or v.get('dominio')} («{str(v.get('titolo'))[:60]}», "
@@ -461,6 +461,14 @@ def fonti_di_casa(adesso, prova):
             if not dal or adesso - dal > dt.timedelta(hours=FONTE_FERMA_ORE):
                 ferme["pec"] = (dal, f"PEC del sito notiziebenevento@pec.it: {d['pec'][:140]} (comunicati@ si legge lo "
                                      "stesso; se è cambiata la password: fonti_casa.py --imposta-pec)", "")
+        if nome == "comunicati.json" and str(d.get("spam") or "").startswith("non letto"):   # lo Spam delle caselle
+            try:                                                                                 # (dal 26 ott 2026)
+                dal = iso(d["spam_ultima_lettura"])
+            except (KeyError, ValueError, TypeError):
+                dal = None
+            if not dal or adesso - dal > dt.timedelta(hours=FONTE_FERMA_ORE):
+                ferme["spam"] = (dal, f"Spam delle caselle: {d['spam'][:160]} (un comunicato messo lì da Aruba non "
+                                      "si vedrebbe; la Posta in arrivo si legge lo stesso)", "")
         if nome == "comuni.json":   # gli albi pretori dei Comuni: non c'è l'ora dell'ultima lettura, la si ricorda qui
             m = re.match(r"(\d+) su (\d+)", str(d.get("albi_letti") or ""))
             if m and int(m[1]) < ALBI_MINIMI:

@@ -638,6 +638,14 @@ POSTA_SERVER = "imaps.aruba.it"
 PEC_CONF = os.path.join(CARTELLA, "pec.conf")
 PEC_SERVER = "imaps.pec.aruba.it"
 PEC_INDIRIZZO = "notiziebenevento@pec.it"
+# Lo Spam (dal 26 ott 2026: Aruba aveva messo nello spam la ricevuta del protocollo dell'ASL; lui: «non vorrei che metta
+# dei comunicati in spam e non ce ne accorgiamo»). Si legge anche la cartella Spam di comunicati@ e della PEC, come la
+# Posta in arrivo (`"spam": true` nella voce: chi è ufficiale esce lo stesso, gli altri li valuta lui), e quella di
+# redazione@ (redazione.conf, la scrive posta_web.py --imposta redazione), la cui Posta in arrivo non si legge: da lì
+# tutto è «da valutare». Sempre in sola lettura: non si sposta niente.
+REDAZIONE_CONF = os.path.join(CARTELLA, "redazione.conf")
+REDAZIONE_INDIRIZZO = "redazione@notiziebenevento.it"
+SPAM_NOME = re.compile(r"spam|junk|indesiderat", re.I)
 # Nella casella arrivano anche cose che non sono comunicati: rimbalzi, risposte automatiche, avvisi di Aruba e le
 # risposte alla nostra mail agli uffici stampa del 24 ott 2026. Non vanno all'agente: il 24 ott alle 12:06 il giro ha
 # visto 13 rimbalzi e un comunicato vero (CISL FP) e ha scritto «0 utili, solo risposte automatiche».
@@ -895,80 +903,134 @@ def posta(vecchie):
     A.pulisci_cache()   # le pagine lette con l'OCR più vecchie di qualche giorno
     scartate = [l for l, v in vecchie.items() if not v]   # le mail già riconosciute come non comunicati
     viste = set(vecchie)
-    _casella(conf, POSTA_SERVER, vecchie, viste, voci, scartate)
+    spam_non_letto = []   # le cartelle Spam che non si sono lette (la sentinella avvisa dopo 3 ore)
+    perche = _casella(conf, POSTA_SERVER, vecchie, viste, voci, scartate)
+    if perche:
+        spam_non_letto.append(f"comunicati@: {perche}")
     extra = {}
     if os.path.exists(PEC_CONF):   # la PEC: se non si legge, comunicati@ resta letta e lo si dice in «pec»
         try:
             with open(PEC_CONF, encoding="utf-8") as f:
-                _casella(json.load(f), PEC_SERVER, vecchie, viste, voci, scartate)
+                perche = _casella(json.load(f), PEC_SERVER, vecchie, viste, voci, scartate)
+            if perche:
+                spam_non_letto.append(f"PEC: {perche}")
             extra["pec"] = "letta"
         except Exception as e:
             extra["pec"] = f"non letta: {type(e).__name__}: {e}"[:200]
+    if os.path.exists(REDAZIONE_CONF):   # di redazione@ solo lo Spam
+        try:
+            with open(REDAZIONE_CONF, encoding="utf-8") as f:
+                perche = _casella(json.load(f), POSTA_SERVER, vecchie, viste, voci, scartate, redazione=True)
+        except Exception as e:
+            perche = f"{type(e).__name__}: {e}"[:160]
+        if perche:
+            spam_non_letto.append(f"redazione@: {perche}")
+    extra["spam"] = "non letto: " + "; ".join(spam_non_letto) if spam_non_letto else "letto"
     return voci, {"scartate": scartate[-300:], **extra}
 
 
-def _casella(conf, server, vecchie, viste, voci, scartate):
-    """Le mail di una casella (gli ultimi 7 giorni, le ultime 40) in voci; i non comunicati in scartate. viste: i link
-    già noti, anche di questo giro (lo stesso comunicato mandato a comunicati@ e alla PEC esce una volta)."""
-    import email
-    import email.header
-    import email.utils as eu
+def cartella_spam(M):
+    """Il nome IMAP della cartella Spam (Aruba: «INBOX.SPAM», la PEC «INBOX.Spam»), o None: prima quella segnata
+    \\Junk dal server, se no quella col nome giusto."""
+    cartelle = []
+    for r in M.list()[1] or []:
+        r = r.decode("utf-8", "replace") if isinstance(r, bytes) else str(r)
+        m = re.match(r'\((?P<att>[^)]*)\)\s+(?:"[^"]*"|NIL)\s+(?P<nome>.+)$', r)
+        if m:
+            cartelle.append((m["att"].lower(), m["nome"].strip().strip('"')))
+    return next((n for a, n in cartelle if "\\junk" in a), None) or \
+        next((n for a, n in cartelle if SPAM_NOME.search(n.rsplit(".", 1)[-1])), None)
+
+
+def _casella(conf, server, vecchie, viste, voci, scartate, redazione=False):
+    """Le mail di una casella (gli ultimi 7 giorni, le ultime 40 della Posta in arrivo e dello Spam) in voci; i non
+    comunicati in scartate. viste: i link già noti, anche di questo giro (lo stesso comunicato mandato a comunicati@ e
+    alla PEC esce una volta). redazione: solo lo Spam, e tutto da valutare. Restituisce perché lo Spam non si è letto,
+    o "": un errore nello Spam non ferma mai la Posta in arrivo."""
     import imaplib
-    dec = lambda x: str(email.header.make_header(email.header.decode_header(x or "")))
     adesso = dt.datetime.now(fuso()).isoformat(timespec="minutes")
     with imaplib.IMAP4_SSL(conf.get("server", server), 993, timeout=60) as M:
         M.login(conf["utente"], conf["password"])
-        M.select("INBOX", readonly=True)
-        dal = (dt.date.today() - dt.timedelta(days=7)).strftime("%d-%b-%Y")
-        _, num = M.search(None, "SINCE", dal)
-        for n in num[0].split()[-40:]:
-            _, dati = M.fetch(n, "(BODY.PEEK[])")
-            busta = email.message_from_bytes(dati[0][1])
-            m, tipo = busta_pec(busta)
-            link_busta, link = link_posta(busta), link_posta(m)
-            # un comunicato con allegati che non si erano letti si rilegge quando i lettori sono cambiati (l'OCR
-            # installato, un formato nuovo: allegati.lettore()), una volta sola anche se è sia in comunicati@ che in PEC
-            vecchia = vecchie.get(link) or vecchie.get(link_busta) or {}
-            rileggi = (bool(vecchia.get("allegati_non_letti")) and vecchia.get("letto_con") != A.lettore()
-                       and not any(x.get("link") == link for x in voci))
-            if (link in viste or link_busta in viste) and not rileggi:
+        if not redazione:
+            _cartella(M, "INBOX", False, False, vecchie, viste, voci, scartate, adesso)
+        try:
+            spam = cartella_spam(M)
+            if not spam:
+                return "cartella Spam non trovata"
+            _cartella(M, spam, True, redazione, vecchie, viste, voci, scartate, adesso)
+        except Exception as e:
+            return f"Spam: {type(e).__name__}: {e}"[:160]
+    return ""
+
+
+def _cartella(M, cartella, nello_spam, redazione, vecchie, viste, voci, scartate, adesso):
+    """Le mail di una cartella della casella (Posta in arrivo o Spam), aperta in sola lettura: vedi _casella."""
+    import email
+    import email.header
+    import email.utils as eu
+    dec = lambda x: str(email.header.make_header(email.header.decode_header(x or "")))
+    if M.select(f'"{cartella}"', readonly=True)[0] != "OK":
+        raise RuntimeError(f"la cartella {cartella} non si apre")
+    dal = (dt.date.today() - dt.timedelta(days=7)).strftime("%d-%b-%Y")
+    _, num = M.search(None, "SINCE", dal)
+    for n in num[0].split()[-40:]:
+        if nello_spam:   # lo Spam può riempirsi: la mail intera si scarica solo se è nuova
+            _, h = M.fetch(n, "(BODY.PEEK[HEADER.FIELDS (MESSAGE-ID DATE SUBJECT)])")
+            gia = link_posta(email.message_from_bytes(h[0][1]))
+            if gia in viste and not (vecchie.get(gia) or {}).get("allegati_non_letti"):
                 continue
-            viste.update((link, link_busta))
-            if tipo == "ricevuta":
-                scartate.append(link_busta)
-                continue
-            nome, indirizzo = eu.parseaddr(dec(m.get("From")))
-            mittente, dominio = nome or indirizzo.split("@")[0], indirizzo.rsplit("@", 1)[-1].lower()
-            if non_comunicato(dec(m.get("Subject")), f"{nome} {indirizzo}", dominio, m):
-                scartate.append(link)
-                continue
-            try:
-                quando = eu.parsedate_to_datetime(m.get("Date")).astimezone(fuso()).isoformat(timespec="minutes")
-            except (TypeError, ValueError):
-                quando = dt.datetime.now(fuso()).isoformat(timespec="minutes")
-            lettura = A.leggi_mail(m, ocr=True)
-            v = {"id": id_posta(link), "titolo": dec(m.get("Subject")) or "(senza oggetto)", "link": link,
-                 "data": quando, "arrivata": vecchia.get("arrivata") or adesso, "mittente": mittente, "dominio": dominio,
-                 "allegati": lettura["allegati"], "testo": lettura["testo"][:POSTA_TESTO_MAX]}
-            if len(lettura["testo"]) > POSTA_TESTO_MAX:
-                v["testo_tagliato"] = len(lettura["testo"])
-            # quello che non si legge (COMUNICATI.md: il giro lampo non lo può scartare, lo mette in sospeso)
-            if lettura["non_letti"]:
-                v["allegati_non_letti"] = lettura["non_letti"]
-                v["letto_con"] = A.lettore() + ("+da finire" if lettura["da_finire"] else "")
-            if lettura["link_file"]:
-                v["link_file"] = lettura["link_file"]
-            if rileggi and len(lettura["non_letti"]) < len(vecchia.get("allegati_non_letti") or []):
-                v["riletto"] = adesso   # ora si legge di più: il giro lampo lo riprende (comunicati_lampo.py)
-            elif vecchia.get("riletto"):
-                v["riletto"] = vecchia["riletto"]
-            if tipo == "pec":   # mandata da una casella PEC: il mittente è certificato dal gestore
-                v["pec"] = True
-            v["fonte"], v["fonte_perche"] = fonte_mittente(indirizzo, dominio, tipo == "pec")
-            immagini = immagini_mail(m, v["id"])
-            if immagini:
-                v["immagini"] = immagini
-            voci.append(v)
+        _, dati = M.fetch(n, "(BODY.PEEK[])")
+        busta = email.message_from_bytes(dati[0][1])
+        m, tipo = busta_pec(busta)
+        link_busta, link = link_posta(busta), link_posta(m)
+        # un comunicato con allegati che non si erano letti si rilegge quando i lettori sono cambiati (l'OCR
+        # installato, un formato nuovo: allegati.lettore()), una volta sola anche se è sia in comunicati@ che in PEC
+        vecchia = vecchie.get(link) or vecchie.get(link_busta) or {}
+        rileggi = (bool(vecchia.get("allegati_non_letti")) and vecchia.get("letto_con") != A.lettore()
+                   and not any(x.get("link") == link for x in voci))
+        if (link in viste or link_busta in viste) and not rileggi:
+            continue
+        viste.update((link, link_busta))
+        if tipo == "ricevuta":
+            scartate.append(link_busta)
+            continue
+        nome, indirizzo = eu.parseaddr(dec(m.get("From")))
+        mittente, dominio = nome or indirizzo.split("@")[0], indirizzo.rsplit("@", 1)[-1].lower()
+        if non_comunicato(dec(m.get("Subject")), f"{nome} {indirizzo}", dominio, m):
+            scartate.append(link)
+            continue
+        try:
+            quando = eu.parsedate_to_datetime(m.get("Date")).astimezone(fuso()).isoformat(timespec="minutes")
+        except (TypeError, ValueError):
+            quando = dt.datetime.now(fuso()).isoformat(timespec="minutes")
+        lettura = A.leggi_mail(m, ocr=True)
+        v = {"id": id_posta(link), "titolo": dec(m.get("Subject")) or "(senza oggetto)", "link": link,
+             "data": quando, "arrivata": vecchia.get("arrivata") or adesso, "mittente": mittente, "dominio": dominio,
+             "allegati": lettura["allegati"], "testo": lettura["testo"][:POSTA_TESTO_MAX]}
+        if len(lettura["testo"]) > POSTA_TESTO_MAX:
+            v["testo_tagliato"] = len(lettura["testo"])
+        # quello che non si legge (COMUNICATI.md: il giro lampo non lo può scartare, lo mette in sospeso)
+        if lettura["non_letti"]:
+            v["allegati_non_letti"] = lettura["non_letti"]
+            v["letto_con"] = A.lettore() + ("+da finire" if lettura["da_finire"] else "")
+        if lettura["link_file"]:
+            v["link_file"] = lettura["link_file"]
+        if rileggi and len(lettura["non_letti"]) < len(vecchia.get("allegati_non_letti") or []):
+            v["riletto"] = adesso   # ora si legge di più: il giro lampo lo riprende (comunicati_lampo.py)
+        elif vecchia.get("riletto"):
+            v["riletto"] = vecchia["riletto"]
+        if tipo == "pec":   # mandata da una casella PEC: il mittente è certificato dal gestore
+            v["pec"] = True
+        v["fonte"], v["fonte_perche"] = fonte_mittente(indirizzo, dominio, tipo == "pec")
+        if nello_spam:   # Aruba l'aveva messa nello Spam (la si avvisa: comunicati_lampo.py)
+            v["spam"] = True
+        if redazione:
+            v["casella"] = "redazione"
+            v["fonte"], v["fonte_perche"] = "da_valutare", f"arrivato a {REDAZIONE_INDIRIZZO}, nello Spam"
+        immagini = immagini_mail(m, v["id"])
+        if immagini:
+            v["immagini"] = immagini
+        voci.append(v)
 
 
 def imposta_posta(pec=False):
@@ -1230,6 +1292,10 @@ def leggi(nome, adesso):
             dati.setdefault("pec", prima.get("pec", ""))
             dati["pec_ultima_lettura"] = dati["controllato"] if dati["pec"] == "letta" and \
                 not dati["esito"].startswith("non raggiungibile") else prima.get("pec_ultima_lettura", "")
+        if dati.get("spam") or prima.get("spam"):   # lo Spam delle caselle (dal 26 ott 2026): da quando non si legge
+            dati.setdefault("spam", prima.get("spam", ""))
+            dati["spam_ultima_lettura"] = dati["controllato"] if dati["spam"] == "letto" and \
+                not dati["esito"].startswith("non raggiungibile") else prima.get("spam_ultima_lettura", "")
         for l, v in list(tutte.items()):
             if non_comunicato(v.get("titolo"), v.get("mittente"), v.get("dominio")):
                 del tutte[l]
@@ -1290,6 +1356,9 @@ incompleto. La casella dei comunicati la legge ogni 5 minuti.
   quali lettori (se cambiano si rilegge da solo), `riletto`: quando si è riletto leggendo di più (il giro lampo lo
   riprende), `link_file`: link a file da scaricare scritti nella mail, `testo_tagliato`: i caratteri del testo intero
   quando supera i 20.000.
+  Dal 26 ott 2026 si legge anche la cartella Spam di comunicati@, della PEC e di redazione@notiziebenevento.it (sola
+  lettura): `spam: true` = la mail era nello Spam; `casella: "redazione"` = arrivata a redazione@ (sempre «da
+  valutare»). `spam` del file = se gli Spam si sono letti, `spam_ultima_lettura` = l'ultima volta che si sono letti.
 - `ufficiali.json` (dal 25 ott 2026): gli articoli nuovi dei siti ufficiali (società sportive, Comune e Provincia di
   Benevento, ASL, Alto Calore, GESESA, EAV, AIR, ANAS e Regione solo per il Sannio), letti dal Pi ogni 5 minuti
   (`strumenti/ufficiali.py`), ultimi 3 giorni: `id` («u» e 11 caratteri, come quelli di comunicati_visti.json del

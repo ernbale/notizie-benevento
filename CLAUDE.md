@@ -69,6 +69,8 @@ Escono subito solo quelli di enti pubblici, PEC e mittenti fidati (`~/nb-fonti/m
 hanno `"fonte": "da_valutare"`: al proprietario arriva un avviso (WhatsApp ed email) e decide lui nella scheda Posta
 delle statistiche («Pubblica», «Pubblica e fidati del mittente», «Non pubblicare»). Non pubblicarli a mano senza il suo
 sì. Le regole sono in COMUNICATI.md.
+Dal 26 ott il Pi legge anche lo Spam di comunicati@, della PEC e di redazione@ (sola lettura): chi è ufficiale esce lo
+stesso e lui riceve un avviso; gli altri sono «da valutare»; quelli di redazione@ sono sempre da valutare.
 
 ## Facebook
 Un post uscito senza immagine (l'anteprima della notizia è stata rinominata dopo il post): sulla Pagina, menu «…» del

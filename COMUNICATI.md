@@ -7,6 +7,10 @@ valutare io»): enti pubblici, chi scrive da una PEC e i mittenti fidati. Quelli
 decide. Se li approva arrivano qui con «APPROVATO DAL PROPRIETARIO» e li tratti come gli altri, con le regole di
 sempre.
 
+Il Pi legge anche la cartella Spam delle caselle (dal 26 ott 2026: lui, «non vorrei che metta dei comunicati in spam e
+non ce ne accorgiamo»). Un comunicato con `"spam": true` è uno che Aruba ci aveva messo per sbaglio: se te lo dà
+`--da-fare` trattalo come gli altri, con le regole di sempre. L'essere stato nello Spam non è un motivo per scartarlo.
+
 I comunicati arrivati per posta a comunicati@notiziebenevento.it escono **subito**: sul sito e, dal sito, su Telegram,
 Facebook e Instagram. Voluto dal proprietario il 24 ott 2026, dopo il comunicato della CISL FP arrivato alle 11:51 e
 uscito solo alle 13:06, ripreso da un giornale: «questi sono comunicati ufficiali, deve essere istantanea lettura,

@@ -20,6 +20,9 @@ comunicati (senza rimbalzi e risposte automatiche) in comunicati.json dell'archi
   «la pubblicazione dei comunicati istantanea solo da fonti ufficiali, un tizio che manda qualcosa dobbiamo valutarla»)
   non parte: al proprietario arriva subito un avviso (WhatsApp ed email) e decide lui nella scheda Posta; quando lo
   approva («"valutato": "pubblica"») parte come un comunicato nuovo;
+- un comunicato che Aruba aveva messo nello Spam (`"spam": true`, fonti_casa.py legge anche lo Spam dal 26 ott 2026:
+  lui, «non vorrei che metta dei comunicati in spam e non ce ne accorgiamo»): se è di una fonte ufficiale esce come gli
+  altri e lui riceve un avviso, una volta; se no è da valutare, e l'avviso lo dice;
 - la prima volta prende solo nota dei comunicati che ci sono già: non sono nuovi.
 Scrive nel registro (comunicati.log) solo quando fa qualcosa o qualcosa non va. Stato in comunicati_lampo.json.
 
@@ -118,6 +121,7 @@ def main():
     for v in [x for x in attesa_lui if not x.get("valutato") and x["id"] not in avvisati]:
         testo = (f"📨 Notizie Benevento: comunicato da valutare\nDa {v.get('mittente')} (@{v.get('dominio')}), "
                  f"{v.get('fonte_perche')}.\nOggetto: «{str(v.get('titolo'))[:120]}»\n"
+                 + ("⚠️ Era nello Spam di Aruba: se è pubblicità o una truffa, ignoralo.\n" if v.get("spam") else "") +
                  f"{' '.join(str(v.get('testo') or '').split())[:300]}…\n"
                  "Non esce finché non decidi: scheda Posta delle statistiche, «Pubblica», «Pubblica e fidati del "
                  "mittente» o «Non pubblicare» → https://notiziebenevento.it/statistiche/#posta")
@@ -125,11 +129,26 @@ def main():
             print(f"{ora} PROVA: avviserei il proprietario per {v['id']} «{str(v.get('titolo'))[:60]}»")
             continue
         from sentinella import manda_a_casa
-        esiti = manda_a_casa(testo, f"📨 Comunicato da valutare: {str(v.get('titolo'))[:80]}")
+        esiti = manda_a_casa(testo, f"📨 Comunicato da valutare{' (era nello Spam)' if v.get('spam') else ''}: "
+                                    f"{str(v.get('titolo'))[:80]}")
         avvisati[v["id"]] = adesso.isoformat(timespec="minutes")
         V.scrivi(STATO, stato)
         print(f"{ora} da valutare dal proprietario: {v['id']} «{str(v.get('titolo'))[:60]}» ({v.get('fonte_perche')}): "
               + ", ".join(esiti))
+    # un comunicato ufficiale che era nello Spam esce lo stesso (qui sotto, come gli altri): a lui un avviso, una volta
+    spam_avvisati = stato.setdefault("spam", {})
+    for v in [x for x in voci if x.get("spam") and x.get("fonte") != "da_valutare" and x["id"] not in spam_avvisati]:
+        testo = (f"📨 Notizie Benevento: un comunicato era nello Spam di Aruba\nDa {v.get('mittente')} "
+                 f"(@{v.get('dominio')}), {v.get('fonte_perche')}.\nOggetto: «{str(v.get('titolo'))[:120]}»\n"
+                 "È una fonte ufficiale: esce lo stesso, come gli altri. Non serve fare niente.")
+        if a.prova:
+            print(f"{ora} PROVA: avviserei il proprietario che {v['id']} era nello Spam")
+            continue
+        from sentinella import manda_a_casa
+        esiti = manda_a_casa(testo, f"📨 Comunicato che era nello Spam: {str(v.get('titolo'))[:80]}")
+        spam_avvisati[v["id"]] = adesso.isoformat(timespec="minutes")
+        V.scrivi(STATO, stato)
+        print(f"{ora} nello Spam ma ufficiale, esce: {v['id']} «{str(v.get('titolo'))[:60]}»: " + ", ".join(esiti))
     nuovi = [v for v in voci if v["id"] not in lanciati and v not in attesa_lui]
     attesa = [v for v in voci if v["id"] in lanciati and not lanciati[v["id"]].get("gia")
               and lanciati[v["id"]]["volte"] < RILANCI
@@ -185,6 +204,7 @@ def main():
                          or k in {v["id"] for v in voci}}
     stato["attese"] = {k: q for k, q in (stato.get("attese") or {}).items() if k not in lanciati and q >= limite}
     stato["da_valutare"] = {k: q for k, q in (stato.get("da_valutare") or {}).items() if q >= limite}
+    stato["spam"] = {k: q for k, q in (stato.get("spam") or {}).items() if q >= limite}
     V.scrivi(STATO, stato)
     print(f"{ora} giro lampo avviato ({'nuovi' if nuovi else 'riletti' if riletti and not rilanci else 'rilancio'}): "
           f"{nomi} → {sessione}")

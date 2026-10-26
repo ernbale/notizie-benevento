@@ -215,32 +215,45 @@ def conf_di(casella):
 
 def cerca(casella, cercati):
     """Le mail di una casella con il link tra i cercati: {link: (mail, tipo)}, tipo come in fonti_casa.busta_pec().
-    Sola lettura (EXAMINE e BODY.PEEK: niente segnato come letto). Per le PEC la mail vera è dentro la busta."""
+    Sola lettura (EXAMINE e BODY.PEEK: niente segnato come letto). Per le PEC la mail vera è dentro la busta.
+    Nella Posta in arrivo e nello Spam (dal 26 ott 2026 escono anche i comunicati che Aruba ci aveva messo)."""
     conf = conf_di(casella)
     trovate = {}
     with imaplib.IMAP4_SSL(conf.get("server", CASELLE[casella][1]), 993, timeout=60) as M:
         M.login(conf["utente"], conf["password"])
-        M.select("INBOX", readonly=True)
-        _, num = M.search(None, "SINCE", (dt.date.today() - dt.timedelta(days=GIORNI)).strftime("%d-%b-%Y"))
-        numeri = [n.decode() for n in num[0].split()[-MAIL_MAX:]]
-        if not numeri:
-            return trovate
-        _, dati = M.fetch(",".join(numeri), "(BODY.PEEK[HEADER])")
-        for x in dati:
-            if not isinstance(x, tuple):
-                continue
-            h, tipo = email.message_from_bytes(x[1]), ""
-            if h.get("X-Ricevuta"):
-                continue
-            if h.get("X-Trasporto"):   # una busta PEC: la mail vera è l'allegato postacert.eml
-                _, d = M.fetch(x[0].split()[0].decode(), "(BODY.PEEK[])")
-                h, tipo = F.busta_pec(email.message_from_bytes(d[0][1]))
-                if tipo == "ricevuta":
-                    continue
-            link = F.link_posta(h)
-            if link in cercati and link not in trovate:
-                trovate[link] = (h, tipo)
+        _cerca_in(M, "INBOX", cercati, trovate)
+        if cercati - set(trovate):
+            try:
+                spam = F.cartella_spam(M)
+                if spam:
+                    _cerca_in(M, spam, cercati, trovate)
+            except Exception:   # lo Spam non ferma la Posta in arrivo (se non si legge, lo dice la sentinella)
+                pass
     return trovate
+
+
+def _cerca_in(M, cartella, cercati, trovate):
+    """Le mail cercate in una cartella (vedi cerca), messe in trovate."""
+    M.select(f'"{cartella}"', readonly=True)
+    _, num = M.search(None, "SINCE", (dt.date.today() - dt.timedelta(days=GIORNI)).strftime("%d-%b-%Y"))
+    numeri = [n.decode() for n in num[0].split()[-MAIL_MAX:]]
+    if not numeri:
+        return
+    _, dati = M.fetch(",".join(numeri), "(BODY.PEEK[HEADER])")
+    for x in dati:
+        if not isinstance(x, tuple):
+            continue
+        h, tipo = email.message_from_bytes(x[1]), ""
+        if h.get("X-Ricevuta"):
+            continue
+        if h.get("X-Trasporto"):   # una busta PEC: la mail vera è l'allegato postacert.eml
+            _, d = M.fetch(x[0].split()[0].decode(), "(BODY.PEEK[])")
+            h, tipo = F.busta_pec(email.message_from_bytes(d[0][1]))
+            if tipo == "ricevuta":
+                continue
+        link = F.link_posta(h)
+        if link in cercati and link not in trovate:
+            trovate[link] = (h, tipo)
 
 
 def cartella_inviata(imap):
