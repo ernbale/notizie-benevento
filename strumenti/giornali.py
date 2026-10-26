@@ -393,6 +393,8 @@ def main():
             continue
         n_posta += 1
         esito = visti.get(v["id"]) or {}
+        if esito.get("esito") == "sospeso":   # un allegato che non si legge: lo segue la sentinella, non il giro dell'ora
+            continue
         if esito.get("esito") in ("pubblicato", "gia_nel_sito"):
             gia[norma_url("posta:" + v["id"])] = esito.get("notizia")
         elif not esito and adesso - arrivata < dt.timedelta(minutes=LAMPO_MINUTI):

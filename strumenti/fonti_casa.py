@@ -51,6 +51,10 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import allegati as A   # noqa: E402  (il testo degli allegati: tutti i formati, l'OCR delle scansioni)
+from allegati import DOCUMENTI_SCRITTI, nome_allegato, testo_documento   # noqa: E402,F401  (li usa posta_web.py)
+
 CARTELLA = os.environ.get("NB_FONTI_CARTELLA") or os.path.expanduser("~/nb-fonti")   # la variabile serve per le prove
 ARCHIVIO = os.path.join(CARTELLA, "archivio")
 REMOTO = "git@github.com:ernbale/notizie-benevento-fonti.git"
@@ -663,219 +667,10 @@ RIGA_FIRMA = re.compile(r"https?:|www\.|@|^\s*(fb|ig|facebook|instagram|threads|
 AVVISO_LEGALE = re.compile(r"d\.\s?lgs\.?\s*(n\.?\s*)?196|196/2003|gdpr|2016/679|informazioni contenute nella|"
                            r"informazioni contenute in questa|questo messaggio e|this e-?mail|confidential|"
                            r"stampare questa|prima di stampare", re.I)
-ALLEGATO_DOCUMENTO = re.compile(r"\.(pdf|docx?|odt|rtf|txt|pptx?|xlsx?)$", re.I)
+ALLEGATO_DOCUMENTO = re.compile(r"\.(pdf|docx?|docm|odt|ods|odp|rtf|txt|pptx?|ppsx?|xlsx?|zip|7z|rar|p7m|eml|msg|tiff?|"
+                                r"pages|numbers|key)$", re.I)
 IMMAGINE_GRANDE = 150_000   # byte: una locandina sì, il logo della firma no
 PROSA_MIN = 200   # caratteri di frasi vere scritte da loro: più di un «grazie, vi abbiamo aggiunti» (nel dubbio passa)
-
-
-def nome_allegato(parte):
-    """Il nome di un allegato, anche quando il programma di posta lo scrive codificato: «=?utf-8?Q?comunicato_stampa_-_
-    ADOTTATO.docx?=» della Pro Loco di Fragneto Monforte, 25 ott 2026 (così non si capiva che era un .docx)."""
-    nome = parte.get_filename() or ""
-    if "=?" in nome:
-        try:
-            import email.header
-            nome = str(email.header.make_header(email.header.decode_header(nome)))
-        except (ValueError, LookupError, UnicodeDecodeError):
-            pass
-    return nome.strip()
-
-
-DOCUMENTI_SCRITTI = (".docx", ".odt", ".doc", ".rtf")   # gli allegati di cui testo_documento legge il testo
-
-
-def testo_documento(dati, nome):
-    """Il testo di un allegato Word (.docx, e il vecchio .doc), LibreOffice (.odt) o RTF; '' se non si legge. Il formato
-    si riconosce dai primi byte, non dal nome: un .doc può essere anche un .docx o un RTF rinominato.
-    Dal 25 ott 2026: il comunicato della Pro Loco di Fragneto Monforte era solo nel .docx e il giro lampo l'ha scartato;
-    dal 26 ott 2026 anche i .doc: quello del San Pio delle 12:12 era solo in un .doc ed è stato scartato allo stesso modo."""
-    import io
-    import zipfile
-    if dati[:8] == OLE:
-        return testo_doc(dati)
-    if dati[:5] == b"{\\rtf":
-        return testo_rtf(dati)
-    try:
-        with zipfile.ZipFile(io.BytesIO(dati)) as z:
-            x = z.read("word/document.xml" if "word/document.xml" in z.namelist() else "content.xml").decode("utf-8", "replace")
-    except (zipfile.BadZipFile, KeyError, OSError, ValueError):
-        return ""
-    x = re.sub(r"<(w:tab|text:tab)\b[^>]*/>", "\t", x)
-    x = re.sub(r"<text:s\b[^>]*/>", " ", x)
-    x = re.sub(r"<(w:br|w:cr|text:line-break)\b[^>]*/>|</(w:p|text:p|text:h)>", "\n", x)
-    x = html.unescape(re.sub(r"<[^>]+>", "", x))
-    return re.sub(r"\n{3,}", "\n\n", re.sub(r"[ \t]+\n", "\n", x)).strip()
-
-
-# Il Word vecchio (.doc, da Word 97 a Word 2003) si legge qui, senza programmi in più sul Pi: è un contenitore OLE con
-# dentro il flusso «WordDocument» (il testo) e la tabella «0Table» o «1Table», che dice dove sono i pezzi del testo
-# (formato pubblico di Microsoft, [MS-CFB] e [MS-DOC]). I Word 6/95 e quelli con la password restano '' come prima.
-OLE = b"\xd0\xcf\x11\xe0\xa1\xb1\x1a\xe1"
-FINE_CATENA = 0xFFFFFFFA   # da qui in su i numeri dei settori vogliono dire «fine», «libero», «settore della FAT»…
-
-
-def _flussi_ole(dati):
-    """{nome: byte} dei flussi nella radice di un contenitore OLE (i documenti incollati dentro non si aprono)."""
-    import struct
-    if dati[:8] != OLE:
-        raise ValueError("non è un contenitore OLE")
-    settore_dim, mini_dim = 1 << struct.unpack_from("<H", dati, 30)[0], 1 << struct.unpack_from("<H", dati, 32)[0]
-    n_fat, cartella_da, _, soglia, minifat_da, _, difat_da, n_difat = struct.unpack_from("<8I", dati, 44)
-    settore = lambda s: dati[(s + 1) * settore_dim:(s + 2) * settore_dim]
-
-    def catena(s, tabella, leggi):   # i pezzi di un flusso, seguendo la tabella dei settori (senza giri infiniti)
-        out, visti = [], set()
-        while s < FINE_CATENA and s not in visti and s < len(tabella):
-            visti.add(s)
-            out.append(leggi(s))
-            s = tabella[s]
-        return b"".join(out)
-
-    difat, s = list(struct.unpack_from("<109I", dati, 76)), difat_da
-    for _ in range(n_difat):   # i file grandi hanno altri settori della FAT, elencati in una catena a parte
-        if s >= FINE_CATENA:
-            break
-        b = settore(s)
-        difat += struct.unpack_from(f"<{settore_dim // 4 - 1}I", b, 0)
-        s = struct.unpack_from("<I", b, settore_dim - 4)[0]
-    fat = [x for s in difat[:n_fat] if s < FINE_CATENA for x in struct.unpack_from(f"<{settore_dim // 4}I", settore(s), 0)]
-    cartella = catena(cartella_da, fat, settore)
-    voci = [cartella[k:k + 128] for k in range(0, len(cartella) - 127, 128)]
-    if not voci:
-        raise ValueError("contenitore OLE senza elenco dei flussi")
-    radice = voci[0]
-    mini = catena(struct.unpack_from("<I", radice, 116)[0], fat, settore)   # i flussi piccoli stanno tutti qui dentro
-    minifat_b = catena(minifat_da, fat, settore)
-    minifat = struct.unpack_from(f"<{len(minifat_b) // 4}I", minifat_b, 0)
-    flussi, da_vedere, visti = {}, [struct.unpack_from("<I", radice, 76)[0]], set()
-    while da_vedere:   # i figli della radice sono un albero: fratelli a sinistra e a destra
-        i = da_vedere.pop()
-        if i >= len(voci) or i in visti:
-            continue
-        visti.add(i)
-        v = voci[i]
-        sinistra, destra, _ = struct.unpack_from("<3I", v, 68)
-        da_vedere += [sinistra, destra]
-        if v[66] != 2:   # 2 = flusso (1 = cartella, 5 = radice)
-            continue
-        nome = v[:max(struct.unpack_from("<H", v, 64)[0] - 2, 0)].decode("utf-16-le", "replace")
-        inizio, dim = struct.unpack_from("<IQ", v, 116)
-        if settore_dim == 512:   # nei file da 512 byte la metà alta della lunghezza può essere sporca
-            dim &= 0xFFFFFFFF
-        if dim < soglia:
-            flussi[nome] = catena(inizio, minifat, lambda s: mini[s * mini_dim:(s + 1) * mini_dim])[:dim]
-        else:
-            flussi[nome] = catena(inizio, fat, settore)[:dim]
-    return flussi
-
-
-def testo_doc(dati):
-    """Il testo del corpo di un Word vecchio (.doc); '' se non si legge (anche Word 6/95 e documenti con la password)."""
-    import struct
-    try:
-        flussi = _flussi_ole(dati)
-        w = flussi["WordDocument"]
-        firma, versione, _, _, _, segni = struct.unpack_from("<6H", w, 0)
-        if firma != 0xA5EC or versione < 0x65 or segni & 0x0100:   # non Word 97 o più nuovo, o con la password
-            return ""
-        tabella = flussi["1Table" if segni & 0x0200 else "0Table"]
-        csw = struct.unpack_from("<H", w, 32)[0]
-        cslw = struct.unpack_from("<H", w, 34 + csw * 2)[0]
-        corpo = struct.unpack_from("<i", w, 36 + csw * 2 + 12)[0]   # ccpText: i caratteri del corpo (poi note, testate…)
-        clx_da, clx_dim = struct.unpack_from("<II", w, 38 + csw * 2 + cslw * 4 + 33 * 8)   # fcClx, lcbClx
-        clx, i = tabella[clx_da:clx_da + clx_dim], 0
-        while i < len(clx) and clx[i] == 1:   # le formattazioni (Prc) prima dei pezzi: si saltano
-            i += 3 + struct.unpack_from("<h", clx, i + 1)[0]
-        if i >= len(clx) or clx[i] != 2:
-            return ""
-        dim = struct.unpack_from("<I", clx, i + 1)[0]
-        n = (dim - 4) // 12
-        cp = struct.unpack_from(f"<{n + 1}I", clx, i + 5)
-        pezzi = []
-        for k in range(n):   # ogni pezzo: in 8 bit (Windows-1252) o in 16 bit (UTF-16), in un punto di WordDocument
-            fc = struct.unpack_from("<I", clx, i + 5 + 4 * (n + 1) + 8 * k + 2)[0]
-            quanti = cp[k + 1] - cp[k]
-            if fc & 0x40000000:
-                da = (fc & 0x3FFFFFFF) // 2
-                pezzi.append(w[da:da + quanti].decode("cp1252", "replace"))
-            else:
-                pezzi.append(w[fc:fc + 2 * quanti].decode("utf-16-le", "replace"))
-        t = "".join(pezzi)[:corpo]
-    except (ValueError, KeyError, IndexError, struct.error, OverflowError, MemoryError):
-        return ""
-    out, campi = [], []   # i campi (collegamenti, numeri di pagina): \x13 codice \x14 quello che si vede \x15
-    for c in t:
-        if c == "\x13":
-            campi.append(False)
-        elif c == "\x14" and campi:
-            campi[-1] = True
-        elif c == "\x15" and campi:
-            campi.pop()
-        elif all(campi):
-            out.append(c)
-    t = "".join(out).replace("\x07\x07", "\x07\n")   # nelle tabelle \x07 chiude la casella, due di fila la riga
-    t = t.translate({0x0D: "\n", 0x0B: "\n", 0x0C: "\n", 0x07: "\t", 0x1E: "-", 0xA0: " "})
-    t = re.sub(r"[\x00-\x08\x0e-\x1f]", "", t)   # immagini, rimandi alle note, trattini facoltativi
-    return re.sub(r"\n{3,}", "\n\n", re.sub(r"[ \t]+\n", "\n", t)).strip()
-
-
-RTF_SALTA = {"fonttbl", "colortbl", "stylesheet", "info", "pict", "object", "header", "headerl", "headerr", "headerf",
-             "footer", "footerl", "footerr", "footerf", "fldinst", "themedata", "colorschememapping", "latentstyles",
-             "datastore", "xmlnstbl", "listtable", "listoverridetable", "rsidtbl", "generator", "filetbl", "revtbl",
-             "pgdsctbl", "shppict", "nonshppict", "xe", "tc"}   # le parti che non sono testo da leggere
-RTF_SEGNI = {"par": "\n", "line": "\n", "sect": "\n", "page": "\n", "row": "\n", "tab": "\t", "cell": "\t",
-             "emdash": "—", "endash": "–", "lquote": "‘", "rquote": "’", "ldblquote": "“", "rdblquote": "”", "bullet": "•"}
-RTF_PEZZO = re.compile(rb"\\([a-z]{1,32})(-?\d{1,10})? ?|\\'([0-9a-f]{2})|\\([^a-z])|([{}])|([\r\n]+)|([^\\{}\r\n]+)",
-                       re.I)
-
-
-def testo_rtf(dati):
-    """Il testo di un allegato RTF (anche un .doc che in realtà è RTF); '' se non c'è testo."""
-    import codecs
-    m = re.search(rb"\\ansicpg(\d{3,5})", dati[:4000])
-    codifica = f"cp{int(m.group(1))}" if m else "cp1252"
-    try:
-        codecs.lookup(codifica)
-    except LookupError:
-        codifica = "cp1252"
-    out, pila, salta, uc, resto = [], [], False, 1, 0   # resto: i caratteri di riserva da saltare dopo un \uN
-    for parola, num, esa, simbolo, graffa, _, testo in RTF_PEZZO.findall(dati):
-        if graffa:
-            resto = 0
-            if graffa == b"{":
-                pila.append((salta, uc))
-            elif pila:
-                salta, uc = pila.pop()
-        elif parola:
-            resto = 0
-            p = parola.decode("ascii").lower()
-            if p in RTF_SALTA:
-                salta = True
-            elif p == "uc" and num:
-                uc = int(num)
-            elif not salta and p == "u" and num:
-                out.append(chr(int(num) % 65536))   # i numeri negativi sono i caratteri sopra il 32767
-                resto = uc
-            elif not salta and p in RTF_SEGNI:
-                out.append(RTF_SEGNI[p])
-        elif esa:
-            if resto:
-                resto -= 1
-            elif not salta:
-                out.append(bytes([int(esa, 16)]).decode(codifica, "replace"))
-        elif simbolo:
-            resto = 0
-            if simbolo == b"*":
-                salta = True
-            elif not salta:
-                out.append({b"\\": "\\", b"{": "{", b"}": "}", b"~": " ", b"_": "-", b"\n": "\n", b"\r": "\n"}.get(simbolo, ""))
-        elif testo:
-            n = min(resto, len(testo))
-            resto -= n
-            if not salta and testo[n:]:
-                out.append(testo[n:].decode(codifica, "replace"))
-    t = "".join(out).encode("utf-16", "surrogatepass").decode("utf-16", "replace")   # le emoji arrivano in due \u
-    return re.sub(r"\n{3,}", "\n\n", re.sub(r"[ \t]+\n", "\n", t)).strip()
 
 
 def id_posta(link):
@@ -939,34 +734,14 @@ def contenuto_risposta(m):
     return f"{prosa} caratteri scritti da loro" if prosa >= PROSA_MIN else ""
 
 
-def _testo_mail(m):
-    """Il testo di una mail (la parte di testo semplice, se no l'HTML ripulito) e quello degli allegati PDF, Word (.docx
-    e .doc), LibreOffice (.odt) e RTF."""
-    corpo, allegati, documenti = "", [], []
-    for parte in m.walk():
-        tipo, nome = parte.get_content_type(), nome_allegato(parte)
-        if nome:
-            allegati.append(nome)
-            if tipo == "application/pdf" or nome.lower().endswith(".pdf"):
-                try:   # pdftotext (poppler) se c'è sul Pi; se no l'allegato resta solo nel nome
-                    r = subprocess.run(["pdftotext", "-layout", "-", "-"], input=parte.get_payload(decode=True),
-                                       capture_output=True, timeout=30)
-                    documenti.append(f"[allegato {nome}]\n" + r.stdout.decode("utf-8", "replace"))
-                except (OSError, subprocess.SubprocessError):
-                    pass
-            elif nome.lower().endswith(DOCUMENTI_SCRITTI):
-                t = testo_documento(parte.get_payload(decode=True) or b"", nome)
-                if t:
-                    documenti.append(f"[allegato {nome}]\n" + t)
-            continue
-        if tipo in ("text/plain", "text/html"):
-            t = parte.get_payload(decode=True) or b""
-            t = t.decode(parte.get_content_charset() or "utf-8", "replace")
-            t = testo(t) if tipo == "text/html" else t
-            if t.strip() and (not corpo or tipo == "text/plain"):   # un testo semplice vuoto non copre l'HTML
-                corpo = t
-    tutto = re.sub(r"\n{3,}", "\n\n", (corpo.strip() + "\n\n" + "\n\n".join(documenti)).strip())
-    return tutto[:TESTO_MAX], allegati
+POSTA_TESTO_MAX = 20_000   # caratteri di una mail con i suoi allegati in comunicati.json (fino al 26 ott 2026 erano
+                           # 8000: un documento lungo restava a metà)
+
+
+def _testo_mail(m, ocr=False):
+    """Il testo di una mail e dei suoi allegati (allegati.leggi_mail: tutti i formati) e i nomi degli allegati."""
+    lettura = A.leggi_mail(m, ocr)
+    return lettura["testo"][:POSTA_TESTO_MAX], lettura["allegati"]
 
 
 # Le locandine: le immagini grandi delle mail (allegate o nel testo) e la prima pagina dei PDF corti si salvano
@@ -975,12 +750,11 @@ def _testo_mail(m):
 # anche le foto, più d'una (lui, 25 ott 2026: «se mandano foto usale», «anche più foto se ci sono»): fino a 10, come
 # archivia.FOTO_MAX. Pillow sta in un ambiente a parte sul Pi (~/nb-fonti/venv-img), solo per rimpicciolirle.
 ALLEGATI = "allegati"
-IMMAGINE_MIN = 60_000   # byte: sotto sono loghi e firme
 IMMAGINI_PER_MAIL = 10
-PDF_PAGINE_MAX = 2      # un PDF più lungo è un documento, non una locandina
 LATO_MAX = 1600
 VENV_IMG = os.path.join(CARTELLA, "venv-img", "bin", "python3")
 RIDUCI = ("import io, sys\nfrom PIL import Image, ImageOps\n"
+          "try:\n    from pillow_heif import register_heif_opener; register_heif_opener()\nexcept ImportError:\n    pass\n"
           "im = ImageOps.exif_transpose(Image.open(io.BytesIO(sys.stdin.buffer.read())))\n"
           "if im.mode in ('RGBA', 'LA', 'P'):\n"
           "    im = im.convert('RGBA'); f = Image.new('RGB', im.size, 'white'); f.paste(im, mask=im.getchannel('A')); im = f\n"
@@ -999,42 +773,23 @@ def riduci(dati):
 
 
 def immagini_mail(m, ident):
-    """Le immagini grandi di una mail e la prima pagina dei suoi PDF corti, salvate in allegati/<ident>/ dell'archivio:
-    [{"file": "allegati/<ident>/1.jpg", "da": nome dell'allegato, "larghezza", "altezza"}]."""
+    """Le immagini grandi di una mail (anche dentro gli archivi e i documenti), la prima pagina dei suoi PDF corti e le
+    prime pagine delle scansioni (allegati.immagini_della_mail), salvate in allegati/<ident>/ dell'archivio:
+    [{"file": "allegati/<ident>/1.jpg", "da": da dove viene, "larghezza", "altezza"}]."""
     out = []
-    for parte in m.walk():
+    for da, dati in A.immagini_della_mail(m):
         if len(out) >= IMMAGINI_PER_MAIL:
             break
-        if parte.is_multipart():
-            continue
-        nome = nome_allegato(parte)
-        dati = parte.get_payload(decode=True) or b""
         try:
-            if parte.get_content_maintype() == "image" and len(dati) >= IMMAGINE_MIN:
-                jpg, w, h = riduci(dati)
-            elif dati and (parte.get_content_type() == "application/pdf" or nome.lower().endswith(".pdf")):
-                with tempfile.TemporaryDirectory() as td:
-                    pdf = os.path.join(td, "a.pdf")
-                    with open(pdf, "wb") as f:
-                        f.write(dati)
-                    info = subprocess.run(["pdfinfo", pdf], capture_output=True, timeout=30).stdout.decode("utf-8", "replace")
-                    pagine = re.search(r"^Pages:\s+(\d+)", info, re.M)
-                    if not pagine or int(pagine[1]) > PDF_PAGINE_MAX:
-                        continue
-                    subprocess.run(["pdftoppm", "-png", "-r", "150", "-f", "1", "-l", "1", "-singlefile", pdf,
-                                    os.path.join(td, "p")], check=True, capture_output=True, timeout=60)
-                    with open(os.path.join(td, "p.png"), "rb") as f:
-                        jpg, w, h = riduci(f.read())
-            else:
-                continue
+            jpg, w, h = riduci(dati)
         except (OSError, ValueError, RuntimeError, subprocess.SubprocessError) as e:
-            print(f"  immagine della mail {ident} ({nome or 'nel testo'}) non salvata: {e}", file=sys.stderr)
+            print(f"  immagine della mail {ident} ({da}) non salvata: {e}", file=sys.stderr)
             continue
         rel = f"{ALLEGATI}/{ident}/{len(out) + 1}.jpg"
         os.makedirs(os.path.join(ARCHIVIO, ALLEGATI, ident), exist_ok=True)
         with open(os.path.join(ARCHIVIO, rel), "wb") as f:
             f.write(jpg)
-        out.append({"file": rel, "da": nome or "immagine nel testo della mail", "larghezza": w, "altezza": h})
+        out.append({"file": rel, "da": da, "larghezza": w, "altezza": h})
     return out
 
 
@@ -1072,6 +827,7 @@ def posta(vecchie):
     except OSError:
         raise RuntimeError("casella non ancora collegata (manca posta.conf: fonti_casa.py --imposta-posta)") from None
     voci = []
+    A.pulisci_cache()   # le pagine lette con l'OCR più vecchie di qualche giorno
     scartate = [l for l, v in vecchie.items() if not v]   # le mail già riconosciute come non comunicati
     viste = set(vecchie)
     _casella(conf, POSTA_SERVER, vecchie, viste, voci, scartate)
@@ -1105,7 +861,12 @@ def _casella(conf, server, vecchie, viste, voci, scartate):
             busta = email.message_from_bytes(dati[0][1])
             m, tipo = busta_pec(busta)
             link_busta, link = link_posta(busta), link_posta(m)
-            if link in viste or link_busta in viste:
+            # un comunicato con allegati che non si erano letti si rilegge quando i lettori sono cambiati (l'OCR
+            # installato, un formato nuovo: allegati.lettore()), una volta sola anche se è sia in comunicati@ che in PEC
+            vecchia = vecchie.get(link) or vecchie.get(link_busta) or {}
+            rileggi = (bool(vecchia.get("allegati_non_letti")) and vecchia.get("letto_con") != A.lettore()
+                       and not any(x.get("link") == link for x in voci))
+            if (link in viste or link_busta in viste) and not rileggi:
                 continue
             viste.update((link, link_busta))
             if tipo == "ricevuta":
@@ -1120,10 +881,22 @@ def _casella(conf, server, vecchie, viste, voci, scartate):
                 quando = eu.parsedate_to_datetime(m.get("Date")).astimezone(fuso()).isoformat(timespec="minutes")
             except (TypeError, ValueError):
                 quando = dt.datetime.now(fuso()).isoformat(timespec="minutes")
-            corpo, allegati = _testo_mail(m)
+            lettura = A.leggi_mail(m, ocr=True)
             v = {"id": id_posta(link), "titolo": dec(m.get("Subject")) or "(senza oggetto)", "link": link,
-                 "data": quando, "arrivata": adesso, "mittente": mittente, "dominio": dominio,
-                 "allegati": allegati, "testo": corpo}
+                 "data": quando, "arrivata": vecchia.get("arrivata") or adesso, "mittente": mittente, "dominio": dominio,
+                 "allegati": lettura["allegati"], "testo": lettura["testo"][:POSTA_TESTO_MAX]}
+            if len(lettura["testo"]) > POSTA_TESTO_MAX:
+                v["testo_tagliato"] = len(lettura["testo"])
+            # quello che non si legge (COMUNICATI.md: il giro lampo non lo può scartare, lo mette in sospeso)
+            if lettura["non_letti"]:
+                v["allegati_non_letti"] = lettura["non_letti"]
+                v["letto_con"] = A.lettore() + ("+da finire" if lettura["da_finire"] else "")
+            if lettura["link_file"]:
+                v["link_file"] = lettura["link_file"]
+            if rileggi and len(lettura["non_letti"]) < len(vecchia.get("allegati_non_letti") or []):
+                v["riletto"] = adesso   # ora si legge di più: il giro lampo lo riprende (comunicati_lampo.py)
+            elif vecchia.get("riletto"):
+                v["riletto"] = vecchia["riletto"]
             if tipo == "pec":   # mandata da una casella PEC: il mittente è certificato dal gestore
                 v["pec"] = True
             immagini = immagini_mail(m, v["id"])
@@ -1437,6 +1210,14 @@ incompleto. La casella dei comunicati la legge ogni 5 minuti.
   gestore (oggetto, mittente e testo sono quelli della mail vera; niente ricevute di accettazione e consegna):
   `pec: true` = mandata da una casella PEC, il mittente è certificato. `pec` del file = se la PEC si è letta,
   `pec_ultima_lettura` = l'ultima volta che si è letta.
+  Dal 26 ott 2026 il `testo` ha quello di tutti gli allegati che si leggono (strumenti/allegati.py: PDF anche
+  scansionati con l'OCR, Word, Excel, PowerPoint, LibreOffice, RTF, testo, dentro zip/7z/rar, .p7m, winmail.dat e mail
+  inoltrate), ognuno col suo «[allegato …]» («letto con l'OCR, può contenere errori» per le scansioni); `immagini`
+  anche le prime pagine delle scansioni e le immagini dentro archivi e documenti. `allegati_non_letti`: quello che non
+  si è potuto leggere, col perché (il giro lampo non può scartare il comunicato: lo mette in sospeso), `letto_con`: con
+  quali lettori (se cambiano si rilegge da solo), `riletto`: quando si è riletto leggendo di più (il giro lampo lo
+  riprende), `link_file`: link a file da scaricare scritti nella mail, `testo_tagliato`: i caratteri del testo intero
+  quando supera i 20.000.
 - `ufficiali.json` (dal 25 ott 2026): gli articoli nuovi dei siti ufficiali (società sportive, Comune e Provincia di
   Benevento, ASL, Alto Calore, GESESA, EAV, AIR, ANAS e Regione solo per il Sannio), letti dal Pi ogni 5 minuti
   (`strumenti/ufficiali.py`), ultimi 3 giorni: `id` («u» e 11 caratteri, come quelli di comunicati_visti.json del

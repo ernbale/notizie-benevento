@@ -1076,7 +1076,8 @@
   var TIPI_MAIL = { pec: ["Certificata", "ok"], anomalia: ["Non certificata", ""], ricevuta: ["Ricevuta PEC", ""],
                     rimbalzo: ["Non consegnata", "ko"], automatica: ["Risposta automatica", ""], avviso: ["Avviso del gestore", ""] };
   var ESITI_POSTA = { pubblicato: ["Pubblicato sul sito", "ok"], gia_nel_sito: ["Era già sul sito", "info"],
-                      scartato: ["Non pubblicato", "ko"], in_lavorazione: ["In lavorazione", "info"] };
+                      scartato: ["Non pubblicato", "ko"], in_lavorazione: ["In lavorazione", "info"],
+                      sospeso: ["In sospeso", "ko"] };
 
   function postaEntra() {
     if (!chiaveGrezza) return Promise.reject(new Error("serve la parola d'ordine delle statistiche"));
@@ -1387,6 +1388,7 @@
         var rq = el("div", "riquadretto " + ESITI_POSTA[c.esito][1]);
         rq.appendChild(el("b", "", ESITI_POSTA[c.esito][0]));
         if (c.esito === "in_lavorazione") rq.appendChild(document.createTextNode(": il giro lampo lo sta scrivendo adesso."));
+        else if (c.esito === "sospeso") rq.appendChild(document.createTextNode(": il Pi non ha letto un allegato (è scritto sotto, negli allegati): va letto qui e pubblicato a mano. La sentinella avvisa ogni ora."));
         else if (c.esito === "scartato") rq.appendChild(document.createTextNode(" dal giro lampo" + (c.quando ? " (" + quandoPosta(c.quando) + ")" : "") + ": il motivo è nel resoconto del giro."));
         else if (c.quando) rq.appendChild(document.createTextNode(" — " + quandoPosta(c.quando)));
         if (c.url) { rq.appendChild(document.createTextNode(" · ")); var l = el("a", "", "leggi la notizia ↗"); l.href = c.url; l.target = "_blank"; l.rel = "noopener"; rq.appendChild(l); }

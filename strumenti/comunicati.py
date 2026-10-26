@@ -32,7 +32,13 @@ Il file per --unisci:
             {"comunicato": "id", "esito": "gia_nel_sito", "notizia": "id della notizia che c'è già"},
             {"comunicato": "id", "esito": "gia_nel_sito", "notizia": "id", "foto_inviate": ["id/1", "id/2"],
              "foto_da": "chi firma il comunicato"},   (le foto o la locandina della mail sulla notizia che c'è già)
-            {"comunicato": "id", "esito": "scartato", "motivo": "perché non si pubblica"} ]}
+            {"comunicato": "id", "esito": "scartato", "motivo": "perché non si pubblica"},
+            {"comunicato": "id", "esito": "sospeso", "motivo": "cosa non si legge e perché non basta il resto"} ]}
+«sospeso» (dal 26 ott 2026, dopo il comunicato del San Pio perso perché era solo in un .doc): un comunicato con
+«allegati_non_letti» (il Pi non è riuscito a leggerli, strumenti/allegati.py) che senza quegli allegati non si può
+scrivere. Non si scarta: resta in sospeso, la sentinella del Pi avvisa il proprietario finché qualcuno non lo sistema, e
+quando il Pi riesce a rileggerlo (riletto) torna da solo tra quelli da fare. Un comunicato con allegati non letti si può
+scartare solo se si capisce anche senza (fuori provincia, pubblicità…): "senza_allegati": "perché basta il resto".
 Con «pubblicato» i prezzi, le percentuali, gli orari e le date del testo del comunicato devono stare nella notizia o nel
 suo evento (dati_mancanti, dal 26 ott 2026); uno che al lettore proprio non serve va nell'esito con il perché:
 "tralasciati": {"18 ottobre": "è il giorno della riunione di prima, non dell'evento"}.
@@ -65,7 +71,7 @@ SITO = os.path.dirname(QUI)
 FILE = os.path.join(SITO, "comunicati_visti.json")
 NOTIZIE = os.path.join(SITO, "notizie.json")
 EVENTI = os.path.join(SITO, "eventi.json")
-ESITI = ("pubblicato", "gia_nel_sito", "scartato")
+ESITI = ("pubblicato", "gia_nel_sito", "scartato", "sospeso")
 IMMAGINI = {"locandina", "foto_inviate", "foto_da"}   # con «gia_nel_sito» si aggiungono alla notizia che c'è già
 GIORNI_DA_FARE = 3      # i comunicati arrivati da più giorni non sono più «da fare» per il giro lampo
 GIORNI_VISTI = 30       # quanto si ricordano i comunicati trattati
@@ -130,11 +136,17 @@ def simili(c, notizie, adesso):
     return [n for _, n in sorted(out, key=lambda x: -x[0])[:4]]
 
 
+def ripreso(v, visti):
+    """Un comunicato in sospeso che il Pi ha riletto e ora legge tutto: torna da fare."""
+    return (visti.get(v.get("id")) or {}).get("esito") == "sospeso" and bool(v.get("riletto")) \
+        and not v.get("allegati_non_letti")
+
+
 def da_fare(adesso):
     c, u = comunicati(), comunicati("ufficiali.json")
     visti = leggi(FILE, {}).get("visti") or {}
     limite = (adesso - dt.timedelta(days=GIORNI_DA_FARE)).isoformat()
-    voci = [v for v in tutte_le_voci() if v.get("id") and v["id"] not in visti
+    voci = [v for v in tutte_le_voci() if v.get("id") and (v["id"] not in visti or ripreso(v, visti))
             and (v.get("arrivata") or v.get("data") or "") >= limite]
     notizie = leggi(NOTIZIE, {}).get("notizie") or []
     citati = G.citati()
@@ -154,6 +166,17 @@ def da_fare(adesso):
             print(f"\n[{v['id']}] arrivato {v.get('arrivata') or v.get('data')} · da {v.get('mittente')} "
                   f"(dominio {v.get('dominio')})" + (f" · allegati: {', '.join(v['allegati'])}" if v.get("allegati") else ""))
             print(f"  oggetto: {v.get('titolo')}")
+            if ripreso(v, visti):
+                print("  ERA IN SOSPESO: adesso il Pi ha letto gli allegati che mancavano (riletto "
+                      f"{str(v.get('riletto'))[:16]}): trattalo come nuovo")
+            if v.get("allegati_non_letti"):
+                print("  ALLEGATI NON LETTI dal Pi: " + "; ".join(v["allegati_non_letti"]) + "\n    Se il testo della mail, "
+                      "gli altri allegati e le immagini non bastano per l'articolo, l'esito è «sospeso» (non «scartato»): "
+                      "COMUNICATI.md, punto 3")
+            if v.get("link_file"):
+                print("  LINK A FILE nel testo (il comunicato può essere lì: aprili con WebFetch): " + ", ".join(v["link_file"]))
+            if v.get("testo_tagliato"):
+                print(f"  TESTO TAGLIATO: qui sotto ci sono i primi caratteri di {v['testo_tagliato']}")
         for n in simili(v, notizie, adesso):
             print(f"  POSSIBILE STESSO FATTO già sul sito: {n['id']} · {n.get('pubblicato', '')[:16]} · {n.get('titolo')}")
         for k, im in enumerate(v.get("immagini") or [], 1):   # le locandine: guardale (Read) prima di usarle
@@ -240,6 +263,14 @@ def senza_citazione(t):
     return t[:m.start()] if m else t
 
 
+OCR = re.compile(r"^\[(?:allegato|immagine) [^\n]*lett[oa] con l'OCR[^\n]*\]\n.*?(?=^\[|\Z)", re.M | re.S)
+
+
+def senza_ocr(t):
+    """Il testo senza le parti lette con l'OCR (strumenti/allegati.py): possono avere numeri letti male."""
+    return OCR.sub("", t)
+
+
 def dati_mancanti(voce, n, eventi, tralasciati):
     """Come sono scritti nel comunicato i dati che nella notizia e nei suoi eventi non ci sono. Il giorno in cui è
     arrivato il comunicato (la data in fondo alla lettera) non conta; quelli in «tralasciati» dell'esito nemmeno."""
@@ -251,7 +282,7 @@ def dati_mancanti(voce, n, eventi, tralasciati):
         nostri[("data", giorno.day, giorno.month)] = ""
     except ValueError:
         pass
-    suoi = dati_del_testo(str(voce.get("titolo") or "") + "\n" + senza_citazione(str(voce.get("testo") or "")))
+    suoi = dati_del_testo(str(voce.get("titolo") or "") + "\n" + senza_ocr(senza_citazione(str(voce.get("testo") or ""))))
     return [scritto for k, scritto in suoi.items() if k not in nostri]
 
 
@@ -324,8 +355,16 @@ def unisci(d, visti, entrata, voci, adesso, err):
             err.append(f"{w}: la notizia {e.get('notizia')!r} è in archivio: le foto si aggiungono solo in prima pagina")
         if es != "gia_nel_sito" and IMMAGINI & e.keys():
             err.append(f"{w}: locandina e foto vanno nella notizia («notizie»); nell'esito solo con «gia_nel_sito»")
-        elif es == "scartato" and len(str(e.get("motivo") or "").strip()) < 10:
+        elif es in ("scartato", "sospeso") and len(str(e.get("motivo") or "").strip()) < 10:
             err.append(f"{w}: scrivi il «motivo» (serve al resoconto)")
+        elif (es == "scartato" and per_voce[cid].get("allegati_non_letti")
+              and len(str(e.get("senza_allegati") or "").strip()) < 10):
+            # il San Pio, 26 ott 2026: scartato perché il testo era in un .doc che il Pi non leggeva, e nessuno l'ha più visto
+            err.append(f"{w}: il Pi non ha letto {'; '.join(per_voce[cid]['allegati_non_letti'])}. Se il comunicato senza "
+                       "quegli allegati non si capisce l'esito è «sospeso» (la sentinella avvisa il proprietario); "
+                       "si scarta solo se basta il resto, col perché in \"senza_allegati\"")
+        elif es == "sospeso" and not per_voce[cid].get("allegati_non_letti"):
+            err.append(f"{w}: «sospeso» è solo per i comunicati con allegati che il Pi non ha letto")
     for i in per_id:
         if i not in pubblicate:
             err.append(f"{i}: notizia senza un comunicato con esito «pubblicato» che la indichi")

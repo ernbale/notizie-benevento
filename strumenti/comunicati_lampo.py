@@ -14,6 +14,8 @@ comunicati (senza rimbalzi e risposte automatiche) in comunicati.json dell'archi
   COMUNICATI.md del sito;
 - un comunicato avviato ma dopo RILANCIA_DOPO minuti non ancora in comunicati_visti.json del sito → la rilancia, al
   massimo RILANCI volte (poi è la sentinella a dare l'allarme, punto 7);
+- un comunicato «in sospeso» (il Pi non ne leggeva un allegato, COMUNICATI.md) che il Pi ha riletto leggendo tutto
+  (fonti_casa.py: «riletto», per esempio dopo che si è installato l'OCR) → lo rilancia una volta (dal 26 ott 2026);
 - la prima volta prende solo nota dei comunicati che ci sono già: non sono nuovi.
 Scrive nel registro (comunicati.log) solo quando fa qualcosa o qualcosa non va. Stato in comunicati_lampo.json.
 
@@ -111,13 +113,22 @@ def main():
               and lanciati[v["id"]]["volte"] < RILANCI
               and adesso - dt.datetime.fromisoformat(lanciati[v["id"]]["ultimo"]) >= dt.timedelta(minutes=RILANCIA_DOPO)]
     rilanci = []
+    riletti = [v for v in voci if v["id"] in lanciati and v.get("riletto") and not v.get("allegati_non_letti")
+               and str(v["riletto"]) > str(lanciati[v["id"]].get("ultimo") or "")]
+    if riletti:   # solo se sul sito è ancora in sospeso (non già pubblicato a mano o dal giro di ogni ora)
+        try:
+            visti = visti_sul_sito()
+            riletti = [v for v in riletti if (visti.get(v["id"]) or {}).get("esito") == "sospeso"]
+        except Exception as e:
+            print(f"{ora} ERRORE: non leggo comunicati_visti.json del sito ({type(e).__name__}: {e})")
+            riletti = []
     if attesa:
         try:
             visti = visti_sul_sito()
             rilanci = [v for v in attesa if v["id"] not in visti]
         except Exception as e:   # senza la risposta di GitHub non si rilancia (meglio che un doppio giro)
             print(f"{ora} ERRORE: non leggo comunicati_visti.json del sito ({type(e).__name__}: {e})")
-    da_fare = nuovi + rilanci
+    da_fare = nuovi + rilanci + [v for v in riletti if v not in rilanci]
     if any(v.get("tipo") == "sito" for v in da_fare):
         fatto = {}
         if aspetta_il_giro(adesso, lambda: fatto.setdefault("f", giro_dell_ora_fatto(adesso))):
@@ -152,7 +163,8 @@ def main():
                          or k in {v["id"] for v in voci}}
     stato["attese"] = {k: q for k, q in (stato.get("attese") or {}).items() if k not in lanciati and q >= limite}
     V.scrivi(STATO, stato)
-    print(f"{ora} giro lampo avviato ({'nuovi' if nuovi else 'rilancio'}): {nomi} → {sessione}")
+    print(f"{ora} giro lampo avviato ({'nuovi' if nuovi else 'riletti' if riletti and not rilanci else 'rilancio'}): "
+          f"{nomi} → {sessione}")
 
 
 if __name__ == "__main__":

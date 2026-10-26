@@ -57,6 +57,24 @@ riuscita» (o cosa non va) con l'esito dei comandi. In prova non pubblichi nient
      effetti per la gente (regola 9 di AGENTE.md: niente comunicati di partito, polemiche, dichiarazioni), chiusure di
      scuole/parchi/cimiteri decise da un Comune (le pubblica il giro Chiusure), un fatto che non si capisce o non si può
      verificare (mittente generico come gmail o libero e niente di controllabile), fatti vecchi.
+   - **sospeso**, col motivo: solo quando nel blocco c'è «ALLEGATI NON LETTI dal Pi» e senza quegli allegati il
+     comunicato non si può scrivere (il testo era tutto lì). Non è uno scarto: la sentinella del Pi avvisa il
+     proprietario ogni ora finché qualcuno non lo legge, e quando il Pi riesce a rileggerlo torna qui da solo («ERA IN
+     SOSPESO»). Voluto dal proprietario il 26 ott 2026, dopo il comunicato del San Pio delle 12:12: il testo era solo in
+     un .doc che il Pi allora non leggeva, il giro lampo l'ha scartato e nessuno l'ha più ripreso fino alle 14:30. Un
+     comunicato con allegati non letti si può **scartare** solo se basta il resto per capire che non si pubblica (fuori
+     provincia, pubblicità…), e allora nell'esito ci va anche `"senza_allegati": "perché basta il resto"`;
+     strumenti/comunicati.py dà errore se manca. Se invece il testo della mail o gli altri allegati bastano per un
+     articolo completo, si pubblica come sempre.
+
+   **Gli allegati** li legge il Pi (strumenti/allegati.py, dal 26 ott 2026: lui, «copri tutti i casi possibili per
+   leggere allegati», «anche un OCR per scansioni»): PDF, Word e Excel e PowerPoint vecchi e nuovi, LibreOffice, RTF,
+   testo, zip/7z/rar, .p7m firmati, winmail.dat, mail inoltrate. Il loro testo è nel blocco, ognuno col suo
+   «[allegato …]». Quello che il Pi ha letto **con l'OCR** (le scansioni, «letto con l'OCR, può contenere errori») può
+   avere lettere e numeri sbagliati: date, orari, prezzi e nomi presi da lì vanno controllati sulle immagini della
+   scansione (le righe «immagine <id>/<n>», «pagina k»), e se l'immagine non li conferma non si scrivono. Le
+   «LINK A FILE» sono indirizzi di Google Drive, WeTransfer, Dropbox… scritti nella mail: il comunicato può essere lì,
+   aprili con WebFetch.
 
    Dal 26 ott 2026 chi ci ha mandato un comunicato **pubblicato** o **gia_nel_sito** riceve dal Pi una mail di
    ringraziamento col link della notizia scritta nell'esito (strumenti/risposte.py; lui: «una email di ringraziamento

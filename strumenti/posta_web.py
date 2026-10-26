@@ -481,7 +481,7 @@ def archivio():
 
 def comunicato(r):
     """Per le mail arrivate a comunicati@ e alla PEC: cosa ne ha fatto il giro lampo (pubblicato, già sul sito,
-    scartato, in lavorazione) con l'indirizzo della notizia. None se non è un comunicato."""
+    scartato, in sospeso, in lavorazione) con l'indirizzo della notizia. None se non è un comunicato."""
     if r["casella"] not in ("comunicati", "pec") or r["cartella"] != "inbox" or \
             r.get("tipo") in ("ricevuta", "rimbalzo", "automatica", "avviso"):
         return None

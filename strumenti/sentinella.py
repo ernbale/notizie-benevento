@@ -20,7 +20,9 @@ nessuno se ne accorgesse.
 7. Comunicati per email (dal 24 ott 2026, vedi COMUNICATI.md): solo sul Pi, un comunicato arrivato da più di
    COMUNICATO_MAX minuti che il giro lampo non ha ancora trattato (comunicati_visti.json del sito). Il Pi lo rilancia
    da solo (comunicati_lampo.py): qui si dà l'allarme. Dal 25 ott 2026 anche gli articoli dei siti ufficiali
-   (ufficiali.json, strumenti/ufficiali.py), dopo SITO_MAX minuti.
+   (ufficiali.json, strumenti/ufficiali.py), dopo SITO_MAX minuti. Dal 26 ott 2026 anche un comunicato «in sospeso»
+   (il giro lampo non ha potuto scriverlo perché il Pi non ha letto un allegato: COMUNICATI.md): l'avviso si ripete
+   ogni ora (SOSPESO_ORE) finché qualcuno non lo sistema (dopo il San Pio delle 12:12, scartato e mai più visto).
 8. Fonti lette da casa (dal 25 ott 2026: l'albo di Benevento e 37 albi su Halley giù dalle 00:30, e nessuno se n'era
    accorto): solo sul Pi, una fonte dell'archivio di casa (~/nb-fonti/archivio) che non si legge da più di
    FONTE_FERMA_ORE ore, o che si legge solo dalla riserva, o gli albi dei Comuni letti meno di ALBI_MINIMI su 57: un
@@ -74,6 +76,7 @@ RITARDO_MAX = 25    # minuti di ritardo del sito rispetto a main
 TG_MAX = 75         # minuti di silenzio del canale con una notizia nuova sul sito
 GIRO_MAX = 80       # minuti dall'ultimo giro (uno all'ora)
 AVVISO_ORE = 2      # dal Pi, la sentinella di GitHub (la mail) al massimo una volta ogni tante ore
+SOSPESO_ORE = 1     # …ma ogni ora se c'è un comunicato in sospeso
 VEDETTA_MAX = 20    # minuti senza un giro della vedetta delle chiusure (sul Pi)
 PISTA_MAX = 45      # minuti: una pista della vedetta non ancora vista dal giro Chiusure
 TG_CHIUSURE = 20    # minuti: una chiusura del sito non ancora sul canale Telegram
@@ -396,6 +399,11 @@ def comunicati(gh, adesso, pi):
                              f"il comunicato di {v.get('mittente') or v.get('dominio')} arrivato alle {arrivata:%H:%M}")
                             + f" («{str(v.get('titolo'))[:60]}») non è ancora stato trattato dal giro lampo "
                             "(~/nb-fonti/comunicati.log)")
+        elif (visti.get(v.get("id")) or {}).get("esito") == "sospeso" and arrivata:
+            problemi.append(f"IN SOSPESO il comunicato di {v.get('mittente') or v.get('dominio')} arrivato il "
+                            f"{arrivata:%d/%m alle %H:%M} («{str(v.get('titolo'))[:60]}»): il Pi non ha letto "
+                            + "; ".join(v.get("allegati_non_letti") or ["un allegato"])
+                            + ". Va letto a mano (scheda Posta delle statistiche) e pubblicato, o il Pi va aiutato a leggerlo")
     return problemi
 
 
@@ -627,7 +635,8 @@ def main():
                 ultimo = iso(json.load(f)["avviso"])
         except (OSError, ValueError, KeyError):
             ultimo = None
-        if not ultimo or adesso - ultimo > dt.timedelta(hours=AVVISO_ORE):
+        ore = SOSPESO_ORE if any(p.startswith("IN SOSPESO") for p in problemi) else AVVISO_ORE
+        if not ultimo or adesso - ultimo > dt.timedelta(hours=ore) - dt.timedelta(minutes=5):
             try:
                 gh.lancia("sentinella.yml", {"avviso": " | ".join(problemi)[:1000]})
                 print(f"{ora} avviso: lanciata la sentinella di GitHub (mail se resta rosso)")
