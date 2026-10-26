@@ -1877,7 +1877,11 @@
      "titolo_prima": "Benevento, Pierozzi esce per un infortunio ad Arezzo: si aspettano gli esami prima del Catanzaro"
     }
    },
-   "foto": "calcio-2"
+   "foto": "calcio-2",
+   "subito": true,
+   "comunicati": [
+    "u4951c8d3962"
+   ]
   },
   {
    "id": "benevento-trofeo-don-pompilio-amatori-podismo-antonucci-secondo",
