@@ -1,7 +1,128 @@
 {
- "aggiornato": "2026-10-26T13:15+01:00",
+ "aggiornato": "2026-10-26T14:24+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "apice-cimitero-orari-ognissanti-defunti-2026",
+   "titolo": "Apice, gli orari del cimitero per Ognissanti e i Defunti: dal 29 ottobre al 2 novembre aperto dalle 8 alle 18",
+   "titolo_google": "Cimitero di Apice, orari dal 27 ottobre al 2 novembre",
+   "sintesi": "Per Ognissanti e la Commemorazione dei Defunti il cimitero comunale di Apice cambia orario. Il 27 e il 28 ottobre è aperto dalle 8 alle 12 e dalle 15 alle 17; dal 29 ottobre al 2 novembre resta aperto dalle 8 alle 18, senza chiusura a pranzo.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "immagine": "cimitero",
+   "luogo": "Apice",
+   "pubblicato": "2026-10-26",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "in_vigore_fino": "2026-11-02",
+   "fonti": [
+    {
+     "nome": "Comune di Apice",
+     "url": "https://www.halleyweb.com/c062003/mc/mc_p_dettaglio.php?id_pubbl=17072",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Per Ognissanti e la Commemorazione dei Defunti il cimitero comunale di Apice ha orari speciali. Martedì 27 e mercoledì 28 ottobre è aperto la mattina dalle 8 alle 12 e il pomeriggio dalle 15 alle 17.",
+      "fonti": [
+       "Comune di Apice"
+      ]
+     },
+     {
+      "testo": "Da giovedì 29 ottobre a lunedì 2 novembre l'orario è continuato: il cimitero resta aperto dalle 8 alle 18. L'avviso è firmato dal responsabile dell'ufficio tecnico, Aurelio Lepore, e dal sindaco Angelo Pepe.",
+      "fonti": [
+       "Comune di Apice"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di Apice",
+      "titolo": "AVVISO PUBBLICO - ORARI DI APERTURA DEL CIMITERO COMUNALE Ricorrenza di Ognissanti e Commemorazione dei Defunti - Anno 2026",
+      "url": "https://www.halleyweb.com/c062003/mc/mc_p_dettaglio.php?id_pubbl=17072",
+      "data": "26 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "foto": "cimitero-11"
+  },
+  {
+   "id": "durazzano-albo-scrutatori-domande-30-novembre-2026",
+   "titolo": "Durazzano, domande per entrare nell'albo degli scrutatori entro il 30 novembre",
+   "titolo_google": "Albo scrutatori Durazzano: domande entro il 30 novembre",
+   "sintesi": "Chi vota a Durazzano e ha almeno la licenza della scuola dell'obbligo può chiedere entro il 30 novembre 2026 di entrare nell'albo degli scrutatori, le persone che lavorano ai seggi. Chi è già iscritto può chiedere la cancellazione entro il 31 dicembre, solo per gravi motivi.",
+   "categoria": "altro",
+   "zona": "caudina",
+   "immagine": "elezioni",
+   "luogo": "Durazzano",
+   "pubblicato": "2026-10-26",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Comune di Durazzano",
+     "url": "https://comune.durazzano.bn.it/novita/aggiornamento-dellalbo-degli-scrutatori-di-seggio-elettorale-anno-2026/",
+     "ufficiale": true
+    },
+    {
+     "nome": "Comune di Morcone",
+     "url": "https://comune.morcone.bn.it/albo-pretorio/?dettaglio_id=306088",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Durazzano si possono presentare fino al 30 novembre 2026 le domande per entrare nell'albo degli scrutatori, l'elenco delle persone che il Comune può chiamare a lavorare nei seggi durante le elezioni. Possono farlo gli elettori del Comune che hanno almeno la licenza della scuola dell'obbligo e non rientrano nei casi di esclusione elencati nell'avviso.",
+      "fonti": [
+       "Comune di Durazzano"
+      ]
+     },
+     {
+      "testo": "La domanda va indirizzata al sindaco, con i moduli che si trovano all'ufficio elettorale del Comune; avviso e modulo sono anche sul sito comune.durazzano.bn.it. Chi è già iscritto può chiedere di essere cancellato entro il 31 dicembre 2026, ma solo per motivi gravi, giustificati e documentati.",
+      "fonti": [
+       "Comune di Durazzano"
+      ]
+     },
+     {
+      "testo": "Anche il Comune di Morcone ha pubblicato il 26 ottobre, nel suo albo pretorio, un avviso sull'albo unico delle persone idonee a fare lo scrutatore.",
+      "fonti": [
+       "Comune di Morcone"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "I termini e le modalità dell'avviso di Morcone."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Durazzano",
+      "titolo": "Aggiornamento dell’albo degli scrutatori di seggio elettorale – Anno 2026",
+      "url": "https://comune.durazzano.bn.it/novita/aggiornamento-dellalbo-degli-scrutatori-di-seggio-elettorale-anno-2026/",
+      "data": "26 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "Comune di Morcone",
+      "titolo": "ALBO UNICO DELLE PERSONE IDONEE ALL' UFFICIO DI SCRUTATORE DI SEGGIO ELETTORALE",
+      "url": "https://comune.morcone.bn.it/albo-pretorio/?dettaglio_id=306088",
+      "data": "26 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "foto": "elezioni-7"
+  },
   {
    "id": "benevento-bonus-luce-gas-2026-requisiti",
    "titolo": "Benevento, bonus luce e gas da 200 a 500 euro: la Giunta fissa i requisiti",
@@ -16,8 +137,12 @@
    "fonti": [
     {
      "nome": "Comune di Benevento",
-     "url": "https://comune.benevento.it/novita/",
+     "url": "https://comune.benevento.it/novita/bonus-luce-e-gas-ok-alla-delibera-con-i-requisiti-per-accedere-ai-contributi/",
      "ufficiale": true
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/26/bonus-luce-e-gas-la-giunta-di-benevento-delibera-i-requisiti-per-accedere-ai-contributi/"
     }
    ],
    "articolo": {
@@ -25,32 +150,39 @@
      {
       "testo": "A Benevento arriva il bonus energia 2026, un contributo una tantum, cioè dato una volta sola, per pagare le bollette di luce e gas. La Giunta comunale, presieduta dal sindaco Clemente Mastella, ha approvato il 26 ottobre la delibera che fissa i requisiti per ottenerlo e gli importi.",
       "fonti": [
-       "Comune di Benevento"
-      ]
+       "Comune di Benevento",
+       "NTR24"
+      ],
+      "giorno": "2026-10-26"
      },
      {
       "testo": "Possono chiederlo i cittadini italiani o dell'Unione Europea e i cittadini di Paesi extra Ue regolarmente soggiornanti in Italia. Bisogna essere residenti nel Comune di Benevento al momento della pubblicazione dell'avviso e alla data della domanda, avere un Isee ordinario o corrente in corso di validità non superiore a 10.800 euro ed essere intestatari di almeno un'utenza domestica di luce o di gas riferita all'abitazione di residenza.",
       "fonti": [
-       "Comune di Benevento"
-      ]
+       "Comune di Benevento",
+       "NTR24"
+      ],
+      "giorno": "2026-10-26"
      },
      {
       "testo": "L'importo dipende da quante persone ci sono in famiglia: 200 euro per chi vive da solo, 300 euro per due persone, 400 euro per tre e 500 euro per quattro o più. Se le domande saranno più dei soldi disponibili, il Comune farà una graduatoria: prima chi ha l'Isee più basso; a parità di Isee, la famiglia più numerosa; in caso di ulteriore parità, conta l'ordine di arrivo delle domande, secondo il numero di protocollo.",
       "fonti": [
        "Comune di Benevento"
-      ]
+      ],
+      "giorno": "2026-10-26"
      },
      {
       "testo": "«È una misura destinata ad aiutare le fasce indigenti», spiegano il sindaco Mastella e l'assessora alle Politiche sociali Carmen Coppola, che la legano all'aumento dei prezzi.",
       "fonti": [
        "Comune di Benevento"
-      ]
+      ],
+      "giorno": "2026-10-26"
      },
      {
       "testo": "Le domande non si possono ancora presentare. Come spiega l'assessora Coppola, la delibera fissa solo i criteri: i termini partiranno con la pubblicazione sull'albo pretorio dell'avviso pubblico, che il Settore Servizi al cittadino del Comune preparerà nei prossimi giorni.",
       "fonti": [
        "Comune di Benevento"
-      ]
+      ],
+      "giorno": "2026-10-26"
      }
     ],
     "cronologia": [],
@@ -61,9 +193,15 @@
      {
       "nome": "Comune di Benevento",
       "titolo": "Bonus luce e gas, ok alla delibera con i requisiti per accedere ai contributi",
-      "url": "https://comune.benevento.it/novita/",
+      "url": "https://comune.benevento.it/novita/bonus-luce-e-gas-ok-alla-delibera-con-i-requisiti-per-accedere-ai-contributi/",
       "data": "26 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Bonus luce e gas, la Giunta di Benevento delibera i requisiti per accedere ai contributi",
+      "url": "https://www.ntr24.tv/2026/10/26/bonus-luce-e-gas-la-giunta-di-benevento-delibera-i-requisiti-per-accedere-ai-contributi/",
+      "data": "26 ott, 14:16"
      }
     ]
    },
@@ -404,7 +542,7 @@
    "zona": "benevento",
    "luogo": "Benevento",
    "immagine": "concerto",
-   "pubblicato": "2026-10-26T12:56:00+01:00",
+   "pubblicato": "2026-10-26T13:09:00+01:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
@@ -415,6 +553,10 @@
     {
      "nome": "NTR24",
      "url": "https://www.ntr24.tv/2026/10/26/successo-per-il-sannio-festival-tre-giorni-dedicati-alla-canzone-napoletana-tra-concerti-libri-e-premi-alla-carriera/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/benevento-successo-per-la-vi-edizione-del-sannio-festival-tre-giorni-dedicati-alla-voce-e-alla-canzone-napoletana-foto/"
     }
    ],
    "articolo": {
@@ -424,21 +566,26 @@
       "fonti": [
        "NTR24",
        "Cronache del Sannio"
-      ]
-     },
-     {
-      "testo": "Sabato 24 la giuria aveva dato il Premio Sergio Bruni, per la migliore interpretazione di una canzone napoletana già nota, a Massimo Masiello con «Tutta pe' mme»; secondo Tino Brigandi, terza Mena Cacciapuoti.",
-      "fonti": [
-       "NTR24",
-       "Cronache del Sannio"
-      ]
+      ],
+      "giorno": "2026-10-25"
      },
      {
       "testo": "In tre giorni, dal 23 al 25 ottobre, ci sono stati concerti, masterclass e presentazioni di libri. Venerdì l'Orchestra stabile della canzone napoletana del Conservatorio, diretta da Luigi Ottaiano, ha suonato l'omaggio ad Angela Luce. I premi alla carriera sono andati a Giovanni Mauriello, all'editore Maurizio Cuzzolin, al cantante Antonello Rondi e, domenica, a Miranda Martino, Gloria Christian e Maurizio Casagrande.",
       "fonti": [
        "NTR24",
-       "Cronache del Sannio"
-      ]
+       "Cronache del Sannio",
+       "TV7 Benevento"
+      ],
+      "giorno": "2026-10-25"
+     },
+     {
+      "testo": "Sabato 24 la giuria aveva dato il Premio Sergio Bruni, per la migliore interpretazione di una canzone napoletana già nota, a Massimo Masiello con «Tutta pe' mme»; secondo Tino Brigandi, terza Mena Cacciapuoti.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio",
+       "TV7 Benevento"
+      ],
+      "giorno": "2026-10-24"
      }
     ],
     "cronologia": [],
@@ -465,6 +612,12 @@
       "titolo": "Successo per il Sannio Festival: tre giorni dedicati alla canzone napoletana tra concerti, libri e premi alla carriera",
       "url": "https://www.ntr24.tv/2026/10/26/successo-per-il-sannio-festival-tre-giorni-dedicati-alla-canzone-napoletana-tra-concerti-libri-e-premi-alla-carriera/",
       "data": "26 ott, 12:55"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Benevento, successo per la VI edizione del Sannio Festival: tre giorni dedicati alla voce e alla canzone napoletana (FOTO)",
+      "url": "https://www.tvsette.net/benevento-successo-per-la-vi-edizione-del-sannio-festival-tre-giorni-dedicati-alla-voce-e-alla-canzone-napoletana-foto/",
+      "data": "26 ott, 13:09"
      }
     ]
    },
@@ -478,7 +631,7 @@
    "categoria": "cronaca",
    "zona": "caudina",
    "luogo": "Forchia",
-   "pubblicato": "2026-10-26T12:57:00+01:00",
+   "pubblicato": "2026-10-26T13:14:00+01:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
@@ -501,6 +654,10 @@
     {
      "nome": "Ottopagine",
      "url": "https://www.ottopagine.it/bn/cronaca/442192/tragico-incidente-in-valle-caudina-muore-un-pensionato.shtml"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/26/statale-appia-auto-contro-cancello-muore-74enne-irpino/"
     }
    ],
    "articolo": {
@@ -513,7 +670,8 @@
        "Cronache del Sannio",
        "Gazzetta di Benevento",
        "Ottopagine"
-      ]
+      ],
+      "giorno": "2026-10-26"
      },
      {
       "testo": "Alcuni automobilisti che passavano hanno provato ad aiutarlo, ma quando è arrivata l'ambulanza del 118 di Airola non c'era più niente da fare. Sono intervenuti anche i Vigili del fuoco del distaccamento di Bonea e i Carabinieri della Compagnia di Montesarchio, che hanno fatto i rilievi.",
@@ -522,21 +680,26 @@
        "BeneventoNews24",
        "Cronache del Sannio",
        "Gazzetta di Benevento"
-      ]
+      ],
+      "giorno": "2026-10-26"
      },
      {
       "testo": "Lo schianto è avvenuto al chilometro 232 della statale, nel tratto tra Airola e Forchia, contro la recinzione di una casa privata. I Carabinieri hanno sequestrato l'auto e la salma è stata portata all'obitorio per gli eventuali accertamenti del medico legale.",
       "fonti": [
-       "Ottopagine"
-      ]
+       "Ottopagine",
+       "NTR24"
+      ],
+      "giorno": "2026-10-26"
      },
      {
       "testo": "Le cause sono ancora da chiarire. Dai primi controlli non risultano altri veicoli coinvolti e non si esclude che l'uomo si sia sentito male prima dello schianto. Sulla statale ci sono stati rallentamenti, mentre si aspettava il permesso del magistrato per portare via la salma.",
       "fonti": [
        "Anteprima24",
        "BeneventoNews24",
-       "Ottopagine"
-      ]
+       "Ottopagine",
+       "NTR24"
+      ],
+      "giorno": "2026-10-26"
      }
     ],
     "cronologia": [],
@@ -586,6 +749,12 @@
       "titolo": "Tragico incidente in Valle Caudina, muore un pensionato",
       "url": "https://www.ottopagine.it/bn/cronaca/442192/tragico-incidente-in-valle-caudina-muore-un-pensionato.shtml",
       "data": "26 ott, 12:57"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Statale Appia, auto contro cancello: muore 74enne irpino",
+      "url": "https://www.ntr24.tv/2026/10/26/statale-appia-auto-contro-cancello-muore-74enne-irpino/",
+      "data": "26 ott, 13:14"
      }
     ]
    }
@@ -820,12 +989,12 @@
   },
   {
    "id": "castelpoto-santa-croce-del-sannio-elenco-elettori-fuori-sede",
-   "titolo": "Castelpoto, Santa Croce del Sannio, Apice e Cusano Mutri, aperto l'elenco degli elettori fuori sede: domande entro il 31 dicembre",
-   "titolo_google": "Elettori fuori sede in quattro Comuni del Sannio: come fare",
-   "sintesi": "I Comuni di Castelpoto, Santa Croce del Sannio, Apice e Cusano Mutri hanno aperto l'elenco degli elettori fuori sede previsto dalla nuova legge elettorale: chi per studio, lavoro o cure vive in una regione diversa da quella in cui vota può chiedere di votare dove abita. Per studio e lavoro la domanda va fatta entro il 31 dicembre, per le votazioni dell'anno dopo.",
+   "titolo": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta e Pesco Sannita, aperto l'elenco degli elettori fuori sede: domande entro il 31 dicembre",
+   "titolo_google": "Elettori fuori sede in sei Comuni del Sannio: come fare",
+   "sintesi": "I Comuni di Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta e Pesco Sannita hanno aperto l'elenco degli elettori fuori sede previsto dalla nuova legge elettorale: chi per studio, lavoro o cure vive in una regione diversa da quella in cui vota può chiedere di votare dove abita. Per studio e lavoro la domanda va fatta entro il 31 dicembre, per le votazioni dell'anno dopo.",
    "categoria": "altro",
    "zona": "provincia",
-   "luogo": "Castelpoto, Santa Croce del Sannio, Apice e Cusano Mutri",
+   "luogo": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta e Pesco Sannita",
    "immagine": "elezioni",
    "pubblicato": "2026-10-26",
    "stato": "ufficiale",
@@ -850,17 +1019,29 @@
      "nome": "Comune di Cusano Mutri",
      "url": "https://www.comune.cusanomutri.bn.it/it/novita/page/istituzione-dell-elenco-comunale-degli-elettori-fuori-sede-per-l-esercizio-del-diritto-di-voto-da-parte-degli-elettori-fuori-sede-in-occasione-delle-elezioni-politiche-ed-europee-e-dei-referendum",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di Dugenta",
+     "url": "https://comune.dugenta.bn.it/novita/elezioni-politiche-europee-e-referendum-voto-fuori-sede/",
+     "ufficiale": true
+    },
+    {
+     "nome": "Comune di Pesco Sannita",
+     "url": "https://www.halleyweb.com/c062050/mc/mc_p_dettaglio.php?id_pubbl=14953",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Castelpoto, Santa Croce del Sannio, Apice e Cusano Mutri hanno aperto l'elenco comunale degli elettori fuori sede. Lo prevede la legge 180 del 9 ottobre 2026 sulle elezioni di Camera e Senato: chi vive per un periodo in una regione diversa da quella del Comune dove è iscritto per votare può chiedere di votare nel Comune dove abita. Vale per le elezioni politiche ed europee e per i referendum, non per le elezioni comunali e regionali.",
+      "testo": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta e Pesco Sannita hanno aperto l'elenco comunale degli elettori fuori sede. Lo prevede la legge 180 del 9 ottobre 2026 sulle elezioni di Camera e Senato: chi vive per un periodo in una regione diversa da quella del Comune dove è iscritto per votare può chiedere di votare nel Comune dove abita. Vale per le elezioni politiche ed europee e per i referendum, non per le elezioni comunali e regionali.",
       "fonti": [
        "Comune di Castelpoto",
        "Comune di Santa Croce del Sannio",
        "Comune di Apice",
-       "Comune di Cusano Mutri"
+       "Comune di Cusano Mutri",
+       "Comune di Dugenta",
+       "Comune di Pesco Sannita"
       ],
       "giorno": "2026-10-26"
      },
@@ -891,6 +1072,14 @@
       "testo": "Anche Cusano Mutri, nel Matese, ha aperto l'elenco lunedì 26 ottobre. Il Comune ricorda che l'iscrizione dura un anno: chi vuole votare fuori sede anche l'anno dopo deve rifare la domanda nei tempi previsti dalla legge.",
       "fonti": [
        "Comune di Cusano Mutri"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "Lunedì 26 ottobre hanno pubblicato l'avviso sul voto fuori sede anche Dugenta e Pesco Sannita. Dugenta ricorda che la domanda va fatta al Comune dove si abita per il periodo fuori sede, che deve essere in un'altra regione, e che si può ritirare con le stesse modalità e negli stessi tempi.",
+      "fonti": [
+       "Comune di Dugenta",
+       "Comune di Pesco Sannita"
       ],
       "giorno": "2026-10-26"
      }
@@ -927,6 +1116,20 @@
       "nome": "Comune di Cusano Mutri",
       "titolo": "Istituzione dell'elenco comunale degli elettori fuori sede per l’esercizio del diritto di voto da parte degli elettori fuori sede in occasione delle elezioni politiche ed europee e dei referendum",
       "url": "https://www.comune.cusanomutri.bn.it/it/novita/page/istituzione-dell-elenco-comunale-degli-elettori-fuori-sede-per-l-esercizio-del-diritto-di-voto-da-parte-degli-elettori-fuori-sede-in-occasione-delle-elezioni-politiche-ed-europee-e-dei-referendum",
+      "data": "26 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "Comune di Dugenta",
+      "titolo": "Elezioni politiche, europee e referendum: voto fuori sede",
+      "url": "https://comune.dugenta.bn.it/novita/elezioni-politiche-europee-e-referendum-voto-fuori-sede/",
+      "data": "26 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "Comune di Pesco Sannita",
+      "titolo": "VOTO DEGLI ELETTORI FUORI SEDE",
+      "url": "https://www.halleyweb.com/c062050/mc/mc_p_dettaglio.php?id_pubbl=14953",
       "data": "26 ott",
       "ufficiale": true
      }
@@ -3237,20 +3440,16 @@
   },
   {
    "id": "benevento-corso-garibaldi-bambino-investito-da-bici",
-   "titolo": "Benevento, bambino investito da una bici sul corso Garibaldi: il sindaco chiede pattuglie fisse",
-   "titolo_google": "Benevento, bambino investito da una bici in corso Garibaldi",
-   "sintesi": "Sabato sera, 24 ottobre, sul corso Garibaldi a Benevento un bambino è stato investito da una bicicletta e portato in ospedale; non sembra grave. Domenica il sindaco Mastella ha chiesto alla Polizia municipale pattuglie fisse per far rispettare il divieto per le bici.",
+   "titolo": "Benevento, dopo il bambino investito da una bici sul corso Garibaldi due vigili fissi e controlli sulle e-bike truccate",
+   "titolo_google": "Corso Garibaldi Benevento, vigili fissi e controlli sulle e-bike",
+   "sintesi": "Dopo il bambino investito da una bici sabato 24 ottobre sul corso Garibaldi, la Polizia municipale di Benevento mette due agenti fissi tra Santa Sofia e via Goduti e annuncia controlli sulle e-bike modificate con la Motorizzazione, nuove regole e cartelli più chiari.",
    "categoria": "cronaca",
    "zona": "benevento",
    "luogo": "Benevento, corso Garibaldi",
-   "pubblicato": "2026-10-25T12:29:00+01:00",
+   "pubblicato": "2026-10-26T13:47:00+01:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/benevento-bambino-investito-da-una-bici-sul-corso-garibaldi-trasportato-in-ospedale/"
-    },
     {
      "nome": "BeneventoNews24",
      "url": "https://www.beneventonews24.it/2026/10/25/mastella-dopo-linvestimento-sul-corso-scritto-al-comandante-intransigenza-e-massima-severita/"
@@ -3258,10 +3457,6 @@
     {
      "nome": "Il Sannio Quotidiano",
      "url": "https://www.ilsannioquotidiano.it/2026/10/25/bimbo-investito-da-una-bici-mentre-passeggia-con-i-genitori-lungo-il-corso-garibaldi/"
-    },
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/25/investimento-sul-corso-mastella-al-comandante-vecchio-massima-severita-per-chi-viola-le-regole/"
     },
     {
      "nome": "Cronache del Sannio",
@@ -3272,12 +3467,54 @@
      "url": "https://www.ottopagine.it/bn/attualita/442111/benevento-investimento-corso-mastella-controlli-severi-e-tolleranza-zero.shtml"
     },
     {
-     "nome": "TV7 Benevento",
-     "url": "https://www.tvsette.net/il-sindaco-mastella-dopo-linvestimento-lungo-il-corso-scritto-al-comandante-esortandolo-allintransigenza-e-alla-massima-severita-per-chi-viola-le-regole-vigenti/"
+     "nome": "NTR24 (26/10)",
+     "url": "https://www.ntr24.tv/2026/10/26/controlli-sulle-e-bike-truccate-e-presidio-continuo-la-municipale-mette-in-campo-il-piano-per-proteggere-i-pedoni-su-corso-garibaldi/"
+    },
+    {
+     "nome": "Anteprima24 (26/10)",
+     "url": "https://www.anteprima24.it/benevento/polizia-municipale-di-benevento-utilizzo-e-bike-cinque-interventi-per-proteggere-i-pedoni/"
+    },
+    {
+     "nome": "TV7 Benevento (26/10)",
+     "url": "https://www.tvsette.net/controlli-sulle-e-bike-truccate-e-presidio-continuo-foto/"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Dopo il bambino investito da una bici, la Polizia municipale di Benevento ha preparato un piano in cinque punti per la sicurezza dei pedoni sul corso Garibaldi. Il primo è un presidio fisso: due agenti, che si danno il cambio sul posto, staranno sul tratto tra Santa Sofia e via Goduti per richiamare chi entra in sella dove è vietato e intervenire su chi va in modo pericoloso tra i passanti.",
+      "fonti": [
+       "NTR24 (26/10)",
+       "Anteprima24 (26/10)",
+       "TV7 Benevento (26/10)"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "Con la Motorizzazione civile la Municipale farà controlli tecnici sulle bici elettriche (e-bike) con un «banco di prova», per scoprire quelle modificate: centraline alterate, sblocchi che fanno andare il motore oltre i limiti o senza pedalare. Per i mezzi irregolari sono previste multe, sequestro e confisca. Guardia di Finanza, Polizia di Stato e Carabinieri controlleranno anche chi importa, modifica e vende questi mezzi.",
+      "fonti": [
+       "NTR24 (26/10)",
+       "Anteprima24 (26/10)",
+       "TV7 Benevento (26/10)"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "Saranno riviste le ordinanze del 2016 e del 2020 sul corso, per dire con chiarezza dove non si può andare in sella, quando bisogna scendere e portare la bici a mano e quali eccezioni valgono (per esempio per le persone con disabilità e per le consegne ai negozi). Saranno controllati e sistemati i cartelli agli ingressi del corso e verranno studiati percorsi alternativi per bici e monopattini al tratto tra via Goduti e via Annunziata.",
+      "fonti": [
+       "NTR24 (26/10)",
+       "Anteprima24 (26/10)",
+       "TV7 Benevento (26/10)"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "«L'investimento di un bambino ci richiama a una responsabilità precisa: prevenire altri episodi», dice il comandante della Polizia municipale, Giuseppe Vecchio, che vuole controllare i «mezzi sospetti» e risalire a chi li modifica o li vende.",
+      "fonti": [
+       "Anteprima24 (26/10)"
+      ],
+      "giorno": "2026-10-26"
+     },
      {
       "testo": "Domenica 25 ottobre il sindaco di Benevento, Clemente Mastella, ha scritto al comandante della Polizia municipale, Giuseppe Vecchio, per chiedere più controlli e pattuglie fisse sul corso Garibaldi. Lo scopo, dice il sindaco in una nota, è far rispettare l'ordinanza che vieta le biciclette nel centro storico: «Su questo occorre intransigenza».",
       "fonti": [
@@ -3348,6 +3585,15 @@
        "Cronache del Sannio",
        "Ottopagine"
       ]
+     },
+     {
+      "data": "26 ottobre",
+      "fatto": "La Polizia municipale presenta il piano in cinque punti per la sicurezza del corso.",
+      "fonti": [
+       "NTR24 (26/10)",
+       "Anteprima24 (26/10)",
+       "TV7 Benevento (26/10)"
+      ]
      }
     ],
     "concordano": [
@@ -3367,13 +3613,21 @@
        "Ottopagine",
        "TV7 Benevento"
       ]
+     },
+     {
+      "testo": "Il piano della Municipale: presidio di due agenti tra Santa Sofia e via Goduti, controlli con la Motorizzazione sulle e-bike modificate, verifiche sui venditori, regole e cartelli nuovi, percorsi alternativi.",
+      "fonti": [
+       "NTR24 (26/10)",
+       "Anteprima24 (26/10)",
+       "TV7 Benevento (26/10)"
+      ]
      }
     ],
     "divergono": [],
     "non_si_sa": [
      "Le condizioni del bambino dopo i controlli in ospedale.",
      "Se la Polizia municipale ha multato il ciclista.",
-     "Da quando ci saranno le pattuglie fisse chieste dal sindaco."
+     "Da quando partono il presidio fisso e i controlli sulle e-bike."
     ],
     "fonti": [
      {
@@ -3417,16 +3671,35 @@
       "titolo": "Il sindaco Mastella dopo l’investimento lungo il Corso: ” scritto al Comandante, esortandolo all’intransigenza e alla massima severità per chi viola le regole vigenti”",
       "url": "https://www.tvsette.net/il-sindaco-mastella-dopo-linvestimento-lungo-il-corso-scritto-al-comandante-esortandolo-allintransigenza-e-alla-massima-severita-per-chi-viola-le-regole-vigenti/",
       "data": "25 ott, 12:55"
+     },
+     {
+      "nome": "NTR24 (26/10)",
+      "titolo": "Controlli sulle e-bike “truccate” e presidio continuo: la Municipale mette in campo il piano per proteggere i pedoni su corso Garibaldi",
+      "url": "https://www.ntr24.tv/2026/10/26/controlli-sulle-e-bike-truccate-e-presidio-continuo-la-municipale-mette-in-campo-il-piano-per-proteggere-i-pedoni-su-corso-garibaldi/",
+      "data": "26 ott, 13:20"
+     },
+     {
+      "nome": "Anteprima24 (26/10)",
+      "titolo": "Polizia municipale di Benevento, utilizzo e-bike: cinque interventi per proteggere i pedoni",
+      "url": "https://www.anteprima24.it/benevento/polizia-municipale-di-benevento-utilizzo-e-bike-cinque-interventi-per-proteggere-i-pedoni/",
+      "data": "26 ott, 13:47"
+     },
+     {
+      "nome": "TV7 Benevento (26/10)",
+      "titolo": "Controlli sulle e-bike “truccate” e presidio continuo. (FOTO)",
+      "url": "https://www.tvsette.net/controlli-sulle-e-bike-truccate-e-presidio-continuo-foto/",
+      "data": "26 ott, 13:24"
      }
     ],
     "aggiornamento": {
-     "testo": "Domenica 25 ottobre il sindaco Mastella ha chiesto alla Polizia municipale pattuglie fisse sul corso Garibaldi per far rispettare il divieto di passaggio delle biciclette.",
+     "testo": "Lunedì 26 ottobre la Polizia municipale ha presentato il suo piano: due agenti fissi sul corso tra Santa Sofia e via Goduti, controlli sulle e-bike truccate con la Motorizzazione, nuove regole e cartelli.",
      "fonti": [
-      "NTR24",
-      "Cronache del Sannio"
+      "NTR24 (26/10)",
+      "Anteprima24 (26/10)",
+      "TV7 Benevento (26/10)"
      ],
-     "quando": "2026-10-25T13:09+01:00",
-     "titolo_prima": "Benevento, bambino investito da una bici sul corso Garibaldi: portato in ospedale"
+     "quando": "2026-10-26T14:24+01:00",
+     "titolo_prima": "Benevento, bambino investito da una bici sul corso Garibaldi: il sindaco chiede pattuglie fisse"
     }
    }
   },
@@ -5523,64 +5796,84 @@
   },
   {
    "id": "telese-gepos-sindacati-conti-assunzioni-sit-in-26-ottobre",
-   "titolo": "Telese Terme, clinica Gepos: un nuovo licenziamento, i sindacati chiedono chiarezza sui conti e confermano il sit-in del 26 ottobre",
-   "titolo_google": "Telese Terme, clinica Gepos: sindacati chiedono chiarezza",
-   "sintesi": "FP CGIL e UIL FP chiedono chiarezza sui conti della clinica Gepos di Telese Terme dopo un nuovo licenziamento, quello di una cuoca. Il sit-in resta confermato per il 26 ottobre dalle 10 alle 13.",
+   "titolo": "Telese Terme, presidio alla clinica Gepos contro tre licenziamenti: il PD chiede al Comune un tavolo con azienda e sindacati",
+   "titolo_google": "Telese Terme, clinica Gepos: presidio contro i licenziamenti",
+   "sintesi": "Lunedì 26 ottobre c'è stato un presidio davanti alla clinica Gepos di Telese Terme contro il licenziamento di due tecnici di laboratorio e di una cuoca. FP CGIL e UIL FP chiedono chiarezza sui conti; il PD cittadino chiede al Comune un tavolo con azienda e sindacati.",
    "categoria": "altro",
    "zona": "telesina",
    "immagine": "protesta",
    "luogo": "Telese Terme",
-   "pubblicato": "2026-10-23T09:28:00+02:00",
+   "pubblicato": "2026-10-26T14:15:00+01:00",
    "stato": "confermata",
    "rilevante": false,
-   "in_vigore_fino": "2026-10-26",
    "fonti": [
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/gepos-licenziamenti-sindacati-conti-sit-in/"
-    },
     {
      "nome": "Cronache del Sannio",
      "url": "https://www.cronachedelsannio.it/sannionews24/gepos-cgil-uil-chiarezza-licenziamenti-nuove-assunzioni/"
     },
     {
-     "nome": "Fremondoweb",
-     "url": "https://www.fremondoweb.com/notizie-dalla-valle-telesina/gepos-nuovo-licenziamento-a-telese-i-sindacati-chiedono-chiarezza-sui-conti-e-sulle-assunzioni/"
+     "nome": "Anteprima24 (26/10)",
+     "url": "https://www.anteprima24.it/benevento/licenziamenti-gepos-pd-telese-dignita/"
+    },
+    {
+     "nome": "Fremondoweb (26/10)",
+     "url": "https://www.fremondoweb.com/notizie-dalla-valle-telesina/vertenza-ge-p-o-s-presidio-a-telese-contro-i-licenziamenti-il-pd-chiede-un-tavolo-istituzionale/"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Lunedì 26 ottobre davanti alla clinica Gepos di Telese Terme c'è stato il presidio contro i licenziamenti di due tecnici di laboratorio e di una cuoca. Il Partito Democratico di Telese Terme, che ha partecipato alla protesta, parla di una presenza «massiccia».",
+      "fonti": [
+       "Anteprima24 (26/10)",
+       "Fremondoweb (26/10)"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "Il PD cittadino, con il segretario Giuseppe Antonio Di Mezza, chiede ai proprietari della clinica di verificare se i licenziamenti sono davvero necessari e di aprire subito un confronto con i sindacati. Al Comune di Telese Terme chiede di convocare le parti a un tavolo istituzionale, per evitare che i licenziamenti diventino definitivi.",
+      "fonti": [
+       "Anteprima24 (26/10)",
+       "Fremondoweb (26/10)"
+      ],
+      "giorno": "2026-10-26"
+     },
      {
       "testo": "Alla clinica Gepos di Telese Terme c'è un nuovo licenziamento: secondo FP CGIL e UIL FP, che lo riferiscono in una nota ripresa da Anteprima24, Cronache del Sannio e Fremondoweb, a perdere il posto sarebbe una cuoca della cucina. Il licenziamento non è confermato ufficialmente dall'azienda.",
       "fonti": [
        "Anteprima24",
        "Cronache del Sannio",
        "Fremondoweb"
-      ]
+      ],
+      "giorno": "2026-10-23"
      },
      {
       "testo": "Il caso era già uscito il 20 ottobre, quando i sindacati avevano denunciato il licenziamento di due tecnici di laboratorio dopo oltre trent'anni di lavoro. Ora ricordano che c'è stata anche una procedura di licenziamento collettivo (più lavoratori mandati via insieme) che ha coinvolto 15 persone. Tra loro c'erano otto infermieri, che poi avrebbero dato le dimissioni volontarie. In questi giorni, però, sarebbe stato assunto un nuovo infermiere: i sindacati chiedono come mai si assuma se si dichiarano esuberi, e se invece serve personale perché si sia arrivati ai licenziamenti.",
       "fonti": [
        "Anteprima24"
-      ]
+      ],
+      "giorno": "2026-10-23"
      },
      {
       "testo": "Sui conti, nei tavoli con i sindacati sarebbe stata indicata una situazione economica vicina ai sette milioni di euro, descritta come perdita o come debito. Il giornale precisa che sono due cose diverse, da chiarire con bilanci e documenti ufficiali. I sindacati chiedono anche di fare luce sui cambiamenti tra i soci della società: in passato una famiglia aveva una quota di minoranza e la maggioranza era di un altro socio, poi la stessa famiglia avrebbe comprato altre quote. Vogliono sapere cosa sapeva quando era socia di minoranza e quali controlli ha fatto. Scrivono di non fare accuse né di attribuire responsabilità non accertate.",
       "fonti": [
        "Anteprima24"
-      ]
+      ],
+      "giorno": "2026-10-23"
      },
      {
       "testo": "Un altro punto riguarda l'ASL di Benevento: secondo i sindacati non ha ancora dato la risposta attesa, prevista al tavolo in Prefettura, nonostante i molti solleciti. Chiedono che Procura, Regione Campania e ASL \"accendano un faro\" sulla clinica, e non escludono denunce ed esposti se dagli approfondimenti emergeranno elementi.",
       "fonti": [
        "Anteprima24"
-      ]
+      ],
+      "giorno": "2026-10-23"
      },
      {
       "testo": "Il sit-in (la protesta in piazza) è confermato per lunedì 26 ottobre, dalle 10 alle 13, a Telese Terme. Ci saranno diversi sindaci del territorio, compreso quello di Telese Terme, e rappresentanti dei Comuni vicini. I sindacati chiederanno documenti e chiarimenti su debiti, soci, licenziamenti, nuove assunzioni e sul silenzio dell'ASL.",
       "fonti": [
        "Anteprima24"
-      ]
+      ],
+      "giorno": "2026-10-23"
      }
     ],
     "cronologia": [
@@ -5597,6 +5890,14 @@
       "fonti": [
        "Anteprima24"
       ]
+     },
+     {
+      "data": "26 ottobre",
+      "fatto": "Presidio davanti alla clinica Gepos; il PD di Telese Terme chiede un tavolo istituzionale.",
+      "fonti": [
+       "Anteprima24 (26/10)",
+       "Fremondoweb (26/10)"
+      ]
      }
     ],
     "concordano": [
@@ -5612,7 +5913,7 @@
     "divergono": [],
     "non_si_sa": [
      "Se il licenziamento della cuoca sia confermato dall'azienda.",
-     "Cosa risponderà la direzione della clinica sulle nuove assunzioni.",
+     "Se il Comune di Telese Terme convocherà azienda e sindacati.",
      "Se l'ASL di Benevento darà la risposta chiesta dai sindacati."
     ],
     "fonti": [
@@ -5633,8 +5934,29 @@
       "titolo": "Gepos, nuovo licenziamento a Telese: i sindacati chiedono chiarezza sui conti e sulle assunzioni",
       "url": "https://www.fremondoweb.com/notizie-dalla-valle-telesina/gepos-nuovo-licenziamento-a-telese-i-sindacati-chiedono-chiarezza-sui-conti-e-sulle-assunzioni/",
       "data": "23 ott, 13:34"
+     },
+     {
+      "nome": "Fremondoweb (26/10)",
+      "titolo": "Vertenza Ge.P.O.S., presidio a Telese contro i licenziamenti: il PD chiede un tavolo istituzionale",
+      "url": "https://www.fremondoweb.com/notizie-dalla-valle-telesina/vertenza-ge-p-o-s-presidio-a-telese-contro-i-licenziamenti-il-pd-chiede-un-tavolo-istituzionale/",
+      "data": "26 ott, 14:15"
+     },
+     {
+      "nome": "Anteprima24 (26/10)",
+      "titolo": "Licenziamenti Gepos, Pd Telese terme: “Difendiamo la dignità delle persone”",
+      "url": "https://www.anteprima24.it/benevento/licenziamenti-gepos-pd-telese-dignita/",
+      "data": "26 ott, 14:10"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Lunedì 26 ottobre si è svolto il presidio davanti alla clinica Gepos contro i tre licenziamenti; il PD di Telese Terme chiede al Comune un tavolo con l'azienda e i sindacati.",
+     "fonti": [
+      "Anteprima24 (26/10)",
+      "Fremondoweb (26/10)"
+     ],
+     "quando": "2026-10-26T14:24+01:00",
+     "titolo_prima": "Telese Terme, clinica Gepos: un nuovo licenziamento, i sindacati chiedono chiarezza sui conti e confermano il sit-in del 26 ottobre"
+    }
    },
    "foto": "protesta-5"
   },
@@ -7084,7 +7406,7 @@
    "id": "benevento-cimitero-traffico-31-ottobre-2-novembre",
    "titolo": "Benevento, 31 ottobre, 1 e 2 novembre chiusa via Cimitero e divieti di sosta attorno al cimitero: navette dal centro",
    "titolo_google": "Benevento, cimitero: strade chiuse e navette dal 31 ottobre",
-   "sintesi": "Per Ognissanti e la Commemorazione dei defunti il Comune di Benevento chiude via Cimitero e un tratto di via Fontana Margiacca sabato 31 ottobre, domenica 1 e lunedì 2 novembre, dalle 7 alle 18.30. Ci sono divieti di sosta con rimozione e navette dal centro.",
+   "sintesi": "Per Ognissanti e la Commemorazione dei defunti il Comune di Benevento chiude via Cimitero e un tratto di via Fontana Margiacca sabato 31 ottobre, domenica 1 e lunedì 2 novembre, dalle 7 alle 18.30. Ci sono divieti di sosta con rimozione e navette dal centro. Domenica 1 novembre dalle 14:15 il traffico si ferma anche lungo la processione di Ognissanti.",
    "categoria": "strade",
    "zona": "benevento",
    "immagine": "cimitero",
@@ -7104,47 +7426,73 @@
     {
      "nome": "NTR24",
      "url": "https://www.ntr24.tv/2026/10/22/commemorazione-defunti-a-benevento-scatta-il-piano-traffico-navette-da-piazza-pacca-e-via-nicola-da-monteforte/"
+    },
+    {
+     "nome": "Albo pretorio Benevento (processione)",
+     "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80105",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
      {
+      "testo": "Domenica 1 novembre, dalle 14:15, il traffico sarà fermato man mano sulle strade dove passa la tradizionale processione penitenziale di Ognissanti, che parte dalla basilica della Madonna delle Grazie e arriva al cimitero. Lo stabilisce l'ordinanza n. 451 del Servizio Traffico del Comune, pubblicata il 26 ottobre.",
+      "fonti": [
+       "Albo pretorio Benevento (processione)"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
       "testo": "Per Ognissanti e la Commemorazione dei defunti il Comune di Benevento cambia la circolazione attorno al cimitero comunale. Le misure valgono sabato 31 ottobre, domenica 1 novembre e lunedì 2 novembre 2026, ogni giorno dalle 7 alle 18.30. Sono nell'ordinanza n. 445 del 21 ottobre, pubblicata nell'albo pretorio (l'elenco ufficiale degli atti del Comune).",
       "fonti": [
        "Albo pretorio Benevento",
        "NTR24"
-      ]
+      ],
+      "giorno": "2026-10-22"
      },
      {
       "testo": "Via Cimitero è chiusa al traffico, con gli accessi da via Ponticelli e via Margiacca presidiati e transennati. Chiuso anche via Fontana Margiacca, nel tratto tra l'incrocio con via dei Dauni (l'ex strada statale 90 bis) e quello con via San Marco: lì possono passare i residenti. La Polizia Municipale può mettere altri sbarramenti e deviazioni se serve.",
       "fonti": [
        "NTR24"
-      ]
+      ],
+      "giorno": "2026-10-22"
      },
      {
       "testo": "Divieto di sosta e di fermata, con rimozione dei veicoli, in via Cimitero, nel piazzale davanti al cimitero (tranne l'area riservata), in via Ponticelli, via San Pasquale, viale dei Rettori davanti all'Arco di Traiano e in via Nicola da Monteforte, sul lato destro verso il centro vicino a piazza Risorgimento.",
       "fonti": [
        "NTR24"
-      ]
+      ],
+      "giorno": "2026-10-22"
      },
      {
       "testo": "Per non portare le auto private al cimitero ci saranno navette e autobus urbani dal centro, con capolinea in tre punti: via Cimitero (nel piazzale davanti agli ingressi), via Nicola da Monteforte e piazza Cardinal Pacca. Vicino ai capolinea saranno messi chioschi per comprare i biglietti.",
       "fonti": [
        "NTR24"
-      ]
+      ],
+      "giorno": "2026-10-22"
      },
      {
       "testo": "I divieti non valgono per navette e autobus del servizio, mezzi di soccorso, forze dell'ordine e ASIA, taxi e auto a noleggio con conducente, veicoli per disabili col contrassegno, mezzi di lavoro e fornitori autorizzati nel cimitero e commercianti autorizzati di fiori e articoli cimiteriali. Possono entrare anche i residenti, mostrando un documento o altra prova del domicilio. La Polizia Municipale controlla il rispetto delle regole.",
       "fonti": [
        "NTR24"
+      ],
+      "giorno": "2026-10-22"
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "1 novembre, 14:15",
+      "fatto": "Il traffico si ferma man mano sulle strade della processione di Ognissanti.",
+      "fonti": [
+       "Albo pretorio Benevento (processione)"
       ]
      }
     ],
-    "cronologia": [],
     "concordano": [],
     "divergono": [],
     "non_si_sa": [
-     "Gli orari delle navette e il prezzo del biglietto: le fonti non li indicano ancora."
+     "Gli orari delle navette e il prezzo del biglietto: le fonti non li indicano ancora.",
+     "Le strade esatte del percorso della processione del 1 novembre."
     ],
     "fonti": [
      {
@@ -7159,8 +7507,22 @@
       "titolo": "Commemorazione defunti, a Benevento scatta il piano traffico. Navette da piazza Pacca e via Nicola da Monteforte",
       "url": "https://www.ntr24.tv/2026/10/22/commemorazione-defunti-a-benevento-scatta-il-piano-traffico-navette-da-piazza-pacca-e-via-nicola-da-monteforte/",
       "data": "22 ott, 11:01"
+     },
+     {
+      "nome": "Albo pretorio Benevento (processione)",
+      "titolo": "SOSPENSIONE MOMENTANEA CIRCOLAZIONE VEICOLARE, CON ATTUAZIONE GRADUALE E PROGRESSIVA A PARTIRE DALLE ORE 14:15 DI DOMENICA 1^ NOVEMBRE 2026, SULLE STRADE INTERESSATE DAL TRANSITO DELLA TRADIZIONALE PROCESSIONE PENITENZIALE DI OGNISSANTI CON PARTENZA DALLA BASILICA MARIA SS. DELLE GRAZIE ED ARRIVO AL CIMITERO",
+      "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80105",
+      "data": "26 ott",
+      "ufficiale": true
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Domenica 1 novembre, dalle 14:15, il traffico si ferma anche sulle strade della processione di Ognissanti, dalla basilica delle Grazie al cimitero.",
+     "fonti": [
+      "Albo pretorio Benevento (processione)"
+     ],
+     "quando": "2026-10-26T14:24+01:00"
+    }
    },
    "foto": "cimitero-2"
   },
