@@ -1,7 +1,63 @@
 {
- "aggiornato": "2026-10-26T14:24+01:00",
+ "aggiornato": "2026-10-26T15:32+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "sannio-passaporti-uffici-postali-77-sportelli-340-richieste",
+   "titolo": "Sannio, il passaporto si chiede in 77 uffici postali: già 340 richieste, la prima è San Bartolomeo in Galdo",
+   "titolo_google": "Passaporto alle Poste nel Sannio: 77 uffici abilitati",
+   "sintesi": "In provincia di Benevento sono 77 gli uffici postali dove si può chiedere o rinnovare il passaporto, senza andare in Questura: finora le richieste sono state 340. Il primo ufficio è quello di San Bartolomeo in Galdo, con 41.",
+   "categoria": "altro",
+   "zona": "provincia",
+   "immagine": "sportello",
+   "luogo": "Provincia di Benevento",
+   "pubblicato": "2026-10-26T15:05:00+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/26/passaporti-77-uffici-postali-abilitati-nel-sannio-340-richieste-presentate/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "In provincia di Benevento il passaporto si può chiedere o rinnovare in 77 uffici postali, senza andare in Questura. Finora 340 persone che abitano nel Sannio hanno prenotato un appuntamento e consegnato allo sportello i documenti per avere il passaporto nuovo o rinnovarlo. Il servizio nasce da un accordo tra Poste Italiane, il Ministero dell'Interno e il Ministero delle Imprese.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "L'ufficio con più richieste è quello di piazza Municipio a San Bartolomeo in Galdo, nel Fortore: 41. Da lì la Questura di Benevento dista circa 60 chilometri, oltre un'ora di strade strette e piene di curve, spiega il direttore dell'ufficio, Biagio Coduti. Chi vuole può anche farsi portare il passaporto a casa.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Il servizio c'è negli uffici del progetto Polis, che porta nei Comuni con meno di 15mila abitanti alcuni servizi della pubblica amministrazione, come il passaporto e i certificati dell'anagrafe. Le richieste sono arrivate da tutta la provincia, da San Nicola Manfredi a Telese Terme, da Montesarchio a San Marco dei Cavoti e Sant'Agata de' Goti.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quali sono, uno per uno, i 77 uffici postali abilitati."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Passaporti, 77 uffici postali abilitati nel Sannio: 340 richieste presentate",
+      "url": "https://www.ntr24.tv/2026/10/26/passaporti-77-uffici-postali-abilitati-nel-sannio-340-richieste-presentate/",
+      "data": "26 ott, 15:05"
+     }
+    ]
+   },
+   "foto": "sportello-5"
+  },
   {
    "id": "maddaloni-bus-air-pietraroja-santagata-napoli-deviati-cancello-scalo",
    "titolo": "Bus AIR da Pietraroja e Sant'Agata de' Goti per Napoli deviati a Maddaloni per i lavori alla rete fognaria: soppressa la fermata di Cancello Scalo",
@@ -282,6 +338,18 @@
     {
      "nome": "NTR24",
      "url": "https://www.ntr24.tv/2026/10/26/bonus-luce-e-gas-la-giunta-di-benevento-delibera-i-requisiti-per-accedere-ai-contributi/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/bonus-luce-e-gas-ok-alla-delibera-con-i-requisiti-per-accedere-ai-contributi/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/bonus-luce-gas-delibera-giunta/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/26/benevento-bonus-luce-e-gas-ok-alla-delibera-con-i-requisiti-per-accedere-ai-contributi/"
     }
    ],
    "articolo": {
@@ -341,6 +409,24 @@
       "titolo": "Bonus luce e gas, la Giunta di Benevento delibera i requisiti per accedere ai contributi",
       "url": "https://www.ntr24.tv/2026/10/26/bonus-luce-e-gas-la-giunta-di-benevento-delibera-i-requisiti-per-accedere-ai-contributi/",
       "data": "26 ott, 14:16"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Bonus luce e gas, ok alla delibera con i requisiti per accedere ai contributi",
+      "url": "https://www.anteprima24.it/benevento/bonus-luce-e-gas-ok-alla-delibera-con-i-requisiti-per-accedere-ai-contributi/",
+      "data": "26 ott, 14:17"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Bonus luce e gas, ok dalla giunta: i requisiti per accedere ai contributi",
+      "url": "https://www.cronachedelsannio.it/sannionews24/bonus-luce-gas-delibera-giunta/",
+      "data": "26 ott, 14:45"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Benevento| Bonus luce e gas, ok alla delibera con i requisiti per accedere ai contributi",
+      "url": "https://www.beneventonews24.it/2026/10/26/benevento-bonus-luce-e-gas-ok-alla-delibera-con-i-requisiti-per-accedere-ai-contributi/",
+      "data": "26 ott, 14:48"
      }
     ]
    },
@@ -512,7 +598,7 @@
    "id": "vitulano-sagra-castagna-strade-chiuse-29-ottobre-1-novembre",
    "titolo": "Vitulano, per la Sagra della castagna strade del centro chiuse al traffico dal 29 ottobre al 1° novembre",
    "titolo_google": "Vitulano, strade chiuse per la Sagra della castagna: orari",
-   "sintesi": "Per la 33ª Sagra della castagna e del pecorino vitulanese il Comune di Vitulano chiude al traffico e alla sosta via Roma, viale e via Bracanelli, piazza SS. Trinità, via Falluto e piazza San Menna: giovedì 29 e venerdì 30 ottobre dalle 14 a mezzanotte, sabato 31 e domenica 1° novembre dalle 9 a mezzanotte.",
+   "sintesi": "Per la 33ª Sagra della castagna e del pecorino vitulanese il Comune di Vitulano chiude al traffico e alla sosta via Roma, viale e via Bracanelli, piazza SS. Trinità, via Falluto e piazza San Menna: giovedì 29 e venerdì 30 ottobre dalle 14 a mezzanotte, sabato 31 e domenica 1° novembre dalle 9 a mezzanotte. Nei giorni della sagra vietato anche vendere da asporto bibite in bottiglie di vetro.",
    "categoria": "strade",
    "zona": "telesina",
    "luogo": "Vitulano",
@@ -528,6 +614,11 @@
      "nome": "Comune di Vitulano",
      "url": "https://comune.vitulano.bn.it/albo-pretorio/?dettaglio_id=306123",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di Vitulano (vetro)",
+     "url": "https://comune.vitulano.bn.it/albo-pretorio/?dettaglio_id=306144",
+     "ufficiale": true
     }
    ],
    "articolo": {
@@ -536,19 +627,29 @@
       "testo": "Per la 33ª edizione della Sagra della castagna e del pecorino vitulanese, dal 29 ottobre al 1° novembre, il Comune di Vitulano chiude al traffico e vieta la sosta nelle strade della festa: via Roma, viale Bracanelli (compreso lo spazio accanto all'edificio delle elementari), via Bracanelli, piazza SS. Trinità, la prima salita SS. Trinità, via Francesco Falluto e piazza San Menna.",
       "fonti": [
        "Comune di Vitulano"
-      ]
+      ],
+      "giorno": "2026-10-26"
      },
      {
       "testo": "Gli orari: giovedì 29 e venerdì 30 ottobre dalle 14 a mezzanotte; sabato 31 ottobre e domenica 1° novembre dalle 9 a mezzanotte. Le auto lasciate in sosta in quelle strade vengono portate via con il carro attrezzi. Possono passare solo i mezzi di soccorso, le forze dell'ordine e le auto con il permesso per disabili.",
       "fonti": [
        "Comune di Vitulano"
-      ]
+      ],
+      "giorno": "2026-10-26"
      },
      {
       "testo": "Già da lunedì 26 a giovedì 29 ottobre nelle stesse strade il traffico è limitato per montare le casette di legno e le attrezzature della sagra: i lavori vanno fatti lontano dalle ore di punta e dagli orari di entrata e uscita degli alunni. I cartelli li mette la Polizia municipale.",
       "fonti": [
        "Comune di Vitulano"
-      ]
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "Per tutti i giorni della sagra, dal 29 ottobre al 1° novembre, un'altra ordinanza del Comune vieta a bar, stand e locali di vendere da portare via bibite in bottiglie di vetro: dentro i locali e agli stand si servono nei bicchieri. Chi è nelle strade e nelle piazze non può bere da recipienti di vetro. Le multe vanno da 25 a 500 euro e i controlli li fanno i Carabinieri e la Polizia municipale.",
+      "fonti": [
+       "Comune di Vitulano (vetro)"
+      ],
+      "giorno": "2026-10-26"
      }
     ],
     "cronologia": [],
@@ -564,8 +665,22 @@
       "url": "https://comune.vitulano.bn.it/albo-pretorio/?dettaglio_id=306123",
       "data": "26 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "Comune di Vitulano (vetro)",
+      "titolo": "DIVIETO DI VENDITA PER ASPORTO DI BIBITE CONTENUTE IN RECIPIENTI DI VETRO IN OCCASIONE DELLA XXXIII EDIZIONE SAGRA DELLA CASTAGNA.",
+      "url": "https://comune.vitulano.bn.it/albo-pretorio/?dettaglio_id=306144",
+      "data": "26 ott",
+      "ufficiale": true
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Un'altra ordinanza del Comune vieta nei giorni della sagra, dal 29 ottobre al 1° novembre, di vendere da asporto e di bere per strada bibite in bottiglie di vetro: multe da 25 a 500 euro.",
+     "fonti": [
+      "Comune di Vitulano (vetro)"
+     ],
+     "quando": "2026-10-26T15:32+01:00"
+    }
    },
    "foto": "strada-chiusa-5"
   },
@@ -3152,6 +3267,10 @@
     {
      "nome": "Gazzetta di Benevento",
      "url": "https://www.gazzettabenevento.it/it/calcio-serie-b-e-serio-linfortunio-cui-e-incappato-il-terzino-del-benevento-edoardo-pierozzi-nel"
+    },
+    {
+     "nome": "Benevento Giornale",
+     "url": "https://www.beneventogiornale.com/2026/10/26/benevento-calcio-infortunio-di-edoardo-pierozzi-sara-assente-per-circa-due-mesi/"
     }
    ],
    "articolo": {
@@ -3311,6 +3430,12 @@
       "titolo": "Calcio, Serie B: E' serio l'infortunio in cui è incappato il terzino del Benevento Edoardo Pierozzi nel corso della gara contro l'Arezzo",
       "url": "https://www.gazzettabenevento.it/it/calcio-serie-b-e-serio-linfortunio-cui-e-incappato-il-terzino-del-benevento-edoardo-pierozzi-nel",
       "data": "26 ott, 10:25"
+     },
+     {
+      "nome": "Benevento Giornale",
+      "titolo": "Benevento Calcio – Infortunio di Edoardo Pierozzi sarà assente per circa due mesi",
+      "url": "https://www.beneventogiornale.com/2026/10/26/benevento-calcio-infortunio-di-edoardo-pierozzi-sara-assente-per-circa-due-mesi/",
+      "data": "26 ott, 14:31"
      }
     ],
     "aggiornamento": {
@@ -3617,6 +3742,14 @@
     {
      "nome": "TV7 Benevento (26/10)",
      "url": "https://www.tvsette.net/controlli-sulle-e-bike-truccate-e-presidio-continuo-foto/"
+    },
+    {
+     "nome": "Cronache del Sannio (26/10)",
+     "url": "https://www.cronachedelsannio.it/sannionews24/corso-garibaldi-stretta-bici-truccate-municipale/"
+    },
+    {
+     "nome": "Ottopagine (26/10)",
+     "url": "https://www.ottopagine.it/bn/attualita/442207/benevento-scattano-i-controlli-contro-e-bike-truccate-e-presidio-continuo.shtml"
     }
    ],
    "articolo": {
@@ -3626,7 +3759,9 @@
       "fonti": [
        "NTR24 (26/10)",
        "Anteprima24 (26/10)",
-       "TV7 Benevento (26/10)"
+       "TV7 Benevento (26/10)",
+       "Cronache del Sannio (26/10)",
+       "Ottopagine (26/10)"
       ],
       "giorno": "2026-10-26"
      },
@@ -3635,7 +3770,9 @@
       "fonti": [
        "NTR24 (26/10)",
        "Anteprima24 (26/10)",
-       "TV7 Benevento (26/10)"
+       "TV7 Benevento (26/10)",
+       "Cronache del Sannio (26/10)",
+       "Ottopagine (26/10)"
       ],
       "giorno": "2026-10-26"
      },
@@ -3644,7 +3781,9 @@
       "fonti": [
        "NTR24 (26/10)",
        "Anteprima24 (26/10)",
-       "TV7 Benevento (26/10)"
+       "TV7 Benevento (26/10)",
+       "Cronache del Sannio (26/10)",
+       "Ottopagine (26/10)"
       ],
       "giorno": "2026-10-26"
      },
@@ -3829,6 +3968,18 @@
       "titolo": "Controlli sulle e-bike “truccate” e presidio continuo. (FOTO)",
       "url": "https://www.tvsette.net/controlli-sulle-e-bike-truccate-e-presidio-continuo-foto/",
       "data": "26 ott, 13:24"
+     },
+     {
+      "nome": "Cronache del Sannio (26/10)",
+      "titolo": "Corso Garibaldi, stretta su bici truccate: presidio continuo della Municipale",
+      "url": "https://www.cronachedelsannio.it/sannionews24/corso-garibaldi-stretta-bici-truccate-municipale/",
+      "data": "26 ott, 14:37"
+     },
+     {
+      "nome": "Ottopagine (26/10)",
+      "titolo": "Benevento. Scattano i controlli contro e-bike \"truccate\" e presidio continuo",
+      "url": "https://www.ottopagine.it/bn/attualita/442207/benevento-scattano-i-controlli-contro-e-bike-truccate-e-presidio-continuo.shtml",
+      "data": "26 ott, 15:23"
      }
     ],
     "aggiornamento": {
@@ -5938,7 +6089,7 @@
    "id": "telese-gepos-sindacati-conti-assunzioni-sit-in-26-ottobre",
    "titolo": "Telese Terme, presidio alla clinica Gepos contro tre licenziamenti: il PD chiede al Comune un tavolo con azienda e sindacati",
    "titolo_google": "Telese Terme, clinica Gepos: presidio contro i licenziamenti",
-   "sintesi": "Lunedì 26 ottobre c'è stato un presidio davanti alla clinica Gepos di Telese Terme contro il licenziamento di due tecnici di laboratorio e di una cuoca. FP CGIL e UIL FP chiedono chiarezza sui conti; il PD cittadino chiede al Comune un tavolo con azienda e sindacati.",
+   "sintesi": "Lunedì 26 ottobre c'è stato un presidio davanti alla clinica Gepos di Telese Terme contro il licenziamento di due tecnici di laboratorio e di una cuoca. FP CGIL e UIL FPL chiedono all'ASL l'esito dei controlli sulla clinica, atteso da oltre quattro mesi; il PD cittadino chiede al Comune un tavolo con azienda e sindacati.",
    "categoria": "altro",
    "zona": "telesina",
    "immagine": "protesta",
@@ -5958,6 +6109,14 @@
     {
      "nome": "Fremondoweb (26/10)",
      "url": "https://www.fremondoweb.com/notizie-dalla-valle-telesina/vertenza-ge-p-o-s-presidio-a-telese-contro-i-licenziamenti-il-pd-chiede-un-tavolo-istituzionale/"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/26/licenziamenti-ge-po-s-i-sindacati-chiedono-chiarezza-sui-conti-e-sui-controlli-dellasl/"
+    },
+    {
+     "nome": "Lab TV",
+     "url": "https://www.labtv.net/politica/2026/10/26/pd-su-vertenza-gepos-difendere-il-lavoro-significa-difendere-la-dignita-delle-persone-e-il-futuro-del-sannio/"
     }
    ],
    "articolo": {
@@ -5966,7 +6125,25 @@
       "testo": "Lunedì 26 ottobre davanti alla clinica Gepos di Telese Terme c'è stato il presidio contro i licenziamenti di due tecnici di laboratorio e di una cuoca. Il Partito Democratico di Telese Terme, che ha partecipato alla protesta, parla di una presenza «massiccia».",
       "fonti": [
        "Anteprima24 (26/10)",
-       "Fremondoweb (26/10)"
+       "Fremondoweb (26/10)",
+       "NTR24 (PD)",
+       "Lab TV"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "Al presidio di lunedì mattina, promosso da FP CGIL e UIL FPL davanti alla clinica, c'erano anche cittadini e pazienti, il segretario provinciale del Partito Democratico, consiglieri comunali di minoranza di Telese Terme e di Ponte e il responsabile provinciale del Movimento 5 Stelle, che ha annunciato una lettera formale al direttore generale dell'ASL di Benevento. I tre lavoratori licenziati, due tecnici di laboratorio e una cuoca, hanno circa trent'anni di servizio.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24 (sindacati 26/10)"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "I sindacati ricordano che al tavolo in Prefettura l'ASL si era impegnata a far sapere l'esito dei controlli sulla clinica, ma dopo oltre quattro mesi la risposta non è arrivata. Chiedono quali verifiche siano state fatte, con quali risultati e se ci siano stati provvedimenti. Tornano a chiedere chiarezza anche sui conti, con un'esposizione vicina ai sette milioni di euro, e su cosa sapessero gli attuali proprietari quando erano soci di minoranza, precisando di non voler fare accuse.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24 (sindacati 26/10)"
       ],
       "giorno": "2026-10-26"
      },
@@ -5974,7 +6151,9 @@
       "testo": "Il PD cittadino, con il segretario Giuseppe Antonio Di Mezza, chiede ai proprietari della clinica di verificare se i licenziamenti sono davvero necessari e di aprire subito un confronto con i sindacati. Al Comune di Telese Terme chiede di convocare le parti a un tavolo istituzionale, per evitare che i licenziamenti diventino definitivi.",
       "fonti": [
        "Anteprima24 (26/10)",
-       "Fremondoweb (26/10)"
+       "Fremondoweb (26/10)",
+       "NTR24 (PD)",
+       "Lab TV"
       ],
       "giorno": "2026-10-26"
      },
@@ -6052,7 +6231,7 @@
     ],
     "divergono": [],
     "non_si_sa": [
-     "Se il licenziamento della cuoca sia confermato dall'azienda.",
+     "Cosa risponde l'azienda sui licenziamenti e sui conti.",
      "Se il Comune di Telese Terme convocherà azienda e sindacati.",
      "Se l'ASL di Benevento darà la risposta chiesta dai sindacati."
     ],
@@ -6086,15 +6265,39 @@
       "titolo": "Licenziamenti Gepos, Pd Telese terme: “Difendiamo la dignità delle persone”",
       "url": "https://www.anteprima24.it/benevento/licenziamenti-gepos-pd-telese-dignita/",
       "data": "26 ott, 14:10"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Licenziamenti GE.PO.S, i sindacati chiedono chiarezza sui conti e sui controlli dell’ASL",
+      "url": "https://www.ntr24.tv/2026/10/26/licenziamenti-ge-po-s-i-sindacati-chiedono-chiarezza-sui-conti-e-sui-controlli-dellasl/",
+      "data": "26 ott, 15:09"
+     },
+     {
+      "nome": "Anteprima24 (sindacati 26/10)",
+      "titolo": "Gepos la nota dei sindacati: tre licenziamenti e troppe domande senza risposta",
+      "url": "https://www.anteprima24.it/benevento/gepos-la-nota-dei-sindacati-tre-licenziamenti-e-troppe-domande-senza-risposta/",
+      "data": "26 ott, 14:58"
+     },
+     {
+      "nome": "NTR24 (PD)",
+      "titolo": "GE.P.O.S., presidio contro i licenziamenti di tre lavoratori: il PD chiede un tavolo istituzionale",
+      "url": "https://www.ntr24.tv/2026/10/26/ge-p-o-s-presidio-contro-i-licenziamenti-di-tre-lavoratori-il-pd-chiede-un-tavolo-istituzionale/",
+      "data": "26 ott, 14:21"
+     },
+     {
+      "nome": "Lab TV",
+      "titolo": "PD su vertenza Gepos: difendere il lavoro significa difendere la dignità delle persone e il futuro del Sannio",
+      "url": "https://www.labtv.net/politica/2026/10/26/pd-su-vertenza-gepos-difendere-il-lavoro-significa-difendere-la-dignita-delle-persone-e-il-futuro-del-sannio/",
+      "data": "26 ott, 14:10"
      }
     ],
     "aggiornamento": {
-     "testo": "Lunedì 26 ottobre si è svolto il presidio davanti alla clinica Gepos contro i tre licenziamenti; il PD di Telese Terme chiede al Comune un tavolo con l'azienda e i sindacati.",
+     "testo": "Al presidio di lunedì 26 ottobre il responsabile provinciale del Movimento 5 Stelle ha annunciato una lettera al direttore generale dell'ASL; FP CGIL e UIL FPL aspettano da oltre quattro mesi l'esito dei controlli sulla clinica promesso in Prefettura.",
      "fonti": [
-      "Anteprima24 (26/10)",
-      "Fremondoweb (26/10)"
+      "NTR24",
+      "Anteprima24 (sindacati 26/10)"
      ],
-     "quando": "2026-10-26T14:24+01:00",
+     "quando": "2026-10-26T15:32+01:00",
      "titolo_prima": "Telese Terme, clinica Gepos: un nuovo licenziamento, i sindacati chiedono chiarezza sui conti e confermano il sit-in del 26 ottobre"
     }
    },
@@ -7222,14 +7425,19 @@
      "nome": "Benevento Calcio (Polio Day)",
      "url": "https://www.beneventocalcio.club/news/comunicatistampa/7682/end-polio-now-il-benevento-calcio-insieme-al-rotary-club.shtml",
      "ufficiale": true
+    },
+    {
+     "nome": "NTR24 Sport (arbitro)",
+     "url": "https://sport.ntr24.tv/2026/10/26/benevento-catanzaro-arbitra-poli-di-verona/"
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Martedì 27 ottobre alle 19 il Benevento gioca al Vigorito con il Catanzaro, nella nona giornata di Serie B. L'AIA ha scelto l'arbitro: è Alberto Poli della sezione di Verona, che ha già diretto due partite del Benevento nella scorsa stagione di Serie C, tutte e due vinte dai giallorossi.",
+      "testo": "Martedì 27 ottobre alle 19 il Benevento gioca al Vigorito con il Catanzaro, nella nona giornata di Serie B. L'AIA ha scelto l'arbitro: è Alberto Poli della sezione di Verona, che ha già diretto due partite del Benevento nella scorsa stagione di Serie C, tutte e due vinte dai giallorossi. Con lui gli assistenti Berti e Bianchini, il quarto ufficiale Mucera e, al VAR, Rutella e Guida.",
       "fonti": [
-       "BeneventoNews24 (arbitro)"
+       "BeneventoNews24 (arbitro)",
+       "NTR24 Sport (arbitro)"
       ],
       "giorno": "2026-10-26"
      },
@@ -7410,6 +7618,12 @@
       "url": "https://www.beneventocalcio.club/news/comunicatistampa/7682/end-polio-now-il-benevento-calcio-insieme-al-rotary-club.shtml",
       "data": "26 ott, 13:00",
       "ufficiale": true
+     },
+     {
+      "nome": "NTR24 Sport (arbitro)",
+      "titolo": "Benevento-Catanzaro, arbitra Poli di Verona",
+      "url": "https://sport.ntr24.tv/2026/10/26/benevento-catanzaro-arbitra-poli-di-verona/",
+      "data": "26 ott, 15:26"
      }
     ],
     "aggiornamento": {
