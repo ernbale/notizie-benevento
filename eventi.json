@@ -575,11 +575,23 @@
    "tipo": "festa",
    "inizio": "2026-10-30",
    "fine": "2026-11-01",
-   "luogo": "Centro storico di Ponte (accoglienza dei gruppi agli Infopoint di Piazza Cardinal Pacca e Piazza Risorgimento a Benevento)",
+   "orari": "venerdì dalle 16 a mezzanotte, sabato dalle 10.30 a mezzanotte, domenica dalle 11 a mezzanotte",
+   "luogo": "Centro storico di Ponte",
    "comune": "Ponte",
    "zona": "provincia",
    "organizzatore": "Pro Loco di Ponte APS",
-   "breve": "Festa di Halloween nel borgo di Ponte: i vicoli diventano un percorso tra racconti, leggende delle janare, tradizioni e sapori del territorio.",
+   "artisti": [
+    "Laura Coletta",
+    "Two Guitar & A Bastard",
+    "Michele Pucillo Solo Project",
+    "Duo Bassavoce",
+    "Dr. Jazz & Dirby Bucks Swing Band",
+    "Synerghia",
+    "Next Generation",
+    "Nada de Bueno"
+   ],
+   "locandina": "img/locandine/stregati-dai-vicoli-ponte-programma-2026.jpg",
+   "breve": "Quarta edizione della festa nel centro storico di Ponte: mercatini, degustazioni, musica itinerante, visite guidate e rievocazioni tra le leggende delle janare.",
    "descrizione": [
     {
      "testo": "È la IV edizione di «Stregati dai Vicoli», organizzata dalla Pro Loco di Ponte APS. Quest'anno il tema è «Janare e Zucche Stregate nei Vicoli»: un percorso tra racconti, leggende, tradizioni e sapori del territorio, con i vicoli del borgo trasformati in un palcoscenico di magia e mistero.",
@@ -589,14 +601,51 @@
      ]
     },
     {
+     "testo": "Nei tre giorni ci sono mercatini, degustazioni, spettacoli, percorsi a tema, musica itinerante e rievocazioni storiche, con una mappa interattiva per orientarsi tra i vicoli. Ogni giorno ci sono la «Maison du Tarot», la «Casa dei Vicoli Stregati», la «Casa del Bosco» e l'iniziativa «Scegli la zucca e la porti a casa».",
+     "fonti": [
+      "Pro Loco di Ponte APS"
+     ]
+    },
+    {
+     "testo": "Venerdì 30 ottobre: alle 17 inaugurazione con taglio del nastro, stand degli artigiani e «Il Racconto per Flumena» a cura di Laura Coletta; dalle 17.30 «Casa dei Vicoli Stregati»; dalle 18 apertura straordinaria del Museo Storico di Ponte, «Casa del Bosco» e stand delle degustazioni. Musica di Two Guitar & A Bastard, Michele Pucillo Solo Project e Duo Bassavoce.",
+     "fonti": [
+      "Pro Loco di Ponte APS"
+     ]
+    },
+    {
+     "testo": "Sabato 31 ottobre: alle 10.30 apertura e visita degli alunni dell'Istituto Comprensivo di Ponte; dalle 11, su prenotazione all'Infopoint della Pro Loco, visite guidate al centro storico e al Museo Storico e Percorso delle Erbe con Erbe Ribelli; dalle 15.30 cotta di birra; alle 16 laboratori per bambini «Stregati a Colori» con l'ANSPI di Ponte; alle 18 i ragazzi dello Sporting Ponte 2019. Musica di Dr. Jazz & Dirby Bucks Swing Band, Synerghia e Duo Bassavoce.",
+     "fonti": [
+      "Pro Loco di Ponte APS"
+     ]
+    },
+    {
+     "testo": "Domenica 1° novembre: alle 9 trekking urbano; dalle 10, su prenotazione, «Samnitium Fabulae», rievocazione del Sannio del IV secolo avanti Cristo con l'associazione Il Cuoco delle Menadi; alle 11 apertura degli stand e, su prenotazione, visite al centro storico, al museo e al Percorso delle Erbe; alle 16 «Il Racconto per Flumena» e artisti di strada. Musica di Next Generation, Nada de Bueno, Synerghia e Duo Bassavoce.",
+     "fonti": [
+      "Pro Loco di Ponte APS"
+     ]
+    },
+    {
      "testo": "La Pro Loco Benevento Samnium e la Pro Loco di Ponte hanno firmato un protocollo d'intesa. Al mattino i gruppi vengono accolti agli Infopoint di Piazza Cardinal Pacca e Piazza Risorgimento a Benevento e fanno una visita guidata della città, con una figura di «strega» che fa da filo conduttore. Poi il percorso prosegue verso Ponte.",
      "fonti": [
       "NTR24 (09/10)",
       "Ottopagine"
      ]
+    },
+    {
+     "testo": "Informazioni e prenotazioni su prolocodiponte.it, all'Infopoint della Pro Loco di Ponte e all'indirizzo info@prolocodiponte.it.",
+     "fonti": [
+      "Pro Loco di Ponte APS"
+     ]
     }
    ],
+   "notizia": "stregati-dai-vicoli-ponte-programma-2026",
    "fonti": [
+    {
+     "nome": "Pro Loco di Ponte APS",
+     "titolo": "Pro Loco di Ponte aps - Comunicato stampa del 25.10.2026",
+     "url": "https://www.prolocodiponte.it/",
+     "data": "25 ott"
+    },
     {
      "nome": "NTR24 (09/10)",
      "titolo": "“Stregati dai Vicoli”: accordo tra le Pro Loco di Benevento e Ponte per unire turismo e mito delle Janare",
@@ -609,9 +658,7 @@
      "url": "https://www.ottopagine.it/bn/attualita/440555/benevento-e-ponte-insieme-per-viaggio-tra-magia-leggende-tradizioni-e-mistero.shtml",
      "data": "9 ott"
     }
-   ],
-   "immagine": "janare",
-   "foto": "janare"
+   ]
   },
   {
    "id": "us-navy-band-wind-ensemble-san-vittorino-2026",

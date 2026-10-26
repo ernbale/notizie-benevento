@@ -3,6 +3,82 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "stregati-dai-vicoli-ponte-programma-2026",
+   "titolo": "Ponte, «Stregati dai Vicoli» dal 30 ottobre al 1° novembre: il programma nel centro storico",
+   "titolo_google": "Stregati dai Vicoli a Ponte: il programma dal 30 ottobre",
+   "sintesi": "Da venerdì 30 ottobre a domenica 1° novembre il centro storico di Ponte ospita la quarta edizione di «Stregati dai Vicoli», organizzata dalla Pro Loco. In programma mercatini, degustazioni, musica itinerante, visite guidate e rievocazioni storiche.",
+   "categoria": "eventi",
+   "zona": "provincia",
+   "luogo": "Ponte",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "in_vigore_fino": "2026-11-01",
+   "locandina": "img/locandine/stregati-dai-vicoli-ponte-programma-2026.jpg",
+   "comunicati": [
+    "dad0d3d3e487"
+   ],
+   "fonti": [
+    {
+     "nome": "Pro Loco di Ponte APS",
+     "url": "https://www.prolocodiponte.it/",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Da venerdì 30 ottobre a domenica 1° novembre il centro storico di Ponte ospita la quarta edizione di «Stregati dai Vicoli». La organizza la Pro Loco di Ponte APS (associazione di promozione sociale), che lo ha annunciato con un comunicato stampa. Nei tre giorni ci sono mercatini, degustazioni, spettacoli, percorsi a tema, musica che gira per il borgo e rievocazioni storiche, con una mappa interattiva per orientarsi tra i vicoli.",
+      "fonti": [
+       "Pro Loco di Ponte APS"
+      ]
+     },
+     {
+      "testo": "Secondo la locandina, l'evento è aperto venerdì dalle 16 a mezzanotte, sabato dalle 10.30 a mezzanotte e domenica dalle 11 a mezzanotte. Venerdì alle 17 c'è l'inaugurazione con il taglio del nastro e aprono gli stand degli artigiani, la «Maison du Tarot» con una cartomante e «Il Racconto per Flumena» a cura di Laura Coletta. Dalle 17.30 apre la «Casa dei Vicoli Stregati»; dalle 18 aprono in via straordinaria il Museo Storico di Ponte, la «Casa del Bosco» e gli stand delle degustazioni, con l'iniziativa «Scegli la zucca e la porti a casa». La musica è di Two Guitar & A Bastard, Michele Pucillo Solo Project e Duo Bassavoce.",
+      "fonti": [
+       "Pro Loco di Ponte APS"
+      ]
+     },
+     {
+      "testo": "Sabato 31 ottobre si comincia alle 10.30 con gli stand e la visita degli alunni dell'Istituto Comprensivo di Ponte. Dalle 11, su prenotazione all'Infopoint della Pro Loco, ci sono le visite guidate al centro storico e al Museo Storico e il Percorso delle Erbe, con l'associazione Erbe Ribelli. Dalle 15.30 c'è la cotta di birra, alle 16 i laboratori per bambini «Stregati a Colori» con l'ANSPI di Ponte e alle 18 i ragazzi dello Sporting Ponte 2019. Suonano Dr. Jazz & Dirby Bucks Swing Band, Synerghia e Duo Bassavoce.",
+      "fonti": [
+       "Pro Loco di Ponte APS"
+      ]
+     },
+     {
+      "testo": "Domenica 1° novembre si parte alle 9 con il trekking urbano «Stregati dai Vicoli». Dalle 10, su prenotazione, c'è «Samnitium Fabulae», una rievocazione del Sannio del IV secolo avanti Cristo con l'associazione Il Cuoco delle Menadi. Alle 11 aprono gli stand e, su prenotazione, le visite al centro storico, al museo e al Percorso delle Erbe. Alle 16 tornano «Il Racconto per Flumena» e gli artisti di strada, alle 18 riaprono la «Casa dei Vicoli Stregati» e la «Casa del Bosco». La musica è di Next Generation, Nada de Bueno, Synerghia e Duo Bassavoce.",
+      "fonti": [
+       "Pro Loco di Ponte APS"
+      ]
+     },
+     {
+      "testo": "La Pro Loco presenta «Stregati dai Vicoli» come un evento per tutta la famiglia, che unisce il patrimonio storico di Ponte alla tradizione popolare delle janare, le streghe delle leggende sannite. Informazioni e prenotazioni sul sito prolocodiponte.it, all'Infopoint della Pro Loco e all'indirizzo info@prolocodiponte.it.",
+      "fonti": [
+       "Pro Loco di Ponte APS"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Se l'ingresso è gratuito o a pagamento: il comunicato non lo dice.",
+     "Quanto costano le visite guidate e le attività su prenotazione.",
+     "Dove si trova l'Infopoint della Pro Loco a Ponte."
+    ],
+    "fonti": [
+     {
+      "nome": "Pro Loco di Ponte APS",
+      "titolo": "Pro Loco di Ponte aps - Comunicato stampa del 25.10.2026",
+      "url": "https://www.prolocodiponte.it/",
+      "data": "25 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "subito": true,
+   "pubblicato": "2026-10-26T08:02:03+01:00"
+  },
+  {
    "id": "benevento-53-nuove-telecamere-videosorveglianza",
    "titolo": "Benevento, accese 53 nuove telecamere di videosorveglianza: in città ora sono 200",
    "titolo_google": "Benevento, 53 nuove telecamere: in città ora sono 200",
