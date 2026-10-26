@@ -1,7 +1,333 @@
 {
- "aggiornato": "2026-10-26T17:18+01:00",
+ "aggiornato": "2026-10-26T18:11+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "sannio-acque-undici-comuni-gestione-autonoma-ricorsi-tar",
+   "titolo": "Acqua, undici Comuni del Sannio contro il passaggio a Sannio Acque: nasce un coordinamento, pronti i ricorsi al TAR",
+   "titolo_google": "Sannio Acque, undici Comuni si oppongono: ricorsi al TAR",
+   "sintesi": "Lunedì 26 ottobre a Fragneto Monforte i sindaci di undici Comuni che gestiscono da soli l'acqua hanno detto no all'unanimità al passaggio del servizio a Sannio Acque. Hanno deciso un coordinamento permanente, ricorsi al TAR contro i no dell'Ente Idrico Campano e una diffida per fermare i passaggi di consegna.",
+   "categoria": "politica",
+   "zona": "provincia",
+   "immagine": "fontana",
+   "luogo": "Fragneto Monforte, Sassinoro, Circello, San Lupo, Fragneto l'Abate, Baselice, San Marco dei Cavoti, Castelvetere in Val Fortore, Pietraroja, San Giorgio la Molara e Casalduni",
+   "pubblicato": "2026-10-26T17:53+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 4,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/26/altri-undici-comuni-si-mobilitano-contro-sannio-acque-difenderemo-la-gestione-autonoma/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/acqua-pubblica-comuni-sannio-gestione-autonoma/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Undici Comuni del Sannio che gestiscono da soli l'acqua dei loro paesi non vogliono passare a Sannio Acque, la società mista a cui è stato affidato il servizio idrico di tutta la provincia. Lunedì 26 ottobre, nel pomeriggio, i loro sindaci e amministratori si sono riuniti nell'aula consiliare di Fragneto Monforte e hanno respinto all'unanimità il passaggio.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "I Comuni sono Fragneto Monforte, Sassinoro, Circello, San Lupo, Fragneto l'Abate, Baselice, San Marco dei Cavoti, Castelvetere in Val Fortore, Pietraroja, San Giorgio la Molara e Casalduni. Alcuni curano reti e sorgenti da quasi un secolo, come il Consorzio Acquedotto di Fragneto Monforte e Fragneto l'Abate. I sindaci dicono di avere bilanci in ordine e tariffe giuste, e che la scorsa estate i loro paesi non hanno avuto problemi d'acqua.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Ce l'hanno con l'Ente Idrico Campano (EIC), l'ente che governa l'acqua in Campania, che ad alcuni di loro ha detto no alla richiesta di continuare a gestire il servizio da soli. Temono anche bollette più care e di perdere il controllo delle sorgenti; Anteprima24 ricorda i dubbi sui conti del gestore unico già sollevati dalla Corte dei Conti.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Hanno deciso quattro cose: un Coordinamento dei Comuni Sanniti a Gestione Autonoma, che resti in piedi stabilmente; ricorsi al TAR, il tribunale amministrativo, contro tutti i no dell'EIC, da soli o insieme; una diffida all'EIC con la richiesta di sospendere i passaggi di consegna e gli affidamenti; una campagna per informare i cittadini. Chiedono anche un incontro con la Regione Campania e l'EIC.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "«Siamo Comuni che gestiscono l'acqua da soli e lo fanno bene», hanno detto i sindaci alla fine dell'incontro, promettendo di difendere l'autonomia «in ogni sede istituzionale e giudiziaria». Pochi giorni prima, venerdì 23 ottobre, anche il Consiglio comunale di Cusano Mutri aveva votato all'unanimità il no a Sannio Acque e il ricorso al TAR.",
+      "fonti": [
+       "Anteprima24",
+       "NTR24 (25/10)"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Gli undici Comuni presenti, l'incontro a Fragneto Monforte e il no all'unanimità al passaggio a Sannio Acque.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Il coordinamento permanente e i ricorsi al TAR contro i no dell'Ente Idrico Campano.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando saranno presentati i ricorsi al TAR e per quali Comuni.",
+     "Se la Regione e l'Ente Idrico Campano accetteranno di incontrare i sindaci."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Altri undici comuni si mobilitano contro Sannio Acque: “Difenderemo la gestione autonoma”",
+      "url": "https://www.ntr24.tv/2026/10/26/altri-undici-comuni-si-mobilitano-contro-sannio-acque-difenderemo-la-gestione-autonoma/",
+      "data": "26 ott, 17:53"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Acqua pubblica, i Comuni a gestione autonoma fanno fronte comune",
+      "url": "https://www.anteprima24.it/benevento/acqua-pubblica-comuni-sannio-gestione-autonoma/",
+      "data": "26 ott, 17:52"
+     },
+     {
+      "nome": "NTR24 (25/10)",
+      "titolo": "Cusano Mutri, no unanime al passaggio a Sannio Acque: il Comune ricorre al Tar",
+      "url": "https://www.ntr24.tv/2026/10/25/cusano-mutri-no-unanime-al-passaggio-a-sannio-acque-il-comune-ricorre-al-tar/",
+      "data": "25 ott"
+     }
+    ]
+   },
+   "foto": "fontana-5"
+  },
+  {
+   "id": "cautano-ordinanza-quiete-pubblica-palloni-leggeri",
+   "titolo": "Cautano, il sindaco richiama al rispetto della quiete: nelle piazze vicino alle case meglio palloni leggeri",
+   "titolo_google": "Cautano, ordinanza sulla quiete pubblica: palloni leggeri",
+   "sintesi": "Il sindaco di Cautano ha firmato lunedì 26 ottobre un'ordinanza di richiamo contro schiamazzi e rumori negli spazi pubblici vicino alle case. Ai ragazzi che giocano a pallone consiglia palloni leggeri al posto di quelli di cuoio; non ci sono nuove multe.",
+   "categoria": "altro",
+   "zona": "provincia",
+   "luogo": "Cautano",
+   "pubblicato": "2026-10-26",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "fonti": [
+    {
+     "nome": "Comune di Cautano",
+     "url": "https://comune.cautano.bn.it/novita/ordinanza-nr-32-disposizioni-di-richiamo-e-prevenzione-a-tutela-della-quiete-pubblica/",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Cautano, paese ai piedi del Taburno, il sindaco Alessandro Gisoldi ha firmato lunedì 26 ottobre un'ordinanza per la quiete pubblica. Chiede a tutti di evitare schiamazzi, grida e rumori forti nelle strade e nelle piazze, soprattutto vicino alle case e nelle ore del pomeriggio, della sera e della notte.",
+      "fonti": [
+       "Comune di Cautano"
+      ]
+     },
+     {
+      "testo": "Per i ragazzi che giocano a pallone negli spazi pubblici accanto alle abitazioni, il sindaco consiglia palloni leggeri, di gommapiuma o di plastica, e di lasciare a casa quelli di cuoio o pesanti, che rimbombano contro muri, portoni, finestre e serrande. Ai genitori ricorda il dovere di controllare i figli.",
+      "fonti": [
+       "Comune di Cautano"
+      ]
+     },
+     {
+      "testo": "L'ordinanza nasce da alcune segnalazioni arrivate in Comune. La Polizia locale e l'ufficio tecnico hanno fatto due sopralluoghi e non hanno trovato prove dei disturbi segnalati: per questo non ci sono nuovi divieti né nuove multe. È un richiamo al rispetto delle regole che già valgono. La Polizia locale e le forze dell'ordine controlleranno, puntando prima di tutto sulla prevenzione.",
+      "fonti": [
+       "Comune di Cautano"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di Cautano",
+      "titolo": "Ordinanza nr 32 disposizioni di richiamo e prevenzione a tutela della quiete pubblica",
+      "url": "https://comune.cautano.bn.it/novita/ordinanza-nr-32-disposizioni-di-richiamo-e-prevenzione-a-tutela-della-quiete-pubblica/",
+      "data": "26 ott",
+      "ufficiale": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "tribunale-benevento-rotili-di-carlo-coordinatrici-penale-gip",
+   "titolo": "Tribunale di Benevento, Simonetta Rotili e Maria Di Carlo coordinano le sezioni penale e Gip-Gup dopo l'uscita di Sergio Pezza",
+   "titolo_google": "Tribunale di Benevento, nuove coordinatrici penale e Gip",
+   "sintesi": "Dal 26 ottobre la giudice Simonetta Rotili coordina la sezione penale del Tribunale di Benevento e Maria Di Carlo la sezione Gip-Gup. Le ha nominate il presidente Michele Russo dopo che Sergio Pezza ha lasciato il 23 ottobre la presidenza della sezione penale.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-26T17:15+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/442226/tribunale-pezza-lascia-rotili-e-di-carlo-coordinatrici-sezioni-penale-e-gip-gup.shtml"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Tribunale di Benevento ha due nuove coordinatrici. Da lunedì 26 ottobre la giudice Simonetta Rotili guida la sezione penale (dibattimento e riesame) e la giudice Maria Di Carlo la sezione Gip-Gup, quella dei giudici delle indagini e delle udienze preliminari. Le ha nominate con un decreto il presidente del Tribunale, Michele Russo.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Le nomine servono a far funzionare le due sezioni dopo che il giudice Sergio Pezza, dal 23 ottobre, ha lasciato la presidenza della sezione penale. Il concorso per i nuovi presidenti di sezione non è finito e il posto resterà vuoto, si prevede, per più di tre mesi.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Per la sezione penale c'era solo la domanda di Rotili. Per la Gip-Gup le domande erano due, di Di Carlo e di Maria Amoruso, arrivata a Benevento da Novara a gennaio: il presidente ha scelto Di Carlo per gli oltre vent'anni di lavoro come Gip e Gup. Pezza resta giudice nella sezione penale, presiede il III collegio penale e, fino alla nomina del nuovo presidente di sezione, la Corte d'Assise.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando sarà nominato il nuovo presidente della sezione penale."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Tribunale: Pezza lascia Rotili e Di Carlo coordinatrici Sezioni penale e Gip-Gup",
+      "url": "https://www.ottopagine.it/bn/cronaca/442226/tribunale-pezza-lascia-rotili-e-di-carlo-coordinatrici-sezioni-penale-e-gip-gup.shtml",
+      "data": "26 ott, 17:15"
+     }
+    ]
+   }
+  },
+  {
+   "id": "benevento-bellissima-italia-rai2-fabrizio-rocca-puntata",
+   "titolo": "Benevento, arriva la troupe di «Bellissima Italia» di Rai 2: una puntata sulla città con Fabrizio Rocca",
+   "titolo_google": "Bellissima Italia, Rai 2 a Benevento per una puntata",
+   "sintesi": "Nei prossimi giorni il giornalista Fabrizio Rocca e la troupe di «Bellissima Italia», programma di viaggi di Rai 2, saranno a Benevento per girare una puntata sulla città: Arco di Traiano, Santa Sofia, Museo del Sannio e gli altri monumenti.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "immagine": "archeologia",
+   "pubblicato": "2026-10-26T18:02+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/darte-bellissima-italia-rai-due/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Benevento sarà protagonista di una puntata di «Bellissima Italia», il programma di viaggi di Rai 2 nato nel 2020 che va in onda la domenica pomeriggio alle 14:50. Nei prossimi giorni arriveranno in città il giornalista Fabrizio Rocca e la troupe della trasmissione.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "La puntata racconterà i monumenti, la storia e le tradizioni del capoluogo. Le telecamere riprenderanno l'Arco di Traiano e la chiesa di Santa Sofia, tutti e due oggi in restauro, il Museo del Sannio e gli altri monumenti simbolo della città.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "In quali giorni saranno fatte le riprese.",
+     "Quando andrà in onda la puntata."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "I luoghi d’arte di Benevento sotto i riflettori di “Bellissima Italia”",
+      "url": "https://www.anteprima24.it/benevento/darte-bellissima-italia-rai-due/",
+      "data": "26 ott, 18:02"
+     }
+    ]
+   },
+   "foto": "archeologia-5"
+  },
+  {
+   "id": "calcio-under-15-provinciale-benevento-2026-gironi-31-ottobre",
+   "titolo": "Calcio giovanile, l'Under 15 provinciale di Benevento parte il 31 ottobre: le 17 squadre nei due gironi",
+   "titolo_google": "Under 15 provinciale Benevento, si parte il 31 ottobre",
+   "sintesi": "Il campionato provinciale Under 15 di calcio della delegazione di Benevento comincia nel fine settimana del 31 ottobre e 1 novembre, con 17 squadre in due gironi. Negli stessi giorni partono i tornei Esordienti e Pulcini; Primi Calci e Piccoli Amici il 7 e 8 novembre.",
+   "categoria": "sport",
+   "sport": "calcio",
+   "zona": "provincia",
+   "luogo": "Benevento e provincia",
+   "immagine": "calcio",
+   "pubblicato": "2026-10-26T17:30+01:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "LND Benevento",
+     "url": "https://campania.lnd.it/comunicato-ufficiale-n-15-del-26-ottobre-2026-d-p-benevento/",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il campionato provinciale Under 15 di calcio della delegazione di Benevento della Lega Nazionale Dilettanti comincia nel fine settimana di sabato 31 ottobre e domenica 1 novembre. Le squadre sono 17, divise in due gironi.",
+      "fonti": [
+       "LND Benevento"
+      ]
+     },
+     {
+      "testo": "Nel girone A giocano Academy Pesco Sannita, Apice Calcio 1964, Aurelio M. Pacillo, Cesare Ventura, Grippo DRS Benevento, San Giovanni Bruno Founder, Valfortore e Juventina Circello. Nel girone B ci sono P. Casale Academy Cervinara, Airola Calcio, Bucciano Soccer Academy, G.S. Telese Terme, Giada Club Calcio a 5, Nuova Telis, Paolisi, Real Dugenta Calcio e Valle Telesina.",
+      "fonti": [
+       "LND Benevento"
+      ]
+     },
+     {
+      "testo": "Negli stessi giorni, 31 ottobre e 1 novembre, partono anche i tornei dei più piccoli: Esordienti e Pulcini. Primi Calci e Piccoli Amici cominciano il 7 e 8 novembre; la delegazione avverte che le date possono cambiare. Il calendario ufficiale delle partite è quello pubblicato online sul sito delle gare della LND.",
+      "fonti": [
+       "LND Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "LND Benevento",
+      "titolo": "Comunicato Ufficiale n. 15 del 26 ottobre 2026 – D.P. Benevento",
+      "url": "https://campania.lnd.it/comunicato-ufficiale-n-15-del-26-ottobre-2026-d-p-benevento/",
+      "data": "26 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "foto": "calcio-8"
+  },
   {
    "id": "benevento-catanzaro-convocati-floro-flores-27-ottobre",
    "titolo": "Serie B, Benevento-Catanzaro: i 24 convocati di Floro Flores",
@@ -20,6 +346,18 @@
      "nome": "Benevento Calcio",
      "url": "https://www.beneventocalcio.club/news/notizie/7675/serie-bkt-2026-2027-benevento-catanzaro-i-convocati-di-mister-floro-flores.shtml",
      "ufficiale": true
+    },
+    {
+     "nome": "NTR24 Sport",
+     "url": "https://sport.ntr24.tv/2026/10/26/benevento-catanzaro-i-convocati-giallorossi-pierozzi-out-due-i-portieri-in-lista/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/benevento-catanzaro-i-convocati-di-floro-flores-tornano-talia-e-schimmenti/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/26/benevento-catanzaro-i-convocati-di-floro-flores-tornano-talia-e-schimmenti/"
     }
    ],
    "articolo": {
@@ -27,7 +365,10 @@
      {
       "testo": "L'allenatore del Benevento, Antonio Floro Flores, ha scelto i 24 giocatori convocati per la partita con il Catanzaro, la 9ª giornata del campionato di Serie BKT. L'elenco è arrivato lunedì 26 ottobre, alla fine dell'allenamento.",
       "fonti": [
-       "Benevento Calcio"
+       "Benevento Calcio",
+       "NTR24 Sport",
+       "TV7 Benevento",
+       "BeneventoNews24"
       ]
      },
      {
@@ -60,6 +401,24 @@
       "url": "https://www.beneventocalcio.club/news/notizie/7675/serie-bkt-2026-2027-benevento-catanzaro-i-convocati-di-mister-floro-flores.shtml",
       "data": "26 ott, 17:30",
       "ufficiale": true
+     },
+     {
+      "nome": "NTR24 Sport",
+      "titolo": "Benevento-Catanzaro, i convocati giallorossi: Pierozzi out, due i portieri in lista",
+      "url": "https://sport.ntr24.tv/2026/10/26/benevento-catanzaro-i-convocati-giallorossi-pierozzi-out-due-i-portieri-in-lista/",
+      "data": "26 ott, 17:46"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Benevento-Catanzaro, i convocati di Floro Flores: tornano Talia e Schimmenti",
+      "url": "https://www.tvsette.net/benevento-catanzaro-i-convocati-di-floro-flores-tornano-talia-e-schimmenti/",
+      "data": "26 ott, 17:47"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Benevento-Catanzaro, i convocati di Floro Flores: tornano Talia e Schimmenti, out Pierozzi",
+      "url": "https://www.beneventonews24.it/2026/10/26/benevento-catanzaro-i-convocati-di-floro-flores-tornano-talia-e-schimmenti/",
+      "data": "26 ott, 17:57"
      }
     ]
    },
