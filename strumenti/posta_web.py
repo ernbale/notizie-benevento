@@ -11,7 +11,7 @@ come letta, e non si sposta, non si cancella, non si manda niente. L'unica cosa 
 letta di una mail, col pulsante «Segna come letta» / «Segna come non letta» (voluto dal proprietario il 25 ott 2026:
 «metti un pulsante letto e il contrario», dopo aver letto una mail nella pagina e trovato il pallino ancora acceso):
 /api/segna, solo il flag \\Seen di quel messaggio, e la cartella torna subito in sola lettura.
-Gli allegati si aprono (immagini e PDF) o si scaricano; dei .docx e .odt si legge anche il testo, dei .p7m firmati (le PEC
+Gli allegati si aprono (immagini e PDF) o si scaricano; dei .docx, .doc, .odt e .rtf si legge anche il testo, dei .p7m firmati (le PEC
 della PA) il documento che c'è dentro.
 
 Perché qui e non nei dati delle statistiche: sono mail di altre persone, non vanno pubblicate sul sito neanche
@@ -385,7 +385,7 @@ def allegati_di(m):
         dati = p.get_payload(decode=True) or b""
         out.append({"n": n, "nome": nome, "tipo": p.get_content_type(), "dim": len(dati),
                     "cid": (p.get("Content-ID") or "").strip("<> "),
-                    "vedi": vedibile(nome, p.get_content_type()), "testo": nome.lower().endswith((".docx", ".odt"))})
+                    "vedi": vedibile(nome, p.get_content_type()), "testo": nome.lower().endswith(F.DOCUMENTI_SCRITTI)})
     return out
 
 
@@ -711,7 +711,8 @@ def messaggio_json(q):
 
 
 def allegato(q):
-    """(byte, tipo, nome, in linea) di un allegato; dei .p7m il documento dentro; dei .docx/.odt, con testo=1, il testo."""
+    """(byte, tipo, nome, in linea) di un allegato; dei .p7m il documento dentro; dei .docx/.doc/.odt/.rtf, con testo=1, il
+    testo."""
     cid, cartella = q.get("casella"), q.get("cartella")
     if cid not in PER_ID or cartella not in dict(CARTELLE) or not str(q.get("uid") or "").isdigit() \
             or not str(q.get("n") or "").isdigit():
@@ -723,7 +724,7 @@ def allegato(q):
         raise KeyError("allegato")
     nome = F.nome_allegato(p) or f"allegato-{int(q['n']) + 1}"
     dati = p.get_payload(decode=True) or b""
-    if q.get("testo") == "1" and nome.lower().endswith((".docx", ".odt")):
+    if q.get("testo") == "1" and nome.lower().endswith(F.DOCUMENTI_SCRITTI):
         t = F.testo_documento(dati, nome) or "(nel documento non c'è testo da leggere)"
         return t.encode("utf-8"), "text/plain; charset=utf-8", nome + ".txt", True
     if q.get("dentro") == "1" and nome.lower().endswith(".p7m"):
@@ -733,7 +734,7 @@ def allegato(q):
         nome = nome[:-4]
         ext = os.path.splitext(nome.lower())[1]
         tipo = TIPI.get(ext, "application/octet-stream")
-        if ext in (".docx", ".odt") and q.get("testo") == "1":
+        if ext in F.DOCUMENTI_SCRITTI and q.get("testo") == "1":
             return (F.testo_documento(interno, nome) or "").encode("utf-8"), "text/plain; charset=utf-8", nome + ".txt", True
         return interno, tipo, nome, tipo in IMMAGINI_VEDIBILI or tipo == "application/pdf"
     tipo = p.get_content_type()
