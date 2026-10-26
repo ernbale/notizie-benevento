@@ -51,6 +51,19 @@ che si leggono da ovunque:
   sono gli avvisi del Pi: `gh run view <id> --log | grep AVVISO_PI`.
 - La posta in diretta (posta_diretta.py) e le risposte di cortesia (risposte.py) da fuori non si vedono: solo dal Pi.
 
+## Social: mai raffiche né doppioni (regola del proprietario dal 26 ott 2026)
+Il 26 ott 2026 sono usciti 16 post Facebook in un minuto (tolti i limiti, è partita tutta la coda arretrata) e 5
+doppioni (la memoria di cosa era già uscito copriva un giorno solo; una foto rimandata dopo una risposta persa). Lui:
+«non deve mai più capitare». Quindi, prima di toccare `strumenti/facebook.py` o `strumenti/instagram.py`:
+- simula sui dati veri cosa uscirebbe alla **prima** pubblicazione e nelle ore dopo (`--prova`): mai più di 1-2 post
+  insieme;
+- tutto ciò che allarga chi può uscire deve stare dentro i giorni che `gia_pubblicate` legge (`GIORNI_MEMORIA`);
+- un invio con risposta incerta non si ripete (`riprova`);
+- dopo il primo giro vero guarda la Pagina e il profilo Instagram veri (i log non bastano) e cerca doppioni.
+Oggi: una notizia ogni 20 minuti, nessun tetto, comunicati subito, classifica con `importanza` 1-5 (AGENTE.md). Un
+aggiornamento col titolo diverso non è un doppione. Per togliere un post da Facebook: «Sposta nell'archivio»; su
+Instagram lo toglie lui dall'app.
+
 ## Facebook
 Un post uscito senza immagine (l'anteprima della notizia è stata rinominata dopo il post): sulla Pagina, menu «…» del
 post → «Aggiorna l'allegato della condivisione» → Salva. Non toccare il sito per questo.
