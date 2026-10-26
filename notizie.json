@@ -1,7 +1,241 @@
 {
- "aggiornato": "2026-10-26T11:22+01:00",
+ "aggiornato": "2026-10-26T12:15+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "forchia-appia-auto-contro-cancello-morto-74enne",
+   "titolo": "Forchia, auto contro un cancello sulla statale Appia: morto un 74enne di Cervinara",
+   "titolo_google": "Incidente a Forchia sulla statale Appia: morto un 74enne",
+   "sintesi": "Lunedì 26 ottobre, verso le 10, un uomo di 74 anni di Cervinara è morto sulla statale 7 Appia a Forchia: è uscito di strada con la sua Fiat Panda ed è finito contro il cancello di una casa. Non risultano altri veicoli coinvolti; non si esclude un malore.",
+   "categoria": "cronaca",
+   "zona": "caudina",
+   "luogo": "Forchia",
+   "pubblicato": "2026-10-26T12:02:00+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/perde-il-controllo-dellauto-e-finisce-fuori-strada-morto-74enne/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/26/tragico-incidente-sulla-via-appia-si-schianta-contro-un-cancello-muore-74enne-caudino/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Un uomo di 74 anni, che abitava a Cervinara, è morto lunedì 26 ottobre in un incidente sulla statale 7 Appia, nel territorio di Forchia, in Valle Caudina. Verso le 10 ha perso il controllo della sua Fiat Panda, è uscito di strada ed è finito contro il cancello in ferro di una casa. È morto sul colpo.",
+      "fonti": [
+       "Anteprima24",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Alcuni automobilisti che passavano hanno provato ad aiutarlo, ma quando è arrivata l'ambulanza del 118 di Airola non c'era più niente da fare. Sono intervenuti anche i Vigili del fuoco del distaccamento di Bonea e i Carabinieri della Compagnia di Montesarchio, che hanno fatto i rilievi.",
+      "fonti": [
+       "Anteprima24",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Le cause sono ancora da chiarire. Dai primi controlli non risultano altri veicoli coinvolti e non si esclude che l'uomo si sia sentito male prima dello schianto. Sulla statale ci sono stati rallentamenti, mentre si aspettava il permesso del magistrato per portare via la salma.",
+      "fonti": [
+       "Anteprima24",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "L'età e il paese dell'uomo (74 anni, Cervinara), la Fiat Panda finita contro un cancello sull'Appia a Forchia, i Vigili del fuoco di Bonea e i Carabinieri sul posto.",
+      "fonti": [
+       "Anteprima24",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Se l'uomo si è sentito male prima dell'incidente: lo diranno gli accertamenti."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Perde il controllo dell’auto e finisce fuori strada: morto 74enne",
+      "url": "https://www.anteprima24.it/benevento/perde-il-controllo-dellauto-e-finisce-fuori-strada-morto-74enne/",
+      "data": "26 ott, 11:32"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Tragico incidente sulla via Appia, si schianta contro un cancello: muore 74enne caudino",
+      "url": "https://www.beneventonews24.it/2026/10/26/tragico-incidente-sulla-via-appia-si-schianta-contro-un-cancello-muore-74enne-caudino/",
+      "data": "26 ott, 12:02"
+     }
+    ]
+   }
+  },
+  {
+   "id": "faicchio-piazza-borrelli-chiusa-28-ottobre-confindustria",
+   "titolo": "Faicchio, piazza Mario Borrelli chiusa al traffico mercoledì 28 ottobre per «Confindustria incontra il territorio»",
+   "titolo_google": "Faicchio, piazza Borrelli chiusa al traffico il 28 ottobre",
+   "sintesi": "Mercoledì 28 ottobre, dalle 13 alle 21, a Faicchio non si potrà passare né parcheggiare in piazza Mario Borrelli: alle 15:30 c'è la cerimonia «Confindustria incontra il territorio». Le auto in sosta saranno rimosse.",
+   "categoria": "strade",
+   "zona": "telesina",
+   "luogo": "Faicchio",
+   "immagine": "strada-chiusa",
+   "pubblicato": "2026-10-26",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "in_vigore_dal": "2026-10-28",
+   "in_vigore_fino": "2026-10-28",
+   "traffico": "chiusa",
+   "fonti": [
+    {
+     "nome": "Comune di Faicchio",
+     "url": "https://comune.faicchio.bn.it/albo-pretorio/?dettaglio_id=306098",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Mercoledì 28 ottobre, dalle 13 alle 21, piazza Mario Borrelli a Faicchio sarà chiusa al traffico e non si potrà parcheggiare: le auto lasciate in sosta saranno portate via col carro attrezzi. Lo ha deciso il responsabile dell'area Vigilanza del Comune con l'ordinanza numero 48 del 26 ottobre.",
+      "fonti": [
+       "Comune di Faicchio"
+      ]
+     },
+     {
+      "testo": "Il motivo è la cerimonia «Confindustria incontra il territorio», in programma in piazza alle 15:30, con autorità e cittadini. Il divieto può durare finché servirà per la sicurezza della manifestazione.",
+      "fonti": [
+       "Comune di Faicchio"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di Faicchio",
+      "titolo": "CONFINDUSTRIA INCONTRA IL TERRITORIO",
+      "url": "https://comune.faicchio.bn.it/albo-pretorio/?dettaglio_id=306098",
+      "data": "26 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "foto": "strada-chiusa-16"
+  },
+  {
+   "id": "buonalbergo-carta-dedicata-a-te-lista-beneficiari-2026",
+   "titolo": "Buonalbergo, pubblicata la lista dei beneficiari della «Carta Dedicata a te»",
+   "titolo_google": "Carta Dedicata a te a Buonalbergo: la lista dei beneficiari",
+   "sintesi": "Il Comune di Buonalbergo ha pubblicato all'albo pretorio la lista delle famiglie che riceveranno la «Carta Dedicata a te», la carta di sostegno ai nuclei familiari. Nella lista non ci sono nomi: ogni famiglia si riconosce dal numero della pratica e dal protocollo della dichiarazione ISEE.",
+   "categoria": "altro",
+   "zona": "fortore",
+   "luogo": "Buonalbergo",
+   "pubblicato": "2026-10-26",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Comune di Buonalbergo",
+     "url": "https://www.halleyweb.com/c062011/mc/mc_p_dettaglio.php?id_pubbl=11322",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Comune di Buonalbergo ha pubblicato lunedì 26 ottobre, all'albo pretorio, la lista dei beneficiari della «Carta Dedicata a te», la misura di sostegno ai nuclei familiari.",
+      "fonti": [
+       "Comune di Buonalbergo"
+      ]
+     },
+     {
+      "testo": "La lista non riporta i nomi: ogni famiglia è indicata col numero della sua pratica e col protocollo della DSU, la dichiarazione presentata all'INPS per l'ISEE. Per sapere se si è tra i beneficiari basta confrontare questi numeri con quelli della propria dichiarazione, nell'avviso pubblicato all'albo pretorio online del Comune.",
+      "fonti": [
+       "Comune di Buonalbergo"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando e dove i beneficiari potranno ritirare la carta."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Buonalbergo",
+      "titolo": "LISTA BENEFICIARI CARTA DEDICATA A TE - MISURA di SOSTEGNO ai NUCLEI FAMILIARI",
+      "url": "https://www.halleyweb.com/c062011/mc/mc_p_dettaglio.php?id_pubbl=11322",
+      "data": "26 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "immagine": "documenti",
+   "foto": "documenti-11"
+  },
+  {
+   "id": "benevento-alessandro-calabrese-premio-poesia-seneca-2026",
+   "titolo": "Benevento, il 19enne Alessandro Calabrese secondo al premio di poesia «Lucius Annaeus Seneca»",
+   "titolo_google": "Premio Seneca 2026, secondo posto al beneventano Calabrese",
+   "sintesi": "Alessandro Calabrese, 19 anni, di Benevento, è arrivato secondo nella sezione «Poesia studenti» del Premio internazionale di letteratura «Lucius Annaeus Seneca», con l'opera «Così m'han fatto e son divenuto sasso». La premiazione è stata sabato 24 ottobre a Sannicandro di Bari.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-26T11:11:00+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/26/poesia-il-beneventano-alessandro-calabrese-conquista-il-secondo-posto-al-premio-lucius-annaeus-seneca/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Alessandro Calabrese, 19 anni, di Benevento, ha vinto il secondo posto nella sezione «Poesia studenti» della decima edizione del Premio internazionale di letteratura contemporanea «Lucius Annaeus Seneca», organizzato dall'Accademia delle Arti e delle Scienze Filosofiche di Bari. L'opera premiata si intitola «Così m'han fatto e son divenuto sasso».",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "La premiazione si è svolta sabato 24 ottobre nella Sala delle Scuderie del Castello Normanno-Svevo di Sannicandro di Bari. Calabrese, nato nel 2007, scrive soprattutto in endecasillabi, il verso cardine della tradizione italiana, guardando ai poeti del Duecento e a Leopardi.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Finito il liceo, oggi studia Geologia all'università e corre gli 800 e i 400 metri nell'atletica leggera.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Poesia, il beneventano Alessandro Calabrese conquista il secondo posto al Premio “Lucius Annaeus Seneca”",
+      "url": "https://www.ntr24.tv/2026/10/26/poesia-il-beneventano-alessandro-calabrese-conquista-il-secondo-posto-al-premio-lucius-annaeus-seneca/",
+      "data": "26 ott, 11:11"
+     }
+    ]
+   },
+   "immagine": "libri",
+   "foto": "libri-8"
+  },
   {
    "id": "judo-emilia-diario-bronzo-europei-veterani-portimao-2026",
    "titolo": "Judo, la beneventana Emilia Diario bronzo agli Europei Veterani di Portimão nei 48 kg",
@@ -12,12 +246,16 @@
    "zona": "benevento",
    "luogo": "Benevento",
    "pubblicato": "2026-10-26T10:57:00+01:00",
-   "stato": "una_fonte",
+   "stato": "confermata",
    "rilevante": false,
    "fonti": [
     {
      "nome": "NTR24",
      "url": "https://sport.ntr24.tv/2026/10/26/judo-bronzo-europeo-per-la-maestra-sannita-emilia-diario/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/judo-benevento-bronzo-diario/"
     }
    ],
    "articolo": {
@@ -25,18 +263,28 @@
      {
       "testo": "Emilia Diario, maestra di judo della Judo Benevento, ha vinto la medaglia di bronzo ai Campionati Europei Veterani 2026, nella categoria fino a 48 chili. La gara, organizzata dalla Fijikam, la federazione italiana di judo, lotta, karate e arti marziali, si è svolta dal 22 al 25 ottobre alla Portimão Arena, in Portogallo.",
       "fonti": [
-       "NTR24"
+       "NTR24",
+       "Anteprima24"
       ]
      },
      {
       "testo": "Agli Europei hanno partecipato oltre 1.400 atleti di 36 Paesi. Sul tatami Diario ha affrontato avversarie francesi e romene già esperte di gare internazionali, fino al terzo posto.",
       "fonti": [
-       "NTR24"
+       "NTR24",
+       "Anteprima24"
       ]
      }
     ],
     "cronologia": [],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "Il bronzo di Emilia Diario nella categoria fino a 48 chili agli Europei in Portogallo, dal 22 al 25 ottobre, dopo incontri con avversarie francesi e romene.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [
      "Chi ha battuto Emilia Diario nel percorso verso il bronzo e i risultati dei singoli incontri."
@@ -47,18 +295,24 @@
       "titolo": "Judo, bronzo europeo per la maestra sannita Emilia Diario",
       "url": "https://sport.ntr24.tv/2026/10/26/judo-bronzo-europeo-per-la-maestra-sannita-emilia-diario/",
       "data": "26 ott, 10:57"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Judo Benevento: bronzo europeo per la Maestra Emilia Diario",
+      "url": "https://www.anteprima24.it/benevento/judo-benevento-bronzo-diario/",
+      "data": "26 ott, 11:47"
      }
     ]
    }
   },
   {
    "id": "castelpoto-santa-croce-del-sannio-elenco-elettori-fuori-sede",
-   "titolo": "Castelpoto e Santa Croce del Sannio, aperto l'elenco degli elettori fuori sede: domande entro il 31 dicembre",
-   "titolo_google": "Elettori fuori sede a Castelpoto e Santa Croce: come iscriversi",
-   "sintesi": "I Comuni di Castelpoto e Santa Croce del Sannio hanno aperto l'elenco degli elettori fuori sede previsto dalla nuova legge elettorale: chi per studio, lavoro o cure vive in una regione diversa da quella in cui vota può chiedere di votare dove abita. Per studio e lavoro la domanda va fatta entro il 31 dicembre, per le votazioni dell'anno dopo.",
+   "titolo": "Castelpoto, Santa Croce del Sannio e Apice, aperto l'elenco degli elettori fuori sede: domande entro il 31 dicembre",
+   "titolo_google": "Elettori fuori sede a Castelpoto, Santa Croce e Apice: come fare",
+   "sintesi": "I Comuni di Castelpoto, Santa Croce del Sannio e Apice hanno aperto l'elenco degli elettori fuori sede previsto dalla nuova legge elettorale: chi per studio, lavoro o cure vive in una regione diversa da quella in cui vota può chiedere di votare dove abita. Per studio e lavoro la domanda va fatta entro il 31 dicembre, per le votazioni dell'anno dopo.",
    "categoria": "altro",
    "zona": "benevento",
-   "luogo": "Castelpoto e Santa Croce del Sannio",
+   "luogo": "Castelpoto, Santa Croce del Sannio e Apice",
    "immagine": "elezioni",
    "pubblicato": "2026-10-26",
    "stato": "ufficiale",
@@ -73,29 +327,45 @@
      "nome": "Comune di Santa Croce del Sannio",
      "url": "https://www.comune.santacrocedelsannio.bn.it/novita/notizie/novita_73.html",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di Apice",
+     "url": "https://www.halleyweb.com/c062003/mc/mc_p_dettaglio.php?id_pubbl=17071",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Castelpoto e Santa Croce del Sannio hanno aperto l'elenco comunale degli elettori fuori sede. Lo prevede la legge 180 del 9 ottobre 2026 sulle elezioni di Camera e Senato: chi vive per un periodo in una regione diversa da quella del Comune dove è iscritto per votare può chiedere di votare nel Comune dove abita. Vale per le elezioni politiche ed europee e per i referendum, non per le elezioni comunali e regionali.",
+      "testo": "Castelpoto, Santa Croce del Sannio e Apice hanno aperto l'elenco comunale degli elettori fuori sede. Lo prevede la legge 180 del 9 ottobre 2026 sulle elezioni di Camera e Senato: chi vive per un periodo in una regione diversa da quella del Comune dove è iscritto per votare può chiedere di votare nel Comune dove abita. Vale per le elezioni politiche ed europee e per i referendum, non per le elezioni comunali e regionali.",
       "fonti": [
        "Comune di Castelpoto",
-       "Comune di Santa Croce del Sannio"
-      ]
+       "Comune di Santa Croce del Sannio",
+       "Comune di Apice"
+      ],
+      "giorno": "2026-10-26"
      },
      {
       "testo": "Possono chiederlo gli studenti e i lavoratori che restano fuori regione per almeno nove mesi, chi si cura per almeno tre mesi in una struttura sanitaria di un'altra regione, i familiari che li assistono e i genitori che accompagnano un figlio minorenne in cura fuori regione.",
       "fonti": [
        "Comune di Castelpoto"
-      ]
+      ],
+      "giorno": "2026-10-26"
      },
      {
       "testo": "La domanda va presentata al Comune dove si abita per il periodo fuori sede, di persona o per via telematica, con un documento di identità e un certificato che dimostri la condizione (iscrizione all'università, contratto di lavoro, attestato della struttura sanitaria); si può anche autocertificare. Per studio e lavoro il termine è il 31 dicembre di ogni anno, per le votazioni dell'anno successivo; per le cure il termine è il 45° giorno prima del voto. L'iscrizione vale un anno. A Castelpoto la domanda si manda alla PEC castelpoto@pec.cstsannio.it o si consegna all'ufficio protocollo in piazza Garibaldi 1; a Santa Croce del Sannio il modello è sul sito del Comune, a cura dei servizi demografici.",
       "fonti": [
        "Comune di Castelpoto",
        "Comune di Santa Croce del Sannio"
-      ]
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "Chi abita per un periodo ad Apice e vota in un'altra regione consegna la domanda all'ufficio protocollo in piazza della Ricostruzione 1 o la manda per PEC al Comune; il modello, in PDF da compilare, è sul sito del Comune di Apice e su dait.interno.gov.it/elezioni. Vanno allegati un documento di identità e un certificato che dimostri lo studio o il lavoro fuori sede e la sua durata, che si può anche autocertificare.",
+      "fonti": [
+       "Comune di Apice"
+      ],
+      "giorno": "2026-10-26"
      }
     ],
     "cronologia": [],
@@ -118,8 +388,23 @@
       "url": "https://www.comune.santacrocedelsannio.bn.it/novita/notizie/novita_73.html",
       "data": "26 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "Comune di Apice",
+      "titolo": "Voto degli elettori fuori sede temporaneamente domiciliati in una Regione diversa da quella di iscrizione elettorale. Istituzione dell'elenco Comunale degli Elettori fuori sede.",
+      "url": "https://www.halleyweb.com/c062003/mc/mc_p_dettaglio.php?id_pubbl=17071",
+      "data": "26 ott",
+      "ufficiale": true
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Lunedì 26 ottobre anche il Comune di Apice ha aperto l'elenco degli elettori fuori sede: domande entro il 31 dicembre.",
+     "fonti": [
+      "Comune di Apice"
+     ],
+     "quando": "2026-10-26T12:15+01:00",
+     "titolo_prima": "Castelpoto e Santa Croce del Sannio, aperto l'elenco degli elettori fuori sede: domande entro il 31 dicembre"
+    }
    },
    "foto": "elezioni-3"
   },
