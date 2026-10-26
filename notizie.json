@@ -1,7 +1,179 @@
 {
- "aggiornato": "2026-10-26T09:17+01:00",
+ "aggiornato": "2026-10-26T10:12+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "tennis-ct-san-giorgio-del-sannio-vince-torino-serie-a2",
+   "titolo": "Tennis, Serie A2 femminile: il CT San Giorgio del Sannio vince 3-1 a Torino",
+   "titolo_google": "Tennis Serie A2, Stampa Sporting-San Giorgio 1-3: vince il CT",
+   "sintesi": "Il CT San Giorgio del Sannio ha battuto 3-1 a Torino il Circolo della Stampa Sporting ed è alla terza vittoria nella Serie A2 femminile di tennis. Domenica 1° novembre, alla Fagianella, arriva il Circolo Tennis Bologna.",
+   "categoria": "sport",
+   "sport": "tennis",
+   "zona": "benevento",
+   "immagine": "tennis",
+   "luogo": "San Giorgio del Sannio",
+   "pubblicato": "2026-10-26T09:36+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/tennis-il-ct-san-giorgio-del-sannio-espugna-torino-terza-vittoria-in-serie-a2-femminile/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il CT San Giorgio del Sannio ha vinto 3-1 sul campo del Circolo della Stampa Sporting di Torino, nella Serie A2 femminile di tennis. Aveva battuto le torinesi anche all'andata. È la terza vittoria del campionato per la squadra del presidente Pepe, a due giornate dalla fine della fase a gironi.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Il primo punto l'ha portato Federica Sacco, che ha battuto Cavasin 7-5, 6-2. Nel secondo singolare Sara Milanese ha superato Cerbo 7-6, 6-3: per lei sono tre vittorie su tre in singolare in questo campionato. Ylenia Zocco, non in perfette condizioni fisiche, ha perso al terzo set contro Procacci.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Il punto decisivo è arrivato dal doppio: Sacco e Zocco hanno battuto Iezza e Procacci 6-0, 6-2.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Domenica 1° novembre il CT San Giorgio del Sannio gioca in casa, sui campi della Fagianella, l'ultima partita casalinga del girone contro il Circolo Tennis Bologna.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "A che ora si gioca la partita con il Circolo Tennis Bologna.",
+     "La classifica del girone dopo questa giornata."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Tennis, il CT San Giorgio del Sannio espugna Torino: terza vittoria in Serie A2 femminile",
+      "url": "https://www.anteprima24.it/benevento/tennis-il-ct-san-giorgio-del-sannio-espugna-torino-terza-vittoria-in-serie-a2-femminile/",
+      "data": "26 ott, 09:36"
+     }
+    ]
+   },
+   "foto": "tennis-9"
+  },
+  {
+   "id": "pietrelcina-centro-raccolta-rifiuti-riapre-27-ottobre",
+   "titolo": "Pietrelcina, il centro di raccolta comunale riapre martedì 27 ottobre",
+   "titolo_google": "Pietrelcina, centro di raccolta rifiuti riaperto dal 27 ottobre",
+   "sintesi": "Il Comune di Pietrelcina avvisa che da martedì 27 ottobre il centro di raccolta comunale, dove si portano i rifiuti differenziati e ingombranti, riapre con i soliti orari.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "immagine": "rifiuti",
+   "luogo": "Pietrelcina",
+   "pubblicato": "2026-10-26",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Comune di Pietrelcina",
+     "url": "https://www.comune.pietrelcina.bn.it/novita/avvisi/novita_378.html",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Pietrelcina il centro di raccolta comunale, l'area dove i cittadini portano i rifiuti che non vanno nella raccolta porta a porta, riapre da martedì 27 ottobre. Lo ha comunicato il Comune lunedì 26 ottobre, con un avviso dell'ufficio Ecologia e Ambiente.",
+      "fonti": [
+       "Comune di Pietrelcina"
+      ]
+     },
+     {
+      "testo": "Il centro torna aperto con i soliti orari, che l'avviso non riporta. Per informazioni ci si può rivolgere al Comune.",
+      "fonti": [
+       "Comune di Pietrelcina"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Perché e da quando il centro di raccolta era chiuso.",
+     "Quali sono gli orari di apertura."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Pietrelcina",
+      "titolo": "Riapertura del Centro di Raccolta Comunale",
+      "url": "https://www.comune.pietrelcina.bn.it/novita/avvisi/novita_378.html",
+      "data": "26 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "foto": "rifiuti-13"
+  },
+  {
+   "id": "san-leucio-del-sannio-cimitero-traffico-31-ottobre-2-novembre",
+   "titolo": "San Leucio del Sannio, regole speciali per traffico e sosta al cimitero dal 31 ottobre al 2 novembre",
+   "titolo_google": "San Leucio del Sannio, traffico al cimitero 31 ottobre-2 novembre",
+   "sintesi": "Per Ognissanti e la Commemorazione dei Defunti il sindaco di San Leucio del Sannio ha firmato un'ordinanza che cambia circolazione e sosta intorno al cimitero del capoluogo sabato 31 ottobre, domenica 1° e lunedì 2 novembre.",
+   "categoria": "strade",
+   "zona": "benevento",
+   "immagine": "cimitero",
+   "luogo": "San Leucio del Sannio",
+   "pubblicato": "2026-10-26",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "in_vigore_dal": "2026-10-31",
+   "in_vigore_fino": "2026-11-02",
+   "fonti": [
+    {
+     "nome": "Comune di San Leucio del Sannio",
+     "url": "https://www.halleyweb.com/c062060/mc/mc_p_dettaglio.php?id_pubbl=12214",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A San Leucio del Sannio cambiano per tre giorni le regole per circolare e parcheggiare intorno al cimitero comunale del capoluogo. Le ha decise il sindaco con l'ordinanza numero 22, pubblicata all'albo pretorio lunedì 26 ottobre, per le feste di Ognissanti e la Commemorazione dei Defunti.",
+      "fonti": [
+       "Comune di San Leucio del Sannio"
+      ]
+     },
+     {
+      "testo": "Le regole valgono sabato 31 ottobre, domenica 1° e lunedì 2 novembre. Servono a rendere più sicura la strada e a lasciare raggiungibili i negozi e le attività lungo il percorso. Le strade e gli orari precisi sono scritti nell'ordinanza, sull'albo pretorio del Comune.",
+      "fonti": [
+       "Comune di San Leucio del Sannio"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quali strade cambiano e se qualcuna resta chiusa al traffico.",
+     "In quali orari valgono i divieti."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di San Leucio del Sannio",
+      "titolo": "Disciplina temporanea della circolazione e della sosta veicolare in occasione delle festività di Ognissanti e della Commemorazione dei Defunti - Giornate del 31 ottobre, 1° e 2 novembre 2026 - Cimitero Comunale Capoluogo. Misure di sicurezza stradale e salvaguardia dell'accessibilità alle attività economiche presenti lungo il percorso.",
+      "url": "https://www.halleyweb.com/c062060/mc/mc_p_dettaglio.php?id_pubbl=12214",
+      "data": "26 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "foto": "cimitero-8"
+  },
   {
    "id": "benevento-liceo-guacci-furto-distributore-computer",
    "titolo": "Benevento, ladri di notte al liceo Guacci di via Compagna: scassinato il distributore di merendine",
@@ -544,6 +716,10 @@
      "nome": "Benevento Calcio",
      "url": "https://www.beneventocalcio.club/news/comunicatistampa/7679/abbonati-2026-27-il-tuo-segnaposto-e-pronto.shtml",
      "ufficiale": true
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/benevento-disponibili-segnaposto-abbonati/"
     }
    ],
    "comunicati": [
@@ -560,13 +736,15 @@
      {
       "testo": "Il botteghino è aperto per il ritiro lunedì 26, mercoledì 28, giovedì 29 e venerdì 30 ottobre, dalle 9 alle 12 e dalle 15 alle 18. Martedì 27 ottobre, il giorno della partita Benevento-Catanzaro, l'orario è diverso: solo dalle 9 alle 13.",
       "fonti": [
-       "Benevento Calcio"
+       "Benevento Calcio",
+       "Cronache del Sannio"
       ]
      },
      {
       "testo": "Il segnaposto è una card con due codici QR. Il primo serve per entrare allo stadio alle partite. Il secondo dà diritto alle agevolazioni e alle iniziative riservate agli abbonati presso i partner del Benevento Calcio.",
       "fonti": [
-       "Benevento Calcio"
+       "Benevento Calcio",
+       "Cronache del Sannio"
       ]
      },
      {
@@ -577,7 +755,15 @@
      }
     ],
     "cronologia": [],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "Gli orari del botteghino per il ritiro, dal 26 al 30 ottobre, e l'orario ridotto di martedì 27 per Benevento-Catanzaro.",
+      "fonti": [
+       "Benevento Calcio",
+       "Cronache del Sannio"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [
      "Se il segnaposto si può ritirare anche dopo venerdì 30 ottobre e con quali orari.",
@@ -592,6 +778,12 @@
       "url": "https://www.beneventocalcio.club/news/comunicatistampa/7679/abbonati-2026-27-il-tuo-segnaposto-e-pronto.shtml",
       "data": "25 ott, 22:07",
       "ufficiale": true
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Benevento, disponibili i segnaposto per gli abbonati 2026/2027",
+      "url": "https://www.cronachedelsannio.it/sannionews24/benevento-disponibili-segnaposto-abbonati/",
+      "data": "26 ott, 09:08"
      }
     ]
    },
@@ -1528,18 +1720,23 @@
   },
   {
    "id": "benevento-pierozzi-infortunio-arezzo-floro-flores",
-   "titolo": "Benevento, Pierozzi esce per un infortunio ad Arezzo: si aspettano gli esami prima del Catanzaro",
-   "titolo_google": "Benevento, Pierozzi infortunato ad Arezzo: si attendono esami",
-   "sintesi": "Nella vittoria per 3-0 ad Arezzo il giocatore del Benevento Pierozzi è uscito all'86' per un fastidio alla gamba. L'allenatore Floro Flores aspetta gli esami; secondo BeneventoNews24 ha parlato di un problema di qualche settimana. Martedì 27 ottobre al Vigorito arriva il Catanzaro.",
+   "titolo": "Benevento, Pierozzi fuori circa due mesi: distrazione al bicipite femorale",
+   "titolo_google": "Pierozzi infortunato, Benevento senza di lui per due mesi",
+   "sintesi": "Il Benevento Calcio ha comunicato che Edoardo Pierozzi ha una distrazione di secondo grado del bicipite femorale: starà fuori circa due mesi. Il giocatore si era fermato all'86' della partita vinta 3-0 ad Arezzo sabato 24 ottobre. Martedì 27 al Vigorito arriva il Catanzaro.",
    "categoria": "sport",
    "sport": "calcio",
    "zona": "benevento",
    "immagine": "calcio",
    "luogo": "Benevento",
-   "pubblicato": "2026-10-24T22:27+02:00",
-   "stato": "confermata",
+   "pubblicato": "2026-10-26T10:06+01:00",
+   "stato": "ufficiale",
    "rilevante": false,
    "fonti": [
+    {
+     "nome": "Benevento Calcio",
+     "url": "https://www.beneventocalcio.club/news/comunicatistampa/7681/benevento-calcio-aggiornamento-medico-edoardo-pierozzi.shtml",
+     "ufficiale": true
+    },
     {
      "nome": "BeneventoNews24",
      "url": "https://www.beneventonews24.it/2026/10/24/benevento-floro-flores-questa-squadra-e-fantastica-ma-lobiettivo-resta-la-salvezza/"
@@ -1556,34 +1753,60 @@
    "articolo": {
     "racconto": [
      {
-      "testo": "Il Benevento potrebbe dover fare a meno di Pierozzi per un po'. Sabato 24 ottobre, nella partita vinta 3-0 ad Arezzo, il giocatore giallorosso è uscito all'86' per un fastidio. Nel dopo partita l'allenatore Antonio Floro Flores ha detto che bisogna aspettare gli esami per capire quanto è serio.",
+      "testo": "Il Benevento dovrà fare a meno di Edoardo Pierozzi per circa due mesi. Lunedì 26 ottobre la società ha comunicato che l'ecografia di controllo ha trovato una distrazione di secondo grado del bicipite femorale, il muscolo dietro la coscia. I tempi di recupero, precisa il club, dipendono da come andrà la guarigione.",
+      "fonti": [
+       "Benevento Calcio"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "Sabato 24 ottobre, nella partita vinta 3-0 ad Arezzo, il giocatore giallorosso è uscito all'86' per un fastidio. Nel dopo partita l'allenatore Antonio Floro Flores aveva detto che bisognava aspettare gli esami per capire quanto fosse serio.",
       "fonti": [
        "Anteprima24",
        "BeneventoNews24"
-      ]
+      ],
+      "giorno": "2026-10-24"
      },
      {
       "testo": "Secondo BeneventoNews24, Floro Flores ha spiegato che Pierozzi ha sentito tirare dietro la gamba e che potrebbe essere qualcosa di grave; più avanti nella conferenza ha parlato di «un problema di qualche settimana». Ha aggiunto che la squadra ha giocatori all'altezza per sostituirlo.",
       "fonti": [
        "BeneventoNews24"
-      ]
+      ],
+      "giorno": "2026-10-24"
      },
      {
       "testo": "Guglielmo Mignani, entrato nel finale e autore del terzo gol, ha detto ai microfoni di OttoChannel che è stata una delle migliori partite della stagione. Vuole più spazio e dice di guadagnarselo lavorando, con grande stima per il compagno di reparto Salvemini.",
       "fonti": [
        "BeneventoNews24 (Mignani)",
        "TV7 Benevento"
-      ]
+      ],
+      "giorno": "2026-10-24"
      },
      {
       "testo": "Il Benevento, salito a 14 punti e al quinto posto, gioca martedì 27 ottobre al Vigorito contro il Catanzaro, la seconda delle tre partite in sette giorni. «Sottovalutare il Catanzaro sarebbe una follia», ha detto Floro Flores.",
       "fonti": [
        "TV7 Benevento (partita)",
        "Anteprima24"
+      ],
+      "giorno": "2026-10-24"
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "24 ottobre",
+      "fatto": "Pierozzi esce all'86' di Arezzo-Benevento 0-3 per un fastidio alla gamba.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "data": "26 ottobre, 10:06",
+      "fatto": "Il club comunica la diagnosi: distrazione di secondo grado del bicipite femorale, circa due mesi di stop.",
+      "fonti": [
+       "Benevento Calcio"
       ]
      }
     ],
-    "cronologia": [],
     "concordano": [
      {
       "testo": "Pierozzi uscito per un fastidio e la necessità di aspettare gli esami.",
@@ -1595,18 +1818,25 @@
     ],
     "divergono": [
      {
-      "testo": "BeneventoNews24 riporta le parole di Floro Flores su «un problema di qualche settimana»; Anteprima24 scrive che l'allenatore non si è sbilanciato sui tempi. Vale l'attesa degli esami.",
+      "testo": "Dopo la partita BeneventoNews24 riportava le parole di Floro Flores su «un problema di qualche settimana», mentre Anteprima24 scriveva che l'allenatore non si era sbilanciato. Vale la diagnosi del club: circa due mesi.",
       "fonti": [
        "BeneventoNews24",
-       "Anteprima24"
+       "Anteprima24",
+       "Benevento Calcio"
       ]
      }
     ],
     "non_si_sa": [
-     "Cosa diranno gli esami di Pierozzi e per quanto tempo starà fuori.",
-     "Chi giocherà al suo posto contro il Catanzaro."
+     "Chi giocherà al posto di Pierozzi contro il Catanzaro e nelle prossime partite."
     ],
     "fonti": [
+     {
+      "nome": "Benevento Calcio",
+      "titolo": "BENEVENTO CALCIO – AGGIORNAMENTO MEDICO EDOARDO PIEROZZI",
+      "url": "https://www.beneventocalcio.club/news/comunicatistampa/7681/benevento-calcio-aggiornamento-medico-edoardo-pierozzi.shtml",
+      "data": "26 ott, 10:06",
+      "ufficiale": true
+     },
      {
       "nome": "BeneventoNews24",
       "titolo": "Benevento, Floro Flores: “Questa squadra è fantastica, ma l’obiettivo resta la salvezza”",
@@ -1637,7 +1867,15 @@
       "url": "https://www.tvsette.net/siatounis-apre-le-danze-okereke-raddoppia-e-mignani-cala-il-tris-nel-finale-i-giallorossi-conquistano-il-quinto-risultato-utile-consecutivo-e-salgono-a-quota-14-punti-martedi-al-vigorito-arriva-il/",
       "data": "24 ott, 22:39"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Lunedì 26 ottobre il Benevento Calcio ha comunicato che Pierozzi ha una distrazione di secondo grado del bicipite femorale: circa due mesi di stop.",
+     "fonti": [
+      "Benevento Calcio"
+     ],
+     "quando": "2026-10-26T10:12+01:00",
+     "titolo_prima": "Benevento, Pierozzi esce per un infortunio ad Arezzo: si aspettano gli esami prima del Catanzaro"
+    }
    },
    "foto": "calcio-2"
   },
