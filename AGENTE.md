@@ -421,6 +421,8 @@ Regole:
 5. **Rileggi prima di pubblicare** (obbligatorio), per ogni notizia nuova o cambiata:
    - ogni frase dell'articolo ha almeno una fonte che hai davvero letto, e la fonte dice proprio quello?
    - il racconto si capisce da solo, da chi non ha letto nessun giornale? dice chi è chi, dove e perché?
+   - il racconto parla dei fatti e non di come li hai saputi (niente «secondo la locandina», «con un comunicato
+     stampa»)? letto ad alta voce, ogni frase suona naturale e in italiano corretto?
    - date, orari, numeri, nomi di strade e paesi sono identici alle fonti?
    - titolo: dice il fatto? è senza acchiappa-clic? parole semplici? `titolo_google` sta in 60 caratteri, con paese e
      fatto, scritto come lo cerca la gente (punto 4: la parola cercata prima, date per esteso, niente «oggi»)?
@@ -451,6 +453,21 @@ un vicino che non ne sa niente. Non un riassunto e non un elenco: paragrafi veri
   di' dove stanno se aiuta a capire («Pannarano, in Valle Caudina»).
 - **Frasi brevi**: una cosa per frase, prima chi fa e poi cosa fa. Niente frasi da 50 parole, niente passivi da ufficio
   («è stata disposta la chiusura» → «il sindaco ha chiuso»). Un elenco lungo di paesi o di nomi va in una frase sua.
+- **Racconta i fatti, non come li hai saputi** (voluto dal proprietario il 26 ott 2026, dopo «Secondo la locandina»
+  nella notizia di Ponte: «perché hai scritto secondo la locandina quando ci hanno mandato il programma scritto?»).
+  A chi legge non serve il canale: niente «secondo la locandina», «si legge nel comunicato», «lo ha annunciato con un
+  comunicato stampa», «in una nota», «sul suo sito». Le fonti stanno già sotto il titolo e in fondo. Di' **chi**
+  decide o dichiara quando serve a capire o a pesare il fatto («il sindaco ha chiuso via Roma», «secondo i
+  Carabinieri», «la Procura contesta»), non da dove l'hai letto. Come fa un giornalista, si parte dal testo del
+  comunicato («si legge prima il comunicato»): la locandina e le foto arrivate con lui sono lo stesso comunicato,
+  servono per l'immagine e per controllare, e un dato che c'è solo lì (un orario, un prezzo) si racconta come gli
+  altri.
+- **Rileggi ogni frase ad alta voce**: deve suonare come la direbbe una persona di qui, in italiano corretto. Niente
+  giri da ufficio stampa o da verbale («La organizza la Pro Loco di Ponte APS (associazione di promozione sociale)»
+  → «A organizzarla è la Pro Loco di Ponte»), niente sigle societarie che non servono a capire (APS, srl, scarl,
+  onlus), niente parentesi inutili.
+- **Eventi e avvisi: prima quello che serve per andarci o per regolarsi**: giorni, orari, luogo, ingresso (gratis o il
+  prezzo, se è scritto), come prenotare. Poi il programma, giorno per giorno.
 - **Leggi tutti gli articoli per intero e metti insieme i dettagli di ognuno**: spesso un giornale dà l'orario, un altro
   il nome della strada, il Comune il numero da chiamare. Il racconto deve essere più completo di ogni singolo giornale:
   è questo il valore del sito.

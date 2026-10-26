@@ -38,7 +38,11 @@ riuscita» (o cosa non va) con l'esito dei comandi. In prova non pubblichi nient
    l'ultima riga comincia con «NIENTE DA FARE», fermati e rispondi solo «niente da fare».
 2. Leggi in AGENTE.md: «Regole che non si discutono», «Come lavorare una notizia», «Come si scrive l'articolo», «La foto
    illustrativa», «Formato del file», e per lo sport «Lo sport». Valgono tutte.
-3. Per ogni comunicato (i blocchi `[id]`) leggi tutto il testo, allegati compresi. Decidi:
+3. Per ogni comunicato (i blocchi `[id]`) leggi tutto il testo, allegati compresi, **come un giornalista**: prima il
+   testo del comunicato (la mail e i documenti allegati), che è la base dell'articolo; poi la locandina, per
+   l'immagine e per controllare date e orari o aggiungere un dato che nel testo manca, senza dire da dove viene (lui,
+   26 ott 2026: «un giornalista non scriverebbe mai una cosa del genere, si legge prima il comunicato»). Se testo e
+   locandina dicono cose diverse vale il testo, e la differenza va in `divergono`. Decidi:
    - **pubblicato**: è un fatto della provincia di Benevento che serve a chi ci abita o lo interessa (servizi,
      sportelli, lavori, eventi con data e luogo, sport, scuole, salute, iniziative di enti, sindacati e associazioni);
    - **gia_nel_sito**: la riga «POSSIBILE STESSO FATTO» o notizie.json mostrano che il fatto è già sul sito (apri la
@@ -112,7 +116,9 @@ riuscita» (o cosa non va) con l'esito dei comandi. In prova non pubblichi nient
      usare, in questo caso niente immagini AI», «se mandano foto usale», «anche più foto se ci sono»): le righe
      «immagine <id>/<n>: <file>» del punto 1 sono le immagini della mail. **Guardale tutte** con Read:
      - la locandina del fatto (titolo, date e luogo giusti): `"locandina": "<id>/<n>"` nella notizia (e nell'evento,
-       punto 4 bis);
+       punto 4 bis). Quello che c'è scritto (orari, prezzi, indirizzi) vale come il testo del comunicato: è la stessa
+       fonte, si scrive e basta, mai «secondo la locandina» (AGENTE.md, «Come si scrive l'articolo»; lui, 26 ott
+       2026);
      - **tutte le foto, per ogni argomento** (lui, 25 ott 2026: «quando mandano foto per ogni cosa nessuna regola
        per la pubblicazione»; «se foto di sport ci saranno sicuramente loghi persone»): sport, eventi, Comuni,
        lavori, cronaca, con dentro persone, pubblico, loghi, sponsor e scritte. Vanno in
