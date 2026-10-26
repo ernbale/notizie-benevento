@@ -3,6 +3,80 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "libera-benevento-tesseramento-aperitivo-beni-confiscati-funambolo-2026",
+   "titolo": "Benevento, Libera apre il tesseramento con un aperitivo di prodotti dei beni confiscati",
+   "titolo_google": "Libera Benevento, tesseramento e aperitivo il 29 ottobre",
+   "sintesi": "Giovedì 29 ottobre alle 19, al Funambolo di via Cardinale di Rende a Benevento, Libera apre la campagna di tesseramento 2027 con un aperitivo di comunità a 10 euro, preparato con i prodotti di due cooperative nate su beni confiscati alla camorra. Interviene Stefano Mancini, presidente della cooperativa La Strada.",
+   "categoria": "eventi",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-26T10:25:00+01:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "locandina": "img/locandine/libera-benevento-tesseramento-aperitivo-beni-confiscati-funambolo-2026.jpg",
+   "comunicati": [
+    "549adb278c47"
+   ],
+   "fonti": [
+    {
+     "nome": "Libera Benevento",
+     "url": "https://www.libera.it/",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il coordinamento provinciale di Libera a Benevento apre la campagna di tesseramento giovedì 29 ottobre, dalle 19, al Funambolo, il caffè letterario di via Cardinale di Rende. Libera è l'associazione che riunisce persone e gruppi contro le mafie. Durante la serata ci si potrà tesserare per il 2027.",
+      "fonti": [
+       "Libera Benevento"
+      ]
+     },
+     {
+      "testo": "La serata è un «aperitivo di comunità» a 10 euro. Lo preparano con i loro prodotti due cooperative sociali nate su beni confiscati alla camorra: La Strada di Pugliano di Teano e Al di là dei sogni di Sessa Aurunca, entrambe nel Casertano. Una parte del ricavato andrà a Libera.",
+      "fonti": [
+       "Libera Benevento"
+      ]
+     },
+     {
+      "testo": "Interverrà Stefano Mancini, presidente della cooperativa La Strada. Parlerà di come i beni tolti alla criminalità organizzata possono rinascere con l'agricoltura sociale e sostenibile, per dare lavoro e restituire dignità e salute al territorio e alle comunità.",
+      "fonti": [
+       "Libera Benevento"
+      ]
+     },
+     {
+      "testo": "Chi si tessera sostiene anche «Diamo Linfa Al Bene», la campagna nazionale con cui Libera chiede al Governo di destinare il 2 per cento del Fondo unico di giustizia alla gestione e al riuso sociale dei beni confiscati. Si può aderire firmando la raccolta di firme; Regioni, Province e Comuni possono farlo approvando una delibera di sostegno.",
+      "fonti": [
+       "Libera Benevento"
+      ]
+     },
+     {
+      "testo": "«Le mafie e la corruzione dividono, Libera cerca di costruire legami», scrive il coordinamento di Benevento, che aggiunge: «Una comunità che si tiene insieme è più forte del silenzio, dell'indifferenza e della paura».",
+      "fonti": [
+       "Libera Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quanto costa la tessera di Libera per il 2027.",
+     "Se per l'aperitivo bisogna prenotare."
+    ],
+    "fonti": [
+     {
+      "nome": "Libera Benevento",
+      "titolo": "Comunicato stampa - Campagna di tesseramento Libera Benevento: aperitivo con i prodotti dei beni confiscati",
+      "url": "https://www.libera.it/",
+      "data": "26 ott, 10:25",
+      "ufficiale": true
+     }
+    ]
+   },
+   "subito": true
+  },
+  {
    "id": "tennis-ct-san-giorgio-del-sannio-vince-torino-serie-a2",
    "titolo": "Tennis, Serie A2 femminile: il CT San Giorgio del Sannio vince 3-1 a Torino",
    "titolo_google": "Tennis Serie A2, Stampa Sporting-San Giorgio 1-3: vince il CT",
