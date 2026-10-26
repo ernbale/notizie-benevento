@@ -1,7 +1,178 @@
 {
- "aggiornato": "2026-10-26T07:16+01:00",
+ "aggiornato": "2026-10-26T08:21+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "linea-caserta-foggia-treni-rallentati-amorosi-26-ottobre",
+   "titolo": "Treni Caserta-Benevento-Foggia rallentati vicino ad Amorosi: ritardi fino a 60 minuti",
+   "titolo_google": "Treni Caserta-Foggia, ritardi fino a 60 minuti ad Amorosi",
+   "sintesi": "Da lunedì 26 ottobre alle 6:30 i treni della linea Caserta-Foggia, quella che passa per Telese e Benevento, vanno più piano vicino ad Amorosi per un guasto tecnico. RFI segnala ritardi fino a 60 minuti, treni cambiati e cancellati.",
+   "categoria": "strade",
+   "zona": "telesina",
+   "immagine": "treno",
+   "luogo": "Amorosi",
+   "pubblicato": "2026-10-26T08:00+01:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "in_vigore_fino": "2026-10-26",
+   "fonti": [
+    {
+     "nome": "RFI",
+     "url": "https://www.rfi.it/content/rfi/it/news-e-media/infomobilita/aggiornamenti/2026/10/26/linea-caserta---foggia--circolazione-rallentata-per-un-inconveni.html",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Lunedì 26 ottobre, dalle 6:30, i treni sulla linea Caserta-Foggia viaggiano rallentati vicino ad Amorosi, in Valle Telesina, per un guasto tecnico sulla linea. Lo comunica RFI, la società che gestisce i binari. È la linea che collega Caserta a Benevento passando per Telese e Solopaca, e prosegue verso la Puglia.",
+      "fonti": [
+       "RFI"
+      ]
+     },
+     {
+      "testo": "Nell'aggiornamento delle 8 RFI dice che i treni possono avere ritardi fino a 60 minuti (alle 6:30 erano fino a 30), e che alcune corse possono essere cambiate o cancellate. Chi deve partire conviene che controlli i monitor e il sito di RFI o di Trenitalia per la sua stazione; RFI ha annunciato altri aggiornamenti.",
+      "fonti": [
+       "RFI"
+      ]
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "26 ottobre, 6:30",
+      "fatto": "Circolazione rallentata vicino ad Amorosi per un guasto: ritardi fino a 30 minuti.",
+      "fonti": [
+       "RFI"
+      ]
+     },
+     {
+      "data": "26 ottobre, 8:00",
+      "fatto": "RFI alza la stima dei ritardi fino a 60 minuti, con variazioni e cancellazioni.",
+      "fonti": [
+       "RFI"
+      ]
+     }
+    ],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Che tipo di guasto c'è e quando la circolazione tornerà regolare.",
+     "Quali treni sono stati cancellati."
+    ],
+    "fonti": [
+     {
+      "nome": "RFI",
+      "titolo": "Linea Caserta - Foggia: circolazione rallentata per un inconveniente tecnico sulla linea",
+      "url": "https://www.rfi.it/content/rfi/it/news-e-media/infomobilita/aggiornamenti/2026/10/26/linea-caserta---foggia--circolazione-rallentata-per-un-inconveni.html",
+      "data": "26 ott, 08:00",
+      "ufficiale": true
+     }
+    ]
+   },
+   "foto": "treno-7"
+  },
+  {
+   "id": "benevento-san-pio-tre-medici-dimissioni",
+   "titolo": "Benevento, altri tre medici lasciano l'ospedale San Pio",
+   "titolo_google": "Ospedale San Pio di Benevento, si dimettono tre medici",
+   "sintesi": "Tre giovani medici dell'ospedale San Pio di Benevento hanno dato le dimissioni, tra cui un cardiologo e un ortopedico. Lo scrive Il Sannio Quotidiano: il personale medico era già sotto organico.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "immagine": "ospedale",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-26T07:52+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/26/si-dimettono-altri-tre-medici-al-san-pio-personale-sempre-piu-in-difficolta/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Tre giovani medici hanno deciso di lasciare l'Azienda ospedaliera San Pio di Benevento, l'ente che gestisce il principale ospedale della provincia. Lo scrive lunedì 26 ottobre Il Sannio Quotidiano, secondo cui le dimissioni sono volontarie.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "Tra chi se ne va c'è un cardiologo, che a breve finirà il servizio nel reparto di Cardiologia con UTIC (l'unità di terapia intensiva per i malati di cuore) per trasferirsi altrove, e un medico specialista in Ortopedia e Traumatologia. Il giornale ricorda che il personale medico dell'ospedale era già sotto organico, nonostante i concorsi banditi negli ultimi anni.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "In quale reparto lavora il terzo medico.",
+     "Se e quando l'Azienda ospedaliera sostituirà i medici che se ne vanno.",
+     "Cosa risponde la direzione del San Pio."
+    ],
+    "fonti": [
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Si dimettono altri tre medici al ‘San Pio’: personale sempre più in difficoltà",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/26/si-dimettono-altri-tre-medici-al-san-pio-personale-sempre-piu-in-difficolta/",
+      "data": "26 ott, 07:52"
+     }
+    ]
+   },
+   "foto": "ospedale-5"
+  },
+  {
+   "id": "apice-castello-ettore-illuminazione-bando-regione",
+   "titolo": "Apice, il Comune chiede i fondi della Regione per illuminare il Castello dell'Ettore",
+   "titolo_google": "Apice, fondi della Regione per le luci del Castello dell'Ettore",
+   "sintesi": "La Giunta di Apice ha deciso di partecipare al bando della Regione Campania per l'illuminazione esterna dei monumenti, con un progetto per il Castello dell'Ettore. La Regione ha messo 400mila euro per quest'anno.",
+   "categoria": "altro",
+   "zona": "provincia",
+   "immagine": "luce",
+   "luogo": "Apice",
+   "pubblicato": "2026-10-26T07:44+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/26/apice-luci-architettoniche-ce-la-candidatura-il-comune-partecipa-al-bando-della-regione-per-il-castello/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Comune di Apice si candida ai fondi della Regione Campania per migliorare l'illuminazione esterna del Castello dell'Ettore, il castello del paese. Lo ha deciso la Giunta guidata dal sindaco Pepe, scrive lunedì 26 ottobre Il Sannio Quotidiano.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "I soldi vengono da una legge regionale, la n. 2 del 27 marzo, che per quest'anno ha stanziato 400mila euro per illuminare i monumenti della Campania. Nel frattempo, ricorda il giornale, il Comune ha dovuto organizzare la custodia del castello e verificare a chi appartengono i beni che ci sono dentro.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quanto chiede il Comune e quando la Regione deciderà chi riceve i fondi."
+    ],
+    "fonti": [
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Apice – Luci architettoniche, c’è la candidatura: il Comune partecipa al bando della Regione per il Castello",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/26/apice-luci-architettoniche-ce-la-candidatura-il-comune-partecipa-al-bando-della-regione-per-il-castello/",
+      "data": "26 ott, 07:44"
+     }
+    ]
+   },
+   "foto": "luce-8"
+  },
   {
    "id": "stregati-dai-vicoli-ponte-programma-2026",
    "titolo": "Ponte, «Stregati dai Vicoli» dal 30 ottobre al 1° novembre: il programma nel centro storico",
@@ -691,6 +862,10 @@
     {
      "nome": "Il Mattino",
      "url": "https://www.ilmattino.it/benevento/monte_taburno_benevento_escursioniste_salvate_dirupo_elicottero-9847994.html"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/26/paura-sul-taburno-ragazze-finiscono-in-un-dirupo-salvate-grazie-allintervento-dellelicottero-e-dei-vigili-del-fuoco/"
     }
    ],
    "articolo": {
@@ -701,7 +876,8 @@
        "Anteprima24",
        "Ottopagine",
        "NTR24",
-       "Il Mattino"
+       "Il Mattino",
+       "Il Sannio Quotidiano"
       ],
       "giorno": "2026-10-25"
      },
@@ -795,6 +971,12 @@
       "titolo": "Cadono in un dirupo durante un'escursione sul Monte Taburno, salvate due 20enni dai vigili del fuoco",
       "url": "https://www.ilmattino.it/benevento/monte_taburno_benevento_escursioniste_salvate_dirupo_elicottero-9847994.html",
       "data": "25 ott, 17:13"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Paura sul Taburno: ragazze finiscono in un dirupo, salvate grazie all’intervento dell’elicottero e dei Vigili del Fuoco",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/26/paura-sul-taburno-ragazze-finiscono-in-un-dirupo-salvate-grazie-allintervento-dellelicottero-e-dei-vigili-del-fuoco/",
+      "data": "26 ott, 07:40"
      }
     ],
     "aggiornamento": {
@@ -1029,6 +1211,10 @@
     {
      "nome": "BeneventoNews24",
      "url": "https://www.beneventonews24.it/2026/10/25/cusano-mutri-il-consiglio-approva-allunanimita-la-mozione-contro-lingresso-in-sannio-acque/"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/26/cusano-mutri-sannio-acque-no-del-consiglio-allunanimita/"
     }
    ],
    "articolo": {
@@ -1039,7 +1225,8 @@
        "NTR24",
        "Anteprima24",
        "Fremondoweb",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Il Sannio Quotidiano"
       ],
       "giorno": "2026-10-23"
      },
@@ -1049,7 +1236,8 @@
        "NTR24",
        "Anteprima24",
        "Fremondoweb",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Il Sannio Quotidiano"
       ],
       "giorno": "2026-10-23"
      },
@@ -1166,6 +1354,12 @@
       "titolo": "Cusano Mutri, il Consiglio approva all’unanimità la mozione contro l’ingresso in Sannio Acque",
       "url": "https://www.beneventonews24.it/2026/10/25/cusano-mutri-il-consiglio-approva-allunanimita-la-mozione-contro-lingresso-in-sannio-acque/",
       "data": "25 ott, 12:06"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Cusano Mutri – Sannio Acque, ‘no’ del Consiglio all’unanimità",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/26/cusano-mutri-sannio-acque-no-del-consiglio-allunanimita/",
+      "data": "26 ott, 07:25"
      }
     ]
    },
@@ -1740,7 +1934,7 @@
    "zona": "caudina",
    "immagine": "pronto-soccorso",
    "luogo": "Sant'Agata de' Goti",
-   "pubblicato": "2026-10-25T00:00+02:00",
+   "pubblicato": "2026-10-26T07:34:00+01:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
@@ -1763,6 +1957,10 @@
     {
      "nome": "TV7 Benevento",
      "url": "https://www.tvsette.net/pronto-soccorso-santagata-degoti-errico-determinante-rubano-ora-si-attui-subito-lordinanza-del-tar/"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/26/tar-ordina-apertura-h24-dellospedale-di-santagata-rubano-ora-morgante-non-puo-trovare-scuse/"
     }
    ],
    "articolo": {
@@ -1778,6 +1976,13 @@
       "testo": "Secondo il giornale a Sant'Agata lavorano tre medici di pronto soccorso, mentre ne servirebbero cinque o sei per coprire tutti i turni. Al pronto soccorso del Rummo, a Benevento, ci sono sei medici titolari sui dodici richiesti, più sei medici esterni con contratti di collaborazione.",
       "fonti": [
        "Il Mattino"
+      ],
+      "giorno": "2026-10-25"
+     },
+     {
+      "testo": "Domenica 25 ottobre, in mattinata, Rubano ha incontrato i cittadini davanti all'ospedale Sant'Alfonso Maria de' Liguori per spiegare la decisione del TAR. Con lui c'erano il consigliere regionale Fernando Errico, la sindaca di Sant'Agata de' Goti Giovannina Piccoli e altri amministratori del Comune. Il Sannio Quotidiano ricorda che da oltre due anni il pronto soccorso funziona con orario d'ufficio, dalle 8 alle 18.",
+      "fonti": [
+       "Il Sannio Quotidiano"
       ],
       "giorno": "2026-10-25"
      },
@@ -1830,6 +2035,13 @@
       "fonti": [
        "NTR24",
        "Anteprima24"
+      ]
+     },
+     {
+      "data": "25 ottobre, mattina",
+      "fatto": "Rubano incontra i cittadini davanti all'ospedale con Errico e la sindaca Piccoli.",
+      "fonti": [
+       "Il Sannio Quotidiano"
       ]
      }
     ],
@@ -1885,6 +2097,12 @@
       "titolo": "Pronto soccorso Sant’Agata De’Goti, Errico: «Determinante Rubano. Ora si attui subito l’ordinanza del Tar»",
       "url": "https://www.tvsette.net/pronto-soccorso-santagata-degoti-errico-determinante-rubano-ora-si-attui-subito-lordinanza-del-tar/",
       "data": "24 ott, 22:35"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Tar ordina apertura H24 dell’ospedale di Sant’Agata, Rubano: “Ora Morgante non può trovare scuse”",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/26/tar-ordina-apertura-h24-dellospedale-di-santagata-rubano-ora-morgante-non-puo-trovare-scuse/",
+      "data": "26 ott, 07:34"
      }
     ],
     "aggiornamento": {
@@ -2769,7 +2987,7 @@
    "categoria": "cronaca",
    "zona": "benevento",
    "luogo": "Benevento, Corso Garibaldi",
-   "pubblicato": "2026-10-25T09:38:00+01:00",
+   "pubblicato": "2026-10-26T07:44:00+01:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
@@ -2828,10 +3046,21 @@
     {
      "nome": "Ottopagine (25/10)",
      "url": "https://www.ottopagine.it/bn/cronaca/442099/siamo-stati-insieme-in-arabo-ha-insultato-me-e-mia-madre-che-e-morta.shtml"
+    },
+    {
+     "nome": "Il Sannio Quotidiano (26/10)",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/26/ragazza-ferita-lungo-il-corso-il-20enne-egiziano-si-difende-nessuna-aggressione-lei-mi-ha-insultato/"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Lunedì 26 ottobre anche Il Sannio Quotidiano riporta la versione del giovane, un ventenne di origine egiziana: si è presentato in Questura sabato 24 ottobre, assistito dal suo avvocato, e agli agenti della Polizia ha detto che non c'è stata «alcuna aggressione», ma una serie di fatti cominciata con gli insulti che la ragazza di 18 anni gli avrebbe rivolto. È la sua versione: le indagini sono della Questura.",
+      "fonti": [
+       "Il Sannio Quotidiano (26/10)"
+      ],
+      "giorno": "2026-10-26"
+     },
      {
       "testo": "Domenica 25 ottobre Ottopagine scrive che il giovane si è presentato in Questura con il suo avvocato e ha dato la sua versione. Secondo il suo racconto lui e la ragazza, che ha 18 anni, avevano avuto una relazione finita un mese fa; venerdì sera lei lo avrebbe offeso in arabo, insultando anche la madre morta da poco. Lui ammette di averle dato un calcio, «ma non violento»: lei si sarebbe alzata e lo avrebbe schiaffeggiato e graffiato, e lui l'avrebbe colpita a sua volta con lo schiaffo che l'ha fatta finire contro il muro.",
       "fonti": [
@@ -3079,6 +3308,12 @@
       "titolo": "Siamo stati insieme, in arabo ha insultato me e mia madre che è morta",
       "url": "https://www.ottopagine.it/bn/cronaca/442099/siamo-stati-insieme-in-arabo-ha-insultato-me-e-mia-madre-che-e-morta.shtml",
       "data": "25 ott, 09:38"
+     },
+     {
+      "nome": "Il Sannio Quotidiano (26/10)",
+      "titolo": "Ragazza ferita lungo il corso, il 20enne egiziano si difende: “Nessuna aggressione, lei mi ha insultato”",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/26/ragazza-ferita-lungo-il-corso-il-20enne-egiziano-si-difende-nessuna-aggressione-lei-mi-ha-insultato/",
+      "data": "26 ott, 07:44"
      }
     ],
     "aggiornamento": {
@@ -4212,6 +4447,10 @@
     {
      "nome": "Cronache del Sannio (25/10)",
      "url": "https://www.cronachedelsannio.it/sannionews24/dimissioni-mastella-parte-mobilitazione-verso-elezioni/"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/26/la-citta-vuole-le-dimissioni-di-mastella-il-corteo-delle-opposizioni-fino-alla-prefettura/"
     }
    ],
    "articolo": {
@@ -4223,7 +4462,8 @@
        "NTR24 (25/10)",
        "Ottopagine (25/10)",
        "Cronache del Sannio (25/10)",
-       "InfoSannio (25/10)"
+       "InfoSannio (25/10)",
+       "Il Sannio Quotidiano (26/10)"
       ],
       "giorno": "2026-10-25"
      },
@@ -4234,6 +4474,13 @@
        "Ottopagine (25/10)",
        "Cronache del Sannio (25/10)",
        "InfoSannio (25/10)"
+      ],
+      "giorno": "2026-10-25"
+     },
+     {
+      "testo": "Il Sannio Quotidiano riporta le parole di Floriana Fioretti, capogruppo del gruppo più numeroso dell'opposizione: tra i problemi elencati ci sono traffico e parcheggi, la manutenzione di quartieri e contrade, le case popolari, i ritardi dei cantieri finanziati dal PNRR e le tasse. Fioretti ha ricordato le battaglie contro lo spostamento del terminal dei bus da piazzale Venanzio Vari e su piazza Pacca, e ha proposto «un patto per il riscatto della città» per costruire un'alternativa all'amministrazione Mastella. Al corteo, secondo il giornale, c'era anche Umberto Del Basso De Caro.",
+      "fonti": [
+       "Il Sannio Quotidiano (26/10)"
       ],
       "giorno": "2026-10-25"
      },
@@ -4430,6 +4677,12 @@
       "titolo": "La piazza anti-Mastella, l'opposizione scende in campo contro il primo cittadino: «Il sindaco si dimetta»",
       "url": "https://www.ilmattino.it/benevento/la_piazza_anti_mastella_l_opposizione_scende_in_campo_contro_il_primo_cittadino_il_sindaco_si_dimetta-9848234.html",
       "data": "26 ott, 00:05"
+     },
+     {
+      "nome": "Il Sannio Quotidiano (26/10)",
+      "titolo": "“La città vuole le dimissioni di Mastella”: il corteo delle opposizioni fino alla Prefettura",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/26/la-citta-vuole-le-dimissioni-di-mastella-il-corteo-delle-opposizioni-fino-alla-prefettura/",
+      "data": "26 ott, 07:49"
      }
     ],
     "aggiornamento": {
