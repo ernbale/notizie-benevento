@@ -651,6 +651,10 @@ NON_COMUNICATO_DOMINI = ("staff.aruba.it", ".ad.aruba.it")
 # l'oggetto delle nostre mail: agli uffici stampa (24 ott 2026) e alle Pro Loco (25 ott 2026)
 RISPOSTA_NOSTRA = re.compile(r"comunicati stampa per notizie benevento|eventi delle pro loco su notizie benevento", re.I)
 NOSTRA_MAIL = "vi scriviamo da notizie benevento"   # dove comincia la nostra mail citata nella risposta
+# La risposta di cortesia a chi ci ha mandato un comunicato (strumenti/risposte.py, dal 26 ott 2026): la si riconosce
+# dal Message-ID («.nb-risposta@», in In-Reply-To/References di chi ci risponde) o dalla sua frase citata.
+CORTESIA_ID = re.compile(r"\.nb-risposta@", re.I)
+CORTESIA = "il vostro comunicato è online su notizie benevento"
 RIGA_CITAZIONE = re.compile(r"^\s*(>|_{5,}|-{5,}|(da|from|inviato|sent|a|to|cc|oggetto|subject|data|date)\s*:)"
                             r"|(ha scritto|wrote)\s*:\s*$", re.I)
 # Le righe della firma (social, sito, indirizzi): nella risposta della Soprintendenza del 24 ott valevano 131 caratteri
@@ -699,6 +703,11 @@ def id_posta(link):
     return hashlib.sha1(link.encode("utf-8")).hexdigest()[:12]
 
 
+def link_posta(x):
+    """Il link di una mail («posta:» e il suo Message-ID): da qui l'id del comunicato (anche in strumenti/risposte.py)."""
+    return "posta:" + re.sub(r"[<>\s]", "", (x.get("Message-ID") or f"{x.get('Date')}-{x.get('Subject')}").strip())
+
+
 def non_comunicato(titolo, mittente, dominio, m=None):
     """Il motivo per cui una mail non è un comunicato (rimbalzo, risposta automatica, avviso del provider, risposta
     alla nostra mail senza un comunicato dentro), o ''. Senza la mail (m) le risposte alla nostra mail restano."""
@@ -711,9 +720,21 @@ def non_comunicato(titolo, mittente, dominio, m=None):
             return "risposta automatica"
         if m.get_content_type() == "multipart/report":
             return "rimbalzo"
-        if RISPOSTA_NOSTRA.search(titolo or "") and not contenuto_risposta(m):
+        nostra = RISPOSTA_NOSTRA.search(titolo or "") or CORTESIA_ID.search(f"{m.get('In-Reply-To')} {m.get('References')}") \
+            or cita_cortesia(m)
+        if nostra and not contenuto_risposta(m):
             return "risposta alla nostra mail, senza comunicato"
     return ""
+
+
+def cita_cortesia(m):
+    """Se il testo della mail (non gli allegati) cita la nostra risposta di cortesia."""
+    for parte in m.walk():
+        if parte.get_content_type() in ("text/plain", "text/html") and not nome_allegato(parte):
+            t = (parte.get_payload(decode=True) or b"").decode(parte.get_content_charset() or "utf-8", "replace")
+            if CORTESIA in " ".join(html.unescape(re.sub(r"<[^>]+>", " ", t)).split()).lower():
+                return True
+    return False
 
 
 def contenuto_risposta(m):
@@ -727,8 +748,8 @@ def contenuto_risposta(m):
         if parte.get_content_maintype() == "image" and len(parte.get_payload(decode=True) or b"") > IMMAGINE_GRANDE:
             return f"immagine allegata {nome}".strip()
     corpo = _testo_mail(m)[0]
-    i = corpo.lower().find(NOSTRA_MAIL)
-    loro = corpo[:i] if i >= 0 else corpo
+    inizi = [i for i in (corpo.lower().find(NOSTRA_MAIL), corpo.lower().find(CORTESIA)) if i >= 0]
+    loro = corpo[:min(inizi)] if inizi else corpo
     prosa, avviso = 0, False
     for r in loro.splitlines():
         r = r.strip()
@@ -903,9 +924,7 @@ def _casella(conf, server, vecchie, viste, voci, scartate):
             _, dati = M.fetch(n, "(BODY.PEEK[])")
             busta = email.message_from_bytes(dati[0][1])
             m, tipo = busta_pec(busta)
-            link_busta, link = (
-                "posta:" + re.sub(r"[<>\s]", "", (x.get("Message-ID") or f"{x.get('Date')}-{x.get('Subject')}").strip())
-                for x in (busta, m))
+            link_busta, link = link_posta(busta), link_posta(m)
             if link in viste or link_busta in viste:
                 continue
             viste.update((link, link_busta))

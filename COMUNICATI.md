@@ -54,6 +54,11 @@ riuscita» (o cosa non va) con l'esito dei comandi. In prova non pubblichi nient
      scuole/parchi/cimiteri decise da un Comune (le pubblica il giro Chiusure), un fatto che non si capisce o non si può
      verificare (mittente generico come gmail o libero e niente di controllabile), fatti vecchi.
 
+   Dal 26 ott 2026 chi ci ha mandato un comunicato **pubblicato** o **gia_nel_sito** riceve dal Pi una mail di
+   ringraziamento col link della notizia scritta nell'esito (strumenti/risposte.py; lui: «una email di ringraziamento
+   sì, mi sembra una cortesia corretta»): quella notizia deve essere proprio quella che parla del suo comunicato. Tu
+   non scrivi ai mittenti.
+
 3 bis. **Gli articoli dei siti ufficiali** (i blocchi «ARTICOLO DEL SITO UFFICIALE di …», id che comincia con «u»):
    - **Leggi la pagina intera** col suo link (WebFetch): il testo del feed spesso è solo l'inizio, e per il Benevento
      Calcio non c'è. Per ASL, ANAS e Regione no: quei siti dal cloud non si aprono, il testo intero è già nel blocco.
