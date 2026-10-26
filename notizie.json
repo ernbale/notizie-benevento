@@ -3,6 +3,70 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "benevento-catanzaro-arbitro-alberto-poli-27-ottobre",
+   "titolo": "Benevento-Catanzaro di martedì 27 ottobre al Vigorito: arbitra Alberto Poli di Verona",
+   "titolo_google": "Benevento-Catanzaro, arbitro Alberto Poli il 27 ottobre",
+   "sintesi": "Sarà Alberto Poli di Verona ad arbitrare Benevento-Catanzaro, partita della 9ª giornata del campionato di Serie BKT in programma martedì 27 ottobre alle 19 allo stadio Ciro Vigorito. Lo ha comunicato il Benevento Calcio.",
+   "categoria": "sport",
+   "sport": "calcio",
+   "zona": "benevento",
+   "immagine": "calcio",
+   "luogo": "Benevento",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Benevento Calcio",
+     "url": "https://www.beneventocalcio.club/news/notizie/7678/serie-bkt-2026-2027-benevento-catanzaro-dirige-alberto-poli.shtml",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Benevento-Catanzaro, partita della 9ª giornata del campionato di Serie BKT, sarà arbitrata da Alberto Poli di Verona. Si gioca martedì 27 ottobre alle 19 allo stadio Ciro Vigorito di Benevento. Lo ha comunicato lunedì 26 ottobre il Benevento Calcio sul suo sito.",
+      "fonti": [
+       "Benevento Calcio"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "Con lui ci saranno gli assistenti, cioè i guardalinee, Alessio Berti di Prato e Andrea Bianchini di Perugia. Il quarto ufficiale, l'arbitro che sta a bordo campo, sarà Giuseppe Mucera di Palermo.",
+      "fonti": [
+       "Benevento Calcio"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "Al VAR, la sala dove gli arbitri rivedono le azioni al video, ci saranno Daniele Rutella di Enna e, come suo assistente (AVAR), Marco Guida di Torre Annunziata.",
+      "fonti": [
+       "Benevento Calcio"
+      ],
+      "giorno": "2026-10-26"
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Benevento Calcio",
+      "titolo": "SERIE BKT 2026 2027: BENEVENTO-CATANZARO, DIRIGE ALBERTO POLI",
+      "url": "https://www.beneventocalcio.club/news/notizie/7678/serie-bkt-2026-2027-benevento-catanzaro-dirige-alberto-poli.shtml",
+      "data": "26 ott, 15:30",
+      "ufficiale": true
+     }
+    ]
+   },
+   "comunicati": [
+    "uacc1e47590e"
+   ],
+   "subito": true,
+   "pubblicato": "2026-10-26T15:37:45+01:00",
+   "foto": "calcio-9"
+  },
+  {
    "id": "sannio-passaporti-uffici-postali-77-sportelli-340-richieste",
    "titolo": "Sannio, il passaporto si chiede in 77 uffici postali: già 340 richieste, la prima è San Bartolomeo in Galdo",
    "titolo_google": "Passaporto alle Poste nel Sannio: 77 uffici abilitati",
