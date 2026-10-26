@@ -2,7 +2,14 @@
 """Pubblica sulla Pagina Facebook (facebook.com/notiziebenevento) le notizie nuove, una alla volta.
 
 Lo esegue GitHub dopo ogni pubblicazione del sito (a ogni giro dell'agente e ogni ora), così la pagina della
-notizia è già online quando Facebook ne legge titolo e immagine di anteprima.
+notizia e la sua scheda sono già online quando Facebook le legge.
+
+- Dal 26 ott 2026 ogni notizia esce come post con la foto, come su Instagram (voluto dal proprietario: «non mi piace il
+  link diretto alla nostra pagina su Facebook», «come le crei su Instagram mi piacciono di più», «fallo su Facebook
+  come Instagram»): la scheda img/ig/<id>.jpg di pagine.immagine_ig (testata, foto, sezione e titolo grande), sotto
+  il titolo, la sintesi e «Leggi tutto: <link>»; con le foto mandate col comunicato, quelle (foto_inviate). Niente più
+  post con l'anteprima del link. Se la scheda non c'è, l'immagine di anteprima della pagina (img/n/<id>.png); se
+  Facebook rifiuta la foto, il solo testo, sempre con «Leggi tutto».
 
 - Le notizie dei comunicati arrivati per posta («subito», giro lampo) escono appena ci sono, senza pausa né tetto.
 - Al massimo una notizia ogni PAUSA_MINUTI (25) e MAX_GIORNO (35) al giorno, solo dalle 6
@@ -143,6 +150,24 @@ def messaggio(n, aggiornamento=False):
     return m
 
 
+def testo_post(n, aggiornamento=False):
+    """Il testo del post con la scheda: come messaggio(), con la nota sull'immagine fatta con l'IA quando la scheda ne ha
+    una (come la didascalia di Instagram) e «Leggi tutto: <link>» in fondo (da lì gia_pubblicate() riconosce il post)."""
+    m = messaggio(n, aggiornamento)
+    if not aggiornamento and n.get("immagine") and n.get("categoria") != "cronaca" and not n.get("locandina"):
+        m += "\n\nImmagine illustrativa creata con l'intelligenza artificiale: non è una foto del fatto."
+    return m + f"\n\nLeggi tutto: {SITO}/notizia/{n['id']}/"
+
+
+def scheda(n):
+    """L'immagine del post: la scheda di Instagram (img/ig/<id>.jpg, c'è per le notizie della prima pagina delle ultime
+    48 ore) o, se manca, l'immagine di anteprima della pagina (img/n/<id>.png); None se nessuna delle due è online."""
+    for u in (f"{SITO}/img/ig/{n['id']}.jpg", f"{SITO}/img/n/{n['id']}.png"):
+        if online(u):
+            return u
+    return None
+
+
 def chiama(metodo, percorso, token, dati=None):
     dati = dict(dati or {}, access_token=token)
     corpo = urllib.parse.urlencode(dati).encode()
@@ -187,9 +212,10 @@ def online(url):
         return False
 
 
-def foto_con_testo(token, foto, testo, link):
-    """Un post con la foto (se è online) e il testo; se Facebook dice di no alla foto, un post col testo e il link.
-    Se la foto è uscita non si fa mai anche il post col link: il testo, se manca, si aggiunge al post della foto."""
+def foto_con_testo(token, foto, testo, link, col_link=True):
+    """Un post con la foto (se è online) e il testo; se Facebook dice di no alla foto, un post col testo e il link
+    (con col_link=False il solo testo, che il link lo ha già scritto dentro: le notizie, dal 26 ott 2026). Se la foto
+    è uscita non si fa mai anche l'altro post: il testo, se manca, si aggiunge al post della foto."""
     if foto and online(foto):
         r = None
         try:
@@ -197,14 +223,15 @@ def foto_con_testo(token, foto, testo, link):
         except RuntimeError as e:
             if "forse è uscito" in str(e):
                 raise
-            print(f"  Facebook: la foto non è passata ({e}): pubblico il post col link")
+            print(f"  Facebook: la foto non è passata ({e}): pubblico il post " + ("col link" if col_link else "col solo testo"))
         if r:
             pid = r.get("post_id") or f"{r.get('page_id', '')}_{r.get('id')}"
             letto = riprova(lambda: chiama("GET", pid, token, {"fields": "message"}), "Facebook (rilettura)", True)
             if not (letto.get("message") or "").strip():   # il testo deve esserci: se manca, lo si scrive nel post
                 riprova(lambda: chiama("POST", pid, token, {"message": testo}), "Facebook (testo del post)")
             return
-    riprova(lambda: chiama("POST", "me/feed", token, {"message": testo, "link": link}), "Facebook")
+    dati = {"message": testo, "link": link} if col_link else {"message": testo}
+    riprova(lambda: chiama("POST", "me/feed", token, dati), "Facebook")
 
 
 def testo_riepilogo(giorno, notizie):
@@ -224,25 +251,17 @@ def titoli_usciti(ids, nid, testo):
 
 
 def pubblica(token, n, aggiornamento=False):
-    """Il post della notizia, col link (con le foto inviate col comunicato, un post con le foto: foto_inviate()). Per un
-    aggiornamento Facebook deve prima rileggere la pagina: titolo e immagine del link li ricorda dalla prima volta. Se
-    non li rilegge, il post esce con l'immagine nuova e il link nel testo."""
+    """Il post della notizia, con la foto come su Instagram (dal 26 ott 2026): le foto inviate col comunicato
+    (foto_inviate()), se no la scheda (scheda()), e il testo con «Leggi tutto». Un aggiornamento esce con la scheda di
+    adesso, che ha già il titolo nuovo."""
     link = f"{SITO}/notizia/{n['id']}/"
-    if aggiornamento:
-        try:
-            r = riprova(lambda: chiama("POST", "", token, {"id": link, "scrape": "true"}), "Facebook (rilettura del link)", True)
-            riletto = norma(n["titolo"]) in norma(r.get("title"))
-        except RuntimeError as e:
-            print(f"  {e}")
-            riletto = False
-        if not riletto:
-            print("  Facebook non ha riletto il link: pubblico l'aggiornamento con l'immagine")
-            foto_con_testo(token, f"{SITO}/img/ig/{n['id']}.jpg", messaggio(n, True) + "\n\n" + link, link)
-            return
-    elif n.get("foto_inviate"):
+    if n.get("foto_inviate") and not aggiornamento:
         foto_inviate(token, n, link)
         return
-    chiama("POST", "me/feed", token, {"message": messaggio(n, aggiornamento), "link": link})
+    foto = scheda(n)
+    if not foto:
+        print(f"  Facebook: la scheda di {n['id']} non è online: pubblico il solo testo")
+    foto_con_testo(token, foto, testo_post(n, aggiornamento), link, col_link=False)
 
 
 def foto_inviate(token, n, link):
@@ -265,7 +284,7 @@ def foto_inviate(token, n, link):
             dati.update({f"attached_media[{k}]": json.dumps({"media_fbid": i}) for k, i in enumerate(ids)})
             riprova(lambda: chiama("POST", "me/feed", token, dati), "Facebook (post con le foto)")
             return
-    foto_con_testo(token, foto[0] if foto else None, testo, link)
+    foto_con_testo(token, foto[0] if foto else None, testo, link, col_link=False)
 
 
 def gia_pubblicate(token, adesso):
@@ -335,7 +354,9 @@ def main():
 
     if a.prova:
         for n, agg in coda(notizie, {}, adesso)[:MAX_GIORNO]:
-            print(f"- {n['id']}\n  {messaggio(n, agg)[:160]}…\n  {SITO}/notizia/{n['id']}/")
+            foto = "le foto inviate" if n.get("foto_inviate") and not agg else scheda(n) or "nessuna immagine: solo testo"
+            print(f"- {n['id']}{' (aggiornamento)' if agg else ''}\n  foto: {foto}\n  "
+                  + testo_post(n, agg).replace("\n", "\n  ") + "\n")
         return
 
     token = os.environ.get("FB_PAGE_TOKEN", "").strip()

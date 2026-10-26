@@ -382,7 +382,11 @@ def facebook(token, adesso, storico_prima):
                 m = re.search(r"notiziebenevento\.it(/notizia/[a-z0-9-]+/)", u)
                 if m:
                     link = m.group(1)
-            reaz = ((p.get("reactions") or {}).get("summary") or {}).get("total_count", 0) if con_reazioni else None
+            # i post con la foto (dal 26 ott 2026 tutte le notizie, facebook.testo_post) hanno il link nel testo
+            m = None if link else re.search(r"Leggi tutto: \S*notiziebenevento\.it(/notizia/[a-z0-9-]+/)", p.get("message") or "")
+            if m:
+                link = m.group(1)
+            reaz =((p.get("reactions") or {}).get("summary") or {}).get("total_count", 0) if con_reazioni else None
             comm = ((p.get("comments") or {}).get("summary") or {}).get("total_count", 0) if con_commenti else None
             cond = (p.get("shares") or {}).get("count", 0)
             post.append({"quando": t.isoformat(timespec="minutes"), "titolo": (p.get("message") or "").split("\n")[0][:160],
