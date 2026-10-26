@@ -1,7 +1,251 @@
 {
- "aggiornato": "2026-10-26T15:32+01:00",
+ "aggiornato": "2026-10-26T16:15+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-vincenzo-testa-consiglio-nazionale-consulenti-lavoro",
+   "titolo": "Il sannita Vincenzo Testa eletto nel Consiglio nazionale dei consulenti del lavoro",
+   "titolo_google": "Vincenzo Testa nel Consiglio nazionale consulenti del lavoro",
+   "sintesi": "Il sannita Vincenzo Testa è tra i 15 componenti del nuovo Consiglio nazionale dell'Ordine dei consulenti del lavoro, in carica per il triennio 2026-2029. Lo hanno eletto a Roma sabato 24 ottobre 438 delegati da tutta Italia.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "immagine": "premio",
+   "pubblicato": "2026-10-26T16:01+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/26/rinnovo-consiglio-nazionale-dellordine-consulenti-del-lavoro-eletto-consigliere-il-sannita-vincenzo-testa/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/26/rinnovato-il-consiglio-nazionale-dellordine-dei-consulenti-del-lavoro-eletto-consigliere-il-sannita-vincenzo-testa/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/442202/consiglio-nazionale-consulenti-del-lavoro-eletto-consigliere-il-sannita-testa.shtml"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/rinnovo-consiglio-nazionale-dellordine-consulenti-del-lavoro-eletto-consigliere-il-sannita-vincenzo-testa/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "C'è anche un sannita nel nuovo Consiglio nazionale dell'Ordine dei consulenti del lavoro, l'organismo che rappresenta la categoria in tutta Italia: è Vincenzo Testa, di Benevento. Il Consiglio resterà in carica per il triennio 2026-2029.",
+      "fonti": [
+       "NTR24",
+       "Ottopagine",
+       "TV7 Benevento",
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "L'elezione si è tenuta a Roma sabato 24 ottobre. Hanno votato 438 delegati arrivati da tutta Italia per conto dei 106 Consigli provinciali dell'Ordine. Il più votato è stato il presidente uscente, Rosario De Luca, con il 96% delle preferenze.",
+      "fonti": [
+       "NTR24",
+       "Ottopagine",
+       "TV7 Benevento"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "Il nuovo Consiglio ha 15 componenti: nove sono stati confermati e sei sono nuovi. Si riunirà per la prima volta a Roma il 4 novembre, quando sceglierà presidente, vicepresidente, segretario e tesoriere.",
+      "fonti": [
+       "NTR24",
+       "Ottopagine"
+      ],
+      "giorno": "2026-10-26"
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Il voto a Roma del 24 ottobre con 438 delegati, l'elezione di Vincenzo Testa e la prima riunione del 4 novembre.",
+      "fonti": [
+       "NTR24",
+       "Ottopagine"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Rinnovo Consiglio Nazionale dell’Ordine Consulenti del Lavoro: eletto consigliere il sannita Vincenzo Testa",
+      "url": "https://www.ntr24.tv/2026/10/26/rinnovo-consiglio-nazionale-dellordine-consulenti-del-lavoro-eletto-consigliere-il-sannita-vincenzo-testa/",
+      "data": "26 ott, 16:01"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Rinnovato il Consiglio Nazionale dell’Ordine dei Consulenti del Lavoro: eletto consigliere il sannita Vincenzo Testa",
+      "url": "https://www.beneventonews24.it/2026/10/26/rinnovato-il-consiglio-nazionale-dellordine-dei-consulenti-del-lavoro-eletto-consigliere-il-sannita-vincenzo-testa/",
+      "data": "26 ott, 15:49"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Consiglio Nazionale Consulenti del Lavoro: eletto consigliere il sannita Testa",
+      "url": "https://www.ottopagine.it/bn/attualita/442202/consiglio-nazionale-consulenti-del-lavoro-eletto-consigliere-il-sannita-testa.shtml",
+      "data": "26 ott, 15:10"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "RINNOVO CONSIGLIO NAZIONALE DELL’ORDINE CONSULENTI DEL LAVORO- ELETTO CONSIGLIERE IL SANNITA VINCENZO TESTA",
+      "url": "https://www.tvsette.net/rinnovo-consiglio-nazionale-dellordine-consulenti-del-lavoro-eletto-consigliere-il-sannita-vincenzo-testa/",
+      "data": "26 ott, 14:33"
+     }
+    ]
+   },
+   "foto": "premio-9"
+  },
+  {
+   "id": "benevento-carcere-detenuto-morto-compagno-cella-indagato",
+   "titolo": "Benevento, detenuto morto in carcere a Ferragosto 2025: il compagno di cella indagato per istigazione al suicidio",
+   "titolo_google": "Detenuto morto nel carcere di Benevento: c'è un indagato",
+   "sintesi": "Per la morte di un detenuto di 54 anni, trovato senza vita nel carcere di Benevento il 15 agosto 2025, è indagato per istigazione al suicidio il suo compagno di cella, un 56enne della Valle Telesina. Sono stati depositati i risultati dell'autopsia.",
+   "categoria": "cronaca",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-26T15:51+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 4,
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/442212/trovato-morto-in-carcere-compagno-di-cella-indagato-per-istigazione-al-suicidio.shtml"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "C'è un indagato per la morte del detenuto di 54 anni trovato senza vita nel carcere di contrada Capodimonte, a Benevento, nel pomeriggio di Ferragosto del 2025. L'ipotesi è l'istigazione al suicidio e l'indagato è il suo compagno di cella, un 56enne della Valle Telesina.",
+      "fonti": [
+       "Ottopagine"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "Il 54enne abitava in un paese della provincia ed era entrato in carcere pochi giorni prima, perché ritenuto il presunto responsabile di un'aggressione alla moglie. All'inizio si era pensato che si fosse tolto la vita tagliandosi la gola. La pm Maria Colucci aveva aperto un'inchiesta per istigazione al suicidio, prima contro ignoti, per poter fare tutti gli accertamenti.",
+      "fonti": [
+       "Ottopagine"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "Il compagno di cella era in carcere da maggio: sta scontando una condanna definitiva a più di 4 anni per furto, maltrattamenti e tentata estorsione ai danni della madre. Quale sia stato il suo comportamento resta da capire.",
+      "fonti": [
+       "Ottopagine"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "Un aiuto arriverà dall'autopsia della medica legale Francesca Iannaccone, i cui risultati sono stati appena depositati: le conclusioni riguardano la ferita al collo e un'altra alla parte posteriore della testa. I familiari del 54enne avevano espresso subito dubbi su come fosse morto; sul caso era intervenuto anche il garante regionale dei detenuti, Samuele Ciambriello.",
+      "fonti": [
+       "Ottopagine"
+      ],
+      "giorno": "2026-10-26"
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "15 agosto 2025, pomeriggio",
+      "quando": "2025-08-15",
+      "fatto": "Il detenuto di 54 anni viene trovato morto nel carcere di Benevento.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "data": "26 ottobre",
+      "fatto": "Depositati i risultati dell'autopsia; il compagno di cella risulta indagato per istigazione al suicidio.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     }
+    ],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Cosa dicono le conclusioni dell'autopsia sulle due ferite.",
+     "Che cosa contesti la Procura, in concreto, al compagno di cella."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Trovato morto in carcere, compagno di cella indagato per istigazione al suicidio",
+      "url": "https://www.ottopagine.it/bn/cronaca/442212/trovato-morto-in-carcere-compagno-di-cella-indagato-per-istigazione-al-suicidio.shtml",
+      "data": "26 ott, 15:51"
+     }
+    ]
+   }
+  },
+  {
+   "id": "sant-angelo-a-cupolo-cultura-piccoli-comuni-idoneo-non-finanziato",
+   "titolo": "Sant'Angelo a Cupolo, il progetto per l'inverno con San Nazzaro è idoneo al bando del Ministero ma resta senza fondi",
+   "titolo_google": "Sant'Angelo a Cupolo, progetto idoneo ma senza fondi",
+   "sintesi": "Il progetto «Territorio e tradizioni d'inverno» di Sant'Angelo a Cupolo e San Nazzaro, da 52.500 euro, è stato giudicato idoneo al bando ministeriale «Cultura nei piccoli Comuni» ma non è stato finanziato. Nessun Comune del Sannio è tra quelli che ricevono i soldi.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Sant'Angelo a Cupolo",
+   "immagine": "borgo",
+   "pubblicato": "2026-10-26T15:59+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/26/cultura-nei-piccoli-comuni-santangelo-a-cupolo-idoneo-ma-senza-fondi-lassessore-zarro-la-strada-e-quella-giusta/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Comune di Sant'Angelo a Cupolo ha partecipato per la prima volta a «Cultura nei piccoli Comuni», il bando del Ministero per le iniziative che valorizzano il patrimonio culturale dei paesi. Il suo progetto è risultato idoneo ma non è stato finanziato. In graduatoria ci sono 27 enti che ricevono i soldi, per 40 realtà in tutta Italia, e nessuno è del Sannio.",
+      "fonti": [
+       "NTR24"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "Il progetto si chiamava «Territorio e tradizioni d'inverno tra Sant'Angelo a Cupolo e San Nazzaro» e costava 52.500 euro. Voleva unire i due paesi in una rassegna invernale sulle tradizioni: le leggende di Mazzamauriello e delle Janare, la Cantata dei Mesi, i presepi delle frazioni e percorsi nella natura e nella cultura, con associazioni, volontari e cittadini.",
+      "fonti": [
+       "NTR24"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "L'assessore Stefano Zarro lo considera comunque un buon risultato, vista la prima partecipazione e i tempi strettissimi: «Dobbiamo capire dove abbiamo mancato e quali punti possiamo migliorare già dalla prossima stagione». La seconda edizione del bando è annunciata entro la fine dell'anno, per iniziative da fare nell'estate 2027.",
+      "fonti": [
+       "NTR24"
+      ],
+      "giorno": "2026-10-26"
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Se il Comune ripresenterà lo stesso progetto al secondo bando."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Cultura nei piccoli Comuni, Sant’Angelo a Cupolo idoneo ma senza fondi. L’assessore Zarro: «La strada è quella giusta»",
+      "url": "https://www.ntr24.tv/2026/10/26/cultura-nei-piccoli-comuni-santangelo-a-cupolo-idoneo-ma-senza-fondi-lassessore-zarro-la-strada-e-quella-giusta/",
+      "data": "26 ott, 15:59"
+     }
+    ]
+   },
+   "foto": "borgo-9"
+  },
   {
    "id": "benevento-catanzaro-arbitro-alberto-poli-27-ottobre",
    "titolo": "Benevento-Catanzaro di martedì 27 ottobre al Vigorito: arbitra Alberto Poli di Verona",
@@ -19,6 +263,18 @@
      "nome": "Benevento Calcio",
      "url": "https://www.beneventocalcio.club/news/notizie/7678/serie-bkt-2026-2027-benevento-catanzaro-dirige-alberto-poli.shtml",
      "ufficiale": true
+    },
+    {
+     "nome": "NTR24 Sport",
+     "url": "https://sport.ntr24.tv/2026/10/26/benevento-catanzaro-arbitra-poli-di-verona/"
+    },
+    {
+     "nome": "Benevento Giornale",
+     "url": "https://www.beneventogiornale.com/2026/10/26/incontro-di-calcio-benevento-catanzaro-dirige-alberto-poli/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/calcio-benevento-catanzaro-arbitra-poli-designata-la-squadra-arbitrale-per-il-match-del-vigorito/"
     }
    ],
    "articolo": {
@@ -26,27 +282,53 @@
      {
       "testo": "Benevento-Catanzaro, partita della 9ª giornata del campionato di Serie BKT, sarà arbitrata da Alberto Poli di Verona. Si gioca martedì 27 ottobre alle 19 allo stadio Ciro Vigorito di Benevento. Lo ha comunicato lunedì 26 ottobre il Benevento Calcio sul suo sito.",
       "fonti": [
-       "Benevento Calcio"
+       "Benevento Calcio",
+       "NTR24 Sport",
+       "Benevento Giornale",
+       "TV7 Benevento"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "Per Poli sarà l'esordio in Serie B. Ha già arbitrato due volte il Benevento, la scorsa stagione in Serie C, e in tutte e due le partite hanno vinto i giallorossi: il 1° febbraio 4-3 in rimonta sul campo dell'Atalanta U23 a Caravaggio, poi di misura in casa contro il Foggia. Non ha mai arbitrato il Catanzaro.",
+      "fonti": [
+       "TV7 Benevento"
       ],
       "giorno": "2026-10-26"
      },
      {
       "testo": "Con lui ci saranno gli assistenti, cioè i guardalinee, Alessio Berti di Prato e Andrea Bianchini di Perugia. Il quarto ufficiale, l'arbitro che sta a bordo campo, sarà Giuseppe Mucera di Palermo.",
       "fonti": [
-       "Benevento Calcio"
+       "Benevento Calcio",
+       "NTR24 Sport",
+       "Benevento Giornale",
+       "TV7 Benevento"
       ],
       "giorno": "2026-10-26"
      },
      {
       "testo": "Al VAR, la sala dove gli arbitri rivedono le azioni al video, ci saranno Daniele Rutella di Enna e, come suo assistente (AVAR), Marco Guida di Torre Annunziata.",
       "fonti": [
-       "Benevento Calcio"
+       "Benevento Calcio",
+       "NTR24 Sport",
+       "Benevento Giornale",
+       "TV7 Benevento"
       ],
       "giorno": "2026-10-26"
      }
     ],
     "cronologia": [],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "Alberto Poli di Verona arbitro, con Berti e Bianchini assistenti, Mucera quarto ufficiale, Rutella e Guida al VAR.",
+      "fonti": [
+       "Benevento Calcio",
+       "NTR24 Sport",
+       "TV7 Benevento",
+       "Benevento Giornale"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [],
     "fonti": [
@@ -56,6 +338,24 @@
       "url": "https://www.beneventocalcio.club/news/notizie/7678/serie-bkt-2026-2027-benevento-catanzaro-dirige-alberto-poli.shtml",
       "data": "26 ott, 15:30",
       "ufficiale": true
+     },
+     {
+      "nome": "NTR24 Sport",
+      "titolo": "Benevento-Catanzaro, arbitra Poli di Verona",
+      "url": "https://sport.ntr24.tv/2026/10/26/benevento-catanzaro-arbitra-poli-di-verona/",
+      "data": "26 ott, 15:26"
+     },
+     {
+      "nome": "Benevento Giornale",
+      "titolo": "Incontro di calcio Benevento-Catanzaro, dirige Alberto Poli",
+      "url": "https://www.beneventogiornale.com/2026/10/26/incontro-di-calcio-benevento-catanzaro-dirige-alberto-poli/",
+      "data": "26 ott, 16:00"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Calcio. Benevento-Catanzaro, arbitra Poli: designata la squadra arbitrale per il match del Vigorito",
+      "url": "https://www.tvsette.net/calcio-benevento-catanzaro-arbitra-poli-designata-la-squadra-arbitrale-per-il-match-del-vigorito/",
+      "data": "26 ott, 14:24"
      }
     ]
    },
@@ -1327,11 +1627,11 @@
   {
    "id": "castelpoto-santa-croce-del-sannio-elenco-elettori-fuori-sede",
    "titolo": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta e Pesco Sannita, aperto l'elenco degli elettori fuori sede: domande entro il 31 dicembre",
-   "titolo_google": "Elettori fuori sede in sei Comuni del Sannio: come fare",
-   "sintesi": "I Comuni di Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta e Pesco Sannita hanno aperto l'elenco degli elettori fuori sede previsto dalla nuova legge elettorale: chi per studio, lavoro o cure vive in una regione diversa da quella in cui vota può chiedere di votare dove abita. Per studio e lavoro la domanda va fatta entro il 31 dicembre, per le votazioni dell'anno dopo.",
+   "titolo_google": "Elettori fuori sede in otto Comuni del Sannio: come fare",
+   "sintesi": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio e Molinara hanno aperto l'elenco degli elettori fuori sede previsto dalla nuova legge elettorale: chi per studio, lavoro o cure vive in una regione diversa da quella in cui vota può chiedere di votare dove abita. Per studio e lavoro la domanda va fatta entro il 31 dicembre, per le votazioni dell'anno dopo.",
    "categoria": "altro",
    "zona": "provincia",
-   "luogo": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta e Pesco Sannita",
+   "luogo": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio e Molinara",
    "immagine": "elezioni",
    "pubblicato": "2026-10-26",
    "stato": "ufficiale",
@@ -1349,7 +1649,7 @@
     },
     {
      "nome": "Comune di Apice",
-     "url": "https://www.halleyweb.com/c062003/mc/mc_p_dettaglio.php?id_pubbl=17071",
+     "url": "https://www.comune.apice.bn.it/novita/avvisi/novita_142.html",
      "ufficiale": true
     },
     {
@@ -1365,6 +1665,16 @@
     {
      "nome": "Comune di Pesco Sannita",
      "url": "https://www.halleyweb.com/c062050/mc/mc_p_dettaglio.php?id_pubbl=14953",
+     "ufficiale": true
+    },
+    {
+     "nome": "Comune di Faicchio",
+     "url": "https://comune.faicchio.bn.it/novita/elezioni-politiche-europee-e-referendum-voto-fuori-sede/",
+     "ufficiale": true
+    },
+    {
+     "nome": "Comune di Molinara",
+     "url": "https://molinara.halleyweb.it/c062041/mc/mc_p_dettaglio.php?id_pubbl=3769",
      "ufficiale": true
     }
    ],
@@ -1401,7 +1711,8 @@
      {
       "testo": "Chi abita per un periodo ad Apice e vota in un'altra regione consegna la domanda all'ufficio protocollo in piazza della Ricostruzione 1 o la manda per PEC al Comune; il modello, in PDF da compilare, è sul sito del Comune di Apice e su dait.interno.gov.it/elezioni. Vanno allegati un documento di identità e un certificato che dimostri lo studio o il lavoro fuori sede e la sua durata, che si può anche autocertificare.",
       "fonti": [
-       "Comune di Apice"
+       "Comune di Apice",
+       "Comune di Apice (26/10)"
       ],
       "giorno": "2026-10-26"
      },
@@ -1417,6 +1728,14 @@
       "fonti": [
        "Comune di Dugenta",
        "Comune di Pesco Sannita"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "Sempre lunedì 26 ottobre l'avviso è uscito anche a Faicchio e a Molinara. Faicchio ricorda che il voto fuori sede non vale per le elezioni comunali e regionali e che la domanda, con un documento e il certificato di studio, lavoro o cura, si può ritirare negli stessi modi e negli stessi tempi in cui si presenta.",
+      "fonti": [
+       "Comune di Faicchio",
+       "Comune di Molinara"
       ],
       "giorno": "2026-10-26"
      }
@@ -1467,6 +1786,27 @@
       "nome": "Comune di Pesco Sannita",
       "titolo": "VOTO DEGLI ELETTORI FUORI SEDE",
       "url": "https://www.halleyweb.com/c062050/mc/mc_p_dettaglio.php?id_pubbl=14953",
+      "data": "26 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "Comune di Apice (26/10)",
+      "titolo": "VOTO DEGLI ELETTORI FUORI SEDE",
+      "url": "https://www.comune.apice.bn.it/novita/avvisi/novita_142.html",
+      "data": "26 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "Comune di Faicchio",
+      "titolo": "Elezioni politiche, europee e referendum: voto fuori sede",
+      "url": "https://comune.faicchio.bn.it/novita/elezioni-politiche-europee-e-referendum-voto-fuori-sede/",
+      "data": "26 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "Comune di Molinara",
+      "titolo": "VOTO DEGLI ELETTORI FUORI SEDE temporaneamente domiciliati in una Regione diversa da quella di iscrizione elettorale - Istituzione dell'elenco comunale degli elettori fuori sede.",
+      "url": "https://molinara.halleyweb.it/c062041/mc/mc_p_dettaglio.php?id_pubbl=3769",
       "data": "26 ott",
       "ufficiale": true
      }
