@@ -27,7 +27,7 @@ claude.ai/code dal telefono): qui c'è quello che serve per riprendere il lavoro
 1. `git pull --rebase` (le routine pubblicano spesso: rifallo anche subito prima del push).
 2. Modifica `notizie.json` (o l'archivio) con uno script che rilegge e riscrive il JSON con l'indentazione di 1
    spazio: niente modifiche a mano del file intero. Esempio: `articolo.non_si_sa = []` toglie «Cosa non si sa ancora».
-3. Controlla: `python3 -c "import sys,json; sys.path.insert(0,'strumenti'); import archivia as A; d=json.load(open('notizie.json')); e,a=[],[]; A.controlla(d,e,a); print(e or 'OK')"`.
+3. Controlla: `python3 -c "import sys,json; sys.path.insert(0,'strumenti'); import archivia as A; d=json.load(open('notizie.json', encoding='utf-8')); e,a=[],[]; A.controlla(d,e,a); print(e or 'OK')"`.
 4. Commit e push. Il messaggio **non** deve cominciare con «Comunicato delle » o «Notizie delle »: sono quelli dei
    giri e la Action li tratta in modo diverso.
 5. Aspetta la Action (`gh run watch`) e controlla la pagina online (`https://notiziebenevento.it/notizia/<id>/`).
