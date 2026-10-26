@@ -3,6 +3,79 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "maddaloni-bus-air-pietraroja-santagata-napoli-deviati-cancello-scalo",
+   "titolo": "Bus AIR da Pietraroja e Sant'Agata de' Goti per Napoli deviati a Maddaloni per i lavori alla rete fognaria: soppressa la fermata di Cancello Scalo",
+   "titolo_google": "Bus AIR Pietraroja-Napoli deviati a Maddaloni per lavori",
+   "sintesi": "Da lunedì 26 ottobre e fino alla fine dei lavori in via Cancello a Maddaloni, i bus AIR Campania tra Pietraroja, Sant'Agata de' Goti e Napoli e quelli tra Campobasso e Napoli passano da via Ficucella. Salta la fermata di Cancello Scalo; la corsa delle 5:25 da Pietraroja (linea BN-02) non cambia percorso.",
+   "categoria": "strade",
+   "zona": "provincia",
+   "luogo": "Maddaloni (linee da Pietraroja e Sant'Agata de' Goti per Napoli)",
+   "pubblicato": "2026-10-26T15:19:00+01:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "traffico": "bus",
+   "immagine": "autobus",
+   "fonti": [
+    {
+     "nome": "AIR Campania",
+     "url": "https://aircampania.it/maddaloni-ce-deviazioni-temporanee/",
+     "ufficiale": true
+    }
+   ],
+   "comunicati": [
+    "uc30a91065d4"
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Da lunedì 26 ottobre, e fino alla fine dei lavori, i bus AIR Campania che collegano Pietraroja e Sant'Agata de' Goti con Napoli cambiano percorso a Maddaloni, in provincia di Caserta. Cambiano strada anche le corse tra Campobasso e Napoli. Finché durano le deviazioni, la fermata di Cancello Scalo è soppressa.",
+      "fonti": [
+       "AIR Campania"
+      ]
+     },
+     {
+      "testo": "Il motivo è l'ordinanza n. 92 del 2026 del Comune di Maddaloni, che cambia la circolazione in via Cancello per completare la rete fognaria comunale. AIR Campania, l'azienda dei bus della Regione, ha adeguato i percorsi delle sue corse.",
+      "fonti": [
+       "AIR Campania"
+      ]
+     },
+     {
+      "testo": "I bus da Pietraroja verso Napoli, arrivati dai Giardinetti di Maddaloni, vanno dritti su via Forche Caudine e girano a sinistra in via Ficucella. Superano la prima rotatoria e restano su via Ficucella; all'incrocio con via Calabricito girano a destra e riprendono il percorso di sempre verso Napoli. La corsa che parte da Pietraroja alle 5:25 per Napoli, linea BN-02, non è deviata.",
+      "fonti": [
+       "AIR Campania"
+      ]
+     },
+     {
+      "testo": "Al ritorno, i bus da Napoli per Sant'Agata de' Goti e Pietraroja arrivano in via Calabricito, girano a sinistra in via Ficucella, prendono via Forche Caudine e tornano sul percorso ordinario.",
+      "fonti": [
+       "AIR Campania"
+      ]
+     },
+     {
+      "testo": "Le corse da Campobasso per Napoli restano sulla variante della statale 265 (via Forche Caudine) e, all'altezza del bar Anthony, girano a sinistra in via Ficucella. Alla prima rotatoria girano ancora a sinistra, restano su via Ficucella e proseguono verso Acerra. Quelle da Napoli per Campobasso, arrivate in via Calabricito, girano a sinistra in via Ficucella; in fondo alla strada, all'altezza del bar Anthony, girano a destra sulla variante della statale 265 (via Forche Caudine) verso Maddaloni e riprendono il percorso ordinario.",
+      "fonti": [
+       "AIR Campania"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "AIR Campania",
+      "titolo": "Maddaloni (CE): deviazioni temporanee",
+      "url": "https://aircampania.it/maddaloni-ce-deviazioni-temporanee/",
+      "data": "26 ott, 15:19",
+      "ufficiale": true
+     }
+    ]
+   },
+   "subito": true,
+   "foto": "autobus-19"
+  },
+  {
    "id": "san-pio-neurochirurgia-lettera-ringraziamento-paziente",
    "titolo": "Ospedale San Pio di Benevento, la lettera di un paziente guarito: «grazie» alla Neurochirurgia",
    "titolo_google": "San Pio Benevento, paziente ringrazia la Neurochirurgia",
