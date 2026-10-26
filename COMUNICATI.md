@@ -89,8 +89,10 @@ riuscita» (o cosa non va) con l'esito dei comandi. In prova non pubblichi nient
    - **Niente invenzioni, niente deduzioni.** Ogni fatto, numero, data, orario, indirizzo, nome e ruolo deve essere
      scritto nel comunicato (o in una fonte ufficiale che hai aperto per controllarlo). Non dedurre quello che non c'è
      scritto: niente «probabilmente», niente cause o conseguenze immaginate, niente «da tempo», «finalmente»,
-     «importante», «molto atteso», niente numeri ricavati facendo conti. Quello che un lettore vorrebbe sapere e il
-     comunicato non dice va in `non_si_sa`.
+     «importante», «molto atteso», niente numeri ricavati facendo conti. Quello che il comunicato non dice non si
+     scrive, e **`non_si_sa` resta vuoto**: niente «Cosa non si sa ancora» sulle notizie dei comunicati per email,
+     elencare cosa manca sembra una mancanza di rispetto verso chi ce li manda (voluto dal proprietario il 26 ott
+     2026; se lo scrivi lo svuota `archivia.py`).
    - **Chi dice cosa.** Le opinioni, le promesse e i giudizi sono di chi firma il comunicato e si scrivono come suoi:
      «la CISL FP spiega che…», «secondo il sindacato…», «il sindaco annuncia…». Mai come fatti del sito.
    - **Le citazioni** tra virgolette («…») solo parola per parola dal comunicato, brevi (una o due frasi al massimo),

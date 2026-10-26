@@ -487,7 +487,10 @@ Dopo il racconto vengono le altre parti, che **non lo ripetono**:
   li conferma (es. «L'ora dell'incidente, le 7:30, e il ferito portato al Rummo»). Con una sola fonte, per esempio solo
   il comunicato del Comune, lascialo vuoto.
 - `divergono`: cosa dice ognuna e quale vale.
-- `non_si_sa`: le domande che si farebbe un lettore e a cui le fonti non rispondono ancora.
+- `non_si_sa`: le domande che si farebbe un lettore e a cui le fonti non rispondono ancora. **Mai sulle notizie che
+  vengono da un comunicato per email** (un id di 12 cifre in `comunicati`): lì resta vuoto, perché elencare cosa manca
+  sembra una mancanza di rispetto verso chi ce lo manda (voluto dal proprietario il 26 ott 2026; lo svuota
+  `archivia.py`).
 
 **Esempio.** Così NO (com'era prima): «Giovedì 22 ottobre, dalle 14 alle 24, Alto Calore Servizi sospende l'erogazione
 dell'acqua in diversi Comuni del Sannio», poi «I fatti: Alto Calore comunica lo stop» e «Concordano: acqua sospesa

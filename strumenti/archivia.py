@@ -872,6 +872,11 @@ def controlla(d, err, avv, adesso=None):
             elif n["immagine"] not in temi_foto():
                 err.append(f"{w}: immagine {n['immagine']!r} non è un tema di img/temi/temi.json")
         a = n.get("articolo") or {}
+        # con un comunicato arrivato per email niente «Cosa non si sa ancora»: elencare cosa manca sembra una
+        # mancanza di rispetto verso chi ce lo manda (voluto dal proprietario il 26 ott 2026)
+        if a.get("non_si_sa") and any(re.fullmatch(r"[0-9a-f]{12}", str(c)) for c in n.get("comunicati") or []):
+            avv.append(f"{w}: viene da un comunicato per email, «non_si_sa» non si scrive: l'ho svuotato")
+            a["non_si_sa"] = []
         if vuoto(a.get("cosa")) and vuoto(a.get("racconto")):
             err.append(f"{w}: articolo senza racconto (né cosa)")
         nomi = [f.get("nome") for f in a.get("fonti", [])]
