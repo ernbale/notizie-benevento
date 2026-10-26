@@ -60,6 +60,7 @@ ORE_FINESTRA = 12
 SOGLIA_FB, SOGLIA_IG = 3, 4
 PAESI_MINUTI = 60
 GIORNI_AVVISI = 3
+AVVISI_VECCHI = False   # vedi candidate()
 AREA_VASTA = re.compile(r"^(sannio|provincia|campania|linea|linee|valle)\b|provincia|,| e |/", re.I)
 RIEPILOGO_DALLE = 20   # il riepilogo della giornata, su Facebook e su Instagram (dalle 20: voluto dal proprietario)
 RIEPILOGO_PAUSA = 30   # minuti dall'ultimo post
@@ -141,8 +142,11 @@ def candidate(notizie, gia, adesso):
     for n in notizie:
         t = quando(n, adesso)
         vecchia = adesso - t > dt.timedelta(hours=ORE_FINESTRA) if t else True
-        if vecchia and t and in_vigore(n, adesso) and adesso - t <= dt.timedelta(days=GIORNI_AVVISI):
-            vecchia = False   # un avviso ancora in vigore resta in classifica
+        # un avviso ancora in vigore resterebbe in classifica fino a GIORNI_AVVISI giorni, ma gia_pubblicate legge solo gli
+        # ultimi 50 post (un giorno, nei giorni pieni): il 26 ott alle 16:08 è uscito di nuovo un avviso del 24. Spento
+        # finché la lettura dei post non copre tutti quei giorni.
+        if vecchia and t and in_vigore(n, adesso) and adesso - t <= dt.timedelta(days=GIORNI_AVVISI) and AVVISI_VECCHI:
+            vecchia = False
         if not t or n.get("id") in gia or t > adesso or vecchia:
             continue
         if n.get("diretta_calcio"):   # l'articolo di fine partita: sui social è già uscito il «Finale» (gol.py)
