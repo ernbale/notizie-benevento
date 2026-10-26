@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26T20:10+01:00",
+ "aggiornato": "2026-10-26T21:09+01:00",
  "giornali_letti": 14,
  "notizie": [
   {
@@ -584,6 +584,13 @@
        "Benevento Calcio"
       ],
       "giorno": "2026-10-26"
+     },
+     {
+      "testo": "Anche il Catanzaro ha diffuso la sua lista: l'allenatore Michele Mignani, arrivato da poco sulla panchina dei calabresi, ha convocato 28 giocatori. Mancheranno Pecorino e Giovane.",
+      "fonti": [
+       "BeneventoNews24 (convocati del Catanzaro)"
+      ],
+      "giorno": "2026-10-26"
      }
     ],
     "cronologia": [],
@@ -621,6 +628,12 @@
       "titolo": "Benevento, i convocati per la gara con il Catanzaro: due assenti",
       "url": "https://www.cronachedelsannio.it/sannionews24/benevento-convocati-gara-catanzaro-due-assenti/",
       "data": "26 ott, 18:38"
+     },
+     {
+      "nome": "BeneventoNews24 (convocati del Catanzaro)",
+      "titolo": "Benevento-Catanzaro, i convocati di Mignani: ben 28 i convocati, out in due",
+      "url": "https://www.beneventonews24.it/2026/10/26/benevento-catanzaro-i-convocati-di-mignani-ben-28-i-convocati-out-in-due/",
+      "data": "26 ott, 21:00"
      }
     ]
    },
