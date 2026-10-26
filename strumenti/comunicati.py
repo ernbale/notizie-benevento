@@ -33,6 +33,9 @@ Il file per --unisci:
             {"comunicato": "id", "esito": "gia_nel_sito", "notizia": "id", "foto_inviate": ["id/1", "id/2"],
              "foto_da": "chi firma il comunicato"},   (le foto o la locandina della mail sulla notizia che c'è già)
             {"comunicato": "id", "esito": "scartato", "motivo": "perché non si pubblica"} ]}
+Con «pubblicato» i prezzi, le percentuali, gli orari e le date del testo del comunicato devono stare nella notizia o nel
+suo evento (dati_mancanti, dal 26 ott 2026); uno che al lettore proprio non serve va nell'esito con il perché:
+"tralasciati": {"18 ottobre": "è il giorno della riunione di prima, non dell'evento"}.
 Ogni comunicato di --da-fare deve avere il suo esito. Il motivo resta nel resoconto del giro: comunicati_visti.json
 (pubblico) tiene solo id, esito, notizia e ora. Con «gia_nel_sito» la notizia della prima pagina prende «subito» (Facebook
 e Instagram la pubblicano adesso, se non c'è già) e l'id del comunicato in «comunicati»; con "locandina", "foto_inviate"
@@ -171,6 +174,84 @@ def scegli_foto_nuova(n, notizie):
         n["foto"] = min(v, key=lambda x: (usate.count(x), hashlib.md5((n["id"] + x).encode()).hexdigest()))
 
 
+# La prova al contrario fatta dal programma (voluta dal proprietario il 26 ott 2026: «nessuna figuraccia nel nostro
+# articolo»): i dati che si riconoscono da soli nel testo del comunicato (prezzi, percentuali, orari, date) devono
+# stare nella notizia o nel suo evento. La locandina è un'immagine e qui non si legge: quella la guarda il revisore
+# (COMUNICATI.md, punto 4).
+MESI = ("gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre",
+        "novembre", "dicembre")
+NON_TESTO = {"id", "url", "link", "foto", "immagine", "locandina", "foto_inviate", "comunicati", "fonti"}
+
+
+def numero(s):
+    if re.fullmatch(r"\d{1,3}(\.\d{3})+(,\d+)?", s):   # 1.500 è mille e cinquecento
+        s = s.replace(".", "")
+    return float(s.replace(",", "."))
+
+
+def dati_del_testo(t, nostro=False):
+    """{chiave confrontabile: come è scritto} dei prezzi, delle percentuali, degli orari e delle date di un testo.
+    Con nostro=True (il nostro articolo) gli orari si riconoscono anche scritti a parole («dalle 19», «a mezzogiorno»)."""
+    t = str(t or "").lower().replace(" ", " ")
+    out = {}
+    for m in re.finditer(r"€\s*(\d[\d.,]*\d|\d)|\b(\d[\d.,]*\d|\d)\s*(?:€|euro\b)", t):
+        out.setdefault(("prezzo", numero(m.group(1) or m.group(2))), m.group(0).strip())
+    for m in re.finditer(r"\b(\d+(?:[.,]\d+)?)\s*(?:%|per\s*cento\b)", t):
+        out.setdefault(("percentuale", numero(m.group(1))), m.group(0).strip())
+    for m in re.finditer(r"\b([01]?\d|2[0-4])[:.]([0-5]\d)\b(?![.,]\d)", t):
+        out.setdefault(("ora", int(m.group(1)) % 24, int(m.group(2))), m.group(0))
+    parola = r"\b(?:ore|alle|dalle|le|entro le|fino alle|verso le)" if nostro else r"\bore"
+    for m in re.finditer(parola + r"\s+([01]?\d|2[0-4])\b(?![:.]\d)", t):
+        out.setdefault(("ora", int(m.group(1)) % 24, 0), m.group(0))
+    if nostro:
+        out.update({("ora", 12, 0): "mezzogiorno"} if "mezzogiorno" in t else {})
+        out.update({("ora", 0, 0): "mezzanotte"} if "mezzanotte" in t else {})
+    for m in re.finditer(r"\b([0-3]?\d)(?:°|º)?\s+(" + "|".join(MESI) + r")\b", t):
+        out.setdefault(("data", int(m.group(1)), MESI.index(m.group(2)) + 1), m.group(0))
+    for m in re.finditer(r"\b([0-3]?\d)/([01]?\d)(?:/(?:\d{4}|\d{2}))?\b", t):
+        if 1 <= int(m.group(1)) <= 31 and 1 <= int(m.group(2)) <= 12:
+            out.setdefault(("data", int(m.group(1)), int(m.group(2))), m.group(0))
+    for m in re.finditer(r"\b\d{4}-([01]\d)-([0-3]\d)\b", t):   # le date dei campi dell'evento
+        out.setdefault(("data", int(m.group(2)), int(m.group(1))), m.group(0))
+    return out
+
+
+def testi(x):
+    """Tutti i testi che il lettore vede di una notizia o di un evento (non gli indirizzi, gli id e i nomi delle fonti)."""
+    if isinstance(x, str):
+        return [x]
+    if isinstance(x, list):
+        return [s for y in x for s in testi(y)]
+    if isinstance(x, dict):
+        return [s for k, y in x.items() if k not in NON_TESTO for s in testi(y)]
+    return []
+
+
+CITAZIONE = re.compile(r"^(?:(?:da|from):?\s.*notiziebenevento\.it|(?:il giorno|on)\s.*(?:ha scritto|wrote):?\s*$|"
+                       r"-{2,}\s*(?:messaggio originale|original message))", re.I | re.M)
+
+
+def senza_citazione(t):
+    """Il testo di una risposta senza la nostra mail citata sotto (conta solo quello che hanno scritto loro)."""
+    m = CITAZIONE.search(t)
+    return t[:m.start()] if m else t
+
+
+def dati_mancanti(voce, n, eventi, tralasciati):
+    """Come sono scritti nel comunicato i dati che nella notizia e nei suoi eventi non ci sono. Il giorno in cui è
+    arrivato il comunicato (la data in fondo alla lettera) non conta; quelli in «tralasciati» dell'esito nemmeno."""
+    nostri = {}
+    for s in testi(n) + testi(eventi) + list(tralasciati):
+        nostri.update(dati_del_testo(s, nostro=True))
+    try:
+        giorno = dt.date.fromisoformat(str(voce.get("arrivata") or voce.get("data") or "")[:10])
+        nostri[("data", giorno.day, giorno.month)] = ""
+    except ValueError:
+        pass
+    suoi = dati_del_testo(str(voce.get("titolo") or "") + "\n" + senza_citazione(str(voce.get("testo") or "")))
+    return [scritto for k, scritto in suoi.items() if k not in nostri]
+
+
 def unisci(d, visti, entrata, voci, adesso, err):
     """Mette le notizie nuove in testa a d e gli esiti in visti. Restituisce i titoli pubblicati."""
     nuove = entrata.get("notizie") or []
@@ -220,6 +301,20 @@ def unisci(d, visti, entrata, voci, adesso, err):
                 if link and link not in link_di(per_id[e["notizia"]]):
                     err.append(f"{w}: è un articolo del sito di {per_voce[cid].get('mittente')}: mettilo tra le fonti "
                                f"della notizia col suo link ({per_voce[cid].get('link')})")
+                tral = e.get("tralasciati") or {}
+                if not isinstance(tral, dict) or any(len(str(m or "").strip()) < 10 for m in tral.values()):
+                    err.append(f"{w}: «tralasciati» è {{\"il dato come è scritto nel comunicato\": \"perché al lettore "
+                               "non serve\"}, con un perché vero")
+                elif per_voce[cid].get("tipo") != "sito":
+                    eventi = [x for x in entrata.get("eventi") or [] if isinstance(x, dict)
+                              and x.get("notizia") == e["notizia"]]
+                    manca = dati_mancanti(per_voce[cid], per_id[e["notizia"]], eventi, tral)
+                    if manca:
+                        err.append(f"{w}: nel comunicato c'è {', '.join('«' + x + '»' for x in manca)} e nella notizia "
+                                   "(e nel suo evento) no. Rileggi il comunicato: se serve al lettore aggiungilo, "
+                                   "scritto uguale e legato alla cosa giusta; se proprio non serve (una data passata, "
+                                   "un orario della conferenza stampa) scrivi nell'esito \"tralasciati\": "
+                                   "{\"<il dato>\": \"perché\"} (COMUNICATI.md, punto 4)")
         elif es == "gia_nel_sito" and e.get("notizia") not in attuali | in_archivio:
             err.append(f"{w}: la notizia {e.get('notizia')!r} non c'è né in prima pagina né in archivio")
         elif es == "gia_nel_sito" and IMMAGINI & e.keys() and e.get("notizia") not in prima:

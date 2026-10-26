@@ -36,6 +36,11 @@ TRAFFICO = {"chiusa", "blocchi", "senso_unico", "ristretta", "bus"}   # la pagin
 AUTOREVOLI = {"ilmattino", "ilsannioquotidiano", "ntr24", "ottopagine", "anteprima24", "labtv", "cronachedelsannio",
               "beneventonews24", "tv7benevento"}
 VIETATE = ["choc", "shock", "incredibile", "ecco cosa", "non crederai", "!", "?"]
+# dire che un dato manca, in una notizia che viene da un comunicato per email (controlla)
+NON_DETTO = re.compile(r"\bnon (?:è|e'|viene|vengono|sono|è stat[oa]|sono stat[ie]) (?:ancora )?(?:indicat|specificat|"
+                       r"precisat|res[oi] not|dett|comunicat|scritt)\w*|\b(?:il|nel) comunicato non (?:dice|indica|"
+                       r"specifica|precisa|riporta|parla)\w*|\bnon si sa\b|\bnon è dato sapere|\bnon (?:è|sono) not[oi]\b",
+                       re.I)
 ISO = re.compile(r"^\d{4}-\d{2}-\d{2}(T\d{2}:\d{2}(:\d{2})?[+-]\d{2}:\d{2})?$")
 GIORNO = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 GIORNI_PRIMA_PAGINA = 3      # oggi + i 2 giorni prima
@@ -874,9 +879,19 @@ def controlla(d, err, avv, adesso=None):
         a = n.get("articolo") or {}
         # con un comunicato arrivato per email niente «Cosa non si sa ancora»: elencare cosa manca sembra una
         # mancanza di rispetto verso chi ce lo manda (voluto dal proprietario il 26 ott 2026)
-        if a.get("non_si_sa") and any(re.fullmatch(r"[0-9a-f]{12}", str(c)) for c in n.get("comunicati") or []):
+        per_posta = any(re.fullmatch(r"[0-9a-f]{12}", str(c)) for c in n.get("comunicati") or [])
+        if a.get("non_si_sa") and per_posta:
             avv.append(f"{w}: viene da un comunicato per email, «non_si_sa» non si scrive: l'ho svuotato")
             a["non_si_sa"] = []
+        # e nemmeno dentro il testo: «non è indicato», «il comunicato non dice»… (lui, 26 ott 2026: «nessuna figuraccia
+        # nel nostro articolo»; spesso il dato c'era, nella locandina o in un allegato)
+        pezzi = [n.get("titolo"), n.get("titolo_google"), n.get("sintesi"), a.get("cosa"), (a.get("aggiornamento") or {})]
+        pezzi += [p for p in a.get("racconto") or [] if isinstance(p, dict)]
+        testo = " ".join(str((x.get("testo") if isinstance(x, dict) else x) or "") for x in pezzi)
+        frase = NON_DETTO.search(testo) if per_posta else None
+        if frase:
+            err.append(f"{w}: viene da un comunicato per email e dice «{frase.group(0)}»: rileggi il comunicato, gli "
+                       "allegati e la locandina; se il dato c'è scrivilo, se non c'è non dire che manca")
         if vuoto(a.get("cosa")) and vuoto(a.get("racconto")):
             err.append(f"{w}: articolo senza racconto (né cosa)")
         nomi = [f.get("nome") for f in a.get("fonti", [])]

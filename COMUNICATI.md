@@ -145,14 +145,35 @@ riuscita» (o cosa non va) con l'esito dei comandi. In prova non pubblichi nient
      nostro articolo ogni dato che serve al lettore (giorno, ora, luogo, prezzo, come prenotare, chi organizza, chi
      parla): c'è, è scritto uguale ed è legato a quello giusto (un prezzo all'aperitivo, non alla tessera)? Chi ci
      ha mandato il comunicato leggerà il nostro articolo: non deve trovarci niente di sbagliato, di dimenticato o di
-     capito male. È AGENTE.md, «Come lavorare una notizia», punto 5.
+     capito male. È AGENTE.md, «Come lavorare una notizia», punto 5. Lo stesso controllo, sui prezzi, le
+     percentuali, gli orari e le date del testo della mail, lo fa anche strumenti/comunicati.py (punto 5): un dato
+     che al lettore proprio non serve (una data passata, l'ora della conferenza stampa) va nell'esito in
+     `"tralasciati": {"<il dato come è scritto>": "perché"}`; mai per sbrigarsi.
 5. Scrivi `/tmp/comunicati_esito.json` (il formato è in testa a strumenti/comunicati.py): le notizie nuove in
    «notizie», gli eventi nuovi o aggiornati in «eventi» (punto 4 bis) e un esito per OGNI comunicato del punto 1 in
-   «esiti». Poi
+   «esiti».
+   **Poi il revisore** (voluto dal proprietario il 26 ott 2026: chi rilegge il proprio articolo lo trova giusto,
+   perché ricorda cosa voleva scrivere). Per ogni notizia nuova (e per una che c'è già se le hai cambiato il testo)
+   avvia con lo strumento **Agent** un revisore che non sa niente di come hai lavorato. Gli passi solo: il testo
+   completo del comunicato com'è in /tmp/da_fare.txt (per un articolo di un sito ufficiale, il link da aprire con
+   WebFetch), i percorsi delle immagini della mail (le righe «immagine <id>/<n>») e la notizia, con il suo evento, come
+   sta in /tmp/comunicati_esito.json. Il compito, con queste parole: «Sei il revisore di un giornale locale. Leggi per
+   intero il comunicato e guarda con Read tutte le immagini. Poi leggi l'articolo e l'evento. Elenca: 1) ogni dato
+   dell'articolo che nel comunicato non c'è o è diverso (date, giorni della settimana, orari, prezzi, nomi, ruoli,
+   luoghi, indirizzi); 2) ogni dato utile a chi legge che c'è nel comunicato o nelle immagini e nell'articolo manca;
+   3) ogni dato legato alla cosa sbagliata (un prezzo, un orario, un luogo attribuiti a un'altra cosa); 4) ogni frase
+   che dice che una cosa non si sa, non è indicata o manca; 5) ogni frase scorretta in italiano o che non si capisce.
+   Per ognuno cita le parole del comunicato. Se è tutto giusto rispondi solo OK. Non modificare nessun file.»
+   Correggi tutto quello che è vero; una segnalazione sbagliata la lasci, ma il perché va nel resoconto. Se hai
+   corretto qualcosa di importante, rimanda al revisore la versione nuova (al massimo due volte in tutto). Se lo
+   strumento Agent non c'è, fai tu la revisione da capo con quel compito, come se l'articolo l'avesse scritto un
+   altro, e scrivi nel resoconto «revisore non disponibile».
+   Poi
    `python3 strumenti/comunicati.py --unisci /tmp/comunicati_esito.json --pubblica`. Se stampa ERRORE correggi il file
    e rilancia finché finisce con PUBBLICATO. Mai modificare notizie.json a mano, mai --force.
 6. Resoconto breve in italiano: per ogni comunicato (e articolo dei siti ufficiali) mittente, oggetto, esito (col
-   motivo se scartato) e l'id della notizia; esito della pubblicazione.
+   motivo se scartato) e l'id della notizia; cosa ha trovato il revisore e cosa hai corretto («revisore: OK» se
+   niente); esito della pubblicazione.
 
 ## Limiti che non si superano
 
