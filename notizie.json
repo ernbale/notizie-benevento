@@ -3,6 +3,87 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "walking-marathon-benevento-2026-400-partecipanti",
+   "titolo": "Benevento, 400 persone alla seconda Walking Marathon",
+   "titolo_google": "Walking Marathon Benevento 2026: 400 partecipanti",
+   "sintesi": "Sono state 400 le persone che domenica 25 ottobre hanno partecipato alla seconda edizione della Walking Marathon Benevento, la camminata non competitiva per le strade della città. Lo dice Enzo Lauro, consigliere delegato allo Sport del Comune.",
+   "categoria": "sport",
+   "sport": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "Comune di Benevento",
+     "url": "https://www.comune.benevento.it/",
+     "ufficiale": true
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/23/eventi-23-24-25-ottobre/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Sono state 400 le persone che hanno partecipato alla Walking Marathon Benevento 2026, la seconda edizione della camminata che domenica 25 ottobre è passata per le strade della città. Il numero lo dà Enzo Lauro, consigliere delegato allo Sport del Comune di Benevento.",
+      "fonti": [
+       "Comune di Benevento",
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "È una camminata non competitiva, da fare a passo di marcia, organizzata dall'associazione sportiva Camminatori Sportivi Gruppo MAGÀ Benevento. Il programma prevedeva la partenza alle 8:30 vicino a via Grimoaldo Re e tre percorsi: 10 chilometri in città, tra le sue bellezze artistiche e storiche, 21 chilometri e i 42 della maratona intera, fino a Pietrelcina e ritorno.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Per Lauro è stato «un bellissimo evento», con partecipanti arrivati da tutta Italia, «all'insegna dello sport, della salute e della sostenibilità ambientale». Il consigliere aggiunge che la camminata «ha aiutato a far conoscere la nostra città nelle sue bellezze» e che i 400 partecipanti sono la prova del successo della manifestazione.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "Lauro ha portato i saluti del sindaco Clemente Mastella insieme al consigliere Luigi Scarinzi, «che fa parte anche dello staff», e ha fatto anche lui il percorso di 10 chilometri in città.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di Benevento",
+      "titolo": "Lauro: \"Walking Marathon 2026, evento che ha coniugato sport e sostenibilità\"",
+      "url": "https://www.comune.benevento.it/",
+      "data": "26 ott, 18:30",
+      "ufficiale": true
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Monumenti Aperti, castagne, Walking Marathon: gli eventi del week end a Benevento e nel Sannio",
+      "url": "https://www.ntr24.tv/2026/10/23/eventi-23-24-25-ottobre/",
+      "data": "23 ott"
+     }
+    ]
+   },
+   "comunicati": [
+    "9b7ebaeb9c96"
+   ],
+   "foto_inviate": [
+    "img/locandine/walking-marathon-benevento-2026-400-partecipanti-foto.jpg"
+   ],
+   "foto_da": "Comune di Benevento",
+   "subito": true,
+   "pubblicato": "2026-10-26T18:33:01+01:00"
+  },
+  {
    "id": "sannio-acque-undici-comuni-gestione-autonoma-ricorsi-tar",
    "titolo": "Acqua, undici Comuni del Sannio contro il passaggio a Sannio Acque: nasce un coordinamento, pronti i ricorsi al TAR",
    "titolo_google": "Sannio Acque, undici Comuni si oppongono: ricorsi al TAR",
