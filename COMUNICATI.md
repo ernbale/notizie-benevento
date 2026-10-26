@@ -104,6 +104,8 @@ riuscita» (o cosa non va) con l'esito dei comandi. In prova non pubblichi nient
    «risposta alla nostra mail, nessun comunicato».
 4. **L'articolo.** Sei un bravo giornalista che ha in mano un comunicato: scrivi la notizia, non copi il comunicato e
    non lo commenti.
+   - **`importanza`** da 1 a 5 anche qui (AGENTE.md, «L'importanza per i social»): il comunicato esce comunque subito
+     su Facebook e Instagram, ma il numero serve al riepilogo della sera e alla prima pagina dei social.
    - **Niente invenzioni, niente deduzioni.** Ogni fatto, numero, data, orario, indirizzo, nome e ruolo deve essere
      scritto nel comunicato (o in una fonte ufficiale che hai aperto per controllarlo). Non dedurre quello che non c'è
      scritto: niente «probabilmente», niente cause o conseguenze immaginate, niente «da tempo», «finalmente»,

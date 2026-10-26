@@ -6,7 +6,8 @@ Lo esegue GitHub dopo ogni pubblicazione del sito, come facebook.py, che ne è i
 - Una notizia ogni PAUSA_MINUTI, senza tetto al giorno, dalle 6 fino al giro delle 22 compreso (come Facebook: 20
   minuti, scelta del proprietario il 26 ott 2026, «nessun tetto ma distanziati almeno ogni 15/20 minuti»; prima 25
   minuti e 35 al giorno, 50 e 20, all'inizio 90 minuti e 8).
-- Sceglie la più importante tra le notizie delle ultime 12 ore non ancora uscite (stessa importanza di facebook.py).
+- Sceglie la prima della classifica dei social (facebook.py, CLASSIFICA) tra quelle che valgono almeno SOGLIA_IG
+  (4: le più importanti); i comunicati («subito») tutti.
 - L'immagine è img/ig/<id>.jpg (1080×1350, la fa pagine.py): titolo grande e, se c'è, la foto illustrativa con la
   scritta che è fatta con l'intelligenza artificiale. Instagram la scarica dal sito, che deve essere già online.
 - Cosa è già uscito lo legge da Instagram stesso (il link della notizia scritto nella didascalia).
@@ -35,8 +36,9 @@ import time
 import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from facebook import (AGG, LIMITE_META, PAGINA, RIEPILOGO_DALLE, RIEPILOGO_PAUSA, SITO, TITOLO_RIEPILOGO,  # come Facebook
-                      allerta_seria, candidate, chiama, coda, fuso, quando, rilievo, titoli_usciti)
+from facebook import (AGG, LIMITE_META, PAGINA, RIEPILOGO_DALLE, RIEPILOGO_PAUSA, SITO, SOGLIA_IG,  # come Facebook
+                      TITOLO_RIEPILOGO, allerta_seria, candidate, chiama, coda, fuso, quando, recenti, rilievo,
+                      titoli_usciti)
 
 PAUSA_MINUTI = 20
 FERMO_MINUTI = 60   # quando Meta dice «troppe richieste» non la si chiama per un'ora (il suo conto è sull'ultima ora)
@@ -95,14 +97,16 @@ def didascalia_riepilogo(giorno, notizie):
 
 def gia_pubblicate(ig, token, adesso):
     """Le notizie già uscite (id → titoli usciti), quante notizie oggi (il riepilogo, le chiusure, le curiosità e i gol
-    non contano), l'ora dell'ultimo post (le curiosità e i gol non contano neanche qui) e se il riepilogo di oggi c'è già."""
+    non contano), l'ora dell'ultimo post (le curiosità e i gol non contano neanche qui), se il riepilogo di oggi c'è già
+    e l'ora dell'ultimo post di ogni notizia (id → ora)."""
     r = chiama("GET", f"{ig}/media", token, {"fields": "caption,timestamp", "limit": 50})
-    ids, oggi, ultimo, riepilogo = {}, 0, None, False
+    ids, oggi, ultimo, riepilogo, uscite = {}, 0, None, False, {}
     for p in r.get("data", []):
         t = dt.datetime.strptime(p["timestamp"], "%Y-%m-%dT%H:%M:%S%z").astimezone(fuso())
         m = re.search(r"notiziebenevento\.it/notizia/([a-z0-9-]+)", p.get("caption") or "")
         if m:
             titoli_usciti(ids, m.group(1), p.get("caption"))
+            uscite[m.group(1)] = max(uscite.get(m.group(1), t), t)
         didascalia_ = p.get("caption") or ""
         if "#CuriositàDelSannio" in didascalia_:   # la curiosità delle 12 (curiosita_social.py) non conta tra le notizie
             continue
@@ -111,7 +115,7 @@ def gia_pubblicate(ig, token, adesso):
         oggi += t.date() == adesso.date() and not didascalia_.startswith((TITOLO_RIEPILOGO, "🚸"))
         riepilogo |= t.date() == adesso.date() and didascalia_.startswith(TITOLO_RIEPILOGO)
         ultimo = max(ultimo, t) if ultimo else t
-    return ids, oggi, ultimo, riepilogo
+    return ids, oggi, ultimo, riepilogo, uscite
 
 
 def riepilogo_pronto(sito, notizie, adesso):
@@ -186,7 +190,7 @@ def main():
         notizie = json.load(f).get("notizie", [])
 
     if a.prova:
-        for n, agg in coda(notizie, {}, adesso)[:3]:
+        for n, agg in coda(notizie, {}, adesso, SOGLIA_IG)[:3]:
             print(f"--- {SITO}/img/ig/{n['id']}.jpg\n{didascalia(n, agg)}\n")
         r = riepilogo_pronto(a.sito, notizie, adesso)
         print(f"--- riepilogo: {', '.join(r[2])}\n{didascalia_riepilogo(r[0], r[1])}" if r
@@ -240,7 +244,7 @@ def giro(a, notizie, adesso, token, sera):
     if not ig:
         print("Instagram: la Pagina non ha ancora un account Instagram collegato, non pubblico niente")
         return
-    gia, oggi, ultimo, riepilogo = gia_pubblicate(ig, token, adesso)
+    gia, oggi, ultimo, riepilogo, uscite = gia_pubblicate(ig, token, adesso)
     if not sera:   # un comunicato ufficiale (giro lampo, «subito»): esce adesso, senza pausa né tetto (come facebook.py)
         for n in candidate(notizie, gia, adesso):
             if n.get("subito") and pubblica_notizia(ig, token, n):
@@ -266,7 +270,7 @@ def giro(a, notizie, adesso, token, sera):
     if ultimo and adesso - ultimo < dt.timedelta(minutes=PAUSA_MINUTI):
         print(f"Instagram: l'ultimo post è delle {ultimo:%H:%M}, aspetto")
         return
-    for n, agg in coda(notizie, gia, adesso):
+    for n, agg in coda(notizie, gia, adesso, SOGLIA_IG, recenti(notizie, uscite, adesso)):
         if pubblica_notizia(ig, token, n, agg):
             cosa = "pubblicato l'aggiornamento di" if agg else "pubblicata"
             print(f"Instagram: {cosa} {n['id']} ({oggi + 1} oggi)")

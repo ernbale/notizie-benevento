@@ -64,7 +64,8 @@
    ],
    "subito": true,
    "pubblicato": "2026-10-26T15:37:45+01:00",
-   "foto": "calcio-9"
+   "foto": "calcio-9",
+   "importanza": 5
   },
   {
    "id": "sannio-passaporti-uffici-postali-77-sportelli-340-richieste",
@@ -120,7 +121,8 @@
      }
     ]
    },
-   "foto": "sportello-5"
+   "foto": "sportello-5",
+   "importanza": 4
   },
   {
    "id": "maddaloni-bus-air-pietraroja-santagata-napoli-deviati-cancello-scalo",
@@ -193,7 +195,8 @@
     ]
    },
    "subito": true,
-   "foto": "autobus-19"
+   "foto": "autobus-19",
+   "importanza": 4
   },
   {
    "id": "san-pio-neurochirurgia-lettera-ringraziamento-paziente",
@@ -259,7 +262,8 @@
     ]
    },
    "subito": true,
-   "foto": "ospedale-7"
+   "foto": "ospedale-7",
+   "importanza": 2
   },
   {
    "id": "apice-cimitero-orari-ognissanti-defunti-2026",
@@ -310,7 +314,8 @@
      }
     ]
    },
-   "foto": "cimitero-11"
+   "foto": "cimitero-11",
+   "importanza": 3
   },
   {
    "id": "durazzano-albo-scrutatori-domande-30-novembre-2026",
@@ -380,7 +385,8 @@
      }
     ]
    },
-   "foto": "elezioni-7"
+   "foto": "elezioni-7",
+   "importanza": 2
   },
   {
    "id": "benevento-bonus-luce-gas-2026-requisiti",
@@ -500,7 +506,8 @@
    ],
    "subito": true,
    "pubblicato": "2026-10-26T14:13:26+01:00",
-   "foto": "gas-4"
+   "foto": "gas-4",
+   "importanza": 4
   },
   {
    "id": "airola-incendio-controlli-diossine-latte-forchia",
@@ -572,7 +579,8 @@
     ]
    },
    "subito": true,
-   "foto": "pecore-7"
+   "foto": "pecore-7",
+   "importanza": 4
   },
   {
    "id": "benevento-sciopero-gls-pezzapiana-cambio-appalto",
@@ -656,7 +664,8 @@
      }
     ]
    },
-   "foto": "protesta-13"
+   "foto": "protesta-13",
+   "importanza": 3
   },
   {
    "id": "vitulano-sagra-castagna-strade-chiuse-29-ottobre-1-novembre",
@@ -746,7 +755,8 @@
      "quando": "2026-10-26T15:32+01:00"
     }
    },
-   "foto": "strada-chiusa-5"
+   "foto": "strada-chiusa-5",
+   "importanza": 3
   },
   {
    "id": "colle-sannita-via-gradoni-vittorio-emanuele-fibra-4-novembre",
@@ -799,7 +809,8 @@
      }
     ]
    },
-   "foto": "lavori-stradali-15"
+   "foto": "lavori-stradali-15",
+   "importanza": 2
   },
   {
    "id": "sant-angelo-a-cupolo-buoni-libri-riaperti-termini-30-ottobre",
@@ -850,7 +861,8 @@
      }
     ]
    },
-   "foto": "libri-7"
+   "foto": "libri-7",
+   "importanza": 3
   },
   {
    "id": "benevento-sannio-festival-2026-vincono-salvarezza-masiello",
@@ -940,7 +952,8 @@
      }
     ]
    },
-   "foto": "concerto"
+   "foto": "concerto",
+   "importanza": 2
   },
   {
    "id": "forchia-appia-auto-contro-cancello-morto-74enne",
@@ -1076,7 +1089,8 @@
       "data": "26 ott, 13:14"
      }
     ]
-   }
+   },
+   "importanza": 5
   },
   {
    "id": "faicchio-piazza-borrelli-chiusa-28-ottobre-confindustria",
@@ -1129,7 +1143,8 @@
      }
     ]
    },
-   "foto": "strada-chiusa-16"
+   "foto": "strada-chiusa-16",
+   "importanza": 2
   },
   {
    "id": "buonalbergo-carta-dedicata-a-te-lista-beneficiari-2026",
@@ -1181,7 +1196,8 @@
     ]
    },
    "immagine": "documenti",
-   "foto": "documenti-11"
+   "foto": "documenti-11",
+   "importanza": 3
   },
   {
    "id": "benevento-alessandro-calabrese-premio-poesia-seneca-2026",
@@ -1235,7 +1251,8 @@
     ]
    },
    "immagine": "libri",
-   "foto": "libri-8"
+   "foto": "libri-8",
+   "importanza": 2
   },
   {
    "id": "judo-emilia-diario-bronzo-europei-veterani-portimao-2026",
@@ -1304,7 +1321,8 @@
       "data": "26 ott, 11:47"
      }
     ]
-   }
+   },
+   "importanza": 2
   },
   {
    "id": "castelpoto-santa-croce-del-sannio-elenco-elettori-fuori-sede",
@@ -1462,7 +1480,8 @@
      "titolo_prima": "Castelpoto e Santa Croce del Sannio, aperto l'elenco degli elettori fuori sede: domande entro il 31 dicembre"
     }
    },
-   "foto": "elezioni-3"
+   "foto": "elezioni-3",
+   "importanza": 2
   },
   {
    "id": "libera-benevento-tesseramento-aperitivo-beni-confiscati-funambolo-2026",
@@ -1571,7 +1590,8 @@
      }
     ]
    },
-   "subito": true
+   "subito": true,
+   "importanza": 2
   },
   {
    "id": "tennis-ct-san-giorgio-del-sannio-vince-torino-serie-a2",
@@ -1635,7 +1655,8 @@
      }
     ]
    },
-   "foto": "tennis-9"
+   "foto": "tennis-9",
+   "importanza": 2
   },
   {
    "id": "pietrelcina-centro-raccolta-rifiuti-riapre-27-ottobre",
@@ -1688,7 +1709,8 @@
      }
     ]
    },
-   "foto": "rifiuti-13"
+   "foto": "rifiuti-13",
+   "importanza": 3
   },
   {
    "id": "san-leucio-del-sannio-cimitero-traffico-31-ottobre-2-novembre",
@@ -1743,7 +1765,8 @@
      }
     ]
    },
-   "foto": "cimitero-8"
+   "foto": "cimitero-8",
+   "importanza": 3
   },
   {
    "id": "benevento-liceo-guacci-furto-distributore-computer",
@@ -1798,7 +1821,8 @@
       "data": "26 ott, 08:54"
      }
     ]
-   }
+   },
+   "importanza": 2
   },
   {
    "id": "santagata-de-goti-piazza-sant-alfonso-divieto-sosta-29-ottobre",
@@ -1904,7 +1928,8 @@
      }
     ]
    },
-   "foto": "vaccini-4"
+   "foto": "vaccini-4",
+   "importanza": 2
   },
   {
    "id": "linea-caserta-foggia-treni-rallentati-amorosi-26-ottobre",
@@ -1973,7 +1998,8 @@
      }
     ]
    },
-   "foto": "treno-7"
+   "foto": "treno-7",
+   "importanza": 4
   },
   {
    "id": "benevento-san-pio-tre-medici-dimissioni",
@@ -2025,7 +2051,8 @@
      }
     ]
    },
-   "foto": "ospedale-5"
+   "foto": "ospedale-5",
+   "importanza": 4
   },
   {
    "id": "apice-castello-ettore-illuminazione-bando-regione",
@@ -2075,7 +2102,8 @@
      }
     ]
    },
-   "foto": "luce-8"
+   "foto": "luce-8",
+   "importanza": 2
   },
   {
    "id": "stregati-dai-vicoli-ponte-programma-2026",
@@ -2147,7 +2175,8 @@
     ]
    },
    "subito": true,
-   "pubblicato": "2026-10-26T08:02:03+01:00"
+   "pubblicato": "2026-10-26T08:02:03+01:00",
+   "importanza": 3
   },
   {
    "id": "benevento-53-nuove-telecamere-videosorveglianza",
@@ -2210,7 +2239,8 @@
     ]
    },
    "immagine": "telecamere",
-   "foto": "telecamere-7"
+   "foto": "telecamere-7",
+   "importanza": 3
   },
   {
    "id": "san-martino-sannita-lampade-votive-occasionali-terranova-2026",
@@ -2356,7 +2386,8 @@
    },
    "subito": true,
    "pubblicato": "2026-10-25T23:04:33+01:00",
-   "foto": "stadio-5"
+   "foto": "stadio-5",
+   "importanza": 5
   },
   {
    "id": "miwa-basket-benevento-vince-ragusa-69-75",
@@ -3515,7 +3546,8 @@
    "subito": true,
    "comunicati": [
     "u4951c8d3962"
-   ]
+   ],
+   "importanza": 5
   },
   {
    "id": "benevento-trofeo-don-pompilio-amatori-podismo-antonucci-secondo",
@@ -4056,7 +4088,8 @@
      "quando": "2026-10-26T14:24+01:00",
      "titolo_prima": "Benevento, bambino investito da una bici sul corso Garibaldi: il sindaco chiede pattuglie fisse"
     }
-   }
+   },
+   "importanza": 3
   },
   {
    "id": "sant-agata-de-goti-pronto-soccorso-h24-tar-puglianello",
@@ -4247,7 +4280,8 @@
      "quando": "2026-10-25T06:11+01:00"
     }
    },
-   "foto": "pronto-soccorso-2"
+   "foto": "pronto-soccorso-2",
+   "importanza": 4
   },
   {
    "id": "benevento-primavera-2-avellino-5-2-24-ottobre",
@@ -4916,7 +4950,8 @@
      "quando": "2026-10-26T09:17+01:00"
     }
    },
-   "foto": "treno-6"
+   "foto": "treno-6",
+   "importanza": 5
   },
   {
    "id": "benevento-mensa-scolastica-centro-cottura-authentica-30-novembre",
@@ -5497,7 +5532,8 @@
      "quando": "2026-10-25T10:10+01:00",
      "titolo_prima": "Benevento, ragazza colpita con uno schiaffo a Corso Garibaldi: la Polizia ha identificato il giovane"
     }
-   }
+   },
+   "importanza": 4
   },
   {
    "id": "benevento-inchiesta-comune-incidente-probatorio-3-novembre",
@@ -5843,7 +5879,8 @@
      "quando": "2026-10-26T13:15+01:00",
      "titolo_prima": "Montesarchio, 26enne arrestata con circa 230 grammi di cocaina: lunedì l'udienza di convalida"
     }
-   }
+   },
+   "importanza": 3
   },
   {
    "id": "cusano-mutri-civitella-bus-air-deviati-sagra-castagna",
@@ -6365,7 +6402,8 @@
      "titolo_prima": "Telese Terme, clinica Gepos: un nuovo licenziamento, i sindacati chiedono chiarezza sui conti e confermano il sit-in del 26 ottobre"
     }
    },
-   "foto": "protesta-5"
+   "foto": "protesta-5",
+   "importanza": 3
   },
   {
    "id": "yolo-benevento-dinamo-taranto-24-ottobre",
@@ -7017,7 +7055,8 @@
     }
    },
    "immagine": "consiglio",
-   "foto": "consiglio-7"
+   "foto": "consiglio-7",
+   "importanza": 4
   },
   {
    "id": "benevento-5-active-network-23-ottobre-palatedeschi",
@@ -7705,7 +7744,8 @@
    "subito": true,
    "comunicati": [
     "ua028cefa343"
-   ]
+   ],
+   "importanza": 5
   },
   {
    "id": "benevento-via-cosentini-bonazzi-vitelli-scavi-fibra-30-ottobre",
@@ -10985,7 +11025,8 @@
     }
    },
    "immagine": "anziani",
-   "foto": "anziani-5"
+   "foto": "anziani-5",
+   "importanza": 3
   }
  ],
  "approfondimenti": [

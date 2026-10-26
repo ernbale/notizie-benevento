@@ -814,6 +814,12 @@ def controlla(d, err, avv, adesso=None):
             err.append(f"{w}: stato non ammesso {n.get('stato')!r}")
         if not isinstance(n.get("rilevante"), bool):
             err.append(f"{w}: rilevante deve essere true o false")
+        # l'importanza da 1 a 5 per la classifica dei social (AGENTE.md, dal 26 ott 2026): se manca la ricava facebook.py
+        imp = n.get("importanza")
+        if "importanza" in n and (isinstance(imp, bool) or not isinstance(imp, int) or not 1 <= imp <= 5):
+            err.append(f"{w}: importanza deve essere un numero da 1 a 5 (AGENTE.md, «L'importanza per i social»)")
+        elif "importanza" not in n and adesso and str(n.get("pubblicato", ""))[:10] == adesso.date().isoformat():
+            avv.append(f"{w}: manca «importanza» (1-5, AGENTE.md «L'importanza per i social»): la ricava il programma")
         if not ISO.match(str(n.get("pubblicato", ""))):
             err.append(f"{w}: pubblicato non ISO {n.get('pubblicato')!r}")
         elif adesso and nel_futuro(n["pubblicato"], adesso):

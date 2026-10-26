@@ -21,8 +21,8 @@ notizia e la sua scheda sono già online quando Facebook le legge.
   per domani. La gialla alle 23 no (scelta del proprietario, 23 ott 2026: vale per Facebook, Telegram e Instagram).
 - Dalle RIEPILOGO_DALLE il riepilogo della giornata («Il Sannio oggi»): la copertina di Instagram (pagine.py) con le
   notizie più importanti di oggi e i loro link, una volta; dopo le notizie continuano a uscire, una ogni PAUSA_MINUTI.
-- Sceglie la più importante tra le notizie delle ultime 12 ore non ancora pubblicate (stessa importanza della prima
-  pagina del sito: rilevante e numero di fonti, che calano col tempo).
+- Sceglie la prima della classifica dei social tra le notizie delle ultime 12 ore non ancora pubblicate (e gli avvisi
+  ancora in vigore degli ultimi GIORNI_AVVISI giorni): vedi CLASSIFICA qui sotto.
 - Cosa è già uscito lo legge dalla Pagina stessa (i link dei post): niente file da tenere nel repository. Se Facebook
   non risponde alla lettura non pubblica niente, per non fare doppioni.
 - La chiave è il «token della Pagina» nel segreto FB_PAGE_TOKEN di GitHub; senza chiave non fa niente.
@@ -49,6 +49,18 @@ PAGINA = "Notizie Benevento"
 GRAPH = "https://graph.facebook.com"
 PAUSA_MINUTI = 20
 ORE_FINESTRA = 12
+# La classifica dei social, decisa col proprietario il 26 ott 2026 («creare una classifica con criterio e pubblicare il
+# giusto»; fino ad allora contavano solo il numero di fonti e l'ora, e lo sciopero EAV è rimasto in coda per ore):
+# l'importanza da 1 a 5 che scrive l'agente (AGENTE.md, «L'importanza per i social»: Benevento Calcio sempre 5,
+# politica 4, la cronaca dei paesi come quella della città), più un po' per la fonte ufficiale, per Benevento città e
+# per i giornali che la riportano; si dimezza ogni 12 ore, ma un avviso ancora in vigore no. Su Facebook escono quelle
+# da SOGLIA_FB in su, su Instagram da SOGLIA_IG; i comunicati arrivati per posta («subito») escono tutti, comunque.
+# Delle notizie dei paesi che non sono cronaca e valgono 3 ne esce al massimo una ogni PAESI_MINUTI (lui: «non vorrei
+# invasioni di notizie solo di paesi»).
+SOGLIA_FB, SOGLIA_IG = 3, 4
+PAESI_MINUTI = 60
+GIORNI_AVVISI = 3
+AREA_VASTA = re.compile(r"^(sannio|provincia|campania|linea|linee|valle)\b|provincia|,| e |/", re.I)
 RIEPILOGO_DALLE = 20   # il riepilogo della giornata, su Facebook e su Instagram (dalle 20: voluto dal proprietario)
 RIEPILOGO_PAUSA = 30   # minuti dall'ultimo post
 TITOLO_RIEPILOGO = "Il Sannio oggi"
@@ -81,10 +93,41 @@ def quando(n, adesso):
         return None
 
 
+def importanza(n):
+    """L'importanza da 1 a 5 (CLASSIFICA): quella scritta dall'agente; se manca, ricavata dal tipo di notizia."""
+    v = n.get("importanza")
+    if isinstance(v, int) and not isinstance(v, bool) and 1 <= v <= 5:
+        return v
+    if n.get("categoria") == "sport":
+        return 5 if n.get("sport") == "calcio" and "benevento" in str(n.get("titolo") or "").lower() else 2
+    if allerta_seria(n):
+        return 5
+    if n.get("categoria") in ("cronaca", "politica", "meteo") or n.get("rilevante"):
+        return 4
+    return 3
+
+
+def in_citta(n):
+    return str(n.get("luogo") or "").strip().lower().startswith("benevento")
+
+
+def paese_minore(n):
+    """Una notizia di un paese (non Benevento, non tutta la provincia) che non è cronaca e vale 3 o meno."""
+    luogo = str(n.get("luogo") or "").strip()
+    return (bool(luogo) and not in_citta(n) and not AREA_VASTA.search(luogo) and n.get("categoria") != "cronaca"
+            and importanza(n) <= 3)
+
+
+def in_vigore(n, adesso):
+    return str(n.get("in_vigore_fino") or "") >= adesso.date().isoformat()
+
+
 def rilievo(n, t, adesso):
+    """Il punteggio della classifica dei social (CLASSIFICA)."""
     ore = max(0.0, (adesso - t).total_seconds() / 3600)
     fonti = n.get("fonti") if isinstance(n.get("fonti"), list) else [1]
-    return ((5 if n.get("rilevante") else 1) + min(len(fonti), 6) * 0.25) * 0.5 ** (ore / 18)
+    punti = importanza(n) * 20 + 5 * (n.get("stato") == "ufficiale") + 5 * in_citta(n) + 2 * min(max(len(fonti) - 1, 0), 5)
+    return punti if in_vigore(n, adesso) else punti * 0.5 ** (ore / 12)
 
 
 def allerta_seria(n):
@@ -97,7 +140,10 @@ def candidate(notizie, gia, adesso):
     out = []
     for n in notizie:
         t = quando(n, adesso)
-        if not t or n.get("id") in gia or t > adesso or adesso - t > dt.timedelta(hours=ORE_FINESTRA):
+        vecchia = adesso - t > dt.timedelta(hours=ORE_FINESTRA) if t else True
+        if vecchia and t and in_vigore(n, adesso) and adesso - t <= dt.timedelta(days=GIORNI_AVVISI):
+            vecchia = False   # un avviso ancora in vigore resta in classifica
+        if not t or n.get("id") in gia or t > adesso or vecchia:
             continue
         if n.get("diretta_calcio"):   # l'articolo di fine partita: sui social è già uscito il «Finale» (gol.py)
             continue
@@ -135,12 +181,21 @@ def aggiornate(notizie, gia, adesso):
     return out
 
 
-def coda(notizie, gia, adesso):
-    """Le notizie nuove e gli aggiornamenti col titolo cambiato, dal più importante: [(notizia, è un aggiornamento)].
-    Un aggiornamento conta dall'ora dell'aggiornamento, come in prima pagina."""
+def coda(notizie, gia, adesso, soglia=SOGLIA_FB, recenti=()):
+    """Le notizie nuove e gli aggiornamenti col titolo cambiato, in ordine di classifica (CLASSIFICA), solo quelli da
+    soglia in su (i comunicati «subito» sempre): [(notizia, è un aggiornamento)]. Un aggiornamento conta dall'ora
+    dell'aggiornamento, come in prima pagina. recenti: le notizie uscite nelle ultime PAESI_MINUTI (una di paese basta)."""
     out = [(rilievo(n, quando(n, adesso), adesso), n, False) for n in candidate(notizie, gia, adesso)]
     out += [(rilievo(n, t, adesso), n, True) for n, t in aggiornate(notizie, gia, adesso)]
+    out = [x for x in out if importanza(x[1]) >= soglia or (x[1].get("subito") and not x[2])]
+    if any(paese_minore(n) for n in recenti):
+        out = [x for x in out if not paese_minore(x[1]) or (x[1].get("subito") and not x[2])]
     return [(n, agg) for _, n, agg in sorted(out, key=lambda x: -x[0])]
+
+
+def recenti(notizie, uscite, adesso):
+    """Le notizie uscite sui social nelle ultime PAESI_MINUTI (uscite: id → ora dell'ultimo post)."""
+    return [n for n in notizie if n.get("id") in uscite and adesso - uscite[n["id"]] < dt.timedelta(minutes=PAESI_MINUTI)]
 
 
 def messaggio(n, aggiornamento=False):
@@ -291,9 +346,9 @@ def foto_inviate(token, n, link):
 
 def gia_pubblicate(token, adesso):
     """Le notizie già sulla Pagina (id → titoli usciti), quante notizie oggi (il riepilogo e le chiusure non contano),
-    l'ora dell'ultima e se il riepilogo di oggi c'è già."""
+    l'ora dell'ultima, se il riepilogo di oggi c'è già e l'ora dell'ultimo post di ogni notizia (id → ora)."""
     r = chiama("GET", "me/posts", token, {"fields": "created_time,message,attachments{unshimmed_url,url}", "limit": 50})
-    ids, oggi, ultimo, riepilogo = {}, 0, None, False
+    ids, oggi, ultimo, riepilogo, uscite = {}, 0, None, False, {}
     for p in r.get("data", []):
         t = dt.datetime.strptime(p["created_time"], "%Y-%m-%dT%H:%M:%S%z").astimezone(fuso())
         testo = p.get("message") or ""
@@ -307,10 +362,11 @@ def gia_pubblicate(token, adesso):
             m = re.search(r"notiziebenevento\.it/notizia/([a-z0-9-]+)", u)
             if m:
                 titoli_usciti(ids, m.group(1), testo)
+                uscite[m.group(1)] = max(uscite.get(m.group(1), t), t)
                 oggi += t.date() == adesso.date()
                 ultimo = max(ultimo, t) if ultimo else t
                 break
-    return ids, oggi, ultimo, riepilogo
+    return ids, oggi, ultimo, riepilogo, uscite
 
 
 def fai_riepilogo(token, a, notizie, adesso, ultimo):
@@ -357,7 +413,9 @@ def main():
     if a.prova:
         for n, agg in coda(notizie, {}, adesso)[:40]:
             foto = "le foto inviate" if n.get("foto_inviate") and not agg else scheda(n) or "nessuna immagine: solo testo"
-            print(f"- {n['id']}{' (aggiornamento)' if agg else ''}\n  foto: {foto}\n  "
+            print(f"- {n['id']}{' (aggiornamento)' if agg else ''} · importanza {importanza(n)}"
+                  f"{' (scritta)' if n.get('importanza') else ' (ricavata)'} · punti {rilievo(n, quando(n, adesso), adesso):.0f}"
+                  f"{' · paese' if paese_minore(n) else ''}\n  foto: {foto}\n  "
                   + testo_post(n, agg).replace("\n", "\n  ") + "\n")
         return
 
@@ -373,7 +431,7 @@ def main():
     chi = chiama("GET", "me", token, {"fields": "name"}).get("name")
     if chi != PAGINA:
         raise RuntimeError(f"la chiave non è della Pagina «{PAGINA}»: non pubblico niente")
-    gia, oggi, ultimo, riepilogo = gia_pubblicate(token, adesso)
+    gia, oggi, ultimo, riepilogo, uscite = gia_pubblicate(token, adesso)
     # un comunicato ufficiale arrivato per posta (giro lampo: «subito» in notizie.json, strumenti/comunicati.py) esce
     # adesso: niente pausa, niente tetto del giorno, anche dopo il riepilogo (lui, 24 ott 2026: «pubblicazione istantanea»)
     urgenti = [] if sera else [n for n in candidate(notizie, gia, adesso) if n.get("subito")]
@@ -389,7 +447,7 @@ def main():
     if not subito and ultimo and adesso - ultimo < dt.timedelta(minutes=PAUSA_MINUTI):
         print(f"Facebook: l'ultimo post è delle {ultimo:%H:%M}, aspetto")
         return
-    lista = coda(notizie, gia, adesso)
+    lista = coda(notizie, gia, adesso, SOGLIA_FB, recenti(notizie, uscite, adesso))
     if sera:
         lista = [(n, False) for n in candidate(notizie, gia, adesso) if allerta_seria(n)]
         if not lista:

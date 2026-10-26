@@ -567,6 +567,28 @@ ce n'è). Un avviso con `in_vigore_fino` passato non va più in testa. Quindi in
 - Una storia che va avanti resta in testa perché ha l'«aggiornamento» di oggi; una che non si muove scende da sola.
 - `in_vigore_fino` giusto: l'ultimo giorno in cui l'avviso vale davvero.
 
+## L'importanza per i social (`importanza`)
+
+Facebook e Instagram non pubblicano tutto: scelgono con una classifica (strumenti/facebook.py, voluta dal proprietario
+il 26 ott 2026: «creare una classifica con criterio e pubblicare il giusto»). Il punto che conta di più lo dai tu:
+`importanza`, un numero da 1 a 5, a ogni notizia nuova (e cambialo se la notizia cresce o si sgonfia), come farebbe un
+caporedattore:
+- **5** tocca tutti: il **Benevento Calcio, sempre** (partite, risultati, infortuni, mercato, biglietti); incidenti
+  gravi, morti; scioperi dei trasporti; acqua sospesa in città; allerte arancioni o rosse; scuole chiuse.
+- **4** tocca tanti: la **politica** (Comune, Provincia, Regione per il Sannio: sindaco, giunta, consiglio, mozioni);
+  ospedale e sanità; strade principali chiuse; treni e bus; bonus, bandi e scadenze; cronaca (arresti, furti
+  importanti, aggressioni); eventi grandi.
+- **3** utile a un paese o a un quartiere: avvisi e servizi dei Comuni (orari, cimiteri, raccolta rifiuti, lavori,
+  strade chiuse di un paese), sagre e feste, iniziative di associazioni.
+- **2** interesse limitato: premi, cultura, concorsi, sport minori e dilettanti, politica senza effetti.
+- **1** minore.
+La **cronaca dei paesi vale come quella della città** (lui: «paesi dipende, se cronaca come la città»): un morto sulla
+statale a Forchia è 5 come a Benevento. Il resto dei paesi in genere è 3: il programma ne fa uscire al massimo uno
+all'ora, perché la pagina non diventi solo notizie di paesi («non vorrei invasioni di notizie solo di paesi»).
+Su Facebook escono le notizie da 3 in su (al massimo una ogni 20 minuti), su Instagram solo 4 e 5; quelle da 1 e 2
+restano sul sito e su Telegram. I comunicati arrivati per posta escono comunque, tutti, subito. Se `importanza`
+manca il programma la ricava dalla categoria, peggio di te: scrivila sempre.
+
 ## La foto illustrativa (`immagine`)
 
 - In `img/temi/temi.json` c'è l'elenco delle foto illustrative già pronte, fatte una volta sola con l'AI: ogni tema ha
@@ -716,6 +738,7 @@ Nel resoconto scrivi quanti ne hai aggiunti, e se l'elenco dice ATTENZIONE (copi
     "immagine": "tema da img/temi/temi.json (facoltativo, mai per la cronaca)",
     "luogo": "paese o località", "pubblicato": "ISO dell'articolo fonte più recente, oppure solo AAAA-MM-GG se l'ora non è scritta",
     "stato": "confermata|ufficiale|una_fonte (vedi regola 2)", "rilevante": false,
+    "importanza": "1-5, il numero (vedi «L'importanza per i social»)",
     "in_vigore_fino": "AAAA-MM-GG, solo per avvisi ufficiali con una scadenza (lavori, divieti, ordinanze)",
     "in_vigore_dal": "AAAA-MM-GG, il primo giorno dell'avviso (facoltativo; serve quando comincia più avanti)",
     "traffico": "chiusa|blocchi|senso_unico|ristretta|bus, solo per strade chiuse o con disagi (vedi sotto)",
@@ -746,7 +769,7 @@ Nel resoconto scrivi quanti ne hai aggiunti, e se l'elenco dice ATTENZIONE (copi
   `nome` di `articolo.fonti` (o `approfondimento.fonti`; lo controlla `archivia.py`). Se citi due articoli dello
   stesso giornale, distinguili: «Ottopagine (19/10)», «Ottopagine (20/10)».
 - `fonti` della notizia (quelle in prima pagina): una per testata, l'articolo più recente.
-- `rilevante` c'è sempre, come `true` o `false` (booleano, non testo).
+- `rilevante` c'è sempre, come `true` o `false` (booleano, non testo). `importanza` c'è sempre, come numero da 1 a 5.
 - La categoria `meteo` sul sito si chiama **«Allerte»** (vedi «Le Allerte»); la categoria `sport` vuole anche il
   campo `sport` (vedi «Lo sport»).
 - Per gli **avvisi ufficiali con una scadenza** (strade chiuse, lavori, divieti, ordinanze su scuole o acqua) scrivi
