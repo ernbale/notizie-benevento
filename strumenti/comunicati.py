@@ -193,6 +193,9 @@ def dati_del_testo(t, nostro=False):
     """{chiave confrontabile: come è scritto} dei prezzi, delle percentuali, degli orari e delle date di un testo.
     Con nostro=True (il nostro articolo) gli orari si riconoscono anche scritti a parole («dalle 19», «a mezzogiorno»)."""
     t = str(t or "").lower().replace(" ", " ")
+    # «10 mila 800 euro» sono 10.800 euro, non 800 (26 ott 2026: falso allarme sul bonus luce e gas del Comune)
+    t = re.sub(r"\b(\d{1,3})\s+mila\s+(\d{1,3})\b", lambda m: str(int(m.group(1)) * 1000 + int(m.group(2))), t)
+    t = re.sub(r"\b(\d{1,3})\s+mila\b", lambda m: str(int(m.group(1)) * 1000), t)
     out = {}
     for m in re.finditer(r"€\s*(\d[\d.,]*\d|\d)|\b(\d[\d.,]*\d|\d)\s*(?:€|euro\b)", t):
         out.setdefault(("prezzo", numero(m.group(1) or m.group(2))), m.group(0).strip())
