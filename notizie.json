@@ -3,6 +3,72 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "san-pio-neurochirurgia-lettera-ringraziamento-paziente",
+   "titolo": "Ospedale San Pio di Benevento, la lettera di un paziente guarito: «grazie» alla Neurochirurgia",
+   "titolo_google": "San Pio Benevento, paziente ringrazia la Neurochirurgia",
+   "sintesi": "Un paziente operato al San Pio di Benevento per un ematoma subdurale cronico ha scritto una lettera su pergamena alla direttrice generale Maria Morgante per ringraziare medici e personale della Neurochirurgia.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "immagine": "ospedale",
+   "pubblicato": "2026-10-26",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Ospedale San Pio",
+     "url": "https://www.aosanpio.it/",
+     "ufficiale": true
+    }
+   ],
+   "comunicati": [
+    "905924487f60"
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Un paziente curato all'ospedale San Pio di Benevento ha scritto una lettera su pergamena per ringraziare i medici e il personale della Neurochirurgia. L'ha indirizzata alla direttrice generale dell'Azienda ospedaliera, Maria Morgante. Il reparto è diretto da Giovanni Parbonetti.",
+      "fonti": [
+       "Ospedale San Pio"
+      ]
+     },
+     {
+      "testo": "Nella lettera il paziente racconta che un anno fa è arrivato al pronto soccorso privo di conoscenza. Aveva un ematoma subdurale cronico, una raccolta di sangue tra il cervello e la membrana che lo avvolge, che lo teneva in uno stato di incoscienza. È stato portato in sala operatoria per rimuoverlo e l'intervento è riuscito: al momento delle dimissioni era vigile. «Oggi sono guarito. Posso raccontare e ringraziare», scrive.",
+      "fonti": [
+       "Ospedale San Pio"
+      ]
+     },
+     {
+      "testo": "I ringraziamenti vanno a tutto lo staff della Neurochirurgia e al direttore Parbonetti, alla dottoressa Valeria Olga Corriero, «che ha deciso per me il mio destino», e al dottor Manuel Colangelo, decisivo quando è stato necessario tornare in sala operatoria per una sutura in difficoltà. Il paziente ringrazia anche tutto il personale del reparto che lo ha sostenuto nei momenti difficili.",
+      "fonti": [
+       "Ospedale San Pio"
+      ]
+     },
+     {
+      "testo": "La direttrice generale Maria Morgante ringrazia il paziente per la sua testimonianza. «La cura della persona e l'attenzione all'utente sono i pilastri fondamentali dell'impegno ospedaliero», dice, e aggiunge che l'innovazione tecnologica non ha valore se non è accompagnata da empatia e vicinanza al paziente. Secondo Morgante, l'impegno dei medici e del personale sanitario del San Pio trasforma il ricovero «in un percorso di autentica solidarietà umana».",
+      "fonti": [
+       "Ospedale San Pio"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Ospedale San Pio",
+      "titolo": "AORN SAN PIO, ELOGI ALLA UOC NEUROCHIRURGIA",
+      "url": "https://www.aosanpio.it/",
+      "data": "26 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "subito": true,
+   "foto": "ospedale-7"
+  },
+  {
    "id": "apice-cimitero-orari-ognissanti-defunti-2026",
    "titolo": "Apice, gli orari del cimitero per Ognissanti e i Defunti: dal 29 ottobre al 2 novembre aperto dalle 8 alle 18",
    "titolo_google": "Cimitero di Apice, orari dal 27 ottobre al 2 novembre",
