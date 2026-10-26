@@ -11,25 +11,24 @@ notizia e la sua scheda sono già online quando Facebook le legge.
   post con l'anteprima del link. Se la scheda non c'è, l'immagine di anteprima della pagina (img/n/<id>.png); se
   Facebook rifiuta la foto, il solo testo, sempre con «Leggi tutto».
 
-- Le notizie dei comunicati arrivati per posta («subito», giro lampo) escono appena ci sono, senza pausa né tetto.
-- Al massimo una notizia ogni PAUSA_MINUTI (25) e MAX_GIORNO (35) al giorno, solo dalle 6
-  fino al giro delle 22 compreso, come i giri: senza raffiche che sembrano spam (scelta del proprietario: 23 ott 2026
-  50 minuti e 20 al giorno; 24 ott 2026 «aumenta i limiti» → 25 minuti e 35, con un giro in più alle :40 che fa
-  partire il Pi, curiosita_via.py --giro: ieri su 44 notizie ne erano uscite 13). Dalle 23 alle 24 solo le allerte
-  arancioni o rosse (allerta_seria): è il giro della sera prima di un'allerta arancione o rossa, con le scuole chiuse
-  per domani. La gialla alle 23 no (scelta del proprietario, 23 ott 2026: vale per Facebook, Telegram e Instagram).
-- Dalle RIEPILOGO_DALLE il riepilogo della giornata («Il Sannio oggi»): la copertina di Instagram (pagine.py) con le
-  notizie più importanti di oggi e i loro link. È in più delle MAX_GIORNO notizie (scelta del proprietario, 23 ott 2026: «20 +
-  riepilogo per entrambi») e dopo, fino al mattino, solo le allerte delle 23.
-- Sceglie la più importante tra le notizie delle ultime 12 ore non ancora pubblicate (stessa importanza della prima
-  pagina del sito: rilevante e numero di fonti, che calano col tempo).
+- Niente pausa tra un post e l'altro e niente tetto al giorno: a ogni volta escono tutte le notizie nuove (lui, 26 ott
+  2026: «togliamo i limiti ai social, nessun limite, non ci tappiamo inutilmente»; prima una ogni 25 minuti e 35 al
+  giorno). Prima i comunicati arrivati per posta («subito», giro lampo), poi le altre dalla più importante (come la
+  prima pagina del sito: rilevante e numero di fonti, che calano col tempo), tra quelle delle ultime 12 ore non ancora
+  uscite.
+- Solo dalle 6 fino al giro delle 22 compreso; dalle 23 alle 24 solo le allerte arancioni o rosse (allerta_seria): è il
+  giro della sera prima di un'allerta arancione o rossa, con le scuole chiuse per domani. La gialla alle 23 no (scelta
+  del proprietario, 23 ott 2026: vale per Facebook, Telegram e Instagram).
+- Dalle RIEPILOGO_DALLE, una volta al giorno, il riepilogo della giornata («Il Sannio oggi»): la copertina di
+  Instagram (pagine.py) con le notizie più importanti di oggi e i loro link. Dopo il riepilogo le notizie nuove
+  continuano a uscire.
+- Una notizia che Facebook rifiuta non ferma le altre: si dice nell'avviso e si riprova alla volta dopo.
 - Cosa è già uscito lo legge dalla Pagina stessa (i link dei post): niente file da tenere nel repository. Se Facebook
   non risponde alla lettura non pubblica niente, per non fare doppioni.
 - La chiave è il «token della Pagina» nel segreto FB_PAGE_TOKEN di GitHub; senza chiave non fa niente.
   Il repository è pubblico: nei log si stampano solo gli esiti, mai la chiave.
 
 Uso:  FB_PAGE_TOKEN=… python3 strumenti/facebook.py [--sito .] [--stato FILE]
-      FB_SUBITO=2 …   (lanciato a mano da GitHub: 2 notizie adesso, senza aspettare la pausa tra un post e l'altro)
       python3 strumenti/facebook.py --prova      (dice cosa pubblicherebbe, senza chiave e senza toccare Facebook)
 """
 import argparse
@@ -47,11 +46,8 @@ import urllib.request
 SITO = "https://notiziebenevento.it"
 PAGINA = "Notizie Benevento"
 GRAPH = "https://graph.facebook.com"
-MAX_GIORNO = 35
-PAUSA_MINUTI = 25
 ORE_FINESTRA = 12
 RIEPILOGO_DALLE = 20   # il riepilogo della giornata, su Facebook e su Instagram (dalle 20: voluto dal proprietario)
-RIEPILOGO_PAUSA = 30   # minuti dall'ultimo post
 TITOLO_RIEPILOGO = "Il Sannio oggi"
 DALLE, ALLE = 6, 23   # dalle 6 fino al giro delle 22 compreso (ALLE è l'ora in cui si smette)
 AGG = "🔴 Aggiornamento · "   # come su Telegram
@@ -311,17 +307,13 @@ def gia_pubblicate(token, adesso):
     return ids, oggi, ultimo, riepilogo
 
 
-def fai_riepilogo(token, a, notizie, adesso, ultimo):
-    """Il riepilogo della giornata, se è il momento: True se ha finito il lavoro di questa volta (pubblicato o da
-    aspettare), False se oggi non c'è (poche notizie) e si va avanti con le notizie normali."""
+def fai_riepilogo(token, a, notizie, adesso):
+    """Il riepilogo della giornata: True se è uscito, False se oggi non c'è (poche notizie)."""
     from instagram import riepilogo_pronto
     r = riepilogo_pronto(a.sito, notizie, adesso)
     if not r:
         print("Facebook: niente riepilogo oggi (poche notizie)")
         return False
-    if ultimo and adesso - ultimo < dt.timedelta(minutes=RIEPILOGO_PAUSA):
-        print(f"Facebook: l'ultimo post è delle {ultimo:%H:%M}, il riepilogo al prossimo giro")
-        return True
     stato = {}
     if a.stato:
         try:
@@ -353,7 +345,7 @@ def main():
         notizie = json.load(f).get("notizie", [])
 
     if a.prova:
-        for n, agg in coda(notizie, {}, adesso)[:MAX_GIORNO]:
+        for n, agg in in_ordine(coda(notizie, {}, adesso)):
             foto = "le foto inviate" if n.get("foto_inviate") and not agg else scheda(n) or "nessuna immagine: solo testo"
             print(f"- {n['id']}{' (aggiornamento)' if agg else ''}\n  foto: {foto}\n  "
                   + testo_post(n, agg).replace("\n", "\n  ") + "\n")
@@ -372,43 +364,41 @@ def main():
     if chi != PAGINA:
         raise RuntimeError(f"la chiave non è della Pagina «{PAGINA}»: non pubblico niente")
     gia, oggi, ultimo, riepilogo = gia_pubblicate(token, adesso)
-    # un comunicato ufficiale arrivato per posta (giro lampo: «subito» in notizie.json, strumenti/comunicati.py) esce
-    # adesso: niente pausa, niente tetto del giorno, anche dopo il riepilogo (lui, 24 ott 2026: «pubblicazione istantanea»)
-    urgenti = [] if sera else [n for n in candidate(notizie, gia, adesso) if n.get("subito")]
-    for n in urgenti[:3]:
-        pubblica(token, n)
-        oggi += 1
-        print(f"Facebook: pubblicata subito {n['id']} (comunicato, {oggi} oggi)")
-    if urgenti:
-        return
-    if not sera:
-        if riepilogo:
-            print("Facebook: il riepilogo di oggi è già uscito, a domani")
-            return
-        if adesso.hour >= RIEPILOGO_DALLE and fai_riepilogo(token, a, notizie, adesso, ultimo):
-            return
-        if oggi >= MAX_GIORNO:
-            print(f"Facebook: già {oggi} notizie oggi (il massimo è {MAX_GIORNO}, più il riepilogo), basta così")
-            return
-    subito = int(os.environ.get("FB_SUBITO") or 0)   # solo quando lo chiede il proprietario, dal pulsante di GitHub
-    if not subito and ultimo and adesso - ultimo < dt.timedelta(minutes=PAUSA_MINUTI):
-        print(f"Facebook: l'ultimo post è delle {ultimo:%H:%M}, aspetto")
-        return
-    lista = coda(notizie, gia, adesso)
+    errori = []
     if sera:
         lista = [(n, False) for n in candidate(notizie, gia, adesso) if allerta_seria(n)]
         if not lista:
             print("Facebook: sono le 23, a quest'ora si pubblicano solo le allerte arancioni o rosse")
             return
+    else:
+        if adesso.hour >= RIEPILOGO_DALLE and not riepilogo:
+            try:
+                fai_riepilogo(token, a, notizie, adesso)
+            except Exception as e:   # le notizie escono lo stesso; l'avviso alla fine
+                errori.append(f"riepilogo: {e}")
+        lista = in_ordine(coda(notizie, gia, adesso))
     if not lista:
         print("Facebook: nessuna notizia nuova da pubblicare")
-        return
-    for n, agg in lista[:max(1, min(max(subito, 1), MAX_GIORNO - oggi))]:
-        pubblica(token, n, agg)
+    for n, agg in lista:
+        try:
+            pubblica(token, n, agg)
+        except Exception as e:   # una notizia rifiutata non ferma le altre: si riprova alla volta dopo
+            errori.append(f"{n['id']}: {e}")
+            continue
         oggi += 1
-        cosa = "pubblicato l'aggiornamento di" if agg else "pubblicata"
-        print(f"Facebook: {cosa} {n['id']} ({oggi} oggi)")
+        if agg:
+            print(f"Facebook: pubblicato l'aggiornamento di {n['id']} ({oggi} oggi)")
+        else:
+            print(f"Facebook: pubblicata {'subito ' if n.get('subito') else ''}{n['id']} "
+                  f"({'comunicato, ' if n.get('subito') else ''}{oggi} oggi)")
+    if errori:
+        raise RuntimeError("; ".join(errori))
 
+
+def in_ordine(lista):
+    """Prima i comunicati arrivati per posta («subito», giro lampo: lui, 24 ott 2026, «pubblicazione istantanea»),
+    poi il resto nell'ordine di coda() (dalla più importante)."""
+    return [x for x in lista if x[0].get("subito") and not x[1]] + [x for x in lista if not (x[0].get("subito") and not x[1])]
 
 if __name__ == "__main__":
     try:
