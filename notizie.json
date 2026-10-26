@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26T19:16+01:00",
+ "aggiornato": "2026-10-26T20:10+01:00",
  "giornali_letti": 14,
  "notizie": [
   {
@@ -1615,6 +1615,10 @@
     {
      "nome": "BeneventoNews24",
      "url": "https://www.beneventonews24.it/2026/10/26/benevento-bonus-luce-e-gas-ok-alla-delibera-con-i-requisiti-per-accedere-ai-contributi/"
+    },
+    {
+     "nome": "Il Mattino",
+     "url": "https://www.ilmattino.it/benevento/benevento_bonus_bollette_luce_gas_contributi_requisiti_accedere_sindaco_mastella_assessore_coppola_ultime_notizie_oggi-9850165.html"
     }
    ],
    "articolo": {
@@ -1623,7 +1627,8 @@
       "testo": "A Benevento arriva il bonus energia 2026, un contributo una tantum, cioè dato una volta sola, per pagare le bollette di luce e gas. La Giunta comunale, presieduta dal sindaco Clemente Mastella, ha approvato il 26 ottobre la delibera che fissa i requisiti per ottenerlo e gli importi.",
       "fonti": [
        "Comune di Benevento",
-       "NTR24"
+       "NTR24",
+       "Il Mattino"
       ],
       "giorno": "2026-10-26"
      },
@@ -1692,6 +1697,12 @@
       "titolo": "Benevento| Bonus luce e gas, ok alla delibera con i requisiti per accedere ai contributi",
       "url": "https://www.beneventonews24.it/2026/10/26/benevento-bonus-luce-e-gas-ok-alla-delibera-con-i-requisiti-per-accedere-ai-contributi/",
       "data": "26 ott, 14:48"
+     },
+     {
+      "nome": "Il Mattino",
+      "titolo": "Benevento, ok al bonus luce e gas: ecco i requisiti per accedere ai contributi",
+      "url": "https://www.ilmattino.it/benevento/benevento_bonus_bollette_luce_gas_contributi_requisiti_accedere_sindaco_mastella_assessore_coppola_ultime_notizie_oggi-9850165.html",
+      "data": "26 ott, 19:41"
      }
     ]
    },
@@ -2083,6 +2094,10 @@
     {
      "nome": "TV7 Benevento",
      "url": "https://www.tvsette.net/benevento-successo-per-la-vi-edizione-del-sannio-festival-tre-giorni-dedicati-alla-voce-e-alla-canzone-napoletana-foto/"
+    },
+    {
+     "nome": "Benevento Giornale",
+     "url": "https://www.beneventogiornale.com/2026/10/26/conclusa-la-vi-edizione-del-sannio-festival-della-voce-e-della-canzone-napoletana-organizzata-dal-conservatorio-statale-di-musica-nicola-sala-di-benevento/"
     }
    ],
    "articolo": {
@@ -2091,7 +2106,8 @@
       "testo": "Rita Salvarezza ha vinto la sesta edizione del Sannio Festival della voce e della canzone napoletana con «Munno astritto», canzone inedita scritta da Salvarezza e D'Angelo: oltre al primo posto ha avuto una borsa di studio di 500 euro dell'associazione Anema e core. Secondo Massimo Masiello, terzo Tino Brigandi. Il festival, organizzato dal Conservatorio statale di musica «Nicola Sala» di Benevento, si è chiuso domenica 25 ottobre al Teatro San Vittorino.",
       "fonti": [
        "NTR24",
-       "Cronache del Sannio"
+       "Cronache del Sannio",
+       "Benevento Giornale"
       ],
       "giorno": "2026-10-25"
      },
@@ -2144,6 +2160,12 @@
       "titolo": "Benevento, successo per la VI edizione del Sannio Festival: tre giorni dedicati alla voce e alla canzone napoletana (FOTO)",
       "url": "https://www.tvsette.net/benevento-successo-per-la-vi-edizione-del-sannio-festival-tre-giorni-dedicati-alla-voce-e-alla-canzone-napoletana-foto/",
       "data": "26 ott, 13:09"
+     },
+     {
+      "nome": "Benevento Giornale",
+      "titolo": "Conclusa la VI edizione del “Sannio Festival della voce e della canzone napoletana” organizzata dal Conservatorio Statale di Musica Nicola Sala di Benevento",
+      "url": "https://www.beneventogiornale.com/2026/10/26/conclusa-la-vi-edizione-del-sannio-festival-della-voce-e-della-canzone-napoletana-organizzata-dal-conservatorio-statale-di-musica-nicola-sala-di-benevento/",
+      "data": "26 ott, 19:49"
      }
     ]
    },
@@ -9754,9 +9776,9 @@
   },
   {
    "id": "rifiuti-blocco-tir-apice-morcone-cusano-sant-angelo-a-cupolo",
-   "titolo": "Blocco dei tir, rifiuti a rischio nel Sannio: raccolta ferma a Sant'Angelo a Cupolo, da giovedì sospesa a Sant'Agata de' Goti, a San Giorgio del Sannio non si conferisce l'indifferenziata",
-   "titolo_google": "Tir, rifiuti a rischio nel Sannio: dove salta la raccolta",
-   "sintesi": "Con le strade bloccate dai camion e il gasolio che scarseggia, in diversi Comuni del Sannio la raccolta dei rifiuti salta o rischia di saltare. A Sant'Agata de' Goti sarà sospesa da giovedì 22 ottobre; a San Giorgio del Sannio mercoledì sera non va conferito l'indifferenziato; ad Apice è chiusa l'isola ecologica. Possibili ritardi anche a Colle Sannita. Giovedì 22 si aggiungono Pontelandolfo e San Martino Sannita (possibile stop dal 26 ottobre). Venerdì 23 si aggiungono Circello (stop dal 24 ottobre) e Sant'Arcangelo Trimonte (dal 26).",
+   "titolo": "Blocco dei tir e rifiuti nel Sannio: i Comuni dove la raccolta si è fermata, a Sant'Arcangelo Trimonte di nuovo regolare dal 26 ottobre",
+   "titolo_google": "Sant'Arcangelo Trimonte, raccolta rifiuti di nuovo regolare",
+   "sintesi": "Con le strade bloccate dai camion e il gasolio che scarseggiava, in diversi Comuni del Sannio la raccolta dei rifiuti si è fermata o ha rischiato di fermarsi: Sant'Angelo a Cupolo, Sant'Agata de' Goti, Apollosa, Circello e altri. Lunedì 26 ottobre Sant'Arcangelo Trimonte annuncia che il servizio torna regolare.",
    "categoria": "altro",
    "zona": "provincia",
    "luogo": "Sannio",
@@ -9848,10 +9870,22 @@
      "nome": "Comune di Sant'Arcangelo Trimonte",
      "url": "https://www.halleyweb.com/c062078/mc/mc_p_dettaglio.php?id_pubbl=5840",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di Sant'Arcangelo Trimonte (26/10)",
+     "url": "https://www.halleyweb.com/c062078/mc/mc_p_dettaglio.php?id_pubbl=5843",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "A Sant'Arcangelo Trimonte la raccolta dei rifiuti torna regolare da lunedì 26 ottobre. Il sindaco Felice Iammarino ha avvisato che Ricicla, la ditta che fa il servizio e gestisce il centro di raccolta comunale, il 24 ottobre ha comunicato che i problemi sono finiti. La ditta aveva annunciato lo stop il 22 ottobre per le agitazioni dei camionisti, la mancanza di carburante e le difficoltà a portare i rifiuti agli impianti. Ora la raccolta si fa con i soliti giorni e le solite modalità.",
+      "fonti": [
+       "Comune di Sant'Arcangelo Trimonte (26/10)"
+      ],
+      "giorno": "2026-10-26"
+     },
      {
       "testo": "Venerdì 23 ottobre altri due Comuni hanno pubblicato avvisi all'albo. A Circello il sindaco, con l'ordinanza n. 47, ha chiuso per ora il centro di raccolta comunale e sospeso la raccolta dei rifiuti urbani indifferenziati dal 24 ottobre. A Sant'Arcangelo Trimonte il Comune ha annunciato la sospensione temporanea della raccolta dei rifiuti urbani da lunedì 26 ottobre, per i blocchi stradali e per i problemi a trovare carburante. In nessuno dei due casi la pagina indica quando il servizio riprenderà.",
       "fonti": [
@@ -10004,6 +10038,13 @@
        "Comune di Circello",
        "Comune di Sant'Arcangelo Trimonte"
       ]
+     },
+     {
+      "data": "26 ottobre",
+      "fatto": "Sant'Arcangelo Trimonte: la raccolta dei rifiuti torna regolare, dopo che Ricicla ha comunicato la fine dei problemi.",
+      "fonti": [
+       "Comune di Sant'Arcangelo Trimonte (26/10)"
+      ]
      }
     ],
     "concordano": [],
@@ -10134,19 +10175,27 @@
       "url": "https://www.halleyweb.com/c062078/mc/mc_p_dettaglio.php?id_pubbl=5840",
       "data": "23 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "Comune di Sant'Arcangelo Trimonte (26/10)",
+      "titolo": "Avviso di regolare esecuzione del servizio di raccolta dei rifiuti urbani",
+      "url": "https://www.halleyweb.com/c062078/mc/mc_p_dettaglio.php?id_pubbl=5843",
+      "data": "26 ott",
+      "ufficiale": true
      }
     ],
     "aggiornamento": {
-     "testo": "Venerdì 23 ottobre Circello (dal 24 ottobre) e Sant'Arcangelo Trimonte (da lunedì 26) hanno annunciato la sospensione della raccolta dei rifiuti.",
+     "testo": "Lunedì 26 ottobre il Comune di Sant'Arcangelo Trimonte ha avvisato che la raccolta dei rifiuti torna regolare: la ditta Ricicla ha comunicato che i problemi con il carburante e con gli impianti sono finiti.",
      "fonti": [
-      "Comune di Circello",
-      "Comune di Sant'Arcangelo Trimonte"
+      "Comune di Sant'Arcangelo Trimonte (26/10)"
      ],
-     "quando": "2026-10-23T22:10+02:00"
+     "quando": "2026-10-26T20:10+01:00",
+     "titolo_prima": "Blocco dei tir, rifiuti a rischio nel Sannio: raccolta ferma a Sant'Angelo a Cupolo, da giovedì sospesa a Sant'Agata de' Goti, a San Giorgio del Sannio non si conferisce l'indifferenziata"
     }
    },
    "immagine": "rifiuti",
-   "foto": "rifiuti-14"
+   "foto": "rifiuti-14",
+   "importanza": 3
   },
   {
    "id": "benevento-cimitero-orari-defunti",

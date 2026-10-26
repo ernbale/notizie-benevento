@@ -1137,6 +1137,59 @@
    "foto": "musica-classica"
   },
   {
+   "id": "alda-merini-teatro-comunale-benevento-2026",
+   "titolo": "«Alda Merini – Una donna sospesa tra il dolore e la gioia» al Teatro Comunale",
+   "tipo": "teatro",
+   "inizio": "2026-11-07",
+   "ora": "20:30",
+   "luogo": "Teatro Comunale «Vittorio Emmanuele»",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "artisti": [
+    "Giorgia Trasselli",
+    "Andrea Carpiceci"
+   ],
+   "breve": "Uno spettacolo sulla vita della poetessa Alda Merini, scritto e diretto da Antonio Nobili, con Giorgia Trasselli nel ruolo della poetessa.",
+   "descrizione": [
+    {
+     "testo": "Sabato 7 novembre alle 20.30 il Teatro Comunale di Benevento ospita «Alda Merini – Una donna sospesa tra il dolore e la gioia», scritto e diretto dal poeta Antonio Nobili. Giorgia Trasselli interpreta Alda Merini; il giovane Andrea Carpiceci è Paolo, uno studente a cui l'incontro con la poetessa cambia la vita.",
+     "fonti": [
+      "Benevento Giornale"
+     ]
+    },
+    {
+     "testo": "La storia comincia con la telefonata di un professore universitario ad Alda Merini, che accoglie un giovane ricercatore per un periodo di studio sulla poesia contemporanea.",
+     "fonti": [
+      "Benevento Giornale",
+      "Mentelocale"
+     ]
+    },
+    {
+     "testo": "I biglietti si comprano su Vivaticket; informazioni su lacervona.com/aldamerini. Mentelocale indica anche la vendita su HappyTicket.",
+     "fonti": [
+      "Benevento Giornale",
+      "Mentelocale"
+     ]
+    }
+   ],
+   "immagine": "teatro",
+   "fonti": [
+    {
+     "nome": "Benevento Giornale",
+     "titolo": "Alda Merini – Una donna sospesa tra il dolore e la gioia -Teatro ComunaleV.Emanuele–Benevento– 7 novembre2026",
+     "url": "https://www.beneventogiornale.com/2026/10/26/alda-merini-una-donna-sospesa-tra-il-dolore-e-la-gioia-teatro-comunalev-emanuele-benevento-7-novembre2026/",
+     "data": "26 ott, 20:01"
+    },
+    {
+     "nome": "Mentelocale",
+     "titolo": "Alda Merini - Una donna sospesa tra il dolore e la gioia",
+     "url": "https://www.mentelocale.it/benevento/125552-alda-merini-una-donna-sospesa-tra-il-dolore-e-la-gioia.htm",
+     "data": "senza data (letta 26 ott)"
+    }
+   ],
+   "foto": "teatro-12"
+  },
+  {
    "id": "natale-sul-ghiaccio-pista-piazza-roma-benevento-2026",
    "titolo": "Natale sul ghiaccio: la pista di pattinaggio in Piazza Roma",
    "tipo": "natale",
