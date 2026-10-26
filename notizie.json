@@ -3,6 +3,73 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "asl-benevento-sms-truffa-falsi-avvisi-sanitari",
+   "titolo": "ASL Benevento, falsi SMS chiedono di chiamare per «comunicazioni urgenti»: l'Azienda avverte, non richiamate",
+   "titolo_google": "Truffa SMS ASL Benevento: non richiamate il numero",
+   "sintesi": "L'ASL Benevento avverte che girano SMS ingannevoli che invitano a chiamare un numero per comunicazioni urgenti sulla propria posizione sanitaria. I messaggi non vengono dall'Azienda: non bisogna richiamare né dare dati personali, sanitari o bancari.",
+   "categoria": "altro",
+   "zona": "provincia",
+   "luogo": "Benevento e provincia",
+   "immagine": "ospedale",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 4,
+   "comunicati": [
+    "ud0c83587de2"
+   ],
+   "fonti": [
+    {
+     "nome": "ASL Benevento",
+     "url": "https://www.aslbenevento.it/notizie/avviso-allutenza-attenzione-non-rispondete-questi-sms",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "L'ASL Benevento, l'Azienda sanitaria della provincia, avverte i cittadini: stanno girando SMS ingannevoli che invitano a chiamare numeri di telefono che non appartengono all'Azienda. Il pretesto sono presunte comunicazioni urgenti sulla propria posizione sanitaria. L'ASL precisa che questi messaggi non vengono da lei.",
+      "fonti": [
+       "ASL Benevento"
+      ]
+     },
+     {
+      "testo": "Un esempio del messaggio è questo: «Servizio Sanitario: Si prega di contattare la propria sede ASL di riferimento al numero 89347784 (o altri numeri finali) per comunicazioni urgenti che la riguardano.»",
+      "fonti": [
+       "ASL Benevento"
+      ]
+     },
+     {
+      "testo": "L'Azienda raccomanda di non richiamare il numero indicato e di non dare dati personali, sanitari o bancari. Le comunicazioni ufficiali dell'ASL arrivano solo dai suoi canali istituzionali e dai recapiti pubblicati ufficialmente. Chi ha un dubbio può chiamare direttamente gli uffici dell'Azienda, ai numeri che si trovano sul sito aslbenevento.it.",
+      "fonti": [
+       "ASL Benevento"
+      ]
+     },
+     {
+      "testo": "L'ASL chiede anche di far girare l'avviso tra familiari e conoscenti, soprattutto tra le persone più fragili, per aiutare a contrastare le truffe.",
+      "fonti": [
+       "ASL Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "ASL Benevento",
+      "titolo": "Avviso all'utenza: attenzione non rispondete a questi SMS!",
+      "url": "https://www.aslbenevento.it/notizie/avviso-allutenza-attenzione-non-rispondete-questi-sms",
+      "data": "26 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "subito": true,
+   "pubblicato": "2026-10-26T17:22:17+01:00",
+   "foto": "ospedale-10"
+  },
+  {
    "id": "cremonese-benevento-biglietti-settore-ospiti-31-ottobre",
    "titolo": "Cremonese-Benevento di sabato 31 ottobre: biglietti per i tifosi giallorossi a 20 euro, in vendita fino a venerdì",
    "titolo_google": "Biglietti Cremonese-Benevento 31 ottobre: prezzi settore ospiti",
