@@ -425,6 +425,11 @@
     });
     t.appendChild(tb);
     var box = el("div", "", [t]);
+    // la spiegazione delle sigle, uguale a LEGENDA_CLASSIFICA di strumenti/pagine.py
+    var sigle = [["Pt", "punti"], ["G", "partite giocate"], ["V", "vinte"], ["N", "pareggiate"], ["P", "perse"],
+                 ["DR", "differenza reti (gol fatti meno gol subiti)"]], legenda = [];
+    sigle.forEach(function (s, i) { legenda.push(el("b", "", [s[0]]), " " + s[1] + (i < sigle.length - 1 ? " · " : "")); });
+    box.appendChild(el("p", "nota-cl", legenda));
     var note = [];
     if (c.provvisoria) note.push("Classifica in diretta, con i risultati delle partite in corso: diventa ufficiale a fine giornata.");
     note.push("1ª e 2ª in Serie A, dalla 3ª all'8ª playoff, 16ª e 17ª playout, ultime tre in Serie C.");

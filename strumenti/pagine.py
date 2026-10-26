@@ -948,6 +948,11 @@ def _cal_lista(d, ps, finite):
     return h + "</ul>"
 
 
+# sotto la classifica, la spiegazione delle sigle (voluta dal proprietario il 26 ott 2026); uguale in calcio.js
+LEGENDA_CLASSIFICA = ("<b>Pt</b> punti · <b>G</b> partite giocate · <b>V</b> vinte · <b>N</b> pareggiate · "
+                      "<b>P</b> perse · <b>DR</b> differenza reti (gol fatti meno gol subiti)")
+
+
 def html_calcio(d, adesso):
     h = _testata_pagina("Calcio · Serie B", "", "Benevento Calcio: risultati, classifica e partite in diretta")
     h += ('<p class="sommario">Il Benevento in Serie B: la partita in diretta con la cronaca minuto per minuto, i '
@@ -1000,7 +1005,7 @@ def html_calcio(d, adesso):
     note = ["1ª e 2ª in Serie A, dalla 3ª all'8ª playoff, 16ª e 17ª playout, ultime tre in Serie C."]
     note += [f'{_cal_nome(d, r["id"])}: {r["penalita"]} punti di penalizzazione.' for r in d["classifica"] if r.get("penalita")]
     dx += (f'<section class="cal-sez"><h3 class="titolo-col">Classifica {e(d["campionato"])}</h3>{tab}</tbody></table>'
-           f'<p class="nota-cl">{" ".join(note)}</p></section>')
+           f'<p class="nota-cl">{LEGENDA_CLASSIFICA}</p><p class="nota-cl">{" ".join(note)}</p></section>')
     t = dt.datetime.fromisoformat(d["aggiornato"])
     vivo += (f'<div class="calcio-griglia"><div>{sx}</div><div>{dx}</div></div><p class="cal-fonte">Dati: ESPN, '
              f"aggiornati in diretta ogni 15 secondi durante le partite; calendario e classifica controllati alle "
