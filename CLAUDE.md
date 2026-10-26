@@ -1,0 +1,40 @@
+# Notizie Benevento: come si lavora col proprietario
+
+**Se sei una routine (il giro di ogni ora, il giro lampo, le curiosità): questo file non è per te.** Segui solo il
+tuo file di istruzioni (AGENTE.md, COMUNICATI.md, CURIOSITA.md) e quello che dice il messaggio che ti avvia.
+
+Questo file è per le sessioni di lavoro col proprietario, da qualsiasi posto (PC del negozio, Mac di casa,
+claude.ai/code dal telefono): qui c'è quello che serve per riprendere il lavoro senza la memoria del singolo computer.
+
+## Il proprietario
+- Rispondi **sempre in italiano**. Scrive veloce, con refusi, spesso con uno screenshot: capisci cosa intende.
+- Lavori grossi: prima il progetto, poi il codice. Ritocchi: diretti.
+- Le regole che chiede per l'agente vanno nei file delle istruzioni (AGENTE.md, COMUNICATI.md), **con la data e le sue
+  parole tra «»**, come quelle che ci sono già. Se una regola si può controllare con un programma, metti anche il
+  controllo in `strumenti/archivia.py` (vale per tutti i giri) o in `strumenti/comunicati.py` (solo il giro lampo).
+
+## Come è fatto
+- Sito statico su GitHub Pages; `README.md` dice cosa fa ogni file. Le notizie sono in `notizie.json` (prima pagina)
+  e `archivio/AAAA-MM.json`; gli eventi in `eventi.json`.
+- Archivio privato delle fonti: repo `ernbale/notizie-benevento-fonti` (comunicati.json = la casella
+  comunicati@notiziebenevento.it, ufficiali.json, allegati/). Lo riempie il Pi di casa ogni 5 minuti.
+- Routine cloud (claude.ai/code → Routine): «agente (ogni ora)», «giro lampo (chiusure e comunicati)» (lo avvia il Pi
+  appena arriva un comunicato; ha anche lo strumento Agent per il revisore), «curiosità (rifornimento del lunedì)».
+- Ogni push su main fa partire la Action «Pubblica il sito» (`.github/workflows/pubblica.yml`): pagine, Telegram,
+  Facebook, Instagram. Ci mette circa 2 minuti.
+
+## Correggere una notizia a mano
+1. `git pull --rebase` (le routine pubblicano spesso: rifallo anche subito prima del push).
+2. Modifica `notizie.json` (o l'archivio) con uno script che rilegge e riscrive il JSON con l'indentazione di 1
+   spazio: niente modifiche a mano del file intero. Esempio: `articolo.non_si_sa = []` toglie «Cosa non si sa ancora».
+3. Controlla: `python3 -c "import sys,json; sys.path.insert(0,'strumenti'); import archivia as A; d=json.load(open('notizie.json')); e,a=[],[]; A.controlla(d,e,a); print(e or 'OK')"`.
+4. Commit e push. Il messaggio **non** deve cominciare con «Comunicato delle » o «Notizie delle »: sono quelli dei
+   giri e la Action li tratta in modo diverso.
+5. Aspetta la Action (`gh run watch`) e controlla la pagina online (`https://notiziebenevento.it/notizia/<id>/`).
+
+Dopo una modifica a `strumenti/`: `python3 -m py_compile` sui file toccati e una prova sui dati veri (come al punto 3),
+prima del push. Un errore in `archivia.py` ferma il giro di ogni ora.
+
+## Facebook
+Un post uscito senza immagine (l'anteprima della notizia è stata rinominata dopo il post): sulla Pagina, menu «…» del
+post → «Aggiorna l'allegato della condivisione» → Salva. Non toccare il sito per questo.
