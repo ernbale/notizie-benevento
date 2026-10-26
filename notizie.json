@@ -1,7 +1,128 @@
 {
- "aggiornato": "2026-10-26T10:12+01:00",
+ "aggiornato": "2026-10-26T11:22+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "judo-emilia-diario-bronzo-europei-veterani-portimao-2026",
+   "titolo": "Judo, la beneventana Emilia Diario bronzo agli Europei Veterani di Portimão nei 48 kg",
+   "titolo_google": "Judo, Emilia Diario bronzo agli Europei Veterani 2026",
+   "sintesi": "Emilia Diario, maestra della Judo Benevento, ha vinto la medaglia di bronzo nella categoria fino a 48 kg ai Campionati Europei Veterani di judo, disputati dal 22 al 25 ottobre a Portimão, in Portogallo. In gara oltre 1.400 atleti di 36 Paesi.",
+   "categoria": "sport",
+   "sport": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-26T10:57:00+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://sport.ntr24.tv/2026/10/26/judo-bronzo-europeo-per-la-maestra-sannita-emilia-diario/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Emilia Diario, maestra di judo della Judo Benevento, ha vinto la medaglia di bronzo ai Campionati Europei Veterani 2026, nella categoria fino a 48 chili. La gara, organizzata dalla Fijikam, la federazione italiana di judo, lotta, karate e arti marziali, si è svolta dal 22 al 25 ottobre alla Portimão Arena, in Portogallo.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Agli Europei hanno partecipato oltre 1.400 atleti di 36 Paesi. Sul tatami Diario ha affrontato avversarie francesi e romene già esperte di gare internazionali, fino al terzo posto.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Chi ha battuto Emilia Diario nel percorso verso il bronzo e i risultati dei singoli incontri."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Judo, bronzo europeo per la maestra sannita Emilia Diario",
+      "url": "https://sport.ntr24.tv/2026/10/26/judo-bronzo-europeo-per-la-maestra-sannita-emilia-diario/",
+      "data": "26 ott, 10:57"
+     }
+    ]
+   }
+  },
+  {
+   "id": "castelpoto-santa-croce-del-sannio-elenco-elettori-fuori-sede",
+   "titolo": "Castelpoto e Santa Croce del Sannio, aperto l'elenco degli elettori fuori sede: domande entro il 31 dicembre",
+   "titolo_google": "Elettori fuori sede a Castelpoto e Santa Croce: come iscriversi",
+   "sintesi": "I Comuni di Castelpoto e Santa Croce del Sannio hanno aperto l'elenco degli elettori fuori sede previsto dalla nuova legge elettorale: chi per studio, lavoro o cure vive in una regione diversa da quella in cui vota può chiedere di votare dove abita. Per studio e lavoro la domanda va fatta entro il 31 dicembre, per le votazioni dell'anno dopo.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Castelpoto e Santa Croce del Sannio",
+   "immagine": "elezioni",
+   "pubblicato": "2026-10-26",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Comune di Castelpoto",
+     "url": "https://comune.castelpoto.bn.it/novita/istituzione-dellelenco-comunale-degli-elettori-fuori-sede/",
+     "ufficiale": true
+    },
+    {
+     "nome": "Comune di Santa Croce del Sannio",
+     "url": "https://www.comune.santacrocedelsannio.bn.it/novita/notizie/novita_73.html",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Castelpoto e Santa Croce del Sannio hanno aperto l'elenco comunale degli elettori fuori sede. Lo prevede la legge 180 del 9 ottobre 2026 sulle elezioni di Camera e Senato: chi vive per un periodo in una regione diversa da quella del Comune dove è iscritto per votare può chiedere di votare nel Comune dove abita. Vale per le elezioni politiche ed europee e per i referendum, non per le elezioni comunali e regionali.",
+      "fonti": [
+       "Comune di Castelpoto",
+       "Comune di Santa Croce del Sannio"
+      ]
+     },
+     {
+      "testo": "Possono chiederlo gli studenti e i lavoratori che restano fuori regione per almeno nove mesi, chi si cura per almeno tre mesi in una struttura sanitaria di un'altra regione, i familiari che li assistono e i genitori che accompagnano un figlio minorenne in cura fuori regione.",
+      "fonti": [
+       "Comune di Castelpoto"
+      ]
+     },
+     {
+      "testo": "La domanda va presentata al Comune dove si abita per il periodo fuori sede, di persona o per via telematica, con un documento di identità e un certificato che dimostri la condizione (iscrizione all'università, contratto di lavoro, attestato della struttura sanitaria); si può anche autocertificare. Per studio e lavoro il termine è il 31 dicembre di ogni anno, per le votazioni dell'anno successivo; per le cure il termine è il 45° giorno prima del voto. L'iscrizione vale un anno. A Castelpoto la domanda si manda alla PEC castelpoto@pec.cstsannio.it o si consegna all'ufficio protocollo in piazza Garibaldi 1; a Santa Croce del Sannio il modello è sul sito del Comune, a cura dei servizi demografici.",
+      "fonti": [
+       "Comune di Castelpoto",
+       "Comune di Santa Croce del Sannio"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando ci saranno le prossime votazioni in cui si potrà votare fuori sede."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Castelpoto",
+      "titolo": "Istituzione dell’elenco comunale degli elettori fuori sede",
+      "url": "https://comune.castelpoto.bn.it/novita/istituzione-dellelenco-comunale-degli-elettori-fuori-sede/",
+      "data": "23 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "Comune di Santa Croce del Sannio",
+      "titolo": "ISTITUZIONE DELL'ELENCO COMUNALE DEGLI ELETTORI FUORI SEDE",
+      "url": "https://www.comune.santacrocedelsannio.bn.it/novita/notizie/novita_73.html",
+      "data": "26 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "foto": "elezioni-3"
+  },
   {
    "id": "libera-benevento-tesseramento-aperitivo-beni-confiscati-funambolo-2026",
    "titolo": "Benevento, Libera apre il tesseramento con un aperitivo di prodotti dei beni confiscati",
@@ -22,6 +143,18 @@
      "nome": "Libera Benevento",
      "url": "https://www.libera.it/",
      "ufficiale": true
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/26/campagna-di-tesseramento-libera-benevento-giovedi-sera-aperitivo-con-i-prodotti-dei-beni-confiscati/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/26/campagna-di-tesseramento-libera-benevento-aperitivo-con-i-prodotti-dei-beni-confiscati/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/442169/libera-benevento-l-associazione-contro-le-mafie-invita-al-tesseramento.shtml"
     }
    ],
    "articolo": {
@@ -29,32 +162,40 @@
      {
       "testo": "Il coordinamento provinciale di Libera a Benevento apre la campagna di tesseramento giovedì 29 ottobre, dalle 19, al Funambolo, il caffè letterario di via Cardinale di Rende. Libera è l'associazione che riunisce persone e gruppi contro le mafie. Durante la serata ci si potrà tesserare per il 2027.",
       "fonti": [
-       "Libera Benevento"
-      ]
+       "Libera Benevento",
+       "NTR24",
+       "Ottopagine",
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-26"
      },
      {
       "testo": "La serata è un «aperitivo di comunità» a 10 euro. Lo preparano con i loro prodotti due cooperative sociali nate su beni confiscati alla camorra: La Strada di Pugliano di Teano e Al di là dei sogni di Sessa Aurunca, entrambe nel Casertano. Una parte del ricavato andrà a Libera.",
       "fonti": [
        "Libera Benevento"
-      ]
+      ],
+      "giorno": "2026-10-26"
      },
      {
       "testo": "Interverrà Stefano Mancini, presidente della cooperativa La Strada. Parlerà di come i beni tolti alla criminalità organizzata possono rinascere con l'agricoltura sociale e sostenibile, per dare lavoro e restituire dignità e salute al territorio e alle comunità.",
       "fonti": [
        "Libera Benevento"
-      ]
+      ],
+      "giorno": "2026-10-26"
      },
      {
       "testo": "Chi si tessera sostiene anche «Diamo Linfa Al Bene», la campagna nazionale con cui Libera chiede al Governo di destinare il 2 per cento del Fondo unico di giustizia alla gestione e al riuso sociale dei beni confiscati. Si può aderire firmando la raccolta di firme; Regioni, Province e Comuni possono farlo approvando una delibera di sostegno.",
       "fonti": [
        "Libera Benevento"
-      ]
+      ],
+      "giorno": "2026-10-26"
      },
      {
       "testo": "«Le mafie e la corruzione dividono, Libera cerca di costruire legami», scrive il coordinamento di Benevento, che aggiunge: «Una comunità che si tiene insieme è più forte del silenzio, dell'indifferenza e della paura».",
       "fonti": [
        "Libera Benevento"
-      ]
+      ],
+      "giorno": "2026-10-26"
      }
     ],
     "cronologia": [],
@@ -68,6 +209,24 @@
       "url": "https://www.libera.it/",
       "data": "26 ott, 10:25",
       "ufficiale": true
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Campagna di tesseramento Libera Benevento: giovedì sera aperitivo con i prodotti dei beni confiscati",
+      "url": "https://www.ntr24.tv/2026/10/26/campagna-di-tesseramento-libera-benevento-giovedi-sera-aperitivo-con-i-prodotti-dei-beni-confiscati/",
+      "data": "26 ott, 10:25"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Campagna di tesseramento Libera Benevento: aperitivo con i prodotti dei beni confiscati",
+      "url": "https://www.beneventonews24.it/2026/10/26/campagna-di-tesseramento-libera-benevento-aperitivo-con-i-prodotti-dei-beni-confiscati/",
+      "data": "26 ott, 10:36"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Libera Benevento: l'associazione contro le mafie invita al tesseramento",
+      "url": "https://www.ottopagine.it/bn/attualita/442169/libera-benevento-l-associazione-contro-le-mafie-invita-al-tesseramento.shtml",
+      "data": "26 ott, 10:32"
      }
     ]
    },
@@ -1811,6 +1970,26 @@
     {
      "nome": "TV7 Benevento",
      "url": "https://www.tvsette.net/benevento-mignani-si-prende-la-scena-il-lavoro-ripaga-sempre-ora-testa-al-catanzaro/"
+    },
+    {
+     "nome": "NTR24 Sport",
+     "url": "https://sport.ntr24.tv/2026/10/26/pierozzi-che-botta-gli-esami-confermano-i-timori-della-vigilia-due-mesi-di-stop-per-il-terzino-giallorosso-romano-e-sernicola-le-alternative/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/benevento-stop-pierozzi-fuori-due-mesi/"
+    },
+    {
+     "nome": "BeneventoNews24 (26/10)",
+     "url": "https://www.beneventonews24.it/2026/10/26/benevento-tegola-pierozzi-linfortunio-e-serio-sara-out-per-circa-due-mesi/"
+    },
+    {
+     "nome": "Anteprima24 (26/10)",
+     "url": "https://www.anteprima24.it/benevento/benevento-tegola-pierozzi-lesione-al-bicipite-femorale/"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/calcio-serie-b-e-serio-linfortunio-cui-e-incappato-il-terzino-del-benevento-edoardo-pierozzi-nel"
     }
    ],
    "articolo": {
@@ -1818,7 +1997,18 @@
      {
       "testo": "Il Benevento dovrà fare a meno di Edoardo Pierozzi per circa due mesi. Lunedì 26 ottobre la società ha comunicato che l'ecografia di controllo ha trovato una distrazione di secondo grado del bicipite femorale, il muscolo dietro la coscia. I tempi di recupero, precisa il club, dipendono da come andrà la guarigione.",
       "fonti": [
-       "Benevento Calcio"
+       "Benevento Calcio",
+       "NTR24 Sport",
+       "Cronache del Sannio",
+       "BeneventoNews24 (26/10)",
+       "Anteprima24 (26/10)"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "Pierozzi giocava da terzino destro. Secondo NTR24 Sport, per sostituirlo Floro Flores può contare su Romano, rientrato da poco dopo un infortunio e già entrato ad Arezzo al posto di Pierozzi, oppure su Sernicola.",
+      "fonti": [
+       "NTR24 Sport"
       ],
       "giorno": "2026-10-26"
      },
@@ -1929,6 +2119,36 @@
       "titolo": "Benevento, tris da grande squadra: Arezzo travolto 3-0. La Strega vola al quinto posto",
       "url": "https://www.tvsette.net/siatounis-apre-le-danze-okereke-raddoppia-e-mignani-cala-il-tris-nel-finale-i-giallorossi-conquistano-il-quinto-risultato-utile-consecutivo-e-salgono-a-quota-14-punti-martedi-al-vigorito-arriva-il/",
       "data": "24 ott, 22:39"
+     },
+     {
+      "nome": "NTR24 Sport",
+      "titolo": "Pierozzi, che botta! Gli esami confermano i timori della vigilia: due mesi di stop per il terzino giallorosso.",
+      "url": "https://sport.ntr24.tv/2026/10/26/pierozzi-che-botta-gli-esami-confermano-i-timori-della-vigilia-due-mesi-di-stop-per-il-terzino-giallorosso-romano-e-sernicola-le-alternative/",
+      "data": "26 ott, 11:07"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Benevento, stop per Pierozzi: fuori due mesi",
+      "url": "https://www.cronachedelsannio.it/sannionews24/benevento-stop-pierozzi-fuori-due-mesi/",
+      "data": "26 ott, 10:34"
+     },
+     {
+      "nome": "BeneventoNews24 (26/10)",
+      "titolo": "Benevento, tegola Pierozzi: l’infortunio è serio! Out per circa due mesi, 2026 finito",
+      "url": "https://www.beneventonews24.it/2026/10/26/benevento-tegola-pierozzi-linfortunio-e-serio-sara-out-per-circa-due-mesi/",
+      "data": "26 ott, 11:04"
+     },
+     {
+      "nome": "Anteprima24 (26/10)",
+      "titolo": "Benevento, tegola Pierozzi: lesione al bicipite femorale",
+      "url": "https://www.anteprima24.it/benevento/benevento-tegola-pierozzi-lesione-al-bicipite-femorale/",
+      "data": "26 ott, 11:06"
+     },
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "Calcio, Serie B: E' serio l'infortunio in cui è incappato il terzino del Benevento Edoardo Pierozzi nel corso della gara contro l'Arezzo",
+      "url": "https://www.gazzettabenevento.it/it/calcio-serie-b-e-serio-linfortunio-cui-e-incappato-il-terzino-del-benevento-edoardo-pierozzi-nel",
+      "data": "26 ott, 10:25"
      }
     ],
     "aggiornamento": {
@@ -4902,49 +5122,37 @@
    "id": "benevento-opposizione-mozione-sfiducia-mastella",
    "titolo": "Benevento, l'opposizione presenta la mozione di sfiducia contro il sindaco Mastella e sfila in corteo in corso Garibaldi",
    "titolo_google": "Benevento, sfiducia a Mastella: corteo in corso Garibaldi",
-   "sintesi": "I consiglieri di opposizione di Benevento hanno presentato giovedì 22 ottobre una mozione di sfiducia contro il sindaco Clemente Mastella e la Giunta, con un dossier di 24 punti. Domenica 25 sera hanno sfilato in corteo lungo corso Garibaldi fino alla Prefettura; il sindaco dice che non si dimette.",
+   "sintesi": "I consiglieri di opposizione di Benevento hanno presentato giovedì 22 ottobre una mozione di sfiducia contro il sindaco Clemente Mastella e la Giunta, con un dossier di 24 punti. Domenica 25 sera hanno sfilato in corteo lungo corso Garibaldi fino alla Prefettura; il sindaco dice che non si dimette e la maggioranza parla di non più di duecento persone in piazza.",
    "categoria": "politica",
    "zona": "benevento",
    "luogo": "Benevento",
-   "pubblicato": "2026-10-26T00:05:00+01:00",
+   "pubblicato": "2026-10-26T10:27:00+01:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
     {
+     "nome": "NTR24 (26/10)",
+     "url": "https://www.ntr24.tv/2026/10/26/maggioranza-mastella-la-piazza-della-spallata-una-riunione-di-condominio/"
+    },
+    {
+     "nome": "Ottopagine (26/10)",
+     "url": "https://www.ottopagine.it/bn/politica/442167/maggioranza-mastella-duecento-persone-non-bastano-ad-eleggere-un-consigliere.shtml"
+    },
+    {
+     "nome": "Lab TV (26/10)",
+     "url": "https://www.labtv.net/politica/2026/10/26/maggioranza-mastella-per-certa-opposizione-urne-vuote-e-anche-la-piazza-duecento-persone-non-bastano-ad-eleggere-un-consigliere/"
+    },
+    {
      "nome": "Il Mattino (26/10)",
      "url": "https://www.ilmattino.it/benevento/la_piazza_anti_mastella_l_opposizione_scende_in_campo_contro_il_primo_cittadino_il_sindaco_si_dimetta-9848234.html"
-    },
-    {
-     "nome": "Ottopagine",
-     "url": "https://www.ottopagine.it/bn/politica/441885/benevento-l-opposizione-presenta-la-mozione-di-sfiducia-per-il-sindaco-mastella.shtml"
-    },
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/22/benevento-lopposizione-presenta-dossier-in-24-punti-e-chiede-la-fine-dellamministrazione-mastella/"
     },
     {
      "nome": "Cronache del Sannio",
      "url": "https://www.cronachedelsannio.it/sannionews24/sfiduciamo-mastella-opposizione-chiama-piazza/"
     },
     {
-     "nome": "Ottopagine (23/10)",
-     "url": "https://www.ottopagine.it/bn/politica/441924/mastella-replica-all-opposizione-ho-le-mani-pulite-pronto-a-querelare.shtml"
-    },
-    {
-     "nome": "NTR24 (23/10)",
-     "url": "https://www.ntr24.tv/2026/10/23/mastella-replica-allopposizione-dimissioni-vado-avanti-fino-al-prossimo-anno-perdera-anche-alle-prossime-elezioni/"
-    },
-    {
      "nome": "Anteprima24 (25/10)",
      "url": "https://www.anteprima24.it/benevento/benevento-protesta-opposizioni-corso-garibaldi/"
-    },
-    {
-     "nome": "NTR24 (25/10)",
-     "url": "https://www.ntr24.tv/2026/10/25/benevento-in-300-alla-mobilitazione-dellopposizione-vogliamo-le-dimissioni-del-sindaco-mastella/"
-    },
-    {
-     "nome": "Ottopagine (25/10)",
-     "url": "https://www.ottopagine.it/bn/politica/442139/a-benevento-l-opposizione-scende-in-piazza-mastella-si-dimetta.shtml"
     },
     {
      "nome": "InfoSannio (25/10)",
@@ -4961,6 +5169,15 @@
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Lunedì 26 ottobre i consiglieri della maggioranza di Mastella hanno risposto al corteo con una nota firmata insieme. Dicono che in piazza c'erano «al massimo un paio di centinaia di persone», molte delle quali, secondo loro, erano lì per la passeggiata della domenica o venivano dalla provincia, e che «duecento voti non sono sufficienti» per eleggere un consigliere comunale. Accusano una parte dell'opposizione di usare l'inchiesta giudiziaria per fini elettorali e apprezzano i consiglieri di minoranza che non sono andati al corteo.",
+      "fonti": [
+       "NTR24 (26/10)",
+       "Ottopagine (26/10)",
+       "Lab TV (26/10)"
+      ],
+      "giorno": "2026-10-26"
+     },
      {
       "testo": "Domenica 25 ottobre, in serata, l'opposizione ha sfilato in corteo lungo corso Garibaldi, dalla Biblioteca provinciale alla Prefettura, con cartelli come «La città sfiducia Mastella» e la richiesta di dimissioni della Giunta. Secondo la Digos, citata da NTR24, i partecipanti erano circa 300; Cronache del Sannio scrive «almeno 300», citando fonti ufficiali. Hanno promosso la manifestazione Pd, Avs, Città Aperta, Civici e Riformisti e Civico 22, con il Psi; c'era anche l'ex parlamentare Umberto Del Basso De Caro.",
       "fonti": [
@@ -5067,6 +5284,13 @@
        "Anteprima24 (25/10)",
        "NTR24 (25/10)",
        "Cronache del Sannio (25/10)"
+      ]
+     },
+     {
+      "data": "26 ottobre",
+      "fatto": "La maggioranza risponde: in piazza non più di duecento persone.",
+      "fonti": [
+       "NTR24 (26/10)"
       ]
      }
     ],
@@ -5189,6 +5413,24 @@
       "titolo": "“La città vuole le dimissioni di Mastella”: il corteo delle opposizioni fino alla Prefettura",
       "url": "https://www.ilsannioquotidiano.it/2026/10/26/la-citta-vuole-le-dimissioni-di-mastella-il-corteo-delle-opposizioni-fino-alla-prefettura/",
       "data": "26 ott, 07:49"
+     },
+     {
+      "nome": "NTR24 (26/10)",
+      "titolo": "Maggioranza Mastella: “La piazza della spallata? Una riunione di condominio”",
+      "url": "https://www.ntr24.tv/2026/10/26/maggioranza-mastella-la-piazza-della-spallata-una-riunione-di-condominio/",
+      "data": "26 ott, 10:18"
+     },
+     {
+      "nome": "Ottopagine (26/10)",
+      "titolo": "Maggioranza Mastella: \"duecento persone non bastano ad eleggere un consigliere\"",
+      "url": "https://www.ottopagine.it/bn/politica/442167/maggioranza-mastella-duecento-persone-non-bastano-ad-eleggere-un-consigliere.shtml",
+      "data": "26 ott, 10:27"
+     },
+     {
+      "nome": "Lab TV (26/10)",
+      "titolo": "Maggioranza Mastella: “Per certa opposizione urne vuote e anche la piazza: duecento persone non bastano ad eleggere un consigliere”",
+      "url": "https://www.labtv.net/politica/2026/10/26/maggioranza-mastella-per-certa-opposizione-urne-vuote-e-anche-la-piazza-duecento-persone-non-bastano-ad-eleggere-un-consigliere/",
+      "data": "26 ott, 10:21"
      }
     ],
     "aggiornamento": {
