@@ -51,7 +51,10 @@ RIEPILOGO_DALLE = 20   # il riepilogo della giornata, su Facebook e su Instagram
 TITOLO_RIEPILOGO = "Il Sannio oggi"
 DALLE, ALLE = 6, 23   # dalle 6 fino al giro delle 22 compreso (ALLE è l'ora in cui si smette)
 AGG = "🔴 Aggiornamento · "   # come su Telegram
-AGG_USCITO = "\0aggiornamento"   # tra i titoli già usciti di una notizia: il suo «Aggiornamento» è già uscito
+AGG_USCITO = "\0aggiornamento"
+# Meta che dice «troppe richieste» (al programma, alla Pagina, all'account): insistere allunga il blocco. Successo il
+# 26 ott 2026 alle 15:17, alla prima volta senza limiti: 16 post arretrati insieme e Instagram fermato da Meta.
+LIMITE_META = re.compile(r"\(codice (4|17|32|613|80001|80002|80004|80005|80006|80008|80014)\)")   # tra i titoli già usciti di una notizia: il suo «Aggiornamento» è già uscito
 
 
 def fuso():
@@ -384,6 +387,10 @@ def main():
             pubblica(token, n, agg)
         except Exception as e:   # una notizia rifiutata non ferma le altre: si riprova alla volta dopo
             errori.append(f"{n['id']}: {e}")
+            if LIMITE_META.search(str(e)):   # Meta ci ha fermato: basta per adesso
+                print(f"Facebook: Meta dice che abbiamo fatto troppe richieste, le altre {len(lista) - lista.index((n, agg)) - 1} "
+                      "alla prossima volta")
+                break
             continue
         oggi += 1
         if agg:

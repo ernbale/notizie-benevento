@@ -19,7 +19,10 @@ Lo esegue GitHub dopo ogni pubblicazione del sito, come facebook.py, che ne è i
 - La chiave è la stessa della Pagina (segreto FB_PAGE_TOKEN), con i permessi instagram_basic e
   instagram_content_publish. Senza account Instagram collegato alla Pagina non fa niente.
 
-Uso:  FB_PAGE_TOKEN=… python3 strumenti/instagram.py
+Quando Meta risponde «troppe richieste» (successo il 26 ott 2026 alle 15:17: 16 notizie arretrate insieme) Instagram
+si ferma FERMO_MINUTI e poi riprende da solo con quelle rimaste (--stato ricorda fino a quando).
+
+Uso:  FB_PAGE_TOKEN=… python3 strumenti/instagram.py --stato FILE
       python3 strumenti/instagram.py --prova      (dice cosa pubblicherebbe, senza chiave e senza toccare Instagram)
 """
 import argparse
@@ -32,8 +35,10 @@ import time
 import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from facebook import (AGG, PAGINA, RIEPILOGO_DALLE, SITO, TITOLO_RIEPILOGO,  # come Facebook
+from facebook import (AGG, LIMITE_META, PAGINA, RIEPILOGO_DALLE, SITO, TITOLO_RIEPILOGO,  # come Facebook
                       allerta_seria, candidate, chiama, coda, fuso, in_ordine, quando, rilievo, titoli_usciti)
+
+FERMO_MINUTI = 60   # quando Meta dice «troppe richieste» non si chiama più per un'ora (il suo conto è sull'ultima ora)
 
 DALLE, ALLE = 6, 23   # come facebook.py
 QUANTE, ALMENO = 5, 3  # notizie nel riepilogo; con meno di ALMENO notizie oggi niente riepilogo
@@ -174,6 +179,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--sito", default=os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     ap.add_argument("--prova", action="store_true")
+    ap.add_argument("--stato", help="il file dove si ricorda se Meta ci ha fermato (lo conserva GitHub)")
     a = ap.parse_args()
     adesso = dt.datetime.now(fuso())
     with open(os.path.join(a.sito, "notizie.json"), encoding="utf-8") as f:
@@ -194,6 +200,10 @@ def main():
     sera = adesso.hour == 23   # alle 23 solo le allerte arancioni o rosse, come Facebook e Telegram
     if not DALLE <= adesso.hour < ALLE and not sera:
         print(f"Instagram: sono le {adesso:%H:%M}, si pubblica dalle {DALLE} fino al giro delle {ALLE - 1}")
+        return
+    stato = leggi_stato(a.stato)
+    if stato.get("fermo_fino", "") > adesso.isoformat():
+        print(f"Instagram: Meta ci ha fermato per troppe richieste, riprendo dopo le {stato['fermo_fino'][11:16]}")
         return
     pag = chiama("GET", "me", token, {"fields": "name,instagram_business_account{id,username}"})
     if pag.get("name") != PAGINA:
@@ -236,6 +246,12 @@ def main():
                 continue   # l'immagine non è ancora online: alla volta dopo
         except Exception as e:   # una notizia rifiutata non ferma le altre: si riprova alla volta dopo
             errori.append(f"{n['id']}: {e}")
+            if LIMITE_META.search(str(e)):   # Meta ci ha fermato: un'ora senza chiamarla, poi si riprende da soli
+                fino = (adesso + dt.timedelta(minutes=FERMO_MINUTI)).isoformat(timespec="minutes")
+                scrivi_stato(a.stato, dict(stato, fermo_fino=fino))
+                print(f"Instagram: Meta dice che abbiamo fatto troppe richieste: fermo fino alle {fino[11:16]}, poi "
+                      f"escono le {len(lista) - lista.index((n, agg))} rimaste")
+                break
             continue
         oggi, posto = oggi + 1, posto - 1
         if agg:
@@ -245,6 +261,21 @@ def main():
                   f"({'comunicato, ' if n.get('subito') else ''}{oggi} oggi)")
     if errori:
         raise RuntimeError("; ".join(errori))
+
+
+def leggi_stato(percorso):
+    try:
+        with open(percorso, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError, TypeError):
+        return {}
+
+
+def scrivi_stato(percorso, stato):
+    if percorso:
+        os.makedirs(os.path.dirname(percorso) or ".", exist_ok=True)
+        with open(percorso, "w", encoding="utf-8") as f:
+            json.dump(stato, f)
 
 
 def posti_meta(ig, token):

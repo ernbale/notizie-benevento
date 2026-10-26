@@ -180,7 +180,9 @@ jobs:
       - name: Instagram (le notizie nuove, tutte, e il riepilogo della sera)
         env:
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
-        run: python3 strumenti/instagram.py || echo "::warning::Instagram non ha pubblicato (vedi l'avviso sopra)"
+        run: |
+          mkdir -p "$RUNNER_TEMP/social"
+          python3 strumenti/instagram.py --stato "$RUNNER_TEMP/social/instagram.json" || echo "::warning::Instagram non ha pubblicato (vedi l'avviso sopra)"
 
       - name: Telegram (notizie nuove e aggiornamenti sul canale)
         env:
