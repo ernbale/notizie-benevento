@@ -1,7 +1,168 @@
 {
- "aggiornato": "2026-10-26T08:21+01:00",
+ "aggiornato": "2026-10-26T09:17+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-liceo-guacci-furto-distributore-computer",
+   "titolo": "Benevento, ladri di notte al liceo Guacci di via Compagna: scassinato il distributore di merendine",
+   "titolo_google": "Benevento, furto al liceo Guacci: scassinato il distributore",
+   "sintesi": "Nella notte tra domenica 25 e lunedì 26 ottobre qualcuno è entrato nella sede di Scienze Umane del liceo Guacci, in via Compagna a Benevento, forzando un infisso. Ha scassinato il distributore di merendine e bevande e forse ha portato via anche dei computer. Indagano i Carabinieri.",
+   "categoria": "cronaca",
+   "zona": "benevento",
+   "luogo": "Benevento, via Compagna",
+   "pubblicato": "2026-10-26T08:54+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/furto-in-una-scuola-ladri-forzano-un-infisso-e-scassinano-distributore-di-merendine/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Nella notte tra domenica 25 e lunedì 26 ottobre dei ladri sono entrati nel liceo Guacci di Benevento, nella sede dell'indirizzo Scienze Umane in via Compagna. Hanno forzato un infisso e, una volta dentro, hanno scassinato la macchinetta delle merendine e delle bevande per prendere le monete della cassa.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Se ne sono accorti lunedì mattina, all'inizio delle lezioni, e hanno chiamato i Carabinieri. Sembra che i ladri abbiano portato via anche alcuni computer, ma il danno non è ancora stato calcolato.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "I Carabinieri hanno cominciato le indagini per capire chi è stato.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quanti computer mancano e quanto vale il danno.",
+     "Se le lezioni si sono svolte normalmente."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Furto in una scuola: ladri forzano un infisso e scassinano distributore di merendine",
+      "url": "https://www.anteprima24.it/benevento/furto-in-una-scuola-ladri-forzano-un-infisso-e-scassinano-distributore-di-merendine/",
+      "data": "26 ott, 08:54"
+     }
+    ]
+   }
+  },
+  {
+   "id": "santagata-de-goti-piazza-sant-alfonso-divieto-sosta-29-ottobre",
+   "titolo": "Sant'Agata de' Goti, giovedì 29 ottobre divieto di sosta in piazza Sant'Alfonso dalle 14 alle 20 per un convegno",
+   "titolo_google": "Sant'Agata de' Goti, divieto di sosta in piazza il 29 ottobre",
+   "sintesi": "Giovedì 29 ottobre, dalle 14 alle 20, in piazza Sant'Alfonso a Sant'Agata de' Goti non si può parcheggiare: le auto lasciate lì saranno rimosse. Il motivo è un convegno sulle aree industriali e le aree interne nella sala ex Cinema Italia di via Roma.",
+   "categoria": "strade",
+   "zona": "caudina",
+   "luogo": "Sant'Agata de' Goti",
+   "immagine": "divieto-sosta",
+   "pubblicato": "2026-10-25",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "in_vigore_fino": "2026-10-29",
+   "in_vigore_dal": "2026-10-29",
+   "fonti": [
+    {
+     "nome": "Comune di Sant'Agata de' Goti",
+     "url": "https://santagatadegoti.halleyweb.it/mc/mc_p_dettaglio.php?id_pubbl=25566",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Giovedì 29 ottobre, dalle 14 alle 20, a Sant'Agata de' Goti è vietato parcheggiare in piazza Sant'Alfonso: chi lascia l'auto rischia la multa e la rimozione. Lo ha deciso la Polizia Municipale con un'ordinanza del 25 ottobre.",
+      "fonti": [
+       "Comune di Sant'Agata de' Goti"
+      ]
+     },
+     {
+      "testo": "Il divieto serve per il convegno «Le zone industriali cerniera: confronto tra territori e istituzioni per il rilancio delle aree interne», organizzato dal Comune nella sala ex Cinema Italia di via Roma, con autorità regionali e nazionali. Possono sostare solo i mezzi delle forze di polizia, dei vigili del fuoco e del soccorso, quelli autorizzati dalla Polizia Municipale e quelli delle autorità invitate.",
+      "fonti": [
+       "Comune di Sant'Agata de' Goti"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "A che ora comincia il convegno e chi interviene."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Sant'Agata de' Goti",
+      "titolo": "Regolamentazione temporanea della sosta in Piazza Sant'Alfonso in occasione del convegno istituzionale \"Le zone industriali cerniera: confronto tra territori e istituzioni per il rilancio delle aree interne\", previsto per giovedì 29 ottobre 2026 presso la sala ex Cinema Italia, in via Roma.",
+      "url": "https://santagatadegoti.halleyweb.it/mc/mc_p_dettaglio.php?id_pubbl=25566",
+      "data": "25 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "foto": "divieto-sosta"
+  },
+  {
+   "id": "pietrelcina-medico-ottone-orari-vaccino-antinfluenzale",
+   "titolo": "Pietrelcina, gli orari della dottoressa Ottone e del vaccino antinfluenzale per i suoi pazienti",
+   "titolo_google": "Pietrelcina, vaccino antinfluenzale dal medico: gli orari",
+   "sintesi": "Il Comune di Pietrelcina ha pubblicato gli orari di studio della dottoressa Grazia Ottone, medico di famiglia, e quelli per il vaccino antinfluenzale ai suoi pazienti: lunedì dalle 16 alle 18:30 e martedì dalle 10.",
+   "categoria": "altro",
+   "zona": "provincia",
+   "luogo": "Pietrelcina",
+   "immagine": "vaccini",
+   "pubblicato": "2026-10-26",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Comune di Pietrelcina",
+     "url": "https://www.comune.pietrelcina.bn.it/novita/avvisi/novita_377.html",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Pietrelcina la dottoressa Grazia Ottone, medico di famiglia, fa il vaccino antinfluenzale ai suoi pazienti il lunedì pomeriggio dalle 16 alle 18:30 e il martedì mattina dalle 10, finché ci sono persone in attesa. Chi resta fuori potrà vaccinarsi nelle mattine dei giorni dopo, durante il normale orario di studio. Lo comunica il Comune.",
+      "fonti": [
+       "Comune di Pietrelcina"
+      ]
+     },
+     {
+      "testo": "Gli orari di studio confermati per questa settimana sono: lunedì dalle 16 alle 19; da martedì a venerdì dalle 10:15 alle 13:15.",
+      "fonti": [
+       "Comune di Pietrelcina"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Dove si trova lo studio: l'avviso non lo scrive."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Pietrelcina",
+      "titolo": "Orario di ricevimento Medico di Medicina Generale D.ssa Grazia Ottone",
+      "url": "https://www.comune.pietrelcina.bn.it/novita/avvisi/novita_377.html",
+      "data": "26 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "foto": "vaccini-4"
+  },
   {
    "id": "linea-caserta-foggia-treni-rallentati-amorosi-26-ottobre",
    "titolo": "Treni Caserta-Benevento-Foggia rallentati vicino ad Amorosi: ritardi fino a 60 minuti",
@@ -2690,12 +2851,12 @@
    "id": "eav-sciopero-generale-30-ottobre-napoli-benevento",
    "titolo": "EAV, venerdì 30 ottobre sciopero generale di 24 ore: sulla Napoli-Benevento bus sostitutivi regolari",
    "titolo_google": "Sciopero EAV 30 ottobre: Napoli-Benevento, bus regolari",
-   "sintesi": "Per venerdì 30 ottobre 2026 il sindacato USB ha proclamato uno sciopero generale nazionale di 24 ore che tocca treni e bus. EAV scrive che sulla linea Napoli-Benevento il servizio sostitutivo con autobus sarà effettuato regolarmente.",
+   "sintesi": "Venerdì 30 ottobre 2026 c'è lo sciopero generale nazionale di 24 ore proclamato dal sindacato USB, che tocca treni e bus. EAV scrive che sulla Napoli-Benevento il servizio sostitutivo con autobus sarà regolare; i suoi bus sono garantiti dalle 5:30 alle 8:30 e dalle 16:30 alle 19:30.",
    "categoria": "strade",
    "zona": "provincia",
    "immagine": "treno",
    "luogo": "Linea Napoli-Benevento",
-   "pubblicato": "2026-10-24T07:16:00+02:00",
+   "pubblicato": "2026-10-26T08:31:55+01:00",
    "in_vigore_fino": "2026-10-30",
    "stato": "ufficiale",
    "rilevante": false,
@@ -2709,25 +2870,51 @@
    "articolo": {
     "racconto": [
      {
+      "testo": "Per i bus di EAV lo sciopero di venerdì 30 ottobre ha due fasce garantite su tutta la rete: dalle 5:30 alle 8:30 e dalle 16:30 alle 19:30. Fuori da queste ore le corse dipendono da quanti autisti aderiscono. Sulla linea Napoli–Benevento, dove i treni sono sostituiti dai bus, EAV aveva già scritto che il servizio sostitutivo sarà regolare.",
+      "fonti": [
+       "EAV (26/10)",
+       "EAV"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
       "testo": "Venerdì 30 ottobre 2026 c'è uno sciopero generale nazionale di 24 ore. Lo ha proclamato il sindacato USB per tutte le categorie pubbliche e private e interessa i servizi su ferro e su gomma. Lo comunica EAV, l'Ente Autonomo Volturno, la società dei trasporti della Campania.",
       "fonti": [
        "EAV"
-      ]
+      ],
+      "giorno": "2026-10-24"
      },
      {
       "testo": "Per la linea Napoli–Benevento, EAV scrive che «il servizio sostitutivo autobus verrà effettuato regolarmente». Per la linea Napoli–Piedimonte Matese, invece, l'avviso elenca i treni garantiti. Durante lo sciopero le corse dipendono da quanti lavoratori aderiscono.",
       "fonti": [
        "EAV"
-      ]
+      ],
+      "giorno": "2026-10-24"
      },
      {
       "testo": "Il sindacato chiede misure a tutela del potere d'acquisto di lavoratori e pensionati, più salari, pensioni e tutele occupazionali. EAV ricorda che all'ultimo sciopero proclamato da USB, il 28 novembre 2025, l'adesione fu del 5,52%.",
       "fonti": [
        "EAV"
+      ],
+      "giorno": "2026-10-24"
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "24 ottobre",
+      "fatto": "EAV pubblica l'avviso di sciopero per le linee su ferro: sulla Napoli–Benevento bus sostitutivi regolari.",
+      "fonti": [
+       "EAV"
+      ]
+     },
+     {
+      "data": "26 ottobre",
+      "fatto": "EAV pubblica l'avviso per i bus: fasce garantite 5:30-8:30 e 16:30-19:30.",
+      "fonti": [
+       "EAV (26/10)"
       ]
      }
     ],
-    "cronologia": [],
     "concordano": [],
     "divergono": [],
     "non_si_sa": [
@@ -2740,8 +2927,22 @@
       "url": "https://www.eavsrl.it/linee-suburbane-avviso-di-sciopero-nazionale-di-24-ore-del-30-ottobre-2026/",
       "data": "24 ott, 07:16",
       "ufficiale": true
+     },
+     {
+      "nome": "EAV (26/10)",
+      "titolo": "Linee Automobilistiche: Avviso di sciopero generale nazionale di 24h venerdì 30 Ottobre 2026",
+      "url": "https://www.eavsrl.it/linee-automobilistiche-avviso-di-sciopero-generale-nazionale-di-24h-venerdi-30-ottobre-2026/",
+      "data": "26 ott, 08:31",
+      "ufficiale": true
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Lunedì 26 ottobre EAV ha pubblicato l'avviso per i bus: venerdì 30 ottobre le corse sono garantite dalle 5:30 alle 8:30 e dalle 16:30 alle 19:30.",
+     "fonti": [
+      "EAV (26/10)"
+     ],
+     "quando": "2026-10-26T09:17+01:00"
+    }
    },
    "foto": "treno-6"
   },
