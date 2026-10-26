@@ -34,6 +34,7 @@ Uso:  FB_PAGE_TOKEN=… python3 strumenti/facebook.py [--sito .] [--stato FILE]
 """
 import argparse
 import datetime as dt
+import http.client
 import json
 import os
 import re
@@ -271,14 +272,16 @@ def chiama(metodo, percorso, token, dati=None):
 def riprova(fare, cosa, lettura=False):
     """Tre tentativi (dopo 5 e 30 secondi): un errore di passaggio non deve far perdere un post. Una lettura si
     riprova sempre; un invio solo se Facebook ha risposto di no (errore HTTP) o la connessione non è nemmeno partita:
-    se la risposta si è persa per strada (tempo scaduto) il post potrebbe essere uscito, e riprovare alla cieca farebbe
-    un doppione. In quel caso si finisce con errore e alla volta dopo si ricontrolla sulla Pagina."""
+    se la risposta si è persa per strada (tempo scaduto, o Facebook che chiude la connessione senza rispondere) il post
+    potrebbe essere uscito, e riprovare alla cieca farebbe un doppione. In quel caso si finisce con errore e alla volta
+    dopo si ricontrolla sulla Pagina. Il 26 ott 2026 alle 15:41 «Remote end closed connection without response» era
+    trattato come un no: la foto era uscita, è stata rimandata dopo 5 secondi e la notizia è uscita due volte di fila."""
+    persa = (TimeoutError, socket.timeout, ConnectionError, http.client.HTTPException)   # dopo l'invio, risposta persa
     for attesa in (5, 30, None):
         try:
             return fare()
         except Exception as e:
-            incerto = isinstance(e, (TimeoutError, socket.timeout)) or (
-                isinstance(e, urllib.error.URLError) and isinstance(e.reason, (TimeoutError, socket.timeout)))
+            incerto = isinstance(e, persa) or (isinstance(e, urllib.error.URLError) and isinstance(e.reason, persa))
             if attesa is None or (incerto and not lettura):
                 raise RuntimeError(f"{cosa}: {e}" + (" (forse è uscito: si ricontrolla dopo)" if incerto else "")) from None
             print(f"  {cosa}: {e} — riprovo tra {attesa} s")
