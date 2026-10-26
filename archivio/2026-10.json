@@ -63,7 +63,8 @@
    "fonti": [
     {
      "nome": "Comune di San Leucio del Sannio",
-     "url": "https://www.halleyweb.com/c062060/mc/mc_p_dettaglio.php?id_pubbl=12210"
+     "url": "https://www.halleyweb.com/c062060/mc/mc_p_dettaglio.php?id_pubbl=12210",
+     "ufficiale": true
     }
    ],
    "articolo": {
@@ -92,7 +93,8 @@
       "nome": "Comune di San Leucio del Sannio",
       "titolo": "Prot. N.118720 del 22-10-2026 - Progetto D.R.E.A.M.S.-Stagione 2026/2027. Avviso Pubblico per riconoscimento contributo frequenza per attività sportive e/o culturali a favore di minori Ambito B1. Trasmissione graduatoria definitiva",
       "url": "https://www.halleyweb.com/c062060/mc/mc_p_dettaglio.php?id_pubbl=12210",
-      "data": "23 ott"
+      "data": "23 ott",
+      "ufficiale": true
      }
     ]
    },
@@ -112,7 +114,8 @@
    "fonti": [
     {
      "nome": "Comune di Faicchio",
-     "url": "https://comune.faicchio.bn.it/novita/illuminazione-votiva-cimiteriale-pagamento-canone-annuale-2027-nuove-attivazioni-e-cessazioni/"
+     "url": "https://comune.faicchio.bn.it/novita/illuminazione-votiva-cimiteriale-pagamento-canone-annuale-2027-nuove-attivazioni-e-cessazioni/",
+     "ufficiale": true
     }
    ],
    "articolo": {
@@ -145,7 +148,8 @@
       "nome": "Comune di Faicchio",
       "titolo": "Illuminazione votiva cimiteriale – Pagamento canone annuale 2027, nuove attivazioni e cessazioni.",
       "url": "https://comune.faicchio.bn.it/novita/illuminazione-votiva-cimiteriale-pagamento-canone-annuale-2027-nuove-attivazioni-e-cessazioni/",
-      "data": "23 ott"
+      "data": "23 ott",
+      "ufficiale": true
      }
     ]
    },
@@ -460,7 +464,8 @@
    "fonti": [
     {
      "nome": "Regione Campania",
-     "url": "https://www.regione.campania.it/comunicazione/area-stampa/comunicati/23102026-comunicato-n-673-parte-numero-un"
+     "url": "https://www.regione.campania.it/comunicazione/area-stampa/comunicati/23102026-comunicato-n-673-parte-numero-un",
+     "ufficiale": true
     },
     {
      "nome": "NTR24",
@@ -545,7 +550,8 @@
       "nome": "Regione Campania",
       "titolo": "23/10/2026 - Comunicato n. 673 - Parte il numero unico di emergenza \"112\" in Campania",
       "url": "https://www.regione.campania.it/comunicazione/area-stampa/comunicati/23102026-comunicato-n-673-parte-numero-un",
-      "data": "23 ott"
+      "data": "23 ott",
+      "ufficiale": true
      },
      {
       "nome": "NTR24",
@@ -2439,7 +2445,8 @@
    "fonti": [
     {
      "nome": "Provincia di Benevento",
-     "url": "https://www.provincia.benevento.it/node/61557"
+     "url": "https://www.provincia.benevento.it/node/61557",
+     "ufficiale": true
     },
     {
      "nome": "NTR24",
@@ -2479,7 +2486,8 @@
       "nome": "Provincia di Benevento",
       "titolo": "IL PRESIDENTE DELLA PROVINCIA DISPONE PER UN MONITORAGGIO DI CONTROLLO SUL RETICOLO IDROGRAFICO PRINCIPALE E CHIEDE ALLA REGIONE CAMPANIA STANZIAMENTI ADEGUATI AI BISOGNI DEL TERRITORIO SANNITA",
       "url": "https://www.provincia.benevento.it/node/61557",
-      "data": "22 ott, 16:42"
+      "data": "22 ott, 16:42",
+      "ufficiale": true
      },
      {
       "nome": "NTR24",
@@ -3296,7 +3304,8 @@
    "fonti": [
     {
      "nome": "Comune di Benevento",
-     "url": "https://comune.benevento.it/novita/pubblicata-la-graduatoria-dei-nuclei-familiari-beneficiari-della-misura-carta-dedicata-a-te/"
+     "url": "https://comune.benevento.it/novita/pubblicata-la-graduatoria-dei-nuclei-familiari-beneficiari-della-misura-carta-dedicata-a-te/",
+     "ufficiale": true
     },
     {
      "nome": "Ottopagine",
@@ -3354,7 +3363,8 @@
       "nome": "Comune di Benevento",
       "titolo": "Pubblicata la graduatoria dei nuclei familiari beneficiari della misura “Carta Dedicata a Te”",
       "url": "https://comune.benevento.it/novita/pubblicata-la-graduatoria-dei-nuclei-familiari-beneficiari-della-misura-carta-dedicata-a-te/",
-      "data": "21 ott, 09:41"
+      "data": "21 ott, 09:41",
+      "ufficiale": true
      },
      {
       "nome": "Ottopagine",
@@ -3511,7 +3521,8 @@
    "fonti": [
     {
      "nome": "Prefettura di Benevento",
-     "url": "https://prefettura.interno.gov.it/it/prefetture/benevento/notizie/protesta-autotrasportatori"
+     "url": "https://prefettura.interno.gov.it/it/prefetture/benevento/notizie/protesta-autotrasportatori",
+     "ufficiale": true
     },
     {
      "nome": "Lab TV",
@@ -3568,7 +3579,8 @@
       "nome": "Prefettura di Benevento",
       "titolo": "Protesta degli autotrasportatori",
       "url": "https://prefettura.interno.gov.it/it/prefetture/benevento/notizie/protesta-autotrasportatori",
-      "data": "21 ott, 21:08"
+      "data": "21 ott, 21:08",
+      "ufficiale": true
      },
      {
       "nome": "Lab TV",
@@ -3748,7 +3760,8 @@
    "fonti": [
     {
      "nome": "Comune di Benevento",
-     "url": "https://comune.benevento.it/novita/allerta-meteo-domani-21-ottobre-chiuse-scuole-villa-comunale-parchi-e-cimitero/"
+     "url": "https://comune.benevento.it/novita/allerta-meteo-domani-21-ottobre-chiuse-scuole-villa-comunale-parchi-e-cimitero/",
+     "ufficiale": true
     },
     {
      "nome": "Cronache del Sannio",
@@ -3772,31 +3785,38 @@
     },
     {
      "nome": "Meteoalarm",
-     "url": "https://meteoalarm.org?geocode=EMMA_ID:IT016"
+     "url": "https://meteoalarm.org?geocode=EMMA_ID:IT016",
+     "ufficiale": true
     },
     {
      "nome": "Comune di Sant'Agata de' Goti",
-     "url": "https://www.comune.santagatadegoti.bn.it/novita/avvisi/novita_202.html"
+     "url": "https://www.comune.santagatadegoti.bn.it/novita/avvisi/novita_202.html",
+     "ufficiale": true
     },
     {
      "nome": "Comune di Pietrelcina",
-     "url": "https://www.comune.pietrelcina.bn.it/novita/avvisi/novita_375.html"
+     "url": "https://www.comune.pietrelcina.bn.it/novita/avvisi/novita_375.html",
+     "ufficiale": true
     },
     {
      "nome": "Comune di Guardia Sanframondi",
-     "url": "https://www.comune.guardiasanframondi.bn.it/novita/avvisi/novita_205.html"
+     "url": "https://www.comune.guardiasanframondi.bn.it/novita/avvisi/novita_205.html",
+     "ufficiale": true
     },
     {
      "nome": "Protezione civile (bollettino)",
-     "url": "https://notiziebenevento.it/meteo.json"
+     "url": "https://notiziebenevento.it/meteo.json",
+     "ufficiale": true
     },
     {
      "nome": "Comune di Frasso Telesino",
-     "url": "https://comune.frassotelesino.bn.it/novita/allerta-meteo-chiusura-scuole-21-10-2026/"
+     "url": "https://comune.frassotelesino.bn.it/novita/allerta-meteo-chiusura-scuole-21-10-2026/",
+     "ufficiale": true
     },
     {
      "nome": "Comune di Moiano",
-     "url": "https://www.comune.moiano.bn.it/novita/notizie/novita_52.html"
+     "url": "https://www.comune.moiano.bn.it/novita/notizie/novita_52.html",
+     "ufficiale": true
     },
     {
      "nome": "Il Sannio Quotidiano",
@@ -3808,7 +3828,8 @@
     },
     {
      "nome": "Protezione civile (bollettino 21/10)",
-     "url": "https://notiziebenevento.it/meteo.json"
+     "url": "https://notiziebenevento.it/meteo.json",
+     "ufficiale": true
     }
    ],
    "articolo": {
@@ -3954,7 +3975,8 @@
       "nome": "Comune di Benevento",
       "titolo": "Allerta meteo, domani 21 ottobre chiuse le scuole, la villa comunale, i parchi e il cimitero",
       "url": "https://comune.benevento.it/novita/allerta-meteo-domani-21-ottobre-chiuse-scuole-villa-comunale-parchi-e-cimitero/",
-      "data": "20 ott"
+      "data": "20 ott",
+      "ufficiale": true
      },
      {
       "nome": "Cronache del Sannio",
@@ -3990,43 +4012,50 @@
       "nome": "Meteoalarm",
       "titolo": "Orange Rain Warning / Orange Thunderstorm Warning / Yellow Wind Warning – Campania",
       "url": "https://meteoalarm.org?geocode=EMMA_ID:IT016",
-      "data": "20 ott, 12:09"
+      "data": "20 ott, 12:09",
+      "ufficiale": true
      },
      {
       "nome": "Comune di Sant'Agata de' Goti",
       "titolo": "Allerta Meteo ARANCIONE dalle ore 00:00 alle 23:59 di Mercoledì 21 Ottobre 2026-Ordinanza chiusura scuole, parchi e cimiteri ed Attivazione COC",
       "url": "https://www.comune.santagatadegoti.bn.it/novita/avvisi/novita_202.html",
-      "data": "20 ott"
+      "data": "20 ott",
+      "ufficiale": true
      },
      {
       "nome": "Comune di Pietrelcina",
       "titolo": "Ordinanza N. 27/2026 - Chiusura scuole, cimitero comunale, impianti sportivi, parchi e ville per il giorno 21/10/2026",
       "url": "https://www.comune.pietrelcina.bn.it/novita/avvisi/novita_375.html",
-      "data": "20 ott"
+      "data": "20 ott",
+      "ufficiale": true
      },
      {
       "nome": "Comune di Guardia Sanframondi",
       "titolo": "Ordinanza Sindacale n.08 del 20-10-2026 Chiusura Scuole ogni ordine e grado",
       "url": "https://www.comune.guardiasanframondi.bn.it/novita/avvisi/novita_205.html",
-      "data": "20 ott"
+      "data": "20 ott",
+      "ufficiale": true
      },
      {
       "nome": "Protezione civile (bollettino)",
       "titolo": "Bollettino del 20 ottobre 2026 ore 15:21 (dati ripresi dal sito meteo di Notizie Benevento)",
       "url": "https://notiziebenevento.it/meteo.json",
-      "data": "20 ott, 15:21"
+      "data": "20 ott, 15:21",
+      "ufficiale": true
      },
      {
       "nome": "Comune di Frasso Telesino",
       "titolo": "Allerta meteo-idrogeologica e idraulica: avviso alla cittadinanza per mercoledì 21 ottobre 2026",
       "url": "https://comune.frassotelesino.bn.it/novita/allerta-meteo-chiusura-scuole-21-10-2026/",
-      "data": "20 ott"
+      "data": "20 ott",
+      "ufficiale": true
      },
      {
       "nome": "Comune di Moiano",
       "titolo": "Avviso di allerta meteo-idrogeologica ed idraulica, n. 87/2026 - Chiusura scuole statali di ogni ordine e grado per il 21/10/2026.",
       "url": "https://www.comune.moiano.bn.it/novita/notizie/novita_52.html",
-      "data": "20 ott"
+      "data": "20 ott",
+      "ufficiale": true
      },
      {
       "nome": "Il Sannio Quotidiano",
@@ -4044,7 +4073,8 @@
       "nome": "Protezione civile (bollettino 21/10)",
       "titolo": "Bollettino del 21 ottobre 2026 ore 14:36 (dati ripresi dal sito meteo di Notizie Benevento)",
       "url": "https://notiziebenevento.it/meteo.json",
-      "data": "21 ott, 14:36"
+      "data": "21 ott, 14:36",
+      "ufficiale": true
      }
     ],
     "racconto": [
@@ -4127,7 +4157,8 @@
    "fonti": [
     {
      "nome": "EAV",
-     "url": "https://www.eavsrl.it/comunicato-stampa-eav-difficolta-di-rifornimento-carburante-aggiornamento-servizi-eav-2/"
+     "url": "https://www.eavsrl.it/comunicato-stampa-eav-difficolta-di-rifornimento-carburante-aggiornamento-servizi-eav-2/",
+     "ufficiale": true
     },
     {
      "nome": "Il Caudino",
@@ -4135,7 +4166,8 @@
     },
     {
      "nome": "EAV (23/10)",
-     "url": "https://www.eavsrl.it/aggiornamento-rifornimenti-gasolio-e-piano-di-ripresa-del-servizio-impianti-dta/"
+     "url": "https://www.eavsrl.it/aggiornamento-rifornimenti-gasolio-e-piano-di-ripresa-del-servizio-impianti-dta/",
+     "ufficiale": true
     }
    ],
    "articolo": {
@@ -4225,7 +4257,8 @@
       "nome": "EAV",
       "titolo": "COMUNICATO STAMPA EAV: DIFFICOLTA’ DI RIFORNIMENTO CARBURANTE – AGGIORNAMENTO SERVIZI EAV",
       "url": "https://www.eavsrl.it/comunicato-stampa-eav-difficolta-di-rifornimento-carburante-aggiornamento-servizi-eav-2/",
-      "data": "20 ott"
+      "data": "20 ott",
+      "ufficiale": true
      },
      {
       "nome": "Il Caudino",
@@ -4237,7 +4270,8 @@
       "nome": "EAV (23/10)",
       "titolo": "Aggiornamento rifornimenti gasolio e piano di ripresa del servizio – Impianti DTA",
       "url": "https://www.eavsrl.it/aggiornamento-rifornimenti-gasolio-e-piano-di-ripresa-del-servizio-impianti-dta/",
-      "data": "23 ott, 18:57"
+      "data": "23 ott, 18:57",
+      "ufficiale": true
      }
     ],
     "aggiornamento": {
@@ -4391,7 +4425,8 @@
    "fonti": [
     {
      "nome": "Comune di Benevento",
-     "url": "https://comune.benevento.it/novita/divieto-di-sosta-in-via-goduti-per-lavori-di-manutenzione-di-una-cabina/"
+     "url": "https://comune.benevento.it/novita/divieto-di-sosta-in-via-goduti-per-lavori-di-manutenzione-di-una-cabina/",
+     "ufficiale": true
     },
     {
      "nome": "NTR24",
@@ -4428,7 +4463,8 @@
       "nome": "Comune di Benevento",
       "titolo": "Divieto di sosta in via Goduti per lavori di manutenzione di una cabina",
       "url": "https://comune.benevento.it/novita/divieto-di-sosta-in-via-goduti-per-lavori-di-manutenzione-di-una-cabina/",
-      "data": "21 ott, 09:59"
+      "data": "21 ott, 09:59",
+      "ufficiale": true
      },
      {
       "nome": "NTR24",
@@ -4686,7 +4722,8 @@
    "fonti": [
     {
      "nome": "Albo pretorio Benevento",
-     "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80016"
+     "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80016",
+     "ufficiale": true
     }
    ],
    "articolo": {
@@ -4716,7 +4753,8 @@
       "nome": "Albo pretorio Benevento",
       "titolo": "Chiusura al traffico veicolare e pedonale dell'attraversamento a raso al servizio del passaggio a livello avente ubicazione in Via dei Canali (Contrada Piano Morra) in corrispondenza del km 27 + 022 della linea ferroviaria Avellino - Benevento",
       "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80016",
-      "data": "21 ott"
+      "data": "21 ott",
+      "ufficiale": true
      }
     ]
    },
@@ -5816,7 +5854,8 @@
    "fonti": [
     {
      "nome": "Comune di Benevento",
-     "url": "https://comune.benevento.it/novita/carovita-indirizzo-sindacale-per-smartworking-per-i-dipendenti-residenti-fuori-citt/"
+     "url": "https://comune.benevento.it/novita/carovita-indirizzo-sindacale-per-smartworking-per-i-dipendenti-residenti-fuori-citt/",
+     "ufficiale": true
     },
     {
      "nome": "NTR24",
@@ -5849,7 +5888,8 @@
       "nome": "Comune di Benevento",
       "titolo": "Carovita, indirizzo sindacale per smartworking per i dipendenti residenti fuori città",
       "url": "https://comune.benevento.it/novita/carovita-indirizzo-sindacale-per-smartworking-per-i-dipendenti-residenti-fuori-citt/",
-      "data": "20 ott"
+      "data": "20 ott",
+      "ufficiale": true
      },
      {
       "nome": "NTR24",
@@ -6154,7 +6194,8 @@
    "fonti": [
     {
      "nome": "ASL Benevento",
-     "url": "https://www.aslbenevento.it/notizie/asl-benevento-e-farmacie-insieme-gli-screening-oncologici"
+     "url": "https://www.aslbenevento.it/notizie/asl-benevento-e-farmacie-insieme-gli-screening-oncologici",
+     "ufficiale": true
     }
    ],
    "articolo": {
@@ -6189,7 +6230,8 @@
       "nome": "ASL Benevento",
       "titolo": "ASL Benevento e farmacie insieme per gli screening oncologici",
       "url": "https://www.aslbenevento.it/notizie/asl-benevento-e-farmacie-insieme-gli-screening-oncologici",
-      "data": "20 ott"
+      "data": "20 ott",
+      "ufficiale": true
      }
     ]
    },
@@ -6212,7 +6254,8 @@
    "fonti": [
     {
      "nome": "Comune di Pietrelcina",
-     "url": "https://www.comune.pietrelcina.bn.it/novita/avvisi/novita_374.html"
+     "url": "https://www.comune.pietrelcina.bn.it/novita/avvisi/novita_374.html",
+     "ufficiale": true
     },
     {
      "nome": "NTR24",
@@ -6268,7 +6311,8 @@
       "nome": "Comune di Pietrelcina",
       "titolo": "Alto Calore Servizi S.p.A. - Fuori servizio idrico programmato del 22 Ottobre 2026",
       "url": "https://www.comune.pietrelcina.bn.it/novita/avvisi/novita_374.html",
-      "data": "20 ott"
+      "data": "20 ott",
+      "ufficiale": true
      },
      {
       "nome": "NTR24",
@@ -7213,7 +7257,8 @@
    "fonti": [
     {
      "nome": "Comune di Benevento",
-     "url": "https://comune.benevento.it/novita/da-mercoled-21-ottobre-divieti-di-sosta-su-parte-di-viale-mellusi-piazzetta-s-rita-e-rampa-annunziata/"
+     "url": "https://comune.benevento.it/novita/da-mercoled-21-ottobre-divieti-di-sosta-su-parte-di-viale-mellusi-piazzetta-s-rita-e-rampa-annunziata/",
+     "ufficiale": true
     }
    ],
    "articolo": {
@@ -7227,7 +7272,8 @@
       "nome": "Comune di Benevento",
       "titolo": "Da mercoledì 21 ottobre divieti di sosta su parte di viale Mellusi, piazzetta S. Rita e rampa Annunziata",
       "url": "https://comune.benevento.it/novita/da-mercoled-21-ottobre-divieti-di-sosta-su-parte-di-viale-mellusi-piazzetta-s-rita-e-rampa-annunziata/",
-      "data": "19 ott"
+      "data": "19 ott",
+      "ufficiale": true
      }
     ],
     "divergono": [],
@@ -7425,7 +7471,8 @@
    "fonti": [
     {
      "nome": "INGV",
-     "url": "https://webservices.ingv.it/fdsnws/event/1/query?starttime=2026-10-17T18:00:00&endtime=2026-10-18T06:00:00&lat=41.33&lon=14.47&maxradius=0.25&orderby=time-asc&format=text"
+     "url": "https://webservices.ingv.it/fdsnws/event/1/query?starttime=2026-10-17T18:00:00&endtime=2026-10-18T06:00:00&lat=41.33&lon=14.47&maxradius=0.25&orderby=time-asc&format=text",
+     "ufficiale": true
     },
     {
      "nome": "PaeseNews",
@@ -7499,7 +7546,8 @@
       "nome": "INGV",
       "titolo": "Elenco ufficiale delle scosse (dati grezzi, orari in UTC)",
       "url": "https://webservices.ingv.it/fdsnws/event/1/query?starttime=2026-10-17T18:00:00&endtime=2026-10-18T06:00:00&lat=41.33&lon=14.47&maxradius=0.25&orderby=time-asc&format=text",
-      "data": "dati consultati il 20 ott"
+      "data": "dati consultati il 20 ott",
+      "ufficiale": true
      },
      {
       "nome": "PaeseNews",
@@ -7529,7 +7577,8 @@
    "fonti": [
     {
      "nome": "Ospedale San Pio",
-     "url": "https://www.aosanpio.it/2026/10/13/aorn-san-pio-22-ottobre-open-day-dedicato-alla-sclerodermia/"
+     "url": "https://www.aosanpio.it/2026/10/13/aorn-san-pio-22-ottobre-open-day-dedicato-alla-sclerodermia/",
+     "ufficiale": true
     }
    ],
    "articolo": {
@@ -7558,7 +7607,8 @@
       "nome": "Ospedale San Pio",
       "titolo": "AORN SAN PIO, 22 OTTOBRE OPEN DAY DEDICATO ALLA SCLERODERMIA",
       "url": "https://www.aosanpio.it/2026/10/13/aorn-san-pio-22-ottobre-open-day-dedicato-alla-sclerodermia/",
-      "data": "13 ott"
+      "data": "13 ott",
+      "ufficiale": true
      }
     ]
    },

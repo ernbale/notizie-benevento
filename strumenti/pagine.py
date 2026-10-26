@@ -465,10 +465,11 @@ def immagine_notizia(sito, n, tipo):
     """Percorso dell'immagine (sul sito) della notizia: si rifà solo se cambiano titolo, sezione, luogo o fonti.
     Il nome resta sempre lo stesso: Facebook si tiene l'indirizzo dell'immagine letto quando esce il post, e se
     cambiasse a ogni fonte nuova il post resterebbe col riquadro vuoto (21 ott 2026)."""
-    fonti = (n.get("articolo") or {}).get("fonti") or n.get("fonti") or []
+    v = vista_ufficiale(n)
+    fonti = (v.get("articolo") or {}).get("fonti") or v.get("fonti") or []
     occ = "Approfondimento" if tipo == "approfondimento" else _categoria(n)
-    piede = (f"{len(fonti)} {'fonte' if len(fonti) == 1 else 'fonti confrontate'} · "
-             f"{data_it(n.get('pubblicato') or n.get('aggiornato'), lunga=True)}")
+    quante = conta_fonti(v, fonti)
+    piede = f"{quante[:1].upper() + quante[1:]} · {data_it(n.get('pubblicato') or n.get('aggiornato'), lunga=True)}"
     impronta = hashlib.sha1(json.dumps([n["titolo"], occ, n.get("luogo"), piede, 2], ensure_ascii=False)
                             .encode()).hexdigest()[:10]
     rel = f"img/n/{'approfondimento-' if tipo == 'approfondimento' else ''}{n['id']}.png"
@@ -476,6 +477,69 @@ def immagine_notizia(sito, n, tipo):
     if _impronta_png(full) != impronta:
         immagine(full, n["titolo"], occ, n.get("luogo"), piede, impronta)
     return "/" + rel
+
+
+# ---------- con una fonte ufficiale si mostra quella ----------
+def vista_ufficiale(n):
+    """La notizia come si mostra. Con una fonte ufficiale (stato «ufficiale» e la fonte segnata "ufficiale": true) il
+    sito mostra quella; i giornali solo dove aggiungono un fatto che lei non dice (citati in una frase senza la fonte
+    ufficiale) o dove dicono una cosa diversa («divergono»). Voluto dal proprietario il 26 ott 2026 («quando abbiamo la
+    fonte ufficiale non è necessario mettere anche le altre fonti», «vale per tutte»). I giornali restano nei dati:
+    servono a riconoscere i doppioni (giornali.citati, comunicati.link_di). Senza una fonte segnata la notizia si mostra
+    com'è. Copia, non tocca n. Uguale a vistaUfficiale() di index.html."""
+    a = n.get("articolo") if isinstance(n.get("articolo"), dict) else {}
+    tutte = [f for l in (n.get("fonti"), a.get("fonti")) if isinstance(l, list) for f in l if isinstance(f, dict)]
+    uff = {f["nome"] for f in tutte if f.get("ufficiale") is True and isinstance(f.get("nome"), str)}
+    if n.get("stato") != "ufficiale" or not uff:
+        return n
+
+    def e_uff(nm):
+        return isinstance(nm, str) and nm in uff
+
+    def togli(x):   # in una frase con la fonte ufficiale, i giornali che la ripetono non si citano
+        if not isinstance(x, dict) or not isinstance(x.get("fonti"), list) or not any(e_uff(nm) for nm in x["fonti"]):
+            return x
+        return dict(x, fonti=[nm for nm in x["fonti"] if e_uff(nm)])
+
+    def segnata(f):   # la stessa fonte (per nome) è ufficiale in tutti e due gli elenchi
+        return f if f.get("ufficiale") is True else dict(f, ufficiale=True)
+
+    v = dict(n)
+    elenco = lambda l: l if isinstance(l, list) else []
+    v["fonti"] = ([segnata(f) for f in elenco(n.get("fonti")) if isinstance(f, dict) and e_uff(f.get("nome"))]
+                  or [segnata(f) for f in elenco(a.get("fonti")) if isinstance(f, dict) and e_uff(f.get("nome"))])
+    if a:
+        b = dict(a)
+        for sez in ("racconto", "cronologia"):
+            if isinstance(a.get(sez), list):
+                b[sez] = [togli(x) for x in a[sez]]
+        if isinstance(a.get("concordano"), list):   # «concordano» rimasto con la sola fonte ufficiale non dice niente
+            b["concordano"] = [y for x in a["concordano"] for y in [togli(x)]
+                               if y is x or len(y.get("fonti") or []) > 1]
+        if isinstance(a.get("aggiornamento"), dict):
+            b["aggiornamento"] = togli(a["aggiornamento"])
+        citate = set(uff)
+        for sez in ("racconto", "cronologia", "concordano", "divergono", "non_si_sa"):
+            for x in b.get(sez) or []:
+                if isinstance(x, dict) and isinstance(x.get("fonti"), list):
+                    citate |= {nm for nm in x["fonti"] if isinstance(nm, str)}
+        if isinstance(b.get("aggiornamento"), dict) and isinstance(b["aggiornamento"].get("fonti"), list):
+            citate |= {nm for nm in b["aggiornamento"]["fonti"] if isinstance(nm, str)}
+        if isinstance(a.get("fonti"), list):   # prima le fonti ufficiali, poi i giornali (ognuno nel suo ordine)
+            resta = [f for f in a["fonti"] if isinstance(f, dict) and isinstance(f.get("nome"), str) and f["nome"] in citate]
+            b["fonti"] = [segnata(f) for f in resta if e_uff(f["nome"])] + [f for f in resta if not e_uff(f["nome"])]
+        v["articolo"] = b
+    return v
+
+
+def conta_fonti(n, fonti):
+    """«5 fonti confrontate», «1 fonte»; con una fonte ufficiale «fonte ufficiale» (e quanti giornali si citano)."""
+    if n.get("stato") == "ufficiale" and any(isinstance(f, dict) and f.get("ufficiale") is True for f in fonti):
+        u = sum(1 for f in fonti if isinstance(f, dict) and f.get("ufficiale") is True)
+        g = len(fonti) - u
+        return ("fonte ufficiale" if u == 1 else f"{u} fonti ufficiali") + \
+            (f" e {g} {'giornale' if g == 1 else 'giornali'}" if g else "")
+    return f"{len(fonti)} {'fonte' if len(fonti) == 1 else 'fonti confrontate'}"
 
 
 # ---------- l'articolo già scritto nella pagina (stesso HTML che disegna index.html) ----------
@@ -755,7 +819,7 @@ def _quando_strada(n, oggi):
 def _voci_strade(voci, oggi):
     h = '<ul class="notizie-comune">'
     for n in voci:
-        f = next((x for x in n.get("fonti") or [] if str(x.get("url") or "").startswith("http")), None)
+        f = next((x for x in vista_ufficiale(n).get("fonti") or [] if str(x.get("url") or "").startswith("http")), None)
         h += (f'<li><div class="occhiello">{e(TRAFFICO[n["traffico"]])}</div>'
               f'<a href="{percorso("notizia", n["id"])}">{e(n["titolo"])}</a><span class="dove">'
               + (f"{_luogo_link(n['luogo'])} · " if n.get("luogo") else "") + e(_quando_strada(n, oggi))
@@ -1243,11 +1307,12 @@ def _aggiornamento(ag, fonti):
 
 
 def html_articolo(n, appro_collegato):
+    n = vista_ufficiale(n)
     a = n["articolo"]
     fonti = a.get("fonti") if isinstance(a.get("fonti"), list) else []
     h = _testata_pagina(_categoria(n), n.get("luogo"), n["titolo"])
     meta = ("Dall'archivio · " if n["_arch"] else "") + (data_it(n.get("pubblicato")) + " · " if n.get("pubblicato") else "")
-    h += f'<div class="meta">{e(meta)}{len(fonti)} {"fonte" if len(fonti) == 1 else "fonti confrontate"}</div>'
+    h += f'<div class="meta">{e(meta)}{e(conta_fonti(n, fonti))}</div>'
     if n.get("stato") == "una_fonte" and n.get("fonti"):
         h += (f'<div class="nota">Per ora questo fatto lo riporta solo {e(n["fonti"][0].get("nome", ""))}. '
               'Lo aggiorniamo se arrivano altre fonti.</div>')
@@ -1808,7 +1873,8 @@ def main():
                           if quando_dt(x)), key=quando_dt, default=n.get("pubblicato"))
         sez = NOMI_CAT.get(n.get("categoria"), "Altro")
         coll = next((x for x in appro if n["id"] in (x.get("collegate") or [])), None)
-        fonti = a_.get("fonti") if isinstance(a_.get("fonti"), list) else []
+        fonti = (vista_ufficiale(n).get("articolo") or {}).get("fonti")
+        fonti = fonti if isinstance(fonti, list) else []
         jsonld = {"@context": "https://schema.org", "@graph": [
             {"@type": "NewsArticle", "@id": url + "#articolo", "headline": breve(titolo_google(n), 110),
              "description": n.get("sintesi"), "datePublished": n.get("pubblicato"), "dateModified": modificato,

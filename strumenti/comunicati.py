@@ -244,6 +244,15 @@ def unisci(d, visti, entrata, voci, adesso, err):
                        "«gia_nel_sito» con quella notizia (o togli quel link se è proprio un altro fatto)")
     if err:
         return []
+    # l'articolo di un sito ufficiale: la fonte col suo link è la fonte ufficiale, il sito mostra lei (26 ott 2026,
+    # pagine.vista_ufficiale); qui si segna anche se l'agente se ne è dimenticato
+    for e in esiti:
+        voce = per_voce.get(e.get("comunicato")) or {}
+        link = con_percorso(voce.get("link")) if e.get("esito") == "pubblicato" and voce.get("tipo") == "sito" else ""
+        n = per_id.get(e.get("notizia")) if link else None
+        for f in ((n.get("fonti") or []) + ((n.get("articolo") or {}).get("fonti") or [])) if n else []:
+            if isinstance(f, dict) and con_percorso(f.get("url")) == link:
+                f["ufficiale"] = True
     for n in reversed(nuove):
         n["subito"] = True
         n.setdefault("pubblicato", adesso.isoformat(timespec="seconds"))

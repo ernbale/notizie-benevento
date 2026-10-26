@@ -410,12 +410,21 @@ Regole:
        («Raccolta per Odessa a Benevento: dove e fino a quando»).
    - La `sintesi` (2-3 frasi) è la descrizione sotto il titolo su Google: le prime 150 lettere devono bastare a
      capire il fatto.
+   - **Con una fonte ufficiale** (`"stato": "ufficiale"`, regola 2) segna quella fonte con `"ufficiale": true`, in
+     `fonti` e in `articolo.fonti` (stesso nome): il sito mostra lei e scrive «Fonte ufficiale» (voluto dal
+     proprietario il 26 ott 2026: «quando abbiamo la fonte ufficiale non è necessario mettere anche le altre fonti»,
+     «vale per tutte»). Ufficiali sono enti, Comuni, aziende di servizi e società sportive, mai un giornale. I giornali
+     che hanno ripreso lo stesso comunicato mettili lo stesso tra le fonti (servono a riconoscere i doppioni) e nelle
+     frasi dove la fonte ufficiale dice le stesse cose: il sito non li mostra (`pagine.vista_ufficiale`). Un fatto che
+     la fonte ufficiale non dice (una dichiarazione, un dettaglio) citalo col solo giornale che lo scrive, in una frase
+     sua: allora si vede. Quando aggiorni una notizia ufficiale, `"ufficiale": true` resta dov'è.
 5. **Rileggi prima di pubblicare** (obbligatorio), per ogni notizia nuova o cambiata:
    - ogni frase dell'articolo ha almeno una fonte che hai davvero letto, e la fonte dice proprio quello?
    - il racconto si capisce da solo, da chi non ha letto nessun giornale? dice chi è chi, dove e perché?
    - date, orari, numeri, nomi di strade e paesi sono identici alle fonti?
    - titolo: dice il fatto? è senza acchiappa-clic? parole semplici? `titolo_google` sta in 60 caratteri, con paese e
      fatto, scritto come lo cerca la gente (punto 4: la parola cercata prima, date per esteso, niente «oggi»)?
+   - `"stato": "ufficiale"`: la fonte ufficiale ha `"ufficiale": true` in `fonti` e in `articolo.fonti` (punto 4)?
    - è un fatto di oggi o ancora attuale?
    - notizia già uscita con fatti nuovi: c'è `aggiornamento` con la novità? il primo paragrafo dice com'è la situazione adesso?
    - notizia aggiornata: titolo, `titolo_google` e `sintesi`, letti adesso, dicono ancora il vero con tutti i fatti del
@@ -680,7 +689,7 @@ Nel resoconto scrivi quanti ne hai aggiunti, e se l'elenco dice ATTENZIONE (copi
     "in_vigore_fino": "AAAA-MM-GG, solo per avvisi ufficiali con una scadenza (lavori, divieti, ordinanze)",
     "in_vigore_dal": "AAAA-MM-GG, il primo giorno dell'avviso (facoltativo; serve quando comincia più avanti)",
     "traffico": "chiusa|blocchi|senso_unico|ristretta|bus, solo per strade chiuse o con disagi (vedi sotto)",
-    "fonti": [ {"nome": "Testata", "url": "link all'articolo"} ],
+    "fonti": [ {"nome": "Testata", "url": "link all'articolo"}, {"nome": "Comune di …", "url": "…", "ufficiale": true} ],
     "nota": "solo se serve una correzione",
     "articolo": {
       "aggiornamento": {"testo": "solo su una notizia già uscita: 1-2 frasi con la novità (l'ora la mette archivia.py)", "fonti": ["Nome fonte"]},
@@ -688,7 +697,8 @@ Nel resoconto scrivi quanti ne hai aggiunti, e se l'elenco dice ATTENZIONE (copi
       "cronologia": [ {"data": "19 ottobre | 19 ottobre, 10:30 | notte 19-20 ottobre", "fatto": "", "fonti": ["Nome fonte come in articolo.fonti"]} ],
       "concordano": [ {"testo": "", "fonti": []} ], "divergono": [ {"testo": "", "fonti": []} ],
       "non_si_sa": [ "" ],
-      "fonti": [ {"nome": "", "titolo": "titolo esatto dell'articolo", "url": "", "data": "19 ott, 08:48"} ]
+      "fonti": [ {"nome": "", "titolo": "titolo esatto dell'articolo", "url": "", "data": "19 ott, 08:48"},
+                 {"nome": "", "titolo": "", "url": "", "data": "", "ufficiale": true} ]
     }
   } ],
   "approfondimenti": [ {

@@ -81,7 +81,8 @@
    "fonti": [
     {
      "nome": "Comune di San Martino Sannita",
-     "url": "https://www.comune.sanmartinosannita.bn.it/novita/notizie/novita_113.html"
+     "url": "https://www.comune.sanmartinosannita.bn.it/novita/notizie/novita_113.html",
+     "ufficiale": true
     }
    ],
    "articolo": {
@@ -110,7 +111,8 @@
       "nome": "Comune di San Martino Sannita",
       "titolo": "ORARIO PER LA PRENOTAZIONE DELLE LAMPADE OCCASIONALI.",
       "url": "https://www.comune.sanmartinosannita.bn.it/novita/notizie/novita_113.html",
-      "data": "22 ott"
+      "data": "22 ott",
+      "ufficiale": true
      }
     ]
    },
@@ -132,7 +134,8 @@
    "fonti": [
     {
      "nome": "Benevento Calcio",
-     "url": "https://www.beneventocalcio.club/news/comunicatistampa/7679/abbonati-2026-27-il-tuo-segnaposto-e-pronto.shtml"
+     "url": "https://www.beneventocalcio.club/news/comunicatistampa/7679/abbonati-2026-27-il-tuo-segnaposto-e-pronto.shtml",
+     "ufficiale": true
     }
    ],
    "comunicati": [
@@ -179,7 +182,8 @@
       "nome": "Benevento Calcio",
       "titolo": "ABBONATI 2026/27: IL TUO SEGNAPOSTO È PRONTO!",
       "url": "https://www.beneventocalcio.club/news/comunicatistampa/7679/abbonati-2026-27-il-tuo-segnaposto-e-pronto.shtml",
-      "data": "25 ott, 22:07"
+      "data": "25 ott, 22:07",
+      "ufficiale": true
      }
     ]
    },
@@ -214,7 +218,8 @@
     },
     {
      "nome": "Miwa Basket Benevento",
-     "url": "https://www.cestisticabenevento.it/2026/10/25/la-miwa-spicca-il-volo-sbancata-ragusa/"
+     "url": "https://www.cestisticabenevento.it/2026/10/25/la-miwa-spicca-il-volo-sbancata-ragusa/",
+     "ufficiale": true
     },
     {
      "nome": "NTR24 Sport",
@@ -268,7 +273,8 @@
       "nome": "Miwa Basket Benevento",
       "titolo": "La Miwa spicca il volo: sbancata Ragusa!",
       "url": "https://www.cestisticabenevento.it/2026/10/25/la-miwa-spicca-il-volo-sbancata-ragusa/",
-      "data": "25 ott, 21:01"
+      "data": "25 ott, 21:01",
+      "ufficiale": true
      },
      {
       "nome": "NTR24 Sport",
@@ -321,7 +327,8 @@
    "fonti": [
     {
      "nome": "Comune di Paolisi",
-     "url": "https://comune.paolisi.bn.it/novita/sportello-concessionario-2/"
+     "url": "https://comune.paolisi.bn.it/novita/sportello-concessionario-2/",
+     "ufficiale": true
     }
    ],
    "articolo": {
@@ -350,7 +357,8 @@
       "nome": "Comune di Paolisi",
       "titolo": "sportello concessionario",
       "url": "https://comune.paolisi.bn.it/novita/sportello-concessionario-2/",
-      "data": "25 ott"
+      "data": "25 ott",
+      "ufficiale": true
      }
     ]
    },
@@ -516,7 +524,8 @@
    "fonti": [
     {
      "nome": "Pro Loco Fragnetana",
-     "url": "https://www.unplibenevento.it/"
+     "url": "https://www.unplibenevento.it/",
+     "ufficiale": true
     }
    ],
    "articolo": {
@@ -563,7 +572,8 @@
       "nome": "Pro Loco Fragnetana",
       "titolo": "Il gruppo La Takkarata vola in Brasile dal 29 di ottobre al 15 novembre",
       "url": "https://www.unplibenevento.it/",
-      "data": "25 ott, 19:10"
+      "data": "25 ott, 19:10",
+      "ufficiale": true
      }
     ]
    },
@@ -1272,7 +1282,8 @@
    "fonti": [
     {
      "nome": "Benevento Calcio",
-     "url": "https://www.beneventocalcio.club/news/notizie/7673/serie-bkt-2026-2027-arezzo-benevento-0-3-il-tabellino-della-gara.shtml"
+     "url": "https://www.beneventocalcio.club/news/notizie/7673/serie-bkt-2026-2027-arezzo-benevento-0-3-il-tabellino-della-gara.shtml",
+     "ufficiale": true
     },
     {
      "nome": "Cronache del Sannio",
@@ -1405,7 +1416,8 @@
       "nome": "Benevento Calcio",
       "titolo": "SERIE BKT 2026-2027: AREZZO-BENEVENTO 0-3 IL TABELLINO DELLA GARA",
       "url": "https://www.beneventocalcio.club/news/notizie/7673/serie-bkt-2026-2027-arezzo-benevento-0-3-il-tabellino-della-gara.shtml",
-      "data": "24 ott, 21:27"
+      "data": "24 ott, 21:27",
+      "ufficiale": true
      },
      {
       "nome": "Cronache del Sannio",
@@ -1925,7 +1937,8 @@
    "fonti": [
     {
      "nome": "Comune di San Giorgio la Molara",
-     "url": "https://comune.sangiorgiolamolara.bn.it/albo-pretorio/?dettaglio_id=306081"
+     "url": "https://comune.sangiorgiolamolara.bn.it/albo-pretorio/?dettaglio_id=306081",
+     "ufficiale": true
     }
    ],
    "articolo": {
@@ -1960,7 +1973,8 @@
       "nome": "Comune di San Giorgio la Molara",
       "titolo": "CHIUSURA TEMPORANEA STRADA COMUNALE “VIA STRANIERA” DAL 26/10/2026 AL 10/11/2026, PER LAVORI DI MANUTENZIONE STRAORDINARIA.",
       "url": "https://comune.sangiorgiolamolara.bn.it/albo-pretorio/?dettaglio_id=306081",
-      "data": "24 ott"
+      "data": "24 ott",
+      "ufficiale": true
      }
     ]
    },
@@ -2033,7 +2047,8 @@
    "fonti": [
     {
      "nome": "Alto Calore",
-     "url": "https://altocalore.it/avviso/comunicazione-chiusura-sportelli-utenza-di-alto-calore-servizi/"
+     "url": "https://altocalore.it/avviso/comunicazione-chiusura-sportelli-utenza-di-alto-calore-servizi/",
+     "ufficiale": true
     }
    ],
    "articolo": {
@@ -2062,7 +2077,8 @@
       "nome": "Alto Calore",
       "titolo": "COMUNICAZIONE GIORNI DI CHIUSURA SPORTELLI UTENZA DI ALTO CALORE SERVIZI",
       "url": "https://altocalore.it/avviso/comunicazione-chiusura-sportelli-utenza-di-alto-calore-servizi/",
-      "data": "24 ott, 08:00"
+      "data": "24 ott, 08:00",
+      "ufficiale": true
      }
     ]
    },
@@ -2326,7 +2342,8 @@
    "fonti": [
     {
      "nome": "Comune di Solopaca",
-     "url": "https://www.halleyweb.com/c062073/mc/mc_p_dettaglio.php?id_pubbl=4632"
+     "url": "https://www.halleyweb.com/c062073/mc/mc_p_dettaglio.php?id_pubbl=4632",
+     "ufficiale": true
     }
    ],
    "articolo": {
@@ -2368,7 +2385,8 @@
       "nome": "Comune di Solopaca",
       "titolo": "Interventi di allaccio delle utenze - Ordinanza regolamentazione del traffico Via Variante del 27/11/2026",
       "url": "https://www.halleyweb.com/c062073/mc/mc_p_dettaglio.php?id_pubbl=4632",
-      "data": "24 ott"
+      "data": "24 ott",
+      "ufficiale": true
      }
     ]
    },
@@ -2390,7 +2408,8 @@
    "fonti": [
     {
      "nome": "EAV",
-     "url": "https://www.eavsrl.it/linee-suburbane-avviso-di-sciopero-nazionale-di-24-ore-del-30-ottobre-2026/"
+     "url": "https://www.eavsrl.it/linee-suburbane-avviso-di-sciopero-nazionale-di-24-ore-del-30-ottobre-2026/",
+     "ufficiale": true
     }
    ],
    "articolo": {
@@ -2425,7 +2444,8 @@
       "nome": "EAV",
       "titolo": "Linee Suburbane: Avviso di sciopero nazionale di 24 ore del 30 ottobre 2026",
       "url": "https://www.eavsrl.it/linee-suburbane-avviso-di-sciopero-nazionale-di-24-ore-del-30-ottobre-2026/",
-      "data": "24 ott, 07:16"
+      "data": "24 ott, 07:16",
+      "ufficiale": true
      }
     ]
    },
@@ -2571,7 +2591,8 @@
    "fonti": [
     {
      "nome": "Comune di Foglianise",
-     "url": "https://comune.foglianise.bn.it/albo-pretorio/?dettaglio_id=306037"
+     "url": "https://comune.foglianise.bn.it/albo-pretorio/?dettaglio_id=306037",
+     "ufficiale": true
     }
    ],
    "articolo": {
@@ -2600,7 +2621,8 @@
       "nome": "Comune di Foglianise",
       "titolo": "Ordinanza n. 48 - Chiusura strada tratto Via Roma - Ingresso via fontana",
       "url": "https://comune.foglianise.bn.it/albo-pretorio/?dettaglio_id=306037",
-      "data": "23 ott"
+      "data": "23 ott",
+      "ufficiale": true
      }
     ]
    },
@@ -2624,7 +2646,8 @@
    "fonti": [
     {
      "nome": "Comune di Paupisi",
-     "url": "https://paupisi.halleyweb.it/c062049/mc/mc_p_dettaglio.php?id_pubbl=7671"
+     "url": "https://paupisi.halleyweb.it/c062049/mc/mc_p_dettaglio.php?id_pubbl=7671",
+     "ufficiale": true
     }
    ],
    "articolo": {
@@ -2653,7 +2676,8 @@
       "nome": "Comune di Paupisi",
       "titolo": "APERTURA STRAORDINARIA AREA CIMITERIALE NEI GIORNI 26.10.2026 E 02.11.2026 PER COMMEMORAZIONE DEFUNTI.",
       "url": "https://paupisi.halleyweb.it/c062049/mc/mc_p_dettaglio.php?id_pubbl=7671",
-      "data": "23 ott"
+      "data": "23 ott",
+      "ufficiale": true
      }
     ]
    },
@@ -3327,7 +3351,8 @@
    "fonti": [
     {
      "nome": "AIR Campania",
-     "url": "https://aircampania.it/cusano-mutri-bn-frazione-di-civitella-deviazioni-temporanee/"
+     "url": "https://aircampania.it/cusano-mutri-bn-frazione-di-civitella-deviazioni-temporanee/",
+     "ufficiale": true
     }
    ],
    "articolo": {
@@ -3356,7 +3381,8 @@
       "nome": "AIR Campania",
       "titolo": "Cusano Mutri (BN), frazione di Civitella: deviazioni temporanee",
       "url": "https://aircampania.it/cusano-mutri-bn-frazione-di-civitella-deviazioni-temporanee/",
-      "data": "23 ott, 11:56"
+      "data": "23 ott, 11:56",
+      "ufficiale": true
      }
     ]
    },
@@ -3379,7 +3405,8 @@
    "fonti": [
     {
      "nome": "AIR Campania",
-     "url": "https://aircampania.it/avviso-di-sciopero-avvpco/"
+     "url": "https://aircampania.it/avviso-di-sciopero-avvpco/",
+     "ufficiale": true
     }
    ],
    "articolo": {
@@ -3415,7 +3442,8 @@
       "nome": "AIR Campania",
       "titolo": "Avviso di sciopero",
       "url": "https://aircampania.it/avviso-di-sciopero-avvpco/",
-      "data": "23 ott, 11:29"
+      "data": "23 ott, 11:29",
+      "ufficiale": true
      }
     ]
    },
@@ -3436,7 +3464,8 @@
    "fonti": [
     {
      "nome": "ASL Benevento",
-     "url": "https://www.aslbenevento.it/notizie/avviso-gli-enti-del-terzo-settore"
+     "url": "https://www.aslbenevento.it/notizie/avviso-gli-enti-del-terzo-settore",
+     "ufficiale": true
     }
    ],
    "articolo": {
@@ -3469,7 +3498,8 @@
       "nome": "ASL Benevento",
       "titolo": "Avviso per gli enti del terzo settore",
       "url": "https://www.aslbenevento.it/notizie/avviso-gli-enti-del-terzo-settore",
-      "data": "20 ott"
+      "data": "20 ott",
+      "ufficiale": true
      }
     ]
    },
@@ -3489,7 +3519,8 @@
    "fonti": [
     {
      "nome": "ASL Benevento",
-     "url": "https://www.aslbenevento.it/notizie/prevenzione-hpv-vaccinazione-e-screening-sul-territorio"
+     "url": "https://www.aslbenevento.it/notizie/prevenzione-hpv-vaccinazione-e-screening-sul-territorio",
+     "ufficiale": true
     }
    ],
    "articolo": {
@@ -3522,7 +3553,8 @@
       "nome": "ASL Benevento",
       "titolo": "Prevenzione HPV: vaccinazione e screening sul territorio",
       "url": "https://www.aslbenevento.it/notizie/prevenzione-hpv-vaccinazione-e-screening-sul-territorio",
-      "data": "23 ott"
+      "data": "23 ott",
+      "ufficiale": true
      }
     ]
    },
@@ -3544,7 +3576,8 @@
    "fonti": [
     {
      "nome": "Comune di Benevento",
-     "url": "https://comune.benevento.it/novita/corsa-podistica-in-memoria-di-don-pompilio-a-rione-ferrovia-c-il-piano-traffico/"
+     "url": "https://comune.benevento.it/novita/corsa-podistica-in-memoria-di-don-pompilio-a-rione-ferrovia-c-il-piano-traffico/",
+     "ufficiale": true
     },
     {
      "nome": "NTR24",
@@ -3589,7 +3622,8 @@
       "nome": "Comune di Benevento",
       "titolo": "Corsa podistica in memoria di don Pompilio a Rione Ferrovia, c’è il piano traffico",
       "url": "https://comune.benevento.it/novita/corsa-podistica-in-memoria-di-don-pompilio-a-rione-ferrovia-c-il-piano-traffico/",
-      "data": "23 ott, 09:29"
+      "data": "23 ott, 09:29",
+      "ufficiale": true
      },
      {
       "nome": "NTR24",
@@ -3741,7 +3775,8 @@
     },
     {
      "nome": "Miwa Basket Benevento",
-     "url": "https://www.cestisticabenevento.it/2026/10/24/unindomita-yolo-cede-il-passo-alla-capolista-taranto/"
+     "url": "https://www.cestisticabenevento.it/2026/10/24/unindomita-yolo-cede-il-passo-alla-capolista-taranto/",
+     "ufficiale": true
     },
     {
      "nome": "BeneventoNews24",
@@ -3831,7 +3866,8 @@
       "nome": "Miwa Basket Benevento",
       "titolo": "Un’indomita YOLO+ cede il passo alla capolista Taranto",
       "url": "https://www.cestisticabenevento.it/2026/10/24/unindomita-yolo-cede-il-passo-alla-capolista-taranto/",
-      "data": "24 ott, 20:04"
+      "data": "24 ott, 20:04",
+      "ufficiale": true
      },
      {
       "nome": "Anteprima24",
@@ -3876,7 +3912,8 @@
    "fonti": [
     {
      "nome": "Accademia Volley Benevento",
-     "url": "https://www.accademiavolley.com/la-pasta-rummo-accademia-concede-il-bis/"
+     "url": "https://www.accademiavolley.com/la-pasta-rummo-accademia-concede-il-bis/",
+     "ufficiale": true
     },
     {
      "nome": "NTR24 Sport",
@@ -3991,13 +4028,15 @@
       "nome": "Accademia Volley Benevento (24/10)",
       "titolo": "La Pasta Rummo Accademia concede il bis",
       "url": "https://www.accademiavolley.com/la-pasta-rummo-accademia-concede-il-bis/",
-      "data": "25 ott, 00:16"
+      "data": "25 ott, 00:16",
+      "ufficiale": true
      },
      {
       "nome": "Accademia Volley Benevento (23/10)",
       "titolo": "Pasta Rummo Accademia alla prima trasferta stagionale",
       "url": "https://www.accademiavolley.com/pasta-rummo-accademia-alla-prima-trasferta-stagionale/",
-      "data": "23 ott, 06:31"
+      "data": "23 ott, 06:31",
+      "ufficiale": true
      },
      {
       "nome": "NTR24 Sport",
@@ -4344,11 +4383,13 @@
    "fonti": [
     {
      "nome": "Benevento 5",
-     "url": "https://ssdbenevento5.it/2026/10/22/serie-a-kinto-il-gg-team-wear-benevento-5-torna-al-palatedeschi-domani-ce-lactive-network/"
+     "url": "https://ssdbenevento5.it/2026/10/22/serie-a-kinto-il-gg-team-wear-benevento-5-torna-al-palatedeschi-domani-ce-lactive-network/",
+     "ufficiale": true
     },
     {
      "nome": "Benevento 5 (24/10)",
-     "url": "https://ssdbenevento5.it/2026/10/24/benevento-5-ancora-un-ko-lactive-network-passa-al-palatedeschi-nel-finale/"
+     "url": "https://ssdbenevento5.it/2026/10/24/benevento-5-ancora-un-ko-lactive-network-passa-al-palatedeschi-nel-finale/",
+     "ufficiale": true
     }
    ],
    "articolo": {
@@ -4414,13 +4455,15 @@
       "nome": "Benevento 5",
       "titolo": "Serie A KINTO, il GG Team Wear Benevento 5 torna al PalaTedeschi: domani c’è l’Active Network",
       "url": "https://ssdbenevento5.it/2026/10/22/serie-a-kinto-il-gg-team-wear-benevento-5-torna-al-palatedeschi-domani-ce-lactive-network/",
-      "data": "22 ott, 18:56"
+      "data": "22 ott, 18:56",
+      "ufficiale": true
      },
      {
       "nome": "Benevento 5 (24/10)",
       "url": "https://ssdbenevento5.it/2026/10/24/benevento-5-ancora-un-ko-lactive-network-passa-al-palatedeschi-nel-finale/",
       "titolo": "Benevento 5, ancora un ko: l’Active Network passa al PalaTedeschi nel finale",
-      "data": "24 ott, 12:57"
+      "data": "24 ott, 12:57",
+      "ufficiale": true
      }
     ],
     "aggiornamento": {
@@ -4632,7 +4675,8 @@
    "fonti": [
     {
      "nome": "AIR Campania",
-     "url": "https://aircampania.it/benevento-deviazioni-temporanee-alle-percorrenze/"
+     "url": "https://aircampania.it/benevento-deviazioni-temporanee-alle-percorrenze/",
+     "ufficiale": true
     }
    ],
    "articolo": {
@@ -4673,7 +4717,8 @@
       "nome": "AIR Campania",
       "titolo": "Benevento: deviazioni temporanee alle percorrenze",
       "url": "https://aircampania.it/benevento-deviazioni-temporanee-alle-percorrenze/",
-      "data": "22 ott, 16:31"
+      "data": "22 ott, 16:31",
+      "ufficiale": true
      }
     ]
    },
@@ -4696,7 +4741,8 @@
    "fonti": [
     {
      "nome": "Comune di Sant'Agata de' Goti",
-     "url": "https://www.comune.santagatadegoti.bn.it/novita/avvisi/novita_44.html"
+     "url": "https://www.comune.santagatadegoti.bn.it/novita/avvisi/novita_44.html",
+     "ufficiale": true
     }
    ],
    "articolo": {
@@ -4731,7 +4777,8 @@
       "nome": "Comune di Sant'Agata de' Goti",
       "titolo": "Avviso di interruzione Energia Elettrica previste per il giorno Mercoledì 28 Ottobre 2026",
       "url": "https://www.comune.santagatadegoti.bn.it/novita/avvisi/novita_44.html",
-      "data": "22 ott"
+      "data": "22 ott",
+      "ufficiale": true
      }
     ]
    },
@@ -4759,7 +4806,8 @@
     },
     {
      "nome": "Benevento Calcio",
-     "url": "https://www.beneventocalcio.club/news/notizie/7666/serie-bkt-2026-2027-arezzo-benevento-i-convocati-di-mister-floro-flores.shtml"
+     "url": "https://www.beneventocalcio.club/news/notizie/7666/serie-bkt-2026-2027-arezzo-benevento-i-convocati-di-mister-floro-flores.shtml",
+     "ufficiale": true
     },
     {
      "nome": "BeneventoNews24 (convocati)",
@@ -4775,7 +4823,8 @@
     },
     {
      "nome": "Benevento Calcio (formazioni)",
-     "url": "https://www.beneventocalcio.club/news/notizie/7672/serie-bkt-2026-2027-arezzo-benevento-le-formazioni-ufficiali.shtml"
+     "url": "https://www.beneventocalcio.club/news/notizie/7672/serie-bkt-2026-2027-arezzo-benevento-le-formazioni-ufficiali.shtml",
+     "ufficiale": true
     },
     {
      "nome": "BeneventoNews24 (formazioni)",
@@ -4908,7 +4957,8 @@
       "nome": "Benevento Calcio",
       "titolo": "SERIE BKT 2026-2027: AREZZO-BENEVENTO I CONVOCATI DI MISTER FLORO FLORES",
       "url": "https://www.beneventocalcio.club/news/notizie/7666/serie-bkt-2026-2027-arezzo-benevento-i-convocati-di-mister-floro-flores.shtml",
-      "data": "23 ott, 13:10"
+      "data": "23 ott, 13:10",
+      "ufficiale": true
      },
      {
       "nome": "BeneventoNews24 (convocati)",
@@ -4932,7 +4982,8 @@
       "nome": "Benevento Calcio (formazioni)",
       "titolo": "SERIE BKT 2026-2027: AREZZO-BENEVENTO LE FORMAZIONI UFFICIALI",
       "url": "https://www.beneventocalcio.club/news/notizie/7672/serie-bkt-2026-2027-arezzo-benevento-le-formazioni-ufficiali.shtml",
-      "data": "24 ott, 18:53"
+      "data": "24 ott, 18:53",
+      "ufficiale": true
      },
      {
       "nome": "BeneventoNews24 (formazioni)",
@@ -4967,7 +5018,8 @@
    "fonti": [
     {
      "nome": "Albo pretorio Benevento",
-     "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=79997"
+     "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=79997",
+     "ufficiale": true
     }
    ],
    "articolo": {
@@ -4996,7 +5048,8 @@
       "nome": "Albo pretorio Benevento",
       "titolo": "Ordinanza n. 437 del 21/10/2026 – Restringimento carreggiata e divieto di sosta in tratti di Via Cosentini, Via Bonazzi e Via Vitelli",
       "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=79997",
-      "data": "21 ott"
+      "data": "21 ott",
+      "ufficiale": true
      }
     ]
    },
@@ -5019,7 +5072,8 @@
    "fonti": [
     {
      "nome": "Albo pretorio Benevento",
-     "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80063"
+     "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80063",
+     "ufficiale": true
     }
    ],
    "articolo": {
@@ -5054,7 +5108,8 @@
       "nome": "Albo pretorio Benevento",
       "titolo": "Ordinanza n. 446 del 22/10/2026 – Limitazioni alla sosta per lavori di restyling attraversamenti pedonali e segnaletica orizzontale",
       "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80063",
-      "data": "22 ott"
+      "data": "22 ott",
+      "ufficiale": true
      }
     ]
    },
@@ -5080,7 +5135,8 @@
    "fonti": [
     {
      "nome": "Albo pretorio Benevento",
-     "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80022"
+     "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80022",
+     "ufficiale": true
     },
     {
      "nome": "NTR24",
@@ -5132,7 +5188,8 @@
       "nome": "Albo pretorio Benevento",
       "titolo": "RESTRIZIONI TRAFFICO E SOSTA CON VIGENZA NEI GIORNI DI SABATO 31 OTTOBRE, DOMENICA 1^ NOVEMBRE E LUNEDI' 2 NOVEMBRE 2026, DALLE ORE 7:00 ALLE ORE 18:30, IN OCCASIONE DELLE RICORRENZE DI OGNISSANTI E COMMEMORAZIONE DEI DEFUNTI",
       "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80022",
-      "data": "22 ott"
+      "data": "22 ott",
+      "ufficiale": true
      },
      {
       "nome": "NTR24",
@@ -5162,11 +5219,13 @@
    "fonti": [
     {
      "nome": "Albo pretorio Benevento",
-     "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80002"
+     "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80002",
+     "ufficiale": true
     },
     {
      "nome": "Comune di Benevento",
-     "url": "https://comune.benevento.it/novita/lavori-edilizi-sabato-mattina-interdizione-al-traffico-per-un-tratto-di-via-annunziata/"
+     "url": "https://comune.benevento.it/novita/lavori-edilizi-sabato-mattina-interdizione-al-traffico-per-un-tratto-di-via-annunziata/",
+     "ufficiale": true
     }
    ],
    "articolo": {
@@ -5201,13 +5260,15 @@
       "nome": "Albo pretorio Benevento",
       "titolo": "Chiusura al traffico veicolare del tratto di Via Annunziata compreso tra l'incrocio con Via Tenente Pellegrini e l'incrocio con Via Borgia, eccetto residenti, titolari di autorimesse nel suddetto segmento interessato, mezzi di soccorso e mezzi d'emergenza, ed istituzione, nel solo tratto adiacente il civico 6 di Via Annunziata, divieto di sosta e fermata, con rimozione e valenza ambo i lati anche nei confronti dei titolari di Autorizzazione Transito e Sosta in Ztl Annunziata, limitatamente alla mattinata di Sabato 24 Ottobre 2026, a partire dalle ore 9:30 fino a cessate esigenze subordinate all'avvenuta esecuzione dell'intervento con conclusione prevista non oltre le ore 13:30 / 14:00",
       "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80002",
-      "data": "21 ott"
+      "data": "21 ott",
+      "ufficiale": true
      },
      {
       "nome": "Comune di Benevento",
       "titolo": "Lavori edilizi, sabato mattina interdizione al traffico per un tratto di via Annunziata",
       "url": "https://comune.benevento.it/novita/lavori-edilizi-sabato-mattina-interdizione-al-traffico-per-un-tratto-di-via-annunziata/",
-      "data": "22 ott, 10:50"
+      "data": "22 ott, 10:50",
+      "ufficiale": true
      }
     ],
     "aggiornamento": {
@@ -5230,7 +5291,7 @@
    "immagine": "supermercato",
    "luogo": "Benevento",
    "pubblicato": "2026-10-21",
-   "stato": "ufficiale",
+   "stato": "confermata",
    "rilevante": false,
    "fonti": [
     {
@@ -5485,7 +5546,8 @@
    "fonti": [
     {
      "nome": "Comune di Benevento",
-     "url": "https://comune.benevento.it/novita/ancora-limitazioni-della-circolazione-in-via-masseria-cancelleria-e-via-cancelleria/"
+     "url": "https://comune.benevento.it/novita/ancora-limitazioni-della-circolazione-in-via-masseria-cancelleria-e-via-cancelleria/",
+     "ufficiale": true
     },
     {
      "nome": "Ottopagine",
@@ -5538,7 +5600,8 @@
       "nome": "Comune di Benevento",
       "titolo": "Ancora limitazioni della circolazione in via Masseria Cancelleria e via Cancelleria",
       "url": "https://comune.benevento.it/novita/ancora-limitazioni-della-circolazione-in-via-masseria-cancelleria-e-via-cancelleria/",
-      "data": "21 ott"
+      "data": "21 ott",
+      "ufficiale": true
      },
      {
       "nome": "Ottopagine",
@@ -5576,11 +5639,13 @@
    "fonti": [
     {
      "nome": "Comune di Apice",
-     "url": "https://www.comune.apice.bn.it/novita/notizie/novita_140.html"
+     "url": "https://www.comune.apice.bn.it/novita/notizie/novita_140.html",
+     "ufficiale": true
     },
     {
      "nome": "Comune di Cusano Mutri",
-     "url": "https://www.comune.cusanomutri.bn.it/it/novita/page/comunicazione-di-possibili-disservizi-nella-raccolta-e-nel-trasporto-dei-rifiuti-urbani-a-causa-di-forza-maggiore"
+     "url": "https://www.comune.cusanomutri.bn.it/it/novita/page/comunicazione-di-possibili-disservizi-nella-raccolta-e-nel-trasporto-dei-rifiuti-urbani-a-causa-di-forza-maggiore",
+     "ufficiale": true
     },
     {
      "nome": "Il Sannio Quotidiano",
@@ -5588,15 +5653,18 @@
     },
     {
      "nome": "Comune di Sant'Agata de' Goti",
-     "url": "https://www.comune.santagatadegoti.bn.it/novita/avvisi/novita_205.html"
+     "url": "https://www.comune.santagatadegoti.bn.it/novita/avvisi/novita_205.html",
+     "ufficiale": true
     },
     {
      "nome": "Comune di San Giorgio del Sannio",
-     "url": "https://www.comune.sangiorgiodelsannio.bn.it/novita/avvisi/novita_161.html"
+     "url": "https://www.comune.sangiorgiodelsannio.bn.it/novita/avvisi/novita_161.html",
+     "ufficiale": true
     },
     {
      "nome": "Comune di Pietrelcina",
-     "url": "https://www.comune.pietrelcina.bn.it/novita/avvisi/novita_376.html"
+     "url": "https://www.comune.pietrelcina.bn.it/novita/avvisi/novita_376.html",
+     "ufficiale": true
     },
     {
      "nome": "Il Sannio Quotidiano (Colle Sannita)",
@@ -5604,7 +5672,8 @@
     },
     {
      "nome": "Comune di Apollosa",
-     "url": "https://www.comune.apollosa.bn.it/Novita/Avvisi/AVVISO-ALLA-CITTADINANZA22"
+     "url": "https://www.comune.apollosa.bn.it/Novita/Avvisi/AVVISO-ALLA-CITTADINANZA22",
+     "ufficiale": true
     },
     {
      "nome": "Il Sannio Quotidiano (22/10)",
@@ -5612,7 +5681,8 @@
     },
     {
      "nome": "Comune di Moiano",
-     "url": "https://www.comune.moiano.bn.it/novita/notizie/novita_56.html"
+     "url": "https://www.comune.moiano.bn.it/novita/notizie/novita_56.html",
+     "ufficiale": true
     },
     {
      "nome": "NTR24 (Moiano)",
@@ -5620,15 +5690,18 @@
     },
     {
      "nome": "Comune di San Martino Sannita",
-     "url": "https://www.comune.sanmartinosannita.bn.it/novita/notizie/novita_112.html"
+     "url": "https://www.comune.sanmartinosannita.bn.it/novita/notizie/novita_112.html",
+     "ufficiale": true
     },
     {
      "nome": "Comune di Pontelandolfo",
-     "url": "https://www.comune.pontelandolfo.bn.it/novita/notizie/novita_154.html"
+     "url": "https://www.comune.pontelandolfo.bn.it/novita/notizie/novita_154.html",
+     "ufficiale": true
     },
     {
      "nome": "Comune di San Giorgio del Sannio (22/10)",
-     "url": "https://www.comune.sangiorgiodelsannio.bn.it/novita/avvisi/novita_164.html"
+     "url": "https://www.comune.sangiorgiodelsannio.bn.it/novita/avvisi/novita_164.html",
+     "ufficiale": true
     },
     {
      "nome": "Il Sannio Quotidiano (23/10)",
@@ -5636,15 +5709,18 @@
     },
     {
      "nome": "Comune di Moiano (23/10)",
-     "url": "https://www.comune.moiano.bn.it/novita/notizie/novita_57.html"
+     "url": "https://www.comune.moiano.bn.it/novita/notizie/novita_57.html",
+     "ufficiale": true
     },
     {
      "nome": "Comune di Circello",
-     "url": "https://comune.circello.bn.it/albo-pretorio/?dettaglio_id=306020"
+     "url": "https://comune.circello.bn.it/albo-pretorio/?dettaglio_id=306020",
+     "ufficiale": true
     },
     {
      "nome": "Comune di Sant'Arcangelo Trimonte",
-     "url": "https://www.halleyweb.com/c062078/mc/mc_p_dettaglio.php?id_pubbl=5840"
+     "url": "https://www.halleyweb.com/c062078/mc/mc_p_dettaglio.php?id_pubbl=5840",
+     "ufficiale": true
     }
    ],
    "articolo": {
@@ -5815,13 +5891,15 @@
       "nome": "Comune di Apice",
       "titolo": "Avviso pubblico per segnalazione di possibili disservizi nel servizio di raccolta rifiuti",
       "url": "https://www.comune.apice.bn.it/novita/notizie/novita_140.html",
-      "data": "20 ott"
+      "data": "20 ott",
+      "ufficiale": true
      },
      {
       "nome": "Comune di Cusano Mutri",
       "titolo": "Avviso: Comunicazione di possibili disservizi nella raccolta e nel trasporto dei rifiuti urbani a causa di forza maggiore",
       "url": "https://www.comune.cusanomutri.bn.it/it/novita/page/comunicazione-di-possibili-disservizi-nella-raccolta-e-nel-trasporto-dei-rifiuti-urbani-a-causa-di-forza-maggiore",
-      "data": "20 ott"
+      "data": "20 ott",
+      "ufficiale": true
      },
      {
       "nome": "Il Sannio Quotidiano",
@@ -5833,19 +5911,22 @@
       "nome": "Comune di Sant'Agata de' Goti",
       "titolo": "SOSPENSIONE TEMPORANEA DEL SERVIZIO DI RACCOLTA RIFIUTI",
       "url": "https://www.comune.santagatadegoti.bn.it/novita/avvisi/novita_205.html",
-      "data": "21 ott"
+      "data": "21 ott",
+      "ufficiale": true
      },
      {
       "nome": "Comune di San Giorgio del Sannio",
       "titolo": "Avviso disservizio raccolta rifiuti 21.10.26",
       "url": "https://www.comune.sangiorgiodelsannio.bn.it/novita/avvisi/novita_161.html",
-      "data": "21 ott"
+      "data": "21 ott",
+      "ufficiale": true
      },
      {
       "nome": "Comune di Pietrelcina",
       "titolo": "Chiusura del Centro di Raccolta Comunale - Avviso",
       "url": "https://www.comune.pietrelcina.bn.it/novita/avvisi/novita_376.html",
-      "data": "21 ott"
+      "data": "21 ott",
+      "ufficiale": true
      },
      {
       "nome": "Il Sannio Quotidiano (Colle Sannita)",
@@ -5857,7 +5938,8 @@
       "nome": "Comune di Apollosa",
       "titolo": "AVVISO ALLA CITTADINANZA",
       "url": "https://www.comune.apollosa.bn.it/Novita/Avvisi/AVVISO-ALLA-CITTADINANZA22",
-      "data": "22 ott"
+      "data": "22 ott",
+      "ufficiale": true
      },
      {
       "nome": "Il Sannio Quotidiano (22/10)",
@@ -5869,7 +5951,8 @@
       "nome": "Comune di Moiano",
       "titolo": "Sospensione servizio trasporto scuolabus",
       "url": "https://www.comune.moiano.bn.it/novita/notizie/novita_56.html",
-      "data": "22 ott"
+      "data": "22 ott",
+      "ufficiale": true
      },
      {
       "nome": "NTR24 (Moiano)",
@@ -5881,19 +5964,22 @@
       "nome": "Comune di San Martino Sannita",
       "titolo": "Possibile sospensione del servizio di raccolta rifiuti a decorrere da lunedì 26 ottobre 2026",
       "url": "https://www.comune.sanmartinosannita.bn.it/novita/notizie/novita_112.html",
-      "data": "22 ott"
+      "data": "22 ott",
+      "ufficiale": true
      },
      {
       "nome": "Comune di Pontelandolfo",
       "titolo": "IL SINDACO - AVVISO ALLA CITTADINANZA SOSPENSIONE RACCOLTA R.S.U.-",
       "url": "https://www.comune.pontelandolfo.bn.it/novita/notizie/novita_154.html",
-      "data": "22 ott"
+      "data": "22 ott",
+      "ufficiale": true
      },
      {
       "nome": "Comune di San Giorgio del Sannio (22/10)",
       "titolo": "Raccolta rifiuti 22.10.26 - servizio GARANTITO",
       "url": "https://www.comune.sangiorgiodelsannio.bn.it/novita/avvisi/novita_164.html",
-      "data": "22 ott"
+      "data": "22 ott",
+      "ufficiale": true
      },
      {
       "nome": "Il Sannio Quotidiano (23/10)",
@@ -5905,19 +5991,22 @@
       "nome": "Comune di Moiano (23/10)",
       "titolo": "Ripresa servizio trasporto scolastico",
       "url": "https://www.comune.moiano.bn.it/novita/notizie/novita_57.html",
-      "data": "23 ott"
+      "data": "23 ott",
+      "ufficiale": true
      },
      {
       "nome": "Comune di Circello",
       "titolo": "Ordinanza sindacale n.47 contingibile ed urgente per chiusura temporanea centro di raccolta comunale e sospensione temporanea della raccolta RSU dal 24/10/2026",
       "url": "https://comune.circello.bn.it/albo-pretorio/?dettaglio_id=306020",
-      "data": "23 ott"
+      "data": "23 ott",
+      "ufficiale": true
      },
      {
       "nome": "Comune di Sant'Arcangelo Trimonte",
       "titolo": "Avviso sospensione temporanea del servizio di raccolta rifiuti urbani a decorrere da lunedì 26.10.2026 in merito alle criticità connesse ai blocchi stradali e problemi di approviggionamento carburante in corso.",
       "url": "https://www.halleyweb.com/c062078/mc/mc_p_dettaglio.php?id_pubbl=5840",
-      "data": "23 ott"
+      "data": "23 ott",
+      "ufficiale": true
      }
     ],
     "aggiornamento": {
@@ -5948,7 +6037,8 @@
    "fonti": [
     {
      "nome": "Comune di Benevento",
-     "url": "https://comune.benevento.it/novita/commemorazione-dei-defunti-gli-orari-di-apertura-del-cimitero-comunale/"
+     "url": "https://comune.benevento.it/novita/commemorazione-dei-defunti-gli-orari-di-apertura-del-cimitero-comunale/",
+     "ufficiale": true
     },
     {
      "nome": "Cronache del Sannio",
@@ -5973,7 +6063,8 @@
       "nome": "Comune di Benevento",
       "titolo": "Commemorazione dei Defunti, gli orari di apertura del Cimitero Comunale",
       "url": "https://comune.benevento.it/novita/commemorazione-dei-defunti-gli-orari-di-apertura-del-cimitero-comunale/",
-      "data": "20 ott"
+      "data": "20 ott",
+      "ufficiale": true
      },
      {
       "nome": "Cronache del Sannio",
@@ -7960,7 +8051,8 @@
    "fonti": [
     {
      "nome": "Comune di Benevento",
-     "url": "https://comune.benevento.it/novita/da-luned-19-ottobre-divieti-di-sosta-in-via-cocchia-e-via-cavour-per-il-rifacimento-dellasfalto/"
+     "url": "https://comune.benevento.it/novita/da-luned-19-ottobre-divieti-di-sosta-in-via-cocchia-e-via-cavour-per-il-rifacimento-dellasfalto/",
+     "ufficiale": true
     }
    ],
    "articolo": {
@@ -7974,7 +8066,8 @@
       "nome": "Comune di Benevento",
       "titolo": "Da lunedì 19 ottobre divieti di sosta in via Cocchia e via Cavour per il rifacimento dell'asfalto",
       "url": "https://comune.benevento.it/novita/da-luned-19-ottobre-divieti-di-sosta-in-via-cocchia-e-via-cavour-per-il-rifacimento-dellasfalto/",
-      "data": "15 ott"
+      "data": "15 ott",
+      "ufficiale": true
      }
     ],
     "racconto": [

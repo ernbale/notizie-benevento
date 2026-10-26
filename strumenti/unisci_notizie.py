@@ -19,6 +19,9 @@ Dal 25 ott 2026, col giro lampo che pubblica anche gli articoli dei siti ufficia
   stessa sezione e i titoli hanno almeno 3 parole importanti in comune (la Miwa a Ragusa: il giro lampo dal sito della
   Cestistica, il giro di ogni ora da NTR24 Sport); con titoli simili ma senza il giro lampo restano tutte e due, e lo
   si scrive.
+Dal 26 ott 2026 (le fonti ufficiali segnate con "ufficiale": true, pagine.vista_ufficiale): una notizia cambiata da
+tutte e due le parti tiene anche i segni «ufficiale» che il main ha messo sulle sue fonti (stesso nome), se no il
+giro di ogni ora partito prima li cancellerebbe aggiornando la notizia.
 Se un file non è un JSON valido esce con errore e git segna il conflitto come prima.
 
 Il giro di ogni ora lo usa così (prompt della routine, punto 7):
@@ -69,6 +72,25 @@ def _doppione(x, y):
     return ""
 
 
+def _ufficiali(n):
+    """I nomi delle fonti segnate "ufficiale": true (in fonti e in articolo.fonti)."""
+    a = n.get("articolo") if isinstance(n.get("articolo"), dict) else {}
+    return {f.get("nome") for l in (n.get("fonti"), a.get("fonti")) if isinstance(l, list)
+            for f in l if isinstance(f, dict) and f.get("ufficiale") is True}
+
+
+def _con_ufficiali(x, nomi):
+    """x (copia) con "ufficiale": true sulle fonti che si chiamano come in nomi."""
+    segna = lambda l: [dict(f, ufficiale=True) if isinstance(f, dict) and f.get("nome") in nomi
+                       and f.get("ufficiale") is not True else f for f in l]
+    x = dict(x)
+    if isinstance(x.get("fonti"), list):
+        x["fonti"] = segna(x["fonti"])
+    if isinstance(x.get("articolo"), dict) and isinstance(x["articolo"].get("fonti"), list):
+        x["articolo"] = dict(x["articolo"], fonti=segna(x["articolo"]["fonti"]))
+    return x
+
+
 def unisci_elenco(base, su, mio):
     B = {x.get("id"): x for x in base}
     U = {x.get("id"): x for x in su}
@@ -90,6 +112,9 @@ def unisci_elenco(base, su, mio):
                         x[k] = U[i][k]
                     else:
                         x.pop(k, None)
+            nuovi = _ufficiali(U[i]) - _ufficiali(B[i])   # i segni «ufficiale» messi dal main
+            if nuovi:
+                x = _con_ufficiali(x, nuovi)
             out.append(x)
         elif i not in B and i not in U:   # nuova nostra: è lo stesso fatto di una nuova arrivata dal main?
             uguali = [(y, _doppione(x, y)) for y in nuove_main]

@@ -970,7 +970,62 @@
   }
   if ("speechSynthesis" in window) speechSynthesis.getVoices();
 
+  // Con una fonte ufficiale si mostra quella (come vista_ufficiale di strumenti/pagine.py, che scrive le pagine per
+  // Google: le due devono restare uguali). I giornali solo dove aggiungono un fatto che lei non dice (citati in una
+  // frase senza la fonte ufficiale) o dove dicono una cosa diversa («divergono»); nei dati restano, servono a
+  // riconoscere i doppioni. Voluto dal proprietario il 26 ott 2026: «quando abbiamo la fonte ufficiale non è
+  // necessario mettere anche le altre fonti», «vale per tutte». Copia, non tocca n. Solo per mostrare: l'ordine
+  // della prima pagina (rilievo) e la ricerca (testiNotizia) usano la notizia com'è.
+  function vistaUfficiale(n) {
+    var a = n.articolo && typeof n.articolo === "object" && !Array.isArray(n.articolo) ? n.articolo : {};
+    var oggetti = function (l) { return (Array.isArray(l) ? l : []).filter(function (f) { return f && typeof f === "object" && !Array.isArray(f); }); };
+    var uff = {}, ha = function (o, k) { return Object.prototype.hasOwnProperty.call(o, k); };
+    oggetti(n.fonti).concat(oggetti(a.fonti)).forEach(function (f) { if (f.ufficiale === true && typeof f.nome === "string") uff[f.nome] = true; });
+    if (n.stato !== "ufficiale" || !Object.keys(uff).length) return n;
+    var eUff = function (nm) { return typeof nm === "string" && ha(uff, nm); };
+    var togli = function (x) {   // in una frase con la fonte ufficiale, i giornali che la ripetono non si citano
+      if (!x || typeof x !== "object" || !Array.isArray(x.fonti) || !x.fonti.some(eUff)) return x;
+      return Object.assign({}, x, { fonti: x.fonti.filter(eUff) });
+    };
+    var segnata = function (f) { return f.ufficiale === true ? f : Object.assign({}, f, { ufficiale: true }); };
+    var v = Object.assign({}, n);
+    v.fonti = oggetti(n.fonti).filter(function (f) { return eUff(f.nome); }).map(segnata);
+    if (!v.fonti.length) v.fonti = oggetti(a.fonti).filter(function (f) { return eUff(f.nome); }).map(segnata);
+    if (Object.keys(a).length) {
+      var b = Object.assign({}, a);
+      ["racconto", "cronologia"].forEach(function (s) { if (Array.isArray(a[s])) b[s] = a[s].map(togli); });
+      if (Array.isArray(a.concordano))   // «concordano» rimasto con la sola fonte ufficiale non dice niente
+        b.concordano = a.concordano.filter(function (x) { var y = togli(x); return y === x || (y.fonti || []).length > 1; }).map(togli);
+      if (a.aggiornamento && typeof a.aggiornamento === "object" && !Array.isArray(a.aggiornamento)) b.aggiornamento = togli(a.aggiornamento);
+      var citate = Object.assign({}, uff);
+      ["racconto", "cronologia", "concordano", "divergono", "non_si_sa"].forEach(function (s) {
+        (Array.isArray(b[s]) ? b[s] : []).forEach(function (x) {
+          if (x && typeof x === "object" && Array.isArray(x.fonti)) x.fonti.forEach(function (nm) { if (typeof nm === "string") citate[nm] = true; });
+        });
+      });
+      if (b.aggiornamento && typeof b.aggiornamento === "object" && Array.isArray(b.aggiornamento.fonti))
+        b.aggiornamento.fonti.forEach(function (nm) { if (typeof nm === "string") citate[nm] = true; });
+      if (Array.isArray(a.fonti)) {   // prima le fonti ufficiali, poi i giornali (ognuno nel suo ordine)
+        var resta = oggetti(a.fonti).filter(function (f) { return typeof f.nome === "string" && ha(citate, f.nome); });
+        b.fonti = resta.filter(function (f) { return eUff(f.nome); }).map(segnata).concat(resta.filter(function (f) { return !eUff(f.nome); }));
+      }
+      v.articolo = b;
+    }
+    return v;
+  }
+  // «5 fonti confrontate», «1 fonte»; con una fonte ufficiale «fonte ufficiale» (e quanti giornali si citano). Come
+  // conta_fonti di strumenti/pagine.py.
+  function contaFonti(n, fonti) {
+    var u = fonti.filter(function (f) { return f && f.ufficiale === true; }).length;
+    if (n.stato === "ufficiale" && u) {
+      var g = fonti.length - u;
+      return (u === 1 ? "fonte ufficiale" : u + " fonti ufficiali") + (g ? " e " + g + (g === 1 ? " giornale" : " giornali") : "");
+    }
+    return fonti.length + (fonti.length === 1 ? " fonte" : " fonti confrontate");
+  }
+
   function rigaFonti(n) {
+    n = vistaUfficiale(n);
     var r = el("div", "fonti", []);
     var lista = Array.isArray(n.fonti) ? n.fonti : [];
     if (n.stato === "ufficiale") r.appendChild(el("span", "ufficiale", ["Fonte ufficiale"]));
@@ -1571,11 +1626,12 @@
   }
 
   function disegnaArticolo(box, n, dallArchivio) {
+    n = vistaUfficiale(n);
     var a = n.articolo;
     var fonti = Array.isArray(a.fonti) ? a.fonti : [];
     var art = el("article", "appro", []);
     testataPagina(art, n.categoria === "sport" ? sportDi(n) : NOMI_CAT[n.categoria] || "Altro", n.luogo, n.titolo);
-    art.appendChild(el("div", "meta", [(dallArchivio ? "Dall'archivio · " : "") + (n.pubblicato ? quando(n.pubblicato) + " · " : "") + fonti.length + (fonti.length === 1 ? " fonte" : " fonti confrontate")]));
+    art.appendChild(el("div", "meta", [(dallArchivio ? "Dall'archivio · " : "") + (n.pubblicato ? quando(n.pubblicato) + " · " : "") + contaFonti(n, fonti)]));
     if (n.stato === "una_fonte") art.appendChild(el("div", "nota", ["Per ora questo fatto lo riporta solo " + ((n.fonti || [])[0] || {}).nome + ". Lo aggiorniamo se arrivano altre fonti."]));
     var agg = riquadroAggiornamento(a.aggiornamento, fonti);
     if (agg) art.appendChild(agg);

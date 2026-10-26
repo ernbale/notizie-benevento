@@ -64,9 +64,10 @@ riuscita» (o cosa non va) con l'esito dei comandi. In prova non pubblichi nient
      Calcio non c'è. Per ASL, ANAS e Regione no: quei siti dal cloud non si aprono, il testo intero è già nel blocco.
      Se la pagina non si apre e il testo del blocco non basta per un articolo completo, **scartato** col motivo
      «pagina non leggibile»: lo rivede il giro di ogni ora.
-   - **La fonte** è chi lo firma, col link esatto della pagina: `{"nome": "<la fonte del blocco>", "url": "<il link>"}`
-     (strumenti/comunicati.py dà errore se manca), e in `articolo.fonti` anche `titolo` (quello della pagina) e `data`.
-     `"stato": "ufficiale"`.
+   - **La fonte** è chi lo firma, col link esatto della pagina: `{"nome": "<la fonte del blocco>", "url": "<il link>",
+     "ufficiale": true}` (strumenti/comunicati.py dà errore se manca), e in `articolo.fonti` anche `titolo` (quello
+     della pagina), `data` e `"ufficiale": true`. `"stato": "ufficiale"`. Il sito mostra la fonte ufficiale e non i
+     giornali che l'hanno solo ripresa (AGENTE.md, «Come lavorare una notizia», punto 4).
    - **«GIÀ SUL SITO, STESSO LINK»** vuol dire che una notizia cita già quella pagina: è **gia_nel_sito** con quella
      notizia (strumenti/comunicati.py dà errore anche se pubblichi una notizia nuova con una pagina già citata).
    - Per EAV, AIR, Alto Calore, ANAS e Regione, che servono tutta la Campania, il Pi tiene solo quello che nomina il
@@ -103,7 +104,8 @@ riuscita» (o cosa non va) con l'esito dei comandi. In prova non pubblichi nient
    - **La fonte**: `{"nome": "<chi firma il comunicato>", "url": "<il suo sito ufficiale; meglio la pagina del
      comunicato se è anche sul sito>"}` (cercala con WebSearch se serve), e in `articolo.fonti` anche `titolo` (l'oggetto
      del comunicato, esatto) e `data`. Mai «posta:…», mai l'indirizzo email del mittente, niente numeri di telefono
-     privati (quelli di uffici e sportelli pubblici sì).
+     privati (quelli di uffici e sportelli pubblici sì). Con `"stato": "ufficiale"` questa fonte ha anche
+     `"ufficiale": true`, in `fonti` e in `articolo.fonti` (AGENTE.md, «Come lavorare una notizia», punto 4).
    - L'`immagine` dai temi di AGENTE.md («La foto illustrativa»; mai per la cronaca), `categoria`, `zona`, `luogo`
      come dice AGENTE.md. `pubblicato`, `subito`, `comunicati` e `foto` li mette strumenti/comunicati.py: non scriverli.
    - **La locandina e le foto** (volute dal proprietario il 25 ott 2026: «se mandano locandine noi le dobbiamo
