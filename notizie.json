@@ -1,7 +1,121 @@
 {
- "aggiornato": "2026-10-25T22:09+01:00",
+ "aggiornato": "2026-10-26T06:11+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-53-nuove-telecamere-videosorveglianza",
+   "titolo": "Benevento, accese 53 nuove telecamere di videosorveglianza: in città ora sono 200",
+   "titolo_google": "Benevento, 53 nuove telecamere: in città ora sono 200",
+   "sintesi": "Il Comune di Benevento ha attivato nella settimana del 19 ottobre 53 nuove telecamere, dal centro storico a via Paolella, via dei Dauni e via San Vito. Con queste, scrive Il Mattino, le telecamere in funzione sono 200 in circa 100 punti della città.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-26T00:05:00+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Il Mattino",
+     "url": "https://www.ilmattino.it/benevento/sicurezza_a_benevento_arrivano_53_nuove_telecamere_in_citta_centro_sempre_piu_controllato-9848073.html"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Benevento nei primi giorni della settimana del 19 ottobre sono entrate in funzione 53 nuove telecamere di videosorveglianza. Le ha fatte installare il Comune con i fondi del Poc Legalità, un programma del ministero dell'Interno per la sicurezza nel Sud. Con queste, scrive Il Mattino, in città le telecamere accese sono 200, in circa 100 punti.",
+      "fonti": [
+       "Il Mattino"
+      ]
+     },
+     {
+      "testo": "Due telecamere con vista panoramica sono in via Traiano, all'ingresso di Palazzo del Reduce, a pochi passi da piazza Roma e corso Garibaldi. Altre sono nelle zone della movida: due all'incrocio tra via La Vipera e vico Trescene e due in via Cardinal di Rende. Secondo il giornale, le immagini sono già servite alle forze dell'ordine per ricostruire il ferimento di una ragazza di 18 anni in centro, venerdì 23 ottobre.",
+      "fonti": [
+       "Il Mattino"
+      ]
+     },
+     {
+      "testo": "Le nuove telecamere controllano anche le strade da cui si entra in città. In via Paolella ce ne sono 4, due con il lettore delle targhe; in via dei Dauni, all'uscita della statale 90 bis, 4 con due lettori; sulla provinciale 71 in località Pantano 3, con un lettore; in via San Vito, alla rotonda per Castelpoto, 5, di cui due leggono le targhe.",
+      "fonti": [
+       "Il Mattino"
+      ]
+     },
+     {
+      "testo": "Altre telecamere sono in via Viviani a Capodimonte, all'incrocio tra via Santa Colomba e via Vitelli al rione Libertà, in contrada Ponte delle Tavole, all'incrocio tra via delle Puglie e via del Sole, in via delle Poste, in largo San Gennaro, in via D'Annunzio, in via Vetrone, in via Ponticelli all'imbocco di via Cimitero, in via dei Mulini, in via Cupa dell'Angelo e al semaforo di via San Vito.",
+      "fonti": [
+       "Il Mattino"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quanto è costato l'intervento",
+     "Chi guarda le immagini e per quanto tempo vengono conservate"
+    ],
+    "fonti": [
+     {
+      "nome": "Il Mattino",
+      "titolo": "Sicurezza a Benevento, arrivano 53 nuove telecamere in città: «Centro sempre più controllato»",
+      "url": "https://www.ilmattino.it/benevento/sicurezza_a_benevento_arrivano_53_nuove_telecamere_in_citta_centro_sempre_piu_controllato-9848073.html",
+      "data": "26 ott, 00:05"
+     }
+    ]
+   },
+   "immagine": "telecamere",
+   "foto": "telecamere-7"
+  },
+  {
+   "id": "san-martino-sannita-lampade-votive-occasionali-terranova-2026",
+   "titolo": "San Martino Sannita, lampade votive per i Defunti al cimitero di Terranova: prenotazioni fino al 1° novembre",
+   "titolo_google": "San Martino Sannita, lampade votive al cimitero: orari",
+   "sintesi": "Al cimitero di Terranova, a San Martino Sannita, le lampade votive occasionali per la Commemorazione dei Defunti si prenotano fino a domenica 1° novembre, anche via WhatsApp. Saranno montate venerdì 30 ottobre e resteranno accese fino al 6 novembre.",
+   "categoria": "altro",
+   "zona": "provincia",
+   "immagine": "cimitero",
+   "luogo": "San Martino Sannita",
+   "pubblicato": "2026-10-22",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "in_vigore_fino": "2026-11-01",
+   "fonti": [
+    {
+     "nome": "Comune di San Martino Sannita",
+     "url": "https://www.comune.sanmartinosannita.bn.it/novita/notizie/novita_113.html"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Comune di San Martino Sannita ha pubblicato i giorni e gli orari per prenotare le lampade votive occasionali, le luci che si accendono sulle tombe per la Commemorazione dei Defunti, al cimitero di Terranova. Le lampade prenotate saranno montate venerdì 30 ottobre e resteranno accese dal 30 ottobre al 6 novembre.",
+      "fonti": [
+       "Comune di San Martino Sannita"
+      ]
+     },
+     {
+      "testo": "Si prenota da lunedì 26 a venerdì 30 ottobre dalle 14 alle 16; sabato 31 ottobre e domenica 1° novembre dalle 9 alle 13 e dalle 14 alle 16. Per aspettare meno, il Comune consiglia di prenotare con WhatsApp al numero 379 296 5676. L'avviso è dell'Ufficio Vigilanza del Comune.",
+      "fonti": [
+       "Comune di San Martino Sannita"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quanto costa una lampada occasionale: l'avviso non lo dice"
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di San Martino Sannita",
+      "titolo": "ORARIO PER LA PRENOTAZIONE DELLE LAMPADE OCCASIONALI.",
+      "url": "https://www.comune.sanmartinosannita.bn.it/novita/notizie/novita_113.html",
+      "data": "22 ott"
+     }
+    ]
+   },
+   "foto": "cimitero-9"
+  },
   {
    "id": "benevento-calcio-abbonati-ritiro-segnaposto-botteghino-vigorito",
    "titolo": "Benevento Calcio, gli abbonati ritirano il segnaposto al botteghino del Vigorito da lunedì 26 ottobre",
@@ -87,6 +201,18 @@
    "rilevante": false,
    "fonti": [
     {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/26/basket-la-miwa-spicca-il-volo-sbancata-ragusa-boars-superlativi-al-palapadua/"
+    },
+    {
+     "nome": "Benevento Giornale",
+     "url": "https://www.beneventogiornale.com/2026/10/25/la-miwa-spicca-il-volo-sbancata-ragusa-69-75-i-boars-conducono-sempre-al-palapadua/"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/basket-serie-b-interregionale-il-basket-benevento-porta-casa-due-punti-pesanti-vincendo-trasferta"
+    },
+    {
      "nome": "Miwa Basket Benevento",
      "url": "https://www.cestisticabenevento.it/2026/10/25/la-miwa-spicca-il-volo-sbancata-ragusa/"
     },
@@ -101,7 +227,10 @@
       "testo": "La Miwa Basket Benevento ha vinto 75-69 in trasferta contro la Virtus Kleb Ragusa, domenica 25 ottobre, al PalaPadua di Ragusa, nel campionato di Serie B Interregionale. Lo ha comunicato la società. I sanniti, allenati da coach Adolfo Parrillo, sono stati in vantaggio per tutta la partita. Per la società è la prova di un gruppo già unito dopo appena cinque giornate di campionato.",
       "fonti": [
        "Miwa Basket Benevento",
-       "NTR24 Sport"
+       "NTR24 Sport",
+       "Gazzetta di Benevento",
+       "Benevento Giornale",
+       "BeneventoNews24"
       ],
       "giorno": "2026-10-25"
      },
@@ -146,6 +275,24 @@
       "titolo": "Basket B Interregionale, la Miwa Benevento sbanca Ragusa",
       "url": "https://sport.ntr24.tv/2026/10/25/basket-b-interregionale-la-miwa-benevento-sbanca-ragusa/",
       "data": "25 ott, 21:10"
+     },
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "Basket, Serie B Interregionale: Il Basket Benevento porta a casa due punti pesanti vincendo in trasferta sul campo della Virtus Kleb Ragusa",
+      "url": "https://www.gazzettabenevento.it/it/basket-serie-b-interregionale-il-basket-benevento-porta-casa-due-punti-pesanti-vincendo-trasferta",
+      "data": "25 ott, 21:11"
+     },
+     {
+      "nome": "Benevento Giornale",
+      "titolo": "La Miwa spicca il volo: sbancata Ragusa 69-75 – I Boars conducono sempre al ‘PalaPadua’",
+      "url": "https://www.beneventogiornale.com/2026/10/25/la-miwa-spicca-il-volo-sbancata-ragusa-69-75-i-boars-conducono-sempre-al-palapadua/",
+      "data": "25 ott, 22:09"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Basket, la Miwa spicca il volo: sbancata Ragusa. Boars superlativi al “PalaPadua”",
+      "url": "https://www.beneventonews24.it/2026/10/26/basket-la-miwa-spicca-il-volo-sbancata-ragusa-boars-superlativi-al-palapadua/",
+      "data": "26 ott, 00:31"
      }
     ]
    },
@@ -223,6 +370,10 @@
    "rilevante": false,
    "fonti": [
     {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/26/linea-18-bn-cusano-benevento-i-pendolari-dopo-la-sanzione-ultimatum-di-30-giorni-sugli-atti/"
+    },
+    {
      "nome": "NTR24",
      "url": "https://www.ntr24.tv/2026/10/25/linea-18-bn-cusano-benevento-i-pendolari-dopo-la-sanzione-arriva-lultimatum-di-30-giorni-sugli-atti/"
     },
@@ -237,7 +388,8 @@
       "testo": "La Regione Campania ha multato AIR Campania, la società dei bus extraurbani, per la linea 18-BN che collega Pietraroja, Cerreto Sannita e Benevento. Le sanzioni e le penali previste dal contratto arrivano a 14.800 euro. Lo raccontano i pendolari della linea, che da mesi contestano all'azienda come è stato gestito il servizio.",
       "fonti": [
        "NTR24",
-       "Fremondoweb"
+       "Fremondoweb",
+       "BeneventoNews24"
       ],
       "giorno": "2026-10-25"
      },
@@ -245,7 +397,8 @@
       "testo": "Tutto parte dall'estate: dall'8 al 21 giugno 2026 la corsa delle 6.10 non è più arrivata fino al Terminal Santa Colomba di Benevento e la fermata è stata soppressa. Secondo i pendolari gli orari pubblicati da AIR davano quella fermata valida tutto l'anno, senza eccezioni per i mesi estivi, e il cambio ha penalizzato lavoratori e viaggiatori.",
       "fonti": [
        "NTR24",
-       "Fremondoweb"
+       "Fremondoweb",
+       "BeneventoNews24"
       ],
       "giorno": "2026-10-25"
      },
@@ -253,7 +406,8 @@
       "testo": "Con una nota del 18 settembre la Direzione Mobilità della Regione ha contestato all'azienda le irregolarità di quelle due settimane: 9.800 euro per aver cambiato il programma delle corse senza autorizzazione e 5.000 euro per le informazioni mancanti o sbagliate date ai passeggeri, un problema che secondo la Regione si era ripetuto anche negli anni prima.",
       "fonti": [
        "NTR24",
-       "Fremondoweb"
+       "Fremondoweb",
+       "BeneventoNews24"
       ],
       "giorno": "2026-10-25"
      },
@@ -261,15 +415,17 @@
       "testo": "C'è poi la questione dei documenti. I pendolari avevano chiesto di vedere gli atti e gli orari storici della linea e dicono di aver ricevuto risposte generiche. Il 20 ottobre il Difensore civico della Regione Campania, l'ufficio che tutela i cittadini nei rapporti con gli enti pubblici, ha dato ad AIR 30 giorni per mostrare i documenti sulla linea 18-BN e sulla fermata di Santa Colomba, oppure per spiegare per iscritto, una per una, quali ricerche ha fatto se non li trova.",
       "fonti": [
        "NTR24",
-       "Fremondoweb"
+       "Fremondoweb",
+       "BeneventoNews24"
       ],
       "giorno": "2026-10-25"
      },
      {
-      "testo": "I pendolari annunciano anche un esposto alla Procura della Repubblica di Benevento e alla Procura regionale della Corte dei Conti. «Non permetteremo che una vicenda così grave finisca nel dimenticatoio o che le sanzioni economiche vengano scaricate sui cittadini», dice Adam Biondi, uno dei pendolari, nel comunicato ripreso da Fremondoweb.",
+      "testo": "I pendolari annunciano anche un esposto alla Procura della Repubblica di Benevento e alla Procura regionale della Corte dei Conti. «Non permetteremo che una vicenda così grave finisca nel dimenticatoio o che le sanzioni economiche vengano scaricate sui cittadini», dice Adam Biondi, uno dei pendolari, nel comunicato ripreso da Fremondoweb. Se dopo i 30 giorni i documenti non arriveranno, i pendolari dicono che faranno ricorso al TAR della Campania, il tribunale amministrativo, per ottenerli.",
       "fonti": [
        "NTR24",
-       "Fremondoweb"
+       "Fremondoweb",
+       "BeneventoNews24"
       ],
       "giorno": "2026-10-25"
      }
@@ -335,6 +491,12 @@
       "titolo": "Air Campania, linea Cusano-Benevento: arriva ultimatum dei 30 giorni per consegnare gli atti",
       "url": "https://www.fremondoweb.com/notizie-dalla-valle-telesina/air-campania-linea-cusano-benevento-arriva-ultimatum-dei-30-giorni-per-consegnare-gli-atti/",
       "data": "25 ott, 21:36"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Linea 18-BN Cusano-Benevento, i pendolari: “Dopo sanzione, ultimatum 30 giorni su atti”",
+      "url": "https://www.beneventonews24.it/2026/10/26/linea-18-bn-cusano-benevento-i-pendolari-dopo-la-sanzione-ultimatum-di-30-giorni-sugli-atti/",
+      "data": "26 ott, 00:28"
      }
     ]
    },
@@ -2396,300 +2558,6 @@
    "foto": "borgo"
   },
   {
-   "id": "benevento-cloud-finance-nuova-sede-via-collevaccino",
-   "titolo": "Benevento, inaugurata in via Pietro Collevaccino la nuova sede di Cloud Finance",
-   "titolo_google": "Benevento, nuova sede di Cloud Finance in via Collevaccino",
-   "sintesi": "Inaugurata a Benevento, in via Pietro Collevaccino, la nuova sede di Cloud Finance, azienda che sviluppa software per l'analisi economico-finanziaria di imprese e professionisti.",
-   "categoria": "altro",
-   "zona": "benevento",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-23T22:51:00+02:00",
-   "stato": "una_fonte",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "TV7 Benevento",
-     "url": "https://www.tvsette.net/inaugurata-a-benevento-la-nuova-sede-di-cloud-finance-video-e-foto/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Venerdì 23 ottobre a Benevento è stata inaugurata la nuova sede di Cloud Finance, in via Pietro Collevaccino.",
-      "fonti": [
-       "TV7 Benevento"
-      ]
-     },
-     {
-      "testo": "Cloud Finance è una PMI innovativa (piccola impresa che lavora su tecnologie nuove) del settore Fintech, cioè dei servizi finanziari digitali. Sviluppa software cloud, che funzionano via internet, per l'analisi economico-finanziaria, il controllo di gestione, la tesoreria e l'intelligenza artificiale, destinati a imprese e professionisti.",
-      "fonti": [
-       "TV7 Benevento"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Quante persone lavorano nella nuova sede."
-    ],
-    "fonti": [
-     {
-      "nome": "TV7 Benevento",
-      "titolo": "Inaugurata a Benevento la nuova sede di “CLOUD FINANCE” (VIDEO E FOTO)",
-      "url": "https://www.tvsette.net/inaugurata-a-benevento-la-nuova-sede-di-cloud-finance-video-e-foto/",
-      "data": "23 ott, 22:51"
-     }
-    ]
-   }
-  },
-  {
-   "id": "olio-campania-igp-barbati-presidente-di-giambattista-segretario",
-   "titolo": "Consorzio Olio Campania IGP, Veronica Barbati presidente e il beneventano Armando Di Giambattista segretario",
-   "titolo_google": "Olio Campania IGP: nuova presidente, segretario sannita",
-   "sintesi": "L'assemblea del Consorzio di Tutela Olio Campania IGP ha rinnovato i vertici: presidente Veronica Barbati, di Avellino. Segretario è Armando Di Giambattista, olivicoltore beneventano.",
-   "categoria": "altro",
-   "zona": "provincia",
-   "luogo": "Campania",
-   "pubblicato": "2026-10-23T17:28:00+02:00",
-   "stato": "una_fonte",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/23/igp-olio-campania-nominata-presidente-lirpina-barbati-segretario-il-sannita-di-giambattista/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Cambio al vertice per il Consorzio di Tutela Olio Campania IGP, l'ente che difende e promuove l'olio con il marchio IGP (indicazione geografica protetta) prodotto in Campania. L'assemblea dei soci ha rinnovato la squadra dirigente e ha nominato presidente Veronica Barbati, imprenditrice agricola della provincia di Avellino, presidente provinciale di Coldiretti Avellino e di Aprol Campania.",
-      "fonti": [
-       "NTR24"
-      ]
-     },
-     {
-      "testo": "Vicepresidente è Antonio Naimoli, imprenditore agricolo e frantoiano salernitano. La carica di segretario va ad Armando Di Giambattista, olivicoltore beneventano ed esperto di politica agricola comunitaria.",
-      "fonti": [
-       "NTR24"
-      ]
-     },
-     {
-      "testo": "Il Consorzio ha il compito di valorizzare l'olio campano e di vigilare sulla denominazione, in collaborazione con l'Ispettorato centrale della tutela della qualità e repressione frodi dei prodotti agroalimentari (ICQRF), per proteggere i produttori da imitazioni e concorrenza sleale. Barbati parla di «una sfida ardua ma estremamente avvincente» in un momento non privo di difficoltà.",
-      "fonti": [
-       "NTR24"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [],
-    "fonti": [
-     {
-      "nome": "NTR24",
-      "titolo": "IGP Olio Campania: nominata presidente l’irpina Barbati. Segretario il sannita Di Giambattista",
-      "url": "https://www.ntr24.tv/2026/10/23/igp-olio-campania-nominata-presidente-lirpina-barbati-segretario-il-sannita-di-giambattista/",
-      "data": "23 ott, 17:28"
-     }
-    ]
-   },
-   "immagine": "olio",
-   "foto": "olio-9"
-  },
-  {
-   "id": "benevento-via-vanvitelli-scontro-auto-ribaltata-due-ferite",
-   "titolo": "Benevento, scontro tra due auto in via Vanvitelli: una si ribalta, ferite due ragazze",
-   "titolo_google": "Incidente in via Vanvitelli a Benevento: auto ribaltata",
-   "sintesi": "Venerdì sera, 23 ottobre, in via Vanvitelli a Benevento due auto si sono scontrate e una si è ribaltata, finendo su un'auto in sosta. Due ragazze sono rimaste ferite, in condizioni non gravi, e la strada è stata chiusa.",
-   "categoria": "cronaca",
-   "zona": "benevento",
-   "luogo": "Benevento, via Vanvitelli",
-   "pubblicato": "2026-10-23T21:43:00+02:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/scontro-ribaltamento-ferimento-ragazze-benevento/"
-    },
-    {
-     "nome": "Cronache del Sannio",
-     "url": "https://www.cronachedelsannio.it/sannionews24/scontro-auto-via-vanvitelli-ferite-due-ragazze/"
-    },
-    {
-     "nome": "Ottopagine",
-     "url": "https://www.ottopagine.it/bn/cronaca/442007/via-vanvitelli-incidente-e-paura-per-alcune-persone-chiusa-la-strada.shtml"
-    },
-    {
-     "nome": "TV7 Benevento",
-     "url": "https://www.tvsette.net/scontro-tra-due-auto-ferite-due-persone-foto/"
-    },
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/23/benevento-incidente-al-quartiere-mellusi-auto-si-ribalta-dopo-lo-scontro-ferite-mamma-e-figlia/"
-    },
-    {
-     "nome": "BeneventoNews24",
-     "url": "https://www.beneventonews24.it/2026/10/23/benevento-scontro-tra-due-auto-una-si-ribalta-feriti/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Venerdì sera, 23 ottobre, in via Vanvitelli a Benevento, nel quartiere Mellusi, due auto si sono scontrate e una si è ribaltata. Alla guida delle due auto, una Peugeot e una Mercedes, c'erano due ragazze: sono rimaste ferite, ma secondo le prime notizie non sono gravi.",
-      "fonti": [
-       "Anteprima24",
-       "Cronache del Sannio",
-       "TV7 Benevento"
-      ]
-     },
-     {
-      "testo": "Dopo l'urto la Peugeot si è ribaltata e ha colpito un'altra auto che era parcheggiata. Il 118 ha soccorso le due ferite e, secondo Ottopagine, le ha portate in ospedale. Sono intervenuti anche i Vigili del fuoco e la Polizia municipale, che ha fatto i rilievi. La strada è stata chiusa al traffico.",
-      "fonti": [
-       "Anteprima24",
-       "Ottopagine",
-       "Cronache del Sannio"
-      ]
-     },
-     {
-      "testo": "La causa è ancora da accertare. Anteprima24 scrive che la Mercedes «probabilmente» non avrebbe rispettato uno stop; gli altri giornali parlano solo di cause in corso di accertamento.",
-      "fonti": [
-       "Anteprima24",
-       "TV7 Benevento"
-      ]
-     },
-     {
-      "testo": "NTR24 precisa che lo scontro è avvenuto all'incrocio tra via Vanvitelli e via Salvemini e che sull'auto ribaltata viaggiavano una mamma e la figlia, entrambe ferite e portate in ospedale per accertamenti. I Vigili del fuoco hanno messo in sicurezza l'auto capovolta. BeneventoNews24 conferma i due feriti soccorsi dal 118 e portati in ospedale.",
-      "fonti": [
-       "NTR24",
-       "BeneventoNews24"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "Due auto si sono scontrate in via Vanvitelli, una si è ribaltata e due persone sono rimaste ferite.",
-      "fonti": [
-       "Anteprima24",
-       "Cronache del Sannio",
-       "Ottopagine",
-       "TV7 Benevento"
-      ]
-     }
-    ],
-    "divergono": [
-     {
-      "testo": "La Mercedes: Ottopagine la indica come classe A, le altre fonti parlano solo di Mercedes. Il dettaglio dello stop non rispettato è solo di Anteprima24 e va preso come ipotesi.",
-      "fonti": [
-       "Ottopagine",
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "Chi c'era a bordo: Anteprima24 e Cronache del Sannio scrivono che alla guida delle due auto c'erano due ragazze; NTR24 che sull'auto ribaltata viaggiavano una mamma e la figlia. Non è chiaro chi guidasse.",
-      "fonti": [
-       "Anteprima24",
-       "Cronache del Sannio",
-       "NTR24"
-      ]
-     }
-    ],
-    "non_si_sa": [
-     "Come sono le ferite delle due ragazze.",
-     "Di chi sia la responsabilità dello scontro.",
-     "A che ora è stata riaperta la strada."
-    ],
-    "fonti": [
-     {
-      "nome": "Anteprima24",
-      "titolo": "Prima lo scontro, poi il ribaltamento: ferite due ragazze",
-      "url": "https://www.anteprima24.it/benevento/scontro-ribaltamento-ferimento-ragazze-benevento/",
-      "data": "23 ott, 21:23"
-     },
-     {
-      "nome": "Cronache del Sannio",
-      "titolo": "Scontro tra auto in via Vanvitelli: ferite due ragazze",
-      "url": "https://www.cronachedelsannio.it/sannionews24/scontro-auto-via-vanvitelli-ferite-due-ragazze/",
-      "data": "23 ott, 21:43"
-     },
-     {
-      "nome": "Ottopagine",
-      "titolo": "Via Vanvitelli: incidente, auto si ribalta, paura per occupanti. Strada chiusa",
-      "url": "https://www.ottopagine.it/bn/cronaca/442007/via-vanvitelli-incidente-e-paura-per-alcune-persone-chiusa-la-strada.shtml",
-      "data": "23 ott, 21:16"
-     },
-     {
-      "nome": "TV7 Benevento",
-      "titolo": "SCONTRO TRA DUE AUTO. FERITE DUE PERSONE (foto)",
-      "url": "https://www.tvsette.net/scontro-tra-due-auto-ferite-due-persone-foto/",
-      "data": "23 ott, 21:34"
-     },
-     {
-      "nome": "NTR24",
-      "titolo": "Benevento, incidente al quartiere Mellusi: auto si ribalta dopo lo scontro, ferite mamma e figlia",
-      "url": "https://www.ntr24.tv/2026/10/23/benevento-incidente-al-quartiere-mellusi-auto-si-ribalta-dopo-lo-scontro-ferite-mamma-e-figlia/",
-      "data": "23 ott, 22:38"
-     },
-     {
-      "nome": "BeneventoNews24",
-      "titolo": "Benevento, scontro tra due auto, una si ribalta: feriti",
-      "url": "https://www.beneventonews24.it/2026/10/23/benevento-scontro-tra-due-auto-una-si-ribalta-feriti/",
-      "data": "23 ott, 23:15"
-     }
-    ]
-   }
-  },
-  {
-   "id": "san-leucio-del-sannio-dreams-graduatoria-definitiva",
-   "titolo": "San Leucio del Sannio, progetto D.R.E.A.M.S.: pubblicata la graduatoria definitiva per i contributi allo sport dei minori",
-   "titolo_google": "San Leucio del Sannio, graduatoria contributi sport minori",
-   "sintesi": "Il Comune di San Leucio del Sannio ha pubblicato la graduatoria definitiva del progetto D.R.E.A.M.S. 2026/2027, il contributo per la frequenza di attività sportive o culturali dei minori dell'Ambito B1.",
-   "categoria": "altro",
-   "zona": "provincia",
-   "luogo": "San Leucio del Sannio",
-   "pubblicato": "2026-10-23T22:00:00+02:00",
-   "stato": "ufficiale",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Comune di San Leucio del Sannio",
-     "url": "https://www.halleyweb.com/c062060/mc/mc_p_dettaglio.php?id_pubbl=12210"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Il Comune di San Leucio del Sannio ha pubblicato all'albo la graduatoria definitiva del progetto D.R.E.A.M.S. per la stagione 2026/2027. È l'elenco delle domande ammesse al contributo per la frequenza di attività sportive e culturali a favore dei minori dell'Ambito B1 (il gruppo di Comuni che gestisce insieme i servizi sociali).",
-      "fonti": [
-       "Comune di San Leucio del Sannio"
-      ]
-     },
-     {
-      "testo": "La graduatoria è stata approvata con la determina dirigenziale n. 1494 del 22 ottobre 2026 e l'avviso è del 22 ottobre. Le domande sono indicate con i codici e il punteggio, senza i nomi. Per chiarimenti sulla propria posizione ci si può rivolgere al Comune.",
-      "fonti": [
-       "Comune di San Leucio del Sannio"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Quanti contributi saranno assegnati e di quale importo."
-    ],
-    "fonti": [
-     {
-      "nome": "Comune di San Leucio del Sannio",
-      "titolo": "Prot. N.118720 del 22-10-2026 - Progetto D.R.E.A.M.S.-Stagione 2026/2027. Avviso Pubblico per riconoscimento contributo frequenza per attività sportive e/o culturali a favore di minori Ambito B1. Trasmissione graduatoria definitiva",
-      "url": "https://www.halleyweb.com/c062060/mc/mc_p_dettaglio.php?id_pubbl=12210",
-      "data": "23 ott"
-     }
-    ]
-   }
-  },
-  {
    "id": "foglianise-via-roma-chiusa-notte-27-28-ottobre",
    "titolo": "Foglianise, via Roma chiusa di notte il 27 e il 28 ottobre per i lavori sul costone del monte Caruso",
    "titolo_google": "Foglianise, via Roma chiusa di notte il 27 e 28 ottobre",
@@ -2741,60 +2609,6 @@
    "in_vigore_dal": "2026-10-27",
    "in_vigore_fino": "2026-10-28",
    "foto": "lavori-stradali-5"
-  },
-  {
-   "id": "faicchio-luci-votive-canone-2027-scadenza-28-febbraio",
-   "titolo": "Faicchio, luci votive al cimitero: canone 2027 di 20 euro, da pagare entro il 28 febbraio",
-   "titolo_google": "Faicchio, luci votive 2027: 20 euro entro il 28 febbraio",
-   "sintesi": "Il Comune di Faicchio conferma per il 2027 il canone di 20 euro, Iva compresa, per ogni punto luce delle lampade votive del cimitero. Si paga con PagoPA entro il 28 febbraio 2027.",
-   "categoria": "altro",
-   "zona": "telesina",
-   "luogo": "Faicchio",
-   "pubblicato": "2026-10-23T22:00:00+02:00",
-   "stato": "ufficiale",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Comune di Faicchio",
-     "url": "https://comune.faicchio.bn.it/novita/illuminazione-votiva-cimiteriale-pagamento-canone-annuale-2027-nuove-attivazioni-e-cessazioni/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Il Comune di Faicchio ha pubblicato l'avviso sul canone 2027 delle luci votive, le lampade che restano accese sulle tombe del cimitero comunale. Il canone è confermato in 20 euro per ogni punto luce, Iva compresa.",
-      "fonti": [
-       "Comune di Faicchio"
-      ]
-     },
-     {
-      "testo": "Chi ha già il servizio paga con il sistema PagoPA e non deve presentare una nuova domanda. Chi vuole un nuovo allaccio o vuole disdire deve consegnare il modulo agli uffici comunali. Il termine per pagare e per presentare le richieste è il 28 febbraio 2027: poiché cade di domenica, le domande portate a mano vanno consegnate entro l'ultimo giorno di apertura prima di quella data.",
-      "fonti": [
-       "Comune di Faicchio"
-      ]
-     },
-     {
-      "testo": "Dal 25 ottobre 2026 si può chiedere informazioni agli uffici comunali nei giorni e negli orari di apertura. Un servizio informativo ci sarà anche al cimitero il 31 ottobre, il 1° e il 2 novembre, negli orari del personale incaricato, che saranno comunicati sul posto.",
-      "fonti": [
-       "Comune di Faicchio"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [],
-    "fonti": [
-     {
-      "nome": "Comune di Faicchio",
-      "titolo": "Illuminazione votiva cimiteriale – Pagamento canone annuale 2027, nuove attivazioni e cessazioni.",
-      "url": "https://comune.faicchio.bn.it/novita/illuminazione-votiva-cimiteriale-pagamento-canone-annuale-2027-nuove-attivazioni-e-cessazioni/",
-      "data": "23 ott"
-     }
-    ]
-   },
-   "immagine": "cimitero",
-   "foto": "cimitero-3"
   },
   {
    "id": "paupisi-cimitero-aperto-26-ottobre-2-novembre",
@@ -3178,743 +2992,6 @@
    }
   },
   {
-   "id": "campania-numero-unico-112-benevento-24-novembre",
-   "titolo": "Campania, arriva il numero unico di emergenza 112: a Benevento e provincia dal 24 novembre",
-   "titolo_google": "Numero unico 112 in Campania: a Benevento dal 24 novembre",
-   "sintesi": "Dal 24 novembre anche nel distretto telefonico di Benevento (prefisso 0824) si potrà chiamare il 112 per ogni emergenza: Carabinieri, Polizia, Vigili del Fuoco e soccorso sanitario. Restano attivi 113, 115 e 118.",
-   "categoria": "altro",
-   "zona": "provincia",
-   "luogo": "Benevento e provincia",
-   "pubblicato": "2026-10-23T18:22:00+02:00",
-   "stato": "ufficiale",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Regione Campania",
-     "url": "https://www.regione.campania.it/comunicazione/area-stampa/comunicati/23102026-comunicato-n-673-parte-numero-un"
-    },
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/23/parte-il-numero-unico-di-emergenza-112-in-campania-dal-24-novembre-sara-attivo-nel-sannio/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Dal 24 novembre anche a Benevento e provincia, per qualsiasi emergenza, si potrà chiamare il 112, il Numero unico europeo di emergenza (NUE). Vale per il distretto telefonico di Benevento, quello con il prefisso 0824. La chiamata è gratuita sia da telefono fisso sia da cellulare.",
-      "fonti": [
-       "Regione Campania",
-       "NTR24"
-      ]
-     },
-     {
-      "testo": "Con il 112 si chiede aiuto a Carabinieri, Polizia di Stato, Vigili del Fuoco o soccorso sanitario: risponde una Centrale unica che capisce cosa è successo e dove serve intervenire, poi passa la chiamata al servizio giusto. Il sistema raccoglie i dati disponibili per localizzare chi chiama, da fisso e da cellulare.",
-      "fonti": [
-       "Regione Campania"
-      ]
-     },
-     {
-      "testo": "I vecchi numeri non spariscono: 113, 115 e 118 restano utilizzabili e le chiamate arrivano comunque alla Centrale unica del 112, che le gira alla centrale competente.",
-      "fonti": [
-       "Regione Campania"
-      ]
-     },
-     {
-      "testo": "Il servizio parte per tappe in tutta la Campania, secondo i distretti telefonici: dal 27 ottobre Salerno, Battipaglia, Vallo della Lucania e Sala Consilina (prefissi 089, 0828, 0974, 0975); dal 10 novembre Avellino e Sant'Angelo dei Lombardi (0825 e 0827); dal 24 novembre Caserta e Benevento (0823 e 0824); il 9 dicembre Napoli (081).",
-      "fonti": [
-       "Regione Campania",
-       "NTR24"
-      ]
-     }
-    ],
-    "cronologia": [
-     {
-      "data": "27 ottobre",
-      "fatto": "Il 112 parte nei distretti di Salerno, Battipaglia, Vallo della Lucania e Sala Consilina.",
-      "fonti": [
-       "Regione Campania"
-      ]
-     },
-     {
-      "data": "10 novembre",
-      "fatto": "Tocca ad Avellino e Sant'Angelo dei Lombardi.",
-      "fonti": [
-       "Regione Campania"
-      ]
-     },
-     {
-      "data": "24 novembre",
-      "fatto": "Il 112 diventa attivo nei distretti di Caserta e Benevento.",
-      "fonti": [
-       "Regione Campania",
-       "NTR24"
-      ]
-     },
-     {
-      "data": "9 dicembre",
-      "fatto": "Ultima tappa: il distretto di Napoli.",
-      "fonti": [
-       "Regione Campania"
-      ]
-     }
-    ],
-    "concordano": [
-     {
-      "testo": "Il 112 sarà attivo nel distretto di Benevento (prefisso 0824) dal 24 novembre.",
-      "fonti": [
-       "Regione Campania",
-       "NTR24"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [
-     "Dove si trova la Centrale unica di risposta che prenderà le chiamate del Sannio."
-    ],
-    "fonti": [
-     {
-      "nome": "Regione Campania",
-      "titolo": "23/10/2026 - Comunicato n. 673 - Parte il numero unico di emergenza \"112\" in Campania",
-      "url": "https://www.regione.campania.it/comunicazione/area-stampa/comunicati/23102026-comunicato-n-673-parte-numero-un",
-      "data": "23 ott"
-     },
-     {
-      "nome": "NTR24",
-      "titolo": "Parte il numero unico di emergenza ‘112’ in Campania: dal 24 novembre sarà attivo nel Sannio",
-      "url": "https://www.ntr24.tv/2026/10/23/parte-il-numero-unico-di-emergenza-112-in-campania-dal-24-novembre-sara-attivo-nel-sannio/",
-      "data": "23 ott, 18:22"
-     }
-    ]
-   }
-  },
-  {
-   "id": "benevento-marotta-premio-eccellenze-2026",
-   "titolo": "Benevento, al professor Giuseppe Marotta il Premio Eccellenze 2026 alla Camera dei Deputati",
-   "titolo_google": "Benevento, Premio Eccellenze 2026 al prof. Giuseppe Marotta",
-   "sintesi": "Il 22 ottobre a Roma, alla Camera dei Deputati, il Premio Eccellenze 2026 è andato a Giuseppe Marotta, professore emerito dell'Università del Sannio, per il contributo allo sviluppo delle aree rurali e fragili.",
-   "categoria": "altro",
-   "zona": "benevento",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-23T18:40:00+02:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/23/il-prof-emerito-giuseppe-marotta-insignito-del-premio-eccellenze-2026/"
-    },
-    {
-     "nome": "BeneventoNews24",
-     "url": "https://www.beneventonews24.it/2026/10/23/il-prof-emerito-marotta-insignito-del-premio-eccellenze-2026-alla-camera-dei-deputati/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Il professor Giuseppe Marotta, professore emerito dell'Università degli Studi del Sannio, ha ricevuto il Premio Eccellenze 2026. Il riconoscimento gli è stato consegnato il 22 ottobre a Roma, nell'Aula dei Gruppi Parlamentari della Camera dei Deputati.",
-      "fonti": [
-       "NTR24",
-       "BeneventoNews24"
-      ]
-     },
-     {
-      "testo": "Il premio fa parte dell'iniziativa Eccellenze Italiane 2026, promossa dall'Intergruppo Parlamentare «Sviluppo Sud, Aree Fragili e Isole Minori», presieduto dall'onorevole Alessandro Caramiello, insieme al vicepresidente della Camera Sergio Costa. La motivazione parla di «alto contributo scientifico allo sviluppo delle aree rurali e fragili».",
-      "fonti": [
-       "NTR24",
-       "BeneventoNews24"
-      ]
-     },
-     {
-      "testo": "Marotta dirige la Scuola di Economia Vitale, organizzata dall'ente di formazione Sabiria e avviata il 9 e 10 ottobre a Pietrelcina, e presiede il Comitato tecnico scientifico della Fondazione di Comunità di Benevento. La notizia è stata data dalla Scuola stessa.",
-      "fonti": [
-       "NTR24"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "Il premio è stato assegnato il 22 ottobre alla Camera dei Deputati.",
-      "fonti": [
-       "NTR24",
-       "BeneventoNews24"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [],
-    "fonti": [
-     {
-      "nome": "NTR24",
-      "titolo": "Il prof. emerito Giuseppe Marotta insignito del “Premio Eccellenze 2026”",
-      "url": "https://www.ntr24.tv/2026/10/23/il-prof-emerito-giuseppe-marotta-insignito-del-premio-eccellenze-2026/",
-      "data": "23 ott, 17:06"
-     },
-     {
-      "nome": "BeneventoNews24",
-      "titolo": "Il Prof. Emerito Marotta insignito del «Premio Eccellenze 2026» alla Camera dei Deputati",
-      "url": "https://www.beneventonews24.it/2026/10/23/il-prof-emerito-marotta-insignito-del-premio-eccellenze-2026-alla-camera-dei-deputati/",
-      "data": "23 ott, 18:40"
-     }
-    ]
-   },
-   "immagine": "premio",
-   "foto": "premio-4"
-  },
-  {
-   "id": "benevento-csv-prevenzione-screening-seno-mellusi",
-   "titolo": "Benevento, al Palazzo del Volontariato screening al seno con la Croce Rossa: 15 donne visitate",
-   "titolo_google": "Benevento, screening al seno al CSV di viale Mellusi",
-   "sintesi": "Al Palazzo del Volontariato di viale Mellusi, sede del CSV Irpinia Sannio, giornata sulla prevenzione del tumore al seno con visite della Croce Rossa: 15 donne hanno fatto lo screening.",
-   "categoria": "altro",
-   "zona": "benevento",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-23T18:47:00+02:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/23/nove-realta-in-rete-per-la-prevenzione-il-csv-irpinia-sannio-ets-valorizza-il-ruolo-del-terzo-settore-nella-salute-della-comunita/"
-    },
-    {
-     "nome": "BeneventoNews24",
-     "url": "https://www.beneventonews24.it/2026/10/23/nove-realta-in-rete-per-la-prevenzione-il-csv-irpinia-sannio-ets-valorizza-il-ruolo-del-terzo-settore-nella-salute/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Al Palazzo del Volontariato «Suor Floriana Tirelli», in viale Antonio Mellusi 68 a Benevento, si è svolta l'iniziativa «Prevenzione: l'unica difesa che anticipa il giudizio». Lì ha sede il CSV Irpinia Sannio ETS, il centro che sostiene le associazioni di volontariato.",
-      "fonti": [
-       "NTR24"
-      ]
-     },
-     {
-      "testo": "Al centro c'era la prevenzione del tumore al seno. La Croce Rossa Italiana – Comitato di Benevento ha fatto visite di screening (controllo per scoprire il problema in anticipo) affidate a Ettore Gentile, chirurgo senologo dell'AORN San Pio. Le donne che si sono prenotate e hanno fatto lo screening sono state 15.",
-      "fonti": [
-       "NTR24"
-      ]
-     },
-     {
-      "testo": "Hanno collaborato nove realtà, tra cui ASL Benevento, AORN San Pio, Ordine degli Avvocati, AIGA, Ordine dei Medici, Camera Civile, Lions Club Benevento Host e lo stesso CSV.",
-      "fonti": [
-       "NTR24"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "L'iniziativa sulla prevenzione, ospitata dal CSV Irpinia Sannio, con nove realtà in rete.",
-      "fonti": [
-       "NTR24",
-       "BeneventoNews24"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [],
-    "fonti": [
-     {
-      "nome": "NTR24",
-      "titolo": "Nove realtà in rete per la prevenzione: il CSV Irpinia Sannio ETS valorizza il ruolo del Terzo settore nella salute della comunità",
-      "url": "https://www.ntr24.tv/2026/10/23/nove-realta-in-rete-per-la-prevenzione-il-csv-irpinia-sannio-ets-valorizza-il-ruolo-del-terzo-settore-nella-salute-della-comunita/",
-      "data": "23 ott, 17:30"
-     },
-     {
-      "nome": "BeneventoNews24",
-      "titolo": "Nove realtà in rete per la prevenzione: il CSV Irpinia Sannio ETS valorizza il ruolo del Terzo settore nella salute",
-      "url": "https://www.beneventonews24.it/2026/10/23/nove-realta-in-rete-per-la-prevenzione-il-csv-irpinia-sannio-ets-valorizza-il-ruolo-del-terzo-settore-nella-salute/",
-      "data": "23 ott, 18:47"
-     }
-    ]
-   },
-   "immagine": "medico",
-   "foto": "medico-8"
-  },
-  {
-   "id": "bonea-frana-localita-capo-strade-chiuse",
-   "titolo": "Bonea, frana in località Capo: chiuse via Capo, via Capo di sotto e via Punituro",
-   "titolo_google": "Bonea, frana in località Capo: tre strade chiuse",
-   "sintesi": "Il sindaco di Bonea ha chiuso al transito di auto e pedoni via Capo, via Capo di sotto e via Punituro dopo una frana provocata dalle piogge. Il Comune ha chiesto alla Regione lo stato di emergenza.",
-   "categoria": "strade",
-   "zona": "telesina",
-   "immagine": "frana",
-   "luogo": "Bonea",
-   "pubblicato": "2026-10-23T17:24:00+02:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "traffico": "chiusa",
-   "fonti": [
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/bonea-frana-capo-strade-ordinanza/"
-    },
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/23/bonea-frana-in-localita-capo-chiuse-tre-strade-il-comune-chiede-lo-stato-di-emergenza/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Venerdì 23 ottobre il sindaco di Bonea, Giampietro Roviezzo, ha chiuso con un'ordinanza urgente (la numero 17/2026) via Capo, via Capo di sotto e via Punituro, in località Capo. Il divieto vale subito e riguarda sia le auto sia chi va a piedi: possono entrare solo le persone autorizzate.",
-      "fonti": [
-       "Anteprima24",
-       "NTR24"
-      ]
-     },
-     {
-      "testo": "La chiusura è scattata dopo la segnalazione dei Carabinieri Forestali di Montesarchio, che il 22 ottobre, durante un controllo, hanno trovato una frana superficiale. Le piogge degli ultimi giorni hanno portato a valle fango, cenere dell'incendio nel bosco del Demanio regionale del 22 settembre e pietre anche molto grosse. L'ultimo tratto di via Capo non si può più percorrere.",
-      "fonti": [
-       "Anteprima24",
-       "NTR24"
-      ]
-     },
-     {
-      "testo": "Nella zona della frana c'è un edificio rurale, il «Casino Colonico», e più in basso, in via Capo di sotto, un gruppo di case che potrebbe correre rischi. I rilievi fatti dai Carabinieri Forestali con i droni mostrano che i versanti sono ancora instabili e che nuove colate di detriti sono possibili se tornerà a piovere.",
-      "fonti": [
-       "Anteprima24",
-       "NTR24"
-      ]
-     },
-     {
-      "testo": "Nella stessa giornata la Giunta comunale ha chiesto al presidente della Regione Campania di dichiarare lo stato di emergenza per Bonea, per gli eventi di pioggia eccezionali del 21 ottobre. Il sindaco dice: «Spero di non rimanere solo per fronteggiare un'emergenza per la quale non abbiamo né mezzi né risorse».",
-      "fonti": [
-       "Anteprima24",
-       "NTR24"
-      ]
-     }
-    ],
-    "cronologia": [
-     {
-      "data": "22 ottobre",
-      "fatto": "I Carabinieri Forestali di Montesarchio accertano la frana superficiale in località Capo.",
-      "fonti": [
-       "Anteprima24",
-       "NTR24"
-      ]
-     },
-     {
-      "data": "23 ottobre",
-      "fatto": "Il sindaco firma l'ordinanza che chiude le tre strade e la Giunta chiede lo stato di emergenza.",
-      "fonti": [
-       "Anteprima24",
-       "NTR24"
-      ]
-     }
-    ],
-    "concordano": [
-     {
-      "testo": "Chiusura di via Capo, via Capo di sotto e via Punituro con l'ordinanza 17/2026 del 23 ottobre, dopo la segnalazione dei Carabinieri Forestali, e richiesta di stato di emergenza.",
-      "fonti": [
-       "Anteprima24",
-       "NTR24"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [
-     "Fino a quando resteranno chiuse le strade.",
-     "Se le famiglie di via Capo di sotto dovranno lasciare le case.",
-     "Cosa deciderà la Regione sullo stato di emergenza."
-    ],
-    "fonti": [
-     {
-      "nome": "Anteprima24",
-      "titolo": "Bonea, frana in località Capo: chiuse tre strade con ordinanza urgente",
-      "url": "https://www.anteprima24.it/benevento/bonea-frana-capo-strade-ordinanza/",
-      "data": "23 ott, 17:24"
-     },
-     {
-      "nome": "NTR24",
-      "titolo": "Bonea, frana in località Capo: chiuse tre strade. Il Comune chiede lo stato di emergenza",
-      "url": "https://www.ntr24.tv/2026/10/23/bonea-frana-in-localita-capo-chiuse-tre-strade-il-comune-chiede-lo-stato-di-emergenza/",
-      "data": "23 ott, 17:23"
-     }
-    ]
-   },
-   "foto": "frana-6"
-  },
-  {
-   "id": "benevento-corso-garibaldi-commercianti-associazione-halloween",
-   "titolo": "Benevento, i commercianti di Corso Garibaldi fondano un'associazione e preparano eventi per Halloween",
-   "titolo_google": "Corso Garibaldi, nasce l'associazione dei commercianti",
-   "sintesi": "A Benevento i commercianti di Corso Garibaldi si sono uniti in una nuova associazione di promozione del territorio. Il primo appuntamento sarà nel fine settimana di Halloween.",
-   "categoria": "altro",
-   "zona": "benevento",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-23T17:24:00+02:00",
-   "stato": "una_fonte",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/corso-garibaldi-i-commercianti-passano-allazione-ecco-cosa-bolle-in-pentola/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "I commercianti di Corso Garibaldi, a Benevento, si sono uniti in una nuova associazione di promozione del territorio. Vogliono riportare persone, iniziative e movimento lungo il Corso, con eventi, attività culturali e occasioni di incontro, insieme a negozi, cittadini, associazioni e istituzioni.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "Il primo banco di prova sarà il fine settimana di Halloween: sono già stati coinvolti diversi artisti di strada e il programma sarà annunciato a breve. L'iniziativa arriva dopo la stretta del Comune sulle vetrine dismesse e dopo la scelta di far tornare gli autobus sul Corso, chiesta dai commercianti.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Il programma e le date precise degli eventi di Halloween."
-    ],
-    "fonti": [
-     {
-      "nome": "Anteprima24",
-      "titolo": "Corso Garibaldi, i commercianti passano all’azione: ecco cosa bolle in pentola",
-      "url": "https://www.anteprima24.it/benevento/corso-garibaldi-i-commercianti-passano-allazione-ecco-cosa-bolle-in-pentola/",
-      "data": "23 ott, 17:24"
-     }
-    ]
-   }
-  },
-  {
-   "id": "benevento-benzinabn-web-app-pompe-di-benzina",
-   "titolo": "Benevento, tre giovani sanniti lanciano benzinabn.it: una mappa dei distributori con le segnalazioni degli automobilisti",
-   "titolo_google": "Benevento, benzinabn.it: la mappa delle pompe di benzina",
-   "sintesi": "Tre giovani del Sannio hanno creato il sito benzinabn.it. Mostra le pompe di benzina di Benevento e si aggiorna con le segnalazioni di chi fa rifornimento, utile nei giorni di carenza di carburante.",
-   "categoria": "altro",
-   "zona": "benevento",
-   "immagine": "carburante",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-23T17:07:00+02:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "BeneventoNews24",
-     "url": "https://www.beneventonews24.it/2026/10/23/dove-fare-benzina-a-benevento-tre-giovani-sanniti-lanciano-una-web-app-per-trovare-le-pompe-disponibili/"
-    },
-    {
-     "nome": "Il Sannio Quotidiano",
-     "url": "https://www.ilsannioquotidiano.it/2026/10/23/dove-fare-benzina-a-benevento-ci-pensa-una-web-app-nata-dallidea-di-tre-giovani/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Si chiama benzinabn.it ed è un sito pensato per sapere quali pompe di benzina di Benevento hanno carburante. L'hanno realizzato tre giovani del territorio: Nicola Salvatore Cardone, ingegnere della provincia di Benevento, e gli amici informatici Mariano Iscaro e Antonio Pennino.",
-      "fonti": [
-       "BeneventoNews24",
-       "Il Sannio Quotidiano"
-      ]
-     },
-     {
-      "testo": "Funziona con le segnalazioni condivise: chi va a una pompa può scrivere com'è la situazione, così chi arriva dopo sa se vale la pena andarci. Sul sito si vede la mappa dei distributori e ognuno può aggiungere quelli che mancano.",
-      "fonti": [
-       "BeneventoNews24",
-       "Il Sannio Quotidiano"
-      ]
-     },
-     {
-      "testo": "Servono soprattutto le «pompe bianche», cioè i distributori indipendenti, senza un marchio petrolifero grande, che non sono ancora tutti sulla mappa. BeneventoNews24 ricorda che l'idea arriva nei giorni dello stop degli autotrasportatori e della carenza di carburante.",
-      "fonti": [
-       "BeneventoNews24",
-       "Il Sannio Quotidiano"
-      ]
-     },
-     {
-      "testo": "Gli ideatori chiedono ai cittadini di usare il sito e di aggiornarlo: più segnalazioni arrivano, più le informazioni sono affidabili. Le segnalazioni sono degli utenti e non sono verificate dai giornali né da questa redazione.",
-      "fonti": [
-       "BeneventoNews24"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "Chi ha creato benzinabn.it e come funziona: mappa dei distributori aggiornata con le segnalazioni degli automobilisti.",
-      "fonti": [
-       "BeneventoNews24",
-       "Il Sannio Quotidiano"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [
-     "Quante pompe sono già sulla mappa.",
-     "Quanto sono aggiornate le segnalazioni degli utenti."
-    ],
-    "fonti": [
-     {
-      "nome": "BeneventoNews24",
-      "titolo": "Dove fare benzina a Benevento? Tre giovani sanniti lanciano una web-app per trovare le pompe disponibili",
-      "url": "https://www.beneventonews24.it/2026/10/23/dove-fare-benzina-a-benevento-tre-giovani-sanniti-lanciano-una-web-app-per-trovare-le-pompe-disponibili/",
-      "data": "23 ott, 17:07"
-     },
-     {
-      "nome": "Il Sannio Quotidiano",
-      "titolo": "Dove fare benzina a Benevento? Ci pensa una web-app nata dall’idea di tre giovani",
-      "url": "https://www.ilsannioquotidiano.it/2026/10/23/dove-fare-benzina-a-benevento-ci-pensa-una-web-app-nata-dallidea-di-tre-giovani/",
-      "data": "23 ott, 16:33"
-     }
-    ]
-   },
-   "foto": "carburante-4"
-  },
-  {
-   "id": "san-pio-concorso-8-infermieri-pediatrici",
-   "titolo": "Ospedale San Pio di Benevento, concorso per 8 infermieri pediatrici a tempo indeterminato",
-   "titolo_google": "Concorso San Pio Benevento: 8 infermieri pediatrici",
-   "sintesi": "L'ospedale San Pio ha indetto un concorso per 8 posti di infermiere pediatrico a tempo indeterminato. Le domande si fanno online, entro 30 giorni dalla pubblicazione del bando in Gazzetta Ufficiale.",
-   "categoria": "altro",
-   "zona": "benevento",
-   "immagine": "concorso",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-23T17:01:00+02:00",
-   "stato": "una_fonte",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/23/ospedale-san-pio-via-libera-al-concorso-per-8-infermieri-pediatrici-bando-e-come-candidarsi/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "L'ospedale San Pio di Benevento ha indetto un concorso pubblico, per titoli ed esami, per 8 posti a tempo indeterminato da infermiere pediatrico. La delibera è stata firmata venerdì 23 ottobre dalla direttrice generale Maria Morgante.",
-      "fonti": [
-       "NTR24"
-      ]
-     },
-     {
-      "testo": "Il concorso risponde al piano del personale 2025-2027 della Regione Campania. Secondo NTR24 serve a dare stabilità ai reparti e a garantire i livelli essenziali di assistenza, perché sulla piattaforma regionale «Sinfonia» non ci sono graduatorie attive per questa figura.",
-      "fonti": [
-       "NTR24"
-      ]
-     },
-     {
-      "testo": "Per partecipare servono la laurea in Infermieristica pediatrica (o un titolo equipollente) e l'iscrizione all'albo. Due posti sono riservati ai volontari delle Forze Armate congedati senza demerito e uno a chi ha fatto il servizio civile. La domanda si presenta solo online, sul portale concorsi.aosanpio.netservizi.it, dal giorno dopo la pubblicazione dell'estratto del bando in Gazzetta Ufficiale fino alla mezzanotte del trentesimo giorno. Il contributo di segreteria è di 10 euro, da pagare con MyPay della Regione.",
-      "fonti": [
-       "NTR24"
-      ]
-     },
-     {
-      "testo": "Le prove sono una scritta (fino a 30 punti), una pratica (fino a 20) e un'orale (fino a 20); i titoli valgono al massimo 30 punti. Se le domande superano le 100 ci sarà una preselezione: passano i primi 50.",
-      "fonti": [
-       "NTR24"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "La data di pubblicazione in Gazzetta Ufficiale, da cui parte il termine per le domande.",
-     "Quando saranno le prove."
-    ],
-    "fonti": [
-     {
-      "nome": "NTR24",
-      "titolo": "Ospedale “San Pio”, via libera al concorso per 8 infermieri pediatrici: bando e come candidarsi",
-      "url": "https://www.ntr24.tv/2026/10/23/ospedale-san-pio-via-libera-al-concorso-per-8-infermieri-pediatrici-bando-e-come-candidarsi/",
-      "data": "23 ott, 17:01"
-     }
-    ]
-   },
-   "foto": "concorso-4"
-  },
-  {
-   "id": "ss265var-fondo-valle-isclero-pavimentazione-melizzano-dugenta",
-   "titolo": "SS 265 Fondo Valle Isclero, Anas ha finito il nuovo asfalto tra Melizzano e Dugenta; altri lavori da novembre",
-   "titolo_google": "SS 265 Fondo Valle Isclero, nuovo asfalto tra Melizzano e Dugenta",
-   "sintesi": "Venerdì 23 ottobre l'Anas ha concluso il rifacimento dell'asfalto sulla statale 265 var tra Melizzano e Dugenta. Da novembre un altro intervento da 1,1 milioni di euro in tratti sparsi.",
-   "categoria": "strade",
-   "zona": "telesina",
-   "immagine": "lavori-stradali",
-   "luogo": "Melizzano e Dugenta",
-   "pubblicato": "2026-10-23T16:38:00+02:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/fondo-valle-isclero-eseguite-le-attivita-di-pavimentazione-stradale/"
-    },
-    {
-     "nome": "Il Sannio Quotidiano",
-     "url": "https://www.ilsannioquotidiano.it/2026/10/24/fondovalle-isclero-al-via-i-lavori-di-pavimentazione-tra-melizzano-e-dugenta/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Sulla statale 265 var «Fondo Valle Isclero» l'Anas ha concluso venerdì 23 ottobre i lavori puntuali di nuovo asfalto tra i territori di Melizzano e Dugenta. Erano cominciati la settimana scorsa.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "I lavori fanno parte dell'appalto principale da 3,2 milioni di euro, che ha riguardato anche la statale 372 «Telesina», tra le province di Benevento e Caserta.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "Da novembre sulla stessa statale 265 var è previsto un altro intervento di nuovo asfalto, in tratti sparsi, per 1,1 milioni di euro. Il calendario preciso non c'è ancora: l'Anas lo comunicherà quando sarà deciso con l'impresa.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "La strada è molto importante per i collegamenti tra Benevento e Caserta e ha molto traffico pesante, anche per il cantiere vicino della linea ferroviaria dell'Alta Velocità.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "L'Anas ha concluso venerdì 23 ottobre il nuovo asfalto tra Melizzano e Dugenta, cominciato la settimana prima, nell'appalto da 3,2 milioni di euro che ha toccato anche la statale 372 «Telesina».",
-      "fonti": [
-       "Anteprima24",
-       "Il Sannio Quotidiano"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [
-     "Le date e i tratti dei lavori di novembre.",
-     "Se serviranno restringimenti o chiusure durante i lavori."
-    ],
-    "fonti": [
-     {
-      "nome": "Anteprima24",
-      "titolo": "Fondo Valle Isclero, eseguite le attività di pavimentazione stradale",
-      "url": "https://www.anteprima24.it/benevento/fondo-valle-isclero-eseguite-le-attivita-di-pavimentazione-stradale/",
-      "data": "23 ott, 16:38"
-     },
-     {
-      "nome": "Il Sannio Quotidiano",
-      "titolo": "Fondovalle Isclero, al via i lavori di pavimentazione tra Melizzano e Dugenta",
-      "url": "https://www.ilsannioquotidiano.it/2026/10/24/fondovalle-isclero-al-via-i-lavori-di-pavimentazione-tra-melizzano-e-dugenta/",
-      "data": "24 ott, 07:20"
-     }
-    ]
-   },
-   "foto": "lavori-stradali-6"
-  },
-  {
-   "id": "colle-sannita-decorata-biometano-osservazioni-8-novembre",
-   "titolo": "Colle Sannita, frazione Decorata: gli abitanti contro l'impianto di biometano, osservazioni entro l'8 novembre",
-   "titolo_google": "Biometano a Colle Sannita: osservazioni entro l'8 novembre",
-   "sintesi": "L'associazione «Tutti per l'Ambiente, l'Ambiente per Tutti» è contraria al progetto di impianto di biometano a Decorata, frazione di Colle Sannita. Le osservazioni sulla VINCA si possono presentare al Comune fino all'8 novembre.",
-   "categoria": "altro",
-   "zona": "fortore",
-   "immagine": "impianto-rifiuti",
-   "luogo": "Colle Sannita (Decorata)",
-   "pubblicato": "2026-10-23T17:07:00+02:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/impianto-biometano-decorata-associazione-ambiente/"
-    },
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/23/biometano-a-colle-sannita-lassociazione-tutti-per-lambiente-blocchiamo-un-impianto-di-cui-il-territorio-non-ha-bisogno/"
-    },
-    {
-     "nome": "Il Sannio Quotidiano",
-     "url": "https://www.ilsannioquotidiano.it/2026/10/24/impianto-biometano-a-decorata-no-del-comitato-rischia-di-ripetersi-lincubo-dei-miasmi/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "L'associazione «Tutti per l'Ambiente, l'Ambiente per Tutti», formata da residenti, ha diffuso una nota contro il progetto di un impianto privato di biometano (gas ricavato da reflui agricoli e di allevamento), di potenza 500 Smc, previsto a Decorata, frazione di Colle Sannita. Il testo è una presa di posizione dell'associazione, ripresa come nota stampa da Anteprima24, NTR24 e Il Sannio Quotidiano.",
-      "fonti": [
-       "Anteprima24",
-       "NTR24",
-       "Il Sannio Quotidiano"
-      ]
-     },
-     {
-      "testo": "Secondo l'associazione il primo progetto risale al 2019 e i residenti lo hanno saputo solo nel 2023. Dopo le loro sollecitazioni, il Comune ha chiesto la VINCA, la Valutazione di Incidenza Ambientale. Dopo una prima proposta archiviata in Regione, la pratica ora è all'esame del Comune e il termine per presentare le osservazioni scade l'8 novembre.",
-      "fonti": [
-       "Anteprima24",
-       "NTR24",
-       "Il Sannio Quotidiano"
-      ]
-     },
-     {
-      "testo": "L'associazione sostiene che a Decorata non ci siano allevamenti sufficienti per alimentare l'impianto, che costringerebbe quindi a portare scarti da fuori con più traffico, e teme miasmi simili a quelli lamentati a Benevento in contrada San Domenico. Dice anche che alla società è stato revocato il parere sanitario e che è in corso un ricorso al TAR, senza ancora una decisione di merito.",
-      "fonti": [
-       "Anteprima24",
-       "NTR24",
-       "Il Sannio Quotidiano"
-      ]
-     },
-     {
-      "testo": "L'associazione dice che presenterà le sue osservazioni e invita i cittadini a fare lo stesso entro l'8 novembre. Queste sono le affermazioni dell'associazione: la nota non riporta la posizione della società né quella del Comune.",
-      "fonti": [
-       "Anteprima24",
-       "NTR24",
-       "Il Sannio Quotidiano"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "Le tre testate riportano la stessa nota dell'associazione: progetto del 2019 scoperto nel 2023, VINCA al vaglio del Comune, osservazioni da presentare entro l'8 novembre.",
-      "fonti": [
-       "Anteprima24",
-       "NTR24",
-       "Il Sannio Quotidiano"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [
-     "Cosa dicono la società proponente e il Comune di Colle Sannita.",
-     "Dove si presentano le osservazioni e con quali modalità.",
-     "Le tre testate riprendono la sola nota dell'associazione: la versione della società e del Comune non è uscita."
-    ],
-    "fonti": [
-     {
-      "nome": "Anteprima24",
-      "titolo": "Mega impianto di biometano a Decorata, la nota dell’Associazione ‘Tutti per l’Ambiente’",
-      "url": "https://www.anteprima24.it/benevento/impianto-biometano-decorata-associazione-ambiente/",
-      "data": "23 ott, 17:07"
-     },
-     {
-      "nome": "NTR24",
-      "titolo": "Biometano a Colle Sannita, l’associazione ‘Tutti per l’Ambiente’: “Blocchiamo un impianto di cui il territorio non ha bisogno”",
-      "url": "https://www.ntr24.tv/2026/10/23/biometano-a-colle-sannita-lassociazione-tutti-per-lambiente-blocchiamo-un-impianto-di-cui-il-territorio-non-ha-bisogno/",
-      "data": "23 ott, 17:11"
-     },
-     {
-      "nome": "Il Sannio Quotidiano",
-      "titolo": "Impianto biometano a Decorata, no del comitato: “Rischia di ripetersi l’incubo dei miasmi”",
-      "url": "https://www.ilsannioquotidiano.it/2026/10/24/impianto-biometano-a-decorata-no-del-comitato-rischia-di-ripetersi-lincubo-dei-miasmi/",
-      "data": "24 ott, 07:03"
-     }
-    ]
-   },
-   "foto": "impianto-rifiuti"
-  },
-  {
    "id": "benevento-inchiesta-comune-incidente-probatorio-3-novembre",
    "titolo": "Inchiesta sul Comune di Benevento, l'incidente probatorio parte il 3 novembre e cambia un difensore dell'ex dirigente",
    "titolo_google": "Inchiesta Comune di Benevento, incidente probatorio il 3 novembre",
@@ -4235,232 +3312,6 @@
    }
   },
   {
-   "id": "paolisi-nasce-squadra-terza-categoria",
-   "titolo": "Paolisi, nasce la squadra di Terza Categoria: si comincia domenica 25 ottobre a Rotondi",
-   "titolo_google": "Paolisi, nasce la squadra di calcio di Terza Categoria",
-   "sintesi": "A Paolisi, in Valle Caudina, torna il calcio dilettantistico con una squadra di Terza Categoria, in gran parte di ragazzi cresciuti nella scuola calcio del paese. Prima partita domenica 25 ottobre alle 14:30 a Rotondi.",
-   "categoria": "sport",
-   "sport": "calcio",
-   "zona": "caudina",
-   "luogo": "Paolisi",
-   "pubblicato": "2026-10-23T15:46:00+02:00",
-   "stato": "una_fonte",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "NTR24",
-     "url": "https://sport.ntr24.tv/2026/10/23/paolisi-il-calcio-riparte-dai-giovani-nasce-la-squadra-di-terza-categoria/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "A Paolisi, in Valle Caudina, nasce una squadra di calcio di Terza Categoria, la serie più bassa del calcio dilettantistico. Il paese torna ad avere una squadra in campionato e in campo ci sono anche tanti ragazzi cresciuti nella scuola calcio locale, che conta quasi 150 tra bambini e ragazzi.",
-      "fonti": [
-       "NTR24"
-      ]
-     },
-     {
-      "testo": "In panchina c'è l'allenatore Federico Falco, affiancato dal dirigente accompagnatore Giuseppe Cioffi e dal direttore generale Benito Lostorto. La società è formata dai soci Giuseppe Mainolfi, Salvatore Falco, Raffaele Cioffi, Luigi Farese e Fabio Mazza, e dice di voler offrire ai giovani un'alternativa concreta alla noia e alle cattive compagnie.",
-      "fonti": [
-       "NTR24"
-      ]
-     },
-     {
-      "testo": "La prima partita di campionato è domenica 25 ottobre alle 14:30 all'impianto sportivo «L. Gallo» di Rotondi. A breve sarà disponibile anche la tessera del tifoso per sostenere la società.",
-      "fonti": [
-       "NTR24"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Contro quale squadra e in quale girone si gioca la prima partita: l'articolo non lo dice."
-    ],
-    "fonti": [
-     {
-      "nome": "NTR24",
-      "titolo": "Paolisi, il calcio riparte dai giovani: nasce la squadra di Terza Categoria",
-      "url": "https://sport.ntr24.tv/2026/10/23/paolisi-il-calcio-riparte-dai-giovani-nasce-la-squadra-di-terza-categoria/",
-      "data": "23 ott, 15:46"
-     }
-    ]
-   },
-   "immagine": "calcio",
-   "foto": "calcio-10"
-  },
-  {
-   "id": "benevento-gesesa-guasto-via-avellino-acqua-15-17-23-ottobre",
-   "titolo": "Benevento, guasto alla rete: niente acqua dalle 15 alle 17 nella zona di via Avellino e piazza Castello",
-   "titolo_google": "Benevento, stop acqua 15-17 in via Avellino e centro",
-   "sintesi": "Venerdì 23 ottobre Gesesa ha sospeso l'acqua dalle 15 alle 17 nelle strade del distretto di via Avellino e piazza Castello, a Benevento, per un guasto improvviso con una forte perdita.",
-   "categoria": "altro",
-   "zona": "benevento",
-   "immagine": "acqua",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-23T14:22:00+02:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "in_vigore_fino": "2026-10-23",
-   "fonti": [
-    {
-     "nome": "Cronache del Sannio",
-     "url": "https://www.cronachedelsannio.it/sannionews24/guasto-zona-alta-benevento-stop-erogazione-idrica/"
-    },
-    {
-     "nome": "Ottopagine",
-     "url": "https://www.ottopagine.it/bn/attualita/441956/guasto-a-benevento-due-ore-di-stop-all-acqua-in-diverse-zone.shtml"
-    },
-    {
-     "nome": "Lab TV",
-     "url": "https://www.labtv.net/attualita/2026/10/23/gesesa-ancora-un-guasto-tra-via-avellino-e-piazza-castello-stop-erogazione-dalle-15-alle-17/"
-    },
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/23/benevento-guasto-alla-rete-idrica-sospensione-dellacqua-dalle-15-alle-17-in-numerose-strade-della-citta/"
-    },
-    {
-     "nome": "InfoSannio",
-     "url": "https://www.infosannionews.it/associazioni/2026/benevento-interruzione-idrica-dalle-15-alle-17-nel-distretto-i-via-avellino-e-piazza-castello.html"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Venerdì 23 ottobre, dalle 15 alle 17, a Benevento manca l'acqua nelle strade del distretto di via Avellino e piazza Castello. Lo ha annunciato Gesesa, la società che gestisce l'acqua in città, spiegando che c'è stato un guasto improvviso con una forte perdita d'acqua.",
-      "fonti": [
-       "Cronache del Sannio",
-       "Ottopagine",
-       "Lab TV",
-       "NTR24",
-       "InfoSannio"
-      ]
-     },
-     {
-      "testo": "Le strade interessate, secondo l'elenco diffuso da Gesesa e ripreso dai giornali, sono: via Avellino, via Isernia, via Antonio de Rienzo, via Gaetano Cangiano, via San Benedetto da Benevento, via Piana degli Orti, via Saragat, via Filippo Serino, via Fontanelle, via Benito Rossi, via Mainella, parte di via delle Puglie, via del Sole, piazza Castello, via IV Novembre e piazza IV Novembre, via XXIV Maggio, piazza Risorgimento, viale Mellusi, viale dei Rettori, via Pertini, corso Garibaldi (da piazza IV Novembre a via Camerario), via Annunziata, via Umberto I, piazza Arechi II, via Verdi, piazza Piano di Corte e viale Atlantici.",
-      "fonti": [
-       "Cronache del Sannio",
-       "Ottopagine",
-       "Lab TV"
-      ]
-     },
-     {
-      "testo": "Lab TV scrive che è «ancora un guasto» in quella zona. Le fonti non dicono se l'acqua tornerà normale alle 17 né dove sia il punto preciso della rottura.",
-      "fonti": [
-       "Lab TV"
-      ]
-     }
-    ],
-    "concordano": [
-     {
-      "testo": "Sospensione dell'acqua dalle 15 alle 17 nel distretto di via Avellino e piazza Castello per un guasto improvviso con una perdita.",
-      "fonti": [
-       "Cronache del Sannio",
-       "Ottopagine",
-       "Lab TV",
-       "NTR24",
-       "InfoSannio"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [
-     "Dove sia esattamente la rottura.",
-     "Se l'acqua tornerà regolare subito dopo le 17 o se serviranno più ore."
-    ],
-    "fonti": [
-     {
-      "nome": "Cronache del Sannio",
-      "titolo": "Guasto nella zona alta di Benevento, stop erogazione idrica: le strade interessate",
-      "url": "https://www.cronachedelsannio.it/sannionews24/guasto-zona-alta-benevento-stop-erogazione-idrica/",
-      "data": "23 ott, 14:16"
-     },
-     {
-      "nome": "Ottopagine",
-      "titolo": "Guasto a Benevento: due ore di stop all'acqua in diverse zone",
-      "url": "https://www.ottopagine.it/bn/attualita/441956/guasto-a-benevento-due-ore-di-stop-all-acqua-in-diverse-zone.shtml",
-      "data": "23 ott, 14:22"
-     },
-     {
-      "nome": "Lab TV",
-      "titolo": "Gesesa, ancora un guasto tra Via Avellino e Piazza Castello. Stop erogazione dalle 15 alle 17",
-      "url": "https://www.labtv.net/attualita/2026/10/23/gesesa-ancora-un-guasto-tra-via-avellino-e-piazza-castello-stop-erogazione-dalle-15-alle-17/",
-      "data": "23 ott, 14:10"
-     },
-     {
-      "nome": "NTR24",
-      "titolo": "Benevento, guasto alla rete idrica: sospensione dell’acqua dalle 15 alle 17 in numerose strade della città",
-      "url": "https://www.ntr24.tv/2026/10/23/benevento-guasto-alla-rete-idrica-sospensione-dellacqua-dalle-15-alle-17-in-numerose-strade-della-citta/",
-      "data": "23 ott, 14:08"
-     },
-     {
-      "nome": "InfoSannio",
-      "titolo": "Benevento. Interruzione idrica dalle 15 alle 17 nel distretto di Via Avellino e Piazza Castello",
-      "url": "https://www.infosannionews.it/associazioni/2026/benevento-interruzione-idrica-dalle-15-alle-17-nel-distretto-i-via-avellino-e-piazza-castello.html",
-      "data": "23 ott, 14:14"
-     }
-    ]
-   },
-   "foto": "acqua-4"
-  },
-  {
-   "id": "filippide-runners-maratone-monaco-chicago-napoli",
-   "titolo": "Maratone d'ottobre per la Filippide Runners: sei atleti al traguardo a Monaco, Chicago e Napoli",
-   "titolo_google": "Filippide Runners: sei atleti a Monaco, Chicago e Napoli",
-   "sintesi": "Sei atleti dell'ASD Filippide Runners hanno finito una maratona a ottobre: Nicola Bianco a Monaco in 2h44'29\" (record personale), Luigi Tedesco a Chicago in 2h54'11\" e quattro alla Neapolis Marathon di Napoli.",
-   "categoria": "sport",
-   "sport": "atletica",
-   "zona": "provincia",
-   "luogo": "Monaco, Chicago, Napoli",
-   "pubblicato": "2026-10-23T13:50:00+02:00",
-   "stato": "una_fonte",
-   "fonti": [
-    {
-     "nome": "Cronache del Sannio",
-     "url": "https://www.cronachedelsannio.it/sannionews24/filippide-runners-ottobre-atleti-traguardo/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Sei atleti dell'ASD Filippide Runners hanno concluso una maratona a ottobre, tra Monaco di Baviera, Chicago e Napoli.",
-      "fonti": [
-       "Cronache del Sannio"
-      ]
-     },
-     {
-      "testo": "Domenica 11 ottobre alla Marathon München, la 39ª edizione con 40.930 iscritti da 130 Paesi, Nicola Bianco ha chiuso in 2h44'29\": è il suo record personale e il primo tempo sotto le 2h45'. A Chicago, alla maratona, Luigi Tedesco ha corso in 2h54'11\": il giornale scrive che non è stata la gara sperata, perché il suo personale è molto più basso, ma finire una Major sotto le 3 ore resta un risultato di livello.",
-      "fonti": [
-       "Cronache del Sannio"
-      ]
-     },
-     {
-      "testo": "Domenica 18 ottobre alla 6ª Neapolis Marathon di Napoli, con partenza e arrivo in piazza del Plebiscito e circa 8.000 atleti da quasi 100 Paesi (vinta dal keniano Joel Kipsang Kositany in 2h12'32\"), la società ha avuto quattro arrivi: Emidio Inglese in 3h14'02\", Vito Tozzi in 3h35'38\" (record personale), Andrea Accarino in 4h19'36\" e Fernando Palumbo in 4h43'25\", questi ultimi due al loro esordio in maratona.",
-      "fonti": [
-       "Cronache del Sannio"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [],
-    "fonti": [
-     {
-      "nome": "Cronache del Sannio",
-      "titolo": "Filippide Runners: da Monaco a Napoli e Chicago, ottobre da sogno con sei atleti al traguardo",
-      "url": "https://www.cronachedelsannio.it/sannionews24/filippide-runners-ottobre-atleti-traguardo/",
-      "data": "23 ott, 13:50"
-     }
-    ]
-   },
-   "rilevante": false,
-   "immagine": "corsa",
-   "foto": "corsa-6"
-  },
-  {
    "id": "cusano-mutri-civitella-bus-air-deviati-sagra-castagna",
    "titolo": "Cusano Mutri, sabato 24 e 31 ottobre i bus AIR non passano da Civitella per la Sagra della Castagna",
    "titolo_google": "Cusano Mutri, bus AIR deviati a Civitella 24 e 31 ottobre",
@@ -4572,126 +3423,6 @@
    "foto": "autobus-5"
   },
   {
-   "id": "busgo-nuove-linee-sannio-roma-fiumicino-perugia-camerino",
-   "titolo": "Dal 9 novembre BusGo collega il Sannio con Roma, Fiumicino, Perugia e Camerino con due nuove linee",
-   "titolo_google": "BusGo, dal 9 novembre bus Sannio-Roma, Fiumicino, Camerino",
-   "sintesi": "Da lunedì 9 novembre 2026 BusGo avvia due linee dal Sannio: Benevento–Camerino (lunedì e venerdì) e San Giorgio del Sannio–Fiumicino (martedì, mercoledì e giovedì). I biglietti si comprano online su busgo.it.",
-   "categoria": "altro",
-   "zona": "provincia",
-   "immagine": "autobus",
-   "luogo": "Benevento, San Giorgio del Sannio",
-   "pubblicato": "2026-10-23T13:41:00+02:00",
-   "stato": "una_fonte",
-   "fonti": [
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/busgo-novembre-collegamenti-sannio-roma-fiumicino-perugia-camerino/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Da lunedì 9 novembre 2026 BusGo, un servizio di autobus a lunga percorrenza, avvia due nuove linee che collegano il Sannio con il Centro Italia: Roma, Fiumicino, Perugia e Camerino.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "La Benevento–Camerino va il lunedì e il venerdì. Parte da Benevento alle 5:00, ferma a Telese Terme, Dragoni, Caianello, Frosinone, Roma Tiburtina e Perugia e arriva a Camerino alle 11:50. Il ritorno parte da Camerino alle 14:00 e arriva a Benevento alle 21:05.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "La San Giorgio del Sannio–Fiumicino va il martedì, il mercoledì e il giovedì. Parte alle 5:20 da San Giorgio del Sannio, ferma a Benevento, Telese Terme, Dragoni, Caianello, Frosinone e Roma Tiburtina e arriva a Fiumicino alle 9:55. Il ritorno parte alle 16:35 e torna a San Giorgio del Sannio alle 21:20. La domenica pomeriggio c'è una corsa in più, con partenza da San Giorgio alle 17:20 e arrivo a Roma Tiburtina alle 20:55 e a Fiumicino alle 21:55.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "I biglietti si comprano e si prenotano sul sito www.busgo.it, scegliendo partenza, arrivo e giorno. Dopo il pagamento arriva un biglietto elettronico con un codice QR da mostrare al personale a bordo. Il giornale scrive che le linee possono servire in particolare gli studenti universitari fuori sede.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Quanto costano i biglietti: l'articolo letto non dà i prezzi.",
-     "Dove si trovano le fermate nelle città: l'articolo elenca solo le località."
-    ],
-    "fonti": [
-     {
-      "nome": "Anteprima24",
-      "titolo": "BusGo, due nuove linee per collegare il Sannio al Centro Italia",
-      "url": "https://www.anteprima24.it/benevento/busgo-novembre-collegamenti-sannio-roma-fiumicino-perugia-camerino/",
-      "data": "23 ott, 13:41"
-     }
-    ]
-   },
-   "rilevante": false,
-   "foto": "autobus-3"
-  },
-  {
-   "id": "benevento-megaparcheggio-abbonamento-commercianti-confesercenti",
-   "titolo": "Benevento, abbonamento mensile ridotto al Megaparcheggio di via del Pomerio per i commercianti",
-   "titolo_google": "Benevento, Megaparcheggio: abbonamento ridotto commercianti",
-   "sintesi": "Comune e Bemobi, la società che gestisce il Megaparcheggio di via del Pomerio, hanno concordato una tariffa mensile ridotta per gli operatori commerciali della città. Secondo NTR24 la riduzione è più bassa di quella chiesta da Confesercenti.",
-   "categoria": "altro",
-   "zona": "benevento",
-   "immagine": "parcheggio",
-   "luogo": "Benevento, via del Pomerio",
-   "pubblicato": "2026-10-23T12:26:00+02:00",
-   "stato": "una_fonte",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/23/confesercenti-soddisfatta-per-abbonamento-agevolato-agli-operatori-commerciali-presso-il-megaparcheggio/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Gli operatori commerciali di Benevento potranno avere un abbonamento mensile a tariffa ridotta al Megaparcheggio di via del Pomerio. L'accordo è tra l'Amministrazione comunale e Bemobi, la società che ha in concessione il parcheggio. Lo comunica Confesercenti Sannio, l'associazione dei commercianti, che si dice soddisfatta.",
-      "fonti": [
-       "NTR24"
-      ]
-     },
-     {
-      "testo": "Secondo NTR24 Confesercenti aveva chiesto uno sconto più grande, che non è stato ottenuto. L'articolo non dice quanto costi l'abbonamento ridotto né quale fosse il prezzo normale.",
-      "fonti": [
-       "NTR24"
-      ]
-     },
-     {
-      "testo": "Per averlo bisogna ritirare il modulo alla sede provinciale di Confesercenti, in via Ennio Goduti 27, e consegnarlo compilato agli uffici del parcheggio in via del Pomerio, che attivano la convenzione e la tariffa ridotta.",
-      "fonti": [
-       "NTR24"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "A quanto ammonta la tariffa ridotta e quella normale.",
-     "Da quando vale la convenzione e fino a quando si può fare domanda."
-    ],
-    "fonti": [
-     {
-      "nome": "NTR24",
-      "titolo": "Confesercenti soddisfatta per abbonamento agevolato agli operatori commerciali presso il Megaparcheggio",
-      "url": "https://www.ntr24.tv/2026/10/23/confesercenti-soddisfatta-per-abbonamento-agevolato-agli-operatori-commerciali-presso-il-megaparcheggio/",
-      "data": "23 ott, 12:26"
-     }
-    ]
-   },
-   "foto": "parcheggio-2"
-  },
-  {
    "id": "asl-benevento-enti-terzo-settore-case-comunita-20-novembre",
    "titolo": "ASL Benevento, avviso per gli enti del terzo settore nelle Case della Comunità: domande entro il 20 novembre",
    "titolo_google": "ASL Benevento, terzo settore: domande entro il 20 novembre",
@@ -4798,157 +3529,6 @@
    "immagine": "vaccini",
    "in_vigore_fino": "2026-10-31",
    "foto": "vaccini"
-  },
-  {
-   "id": "paduli-geieffe-polo-industriale-raee-inaugurazione",
-   "titolo": "Paduli, inaugurato il nuovo polo industriale della Geieffe per il riciclo dei rifiuti elettronici",
-   "titolo_google": "Paduli, inaugurato il polo Geieffe per il riciclo dei Raee",
-   "sintesi": "Venerdì 23 ottobre è stato inaugurato nella zona industriale di Paduli il nuovo stabilimento della Geieffe, azienda che tratta e recupera i Raee, i rifiuti di apparecchiature elettriche ed elettroniche. Presenti sindaci, Confindustria Benevento e la Regione.",
-   "categoria": "altro",
-   "zona": "fortore",
-   "luogo": "Paduli",
-   "pubblicato": "2026-10-23T11:59:00+02:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Cronache del Sannio",
-     "url": "https://www.cronachedelsannio.it/sannionews24/riciclo-raee-geieffe-inaugura-nuovo-polo-industriale/"
-    },
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/23/mastella-replica-allopposizione-dimissioni-vado-avanti-fino-al-prossimo-anno-perdera-anche-alle-prossime-elezioni/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Venerdì 23 ottobre 2026 è stato inaugurato il nuovo polo industriale della Geieffe, nella zona industriale di Paduli. L'azienda tratta e recupera i Raee, cioè i rifiuti di apparecchiature elettriche ed elettroniche, come vecchi elettrodomestici e computer.",
-      "fonti": [
-       "Cronache del Sannio",
-       "NTR24"
-      ]
-     },
-     {
-      "testo": "Hanno partecipato i sindaci di Paduli, Mimmo Vessichelli, e di Benevento, Clemente Mastella, il presidente di Confindustria Benevento Andrea Esposito e, per la Regione Campania, l'assessore Fulvio Bonavitacola e il consigliere Pellegrino Mastella. L'amministratore delegato, Michele Ferringo, ha detto che il progetto è nato cinque anni fa e vuole essere un modello anche a livello nazionale.",
-      "fonti": [
-       "Cronache del Sannio"
-      ]
-     },
-     {
-      "testo": "Esposito ha parlato di un investimento complesso da sostenere, intorno al quale si può costruire un «ecosistema molto produttivo». Bonavitacola ha sottolineato il valore di una nuova attività produttiva in un'area interna e ha detto che la raccolta dei Raee andrebbe incentivata, come avviene per i rifiuti urbani.",
-      "fonti": [
-       "Cronache del Sannio"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "L'inaugurazione del polo Geieffe a Paduli è avvenuta venerdì 23 ottobre.",
-      "fonti": [
-       "Cronache del Sannio",
-       "NTR24"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [
-     "Quanti posti di lavoro dà lo stabilimento e quanto è costato: l'articolo non lo dice."
-    ],
-    "fonti": [
-     {
-      "nome": "Cronache del Sannio",
-      "titolo": "Riciclo dei raee, la Geieffe inaugura il nuovo polo industriale",
-      "url": "https://www.cronachedelsannio.it/sannionews24/riciclo-raee-geieffe-inaugura-nuovo-polo-industriale/",
-      "data": "23 ott, 11:59"
-     },
-     {
-      "nome": "NTR24",
-      "titolo": "Mastella replica all’opposizione: ‘Dimissioni? Vado avanti fino al prossimo anno. Perderà anche alle prossime elezioni’",
-      "url": "https://www.ntr24.tv/2026/10/23/mastella-replica-allopposizione-dimissioni-vado-avanti-fino-al-prossimo-anno-perdera-anche-alle-prossime-elezioni/",
-      "data": "23 ott, 10:13"
-     }
-    ]
-   },
-   "immagine": "impianto-rifiuti",
-   "foto": "impianto-rifiuti-2"
-  },
-  {
-   "id": "telese-terme-furto-rame-ferrovia-domiciliari-revocati",
-   "titolo": "Telese Terme, il Tribunale revoca i domiciliari a un 42enne arrestato a luglio con l'accusa di furto di rame in una stazione",
-   "titolo_google": "Telese Terme, revocati i domiciliari al 42enne del furto di rame",
-   "sintesi": "Il Tribunale di Benevento ha revocato gli arresti domiciliari a un 42enne di Telese Terme, arrestato a luglio con l'accusa di furto aggravato di una cinquantina di chili di cavi di rame in una stazione ferroviaria. Ora ha l'obbligo di presentazione.",
-   "categoria": "cronaca",
-   "zona": "telesina",
-   "luogo": "Telese Terme",
-   "pubblicato": "2026-10-23T11:54:00+02:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/accusato-furto-50-chili-rame-42enne-lascia-domiciliari/"
-    },
-    {
-     "nome": "BeneventoNews24",
-     "url": "https://www.beneventonews24.it/2026/10/23/scarcerato-noto-pregiudicato-di-telese-terme-era-accusato-di-furto/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Il Tribunale di Benevento ha revocato gli arresti domiciliari a un 42enne di Telese Terme, arrestato a luglio con l'accusa di furto aggravato di rame in una stazione ferroviaria. Al posto dei domiciliari gli ha imposto l'obbligo di presentarsi alla polizia giudiziaria. La Procura aveva dato parere contrario.",
-      "fonti": [
-       "Anteprima24",
-       "BeneventoNews24"
-      ]
-     },
-     {
-      "testo": "Secondo l'accusa, l'uomo era stato arrestato in flagranza, cioè sul fatto, dai Carabinieri della stazione locale. Si sarebbe impossessato di cavi di rame e ne aveva già caricati in auto circa cinquanta chili, quando i militari sono intervenuti e hanno impedito che continuasse. Il reato è aggravato perché riguarda un'infrastruttura pubblica, quella ferroviaria.",
-      "fonti": [
-       "Anteprima24",
-       "BeneventoNews24"
-      ]
-     },
-     {
-      "testo": "La decisione è arrivata dopo la richiesta dei difensori dell'uomo. Si tratta di una misura cautelare, cioè provvisoria, e non di un giudizio sulla colpevolezza: l'uomo è accusato e per lui vale la presunzione di innocenza.",
-      "fonti": [
-       "Anteprima24",
-       "BeneventoNews24"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "Il Tribunale ha revocato i domiciliari su richiesta dei difensori, con la Procura contraria, e ha imposto l'obbligo di presentazione; l'accusa è furto aggravato di circa 50 chili di rame in una stazione, con arresto a luglio.",
-      "fonti": [
-       "Anteprima24",
-       "BeneventoNews24"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [
-     "Quando comincia il processo.",
-     "In quale stazione è avvenuto il fatto: gli articoli non lo dicono."
-    ],
-    "fonti": [
-     {
-      "nome": "Anteprima24",
-      "titolo": "Accusato del furto di 50 chili di rame, 42enne lascia i domiciliari",
-      "url": "https://www.anteprima24.it/benevento/accusato-furto-50-chili-rame-42enne-lascia-domiciliari/",
-      "data": "23 ott, 11:51"
-     },
-     {
-      "nome": "BeneventoNews24",
-      "titolo": "Scarcerato noto pregiudicato di Telese Terme: era accusato di furto",
-      "url": "https://www.beneventonews24.it/2026/10/23/scarcerato-noto-pregiudicato-di-telese-terme-era-accusato-di-furto/",
-      "data": "23 ott, 11:54"
-     }
-    ]
-   }
   },
   {
    "id": "benevento-corsa-don-pompilio-divieti-sosta-24-ottobre",
@@ -5282,194 +3862,6 @@
    "foto": "basket"
   },
   {
-   "id": "cusano-mutri-erasmus-stem-girls-ic-kennedy",
-   "titolo": "Cusano Mutri, all’istituto Kennedy si chiude la settimana del progetto Erasmus+ STEM Girls",
-   "titolo_google": "Cusano Mutri, scuola Kennedy: progetto Erasmus+ STEM Girls",
-   "sintesi": "Nei giorni scorsi l’istituto comprensivo Kennedy di Cusano Mutri ha ospitato delegazioni dalla Polonia e dalla Turchia per la quinta mobilità del progetto europeo Erasmus+ STEM Girls, sulle materie scientifiche per le ragazze.",
-   "categoria": "altro",
-   "zona": "telesina",
-   "immagine": "scuola",
-   "luogo": "Cusano Mutri",
-   "pubblicato": "2026-10-23T09:01:00+02:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/23/concluso-alli-c-j-f-kennedy-di-cusano-mutri-il-progetto-erasmus-stem-girls/"
-    },
-    {
-     "nome": "Fremondoweb",
-     "url": "https://www.fremondoweb.com/notizie-dalla-valle-telesina/cusano-mutri-ic-kennedy-concluso-il-progetto-erasmus-stem-girls/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Nei giorni scorsi l'istituto comprensivo «J. F. Kennedy» di Cusano Mutri ha ospitato la quinta tappa di scambio del progetto europeo Erasmus+ «STEM Girls – Rockets are being launched». La scuola è la capofila e coordina il lavoro delle scuole europee coinvolte. STEM sono le materie scientifiche e tecniche: scienza, tecnologia, ingegneria e matematica; il progetto punta a ridurre le differenze tra ragazzi e ragazze in questi studi.",
-      "fonti": [
-       "NTR24",
-       "Fremondoweb"
-      ]
-     },
-     {
-      "testo": "Per le prime quattro tappe, nell'anno scolastico scorso, i contatti si erano svolti a distanza. Stavolta a Cusano Mutri sono arrivate le delegazioni delle città di Tychy, in Polonia, e di Izmir, in Turchia, per una settimana di scambio e lezioni. Si è cominciato con una cerimonia di benvenuto nella sede della scuola, con il Comune e la comunità locale.",
-      "fonti": [
-       "NTR24",
-       "Fremondoweb"
-      ]
-     },
-     {
-      "testo": "Le alunne dell'istituto hanno guidato i laboratori su robotica educativa, coding (programmazione) e stampa 3D. C'è stato anche un «Cultural Lunch»: i ragazzi hanno preparato piatti tipici del posto e ogni scuola ha presentato un prodotto simbolo della propria terra. Le delegazioni hanno poi visitato la Città della Scienza di Napoli e la Reggia di Caserta, con l'Acquedotto Carolino.",
-      "fonti": [
-       "NTR24",
-       "Fremondoweb"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Quante studentesse e docenti hanno partecipato e quali sono le prossime tappe del progetto: i due articoli, che riprendono lo stesso testo, non lo dicono."
-    ],
-    "fonti": [
-     {
-      "nome": "NTR24",
-      "titolo": "Concluso all’I.C. “J. F. Kennedy” di Cusano Mutri il Progetto Erasmus+ “STEM Girls”",
-      "url": "https://www.ntr24.tv/2026/10/23/concluso-alli-c-j-f-kennedy-di-cusano-mutri-il-progetto-erasmus-stem-girls/",
-      "data": "23 ott, 08:35"
-     },
-     {
-      "nome": "Fremondoweb",
-      "titolo": "Cusano Mutri, IC Kennedy: concluso il progetto Erasmus+ STEM Girls",
-      "url": "https://www.fremondoweb.com/notizie-dalla-valle-telesina/cusano-mutri-ic-kennedy-concluso-il-progetto-erasmus-stem-girls/",
-      "data": "23 ott, 09:01"
-     }
-    ]
-   },
-   "foto": "scuola-7"
-  },
-  {
-   "id": "benevento-san-pio-sindacati-lettera-fico",
-   "titolo": "Benevento, ospedale San Pio: i sindacati scrivono a Fico contro la direttrice generale e minacciano un presidio alla Regione",
-   "titolo_google": "Benevento, San Pio: i sindacati scrivono a Fico",
-   "sintesi": "FP CGIL, UIL FP e USB hanno mandato una lettera aperta a Roberto Fico sull'azienda ospedaliera San Pio di Benevento: accusano la direttrice generale di non aprire al dialogo. Se non arrivano risposte, portano la protesta a Napoli, sotto la Regione.",
-   "categoria": "altro",
-   "zona": "benevento",
-   "immagine": "protesta",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-23T07:36:00+02:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/23/san-pio-sindacati-a-fico-pronti-al-presidio-sotto-la-sede-della-regione-se-non-arriveranno-risposte-concrete-dalla-diggi/"
-    },
-    {
-     "nome": "Benevento Giornale",
-     "url": "https://www.beneventogiornale.com/2026/10/23/segreterie-sindacali-cgil-uil-usb-richiesta-urgente-di-intervento-istituzionale-sulla-gestione-dellaorn-san-pio-di-benevento/"
-    },
-    {
-     "nome": "Cronache del Sannio",
-     "url": "https://www.cronachedelsannio.it/sannionews24/sindacati-lettera-fico-ospedale-sanpio-benevento/"
-    },
-    {
-     "nome": "Il Mattino",
-     "url": "https://www.ilmattino.it/benevento/benevento_ospedale_rummo_sindacati_chiedono_incontro_con_la_manager_se_non_saremo_ricevuti_protesteremo_a_napoli-9844426.html"
-    },
-    {
-     "nome": "Il Sannio Quotidiano",
-     "url": "https://www.ilsannioquotidiano.it/2026/10/24/ospedale-san-pio-si-inasprisce-lo-scontro-sindacati-chiedono-intervento-di-fico/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "I sindacati dei dipendenti dell'ospedale San Pio di Benevento rilanciano la protesta. FP CGIL, UIL FP e USB hanno scritto una lettera aperta a Roberto Fico e gli chiedono di intervenire subito sulla gestione dell'azienda ospedaliera.",
-      "fonti": [
-       "NTR24",
-       "Benevento Giornale"
-      ]
-     },
-     {
-      "testo": "Nella lettera i sindacati accusano la direttrice generale, Maria Morgante, di chiudersi al dialogo: dicono che da gennaio 2026 ignora le segnalazioni e le richieste del personale. A firmare sono Raffa per la FP CGIL, De Luca per la UIL FP e Ruggiero per l'USB.",
-      "fonti": [
-       "NTR24",
-       "Benevento Giornale"
-      ]
-     },
-     {
-      "testo": "Tra i problemi elencati ci sono la carenza di personale e i carichi di lavoro pesanti, la stabilizzazione dei precari che non è partita e la mancanza di percorsi per far crescere i dipendenti. I sindacati citano poi la forte pressione sul Pronto soccorso, con sovraffollamento per operatori e pazienti, e disservizi di ogni giorno: dal parcheggio gestito in modo caotico a una mensa che non è garantita nemmeno a chi fa turni lunghi.",
-      "fonti": [
-       "NTR24",
-       "Benevento Giornale"
-      ]
-     },
-     {
-      "testo": "La lettera arriva dopo un sit-in davanti all'ospedale, svolto nei giorni scorsi, a cui hanno partecipato molti lavoratori. Se la richiesta a Fico resterà senza risposta, i tre sindacati annunciano di voler spostare la protesta a Napoli, con un nuovo sit-in sotto la sede della Regione Campania.",
-      "fonti": [
-       "NTR24",
-       "Benevento Giornale"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "La lettera aperta a Fico di FP CGIL, UIL FP e USB, le accuse alla direttrice generale e il possibile sit-in sotto la Regione a Napoli.",
-      "fonti": [
-       "NTR24",
-       "Benevento Giornale",
-       "Cronache del Sannio",
-       "Il Mattino",
-       "Il Sannio Quotidiano"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [
-     "Cosa risponderanno la direzione dell'ospedale e la Regione.",
-     "Quando si farebbe l'eventuale sit-in a Napoli.",
-     "I due giornali riportano il comunicato dei sindacati: la versione della direzione generale non è ancora uscita."
-    ],
-    "fonti": [
-     {
-      "nome": "NTR24",
-      "titolo": "San Pio, sindacati a Fico: “Pronti al presidio sotto la sede della Regione se non arriveranno risposte concrete dalla diggi”",
-      "url": "https://www.ntr24.tv/2026/10/23/san-pio-sindacati-a-fico-pronti-al-presidio-sotto-la-sede-della-regione-se-non-arriveranno-risposte-concrete-dalla-diggi/",
-      "data": "23 ott, 07:20"
-     },
-     {
-      "nome": "Benevento Giornale",
-      "titolo": "Segreterie Sindacali CGIL, UIL ,USB :”Richiesta urgente di intervento istituzionale sulla gestione dell’AORN “San Pio” di Benevento”",
-      "url": "https://www.beneventogiornale.com/2026/10/23/segreterie-sindacali-cgil-uil-usb-richiesta-urgente-di-intervento-istituzionale-sulla-gestione-dellaorn-san-pio-di-benevento/",
-      "data": "23 ott, 07:36"
-     },
-     {
-      "nome": "Cronache del Sannio",
-      "titolo": "Sindacati scrivono a Fico: “Senza risposte dg Morgante pronti a sit-in sotto la Regione”",
-      "url": "https://www.cronachedelsannio.it/sannionews24/sindacati-lettera-fico-ospedale-sanpio-benevento/",
-      "data": "23 ott, 08:57"
-     },
-     {
-      "nome": "Il Mattino",
-      "titolo": "Benevento, ospedale Rummo. Sindacati chiedono incontro con la manager: «Se non saremo ricevuti protesteremo a Napoli»",
-      "url": "https://www.ilmattino.it/benevento/benevento_ospedale_rummo_sindacati_chiedono_incontro_con_la_manager_se_non_saremo_ricevuti_protesteremo_a_napoli-9844426.html",
-      "data": "24 ott, 00:10"
-     },
-     {
-      "nome": "Il Sannio Quotidiano",
-      "titolo": "Ospedale ‘San Pio’, si inasprisce lo scontro: sindacati chiedono intervento di Fico",
-      "url": "https://www.ilsannioquotidiano.it/2026/10/24/ospedale-san-pio-si-inasprisce-lo-scontro-sindacati-chiedono-intervento-di-fico/",
-      "data": "24 ott, 07:00"
-     }
-    ]
-   },
-   "foto": "protesta-6"
-  },
-  {
    "id": "accademia-volley-benevento-serie-c-koala-bears-24-ottobre",
    "titolo": "Pallavolo, Serie C femminile: la Pasta Rummo Accademia vince 3-0 a San Giuseppe Vesuviano",
    "titolo_google": "Volley, Koala Bears-Accademia Benevento 0-3: vince l'Accademia",
@@ -5658,10 +4050,14 @@
    "categoria": "politica",
    "zona": "benevento",
    "luogo": "Benevento",
-   "pubblicato": "2026-10-25T21:25:00+01:00",
+   "pubblicato": "2026-10-26T00:05:00+01:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
+    {
+     "nome": "Il Mattino (26/10)",
+     "url": "https://www.ilmattino.it/benevento/la_piazza_anti_mastella_l_opposizione_scende_in_campo_contro_il_primo_cittadino_il_sindaco_si_dimetta-9848234.html"
+    },
     {
      "nome": "Ottopagine",
      "url": "https://www.ottopagine.it/bn/politica/441885/benevento-l-opposizione-presenta-la-mozione-di-sfiducia-per-il-sindaco-mastella.shtml"
@@ -5723,6 +4119,13 @@
        "Ottopagine (25/10)",
        "Cronache del Sannio (25/10)",
        "InfoSannio (25/10)"
+      ],
+      "giorno": "2026-10-25"
+     },
+     {
+      "testo": "Il Mattino nota che al corteo non c'era tutta la minoranza: mancavano gli esponenti del Movimento 5 Stelle e i consiglieri Rosetta De Stasio, Gerardo Giorgione e Luigia Piccaluga. Il Pd dice di lavorare con altri movimenti civici e partiti del centrosinistra a una proposta diversa per le prossime elezioni comunali. Mastella ha ripetuto che porterà a termine il mandato: «Se un sindaco deve andare a casa non lo decidono alcuni consiglieri comunali, ma i cittadini beneventani».",
+      "fonti": [
+       "Il Mattino (26/10)"
       ],
       "giorno": "2026-10-25"
      },
@@ -5906,6 +4309,12 @@
       "titolo": "“Mastella si dimetta”: parte la mobilitazione verso le elezioni",
       "url": "https://www.cronachedelsannio.it/sannionews24/dimissioni-mastella-parte-mobilitazione-verso-elezioni/",
       "data": "25 ott, 21:09"
+     },
+     {
+      "nome": "Il Mattino (26/10)",
+      "titolo": "La piazza anti-Mastella, l'opposizione scende in campo contro il primo cittadino: «Il sindaco si dimetta»",
+      "url": "https://www.ilmattino.it/benevento/la_piazza_anti_mastella_l_opposizione_scende_in_campo_contro_il_primo_cittadino_il_sindaco_si_dimetta-9848234.html",
+      "data": "26 ott, 00:05"
      }
     ],
     "aggiornamento": {
@@ -6810,166 +5219,6 @@
     }
    },
    "foto": "strada-chiusa"
-  },
-  {
-   "id": "vaccini-farmacie-asl-benevento-avellino-alaia",
-   "titolo": "Vaccini in farmacia, Alaia denuncia le dosi ferme; ASL, Federfarma e farmacisti: antinfluenzali già disponibili in provincia di Benevento",
-   "titolo_google": "Vaccini antinfluenzali in farmacia, l'ASL: dosi disponibili",
-   "sintesi": "Venerdì 23 ottobre l'ASL Benevento, Federfarma e l'Ordine dei farmacisti hanno risposto alla denuncia del consigliere regionale Alaia: nelle farmacie convenzionate della provincia i vaccini antinfluenzali sono già disponibili e non ci sono impedimenti.",
-   "categoria": "altro",
-   "zona": "provincia",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-23T10:49:00+02:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/22/vaccini-in-farmacia-forniture-bloccate-ad-avellino-e-benevento-alaia-denuncia-le-asl-chiariscano-perche-non-arrivano-le-dosi/"
-    },
-    {
-     "nome": "Lab TV",
-     "url": "https://www.labtv.net/attualita/2026/10/22/vaccini-in-farmacia-forniture-bloccate-ad-avellino-e-benevento-alaia-denuncia-le-asl-chiariscano-perche-non-arrivano-le-dosi/"
-    },
-    {
-     "nome": "NTR24 (23/10)",
-     "url": "https://www.ntr24.tv/2026/10/23/vaccini-antinfluenzali-gia-disponibili-nelle-farmacie-della-provincia-di-benevento/"
-    },
-    {
-     "nome": "Ottopagine",
-     "url": "https://www.ottopagine.it/bn/attualita/441921/benevento-vaccini-antinfluenzali-gia-disponibili-nelle-farmacie.shtml"
-    },
-    {
-     "nome": "Gazzetta di Benevento",
-     "url": "https://www.gazzettabenevento.it/it/nella-provincia-di-benevento-i-vaccini-antinfluenzali-destinati-alla-somministrazione-farmacia-sono"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Venerdì 23 ottobre l'ASL Benevento, Federfarma Benevento e l'Ordine dei farmacisti della provincia hanno diffuso un comunicato comune per rispondere alle notizie su presunti problemi nelle forniture. Scrivono che nella provincia di Benevento i vaccini antinfluenzali da fare in farmacia sono già disponibili presso le farmacie convenzionate, per la campagna 2026/2027, e che non risultano impedimenti alle vaccinazioni.",
-      "fonti": [
-       "NTR24 (23/10)",
-       "Ottopagine",
-       "Gazzetta di Benevento"
-      ],
-      "giorno": "2026-10-23"
-     },
-     {
-      "testo": "Il comunicato spiega che dosi e distribuzione sono state assicurate secondo la programmazione regionale e gli accordi con le categorie, in base alla delibera regionale n. 355 del 9 luglio 2026 e all'Accordo integrativo regionale del 3 settembre 2026. ASL, Federfarma e Ordine dicono di lavorare insieme e di controllare le scorte per tutta la campagna, per rispondere a nuove necessità. Ricordano anche che il 20 ottobre è partito, con le farmacie, lo screening oncologico per colon-retto, mammella e cervice uterina.",
-      "fonti": [
-       "NTR24 (23/10)"
-      ],
-      "giorno": "2026-10-23"
-     },
-     {
-      "testo": "Giovedì 22 ottobre il consigliere regionale Enzo Alaia, capogruppo di Casa Riformista – Noi di Centro, ha denunciato che le ASL di Benevento e di Avellino non stanno consegnando i vaccini alle farmacie convenzionate. Secondo lui le dosi sono invece arrivate regolarmente ai medici di famiglia. Alaia chiede ai vertici delle due ASL di spiegare quali ostacoli, organizzativi o amministrativi, bloccano le consegne.",
-      "fonti": [
-       "NTR24",
-       "Lab TV"
-      ],
-      "giorno": "2026-10-22"
-     },
-     {
-      "testo": "Il contesto è la «Farmacia dei Servizi», il progetto con cui la Regione Campania porta alcune prestazioni gratuite nelle farmacie: la delibera regionale n. 355 del 9 luglio 2026 è stata approvata insieme a Federfarma e Assofarm Campania. Tra le prestazioni ci sono l'antinfluenzale per gli over 65, il vaccino anti-HPV per i 14-15enni e gli screening per l'epatite C e del cuore.",
-      "fonti": [
-       "NTR24",
-       "Lab TV"
-      ],
-      "giorno": "2026-10-22"
-     },
-     {
-      "testo": "Alaia dice che senza le dosi il piano rischia di restare sulla carta in Irpinia e nel Sannio, dove gli ospedali sono lontani e mancano medici di base. Il presidente dell'Ordine dei medici di Avellino, Sellitto, secondo l'articolo riconosce queste difficoltà. Il consigliere chiede tempi certi per le consegne e aggiunge che la sola ASL di Avellino non ha ancora attivato in farmacia lo screening del colon-retto.",
-      "fonti": [
-       "NTR24",
-       "Lab TV"
-      ],
-      "giorno": "2026-10-22"
-     }
-    ],
-    "concordano": [
-     {
-      "testo": "La denuncia di Alaia, e le tre richieste alle ASL: spiegazioni, responsabilità, tempi certi per le consegne.",
-      "fonti": [
-       "NTR24",
-       "Lab TV"
-      ]
-     }
-    ],
-    "divergono": [
-     {
-      "testo": "Alaia, il 22 ottobre, dice che le ASL di Benevento e Avellino non consegnano le dosi alle farmacie; il 23 ottobre l'ASL Benevento, con Federfarma e l'Ordine dei farmacisti, scrive che in provincia di Benevento le dosi sono già nelle farmacie. Per Benevento vale il comunicato dell'ASL, che è la fonte che gestisce la distribuzione.",
-      "fonti": [
-       "NTR24",
-       "NTR24 (23/10)"
-      ]
-     }
-    ],
-    "non_si_sa": [
-     "Se Alaia replica al comunicato.",
-     "Cosa succede ad Avellino, che il comunicato non riguarda."
-    ],
-    "fonti": [
-     {
-      "nome": "NTR24",
-      "titolo": "Vaccini in farmacia, forniture bloccate ad Avellino e Benevento. Alaia denuncia: «Le ASL chiariscano perché non arrivano le dosi»",
-      "url": "https://www.ntr24.tv/2026/10/22/vaccini-in-farmacia-forniture-bloccate-ad-avellino-e-benevento-alaia-denuncia-le-asl-chiariscano-perche-non-arrivano-le-dosi/",
-      "data": "22 ott, 09:59"
-     },
-     {
-      "nome": "Lab TV",
-      "titolo": "Vaccini in farmacia, forniture bloccate ad Avellino e Benevento. Alaia denuncia: «Le ASL chiariscano perché non arrivano le dosi»",
-      "url": "https://www.labtv.net/attualita/2026/10/22/vaccini-in-farmacia-forniture-bloccate-ad-avellino-e-benevento-alaia-denuncia-le-asl-chiariscano-perche-non-arrivano-le-dosi/",
-      "data": "22 ott, 09:47"
-     },
-     {
-      "nome": "NTR24 (23/10)",
-      "titolo": "Vaccini antinfluenzali già disponibili nelle farmacie della provincia di Benevento",
-      "url": "https://www.ntr24.tv/2026/10/23/vaccini-antinfluenzali-gia-disponibili-nelle-farmacie-della-provincia-di-benevento/",
-      "data": "23 ott, 10:49"
-     },
-     {
-      "nome": "Ottopagine",
-      "titolo": "Provincia Benevento: vaccini antinfluenzali già disponibili nelle farmacie",
-      "url": "https://www.ottopagine.it/bn/attualita/441921/benevento-vaccini-antinfluenzali-gia-disponibili-nelle-farmacie.shtml",
-      "data": "23 ott, 11:04"
-     },
-     {
-      "nome": "Gazzetta di Benevento",
-      "titolo": "Nella provincia di Benevento i vaccini antinfluenzali destinati alla somministrazione in farmacia sono già disponibili",
-      "url": "https://www.gazzettabenevento.it/it/nella-provincia-di-benevento-i-vaccini-antinfluenzali-destinati-alla-somministrazione-farmacia-sono",
-      "data": "23 ott, 10:45"
-     }
-    ],
-    "aggiornamento": {
-     "testo": "Venerdì 23 ottobre l'ASL Benevento, Federfarma e l'Ordine dei farmacisti hanno comunicato che i vaccini antinfluenzali sono già disponibili nelle farmacie convenzionate della provincia, rispondendo alla denuncia di Alaia.",
-     "fonti": [
-      "NTR24 (23/10)",
-      "Ottopagine"
-     ],
-     "quando": "2026-10-23T11:11+02:00"
-    },
-    "cronologia": [
-     {
-      "data": "22 ottobre",
-      "fatto": "Alaia denuncia che le ASL di Benevento e Avellino non consegnano i vaccini alle farmacie.",
-      "fonti": [
-       "NTR24",
-       "Lab TV"
-      ]
-     },
-     {
-      "data": "23 ottobre",
-      "fatto": "ASL Benevento, Federfarma e Ordine dei farmacisti: vaccini già disponibili nelle farmacie convenzionate della provincia.",
-      "fonti": [
-       "NTR24 (23/10)",
-       "Ottopagine"
-      ]
-     }
-    ]
-   },
-   "immagine": "vaccini",
-   "foto": "vaccini-5"
   },
   {
    "id": "benevento-mastella-appello-no-acquisti-panico-spostamenti",
@@ -8082,255 +6331,6 @@
     ]
    },
    "foto": "pasta"
-  },
-  {
-   "id": "pago-veiano-lite-ferito-marito",
-   "titolo": "Pago Veiano, 72enne accoltellato in casa: la moglie di 55 anni, arrestata per tentato omicidio, va ai domiciliari",
-   "titolo_google": "Pago Veiano, 72enne accoltellato: la moglie ai domiciliari",
-   "sintesi": "A Pago Veiano un pensionato di 72 anni è stato ferito con un coltello durante una lite con la moglie, di 55 anni e origine polacca. Il giudice ha convalidato l'arresto per tentato omicidio e ha mandato la donna ai domiciliari. L'uomo è ricoverato al San Pio, in condizioni stazionarie e non in pericolo di vita.",
-   "categoria": "cronaca",
-   "zona": "fortore",
-   "luogo": "Pago Veiano",
-   "pubblicato": "2026-10-23T00:10:00+02:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Ottopagine",
-     "url": "https://www.ottopagine.it/bn/cronaca/441559/litigano-poi-lei-accoltella-il-marito-arrestata-per-tentato-omicidio.shtml"
-    },
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/lite-familiare-sangue-ferito-fermata/"
-    },
-    {
-     "nome": "BeneventoNews24",
-     "url": "https://www.beneventonews24.it/2026/10/20/pago-veiano-accoltella-il-marito-al-torace-e-alladdome-55enne-arrestata-per-tentato-omicidio/"
-    },
-    {
-     "nome": "Il Mattino",
-     "url": "https://www.ilmattino.it/benevento/pago_veiano_accoltella_marito_dopo_la_lite_carcere-9837727.html"
-    },
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/20/pago-veiano-accoltella-il-marito-durante-una-lite-arrestata-55enne/"
-    },
-    {
-     "nome": "Cronache del Sannio",
-     "url": "https://www.cronachedelsannio.it/sannionews24/accoltella-marito-arrestata-55enne-pago-veiano/"
-    },
-    {
-     "nome": "Lab TV",
-     "url": "https://www.labtv.net/cronaca/2026/10/20/lite-familiare-finisce-nel-sangue-moglie-accoltella-il-marito-a-pago-veiano/"
-    },
-    {
-     "nome": "Ottopagine (22/10)",
-     "url": "https://www.ottopagine.it/bn/cronaca/441834/le-coltellate-abbiamo-litigato-lui-ha-un-certo-carattere-la-55enne-si-difende.shtml"
-    },
-    {
-     "nome": "Il Mattino (23/10)",
-     "url": "https://www.ilmattino.it/benevento/benevento_colpisce_il_marito_con_coltello_da_cucina_la_55enne_sylwia_janicka_finisce_ai_domiciliari-9842198.html"
-    }
-   ],
-   "articolo": {
-    "cronologia": [
-     {
-      "data": "sera/notte 19-20 ottobre",
-      "fatto": "Lite in casa a Pago Veiano; l'uomo è ferito al torace e all'addome, arrivano 118 e Carabinieri.",
-      "fonti": [
-       "Il Mattino",
-       "Ottopagine",
-       "NTR24"
-      ]
-     },
-     {
-      "data": "20 ottobre",
-      "fatto": "La donna viene portata nel carcere di contrada Capodimonte su disposizione del sostituto procuratore; il marito, operato al San Pio, migliora.",
-      "fonti": [
-       "Il Mattino",
-       "Ottopagine"
-      ]
-     },
-     {
-      "data": "22 ottobre",
-      "fatto": "Interrogatorio davanti al gip: la donna racconta la lite; il pm chiede che resti in carcere, la difesa nessuna misura.",
-      "fonti": [
-       "Ottopagine (22/10)"
-      ]
-     },
-     {
-      "data": "22 ottobre",
-      "fatto": "Il giudice convalida l'arresto e dispone i domiciliari; la donna lascia il carcere.",
-      "fonti": [
-       "Il Mattino (23/10)"
-      ]
-     }
-    ],
-    "concordano": [
-     {
-      "testo": "Lite tra marito e moglie a Pago Veiano; l'uomo, ferito da una lama al torace e all'addome, è stato portato al San Pio; la donna di 55 anni, originaria della Polonia, è stata arrestata dai Carabinieri con l'ipotesi di tentato omicidio.",
-      "fonti": [
-       "Ottopagine",
-       "Il Mattino",
-       "NTR24",
-       "BeneventoNews24",
-       "Cronache del Sannio",
-       "Lab TV"
-      ]
-     },
-     {
-      "testo": "L'uomo ha 72 anni, è stato curato e operato al San Pio e le sue condizioni sono migliorate.",
-      "fonti": [
-       "Ottopagine",
-       "Il Mattino",
-       "Lab TV"
-      ]
-     }
-    ],
-    "divergono": [
-     {
-      "testo": "Quando: tarda serata di lunedì (Il Mattino, Ottopagine), «durante la notte» (NTR24, Cronache del Sannio, che riprende l'Ansa), «ieri sera» (Lab TV). Anteprima24 dice che anche la donna sarebbe rimasta ferita in modo lieve: gli altri non lo scrivono.",
-      "fonti": [
-       "Il Mattino",
-       "Ottopagine",
-       "NTR24",
-       "Cronache del Sannio",
-       "Lab TV",
-       "Anteprima24"
-      ]
-     }
-    ],
-    "non_si_sa": [
-     "Il motivo della lite: i giornali scrivono solo che era molto accesa.",
-     "Quanto tempo resterà ricoverato il marito."
-    ],
-    "fonti": [
-     {
-      "nome": "Ottopagine",
-      "titolo": "Litigano, poi lei accoltella il marito: arrestata per tentato omicidio",
-      "url": "https://www.ottopagine.it/bn/cronaca/441559/litigano-poi-lei-accoltella-il-marito-arrestata-per-tentato-omicidio.shtml",
-      "data": "20 ott, 11:04"
-     },
-     {
-      "nome": "Anteprima24",
-      "titolo": "Lite familiare finisce nel sangue: lui ferito all’addome, lei in stato di fermo",
-      "url": "https://www.anteprima24.it/benevento/lite-familiare-sangue-ferito-fermata/",
-      "data": "20 ott, 11:34"
-     },
-     {
-      "nome": "BeneventoNews24",
-      "titolo": "Pago Veiano, accoltella il marito al torace e all’addome: 55enne arrestata per tentato omicidio",
-      "url": "https://www.beneventonews24.it/2026/10/20/pago-veiano-accoltella-il-marito-al-torace-e-alladdome-55enne-arrestata-per-tentato-omicidio/",
-      "data": "20 ott"
-     },
-     {
-      "nome": "Il Mattino",
-      "titolo": "Accoltella il marito dopo la lite: 55enne in carcere, l'uomo è in codice rosso all’ospedale San Pio",
-      "url": "https://www.ilmattino.it/benevento/pago_veiano_accoltella_marito_dopo_la_lite_carcere-9837727.html",
-      "data": "21 ott, 00:15"
-     },
-     {
-      "nome": "NTR24",
-      "titolo": "Pago Veiano, accoltella il marito durante una lite: arrestata 55enne",
-      "url": "https://www.ntr24.tv/2026/10/20/pago-veiano-accoltella-il-marito-durante-una-lite-arrestata-55enne/",
-      "data": "20 ott"
-     },
-     {
-      "nome": "Cronache del Sannio",
-      "titolo": "Accoltella il marito: arrestata 55enne a Pago Veiano",
-      "url": "https://www.cronachedelsannio.it/sannionews24/accoltella-marito-arrestata-55enne-pago-veiano/",
-      "data": "20 ott"
-     },
-     {
-      "nome": "Lab TV",
-      "titolo": "Lite familiare finisce nel sangue: moglie accoltella il marito a Pago Veiano",
-      "url": "https://www.labtv.net/cronaca/2026/10/20/lite-familiare-finisce-nel-sangue-moglie-accoltella-il-marito-a-pago-veiano/",
-      "data": "20 ott"
-     },
-     {
-      "nome": "Ottopagine (22/10)",
-      "titolo": "Le coltellate, abbiamo litigato, lui ha un certo carattere: la 55enne si difende",
-      "url": "https://www.ottopagine.it/bn/cronaca/441834/le-coltellate-abbiamo-litigato-lui-ha-un-certo-carattere-la-55enne-si-difende.shtml",
-      "data": "22 ott, 12:38"
-     },
-     {
-      "nome": "Il Mattino (23/10)",
-      "titolo": "Benevento, colpisce il marito con coltello da cucina: la 55enne [nome omesso] finisce ai domiciliari",
-      "url": "https://www.ilmattino.it/benevento/benevento_colpisce_il_marito_con_coltello_da_cucina_la_55enne_sylwia_janicka_finisce_ai_domiciliari-9842198.html",
-      "data": "23 ott, 00:10"
-     }
-    ],
-    "racconto": [
-     {
-      "testo": "Giovedì 22 ottobre il giudice per le indagini preliminari ha convalidato l'arresto della donna e l'ipotesi di tentato omicidio, ma ha deciso che aspetti il processo agli arresti domiciliari, in un'altra abitazione di cui ha la disponibilità. La donna ha lasciato il carcere di contrada Capodimonte. Il marito è ancora ricoverato al San Pio: secondo Il Mattino le sue condizioni sono stazionarie e non è in pericolo di vita.",
-      "fonti": [
-       "Il Mattino (23/10)"
-      ],
-      "giorno": "2026-10-22"
-     },
-     {
-      "testo": "Giovedì 22 ottobre la donna è comparsa in carcere davanti al giudice per le indagini preliminari. Assistita dal suo avvocato, ha detto di non ricordare tutto con chiarezza: secondo la sua versione c'è stata una lite, cominciata per il carattere del marito e poi degenerata in una colluttazione, durante la quale lo ha colpito all'addome e al torace con un coltello da cucina e si è ferita a un braccio. Il pubblico ministero ha chiesto che resti in carcere, la difesa che non le venga applicata nessuna misura. Secondo Il Mattino ha detto di averlo colpito una volta sola e non due come le contesta l'accusa.",
-      "fonti": [
-       "Ottopagine (22/10)",
-       "Il Mattino (23/10)"
-      ],
-      "giorno": "2026-10-22"
-     },
-     {
-      "testo": "Un uomo di 72 anni è stato ferito con un coltello dalla moglie, una donna di 55 anni di origine polacca, durante una lite nella loro casa di Pago Veiano. Lei è stata arrestata dai Carabinieri con l'ipotesi di reato di tentato omicidio ed è stata portata in carcere a Benevento.",
-      "fonti": [
-       "Ottopagine",
-       "Il Mattino",
-       "NTR24"
-      ],
-      "giorno": "2026-10-20"
-     },
-     {
-      "testo": "Per Il Mattino e Ottopagine il fatto è successo nella tarda serata di lunedì 19 ottobre; per NTR24 e Cronache del Sannio durante la notte. La coppia abitava in una villetta insieme al figlio, scrive Lab TV. Secondo i giornali i due hanno cominciato a discutere in modo sempre più acceso, poi la donna avrebbe preso un coltello e colpito il marito al torace e all'addome. Il Mattino parla di due coltellate.",
-      "fonti": [
-       "Il Mattino",
-       "Ottopagine",
-       "Lab TV",
-       "NTR24",
-       "Cronache del Sannio"
-      ],
-      "giorno": "2026-10-20"
-     },
-     {
-      "testo": "L'allarme è partito dai vicini, che hanno chiamato il 118. L'uomo è stato portato al pronto soccorso del San Pio, l'ospedale di Benevento. Qui è stato curato e operato. Il Mattino scrive che era in «codice rosso» (cioè molto grave), Ottopagine che aveva la prognosi riservata; per NTR24 non era in pericolo di vita. Ottopagine e Il Mattino aggiungono che nelle ore successive le sue condizioni sono migliorate.",
-      "fonti": [
-       "Il Mattino",
-       "Ottopagine",
-       "NTR24",
-       "Lab TV"
-      ],
-      "giorno": "2026-10-20"
-     },
-     {
-      "testo": "Sono arrivati i Carabinieri della stazione di Pietrelcina e della Compagnia di Benevento. Il sostituto procuratore Marilia Capitanio, il magistrato di turno, ha disposto il trasferimento della donna nel carcere di contrada Capodimonte. La donna è difesa dall'avvocato Vittorio Lamberti. Il Mattino scrive che sarà interrogata dal giudice per le indagini preliminari, che deve decidere se confermare l'arresto.",
-      "fonti": [
-       "Il Mattino",
-       "Ottopagine"
-      ],
-      "giorno": "2026-10-20"
-     },
-     {
-      "testo": "Le indagini sono dei Carabinieri e quella contro la donna è per ora un'ipotesi di reato: non ci sono accertamenti definitivi.",
-      "fonti": [
-       "Ottopagine",
-       "NTR24"
-      ],
-      "giorno": "2026-10-20"
-     }
-    ],
-    "aggiornamento": {
-     "testo": "Giovedì 22 ottobre il giudice ha convalidato l'arresto per tentato omicidio e ha messo la donna agli arresti domiciliari; il marito resta ricoverato al San Pio, fuori pericolo di vita.",
-     "fonti": [
-      "Il Mattino (23/10)"
-     ],
-     "quando": "2026-10-23T06:10+02:00"
-    }
-   }
   },
   {
    "id": "tir-appia-telesina",
@@ -10058,14 +8058,18 @@
    "id": "sannio-pensioni-occupati-cgia-2025",
    "titolo": "Sannio: nel 2025 ci sono 27.847 pensioni in più degli occupati, dice la CGIA",
    "titolo_google": "Sannio, 27.847 pensioni in più degli occupati (CGIA)",
-   "sintesi": "Secondo la CGIA di Mestre su dati Inps e Istat, nel 2025 in provincia di Benevento le pensioni sono 114.554 e gli occupati 86.707: 27.847 pensioni in più.",
+   "sintesi": "Secondo la CGIA di Mestre su dati Inps e Istat, nel 2025 in provincia di Benevento le pensioni sono 114.554 e gli occupati 86.707: 27.847 pensioni in più. Il Mattino aggiunge che gli occupati sono 1.215 più del 2024.",
    "categoria": "altro",
    "zona": "provincia",
    "luogo": "Provincia di Benevento",
-   "pubblicato": "2026-10-24T14:15:00+02:00",
-   "stato": "una_fonte",
+   "pubblicato": "2026-10-26T00:13:00+01:00",
+   "stato": "confermata",
    "rilevante": false,
    "fonti": [
+    {
+     "nome": "Il Mattino",
+     "url": "https://www.ilmattino.it/schede/benevento_aumentano_gli_occupati_in_tutto_il_sannio_ma_i_pensionati_diventano_sempre_di_piu-9848072.html"
+    },
     {
      "nome": "NTR24",
      "url": "https://www.ntr24.tv/2026/10/24/pensioni-e-occupati-nel-sannio-il-divario-e-di-quasi-28mila-unita/"
@@ -10074,27 +8078,53 @@
    "articolo": {
     "racconto": [
      {
+      "testo": "Il Mattino aggiunge un dato positivo: nel 2025 nel Sannio hanno lavorato 1.215 persone in più rispetto al 2024, mentre le pensioni sono in lieve calo. Anche così, scrive il giornale, nella provincia per ogni persona che lavora si paga più di una pensione, mentre in Italia il rapporto è di circa una a una.",
+      "fonti": [
+       "Il Mattino"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
       "testo": "Nel 2025 in provincia di Benevento le pensioni sono più degli occupati: 114.554 pensioni contro 86.707 persone che lavorano, cioè 27.847 pensioni in più. Lo dice l'Ufficio studi della CGIA di Mestre, l'associazione degli artigiani, su dati Inps e Istat.",
       "fonti": [
        "NTR24"
-      ]
+      ],
+      "giorno": "2026-10-24"
      },
      {
       "testo": "Il Sannio ha il secondo divario più contenuto della Campania, dopo Caserta (3.942). Gli altri: Napoli 52.425, Salerno 9.848, Avellino 8.750. In tutta la Campania nel 2025 le pensioni sono 1.869.492 e gli occupati 1.766.680, con 102.812 pensioni in più. In Italia invece gli occupati sono 24.117.235 e le pensioni 23.181.898, quindi gli occupati sono 935.337 in più.",
       "fonti": [
        "NTR24"
-      ]
+      ],
+      "giorno": "2026-10-24"
      },
      {
       "testo": "In Campania ci sono circa 106 pensioni ogni 100 occupati, in Italia circa 96. Secondo la CGIA dietro questo squilibrio ci sono meno nascite, popolazione che invecchia, pochi occupati e lavoro irregolare. Tra il 2025 e il 2029, secondo le previsioni citate, circa tre milioni di italiani lasceranno il lavoro. La CGIA indica come strada l'aumento di giovani e donne che lavorano.",
       "fonti": [
        "NTR24"
-      ]
+      ],
+      "giorno": "2026-10-24"
      }
     ],
     "cronologia": [],
-    "concordano": [],
-    "divergono": [],
+    "concordano": [
+     {
+      "testo": "Nel Sannio le pensioni sono più delle persone che lavorano, mentre in Italia sono circa alla pari",
+      "fonti": [
+       "NTR24",
+       "Il Mattino"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "Il Mattino scrive che nel Sannio si pagano «quasi una e mezza» pensioni per ogni lavoratore; con i numeri della CGIA riportati da NTR24 (114.554 pensioni e 86.707 occupati) il rapporto è di circa 1,3.",
+      "fonti": [
+       "Il Mattino",
+       "NTR24"
+      ]
+     }
+    ],
     "non_si_sa": [],
     "fonti": [
      {
@@ -10102,8 +8132,21 @@
       "titolo": "Pensioni e occupati, nel Sannio il divario è di quasi 28mila unità",
       "url": "https://www.ntr24.tv/2026/10/24/pensioni-e-occupati-nel-sannio-il-divario-e-di-quasi-28mila-unita/",
       "data": "24 ott, 14:15"
+     },
+     {
+      "nome": "Il Mattino",
+      "titolo": "Benevento, aumentano gli occupati in tutto il Sannio ma i pensionati diventano sempre di più",
+      "url": "https://www.ilmattino.it/schede/benevento_aumentano_gli_occupati_in_tutto_il_sannio_ma_i_pensionati_diventano_sempre_di_piu-9848072.html",
+      "data": "26 ott, 00:13"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Secondo Il Mattino nel 2025 nel Sannio hanno lavorato 1.215 persone in più del 2024, mentre le pensioni sono in lieve calo.",
+     "fonti": [
+      "Il Mattino"
+     ],
+     "quando": "2026-10-26T06:11+01:00"
+    }
    },
    "immagine": "anziani",
    "foto": "anziani-5"
