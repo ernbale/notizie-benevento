@@ -94,8 +94,9 @@ riuscita» (o cosa non va) con l'esito dei comandi. In prova non pubblichi nient
    - **L'ordine** di «Come si scrive l'articolo»: prima il fatto (chi, cosa, dove, quando), poi i dettagli utili
      (indirizzi, giorni e orari, a chi serve, cosa fare, come partecipare), poi il perché secondo chi scrive, poi cosa
      succede dopo. Spiega le sigle e chi è chi. Frasi brevi, parole di tutti i giorni.
-   - **Titolo** che dice il fatto con il luogo, senza acchiappa-clic; `titolo_google` di 45-60 caratteri; `sintesi` in
-     una o due frasi.
+   - **Titolo** che dice il fatto con il luogo, senza acchiappa-clic; `titolo_google` di 45-60 caratteri, scritto come
+     lo cerca la gente (AGENTE.md, «Come lavorare una notizia», punto 4: la parola cercata prima, nello sport la
+     partita, il risultato e chi vince, date per esteso); `sintesi` in una o due frasi.
    - `"stato": "ufficiale"` se il comunicato viene da un ente pubblico o da chi organizza o decide la cosa di cui
      parla (Comune, ente, società, sindacato, associazione sul proprio fatto); per un indirizzo generico con un fatto
      controllabile cerca una conferma (WebSearch/WebFetch) e se non c'è scarta.

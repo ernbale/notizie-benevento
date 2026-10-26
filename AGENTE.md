@@ -397,13 +397,25 @@ Regole:
      a Sant'Angelo a Cupolo per i tir», «SS 7 chiusa a Paduli per una frana»); gli stessi fatti del titolo, senza
      acchiappa-clic e senza il nome del sito. Se cambia il fatto principale, aggiornalo; quando riscrivi una notizia
      vecchia che non ce l'ha, aggiungilo.
+     Come lo scrive chi cerca (voluto dal proprietario il 26 ott 2026: «titoli con le parole che la gente scrive su
+     Google», «in modo elegante»; resta una frase italiana che si legge bene, mai un elenco di parole chiave):
+     - **prima la parola che si cerca**: «Sciopero EAV 30 ottobre: Napoli-Benevento, bus regolari», non «EAV,
+       sciopero 30 ottobre…»; per un evento il suo nome, la città e la data;
+     - **sport: la partita come la scrive chi cerca, il risultato e chi vince** (a lui piace il «vince»): «Basket,
+       Virtus Ragusa-Miwa Benevento 69-75: vince la Miwa», «Serie B, Arezzo-Benevento 0-3: vince il Benevento»; con
+       un pareggio o una sconfitta lo dici allo stesso modo («pari», «perde il Benevento»);
+     - **le parole di tutti i giorni, le stesse del titolo**: «bambino investito da una bici», non «urtato»;
+     - **date per esteso** («30 novembre»), mai «30/11»; mai «oggi», «domani», «stasera»: il giorno dopo sono falsi;
+     - **la risposta pratica, se l'articolo ce l'ha davvero**: «dove», «fino a quando», «orari», «come fare»
+       («Raccolta per Odessa a Benevento: dove e fino a quando»).
    - La `sintesi` (2-3 frasi) è la descrizione sotto il titolo su Google: le prime 150 lettere devono bastare a
      capire il fatto.
 5. **Rileggi prima di pubblicare** (obbligatorio), per ogni notizia nuova o cambiata:
    - ogni frase dell'articolo ha almeno una fonte che hai davvero letto, e la fonte dice proprio quello?
    - il racconto si capisce da solo, da chi non ha letto nessun giornale? dice chi è chi, dove e perché?
    - date, orari, numeri, nomi di strade e paesi sono identici alle fonti?
-   - titolo: dice il fatto? è senza acchiappa-clic? parole semplici? `titolo_google` sta in 60 caratteri, con paese e fatto?
+   - titolo: dice il fatto? è senza acchiappa-clic? parole semplici? `titolo_google` sta in 60 caratteri, con paese e
+     fatto, scritto come lo cerca la gente (punto 4: la parola cercata prima, date per esteso, niente «oggi»)?
    - è un fatto di oggi o ancora attuale?
    - notizia già uscita con fatti nuovi: c'è `aggiornamento` con la novità? il primo paragrafo dice com'è la situazione adesso?
    - notizia aggiornata: titolo, `titolo_google` e `sintesi`, letti adesso, dicono ancora il vero con tutti i fatti del
