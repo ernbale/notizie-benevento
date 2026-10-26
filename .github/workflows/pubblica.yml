@@ -8,11 +8,14 @@ on:
     - cron: "12 * * * *"
   workflow_dispatch:
     inputs:
+      facebook_subito:
+        description: "Quante notizie mettere subito sulla Pagina Facebook (0 = come sempre, una ogni 25 minuti)"
+        default: "0"
       telegram_subito:
         description: "Quante delle ultime notizie mandare subito sul canale Telegram (0 = come sempre)"
         default: "0"
       telegram_recupera:
-        description: "Non serve più (dal 26 ott 2026 Telegram manda sempre tutto): resta perché la sentinella lo manda"
+        description: "Telegram: mandare subito tutte le notizie arretrate delle ultime 12 ore (1 = sì, 0 = come sempre)"
         default: "0"
       carburanti:
         description: "Prezzi dei carburanti (li manda il Pi di casa: carburanti.json compresso e in base64). Vuoto = quelli già pubblicati"
@@ -172,12 +175,13 @@ jobs:
           python3 strumenti/curiosita_social.py --stato "$RUNNER_TEMP/social/curiosita.json"
 
       # dopo la pubblicazione, così Facebook trova già online la pagina della notizia (titolo e anteprima)
-      - name: Facebook (le notizie nuove sulla Pagina, tutte)
+      - name: Facebook (una notizia nuova sulla Pagina, se è il momento)
         env:
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          FB_SUBITO: ${{ github.event.inputs.facebook_subito || '0' }}
         run: python3 strumenti/facebook.py --stato "$RUNNER_TEMP/social/facebook.json" || echo "::warning::Facebook non ha pubblicato (vedi l'avviso sopra)"
 
-      - name: Instagram (le notizie nuove, tutte, e il riepilogo della sera)
+      - name: Instagram (una notizia ogni 25 minuti e il riepilogo della sera, se è il momento)
         env:
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
         run: |
@@ -188,6 +192,7 @@ jobs:
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TG_SUBITO: ${{ github.event.inputs.telegram_subito || '0' }}
+          TG_RECUPERA: ${{ github.event.inputs.telegram_recupera || '0' }}
         run: |
           mkdir -p "$RUNNER_TEMP/social"
           python3 strumenti/telegram.py --stato "$RUNNER_TEMP/social/telegram.json" || echo "::warning::Telegram non ha pubblicato (vedi l'avviso sopra)"

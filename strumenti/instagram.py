@@ -2,25 +2,25 @@
 """Pubblica su Instagram (l'account aziendale collegato alla Pagina Facebook) le notizie più importanti, una alla volta.
 
 Lo esegue GitHub dopo ogni pubblicazione del sito, come facebook.py, che ne è il modello:
-- Niente pausa e niente tetto nostri, come su Facebook (lui, 26 ott 2026: «togliamo i limiti ai social, nessun limite,
-  non ci tappiamo inutilmente»; prima una ogni 25 minuti e 35 al giorno): a ogni volta tutte le notizie nuove delle
-  ultime 12 ore, prima i comunicati per posta («subito»), poi dalla più importante (stessa importanza di facebook.py),
-  dalle 6 fino al giro delle 22 compreso. L'unico tetto è quello di Meta sui post pubblicati dai programmi in 24 ore
-  (content_publishing_limit): quando è pieno si aspetta e si riprende da solo.
+- Le notizie dei comunicati arrivati per posta («subito», giro lampo) escono appena ci sono, senza pausa né tetto.
+- Al massimo una notizia ogni PAUSA_MINUTI e MAX_GIORNO al giorno, dalle 6 fino al giro delle 22 compreso
+  (come Facebook: 25 minuti e 35 al giorno, scelta del proprietario il 24 ott 2026; prima 50 minuti e 20, all'inizio
+  90 minuti e 8).
+- Sceglie la più importante tra le notizie delle ultime 12 ore non ancora uscite (stessa importanza di facebook.py).
 - L'immagine è img/ig/<id>.jpg (1080×1350, la fa pagine.py): titolo grande e, se c'è, la foto illustrativa con la
   scritta che è fatta con l'intelligenza artificiale. Instagram la scarica dal sito, che deve essere già online.
 - Cosa è già uscito lo legge da Instagram stesso (il link della notizia scritto nella didascalia).
-- Dalle RIEPILOGO_DALLE, una volta al giorno, il riepilogo della giornata («Il Sannio oggi»): un carosello con
+- Dalle RIEPILOGO_DALLE, come ultimo post del giorno, il riepilogo della giornata («Il Sannio oggi»): un carosello con
   la copertina e le immagini delle notizie più importanti uscite oggi. La scelta e la copertina le fa pagine.py
-  (img/ig/oggi.json), così sul sito c'è già tutto quando Instagram scarica le immagini. Dopo il riepilogo le notizie
-  nuove continuano a uscire.
+  (img/ig/oggi.json), così sul sito c'è già tutto quando Instagram scarica le immagini. È in più delle MAX_GIORNO
+  notizie (scelta del proprietario, 23 ott 2026: «20 + riepilogo per entrambi»); il riepilogo e le chiusure non contano.
 - Alle 23 (il giro delle sere di allerta) solo la notizia di un'allerta arancione o rossa, come su Facebook e
-  Telegram: è la più utile per chi ha figli a scuola. La gialla no.
+  Telegram, anche dopo il riepilogo e oltre MAX_GIORNO: è la più utile per chi ha figli a scuola. La gialla no.
 - La chiave è la stessa della Pagina (segreto FB_PAGE_TOKEN), con i permessi instagram_basic e
   instagram_content_publish. Senza account Instagram collegato alla Pagina non fa niente.
 
-Quando Meta risponde «troppe richieste» (successo il 26 ott 2026 alle 15:17: 16 notizie arretrate insieme) Instagram
-si ferma FERMO_MINUTI e poi riprende da solo con quelle rimaste (--stato ricorda fino a quando).
+- Quando Meta risponde «troppe richieste» (26 ott 2026, 15:17: 16 notizie arretrate insieme) non la si chiama per
+  FERMO_MINUTI: lo ricorda --stato, poi si riprende da soli.
 
 Uso:  FB_PAGE_TOKEN=… python3 strumenti/instagram.py --stato FILE
       python3 strumenti/instagram.py --prova      (dice cosa pubblicherebbe, senza chiave e senza toccare Instagram)
@@ -35,11 +35,12 @@ import time
 import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from facebook import (AGG, LIMITE_META, PAGINA, RIEPILOGO_DALLE, SITO, TITOLO_RIEPILOGO,  # come Facebook
-                      allerta_seria, candidate, chiama, coda, fuso, in_ordine, quando, rilievo, titoli_usciti)
+from facebook import (AGG, LIMITE_META, PAGINA, RIEPILOGO_DALLE, RIEPILOGO_PAUSA, SITO, TITOLO_RIEPILOGO,  # come Facebook
+                      allerta_seria, candidate, chiama, coda, fuso, quando, rilievo, titoli_usciti)
 
-FERMO_MINUTI = 60   # quando Meta dice «troppe richieste» non si chiama più per un'ora (il suo conto è sull'ultima ora)
-
+MAX_GIORNO = 35
+PAUSA_MINUTI = 25
+FERMO_MINUTI = 60   # quando Meta dice «troppe richieste» non la si chiama per un'ora (il suo conto è sull'ultima ora)
 DALLE, ALLE = 6, 23   # come facebook.py
 QUANTE, ALMENO = 5, 3  # notizie nel riepilogo; con meno di ALMENO notizie oggi niente riepilogo
 
@@ -186,7 +187,7 @@ def main():
         notizie = json.load(f).get("notizie", [])
 
     if a.prova:
-        for n, agg in in_ordine(coda(notizie, {}, adesso))[:3]:
+        for n, agg in coda(notizie, {}, adesso)[:3]:
             print(f"--- {SITO}/img/ig/{n['id']}.jpg\n{didascalia(n, agg)}\n")
         r = riepilogo_pronto(a.sito, notizie, adesso)
         print(f"--- riepilogo: {', '.join(r[2])}\n{didascalia_riepilogo(r[0], r[1])}" if r
@@ -205,62 +206,15 @@ def main():
     if stato.get("fermo_fino", "") > adesso.isoformat():
         print(f"Instagram: Meta ci ha fermato per troppe richieste, riprendo dopo le {stato['fermo_fino'][11:16]}")
         return
-    pag = chiama("GET", "me", token, {"fields": "name,instagram_business_account{id,username}"})
-    if pag.get("name") != PAGINA:
-        raise RuntimeError(f"la chiave non è della Pagina «{PAGINA}»: non pubblico niente")
-    ig = (pag.get("instagram_business_account") or {}).get("id")
-    if not ig:
-        print("Instagram: la Pagina non ha ancora un account Instagram collegato, non pubblico niente")
-        return
-    gia, oggi, ultimo, riepilogo = gia_pubblicate(ig, token, adesso)
-    if sera:
-        for n in candidate(notizie, gia, adesso):
-            if allerta_seria(n) and pubblica_notizia(ig, token, n):
-                print(f"Instagram: pubblicata l'allerta {n['id']} ({oggi + 1} oggi)")
-                return
-        print("Instagram: sono le 23, a quest'ora si pubblicano solo le allerte arancioni o rosse")
-        return
-    posto = posti_meta(ig, token)
-    errori = []
-    if adesso.hour >= RIEPILOGO_DALLE and not riepilogo and posto:
-        r = riepilogo_pronto(a.sito, notizie, adesso)
-        if r and all(online(u) for u in r[2]):
-            try:
-                pubblica_riepilogo(ig, token, *r)
-                oggi, posto = oggi + 1, posto - 1
-                print(f"Instagram: pubblicato il riepilogo della giornata ({len(r[1])} notizie, {oggi} post oggi)")
-            except Exception as e:   # le notizie escono lo stesso; l'avviso alla fine
-                errori.append(f"riepilogo: {e}")
-        else:
-            print("Instagram: niente riepilogo oggi (poche notizie o immagini non ancora online)")
-    lista = in_ordine(coda(notizie, gia, adesso))
-    if not lista:
-        print("Instagram: nessuna notizia nuova da pubblicare")
-    for n, agg in lista:
-        if not posto:
-            print(f"Instagram: Meta non accetta altri post per adesso (il suo tetto di 24 ore), ne restano "
-                  f"{len(lista) - lista.index((n, agg))}: escono quando si libera posto")
-            break
-        try:
-            if not pubblica_notizia(ig, token, n, agg):
-                continue   # l'immagine non è ancora online: alla volta dopo
-        except Exception as e:   # una notizia rifiutata non ferma le altre: si riprova alla volta dopo
-            errori.append(f"{n['id']}: {e}")
-            if LIMITE_META.search(str(e)):   # Meta ci ha fermato: un'ora senza chiamarla, poi si riprende da soli
-                fino = (adesso + dt.timedelta(minutes=FERMO_MINUTI)).isoformat(timespec="minutes")
-                scrivi_stato(a.stato, dict(stato, fermo_fino=fino))
-                print(f"Instagram: Meta dice che abbiamo fatto troppe richieste: fermo fino alle {fino[11:16]}, poi "
-                      f"escono le {len(lista) - lista.index((n, agg))} rimaste")
-                break
-            continue
-        oggi, posto = oggi + 1, posto - 1
-        if agg:
-            print(f"Instagram: pubblicato l'aggiornamento di {n['id']} ({oggi} oggi)")
-        else:
-            print(f"Instagram: pubblicata {'subito ' if n.get('subito') else ''}{n['id']} "
-                  f"({'comunicato, ' if n.get('subito') else ''}{oggi} oggi)")
-    if errori:
-        raise RuntimeError("; ".join(errori))
+    try:
+        giro(a, notizie, adesso, token, sera)
+    except RuntimeError as e:
+        if not LIMITE_META.search(str(e)):
+            raise
+        fino = (adesso + dt.timedelta(minutes=FERMO_MINUTI)).isoformat(timespec="minutes")
+        scrivi_stato(a.stato, dict(stato, fermo_fino=fino))
+        print(f"Instagram: Meta dice che abbiamo fatto troppe richieste ({e}): fermo fino alle {fino[11:16]}, poi si "
+              "riprende da soli")
 
 
 def leggi_stato(percorso):
@@ -278,15 +232,54 @@ def scrivi_stato(percorso, stato):
             json.dump(stato, f)
 
 
-def posti_meta(ig, token):
-    """Quanti post Meta lascia ancora pubblicare ai programmi nelle sue 24 ore (content_publishing_limit). Se non
-    risponde, 100: il tetto vero lo dice comunque Meta, rifiutando il post."""
-    try:
-        d = (chiama("GET", f"{ig}/content_publishing_limit", token, {"fields": "quota_usage,config"}).get("data") or [{}])[0]
-        return max(0, int((d.get("config") or {}).get("quota_total") or 100) - int(d.get("quota_usage") or 0))
-    except Exception as e:
-        print(f"Instagram: non leggo il tetto di Meta ({type(e).__name__}), vado avanti")
-        return 100
+def giro(a, notizie, adesso, token, sera):
+    """Una volta: un comunicato «subito», o l'allerta delle 23, o il riepilogo della sera, o la notizia più importante."""
+    pag = chiama("GET", "me", token, {"fields": "name,instagram_business_account{id,username}"})
+    if pag.get("name") != PAGINA:
+        raise RuntimeError(f"la chiave non è della Pagina «{PAGINA}»: non pubblico niente")
+    ig = (pag.get("instagram_business_account") or {}).get("id")
+    if not ig:
+        print("Instagram: la Pagina non ha ancora un account Instagram collegato, non pubblico niente")
+        return
+    gia, oggi, ultimo, riepilogo = gia_pubblicate(ig, token, adesso)
+    if not sera:   # un comunicato ufficiale (giro lampo, «subito»): esce adesso, senza pausa né tetto (come facebook.py)
+        for n in candidate(notizie, gia, adesso):
+            if n.get("subito") and pubblica_notizia(ig, token, n):
+                print(f"Instagram: pubblicata subito {n['id']} (comunicato, {oggi + 1} oggi)")
+                return
+    if sera:
+        for n in candidate(notizie, gia, adesso):
+            if allerta_seria(n) and pubblica_notizia(ig, token, n):
+                print(f"Instagram: pubblicata l'allerta {n['id']} ({oggi + 1} oggi)")
+                return
+        print("Instagram: sono le 23, a quest'ora si pubblicano solo le allerte arancioni o rosse")
+        return
+    if riepilogo:
+        print("Instagram: il riepilogo di oggi è già uscito, a domani")
+        return
+    if adesso.hour >= RIEPILOGO_DALLE:
+        r = riepilogo_pronto(a.sito, notizie, adesso)
+        if r and ultimo and adesso - ultimo < dt.timedelta(minutes=RIEPILOGO_PAUSA):
+            print(f"Instagram: l'ultimo post è delle {ultimo:%H:%M}, il riepilogo al prossimo giro")
+            return
+        if r and all(online(u) for u in r[2]):
+            pubblica_riepilogo(ig, token, *r)
+            print(f"Instagram: pubblicato il riepilogo della giornata ({len(r[1])} notizie, {oggi + 1} post oggi)")
+            return
+        print("Instagram: niente riepilogo oggi (poche notizie o immagini non ancora online)")
+    if oggi >= MAX_GIORNO:
+        print(f"Instagram: già {oggi} notizie oggi (il massimo è {MAX_GIORNO}, più il riepilogo), basta così")
+        return
+    if ultimo and adesso - ultimo < dt.timedelta(minutes=PAUSA_MINUTI):
+        print(f"Instagram: l'ultimo post è delle {ultimo:%H:%M}, aspetto")
+        return
+    for n, agg in coda(notizie, gia, adesso):
+        if pubblica_notizia(ig, token, n, agg):
+            cosa = "pubblicato l'aggiornamento di" if agg else "pubblicata"
+            print(f"Instagram: {cosa} {n['id']} ({oggi + 1} oggi)")
+            return
+    print("Instagram: nessuna notizia nuova da pubblicare")
+
 
 if __name__ == "__main__":
     try:

@@ -2,9 +2,8 @@
 """Pubblica sul canale Telegram (t.me/notiziebenevento) le notizie nuove e gli aggiornamenti, appena escono sul sito.
 
 Lo esegue GitHub dopo ogni pubblicazione del sito, come facebook.py. Su Telegram si legge tutto di seguito, come un
-notiziario: a ogni volta tutto quello che è uscito (lui, 26 ott 2026: «togliamo i limiti ai social, nessun limite»;
-prima al massimo 6 messaggi per volta), solo dalle 6 fino al giro delle 22 compreso (alle 23 solo le allerte arancioni o
-rosse, come su Facebook). MAX_GIORNO non è un limite: è il freno contro un errore che manderebbe a raffica.
+notiziario: qui niente pausa di un'ora come su Facebook, ma al massimo POR_GIRO messaggi per volta e MAX_GIORNO al
+giorno, solo dalle 6 fino al giro delle 22 compreso (alle 23 solo le allerte arancioni o rosse, come su Facebook).
 - Notizia nuova: titolo, riassunto, link (Telegram mostra l'anteprima con l'immagine della notizia).
 - Aggiornamento (il riquadro «Aggiornamento» dell'articolo): «Aggiornamento» + titolo + la frase della novità.
 - Il bot non può rileggere il canale: cosa è già uscito lo ricorda in un file (--stato) che GitHub conserva tra
@@ -14,6 +13,7 @@ rosse, come su Facebook). MAX_GIORNO non è un limite: è il freno contro un err
   l'anteprima si legge, segna come già uscito tutto: meglio una notizia in meno che dieci doppioni.
 - Il conto dei messaggi del giorno è fatto solo sui messaggi mandati davvero (22 ott: le 126 notizie segnate come
   già uscite alla prima volta erano contate come messaggi e il canale è rimasto muto dalle 16 alle 21).
+- Arretrati (TG_RECUPERA=1, dal pulsante di GitHub): manda tutto quello che manca delle ultime ORE_FINESTRA ore.
 - La chiave del bot è nel segreto TELEGRAM_TOKEN di GitHub; senza chiave non fa niente. Nei log mai la chiave.
 
 Uso:  TELEGRAM_TOKEN=… python3 strumenti/telegram.py --stato /percorso/telegram.json
@@ -38,7 +38,8 @@ CANALE = "@notiziebenevento"
 TITOLO_CANALE = "Notizie Benevento"
 ANTEPRIMA = "https://t.me/s/notiziebenevento"   # la pagina pubblica del canale: gli ultimi messaggi, senza chiave
 API = "https://api.telegram.org"
-MAX_GIORNO = 200            # solo un freno contro un errore che manda a raffica: un giorno pieno ne fa 40-50
+POR_GIRO = 6
+MAX_GIORNO = 80             # solo un freno contro un errore che manda a raffica: un giorno pieno ne fa 40-50
 PAUSA = 3                   # secondi tra un messaggio e l'altro (Telegram ne accetta una ventina al minuto)
 ORE_FINESTRA = 12           # notizie e aggiornamenti più vecchi di così non si mandano più (l'ora è quella
                             # dell'articolo fonte: una notizia trovata tardi ha l'ora del mattino)
@@ -137,7 +138,7 @@ def main():
         notizie = json.load(f).get("notizie", [])
 
     if a.prova:
-        for _, chiave, tipo, n in da_mandare(notizie, set(), adesso)[:6]:
+        for _, chiave, tipo, n in da_mandare(notizie, set(), adesso)[:POR_GIRO]:
             print(f"--- {chiave}\n{testo(tipo, n)}\n")
         return
 
@@ -157,6 +158,7 @@ def main():
         stato = None
     canale = sul_canale()
     subito = int(os.environ.get("TG_SUBITO") or 0)   # solo quando lo chiede il proprietario, dal pulsante di GitHub
+    recupera = os.environ.get("TG_RECUPERA", "0") not in ("", "0", "false")
     if stato is None:   # prima volta (o ricordo perso): lo rifaccio dal canale, o segno tutto come già uscito
         ora = adesso.isoformat(timespec="minutes")
         stato = {"mandati": {}, "inviati": []}
@@ -201,7 +203,7 @@ def main():
                 lista = da_mandare(notizie, gia, adesso)
                 if sera:
                     lista = [x for x in lista if allerta_seria(x[3])]
-                quante = max(0, MAX_GIORNO - oggi)
+                quante = max(0, MAX_GIORNO - oggi) if recupera else max(0, min(POR_GIRO, MAX_GIORNO - oggi))
                 fatte = 0
                 for _, chiave, tipo, n in lista[:quante]:
                     if fatte:
