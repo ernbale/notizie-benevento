@@ -1,7 +1,189 @@
 {
- "aggiornato": "2026-10-26T16:15+01:00",
+ "aggiornato": "2026-10-26T17:18+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "cremonese-benevento-biglietti-settore-ospiti-31-ottobre",
+   "titolo": "Cremonese-Benevento di sabato 31 ottobre: biglietti per i tifosi giallorossi a 20 euro, in vendita fino a venerdì",
+   "titolo_google": "Biglietti Cremonese-Benevento 31 ottobre: prezzi settore ospiti",
+   "sintesi": "Da lunedì 26 ottobre alle 16 sono in vendita i biglietti della Curva Nord, il settore ospiti dello stadio Zini di Cremona, per Cremonese-Benevento di sabato 31 ottobre alle 15. Costano 20 euro, 10 per i ragazzi dai 4 ai 18 anni; la vendita chiude venerdì 30 ottobre alle 19.",
+   "categoria": "sport",
+   "sport": "calcio",
+   "zona": "benevento",
+   "immagine": "stadio",
+   "luogo": "Cremona, stadio Zini",
+   "pubblicato": "2026-10-26T16:43+01:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 5,
+   "in_vigore_fino": "2026-10-30",
+   "fonti": [
+    {
+     "nome": "US Cremonese",
+     "url": "https://uscremonese.it/biglietteria-creben_202627/",
+     "ufficiale": true
+    },
+    {
+     "nome": "SannioSport",
+     "url": "https://sanniosport.it/2026/10/26/cremonese-benevento-via-alla-prevendita-ecco-prezzi-e-informazioni-per-i-tifosi-giallorossi/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Sono in vendita da lunedì 26 ottobre alle 16 i biglietti per i tifosi del Benevento che vogliono andare a Cremona. Sabato 31 ottobre alle 15 i giallorossi giocano contro la Cremonese allo stadio Giovanni Zini, per il campionato di Serie B.",
+      "fonti": [
+       "US Cremonese",
+       "SannioSport"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "Il settore riservato agli ospiti è la Curva Nord, con 2.425 posti. Il biglietto intero costa 20 euro, già compresi i diritti di prevendita, più le commissioni di chi lo vende; quello per gli under 18, dai 4 anni compiuti ai 18 non compiuti il giorno della partita, costa 10 euro. Per il settore ospiti non si può cambiare il nome sul biglietto.",
+      "fonti": [
+       "US Cremonese",
+       "SannioSport"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "I biglietti si comprano online su uscremonese.vivaticket.it o nei punti vendita Vivaticket in tutta Italia. La vendita chiude venerdì 30 ottobre alle 19, salvo esaurimento dei posti. La Cremonese ha pubblicato anche le indicazioni sul percorso per arrivare allo stadio riservato ai tifosi del Benevento.",
+      "fonti": [
+       "US Cremonese",
+       "SannioSport"
+      ],
+      "giorno": "2026-10-26"
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Biglietti in vendita dalle 16 di lunedì 26 ottobre alle 19 di venerdì 30, Curva Nord da 2.425 posti, 20 euro l'intero e 10 euro gli under 18.",
+      "fonti": [
+       "US Cremonese",
+       "SannioSport"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "Nella pagina della Cremonese, sotto le informazioni sul settore ospiti, c'è scritto che i biglietti si comprano fino alle 19 di venerdì 23 ottobre: è un refuso, perché la stessa pagina e SannioSport dicono che la vendita va dalle 16 di lunedì 26 alle 19 di venerdì 30 ottobre.",
+      "fonti": [
+       "US Cremonese",
+       "SannioSport"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "Se la vendita del settore ospiti ha limiti per i residenti in provincia di Benevento."
+    ],
+    "fonti": [
+     {
+      "nome": "US Cremonese",
+      "titolo": "Biglietteria – CREBEN_202627",
+      "url": "https://uscremonese.it/biglietteria-creben_202627/",
+      "data": "26 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "SannioSport",
+      "titolo": "CREMONESE-BENEVENTO, VIA ALLA PREVENDITA: ECCO PREZZI E INFORMAZIONI PER I TIFOSI GIALLOROSSI",
+      "url": "https://sanniosport.it/2026/10/26/cremonese-benevento-via-alla-prevendita-ecco-prezzi-e-informazioni-per-i-tifosi-giallorossi/",
+      "data": "26 ott, 16:43"
+     }
+    ]
+   },
+   "foto": "stadio-4"
+  },
+  {
+   "id": "torrecuso-auto-fuori-uso-fermo-amministrativo-certificato-demolizione",
+   "titolo": "Torrecuso, auto con fermo amministrativo da rottamare: il Comune rilascia il certificato per demolirle",
+   "titolo_google": "Torrecuso, demolire l'auto con fermo amministrativo: come fare",
+   "sintesi": "A Torrecuso chi ha un'auto che non funziona più ma ha un fermo amministrativo per debiti col fisco può chiedere al Comune il certificato che la dichiara inutilizzabile, per demolirla e cancellarla dal PRA. Serve una perizia di un'officina o carrozzeria; la pratica costa 70 euro e la segue la Polizia Municipale.",
+   "categoria": "altro",
+   "zona": "provincia",
+   "immagine": "documenti",
+   "luogo": "Torrecuso",
+   "pubblicato": "2026-10-26T17:06+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 3,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/26/torrecuso-veicoli-fuori-uso-sottoposti-a-fermo-amministrativo-attivata-la-procedura-per-la-certificazione-di-inutilizzabilita/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/veicoli-fuori-uso-sottoposti-a-fermo-amministrativo-attivata-la-procedura-per-la-certificazione-di-inutilizzabilita/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Torrecuso chi ha un'auto o un altro veicolo che non funziona più, ma non può rottamarlo perché ha un fermo amministrativo (il blocco messo per debiti col fisco), ora può chiedere al Comune un certificato che dichiara il veicolo inutilizzabile. Con quel certificato si può demolire il veicolo e cancellarlo dal PRA, il Pubblico Registro Automobilistico.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "La Giunta comunale ha adottato la procedura con la delibera 62 del 9 settembre 2026, che applica la legge 14 del 2026 sui veicoli fuori uso con il fermo amministrativo.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "La domanda si fa con il modulo allegato all'avviso del Comune. Bisogna allegare la copia del documento unico di circolazione e una perizia firmata dal titolare di un'officina o di una carrozzeria, che dica che il veicolo non si può più usare e che ripararlo non conviene. Ogni pratica costa 70 euro, da pagare quando si presenta la domanda, con bonifico o PagoPA: senza la ricevuta la pratica non parte.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "Le domande le esamina il Comando della Polizia Municipale, che rilascia il certificato. Per informazioni ci si rivolge alla Polizia Municipale di Torrecuso.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ],
+      "giorno": "2026-10-26"
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "La delibera 62 del 9 settembre, la perizia di officina o carrozzeria, il costo di 70 euro e le domande alla Polizia Municipale.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Dove si trova sul sito del Comune il modulo per la domanda."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Torrecuso, veicoli fuori uso sottoposti a fermo amministrativo: attivata la procedura per la certificazione di inutilizzabilità",
+      "url": "https://www.ntr24.tv/2026/10/26/torrecuso-veicoli-fuori-uso-sottoposti-a-fermo-amministrativo-attivata-la-procedura-per-la-certificazione-di-inutilizzabilita/",
+      "data": "26 ott, 17:06"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Veicoli fuori uso sottoposti a fermo amministrativo: attivata la procedura per la certificazione di inutilizzabilità",
+      "url": "https://www.anteprima24.it/benevento/veicoli-fuori-uso-sottoposti-a-fermo-amministrativo-attivata-la-procedura-per-la-certificazione-di-inutilizzabilita/",
+      "data": "26 ott, 17:05"
+     }
+    ]
+   },
+   "foto": "documenti-14"
+  },
   {
    "id": "benevento-vincenzo-testa-consiglio-nazionale-consulenti-lavoro",
    "titolo": "Il sannita Vincenzo Testa eletto nel Consiglio nazionale dei consulenti del lavoro",
@@ -250,7 +432,7 @@
    "id": "benevento-catanzaro-arbitro-alberto-poli-27-ottobre",
    "titolo": "Benevento-Catanzaro di martedì 27 ottobre al Vigorito: arbitra Alberto Poli di Verona",
    "titolo_google": "Benevento-Catanzaro, arbitro Alberto Poli il 27 ottobre",
-   "sintesi": "Sarà Alberto Poli di Verona ad arbitrare Benevento-Catanzaro, partita della 9ª giornata del campionato di Serie BKT in programma martedì 27 ottobre alle 19 allo stadio Ciro Vigorito. Lo ha comunicato il Benevento Calcio.",
+   "sintesi": "Sarà Alberto Poli di Verona ad arbitrare Benevento-Catanzaro, partita della 9ª giornata del campionato di Serie BKT in programma martedì 27 ottobre alle 19 allo stadio Ciro Vigorito. Il Benevento non ha squalificati: Kouan resta in diffida.",
    "categoria": "sport",
    "sport": "calcio",
    "zona": "benevento",
@@ -275,6 +457,10 @@
     {
      "nome": "TV7 Benevento",
      "url": "https://www.tvsette.net/calcio-benevento-catanzaro-arbitra-poli-designata-la-squadra-arbitrale-per-il-match-del-vigorito/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/26/giudice-sportivo-benevento-catanzaro-senza-squalificati-resta-in-diffida-kouan/"
     }
    ],
    "articolo": {
@@ -313,6 +499,13 @@
        "NTR24 Sport",
        "Benevento Giornale",
        "TV7 Benevento"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "Il Benevento non avrà squalificati. Il giudice sportivo della Lega B, dopo l'ottava giornata, non ha fermato nessun giallorosso: Kouan resta in diffida, cioè con un'altra ammonizione salterà una partita, mentre Scognamillo e Beruatto hanno preso ad Arezzo il secondo cartellino giallo del campionato.",
+      "fonti": [
+       "BeneventoNews24"
       ],
       "giorno": "2026-10-26"
      }
@@ -356,6 +549,12 @@
       "titolo": "Calcio. Benevento-Catanzaro, arbitra Poli: designata la squadra arbitrale per il match del Vigorito",
       "url": "https://www.tvsette.net/calcio-benevento-catanzaro-arbitra-poli-designata-la-squadra-arbitrale-per-il-match-del-vigorito/",
       "data": "26 ott, 14:24"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Giudice Sportivo, Benevento-Catanzaro senza squalificati. Resta in diffida Kouan",
+      "url": "https://www.beneventonews24.it/2026/10/26/giudice-sportivo-benevento-catanzaro-senza-squalificati-resta-in-diffida-kouan/",
+      "data": "26 ott, 15:55"
      }
     ]
    },
@@ -1627,11 +1826,11 @@
   {
    "id": "castelpoto-santa-croce-del-sannio-elenco-elettori-fuori-sede",
    "titolo": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta e Pesco Sannita, aperto l'elenco degli elettori fuori sede: domande entro il 31 dicembre",
-   "titolo_google": "Elettori fuori sede in otto Comuni del Sannio: come fare",
-   "sintesi": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio e Molinara hanno aperto l'elenco degli elettori fuori sede previsto dalla nuova legge elettorale: chi per studio, lavoro o cure vive in una regione diversa da quella in cui vota può chiedere di votare dove abita. Per studio e lavoro la domanda va fatta entro il 31 dicembre, per le votazioni dell'anno dopo.",
+   "titolo_google": "Elettori fuori sede in dieci Comuni del Sannio: come fare",
+   "sintesi": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano e Fragneto Monforte hanno aperto l'elenco degli elettori fuori sede previsto dalla nuova legge elettorale: chi per studio, lavoro o cure vive in una regione diversa da quella in cui vota può chiedere di votare dove abita. Per studio e lavoro la domanda va fatta entro il 31 dicembre, per le votazioni dell'anno dopo.",
    "categoria": "altro",
    "zona": "provincia",
-   "luogo": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio e Molinara",
+   "luogo": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano e Fragneto Monforte",
    "immagine": "elezioni",
    "pubblicato": "2026-10-26",
    "stato": "ufficiale",
@@ -1675,6 +1874,16 @@
     {
      "nome": "Comune di Molinara",
      "url": "https://molinara.halleyweb.it/c062041/mc/mc_p_dettaglio.php?id_pubbl=3769",
+     "ufficiale": true
+    },
+    {
+     "nome": "Comune di Cautano",
+     "url": "https://comune.cautano.bn.it/albo-pretorio/?dettaglio_id=306157",
+     "ufficiale": true
+    },
+    {
+     "nome": "Comune di Fragneto Monforte",
+     "url": "https://www.halleyweb.com/c062034/mc/mc_p_dettaglio.php?id_pubbl=14496",
      "ufficiale": true
     }
    ],
@@ -1736,6 +1945,14 @@
       "fonti": [
        "Comune di Faicchio",
        "Comune di Molinara"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "Nel pomeriggio di lunedì 26 ottobre hanno pubblicato l'avviso anche Cautano, con il modello di domanda, e Fragneto Monforte. Il sindaco di Fragneto Monforte ricorda che chi si trasferisce per studio o lavoro dopo il 31 dicembre, o per cure e assistenza, deve fare domanda entro trenta giorni da quando ne ha diritto e comunque non oltre il 45° giorno prima del voto; il modello si scarica anche da dait.interno.gov.it/elezioni.",
+      "fonti": [
+       "Comune di Cautano",
+       "Comune di Fragneto Monforte"
       ],
       "giorno": "2026-10-26"
      }
@@ -1809,14 +2026,29 @@
       "url": "https://molinara.halleyweb.it/c062041/mc/mc_p_dettaglio.php?id_pubbl=3769",
       "data": "26 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "Comune di Cautano",
+      "titolo": "Legge 9 ottobre 2026, n. 180, recante «Disposizioni in materia di elezioni della Camera dei deputati e del Senato della Repubblica». Articolo 8. Esercizio del diritto di voto da parte degli elettori fuori sede in occasione delle elezioni politiche ed europee e dei referendum previsti dagli articoli 75 e 138 della Costituzione. Istituzione dell'elenco comunale degli elettori fuori sede",
+      "url": "https://comune.cautano.bn.it/albo-pretorio/?dettaglio_id=306157",
+      "data": "26 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "Comune di Fragneto Monforte",
+      "titolo": "Legge n. 180 del 09/10/2026 - Esercizio del diritto di voto da parte dei fuori sede - Pubblicazione lettera informativa e modello per domanda di ammissione.-",
+      "url": "https://www.halleyweb.com/c062034/mc/mc_p_dettaglio.php?id_pubbl=14496",
+      "data": "26 ott",
+      "ufficiale": true
      }
     ],
     "aggiornamento": {
-     "testo": "Lunedì 26 ottobre anche il Comune di Cusano Mutri ha aperto l'elenco degli elettori fuori sede.",
+     "testo": "Lunedì pomeriggio hanno aperto l'elenco degli elettori fuori sede anche Cautano e Fragneto Monforte.",
      "fonti": [
-      "Comune di Cusano Mutri"
+      "Comune di Cautano",
+      "Comune di Fragneto Monforte"
      ],
-     "quando": "2026-10-26T13:15+01:00",
+     "quando": "2026-10-26T17:18+01:00",
      "titolo_prima": "Castelpoto e Santa Croce del Sannio, aperto l'elenco degli elettori fuori sede: domande entro il 31 dicembre"
     }
    },
@@ -2110,16 +2342,24 @@
   },
   {
    "id": "benevento-liceo-guacci-furto-distributore-computer",
-   "titolo": "Benevento, ladri di notte al liceo Guacci di via Compagna: scassinato il distributore di merendine",
-   "titolo_google": "Benevento, furto al liceo Guacci: scassinato il distributore",
-   "sintesi": "Nella notte tra domenica 25 e lunedì 26 ottobre qualcuno è entrato nella sede di Scienze Umane del liceo Guacci, in via Compagna a Benevento, forzando un infisso. Ha scassinato il distributore di merendine e bevande e forse ha portato via anche dei computer. Indagano i Carabinieri.",
+   "titolo": "Benevento, furto di notte al liceo Guacci di via Compagna: rubati due computer e candeggina sparsa nelle aule",
+   "titolo_google": "Benevento, furto al liceo Guacci: rubati due computer",
+   "sintesi": "Nella notte tra domenica 25 e lunedì 26 ottobre dei ladri sono entrati nella sede di Scienze Umane del liceo Guacci, in via Compagna a Benevento, forzando un infisso. Hanno rubato due computer e sparso candeggina al piano di sopra e negli armadietti: l'odore ha impedito agli studenti di fare lezione. Indagano i Carabinieri.",
    "categoria": "cronaca",
    "zona": "benevento",
    "luogo": "Benevento, via Compagna",
    "pubblicato": "2026-10-26T08:54+01:00",
-   "stato": "una_fonte",
+   "stato": "confermata",
    "rilevante": false,
    "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/26/rione-ferrovia-furto-al-liceo-guacci-di-benevento-rubati-due-computer-locali-invasi-dalla-candeggina/"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/un-furto-e-avvenuto-la-notte-scorsa-al-liceo-guacci-indirizzo-scienze-umane"
+    },
     {
      "nome": "Anteprima24",
      "url": "https://www.anteprima24.it/benevento/furto-in-una-scuola-ladri-forzano-un-infisso-e-scassinano-distributore-di-merendine/"
@@ -2128,39 +2368,84 @@
    "articolo": {
     "racconto": [
      {
-      "testo": "Nella notte tra domenica 25 e lunedì 26 ottobre dei ladri sono entrati nel liceo Guacci di Benevento, nella sede dell'indirizzo Scienze Umane in via Compagna. Hanno forzato un infisso e, una volta dentro, hanno scassinato la macchinetta delle merendine e delle bevande per prendere le monete della cassa.",
+      "testo": "Nella notte tra domenica 25 e lunedì 26 ottobre dei ladri sono entrati nel liceo Guacci di Benevento, nella sede dell'indirizzo Scienze Umane in via Francesco Compagna, al Rione Ferrovia. Hanno forzato un infisso, hanno frugato nelle stanze e se ne sono andati con due computer.",
       "fonti": [
+       "NTR24",
+       "Gazzetta di Benevento",
        "Anteprima24"
-      ]
+      ],
+      "giorno": "2026-10-26"
      },
      {
-      "testo": "Se ne sono accorti lunedì mattina, all'inizio delle lezioni, e hanno chiamato i Carabinieri. Sembra che i ladri abbiano portato via anche alcuni computer, ma il danno non è ancora stato calcolato.",
+      "testo": "Prima di andarsene hanno anche sparso candeggina al piano di sopra e dentro gli armadietti. Lunedì mattina, all'arrivo del personale della scuola, l'odore era così forte da rendere l'aria irrespirabile, e gli studenti non hanno potuto restare in classe e seguire le lezioni come al solito.",
       "fonti": [
-       "Anteprima24"
-      ]
+       "NTR24",
+       "Gazzetta di Benevento"
+      ],
+      "giorno": "2026-10-26"
      },
      {
-      "testo": "I Carabinieri hanno cominciato le indagini per capire chi è stato.",
+      "testo": "Secondo Anteprima24 i ladri hanno anche scassinato la macchinetta delle merendine e delle bevande per prendere le monete.",
       "fonti": [
+       "Anteprima24"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "La scuola ha chiamato i Carabinieri, che hanno cominciato le indagini per capire chi è stato e perché ha sparso la candeggina.",
+      "fonti": [
+       "NTR24",
+       "Gazzetta di Benevento",
+       "Anteprima24"
+      ],
+      "giorno": "2026-10-26"
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "L'ingresso dei ladri da un infisso forzato nella sede di via Compagna, nella notte tra domenica e lunedì, e le indagini dei Carabinieri.",
+      "fonti": [
+       "NTR24",
+       "Gazzetta di Benevento",
        "Anteprima24"
       ]
      }
     ],
-    "cronologia": [],
-    "concordano": [],
     "divergono": [],
     "non_si_sa": [
-     "Quanti computer mancano e quanto vale il danno.",
-     "Se le lezioni si sono svolte normalmente."
+     "Quanto vale il danno.",
+     "Se le lezioni riprendono normalmente martedì 27 ottobre."
     ],
     "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Rione Ferrovia, furto al Liceo Guacci di Benevento: rubati due computer, locali invasi dalla candeggina",
+      "url": "https://www.ntr24.tv/2026/10/26/rione-ferrovia-furto-al-liceo-guacci-di-benevento-rubati-due-computer-locali-invasi-dalla-candeggina/",
+      "data": "26 ott, 16:21"
+     },
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "Un furto è avvenuto la notte scorsa al Liceo \"Guacci,\" indirizzo Scienze Umane",
+      "url": "https://www.gazzettabenevento.it/it/un-furto-e-avvenuto-la-notte-scorsa-al-liceo-guacci-indirizzo-scienze-umane",
+      "data": "26 ott, 16:29"
+     },
      {
       "nome": "Anteprima24",
       "titolo": "Furto in una scuola: ladri forzano un infisso e scassinano distributore di merendine",
       "url": "https://www.anteprima24.it/benevento/furto-in-una-scuola-ladri-forzano-un-infisso-e-scassinano-distributore-di-merendine/",
       "data": "26 ott, 08:54"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "I ladri hanno rubato due computer e prima di andarsene hanno sparso candeggina al piano di sopra e negli armadietti: lunedì mattina l'aria era irrespirabile e gli studenti non hanno potuto fare lezione come al solito.",
+     "fonti": [
+      "NTR24",
+      "Gazzetta di Benevento"
+     ],
+     "quando": "2026-10-26T17:18+01:00",
+     "titolo_prima": "Benevento, ladri di notte al liceo Guacci di via Compagna: scassinato il distributore di merendine"
+    }
    },
    "importanza": 2
   },
