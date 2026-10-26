@@ -22,8 +22,9 @@ Sito: https://notiziebenevento.it (notiziebenevento.com rimanda qui)
 - `strumenti/allegati.py`: il testo degli allegati delle mail dei comunicati (sul Pi, lo usano fonti_casa.py e la scheda
   Posta): PDF anche scansionati (OCR), Word, Excel, PowerPoint vecchi e nuovi, LibreOffice, RTF, testo, archivi, .p7m,
   winmail.dat, mail inoltrate; quello che non si legge va in «allegati_non_letti» (il comunicato resta in sospeso).
-- `strumenti/facebook.py`: dopo ogni pubblicazione mette sulla Pagina Facebook una notizia nuova (una ogni 25 minuti,
-  al massimo 35 al giorno, dalle 6 fino al giro delle 22), con la chiave nel segreto `FB_PAGE_TOKEN`; senza chiave non fa niente.
+- `strumenti/facebook.py`: dopo ogni pubblicazione mette sulla Pagina Facebook una notizia nuova (una ogni 20 minuti,
+  senza tetto al giorno, dalle 6 fino al giro delle 22; i comunicati subito), con la chiave nel segreto `FB_PAGE_TOKEN`;
+  senza chiave non fa niente.
 - L'agente (routine Claude ogni ora, 6-22) pubblica con git, in un solo commit; GitHub Actions ripubblica il sito.
 - `AGENTE.md`: le istruzioni dell'agente che aggiorna il sito.
 

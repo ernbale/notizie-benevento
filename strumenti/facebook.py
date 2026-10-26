@@ -12,15 +12,15 @@ notizia e la sua scheda sono già online quando Facebook le legge.
   Facebook rifiuta la foto, il solo testo, sempre con «Leggi tutto».
 
 - Le notizie dei comunicati arrivati per posta («subito», giro lampo) escono appena ci sono, senza pausa né tetto.
-- Al massimo una notizia ogni PAUSA_MINUTI (25) e MAX_GIORNO (35) al giorno, solo dalle 6
-  fino al giro delle 22 compreso, come i giri: senza raffiche che sembrano spam (scelta del proprietario: 23 ott 2026
-  50 minuti e 20 al giorno; 24 ott 2026 «aumenta i limiti» → 25 minuti e 35, con un giro in più alle :40 che fa
-  partire il Pi, curiosita_via.py --giro: ieri su 44 notizie ne erano uscite 13). Dalle 23 alle 24 solo le allerte
+- Una notizia ogni PAUSA_MINUTI (20), senza tetto al giorno, solo dalle 6 fino al giro delle 22 compreso: senza
+  raffiche che sembrano spam (scelte del proprietario: 23 ott 2026 50 minuti e 20 al giorno; 24 ott «aumenta i limiti»
+  → 25 minuti e 35; 26 ott, dopo la raffica delle 15:17 senza nessun limite, «nessun tetto ma distanziati almeno ogni
+  15/20 minuti, i comunicati vengono pubblicati tutti»). Il Pi fa partire la pubblicazione alle :00, :20 e :40
+  (curiosita_via.py --giro), così c'è sempre un'occasione ogni 20 minuti. Dalle 23 alle 24 solo le allerte
   arancioni o rosse (allerta_seria): è il giro della sera prima di un'allerta arancione o rossa, con le scuole chiuse
   per domani. La gialla alle 23 no (scelta del proprietario, 23 ott 2026: vale per Facebook, Telegram e Instagram).
 - Dalle RIEPILOGO_DALLE il riepilogo della giornata («Il Sannio oggi»): la copertina di Instagram (pagine.py) con le
-  notizie più importanti di oggi e i loro link. È in più delle MAX_GIORNO notizie (scelta del proprietario, 23 ott 2026: «20 +
-  riepilogo per entrambi») e dopo, fino al mattino, solo le allerte delle 23.
+  notizie più importanti di oggi e i loro link, una volta; dopo le notizie continuano a uscire, una ogni PAUSA_MINUTI.
 - Sceglie la più importante tra le notizie delle ultime 12 ore non ancora pubblicate (stessa importanza della prima
   pagina del sito: rilevante e numero di fonti, che calano col tempo).
 - Cosa è già uscito lo legge dalla Pagina stessa (i link dei post): niente file da tenere nel repository. Se Facebook
@@ -47,8 +47,7 @@ import urllib.request
 SITO = "https://notiziebenevento.it"
 PAGINA = "Notizie Benevento"
 GRAPH = "https://graph.facebook.com"
-MAX_GIORNO = 35
-PAUSA_MINUTI = 25
+PAUSA_MINUTI = 20
 ORE_FINESTRA = 12
 RIEPILOGO_DALLE = 20   # il riepilogo della giornata, su Facebook e su Instagram (dalle 20: voluto dal proprietario)
 RIEPILOGO_PAUSA = 30   # minuti dall'ultimo post
@@ -356,7 +355,7 @@ def main():
         notizie = json.load(f).get("notizie", [])
 
     if a.prova:
-        for n, agg in coda(notizie, {}, adesso)[:MAX_GIORNO]:
+        for n, agg in coda(notizie, {}, adesso)[:40]:
             foto = "le foto inviate" if n.get("foto_inviate") and not agg else scheda(n) or "nessuna immagine: solo testo"
             print(f"- {n['id']}{' (aggiornamento)' if agg else ''}\n  foto: {foto}\n  "
                   + testo_post(n, agg).replace("\n", "\n  ") + "\n")
@@ -384,15 +383,8 @@ def main():
         print(f"Facebook: pubblicata subito {n['id']} (comunicato, {oggi} oggi)")
     if urgenti:
         return
-    if not sera:
-        if riepilogo:
-            print("Facebook: il riepilogo di oggi è già uscito, a domani")
-            return
-        if adesso.hour >= RIEPILOGO_DALLE and fai_riepilogo(token, a, notizie, adesso, ultimo):
-            return
-        if oggi >= MAX_GIORNO:
-            print(f"Facebook: già {oggi} notizie oggi (il massimo è {MAX_GIORNO}, più il riepilogo), basta così")
-            return
+    if not sera and not riepilogo and adesso.hour >= RIEPILOGO_DALLE and fai_riepilogo(token, a, notizie, adesso, ultimo):
+        return
     subito = int(os.environ.get("FB_SUBITO") or 0)   # solo quando lo chiede il proprietario, dal pulsante di GitHub
     if not subito and ultimo and adesso - ultimo < dt.timedelta(minutes=PAUSA_MINUTI):
         print(f"Facebook: l'ultimo post è delle {ultimo:%H:%M}, aspetto")
@@ -406,7 +398,7 @@ def main():
     if not lista:
         print("Facebook: nessuna notizia nuova da pubblicare")
         return
-    for n, agg in lista[:max(1, min(max(subito, 1), MAX_GIORNO - oggi))]:
+    for n, agg in lista[:max(subito, 1)]:
         pubblica(token, n, agg)
         oggi += 1
         cosa = "pubblicato l'aggiornamento di" if agg else "pubblicata"

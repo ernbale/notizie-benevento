@@ -3,19 +3,19 @@
 
 Lo esegue GitHub dopo ogni pubblicazione del sito, come facebook.py, che ne è il modello:
 - Le notizie dei comunicati arrivati per posta («subito», giro lampo) escono appena ci sono, senza pausa né tetto.
-- Al massimo una notizia ogni PAUSA_MINUTI e MAX_GIORNO al giorno, dalle 6 fino al giro delle 22 compreso
-  (come Facebook: 25 minuti e 35 al giorno, scelta del proprietario il 24 ott 2026; prima 50 minuti e 20, all'inizio
-  90 minuti e 8).
+- Una notizia ogni PAUSA_MINUTI, senza tetto al giorno, dalle 6 fino al giro delle 22 compreso (come Facebook: 20
+  minuti, scelta del proprietario il 26 ott 2026, «nessun tetto ma distanziati almeno ogni 15/20 minuti»; prima 25
+  minuti e 35 al giorno, 50 e 20, all'inizio 90 minuti e 8).
 - Sceglie la più importante tra le notizie delle ultime 12 ore non ancora uscite (stessa importanza di facebook.py).
 - L'immagine è img/ig/<id>.jpg (1080×1350, la fa pagine.py): titolo grande e, se c'è, la foto illustrativa con la
   scritta che è fatta con l'intelligenza artificiale. Instagram la scarica dal sito, che deve essere già online.
 - Cosa è già uscito lo legge da Instagram stesso (il link della notizia scritto nella didascalia).
 - Dalle RIEPILOGO_DALLE, come ultimo post del giorno, il riepilogo della giornata («Il Sannio oggi»): un carosello con
   la copertina e le immagini delle notizie più importanti uscite oggi. La scelta e la copertina le fa pagine.py
-  (img/ig/oggi.json), così sul sito c'è già tutto quando Instagram scarica le immagini. È in più delle MAX_GIORNO
-  notizie (scelta del proprietario, 23 ott 2026: «20 + riepilogo per entrambi»); il riepilogo e le chiusure non contano.
+  (img/ig/oggi.json), così sul sito c'è già tutto quando Instagram scarica le immagini. Dopo il riepilogo le notizie
+  continuano a uscire.
 - Alle 23 (il giro delle sere di allerta) solo la notizia di un'allerta arancione o rossa, come su Facebook e
-  Telegram, anche dopo il riepilogo e oltre MAX_GIORNO: è la più utile per chi ha figli a scuola. La gialla no.
+  Telegram: è la più utile per chi ha figli a scuola. La gialla no.
 - La chiave è la stessa della Pagina (segreto FB_PAGE_TOKEN), con i permessi instagram_basic e
   instagram_content_publish. Senza account Instagram collegato alla Pagina non fa niente.
 
@@ -38,8 +38,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from facebook import (AGG, LIMITE_META, PAGINA, RIEPILOGO_DALLE, RIEPILOGO_PAUSA, SITO, TITOLO_RIEPILOGO,  # come Facebook
                       allerta_seria, candidate, chiama, coda, fuso, quando, rilievo, titoli_usciti)
 
-MAX_GIORNO = 35
-PAUSA_MINUTI = 25
+PAUSA_MINUTI = 20
 FERMO_MINUTI = 60   # quando Meta dice «troppe richieste» non la si chiama per un'ora (il suo conto è sull'ultima ora)
 DALLE, ALLE = 6, 23   # come facebook.py
 QUANTE, ALMENO = 5, 3  # notizie nel riepilogo; con meno di ALMENO notizie oggi niente riepilogo
@@ -254,10 +253,7 @@ def giro(a, notizie, adesso, token, sera):
                 return
         print("Instagram: sono le 23, a quest'ora si pubblicano solo le allerte arancioni o rosse")
         return
-    if riepilogo:
-        print("Instagram: il riepilogo di oggi è già uscito, a domani")
-        return
-    if adesso.hour >= RIEPILOGO_DALLE:
+    if not riepilogo and adesso.hour >= RIEPILOGO_DALLE:
         r = riepilogo_pronto(a.sito, notizie, adesso)
         if r and ultimo and adesso - ultimo < dt.timedelta(minutes=RIEPILOGO_PAUSA):
             print(f"Instagram: l'ultimo post è delle {ultimo:%H:%M}, il riepilogo al prossimo giro")
@@ -267,9 +263,6 @@ def giro(a, notizie, adesso, token, sera):
             print(f"Instagram: pubblicato il riepilogo della giornata ({len(r[1])} notizie, {oggi + 1} post oggi)")
             return
         print("Instagram: niente riepilogo oggi (poche notizie o immagini non ancora online)")
-    if oggi >= MAX_GIORNO:
-        print(f"Instagram: già {oggi} notizie oggi (il massimo è {MAX_GIORNO}, più il riepilogo), basta così")
-        return
     if ultimo and adesso - ultimo < dt.timedelta(minutes=PAUSA_MINUTI):
         print(f"Instagram: l'ultimo post è delle {ultimo:%H:%M}, aspetto")
         return
