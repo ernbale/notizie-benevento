@@ -7,6 +7,11 @@ Questo file è per le sessioni di lavoro col proprietario, da qualsiasi posto (P
 claude.ai/code dal telefono): qui c'è quello che serve per riprendere il lavoro senza la memoria del singolo computer.
 
 ## Il proprietario
+- ⛔ **Regola fondamentale: mai il suo nome e cognome, né la sua email,** in niente di pubblico: commit, file del repo,
+  sito, social, mail (lui, 26 ott 2026: «assolutamente nessun nome e cognome», «regola fondamentale nessun nome e
+  cognome mio»). I commit si firmano `Claude <noreply@anthropic.com>`: dove git non ha un'identità, usa
+  `git -c user.name=Claude -c user.email=noreply@anthropic.com commit …`. Il 26 ott la storia del repo è stata
+  riscritta per toglierli: non rimetterli.
 - Rispondi **sempre in italiano**. Scrive veloce, con refusi, spesso con uno screenshot: capisci cosa intende.
 - Lavori grossi: prima il progetto, poi il codice. Ritocchi: diretti.
 - Le regole che chiede per l'agente vanno nei file delle istruzioni (AGENTE.md, COMUNICATI.md), **con la data e le sue
