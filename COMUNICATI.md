@@ -140,6 +140,12 @@ riuscita» (o cosa non va) con l'esito dei comandi. In prova non pubblichi nient
    Se l'evento c'è già, mettilo in «eventi» con il **suo stesso id**, completo e aggiornato con il programma, le fonti
    e la locandina del comunicato. strumenti/comunicati.py dà ERRORE se un evento nuovo somiglia a uno che c'è già.
    - **Rileggi** frase per frase col comunicato accanto: c'è scritto proprio così? Togli ogni frase che non trovi.
+   - **Poi la prova al contrario** (lui, 26 ott 2026: «leggere bene tutti i comunicati e gli articoli degli altri,
+     nessuna figuraccia nel nostro articolo»): rileggi da capo il comunicato, gli allegati e la locandina e cerca nel
+     nostro articolo ogni dato che serve al lettore (giorno, ora, luogo, prezzo, come prenotare, chi organizza, chi
+     parla): c'è, è scritto uguale ed è legato a quello giusto (un prezzo all'aperitivo, non alla tessera)? Chi ci
+     ha mandato il comunicato leggerà il nostro articolo: non deve trovarci niente di sbagliato, di dimenticato o di
+     capito male. È AGENTE.md, «Come lavorare una notizia», punto 5.
 5. Scrivi `/tmp/comunicati_esito.json` (il formato è in testa a strumenti/comunicati.py): le notizie nuove in
    «notizie», gli eventi nuovi o aggiornati in «eventi» (punto 4 bis) e un esito per OGNI comunicato del punto 1 in
    «esiti». Poi

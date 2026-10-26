@@ -420,6 +420,14 @@ Regole:
      sua: allora si vede. Quando aggiorni una notizia ufficiale, `"ufficiale": true` resta dov'è.
 5. **Rileggi prima di pubblicare** (obbligatorio), per ogni notizia nuova o cambiata:
    - ogni frase dell'articolo ha almeno una fonte che hai davvero letto, e la fonte dice proprio quello?
+   - **la prova al contrario** (voluta dal proprietario il 26 ott 2026: «leggere bene tutti i comunicati e gli
+     articoli degli altri, nessuna figuraccia nel nostro articolo»): riapri ogni fonte e rileggila da capo, non a
+     memoria, compresi allegati, PDF e locandina (con Read). Ogni dato che serve al lettore (giorno, ora, luogo,
+     prezzo, come prenotare, chi organizza, chi parla) è nel nostro articolo e scritto uguale? Un prezzo o un dato
+     va legato a quello a cui si riferisce, come nella fonte (i 10 euro dell'aperitivo non sono il costo della
+     tessera). Non scrivere mai che una cosa non si sa, non è stata detta o non è indicata se sta scritta in una
+     fonte. Immagina che il nostro articolo lo legga chi ha scritto il comunicato o l'articolo da cui viene: non deve
+     trovarci un dato sbagliato, uno dimenticato o uno capito male;
    - il racconto si capisce da solo, da chi non ha letto nessun giornale? dice chi è chi, dove e perché?
    - il racconto parla dei fatti e non di come li hai saputi (niente «secondo la locandina», «con un comunicato
      stampa»)? letto ad alta voce, ogni frase suona naturale e in italiano corretto?
