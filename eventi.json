@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T15:06+01:00",
+ "aggiornato": "2026-10-26T13:09+01:00",
  "eventi": [
   {
    "id": "mostra-cosmogonie-meact-torrecuso-2026",
@@ -188,6 +188,12 @@
       "NTR24",
       "L'eco del Sannio"
      ]
+    },
+    {
+     "testo": "Il festival si è chiuso domenica 25 ottobre: le canzoni inedite le ha vinte Rita Salvarezza con «Munno astritto», il Premio Sergio Bruni Massimo Masiello con «Tutta pe' mme».",
+     "fonti": [
+      "Cronache del Sannio"
+     ]
     }
    ],
    "fonti": [
@@ -202,10 +208,17 @@
      "titolo": "Autunno Chitarristico e Sannio Festival della Canzone Napoletana: a Benevento concerti, masterclass e ricerca musicale",
      "url": "https://www.ecodelsannio.it/2026/10/15/autunno-chitarristico-e-sannio-festival-della-canzone-napoletana-a-benevento-concerti-masterclass-e-ricerca-musicale/",
      "data": "15 ott"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "titolo": "Sannio Festival, successo per la VI edizione: premiati Massimo Masiello e Rita Salvarezza",
+     "url": "https://www.cronachedelsannio.it/sannionews24/sanniofestival-successo-premiati-masiello-salvarezza/",
+     "data": "26 ott"
     }
    ],
    "immagine": "mandolino",
-   "foto": "mandolino"
+   "foto": "mandolino",
+   "notizia": "benevento-sannio-festival-2026-vincono-salvarezza-masiello"
   },
   {
    "id": "festa-castagna-birra-san-giorgio-del-sannio-2026",
@@ -537,6 +550,12 @@
      "fonti": [
       "TeleradioNews"
      ]
+    },
+    {
+     "testo": "Per la sagra le strade della festa (via Roma, viale e via Bracanelli, piazza SS. Trinità, via Falluto e piazza San Menna) sono chiuse al traffico e alla sosta: il 29 e 30 ottobre dalle 14 a mezzanotte, il 31 ottobre e il 1° novembre dalle 9 a mezzanotte.",
+     "fonti": [
+      "Comune di Vitulano"
+     ]
     }
    ],
    "notizia": "sagra-castagna-vitulano",
@@ -564,6 +583,12 @@
      "titolo": "Al via la 33ª Sagra della Castagna e del Pecorino Vitulanese dal 29 ottobre al 1° novembre",
      "url": "https://www.infosannionews.it/attualita/2026/al-via-la-33a-sagra-della-castagna-e-del-pecorino-vitulanese-dal-29-ottobre-al-1-novembre.html",
      "data": "19 ott"
+    },
+    {
+     "nome": "Comune di Vitulano",
+     "titolo": "Chiusura al traffico veicolare e divieto di sosta sulle strade interessate dalla “XXXIII EDIZIONE SAGRA DELLA CASTAGNA”.",
+     "url": "https://comune.vitulano.bn.it/albo-pretorio/?dettaglio_id=306123",
+     "data": "26 ott"
     }
    ],
    "immagine": "castagne",

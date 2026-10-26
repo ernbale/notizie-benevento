@@ -1,7 +1,331 @@
 {
- "aggiornato": "2026-10-26T12:15+01:00",
+ "aggiornato": "2026-10-26T13:15+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-sciopero-gls-pezzapiana-cambio-appalto",
+   "titolo": "Benevento, sciopero dei lavoratori GLS a Pezzapiana contro i cambi d'appalto: consegne a rischio",
+   "titolo_google": "Sciopero GLS a Benevento: consegne a rischio a Pezzapiana",
+   "sintesi": "Lunedì 26 ottobre i lavoratori del magazzino GLS di contrada Pezzapiana, a Benevento, hanno scioperato con il sindacato Si Cobas contro il terzo cambio d'appalto in pochi mesi. Adesione al 95%: a rischio circa 4mila consegne al giorno.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "immagine": "protesta",
+   "pubblicato": "2026-10-26T12:42:00+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/442189/sciopero-corrieri-gls-a-benevento-a-rischio-le-consegne.shtml"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/26/benevento-sciopero-dei-lavoratori-della-gls-basta-precarieta-e-cambi-dappalto/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Lunedì 26 ottobre i lavoratori del magazzino GLS di Benevento, l'azienda di spedizioni e consegne, hanno incrociato le braccia davanti alla sede di contrada Pezzapiana, nella zona industriale. Lo sciopero l'ha organizzato il sindacato Si Cobas e ha aderito il 95% dei lavoratori della struttura.",
+      "fonti": [
+       "NTR24",
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Dal magazzino partono ogni giorno circa 4mila consegne, che con lo sciopero rischiano di saltare o di arrivare in ritardo in città e in provincia. Il magazzino è gestito per GLS dalla società Argo.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Il motivo della protesta è l'ennesimo cambio d'appalto: il terzo in pochi mesi, dice Giuseppe D'Alesio, coordinatore provinciale del Si Cobas. Secondo il sindacato ogni passaggio da una ditta all'altra lascia i lavoratori senza garanzie sul TFR (la liquidazione) e sul giusto inquadramento nel contratto; D'Alesio parla di «un sistema di scatole cinesi» e se la prende con gli appalti al massimo ribasso.",
+      "fonti": [
+       "NTR24",
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "I lavoratori chiedono di tenere il posto di lavoro, il rispetto del contratto collettivo nazionale, il pagamento corretto di straordinari, ferie e mensilità aggiuntive e un aumento dello stipendio. Il sindacato fa sapere che la protesta andrà avanti finché il gruppo Argo e GLS non daranno risposte.",
+      "fonti": [
+       "NTR24",
+       "Ottopagine"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Lo sciopero davanti al magazzino GLS di Pezzapiana gestito dalla società Argo, l'adesione del 95%, il Si Cobas e il terzo cambio d'appalto in pochi mesi.",
+      "fonti": [
+       "NTR24",
+       "Ottopagine"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Se GLS e Argo hanno risposto al sindacato e quanto durerà lo sciopero."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Sciopero corrieri GLS a Benevento: a rischio le consegne",
+      "url": "https://www.ottopagine.it/bn/attualita/442189/sciopero-corrieri-gls-a-benevento-a-rischio-le-consegne.shtml",
+      "data": "26 ott, 12:32"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Benevento, sciopero dei lavoratori della GLS: “Basta precarietà e cambi d’appalto”",
+      "url": "https://www.ntr24.tv/2026/10/26/benevento-sciopero-dei-lavoratori-della-gls-basta-precarieta-e-cambi-dappalto/",
+      "data": "26 ott, 12:42"
+     }
+    ]
+   },
+   "foto": "protesta-13"
+  },
+  {
+   "id": "vitulano-sagra-castagna-strade-chiuse-29-ottobre-1-novembre",
+   "titolo": "Vitulano, per la Sagra della castagna strade del centro chiuse al traffico dal 29 ottobre al 1° novembre",
+   "titolo_google": "Vitulano, strade chiuse per la Sagra della castagna: orari",
+   "sintesi": "Per la 33ª Sagra della castagna e del pecorino vitulanese il Comune di Vitulano chiude al traffico e alla sosta via Roma, viale e via Bracanelli, piazza SS. Trinità, via Falluto e piazza San Menna: giovedì 29 e venerdì 30 ottobre dalle 14 a mezzanotte, sabato 31 e domenica 1° novembre dalle 9 a mezzanotte.",
+   "categoria": "strade",
+   "zona": "telesina",
+   "luogo": "Vitulano",
+   "immagine": "strada-chiusa",
+   "pubblicato": "2026-10-26",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "in_vigore_dal": "2026-10-26",
+   "in_vigore_fino": "2026-11-01",
+   "traffico": "chiusa",
+   "fonti": [
+    {
+     "nome": "Comune di Vitulano",
+     "url": "https://comune.vitulano.bn.it/albo-pretorio/?dettaglio_id=306123",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Per la 33ª edizione della Sagra della castagna e del pecorino vitulanese, dal 29 ottobre al 1° novembre, il Comune di Vitulano chiude al traffico e vieta la sosta nelle strade della festa: via Roma, viale Bracanelli (compreso lo spazio accanto all'edificio delle elementari), via Bracanelli, piazza SS. Trinità, la prima salita SS. Trinità, via Francesco Falluto e piazza San Menna.",
+      "fonti": [
+       "Comune di Vitulano"
+      ]
+     },
+     {
+      "testo": "Gli orari: giovedì 29 e venerdì 30 ottobre dalle 14 a mezzanotte; sabato 31 ottobre e domenica 1° novembre dalle 9 a mezzanotte. Le auto lasciate in sosta in quelle strade vengono portate via con il carro attrezzi. Possono passare solo i mezzi di soccorso, le forze dell'ordine e le auto con il permesso per disabili.",
+      "fonti": [
+       "Comune di Vitulano"
+      ]
+     },
+     {
+      "testo": "Già da lunedì 26 a giovedì 29 ottobre nelle stesse strade il traffico è limitato per montare le casette di legno e le attrezzature della sagra: i lavori vanno fatti lontano dalle ore di punta e dagli orari di entrata e uscita degli alunni. I cartelli li mette la Polizia municipale.",
+      "fonti": [
+       "Comune di Vitulano"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Dove sono i parcheggi per chi va alla sagra: l'ordinanza non lo dice."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Vitulano",
+      "titolo": "Chiusura al traffico veicolare e divieto di sosta sulle strade interessate dalla “XXXIII EDIZIONE SAGRA DELLA CASTAGNA”.",
+      "url": "https://comune.vitulano.bn.it/albo-pretorio/?dettaglio_id=306123",
+      "data": "26 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "foto": "strada-chiusa-5"
+  },
+  {
+   "id": "colle-sannita-via-gradoni-vittorio-emanuele-fibra-4-novembre",
+   "titolo": "Colle Sannita, mercoledì 4 novembre strada ristretta in via Gradoni Vittorio Emanuele per la fibra",
+   "titolo_google": "Colle Sannita, via Gradoni ristretta il 4 novembre per la fibra",
+   "sintesi": "Mercoledì 4 novembre, dalle 9 alle 17, a Colle Sannita la strada è chiusa in parte all'altezza del civico 6 di via Gradoni Vittorio Emanuele, per gli scavi di Open Fiber che collega le case alla fibra ottica.",
+   "categoria": "strade",
+   "zona": "fortore",
+   "luogo": "Colle Sannita",
+   "immagine": "lavori-stradali",
+   "pubblicato": "2026-10-26",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "in_vigore_dal": "2026-11-04",
+   "in_vigore_fino": "2026-11-04",
+   "traffico": "ristretta",
+   "fonti": [
+    {
+     "nome": "Comune di Colle Sannita",
+     "url": "https://www.halleyweb.com/c062025/mc/mc_p_dettaglio.php?id_pubbl=7362",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Mercoledì 4 novembre, dalle 9 alle 17, a Colle Sannita via Gradoni Vittorio Emanuele resta aperta solo in parte all'altezza del civico 6. Lo ha deciso il sindaco con un'ordinanza, su richiesta di Open Fiber, la società che porta la fibra ottica: deve fare scavi per collegare le case alla rete veloce.",
+      "fonti": [
+       "Comune di Colle Sannita"
+      ]
+     },
+     {
+      "testo": "Nel tratto dei lavori ci saranno i cartelli di cantiere e due strettoie. La ditta deve mettere i cartelli con le deviazioni, far passare i residenti quando serve e rimettere la strada com'era a lavori finiti.",
+      "fonti": [
+       "Comune di Colle Sannita"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di Colle Sannita",
+      "titolo": "Disciplina temporanea della circolazione stradale - Chiusura parziale al transito veicolare della strada \"Via Gradoni Vittorio Emanuele\" presso il Comune di Colle Sannita.",
+      "url": "https://www.halleyweb.com/c062025/mc/mc_p_dettaglio.php?id_pubbl=7362",
+      "data": "26 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "foto": "lavori-stradali-15"
+  },
+  {
+   "id": "sant-angelo-a-cupolo-buoni-libri-riaperti-termini-30-ottobre",
+   "titolo": "Sant'Angelo a Cupolo, riaperte le domande per i buoni libri: c'è tempo fino al 30 ottobre",
+   "titolo_google": "Buoni libri a Sant'Angelo a Cupolo: domande fino al 30 ottobre",
+   "sintesi": "Il Comune di Sant'Angelo a Cupolo ha riaperto le domande per il contributo sui libri di testo dell'anno scolastico 2026/2027: si possono presentare dal 26 ottobre fino alla mezzanotte del 30 ottobre. La proroga serve alle famiglie rimaste indietro con l'ISEE.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Sant'Angelo a Cupolo",
+   "immagine": "libri",
+   "pubblicato": "2026-10-26",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "in_vigore_fino": "2026-10-30",
+   "fonti": [
+    {
+     "nome": "Comune di Sant'Angelo a Cupolo",
+     "url": "https://comune.santangeloacupolo.bn.it/novita/avviso-di-riapertura-dei-termini-per-richieste-buoni-libri-as-20262027/",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Sant'Angelo a Cupolo si torna a poter chiedere i buoni libri, il contributo per avere gratis o a metà prezzo i libri di testo dell'anno scolastico 2026/2027. Il Comune ha riaperto i termini: le domande si possono mandare da lunedì 26 ottobre fino alla mezzanotte di venerdì 30 ottobre.",
+      "fonti": [
+       "Comune di Sant'Angelo a Cupolo"
+      ]
+     },
+     {
+      "testo": "Il Comune spiega che la proroga serve alle famiglie che non ce l'hanno fatta in tempo perché i CAF erano sommersi di richieste per l'ISEE e perché i siti per mandare le domande hanno avuto rallentamenti. Il contributo è quello previsto dalla legge 448 del 1998 e da una delibera della Regione Campania.",
+      "fonti": [
+       "Comune di Sant'Angelo a Cupolo"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di Sant'Angelo a Cupolo",
+      "titolo": "Avviso di riapertura dei termini per richieste Buoni Libri A.S. 2026/2027",
+      "url": "https://comune.santangeloacupolo.bn.it/novita/avviso-di-riapertura-dei-termini-per-richieste-buoni-libri-as-20262027/",
+      "data": "26 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "foto": "libri-7"
+  },
+  {
+   "id": "benevento-sannio-festival-2026-vincono-salvarezza-masiello",
+   "titolo": "Benevento, Sannio Festival della canzone napoletana: vince Rita Salvarezza, a Massimo Masiello il Premio Sergio Bruni",
+   "titolo_google": "Sannio Festival 2026 a Benevento: vince Rita Salvarezza",
+   "sintesi": "Si è chiusa domenica 25 ottobre al Teatro San Vittorino la sesta edizione del Sannio Festival della voce e della canzone napoletana del Conservatorio «Nicola Sala». Il festival delle canzoni inedite l'ha vinto Rita Salvarezza con «Munno astritto»; il Premio Sergio Bruni è andato a Massimo Masiello.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "immagine": "concerto",
+   "pubblicato": "2026-10-26T12:56:00+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/sanniofestival-successo-premiati-masiello-salvarezza/"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/26/successo-per-il-sannio-festival-tre-giorni-dedicati-alla-canzone-napoletana-tra-concerti-libri-e-premi-alla-carriera/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Rita Salvarezza ha vinto la sesta edizione del Sannio Festival della voce e della canzone napoletana con «Munno astritto», canzone inedita scritta da Salvarezza e D'Angelo: oltre al primo posto ha avuto una borsa di studio di 500 euro dell'associazione Anema e core. Secondo Massimo Masiello, terzo Tino Brigandi. Il festival, organizzato dal Conservatorio statale di musica «Nicola Sala» di Benevento, si è chiuso domenica 25 ottobre al Teatro San Vittorino.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Sabato 24 la giuria aveva dato il Premio Sergio Bruni, per la migliore interpretazione di una canzone napoletana già nota, a Massimo Masiello con «Tutta pe' mme»; secondo Tino Brigandi, terza Mena Cacciapuoti.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "In tre giorni, dal 23 al 25 ottobre, ci sono stati concerti, masterclass e presentazioni di libri. Venerdì l'Orchestra stabile della canzone napoletana del Conservatorio, diretta da Luigi Ottaiano, ha suonato l'omaggio ad Angela Luce. I premi alla carriera sono andati a Giovanni Mauriello, all'editore Maurizio Cuzzolin, al cantante Antonello Rondi e, domenica, a Miranda Martino, Gloria Christian e Maurizio Casagrande.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "I vincitori: Rita Salvarezza per le canzoni inedite e Massimo Masiello per il Premio Sergio Bruni; il festival al Teatro San Vittorino dal 23 al 25 ottobre.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Sannio Festival, successo per la VI edizione: premiati Massimo Masiello e Rita Salvarezza",
+      "url": "https://www.cronachedelsannio.it/sannionews24/sanniofestival-successo-premiati-masiello-salvarezza/",
+      "data": "26 ott, 12:56"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Successo per il Sannio Festival: tre giorni dedicati alla canzone napoletana tra concerti, libri e premi alla carriera",
+      "url": "https://www.ntr24.tv/2026/10/26/successo-per-il-sannio-festival-tre-giorni-dedicati-alla-canzone-napoletana-tra-concerti-libri-e-premi-alla-carriera/",
+      "data": "26 ott, 12:55"
+     }
+    ]
+   },
+   "foto": "concerto"
+  },
   {
    "id": "forchia-appia-auto-contro-cancello-morto-74enne",
    "titolo": "Forchia, auto contro un cancello sulla statale Appia: morto un 74enne di Cervinara",
@@ -10,7 +334,7 @@
    "categoria": "cronaca",
    "zona": "caudina",
    "luogo": "Forchia",
-   "pubblicato": "2026-10-26T12:02:00+01:00",
+   "pubblicato": "2026-10-26T12:57:00+01:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
@@ -21,6 +345,18 @@
     {
      "nome": "BeneventoNews24",
      "url": "https://www.beneventonews24.it/2026/10/26/tragico-incidente-sulla-via-appia-si-schianta-contro-un-cancello-muore-74enne-caudino/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/forchia-perde-controllo-auto-finisce-cancello-muore-settantaquatrenne/"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/perde-il-controllo-della-sua-fiat-panda-andando-sbattere-contro-il-cancello-ferro-di-unabitazione"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/442192/tragico-incidente-in-valle-caudina-muore-un-pensionato.shtml"
     }
    ],
    "articolo": {
@@ -29,21 +365,33 @@
       "testo": "Un uomo di 74 anni, che abitava a Cervinara, è morto lunedì 26 ottobre in un incidente sulla statale 7 Appia, nel territorio di Forchia, in Valle Caudina. Verso le 10 ha perso il controllo della sua Fiat Panda, è uscito di strada ed è finito contro il cancello in ferro di una casa. È morto sul colpo.",
       "fonti": [
        "Anteprima24",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Cronache del Sannio",
+       "Gazzetta di Benevento",
+       "Ottopagine"
       ]
      },
      {
       "testo": "Alcuni automobilisti che passavano hanno provato ad aiutarlo, ma quando è arrivata l'ambulanza del 118 di Airola non c'era più niente da fare. Sono intervenuti anche i Vigili del fuoco del distaccamento di Bonea e i Carabinieri della Compagnia di Montesarchio, che hanno fatto i rilievi.",
       "fonti": [
        "Anteprima24",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Cronache del Sannio",
+       "Gazzetta di Benevento"
+      ]
+     },
+     {
+      "testo": "Lo schianto è avvenuto al chilometro 232 della statale, nel tratto tra Airola e Forchia, contro la recinzione di una casa privata. I Carabinieri hanno sequestrato l'auto e la salma è stata portata all'obitorio per gli eventuali accertamenti del medico legale.",
+      "fonti": [
+       "Ottopagine"
       ]
      },
      {
       "testo": "Le cause sono ancora da chiarire. Dai primi controlli non risultano altri veicoli coinvolti e non si esclude che l'uomo si sia sentito male prima dello schianto. Sulla statale ci sono stati rallentamenti, mentre si aspettava il permesso del magistrato per portare via la salma.",
       "fonti": [
        "Anteprima24",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Ottopagine"
       ]
      }
     ],
@@ -53,7 +401,10 @@
       "testo": "L'età e il paese dell'uomo (74 anni, Cervinara), la Fiat Panda finita contro un cancello sull'Appia a Forchia, i Vigili del fuoco di Bonea e i Carabinieri sul posto.",
       "fonti": [
        "Anteprima24",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Cronache del Sannio",
+       "Gazzetta di Benevento",
+       "Ottopagine"
       ]
      }
     ],
@@ -73,6 +424,24 @@
       "titolo": "Tragico incidente sulla via Appia, si schianta contro un cancello: muore 74enne caudino",
       "url": "https://www.beneventonews24.it/2026/10/26/tragico-incidente-sulla-via-appia-si-schianta-contro-un-cancello-muore-74enne-caudino/",
       "data": "26 ott, 12:02"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Forchia, perde il controllo dell’auto e finisce contro un cancello: muore 74enne",
+      "url": "https://www.cronachedelsannio.it/sannionews24/forchia-perde-controllo-auto-finisce-cancello-muore-settantaquatrenne/",
+      "data": "26 ott, 12:09"
+     },
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "Perde il controllo della sua Fiat Panda andando a sbattere contro il cancello in ferro di un'abitazione privata. Muore un 74enne di Cervinara",
+      "url": "https://www.gazzettabenevento.it/it/perde-il-controllo-della-sua-fiat-panda-andando-sbattere-contro-il-cancello-ferro-di-unabitazione",
+      "data": "26 ott, 12:24"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Tragico incidente in Valle Caudina, muore un pensionato",
+      "url": "https://www.ottopagine.it/bn/cronaca/442192/tragico-incidente-in-valle-caudina-muore-un-pensionato.shtml",
+      "data": "26 ott, 12:57"
      }
     ]
    }
@@ -307,12 +676,12 @@
   },
   {
    "id": "castelpoto-santa-croce-del-sannio-elenco-elettori-fuori-sede",
-   "titolo": "Castelpoto, Santa Croce del Sannio e Apice, aperto l'elenco degli elettori fuori sede: domande entro il 31 dicembre",
-   "titolo_google": "Elettori fuori sede a Castelpoto, Santa Croce e Apice: come fare",
-   "sintesi": "I Comuni di Castelpoto, Santa Croce del Sannio e Apice hanno aperto l'elenco degli elettori fuori sede previsto dalla nuova legge elettorale: chi per studio, lavoro o cure vive in una regione diversa da quella in cui vota può chiedere di votare dove abita. Per studio e lavoro la domanda va fatta entro il 31 dicembre, per le votazioni dell'anno dopo.",
+   "titolo": "Castelpoto, Santa Croce del Sannio, Apice e Cusano Mutri, aperto l'elenco degli elettori fuori sede: domande entro il 31 dicembre",
+   "titolo_google": "Elettori fuori sede in quattro Comuni del Sannio: come fare",
+   "sintesi": "I Comuni di Castelpoto, Santa Croce del Sannio, Apice e Cusano Mutri hanno aperto l'elenco degli elettori fuori sede previsto dalla nuova legge elettorale: chi per studio, lavoro o cure vive in una regione diversa da quella in cui vota può chiedere di votare dove abita. Per studio e lavoro la domanda va fatta entro il 31 dicembre, per le votazioni dell'anno dopo.",
    "categoria": "altro",
-   "zona": "benevento",
-   "luogo": "Castelpoto, Santa Croce del Sannio e Apice",
+   "zona": "provincia",
+   "luogo": "Castelpoto, Santa Croce del Sannio, Apice e Cusano Mutri",
    "immagine": "elezioni",
    "pubblicato": "2026-10-26",
    "stato": "ufficiale",
@@ -332,23 +701,30 @@
      "nome": "Comune di Apice",
      "url": "https://www.halleyweb.com/c062003/mc/mc_p_dettaglio.php?id_pubbl=17071",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di Cusano Mutri",
+     "url": "https://www.comune.cusanomutri.bn.it/it/novita/page/istituzione-dell-elenco-comunale-degli-elettori-fuori-sede-per-l-esercizio-del-diritto-di-voto-da-parte-degli-elettori-fuori-sede-in-occasione-delle-elezioni-politiche-ed-europee-e-dei-referendum",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Castelpoto, Santa Croce del Sannio e Apice hanno aperto l'elenco comunale degli elettori fuori sede. Lo prevede la legge 180 del 9 ottobre 2026 sulle elezioni di Camera e Senato: chi vive per un periodo in una regione diversa da quella del Comune dove è iscritto per votare può chiedere di votare nel Comune dove abita. Vale per le elezioni politiche ed europee e per i referendum, non per le elezioni comunali e regionali.",
+      "testo": "Castelpoto, Santa Croce del Sannio, Apice e Cusano Mutri hanno aperto l'elenco comunale degli elettori fuori sede. Lo prevede la legge 180 del 9 ottobre 2026 sulle elezioni di Camera e Senato: chi vive per un periodo in una regione diversa da quella del Comune dove è iscritto per votare può chiedere di votare nel Comune dove abita. Vale per le elezioni politiche ed europee e per i referendum, non per le elezioni comunali e regionali.",
       "fonti": [
        "Comune di Castelpoto",
        "Comune di Santa Croce del Sannio",
-       "Comune di Apice"
+       "Comune di Apice",
+       "Comune di Cusano Mutri"
       ],
       "giorno": "2026-10-26"
      },
      {
       "testo": "Possono chiederlo gli studenti e i lavoratori che restano fuori regione per almeno nove mesi, chi si cura per almeno tre mesi in una struttura sanitaria di un'altra regione, i familiari che li assistono e i genitori che accompagnano un figlio minorenne in cura fuori regione.",
       "fonti": [
-       "Comune di Castelpoto"
+       "Comune di Castelpoto",
+       "Comune di Cusano Mutri"
       ],
       "giorno": "2026-10-26"
      },
@@ -364,6 +740,13 @@
       "testo": "Chi abita per un periodo ad Apice e vota in un'altra regione consegna la domanda all'ufficio protocollo in piazza della Ricostruzione 1 o la manda per PEC al Comune; il modello, in PDF da compilare, è sul sito del Comune di Apice e su dait.interno.gov.it/elezioni. Vanno allegati un documento di identità e un certificato che dimostri lo studio o il lavoro fuori sede e la sua durata, che si può anche autocertificare.",
       "fonti": [
        "Comune di Apice"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "Anche Cusano Mutri, nel Matese, ha aperto l'elenco lunedì 26 ottobre. Il Comune ricorda che l'iscrizione dura un anno: chi vuole votare fuori sede anche l'anno dopo deve rifare la domanda nei tempi previsti dalla legge.",
+      "fonti": [
+       "Comune di Cusano Mutri"
       ],
       "giorno": "2026-10-26"
      }
@@ -395,14 +778,21 @@
       "url": "https://www.halleyweb.com/c062003/mc/mc_p_dettaglio.php?id_pubbl=17071",
       "data": "26 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "Comune di Cusano Mutri",
+      "titolo": "Istituzione dell'elenco comunale degli elettori fuori sede per l’esercizio del diritto di voto da parte degli elettori fuori sede in occasione delle elezioni politiche ed europee e dei referendum",
+      "url": "https://www.comune.cusanomutri.bn.it/it/novita/page/istituzione-dell-elenco-comunale-degli-elettori-fuori-sede-per-l-esercizio-del-diritto-di-voto-da-parte-degli-elettori-fuori-sede-in-occasione-delle-elezioni-politiche-ed-europee-e-dei-referendum",
+      "data": "26 ott",
+      "ufficiale": true
      }
     ],
     "aggiornamento": {
-     "testo": "Lunedì 26 ottobre anche il Comune di Apice ha aperto l'elenco degli elettori fuori sede: domande entro il 31 dicembre.",
+     "testo": "Lunedì 26 ottobre anche il Comune di Cusano Mutri ha aperto l'elenco degli elettori fuori sede.",
      "fonti": [
-      "Comune di Apice"
+      "Comune di Cusano Mutri"
      ],
-     "quando": "2026-10-26T12:15+01:00",
+     "quando": "2026-10-26T13:15+01:00",
      "titolo_prima": "Castelpoto e Santa Croce del Sannio, aperto l'elenco degli elettori fuori sede: domande entro il 31 dicembre"
     }
    },
@@ -4450,13 +4840,13 @@
   },
   {
    "id": "montesarchio-cocaina-229-grammi-donna-arrestata",
-   "titolo": "Montesarchio, 26enne arrestata con circa 230 grammi di cocaina: lunedì l'udienza di convalida",
-   "titolo_google": "Montesarchio, 230 grammi di cocaina: 26enne arrestata",
-   "sintesi": "I Carabinieri di Montesarchio hanno arrestato una 26enne trovata in auto con circa 230 grammi di cocaina in un borsello. È agli arresti domiciliari; lunedì 26 ottobre, in mattinata, c'è l'udienza di convalida.",
+   "titolo": "Montesarchio, 230 grammi di cocaina in auto: la 26enne resta ai domiciliari dopo la convalida",
+   "titolo_google": "Montesarchio, cocaina in auto: 26enne resta ai domiciliari",
+   "sintesi": "I Carabinieri di Montesarchio hanno arrestato una 26enne trovata in auto con circa 230 grammi di cocaina in un borsello. Lunedì 26 ottobre, dopo l'udienza di convalida, il giudice l'ha lasciata agli arresti domiciliari, senza braccialetto elettronico.",
    "categoria": "cronaca",
    "zona": "caudina",
    "luogo": "Montesarchio",
-   "pubblicato": "2026-10-25T16:05+01:00",
+   "pubblicato": "2026-10-26T12:59:00+01:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
@@ -4466,7 +4856,7 @@
     },
     {
      "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/montesarchio-cocaina-borsello-arrestata-26enne/"
+     "url": "https://www.anteprima24.it/benevento/arrestata-con-230-grammi-di-cocaina-26enne-resta-ai-domiciliari/"
     },
     {
      "nome": "NTR24",
@@ -4474,7 +4864,7 @@
     },
     {
      "nome": "BeneventoNews24",
-     "url": "https://www.beneventonews24.it/2026/10/25/montesarchio-26enne-arrestata-con-230-gr-di-cocaina-domani-udienza-di-convalida/"
+     "url": "https://www.beneventonews24.it/2026/10/26/montesarchio-230-grammi-di-cocaina-in-auto-26enne-resta-ai-domiciliari/"
     },
     {
      "nome": "Ottopagine",
@@ -4487,6 +4877,14 @@
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "La 26enne di Montesarchio arrestata con circa 230 grammi di cocaina resta agli arresti domiciliari. Lo ha deciso lunedì 26 ottobre il giudice per le indagini preliminari del Tribunale di Benevento, dopo l'udienza di convalida della mattina: ha confermato i domiciliari ma senza il braccialetto elettronico e senza il divieto di comunicare con altre persone. La giovane è accusata di detenzione di droga a fini di spaccio ed è difesa da due avvocati.",
+      "fonti": [
+       "Anteprima24 (26/10)",
+       "BeneventoNews24 (26/10)"
+      ],
+      "giorno": "2026-10-26"
+     },
      {
       "testo": "La 26enne di Montesarchio arrestata dai Carabinieri con circa 230 grammi di cocaina resta agli arresti domiciliari: lunedì 26 ottobre, in mattinata, c'è l'udienza di convalida dell'arresto davanti al giudice. Lo scrivono domenica 25 ottobre NTR24 e BeneventoNews24, che confermano i dettagli: i militari della stazione di Montesarchio l'hanno fermata mentre era in auto e sul sedile hanno trovato un borsello da donna con quattro involucri di cellophane. È accusata di detenzione di droga a fini di spaccio; i domiciliari li ha disposti la Procura. All'udienza sarà assistita dal suo avvocato di fiducia.",
       "fonti": [
@@ -4552,10 +4950,10 @@
      },
      {
       "data": "26 ottobre, mattina",
-      "fatto": "Udienza di convalida dell'arresto.",
+      "fatto": "Il giudice convalida e lascia la 26enne ai domiciliari, senza braccialetto elettronico.",
       "fonti": [
-       "NTR24 (25/10)",
-       "BeneventoNews24 (25/10)"
+       "Anteprima24 (26/10)",
+       "BeneventoNews24 (26/10)"
       ]
      }
     ],
@@ -4576,6 +4974,13 @@
        "NTR24 (25/10)",
        "BeneventoNews24 (25/10)"
       ]
+     },
+     {
+      "testo": "L'esito dell'udienza di convalida: domiciliari senza braccialetto elettronico e senza divieto di comunicare.",
+      "fonti": [
+       "Anteprima24 (26/10)",
+       "BeneventoNews24 (26/10)"
+      ]
      }
     ],
     "divergono": [
@@ -4587,7 +4992,6 @@
      }
     ],
     "non_si_sa": [
-     "Cosa deciderà il giudice all'udienza di convalida di lunedì 26 ottobre.",
      "Dove sia stata fermata esattamente e in quale giorno: le fonti non lo dicono."
     ],
     "fonti": [
@@ -4644,16 +5048,28 @@
       "titolo": "Fermata in auto con 230 grammi di cocaina nel borsello: arrestata una 26enne",
       "url": "https://www.anteprima24.it/benevento/montesarchio-cocaina-borsello-arrestata-26enne/",
       "data": "25 ott, 16:05"
+     },
+     {
+      "nome": "Anteprima24 (26/10)",
+      "titolo": "Arrestata con 230 grammi di cocaina: 26enne resta ai domiciliari",
+      "url": "https://www.anteprima24.it/benevento/arrestata-con-230-grammi-di-cocaina-26enne-resta-ai-domiciliari/",
+      "data": "26 ott, 12:51"
+     },
+     {
+      "nome": "BeneventoNews24 (26/10)",
+      "titolo": "Montesarchio, 230 grammi di cocaina in auto: 26enne resta ai domiciliari",
+      "url": "https://www.beneventonews24.it/2026/10/26/montesarchio-230-grammi-di-cocaina-in-auto-26enne-resta-ai-domiciliari/",
+      "data": "26 ott, 12:59"
      }
     ],
     "aggiornamento": {
-     "testo": "Lunedì 26 ottobre, in mattinata, è fissata l'udienza di convalida dell'arresto della 26enne, che resta ai domiciliari.",
+     "testo": "Lunedì 26 ottobre, dopo l'udienza di convalida, il giudice ha lasciato la 26enne agli arresti domiciliari, senza braccialetto elettronico e senza divieto di comunicare.",
      "fonti": [
-      "NTR24 (25/10)",
-      "BeneventoNews24 (25/10)"
+      "Anteprima24 (26/10)",
+      "BeneventoNews24 (26/10)"
      ],
-     "quando": "2026-10-25T12:10+01:00",
-     "titolo_prima": "Montesarchio, oltre 229 grammi di cocaina trovati a una donna: arrestata dai Carabinieri"
+     "quando": "2026-10-26T13:15+01:00",
+     "titolo_prima": "Montesarchio, 26enne arrestata con circa 230 grammi di cocaina: lunedì l'udienza di convalida"
     }
    }
   },
@@ -6191,10 +6607,33 @@
     {
      "nome": "BeneventoNews24 (formazioni)",
      "url": "https://www.beneventonews24.it/2026/10/24/arezzo-benevento-le-formazioni-ufficiali-ce-dalle-mura-cherubini-e-okereke-dal-1/"
+    },
+    {
+     "nome": "BeneventoNews24 (arbitro)",
+     "url": "https://www.beneventonews24.it/2026/10/26/benevento-catanzaro-designato-larbitro-per-il-turno-infrasettimanale-al-vigorito/"
+    },
+    {
+     "nome": "Benevento Calcio (Polio Day)",
+     "url": "https://www.beneventocalcio.club/news/comunicatistampa/7682/end-polio-now-il-benevento-calcio-insieme-al-rotary-club.shtml",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Martedì 27 ottobre alle 19 il Benevento gioca al Vigorito con il Catanzaro, nella nona giornata di Serie B. L'AIA ha scelto l'arbitro: è Alberto Poli della sezione di Verona, che ha già diretto due partite del Benevento nella scorsa stagione di Serie C, tutte e due vinte dai giallorossi.",
+      "fonti": [
+       "BeneventoNews24 (arbitro)"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "Alla partita il Benevento Calcio aderisce con il Rotary Club di Benevento al Polio Day, la giornata mondiale contro la poliomielite: allo stadio sarà diffuso un messaggio per invitare a vaccinarsi e a sostenere la campagna End Polio Now.",
+      "fonti": [
+       "Benevento Calcio (Polio Day)"
+      ],
+      "giorno": "2026-10-26"
+     },
      {
       "testo": "Sabato 24 ottobre, poco prima del fischio d'inizio delle 19:30, il Benevento e l'Arezzo hanno comunicato le formazioni. Floro Flores schiera il 4-3-3: in porta Vannucchi; in difesa Pierozzi, Scognamillo, Dalle Mura e Beruatto; a centrocampo Siatounis, Maita e Kouan; in attacco Okereke, Salvemini e Cherubini. Dalle Mura gioca al posto di Saio, che resta in panchina. L'Arezzo di Cristian Bucchi risponde con un altro 4-3-3 guidato davanti da Arena, Cerri e Tavernelli.",
       "fonti": [
@@ -6352,14 +6791,28 @@
       "titolo": "Arezzo-Benevento, le formazioni ufficiali: c’è Dalle Mura, Cherubini e Okereke dal 1′",
       "url": "https://www.beneventonews24.it/2026/10/24/arezzo-benevento-le-formazioni-ufficiali-ce-dalle-mura-cherubini-e-okereke-dal-1/",
       "data": "24 ott, 18:53"
+     },
+     {
+      "nome": "BeneventoNews24 (arbitro)",
+      "titolo": "Benevento-Catanzaro, designato l’arbitro per il turno infrasettimanale al “Vigorito”",
+      "url": "https://www.beneventonews24.it/2026/10/26/benevento-catanzaro-designato-larbitro-per-il-turno-infrasettimanale-al-vigorito/",
+      "data": "26 ott, 12:29"
+     },
+     {
+      "nome": "Benevento Calcio (Polio Day)",
+      "titolo": "END POLIO NOW: IL BENEVENTO CALCIO INSIEME AL ROTARY CLUB",
+      "url": "https://www.beneventocalcio.club/news/comunicatistampa/7682/end-polio-now-il-benevento-calcio-insieme-al-rotary-club.shtml",
+      "data": "26 ott, 13:00",
+      "ufficiale": true
      }
     ],
     "aggiornamento": {
-     "testo": "Sabato 24 ottobre sono uscite le formazioni ufficiali di Arezzo-Benevento: Dalle Mura gioca al posto di Saio, in attacco Okereke, Salvemini e Cherubini.",
+     "testo": "Per Benevento-Catanzaro di martedì 27 ottobre alle 19 arbitra Alberto Poli di Verona; allo stadio il messaggio del Rotary per il Polio Day.",
      "fonti": [
-      "Benevento Calcio (formazioni)"
+      "BeneventoNews24 (arbitro)",
+      "Benevento Calcio (Polio Day)"
      ],
-     "quando": "2026-10-24T19:08+02:00"
+     "quando": "2026-10-26T13:15+01:00"
     }
    },
    "sport": "calcio",
