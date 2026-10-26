@@ -64,6 +64,12 @@ Oggi: una notizia ogni 20 minuti, nessun tetto, comunicati subito, classifica co
 aggiornamento col titolo diverso non è un doppione. Per togliere un post da Facebook: «Sposta nell'archivio»; su
 Instagram lo toglie lui dall'app.
 
+## Comunicati: subito solo le fonti ufficiali (dal 26 ott 2026)
+Escono subito solo quelli di enti pubblici, PEC e mittenti fidati (`~/nb-fonti/mittenti_fidati.json` sul Pi). Gli altri
+hanno `"fonte": "da_valutare"`: al proprietario arriva un avviso (WhatsApp ed email) e decide lui nella scheda Posta
+delle statistiche («Pubblica», «Pubblica e fidati del mittente», «Non pubblicare»). Non pubblicarli a mano senza il suo
+sì. Le regole sono in COMUNICATI.md.
+
 ## Facebook
 Un post uscito senza immagine (l'anteprima della notizia è stata rinominata dopo il post): sulla Pagina, menu «…» del
 post → «Aggiorna l'allegato della condivisione» → Salva. Non toccare il sito per questo.
