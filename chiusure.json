@@ -1,9 +1,10 @@
 {
- "aggiornato": "2026-10-26T07:36+01:00",
+ "aggiornato": "2026-10-26T14:21+01:00",
  "viste": [
   "1131ffc78db3",
   "a4f3f5a64d51",
-  "d12186721458"
+  "d12186721458",
+  "7df78a2436f4"
  ],
  "chiusure": [
   {
@@ -34,6 +35,11 @@
    "pista": "a4f3f5a64d51",
    "motivo": "Ordinanza di Apollosa n.41/26 per il 21/10/2026: chiusura già finita (oggi è il 23/10)",
    "quando": "2026-10-23T17:21+02:00"
+  },
+  {
+   "pista": "7df78a2436f4",
+   "motivo": "Non è una chiusura: delibera sul bonus luce e gas",
+   "quando": "2026-10-26T14:21+01:00"
   }
  ]
 }
