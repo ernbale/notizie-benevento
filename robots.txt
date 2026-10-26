@@ -4,6 +4,8 @@ Disallow: /strumenti/
 Disallow: /AGENTE.md
 Disallow: /README.md
 Disallow: /statistiche/
+# i file per aggiungere un evento al calendario: non sono pagine (Search Console li dava «scansionate ma non indicizzate»)
+Disallow: /*.ics$
 
 Sitemap: https://notiziebenevento.it/sitemap.xml
 Sitemap: https://notiziebenevento.it/sitemap-notizie.xml

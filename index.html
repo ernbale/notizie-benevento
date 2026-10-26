@@ -2198,6 +2198,7 @@
     var az = el("div", "ev-azioni", []);
     var ics = el("a", "pulsante", ["Aggiungi al calendario"]);
     ics.href = linkEvento(ev) + "evento.ics";
+    ics.rel = "nofollow";   // il file del calendario non è una pagina da cercare su Google (robots.txt)
     az.appendChild(ics);
     var gc = linkSicuro(linkGoogle(ev), "Google Calendar");
     gc.className = "pulsante";

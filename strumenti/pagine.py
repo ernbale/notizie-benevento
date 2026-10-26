@@ -1898,17 +1898,28 @@ def main():
                       ultime=ultime))
         mappa.append((url, modificato))
 
+    def rimando(path, dest, tit, frase):
+        scrivi(path, f'<!doctype html><meta charset="utf-8"><title>{e(tit)} – {NOME}</title>'
+                     f'<link rel="canonical" href="{e(dest)}"><meta name="robots" content="noindex">'
+                     f'<meta http-equiv="refresh" content="0; url={e(dest)}">'
+                     f'<script>location.replace({json.dumps(dest)})</script>'
+                     f'<p>{e(frase)} <a href="{e(dest)}">{e(tit)}</a>.</p>\n')
+
     # notizie unite in un'altra (archivio/rimandi.json): il vecchio indirizzo porta a quella rimasta
     p_rim = os.path.join(sito, "archivio", "rimandi.json")
     for vecchio, nuovo in ((leggi(p_rim).get("notizie") or {}) if os.path.exists(p_rim) else {}).items():
         if nuovo in per_id and vecchio not in per_id:
-            dest, tit = SITO + percorso("notizia", nuovo), per_id[nuovo]["titolo"]
-            scrivi(os.path.join(sito, "notizia", vecchio, "index.html"),
-                   f'<!doctype html><meta charset="utf-8"><title>{e(tit)} – {NOME}</title>'
-                   f'<link rel="canonical" href="{e(dest)}"><meta name="robots" content="noindex">'
-                   f'<meta http-equiv="refresh" content="0; url={e(dest)}">'
-                   f'<script>location.replace({json.dumps(dest)})</script>'
-                   f'<p>Questa notizia è stata unita a <a href="{e(dest)}">{e(tit)}</a>.</p>\n')
+            rimando(os.path.join(sito, "notizia", vecchio, "index.html"), SITO + percorso("notizia", nuovo),
+                    per_id[nuovo]["titolo"], "Questa notizia è stata unita a")
+
+    # le cartelle che il JavaScript delle pagine nomina da sole ("/evento/" + id): Google le prova e trovava un 404
+    # (Search Console, 26 ott 2026: /approfondimento/, /comune/, /img/temi/, /evento/). Portano all'elenco giusto.
+    for cartella, dest, tit in (("notizia", "/archivio/", "Archivio delle notizie"),
+                                ("approfondimento", "/archivio/", "Archivio delle notizie"),
+                                ("evento", "/sezione/eventi/", "Eventi a Benevento e provincia"),
+                                ("comune", "/comuni/", "Comuni del Sannio"),
+                                ("img/temi", "/chi-siamo/", "Chi siamo")):
+        rimando(os.path.join(sito, *cartella.split("/"), "index.html"), SITO + dest, tit, "Vai a")
 
     for x in appro:
         url = SITO + percorso("approfondimento", x["id"])
