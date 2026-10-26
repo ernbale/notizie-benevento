@@ -3,6 +3,78 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "benevento-bonus-luce-gas-2026-requisiti",
+   "titolo": "Benevento, bonus luce e gas da 200 a 500 euro: la Giunta fissa i requisiti",
+   "titolo_google": "Bonus luce e gas Benevento 2026: requisiti e importi",
+   "sintesi": "La Giunta comunale di Benevento ha approvato i criteri del bonus energia 2026, un contributo una tantum per pagare luce e gas: serve un Isee fino a 10.800 euro e l'importo va da 200 a 500 euro secondo il numero di persone in famiglia. Le domande si potranno presentare dopo l'avviso pubblico sull'albo pretorio, atteso nei prossimi giorni.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "immagine": "gas",
+   "luogo": "Benevento",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Comune di Benevento",
+     "url": "https://comune.benevento.it/novita/",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Benevento arriva il bonus energia 2026, un contributo una tantum, cioè dato una volta sola, per pagare le bollette di luce e gas. La Giunta comunale, presieduta dal sindaco Clemente Mastella, ha approvato il 26 ottobre la delibera che fissa i requisiti per ottenerlo e gli importi.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "Possono chiederlo i cittadini italiani o dell'Unione Europea e i cittadini di Paesi extra Ue regolarmente soggiornanti in Italia. Bisogna essere residenti nel Comune di Benevento al momento della pubblicazione dell'avviso e alla data della domanda, avere un Isee ordinario o corrente in corso di validità non superiore a 10.800 euro ed essere intestatari di almeno un'utenza domestica di luce o di gas riferita all'abitazione di residenza.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "L'importo dipende da quante persone ci sono in famiglia: 200 euro per chi vive da solo, 300 euro per due persone, 400 euro per tre e 500 euro per quattro o più. Se le domande saranno più dei soldi disponibili, il Comune farà una graduatoria: prima chi ha l'Isee più basso; a parità di Isee, la famiglia più numerosa; in caso di ulteriore parità, conta l'ordine di arrivo delle domande, secondo il numero di protocollo.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "«È una misura destinata ad aiutare le fasce indigenti», spiegano il sindaco Mastella e l'assessora alle Politiche sociali Carmen Coppola, che la legano all'aumento dei prezzi.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "Le domande non si possono ancora presentare. Come spiega l'assessora Coppola, la delibera fissa solo i criteri: i termini partiranno con la pubblicazione sull'albo pretorio dell'avviso pubblico, che il Settore Servizi al cittadino del Comune preparerà nei prossimi giorni.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di Benevento",
+      "titolo": "Bonus luce e gas, ok alla delibera con i requisiti per accedere ai contributi",
+      "url": "https://comune.benevento.it/novita/",
+      "data": "26 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "comunicati": [
+    "213bc76108d1"
+   ],
+   "subito": true,
+   "pubblicato": "2026-10-26T14:13:26+01:00",
+   "foto": "gas-4"
+  },
+  {
    "id": "airola-incendio-controlli-diossine-latte-forchia",
    "titolo": "Incendio di Airola, nuovi controlli sugli alimenti: diossine nel latte di pecora a Forchia",
    "titolo_google": "Incendio di Airola, diossine nel latte di pecora a Forchia",
