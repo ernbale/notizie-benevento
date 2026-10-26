@@ -61,6 +61,26 @@ SOGLIA_FB, SOGLIA_IG = 3, 4
 PAESI_MINUTI = 60
 GIORNI_AVVISI = 3
 AVVISI_VECCHI = False   # vedi candidate()
+# cosa è già uscito si legge dai post degli ultimi GIORNI_MEMORIA giorni, a pagine da 100 (fino al 26 ott 2026 solo gli
+# ultimi 50 post, cioè un giorno nei giorni pieni: una notizia di due giorni prima aggiornata oggi usciva di nuovo,
+# 5 doppioni tra il 25 e il 26 ott)
+GIORNI_MEMORIA = 5
+PAGINE_MAX = 8
+
+
+def tutti_i_post(percorso, token, campi, adesso, quando):
+    """I post di una Pagina (o di un account Instagram) degli ultimi GIORNI_MEMORIA giorni, pagina per pagina.
+    quando(post) dà l'ora del post."""
+    out, dopo = [], None
+    for _ in range(PAGINE_MAX):
+        r = chiama("GET", percorso, token, {"fields": campi, "limit": 100, **({"after": dopo} if dopo else {})})
+        dati = r.get("data") or []
+        out += dati
+        dopo = ((r.get("paging") or {}).get("cursors") or {}).get("after")
+        if not dati or not dopo or not (r.get("paging") or {}).get("next") \
+                or adesso - quando(dati[-1]) > dt.timedelta(days=GIORNI_MEMORIA):
+            break
+    return out
 AREA_VASTA = re.compile(r"^(sannio|provincia|campania|linea|linee|valle)\b|provincia|,| e |/", re.I)
 RIEPILOGO_DALLE = 20   # il riepilogo della giornata, su Facebook e su Instagram (dalle 20: voluto dal proprietario)
 RIEPILOGO_PAUSA = 30   # minuti dall'ultimo post
@@ -351,10 +371,11 @@ def foto_inviate(token, n, link):
 def gia_pubblicate(token, adesso):
     """Le notizie già sulla Pagina (id → titoli usciti), quante notizie oggi (il riepilogo e le chiusure non contano),
     l'ora dell'ultima, se il riepilogo di oggi c'è già e l'ora dell'ultimo post di ogni notizia (id → ora)."""
-    r = chiama("GET", "me/posts", token, {"fields": "created_time,message,attachments{unshimmed_url,url}", "limit": 50})
+    ora_post = lambda p: dt.datetime.strptime(p["created_time"], "%Y-%m-%dT%H:%M:%S%z").astimezone(fuso())
+    post = tutti_i_post("me/posts", token, "created_time,message,attachments{unshimmed_url,url}", adesso, ora_post)
     ids, oggi, ultimo, riepilogo, uscite = {}, 0, None, False, {}
-    for p in r.get("data", []):
-        t = dt.datetime.strptime(p["created_time"], "%Y-%m-%dT%H:%M:%S%z").astimezone(fuso())
+    for p in post:
+        t = ora_post(p)
         testo = p.get("message") or ""
         riepilogo |= t.date() == adesso.date() and testo.startswith(TITOLO_RIEPILOGO)
         link = [a.get("unshimmed_url") or a.get("url") or "" for a in (p.get("attachments") or {}).get("data", [])]

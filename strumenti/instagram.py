@@ -38,7 +38,7 @@ import urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from facebook import (AGG, LIMITE_META, PAGINA, RIEPILOGO_DALLE, RIEPILOGO_PAUSA, SITO, SOGLIA_IG,  # come Facebook
                       TITOLO_RIEPILOGO, allerta_seria, candidate, chiama, coda, fuso, quando, recenti, rilievo,
-                      titoli_usciti)
+                      titoli_usciti, tutti_i_post)
 
 PAUSA_MINUTI = 20
 FERMO_MINUTI = 60   # quando Meta dice «troppe richieste» non la si chiama per un'ora (il suo conto è sull'ultima ora)
@@ -99,10 +99,11 @@ def gia_pubblicate(ig, token, adesso):
     """Le notizie già uscite (id → titoli usciti), quante notizie oggi (il riepilogo, le chiusure, le curiosità e i gol
     non contano), l'ora dell'ultimo post (le curiosità e i gol non contano neanche qui), se il riepilogo di oggi c'è già
     e l'ora dell'ultimo post di ogni notizia (id → ora)."""
-    r = chiama("GET", f"{ig}/media", token, {"fields": "caption,timestamp", "limit": 50})
+    ora_post = lambda p: dt.datetime.strptime(p["timestamp"], "%Y-%m-%dT%H:%M:%S%z").astimezone(fuso())
+    post = tutti_i_post(f"{ig}/media", token, "caption,timestamp", adesso, ora_post)   # gli ultimi giorni, non 50 post
     ids, oggi, ultimo, riepilogo, uscite = {}, 0, None, False, {}
-    for p in r.get("data", []):
-        t = dt.datetime.strptime(p["timestamp"], "%Y-%m-%dT%H:%M:%S%z").astimezone(fuso())
+    for p in post:
+        t = ora_post(p)
         m = re.search(r"notiziebenevento\.it/notizia/([a-z0-9-]+)", p.get("caption") or "")
         if m:
             titoli_usciti(ids, m.group(1), p.get("caption"))
