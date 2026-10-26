@@ -258,6 +258,9 @@ ogni comunicato trattato in `comunicati_visti.json` e mette il suo `id` nel camp
   nell'elenco (ci sta già lavorando il giro lampo: sarebbero doppioni).
 - Quelli «in sospeso» (un allegato che il Pi non legge: COMUNICATI.md) nell'elenco non ci sono: li segue la sentinella,
   che avvisa il proprietario, e li riprende il giro lampo quando il Pi riesce a leggerli.
+- Nemmeno quelli dei mittenti non ufficiali (`"fonte": "da_valutare"`, dal 26 ott 2026): li valuta il proprietario e,
+  se li approva, li pubblica il giro lampo. Tu non pubblicarli, neanche se li trovi nei giornali con le stesse parole:
+  in quel caso la fonte è il giornale, come sempre.
 - Per quelli dell'elenco valgono le regole di COMUNICATI.md: se lo pubblichi metti il suo `id` in
   `"comunicati": ["…"]` della notizia (anche quando lo aggiungi a una notizia che c'è già), se lo scarti scrivi in
   «nota» cosa diceva e perché (lo controlla `archivia.py`).

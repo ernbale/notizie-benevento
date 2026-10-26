@@ -1,5 +1,12 @@
 # Il giro lampo dei comunicati
 
+**Solo le fonti ufficiali escono subito** (voluto dal proprietario il 26 ott 2026: «la pubblicazione dei comunicati
+istantanea solo da fonti ufficiali, un tizio che manda qualcosa dobbiamo valutarla», «i comunicati non ufficiali da
+valutare io»): enti pubblici, chi scrive da una PEC e i mittenti fidati. Quelli di un mittente non ufficiale
+(`"fonte": "da_valutare"` in comunicati.json) non te li dà `--da-fare`: li legge il proprietario nella scheda Posta e
+decide. Se li approva arrivano qui con «APPROVATO DAL PROPRIETARIO» e li tratti come gli altri, con le regole di
+sempre.
+
 I comunicati arrivati per posta a comunicati@notiziebenevento.it escono **subito**: sul sito e, dal sito, su Telegram,
 Facebook e Instagram. Voluto dal proprietario il 24 ott 2026, dopo il comunicato della CISL FP arrivato alle 11:51 e
 uscito solo alle 13:06, ripreso da un giornale: «questi sono comunicati ufficiali, deve essere istantanea lettura,

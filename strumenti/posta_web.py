@@ -6,6 +6,12 @@ Voluto dal proprietario il 25 ott 2026: «in statistiche una altra pagina, una s
 anche le email di notiziebenevento@pec.it, redazione@notiziebenevento.it e comunicati@notiziebenevento.it… con
 etichette da quale casella provengono»; e poi «io voglio solo leggerle, non inviare e altro, compreso allegati».
 
+I comunicati dei mittenti non ufficiali (dal 26 ott 2026: lui, «la pubblicazione dei comunicati istantanea solo da fonti
+ufficiali, un tizio che manda qualcosa dobbiamo valutarla», «i comunicati non ufficiali da valutare io») qui hanno tre
+pulsanti: «Pubblica», «Pubblica e fidati del mittente», «Non pubblicare» (/api/valuta). La decisione va in
+~/nb-fonti/valutati.json (e il mittente in mittenti_fidati.json), e subito parte la lettura della posta col giro lampo,
+come quando arriva una mail: il comunicato approvato esce in pochi minuti.
+
 SOLA LETTURA, tranne una cosa. Le caselle si aprono con EXAMINE e i messaggi con BODY.PEEK: aprire una mail non la segna
 come letta, e non si sposta, non si cancella, non si manda niente. L'unica cosa che la pagina cambia è il segno di
 letta di una mail, col pulsante «Segna come letta» / «Segna come non letta» (voluto dal proprietario il 25 ott 2026:
@@ -61,6 +67,11 @@ CARTELLA = os.environ.get("NB_FONTI_CARTELLA") or os.path.expanduser("~/nb-fonti
 sys.path.insert(0, CARTELLA)
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import fonti_casa as F   # noqa: E402  (la busta PEC, i nomi degli allegati, i testi dei .docx, gli id dei comunicati)
+# la lettura della posta col giro lampo, come la lancia posta_diretta.py quando arriva una mail (stessi lucchetti)
+LETTURA = ["/usr/bin/flock", "-w", "240", "/tmp/nb_comunicati.lock", "/bin/sh", "-c",
+           f"/usr/bin/flock -w 240 /tmp/nb_fonti.lock /usr/bin/timeout 120 /usr/bin/python3 {CARTELLA}/fonti_casa.py "
+           f"--solo comunicati >> {CARTELLA}/fonti.log 2>&1; /usr/bin/timeout 90 /usr/bin/python3 "
+           f"{CARTELLA}/sentinella/comunicati_lampo.py >> {CARTELLA}/comunicati.log 2>&1"]
 
 INDIRIZZO, PORTA = "127.0.0.1", 8109
 SITO = "https://notiziebenevento.it"
@@ -471,7 +482,8 @@ def archivio():
         try:
             with open(os.path.join(F.ARCHIVIO, "comunicati.json"), encoding="utf-8") as f:
                 d = json.load(f)
-            _archivio["voci"] = {v.get("id") for v in d.get("voci") or []}
+            _archivio["voci"] = {v.get("id"): {k: v.get(k) for k in ("fonte", "fonte_perche", "valutato")}
+                                 for v in d.get("voci") or []}
             _archivio["scartate"] = set(d.get("scartate") or [])
         except (OSError, ValueError):
             pass
@@ -494,8 +506,42 @@ def comunicato(r):
         return x
     a = archivio()
     if ident in a["voci"]:
+        voce = a["voci"][ident] or {}
+        decisa = (F.leggi_json(F.VALUTATI, {}).get(ident) or {}).get("decisione") or voce.get("valutato")
+        if voce.get("fonte") == "da_valutare" and not decisa:
+            return {"esito": "da_valutare", "id": ident, "perche": voce.get("fonte_perche") or ""}
+        if voce.get("fonte") == "da_valutare" and decisa == "scarta":
+            return {"esito": "scartato_da_te", "id": ident}
         return {"esito": "in_lavorazione"}
     return None
+
+
+def valuta(corpo):
+    """La decisione del proprietario su un comunicato da valutare: in valutati.json (e il mittente tra i fidati se lo
+    chiede), poi la lettura della posta e il giro lampo partono subito. Restituisce la risposta per la pagina."""
+    cid, cartella, uid, decisione = corpo.get("casella"), corpo.get("cartella"), corpo.get("uid"), corpo.get("decisione")
+    if cid not in ("comunicati", "pec") or cartella != "inbox" or not isinstance(uid, int) or uid <= 0 \
+            or decisione not in ("pubblica", "scarta") or not isinstance(corpo.get("fidati", False), bool):
+        raise ValueError("richiesta storta")
+    vero, _ = tipo_e_vero(CASE[cid].messaggio(cartella, uid))
+    ident = F.id_posta(F.link_posta(vero))
+    if (archivio()["voci"].get(ident) or {}).get("fonte") != "da_valutare":
+        _archivio["quando"] = 0   # forse il Pi l'ha appena letta: si riguarda
+        if (archivio()["voci"].get(ident) or {}).get("fonte") != "da_valutare":
+            raise KeyError("non è un comunicato da valutare")
+    fidato = None
+    if decisione == "pubblica" and corpo.get("fidati"):
+        indirizzo = eu.parseaddr(str(vero.get("From") or ""))[1]
+        fidato = F.fidati_aggiungi(indirizzo)
+    valutati = F.leggi_json(F.VALUTATI, {})
+    valutati[ident] = {"decisione": decisione, "quando": dt.datetime.now(F.fuso()).isoformat(timespec="minutes")}
+    tmp = F.VALUTATI + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(valutati, f, ensure_ascii=False, indent=1)
+    os.replace(tmp, F.VALUTATI)
+    subprocess.Popen(LETTURA, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, start_new_session=True)
+    return {"esito": "scartato_da_te" if decisione == "scarta" else "in_lavorazione", "id": ident,
+            "fidato": f"{'indirizzo' if fidato and fidato[0] == 'indirizzi' else 'dominio'} {fidato[1]}" if fidato else ""}
 
 
 # ---------------------------------------------------------------- gli allegati
@@ -801,13 +847,24 @@ class Servizio(BaseHTTPRequestHandler):
 
     def do_POST(self):
         p, _ = self.percorso()
-        if p not in ("/api/entra", "/api/segna"):
+        if p not in ("/api/entra", "/api/segna", "/api/valuta"):
             return self.rispondi(404, {"errore": "non c'è"})
         try:
             n = min(int(self.headers.get("Content-Length") or 0), 4096)
             corpo = json.loads(self.rfile.read(n) or b"{}")
         except (ValueError, TypeError):
             return self.rispondi(400, {"errore": "richiesta storta"})
+        if p == "/api/valuta":   # «Pubblica» / «Pubblica e fidati del mittente» / «Non pubblicare» (comunicati da valutare)
+            if not self.autorizzato():
+                return self.rispondi(401, {"errore": "serve entrare"})
+            try:
+                return self.rispondi(200, valuta(corpo))
+            except ValueError as e:
+                return self.rispondi(400, {"errore": str(e)})
+            except KeyError as e:
+                return self.rispondi(404, {"errore": f"non trovato ({e})"})
+            except Exception as e:
+                return self.rispondi(502, {"errore": f"non riesco ({type(e).__name__}: {str(e)[:120]})"})
         if p == "/api/segna":   # «Segna come letta / non letta»: l'unica cosa che la pagina cambia nelle caselle
             if not self.autorizzato():
                 return self.rispondi(401, {"errore": "serve entrare"})

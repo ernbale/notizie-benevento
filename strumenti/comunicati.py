@@ -48,6 +48,11 @@ e Instagram la pubblicano adesso, se non c'è già) e l'id del comunicato in «c
 e "foto_da" nell'esito anche le immagini della mail (voluto dal proprietario il 25 ott 2026: «se mandano foto usale»,
 «anche più foto se ci sono», «avevamo detto comunicati da pubblicare subito»).
 
+Dal 26 ott 2026 escono subito solo i comunicati delle fonti ufficiali (lui: «la pubblicazione dei comunicati
+istantanea solo da fonti ufficiali, un tizio che manda qualcosa dobbiamo valutarla»): quelli con "fonte": "da_valutare"
+(fonti_casa.fonte_mittente) qui non ci sono finché il proprietario non li approva nella scheda Posta ("valutato":
+"pubblica").
+
 Uso:  python3 strumenti/comunicati.py --da-fare
       python3 strumenti/comunicati.py --unisci /tmp/comunicati_esito.json [--pubblica]
 """
@@ -136,6 +141,12 @@ def simili(c, notizie, adesso):
     return [n for _, n in sorted(out, key=lambda x: -x[0])[:4]]
 
 
+def in_attesa(v):
+    """Un comunicato di un mittente non ufficiale che il proprietario non ha ancora approvato (fonti_casa.fonte_mittente:
+    «"fonte": "da_valutare"», dal 26 ott 2026), o che ha deciso di non pubblicare: qui non si tratta."""
+    return v.get("fonte") == "da_valutare" and v.get("valutato") != "pubblica"
+
+
 def ripreso(v, visti):
     """Un comunicato in sospeso che il Pi ha riletto e ora legge tutto: torna da fare."""
     return (visti.get(v.get("id")) or {}).get("esito") == "sospeso" and bool(v.get("riletto")) \
@@ -147,7 +158,7 @@ def da_fare(adesso):
     visti = leggi(FILE, {}).get("visti") or {}
     limite = (adesso - dt.timedelta(days=GIORNI_DA_FARE)).isoformat()
     voci = [v for v in tutte_le_voci() if v.get("id") and (v["id"] not in visti or ripreso(v, visti))
-            and (v.get("arrivata") or v.get("data") or "") >= limite]
+            and (v.get("arrivata") or v.get("data") or "") >= limite and not in_attesa(v)]
     notizie = leggi(NOTIZIE, {}).get("notizie") or []
     citati = G.citati()
     print(f"Ora: {adesso:%Y-%m-%d %H:%M}")
@@ -166,6 +177,9 @@ def da_fare(adesso):
             print(f"\n[{v['id']}] arrivato {v.get('arrivata') or v.get('data')} · da {v.get('mittente')} "
                   f"(dominio {v.get('dominio')})" + (f" · allegati: {', '.join(v['allegati'])}" if v.get("allegati") else ""))
             print(f"  oggetto: {v.get('titolo')}")
+            if v.get("fonte") == "da_valutare" and v.get("valutato") == "pubblica":
+                print(f"  APPROVATO DAL PROPRIETARIO: mittente non ufficiale ({v.get('fonte_perche')}), l'ha letto lui nella "
+                      "scheda Posta e vuole che esca: trattalo come gli altri (le regole di sempre valgono)")
             if ripreso(v, visti):
                 print("  ERA IN SOSPESO: adesso il Pi ha letto gli allegati che mancavano (riletto "
                       f"{str(v.get('riletto'))[:16]}): trattalo come nuovo")
@@ -323,6 +337,9 @@ def unisci(d, visti, entrata, voci, adesso, err):
         trattati.add(cid)
         if es not in ESITI:
             err.append(f"{w}: «esito» deve essere uno di {', '.join(ESITI)}")
+        elif in_attesa(per_voce[cid]):
+            err.append(f"{w}: è di un mittente non ufficiale che il proprietario deve ancora valutare (o ha scartato): "
+                       "non si tratta qui")
         elif es == "pubblicato":
             if e.get("notizia") not in per_id:
                 err.append(f"{w}: la notizia {e.get('notizia')!r} non è tra le «notizie» del file")

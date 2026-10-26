@@ -1077,7 +1077,8 @@
                     rimbalzo: ["Non consegnata", "ko"], automatica: ["Risposta automatica", ""], avviso: ["Avviso del gestore", ""] };
   var ESITI_POSTA = { pubblicato: ["Pubblicato sul sito", "ok"], gia_nel_sito: ["Era già sul sito", "info"],
                       scartato: ["Non pubblicato", "ko"], in_lavorazione: ["In lavorazione", "info"],
-                      sospeso: ["In sospeso", "ko"] };
+                      sospeso: ["In sospeso", "ko"], da_valutare: ["Da valutare", "info"],
+                      scartato_da_te: ["Non pubblicato: hai deciso tu", "ko"] };
 
   function postaEntra() {
     if (!chiaveGrezza) return Promise.reject(new Error("serve la parola d'ordine delle statistiche"));
@@ -1389,6 +1390,33 @@
         rq.appendChild(el("b", "", ESITI_POSTA[c.esito][0]));
         if (c.esito === "in_lavorazione") rq.appendChild(document.createTextNode(": il giro lampo lo sta scrivendo adesso."));
         else if (c.esito === "sospeso") rq.appendChild(document.createTextNode(": il Pi non ha letto un allegato (è scritto sotto, negli allegati): va letto qui e pubblicato a mano. La sentinella avvisa ogni ora."));
+        else if (c.esito === "da_valutare") {   // un mittente non ufficiale: decide lui (26 ott 2026)
+          rq.appendChild(document.createTextNode(": mittente non ufficiale" + (c.perche ? " (" + c.perche + ")" : "") + ". Non esce finché non decidi tu."));
+          var bot = el("div", "riga-azioni");
+          [["Pubblica", "pubblica", false], ["Pubblica e fidati del mittente", "pubblica", true], ["Non pubblicare", "scarta", false]].forEach(function (b) {
+            var x = el("button", "bottone", b[0]); x.type = "button";
+            x.addEventListener("click", function () {
+              bot.querySelectorAll("button").forEach(function (y) { y.disabled = true; });
+              x.textContent = "Un attimo…";
+              postaManda("valuta", { casella: m.casella, cartella: m.cartella, uid: m.uid, decisione: b[1], fidati: b[2] }).then(function (d) {
+                m.comunicato = { esito: d.esito, id: d.id };
+                var no = d.esito === "scartato_da_te";
+                rq.textContent = ""; rq.className = "riquadretto " + (no ? "ko" : "ok");
+                rq.appendChild(el("b", "", no ? "Non verrà pubblicato" : "Approvato"));
+                rq.appendChild(document.createTextNode(no ? ": nessun giro lo pubblicherà." :
+                  ": il giro lampo lo scrive adesso, esce sul sito e sui social in pochi minuti." +
+                  (d.fidato ? " D'ora in poi " + d.fidato + " è fidato: i suoi comunicati escono subito." : "")));
+              }).catch(function (e) {
+                bot.querySelectorAll("button").forEach(function (y) { y.disabled = false; });
+                x.textContent = b[0];
+                rq.appendChild(el("div", "riquadretto ko", "Non è passato: " + e.message));
+              });
+            });
+            bot.appendChild(x);
+          });
+          rq.appendChild(bot);
+        }
+        else if (c.esito === "scartato_da_te") rq.appendChild(document.createTextNode(": nessun giro lo pubblicherà."));
         else if (c.esito === "scartato") rq.appendChild(document.createTextNode(" dal giro lampo" + (c.quando ? " (" + quandoPosta(c.quando) + ")" : "") + ": il motivo è nel resoconto del giro."));
         else if (c.quando) rq.appendChild(document.createTextNode(" — " + quandoPosta(c.quando)));
         if (c.url) { rq.appendChild(document.createTextNode(" · ")); var l = el("a", "", "leggi la notizia ↗"); l.href = c.url; l.target = "_blank"; l.rel = "noopener"; rq.appendChild(l); }

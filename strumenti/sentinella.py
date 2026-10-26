@@ -78,6 +78,7 @@ TG_MAX = 75         # minuti di silenzio del canale con una notizia nuova sul si
 GIRO_MAX = 80       # minuti dall'ultimo giro (uno all'ora)
 AVVISO_ORE = 2      # dal Pi, la sentinella di GitHub (la mail) al massimo una volta ogni tante ore
 SOSPESO_ORE = 1     # …ma ogni ora se c'è un comunicato in sospeso
+DA_VALUTARE_ORE = 3  # un comunicato di un mittente non ufficiale ancora da valutare: promemoria dopo tante ore
 VEDETTA_MAX = 20    # minuti senza un giro della vedetta delle chiusure (sul Pi)
 PISTA_MAX = 45      # minuti: una pista della vedetta non ancora vista dal giro Chiusure
 TG_CHIUSURE = 20    # minuti: una chiusura del sito non ancora sul canale Telegram
@@ -400,6 +401,13 @@ def comunicati(gh, adesso, pi):
         quando = v.get("arrivata") or v.get("data")
         arrivata = iso(quando) if quando else None
         sito = v.get("tipo") == "sito"
+        if v.get("fonte") == "da_valutare" and v.get("valutato") != "pubblica":   # decide il proprietario (dal 26 ott)
+            if (not v.get("valutato") and arrivata
+                    and dt.timedelta(hours=DA_VALUTARE_ORE) < adesso - arrivata < dt.timedelta(days=3)):
+                problemi.append(f"DA VALUTARE da {minuti(adesso - arrivata)} minuti il comunicato di "
+                                f"{v.get('mittente') or v.get('dominio')} («{str(v.get('titolo'))[:60]}», "
+                                f"{v.get('fonte_perche')}): scheda Posta delle statistiche, «Pubblica» o «Non pubblicare»")
+            continue
         if (v.get("id") and v["id"] not in visti and v["id"] not in vecchi and arrivata
                 and dt.timedelta(minutes=SITO_MAX if sito else COMUNICATO_MAX) < adesso - arrivata < dt.timedelta(hours=24)):
             problemi.append((f"l'articolo del sito di {v.get('mittente')} visto alle {arrivata:%H:%M}" if sito else
@@ -504,12 +512,19 @@ def fonti_di_casa(adesso, prova):
 def avvisa_casa(problemi, adesso):
     """L'avviso al proprietario su WhatsApp (Home Assistant) e per email, con lo stesso testo della mail di GitHub.
     Un canale che non va non ferma l'altro. Restituisce cosa è successo, per il registro."""
+    testo = f"⚠️ Notizie Benevento, la sentinella ({adesso:%d/%m %H:%M}):\n" + "\n".join(f"• {p}" for p in problemi)
+    return manda_a_casa(testo, f"⚠️ Notizie Benevento: {len(problemi)} {'problema' if len(problemi) == 1 else 'problemi'}",
+                        "\n\nIl registro è sul Pi: ~/nb-fonti/sentinella.log\n")
+
+
+def manda_a_casa(testo, oggetto, coda=""):
+    """Un messaggio al proprietario su WhatsApp (Home Assistant) e per email (da comunicati@, a lui): lo usano la
+    sentinella e il giro lampo (i comunicati da valutare). Restituisce cosa è successo, per il registro."""
     try:
         with open(AVVISI_CONF, encoding="utf-8") as f:
             conf = json.load(f)
     except (OSError, ValueError):
         return ["avvisi.conf manca: niente WhatsApp né email"]
-    testo = f"⚠️ Notizie Benevento, la sentinella ({adesso:%d/%m %H:%M}):\n" + "\n".join(f"• {p}" for p in problemi)
     esiti = []
     try:   # WhatsApp: il servizio notify di Home Assistant (CallMeBot, solo testo)
         dominio, servizio = conf["whatsapp"].split(".", 1)
@@ -532,10 +547,10 @@ def avvisa_casa(problemi, adesso):
         m = EmailMessage()
         m["From"] = formataddr(("Sentinella di Notizie Benevento", posta["utente"]))
         m["To"] = conf["email"]
-        m["Subject"] = f"⚠️ Notizie Benevento: {len(problemi)} {'problema' if len(problemi) == 1 else 'problemi'}"
+        m["Subject"] = oggetto
         m["Date"] = formatdate(localtime=True)
         m["Message-ID"] = make_msgid(domain=posta["utente"].split("@")[1])
-        m.set_content(testo + "\n\nIl registro è sul Pi: ~/nb-fonti/sentinella.log\n")
+        m.set_content(testo + coda)
         with smtplib.SMTP_SSL("smtps.aruba.it", 465, context=ssl.create_default_context(), timeout=60) as s:
             s.login(posta["utente"], posta["password"])
             s.send_message(m)

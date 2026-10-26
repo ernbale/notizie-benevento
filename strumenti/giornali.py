@@ -395,6 +395,8 @@ def main():
         esito = visti.get(v["id"]) or {}
         if esito.get("esito") == "sospeso":   # un allegato che non si legge: lo segue la sentinella, non il giro dell'ora
             continue
+        if v.get("fonte") == "da_valutare" and v.get("valutato") != "pubblica":   # un mittente non ufficiale: decide il
+            continue                                                            # proprietario (COMUNICATI.md)
         if esito.get("esito") in ("pubblicato", "gia_nel_sito"):
             gia[norma_url("posta:" + v["id"])] = esito.get("notizia")
         elif not esito and adesso - arrivata < dt.timedelta(minutes=LAMPO_MINUTI):

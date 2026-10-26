@@ -734,6 +734,71 @@ def contenuto_risposta(m):
     return f"{prosa} caratteri scritti da loro" if prosa >= PROSA_MIN else ""
 
 
+# Escono subito solo i comunicati delle fonti ufficiali (voluto dal proprietario il 26 ott 2026: «la pubblicazione dei
+# comunicati istantanea solo da fonti ufficiali, un tizio che manda qualcosa dobbiamo valutarla», «i comunicati non
+# ufficiali da valutare io»): enti pubblici, chi scrive da una PEC e i mittenti fidati (mittenti_fidati.json, solo sul
+# Pi: chi abbiamo già pubblicato e chi lui approva con «Pubblica e fidati» nella scheda Posta). Gli altri hanno
+# "fonte": "da_valutare": il giro lampo e il giro di ogni ora non li toccano finché lui non decide nella scheda Posta
+# (valutati.json → "valutato": "pubblica" o "scarta" nella voce).
+FIDATI = os.path.join(CARTELLA, "mittenti_fidati.json")
+VALUTATI = os.path.join(CARTELLA, "valutati.json")
+ISTITUZIONALI = re.compile(r"(^|\.)(gov\.it|governo\.it|edu\.it|istruzione\.it|interno\.it|giustizia\.it|difesa\.it|"
+                           r"carabinieri\.it|poliziadistato\.it|gdf\.it|vigilfuoco\.it|inps\.it|inail\.it|"
+                           r"agenziaentrate\.it|regione\.campania\.it|unisannio\.it|aslbenevento\.it|aslbenevento1\.it|"
+                           r"aosanpio\.it|aornsanpio\.it|provincia\.benevento\.it|bn\.camcom\.it|camcom\.it|"
+                           r"eavsrl\.it|eav\.it|aircampania\.it|altocalore\.it|gesesa\.it|stradeanas\.it|"
+                           r"comune\.[a-z0-9-]+(\.[a-z]{2})?\.it|comunedi[a-z-]+\.it|comune[a-z]{2}\.it)$", re.I)
+POSTA_LIBERA = re.compile(r"^(gmail|googlemail|libero|yahoo|ymail|hotmail|outlook|live|msn|icloud|me|mac|tiscali|alice|"
+                          r"virgilio|tin|fastwebnet|email|inwind|iol|aruba|tim|vodafone|katamail|gmx|proton|protonmail)\.",
+                          re.I)
+
+
+def leggi_json(percorso, vuoto):
+    try:
+        with open(percorso, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return vuoto
+
+
+def fonte_mittente(indirizzo, dominio, pec):
+    """("ufficiale" o "da_valutare", perché) di chi ha mandato un comunicato."""
+    indirizzo, dominio = (indirizzo or "").lower().strip(), (dominio or "").lower().strip()
+    fidati = leggi_json(FIDATI, {})
+    if pec:
+        return "ufficiale", "scrive da una PEC"
+    if ISTITUZIONALI.search(dominio):
+        return "ufficiale", "ente pubblico"
+    if indirizzo in {x.lower() for x in fidati.get("indirizzi") or []}:
+        return "ufficiale", "mittente fidato"
+    if not POSTA_LIBERA.match(dominio) and dominio in {x.lower() for x in fidati.get("domini") or []}:
+        return "ufficiale", "mittente fidato"
+    if POSTA_LIBERA.match(dominio):
+        return "da_valutare", f"indirizzo personale (@{dominio}) che non conosciamo"
+    return "da_valutare", f"mittente nuovo (@{dominio})"
+
+
+def fidati_aggiungi(indirizzo):
+    """Mette tra i mittenti fidati chi ha mandato un comunicato: l'indirizzo se è una casella personale (gmail, libero…),
+    se no tutto il dominio (l'associazione, la società)."""
+    indirizzo = (indirizzo or "").lower().strip()
+    dominio = indirizzo.rsplit("@", 1)[-1]
+    if "@" not in indirizzo or not dominio:
+        raise ValueError("indirizzo non valido")
+    f = leggi_json(FIDATI, {})
+    chiave, valore = ("indirizzi", indirizzo) if POSTA_LIBERA.match(dominio) else ("domini", dominio)
+    f.setdefault(chiave, [])
+    if valore not in f[chiave]:
+        f[chiave].append(valore)
+    f["nota"] = ("I mittenti dei comunicati che escono subito anche se non sono enti pubblici (fonti_casa.fonte_mittente): "
+                 "domini di associazioni e società, indirizzi personali. Li aggiunge la scheda Posta («Pubblica e fidati»).")
+    tmp = FIDATI + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as fh:
+        json.dump(f, fh, ensure_ascii=False, indent=1)
+    os.replace(tmp, FIDATI)
+    return chiave, valore
+
+
 POSTA_TESTO_MAX = 20_000   # caratteri di una mail con i suoi allegati in comunicati.json (fino al 26 ott 2026 erano
                            # 8000: un documento lungo restava a metà)
 
@@ -899,6 +964,7 @@ def _casella(conf, server, vecchie, viste, voci, scartate):
                 v["riletto"] = vecchia["riletto"]
             if tipo == "pec":   # mandata da una casella PEC: il mittente è certificato dal gestore
                 v["pec"] = True
+            v["fonte"], v["fonte_perche"] = fonte_mittente(indirizzo, dominio, tipo == "pec")
             immagini = immagini_mail(m, v["id"])
             if immagini:
                 v["immagini"] = immagini
@@ -1173,6 +1239,12 @@ def leggi(nome, adesso):
     limite = (adesso - dt.timedelta(days=giorni)).date().isoformat()
     dati["voci"] = sorted((v for v in tutte.values() if v.get("data", "")[:10] >= limite),
                           key=lambda v: v.get("data", ""), reverse=nome != "stagioni")[:200 if nome in ("comuni", "stagioni") else 80]
+    if nome == "comunicati":   # le decisioni del proprietario sui comunicati da valutare (la scheda Posta)
+        valutati = leggi_json(VALUTATI, {})
+        for v in dati["voci"]:
+            d = valutati.get(v.get("id")) if v.get("fonte") == "da_valutare" else None
+            if isinstance(d, dict) and d.get("decisione") in ("pubblica", "scarta"):
+                v["valutato"], v["valutato_quando"] = d["decisione"], d.get("quando", "")
     if nome == "comunicati" and not PROVA:
         pulisci_allegati(dati["voci"])
     return dati

@@ -16,6 +16,10 @@ comunicati (senza rimbalzi e risposte automatiche) in comunicati.json dell'archi
   massimo RILANCI volte (poi è la sentinella a dare l'allarme, punto 7);
 - un comunicato «in sospeso» (il Pi non ne leggeva un allegato, COMUNICATI.md) che il Pi ha riletto leggendo tutto
   (fonti_casa.py: «riletto», per esempio dopo che si è installato l'OCR) → lo rilancia una volta (dal 26 ott 2026);
+- un comunicato di un mittente non ufficiale («"fonte": "da_valutare"», fonti_casa.fonte_mittente, dal 26 ott 2026: lui,
+  «la pubblicazione dei comunicati istantanea solo da fonti ufficiali, un tizio che manda qualcosa dobbiamo valutarla»)
+  non parte: al proprietario arriva subito un avviso (WhatsApp ed email) e decide lui nella scheda Posta; quando lo
+  approva («"valutato": "pubblica"») parte come un comunicato nuovo;
 - la prima volta prende solo nota dei comunicati che ci sono già: non sono nuovi.
 Scrive nel registro (comunicati.log) solo quando fa qualcosa o qualcosa non va. Stato in comunicati_lampo.json.
 
@@ -108,7 +112,25 @@ def main():
         print(f"{ora} prima volta: {len(voci)} comunicati già presenti segnati come visti")
         return
     lanciati = stato.setdefault("lanciati", {})
-    nuovi = [v for v in voci if v["id"] not in lanciati]
+    # i comunicati dei mittenti non ufficiali aspettano il proprietario: un avviso a lui, una volta sola
+    attesa_lui = [v for v in voci if v.get("fonte") == "da_valutare" and v.get("valutato") != "pubblica"]
+    avvisati = stato.setdefault("da_valutare", {})
+    for v in [x for x in attesa_lui if not x.get("valutato") and x["id"] not in avvisati]:
+        testo = (f"📨 Notizie Benevento: comunicato da valutare\nDa {v.get('mittente')} (@{v.get('dominio')}), "
+                 f"{v.get('fonte_perche')}.\nOggetto: «{str(v.get('titolo'))[:120]}»\n"
+                 f"{' '.join(str(v.get('testo') or '').split())[:300]}…\n"
+                 "Non esce finché non decidi: scheda Posta delle statistiche, «Pubblica», «Pubblica e fidati del "
+                 "mittente» o «Non pubblicare» → https://notiziebenevento.it/statistiche/#posta")
+        if a.prova:
+            print(f"{ora} PROVA: avviserei il proprietario per {v['id']} «{str(v.get('titolo'))[:60]}»")
+            continue
+        from sentinella import manda_a_casa
+        esiti = manda_a_casa(testo, f"📨 Comunicato da valutare: {str(v.get('titolo'))[:80]}")
+        avvisati[v["id"]] = adesso.isoformat(timespec="minutes")
+        V.scrivi(STATO, stato)
+        print(f"{ora} da valutare dal proprietario: {v['id']} «{str(v.get('titolo'))[:60]}» ({v.get('fonte_perche')}): "
+              + ", ".join(esiti))
+    nuovi = [v for v in voci if v["id"] not in lanciati and v not in attesa_lui]
     attesa = [v for v in voci if v["id"] in lanciati and not lanciati[v["id"]].get("gia")
               and lanciati[v["id"]]["volte"] < RILANCI
               and adesso - dt.datetime.fromisoformat(lanciati[v["id"]]["ultimo"]) >= dt.timedelta(minutes=RILANCIA_DOPO)]
@@ -162,6 +184,7 @@ def main():
     stato["lanciati"] = {k: x for k, x in lanciati.items() if x.get("gia") or (x.get("ultimo") or "") >= limite
                          or k in {v["id"] for v in voci}}
     stato["attese"] = {k: q for k, q in (stato.get("attese") or {}).items() if k not in lanciati and q >= limite}
+    stato["da_valutare"] = {k: q for k, q in (stato.get("da_valutare") or {}).items() if q >= limite}
     V.scrivi(STATO, stato)
     print(f"{ora} giro lampo avviato ({'nuovi' if nuovi else 'riletti' if riletti and not rilanci else 'rilancio'}): "
           f"{nomi} → {sessione}")
