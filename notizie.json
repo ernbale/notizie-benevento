@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-27T20:12+01:00",
+ "aggiornato": "2026-10-27T21:10+01:00",
  "giornali_letti": 14,
  "notizie": [
   {
@@ -87,6 +87,10 @@
     {
      "nome": "TV7 Benevento",
      "url": "https://www.tvsette.net/san-giorgio-del-sannio-incidente-allo-svincolo-autostradale-tre-feriti-foto/"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/traffico-congestionato-allingresso-di-san-giorgio-del-sannio-seguito-dello-scontrio-tra-due-veicoli"
     }
    ],
    "articolo": {
@@ -114,7 +118,8 @@
       "fonti": [
        "BeneventoNews24",
        "TV7 Benevento",
-       "Lab TV"
+       "Lab TV",
+       "Gazzetta di Benevento"
       ],
       "giorno": "2026-10-27"
      }
@@ -127,18 +132,20 @@
        "Lab TV",
        "Anteprima24",
        "BeneventoNews24",
-       "TV7 Benevento"
+       "TV7 Benevento",
+       "Gazzetta di Benevento"
       ]
      }
     ],
     "divergono": [
      {
-      "testo": "Lab TV, la prima a darne notizia, scriveva di quattro persone portate in ospedale, contando anche chi guidava la Mazda; BeneventoNews24, TV7 e Anteprima24 parlano di tre feriti, tutti della Panda, e BeneventoNews24 e TV7 dicono che chi guidava la Mazda è illeso. Vale la versione dei tre feriti, riportata da più testate.",
+      "testo": "Lab TV, la prima a darne notizia, e Gazzetta di Benevento scrivono di quattro persone portate in ospedale, contando anche chi guidava la Mazda; BeneventoNews24, TV7 e Anteprima24 parlano di tre feriti, tutti della Panda, e BeneventoNews24 e TV7 dicono che chi guidava la Mazda è illeso. Vale la versione dei tre feriti, riportata da più testate.",
       "fonti": [
        "Lab TV",
        "BeneventoNews24",
        "TV7 Benevento",
-       "Anteprima24"
+       "Anteprima24",
+       "Gazzetta di Benevento"
       ]
      }
     ],
@@ -170,6 +177,12 @@
       "titolo": "San Giorgio del Sannio, incidente allo svincolo autostradale: tre feriti (foto)",
       "url": "https://www.tvsette.net/san-giorgio-del-sannio-incidente-allo-svincolo-autostradale-tre-feriti-foto/",
       "data": "27 ott, 19:49"
+     },
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "Traffico congestionato all'ingresso di San Giorgio del Sannio a seguito dello scontrio tra due veicoli, una Mazda ed una Fiat Panda",
+      "url": "https://www.gazzettabenevento.it/it/traffico-congestionato-allingresso-di-san-giorgio-del-sannio-seguito-dello-scontrio-tra-due-veicoli",
+      "data": "27 ott, 20:09"
      }
     ],
     "aggiornamento": {
