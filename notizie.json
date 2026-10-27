@@ -3,6 +3,74 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "benevento-catanzaro-formazioni-ufficiali-27-ottobre",
+   "titolo": "Serie B, Benevento-Catanzaro: le formazioni ufficiali",
+   "titolo_google": "Benevento-Catanzaro, le formazioni ufficiali del 27 ottobre",
+   "sintesi": "Il Benevento Calcio ha diffuso le formazioni ufficiali di Benevento-Catanzaro, la partita di Serie BKT di martedì 27 ottobre. Capitani Maita per il Benevento e Iemmello per il Catanzaro.",
+   "categoria": "sport",
+   "sport": "calcio",
+   "zona": "benevento",
+   "immagine": "calcio",
+   "luogo": "Benevento",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 5,
+   "fonti": [
+    {
+     "nome": "Benevento Calcio",
+     "url": "https://www.beneventocalcio.club/news/notizie/7676/serie-bkt-2026-2027-benevento-catanzaro-le-formazioni-ufficiali.shtml",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Benevento Calcio ha reso note le formazioni ufficiali di Benevento-Catanzaro, la partita del campionato di Serie BKT di martedì 27 ottobre. Il Benevento, allenato da Antonio Floro Flores, ha come capitano Maita; il Catanzaro, allenato da Michele Mignani, ha come capitano Iemmello.",
+      "fonti": [
+       "Benevento Calcio"
+      ]
+     },
+     {
+      "testo": "Gli undici del Benevento: in porta Vannucchi, poi Siatounis, Maita, Salvemini, Cherubini, Lamesta, Scognamillo, Dalle Mura, Sernicola, Beruatto e Kouan.",
+      "fonti": [
+       "Benevento Calcio"
+      ]
+     },
+     {
+      "testo": "In panchina per il Benevento ci sono Esposito, Prisco, Caldirola, Mannini, Simonetti, Schimmenti, Saio, Romano, Okereke, Mignani, Verdi e Tumminello.",
+      "fonti": [
+       "Benevento Calcio"
+      ]
+     },
+     {
+      "testo": "Il Catanzaro risponde con Pigliacelli in porta, poi Imperiale, Antonini, Iemmello, Petriccione, Koffi, Ruggero, Candela, Franky Tchaouna, Alesi e Dorvai. A disposizione Marietta, Postiglione, Buso, Pogacar, Pafundi, Cassa, Verrengia, Di Francesco, Frosinini, D'Alessandro, Arditi e Mosti.",
+      "fonti": [
+       "Benevento Calcio"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Benevento Calcio",
+      "titolo": "SERIE BKT 2026-2027: BENEVENTO-CATANZARO LE FORMAZIONI UFFICIALI",
+      "url": "https://www.beneventocalcio.club/news/notizie/7676/serie-bkt-2026-2027-benevento-catanzaro-le-formazioni-ufficiali.shtml",
+      "data": "27 ott, 18:48",
+      "ufficiale": true
+     }
+    ]
+   },
+   "comunicati": [
+    "ucb9a28ac831"
+   ],
+   "subito": true,
+   "pubblicato": "2026-10-27T18:54:15+01:00",
+   "foto": "calcio-4"
+  },
+  {
    "id": "castelvetere-in-val-fortore-raccolta-ingombranti-30-ottobre",
    "titolo": "Castelvetere in Val Fortore, raccolta gratuita degli ingombranti venerdì 30 ottobre all'ex mattatoio",
    "titolo_google": "Ingombranti Castelvetere in Val Fortore, raccolta il 30 ottobre",
