@@ -3,6 +3,67 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "benevento-giunta-istituisce-ufficio-bim-lavori-pubblici",
+   "titolo": "Benevento, la Giunta istituisce l'Ufficio Bim nel Settore Lavori pubblici",
+   "titolo_google": "Ufficio Bim al Comune di Benevento: sì della Giunta",
+   "sintesi": "La Giunta comunale di Benevento ha approvato martedì 27 ottobre la delibera che istituisce l'Ufficio Bim, per la gestione informativa digitale delle costruzioni, all'interno del Settore Lavori pubblici. Per l'assessore Mario Pasquariello servirà a digitalizzare la programmazione e la realizzazione delle opere pubbliche.",
+   "categoria": "politica",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "immagine": "documenti",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "comunicati": [
+    "ca28b01376d8"
+   ],
+   "fonti": [
+    {
+     "nome": "Comune di Benevento",
+     "url": "https://www.comune.benevento.it/",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Comune di Benevento istituisce l'Ufficio Bim, che si occuperà della gestione informativa digitale delle costruzioni. La Giunta comunale, presieduta dal sindaco Clemente Mastella, ha approvato la delibera martedì 27 ottobre, in mattinata. Il nuovo ufficio nasce all'interno del Settore Lavori pubblici.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "Sarà un servizio di staff. L'assessore alle Opere pubbliche Mario Pasquariello, che ha illustrato il provvedimento, spiega che l'ufficio serve a digitalizzare e informatizzare la programmazione e la realizzazione degli interventi pubblici, come prevede l'articolo 3 del Codice dei contratti, le norme che regolano gli appalti pubblici.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "Gli obiettivi dell'amministrazione, secondo l'assessore, sono ridurre gli sprechi di informazioni, ridurre al minimo i margini d'errore e garantire continuità tra il progetto, l'esecuzione dei lavori e la gestione dell'opera. Il fine, dice Pasquariello, è assicurare «che l'opera pubblica venga governata con strumenti moderni, interoperabili e realmente orientati al risultato».",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di Benevento",
+      "titolo": "Giunta, lavori pubblici semaforo verde alla costituzione dell'Ufficio Bim -Gestione informativa digitale delle costruzioni",
+      "url": "https://www.comune.benevento.it/",
+      "data": "27 ott, 14:11",
+      "ufficiale": true
+     }
+    ]
+   },
+   "subito": true,
+   "pubblicato": "2026-10-27T14:14:00+01:00",
+   "foto": "documenti-4"
+  },
+  {
    "id": "benevento-cantieri-sicuri-camper-inail-formedil",
    "titolo": "Benevento, presentato «Cantieri sicuri»: un camper di Inail e Formedil porta la formazione nei cantieri edili",
    "titolo_google": "Cantieri sicuri a Benevento: camper di Inail e Formedil",
