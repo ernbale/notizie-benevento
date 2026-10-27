@@ -1,7 +1,168 @@
 {
- "aggiornato": "2026-10-27T12:14+01:00",
+ "aggiornato": "2026-10-27T13:14+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-cantieri-sicuri-camper-inail-formedil",
+   "titolo": "Benevento, presentato «Cantieri sicuri»: un camper di Inail e Formedil porta la formazione nei cantieri edili",
+   "titolo_google": "Cantieri sicuri a Benevento: camper di Inail e Formedil",
+   "sintesi": "Martedì 27 ottobre a Benevento è stato presentato «Cantieri sicuri», il progetto di Inail Campania e dei Formedil di Benevento e Avellino: un camper attrezzato andrà nei cantieri edili del Sannio e dell'Irpinia per controllare i rischi e formare i lavoratori. Nel Sannio avviene circa il 10% degli infortuni sul lavoro della Campania.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "immagine": "sicurezza-lavoro",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-27T12:59+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 3,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/27/sicurezza-nei-cantieri-arriva-nel-sannio-il-camper-di-inail-e-formedil-formazione-direttamente-sul-campo/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/442285/nel-sannio-crescono-gli-infortuni-sul-lavoro-si-punta-sulla-sicurezza.shtml"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/26/formedil-benevento-cantieri-sicuri-domani-la-presentazione-del-camper-mobile-per-la-sicurezza-nei-cantieri-edili/?utm_source=rss&utm_medium=rss&utm_campaign=formedil-benevento-cantieri-sicuri-domani-la-presentazione-del-camper-mobile-per-la-sicurezza-nei-cantieri-edili"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Un camper attrezzato girerà per i cantieri edili delle province di Benevento e Avellino per controllare i rischi e fare formazione ai lavoratori direttamente sul posto. È il progetto «Cantieri sicuri», presentato martedì 27 ottobre a Benevento, in piazza Santa Sofia, dopo la prima presentazione ad Atripalda. Lo promuovono la direzione regionale dell'Inail, l'istituto che assicura i lavoratori contro gli infortuni, e i Formedil di Benevento e Avellino, gli enti che fanno formazione per chi lavora nell'edilizia.",
+      "fonti": [
+       "NTR24",
+       "Ottopagine",
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Il camper è una postazione mobile con gli strumenti per fare sopralluoghi e misurare nei cantieri rumore, vibrazioni delle macchine, polveri, temperatura e umidità, e i rischi di chi solleva e sposta carichi a mano. Con i dati raccolti tecnici e formatori capiranno cosa non va in ogni cantiere e organizzeranno corsi su misura. Raffaele Gatti, presidente del Formedil Benevento, ha spiegato che ogni cantiere è diverso per posto, lavori e attrezzi, e che la prevenzione deve partire dai rischi di quel cantiere.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Adele Pomponio, direttrice dell'Inail Campania, ha ricordato che nel Sannio avviene circa il 10% degli infortuni sul lavoro della regione, con una leggera crescita rispetto all'anno prima, e ha chiesto di raggiungere più lavoratori e imprese possibile. Il presidente dell'Ance, l'associazione dei costruttori edili, Flavian Basile, ha chiesto più controlli, più formazione e più attenzione da parte di tutti.",
+      "fonti": [
+       "NTR24",
+       "Ottopagine"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Alla presentazione c'era anche il questore di Benevento, Giovanni Leuci, che ha ricordato la morte di un operaio in un cantiere su Corso Garibaldi nei mesi scorsi: per il questore la sicurezza di chi lavora fa parte della sicurezza di tutta la città.",
+      "fonti": [
+       "NTR24",
+       "Ottopagine"
+      ],
+      "giorno": "2026-10-27"
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Il camper come centro mobile per formazione e controlli nei cantieri, promosso da Inail Campania e dai Formedil di Benevento e Avellino; nel Sannio circa il 10% degli infortuni della Campania.",
+      "fonti": [
+       "NTR24",
+       "Ottopagine"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Da quando il camper comincerà a girare nei cantieri del Sannio e quali cantieri visiterà per primi."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Sicurezza nei cantieri, arriva nel Sannio il camper di Inail e Formedil: formazione direttamente sul campo",
+      "url": "https://www.ntr24.tv/2026/10/27/sicurezza-nei-cantieri-arriva-nel-sannio-il-camper-di-inail-e-formedil-formazione-direttamente-sul-campo/",
+      "data": "27 ott, 12:59"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Nel Sannio crescono gli infortuni sul lavoro: si punta sulla sicurezza",
+      "url": "https://www.ottopagine.it/bn/attualita/442285/nel-sannio-crescono-gli-infortuni-sul-lavoro-si-punta-sulla-sicurezza.shtml",
+      "data": "27 ott, 12:36"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Formedil Benevento, Cantieri Sicuri: domani la presentazione del camper mobile per la sicurezza",
+      "url": "https://www.beneventonews24.it/2026/10/26/formedil-benevento-cantieri-sicuri-domani-la-presentazione-del-camper-mobile-per-la-sicurezza-nei-cantieri-edili/?utm_source=rss&utm_medium=rss&utm_campaign=formedil-benevento-cantieri-sicuri-domani-la-presentazione-del-camper-mobile-per-la-sicurezza-nei-cantieri-edili",
+      "data": "26 ott, 18:24"
+     }
+    ]
+   },
+   "foto": "sicurezza-lavoro-9"
+  },
+  {
+   "id": "montesarchio-karate-europei-oro-savignano-argento-vernillo",
+   "titolo": "Karate, da Montesarchio agli Europei in Inghilterra: oro per Livia Savignano, argento per Lucia Vernillo",
+   "titolo_google": "Karate, Montesarchio agli Europei: oro e argento",
+   "sintesi": "Tre atleti di karate di Montesarchio sono tornati dal Campionato Europeo in Inghilterra con due medaglie: l'oro e un secondo posto per la maestra Livia Savignano e l'argento per Lucia Vernillo, 13 anni. Il Comune ha ringraziato gli atleti.",
+   "categoria": "sport",
+   "sport": "altro",
+   "zona": "caudina",
+   "immagine": "arti-marziali",
+   "luogo": "Montesarchio",
+   "pubblicato": "2026-10-27T12:47+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/27/karate-montesarchio-protagonista-ai-campionati-europei-oro-per-savignano-e-argento-per-vernillo-foto/?utm_source=rss&utm_medium=rss&utm_campaign=karate-montesarchio-protagonista-ai-campionati-europei-oro-per-savignano-e-argento-per-vernillo-foto"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Montesarchio torna dal Campionato Europeo di karate, che si è disputato in Inghilterra, con due medaglie. La maestra Livia Savignano ha vinto l'oro e ha ottenuto anche un secondo posto. Lucia Vernillo, 13 anni, alla sua prima gara europea dopo la convocazione nella Nazionale italiana di karate, ha vinto l'argento.",
+      "fonti": [
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Con loro c'era anche Arturo Cioffi, 12 anni, al suo primo Europeo: non è salito sul podio, ma per la squadra è stata un'esperienza importante.",
+      "fonti": [
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Il Comune ha festeggiato i risultati. Nico Ambrosone, il consigliere delegato allo sport, ha ringraziato i tre atleti per aver portato in alto il nome della città fuori dall'Italia e ha detto che il Comune sarà sempre al fianco di chi si impegna ogni giorno nello sport.",
+      "fonti": [
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-27"
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "In quale città inglese e in quali giorni si è disputato il Campionato Europeo, e in quali gare sono arrivate le medaglie."
+    ],
+    "fonti": [
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Karate, Montesarchio protagonista ai Campionati Europei: oro per Savignano e argento per Vernillo (FOTO)",
+      "url": "https://www.beneventonews24.it/2026/10/27/karate-montesarchio-protagonista-ai-campionati-europei-oro-per-savignano-e-argento-per-vernillo-foto/?utm_source=rss&utm_medium=rss&utm_campaign=karate-montesarchio-protagonista-ai-campionati-europei-oro-per-savignano-e-argento-per-vernillo-foto",
+      "data": "27 ott, 12:47"
+     }
+    ]
+   },
+   "foto": "arti-marziali-7"
+  },
   {
    "id": "montesarchio-stalking-55enne-riesame-revoca-domiciliari",
    "titolo": "Montesarchio, accusata di stalking contro l'ex amante e la famiglia: il Riesame revoca i domiciliari a una 55enne",
@@ -244,6 +405,18 @@
     {
      "nome": "NTR24",
      "url": "https://www.ntr24.tv/2026/10/27/successo-per-il-linux-day-a-benevento-oltre-100-partecipanti-per-celebrare-il-software-libero-e-lopen-source/"
+    },
+    {
+     "nome": "Lab TV",
+     "url": "https://www.labtv.net/attualita/2026/10/27/linux-day-2026-a-benevento-oltre-100-partecipanti-per-celebrare-il-software-libero-e-lopen-source/"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/attualita/2026/grande-successo-per-il-linux-day-2026-a-benevento-oltre-100-partecipanti-per-il-software-libero.html"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/442287/grande-successo-per-il-linux-day-2026-a-benevento.shtml"
     }
    ],
    "articolo": {
@@ -253,21 +426,26 @@
       "fonti": [
        "NTR24",
        "Cronache del Sannio",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Lab TV",
+       "InfoSannio",
+       "Ottopagine"
       ]
      },
      {
       "testo": "Il pubblico ha seguito tutti gli interventi in programma e ha fatto molte domande ai relatori. LabTV ha seguito la giornata come media partner.",
       "fonti": [
        "NTR24",
-       "Cronache del Sannio"
+       "Cronache del Sannio",
+       "Lab TV"
       ]
      },
      {
       "testo": "Chi non c'era può rivedere tutto: sul sito dell'associazione, lilis.it, ci sono le slide di ogni intervento e il video completo della diretta. Nei prossimi mesi LILiS organizzerà altri laboratori e incontri aperti a tutti sulle tecnologie libere; il prossimo Linux Day sarà nel 2027.",
       "fonti": [
        "NTR24",
-       "Cronache del Sannio"
+       "Cronache del Sannio",
+       "Lab TV"
       ]
      }
     ],
@@ -304,6 +482,24 @@
       "titolo": "A Benevento grande successo per il Linux Day 2026",
       "url": "https://www.cronachedelsannio.it/sannionews24/benevento-grande-successo-linux-day/",
       "data": "27 ott, 11:08"
+     },
+     {
+      "nome": "Lab TV",
+      "titolo": "Linux Day 2026 a Benevento, oltre 100 partecipanti per celebrare il software libero e l’open source",
+      "url": "https://www.labtv.net/attualita/2026/10/27/linux-day-2026-a-benevento-oltre-100-partecipanti-per-celebrare-il-software-libero-e-lopen-source/",
+      "data": "27 ott, 12:15"
+     },
+     {
+      "nome": "InfoSannio",
+      "titolo": "Grande successo per il Linux Day 2026 a Benevento: oltre 100 partecipanti per il software libero",
+      "url": "https://www.infosannionews.it/attualita/2026/grande-successo-per-il-linux-day-2026-a-benevento-oltre-100-partecipanti-per-il-software-libero.html",
+      "data": "27 ott, 11:57"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Oltre 100 partecipanti per celebrare il software libero e l'open source",
+      "url": "https://www.ottopagine.it/bn/attualita/442287/grande-successo-per-il-linux-day-2026-a-benevento.shtml",
+      "data": "27 ott, 12:47"
      }
     ]
    },
@@ -419,6 +615,22 @@
     {
      "nome": "Gazzetta di Benevento",
      "url": "https://www.gazzettabenevento.it/it/approvata-la-perizia-di-spesa-le-opere-di-ripristino-del-piano-viabile-sulla-strada-provinciale-50"
+    },
+    {
+     "nome": "Lab TV",
+     "url": "https://www.labtv.net/attualita/2026/10/27/montefalcone-valfortore-205mila-euro-per-il-ripristino-della-sp-50/"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/27/montefalcone-di-val-fortore-interventi-di-risanamento-sulla-provinciale-50/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/442288/strada-provinciale-50-montefalcone-ok-risanamento.shtml"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/camera-di-commercio/2026/provincia-approvati-gli-interventi-di-risanamento-sulla-s-p-n-50-nel-comune-di-montefalcone-valfortore.html"
     }
    ],
    "articolo": {
@@ -428,7 +640,9 @@
       "fonti": [
        "Provincia di Benevento",
        "Cronache del Sannio",
-       "Gazzetta di Benevento"
+       "Gazzetta di Benevento",
+       "Ottopagine",
+       "InfoSannio"
       ],
       "giorno": "2026-10-27"
      },
@@ -437,7 +651,9 @@
       "fonti": [
        "Provincia di Benevento",
        "Cronache del Sannio",
-       "Gazzetta di Benevento"
+       "Gazzetta di Benevento",
+       "Ottopagine",
+       "InfoSannio"
       ],
       "giorno": "2026-10-27"
      },
@@ -446,7 +662,9 @@
       "fonti": [
        "Provincia di Benevento",
        "Cronache del Sannio",
-       "Gazzetta di Benevento"
+       "Gazzetta di Benevento",
+       "Ottopagine",
+       "InfoSannio"
       ],
       "giorno": "2026-10-27"
      }
@@ -483,6 +701,30 @@
       "titolo": "Approvata la perizia di spesa per le opere di ripristino del piano viabile sulla Strada Provinciale 50 nel territorio di Montefalcone di Valfortore",
       "url": "https://www.gazzettabenevento.it/it/approvata-la-perizia-di-spesa-le-opere-di-ripristino-del-piano-viabile-sulla-strada-provinciale-50",
       "data": "27 ott"
+     },
+     {
+      "nome": "Lab TV",
+      "titolo": "Montefalcone Valfortore, 205mila euro per il ripristino della SP 50",
+      "url": "https://www.labtv.net/attualita/2026/10/27/montefalcone-valfortore-205mila-euro-per-il-ripristino-della-sp-50/",
+      "data": "27 ott, 10:36"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Montefalcone di Val Fortore, interventi di risanamento sulla provinciale 50",
+      "url": "https://www.ntr24.tv/2026/10/27/montefalcone-di-val-fortore-interventi-di-risanamento-sulla-provinciale-50/",
+      "data": "27 ott, 11:43"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Strada provinciale 50 Montefalcone: ok risanamento",
+      "url": "https://www.ottopagine.it/bn/attualita/442288/strada-provinciale-50-montefalcone-ok-risanamento.shtml",
+      "data": "27 ott, 12:49"
+     },
+     {
+      "nome": "InfoSannio",
+      "titolo": "Provincia. Approvati gli interventi di Risanamento sulla S.P. n.50 nel comune di Montefalcone Valfortore",
+      "url": "https://www.infosannionews.it/camera-di-commercio/2026/provincia-approvati-gli-interventi-di-risanamento-sulla-s-p-n-50-nel-comune-di-montefalcone-valfortore.html",
+      "data": "27 ott, 12:52"
      }
     ]
    },
@@ -565,6 +807,10 @@
     {
      "nome": "Cronache del Sannio",
      "url": "https://www.cronachedelsannio.it/sannionews24/benevento-catanzaro-varchi-accesso-aperti-diciassette/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/27/benevento-catanzaro-al-vigorito-cancelli-aperti-dalle-17-attesi-oltre-450-calabresi/?utm_source=rss&utm_medium=rss&utm_campaign=benevento-catanzaro-al-vigorito-cancelli-aperti-dalle-17-attesi-oltre-450-calabresi"
     }
    ],
    "articolo": {
@@ -573,7 +819,15 @@
       "testo": "Per Benevento-Catanzaro, la partita di martedì 27 ottobre alle 19, i cancelli dello stadio Ciro Vigorito apriranno al pubblico alle 17, due ore prima del calcio d'inizio. Il Benevento Calcio invita tutti gli spettatori ad arrivare allo stadio con largo anticipo.",
       "fonti": [
        "Benevento Calcio",
-       "Cronache del Sannio"
+       "Cronache del Sannio",
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Fino a lunedì sera erano stati venduti 429 biglietti ai tifosi del Benevento, senza contare gli abbonati. Dalla Calabria arriveranno 455 tifosi del Catanzaro: è il numero definitivo dei biglietti del settore ospiti.",
+      "fonti": [
+       "BeneventoNews24"
       ],
       "giorno": "2026-10-27"
      },
@@ -581,7 +835,8 @@
       "testo": "La società prevede molta gente e ricorda i rallentamenti delle partite precedenti. Per questo raccomanda di non arrivare tutti nell'ultima ora prima della partita, soprattutto nei settori più frequentati.",
       "fonti": [
        "Benevento Calcio",
-       "Cronache del Sannio"
+       "Cronache del Sannio",
+       "BeneventoNews24"
       ],
       "giorno": "2026-10-27"
      },
@@ -589,7 +844,8 @@
       "testo": "Ai varchi bisogna presentarsi con il biglietto o l'abbonamento, di carta (non plastificato) oppure sul telefono, e con un documento d'identità valido: serve a controllare che i dati della persona siano quelli scritti sul biglietto. Chi ha il biglietto sul telefono deve avere il codice QR o il codice a barre già aperto e ben visibile sullo schermo, con la luminosità giusta.",
       "fonti": [
        "Benevento Calcio",
-       "Cronache del Sannio"
+       "Cronache del Sannio",
+       "BeneventoNews24"
       ],
       "giorno": "2026-10-27"
      },
@@ -597,7 +853,8 @@
       "testo": "Al tornello il codice va appoggiato bene sul lettore. Si entra solo dopo che il codice è stato letto e sullo schermo compare il segnale verde.",
       "fonti": [
        "Benevento Calcio",
-       "Cronache del Sannio"
+       "Cronache del Sannio",
+       "BeneventoNews24"
       ],
       "giorno": "2026-10-27"
      },
@@ -605,7 +862,8 @@
       "testo": "Il club chiede anche di rispettare il regolamento dello stadio e le indicazioni degli steward e delle forze dell'ordine. In particolare è vietato occupare le scale e le vie di fuga, portare dentro materiale esplosivo o fuochi d'artificio ed esporre striscioni o altro materiale che non sia stato autorizzato prima. Secondo la società, arrivare puntuali e seguire le indicazioni del personale renderà l'ingresso più veloce e più sicuro.",
       "fonti": [
        "Benevento Calcio",
-       "Cronache del Sannio"
+       "Cronache del Sannio",
+       "BeneventoNews24"
       ],
       "giorno": "2026-10-27"
      }
@@ -627,6 +885,12 @@
       "titolo": "Benevento-Catanzaro, varchi d’accesso aperti dalle 17",
       "url": "https://www.cronachedelsannio.it/sannionews24/benevento-catanzaro-varchi-accesso-aperti-diciassette/",
       "data": "27 ott, 09:55"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Benevento-Catanzaro, al “Vigorito” cancelli aperti dalle 17. Attesi oltre 450 calabresi",
+      "url": "https://www.beneventonews24.it/2026/10/27/benevento-catanzaro-al-vigorito-cancelli-aperti-dalle-17-attesi-oltre-450-calabresi/?utm_source=rss&utm_medium=rss&utm_campaign=benevento-catanzaro-al-vigorito-cancelli-aperti-dalle-17-attesi-oltre-450-calabresi",
+      "data": "27 ott, 12:41"
      }
     ]
    },
@@ -3167,12 +3431,12 @@
   },
   {
    "id": "buonalbergo-carta-dedicata-a-te-lista-beneficiari-2026",
-   "titolo": "Carta Dedicata a te, pubblicati gli elenchi dei beneficiari a Buonalbergo, Montesarchio e Sant'Angelo a Cupolo: prima ricarica dal 4 novembre",
-   "titolo_google": "Carta Dedicata a te 2026: beneficiari in tre Comuni del Sannio",
-   "sintesi": "Buonalbergo, Montesarchio e Sant'Angelo a Cupolo hanno pubblicato gli elenchi delle famiglie che ricevono la «Carta Dedicata a te», 500 euro all'anno per la spesa. La prima ricarica arriva dal 4 novembre e il primo acquisto va fatto entro il 16 dicembre.",
+   "titolo": "Carta Dedicata a te, pubblicati gli elenchi dei beneficiari a Buonalbergo, Montesarchio, Sant'Angelo a Cupolo e Pago Veiano: prima ricarica dal 4 novembre",
+   "titolo_google": "Carta Dedicata a te 2026: beneficiari in quattro Comuni",
+   "sintesi": "Buonalbergo, Montesarchio, Sant'Angelo a Cupolo e Pago Veiano hanno pubblicato gli elenchi delle famiglie che ricevono la «Carta Dedicata a te», 500 euro all'anno per la spesa. La prima ricarica arriva dal 4 novembre e il primo acquisto va fatto entro il 16 dicembre.",
    "categoria": "altro",
    "zona": "provincia",
-   "luogo": "Buonalbergo, Montesarchio e Sant'Angelo a Cupolo",
+   "luogo": "Buonalbergo, Montesarchio, Sant'Angelo a Cupolo e Pago Veiano",
    "pubblicato": "2026-10-26",
    "stato": "ufficiale",
    "rilevante": false,
@@ -3191,10 +3455,22 @@
      "nome": "Comune di Sant'Angelo a Cupolo",
      "url": "https://comune.santangeloacupolo.bn.it/novita/carta-dedicata-a-te-anno-2026/",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di Pago Veiano",
+     "url": "https://www.comune.pagoveiano.bn.it/c062046/po/mostra_news.php?id=490&area=H",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Martedì 27 ottobre anche il Comune di Pago Veiano ha pubblicato sul suo sito l'avviso sulla «Carta Dedicata a te» per il 2026 e il 2027, con la graduatoria delle famiglie beneficiarie: tutti e due i documenti si scaricano dalla pagina della notizia.",
+      "fonti": [
+       "Comune di Pago Veiano"
+      ],
+      "giorno": "2026-10-27"
+     },
      {
       "testo": "Anche il Comune di Montesarchio, in Valle Caudina, ha pubblicato martedì 27 ottobre l'elenco dei beneficiari della «Carta Dedicata a te» per il 2026 e il 2027. È una carta prepagata di Poste Italiane con 500 euro all'anno per comprare cibo e beni di prima necessità. A Montesarchio le carte assegnate sono 464, una sola per famiglia.",
       "fonti": [
@@ -3309,14 +3585,21 @@
       "url": "https://comune.santangeloacupolo.bn.it/novita/carta-dedicata-a-te-anno-2026/",
       "data": "27 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "Comune di Pago Veiano",
+      "titolo": "AVVISO PUBBLICO - Carta \"Dedicata a Te\". Annualità 2026/2027",
+      "url": "https://www.comune.pagoveiano.bn.it/c062046/po/mostra_news.php?id=490&area=H",
+      "data": "27 ott",
+      "ufficiale": true
      }
     ],
     "aggiornamento": {
-     "testo": "Martedì 27 ottobre anche Sant'Angelo a Cupolo ha pubblicato l'elenco dei beneficiari: i nuovi riceveranno una lettera dal Comune con il codice per ritirare la carta alla Posta.",
+     "testo": "Martedì 27 ottobre anche Pago Veiano ha pubblicato l'avviso e la graduatoria dei beneficiari della Carta Dedicata a te.",
      "fonti": [
-      "Comune di Sant'Angelo a Cupolo"
+      "Comune di Pago Veiano"
      ],
-     "quando": "2026-10-27T11:17+01:00",
+     "quando": "2026-10-27T13:14+01:00",
      "titolo_prima": "Buonalbergo, pubblicata la lista dei beneficiari della «Carta Dedicata a te»"
     }
    },
@@ -3451,12 +3734,12 @@
   },
   {
    "id": "castelpoto-santa-croce-del-sannio-elenco-elettori-fuori-sede",
-   "titolo": "Elettori fuori sede, dodici Comuni del Sannio hanno aperto l'elenco: domande entro il 31 dicembre",
-   "titolo_google": "Elettori fuori sede in dodici Comuni del Sannio: come fare",
-   "sintesi": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo e Ceppaloni hanno aperto l'elenco degli elettori fuori sede previsto dalla nuova legge elettorale: chi per studio, lavoro o cure vive in una regione diversa da quella in cui vota può chiedere di votare dove abita. Per studio e lavoro la domanda va fatta entro il 31 dicembre, per le votazioni dell'anno dopo.",
+   "titolo": "Elettori fuori sede, tredici Comuni del Sannio hanno aperto l'elenco: domande entro il 31 dicembre",
+   "titolo_google": "Elettori fuori sede in tredici Comuni del Sannio: come fare",
+   "sintesi": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni e Limatola hanno aperto l'elenco degli elettori fuori sede previsto dalla nuova legge elettorale: chi per studio, lavoro o cure vive in una regione diversa da quella in cui vota può chiedere di votare dove abita. Per studio e lavoro la domanda va fatta entro il 31 dicembre, per le votazioni dell'anno dopo.",
    "categoria": "altro",
    "zona": "provincia",
-   "luogo": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo e Ceppaloni",
+   "luogo": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni e Limatola",
    "immagine": "elezioni",
    "pubblicato": "2026-10-27",
    "stato": "ufficiale",
@@ -3521,12 +3804,17 @@
      "nome": "Comune di Ceppaloni",
      "url": "https://ceppaloni.halleyweb.it/mc/mc_p_dettaglio.php?id_pubbl=16193",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di Limatola",
+     "url": "https://limatola.halleyweb.it/mc/mc_p_dettaglio.php?id_pubbl=5590",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Dodici Comuni del Sannio, da Castelpoto a Ceppaloni, hanno aperto l'elenco comunale degli elettori fuori sede. Lo prevede la legge 180 del 9 ottobre 2026 sulle elezioni di Camera e Senato: chi vive per un periodo in una regione diversa da quella del Comune dove è iscritto per votare può chiedere di votare nel Comune dove abita. Vale per le elezioni politiche ed europee e per i referendum, non per le elezioni comunali e regionali.",
+      "testo": "Tredici Comuni del Sannio, da Castelpoto a Limatola, hanno aperto l'elenco comunale degli elettori fuori sede. Lo prevede la legge 180 del 9 ottobre 2026 sulle elezioni di Camera e Senato: chi vive per un periodo in una regione diversa da quella del Comune dove è iscritto per votare può chiedere di votare nel Comune dove abita. Vale per le elezioni politiche ed europee e per i referendum, non per le elezioni comunali e regionali.",
       "fonti": [
        "Comune di Castelpoto",
        "Comune di Santa Croce del Sannio",
@@ -3534,7 +3822,8 @@
        "Comune di Cusano Mutri",
        "Comune di Dugenta",
        "Comune di Pesco Sannita",
-       "Comune di Ceppaloni"
+       "Comune di Ceppaloni",
+       "Comune di Limatola"
       ],
       "giorno": "2026-10-27"
      },
@@ -3542,6 +3831,13 @@
       "testo": "Martedì 27 ottobre l'avviso sul voto fuori sede è uscito anche all'albo pretorio del Comune di Ceppaloni. Le regole e i tempi per la domanda sono gli stessi degli altri paesi.",
       "fonti": [
        "Comune di Ceppaloni"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Sempre martedì 27 ottobre ha pubblicato l'avviso all'albo pretorio anche il Comune di Limatola, nella Valle Telesina al confine con la provincia di Caserta.",
+      "fonti": [
+       "Comune di Limatola"
       ],
       "giorno": "2026-10-27"
      },
@@ -3705,14 +4001,21 @@
       "url": "https://ceppaloni.halleyweb.it/mc/mc_p_dettaglio.php?id_pubbl=16193",
       "data": "27 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "Comune di Limatola",
+      "titolo": "VOTO DEGLI ELETTORI FUORI SEDE TEMPORANEAMENTE DOMICILIATI IN UNA REGIONE DIVERSA DA QUELLA DI ISCRIZIONE ELETTORALE ISTITUZIONE DELL'ELENCO COMUNALE DEGLI ELETTORI FUORI SEDE",
+      "url": "https://limatola.halleyweb.it/mc/mc_p_dettaglio.php?id_pubbl=5590",
+      "data": "27 ott",
+      "ufficiale": true
      }
     ],
     "aggiornamento": {
-     "testo": "Martedì 27 ottobre anche Ceppaloni ha pubblicato all'albo pretorio l'avviso sul voto fuori sede: i Comuni del Sannio che hanno aperto l'elenco degli elettori fuori sede sono dodici.",
+     "testo": "Martedì 27 ottobre anche Limatola ha pubblicato l'avviso sul voto fuori sede: i Comuni del Sannio che hanno aperto l'elenco sono tredici.",
      "fonti": [
-      "Comune di Ceppaloni"
+      "Comune di Limatola"
      ],
-     "quando": "2026-10-27T09:17+01:00",
+     "quando": "2026-10-27T13:14+01:00",
      "titolo_prima": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta e Pesco Sannita, aperto l'elenco degli elettori fuori sede: domande entro il 31 dicembre"
     }
    },
@@ -6193,6 +6496,10 @@
     {
      "nome": "Cronache del Sannio",
      "url": "https://www.cronachedelsannio.it/sannionews24/pronto-soccorso-santagata-errico-regione-attivi-misura-necessaria/"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/politica/2026/pronto-soccorso-santagata-de-goti-errico-la-regione-attivi-ogni-misura-necessaria.html"
     }
    ],
    "articolo": {
@@ -6202,7 +6509,8 @@
       "fonti": [
        "NTR24 (27/10)",
        "Cronache del Sannio",
-       "Anteprima24 (27/10)"
+       "Anteprima24 (27/10)",
+       "InfoSannio"
       ],
       "giorno": "2026-10-27"
      },
@@ -6211,7 +6519,8 @@
       "fonti": [
        "NTR24 (27/10)",
        "Cronache del Sannio",
-       "Anteprima24 (27/10)"
+       "Anteprima24 (27/10)",
+       "InfoSannio"
       ],
       "giorno": "2026-10-27"
      },
@@ -6386,6 +6695,12 @@
       "titolo": "Pronto Soccorso Sant’Agata de’ Goti, Errico: «La Regione attivi ogni misura necessaria»",
       "url": "https://www.anteprima24.it/benevento/pronto-soccorso-santagata-de-goti-errico-la-regione-attivi-ogni-misura-necessaria/",
       "data": "27 ott, 09:21"
+     },
+     {
+      "nome": "InfoSannio",
+      "titolo": "Pronto Soccorso Sant’Agata de’ Goti, Errico: «La Regione attivi ogni misura necessaria»",
+      "url": "https://www.infosannionews.it/politica/2026/pronto-soccorso-santagata-de-goti-errico-la-regione-attivi-ogni-misura-necessaria.html",
+      "data": "27 ott, 11:59"
      }
     ],
     "aggiornamento": {
@@ -6951,6 +7266,17 @@
      {
       "testo": "Martedì 27 ottobre il questore di Benevento, Giovanni Leuci, ha detto che il responsabile è stato individuato subito e denunciato. Più che un'aggressione, per il questore è stata una lite tra due ragazzi che probabilmente si conoscevano e che è degenerata. Ha aggiunto che la Polizia segue con attenzione il centro storico già da prima dell'estate e che sulla sicurezza dei giovani serve l'aiuto di tutti: istituzioni, scuola, società e stampa: «Ci siamo e continueremo ad esserci».",
       "fonti": [
+       "NTR24 (questore)",
+       "Ottopagine (questore)",
+       "Anteprima24 (questore)"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Il questore ha parlato a margine della presentazione di un progetto sulla sicurezza nei cantieri, lungo Corso Garibaldi. Ha detto che l'episodio va visto dentro un quadro della sicurezza in città che giudica positivo: «In un foglio bianco un punto nero si evidenzia di più». Ha aggiunto che il centro storico è seguito con attenzione già da prima dell'estate, soprattutto nelle sere del fine settimana, e che contro il disagio dei giovani serve l'aiuto di tutti: istituzioni, scuola e informazione.",
+      "fonti": [
+       "Anteprima24 (questore)",
+       "Ottopagine (questore)",
        "NTR24 (questore)"
       ],
       "giorno": "2026-10-27"
@@ -7235,12 +7561,26 @@
       "titolo": "Sicurezza in centro storico, il questore Leuci: “Attenzione costante, serve una rete tra istituzioni”",
       "url": "https://www.ntr24.tv/2026/10/27/sicurezza-in-centro-storico-il-questore-leuci-attenzione-costante-serve-una-rete-tra-istituzioni/",
       "data": "27 ott, 12:09"
+     },
+     {
+      "nome": "Ottopagine (questore)",
+      "titolo": "Benevento: violenza in centro storico. Il questore Leuci \"Attenzione costante\"",
+      "url": "https://www.ottopagine.it/bn/attualita/442286/benevento-violenza-in-centro-storico-il-questore-leuci-attenzione-costante.shtml",
+      "data": "27 ott, 12:41"
+     },
+     {
+      "nome": "Anteprima24 (questore)",
+      "titolo": "Benevento, violenza nel centro storico. Il Questore rassicura: “Episodi isolati, ma l’attenzione resta alta”",
+      "url": "https://www.anteprima24.it/benevento/violenza-centro-storico-questore-controlli/",
+      "data": "27 ott, 12:53"
      }
     ],
     "aggiornamento": {
      "testo": "Martedì 27 ottobre il questore Giovanni Leuci ha detto che il giovane è stato individuato subito e denunciato, e ha parlato di una lite tra due ragazzi che probabilmente si conoscevano.",
      "fonti": [
-      "NTR24 (questore)"
+      "NTR24 (questore)",
+      "Ottopagine (questore)",
+      "Anteprima24 (questore)"
      ],
      "quando": "2026-10-27T12:14+01:00",
      "titolo_prima": "Benevento, ragazza colpita a Corso Garibaldi: il giovane dà la sua versione in Questura, per ora nessuna denuncia"

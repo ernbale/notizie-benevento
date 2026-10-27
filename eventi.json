@@ -1041,7 +1041,8 @@
      "testo": "Dopo lo spettacolo c'è il DopoTeatro, una cena leggera in teatro a cura di Alimenta bistrot: costa 15 euro e si prenota solo per telefono, dalle 9 alle 13, allo 0824 47037 o al 338 145 76 88. I biglietti dello spettacolo sono sul sito solot.it.",
      "fonti": [
       "Gazzetta di Benevento",
-      "Cronache del Sannio"
+      "Cronache del Sannio",
+      "InfoSannio"
      ]
     }
    ],
@@ -1069,6 +1070,12 @@
      "titolo": "Al Mulino Pacifico in scena “La Cara dei vecchi”",
      "url": "https://www.cronachedelsannio.it/sannionews24/mulino-pacifico-scena-cara-vecchi/",
      "data": "27 ott, 11:00"
+    },
+    {
+     "nome": "InfoSannio",
+     "titolo": "Obiettivo T 2026/2027: il 6 Novembre in scena al Teatro Mulino Pacifico “La cara dei vecchi”",
+     "url": "https://www.infosannionews.it/cultura/2026/obiettivo-t-2026-2027-il-6-novembre-in-scena-al-teatro-mulino-pacifico-la-cara-dei-vecchi.html",
+     "data": "27 ott, 12:49"
     }
    ],
    "immagine": "teatro",
@@ -1194,7 +1201,8 @@
      "fonti": [
       "Benevento Giornale",
       "NTR24",
-      "BeneventoNews24"
+      "BeneventoNews24",
+      "Lab TV"
      ]
     },
     {
@@ -1238,6 +1246,12 @@
      "titolo": "A Benevento un omaggio teatrale alla poesia e all’umanità di Alda Merini (FOTO)",
      "url": "https://www.beneventonews24.it/2026/10/27/a-benevento-un-omaggio-teatrale-alla-poesia-e-allumanita-di-alda-merini-foto/",
      "data": "27 ott, 10:06"
+    },
+    {
+     "nome": "Lab TV",
+     "titolo": "Benevento, al Teatro Comunale lo spettacolo dedicato ad Alda Merini",
+     "url": "https://www.labtv.net/attualita/2026/10/27/benevento-al-teatro-comunale-lo-spettacolo-dedicato-ad-alda-merini/",
+     "data": "27 ott, 12:52"
     }
    ],
    "foto": "teatro-24"
