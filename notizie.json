@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-27T13:14+01:00",
+ "aggiornato": "2026-10-27T14:19+01:00",
  "giornali_letti": 14,
  "notizie": [
   {
@@ -62,6 +62,559 @@
    "subito": true,
    "pubblicato": "2026-10-27T14:14:00+01:00",
    "foto": "documenti-4"
+  },
+  {
+   "id": "campoli-monte-taburno-contatori-acqua-esterno-1-marzo-2027",
+   "titolo": "Campoli del Monte Taburno, i contatori dell'acqua vanno portati fuori casa entro il 1° marzo 2027",
+   "titolo_google": "Campoli del Monte Taburno, contatori dell'acqua fuori casa",
+   "sintesi": "A Campoli del Monte Taburno chi ha il contatore dell'acqua dentro casa o in un'area privata chiusa deve preparare, a sue spese, un vano raggiungibile dalla strada entro il 1° marzo 2027. Lo spostamento lo fa il Comune, che ne addebita il costo in bolletta; chi non si adegua rischia una multa da 25 a 500 euro.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Campoli del Monte Taburno",
+   "immagine": "acqua",
+   "pubblicato": "2026-10-27",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "fonti": [
+    {
+     "nome": "Comune di Campoli del Monte Taburno",
+     "url": "https://comune.campolidelmontetaburno.bn.it/novita/ordinanza-sindacale-n-16-del-27-ottobre-2026-contatori-dellacqua-obbligo-di-adeguamento-entro-il-1-marzo-2027/",
+     "ufficiale": true
+    },
+    {
+     "nome": "Comune di Campoli del Monte Taburno (albo)",
+     "url": "https://comune.campolidelmontetaburno.bn.it/albo-pretorio/?dettaglio_id=306264",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Campoli del Monte Taburno i contatori dell'acqua che oggi stanno dentro case, locali o aree private chiuse vanno portati all'esterno. Lo ha deciso il sindaco con l'ordinanza numero 16 del 27 ottobre 2026. Riguarda i proprietari, i titolari delle utenze dell'acqua e gli amministratori di condominio.",
+      "fonti": [
+       "Comune di Campoli del Monte Taburno",
+       "Comune di Campoli del Monte Taburno (albo)"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Entro il 1° marzo 2027 bisogna preparare, a proprie spese, una nicchia, un vano tecnico o un pozzetto vicino al muro di cinta, che si possa raggiungere dalla strada in ogni momento, anche quando in casa non c'è nessuno. Il Comune vuole così leggere e controllare i contatori più facilmente e far pagare i consumi veri.",
+      "fonti": [
+       "Comune di Campoli del Monte Taburno"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Quando il vano è pronto, i tecnici del Comune o una ditta incaricata tolgono il contatore dal vecchio posto, lo collegano alla rete, lo installano e lo sigillano. Il costo di questo lavoro viene addebitato all'utente, diviso nelle bollette dell'acqua successive.",
+      "fonti": [
+       "Comune di Campoli del Monte Taburno"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Chi non prepara il vano entro la scadenza rischia una multa da 25 a 500 euro, e il Comune può sospendere l'acqua dopo una diffida. Se ne occupa il Settore tecnico del Comune, in piazza La Marmora 14.",
+      "fonti": [
+       "Comune di Campoli del Monte Taburno"
+      ],
+      "giorno": "2026-10-27"
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di Campoli del Monte Taburno",
+      "titolo": "Ordinanza sindacale n. 16 del 27 ottobre 2026 – Contatori dell’acqua: obbligo di adeguamento entro il 1° marzo 2027",
+      "url": "https://comune.campolidelmontetaburno.bn.it/novita/ordinanza-sindacale-n-16-del-27-ottobre-2026-contatori-dellacqua-obbligo-di-adeguamento-entro-il-1-marzo-2027/",
+      "data": "27 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "Comune di Campoli del Monte Taburno (albo)",
+      "titolo": "Ordinanza contingibile e urgente per l'adeguamento dei sistemi di misurazione idrica. Obbligo di spostamento e installazione dei contatori dell'acqua all'esterno della proprietà privata entro il 01/03/2027",
+      "url": "https://comune.campolidelmontetaburno.bn.it/albo-pretorio/?dettaglio_id=306264",
+      "data": "27 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "foto": "acqua-3"
+  },
+  {
+   "id": "montesarchio-fabbrica-abusiva-fuochi-artificio-arresto",
+   "titolo": "Montesarchio, scoperta una fabbrica abusiva di fuochi d'artificio: un uomo arrestato",
+   "titolo_google": "Montesarchio, fabbrica abusiva di fuochi d'artificio: un arresto",
+   "sintesi": "I Carabinieri di Montesarchio hanno arrestato un uomo che, secondo l'accusa, gestiva una fabbrica di fuochi d'artificio senza autorizzazione. Sequestrati diversi chili di polvere esplosiva e il locale; l'uomo è ai domiciliari in attesa delle decisioni della Procura di Benevento.",
+   "categoria": "cronaca",
+   "zona": "caudina",
+   "luogo": "Montesarchio",
+   "pubblicato": "2026-10-27T14:04+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 4,
+   "fonti": [
+    {
+     "nome": "Lab TV",
+     "url": "https://www.labtv.net/cronaca/2026/10/27/montesarchio-scoperta-fabbrica-abusiva-di-fuochi-dartificio-un-arresto/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Montesarchio i Carabinieri hanno arrestato un uomo sorpreso, secondo l'accusa, a gestire una fabbrica di fuochi d'artificio senza autorizzazione. A intervenire sono stati i militari del Nucleo operativo e radiomobile della Compagnia di Montesarchio.",
+      "fonti": [
+       "Lab TV"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Dopo una breve indagine i Carabinieri hanno perquisito un locale che ritenevano in uso all'uomo. Dentro hanno trovato e sequestrato diversi chili di polvere esplosiva, materiale per confezionare i fuochi e molti ordigni artigianali fatti in casa. Anche il locale, attrezzato per la lavorazione, è stato sequestrato e messo in sicurezza.",
+      "fonti": [
+       "Lab TV"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "L'uomo è ritenuto responsabile, allo stato degli atti, di detenzione illegale di sostanze ad alto potenziale esplosivo e di fabbricazione e detenzione di materiale esplodente artigianale. È agli arresti in casa, in attesa delle decisioni della Procura della Repubblica di Benevento. Come ogni indagato, è presunto innocente fino a sentenza definitiva.",
+      "fonti": [
+       "Lab TV"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "I controlli fanno parte delle verifiche contro la produzione e la vendita illegale di fuochi d'artificio in vista delle feste di Natale, decise dal Comando provinciale dei Carabinieri di Benevento in tutto il Sannio.",
+      "fonti": [
+       "Lab TV"
+      ],
+      "giorno": "2026-10-27"
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "L'età dell'uomo e dove si trovava di preciso il locale.",
+     "Se i fuochi erano già stati venduti a qualcuno."
+    ],
+    "fonti": [
+     {
+      "nome": "Lab TV",
+      "titolo": "Montesarchio, scoperta fabbrica abusiva di fuochi d’artificio: un arresto",
+      "url": "https://www.labtv.net/cronaca/2026/10/27/montesarchio-scoperta-fabbrica-abusiva-di-fuochi-dartificio-un-arresto/",
+      "data": "27 ott, 14:04"
+     }
+    ]
+   }
+  },
+  {
+   "id": "benevento-morte-mario-capobianco-abbreviato-gip-19-novembre",
+   "titolo": "Benevento, morte di Mario Capobianco dopo l'aggressione al rione Libertà: il 19 novembre il gip decide sul rito abbreviato",
+   "titolo_google": "Morte Mario Capobianco a Benevento: il gip decide il 19 novembre",
+   "sintesi": "L'udienza per la morte di Mario Capobianco, il 68enne aggredito a gennaio al rione Libertà di Benevento e morto al San Pio, è stata anticipata al 19 novembre. Il gip deciderà sulla richiesta di rito abbreviato del 38enne accusato e sulla difesa che chiede di tornare all'accusa di omicidio preterintenzionale.",
+   "categoria": "cronaca",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-27T13:23+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 4,
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/442290/omicidio-capobianco-volontario-o-preterintenzionale-gip-decide-su-abbreviato.shtml"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il 19 novembre il giudice delle indagini preliminari Maria Di Carlo deciderà sulla richiesta di rito abbreviato per la morte di Mario Capobianco, 68 anni, di Benevento. L'udienza era fissata per il 18 marzo 2027 ed è stata anticipata. Imputato è un 38enne di Benevento.",
+      "fonti": [
+       "Ottopagine"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Il gip dovrà decidere anche sulla richiesta della difesa di tornare all'accusa iniziale di omicidio preterintenzionale, cioè senza la volontà di uccidere. Il pubblico ministero aveva cambiato l'accusa in omicidio volontario dopo la consulenza medico-legale e alcune testimonianze. Il processo davanti alla Corte d'assise era in programma per il 13 ottobre, ma la difesa ha chiesto l'abbreviato.",
+      "fonti": [
+       "Ottopagine"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "I fatti risalgono al pomeriggio del 24 gennaio in via Pellico, al rione Libertà. Secondo la prima ricostruzione, tra i due era nata una discussione perché il 68enne è il padre del nuovo compagno della ex dell'imputato; il 38enne lo avrebbe colpito con calci e pugni, anche quando era a terra. Capobianco è morto il 14 febbraio all'ospedale San Pio, dove era ricoverato in condizioni gravissime.",
+      "fonti": [
+       "Ottopagine"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Il 38enne era stato arrestato dai Carabinieri per lesioni gravissime; dopo la morte del 68enne era finito in carcere, ma il Riesame lo ha rimandato agli arresti domiciliari, dove si trova ancora. Interrogato, ha detto di non avere rancore verso la vittima e di essersi lamentato con lui perché da mesi non vede i figli.",
+      "fonti": [
+       "Ottopagine"
+      ],
+      "giorno": "2026-10-27"
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "24 gennaio, pomeriggio",
+      "quando": "2026-01-24",
+      "fatto": "L'aggressione in via Pellico, al rione Libertà.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "data": "14 febbraio",
+      "quando": "2026-02-14",
+      "fatto": "Mario Capobianco muore all'ospedale San Pio.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "data": "19 novembre",
+      "fatto": "Udienza davanti al gip sulla richiesta di rito abbreviato.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     }
+    ],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Omicidio Capobianco, volontario o preterintenzionale? Gip decide su abbreviato",
+      "url": "https://www.ottopagine.it/bn/cronaca/442290/omicidio-capobianco-volontario-o-preterintenzionale-gip-decide-su-abbreviato.shtml",
+      "data": "27 ott, 13:23"
+     }
+    ]
+   }
+  },
+  {
+   "id": "benevento-quattro-nuovi-ausiliari-traffico-strisce-blu",
+   "titolo": "Benevento, quattro nuovi ausiliari del traffico per i controlli sulle strisce blu",
+   "titolo_google": "Strisce blu a Benevento: quattro nuovi ausiliari del traffico",
+   "sintesi": "Il sindaco di Benevento Clemente Mastella ha nominato quattro nuovi ausiliari del traffico che controlleranno la sosta a pagamento sulle strisce blu, gestita da Benevento Mobilità. Prendono il posto di tre addetti che avevano rinunciato o lasciato il lavoro.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "immagine": "parcheggio",
+   "pubblicato": "2026-10-27T13:25+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 3,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/27/benevento-quattro-nuovi-ausiliari-del-traffico-per-le-strisce-blu-subentrano-a-tre-rinunciatari/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Benevento arrivano quattro nuovi ausiliari del traffico per controllare la sosta a pagamento sulle strisce blu. Li ha nominati martedì 27 ottobre il sindaco Clemente Mastella con un decreto. Il servizio è in concessione alla società Benevento Mobilità.",
+      "fonti": [
+       "NTR24"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "I quattro prendono il posto di tre addetti nominati ad agosto che hanno rinunciato o hanno smesso di lavorare tra settembre e ottobre. La richiesta di reintegrare il personale l'aveva fatta Benevento Mobilità il 26 ottobre. Il Comune ha controllato che i nuovi abbiano il certificato penale pulito e l'attestato del corso per ausiliari del traffico.",
+      "fonti": [
+       "NTR24"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Gli ausiliari controlleranno che chi parcheggia sulle strisce blu abbia pagato e scriveranno i preavvisi di multa, solo nelle zone affidate alla società. Le multe vere e proprie restano compito degli uffici del Comune.",
+      "fonti": [
+       "NTR24"
+      ],
+      "giorno": "2026-10-27"
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Da quando i quattro nuovi ausiliari cominceranno a lavorare in strada."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Benevento, quattro nuovi ausiliari del traffico per le strisce blu: subentrano a tre rinunciatari",
+      "url": "https://www.ntr24.tv/2026/10/27/benevento-quattro-nuovi-ausiliari-del-traffico-per-le-strisce-blu-subentrano-a-tre-rinunciatari/",
+      "data": "27 ott, 13:25"
+     }
+    ]
+   },
+   "foto": "parcheggio-4"
+  },
+  {
+   "id": "sanremo-giovani-2026-selma-neartica-benevento",
+   "titolo": "Sanremo Giovani 2026, la sannita Selma e i Neartica di Benevento tra i primi 15 selezionati",
+   "titolo_google": "Sanremo Giovani 2026: Selma e i Neartica tra i 15 selezionati",
+   "sintesi": "La cantante sannita Selma, con il brano «Io sognerò», è tra i primi 15 artisti scelti alle audizioni di Sanremo Giovani 2026 a Roma. Con lei c'è anche il duo beneventano Neartica con «Foto mossa». La prossima tappa porta a Sarà Sanremo, l'11 dicembre su Rai 1.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento e San Giorgio del Sannio",
+   "immagine": "concerto",
+   "pubblicato": "2026-10-27T13:32+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 3,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/27/sanremo-giovani-ce-anche-la-sannita-selma-tra-i-15-selezionati-sempre-piu-vicino-il-sogno-dellariston/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/27/sanremo-giovani-tra-i-15-cantanti-selezionati-ce-anche-selma-ezzine/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/sanremo-giovani-scelti-i-15-ammessi-ce-anche-la-sannita-selma/"
+    },
+    {
+     "nome": "Lab TV",
+     "url": "https://www.labtv.net/attualita/2026/10/27/sanremo-giovani-2026-ce-anche-selma-la-cantante-di-san-giorgio-del-sannio-tra-i-primi-15-selezionati/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Selma, giovane cantante del Sannio, è tra i primi 15 artisti scelti alle audizioni dal vivo di Sanremo Giovani 2026, a Roma. Ha cantato «Io sognerò». Sanremo Giovani è il concorso che dà a un nuovo artista la possibilità di entrare nel Festival di Sanremo.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24",
+       "Anteprima24",
+       "Lab TV"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Tra i 15 c'è anche un altro progetto di Benevento: i Neartica, il duo di Giordana Sanfilippo e Francesco Pio De Filippis, con il brano «Foto mossa».",
+      "fonti": [
+       "BeneventoNews24",
+       "Lab TV"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Ora ci sono altre selezioni davanti alla commissione musicale, presieduta dal direttore artistico Stefano De Martino. Alla fine sei artisti andranno a Sarà Sanremo, la serata in onda venerdì 11 dicembre in prima serata su Rai 1, che sceglierà un solo vincitore per il Festival.",
+      "fonti": [
+       "Lab TV",
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Selma, all'anagrafe Selma Ezzine, è nata nel 2004 da genitori di origine marocchina. Ha cominciato cantando per strada, si è diplomata al liceo musicale Guacci di Benevento e ha lasciato Giurisprudenza per dedicarsi alla musica. Nel 2025 ha partecipato a «Dalla strada al palco» su Rai 1.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-27"
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Selma è tra i 15 artisti ammessi a Sanremo Giovani 2026.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24",
+       "Anteprima24",
+       "Lab TV"
+      ]
+     },
+     {
+      "testo": "Anche i Neartica di Benevento sono tra i selezionati, con «Foto mossa».",
+      "fonti": [
+       "BeneventoNews24",
+       "Lab TV"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "Lab TV nel titolo la dice di San Giorgio del Sannio e nel testo nata a Benevento; NTR24 la chiama solo «cantante sannita». Abbiamo scritto «del Sannio».",
+      "fonti": [
+       "Lab TV",
+       "NTR24"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "Le date delle prossime selezioni."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Sanremo Giovani, c’è anche la sannita Selma tra i 15 selezionati: sempre più vicino il sogno dell’Ariston",
+      "url": "https://www.ntr24.tv/2026/10/27/sanremo-giovani-ce-anche-la-sannita-selma-tra-i-15-selezionati-sempre-piu-vicino-il-sogno-dellariston/",
+      "data": "27 ott, 13:32"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Sanremo Giovani, tra i 15 cantanti selezionati c’è anche Selma Ezzine",
+      "url": "https://www.beneventonews24.it/2026/10/27/sanremo-giovani-tra-i-15-cantanti-selezionati-ce-anche-selma-ezzine/",
+      "data": "27 ott, 13:30"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Sanremo Giovani, scelti i 15 ammessi: c’è anche la sannita Selma",
+      "url": "https://www.anteprima24.it/benevento/sanremo-giovani-scelti-i-15-ammessi-ce-anche-la-sannita-selma/",
+      "data": "27 ott, 13:24"
+     },
+     {
+      "nome": "Lab TV",
+      "titolo": "Sanremo Giovani 2026, c’è anche Selma: la cantante di San Giorgio del Sannio tra i primi 15 selezionati",
+      "url": "https://www.labtv.net/attualita/2026/10/27/sanremo-giovani-2026-ce-anche-selma-la-cantante-di-san-giorgio-del-sannio-tra-i-primi-15-selezionati/",
+      "data": "27 ott, 13:16"
+     }
+    ]
+   },
+   "foto": "concerto-11"
+  },
+  {
+   "id": "benevento-fatebenefratelli-protesi-caviglia",
+   "titolo": "Benevento, al Fatebenefratelli una protesi di caviglia: in Campania meno di 50 interventi",
+   "titolo_google": "Protesi di caviglia al Fatebenefratelli di Benevento",
+   "sintesi": "All'ospedale Fatebenefratelli di Benevento l'Ortopedia ha messo una protesi di caviglia, un intervento raro: in Campania, nel periodo considerato, ne sono stati fatti meno di cinquanta.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "immagine": "ospedale",
+   "pubblicato": "2026-10-27T13:27+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 3,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/27/al-fatebenefratelli-di-benevento-eseguita-una-protesi-di-caviglia-intervento-raro-in-campania/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/fatebenefratelli-di-benevento-leccellenza-ortopedica-avanza-eseguita-una-protesi-di-caviglia-intervento-raro-in-campania/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "All'ospedale Sacro Cuore di Gesù Fatebenefratelli di Benevento il reparto di Ortopedia e Traumatologia ha eseguito un intervento di protesi di caviglia. Hanno operato i medici Giovanni Cautiero e Stefano Cacciapuoti.",
+      "fonti": [
+       "NTR24",
+       "TV7 Benevento"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "È un intervento molto specialistico e ancora poco diffuso rispetto alle protesi di anca e ginocchio, adatto ad alcuni pazienti con malattie gravi della caviglia. In Campania, nel periodo esaminato dalle statistiche, ne sono stati fatti meno di cinquanta. In Italia uno studio dell'Istituto Superiore di Sanità ne ha contati 9.858 tra il 2001 e il 2023, di cui 1.005 nel solo 2023.",
+      "fonti": [
+       "NTR24",
+       "TV7 Benevento"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "«Poter fare queste protesi in una struttura del territorio è un valore aggiunto per i cittadini del Sannio», ha detto il primario Salvatore D'Auria, che ricorda che l'intervento va valutato paziente per paziente. Il reparto fa già protesi di anca, ginocchio e spalla e cura le malattie del piede e della caviglia.",
+      "fonti": [
+       "NTR24",
+       "TV7 Benevento"
+      ],
+      "giorno": "2026-10-27"
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "L'intervento, i due chirurghi e il dato di meno di cinquanta protesi di caviglia in Campania.",
+      "fonti": [
+       "NTR24",
+       "TV7 Benevento"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando è stato fatto l'intervento e come sta il paziente."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Al Fatebenefratelli di Benevento eseguita una protesi di caviglia, intervento raro in Campania",
+      "url": "https://www.ntr24.tv/2026/10/27/al-fatebenefratelli-di-benevento-eseguita-una-protesi-di-caviglia-intervento-raro-in-campania/",
+      "data": "27 ott, 13:27"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "FATEBENEFRATELLI DI BENEVENTO, L’ECCELLENZA ORTOPEDICA AVANZA.   “ESEGUITA UNA PROTESI DI CAVIGLIA, INTERVENTO RARO IN CAMPANIA”",
+      "url": "https://www.tvsette.net/fatebenefratelli-di-benevento-leccellenza-ortopedica-avanza-eseguita-una-protesi-di-caviglia-intervento-raro-in-campania/",
+      "data": "27 ott, 13:15"
+     }
+    ]
+   },
+   "foto": "ospedale-2"
+  },
+  {
+   "id": "benevento-polizia-stradale-controlli-23-25-ottobre-patenti-ritirate",
+   "titolo": "Sannio, controlli della Polizia Stradale nel fine settimana: tre patenti ritirate per cellulare e sorpassi vietati",
+   "titolo_google": "Polizia Stradale Benevento, tre patenti ritirate nel weekend",
+   "sintesi": "Dal 23 al 25 ottobre la Polizia Stradale di Benevento ha controllato 23 veicoli e 31 persone: 12 multe, tre patenti ritirate (una per il telefono alla guida, due per sorpassi vietati) e 59 punti tolti.",
+   "categoria": "cronaca",
+   "zona": "provincia",
+   "luogo": "Provincia di Benevento",
+   "pubblicato": "2026-10-27T13:48+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "Lab TV",
+     "url": "https://www.labtv.net/cronaca/2026/10/27/la-polizia-di-stato-per-la-sicurezza-della-circolazione/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Nel fine settimana tra venerdì 23 e domenica 25 ottobre la Polizia Stradale di Benevento ha fatto più controlli sulle strade per fermare chi guida in modo pericoloso. Gli agenti hanno controllato 23 veicoli e 31 persone e fatto 12 multe.",
+      "fonti": [
+       "Lab TV"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Le infrazioni più frequenti sono state il cellulare usato alla guida e i sorpassi dove è vietato. Tre patenti sono state ritirate, una per il telefono al volante e due per sorpassi vietati, e in tutto sono stati tolti 59 punti. Gli agenti hanno anche aiutato due automobilisti in difficoltà.",
+      "fonti": [
+       "Lab TV"
+      ],
+      "giorno": "2026-10-27"
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Su quali strade si sono fatti i controlli."
+    ],
+    "fonti": [
+     {
+      "nome": "Lab TV",
+      "titolo": "La Polizia di Stato per la sicurezza della circolazione",
+      "url": "https://www.labtv.net/cronaca/2026/10/27/la-polizia-di-stato-per-la-sicurezza-della-circolazione/",
+      "data": "27 ott, 13:48"
+     }
+    ]
+   }
   },
   {
    "id": "benevento-cantieri-sicuri-camper-inail-formedil",
@@ -174,13 +727,17 @@
    "immagine": "arti-marziali",
    "luogo": "Montesarchio",
    "pubblicato": "2026-10-27T12:47+01:00",
-   "stato": "una_fonte",
+   "stato": "confermata",
    "rilevante": false,
    "importanza": 2,
    "fonti": [
     {
      "nome": "BeneventoNews24",
      "url": "https://www.beneventonews24.it/2026/10/27/karate-montesarchio-protagonista-ai-campionati-europei-oro-per-savignano-e-argento-per-vernillo-foto/?utm_source=rss&utm_medium=rss&utm_campaign=karate-montesarchio-protagonista-ai-campionati-europei-oro-per-savignano-e-argento-per-vernillo-foto"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/karate-montesarchio-protagonista-ai-campionati-europei-oro-per-savignano-e-argento-per-vernillo/"
     }
    ],
    "articolo": {
@@ -188,27 +745,38 @@
      {
       "testo": "Montesarchio torna dal Campionato Europeo di karate, che si è disputato in Inghilterra, con due medaglie. La maestra Livia Savignano ha vinto l'oro e ha ottenuto anche un secondo posto. Lucia Vernillo, 13 anni, alla sua prima gara europea dopo la convocazione nella Nazionale italiana di karate, ha vinto l'argento.",
       "fonti": [
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "TV7 Benevento"
       ],
       "giorno": "2026-10-27"
      },
      {
       "testo": "Con loro c'era anche Arturo Cioffi, 12 anni, al suo primo Europeo: non è salito sul podio, ma per la squadra è stata un'esperienza importante.",
       "fonti": [
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "TV7 Benevento"
       ],
       "giorno": "2026-10-27"
      },
      {
       "testo": "Il Comune ha festeggiato i risultati. Nico Ambrosone, il consigliere delegato allo sport, ha ringraziato i tre atleti per aver portato in alto il nome della città fuori dall'Italia e ha detto che il Comune sarà sempre al fianco di chi si impegna ogni giorno nello sport.",
       "fonti": [
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "TV7 Benevento"
       ],
       "giorno": "2026-10-27"
      }
     ],
     "cronologia": [],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "L'oro di Livia Savignano, l'argento della 13enne Lucia Vernillo e il primo Europeo di Arturo Cioffi, 12 anni.",
+      "fonti": [
+       "BeneventoNews24",
+       "TV7 Benevento"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [
      "In quale città inglese e in quali giorni si è disputato il Campionato Europeo, e in quali gare sono arrivate le medaglie."
@@ -219,6 +787,12 @@
       "titolo": "Karate, Montesarchio protagonista ai Campionati Europei: oro per Savignano e argento per Vernillo (FOTO)",
       "url": "https://www.beneventonews24.it/2026/10/27/karate-montesarchio-protagonista-ai-campionati-europei-oro-per-savignano-e-argento-per-vernillo-foto/?utm_source=rss&utm_medium=rss&utm_campaign=karate-montesarchio-protagonista-ai-campionati-europei-oro-per-savignano-e-argento-per-vernillo-foto",
       "data": "27 ott, 12:47"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Karate, Montesarchio protagonista ai Campionati Europei: oro per Savignano e argento per Vernillo",
+      "url": "https://www.tvsette.net/karate-montesarchio-protagonista-ai-campionati-europei-oro-per-savignano-e-argento-per-vernillo/",
+      "data": "27 ott, 13:25"
      }
     ]
    },
@@ -248,6 +822,10 @@
     {
      "nome": "Il Caudino",
      "url": "https://ilcaudino.it/montesarchio-scarcerata-55enne-che-perseguitava-lex-amante-e-la-sua-famiglia-uid-5/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/scarcerata-55enne-di-montesarchio-perseguitava-lamante-e-tutta-la-sua-famiglia/"
     }
    ],
    "articolo": {
@@ -257,24 +835,30 @@
       "fonti": [
        "NTR24",
        "BeneventoNews24",
-       "Il Caudino"
-      ]
+       "Il Caudino",
+       "TV7 Benevento"
+      ],
+      "giorno": "2026-10-27"
      },
      {
       "testo": "Secondo l'accusa, la relazione extraconiugale era finita circa cinque anni fa, ma la donna avrebbe continuato a perseguitare l'uomo e la sua famiglia. L'indagine è dei Carabinieri, coordinati dalla Procura di Benevento, ed è partita dalla querela dell'uomo. Tra le prove ci sono le immagini delle telecamere comunali, le dichiarazioni delle persone offese, figli compresi, e le testimonianze raccolte.",
       "fonti": [
        "NTR24",
        "BeneventoNews24",
-       "Il Caudino"
-      ]
+       "Il Caudino",
+       "TV7 Benevento"
+      ],
+      "giorno": "2026-10-27"
      },
      {
       "testo": "Le misure contro di lei erano diventate via via più pesanti. Prima il giudice delle indagini preliminari (gip) del Tribunale di Benevento le aveva vietato di avvicinarsi alla famiglia, con il braccialetto elettronico e l'obbligo di restare ad almeno un chilometro di distanza. Dopo nuove denunce per presunte violazioni e nuovi presunti episodi, era arrivato anche il divieto di dimora a Montesarchio, e infine gli arresti domiciliari, ora revocati.",
       "fonti": [
        "NTR24",
        "BeneventoNews24",
-       "Il Caudino"
-      ]
+       "Il Caudino",
+       "TV7 Benevento"
+      ],
+      "giorno": "2026-10-27"
      }
     ],
     "cronologia": [],
@@ -284,7 +868,8 @@
       "fonti": [
        "NTR24",
        "BeneventoNews24",
-       "Il Caudino"
+       "Il Caudino",
+       "TV7 Benevento"
       ]
      }
     ],
@@ -311,6 +896,12 @@
       "titolo": "Montesarchio: Scarcerata 55enne che perseguitava l’ex amante e la sua famiglia",
       "url": "https://ilcaudino.it/montesarchio-scarcerata-55enne-che-perseguitava-lex-amante-e-la-sua-famiglia-uid-5/",
       "data": "27 ott, 11:42"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Scarcerata 55enne di Montesarchio: perseguitava l’amante e tutta la sua famiglia.",
+      "url": "https://www.tvsette.net/scarcerata-55enne-di-montesarchio-perseguitava-lamante-e-tutta-la-sua-famiglia/",
+      "data": "27 ott, 13:13"
      }
     ]
    }
@@ -1210,6 +1801,10 @@
     {
      "nome": "Gazzetta di Benevento",
      "url": "https://www.gazzettabenevento.it/it/i-sindaci-si-oppongono-al-processo-di-centralizzazione-coatta-imposto-dallente-idrico-campano-e"
+    },
+    {
+     "nome": "Lab TV",
+     "url": "https://www.labtv.net/attualita/2026/10/27/sannio-acque-avanza-in-sordina-e-11-sindaci-contestano-la-centralizzazione-coatta-delleic/"
     }
    ],
    "articolo": {
@@ -1219,22 +1814,26 @@
       "fonti": [
        "NTR24",
        "Anteprima24"
-      ]
+      ],
+      "giorno": "2026-10-26"
      },
      {
       "testo": "I Comuni sono Fragneto Monforte, Sassinoro, Circello, San Lupo, Fragneto l'Abate, Baselice, San Marco dei Cavoti, Castelvetere in Val Fortore, Pietraroja, San Giorgio la Molara e Casalduni. Alcuni curano reti e sorgenti da quasi un secolo, come il Consorzio Acquedotto di Fragneto Monforte e Fragneto l'Abate. I sindaci dicono di avere bilanci in ordine e tariffe giuste, e che la scorsa estate i loro paesi non hanno avuto problemi d'acqua.",
       "fonti": [
        "NTR24",
        "Anteprima24",
-       "Gazzetta di Benevento"
-      ]
+       "Gazzetta di Benevento",
+       "Lab TV"
+      ],
+      "giorno": "2026-10-26"
      },
      {
       "testo": "Ce l'hanno con l'Ente Idrico Campano (EIC), l'ente che governa l'acqua in Campania, che ad alcuni di loro ha detto no alla richiesta di continuare a gestire il servizio da soli. Temono anche bollette più care e di perdere il controllo delle sorgenti; Anteprima24 ricorda i dubbi sui conti del gestore unico già sollevati dalla Corte dei Conti.",
       "fonti": [
        "NTR24",
        "Anteprima24"
-      ]
+      ],
+      "giorno": "2026-10-26"
      },
      {
       "testo": "Hanno deciso quattro cose: un Coordinamento dei Comuni Sanniti a Gestione Autonoma, che resti in piedi stabilmente; ricorsi al TAR, il tribunale amministrativo, contro tutti i no dell'EIC, da soli o insieme; una diffida all'EIC con la richiesta di sospendere i passaggi di consegna e gli affidamenti; una campagna per informare i cittadini. Chiedono anche un incontro con la Regione Campania e l'EIC.",
@@ -1242,14 +1841,16 @@
        "NTR24",
        "Anteprima24",
        "Gazzetta di Benevento"
-      ]
+      ],
+      "giorno": "2026-10-26"
      },
      {
       "testo": "«Siamo Comuni che gestiscono l'acqua da soli e lo fanno bene», hanno detto i sindaci alla fine dell'incontro, promettendo di difendere l'autonomia «in ogni sede istituzionale e giudiziaria». Pochi giorni prima, venerdì 23 ottobre, anche il Consiglio comunale di Cusano Mutri aveva votato all'unanimità il no a Sannio Acque e il ricorso al TAR.",
       "fonti": [
        "Anteprima24",
        "NTR24 (25/10)"
-      ]
+      ],
+      "giorno": "2026-10-26"
      }
     ],
     "cronologia": [],
@@ -1258,7 +1859,8 @@
       "testo": "Gli undici Comuni presenti, l'incontro a Fragneto Monforte e il no all'unanimità al passaggio a Sannio Acque.",
       "fonti": [
        "NTR24",
-       "Anteprima24"
+       "Anteprima24",
+       "Lab TV"
       ]
      },
      {
@@ -1299,6 +1901,12 @@
       "titolo": "I sindaci si oppongono al processo di centralizzazione coatta imposto dall'Ente Idrico Campano e rivendicano c",
       "url": "https://www.gazzettabenevento.it/it/i-sindaci-si-oppongono-al-processo-di-centralizzazione-coatta-imposto-dallente-idrico-campano-e",
       "data": "26 ott, 17:52"
+     },
+     {
+      "nome": "Lab TV",
+      "titolo": "Sannio Acque avanza in sordina e 11 sindaci contestano la “centralizzazione coatta” dell’Eic",
+      "url": "https://www.labtv.net/attualita/2026/10/27/sannio-acque-avanza-in-sordina-e-11-sindaci-contestano-la-centralizzazione-coatta-delleic/",
+      "data": "27 ott, 13:22"
      }
     ]
    },
@@ -2548,7 +3156,7 @@
    "categoria": "altro",
    "zona": "caudina",
    "immagine": "elezioni",
-   "luogo": "Durazzano",
+   "luogo": "Durazzano, Morcone e Amorosi",
    "pubblicato": "2026-10-26",
    "stato": "ufficiale",
    "rilevante": false,
@@ -2562,34 +3170,50 @@
      "nome": "Comune di Morcone",
      "url": "https://comune.morcone.bn.it/albo-pretorio/?dettaglio_id=306088",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di Amorosi",
+     "url": "https://comune.amorosi.bn.it/albo-pretorio/?dettaglio_id=306277",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
      {
+      "testo": "Martedì 27 ottobre il Comune di Amorosi, nella Valle Telesina, ha pubblicato all'albo pretorio due avvisi per chi vuole entrare negli elenchi di chi lavora ai seggi: uno per l'albo unico degli scrutatori e uno per l'albo dei presidenti di seggio.",
+      "fonti": [
+       "Comune di Amorosi",
+       "Comune di Amorosi (presidenti)"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
       "testo": "A Durazzano si possono presentare fino al 30 novembre 2026 le domande per entrare nell'albo degli scrutatori, l'elenco delle persone che il Comune può chiamare a lavorare nei seggi durante le elezioni. Possono farlo gli elettori del Comune che hanno almeno la licenza della scuola dell'obbligo e non rientrano nei casi di esclusione elencati nell'avviso.",
       "fonti": [
        "Comune di Durazzano"
-      ]
+      ],
+      "giorno": "2026-10-26"
      },
      {
       "testo": "La domanda va indirizzata al sindaco, con i moduli che si trovano all'ufficio elettorale del Comune; avviso e modulo sono anche sul sito comune.durazzano.bn.it. Chi è già iscritto può chiedere di essere cancellato entro il 31 dicembre 2026, ma solo per motivi gravi, giustificati e documentati.",
       "fonti": [
        "Comune di Durazzano"
-      ]
+      ],
+      "giorno": "2026-10-26"
      },
      {
       "testo": "Anche il Comune di Morcone ha pubblicato il 26 ottobre, nel suo albo pretorio, un avviso sull'albo unico delle persone idonee a fare lo scrutatore.",
       "fonti": [
        "Comune di Morcone"
-      ]
+      ],
+      "giorno": "2026-10-26"
      }
     ],
     "cronologia": [],
     "concordano": [],
     "divergono": [],
     "non_si_sa": [
-     "I termini e le modalità dell'avviso di Morcone."
+     "I termini e le modalità degli avvisi di Morcone e Amorosi."
     ],
     "fonti": [
      {
@@ -2605,8 +3229,30 @@
       "url": "https://comune.morcone.bn.it/albo-pretorio/?dettaglio_id=306088",
       "data": "26 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "Comune di Amorosi",
+      "titolo": "INCLUSIONE ALBO UNICO SCRUTATORI SEGGIO ELETTORALE",
+      "url": "https://comune.amorosi.bn.it/albo-pretorio/?dettaglio_id=306277",
+      "data": "27 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "Comune di Amorosi (presidenti)",
+      "titolo": "INCLUSIONE ALBO UFFICIO PRESIDENTE SEGGIO ELETTORALE",
+      "url": "https://comune.amorosi.bn.it/albo-pretorio/?dettaglio_id=306278",
+      "data": "27 ott",
+      "ufficiale": true
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Martedì 27 ottobre anche Amorosi ha pubblicato gli avvisi per entrare nell'albo degli scrutatori e in quello dei presidenti di seggio.",
+     "fonti": [
+      "Comune di Amorosi",
+      "Comune di Amorosi (presidenti)"
+     ],
+     "quando": "2026-10-27T14:19+01:00"
+    }
    },
    "foto": "elezioni-7",
    "importanza": 2
@@ -3492,12 +4138,12 @@
   },
   {
    "id": "buonalbergo-carta-dedicata-a-te-lista-beneficiari-2026",
-   "titolo": "Carta Dedicata a te, pubblicati gli elenchi dei beneficiari a Buonalbergo, Montesarchio, Sant'Angelo a Cupolo e Pago Veiano: prima ricarica dal 4 novembre",
-   "titolo_google": "Carta Dedicata a te 2026: beneficiari in quattro Comuni",
-   "sintesi": "Buonalbergo, Montesarchio, Sant'Angelo a Cupolo e Pago Veiano hanno pubblicato gli elenchi delle famiglie che ricevono la «Carta Dedicata a te», 500 euro all'anno per la spesa. La prima ricarica arriva dal 4 novembre e il primo acquisto va fatto entro il 16 dicembre.",
+   "titolo": "Carta Dedicata a te, pubblicati gli elenchi dei beneficiari in sei Comuni del Sannio: prima ricarica dal 4 novembre",
+   "titolo_google": "Carta Dedicata a te 2026: beneficiari in sei Comuni del Sannio",
+   "sintesi": "Buonalbergo, Montesarchio, Sant'Angelo a Cupolo, Pago Veiano, Castelpagano e Arpaise hanno pubblicato gli elenchi delle famiglie che ricevono la «Carta Dedicata a te», 500 euro all'anno per la spesa. La prima ricarica arriva dal 4 novembre e il primo acquisto va fatto entro il 16 dicembre.",
    "categoria": "altro",
    "zona": "provincia",
-   "luogo": "Buonalbergo, Montesarchio, Sant'Angelo a Cupolo e Pago Veiano",
+   "luogo": "Buonalbergo, Montesarchio, Sant'Angelo a Cupolo, Pago Veiano, Castelpagano e Arpaise",
    "pubblicato": "2026-10-26",
    "stato": "ufficiale",
    "rilevante": false,
@@ -3521,10 +4167,34 @@
      "nome": "Comune di Pago Veiano",
      "url": "https://www.comune.pagoveiano.bn.it/c062046/po/mostra_news.php?id=490&area=H",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di Castelpagano",
+     "url": "https://www.comune.castelpagano.bn.it/novita/notizie/novita_72.html",
+     "ufficiale": true
+    },
+    {
+     "nome": "Comune di Arpaise",
+     "url": "https://comune.arpaise.bn.it/albo-pretorio/?dettaglio_id=306275",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Martedì 27 ottobre gli elenchi dei beneficiari li hanno pubblicati anche Castelpagano e Arpaise. Ad Arpaise le famiglie nell'elenco sono 24: i nuovi beneficiari possono ritirare la carta in un qualsiasi ufficio postale dal 4 novembre, con il codice arrivato per raccomandata, un documento d'identità e il codice fiscale o la tessera sanitaria.",
+      "fonti": [
+       "Comune di Arpaise"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Castelpagano ricorda che non serve fare domanda né al Comune né all'INPS e che la carta si usa solo per comprare alimentari di prima necessità nei negozi abilitati, esclusi gli alcolici. Nell'elenco le famiglie si riconoscono dal protocollo dell'attestazione ISEE, che si trova anche nell'area riservata del sito dell'INPS, entrando con SPID, CIE o CNS.",
+      "fonti": [
+       "Comune di Castelpagano"
+      ],
+      "giorno": "2026-10-27"
+     },
      {
       "testo": "Martedì 27 ottobre anche il Comune di Pago Veiano ha pubblicato sul suo sito l'avviso sulla «Carta Dedicata a te» per il 2026 e il 2027, con la graduatoria delle famiglie beneficiarie: tutti e due i documenti si scaricano dalla pagina della notizia.",
       "fonti": [
@@ -3605,6 +4275,14 @@
       ]
      },
      {
+      "data": "27 ottobre",
+      "fatto": "Pubblicano l'elenco anche Castelpagano e Arpaise.",
+      "fonti": [
+       "Comune di Castelpagano",
+       "Comune di Arpaise"
+      ]
+     },
+     {
       "data": "4 novembre",
       "fatto": "Prima ricarica di 500 euro sulle carte.",
       "fonti": [
@@ -3617,7 +4295,9 @@
       "testo": "Il primo acquisto con la carta va fatto entro il 16 dicembre 2026; chi era già beneficiario riceve i soldi sulla carta che ha.",
       "fonti": [
        "Comune di Montesarchio",
-       "Comune di Sant'Angelo a Cupolo"
+       "Comune di Sant'Angelo a Cupolo",
+       "Comune di Castelpagano",
+       "Comune di Arpaise"
       ]
      }
     ],
@@ -3651,6 +4331,20 @@
       "nome": "Comune di Pago Veiano",
       "titolo": "AVVISO PUBBLICO - Carta \"Dedicata a Te\". Annualità 2026/2027",
       "url": "https://www.comune.pagoveiano.bn.it/c062046/po/mostra_news.php?id=490&area=H",
+      "data": "27 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "Comune di Castelpagano",
+      "titolo": "Carta Dedicata a Te INPS 2026-2027  Pubblicazione elenco beneficiari",
+      "url": "https://www.comune.castelpagano.bn.it/novita/notizie/novita_72.html",
+      "data": "27 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "Comune di Arpaise",
+      "titolo": "“CARTA DEDICATA A TE” ANNO 2026. AVVISO ELENCO BENEFICIARI.",
+      "url": "https://comune.arpaise.bn.it/albo-pretorio/?dettaglio_id=306275",
       "data": "27 ott",
       "ufficiale": true
      }
@@ -3795,12 +4489,12 @@
   },
   {
    "id": "castelpoto-santa-croce-del-sannio-elenco-elettori-fuori-sede",
-   "titolo": "Elettori fuori sede, tredici Comuni del Sannio hanno aperto l'elenco: domande entro il 31 dicembre",
-   "titolo_google": "Elettori fuori sede in tredici Comuni del Sannio: come fare",
-   "sintesi": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni e Limatola hanno aperto l'elenco degli elettori fuori sede previsto dalla nuova legge elettorale: chi per studio, lavoro o cure vive in una regione diversa da quella in cui vota può chiedere di votare dove abita. Per studio e lavoro la domanda va fatta entro il 31 dicembre, per le votazioni dell'anno dopo.",
+   "titolo": "Elettori fuori sede, quattordici Comuni del Sannio hanno aperto l'elenco: domande entro il 31 dicembre",
+   "titolo_google": "Elettori fuori sede in 14 Comuni del Sannio: come fare",
+   "sintesi": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni, Limatola e Torrecuso hanno aperto l'elenco degli elettori fuori sede previsto dalla nuova legge elettorale: chi per studio, lavoro o cure vive in una regione diversa da quella in cui vota può chiedere di votare dove abita. Per studio e lavoro la domanda va fatta entro il 31 dicembre, per le votazioni dell'anno dopo.",
    "categoria": "altro",
    "zona": "provincia",
-   "luogo": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni e Limatola",
+   "luogo": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni, Limatola e Torrecuso",
    "immagine": "elezioni",
    "pubblicato": "2026-10-27",
    "stato": "ufficiale",
@@ -3870,12 +4564,17 @@
      "nome": "Comune di Limatola",
      "url": "https://limatola.halleyweb.it/mc/mc_p_dettaglio.php?id_pubbl=5590",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di Torrecuso",
+     "url": "https://www.comune.torrecuso.bn.it/Novita/Avvisi/Istituzione-dell-elenco-comunale-degli-elettori-fuori-sede",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Tredici Comuni del Sannio, da Castelpoto a Limatola, hanno aperto l'elenco comunale degli elettori fuori sede. Lo prevede la legge 180 del 9 ottobre 2026 sulle elezioni di Camera e Senato: chi vive per un periodo in una regione diversa da quella del Comune dove è iscritto per votare può chiedere di votare nel Comune dove abita. Vale per le elezioni politiche ed europee e per i referendum, non per le elezioni comunali e regionali.",
+      "testo": "Quattordici Comuni del Sannio, da Castelpoto a Torrecuso, hanno aperto l'elenco comunale degli elettori fuori sede. Lo prevede la legge 180 del 9 ottobre 2026 sulle elezioni di Camera e Senato: chi vive per un periodo in una regione diversa da quella del Comune dove è iscritto per votare può chiedere di votare nel Comune dove abita. Vale per le elezioni politiche ed europee e per i referendum, non per le elezioni comunali e regionali.",
       "fonti": [
        "Comune di Castelpoto",
        "Comune di Santa Croce del Sannio",
@@ -3899,6 +4598,13 @@
       "testo": "Sempre martedì 27 ottobre ha pubblicato l'avviso all'albo pretorio anche il Comune di Limatola, nella Valle Telesina al confine con la provincia di Caserta.",
       "fonti": [
        "Comune di Limatola"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Martedì 27 ottobre l'avviso l'ha pubblicato anche Torrecuso, con il modulo per chiedere l'iscrizione all'elenco. Se ne occupa l'ufficio elettorale, al piano terra di Palazzo Caracciolo-Cito, in piazza Antonio Fusco 1.",
+      "fonti": [
+       "Comune di Torrecuso"
       ],
       "giorno": "2026-10-27"
      },
@@ -4067,6 +4773,13 @@
       "nome": "Comune di Limatola",
       "titolo": "VOTO DEGLI ELETTORI FUORI SEDE TEMPORANEAMENTE DOMICILIATI IN UNA REGIONE DIVERSA DA QUELLA DI ISCRIZIONE ELETTORALE ISTITUZIONE DELL'ELENCO COMUNALE DEGLI ELETTORI FUORI SEDE",
       "url": "https://limatola.halleyweb.it/mc/mc_p_dettaglio.php?id_pubbl=5590",
+      "data": "27 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "Comune di Torrecuso",
+      "titolo": "Istituzione dell’elenco comunale degli elettori fuori sede",
+      "url": "https://www.comune.torrecuso.bn.it/Novita/Avvisi/Istituzione-dell-elenco-comunale-degli-elettori-fuori-sede",
       "data": "27 ott",
       "ufficiale": true
      }
