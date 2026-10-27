@@ -75,3 +75,11 @@ stesso e lui riceve un avviso; gli altri sono «da valutare»; quelli di redazio
 ## Facebook
 Un post uscito senza immagine (l'anteprima della notizia è stata rinominata dopo il post): sulla Pagina, menu «…» del
 post → «Aggiorna l'allegato della condivisione» → Salva. Non toccare il sito per questo.
+
+## Lo scrittore del giornale (dal 27 ott 2026)
+Lui: «nominiamo Fable 5.1 come scrittore giornalista ufficiale del nostro giornale? da controllare ogni giorno se escono
+modelli nuovi». Le curiosità e l'agente di ogni ora girano con `claude-fable-5-1` (l'agente in prova dal 27 ott: si
+misurano durata dei giri e consumo; Fable ha un tetto suo, al massimo il 50% del limite settimanale). Il giro lampo
+resta su `claude-opus-5-5` (lì conta la velocità). Ogni giorno alle 9 il Pi guarda la pagina dei modelli di Anthropic
+(`strumenti/modelli_nuovi.py`, log `~/nb-fonti/modelli.log`) e, se ne esce uno nuovo, lo avvisa su WhatsApp e per
+email: non cambia niente da solo, prima una prova sui dati veri e poi decide lui.
