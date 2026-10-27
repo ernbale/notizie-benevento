@@ -1,7 +1,62 @@
 {
- "aggiornato": "2026-10-27T07:13+01:00",
+ "aggiornato": "2026-10-27T08:12+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-ecosistema-urbano-2026-85esima-legambiente",
+   "titolo": "Benevento scende all'85° posto nella classifica ambientale Ecosistema Urbano 2026: un anno fa era 80ª",
+   "titolo_google": "Ecosistema Urbano 2026: Benevento 85ª su 106 capoluoghi",
+   "sintesi": "Nella classifica Ecosistema Urbano 2026 di Legambiente, Ambiente Italia e Il Sole 24 Ore, Benevento è 85ª su 106 capoluoghi: nell'edizione precedente era 80ª. In Campania va meglio solo Avellino, 57ª; Napoli è ultima.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-27T07:18+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/27/ambiente-benevento-in-affanno-passa-dall80esima-all85esima-posizione-pesano-acqua-rifiuti-e-qualita-dellaria/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Benevento perde cinque posizioni nella classifica Ecosistema Urbano 2026, il rapporto che confronta come vanno le cose sull'ambiente nei 106 capoluoghi di provincia italiani: è 85ª, mentre nell'edizione precedente era 80ª. Il rapporto lo preparano ogni anno Legambiente, Ambiente Italia e Il Sole 24 Ore.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "A pesare sul risultato della città, scrive Il Sannio Quotidiano, sono soprattutto l'acqua, i rifiuti e la qualità dell'aria.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "Tra i capoluoghi della Campania va meglio solo Avellino, 57ª. Salerno è 82ª, Caserta 102ª e Napoli è ultima in Italia, al 106° posto: un anno fa era 103ª.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "I punteggi di Benevento indicatore per indicatore (acqua, rifiuti, aria, trasporti, verde)."
+    ],
+    "fonti": [
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Ambiente, Benevento in affanno: passa dall’80esima all’85esima posizione, pesano acqua, rifiuti e qualità dell’aria",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/27/ambiente-benevento-in-affanno-passa-dall80esima-all85esima-posizione-pesano-acqua-rifiuti-e-qualita-dellaria/",
+      "data": "27 ott, 07:18"
+     }
+    ]
+   }
+  },
   {
    "id": "benevento-viale-mellusi-divieto-sosta-caditoie-29-ottobre-4-novembre",
    "titolo": "Benevento, viale Mellusi: divieto di sosta per la pulizia delle caditoie il 29 e 30 ottobre e dal 2 al 4 novembre",
