@@ -68,6 +68,7 @@ AVVISI_VECCHI = False   # vedi candidate()
 # ultimi 50 post, cioè un giorno nei giorni pieni: una notizia di due giorni prima aggiornata oggi usciva di nuovo,
 # 5 doppioni tra il 25 e il 26 ott)
 GIORNI_MEMORIA = 5
+USCITE_FILE = "facebook-uscite.json"   # quello che c'è sulla Pagina, scritto a ogni giro per instagram.py (accanto a --stato)
 PAGINE_MAX = 8
 
 
@@ -462,11 +463,27 @@ def main():
     if chi != PAGINA:
         raise RuntimeError(f"la chiave non è della Pagina «{PAGINA}»: non pubblico niente")
     gia, oggi, ultimo, riepilogo, uscite = gia_pubblicate(token, adesso)
+    lettura = {"letto": adesso.isoformat(timespec="seconds"), "uscite": {k: v.isoformat() for k, v in uscite.items()},
+               "aggiornamenti": sorted(k for k, v in gia.items() if AGG_USCITO in v)}
+
+    def segna(n, agg=False):
+        """Quello che c'è sulla Pagina, per Instagram (instagram.da_facebook): lo legge dal file invece di richiedere
+        a Meta tutti i post una seconda volta (27 ott 2026: la doppia lettura ha fatto scattare «troppe richieste»)."""
+        if n is not None:
+            lettura["uscite"][n["id"]] = dt.datetime.now(fuso()).isoformat()
+            if agg:
+                lettura["aggiornamenti"] = sorted(set(lettura["aggiornamenti"]) | {n["id"]})
+        if a.stato:
+            os.makedirs(os.path.dirname(a.stato) or ".", exist_ok=True)
+            with open(os.path.join(os.path.dirname(a.stato), USCITE_FILE), "w", encoding="utf-8") as f:
+                json.dump(lettura, f)
+    segna(None)
     # un comunicato ufficiale arrivato per posta (giro lampo: «subito» in notizie.json, strumenti/comunicati.py) esce
     # adesso: niente pausa, niente tetto del giorno, anche dopo il riepilogo (lui, 24 ott 2026: «pubblicazione istantanea»)
     urgenti = [] if sera else [n for n in candidate(notizie, gia, adesso) if n.get("subito")]
     for n in urgenti[:3]:
         pubblica(token, n)
+        segna(n)
         oggi += 1
         print(f"Facebook: pubblicata subito {n['id']} (comunicato, {oggi} oggi)")
     if urgenti:
@@ -488,6 +505,7 @@ def main():
         return
     for n, agg in lista[:max(subito, 1)]:
         pubblica(token, n, agg)
+        segna(n, agg)
         oggi += 1
         cosa = "pubblicato l'aggiornamento di" if agg else "pubblicata"
         print(f"Facebook: {cosa} {n['id']} ({oggi} oggi)")

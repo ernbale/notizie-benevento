@@ -51,6 +51,7 @@ import facebook   # noqa: E402
 SEGUE_DAL = "2026-10-27T07:40:00+01:00"
 PAUSA_RECUPERO = 10   # minuti tra due post quando Instagram è indietro rispetto a Facebook: si recupera senza raffiche
 QUOTA_MARGINE = 2     # post lasciati liberi sotto il tetto di Meta in 24 ore
+LETTURA_VALIDA = 20   # minuti: la lettura della Pagina fatta da facebook.py vale solo per questo giro
 FERMO_MINUTI = 60   # quando Meta dice «troppe richieste» non la si chiama per un'ora (il suo conto è sull'ultima ora)
 DALLE, ALLE = 6, 23   # come facebook.py
 QUANTE, ALMENO = 5, 3  # notizie nel riepilogo; con meno di ALMENO notizie oggi niente riepilogo
@@ -278,7 +279,10 @@ def giro(a, notizie, adesso, token, sera):
             print(f"Instagram: pubblicato il riepilogo della giornata ({len(r[1])} notizie, {oggi + 1} post oggi)")
             return
         print("Instagram: niente riepilogo oggi (poche notizie o immagini non ancora online)")
-    da_fare = da_facebook(token, notizie, gia, uscite, adesso)
+    da_fare = da_facebook(a, notizie, gia, uscite, adesso)
+    if da_fare is None:
+        print("Instagram: non so cosa è uscito su Facebook in questo giro (manca la sua lettura), non pubblico")
+        return
     if not da_fare:
         print("Instagram: è in pari con Facebook, niente da pubblicare")
         return
@@ -296,12 +300,23 @@ def giro(a, notizie, adesso, token, sera):
     print("Instagram: le schede delle notizie uscite su Facebook non sono ancora online, al prossimo giro")
 
 
-def da_facebook(token, notizie, gia, uscite, adesso):
+def da_facebook(a, notizie, gia, uscite, adesso):
     """Le notizie uscite su Facebook (da SEGUE_DAL e nelle ultime ORE_FINESTRA ore) che su Instagram mancano, dalla
     prima uscita su Facebook: [(notizia, è un aggiornamento)]. gia/uscite: i titoli usciti e l'ora dell'ultimo post di
     ogni notizia su Instagram (gia_pubblicate). Un «Aggiornamento» di Facebook si recupera solo se Instagram aveva già la
-    notizia prima; se non l'aveva, esce una volta sola, col titolo di adesso."""
-    fb, _, _, _, uscite_fb = facebook.gia_pubblicate(token, adesso)
+    notizia prima; se non l'aveva, esce una volta sola, col titolo di adesso. Quello che c'è su Facebook lo legge dal
+    file che facebook.py scrive in questo stesso giro (USCITE_FILE, accanto a --stato): niente seconda lettura dei post
+    a Meta. Se il file manca o non è di questo giro: None (non si pubblica)."""
+    try:
+        with open(os.path.join(os.path.dirname(a.stato or ""), facebook.USCITE_FILE), encoding="utf-8") as f:
+            letto = json.load(f)
+        quando_letto = dt.datetime.fromisoformat(letto["letto"])
+    except (OSError, ValueError, KeyError, TypeError):
+        return None
+    if adesso - quando_letto > dt.timedelta(minutes=LETTURA_VALIDA):
+        return None
+    uscite_fb = {k: dt.datetime.fromisoformat(v) for k, v in letto["uscite"].items()}
+    fb = {k: {AGG_USCITO} for k in letto.get("aggiornamenti") or []}
     dal = max(dt.datetime.fromisoformat(SEGUE_DAL), adesso - dt.timedelta(hours=ORE_FINESTRA))
     per_id = {n.get("id"): n for n in notizie}
     out = []
