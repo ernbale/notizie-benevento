@@ -66,6 +66,11 @@ ordine (instagram.da_facebook; se resta indietro recupera una ogni 10 minuti; gu
 ore). Un
 aggiornamento col titolo diverso non è un doppione. Per togliere un post da Facebook: «Sposta nell'archivio»; su
 Instagram lo toglie lui dall'app.
+Il limite di Meta: facebook.py, instagram.py e statistiche.py scrivono nel log «limite dell'ora di Meta usato» (le
+percentuali che Meta manda in ogni risposta) e, negli errori, sottocodice e chiamata. Le statistiche rileggono Meta al
+massimo una volta l'ora e mai oltre il 60% (statistiche.META_OGNI, META_TETTO). Il 27 ott Instagram ha avuto due volte
+«troppe richieste» (codice 4) con l'uso di Meta basso e **il post uscito lo stesso**: dopo un errore di Meta guarda il
+profilo vero prima di pensare che manchi qualcosa (instagram.py comunque rilegge Instagram e non ripubblica).
 
 ## Comunicati: subito solo le fonti ufficiali (dal 26 ott 2026)
 Escono subito solo quelli di enti pubblici, PEC e mittenti fidati (`~/nb-fonti/mittenti_fidati.json` sul Pi). Gli altri

@@ -317,7 +317,12 @@ def riprova(fare, cosa, lettura=False):
             return fare()
         except Exception as e:
             incerto = isinstance(e, persa) or (isinstance(e, urllib.error.URLError) and isinstance(e.reason, persa))
-            if attesa is None or (incerto and not lettura):
+            # Meta che frena (LIMITE_META) non si riprova mai: insistere allunga il blocco. E un invio frenato è incerto:
+            # il 27 ott 2026 Instagram ha risposto «azione bloccata» (codice 4, sottocodice 2207051) a media_publish tre
+            # volte su tre, e il post era uscito ogni volta: riprovarlo dopo 5 secondi avrebbe fatto un doppione.
+            frenato = bool(LIMITE_META.search(str(e)))
+            incerto = incerto or (frenato and not lettura)
+            if attesa is None or frenato or (incerto and not lettura):
                 raise RuntimeError(f"{cosa}: {e}" + (" (forse è uscito: si ricontrolla dopo)" if incerto else "")) from None
             print(f"  {cosa}: {e} — riprovo tra {attesa} s")
             time.sleep(attesa)
