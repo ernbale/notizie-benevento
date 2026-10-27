@@ -3,6 +3,67 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "montefalcone-val-fortore-sp-50-lavori-risanamento-provincia",
+   "titolo": "Montefalcone di Val Fortore, via libera ai lavori di risanamento sulla strada provinciale 50",
+   "titolo_google": "SP 50 a Montefalcone di Val Fortore: via libera ai lavori",
+   "sintesi": "La Provincia di Benevento ha approvato la perizia di spesa da 204.830,12 euro per rifare la strada provinciale 50 a Montefalcone di Val Fortore, dal km 12+650 al km 13+950. I lavori sono affidati alla ditta Cavoto Costruzioni e pagati con fondi del Ministero delle Infrastrutture.",
+   "categoria": "strade",
+   "zona": "fortore",
+   "luogo": "Montefalcone di Val Fortore",
+   "pubblicato": "2026-10-27T10:30:00+01:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "immagine": "lavori-stradali",
+   "comunicati": [
+    "42a710be493d"
+   ],
+   "fonti": [
+    {
+     "nome": "Provincia di Benevento",
+     "url": "https://www.provincia.benevento.it/",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "La Provincia di Benevento ha dato il via libera ai lavori sulla strada provinciale 50, nel territorio di Montefalcone di Val Fortore. Lo annuncia il presidente della Provincia, Nino Lombardi: il dirigente del Settore Infrastrutture, Valentino Ferrara, ha approvato la perizia di spesa, cioè il documento tecnico con i lavori da fare e quanto costano, per rimettere a posto l'asfalto della strada.",
+      "fonti": [
+       "Provincia di Benevento"
+      ]
+     },
+     {
+      "testo": "Si tratta di lavori di manutenzione straordinaria e di risanamento della strada, dal chilometro 12+650 al chilometro 13+950. L'opera è affidata alla ditta Cavoto Costruzioni di Montefalcone di Val Fortore.",
+      "fonti": [
+       "Provincia di Benevento"
+      ]
+     },
+     {
+      "testo": "La perizia ha un importo netto di 204.830,12 euro. I soldi arrivano dal Ministero delle Infrastrutture, che finanzia gli interventi nel Comparto n. 2 «Fortore» della rete stradale della Provincia di Benevento.",
+      "fonti": [
+       "Provincia di Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Provincia di Benevento",
+      "titolo": "INTERVENTI DI RISANAMENTO SULL SP 50 NEL TERRITORIO DI MONTEFALCONE VALFORTORE",
+      "url": "https://www.provincia.benevento.it/",
+      "data": "27 ott, 10:30",
+      "ufficiale": true
+     }
+    ]
+   },
+   "subito": true,
+   "foto": "lavori-stradali-10"
+  },
+  {
    "id": "benevento-docente-convitto-giannone-eredita-rai1",
    "titolo": "Benevento, una docente del Convitto Giannone in gara a «L'Eredità» su Rai 1: torna anche martedì sera",
    "titolo_google": "L'Eredità, docente del Convitto Giannone di Benevento in gara",
