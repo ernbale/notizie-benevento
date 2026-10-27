@@ -1,7 +1,82 @@
 {
- "aggiornato": "2026-10-27T14:19+01:00",
+ "aggiornato": "2026-10-27T15:13+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-fatture-false-evasione-fiscale-15-imprenditori-udienza-26-gennaio",
+   "titolo": "Benevento, fatture false per milioni di euro: la Procura chiede il processo per 15 imprenditori, udienza rinviata al 26 gennaio",
+   "titolo_google": "Benevento, fatture false: chiesto processo per 15 imprenditori",
+   "sintesi": "La Procura di Benevento ha chiesto il rinvio a giudizio di 15 amministratori e titolari di società accusati di un presunto giro di fatture false per evadere le tasse nel 2019 e nel 2020. L'udienza preliminare, prevista il 27 ottobre, è slittata al 26 gennaio 2027 per un problema di notifiche.",
+   "categoria": "cronaca",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-27T14:14+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 4,
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/442299/fatture-per-milioni-euro-evasione-fiscale-chiesto-processo-per-15-imprenditori.shtml"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "La Procura di Benevento ha chiesto il processo per quindici persone, amministratori e titolari di società, in un'inchiesta su un presunto giro di fatture false usate per non pagare le tasse. L'udienza preliminare era fissata per martedì 27 ottobre davanti al giudice Salvatore Perrotta, ma è slittata al 26 gennaio 2027 per un problema di notifiche.",
+      "fonti": [
+       "Ottopagine"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Le società coinvolte hanno sede a Benevento, Montesarchio, Paduli e San Nazzaro nel Sannio, e a San Giuseppe Vesuviano, Gricignano d'Aversa, Orta di Atella e Caivano. L'indagine è della Guardia di Finanza; la richiesta di rinvio a giudizio porta la firma del procuratore aggiunto Gianfranco Scarfò.",
+      "fonti": [
+       "Ottopagine"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "I fatti contestati vanno dal 2019 al 2020. Secondo l'accusa, centinaia di fatture per un valore di milioni di euro sarebbero state emesse per lavori e forniture mai fatti, così da permettere ad altre società di non versare le imposte sui redditi e l'IVA. La Procura ipotizza anche il riciclaggio, per il denaro dell'evasione reinvestito a piccole quote per nasconderne l'origine. Come ogni imputato, gli imprenditori sono presunti innocenti fino a sentenza definitiva.",
+      "fonti": [
+       "Ottopagine"
+      ],
+      "giorno": "2026-10-27"
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "27 ottobre",
+      "fatto": "L'udienza preliminare slitta per un problema di notifiche.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "data": "26 gennaio 2027",
+      "fatto": "Nuova data dell'udienza preliminare davanti al giudice Perrotta.",
+      "fonti": [
+       "Ottopagine"
+      ],
+      "quando": "2027-01-26"
+     }
+    ],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "A quanto ammontano di preciso le tasse non pagate.",
+     "Quante società sono coinvolte."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Fatture per milioni euro, evasione fiscale: chiesto processo per 15 imprenditori",
+      "url": "https://www.ottopagine.it/bn/cronaca/442299/fatture-per-milioni-euro-evasione-fiscale-chiesto-processo-per-15-imprenditori.shtml",
+      "data": "27 ott, 14:14"
+     }
+    ]
+   }
+  },
   {
    "id": "benevento-giunta-istituisce-ufficio-bim-lavori-pubblici",
    "titolo": "Benevento, la Giunta istituisce l'Ufficio Bim nel Settore Lavori pubblici",
@@ -21,8 +96,16 @@
    "fonti": [
     {
      "nome": "Comune di Benevento",
-     "url": "https://www.comune.benevento.it/",
+     "url": "https://comune.benevento.it/novita/giunta-lavori-pubblici-semaforo-verde-alla-costituzione-dellufficio-bim-gestione-informativa-digitale-delle-costruzioni/",
      "ufficiale": true
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/27/benevento-il-comune-punta-sulla-digitalizzazione-dei-lavori-pubblici-ok-della-giunta-allufficio-bim/"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/camera-di-commercio/2026/giunta-lavori-pubblici-semaforo-verde-alla-costituzione-ufficio-bim-gestione-informativa-digitale-delle-costruzioni.html"
     }
    ],
    "articolo": {
@@ -30,7 +113,8 @@
      {
       "testo": "Il Comune di Benevento istituisce l'Ufficio Bim, che si occuperà della gestione informativa digitale delle costruzioni. La Giunta comunale, presieduta dal sindaco Clemente Mastella, ha approvato la delibera martedì 27 ottobre, in mattinata. Il nuovo ufficio nasce all'interno del Settore Lavori pubblici.",
       "fonti": [
-       "Comune di Benevento"
+       "Comune di Benevento",
+       "NTR24"
       ]
      },
      {
@@ -54,9 +138,21 @@
      {
       "nome": "Comune di Benevento",
       "titolo": "Giunta, lavori pubblici semaforo verde alla costituzione dell'Ufficio Bim -Gestione informativa digitale delle costruzioni",
-      "url": "https://www.comune.benevento.it/",
+      "url": "https://comune.benevento.it/novita/giunta-lavori-pubblici-semaforo-verde-alla-costituzione-dellufficio-bim-gestione-informativa-digitale-delle-costruzioni/",
       "data": "27 ott, 14:11",
       "ufficiale": true
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Benevento, il Comune punta sulla digitalizzazione dei lavori pubblici: ok della Giunta all’Ufficio Bim",
+      "url": "https://www.ntr24.tv/2026/10/27/benevento-il-comune-punta-sulla-digitalizzazione-dei-lavori-pubblici-ok-della-giunta-allufficio-bim/",
+      "data": "27 ott, 14:27"
+     },
+     {
+      "nome": "InfoSannio",
+      "titolo": "Giunta, lavori pubblici ok alla costituzione Ufficio Bim -Gestione informativa digitale delle costruzioni",
+      "url": "https://www.infosannionews.it/camera-di-commercio/2026/giunta-lavori-pubblici-semaforo-verde-alla-costituzione-ufficio-bim-gestione-informativa-digitale-delle-costruzioni.html",
+      "data": "27 ott, 14:43"
      }
     ]
    },
@@ -148,18 +244,38 @@
    "id": "montesarchio-fabbrica-abusiva-fuochi-artificio-arresto",
    "titolo": "Montesarchio, scoperta una fabbrica abusiva di fuochi d'artificio: un uomo arrestato",
    "titolo_google": "Montesarchio, fabbrica abusiva di fuochi d'artificio: un arresto",
-   "sintesi": "I Carabinieri di Montesarchio hanno arrestato un uomo che, secondo l'accusa, gestiva una fabbrica di fuochi d'artificio senza autorizzazione. Sequestrati diversi chili di polvere esplosiva e il locale; l'uomo è ai domiciliari in attesa delle decisioni della Procura di Benevento.",
+   "sintesi": "I Carabinieri di Montesarchio hanno arrestato un uomo che, secondo l'accusa, gestiva in paese una fabbrica di fuochi d'artificio senza autorizzazione. Sequestrati diversi chili di polvere esplosiva, congegni artigianali e il locale; l'uomo è ai domiciliari in attesa delle decisioni della Procura di Benevento.",
    "categoria": "cronaca",
    "zona": "caudina",
    "luogo": "Montesarchio",
-   "pubblicato": "2026-10-27T14:04+01:00",
-   "stato": "una_fonte",
+   "pubblicato": "2026-10-27T14:40+01:00",
+   "stato": "confermata",
    "rilevante": false,
    "importanza": 4,
    "fonti": [
     {
      "nome": "Lab TV",
      "url": "https://www.labtv.net/cronaca/2026/10/27/montesarchio-scoperta-fabbrica-abusiva-di-fuochi-dartificio-un-arresto/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/montesarchio-arresto-fabbrica-abusiva-fuochi-artificio/"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/27/montesarchio-scoperta-una-fabbrica-abusiva-di-fuochi-dartificio-un-arresto/"
+    },
+    {
+     "nome": "Il Caudino",
+     "url": "https://ilcaudino.it/montesarchio-scoperta-fabbrica-di-fuochi-artificiali-nel-centro-abitato-e-arrestato-il-proprietario-uid-5/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/27/montesarchio-blitz-dei-carabinieri-in-una-fabbrica-abusiva-di-fuochi-dartificio-un-arresto/"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/cronaca/2026/carabinieiri-montesarchio-blitz-in-una-fabbrica-abusiva-di-fuochi-nel-centro-abitato-un-arresto.html"
     }
    ],
    "articolo": {
@@ -167,34 +283,59 @@
      {
       "testo": "A Montesarchio i Carabinieri hanno arrestato un uomo sorpreso, secondo l'accusa, a gestire una fabbrica di fuochi d'artificio senza autorizzazione. A intervenire sono stati i militari del Nucleo operativo e radiomobile della Compagnia di Montesarchio.",
       "fonti": [
-       "Lab TV"
+       "Lab TV",
+       "Cronache del Sannio",
+       "NTR24",
+       "BeneventoNews24"
       ],
       "giorno": "2026-10-27"
      },
      {
       "testo": "Dopo una breve indagine i Carabinieri hanno perquisito un locale che ritenevano in uso all'uomo. Dentro hanno trovato e sequestrato diversi chili di polvere esplosiva, materiale per confezionare i fuochi e molti ordigni artigianali fatti in casa. Anche il locale, attrezzato per la lavorazione, è stato sequestrato e messo in sicurezza.",
       "fonti": [
-       "Lab TV"
+       "Lab TV",
+       "Cronache del Sannio",
+       "NTR24",
+       "BeneventoNews24"
       ],
       "giorno": "2026-10-27"
      },
      {
       "testo": "L'uomo è ritenuto responsabile, allo stato degli atti, di detenzione illegale di sostanze ad alto potenziale esplosivo e di fabbricazione e detenzione di materiale esplodente artigianale. È agli arresti in casa, in attesa delle decisioni della Procura della Repubblica di Benevento. Come ogni indagato, è presunto innocente fino a sentenza definitiva.",
       "fonti": [
-       "Lab TV"
+       "Lab TV",
+       "Cronache del Sannio",
+       "NTR24",
+       "BeneventoNews24",
+       "Il Caudino"
       ],
       "giorno": "2026-10-27"
      },
      {
       "testo": "I controlli fanno parte delle verifiche contro la produzione e la vendita illegale di fuochi d'artificio in vista delle feste di Natale, decise dal Comando provinciale dei Carabinieri di Benevento in tutto il Sannio.",
       "fonti": [
-       "Lab TV"
+       "Lab TV",
+       "Cronache del Sannio",
+       "NTR24",
+       "BeneventoNews24"
       ],
       "giorno": "2026-10-27"
      }
     ],
     "cronologia": [],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "L'arresto da parte del Nucleo operativo e radiomobile dei Carabinieri di Montesarchio, i chili di polvere esplosiva e i congegni artigianali sequestrati, l'uomo ai domiciliari in attesa delle decisioni della Procura di Benevento.",
+      "fonti": [
+       "Lab TV",
+       "Cronache del Sannio",
+       "NTR24",
+       "BeneventoNews24",
+       "Il Caudino",
+       "InfoSannio"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [
      "L'età dell'uomo e dove si trovava di preciso il locale.",
@@ -206,6 +347,36 @@
       "titolo": "Montesarchio, scoperta fabbrica abusiva di fuochi d’artificio: un arresto",
       "url": "https://www.labtv.net/cronaca/2026/10/27/montesarchio-scoperta-fabbrica-abusiva-di-fuochi-dartificio-un-arresto/",
       "data": "27 ott, 14:04"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Montesarchio, blitz dei carabinieri in una fabbrica abusiva di fuochi d’artificio: un arresto",
+      "url": "https://www.cronachedelsannio.it/sannionews24/montesarchio-arresto-fabbrica-abusiva-fuochi-artificio/",
+      "data": "27 ott, 14:21"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Montesarchio, scoperta una fabbrica abusiva di fuochi d’artificio: un arresto",
+      "url": "https://www.ntr24.tv/2026/10/27/montesarchio-scoperta-una-fabbrica-abusiva-di-fuochi-dartificio-un-arresto/",
+      "data": "27 ott, 14:24"
+     },
+     {
+      "nome": "Il Caudino",
+      "titolo": "Montesarchio: scoperta fabbrica di fuochi artificiali nel centro abitato e arrestato il proprietario",
+      "url": "https://ilcaudino.it/montesarchio-scoperta-fabbrica-di-fuochi-artificiali-nel-centro-abitato-e-arrestato-il-proprietario-uid-5/",
+      "data": "27 ott, 14:32"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Montesarchio, blitz dei Carabinieri in una fabbrica abusiva di fuochi: un arresto",
+      "url": "https://www.beneventonews24.it/2026/10/27/montesarchio-blitz-dei-carabinieri-in-una-fabbrica-abusiva-di-fuochi-dartificio-un-arresto/",
+      "data": "27 ott, 14:33"
+     },
+     {
+      "nome": "InfoSannio",
+      "titolo": "Carabinieiri Montesarchio, blitz in una fabbrica abusiva di fuochi nel centro abitato.Un arresto",
+      "url": "https://www.infosannionews.it/cronaca/2026/carabinieiri-montesarchio-blitz-in-una-fabbrica-abusiva-di-fuochi-nel-centro-abitato-un-arresto.html",
+      "data": "27 ott, 14:40"
      }
     ]
    }
@@ -494,7 +665,7 @@
    "zona": "benevento",
    "luogo": "Benevento",
    "immagine": "ospedale",
-   "pubblicato": "2026-10-27T13:27+01:00",
+   "pubblicato": "2026-10-27T14:43+01:00",
    "stato": "confermata",
    "rilevante": false,
    "importanza": 3,
@@ -506,6 +677,14 @@
     {
      "nome": "TV7 Benevento",
      "url": "https://www.tvsette.net/fatebenefratelli-di-benevento-leccellenza-ortopedica-avanza-eseguita-una-protesi-di-caviglia-intervento-raro-in-campania/"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/salute/2026/fatebenefratelli-leccellenza-ortopedica-avanzata-eseguita-protesi-di-cavigliaintervento-raro-in-campania.html"
+    },
+    {
+     "nome": "Benevento Giornale",
+     "url": "https://www.beneventogiornale.com/2026/10/27/fatebenefratelli-benevento-leccellenza-ortopedica-avanza-eseguita-una-protesi-di-caviglia-intervento-raro-in-campania/"
     }
    ],
    "articolo": {
@@ -541,7 +720,9 @@
       "testo": "L'intervento, i due chirurghi e il dato di meno di cinquanta protesi di caviglia in Campania.",
       "fonti": [
        "NTR24",
-       "TV7 Benevento"
+       "TV7 Benevento",
+       "InfoSannio",
+       "Benevento Giornale"
       ]
      }
     ],
@@ -561,6 +742,18 @@
       "titolo": "FATEBENEFRATELLI DI BENEVENTO, L’ECCELLENZA ORTOPEDICA AVANZA.   “ESEGUITA UNA PROTESI DI CAVIGLIA, INTERVENTO RARO IN CAMPANIA”",
       "url": "https://www.tvsette.net/fatebenefratelli-di-benevento-leccellenza-ortopedica-avanza-eseguita-una-protesi-di-caviglia-intervento-raro-in-campania/",
       "data": "27 ott, 13:15"
+     },
+     {
+      "nome": "InfoSannio",
+      "titolo": "Fatebenefratelli, l’eccellenza ortopedica avanzata: eseguita protesi di caviglia,intervento raro in Campania",
+      "url": "https://www.infosannionews.it/salute/2026/fatebenefratelli-leccellenza-ortopedica-avanzata-eseguita-protesi-di-cavigliaintervento-raro-in-campania.html",
+      "data": "27 ott, 14:34"
+     },
+     {
+      "nome": "Benevento Giornale",
+      "titolo": "Fatebenefratelli Benevento – L’Eccellenza Ortopedica avanza. Eseguita una protesi di caviglia, intervento raro",
+      "url": "https://www.beneventogiornale.com/2026/10/27/fatebenefratelli-benevento-leccellenza-ortopedica-avanza-eseguita-una-protesi-di-caviglia-intervento-raro-in-campania/",
+      "data": "27 ott, 14:43"
      }
     ]
    },
@@ -574,14 +767,30 @@
    "categoria": "cronaca",
    "zona": "provincia",
    "luogo": "Provincia di Benevento",
-   "pubblicato": "2026-10-27T13:48+01:00",
-   "stato": "una_fonte",
+   "pubblicato": "2026-10-27T14:36+01:00",
+   "stato": "confermata",
    "rilevante": false,
    "importanza": 2,
    "fonti": [
     {
      "nome": "Lab TV",
      "url": "https://www.labtv.net/cronaca/2026/10/27/la-polizia-di-stato-per-la-sicurezza-della-circolazione/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/controlli-polizia-stradale-benevento-patenti-ritirate/"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/27/benevento-controlli-della-polstrada-il-bilancio-del-weekend/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/27/polizia-controlli-nel-weekend-12-contestazioni-al-codice-della-strada/"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/cronaca/2026/la-polizia-di-stato-per-la-sicurezza-della-circolazione-intensificati-i-controlli.html"
     }
    ],
    "articolo": {
@@ -589,20 +798,37 @@
      {
       "testo": "Nel fine settimana tra venerdì 23 e domenica 25 ottobre la Polizia Stradale di Benevento ha fatto più controlli sulle strade per fermare chi guida in modo pericoloso. Gli agenti hanno controllato 23 veicoli e 31 persone e fatto 12 multe.",
       "fonti": [
-       "Lab TV"
+       "Lab TV",
+       "Cronache del Sannio",
+       "NTR24",
+       "BeneventoNews24"
       ],
       "giorno": "2026-10-27"
      },
      {
       "testo": "Le infrazioni più frequenti sono state il cellulare usato alla guida e i sorpassi dove è vietato. Tre patenti sono state ritirate, una per il telefono al volante e due per sorpassi vietati, e in tutto sono stati tolti 59 punti. Gli agenti hanno anche aiutato due automobilisti in difficoltà.",
       "fonti": [
-       "Lab TV"
+       "Lab TV",
+       "Cronache del Sannio",
+       "NTR24",
+       "BeneventoNews24"
       ],
       "giorno": "2026-10-27"
      }
     ],
     "cronologia": [],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "I numeri dei controlli dal 23 al 25 ottobre: 23 veicoli e 31 persone controllati, 12 multe, 59 punti tolti, tre patenti ritirate (una per il telefono, due per sorpassi vietati) e due soccorsi.",
+      "fonti": [
+       "Lab TV",
+       "Cronache del Sannio",
+       "NTR24",
+       "BeneventoNews24",
+       "InfoSannio"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [
      "Su quali strade si sono fatti i controlli."
@@ -613,6 +839,30 @@
       "titolo": "La Polizia di Stato per la sicurezza della circolazione",
       "url": "https://www.labtv.net/cronaca/2026/10/27/la-polizia-di-stato-per-la-sicurezza-della-circolazione/",
       "data": "27 ott, 13:48"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Controlli della polizia stradale nel weekend: ritirate tre patenti di guida",
+      "url": "https://www.cronachedelsannio.it/sannionews24/controlli-polizia-stradale-benevento-patenti-ritirate/",
+      "data": "27 ott, 14:14"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Benevento, controlli della Polstrada: il bilancio del weekend",
+      "url": "https://www.ntr24.tv/2026/10/27/benevento-controlli-della-polstrada-il-bilancio-del-weekend/",
+      "data": "27 ott, 14:29"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Polizia, controlli intensificati nel weekend: 12 contestazioni al Codice della Strada",
+      "url": "https://www.beneventonews24.it/2026/10/27/polizia-controlli-nel-weekend-12-contestazioni-al-codice-della-strada/",
+      "data": "27 ott, 14:30"
+     },
+     {
+      "nome": "InfoSannio",
+      "titolo": "La Polizia di Stato per la sicurezza della circolazione, intensificati i controlli",
+      "url": "https://www.infosannionews.it/cronaca/2026/la-polizia-di-stato-per-la-sicurezza-della-circolazione-intensificati-i-controlli.html",
+      "data": "27 ott, 14:36"
      }
     ]
    }
@@ -2167,6 +2417,10 @@
     {
      "nome": "Cronache del Sannio",
      "url": "https://www.cronachedelsannio.it/sannionews24/benevento-convocati-gara-catanzaro-due-assenti/"
+    },
+    {
+     "nome": "Benevento Giornale",
+     "url": "https://www.beneventogiornale.com/2026/10/27/incontro-di-calcio-benevento-catanzaro-i-convocati-di-mister-floro-flores/"
     }
    ],
    "articolo": {
@@ -2258,6 +2512,12 @@
       "titolo": "Benevento-Catanzaro, i convocati di Mignani: ben 28 i convocati, out in due",
       "url": "https://www.beneventonews24.it/2026/10/26/benevento-catanzaro-i-convocati-di-mignani-ben-28-i-convocati-out-in-due/",
       "data": "26 ott, 21:00"
+     },
+     {
+      "nome": "Benevento Giornale",
+      "titolo": "Incontro di calcio Benevento-Catanzaro, i convocati di mister Floro Flores",
+      "url": "https://www.beneventogiornale.com/2026/10/27/incontro-di-calcio-benevento-catanzaro-i-convocati-di-mister-floro-flores/",
+      "data": "27 ott, 14:43"
      }
     ]
    },
