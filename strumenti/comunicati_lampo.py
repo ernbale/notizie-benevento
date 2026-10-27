@@ -31,7 +31,8 @@ ufficiali (ufficiali.json dell'archivio, li trova strumenti/ufficiali.py ogni 5 
 regole. Ma quelli li legge anche il giro di ogni ora (alle :06, dalle 6 alle 22), e se lo stesso articolo lo scrivessero
 tutti e due sarebbe un doppione: un articolo dei siti ufficiali che arriva tra le :04 e le :25 (ATTESA) aspetta che il
 giro di quell'ora abbia pubblicato (il commit «Notizie delle HH:» sul main) o le :25; poi il giro lampo lo trova già
-sul sito («gia_nel_sito», ed esce subito sui social) o lo pubblica. I comunicati per posta non aspettano mai.
+sul sito («gia_nel_sito», ed esce subito sui social) o lo pubblica. I comunicati per posta non aspettano mai, e dal 27
+ott 2026 nemmeno il Benevento Calcio (SENZA_ATTESA, «priorità max»).
 
 Uso sul Pi:  python3 ~/nb-fonti/sentinella/comunicati_lampo.py              (dal cron, ogni 5 minuti)
              python3 ~/nb-fonti/sentinella/comunicati_lampo.py --prova      (dice cosa farebbe, senza avviare)
@@ -52,6 +53,10 @@ COMUNICATI = os.path.join(V.F.ARCHIVIO, "comunicati.json")
 UFFICIALI = os.path.join(V.F.ARCHIVIO, "ufficiali.json")   # gli articoli dei siti ufficiali (strumenti/ufficiali.py)
 GIRO_ORE = range(6, 23)   # il giro di ogni ora parte alle :06, dalle 6 alle 22
 ATTESA = (4, 25)          # minuti dell'ora in cui un articolo dei siti ufficiali aspetta il giro di ogni ora
+# chi non aspetta mai il giro di ogni ora (27 ott 2026, lui: «i comunicati stampa del Benevento Calcio … istantaneamente,
+# priorità max», «nessun doppione importantissimo»): i doppioni li fermano comunicati.py (stesso link o titolo che
+# sembra lo stesso fatto di una notizia appena uscita: va confermato) e unisci_notizie.py quando si uniscono i due giri
+SENZA_ATTESA = {"Benevento Calcio"}
 RILANCIA_DOPO = 15   # minuti
 RILANCI = 3          # avvii in tutto per un comunicato
 
@@ -83,6 +88,12 @@ def aspetta_il_giro(adesso, fatto):
     except Exception as e:
         print(f"{adesso:%d/%m %H:%M} non so se il giro di ogni ora ha pubblicato ({type(e).__name__}: {e}): aspetto")
         return True
+
+
+def attendono(v):
+    """Un articolo dei siti ufficiali che aspetta il giro di ogni ora (non il Benevento Calcio, SENZA_ATTESA, e mai i
+    comunicati per posta)."""
+    return v.get("tipo") == "sito" and v.get("mittente") not in SENZA_ATTESA
 
 
 def testo_avvio(voci, prova=False):
@@ -170,10 +181,10 @@ def main():
         except Exception as e:   # senza la risposta di GitHub non si rilancia (meglio che un doppio giro)
             print(f"{ora} ERRORE: non leggo comunicati_visti.json del sito ({type(e).__name__}: {e})")
     da_fare = nuovi + rilanci + [v for v in riletti if v not in rilanci]
-    if any(v.get("tipo") == "sito" for v in da_fare):
+    if any(attendono(v) for v in da_fare):
         fatto = {}
         if aspetta_il_giro(adesso, lambda: fatto.setdefault("f", giro_dell_ora_fatto(adesso))):
-            ferme = [v for v in da_fare if v.get("tipo") == "sito"]
+            ferme = [v for v in da_fare if attendono(v)]
             attese = stato.setdefault("attese", {})
             nuove_attese = [v for v in ferme if v["id"] not in attese]
             for v in nuove_attese:
@@ -183,7 +194,7 @@ def main():
             if nuove_attese:
                 print(f"{ora} aspettano il giro delle {adesso:%H}:06 (niente doppioni): "
                       + ", ".join(f"{v['id']} «{v.get('titolo', '')[:60]}»" for v in nuove_attese))
-            da_fare = [v for v in da_fare if v.get("tipo") != "sito"]
+            da_fare = [v for v in da_fare if not attendono(v)]
     if not da_fare:
         return
     nomi = ", ".join(f"{v['id']} «{v.get('titolo', '')[:60]}»" for v in da_fare)

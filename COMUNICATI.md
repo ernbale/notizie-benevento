@@ -103,6 +103,11 @@ riuscita» (o cosa non va) con l'esito dei comandi. In prova non pubblichi nient
      giornali che l'hanno solo ripresa (AGENTE.md, «Come lavorare una notizia», punto 4).
    - **«GIÀ SUL SITO, STESSO LINK»** vuol dire che una notizia cita già quella pagina: è **gia_nel_sito** con quella
      notizia (strumenti/comunicati.py dà errore anche se pubblichi una notizia nuova con una pagina già citata).
+   - **«sembra lo stesso fatto di …, uscita da poco»** (errore di strumenti/comunicati.py, dal 27 ott 2026): una notizia
+     uscita nelle ultime 3 ore ha un titolo che sembra lo stesso fatto. Il Benevento Calcio non aspetta più il giro di
+     ogni ora (lui: «priorità max», «nessun doppione importantissimo»), che può averlo appena scritto da un giornale:
+     apri quella notizia. Se è lo stesso fatto è **gia_nel_sito** con quella; se è davvero un altro fatto (un'altra
+     partita, un altro giocatore, un altro giorno) scrivi nella notizia nuova `"non_doppione_di": ["<id>"]` e rilancia.
    - Per EAV, AIR, Alto Calore, ANAS e Regione, che servono tutta la Campania, il Pi tiene solo quello che nomina il
      Sannio, ma controlla tu: se non tocca la provincia di Benevento è **scartato** («fuori provincia»).
    - Le foto delle pagine non si usano (solo quelle mandate per posta, punto 4): l'`immagine` dai temi come sempre.

@@ -22,6 +22,12 @@ Dal 25 ott 2026, col giro lampo che pubblica anche gli articoli dei siti ufficia
 Dal 26 ott 2026 (le fonti ufficiali segnate con "ufficiale": true, pagine.vista_ufficiale): una notizia cambiata da
 tutte e due le parti tiene anche i segni «ufficiale» che il main ha messo sulle sue fonti (stesso nome), se no il
 giro di ogni ora partito prima li cancellerebbe aggiornando la notizia.
+Dal 27 ott 2026 (il Benevento Calcio non aspetta più il giro di ogni ora; lui: «nessun doppione importantissimo»):
+- una notizia che c'era già e che noi abbiamo aggiornato aggiungendo tra le fonti una pagina che cita anche una notizia
+  nuova arrivata dal main (il giro lampo l'ha scritta da quel comunicato mentre noi lo aggiungevamo alla storia) resta
+  com'è sul main: il nostro aggiornamento si toglie (sarebbe lo stesso fatto due volte, anche sui social), e lo si scrive;
+- una notizia nuova nostra è un doppione anche quando quella nuova del main l'ha fatta il giro lampo e i titoli sono lo
+  stesso fatto per giornali.stesso_fatto (la regola dei gruppi dell'elenco dei giornali).
 Se un file non è un JSON valido esce con errore e git segna il conflitto come prima.
 
 Il giro di ogni ora lo usa così (prompt della routine, punto 7):
@@ -45,13 +51,18 @@ _VUOTE = {"della", "delle", "dello", "degli", "dalla", "dalle", "nella", "nelle"
 
 
 def _pagine(n):
-    """Le pagine (con un percorso dopo il dominio) citate tra le fonti, come le conta strumenti/comunicati.py."""
+    """Le pagine (con un percorso dopo il dominio) citate tra le fonti. Dal 27 ott 2026 la parte dopo «?» resta (tolti
+    solo utm_, fbclid e simili): negli albi pretori la pagina è la stessa per tutti gli atti e cambia solo l'id
+    (mc_p_dettaglio.php?id_pubbl=80105), e due atti diversi non sono lo stesso fatto."""
     out = set()
     for f in (n.get("fonti") or []) + ((n.get("articolo") or {}).get("fonti") or []):
         u = str((f or {}).get("url") or "").strip().lower() if isinstance(f, dict) else ""
         if re.match(r"^https?://", u):
-            u = re.sub(r"[?#].*$", "", re.sub(r"^https?://(www\.)?", "", u)).rstrip("/")
-            if "/" in u:
+            u = re.sub(r"^https?://(www\.)?", "", u.split("#")[0])
+            percorso, _, q = u.partition("?")
+            q = "&".join(sorted(x for x in q.split("&") if x and not re.match(r"(utm_|fbclid|gclid|ref=|amp=)", x)))
+            u = percorso.rstrip("/") + ("?" + q if q else "")
+            if "/" in percorso.rstrip("/"):
                 out.add(u)
     return out
 
@@ -69,6 +80,12 @@ def _doppione(x, y):
     a, b = _parole(x.get("titolo")), _parole(y.get("titolo"))
     if x.get("categoria") == y.get("categoria") and len(a & b) >= 3:
         return "titoli simili"
+    try:   # la regola dei gruppi dell'elenco dei giornali (anche due parole, se sono metà del titolo più corto)
+        import giornali as G
+        if G.stesso_fatto(G.parole(x.get("titolo", "")), G.parole(y.get("titolo", ""))):
+            return "stesso fatto"
+    except Exception:   # senza giornali.py si va avanti con le regole di sopra
+        pass
     return ""
 
 
@@ -98,10 +115,18 @@ def unisci_elenco(base, su, mio):
     uguale = lambda a, b: json.dumps(a, sort_keys=True) == json.dumps(b, sort_keys=True)
     out = [x for x in su if x.get("id") not in B and x.get("id") not in M]   # nuove dal main: in testa
     nuove_main = list(out)
+    pagine_nuove_main = {p: y.get("id") for y in nuove_main for p in _pagine(y)}
     for x in mio:
         i = x.get("id")
         if i in B and i not in U and uguale(x, B[i]):
             continue   # tolta dal main (archiviata) e non toccata da noi
+        aggiunte = (_pagine(x) - _pagine(B[i])) if i in B else set()
+        stesse = sorted({pagine_nuove_main[p] for p in aggiunte if p in pagine_nuove_main})
+        if i in B and i in U and stesse:   # abbiamo aggiunto a una storia il comunicato che il main ha già come notizia
+            print(f"unisci_notizie: tolto il nostro aggiornamento di {i}: aggiunge la stessa pagina della notizia nuova "
+                  f"{', '.join(stesse)}, appena pubblicata dal main (resta {i} com'era sul main)", file=sys.stderr)
+            out.append(U[i])
+            continue
         if i in B and i in U and not uguale(U[i], B[i]) and uguale(x, B[i]):
             out.append(U[i])   # cambiata solo dal main
         elif i in B and i in U:   # cambiata da tutte e due: la nostra, coi campi del giro lampo cambiati solo dal main
@@ -119,7 +144,7 @@ def unisci_elenco(base, su, mio):
         elif i not in B and i not in U:   # nuova nostra: è lo stesso fatto di una nuova arrivata dal main?
             uguali = [(y, _doppione(x, y)) for y in nuove_main]
             certo = next(((y, p) for y, p in uguali if p in ("stessa pagina tra le fonti", "stesso comunicato")
-                          or (p == "titoli simili" and y.get("comunicati"))), None)
+                          or (p in ("titoli simili", "stesso fatto") and y.get("comunicati"))), None)
             if certo:
                 print(f"unisci_notizie: tolta la nostra notizia nuova {i}: è lo stesso fatto di {certo[0].get('id')}, "
                       f"appena pubblicata dal main ({certo[1]})", file=sys.stderr)

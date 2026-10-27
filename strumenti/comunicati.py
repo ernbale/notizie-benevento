@@ -77,6 +77,7 @@ FILE = os.path.join(SITO, "comunicati_visti.json")
 NOTIZIE = os.path.join(SITO, "notizie.json")
 EVENTI = os.path.join(SITO, "eventi.json")
 ESITI = ("pubblicato", "gia_nel_sito", "scartato", "sospeso")
+ORE_SIMILI = 3   # una notizia nuova si confronta coi titoli delle notizie uscite nelle ultime 3 ore
 IMMAGINI = {"locandina", "foto_inviate", "foto_da"}   # con «gia_nel_sito» si aggiungono alla notizia che c'è già
 GIORNI_DA_FARE = 3      # i comunicati arrivati da più giorni non sono più «da fare» per il giro lampo
 GIORNI_VISTI = 30       # quanto si ricordano i comunicati trattati
@@ -121,6 +122,20 @@ def link_di(n):
     """Gli indirizzi di pagina che una notizia cita tra le fonti (prima pagina e articolo)."""
     return {con_percorso(f.get("url")) for f in (n.get("fonti") or []) + ((n.get("articolo") or {}).get("fonti") or [])
             if isinstance(f, dict)} - {""}
+
+
+def quando_di(n):
+    """L'ultima volta che una notizia è uscita o cambiata (pubblicato o il suo «aggiornamento»), con il fuso; None se
+    non si sa (le notizie vecchie hanno solo il giorno)."""
+    out = None
+    for s in (n.get("pubblicato"), ((n.get("articolo") or {}).get("aggiornamento") or {}).get("quando")):
+        try:
+            t = dt.datetime.fromisoformat(str(s))
+        except ValueError:
+            continue
+        if t.tzinfo and (out is None or t > out):
+            out = t
+    return out
 
 
 def git(*a, controlla=True):
@@ -396,6 +411,24 @@ def unisci(d, visti, entrata, voci, adesso, err):
         if doppi:
             err.append(f"{i}: cita una pagina che è già nella notizia {', '.join(doppi)}: è lo stesso fatto, usa "
                        "«gia_nel_sito» con quella notizia (o togli quel link se è proprio un altro fatto)")
+    # niente doppioni anche senza lo stesso link (27 ott 2026, lui: «nessun doppione importantissimo»): dal 27 ott il
+    # Benevento Calcio non aspetta il giro di ogni ora (comunicati_lampo.SENZA_ATTESA), e il giro di ogni ora potrebbe
+    # aver appena scritto lo stesso fatto partendo da un giornale. Una notizia nuova col titolo che sembra lo stesso fatto
+    # (giornali.stesso_fatto) di una notizia uscita nelle ultime ORE_SIMILI ore va confermata: «gia_nel_sito» con quella,
+    # o "non_doppione_di": ["id"] nella notizia nuova se è davvero un altro fatto (il campo poi si toglie)
+    recenti = [x for x in d.get("notizie", []) if (quando_di(x) or dt.datetime.min.replace(tzinfo=dt.timezone.utc))
+               >= adesso - dt.timedelta(hours=ORE_SIMILI)]
+    for i, n in per_id.items():
+        conferma = n.pop("non_doppione_di", None)
+        if conferma is not None and not (isinstance(conferma, list) and all(isinstance(x, str) for x in conferma)):
+            err.append(f"{i}: «non_doppione_di» è un elenco di id di notizie")
+            conferma = []
+        pn = G.parole(n.get("titolo", ""))
+        for x in recenti:
+            if x.get("id") != i and x.get("id") not in (conferma or []) and G.stesso_fatto(pn, G.parole(x.get("titolo", ""))):
+                err.append(f"{i}: sembra lo stesso fatto di {x.get('id')}, uscita da poco («{str(x.get('titolo'))[:90]}»). "
+                           f"Se è lo stesso fatto usa «gia_nel_sito» con quella; se è davvero un altro fatto scrivi nella "
+                           f"notizia nuova \"non_doppione_di\": [\"{x.get('id')}\"]")
     if err:
         return []
     # l'articolo di un sito ufficiale: la fonte col suo link è la fonte ufficiale, il sito mostra lei (26 ott 2026,

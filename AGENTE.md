@@ -95,7 +95,11 @@ Provincia di Benevento, ASL, Alto Calore, GESESA, EAV, AIR, ANAS, Regione e le s
 ogni 5 minuti, e gli articoli nuovi li pubblica subito il giro lampo (COMUNICATI.md): tu continua a leggerli tutti (sei
 la riserva), ma **non scrivere quelli che giornali.py elenca «IN MANO AL GIRO LAMPO»**, nemmeno partendo da un
 giornale (sarebbero doppioni: al giro dopo aggiungi le fonti nuove alla sua notizia), e quelli già pubblicati li
-riconosci dal link tra le fonti di una notizia. Scrivi l'articolo con parole tue, come nell'esempio
+riconosci dal link tra le fonti di una notizia. **I comunicati del Benevento Calcio** (beneventocalcio.club) dal 27 ott
+2026 li legge il Pi ogni minuto e li pubblica il giro lampo subito, anche mentre lavori tu (lui: «priorità max»): non
+scriverli mai tu, nemmeno partendo da un giornale che li riprende (convocati, arbitro, infortuni, biglietti, accessi
+allo stadio, iniziative della società): se un giornale riporta un fatto del Benevento Calcio e sul suo sito c'è il
+comunicato, al giro dopo aggiungi le fonti alla notizia del giro lampo. Scrivi l'articolo con parole tue, come nell'esempio
 di Alto Calore più sotto: chi resta senz'acqua o senza treno, dove, da quando a quando, cosa fare, il numero utile. Il
 comunicato va tra le fonti col suo link. Se poi i giornali aggiungono dettagli, aggiungili con le loro fonti.
 
