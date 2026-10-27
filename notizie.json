@@ -1,7 +1,198 @@
 {
- "aggiornato": "2026-10-27T16:13+01:00",
+ "aggiornato": "2026-10-27T17:16+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "san-lorenzello-cimitero-orario-continuato-29-ottobre-2-novembre",
+   "titolo": "San Lorenzello, cimitero aperto con orario continuato dal 29 ottobre al 2 novembre, dalle 8:30 alle 16:30",
+   "titolo_google": "Cimitero di San Lorenzello, orari dal 29 ottobre al 2 novembre",
+   "sintesi": "Per la Commemorazione dei Defunti il cimitero comunale di San Lorenzello fa orario continuato: da giovedì 29 ottobre a lunedì 2 novembre resta aperto dalle 8:30 alle 16:30.",
+   "categoria": "altro",
+   "zona": "telesina",
+   "immagine": "cimitero",
+   "luogo": "San Lorenzello",
+   "pubblicato": "2026-10-27T16:24+01:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "in_vigore_dal": "2026-10-29",
+   "in_vigore_fino": "2026-11-02",
+   "fonti": [
+    {
+     "nome": "Comune di San Lorenzello",
+     "url": "https://comune.sanlorenzello.bn.it/it/novita/page/commemorazione-dei-defunti-2026-apertura-straordinaria-del-cimitero-comunale",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Per la Commemorazione dei Defunti il cimitero comunale di San Lorenzello, nella Valle Telesina, apre con orario continuato: da giovedì 29 ottobre a lunedì 2 novembre si entra dalle 8:30 alle 16:30, senza chiusura a pranzo.",
+      "fonti": [
+       "Comune di San Lorenzello"
+      ]
+     },
+     {
+      "testo": "L'avviso è dell'ufficio Reti e impianti tecnologici del Comune, in piazza Filippo Lavorgna 1: per informazioni si chiama il centralino, 0824 815134.",
+      "fonti": [
+       "Comune di San Lorenzello"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di San Lorenzello",
+      "titolo": "Commemorazione Dei Defunti 2026 Apertura Straordinaria Del Cimitero Comunale",
+      "url": "https://comune.sanlorenzello.bn.it/it/novita/page/commemorazione-dei-defunti-2026-apertura-straordinaria-del-cimitero-comunale",
+      "data": "27 ott, 16:24",
+      "ufficiale": true
+     }
+    ]
+   },
+   "foto": "cimitero-10"
+  },
+  {
+   "id": "san-giorgio-del-sannio-piazza-immacolata-chiusa-31-ottobre-inaugurazione",
+   "titolo": "San Giorgio del Sannio, sabato 31 ottobre chiuse al traffico piazza Immacolata e via Bocchini per l'inaugurazione della piazza",
+   "titolo_google": "San Giorgio del Sannio, strade chiuse il 31 ottobre",
+   "sintesi": "Sabato 31 ottobre, dalle 15:30 fino alla fine della cerimonia, a San Giorgio del Sannio non si passa in piazza Immacolata e in un tratto di via Bocchini: si inaugura la nuova piazza. Deviate le auto per San Martino Sannita e San Nazzaro e i bus AIR da Benevento.",
+   "categoria": "strade",
+   "zona": "benevento",
+   "immagine": "strada-chiusa",
+   "luogo": "San Giorgio del Sannio",
+   "pubblicato": "2026-10-27",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "in_vigore_dal": "2026-10-31",
+   "in_vigore_fino": "2026-10-31",
+   "traffico": "chiusa",
+   "fonti": [
+    {
+     "nome": "Comune di San Giorgio del Sannio",
+     "url": "https://www.halleyweb.com/c062058/mc/mc_p_dettaglio.php?id_pubbl=15726",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Sabato 31 ottobre, dalle 15:30 fino alla fine della cerimonia, a San Giorgio del Sannio le auto non potranno passare in piazza Immacolata, dall'incrocio con piazza Risorgimento, e in via C. Bocchini fino all'incrocio con via De Sanctis. Il motivo è l'inaugurazione della nuova piazza Immacolata, dove il Comune aspetta molta gente.",
+      "fonti": [
+       "Comune di San Giorgio del Sannio"
+      ]
+     },
+     {
+      "testo": "Nello stesso orario non si può parcheggiare in piazza Immacolata e in via C. Bocchini dal civico 63 al 67: le auto lasciate lì saranno portate via col carro attrezzi. Possono entrare solo i mezzi di soccorso e le forze dell'ordine.",
+      "fonti": [
+       "Comune di San Giorgio del Sannio"
+      ]
+     },
+     {
+      "testo": "Chi va verso San Martino Sannita e San Nazzaro sarà fatto passare per strade alternative. Anche i pullman AIR Campania della linea da Benevento per San Nazzaro cambiano percorso: dall'incrocio col semaforo passano per via San Giacomo, via G. Bocchini e via C. Bocchini. L'ha deciso la Polizia locale con l'ordinanza numero 86 del 27 ottobre.",
+      "fonti": [
+       "Comune di San Giorgio del Sannio"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di San Giorgio del Sannio",
+      "titolo": "Chiusura temporanea di piazze e strade pubbliche per il giorno 31 ottobre 2026 in occasione della inaugurazione di piazza Immacolata.",
+      "url": "https://www.halleyweb.com/c062058/mc/mc_p_dettaglio.php?id_pubbl=15726",
+      "data": "27 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "foto": "strada-chiusa-3"
+  },
+  {
+   "id": "benevento-enel-carabinieri-incontro-truffe-spazio-enel",
+   "titolo": "Benevento, Enel e Carabinieri spiegano ai cittadini come difendersi dalle truffe: incontro allo Spazio Enel di via Santa Colomba",
+   "titolo_google": "Truffe a Benevento, incontro di Enel e Carabinieri",
+   "sintesi": "Allo Spazio Enel di via Santa Colomba, a Benevento, i Carabinieri e il personale di Enel hanno incontrato i cittadini per spiegare come riconoscere SMS, email e telefonate truffa e i falsi tecnici.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "immagine": "truffe",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-27T17:06+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/27/enel-e-carabinieri-in-prima-fila-contro-le-truffe-workshop-a-benevento/"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/cronaca/2026/enel-sul-territorio-con-larma-dei-carabinieri-un-workshop-informativo-a-benevento-contro-le-truffe.html"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Benevento, allo Spazio Enel di via Santa Colomba 52, i Carabinieri e il personale di Enel hanno incontrato i cittadini per spiegare come riconoscere e fermare i tentativi di truffa. Per l'Arma c'era il tenente colonnello Antonio Quarta, comandante del Reparto operativo del Comando provinciale di Benevento.",
+      "fonti": [
+       "NTR24",
+       "InfoSannio"
+      ]
+     },
+     {
+      "testo": "Si è parlato dei raggiri più diffusi oggi: gli SMS ingannevoli, le email false che chiedono dati personali (il «phishing»), i finti interventi di assistenza a casa e le telefonate di truffatori che fingono di chiamare da un numero vero (lo «spoofing»). L'obiettivo è dare consigli pratici per accorgersi in tempo dei segnali d'allarme.",
+      "fonti": [
+       "NTR24",
+       "InfoSannio"
+      ]
+     },
+     {
+      "testo": "L'incontro fa parte di un giro di appuntamenti che Enel organizza con l'Arma nei suoi Spazi Enel. Le truffe non toccano solo le bollette della luce e del gas, ma persone di ogni età: Enel ricorda di usare i suoi canali di contatto ufficiali.",
+      "fonti": [
+       "InfoSannio",
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Il luogo, lo Spazio Enel di via Santa Colomba 52, e la presenza del tenente colonnello Antonio Quarta",
+      "fonti": [
+       "NTR24",
+       "InfoSannio"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "In che giorno si è tenuto l'incontro e se ce ne saranno altri a Benevento."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Enel e Carabinieri in prima fila contro le truffe: workshop a Benevento",
+      "url": "https://www.ntr24.tv/2026/10/27/enel-e-carabinieri-in-prima-fila-contro-le-truffe-workshop-a-benevento/",
+      "data": "27 ott, 16:09"
+     },
+     {
+      "nome": "InfoSannio",
+      "titolo": "Enel sul territorio con l’Arma dei Carabinieri. Un Workshop informativo a Benevento contro le truffe",
+      "url": "https://www.infosannionews.it/cronaca/2026/enel-sul-territorio-con-larma-dei-carabinieri-un-workshop-informativo-a-benevento-contro-le-truffe.html",
+      "data": "27 ott, 17:06"
+     }
+    ]
+   },
+   "foto": "truffe-4"
+  },
   {
    "id": "ospedale-san-pio-concorso-dieci-medici-pronto-soccorso",
    "titolo": "Benevento, l'ospedale San Pio bandisce un concorso per dieci medici del pronto soccorso",
@@ -865,6 +1056,10 @@
     {
      "nome": "Benevento Giornale",
      "url": "https://www.beneventogiornale.com/2026/10/27/fatebenefratelli-benevento-leccellenza-ortopedica-avanza-eseguita-una-protesi-di-caviglia-intervento-raro-in-campania/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/27/fatebenefratelli-di-benevento-leccellenza-ortopedica-avanza-eseguita-una-protesi-di-caviglia-intervento-raro-in-campania/"
     }
    ],
    "articolo": {
@@ -873,7 +1068,8 @@
       "testo": "All'ospedale Sacro Cuore di Gesù Fatebenefratelli di Benevento il reparto di Ortopedia e Traumatologia ha eseguito un intervento di protesi di caviglia. Hanno operato i medici Giovanni Cautiero e Stefano Cacciapuoti.",
       "fonti": [
        "NTR24",
-       "TV7 Benevento"
+       "TV7 Benevento",
+       "BeneventoNews24"
       ],
       "giorno": "2026-10-27"
      },
@@ -881,7 +1077,8 @@
       "testo": "È un intervento molto specialistico e ancora poco diffuso rispetto alle protesi di anca e ginocchio, adatto ad alcuni pazienti con malattie gravi della caviglia. In Campania, nel periodo esaminato dalle statistiche, ne sono stati fatti meno di cinquanta. In Italia uno studio dell'Istituto Superiore di Sanità ne ha contati 9.858 tra il 2001 e il 2023, di cui 1.005 nel solo 2023.",
       "fonti": [
        "NTR24",
-       "TV7 Benevento"
+       "TV7 Benevento",
+       "BeneventoNews24"
       ],
       "giorno": "2026-10-27"
      },
@@ -934,6 +1131,12 @@
       "titolo": "Fatebenefratelli Benevento – L’Eccellenza Ortopedica avanza. Eseguita una protesi di caviglia, intervento raro",
       "url": "https://www.beneventogiornale.com/2026/10/27/fatebenefratelli-benevento-leccellenza-ortopedica-avanza-eseguita-una-protesi-di-caviglia-intervento-raro-in-campania/",
       "data": "27 ott, 14:43"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Fatebenefratelli di Benevento, eccellenza ortopedica: “Eseguita protesi di caviglia, intervento raro in Campania”",
+      "url": "https://www.beneventonews24.it/2026/10/27/fatebenefratelli-di-benevento-leccellenza-ortopedica-avanza-eseguita-una-protesi-di-caviglia-intervento-raro-in-campania/",
+      "data": "27 ott, 16:30"
      }
     ]
    },
@@ -2377,6 +2580,10 @@
      "nome": "Comune di Cautano",
      "url": "https://comune.cautano.bn.it/novita/ordinanza-nr-32-disposizioni-di-richiamo-e-prevenzione-a-tutela-della-quiete-pubblica/",
      "ufficiale": true
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/27/e-guerra-ai-palloni-di-cuoio-a-cautano-il-sindaco-scende-in-campo-contro-i-rumori-molesti/"
     }
    ],
    "articolo": {
@@ -2385,23 +2592,35 @@
       "testo": "A Cautano, paese ai piedi del Taburno, il sindaco Alessandro Gisoldi ha firmato lunedì 26 ottobre un'ordinanza per la quiete pubblica. Chiede a tutti di evitare schiamazzi, grida e rumori forti nelle strade e nelle piazze, soprattutto vicino alle case e nelle ore del pomeriggio, della sera e della notte.",
       "fonti": [
        "Comune di Cautano"
-      ]
+      ],
+      "giorno": "2026-10-26"
      },
      {
       "testo": "Per i ragazzi che giocano a pallone negli spazi pubblici accanto alle abitazioni, il sindaco consiglia palloni leggeri, di gommapiuma o di plastica, e di lasciare a casa quelli di cuoio o pesanti, che rimbombano contro muri, portoni, finestre e serrande. Ai genitori ricorda il dovere di controllare i figli.",
       "fonti": [
        "Comune di Cautano"
-      ]
+      ],
+      "giorno": "2026-10-26"
      },
      {
       "testo": "L'ordinanza nasce da alcune segnalazioni arrivate in Comune. La Polizia locale e l'ufficio tecnico hanno fatto due sopralluoghi e non hanno trovato prove dei disturbi segnalati: per questo non ci sono nuovi divieti né nuove multe. È un richiamo al rispetto delle regole che già valgono. La Polizia locale e le forze dell'ordine controlleranno, puntando prima di tutto sulla prevenzione.",
       "fonti": [
-       "Comune di Cautano"
-      ]
+       "Comune di Cautano",
+       "NTR24"
+      ],
+      "giorno": "2026-10-26"
      }
     ],
     "cronologia": [],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "L'ordinanza nasce da segnalazioni, i due sopralluoghi di Polizia locale e ufficio tecnico non hanno trovato prove e non ci sono nuovi divieti",
+      "fonti": [
+       "Comune di Cautano",
+       "NTR24"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [],
     "fonti": [
@@ -2411,6 +2630,12 @@
       "url": "https://comune.cautano.bn.it/novita/ordinanza-nr-32-disposizioni-di-richiamo-e-prevenzione-a-tutela-della-quiete-pubblica/",
       "data": "26 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "È guerra ai palloni di cuoio a Cautano: il sindaco scende in campo contro i rumori molesti",
+      "url": "https://www.ntr24.tv/2026/10/27/e-guerra-ai-palloni-di-cuoio-a-cautano-il-sindaco-scende-in-campo-contro-i-rumori-molesti/",
+      "data": "27 ott, 16:48"
      }
     ]
    }
@@ -4640,9 +4865,10 @@
    "articolo": {
     "racconto": [
      {
-      "testo": "Martedì 27 ottobre gli elenchi dei beneficiari li hanno pubblicati anche Castelpagano e Arpaise. Ad Arpaise le famiglie nell'elenco sono 24: i nuovi beneficiari possono ritirare la carta in un qualsiasi ufficio postale dal 4 novembre, con il codice arrivato per raccomandata, un documento d'identità e il codice fiscale o la tessera sanitaria.",
+      "testo": "Martedì 27 ottobre gli elenchi dei beneficiari li hanno pubblicati anche Castelpagano e Arpaise. Ad Arpaise le famiglie nell'elenco sono 24: i nuovi beneficiari possono ritirare la carta in un qualsiasi ufficio postale dal 4 novembre, con il codice arrivato per raccomandata, un documento d'identità e il codice fiscale o la tessera sanitaria. Chi l'aveva già negli anni scorsi riceve i soldi sulla stessa carta; si può usare in tutti i negozi che vendono alimentari.",
       "fonti": [
-       "Comune di Arpaise"
+       "Comune di Arpaise",
+       "Comune di Arpaise (novità)"
       ],
       "giorno": "2026-10-27"
      },
@@ -4805,6 +5031,13 @@
       "url": "https://comune.arpaise.bn.it/albo-pretorio/?dettaglio_id=306275",
       "data": "27 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "Comune di Arpaise (novità)",
+      "titolo": "“Carta dedicata a te” anno 2026. Elenco beneficiari.",
+      "url": "https://comune.arpaise.bn.it/novita/carta-dedicata-a-te-anno-2026-elenco-beneficiari/",
+      "data": "27 ott",
+      "ufficiale": true
      }
     ],
     "aggiornamento": {
@@ -4947,12 +5180,12 @@
   },
   {
    "id": "castelpoto-santa-croce-del-sannio-elenco-elettori-fuori-sede",
-   "titolo": "Elettori fuori sede, quattordici Comuni del Sannio hanno aperto l'elenco: domande entro il 31 dicembre",
+   "titolo": "Elettori fuori sede, quindici Comuni del Sannio hanno aperto l'elenco: domande entro il 31 dicembre",
    "titolo_google": "Elettori fuori sede in 14 Comuni del Sannio: come fare",
-   "sintesi": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni, Limatola e Torrecuso hanno aperto l'elenco degli elettori fuori sede previsto dalla nuova legge elettorale: chi per studio, lavoro o cure vive in una regione diversa da quella in cui vota può chiedere di votare dove abita. Per studio e lavoro la domanda va fatta entro il 31 dicembre, per le votazioni dell'anno dopo.",
+   "sintesi": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni, Limatola, Torrecuso e San Lorenzello hanno aperto l'elenco degli elettori fuori sede previsto dalla nuova legge elettorale: chi per studio, lavoro o cure vive in una regione diversa da quella in cui vota può chiedere di votare dove abita. Per studio e lavoro la domanda va fatta entro il 31 dicembre, per le votazioni dell'anno dopo.",
    "categoria": "altro",
    "zona": "provincia",
-   "luogo": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni, Limatola e Torrecuso",
+   "luogo": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni, Limatola, Torrecuso e San Lorenzello",
    "immagine": "elezioni",
    "pubblicato": "2026-10-27",
    "stato": "ufficiale",
@@ -5027,12 +5260,17 @@
      "nome": "Comune di Torrecuso",
      "url": "https://www.comune.torrecuso.bn.it/Novita/Avvisi/Istituzione-dell-elenco-comunale-degli-elettori-fuori-sede",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di San Lorenzello",
+     "url": "https://comune.sanlorenzello.bn.it/it/novita/page/istituzione-dell-elenco-comunale-degli-elettori-fuori-sede-per-l-esercizio-del-diritto-di-voto-da-parte-degli-elettori-fuori-sede-in-occasione-delle-elezioni-politiche-ed-europee-e-dei-referendum",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Quattordici Comuni del Sannio, da Castelpoto a Torrecuso, hanno aperto l'elenco comunale degli elettori fuori sede. Lo prevede la legge 180 del 9 ottobre 2026 sulle elezioni di Camera e Senato: chi vive per un periodo in una regione diversa da quella del Comune dove è iscritto per votare può chiedere di votare nel Comune dove abita. Vale per le elezioni politiche ed europee e per i referendum, non per le elezioni comunali e regionali.",
+      "testo": "Quindici Comuni del Sannio, da Castelpoto a San Lorenzello, hanno aperto l'elenco comunale degli elettori fuori sede. Lo prevede la legge 180 del 9 ottobre 2026 sulle elezioni di Camera e Senato: chi vive per un periodo in una regione diversa da quella del Comune dove è iscritto per votare può chiedere di votare nel Comune dove abita. Vale per le elezioni politiche ed europee e per i referendum, non per le elezioni comunali e regionali.",
       "fonti": [
        "Comune di Castelpoto",
        "Comune di Santa Croce del Sannio",
@@ -5063,6 +5301,13 @@
       "testo": "Martedì 27 ottobre l'avviso l'ha pubblicato anche Torrecuso, con il modulo per chiedere l'iscrizione all'elenco. Se ne occupa l'ufficio elettorale, al piano terra di Palazzo Caracciolo-Cito, in piazza Antonio Fusco 1.",
       "fonti": [
        "Comune di Torrecuso"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Nel pomeriggio di martedì 27 ottobre l'avviso l'ha pubblicato anche San Lorenzello, nella Valle Telesina, con il modulo per la domanda. Se ne occupa l'ufficio dei Servizi demografici ed elettorale del Comune, in piazza Filippo Lavorgna 1 (telefono 0824 815134).",
+      "fonti": [
+       "Comune di San Lorenzello"
       ],
       "giorno": "2026-10-27"
      },
@@ -5238,6 +5483,13 @@
       "nome": "Comune di Torrecuso",
       "titolo": "Istituzione dell’elenco comunale degli elettori fuori sede",
       "url": "https://www.comune.torrecuso.bn.it/Novita/Avvisi/Istituzione-dell-elenco-comunale-degli-elettori-fuori-sede",
+      "data": "27 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "Comune di San Lorenzello",
+      "titolo": "Istituzione dell'elenco comunale degli elettori fuori sede per l’esercizio del diritto di voto da parte degli elettori fuori sede in occasione delle elezioni politiche ed europee e dei referendum",
+      "url": "https://comune.sanlorenzello.bn.it/it/novita/page/istituzione-dell-elenco-comunale-degli-elettori-fuori-sede-per-l-esercizio-del-diritto-di-voto-da-parte-degli-elettori-fuori-sede-in-occasione-delle-elezioni-politiche-ed-europee-e-dei-referendum",
       "data": "27 ott",
       "ufficiale": true
      }

@@ -1120,7 +1120,7 @@
     {
      "testo": "La manifestazione è organizzata dall'associazione Immaginaria ETS con il patrocinio del Comune di Ceppaloni. Il percorso parte dal castello e arriva alla prima piazzetta di via Cortile, dove ci sono le casette del cibo di strada.",
      "fonti": [
-      "NTR24"
+      "NTR24 (8/10)"
      ]
     },
     {
@@ -1128,11 +1128,17 @@
      "fonti": [
       "Napolike"
      ]
+    },
+    {
+     "testo": "Il programma completo sarà presentato venerdì 30 ottobre alle 11:30 nella sala consiliare del Comune di Ceppaloni, con il sindaco Claudio Cataudo e il direttore artistico Giovanni Calicchio, presidente dell'associazione Immaginaria. Quest'anno, oltre al Castello, ci sarà un percorso di cibo di strada con piatti tipici in una parte del centro storico.",
+     "fonti": [
+      "NTR24 (27/10)"
+     ]
     }
    ],
    "fonti": [
     {
-     "nome": "NTR24",
+     "nome": "NTR24 (8/10)",
      "titolo": "Dalla Londra di Dickens al Grinch, il Sannio accende già le luci: borghi, mercatini e villaggi pronti ad attrarre visitatori a Natale",
      "url": "https://www.ntr24.tv/2026/10/08/dalla-londra-di-dickens-a-pinocchio-il-sannio-accende-gia-le-luci-borghi-mercatini-e-villaggi-pronti-ad-attrarre-visitatori-a-natale/",
      "data": "8 ott"
@@ -1142,6 +1148,12 @@
      "titolo": "Come d'Incanto a Ceppaloni, il Natale al castello dal 7 novembre",
      "url": "https://www.napolike.it/come-dincanto-natale-castello-di-ceppaloni-2026",
      "data": "16 ott"
+    },
+    {
+     "nome": "NTR24 (27/10)",
+     "titolo": "A Ceppaloni si presenta ‘Come d’Incanto’: dal 7 novembre il Castello si veste di magia per il Natale",
+     "url": "https://www.ntr24.tv/2026/10/27/a-ceppaloni-si-presenta-come-dincanto-dal-7-novembre-il-castello-si-veste-di-magia-per-il-natale/",
+     "data": "27 ott"
     }
    ],
    "immagine": "castello-natale",
