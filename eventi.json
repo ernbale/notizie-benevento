@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26T13:09+01:00",
+ "aggiornato": "2026-10-27T06:06+01:00",
  "eventi": [
   {
    "id": "mostra-cosmogonie-meact-torrecuso-2026",
@@ -1154,7 +1154,8 @@
     {
      "testo": "Sabato 7 novembre alle 20.30 il Teatro Comunale di Benevento ospita «Alda Merini – Una donna sospesa tra il dolore e la gioia», scritto e diretto dal poeta Antonio Nobili. Giorgia Trasselli interpreta Alda Merini; il giovane Andrea Carpiceci è Paolo, uno studente a cui l'incontro con la poetessa cambia la vita.",
      "fonti": [
-      "Benevento Giornale"
+      "Benevento Giornale",
+      "NTR24"
      ]
     },
     {
@@ -1168,7 +1169,8 @@
      "testo": "I biglietti si comprano su Vivaticket; informazioni su lacervona.com/aldamerini. Mentelocale indica anche la vendita su HappyTicket.",
      "fonti": [
       "Benevento Giornale",
-      "Mentelocale"
+      "Mentelocale",
+      "NTR24"
      ]
     }
    ],
@@ -1185,6 +1187,12 @@
      "titolo": "Alda Merini - Una donna sospesa tra il dolore e la gioia",
      "url": "https://www.mentelocale.it/benevento/125552-alda-merini-una-donna-sospesa-tra-il-dolore-e-la-gioia.htm",
      "data": "senza data (letta 26 ott)"
+    },
+    {
+     "nome": "NTR24",
+     "titolo": "Alda Merini, il teatro racconta l’anima tra dolore e gioia: in scena al Comunale di Benevento",
+     "url": "https://www.ntr24.tv/2026/10/27/alda-merini-il-teatro-racconta-lanima-tra-dolore-e-gioia-in-scena-al-comunale-di-benevento/",
+     "data": "27 ott, 06:00"
     }
    ],
    "foto": "teatro-12"

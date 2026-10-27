@@ -1,6 +1,1572 @@
 {
  "notizie": [
   {
+   "id": "benevento-trofeo-don-pompilio-amatori-podismo-antonucci-secondo",
+   "titolo": "Benevento, Trofeo Don Pompilio al Rione Ferrovia: Antonucci dell'Amatori Podismo secondo in 33'23\"",
+   "titolo_google": "Trofeo Don Pompilio a Benevento, Antonucci secondo",
+   "sintesi": "Sabato 24 ottobre al Rione Ferrovia di Benevento si è corsa la seconda edizione del Trofeo Don Pompilio, 10 chilometri in memoria dello storico parroco del quartiere. Antonio Pio Antonucci dell'Amatori Podismo Benevento è arrivato secondo in 33'23\", Antonio Luongo quarto.",
+   "categoria": "sport",
+   "sport": "atletica",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-24T22:41+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/amatori-podismo-benevento-protagonista-al-trofeo-don-pompilio-antonucci-sfiora-la-vittoria-grande-prova-di-squadra-video-e-foto/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Sabato 24 ottobre il Rione Ferrovia di Benevento ha ospitato la seconda edizione del Trofeo Don Pompilio – Corsa di Santa Maria di Costantinopoli. La gara l'ha organizzata l'Amatori Podismo Benevento per ricordare don Pompilio, lo storico parroco del quartiere morto poco più di un anno fa.",
+      "fonti": [
+       "TV7 Benevento"
+      ]
+     },
+     {
+      "testo": "Il percorso, in piano, passava per viale Principe di Napoli e via Grimoaldo Re: tre giri per 10 chilometri, con l'arrivo davanti alla parrocchia di Santa Maria di Costantinopoli.",
+      "fonti": [
+       "TV7 Benevento"
+      ]
+     },
+     {
+      "testo": "Antonio Pio Antonucci dell'Amatori Podismo Benevento ha lottato a lungo per vincere ed è arrivato secondo per poco, in 33'23\". Quarto il compagno di squadra Antonio Luongo in 34'27\". Tra gli altri atleti della società, Antonio Carolla e Gerardo Tarantino hanno vinto la loro categoria, come Tania Yaremyn e Ludovica Peri tra le donne; Dina Caliro è stata quinta donna e Vera Ceniccola sesta.",
+      "fonti": [
+       "TV7 Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Chi ha vinto la gara: l'articolo letto riporta solo i risultati dell'Amatori Podismo Benevento."
+    ],
+    "fonti": [
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Amatori Podismo Benevento protagonista al Trofeo Don Pompilio: Antonucci sfiora la vittoria, grande prova di squadra (VIDEO E FOTO)",
+      "url": "https://www.tvsette.net/amatori-podismo-benevento-protagonista-al-trofeo-don-pompilio-antonucci-sfiora-la-vittoria-grande-prova-di-squadra-video-e-foto/",
+      "data": "24 ott, 22:41"
+     }
+    ]
+   },
+   "immagine": "corsa",
+   "foto": "corsa-9",
+   "archiviato_il": "2026-10-27"
+  },
+  {
+   "id": "arezzo-benevento-0-3-24-ottobre",
+   "titolo": "Serie B, Arezzo-Benevento 0-3: reti di Siatounis, Okereke e Mignani",
+   "titolo_google": "Serie B, Arezzo-Benevento 0-3: vince il Benevento",
+   "sintesi": "Sabato 24 ottobre il Benevento ha battuto 3-0 l'Arezzo nell'ottava giornata di Serie B, con tutti i gol nel secondo tempo: Siatounis, Okereke e Mignani. I giallorossi salgono a 14 punti e al quinto posto in classifica.",
+   "categoria": "sport",
+   "sport": "calcio",
+   "zona": "benevento",
+   "luogo": "Arezzo",
+   "pubblicato": "2026-10-24T21:40:00+02:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Benevento Calcio",
+     "url": "https://www.beneventocalcio.club/news/notizie/7673/serie-bkt-2026-2027-arezzo-benevento-0-3-il-tabellino-della-gara.shtml",
+     "ufficiale": true
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/arezzo-benevento-ripresa-sballo-strega-conquista-tre-punti/"
+    },
+    {
+     "nome": "NTR24 Sport",
+     "url": "https://sport.ntr24.tv/2026/10/24/il-benevento-strapazza-larezzo-tris-della-strega-in-toscana/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/24/arezzo-benevento-0-0-allintervallo-la-strega-crea-e-attacca-ma-non-la-sblocca/"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/25/il-benevento-va-veloce-tris-allarezzo-e-quinto-posto-in-classifica-foto/"
+    },
+    {
+     "nome": "Benevento Giornale",
+     "url": "https://www.beneventogiornale.com/2026/10/25/una-splendida-vittoria-ad-arezzo-porta-il-benevento-al-quinto-posto-in-classifica/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Benevento ha vinto 3-0 ad Arezzo, sabato 24 ottobre, nell'ottava giornata del campionato di Serie B. Tutti i gol sono arrivati nel secondo tempo: li hanno fatti Siatounis, Okereke e Mignani. Con questi tre punti i giallorossi di Floro Flores salgono a 14 punti, mentre l'Arezzo resta a 10.",
+      "fonti": [
+       "Benevento Calcio",
+       "Cronache del Sannio",
+       "NTR24 Sport",
+       "BeneventoNews24",
+       "Il Sannio Quotidiano",
+       "Benevento Giornale"
+      ],
+      "giorno": "2026-10-24"
+     },
+     {
+      "testo": "È la quarta vittoria del Benevento nelle ultime cinque partite, dopo il pareggio con il Vicenza della settimana prima, e porta i giallorossi al quinto posto in classifica.",
+      "fonti": [
+       "Il Sannio Quotidiano",
+       "Benevento Giornale"
+      ],
+      "giorno": "2026-10-24"
+     },
+     {
+      "testo": "Il primo tempo è finito 0-0, con diverse occasioni per il Benevento: un colpo di testa di Dalle Mura al 4', un tiro di Beruatto parato dall'ex Nunziante, il portiere dell'Arezzo, e un tiro di Cherubini al 37' finito tra le braccia dello stesso Nunziante. L'Arezzo si è fatto vedere con un colpo di testa di Cerri al 13' e un tiro di Tavernelli al 36', parato da Vannucchi.",
+      "fonti": [
+       "Cronache del Sannio",
+       "NTR24 Sport"
+      ],
+      "giorno": "2026-10-24"
+     },
+     {
+      "testo": "Nel secondo tempo, al 51' secondo il tabellino del Benevento, Siatounis ha spinto in rete da pochi passi un passaggio di Okereke. Il gol è stato prima annullato per fuorigioco ma, dopo il controllo al Var (l'arbitro che rivede le immagini), è stato convalidato. Per il greco è il terzo gol di fila, dopo quelli con Cesena e Vicenza.",
+      "fonti": [
+       "Benevento Calcio",
+       "Cronache del Sannio",
+       "NTR24 Sport"
+      ],
+      "giorno": "2026-10-24"
+     },
+     {
+      "testo": "Al 66' Okereke ha fatto 2-0 battendo Nunziante, e all'87' Mignani, entrato al 70' al posto di Salvemini, ha fatto 3-0 dopo un'azione personale in cui ha superato tre difensori. Al 40' Okereke aveva sfiorato il terzo gol, fermato da Nunziante con un piede; l'Arezzo si era rivisto dalle parti di Vannucchi solo al 36', con un tiro di Renzi bloccato.",
+      "fonti": [
+       "Benevento Calcio",
+       "Cronache del Sannio",
+       "NTR24 Sport",
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-24"
+     },
+     {
+      "testo": "Per Mignani, entrato dalla panchina, è il primo gol in Serie B. Dopo la partita l'attaccante ha detto che è stata «una delle migliori partite dell'anno» e che la squadra è stata brava «a non ripetere i piccoli errori di sabato scorso». Secondo Benevento Giornale nel corso della gara c'è stato anche un palo colpito da Cherubini.",
+      "fonti": [
+       "Il Sannio Quotidiano (Mignani)",
+       "Benevento Giornale"
+      ],
+      "giorno": "2026-10-24"
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "24 ottobre, 19:30",
+      "fatto": "Arezzo-Benevento comincia allo stadio «Città di Arezzo»; il primo tempo finisce 0-0.",
+      "fonti": [
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "data": "24 ottobre, secondo tempo",
+      "fatto": "Gol di Siatounis (51'), Okereke (66') e Mignani (87'): finisce 0-3.",
+      "fonti": [
+       "Benevento Calcio",
+       "NTR24 Sport"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Il risultato, 0-3, e i marcatori Siatounis, Okereke e Mignani, con il gol di Siatounis convalidato dopo il Var.",
+      "fonti": [
+       "Benevento Calcio",
+       "Cronache del Sannio",
+       "NTR24 Sport",
+       "BeneventoNews24",
+       "Il Sannio Quotidiano",
+       "Benevento Giornale"
+      ]
+     },
+     {
+      "testo": "Il Benevento sale al quinto posto in classifica.",
+      "fonti": [
+       "Il Sannio Quotidiano",
+       "Benevento Giornale"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "Il primo gol è al 49' per NTR24 Sport e al 51' per il tabellino del Benevento: nel racconto vale il tabellino, che è del club.",
+      "fonti": [
+       "Benevento Calcio",
+       "NTR24 Sport"
+      ]
+     }
+    ],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Benevento Calcio",
+      "titolo": "SERIE BKT 2026-2027: AREZZO-BENEVENTO 0-3 IL TABELLINO DELLA GARA",
+      "url": "https://www.beneventocalcio.club/news/notizie/7673/serie-bkt-2026-2027-arezzo-benevento-0-3-il-tabellino-della-gara.shtml",
+      "data": "24 ott, 21:27",
+      "ufficiale": true
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Arezzo-Benevento 0-3: ripresa da sballo e la Strega conquista i tre punti",
+      "url": "https://www.cronachedelsannio.it/sannionews24/arezzo-benevento-ripresa-sballo-strega-conquista-tre-punti/",
+      "data": "24 ott, 21:23"
+     },
+     {
+      "nome": "NTR24 Sport",
+      "titolo": "Il Benevento strapazza l’Arezzo. Tris della Strega in Toscana",
+      "url": "https://sport.ntr24.tv/2026/10/24/il-benevento-strapazza-larezzo-tris-della-strega-in-toscana/",
+      "data": "24 ott, 21:40"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Arezzo-Benevento 0-3: la Strega torna a vincere con Siatounis, Okereke e Mignani",
+      "url": "https://www.beneventonews24.it/2026/10/24/arezzo-benevento-0-0-allintervallo-la-strega-crea-e-attacca-ma-non-la-sblocca/",
+      "data": "24 ott, 20:18"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Il Benevento va veloce: tris all’Arezzo e quinto posto in classifica [FOTO]",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/25/il-benevento-va-veloce-tris-allarezzo-e-quinto-posto-in-classifica-foto/",
+      "data": "25 ott, 08:46"
+     },
+     {
+      "nome": "Il Sannio Quotidiano (Mignani)",
+      "titolo": "Mignani si gode il primo gol in Serie B: “Stiamo facendo qualcosa di importante”",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/25/mignani-si-gode-il-primo-gol-in-serie-b-stiamo-facendo-qualcosa-di-importante/",
+      "data": "25 ott, 08:35"
+     },
+     {
+      "nome": "Benevento Giornale",
+      "titolo": "Una splendida vittoria ad Arezzo porta il Benevento al quinto posto in classifica",
+      "url": "https://www.beneventogiornale.com/2026/10/25/una-splendida-vittoria-ad-arezzo-porta-il-benevento-al-quinto-posto-in-classifica/",
+      "data": "25 ott, 08:14"
+     }
+    ]
+   },
+   "immagine": "calcio",
+   "foto": "calcio-19",
+   "archiviato_il": "2026-10-27"
+  },
+  {
+   "id": "yolo-benevento-dinamo-taranto-24-ottobre",
+   "titolo": "Basket B femminile, la YOLO+ Miwa Benevento perde 55-74 in casa con la capolista Taranto",
+   "titolo_google": "Basket, YOLO+ Benevento-Dinamo Taranto 55-74: vince Taranto",
+   "sintesi": "Sabato 24 ottobre al PalaMiwa la YOLO+ Miwa Basket Benevento ha perso 55-74 contro la Dinamo Taranto, capolista ancora imbattuta. Le beneventane giocavano senza Tolardo e Manganiello.",
+   "categoria": "sport",
+   "sport": "basket",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-24T20:04:00+02:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24 Sport",
+     "url": "https://sport.ntr24.tv/2026/10/23/basket-serie-b-la-yolo-benevento-torna-in-casa-sabato-il-match-contro-la-dinamo-taranto/"
+    },
+    {
+     "nome": "Miwa Basket Benevento",
+     "url": "https://www.cestisticabenevento.it/2026/10/24/unindomita-yolo-cede-il-passo-alla-capolista-taranto/",
+     "ufficiale": true
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/24/basket-unindomita-yolo-cede-il-passo-alla-capolista-dinamo-taranto/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/unindomita-yolo-cede-il-passo-alla-capolista-taranto/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Sabato 24 ottobre la YOLO+ Miwa Basket Benevento ha perso 55-74 al PalaMiwa contro la Dinamo Taranto, capolista del girone e ancora imbattuta. Le sannite hanno giocato senza Tolardo e Manganiello, e secondo la società le rotazioni sono rimaste ridotte all'osso.",
+      "fonti": [
+       "Miwa Basket Benevento",
+       "Anteprima24",
+       "BeneventoNews24 (24/10)"
+      ],
+      "giorno": "2026-10-24"
+     },
+     {
+      "testo": "Il primo quarto è finito 19-23. Nel secondo il Taranto ha continuato a tirare bene da tre punti, con Buranella e Cenci, e a segnare sotto canestro con Jauregui: all'intervallo il punteggio era 32-42. Nel terzo quarto Buranella ha aggiunto altre tre triple e il Taranto è andato sul 42-64. L'ultimo periodo non ha cambiato la partita.",
+      "fonti": [
+       "Miwa Basket Benevento"
+      ],
+      "giorno": "2026-10-24"
+     },
+     {
+      "testo": "Per la YOLO+ le più prolifiche sono state Grzenkowicz con 16 punti, Saccomanno con 14, Mantineo con 10 e Montella con 9; Savarese ne ha fatti 6. La società sottolinea che le giocatrici non hanno mollato e hanno messo grinta e atteggiamento fino alla fine.",
+      "fonti": [
+       "Miwa Basket Benevento"
+      ],
+      "giorno": "2026-10-24"
+     },
+     {
+      "testo": "Il Taranto, che guida il girone e dopo cinque giornate non aveva ancora perso, era la squadra da battere. La YOLO+ prima di questa gara aveva vinto una sola partita. Per le beneventane, allenate da coach Pasquariello, era il terzo impegno in meno di una settimana. L'ingresso al palazzetto era gratuito.",
+      "fonti": [
+       "NTR24 Sport",
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-23"
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "24 ottobre",
+      "fatto": "Al PalaMiwa Benevento-Taranto finisce 55-74 (19-23, 32-42, 42-64).",
+      "fonti": [
+       "Miwa Basket Benevento"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Data, ora e luogo della partita (sabato 24 ottobre, ore 18, PalaMiwa), l'ingresso gratuito e il Taranto capolista imbattuto.",
+      "fonti": [
+       "NTR24 Sport",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Il risultato, 55-74, e le assenze di Tolardo e Manganiello.",
+      "fonti": [
+       "Miwa Basket Benevento",
+       "Anteprima24",
+       "BeneventoNews24 (24/10)"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "NTR24 Sport",
+      "titolo": "Basket serie B, la YOLO+ Benevento torna in casa: sabato il match contro la Dinamo Taranto",
+      "url": "https://sport.ntr24.tv/2026/10/23/basket-serie-b-la-yolo-benevento-torna-in-casa-sabato-il-match-contro-la-dinamo-taranto/",
+      "data": "23 ott, 09:51"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Basket, la YOLO+ torna in casa: sabato il match contro la Dinamo Taranto",
+      "url": "https://www.beneventonews24.it/2026/10/23/basket-la-yolo-torna-in-casa-sabato-il-match-contro-la-dinamo-taranto/",
+      "data": "23 ott, 09:54"
+     },
+     {
+      "nome": "Miwa Basket Benevento",
+      "titolo": "Un’indomita YOLO+ cede il passo alla capolista Taranto",
+      "url": "https://www.cestisticabenevento.it/2026/10/24/unindomita-yolo-cede-il-passo-alla-capolista-taranto/",
+      "data": "24 ott, 20:04",
+      "ufficiale": true
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Un’indomita YOLO+ cede il passo alla capolista Taranto",
+      "url": "https://www.anteprima24.it/benevento/unindomita-yolo-cede-il-passo-alla-capolista-taranto/",
+      "data": "24 ott, 22:40"
+     },
+     {
+      "nome": "BeneventoNews24 (24/10)",
+      "titolo": "Basket, un’indomita YOLO+ cede il passo alla capolista Dinamo Taranto",
+      "url": "https://www.beneventonews24.it/2026/10/24/basket-unindomita-yolo-cede-il-passo-alla-capolista-dinamo-taranto/",
+      "data": "24 ott, 21:10"
+     }
+    ],
+    "aggiornamento": {
+     "testo": "Sabato 24 ottobre la YOLO+ ha perso in casa 55-74 con la Dinamo Taranto.",
+     "fonti": [
+      "Miwa Basket Benevento"
+     ],
+     "quando": "2026-10-24T20:08+02:00",
+     "titolo_prima": "Basket B femminile, la YOLO+ Miwa Benevento ospita la Dinamo Taranto sabato 24 ottobre alle 18 al PalaMiwa"
+    }
+   },
+   "comunicati": [
+    "faf96231c61f"
+   ],
+   "immagine": "basket",
+   "foto": "basket",
+   "archiviato_il": "2026-10-27"
+  },
+  {
+   "id": "benevento-calcio-arezzo-24-ottobre-catanzaro-27-ottobre-biglietti",
+   "titolo": "Benevento Calcio: sabato 24 ottobre ad Arezzo, martedì 27 al Vigorito con il Catanzaro, via alla prevendita",
+   "titolo_google": "Benevento Calcio: Arezzo sabato, Catanzaro martedì, biglietti",
+   "sintesi": "Il Benevento gioca sabato 24 ottobre alle 19:30 ad Arezzo e martedì 27 alle 19:00 al Vigorito con il Catanzaro. Per Arezzo Floro Flores ha convocato 24 giocatori: torna Sernicola, fuori Talia e Schimmenti. Biglietti solo nei punti vendita ETES.",
+   "categoria": "sport",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-24T18:53:00+02:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/benevento-calcio-al-via-la-prevendita-per-il-turno-infrasettimanale-col-catanzaro-niente-online-e-ospiti-solo-con-fidelity/"
+    },
+    {
+     "nome": "TV7 Benevento (Arezzo)",
+     "url": "https://www.tvsette.net/serie-bkt-2026-2027-arezzo-benevento-dirige-fourneau/"
+    },
+    {
+     "nome": "Benevento Calcio",
+     "url": "https://www.beneventocalcio.club/news/notizie/7666/serie-bkt-2026-2027-arezzo-benevento-i-convocati-di-mister-floro-flores.shtml",
+     "ufficiale": true
+    },
+    {
+     "nome": "BeneventoNews24 (convocati)",
+     "url": "https://www.beneventonews24.it/2026/10/23/arezzo-benevento-i-convocati-di-floro-flores-torna-sernicola-out-talia-e-schimmenti/"
+    },
+    {
+     "nome": "Cronache del Sannio (Floro Flores)",
+     "url": "https://www.cronachedelsannio.it/sannionews24/benevento-floro-flores-arezzo-difficolta/"
+    },
+    {
+     "nome": "BeneventoNews24 (tifosi)",
+     "url": "https://www.beneventonews24.it/2026/10/23/arezzo-benevento-saranno-piu-di-300-i-tifosi-giallorossi-in-toscana-il-dato-definitivo/"
+    },
+    {
+     "nome": "Benevento Calcio (formazioni)",
+     "url": "https://www.beneventocalcio.club/news/notizie/7672/serie-bkt-2026-2027-arezzo-benevento-le-formazioni-ufficiali.shtml",
+     "ufficiale": true
+    },
+    {
+     "nome": "BeneventoNews24 (formazioni)",
+     "url": "https://www.beneventonews24.it/2026/10/24/arezzo-benevento-le-formazioni-ufficiali-ce-dalle-mura-cherubini-e-okereke-dal-1/"
+    },
+    {
+     "nome": "BeneventoNews24 (arbitro)",
+     "url": "https://www.beneventonews24.it/2026/10/26/benevento-catanzaro-designato-larbitro-per-il-turno-infrasettimanale-al-vigorito/"
+    },
+    {
+     "nome": "Benevento Calcio (Polio Day)",
+     "url": "https://www.beneventocalcio.club/news/comunicatistampa/7682/end-polio-now-il-benevento-calcio-insieme-al-rotary-club.shtml",
+     "ufficiale": true
+    },
+    {
+     "nome": "NTR24 Sport (arbitro)",
+     "url": "https://sport.ntr24.tv/2026/10/26/benevento-catanzaro-arbitra-poli-di-verona/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Martedì 27 ottobre alle 19 il Benevento gioca al Vigorito con il Catanzaro, nella nona giornata di Serie B. L'AIA ha scelto l'arbitro: è Alberto Poli della sezione di Verona, che ha già diretto due partite del Benevento nella scorsa stagione di Serie C, tutte e due vinte dai giallorossi. Con lui gli assistenti Berti e Bianchini, il quarto ufficiale Mucera e, al VAR, Rutella e Guida.",
+      "fonti": [
+       "BeneventoNews24 (arbitro)",
+       "NTR24 Sport (arbitro)"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "Alla partita il Benevento Calcio aderisce con il Rotary Club di Benevento al Polio Day, la giornata mondiale contro la poliomielite: allo stadio sarà diffuso un messaggio per invitare a vaccinarsi e a sostenere la campagna End Polio Now.",
+      "fonti": [
+       "Benevento Calcio (Polio Day)"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "Sabato 24 ottobre, poco prima del fischio d'inizio delle 19:30, il Benevento e l'Arezzo hanno comunicato le formazioni. Floro Flores schiera il 4-3-3: in porta Vannucchi; in difesa Pierozzi, Scognamillo, Dalle Mura e Beruatto; a centrocampo Siatounis, Maita e Kouan; in attacco Okereke, Salvemini e Cherubini. Dalle Mura gioca al posto di Saio, che resta in panchina. L'Arezzo di Cristian Bucchi risponde con un altro 4-3-3 guidato davanti da Arena, Cerri e Tavernelli.",
+      "fonti": [
+       "Benevento Calcio (formazioni)",
+       "BeneventoNews24 (formazioni)"
+      ],
+      "giorno": "2026-10-24"
+     },
+     {
+      "testo": "Venerdì 23 ottobre alle 18:06 i biglietti emessi per Benevento-Catanzaro erano 386: 63 per i tifosi di casa e 323 per gli ospiti, a cui si aggiungono i 4.845 abbonati del Benevento. Per Arezzo i tifosi giallorossi in trasferta saranno 325.",
+      "fonti": [
+       "BeneventoNews24 (tifosi)"
+      ],
+      "giorno": "2026-10-23"
+     },
+     {
+      "testo": "Venerdì 23 ottobre, dopo l'ultimo allenamento, il Benevento ha diramato i 24 convocati di Antonio Floro Flores per Arezzo-Benevento, ottava giornata di Serie B. Torna Leonardo Sernicola, rimasto fuori per la parotite. Saio è convocato ma non giocherà dall'inizio per l'affaticamento di questa settimana. Restano fuori l'infortunato Sylla (al suo posto è convocato Mandato), Talia e Schimmenti, anche se Schimmenti è tornato ad allenarsi con la squadra.",
+      "fonti": [
+       "Benevento Calcio",
+       "BeneventoNews24 (convocati)"
+      ],
+      "giorno": "2026-10-23"
+     },
+     {
+      "testo": "Nella conferenza della vigilia Floro Flores ha detto che Arezzo, dove ha giocato e dove sono nati i suoi figli, è stata una tappa fondamentale della sua carriera, ma che ora pensa solo al Benevento e vuole vincere. Ha avvertito che l'Arezzo ha un solo punto meno dei giallorossi e che sottovalutarlo sarebbe un errore. Con tre partite in una settimana darà spazio a chi ha giocato meno, soprattutto dalla gara di martedì; la formazione di sabato non l'ha ancora decisa.",
+      "fonti": [
+       "Cronache del Sannio (Floro Flores)"
+      ],
+      "giorno": "2026-10-23"
+     },
+     {
+      "testo": "Giovedì 22 ottobre alle 18:08 i biglietti emessi per Benevento-Catanzaro erano 249: 39 per il settore locali e 210 per il settore ospiti, riservato ai tifosi calabresi. Per la trasferta di Arezzo i tagliandi venduti nel settore ospiti erano 151. Mercoledì 21 alle 18:05 erano appena 9, secondo i dati diffusi da TV7.",
+      "fonti": [
+       "TV7 Benevento (22/10)"
+      ],
+      "giorno": "2026-10-22"
+     },
+     {
+      "testo": "Il Benevento ha due partite di Serie B in quattro giorni. Sabato 24 ottobre alle 19:30 gioca ad Arezzo, allo stadio «Città di Arezzo», nell'ottava giornata: arbitra Francesco Fourneau di Roma 1.",
+      "fonti": [
+       "TV7 Benevento (Arezzo)"
+      ],
+      "giorno": "2026-10-21"
+     },
+     {
+      "testo": "Martedì 27 ottobre alle 19:00 al Ciro Vigorito arriva il Catanzaro, per la nona giornata: è la sesta partita casalinga dei giallorossi, che in casa hanno battuto Verona 3-1 e Cesena 2-0, pareggiato con Sudtirol 1-1 e Vicenza 2-2 e perso con il Modena 2-1.",
+      "fonti": [
+       "TV7 Benevento"
+      ],
+      "giorno": "2026-10-21"
+     },
+     {
+      "testo": "La prevendita è aperta dalle 15 di mercoledì 21 ottobre fino alle 19 del 27, solo nei punti vendita ETES autorizzati: non si compra online e non si può cambiare il nome sul biglietto. Si parte da 13 euro (curva sud e curva nord family; 11 il ridotto) fino a 50 euro per la tribuna centrale; il settore ospiti costa 13 euro. In più ci sono 2 euro di commissioni.",
+      "fonti": [
+       "TV7 Benevento"
+      ],
+      "giorno": "2026-10-21"
+     },
+     {
+      "testo": "I botteghini del Vigorito sono aperti fino a lunedì 26 ottobre in orari diversi di giorno in giorno (per esempio giovedì 22 e venerdì 23 dalle 9 alle 12 e dalle 15 alle 18) e restano chiusi il giorno della partita. Lo stadio si apre alle 17 e il parcheggio davanti ai distinti, in via Casselli, dalle 16. Alle 18:05 di mercoledì i biglietti emessi erano 9.",
+      "fonti": [
+       "TV7 Benevento"
+      ],
+      "giorno": "2026-10-21"
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "22 ottobre, 18:08",
+      "fatto": "249 biglietti emessi per Benevento-Catanzaro (39 locali, 210 ospiti); 151 ospiti per Arezzo.",
+      "fonti": [
+       "TV7 Benevento (22/10)"
+      ]
+     },
+     {
+      "data": "23 ottobre",
+      "fatto": "Floro Flores diffonde i 24 convocati per Arezzo: torna Sernicola, fuori Talia e Schimmenti.",
+      "fonti": [
+       "Benevento Calcio"
+      ]
+     },
+     {
+      "data": "23 ottobre, 18:06",
+      "fatto": "386 biglietti emessi per Benevento-Catanzaro; 325 tifosi del Benevento attesi ad Arezzo.",
+      "fonti": [
+       "BeneventoNews24 (tifosi)"
+      ]
+     },
+     {
+      "data": "24 ottobre, 18:52",
+      "fatto": "Formazioni ufficiali di Arezzo-Benevento: Dalle Mura in difesa, Okereke, Salvemini e Cherubini in attacco.",
+      "fonti": [
+       "Benevento Calcio (formazioni)"
+      ]
+     }
+    ],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando comincia la vendita per i tifosi ospiti a Arezzo: non è nei testi letti."
+    ],
+    "fonti": [
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Benevento calcio, al via la prevendita per il turno infrasettimanale col Catanzaro: niente online e ospiti solo con Fidelity",
+      "url": "https://www.tvsette.net/benevento-calcio-al-via-la-prevendita-per-il-turno-infrasettimanale-col-catanzaro-niente-online-e-ospiti-solo-con-fidelity/",
+      "data": "21 ott, 15:39"
+     },
+     {
+      "nome": "TV7 Benevento (Arezzo)",
+      "titolo": "SERIE BKT 2026-2027: AREZZO-BENEVENTO, DIRIGE FOURNEAU.",
+      "url": "https://www.tvsette.net/serie-bkt-2026-2027-arezzo-benevento-dirige-fourneau/",
+      "data": "21 ott, 13:19"
+     },
+     {
+      "nome": "TV7 Benevento (22/10)",
+      "titolo": "Calcio. Benevento-Catanzaro, 249 biglietti emessi: 210 per il settore ospiti",
+      "url": "https://www.tvsette.net/calcio-benevento-catanzaro-249-biglietti-emessi-210-per-il-settore-ospiti/",
+      "data": "22 ott, 18:23"
+     },
+     {
+      "nome": "Benevento Calcio",
+      "titolo": "SERIE BKT 2026-2027: AREZZO-BENEVENTO I CONVOCATI DI MISTER FLORO FLORES",
+      "url": "https://www.beneventocalcio.club/news/notizie/7666/serie-bkt-2026-2027-arezzo-benevento-i-convocati-di-mister-floro-flores.shtml",
+      "data": "23 ott, 13:10",
+      "ufficiale": true
+     },
+     {
+      "nome": "BeneventoNews24 (convocati)",
+      "titolo": "Arezzo-Benevento, i convocati di Floro Flores: torna Sernicola, out Talia e Schimmenti",
+      "url": "https://www.beneventonews24.it/2026/10/23/arezzo-benevento-i-convocati-di-floro-flores-torna-sernicola-out-talia-e-schimmenti/",
+      "data": "23 ott, 13:31"
+     },
+     {
+      "nome": "Cronache del Sannio (Floro Flores)",
+      "titolo": "Benevento, Floro Flores: “L’Arezzo non è affatto in difficoltà”",
+      "url": "https://www.cronachedelsannio.it/sannionews24/benevento-floro-flores-arezzo-difficolta/",
+      "data": "23 ott, 12:21"
+     },
+     {
+      "nome": "BeneventoNews24 (tifosi)",
+      "titolo": "Arezzo-Benevento, saranno più di 300 i tifosi giallorossi in Toscana: il dato definitivo",
+      "url": "https://www.beneventonews24.it/2026/10/23/arezzo-benevento-saranno-piu-di-300-i-tifosi-giallorossi-in-toscana-il-dato-definitivo/",
+      "data": "23 ott, 20:13"
+     },
+     {
+      "nome": "Benevento Calcio (formazioni)",
+      "titolo": "SERIE BKT 2026-2027: AREZZO-BENEVENTO LE FORMAZIONI UFFICIALI",
+      "url": "https://www.beneventocalcio.club/news/notizie/7672/serie-bkt-2026-2027-arezzo-benevento-le-formazioni-ufficiali.shtml",
+      "data": "24 ott, 18:53",
+      "ufficiale": true
+     },
+     {
+      "nome": "BeneventoNews24 (formazioni)",
+      "titolo": "Arezzo-Benevento, le formazioni ufficiali: c’è Dalle Mura, Cherubini e Okereke dal 1′",
+      "url": "https://www.beneventonews24.it/2026/10/24/arezzo-benevento-le-formazioni-ufficiali-ce-dalle-mura-cherubini-e-okereke-dal-1/",
+      "data": "24 ott, 18:53"
+     },
+     {
+      "nome": "BeneventoNews24 (arbitro)",
+      "titolo": "Benevento-Catanzaro, designato l’arbitro per il turno infrasettimanale al “Vigorito”",
+      "url": "https://www.beneventonews24.it/2026/10/26/benevento-catanzaro-designato-larbitro-per-il-turno-infrasettimanale-al-vigorito/",
+      "data": "26 ott, 12:29"
+     },
+     {
+      "nome": "Benevento Calcio (Polio Day)",
+      "titolo": "END POLIO NOW: IL BENEVENTO CALCIO INSIEME AL ROTARY CLUB",
+      "url": "https://www.beneventocalcio.club/news/comunicatistampa/7682/end-polio-now-il-benevento-calcio-insieme-al-rotary-club.shtml",
+      "data": "26 ott, 13:00",
+      "ufficiale": true
+     },
+     {
+      "nome": "NTR24 Sport (arbitro)",
+      "titolo": "Benevento-Catanzaro, arbitra Poli di Verona",
+      "url": "https://sport.ntr24.tv/2026/10/26/benevento-catanzaro-arbitra-poli-di-verona/",
+      "data": "26 ott, 15:26"
+     }
+    ],
+    "aggiornamento": {
+     "testo": "Per Benevento-Catanzaro di martedì 27 ottobre alle 19 arbitra Alberto Poli di Verona; allo stadio il messaggio del Rotary per il Polio Day.",
+     "fonti": [
+      "BeneventoNews24 (arbitro)",
+      "Benevento Calcio (Polio Day)"
+     ],
+     "quando": "2026-10-26T13:15+01:00"
+    }
+   },
+   "sport": "calcio",
+   "immagine": "calcio",
+   "foto": "calcio",
+   "subito": true,
+   "comunicati": [
+    "ua028cefa343"
+   ],
+   "importanza": 5,
+   "archiviato_il": "2026-10-27"
+  },
+  {
+   "id": "benevento-primavera-2-avellino-5-2-24-ottobre",
+   "titolo": "Benevento Primavera, derby vinto 5-2 contro l'Avellino: la squadra sale a 13 punti",
+   "titolo_google": "Primavera 2, Benevento-Avellino 5-2: vince il Benevento",
+   "sintesi": "Sabato 24 ottobre, a Avellola, il Benevento Primavera ha battuto 5-2 l'Avellino nella sesta giornata del girone B di Primavera 2. I giallorossi salgono a 13 punti, quarto posto.",
+   "categoria": "sport",
+   "sport": "calcio",
+   "zona": "benevento",
+   "luogo": "Benevento, Avellola",
+   "pubblicato": "2026-10-24T17:54:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/24/benevento-il-derby-di-primavera-2-e-giallorosso-5-2-allavellino-allavellola/"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/calcio-primavera-2-vittoria-schiacciante-del-benevento-che-fa-suo-il-sentito-derby-con-lavellino"
+    },
+    {
+     "nome": "NTR24 Sport",
+     "url": "https://sport.ntr24.tv/2026/10/24/benevento-primavera-derby-senza-storia-avellino-travolto-5-2-decisivi-anche-i-rinforzi-della-prima-squadra/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Sabato 24 ottobre la Primavera del Benevento, la squadra dei giovani giallorossi, ha vinto 5-2 il derby con l'Avellino. Si è giocato all'Avellola, nella sesta giornata del girone B del campionato Primavera 2.",
+      "fonti": [
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "I gol del Benevento sono di Del Gaudio nel primo tempo, al 35', e nella ripresa di Giugliano al 4', Coltorti al 14', Amico al 39' e Battista al 49'. Per l'Avellino hanno segnato Tosti al 45' e Raimondi al 48' della ripresa. In panchina c'erano Luigi Panarelli per il Benevento e Luigi Molino per l'Avellino.",
+      "fonti": [
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Con questa vittoria il Benevento sale a 13 punti e si porta al quarto posto del girone, a una sola lunghezza dal Palermo terzo. L'Avellino resta fermo a 9 punti. Del Gaudio, Giugliano e Battista sono tre dei giocatori arrivati dalla prima squadra per aiutare i ragazzi di Panarelli; per NTR24 Sport però il successo non si spiega solo con loro, perché la squadra ha mostrato organizzazione e ha colpito con più giocatori.",
+      "fonti": [
+       "BeneventoNews24",
+       "NTR24 Sport",
+       "Gazzetta di Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Il risultato, 5-2, e i marcatori del Benevento (Del Gaudio, Giugliano, Coltorti, Amico, Battista) e dell'Avellino (Tosti, Raimondi).",
+      "fonti": [
+       "BeneventoNews24",
+       "Gazzetta di Benevento",
+       "NTR24 Sport"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "Nell'elenco delle reti la Gazzetta di Benevento scrive 5' per il gol di Del Gaudio, mentre nel testo e per le altre due testate è al 35': vale il 35'.",
+      "fonti": [
+       "Gazzetta di Benevento",
+       "BeneventoNews24",
+       "NTR24 Sport"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "La prossima partita della Primavera."
+    ],
+    "fonti": [
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Benevento, il derby di Primavera 2 è giallorosso: 5-2 all’Avellino all’Avellola",
+      "url": "https://www.beneventonews24.it/2026/10/24/benevento-il-derby-di-primavera-2-e-giallorosso-5-2-allavellino-allavellola/",
+      "data": "24 ott, 17:54"
+     },
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "Calcio, Primavera 2: Vittoria schiacciante del Benevento che fa suo il sentito derby con l'Avellino",
+      "url": "https://www.gazzettabenevento.it/it/calcio-primavera-2-vittoria-schiacciante-del-benevento-che-fa-suo-il-sentito-derby-con-lavellino",
+      "data": "24 ott, 18:09"
+     },
+     {
+      "nome": "NTR24 Sport",
+      "titolo": "Benevento Primavera, derby senza storia: Avellino travolto 5-2. Decisivi anche i rinforzi della prima squadra",
+      "url": "https://sport.ntr24.tv/2026/10/24/benevento-primavera-derby-senza-storia-avellino-travolto-5-2-decisivi-anche-i-rinforzi-della-prima-squadra/",
+      "data": "24 ott, 19:49"
+     }
+    ]
+   },
+   "immagine": "calcio",
+   "foto": "calcio-14",
+   "archiviato_il": "2026-10-27"
+  },
+  {
+   "id": "benevento-scuolabus-contrade-sospeso-23-ottobre",
+   "titolo": "Benevento, da lunedì 26 ottobre riprende il trasporto scolastico nelle contrade e per la scuola «Federico Torre»",
+   "titolo_google": "Benevento, scuolabus nelle contrade di nuovo dal 26 ottobre",
+   "sintesi": "Il Comune di Benevento annuncia che da lunedì 26 ottobre il trasporto scolastico riprende regolarmente, nelle contrade e con le navette per la scuola «Federico Torre». La crisi del carburante, dice il Comune, è finita.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "immagine": "scuolabus",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-24T17:54:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/22/benevento-domani-niente-scuolabus-nelle-contrade-a-causa-della-carenza-di-carburante/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/441875/carenza-di-carburante-a-benevento-stop-agli-scuolabus-nelle-contrade.shtml"
+    },
+    {
+     "nome": "Gazzetta di Benevento (24/10)",
+     "url": "https://www.gazzettabenevento.it/it/da-lunedi-26-ottobre-il-servizio-di-trasporto-scolastico-riprendera-regolarmente-sia-nelle-contrade"
+    },
+    {
+     "nome": "NTR24 (24/10)",
+     "url": "https://www.ntr24.tv/2026/10/24/benevento-lunedi-riprende-il-servizio-di-trasporto-scolastico/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/24/benevento-servizio-di-trasporto-scolastico-riprende-regolarmente-da-lunedi/"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/il-servizio-scuolabus-non-potra-essere-espletato-dalla-giornata-di-domani-venerdi-23-ottobre-nelle"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Da lunedì 26 ottobre il trasporto scolastico a Benevento riprende regolarmente. Vale sia per lo scuolabus nelle contrade, le zone di campagna fuori dal centro, sia per le navette degli alunni della scuola «Federico Torre». Lo comunicano il sindaco Clemente Mastella e il delegato all'Istruzione Marcello Palladino.",
+      "fonti": [
+       "Gazzetta di Benevento (24/10)",
+       "NTR24 (24/10)",
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-24"
+     },
+     {
+      "testo": "Il Comune spiega che il servizio riparte perché la crisi nell'approvvigionamento di carburante, che lo aveva fermato, è cessata. Prima della ripartenza ha ricevuto una comunicazione ufficiale dall'azienda che svolge il trasporto.",
+      "fonti": [
+       "Gazzetta di Benevento (24/10)",
+       "NTR24 (24/10)",
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-24"
+     },
+     {
+      "testo": "Da domani, venerdì 23 ottobre, a Benevento lo scuolabus non passa più nelle contrade, le zone di campagna fuori dal centro. Lo ha comunicato il Comune: il servizio non si può svolgere per la mancanza di carburante.",
+      "fonti": [
+       "NTR24",
+       "Gazzetta di Benevento",
+       "Ottopagine"
+      ],
+      "giorno": "2026-10-22"
+     },
+     {
+      "testo": "Il Comune parla di «note vicende nazionali» legate alla carenza di carburante. Sono i giorni dei blocchi degli autotrasportatori, che hanno lasciato a secco molti distributori nel Sannio.",
+      "fonti": [
+       "NTR24",
+       "Gazzetta di Benevento"
+      ],
+      "giorno": "2026-10-22"
+     },
+     {
+      "testo": "Se la crisi di rifornimento dura, dal 24 ottobre si fermano anche le navette che servono il plesso scolastico «Federico Torre». Ottopagine scrive che la ripresa dei collegamenti dipende da come evolve la situazione e dalla possibilità di avere di nuovo il carburante necessario.",
+      "fonti": [
+       "NTR24",
+       "Gazzetta di Benevento",
+       "Ottopagine"
+      ],
+      "giorno": "2026-10-22"
+     },
+     {
+      "testo": "Per le famiglie delle contrade vuol dire accompagnare i figli a scuola in altro modo.",
+      "fonti": [
+       "Ottopagine"
+      ],
+      "giorno": "2026-10-22"
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "22 ottobre",
+      "fatto": "Il Comune annuncia lo stop agli scuolabus nelle contrade dal 23 ottobre per mancanza di carburante.",
+      "fonti": [
+       "NTR24",
+       "Gazzetta di Benevento",
+       "Ottopagine"
+      ]
+     },
+     {
+      "data": "26 ottobre",
+      "fatto": "Il trasporto scolastico riprende regolarmente, nelle contrade e per la scuola «Federico Torre».",
+      "fonti": [
+       "Gazzetta di Benevento (24/10)",
+       "NTR24 (24/10)",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Lo stop agli scuolabus nelle contrade da venerdì 23 ottobre e quello alle navette del plesso «Federico Torre» dal 24 ottobre, se resta la crisi di carburante.",
+      "fonti": [
+       "NTR24",
+       "Gazzetta di Benevento",
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "La ripresa regolare del trasporto scolastico da lunedì 26 ottobre, nelle contrade e per le navette della scuola «Federico Torre», perché la crisi del carburante è finita.",
+      "fonti": [
+       "Gazzetta di Benevento (24/10)",
+       "NTR24 (24/10)",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Benevento, domani niente scuolabus nelle contrade a causa della carenza di carburante",
+      "url": "https://www.ntr24.tv/2026/10/22/benevento-domani-niente-scuolabus-nelle-contrade-a-causa-della-carenza-di-carburante/",
+      "data": "22 ott, 17:29"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "La nota del Comune con gli effetti che cominceranno a partire da domani",
+      "url": "https://www.ottopagine.it/bn/attualita/441875/carenza-di-carburante-a-benevento-stop-agli-scuolabus-nelle-contrade.shtml",
+      "data": "22 ott, 18:02"
+     },
+     {
+      "nome": "Gazzetta di Benevento (24/10)",
+      "titolo": "Da lunedì 26 ottobre il servizio di trasporto scolastico riprenderà regolarmente sia nelle contrade sia per le navette",
+      "url": "https://www.gazzettabenevento.it/it/da-lunedi-26-ottobre-il-servizio-di-trasporto-scolastico-riprendera-regolarmente-sia-nelle-contrade",
+      "data": "24 ott, 17:28"
+     },
+     {
+      "nome": "NTR24 (24/10)",
+      "titolo": "Benevento, lunedì riprende il servizio di trasporto scolastico",
+      "url": "https://www.ntr24.tv/2026/10/24/benevento-lunedi-riprende-il-servizio-di-trasporto-scolastico/",
+      "data": "24 ott, 17:43"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Benevento| Servizio di trasporto scolastico riprende regolarmente da lunedì",
+      "url": "https://www.beneventonews24.it/2026/10/24/benevento-servizio-di-trasporto-scolastico-riprende-regolarmente-da-lunedi/",
+      "data": "24 ott, 17:43"
+     },
+     {
+      "nome": "Gazzetta di Benevento",
+      "url": "https://www.gazzettabenevento.it/it/il-servizio-scuolabus-non-potra-essere-espletato-dalla-giornata-di-domani-venerdi-23-ottobre-nelle",
+      "titolo": "Il servizio scuolabus non potrà essere espletato dalla giornata di domani, venerdì 23 ottobre, nelle contrade cittadine",
+      "data": "22 ott, 17:07"
+     }
+    ],
+    "aggiornamento": {
+     "testo": "Sabato 24 ottobre il Comune ha annunciato che da lunedì 26 ottobre il trasporto scolastico, nelle contrade e per la scuola «Federico Torre», riprende regolarmente.",
+     "fonti": [
+      "Gazzetta di Benevento (24/10)",
+      "NTR24 (24/10)",
+      "BeneventoNews24"
+     ],
+     "quando": "2026-10-24T18:09+02:00",
+     "titolo_prima": "Benevento, da venerdì 23 ottobre niente scuolabus nelle contrade per la mancanza di carburante"
+    }
+   },
+   "foto": "scuolabus-4",
+   "archiviato_il": "2026-10-27"
+  },
+  {
+   "id": "benevento-via-intorcia-erba-rami-marciapiedi",
+   "titolo": "Benevento, via Intorcia: erba e rami coprono il marciapiede, i residenti chiedono la pulizia",
+   "titolo_google": "Benevento, via Intorcia con erba e rami sul marciapiede",
+   "sintesi": "In via Intorcia, la strada tra via Avellola e l'ospedale San Pio, erba e alberi hanno invaso il marciapiede e in parte la strada. Una residente segnala il problema a Lab TV e chiede la pulizia del verde.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento, via Intorcia",
+   "immagine": "degrado",
+   "pubblicato": "2026-10-24T14:21:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Lab TV",
+     "url": "https://www.labtv.net/attualita/2026/10/24/benevento-via-intorcia-invasa-dellerba-e-rami-la-segnalazione-dei-residenti-marciapiedi-impraticabili/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "In via Intorcia, a Benevento, erba e alberi hanno invaso il marciapiede. La via collega via Avellola all'ospedale San Pio. La segnalazione arriva da una residente, che ha scritto a Lab TV: secondo lei le piante coprono il marciapiede e creano disagi a chi abita lì e in parte alla circolazione.",
+      "fonti": [
+       "Lab TV"
+      ]
+     },
+     {
+      "testo": "Con il marciapiede quasi impraticabile, i pedoni sono costretti a scendere in strada, con il rischio che ne deriva, soprattutto per gli anziani e per chi va a piedi verso l'ospedale. I rami che sporgono, inoltre, entrano in parte nella carreggiata (la strada) e riducono la visibilità per le auto.",
+      "fonti": [
+       "Lab TV"
+      ]
+     },
+     {
+      "testo": "I residenti chiedono un intervento di pulizia e manutenzione del verde, che secondo loro non si può più rinviare. Lab TV ricorda che segnalazioni simili per il verde incolto in città erano già state raccolte altre volte.",
+      "fonti": [
+       "Lab TV"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Se il Comune è stato avvisato e quando potrebbe intervenire: l'articolo non lo dice."
+    ],
+    "fonti": [
+     {
+      "nome": "Lab TV",
+      "titolo": "Benevento, via Intorcia invasa dell’erba e rami, la segnalazione dei residenti: marciapiedi impraticabili",
+      "url": "https://www.labtv.net/attualita/2026/10/24/benevento-via-intorcia-invasa-dellerba-e-rami-la-segnalazione-dei-residenti-marciapiedi-impraticabili/",
+      "data": "24 ott, 14:21"
+     }
+    ]
+   },
+   "foto": "degrado-2",
+   "archiviato_il": "2026-10-27"
+  },
+  {
+   "id": "benevento-monumenti-aperti-2026-salvatore-rocca-rettori",
+   "titolo": "Benevento, Monumenti Aperti: visite alla chiesa del SS. Salvatore e alla Rocca dei Rettori con gli studenti come guide",
+   "titolo_google": "Monumenti Aperti 2026 a Benevento: Rocca e SS. Salvatore",
+   "sintesi": "A Benevento si è svolto Monumenti Aperti 2026: numerosi gruppi hanno visitato la chiesa del SS. Salvatore e la Rocca dei Rettori, con gli studenti di due istituti superiori come guide.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-24T13:21:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/monumenti-aperti-gioielli-cicerone/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Benevento si è svolto il progetto «Monumenti Aperti Benevento 2026». La chiesa del SS. Salvatore e la Rocca dei Rettori sono state visitate da numerosi gruppi di persone.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "L'iniziativa è di Filiberto Parente, consigliere nazionale delle ACLI, ed è stata organizzata con l'associazione Imago Mundi. Ha partecipato Ferdinando Creta, direttore emerito del Teatro Romano. Hanno fatto da guide gli studenti di due scuole superiori, il «Palmieri – Rampone – Polo» e il «Galilei – Vetrone», dopo un breve corso con i loro docenti.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Monumenti Aperti è alla trentesima edizione e in Italia si svolge soprattutto a maggio e giugno e poi da settembre a novembre. A Benevento ha avuto il sostegno, tra gli altri, della Provincia, il cui presidente Nino Lombardi ha detto di aver aderito anche per il valore del progetto del Ministero della Cultura e della Regione Campania per i musei della Rete della Provincia e per il Museo del Tempio della dea Iside.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "“Monumenti aperti”: alla scoperta di gioielli nascosti con ciceroni d’eccezione",
+      "url": "https://www.anteprima24.it/benevento/monumenti-aperti-gioielli-cicerone/",
+      "data": "24 ott, 13:21"
+     }
+    ]
+   },
+   "archiviato_il": "2026-10-27"
+  },
+  {
+   "id": "benevento-5-active-network-23-ottobre-palatedeschi",
+   "titolo": "Calcio a 5, Serie A: il Benevento 5 perde 1-0 in casa con l'Active Network, quarta sconfitta di fila",
+   "titolo_google": "Benevento 5-Active Network 0-1: quarto ko di fila",
+   "sintesi": "Venerdì 23 ottobre al PalaTedeschi il GG Team Wear Benevento 5 ha perso 1-0 con l'Active Network, gol di Calvanese a poco più di sette minuti dalla fine. È la quarta sconfitta consecutiva in Serie A.",
+   "categoria": "sport",
+   "sport": "calcio_a_5",
+   "zona": "benevento",
+   "luogo": "Benevento, PalaTedeschi",
+   "pubblicato": "2026-10-24T12:57:00+02:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Benevento 5",
+     "url": "https://ssdbenevento5.it/2026/10/22/serie-a-kinto-il-gg-team-wear-benevento-5-torna-al-palatedeschi-domani-ce-lactive-network/",
+     "ufficiale": true
+    },
+    {
+     "nome": "Benevento 5 (24/10)",
+     "url": "https://ssdbenevento5.it/2026/10/24/benevento-5-ancora-un-ko-lactive-network-passa-al-palatedeschi-nel-finale/",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il GG Team Wear Benevento 5 ha perso 1-0 in casa con l'Active Network nella partita di Serie A di venerdì 23 ottobre al PalaTedeschi. È la quarta sconfitta consecutiva dei giallorossi dell'allenatore Fausto Scarpitti. Il gol decisivo l'ha segnato Calvanese al 35' del secondo tempo, in superiorità numerica.",
+      "fonti": [
+       "Benevento 5 (24/10)"
+      ],
+      "giorno": "2026-10-23"
+     },
+     {
+      "testo": "Il primo tempo è finito 0-0, molto tattico. Scarpitti ha recuperato De Crescenzo per la prima volta in stagione, mentre è rimasto fuori Barichello. Il Benevento ha avuto le occasioni più grosse con Pires, che ha calciato a lato davanti al portiere. Nella ripresa si sono rese pericolose le due squadre, con Volonnino e ancora Pires per i padroni di casa.",
+      "fonti": [
+       "Benevento 5 (24/10)"
+      ],
+      "giorno": "2026-10-23"
+     },
+     {
+      "testo": "A 7 minuti e 34 secondi dalla fine l'arbitro ha mostrato il rosso diretto a Pires per un fallo su Guerini. Poco dopo il portiere del Benevento, Montefalcone, è uscito per infortunio dopo un intervento di Calvanese, e la squadra ha protestato. Subito dopo Calvanese ha segnato lo 0-1 su assist di Gabriel. Il Benevento ha attaccato con il portiere di movimento Volonnino, senza trovare il pari, e ha rischiato lo 0-2 per una traversa di Degan.",
+      "fonti": [
+       "Benevento 5 (24/10)"
+      ],
+      "giorno": "2026-10-23"
+     },
+     {
+      "testo": "Per Scarpitti nel secondo tempo «in campo ho visto soltanto il Benevento», e l'espulsione di Pires, a suo giudizio «un po' affrettata», ha pesato sul risultato. Il tecnico dice che il portiere è uscito dal campo con una mano rotta e che la squadra dovrà recuperare i tre punti a Sala Consilina. Arbitri Salvatore Pagano di Catania e Denis Prekaj di Treviglio.",
+      "fonti": [
+       "Benevento 5 (24/10)"
+      ],
+      "giorno": "2026-10-23"
+     },
+     {
+      "testo": "Torna la Serie A di calcio a 5 dopo la pausa e il GG Team Wear Benevento 5 gioca in casa. Venerdì 23 ottobre alle 20:30, al PalaTedeschi, i giallorossi dell'allenatore Fausto Scarpitti ospitano l'Active Network.",
+      "fonti": [
+       "Benevento 5"
+      ],
+      "giorno": "2026-10-22"
+     },
+     {
+      "testo": "La partita è arbitrata da Salvatore Pagano di Catania e Denis Prekaj di Treviglio; il cronometrista è Antonio Nappo. Si può vedere in diretta sul canale YouTube della Divisione Calcio a 5.",
+      "fonti": [
+       "Benevento 5"
+      ],
+      "giorno": "2026-10-22"
+     },
+     {
+      "testo": "In casa Benevento c'è il rientro di Davide De Crescenzo, che torna a disposizione dopo un lungo stop per infortunio. Le ultime due gare erano andate male: il 3 ottobre la sconfitta per 5-1 nel derby col Napoli e il 10 ottobre quella a Roma, contro la Roma 1927.",
+      "fonti": [
+       "Benevento 5"
+      ],
+      "giorno": "2026-10-22"
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quanto sia grave l'infortunio alla mano del portiere Montefalcone."
+    ],
+    "fonti": [
+     {
+      "nome": "Benevento 5",
+      "titolo": "Serie A KINTO, il GG Team Wear Benevento 5 torna al PalaTedeschi: domani c’è l’Active Network",
+      "url": "https://ssdbenevento5.it/2026/10/22/serie-a-kinto-il-gg-team-wear-benevento-5-torna-al-palatedeschi-domani-ce-lactive-network/",
+      "data": "22 ott, 18:56",
+      "ufficiale": true
+     },
+     {
+      "nome": "Benevento 5 (24/10)",
+      "url": "https://ssdbenevento5.it/2026/10/24/benevento-5-ancora-un-ko-lactive-network-passa-al-palatedeschi-nel-finale/",
+      "titolo": "Benevento 5, ancora un ko: l’Active Network passa al PalaTedeschi nel finale",
+      "data": "24 ott, 12:57",
+      "ufficiale": true
+     }
+    ],
+    "aggiornamento": {
+     "testo": "Venerdì 23 ottobre il Benevento 5 ha perso 1-0 in casa con l'Active Network, gol di Calvanese al 35' del secondo tempo dopo il rosso a Pires. È la quarta sconfitta di fila.",
+     "fonti": [
+      "Benevento 5 (24/10)"
+     ],
+     "quando": "2026-10-24T13:08+02:00"
+    }
+   },
+   "archiviato_il": "2026-10-27"
+  },
+  {
+   "id": "benevento-cisl-fp-sportello-precari-pubblica-amministrazione",
+   "titolo": "Benevento, la CISL FP apre uno sportello per i precari della pubblica amministrazione",
+   "titolo_google": "Benevento, sportello CISL FP per i precari della PA",
+   "sintesi": "La CISL FP Irpinia Sannio apre due sportelli per i lavoratori precari della pubblica amministrazione, uno a Benevento in via dei Longobardi 6 (martedì e giovedì) e uno ad Avellino.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "immagine": "sportello",
+   "pubblicato": "2026-10-24T12:30:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/24/precari-nella-pa-la-cisl-fp-irpinia-sannio-apre-due-sportelli-ad-avellino-e-benevento/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "La CISL FP Irpinia Sannio, il sindacato dei dipendenti pubblici, apre due sportelli per i lavoratori precari della pubblica amministrazione. A Benevento lo sportello sta in via dei Longobardi 6, al terzo piano, ed è aperto il martedì e il giovedì. Quello di Avellino è in piazza San Francesco d'Assisi 14, al primo piano, aperto il lunedì e il mercoledì.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Lo sportello è per i precari di tutti i comparti, non solo della sanità: Comuni, Province, amministrazioni dello Stato, enti pubblici e agenzie, in provincia di Benevento e di Avellino. Offre ascolto e assistenza sul proprio contratto, la verifica di anzianità di servizio e requisiti, informazioni sui concorsi e sulle norme, e la segnalazione di problemi sulla continuità del lavoro.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Il sindacato precisa che non promette stabilizzazioni (assunzioni a tempo indeterminato) automatiche: valuta caso per caso le possibilità di stabilizzazione o i percorsi di concorso. Vuole anche mappare il precariato nelle due province e verificare se gli enti hanno contato il personale precario e programmato le assunzioni. Ne parlano la segretaria generale Sonia Petrucciani e il segretario territoriale Massimo Fiore.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Da quando esattamente i due sportelli sono aperti e gli orari di apertura durante la giornata."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Precari nella PA, la CISL FP Irpinia Sannio apre due sportelli ad Avellino e Benevento",
+      "url": "https://www.ntr24.tv/2026/10/24/precari-nella-pa-la-cisl-fp-irpinia-sannio-apre-due-sportelli-ad-avellino-e-benevento/",
+      "data": "24 ott, 12:30"
+     }
+    ]
+   },
+   "foto": "sportello-2",
+   "archiviato_il": "2026-10-27"
+  },
+  {
+   "id": "benevento-unioncamere-terzo-trimestre-crescita-imprese-prima-italia",
+   "titolo": "Benevento prima in Italia per crescita delle imprese nel terzo trimestre: +0,60%, dice il Comune su dati Unioncamere",
+   "titolo_google": "Benevento prima in Italia per crescita delle imprese",
+   "sintesi": "Secondo i dati Unioncamere del terzo trimestre riportati dal Comune, Benevento è prima in Italia per tasso di crescita delle imprese: +0,60%, con 405 iscrizioni e 205 cessazioni.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-24T11:23:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/i-dati-ufficiali-di-unioncamere-relativi-al-terzo-trimestre-delineano-uno-scenario-di-assoluta"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/dati-unioncamere-benevento-prima-in-italia-mastella-e-ambrosone-con-la-nostra-amministrazione-risultati-di-crescita-economica-di-assoluta-eccellenza/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/442035/dati-unioncamere-benevento-da-primato-l-amministrazione-risultato-eccellente.shtml"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/24/trimestre-unioncamere-benevento-prima-in-italia-mastella-e-ambrosone-con-la-nostra-amministrazione-risultati-di-crescita-economica-di-assoluta-eccellenza/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Benevento è la prima città d'Italia per crescita delle imprese nel terzo trimestre dell'anno. Lo dicono i dati Unioncamere, l'ente che riunisce le Camere di commercio, riportati in una nota dal sindaco Clemente Mastella e dall'assessore alle Attività produttive Luigi Ambrosone. Il tasso di crescita è +0,60%, contro una media regionale di +0,16%.",
+      "fonti": [
+       "Gazzetta di Benevento",
+       "TV7 Benevento",
+       "Ottopagine",
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Nel trimestre ci sono state 405 nuove iscrizioni e 205 cessazioni, con un saldo positivo di 200 imprese. Secondo la nota del Comune dietro Benevento ci sono Roma al secondo posto, Aosta al terzo, Napoli al quarto e Milano al quinto.",
+      "fonti": [
+       "Ottopagine",
+       "Gazzetta di Benevento"
+      ]
+     },
+     {
+      "testo": "Mastella e Ambrosone parlano di un risultato «di assoluta eccellenza» e lo attribuiscono alle politiche dell'amministrazione per commercio, industria, agricoltura e artigianato. Ricordano che prima Benevento stava per decenni oltre la centesima posizione. Sono valutazioni del Comune: nei testi letti non c'è il numero totale delle imprese né il metodo di calcolo.",
+      "fonti": [
+       "Ottopagine",
+       "TV7 Benevento",
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Benevento prima in Italia nel terzo trimestre secondo Unioncamere, commento di Mastella e Ambrosone.",
+      "fonti": [
+       "Gazzetta di Benevento",
+       "TV7 Benevento",
+       "Ottopagine",
+       "NTR24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Il numero totale di imprese e come è calcolato il tasso di crescita: le fonti non lo dicono."
+    ],
+    "fonti": [
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "I dati ufficiali di Unioncamere relativi al terzo trimestre delineano uno scenario di assoluta eccellenza per ",
+      "url": "https://www.gazzettabenevento.it/it/i-dati-ufficiali-di-unioncamere-relativi-al-terzo-trimestre-delineano-uno-scenario-di-assoluta",
+      "data": "24 ott, 10:05"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Dati Unioncamere, Benevento prima in Italia, Mastella e Ambrosone: “Con la nostra Amministrazione risultati di crescita economica di assoluta eccellenza”",
+      "url": "https://www.tvsette.net/dati-unioncamere-benevento-prima-in-italia-mastella-e-ambrosone-con-la-nostra-amministrazione-risultati-di-crescita-economica-di-assoluta-eccellenza/",
+      "data": "24 ott, 10:21"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Dati Unioncamere: Benevento da primato, l'amministrazione \"risultato eccellente\"",
+      "url": "https://www.ottopagine.it/bn/attualita/442035/dati-unioncamere-benevento-da-primato-l-amministrazione-risultato-eccellente.shtml",
+      "data": "24 ott, 10:52"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Trimestre Unioncamere, Benevento prima in Italia. Mastella e Ambrosone: “Con la nostra Amministrazione risultati di crescita economica di assoluta eccellenza”",
+      "url": "https://www.ntr24.tv/2026/10/24/trimestre-unioncamere-benevento-prima-in-italia-mastella-e-ambrosone-con-la-nostra-amministrazione-risultati-di-crescita-economica-di-assoluta-eccellenza/",
+      "data": "24 ott, 11:23"
+     }
+    ]
+   },
+   "archiviato_il": "2026-10-27"
+  },
+  {
+   "id": "benevento-mensa-scolastica-centro-cottura-authentica-30-novembre",
+   "titolo": "Benevento, mensa scolastica: Authentica promette il centro di cottura in città, a Ponte Valentino, entro il 30 novembre",
+   "titolo_google": "Mensa scolastica a Benevento: cucina in città entro novembre",
+   "sintesi": "Authentica, la ditta della mensa scolastica di Benevento, ha detto alla commissione mensa che entro il 30 novembre cucinerà i pasti nell'ex centro di cottura Ristorò, nell'area Asi di Ponte Valentino. Il Comune ha intanto contestato alla ditta l'uso di aree senza i permessi.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "immagine": "mensa",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-24T07:13:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/24/mensa-scolastica-authentica-assicura-entro-il-30-novembre-il-centro-di-cottura-sara-trasferito-in-citta/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Entro il 30 novembre i pasti per le scuole di Benevento saranno cucinati in città, nell'area Asi di Ponte Valentino, alla periferia. Lo hanno garantito alla commissione mensa i responsabili di Authentica, la ditta che gestisce il servizio di mensa scolastica. Il centro di cottura sarà l'ex centro della società Ristorò.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "Oggi i pasti sono circa 1.500 al giorno in media, in questi primi giorni di servizio. Il giornale riferisce che c'è chi giudica le previsioni troppo ottimistiche, perché servono le autorizzazioni del Comune e soprattutto quelle sanitarie dell'ASL.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "La commissione mensa ha chiesto anche dove siano custoditi gli alimenti, ma la risposta sul sito esatto non è arrivata. Authentica ha assicurato che non stanno più nella parte nuova del centro di cottura di Beltiglio, che non ha i permessi edilizi e sanitari, ma sono divisi tra Beltiglio e il Conservatorio.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "La responsabile unica del procedimento (la dirigente comunale che segue l'appalto), Paola Reale, dice di aver attivato subito i controlli e di aver mandato ad Authentica una contestazione formale. Richiama la determina dirigenziale n. 13 del 13 ottobre 2026, che vieta in modo assoluto di usare aree o strutture senza i permessi edilizi e igienico-sanitari richiesti.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Se le autorizzazioni di Comune e ASL arriveranno in tempo per il 30 novembre.",
+     "Dove si trovino esattamente gli alimenti, secondo la commissione mensa."
+    ],
+    "fonti": [
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Mensa scolastica, Authentica assicura: entro il 30 novembre il centro di cottura sarà trasferito in città",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/24/mensa-scolastica-authentica-assicura-entro-il-30-novembre-il-centro-di-cottura-sara-trasferito-in-citta/",
+      "data": "24 ott, 07:13"
+     }
+    ]
+   },
+   "foto": "mensa-2",
+   "archiviato_il": "2026-10-27"
+  },
+  {
+   "id": "nel-cuore-del-sannio-dieci-comuni-riabitare-il-sud",
+   "titolo": "Dieci Comuni del Sannio, nasce «Nel Cuore del Sannio»: nidi, case per studenti e car sharing contro lo spopolamento",
+   "titolo_google": "Nel Cuore del Sannio: dieci Comuni contro lo spopolamento",
+   "sintesi": "Pietrelcina, Morcone, San Marco dei Cavoti e altri sette Comuni portano avanti una strategia per servizi, abitare e trasporti nelle aree interne. Il progetto N.C.S. vale 600mila euro e dura 40 mesi.",
+   "categoria": "altro",
+   "zona": "fortore",
+   "immagine": "borgo",
+   "luogo": "Pietrelcina, Morcone, San Marco dei Cavoti e altri Comuni",
+   "pubblicato": "2026-10-24T07:00:00+02:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/24/ritorno-al-futuro-nelle-aree-interne-nasce-nel-cuore-del-sannio-strategia-che-rivoluziona-i-servizi-e-contrasta-lo-spopolamento/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Dieci Comuni del Sannio lavorano insieme a una strategia per combattere lo spopolamento delle aree interne, chiamata «Nel Cuore del Sannio». Sono Pietrelcina, Pesco Sannita, San Marco dei Cavoti, Baselice, Molinara, Foiano di Val Fortore, Fragneto l'Abate, Campolattaro, Morcone e Sassinoro. Il piano nasce dal bando «Riabitare il Sud» della Fondazione Con il Sud.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Si allarga ora con il progetto «N.C.S. – Nidi, Cantieri, Spazi comuni», cofinanziato anche dall'Impresa Sociale Con i Bambini: vale 600mila euro in 40 mesi e punta a coinvolgere circa 400 minori da 0 a 17 anni. Prevede il nido comunale di San Marco dei Cavoti e un Polo 0-6, più le «Officine 1000 giorni» nelle Case della Comunità di San Marco dei Cavoti, Pietrelcina e Morcone, con l'ASL di Benevento, per accompagnare le famiglie dalla gravidanza ai tre anni del bambino.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Altri punti: spazi comuni per attività culturali, doposcuola e giovani in edifici già sistemati (Casa della Cultura di Campolattaro, Palazzo Lembo a Baselice, area vicina al Palavetro di Pietrelcina, ex Cinema Vittoria di Morcone); uno studentato diffuso con 14 posti tra San Marco dei Cavoti, Pietrelcina e Pesco Sannita; una piccola distribuzione organizzata per i prodotti dei piccoli agricoltori.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Sul fronte dei trasporti sono previsti un car sharing con 5-10 auto ibride, il car pooling di comunità per i circa 20.000 residenti e mezzi per il trasporto sociale di disabili, bambini e anziani. Il responsabile è il Consorzio Sale della Terra, con enti locali, Università del Sannio, ASL, cooperative e associazioni. Il Comune di Fragneto l'Abate ha aderito formalmente il 22 ottobre.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando partiranno i singoli servizi (nido, car sharing, studentato).",
+     "La notizia è nota solo da NTR24: non sono usciti altri articoli indipendenti."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Ritorno al futuro nelle aree interne: nasce “Nel Cuore del Sannio”, strategia che rivoluziona i servizi e contrasta lo spopolamento",
+      "url": "https://www.ntr24.tv/2026/10/24/ritorno-al-futuro-nelle-aree-interne-nasce-nel-cuore-del-sannio-strategia-che-rivoluziona-i-servizi-e-contrasta-lo-spopolamento/",
+      "data": "24 ott, 07:00"
+     }
+    ]
+   },
+   "foto": "borgo",
+   "archiviato_il": "2026-10-27"
+  },
+  {
+   "id": "benevento-inchiesta-comune-incidente-probatorio-3-novembre",
+   "titolo": "Inchiesta sul Comune di Benevento, l'incidente probatorio parte il 3 novembre e cambia un difensore dell'ex dirigente",
+   "titolo_google": "Inchiesta Comune di Benevento, incidente probatorio il 3 novembre",
+   "sintesi": "Nell'inchiesta sul Comune di Benevento l'incidente probatorio comincerà il 3 novembre. Altra Benevento è Possibile dice di aver consegnato alla Procura un esposto sui 17 concorsi del 2023-2025.",
+   "categoria": "cronaca",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-24T06:30:00+02:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/441971/inchiesta-sul-comune-un-nuovo-difensore-per-l-ex-dirigente-gennaro-santamaria.shtml"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/24/concorsi-al-comune-corona-esposto-in-procura-non-finira-a-tarallucci-e-vino-2-321-partecipanti-ingannati/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Sul fronte dei concorsi del Comune, venerdì sera Gabriele Corona, referente dell'associazione Altra Benevento è Possibile, ha tenuto una conferenza stampa e ha detto di aver consegnato alla Procura un esposto sui 17 concorsi banditi dal Comune di Benevento tra il 2023 e il 2025, ai quali hanno partecipato 2.321 persone. Il suo lavoro parte, dice, dalle dichiarazioni e dagli appunti dell'ex dirigente comunale.",
+      "fonti": [
+       "NTR24"
+      ],
+      "giorno": "2026-10-24"
+     },
+     {
+      "testo": "Secondo Corona, su 27 posti messi a bando 24 vincitori sarebbero in un elenco di 125 persone segnalate, annotato dall'ex dirigente, e per gli scorrimenti delle graduatorie le assunzioni sarebbero salite a 63. Sono affermazioni dell'associazione: la Procura sta ancora verificando le dichiarazioni dell'ex dirigente e, secondo Corona, accanto ai magistrati lavorano Carabinieri e Guardia di Finanza.",
+      "fonti": [
+       "NTR24"
+      ],
+      "giorno": "2026-10-24"
+     },
+     {
+      "testo": "Nell'inchiesta sul Comune di Benevento l'ex dirigente comunale, arrestato dai carabinieri il 30 marzo e dal 28 settembre in libertà per una presunta concussione ai danni di un geometra, ha cambiato avvocato. Lo scrive Ottopagine: un legale che lo seguiva da circa sette mesi non è più suo difensore e al suo posto è subentrato un avvocato del Foro di Avellino, che lavorerà con il collega già in squadra.",
+      "fonti": [
+       "Ottopagine"
+      ],
+      "giorno": "2026-10-23"
+     },
+     {
+      "testo": "Secondo il giornale all'ex dirigente sono contestati 70mila euro che avrebbe preteso dal geometra, amministratore di una società di progettazione, per sbloccare alcune pratiche edilizie.",
+      "fonti": [
+       "Ottopagine"
+      ],
+      "giorno": "2026-10-23"
+     },
+     {
+      "testo": "L'incidente probatorio, cioè la fase in cui si raccolgono prove prima del processo con le difese presenti, comincerà il 3 novembre davanti alla gip Maria Amoruso. In quella sede l'ex dirigente dovrà ripetere le sue dichiarazioni rispondendo anche alle domande delle difese.",
+      "fonti": [
+       "Ottopagine"
+      ],
+      "giorno": "2026-10-23"
+     },
+     {
+      "testo": "La gip dovrà anche decidere su un'altra richiesta di incidente probatorio, depositata da un avvocato dopo l'udienza del 9 ottobre: riguarda la copia forense (la copia completa dei dati) di telefoni e computer di sedici dei diciannove indagati. Una ventesima posizione è stata stralciata per motivi di salute. Gli indagati sono funzionari e dipendenti del Comune e della Regione, tecnici, imprenditori e due sindaci della provincia; le ipotesi di reato vanno, a vario titolo, dalla concussione alla corruzione, dalla ricettazione alla violazione della legge sul finanziamento ai partiti.",
+      "fonti": [
+       "Ottopagine"
+      ],
+      "giorno": "2026-10-23"
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "23 ottobre",
+      "fatto": "Conferenza stampa di Altra Benevento è Possibile e consegna dell'esposto alla Procura, secondo Corona.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "data": "3 novembre",
+      "fatto": "Inizio dell'incidente probatorio davanti alla gip.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     }
+    ],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Se la gip accoglierà la richiesta di perizia sui dispositivi.",
+     "Quando finirà l'incidente probatorio."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Inchiesta sul Comune, un nuovo difensore per l'ex dirigente [nome omesso]",
+      "url": "https://www.ottopagine.it/bn/cronaca/441971/inchiesta-sul-comune-un-nuovo-difensore-per-l-ex-dirigente-gennaro-santamaria.shtml",
+      "data": "23 ott, 16:28"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Concorsi al Comune, Corona: “Esposto in Procura, non finirà a tarallucci e vino. 2.321 partecipanti ingannati”",
+      "url": "https://www.ntr24.tv/2026/10/24/concorsi-al-comune-corona-esposto-in-procura-non-finira-a-tarallucci-e-vino-2-321-partecipanti-ingannati/",
+      "data": "24 ott, 06:30"
+     }
+    ],
+    "aggiornamento": {
+     "testo": "Venerdì 23 ottobre Altra Benevento è Possibile ha annunciato un esposto alla Procura sui 17 concorsi del Comune tra il 2023 e il 2025; le cifre sono quelle dell'associazione, non ancora verificate dalla Procura.",
+     "fonti": [
+      "NTR24"
+     ],
+     "quando": "2026-10-24T07:10+02:00"
+    }
+   },
+   "archiviato_il": "2026-10-27"
+  },
+  {
    "id": "benevento-cloud-finance-nuova-sede-via-collevaccino",
    "titolo": "Benevento, inaugurata in via Pietro Collevaccino la nuova sede di Cloud Finance",
    "titolo_google": "Benevento, nuova sede di Cloud Finance in via Collevaccino",
@@ -1610,6 +3176,84 @@
    "archiviato_il": "2026-10-26"
   },
   {
+   "id": "benevento-corsa-don-pompilio-divieti-sosta-24-ottobre",
+   "titolo": "Benevento, sabato 24 ottobre corsa podistica nel Rione Ferrovia: divieto di sosta dalle 10:30 e strade chiuse dalle 15",
+   "titolo_google": "Benevento, corsa nel Rione Ferrovia: divieti e strade chiuse",
+   "sintesi": "Sabato 24 ottobre a Benevento, per la corsa «Trofeo Don Pompilio» (inizio alle 16:30), da mattina vale il divieto di sosta in viale Principe di Napoli e nelle strade vicine; dalle 15 il circuito di gara è chiuso al traffico.",
+   "categoria": "strade",
+   "zona": "benevento",
+   "luogo": "Benevento, Rione Ferrovia",
+   "pubblicato": "2026-10-23T11:34:00+02:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Comune di Benevento",
+     "url": "https://comune.benevento.it/novita/corsa-podistica-in-memoria-di-don-pompilio-a-rione-ferrovia-c-il-piano-traffico/",
+     "ufficiale": true
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/23/corsa-podistica-in-memoria-di-don-pompilio-a-rione-ferrovia-ce-il-piano-traffico/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Sabato 24 ottobre 2026, dalle 16:30, nel Rione Ferrovia di Benevento si corre la seconda «Corsa Santa Maria di Costantinopoli – Trofeo Don Pompilio», una gara podistica. Il circuito è di 3,3 chilometri, da ripetere tre volte in entrambi i sensi di marcia, per un totale di 10 chilometri. Passa da viale Principe di Napoli, piazza Bissolati e via Grimoaldo Re.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "Per la gara il Comune ha firmato un'ordinanza. Dalle 10:30 e fino alla fine della manifestazione (prevista tra le 18:30 e le 19) c'è il divieto di sosta e fermata, con rimozione dei veicoli, su tutto viale Principe di Napoli, in via Padre de Giovanni, in via Grimoaldo Re e in piazza Bissolati (lato dei numeri civici pari). Il divieto vale anche per i residenti e per chi ha permessi: il Comune li invita a cercare un altro posto per l'auto.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "Dalle 15 e fino alla fine della gara le strade del circuito sono chiuse al traffico. Chiudono anche tratti di via San Giovanni di Dio (tra via Fatebenefratelli e via Romoaldo II), via Vittorio Veneto (tra via Fatebenefratelli e viale Principe di Napoli), via Adua (tra via De Longis e viale Principe di Napoli), via Nuzzolo (tra via Diacono e via Adua) e via Leonardo Bianchi.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "Piazza Bissolati è percorsa dai podisti solo in una corsia, quella verso il ponte Vanvitelli. L'altra resta libera per le auto e per arrivare al pronto soccorso dell'ospedale Fatebenefratelli, in via Paga. L'organizzatore deve anche lasciare corridoi per i mezzi di soccorso. Come parcheggio alternativo il Comune indica, tra le altre, via Paga, via XXV Luglio, via Valfortore, via Mariano Russo, via Diacono e il parcheggio del Pala Parente. I bus AIR della zona cambiano percorso: se ne parla nella notizia dedicata.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Se i divieti del mattino valgano davvero fino alle 10:30 o inizino prima per i cantieri: il Comune parla di attuazione «graduale e progressiva»."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Benevento",
+      "titolo": "Corsa podistica in memoria di don Pompilio a Rione Ferrovia, c’è il piano traffico",
+      "url": "https://comune.benevento.it/novita/corsa-podistica-in-memoria-di-don-pompilio-a-rione-ferrovia-c-il-piano-traffico/",
+      "data": "23 ott, 09:29",
+      "ufficiale": true
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Corsa podistica in memoria di don Pompilio a Rione Ferrovia, c’è il piano traffico",
+      "url": "https://www.ntr24.tv/2026/10/23/corsa-podistica-in-memoria-di-don-pompilio-a-rione-ferrovia-ce-il-piano-traffico/",
+      "data": "23 ott, 11:34"
+     }
+    ]
+   },
+   "immagine": "divieto-sosta",
+   "in_vigore_fino": "2026-10-24",
+   "traffico": "chiusa",
+   "in_vigore_dal": "2026-10-24",
+   "foto": "divieto-sosta-2",
+   "archiviato_il": "2026-10-27"
+  },
+  {
    "id": "vaccini-farmacie-asl-benevento-avellino-alaia",
    "titolo": "Vaccini in farmacia, Alaia denuncia le dosi ferme; ASL, Federfarma e farmacisti: antinfluenzali già disponibili in provincia di Benevento",
    "titolo_google": "Vaccini antinfluenzali in farmacia, l'ASL: dosi disponibili",
@@ -2499,6 +4143,74 @@
    },
    "foto": "argini-4",
    "archiviato_il": "2026-10-25"
+  },
+  {
+   "id": "benevento-air-bus-deviazioni-rione-ferrovia-24-ottobre",
+   "titolo": "Benevento, sabato 24 ottobre dalle 15 alle 19 i bus AIR delle linee 01, 05, 07 e 11 cambiano percorso per una gara podistica",
+   "titolo_google": "Benevento, bus AIR deviati sabato 24 ottobre per la corsa",
+   "sintesi": "Sabato 24 ottobre, dalle 15 alle 19, quattro linee urbane di AIR Campania a Benevento seguono un percorso diverso e le fermate di viale Principe di Napoli sono soppresse, per la gara podistica nel Rione Ferrovia.",
+   "categoria": "strade",
+   "zona": "benevento",
+   "luogo": "Benevento, Rione Ferrovia",
+   "pubblicato": "2026-10-22T16:31:00+02:00",
+   "in_vigore_fino": "2026-10-24",
+   "traffico": "bus",
+   "in_vigore_dal": "2026-10-24",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "AIR Campania",
+     "url": "https://aircampania.it/benevento-deviazioni-temporanee-alle-percorrenze/",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Sabato 24 ottobre 2026, dalle 15 alle 19 e comunque fino a quando la viabilità torna regolare, le linee 01-UB, 05-UB, 07-UB e 11-UB di AIR Campania, la società dei bus extraurbani e urbani, cambiano percorso a Benevento. Tutte le fermate di viale Principe di Napoli sono soppresse.",
+      "fonti": [
+       "AIR Campania"
+      ]
+     },
+     {
+      "testo": "Il motivo è un'ordinanza del Comune di Benevento (la n. 429 del 20 ottobre, del Servizio Traffico) che limita il traffico in viale Principe di Napoli, piazza Bissolati, via Grimoaldo Re e via Campagna, nel Rione Ferrovia, per la seconda edizione della gara podistica «Corsa di Santa Maria di Costantinopoli – Trofeo Don Pompilio».",
+      "fonti": [
+       "AIR Campania"
+      ]
+     },
+     {
+      "testo": "Le corse delle linee 01, 07 e 11 in partenza da via Diacono vanno su via Nuzzolo, viale Virgilio, rotonda dei Pentri, contrada Pezzapiana, via Abete, via Valfortore, via dei Longobardi, via Vittime di Nassiriya, via del Pomerio e via Vittorio Emanuele III, poi tornano sul percorso normale. Quelle in arrivo a via Diacono passano da via del Pomerio, via Vittime di Nassiriya, via dei Longobardi, via Battaglia di Benevento, via XXV Luglio e via Mariano Russo. Anche la linea 05, da e per il centro commerciale «I Sanniti», ha deviazioni simili.",
+      "fonti": [
+       "AIR Campania"
+      ]
+     },
+     {
+      "testo": "Per chi abita o va nel Rione Ferrovia le fermate alternative sono in via XXV Luglio e in via Diacono.",
+      "fonti": [
+       "AIR Campania"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "L'orario di partenza e di arrivo della gara: l'avviso AIR dà solo la fascia delle deviazioni."
+    ],
+    "fonti": [
+     {
+      "nome": "AIR Campania",
+      "titolo": "Benevento: deviazioni temporanee alle percorrenze",
+      "url": "https://aircampania.it/benevento-deviazioni-temporanee-alle-percorrenze/",
+      "data": "22 ott, 16:31",
+      "ufficiale": true
+     }
+    ]
+   },
+   "immagine": "autobus",
+   "foto": "autobus-14",
+   "archiviato_il": "2026-10-27"
   },
   {
    "id": "trenitalia-carnet-smart-working",
@@ -5486,6 +7198,87 @@
     "aggiornato": "2026-10-21T22:32+02:00"
    },
    "archiviato_il": "2026-10-24"
+  },
+  {
+   "id": "benevento-via-annunziata-chiusa-sabato-24-ottobre",
+   "titolo": "Benevento, via Annunziata chiusa al traffico sabato 24 ottobre mattina tra via Pellegrini e via Borgia",
+   "titolo_google": "Benevento, via Annunziata chiusa sabato 24 ottobre",
+   "sintesi": "Sabato 24 ottobre, dalle 9:30 fino alle 13:30-14:00, il tratto di via Annunziata tra via Tenente Pellegrini e via Borgia sarà chiuso ai veicoli, tranne residenti, garage e mezzi di soccorso.",
+   "categoria": "strade",
+   "immagine": "strada-chiusa",
+   "zona": "benevento",
+   "luogo": "Benevento, via Annunziata",
+   "pubblicato": "2026-10-21",
+   "in_vigore_fino": "2026-10-24",
+   "traffico": "chiusa",
+   "in_vigore_dal": "2026-10-24",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "fonti": [
+    {
+     "nome": "Albo pretorio Benevento",
+     "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80002",
+     "ufficiale": true
+    },
+    {
+     "nome": "Comune di Benevento",
+     "url": "https://comune.benevento.it/novita/lavori-edilizi-sabato-mattina-interdizione-al-traffico-per-un-tratto-di-via-annunziata/",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Comune di Benevento spiega che la chiusura serve per posizionare un'autogru (un mezzo con braccio per sollevare materiali) e lavorare in sicurezza al completamento della ristrutturazione di un palazzo al civico 11 di via Annunziata. Sabato 24 ottobre il tratto resta chiuso dalle 9:30 alle 13:30, salvo fine anticipata dei lavori. Il divieto di sosta e fermata, con rimozione, vale tra i civici 8 e 4, anche per i residenti con permesso nella zona a traffico limitato.",
+      "fonti": [
+       "Comune di Benevento"
+      ],
+      "giorno": "2026-10-23"
+     },
+     {
+      "testo": "Sabato 24 ottobre 2026 un tratto di via Annunziata, a Benevento, resta chiuso ai veicoli dalle 9:30. Il tratto va dall'incrocio con via Tenente Pellegrini a quello con via Borgia. Possono passare solo residenti, chi ha il garage in quel tratto, i mezzi di soccorso e quelli d'emergenza.",
+      "fonti": [
+       "Albo pretorio Benevento"
+      ],
+      "giorno": "2026-10-21"
+     },
+     {
+      "testo": "La chiusura dura fino a quando finisce un intervento, che l'ordinanza prevede si concluda non oltre le 13:30-14:00. Nel solo tratto vicino al civico 6 c'è anche il divieto di sosta e fermata con rimozione, valido per tutti, compresi i titolari del permesso per la zona a traffico limitato Annunziata. L'ordinanza è la n. 430 del Servizio Traffico, del 21 ottobre.",
+      "fonti": [
+       "Albo pretorio Benevento"
+      ],
+      "giorno": "2026-10-21"
+     }
+    ],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Albo pretorio Benevento",
+      "titolo": "Chiusura al traffico veicolare del tratto di Via Annunziata compreso tra l'incrocio con Via Tenente Pellegrini e l'incrocio con Via Borgia, eccetto residenti, titolari di autorimesse nel suddetto segmento interessato, mezzi di soccorso e mezzi d'emergenza, ed istituzione, nel solo tratto adiacente il civico 6 di Via Annunziata, divieto di sosta e fermata, con rimozione e valenza ambo i lati anche nei confronti dei titolari di Autorizzazione Transito e Sosta in Ztl Annunziata, limitatamente alla mattinata di Sabato 24 Ottobre 2026, a partire dalle ore 9:30 fino a cessate esigenze subordinate all'avvenuta esecuzione dell'intervento con conclusione prevista non oltre le ore 13:30 / 14:00",
+      "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80002",
+      "data": "21 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "Comune di Benevento",
+      "titolo": "Lavori edilizi, sabato mattina interdizione al traffico per un tratto di via Annunziata",
+      "url": "https://comune.benevento.it/novita/lavori-edilizi-sabato-mattina-interdizione-al-traffico-per-un-tratto-di-via-annunziata/",
+      "data": "22 ott, 10:50",
+      "ufficiale": true
+     }
+    ],
+    "aggiornamento": {
+     "testo": "Il Comune ha chiarito il motivo: serve una autogru per i lavori di ristrutturazione di un palazzo al civico 11; la chiusura va dalle 9:30 alle 13:30.",
+     "fonti": [
+      "Comune di Benevento"
+     ],
+     "quando": "2026-10-23T12:11+02:00"
+    }
+   },
+   "foto": "strada-chiusa",
+   "archiviato_il": "2026-10-27"
   },
   {
    "id": "benevento-tangenziale-est-scontro-tre-veicoli-20-ottobre",
