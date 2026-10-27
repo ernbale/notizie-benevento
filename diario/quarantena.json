@@ -1,3 +1,66 @@
 {
- "voci": []
+ "voci": [
+  {
+   "tipo": "notizia",
+   "id": "arpaia-parcheggio-cimitero-chiuso-28-ottobre",
+   "quando": "2026-10-27T18:12+00:00",
+   "stato": "tolta (era nuova)",
+   "impronta_pubblicata": "",
+   "errori": [
+    "arpaia-parcheggio-cimitero-chiuso-28-ottobre: parla di una chiusura decisa da un Comune, che la pubblica il giro Chiusure (pagina Scuole chiuse e social): togli la notizia e nel diario scrivi «chiusure» (AGENTE.md, «Le Allerte»)"
+   ],
+   "versione_scartata": {
+    "id": "arpaia-parcheggio-cimitero-chiuso-28-ottobre",
+    "titolo": "Arpaia, mercoledì 28 ottobre chiuso il parcheggio del cimitero fino alle 14 per il taglio dell'erba",
+    "titolo_google": "Arpaia, parcheggio del cimitero chiuso il 28 ottobre",
+    "sintesi": "Mercoledì 28 ottobre, dalle 5 alle 14, il parcheggio vicino al cimitero di Arpaia, usato anche da chi prende il treno o il bus, è chiuso alle auto e c'è il divieto di sosta: una ditta taglia l'erba e pota gli arbusti.",
+    "categoria": "strade",
+    "zona": "caudina",
+    "immagine": "parcheggio",
+    "luogo": "Arpaia",
+    "pubblicato": "2026-10-27",
+    "stato": "ufficiale",
+    "rilevante": false,
+    "importanza": 2,
+    "in_vigore_fino": "2026-10-28",
+    "in_vigore_dal": "2026-10-28",
+    "fonti": [
+     {
+      "nome": "Comune di Arpaia",
+      "url": "https://halleyweb.com/c062005/mc/mc_p_dettaglio.php?id_pubbl=9521",
+      "ufficiale": true
+     }
+    ],
+    "articolo": {
+     "racconto": [
+      {
+       "testo": "Mercoledì 28 ottobre, dalle 5 alle 14, ad Arpaia è chiuso alle auto il parcheggio comunale vicino al cimitero, quello che usano anche i viaggiatori, e lì non si può lasciare la macchina. Lo ha deciso il Comune con un'ordinanza.",
+       "fonti": [
+        "Comune di Arpaia"
+       ]
+      },
+      {
+       "testo": "Il motivo è la pulizia delle aiuole: la ditta Ecojunk taglierà l'erba e poterà gli arbusti delle zone verdi del parcheggio, e il Comune vuole evitare danni alle auto parcheggiate.",
+       "fonti": [
+        "Comune di Arpaia"
+       ]
+      }
+     ],
+     "cronologia": [],
+     "concordano": [],
+     "divergono": [],
+     "non_si_sa": [],
+     "fonti": [
+      {
+       "nome": "Comune di Arpaia",
+       "titolo": "Divieto di sosta e chiusura al traffico veicolare per il giorno 28.10.2026 dalle 05,00 alle ore 14,00 del parcheggio a servizio del cimitero comunale.",
+       "url": "https://halleyweb.com/c062005/mc/mc_p_dettaglio.php?id_pubbl=9521",
+       "data": "27 ott",
+       "ufficiale": true
+      }
+     ]
+    }
+   }
+  }
+ ]
 }

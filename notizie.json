@@ -1,7 +1,220 @@
 {
- "aggiornato": "2026-10-27T18:14+01:00",
+ "aggiornato": "2026-10-27T19:12+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "san-giorgio-del-sannio-frontale-tangenziale-quattro-feriti",
+   "titolo": "San Giorgio del Sannio, scontro frontale sulla rampa della tangenziale: quattro persone in ospedale, non gravi",
+   "titolo_google": "San Giorgio del Sannio, frontale sulla tangenziale: 4 feriti",
+   "sintesi": "Martedì 27 ottobre, nel tardo pomeriggio, due auto si sono scontrate frontalmente sulla rampa della tangenziale all'ingresso di San Giorgio del Sannio. Le quattro persone a bordo sono state portate in ospedale, ma non sono in pericolo. Lunghe code sul raccordo e su via dei Sanniti.",
+   "categoria": "cronaca",
+   "zona": "provincia",
+   "luogo": "San Giorgio del Sannio",
+   "pubblicato": "2026-10-27T18:49+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 4,
+   "fonti": [
+    {
+     "nome": "Lab TV",
+     "url": "https://www.labtv.net/cronaca/2026/10/27/uscita-tangenziale-san-giorgio-del-sannio-frontale-tra-due-auto/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Martedì 27 ottobre, nel tardo pomeriggio, due auto si sono scontrate frontalmente sulla rampa della tangenziale all'ingresso di San Giorgio del Sannio. Le persone coinvolte sono quattro: chi guidava una Mazda e le tre persone che viaggiavano su una Fiat Panda. Sono state tutte portate in ospedale, ma nessuna è in pericolo.",
+      "fonti": [
+       "Lab TV"
+      ]
+     },
+     {
+      "testo": "Con ogni probabilità una delle due auto andava verso Benevento e l'altra verso San Giorgio. Perché si siano scontrate lo stanno ancora ricostruendo i Carabinieri, intervenuti sul posto insieme ai Vigili del fuoco.",
+      "fonti": [
+       "Lab TV"
+      ]
+     },
+     {
+      "testo": "Dopo l'incidente il traffico si è bloccato: lunghe file di auto hanno fermato sia il raccordo autostradale sia via dei Sanniti, all'ingresso del paese.",
+      "fonti": [
+       "Lab TV"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Che cosa ha causato lo scontro.",
+     "A che ora il traffico è tornato normale."
+    ],
+    "fonti": [
+     {
+      "nome": "Lab TV",
+      "titolo": "Uscita tangenziale San Giorgio del Sannio: frontale tra due auto",
+      "url": "https://www.labtv.net/cronaca/2026/10/27/uscita-tangenziale-san-giorgio-del-sannio-frontale-tra-due-auto/",
+      "data": "27 ott, 18:49"
+     }
+    ]
+   }
+  },
+  {
+   "id": "san-giorgio-del-sannio-appalto-rifiuti-dda-rinvio-giudizio-34",
+   "titolo": "Appalti tra Benevento e Caserta, la Dda chiede il processo per 34 persone: nel Sannio c'è la gara dei rifiuti di San Giorgio",
+   "titolo_google": "Appalto rifiuti San Giorgio del Sannio, chiesto processo per 34",
+   "sintesi": "Il pm della Direzione distrettuale antimafia ha chiesto il rinvio a giudizio di 34 persone nell'indagine dei Carabinieri su una serie di appalti tra le province di Caserta e Benevento. Per il Sannio riguarda la gara del 2022 per la raccolta dei rifiuti a San Giorgio del Sannio. L'udienza preliminare davanti al gup di Napoli è fissata per il 18 gennaio 2027.",
+   "categoria": "cronaca",
+   "zona": "provincia",
+   "luogo": "San Giorgio del Sannio",
+   "pubblicato": "2026-10-27T18:50+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 4,
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/442343/appalti-tra-benevento-e-caserta-dda-chiede-il-rinvio-a-giudizio-di-34-persone.shtml"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il pubblico ministero della Dda, la Direzione distrettuale antimafia, ha chiesto il rinvio a giudizio di 34 persone nell'indagine dei Carabinieri su una serie di appalti tra le province di Caserta e Benevento, emersa più di un anno fa. Il 18 gennaio 2027 ci sarà l'udienza preliminare davanti al gup di Napoli, il giudice che dovrà decidere se mandare gli imputati a processo o chiudere il caso per loro.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Per il Sannio l'inchiesta riguarda la gara del Comune di San Giorgio del Sannio per la raccolta dei rifiuti, nel 2022. In questa parte dell'indagine sono chiamate in causa sei persone, tra cui l'ex sindaco del paese e il presidente della commissione di gara. Vengono da Rotondi, San Martino Sannita, Bucciano, Montesarchio e Paolisi.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Secondo l'accusa il rappresentante di un'impresa entrata nella gara attraverso un consorzio avrebbe dato 10mila euro a testa all'allora sindaco e al presidente della commissione per ottenere l'appalto: per gli inquirenti era il presunto acconto di una somma di 90mila euro da pagare dopo. La gara però l'aveva vinta un'impresa di Ravenna, con il consorzio secondo per un errore nell'offerta: a quel punto, sempre secondo l'accusa, l'imprenditore avrebbe chiesto ai due di escludere la ditta vincitrice. Ad altre tre persone l'accusa dà il ruolo di presunti agevolatori, che avrebbero organizzato gli incontri e accompagnato l'imprenditore.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Uno degli incontri, davanti a un bar di Napoli, è stato ripreso dalla telecamera del locale: secondo l'accusa l'imprenditore avrebbe infilato una busta nello zaino dell'ex sindaco. Nell'interrogatorio l'ex sindaco ha sostenuto di aver pensato che fosse materiale pubblicitario su un impianto per i rifiuti, di aver trovato i soldi solo una volta a casa e di averli restituiti.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "27 ottobre",
+      "fatto": "Il pm della Dda chiede il rinvio a giudizio di 34 persone.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "data": "18 gennaio 2027",
+      "quando": "2027-01-18",
+      "fatto": "Udienza preliminare davanti al gup di Napoli.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     }
+    ],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quali reati contesta l'accusa nella parte dell'indagine che riguarda il Sannio.",
+     "Quali sono gli altri appalti dell'inchiesta nella provincia di Caserta."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Appalti tra Benevento e Caserta, Dda chiede il rinvio a giudizio di 34 persone",
+      "url": "https://www.ottopagine.it/bn/cronaca/442343/appalti-tra-benevento-e-caserta-dda-chiede-il-rinvio-a-giudizio-di-34-persone.shtml",
+      "data": "27 ott, 18:50"
+     }
+    ]
+   }
+  },
+  {
+   "id": "pannarano-corso-bls-d-defibrillatore-28-ottobre",
+   "titolo": "Pannarano, mercoledì 28 ottobre corso di primo soccorso e defibrillatore aperto ai cittadini",
+   "titolo_google": "Corso di primo soccorso a Pannarano il 28 ottobre",
+   "sintesi": "Mercoledì 28 ottobre alle 18.30, nella sala consiliare del Comune di Pannarano, c'è un corso base di primo soccorso con l'uso del defibrillatore, per adulti e bambini. Lo organizzano i volontari della Protezione civile comunale con il sindaco ed è aperto anche ai cittadini.",
+   "categoria": "altro",
+   "zona": "caudina",
+   "immagine": "protezione-civile",
+   "luogo": "Pannarano",
+   "pubblicato": "2026-10-27T18:35+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 2,
+   "in_vigore_fino": "2026-10-28",
+   "fonti": [
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/pannarano-corso-bls-d-e-pbls-d/"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/27/pannarano-mercoledi-il-corso-bls-d-e-pbls-d/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Mercoledì 28 ottobre alle 18.30, nella sala consiliare del Comune di Pannarano, in Valle Caudina, si tiene un corso base di primo soccorso: il BLS-D e il PBLS-D, cioè le manovre per rianimare un adulto o un bambino, anche con il defibrillatore. Possono partecipare, oltre ai volontari della Protezione civile, anche i cittadini interessati: le richieste sono state tante, soprattutto da parte delle mamme.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Il corso lo tengono esperti del settore. Oltre al massaggio cardiaco con e senza defibrillatore, mostreranno le manovre per liberare le vie respiratorie di adulti e bambini quando qualcosa va di traverso, e si parlerà di incidenti in casa e di come comportarsi nelle emergenze.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Lo ha organizzato, insieme al sindaco Antonio Iavarone, il generale Attilio Claudio Borreca, che coordina il gruppo comunale dei volontari di Protezione civile. Per lui corsi così andrebbero ripetuti spesso, perché in un'emergenza fanno la differenza e rendono il paese più preparato.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Il corso il 28 ottobre alle 18.30 nella sala consiliare, aperto ai cittadini, con le manovre per adulti e bambini.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Se serve iscriversi prima e se il corso dà un attestato."
+    ],
+    "fonti": [
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Pannarano, corso di formazione Bls-d e Pbls-d: “Insieme per sicurezza e salute”",
+      "url": "https://www.cronachedelsannio.it/sannionews24/pannarano-corso-bls-d-e-pbls-d/",
+      "data": "27 ott, 18:35"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Pannarano, mercoledì il corso BLS-D e PBLS-D",
+      "url": "https://www.ntr24.tv/2026/10/27/pannarano-mercoledi-il-corso-bls-d-e-pbls-d/",
+      "data": "27 ott, 18:13"
+     }
+    ]
+   },
+   "foto": "protezione-civile-9"
+  },
   {
    "id": "benevento-catanzaro-formazioni-ufficiali-27-ottobre",
    "titolo": "Serie B, Benevento-Catanzaro: le formazioni ufficiali",
@@ -1515,7 +1728,7 @@
     },
     {
      "nome": "BeneventoNews24",
-     "url": "https://www.beneventonews24.it/2026/10/26/formedil-benevento-cantieri-sicuri-domani-la-presentazione-del-camper-mobile-per-la-sicurezza-nei-cantieri-edili/?utm_source=rss&utm_medium=rss&utm_campaign=formedil-benevento-cantieri-sicuri-domani-la-presentazione-del-camper-mobile-per-la-sicurezza-nei-cantieri-edili"
+     "url": "https://www.beneventonews24.it/2026/10/27/foto-e-video-sicurezza-in-edilizia-presentato-a-benevento-il-progetto-cantieri-sicuri/"
     },
     {
      "nome": "Anteprima24",
@@ -1563,6 +1776,13 @@
        "Ottopagine"
       ],
       "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Dopo la presentazione in piazza l'incontro si è spostato nella sala del Museo del Sannio. Tra gli altri c'erano il sindaco di Apice, Angelo Pepe, il vicepresidente del Formedil Benevento, Andrea Lanzetta, e il presidente e il vicepresidente del Formedil Avellino, Antonio Prudente e Massimo Graziano.",
+      "fonti": [
+       "BeneventoNews24 (27/10)"
+      ],
+      "giorno": "2026-10-27"
      }
     ],
     "cronologia": [],
@@ -1603,6 +1823,12 @@
       "titolo": "Infortuni sul lavoro, pesante il bilancio nel Sannio: si punta alla formazione professionale",
       "url": "https://www.anteprima24.it/benevento/infortuni-lavoro-bilancio-formazione/",
       "data": "27 ott, 15:28"
+     },
+     {
+      "nome": "BeneventoNews24 (27/10)",
+      "titolo": "FOTO E VIDEO – Sicurezza in edilizia: presentato a Benevento il progetto ‘Cantieri Sicuri’",
+      "url": "https://www.beneventonews24.it/2026/10/27/foto-e-video-sicurezza-in-edilizia-presentato-a-benevento-il-progetto-cantieri-sicuri/",
+      "data": "27 ott, 18:59"
      }
     ]
    },
@@ -5432,12 +5658,12 @@
   },
   {
    "id": "castelpoto-santa-croce-del-sannio-elenco-elettori-fuori-sede",
-   "titolo": "Elettori fuori sede, quindici Comuni del Sannio hanno aperto l'elenco: domande entro il 31 dicembre",
-   "titolo_google": "Elettori fuori sede in 14 Comuni del Sannio: come fare",
-   "sintesi": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni, Limatola, Torrecuso e San Lorenzello hanno aperto l'elenco degli elettori fuori sede previsto dalla nuova legge elettorale: chi per studio, lavoro o cure vive in una regione diversa da quella in cui vota può chiedere di votare dove abita. Per studio e lavoro la domanda va fatta entro il 31 dicembre, per le votazioni dell'anno dopo.",
+   "titolo": "Elettori fuori sede, sedici Comuni del Sannio hanno aperto l'elenco: domande entro il 31 dicembre",
+   "titolo_google": "Elettori fuori sede in 16 Comuni del Sannio: come fare",
+   "sintesi": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni, Limatola, Torrecuso, San Lorenzello e Montesarchio hanno aperto l'elenco degli elettori fuori sede previsto dalla nuova legge elettorale: chi per studio, lavoro o cure vive in una regione diversa da quella in cui vota può chiedere di votare dove abita. Per studio e lavoro la domanda va fatta entro il 31 dicembre, per le votazioni dell'anno dopo.",
    "categoria": "altro",
    "zona": "provincia",
-   "luogo": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni, Limatola, Torrecuso e San Lorenzello",
+   "luogo": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni, Limatola, Torrecuso, San Lorenzello e Montesarchio",
    "immagine": "elezioni",
    "pubblicato": "2026-10-27",
    "stato": "ufficiale",
@@ -5517,12 +5743,17 @@
      "nome": "Comune di San Lorenzello",
      "url": "https://comune.sanlorenzello.bn.it/it/novita/page/istituzione-dell-elenco-comunale-degli-elettori-fuori-sede-per-l-esercizio-del-diritto-di-voto-da-parte-degli-elettori-fuori-sede-in-occasione-delle-elezioni-politiche-ed-europee-e-dei-referendum",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di Montesarchio",
+     "url": "https://www.comune.montesarchio.bn.it/it/novita/page/istituzione-dell-elenco-comunale-degli-elettori-fuori-sede",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Quindici Comuni del Sannio, da Castelpoto a San Lorenzello, hanno aperto l'elenco comunale degli elettori fuori sede. Lo prevede la legge 180 del 9 ottobre 2026 sulle elezioni di Camera e Senato: chi vive per un periodo in una regione diversa da quella del Comune dove è iscritto per votare può chiedere di votare nel Comune dove abita. Vale per le elezioni politiche ed europee e per i referendum, non per le elezioni comunali e regionali.",
+      "testo": "Sedici Comuni del Sannio, da Castelpoto a Montesarchio, hanno aperto l'elenco comunale degli elettori fuori sede. Lo prevede la legge 180 del 9 ottobre 2026 sulle elezioni di Camera e Senato: chi vive per un periodo in una regione diversa da quella del Comune dove è iscritto per votare può chiedere di votare nel Comune dove abita. Vale per le elezioni politiche ed europee e per i referendum, non per le elezioni comunali e regionali.",
       "fonti": [
        "Comune di Castelpoto",
        "Comune di Santa Croce del Sannio",
@@ -5560,6 +5791,13 @@
       "testo": "Nel pomeriggio di martedì 27 ottobre l'avviso l'ha pubblicato anche San Lorenzello, nella Valle Telesina, con il modulo per la domanda. Se ne occupa l'ufficio dei Servizi demografici ed elettorale del Comune, in piazza Filippo Lavorgna 1 (telefono 0824 815134).",
       "fonti": [
        "Comune di San Lorenzello"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "In serata l'avviso è arrivato anche a Montesarchio, il centro più grande della Valle Caudina, con il modulo per la domanda. Se ne occupano i Servizi demografici del Comune, in Borgo San Francesco 3 (telefono 0824 892218).",
+      "fonti": [
+       "Comune di Montesarchio"
       ],
       "giorno": "2026-10-27"
      },
@@ -5742,6 +5980,13 @@
       "nome": "Comune di San Lorenzello",
       "titolo": "Istituzione dell'elenco comunale degli elettori fuori sede per l’esercizio del diritto di voto da parte degli elettori fuori sede in occasione delle elezioni politiche ed europee e dei referendum",
       "url": "https://comune.sanlorenzello.bn.it/it/novita/page/istituzione-dell-elenco-comunale-degli-elettori-fuori-sede-per-l-esercizio-del-diritto-di-voto-da-parte-degli-elettori-fuori-sede-in-occasione-delle-elezioni-politiche-ed-europee-e-dei-referendum",
+      "data": "27 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "Comune di Montesarchio",
+      "titolo": "Istituzione dell’elenco comunale degli elettori fuori sede",
+      "url": "https://www.comune.montesarchio.bn.it/it/novita/page/istituzione-dell-elenco-comunale-degli-elettori-fuori-sede",
       "data": "27 ott",
       "ufficiale": true
      }
