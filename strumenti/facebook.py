@@ -276,9 +276,12 @@ def chiama(metodo, percorso, token, dati=None):
             # il sottocodice e il titolo per l'utente dicono quale limite (27 ott 2026: il codice 4 da solo non bastava a
             # capire se era il limite delle chiamate o il blocco di Instagram contro lo spam); «(codice N)» resta così
             # perché LIMITE_META lo cerca
+            # il messaggio per l'utente e il codice della richiesta (fbtrace_id) servono per segnalare il problema a Meta
             altro = (f" sottocodice {err['error_subcode']}" if err.get("error_subcode") else "") \
                 + (f" «{err['error_user_title']}»" if err.get("error_user_title") else "") \
-                + f" [{metodo} {re.sub(r'[0-9]{6,}', 'N', percorso.split('?')[0])}]"
+                + (f": «{err['error_user_msg'][:160]}»" if err.get("error_user_msg") else "") \
+                + f" [{metodo} {re.sub(r'[0-9]{6,}', 'N', percorso.split('?')[0])}]" \
+                + (f" traccia {err['fbtrace_id']}" if err.get("fbtrace_id") else "")
             raise RuntimeError(f"Facebook {e.code}: {err.get('message', '')} (codice {err.get('code')}){altro}") from None
         except ValueError:
             raise RuntimeError(f"Facebook {e.code}") from None

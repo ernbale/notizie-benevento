@@ -12,11 +12,14 @@ on:
         description: "id ESPN della partita (vuoto = quella di oggi del Benevento)"
         default: ""
       modo:
-        description: "diretta = pubblica; prova = legge la diretta e non pubblica; collaudo = prova i canali senza pubblicare"
+        description: "diretta = pubblica; prova = legge la diretta e non pubblica; collaudo = prova i canali senza pubblicare; correggi = rifà un'uscita già mandata e la cambia sui canali"
         default: "diretta"
       squadra:
         description: "solo per le prove: la squadra al posto del Benevento (id ESPN)"
         default: "4059"
+      correggi:
+        description: "solo con modo correggi: l'uscita (finale, intervallo, gol:1…) e, se serve, l'id della notizia a cui portare"
+        default: ""
 
 permissions:
   contents: write   # le immagini dei gol nel ramo gol-immagini (online subito) e l'articolo di fine partita in notizie.json
@@ -55,11 +58,14 @@ jobs:
           PARTITA: ${{ inputs.partita }}
           MODO: ${{ inputs.modo }}
           SQUADRA: ${{ inputs.squadra || '4059' }}
+          CORREGGI: ${{ inputs.correggi }}
         run: |
           mkdir -p "$RUNNER_TEMP/gol"
           case "$MODO" in
             prova)    python3 strumenti/gol.py --partita "$PARTITA" --squadra "$SQUADRA" --prova "$RUNNER_TEMP/gol/prova" ;;
             collaudo) python3 strumenti/gol.py --collaudo "$RUNNER_TEMP/gol/collaudo" ;;
+            correggi) set -- $CORREGGI
+                      python3 strumenti/gol.py --partita "$PARTITA" --stato .stato-gol/stato.json --correggi "$1" --articolo "${2:-}" ;;
             *)        python3 strumenti/gol.py --partita "$PARTITA" --squadra "$SQUADRA" --stato .stato-gol/stato.json ;;
           esac
 

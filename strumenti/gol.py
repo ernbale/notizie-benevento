@@ -31,6 +31,8 @@ Uso:  python3 strumenti/gol.py --stato FILE [--partita ID]          (con TELEGRA
       python3 strumenti/gol.py --rigioca SUMMARY.json --prova CARTELLA (una partita finita, minuto per minuto)
       python3 strumenti/gol.py --registrazione DIR --partita ID --prova CARTELLA   (le registrazioni del Pi)
       --squadra ID: per le prove con un'altra squadra al posto del Benevento.
+      python3 strumenti/gol.py --stato FILE --partita ID --correggi finale [--articolo ID]   (un'uscita sbagliata,
+          rifatta e cambiata sui canali; vedi correggi())
 """
 import argparse
 import base64
@@ -287,14 +289,20 @@ def marcatori(p, gol, squadra):
     return out
 
 
+def cartellino(k):
+    """«rosso», «giallo» o None. Contano le parole intere del tipo di ESPN («red-card», «yellow-card»): il 27 ott 2026
+    «penalty---scored» conteneva «red» (sco-red) e il rigore di Salvemini è uscito anche come espulsione."""
+    parole = set(re.split(r"[^a-z]+", tipo_azione(k)))
+    return "rosso" if "red" in parole or {"second", "yellow"} <= parole else "giallo" if "yellow" in parole else None
+
+
 def cartellini(p, colore, fino_al_periodo=9):
     """[(minuto, cognome, squadra)] dei gialli o dei rossi."""
     out = []
     for k in sorted(p["azioni"], key=ordine):
-        t = tipo_azione(k)
         if ordine(k)[0] > fino_al_periodo:
             continue
-        if (colore == "rosso" and "red" in t) or (colore == "giallo" and "yellow" in t and "red" not in t):
+        if cartellino(k) == colore:
             out.append(((k.get("clock") or {}).get("displayValue") or "", chi(k, p), (k.get("team") or {}).get("id")))
     return out
 
@@ -606,13 +614,17 @@ def pubblica_articolo(n, adesso, chiavi, prova=None):
             git("reset", "-q", "--hard", "origin/main")
         with open(os.path.join(sito, "notizie.json"), encoding="utf-8") as f:
             d = json.load(f)
-        # c'è già (il lavoro è ripartito, o l'agente l'ha scritta coi giornali): si porta lì, non se ne fa un'altra
-        stessa = n["id"].rsplit("-", 4)[0] + "-"   # «benevento-catanzaro-»: la stessa partita, con lo stesso giorno
+        # c'è già (il lavoro è ripartito, o l'agente o il giro lampo l'hanno scritta): si porta lì, non se ne fa
+        # un'altra. Solo una cronaca col risultato: il 27 ott 2026 bastava il nome della partita e il «Finale» ha
+        # portato alla notizia del malore di Arditi prima del calcio d'inizio
+        stessa, gc, gf = n["id"].rsplit("-", 4)[:3]   # «benevento-catanzaro», «1», «1»
+        col_risultato = re.compile(rf"(?<!\d){gc}\s*[-–]\s*{gf}(?!\d)")
         giorno = n["pubblicato"][:10]
         for x in d.get("notizie", []):
             if x.get("id") == n["id"] or x.get("diretta_calcio") == n["diretta_calcio"] or (
-                    str(x.get("id", "")).startswith(stessa) and str(x.get("pubblicato", ""))[:10] == giorno
-                    and x.get("categoria") == "sport"):
+                    str(x.get("id", "")).startswith(stessa + "-") and str(x.get("pubblicato", ""))[:10] == giorno
+                    and x.get("categoria") == "sport"
+                    and (col_risultato.search(x.get("titolo") or "") or f"-{gc}-{gf}-" in x["id"] + "-")):
                 print(f"  articolo: c'è già, {x['id']}")
                 return x["id"]
         indice = json.load(open(os.path.join(sito, "archivio", "indice.json"), encoding="utf-8")).get("voci") or []
@@ -964,6 +976,93 @@ def gia_sui_canali(p, chiavi, ig, da):
     return trovati
 
 
+def verifica_incerti(stato, p, chiavi, ig, da):
+    """Le uscite «incerte» (il canale ha risposto di no, ma forse sono uscite) si cercano sui canali: se ci sono, sono
+    uscite. Il 27 ott 2026 Instagram ha risposto «azione bloccata» a tutti e quattro i post della partita e c'erano
+    tutti: il lavoro finiva in rosso e il Pi lo rilanciava sei volte per niente."""
+    incerti = [(k, u) for k, u in stato["uscite"].items() if "incerto" in u["canali"].values()]
+    for attesa in (20, 40, 60) if incerti else ():
+        time.sleep(attesa)   # Instagram mostra il post qualche secondo dopo
+        try:
+            visti = gia_sui_canali(p, chiavi, ig, da)
+        except Exception as e:
+            print(f"  incerti: i canali non si leggono ({e})")
+            continue
+        for chiave, u in incerti:
+            for c in visti.get(chiave_testo(u["testi"][0]), ()):
+                if u["canali"].get(c) == "incerto":
+                    u["canali"][c] = "visto sul canale " + ora_iso()
+                    print(f"  {chiave}: su {c} c'è, è uscito")
+        if not any("incerto" in u["canali"].values() for _, u in incerti):
+            return
+
+
+def correggi(chiave, articolo, stato, p, noi, calcio, chiavi, ig, cartella, prova=None):
+    """Rifà un'uscita già mandata (testi e immagine) col programma di adesso e la cambia sui canali, senza post nuovi:
+    su Telegram foto e testo, su Facebook il testo (la foto di un post non si cambia), su Instagram niente (il testo
+    lo cambia il proprietario dall'app: qui si stampa). Voluto dal proprietario il 27 ott 2026 («ok correggi tutto»):
+    il «Finale» di Benevento-Catanzaro aveva un'espulsione che non c'era e il link a un'altra notizia."""
+    u = (stato.get("uscite") or {}).get(chiave)
+    if not u or not u.get("testi"):
+        print(f"gol: nello stato non c'è l'uscita «{chiave}»")
+        return False
+    dati = dict(u["dati"], **({"articolo": articolo} if articolo else {}))
+    vecchi, nuovi = u["testi"], testi(u["tipo"], p, noi, dati, calcio)
+    for canale, v, n in zip(CANALI, vecchi, nuovi):
+        tolte = [r for r in v.splitlines() if r.strip() and r not in n.splitlines()]
+        messe = [r for r in n.splitlines() if r.strip() and r not in v.splitlines()]
+        print(f"  {canale}: tolto {tolte or 'niente'} · messo {messe or 'niente'}")
+    nome = f"gol/{p['id']}/{chiave.replace(':', '-')}-corretto-{dt.datetime.now(fuso()):%H%M%S}.jpg"
+    percorso = os.path.join(prova or cartella, os.path.basename(nome))
+    immagine(percorso, u["tipo"], p, noi, dati, cartella)
+    if prova:
+        with open(percorso[:-4] + ".txt", "w", encoding="utf-8") as f:
+            f.write(f"--- Telegram\n{nuovi[0]}\n\n--- Facebook\n{nuovi[1]}\n\n--- Instagram\n{nuovi[2]}\n")
+        print(f"  prova: immagine e testi in {percorso[:-4]}.*")
+        return True
+    url = carica(percorso, nome, chiavi["github"])
+    cerca, ok = chiave_testo(vecchi[0]), True
+
+    def testo_di(blocco):
+        m = re.search(r'<div class="tgme_widget_message_text[^"]*"[^>]*>(.*?)</div>', blocco, re.S)
+        return html.unescape(re.sub(r"<br\s*/?>", "\n", re.sub(r"<(?!br)[^>]+>", "", m.group(1)))).strip() if m else ""
+
+    req = urllib.request.Request(telegram.ANTEPRIMA, headers={"User-Agent": "Mozilla/5.0 (notiziebenevento.it)"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        pagina = r.read().decode("utf-8", "replace")
+    tg = [re.search(r'data-post="[^"/]+/(\d+)"', b) for b in re.split(r'(?=<div class="tgme_widget_message_wrap)', pagina)[1:]
+          if testo_di(b).startswith(SEGNI[u["tipo"]]) and chiave_testo(testo_di(b)) == cerca]
+    if len(tg) == 1 and tg[0]:
+        try:
+            telegram.chiama(chiavi["telegram"], "editMessageMedia", {
+                "chat_id": telegram.CANALE, "message_id": int(tg[0].group(1)),
+                "media": {"type": "photo", "media": url, "caption": nuovi[0][:1024]}})
+            print(f"  Telegram: corretto il messaggio {tg[0].group(1)} (foto e testo)")
+        except Exception as e:
+            ok = False
+            print(f"  AVVISO Telegram: non corretto ({e})")
+    else:
+        ok = False
+        print(f"  AVVISO Telegram: trovati {len(tg)} messaggi «{cerca.splitlines()[0]}», non ne cambio nessuno")
+    fb = [x for x in riprova(lambda: facebook.chiama("GET", "me/posts", chiavi["facebook"], {
+        "fields": "id,message", "limit": 50}), "Facebook", True).get("data", [])
+          if (x.get("message") or "").startswith(SEGNI[u["tipo"]]) and chiave_testo(x["message"]) == cerca]
+    if len(fb) == 1:
+        try:
+            facebook.chiama("POST", fb[0]["id"], chiavi["facebook"], {"message": nuovi[1]})
+            print(f"  Facebook: corretto il testo del post {fb[0]['id']} (la foto resta quella di prima)")
+        except Exception as e:
+            ok = False
+            print(f"  AVVISO Facebook: non corretto ({e})")
+    else:
+        ok = False
+        print(f"  AVVISO Facebook: trovati {len(fb)} post «{cerca.splitlines()[0]}», non ne cambio nessuno")
+    print("  Instagram: il testo da mettere nell'app (Modifica sul post):\n" + nuovi[2])
+    u.setdefault("correzioni", []).append({"quando": ora_iso(), "testi_prima": vecchi, "url_prima": u.get("url")})
+    u.update(dati=dati, testi=list(nuovi), url=url, nome=nome)
+    return ok
+
+
 def chiave_testo(tg_testo):
     """La parte di un testo che si cerca sui canali (vedi gia_sui_canali)."""
     if tg_testo.startswith(("⏸", "🏁")):
@@ -1114,6 +1213,8 @@ def main():
     ap.add_argument("--registrazione", metavar="DIR", help="prova sulle registrazioni del Pi")
     ap.add_argument("--fino", type=float, default=200, help="minuti al massimo (GitHub ferma il lavoro dopo 230)")
     ap.add_argument("--collaudo", metavar="CARTELLA", help="prova i canali senza pubblicare niente")
+    ap.add_argument("--correggi", metavar="CHIAVE", help="rifà un'uscita già mandata (es. finale) e la cambia sui canali")
+    ap.add_argument("--articolo", default="", help="con --correggi: l'id della notizia a cui portare")
     a = ap.parse_args()
     if a.collaudo:
         os.makedirs(a.collaudo, exist_ok=True)
@@ -1177,6 +1278,14 @@ def main():
             with open(tmp, "w", encoding="utf-8") as f:
                 json.dump(stato, f, ensure_ascii=False, indent=1)
             os.replace(tmp, a.stato)
+
+    if a.correggi:
+        p = stato_partita(leggi_json(f"{ESPN}/summary?event={partita}"))
+        if not prova:   # intanto si guarda se le uscite incerte ci sono
+            verifica_incerti(stato, p, chiavi, ig, dt.datetime.now(fuso()) - dt.timedelta(hours=12))
+        ok = correggi(a.correggi, a.articolo, stato, p, noi, calcio, chiavi, ig, cartella_loghi, prova)
+        salva()
+        sys.exit(0 if ok else 1)
 
     def da_mandare(u):
         return [c for c in CANALI if c not in u["canali"] and (c != "instagram" or ig)]
@@ -1263,6 +1372,8 @@ def main():
                 problemi.append(f"dopo {a.fino:.0f} minuti la partita non è ancora finita")
                 break
             time.sleep(OGNI_PRIMA if p["stato"] == "pre" else OGNI)
+    if not prova and p:
+        verifica_incerti(stato, p, chiavi, ig, dt.datetime.now(fuso()) - dt.timedelta(hours=5))
     salva()
     if not prova:
         for chiave, u in stato["uscite"].items():

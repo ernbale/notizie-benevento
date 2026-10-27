@@ -76,6 +76,11 @@ escono solo i comunicati e le notizie da 4 in su, al massimo una l'ora, senza re
 della sera; finisce da solo al primo post uscito senza errore e da lì Instagram segue di nuovo Facebook, senza
 recuperare le notizie di prima (`freno_dal` e `segue_dal` in instagram.json, nella cache «social» di GitHub).
 
+La diretta della partita (gol.py): un'uscita sbagliata già mandata si corregge senza post nuovi con la Action «Gol del
+Benevento», modo `correggi`, campo correggi `finale <id della notizia>` (o `gol:1`, `intervallo`): rifà testo e
+immagine col programma di adesso; Telegram cambia foto e testo, Facebook il testo, Instagram il testo lo cambia lui
+dall'app (si stampa nel log). Fatto la prima volta il 27 ott 2026 (un rigore letto come espulsione).
+
 ## Comunicati: subito solo le fonti ufficiali (dal 26 ott 2026)
 Escono subito solo quelli di enti pubblici, PEC e mittenti fidati (`~/nb-fonti/mittenti_fidati.json` sul Pi). Gli altri
 hanno `"fonte": "da_valutare"`: al proprietario arriva un avviso (WhatsApp ed email) e decide lui nella scheda Posta
