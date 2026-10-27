@@ -78,8 +78,10 @@ post → «Aggiorna l'allegato della condivisione» → Salva. Non toccare il si
 
 ## Lo scrittore del giornale (dal 27 ott 2026)
 Lui: «nominiamo Fable 5.1 come scrittore giornalista ufficiale del nostro giornale? da controllare ogni giorno se escono
-modelli nuovi». Le curiosità e l'agente di ogni ora girano con `claude-fable-5-1` (l'agente in prova dal 27 ott: si
-misurano durata dei giri e consumo; Fable ha un tetto suo, al massimo il 50% del limite settimanale). Il giro lampo
-resta su `claude-opus-5-5` (lì conta la velocità). Ogni giorno alle 9 il Pi guarda la pagina dei modelli di Anthropic
-(`strumenti/modelli_nuovi.py`, log `~/nb-fonti/modelli.log`) e, se ne esce uno nuovo, lo avvisa su WhatsApp e per
-email: non cambia niente da solo, prima una prova sui dati veri e poi decide lui.
+modelli nuovi». Provato il 27 ott sul giro delle 6 dell'agente: lavoro ottimo ma 10 minuti invece di 5 e il 2% del tetto
+di Fable a giro (Fable ha un tetto suo: al massimo il 50% del limite settimanale; con 19 giri al giorno finirebbe in
+due giorni e mezzo e si fermerebbe tutto). Decisione sua: «ok Fable solo per le curiosità». Quindi `claude-fable-5-1`
+solo per il rifornimento delle curiosità (lunedì alle 6, circa il 3% a settimana); agente orario e giro lampo su
+`claude-opus-5-5`. Ogni giorno alle 9 il Pi guarda la pagina dei modelli di Anthropic (`strumenti/modelli_nuovi.py`,
+log `~/nb-fonti/modelli.log`) e, se ne esce uno nuovo, lo avvisa su WhatsApp e per email: non cambia niente da solo,
+prima una prova sui dati veri (durata e consumo, dalla pagina Utilizzo di claude.ai) e poi decide lui.
