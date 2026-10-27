@@ -1,11 +1,12 @@
 {
- "aggiornato": "2026-10-27T07:37+01:00",
+ "aggiornato": "2026-10-27T14:24+01:00",
  "viste": [
   "1131ffc78db3",
   "a4f3f5a64d51",
   "d12186721458",
   "7df78a2436f4",
-  "afb12e802897"
+  "afb12e802897",
+  "36794154e8c1"
  ],
  "chiusure": [],
  "scartate": [
@@ -28,6 +29,11 @@
    "pista": "afb12e802897",
    "motivo": "Un solo giornale (Il Sannio Quotidiano, articolo a pagamento): non dice chi ha sospeso le lezioni alla succursale del Liceo Guacci né per quali giorni. Non c'è un'ordinanza del Comune o della Provinci",
    "quando": "2026-10-27T07:37+01:00"
+  },
+  {
+   "pista": "36794154e8c1",
+   "motivo": "Delibera di Giunta sull'Ufficio Bim dei lavori pubblici: nessuna chiusura",
+   "quando": "2026-10-27T14:24+01:00"
   }
  ]
 }
