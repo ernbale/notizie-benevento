@@ -26,7 +26,8 @@ Lo esegue GitHub dopo ogni pubblicazione del sito, come facebook.py, che ne è i
   instagram_content_publish. Senza account Instagram collegato alla Pagina non fa niente.
 
 - Quando Meta risponde «troppe richieste» (26 ott 2026, 15:17: 16 notizie arretrate insieme) non la si chiama per
-  FERMO_MINUTI: lo ricorda --stato, poi si riprende da soli.
+  FERMO_MINUTI: lo ricorda --stato, poi si riprende da soli. E parte il freno (SOGLIA_FRENO), che finisce al primo
+  post uscito senza errore.
 
 Uso:  FB_PAGE_TOKEN=… python3 strumenti/instagram.py --stato FILE
       python3 strumenti/instagram.py --prova      (dice cosa pubblicherebbe, senza chiave e senza toccare Instagram)
@@ -42,8 +43,8 @@ import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from facebook import (AGG, AGG_USCITO, LIMITE_META, ORE_FINESTRA, PAGINA, RIEPILOGO_DALLE, RIEPILOGO_PAUSA, SITO,
-                      SOGLIA_IG, TITOLO_RIEPILOGO, allerta_seria, candidate, chiama, coda, fuso, quando, rilievo,
-                      titoli_usciti, tutti_i_post)
+                      SOGLIA_IG, TITOLO_RIEPILOGO, allerta_seria, candidate, chiama, coda, fuso, importanza, quando,
+                      rilievo, titoli_usciti, tutti_i_post)
 import facebook   # noqa: E402
 
 # l'Agente Social (27 ott 2026): Instagram segue Facebook. I post di Facebook di prima di SEGUE_DAL non si recuperano:
@@ -53,6 +54,13 @@ PAUSA_RECUPERO = 10   # minuti tra due post quando Instagram è indietro rispett
 QUOTA_MARGINE = 2     # post lasciati liberi sotto il tetto di Meta in 24 ore
 LETTURA_VALIDA = 20   # minuti: la lettura della Pagina fatta da facebook.py vale solo per questo giro
 FERMO_MINUTI = 60   # quando Meta dice «troppe richieste» non la si chiama per un'ora (il suo conto è sull'ultima ora)
+# il freno (27 ott 2026): dalla raffica del 26 ogni post risponde «azione bloccata» (codice 4, sottocodice 2207051:
+# l'antispam di Instagram) ma esce lo stesso. Finché dura escono solo i comunicati e le notizie da SOGLIA_FRENO in su,
+# al massimo una l'ora (il fermo dopo ogni «azione bloccata»), e solo quelle uscite su Facebook dopo l'ultimo post di
+# Instagram: niente recupero. Il riepilogo della sera no. Al primo post uscito senza errore il freno finisce e Instagram
+# torna a seguire Facebook da quel momento (segue_dal nello --stato), senza recuperare quello che è rimasto solo su
+# Facebook (lui: «ok frena»).
+SOGLIA_FRENO = 4
 DALLE, ALLE = 6, 23   # come facebook.py
 QUANTE, ALMENO = 5, 3  # notizie nel riepilogo; con meno di ALMENO notizie oggi niente riepilogo
 
@@ -222,14 +230,41 @@ def main():
         print(f"Instagram: Meta ci ha fermato per troppe richieste, riprendo dopo le {stato['fermo_fino'][11:16]}")
         return
     try:
-        giro(a, notizie, adesso, token, sera)
+        giro(a, notizie, adesso, token, sera, stato)
     except RuntimeError as e:
         if not LIMITE_META.search(str(e)):
             raise
         fino = (adesso + dt.timedelta(minutes=FERMO_MINUTI)).isoformat(timespec="minutes")
-        scrivi_stato(a.stato, dict(stato, fermo_fino=fino))
+        nuovo = not in_freno(stato)
+        scrivi_stato(a.stato, dict(stato, fermo_fino=fino,
+                                   freno_dal=stato.get("freno_dal") or adesso.isoformat(timespec="minutes")))
         print(f"Instagram: Meta dice che abbiamo fatto troppe richieste ({e}): fermo fino alle {fino[11:16]}, poi si "
-              "riprende da soli")
+              "riprende da soli" + (f", col freno (solo comunicati e notizie da {SOGLIA_FRENO} in su, nessun recupero) "
+                                    "finché un post non esce senza errore" if nuovo else ""))
+
+
+def in_freno(stato):
+    """Se c'è il freno (SOGLIA_FRENO). Lo stato scritto prima del freno (fino al 27 ott 2026) ha solo fermo_fino: è il
+    freno di adesso."""
+    return bool(stato.get("freno_dal") or (stato.get("fermo_fino") and not stato.get("segue_dal")))
+
+
+def fine_freno(a, stato, adesso):
+    """Un post è uscito senza errori: se c'era il freno, è finito. Da adesso Instagram segue di nuovo Facebook, senza
+    recuperare quello che col freno è rimasto solo su Facebook."""
+    if in_freno(stato):
+        stato.pop("freno_dal", None)
+        stato["segue_dal"] = adesso.isoformat(timespec="minutes")
+        scrivi_stato(a.stato, stato)
+        print("Instagram: il post è uscito senza «azione bloccata», il freno di Meta è finito: da adesso di nuovo in "
+              "pari con Facebook, senza recuperare le notizie di prima")
+
+
+def ora_stato(stato, chiave):
+    try:
+        return dt.datetime.fromisoformat(stato[chiave])
+    except (KeyError, TypeError, ValueError):
+        return None
 
 
 def leggi_stato(percorso):
@@ -247,8 +282,10 @@ def scrivi_stato(percorso, stato):
             json.dump(stato, f)
 
 
-def giro(a, notizie, adesso, token, sera):
-    """Una volta: un comunicato «subito», o l'allerta delle 23, o il riepilogo della sera, o la notizia più importante."""
+def giro(a, notizie, adesso, token, sera, stato=None):
+    """Una volta: un comunicato «subito», o l'allerta delle 23, o il riepilogo della sera, o la notizia più importante.
+    stato: quello di --stato (il freno)."""
+    stato = {} if stato is None else stato
     pag = chiama("GET", "me", token, {"fields": "name,instagram_business_account{id,username}"})
     if pag.get("name") != PAGINA:
         raise RuntimeError(f"la chiave non è della Pagina «{PAGINA}»: non pubblico niente")
@@ -257,19 +294,29 @@ def giro(a, notizie, adesso, token, sera):
         print("Instagram: la Pagina non ha ancora un account Instagram collegato, non pubblico niente")
         return
     gia, oggi, ultimo, riepilogo, uscite = gia_pubblicate(ig, token, adesso)
+    freno = in_freno(stato)
+    # col freno solo quello che è venuto dopo l'ultimo post di Instagram; finito il freno, quello che è venuto dopo
+    dal = (ultimo or adesso - dt.timedelta(minutes=FERMO_MINUTI)) if freno else ora_stato(stato, "segue_dal")
+    if freno:
+        print(f"  Instagram: c'è il freno di Meta: solo comunicati e notizie da {SOGLIA_FRENO} in su, uscite dopo le "
+              f"{dal:%H:%M}")
     if not sera:   # un comunicato ufficiale (giro lampo, «subito»): esce adesso, senza pausa né tetto (come facebook.py)
         for n in candidate(notizie, gia, adesso):
-            if n.get("subito") and pubblica_notizia(ig, token, n):
+            if n.get("subito") and (not dal or quando(n, adesso) >= dal) and pubblica_notizia(ig, token, n):
                 print(f"Instagram: pubblicata subito {n['id']} (comunicato, {oggi + 1} oggi)")
+                fine_freno(a, stato, adesso)
                 return
     if sera:
         for n in candidate(notizie, gia, adesso):
             if allerta_seria(n) and pubblica_notizia(ig, token, n):
                 print(f"Instagram: pubblicata l'allerta {n['id']} ({oggi + 1} oggi)")
+                fine_freno(a, stato, adesso)
                 return
         print("Instagram: sono le 23, a quest'ora si pubblicano solo le allerte arancioni o rosse")
         return
-    if not riepilogo and adesso.hour >= RIEPILOGO_DALLE:
+    if not riepilogo and adesso.hour >= RIEPILOGO_DALLE and freno:
+        print("Instagram: col freno di Meta niente riepilogo della sera")
+    elif not riepilogo and adesso.hour >= RIEPILOGO_DALLE:
         r = riepilogo_pronto(a.sito, notizie, adesso)
         if r and ultimo and adesso - ultimo < dt.timedelta(minutes=RIEPILOGO_PAUSA):
             print(f"Instagram: l'ultimo post è delle {ultimo:%H:%M}, il riepilogo al prossimo giro")
@@ -279,10 +326,18 @@ def giro(a, notizie, adesso, token, sera):
             print(f"Instagram: pubblicato il riepilogo della giornata ({len(r[1])} notizie, {oggi + 1} post oggi)")
             return
         print("Instagram: niente riepilogo oggi (poche notizie o immagini non ancora online)")
-    da_fare = da_facebook(a, notizie, gia, uscite, adesso)
+    da_fare = da_facebook(a, notizie, gia, uscite, adesso, dal)
     if da_fare is None:
         print("Instagram: non so cosa è uscito su Facebook in questo giro (manca la sua lettura), non pubblico")
         return
+    if freno:   # prima i comunicati, poi le più importanti; a pari importanza la più recente
+        lasciate = len(da_fare)
+        da_fare = [x for x in reversed(da_fare) if x[0].get("subito") or importanza(x[0]) >= SOGLIA_FRENO]
+        da_fare.sort(key=lambda x: (not x[0].get("subito"), -importanza(x[0])))
+        if not da_fare:
+            print("Instagram: col freno di Meta niente da pubblicare" + (
+                f" ({lasciate} notizie di Facebook sotto {SOGLIA_FRENO} restano solo su Facebook)" if lasciate else ""))
+            return
     if not da_fare:
         print("Instagram: è in pari con Facebook, niente da pubblicare")
         return
@@ -295,16 +350,18 @@ def giro(a, notizie, adesso, token, sera):
         if pubblica_notizia(ig, token, n, agg):
             cosa = "pubblicato l'aggiornamento di" if agg else "pubblicata"
             print(f"Instagram: {cosa} {n['id']}, come su Facebook ({oggi + 1} oggi"
-                  + (f"; da recuperare ancora {len(da_fare) - 1})" if len(da_fare) > 1 else ")"))
+                  + ("; col freno le altre restano solo su Facebook)" if freno and len(da_fare) > 1
+                     else f"; da recuperare ancora {len(da_fare) - 1})" if len(da_fare) > 1 else ")"))
+            fine_freno(a, stato, adesso)
             return
     print("Instagram: le schede delle notizie uscite su Facebook non sono ancora online, al prossimo giro")
 
 
-def da_facebook(a, notizie, gia, uscite, adesso):
-    """Le notizie uscite su Facebook (da SEGUE_DAL e nelle ultime ORE_FINESTRA ore) che su Instagram mancano, dalla
-    prima uscita su Facebook: [(notizia, è un aggiornamento)]. gia/uscite: i titoli usciti e l'ora dell'ultimo post di
-    ogni notizia su Instagram (gia_pubblicate). Un «Aggiornamento» di Facebook si recupera solo se Instagram aveva già la
-    notizia prima; se non l'aveva, esce una volta sola, col titolo di adesso. Quello che c'è su Facebook lo legge dal
+def da_facebook(a, notizie, gia, uscite, adesso, dal=None):
+    """Le notizie uscite su Facebook (da SEGUE_DAL, da dal e nelle ultime ORE_FINESTRA ore) che su Instagram mancano,
+    dalla prima uscita su Facebook: [(notizia, è un aggiornamento)]. gia/uscite: i titoli usciti e l'ora dell'ultimo post
+    di ogni notizia su Instagram (gia_pubblicate). Un «Aggiornamento» di Facebook si recupera solo se Instagram aveva già
+    la notizia prima; se non l'aveva, esce una volta sola, col titolo di adesso. Quello che c'è su Facebook lo legge dal
     file che facebook.py scrive in questo stesso giro (USCITE_FILE, accanto a --stato): niente seconda lettura dei post
     a Meta. Se il file manca o non è di questo giro: None (non si pubblica)."""
     try:
@@ -317,7 +374,7 @@ def da_facebook(a, notizie, gia, uscite, adesso):
         return None
     uscite_fb = {k: dt.datetime.fromisoformat(v) for k, v in letto["uscite"].items()}
     fb = {k: {AGG_USCITO} for k in letto.get("aggiornamenti") or []}
-    dal = max(dt.datetime.fromisoformat(SEGUE_DAL), adesso - dt.timedelta(hours=ORE_FINESTRA))
+    dal = max([dt.datetime.fromisoformat(SEGUE_DAL), adesso - dt.timedelta(hours=ORE_FINESTRA)] + ([dal] if dal else []))
     per_id = {n.get("id"): n for n in notizie}
     out = []
     for nid, t in uscite_fb.items():

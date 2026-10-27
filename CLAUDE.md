@@ -71,6 +71,10 @@ percentuali che Meta manda in ogni risposta) e, negli errori, sottocodice e chia
 massimo una volta l'ora e mai oltre il 60% (statistiche.META_OGNI, META_TETTO). Il 27 ott Instagram ha avuto due volte
 «troppe richieste» (codice 4) con l'uso di Meta basso e **il post uscito lo stesso**: dopo un errore di Meta guarda il
 profilo vero prima di pensare che manchi qualcosa (instagram.py comunque rilegge Instagram e non ripubblica).
+Dal 27 ott il **freno** di Instagram (instagram.SOGLIA_FRENO, lui: «ok frena»): dopo un errore di Meta su Instagram
+escono solo i comunicati e le notizie da 4 in su, al massimo una l'ora, senza recuperare niente, e niente riepilogo
+della sera; finisce da solo al primo post uscito senza errore e da lì Instagram segue di nuovo Facebook, senza
+recuperare le notizie di prima (`freno_dal` e `segue_dal` in instagram.json, nella cache «social» di GitHub).
 
 ## Comunicati: subito solo le fonti ufficiali (dal 26 ott 2026)
 Escono subito solo quelli di enti pubblici, PEC e mittenti fidati (`~/nb-fonti/mittenti_fidati.json` sul Pi). Gli altri
