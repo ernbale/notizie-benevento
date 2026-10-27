@@ -3,11 +3,16 @@
 
 Lo esegue GitHub dopo ogni pubblicazione del sito, come facebook.py, che ne è il modello:
 - Le notizie dei comunicati arrivati per posta («subito», giro lampo) escono appena ci sono, senza pausa né tetto.
-- Una notizia ogni PAUSA_MINUTI, senza tetto al giorno, dalle 6 fino al giro delle 22 compreso (come Facebook: 20
-  minuti, scelta del proprietario il 26 ott 2026, «nessun tetto ma distanziati almeno ogni 15/20 minuti»; prima 25
+- Le altre notizie al ritmo di Facebook (una ogni 20 minuti, senza tetto al giorno, dalle 6 fino al giro delle 22
+  compreso: scelta del proprietario il 26 ott 2026, «nessun tetto ma distanziati almeno ogni 15/20 minuti»; prima 25
   minuti e 35 al giorno, 50 e 20, all'inizio 90 minuti e 8).
-- Sceglie la prima della classifica dei social (facebook.py, CLASSIFICA) tra quelle che valgono almeno SOGLIA_IG
-  (4: le più importanti); i comunicati («subito») tutti.
+- Dal 27 ott 2026 è l'«Agente Social» insieme a facebook.py (lui: «instagram e facebook in sincronia, stessi post in
+  contemporanea», «agente Social», «sì 3 in su, fallo»): Instagram non sceglie più da solo, pubblica le stesse notizie
+  di Facebook, nello stesso ordine, subito dopo (il suo passo nella pubblicazione viene dopo quello di Facebook). La
+  scelta la fa facebook.py con la classifica (CLASSIFICA, da SOGLIA_FB in su: 3). Se Instagram resta indietro (un fermo
+  di Meta, una scheda non ancora online) recupera le notizie di Facebook dalla più vecchia, una ogni PAUSA_RECUPERO
+  minuti. Prima sceglieva con la sua soglia (solo 4 e 5) e il suo orologio, e le due pagine andavano per conto loro.
+  Prima di pubblicare guarda il tetto di Meta dei post in 24 ore (content_publishing_limit).
 - L'immagine è img/ig/<id>.jpg (1080×1350, la fa pagine.py): titolo grande e, se c'è, la foto illustrativa con la
   scritta che è fatta con l'intelligenza artificiale. Instagram la scarica dal sito, che deve essere già online.
 - Cosa è già uscito lo legge da Instagram stesso (il link della notizia scritto nella didascalia).
@@ -36,11 +41,16 @@ import time
 import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from facebook import (AGG, LIMITE_META, PAGINA, RIEPILOGO_DALLE, RIEPILOGO_PAUSA, SITO, SOGLIA_IG,  # come Facebook
-                      TITOLO_RIEPILOGO, allerta_seria, candidate, chiama, coda, fuso, quando, recenti, rilievo,
+from facebook import (AGG, AGG_USCITO, LIMITE_META, ORE_FINESTRA, PAGINA, RIEPILOGO_DALLE, RIEPILOGO_PAUSA, SITO,
+                      SOGLIA_IG, TITOLO_RIEPILOGO, allerta_seria, candidate, chiama, coda, fuso, quando, rilievo,
                       titoli_usciti, tutti_i_post)
+import facebook   # noqa: E402
 
-PAUSA_MINUTI = 20
+# l'Agente Social (27 ott 2026): Instagram segue Facebook. I post di Facebook di prima di SEGUE_DAL non si recuperano:
+# quando Instagram aveva la soglia 4 non uscivano le notizie da 3, e rimandarle adesso sarebbe una coda di notizie vecchie
+SEGUE_DAL = "2026-10-27T07:40:00+01:00"
+PAUSA_RECUPERO = 10   # minuti tra due post quando Instagram è indietro rispetto a Facebook: si recupera senza raffiche
+QUOTA_MARGINE = 2     # post lasciati liberi sotto il tetto di Meta in 24 ore
 FERMO_MINUTI = 60   # quando Meta dice «troppe richieste» non la si chiama per un'ora (il suo conto è sull'ultima ora)
 DALLE, ALLE = 6, 23   # come facebook.py
 QUANTE, ALMENO = 5, 3  # notizie nel riepilogo; con meno di ALMENO notizie oggi niente riepilogo
@@ -190,7 +200,7 @@ def main():
     with open(os.path.join(a.sito, "notizie.json"), encoding="utf-8") as f:
         notizie = json.load(f).get("notizie", [])
 
-    if a.prova:
+    if a.prova:   # Instagram pubblica quello che pubblica Facebook: le prime della stessa classifica
         for n, agg in coda(notizie, {}, adesso, SOGLIA_IG)[:3]:
             print(f"--- {SITO}/img/ig/{n['id']}.jpg\n{didascalia(n, agg)}\n")
         r = riepilogo_pronto(a.sito, notizie, adesso)
@@ -268,15 +278,60 @@ def giro(a, notizie, adesso, token, sera):
             print(f"Instagram: pubblicato il riepilogo della giornata ({len(r[1])} notizie, {oggi + 1} post oggi)")
             return
         print("Instagram: niente riepilogo oggi (poche notizie o immagini non ancora online)")
-    if ultimo and adesso - ultimo < dt.timedelta(minutes=PAUSA_MINUTI):
-        print(f"Instagram: l'ultimo post è delle {ultimo:%H:%M}, aspetto")
+    da_fare = da_facebook(token, notizie, gia, uscite, adesso)
+    if not da_fare:
+        print("Instagram: è in pari con Facebook, niente da pubblicare")
         return
-    for n, agg in coda(notizie, gia, adesso, SOGLIA_IG, recenti(notizie, uscite, adesso)):
+    if ultimo and adesso - ultimo < dt.timedelta(minutes=PAUSA_RECUPERO):
+        print(f"Instagram: l'ultimo post è delle {ultimo:%H:%M}, {len(da_fare)} da recuperare da Facebook al prossimo giro")
+        return
+    if quota_finita(ig, token):
+        return
+    for n, agg in da_fare:
         if pubblica_notizia(ig, token, n, agg):
             cosa = "pubblicato l'aggiornamento di" if agg else "pubblicata"
-            print(f"Instagram: {cosa} {n['id']} ({oggi + 1} oggi)")
+            print(f"Instagram: {cosa} {n['id']}, come su Facebook ({oggi + 1} oggi"
+                  + (f"; da recuperare ancora {len(da_fare) - 1})" if len(da_fare) > 1 else ")"))
             return
-    print("Instagram: nessuna notizia nuova da pubblicare")
+    print("Instagram: le schede delle notizie uscite su Facebook non sono ancora online, al prossimo giro")
+
+
+def da_facebook(token, notizie, gia, uscite, adesso):
+    """Le notizie uscite su Facebook (da SEGUE_DAL e nelle ultime ORE_FINESTRA ore) che su Instagram mancano, dalla
+    prima uscita su Facebook: [(notizia, è un aggiornamento)]. gia/uscite: i titoli usciti e l'ora dell'ultimo post di
+    ogni notizia su Instagram (gia_pubblicate). Un «Aggiornamento» di Facebook si recupera solo se Instagram aveva già la
+    notizia prima; se non l'aveva, esce una volta sola, col titolo di adesso."""
+    fb, _, _, _, uscite_fb = facebook.gia_pubblicate(token, adesso)
+    dal = max(dt.datetime.fromisoformat(SEGUE_DAL), adesso - dt.timedelta(hours=ORE_FINESTRA))
+    per_id = {n.get("id"): n for n in notizie}
+    out = []
+    for nid, t in uscite_fb.items():
+        n = per_id.get(nid)
+        if not n or t < dal or n.get("diretta_calcio"):   # la diretta della partita la fa gol.py su tutti e due
+            continue
+        if nid not in gia:
+            out.append((t, n, False))
+        elif AGG_USCITO in fb.get(nid, set()) and AGG_USCITO not in gia[nid] and uscite.get(nid, t) < t:
+            out.append((t, n, True))
+    return [(n, agg) for _, n, agg in sorted(out, key=lambda x: x[0])]
+
+
+def quota_finita(ig, token):
+    """True se Meta dice che il tetto dei post in 24 ore è quasi pieno (content_publishing_limit); se non si legge,
+    si va avanti."""
+    try:
+        d = (chiama("GET", f"{ig}/content_publishing_limit", token, {"fields": "quota_usage,config"}).get("data")
+             or [{}])[0]
+        uso, tot = d.get("quota_usage"), (d.get("config") or {}).get("quota_total")
+    except Exception as e:
+        print(f"  Instagram: non leggo il tetto di Meta dei post in 24 ore ({e}), vado avanti")
+        return False
+    if uso is not None and tot:
+        print(f"  Instagram: tetto di Meta, {uso} post su {tot} nelle ultime 24 ore")
+        if uso >= tot - QUOTA_MARGINE:
+            print("Instagram: tetto di Meta quasi pieno, per ora non pubblico")
+            return True
+    return False
 
 
 if __name__ == "__main__":

@@ -588,7 +588,9 @@ caporedattore:
 La **cronaca dei paesi vale come quella della città** (lui: «paesi dipende, se cronaca come la città»): un morto sulla
 statale a Forchia è 5 come a Benevento. Il resto dei paesi in genere è 3: il programma ne fa uscire al massimo uno
 all'ora, perché la pagina non diventi solo notizie di paesi («non vorrei invasioni di notizie solo di paesi»).
-Su Facebook escono le notizie da 3 in su (al massimo una ogni 20 minuti), su Instagram solo 4 e 5; quelle da 1 e 2
+Su Facebook e Instagram escono le stesse notizie, da 3 in su (al massimo una ogni 20 minuti), nello stesso momento:
+dal 27 ott 2026 Instagram pubblica quello che pubblica Facebook, subito dopo (lui: «instagram e facebook in sincronia,
+stessi post in contemporanea», «sì 3 in su, fallo»; prima Instagram solo 4 e 5). Quelle da 1 e 2
 restano sul sito e su Telegram. I comunicati arrivati per posta escono comunque, tutti, subito. Se `importanza`
 manca il programma la ricava dalla categoria, peggio di te: scrivila sempre.
 

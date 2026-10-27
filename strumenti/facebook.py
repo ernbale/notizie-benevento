@@ -55,10 +55,12 @@ ORE_FINESTRA = 12
 # l'importanza da 1 a 5 che scrive l'agente (AGENTE.md, «L'importanza per i social»: Benevento Calcio sempre 5,
 # politica 4, la cronaca dei paesi come quella della città), più un po' per la fonte ufficiale, per Benevento città e
 # per i giornali che la riportano; si dimezza ogni 12 ore, ma un avviso ancora in vigore no. Su Facebook escono quelle
-# da SOGLIA_FB in su, su Instagram da SOGLIA_IG; i comunicati arrivati per posta («subito») escono tutti, comunque.
+# da SOGLIA_FB in su; i comunicati arrivati per posta («subito») escono tutti, comunque. Dal 27 ott 2026 Instagram
+# pubblica le stesse notizie di Facebook, subito dopo (l'«Agente Social», instagram.da_facebook; lui: «instagram e
+# facebook in sincronia», «sì 3 in su, fallo»): prima Instagram aveva la sua soglia, 4.
 # Delle notizie dei paesi che non sono cronaca e valgono 3 ne esce al massimo una ogni PAESI_MINUTI (lui: «non vorrei
 # invasioni di notizie solo di paesi»).
-SOGLIA_FB, SOGLIA_IG = 3, 4
+SOGLIA_FB = SOGLIA_IG = 3
 PAESI_MINUTI = 60
 GIORNI_AVVISI = 3
 AVVISI_VECCHI = False   # vedi candidate()

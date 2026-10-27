@@ -60,7 +60,10 @@ doppioni (la memoria di cosa era già uscito copriva un giorno solo; una foto ri
 - tutto ciò che allarga chi può uscire deve stare dentro i giorni che `gia_pubblicate` legge (`GIORNI_MEMORIA`);
 - un invio con risposta incerta non si ripete (`riprova`);
 - dopo il primo giro vero guarda la Pagina e il profilo Instagram veri (i log non bastano) e cerca doppioni.
-Oggi: una notizia ogni 20 minuti, nessun tetto, comunicati subito, classifica con `importanza` 1-5 (AGENTE.md). Un
+Oggi: una notizia ogni 20 minuti, nessun tetto, comunicati subito, classifica con `importanza` 1-5 (AGENTE.md), da 3 in
+su. Dal 27 ott l'«Agente Social»: sceglie facebook.py, Instagram pubblica le stesse notizie subito dopo e nello stesso
+ordine (instagram.da_facebook; se resta indietro recupera una ogni 10 minuti; guarda il tetto di Meta dei post in 24
+ore). Un
 aggiornamento col titolo diverso non è un doppione. Per togliere un post da Facebook: «Sposta nell'archivio»; su
 Instagram lo toglie lui dall'app.
 
