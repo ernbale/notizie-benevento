@@ -3,6 +3,80 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "benevento-catanzaro-1-1-salvemini-buso-27-ottobre",
+   "titolo": "Serie B, Benevento-Catanzaro 1-1: Salvemini segna su rigore, Buso pareggia al 92'",
+   "titolo_google": "Serie B, Benevento-Catanzaro 1-1: pari di Buso al 92'",
+   "sintesi": "Benevento-Catanzaro, partita di Serie BKT di martedì 27 ottobre, finisce 1-1. Il Benevento era passato al 51' con un rigore di Salvemini, il Catanzaro ha pareggiato al 92' con Buso.",
+   "categoria": "sport",
+   "sport": "calcio",
+   "zona": "benevento",
+   "immagine": "calcio",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-27T21:11+01:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 5,
+   "fonti": [
+    {
+     "nome": "Benevento Calcio",
+     "url": "https://www.beneventocalcio.club/news/notizie/7677/serie-bkt-2026-2027-benevento-catanzaro-1-1-il-tabellino-della-gara.shtml",
+     "ufficiale": true
+    }
+   ],
+   "comunicati": [
+    "uaa608e02ebe"
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Benevento e Catanzaro pareggiano 1-1 nella partita di Serie BKT giocata martedì 27 ottobre. I giallorossi sono passati in vantaggio al 51' con un calcio di rigore trasformato da Salvemini; il Catanzaro ha pareggiato al 92' con Buso.",
+      "fonti": [
+       "Benevento Calcio"
+      ]
+     },
+     {
+      "testo": "Buso era entrato al 79' al posto di Di Francesco, che a sua volta aveva sostituito Dorval al 59'. La partita è cominciata con 14 minuti di ritardo per l'infortunio di Gabriel Arditi, giocatore del Catanzaro.",
+      "fonti": [
+       "Benevento Calcio"
+      ]
+     },
+     {
+      "testo": "Il Benevento di Antonio Floro Flores è sceso in campo con Vannucchi; Siatounis, Maita, Salvemini, Cherubini, Lamesta, Scognamillo, Dalle Mura, Sernicola, Beruatto, Kouan. Poi sono entrati Okereke per Lamesta e Prisco per Kouan al 62', Mignani per Salvemini al 67', Saio per Cherubini e Romano per Beruatto all'86'. In panchina sono rimasti Esposito, Caldirola, Mannini, Simonetti, Schimmenti, Verdi e Tumminello.",
+      "fonti": [
+       "Benevento Calcio"
+      ]
+     },
+     {
+      "testo": "Il Catanzaro di Michele Mignani ha giocato con Pigliacelli; Imperiale, Antonini, Iemmello, Petriccione, Koffi, Ruggero, Candela, Franky Tchaouna, Alesi, Dorval. I cambi: Frosinini per Antonini e Di Francesco per Dorval al 59', Pafundi per Petriccione e D'Alessandro per Candela al 71', Buso per Di Francesco al 79'. A disposizione c'erano anche Marietta, Postiglione, Pogacar, Cassa, Verrengia, Arditi e Mosti.",
+      "fonti": [
+       "Benevento Calcio"
+      ]
+     },
+     {
+      "testo": "Sono stati ammoniti Kouan e Scognamillo del Benevento, Antonini e Candela del Catanzaro. Ha arbitrato Alberto Poli di Verona, con gli assistenti Alessio Berti di Prato e Andrea Bianchini di Perugia; quarto ufficiale Giuseppe Mucera di Palermo, al VAR Daniele Rutella di Enna, AVAR Marco Guida di Torre Annunziata.",
+      "fonti": [
+       "Benevento Calcio"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Benevento Calcio",
+      "titolo": "SERIE BKT 2026-2027: BENEVENTO-CATANZARO 1-1 IL TABELLINO DELLA GARA",
+      "url": "https://www.beneventocalcio.club/news/notizie/7677/serie-bkt-2026-2027-benevento-catanzaro-1-1-il-tabellino-della-gara.shtml",
+      "data": "27 ott, 21:11",
+      "ufficiale": true
+     }
+    ]
+   },
+   "subito": true,
+   "foto": "calcio-21"
+  },
+  {
    "id": "benevento-catanzaro-arditi-malore-panchina-vigorito",
    "titolo": "Benevento-Catanzaro, malore in panchina per Arditi del Catanzaro prima della partita: portato in ospedale per accertamenti",
    "titolo_google": "Benevento-Catanzaro, malore per Arditi prima della partita",
