@@ -3,6 +3,81 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "benevento-catanzaro-cancelli-vigorito-ore-17-accesso-stadio",
+   "titolo": "Benevento-Catanzaro, cancelli del Vigorito aperti dalle 17: le regole per entrare allo stadio",
+   "titolo_google": "Benevento-Catanzaro, cancelli aperti dalle 17 al Vigorito",
+   "sintesi": "Per Benevento-Catanzaro di martedì 27 ottobre alle 19 i cancelli dello stadio Ciro Vigorito aprono alle 17. Il Benevento Calcio chiede ai tifosi di arrivare con largo anticipo, con biglietto o abbonamento e un documento d'identità valido.",
+   "categoria": "sport",
+   "sport": "calcio",
+   "zona": "benevento",
+   "immagine": "stadio",
+   "luogo": "Benevento",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 5,
+   "in_vigore_fino": "2026-10-27",
+   "fonti": [
+    {
+     "nome": "Benevento Calcio",
+     "url": "https://www.beneventocalcio.club/news/comunicatistampa/7680/benevento-catanzaro-informazioni-ai-tifosi-per-l-accesso-allo-stadio.shtml",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Per Benevento-Catanzaro, la partita di martedì 27 ottobre alle 19, i cancelli dello stadio Ciro Vigorito apriranno al pubblico alle 17, due ore prima del calcio d'inizio. Il Benevento Calcio invita tutti gli spettatori ad arrivare allo stadio con largo anticipo.",
+      "fonti": [
+       "Benevento Calcio"
+      ]
+     },
+     {
+      "testo": "La società prevede molta gente e ricorda i rallentamenti delle partite precedenti. Per questo raccomanda di non arrivare tutti nell'ultima ora prima della partita, soprattutto nei settori più frequentati.",
+      "fonti": [
+       "Benevento Calcio"
+      ]
+     },
+     {
+      "testo": "Ai varchi bisogna presentarsi con il biglietto o l'abbonamento, di carta (non plastificato) oppure sul telefono, e con un documento d'identità valido: serve a controllare che i dati della persona siano quelli scritti sul biglietto. Chi ha il biglietto sul telefono deve avere il codice QR o il codice a barre già aperto e ben visibile sullo schermo, con la luminosità giusta.",
+      "fonti": [
+       "Benevento Calcio"
+      ]
+     },
+     {
+      "testo": "Al tornello il codice va appoggiato bene sul lettore. Si entra solo dopo che il codice è stato letto e sullo schermo compare il segnale verde.",
+      "fonti": [
+       "Benevento Calcio"
+      ]
+     },
+     {
+      "testo": "Il club chiede anche di rispettare il regolamento dello stadio e le indicazioni degli steward e delle forze dell'ordine. In particolare è vietato occupare le scale e le vie di fuga, portare dentro materiale esplosivo o fuochi d'artificio ed esporre striscioni o altro materiale che non sia stato autorizzato prima. Secondo la società, arrivare puntuali e seguire le indicazioni del personale renderà l'ingresso più veloce e più sicuro.",
+      "fonti": [
+       "Benevento Calcio"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Benevento Calcio",
+      "titolo": "BENEVENTO-CATANZARO: INFORMAZIONI AI TIFOSI PER L'ACCESSO ALLO STADIO",
+      "url": "https://www.beneventocalcio.club/news/comunicatistampa/7680/benevento-catanzaro-informazioni-ai-tifosi-per-l-accesso-allo-stadio.shtml",
+      "data": "27 ott, 08:45",
+      "ufficiale": true
+     }
+    ]
+   },
+   "comunicati": [
+    "u5e1416ff9b0"
+   ],
+   "subito": true,
+   "pubblicato": "2026-10-27T08:53:02+01:00",
+   "foto": "stadio-8"
+  },
+  {
    "id": "benevento-ecosistema-urbano-2026-85esima-legambiente",
    "titolo": "Benevento scende all'85° posto nella classifica ambientale Ecosistema Urbano 2026: un anno fa era 80ª",
    "titolo_google": "Ecosistema Urbano 2026: Benevento 85ª su 106 capoluoghi",
