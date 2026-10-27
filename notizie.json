@@ -1,43 +1,44 @@
 {
- "aggiornato": "2026-10-27T19:12+01:00",
+ "aggiornato": "2026-10-27T20:12+01:00",
  "giornali_letti": 14,
  "notizie": [
   {
-   "id": "san-giorgio-del-sannio-frontale-tangenziale-quattro-feriti",
-   "titolo": "San Giorgio del Sannio, scontro frontale sulla rampa della tangenziale: quattro persone in ospedale, non gravi",
-   "titolo_google": "San Giorgio del Sannio, frontale sulla tangenziale: 4 feriti",
-   "sintesi": "Martedì 27 ottobre, nel tardo pomeriggio, due auto si sono scontrate frontalmente sulla rampa della tangenziale all'ingresso di San Giorgio del Sannio. Le quattro persone a bordo sono state portate in ospedale, ma non sono in pericolo. Lunghe code sul raccordo e su via dei Sanniti.",
-   "categoria": "cronaca",
-   "zona": "provincia",
-   "luogo": "San Giorgio del Sannio",
-   "pubblicato": "2026-10-27T18:49+01:00",
+   "id": "benevento-catanzaro-arditi-malore-panchina-vigorito",
+   "titolo": "Benevento-Catanzaro, malore in panchina per Arditi del Catanzaro prima della partita: portato in ospedale per accertamenti",
+   "titolo_google": "Benevento-Catanzaro, malore per Arditi prima della partita",
+   "sintesi": "Martedì 27 ottobre, poco prima del fischio d'inizio al Vigorito, Gabriele Arditi del Catanzaro si è sentito male vicino alla panchina e ha perso conoscenza per qualche istante. Si è ripreso subito ed è stato portato in ospedale per controlli; la partita è cominciata con 15 minuti di ritardo.",
+   "categoria": "sport",
+   "sport": "calcio",
+   "zona": "benevento",
+   "luogo": "Benevento, stadio Vigorito",
+   "pubblicato": "2026-10-27T19:27+01:00",
    "stato": "una_fonte",
    "rilevante": false,
    "importanza": 4,
    "fonti": [
     {
-     "nome": "Lab TV",
-     "url": "https://www.labtv.net/cronaca/2026/10/27/uscita-tangenziale-san-giorgio-del-sannio-frontale-tra-due-auto/"
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/paura-per-arditi-prima-di-benevento-catanzaro-perde-conoscenza-e-va-in-ospedale/"
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Martedì 27 ottobre, nel tardo pomeriggio, due auto si sono scontrate frontalmente sulla rampa della tangenziale all'ingresso di San Giorgio del Sannio. Le persone coinvolte sono quattro: chi guidava una Mazda e le tre persone che viaggiavano su una Fiat Panda. Sono state tutte portate in ospedale, ma nessuna è in pericolo.",
+      "testo": "Martedì 27 ottobre, pochi istanti prima del fischio d'inizio di Benevento-Catanzaro allo stadio Vigorito, Gabriele Arditi, calciatore del Catanzaro che era in panchina, si è sentito male. È caduto vicino alla panchina della squadra ospite e ha perso conoscenza per qualche momento.",
       "fonti": [
-       "Lab TV"
+       "TV7 Benevento"
       ]
      },
      {
-      "testo": "Con ogni probabilità una delle due auto andava verso Benevento e l'altra verso San Giorgio. Perché si siano scontrate lo stanno ancora ricostruendo i Carabinieri, intervenuti sul posto insieme ai Vigili del fuoco.",
+      "testo": "I compagni hanno chiamato subito lo staff medico e sono intervenuti i soccorritori della Misericordia. Arditi si è ripreso in poco tempo e la situazione è sembrata sotto controllo; per prudenza è stato comunque portato in ospedale per gli accertamenti.",
       "fonti": [
-       "Lab TV"
+       "TV7 Benevento"
       ]
      },
      {
-      "testo": "Dopo l'incidente il traffico si è bloccato: lunghe file di auto hanno fermato sia il raccordo autostradale sia via dei Sanniti, all'ingresso del paese.",
+      "testo": "Per quello che è successo la partita è cominciata con 15 minuti di ritardo.",
       "fonti": [
-       "Lab TV"
+       "TV7 Benevento"
       ]
      }
     ],
@@ -45,8 +46,105 @@
     "concordano": [],
     "divergono": [],
     "non_si_sa": [
-     "Che cosa ha causato lo scontro.",
-     "A che ora il traffico è tornato normale."
+     "L'esito degli accertamenti in ospedale.",
+     "In quale ospedale è stato portato."
+    ],
+    "fonti": [
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Paura per Arditi prima di Benevento-Catanzaro: perde conoscenza e va in ospedale.",
+      "url": "https://www.tvsette.net/paura-per-arditi-prima-di-benevento-catanzaro-perde-conoscenza-e-va-in-ospedale/",
+      "data": "27 ott, 19:27"
+     }
+    ]
+   }
+  },
+  {
+   "id": "san-giorgio-del-sannio-frontale-tangenziale-quattro-feriti",
+   "titolo": "San Giorgio del Sannio, scontro frontale allo svincolo del raccordo: tre feriti portati al San Pio",
+   "titolo_google": "San Giorgio del Sannio, frontale allo svincolo: tre feriti",
+   "sintesi": "Martedì 27 ottobre, verso le 18:30, una Fiat Panda e una Mazda si sono scontrate frontalmente allo svincolo del raccordo autostradale di San Giorgio del Sannio. I tre che viaggiavano sulla Panda sono stati portati al pronto soccorso del San Pio, non in gravi condizioni; illeso chi guidava la Mazda.",
+   "categoria": "cronaca",
+   "zona": "provincia",
+   "luogo": "San Giorgio del Sannio, svincolo del raccordo autostradale",
+   "pubblicato": "2026-10-27T19:49+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 4,
+   "fonti": [
+    {
+     "nome": "Lab TV",
+     "url": "https://www.labtv.net/cronaca/2026/10/27/uscita-tangenziale-san-giorgio-del-sannio-frontale-tra-due-auto/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/frontale-sul-raccordo-autostradale-tre-feriti-intervengono-carabinieri-e-118/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/27/foto-san-giorgio-del-sannio-incidente-allo-svincolo-autostradale-tre-feriti/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/san-giorgio-del-sannio-incidente-allo-svincolo-autostradale-tre-feriti-foto/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Martedì 27 ottobre, verso le 18:30, una Fiat Panda e una Mazda si sono scontrate frontalmente allo svincolo del raccordo autostradale di San Giorgio del Sannio, quello per Castel del Lago. I feriti sono tre: le persone che viaggiavano sulla Panda, portate al pronto soccorso dell'ospedale San Pio di Benevento. Secondo le prime notizie nessuna è in gravi condizioni; chi guidava la Mazda non si è fatto male.",
+      "fonti": [
+       "Anteprima24",
+       "BeneventoNews24",
+       "TV7 Benevento"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Da una prima ricostruzione la Panda avrebbe invaso la corsia opposta, finendo contro la Mazda. Le cause esatte le stanno accertando i Carabinieri della stazione di San Giorgio del Sannio, che hanno fatto i rilievi.",
+      "fonti": [
+       "BeneventoNews24",
+       "TV7 Benevento",
+       "Anteprima24"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Sul posto sono arrivati anche il 118, i Vigili del fuoco e la Polizia municipale di San Giorgio, che ha regolato il traffico. L'uscita verso Benevento è stata chiusa e si sono formate lunghe file di auto sul raccordo e su via dei Sanniti, all'ingresso del paese.",
+      "fonti": [
+       "BeneventoNews24",
+       "TV7 Benevento",
+       "Lab TV"
+      ],
+      "giorno": "2026-10-27"
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Lo scontro frontale tra una Fiat Panda e una Mazda allo svincolo di San Giorgio del Sannio, con feriti i tre a bordo della Panda.",
+      "fonti": [
+       "Lab TV",
+       "Anteprima24",
+       "BeneventoNews24",
+       "TV7 Benevento"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "Lab TV, la prima a darne notizia, scriveva di quattro persone portate in ospedale, contando anche chi guidava la Mazda; BeneventoNews24, TV7 e Anteprima24 parlano di tre feriti, tutti della Panda, e BeneventoNews24 e TV7 dicono che chi guidava la Mazda è illeso. Vale la versione dei tre feriti, riportata da più testate.",
+      "fonti": [
+       "Lab TV",
+       "BeneventoNews24",
+       "TV7 Benevento",
+       "Anteprima24"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "Perché la Panda abbia invaso l'altra corsia.",
+     "A che ora lo svincolo è stato riaperto."
     ],
     "fonti": [
      {
@@ -54,8 +152,35 @@
       "titolo": "Uscita tangenziale San Giorgio del Sannio: frontale tra due auto",
       "url": "https://www.labtv.net/cronaca/2026/10/27/uscita-tangenziale-san-giorgio-del-sannio-frontale-tra-due-auto/",
       "data": "27 ott, 18:49"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Frontale sul raccordo autostradale, tre feriti: intervengono carabinieri e 118",
+      "url": "https://www.anteprima24.it/benevento/frontale-sul-raccordo-autostradale-tre-feriti-intervengono-carabinieri-e-118/",
+      "data": "27 ott, 19:15"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "FOTO – San Giorgio del Sannio, incidente allo svincolo autostradale: tre feriti",
+      "url": "https://www.beneventonews24.it/2026/10/27/foto-san-giorgio-del-sannio-incidente-allo-svincolo-autostradale-tre-feriti/",
+      "data": "27 ott, 19:41"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "San Giorgio del Sannio, incidente allo svincolo autostradale: tre feriti (foto)",
+      "url": "https://www.tvsette.net/san-giorgio-del-sannio-incidente-allo-svincolo-autostradale-tre-feriti-foto/",
+      "data": "27 ott, 19:49"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Martedì sera tre testate confermano lo scontro: i feriti sono tre, tutti a bordo della Panda, portati al San Pio e non gravi; illeso chi guidava la Mazda.",
+     "fonti": [
+      "BeneventoNews24",
+      "Anteprima24"
+     ],
+     "quando": "2026-10-27T20:12+01:00",
+     "titolo_prima": "San Giorgio del Sannio, scontro frontale sulla rampa della tangenziale: quattro persone in ospedale, non gravi"
+    }
    }
   },
   {
@@ -158,6 +283,10 @@
     {
      "nome": "NTR24",
      "url": "https://www.ntr24.tv/2026/10/27/pannarano-mercoledi-il-corso-bls-d-e-pbls-d/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/27/pannarano-mercoledi-alle-1830-il-corso-bls-d-e-pbls-d-al-comune/"
     }
    ],
    "articolo": {
@@ -210,6 +339,12 @@
       "titolo": "Pannarano, mercoledì il corso BLS-D e PBLS-D",
       "url": "https://www.ntr24.tv/2026/10/27/pannarano-mercoledi-il-corso-bls-d-e-pbls-d/",
       "data": "27 ott, 18:13"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Pannarano, mercoledì alle 18:30 il corso BLS-D e PBLS-D al Comune",
+      "url": "https://www.beneventonews24.it/2026/10/27/pannarano-mercoledi-alle-1830-il-corso-bls-d-e-pbls-d-al-comune/",
+      "data": "27 ott, 19:22"
      }
     ]
    },
@@ -233,6 +368,10 @@
      "nome": "Benevento Calcio",
      "url": "https://www.beneventocalcio.club/news/notizie/7676/serie-bkt-2026-2027-benevento-catanzaro-le-formazioni-ufficiali.shtml",
      "ufficiale": true
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/serie-bkt-2026-2027-benevento-catanzaro-le-formazioni-ufficiali/"
     }
    ],
    "articolo": {
@@ -273,6 +412,12 @@
       "url": "https://www.beneventocalcio.club/news/notizie/7676/serie-bkt-2026-2027-benevento-catanzaro-le-formazioni-ufficiali.shtml",
       "data": "27 ott, 18:48",
       "ufficiale": true
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "SERIE BKT 2026-2027: BENEVENTO-CATANZARO LE FORMAZIONI UFFICIALI.",
+      "url": "https://www.tvsette.net/serie-bkt-2026-2027-benevento-catanzaro-le-formazioni-ufficiali/",
+      "data": "27 ott, 18:59"
      }
     ]
    },
@@ -1620,6 +1765,10 @@
     {
      "nome": "Ottopagine",
      "url": "https://www.ottopagine.it/bn/cronaca/442330/tutela-sicurezza-stradale-i-controlli-della-polizia.shtml"
+    },
+    {
+     "nome": "Il Mattino",
+     "url": "https://www.ilmattino.it/benevento/benevento_polizia_stradale_controlli_multe_patenti_ritirate_verifiche_agenti_ultime_notizie_oggi-9852416.html"
     }
    ],
    "articolo": {
@@ -1700,6 +1849,12 @@
       "titolo": "Tutela sicurezza stradale: i controlli della Polizia",
       "url": "https://www.ottopagine.it/bn/cronaca/442330/tutela-sicurezza-stradale-i-controlli-della-polizia.shtml",
       "data": "27 ott, 17:23"
+     },
+     {
+      "nome": "Il Mattino",
+      "titolo": "Benevento, la Polstrada intensifica i controlli: scattano multe e patenti ritirate",
+      "url": "https://www.ilmattino.it/benevento/benevento_polizia_stradale_controlli_multe_patenti_ritirate_verifiche_agenti_ultime_notizie_oggi-9852416.html",
+      "data": "27 ott, 19:26"
      }
     ]
    }
@@ -1733,6 +1888,10 @@
     {
      "nome": "Anteprima24",
      "url": "https://www.anteprima24.it/benevento/infortuni-lavoro-bilancio-formazione/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/presentato-il-progetto-cantieri-sicuri-promosso-da-formedil-di-benevento-e-avellino-in-collaborazione-con-inail-campania-video/"
     }
    ],
    "articolo": {
@@ -1829,6 +1988,12 @@
       "titolo": "FOTO E VIDEO – Sicurezza in edilizia: presentato a Benevento il progetto ‘Cantieri Sicuri’",
       "url": "https://www.beneventonews24.it/2026/10/27/foto-e-video-sicurezza-in-edilizia-presentato-a-benevento-il-progetto-cantieri-sicuri/",
       "data": "27 ott, 18:59"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Presentato il Progetto “Cantieri Sicuri” promosso da Formedil di Benevento e Avellino in collaborazione con INAIL Campania (video)",
+      "url": "https://www.tvsette.net/presentato-il-progetto-cantieri-sicuri-promosso-da-formedil-di-benevento-e-avellino-in-collaborazione-con-inail-campania-video/",
+      "data": "27 ott, 19:36"
      }
     ]
    },
@@ -3244,27 +3409,42 @@
      "nome": "LND Benevento",
      "url": "https://campania.lnd.it/comunicato-ufficiale-n-15-del-26-ottobre-2026-d-p-benevento/",
      "ufficiale": true
+    },
+    {
+     "nome": "LND Benevento (27/10)",
+     "url": "https://campania.lnd.it/comunicato-ufficiale-n-16-del-27-ottobre-2026-d-p-benevento/",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
      {
+      "testo": "Martedì 27 ottobre la delegazione di Benevento della Lega Nazionale Dilettanti ha pubblicato i calendari delle partite dei due gironi, A e B, dell'Under 15 provinciale, con il comunicato ufficiale numero 16.",
+      "fonti": [
+       "LND Benevento (27/10)"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
       "testo": "Il campionato provinciale Under 15 di calcio della delegazione di Benevento della Lega Nazionale Dilettanti comincia nel fine settimana di sabato 31 ottobre e domenica 1 novembre. Le squadre sono 17, divise in due gironi.",
       "fonti": [
        "LND Benevento"
-      ]
+      ],
+      "giorno": "2026-10-26"
      },
      {
       "testo": "Nel girone A giocano Academy Pesco Sannita, Apice Calcio 1964, Aurelio M. Pacillo, Cesare Ventura, Grippo DRS Benevento, San Giovanni Bruno Founder, Valfortore e Juventina Circello. Nel girone B ci sono P. Casale Academy Cervinara, Airola Calcio, Bucciano Soccer Academy, G.S. Telese Terme, Giada Club Calcio a 5, Nuova Telis, Paolisi, Real Dugenta Calcio e Valle Telesina.",
       "fonti": [
        "LND Benevento"
-      ]
+      ],
+      "giorno": "2026-10-26"
      },
      {
       "testo": "Negli stessi giorni, 31 ottobre e 1 novembre, partono anche i tornei dei più piccoli: Esordienti e Pulcini. Primi Calci e Piccoli Amici cominciano il 7 e 8 novembre; la delegazione avverte che le date possono cambiare. Il calendario ufficiale delle partite è quello pubblicato online sul sito delle gare della LND.",
       "fonti": [
        "LND Benevento"
-      ]
+      ],
+      "giorno": "2026-10-26"
      }
     ],
     "cronologia": [],
@@ -3278,8 +3458,22 @@
       "url": "https://campania.lnd.it/comunicato-ufficiale-n-15-del-26-ottobre-2026-d-p-benevento/",
       "data": "26 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "LND Benevento (27/10)",
+      "titolo": "Comunicato Ufficiale n. 16 del 27 ottobre 2026 – D.P. Benevento",
+      "url": "https://campania.lnd.it/comunicato-ufficiale-n-16-del-27-ottobre-2026-d-p-benevento/",
+      "data": "27 ott, 19:23",
+      "ufficiale": true
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Martedì 27 ottobre la Lega Nazionale Dilettanti di Benevento ha pubblicato i calendari dei gironi A e B dell'Under 15.",
+     "fonti": [
+      "LND Benevento (27/10)"
+     ],
+     "quando": "2026-10-27T20:12+01:00"
+    }
    },
    "foto": "calcio-8"
   },
