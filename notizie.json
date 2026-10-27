@@ -1,7 +1,224 @@
 {
- "aggiornato": "2026-10-27T11:17+01:00",
+ "aggiornato": "2026-10-27T12:14+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "montesarchio-stalking-55enne-riesame-revoca-domiciliari",
+   "titolo": "Montesarchio, accusata di stalking contro l'ex amante e la famiglia: il Riesame revoca i domiciliari a una 55enne",
+   "titolo_google": "Montesarchio, stalking: il Riesame revoca i domiciliari a 55enne",
+   "sintesi": "Il Tribunale del Riesame di Napoli ha revocato gli arresti domiciliari a una donna di 55 anni di Montesarchio, accusata di stalking contro l'ex amante, la moglie e i due figli minorenni. Resta il divieto di vivere a Montesarchio.",
+   "categoria": "cronaca",
+   "zona": "caudina",
+   "luogo": "Montesarchio",
+   "pubblicato": "2026-10-27T11:54:00+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 4,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/27/montesarchio-55enne-accusata-di-stalking-allex-amante-e-alla-famiglia-revocati-i-domiciliari/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/27/scarcerata-55enne-di-montesarchio-perseguitava-lamante-e-tutta-la-sua-famiglia/"
+    },
+    {
+     "nome": "Il Caudino",
+     "url": "https://ilcaudino.it/montesarchio-scarcerata-55enne-che-perseguitava-lex-amante-e-la-sua-famiglia-uid-5/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Una donna di 55 anni di Montesarchio, accusata di stalking contro l'uomo con cui aveva avuto una relazione, la moglie di lui e i loro due figli minorenni, non è più agli arresti domiciliari. Li ha revocati il Tribunale del Riesame di Napoli, che ha accolto la richiesta della difesa. Al posto dei domiciliari resta il divieto di dimora: la donna non può vivere a Montesarchio.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24",
+       "Il Caudino"
+      ]
+     },
+     {
+      "testo": "Secondo l'accusa, la relazione extraconiugale era finita circa cinque anni fa, ma la donna avrebbe continuato a perseguitare l'uomo e la sua famiglia. L'indagine è dei Carabinieri, coordinati dalla Procura di Benevento, ed è partita dalla querela dell'uomo. Tra le prove ci sono le immagini delle telecamere comunali, le dichiarazioni delle persone offese, figli compresi, e le testimonianze raccolte.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24",
+       "Il Caudino"
+      ]
+     },
+     {
+      "testo": "Le misure contro di lei erano diventate via via più pesanti. Prima il giudice delle indagini preliminari (gip) del Tribunale di Benevento le aveva vietato di avvicinarsi alla famiglia, con il braccialetto elettronico e l'obbligo di restare ad almeno un chilometro di distanza. Dopo nuove denunce per presunte violazioni e nuovi presunti episodi, era arrivato anche il divieto di dimora a Montesarchio, e infine gli arresti domiciliari, ora revocati.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24",
+       "Il Caudino"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Il Riesame di Napoli ha revocato i domiciliari e lasciato il divieto di dimora a Montesarchio; indagine dei Carabinieri coordinata dalla Procura di Benevento, partita dalla querela dell'uomo.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24",
+       "Il Caudino"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Perché il Riesame ha ritenuto i domiciliari non più necessari: le motivazioni non sono state rese note.",
+     "Se resta anche il divieto di avvicinamento con il braccialetto elettronico."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Montesarchio, 55enne accusata di stalking all’ex amante e alla famiglia: revocati i domiciliari",
+      "url": "https://www.ntr24.tv/2026/10/27/montesarchio-55enne-accusata-di-stalking-allex-amante-e-alla-famiglia-revocati-i-domiciliari/",
+      "data": "27 ott, 11:54"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Scarcerata 55enne di Montesarchio: perseguitava l’amante e la sua famiglia",
+      "url": "https://www.beneventonews24.it/2026/10/27/scarcerata-55enne-di-montesarchio-perseguitava-lamante-e-tutta-la-sua-famiglia/",
+      "data": "27 ott, 11:25"
+     },
+     {
+      "nome": "Il Caudino",
+      "titolo": "Montesarchio: Scarcerata 55enne che perseguitava l’ex amante e la sua famiglia",
+      "url": "https://ilcaudino.it/montesarchio-scarcerata-55enne-che-perseguitava-lex-amante-e-la-sua-famiglia-uid-5/",
+      "data": "27 ott, 11:42"
+     }
+    ]
+   }
+  },
+  {
+   "id": "benevento-via-avellino-cupa-ponticelli-collevaccino-pertini-lavori-fibra",
+   "titolo": "Benevento, lavori per la fibra: strada ristretta in via Avellino il 29 e 30 ottobre e in via Cupa Ponticelli, Collevaccino e Pertini fino al 13 novembre",
+   "titolo_google": "Benevento, lavori fibra: via Avellino e via Pertini ristrette",
+   "sintesi": "Due ordinanze del Comune di Benevento restringono la strada per lavori legati alla fibra ottica: in via Avellino, vicino all'incrocio con via Saragat, il 29 e 30 ottobre; in via Cupa Ponticelli, via Collevaccino e via Pertini dal 29 ottobre al 13 novembre, nei giorni feriali dalle 8 alle 17. Se serve, senso unico alternato.",
+   "categoria": "strade",
+   "zona": "benevento",
+   "immagine": "lavori-stradali",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-27",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "in_vigore_dal": "2026-10-29",
+   "in_vigore_fino": "2026-11-13",
+   "traffico": "ristretta",
+   "fonti": [
+    {
+     "nome": "Comune di Benevento (ordinanza 454)",
+     "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80119",
+     "ufficiale": true
+    },
+    {
+     "nome": "Comune di Benevento (ordinanza 455)",
+     "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80120",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Benevento, da giovedì 29 ottobre, due cantieri legati alla fibra ottica restringono la strada in alcune vie della città. Le regole le ha fissate il Servizio Traffico del Comune con due ordinanze, la 454 e la 455, pubblicate martedì 27 ottobre all'albo pretorio.",
+      "fonti": [
+       "Comune di Benevento (ordinanza 454)",
+       "Comune di Benevento (ordinanza 455)"
+      ]
+     },
+     {
+      "testo": "In via Cupa Ponticelli, via Collevaccino e via Pertini si rifà l'asfalto nei tratti scavati nei mesi scorsi per una nuova linea in fibra ottica. I lavori vanno avanti da giovedì 29 ottobre a venerdì 13 novembre, solo dal lunedì al venerdì, dalle 8 alle 17, un tratto alla volta. Nei tratti del cantiere la strada è più stretta e c'è il divieto di sosta e fermata con rimozione; solo se serve, il traffico passa a senso unico alternato, regolato da operai con la paletta o da semafori.",
+      "fonti": [
+       "Comune di Benevento (ordinanza 454)"
+      ]
+     },
+     {
+      "testo": "In via Avellino, nel tratto vicino all'incrocio con via Saragat, si scava per posare i cavi in fibra di nuovi allacci. Il cantiere c'è giovedì 29 e venerdì 30 ottobre, dalle 8 alle 17: strada ristretta, divieto di sosta e fermata su tutti e due i lati e, all'occorrenza, senso unico alternato con operai con la paletta o semafori.",
+      "fonti": [
+       "Comune di Benevento (ordinanza 455)"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di Benevento (ordinanza 454)",
+      "titolo": "Restringimento carreggiata, divieti di sosta e fermata con rimozione coatta, e all'occorrenza, solo se necessario, senso unico alternato a mezzo movieri e / o impianti semaforici, con attuazione graduale e progressiva nel periodo da Giovedì 29 Ottobre a Venerdì 13 Novembre 2026, dalle ore 8:00 alle ore 17:00 dei soli giorni dal lunedì al venerdì, negli specifici tratti di Via Cupa Ponticelli, Via Collevaccino e Via Pertini interessati dall'esecuzione dei lavori di ripristino del manto stradale oggetto nei mesi scorsi di attività di scavo in funzione della realizzazione di un nuovo tronco di linea fibra ottica.",
+      "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80119",
+      "data": "27 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "Comune di Benevento (ordinanza 455)",
+      "titolo": "Restringimento carreggiata, divieto di sosta e fermata con vigenza ambo i lati e all'occorrenza senso unico alternato mediante movieri e / o semafori mobili lungo Via Avellino, nel solo tratto adiacente l'incrocio con Via Saragat, limitatamente alle giornate di Giovedì 29 Ottobre e Venerdì 30 Ottobre 2026, dalle ore 8:00 alle ore 17:00, in concomitanza con scavi sulle sede stradale funzionali alla posa di cavi in fibra ottica per allaccio nuove utenze",
+      "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80120",
+      "data": "27 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "foto": "lavori-stradali-13"
+  },
+  {
+   "id": "buonalbergo-cimitero-divieto-sosta-1-2-novembre-2026",
+   "titolo": "Buonalbergo, divieto di sosta vicino al cimitero il 1° e il 2 novembre",
+   "titolo_google": "Buonalbergo, divieto di sosta al cimitero 1 e 2 novembre",
+   "sintesi": "Per Ognissanti e la Commemorazione dei Defunti a Buonalbergo non si può parcheggiare in via Della Madonna e nel viale del cimitero domenica 1° novembre, e nel viale del cimitero lunedì 2 novembre, dalle 8 alle 19. Le auto in sosta vengono rimosse.",
+   "categoria": "strade",
+   "zona": "fortore",
+   "immagine": "cimitero",
+   "luogo": "Buonalbergo",
+   "pubblicato": "2026-10-27",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "in_vigore_dal": "2026-11-01",
+   "in_vigore_fino": "2026-11-02",
+   "fonti": [
+    {
+     "nome": "Comune di Buonalbergo",
+     "url": "https://www.halleyweb.com/c062011/mc/mc_p_dettaglio.php?id_pubbl=11324",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Buonalbergo, per Ognissanti e la Commemorazione dei Defunti, vicino al cimitero non si potrà parcheggiare. Lo ha deciso la Polizia Municipale con l'ordinanza numero 27 del 26 ottobre, perché in quei giorni si aspetta molta gente al cimitero comunale.",
+      "fonti": [
+       "Comune di Buonalbergo"
+      ]
+     },
+     {
+      "testo": "Domenica 1° novembre il divieto di sosta vale in via Della Madonna e nel viale del cimitero; lunedì 2 novembre solo nel viale del cimitero. In tutti e due i giorni vale dalle 8 alle 19, e le auto lasciate in sosta vengono portate via con il carro attrezzi.",
+      "fonti": [
+       "Comune di Buonalbergo"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di Buonalbergo",
+      "titolo": "DISCIPLINA TRAFFICO VEICOLARE IN OCCASIONE DELLA FESTIVITA' DI OGNISSANTI E DELLA COMMEMORAZIONE DEI DEFUNTI.",
+      "url": "https://www.halleyweb.com/c062011/mc/mc_p_dettaglio.php?id_pubbl=11324",
+      "data": "27 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "foto": "cimitero-15"
+  },
   {
    "id": "benevento-linux-day-2026-lilis-oltre-100-partecipanti",
    "titolo": "Benevento, Linux Day 2026 all'Università del Sannio: oltre 100 partecipanti",
@@ -102,13 +319,17 @@
    "immagine": "universita",
    "luogo": "Benevento",
    "pubblicato": "2026-10-27T11:01:00+01:00",
-   "stato": "una_fonte",
+   "stato": "confermata",
    "rilevante": false,
    "importanza": 2,
    "fonti": [
     {
      "nome": "BeneventoNews24",
      "url": "https://www.beneventonews24.it/2026/10/27/start-cup-campania-2026-sonaflux-delluniversita-del-sannio-tra-i-14-finalisti/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/unisannio-finale-startcupcampania-sonaflux-rakova/"
     }
    ],
    "articolo": {
@@ -116,27 +337,41 @@
      {
       "testo": "C'è anche un progetto dell'Università del Sannio tra i finalisti di Start Cup Campania 2026, la gara tra idee d'impresa nate dalla ricerca negli atenei della regione. Si chiama Sonaflux ed è di Elvira Rakova: è uno degli 11 progetti ammessi alla competizione principale.",
       "fonti": [
-       "BeneventoNews24"
-      ]
+       "BeneventoNews24",
+       "Cronache del Sannio"
+      ],
+      "giorno": "2026-10-27"
      },
      {
-      "testo": "La finale regionale è venerdì 30 ottobre al Complesso Santa Patrizia di Napoli, in via Luciano Armanni 5. La giornata comincia alle 11.30 con gli incontri tra i gruppi finalisti e le imprese. In tutto i finalisti sono 14, da 7 università: agli 11 della competizione principale si aggiungono 3 progetti di soli studenti, in gara per il Premio Speciale Mario Raffa.",
+      "testo": "La finale regionale è venerdì 30 ottobre al Complesso Santa Patrizia di Napoli, in via Luciano Armanni 5. La giornata comincia alle 11.30 con gli incontri tra i gruppi finalisti e le imprese; alle 15 i finalisti presentano i loro progetti alla giuria. In tutto i finalisti sono 14, da 7 università: agli 11 della competizione principale si aggiungono 3 progetti di soli studenti, in gara per il Premio Speciale Mario Raffa.",
       "fonti": [
-       "BeneventoNews24"
-      ]
+       "BeneventoNews24",
+       "Cronache del Sannio"
+      ],
+      "giorno": "2026-10-27"
      },
      {
       "testo": "I primi cinque classificati si dividono 12mila euro: 5mila al primo, 3mila al secondo, 2mila al terzo, mille al quarto e al quinto. Gli stessi cinque passano al Premio Nazionale per l'Innovazione, la gara italiana delle idee d'impresa nate nelle università. Ci sono poi premi speciali, tra cui quello per il miglior progetto di un gruppo a maggioranza femminile, da 6mila euro tra soldi e consulenze.",
       "fonti": [
-       "BeneventoNews24"
-      ]
+       "BeneventoNews24",
+       "Cronache del Sannio"
+      ],
+      "giorno": "2026-10-27"
      }
     ],
     "cronologia": [],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "Sonaflux, di Elvira Rakova dell'Università del Sannio, tra gli 11 finalisti; la finale venerdì 30 ottobre al Complesso Santa Patrizia di Napoli; 12mila euro ai primi cinque.",
+      "fonti": [
+       "BeneventoNews24",
+       "Cronache del Sannio"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [
-     "Di cosa si occupa il progetto Sonaflux: l'articolo non lo spiega."
+     "Di cosa si occupa il progetto Sonaflux: i due articoli non lo spiegano."
     ],
     "fonti": [
      {
@@ -144,6 +379,12 @@
       "titolo": "Start Cup Campania 2026, Sonaflux dell’Università del Sannio tra i 14 finalisti",
       "url": "https://www.beneventonews24.it/2026/10/27/start-cup-campania-2026-sonaflux-delluniversita-del-sannio-tra-i-14-finalisti/",
       "data": "27 ott, 11:01"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Unisannio in finale alla Start Cup Campania con Sonaflux di Elvira Rakova",
+      "url": "https://www.cronachedelsannio.it/sannionews24/unisannio-finale-startcupcampania-sonaflux-rakova/",
+      "data": "27 ott, 11:15"
      }
     ]
    },
@@ -5916,22 +6157,22 @@
    "id": "sant-agata-de-goti-pronto-soccorso-h24-tar-puglianello",
    "titolo": "Sant'Agata de' Goti, il TAR ordina all'ospedale San Pio di riportare il pronto soccorso h24",
    "titolo_google": "Sant'Agata de' Goti, il TAR ordina il pronto soccorso h24",
-   "sintesi": "Il TAR Campania ha accolto il ricorso del Comune di Puglianello e ha ordinato all'Azienda ospedaliera San Pio di riaprire 24 ore su 24 il pronto soccorso di Sant'Agata de' Goti, oggi aperto dalle 8 alle 18. Se non lo fa in 60 giorni, interviene un commissario già nominato.",
+   "sintesi": "Il TAR Campania ha ordinato all'Azienda ospedaliera San Pio di riaprire 24 ore su 24 il pronto soccorso di Sant'Agata de' Goti, oggi aperto dalle 8 alle 18, entro 60 giorni. Il 27 ottobre il consigliere regionale Errico ha chiesto al presidente della Regione Fico di farlo subito.",
    "categoria": "altro",
    "zona": "caudina",
    "immagine": "pronto-soccorso",
    "luogo": "Sant'Agata de' Goti",
-   "pubblicato": "2026-10-26T07:34:00+01:00",
+   "pubblicato": "2026-10-27T10:33:00+01:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
     {
      "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/24/ospedale-santagata-il-tar-accoglie-il-ricorso-del-comune-di-puglianello-il-pronto-soccorso-dovra-tornare-h24/"
+     "url": "https://www.ntr24.tv/2026/10/27/pronto-soccorso-santagata-de-goti-errico-la-regione-attivi-ogni-misura-necessaria/"
     },
     {
      "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/sanita-rubano-dal-tar-un-altro-risultato-importante-sul-pronto-soccorso-di-santagata-de-goti/"
+     "url": "https://www.anteprima24.it/benevento/pronto-soccorso-santagata-de-goti-errico-la-regione-attivi-ogni-misura-necessaria/"
     },
     {
      "nome": "Il Mattino",
@@ -5948,10 +6189,32 @@
     {
      "nome": "Il Sannio Quotidiano",
      "url": "https://www.ilsannioquotidiano.it/2026/10/26/tar-ordina-apertura-h24-dellospedale-di-santagata-rubano-ora-morgante-non-puo-trovare-scuse/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/pronto-soccorso-santagata-errico-regione-attivi-misura-necessaria/"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Martedì 27 ottobre il pronto soccorso dell'ospedale di Sant'Agata de' Goti è ancora aperto solo di giorno. Il consigliere regionale di Forza Italia Fernando Errico, che fa parte della Commissione Sanità, ha scritto al presidente della Regione Campania, Roberto Fico: gli chiede di intervenire sugli uffici competenti e sulla direzione dell'Azienda ospedaliera San Pio perché il pronto soccorso torni aperto 24 ore su 24, come ha ordinato il TAR.",
+      "fonti": [
+       "NTR24 (27/10)",
+       "Cronache del Sannio",
+       "Anteprima24 (27/10)"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Il TAR ha dato 60 giorni di tempo dalla notifica dell'ordinanza, ma per Errico la Regione e il San Pio devono trovare da subito personale e soluzioni, senza aspettare la scadenza: «per chi vive nelle aree interne, poter contare su un Pronto soccorso operativo anche di notte è una necessità», dice. Chiede anche che dopo la riapertura si discuta del futuro dell'ospedale, a partire dal personale, dall'organizzazione dei servizi e dal potenziamento dell'assistenza.",
+      "fonti": [
+       "NTR24 (27/10)",
+       "Cronache del Sannio",
+       "Anteprima24 (27/10)"
+      ],
+      "giorno": "2026-10-27"
+     },
      {
       "testo": "Oggi il pronto soccorso dell'ospedale Sant'Alfonso Maria de' Liguori di Sant'Agata de' Goti è aperto solo dalle 8 alle 18, scrive Il Mattino. Con l'ordinanza n. 5913 il TAR obbliga l'Azienda ospedaliera San Pio a dare seguito a una sua decisione del 2025 (la n. 2514), che già chiedeva di riaprirlo 24 ore su 24 e a cui l'Azienda non aveva dato esecuzione. Per i giudici il numero di persone che lavorano nell'Azienda non mostra che sia impossibile tenerlo aperto tutto il giorno.",
       "fonti": [
@@ -6030,6 +6293,13 @@
       "fonti": [
        "Il Sannio Quotidiano"
       ]
+     },
+     {
+      "data": "27 ottobre",
+      "fatto": "Errico scrive al presidente della Regione Fico: chiede di far riaprire subito il pronto soccorso h24.",
+      "fonti": [
+       "NTR24 (27/10)"
+      ]
      }
     ],
     "concordano": [
@@ -6049,7 +6319,15 @@
       ]
      }
     ],
-    "divergono": [],
+    "divergono": [
+     {
+      "testo": "Il numero della decisione del 2025 che il TAR fa eseguire: Il Mattino scrive n. 2514, NTR24 (27/10) scrive sentenza n. 7096/2025. Il numero dell'ordinanza di adesso, 5913, è lo stesso per tutti.",
+      "fonti": [
+       "Il Mattino",
+       "NTR24 (27/10)"
+      ]
+     }
+    ],
     "non_si_sa": [
      "Cosa risponde l'Azienda ospedaliera San Pio e se riaprirà il pronto soccorso h24 prima dei 60 giorni.",
      "Chi è il commissario ad acta nominato."
@@ -6090,15 +6368,33 @@
       "titolo": "Tar ordina apertura H24 dell’ospedale di Sant’Agata, Rubano: “Ora Morgante non può trovare scuse”",
       "url": "https://www.ilsannioquotidiano.it/2026/10/26/tar-ordina-apertura-h24-dellospedale-di-santagata-rubano-ora-morgante-non-puo-trovare-scuse/",
       "data": "26 ott, 07:34"
+     },
+     {
+      "nome": "NTR24 (27/10)",
+      "titolo": "Pronto Soccorso Sant’Agata de’ Goti, Errico: «La Regione attivi ogni misura necessaria»",
+      "url": "https://www.ntr24.tv/2026/10/27/pronto-soccorso-santagata-de-goti-errico-la-regione-attivi-ogni-misura-necessaria/",
+      "data": "27 ott, 09:51"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Pronto soccorso Sant’Agata, Errico: “La Regione attivi ogni misura necessaria”",
+      "url": "https://www.cronachedelsannio.it/sannionews24/pronto-soccorso-santagata-errico-regione-attivi-misura-necessaria/",
+      "data": "27 ott, 10:33"
+     },
+     {
+      "nome": "Anteprima24 (27/10)",
+      "titolo": "Pronto Soccorso Sant’Agata de’ Goti, Errico: «La Regione attivi ogni misura necessaria»",
+      "url": "https://www.anteprima24.it/benevento/pronto-soccorso-santagata-de-goti-errico-la-regione-attivi-ogni-misura-necessaria/",
+      "data": "27 ott, 09:21"
      }
     ],
     "aggiornamento": {
-     "testo": "Il Mattino scrive che oggi il pronto soccorso di Sant'Agata è aperto solo dalle 8 alle 18 e ha tre medici dei cinque o sei che servirebbero; il consigliere regionale Errico chiede di riaprirlo h24 senza aspettare i 60 giorni.",
+     "testo": "Martedì 27 ottobre il consigliere regionale Fernando Errico ha scritto al presidente della Regione Roberto Fico perché faccia riaprire subito h24 il pronto soccorso, senza aspettare i 60 giorni fissati dal TAR.",
      "fonti": [
-      "Il Mattino",
-      "BeneventoNews24"
+      "NTR24 (27/10)",
+      "Cronache del Sannio"
      ],
-     "quando": "2026-10-25T06:11+01:00"
+     "quando": "2026-10-27T12:14+01:00"
     }
    },
    "foto": "pronto-soccorso-2",
@@ -6579,19 +6875,19 @@
   },
   {
    "id": "benevento-corso-garibaldi-ragazza-aggredita-23-ottobre",
-   "titolo": "Benevento, ragazza colpita a Corso Garibaldi: il giovane dà la sua versione in Questura, per ora nessuna denuncia",
-   "titolo_google": "Corso Garibaldi, ragazza colpita: il giovane va in Questura",
-   "sintesi": "Venerdì 23 ottobre sera una ragazza è stata colpita al volto da un giovane sul Corso Garibaldi, a Benevento, e portata al San Pio. Il giovane è stato identificato e domenica, scrive Ottopagine, ha dato in Questura la sua versione: una lite con la ragazza, sua ex. Senza la querela di lei, per ora non c'è denuncia.",
+   "titolo": "Benevento, ragazza colpita a Corso Garibaldi: il questore dice che il giovane è stato denunciato",
+   "titolo_google": "Benevento, ragazza colpita a Corso Garibaldi: giovane denunciato",
+   "sintesi": "Venerdì 23 ottobre sera una ragazza è stata colpita al volto da un giovane sul Corso Garibaldi, a Benevento, e portata al San Pio. Il 27 ottobre il questore Giovanni Leuci ha detto che il responsabile è stato individuato subito e denunciato, e ha parlato di una lite tra ragazzi che si conoscevano.",
    "categoria": "cronaca",
    "zona": "benevento",
    "luogo": "Benevento, Corso Garibaldi",
-   "pubblicato": "2026-10-26T07:44:00+01:00",
+   "pubblicato": "2026-10-27T12:09:00+01:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
     {
      "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/23/benevento-ancora-violenza-al-corso-garibaldi-ragazza-picchiata-davanti-a-negozio-si-cerca-laggressore/"
+     "url": "https://www.ntr24.tv/2026/10/27/sicurezza-in-centro-storico-il-questore-leuci-attenzione-costante-serve-una-rete-tra-istituzioni/"
     },
     {
      "nome": "Ottopagine",
@@ -6652,6 +6948,13 @@
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Martedì 27 ottobre il questore di Benevento, Giovanni Leuci, ha detto che il responsabile è stato individuato subito e denunciato. Più che un'aggressione, per il questore è stata una lite tra due ragazzi che probabilmente si conoscevano e che è degenerata. Ha aggiunto che la Polizia segue con attenzione il centro storico già da prima dell'estate e che sulla sicurezza dei giovani serve l'aiuto di tutti: istituzioni, scuola, società e stampa: «Ci siamo e continueremo ad esserci».",
+      "fonti": [
+       "NTR24 (questore)"
+      ],
+      "giorno": "2026-10-27"
+     },
      {
       "testo": "Lunedì 26 ottobre anche Il Sannio Quotidiano riporta la versione del giovane, un ventenne di origine egiziana: si è presentato in Questura sabato 24 ottobre, assistito dal suo avvocato, e agli agenti della Polizia ha detto che non c'è stata «alcuna aggressione», ma una serie di fatti cominciata con gli insulti che la ragazza di 18 anni gli avrebbe rivolto. È la sua versione: le indagini sono della Questura.",
       "fonti": [
@@ -6765,6 +7068,13 @@
       "fonti": [
        "Ottopagine (25/10)"
       ]
+     },
+     {
+      "data": "27 ottobre",
+      "fatto": "Il questore Leuci: responsabile individuato subito e denunciato.",
+      "fonti": [
+       "NTR24 (questore)"
+      ]
      }
     ],
     "concordano": [
@@ -6816,11 +7126,18 @@
        "Ottopagine (25/10)",
        "Ottopagine"
       ]
+     },
+     {
+      "testo": "La denuncia: domenica Ottopagine scriveva che, senza la querela della ragazza, non c'era nessuna denuncia; martedì il questore ha detto che il responsabile è stato denunciato. Vale quello che dice il questore, ma non è stato detto per quale reato.",
+      "fonti": [
+       "Ottopagine (25/10)",
+       "NTR24 (questore)"
+      ]
      }
     ],
     "non_si_sa": [
-     "Se la ragazza presenterà querela e quale è la sua versione dei fatti.",
-     "Se la Polizia confermerà la ricostruzione: non ha diffuso comunicati."
+     "Se la Polizia confermerà la ricostruzione: non ha diffuso comunicati.",
+     "Per quale reato è stato denunciato il giovane."
     ],
     "fonti": [
      {
@@ -6912,15 +7229,21 @@
       "titolo": "Ragazza ferita lungo il corso, il 20enne egiziano si difende: “Nessuna aggressione, lei mi ha insultato”",
       "url": "https://www.ilsannioquotidiano.it/2026/10/26/ragazza-ferita-lungo-il-corso-il-20enne-egiziano-si-difende-nessuna-aggressione-lei-mi-ha-insultato/",
       "data": "26 ott, 07:44"
+     },
+     {
+      "nome": "NTR24 (questore)",
+      "titolo": "Sicurezza in centro storico, il questore Leuci: “Attenzione costante, serve una rete tra istituzioni”",
+      "url": "https://www.ntr24.tv/2026/10/27/sicurezza-in-centro-storico-il-questore-leuci-attenzione-costante-serve-una-rete-tra-istituzioni/",
+      "data": "27 ott, 12:09"
      }
     ],
     "aggiornamento": {
-     "testo": "Domenica 25 ottobre Ottopagine scrive che il giovane ha dato in Questura la sua versione (una lite con la ragazza, sua ex): per ora nessuna denuncia, perché lei non ha presentato querela.",
+     "testo": "Martedì 27 ottobre il questore Giovanni Leuci ha detto che il giovane è stato individuato subito e denunciato, e ha parlato di una lite tra due ragazzi che probabilmente si conoscevano.",
      "fonti": [
-      "Ottopagine (25/10)"
+      "NTR24 (questore)"
      ],
-     "quando": "2026-10-25T10:10+01:00",
-     "titolo_prima": "Benevento, ragazza colpita con uno schiaffo a Corso Garibaldi: la Polizia ha identificato il giovane"
+     "quando": "2026-10-27T12:14+01:00",
+     "titolo_prima": "Benevento, ragazza colpita a Corso Garibaldi: il giovane dà la sua versione in Questura, per ora nessuna denuncia"
     }
    },
    "importanza": 4
