@@ -1,7 +1,60 @@
 {
- "aggiornato": "2026-10-27T08:12+01:00",
+ "aggiornato": "2026-10-27T09:17+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-docente-convitto-giannone-eredita-rai1",
+   "titolo": "Benevento, una docente del Convitto Giannone in gara a «L'Eredità» su Rai 1: torna anche martedì sera",
+   "titolo_google": "L'Eredità, docente del Convitto Giannone di Benevento in gara",
+   "sintesi": "Luigia Torrusio, docente di Lettere del Convitto Nazionale «Pietro Giannone» di Benevento, ha giocato lunedì 26 ottobre a «L'Eredità», il quiz di Rai 1 condotto da Marco Liorni. Si è fermata prima della Ghigliottina, ma martedì 27 torna in gara.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-27T08:47+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/27/leredita-la-docente-sannita-luigia-torrusio-protagonista-su-raiuno-tornera-in-gara-anche-stasera/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Luigia Torrusio, docente di Lettere del Convitto Nazionale «Pietro Giannone» di Benevento, è stata tra i concorrenti della puntata di lunedì 26 ottobre di «L'Eredità», il quiz di Rai 1 condotto da Marco Liorni, che quest'anno compie venticinque edizioni. Nata a Salerno, vive e insegna nel Sannio.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Ha superato diverse sfide e ha contribuito a far salire il montepremi prima a 30mila e poi a 40mila euro, salvandosi alla «Scossa» per appena due secondi. Si è fermata nella sfida che porta alla Ghigliottina, il gioco finale, contro un avversario che ha indovinato quasi tutte le risposte.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "La sua partecipazione non è finita: martedì 27 ottobre torna in gara nella nuova puntata del programma.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "L’Eredità, la docente sannita Luigia Torrusio protagonista su Raiuno: tornerà in gara anche stasera",
+      "url": "https://www.ntr24.tv/2026/10/27/leredita-la-docente-sannita-luigia-torrusio-protagonista-su-raiuno-tornera-in-gara-anche-stasera/",
+      "data": "27 ott, 08:47"
+     }
+    ]
+   }
+  },
   {
    "id": "benevento-catanzaro-cancelli-vigorito-ore-17-accesso-stadio",
    "titolo": "Benevento-Catanzaro, cancelli del Vigorito aperti dalle 17: le regole per entrare allo stadio",
@@ -2785,14 +2838,14 @@
   },
   {
    "id": "castelpoto-santa-croce-del-sannio-elenco-elettori-fuori-sede",
-   "titolo": "Elettori fuori sede, undici Comuni del Sannio hanno aperto l'elenco: domande entro il 31 dicembre",
-   "titolo_google": "Elettori fuori sede in undici Comuni del Sannio: come fare",
-   "sintesi": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte e Pontelandolfo hanno aperto l'elenco degli elettori fuori sede previsto dalla nuova legge elettorale: chi per studio, lavoro o cure vive in una regione diversa da quella in cui vota può chiedere di votare dove abita. Per studio e lavoro la domanda va fatta entro il 31 dicembre, per le votazioni dell'anno dopo.",
+   "titolo": "Elettori fuori sede, dodici Comuni del Sannio hanno aperto l'elenco: domande entro il 31 dicembre",
+   "titolo_google": "Elettori fuori sede in dodici Comuni del Sannio: come fare",
+   "sintesi": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo e Ceppaloni hanno aperto l'elenco degli elettori fuori sede previsto dalla nuova legge elettorale: chi per studio, lavoro o cure vive in una regione diversa da quella in cui vota può chiedere di votare dove abita. Per studio e lavoro la domanda va fatta entro il 31 dicembre, per le votazioni dell'anno dopo.",
    "categoria": "altro",
    "zona": "provincia",
-   "luogo": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte e Pontelandolfo",
+   "luogo": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo e Ceppaloni",
    "immagine": "elezioni",
-   "pubblicato": "2026-10-26",
+   "pubblicato": "2026-10-27",
    "stato": "ufficiale",
    "rilevante": false,
    "fonti": [
@@ -2850,21 +2903,34 @@
      "nome": "Comune di Pontelandolfo",
      "url": "https://www.comune.pontelandolfo.bn.it/novita/notizie/novita_156.html",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di Ceppaloni",
+     "url": "https://ceppaloni.halleyweb.it/mc/mc_p_dettaglio.php?id_pubbl=16193",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Undici Comuni del Sannio, da Castelpoto a Pontelandolfo, hanno aperto l'elenco comunale degli elettori fuori sede. Lo prevede la legge 180 del 9 ottobre 2026 sulle elezioni di Camera e Senato: chi vive per un periodo in una regione diversa da quella del Comune dove è iscritto per votare può chiedere di votare nel Comune dove abita. Vale per le elezioni politiche ed europee e per i referendum, non per le elezioni comunali e regionali.",
+      "testo": "Dodici Comuni del Sannio, da Castelpoto a Ceppaloni, hanno aperto l'elenco comunale degli elettori fuori sede. Lo prevede la legge 180 del 9 ottobre 2026 sulle elezioni di Camera e Senato: chi vive per un periodo in una regione diversa da quella del Comune dove è iscritto per votare può chiedere di votare nel Comune dove abita. Vale per le elezioni politiche ed europee e per i referendum, non per le elezioni comunali e regionali.",
       "fonti": [
        "Comune di Castelpoto",
        "Comune di Santa Croce del Sannio",
        "Comune di Apice",
        "Comune di Cusano Mutri",
        "Comune di Dugenta",
-       "Comune di Pesco Sannita"
+       "Comune di Pesco Sannita",
+       "Comune di Ceppaloni"
       ],
-      "giorno": "2026-10-26"
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Martedì 27 ottobre l'avviso sul voto fuori sede è uscito anche all'albo pretorio del Comune di Ceppaloni. Le regole e i tempi per la domanda sono gli stessi degli altri paesi.",
+      "fonti": [
+       "Comune di Ceppaloni"
+      ],
+      "giorno": "2026-10-27"
      },
      {
       "testo": "Possono chiederlo gli studenti e i lavoratori che restano fuori regione per almeno nove mesi, chi si cura per almeno tre mesi in una struttura sanitaria di un'altra regione, i familiari che li assistono e i genitori che accompagnano un figlio minorenne in cura fuori regione.",
@@ -3019,14 +3085,21 @@
       "url": "https://www.comune.pontelandolfo.bn.it/novita/notizie/novita_156.html",
       "data": "26 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "Comune di Ceppaloni",
+      "titolo": "Avviso - voto fuori sede",
+      "url": "https://ceppaloni.halleyweb.it/mc/mc_p_dettaglio.php?id_pubbl=16193",
+      "data": "27 ott",
+      "ufficiale": true
      }
     ],
     "aggiornamento": {
-     "testo": "Lunedì 26 ottobre anche Pontelandolfo ha pubblicato l'avviso con il modello di domanda: i Comuni del Sannio che hanno aperto l'elenco degli elettori fuori sede sono undici.",
+     "testo": "Martedì 27 ottobre anche Ceppaloni ha pubblicato all'albo pretorio l'avviso sul voto fuori sede: i Comuni del Sannio che hanno aperto l'elenco degli elettori fuori sede sono dodici.",
      "fonti": [
-      "Comune di Pontelandolfo"
+      "Comune di Ceppaloni"
      ],
-     "quando": "2026-10-27T06:15+01:00",
+     "quando": "2026-10-27T09:17+01:00",
      "titolo_prima": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta e Pesco Sannita, aperto l'elenco degli elettori fuori sede: domande entro il 31 dicembre"
     }
    },
@@ -8316,13 +8389,13 @@
   },
   {
    "id": "rifiuti-blocco-tir-apice-morcone-cusano-sant-angelo-a-cupolo",
-   "titolo": "Blocco dei tir e rifiuti nel Sannio: i Comuni dove la raccolta si è fermata, a Sant'Arcangelo Trimonte di nuovo regolare dal 26 ottobre",
-   "titolo_google": "Sant'Arcangelo Trimonte, raccolta rifiuti di nuovo regolare",
-   "sintesi": "Con le strade bloccate dai camion e il gasolio che scarseggiava, in diversi Comuni del Sannio la raccolta dei rifiuti si è fermata o ha rischiato di fermarsi: Sant'Angelo a Cupolo, Sant'Agata de' Goti, Apollosa, Circello e altri. Lunedì 26 ottobre Sant'Arcangelo Trimonte annuncia che il servizio torna regolare.",
+   "titolo": "Blocco dei tir e rifiuti nel Sannio: i Comuni dove la raccolta si è fermata, a Circello e Sant'Arcangelo Trimonte di nuovo regolare",
+   "titolo_google": "Rifiuti nel Sannio, raccolta di nuovo regolare a Circello",
+   "sintesi": "Con le strade bloccate dai camion e il gasolio che scarseggiava, in diversi Comuni del Sannio la raccolta dei rifiuti si è fermata o ha rischiato di fermarsi: Sant'Angelo a Cupolo, Sant'Agata de' Goti, Apollosa, Circello e altri. Ora il servizio riparte: Sant'Arcangelo Trimonte dal 26 ottobre, Circello il 27 ottobre riapre il centro di raccolta e torna al porta a porta.",
    "categoria": "altro",
    "zona": "provincia",
    "luogo": "Sannio",
-   "pubblicato": "2026-10-23T08:30:00+02:00",
+   "pubblicato": "2026-10-27T08:47+01:00",
    "stato": "ufficiale",
    "rilevante": false,
    "fonti": [
@@ -8415,10 +8488,22 @@
      "nome": "Comune di Sant'Arcangelo Trimonte (26/10)",
      "url": "https://www.halleyweb.com/c062078/mc/mc_p_dettaglio.php?id_pubbl=5843",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di Circello (27/10)",
+     "url": "https://comune.circello.bn.it/albo-pretorio/?dettaglio_id=306200",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "A Circello, nel Fortore, la raccolta dei rifiuti riparte. Martedì 27 ottobre il sindaco ha firmato l'ordinanza n. 48, che revoca la n. 47 del 23 ottobre: il centro di raccolta comunale riapre e torna la raccolta porta a porta.",
+      "fonti": [
+       "Comune di Circello (27/10)"
+      ],
+      "giorno": "2026-10-27"
+     },
      {
       "testo": "A Sant'Arcangelo Trimonte la raccolta dei rifiuti torna regolare da lunedì 26 ottobre. Il sindaco Felice Iammarino ha avvisato che Ricicla, la ditta che fa il servizio e gestisce il centro di raccolta comunale, il 24 ottobre ha comunicato che i problemi sono finiti. La ditta aveva annunciato lo stop il 22 ottobre per le agitazioni dei camionisti, la mancanza di carburante e le difficoltà a portare i rifiuti agli impianti. Ora la raccolta si fa con i soliti giorni e le solite modalità.",
       "fonti": [
@@ -8585,6 +8670,13 @@
       "fonti": [
        "Comune di Sant'Arcangelo Trimonte (26/10)"
       ]
+     },
+     {
+      "data": "27 ottobre",
+      "fatto": "Circello revoca l'ordinanza n. 47: riapre il centro di raccolta e torna la raccolta porta a porta.",
+      "fonti": [
+       "Comune di Circello (27/10)"
+      ]
      }
     ],
     "concordano": [],
@@ -8722,15 +8814,22 @@
       "url": "https://www.halleyweb.com/c062078/mc/mc_p_dettaglio.php?id_pubbl=5843",
       "data": "26 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "Comune di Circello (27/10)",
+      "titolo": "Revoca ordinanza sindacale n.47/2026. Riapertura centro di raccolta e ripristino servizio di raccolta porta a porta",
+      "url": "https://comune.circello.bn.it/albo-pretorio/?dettaglio_id=306200",
+      "data": "27 ott, 08:47",
+      "ufficiale": true
      }
     ],
     "aggiornamento": {
-     "testo": "Lunedì 26 ottobre il Comune di Sant'Arcangelo Trimonte ha avvisato che la raccolta dei rifiuti torna regolare: la ditta Ricicla ha comunicato che i problemi con il carburante e con gli impianti sono finiti.",
+     "testo": "Martedì 27 ottobre il sindaco di Circello ha revocato l'ordinanza che aveva fermato i rifiuti: riapre il centro di raccolta comunale e torna la raccolta porta a porta.",
      "fonti": [
-      "Comune di Sant'Arcangelo Trimonte (26/10)"
+      "Comune di Circello (27/10)"
      ],
-     "quando": "2026-10-26T20:10+01:00",
-     "titolo_prima": "Blocco dei tir, rifiuti a rischio nel Sannio: raccolta ferma a Sant'Angelo a Cupolo, da giovedì sospesa a Sant'Agata de' Goti, a San Giorgio del Sannio non si conferisce l'indifferenziata"
+     "quando": "2026-10-27T09:17+01:00",
+     "titolo_prima": "Blocco dei tir e rifiuti nel Sannio: i Comuni dove la raccolta si è fermata, a Sant'Arcangelo Trimonte di nuovo regolare dal 26 ottobre"
     }
    },
    "immagine": "rifiuti",
