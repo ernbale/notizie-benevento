@@ -28,13 +28,17 @@ import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 
 CART = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "img", "temi")
-MINIMO, FREQUENTI, IN_TESTA = 9, 14, 20
+MINIMO, FREQUENTI, IN_TESTA = 9, 16, 24   # 27 ott 2026, lui: «crea altre varianti» (prima 9, 14, 20)
 TESTA = ["teatro", "calcio", "lavori-stradali", "strada-chiusa", "treno", "scuola", "pioggia", "autobus", "ospedale",
          "rifiuti", "carburante", "camion"]
 MODELLO, QUALITA, MISURA = "gpt-image-2.5-sunburst", "medium", "1536x1024"
+# 27 ott 2026, lui: «se possibile foto un pochino più cinematografiche» (prima: «Realistic documentary photo, natural
+# colors, 35mm lens»); restano foto vere e sobrie, niente colori finti
 CORNICE = ("Editorial stock photograph for a local news website in southern Italy, province of Benevento (Sannio). "
-           "{scena}. Realistic documentary photo, natural colors, 35mm lens. No people, no faces, no text, no logos, "
-           "no license plates, no recognizable landmarks.")
+           "{scena}. Cinematic realistic photo: soft directional light, natural but rich color grading, gentle film "
+           "grain, shallow depth of field, 35mm lens, like a still from an Italian film. Believable and sober, no "
+           "exaggerated colors, no lens flares. No people, no faces, no text, no logos, no license plates, no "
+           "recognizable landmarks.")
 # inquadratura (e luce) diverse: la stessa scena diventa un'altra foto; la sola luce non basta (22 ott: bottiglie quasi uguali)
 MODI = ["a close-up detail of the main subject, shallow depth of field",
         "a wider view that shows more of the surroundings, on an overcast day",
@@ -64,7 +68,8 @@ def piano(temi):
     """(tema, numero del file, frase) per ogni foto che manca."""
     lavoro = []
     for tema, t in temi.items():
-        if not os.path.exists(os.path.join(CART, tema + ".jpg")):
+        if not os.path.exists(os.path.join(CART, tema + ".jpg")):   # tema nuovo: prima la sua foto (file <tema>.jpg)
+            lavoro.append((-1, 0, tema, 1, t["foto"]))
             continue
         ce = len(versioni(tema))
         varianti = t.get("varianti") or []
@@ -104,7 +109,7 @@ def genera(chiave, frase):
 def salva(dati, tema, numero):
     from PIL import Image
     im = Image.open(io.BytesIO(dati)).convert("RGB")
-    nome = f"{tema}-{numero}"
+    nome = tema if numero == 1 else f"{tema}-{numero}"
     im.save(os.path.join(CART, nome + ".jpg"), "JPEG", quality=82, optimize=True, progressive=True)
     m = im.resize((768, round(im.height * 768 / im.width)))
     m.save(os.path.join(CART, nome + "-m.jpg"), "JPEG", quality=80, optimize=True, progressive=True)

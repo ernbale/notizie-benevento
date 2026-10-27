@@ -15,7 +15,9 @@
    "an old chrome kitchen tap on a simple stone sink in an Italian village home, one single drop of water falling from the spout, no water flowing, a wider view that shows more of the surroundings, on an overcast day",
    "a row of plastic water bottles and a large jug on a kitchen counter, a wider view that shows more of the surroundings, on an overcast day",
    "a close-up of a closed water valve with a blue handle on a metal pipe, a wider view that shows more of the surroundings, on an overcast day",
-   "a row of plastic water bottles and a large jug on a kitchen counter, at golden hour in the late afternoon, warm light, a wider view that shows more of the surroundings, on an overcast day"
+   "a row of plastic water bottles and a large jug on a kitchen counter, at golden hour in the late afternoon, warm light, a wider view that shows more of the surroundings, on an overcast day",
+   "a close-up of a closed water valve with a blue handle on a metal pipe, in winter, under a grey sky, a wider view that shows more of the surroundings, on an overcast day",
+   "an old chrome kitchen tap on a simple stone sink in an Italian village home, one single drop of water falling from the spout, no water flowing, seen from a different side and a higher angle, in soft morning light"
   ],
   "frequente": true
  },
@@ -40,7 +42,12 @@
    "a mountain road blocked by a metal barrier with a plain red and white panel, seen from a different side and a higher angle, in soft morning light",
    "a red and white striped road barrier closing a narrow country road that winds through green hills, photographed from a low angle, at golden hour",
    "a mountain road blocked by a metal barrier with a plain red and white panel, photographed from a low angle, at golden hour",
-   "a red and white striped road barrier closing a narrow country road that winds through green hills, a different composition with the subject off-center, in winter under a grey sky"
+   "a red and white striped road barrier closing a narrow country road that winds through green hills, a different composition with the subject off-center, in winter under a grey sky",
+   "red and white plastic road barriers with a flashing amber lamp closing a street in a small town, a different composition with the subject off-center, in winter under a grey sky",
+   "red and white plastic road barriers with a flashing amber lamp closing a street in a small town, a view from above, in bright daylight",
+   "a mountain road blocked by a metal barrier with a plain red and white panel, a view from above, in bright daylight",
+   "a red and white striped road barrier closing a narrow country road that winds through green hills, at dusk, seen from further away, with the first lights on",
+   "a mountain road blocked by a metal barrier with a plain red and white panel, at dusk, seen from further away, with the first lights on"
   ]
  },
  "lavori-stradali": {
@@ -64,7 +71,12 @@
    "a section of road dug up with sand, new pipes and orange safety netting, seen from a different side and a higher angle, in soft morning light",
    "fresh black asphalt on a town street with orange traffic cones and a road roller parked in the background, photographed from a low angle, at golden hour",
    "a section of road dug up with sand, new pipes and orange safety netting, photographed from a low angle, at golden hour",
-   "fresh black asphalt on a town street with orange traffic cones and a road roller parked in the background, a different composition with the subject off-center, in winter under a grey sky"
+   "fresh black asphalt on a town street with orange traffic cones and a road roller parked in the background, a different composition with the subject off-center, in winter under a grey sky",
+   "an asphalt paving machine laying hot steaming asphalt on a road, a different composition with the subject off-center, in winter under a grey sky",
+   "an asphalt paving machine laying hot steaming asphalt on a road, a view from above, in bright daylight",
+   "a section of road dug up with sand, new pipes and orange safety netting, a view from above, in bright daylight",
+   "fresh black asphalt on a town street with orange traffic cones and a road roller parked in the background, at dusk, seen from further away, with the first lights on",
+   "a section of road dug up with sand, new pipes and orange safety netting, at dusk, seen from further away, with the first lights on"
   ]
  },
  "divieto-sosta": {
@@ -97,7 +109,9 @@
    "a landslide scar on a green hillside above a road, a wider view that shows more of the surroundings, on an overcast day",
    "the edge of a road partly collapsed after a landslide, with barriers, a wider view that shows more of the surroundings, on an overcast day",
    "a landslide scar on a green hillside above a road, seen from a different side and a higher angle, in soft morning light",
-   "the edge of a road partly collapsed after a landslide, with barriers, seen from a different side and a higher angle, in soft morning light"
+   "the edge of a road partly collapsed after a landslide, with barriers, seen from a different side and a higher angle, in soft morning light",
+   "mud and stones slid down onto the edge of a mountain road after heavy rain, a few orange cones beside it, photographed from a low angle, at golden hour",
+   "the edge of a road partly collapsed after a landslide, with barriers, photographed from a low angle, at golden hour"
   ],
   "frequente": true
  },
@@ -122,7 +136,12 @@
    "a wet piazza in the rain with puddles reflecting old buildings, seen from a different side and a higher angle, in soft morning light",
    "heavy rain falling on a cobblestone street of an old Italian town, puddles and grey sky, photographed from a low angle, at golden hour",
    "a wet piazza in the rain with puddles reflecting old buildings, photographed from a low angle, at golden hour",
-   "heavy rain falling on a cobblestone street of an old Italian town, puddles and grey sky, a different composition with the subject off-center, in winter under a grey sky"
+   "heavy rain falling on a cobblestone street of an old Italian town, puddles and grey sky, a different composition with the subject off-center, in winter under a grey sky",
+   "raindrops on a car windscreen with blurred red tail lights on a town street, a different composition with the subject off-center, in winter under a grey sky",
+   "raindrops on a car windscreen with blurred red tail lights on a town street, a view from above, in bright daylight",
+   "a wet piazza in the rain with puddles reflecting old buildings, a view from above, in bright daylight",
+   "heavy rain falling on a cobblestone street of an old Italian town, puddles and grey sky, at dusk, seen from further away, with the first lights on",
+   "a wet piazza in the rain with puddles reflecting old buildings, at dusk, seen from further away, with the first lights on"
   ]
  },
  "temporale": {
@@ -141,7 +160,9 @@
    "dark storm clouds rolling over a hill village, a wider view that shows more of the surroundings, on an overcast day",
    "a curtain of heavy rain over green countryside and a country road, a wider view that shows more of the surroundings, on an overcast day",
    "dark storm clouds rolling over a hill village, seen from a different side and a higher angle, in soft morning light",
-   "a curtain of heavy rain over green countryside and a country road, seen from a different side and a higher angle, in soft morning light"
+   "a curtain of heavy rain over green countryside and a country road, seen from a different side and a higher angle, in soft morning light",
+   "dark storm clouds and a lightning bolt over green rolling hills at dusk, photographed from a low angle, at golden hour",
+   "a curtain of heavy rain over green countryside and a country road, photographed from a low angle, at golden hour"
   ],
   "frequente": true
  },
@@ -175,7 +196,9 @@
    "a hill village under snow with smoke from chimneys, a wider view that shows more of the surroundings, on an overcast day",
    "a plain snowplough clearing a mountain road, a wider view that shows more of the surroundings, on an overcast day",
    "a hill village under snow with smoke from chimneys, seen from a different side and a higher angle, in soft morning light",
-   "a plain snowplough clearing a mountain road, seen from a different side and a higher angle, in soft morning light"
+   "a plain snowplough clearing a mountain road, seen from a different side and a higher angle, in soft morning light",
+   "a quiet mountain road covered in fresh snow between pine trees, photographed from a low angle, at golden hour",
+   "a plain snowplough clearing a mountain road, photographed from a low angle, at golden hour"
   ],
   "frequente": true
  },
@@ -214,7 +237,12 @@
    "a closed school gate with a chain on a rainy day, seen from a different side and a higher angle, in soft morning light",
    "an empty classroom with wooden desks, chairs and a blank green chalkboard, morning light, photographed from a low angle, at golden hour",
    "a closed school gate with a chain on a rainy day, photographed from a low angle, at golden hour",
-   "an empty classroom with wooden desks, chairs and a blank green chalkboard, morning light, a different composition with the subject off-center, in winter under a grey sky"
+   "an empty classroom with wooden desks, chairs and a blank green chalkboard, morning light, a different composition with the subject off-center, in winter under a grey sky",
+   "school backpacks hanging on hooks in a school corridor, a different composition with the subject off-center, in winter under a grey sky",
+   "school backpacks hanging on hooks in a school corridor, a view from above, in bright daylight",
+   "a closed school gate with a chain on a rainy day, a view from above, in bright daylight",
+   "an empty classroom with wooden desks, chairs and a blank green chalkboard, morning light, at dusk, seen from further away, with the first lights on",
+   "a closed school gate with a chain on a rainy day, at dusk, seen from further away, with the first lights on"
   ]
  },
  "mensa": {
@@ -247,7 +275,9 @@
    "cypress trees along the path of a quiet Italian cemetery, a wider view that shows more of the surroundings, on an overcast day",
    "flower pots and candles on marble ledges, no names or writing, a wider view that shows more of the surroundings, on an overcast day",
    "cypress trees along the path of a quiet Italian cemetery, seen from a different side and a higher angle, in soft morning light",
-   "flower pots and candles on marble ledges, no names or writing, seen from a different side and a higher angle, in soft morning light"
+   "flower pots and candles on marble ledges, no names or writing, seen from a different side and a higher angle, in soft morning light",
+   "white chrysanthemums and red votive candles on a stone ledge, cypress trees softly blurred behind, photographed from a low angle, at golden hour",
+   "flower pots and candles on marble ledges, no names or writing, photographed from a low angle, at golden hour"
   ],
   "frequente": true
  },
@@ -272,7 +302,12 @@
    "door-to-door waste collection bins and bags outside a house door, seen from a different side and a higher angle, in soft morning light",
    "a row of colourful recycling bins for separate waste collection on a town street, photographed from a low angle, at golden hour",
    "door-to-door waste collection bins and bags outside a house door, photographed from a low angle, at golden hour",
-   "a row of colourful recycling bins for separate waste collection on a town street, a different composition with the subject off-center, in winter under a grey sky"
+   "a row of colourful recycling bins for separate waste collection on a town street, a different composition with the subject off-center, in winter under a grey sky",
+   "a plain garbage truck collecting bins at dawn on a town street, a different composition with the subject off-center, in winter under a grey sky",
+   "a plain garbage truck collecting bins at dawn on a town street, a view from above, in bright daylight",
+   "door-to-door waste collection bins and bags outside a house door, a view from above, in bright daylight",
+   "a row of colourful recycling bins for separate waste collection on a town street, at dusk, seen from further away, with the first lights on",
+   "door-to-door waste collection bins and bags outside a house door, at dusk, seen from further away, with the first lights on"
   ]
  },
  "incendio": {
@@ -291,7 +326,9 @@
    "a burnt hillside with blackened trees after a wildfire, a wider view that shows more of the surroundings, on an overcast day",
    "flames burning dry grass at the edge of a field, a wider view that shows more of the surroundings, on an overcast day",
    "a burnt hillside with blackened trees after a wildfire, seen from a different side and a higher angle, in soft morning light",
-   "flames burning dry grass at the edge of a field, seen from a different side and a higher angle, in soft morning light"
+   "flames burning dry grass at the edge of a field, seen from a different side and a higher angle, in soft morning light",
+   "smoke rising from a brush fire on a dry hillside seen from far away, hazy sky, photographed from a low angle, at golden hour",
+   "flames burning dry grass at the edge of a field, photographed from a low angle, at golden hour"
   ],
   "frequente": true
  },
@@ -311,7 +348,9 @@
    "cracks in the plaster wall of an old building, a wider view that shows more of the surroundings, on an overcast day",
    "a screen with seismic waveforms in a monitoring room, a wider view that shows more of the surroundings, on an overcast day",
    "cracks in the plaster wall of an old building, seen from a different side and a higher angle, in soft morning light",
-   "a screen with seismic waveforms in a monitoring room, seen from a different side and a higher angle, in soft morning light"
+   "a screen with seismic waveforms in a monitoring room, seen from a different side and a higher angle, in soft morning light",
+   "close-up of a seismograph drum drawing a jagged seismic trace on paper, photographed from a low angle, at golden hour",
+   "a screen with seismic waveforms in a monitoring room, photographed from a low angle, at golden hour"
   ],
   "frequente": true
  },
@@ -336,7 +375,12 @@
    "an empty hospital room with a bed and medical monitors, seen from a different side and a higher angle, in soft morning light",
    "an empty clean hospital corridor with soft light and closed doors, photographed from a low angle, at golden hour",
    "an empty hospital room with a bed and medical monitors, photographed from a low angle, at golden hour",
-   "an empty clean hospital corridor with soft light and closed doors, a different composition with the subject off-center, in winter under a grey sky"
+   "an empty clean hospital corridor with soft light and closed doors, a different composition with the subject off-center, in winter under a grey sky",
+   "the exterior of a modern hospital building with many windows, no signs, a different composition with the subject off-center, in winter under a grey sky",
+   "the exterior of a modern hospital building with many windows, no signs, a view from above, in bright daylight",
+   "an empty hospital room with a bed and medical monitors, a view from above, in bright daylight",
+   "an empty clean hospital corridor with soft light and closed doors, at dusk, seen from further away, with the first lights on",
+   "an empty hospital room with a bed and medical monitors, at dusk, seen from further away, with the first lights on"
   ]
  },
  "treno": {
@@ -360,7 +404,12 @@
    "an empty platform of a small station with a canopy at dawn, seen from a different side and a higher angle, in soft morning light",
    "railway tracks at a small rural train station in the hills, a plain regional train in the distance, photographed from a low angle, at golden hour",
    "an empty platform of a small station with a canopy at dawn, photographed from a low angle, at golden hour",
-   "railway tracks at a small rural train station in the hills, a plain regional train in the distance, a different composition with the subject off-center, in winter under a grey sky"
+   "railway tracks at a small rural train station in the hills, a plain regional train in the distance, a different composition with the subject off-center, in winter under a grey sky",
+   "a plain regional train passing through green countryside, a different composition with the subject off-center, in winter under a grey sky",
+   "a plain regional train passing through green countryside, a view from above, in bright daylight",
+   "an empty platform of a small station with a canopy at dawn, a view from above, in bright daylight",
+   "railway tracks at a small rural train station in the hills, a plain regional train in the distance, at dusk, seen from further away, with the first lights on",
+   "an empty platform of a small station with a canopy at dawn, at dusk, seen from further away, with the first lights on"
   ]
  },
  "autobus": {
@@ -385,7 +434,11 @@
    "a bus stop shelter on an Italian street at dusk, a plain city bus approaching, photographed from a low angle, at golden hour",
    "the inside of an empty bus with seats and yellow handrails, photographed from a low angle, at golden hour",
    "a bus stop shelter on an Italian street at dusk, a plain city bus approaching, a different composition with the subject off-center, in winter under a grey sky",
-   "a plain city bus seen from behind in an old town street, a different composition with the subject off-center, in winter under a grey sky"
+   "a plain city bus seen from behind in an old town street, a different composition with the subject off-center, in winter under a grey sky",
+   "a plain city bus seen from behind in an old town street, a view from above, in bright daylight",
+   "the inside of an empty bus with seats and yellow handrails, a view from above, in bright daylight",
+   "a bus stop shelter on an Italian street at dusk, a plain city bus approaching, at dusk, seen from further away, with the first lights on",
+   "the inside of an empty bus with seats and yellow handrails, at dusk, seen from further away, with the first lights on"
   ]
  },
  "camion": {
@@ -410,7 +463,11 @@
    "a long line of parked trucks on the shoulder of a highway among hills, overcast sky, photographed from a low angle, at golden hour",
    "the cab of a plain truck seen from the front on a road among hills, photographed from a low angle, at golden hour",
    "a long line of parked trucks on the shoulder of a highway among hills, overcast sky, a different composition with the subject off-center, in winter under a grey sky",
-   "trucks parked in a highway rest area at dawn, a different composition with the subject off-center, in winter under a grey sky"
+   "trucks parked in a highway rest area at dawn, a different composition with the subject off-center, in winter under a grey sky",
+   "trucks parked in a highway rest area at dawn, a view from above, in bright daylight",
+   "the cab of a plain truck seen from the front on a road among hills, a view from above, in bright daylight",
+   "a long line of parked trucks on the shoulder of a highway among hills, overcast sky, at dusk, seen from further away, with the first lights on",
+   "the cab of a plain truck seen from the front on a road among hills, at dusk, seen from further away, with the first lights on"
   ]
  },
  "carburante": {
@@ -435,7 +492,10 @@
    "a fuel pump nozzle hanging on a petrol pump at a gas station, photographed from a low angle, at golden hour",
    "a car dashboard fuel gauge pointing to empty, photographed from a low angle, at golden hour",
    "a fuel pump nozzle hanging on a petrol pump at a gas station, a different composition with the subject off-center, in winter under a grey sky",
-   "a petrol station at night with lit pumps, no brand, a different composition with the subject off-center, in winter under a grey sky"
+   "a petrol station at night with lit pumps, no brand, a different composition with the subject off-center, in winter under a grey sky",
+   "a petrol station at night with lit pumps, no brand, a view from above, in bright daylight",
+   "a car dashboard fuel gauge pointing to empty, a view from above, in bright daylight",
+   "a fuel pump nozzle hanging on a petrol pump at a gas station, at dusk, seen from further away, with the first lights on"
   ]
  },
  "supermercato": {
@@ -454,7 +514,9 @@
    "a shopping trolley in an empty supermarket aisle, a wider view that shows more of the surroundings, on an overcast day",
    "empty refrigerated shelves for milk and dairy in a supermarket, a wider view that shows more of the surroundings, on an overcast day",
    "a shopping trolley in an empty supermarket aisle, seen from a different side and a higher angle, in soft morning light",
-   "empty refrigerated shelves for milk and dairy in a supermarket, seen from a different side and a higher angle, in soft morning light"
+   "empty refrigerated shelves for milk and dairy in a supermarket, seen from a different side and a higher angle, in soft morning light",
+   "half-empty supermarket shelves for fresh fruit and vegetables, photographed from a low angle, at golden hour",
+   "empty refrigerated shelves for milk and dairy in a supermarket, photographed from a low angle, at golden hour"
   ],
   "frequente": true
  },
@@ -474,7 +536,9 @@
    "a tractor ploughing a field on hills, a wider view that shows more of the surroundings, on an overcast day",
    "a column of tractors driving along a country road, a wider view that shows more of the surroundings, on an overcast day",
    "a tractor ploughing a field on hills, seen from a different side and a higher angle, in soft morning light",
-   "a column of tractors driving along a country road, seen from a different side and a higher angle, in soft morning light"
+   "a column of tractors driving along a country road, seen from a different side and a higher angle, in soft morning light",
+   "a row of tractors parked along a rural road beside fields, photographed from a low angle, at golden hour",
+   "a column of tractors driving along a country road, photographed from a low angle, at golden hour"
   ],
   "frequente": true
  },
@@ -536,7 +600,9 @@
    "an empty production line inside a factory with the machines switched off, a wider view that shows more of the surroundings, on an overcast day",
    "a closed factory gate with a chain at dusk, a wider view that shows more of the surroundings, on an overcast day",
    "an empty production line inside a factory with the machines switched off, seen from a different side and a higher angle, in soft morning light",
-   "a closed factory gate with a chain at dusk, seen from a different side and a higher angle, in soft morning light"
+   "a closed factory gate with a chain at dusk, seen from a different side and a higher angle, in soft morning light",
+   "the exterior of a modern industrial building with closed loading doors, empty yard, photographed from a low angle, at golden hour",
+   "a closed factory gate with a chain at dusk, photographed from a low angle, at golden hour"
   ],
   "frequente": true
  },
@@ -570,7 +636,9 @@
    "stacks of folders tied with string on the shelves of a municipal archive, a wider view that shows more of the surroundings, on an overcast day",
    "an official document with a round ink stamp and a signature line, close-up, no readable text, a wider view that shows more of the surroundings, on an overcast day",
    "stacks of folders tied with string on the shelves of a municipal archive, seen from a different side and a higher angle, in soft morning light",
-   "an official document with a round ink stamp and a signature line, close-up, no readable text, seen from a different side and a higher angle, in soft morning light"
+   "an official document with a round ink stamp and a signature line, close-up, no readable text, seen from a different side and a higher angle, in soft morning light",
+   "official paper documents, a fountain pen and a rubber stamp on a wooden office desk, photographed from a low angle, at golden hour",
+   "an official document with a round ink stamp and a signature line, close-up, no readable text, photographed from a low angle, at golden hour"
   ],
   "frequente": true
  },
@@ -590,7 +658,9 @@
    "a council chamber seen from the public seats, a long wooden table with microphones, a wider view that shows more of the surroundings, on an overcast day",
    "a microphone and voting buttons on a wooden desk in a council chamber, close-up, a wider view that shows more of the surroundings, on an overcast day",
    "a council chamber seen from the public seats, a long wooden table with microphones, seen from a different side and a higher angle, in soft morning light",
-   "a microphone and voting buttons on a wooden desk in a council chamber, close-up, seen from a different side and a higher angle, in soft morning light"
+   "a microphone and voting buttons on a wooden desk in a council chamber, close-up, seen from a different side and a higher angle, in soft morning light",
+   "an empty council chamber with wooden benches, microphones and a hemicycle layout, photographed from a low angle, at golden hour",
+   "a microphone and voting buttons on a wooden desk in a council chamber, close-up, photographed from a low angle, at golden hour"
   ],
   "frequente": true
  },
@@ -624,7 +694,9 @@
    "a large pan of local food cooking at a village festival stand, a wider view that shows more of the surroundings, on an overcast day",
    "a festival stand with local products and paper plates under string lights, a wider view that shows more of the surroundings, on an overcast day",
    "a large pan of local food cooking at a village festival stand, seen from a different side and a higher angle, in soft morning light",
-   "a festival stand with local products and paper plates under string lights, seen from a different side and a higher angle, in soft morning light"
+   "a festival stand with local products and paper plates under string lights, seen from a different side and a higher angle, in soft morning light",
+   "long wooden tables in a village square at evening under warm string lights, nobody there yet, photographed from a low angle, at golden hour",
+   "a festival stand with local products and paper plates under string lights, photographed from a low angle, at golden hour"
   ],
   "frequente": true
  },
@@ -658,7 +730,9 @@
    "a microphone on a stand on a stage under spotlights, a wider view that shows more of the surroundings, on an overcast day",
    "an outdoor stage in a village square at dusk with lights and empty chairs, a wider view that shows more of the surroundings, on an overcast day",
    "a microphone on a stand on a stage under spotlights, seen from a different side and a higher angle, in soft morning light",
-   "an outdoor stage in a village square at dusk with lights and empty chairs, seen from a different side and a higher angle, in soft morning light"
+   "an outdoor stage in a village square at dusk with lights and empty chairs, seen from a different side and a higher angle, in soft morning light",
+   "an empty open-air stage with lights in a town square at night, photographed from a low angle, at golden hour",
+   "an outdoor stage in a village square at dusk with lights and empty chairs, photographed from a low angle, at golden hour"
   ],
   "frequente": true
  },
@@ -683,7 +757,12 @@
    "the gilded balconies and boxes of an old Italian opera house, a wider view that shows more of the surroundings, on an overcast day",
    "a single spotlight on a wooden chair in the middle of an empty theatre stage, a wider view that shows more of the surroundings, on an overcast day",
    "the gilded proscenium arch of a historic Italian theatre seen from the stalls, a wider view that shows more of the surroundings, on an overcast day",
-   "rows of empty red velvet seats in an old Italian theatre, seen from a different side and a higher angle, in soft morning light"
+   "rows of empty red velvet seats in an old Italian theatre, seen from a different side and a higher angle, in soft morning light",
+   "a theatre stage with a closed red curtain under spotlights, seen from a different side and a higher angle, in soft morning light",
+   "the gilded balconies and boxes of an old Italian opera house, seen from a different side and a higher angle, in soft morning light",
+   "a single spotlight on a wooden chair in the middle of an empty theatre stage, seen from a different side and a higher angle, in soft morning light",
+   "the gilded proscenium arch of a historic Italian theatre seen from the stalls, seen from a different side and a higher angle, in soft morning light",
+   "rows of empty red velvet seats in an old Italian theatre, photographed from a low angle, at golden hour"
   ]
  },
  "mercato": {
@@ -702,7 +781,9 @@
    "a weekly street market with stalls and awnings in a village square, a wider view that shows more of the surroundings, on an overcast day",
    "crates of fresh vegetables and fruit at a market stall, close-up, a wider view that shows more of the surroundings, on an overcast day",
    "a weekly street market with stalls and awnings in a village square, seen from a different side and a higher angle, in soft morning light",
-   "crates of fresh vegetables and fruit at a market stall, close-up, seen from a different side and a higher angle, in soft morning light"
+   "crates of fresh vegetables and fruit at a market stall, close-up, seen from a different side and a higher angle, in soft morning light",
+   "a market stall with crates of fruit and vegetables under an awning, photographed from a low angle, at golden hour",
+   "crates of fresh vegetables and fruit at a market stall, close-up, photographed from a low angle, at golden hour"
   ],
   "frequente": true
  },
@@ -727,7 +808,12 @@
    "the corner flag of a football pitch at sunset, a wider view that shows more of the surroundings, on an overcast day",
    "a football resting on the grass of an empty stadium pitch, seen from a different side and a higher angle, in soft morning light",
    "a football goal net seen from inside on an empty pitch, seen from a different side and a higher angle, in soft morning light",
-   "football boots on the grass near the touchline, seen from a different side and a higher angle, in soft morning light"
+   "football boots on the grass near the touchline, seen from a different side and a higher angle, in soft morning light",
+   "a football resting on the grass of an empty stadium pitch, a close-up detail of the main subject, shallow depth of field",
+   "a football goal net seen from inside on an empty pitch, photographed from a low angle, at golden hour",
+   "football boots on the grass near the touchline, photographed from a low angle, at golden hour",
+   "the corner flag of a football pitch at sunset, photographed from a low angle, at golden hour",
+   "a football resting on the grass of an empty stadium pitch, a different composition with the subject off-center, in winter under a grey sky"
   ]
  },
  "chiesa": {
@@ -746,7 +832,9 @@
    "the bell tower of a village church against a blue sky, a wider view that shows more of the surroundings, on an overcast day",
    "the nave of an old church with wooden pews and soft light, a wider view that shows more of the surroundings, on an overcast day",
    "the bell tower of a village church against a blue sky, seen from a different side and a higher angle, in soft morning light",
-   "the nave of an old church with wooden pews and soft light, seen from a different side and a higher angle, in soft morning light"
+   "the nave of an old church with wooden pews and soft light, seen from a different side and a higher angle, in soft morning light",
+   "lit candles inside an old church, soft warm light, photographed from a low angle, at golden hour",
+   "the nave of an old church with wooden pews and soft light, photographed from a low angle, at golden hour"
   ],
   "frequente": true
  },
@@ -1026,7 +1114,8 @@
    "wind turbines on top of rolling hills, photographed from a low angle, at golden hour",
    "wind turbines on top of rolling hills, a different composition with the subject off-center, in winter under a grey sky",
    "wind turbines on top of rolling hills, a view from above, in bright daylight",
-   "wind turbines on top of rolling hills, at dusk, seen from further away, with the first lights on"
+   "wind turbines on top of rolling hills, at dusk, seen from further away, with the first lights on",
+   "wind turbines on top of rolling hills, a close-up detail of the main subject, shallow depth of field"
   ]
  },
  "fotovoltaico": {
@@ -1073,7 +1162,9 @@
    "a road with many patched potholes and cracks, a wider view that shows more of the surroundings, on an overcast day",
    "a car tyre next to a deep pothole on a wet road, a wider view that shows more of the surroundings, on an overcast day",
    "a road with many patched potholes and cracks, seen from a different side and a higher angle, in soft morning light",
-   "a car tyre next to a deep pothole on a wet road, seen from a different side and a higher angle, in soft morning light"
+   "a car tyre next to a deep pothole on a wet road, seen from a different side and a higher angle, in soft morning light",
+   "a large pothole full of rainwater on a damaged asphalt road, photographed from a low angle, at golden hour",
+   "a car tyre next to a deep pothole on a wet road, photographed from a low angle, at golden hour"
   ],
   "frequente": true
  },
@@ -1317,7 +1408,9 @@
    "the Italian and European flags on poles on the balcony of a historic palazzo, seen from below, a wider view that shows more of the surroundings, on an overcast day",
    "the stone staircase and arched corridor inside an old town hall, a wider view that shows more of the surroundings, on an overcast day",
    "the Italian and European flags on poles on the balcony of a historic palazzo, seen from below, seen from a different side and a higher angle, in soft morning light",
-   "the stone staircase and arched corridor inside an old town hall, seen from a different side and a higher angle, in soft morning light"
+   "the stone staircase and arched corridor inside an old town hall, seen from a different side and a higher angle, in soft morning light",
+   "the facade of an old town hall in a southern Italian village with the Italian and European flags on the balcony, photographed from a low angle, at golden hour",
+   "the stone staircase and arched corridor inside an old town hall, photographed from a low angle, at golden hour"
   ],
   "frequente": true
  },
@@ -1335,7 +1428,11 @@
    "a transparent ballot box next to a voting booth with a curtain in a school gym, a wider view that shows more of the surroundings, on an overcast day",
    "ballot papers and a pencil on a table in a polling station, no readable text, a wider view that shows more of the surroundings, on an overcast day",
    "a polling station in a school classroom with voting booths, a wider view that shows more of the surroundings, on an overcast day",
-   "ballot papers and a pencil on a table in a polling station, no readable text, seen from a different side and a higher angle, in soft morning light"
+   "ballot papers and a pencil on a table in a polling station, no readable text, seen from a different side and a higher angle, in soft morning light",
+   "a transparent ballot box next to a voting booth with a curtain in a school gym, a close-up detail of the main subject, shallow depth of field",
+   "a polling station in a school classroom with voting booths, seen from a different side and a higher angle, in soft morning light",
+   "a transparent ballot box next to a voting booth with a curtain in a school gym, photographed from a low angle, at golden hour",
+   "a polling station in a school classroom with voting booths, photographed from a low angle, at golden hour"
   ],
   "frequente": true
  },
@@ -1355,7 +1452,9 @@
    "chairs around an oval table in an institutional meeting room with tall windows, a wider view that shows more of the surroundings, on an overcast day",
    "notebooks, pens and small water bottles on a meeting table, close-up, a wider view that shows more of the surroundings, on an overcast day",
    "chairs around an oval table in an institutional meeting room with tall windows, seen from a different side and a higher angle, in soft morning light",
-   "notebooks, pens and small water bottles on a meeting table, close-up, seen from a different side and a higher angle, in soft morning light"
+   "notebooks, pens and small water bottles on a meeting table, close-up, seen from a different side and a higher angle, in soft morning light",
+   "a long meeting table with chairs, glasses of water and an Italian flag in an institutional room, photographed from a low angle, at golden hour",
+   "notebooks, pens and small water bottles on a meeting table, close-up, photographed from a low angle, at golden hour"
   ],
   "frequente": true
  },
@@ -1375,7 +1474,9 @@
    "a lectern with microphones in front of a plain blue backdrop, a wider view that shows more of the surroundings, on an overcast day",
    "a row of microphones and a video camera on a tripod in a hall, a wider view that shows more of the surroundings, on an overcast day",
    "a lectern with microphones in front of a plain blue backdrop, seen from a different side and a higher angle, in soft morning light",
-   "a row of microphones and a video camera on a tripod in a hall, seen from a different side and a higher angle, in soft morning light"
+   "a row of microphones and a video camera on a tripod in a hall, seen from a different side and a higher angle, in soft morning light",
+   "a table with several microphones and blank name cards in a meeting room, photographed from a low angle, at golden hour",
+   "a row of microphones and a video camera on a tripod in a hall, photographed from a low angle, at golden hour"
   ],
   "frequente": true
  },
@@ -1395,7 +1496,9 @@
    "an envelope, a bill and a pen on a table, no readable text, a wider view that shows more of the surroundings, on an overcast day",
    "a calculator, paper receipts and euro coins on a desk, a wider view that shows more of the surroundings, on an overcast day",
    "an envelope, a bill and a pen on a table, no readable text, seen from a different side and a higher angle, in soft morning light",
-   "a calculator, paper receipts and euro coins on a desk, seen from a different side and a higher angle, in soft morning light"
+   "a calculator, paper receipts and euro coins on a desk, seen from a different side and a higher angle, in soft morning light",
+   "tax forms, euro coins and a calculator on a kitchen table, photographed from a low angle, at golden hour",
+   "a calculator, paper receipts and euro coins on a desk, photographed from a low angle, at golden hour"
   ],
   "frequente": true
  },
@@ -1429,7 +1532,8 @@
    "euro coins stacked in columns on a desk, a wider view that shows more of the surroundings, on an overcast day",
    "a ceramic piggy bank and euro coins on a wooden table, a wider view that shows more of the surroundings, on an overcast day",
    "euro coins stacked in columns on a desk, seen from a different side and a higher angle, in soft morning light",
-   "a ceramic piggy bank and euro coins on a wooden table, seen from a different side and a higher angle, in soft morning light"
+   "a ceramic piggy bank and euro coins on a wooden table, seen from a different side and a higher angle, in soft morning light",
+   "a ceramic piggy bank and euro coins on a wooden table, photographed from a low angle, at golden hour"
   ],
   "frequente": true
  },
@@ -1519,7 +1623,9 @@
    "plain red flags without writing waving in front of a closed factory gate, a wider view that shows more of the surroundings, on an overcast day",
    "blank protest placards leaning against the railings of a town square, a wider view that shows more of the surroundings, on an overcast day",
    "plain red flags without writing waving in front of a closed factory gate, seen from a different side and a higher angle, in soft morning light",
-   "blank protest placards leaning against the railings of a town square, seen from a different side and a higher angle, in soft morning light"
+   "blank protest placards leaning against the railings of a town square, seen from a different side and a higher angle, in soft morning light",
+   "a megaphone and a rolled-up banner resting on the steps of a public building, photographed from a low angle, at golden hour",
+   "blank protest placards leaning against the railings of a town square, photographed from a low angle, at golden hour"
   ],
   "frequente": true
  },
@@ -1581,7 +1687,9 @@
    "a university corridor with stone arches and notice boards, a wider view that shows more of the surroundings, on an overcast day",
    "books and a laptop on a desk in a university library, a wider view that shows more of the surroundings, on an overcast day",
    "a university corridor with stone arches and notice boards, seen from a different side and a higher angle, in soft morning light",
-   "books and a laptop on a desk in a university library, seen from a different side and a higher angle, in soft morning light"
+   "books and a laptop on a desk in a university library, seen from a different side and a higher angle, in soft morning light",
+   "an empty university lecture hall with tiered wooden seats, photographed from a low angle, at golden hour",
+   "books and a laptop on a desk in a university library, photographed from a low angle, at golden hour"
   ],
   "frequente": true
  },
@@ -1769,7 +1877,9 @@
    "an empty hospital emergency waiting room with rows of chairs, a wider view that shows more of the surroundings, on an overcast day",
    "an empty stretcher in a hospital corridor, a wider view that shows more of the surroundings, on an overcast day",
    "an empty hospital emergency waiting room with rows of chairs, seen from a different side and a higher angle, in soft morning light",
-   "an empty stretcher in a hospital corridor, seen from a different side and a higher angle, in soft morning light"
+   "an empty stretcher in a hospital corridor, seen from a different side and a higher angle, in soft morning light",
+   "the entrance of a hospital emergency department at night with an ambulance parked, no logos, no text, photographed from a low angle, at golden hour",
+   "an empty stretcher in a hospital corridor, photographed from a low angle, at golden hour"
   ],
   "frequente": true
  },
@@ -1789,7 +1899,9 @@
    "an empty doctor's surgery with an examination bed, a wider view that shows more of the surroundings, on an overcast day",
    "a blood pressure monitor and a stethoscope on a desk, a wider view that shows more of the surroundings, on an overcast day",
    "an empty doctor's surgery with an examination bed, seen from a different side and a higher angle, in soft morning light",
-   "a blood pressure monitor and a stethoscope on a desk, seen from a different side and a higher angle, in soft morning light"
+   "a blood pressure monitor and a stethoscope on a desk, seen from a different side and a higher angle, in soft morning light",
+   "a stethoscope and a prescription pad on a doctor's desk, photographed from a low angle, at golden hour",
+   "a blood pressure monitor and a stethoscope on a desk, photographed from a low angle, at golden hour"
   ],
   "frequente": true
  },
@@ -2243,7 +2355,9 @@
    "a tall decorated Christmas tree in a town square at night, a wider view that shows more of the surroundings, on an overcast day",
    "strings of star-shaped Christmas lights over an old town street at dusk, a wider view that shows more of the surroundings, on an overcast day",
    "a tall decorated Christmas tree in a town square at night, seen from a different side and a higher angle, in soft morning light",
-   "strings of star-shaped Christmas lights over an old town street at dusk, seen from a different side and a higher angle, in soft morning light"
+   "strings of star-shaped Christmas lights over an old town street at dusk, seen from a different side and a higher angle, in soft morning light",
+   "Christmas lights strung across an old town street at night with a decorated tree, photographed from a low angle, at golden hour",
+   "strings of star-shaped Christmas lights over an old town street at dusk, photographed from a low angle, at golden hour"
   ],
   "frequente": true
  },
@@ -2389,7 +2503,9 @@
    "a wooden Christmas market hut selling handmade ornaments and candles, warm fairy lights, close-up, a wider view that shows more of the surroundings, on an overcast day",
    "a Christmas market street in a medieval village at night with lit wooden huts and a big decorated tree, a wider view that shows more of the surroundings, on an overcast day",
    "a wooden Christmas market hut selling handmade ornaments and candles, warm fairy lights, close-up, seen from a different side and a higher angle, in soft morning light",
-   "a Christmas market street in a medieval village at night with lit wooden huts and a big decorated tree, seen from a different side and a higher angle, in soft morning light"
+   "a Christmas market street in a medieval village at night with lit wooden huts and a big decorated tree, seen from a different side and a higher angle, in soft morning light",
+   "wooden Christmas market stalls with warm lights, garlands and handmade decorations in an old stone town square at dusk, photographed from a low angle, at golden hour",
+   "a Christmas market street in a medieval village at night with lit wooden huts and a big decorated tree, photographed from a low angle, at golden hour"
   ],
   "frequente": true
  },
@@ -2409,7 +2525,9 @@
    "the illuminated walls and tower of a medieval castle at night with Christmas lights and garlands at the entrance, photographed from a low angle, at golden hour",
    "the courtyard of a medieval stone castle decorated for Christmas with lights, small wooden huts and a tall tree at dusk, a different composition with the subject off-center, in winter under a grey sky",
    "the courtyard of a medieval stone castle decorated for Christmas with lights, small wooden huts and a tall tree at dusk, a view from above, in bright daylight",
-   "the illuminated walls and tower of a medieval castle at night with Christmas lights and garlands at the entrance, a view from above, in bright daylight"
+   "the illuminated walls and tower of a medieval castle at night with Christmas lights and garlands at the entrance, a view from above, in bright daylight",
+   "the courtyard of a medieval stone castle decorated for Christmas with lights, small wooden huts and a tall tree at dusk, at dusk, seen from further away, with the first lights on",
+   "the illuminated walls and tower of a medieval castle at night with Christmas lights and garlands at the entrance, at dusk, seen from further away, with the first lights on"
   ],
   "frequente": true
  },
@@ -2443,7 +2561,9 @@
    "a pair of ice skates resting on the edge of an outdoor ice rink with blurred Christmas lights, photographed from a low angle, at golden hour",
    "an outdoor ice skating rink in an Italian town square at night with Christmas lights, no people, a different composition with the subject off-center, in winter under a grey sky",
    "an outdoor ice skating rink in an Italian town square at night with Christmas lights, no people, a view from above, in bright daylight",
-   "a pair of ice skates resting on the edge of an outdoor ice rink with blurred Christmas lights, a view from above, in bright daylight"
+   "a pair of ice skates resting on the edge of an outdoor ice rink with blurred Christmas lights, a view from above, in bright daylight",
+   "an outdoor ice skating rink in an Italian town square at night with Christmas lights, no people, at dusk, seen from further away, with the first lights on",
+   "a pair of ice skates resting on the edge of an outdoor ice rink with blurred Christmas lights, at dusk, seen from further away, with the first lights on"
   ],
   "frequente": true
  },
@@ -2463,7 +2583,9 @@
    "lanterns and Christmas garlands on the stone steps of an old village at dusk, photographed from a low angle, at golden hour",
    "a narrow stone alley of an old hill village decorated with Christmas lights and stars at night, a different composition with the subject off-center, in winter under a grey sky",
    "a narrow stone alley of an old hill village decorated with Christmas lights and stars at night, a view from above, in bright daylight",
-   "lanterns and Christmas garlands on the stone steps of an old village at dusk, a view from above, in bright daylight"
+   "lanterns and Christmas garlands on the stone steps of an old village at dusk, a view from above, in bright daylight",
+   "a narrow stone alley of an old hill village decorated with Christmas lights and stars at night, at dusk, seen from further away, with the first lights on",
+   "lanterns and Christmas garlands on the stone steps of an old village at dusk, at dusk, seen from further away, with the first lights on"
   ],
   "frequente": true
  },
@@ -2483,7 +2605,9 @@
    "old craft workshops set up in stone cellars for a living nativity, with lanterns, baskets and tools, no people, photographed from a low angle, at golden hour",
    "a rustic stone stable with hay, a wooden manger, lanterns and an old cart in a medieval village at night, no people, a different composition with the subject off-center, in winter under a grey sky",
    "a rustic stone stable with hay, a wooden manger, lanterns and an old cart in a medieval village at night, no people, a view from above, in bright daylight",
-   "old craft workshops set up in stone cellars for a living nativity, with lanterns, baskets and tools, no people, a view from above, in bright daylight"
+   "old craft workshops set up in stone cellars for a living nativity, with lanterns, baskets and tools, no people, a view from above, in bright daylight",
+   "a rustic stone stable with hay, a wooden manger, lanterns and an old cart in a medieval village at night, no people, at dusk, seen from further away, with the first lights on",
+   "old craft workshops set up in stone cellars for a living nativity, with lanterns, baskets and tools, no people, at dusk, seen from further away, with the first lights on"
   ],
   "frequente": true
  },
@@ -2531,7 +2655,9 @@
    "traditional southern Italian folk instruments, a tammorra, castanets and an accordion on a wooden table, photographed from a low angle, at golden hour",
    "a mandolin and a tambourine on a wooden chair on a stage with warm light, a different composition with the subject off-center, in winter under a grey sky",
    "a mandolin and a tambourine on a wooden chair on a stage with warm light, a view from above, in bright daylight",
-   "traditional southern Italian folk instruments, a tammorra, castanets and an accordion on a wooden table, a view from above, in bright daylight"
+   "traditional southern Italian folk instruments, a tammorra, castanets and an accordion on a wooden table, a view from above, in bright daylight",
+   "a mandolin and a tambourine on a wooden chair on a stage with warm light, at dusk, seen from further away, with the first lights on",
+   "traditional southern Italian folk instruments, a tammorra, castanets and an accordion on a wooden table, at dusk, seen from further away, with the first lights on"
   ],
   "frequente": true
  },
@@ -2559,7 +2685,8 @@
    "a cello and bow leaning on a chair on a wooden stage with soft warm light, photographed from a low angle, at golden hour",
    "a cello and bow leaning on a chair on a wooden stage with soft warm light, a different composition with the subject off-center, in winter under a grey sky",
    "a cello and bow leaning on a chair on a wooden stage with soft warm light, a view from above, in bright daylight",
-   "a cello and bow leaning on a chair on a wooden stage with soft warm light, at dusk, seen from further away, with the first lights on"
+   "a cello and bow leaning on a chair on a wooden stage with soft warm light, at dusk, seen from further away, with the first lights on",
+   "a cello and bow leaning on a chair on a wooden stage with soft warm light, seen from a different side and a higher angle, in soft morning light"
   ]
  },
  "orchestra": {
@@ -2672,6 +2799,225 @@
    "a grand opera stage set with dramatic red lighting and a sweeping staircase, no people, a view from above, in bright daylight",
    "a grand opera stage set with dramatic red lighting and a sweeping staircase, no people, at dusk, seen from further away, with the first lights on",
    "a grand opera stage set with dramatic red lighting and a sweeping staircase, no people, after the rain, with wet reflective surfaces, seen at eye level"
+  ]
+ },
+ "tribunale": {
+  "quando": "tribunale, uffici giudiziari, nomine di magistrati, giustizia (mai per la cronaca: arresti, processi a persone)",
+  "foto": "an empty Italian courtroom with wooden benches, a raised judges' bench and tall windows",
+  "varianti": [
+   "a wooden judge's gavel and thick law books on a dark wooden desk",
+   "the stone staircase and columned entrance of an old Italian courthouse, no inscriptions",
+   "a long corridor of a courthouse with wooden doors and benches",
+   "an empty Italian courtroom with wooden benches, a raised judges' bench and tall windows, photographed from a low angle, at golden hour",
+   "an empty Italian courtroom with wooden benches, a raised judges' bench and tall windows, a different composition with the subject off-center, in winter under a grey sky",
+   "an empty Italian courtroom with wooden benches, a raised judges' bench and tall windows, a view from above, in bright daylight",
+   "an empty Italian courtroom with wooden benches, a raised judges' bench and tall windows, at dusk, seen from further away, with the first lights on",
+   "an empty Italian courtroom with wooden benches, a raised judges' bench and tall windows, after the rain, with wet reflective surfaces, seen at eye level"
+  ]
+ },
+ "truffe": {
+  "quando": "avvisi contro le truffe: SMS e telefonate false, finti tecnici o finti carabinieri, raggiri agli anziani",
+  "foto": "a smartphone lying on a kitchen table with a blurred unreadable notification on the screen, an old landline phone beside it",
+  "varianti": [
+   "an old corded telephone on a lace doily in an elderly person's living room",
+   "a closed front door of an apartment seen from inside, with the safety chain on",
+   "a smartphone ringing on a wooden table next to reading glasses and a cup of coffee, screen blurred and unreadable",
+   "a smartphone lying on a kitchen table with a blurred unreadable notification on the screen, an old landline phone beside it, photographed from a low angle, at golden hour",
+   "a smartphone lying on a kitchen table with a blurred unreadable notification on the screen, an old landline phone beside it, a different composition with the subject off-center, in winter under a grey sky",
+   "a smartphone lying on a kitchen table with a blurred unreadable notification on the screen, an old landline phone beside it, a view from above, in bright daylight",
+   "a smartphone lying on a kitchen table with a blurred unreadable notification on the screen, an old landline phone beside it, at dusk, seen from further away, with the first lights on",
+   "a smartphone lying on a kitchen table with a blurred unreadable notification on the screen, an old landline phone beside it, after the rain, with wet reflective surfaces, seen at eye level"
+  ]
+ },
+ "emergenza-112": {
+  "quando": "numero unico di emergenza 112, centrali operative, servizi di soccorso (non incidenti)",
+  "foto": "an emergency call centre room with empty desks, headsets and several monitors with blurred screens",
+  "varianti": [
+   "a headset resting on a desk in front of computer monitors with blurred maps",
+   "a white ambulance parked outside a hospital emergency entrance at night with blue lights on, no writing visible",
+   "a desk telephone with many buttons and a headset in a control room",
+   "an emergency call centre room with empty desks, headsets and several monitors with blurred screens, photographed from a low angle, at golden hour",
+   "an emergency call centre room with empty desks, headsets and several monitors with blurred screens, a different composition with the subject off-center, in winter under a grey sky",
+   "an emergency call centre room with empty desks, headsets and several monitors with blurred screens, a view from above, in bright daylight",
+   "an emergency call centre room with empty desks, headsets and several monitors with blurred screens, at dusk, seen from further away, with the first lights on",
+   "an emergency call centre room with empty desks, headsets and several monitors with blurred screens, after the rain, with wet reflective surfaces, seen at eye level"
+  ]
+ },
+ "imprese": {
+  "quando": "economia, imprese e aziende, nuove aperture di uffici, dati su occupazione e crescita delle imprese",
+  "foto": "a modern small office in an Italian town with desks, laptops, plants and large windows",
+  "varianti": [
+   "a meeting table with laptops, folders and coffee cups in a bright office",
+   "an open-plan office with empty chairs and computer screens with blurred content",
+   "a small business workshop with shelves of products and packing boxes",
+   "a modern small office in an Italian town with desks, laptops, plants and large windows, photographed from a low angle, at golden hour",
+   "a modern small office in an Italian town with desks, laptops, plants and large windows, a different composition with the subject off-center, in winter under a grey sky",
+   "a modern small office in an Italian town with desks, laptops, plants and large windows, a view from above, in bright daylight",
+   "a modern small office in an Italian town with desks, laptops, plants and large windows, at dusk, seen from further away, with the first lights on",
+   "a modern small office in an Italian town with desks, laptops, plants and large windows, after the rain, with wet reflective surfaces, seen at eye level"
+  ]
+ },
+ "commercio": {
+  "quando": "commercianti e negozi aperti, vie dello shopping, associazioni di negozianti, iniziative dei negozi",
+  "foto": "a pedestrian shopping street in the centre of a southern Italian town with lit shop windows",
+  "varianti": [
+   "a shop window of a clothing boutique on a stone-paved street in the evening",
+   "the open door of a small grocery shop with crates of fruit on display outside",
+   "a row of small shops with awnings along an old town street",
+   "a pedestrian shopping street in the centre of a southern Italian town with lit shop windows, photographed from a low angle, at golden hour",
+   "a pedestrian shopping street in the centre of a southern Italian town with lit shop windows, a different composition with the subject off-center, in winter under a grey sky",
+   "a pedestrian shopping street in the centre of a southern Italian town with lit shop windows, a view from above, in bright daylight",
+   "a pedestrian shopping street in the centre of a southern Italian town with lit shop windows, at dusk, seen from further away, with the first lights on",
+   "a pedestrian shopping street in the centre of a southern Italian town with lit shop windows, after the rain, with wet reflective surfaces, seen at eye level"
+  ]
+ },
+ "halloween": {
+  "quando": "Halloween e le iniziative del 31 ottobre",
+  "foto": "carved pumpkins with candles inside on the old stone steps of an Italian village at dusk",
+  "varianti": [
+   "a group of orange pumpkins and autumn leaves on a wooden table",
+   "a carved pumpkin lantern glowing on a windowsill at night",
+   "pumpkins and lanterns along a narrow village alley at dusk",
+   "carved pumpkins with candles inside on the old stone steps of an Italian village at dusk, photographed from a low angle, at golden hour",
+   "carved pumpkins with candles inside on the old stone steps of an Italian village at dusk, a different composition with the subject off-center, in winter under a grey sky",
+   "carved pumpkins with candles inside on the old stone steps of an Italian village at dusk, a view from above, in bright daylight",
+   "carved pumpkins with candles inside on the old stone steps of an Italian village at dusk, at dusk, seen from further away, with the first lights on",
+   "carved pumpkins with candles inside on the old stone steps of an Italian village at dusk, after the rain, with wet reflective surfaces, seen at eye level"
+  ]
+ },
+ "arti-marziali": {
+  "quando": "judo, karate, taekwondo, lotta e altre arti marziali",
+  "foto": "an empty martial arts dojo with tatami mats and a folded white judo uniform with a belt",
+  "varianti": [
+   "a white judo uniform and a black belt folded on a tatami mat",
+   "medals and a small trophy on a wooden shelf in a martial arts gym",
+   "a training gym with blue and red mats and punching pads",
+   "an empty martial arts dojo with tatami mats and a folded white judo uniform with a belt, photographed from a low angle, at golden hour",
+   "an empty martial arts dojo with tatami mats and a folded white judo uniform with a belt, a different composition with the subject off-center, in winter under a grey sky",
+   "an empty martial arts dojo with tatami mats and a folded white judo uniform with a belt, a view from above, in bright daylight",
+   "an empty martial arts dojo with tatami mats and a folded white judo uniform with a belt, at dusk, seen from further away, with the first lights on",
+   "an empty martial arts dojo with tatami mats and a folded white judo uniform with a belt, after the rain, with wet reflective surfaces, seen at eye level"
+  ]
+ },
+ "motori": {
+  "quando": "automobilismo, rally, kart, motociclismo",
+  "foto": "a racing car on an empty racetrack curb with motion blur, no numbers, no sponsors",
+  "varianti": [
+   "a go-kart on an outdoor kart track with tyre barriers",
+   "a racing car on an empty racetrack curb with motion blur, no numbers, no sponsors, at dusk, seen from further away, with the first lights on",
+   "a rally car on a gravel mountain road raising dust, no logos"
+  ]
+ },
+ "calcio-a-5": {
+  "quando": "calcio a 5 (futsal), calcetto",
+  "foto": "an indoor futsal court with a ball on the centre line and a small goal",
+  "varianti": [
+   "a futsal ball in front of a small indoor goal net",
+   "an empty indoor sports hall with a futsal court and stands",
+   "futsal shoes and a ball on the parquet of an indoor court",
+   "an indoor futsal court with a ball on the centre line and a small goal, photographed from a low angle, at golden hour",
+   "an indoor futsal court with a ball on the centre line and a small goal, a different composition with the subject off-center, in winter under a grey sky",
+   "an indoor futsal court with a ball on the centre line and a small goal, a view from above, in bright daylight",
+   "an indoor futsal court with a ball on the centre line and a small goal, at dusk, seen from further away, with the first lights on",
+   "an indoor futsal court with a ball on the centre line and a small goal, after the rain, with wet reflective surfaces, seen at eye level"
+  ]
+ },
+ "carta-spesa": {
+  "quando": "carte per la spesa e buoni alimentari dati dal Comune o dallo Stato (es. «Carta Dedicata a te»), bonus per la spesa",
+  "foto": "a plain payment card without any writing on a kitchen table next to a grocery shopping bag",
+  "varianti": [
+   "a supermarket shopping basket with bread, pasta and milk",
+   "a plain card without writing and a till receipt on a supermarket counter",
+   "a grocery bag with vegetables and pasta on a kitchen counter",
+   "a plain payment card without any writing on a kitchen table next to a grocery shopping bag, photographed from a low angle, at golden hour",
+   "a plain payment card without any writing on a kitchen table next to a grocery shopping bag, a different composition with the subject off-center, in winter under a grey sky",
+   "a plain payment card without any writing on a kitchen table next to a grocery shopping bag, a view from above, in bright daylight",
+   "a plain payment card without any writing on a kitchen table next to a grocery shopping bag, at dusk, seen from further away, with the first lights on",
+   "a plain payment card without any writing on a kitchen table next to a grocery shopping bag, after the rain, with wet reflective surfaces, seen at eye level"
+  ]
+ },
+ "accumulo-energia": {
+  "quando": "impianti di accumulo dell'energia (batterie), sottostazioni e linee elettriche, cabine elettriche",
+  "foto": "rows of white battery storage containers in a fenced field in the countryside",
+  "varianti": [
+   "an electrical substation with transformers and insulators in the countryside",
+   "high-voltage power lines crossing green hills",
+   "a large white container with cooling units behind a metal fence in a field",
+   "rows of white battery storage containers in a fenced field in the countryside, photographed from a low angle, at golden hour",
+   "rows of white battery storage containers in a fenced field in the countryside, a different composition with the subject off-center, in winter under a grey sky",
+   "rows of white battery storage containers in a fenced field in the countryside, a view from above, in bright daylight",
+   "rows of white battery storage containers in a fenced field in the countryside, at dusk, seen from further away, with the first lights on",
+   "rows of white battery storage containers in a fenced field in the countryside, after the rain, with wet reflective surfaces, seen at eye level"
+  ]
+ },
+ "piazza": {
+  "quando": "piazze dei paesi e della città, vivibilità, regole per piazze e quiete pubblica, movida",
+  "foto": "an empty small village square in southern Italy with a stone fountain and benches in the evening",
+  "varianti": [
+   "a town square with café tables and chairs under street lamps at night",
+   "a paved piazza with a church in the background in the morning light",
+   "benches under trees in a small square of a hill village",
+   "an empty small village square in southern Italy with a stone fountain and benches in the evening, photographed from a low angle, at golden hour",
+   "an empty small village square in southern Italy with a stone fountain and benches in the evening, a different composition with the subject off-center, in winter under a grey sky",
+   "an empty small village square in southern Italy with a stone fountain and benches in the evening, a view from above, in bright daylight",
+   "an empty small village square in southern Italy with a stone fountain and benches in the evening, at dusk, seen from further away, with the first lights on",
+   "an empty small village square in southern Italy with a stone fountain and benches in the evening, after the rain, with wet reflective surfaces, seen at eye level"
+  ]
+ },
+ "caccia": {
+  "quando": "caccia e stagione venatoria, calendario venatorio, regole per i cacciatori (non incidenti)",
+  "foto": "an autumn hillside wood at dawn with a wooden hunting stand at the edge of a field",
+  "varianti": [
+   "a dirt track through an oak wood in autumn with fallen leaves",
+   "a misty field at the edge of a forest at sunrise",
+   "a wooden sign-free fence along a country path in an autumn wood",
+   "an autumn hillside wood at dawn with a wooden hunting stand at the edge of a field, photographed from a low angle, at golden hour",
+   "an autumn hillside wood at dawn with a wooden hunting stand at the edge of a field, a different composition with the subject off-center, in winter under a grey sky",
+   "an autumn hillside wood at dawn with a wooden hunting stand at the edge of a field, a view from above, in bright daylight",
+   "an autumn hillside wood at dawn with a wooden hunting stand at the edge of a field, at dusk, seen from further away, with the first lights on",
+   "an autumn hillside wood at dawn with a wooden hunting stand at the edge of a field, after the rain, with wet reflective surfaces, seen at eye level"
+  ]
+ },
+ "processione": {
+  "quando": "processioni e riti religiosi, feste dei santi patroni con la statua, processioni penitenziali",
+  "foto": "a decorated statue of a saint on a wooden float covered with flowers inside an old church",
+  "varianti": [
+   "a church square prepared for a procession with flower petals on the ground",
+   "candles burning in front of a saint's statue in a church chapel",
+   "a narrow village street with festive banners waiting for a procession, no people",
+   "a decorated statue of a saint on a wooden float covered with flowers inside an old church, photographed from a low angle, at golden hour",
+   "a decorated statue of a saint on a wooden float covered with flowers inside an old church, a different composition with the subject off-center, in winter under a grey sky",
+   "a decorated statue of a saint on a wooden float covered with flowers inside an old church, a view from above, in bright daylight",
+   "a decorated statue of a saint on a wooden float covered with flowers inside an old church, at dusk, seen from further away, with the first lights on",
+   "a decorated statue of a saint on a wooden float covered with flowers inside an old church, after the rain, with wet reflective surfaces, seen at eye level"
+  ]
+ },
+ "ufficio-postale": {
+  "quando": "uffici postali, aperture e chiusure degli sportelli postali, servizi postali nei paesi",
+  "foto": "the interior of a small Italian post office with counters and a parcel scale, no logos",
+  "varianti": [
+   "a red letter box on the stone wall of a village street, no logos",
+   "parcels and envelopes stacked on a post office counter",
+   "the entrance of a small post office in a village, no signs",
+   "the interior of a small Italian post office with counters and a parcel scale, no logos, photographed from a low angle, at golden hour",
+   "the interior of a small Italian post office with counters and a parcel scale, no logos, a different composition with the subject off-center, in winter under a grey sky",
+   "the interior of a small Italian post office with counters and a parcel scale, no logos, a view from above, in bright daylight",
+   "the interior of a small Italian post office with counters and a parcel scale, no logos, at dusk, seen from further away, with the first lights on",
+   "the interior of a small Italian post office with counters and a parcel scale, no logos, after the rain, with wet reflective surfaces, seen at eye level"
+  ]
+ },
+ "bancomat": {
+  "quando": "bancomat e sportelli bancari, chiusure delle filiali nei paesi, servizi bancari",
+  "foto": "an ATM cash machine set into the stone wall of a village street, no logos",
+  "varianti": [
+   "a bank branch entrance with glass doors on a town street, no signs",
+   "a close-up of an ATM keypad and card slot",
+   "an empty bank waiting area with counters and chairs, no logos",
+   "an ATM cash machine set into the stone wall of a village street, no logos, photographed from a low angle, at golden hour",
+   "an ATM cash machine set into the stone wall of a village street, no logos, a different composition with the subject off-center, in winter under a grey sky",
+   "an ATM cash machine set into the stone wall of a village street, no logos, a view from above, in bright daylight",
+   "an ATM cash machine set into the stone wall of a village street, no logos, at dusk, seen from further away, with the first lights on",
+   "an ATM cash machine set into the stone wall of a village street, no logos, after the rain, with wet reflective surfaces, seen at eye level"
   ]
  }
 }
