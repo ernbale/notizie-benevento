@@ -23,7 +23,14 @@ che le tiene ferme mentre lavora il giro di ogni ora, per non fare doppioni). Qu
   è uscito), `arrivata` (quando l'ha visto il Pi), `mittente` (la fonte), `dominio`, `testo` (quello del feed).
 Scrive nel registro (ufficiali.log) solo quando trova qualcosa o qualcosa non va. Stato in ufficiali_visti.json.
 
+Dal 27 ott 2026 il Benevento Calcio ogni minuto (lui: «i comunicati stampa del Benevento Calcio … da pubblicare
+istantaneamente, priorità max»): un giro con --solo «Benevento Calcio» legge solo la sua pagina delle notizie (una
+richiesta al minuto; gli articoli si aprono solo quando sono nuovi) e, se trova qualcosa, il cron fa partire subito il
+giro lampo. Tutti e due i giri usano lo stesso lucchetto (/tmp/nb_ufficiali.lock) e lo stesso stato: un articolo si
+trova una volta sola. Il giro con --solo non tocca l'esito delle altre fonti in ufficiali.json: aggiunge solo le voci.
+
 Uso sul Pi:  python3 ~/nb-fonti/sentinella/ufficiali.py            (dal cron, ogni 5 minuti)
+             python3 ~/nb-fonti/sentinella/ufficiali.py --solo "Benevento Calcio"   (dal cron, ogni minuto)
              python3 ~/nb-fonti/sentinella/ufficiali.py --prova    (legge e dice cosa è nuovo, senza scrivere)
              python3 ~/nb-fonti/sentinella/ufficiali.py --prova --tutte   (tutto quello delle ultime ore che passerebbe)
 """
@@ -186,13 +193,14 @@ def chiave(fonte):
     return f"{fonte[0]}|{fonte[2]}"
 
 
-def giro(adesso, tutte=False):
+def giro(adesso, tutte=False, fonti=None):
+    fonti = FONTI if fonti is None else fonti
     stato = V.leggi(STATO, None) or {"fonti": [], "visti": {}}
     if tutte:   # --prova --tutte: come se tutte le fonti fossero già note e nessun link visto
-        stato = {"fonti": [chiave(fo) for fo in FONTI], "visti": {}}
+        stato = {"fonti": [chiave(fo) for fo in fonti], "visti": {}}
     visti, iniziate = stato.setdefault("visti", {}), set(stato.setdefault("fonti", []))
     with ThreadPoolExecutor(8) as ex:
-        letture = list(ex.map(lambda fo: (fo, *_prova(leggi_fonte, fo, visti, chiave(fo) not in iniziate)), FONTI))
+        letture = list(ex.map(lambda fo: (fo, *_prova(leggi_fonte, fo, visti, chiave(fo) not in iniziate)), fonti))
     nuove, lette, non_lette, prime = [], [], [], []
     for fonte, voci, errore in letture:
         nome, tipo, url, solo_sannio = fonte
@@ -252,18 +260,44 @@ def main():
     ap.add_argument("--prova", action="store_true", help="legge e dice cosa è nuovo, senza scrivere né pubblicare")
     ap.add_argument("--tutte", action="store_true", help="con --prova: tutto quello delle ultime ORE_NUOVO ore che "
                     "passerebbe, come se nessun link fosse mai stato visto")
+    ap.add_argument("--solo", metavar="NOME", help="solo le fonti col nome che contiene NOME (es. «Benevento Calcio»)")
     a = ap.parse_args()
     if a.tutte and not a.prova:
         ap.error("--tutte solo con --prova")
+    fonti = [fo for fo in FONTI if a.solo.lower() in fo[0].lower()] if a.solo else FONTI
+    if not fonti:
+        ap.error(f"nessuna fonte col nome «{a.solo}»")
     adesso = V.adesso_roma()
     ora = f"{adesso:%d/%m %H:%M}"
-    stato, nuove, lette, non_lette, prime = giro(adesso, a.tutte)
+    stato, nuove, lette, non_lette, prime = giro(adesso, a.tutte, fonti)
     if a.prova:
         print(f"{ora} PROVA: lette {len(lette)} fonti su {len(FONTI)}"
               + (f"; non lette: {'; '.join(non_lette)}" if non_lette else "")
               + (f"; prima volta (solo presa nota): {', '.join(prime)}" if prime else ""))
         for v in nuove:
             print(f"  NUOVA {v['id']} · {v['mittente']} · {v['data']} · {v['titolo'][:90]}\n        {v['link']}")
+        return
+    if a.solo:   # il giro di un minuto: solo le voci nuove; l'esito delle fonti resta quello del giro di 5 minuti
+        if non_lette and adesso.minute % 15 == 0:   # se il sito è giù, una riga ogni quarto d'ora, non ogni minuto
+            print(f"{ora} {a.solo}: non letta ({'; '.join(non_lette)[:200]})")
+        if not nuove:
+            V.scrivi(STATO, stato)
+            return
+        with lucchetto(LUCCHETTO_LAMPO):
+            vecchio = V.leggi(ARCHIVIO_FILE, {}) or {}
+            limite = (adesso - dt.timedelta(days=GIORNI_TIENI)).isoformat()
+            ids = {v["id"] for v in nuove}
+            voci = nuove + [v for v in vecchio.get("voci") or [] if v.get("id") not in ids and str(v.get("arrivata")) >= limite]
+            V.scrivi(ARCHIVIO_FILE, dict(vecchio, voci=voci))
+            try:
+                V.pubblica_archivio(adesso)
+            except Exception as e:   # come nel giro di 5 minuti: le voci nuove si riprovano al giro dopo
+                V.scrivi(ARCHIVIO_FILE, vecchio)
+                print(f"{ora} ERRORE ({a.solo}): archivio non pubblicato ({type(e).__name__}: {e}): riprovo")
+                sys.exit(1)
+            print(f"{ora} {len(nuove)} nuove, archivio pubblicato: "
+                  + "; ".join(f"{v['id']} {v['mittente']} «{v['titolo'][:60]}»" for v in nuove))
+            V.scrivi(STATO, stato)
         return
     with lucchetto(LUCCHETTO_LAMPO):
         scrivi_e_pubblica(adesso, ora, stato, nuove, lette, non_lette, prime)
