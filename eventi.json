@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-27T10:07+01:00",
+ "aggiornato": "2026-10-27T11:30+01:00",
  "eventi": [
   {
    "id": "mostra-cosmogonie-meact-torrecuso-2026",
@@ -540,9 +540,16 @@
    "breve": "Quattro giorni di castagne, pecorino vitulanese, street band, trekking nei castagneti, mostre e laboratori per bambini nel borgo di Vitulano.",
    "descrizione": [
     {
-     "testo": "Organizza la Pro Loco Camposauro APS con il patrocinio del Comune di Vitulano e di UNPLI Benevento. Si mangiano caldarroste, pecorino vitulanese, dolci di castagna, primi della tradizione e vini del Sannio. Giovedì 29: alle 18 inaugurazione in Pinacoteca, alle 19 spettacolo itinerante con gli ASSURD e Davide Zarrella, alle 20 poetry slam alla Fontana Reale, alle 22 DJ set in Piazza San Menna. Venerdì 30: trekking nei castagneti alle 10 (ritrovo Piazza SS. Trinità), dalle 18 street band Sussifunky, alle 22 DJ set in via Bracanelli. Sabato 31: trekking alle 10, gruppo folk Fortuna Folianensis alle 11, Orchestrina Sanamalocchio alle 13, laboratorio per bambini alle 15, dimostrazione della cagliata alle 16. Domenica 1 novembre: trekking urbano alle 10, street band Pegaonda alle 11, cagliata in via Roma alle 11.30, Popolo Vascio alle 14, show cooking alle 15. Tutti i giorni mostra di Vittorio Asteriti a Casa Turese e Museo dei Marmi alla Congrega dei Nobili.",
+     "testo": "Organizza la Pro Loco Camposauro APS con il patrocinio del Comune di Vitulano e di UNPLI Benevento. Si mangiano caldarroste, pecorino vitulanese, dolci di castagna, primi della tradizione e vini del Sannio. Giovedì 29: alle 18 inaugurazione in Pinacoteca, alle 19 spettacolo itinerante con gli ASSURD e Davide Zarrella, alle 22 DJ set in Piazza San Menna. Venerdì 30: trekking nei castagneti alle 10 (ritrovo Piazza SS. Trinità), dalle 18 street band Sussifunky, alle 22 DJ set in via Bracanelli. Sabato 31: trekking alle 10, gruppo folk Fortuna Folianensis alle 11, Orchestrina Sanamalocchio alle 13, laboratorio per bambini alle 15, dimostrazione della cagliata alle 16. Domenica 1 novembre: trekking urbano alle 10, street band Pegaonda alle 11, cagliata in via Roma alle 11.30, Popolo Vascio alle 14, show cooking alle 15. Tutti i giorni mostra di Vittorio Asteriti a Casa Turese e Museo dei Marmi alla Congrega dei Nobili.",
      "fonti": [
       "Beneventogiornale"
+     ]
+    },
+    {
+     "testo": "C'è anche un programma di cultura, soprattutto in via Falluto. Giovedì 29 alle 18 convegno «Aree interne, turismo come prospettiva di sviluppo» nel Salone delle Conferenze di Piazza SS. Trinità. Venerdì 30 alle 19.30, nella chiesa di San Nicola, Camilla De Duonni presenta il libro «Tocco Vecchio sospeso tra vita e silenzio», dedicato a Tocco Caudio. Sabato 31 alle 11 laboratorio gratuito di poesia per bambini con Michele Piramide alla Fontana Reale, che torna anche domenica; sempre sabato, alle 20 alla Fontana Reale, il poetry slam «Poesia e Resilienza – Dal brigantaggio all'appartenenza». Domenica 1 novembre alle 18, a San Nicola, Antonio Vassallo presenta «Yürgen». Per tutti e quattro i giorni ci sono la libreria temporanea di Casa Naima e uno spazio dedicato al fumetto con Giuseppe Battaglia.",
+     "fonti": [
+      "BeneventoNews24",
+      "Cronache del Sannio"
      ]
     },
     {
@@ -589,6 +596,18 @@
      "titolo": "Chiusura al traffico veicolare e divieto di sosta sulle strade interessate dalla “XXXIII EDIZIONE SAGRA DELLA CASTAGNA”.",
      "url": "https://comune.vitulano.bn.it/albo-pretorio/?dettaglio_id=306123",
      "data": "26 ott"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "titolo": "Vitulano, conto alla rovescia per la 33° Sagra della Castagna e del Pecorino Vitulanese",
+     "url": "https://www.beneventonews24.it/2026/10/27/vitulano-conto-alla-rovescia-per-la-33-sagra-della-castagna-e-del-pecorino-vitulanese/",
+     "data": "27 ott, 10:43"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "titolo": "Vitulano, la Sagra della Castagna apre le porte alla cultura",
+     "url": "https://www.cronachedelsannio.it/sannionews24/vitulano-sagra-castagna-apre-porte-cultura/",
+     "data": "27 ott, 10:23"
     }
    ],
    "immagine": "castagne",
@@ -1017,6 +1036,13 @@
      "fonti": [
       "Benevento Turismo"
      ]
+    },
+    {
+     "testo": "Dopo lo spettacolo c'è il DopoTeatro, una cena leggera in teatro a cura di Alimenta bistrot: costa 15 euro e si prenota solo per telefono, dalle 9 alle 13, allo 0824 47037 o al 338 145 76 88. I biglietti dello spettacolo sono sul sito solot.it.",
+     "fonti": [
+      "Gazzetta di Benevento",
+      "Cronache del Sannio"
+     ]
     }
    ],
    "fonti": [
@@ -1031,6 +1057,18 @@
      "titolo": "\"Obiettivo T\", la Solot presenta la nuova stagione teatrale",
      "url": "https://beneventoturismo.it/obiettivo-t-la-solot-presenta-la-nuova-stagione-teatrale/",
      "data": "set (giorno non scritto)"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "titolo": "Venerdì 6 novembre al Teatro Mulino Pacifico, andrà in scena \"La cara dei vecchi\". La drammaturgia reca la firma di Elvira Buonocore e la regia di Pino Carbone",
+     "url": "https://www.gazzettabenevento.it/it/venerdi-6-novembre-al-teatro-mulino-pacifico-andra-scena-la-cara-dei-vecchi-la-drammaturgia-reca-la",
+     "data": "27 ott"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "titolo": "Al Mulino Pacifico in scena “La Cara dei vecchi”",
+     "url": "https://www.cronachedelsannio.it/sannionews24/mulino-pacifico-scena-cara-vecchi/",
+     "data": "27 ott, 11:00"
     }
    ],
    "immagine": "teatro",

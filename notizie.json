@@ -1,7 +1,154 @@
 {
- "aggiornato": "2026-10-27T10:13+01:00",
+ "aggiornato": "2026-10-27T11:17+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-linux-day-2026-lilis-oltre-100-partecipanti",
+   "titolo": "Benevento, Linux Day 2026 all'Università del Sannio: oltre 100 partecipanti",
+   "titolo_google": "Linux Day 2026 a Benevento: oltre 100 partecipanti a UniSannio",
+   "sintesi": "Il Linux Day 2026 di Benevento, la giornata dedicata al software libero organizzata dall'associazione LILiS all'Università del Sannio, ha avuto più di 100 persone in sala. Slide e video degli interventi sono sul sito lilis.it.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "immagine": "universita",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-27T11:08:00+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/benevento-grande-successo-linux-day/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/27/grande-successo-per-il-linux-day-2026-a-benevento-oltre-100-partecipanti-per-celebrare-software-libero-e-open-source/"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/27/successo-per-il-linux-day-a-benevento-oltre-100-partecipanti-per-celebrare-il-software-libero-e-lopen-source/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Più di 100 persone hanno partecipato in presenza al Linux Day 2026 di Benevento, la giornata nazionale dedicata a GNU/Linux, al software libero e all'open source, cioè i programmi che chiunque può usare, studiare e modificare. A organizzarla in città è stata l'associazione LILiS, ospitata dall'Università del Sannio, con la collaborazione di Sannio Valley.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Il pubblico ha seguito tutti gli interventi in programma e ha fatto molte domande ai relatori. LabTV ha seguito la giornata come media partner.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Chi non c'era può rivedere tutto: sul sito dell'associazione, lilis.it, ci sono le slide di ogni intervento e il video completo della diretta. Nei prossimi mesi LILiS organizzerà altri laboratori e incontri aperti a tutti sulle tecnologie libere; il prossimo Linux Day sarà nel 2027.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Oltre 100 partecipanti in presenza, ospitalità dell'Università del Sannio, slide e video sul sito lilis.it.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "In che giorno si è svolta la giornata e in quale sede dell'Università: gli articoli non lo scrivono."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Successo per il Linux Day a Benevento: oltre 100 partecipanti per celebrare il software libero e l’open source",
+      "url": "https://www.ntr24.tv/2026/10/27/successo-per-il-linux-day-a-benevento-oltre-100-partecipanti-per-celebrare-il-software-libero-e-lopen-source/",
+      "data": "27 ott, 08:14"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Grande successo per il Linux Day 2026 a Benevento: oltre 100 partecipanti per celebrare software libero e open source",
+      "url": "https://www.beneventonews24.it/2026/10/27/grande-successo-per-il-linux-day-2026-a-benevento-oltre-100-partecipanti-per-celebrare-software-libero-e-open-source/",
+      "data": "27 ott, 10:12"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "A Benevento grande successo per il Linux Day 2026",
+      "url": "https://www.cronachedelsannio.it/sannionews24/benevento-grande-successo-linux-day/",
+      "data": "27 ott, 11:08"
+     }
+    ]
+   },
+   "foto": "universita-12"
+  },
+  {
+   "id": "start-cup-campania-2026-sonaflux-unisannio-finale-30-ottobre",
+   "titolo": "Start Cup Campania 2026, Sonaflux dell'Università del Sannio tra i finalisti: la finale il 30 ottobre a Napoli",
+   "titolo_google": "Start Cup Campania 2026: Sonaflux di UniSannio in finale",
+   "sintesi": "Sonaflux, progetto d'impresa dell'Università del Sannio, è tra gli 11 finalisti della competizione principale di Start Cup Campania 2026. La finale è venerdì 30 ottobre al Complesso Santa Patrizia di Napoli; al vincitore vanno 5mila euro.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "immagine": "universita",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-27T11:01:00+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/27/start-cup-campania-2026-sonaflux-delluniversita-del-sannio-tra-i-14-finalisti/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "C'è anche un progetto dell'Università del Sannio tra i finalisti di Start Cup Campania 2026, la gara tra idee d'impresa nate dalla ricerca negli atenei della regione. Si chiama Sonaflux ed è di Elvira Rakova: è uno degli 11 progetti ammessi alla competizione principale.",
+      "fonti": [
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "La finale regionale è venerdì 30 ottobre al Complesso Santa Patrizia di Napoli, in via Luciano Armanni 5. La giornata comincia alle 11.30 con gli incontri tra i gruppi finalisti e le imprese. In tutto i finalisti sono 14, da 7 università: agli 11 della competizione principale si aggiungono 3 progetti di soli studenti, in gara per il Premio Speciale Mario Raffa.",
+      "fonti": [
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "I primi cinque classificati si dividono 12mila euro: 5mila al primo, 3mila al secondo, 2mila al terzo, mille al quarto e al quinto. Gli stessi cinque passano al Premio Nazionale per l'Innovazione, la gara italiana delle idee d'impresa nate nelle università. Ci sono poi premi speciali, tra cui quello per il miglior progetto di un gruppo a maggioranza femminile, da 6mila euro tra soldi e consulenze.",
+      "fonti": [
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Di cosa si occupa il progetto Sonaflux: l'articolo non lo spiega."
+    ],
+    "fonti": [
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Start Cup Campania 2026, Sonaflux dell’Università del Sannio tra i 14 finalisti",
+      "url": "https://www.beneventonews24.it/2026/10/27/start-cup-campania-2026-sonaflux-delluniversita-del-sannio-tra-i-14-finalisti/",
+      "data": "27 ott, 11:01"
+     }
+    ]
+   },
+   "foto": "universita-13"
+  },
   {
    "id": "montefalcone-val-fortore-sp-50-lavori-risanamento-provincia",
    "titolo": "Montefalcone di Val Fortore, via libera ai lavori di risanamento sulla strada provinciale 50",
@@ -23,6 +170,14 @@
      "nome": "Provincia di Benevento",
      "url": "https://www.provincia.benevento.it/",
      "ufficiale": true
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/montefalcone-fortore-interventi-provinciale-cinquanta/"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/approvata-la-perizia-di-spesa-le-opere-di-ripristino-del-piano-viabile-sulla-strada-provinciale-50"
     }
    ],
    "articolo": {
@@ -30,24 +185,42 @@
      {
       "testo": "La Provincia di Benevento ha dato il via libera ai lavori sulla strada provinciale 50, nel territorio di Montefalcone di Val Fortore. Lo annuncia il presidente della Provincia, Nino Lombardi: il dirigente del Settore Infrastrutture, Valentino Ferrara, ha approvato la perizia di spesa, cioè il documento tecnico con i lavori da fare e quanto costano, per rimettere a posto l'asfalto della strada.",
       "fonti": [
-       "Provincia di Benevento"
-      ]
+       "Provincia di Benevento",
+       "Cronache del Sannio",
+       "Gazzetta di Benevento"
+      ],
+      "giorno": "2026-10-27"
      },
      {
       "testo": "Si tratta di lavori di manutenzione straordinaria e di risanamento della strada, dal chilometro 12+650 al chilometro 13+950. L'opera è affidata alla ditta Cavoto Costruzioni di Montefalcone di Val Fortore.",
       "fonti": [
-       "Provincia di Benevento"
-      ]
+       "Provincia di Benevento",
+       "Cronache del Sannio",
+       "Gazzetta di Benevento"
+      ],
+      "giorno": "2026-10-27"
      },
      {
       "testo": "La perizia ha un importo netto di 204.830,12 euro. I soldi arrivano dal Ministero delle Infrastrutture, che finanzia gli interventi nel Comparto n. 2 «Fortore» della rete stradale della Provincia di Benevento.",
       "fonti": [
-       "Provincia di Benevento"
-      ]
+       "Provincia di Benevento",
+       "Cronache del Sannio",
+       "Gazzetta di Benevento"
+      ],
+      "giorno": "2026-10-27"
      }
     ],
     "cronologia": [],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "Perizia da 204.830,12 euro per il tratto dal km 12+650 al km 13+950, lavori alla ditta Cavoto Costruzioni, soldi del Ministero delle Infrastrutture.",
+      "fonti": [
+       "Provincia di Benevento",
+       "Cronache del Sannio",
+       "Gazzetta di Benevento"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [],
     "fonti": [
@@ -57,6 +230,18 @@
       "url": "https://www.provincia.benevento.it/",
       "data": "27 ott, 10:30",
       "ufficiale": true
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Montefalcone di Val Fortore, interventi sulla Provinciale 50: stanziati oltre 204mila euro",
+      "url": "https://www.cronachedelsannio.it/sannionews24/montefalcone-fortore-interventi-provinciale-cinquanta/",
+      "data": "27 ott, 10:48"
+     },
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "Approvata la perizia di spesa per le opere di ripristino del piano viabile sulla Strada Provinciale 50 nel territorio di Montefalcone di Valfortore",
+      "url": "https://www.gazzettabenevento.it/it/approvata-la-perizia-di-spesa-le-opere-di-ripristino-del-piano-viabile-sulla-strada-provinciale-50",
+      "data": "27 ott"
      }
     ]
    },
@@ -135,6 +320,10 @@
      "nome": "Benevento Calcio",
      "url": "https://www.beneventocalcio.club/news/comunicatistampa/7680/benevento-catanzaro-informazioni-ai-tifosi-per-l-accesso-allo-stadio.shtml",
      "ufficiale": true
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/benevento-catanzaro-varchi-accesso-aperti-diciassette/"
     }
    ],
    "articolo": {
@@ -142,32 +331,42 @@
      {
       "testo": "Per Benevento-Catanzaro, la partita di martedì 27 ottobre alle 19, i cancelli dello stadio Ciro Vigorito apriranno al pubblico alle 17, due ore prima del calcio d'inizio. Il Benevento Calcio invita tutti gli spettatori ad arrivare allo stadio con largo anticipo.",
       "fonti": [
-       "Benevento Calcio"
-      ]
+       "Benevento Calcio",
+       "Cronache del Sannio"
+      ],
+      "giorno": "2026-10-27"
      },
      {
       "testo": "La società prevede molta gente e ricorda i rallentamenti delle partite precedenti. Per questo raccomanda di non arrivare tutti nell'ultima ora prima della partita, soprattutto nei settori più frequentati.",
       "fonti": [
-       "Benevento Calcio"
-      ]
+       "Benevento Calcio",
+       "Cronache del Sannio"
+      ],
+      "giorno": "2026-10-27"
      },
      {
       "testo": "Ai varchi bisogna presentarsi con il biglietto o l'abbonamento, di carta (non plastificato) oppure sul telefono, e con un documento d'identità valido: serve a controllare che i dati della persona siano quelli scritti sul biglietto. Chi ha il biglietto sul telefono deve avere il codice QR o il codice a barre già aperto e ben visibile sullo schermo, con la luminosità giusta.",
       "fonti": [
-       "Benevento Calcio"
-      ]
+       "Benevento Calcio",
+       "Cronache del Sannio"
+      ],
+      "giorno": "2026-10-27"
      },
      {
       "testo": "Al tornello il codice va appoggiato bene sul lettore. Si entra solo dopo che il codice è stato letto e sullo schermo compare il segnale verde.",
       "fonti": [
-       "Benevento Calcio"
-      ]
+       "Benevento Calcio",
+       "Cronache del Sannio"
+      ],
+      "giorno": "2026-10-27"
      },
      {
       "testo": "Il club chiede anche di rispettare il regolamento dello stadio e le indicazioni degli steward e delle forze dell'ordine. In particolare è vietato occupare le scale e le vie di fuga, portare dentro materiale esplosivo o fuochi d'artificio ed esporre striscioni o altro materiale che non sia stato autorizzato prima. Secondo la società, arrivare puntuali e seguire le indicazioni del personale renderà l'ingresso più veloce e più sicuro.",
       "fonti": [
-       "Benevento Calcio"
-      ]
+       "Benevento Calcio",
+       "Cronache del Sannio"
+      ],
+      "giorno": "2026-10-27"
      }
     ],
     "cronologia": [],
@@ -181,6 +380,12 @@
       "url": "https://www.beneventocalcio.club/news/comunicatistampa/7680/benevento-catanzaro-informazioni-ai-tifosi-per-l-accesso-allo-stadio.shtml",
       "data": "27 ott, 08:45",
       "ufficiale": true
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Benevento-Catanzaro, varchi d’accesso aperti dalle 17",
+      "url": "https://www.cronachedelsannio.it/sannionews24/benevento-catanzaro-varchi-accesso-aperti-diciassette/",
+      "data": "27 ott, 09:55"
      }
     ]
    },
@@ -2721,12 +2926,12 @@
   },
   {
    "id": "buonalbergo-carta-dedicata-a-te-lista-beneficiari-2026",
-   "titolo": "Carta Dedicata a te, pubblicati gli elenchi dei beneficiari a Buonalbergo e Montesarchio: prima ricarica dal 4 novembre",
-   "titolo_google": "Carta Dedicata a te a Montesarchio e Buonalbergo: beneficiari",
-   "sintesi": "Buonalbergo e Montesarchio hanno pubblicato gli elenchi delle famiglie che ricevono la «Carta Dedicata a te», 500 euro all'anno per la spesa. A Montesarchio sono 464 carte; la prima ricarica arriva dal 4 novembre e il primo acquisto va fatto entro il 16 dicembre.",
+   "titolo": "Carta Dedicata a te, pubblicati gli elenchi dei beneficiari a Buonalbergo, Montesarchio e Sant'Angelo a Cupolo: prima ricarica dal 4 novembre",
+   "titolo_google": "Carta Dedicata a te 2026: beneficiari in tre Comuni del Sannio",
+   "sintesi": "Buonalbergo, Montesarchio e Sant'Angelo a Cupolo hanno pubblicato gli elenchi delle famiglie che ricevono la «Carta Dedicata a te», 500 euro all'anno per la spesa. La prima ricarica arriva dal 4 novembre e il primo acquisto va fatto entro il 16 dicembre.",
    "categoria": "altro",
    "zona": "provincia",
-   "luogo": "Buonalbergo e Montesarchio",
+   "luogo": "Buonalbergo, Montesarchio e Sant'Angelo a Cupolo",
    "pubblicato": "2026-10-26",
    "stato": "ufficiale",
    "rilevante": false,
@@ -2739,6 +2944,11 @@
     {
      "nome": "Comune di Montesarchio",
      "url": "https://www.comune.montesarchio.bn.it/it/novita/page/carta-dedicata-a-te-2026-2027-pubblicato-l-elenco-dei-beneficiari",
+     "ufficiale": true
+    },
+    {
+     "nome": "Comune di Sant'Angelo a Cupolo",
+     "url": "https://comune.santangeloacupolo.bn.it/novita/carta-dedicata-a-te-anno-2026/",
      "ufficiale": true
     }
    ],
@@ -2773,6 +2983,13 @@
       "giorno": "2026-10-27"
      },
      {
+      "testo": "Martedì 27 ottobre l'elenco l'ha pubblicato anche il Comune di Sant'Angelo a Cupolo. I nuovi beneficiari riceveranno dal Comune una lettera con il codice della carta, da portare in un ufficio postale abilitato per ritirarla. Chi aveva già la carta ed è stato confermato non deve ritirarne un'altra: i soldi arrivano su quella. Anche qui il primo acquisto va fatto entro il 16 dicembre 2026, altrimenti si perde il contributo.",
+      "fonti": [
+       "Comune di Sant'Angelo a Cupolo"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
       "testo": "Il Comune di Buonalbergo ha pubblicato lunedì 26 ottobre, all'albo pretorio, la lista dei beneficiari della «Carta Dedicata a te», la misura di sostegno ai nuclei familiari.",
       "fonti": [
        "Comune di Buonalbergo"
@@ -2803,6 +3020,13 @@
       ]
      },
      {
+      "data": "27 ottobre",
+      "fatto": "Anche Sant'Angelo a Cupolo pubblica l'elenco dei beneficiari.",
+      "fonti": [
+       "Comune di Sant'Angelo a Cupolo"
+      ]
+     },
+     {
       "data": "4 novembre",
       "fatto": "Prima ricarica di 500 euro sulle carte.",
       "fonti": [
@@ -2810,7 +3034,15 @@
       ]
      }
     ],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "Il primo acquisto con la carta va fatto entro il 16 dicembre 2026; chi era già beneficiario riceve i soldi sulla carta che ha.",
+      "fonti": [
+       "Comune di Montesarchio",
+       "Comune di Sant'Angelo a Cupolo"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [
      "Quando e dove i beneficiari di Buonalbergo potranno ritirare il foglio con il codice per la carta."
@@ -2829,14 +3061,21 @@
       "url": "https://www.comune.montesarchio.bn.it/it/novita/page/carta-dedicata-a-te-2026-2027-pubblicato-l-elenco-dei-beneficiari",
       "data": "27 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "Comune di Sant'Angelo a Cupolo",
+      "titolo": "Carta “Dedicata a Te” – Anno 2026",
+      "url": "https://comune.santangeloacupolo.bn.it/novita/carta-dedicata-a-te-anno-2026/",
+      "data": "27 ott",
+      "ufficiale": true
      }
     ],
     "aggiornamento": {
-     "testo": "Martedì 27 ottobre anche Montesarchio ha pubblicato l'elenco dei beneficiari: 464 carte, prima ricarica di 500 euro dal 4 novembre.",
+     "testo": "Martedì 27 ottobre anche Sant'Angelo a Cupolo ha pubblicato l'elenco dei beneficiari: i nuovi riceveranno una lettera dal Comune con il codice per ritirare la carta alla Posta.",
      "fonti": [
-      "Comune di Montesarchio"
+      "Comune di Sant'Angelo a Cupolo"
      ],
-     "quando": "2026-10-27T10:13+01:00",
+     "quando": "2026-10-27T11:17+01:00",
      "titolo_prima": "Buonalbergo, pubblicata la lista dei beneficiari della «Carta Dedicata a te»"
     }
    },
@@ -6998,6 +7237,10 @@
     {
      "nome": "NTR24",
      "url": "https://www.ntr24.tv/2026/10/27/air-campania-i-sindacati-confermano-lo-sciopero-di-8-ore-del-28-ottobre-presidio-alla-regione/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/air-campania-sindacati-confermato-sciopero-domani/"
     }
    ],
    "articolo": {
@@ -7005,14 +7248,16 @@
      {
       "testo": "Lo sciopero di mercoledì 28 ottobre è confermato. I sindacati FILT CGIL, FIT CISL, UILTRASPORTI, UGL FNA e FAISA CISAL hanno annunciato anche un presidio davanti alla sede della Regione Campania, all'isola C3 del Centro Direzionale di Napoli, dalle 10 alle 12. La Regione è la proprietaria di AIR.",
       "fonti": [
-       "NTR24"
+       "NTR24",
+       "Cronache del Sannio"
       ],
       "giorno": "2026-10-27"
      },
      {
-      "testo": "Nell'incontro del 20 ottobre, secondo i sindacati, l'azienda si è impegnata a pagare di nuovo la quota mensile del premio di risultato dalla busta paga di novembre, con gli arretrati. Per i sindacati non basta: chiedono il saldo del premio 2025, garanzie su quello del 2026, l'assunzione di nuovi autisti, perché ne mancano in molti depositi e si ricorre sempre più agli straordinari, e più sicurezza contro le aggressioni al personale.",
+      "testo": "Nell'incontro del 20 ottobre, secondo i sindacati, l'azienda si è impegnata a pagare di nuovo la quota mensile del premio di risultato dalla busta paga di novembre, con gli arretrati. Per i sindacati non basta: chiedono il saldo del premio 2025, garanzie su quello del 2026, l'assunzione di nuovi autisti, perché ne mancano in molti depositi e si ricorre sempre più agli straordinari, e più sicurezza contro le aggressioni al personale. Tra le critiche dei sindacati ci sono anche i costi per tenere aperto il deposito di Limatola, i servizi igienici che mancano dove gli autisti si fermano e la pulizia dei mezzi.",
       "fonti": [
-       "NTR24"
+       "NTR24",
+       "Cronache del Sannio"
       ],
       "giorno": "2026-10-27"
      },
@@ -7073,16 +7318,18 @@
       "testo": "Sciopero di 8 ore il 28 ottobre, proclamato da FILT CGIL, FIT CISL, UILTRASPORTI, UGL FNA e FAISA CISAL.",
       "fonti": [
        "AIR Campania",
-       "NTR24"
+       "NTR24",
+       "Cronache del Sannio"
       ]
      }
     ],
     "divergono": [
      {
-      "testo": "NTR24 scrive «martedì 28 ottobre», ma il 28 ottobre 2026 è mercoledì, come dice l'avviso di AIR Campania.",
+      "testo": "NTR24 scrive «martedì 28 ottobre», ma il 28 ottobre 2026 è mercoledì, come dicono l'avviso di AIR Campania e Cronache del Sannio.",
       "fonti": [
        "NTR24",
-       "AIR Campania"
+       "AIR Campania",
+       "Cronache del Sannio"
       ]
      }
     ],
@@ -7103,6 +7350,12 @@
       "titolo": "AIR Campania, i sindacati confermano lo sciopero di 8 ore del 28 ottobre: presidio alla Regione",
       "url": "https://www.ntr24.tv/2026/10/27/air-campania-i-sindacati-confermano-lo-sciopero-di-8-ore-del-28-ottobre-presidio-alla-regione/",
       "data": "27 ott, 09:57"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Air Campania, sindacati: “Confermato lo sciopero per domani”",
+      "url": "https://www.cronachedelsannio.it/sannionews24/air-campania-sindacati-confermato-sciopero-domani/",
+      "data": "27 ott, 10:11"
      }
     ],
     "aggiornamento": {
