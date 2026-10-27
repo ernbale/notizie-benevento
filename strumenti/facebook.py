@@ -273,7 +273,13 @@ def chiama(metodo, percorso, token, dati=None):
         # l'errore di Facebook dice cosa non va (chiave scaduta, permesso mancante…) e non contiene la chiave
         try:
             err = json.load(e).get("error", {})
-            raise RuntimeError(f"Facebook {e.code}: {err.get('message', '')} (codice {err.get('code')})") from None
+            # il sottocodice e il titolo per l'utente dicono quale limite (27 ott 2026: il codice 4 da solo non bastava a
+            # capire se era il limite delle chiamate o il blocco di Instagram contro lo spam); «(codice N)» resta così
+            # perché LIMITE_META lo cerca
+            altro = (f" sottocodice {err['error_subcode']}" if err.get("error_subcode") else "") \
+                + (f" «{err['error_user_title']}»" if err.get("error_user_title") else "") \
+                + f" [{metodo} {re.sub(r'[0-9]{6,}', 'N', percorso.split('?')[0])}]"
+            raise RuntimeError(f"Facebook {e.code}: {err.get('message', '')} (codice {err.get('code')}){altro}") from None
         except ValueError:
             raise RuntimeError(f"Facebook {e.code}") from None
 
