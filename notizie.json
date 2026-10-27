@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-27T09:17+01:00",
+ "aggiornato": "2026-10-27T10:13+01:00",
  "giornali_letti": 14,
  "notizie": [
   {
@@ -2660,12 +2660,12 @@
   },
   {
    "id": "buonalbergo-carta-dedicata-a-te-lista-beneficiari-2026",
-   "titolo": "Buonalbergo, pubblicata la lista dei beneficiari della «Carta Dedicata a te»",
-   "titolo_google": "Carta Dedicata a te a Buonalbergo: la lista dei beneficiari",
-   "sintesi": "Il Comune di Buonalbergo ha pubblicato all'albo pretorio la lista delle famiglie che riceveranno la «Carta Dedicata a te», la carta di sostegno ai nuclei familiari. Nella lista non ci sono nomi: ogni famiglia si riconosce dal numero della pratica e dal protocollo della dichiarazione ISEE.",
+   "titolo": "Carta Dedicata a te, pubblicati gli elenchi dei beneficiari a Buonalbergo e Montesarchio: prima ricarica dal 4 novembre",
+   "titolo_google": "Carta Dedicata a te a Montesarchio e Buonalbergo: beneficiari",
+   "sintesi": "Buonalbergo e Montesarchio hanno pubblicato gli elenchi delle famiglie che ricevono la «Carta Dedicata a te», 500 euro all'anno per la spesa. A Montesarchio sono 464 carte; la prima ricarica arriva dal 4 novembre e il primo acquisto va fatto entro il 16 dicembre.",
    "categoria": "altro",
-   "zona": "fortore",
-   "luogo": "Buonalbergo",
+   "zona": "provincia",
+   "luogo": "Buonalbergo e Montesarchio",
    "pubblicato": "2026-10-26",
    "stato": "ufficiale",
    "rilevante": false,
@@ -2674,28 +2674,85 @@
      "nome": "Comune di Buonalbergo",
      "url": "https://www.halleyweb.com/c062011/mc/mc_p_dettaglio.php?id_pubbl=11322",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di Montesarchio",
+     "url": "https://www.comune.montesarchio.bn.it/it/novita/page/carta-dedicata-a-te-2026-2027-pubblicato-l-elenco-dei-beneficiari",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
      {
+      "testo": "Anche il Comune di Montesarchio, in Valle Caudina, ha pubblicato martedì 27 ottobre l'elenco dei beneficiari della «Carta Dedicata a te» per il 2026 e il 2027. È una carta prepagata di Poste Italiane con 500 euro all'anno per comprare cibo e beni di prima necessità. A Montesarchio le carte assegnate sono 464, una sola per famiglia.",
+      "fonti": [
+       "Comune di Montesarchio"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Non bisognava fare domanda: le famiglie le ha scelte l'INPS tra quelle con un ISEE fino a 15.000 euro e con tutti i componenti iscritti all'anagrafe, dando la precedenza ai nuclei di almeno tre persone con figli nati entro il 2012, poi entro il 2008, e dentro ogni gruppo all'ISEE più basso. Restano fuori le famiglie che prendono già l'Assegno di inclusione, la Carta acquisti o altri sussidi contro la povertà, e quelle in cui qualcuno prende la NASpI, la cassa integrazione o altri aiuti per chi ha perso il lavoro. Nell'elenco ogni famiglia si riconosce dal numero di protocollo scritto sull'attestazione ISEE.",
+      "fonti": [
+       "Comune di Montesarchio"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Chi ha già la carta degli anni scorsi ed è stato confermato riceve i soldi su quella, senza andare alla Posta; se l'ha persa può chiederne un'altra all'ufficio postale con documento, codice fiscale e denuncia. Chi la riceve per la prima volta deve prima ritirare in Comune il foglio con il codice, all'Ufficio Politiche Sociali in via San Sebastiano (nell'ex scuola elementare), e poi andare in un qualsiasi ufficio postale. Per informazioni: 0824 1743820, interno 1.",
+      "fonti": [
+       "Comune di Montesarchio"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "La prima ricarica di 500 euro arriva dal 4 novembre 2026 e il primo acquisto va fatto entro il 16 dicembre, altrimenti si perde la quota del 2026. La seconda ricarica arriva da aprile 2027: bisogna fare almeno un pagamento entro il 31 agosto 2027, e tutti i soldi vanno spesi entro il 10 ottobre 2027.",
+      "fonti": [
+       "Comune di Montesarchio"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
       "testo": "Il Comune di Buonalbergo ha pubblicato lunedì 26 ottobre, all'albo pretorio, la lista dei beneficiari della «Carta Dedicata a te», la misura di sostegno ai nuclei familiari.",
       "fonti": [
        "Comune di Buonalbergo"
-      ]
+      ],
+      "giorno": "2026-10-26"
      },
      {
       "testo": "La lista non riporta i nomi: ogni famiglia è indicata col numero della sua pratica e col protocollo della DSU, la dichiarazione presentata all'INPS per l'ISEE. Per sapere se si è tra i beneficiari basta confrontare questi numeri con quelli della propria dichiarazione, nell'avviso pubblicato all'albo pretorio online del Comune.",
       "fonti": [
        "Comune di Buonalbergo"
+      ],
+      "giorno": "2026-10-26"
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "26 ottobre",
+      "fatto": "Buonalbergo pubblica all'albo la lista dei beneficiari.",
+      "fonti": [
+       "Comune di Buonalbergo"
+      ]
+     },
+     {
+      "data": "27 ottobre",
+      "fatto": "Montesarchio pubblica l'elenco: 464 carte.",
+      "fonti": [
+       "Comune di Montesarchio"
+      ]
+     },
+     {
+      "data": "4 novembre",
+      "fatto": "Prima ricarica di 500 euro sulle carte.",
+      "fonti": [
+       "Comune di Montesarchio"
       ]
      }
     ],
-    "cronologia": [],
     "concordano": [],
     "divergono": [],
     "non_si_sa": [
-     "Quando e dove i beneficiari potranno ritirare la carta."
+     "Quando e dove i beneficiari di Buonalbergo potranno ritirare il foglio con il codice per la carta."
     ],
     "fonti": [
      {
@@ -2704,8 +2761,23 @@
       "url": "https://www.halleyweb.com/c062011/mc/mc_p_dettaglio.php?id_pubbl=11322",
       "data": "26 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "Comune di Montesarchio",
+      "titolo": "“Carta dedicata a te” 2026 - 2027. Pubblicato l’elenco dei beneficiari",
+      "url": "https://www.comune.montesarchio.bn.it/it/novita/page/carta-dedicata-a-te-2026-2027-pubblicato-l-elenco-dei-beneficiari",
+      "data": "27 ott",
+      "ufficiale": true
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Martedì 27 ottobre anche Montesarchio ha pubblicato l'elenco dei beneficiari: 464 carte, prima ricarica di 500 euro dal 4 novembre.",
+     "fonti": [
+      "Comune di Montesarchio"
+     ],
+     "quando": "2026-10-27T10:13+01:00",
+     "titolo_prima": "Buonalbergo, pubblicata la lista dei beneficiari della «Carta Dedicata a te»"
+    }
    },
    "immagine": "documenti",
    "foto": "documenti-11",
@@ -6846,9 +6918,9 @@
   },
   {
    "id": "air-campania-sciopero-28-ottobre",
-   "titolo": "Mercoledì 28 ottobre sciopero di 8 ore in AIR Campania: possibili riduzioni dei bus extraurbani",
+   "titolo": "Mercoledì 28 ottobre sciopero di 8 ore in AIR Campania, confermato dai sindacati: possibili riduzioni dei bus extraurbani",
    "titolo_google": "Sciopero bus AIR 28 ottobre: corse a rischio dalle 8 alle 16",
-   "sintesi": "Mercoledì 28 ottobre 2026 i lavoratori di AIR Campania, la società dei bus extraurbani, scioperano per 8 ore. Il servizio può ridursi, con corse garantite dalle 13 alle 15.",
+   "sintesi": "Mercoledì 28 ottobre 2026 i lavoratori di AIR Campania, la società dei bus extraurbani, scioperano per 8 ore: i sindacati lo hanno confermato. Il servizio può ridursi dalle 8 alle 16, con corse garantite dalle 13 alle 15.",
    "categoria": "strade",
    "zona": "provincia",
    "immagine": "autobus",
@@ -6861,32 +6933,98 @@
      "nome": "AIR Campania",
      "url": "https://aircampania.it/avviso-di-sciopero-avvpco/",
      "ufficiale": true
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/27/air-campania-i-sindacati-confermano-lo-sciopero-di-8-ore-del-28-ottobre-presidio-alla-regione/"
     }
    ],
    "articolo": {
     "racconto": [
      {
+      "testo": "Lo sciopero di mercoledì 28 ottobre è confermato. I sindacati FILT CGIL, FIT CISL, UILTRASPORTI, UGL FNA e FAISA CISAL hanno annunciato anche un presidio davanti alla sede della Regione Campania, all'isola C3 del Centro Direzionale di Napoli, dalle 10 alle 12. La Regione è la proprietaria di AIR.",
+      "fonti": [
+       "NTR24"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Nell'incontro del 20 ottobre, secondo i sindacati, l'azienda si è impegnata a pagare di nuovo la quota mensile del premio di risultato dalla busta paga di novembre, con gli arretrati. Per i sindacati non basta: chiedono il saldo del premio 2025, garanzie su quello del 2026, l'assunzione di nuovi autisti, perché ne mancano in molti depositi e si ricorre sempre più agli straordinari, e più sicurezza contro le aggressioni al personale.",
+      "fonti": [
+       "NTR24"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
       "testo": "Mercoledì 28 ottobre 2026 c'è uno sciopero di 8 ore dei lavoratori di AIR Campania, la società che gestisce i bus extraurbani della regione. L'ha proclamato un gruppo di sindacati regionali (FILT CGIL, FIT CISL, UILTRASPORTI, UGL FNA e FAISA CISAL), che con questo annunciano una seconda azione di sciopero.",
       "fonti": [
        "AIR Campania"
-      ]
+      ],
+      "giorno": "2026-10-23"
      },
      {
       "testo": "Il personale turnista e di esercizio si ferma dalle 8 alle 16, rispettando le fasce di garanzia, cioè le ore in cui il servizio deve essere assicurato: dalle 13 alle 15. Il resto del personale, quello non legato direttamente al trasporto delle persone, si ferma per l'intero turno di lavoro.",
       "fonti": [
        "AIR Campania"
-      ]
+      ],
+      "giorno": "2026-10-23"
      },
      {
       "testo": "AIR avvisa che durante lo sciopero «potrebbero verificarsi delle riduzioni di servizi». L'avviso vale per tutta l'azienda e non elenca le linee: chi viaggia da e per il Sannio può controllare gli avvisi sul sito aircampania.it.",
       "fonti": [
        "AIR Campania"
+      ],
+      "giorno": "2026-10-23"
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "20 ottobre",
+      "fatto": "Incontro tra AIR e sindacati: l'azienda riprende il pagamento mensile del premio di risultato da novembre.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "data": "23 ottobre",
+      "fatto": "AIR Campania pubblica l'avviso dello sciopero di 8 ore del 28 ottobre.",
+      "fonti": [
+       "AIR Campania"
+      ]
+     },
+     {
+      "data": "27 ottobre",
+      "fatto": "I sindacati confermano lo sciopero e annunciano un presidio alla Regione dalle 10 alle 12.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "data": "28 ottobre",
+      "fatto": "Sciopero dalle 8 alle 16, con corse garantite dalle 13 alle 15.",
+      "fonti": [
+       "AIR Campania"
       ]
      }
     ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
+    "concordano": [
+     {
+      "testo": "Sciopero di 8 ore il 28 ottobre, proclamato da FILT CGIL, FIT CISL, UILTRASPORTI, UGL FNA e FAISA CISAL.",
+      "fonti": [
+       "AIR Campania",
+       "NTR24"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "NTR24 scrive «martedì 28 ottobre», ma il 28 ottobre 2026 è mercoledì, come dice l'avviso di AIR Campania.",
+      "fonti": [
+       "NTR24",
+       "AIR Campania"
+      ]
+     }
+    ],
     "non_si_sa": [
      "Quali linee del Sannio avranno meno corse: l'avviso non lo dice.",
      "Quando si è svolto o è stato proclamato il primo sciopero: l'avviso parla di una «seconda azione» ma non dà la data della prima."
@@ -6898,11 +7036,26 @@
       "url": "https://aircampania.it/avviso-di-sciopero-avvpco/",
       "data": "23 ott, 11:29",
       "ufficiale": true
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "AIR Campania, i sindacati confermano lo sciopero di 8 ore del 28 ottobre: presidio alla Regione",
+      "url": "https://www.ntr24.tv/2026/10/27/air-campania-i-sindacati-confermano-lo-sciopero-di-8-ore-del-28-ottobre-presidio-alla-regione/",
+      "data": "27 ott, 09:57"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Martedì 27 ottobre i sindacati hanno confermato lo sciopero di 8 ore di mercoledì 28 e annunciato un presidio davanti alla Regione Campania, a Napoli, dalle 10 alle 12.",
+     "fonti": [
+      "NTR24"
+     ],
+     "quando": "2026-10-27T10:13+01:00",
+     "titolo_prima": "Mercoledì 28 ottobre sciopero di 8 ore in AIR Campania: possibili riduzioni dei bus extraurbani"
+    }
    },
    "rilevante": false,
-   "foto": "autobus-5"
+   "foto": "autobus-5",
+   "importanza": 5
   },
   {
    "id": "asl-benevento-enti-terzo-settore-case-comunita-20-novembre",
@@ -8390,8 +8543,8 @@
   {
    "id": "rifiuti-blocco-tir-apice-morcone-cusano-sant-angelo-a-cupolo",
    "titolo": "Blocco dei tir e rifiuti nel Sannio: i Comuni dove la raccolta si è fermata, a Circello e Sant'Arcangelo Trimonte di nuovo regolare",
-   "titolo_google": "Rifiuti nel Sannio, raccolta di nuovo regolare a Circello",
-   "sintesi": "Con le strade bloccate dai camion e il gasolio che scarseggiava, in diversi Comuni del Sannio la raccolta dei rifiuti si è fermata o ha rischiato di fermarsi: Sant'Angelo a Cupolo, Sant'Agata de' Goti, Apollosa, Circello e altri. Ora il servizio riparte: Sant'Arcangelo Trimonte dal 26 ottobre, Circello il 27 ottobre riapre il centro di raccolta e torna al porta a porta.",
+   "titolo_google": "Rifiuti a Circello, porta a porta dal 28 ottobre",
+   "sintesi": "Con le strade bloccate dai camion e il gasolio che scarseggiava, in diversi Comuni del Sannio la raccolta dei rifiuti si è fermata o ha rischiato di fermarsi: Sant'Angelo a Cupolo, Sant'Agata de' Goti, Apollosa, Circello e altri. Ora il servizio riparte: a Sant'Arcangelo Trimonte dal 26 ottobre, a Circello il porta a porta dal 28 ottobre e il centro di raccolta dal 29.",
    "categoria": "altro",
    "zona": "provincia",
    "luogo": "Sannio",
@@ -8493,14 +8646,20 @@
      "nome": "Comune di Circello (27/10)",
      "url": "https://comune.circello.bn.it/albo-pretorio/?dettaglio_id=306200",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di Circello (avviso 27/10)",
+     "url": "https://comune.circello.bn.it/novita/ripristino-dei-servizi-di-igiene-urbana-e-riapertura-del-centro-di-raccolta-comunale/",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "A Circello, nel Fortore, la raccolta dei rifiuti riparte. Martedì 27 ottobre il sindaco ha firmato l'ordinanza n. 48, che revoca la n. 47 del 23 ottobre: il centro di raccolta comunale riapre e torna la raccolta porta a porta.",
+      "testo": "A Circello, nel Fortore, la raccolta dei rifiuti riparte. Martedì 27 ottobre il sindaco ha firmato l'ordinanza n. 48, che revoca subito la n. 47 del 23 ottobre: secondo il Comune sono finiti i problemi che impedivano di portare i rifiuti agli impianti. Da mercoledì 28 ottobre riprende la raccolta porta a porta di tutti i rifiuti (secco, umido e differenziata), con il solito calendario, e si possono di nuovo mettere fuori bidoni e mastelli negli orari previsti. Da giovedì 29 ottobre riapre al pubblico il centro di raccolta comunale, l'isola ecologica, con gli orari di sempre.",
       "fonti": [
-       "Comune di Circello (27/10)"
+       "Comune di Circello (27/10)",
+       "Comune di Circello (avviso 27/10)"
       ],
       "giorno": "2026-10-27"
      },
@@ -8673,9 +8832,17 @@
      },
      {
       "data": "27 ottobre",
-      "fatto": "Circello revoca l'ordinanza n. 47: riapre il centro di raccolta e torna la raccolta porta a porta.",
+      "fatto": "Circello revoca l'ordinanza n. 47: la raccolta porta a porta riprende dal 28 ottobre, il centro di raccolta riapre dal 29.",
       "fonti": [
-       "Comune di Circello (27/10)"
+       "Comune di Circello (27/10)",
+       "Comune di Circello (avviso 27/10)"
+      ]
+     },
+     {
+      "data": "29 ottobre",
+      "fatto": "Circello: riapre il centro di raccolta comunale.",
+      "fonti": [
+       "Comune di Circello (avviso 27/10)"
       ]
      }
     ],
@@ -8821,14 +8988,21 @@
       "url": "https://comune.circello.bn.it/albo-pretorio/?dettaglio_id=306200",
       "data": "27 ott, 08:47",
       "ufficiale": true
+     },
+     {
+      "nome": "Comune di Circello (avviso 27/10)",
+      "titolo": "RIPRISTINO DEI SERVIZI DI IGIENE URBANA E RIAPERTURA DEL CENTRO DI RACCOLTA COMUNALE",
+      "url": "https://comune.circello.bn.it/novita/ripristino-dei-servizi-di-igiene-urbana-e-riapertura-del-centro-di-raccolta-comunale/",
+      "data": "27 ott",
+      "ufficiale": true
      }
     ],
     "aggiornamento": {
-     "testo": "Martedì 27 ottobre il sindaco di Circello ha revocato l'ordinanza che aveva fermato i rifiuti: riapre il centro di raccolta comunale e torna la raccolta porta a porta.",
+     "testo": "A Circello la raccolta porta a porta riprende mercoledì 28 ottobre e il centro di raccolta comunale riapre giovedì 29 ottobre, con il solito calendario e gli orari di sempre.",
      "fonti": [
-      "Comune di Circello (27/10)"
+      "Comune di Circello (avviso 27/10)"
      ],
-     "quando": "2026-10-27T09:17+01:00",
+     "quando": "2026-10-27T10:13+01:00",
      "titolo_prima": "Blocco dei tir e rifiuti nel Sannio: i Comuni dove la raccolta si è fermata, a Sant'Arcangelo Trimonte di nuovo regolare dal 26 ottobre"
     }
    },
