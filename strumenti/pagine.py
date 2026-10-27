@@ -1143,7 +1143,8 @@ def html_curiosita(c, altre):
     im = c.get("immagine")
     if im:
         pos = f' style="object-position: 50% {float(im.get("fuoco_y", 0.5)) * 100:.0f}%"' if "fuoco_y" in im else ""
-        h += (f'<figure class="foto-tema"><img src="{e(im["file"])}" alt="{e(c["titolo"])}" loading="lazy"{pos}>'
+        alt = im.get("mostra") or c["titolo"]   # «mostra»: cosa si vede nella foto (CURIOSITA.md)
+        h += (f'<figure class="foto-tema"><img src="{e(im["file"])}" alt="{e(alt)}" loading="lazy"{pos}>'
               f'<figcaption><a href="{e(im["pagina"])}" target="_blank" rel="noopener nofollow">{e(im["credito"])}'
               "</a>, da Wikimedia Commons</figcaption></figure>")
     h += "".join(f"<p>{e(x)}</p>" for x in _paragrafi_curiosita(c["testo"]))

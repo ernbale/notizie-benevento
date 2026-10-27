@@ -3,7 +3,8 @@
 
 Va passato prima di ogni commit che tocca le curiosità (lo fa anche la routine che le rifornisce). Controlla: campi,
 slug e date unici, date di seguito senza buchi, categoria, lunghezze (anche dei testi per Telegram e Instagram), la
-domanda finale, le fonti, la foto (file presente, JPEG, lato lungo al massimo 1200, credito e pagina di Commons) e,
+domanda finale, le fonti, la foto (file presente, JPEG, lato lungo al massimo 1200, credito, pagina di Commons e
+«mostra»: cosa si vede, che deve essere il protagonista della storia; guardarla resta al secondo controllo) e,
 per «accadde oggi», che giorno e mese del titolo siano quelli della data. Esce con errore se qualcosa non va.
 
 Uso:  python3 strumenti/curiosita_controlla.py [--sito .] [--scorta-minima 14]
@@ -87,6 +88,8 @@ def controlla(sito):
                     pass
             if not im.get("credito") or not str(im.get("pagina", "")).startswith("https://commons.wikimedia.org/"):
                 err.append(f"{nome}: la foto vuole «credito» e la «pagina» di Wikimedia Commons")
+            if not str(im.get("mostra") or "").strip():
+                err.append(f"{nome}: la foto vuole «mostra», cosa si vede: il protagonista della storia (CURIOSITA.md)")
         tg = re.sub(r"<[^>]+>", "", html.unescape(C.testo_telegram(c)))
         if "…" in tg:
             err.append(f"{nome}: su Telegram il racconto non ci sta intero ({len(c['testo'])} caratteri): accorciarlo")

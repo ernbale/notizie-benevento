@@ -28,6 +28,7 @@
    ],
    "immagine": {
     "file": "/img/curiosita/noce-delle-streghe.jpg",
+    "mostra": "Incisione del Settecento con san Barbato che fa abbattere il noce delle streghe",
     "credito": "Incisione beneventana del XVIII secolo · pubblico dominio",
     "pagina": "https://commons.wikimedia.org/wiki/File%3ASan_Barbato_abbatte_il_noce.JPG"
    }
@@ -59,6 +60,7 @@
    ],
    "immagine": {
     "file": "/img/curiosita/maleventum-beneventum.jpg",
+    "mostra": "L'Arco di Traiano a Benevento",
     "credito": "Foto: Mongolo1984 · CC BY-SA 4.0",
     "pagina": "https://commons.wikimedia.org/wiki/File%3AArco_di_Traiano_%28Benevento%29_01.jpg"
    }
@@ -86,8 +88,10 @@
    ],
    "immagine": {
     "file": "/img/curiosita/ciro-dinosauro-pietraroja.jpg",
-    "credito": "Foto: Domenico Lombardi · GFDL / CC BY-SA 3.0",
-    "pagina": "https://commons.wikimedia.org/wiki/File%3APietraroja.JPG"
+    "mostra": "Il fossile di Ciro, lo Scipionyx samniticus, nella sua lastra di roccia",
+    "credito": "Foto: Giovanni Dall'Orto · CC BY-SA 2.5 IT",
+    "pagina": "https://commons.wikimedia.org/wiki/File:9121_-_Milano,_Museo_storia_naturale_-_Scipionyx_samniticus_-_Foto_Giovanni_Dall%27Orto_22-Apr-2007a.jpg",
+    "fuoco_y": 0.35
    }
   },
   {
@@ -113,6 +117,7 @@
    ],
    "immagine": {
     "file": "/img/curiosita/liquore-strega.jpg",
+    "mostra": "Una pubblicità del liquore Strega del 1902",
     "credito": "Pubblicità del liquore Strega, 1902 · pubblico dominio",
     "pagina": "https://commons.wikimedia.org/wiki/File:Strega_advert_1902.jpg"
    }
@@ -166,6 +171,7 @@
    ],
    "immagine": {
     "file": "/img/curiosita/gregorio-viii-terza-crociata.jpg",
+    "mostra": "Ritratto di papa Gregorio VIII",
     "credito": "Disegno del XVII secolo · pubblico dominio",
     "pagina": "https://commons.wikimedia.org/wiki/File%3AA07_GREGORIO_VIII.jpg"
    }
@@ -189,6 +195,7 @@
    ],
    "immagine": {
     "file": "/img/curiosita/forche-caudine.jpg",
+    "mostra": "La stretta di Arpaia, dove la tradizione colloca le Forche Caudine",
     "credito": "Foto: Decan · CC BY-SA 4.0",
     "pagina": "https://commons.wikimedia.org/wiki/File%3AStretta_di_Arpaia_vista_da_Montesarchio.jpg"
    }
@@ -212,6 +219,7 @@
    ],
    "immagine": {
     "file": "/img/curiosita/detto-pappecio-noce.jpg",
+    "mostra": "Noci ancora verdi sull'albero",
     "credito": "Foto: George Chernilevsky · pubblico dominio",
     "pagina": "https://commons.wikimedia.org/wiki/File%3AJuglans_regia_2009_G2.jpg"
    }
@@ -243,6 +251,7 @@
    ],
    "immagine": {
     "file": "/img/curiosita/riti-settennali-guardia-sanframondi.jpg",
+    "mostra": "Il paese di Guardia Sanframondi visto da lontano",
     "credito": "Foto: Adam91 · CC BY 3.0",
     "pagina": "https://commons.wikimedia.org/wiki/File%3APanorama_di_Guardia_Sanframondi.JPG"
    }
@@ -270,6 +279,7 @@
    ],
    "immagine": {
     "file": "/img/curiosita/santa-sofia-longobardi.jpg",
+    "mostra": "La facciata della chiesa di Santa Sofia a Benevento",
     "credito": "Foto: Bernard Gagnon · CC0",
     "pagina": "https://commons.wikimedia.org/wiki/File%3ASanta_Sofia%2C_Benevento_01.jpg"
    }
@@ -301,6 +311,7 @@
    ],
    "immagine": {
     "file": "/img/curiosita/bufala-di-san-lorenzo-bue-apis.jpg",
+    "mostra": "La «bufala» di granito rosso di viale San Lorenzo",
     "credito": "Foto: Antonio De Capua · CC BY-SA 4.0",
     "pagina": "https://commons.wikimedia.org/wiki/File:Reperti_del_Tempio_di_Iside_di_Benevento_31.jpg"
    }
@@ -328,6 +339,7 @@
    ],
    "immagine": {
     "file": "/img/curiosita/telese-lago-terme.jpg",
+    "mostra": "Il lago di Telese",
     "credito": "Foto: silvio sicignano · CC BY-SA 2.0",
     "pagina": "https://commons.wikimedia.org/wiki/File:Lago_di_Telese_(2).jpg"
    }
@@ -363,6 +375,7 @@
    ],
    "immagine": {
     "file": "/img/curiosita/talleyrand-principe-di-benevento.jpg",
+    "mostra": "Ritratto di Talleyrand dipinto da François Gérard",
     "credito": "Ritratto di François Gérard · pubblico dominio",
     "pagina": "https://commons.wikimedia.org/wiki/File:Talleyrand_02.jpg",
     "fuoco_y": 0.22
@@ -391,8 +404,10 @@
    ],
    "immagine": {
     "file": "/img/curiosita/padre-pio-soldato-1915.jpg",
-    "credito": "Foto: Gianfranco Vitolo · CC BY 2.0",
-    "pagina": "https://commons.wikimedia.org/wiki/File:Pietrelcina_(24767210997).jpg"
+    "mostra": "Padre Pio da giovane, in una foto del 1919",
+    "credito": "Padre Pio in una foto del 1919 · pubblico dominio",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Padre-Pio-young.jpg",
+    "fuoco_y": 0.3
    }
   },
   {
@@ -422,6 +437,7 @@
    ],
    "immagine": {
     "file": "/img/curiosita/ponte-leproso-nome.jpg",
+    "mostra": "Il Ponte Leproso sul fiume Sabato",
     "credito": "Foto: Decan · CC BY-SA 4.0",
     "pagina": "https://commons.wikimedia.org/wiki/File:Benevento_-_Ponte_Leproso_09.jpg"
    }
@@ -441,6 +457,7 @@
    ],
    "immagine": {
     "file": "/img/curiosita/detto-luna-funa-pesco-sannita.jpg",
+    "mostra": "Pesco Sannita vista dall'aereo, coi campi intorno",
     "credito": "Foto: Antonio De Capua · CC BY-SA 4.0",
     "pagina": "https://commons.wikimedia.org/wiki/File:Pesco_Sannita_dall'aereo.jpg"
    }
@@ -472,6 +489,7 @@
    ],
    "immagine": {
     "file": "/img/curiosita/san-gennaro-vescovo-di-benevento.jpg",
+    "mostra": "San Gennaro in un affresco delle catacombe di Napoli",
     "credito": "Affresco delle catacombe di San Gennaro · pubblico dominio",
     "pagina": "https://commons.wikimedia.org/wiki/File:Napoli,_Catacombe_di_San_Gennaro_-_San_Gennaro.jpg"
    }
@@ -499,6 +517,7 @@
    ],
    "immagine": {
     "file": "/img/curiosita/apice-vecchia.jpg",
+    "mostra": "Un palazzo abbandonato di Apice vecchia",
     "credito": "Foto: Mentnafunangann · CC BY-SA 4.0",
     "pagina": "https://commons.wikimedia.org/wiki/File:Apice_vecchia_0060.jpg"
    }
@@ -530,6 +549,7 @@
    ],
    "immagine": {
     "file": "/img/curiosita/volones-banchetto-214-ac.jpg",
+    "mostra": "Il fiume Calore a Benevento",
     "credito": "Foto: EvelinaRibarova · CC BY-SA 4.0",
     "pagina": "https://commons.wikimedia.org/wiki/File:Benevento_(BN),_Campania,_Italia_-_fiume_Calore_Irpino_2.jpg"
    }
@@ -553,6 +573,7 @@
    ],
    "immagine": {
     "file": "/img/curiosita/festa-del-grano-foglianise.jpg",
+    "mostra": "Un carro di grano della festa di Foglianise",
     "credito": "Foto: Decan · CC BY-SA 3.0",
     "pagina": "https://commons.wikimedia.org/wiki/File:Foglianise-Festa_del_Grano-Arco_di_Costantino.jpg"
    }
@@ -584,8 +605,10 @@
    ],
    "immagine": {
     "file": "/img/curiosita/liguri-bebiani-circello.jpg",
-    "credito": "Foto: Pasquale Paolo Cardo · CC BY 2.0",
-    "pagina": "https://commons.wikimedia.org/wiki/File:Circello_-_The_patchwork_of_countryside_in_late_August_(28673152923).jpg"
+    "mostra": "La tavola di bronzo dei Liguri Bebiani",
+    "credito": "Foto: Ryan Baumann · CC BY 2.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:The_Tabula_of_the_Ligures_Baebiani.jpg",
+    "fuoco_y": 0.25
    }
   },
   {
@@ -619,6 +642,7 @@
    ],
    "immagine": {
     "file": "/img/curiosita/orsini-terremoto-1688.jpg",
+    "mostra": "Il quadro di Pier Leone Ghezzi col cardinale Orsini salvato dalle macerie",
     "credito": "Pier Leone Ghezzi, foto di Sailko · CC BY 3.0",
     "pagina": "https://commons.wikimedia.org/wiki/File:Pier_Leone_Ghezzi_-_Cardinal_Vincenzo_Maria_Orsini_rescued_from_the_debris_of_an_earthquake_by_the_miraculous_intervention_of_St_Philip_Neri_(no_frame).jpg"
    }
@@ -646,6 +670,7 @@
    ],
    "immagine": {
     "file": "/img/curiosita/caciocavallo-castelfranco-miscano.jpg",
+    "mostra": "Una forma di caciocavallo di Castelfranco tagliata",
     "credito": "Foto: VallVit · CC0",
     "pagina": "https://commons.wikimedia.org/wiki/File:Caciocavallo_di_Castelfranco_-_taglio.jpg"
    }
@@ -677,6 +702,7 @@
    ],
    "immagine": {
     "file": "/img/curiosita/giuseppe-moscati-beato-16-novembre.jpg",
+    "mostra": "Palazzo Rotondi Andreotti Leo a Benevento, dove nacque Giuseppe Moscati",
     "credito": "Foto: Gianfranco · CC BY-SA 4.0",
     "pagina": "https://commons.wikimedia.org/wiki/File:Benevento,_Palazzo_Rotondi_Andreotti_Leo,_casa_natale_Giuseppe_Moscati.jpg"
    }
@@ -704,6 +730,7 @@
    ],
    "immagine": {
     "file": "/img/curiosita/luigi-palmieri-faicchio.jpg",
+    "mostra": "Ritratto inciso di Luigi Palmieri",
     "credito": "Ritratto inciso del XIX secolo · pubblico dominio",
     "pagina": "https://commons.wikimedia.org/wiki/File:Luigi_Palmieri_1897.jpg"
    }
@@ -739,6 +766,7 @@
    ],
    "immagine": {
     "file": "/img/curiosita/grottoni-di-mappa-teatro-romano.jpg",
+    "mostra": "Gli archi esterni del Teatro romano di Benevento",
     "credito": "Foto: Decan · CC BY-SA 3.0",
     "pagina": "https://commons.wikimedia.org/wiki/File:Benevento-Teatro_Romano-esterno.jpg"
    }
@@ -766,6 +794,7 @@
    ],
    "immagine": {
     "file": "/img/curiosita/cerreto-ricostruita-1688.jpg",
+    "mostra": "Piazza San Martino a Cerreto Sannita",
     "credito": "Foto: Adam91 · CC BY-SA 3.0",
     "pagina": "https://commons.wikimedia.org/wiki/File:Piazza_San_Martino_-_Cerreto_Sannita_corr..jpg"
    }
@@ -797,6 +826,7 @@
    ],
    "immagine": {
     "file": "/img/curiosita/manfredi-dante-ponte-benevento.jpg",
+    "mostra": "L'epigrafe per Manfredi con i versi di Dante, a Benevento",
     "credito": "Foto: Decan · CC BY-SA 3.0",
     "pagina": "https://commons.wikimedia.org/wiki/File:Benevento-Epigrafe_a_Dante.jpg"
    }
@@ -828,8 +858,9 @@
    ],
    "immagine": {
     "file": "/img/curiosita/vaso-assteas-montesarchio.jpg",
-    "credito": "Foto: Gianfranco Vitolo · CC BY 2.0",
-    "pagina": "https://commons.wikimedia.org/wiki/File:Montesarchio_(21244101093).jpg"
+    "mostra": "Il ratto di Europa dipinto da Assteas sul cratere di Montesarchio",
+    "credito": "Foto: Sailko · CC BY 3.0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Asteas,_cratere_a_calice_campano_col_ratto_di_europa,_375-350_ac_ca._(montesarchio,_man_del_sannio_caudino)_06.jpg"
    }
   },
   {
@@ -859,8 +890,9 @@
    ],
    "immagine": {
     "file": "/img/curiosita/arco-di-traiano-teste-mancanti.jpg",
-    "credito": "Foto: Mongolo1984 · CC BY-SA 4.0",
-    "pagina": "https://commons.wikimedia.org/wiki/File:Arco_di_Traiano_(Benevento)_02.jpg"
+    "mostra": "Un rilievo dell'Arco di Traiano con figure senza testa",
+    "credito": "Foto: Bernard Gagnon · CC0",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Arch_of_Trajan_(Benevento)_05.jpg"
    }
   },
   {
@@ -886,6 +918,7 @@
    ],
    "immagine": {
     "file": "/img/curiosita/santagata-vescovi-papa-santo.jpg",
+    "mostra": "Sant'Agata de' Goti vista dall'alto",
     "credito": "Foto: Alfonso Abbatiello · CC BY-SA 3.0",
     "pagina": "https://commons.wikimedia.org/wiki/File:Sant%27Agata_de%27Goti_(Benevento).jpg"
    },

@@ -49,14 +49,27 @@ soggetto, da 0 (in alto) a 1 (in basso); senza, 0.5. Si salva in `img/curiosita/
 `credito`: «Foto: <autore> · <licenza>» oppure, per le opere antiche, «<che cos'è> · pubblico dominio». Se non c'è una
 foto adatta e libera, niente `immagine`: esce un cartoncino col titolo. Niente nudi, niente immagini macabre.
 
+**La foto mostra il protagonista della storia** (il fossile, il vaso, la persona, il monumento, il piatto, la festa),
+non il paese dove è successo. Il proprietario, 27 ott 2026, sulla foto aerea di Pietraroja messa al posto del fossile
+di Ciro: «la foto che hai scelto sinceramente non rappresenta il dinosauro ciro il fossile»; e «controlla anche le
+future». Quindi su Commons si cerca prima il protagonista (anche tra le foto della sua voce di Wikipedia e della sua
+categoria su Commons), poi il resto. Il paese o il paesaggio vanno bene solo quando il protagonista è il paese stesso,
+o quando del protagonista non c'è una foto libera adatta (troppo piccola, macabra, con persone riconoscibili in primo
+piano): in quel caso il luogo della storia, mai una foto qualsiasi.
+**E la foto è di qui**: il protagonista vero o il suo luogo, mai quadri, paesaggi od oggetti di altri posti messi solo
+per fare atmosfera. Il proprietario, 27 ott 2026, su un quadro di Van Gogh proposto per un detto di Pesco Sannita:
+«luna di Van Gogh cosa centra con le curiosita di benevento?».
+Nel campo `mostra` di `immagine` si scrive in poche parole cosa si vede nella foto (sul sito è il testo alternativo):
+deve essere il protagonista, o il luogo nei casi detti sopra.
+
 ## Il formato in curiosita.json
 
 ```json
 {"slug": "parole-chiave-con-trattini", "data": "AAAA-MM-GG", "categoria": "leggenda", "luogo": "Benevento",
  "titolo": "...", "testo": "paragrafo\n\nparagrafo\n\nparagrafo\n\nDomanda per i commenti?",
  "fonti": [{"titolo": "Wikipedia – Voce", "url": "https://..."}],
- "immagine": {"file": "/img/curiosita/<slug>.jpg", "credito": "Foto: Autore · CC BY-SA 4.0",
-              "pagina": "https://commons.wikimedia.org/wiki/File:..."},
+ "immagine": {"file": "/img/curiosita/<slug>.jpg", "mostra": "il fossile di Ciro nella sua lastra di roccia",
+              "credito": "Foto: Autore · CC BY-SA 4.0", "pagina": "https://commons.wikimedia.org/wiki/File:..."},
  "verifica": "cosa è stato controllato, su quali fonti, e i dubbi che restano"}
 ```
 
@@ -66,5 +79,7 @@ non si cambia più (sta sui social): si correggono solo errori veri, dicendolo n
 ## Il doppio controllo
 
 Chi scrive non basta: ogni curiosità nuova la rilegge da capo un secondo agente, che riapre le fonti e controlla frase
-per frase fatti, date, nomi, grafia dei detti, licenza della foto, italiano. Quello che non torna si corregge o si
-toglie; se una curiosità non regge, si butta e se ne scrive un'altra.
+per frase fatti, date, nomi, grafia dei detti, licenza della foto, italiano. Apre anche il file JPEG e guarda la foto:
+se non mostra il protagonista della storia, se non è di qui o se `mostra` non dice quello che si vede, la foto si
+cambia (le regole sono in «La foto»). Quello che non torna si corregge o si toglie; se una curiosità non regge, si
+butta e se ne scrive un'altra.
