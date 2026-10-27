@@ -1,7 +1,187 @@
 {
- "aggiornato": "2026-10-27T15:13+01:00",
+ "aggiornato": "2026-10-27T16:13+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "ospedale-san-pio-concorso-dieci-medici-pronto-soccorso",
+   "titolo": "Benevento, l'ospedale San Pio bandisce un concorso per dieci medici del pronto soccorso",
+   "titolo_google": "Ospedale San Pio, concorso per 10 medici di pronto soccorso",
+   "sintesi": "L'Azienda ospedaliera San Pio di Benevento ha indetto un concorso per assumere a tempo indeterminato dieci medici di Medicina d'emergenza-urgenza. Intanto continua a tenere in servizio medici in pensione per coprire i turni.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "immagine": "pronto-soccorso",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-27T15:26+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 4,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/27/san-pio-la-strategia-per-il-pronto-soccorso-proroga-per-i-medici-in-pensione-fino-a-fine-anno-e-nuovo-concorso-per-dieci-camici-in-corsia/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "L'Azienda ospedaliera San Pio di Benevento, che gestisce il principale ospedale della provincia, ha indetto martedì 27 ottobre un concorso pubblico per titoli ed esami per assumere a tempo indeterminato dieci medici di Medicina d'emergenza-urgenza, la specialità di chi lavora in pronto soccorso.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Il concorso arriva dopo due tentativi andati a vuoto: quello dell'anno scorso per sette posti e il successivo avviso di mobilità (il trasferimento di medici da altri ospedali), a cui non ha risposto nessuno. Anche le graduatorie di altre aziende sanitarie della Campania a cui il San Pio si era rivolto, come l'ospedale dei Colli e l'ASL di Salerno, sono risultate esaurite o già usate.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Potranno partecipare anche gli specializzandi dal secondo anno di corso, in una graduatoria a parte. Le prove sono tre: scritta, pratica e orale. Chi vince dovrà restare al San Pio per almeno cinque anni. Le domande si presentano solo online, sulla piattaforma indicata nel bando, entro la scadenza che fisserà la pubblicazione ufficiale.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Nell'attesa l'ospedale continua a puntare sui medici in pensione, con incarichi di lavoro autonomo. Già la settimana scorsa aveva prorogato fino alla fine dell'anno sei medici, tre dei quali in pensione, per coprire i turni dei reparti di emergenza.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando sarà pubblicato il bando ufficiale e quale sarà la scadenza per le domande."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "San Pio, la strategia per il Pronto Soccorso: proroga per i medici in pensione fino a fine anno e nuovo concorso per dieci camici in corsia",
+      "url": "https://www.ntr24.tv/2026/10/27/san-pio-la-strategia-per-il-pronto-soccorso-proroga-per-i-medici-in-pensione-fino-a-fine-anno-e-nuovo-concorso-per-dieci-camici-in-corsia/",
+      "data": "27 ott, 15:26"
+     }
+    ]
+   },
+   "foto": "pronto-soccorso-3"
+  },
+  {
+   "id": "paduli-andrea-festa-kickboxing-torna-ring-milano-7-novembre",
+   "titolo": "Kickboxing, Andrea Festa di Paduli torna sul ring il 7 novembre a Milano dopo diciotto mesi",
+   "titolo_google": "Andrea Festa, kickboxing: torna sul ring il 7 novembre a Milano",
+   "sintesi": "Il campione di kickboxing Andrea Festa, di Paduli, torna a combattere dopo un anno e mezzo di infortuni. Sabato 7 novembre sarà all'Allianz Cloud di Milano nella PetrosyanMania Gold Edition, categoria 80 chili.",
+   "categoria": "sport",
+   "sport": "altro",
+   "zona": "provincia",
+   "immagine": "arti-marziali",
+   "luogo": "Paduli",
+   "pubblicato": "2026-10-27T15:49+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/gli-infortuni-lattesa-e-la-rivincita-andrea-festa-torna-sul-ring/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Andrea Festa, atleta di kickboxing di Paduli, torna sul ring dopo un anno e mezzo fermo per gli infortuni. Sabato 7 novembre combatterà all'Allianz Cloud di Milano nella PetrosyanMania Gold Edition, contro Ivasco, nella categoria 80 chili, in tre riprese da tre minuti.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Proprio all'Allianz Cloud, nel maggio 2024, Festa aveva vinto il titolo europeo Wako Pro dei 78 chili, battendo ai punti lo spagnolo Pablo Gonzalez Izard dopo cinque riprese. Prima aveva già vinto quattro titoli italiani.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "La serata, ideata dai fratelli Armen e Giorgio Petrosyan, mette insieme kickboxing, K-1, Muay Thai e boxe, con cinture europee e mondiali. I primi incontri cominciano alle 17.30; i biglietti sono su Clappit e l'evento sarà trasmesso su DAZN. «Voglio sentire il vostro tifo dal vivo», ha detto Festa rivolgendosi agli amici e alla sua Paduli.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Gli infortuni, l’attesa e la rivincita: Andrea Festa torna sul ring",
+      "url": "https://www.anteprima24.it/benevento/gli-infortuni-lattesa-e-la-rivincita-andrea-festa-torna-sul-ring/",
+      "data": "27 ott, 15:49"
+     }
+    ]
+   },
+   "foto": "arti-marziali-8"
+  },
+  {
+   "id": "foiano-di-val-fortore-erasmus-future-ready-capofila",
+   "titolo": "Foiano di Val Fortore guida un progetto Erasmus+ da 250mila euro sulla formazione degli adulti",
+   "titolo_google": "Foiano di Val Fortore capofila del progetto Erasmus+ Future Ready",
+   "sintesi": "Il Comune di Foiano di Val Fortore coordina «Future Ready», un progetto Erasmus+ con partner di Spagna, Svezia e Portogallo per insegnare agli adulti sostenibilità e digitale. Vale 250mila euro, di cui quasi 65mila al Comune, e dura due anni.",
+   "categoria": "altro",
+   "zona": "fortore",
+   "luogo": "Foiano di Val Fortore",
+   "pubblicato": "2026-10-27T16:03+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/27/formazione-e-sostenibilita-foiano-guida-la-rete-europea-del-progetto-future-ready/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Comune di Foiano di Val Fortore è capofila di «Future Ready», un progetto europeo sulla formazione degli adulti approvato dall'Agenzia nazionale Erasmus+ INDIRE. Ha un budget di 250mila euro e dura 24 mesi, dal 1° ottobre 2026 al 30 settembre 2028.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Lo scopo è dare agli adulti strumenti pratici per affrontare i cambiamenti legati all'ambiente e al digitale. Sono previsti laboratori, hackathon (gare di idee in cui si lavora in gruppo per poche ore o giorni) e incontri di prova con i cittadini.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "I partner sono cinque. Il Comune coordina il progetto e studia le pratiche di sostenibilità del territorio; con lui ci sono SEQUOIA Gestión Ambiental dalla Spagna, IRIS Sustainable Development dalla Svezia, l'ente di formazione PREVIFORM dal Portogallo e l'associazione italiana RRROBA, che cura comunicazione, sito e social.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Al Comune di Foiano, guidato dal sindaco Giuseppe Ruggiero, vanno 64.942 euro per il coordinamento; il resto è diviso tra i partner. Sono previsti quattro incontri internazionali: il primo, quello di avvio, si terrà proprio a Foiano, poi toccherà a Svezia, Portogallo e Spagna.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando si terrà l'incontro di avvio a Foiano e come potranno partecipare i cittadini."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Formazione e sostenibilità: Foiano guida la rete europea del progetto “Future Ready”",
+      "url": "https://www.ntr24.tv/2026/10/27/formazione-e-sostenibilita-foiano-guida-la-rete-europea-del-progetto-future-ready/",
+      "data": "27 ott, 16:03"
+     }
+    ]
+   }
+  },
   {
    "id": "benevento-fatture-false-evasione-fiscale-15-imprenditori-udienza-26-gennaio",
    "titolo": "Benevento, fatture false per milioni di euro: la Procura chiede il processo per 15 imprenditori, udienza rinviata al 26 gennaio",
@@ -892,6 +1072,10 @@
     {
      "nome": "BeneventoNews24",
      "url": "https://www.beneventonews24.it/2026/10/26/formedil-benevento-cantieri-sicuri-domani-la-presentazione-del-camper-mobile-per-la-sicurezza-nei-cantieri-edili/?utm_source=rss&utm_medium=rss&utm_campaign=formedil-benevento-cantieri-sicuri-domani-la-presentazione-del-camper-mobile-per-la-sicurezza-nei-cantieri-edili"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/infortuni-lavoro-bilancio-formazione/"
     }
    ],
    "articolo": {
@@ -918,6 +1102,13 @@
       "fonti": [
        "NTR24",
        "Ottopagine"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Nel 2025, con i dati aggiornati ad agosto, nel Sannio sono state denunciate quattro morti sul lavoro; i settori più colpiti sono l'agricoltura e l'edilizia. Gli ultimi due incidenti mortali del 2026 sono quelli dell'operaio caduto dall'impalcatura di un palazzo in ristrutturazione su Corso Garibaldi, a Benevento, e dell'operaio travolto da un muretto crollato durante uno scavo ad Apollosa.",
+      "fonti": [
+       "Anteprima24"
       ],
       "giorno": "2026-10-27"
      },
@@ -962,6 +1153,12 @@
       "titolo": "Formedil Benevento, Cantieri Sicuri: domani la presentazione del camper mobile per la sicurezza",
       "url": "https://www.beneventonews24.it/2026/10/26/formedil-benevento-cantieri-sicuri-domani-la-presentazione-del-camper-mobile-per-la-sicurezza-nei-cantieri-edili/?utm_source=rss&utm_medium=rss&utm_campaign=formedil-benevento-cantieri-sicuri-domani-la-presentazione-del-camper-mobile-per-la-sicurezza-nei-cantieri-edili",
       "data": "26 ott, 18:24"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Infortuni sul lavoro, pesante il bilancio nel Sannio: si punta alla formazione professionale",
+      "url": "https://www.anteprima24.it/benevento/infortuni-lavoro-bilancio-formazione/",
+      "data": "27 ott, 15:28"
      }
     ]
    },
