@@ -1,7 +1,135 @@
 {
- "aggiornato": "2026-10-27T17:16+01:00",
+ "aggiornato": "2026-10-27T18:14+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "castelvetere-in-val-fortore-raccolta-ingombranti-30-ottobre",
+   "titolo": "Castelvetere in Val Fortore, raccolta gratuita degli ingombranti venerdì 30 ottobre all'ex mattatoio",
+   "titolo_google": "Ingombranti Castelvetere in Val Fortore, raccolta il 30 ottobre",
+   "sintesi": "Venerdì 30 ottobre, dalle 8:30 alle 11, a Castelvetere in Val Fortore si possono portare gratis mobili, materassi e altri rifiuti ingombranti all'ex mattatoio comunale, in località Dietro al Pesco: al massimo tre pezzi per famiglia.",
+   "categoria": "altro",
+   "zona": "fortore",
+   "immagine": "rifiuti",
+   "luogo": "Castelvetere in Val Fortore",
+   "pubblicato": "2026-10-27",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "in_vigore_fino": "2026-10-30",
+   "fonti": [
+    {
+     "nome": "Comune di Castelvetere in Val Fortore",
+     "url": "https://castelvetereinvalfortore.halleyweb.it/c062020/mc/mc_p_dettaglio.php?id_pubbl=13081",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Venerdì 30 ottobre, dalle 8:30 alle 11, chi abita a Castelvetere in Val Fortore può portare gratis i rifiuti ingombranti all'ex mattatoio comunale, in località Dietro al Pesco. Si possono lasciare mobili, divani e poltrone, materassi, reti, sedie, giocattoli e valigie, al massimo tre pezzi per famiglia, finché il cassone non è pieno. Sul posto c'è personale che divide il materiale.",
+      "fonti": [
+       "Comune di Castelvetere in Val Fortore"
+      ]
+     },
+     {
+      "testo": "Armadi e mobili di legno vanno portati già smontati. Non si accettano rifiuti pericolosi, calcinacci e materiali dei lavori edili (guaine, tegole, eternit, sanitari), pneumatici, i rifiuti che si raccolgono già con la differenziata e grandi quantità da traslochi o da cantine e garage svuotate. Il servizio è solo per chi ha un'utenza a Castelvetere; per informazioni c'è l'ufficio tecnico al numero 0824 933004.",
+      "fonti": [
+       "Comune di Castelvetere in Val Fortore"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di Castelvetere in Val Fortore",
+      "titolo": "AVVISO - RACCOLTA GRATUITA RIFIUTI INGOMBRANTI",
+      "url": "https://castelvetereinvalfortore.halleyweb.it/c062020/mc/mc_p_dettaglio.php?id_pubbl=13081",
+      "data": "27 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "foto": "rifiuti-12"
+  },
+  {
+   "id": "castelvetere-in-val-fortore-bando-70-loculi-cimitero-30-novembre",
+   "titolo": "Castelvetere in Val Fortore, bando per 70 nuovi loculi al cimitero: domande entro il 30 novembre",
+   "titolo_google": "Loculi cimitero Castelvetere in Val Fortore, domande al 30 novembre",
+   "sintesi": "Il Comune di Castelvetere in Val Fortore assegna in concessione per 50 anni 70 loculi da costruire nel cimitero, pagati da chi li chiede: da 2.850 a 2.950 euro l'uno. Le domande vanno presentate entro le 12 del 30 novembre.",
+   "categoria": "altro",
+   "zona": "fortore",
+   "immagine": "cimitero",
+   "luogo": "Castelvetere in Val Fortore",
+   "pubblicato": "2026-10-27",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "fonti": [
+    {
+     "nome": "Comune di Castelvetere in Val Fortore",
+     "url": "https://castelvetereinvalfortore.halleyweb.it/c062020/mc/mc_p_dettaglio.php?id_pubbl=13082",
+     "ufficiale": true
+    },
+    {
+     "nome": "Comune di Castelvetere in Val Fortore (voltura)",
+     "url": "https://castelvetereinvalfortore.halleyweb.it/c062020/mc/mc_p_dettaglio.php?id_pubbl=13080",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Comune di Castelvetere in Val Fortore ha aperto il bando per assegnare 70 nuovi loculi nel cimitero comunale, in concessione per cinquant'anni. I loculi vanno ancora costruiti e la spesa è tutta a carico di chi li chiede: in tutto il progetto ne prevede 78, otto dei quali restano al Comune.",
+      "fonti": [
+       "Comune di Castelvetere in Val Fortore"
+      ]
+     },
+     {
+      "testo": "Il prezzo dipende dalla fila: 2.850 euro per un loculo della prima fila dal basso, 2.950 euro per quelli della seconda e della terza. A questa cifra si aggiungono le spese per l'atto di concessione. Ognuno può chiedere al massimo due loculi e si può presentare una sola domanda per famiglia.",
+      "fonti": [
+       "Comune di Castelvetere in Val Fortore"
+      ]
+     },
+     {
+      "testo": "Possono chiederli i maggiorenni residenti o nati a Castelvetere, e anche il coniuge e i figli di chi ha questi requisiti, pure se defunto. La graduatoria si fa in base all'età della persona più anziana della famiglia. Chi aveva già fatto domanda prima del bando deve ripresentarla.",
+      "fonti": [
+       "Comune di Castelvetere in Val Fortore"
+      ]
+     },
+     {
+      "testo": "Il modulo si ritira in Comune o si scarica dal sito. La domanda va consegnata a mano all'ufficio protocollo o mandata per PEC ad amministrativo.castelvetereinvf@asmepec.it entro le 12 di lunedì 30 novembre. Nello stesso giorno il Comune ha anche invitato gli eredi di chi ha una concessione al cimitero intestata a una persona morta a chiedere il passaggio a proprio nome (la voltura), con il modulo del Comune.",
+      "fonti": [
+       "Comune di Castelvetere in Val Fortore",
+       "Comune di Castelvetere in Val Fortore (voltura)"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di Castelvetere in Val Fortore",
+      "titolo": "AVVISO LOCULI CIMITERIALI",
+      "url": "https://castelvetereinvalfortore.halleyweb.it/c062020/mc/mc_p_dettaglio.php?id_pubbl=13082",
+      "data": "27 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "Comune di Castelvetere in Val Fortore (voltura)",
+      "titolo": "AVVISO PUBBLICO: VARIAZIONI - AGGIORNAMENTO CONCESSIONI CIMITERIALI",
+      "url": "https://castelvetereinvalfortore.halleyweb.it/c062020/mc/mc_p_dettaglio.php?id_pubbl=13080",
+      "data": "27 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "foto": "cimitero-16"
+  },
   {
    "id": "san-lorenzello-cimitero-orario-continuato-29-ottobre-2-novembre",
    "titolo": "San Lorenzello, cimitero aperto con orario continuato dal 29 ottobre al 2 novembre, dalle 8:30 alle 16:30",
@@ -477,6 +605,10 @@
     {
      "nome": "InfoSannio",
      "url": "https://www.infosannionews.it/camera-di-commercio/2026/giunta-lavori-pubblici-semaforo-verde-alla-costituzione-ufficio-bim-gestione-informativa-digitale-delle-costruzioni.html"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/politica/442332/ufficio-bim-gestione-informativa-digitale-delle-costruzioni-ok-dalla-giunta.shtml"
     }
    ],
    "articolo": {
@@ -485,7 +617,8 @@
       "testo": "Il Comune di Benevento istituisce l'Ufficio Bim, che si occuperà della gestione informativa digitale delle costruzioni. La Giunta comunale, presieduta dal sindaco Clemente Mastella, ha approvato la delibera martedì 27 ottobre, in mattinata. Il nuovo ufficio nasce all'interno del Settore Lavori pubblici.",
       "fonti": [
        "Comune di Benevento",
-       "NTR24"
+       "NTR24",
+       "Ottopagine"
       ]
      },
      {
@@ -524,6 +657,12 @@
       "titolo": "Giunta, lavori pubblici ok alla costituzione Ufficio Bim -Gestione informativa digitale delle costruzioni",
       "url": "https://www.infosannionews.it/camera-di-commercio/2026/giunta-lavori-pubblici-semaforo-verde-alla-costituzione-ufficio-bim-gestione-informativa-digitale-delle-costruzioni.html",
       "data": "27 ott, 14:43"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Ufficio Bim - Gestione informativa digitale delle costruzioni: ok dalla Giunta",
+      "url": "https://www.ottopagine.it/bn/politica/442332/ufficio-bim-gestione-informativa-digitale-delle-costruzioni-ok-dalla-giunta.shtml",
+      "data": "27 ott, 17:32"
      }
     ]
    },
@@ -928,6 +1067,10 @@
     {
      "nome": "Lab TV",
      "url": "https://www.labtv.net/attualita/2026/10/27/sanremo-giovani-2026-ce-anche-selma-la-cantante-di-san-giorgio-del-sannio-tra-i-primi-15-selezionati/"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/attualita/2026/sanremo-giovani-2026-tra-i-15-selezionati-anche-la-cantante-sannita-selma.html"
     }
    ],
    "articolo": {
@@ -938,7 +1081,8 @@
        "NTR24",
        "BeneventoNews24",
        "Anteprima24",
-       "Lab TV"
+       "Lab TV",
+       "InfoSannio"
       ],
       "giorno": "2026-10-27"
      },
@@ -1022,6 +1166,12 @@
       "titolo": "Sanremo Giovani 2026, c’è anche Selma: la cantante di San Giorgio del Sannio tra i primi 15 selezionati",
       "url": "https://www.labtv.net/attualita/2026/10/27/sanremo-giovani-2026-ce-anche-selma-la-cantante-di-san-giorgio-del-sannio-tra-i-primi-15-selezionati/",
       "data": "27 ott, 13:16"
+     },
+     {
+      "nome": "InfoSannio",
+      "titolo": "Sanremo Giovani 2026, tra i 15 selezionati anche la cantante Sannita Selma",
+      "url": "https://www.infosannionews.it/attualita/2026/sanremo-giovani-2026-tra-i-15-selezionati-anche-la-cantante-sannita-selma.html",
+      "data": "27 ott, 17:58"
      }
     ]
    },
@@ -1060,6 +1210,10 @@
     {
      "nome": "BeneventoNews24",
      "url": "https://www.beneventonews24.it/2026/10/27/fatebenefratelli-di-benevento-leccellenza-ortopedica-avanza-eseguita-una-protesi-di-caviglia-intervento-raro-in-campania/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/442329/fatebenefratelli-di-benevento-eseguita-una-protesi-di-caviglia.shtml"
     }
    ],
    "articolo": {
@@ -1069,7 +1223,8 @@
       "fonti": [
        "NTR24",
        "TV7 Benevento",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Ottopagine"
       ],
       "giorno": "2026-10-27"
      },
@@ -1137,6 +1292,12 @@
       "titolo": "Fatebenefratelli di Benevento, eccellenza ortopedica: “Eseguita protesi di caviglia, intervento raro in Campania”",
       "url": "https://www.beneventonews24.it/2026/10/27/fatebenefratelli-di-benevento-leccellenza-ortopedica-avanza-eseguita-una-protesi-di-caviglia-intervento-raro-in-campania/",
       "data": "27 ott, 16:30"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Fatebenefratelli di Benevento: eseguita una protesi di caviglia",
+      "url": "https://www.ottopagine.it/bn/attualita/442329/fatebenefratelli-di-benevento-eseguita-una-protesi-di-caviglia.shtml",
+      "data": "27 ott, 17:21"
      }
     ]
    },
@@ -1174,6 +1335,10 @@
     {
      "nome": "InfoSannio",
      "url": "https://www.infosannionews.it/cronaca/2026/la-polizia-di-stato-per-la-sicurezza-della-circolazione-intensificati-i-controlli.html"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/442330/tutela-sicurezza-stradale-i-controlli-della-polizia.shtml"
     }
    ],
    "articolo": {
@@ -1184,7 +1349,8 @@
        "Lab TV",
        "Cronache del Sannio",
        "NTR24",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Ottopagine"
       ],
       "giorno": "2026-10-27"
      },
@@ -1194,7 +1360,8 @@
        "Lab TV",
        "Cronache del Sannio",
        "NTR24",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Ottopagine"
       ],
       "giorno": "2026-10-27"
      }
@@ -1246,6 +1413,12 @@
       "titolo": "La Polizia di Stato per la sicurezza della circolazione, intensificati i controlli",
       "url": "https://www.infosannionews.it/cronaca/2026/la-polizia-di-stato-per-la-sicurezza-della-circolazione-intensificati-i-controlli.html",
       "data": "27 ott, 14:36"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Tutela sicurezza stradale: i controlli della Polizia",
+      "url": "https://www.ottopagine.it/bn/cronaca/442330/tutela-sicurezza-stradale-i-controlli-della-polizia.shtml",
+      "data": "27 ott, 17:23"
      }
     ]
    }
@@ -2584,6 +2757,10 @@
     {
      "nome": "NTR24",
      "url": "https://www.ntr24.tv/2026/10/27/e-guerra-ai-palloni-di-cuoio-a-cautano-il-sindaco-scende-in-campo-contro-i-rumori-molesti/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/27/cautano-quiete-pubblica-e-gioco-contro-i-palloni-di-cuoio-il-sindaco-firma-unordinanza/"
     }
    ],
    "articolo": {
@@ -2591,7 +2768,8 @@
      {
       "testo": "A Cautano, paese ai piedi del Taburno, il sindaco Alessandro Gisoldi ha firmato lunedì 26 ottobre un'ordinanza per la quiete pubblica. Chiede a tutti di evitare schiamazzi, grida e rumori forti nelle strade e nelle piazze, soprattutto vicino alle case e nelle ore del pomeriggio, della sera e della notte.",
       "fonti": [
-       "Comune di Cautano"
+       "Comune di Cautano",
+       "BeneventoNews24"
       ],
       "giorno": "2026-10-26"
      },
@@ -2636,6 +2814,12 @@
       "titolo": "È guerra ai palloni di cuoio a Cautano: il sindaco scende in campo contro i rumori molesti",
       "url": "https://www.ntr24.tv/2026/10/27/e-guerra-ai-palloni-di-cuoio-a-cautano-il-sindaco-scende-in-campo-contro-i-rumori-molesti/",
       "data": "27 ott, 16:48"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Cautano, quiete pubblica e gioco con i palloni di cuoio: il sindaco firma un’ordinanza",
+      "url": "https://www.beneventonews24.it/2026/10/27/cautano-quiete-pubblica-e-gioco-contro-i-palloni-di-cuoio-il-sindaco-firma-unordinanza/",
+      "data": "27 ott, 17:37"
      }
     ]
    }
