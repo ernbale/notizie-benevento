@@ -36,6 +36,9 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from facebook import USO_META, nota_uso, uso_meta   # noqa: E402
+
 CF_ACCOUNT = "d76a7e4eebbfb46bb9fbd03910507063"   # l'account Cloudflare (non è un segreto: sta negli indirizzi)
 HOST = "notiziebenevento.it"
 GIORNI = 30
@@ -308,14 +311,52 @@ FB_PAGINA = "Notizie Benevento"
 # cambia spesso i nomi, quindi si provano uno per uno e si tengono quelli che rispondono
 FB_METRICHE = ["page_follows", "page_daily_follows_unique", "page_total_media_view_unique", "page_media_view",
                "page_impressions_unique", "page_post_engagements", "page_views_total"]
+# I numeri di Meta (Facebook e Instagram) si rileggono al massimo una volta ogni META_OGNI minuti, e non quando il limite
+# dell'ora di Meta è già oltre META_TETTO per cento: le chiamate servono prima ai post. Il 27 ott 2026 le statistiche,
+# rilette a ogni pubblicazione (anche 8 in un'ora), facevano la maggior parte delle chiamate a Meta, e Meta ha fermato
+# Instagram due volte in una mattina («troppe richieste», codice 4). Tra una lettura e l'altra restano i numeri di prima.
+META_OGNI = 55
+META_TETTO = 60
+
+
+class MetaPieno(Exception):
+    """Il limite dell'ora di Meta è già oltre META_TETTO: i numeri si rileggono al prossimo giro."""
+
+
+def meta_pieno():
+    if max(USO_META.values(), default=0) >= META_TETTO:
+        raise MetaPieno(f"limite dell'ora di Meta già usato: {uso_meta()}")
+
+
+def da_meta(nome, fare, prima, adesso):
+    """I numeri di Facebook o Instagram (nome): quelli di prima se sono stati letti meno di META_OGNI minuti fa o se il
+    limite di Meta è quasi pieno, altrimenti fare() li rilegge."""
+    vecchi = prima.get(nome) or {}
+    try:
+        letto = dt.datetime.fromisoformat(vecchi.get("letto") or "")
+    except (TypeError, ValueError):
+        letto = None
+    ok = vecchi.get("stato") == "ok"
+    if ok and letto and dt.timedelta(0) <= adesso - letto < dt.timedelta(minutes=META_OGNI):
+        print(f"{nome.capitalize()}: i numeri letti alle {letto.astimezone(fuso()):%H:%M} (Meta si rilegge una volta l'ora)")
+        return vecchi
+    try:
+        return dict(fare(), letto=adesso.isoformat(timespec="minutes"))
+    except MetaPieno as e:
+        print(f"{nome.capitalize()}: {e}, " + ("restano i numeri di prima" if ok else "i numeri al prossimo giro"))
+        if ok:
+            return vecchi
+        return {"stato": "errore", "messaggio": "Meta: limite dell'ora quasi pieno, i numeri al prossimo giro."}
 
 
 def fb_get(percorso, token, **par):
     url = percorso if percorso.startswith("https://") else f"{GRAPH}/{percorso}?" + urllib.parse.urlencode(dict(par, access_token=token))
     try:
         with urllib.request.urlopen(url, timeout=60) as r:
+            nota_uso(r.headers)
             return json.load(r)
     except urllib.error.HTTPError as e:
+        nota_uso(e.headers)
         # il messaggio di Facebook dice cosa non va e non contiene la chiave
         try:
             err = json.load(e).get("error", {})
@@ -357,6 +398,7 @@ def facebook(token, adesso, storico_prima):
     pag = fb_get("me", token, fields="name,followers_count,fan_count,link")
     if pag.get("name") != FB_PAGINA:
         raise RuntimeError(f"la chiave non è della Pagina «{FB_PAGINA}»")
+    meta_pieno()
     oggi = adesso.astimezone(fz).date()
     inizio = dt.datetime.combine(oggi - dt.timedelta(days=GIORNI - 1), dt.time(0), fz)
     # i post degli ultimi 30 giorni con reazioni, commenti e condivisioni
@@ -437,6 +479,7 @@ def instagram(token, adesso, storico_prima):
            .get("instagram_business_account"))
     if not acc:
         return {"stato": "da collegare", "messaggio": "Alla Pagina non è collegato nessun account Instagram (o la chiave non ha instagram_basic)."}
+    meta_pieno()
     oggi = adesso.astimezone(fz).date()
     dal = dt.datetime.combine(oggi - dt.timedelta(days=GIORNI - 1), dt.time(0), fz)
     post = []
@@ -925,14 +968,16 @@ def main():
     prima = dati_prima("https://" + HOST, parola)
     fb_token = os.environ.get("FB_PAGE_TOKEN", "").strip()
     try:
-        dati["facebook"] = facebook(fb_token, adesso, (prima.get("facebook") or {}).get("storico"))
+        dati["facebook"] = da_meta("facebook", lambda: facebook(fb_token, adesso, (prima.get("facebook") or {}).get("storico")),
+                                   prima, adesso)
         # nei log (pubblici) solo l'esito e i nomi delle statistiche di Meta che rispondono, mai i numeri
         print("Facebook:", dati["facebook"]["stato"], "· statistiche Meta:", ", ".join(dati["facebook"].get("meta") or {}) or "nessuna")
     except Exception as e:
         dati["facebook"] = {"stato": "errore", "messaggio": f"Facebook non ha risposto: {e}"}
         print("AVVISO Facebook:", e, file=sys.stderr)
     # gli altri canali: stesso schema (nei log solo l'esito)
-    for nome, fare in (("instagram", lambda: instagram(fb_token, adesso, (prima.get("instagram") or {}).get("storico"))),
+    for nome, fare in (("instagram", lambda: da_meta("instagram", lambda: instagram(
+                            fb_token, adesso, (prima.get("instagram") or {}).get("storico")), prima, adesso)),
                        ("telegram", lambda: telegram(adesso, (prima.get("telegram") or {}).get("storico"))),
                        ("puntualita", lambda: puntualita(os.environ.get("GH_TOKEN", "").strip(), adesso,
                                                       (prima.get("puntualita") or {}).get("giri")))):
@@ -944,6 +989,8 @@ def main():
         except Exception as e:
             dati[nome] = {"stato": "errore", "messaggio": f"non ha risposto: {e}"}
             print(f"AVVISO {nome}:", e, file=sys.stderr)
+    if USO_META:
+        print(f"Statistiche: limite dell'ora di Meta usato: {uso_meta()}")
     dati["comunicati"] = comunicati(dati.get("agente"))
     for nome, fare in (("eventi", lambda: eventi_numeri(a.sito, adesso, dati.get("visite"), dati.get("google"))),
                        ("salute", lambda: salute(a.sito, dati.get("agente"), adesso))):

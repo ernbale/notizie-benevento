@@ -355,3 +355,6 @@ if __name__ == "__main__":
     except Exception as e:
         print("AVVISO Instagram:", e, file=sys.stderr)
         sys.exit(1)
+    finally:
+        if facebook.USO_META:
+            print(f"  Instagram: limite dell'ora di Meta usato: {facebook.uso_meta()}")

@@ -94,7 +94,11 @@ AGG = "🔴 Aggiornamento · "   # come su Telegram
 AGG_USCITO = "\0aggiornamento"
 # Meta che dice «troppe richieste» (al programma, alla Pagina, all'account): insistere allunga il blocco. Successo il
 # 26 ott 2026 alle 15:17: 16 post arretrati insieme e Instagram fermato da Meta (instagram.py si ferma un'ora).
-LIMITE_META = re.compile(r"\(codice (4|17|32|613|80001|80002|80004|80005|80006|80008|80014)\)")   # tra i titoli già usciti di una notizia: il suo «Aggiornamento» è già uscito
+LIMITE_META = re.compile(r"\(codice (4|17|32|613|80001|80002|80004|80005|80006|80008|80014)\)")
+# quanto del limite dell'ora di Meta abbiamo usato, in percentuale: Meta lo scrive in ogni risposta (x-app-usage per il
+# programma, x-business-use-case-usage per la Pagina e l'account Instagram). Si stampa alla fine di ogni programma:
+# il 27 ott 2026 «troppe richieste» due volte in una mattina, e senza questi numeri non si sapeva chi chiamasse di più.
+USO_META = {}   # tra i titoli già usciti di una notizia: il suo «Aggiornamento» è già uscito
 
 
 def fuso():
@@ -262,14 +266,36 @@ def chiama(metodo, percorso, token, dati=None):
         req = urllib.request.Request(f"{GRAPH}/{percorso}", data=corpo, method="POST")
     try:
         with urllib.request.urlopen(req, timeout=30) as r:
+            nota_uso(r.headers)
             return json.load(r)
     except urllib.error.HTTPError as e:
+        nota_uso(e.headers)
         # l'errore di Facebook dice cosa non va (chiave scaduta, permesso mancante…) e non contiene la chiave
         try:
             err = json.load(e).get("error", {})
             raise RuntimeError(f"Facebook {e.code}: {err.get('message', '')} (codice {err.get('code')})") from None
         except ValueError:
             raise RuntimeError(f"Facebook {e.code}") from None
+
+
+def nota_uso(intestazioni):
+    """Ricorda in USO_META l'ultima percentuale del limite dell'ora che Meta scrive nella risposta (la più alta tra
+    chiamate, tempo e processore)."""
+    for nome, chi in (("x-app-usage", "programma"), ("x-business-use-case-usage", "pagina")):
+        try:
+            j = json.loads((intestazioni.get(nome) if intestazioni is not None else None) or "null")
+        except ValueError:
+            continue
+        voci = [j] if chi == "programma" else [x for v in (j or {}).values() if isinstance(v, list) for x in v]
+        p = [max(int(x.get(k) or 0) for k in ("call_count", "total_cputime", "total_time"))
+             for x in voci if isinstance(x, dict)]
+        if p:
+            USO_META[chi] = max(p)
+
+
+def uso_meta():
+    """«programma 35%, pagina 4%», o «Meta non l'ha detto»."""
+    return ", ".join(f"{k} {v}%" for k, v in sorted(USO_META.items())) or "Meta non l'ha detto"
 
 
 def riprova(fare, cosa, lettura=False):
@@ -517,3 +543,6 @@ if __name__ == "__main__":
     except Exception as e:
         print("AVVISO Facebook:", e, file=sys.stderr)
         sys.exit(1)
+    finally:
+        if USO_META:
+            print(f"  Facebook: limite dell'ora di Meta usato: {uso_meta()}")

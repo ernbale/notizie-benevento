@@ -2208,16 +2208,20 @@ def main():
     mappa.insert(0, (SITO + "/", prima.get("aggiornato")))
     mappa.insert(1, (SITO + "/meteo.html", adesso.isoformat(timespec="minutes")))
 
-    # immagini per Instagram: solo le notizie della prima pagina delle ultime 48 ore (strumenti/instagram.py)
+    # immagini per Instagram: solo le notizie della prima pagina uscite o aggiornate nelle ultime 48 ore
+    # (strumenti/instagram.py; dal 27 ott 2026 anche le aggiornate: Instagram rifà gli «Aggiornamento» di Facebook,
+    # che possono essere di notizie di qualche giorno prima)
     if con_immagini:
         usate_ig = set()
         for x in prima.get("notizie", []):
-            try:
-                t = dt.datetime.fromisoformat(str(x.get("pubblicato")))
-                t = t if t.tzinfo else t.replace(tzinfo=adesso.tzinfo)
-            except ValueError:
-                continue
-            if adesso - t <= dt.timedelta(hours=48):
+            ore = []
+            for v in (x.get("pubblicato"), ((x.get("articolo") or {}).get("aggiornamento") or {}).get("quando")):
+                try:
+                    t = dt.datetime.fromisoformat(str(v))
+                    ore.append(t if t.tzinfo else t.replace(tzinfo=adesso.tzinfo))
+                except ValueError:
+                    continue
+            if ore and adesso - max(ore) <= dt.timedelta(hours=48):
                 usate_ig.add(immagine_ig(sito, x))
                 usate_ig |= set(immagini_ig_foto(sito, x))
         usate_ig |= riepilogo_ig(sito, prima.get("notizie", []), adesso)
