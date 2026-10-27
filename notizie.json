@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-27T21:10+01:00",
+ "aggiornato": "2026-10-27T22:12+01:00",
  "giornali_letti": 14,
  "notizie": [
   {
@@ -21,6 +21,14 @@
      "nome": "Benevento Calcio",
      "url": "https://www.beneventocalcio.club/news/notizie/7677/serie-bkt-2026-2027-benevento-catanzaro-1-1-il-tabellino-della-gara.shtml",
      "ufficiale": true
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/benevento-catanzaro-cronaca-match/"
+    },
+    {
+     "nome": "NTR24 Sport",
+     "url": "https://sport.ntr24.tv/2026/10/27/il-benevento-raggiunto-nel-recupero-dal-catanzaro-a-salvemini-risponde-buso/"
     }
    ],
    "comunicati": [
@@ -32,36 +40,83 @@
       "testo": "Benevento e Catanzaro pareggiano 1-1 nella partita di Serie BKT giocata martedì 27 ottobre. I giallorossi sono passati in vantaggio al 51' con un calcio di rigore trasformato da Salvemini; il Catanzaro ha pareggiato al 92' con Buso.",
       "fonti": [
        "Benevento Calcio"
-      ]
+      ],
+      "giorno": "2026-10-27"
      },
      {
       "testo": "Buso era entrato al 79' al posto di Di Francesco, che a sua volta aveva sostituito Dorval al 59'. La partita è cominciata con 14 minuti di ritardo per l'infortunio di Gabriel Arditi, giocatore del Catanzaro.",
       "fonti": [
        "Benevento Calcio"
-      ]
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Il primo tempo è stato bloccato, con il Benevento che teneva il pallone: al 23' Kouan ha sfiorato il palo e nel recupero Lamesta ha tirato debole tra le braccia del portiere Pigliacelli; per il Catanzaro ci hanno provato da fuori area Iemmello e Alesi. Si è andati all'intervallo sullo 0-0.",
+      "fonti": [
+       "Cronache del Sannio",
+       "NTR24 Sport"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "All'inizio della ripresa Salvemini ha preso il palo di testa; nella stessa azione Candela ha colpito Cherubini e l'arbitro, dopo aver rivisto l'azione al VAR, ha dato il rigore. Il Benevento ha avuto altre occasioni per chiudere la partita, con Salvemini e poi con Mignani, entrato al suo posto. Nel recupero, dopo una mischia in area e una respinta corta di testa di Scognamillo, Buso ha battuto Vannucchi con un tiro debole.",
+      "fonti": [
+       "Cronache del Sannio",
+       "NTR24 Sport"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Con questo punto il Benevento sale a 15 in classifica. Sabato 31 ottobre i giallorossi giocano in trasferta a Cremona contro la Cremonese.",
+      "fonti": [
+       "Cronache del Sannio",
+       "NTR24 Sport"
+      ],
+      "giorno": "2026-10-27"
      },
      {
       "testo": "Il Benevento di Antonio Floro Flores è sceso in campo con Vannucchi; Siatounis, Maita, Salvemini, Cherubini, Lamesta, Scognamillo, Dalle Mura, Sernicola, Beruatto, Kouan. Poi sono entrati Okereke per Lamesta e Prisco per Kouan al 62', Mignani per Salvemini al 67', Saio per Cherubini e Romano per Beruatto all'86'. In panchina sono rimasti Esposito, Caldirola, Mannini, Simonetti, Schimmenti, Verdi e Tumminello.",
       "fonti": [
        "Benevento Calcio"
-      ]
+      ],
+      "giorno": "2026-10-27"
      },
      {
       "testo": "Il Catanzaro di Michele Mignani ha giocato con Pigliacelli; Imperiale, Antonini, Iemmello, Petriccione, Koffi, Ruggero, Candela, Franky Tchaouna, Alesi, Dorval. I cambi: Frosinini per Antonini e Di Francesco per Dorval al 59', Pafundi per Petriccione e D'Alessandro per Candela al 71', Buso per Di Francesco al 79'. A disposizione c'erano anche Marietta, Postiglione, Pogacar, Cassa, Verrengia, Arditi e Mosti.",
       "fonti": [
        "Benevento Calcio"
-      ]
+      ],
+      "giorno": "2026-10-27"
      },
      {
       "testo": "Sono stati ammoniti Kouan e Scognamillo del Benevento, Antonini e Candela del Catanzaro. Ha arbitrato Alberto Poli di Verona, con gli assistenti Alessio Berti di Prato e Andrea Bianchini di Perugia; quarto ufficiale Giuseppe Mucera di Palermo, al VAR Daniele Rutella di Enna, AVAR Marco Guida di Torre Annunziata.",
       "fonti": [
        "Benevento Calcio"
-      ]
+      ],
+      "giorno": "2026-10-27"
      }
     ],
     "cronologia": [],
-    "concordano": [],
-    "divergono": [],
+    "concordano": [
+     {
+      "testo": "Il rigore di Salvemini nella ripresa, dopo il controllo al VAR per il fallo di Candela su Cherubini, e il pareggio di Buso nel recupero.",
+      "fonti": [
+       "Benevento Calcio",
+       "Cronache del Sannio",
+       "NTR24 Sport"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "Il minuto del rigore: 51' per il Benevento Calcio, 52' per NTR24 Sport (Cronache del Sannio scrive 6' della ripresa). Gli spettatori: 6.212 per Cronache del Sannio (455 da Catanzaro), circa 7.000 per NTR24 Sport (circa 500 da Catanzaro). Gli ammoniti: il club ne elenca quattro, i giornali ne aggiungono altri; vale il tabellino del club.",
+      "fonti": [
+       "Benevento Calcio",
+       "Cronache del Sannio",
+       "NTR24 Sport"
+      ]
+     }
+    ],
     "non_si_sa": [],
     "fonti": [
      {
@@ -70,6 +125,18 @@
       "url": "https://www.beneventocalcio.club/news/notizie/7677/serie-bkt-2026-2027-benevento-catanzaro-1-1-il-tabellino-della-gara.shtml",
       "data": "27 ott, 21:11",
       "ufficiale": true
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Benevento-Catanzaro 1-1: Buso beffa la Strega nel recupero",
+      "url": "https://www.cronachedelsannio.it/sannionews24/benevento-catanzaro-cronaca-match/",
+      "data": "27 ott, 21:11"
+     },
+     {
+      "nome": "NTR24 Sport",
+      "titolo": "Il Benevento raggiunto nel recupero dal Catanzaro. A Salvemini risponde Buso",
+      "url": "https://sport.ntr24.tv/2026/10/27/il-benevento-raggiunto-nel-recupero-dal-catanzaro-a-salvemini-risponde-buso/",
+      "data": "27 ott, 21:22"
      }
     ]
    },
@@ -77,51 +144,210 @@
    "foto": "calcio-21"
   },
   {
+   "id": "benevento-catanzaro-floro-flores-dopo-partita-buttati-due-punti",
+   "titolo": "Benevento-Catanzaro 1-1, Floro Flores: «Abbiamo buttato altri due punti, come col Vicenza». Sabato la trasferta a Cremona",
+   "titolo_google": "Benevento-Catanzaro, Floro Flores: «Buttati altri due punti»",
+   "sintesi": "Dopo l'1-1 col Catanzaro, arrivato al 92', l'allenatore del Benevento Antonio Floro Flores si è detto arrabbiato: è la seconda volta, dopo il Vicenza, che la squadra perde punti nel finale. Scognamillo e Salvemini chiedono più cinismo sotto porta; sabato 31 ottobre si gioca a Cremona.",
+   "categoria": "sport",
+   "sport": "calcio",
+   "zona": "benevento",
+   "immagine": "calcio",
+   "luogo": "Benevento, stadio Vigorito",
+   "pubblicato": "2026-10-27T22:07+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 5,
+   "fonti": [
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/benevento-scognamillo-amareggiati-pensare-cremonese/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/27/benevento-scognamillo-tanto-amaro-in-bocca-dobbiamo-essere-piu-cinici-ma-ora-testa-a-cremona/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Dopo il pareggio per 1-1 col Catanzaro, martedì 27 ottobre al Vigorito, l'allenatore del Benevento Antonio Floro Flores si è detto molto arrabbiato: «È la seconda volta che buttiamo dei punti», come era successo col Vicenza. Il Catanzaro ha pareggiato al 92' con Buso, dopo il rigore di Salvemini nella ripresa.",
+      "fonti": [
+       "Cronache del Sannio (Floro Flores)",
+       "BeneventoNews24 (Floro Flores)"
+      ]
+     },
+     {
+      "testo": "Floro Flores ha detto di non poter rimproverare niente ai giocatori: la squadra ha creato tante occasioni e ha subito un solo tiro in porta, ma il gol era «evitabilissimo» e nasce da una disattenzione, non dal difensore in più messo nel finale. Ha ricordato che l'obiettivo del Benevento resta la salvezza e che la squadra, avendo giocato tre giorni prima, era un po' calata fisicamente. Ha spiegato anche di aver tolto Kouan perché era stato ammonito nel primo tempo e temeva di restare in dieci.",
+      "fonti": [
+       "Cronache del Sannio (Floro Flores)",
+       "BeneventoNews24 (Floro Flores)"
+      ]
+     },
+     {
+      "testo": "Il difensore Stefano Scognamillo, ex di turno, ha raccontato che sul gol il pallone l'ha deviato anche lui dopo aver colpito Buso nel tentativo di rinviare. «Dobbiamo imparare a essere più cinici e a chiudere le partite», ha detto, ringraziando i tifosi del Catanzaro per gli applausi. L'attaccante Salvemini, tornato al gol, ha detto che la squadra gioca bene e meritava di vincere, e che non bisogna cercare un colpevole a ogni partita.",
+      "fonti": [
+       "Cronache del Sannio (Scognamillo)",
+       "BeneventoNews24 (Scognamillo)",
+       "BeneventoNews24 (Salvemini)"
+      ]
+     },
+     {
+      "testo": "Il pareggio è il sesto risultato utile di fila per il Benevento. Sabato 31 ottobre i giallorossi giocano a Cremona contro la Cremonese, che Scognamillo ha definito «una squadra costruita per vincere questo campionato».",
+      "fonti": [
+       "BeneventoNews24 (Floro Flores)",
+       "BeneventoNews24 (Scognamillo)"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Floro Flores paragona il pareggio a quello col Vicenza e parla di punti buttati.",
+      "fonti": [
+       "Cronache del Sannio (Floro Flores)",
+       "BeneventoNews24 (Floro Flores)"
+      ]
+     },
+     {
+      "testo": "Scognamillo chiede più cinismo per chiudere le partite e pensa già alla trasferta di Cremona.",
+      "fonti": [
+       "Cronache del Sannio (Scognamillo)",
+       "BeneventoNews24 (Scognamillo)"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Cronache del Sannio (Floro Flores)",
+      "titolo": "Benevento, Floro Flores: “Abbiamo buttato altri due punti”",
+      "url": "https://www.cronachedelsannio.it/sannionews24/benevento-floro-flores-buttato-atri-punti/",
+      "data": "27 ott, 22:00"
+     },
+     {
+      "nome": "BeneventoNews24 (Floro Flores)",
+      "titolo": "Benevento, Floro Flores: “C’è rammarico, come col Vicenza, ma fatta grande gara”",
+      "url": "https://www.beneventonews24.it/2026/10/27/benevento-floro-flores-ce-rammarico-come-col-vicenza-ma-fatta-grande-gara/",
+      "data": "27 ott, 21:48"
+     },
+     {
+      "nome": "Cronache del Sannio (Scognamillo)",
+      "titolo": "Benevento, Scognamillo: “Siamo amareggiati, ma dobbiamo pensare alla Cremonese”",
+      "url": "https://www.cronachedelsannio.it/sannionews24/benevento-scognamillo-amareggiati-pensare-cremonese/",
+      "data": "27 ott, 22:07"
+     },
+     {
+      "nome": "BeneventoNews24 (Scognamillo)",
+      "titolo": "Benevento, Scognamillo: “Tanto amaro in bocca, dobbiamo essere più cinici ma ora testa a Cremona”",
+      "url": "https://www.beneventonews24.it/2026/10/27/benevento-scognamillo-tanto-amaro-in-bocca-dobbiamo-essere-piu-cinici-ma-ora-testa-a-cremona/",
+      "data": "27 ott, 22:02"
+     },
+     {
+      "nome": "BeneventoNews24 (Salvemini)",
+      "titolo": "Benevento, Salvemini: “Siamo neopromossi e stiamo giocando bene, non va trovato sempre un colpevole”",
+      "url": "https://www.beneventonews24.it/2026/10/27/benevento-salvemini-siamo-neopromossi-e-stiamo-giocando-bene-non-va-trovato-sempre-un-colpevole/",
+      "data": "27 ott, 21:38"
+     }
+    ]
+   },
+   "foto": "calcio-7"
+  },
+  {
    "id": "benevento-catanzaro-arditi-malore-panchina-vigorito",
-   "titolo": "Benevento-Catanzaro, malore in panchina per Arditi del Catanzaro prima della partita: portato in ospedale per accertamenti",
-   "titolo_google": "Benevento-Catanzaro, malore per Arditi prima della partita",
-   "sintesi": "Martedì 27 ottobre, poco prima del fischio d'inizio al Vigorito, Gabriele Arditi del Catanzaro si è sentito male vicino alla panchina e ha perso conoscenza per qualche istante. Si è ripreso subito ed è stato portato in ospedale per controlli; la partita è cominciata con 15 minuti di ritardo.",
+   "titolo": "Benevento-Catanzaro, malore in panchina prima della partita per Arditi del Catanzaro: esami in ospedale, sta bene",
+   "titolo_google": "Benevento-Catanzaro, malore per Arditi: esami fatti, sta bene",
+   "sintesi": "Martedì 27 ottobre, poco prima del fischio d'inizio al Vigorito, Arditi del Catanzaro è caduto entrando in panchina e ha perso i sensi per qualche istante. È stato portato in ospedale per controlli; dopo la partita l'allenatore Mignani ha detto che ha fatto gli esami e sta bene.",
    "categoria": "sport",
    "sport": "calcio",
    "zona": "benevento",
    "luogo": "Benevento, stadio Vigorito",
    "pubblicato": "2026-10-27T19:27+01:00",
-   "stato": "una_fonte",
+   "stato": "confermata",
    "rilevante": false,
    "importanza": 4,
    "fonti": [
     {
      "nome": "TV7 Benevento",
      "url": "https://www.tvsette.net/paura-per-arditi-prima-di-benevento-catanzaro-perde-conoscenza-e-va-in-ospedale/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/mignani-benevento-catanzaro-post-partita/"
     }
    ],
    "articolo": {
     "racconto": [
      {
+      "testo": "Arditi sta bene. Lo ha detto dopo la partita l'allenatore del Catanzaro, Michele Mignani: il medico ha tranquillizzato la squadra, il giocatore è scivolato sulle scale, ha avuto un momento di sbandamento e ha fatto gli esami.",
+      "fonti": [
+       "Cronache del Sannio (Mignani)"
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
       "testo": "Martedì 27 ottobre, pochi istanti prima del fischio d'inizio di Benevento-Catanzaro allo stadio Vigorito, Gabriele Arditi, calciatore del Catanzaro che era in panchina, si è sentito male. È caduto vicino alla panchina della squadra ospite e ha perso conoscenza per qualche momento.",
       "fonti": [
-       "TV7 Benevento"
-      ]
+       "TV7 Benevento",
+       "Cronache del Sannio (cronaca)"
+      ],
+      "giorno": "2026-10-27"
      },
      {
       "testo": "I compagni hanno chiamato subito lo staff medico e sono intervenuti i soccorritori della Misericordia. Arditi si è ripreso in poco tempo e la situazione è sembrata sotto controllo; per prudenza è stato comunque portato in ospedale per gli accertamenti.",
       "fonti": [
        "TV7 Benevento"
-      ]
+      ],
+      "giorno": "2026-10-27"
      },
      {
-      "testo": "Per quello che è successo la partita è cominciata con 15 minuti di ritardo.",
+      "testo": "Per quello che è successo la partita è cominciata con un quarto d'ora di ritardo; al posto di Arditi in panchina è andato Frank Tchaouna.",
       "fonti": [
-       "TV7 Benevento"
+       "TV7 Benevento",
+       "Cronache del Sannio (cronaca)"
+      ],
+      "giorno": "2026-10-27"
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "27 ottobre, prima della partita",
+      "fatto": "Arditi cade entrando in panchina e perde i sensi per qualche istante; viene portato in ospedale.",
+      "fonti": [
+       "TV7 Benevento",
+       "Cronache del Sannio (cronaca)"
+      ],
+      "quando": "2026-10-27"
+     },
+     {
+      "data": "27 ottobre, sera",
+      "fatto": "Dopo la partita Mignani dice che Arditi ha fatto gli esami e sta bene.",
+      "fonti": [
+       "Cronache del Sannio (Mignani)"
+      ],
+      "quando": "2026-10-27T22:00"
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Arditi ha perso i sensi per qualche istante prima della partita, è stato portato in ospedale e la partita è cominciata con un quarto d'ora di ritardo.",
+      "fonti": [
+       "TV7 Benevento",
+       "Cronache del Sannio (cronaca)"
       ]
      }
     ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
+    "divergono": [
+     {
+      "testo": "Il nome: Gabriele per TV7 Benevento, Gabriel nel tabellino del Benevento Calcio. Il ritardo: 15 minuti per TV7 Benevento e Cronache del Sannio, 14 per il tabellino del club.",
+      "fonti": [
+       "TV7 Benevento",
+       "Cronache del Sannio (cronaca)"
+      ]
+     }
+    ],
     "non_si_sa": [
-     "L'esito degli accertamenti in ospedale.",
-     "In quale ospedale è stato portato."
+     "In quale ospedale è stato portato e che cosa hanno detto gli esami."
     ],
     "fonti": [
      {
@@ -129,8 +355,28 @@
       "titolo": "Paura per Arditi prima di Benevento-Catanzaro: perde conoscenza e va in ospedale.",
       "url": "https://www.tvsette.net/paura-per-arditi-prima-di-benevento-catanzaro-perde-conoscenza-e-va-in-ospedale/",
       "data": "27 ott, 19:27"
+     },
+     {
+      "nome": "Cronache del Sannio (cronaca)",
+      "titolo": "Benevento-Catanzaro 1-1: Buso beffa la Strega nel recupero",
+      "url": "https://www.cronachedelsannio.it/sannionews24/benevento-catanzaro-cronaca-match/",
+      "data": "27 ott, 21:11"
+     },
+     {
+      "nome": "Cronache del Sannio (Mignani)",
+      "titolo": "Catanzaro, Mignani: “Punto meritato. Abbracciare mio figlio in Serie B è un sogno”",
+      "url": "https://www.cronachedelsannio.it/sannionews24/mignani-benevento-catanzaro-post-partita/",
+      "data": "27 ott, 22:00"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Dopo la partita l'allenatore del Catanzaro, Michele Mignani, ha detto che Arditi ha fatto gli esami e sta bene.",
+     "fonti": [
+      "Cronache del Sannio (Mignani)"
+     ],
+     "quando": "2026-10-27T22:12+01:00",
+     "titolo_prima": "Benevento-Catanzaro, malore in panchina per Arditi del Catanzaro prima della partita: portato in ospedale per accertamenti"
+    }
    }
   },
   {
@@ -279,13 +525,17 @@
    "zona": "provincia",
    "luogo": "San Giorgio del Sannio",
    "pubblicato": "2026-10-27T18:50+01:00",
-   "stato": "una_fonte",
+   "stato": "confermata",
    "rilevante": false,
    "importanza": 4,
    "fonti": [
     {
      "nome": "Ottopagine",
      "url": "https://www.ottopagine.it/bn/cronaca/442343/appalti-tra-benevento-e-caserta-dda-chiede-il-rinvio-a-giudizio-di-34-persone.shtml"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/la-direzione-distrettuale-antimafia-ha-chiesto-il-rinvio-giudizio-persone-indagate-presunte"
     }
    ],
    "articolo": {
@@ -293,26 +543,31 @@
      {
       "testo": "Il pubblico ministero della Dda, la Direzione distrettuale antimafia, ha chiesto il rinvio a giudizio di 34 persone nell'indagine dei Carabinieri su una serie di appalti tra le province di Caserta e Benevento, emersa più di un anno fa. Il 18 gennaio 2027 ci sarà l'udienza preliminare davanti al gup di Napoli, il giudice che dovrà decidere se mandare gli imputati a processo o chiudere il caso per loro.",
       "fonti": [
-       "Ottopagine"
-      ]
+       "Ottopagine",
+       "Gazzetta di Benevento"
+      ],
+      "giorno": "2026-10-27"
      },
      {
       "testo": "Per il Sannio l'inchiesta riguarda la gara del Comune di San Giorgio del Sannio per la raccolta dei rifiuti, nel 2022. In questa parte dell'indagine sono chiamate in causa sei persone, tra cui l'ex sindaco del paese e il presidente della commissione di gara. Vengono da Rotondi, San Martino Sannita, Bucciano, Montesarchio e Paolisi.",
       "fonti": [
        "Ottopagine"
-      ]
+      ],
+      "giorno": "2026-10-27"
      },
      {
       "testo": "Secondo l'accusa il rappresentante di un'impresa entrata nella gara attraverso un consorzio avrebbe dato 10mila euro a testa all'allora sindaco e al presidente della commissione per ottenere l'appalto: per gli inquirenti era il presunto acconto di una somma di 90mila euro da pagare dopo. La gara però l'aveva vinta un'impresa di Ravenna, con il consorzio secondo per un errore nell'offerta: a quel punto, sempre secondo l'accusa, l'imprenditore avrebbe chiesto ai due di escludere la ditta vincitrice. Ad altre tre persone l'accusa dà il ruolo di presunti agevolatori, che avrebbero organizzato gli incontri e accompagnato l'imprenditore.",
       "fonti": [
        "Ottopagine"
-      ]
+      ],
+      "giorno": "2026-10-27"
      },
      {
       "testo": "Uno degli incontri, davanti a un bar di Napoli, è stato ripreso dalla telecamera del locale: secondo l'accusa l'imprenditore avrebbe infilato una busta nello zaino dell'ex sindaco. Nell'interrogatorio l'ex sindaco ha sostenuto di aver pensato che fosse materiale pubblicitario su un impianto per i rifiuti, di aver trovato i soldi solo una volta a casa e di averli restituiti.",
       "fonti": [
        "Ottopagine"
-      ]
+      ],
+      "giorno": "2026-10-27"
      }
     ],
     "cronologia": [
@@ -332,7 +587,15 @@
       ]
      }
     ],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "Il pm della Dda ha chiesto il rinvio a giudizio nell'indagine dei Carabinieri sugli appalti tra le province di Benevento e Caserta; il gup deciderà all'inizio del 2027.",
+      "fonti": [
+       "Ottopagine",
+       "Gazzetta di Benevento"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [
      "Quali reati contesta l'accusa nella parte dell'indagine che riguarda il Sannio.",
@@ -344,6 +607,12 @@
       "titolo": "Appalti tra Benevento e Caserta, Dda chiede il rinvio a giudizio di 34 persone",
       "url": "https://www.ottopagine.it/bn/cronaca/442343/appalti-tra-benevento-e-caserta-dda-chiede-il-rinvio-a-giudizio-di-34-persone.shtml",
       "data": "27 ott, 18:50"
+     },
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "La Direzione Distrettuale Antimafia ha chiesto il rinvio a giudizio per persone indagate per presunte irregolarità",
+      "url": "https://www.gazzettabenevento.it/it/la-direzione-distrettuale-antimafia-ha-chiesto-il-rinvio-giudizio-persone-indagate-presunte",
+      "data": "27 ott, 21:20"
      }
     ]
    }
