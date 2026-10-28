@@ -1421,13 +1421,18 @@ def _aggiornamento(ag, fonti):
     return f'<div class="aggiornamento"><div class="quando">Aggiornamento{e(q)}</div>{_frase("p", ag, fonti)}</div>'
 
 
+# la firma di ogni articolo (come in disegnaArticolo di index.html): chi scrive e come, per chi legge e per Google News
+FIRMA = "Di Notizie Benevento, con l'intelligenza artificiale dalle fonti citate"
+
+
 def html_articolo(n, appro_collegato):
     n = vista_ufficiale(n)
     a = n["articolo"]
     fonti = a.get("fonti") if isinstance(a.get("fonti"), list) else []
     h = _testata_pagina(_categoria(n), n.get("luogo"), n["titolo"])
     meta = ("Dall'archivio · " if n["_arch"] else "") + (data_it(n.get("pubblicato")) + " · " if n.get("pubblicato") else "")
-    h += f'<div class="meta">{e(meta)}{e(conta_fonti(n, fonti))}</div>'
+    h += (f'<div class="meta">{e(meta)}{e(conta_fonti(n, fonti))}<span class="firma">{FIRMA} · '
+          '<a href="/chi-siamo/">Come lavoriamo</a></span></div>')
     if n.get("stato") == "una_fonte" and n.get("fonti"):
         h += (f'<div class="nota">Per ora questo fatto lo riporta solo {e(n["fonti"][0].get("nome", ""))}. '
               'Lo aggiorniamo se arrivano altre fonti.</div>')
@@ -1520,7 +1525,12 @@ def html_chi_siamo():
           'o alla PEC <a href="mailto:notiziebenevento@pec.it">notiziebenevento@pec.it</a>, '
           "meglio con il testo scritto nella mail. Li leggiamo ogni 5 minuti: se sono notizie della "
           "provincia e si possono verificare, le pubblichiamo citando chi le firma.</p>")
-    h += f"<h3>Contatti</h3><p>Per segnalare un errore o una notizia che manca, scrivici un messaggio sulla {fb}.</p>"
+    h += ("<h3>Correzioni</h3><p>Se in un articolo c'è un errore lo correggiamo nell'articolo stesso e lo scriviamo in "
+          "una nota, con quello che è cambiato. Quando una notizia va avanti, la novità è in cima con la data e l'ora "
+          "dell'aggiornamento.</p>")
+    h += ('<h3>Contatti</h3><p>Per segnalare un errore o una notizia che manca scrivi a '
+          '<a href="mailto:redazione@notiziebenevento.it">redazione@notiziebenevento.it</a> '
+          f"oppure un messaggio sulla {fb}.</p>")
     h += ("<h3>Privacy</h3><p>Le visite si contano in forma anonima, senza cookie. Non serve nessuna registrazione.</p>")
     return f'<article class="appro">{h}</article>'
 

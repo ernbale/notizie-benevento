@@ -223,6 +223,8 @@
   .appro .occhiello { margin-top: 18px; }
   .appro h1 { font: 700 40px/1.12 var(--serif); letter-spacing: -.5px; margin: 6px 0 10px; }
   .appro .meta { font-size: 14px; color: var(--grigio); padding-bottom: 14px; border-bottom: 1px solid var(--nero); }
+  .appro .meta .firma { display: block; font-size: 13px; margin-top: 3px; }
+  .appro .meta .firma a { color: inherit; }
   .appro h3 { font: 700 13px var(--sans); text-transform: uppercase; letter-spacing: 1px; border-top: 3px solid var(--nero); padding-top: 6px; margin: 28px 0 10px; }
   .appro p, .appro li { font: 400 19px/1.6 var(--serif); }
   .appro ul { padding-left: 20px; margin: 0; }
@@ -1846,7 +1848,11 @@
     var fonti = Array.isArray(a.fonti) ? a.fonti : [];
     var art = el("article", "appro", []);
     testataPagina(art, n.categoria === "sport" ? sportDi(n) : NOMI_CAT[n.categoria] || "Altro", n.luogo, n.titolo);
-    art.appendChild(el("div", "meta", [(dallArchivio ? "Dall'archivio · " : "") + (n.pubblicato ? quando(n.pubblicato) + " · " : "") + contaFonti(n, fonti)]));
+    var come = el("a", "", ["Come lavoriamo"]);
+    come.href = "/chi-siamo/";
+    // la firma: chi scrive e come (come FIRMA in pagine.py; Google News lo chiede, 28 ott 2026)
+    art.appendChild(el("div", "meta", [(dallArchivio ? "Dall'archivio · " : "") + (n.pubblicato ? quando(n.pubblicato) + " · " : "") + contaFonti(n, fonti),
+      el("span", "firma", ["Di Notizie Benevento, con l'intelligenza artificiale dalle fonti citate · ", come])]));
     if (n.stato === "una_fonte") art.appendChild(el("div", "nota", ["Per ora questo fatto lo riporta solo " + ((n.fonti || [])[0] || {}).nome + ". Lo aggiorniamo se arrivano altre fonti."]));
     var agg = riquadroAggiornamento(a.aggiornamento, fonti);
     if (agg) art.appendChild(agg);
