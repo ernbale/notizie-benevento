@@ -1,7 +1,251 @@
 {
- "aggiornato": "2026-10-28T13:19+01:00",
+ "aggiornato": "2026-10-28T14:32+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "telese-terme-mcdonalds-apre-29-ottobre-35-assunzioni",
+   "titolo": "Telese Terme, giovedì 29 ottobre apre il McDonald's di via Lagni: 35 assunti",
+   "titolo_google": "McDonald's Telese Terme, apertura il 29 ottobre: 35 assunti",
+   "sintesi": "Giovedì 29 ottobre apre il nuovo McDonald's di Telese Terme, in via Lagni: è il quarto in provincia di Benevento e ha portato 35 assunzioni, quasi tutte di Telese e dei paesi vicini. Alle 11 il taglio del nastro col sindaco, poi una festa aperta a tutti.",
+   "categoria": "altro",
+   "luogo": "Telese Terme, via Lagni",
+   "pubblicato": "2026-10-28T14:19+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 3,
+   "immagine": "ristorante",
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/28/mcdonalds-apre-a-telese-terme-il-29-ottobre-si-inaugura-quarto-ristorante-nel-sannio-35-nuove-assunzioni/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Giovedì 29 ottobre apre a Telese Terme, in via Lagni, un nuovo ristorante McDonald's, il quarto in provincia di Benevento. Ha portato 35 assunzioni: chi ci lavora viene da Telese e dai paesi vicini.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Alle 11 c'è il taglio del nastro con il sindaco Giovanni Caporaso, rappresentanti delle istituzioni, delle associazioni del posto e delle forze dell'ordine. Dopo, una festa aperta a tutti con giochi, intrattenimento e musica. Il ristorante è del licenziatario Attilio Guadagno.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Il locale ha 212 posti a sedere, i chioschi digitali per ordinare da soli, un McCafé, un'area giochi dentro e fuori per i bambini e una doppia corsia McDrive per ordinare dall'auto. Da novembre si potranno organizzare lì le feste di compleanno dei bambini.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "È aperto tutti i giorni dalle 7 all'una di notte. Il McDrive resta aperto da domenica a giovedì dalle 7 alle 2, il venerdì e il sabato dalle 7 alle 4.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "McDonald’s apre a Telese Terme: il 29 ottobre si inaugura. Quarto ristorante nel Sannio: 35 nuove assunzioni",
+      "url": "https://www.ntr24.tv/2026/10/28/mcdonalds-apre-a-telese-terme-il-29-ottobre-si-inaugura-quarto-ristorante-nel-sannio-35-nuove-assunzioni/",
+      "data": "28 ott, 14:19"
+     }
+    ]
+   },
+   "zona": "telesina",
+   "foto": "ristorante-3"
+  },
+  {
+   "id": "airola-operaio-morto-cantiere-2024-chiesto-rinvio-a-giudizio",
+   "titolo": "Airola, operaio morto nel cantiere nel 2024: la Procura chiede il processo per il titolare dell'impresa e il figlio",
+   "titolo_google": "Airola, operaio morto in cantiere: chiesto il processo per due",
+   "sintesi": "Il 20 agosto 2024 un operaio di 57 anni di Rotondi, cardiopatico, morì per un malore mentre gettava il calcestruzzo in un cantiere ad Airola. La pm ha chiesto il rinvio a giudizio del 67enne titolare dell'impresa, accusato tra l'altro di averlo impiegato «a nero», e del figlio, che aveva commissionato i lavori.",
+   "categoria": "cronaca",
+   "luogo": "Airola",
+   "pubblicato": "2026-10-28T13:58+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 4,
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/442423/muore-a-57-anni-mentre-lavora-impiegato-a-nero-chiesti-due-rinvii-a-giudizio.shtml"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "La Procura di Benevento ha chiesto il rinvio a giudizio, cioè il processo, per due persone per la morte di un operaio di 57 anni di Rotondi, in provincia di Avellino. L'uomo morì il 20 agosto 2024 mentre lavorava in un cantiere ad Airola. La richiesta della pm Maria Dolores De Gaudio riguarda un 67enne di Airola, legale rappresentante dell'impresa che faceva i lavori, e suo figlio, proprietario della casa, che li aveva commissionati.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "L'operaio, già malato di cuore, stava gettando il calcestruzzo per la rampa d'accesso al garage di un'abitazione quando si sentì male e cadde con il volto nel cemento. La causa della morte fu un arresto cardiaco, aggravato dal soffocamento dopo la caduta.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Al 67enne vengono contestate presunte violazioni delle norme contro gli infortuni: non avrebbe valutato i rischi del cantiere, non avrebbe nominato il medico competente né fatto le visite che dovevano accertare se l'operaio era idoneo a quel lavoro, non avrebbe scritto il piano di sicurezza del cantiere e lo avrebbe impiegato «a nero». Così, secondo l'accusa, ne avrebbe causato la morte «non volendola». Al figlio viene contestata la presunta mancata verifica che l'impresa fosse adatta ai lavori affidati.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Ora deciderà il giudice dell'udienza preliminare se mandare i due a processo.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando si terrà l'udienza preliminare."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Muore a 57 anni mentre lavora, \"impiegato a nero\": chiesti due rinvii a giudizio",
+      "url": "https://www.ottopagine.it/bn/cronaca/442423/muore-a-57-anni-mentre-lavora-impiegato-a-nero-chiesti-due-rinvii-a-giudizio.shtml",
+      "data": "28 ott, 13:58"
+     }
+    ]
+   },
+   "zona": "caudina"
+  },
+  {
+   "id": "paduli-tentato-femminicidio-moglie-abbreviato-rinviato-esame",
+   "titolo": "Paduli, spari alla moglie: il 38enne piange e non riesce a parlare, il suo esame rinviato di una settimana",
+   "titolo_google": "Paduli, tentato femminicidio: rinviato l'esame del 38enne",
+   "sintesi": "Nel processo con rito abbreviato per il tentato femminicidio di Paduli del 2 febbraio, il 38enne accusato di aver sparato alla moglie doveva rispondere alle domande mercoledì 28 ottobre. Si è commosso e non è riuscito a parlare: la giudice ha rinviato tutto di una settimana.",
+   "categoria": "cronaca",
+   "luogo": "Paduli, contrada Femmina Arsa",
+   "pubblicato": "2026-10-28T13:17+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 4,
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/442416/valentino-si-commuove-piange-poi-si-blocca-e-non-riesce-piu-a-parlare.shtml"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Mercoledì 28 ottobre, in tribunale a Benevento, doveva parlare il vigilante di 38 anni accusato del tentato femminicidio della moglie, aggravato dalla premeditazione, e di aver portato un'arma in un luogo pubblico. Il 2 febbraio, a Paduli, la donna, di 46 anni, era stata ferita in modo grave a colpi di fucile. L'uomo prima si è commosso e ha pianto, poi si è bloccato e non è più riuscito a parlare.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Su richiesta della difesa la giudice dell'udienza preliminare, Maria Amoruso, ha rinviato di una settimana il suo esame. Dopo le sue risposte erano previste la discussione e la sentenza: il processo si fa con il rito abbreviato, quello che si decide sugli atti e, in caso di condanna, riduce la pena.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Secondo l'accusa, quel giorno l'uomo raggiunse la casa della moglie in contrada Femmina Arsa con un fucile semiautomatico e le sparò due colpi mentre lei apriva l'auto, ferendola all'addome e al braccio sinistro; poi sparò un terzo colpo contro il portone. Fu arrestato dai carabinieri. Per gli inquirenti non accettava che la moglie avesse chiesto la separazione giudiziale. Durante la convalida aveva detto di essere arrabbiato, ma di non volerla uccidere.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "2 febbraio",
+      "quando": "2026-02-02",
+      "fatto": "A Paduli la donna viene ferita a colpi di fucile; il marito è arrestato dai carabinieri.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "data": "28 ottobre",
+      "fatto": "In aula l'imputato non riesce a parlare: il suo esame è rinviato di una settimana.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     }
+    ],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Valentino si commuove, piange, poi si blocca e non riesce più a parlare",
+      "url": "https://www.ottopagine.it/bn/cronaca/442416/valentino-si-commuove-piange-poi-si-blocca-e-non-riesce-piu-a-parlare.shtml",
+      "data": "28 ott, 13:17"
+     }
+    ]
+   },
+   "zona": "provincia"
+  },
+  {
+   "id": "limatola-comune-vende-immobili-manifestazione-interesse",
+   "titolo": "Limatola, il Comune mette in vendita alcuni immobili: avviso per chi è interessato",
+   "titolo_google": "Limatola, il Comune vende immobili: avviso per gli interessati",
+   "sintesi": "Il Comune di Limatola ha pubblicato un avviso per raccogliere le manifestazioni di interesse di chi vuole comprare alcuni immobili comunali, quelli del piano delle alienazioni del 2023. Avviso e modulo per la domanda sono sul sito del Comune.",
+   "categoria": "avvisi",
+   "luogo": "Limatola",
+   "pubblicato": "2026-10-28",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 2,
+   "immagine": "documenti",
+   "fonti": [
+    {
+     "nome": "Comune di Limatola",
+     "url": "https://www.comune.limatola.bn.it/novita/avvisi/novita_124.html",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Comune di Limatola vende alcuni dei suoi immobili e cerca chi è interessato a comprarli. Mercoledì 28 ottobre ha pubblicato un avviso di manifestazione di interesse per i beni inseriti nel piano delle alienazioni e valorizzazioni del 2023, l'elenco degli immobili comunali che si possono vendere.",
+      "fonti": [
+       "Comune di Limatola"
+      ]
+     },
+     {
+      "testo": "L'avviso e il modulo per la domanda si scaricano dalla pagina del Comune. Se ne occupa lo Sportello unico per l'edilizia.",
+      "fonti": [
+       "Comune di Limatola"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quali immobili sono in vendita e entro quando si presentano le domande: sono scritti nell'avviso allegato, che dal sito non si è riusciti ad aprire."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Limatola",
+      "titolo": "AVVISO PUBBLICO DI MANIFESTAZIONE DI INTERESSE PER LA VENDITA DI BENI IMMOBILI DI PROPRIETÀ COMUNALE",
+      "url": "https://www.comune.limatola.bn.it/novita/avvisi/novita_124.html",
+      "data": "28 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "zona": "caudina",
+   "foto": "documenti-8"
+  },
   {
    "id": "molinara-via-vallone-delle-mandre-chiusa-31-ottobre-albero",
    "titolo": "Molinara, via Vallone delle Mandre chiusa sabato 31 ottobre dalle 8 alle 13 per abbattere un albero pericolante",
@@ -5216,14 +5460,14 @@
   },
   {
    "id": "sannio-acque-undici-comuni-gestione-autonoma-ricorsi-tar",
-   "titolo": "Acqua, undici Comuni del Sannio contro il passaggio a Sannio Acque: nasce un coordinamento, pronti i ricorsi al TAR",
-   "titolo_google": "Sannio Acque, undici Comuni si oppongono: ricorsi al TAR",
-   "sintesi": "Lunedì 26 ottobre a Fragneto Monforte i sindaci di undici Comuni che gestiscono da soli l'acqua hanno detto no all'unanimità al passaggio del servizio a Sannio Acque. Hanno deciso un coordinamento permanente, ricorsi al TAR contro i no dell'Ente Idrico Campano e una diffida per fermare i passaggi di consegna.",
+   "titolo": "Acqua, undici Comuni del Sannio contro il passaggio a Sannio Acque: depositato il ricorso al TAR",
+   "titolo_google": "Sannio Acque, undici Comuni fanno ricorso al TAR",
+   "sintesi": "Gli undici Comuni del Sannio che gestiscono da soli l'acqua hanno depositato il ricorso al TAR contro il decreto della Regione che affida per trent'anni il servizio a Sannio Acque. Lo dice il Comitato sannita Acqua Bene Comune, che pensa di intervenire nella causa al loro fianco. Il no era stato deciso il 26 ottobre a Fragneto Monforte.",
    "categoria": "politica",
    "zona": "provincia",
    "immagine": "fontana",
    "luogo": "Fragneto Monforte, Sassinoro, Circello, San Lupo, Fragneto l'Abate, Baselice, San Marco dei Cavoti, Castelvetere in Val Fortore, Pietraroja, San Giorgio la Molara e Casalduni",
-   "pubblicato": "2026-10-26T17:53+01:00",
+   "pubblicato": "2026-10-28T14:19+01:00",
    "stato": "confermata",
    "rilevante": false,
    "importanza": 4,
@@ -5233,20 +5477,47 @@
      "url": "https://www.ntr24.tv/2026/10/26/altri-undici-comuni-si-mobilitano-contro-sannio-acque-difenderemo-la-gestione-autonoma/"
     },
     {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/acqua-pubblica-comuni-sannio-gestione-autonoma/"
-    },
-    {
      "nome": "Gazzetta di Benevento",
      "url": "https://www.gazzettabenevento.it/it/i-sindaci-si-oppongono-al-processo-di-centralizzazione-coatta-imposto-dallente-idrico-campano-e"
     },
     {
-     "nome": "Lab TV",
-     "url": "https://www.labtv.net/attualita/2026/10/27/sannio-acque-avanza-in-sordina-e-11-sindaci-contestano-la-centralizzazione-coatta-delleic/"
+     "nome": "Anteprima24 (28/10)",
+     "url": "https://www.anteprima24.it/benevento/ricorso-al-tar-sulla-gestione-idrica-il-plauso-del-comitato-agli-undici-comuni/"
+    },
+    {
+     "nome": "Benevento Giornale",
+     "url": "https://www.beneventogiornale.com/2026/10/28/gestione-idrica-nel-sannio-il-comitato-sannita-acqua-bene-comune-esprime-pieno-plauso-ai-comuni-ricorrenti-contro-il-decreto-regionale/"
+    },
+    {
+     "nome": "Lab TV (28/10)",
+     "url": "https://www.labtv.net/attualita/2026/10/28/no-centralizzazione-eic-facchino-nostro-modello-di-gestione-e-virtuoso/"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "I Comuni hanno depositato il ricorso al TAR, il tribunale amministrativo, contro il decreto n. 71 del 23 settembre 2026 del presidente della Regione Campania, quello che affida per trent'anni il servizio idrico della provincia a Sannio Acque. Lo ha fatto sapere mercoledì 28 ottobre il Comitato sannita Acqua Bene Comune, che contesta da anni il passaggio alla società mista e ora valuta, con i suoi avvocati, di intervenire nella causa al fianco dei Comuni.",
+      "fonti": [
+       "Anteprima24 (28/10)",
+       "Benevento Giornale"
+      ],
+      "giorno": "2026-10-28"
+     },
+     {
+      "testo": "Per il Comitato si vorrebbero consegnare reti, sorgenti e impianti di 78 Comuni a una società con appena 22mila euro di capitale, guidata da tre piccoli Comuni soci fondatori e dal socio privato Acea Sannio, mentre gli altri 75 Comuni resterebbero fuori dal controllo. Teme bollette più alte e perdite da ripianare per i Comuni soci.",
+      "fonti": [
+       "Anteprima24 (28/10)",
+       "Benevento Giornale"
+      ],
+      "giorno": "2026-10-28"
+     },
+     {
+      "testo": "Lab TV ricorda che Sannio Acque è nata ufficialmente il 4 agosto con i soli Comuni di Solopaca, Campolattaro e Campoli del Monte Taburno, e che il 21 ottobre l'Ente Idrico Campano ha firmato la convenzione che le affida il servizio.",
+      "fonti": [
+       "Lab TV (28/10)"
+      ],
+      "giorno": "2026-10-28"
+     },
      {
       "testo": "Undici Comuni del Sannio che gestiscono da soli l'acqua dei loro paesi non vogliono passare a Sannio Acque, la società mista a cui è stato affidato il servizio idrico di tutta la provincia. Lunedì 26 ottobre, nel pomeriggio, i loro sindaci e amministratori si sono riuniti nell'aula consiliare di Fragneto Monforte e hanno respinto all'unanimità il passaggio.",
       "fonti": [
@@ -5291,7 +5562,24 @@
       "giorno": "2026-10-26"
      }
     ],
-    "cronologia": [],
+    "cronologia": [
+     {
+      "data": "26 ottobre",
+      "fatto": "A Fragneto Monforte undici Comuni dicono no a Sannio Acque e decidono i ricorsi al TAR.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     },
+     {
+      "data": "28 ottobre",
+      "fatto": "Il Comitato Acqua Bene Comune: il ricorso al TAR è stato depositato.",
+      "fonti": [
+       "Anteprima24 (28/10)",
+       "Benevento Giornale"
+      ]
+     }
+    ],
     "concordano": [
      {
       "testo": "Gli undici Comuni presenti, l'incontro a Fragneto Monforte e il no all'unanimità al passaggio a Sannio Acque.",
@@ -5310,9 +5598,17 @@
       ]
      }
     ],
-    "divergono": [],
+    "divergono": [
+     {
+      "testo": "Nell'elenco dei Comuni del comunicato del Comitato c'è Moiano e non Casalduni, che invece compare tra i presenti alla riunione di Fragneto Monforte nei giornali del 26 ottobre.",
+      "fonti": [
+       "Anteprima24 (28/10)",
+       "NTR24"
+      ]
+     }
+    ],
     "non_si_sa": [
-     "Quando saranno presentati i ricorsi al TAR e per quali Comuni.",
+     "Quando il TAR esaminerà il ricorso.",
      "Se la Regione e l'Ente Idrico Campano accetteranno di incontrare i sindaci."
     ],
     "fonti": [
@@ -5345,8 +5641,35 @@
       "titolo": "Sannio Acque avanza in sordina e 11 sindaci contestano la “centralizzazione coatta” dell’Eic",
       "url": "https://www.labtv.net/attualita/2026/10/27/sannio-acque-avanza-in-sordina-e-11-sindaci-contestano-la-centralizzazione-coatta-delleic/",
       "data": "27 ott, 13:22"
+     },
+     {
+      "nome": "Anteprima24 (28/10)",
+      "titolo": "Ricorso al Tar sulla gestione idrica, il plauso del Comitato agli undici Comuni",
+      "url": "https://www.anteprima24.it/benevento/ricorso-al-tar-sulla-gestione-idrica-il-plauso-del-comitato-agli-undici-comuni/",
+      "data": "28 ott, 14:19"
+     },
+     {
+      "nome": "Benevento Giornale",
+      "titolo": "Gestione idrica nel Sannio: il Comitato sannita Acqua Bene Comune esprime pieno plauso ai Comuni ricorrenti contro il Decreto Regionale",
+      "url": "https://www.beneventogiornale.com/2026/10/28/gestione-idrica-nel-sannio-il-comitato-sannita-acqua-bene-comune-esprime-pieno-plauso-ai-comuni-ricorrenti-contro-il-decreto-regionale/",
+      "data": "28 ott, 14:14"
+     },
+     {
+      "nome": "Lab TV (28/10)",
+      "titolo": "No centralizzazione Eic, Facchino: “nostro modello di gestione è virtuoso”",
+      "url": "https://www.labtv.net/attualita/2026/10/28/no-centralizzazione-eic-facchino-nostro-modello-di-gestione-e-virtuoso/",
+      "data": "28 ott, 13:46"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Mercoledì 28 ottobre il Comitato sannita Acqua Bene Comune ha fatto sapere che i Comuni hanno depositato il ricorso al TAR contro il decreto della Regione su Sannio Acque, e che i suoi avvocati valutano di intervenire nella causa a sostegno dei Comuni.",
+     "fonti": [
+      "Anteprima24 (28/10)",
+      "Benevento Giornale"
+     ],
+     "quando": "2026-10-28T14:32+01:00",
+     "titolo_prima": "Acqua, undici Comuni del Sannio contro il passaggio a Sannio Acque: nasce un coordinamento, pronti i ricorsi al TAR"
+    }
    },
    "foto": "fontana-5"
   },
@@ -15759,7 +16082,7 @@
    "titolo_google": "Sfiducia a Mastella a Benevento: a che punto è la mozione",
    "sommario": "Il 22 ottobre l'opposizione del Consiglio comunale di Benevento ha presentato una mozione di sfiducia contro il sindaco Clemente Mastella e la Giunta, con un dossier di 24 punti che parte dall'inchiesta giudiziaria sul Comune. Domenica 25 ha sfilato in corteo fino alla Prefettura. Il sindaco dice che non si dimette e la maggioranza parla di poche centinaia di persone in piazza. La data del voto in Consiglio non è ancora stata fissata.",
    "luogo": "Benevento",
-   "aggiornato": "2026-10-28T11:40:00+01:00",
+   "aggiornato": "2026-10-28T14:50:00+01:00",
    "collegate": [
     "benevento-opposizione-mozione-sfiducia-mastella"
    ],
@@ -15878,6 +16201,12 @@
        "fonti": [
         "Lab TV (27/10)"
        ]
+      },
+      {
+       "testo": "Sabato 31 ottobre, al mattino, al Museo del Sannio, Umberto Del Basso De Caro e Pasquale Viespoli, in passato su fronti opposti, proveranno a «contribuire a tracciare un cammino di riscatto» per la città con un percorso civico, con l'associazione CittadinoSUDD.",
+       "fonti": [
+        "Lab TV (28/10)"
+       ]
       }
      ]
     },
@@ -15962,6 +16291,13 @@
       "Ottopagine (28/10, NdC)",
       "NTR24 (28/10, NdC)"
      ]
+    },
+    {
+     "data": "28 ottobre",
+     "fatto": "Del Basso De Caro e Viespoli annunciano un incontro civico per sabato 31 ottobre al Museo del Sannio.",
+     "fonti": [
+      "Lab TV (28/10)"
+     ]
     }
    ],
    "non_si_sa": [
@@ -16022,6 +16358,12 @@
      "titolo": "Noi di Centro: “Game over per chi ha fallito la prova della piazza, noi avanti con fatti e atti. Ci asterremo da polemiche e repliche inutili”",
      "url": "https://www.ntr24.tv/2026/10/28/noi-di-centro-game-over-per-chi-ha-fallito-la-prova-della-piazza-noi-avanti-con-fatti-e-atti-ci-asterremo-da-polemiche-e-repliche-inutili/",
      "data": "28 ott, 10:52"
+    },
+    {
+     "nome": "Lab TV (28/10)",
+     "titolo": "Viespoli e De Caro, la “strana coppia” al servizio della città",
+     "url": "https://www.labtv.net/politica/2026/10/28/viespoli-e-de-caro-la-strana-coppia-al-servizio-della-citta/",
+     "data": "28 ott, 13:18"
     }
    ]
   },
