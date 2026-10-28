@@ -1,7 +1,271 @@
 {
- "aggiornato": "2026-10-28T10:12+01:00",
+ "aggiornato": "2026-10-28T11:18+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-inchiesta-comune-copia-telefoni-indagati-4-novembre",
+   "titolo": "Inchiesta sul Comune di Benevento, la gip dice no all'incidente probatorio sui telefoni: il 4 novembre la Procura affida la copia dei dati",
+   "titolo_google": "Inchiesta Comune di Benevento, copia dei telefoni il 4 novembre",
+   "sintesi": "Nell'inchiesta sul Comune di Benevento la gip ha respinto la richiesta di un avvocato di affidare a un perito del giudice la copia dei dati di telefoni e computer di sedici indagati. Il 4 novembre sarà la pm a dare l'incarico a un suo consulente.",
+   "categoria": "cronaca",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-28T10:59+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 4,
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/442392/inchiesta-santamaria-la-consulenza-su-telefonini-ipad-e-pc-sara-disposta-da-pm.shtml"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Nell'inchiesta sul Comune di Benevento la gip Maria Amoruso ha detto no alla richiesta di incidente probatorio presentata da un avvocato della difesa: chiedeva che la copia completa dei dati di cellulari, iPad, computer e tablet di sedici indagati la facesse un perito scelto dal giudice. Così sarà la pm Maria Colucci, mercoledì 4 novembre in Procura, a dare l'incarico a un consulente tecnico suo.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "L'incarico doveva essere affidato già l'8 ottobre, ma l'udienza era saltata proprio perché la difesa aveva annunciato questa richiesta. L'incidente probatorio è la fase in cui si raccolgono prove prima del processo, con le difese presenti.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Gli indagati sono diciannove; la posizione di un ventesimo è stata stralciata per motivi di salute. L'inchiesta dei carabinieri era cominciata il 30 marzo con l'arresto di un ex dirigente comunale, in libertà dal 28 settembre, per una presunta concussione ai danni di un geometra: secondo l'accusa gli avrebbe chiesto 70mila euro per sbloccare alcune pratiche edilizie. Le ipotesi di reato vanno, a vario titolo, dalla concussione alla corruzione, dalla ricettazione alla violazione della legge sul finanziamento ai partiti.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Resta fissato a partire dal 3 novembre, davanti alla stessa gip, l'incidente probatorio sulle dichiarazioni dell'ex dirigente, quelle su di sé e quelle sugli altri, con le domande delle difese.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quanto tempo servirà al consulente per copiare e analizzare i dati."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Inchiesta [nome omesso], la consulenza su telefonini, Ipad e pc sarà disposta da Pm",
+      "url": "https://www.ottopagine.it/bn/cronaca/442392/inchiesta-santamaria-la-consulenza-su-telefonini-ipad-e-pc-sara-disposta-da-pm.shtml",
+      "data": "28 ott, 10:59"
+     }
+    ]
+   },
+   "zona": "benevento"
+  },
+  {
+   "id": "benevento-piu-sicuri-insieme-truffe-anziani-6-novembre",
+   "titolo": "Benevento, truffe agli anziani: dopo l'incontro all'Addolorata il prossimo è il 6 novembre a Santa Maria di Costantinopoli",
+   "titolo_google": "Truffe agli anziani a Benevento, incontro il 6 novembre",
+   "sintesi": "A Benevento continua «Più sicuri insieme», il ciclo di incontri per insegnare agli anziani a riconoscere le truffe. Il prossimo è venerdì 6 novembre alle 16:30 nella chiesa di Santa Maria di Costantinopoli; il numero verde 800 10 20 24 è sempre attivo.",
+   "categoria": "altro",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-28T10:25+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 3,
+   "immagine": "truffe",
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/28/piu-sicuri-insieme-successo-a-benevento-per-il-secondo-appuntamento-del-progetto-contro-le-truffe-agli-anziani/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/442385/piu-sicuri-insieme-in-tanti-al-progetto-contro-le-truffe-agli-anziani.shtml"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Benevento va avanti «Più sicuri insieme», il ciclo di incontri nei quartieri per aiutare gli anziani a riconoscere le truffe e a chiedere aiuto in tempo. Il terzo incontro è venerdì 6 novembre alle 16:30 nella chiesa di Santa Maria di Costantinopoli, in viale Principe di Napoli.",
+      "fonti": [
+       "NTR24",
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Il secondo si è tenuto venerdì 23 ottobre alle 18:30 nella chiesa dell'Addolorata, in piazzale Aldo Iermano, con molto pubblico. Sono intervenuti Giuseppina Domino e Filippo Liverini della cooperativa sociale Benessere, Romeo Formato dell'Associazione nazionale Polizia di Stato e Vincenzo Luisi, dirigente dell'ufficio Prevenzione generale e soccorso pubblico della Questura: hanno spiegato i trucchi più usati dai truffatori, di persona e su internet, e come difendersi.",
+      "fonti": [
+       "NTR24",
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Per informazioni, aiuto psicologico o consulenza legale c'è il numero verde 800 10 20 24. Il progetto è pagato dal ministero dell'Interno con il fondo contro le truffe agli anziani; lo promuovono la Prefettura e il Comune di Benevento e lo realizzano la cooperativa Benessere, la Polizia di Stato e l'Associazione nazionale Polizia di Stato.",
+      "fonti": [
+       "NTR24",
+       "Ottopagine"
+      ]
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "23 ottobre, 18:30",
+      "fatto": "Secondo incontro nella chiesa dell'Addolorata",
+      "fonti": [
+       "NTR24",
+       "Ottopagine"
+      ]
+     },
+     {
+      "data": "6 novembre, 16:30",
+      "fatto": "Terzo incontro nella chiesa di Santa Maria di Costantinopoli",
+      "fonti": [
+       "NTR24",
+       "Ottopagine"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "La data e il luogo del prossimo incontro e il numero verde 800 10 20 24.",
+      "fonti": [
+       "NTR24",
+       "Ottopagine"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "«Più sicuri insieme»: successo a Benevento per il secondo appuntamento del progetto contro le truffe agli anziani",
+      "url": "https://www.ntr24.tv/2026/10/28/piu-sicuri-insieme-successo-a-benevento-per-il-secondo-appuntamento-del-progetto-contro-le-truffe-agli-anziani/",
+      "data": "28 ott, 10:25"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "\"Più sicuri insieme\": in tanti al progetto contro le truffe agli anziani",
+      "url": "https://www.ottopagine.it/bn/attualita/442385/piu-sicuri-insieme-in-tanti-al-progetto-contro-le-truffe-agli-anziani.shtml",
+      "data": "28 ott, 10:14"
+     }
+    ]
+   },
+   "zona": "benevento",
+   "foto": "truffe-2"
+  },
+  {
+   "id": "santagata-de-goti-marcia-in-rosa-2026-prevenzione",
+   "titolo": "Sant'Agata de' Goti, nove chilometri a piedi per la Marcia in Rosa sulla prevenzione dei tumori",
+   "titolo_google": "Marcia in Rosa a Sant'Agata de' Goti: 9 km per la prevenzione",
+   "sintesi": "A Sant'Agata de' Goti si è svolta la quarta Marcia in Rosa dell'associazione «Noi Donne del 1972»: nove chilometri dalla frazione Bagnoli al Duomo per ricordare l'importanza della prevenzione dei tumori.",
+   "categoria": "altro",
+   "luogo": "Sant'Agata de' Goti",
+   "pubblicato": "2026-10-28T10:57+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 2,
+   "immagine": "chiesa",
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/28/a-santagata-de-goti-la-marcia-in-rosa-per-la-prevenzione-oncologica-9-km-di-fede-preghiera-e-speranza/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/santagata-de-goti-la-marcia-in-rosa-nove-chilometri-di-fede-preghiera-e-speranza/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/santagatagoti-torna-marciarosa-prevenzione-solidarieta/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/daicomuni/442382/sant-agata-dei-goti-tanta-partecipazione-alla-marcia-in-rosa.shtml"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Sant'Agata de' Goti si è svolta la quarta edizione della Marcia in Rosa, organizzata dall'associazione «Noi Donne del 1972» per parlare di prevenzione dei tumori: nove chilometri a piedi, dalla frazione Bagnoli fino al Duomo. Alla partenza il parroco della Santissima Assunta, don Andrea Ciervo, ha detto una preghiera.",
+      "fonti": [
+       "NTR24",
+       "TV7 Benevento",
+       "Cronache del Sannio",
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "La prima tappa è stata il santuario della Madonna di Palmentata, poi il gruppo è salito verso il centro storico. Quando è venuta sera la marcia è diventata una fiaccolata, che si è chiusa al Duomo.",
+      "fonti": [
+       "NTR24",
+       "TV7 Benevento",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Hanno camminato con i partecipanti la sindaca di Sant'Agata de' Goti, Giovannina Piccoli, i sindaci di Dugenta e Frasso Telesino, la vicesindaca di Limatola, il vicepresidente della Provincia Alfonso Ciervo e consigliere di maggioranza e di opposizione. La marcia aveva il patrocinio dei Comuni di Sant'Agata de' Goti, Limatola e Dugenta e della Provincia di Benevento.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Le madrine erano la chirurga Maria Teresa Melucci, che guida la Senologia dell'Istituto Pascale di Napoli e ha ricordato quanto contano i controlli periodici e la diagnosi precoce, e l'avvocata Stefania Pavone, presidente dell'Ordine degli avvocati di Benevento. Per la presidente dell'associazione, Anna Rossano, camminare insieme serve a dire che nessuna donna deve sentirsi sola.",
+      "fonti": [
+       "NTR24",
+       "TV7 Benevento",
+       "Cronache del Sannio"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "La quarta edizione, i nove chilometri da Bagnoli e l'arrivo al Duomo.",
+      "fonti": [
+       "NTR24",
+       "TV7 Benevento",
+       "Cronache del Sannio"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "In che giorno si è svolta la marcia: gli articoli non lo dicono."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "A Sant’Agata de’ Goti la Marcia in Rosa per la prevenzione oncologica: 9 km di fede, preghiera e speranza",
+      "url": "https://www.ntr24.tv/2026/10/28/a-santagata-de-goti-la-marcia-in-rosa-per-la-prevenzione-oncologica-9-km-di-fede-preghiera-e-speranza/",
+      "data": "28 ott, 10:11"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "SANT’AGATA DE’ GOTI, LA MARCIA IN ROSA: NOVE CHILOMETRI DI FEDE, PREGHIERA E SPERANZA",
+      "url": "https://www.tvsette.net/santagata-de-goti-la-marcia-in-rosa-nove-chilometri-di-fede-preghiera-e-speranza/",
+      "data": "28 ott, 09:52"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Sant’Agata de’ Goti, torna la Marcia in Rosa tra prevenzione e solidarietà",
+      "url": "https://www.cronachedelsannio.it/sannionews24/santagatagoti-torna-marciarosa-prevenzione-solidarieta/",
+      "data": "28 ott, 10:57"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Sant'Agata dei Goti: tanta partecipazione alla marcia in rosa",
+      "url": "https://www.ottopagine.it/bn/daicomuni/442382/sant-agata-dei-goti-tanta-partecipazione-alla-marcia-in-rosa.shtml",
+      "data": "28 ott, 09:50"
+     }
+    ]
+   },
+   "zona": "caudina",
+   "foto": "chiesa-13"
+  },
   {
    "id": "paduli-51enne-carcere-condanna-definitiva-violenza-sessuale-maltrattamenti",
    "titolo": "Paduli, 51enne in carcere: condanna definitiva a 10 anni per violenza sessuale, stalking e maltrattamenti in famiglia",
@@ -26,6 +290,22 @@
     {
      "nome": "Anteprima24",
      "url": "https://www.anteprima24.it/benevento/condanna-definitiva-per-violenza-sessuale-aggravata-maltrattamenti-e-stalking-51enne-in-carcere/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/violenza-sessuale-maltrattamenti-rumeno-condannato-carcere/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/442383/deve-scontare-10-anni-per-violenza-sessuale-e-maltrattamenti-arrestato-51enne.shtml"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/condanna-definitiva-a-10-anni-di-reclusione-per-violenza-sessuale-aggravata-maltrattamenti-e-atti-persecutori-arrestato-dai-carabinieri/"
+    },
+    {
+     "nome": "Il Caudino",
+     "url": "https://ilcaudino.it/51enne-arrestato-per-violenza-sessuale-e-maltrattamenti-in-famiglia-uid-5/"
     }
    ],
    "articolo": {
@@ -35,23 +315,32 @@
       "fonti": [
        "NTR24",
        "BeneventoNews24",
-       "Anteprima24"
-      ]
+       "Anteprima24",
+       "Ottopagine",
+       "Cronache del Sannio"
+      ],
+      "giorno": "2026-10-28"
      },
      {
       "testo": "La condanna è definitiva. L'uomo è stato riconosciuto colpevole di violenza sessuale aggravata, atti persecutori (lo stalking) e maltrattamenti in famiglia, reati commessi a Paduli tra il 2014 e il 2020. L'ordine di carcerazione l'ha firmato il 23 ottobre l'ufficio della Procura di Benevento che si occupa di far eseguire le pene.",
       "fonti": [
        "NTR24",
        "BeneventoNews24",
-       "Anteprima24"
-      ]
+       "Anteprima24",
+       "Ottopagine",
+       "Cronache del Sannio"
+      ],
+      "giorno": "2026-10-28"
      },
      {
       "testo": "I carabinieri lo hanno rintracciato durante i controlli della Compagnia di Benevento, che cercano anche le persone che devono andare in carcere. Dopo le pratiche in caserma è stato portato in carcere, a disposizione dei giudici.",
       "fonti": [
        "NTR24",
-       "Anteprima24"
-      ]
+       "Anteprima24",
+       "Ottopagine",
+       "Cronache del Sannio"
+      ],
+      "giorno": "2026-10-28"
      }
     ],
     "cronologia": [
@@ -103,6 +392,30 @@
       "titolo": "Condanna definitiva per violenza sessuale aggravata, maltrattamenti e stalking: 51enne in carcere",
       "url": "https://www.anteprima24.it/benevento/condanna-definitiva-per-violenza-sessuale-aggravata-maltrattamenti-e-stalking-51enne-in-carcere/",
       "data": "28 ott, 09:54"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Violenza sessuale e maltrattamenti, 51enne rumeno condannato a 10 anni di reclusione",
+      "url": "https://www.cronachedelsannio.it/sannionews24/violenza-sessuale-maltrattamenti-rumeno-condannato-carcere/",
+      "data": "28 ott, 10:04"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Deve scontare 10 anni per violenza sessuale e maltrattamenti: arrestato 51enne",
+      "url": "https://www.ottopagine.it/bn/cronaca/442383/deve-scontare-10-anni-per-violenza-sessuale-e-maltrattamenti-arrestato-51enne.shtml",
+      "data": "28 ott, 10:07"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "CONDANNA DEFINITIVA A 10 ANNI DI RECLUSIONE PER VIOLENZA SESSUALE AGGRAVATA, MALTRATTAMENTI E ATTI PERSECUTORI",
+      "url": "https://www.tvsette.net/condanna-definitiva-a-10-anni-di-reclusione-per-violenza-sessuale-aggravata-maltrattamenti-e-atti-persecutori-arrestato-dai-carabinieri/",
+      "data": "28 ott, 09:49"
+     },
+     {
+      "nome": "Il Caudino",
+      "titolo": "51enne arrestato per violenza sessuale e maltrattamenti in famiglia",
+      "url": "https://ilcaudino.it/51enne-arrestato-per-violenza-sessuale-e-maltrattamenti-in-famiglia-uid-5/",
+      "data": "28 ott, 10:17"
      }
     ]
    }
@@ -127,6 +440,14 @@
     {
      "nome": "Ottopagine",
      "url": "https://www.ottopagine.it/bn/attualita/442381/fortore-disconnesso-confederazione-imprese-italia-basta-rassegnazione.shtml"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/28/fortore-e-pre-fortore-disconnessi-confederazione-imprese-italia-basta-rassegnazione-servono-risposte-e-controlli-sulle-infrastrutture/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/fortore-e-pre-fortore-disconnessi-confederazione-imprese-italia-servono-risposte-e-controlli-sulle-infrastrutture/"
     }
    ],
    "articolo": {
@@ -135,31 +456,42 @@
       "testo": "Nel Fortore e nel pre-Fortore telefono e internet sono di nuovo interrotti: il guasto è cominciato martedì 27 ottobre in mattinata e mercoledì 28 non era ancora risolto. Tocca ampie parti del territorio e crea difficoltà a imprese, professionisti, uffici e famiglie. A denunciarlo è Confederazione Imprese Italia, l'associazione di categoria, che raccoglie le segnalazioni dei suoi iscritti.",
       "fonti": [
        "TV7 Benevento",
-       "Ottopagine"
-      ]
+       "Ottopagine",
+       "NTR24",
+       "Anteprima24"
+      ],
+      "giorno": "2026-10-28"
      },
      {
       "testo": "Secondo l'associazione non è la prima volta: le interruzioni si ripetono. Quando gli utenti chiamano l'assistenza, la risposta più frequente è che è stato «tranciato» un cavo. Il presidente nazionale, Biagio Cefalo, spiega che senza linea si bloccano i rapporti con clienti e fornitori, i pagamenti elettronici, i servizi digitali e il lavoro degli uffici, con effetti anche su banche e uffici postali.",
       "fonti": [
        "TV7 Benevento",
-       "Ottopagine"
-      ]
+       "Ottopagine",
+       "NTR24",
+       "Anteprima24"
+      ],
+      "giorno": "2026-10-28"
      },
      {
       "testo": "«Non basta comunicare che un cavo è stato tranciato», dice Cefalo: bisogna spiegare perché succede, quali zone sono toccate, quando torna il servizio e cosa si fa perché non ricapiti. L'associazione chiede alle autorità e agli enti competenti verifiche documentate su come sono stati fatti i lavori e protetta la rete: la posa dei cavi, le profondità previste dai progetti e i collaudi. Precisa di non voler dare colpe prima che siano accertate.",
       "fonti": [
        "TV7 Benevento",
-       "Ottopagine"
-      ]
+       "Ottopagine",
+       "NTR24",
+       "Anteprima24"
+      ],
+      "giorno": "2026-10-28"
      }
     ],
     "cronologia": [],
     "concordano": [
      {
-      "testo": "Il guasto cominciato martedì mattina e ancora in corso, la spiegazione del cavo tranciato e la richiesta di verifiche sulla rete.",
+      "testo": "Il guasto cominciato martedì 27 ottobre e la richiesta di controlli su posa dei cavi, profondità e collaudi.",
       "fonti": [
        "TV7 Benevento",
-       "Ottopagine"
+       "Ottopagine",
+       "NTR24",
+       "Anteprima24"
       ]
      }
     ],
@@ -180,6 +512,18 @@
       "titolo": "Fortore disconnesso. Confederazione Imprese Italia: \"Basta rassegnazione\"",
       "url": "https://www.ottopagine.it/bn/attualita/442381/fortore-disconnesso-confederazione-imprese-italia-basta-rassegnazione.shtml",
       "data": "28 ott, 09:42"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Fortore e pre-Fortore disconnessi. Confederazione Imprese Italia: «Basta rassegnazione, servono risposte e controlli sulle infrastrutture»",
+      "url": "https://www.ntr24.tv/2026/10/28/fortore-e-pre-fortore-disconnessi-confederazione-imprese-italia-basta-rassegnazione-servono-risposte-e-controlli-sulle-infrastrutture/",
+      "data": "28 ott, 10:20"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Fortore e pre-Fortore disconnessi, Confederazione Imprese Italia: “Servono risposte e controlli sulle infrastrutture”",
+      "url": "https://www.anteprima24.it/benevento/fortore-e-pre-fortore-disconnessi-confederazione-imprese-italia-servono-risposte-e-controlli-sulle-infrastrutture/",
+      "data": "28 ott, 11:03"
      }
     ]
    }
@@ -373,9 +717,9 @@
   },
   {
    "id": "san-giorgio-del-sannio-statale-7-scontro-due-auto-feriti-28-ottobre",
-   "titolo": "Calvi, scontro frontale tra due auto sulla statale 7 Appia: due feriti",
-   "titolo_google": "Incidente sulla statale 7 Appia a Calvi: due feriti",
-   "sintesi": "Mercoledì 28 ottobre, poco prima delle 8, due auto si sono scontrate frontalmente sulla statale 7 Appia nel territorio di Calvi, vicino a San Giorgio del Sannio. I due conducenti sono stati portati in ospedale; la strada è rimasta bloccata durante i soccorsi.",
+   "titolo": "Statale 7 Appia tra San Giorgio del Sannio e Calvi, frontale tra due auto: una si ribalta, due feriti al San Pio",
+   "titolo_google": "Statale 7 a San Giorgio del Sannio, frontale: due feriti",
+   "sintesi": "Mercoledì 28 ottobre verso le 7:30 due auto si sono scontrate frontalmente sulla statale 7 Appia, alle porte di San Giorgio del Sannio verso Calvi: una si è ribaltata. Un uomo di 74 anni e una donna di 48 sono stati portati al San Pio.",
    "categoria": "cronaca",
    "zona": "provincia",
    "luogo": "Calvi, statale 7 Appia",
@@ -391,23 +735,40 @@
     {
      "nome": "BeneventoNews24",
      "url": "https://www.beneventonews24.it/2026/10/28/scontro-frontale-sullappia-nel-territorio-di-san-giorgio-del-sannio-due-feriti-in-ospedale/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/frontale-statale-appia-feriti/"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/28/scontro-tra-auto-a-san-giorgio-del-sannio-due-feriti/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/sangiorgio-sannio-frontale-auto-feriti-trasportati-sanpio/"
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Mercoledì 28 ottobre, poco prima delle 8 del mattino, due auto si sono scontrate frontalmente sulla statale 7 Appia, nel territorio di Calvi, il paese accanto a San Giorgio del Sannio. I due conducenti sono rimasti feriti e sono stati portati in ospedale.",
+      "testo": "Mercoledì 28 ottobre, verso le 7:30 del mattino, due auto si sono scontrate frontalmente sulla statale 7 Appia, alle porte di San Giorgio del Sannio, nel tratto verso Calvi e il confine con l'Irpinia. Una delle due si è ribaltata. I due conducenti, un uomo di 74 anni e una donna di 48, sono rimasti feriti e il 118 li ha portati all'ospedale San Pio di Benevento.",
       "fonti": [
        "BeneventoNews24",
-       "Ottopagine"
+       "Ottopagine",
+       "Anteprima24",
+       "NTR24",
+       "Cronache del Sannio"
       ],
       "giorno": "2026-10-28"
      },
      {
-      "testo": "Le auto coinvolte sono una Toyota Aygo, guidata da un uomo, e una Lancia Musa, guidata da una donna, una pensionata: è lei ad avere avuto la peggio. I vigili del fuoco del comando provinciale di Benevento hanno aiutato i feriti a uscire dalle auto e hanno messo in sicurezza i mezzi; li hanno soccorsi i sanitari del 118.",
+      "testo": "Le auto coinvolte sono una Toyota Aygo, guidata dall'uomo, e una Lancia Musa, guidata dalla donna. I vigili del fuoco del comando provinciale di Benevento hanno aiutato i feriti a uscire dalle auto e hanno messo in sicurezza i mezzi e la zona.",
       "fonti": [
        "BeneventoNews24",
-       "Ottopagine"
+       "Ottopagine",
+       "NTR24",
+       "Cronache del Sannio"
       ],
       "giorno": "2026-10-28"
      },
@@ -415,7 +776,9 @@
       "testo": "La strada è rimasta bloccata per il tempo dei soccorsi e dei rilievi, con forti rallentamenti. I carabinieri di San Giorgio del Sannio devono ricostruire come sia andato lo scontro; la Polizia municipale di Calvi ha gestito il traffico.",
       "fonti": [
        "BeneventoNews24",
-       "Ottopagine"
+       "Ottopagine",
+       "Anteprima24",
+       "NTR24"
       ],
       "giorno": "2026-10-28"
      }
@@ -423,19 +786,24 @@
     "cronologia": [],
     "concordano": [
      {
-      "testo": "Lo scontro frontale poco prima delle 8 sulla statale 7 Appia tra una Toyota Aygo e una Lancia Musa, con i due conducenti portati in ospedale e la pensionata alla guida della Lancia la più colpita.",
+      "testo": "Lo scontro frontale tra una Toyota Aygo e una Lancia Musa sulla statale 7 e i due conducenti feriti.",
       "fonti": [
+       "Ottopagine",
        "BeneventoNews24",
-       "Ottopagine"
+       "NTR24",
+       "Cronache del Sannio"
       ]
      }
     ],
     "divergono": [
      {
-      "testo": "Ottopagine colloca l'incidente a San Giorgio del Sannio; BeneventoNews24 lo colloca nel territorio di Calvi, dove è intervenuta la Polizia municipale per il traffico. Abbiamo seguito BeneventoNews24, la versione più precisa.",
+      "testo": "Il luogo: BeneventoNews24 scrive che lo scontro è avvenuto nel territorio di Calvi; NTR24, Anteprima24 e Cronache del Sannio nel territorio di San Giorgio del Sannio, e Anteprima24 indica la zona di località Castel del Lago. L'età: Ottopagine parla di due pensionati, NTR24 e Anteprima24 di un 74enne e di una 48enne.",
       "fonti": [
+       "BeneventoNews24",
        "Ottopagine",
-       "BeneventoNews24"
+       "NTR24",
+       "Anteprima24",
+       "Cronache del Sannio"
       ]
      }
     ],
@@ -455,6 +823,24 @@
       "titolo": "Calvi| Incidente frontale sull’Appia: due feriti",
       "url": "https://www.beneventonews24.it/2026/10/28/scontro-frontale-sullappia-nel-territorio-di-san-giorgio-del-sannio-due-feriti-in-ospedale/",
       "data": "28 ott, 09:24"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Frontale tra due auto: una si ribalta, feriti un uomo e una donna",
+      "url": "https://www.anteprima24.it/benevento/frontale-statale-appia-feriti/",
+      "data": "28 ott, 10:27"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Scontro tra auto a San Giorgio del Sannio: due feriti",
+      "url": "https://www.ntr24.tv/2026/10/28/scontro-tra-auto-a-san-giorgio-del-sannio-due-feriti/",
+      "data": "28 ott, 10:32"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "San Giorgio del Sannio, frontale tra auto: due feriti trasportati al San Pio",
+      "url": "https://www.cronachedelsannio.it/sannionews24/sangiorgio-sannio-frontale-auto-feriti-trasportati-sanpio/",
+      "data": "28 ott, 10:32"
      }
     ],
     "aggiornamento": {
@@ -4177,7 +4563,7 @@
    "id": "benevento-viale-mellusi-divieto-sosta-caditoie-29-ottobre-4-novembre",
    "titolo": "Benevento, viale Mellusi: divieto di sosta per la pulizia delle caditoie il 29 e 30 ottobre e dal 2 al 4 novembre",
    "titolo_google": "Viale Mellusi Benevento, divieto di sosta 29 ottobre-4 novembre",
-   "sintesi": "A Benevento continua la pulizia straordinaria delle caditoie in viale Mellusi. Giovedì 29 e venerdì 30 ottobre e da lunedì 2 a mercoledì 4 novembre, dalle 8 alle 18, non si può parcheggiare sul lato destro tra il civico 147 e via Nicola Sala: le auto vengono rimosse, anche quelle dei residenti col permesso.",
+   "sintesi": "A Benevento da giovedì 29 ottobre riprende la pulizia straordinaria delle caditoie in viale Mellusi: sul lato destro, fino a via Nicola Sala, dalle 8 alle 18 non si può parcheggiare e le auto vengono rimosse, fino a mercoledì 4 novembre. Poi i lavori passeranno al lato sinistro e fino a piazza Risorgimento.",
    "categoria": "strade",
    "zona": "benevento",
    "luogo": "Benevento, viale Mellusi",
@@ -4192,26 +4578,74 @@
      "nome": "Comune di Benevento, albo pretorio",
      "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80116",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di Benevento",
+     "url": "https://comune.benevento.it/novita/dal-29-ottobre-viger-il-divieto-di-sosta-in-un-tratto-di-viale-mellusi/",
+     "ufficiale": true
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/28/benevento-da-giovedi-fino-al-termine-dei-lavori-divieto-di-sosta-e-fermata-in-un-tratto-di-viale-mellusi/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/interventi-pulizia-caditoie-divieto-sosta-viale-mellusi/"
     }
    ],
    "articolo": {
     "racconto": [
      {
+      "testo": "Da giovedì 29 ottobre riprende la pulizia straordinaria delle caditoie in viale Mellusi, a Benevento: era cominciata in parte la settimana scorsa e si era fermata per il maltempo. Il Comune dice che i lavori sul lato destro nel senso di marcia dovrebbero finire entro mercoledì 4 novembre; lì dalle 8 alle 18 non si può parcheggiare né fermarsi, e il divieto si sposta man mano che avanza il cantiere.",
+      "fonti": [
+       "Comune di Benevento",
+       "NTR24",
+       "Cronache del Sannio"
+      ],
+      "giorno": "2026-10-28"
+     },
+     {
+      "testo": "Poi la pulizia passerà al lato sinistro e, un pezzo alla volta, a tutto il tratto successivo, da via Nicola Sala fino a piazza Risorgimento. Per quelle fasi il Comune darà di volta in volta il calendario dei lavori.",
+      "fonti": [
+       "Comune di Benevento",
+       "NTR24"
+      ],
+      "giorno": "2026-10-28"
+     },
+     {
       "testo": "In viale Mellusi, a Benevento, continua la pulizia straordinaria delle caditoie, le griglie dove scende l'acqua piovana. Per questo nel tratto tra il civico 147 e l'incrocio con via Nicola Sala non si potrà parcheggiare né fermarsi giovedì 29 e venerdì 30 ottobre e lunedì 2, martedì 3 e mercoledì 4 novembre, dalle 8 alle 18.",
       "fonti": [
        "Comune di Benevento, albo pretorio"
-      ]
+      ],
+      "giorno": "2026-10-26"
      },
      {
       "testo": "Il divieto vale solo per i posti sul lato destro nel senso di marcia. Le auto lasciate lì vengono rimosse dal carro attrezzi, anche quelle dei residenti con il permesso di parcheggio e delle altre persone autorizzate. Lo ha deciso il Servizio Traffico del Comune con un'ordinanza del 26 ottobre.",
       "fonti": [
        "Comune di Benevento, albo pretorio"
-      ]
+      ],
+      "giorno": "2026-10-26"
      }
     ],
     "cronologia": [],
-    "concordano": [],
-    "divergono": [],
+    "concordano": [
+     {
+      "testo": "Il divieto dalle 8 alle 18 sul lato destro e la fine prevista per mercoledì 4 novembre.",
+      "fonti": [
+       "Comune di Benevento, albo pretorio",
+       "Comune di Benevento"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "Il tratto: l'ordinanza dell'albo parla del tratto tra il civico 147 e via Nicola Sala, il comunicato del Comune del 28 ottobre del tratto tra via Piranesi e via Nicola Sala. L'ordinanza elenca i giorni 29 e 30 ottobre e dal 2 al 4 novembre; il comunicato dice da giovedì 29 ottobre fino alla fine dei lavori, prevista entro il 4 novembre.",
+      "fonti": [
+       "Comune di Benevento, albo pretorio",
+       "Comune di Benevento"
+      ]
+     }
+    ],
     "non_si_sa": [],
     "fonti": [
      {
@@ -4220,8 +4654,34 @@
       "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80116",
       "data": "26 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "Comune di Benevento",
+      "titolo": "Dal 29 ottobre vigerà il divieto di sosta in un tratto di viale Mellusi",
+      "url": "https://comune.benevento.it/novita/dal-29-ottobre-viger-il-divieto-di-sosta-in-un-tratto-di-viale-mellusi/",
+      "data": "28 ott, 10:53",
+      "ufficiale": true
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Benevento, da giovedì fino al termine dei lavori divieto di sosta e fermata in un tratto di viale Mellusi",
+      "url": "https://www.ntr24.tv/2026/10/28/benevento-da-giovedi-fino-al-termine-dei-lavori-divieto-di-sosta-e-fermata-in-un-tratto-di-viale-mellusi/",
+      "data": "28 ott, 10:57"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Interventi di pulizia delle caditoie, divieto di sosta in un tratto del viale Mellusi",
+      "url": "https://www.cronachedelsannio.it/sannionews24/interventi-pulizia-caditoie-divieto-sosta-viale-mellusi/",
+      "data": "28 ott, 11:05"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Il Comune annuncia che, finito il lato destro entro mercoledì 4 novembre, la pulizia delle caditoie proseguirà sul lato sinistro e fino a piazza Risorgimento, con nuovi calendari.",
+     "fonti": [
+      "Comune di Benevento"
+     ],
+     "quando": "2026-10-28T11:18+01:00"
+    }
    },
    "immagine": "divieto-sosta",
    "foto": "divieto-sosta-5",
@@ -14592,7 +15052,7 @@
    "titolo_google": "Sfiducia a Mastella a Benevento: a che punto è la mozione",
    "sommario": "Il 22 ottobre l'opposizione del Consiglio comunale di Benevento ha presentato una mozione di sfiducia contro il sindaco Clemente Mastella e la Giunta, con un dossier di 24 punti che parte dall'inchiesta giudiziaria sul Comune. Domenica 25 ha sfilato in corteo fino alla Prefettura. Il sindaco dice che non si dimette e la maggioranza parla di poche centinaia di persone in piazza. La data del voto in Consiglio non è ancora stata fissata.",
    "luogo": "Benevento",
-   "aggiornato": "2026-10-28T08:30:00+01:00",
+   "aggiornato": "2026-10-28T11:40:00+01:00",
    "collegate": [
     "benevento-opposizione-mozione-sfiducia-mastella"
    ],
@@ -14610,10 +15070,11 @@
      ]
     },
     {
-     "testo": "Domenica 25 ottobre l'opposizione ha sfilato lungo corso Garibaldi fino alla Prefettura. La maggioranza risponde che in piazza c'erano al massimo duecento persone.",
+     "testo": "Domenica 25 ottobre l'opposizione ha sfilato lungo corso Garibaldi fino alla Prefettura. La maggioranza risponde che in piazza c'erano al massimo duecento persone; per Noi di Centro, il 28, «alcune decine» di militanti.",
      "fonti": [
       "Ottopagine (25/10)",
-      "Ottopagine (26/10)"
+      "Ottopagine (26/10)",
+      "Ottopagine (28/10, NdC)"
      ]
     },
     {
@@ -14691,6 +15152,13 @@
        "testo": "Lunedì 26 i consiglieri di maggioranza, in una nota comune, hanno definito il corteo «poco più di una riunione di condominio», con al massimo un paio di centinaia di persone, e hanno ringraziato i consiglieri di minoranza che non hanno partecipato.",
        "fonti": [
         "Ottopagine (26/10)"
+       ]
+      },
+      {
+       "testo": "Mercoledì 28 i coordinamenti provinciale e cittadino di Noi di Centro sono tornati sul corteo: secondo loro in piazza c'erano «alcune decine di militanti e simpatizzanti già noti», e l'opposizione resta «minoranza politica e numerica». Dicono che non riconosceranno più «nessuna interlocuzione politica» a chi ha manifestato, che non faranno polemiche e che parleranno «gli atti, i fatti e i risultati amministrativi»; porranno invece, nelle sedi del partito, la questione delle alleanze in vista del voto.",
+       "fonti": [
+        "Ottopagine (28/10, NdC)",
+        "NTR24 (28/10, NdC)"
        ]
       }
      ]
@@ -14779,6 +15247,14 @@
      "fonti": [
       "Lab TV (27/10)"
      ]
+    },
+    {
+     "data": "28 ottobre",
+     "fatto": "Noi di Centro: la piazza dell'opposizione è stata uno «sparuto sit-in», niente più polemiche né dialogo con chi ha manifestato",
+     "fonti": [
+      "Ottopagine (28/10, NdC)",
+      "NTR24 (28/10, NdC)"
+     ]
     }
    ],
    "non_si_sa": [
@@ -14827,6 +15303,18 @@
      "titolo": "Richiesta dimissioni Mastella, Basile: manifestazioni autoreferenziali di apparato",
      "url": "https://www.labtv.net/attualita/2026/10/27/richiesta-dimissioni-mastella-basile-manifestazioni-autoreferenziali-di-apparato/",
      "data": "27 ott"
+    },
+    {
+     "nome": "Ottopagine (28/10, NdC)",
+     "titolo": "Noi di Centro: \"Game over per chi ha fallito la prova della piazza, noi avanti\"",
+     "url": "https://www.ottopagine.it/bn/politica/442387/noi-di-centro-game-over-per-chi-ha-fallito-la-prova-della-piazza-noi-avanti.shtml",
+     "data": "28 ott, 10:43"
+    },
+    {
+     "nome": "NTR24 (28/10, NdC)",
+     "titolo": "Noi di Centro: “Game over per chi ha fallito la prova della piazza, noi avanti con fatti e atti. Ci asterremo da polemiche e repliche inutili”",
+     "url": "https://www.ntr24.tv/2026/10/28/noi-di-centro-game-over-per-chi-ha-fallito-la-prova-della-piazza-noi-avanti-con-fatti-e-atti-ci-asterremo-da-polemiche-e-repliche-inutili/",
+     "data": "28 ott, 10:52"
     }
    ]
   },
