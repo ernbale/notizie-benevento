@@ -1,0 +1,14 @@
+# Prova temporanea (28 ott 2026): il catalogo degli incentivi del Ministero risponde ai server di GitHub? Da togliere.
+name: Prova catalogo contributi
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  prova:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Collegamento a incentivi.gov.it
+        run: |
+          curl -s --max-time 60 -G "https://www.incentivi.gov.it/solr/coredrupal/select" --data-urlencode 'q=index_id:incentivi' --data-urlencode 'wt=json' --data-urlencode 'rows=1' -o out.json -w "HTTP %{http_code} in %{time_total}s\n" || echo "collegamento fallito"
+          head -c 200 out.json || true
