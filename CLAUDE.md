@@ -29,7 +29,7 @@ claude.ai/code dal telefono): qui c'è quello che serve per riprendere il lavoro
   Facebook, Instagram. Ci mette circa 2 minuti.
 
 ## Il menu del sito (deciso con lui il 28 ott 2026)
-Tutte · Cronaca · Politica · Sport · Calcio · (Allerte, solo con un'allerta) · Avvisi · Agevolazioni · Eventi · Cultura · Altro · zona · Comuni
+Tutte · Cronaca · Politica · Sport · Calcio · (Allerte, solo con un'allerta) · Avvisi · Eventi · Cultura · Agevolazioni · Altro · zona · Comuni
 (lui: «Allerte e Avvisi spostale dopo calcio», «la pagina cultura mettila dopo eventi»); sul computer su una riga sola (da 960 px).
 Archivio e ricerca non stanno nel menu ma nella testata, a destra del titolo (sotto i 960 px sotto il titolo, la
 casella larga): lui voleva «liberare spazio» nel menu (28 ott 2026); la testata c'è su tutte le pagine, sopra il
