@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-28T11:18+01:00",
+ "aggiornato": "2026-10-28T12:12+01:00",
  "giornali_letti": 14,
  "notizie": [
   {
@@ -10,13 +10,17 @@
    "categoria": "cronaca",
    "luogo": "Benevento",
    "pubblicato": "2026-10-28T10:59+01:00",
-   "stato": "una_fonte",
+   "stato": "confermata",
    "rilevante": false,
    "importanza": 4,
    "fonti": [
     {
      "nome": "Ottopagine",
      "url": "https://www.ottopagine.it/bn/cronaca/442392/inchiesta-santamaria-la-consulenza-su-telefonini-ipad-e-pc-sara-disposta-da-pm.shtml"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/inchiesta-comune-di-benevento-dalle-dichiarazioni-di-santamaria-ai-telefoni-sequestrati-le-prossime-tappe/"
     }
    ],
    "articolo": {
@@ -24,30 +28,44 @@
      {
       "testo": "Nell'inchiesta sul Comune di Benevento la gip Maria Amoruso ha detto no alla richiesta di incidente probatorio presentata da un avvocato della difesa: chiedeva che la copia completa dei dati di cellulari, iPad, computer e tablet di sedici indagati la facesse un perito scelto dal giudice. Così sarà la pm Maria Colucci, mercoledì 4 novembre in Procura, a dare l'incarico a un consulente tecnico suo.",
       "fonti": [
-       "Ottopagine"
-      ]
+       "Ottopagine",
+       "Anteprima24"
+      ],
+      "giorno": "2026-10-28"
      },
      {
       "testo": "L'incarico doveva essere affidato già l'8 ottobre, ma l'udienza era saltata proprio perché la difesa aveva annunciato questa richiesta. L'incidente probatorio è la fase in cui si raccolgono prove prima del processo, con le difese presenti.",
       "fonti": [
        "Ottopagine"
-      ]
+      ],
+      "giorno": "2026-10-28"
      },
      {
       "testo": "Gli indagati sono diciannove; la posizione di un ventesimo è stata stralciata per motivi di salute. L'inchiesta dei carabinieri era cominciata il 30 marzo con l'arresto di un ex dirigente comunale, in libertà dal 28 settembre, per una presunta concussione ai danni di un geometra: secondo l'accusa gli avrebbe chiesto 70mila euro per sbloccare alcune pratiche edilizie. Le ipotesi di reato vanno, a vario titolo, dalla concussione alla corruzione, dalla ricettazione alla violazione della legge sul finanziamento ai partiti.",
       "fonti": [
        "Ottopagine"
-      ]
+      ],
+      "giorno": "2026-10-28"
      },
      {
       "testo": "Resta fissato a partire dal 3 novembre, davanti alla stessa gip, l'incidente probatorio sulle dichiarazioni dell'ex dirigente, quelle su di sé e quelle sugli altri, con le domande delle difese.",
       "fonti": [
-       "Ottopagine"
-      ]
+       "Ottopagine",
+       "Anteprima24"
+      ],
+      "giorno": "2026-10-28"
      }
     ],
     "cronologia": [],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "Il 3 novembre comincia davanti alla gip l'incidente probatorio sulle dichiarazioni dell'ex dirigente; il 4 novembre la pm affida a un suo consulente la copia dei dati dei dispositivi sequestrati a sedici indagati, dopo il no della gip alla richiesta di un perito del giudice.",
+      "fonti": [
+       "Ottopagine",
+       "Anteprima24"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [
      "Quanto tempo servirà al consulente per copiare e analizzare i dati."
@@ -58,6 +76,12 @@
       "titolo": "Inchiesta [nome omesso], la consulenza su telefonini, Ipad e pc sarà disposta da Pm",
       "url": "https://www.ottopagine.it/bn/cronaca/442392/inchiesta-santamaria-la-consulenza-su-telefonini-ipad-e-pc-sara-disposta-da-pm.shtml",
       "data": "28 ott, 10:59"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Inchiesta Comune di Benevento, dalle dichiarazioni di [nome omesso] ai telefoni sequestrati: le prossime tappe",
+      "url": "https://www.anteprima24.it/benevento/inchiesta-comune-di-benevento-dalle-dichiarazioni-di-santamaria-ai-telefoni-sequestrati-le-prossime-tappe/",
+      "data": "28 ott, 11:16"
      }
     ]
    },
@@ -1021,12 +1045,12 @@
   },
   {
    "id": "benevento-piazza-castello-4-novembre-traffico-sosta-forze-armate",
-   "titolo": "Benevento, mercoledì 4 novembre limiti al traffico e alla sosta intorno a piazza Castello per la Giornata delle Forze armate",
-   "titolo_google": "Benevento, 4 novembre: traffico limitato a piazza Castello",
-   "sintesi": "Mercoledì 4 novembre, dalle 7 fino alla fine delle celebrazioni, a Benevento ci saranno limiti al traffico e alla sosta nelle strade intorno al monumento ai Caduti di piazza Castello, per la Giornata dell'Unità nazionale e delle Forze armate. Lo prevede un'ordinanza del Servizio Traffico del Comune.",
+   "titolo": "Benevento, mercoledì 4 novembre chiuse piazza Castello, piazza IV Novembre e via del Sole per la Giornata delle Forze armate",
+   "titolo_google": "Benevento 4 novembre: chiuse piazza Castello e via del Sole",
+   "sintesi": "Mercoledì 4 novembre, dalle 7 alla fine della cerimonia al monumento ai Caduti, a Benevento sono chiuse al traffico piazza Castello, piazza IV Novembre, un tratto di viale degli Atlantici e via del Sole, con divieto di sosta anche per i residenti. In viale dei Rettori c'è il senso unico tra via Perasso e via Pertini.",
    "categoria": "strade",
    "luogo": "Benevento, piazza Castello",
-   "pubblicato": "2026-10-28",
+   "pubblicato": "2026-10-28T11:17+01:00",
    "stato": "ufficiale",
    "rilevante": false,
    "importanza": 3,
@@ -1038,21 +1062,35 @@
      "nome": "Comune di Benevento, albo pretorio",
      "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80173",
      "ufficiale": true
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/28/festa-delle-forze-armate-a-benevento-ecco-il-piano-traffico-divieti-e-strade-chiuse-il-4-novembre/"
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Mercoledì 4 novembre, in mattinata, a Benevento ci saranno limiti al traffico e alla sosta nelle strade intorno al monumento ai Caduti di piazza Castello. Valgono dalle 7 fino alla fine delle celebrazioni per la Giornata dell'Unità nazionale e delle Forze armate. Li ha decisi il Servizio Traffico del Comune con l'ordinanza numero 450 del 26 ottobre.",
+      "testo": "Mercoledì 4 novembre, per la cerimonia della Giornata dell'Unità nazionale e delle Forze armate al monumento ai Caduti di piazza Castello, a Benevento si chiudono al traffico piazza Castello, piazza IV Novembre, viale degli Atlantici tra piazza IV Novembre e via XXIV Maggio e tutta via del Sole, a partire dall'incrocio con via delle Puglie. Le misure valgono dalle 7 fino alla fine delle celebrazioni, previste più o meno tra le 9 e le 12. Lo ha deciso il Servizio Traffico del Comune con l'ordinanza numero 450.",
       "fonti": [
-       "Comune di Benevento, albo pretorio"
-      ]
+       "Comune di Benevento, albo pretorio",
+       "NTR24"
+      ],
+      "giorno": "2026-10-28"
      },
      {
-      "testo": "Piazza Castello è la piazza della Rocca dei Rettori, all'inizio di corso Garibaldi: chi deve passare o parcheggiare in zona quella mattina farà bene a organizzarsi prima. L'ordinanza è pubblicata nell'albo pretorio del Comune.",
+      "testo": "Nelle stesse strade non si può parcheggiare né fermarsi, su tutti e due i lati, e le auto vengono rimosse: il divieto vale anche per i residenti. Possono passare solo i mezzi delle autorità presenti alla cerimonia e quelli autorizzati per la manifestazione, oltre a polizia, vigili del fuoco e soccorsi.",
       "fonti": [
-       "Comune di Benevento, albo pretorio"
-      ]
+       "NTR24"
+      ],
+      "giorno": "2026-10-28"
+     },
+     {
+      "testo": "In viale dei Rettori ci sarà il senso unico tra l'incrocio con via Perasso e quello con via Pertini: chi esce da via Perasso deve girare a destra verso l'Arco di Traiano e via Pertini, chi esce da via Mario La Vipera a sinistra verso via Pertini e l'Arco di Traiano, e chi arriva dal lato dell'Arco di Traiano deve salire verso via Pertini e via Calandra. La Polizia Municipale può mettere altri sbarramenti e deviazioni se serve.",
+      "fonti": [
+       "NTR24"
+      ],
+      "giorno": "2026-10-28"
      }
     ],
     "cronologia": [],
@@ -1068,11 +1106,26 @@
       "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80173",
       "data": "28 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Festa delle Forze Armate a Benevento, ecco il piano traffico: divieti e strade chiuse il 4 novembre",
+      "url": "https://www.ntr24.tv/2026/10/28/festa-delle-forze-armate-a-benevento-ecco-il-piano-traffico-divieti-e-strade-chiuse-il-4-novembre/",
+      "data": "28 ott, 11:17"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "L'ordinanza chiude al traffico il 4 novembre piazza Castello, piazza IV Novembre, un tratto di viale degli Atlantici e via del Sole, e mette il senso unico in un tratto di viale dei Rettori.",
+     "fonti": [
+      "NTR24"
+     ],
+     "quando": "2026-10-28T12:12+01:00",
+     "titolo_prima": "Benevento, mercoledì 4 novembre limiti al traffico e alla sosta intorno a piazza Castello per la Giornata delle Forze armate"
+    }
    },
    "zona": "benevento",
-   "foto": "divieto-sosta-9"
+   "foto": "divieto-sosta-9",
+   "traffico": "chiusa"
   },
   {
    "id": "benevento-nicola-sguera-premio-agrorinasce-corpo-a-rendere",
@@ -4591,6 +4644,18 @@
     {
      "nome": "Cronache del Sannio",
      "url": "https://www.cronachedelsannio.it/sannionews24/interventi-pulizia-caditoie-divieto-sosta-viale-mellusi/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/442394/dal-29-ottobre-vigera-il-divieto-di-sosta-in-un-tratto-di-viale-mellusi.shtml"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/camera-di-commercio/2026/dal-29-ottobre-vigera-il-divieto-di-sosta-in-un-tratto-di-viale-mellusi.html"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/il-tratto-di-viale-mellusi-compreso-tra-lincrocio-con-piranesi-e-lincrocio-con-nicola-sala-sara"
     }
    ],
    "articolo": {
@@ -4600,7 +4665,9 @@
       "fonti": [
        "Comune di Benevento",
        "NTR24",
-       "Cronache del Sannio"
+       "Cronache del Sannio",
+       "Ottopagine",
+       "InfoSannio"
       ],
       "giorno": "2026-10-28"
      },
@@ -4673,6 +4740,24 @@
       "titolo": "Interventi di pulizia delle caditoie, divieto di sosta in un tratto del viale Mellusi",
       "url": "https://www.cronachedelsannio.it/sannionews24/interventi-pulizia-caditoie-divieto-sosta-viale-mellusi/",
       "data": "28 ott, 11:05"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Dal 29 ottobre vigerà il divieto di sosta in un tratto di viale Mellusi",
+      "url": "https://www.ottopagine.it/bn/attualita/442394/dal-29-ottobre-vigera-il-divieto-di-sosta-in-un-tratto-di-viale-mellusi.shtml",
+      "data": "28 ott, 11:11"
+     },
+     {
+      "nome": "InfoSannio",
+      "titolo": "Dal 29 ottobre vigerà il divieto di sosta in un tratto di viale Mellusi",
+      "url": "https://www.infosannionews.it/camera-di-commercio/2026/dal-29-ottobre-vigera-il-divieto-di-sosta-in-un-tratto-di-viale-mellusi.html",
+      "data": "28 ott, 11:42"
+     },
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "Il tratto di viale Mellusi compreso tra l'incrocio con via Piranesi e l'incrocio con via Nicola Sala sarà nuovamente interessato dalla pulizia delle caditoie",
+      "url": "https://www.gazzettabenevento.it/it/il-tratto-di-viale-mellusi-compreso-tra-lincrocio-con-piranesi-e-lincrocio-con-nicola-sala-sara",
+      "data": "28 ott, 10:54"
      }
     ],
     "aggiornamento": {
@@ -7271,12 +7356,12 @@
   },
   {
    "id": "buonalbergo-carta-dedicata-a-te-lista-beneficiari-2026",
-   "titolo": "Carta Dedicata a te, pubblicati gli elenchi dei beneficiari in sei Comuni del Sannio: prima ricarica dal 4 novembre",
-   "titolo_google": "Carta Dedicata a te 2026: beneficiari in sei Comuni del Sannio",
-   "sintesi": "Buonalbergo, Montesarchio, Sant'Angelo a Cupolo, Pago Veiano, Castelpagano e Arpaise hanno pubblicato gli elenchi delle famiglie che ricevono la «Carta Dedicata a te», 500 euro all'anno per la spesa. La prima ricarica arriva dal 4 novembre e il primo acquisto va fatto entro il 16 dicembre.",
+   "titolo": "Carta Dedicata a te, pubblicati gli elenchi dei beneficiari in sette Comuni del Sannio: prima ricarica dal 4 novembre",
+   "titolo_google": "Carta Dedicata a te 2026: beneficiari in sette Comuni del Sannio",
+   "sintesi": "Buonalbergo, Montesarchio, Sant'Angelo a Cupolo, Pago Veiano, Castelpagano, Arpaise e Morcone hanno pubblicato gli elenchi delle famiglie che ricevono la «Carta Dedicata a te», 500 euro all'anno per la spesa. La prima ricarica arriva dal 4 novembre e il primo acquisto va fatto entro il 16 dicembre.",
    "categoria": "avvisi",
    "zona": "provincia",
-   "luogo": "Buonalbergo, Montesarchio, Sant'Angelo a Cupolo, Pago Veiano, Castelpagano e Arpaise",
+   "luogo": "Buonalbergo, Montesarchio, Sant'Angelo a Cupolo, Pago Veiano, Castelpagano, Arpaise e Morcone",
    "pubblicato": "2026-10-26",
    "stato": "ufficiale",
    "rilevante": false,
@@ -7310,10 +7395,22 @@
      "nome": "Comune di Arpaise",
      "url": "https://comune.arpaise.bn.it/albo-pretorio/?dettaglio_id=306275",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di Morcone",
+     "url": "https://comune.morcone.bn.it/novita/carta-dedicata-a-te-2026-2027-pubblicato-lelenco-dei-beneficiari/",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Mercoledì 28 ottobre l'elenco dei beneficiari l'ha pubblicato anche il Comune di Morcone, all'albo pretorio e in Amministrazione trasparente: le famiglie si riconoscono dal protocollo dell'attestazione ISEE. Chi riceve la carta per la prima volta la ritira in un qualsiasi ufficio postale con il codice della pratica scritto nell'elenco, il codice fiscale e un documento; chi era già confermato riceve i soldi sulla carta che ha.",
+      "fonti": [
+       "Comune di Morcone"
+      ],
+      "giorno": "2026-10-28"
+     },
      {
       "testo": "Martedì 27 ottobre gli elenchi dei beneficiari li hanno pubblicati anche Castelpagano e Arpaise. Ad Arpaise le famiglie nell'elenco sono 24: i nuovi beneficiari possono ritirare la carta in un qualsiasi ufficio postale dal 4 novembre, con il codice arrivato per raccomandata, un documento d'identità e il codice fiscale o la tessera sanitaria. Chi l'aveva già negli anni scorsi riceve i soldi sulla stessa carta; si può usare in tutti i negozi che vendono alimentari.",
       "fonti": [
@@ -7417,6 +7514,13 @@
       ]
      },
      {
+      "data": "28 ottobre",
+      "fatto": "Anche Morcone pubblica l'elenco dei beneficiari.",
+      "fonti": [
+       "Comune di Morcone"
+      ]
+     },
+     {
       "data": "4 novembre",
       "fatto": "Prima ricarica di 500 euro sulle carte.",
       "fonti": [
@@ -7431,7 +7535,8 @@
        "Comune di Montesarchio",
        "Comune di Sant'Angelo a Cupolo",
        "Comune di Castelpagano",
-       "Comune di Arpaise"
+       "Comune di Arpaise",
+       "Comune di Morcone"
       ]
      }
     ],
@@ -7488,15 +7593,22 @@
       "url": "https://comune.arpaise.bn.it/novita/carta-dedicata-a-te-anno-2026-elenco-beneficiari/",
       "data": "27 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "Comune di Morcone",
+      "titolo": "Carta dedicata a te 2026 – 2027. Pubblicato l’elenco dei beneficiari",
+      "url": "https://comune.morcone.bn.it/novita/carta-dedicata-a-te-2026-2027-pubblicato-lelenco-dei-beneficiari/",
+      "data": "28 ott",
+      "ufficiale": true
      }
     ],
     "aggiornamento": {
-     "testo": "Martedì 27 ottobre anche Pago Veiano ha pubblicato l'avviso e la graduatoria dei beneficiari della Carta Dedicata a te.",
+     "testo": "Mercoledì 28 ottobre anche Morcone ha pubblicato l'elenco dei beneficiari della Carta Dedicata a te.",
      "fonti": [
-      "Comune di Pago Veiano"
+      "Comune di Morcone"
      ],
-     "quando": "2026-10-27T13:14+01:00",
-     "titolo_prima": "Buonalbergo, pubblicata la lista dei beneficiari della «Carta Dedicata a te»"
+     "quando": "2026-10-28T12:12+01:00",
+     "titolo_prima": "Carta Dedicata a te, pubblicati gli elenchi dei beneficiari in sei Comuni del Sannio: prima ricarica dal 4 novembre"
     }
    },
    "immagine": "documenti",
@@ -7632,12 +7744,12 @@
   },
   {
    "id": "castelpoto-santa-croce-del-sannio-elenco-elettori-fuori-sede",
-   "titolo": "Elettori fuori sede, sedici Comuni del Sannio hanno aperto l'elenco: domande entro il 31 dicembre",
-   "titolo_google": "Elettori fuori sede in 16 Comuni del Sannio: come fare",
-   "sintesi": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni, Limatola, Torrecuso, San Lorenzello e Montesarchio hanno aperto l'elenco degli elettori fuori sede previsto dalla nuova legge elettorale: chi per studio, lavoro o cure vive in una regione diversa da quella in cui vota può chiedere di votare dove abita. Per studio e lavoro la domanda va fatta entro il 31 dicembre, per le votazioni dell'anno dopo.",
+   "titolo": "Elettori fuori sede, diciannove Comuni del Sannio hanno aperto l'elenco: domande entro il 31 dicembre",
+   "titolo_google": "Elettori fuori sede in 19 Comuni del Sannio: come fare",
+   "sintesi": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni, Limatola, Torrecuso, San Lorenzello, Montesarchio, San Marco dei Cavoti, Ponte e Paupisi hanno aperto l'elenco degli elettori fuori sede previsto dalla nuova legge elettorale: chi per studio, lavoro o cure vive in una regione diversa da quella in cui vota può chiedere di votare dove abita. Per studio e lavoro la domanda va fatta entro il 31 dicembre, per le votazioni dell'anno dopo.",
    "categoria": "avvisi",
    "zona": "provincia",
-   "luogo": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni, Limatola, Torrecuso, San Lorenzello e Montesarchio",
+   "luogo": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni, Limatola, Torrecuso, San Lorenzello, Montesarchio, San Marco dei Cavoti, Ponte e Paupisi",
    "immagine": "elezioni",
    "pubblicato": "2026-10-27",
    "stato": "ufficiale",
@@ -7722,12 +7834,37 @@
      "nome": "Comune di Montesarchio",
      "url": "https://www.comune.montesarchio.bn.it/it/novita/page/istituzione-dell-elenco-comunale-degli-elettori-fuori-sede",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di San Marco dei Cavoti",
+     "url": "https://www.comune.sanmarcodeicavoti.bn.it/novita/istituzione-dellelenco-comunale-degli-elettori-fuori-sede/",
+     "ufficiale": true
+    },
+    {
+     "nome": "Comune di Ponte",
+     "url": "https://ponte.halleyweb.it/c062053/mc/mc_p_dettaglio.php?id_pubbl=13387",
+     "ufficiale": true
+    },
+    {
+     "nome": "Comune di Paupisi",
+     "url": "https://paupisi.halleyweb.it/c062049/mc/mc_p_dettaglio.php?id_pubbl=7674",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Sedici Comuni del Sannio, da Castelpoto a Montesarchio, hanno aperto l'elenco comunale degli elettori fuori sede. Lo prevede la legge 180 del 9 ottobre 2026 sulle elezioni di Camera e Senato: chi vive per un periodo in una regione diversa da quella del Comune dove è iscritto per votare può chiedere di votare nel Comune dove abita. Vale per le elezioni politiche ed europee e per i referendum, non per le elezioni comunali e regionali.",
+      "testo": "Mercoledì 28 ottobre l'avviso è arrivato anche a San Marco dei Cavoti, Ponte e Paupisi, con il modello di domanda: i Comuni del Sannio che hanno aperto l'elenco sono diciannove. A Ponte e a Paupisi la domanda si consegna all'ufficio elettorale del Comune oppure si manda per PEC o per email: anagrafe@pec.comune.ponte.bn.it o anagrafe@comune.ponte.bn.it a Ponte, anagrafe@pec.comune.paupisi.bn.it o anagrafe@comune.paupisi.bn.it a Paupisi. Va scritto l'indirizzo completo del domicilio temporaneo.",
+      "fonti": [
+       "Comune di San Marco dei Cavoti",
+       "Comune di Ponte",
+       "Comune di Paupisi",
+       "Comune di Paupisi (novità)"
+      ],
+      "giorno": "2026-10-28"
+     },
+     {
+      "testo": "Molti Comuni del Sannio, da Castelpoto a Montesarchio, hanno aperto l'elenco comunale degli elettori fuori sede. Lo prevede la legge 180 del 9 ottobre 2026 sulle elezioni di Camera e Senato: chi vive per un periodo in una regione diversa da quella del Comune dove è iscritto per votare può chiedere di votare nel Comune dove abita. Vale per le elezioni politiche ed europee e per i referendum, non per le elezioni comunali e regionali.",
       "fonti": [
        "Comune di Castelpoto",
        "Comune di Santa Croce del Sannio",
@@ -7963,15 +8100,45 @@
       "url": "https://www.comune.montesarchio.bn.it/it/novita/page/istituzione-dell-elenco-comunale-degli-elettori-fuori-sede",
       "data": "27 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "Comune di San Marco dei Cavoti",
+      "titolo": "Istituzione dell’elenco comunale degli elettori fuori sede",
+      "url": "https://www.comune.sanmarcodeicavoti.bn.it/novita/istituzione-dellelenco-comunale-degli-elettori-fuori-sede/",
+      "data": "28 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "Comune di Ponte",
+      "titolo": "ISTITUZIONE DELL'ELENCO COMUNALE DEGLI ELETTORI FUORI SEDE",
+      "url": "https://ponte.halleyweb.it/c062053/mc/mc_p_dettaglio.php?id_pubbl=13387",
+      "data": "28 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "Comune di Paupisi",
+      "titolo": "ISTITUZIONE DELL'ELENCO COMUNALE DEGLI ELETTORI FUORI SEDE. ESERCIZIO DEL DIRITTO DI VOTO NEL COMUNE DI TEMPORANEO DOMICILIO IN OCCASIONE DELLE ELEZIONI POLITICHE, EUROPEE E DEI REFERENDUM - Legge 9 ottobre 2026, n. 180 - Articolo 8.",
+      "url": "https://paupisi.halleyweb.it/c062049/mc/mc_p_dettaglio.php?id_pubbl=7674",
+      "data": "28 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "Comune di Paupisi (novità)",
+      "titolo": "VOTO FUORI SEDE",
+      "url": "https://www.comune.paupisi.bn.it/novita/avvisi/novita_87.html",
+      "data": "28 ott",
+      "ufficiale": true
      }
     ],
     "aggiornamento": {
-     "testo": "Martedì 27 ottobre anche Limatola ha pubblicato l'avviso sul voto fuori sede: i Comuni del Sannio che hanno aperto l'elenco sono tredici.",
+     "testo": "Mercoledì 28 ottobre hanno aperto l'elenco degli elettori fuori sede anche San Marco dei Cavoti, Ponte e Paupisi: i Comuni del Sannio sono diciannove.",
      "fonti": [
-      "Comune di Limatola"
+      "Comune di San Marco dei Cavoti",
+      "Comune di Ponte",
+      "Comune di Paupisi"
      ],
-     "quando": "2026-10-27T13:14+01:00",
-     "titolo_prima": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta e Pesco Sannita, aperto l'elenco degli elettori fuori sede: domande entro il 31 dicembre"
+     "quando": "2026-10-28T12:12+01:00",
+     "titolo_prima": "Elettori fuori sede, sedici Comuni del Sannio hanno aperto l'elenco: domande entro il 31 dicembre"
     }
    },
    "foto": "elezioni-3",
@@ -11940,9 +12107,9 @@
   },
   {
    "id": "benevento-cimitero-traffico-31-ottobre-2-novembre",
-   "titolo": "Benevento, 31 ottobre, 1 e 2 novembre chiusa via Cimitero e divieti di sosta attorno al cimitero: navette dal centro",
+   "titolo": "Benevento, 31 ottobre, 1 e 2 novembre chiuse via Cimitero e via San Marco e divieti di sosta attorno al cimitero: navette dal centro",
    "titolo_google": "Benevento, cimitero: strade chiuse e navette dal 31 ottobre",
-   "sintesi": "Per Ognissanti e la Commemorazione dei defunti il Comune di Benevento chiude via Cimitero e un tratto di via Fontana Margiacca sabato 31 ottobre, domenica 1 e lunedì 2 novembre, dalle 7 alle 18.30. Ci sono divieti di sosta con rimozione e navette dal centro. Domenica 1 novembre dalle 14:15 il traffico si ferma anche lungo la processione di Ognissanti.",
+   "sintesi": "Per Ognissanti e la Commemorazione dei defunti il Comune di Benevento chiude via Cimitero, via San Marco e un tratto di via Fontana Margiacca sabato 31 ottobre, domenica 1 e lunedì 2 novembre, dalle 7 alle 18.30. Ci sono divieti di sosta con rimozione e navette AIR dal centro. Domenica 1 novembre il traffico si ferma anche lungo la processione di Ognissanti.",
    "categoria": "strade",
    "zona": "benevento",
    "immagine": "cimitero",
@@ -11967,10 +12134,49 @@
      "nome": "Albo pretorio Benevento (processione)",
      "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80105",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di Benevento",
+     "url": "https://comune.benevento.it/novita/varato-il-piano-traffico-per-le-ricorrenze-di-ognissanti-e-della-commemorazione-dei-defunti/",
+     "ufficiale": true
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/442395/varato-piano-traffico-per-le-ricorrenze-di-ognissanti-e-commemorazione-defunti.shtml"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/varato-il-piano-traffico-per-le-ricorrenze-di-ognissanti-e-della-commemorazione-dei-defunti/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/piano-traffico-ognissanti-defunti/"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/attualita/2026/varato-il-piano-traffico-per-le-ricorrenze-di-ognissanti-e-della-commemorazione-dei-defunti.html"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Il Comune di Benevento ha ricordato mercoledì 28 ottobre le regole per andare al cimitero sabato 31 ottobre, domenica 1 e lunedì 2 novembre, dalle 7 alle 18.30. Sono chiuse al traffico via Cimitero, via San Marco e via Fontana Margiacca dall'incrocio con via dei Dauni: possono passare solo i residenti, le persone con disabilità e chi ha un permesso del Servizio Traffico o degli agenti ai punti di chiusura. Divieti di sosta su tutti e due i lati in alcuni tratti di via Ponticelli e via San Pasquale e in viale dei Rettori vicino all'Arco di Traiano.",
+      "fonti": [
+       "Comune di Benevento",
+       "Ottopagine",
+       "Anteprima24",
+       "Cronache del Sannio",
+       "InfoSannio"
+      ],
+      "giorno": "2026-10-28"
+     },
+     {
+      "testo": "Come ogni anno tra il centro e il cimitero ci sono le navette di AIR Campania, l'azienda dei bus, con capolinea in piazza Cardinal Pacca e piazza Risorgimento. Domenica 1 novembre, dalle 14.30, la processione di Ognissanti va al cimitero passando per viale San Lorenzo, corso Dante, corso Garibaldi fino all'incrocio con via Traiano, via Traiano, via San Pasquale e via Ponticelli: lungo il percorso le auto si fermano per il tempo del passaggio del corteo.",
+      "fonti": [
+       "Comune di Benevento"
+      ],
+      "giorno": "2026-10-28"
+     },
      {
       "testo": "Domenica 1 novembre, dalle 14:15, il traffico sarà fermato man mano sulle strade dove passa la tradizionale processione penitenziale di Ognissanti, che parte dalla basilica della Madonna delle Grazie e arriva al cimitero. Lo stabilisce l'ordinanza n. 451 del Servizio Traffico del Comune, pubblicata il 26 ottobre.",
       "fonti": [
@@ -12025,7 +12231,15 @@
      }
     ],
     "concordano": [],
-    "divergono": [],
+    "divergono": [
+     {
+      "testo": "Sul punto di partenza della processione di Ognissanti l'ordinanza del Servizio Traffico scrive la basilica della Madonna delle Grazie, la nota del Comune del 28 ottobre la basilica di San Lorenzo; tutte e due le fanno passare per viale San Lorenzo. Lo stop del traffico comincia dalle 14.15, la processione alle 14.30.",
+      "fonti": [
+       "Albo pretorio Benevento (processione)",
+       "Comune di Benevento"
+      ]
+     }
+    ],
     "non_si_sa": [],
     "fonti": [
      {
@@ -12047,14 +12261,46 @@
       "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80105",
       "data": "26 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "Comune di Benevento",
+      "titolo": "Varato il piano traffico per le ricorrenze di Ognissanti e della Commemorazione dei Defunti",
+      "url": "https://comune.benevento.it/novita/varato-il-piano-traffico-per-le-ricorrenze-di-ognissanti-e-della-commemorazione-dei-defunti/",
+      "data": "28 ott, 11:17",
+      "ufficiale": true
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Varato piano traffico per le ricorrenze di Ognissanti e Commemorazione Defunti",
+      "url": "https://www.ottopagine.it/bn/attualita/442395/varato-piano-traffico-per-le-ricorrenze-di-ognissanti-e-commemorazione-defunti.shtml",
+      "data": "28 ott, 11:21"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Varato il piano traffico per le ricorrenze di Ognissanti e della Commemorazione dei Defunti",
+      "url": "https://www.anteprima24.it/benevento/varato-il-piano-traffico-per-le-ricorrenze-di-ognissanti-e-della-commemorazione-dei-defunti/",
+      "data": "28 ott, 11:46"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Varato il piano traffico per Ognissanti e i Defunti",
+      "url": "https://www.cronachedelsannio.it/sannionews24/piano-traffico-ognissanti-defunti/",
+      "data": "28 ott, 11:49"
+     },
+     {
+      "nome": "InfoSannio",
+      "titolo": "Varato il piano traffico per le ricorrenze di Ognissanti e della Commemorazione dei Defunti",
+      "url": "https://www.infosannionews.it/attualita/2026/varato-il-piano-traffico-per-le-ricorrenze-di-ognissanti-e-della-commemorazione-dei-defunti.html",
+      "data": "28 ott, 10:30"
      }
     ],
     "aggiornamento": {
-     "testo": "Domenica 1 novembre, dalle 14:15, il traffico si ferma anche sulle strade della processione di Ognissanti, dalla basilica delle Grazie al cimitero.",
+     "testo": "Il Comune ha confermato il piano per il cimitero: chiuse anche via San Marco e via Fontana Margiacca, navette AIR da piazza Cardinal Pacca e piazza Risorgimento; domenica 1 novembre processione dalle 14.30.",
      "fonti": [
-      "Albo pretorio Benevento (processione)"
+      "Comune di Benevento"
      ],
-     "quando": "2026-10-26T14:24+01:00"
+     "quando": "2026-10-28T12:12+01:00",
+     "titolo_prima": "Benevento, 31 ottobre, 1 e 2 novembre chiusa via Cimitero e divieti di sosta attorno al cimitero: navette dal centro"
     }
    },
    "foto": "cimitero-2",
