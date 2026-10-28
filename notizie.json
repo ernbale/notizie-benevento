@@ -4223,7 +4223,11 @@
     ]
    },
    "immagine": "divieto-sosta",
-   "foto": "divieto-sosta-5"
+   "foto": "divieto-sosta-5",
+   "subito": true,
+   "comunicati": [
+    "869cf97cc953"
+   ]
   },
   {
    "id": "walking-marathon-benevento-2026-400-partecipanti",
