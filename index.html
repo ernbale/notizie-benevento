@@ -1845,7 +1845,7 @@
     var rz = riquadroChiusure();
     if (rz) c3.appendChild(rz);
     // Benevento Calcio (calcio.js): nel giorno della partita sopra il meteo, gli altri giorni sotto
-    var rk = (!filtroCat || filtroCat === "sport") && window.NB_CALCIO ? window.NB_CALCIO.riquadro() : null;
+    var rk = (!filtroCat || filtroCat === "sport") && window.NB_CALCIO ? window.NB_CALCIO.riquadro(filtroCat === "sport") : null;
     if (rk && rk.classList.contains("oggi")) c3.appendChild(rk);
     var rm = riquadroMeteo();
     if (rm) c3.appendChild(rm);

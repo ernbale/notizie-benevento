@@ -294,10 +294,13 @@
     return el("div", cls + " vs", [p.ora_certa ? fmt(p.quando, { hour: "2-digit", minute: "2-digit" }) : "–"]);
   }
 
-  function riquadro() {
+  function riquadro(sempre) {
     if (!dati) return null;
     var p = clou();
     if (!p) return null;
+    // in prima pagina (e nelle zone) solo intorno alla partita, da 36 ore prima a 36 ore dopo (lui, 28 ott 2026: «dopo
+    // 36 ore dopo la partita nascondilo e 36 ore prima della partita riappare»); nella sezione Sport sempre
+    if (!sempre && p.stato !== "in" && Math.abs(data(p.quando) - Date.now()) > 36 * 3600e3) return null;
     var oggi = finestra(p) || p.stato === "in";
     var box = el("a", "calcio-box" + (oggi ? " oggi" : ""), []);
     box.href = "/calcio/" + (prova ? "?prova=" + prova.id : "");
@@ -494,13 +497,13 @@
   function inserisciRiquadro() {
     var lat = document.querySelector(".griglia .laterale");
     if (!lat) return;
-    var vecchio = lat.querySelector(".calcio-box"), nuovo = riquadro();
+    var att = document.querySelector(".menu button[aria-pressed='true']");
+    var cat = att ? att.getAttribute("data-cat") : "";
+    var vecchio = lat.querySelector(".calcio-box"), nuovo = riquadro(cat === "sport");
     // stesso posto se non cambia giorno della partita; se no lo si toglie e lo si rimette al posto giusto
     if (vecchio && nuovo && vecchio.classList.contains("oggi") === nuovo.classList.contains("oggi")) { vecchio.replaceWith(nuovo); return; }
     if (vecchio) vecchio.remove();
     if (!nuovo) return;
-    var att = document.querySelector(".menu button[aria-pressed='true']");
-    var cat = att ? att.getAttribute("data-cat") : "";
     if (cat && cat !== "sport") return;
     // nel giorno della partita in alto, sotto le chiusure; gli altri giorni sotto il meteo
     var dopo = nuovo.classList.contains("oggi") ? lat.querySelector(".chiusure-box") : (lat.querySelector(".meteo-box") || lat.querySelector(".chiusure-box"));
@@ -513,7 +516,7 @@
   }
 
   // index.html lo chiama quando ridisegna la colonna di destra (cambio di sezione o di zona)
-  window.NB_CALCIO = { riquadro: function () { return riquadro(); } };
+  window.NB_CALCIO = { riquadro: function (sempre) { return riquadro(sempre); } };
 
   fetch("/calcio.json?t=" + Date.now(), { cache: "no-store" })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
