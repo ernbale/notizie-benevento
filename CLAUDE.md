@@ -38,6 +38,22 @@ Politica (28 ott, lui: «fai A e B»): ci vanno anche le decisioni di sindaco, G
 il dibattito politico della città sta in un solo approfondimento con `"categoria": "politica"`, che la sezione
 Politica mostra in cima come «La storia in corso» (AGENTE.md, «Il dibattito politico in città»).
 
+## Come sono fatte le pagine (regola del proprietario, 28 ott 2026)
+Lui: «dobbiamo mettere una regola di come costruire le pagine… dobbiamo uniformare e scrivere una regola». Ogni pagina
+nuova la segue; se una pagina non la segue, è da sistemare.
+1. **In cima a ogni pagina la testata e lo stesso menu** (index.html; meteo.html ha la copia fatta di link: se cambi
+   una voce, cambiala in tutti e due). La voce della pagina è sottolineata in rosso (la sezione o la zona; Calcio sulla
+   pagina Calcio; Comuni sulle pagine dei Comuni); nelle notizie e nelle pagine di servizio nessuna. Il menu non si
+   nasconde mai (pagine.py non lo nasconde più nelle pagine `articolo`).
+2. **Sezioni e zone** (le voci del menu, /sezione/…, /zona/…), in quest'ordine: titolo («Cronaca a Benevento e nel
+   Sannio», «Altre notizie da Benevento e dal Sannio», zone «Notizie dalla Valle Telesina»; sezione e zona insieme
+   «Cronaca · Valle Telesina»: titoloSezione() in index.html = gli h1 di SEZIONI in pagine.py), sia aprendo
+   l'indirizzo sia dal menu; i filtri della sezione (gli sport); la striscia delle ultime 5; i riquadri della sezione
+   (calendario degli eventi, appuntamenti di Cultura, storia in corso di Politica, speciale e elenchi di Avvisi:
+   riquadriSezione()); le notizie con la colonna di destra. La prima pagina non ha titolo: c'è la testata.
+3. **Notizie, eventi, approfondimenti e pagine di servizio** (Strade chiuse, Scuole chiuse, Carburanti, Calcio,
+   Comuni, Chi siamo, Curiosità, Archivio, Meteo): «← Tutte le notizie», occhiello rosso e titolo grande (.appro).
+
 ## Correggere una notizia a mano
 1. `git pull --rebase` (le routine pubblicano spesso: rifallo anche subito prima del push).
 2. Modifica `notizie.json` (o l'archivio) con uno script che rilegge e riscrive il JSON con l'indentazione di 1

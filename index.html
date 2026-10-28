@@ -60,16 +60,18 @@
   .menu button { font: 600 15px var(--sans); background: none; border: 0; padding: 4px 0; color: var(--nero); cursor: pointer; border-bottom: 2px solid transparent; }
   .menu button[aria-pressed="true"] { border-bottom-color: var(--rosso); }
   .menu select { font: 500 14px var(--sans); background: transparent; border: 1px solid var(--riga); padding: 4px 6px; color: var(--nero); }
+  .menu .link-comuni[aria-current="page"] { border-bottom-color: var(--rosso); }
   .menu .voce-allerta { color: #fff; background: var(--rosso); padding: 3px 9px; border-radius: 3px; border-bottom: 0; }
   @media (min-width: 960px) { .menu { flex-wrap: nowrap; gap: 4px 10px; } .menu .cerca-campo input { width: 155px; } }
   @media (min-width: 960px) and (max-width: 1119px) {
     .menu { gap: 4px 7px; }
-    .menu button, .menu .link-comuni, .menu .link-archivio { font-size: 13.5px; }
+    nav.menu button, nav.menu .link-comuni, nav.menu .link-archivio { font-size: 13.5px; }   /* nav: vince sul font di .link-comuni più sotto */
     .menu select { font-size: 13px; padding: 4px 2px; }
     .menu .cerca-campo input { width: 90px; }
   }
 
   /* la pagina Avvisi: lo stile della pagina «Strade chiuse» (.appro, .notizie-comune) e il riquadro dello speciale */
+  .appro.avvisi-pag { margin: 0; padding-top: 14px; }   /* sotto il titolo e la striscia, allineata come le altre sezioni */
   .avvisi-pag .avv-vai { font: 600 14px var(--sans); margin: 0 0 4px; }
   .avvisi-pag .avv-vai a { display: inline-block; color: var(--blu); text-decoration: none; margin: 0 18px 6px 0; }
   .avvisi-pag .avv-vai a:hover { text-decoration: underline; }
@@ -529,7 +531,7 @@
     .testata .data { order: 2; }
     .testata .nome .grande { font-size: 36px; }
     .menu { justify-content: flex-start; gap: 4px 12px; }
-    .menu button, .menu .link-comuni { font-size: 14.5px; }
+    nav.menu button, nav.menu .link-comuni, nav.menu .link-archivio { font-size: 14.5px; }
     .menu select { width: auto; max-width: 60%; }
     .menu .cerca-campo { width: 100%; order: -1; margin-bottom: 4px; }
     .menu .cerca-campo input { flex: 1; width: auto; font-size: 16px; padding: 8px 10px; }
@@ -1224,7 +1226,8 @@
     return (dati.notizie || []).filter(function (n) {
       // in prima pagina lo sport sta nel suo riquadro; nell'elenco solo se è rilevante o viene da un comunicato
       // arrivato per posta (lui, 25 ott 2026: «i comunicati compreso sport mostrali anche qui»)
-      var cat = filtroCat ? n.categoria === filtroCat : n.categoria !== "sport" || n.rilevante || (n.comunicati || []).length > 0;
+      var cat = filtroCat === "avvisi" ? n.categoria === "avvisi" || n.categoria === "strade"
+        : filtroCat ? n.categoria === filtroCat : n.categoria !== "sport" || n.rilevante || (n.comunicati || []).length > 0;
       return cat && (!filtroZona || n.zona === filtroZona) && (filtroCat !== "sport" || !filtroSport || n.sport === filtroSport);
     }).sort(function (a, b) { return tempo(b) - tempo(a); });
   }
@@ -1494,7 +1497,6 @@
   }
   function paginaAvvisi(box) {
     var oggi = oggiTZ(), art = el("article", "appro avvisi-pag", []);
-    testataPagina(art, "Avvisi", "", (FISSA && FISSA.cat === "avvisi" && FISSA.h1) || "Avvisi a Benevento e nel Sannio");
     art.appendChild(el("p", "sommario", ["Strade chiuse, scioperi, orari di cimiteri e uffici, acqua, luce, rifiuti, bandi e scadenze dei " +
       "Comuni del Sannio: quello che serve sapere oggi e nei prossimi giorni, con il link alla fonte."]));
     var vai = el("p", "avv-vai", []);
@@ -1667,33 +1669,18 @@
   function disegnaHome(box) {
     mostraVoceAllerte();
     if (!(FISSA && filtroCat === (FISSA.cat || "") && filtroZona === (FISSA.zona || ""))) document.title = titoloFiltri();
-    if (filtroCat === "avvisi") { paginaAvvisi(box); return; }
-    if (FISSA && FISSA.h1 && filtroCat === (FISSA.cat || "") && filtroZona === (FISSA.zona || "")) box.appendChild(el("h1", "titolo-sezione", [FISSA.h1]));
-    if (filtroCat === "strade") box.appendChild(linkTutte("/strade-chiuse/", "Le strade chiuse oggi e nei prossimi giorni ›"));
+    var tit = titoloSezione();
+    if (tit) box.appendChild(el("h1", "titolo-sezione", [tit]));
     var lista = filtrate();
     if (filtroCat === "sport") box.appendChild(scelteSport());
-    if (filtroCat === "eventi") {
-      box.appendChild(calendario());
-      if (!lista.length) return;
-      box.appendChild(el("h3", "titolo-col", ["Le notizie sugli eventi"]));
-    }
+    if (lista.length) box.appendChild(strisciaUltime(lista));
+    if (filtroCat === "avvisi") { paginaAvvisi(box); return; }
+    riquadriSezione(box, lista);
     if (!lista.length) {
-      riquadriSezione(box);
-      box.appendChild(el("p", "vuoto", [(dati.notizie || []).length ? "Nessuna notizia con questi filtri." : "Il primo aggiornamento arriva a breve."]));
+      if (filtroCat !== "eventi")
+        box.appendChild(el("p", "vuoto", [(dati.notizie || []).length ? "Nessuna notizia con questi filtri." : "Il primo aggiornamento arriva a breve."]));
       return;
     }
-    var striscia = el("section", "ultimora", []);
-    lista.slice(0, 5).forEach(function (n) {
-      var a = el("a", "", []);
-      a.href = n.articolo ? linkArticolo(n) : "#";
-      var q = quando(n.pubblicato);
-      var oggiSenzaOra = /^\d{4}-\d{2}-\d{2}$/.test(String(n.pubblicato)) && n.pubblicato === new Date().toLocaleDateString("sv-SE", { timeZone: TZ });
-      a.appendChild(el("div", "ora", [q.indexOf("oggi ") === 0 ? q.slice(5) : oggiSenzaOra ? "oggi" : soloData(n.pubblicato)]));
-      a.appendChild(el("div", "tit", [n.titolo]));
-      striscia.appendChild(a);
-    });
-    box.appendChild(striscia);
-    riquadriSezione(box);
 
     var adesso = Date.now(), soloStrade = filtroCat === "strade";
     var avvisi = soloStrade ? [] : lista.filter(eAvviso);
@@ -2434,10 +2421,29 @@
     return az;
   }
 
+  // Le ultime 5 notizie, subito sotto il titolo (regola 2 delle pagine, CLAUDE.md)
+  function strisciaUltime(lista) {
+    var striscia = el("section", "ultimora", []);
+    lista.slice(0, 5).forEach(function (n) {
+      var a = el("a", "", []);
+      a.href = n.articolo ? linkArticolo(n) : "#";
+      var q = quando(n.pubblicato);
+      var oggiSenzaOra = /^\d{4}-\d{2}-\d{2}$/.test(String(n.pubblicato)) && n.pubblicato === new Date().toLocaleDateString("sv-SE", { timeZone: TZ });
+      a.appendChild(el("div", "ora", [q.indexOf("oggi ") === 0 ? q.slice(5) : oggiSenzaOra ? "oggi" : soloData(n.pubblicato)]));
+      a.appendChild(el("div", "tit", [n.titolo]));
+      striscia.appendChild(a);
+    });
+    return striscia;
+  }
   // Sotto le ultime notizie della sezione, come in tutte le altre (lui, 28 ott 2026: «questo lo metterei sopra per
   // rispettare l'organizzazione del sito»): in Cultura i prossimi appuntamenti (lui: «sezione cultura con pagina per
   // google»), in Politica l'approfondimento sul dibattito in città, quello con "categoria": "politica" (AGENTE.md).
-  function riquadriSezione(box) {
+  function riquadriSezione(box, lista) {
+    if (filtroCat === "strade") box.appendChild(linkTutte("/strade-chiuse/", "Le strade chiuse oggi e nei prossimi giorni ›"));
+    if (filtroCat === "eventi") {
+      box.appendChild(calendario());
+      if (lista.length) box.appendChild(el("h3", "titolo-col", ["Le notizie sugli eventi"]));
+    }
     if (filtroCat === "cultura") box.appendChild(appuntamentiCultura());
     if (filtroCat === "politica") {
       (dati.approfondimenti || []).filter(function (ap) { return ap.categoria === "politica" && !ap.archiviato; })
@@ -2756,14 +2762,12 @@
   function disegna() {
     document.title = TITOLO;
     var box = document.getElementById("contenuto");
-    var menu = document.getElementById("menu");
     if (FISSA && FISSA.statica) return;   // pagina già scritta (Chi siamo): resta com'è
     box.textContent = "";
     var mc = rotta().match(/^#(?:archivio|cerca\/(.*))$/);
     if (mc) {
       var q = "";
       try { q = decodeURIComponent(mc[1] || ""); } catch (e) { q = mc[1] || ""; }
-      menu.style.display = "none";
       if (!ricerca.ritorno) { ricerca.mostrate = PAGINA; window.scrollTo(0, 0); }
       disegnaRicerca(box, q);
       return;
@@ -2772,7 +2776,6 @@
     chiudiEvento();
     var me = rotta().match(/^#evento\/(.+)$/);
     if (me) {
-      menu.style.display = "none";
       var idE = decodeURIComponent(me[1]), cercatoE = rotta();
       // l'evento sta in eventi.json; se è già in archivio, la sua pagina lo porta con sé (NB_PAGINA.evento)
       var trovaE = function () {
@@ -2804,13 +2807,12 @@
       var id = decodeURIComponent(m[2]);
       if (m[1] === "articolo") {
         var n = (dati.notizie || []).filter(function (x) { return x.id === id && x.articolo; })[0];
-        if (n) { menu.style.display = "none"; disegnaArticolo(box, n); if (!FISSA) document.title = (n.titolo_google || n.titolo) + " – Notizie Benevento"; window.scrollTo(0, 0); return; }
+        if (n) { disegnaArticolo(box, n); if (!FISSA) document.title = (n.titolo_google || n.titolo) + " – Notizie Benevento"; window.scrollTo(0, 0); return; }
       } else {
         var ap = (dati.approfondimenti || []).filter(function (x) { return x.id === id; })[0];
-        if (ap) { menu.style.display = "none"; disegnaApprofondimento(box, ap); window.scrollTo(0, 0); return; }
+        if (ap) { disegnaApprofondimento(box, ap); window.scrollTo(0, 0); return; }
       }
       // Non è in prima pagina: si cerca nell'archivio.
-      menu.style.display = "none";
       box.appendChild(el("p", "vuoto", ["Caricamento…"]));
       var cercato = rotta();
       var tipo = m[1] === "articolo" ? "notizia" : "approfondimento";
@@ -2834,7 +2836,6 @@
       });
       return;
     }
-    menu.style.display = "";
     disegnaHome(box);
   }
 
@@ -2847,7 +2848,7 @@
     s.appendChild(testo("Aggiornato " + quando(dati.aggiornato)));
   }
 
-  document.querySelectorAll(".menu button").forEach(function (b) {
+  document.querySelectorAll(".menu button[data-cat]").forEach(function (b) {
     b.addEventListener("click", function () {
       filtroCat = b.getAttribute("data-cat");
       filtroSport = "";
@@ -2871,7 +2872,8 @@
     if (ora === mostrato) return;
     mostrato = ora;
     var f = filtriDaIndirizzo();
-    if (f) { filtroCat = f.cat; filtroZona = f.zona; filtroSport = ""; segnaMenu(); }
+    if (f) { filtroCat = f.cat; filtroZona = f.zona; filtroSport = ""; }
+    segnaMenu();
     if ("speechSynthesis" in window) speechSynthesis.cancel();
     disegna();
   }
@@ -2898,9 +2900,16 @@
     return f;
   }
   function segnaMenu() {
-    var voce = filtroCat === "strade" ? "avvisi" : filtroCat;
-    document.querySelectorAll(".menu button").forEach(function (x) { x.setAttribute("aria-pressed", x.getAttribute("data-cat") === voce ? "true" : "false"); });
-    document.getElementById("zona").value = filtroZona;
+    // nessuna voce nelle notizie, nelle pagine di servizio e nella ricerca (regola 1 delle pagine, CLAUDE.md)
+    var f = /^#(archivio|cerca\/)/.test(location.hash) ? null : filtriDaIndirizzo();
+    var voce = !f ? null : filtroCat === "strade" ? "avvisi" : filtroCat;
+    document.querySelectorAll(".menu button[data-cat]").forEach(function (x) { x.setAttribute("aria-pressed", x.getAttribute("data-cat") === voce ? "true" : "false"); });
+    document.getElementById("zona").value = f ? filtroZona : "";
+    var p = location.pathname;
+    document.querySelectorAll(".menu a.link-comuni").forEach(function (a) {
+      var qui = a.getAttribute("href") === "/calcio/" ? p.indexOf("/calcio/") === 0 : p.indexOf("/comuni/") === 0 || p.indexOf("/comune/") === 0;
+      if (qui) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
+    });
   }
   // dopo una scelta nel menu: nella prima pagina e nelle sezioni cambia l'indirizzo e ridisegna; nelle altre pagine
   // (Comuni, strade chiuse, carburanti…) apre la pagina della scelta
@@ -2911,6 +2920,14 @@
     mostrato = location.pathname + location.search + location.hash;
     segnaMenu();
     disegna();
+  }
+  // Il titolo di una sezione o di una zona (regola 2 delle pagine, CLAUDE.md): lo stesso di SEZIONI in pagine.py
+  var TITOLO_ZONA = { benevento: "Notizie da Benevento città", telesina: "Notizie dalla Valle Telesina", caudina: "Notizie dalla Valle Caudina",
+    fortore: "Notizie dal Fortore e dal Tammaro", provincia: "Notizie dagli altri comuni del Sannio" };
+  function titoloSezione() {
+    var c = filtroCat === "altro" ? "Altre notizie da Benevento e dal Sannio" : filtroCat ? NOMI_CAT[filtroCat] + " a Benevento e nel Sannio" : "";
+    var z = filtroZona ? document.querySelector('#zona option[value="' + filtroZona + '"]') : null;
+    return c && z ? NOMI_CAT[filtroCat] + " · " + z.textContent : c || TITOLO_ZONA[filtroZona] || "";
   }
   function titoloFiltri() {
     var z = filtroZona ? document.querySelector('#zona option[value="' + filtroZona + '"]') : null;
@@ -3013,8 +3030,8 @@
   if (FISSA && (FISSA.cat || FISSA.zona)) {
     filtroCat = FISSA.cat || "";
     filtroZona = ((filtriDaIndirizzo() || {}).zona) || FISSA.zona || "";   // anche ?zona= (sezione e zona insieme)
-    segnaMenu();
   }
+  segnaMenu();
 
   fetch("meteo.json?t=" + Date.now(), { cache: "no-store" })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })

@@ -50,15 +50,45 @@
   svg text { font-family: var(--sans); }
 
   /* testata come il resto del sito */
-  .testata { display: grid; grid-template-columns: 1fr auto 1fr; align-items: end; padding: 18px 0 12px; border-bottom: 1px solid var(--nero); }
+  .testata { display: grid; grid-template-columns: 1fr auto 1fr; align-items: end; gap: 12px; padding: 18px 0 10px; }   /* come index.html: la riga nera è quella del menu */
   .testata .data, .testata .agg { font-size: 13px; color: var(--grigio); }
   .testata .agg { text-align: right; }
   .testata .nome { text-align: center; text-decoration: none; color: var(--nero); }
   .testata .nome .grande { display: block; font: 700 40px/1 var(--serif); letter-spacing: -1px; }
   .testata .nome .piccolo { display: block; font: 600 12px/1.4 var(--sans); letter-spacing: 2px; text-transform: uppercase; margin-top: 4px; }
-  .sottomenu { display: flex; gap: 18px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--riga); font: 600 14px var(--sans); }
-  .sottomenu a { text-decoration: none; }
-  .sottomenu .qui { border-bottom: 2px solid var(--rosso); padding-bottom: 2px; }
+  /* «← Tutte le notizie» e l'occhiello sopra il titolo, come nelle pagine di servizio (regola 3 delle pagine, CLAUDE.md) */
+  .indietro { display: inline-block; margin-top: 22px; font: 600 14px var(--sans); color: var(--blu); text-decoration: none; }
+  .occhiello { font: 700 12px var(--sans); text-transform: uppercase; letter-spacing: .6px; color: var(--rosso); margin: 18px 0 0; }
+  #meteo > h1 { margin-top: 6px; }
+  /* il menu, come in index.html (lì le voci sono pulsanti, qui link) */
+  .menu { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 4px 13px;
+          padding: 10px 0; border-top: 1px solid var(--nero); border-bottom: 1px solid var(--riga); }
+  .menu a.voce { font: 600 15px var(--sans); color: var(--nero); text-decoration: none; padding: 4px 0; border-bottom: 2px solid transparent; }
+  .menu a.voce:hover { border-bottom-color: var(--rosso); }
+  .menu a.voce-allerta { color: #fff; background: var(--rosso); padding: 3px 9px; border-radius: 3px; border-bottom: 0; }
+  .menu a.voce[hidden] { display: none; }
+  .menu select { font: 500 14px var(--sans); background: transparent; border: 1px solid var(--riga); padding: 4px 6px; color: var(--nero); }
+  .menu .link-archivio { font: 600 15px var(--sans); color: var(--blu); text-decoration: none; padding: 4px 0; }
+  .cerca-campo { display: flex; align-items: stretch; }
+  .cerca-campo input { font: 500 15px var(--sans); padding: 6px 10px; border: 1px solid var(--nero); border-right: 0; border-radius: 4px 0 0 4px;
+                       background: #fff; color: var(--nero); min-width: 0; width: 150px; -webkit-appearance: none; appearance: none; }
+  .cerca-campo button { display: inline-flex; align-items: center; justify-content: center; width: 40px; border: 1px solid var(--nero);
+                        border-radius: 0 4px 4px 0; background: var(--nero); color: #fff; cursor: pointer; padding: 0; }
+  .cerca-campo svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; }
+  @media (min-width: 960px) { .menu { flex-wrap: nowrap; gap: 4px 10px; } .menu .cerca-campo input { width: 155px; } }
+  @media (min-width: 960px) and (max-width: 1119px) {
+    .menu { gap: 4px 7px; }
+    .menu a.voce, .menu .link-archivio { font-size: 13.5px; }
+    .menu select { font-size: 13px; padding: 4px 2px; }
+    .menu .cerca-campo input { width: 90px; }
+  }
+  @media (max-width: 620px) {
+    .menu { justify-content: flex-start; gap: 4px 12px; }
+    .menu a.voce, .menu .link-archivio { font-size: 14.5px; }
+    .menu select { width: auto; max-width: 60%; font-size: 16px; }
+    .menu .cerca-campo { width: 100%; order: -1; margin-bottom: 4px; }
+    .menu .cerca-campo input { flex: 1; width: auto; font-size: 16px; padding: 8px 10px; }
+  }
 
   h1 { font: 700 30px/1.1 var(--serif); margin: 22px 0 4px; letter-spacing: -.3px; }
   h2 { font: 700 21px/1.2 var(--serif); margin: 0; }
@@ -292,12 +322,56 @@
     </a>
     <div class="agg" id="agg">Caricamento…</div>
   </header>
-  <nav class="sottomenu" aria-label="Sezioni">
-    <a href="./">← Notizie</a>
-    <span class="qui">Meteo</span>
+  <!-- Lo stesso menu di index.html, fatto di link (regola 1 delle pagine, CLAUDE.md, 28 ott 2026): se cambi una voce
+       là, cambiala anche qui. -->
+  <nav class="menu" id="menu" aria-label="Sezioni">
+    <a class="voce" href="/">Tutte</a>
+    <a class="voce" href="/sezione/cronaca/">Cronaca</a>
+    <a class="voce" href="/sezione/politica/">Politica</a>
+    <a class="voce" href="/sezione/sport/">Sport</a>
+    <a class="voce" href="/calcio/">Calcio</a>
+    <a class="voce voce-allerta" href="/sezione/allerte/" hidden>Allerte</a>
+    <a class="voce" href="/sezione/avvisi/">Avvisi</a>
+    <a class="voce" href="/sezione/eventi/">Eventi</a>
+    <a class="voce" href="/sezione/cultura/">Cultura</a>
+    <a class="voce" href="/sezione/altro/">Altro</a>
+    <select id="zona-menu" aria-label="Zona">
+      <option value="/">Tutte le zone</option>
+      <option value="/zona/benevento/">Benevento città</option>
+      <option value="/zona/valle-telesina/">Valle Telesina</option>
+      <option value="/zona/valle-caudina/">Valle Caudina</option>
+      <option value="/zona/fortore/">Fortore e Tammaro</option>
+      <option value="/zona/altri-comuni/">Altri comuni</option>
+    </select>
+    <a class="voce" href="/comuni/">Comuni</a>
+    <a class="link-archivio" href="/#archivio">Archivio</a>
+    <form class="cerca-campo" id="cerca-menu" role="search">
+      <input type="search" id="cerca-menu-q" placeholder="Cerca tra le notizie" aria-label="Cerca tra le notizie" autocomplete="off" enterkeyhint="search">
+      <button type="submit" aria-label="Cerca"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg></button>
+    </form>
   </nav>
+  <script>
+  (function () {
+    document.getElementById("zona-menu").addEventListener("change", function (e) { location.href = e.target.value; });
+    document.getElementById("cerca-menu").addEventListener("submit", function (e) {
+      e.preventDefault();
+      var q = document.getElementById("cerca-menu-q").value.trim();
+      location.href = "/" + (q ? "#cerca/" + encodeURIComponent(q) : "#archivio");
+    });
+    // «Allerte» solo quando c'è un'allerta (come mostraVoceAllerte in index.html)
+    fetch("meteo.json?t=" + Date.now(), { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (j) {
+      var oggi = new Date().toLocaleDateString("sv-SE", { timeZone: "Europe/Rome" }), g = (j.allerte && j.allerte.giorni) || {};
+      document.querySelector(".menu .voce-allerta").hidden = !Object.keys(g).some(function (d) {
+        var zz = (g[d] && g[d].zone) || {};
+        return d >= oggi && Object.keys(zz).some(function (z) { return zz[z].livello && zz[z].livello !== "verde"; });
+      });
+    }).catch(function () {});
+  })();
+  </script>
 
   <main id="meteo">
+    <a class="indietro" href="/">← Tutte le notizie</a>
+    <div class="occhiello">Meteo</div>
     <h1>Meteo Benevento</h1>
     <p class="sottotitolo" id="sottotitolo">Previsioni messe insieme da più modelli meteo, aggiornate ogni ora.</p>
     <div id="contenuto"><p class="vuoto-dati">Caricamento delle previsioni…</p></div>

@@ -53,10 +53,10 @@ SEZIONI = [
      "Avvisi a Benevento e nel Sannio", "Strade chiuse, orari dei cimiteri e degli uffici, servizi, bandi e scadenze dei "
      "Comuni del Sannio: quello che serve sapere oggi e nei prossimi giorni, paese per paese, con le fonti ufficiali."),
     ("sezione/strade", {"cat": "strade"}, "Strade Benevento oggi: chiusure, cantieri e traffico nel Sannio",
-     "Strade di Benevento e provincia", "Strade chiuse, cantieri, incidenti e lavori a Benevento e nel Sannio, "
+     "Strade a Benevento e nel Sannio", "Strade chiuse, cantieri, incidenti e lavori a Benevento e nel Sannio, "
      "con le fonti ufficiali (ANAS, Provincia, Comuni) e i giornali locali messi a confronto."),
     ("sezione/cronaca", {"cat": "cronaca"}, "Cronaca Benevento: ultime notizie di cronaca dal Sannio",
-     "Cronaca di Benevento e provincia", "Le notizie di cronaca di oggi da Benevento e dai paesi del Sannio, "
+     "Cronaca a Benevento e nel Sannio", "Le notizie di cronaca di oggi da Benevento e dai paesi del Sannio, "
      "confrontate tra i giornali locali, con i link agli articoli originali."),
     ("sezione/politica", {"cat": "politica"}, "Politica Benevento: Comune, Provincia e paesi del Sannio",
      "Politica a Benevento e nel Sannio", "Consiglio comunale, Provincia, Regione e paesi del Sannio: "
@@ -65,7 +65,7 @@ SEZIONI = [
      "Sport a Benevento e nel Sannio", "Il Benevento e tutte le squadre e gli atleti del Sannio: calcio, calcio a 5, "
      "basket, pallavolo, rugby, scherma, atletica e gli altri sport, con risultati e notizie confrontate tra i giornali locali."),
     ("sezione/eventi", {"cat": "eventi"}, "Eventi a Benevento e provincia: calendario di teatro, concerti, mostre e sagre",
-     "Eventi a Benevento e provincia", "Il calendario degli eventi nel Sannio: teatro, concerti, mostre, cinema, sagre e "
+     "Eventi a Benevento e nel Sannio", "Il calendario degli eventi nel Sannio: teatro, concerti, mostre, cinema, sagre e "
      "feste a Benevento e provincia, con date, orari, luoghi e fonti."),
     ("sezione/allerte", {"cat": "meteo"}, "Allerte Benevento: allerta meteo, scuole chiuse e terremoti nel Sannio",
      "Allerte a Benevento e nel Sannio", "Allerte meteo della Protezione civile per le zone del Sannio, chiusure di "
@@ -74,7 +74,7 @@ SEZIONI = [
      "Cultura a Benevento e nel Sannio", "Libri e autori, presentazioni, teatro, musica, cinema, mostre, musei e premi: "
      "le notizie di cultura di Benevento e del Sannio e gli appuntamenti dei prossimi giorni."),
     ("sezione/altro", {"cat": "altro"}, "Altre notizie da Benevento e provincia",
-     "Altre notizie dal Sannio", "Lavoro, salute, scuola, ambiente e servizi: le altre notizie di Benevento "
+     "Altre notizie da Benevento e dal Sannio", "Lavoro, salute, scuola, ambiente e servizi: le altre notizie di Benevento "
      "e provincia confrontate tra i giornali locali."),
     ("zona/benevento", {"zona": "benevento"}, "Notizie Benevento città: cronaca, strade e politica in città",
      "Notizie da Benevento città", "Le notizie di oggi dalla città di Benevento: cronaca, strade, politica, eventi."),
@@ -923,8 +923,14 @@ def html_avvisi(notizie, oggi, h1):
     """La pagina Avvisi come la disegna paginaAvvisi() in index.html, con le notizie della prima pagina."""
     o = oggi.isoformat()
     vive = [n for n in notizie if not n.get("_arch") and str(n.get("in_vigore_fino") or "9") >= o]
-    h = _testata_pagina("Avvisi", "", h1)
-    h += ('<p class="sommario">Strade chiuse, scioperi, orari di cimiteri e uffici, acqua, luce, rifiuti, bandi e scadenze dei '
+    ultime = sorted((n for n in vive if n.get("categoria") in ("avvisi", "strade")), key=lambda n: str(n.get("pubblicato")), reverse=True)[:5]
+    testa = f'<h1 class="titolo-sezione">{e(h1)}</h1><section class="ultimora">'
+    for n in ultime:
+        p = str(n.get("pubblicato"))
+        ora = p[11:16] if p[:10] == o and len(p) > 10 else f"{int(p[8:10])} {MESI[int(p[5:7]) - 1]}"
+        testa += f'<a href="{percorso("notizia", n["id"])}"><div class="ora">{e(ora)}</div><div class="tit">{e(n["titolo"])}</div></a>'
+    testa += "</section>"
+    h = ('<p class="sommario">Strade chiuse, scioperi, orari di cimiteri e uffici, acqua, luce, rifiuti, bandi e scadenze dei '
           "Comuni del Sannio: quello che serve sapere oggi e nei prossimi giorni, con il link alla fonte.</p>")
     h += ('<p class="avv-vai"><a href="/strade-chiuse/">Strade chiuse oggi ›</a><a href="/scuole-chiuse/">Scuole chiuse ›</a>'
           '<a href="/meteo.html">Meteo e allerte ›</a></p>')
@@ -964,7 +970,7 @@ def html_avvisi(notizie, oggi, h1):
             h += f'<h3>{e(titolo)}</h3><ul class="notizie-comune">' + "".join(_voce_avviso(n, oggi) for n in gruppo) + "</ul>"
     h += ('<p class="agg-chiusure">Ogni ora leggiamo gli albi e i siti dei 78 Comuni, i comunicati ufficiali e i giornali '
           "locali. Le date sono quelle annunciate: un orario o un cantiere possono cambiare.</p>")
-    return f'<article class="appro avvisi-pag">{h}</article>'
+    return testa + f'<article class="appro avvisi-pag">{h}</article>'
 
 
 # ---------- prezzi dei carburanti (strumenti/carburanti.py → carburanti.json) ----------
@@ -1907,8 +1913,7 @@ def pagina(modello, seo, pagina_js, contenuto="", articolo=False, ultime=None):
     sostituisci('<main id="contenuto"></main>', f'<main id="contenuto">{contenuto}</main>')
     # il titolo principale (h1) è quello della notizia o della sezione, non il nome del sito
     sostituisci('<h1 class="grande">Notizie Benevento</h1>', '<span class="grande">Notizie Benevento</span>')
-    if articolo:
-        sostituisci('<nav class="menu" id="menu"', '<nav class="menu" id="menu" style="display:none"')
+    # il menu c'è in tutte le pagine (regola 1 delle pagine, CLAUDE.md, 28 ott 2026): `articolo` non lo nasconde più
     return s
 
 
@@ -2169,6 +2174,20 @@ def main():
                                                   "name": "Chi siamo", "url": url, "mainEntity": ORG})
     scrivi(os.path.join(sito, "chi-siamo", "index.html"), pagina(modello, seo, {"statica": True}, html_chi_siamo(), articolo=True))
     mappa.append((url, None))
+
+    # la pagina «non trovata» (404.html, GitHub Pages la mostra per ogni indirizzo che non c'è): con la testata e il
+    # menu come tutte (regola 1 delle pagine, CLAUDE.md); la notizia non ancora scritta si apre dentro il sito, come
+    # nel 404.html del repository, che resta per quando le pagine non si generano
+    rimando = ('<meta name="robots" content="noindex">\n<script>(function () { var m = location.pathname.match('
+               '/^\\/(notizia|approfondimento)\\/([a-z0-9-]+)\\/?$/); if (m) location.replace("/#" + (m[1] === "notizia" ? '
+               '"articolo" : "approfondimento") + "/" + m[2]); })();</script>')
+    seo = blocco_seo(f"Pagina non trovata – {NOME}", "Questo indirizzo non esiste: le notizie di Notizie Benevento non "
+                     "vengono mai cancellate, cercale nell'archivio.", SITO + "/404.html", "/condivisione.png", extra=rimando)
+    h = _testata_pagina(NOME, "", "Pagina non trovata")
+    h += ('<p class="sommario">Questo indirizzo non esiste. Le notizie non vengono mai cancellate: cercale '
+          'nell\'<a href="/#archivio">archivio</a> o torna alla <a href="/">prima pagina</a>.</p>')
+    scrivi(os.path.join(sito, "404.html"), pagina(modello, seo, {"statica": True}, f'<article class="appro">{h}</article>',
+                                                  articolo=True))
 
     # le chiusure dei Comuni (strumenti/chiusure.py): la pagina c'è sempre, anche vuota (la cercano su Google)
     url = SITO + "/scuole-chiuse/"
