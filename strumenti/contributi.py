@@ -77,6 +77,12 @@ ALTRE_REGIONI = re.compile(r"Ischia|Valle D.Aosta|Calabria|Sicilia|Sardegna|Pugl
                            r"Toscana|Lombardia|Veneto|Piemonte|Liguria|Marche|Umbria|Friuli|Trentino|Emilia|Alto Adige", re.I)
 ALTRA_PROVINCIA = re.compile(r"provincia di (Avellino|Salerno|Napoli|Caserta)\b|\b(Avellino|Salerno|Napoli|Caserta)\b", re.I)
 SANNIO_ENTE = re.compile(r"Irpinia Sannio|Provincia di Benevento|\bGAL\b|Gruppo di Azione Locale", re.I)
+# schede del catalogo segnate «tutte le regioni» ma che nel testo valgono solo per altre (es. il Fondo
+# deindustrializzazione 2026: «territori industriali del Lazio e delle Marche»)
+REGIONI_NEL_TESTO = re.compile(r"\b(Lazio|Marche|Lombardia|Piemonte|Veneto|Toscana|Emilia[- ]Romagna|Liguria|Friuli|Trentino|"
+                               r"Alto Adige|Umbria|Abruzzo|Molise|Puglia|Basilicata|Calabria|Sicilia|Sardegna|Valle d.Aosta)\b")
+ANCHE_NOI = re.compile(r"Campania|Mezzogiorno|\bSud\b|Meridion|tutt[eo] (le regioni|il territorio)|territorio nazionale|"
+                       r"Benevento|Sannio|\bZES\b", re.I)
 SEZIONI = {"cos'è": "cose", "cos’è": "cose", "a chi si rivolge": "a_chi", "cosa prevede": "cosa_prevede"}
 LIMITI = {"cose": 420, "a_chi": 600, "cosa_prevede": 1100}
 GIORNO = re.compile(r"^\d{4}-\d{2}-\d{2}$")
@@ -217,6 +223,9 @@ def dal_catalogo(docs, oggi):
                 "link": link, "scheda": "https://www.incentivi.gov.it" + str(uno(x, "zs_url") or ""),
                 "fonte": "catalogo", "aggiornato_fonte": aggiornato or None}
         voce.update(testi(x))
+        testo = " ".join(filter(None, [tit, voce.get("cose"), voce.get("a_chi"), voce.get("cosa_prevede")]))
+        if REGIONI_NEL_TESTO.search(testo) and not ANCHE_NOI.search(testo):
+            continue
         out.append(voce)
     return out
 
