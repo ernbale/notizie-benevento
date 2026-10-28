@@ -1430,6 +1430,556 @@
    "cosa_prevede": "Contributo a fondo perduto in conto impianti, contributo a fondo perduto alla spesa, finanziamento agevolato e contributo in conto interessi. L'entità dipende dal tipo di progetto, dalla zona dell'investimento e dalla dimensione dell'impresa. Per investimenti strategici di almeno 50 milioni c'è una procedura veloce («fast track»).",
    "come": "Domanda solo online sulla piattaforma incentivi di Invitalia, attraverso l'area personale, dal legale rappresentante, da un procuratore o da un delegato. Servono firma digitale, PEC e SPID, CNS o CIE. Si può chiedere prima un appuntamento con Invitalia dall'area personale.",
    "controllato": "2026-10-28"
+  },
+  {
+   "id": "erasmus-giovani-imprenditori",
+   "titolo": "Erasmus per giovani imprenditori: da 1 a 6 mesi in un'impresa all'estero",
+   "ente": "Commissione europea - Erasmus per giovani imprenditori",
+   "da": [
+    "europa"
+   ],
+   "dove": "europa",
+   "chi": [
+    "nuova",
+    "impresa",
+    "commercio",
+    "artigiano",
+    "turismo"
+   ],
+   "temi": [
+    "aprire"
+   ],
+   "aiuto": [
+    "fondo"
+   ],
+   "forma": "Contributo mensile per il soggiorno all'estero",
+   "quanto": "Importo mensile secondo il Paese: da 600 a 1.200 euro (1.000 euro in Italia)",
+   "scadenza_testo": "Domande tutto l'anno tramite uno sportello locale",
+   "link": "https://europa.eu/youreurope/business/running-business/start-ups/erasmus-young-entrepreneurs/index_it.htm",
+   "cose": "Programma di scambio dell'Unione europea: chi vuole aprire un'impresa, o l'ha aperta da meno di tre anni, lavora da uno a sei mesi accanto a un imprenditore esperto in un altro Paese. Le piccole e medie imprese del Sannio possono anche fare da ospitanti e accogliere un nuovo imprenditore straniero.",
+   "a_chi": "Nuovi imprenditori maggiorenni residenti in un Paese partecipante, con un'idea d'impresa valida e un business plan realistico, oppure con un'attività avviata da meno di tre anni al momento della domanda. Come ospitanti: titolari o dirigenti di una piccola o media impresa in un Paese partecipante, con almeno tre anni di esperienza professionale.",
+   "cosa_prevede": "Lo scambio dura da 1 a 6 mesi, anche diviso in più parti purché si concluda entro 12 mesi. L'Unione europea dà un contributo mensile per viaggio, vitto e alloggio durante il periodo all'estero, pagato dallo sportello locale scelto. L'importo cambia da Paese a Paese: nella tabella per gli scambi iniziati dal 1° giugno 2024 va da 600 a 1.200 euro al mese (per esempio 900 euro in Spagna e in Germania, 950 in Francia, 1.000 in Italia); 1.200 euro per gli imprenditori con disabilità. La partecipazione è gratuita, ma bisogna essere in grado di integrare i fondi del programma.",
+   "come": "Iscrizione online sul sito del programma (erasmus-entrepreneurs.eu) scegliendo uno sportello locale nel proprio Paese di residenza; servono curriculum, lettera di motivazione e business plan. Lo sportello valuta la domanda e accompagna nella ricerca dell'imprenditore ospitante.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "corpo-europeo-solidarieta-volontariato",
+   "titolo": "Corpo europeo di solidarietà: volontariato all'estero con spese pagate per 18-30enni",
+   "ente": "Commissione europea - Corpo europeo di solidarietà",
+   "da": [
+    "europa"
+   ],
+   "dove": "europa",
+   "chi": [
+    "giovani"
+   ],
+   "temi": [
+    "sociale"
+   ],
+   "aiuto": [
+    "bonus"
+   ],
+   "forma": "Volontariato con viaggio, vitto, alloggio e assicurazione coperti",
+   "quanto": "",
+   "scadenza_testo": "Iscrizione sempre aperta; ogni progetto ha i suoi tempi",
+   "link": "https://youth.europa.eu/solidarity/young-people/volunteering_it",
+   "cose": "Programma dell'Unione europea che permette ai giovani di fare volontariato in un altro Paese, da soli o in gruppo, in progetti di solidarietà. Il programma paga le spese essenziali e un piccolo contributo per le spese personali.",
+   "a_chi": "Giovani tra i 18 e i 30 anni residenti in un Paese dell'Unione europea o in un altro Paese partecipante. Per il volontariato negli aiuti umanitari il limite sale a 35 anni.",
+   "cosa_prevede": "Il volontariato individuale dura da 2 settimane a 12 mesi, quello di gruppo da 2 settimane a 2 mesi, a tempo pieno (da 30 a 38 ore a settimana). Il programma rimborsa i costi essenziali (viaggio da e verso la sede del progetto, vitto e alloggio), copre l'assicurazione e dà un contributo per le piccole spese personali. Sono previsti rimborsi per esigenze particolari: disabilità, visti, tutoraggio rafforzato.",
+   "come": "Registrazione sul portale del Corpo europeo di solidarietà con un account EU Login, poi candidatura alle opportunità pubblicate. Per il volontariato individuale servono un'organizzazione di sostegno in Italia e una di accoglienza all'estero, da cercare nella banca dati delle organizzazioni accreditate. La registrazione non garantisce un posto.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "eic-accelerator-startup-pmi-innovative",
+   "titolo": "EIC Accelerator: fondi europei e investimenti per startup e PMI molto innovative",
+   "ente": "Consiglio europeo per l'innovazione (EIC) - Commissione europea",
+   "da": [
+    "europa"
+   ],
+   "dove": "europa",
+   "chi": [
+    "impresa",
+    "nuova"
+   ],
+   "temi": [
+    "innovazione",
+    "investire"
+   ],
+   "aiuto": [
+    "fondo"
+   ],
+   "forma": "Contributo a fondo perduto più investimento nel capitale",
+   "quanto": "Contributo sotto i 2,5 milioni di euro; investimento nel capitale fino a 10 milioni di euro",
+   "scadenza_testo": "Proposta breve in qualsiasi momento; la proposta completa, dopo il via libera, ha date fisse (la prossima il 4 novembre 2026)",
+   "link": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en",
+   "cose": "Programma europeo (Horizon Europe) per startup e piccole e medie imprese con un'innovazione tecnologica già sperimentata, ad alto rischio e capace di creare nuovi mercati. Unisce contributo a fondo perduto, investimento nel capitale e servizi di accompagnamento.",
+   "a_chi": "Startup e PMI singole, persone che intendono costituire una PMI e piccole mid-cap (queste solo per l'investimento). La tecnologia deve essere già testata e validata in laboratorio o in ambiente pertinente (almeno livello di maturità tecnologica 5). Non è pensato per attività tradizionali.",
+   "cosa_prevede": "Contributo forfettario sotto i 2,5 milioni di euro per attività di innovazione (livello tecnologico da 6 a 8) da completare in 24 mesi; investimento nel capitale da 1 a 10 milioni di euro nelle formule miste o solo investimento; coaching, mentoring e contatti. Nel 2026 l'EIC Accelerator Open, per qualsiasi settore, dispone di 414 milioni di euro; le Challenges su temi prestabiliti di 220 milioni.",
+   "come": "Si comincia con una proposta breve sul portale EIC, inviabile in qualsiasi momento e valutata ogni primo martedì del mese da quattro esperti. Con il via libera si presenta la proposta completa sul portale Funding & Tenders alle date fisse (nel 2026 l'ultima è il 4 novembre), poi c'è il colloquio con una giuria.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "culture-moves-europe-mobilita-artisti-2026-2027",
+   "titolo": "Culture Moves Europe: contributi di viaggio per artisti e operatori culturali",
+   "ente": "Commissione europea - Europa creativa (gestione Goethe-Institut)",
+   "da": [
+    "europa"
+   ],
+   "dove": "europa",
+   "chi": [
+    "professionista"
+   ],
+   "temi": [
+    "cultura"
+   ],
+   "aiuto": [
+    "fondo"
+   ],
+   "forma": "Contributo per viaggio e soggiorno in un altro Paese",
+   "quanto": "85 euro al giorno più 400 o 800 euro per il viaggio",
+   "scadenza": "2027-04-30",
+   "scadenza_testo": "Scadenze mensili: 31 ottobre e 30 novembre 2026, 31 gennaio, 28 febbraio, 31 marzo e 30 aprile 2027",
+   "link": "https://culture.ec.europa.eu/culture-moves-europe/call-for-individual-mobility",
+   "cose": "Programma di mobilità di Europa creativa: paga viaggio e soggiorno ad artisti e professionisti della cultura che vogliono realizzare un progetto in un altro Paese, insieme a un partner internazionale scelto da loro.",
+   "a_chi": "Artisti e professionisti della cultura dai 18 anni in su, residenti legalmente in un Paese di Europa creativa, attivi in architettura, patrimonio culturale, design e moda, letteratura, musica, arti dello spettacolo o arti visive. Non serve un livello minimo di esperienza. Si può fare domanda da soli o in gruppi fino a 5 persone.",
+   "cosa_prevede": "Diaria di 85 euro per ogni giorno di progetto; contributo di viaggio di 400 euro sotto i 5.000 km e di 800 euro oltre; supplementi di 400 euro per il viaggio sostenibile, 200 euro per ogni figlio sotto i 18 anni, 120 euro per il visto, 175 euro per territori d'oltremare e regioni ultraperiferiche. Per l'accessibilità 30 euro al giorno più il costo o un forfait per assistente personale o interprete della lingua dei segni. Il progetto deve avere due obiettivi tra imparare, creare, esplorare e creare contatti.",
+   "come": "Domanda in inglese sul Goethe-Application Portal (registrazione come 'individual', poi 'Culture Moves Europe funding' e 'call for individual mobility'). Servono portfolio, prova della residenza e lettera d'invito del partner internazionale. Valutazione dopo ogni scadenza mensile, risposta entro 8 settimane.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "cerv-memoria-europea-2026",
+   "titolo": "Memoria europea (CERV): da 50.000 a 500.000 euro per progetti di associazioni ed enti",
+   "ente": "Commissione europea - Agenzia EACEA, programma CERV",
+   "da": [
+    "europa"
+   ],
+   "dove": "europa",
+   "chi": [
+    "associazione",
+    "ente"
+   ],
+   "temi": [
+    "cultura",
+    "sociale"
+   ],
+   "aiuto": [
+    "fondo"
+   ],
+   "forma": "Contributo forfettario a progetto",
+   "quanto": "Da 50.000 a 500.000 euro a progetto",
+   "apertura": "2026-10-21",
+   "scadenza": "2027-02-24",
+   "scadenza_testo": "Entro le 17 (ora di Bruxelles) del 24 febbraio 2027",
+   "link": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/CERV-2026-CITIZENS-REM-TRANSITION",
+   "cose": "Bando europeo 2026 sulla memoria, con cinque temi: transizioni democratiche e resistenza ai regimi autoritari e totalitari, Shoah, vittime rom, vittime LGBTIQ+ e altre vittime, eredità di colonialismo, schiavitù e migrazioni. I progetti possono essere nazionali o tra più Paesi.",
+   "a_chi": "Il capofila deve essere un ente senza scopo di lucro, pubblico o privato (per esempio associazioni, fondazioni, Comuni, scuole) stabilito nell'Unione europea o in un Paese associato. Servono almeno due partecipanti: capofila e almeno un partner. Le imprese possono entrare solo come partner insieme a enti pubblici o senza scopo di lucro. Ogni capofila può presentare un solo progetto.",
+   "cosa_prevede": "Contributo forfettario tra 50.000 e 500.000 euro per progetti che durano di norma da 12 a 24 mesi, su uno solo dei cinque temi del bando. Dotazione complessiva: 28 milioni di euro. Non è ammesso girare i fondi a soggetti terzi. La Commissione incoraggia i progetti tra più Paesi e la partecipazione attiva dei gruppi a cui si rivolgono.",
+   "come": "Domanda solo online sul portale Funding & Tenders della Commissione europea, dopo la registrazione dei partecipanti: parte A compilata online, parte B con la descrizione del progetto (massimo 70 pagine). L'agenzia EACEA organizza una sessione informativa online il 5 novembre 2026, con iscrizioni fino al 30 ottobre.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "europa-creativa-traduzione-opere-letterarie-2027",
+   "titolo": "Europa creativa: fino a 300.000 euro agli editori per tradurre e diffondere libri europei",
+   "ente": "Commissione europea - Agenzia EACEA, Europa creativa",
+   "da": [
+    "europa"
+   ],
+   "dove": "europa",
+   "chi": [
+    "impresa"
+   ],
+   "temi": [
+    "cultura"
+   ],
+   "aiuto": [
+    "fondo"
+   ],
+   "forma": "Contributo forfettario a progetto (fino al 60%)",
+   "quanto": "Fino a 100.000, 200.000 o 300.000 euro secondo il numero di opere tradotte",
+   "apertura": "2026-10-21",
+   "scadenza": "2027-01-27",
+   "scadenza_testo": "Entro le 17 (ora di Bruxelles) del 27 gennaio 2027",
+   "link": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/CREA-CULT-2027-LIT",
+   "cose": "Bando 2027 di Europa creativa per tradurre, pubblicare, distribuire e promuovere opere letterarie europee: romanzi, racconti, teatro, poesia, reportage, fumetti, libri per bambini e ragazzi. Sono previsti circa 40 progetti finanziati.",
+   "a_chi": "Soggetti con personalità giuridica, pubblici o privati, attivi nel settore editoriale e del libro e stabiliti in un Paese di Europa creativa; ammesse anche le ditte individuali. Si partecipa da soli (fino a 200.000 euro) o in consorzio di almeno due soggetti (fino a 300.000 euro). Ogni progetto deve comprendere almeno 5 opere letterarie europee da tradurre.",
+   "cosa_prevede": "Contributo forfettario con copertura massima del 60% dei costi: fino a 100.000 euro con almeno 5 opere tradotte, fino a 200.000 euro con almeno 11 opere, fino a 300.000 euro con almeno 21 opere (solo consorzi). Dotazione del bando: 5 milioni di euro. Il bando chiede condizioni di lavoro e compensi equi per i traduttori e il loro nome ben visibile sul libro.",
+   "come": "Domanda solo online sul portale Funding & Tenders della Commissione europea, con la registrazione dei partecipanti e l'inserimento delle opere proposte nella banca dati di Europa creativa. Assistenza dai Desk Europa creativa nazionali.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "benevento-contributo-libri-testo-2026-2027",
+   "titolo": "Benevento, contributo per i libri di medie e superiori: domande entro il 31 ottobre",
+   "ente": "Comune di Benevento",
+   "da": [
+    "comune",
+    "regione",
+    "stato"
+   ],
+   "dove": "sannio",
+   "chi": [
+    "cittadino",
+    "giovani"
+   ],
+   "temi": [
+    "scuola",
+    "figli"
+   ],
+   "aiuto": [
+    "bonus"
+   ],
+   "forma": "Rimborso delle spese per i libri di testo",
+   "quanto": "Fino al costo dei libri della classe frequentata",
+   "apertura": "2026-08-06",
+   "scadenza": "2026-10-31",
+   "link": "https://comune.benevento.it/novita/pubblicato-il-bando-per-il-contributo-allacquisto-dei-libri-di-testo/",
+   "cose": "Contributo per l'acquisto dei libri di testo dell'anno scolastico 2026/2027 per gli alunni meno abbienti delle scuole medie e superiori che hanno sede a Benevento. Sono fondi statali ripartiti dalla Regione Campania: al Comune sono andati 267.786,22 euro.",
+   "a_chi": "Studenti iscritti nel 2026/2027 a una scuola media o superiore con sede nel Comune di Benevento, di famiglie con ISEE 2026 fino a 13.300 euro. Hanno la precedenza i richiedenti con ISEE fino a 10.633 euro; alla seconda fascia (da 10.633,01 a 13.300 euro) vanno i fondi che restano. La domanda la fa il genitore, il tutore o lo studente maggiorenne, che deve essere intestatario del conto su cui arriva il rimborso.",
+   "cosa_prevede": "Rimborso della spesa per i libri scelti dalla scuola, nel limite del costo della dotazione di testi della classe frequentata. L'importo finale dipende dai fondi e dal numero di domande accolte. Le domande sono esaminate in ordine di arrivo partendo dalla prima fascia ISEE; il pagamento avviene con accredito su conto corrente bancario o postale o su Postepay Evolution (non valgono i libretti postali).",
+   "come": "Solo online con SPID sulla piattaforma SICARE (sito del Comune, Servizi scolastici - Buoni libro) entro il 31 ottobre 2026. Allegare ISEE 2026, scontrini o fatture intestati al richiedente con i titoli dei libri, copia della carta con IBAN e nome dell'intestatario. Correzioni via mail a istruzione@comunebn.it entro il 31 ottobre.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "benevento-fondo-emergenza-abitativa-2026",
+   "titolo": "Benevento, fondo regionale per l'emergenza abitativa: domande fino al 31 dicembre",
+   "ente": "Comune di Benevento",
+   "da": [
+    "comune",
+    "regione"
+   ],
+   "dove": "sannio",
+   "chi": [
+    "cittadino"
+   ],
+   "temi": [
+    "casa",
+    "sociale"
+   ],
+   "aiuto": [
+    "bonus"
+   ],
+   "forma": "Contributo per la sistemazione abitativa",
+   "quanto": "Fino a 12.000 euro (Misura 1) o fino a 6.000 euro (Misura 2)",
+   "apertura": "2026-02-04",
+   "scadenza": "2026-12-31",
+   "scadenza_testo": "A sportello, in ordine di arrivo fino a esaurimento dei fondi regionali; termine ore 12 del 31 dicembre 2026",
+   "link": "https://comune.benevento.it/novita/emergenza-abitativa-pubblicato-lavviso-regionale/",
+   "cose": "Contributi del Fondo regionale di contrasto all'emergenza abitativa per le famiglie di Benevento in grave disagio abitativo (Misura 1) o costrette a lasciare casa per sgomberi, pericoli strutturali o calamità (Misura 2). Non riguarda l'assegnazione delle case popolari.",
+   "a_chi": "Nuclei residenti in Campania senza un alloggio adeguato di proprietà nella regione. Misura 1: ISEE fino a 10.140 euro, presa in carico dei servizi sociali con un progetto personalizzato e una situazione di grave disagio, come alloggio inadeguato o sovraffollato, sfratto, violenza domestica, assenza di fissa dimora, uscita da strutture di accoglienza. Misura 2: ISEE fino a 16.000 euro e necessità di lasciare la casa per sgombero, pericolo strutturale o forza maggiore.",
+   "cosa_prevede": "Misura 1, fino a 12.000 euro in tutto: fino a 3.000 euro per l'autonoma sistemazione; fino a 6.000 euro per l'ospitalità temporanea, massimo 12 mesi, in strutture o alloggi privati; fino all'80% del canone di un nuovo contratto d'affitto per massimo 24 mesi, più il deposito cauzionale. Misura 2, fino a 6.000 euro: fino a 3.000 euro per l'autonoma sistemazione con ISEE fino a 10.140 euro, fino a 2.000 euro con ISEE più alto, oppure fino a 6.000 euro per l'ospitalità temporanea. Non cumulabile con il fondo morosi incolpevoli ricevuto negli ultimi 3 anni.",
+   "come": "Domanda sul modello del Comune (Allegato A, diverso per Misura 1 e Misura 2) via PEC o a mano all'Ufficio Protocollo entro le ore 12 del 31 dicembre 2026. Allegare documento, ISEE ordinario o corrente, attestazione dei Servizi sociali (solo Misura 1) ed eventuale dichiarazione del proprietario. Riferimento: Settore Urbanistica, urbanistica@pec.comunebn.it.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "guardia-sanframondi-contributo-nuove-residenze",
+   "titolo": "Guardia Sanframondi, 5.000 euro a chi prende la residenza e compra o ristruttura casa",
+   "ente": "Comune di Guardia Sanframondi",
+   "da": [
+    "comune",
+    "stato"
+   ],
+   "dove": "sannio",
+   "chi": [
+    "cittadino"
+   ],
+   "temi": [
+    "casa"
+   ],
+   "aiuto": [
+    "fondo"
+   ],
+   "forma": "Contributo a fondo perduto",
+   "quanto": "5.000 euro per nucleo familiare (dotazione 25.000 euro)",
+   "apertura": "2026-10-08",
+   "scadenza": "2026-11-06",
+   "scadenza_testo": "Entro le ore 14 del 6 novembre 2026",
+   "link": "https://www.comune.guardiasanframondi.bn.it/novita/avvisi/novita_201.html",
+   "cose": "Contributo del Fondo di sostegno ai comuni marginali (terza annualità) per ripopolare il paese: va a chi sposta residenza e dimora abituale a Guardia Sanframondi, come aiuto per le spese di acquisto o ristrutturazione della casa in cui andrà a vivere.",
+   "a_chi": "Persone che hanno trasferito la residenza a Guardia Sanframondi tra la pubblicazione dell'avviso (8 ottobre 2026) e la scadenza delle domande, con spese di acquisto o ristrutturazione dell'abitazione principale. Una domanda per nucleo; esclusi i nuclei che hanno già avuto il contributo. Graduatoria a punti: 10 per ogni componente, 20 per ogni persona tra 18 e 40 anni, 15 tra 40 e 60, 10 oltre i 60, 25 per ogni minore.",
+   "cosa_prevede": "5.000 euro a fondo perduto per nucleo familiare, di una o più persone, pagati in un'unica quota sul conto corrente. Fondi disponibili: 25.000 euro; eventuali avanzi possono passare al bando per le nuove attività economiche e viceversa. Tutti i componenti devono mantenere residenza e dimora nel Comune per almeno cinque anni, pena la revoca.",
+   "come": "Domanda sul modello allegato all'avviso: a mano all'Ufficio Protocollo (via Municipio 1), con raccomandata A/R o con PEC personale a protocollo@pec.comune.guardiasanframondi.bn.it, oggetto 'Richiesta contributo a valere sul Fondo comuni marginali - Residenze'. Allegare documenti e tessere sanitarie del nucleo, autocertificazione del nucleo familiare e documenti delle spese.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "guardia-sanframondi-contributo-nuove-attivita-economiche",
+   "titolo": "Guardia Sanframondi, fino a 8.000 euro a fondo perduto per aprire una nuova attività",
+   "ente": "Comune di Guardia Sanframondi",
+   "da": [
+    "comune",
+    "stato"
+   ],
+   "dove": "sannio",
+   "chi": [
+    "impresa",
+    "nuova",
+    "commercio",
+    "artigiano",
+    "agricoltura"
+   ],
+   "temi": [
+    "aprire",
+    "investire"
+   ],
+   "aiuto": [
+    "fondo"
+   ],
+   "forma": "Contributo a fondo perduto",
+   "quanto": "80% delle spese, fino a 8.000 euro (dotazione 40.101,61 euro)",
+   "scadenza": "2026-11-06",
+   "scadenza_testo": "Entro le ore 14 del 6 novembre 2026",
+   "link": "https://www.comune.guardiasanframondi.bn.it/novita/avvisi/novita_200.html",
+   "cose": "Contributo del Fondo di sostegno ai comuni marginali (terza annualità) per chi avvia una nuova attività economica nel territorio di Guardia Sanframondi.",
+   "a_chi": "Imprese commerciali, artigianali e agricole iscritte al Registro delle imprese che avviano una nuova attività nel Comune dopo la pubblicazione dell'avviso. Vale anche un nuovo codice Ateco o una nuova unità produttiva di un'impresa già esistente che non abbia avuto il contributo negli anni precedenti; non vale il semplice trasferimento di sede. Servono DURC regolare e assenza di condanne e cause antimafia. Con più di cinque domande, punteggio per residenza del titolare trasferita a Guardia, spese maggiori, under 35, donne.",
+   "cosa_prevede": "Contributo a fondo perduto pari all'80% delle spese ammissibili, fino a 8.000 euro, in regime de minimis. Spese ammesse: macchinari, impianti e attrezzature nuovi, opere murarie e impiantistiche collegate, programmi informatici, consulenze (fino al 20% dell'investimento), polizze assicurative (fino al 10%). Escluse spese pagate in contanti, mezzi targati, leasing, lavori in economia, acquisti da soci o parenti. Erogazione in unica quota dopo la rendicontazione.",
+   "come": "Domanda sui modelli del Comune (Allegato A e piano economico Allegato B in pdf e in Excel) via PEC a protocollo@pec.comune.guardiasanframondi.bn.it, oggetto 'Richiesta contributo a valere sul Fondo comuni marginali - Nuove attività economiche', o a mano al protocollo. Allegare documento, visura camerale, preventivi o fatture, DURC.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "montesarchio-fondo-inquilini-morosi-incolpevoli-2026",
+   "titolo": "Montesarchio, fondo per gli inquilini morosi incolpevoli: fino a 12.000 euro",
+   "ente": "Comune di Montesarchio - Ufficio di Piano Ambito B03",
+   "da": [
+    "comune",
+    "regione",
+    "stato"
+   ],
+   "dove": "sannio",
+   "chi": [
+    "cittadino"
+   ],
+   "temi": [
+    "casa",
+    "crisi"
+   ],
+   "aiuto": [
+    "bonus"
+   ],
+   "forma": "Contributo per sanare la morosità o pagare un nuovo affitto",
+   "quanto": "Fino a 12.000 euro",
+   "apertura": "2026-01-14",
+   "scadenza": "2026-12-31",
+   "scadenza_testo": "A sportello, in ordine di arrivo fino a esaurimento dei fondi regionali",
+   "link": "https://www.comune.montesarchio.bn.it/it/novita/page/avviso-pubblico-per-l-accesso-al-fondo-destinato-agli-inquilini-morosi-incolpevoli-anno-2026",
+   "cose": "Contributo per chi è in affitto, ha ricevuto uno sfratto per morosità e non riesce più a pagare il canone per una perdita o una forte riduzione del reddito: licenziamento, cassa integrazione, contratto non rinnovato, malattia grave, separazione, chiusura dell'attività.",
+   "a_chi": "Residenti a Montesarchio con ISE fino a 35.000 euro o ISEE fino a 26.000 euro, destinatari di intimazione di sfratto per morosità con citazione per la convalida, con contratto d'affitto registrato (non case popolari, non categorie A/1, A/8, A/9), residenti da almeno un anno nell'alloggio e senza un'altra casa adeguata nella provincia. Cittadini italiani o Ue, o stranieri con regolare titolo di soggiorno.",
+   "cosa_prevede": "Fino a 12.000 euro in tutto: fino a 8.000 euro per sanare la morosità se al contratto restano almeno 2 anni e il proprietario rinuncia allo sfratto; fino a 6.000 euro al proprietario che rinvia lo sfratto il tempo necessario a trovare un'altra casa; deposito cauzionale e mensilità di un nuovo contratto a canone concordato. Il contributo può andare direttamente al proprietario. Non è cumulabile con la quota per l'affitto dell'assegno di inclusione.",
+   "come": "Domanda (Allegato A) con dichiarazione del proprietario (Allegato B) via PEC a protocollo@pec.comune.montesarchio.bn.it, a mano al protocollo o con raccomandata A/R entro il 31 dicembre 2026. Allegare contratto registrato, ISE e ISEE, atto di sfratto, documenti sulla perdita di reddito, documento d'identità. Informazioni: Ufficio Politiche sociali, 0824 1743820 int. 1.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "baselice-fondo-inquilini-morosi-incolpevoli-2026",
+   "titolo": "Baselice, fondo per gli inquilini morosi incolpevoli: domande fino al 31 dicembre",
+   "ente": "Comune di Baselice",
+   "da": [
+    "comune",
+    "regione",
+    "stato"
+   ],
+   "dove": "sannio",
+   "chi": [
+    "cittadino"
+   ],
+   "temi": [
+    "casa",
+    "crisi"
+   ],
+   "aiuto": [
+    "bonus"
+   ],
+   "forma": "Contributo per sanare la morosità o pagare un nuovo affitto",
+   "quanto": "Fino a 12.000 euro",
+   "scadenza": "2026-12-31",
+   "scadenza_testo": "A sportello secondo le linee guida regionali, fino al 31 dicembre 2026",
+   "link": "https://comune.baselice.bn.it/novita/avviso-pubblico-per-laccesso-al-fondo-destinato-agli-inquilini-morosi-incolpevoli-2026/",
+   "cose": "Contributo per chi è in affitto, ha ricevuto uno sfratto per morosità e non riesce più a pagare il canone per una perdita o una forte riduzione del reddito del nucleo familiare.",
+   "a_chi": "Residenti a Baselice con ISE fino a 35.000 euro o ISEE fino a 26.000 euro, destinatari di intimazione di sfratto per morosità con citazione per la convalida, con contratto d'affitto registrato (non case popolari, non categorie A/1, A/8, A/9) e residenti da almeno un anno nell'alloggio. La perdita di reddito può dipendere da licenziamento, riduzione dell'orario, cassa integrazione, contratto non rinnovato, malattia grave o altre cause indicate nell'avviso.",
+   "cosa_prevede": "Fino a 12.000 euro in tutto: fino a 8.000 euro per sanare la morosità se al contratto restano almeno 2 anni e il proprietario rinuncia allo sfratto; fino a 6.000 euro al proprietario che rinvia lo sfratto; deposito cauzionale e mensilità di un nuovo contratto a canone concordato.",
+   "come": "Domanda (Allegato A) con dichiarazione del proprietario (Allegato B) via PEC a comune.baselice@asmepec.it, a mano all'Ufficio Protocollo o con raccomandata A/R entro il 31 dicembre 2026. Allegare contratto registrato, ISE e ISEE 2026, atto di sfratto, documenti sulla perdita di reddito, documento d'identità.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "paolisi-voucher-asilo-nido-2026",
+   "titolo": "Paolisi, voucher fino a 200 euro al mese per la retta dell'asilo nido",
+   "ente": "Comune di Paolisi",
+   "da": [
+    "comune",
+    "stato"
+   ],
+   "dove": "sannio",
+   "chi": [
+    "cittadino"
+   ],
+   "temi": [
+    "figli"
+   ],
+   "aiuto": [
+    "bonus"
+   ],
+   "forma": "Voucher a parziale copertura della retta",
+   "quanto": "Fino a 200 euro al mese per bambino (fondi 46.008,35 euro)",
+   "scadenza": "2026-11-16",
+   "scadenza_testo": "Entro le ore 13 del 16 novembre 2026",
+   "link": "https://comune.paolisi.bn.it/novita/voucher-alle-famiglie-per-la-frequenza-nellanno-2026-di-nidi-e-micronidi-dinfanzia-da-parte-di-bambini-di-et-compresa-tra-3-e-36-mesi-residenti-nel-comune-di-paolisi/",
+   "cose": "Voucher per le famiglie di Paolisi con bambini da 3 a 36 mesi iscritti nel 2026 a un nido o micronido autorizzato, a Paolisi o in un altro comune. Copre la parte di retta che non rimborsa il Bonus asilo nido INPS.",
+   "a_chi": "Bambini tra 3 e 36 mesi residenti a Paolisi insieme ad almeno un genitore o al tutore, che frequentano nel 2026 un nido o micronido pubblico o privato autorizzato. Graduatoria a punti (fino a 100) che tiene conto, tra l'altro, della situazione familiare e dell'ISEE; senza ISEE la domanda resta valida ma prende zero punti per la condizione economica.",
+   "cosa_prevede": "Per ogni mese da gennaio a dicembre 2026 il voucher è pari alla retta pagata meno il Bonus nido INPS dello stesso mese, fino a 200 euro al mese per bambino. Non copre iscrizione, pasti fatturati a parte e attività extra. Le risorse, 46.008,35 euro, vengono dal Fondo speciale per l'equità del livello dei servizi assegnato al Comune.",
+   "come": "Modulo (Allegato A) in portineria o sul sito del Comune; consegna a mano all'Ufficio Protocollo (via Roma 115) o PEC a affarigenerali.paolisi@asmepec.it con oggetto 'Domanda voucher nido 2026 - cognome e nome'. Allegare ricevute o fatture delle rette da gennaio 2026, ISEE in corso di validità, documento d'identità.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "paolisi-contributo-trasporto-scolastico-alunni-disabili-2026",
+   "titolo": "Paolisi, contributo alle famiglie che accompagnano a scuola i figli con disabilità",
+   "ente": "Comune di Paolisi",
+   "da": [
+    "comune",
+    "stato"
+   ],
+   "dove": "sannio",
+   "chi": [
+    "cittadino"
+   ],
+   "temi": [
+    "scuola",
+    "figli",
+    "sociale"
+   ],
+   "aiuto": [
+    "bonus"
+   ],
+   "forma": "Contributo forfettario annuo",
+   "quanto": "Da 400 a 600 euro l'anno per famiglia",
+   "scadenza": "2026-11-08",
+   "scadenza_testo": "Entro le ore 13 dell'8 novembre 2026",
+   "link": "https://comune.paolisi.bn.it/novita/concessione-di-contributi-per-il-trasporto-scolastico-di-alunni-con-disabilit/",
+   "cose": "Contributo forfettario alle famiglie di Paolisi che portano a scuola con un proprio mezzo i figli con disabilità non autonomi negli spostamenti, anche verso scuole di altri comuni, per i periodi di scuola tra gennaio e giugno e tra settembre e dicembre 2026.",
+   "a_chi": "Studenti residenti a Paolisi iscritti nel 2026 a scuola dell'infanzia, primaria o media, con disabilità accertata ai sensi della legge 104/1992, senza autonomia negli spostamenti casa-scuola, che non usano servizi di trasporto gratuiti o abbonamenti gratuiti al trasporto pubblico e sono accompagnati con un mezzo della famiglia. Graduatoria in base all'ISEE per minorenni, dal più basso.",
+   "cosa_prevede": "Importi annui per nucleo: 400 euro con un figlio e scuola a Paolisi, 500 euro con un figlio e scuola in un altro comune, 500 euro con più figli e scuole a Paolisi, 600 euro con più figli e almeno uno fuori comune; la metà se il trasporto è solo di andata o solo di ritorno. Non servono le ricevute delle spese. Fondi disponibili: 4.383,88 euro.",
+   "come": "Modulo Allegato A (Ufficio Servizi sociali o sito del Comune), consegna a mano all'Ufficio Protocollo (via Roma 115) o PEC a affarigenerali.paolisi@asmepec.it con oggetto 'Domanda contributo trasporto scolastico studenti con disabilità - Anno 2026 - cognome e nome'.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "circello-contributo-libri-testo-2026-2027",
+   "titolo": "Circello, contributo per i libri di medie e superiori: domande entro il 31 ottobre",
+   "ente": "Comune di Circello",
+   "da": [
+    "comune",
+    "regione",
+    "stato"
+   ],
+   "dove": "sannio",
+   "chi": [
+    "cittadino",
+    "giovani"
+   ],
+   "temi": [
+    "scuola",
+    "figli"
+   ],
+   "aiuto": [
+    "bonus"
+   ],
+   "forma": "Rimborso delle spese per i libri di testo",
+   "quanto": "Non oltre la spesa sostenuta e il costo dei libri della classe",
+   "scadenza": "2026-10-31",
+   "link": "https://comune.circello.bn.it/novita/fornitura-libri-di-testo-as-20262027/",
+   "cose": "Contributo per l'acquisto dei libri di testo dell'anno scolastico 2026/2027, con i fondi statali ripartiti dalla Regione Campania, per gli studenti delle scuole medie e superiori con sede a Circello.",
+   "a_chi": "Studenti, qualunque sia la residenza, iscritti a scuole secondarie di primo e secondo grado con sede a Circello, oppure residenti a Circello che frequentano scuole di altre regioni che non danno il beneficio. ISEE fino a 13.300 euro: prima la fascia fino a 10.633 euro, poi quella da 10.633,01 a 13.300 euro.",
+   "cosa_prevede": "Rimborso della spesa per libri di testo e contenuti didattici alternativi scelti dalla scuola, non oltre la spesa sostenuta e nel limite del costo della dotazione della classe frequentata.",
+   "come": "Consegna al Comune, entro il 31 ottobre 2026, della scheda di frequenza (Allegato A), dell'ISEE in corso di validità (con ISEE zero, autocertificazione Allegato B sulle fonti di sostentamento), della fattura dei libri e di un documento d'identità. Moduli sul sito; informazioni al Settore 1 Finanziario/Amministrativo.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "molinara-contributo-libri-testo-2026-2027",
+   "titolo": "Molinara, contributo per i libri della scuola media: domande entro il 30 ottobre",
+   "ente": "Comune di Molinara",
+   "da": [
+    "comune",
+    "regione",
+    "stato"
+   ],
+   "dove": "sannio",
+   "chi": [
+    "cittadino",
+    "giovani"
+   ],
+   "temi": [
+    "scuola",
+    "figli"
+   ],
+   "aiuto": [
+    "bonus"
+   ],
+   "forma": "Contributo per l'acquisto dei libri di testo",
+   "quanto": "",
+   "scadenza": "2026-10-30",
+   "scadenza_testo": "Entro le ore 18 del 30 ottobre 2026",
+   "link": "https://www.comune.molinara.bn.it/novita/avvisi/novita_62.html",
+   "cose": "Contributo per l'acquisto dei libri di testo 2026/2027 per gli alunni della scuola secondaria di primo grado 'Celeste Parisi' di Molinara, con i fondi ripartiti dalla Regione Campania.",
+   "a_chi": "Alunni, qualunque sia la residenza, iscritti nel 2026/2027 alla scuola media di Molinara, di famiglie con ISEE fino a 13.300 euro: prima la fascia fino a 10.633 euro, poi quella da 10.633,01 a 13.300 euro.",
+   "cosa_prevede": "Contributo per i libri di testo. Il Comune forma una graduatoria in base all'ISEE dichiarato e ripartisce le somme quando vengono accreditate dalla Regione Campania.",
+   "come": "Richiesta sul modello Allegato A (sito del Comune) firmata dal genitore, con ISEE in corso di validità (Allegato B se l'ISEE è pari a zero) e documento d'identità: via mail a info@comune.molinara.bn.it, PEC a info@pec.comune.molinara.bn.it o a mano all'Ufficio Protocollo.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "san-leucio-del-sannio-contributo-libri-testo-2026-2027",
+   "titolo": "San Leucio del Sannio, contributo per i libri della scuola media entro il 31 ottobre",
+   "ente": "Comune di San Leucio del Sannio",
+   "da": [
+    "comune",
+    "regione",
+    "stato"
+   ],
+   "dove": "sannio",
+   "chi": [
+    "cittadino",
+    "giovani"
+   ],
+   "temi": [
+    "scuola",
+    "figli"
+   ],
+   "aiuto": [
+    "bonus"
+   ],
+   "forma": "Contributo per l'acquisto dei libri di testo",
+   "quanto": "",
+   "scadenza": "2026-10-31",
+   "link": "https://www.comune.sanleuciodelsannio.bn.it/novita/avvisi/novita_23.html",
+   "cose": "Contributo per l'acquisto dei libri di testo 2026/2027 per gli alunni meno abbienti della scuola media di San Leucio del Sannio, con i fondi ripartiti dalla Regione Campania: al Comune sono stati assegnati 2.504,24 euro.",
+   "a_chi": "Studenti iscritti nel 2026/2027 alla scuola secondaria di primo grado con sede a San Leucio del Sannio, di famiglie con ISEE in corso di validità fino a 13.300 euro: prima la fascia fino a 10.633 euro, poi quella da 10.633,01 a 13.300 euro. Con ISEE pari a zero o senza redditi nel 2025 bisogna indicare le fonti di sostentamento (Allegato C).",
+   "cosa_prevede": "Contributo per i libri di testo acquistati secondo l'elenco dell'Istituto comprensivo 'Luigi Settembrini', accreditato sull'IBAN indicato e riscuotibile solo dal genitore richiedente o dallo studente maggiorenne. Il Comune approva la graduatoria degli aventi diritto.",
+   "come": "Modulo Allegato B (sito del Comune o segreteria della scuola) da riconsegnare alla segreteria della scuola entro il 31 ottobre 2026, con ISEE, fatture quietanzate con il dettaglio dei libri, fotocopia dell'IBAN e documento di riconoscimento. Informazioni: Ufficio Amministrativo del Comune, 0824 45004.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "foiano-di-val-fortore-contributo-libri-testo-2026-2027",
+   "titolo": "Foiano di Val Fortore, contributo per i libri di testo: domande entro il 30 novembre",
+   "ente": "Comune di Foiano di Val Fortore",
+   "da": [
+    "comune",
+    "regione",
+    "stato"
+   ],
+   "dove": "sannio",
+   "chi": [
+    "cittadino",
+    "giovani"
+   ],
+   "temi": [
+    "scuola",
+    "figli"
+   ],
+   "aiuto": [
+    "bonus"
+   ],
+   "forma": "Rimborso delle spese per i libri di testo",
+   "quanto": "",
+   "scadenza": "2026-11-30",
+   "link": "https://comune.foianodivalfortore.bn.it/novita/contributo-per-acquisto-libri-di-testo/",
+   "cose": "Contributo per la fornitura gratuita, totale o parziale, dei libri di testo 2026/2027 per gli alunni delle scuole medie e superiori, con il fondo statale ripartito dalla Regione Campania. Al Comune sono stati assegnati 2.041 euro.",
+   "a_chi": "Alunni delle scuole secondarie di primo e secondo grado di famiglie con ISEE fino a 13.300 euro: prima la fascia fino a 10.633 euro, poi quella da 10.633,01 a 13.300 euro. Con ISEE pari a zero bisogna indicare e quantificare le fonti di sostentamento.",
+   "cosa_prevede": "Rimborso totale o parziale della spesa per i libri di testo della classe frequentata nel 2026/2027, sulla base di fatture o scontrini.",
+   "come": "Domanda sul modulo disponibile sul sito del Comune e nella segreteria della scuola, da presentare al protocollo del Comune entro il 30 novembre 2026 con fotocopia di carta d'identità e codice fiscale, ISEE in corso di validità, fatture o scontrini originali dei libri.",
+   "controllato": "2026-10-28"
   }
  ]
 }

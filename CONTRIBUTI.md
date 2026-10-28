@@ -65,7 +65,8 @@ Da dove arriva la pagina (strumenti/contributi.py):
 - **Unione europea**: youth.europa.eu (DiscoverEU, Corpo europeo di solidarietà), Erasmus+ (scadenze per scuole e
   associazioni), Erasmus per giovani imprenditori, EIC, Europa creativa, CERV (gemellaggi), LIFE, AGRIP (promozione
   dei prodotti agricoli). Solo quelle davvero alla portata di chi sta qui.
-- **Comuni e Provincia**: i siti del Comune di Benevento e dei Comuni, gli Ambiti sociali (B1-B5), la Provincia.
+- **Comuni e Provincia**: i siti del Comune di Benevento e dei Comuni, gli Ambiti sociali (B1-B5), la Provincia di
+  Benevento (provincia.benevento.it, albo pretorio: lui, 28 ott 2026, «provincia ne dà?»; quel giorno non ne aveva).
   Gli aiuti dei Comuni che sono già notizie con `"contributo"` non si rifanno.
 - **Per scoprire**: le notizie del giorno (notizie.json), i giornali locali, le pagine delle associazioni. La voce si
   scrive però **solo dalla pagina ufficiale** di chi dà i soldi.
@@ -89,7 +90,7 @@ Da dove arriva la pagina (strumenti/contributi.py):
 ```json
 {"id": "slug-unico-descrittivo", "titolo": "titolo chiaro, max ~90 caratteri",
  "ente": "INPS | Regione Campania | Camera di Commercio Irpinia Sannio | Comune di …",
- "da": ["europa|stato|regione|camera|comune|categoria|altri"],
+ "da": ["europa|stato|regione|camera|comune|provincia|categoria|altri"],
  "dove": "sannio|campania|sud|italia|europa",
  "chi": ["cittadino|giovani|commercio|artigiano|agricoltura|turismo|impresa|nuova|professionista|associazione|ente"],
  "temi": ["figli|scuola|casa|lavoro|investire|aprire|digitale|energia|innovazione|export|credito|giovani-donne|crisi|sociale|cultura"],

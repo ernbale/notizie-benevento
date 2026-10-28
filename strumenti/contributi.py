@@ -71,9 +71,11 @@ SETTORI = {"Commercio": "commercio", "Artigianato": "artigiano", "Agricoltura, s
 # Comuni e altro che neanche so»): chi mette o gestisce i soldi; i fondi europei gestiti da Stato o Regione hanno anche
 # «europa»
 DA = {"europa": "Unione europea", "stato": "Stato", "regione": "Regione Campania", "camera": "Camera di Commercio",
-      "comune": "Comuni", "categoria": "Associazioni di categoria", "altri": "Fondazioni e altri"}
+      "comune": "Comuni", "provincia": "Provincia di Benevento", "categoria": "Associazioni di categoria",
+      "altri": "Fondazioni e altri"}
 DA_ENTE = [(r"Commissione europea|Unione europea|EISMEA|EACEA", "europa"), (r"Camera di Commercio|CCIAA", "camera"),
            (r"Regione Campania|Campania|ADISURC", "regione"), (r"^Comun[ei]\b|Ambito", "comune"),
+           (r"Provincia di Benevento", "provincia"),
            (r"Confidi|Confindustria|Confartigianato|\bCNA\b|Confcommercio|Coldiretti|Confagricoltura|Confesercenti", "categoria"),
            (r"Minister|Presidenza del Consiglio|Dipartimento|Agenzia (delle Entrate|per |ICE|Nazionale)|INPS|INAIL|Invitalia|"
             r"SIMEST|GSE|Gestore dei Servizi|Credito Sportivo|CNR|Consiglio Nazionale|ISMEA|Cassa depositi|ENEA|"
