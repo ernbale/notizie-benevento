@@ -435,14 +435,13 @@
   .chiusure-box { display: block; text-decoration: none; color: var(--nero); margin-bottom: 18px; }
   .chiusure-box .titolo-col { border-top-color: var(--rosso); color: var(--rosso); margin-bottom: 8px; }
   .storia-corso { max-width: 760px; margin: 14px 0 6px; }
-  /* «Nei giorni scorsi» nelle sezioni e nelle zone (giorniScorsi): le ultime già passate in archivio, come .ultime */
-  .giorni-scorsi { margin: 26px 0 0; }
-  .giorni-scorsi ul { list-style: none; margin: 0; padding: 0; columns: 2 300px; column-gap: 34px; }
-  .giorni-scorsi li { break-inside: avoid; padding: 7px 0; border-bottom: 1px solid var(--riga); font: 400 15.5px/1.35 var(--serif); }
-  .giorni-scorsi li a { color: var(--nero); text-decoration: none; }
-  .giorni-scorsi li a:hover { text-decoration: underline; }
-  .giorni-scorsi li span { font: 400 12px var(--sans); color: var(--grigio); white-space: nowrap; }
-  .giorni-scorsi .link-tutte { display: inline-block; margin-top: 10px; }
+  /* i numeri delle pagine in fondo a sezioni, zone e sport (numeriPagine), come i bottoni delle discipline */
+  .pagine { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 26px 0 6px; }
+  .pagine a, .pagine .attuale { font: 600 15px var(--sans); min-width: 40px; box-sizing: border-box; padding: 8px 12px; text-align: center;
+    border: 1px solid var(--riga); background: rgba(255, 255, 255, .5); color: var(--nero); border-radius: 3px; text-decoration: none; }
+  .pagine a:hover { border-color: var(--nero); }
+  .pagine .attuale { background: var(--nero); border-color: var(--nero); color: #fff; }
+  .pagine .salto { font: 600 15px var(--sans); color: var(--grigio); padding: 0 2px; }
   /* la pagina Contributi */
   .contr-riepilogo { font: 600 14px var(--sans); color: var(--grigio); margin: 14px 0 4px; }
   .contr-filtri { padding: 10px 0 14px; border-bottom: 1px solid var(--riga); }
@@ -829,7 +828,7 @@
 
 
   <main id="contenuto"></main>
-  <!--ultime--><section class="ultime" aria-label="Altre notizie"><h2>Le ultime notizie</h2><ul><li><a href="/notizia/arpaise-esercitazione-campania-felix-esercito-2026/">Arpaise, conclusa l&#x27;esercitazione «Campania Felix» dell&#x27;Esercito: una settimana di campo per le emergenze con Protezione civile e Croce Rossa</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/mozione-caro-carburanti/">Caro carburanti, il Consiglio regionale approva la mozione della maggioranza: un fondo straordinario per autotrasporto e agricoltura</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/faicchio-confindustria-benevento-caserta-manifesto-valli-telesina-volturno/">Faicchio, Confindustria Benevento e Caserta firmano un manifesto per le valli Telesina e del Volturno: prima la Telesina a quattro corsie</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/benevento-raid-debito-droga-2022-mandante-domiciliari/">Raid armato a Benevento per un debito di droga nel 2022: il presunto mandante passa dal carcere ai domiciliari</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/benevento-incanto-di-natale-2026-giunta-600mila-euro/">Benevento, «InCanto di Natale» dal 14 novembre: Cant&#x27;Albero in piazza Risorgimento, schiaccianoci giganti e presepe vivente</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/provincia-benevento-censimento-distributori-carburante-strade-provinciali/">Provincia di Benevento, censimento dei distributori di carburante sulle strade provinciali: dichiarazione entro 30 giorni</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/benevento-liceo-alberti-virgilio-patentino-droni-gratis/">Benevento, al liceo Alberti-Virgilio il patentino per pilotare i droni: corso ed esame pagati dalla scuola</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/atlante-storico-calcio-italiano-quattro-squadre-sannio/">Atlante storico del calcio italiano: ci sono anche Benevento, Forza e Coraggio, Torrecuso e Sant&#x27;Agata</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/buonalbergo-carta-dedicata-a-te-lista-beneficiari-2026/">Carta Dedicata a te, pubblicati gli elenchi dei beneficiari in nove Comuni del Sannio: prima ricarica dal 4 novembre</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/pietraroja-progetto-dae-mappa-defibrillatori-croce-rossa/">Pietraroja aderisce al Progetto DAE della Croce Rossa: i defibrillatori del paese su una mappa online</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/eav-sciopero-generale-30-ottobre-napoli-benevento/">EAV, rinviato lo sciopero generale del 30 ottobre: niente stop per treni e bus, anche sulla Napoli-Benevento</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/telese-terme-mcdonalds-apre-29-ottobre-35-assunzioni/">Telese Terme, giovedì 29 ottobre apre il McDonald&#x27;s di via Lagni: 35 assunti</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/sannio-acque-undici-comuni-gestione-autonoma-ricorsi-tar/">Acqua, undici Comuni del Sannio contro il passaggio a Sannio Acque: depositato il ricorso al TAR</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/airola-operaio-morto-cantiere-2024-chiesto-rinvio-a-giudizio/">Airola, operaio morto nel cantiere nel 2024: la Procura chiede il processo per il titolare dell&#x27;impresa e il figlio</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/paduli-tentato-femminicidio-moglie-abbreviato-rinviato-esame/">Paduli, spari alla moglie: il 38enne piange e non riesce a parlare, il suo esame rinviato di una settimana</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/telese-gepos-sindacati-conti-assunzioni-sit-in-26-ottobre/">Telese Terme, l&#x27;ASL comincia i controlli alla clinica Gepos dopo i licenziamenti: i sindacati chiedono verifiche sul laboratorio</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/sant-angelo-a-cupolo-pastene-moglie-uccisa-perizia-psichiatrica/">Sant&#x27;Angelo a Cupolo, donna uccisa a Pastene il giorno di Ferragosto: la gip dispone la perizia psichiatrica sul marito di 76 anni</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/cerreto-sannita-comitato-acqua-pubblica-escursione-dibattito-31-ottobre/">Cerreto Sannita, nasce il Comitato per l&#x27;acqua pubblica: sabato 31 ottobre escursione alle sorgenti e dibattito</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/benevento-teatro-romano-festival-made-in-italy-moda-scuole/">Benevento, al Teatro Romano la prima edizione del Festival del Made in Italy: sfilano gli abiti degli studenti di moda della Campania</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/benevento-piazza-castello-4-novembre-traffico-sosta-forze-armate/">Benevento, mercoledì 4 novembre chiuse piazza Castello, piazza IV Novembre e via del Sole per la Giornata delle Forze armate</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/benevento-inchiesta-comune-copia-telefoni-indagati-4-novembre/">Inchiesta sul Comune di Benevento, la gip dice no all&#x27;incidente probatorio sui telefoni: il 4 novembre la Procura affida la copia dei dati</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/santagata-de-goti-marcia-in-rosa-2026-prevenzione/">Sant&#x27;Agata de&#x27; Goti, nove chilometri a piedi per la Marcia in Rosa sulla prevenzione dei tumori</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/benevento-piu-sicuri-insieme-truffe-anziani-6-novembre/">Benevento, truffe agli anziani: dopo l&#x27;incontro all&#x27;Addolorata il prossimo è il 6 novembre a Santa Maria di Costantinopoli</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/basket-giovanile-united-benevento-under-19-vince-derby-smile/">Basket giovanile a Benevento, la United Under 19 vince il derby con la Smile 76-44</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/fortore-telefono-internet-interrotti-confederazione-imprese-italia/">Fortore, telefono e internet di nuovo interrotti: le imprese chiedono controlli sulla rete</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/paduli-51enne-carcere-condanna-definitiva-violenza-sessuale-maltrattamenti/">Paduli, 51enne in carcere: condanna definitiva a 10 anni per violenza sessuale, stalking e maltrattamenti in famiglia</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/apollosa-ladri-studio-tecnico-centro-28-ottobre/">Apollosa, ladri nello studio di una geometra in centro: entrati dal balcone</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/san-giorgio-del-sannio-statale-7-scontro-due-auto-feriti-28-ottobre/">Statale 7 Appia tra San Giorgio del Sannio e Calvi, frontale tra due auto: una si ribalta, due feriti al San Pio</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/pontelandolfo-scuola-via-romanelli-vie-di-fuga-progetto-177mila-euro/">Pontelandolfo, vie di fuga e spazi esterni per la scuola di via Romanelli: approvato il progetto da 177mila euro</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/benevento-nicola-sguera-premio-agrorinasce-corpo-a-rendere/">Benevento, lo scrittore Nicola Sguera vince il premio nazionale Agrorinasce con il romanzo «Corpo a rendere»</a> <span>28 ottobre 2026</span></li></ul><p class="tutte"><a href="/archivio/">Tutte le notizie, mese per mese ›</a></p></section><!--/ultime-->
+  <!--ultime--><section class="ultime" aria-label="Altre notizie"><h2>Le ultime notizie</h2><ul><li><a href="/notizia/benevento-corso-garibaldi-60enne-malore-alla-guida-municipale/">Benevento, 60enne si sente male mentre guida in corso Garibaldi: lo soccorrono i vigili urbani</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/arpaise-esercitazione-campania-felix-esercito-2026/">Arpaise, conclusa l&#x27;esercitazione «Campania Felix» dell&#x27;Esercito: una settimana di campo per le emergenze con Protezione civile e Croce Rossa</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/mozione-caro-carburanti/">Caro carburanti, il Consiglio regionale approva la mozione della maggioranza: un fondo straordinario per autotrasporto e agricoltura</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/faicchio-confindustria-benevento-caserta-manifesto-valli-telesina-volturno/">Faicchio, Confindustria Benevento e Caserta firmano un manifesto per le valli Telesina e del Volturno: prima la Telesina a quattro corsie</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/benevento-raid-debito-droga-2022-mandante-domiciliari/">Raid armato a Benevento per un debito di droga nel 2022: il presunto mandante passa dal carcere ai domiciliari</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/benevento-incanto-di-natale-2026-giunta-600mila-euro/">Benevento, «InCanto di Natale» dal 14 novembre: Cant&#x27;Albero in piazza Risorgimento, schiaccianoci giganti e presepe vivente</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/provincia-benevento-censimento-distributori-carburante-strade-provinciali/">Provincia di Benevento, censimento dei distributori di carburante sulle strade provinciali: dichiarazione entro 30 giorni</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/benevento-liceo-alberti-virgilio-patentino-droni-gratis/">Benevento, al liceo Alberti-Virgilio il patentino per pilotare i droni: corso ed esame pagati dalla scuola</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/atlante-storico-calcio-italiano-quattro-squadre-sannio/">Atlante storico del calcio italiano: ci sono anche Benevento, Forza e Coraggio, Torrecuso e Sant&#x27;Agata</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/buonalbergo-carta-dedicata-a-te-lista-beneficiari-2026/">Carta Dedicata a te, pubblicati gli elenchi dei beneficiari in nove Comuni del Sannio: prima ricarica dal 4 novembre</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/pietraroja-progetto-dae-mappa-defibrillatori-croce-rossa/">Pietraroja aderisce al Progetto DAE della Croce Rossa: i defibrillatori del paese su una mappa online</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/eav-sciopero-generale-30-ottobre-napoli-benevento/">EAV, rinviato lo sciopero generale del 30 ottobre: niente stop per treni e bus, anche sulla Napoli-Benevento</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/telese-terme-mcdonalds-apre-29-ottobre-35-assunzioni/">Telese Terme, giovedì 29 ottobre apre il McDonald&#x27;s di via Lagni: 35 assunti</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/sannio-acque-undici-comuni-gestione-autonoma-ricorsi-tar/">Acqua, undici Comuni del Sannio contro il passaggio a Sannio Acque: depositato il ricorso al TAR</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/airola-operaio-morto-cantiere-2024-chiesto-rinvio-a-giudizio/">Airola, operaio morto nel cantiere nel 2024: la Procura chiede il processo per il titolare dell&#x27;impresa e il figlio</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/paduli-tentato-femminicidio-moglie-abbreviato-rinviato-esame/">Paduli, spari alla moglie: il 38enne piange e non riesce a parlare, il suo esame rinviato di una settimana</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/telese-gepos-sindacati-conti-assunzioni-sit-in-26-ottobre/">Telese Terme, l&#x27;ASL comincia i controlli alla clinica Gepos dopo i licenziamenti: i sindacati chiedono verifiche sul laboratorio</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/sant-angelo-a-cupolo-pastene-moglie-uccisa-perizia-psichiatrica/">Sant&#x27;Angelo a Cupolo, donna uccisa a Pastene il giorno di Ferragosto: la gip dispone la perizia psichiatrica sul marito di 76 anni</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/cerreto-sannita-comitato-acqua-pubblica-escursione-dibattito-31-ottobre/">Cerreto Sannita, nasce il Comitato per l&#x27;acqua pubblica: sabato 31 ottobre escursione alle sorgenti e dibattito</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/benevento-teatro-romano-festival-made-in-italy-moda-scuole/">Benevento, al Teatro Romano la prima edizione del Festival del Made in Italy: sfilano gli abiti degli studenti di moda della Campania</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/benevento-piazza-castello-4-novembre-traffico-sosta-forze-armate/">Benevento, mercoledì 4 novembre chiuse piazza Castello, piazza IV Novembre e via del Sole per la Giornata delle Forze armate</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/benevento-inchiesta-comune-copia-telefoni-indagati-4-novembre/">Inchiesta sul Comune di Benevento, la gip dice no all&#x27;incidente probatorio sui telefoni: il 4 novembre la Procura affida la copia dei dati</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/santagata-de-goti-marcia-in-rosa-2026-prevenzione/">Sant&#x27;Agata de&#x27; Goti, nove chilometri a piedi per la Marcia in Rosa sulla prevenzione dei tumori</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/benevento-piu-sicuri-insieme-truffe-anziani-6-novembre/">Benevento, truffe agli anziani: dopo l&#x27;incontro all&#x27;Addolorata il prossimo è il 6 novembre a Santa Maria di Costantinopoli</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/basket-giovanile-united-benevento-under-19-vince-derby-smile/">Basket giovanile a Benevento, la United Under 19 vince il derby con la Smile 76-44</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/fortore-telefono-internet-interrotti-confederazione-imprese-italia/">Fortore, telefono e internet di nuovo interrotti: le imprese chiedono controlli sulla rete</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/paduli-51enne-carcere-condanna-definitiva-violenza-sessuale-maltrattamenti/">Paduli, 51enne in carcere: condanna definitiva a 10 anni per violenza sessuale, stalking e maltrattamenti in famiglia</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/apollosa-ladri-studio-tecnico-centro-28-ottobre/">Apollosa, ladri nello studio di una geometra in centro: entrati dal balcone</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/san-giorgio-del-sannio-statale-7-scontro-due-auto-feriti-28-ottobre/">Statale 7 Appia tra San Giorgio del Sannio e Calvi, frontale tra due auto: una si ribalta, due feriti al San Pio</a> <span>28 ottobre 2026</span></li><li><a href="/notizia/pontelandolfo-scuola-via-romanelli-vie-di-fuga-progetto-177mila-euro/">Pontelandolfo, vie di fuga e spazi esterni per la scuola di via Romanelli: approvato il progetto da 177mila euro</a> <span>28 ottobre 2026</span></li></ul><p class="tutte"><a href="/archivio/">Tutte le notizie, mese per mese ›</a></p></section><!--/ultime-->
 
   <footer>
     <p>Notizie Benevento è un report automatico: le notizie appartengono ai giornali citati. Qui le raccontiamo con parole nostre, confrontando le fonti, con i link agli articoli originali.</p>
@@ -907,7 +906,7 @@
   // Tutti i file si chiedono dalla radice («/archivio/…»): aperta una notizia dalla prima pagina l'indirizzo diventa
   // /notizia/<id>/ e un indirizzo relativo cercava /notizia/<id>/archivio/2026-10.json, che non c'è: le notizie in
   // archivio aperte dalla ricerca o dagli elenchi dicevano «Notizia non trovata» (lui, 28 ott 2026, la Miwa a Ragusa).
-  var archivio = { indice: null, mesi: {} };
+  var archivio = { indice: null, mesi: {}, voci: null, pronti: {} };   // voci e pronti: quello già arrivato
   function prendiJson(url) {
     return fetch(url + "?t=" + Date.now(), { cache: "no-store" })
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); });
@@ -916,7 +915,8 @@
     if (!archivio.indice) {
       archivio.indice = prendiJson("/archivio/indice.json")
         .then(function (j) { return (j && Array.isArray(j.voci)) ? j.voci : []; })
-        .catch(function () { archivio.indice = null; return []; });
+        .catch(function () { archivio.indice = null; return []; })
+        .then(function (v) { archivio.voci = v; return v; });
     }
     return archivio.indice;
   }
@@ -924,7 +924,8 @@
     if (!/^\d{4}-\d{2}$/.test(String(mese))) return Promise.resolve({});
     if (!archivio.mesi[mese]) {
       archivio.mesi[mese] = prendiJson("/archivio/" + mese + ".json")
-        .catch(function () { delete archivio.mesi[mese]; return {}; });
+        .catch(function () { delete archivio.mesi[mese]; return {}; })
+        .then(function (m) { archivio.pronti[mese] = m || {}; return m; });
     }
     return archivio.mesi[mese];
   }
@@ -1363,6 +1364,7 @@
   function pareggiaColonne(colonne) {
     if (window.matchMedia("(max-width: 620px)").matches) return;   // sul telefono la colonna è una sola
     var perId = {};
+    Object.keys(archivio.pronti).forEach(function (m) { (archivio.pronti[m].notizie || []).forEach(function (n) { perId[n.id] = n; }); });
     (dati.notizie || []).forEach(function (n) { perId[n.id] = n; });
     var schede = [];
     colonne.forEach(function (c) { schede = schede.concat([].slice.call(c.children)); });
@@ -1424,13 +1426,13 @@
   }
   function scelteSport() {
     var ci = {};
-    (dati.notizie || []).forEach(function (n) { if (n.categoria === "sport" && n.sport) ci[n.sport] = true; });
+    (dati.notizie || []).concat(archivio.voci || []).forEach(function (n) { if (n.categoria === "sport" && n.sport) ci[n.sport] = true; });
     var nav = el("nav", "discipline", []);
     [""].concat(Object.keys(NOMI_SPORT).filter(function (k) { return ci[k]; })).forEach(function (k) {
       var b = el("button", "", [k ? NOMI_SPORT[k] : "Tutti gli sport"]);
       b.type = "button";
       b.setAttribute("aria-pressed", filtroSport === k ? "true" : "false");
-      b.addEventListener("click", function () { filtroSport = k; disegna(); });
+      b.addEventListener("click", function () { filtroSport = k; paginaSez = 1; vaiFiltri(); });
       nav.appendChild(b);
     });
     return nav;
@@ -1790,35 +1792,39 @@
     var tit = titoloSezione();
     if (tit) box.appendChild(el("h1", "titolo-sezione", [tit]));
     if (filtroCat === "contributi") { paginaContributi(box); return; }
-    var lista = filtrate();
+    var vive = filtrate(), lista = vive, pag = null;
     if (filtroCat === "sport") box.appendChild(scelteSport());
-    if (lista.length) box.appendChild(strisciaUltime(lista));
+    if (vive.length) box.appendChild(strisciaUltime(vive));
     if (filtroCat === "avvisi") { paginaAvvisi(box); return; }
-    riquadriSezione(box, lista);
+    if (filtroCat || filtroZona) { pag = paginaSezione(vive); lista = pag.lista; }
+    var primaPag = !pag || pag.n === 1;
+    if (primaPag) riquadriSezione(box, lista);
     if (!lista.length) {
-      if (filtroCat !== "eventi")
-        box.appendChild(el("p", "vuoto", [(dati.notizie || []).length ? "Nessuna notizia di questi giorni con questi filtri." : "Il primo aggiornamento arriva a breve."]));
-      if (filtroCat || filtroZona) box.appendChild(giorniScorsi());
+      if (pag && pag.attesa) box.appendChild(el("p", "vuoto", ["Caricamento…"]));
+      else if (filtroCat !== "eventi")
+        box.appendChild(el("p", "vuoto", [(dati.notizie || []).length ? "Nessuna notizia con questi filtri." : "Il primo aggiornamento arriva a breve."]));
       return;
     }
 
     var adesso = Date.now(), soloStrade = filtroCat === "strade";
-    var avvisi = soloStrade ? [] : lista.filter(eAvviso);
+    var avvisi = soloStrade || !primaPag ? [] : lista.filter(eAvviso);
     // gli avvisi stanno nel loro riquadro; in pagina restano solo quelli importanti
     var principali = lista.filter(function (n) { return avvisi.indexOf(n) < 0 || n.rilevante; });
     if (!principali.length) { principali = lista; avvisi = []; }
     var perRilievo = principali.slice().sort(function (a, b) { return rilievo(b, adesso) - rilievo(a, adesso); });
-    var apertura = perRilievo[0], spalla = perRilievo.slice(1, 4);
+    var apertura = primaPag ? perRilievo[0] : null, spalla = primaPag ? perRilievo.slice(1, 4) : [];   // dalla pagina 2 solo l'elenco
     var resto = principali.filter(function (n) { return n !== apertura && spalla.indexOf(n) < 0; });
     var griglia = el("section", "griglia", []);
     var c1 = el("div", "col principale", []), c3 = el("div", "col laterale", []);
     var testa = el("div", "testa-pagina", []), sx = el("div", "", []), dx = el("div", "", []);
-    sx.appendChild(scheda(apertura, "apertura"));
-    spalla.forEach(function (n) { dx.appendChild(scheda(n, "spalla")); });
-    testa.appendChild(sx);
-    if (spalla.length) testa.appendChild(dx);
-    c1.appendChild(testa);
-    var altre = el("section", "altre", [el("h3", "titolo-col", ["Le altre notizie, dalla più recente"])]);
+    if (apertura) {
+      sx.appendChild(scheda(apertura, "apertura"));
+      spalla.forEach(function (n) { dx.appendChild(scheda(n, "spalla")); });
+      testa.appendChild(sx);
+      if (spalla.length) testa.appendChild(dx);
+      c1.appendChild(testa);
+    }
+    var altre = el("section", "altre", [el("h3", "titolo-col", [primaPag ? "Le altre notizie, dalla più recente" : "Pagina " + pag.n + " di " + pag.pagine + ", dalla più recente"])]);
     // ogni notizia va nella colonna più corta finora (altezza stimata: foto, titolo, riassunto), così le due
     // colonne finiscono più o meno insieme; «order» tiene l'ordine giusto sul telefono, dove la colonna è una sola
     var ag = el("div", "altre-griglia", []), colonne = [el("div", "altre-col", []), el("div", "altre-col", [])], alto = [0, 0];
@@ -1833,7 +1839,8 @@
     altre.appendChild(ag);
     c1.appendChild(altre);
     if (!resto.length) altre.style.display = "none";
-    if (filtroCat || filtroZona) c1.appendChild(giorniScorsi());
+    var np = pag && numeriPagine(pag);
+    if (np) c1.appendChild(np);
     var rz = riquadroChiusure();
     if (rz) c3.appendChild(rz);
     // Benevento Calcio (calcio.js): nel giorno della partita sopra il meteo, gli altri giorni sotto
@@ -2559,33 +2566,71 @@
     });
     return striscia;
   }
-  // Nei giorni scorsi: in prima pagina restano solo le notizie degli ultimi 3 giorni (archivia.py), così nelle sezioni le
-  // altre sembravano sparite (lui, 28 ott 2026: «articoli Miwa spariti»: in Sport › Basket non c'erano più le partite
-  // della settimana). Sotto le notizie della pagina, le ultime della stessa sezione, zona e disciplina già passate in
-  // archivio (archivio/indice.json), con il link all'archivio per le altre.
-  var GIORNI_SCORSI = 12;
-  function giorniScorsi() {
-    var fc = filtroCat, fz = filtroZona, fs = filtroSport, sez = el("section", "giorni-scorsi", []);
-    var qui = {};
-    (dati.notizie || []).forEach(function (n) { qui[n.id] = true; });
-    indiceArchivio().then(function (voci) {
-      var v = voci.filter(function (x) {
-        if ((x.tipo || "notizia") !== "notizia" || qui[x.id]) return false;
-        var cat = fc === "avvisi" ? x.categoria === "avvisi" || x.categoria === "strade" : !fc || x.categoria === fc;
-        return cat && (!fz || x.zona === fz) && (fc !== "sport" || !fs || x.sport === fs);
-      }).sort(function (a, b) { return String(b.pubblicato).localeCompare(String(a.pubblicato)); }).slice(0, GIORNI_SCORSI);
-      if (!v.length) return;
-      sez.appendChild(el("h3", "titolo-col", ["Nei giorni scorsi"]));
-      var ul = el("ul", "", []);
-      v.forEach(function (x) {
-        var a = el("a", "", [x.titolo]);
-        a.href = linkArticolo(x);
-        ul.appendChild(el("li", "", [a, " ", el("span", "", [soloData(x.pubblicato)])]));
+  // Sezioni, zone e sport: 20 notizie per pagina e i numeri delle pagine in fondo, fino alla più vecchia dell'archivio
+  // (lui, 28 ott 2026: «io farei 20 con possibilità di fare altre pagine con i numeri sotto per continuare all'infinito,
+  // la home ok così»). Con i soli ultimi 3 giorni della prima pagina, Sport › Basket restava quasi vuota («articoli Miwa
+  // spariti»). Prima quelle in prima pagina (notizie.json), poi quelle dell'archivio dalla più recente; le schede
+  // dell'archivio arrivano dal file del loro mese, e quando arriva si ridisegna. La pagina è nell'indirizzo (?pagina=2).
+  var PER_PAGINA = 20;
+  var paginaSez = 1;
+  function paginaSezione(vive) {
+    var segno = location.pathname + location.search;
+    function poi(pr) { pr.then(function () { if (location.pathname + location.search === segno && !location.hash) disegna(); }); }
+    if (!archivio.voci) {
+      poi(indiceArchivio());
+      return { lista: vive.slice(0, PER_PAGINA), n: 1, pagine: 1, attesa: true };
+    }
+    var qui = {}, fc = filtroCat, fz = filtroZona, fs = filtroSport;
+    vive.forEach(function (n) { qui[n.id] = true; });
+    var vecchie = archivio.voci.filter(function (x) {
+      if ((x.tipo || "notizia") !== "notizia" || qui[x.id]) return false;
+      var cat = fc === "avvisi" ? x.categoria === "avvisi" || x.categoria === "strade" : !fc || x.categoria === fc;
+      return cat && (!fz || x.zona === fz) && (fc !== "sport" || !fs || x.sport === fs);
+    }).sort(function (a, b) { return String(b.pubblicato).localeCompare(String(a.pubblicato)); });
+    var tutte = vive.concat(vecchie.map(function (v) { return { voce: v }; }));
+    var pagine = Math.max(1, Math.ceil(tutte.length / PER_PAGINA)), n = Math.min(Math.max(1, paginaSez), pagine);
+    var fetta = tutte.slice((n - 1) * PER_PAGINA, n * PER_PAGINA), mancano = {};
+    fetta.forEach(function (x) { if (x.voce && !archivio.pronti[x.voce.mese]) mancano[x.voce.mese] = true; });
+    var mesi = Object.keys(mancano);
+    if (mesi.length) poi(Promise.all(mesi.map(meseArchivio)));
+    var lista = fetta.map(function (x) {
+      if (!x.voce) return x;
+      var m = archivio.pronti[x.voce.mese];
+      return m && (m.notizie || []).filter(function (y) { return y.id === x.voce.id; })[0];
+    }).filter(function (x) { return x && x.articolo; });
+    return { lista: lista, n: n, pagine: pagine, attesa: mesi.length > 0 };
+  }
+  // ‹ Precedente 1 … 4 5 6 … 12 Successiva ›: link veri (si aprono anche in un'altra scheda), un clic cambia pagina
+  // senza ricaricare e torna in cima
+  function numeriPagine(pag) {
+    if (pag.pagine < 2) return null;
+    var nav = el("nav", "pagine", []);
+    nav.setAttribute("aria-label", "Altre pagine");
+    function voce(k, scritta) {
+      if (k === pag.n) { var s_ = el("span", "attuale", [scritta]); s_.setAttribute("aria-current", "page"); return s_; }
+      var prima = paginaSez;
+      paginaSez = k;
+      var a = el("a", "", [scritta]);
+      a.href = indirizzoFiltri();
+      paginaSez = prima;
+      a.addEventListener("click", function (e) {
+        if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+        e.preventDefault();
+        paginaSez = k;
+        vaiFiltri();
+        window.scrollTo(0, 0);
       });
-      sez.appendChild(ul);
-      sez.appendChild(linkTutte("/archivio/", "Tutte le notizie, mese per mese, nell'archivio ›"));
+      return a;
+    }
+    if (pag.n > 1) nav.appendChild(voce(pag.n - 1, "‹ Precedente"));
+    var numeri = [];
+    for (var k = 1; k <= pag.pagine; k++) if (k === 1 || k === pag.pagine || Math.abs(k - pag.n) <= 2) numeri.push(k);
+    numeri.forEach(function (k, i) {
+      if (i && k - numeri[i - 1] > 1) nav.appendChild(el("span", "salto", ["…"]));
+      nav.appendChild(voce(k, String(k)));
     });
-    return sez;
+    if (pag.n < pag.pagine) nav.appendChild(voce(pag.n + 1, "Successiva ›"));
+    return nav;
   }
   // Sotto le ultime notizie della sezione, come in tutte le altre (lui, 28 ott 2026: «questo lo metterei sopra per
   // rispettare l'organizzazione del sito»): in Cultura i prossimi appuntamenti (lui: «sezione cultura con pagina per
@@ -3234,10 +3279,11 @@
     b.addEventListener("click", function () {
       filtroCat = b.getAttribute("data-cat");
       filtroSport = "";
+      paginaSez = 1;
       vaiFiltri();
     });
   });
-  document.getElementById("zona").addEventListener("change", function (e) { filtroZona = e.target.value; vaiFiltri(); });
+  document.getElementById("zona").addEventListener("change", function (e) { filtroZona = e.target.value; paginaSez = 1; vaiFiltri(); });
   document.getElementById("cerca-home").addEventListener("submit", function (e) {
     e.preventDefault();
     var campoHome = document.getElementById("cerca-home-q");
@@ -3254,7 +3300,7 @@
     if (ora === mostrato) return;
     mostrato = ora;
     var f = filtriDaIndirizzo();
-    if (f) { filtroCat = f.cat; filtroZona = f.zona; filtroSport = ""; }
+    if (f) { filtroCat = f.cat; filtroZona = f.zona; filtroSport = f.sport; paginaSez = f.pagina; }
     segnaMenu();
     if ("speechSynthesis" in window) speechSynthesis.cancel();
     disegna();
@@ -3269,16 +3315,24 @@
   var PAGINA_ZONA = { benevento: "/zona/benevento/", telesina: "/zona/valle-telesina/", caudina: "/zona/valle-caudina/",
     fortore: "/zona/fortore/", provincia: "/zona/altri-comuni/" };
   function indirizzoFiltri() {
-    if (PAGINA_CAT[filtroCat]) return PAGINA_CAT[filtroCat] + (filtroZona ? "?zona=" + filtroZona : "");
-    return PAGINA_ZONA[filtroZona] || "/";
+    var q = [];
+    if (PAGINA_CAT[filtroCat] && filtroZona) q.push("zona=" + filtroZona);
+    if (filtroCat === "sport" && filtroSport) q.push("sport=" + filtroSport);
+    if ((filtroCat || filtroZona) && paginaSez > 1) q.push("pagina=" + paginaSez);
+    return (PAGINA_CAT[filtroCat] || PAGINA_ZONA[filtroZona] || "/") + (q.length ? "?" + q.join("&") : "");
   }
   // le scelte del menu lette dall'indirizzo; null se non è la prima pagina, una sezione o una zona
   function filtriDaIndirizzo() {
     var p = location.pathname, f = p === "/" ? { cat: "", zona: "" } : null;
     Object.keys(PAGINA_CAT).forEach(function (k) { if (PAGINA_CAT[k] === p) f = { cat: k, zona: "" }; });
     Object.keys(PAGINA_ZONA).forEach(function (k) { if (PAGINA_ZONA[k] === p) f = { cat: "", zona: k }; });
-    var z = location.search.match(/[?&]zona=([a-z]+)/);
+    var z = location.search.match(/[?&]zona=([a-z]+)/), sp = location.search.match(/[?&]sport=([a-z_0-9]+)/);
+    var pg = location.search.match(/[?&]pagina=(\d+)/);
     if (f && z && PAGINA_ZONA[z[1]]) f.zona = z[1];
+    if (f) {
+      f.sport = f.cat === "sport" && sp && NOMI_SPORT[sp[1]] ? sp[1] : "";
+      f.pagina = pg ? Math.max(1, Number(pg[1])) : 1;
+    }
     return f;
   }
   function segnaMenu() {
@@ -3413,6 +3467,8 @@
   if (FISSA && (FISSA.cat || FISSA.zona)) {
     filtroCat = FISSA.cat || "";
     filtroZona = ((filtriDaIndirizzo() || {}).zona) || FISSA.zona || "";   // anche ?zona= (sezione e zona insieme)
+    filtroSport = (filtriDaIndirizzo() || {}).sport || "";   // ?sport=basket
+    paginaSez = (filtriDaIndirizzo() || {}).pagina || 1;     // ?pagina=2
   }
   segnaMenu();
 
@@ -3589,7 +3645,7 @@
   var posto = (function () {
     var nav = (performance.getEntriesByType && performance.getEntriesByType("navigation")[0]) || {};
     var y = null, ultimo = null, attesa = null;
-    function chiave() { return "nb-posto:" + location.pathname + location.hash; }
+    function chiave() { return "nb-posto:" + location.pathname + location.search + location.hash; }
     function salva() { if (ultimo) try { sessionStorage.setItem(ultimo[0], ultimo[1]); } catch (e) {} }
     try { if (nav.type === "reload" || nav.type === "back_forward") y = Number(sessionStorage.getItem(chiave())) || null; } catch (e) {}
     ["wheel", "touchstart", "keydown", "mousedown"].forEach(function (t) {
