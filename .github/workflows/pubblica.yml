@@ -57,6 +57,7 @@ jobs:
       # (strumenti/sparite.py). Prima di tutto il resto, così le pagine, le foto e le statistiche lo vedono.
       - name: Nessuna notizia sparita
         timeout-minutes: 3
+        continue-on-error: true   # se va oltre il tempo, la pubblicazione va avanti lo stesso (si riprova alla prossima)
         run: python3 strumenti/sparite.py --manda || echo "::warning::Controllo delle notizie sparite non riuscito"
 
       - name: Meteo da 8 modelli
@@ -119,6 +120,7 @@ jobs:
       # nel repository con un commit a parte; senza il segreto OPENAI_API_KEY si segnano solo quelle che ci sono già.
       - name: Foto fatte con l'IA (curiosità)
         timeout-minutes: 6
+        continue-on-error: true   # come sopra: OpenAI lento non deve fermare il sito e i social
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |

@@ -1834,9 +1834,12 @@
     if (vive.length) box.appendChild(strisciaUltime(vive));
     if (filtroCat === "avvisi") { paginaAvvisi(box); return; }
     var adesso = Date.now(), soloStrade = filtroCat === "strade";
-    // gli avvisi stanno nel loro riquadro; nell'elenco restano solo quelli importanti (che stanno anche nel riquadro)
-    var avvisi = soloStrade ? [] : vive.filter(eAvviso);
-    var scorrono = vive.filter(function (n) { return avvisi.indexOf(n) < 0 || n.rilevante; });
+    // gli avvisi in vigore stanno nel loro riquadro; dagli elenchi esce solo quello che il riquadro mostra davvero (lo
+    // speciale di stagione e i primi 6 degli altri, come riquadroAvvisi), gli importanti restano anche lì. Fino al 28 ott
+    // 2026 sera uscivano tutti: 37 notizie in vigore non si vedevano in nessuna pagina della prima pagina.
+    var avvisi = soloStrade ? [] : vive.filter(eAvviso), sh = specialeHome();
+    var nelRiquadro = (sh ? sh.voci : []).concat(avvisi.filter(function (n) { return !sh || sh.voci.indexOf(n) < 0; }).slice(0, 6));
+    var scorrono = vive.filter(function (n) { return nelRiquadro.indexOf(n) < 0 || n.rilevante; });
     if (!scorrono.length) { scorrono = vive; avvisi = []; }
     var pag = paginaSezione(scorrono), lista = pag.lista, primaPag = pag.n === 1;
     if (!primaPag) avvisi = [];
@@ -1890,7 +1893,6 @@
     if (!filtroCat) { var rc = riquadroCarburanti(); if (rc) c3.appendChild(rc); }
     if (!filtroCat) { var rq = riquadroCuriosita(); if (rq) c3.appendChild(rq); }
     if (!filtroCat) c3.appendChild(riquadroSegui("Le notizie del Sannio appena escono, sul telefono."));
-    var sh = specialeHome();
     if (avvisi.length || sh) c3.appendChild(riquadroAvvisi(avvisi, sh));
     if (!filtroCat) { var rs = riquadroSport(); if (rs) c3.appendChild(rs); }
     c3.appendChild(el("h3", "titolo-col", ["Approfondimenti"]));
@@ -2620,6 +2622,8 @@
     function poi(pr) { pr.then(function () { if (location.pathname + location.search === segno && !location.hash) disegna(); }); }
     if (!archivio.voci) {
       poi(indiceArchivio());
+      // dalla pagina 2 serve l'archivio: si aspetta (il punto della pagina lo rimette posto, che riprova per 3 secondi)
+      if (paginaSez > 1) return { lista: [], n: paginaSez, pagine: paginaSez, attesa: true };
       return { lista: vive.slice(0, PER_PAGINA), n: 1, pagine: 1, attesa: true };
     }
     var qui = {}, fc = filtroCat, fz = filtroZona, fs = filtroSport;
@@ -3424,7 +3428,7 @@
     var h = a && !a.target ? a.getAttribute("href") : "";
     if (h !== "/" && !/^\/(notizia|approfondimento|evento)\/[^\/]+\/$/.test(h)) return;
     e.preventDefault();
-    if (h === location.pathname && !location.hash) { window.scrollTo(0, 0); return; }
+    if (h === location.pathname && !location.search && !location.hash) { window.scrollTo(0, 0); return; }
     history.pushState(null, "", h);
     cambiaPagina();
   });

@@ -126,14 +126,29 @@ def su_telegram(c):
     return f"notiziebenevento.it/curiosita/{c['slug']}/" in pagina_
 
 
+def _usciti_dal(token, percorso, campi, quando, c):
+    """I post (Facebook) o i media (Instagram) dal giorno della curiosità a oggi, pagina dopo pagina: con i soli ultimi
+    50 (16-20 ore di post) una correzione fatta il giorno dopo non vedeva il post vecchio e la rimandava (28 ott 2026)."""
+    dal = str(dt.date.fromisoformat(str(c.get("data") or dt.date.today())[:10]) - dt.timedelta(days=1))
+    dopo, out = None, []
+    for _ in range(20):
+        q = dict({"fields": campi, "limit": 100}, **({"after": dopo} if dopo else {}))
+        r = facebook.chiama("GET", percorso, token, q)
+        dati = r.get("data", [])
+        out += dati
+        pag = r.get("paging") or {}
+        dopo = (pag.get("cursors") or {}).get("after")
+        if not dati or not dopo or not pag.get("next") or str(dati[-1].get(quando) or "")[:10] < dal:
+            break
+    return out
+
+
 def su_facebook(token, c):
-    r = facebook.chiama("GET", "me/posts", token, {"fields": "message,created_time", "limit": 50})
-    return any(c["titolo"] in (p.get("message") or "") for p in r.get("data", []))
+    return any(c["titolo"] in (p.get("message") or "") for p in _usciti_dal(token, "me/posts", "message,created_time", "created_time", c))
 
 
 def su_instagram(token, ig, c):
-    r = facebook.chiama("GET", f"{ig}/media", token, {"fields": "caption,timestamp", "limit": 50})
-    return any(c["titolo"] in (p.get("caption") or "") for p in r.get("data", []))
+    return any(c["titolo"] in (p.get("caption") or "") for p in _usciti_dal(token, f"{ig}/media", "caption,timestamp", "timestamp", c))
 
 
 # ---------------------------------------------------------------- l'invio
