@@ -1,41 +1,45 @@
 {
- "aggiornato": "2026-10-28T07:15+01:00",
+ "aggiornato": "2026-10-28T08:13+01:00",
  "giornali_letti": 14,
  "notizie": [
   {
-   "id": "arpaia-parcheggio-cimitero-chiuso-28-ottobre",
-   "titolo": "Arpaia, mercoledì 28 ottobre chiuso il parcheggio del cimitero fino alle 14 per il taglio dell'erba",
-   "titolo_google": "Arpaia, parcheggio del cimitero chiuso il 28 ottobre",
-   "sintesi": "Mercoledì 28 ottobre, dalle 5 alle 14, il parcheggio vicino al cimitero di Arpaia, usato anche da chi prende il treno o il bus, è chiuso alle auto e c'è il divieto di sosta: una ditta taglia l'erba e pota gli arbusti.",
-   "categoria": "strade",
-   "zona": "caudina",
-   "immagine": "parcheggio",
-   "luogo": "Arpaia",
-   "pubblicato": "2026-10-27",
+   "id": "pannarano-crescere-insieme-attivita-bambini-domande-10-novembre",
+   "titolo": "Pannarano, «Crescere insieme»: attività gratuite per bambini e ragazzi da novembre a maggio, domande entro il 10 novembre",
+   "titolo_google": "Pannarano, «Crescere insieme»: domande entro il 10 novembre",
+   "sintesi": "Il Comune di Pannarano raccoglie le adesioni a «Crescere insieme a Pannarano», un programma gratuito di attività educative, ricreative, laboratori e sport per i bambini e i ragazzi delle scuole del paese, da novembre 2026 a maggio 2027. Le domande si presentano entro il 10 novembre.",
+   "categoria": "avvisi",
+   "luogo": "Pannarano",
+   "pubblicato": "2026-10-28",
    "stato": "ufficiale",
    "rilevante": false,
-   "importanza": 2,
-   "in_vigore_fino": "2026-10-28",
-   "in_vigore_dal": "2026-10-28",
+   "importanza": 3,
+   "in_vigore_fino": "2026-11-10",
+   "immagine": "parco-giochi",
    "fonti": [
     {
-     "nome": "Comune di Arpaia",
-     "url": "https://halleyweb.com/c062005/mc/mc_p_dettaglio.php?id_pubbl=9521",
+     "nome": "Comune di Pannarano",
+     "url": "https://www.halleyweb.com/c062047/mc/mc_p_dettaglio.php?id_pubbl=10601",
      "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Mercoledì 28 ottobre, dalle 5 alle 14, ad Arpaia è chiuso alle auto il parcheggio comunale vicino al cimitero, quello che usano anche i viaggiatori, e lì non si può lasciare la macchina. Lo ha deciso il Comune con un'ordinanza.",
+      "testo": "Il Comune di Pannarano, in Valle Caudina, ha aperto le adesioni a «Crescere insieme a Pannarano», un programma di attività educative, ricreative, laboratori, sport e formazione per i bambini e i ragazzi del paese. Le attività vanno da novembre 2026 a maggio 2027 e l'iscrizione è gratuita. Le domande si presentano entro il 10 novembre.",
       "fonti": [
-       "Comune di Arpaia"
+       "Comune di Pannarano"
       ]
      },
      {
-      "testo": "Il motivo è la pulizia delle aiuole: la ditta Ecojunk taglierà l'erba e poterà gli arbusti delle zone verdi del parcheggio, e il Comune vuole evitare danni alle auto parcheggiate.",
+      "testo": "Possono partecipare i bambini e i ragazzi che abitano a Pannarano e che quest'anno frequentano una delle scuole del paese dell'Istituto comprensivo «Ilaria Alpi»: scuola dell'infanzia, elementare e media. La domanda la fa un genitore o il tutore con il modulo allegato all'avviso, insieme alla copia del documento d'identità suo e del figlio.",
       "fonti": [
-       "Comune di Arpaia"
+       "Comune di Pannarano"
+      ]
+     },
+     {
+      "testo": "I posti sono limitati e si assegnano in ordine di arrivo delle domande; chi resta fuori va in lista d'attesa ed entra se qualcuno rinuncia o se i posti aumentano. Chi si iscrive si impegna a seguire tutto il programma: chi manca spesso senza motivo può perdere il posto. Il Comune può cambiare giorni, orari e luoghi delle attività. L'avviso, il programma delle attività e il modulo sono nell'albo pretorio del Comune.",
+      "fonti": [
+       "Comune di Pannarano"
       ]
      }
     ],
@@ -45,14 +49,71 @@
     "non_si_sa": [],
     "fonti": [
      {
-      "nome": "Comune di Arpaia",
-      "titolo": "Divieto di sosta e chiusura al traffico veicolare per il giorno 28.10.2026 dalle 05,00 alle ore 14,00 del parcheggio a servizio del cimitero comunale.",
-      "url": "https://halleyweb.com/c062005/mc/mc_p_dettaglio.php?id_pubbl=9521",
-      "data": "27 ott",
+      "nome": "Comune di Pannarano",
+      "titolo": "Avviso pubblico \"Crescere insieme a Pannarano\" - Avviso di ricognizione conoscitiva per la manifestazione di interesse alla partecipazione di minori ad attività socioeducative, ricreative, laboratoriali, motorie e formative. - Scadenza: 10 Novembre 2",
+      "url": "https://www.halleyweb.com/c062047/mc/mc_p_dettaglio.php?id_pubbl=10601",
+      "data": "28 ott",
       "ufficiale": true
      }
     ]
-   }
+   },
+   "zona": "caudina",
+   "foto": "parco-giochi-7"
+  },
+  {
+   "id": "benevento-piazza-castello-4-novembre-traffico-sosta-forze-armate",
+   "titolo": "Benevento, mercoledì 4 novembre limiti al traffico e alla sosta intorno a piazza Castello per la Giornata delle Forze armate",
+   "titolo_google": "Benevento, 4 novembre: traffico limitato a piazza Castello",
+   "sintesi": "Mercoledì 4 novembre, dalle 7 fino alla fine delle celebrazioni, a Benevento ci saranno limiti al traffico e alla sosta nelle strade intorno al monumento ai Caduti di piazza Castello, per la Giornata dell'Unità nazionale e delle Forze armate. Lo prevede un'ordinanza del Servizio Traffico del Comune.",
+   "categoria": "strade",
+   "luogo": "Benevento, piazza Castello",
+   "pubblicato": "2026-10-28",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "in_vigore_dal": "2026-11-04",
+   "in_vigore_fino": "2026-11-04",
+   "immagine": "divieto-sosta",
+   "fonti": [
+    {
+     "nome": "Comune di Benevento, albo pretorio",
+     "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80173",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Mercoledì 4 novembre, in mattinata, a Benevento ci saranno limiti al traffico e alla sosta nelle strade intorno al monumento ai Caduti di piazza Castello. Valgono dalle 7 fino alla fine delle celebrazioni per la Giornata dell'Unità nazionale e delle Forze armate. Li ha decisi il Servizio Traffico del Comune con l'ordinanza numero 450 del 26 ottobre.",
+      "fonti": [
+       "Comune di Benevento, albo pretorio"
+      ]
+     },
+     {
+      "testo": "Piazza Castello è la piazza della Rocca dei Rettori, all'inizio di corso Garibaldi: chi deve passare o parcheggiare in zona quella mattina farà bene a organizzarsi prima. L'ordinanza è pubblicata nell'albo pretorio del Comune.",
+      "fonti": [
+       "Comune di Benevento, albo pretorio"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "In quali strade precise valgono i divieti e se qualcuna sarà chiusa del tutto: l'oggetto dell'ordinanza non lo dice."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Benevento, albo pretorio",
+      "titolo": "LIMITAZIONI TRAFFICO E SOSTA CON VIGENZA NELLA MATTINATA DI MERCOLEDI' 4 NOVEMBRE 2026 SULLE STRADE ADIACENTI IL MONUMENTO AI CADUTI CON UBICAZIONE IN PIAZZA CASTELLO, A PARTIRE DALLE ORE 7:00 FINO A CESSATE ESIGENZE SUBORDINATE ALLA CONLCUSIONE DELLE CELEBRAZIONI PREVISTE NELL'AMBITO DELLA GIORNATA",
+      "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80173",
+      "data": "28 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "zona": "benevento",
+   "foto": "divieto-sosta-9"
   },
   {
    "id": "benevento-nicola-sguera-premio-agrorinasce-corpo-a-rendere",
@@ -257,6 +318,10 @@
     {
      "nome": "NTR24 Sport",
      "url": "https://sport.ntr24.tv/2026/10/27/il-benevento-raggiunto-nel-recupero-dal-catanzaro-a-salvemini-risponde-buso/"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/28/la-storia-si-ripete-il-benevento-si-fa-rimontare-dal-catanzaro-a-tempo-scaduto-foto/"
     }
    ],
    "comunicati": [
@@ -322,6 +387,13 @@
        "Benevento Calcio"
       ],
       "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Con la vittoria il Benevento sarebbe salito al secondo posto in classifica. Sono altri due punti persi nel finale, come era già successo con il Vicenza.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ],
+      "giorno": "2026-10-27"
      }
     ],
     "cronologia": [],
@@ -365,6 +437,12 @@
       "titolo": "Il Benevento raggiunto nel recupero dal Catanzaro. A Salvemini risponde Buso",
       "url": "https://sport.ntr24.tv/2026/10/27/il-benevento-raggiunto-nel-recupero-dal-catanzaro-a-salvemini-risponde-buso/",
       "data": "27 ott, 21:22"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "La storia si ripete: il Benevento si fa rimontare dal Catanzaro a tempo scaduto [FOTO]",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/28/la-storia-si-ripete-il-benevento-si-fa-rimontare-dal-catanzaro-a-tempo-scaduto-foto/",
+      "data": "28 ott"
      }
     ]
    },
@@ -3536,7 +3614,9 @@
       "ufficiale": true
      }
     ]
-   }
+   },
+   "immagine": "divieto-sosta",
+   "foto": "divieto-sosta-5"
   },
   {
    "id": "walking-marathon-benevento-2026-400-partecipanti",
@@ -3653,7 +3733,9 @@
    ],
    "foto_da": "Comune di Benevento",
    "subito": true,
-   "pubblicato": "2026-10-26T18:33:01+01:00"
+   "pubblicato": "2026-10-26T18:33:01+01:00",
+   "immagine": "corsa",
+   "foto": "corsa-3"
   },
   {
    "id": "sannio-acque-undici-comuni-gestione-autonoma-ricorsi-tar",
@@ -3877,7 +3959,9 @@
       "data": "27 ott, 17:37"
      }
     ]
-   }
+   },
+   "immagine": "piazza",
+   "foto": "piazza-2"
   },
   {
    "id": "tribunale-benevento-rotili-di-carlo-coordinatrici-penale-gip",
@@ -3932,7 +4016,9 @@
       "data": "26 ott, 17:15"
      }
     ]
-   }
+   },
+   "immagine": "tribunale",
+   "foto": "tribunale-3"
   },
   {
    "id": "benevento-bellissima-italia-rai2-fabrizio-rocca-puntata",
@@ -6445,7 +6531,9 @@
      }
     ]
    },
-   "importanza": 2
+   "importanza": 2,
+   "immagine": "arti-marziali",
+   "foto": "arti-marziali-9"
   },
   {
    "id": "castelpoto-santa-croce-del-sannio-elenco-elettori-fuori-sede",
@@ -6902,7 +6990,9 @@
     ]
    },
    "subito": true,
-   "importanza": 2
+   "importanza": 2,
+   "immagine": "solidarieta",
+   "foto": "solidarieta-5"
   },
   {
    "id": "tennis-ct-san-giorgio-del-sannio-vince-torino-serie-a2",
@@ -13849,6 +13939,251 @@
   }
  ],
  "approfondimenti": [
+  {
+   "id": "benevento-mozione-sfiducia-mastella",
+   "categoria": "politica",
+   "titolo": "Benevento, la mozione di sfiducia contro il sindaco Mastella: cosa chiede l'opposizione, cosa risponde la maggioranza, cosa succede adesso",
+   "titolo_google": "Sfiducia a Mastella a Benevento: a che punto è la mozione",
+   "sommario": "Il 22 ottobre l'opposizione del Consiglio comunale di Benevento ha presentato una mozione di sfiducia contro il sindaco Clemente Mastella e la Giunta, con un dossier di 24 punti che parte dall'inchiesta giudiziaria sul Comune. Domenica 25 ha sfilato in corteo fino alla Prefettura. Il sindaco dice che non si dimette e la maggioranza parla di poche centinaia di persone in piazza. La data del voto in Consiglio non è ancora stata fissata.",
+   "luogo": "Benevento",
+   "aggiornato": "2026-10-28T08:30:00+01:00",
+   "collegate": [
+    "benevento-opposizione-mozione-sfiducia-mastella"
+   ],
+   "in_breve": [
+    {
+     "testo": "Pd, Città Aperta, Sinistra Italiana-Avs, Civici e Riformisti e Civico 22 hanno presentato il 22 ottobre la mozione di sfiducia contro il sindaco e la Giunta: 24 punti, dall'inchiesta giudiziaria ai cantieri del PNRR, dal traffico alla mensa scolastica.",
+     "fonti": [
+      "Ottopagine (22/10)"
+     ]
+    },
+    {
+     "testo": "Mastella non si dimette: dice di avere «le mani pulite, pulitissime» e di pensare alle querele.",
+     "fonti": [
+      "Ottopagine (23/10)"
+     ]
+    },
+    {
+     "testo": "Domenica 25 ottobre l'opposizione ha sfilato lungo corso Garibaldi fino alla Prefettura. La maggioranza risponde che in piazza c'erano al massimo duecento persone.",
+     "fonti": [
+      "Ottopagine (25/10)",
+      "Ottopagine (26/10)"
+     ]
+    },
+    {
+     "testo": "Non è ancora fissata la seduta del Consiglio comunale in cui si voterà la mozione. Le elezioni comunali sono nel 2027.",
+     "fonti": [
+      "Ottopagine (25/10)",
+      "Ottopagine (26/10, Pd)"
+     ]
+    }
+   ],
+   "sezioni": [
+    {
+     "titolo": "Cosa è successo",
+     "paragrafi": [
+      {
+       "testo": "Giovedì 22 ottobre, in una conferenza stampa, i gruppi di opposizione del Consiglio comunale hanno presentato una mozione di sfiducia contro il sindaco Clemente Mastella e la sua Giunta. L'ha illustrata il consigliere Luigi Diego Perifano; c'erano anche Giovanna Megna, Giovanni De Lorenzo, Angelo Miceli, Floriana Fioretti, Marialetizia Varricchio, Raffaele De Longis, Francesco Farese e Angelo Moretti. I promotori hanno invitato a firmare anche gli altri consiglieri di minoranza.",
+       "fonti": [
+        "Ottopagine (22/10)"
+       ]
+      },
+      {
+       "testo": "La mozione ha 24 punti. Gli ultimi riguardano l'inchiesta giudiziaria cominciata con l'arresto di un ex dirigente del Comune, con 19 indagati tra amministratori e dirigenti di Palazzo Mosti. Gli altri parlano di opere incompiute e PNRR, del piano urbanistico mai approvato, del centro storico, di sicurezza, parcheggi, traffico e terminal dei bus, di acqua e ambiente, di scuole, mensa e tasse, delle contrade e del rione Libertà.",
+       "fonti": [
+        "Ottopagine (22/10)"
+       ]
+      },
+      {
+       "testo": "Domenica 25 ottobre, in serata, l'opposizione ha sfilato in corteo dalla Biblioteca provinciale lungo corso Garibaldi fino alla Prefettura, al grido di «Dimissioni» e «Benevento libera». Ottopagine parla di «qualche centinaio di persone».",
+       "fonti": [
+        "Ottopagine (25/10)"
+       ]
+      }
+     ]
+    },
+    {
+     "titolo": "Cosa dice l'opposizione",
+     "paragrafi": [
+      {
+       "testo": "Perifano dice che l'opposizione resta garantista, cioè aspetta le sentenze, e respinge l'accusa di odio: «Nessun odio come dice Mastella». Al corteo ha detto che «quando la città è scossa da vicende di tale portata la politica dovrebbe reagire» e che «siamo all'inizio di un percorso».",
+       "fonti": [
+        "Ottopagine (22/10)",
+        "Ottopagine (25/10)"
+       ]
+      },
+      {
+       "testo": "Angelo Moretti (Civico 22) ha chiesto al sindaco un passo indietro e l'arrivo di un commissario. Francesco Farese (Pd) ha detto che «è il momento di mettere fine a questa esperienza amministrativa» e che il dossier dei 24 punti sarà portato in Consiglio comunale.",
+       "fonti": [
+        "Ottopagine (25/10)"
+       ]
+      },
+      {
+       "testo": "Lunedì 26 il Pd cittadino ha risposto alla maggioranza: chi manifesta «merita rispetto, non ironia»; rispetta la magistratura e la presunzione d'innocenza, ma dice che la responsabilità politica di chi ha scelto dirigenti e collaboratori resta, e che l'amministrazione non ha ancora dato una risposta. Sulle elezioni: «Le urne arriveranno nel 2027», e il Pd lavora con forze progressiste e civiche.",
+       "fonti": [
+        "Ottopagine (26/10, Pd)"
+       ]
+      }
+     ]
+    },
+    {
+     "titolo": "Cosa dice la maggioranza",
+     "paragrafi": [
+      {
+       "testo": "Venerdì 23 ottobre Mastella ha detto di non volersi dimettere «perché ho le mani pulite, pulitissime» e che l'unica cosa a cui pensa è «la possibilità di fare le querele». Sulla manifestazione: «anche se saranno 1.000 persone il 60% è con me».",
+       "fonti": [
+        "Ottopagine (23/10)"
+       ]
+      },
+      {
+       "testo": "Lo stesso giorno i segretari provinciale e cittadino di Noi di Centro, il partito di Mastella, hanno parlato di «ricatto giustizialista e doppiopesista» e hanno detto che l'amministrazione deve andare avanti: «Il consenso si misura nelle urne».",
+       "fonti": [
+        "Ottopagine (23/10, NdC)"
+       ]
+      },
+      {
+       "testo": "Lunedì 26 i consiglieri di maggioranza, in una nota comune, hanno definito il corteo «poco più di una riunione di condominio», con al massimo un paio di centinaia di persone, e hanno ringraziato i consiglieri di minoranza che non hanno partecipato.",
+       "fonti": [
+        "Ottopagine (26/10)"
+       ]
+      }
+     ]
+    },
+    {
+     "titolo": "Le altre voci",
+     "paragrafi": [
+      {
+       "testo": "Martedì 27 Pasquale Basile, che Lab TV chiama «leader storico dell'antagonismo cittadino», ha criticato sia l'amministrazione sia la proposta dell'opposizione, che a suo dire non parla né al ceto medio in difficoltà né ai più poveri, e ha espresso dubbi sul senso della manifestazione di domenica.",
+       "fonti": [
+        "Lab TV (27/10)"
+       ]
+      }
+     ]
+    },
+    {
+     "titolo": "Cosa succede adesso",
+     "paragrafi": [
+      {
+       "testo": "L'opposizione dice che porterà la mozione e il dossier in Consiglio comunale; la data della seduta non è ancora stata fissata. Le elezioni comunali di Benevento sono previste nel 2027.",
+       "fonti": [
+        "Ottopagine (25/10)",
+        "Ottopagine (26/10, Pd)"
+       ]
+      }
+     ]
+    }
+   ],
+   "domande": [
+    {
+     "d": "Chi ha presentato la mozione?",
+     "r": "I gruppi di opposizione Pd, Città Aperta, Sinistra Italiana-Avs, Civici e Riformisti e Civico 22.",
+     "fonti": [
+      "Ottopagine (22/10)"
+     ]
+    },
+    {
+     "d": "Il sindaco si dimette?",
+     "r": "No: Mastella ha detto che non si dimette e che valuta querele.",
+     "fonti": [
+      "Ottopagine (23/10)"
+     ]
+    },
+    {
+     "d": "Quando si vota?",
+     "r": "La data della seduta del Consiglio comunale non è ancora stata fissata.",
+     "fonti": [
+      "Ottopagine (25/10)"
+     ]
+    }
+   ],
+   "cronologia": [
+    {
+     "data": "22 ottobre",
+     "fatto": "L'opposizione presenta la mozione di sfiducia con 24 punti.",
+     "fonti": [
+      "Ottopagine (22/10)"
+     ]
+    },
+    {
+     "data": "23 ottobre",
+     "fatto": "Mastella: «Ho le mani pulite», non si dimette e pensa alle querele; Noi di Centro parla di «ricatto».",
+     "fonti": [
+      "Ottopagine (23/10)",
+      "Ottopagine (23/10, NdC)"
+     ]
+    },
+    {
+     "data": "25 ottobre, sera",
+     "fatto": "Corteo dell'opposizione da corso Garibaldi alla Prefettura.",
+     "fonti": [
+      "Ottopagine (25/10)"
+     ]
+    },
+    {
+     "data": "26 ottobre",
+     "fatto": "La maggioranza: «poco più di una riunione di condominio»; il Pd risponde.",
+     "fonti": [
+      "Ottopagine (26/10)",
+      "Ottopagine (26/10, Pd)"
+     ]
+    },
+    {
+     "data": "27 ottobre",
+     "fatto": "Pasquale Basile critica sia l'amministrazione sia l'opposizione.",
+     "fonti": [
+      "Lab TV (27/10)"
+     ]
+    }
+   ],
+   "non_si_sa": [
+    "Quando il Consiglio comunale discuterà la mozione.",
+    "Se altri consiglieri di minoranza o di centrodestra la firmeranno."
+   ],
+   "fonti": [
+    {
+     "nome": "Ottopagine (22/10)",
+     "titolo": "Benevento. L'opposizione presenta la mozione di sfiducia per il sindaco Mastella",
+     "url": "https://www.ottopagine.it/bn/politica/441885/benevento-l-opposizione-presenta-la-mozione-di-sfiducia-per-il-sindaco-mastella.shtml",
+     "data": "22 ott, 19:21"
+    },
+    {
+     "nome": "Ottopagine (23/10)",
+     "titolo": "Mastella replica all'opposizione: \"Ho le mani pulite, pronto a querelare\"",
+     "url": "https://www.ottopagine.it/bn/politica/441924/mastella-replica-all-opposizione-ho-le-mani-pulite-pronto-a-querelare.shtml",
+     "data": "23 ott, 11:41"
+    },
+    {
+     "nome": "Ottopagine (23/10, NdC)",
+     "titolo": "Leader Mastella si è dimesso da Ministro, ma non cederà a ricatto strumentale",
+     "url": "https://www.ottopagine.it/bn/politica/441959/leader-mastella-si-e-dimesso-da-ministro-ma-non-cedera-a-ricatto-strumentale.shtml",
+     "data": "23 ott, 14:54"
+    },
+    {
+     "nome": "Ottopagine (25/10)",
+     "titolo": "A Benevento l'opposizione scende in piazza: \"Mastella si dimetta\"",
+     "url": "https://www.ottopagine.it/bn/politica/442139/a-benevento-l-opposizione-scende-in-piazza-mastella-si-dimetta.shtml",
+     "data": "25 ott, 20:25"
+    },
+    {
+     "nome": "Ottopagine (26/10)",
+     "titolo": "Maggioranza Mastella: \"duecento persone non bastano ad eleggere un consigliere\"",
+     "url": "https://www.ottopagine.it/bn/politica/442167/maggioranza-mastella-duecento-persone-non-bastano-ad-eleggere-un-consigliere.shtml",
+     "data": "26 ott, 10:27"
+    },
+    {
+     "nome": "Ottopagine (26/10, Pd)",
+     "titolo": "Corteo pro dimissioni Mastella: Pd risponde ai consiglieri di maggioranza",
+     "url": "https://www.ottopagine.it/bn/politica/442228/corteo-pro-dimissioni-mastella-pd-risponde-ai-consiglieri-di-maggioranza.shtml",
+     "data": "26 ott, 17:41"
+    },
+    {
+     "nome": "Lab TV (27/10)",
+     "titolo": "Richiesta dimissioni Mastella, Basile: manifestazioni autoreferenziali di apparato",
+     "url": "https://www.labtv.net/attualita/2026/10/27/richiesta-dimissioni-mastella-basile-manifestazioni-autoreferenziali-di-apparato/",
+     "data": "27 ott"
+    }
+   ]
+  },
   {
    "id": "caro-gasolio-sannio",
    "titolo": "Caro gasolio, la protesta di tir e agricoltori nel Sannio: dove sono i blocchi, cosa manca e cosa succede adesso",
