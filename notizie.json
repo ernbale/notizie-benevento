@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-28T14:32+01:00",
+ "aggiornato": "2026-10-28T15:15+01:00",
  "giornali_letti": 14,
  "notizie": [
   {
@@ -10,7 +10,7 @@
    "categoria": "altro",
    "luogo": "Telese Terme, via Lagni",
    "pubblicato": "2026-10-28T14:19+01:00",
-   "stato": "una_fonte",
+   "stato": "confermata",
    "rilevante": false,
    "importanza": 3,
    "immagine": "ristorante",
@@ -18,6 +18,10 @@
     {
      "nome": "NTR24",
      "url": "https://www.ntr24.tv/2026/10/28/mcdonalds-apre-a-telese-terme-il-29-ottobre-si-inaugura-quarto-ristorante-nel-sannio-35-nuove-assunzioni/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/mcdonalds-apre-un-nuovo-ristorante-a-telese-terme/"
     }
    ],
    "articolo": {
@@ -25,19 +29,22 @@
      {
       "testo": "Giovedì 29 ottobre apre a Telese Terme, in via Lagni, un nuovo ristorante McDonald's, il quarto in provincia di Benevento. Ha portato 35 assunzioni: chi ci lavora viene da Telese e dai paesi vicini.",
       "fonti": [
-       "NTR24"
+       "NTR24",
+       "TV7 Benevento"
       ]
      },
      {
       "testo": "Alle 11 c'è il taglio del nastro con il sindaco Giovanni Caporaso, rappresentanti delle istituzioni, delle associazioni del posto e delle forze dell'ordine. Dopo, una festa aperta a tutti con giochi, intrattenimento e musica. Il ristorante è del licenziatario Attilio Guadagno.",
       "fonti": [
-       "NTR24"
+       "NTR24",
+       "TV7 Benevento"
       ]
      },
      {
       "testo": "Il locale ha 212 posti a sedere, i chioschi digitali per ordinare da soli, un McCafé, un'area giochi dentro e fuori per i bambini e una doppia corsia McDrive per ordinare dall'auto. Da novembre si potranno organizzare lì le feste di compleanno dei bambini.",
       "fonti": [
-       "NTR24"
+       "NTR24",
+       "TV7 Benevento"
       ]
      },
      {
@@ -48,7 +55,15 @@
      }
     ],
     "cronologia": [],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "L'apertura giovedì 29 ottobre in via Lagni, le 35 assunzioni e il taglio del nastro alle 11 col sindaco Caporaso",
+      "fonti": [
+       "NTR24",
+       "TV7 Benevento"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [],
     "fonti": [
@@ -57,6 +72,12 @@
       "titolo": "McDonald’s apre a Telese Terme: il 29 ottobre si inaugura. Quarto ristorante nel Sannio: 35 nuove assunzioni",
       "url": "https://www.ntr24.tv/2026/10/28/mcdonalds-apre-a-telese-terme-il-29-ottobre-si-inaugura-quarto-ristorante-nel-sannio-35-nuove-assunzioni/",
       "data": "28 ott, 14:19"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "McDonald’s apre un nuovo ristorante a Telese Terme",
+      "url": "https://www.tvsette.net/mcdonalds-apre-un-nuovo-ristorante-a-telese-terme/",
+      "data": "28 ott, 14:50"
      }
     ]
    },
@@ -5240,6 +5261,10 @@
     {
      "nome": "Gazzetta di Benevento",
      "url": "https://www.gazzettabenevento.it/it/il-tratto-di-viale-mellusi-compreso-tra-lincrocio-con-piranesi-e-lincrocio-con-nicola-sala-sara"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/28/viale-mellusi-riprendono-i-lavori-di-pulizia-delle-caditoie-divieto-di-sosta-fino-al-4-novembre/"
     }
    ],
    "articolo": {
@@ -5251,7 +5276,8 @@
        "NTR24",
        "Cronache del Sannio",
        "Ottopagine",
-       "InfoSannio"
+       "InfoSannio",
+       "BeneventoNews24"
       ],
       "giorno": "2026-10-28"
      },
@@ -5342,6 +5368,12 @@
       "titolo": "Il tratto di viale Mellusi compreso tra l'incrocio con via Piranesi e l'incrocio con via Nicola Sala sarà nuovamente interessato dalla pulizia delle caditoie",
       "url": "https://www.gazzettabenevento.it/it/il-tratto-di-viale-mellusi-compreso-tra-lincrocio-con-piranesi-e-lincrocio-con-nicola-sala-sara",
       "data": "28 ott, 10:54"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Viale Mellusi, riprendono i lavori di pulizia delle caditoie: divieto di sosta fino al 4 novembre",
+      "url": "https://www.beneventonews24.it/2026/10/28/viale-mellusi-riprendono-i-lavori-di-pulizia-delle-caditoie-divieto-di-sosta-fino-al-4-novembre/",
+      "data": "28 ott, 14:39"
      }
     ],
     "aggiornamento": {
@@ -5512,6 +5544,10 @@
     {
      "nome": "Lab TV (28/10)",
      "url": "https://www.labtv.net/attualita/2026/10/28/no-centralizzazione-eic-facchino-nostro-modello-di-gestione-e-virtuoso/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/gestione-idrica-nel-sannio-il-comitato-sannita-acqua-bene-comune-esprime-pieno-plauso-ai-comuni-ricorrenti-contro-il-decreto-regionale/"
     }
    ],
    "articolo": {
@@ -5520,7 +5556,9 @@
       "testo": "I Comuni hanno depositato il ricorso al TAR, il tribunale amministrativo, contro il decreto n. 71 del 23 settembre 2026 del presidente della Regione Campania, quello che affida per trent'anni il servizio idrico della provincia a Sannio Acque. Lo ha fatto sapere mercoledì 28 ottobre il Comitato sannita Acqua Bene Comune, che contesta da anni il passaggio alla società mista e ora valuta, con i suoi avvocati, di intervenire nella causa al fianco dei Comuni.",
       "fonti": [
        "Anteprima24 (28/10)",
-       "Benevento Giornale"
+       "Benevento Giornale",
+       "NTR24 (28/10)",
+       "TV7 Benevento"
       ],
       "giorno": "2026-10-28"
      },
@@ -5680,6 +5718,18 @@
       "titolo": "No centralizzazione Eic, Facchino: “nostro modello di gestione è virtuoso”",
       "url": "https://www.labtv.net/attualita/2026/10/28/no-centralizzazione-eic-facchino-nostro-modello-di-gestione-e-virtuoso/",
       "data": "28 ott, 13:46"
+     },
+     {
+      "nome": "NTR24 (28/10)",
+      "titolo": "Gestione idrica, il Comitato ABC esprime pieno plauso ai Comuni ricorrenti contro il Decreto Regionale",
+      "url": "https://www.ntr24.tv/2026/10/28/gestione-idrica-il-comitato-abc-esprime-pieno-plauso-ai-comuni-ricorrenti-contro-il-decreto-regionale/",
+      "data": "28 ott, 14:56"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Gestione idrica nel Sannio: il Comitato sannita Acqua Bene Comune esprime pieno plauso ai Comuni ricorrenti contro il Decreto Regionale.",
+      "url": "https://www.tvsette.net/gestione-idrica-nel-sannio-il-comitato-sannita-acqua-bene-comune-esprime-pieno-plauso-ai-comuni-ricorrenti-contro-il-decreto-regionale/",
+      "data": "28 ott, 14:57"
      }
     ],
     "aggiornamento": {
@@ -8485,12 +8535,12 @@
   },
   {
    "id": "castelpoto-santa-croce-del-sannio-elenco-elettori-fuori-sede",
-   "titolo": "Elettori fuori sede, venti Comuni del Sannio hanno aperto l'elenco: domande entro il 31 dicembre",
-   "titolo_google": "Elettori fuori sede in 20 Comuni del Sannio: come fare",
-   "sintesi": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni, Limatola, Torrecuso, San Lorenzello, Montesarchio, San Marco dei Cavoti, Ponte, Paupisi e Pannarano hanno aperto l'elenco degli elettori fuori sede previsto dalla nuova legge elettorale: chi per studio, lavoro o cure vive in una regione diversa da quella in cui vota può chiedere di votare dove abita. Per studio e lavoro la domanda va fatta entro il 31 dicembre, per le votazioni dell'anno dopo.",
+   "titolo": "Elettori fuori sede, ventuno Comuni del Sannio hanno aperto l'elenco: domande entro il 31 dicembre",
+   "titolo_google": "Elettori fuori sede in 21 Comuni del Sannio: come fare",
+   "sintesi": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni, Limatola, Torrecuso, San Lorenzello, Montesarchio, San Marco dei Cavoti, Ponte, Paupisi, Pannarano e Moiano hanno aperto l'elenco degli elettori fuori sede previsto dalla nuova legge elettorale: chi per studio, lavoro o cure vive in una regione diversa da quella in cui vota può chiedere di votare dove abita. Per studio e lavoro la domanda va fatta entro il 31 dicembre, per le votazioni dell'anno dopo.",
    "categoria": "avvisi",
    "zona": "provincia",
-   "luogo": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni, Limatola, Torrecuso, San Lorenzello, Montesarchio, San Marco dei Cavoti, Ponte, Paupisi e Pannarano",
+   "luogo": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni, Limatola, Torrecuso, San Lorenzello, Montesarchio, San Marco dei Cavoti, Ponte, Paupisi, Pannarano e Moiano",
    "immagine": "elezioni",
    "pubblicato": "2026-10-27",
    "stato": "ufficiale",
@@ -8595,10 +8645,22 @@
      "nome": "Comune di Pannarano",
      "url": "https://www.halleyweb.com/c062047/mc/mc_p_dettaglio.php?id_pubbl=10608",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di Moiano",
+     "url": "https://www.comune.moiano.bn.it/novita/notizie/novita_58.html",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Anche il Comune di Moiano, in Valle Caudina, spiega sul suo sito come chiedere il voto fuori sede: possono farlo gli studenti e i lavoratori che restano fuori regione per almeno nove mesi, chi si cura fuori regione per almeno tre mesi e i familiari che li assistono. Chi ha già i requisiti fa la domanda entro il 31 dicembre per votare l'anno dopo. Con Moiano i Comuni del Sannio che hanno aperto l'elenco sono ventuno.",
+      "fonti": [
+       "Comune di Moiano"
+      ],
+      "giorno": "2026-10-28"
+     },
      {
       "testo": "Mercoledì 28 ottobre l'avviso sull'elenco comunale degli elettori fuori sede l'ha pubblicato all'albo pretorio anche il Comune di Pannarano, in Valle Caudina.",
       "fonti": [
@@ -8888,14 +8950,21 @@
       "url": "https://www.halleyweb.com/c062047/mc/mc_p_dettaglio.php?id_pubbl=10608",
       "data": "28 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "Comune di Moiano",
+      "titolo": "Voto fuori sede: come votare fuori dal comune di residenza",
+      "url": "https://www.comune.moiano.bn.it/novita/notizie/novita_58.html",
+      "data": "20 ott",
+      "ufficiale": true
      }
     ],
     "aggiornamento": {
-     "testo": "Mercoledì 28 ottobre anche Pannarano ha aperto l'elenco comunale degli elettori fuori sede.",
+     "testo": "Mercoledì 28 ottobre anche Moiano ha pubblicato le istruzioni per il voto fuori sede: i Comuni del Sannio con l'elenco aperto sono ventuno.",
      "fonti": [
-      "Comune di Pannarano"
+      "Comune di Moiano"
      ],
-     "quando": "2026-10-28T13:19+01:00",
+     "quando": "2026-10-28T15:15+01:00",
      "titolo_prima": "Elettori fuori sede, sedici Comuni del Sannio hanno aperto l'elenco: domande entro il 31 dicembre"
     }
    },
@@ -12989,6 +13058,14 @@
     {
      "nome": "InfoSannio",
      "url": "https://www.infosannionews.it/attualita/2026/varato-il-piano-traffico-per-le-ricorrenze-di-ognissanti-e-della-commemorazione-dei-defunti.html"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/28/benevento-varato-il-piano-traffico-per-le-ricorrenze-di-ognissanti-e-della-commemorazione-dei-defunti/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/varato-il-piano-traffico-per-le-ricorrenze-di-ognissanti-e-della-commemorazione-dei-defunti/"
     }
    ],
    "articolo": {
@@ -13000,7 +13077,9 @@
        "Ottopagine",
        "Anteprima24",
        "Cronache del Sannio",
-       "InfoSannio"
+       "InfoSannio",
+       "BeneventoNews24",
+       "TV7 Benevento"
       ],
       "giorno": "2026-10-28"
      },
@@ -13126,6 +13205,18 @@
       "titolo": "Varato il piano traffico per le ricorrenze di Ognissanti e della Commemorazione dei Defunti",
       "url": "https://www.infosannionews.it/attualita/2026/varato-il-piano-traffico-per-le-ricorrenze-di-ognissanti-e-della-commemorazione-dei-defunti.html",
       "data": "28 ott, 10:30"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Benevento| Varato il piano traffico per le ricorrenze di Ognissanti e della Commemorazione dei Defunti",
+      "url": "https://www.beneventonews24.it/2026/10/28/benevento-varato-il-piano-traffico-per-le-ricorrenze-di-ognissanti-e-della-commemorazione-dei-defunti/",
+      "data": "28 ott, 14:33"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Varato il piano traffico per le ricorrenze di Ognissanti e della Commemorazione dei Defunti",
+      "url": "https://www.tvsette.net/varato-il-piano-traffico-per-le-ricorrenze-di-ognissanti-e-della-commemorazione-dei-defunti/",
+      "data": "28 ott, 14:59"
      }
     ],
     "aggiornamento": {
