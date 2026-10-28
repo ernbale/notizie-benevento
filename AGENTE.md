@@ -756,30 +756,31 @@ Nel resoconto scrivi quanti ne hai aggiunti, e se l'elenco dice ATTENZIONE (copi
 }
 ```
 
-## I contributi (`contributi_locali.json`)
+## I contributi (`contributo` nelle notizie)
 
-Dal 28 ott 2026 il sito ha la pagina **Contributi** (notiziebenevento.it/contributi/; lui: «tutto quello che riesci a
-trovare che vada bene per BN e provincia… statali, europei, per tutti, click day… estremamente facile da consultare»).
-Quasi tutto arriva da solo dal Catalogo degli incentivi del Ministero (strumenti/contributi.py, lo scarica il Pi) e i
-bandi dei Comuni dalle tue notizie (categoria `avvisi`, «domande… entro…»: continua a scriverle come sempre). **Tu
-aggiungi solo quello che il catalogo non ha**, una volta al giorno, nel primo giro del mattino:
-- **Dove guardare:** la Camera di Commercio Irpinia Sannio (`https://www.irpiniasannio.camcom.it/bandi`), i bandi e
-  avvisi della Regione Campania, i GAL e la Provincia di Benevento quando li trovi citati, e i **click day** (INAIL
-  bando ISI, decreto flussi, voucher della Regione o della Camera di Commercio).
-- **Prima di aggiungere:** guarda se c'è già in `https://notiziebenevento.it/contributi.json` (stesso link o stesso
-  titolo): se c'è, non aggiungerlo.
-- **Ogni voce** in `contributi_locali.json` (`{"contributi": [ … ]}`):
-  `{"id": "parole-con-trattini", "titolo": "il titolo del bando", "ente": "Camera di Commercio Irpinia Sannio",
-  "dove": "sannio|campania|sud|italia|europa", "chi": ["impresa|nuova|professionista|associazione|ente|cittadino"],
-  "temi": ["investire|aprire|digitale|energia|innovazione|export|credito|giovani-donne|crisi|sociale|cultura"],
-  "forma": "Contributo a fondo perduto", "quanto": "fino a 5.000 €", "apertura": "AAAA-MM-GG", "scadenza": "AAAA-MM-GG",
-  "click_day": "AAAA-MM-GGTHH:MM (solo se c'è)", "link": "https://… la pagina ufficiale del bando",
-  "cose": "2-3 frasi: cos'è e a chi serve", "controllato": "AAAA-MM-GG di oggi"}`.
-- **Regole:** date, ore e importi **solo se scritti nel bando ufficiale** (mai stimati); se il bando cambia la scadenza
-  o il click day, aggiorna la voce e `controllato`; non cancellare le voci scadute (escono da sole dopo 60 giorni).
-  contributi.py scarta le voci fatte male: guarda gli avvisi nel log della pubblicazione.
-- Un contributo grosso e nuovo (Regione, Camera di Commercio, molti soldi o tante persone) è anche una **notizia**
-  (`avvisi`, o `politica` se lo decide una Giunta), come sempre.
+Dal 28 ott 2026 il sito ha la pagina **Contributi** (notiziebenevento.it/contributi/). La tiene **l'agente dei
+contributi**, che gira una volta al giorno (CONTRIBUTI.md; lui: «devi creare un agente che una volta al giorno scova i
+contributi, sovvenzioni»): tu **non tocchi** `contributi_locali.json` né `contributi_esclusi.json`.
+
+Tu fai una cosa sola. Quando una notizia è un **aiuto vero** che un Comune (o un Ambito sociale, la Provincia) dà a chi
+vive qui — soldi, bonus, buoni (libri, spesa), assegni, contributi per l'affitto o le bollette, borse di studio,
+rimborsi, esenzioni o riduzioni per chi ha l'ISEE basso, contributi alle imprese o alle associazioni — mettici
+`"contributo": {"chi": [...], "temi": [...], "aiuto": [...]}` e la scadenza delle domande in `in_vigore_fino`; se la
+data non c'è ancora, `"quando": "Domande dopo l'avviso del Comune, atteso nei prossimi giorni"` (una frase breve). Così
+esce anche nella pagina Contributi.
+- `chi`: cittadino (famiglie e cittadini), giovani (giovani e studenti), commercio, artigiano, agricoltura, turismo
+  (turismo, bar, ristoranti), impresa (imprese in genere), nuova (chi apre un'attività), professionista, associazione,
+  ente (Comuni, scuole, enti pubblici).
+- `temi`: figli, scuola, casa (casa, affitto, bollette), lavoro, investire, aprire, digitale, energia, innovazione,
+  export, credito, giovani-donne, crisi, sociale, cultura.
+- `aiuto`: fondo (soldi a fondo perduto), bonus (bonus, assegni, buoni alle persone), prestito, garanzia, fiscale.
+- **Non è un contributo** (lui, 28 ott 2026: «se li leggi aiuti sovvenzioni contributi non c'è nulla, anzi il
+  contrario, quasi tutti il Comune chiede soldi»): pagare tasse, tariffe, rette e mense; bandi per comprare loculi;
+  lampade votive; contatori; albi di scrutatori e presidenti di seggio; elenchi elettorali; concorsi, avvisi di lavoro e
+  incarichi (avranno la sezione Concorsi); attività o corsi gratuiti che non sono un aiuto in soldi; gli elenchi dei
+  beneficiari già scelti. Nel dubbio, niente `contributo`.
+- Esempio: i buoni libri di Sant'Angelo a Cupolo, `"contributo": {"chi": ["cittadino", "giovani"], "temi": ["scuola",
+  "figli"], "aiuto": ["bonus"]}`, `"in_vigore_fino": "2026-10-30"`.
 
 ## Gli approfondimenti
 

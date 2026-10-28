@@ -827,6 +827,26 @@ def zona_dal_luogo(d, avv):
             n["zona"] = nuova
 
 
+def controlla_contributo(n, w, err):
+    """"contributo" in una notizia: un aiuto vero di un Comune (AGENTE.md, «I contributi»), con le chiavi dei filtri della
+    pagina Contributi (strumenti/contributi.py)."""
+    if "contributo" not in n:
+        return
+    from contributi import CHI, TEMI, AIUTO
+    c = n["contributo"]
+    if not isinstance(c, dict) or not isinstance(c.get("chi"), list) or not c["chi"]:
+        err.append(f"{w}: «contributo» è {{\"chi\": [...], \"temi\": [...], \"aiuto\": [...]}} (AGENTE.md, «I contributi»)")
+        return
+    for k, ammessi in (("chi", CHI), ("temi", TEMI), ("aiuto", AIUTO)):
+        v = c.get(k, [])
+        if not isinstance(v, list) or any(x not in ammessi for x in v):
+            err.append(f"{w}: contributo.{k} ammette solo {', '.join(ammessi)}")
+    if not c.get("aiuto"):
+        err.append(f"{w}: contributo senza «aiuto» (che aiuto è: {', '.join(AIUTO)})")
+    if c.get("quando") is not None and not (isinstance(c["quando"], str) and 5 <= len(c["quando"]) <= 120):
+        err.append(f"{w}: contributo.quando è una frase breve sulla scadenza, se non c'è una data")
+
+
 def controlla_scena(x, w, err, storia=False):
     """La scena per la foto fatta con l'IA (strumenti/foto_ia.py): voluta dal proprietario il 28 ott 2026, «regola tutte
     foto, se non la trovi ne crei una perfetta cinematografica con gpt», «devono rappresentare bene la scena raccontata».
@@ -962,6 +982,7 @@ def controlla(d, err, avv, adesso=None):
             elif n["immagine"] not in temi_foto():
                 err.append(f"{w}: immagine {n['immagine']!r} non è un tema di img/temi/temi.json")
         controlla_scena(n, w, err)
+        controlla_contributo(n, w, err)
         a = n.get("articolo") or {}
         # con un comunicato arrivato per email niente «Cosa non si sa ancora»: elencare cosa manca sembra una
         # mancanza di rispetto verso chi ce lo manda (voluto dal proprietario il 26 ott 2026)

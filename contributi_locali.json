@@ -1,3 +1,1435 @@
 {
- "contributi": []
+ "contributi": [
+  {
+   "id": "assegno-unico-figli-inps",
+   "titolo": "Assegno unico per i figli: domanda all'INPS",
+   "ente": "INPS",
+   "da": [
+    "stato"
+   ],
+   "dove": "italia",
+   "chi": [
+    "cittadino"
+   ],
+   "temi": [
+    "figli"
+   ],
+   "aiuto": [
+    "bonus"
+   ],
+   "forma": "Assegno mensile per ogni figlio",
+   "quanto": "Da 58,3 a 203,8 euro al mese per ogni figlio minore, più eventuali maggiorazioni",
+   "scadenza_testo": "Domande tutto l'anno; se presentata dopo il 30 giugno spetta dal mese successivo",
+   "link": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.assegno-unico-e-universale-per-i-figli-a-carico-55984.assegno-unico-e-universale-per-i-figli-a-carico.html",
+   "cose": "È il sostegno mensile dell'INPS alle famiglie con figli a carico: per ogni figlio fino a 21 anni (a certe condizioni) e senza limiti di età per i figli con disabilità. Spetta a tutti, anche senza ISEE, almeno nella misura minima.",
+   "a_chi": "Genitori con figli minorenni a carico (per i nuovi nati dal settimo mese di gravidanza); figli maggiorenni fino a 21 anni con reddito sotto 8.000 euro l'anno che studiano, fanno un tirocinio o lavorano, sono disoccupati iscritti ai servizi per l'impiego o fanno il servizio civile; figli con disabilità senza limiti di età. Servono cittadinanza o titolo di soggiorno, pagamento delle imposte in Italia e residenza in Italia (o lavoro in Italia con contributi in regola).",
+   "cosa_prevede": "L'importo dipende dall'ISEE, dall'età e dal numero dei figli. Per il 2026 la quota per ogni figlio minore va da un massimo di 203,8 euro al mese (ISEE fino a 17.468,51 euro) a un minimo di 58,3 euro (senza ISEE o con ISEE da 46.582,71 euro in su). Sono previste maggiorazioni per figli sotto un anno, figli tra uno e tre anni nei nuclei con tre o più figli, figli con disabilità, madri sotto i 21 anni, genitori entrambi con reddito da lavoro, nuclei numerosi e con quattro o più figli. Per le domande presentate tra il 1° marzo e il 30 giugno spettano gli arretrati da marzo. L'assegno non fa reddito ai fini IRPEF ed è compatibile con il nuovo Bonus mamme e con gli aiuti di Regione e Comuni.",
+   "come": "Domanda online sul sito INPS, con l'app INPS Mobile, al numero verde 803.164 (da fisso) o 06 164.164 (da cellulare), oppure tramite patronato. Chi ha già la domanda accolta non deve ripresentarla: l'INPS continua a pagare d'ufficio, ma bisogna rinnovare l'ISEE e comunicare le variazioni, come la nascita di un altro figlio. L'ISEE si chiede al CAF o sul portale unico ISEE dell'INPS.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "bonus-asilo-nido-2026-inps",
+   "titolo": "Bonus asilo nido 2026: fino a 3.600 euro per le rette, domande entro il 31 dicembre",
+   "ente": "INPS",
+   "da": [
+    "stato"
+   ],
+   "dove": "italia",
+   "chi": [
+    "cittadino"
+   ],
+   "temi": [
+    "figli"
+   ],
+   "aiuto": [
+    "bonus"
+   ],
+   "forma": "Rimborso mensile delle rette (o contributo unico per l'assistenza a casa)",
+   "quanto": "Fino a 3.600 euro l'anno",
+   "apertura": "2026-03-31",
+   "scadenza": "2026-12-31",
+   "scadenza_testo": "Domande per il 2026 dal 31 marzo al 31 dicembre 2026; le ricevute delle rette 2026 si caricano entro il 30 aprile 2027",
+   "link": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.bonus-asilo-nido-e-forme-di-supporto-presso-la-propria-abitazione-51105.bonus-asilo-nido-e-forme-di-supporto-presso-la-propria-abitazione.html",
+   "cose": "Contributo dell'INPS per pagare la retta del nido dei bambini sotto i tre anni, oppure per l'assistenza a casa dei bambini che non possono frequentarlo per gravi malattie croniche. Dal 2026 una sola domanda vale fino ad agosto dell'anno in cui il bambino compie tre anni.",
+   "a_chi": "Genitori di bambini sotto i tre anni iscritti a nido o micronido, sezione primavera, spazio gioco o servizio educativo domiciliare con regolare autorizzazione secondo le norme regionali. La domanda la presenta il genitore che paga la retta. Servono residenza in Italia e cittadinanza italiana o UE, oppure i permessi di soggiorno indicati dall'INPS. Il contributo per l'assistenza a casa spetta al genitore che convive con un bambino affetto da gravi patologie croniche certificate.",
+   "cosa_prevede": "Per i bambini nati dal 1° gennaio 2024: 3.600 euro l'anno con ISEE minorenni fino a 40.000 euro, 1.500 euro senza ISEE o sopra quella soglia. Per i nati prima del 2024: 3.000 euro con ISEE fino a 25.000,99 euro, 2.500 euro tra 25.001 e 40.000 euro, 1.500 euro negli altri casi. L'ISEE si calcola senza contare l'Assegno unico. Il contributo nido è pagato ogni mese, al massimo per undici mensilità l'anno, e non può superare la retta; non si somma alla detrazione fiscale per le spese di nido. Il contributo per l'assistenza a casa è pagato in un'unica soluzione. Se i fondi dell'anno sono finiti, i mesi richiesti vanno in riserva.",
+   "come": "Domanda online sul sito INPS con SPID, CIE o CNS, oppure tramite patronato; una domanda per ogni figlio. Bisogna indicare i dati dell'autorizzazione della struttura (si chiedono al nido) e allegare per ogni mese la fattura o ricevuta della retta e la prova del pagamento tracciabile. Negli anni successivi basta rientrare nella domanda e scegliere i nuovi mesi.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "bonus-nuovi-nati-2026-inps",
+   "titolo": "Bonus nuovi nati: 1.000 euro per ogni figlio nato o adottato nel 2026",
+   "ente": "INPS",
+   "da": [
+    "stato"
+   ],
+   "dove": "italia",
+   "chi": [
+    "cittadino"
+   ],
+   "temi": [
+    "figli"
+   ],
+   "aiuto": [
+    "bonus"
+   ],
+   "forma": "Contributo una tantum",
+   "quanto": "1.000 euro una tantum per ogni figlio",
+   "apertura": "2026-04-14",
+   "scadenza_testo": "Entro 120 giorni dalla nascita o dall'ingresso in famiglia, a pena di decadenza",
+   "link": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.bonus-nuovi-nati.html",
+   "cose": "Contributo di 1.000 euro che l'INPS paga una sola volta per ogni figlio nato, adottato o in affidamento preadottivo nel 2026, per aiutare le famiglie con le spese dei primi mesi.",
+   "a_chi": "Il genitore di un bambino nato, adottato o in affidamento preadottivo tra il 1° gennaio e il 31 dicembre 2026, con ISEE per prestazioni familiari riferito al minore non superiore a 40.000 euro. Nel calcolo dell'ISEE non si contano gli importi dell'Assegno unico.",
+   "cosa_prevede": "Un pagamento unico di 1.000 euro per ogni figlio. Con più figli serve una domanda per ciascuno. Per le nascite avvenute prima dell'apertura del servizio (14 aprile 2026) il termine è scaduto il 12 agosto 2026; per tutte le altre valgono i 120 giorni dall'evento.",
+   "come": "Domanda online sul sito INPS (pulsante «Utilizza il servizio»), con l'app INPS Mobile, tramite Contact Center Multicanale (803.164 da fisso, 06 164.164 da cellulare) o patronato. Va presentata entro 120 giorni dalla nascita o dall'ingresso in famiglia: dopo si perde il diritto.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "nuovo-bonus-mamme-2026-inps",
+   "titolo": "Bonus mamme 2026: 60 euro al mese alle lavoratrici con almeno due figli",
+   "ente": "INPS",
+   "da": [
+    "stato"
+   ],
+   "dove": "italia",
+   "chi": [
+    "cittadino",
+    "professionista"
+   ],
+   "temi": [
+    "figli",
+    "lavoro",
+    "giovani-donne"
+   ],
+   "aiuto": [
+    "bonus"
+   ],
+   "forma": "Integrazione al reddito pagata in un'unica soluzione",
+   "quanto": "60 euro al mese, fino a 720 euro per il 2026",
+   "apertura": "2026-10-20",
+   "scadenza": "2026-12-31",
+   "scadenza_testo": "Entro il 31 dicembre 2026; entro il 31 gennaio 2027 se i requisiti si raggiungono a dicembre 2026",
+   "link": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.nuovo-bonus-mamme-2026.html",
+   "cose": "Contributo dell'INPS per le madri che lavorano e hanno almeno due figli: 60 euro per ogni mese di lavoro nel 2026, pagati tutti insieme a dicembre.",
+   "a_chi": "Lavoratrici madri dipendenti, pubbliche e private, e autonome iscritte a una gestione previdenziale obbligatoria, comprese Casse professionali e Gestione separata. Con due figli il più piccolo non deve aver compiuto 10 anni; con tre o più figli il più piccolo non deve aver compiuto 18 anni. Il reddito annuo da lavoro non deve superare 40.000 euro. Escluse le lavoratrici domestiche e, per i mesi di contratto a tempo indeterminato, le madri con tre o più figli (che possono avere l'esonero dei contributi).",
+   "cosa_prevede": "60 euro per ogni mese, o frazione di mese, di lavoro nel 2026 in cui ci sono i requisiti, fino a 12 mensilità (720 euro). Le madri con due figli lo prendono anche con contratto a tempo indeterminato. La somma non fa reddito imponibile e non conta ai fini ISEE. Il pagamento è previsto in un'unica soluzione a dicembre 2026. È compatibile con l'Assegno unico.",
+   "come": "Domanda online dalla pagina «Nuovo Bonus mamme 2026» del sito INPS: si clicca «Utilizza il servizio», si accede con le proprie credenziali e si compila nel Punto d'accesso alle prestazioni non pensionistiche. In alternativa Contact Center Multicanale o patronato. Esito e richiesta di riesame sono spiegati nel messaggio INPS n. 3343 del 20 ottobre 2026.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "assegno-di-inclusione-adi-inps",
+   "titolo": "Assegno di inclusione: aiuto contro la povertà per famiglie con minori, anziani o disabili",
+   "ente": "INPS",
+   "da": [
+    "stato"
+   ],
+   "dove": "italia",
+   "chi": [
+    "cittadino"
+   ],
+   "temi": [
+    "sociale",
+    "lavoro"
+   ],
+   "aiuto": [
+    "bonus"
+   ],
+   "forma": "Assegno mensile su carta elettronica",
+   "quanto": "",
+   "scadenza_testo": "Domande tutto l'anno; dura fino a 18 mesi, rinnovabile per periodi di 12",
+   "link": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.assegno-di-inclusione-adi.html",
+   "cose": "Misura nazionale contro la povertà: integra il reddito della famiglia e aiuta chi paga un affitto, insieme a un percorso di inclusione sociale e lavorativa con i servizi sociali del Comune e i centri per l'impiego.",
+   "a_chi": "Famiglie con almeno un componente con disabilità, minorenne, con almeno 60 anni o seguito dai servizi socio-sanitari per una condizione di svantaggio. Il richiedente deve risiedere in Italia da almeno cinque anni, gli ultimi due di fila. Servono ISEE fino a 10.140 euro, reddito familiare sotto 6.500 euro l'anno per la scala di equivalenza (8.190 euro se tutti over 67), patrimonio immobiliare oltre la casa fino a 30.000 euro e mobiliare da 6.000 a 10.000 euro secondo i componenti (di più con disabili e dal terzo figlio).",
+   "cosa_prevede": "Ha due parti: un'integrazione del reddito familiare fino a una soglia (quota A) e un sostegno per chi vive in affitto con contratto registrato (quota B). Si riceve ogni mese sulla Carta di inclusione, per al massimo 18 mesi, rinnovabili con nuova domanda per altri 12. Dal 2026 non c'è più il mese di stop prima del rinnovo: la prima mensilità del rinnovo è pari al 50%. Se un componente trova lavoro, i primi 3.000 euro lordi l'anno di nuovo reddito non riducono l'assegno. L'importo si può dividere tra i componenti maggiorenni.",
+   "come": "Domanda online sul sito INPS, al patronato o al CAF. Poi ci si iscrive alla piattaforma SIISL e si firma il Patto di attivazione digitale; entro 120 giorni c'è il primo incontro con i servizi sociali del Comune. Chi è tenuto al percorso lavorativo firma entro 60 giorni il patto di servizio al centro per l'impiego.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "supporto-formazione-lavoro-sfl-inps",
+   "titolo": "Supporto per la formazione e il lavoro: 500 euro al mese a chi segue corsi e attività",
+   "ente": "INPS",
+   "da": [
+    "stato"
+   ],
+   "dove": "italia",
+   "chi": [
+    "cittadino"
+   ],
+   "temi": [
+    "lavoro",
+    "sociale"
+   ],
+   "aiuto": [
+    "bonus"
+   ],
+   "forma": "Indennità mensile di partecipazione",
+   "quanto": "500 euro al mese per massimo 12 mesi, prorogabili di altri 12",
+   "scadenza_testo": "Domande tutto l'anno",
+   "link": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.supporto-per-la-formazione-e-il-lavoro-sfl-.html",
+   "cose": "Indennità dell'INPS per le persone tra 18 e 59 anni in difficoltà economica che partecipano a corsi di formazione, progetti di qualificazione, politiche attive del lavoro, progetti utili alla collettività o al servizio civile universale.",
+   "a_chi": "Singoli componenti di nuclei familiari, tra 18 e 59 anni, residenti in Italia da almeno cinque anni (gli ultimi due di fila), con ISEE fino a 10.140 euro e reddito familiare sotto 10.140 euro per la scala di equivalenza, patrimonio immobiliare oltre la casa fino a 30.000 euro e mobiliare da 6.000 a 10.000 euro secondo i componenti. Niente auto sopra 1.600 cc o moto sopra 250 cc immatricolate negli ultimi 36 mesi. Escluso chi si è dimesso volontariamente negli ultimi 12 mesi, salvo giusta causa.",
+   "cosa_prevede": "500 euro al mese, pagati dall'INPS con bonifico, solo se si partecipa davvero alle attività, per al massimo 12 mesi. Il periodo può essere prorogato di altri 12 mesi se alla scadenza è in corso un percorso di formazione. Chi smette di partecipare perde il beneficio.",
+   "come": "Domanda online sul sito INPS, tramite Contact Center (803 164 da fisso, 06 164164 da cellulare), patronato o intermediari INPS. Poi iscrizione alla piattaforma SIISL, firma del Patto di attivazione digitale (indicando almeno tre agenzie per il lavoro) e del Patto di servizio personalizzato con il centro per l'impiego.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "prestazione-universale-anziani-inps",
+   "titolo": "Prestazione universale: circa 850 euro al mese in più agli over 80 non autosufficienti",
+   "ente": "INPS",
+   "da": [
+    "stato"
+   ],
+   "dove": "italia",
+   "chi": [
+    "cittadino"
+   ],
+   "temi": [
+    "sociale"
+   ],
+   "aiuto": [
+    "bonus"
+   ],
+   "forma": "Assegno mensile",
+   "quanto": "Circa 850 euro al mese di quota integrativa, oltre all'indennità di accompagnamento",
+   "scadenza_testo": "Misura sperimentale fino al 31 dicembre 2026; spetta dal mese della domanda",
+   "link": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.decreto-anziani-prestazione-universale.html",
+   "cose": "Aiuto sperimentale dell'INPS per gli anziani non autosufficienti con un bisogno di assistenza gravissimo, per sostenere le cure a casa. Si aggiunge all'indennità di accompagnamento.",
+   "a_chi": "Persone con almeno 80 anni che ricevono l'indennità di accompagnamento, con ISEE socio-sanitario fino a 6.000 euro, con un bisogno assistenziale gravissimo riconosciuto dall'INPS (requisito sanitario più questionario sociale con almeno 8 punti) e non ricoverate in RSA o strutture simili.",
+   "cosa_prevede": "Una quota fissa pari all'indennità di accompagnamento e una quota integrativa, l'assegno di assistenza, di circa 850 euro al mese nei limiti delle risorse disponibili. La quota integrativa va usata per pagare lavoratori domestici qualificati con regolare contratto oppure servizi di assistenza di imprese o professionisti qualificati. Non è tassata né pignorabile. Assorbe i contributi per lo stesso scopo pagati dagli Ambiti territoriali. Decade se si supera l'ISEE di 6.000 euro, se si va in RSA o se la quota integrativa non è usata come previsto.",
+   "come": "Domanda online sul sito INPS con il servizio «Decreto Anziani - Prestazione Universale», oppure tramite patronato. Si può presentare dal primo giorno del mese in cui si compiono 80 anni. L'INPS valuta il bisogno assistenziale con i dati sanitari, i documenti allegati e il questionario.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "carta-acquisti-inps",
+   "titolo": "Carta acquisti: 80 euro ogni due mesi per over 65 e bambini sotto i tre anni",
+   "ente": "INPS",
+   "da": [
+    "stato"
+   ],
+   "dove": "italia",
+   "chi": [
+    "cittadino"
+   ],
+   "temi": [
+    "sociale",
+    "figli"
+   ],
+   "aiuto": [
+    "bonus"
+   ],
+   "forma": "Carta di pagamento ricaricata ogni due mesi",
+   "quanto": "80 euro ogni due mesi",
+   "scadenza_testo": "Domande tutto l'anno",
+   "link": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.la-carta-acquisti.html",
+   "cose": "Carta elettronica con 80 euro ogni due mesi per fare la spesa alimentare nei negozi convenzionati e pagare le bollette di luce e gas in posta. Non si possono prelevare contanti.",
+   "a_chi": "Cittadini dai 65 anni in su o bambini sotto i 3 anni (la carta è intestata al genitore), iscritti all'anagrafe del Comune e con i requisiti di cittadinanza o soggiorno previsti. Per il 2026 serve un ISEE sotto 8.230,81 euro; gli over 65 devono avere trattamenti e redditi sotto 8.230,81 euro (65-69 anni) o 10.974,42 euro (dai 70 anni). Ci sono limiti su utenze, auto e immobili e un patrimonio mobiliare fino a 15.000 euro.",
+   "cosa_prevede": "80 euro accreditati ogni due mesi, da spendere per alimentari nei negozi aderenti e per le bollette di luce e gas negli uffici postali. I titolari hanno anche uno sconto del 5% nei negozi e nelle farmacie aderenti (non su medicinali e ticket). Alla consegna la carta ha già l'importo del bimestre in cui è stata fatta la domanda. Regioni e Comuni possono aggiungere altre somme.",
+   "come": "Si presenta la domanda in un ufficio postale con i moduli 2026 (uno per gli over 65, uno per i minori di 3 anni) che si trovano sul sito INPS e di Poste, insieme all'attestazione ISEE valida. Poste la trasmette all'INPS; se accolta, si viene chiamati a ritirare la carta. L'ISEE va rinnovato a gennaio, altrimenti gli accrediti si fermano.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "reddito-di-liberta-donne-vittime-violenza",
+   "titolo": "Reddito di libertà: fino a 530 euro al mese per le donne vittime di violenza",
+   "ente": "INPS (domanda tramite il Comune)",
+   "da": [
+    "stato"
+   ],
+   "dove": "italia",
+   "chi": [
+    "cittadino"
+   ],
+   "temi": [
+    "sociale",
+    "giovani-donne"
+   ],
+   "aiuto": [
+    "bonus"
+   ],
+   "forma": "Contributo mensile pagato in un'unica soluzione",
+   "quanto": "Fino a 530 euro al mese per massimo 12 mesi",
+   "apertura": "2026-01-01",
+   "scadenza": "2026-12-31",
+   "scadenza_testo": "Domande per il 2026 fino al 31 dicembre 2026 tramite il Comune; accolte in ordine di invio nei limiti dei fondi di ogni Regione",
+   "link": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.reddito-di-libert-.html",
+   "cose": "Contributo per le donne vittime di violenza, con o senza figli, seguite da un centro antiviolenza e dai servizi sociali, per aiutarle a uscire dalla violenza: autonomia abitativa e personale, studi dei figli.",
+   "a_chi": "Donne vittime di violenza residenti in Italia (italiane, comunitarie, straniere con regolare permesso di soggiorno, comprese rifugiate e titolari di protezione sussidiaria), in condizione di povertà per uno stato di bisogno straordinario o urgente dichiarato dal servizio sociale, seguite da un centro antiviolenza riconosciuto dalla Regione e da un servizio sociale.",
+   "cosa_prevede": "Fino a 530 euro al mese per al massimo 12 mensilità, concessi in un'unica soluzione, nei limiti delle risorse di ogni Regione (le Regioni possono aggiungerne di proprie). È compatibile con altri aiuti come l'Assegno di inclusione. Le domande presentate entro il 31 dicembre 2025 e respinte per mancanza di fondi vanno ripresentate nel 2026.",
+   "come": "La domanda si fa tramite il Comune con il modulo INPS SR208. Il centro antiviolenza attesta il percorso di autonomia e il servizio sociale lo stato di bisogno. Il Comune verifica i requisiti e invia la domanda all'INPS: data e ora di invio fissano il posto nella graduatoria regionale.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "assegno-maternita-comuni-2026",
+   "titolo": "Assegno di maternità dei Comuni: 2.065,50 euro per le nascite del 2026",
+   "ente": "Comune di residenza (pagato dall'INPS)",
+   "da": [
+    "stato",
+    "comune"
+   ],
+   "dove": "italia",
+   "chi": [
+    "cittadino"
+   ],
+   "temi": [
+    "figli"
+   ],
+   "aiuto": [
+    "bonus"
+   ],
+   "forma": "Assegno per cinque mensilità",
+   "quanto": "413,10 euro al mese per cinque mesi, 2.065,50 euro in tutto se spetta per intero",
+   "scadenza_testo": "Entro sei mesi dalla nascita o dall'ingresso in famiglia del bambino",
+   "link": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.assegno-di-maternit-e-soglia-isee-aggiornamenti-per-il-2026.html",
+   "cose": "Assegno per chi ha un figlio, lo adotta o lo prende in affidamento preadottivo e non ha una copertura previdenziale per la maternità, o ne ha una bassa. Lo concede il Comune e lo paga l'INPS.",
+   "a_chi": "Residenti italiani, comunitari o stranieri con titolo di soggiorno (sul tipo di permesso decide il Comune), con ISEE fino a 20.668,26 euro, per nascite, affidamenti preadottivi o adozioni senza affidamento tra il 1° gennaio e il 31 dicembre 2026. Non bisogna avere copertura previdenziale per la maternità, o averla sotto l'importo fissato ogni anno, né ricevere un altro assegno di maternità INPS.",
+   "cosa_prevede": "Se spetta per intero, 413,10 euro al mese per cinque mensilità, cioè 2.065,50 euro. Non si somma ad altri trattamenti previdenziali, salvo il diritto alla quota differenziale pagata dal Comune.",
+   "come": "La domanda si presenta al proprio Comune di residenza entro sei mesi dalla nascita del bambino o dal suo ingresso in famiglia. Il Comune verifica i requisiti e l'INPS paga l'assegno. Serve un ISEE in corso di validità.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "bonus-sociale-luce-gas-acqua-arera",
+   "titolo": "Bonus sociale su luce, gas e acqua: sconto automatico con ISEE fino a 9.796 euro",
+   "ente": "ARERA - Autorità di regolazione per energia reti e ambiente",
+   "da": [
+    "stato"
+   ],
+   "dove": "italia",
+   "chi": [
+    "cittadino"
+   ],
+   "temi": [
+    "energia",
+    "sociale"
+   ],
+   "aiuto": [
+    "bonus"
+   ],
+   "forma": "Sconto in bolletta",
+   "quanto": "Luce: da 146 a 204,40 euro l'anno secondo i componenti; gas e acqua in base a famiglia, uso e zona",
+   "scadenza_testo": "Senza domanda: vale 12 mesi dall'ISEE e va rinnovato con una nuova DSU ogni anno",
+   "link": "https://www.arera.it/consumatori/bonus-sociale/bonus-sociale-per-disagio-economico",
+   "cose": "Sconto applicato in automatico sulle bollette di luce, gas e acqua alle famiglie con ISEE basso. Non serve una domanda: basta presentare la DSU e ottenere l'ISEE.",
+   "a_chi": "Famiglie con ISEE fino a 9.796 euro (fino a 3 figli a carico) o fino a 20.000 euro (almeno 4 figli a carico). Il contratto deve essere intestato a un componente del nucleo ISEE, a uso domestico (per l'acqua domestico residente) e attivo, anche se sospeso per morosità. Se il contratto è intestato al proprietario di casa il bonus non spetta. Vale anche per gas e acqua condominiali.",
+   "cosa_prevede": "Il bonus dura 12 mesi, su una sola fornitura per ogni servizio. Luce 2026: 146,00 euro l'anno per 1-2 componenti, 186,15 euro per 3-4, 204,40 euro oltre 4, uguali in ogni bolletta. Gas: importo che cambia ogni trimestre secondo componenti, uso e zona climatica, più alto d'inverno. Acqua: sconto pari a 50 litri al giorno per ogni componente, calcolato sulle tariffe del proprio gestore.",
+   "come": "Nessuna domanda. Si presenta la DSU all'INPS (portale unico ISEE o CAF) e si ottiene l'attestazione ISEE: se è sotto soglia, il Sistema informativo integrato e il gestore idrico verificano le forniture e applicano lo sconto. Ogni anno serve una nuova DSU per altri 12 mesi.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "bonus-sociale-rifiuti-tari-arera",
+   "titolo": "Bonus sociale rifiuti: sconto del 25% sulla TARI per chi ha ISEE basso",
+   "ente": "ARERA - Autorità di regolazione per energia reti e ambiente",
+   "da": [
+    "stato"
+   ],
+   "dove": "italia",
+   "chi": [
+    "cittadino"
+   ],
+   "temi": [
+    "casa",
+    "sociale"
+   ],
+   "aiuto": [
+    "bonus"
+   ],
+   "forma": "Sconto sulla tassa rifiuti",
+   "quanto": "25% della TARI annuale",
+   "scadenza_testo": "Senza domanda: lo sconto arriva nell'avviso TARI dell'anno successivo a quello dell'ISEE",
+   "link": "https://www.arera.it/consumatori/bonus-sociale/bonus-sociale-per-disagio-economico/bonus-sociale-rifiuti-2-1",
+   "cose": "Dal 2026 le famiglie con ISEE basso hanno uno sconto automatico del 25% sulla TARI (o sulla tariffa rifiuti), applicato dal gestore nell'avviso di pagamento.",
+   "a_chi": "Nuclei con ISEE fino a 9.796 euro (fino a 3 figli a carico) o fino a 20.000 euro (almeno 4 figli a carico), con utenza TARI domestica intestata a un componente del nucleo ISEE. Con più utenze, lo sconto vale solo per la casa indicata come abitazione nella DSU.",
+   "cosa_prevede": "Riduzione del 25% della TARI dovuta per l'anno della DSU: per esempio, su un avviso di 200 euro l'anno lo sconto è di 50 euro. Lo sconto è applicato nell'avviso emesso entro giugno dell'anno dopo; se l'avviso arriva dopo giugno, il gestore paga con bonifico o altro mezzo tracciabile. A chi ha TARI arretrate non pagate, dopo un sollecito, il gestore può trattenere il bonus.",
+   "come": "Nessuna domanda: basta presentare la DSU all'INPS e avere un ISEE sotto soglia. Con ISEE ottenuto nel 2026 lo sconto arriva nel 2027; chi presenta la DSU dopo il 20 dicembre e riceve l'attestazione a gennaio slitta di un anno. La DSU va ripresentata ogni anno. Chi cambia Comune deve chiudere l'utenza e dare il nuovo indirizzo al vecchio gestore.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "bonus-elettrico-disagio-fisico-arera",
+   "titolo": "Bonus luce per chi usa macchinari salvavita: domanda al Comune o al CAF",
+   "ente": "ARERA - Autorità di regolazione per energia reti e ambiente",
+   "da": [
+    "stato"
+   ],
+   "dove": "italia",
+   "chi": [
+    "cittadino"
+   ],
+   "temi": [
+    "energia",
+    "sociale"
+   ],
+   "aiuto": [
+    "bonus"
+   ],
+   "forma": "Sconto in bolletta elettrica",
+   "quanto": "Da 142,35 a 463,55 euro l'anno (valori 2026)",
+   "scadenza_testo": "Domande tutto l'anno",
+   "link": "https://www.arera.it/consumatori/bonus-sociale/bonus-per-gravi-condizioni-di-salute/come-si-ottiene-il-bonus-per-disagio-fisico",
+   "cose": "Sconto sulla bolletta elettrica per le famiglie in cui vive una persona in gravi condizioni di salute che usa apparecchiature elettromedicali salvavita. Non dipende dall'ISEE.",
+   "a_chi": "Clienti domestici affetti da grave malattia, o intestatari della fornitura elettrica dove vive una persona affetta da grave malattia, che usano apparecchiature elettromedicali necessarie per restare in vita (elenco del decreto del Ministero della Salute del 13 gennaio 2011). Non serve l'ISEE e si somma al bonus per disagio economico.",
+   "cosa_prevede": "Per il 2026 da 142,35 a 463,55 euro l'anno per fornitura, secondo la potenza del contatore, il tipo di apparecchio e le ore di uso al giorno certificate dall'ASL (se l'ASL non le indica si applica la fascia minima). Lo sconto è diviso nelle bollette dei 12 mesi successivi alla domanda. L'importo si può stimare con il simulatore SGAte.",
+   "come": "Domanda al Comune di residenza dell'intestatario della luce (anche se diverso dal malato) o al CAF o altro ente indicato dal Comune, con il modulo B, il certificato ASL, documento e codice fiscale, codice POD e potenza della fornitura (sono in bolletta). Non valgono i certificati di invalidità civile. Si può delegare con l'allegato D.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "detrazione-ristrutturazioni-2026",
+   "titolo": "Bonus ristrutturazioni: detrazione del 50% sulla prima casa per le spese del 2026",
+   "ente": "Agenzia delle Entrate",
+   "da": [
+    "stato"
+   ],
+   "dove": "italia",
+   "chi": [
+    "cittadino"
+   ],
+   "temi": [
+    "casa"
+   ],
+   "aiuto": [
+    "fiscale"
+   ],
+   "forma": "Detrazione IRPEF in 10 rate annuali",
+   "quanto": "50% (abitazione principale) o 36% (altri casi) su massimo 96.000 euro per unità immobiliare",
+   "scadenza_testo": "Percentuali per le spese pagate nel 2026; nel 2027 scendono al 36% (prima casa) e al 30%",
+   "link": "https://www.agenziaentrate.gov.it/portale/schede/agevolazioni/detrristredil36/schinfodetrristredil36",
+   "cose": "Detrazione dall'IRPEF per i lavori di recupero edilizio sulle abitazioni, da recuperare in dieci rate annuali uguali con la dichiarazione dei redditi.",
+   "a_chi": "Chi paga i lavori ed è proprietario o nudo proprietario, titolare di un diritto reale, inquilino o comodatario, familiare convivente; anche soci di società di persone e imprese familiari, alle condizioni degli imprenditori individuali. Il 50% spetta solo per l'abitazione principale e se paga il proprietario o il titolare di un diritto reale; negli altri casi, compresi inquilini, comodatari e familiari conviventi, la detrazione è del 36%.",
+   "cosa_prevede": "Per le spese sostenute nel 2026: 50% sull'abitazione principale e 36% negli altri casi, sempre su un massimo di 96.000 euro per unità immobiliare. Nel 2027 si passa al 36% e al 30%. Escluse le caldaie uniche a combustibili fossili. Spetta anche a chi compra una casa in un edificio interamente ristrutturato da un'impresa che la vende entro 18 mesi dalla fine dei lavori (calcolata sul 25% del prezzo). In generale non si possono più scegliere sconto in fattura o cessione del credito.",
+   "come": "Si pagano i lavori con bonifico bancario o postale con causale, codice fiscale di chi detrae e partita IVA o codice fiscale della ditta, e si conservano fatture e ricevute. La detrazione si chiede nella dichiarazione dei redditi (730 o Redditi), con i dati catastali dell'immobile e, per inquilini e comodatari, gli estremi di registrazione del contratto.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "ecobonus-riqualificazione-energetica-2026",
+   "titolo": "Ecobonus: detrazione fino al 50% per i lavori di risparmio energetico nel 2026",
+   "ente": "Agenzia delle Entrate",
+   "da": [
+    "stato"
+   ],
+   "dove": "italia",
+   "chi": [
+    "cittadino",
+    "impresa",
+    "commercio",
+    "artigiano",
+    "turismo",
+    "agricoltura"
+   ],
+   "temi": [
+    "casa",
+    "energia"
+   ],
+   "aiuto": [
+    "fiscale"
+   ],
+   "forma": "Detrazione IRPEF o IRES in 10 rate annuali",
+   "quanto": "50% (abitazione principale) o 36% (altri casi) per le spese 2026",
+   "scadenza_testo": "Percentuali per le spese pagate nel 2026; nel 2027 scendono al 36% (prima casa) e al 30%",
+   "link": "https://www.agenziaentrate.gov.it/portale/schede/agevolazioni/detrazione-riqualificazione-energetica-55-2016/cosa-riqualificazione-55-2016",
+   "cose": "Detrazione per i lavori che aumentano l'efficienza energetica di edifici esistenti, per esempio infissi, schermature solari o impianti di riscaldamento, da recuperare in dieci rate annuali.",
+   "a_chi": "Chi sostiene le spese su unità immobiliari ed edifici esistenti, accatastati o in corso di accatastamento, di qualsiasi categoria, anche rurali o usati per l'attività d'impresa o professionale. La detrazione vale sia per l'IRPEF sia per l'IRES. Il 50% spetta per l'abitazione principale. Esclusa la sostituzione degli impianti con caldaie uniche a combustibili fossili.",
+   "cosa_prevede": "Per le spese sostenute nel 2025 e nel 2026 la detrazione è del 36%, che sale al 50% per l'abitazione principale; per le spese del 2027 sarà del 30% (36% per l'abitazione principale). Si recupera in 10 rate annuali di pari importo. In generale non si possono più scegliere sconto in fattura o cessione del credito.",
+   "come": "Pagamenti con bonifico bancario o postale con causale, codice fiscale di chi detrae, partita IVA della ditta, numero e data della fattura (non serve per le imprese). Servono l'asseverazione di un tecnico e, nei casi previsti, l'attestato di prestazione energetica (APE). I dati vanno inviati online all'ENEA entro 90 giorni dalla fine dei lavori. La detrazione si indica nella dichiarazione dei redditi.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "bonus-mobili-elettrodomestici-2026",
+   "titolo": "Bonus mobili: detrazione del 50% su mobili ed elettrodomestici per la casa ristrutturata",
+   "ente": "Agenzia delle Entrate",
+   "da": [
+    "stato"
+   ],
+   "dove": "italia",
+   "chi": [
+    "cittadino"
+   ],
+   "temi": [
+    "casa"
+   ],
+   "aiuto": [
+    "fiscale"
+   ],
+   "forma": "Detrazione IRPEF in 10 rate annuali",
+   "quanto": "50% su una spesa massima di 5.000 euro per il 2026",
+   "scadenza": "2026-12-31",
+   "scadenza_testo": "Per gli acquisti fatti entro il 31 dicembre 2026",
+   "link": "https://www.agenziaentrate.gov.it/portale/aree-tematiche/casa/agevolazioni/bonus-mobili-ed-elettrodomestici",
+   "cose": "Detrazione IRPEF per chi compra mobili e grandi elettrodomestici nuovi per arredare un immobile su cui ha fatto lavori di ristrutturazione.",
+   "a_chi": "Chi acquista entro il 31 dicembre 2026 mobili ed elettrodomestici nuovi e ha fatto un intervento di ristrutturazione edilizia iniziato dal 1° gennaio dell'anno precedente all'acquisto. Gli elettrodomestici devono essere almeno in classe A per i forni, E per lavatrici, lavasciugatrici e lavastoviglie, F per frigoriferi e congelatori.",
+   "cosa_prevede": "Detrazione del 50% calcolata su un massimo di 5.000 euro per il 2026, comprese spese di trasporto e montaggio, divisa in dieci quote annuali uguali. Il limite vale per ogni unità immobiliare (con le pertinenze) o parte comune ristrutturata: chi ristruttura più unità ha diritto più volte al bonus. Spetta qualunque sia l'importo dei lavori di ristrutturazione.",
+   "come": "Si paga con bonifico, carta di debito o carta di credito; non si può pagare con contanti o assegni. Con il bonifico non serve quello speciale per le ristrutturazioni. La detrazione si chiede nella dichiarazione dei redditi (730 o Redditi).",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "detrazione-affitto-giovani-under-31",
+   "titolo": "Affitto per i giovani sotto i 31 anni: detrazione fino a 2.000 euro l'anno per quattro anni",
+   "ente": "Agenzia delle Entrate",
+   "da": [
+    "stato"
+   ],
+   "dove": "italia",
+   "chi": [
+    "giovani"
+   ],
+   "temi": [
+    "casa"
+   ],
+   "aiuto": [
+    "fiscale"
+   ],
+   "forma": "Detrazione IRPEF",
+   "quanto": "20% del canone, da 991,60 a 2.000 euro l'anno",
+   "scadenza_testo": "Sempre attiva; spetta per i primi quattro anni del contratto",
+   "link": "https://www.agenziaentrate.gov.it/portale/documents/20143/10186910/Altre_detrazioni_e_deduzioni.pdf/3044e7d4-4fc6-e2c7-37b3-343f7f239ea7",
+   "cose": "Detrazione IRPEF per i giovani tra 20 e 31 anni non compiuti che prendono in affitto una casa, o una parte di essa, dove spostare la propria residenza.",
+   "a_chi": "Giovani tra 20 e 31 anni non compiuti, con reddito complessivo non superiore a 15.493,71 euro, che hanno firmato un contratto di locazione secondo la legge 431/1998 per un'abitazione o una porzione da adibire a propria residenza, diversa dall'abitazione principale dei genitori. Età e reddito vanno verificati ogni anno.",
+   "cosa_prevede": "Il 20% del canone pagato, con un minimo di 991,60 euro e un massimo di 2.000 euro l'anno, in proporzione ai giorni di residenza nell'immobile. Spetta per i primi quattro anni dalla firma del contratto. Se il contratto è intestato a più persone, la detrazione si divide e spetta solo a chi ha i requisiti.",
+   "come": "Si chiede nella dichiarazione dei redditi: nel modello 730 al rigo E71 con il codice 4, oppure nel modello Redditi persone fisiche.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "detrazione-affitto-studenti-fuori-sede",
+   "titolo": "Studenti universitari fuori sede: detrazione del 19% sull'affitto",
+   "ente": "Agenzia delle Entrate",
+   "da": [
+    "stato"
+   ],
+   "dove": "italia",
+   "chi": [
+    "giovani"
+   ],
+   "temi": [
+    "casa",
+    "scuola"
+   ],
+   "aiuto": [
+    "fiscale"
+   ],
+   "forma": "Detrazione IRPEF",
+   "quanto": "19% su un massimo di 2.633 euro di canoni l'anno",
+   "scadenza_testo": "Sempre attiva",
+   "link": "https://www.agenziaentrate.gov.it/portale/documents/20143/10186910/Altre_detrazioni_e_deduzioni.pdf/3044e7d4-4fc6-e2c7-37b3-343f7f239ea7",
+   "cose": "Detrazione IRPEF per l'affitto pagato dagli studenti iscritti a un'università lontana dal Comune di residenza.",
+   "a_chi": "Studenti iscritti a un corso di laurea (anche ITS e nuovi corsi di Conservatori e Istituti musicali) in un'università che si trova in un Comune distante almeno 100 chilometri da quello di residenza e in un'altra provincia, con contratto di locazione, di ospitalità o di assegnazione nello stesso Comune dell'università o in quelli vicini. Esclusi master, dottorati e corsi di specializzazione.",
+   "cosa_prevede": "Si detrae il 19% dei canoni pagati, fino a un massimo di 2.633 euro di spesa l'anno. Non contano deposito cauzionale, spese condominiali e di riscaldamento comprese nel canone e costi di intermediazione. Sopra 120.000 euro di reddito la detrazione si riduce fino ad azzerarsi a 240.000 euro.",
+   "come": "Si chiede nella dichiarazione dei redditi: nel modello 730 ai righi E8-E10 con il codice 18, oppure nel modello Redditi persone fisiche.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "esenzione-canone-rai-over-75",
+   "titolo": "Canone Rai: esenzione per gli over 75 con reddito fino a 8.000 euro",
+   "ente": "Agenzia delle Entrate",
+   "da": [
+    "stato"
+   ],
+   "dove": "italia",
+   "chi": [
+    "cittadino"
+   ],
+   "temi": [
+    "sociale"
+   ],
+   "aiuto": [
+    "fiscale"
+   ],
+   "forma": "Esonero dal canone TV",
+   "quanto": "Esonero dal pagamento del canone TV",
+   "scadenza_testo": "Dichiarazione presentabile in qualsiasi momento; vale anche negli anni dopo se i requisiti restano",
+   "link": "https://www.agenziaentrate.gov.it/portale/aree-tematiche/canone-tv/casi-di-esonero/ultrasettantacinquenni",
+   "cose": "Chi ha compiuto 75 anni e ha un reddito basso può non pagare il canone Rai, presentando una dichiarazione sostitutiva all'Agenzia delle Entrate.",
+   "a_chi": "Cittadini che hanno compiuto 75 anni, con reddito annuo proprio e del coniuge non superiore in tutto a 8.000 euro, senza conviventi con un reddito proprio (esclusi colf, badanti e collaboratori domestici). Il televisore deve essere nell'abitazione di residenza.",
+   "cosa_prevede": "Esonero dal canone TV per tutto l'anno se i 75 anni si compiono entro il 31 gennaio, per il secondo semestre se si compiono tra il 1° febbraio e il 31 luglio. Chi ha pagato pur avendo i requisiti può chiedere il rimborso. Se il canone è in bolletta, per le richieste inviate entro il 15 del mese l'addebito si ferma di norma dalla rata del mese successivo.",
+   "come": "Si compila la dichiarazione sostitutiva (sezione I del modello sul sito dell'Agenzia) e la si spedisce per raccomandata senza busta, con copia di un documento, a: Agenzia delle Entrate, Direzione Provinciale I di Torino, Ufficio Canone TV, Casella postale 22, 10121 Torino; oppure via PEC, firmata digitalmente, a cp22.canonetv@postacertificata.rai.it; oppure la si consegna in un ufficio dell'Agenzia.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "fondo-garanzia-mutuo-prima-casa-consap",
+   "titolo": "Mutuo prima casa: garanzia dello Stato per giovani, famiglie e persone con disabilità",
+   "ente": "Consap - Fondo di garanzia mutui prima casa (Ministero dell'Economia e delle Finanze)",
+   "da": [
+    "stato"
+   ],
+   "dove": "italia",
+   "chi": [
+    "cittadino",
+    "giovani"
+   ],
+   "temi": [
+    "casa",
+    "credito"
+   ],
+   "aiuto": [
+    "garanzia"
+   ],
+   "forma": "Garanzia pubblica sul mutuo",
+   "quanto": "Garanzia del 50% della quota capitale, fino all'80% in alcuni casi; mutuo massimo 250.000 euro",
+   "scadenza_testo": "Domande tutto l'anno tramite la banca; garanzia più alta prorogata fino al 31 dicembre 2027",
+   "link": "https://www.consap.it/fondo-prima-casa/",
+   "cose": "Garanzia pubblica sui mutui per comprare la prima casa: lo Stato copre una parte del mutuo e le banche aderenti non chiedono altre garanzie non assicurative oltre all'ipoteca.",
+   "a_chi": "Chi alla domanda di mutuo non possiede altre case a uso abitativo, anche all'estero (salvo eredità in certi casi). L'accesso è riservato a: giovani coppie con nucleo da almeno due anni e almeno uno sotto i 36 anni, famiglie con un solo genitore e figli minori, inquilini delle case popolari, giovani sotto i 36 anni, famiglie con 3, 4 o 5 figli sotto i 21 anni e ISEE fino a 40.000, 45.000 o 50.000 euro. Dal 3 agosto 2026 anche persone con disabilità grave (legge 104) e famiglie con un figlio o fratello convivente con disabilità grave da almeno due anni.",
+   "cosa_prevede": "Il Fondo garantisce di norma il 50% della quota capitale del mutuo, che non può superare 250.000 euro. Per le persone con disabilità e i loro nuclei la garanzia sale all'80% con ISEE fino a 40.000 euro; per le altre categorie prioritarie si può chiedere una garanzia più alta se il mutuo supera l'80% del prezzo, nei limiti ISEE previsti. Vale per comprare l'abitazione principale, anche con lavori di efficienza energetica; escluse le case di lusso e le categorie A/1, A/8 e A/9.",
+   "come": "La domanda non va mandata a Consap: si presenta alla banca o all'intermediario aderente insieme alla domanda di mutuo, con il modulo disponibile sul sito Consap e un documento d'identità (per gli stranieri passaporto e permesso di soggiorno). Consap risponde alla banca entro 20 giorni. La concessione del mutuo resta decisione della banca.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "inps-itaca-2027-2028-studio-estero",
+   "titolo": "Programma Itaca: borse INPS fino a 15.000 euro per studiare all'estero",
+   "ente": "INPS - Gestione unitaria delle prestazioni creditizie e sociali",
+   "da": [
+    "stato"
+   ],
+   "dove": "italia",
+   "chi": [
+    "giovani"
+   ],
+   "temi": [
+    "scuola"
+   ],
+   "aiuto": [
+    "bonus"
+   ],
+   "forma": "Borsa di studio",
+   "quanto": "Fino a 15.000 euro (anno fuori Europa) o 12.000 euro (anno in Europa); 1.500 borse",
+   "apertura": "2026-10-08",
+   "scadenza": "2026-11-10",
+   "scadenza_testo": "Domande dalle 12 dell'8 ottobre alle 12 del 10 novembre 2026",
+   "link": "https://www.inps.it/it/it/avvisi-bandi-e-fatturazione/welfare-assistenza-e-mutualita/welfare-bandi/cerca-bandi/dettaglio.welfare-bandi.2026.10.bando-di-concorso-programma-itaca-2027-2028_172.html",
+   "cose": "Bando INPS con 1.500 borse di studio per studenti delle superiori che trascorrono all'estero, in una scuola straniera, l'intero anno scolastico 2027/2028, un semestre o un trimestre.",
+   "a_chi": "Figli e orfani (ed equiparati) di dipendenti e pensionati pubblici iscritti da almeno un anno alla Gestione unitaria delle prestazioni creditizie e sociali. Lo studente deve essere stato promosso nel 2025/2026, essere iscritto al secondo o terzo anno delle superiori e non essere in ritardo di più di un anno. Non può partecipare chi ha già avuto una borsa Itaca; è incompatibile con Estate INPSieme e corsi di lingua all'estero del 2027.",
+   "cosa_prevede": "Importi massimi: anno intero 12.000 euro in Europa e 15.000 fuori Europa; semestre 9.000 e 12.000 euro; trimestre 6.000 e 9.000 euro. La borsa è una percentuale del massimo secondo l'ISEE: 89% sotto 8.000 euro, poi a scendere fino al 54% tra 44.000 e 56.000 euro e al 50% oltre o senza DSU valida. Copre il soggiorno organizzato da un unico operatore: alloggio, vitto, viaggio, visti, trasporto locale e assicurazioni. Acconto del 50% entro luglio 2027.",
+   "come": "Domanda solo online sul Portale prestazioni welfare dell'INPS, con SPID, CIE o CNS, dalle 12 dell'8 ottobre alle 12 del 10 novembre 2026; in caso di difficoltà Contact Center 803164 (fisso) o 06 164 164 (cellulare). L'ISEE 2026 deve essere già protocollato. Entro il 17 novembre 2026 bisogna controllare nell'area riservata i voti 2025/2026 acquisiti dal Ministero.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "viaggi-istruzione-campania-contributo-scuole-2026-2027",
+   "titolo": "Viaggi d'istruzione in Campania: contributo della Regione alle scuole medie e superiori",
+   "ente": "Regione Campania",
+   "da": [
+    "regione"
+   ],
+   "dove": "campania",
+   "chi": [
+    "ente",
+    "giovani"
+   ],
+   "temi": [
+    "scuola"
+   ],
+   "aiuto": [
+    "fondo"
+   ],
+   "forma": "Contributo a fondo perduto alla scuola",
+   "quanto": "fino a 3.000 € per istituto con sede in Campania",
+   "apertura": "2026-11-05",
+   "scadenza": "2026-11-20",
+   "scadenza_testo": "Domande dalle 00:00 del 5 novembre alle 23:59 del 20 novembre 2026",
+   "link": "https://www.regione.campania.it/regione-informa/notizie/turismo-scolastico-al-contributi-viaggi-istruzione-campania-l-20262027",
+   "cose": "La Regione dà un contributo alle scuole medie e superiori che scelgono la Campania per i viaggi d'istruzione dell'anno scolastico 2026/2027, da fare entro il 31 agosto 2027.",
+   "a_chi": "Istituti di istruzione secondaria di primo e secondo grado. Hanno la priorità i viaggi con almeno due pernottamenti nelle aree interne (tra queste Tammaro-Titerno e Fortore) e con la visita a un sito culturale, a un'azienda dell'enogastronomia tipica o a una bottega artigiana di un Comune delle aree interne. Punti in più per le scuole che garantiscono la partecipazione degli alunni con disabilità.",
+   "cosa_prevede": "Fino a 3.000 euro per istituto con sede in Campania (3.500 euro per le scuole di altre regioni o di altri Paesi UE). Se gli studenti che partecipano davvero sono meno di 50, il contributo è di 60 euro ad alunno (70 per le scuole di fuori regione). Prima vengono finanziati i viaggi con i requisiti di priorità, poi le altre domande in ordine di arrivo fino a esaurimento dei fondi; quelle in più vanno in lista d'attesa.",
+   "come": "Domanda online del dirigente scolastico con SPID, CIE o CNS sul servizio «Richiesta contributo per viaggi di istruzione in Campania» (servizi-digitali.regione.campania.it/TurismoScolastico), dalle 00:00 del 5 novembre alle 23:59 del 20 novembre 2026.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "disabilita-sensoriale-progetti-terzo-settore-regione-campania-2026",
+   "titolo": "Disabilità visiva e uditiva: fino a 75.000 euro per progetti del Terzo settore",
+   "ente": "Regione Campania",
+   "da": [
+    "regione"
+   ],
+   "dove": "campania",
+   "chi": [
+    "associazione"
+   ],
+   "temi": [
+    "sociale"
+   ],
+   "aiuto": [
+    "fondo"
+   ],
+   "forma": "Finanziamento di progetti",
+   "quanto": "fino a 75.000 € per progetto",
+   "apertura": "2026-10-16",
+   "scadenza": "2026-11-06",
+   "scadenza_testo": "Entro le 23:59 del 6 novembre 2026",
+   "link": "https://www.regione.campania.it/regione-informa/notizie/interventi-inclusione-sociale-favore-persone-disabilita-sensoriale-avviso-pubblico",
+   "cose": "Avviso della Regione per finanziare progetti di inclusione sociale per persone con disabilità visiva (linea I) o uditiva (linea II), realizzati da enti del Terzo settore. In tutto ci sono 450.000 euro.",
+   "a_chi": "Enti del Terzo settore iscritti al RUNTS, con sede operativa in Campania, che nell'atto costitutivo o nello statuto hanno espressamente tra le finalità l'inclusione delle persone con disabilità visiva o uditiva. Si può partecipare da soli o in partenariato; ogni ente presenta una sola proposta, per una sola linea.",
+   "cosa_prevede": "Ogni progetto può ricevere fino a 75.000 euro; ogni linea può usare al massimo metà dei 450.000 euro. I progetti durano al massimo 18 mesi dalla firma della convenzione e devono ottenere almeno 60 punti su 100. Chi è finanziato deve presentare una fideiussione pari all'intero contributo, che non serve se l'ente anticipa le spese e chiede poi il rimborso.",
+   "come": "Domanda con gli allegati dell'avviso (proposta, autodichiarazione, scheda progettuale) via PEC a politiche.sociali@pec.regione.campania.it entro le 23:59 del 6 novembre 2026.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "reti-comuni-terzo-settore-cittadini-paesi-terzi-regione-campania-2026",
+   "titolo": "Progetti per i cittadini stranieri: fondi regionali al Terzo settore con i Comuni",
+   "ente": "Regione Campania",
+   "da": [
+    "regione"
+   ],
+   "dove": "campania",
+   "chi": [
+    "associazione"
+   ],
+   "temi": [
+    "sociale"
+   ],
+   "aiuto": [
+    "fondo"
+   ],
+   "forma": "Finanziamento di progetti a copertura integrale dei costi",
+   "quanto": "progetti da 10.000 a 20.000 €",
+   "apertura": "2026-10-07",
+   "scadenza": "2026-10-30",
+   "scadenza_testo": "Entro le 16:00 del 30 ottobre 2026",
+   "link": "https://www.regione.campania.it/regione-informa/notizie/avviso-pubblico-rafforzamento-reti-diffuse-comuni-ed-enti-terzo-settore",
+   "cose": "La Regione finanzia progetti di reti tra Comuni ed enti del Terzo settore per i cittadini di Paesi non UE: partecipazione dei giovani con background migratorio, iniziative contro le discriminazioni, mediazione linguistico-culturale.",
+   "a_chi": "Enti del Terzo settore iscritti al RUNTS da almeno tre anni, con esperienza in materia di immigrazione, da soli o in partenariato di almeno due enti. Alla proposta va allegata l'adesione formale di almeno un Comune della Campania con esperienza e servizi già attivi sull'immigrazione.",
+   "cosa_prevede": "Ogni progetto deve costare tra 10.000 e 20.000 euro; il finanziamento copre per intero i costi ammissibili. In totale ci sono 300.000 euro.",
+   "come": "Proposta via PEC a immigrazione@pec.regione.campania.it entro le 16:00 del 30 ottobre 2026, con i moduli dell'avviso (domanda, formulario di progetto, eventuale dichiarazione di partenariato).",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "figli-vittime-incidenti-mortali-lavoro-contributo-regione-campania-2026",
+   "titolo": "Figli di vittime di incidenti mortali sul lavoro: contributo per scuola e studio",
+   "ente": "Regione Campania",
+   "da": [
+    "regione"
+   ],
+   "dove": "campania",
+   "chi": [
+    "cittadino",
+    "giovani"
+   ],
+   "temi": [
+    "figli",
+    "scuola",
+    "sociale"
+   ],
+   "aiuto": [
+    "bonus"
+   ],
+   "forma": "Contributo economico di solidarietà",
+   "quanto": "da 1.960 a 4.500 € per figlio, fino a 9.000 € per famiglia",
+   "apertura": "2026-10-13",
+   "scadenza": "2026-10-31",
+   "scadenza_testo": "Entro il 31 ottobre 2026",
+   "link": "https://www.regione.campania.it/regione-informa/notizie/avviso-pubblico-favore-figli-vittime-incidenti-mortali-lavoro-annualita-2026-secondo-avviso",
+   "cose": "Secondo avviso 2026 della Regione per un contributo ai figli di lavoratori morti in incidenti sul lavoro, per sostenere il percorso educativo, scolastico, universitario o di formazione.",
+   "a_chi": "Figli fino a 28 anni (35 se iscritti all'università) di un lavoratore che al momento del decesso risiedeva in Campania; iscritti a un servizio per l'infanzia, a una scuola di ogni ordine, all'università o a un corso di formazione riconosciuto dalla Regione; ISEE fino a 45.000 euro. Escluso chi è già stato ammesso con il primo avviso 2026.",
+   "cosa_prevede": "L'importo dipende da ISEE e scuola. Con ISEE fino a 8.000 euro: 3.090 euro per infanzia, primaria e medie, 3.400 per superiori e formazione professionale, 4.500 per università e ITS. Con ISEE tra 28.001 e 45.000 euro: da 1.960 a 2.700 euro. Massimo per famiglia da 5.400 a 9.000 euro. Si paga il 60% in acconto e il saldo dopo la prova della frequenza.",
+   "come": "Domanda in carta semplice sul modello dell'avviso (dal genitore o tutore se il figlio è minorenne), per raccomandata A/R alla Regione Campania, DG Lavoro e Formazione professionale, Centro Direzionale Is. A6, Napoli, oppure via PEC a lavoro.politicheattive@pec.regione.campania.it, entro il 31 ottobre 2026.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "beni-confiscati-comuni-riutilizzo-regione-campania-2026",
+   "titolo": "Beni confiscati alle mafie: fino a 300.000 euro ai Comuni per riutilizzarli",
+   "ente": "Regione Campania",
+   "da": [
+    "regione"
+   ],
+   "dove": "campania",
+   "chi": [
+    "ente"
+   ],
+   "temi": [
+    "sociale"
+   ],
+   "aiuto": [
+    "fondo"
+   ],
+   "forma": "Contributo a fondo perduto",
+   "quanto": "fino a 300.000 € per progetto",
+   "apertura": "2026-09-30",
+   "scadenza": "2026-10-30",
+   "scadenza_testo": "Entro le 23:59 del 30 ottobre 2026, senza proroghe",
+   "link": "https://www.regione.campania.it/regione-informa/notizie/avviso-pubblico-favore-comuni-finanziamento-progetti-riutilizzo-beni-confiscati-programma-annuale-2026",
+   "cose": "Avviso 2026 della Regione per i Comuni che hanno ricevuto immobili confiscati alla criminalità organizzata: finanzia il recupero e la rifunzionalizzazione dei beni per usi istituzionali e sociali.",
+   "a_chi": "Comuni della Campania al cui patrimonio indisponibile sono stati trasferiti beni immobili confiscati alla criminalità organizzata. Un solo progetto per Comune.",
+   "cosa_prevede": "Fino a 300.000 euro per progetto, su una dotazione di 1,5 milioni. Ammessi interventi per servizi pubblici essenziali, inclusione di persone a rischio di esclusione, tutela dell'ambiente e degli animali. Punti in più per progetti su disabilità e «dopo di noi», housing sociale per anziani, accoglienza di cani e gatti, e per chi aggiunge risorse proprie. I lavori devono puntare all'efficienza energetica e all'abbattimento delle barriere architettoniche.",
+   "come": "Domanda del Comune via PEC a beniconfiscati@pec.regione.campania.it entro le 23:59 del 30 ottobre 2026 (30 giorni dalla pubblicazione sul BURC n. 52 del 30 settembre 2026), con domanda e formulario dell'Allegato 1.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "beni-confiscati-contributi-gestori-terzo-settore-regione-campania-2026",
+   "titolo": "Beni confiscati: fino a 60.000 euro agli enti del Terzo settore che li gestiscono",
+   "ente": "Regione Campania",
+   "da": [
+    "regione"
+   ],
+   "dove": "campania",
+   "chi": [
+    "associazione"
+   ],
+   "temi": [
+    "sociale"
+   ],
+   "aiuto": [
+    "fondo"
+   ],
+   "forma": "Contributo a fondo perduto (de minimis)",
+   "quanto": "fino a 60.000 € per progetto",
+   "apertura": "2026-09-30",
+   "scadenza": "2026-10-30",
+   "scadenza_testo": "Entro le 23:59 del 30 ottobre 2026",
+   "link": "https://www.regione.campania.it/regione-informa/notizie/avviso-pubblico-concessione-contributi-supporto-alla-gestione-beni-confiscati-programma-annuale-2026",
+   "cose": "Contributi regionali 2026 per chi ha in concessione un bene confiscato alla criminalità e vuole rafforzare le attività già avviate o avviarne di nuove a utilità sociale.",
+   "a_chi": "Enti senza scopo di lucro iscritti al RUNTS, da soli o in raggruppamento, che hanno ricevuto in convenzione beni confiscati dagli enti territoriali o dall'Agenzia nazionale per i beni confiscati (ANBSC). Una sola proposta per soggetto.",
+   "cosa_prevede": "Contributo fino al 100% delle spese ammissibili, massimo 60.000 euro, su una dotazione di 300.000 euro. Progetti di durata massima 12 mesi. Punti in più per progetti su disabilità e «dopo di noi», housing sociale per anziani, accoglienza di cani e gatti, e per chi aggiunge risorse proprie. Pagamento in più tranche, con anticipazioni garantite da fideiussione e saldo finale.",
+   "come": "Domanda e formulario (Allegato 1) con le dichiarazioni richieste, via PEC a beniconfiscati@pec.regione.campania.it entro le 23:59 del 30 ottobre 2026.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "editoria-libraria-informazione-locale-contributi-regione-campania-2027",
+   "titolo": "Editoria campana e informazione locale: domande per i contributi 2027 entro il 31 ottobre",
+   "ente": "Regione Campania",
+   "da": [
+    "regione"
+   ],
+   "dove": "campania",
+   "chi": [
+    "impresa"
+   ],
+   "temi": [
+    "cultura"
+   ],
+   "aiuto": [
+    "fondo"
+   ],
+   "forma": "Contributo a fondo perduto",
+   "quanto": "",
+   "apertura": "2026-10-17",
+   "scadenza": "2026-10-31",
+   "scadenza_testo": "Domande dal 17 al 31 ottobre 2026",
+   "link": "https://www.regione.campania.it/regione-informa/notizie/promozione-sostegno-editoria-libraria-regionale-informazione-locale-contributi-anno-2027",
+   "cose": "Avviso della Regione per i contributi 2027 previsti dalla legge regionale 13/2013 su editoria libraria e informazione locale, per attività editoriali dal 1° gennaio al 31 dicembre 2027.",
+   "a_chi": "Case editrici con sede legale e redazione principale in Campania, con i requisiti dell'art. 7, comma 1, della legge regionale 13/2013. Per l'informazione locale, imprese che pubblicano periodici non quotidiani con i requisiti dell'art. 7, comma 2.",
+   "cosa_prevede": "Contributi per le attività editoriali previste dagli articoli 3, 6, 12 e 13 della legge regionale, entro i massimali della legge. Per l'editoria libraria i fondi si dividono in base al punteggio (dipendenti, continuità dell'attività, distribuzione e altri criteri); per i periodici locali in proporzione al preventivo. Non si accettano preventivi sotto i 1.000 euro per singola attività.",
+   "come": "Domanda online del legale rappresentante con SPID, CIE o CNS sul servizio «Richiesta contributo per la promozione dell'editoria - anno 2027» (servizi-digitali.regione.campania.it/LeggeEditoria), dal 17 al 31 ottobre 2026, con formulario di progetto, preventivo dei costi e scheda trasparenza.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "bonifica-amianto-edifici-pubblici-contributi-regione-campania-2028",
+   "titolo": "Amianto negli edifici pubblici: contributi per la bonifica, domande entro il 31 marzo 2027",
+   "ente": "Regione Campania",
+   "da": [
+    "regione"
+   ],
+   "dove": "campania",
+   "chi": [
+    "ente"
+   ],
+   "temi": [
+    "investire"
+   ],
+   "aiuto": [
+    "fondo"
+   ],
+   "forma": "Contributo a rimborso delle spese di bonifica",
+   "quanto": "",
+   "scadenza": "2027-03-31",
+   "scadenza_testo": "Entro il 31 marzo 2027 per le risorse del 2028 (la finestra per il 2027 è chiusa)",
+   "link": "https://www.regione.campania.it/regione-informa/notizie/bonifiche-amianto-negli-edifici-pubblici-avviso-concessione-contributi-regionali",
+   "cose": "Bando regionale per la graduatoria dei contributi alla bonifica dell'amianto negli edifici pubblici, annualità 2027-2028. È ancora aperta la finestra per le risorse del 2028.",
+   "a_chi": "Amministrazioni pubbliche (art. 1, comma 2, del D.Lgs. 165/2001, quindi anche i Comuni) proprietarie o responsabili di edifici in cui è accertata la presenza di materiali con amianto. Punti in più per scuole, università, case IACP, impianti sportivi e ospedali.",
+   "cosa_prevede": "Copre il piano di lavoro, la rimozione, il trasporto e lo smaltimento dei rifiuti con amianto da parte di ditte autorizzate e l'allestimento del cantiere (ponteggi, sicurezza). Non copre progettazione, direzione lavori, ripristini e nuove coperture. Il contributo è un rimborso pagato in un'unica soluzione a lavori finiti; i lavori vanno avviati entro sei mesi dalla graduatoria.",
+   "come": "Istanza (modello A.1) con relazione, scheda A.2 asseverata, foto, preventivo e quadro economico, per raccomandata A/R o a mano al Settore 216.02.00, Via De Gasperi 28, Napoli, oppure via PEC a pianificazionerifiuti.bonifiche@pec.regione.campania.it, entro il 31 marzo 2027.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "mobilita-in-deroga-2026-riapertura-regione-campania",
+   "titolo": "Mobilità in deroga 2026: riaperte le domande per i lavoratori dell'area di crisi complessa",
+   "ente": "Regione Campania",
+   "da": [
+    "regione",
+    "stato"
+   ],
+   "dove": "campania",
+   "chi": [
+    "cittadino"
+   ],
+   "temi": [
+    "lavoro",
+    "crisi"
+   ],
+   "aiuto": [
+    "bonus"
+   ],
+   "forma": "Indennità di mobilità in deroga",
+   "quanto": "",
+   "apertura": "2026-11-02",
+   "scadenza": "2026-11-08",
+   "scadenza_testo": "Dalle 12:00 del 2 novembre alle 24:00 dell'8 novembre 2026",
+   "link": "https://www.regione.campania.it/regione-informa/notizie/avviso-mobilita-deroga-2026-riapertura-termini-presentazione-istanze",
+   "cose": "La Regione riapre le domande per il trattamento di mobilità in deroga 2026, per i lavoratori licenziati da aziende con unità produttiva nell'area di crisi industriale complessa della Campania.",
+   "a_chi": "Lavoratori con indennità di mobilità ordinaria scaduta tra il 1° gennaio e il 31 dicembre 2026, o con mobilità in deroga scaduta nel 2025 o nel 2026, licenziati da aziende con unità produttiva nell'area di crisi industriale complessa individuata dalla DGR 590/2017. Nell'elenco del Ministero delle Imprese dei Comuni dei poli di crisi complessa della Campania ci sono anche Airola e Montesarchio.",
+   "cosa_prevede": "Il trattamento di mobilità in deroga, concesso fino a esaurimento delle risorse e dopo che il Ministero del Lavoro ha certificato la copertura finanziaria.",
+   "come": "Domanda online con SPID, CIE o CNS su servizi-digitali.regione.campania.it/MobilitaInDeroga, dalle 12:00 del 2 novembre alle 24:00 dell'8 novembre 2026. Vanno allegati il Patto di servizio personalizzato firmato al Centro per l'impiego (con data dal 1° gennaio 2026 in poi) e l'estratto contributivo INPS.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "voucher-secondogeniti-600-euro-regione-campania",
+   "titolo": "Voucher da 600 euro per ogni figlio dal secondo in poi: come attivarlo",
+   "ente": "Regione Campania",
+   "da": [
+    "regione",
+    "europa"
+   ],
+   "dove": "campania",
+   "chi": [
+    "cittadino"
+   ],
+   "temi": [
+    "figli"
+   ],
+   "aiuto": [
+    "bonus"
+   ],
+   "forma": "Buono per prodotti per l'infanzia",
+   "quanto": "600 € per ogni nuovo nato dal secondo figlio in poi",
+   "scadenza_testo": "Per i nati dal 1° gennaio 2025 al 31 dicembre 2027: attivazione entro 90 giorni dall'avviso della Regione, termine ultimo il 15 aprile dell'anno dopo la nascita; fino a esaurimento delle risorse",
+   "link": "https://www.regione.campania.it/regione-informa/notizie/sostegno-alla-genitorialita-voucher-secondogeniti-nati-nel-2026",
+   "cose": "La Regione dà alle mamme un voucher di 600 euro per ogni nuovo nato dal secondo figlio in poi, da spendere in prodotti per l'infanzia nei negozi convenzionati. Vale per i nati dal 1° gennaio 2025 al 31 dicembre 2027.",
+   "a_chi": "Madri dei nuovi nati dal secondo figlio in poi, con ISEE fino a 30.000 euro, residenti o domiciliate in Campania e con assistenza sanitaria attiva in Campania. Cittadine italiane o UE, o di Paesi extra UE con permesso di soggiorno UE di lungo periodo, oppure con permesso unico di lavoro o per ricerca di durata superiore a 6 mesi.",
+   "cosa_prevede": "Un voucher di 600 euro per ogni neonato (con i gemelli uno per ciascun nato, se non sono i primi figli), valido un anno dall'attivazione, per latte in polvere, pannolini, biberon, alimenti, vestiti e accessori presso gli esercenti convenzionati. Non dà resto e non si converte in denaro. Le famiglie possono avere anche servizi gratuiti del progetto «Genitori si diventa» (supporto psicologico, aiuto nei compiti, baby sitting, orientamento al lavoro).",
+   "come": "Per i parti in Campania il voucher viene creato dall'ospedale e la madre riceve un sms o una e-mail: entro 90 giorni lo attiva sul portale «Salute del Cittadino» (sezione «Voucher nuovi nati secondogeniti») con SPID, CIE o CNS, accettando un colloquio con gli operatori del Terzo settore. Chi partorisce fuori regione segnala la nascita sullo stesso portale entro 90 giorni.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "abbonamento-gratuito-studenti-trasporto-pubblico-campania-2026-2027",
+   "titolo": "Abbonamento gratuito a bus e treni locali per gli studenti: domande fino al 20 dicembre",
+   "ente": "Regione Campania (tramite il Consorzio UnicoCampania)",
+   "da": [
+    "regione",
+    "europa"
+   ],
+   "dove": "campania",
+   "chi": [
+    "giovani",
+    "cittadino"
+   ],
+   "temi": [
+    "scuola"
+   ],
+   "aiuto": [
+    "bonus"
+   ],
+   "forma": "Abbonamento annuale gratuito",
+   "quanto": "abbonamento gratuito; alla prima richiesta 40 € di cauzione e 10 € di spese",
+   "apertura": "2026-08-05",
+   "scadenza": "2026-12-20",
+   "scadenza_testo": "Domande fino al 20 dicembre 2026 (abbonamento marittimo fino al 14 dicembre)",
+   "link": "https://www.unicocampania.it/abbonamenti",
+   "cose": "Per l'anno scolastico e accademico 2026/2027 la Regione dà l'abbonamento annuale gratuito al trasporto pubblico locale sul tragitto casa-scuola o casa-università, valido fino al 31 luglio 2027.",
+   "a_chi": "Studenti residenti in Campania tra 11 e 26 anni, con ISEE (o ISEE universitario) fino a 35.000 euro, iscritti a scuole medie o superiori pubbliche o paritarie, corsi IeFP regionali, ITS, università (triennale o magistrale), master o scuole di specializzazione.",
+   "cosa_prevede": "Abbonamento aziendale o integrato dal Comune di residenza al Comune della scuola o dell'università, valido nei giorni feriali fino al 31 luglio 2027. Alla prima richiesta si pagano 40 euro di cauzione e 10 euro di spese di gestione non rimborsabili; al rinnovo solo 10 euro. L'abbonamento è digitale, nell'app Unico Campania.",
+   "come": "Domanda online sulla piattaforma del Consorzio UnicoCampania (link nella pagina abbonamenti di unicocampania.it), con documento, ISEE e foto tessera, entro il 20 dicembre 2026. Chi deve ancora completare l'immatricolazione all'università potrà fare domanda a gennaio, quando la piattaforma riaprirà.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "feampa-trasformazione-commercializzazione-prodotti-ittici-campania-2026",
+   "titolo": "Trasformazione e vendita di pesce e acquacoltura: contributi FEAMPA entro il 30 novembre",
+   "ente": "Regione Campania",
+   "da": [
+    "europa",
+    "stato",
+    "regione"
+   ],
+   "dove": "campania",
+   "chi": [
+    "impresa",
+    "agricoltura"
+   ],
+   "temi": [
+    "investire",
+    "innovazione"
+   ],
+   "aiuto": [
+    "fondo"
+   ],
+   "forma": "Contributo a fondo perduto",
+   "quanto": "di base il 50% della spesa ammessa (spesa da 50.000 a 1.500.000 €)",
+   "scadenza": "2026-11-30",
+   "scadenza_testo": "Entro le 23:59 del 30 novembre 2026 (termine prorogato)",
+   "link": "https://agricoltura.regione.campania.it/FEAMPA/FEAMPA_OB-22.html",
+   "cose": "Bando del PN FEAMPA 2021-2027 gestito dalla Regione per investimenti nella trasformazione e commercializzazione dei prodotti della pesca e dell'acquacoltura: competitività e sicurezza (azione 2) e mercato, tracciabilità, marketing e innovazione (azione 4).",
+   "a_chi": "Micro, piccole e medie imprese attive nella trasformazione dei prodotti della pesca e dell'acquacoltura e/o nella vendita diretta dei propri prodotti; per l'azione 4 anche le organizzazioni di produttori dell'acquacoltura e le loro associazioni. Sede legale o operativa in Campania.",
+   "cosa_prevede": "Contributo pubblico di base pari al 50% della spesa ammessa, con aliquote più alte in alcuni casi (ad esempio 60% per l'acquacoltura sostenibile delle PMI, 75% per le organizzazioni di produttori o per prodotti e processi innovativi). Spesa ammissibile da 50.000 a 1.500.000 euro per impianti, attrezzature, sicurezza e condizioni di lavoro, tracciabilità, marketing e innovazione. Dotazione iniziale 500.000 euro, che la Regione prevede di portare a 4,5 milioni.",
+   "come": "Istanza sul modello dell'Allegato 1 con l'Allegato 2, la documentazione e la griglia di autovalutazione, firmata, via PEC a agricoltura.competitivita@pec.regione.campania.it entro le 23:59 del 30 novembre 2026 (proroga con DRD n. 834 del 23 ottobre 2026).",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "funghi-tartufi-scuole-provincia-benevento-contributo-2026",
+   "titolo": "Funghi e tartufi nelle scuole del Sannio: fino a 3.500 euro per progetto",
+   "ente": "Regione Campania - Servizi territoriali provinciali di Benevento (Agricoltura)",
+   "da": [
+    "regione"
+   ],
+   "dove": "sannio",
+   "chi": [
+    "ente",
+    "giovani"
+   ],
+   "temi": [
+    "scuola"
+   ],
+   "aiuto": [
+    "fondo"
+   ],
+   "forma": "Contributo a progetti scolastici",
+   "quanto": "fino a 3.500 € per progetto",
+   "apertura": "2026-10-19",
+   "scadenza_testo": "Entro 20 giorni dalla pubblicazione dell'avviso sul sito dell'Assessorato all'Agricoltura (avviso per Benevento pubblicato il 19 ottobre 2026)",
+   "link": "https://agricoltura.regione.campania.it/comunicati/comunicato_08-10-26T.html",
+   "cose": "Avviso della Regione per finanziare progetti didattici negli istituti agrari e alberghieri della provincia di Benevento sul riconoscimento di funghi e tartufi, la prevenzione delle intossicazioni e la sicurezza alimentare.",
+   "a_chi": "Istituti professionali di Stato per l'enogastronomia e l'ospitalità alberghiera e istituti professionali e tecnici di Stato per l'agricoltura con sede in provincia di Benevento. Una proposta per istituto, anche in rete tra più scuole.",
+   "cosa_prevede": "In tutto 35.000 euro; massimo 3.500 euro per progetto, da concludere entro l'anno scolastico. Finanziabili lezioni e laboratori, incontri con micologi e altri esperti, uscite didattiche, materiali divulgativi, mostre ed educazione alimentare; non la raccolta diretta da parte degli studenti. Graduatoria di merito (minimo 40 punti su 100), con punti in più se la scuola autofinanzia almeno il 20%. Anticipo del 50% all'avvio e saldo dopo la rendicontazione.",
+   "come": "Domanda (Allegato A) e scheda progettuale (Allegato B) firmate digitalmente dal dirigente scolastico, via PEC a agricoltura.competitivita@pec.regione.campania.it, entro 20 giorni dalla pubblicazione dell'avviso (DRD n. 116 del 16 ottobre 2026).",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "ismea-inail-sicurezza-trattori-agricoli-contributo-2026",
+   "titolo": "Trattori più sicuri: contributo fino a 2.000 euro dal fondo INAIL gestito da ISMEA",
+   "ente": "ISMEA",
+   "da": [
+    "stato"
+   ],
+   "dove": "italia",
+   "chi": [
+    "agricoltura",
+    "impresa"
+   ],
+   "temi": [
+    "investire"
+   ],
+   "aiuto": [
+    "fondo"
+   ],
+   "forma": "Contributo a fondo perduto",
+   "quanto": "80% della spesa, massimo 2.000 €",
+   "scadenza": "2026-12-15",
+   "scadenza_testo": "Entro le 12:00 del 15 dicembre 2026 (termine prorogato)",
+   "link": "https://www.ismea.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/13567",
+   "cose": "Bando nazionale per ammodernare e rendere più sicuri trattori agricoli o forestali, con 10 milioni di euro messi a disposizione da INAIL nell'accordo tra Ministero dell'Agricoltura, INAIL, ISMEA e CREA.",
+   "a_chi": "Piccole e medie imprese dei settori agricolo, agroindustriale/agromeccanico e agroalimentare.",
+   "cosa_prevede": "Contributo fino all'80% del costo ammissibile e comunque non oltre 2.000 euro, per installare su un solo trattore, in un'officina, sistemi di sicurezza: sistema che aiuta a rialzare il telaio di protezione (ROPS) abbattibile, avvisatori per cintura non allacciata o freno di stazionamento non inserito, telecamera con avviso di ostacoli, inclinometro. Il contributo è pagato direttamente all'officina; l'impresa paga la parte restante. Aiuto «de minimis».",
+   "come": "Domanda sul portale strumenti.ismea.it, sulla base del preventivo dell'officina che fa l'intervento, entro le 12:00 del 15 dicembre 2026.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "ismea-cambiale-azzurra-prestiti-tasso-zero-pesca-acquacoltura",
+   "titolo": "Cambiale Azzurra: prestiti a tasso zero fino a 20.000 euro per pesca e acquacoltura",
+   "ente": "ISMEA",
+   "da": [
+    "stato"
+   ],
+   "dove": "italia",
+   "chi": [
+    "agricoltura",
+    "impresa"
+   ],
+   "temi": [
+    "credito"
+   ],
+   "aiuto": [
+    "prestito"
+   ],
+   "forma": "Prestito a tasso zero",
+   "quanto": "da 3.000 a 20.000 € (pesca: fino a 20.000 € per barca, massimo 60.000 €)",
+   "apertura": "2026-10-20",
+   "scadenza": "2026-10-30",
+   "scadenza_testo": "Domande dalle 12:00 del 20 ottobre alle 12:00 del 30 ottobre 2026, in ordine di arrivo fino a esaurimento fondi",
+   "link": "https://www.ismea.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/13639",
+   "cose": "Misura del Ministero dell'Agricoltura gestita da ISMEA per dare liquidità alle piccole e medie imprese della pesca e dell'acquacoltura, con 10 milioni di euro.",
+   "a_chi": "Piccole e medie imprese attive nella pesca e nell'acquacoltura che hanno avuto ricavi nel 2025.",
+   "cosa_prevede": "Finanziamento a tasso zero da 3.000 a 20.000 euro, entro il 50% dei ricavi dell'ultima dichiarazione fiscale, per la gestione ordinaria dell'impresa. Per le imprese di pesca e le cooperative armatoriali fino a 20.000 euro per barca, massimo 60.000 euro; per l'acquacoltura massimo 20.000 euro per impresa. Durata 5 anni, di cui 2 di preammortamento, rimborso in 12 rate trimestrali. Aiuto «de minimis».",
+   "come": "Domanda sul portale strumenti.ismea.it dalle 12:00 del 20 ottobre alle 12:00 del 30 ottobre 2026. Le domande sono esaminate in ordine di arrivo fino a esaurimento dei fondi.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "resto-al-sud-2-0-invitalia",
+   "titolo": "Resto al Sud 2.0: voucher e fondo perduto per gli under 35 che aprono un'attività",
+   "ente": "Invitalia (per il Ministero del Lavoro e delle Politiche Sociali)",
+   "da": [
+    "stato",
+    "europa"
+   ],
+   "dove": "sud",
+   "chi": [
+    "giovani",
+    "nuova",
+    "impresa",
+    "commercio",
+    "artigiano",
+    "turismo",
+    "professionista"
+   ],
+   "temi": [
+    "aprire",
+    "giovani-donne",
+    "lavoro"
+   ],
+   "aiuto": [
+    "fondo"
+   ],
+   "forma": "Voucher e contributo a fondo perduto",
+   "quanto": "Voucher fino a 40.000 € (50.000 € con maggiorazione); contributo del 75% per investimenti fino a 120.000 € e del 70% da 120.000 a 200.000 €",
+   "apertura": "2025-10-15",
+   "scadenza_testo": "A sportello, in ordine di arrivo fino a esaurimento delle risorse",
+   "link": "https://www.invitalia.it/incentivi-e-strumenti/resto-al-sud-20",
+   "cose": "Incentivo per avviare nel Mezzogiorno, Campania compresa, nuove attività d'impresa, di lavoro autonomo o libero-professionali. È finanziato dal Programma nazionale Giovani, donne e lavoro FSE+ 2021-2027 (356,4 milioni di euro) e gestito da Invitalia.",
+   "a_chi": "Giovani dai 18 anni compiuti ai 35 non ancora compiuti, inoccupati, inattivi o disoccupati, disoccupati del Programma GOL o lavoratori «working poor». L'attività deve essere avviata nel mese precedente la domanda e risultare ancora inattiva. Forme ammesse: lavoro autonomo, ditta individuale, snc, sas, srl, cooperativa, libera professione, società tra professionisti. Tutti i settori tranne la produzione primaria di agricoltura, pesca e acquacoltura.",
+   "cosa_prevede": "Voucher a fondo perduto fino a 40.000 euro, elevabile a 50.000 euro se almeno il 20% delle spese riguarda beni o servizi innovativi, digitali, ambientali o di risparmio energetico, oppure con consulenze specialistiche di enti del Terzo settore. Per i programmi di investimento c'è invece il contributo a fondo perduto: 75% fino a 120.000 euro di spesa, 70% tra 120.000 e 200.000 euro. Spese ammesse: macchinari, impianti, attrezzature e arredi nuovi, software e servizi digitali, siti web, marchi, consulenze tecniche di enti del Terzo settore (fino al 30%), opere edili di ristrutturazione solo per il contributo e fino al 50%. Escluse: terreni, immobili, personale, affitti, utenze, materie prime, leasing. Per le iniziative ammesse è previsto anche un tutoraggio di Invitalia e dell'Ente Nazionale per il Microcredito.",
+   "come": "Domanda solo online nell'area personale del sito Invitalia, con SPID, CNS o CIE; servono anche PEC e firma digitale. La invia il titolare o il legale rappresentante, con la modulistica Voucher o Contributo. Invitalia esamina le domande entro 90 giorni, in ordine cronologico, senza graduatorie.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "smart-start-italia-startup-innovative",
+   "titolo": "Smart&Start Italia: prestito a tasso zero alle startup innovative, al Sud 30% a fondo perduto",
+   "ente": "Invitalia (per il Ministero delle Imprese e del Made in Italy)",
+   "da": [
+    "stato",
+    "europa"
+   ],
+   "dove": "italia",
+   "chi": [
+    "impresa",
+    "nuova",
+    "giovani"
+   ],
+   "temi": [
+    "aprire",
+    "innovazione",
+    "digitale",
+    "giovani-donne"
+   ],
+   "aiuto": [
+    "prestito",
+    "fondo"
+   ],
+   "forma": "Finanziamento a tasso zero con quota a fondo perduto al Sud",
+   "quanto": "Finanziamento a tasso zero dell'80% delle spese (90% in alcuni casi); in Campania il 30% del finanziamento è a fondo perduto. Piani d'impresa da 100.000 € a 1,5 milioni",
+   "scadenza_testo": "A sportello, senza scadenze né graduatorie, fino a esaurimento dei fondi",
+   "link": "https://www.invitalia.it/incentivi-e-strumenti/smartstart-italia",
+   "cose": "Incentivo nazionale per la nascita e la crescita delle startup innovative ad alto contenuto tecnologico. Per i piani d'impresa in Campania e nelle altre regioni del Sud ci sono risorse del PN RIC 2021-2027.",
+   "a_chi": "Startup innovative di piccola dimensione costituite da non più di 60 mesi e iscritte alla sezione speciale del Registro delle imprese; gruppi di persone che vogliono costituire una startup innovativa in Italia (anche residenti all'estero) e cittadini stranieri con «startup Visa»; imprese straniere che aprono una sede in Italia. I requisiti di startup innovativa sono quelli dell'art. 25 del D.L. 179/2012.",
+   "cosa_prevede": "Finanziamento a tasso zero, senza garanzie, pari all'80% delle spese ammissibili; sale al 90% se la startup è formata solo da donne e/o giovani sotto i 36 anni o se tra i soci c'è un dottore di ricerca impegnato all'estero. Le startup con sede in Abruzzo, Basilicata, Calabria, Campania, Molise, Puglia, Sardegna e Sicilia ricevono un contributo a fondo perduto pari al 30% del mutuo e restituiscono solo il 70%. Il finanziamento si restituisce in 10 anni. Piani d'impresa tra 100.000 euro e 1,5 milioni: macchinari, hardware e software, brevetti, consulenze tecnologiche, personale, marketing, incubazione e costi di funzionamento. Tutoraggio per le startup con meno di un anno.",
+   "come": "Domanda solo online nell'area personale di Invitalia, con SPID, CNS o CIE, firma digitale e PEC; si caricano business plan e allegati. Per le società già costituite firma il legale rappresentante, per quelle da costituire un futuro socio. Valutazione in 60 giorni con colloquio, in ordine di arrivo.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "on-nuove-imprese-tasso-zero-invitalia",
+   "titolo": "ON - Nuove imprese a tasso zero: prestiti per imprese di giovani e donne",
+   "ente": "Invitalia (per il Ministero delle Imprese e del Made in Italy)",
+   "da": [
+    "stato"
+   ],
+   "dove": "italia",
+   "chi": [
+    "impresa",
+    "nuova",
+    "giovani",
+    "commercio",
+    "artigiano",
+    "turismo"
+   ],
+   "temi": [
+    "aprire",
+    "giovani-donne",
+    "investire",
+    "credito"
+   ],
+   "aiuto": [
+    "prestito"
+   ],
+   "forma": "Finanziamento a tasso zero",
+   "quanto": "Fino al 90% delle spese, per progetti fino a 3 milioni di euro; dal 1° luglio 2026 solo finanziamento agevolato, senza fondo perduto",
+   "apertura": "2021-05-19",
+   "scadenza_testo": "A sportello, senza graduatorie. Dal 1° luglio 2026 fondi a fondo perduto esauriti: resta solo il finanziamento",
+   "link": "https://www.invitalia.it/incentivi-e-strumenti/ON-nuove-imprese-tasso-zero",
+   "cose": "Incentivo per creare o far crescere imprese con soci in prevalenza giovani o donne. Con l'avviso del 30 giugno 2026 Invitalia ha comunicato l'esaurimento dei fondi a fondo perduto: per le domande presentate dal 1° luglio 2026 resta solo il finanziamento agevolato.",
+   "a_chi": "Micro e piccole imprese costituite in forma di società da non più di 60 mesi e gruppi di persone che vogliono costituirne una. Più della metà dei soci e delle quote deve essere di persone tra 18 e 35 anni oppure di donne di qualsiasi età. Settori: produzione, servizi, commercio, turismo.",
+   "cosa_prevede": "Finanziamento a tasso zero da restituire in 10 anni, fino al 90% delle spese. Società fino a 36 mesi: progetti fino a 1,5 milioni per opere murarie (massimo 30%), macchinari, impianti e attrezzature, programmi informatici e servizi ICT, brevetti, consulenze (massimo 5%), spese di costituzione e capitale circolante (fino al 20%). Società tra 36 e 60 mesi: progetti fino a 3 milioni per ampliare, diversificare o trasformare l'attività, anche con acquisto dell'immobile (solo turismo, massimo 40%). I piani vanno avviati dopo la domanda e chiusi entro 24 mesi dal contratto.",
+   "come": "Domanda solo online nell'area riservata di Invitalia, con SPID, CNS o CIE; per chiudere la procedura servono firma digitale e PEC. Si carica il business plan. La valutazione prevede due colloqui con Invitalia. Numero verde 800 77 53 97.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "nuova-sabatini-beni-strumentali-pmi",
+   "titolo": "Nuova Sabatini: contributo sugli interessi per comprare macchinari e tecnologie",
+   "ente": "Ministero delle Imprese e del Made in Italy",
+   "da": [
+    "stato"
+   ],
+   "dove": "italia",
+   "chi": [
+    "impresa",
+    "commercio",
+    "artigiano",
+    "turismo",
+    "agricoltura"
+   ],
+   "temi": [
+    "investire",
+    "credito",
+    "digitale"
+   ],
+   "aiuto": [
+    "fondo",
+    "prestito"
+   ],
+   "forma": "Contributo sugli interessi di un finanziamento bancario o leasing",
+   "quanto": "Finanziamenti da 20.000 € a 4 milioni; contributo pari agli interessi al 2,75% annuo (3,575% per investimenti 4.0 e green, fino al 5% con la Sabatini Capitalizzazione)",
+   "scadenza_testo": "Domande tutto l'anno tramite banca o società di leasing, fino a esaurimento delle risorse",
+   "link": "https://www.mimit.gov.it/it/incentivi/agevolazioni-per-gli-investimenti-delle-pmi-in-beni-strumentali-nuova-sabatini",
+   "cose": "Misura per le piccole e medie imprese che acquistano, anche in leasing, macchinari, attrezzature, impianti, beni strumentali, hardware, software e tecnologie digitali nuovi. Il Ministero paga un contributo che copre gli interessi del finanziamento. Secondo il sito del Ministero (dati al 14 ottobre 2026) ci sono ancora risorse disponibili.",
+   "a_chi": "Micro, piccole e medie imprese iscritte al Registro delle imprese (o delle imprese di pesca), con sede o unità locale in Italia, non in liquidazione né in difficoltà. Tutti i settori produttivi, compresi agricoltura e pesca, tranne attività finanziarie e assicurative. La «Sabatini Capitalizzazione» è per le PMI società di capitali che fanno un aumento di capitale.",
+   "cosa_prevede": "La banca o la società di leasing aderente concede un finanziamento di durata fino a 5 anni, da 20.000 euro a 4 milioni, che può coprire l'intero investimento e può avere la garanzia del Fondo di garanzia PMI fino all'80%. Il Ministero aggiunge un contributo pari agli interessi calcolati su 5 anni al 2,75% annuo per gli investimenti ordinari e al 3,575% per quelli «4.0» e «green». Con la Sabatini Capitalizzazione il tasso di calcolo è 5% per micro e piccole imprese e 3,575% per le medie. Beni nuovi; esclusi terreni, fabbricati, beni usati.",
+   "come": "La PMI presenta la domanda di contributo alla banca o all'intermediario aderente insieme alla richiesta di finanziamento; la banca la trasmette al Ministero. Le domande si compilano e si gestiscono sulla piattaforma benistrumentali.dgiai.gov.it. A investimento concluso si chiede l'erogazione sulla stessa piattaforma.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "iperammortamento-2026-transizione-5-0",
+   "titolo": "Iperammortamento 2026: sconto fiscale per beni digitali e impianti a energia rinnovabile",
+   "ente": "Ministero delle Imprese e del Made in Italy",
+   "da": [
+    "stato"
+   ],
+   "dove": "italia",
+   "chi": [
+    "impresa",
+    "commercio",
+    "artigiano",
+    "turismo",
+    "agricoltura"
+   ],
+   "temi": [
+    "investire",
+    "digitale",
+    "energia",
+    "innovazione"
+   ],
+   "aiuto": [
+    "fiscale"
+   ],
+   "forma": "Maggiorazione del costo ai fini dell'ammortamento",
+   "quanto": "Maggiorazione del 180% fino a 2,5 milioni di investimento, del 100% da 2,5 a 10 milioni, del 50% da 10 a 20 milioni",
+   "apertura": "2026-01-01",
+   "scadenza": "2028-09-30",
+   "scadenza_testo": "Per gli investimenti fatti dal 1° gennaio 2026 al 30 settembre 2028",
+   "link": "https://www.mimit.gov.it/it/incentivi/nuovo-piano-transizione-5-0-iperammortamento",
+   "cose": "Nuovo Piano Transizione 5.0 introdotto dalla legge di bilancio 2026: sostituisce i crediti d'imposta 4.0 e 5.0 con una maggiorazione del costo dei beni nuovi, che fa dedurre quote di ammortamento più alte e riduce le imposte sui redditi. Non è un credito da compensare in F24.",
+   "a_chi": "Tutte le imprese residenti in Italia e le stabili organizzazioni con sede in Italia, di qualsiasi forma giuridica, settore, dimensione e regime fiscale, che investono in beni strumentali nuovi per la trasformazione digitale (Allegati IV e V della legge 199/2025, interconnessi) o in impianti nuovi per produrre energia rinnovabile in autoconsumo, anche con accumulo, fino al 105% del fabbisogno della struttura.",
+   "cosa_prevede": "Per i beni materiali dell'Allegato IV e gli impianti di autoproduzione il costo di acquisto si considera maggiorato del 180% per la quota di investimento fino a 2,5 milioni di euro, del 100% oltre 2,5 e fino a 10 milioni, del 50% oltre 10 e fino a 20 milioni. La maggiorazione vale solo ai fini fiscali, per ammortamenti e canoni di leasing.",
+   "come": "L'impresa invia online sulla piattaforma del GSE (Area Clienti) le comunicazioni di prenotazione, avanzamento e completamento dell'investimento, con modelli standard. Servono una perizia tecnica asseverata e una certificazione contabile. Guida e modelli sono sul sito del GSE.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "brevetti-piu-2026-invitalia",
+   "titolo": "Brevetti+ 2026: fino a 140.000 euro per valorizzare un brevetto, domande dal 25 novembre",
+   "ente": "Invitalia (per il Ministero delle Imprese e del Made in Italy)",
+   "da": [
+    "stato"
+   ],
+   "dove": "italia",
+   "chi": [
+    "impresa",
+    "nuova"
+   ],
+   "temi": [
+    "innovazione"
+   ],
+   "aiuto": [
+    "fondo"
+   ],
+   "forma": "Contributo a fondo perduto",
+   "quanto": "Fino a 140.000 €, al massimo l'80% dei costi (85% con certificazione di parità di genere, 100% con un ente pubblico di ricerca contitolare)",
+   "apertura": "2026-11-25",
+   "scadenza_testo": "Domande dalle ore 12 del 25 novembre 2026, in ordine cronologico fino a esaurimento dei 20 milioni",
+   "click_day": "2026-11-25T12:00",
+   "link": "https://www.invitalia.it/incentivi-e-strumenti/brevetti-2026",
+   "cose": "Contributo per le piccole e medie imprese che vogliono sfruttare economicamente un brevetto, comprando servizi specialistici. Dotazione di 20 milioni di euro; aiuti in regime «de minimis».",
+   "a_chi": "Micro, piccole e medie imprese, anche appena costituite, con sede legale e operativa in Italia, titolari o licenziatarie di un brevetto per invenzione concesso in Italia dopo il 1° gennaio 2025, o titolari di una domanda di brevetto nazionale depositata dopo il 1° gennaio 2024 con rapporto di ricerca «non negativo», o di brevetti e domande europee o internazionali con le condizioni del bando. Devono essere in regola con l'assicurazione obbligatoria contro le calamità naturali.",
+   "cosa_prevede": "Contributo a fondo perduto fino a 140.000 euro, non oltre l'80% dei costi ammissibili, per servizi specialistici di progettazione, ingegnerizzazione e industrializzazione, organizzazione e sviluppo, trasferimento tecnologico. La percentuale sale all'85% per le imprese con certificazione della parità di genere e al 100% per quelle contitolari del brevetto con un ente pubblico di ricerca (università, enti di ricerca, IRCCS) o con licenza esclusiva da uno di questi.",
+   "come": "Domanda solo online nell'area personale di Invitalia dalle ore 12 del 25 novembre 2026, con SPID, CNS o CIE, firma digitale e PEC; si caricano business plan e allegati (sul sito c'è il facsimile). Nessuna graduatoria: valutazione in ordine di arrivo con colloquio.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "marchi-piu-2026",
+   "titolo": "Marchi+ 2026: contributo per registrare il marchio nell'UE e all'estero, dal 3 dicembre",
+   "ente": "Ministero delle Imprese e del Made in Italy e Unioncamere",
+   "da": [
+    "stato"
+   ],
+   "dove": "italia",
+   "chi": [
+    "impresa",
+    "commercio",
+    "artigiano",
+    "turismo"
+   ],
+   "temi": [
+    "export",
+    "innovazione"
+   ],
+   "aiuto": [
+    "fondo"
+   ],
+   "forma": "Contributo a fondo perduto",
+   "quanto": "Marchio UE: 80% delle spese, fino a 6.000 € per marchio; marchio internazionale: 90%, fino a 9.000 € per marchio",
+   "apertura": "2026-12-03",
+   "scadenza_testo": "Domande dalle 12 alle 18 del 3 dicembre 2026 e nei giorni lavorativi successivi fino a esaurimento dei fondi",
+   "click_day": "2026-12-03T12:00",
+   "link": "https://www.mimit.gov.it/it/incentivi/marchi-2026",
+   "cose": "Contributo per le piccole e medie imprese che tutelano il proprio marchio fuori dall'Italia: Misura A per i marchi dell'Unione europea (EUIPO), Misura B per i marchi internazionali (OMPI). Dotazione 2026: 2 milioni di euro.",
+   "a_chi": "Micro, piccole e medie imprese con sede legale e operativa in Italia, iscritte e attive nel Registro delle imprese, in regola con il DURC e con l'assicurazione contro le calamità naturali, titolari del marchio. Misura A: deposito presso EUIPO dal 1° giugno 2023 e marchio già registrato. Misura B: deposito presso OMPI dal 1° giugno 2023 e domanda già pubblicata sul registro internazionale.",
+   "cosa_prevede": "Misura A: 80% delle spese per tasse di deposito e servizi specialistici esterni (progettazione grafica del marchio, assistenza al deposito e altri previsti), fino a 6.000 euro per marchio. Misura B: 90% delle spese per tasse di registrazione e servizi specialistici, fino a 9.000 euro per marchio. Con la certificazione della parità di genere le percentuali salgono all'85% e al 95%.",
+   "come": "Domanda solo online sul sito www.marchipiu2026.it, dalle ore 12 alle 18 del 3 dicembre 2026 e poi nei giorni lavorativi successivi (lunedì-venerdì, 12-18) finché ci sono fondi. Sportello in ordine cronologico.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "disegni-piu-2026",
+   "titolo": "Disegni+ 2026: fino a 60.000 euro per valorizzare un disegno registrato, dal 17 dicembre",
+   "ente": "Ministero delle Imprese e del Made in Italy e Unioncamere",
+   "da": [
+    "stato"
+   ],
+   "dove": "italia",
+   "chi": [
+    "impresa",
+    "artigiano"
+   ],
+   "temi": [
+    "innovazione"
+   ],
+   "aiuto": [
+    "fondo"
+   ],
+   "forma": "Contributo a fondo perduto",
+   "quanto": "Fino all'80% delle spese (85% con certificazione di parità di genere), massimo 60.000 €",
+   "apertura": "2026-12-17",
+   "scadenza_testo": "Domande dalle 12 alle 18 del 17 dicembre 2026 e nei giorni lavorativi successivi fino a esaurimento dei fondi",
+   "click_day": "2026-12-17T12:00",
+   "link": "https://www.mimit.gov.it/it/incentivi/disegni-2026",
+   "cose": "Contributo per le piccole e medie imprese che vogliono mettere in produzione o sul mercato un disegno o modello registrato, comprando servizi specialistici esterni. Dotazione 2026: 10 milioni di euro.",
+   "a_chi": "Micro, piccole e medie imprese con sede legale e operativa in Italia, iscritte al Registro delle imprese da almeno due anni (tranne le startup innovative) e attive, in regola con DURC e assicurazione contro le calamità naturali, titolari di un disegno o modello registrato dal 1° gennaio 2024 presso UIBM, EUIPO o OMPI (con designazione dell'Italia) e in corso di validità.",
+   "cosa_prevede": "Contributo fino all'80% delle spese ammissibili, massimo 60.000 euro (85% con la certificazione della parità di genere), per servizi esterni sostenuti dopo la domanda: prototipi, stampi, consulenza tecnica per la produzione o per materiali innovativi, consulenza per certificazioni di prodotto o di sostenibilità (non la marcatura CE), business plan e piano di marketing, progettazione di layout grafici e testi per la comunicazione.",
+   "come": "Domanda solo online sul sito www.disegnipiu2026.it, dalle ore 12 alle 18 del 17 dicembre 2026 e poi nei giorni lavorativi successivi (lunedì-venerdì, 12-18) finché ci sono fondi. Sportello in ordine cronologico.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "ecobonus-veicoli-commerciali-pmi-2026",
+   "titolo": "Ecobonus 2026: sconto fino a 20.000 euro alle PMI che comprano un furgone o camion nuovo",
+   "ente": "Ministero delle Imprese e del Made in Italy (piattaforma gestita da Invitalia)",
+   "da": [
+    "stato"
+   ],
+   "dove": "italia",
+   "chi": [
+    "impresa",
+    "commercio",
+    "artigiano"
+   ],
+   "temi": [
+    "energia",
+    "investire"
+   ],
+   "aiuto": [
+    "fondo"
+   ],
+   "forma": "Sconto sul prezzo d'acquisto",
+   "quanto": "Elettrici o a idrogeno: da 2.000 a 20.000 € secondo peso e rottamazione; tradizionali (con rottamazione obbligatoria): da 2.000 a 10.000 €",
+   "apertura": "2026-07-29",
+   "scadenza": "2026-12-31",
+   "scadenza_testo": "Acquisti dal 26 giugno al 31 dicembre 2026, fino a esaurimento dei 40 milioni stanziati",
+   "link": "https://ecobonus.mimit.gov.it/veicoli-commerciali",
+   "cose": "Contributo per l'acquisto di veicoli commerciali nuovi di categoria N1 e N2 (trasporto merci), elettrici, a idrogeno o ad alimentazione tradizionale. Lo stanziamento 2026 per i veicoli commerciali è di 40 milioni di euro. Il contributo arriva come sconto in fattura.",
+   "a_chi": "Piccole e medie imprese che trasportano merci in conto proprio o per conto terzi e comprano in Italia, anche in leasing finanziario, un veicolo N1 o N2 nuovo dal 26 giugno al 31 dicembre 2026. Il veicolo va tenuto almeno 24 mesi. Per i veicoli tradizionali bisogna rottamare un veicolo N1 o N2 fino a Euro 4 intestato da almeno 12 mesi. Ammesse anche le società di noleggio che lo danno a una PMI di questo tipo per almeno 3 anni.",
+   "cosa_prevede": "Elettrici (BEV) e a idrogeno (FCEV): fino a 1,49 t 2.000 euro senza rottamazione e 4.000 con rottamazione; 1,50-2,39 t 4.500 e 8.000; 2,40-3,49 t 10.000 e 14.000; 3,50-4,24 t 14.000 e 18.000; 4,25-7,2 t 16.000 e 20.000. Veicoli tradizionali, solo con rottamazione: 2.000, 3.000, 4.500, 8.000 e 10.000 euro per le stesse fasce di peso.",
+   "come": "Non si fa domanda da soli: ci si rivolge a un concessionario o rivenditore aderente, che prenota il contributo sulla piattaforma ecobonus.mimit.gov.it e lo applica come sconto in fattura. Nell'atto di acquisto vanno indicati il contributo Ecobonus e, se c'è, il veicolo da rottamare.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "fondazione-con-il-sud-beni-confiscati-2026",
+   "titolo": "Fondazione Con il Sud: fino a 400.000 euro al Terzo settore per i beni confiscati",
+   "ente": "Fondazione Con il Sud",
+   "da": [
+    "altri"
+   ],
+   "dove": "sud",
+   "chi": [
+    "associazione"
+   ],
+   "temi": [
+    "sociale"
+   ],
+   "aiuto": [
+    "fondo"
+   ],
+   "forma": "Contributo a progetto",
+   "quanto": "Fino a 400.000 € per progetto (2 milioni in tutto)",
+   "scadenza": "2026-12-10",
+   "scadenza_testo": "Proposte entro il 10 dicembre 2026; il termine può cambiare se le risorse finiscono prima",
+   "link": "https://www.fondazioneconilsud.it/bandi/iniziativa-2026-per-la-valorizzazione-dei-beni-confiscati-alle-mafie/",
+   "cose": "Iniziativa «a richiesta» della Fondazione Con il Sud, seconda annualità del triennio 2025-2027, per progetti sociali, culturali ed economici che riutilizzano beni confiscati alle mafie in Basilicata, Calabria, Campania, Puglia, Sardegna e Sicilia.",
+   "a_chi": "Enti del Terzo settore che per la prima volta affrontano un percorso di questo tipo in rete. Il partenariato deve avere almeno tre organizzazioni, di cui almeno due del Terzo settore; possono partecipare anche istituzioni, scuole, università, consorzi e imprese. Il bene confiscato non deve essere già stato finanziato dalla Fondazione.",
+   "cosa_prevede": "Contributo massimo di 400.000 euro per progetto, su una dotazione complessiva di 2 milioni di euro, per iniziative sostenibili nel tempo che favoriscano lo sviluppo del territorio e la riappropriazione del bene da parte della comunità.",
+   "come": "Prima si invia un breve abstract dell'idea (modello Allegato 1, scaricabile dalla pagina e dalla piattaforma Chàiros) all'e-mail iniziative@fondazioneconilsud.it. Se l'idea supera la prima verifica, si scrive con gli uffici della Fondazione il progetto esecutivo con piano di attività, costi e sostenibilità.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "polaris-plus-fondo-repubblica-digitale",
+   "titolo": "Polaris+: fino a 3 milioni al Terzo settore per progetti STEM e digitale con le scuole",
+   "ente": "Fondo per la Repubblica Digitale – Impresa sociale",
+   "da": [
+    "altri"
+   ],
+   "dove": "italia",
+   "chi": [
+    "associazione"
+   ],
+   "temi": [
+    "digitale",
+    "scuola"
+   ],
+   "aiuto": [
+    "fondo"
+   ],
+   "forma": "Contributo a progetto",
+   "quanto": "Da 800.000 € a 3 milioni per progetto; 11 milioni riservati alle regioni del Sud, Campania compresa",
+   "scadenza": "2027-01-21",
+   "scadenza_testo": "Entro le ore 13 del 21 gennaio 2027",
+   "link": "https://www.fondorepubblicadigitale.it/bandi/bando-polaris-2",
+   "cose": "Bando da 25 milioni di euro del Fondo per la Repubblica Digitale (promosso dalle fondazioni di origine bancaria) per progetti di formazione e orientamento STEM e ICT rivolti agli studenti delle scuole medie e superiori.",
+   "a_chi": "Partenariati da 3 a 8 soggetti guidati da un ente privato senza scopo di lucro costituito da almeno due anni, con sede legale in Italia (non associazioni di categoria né sindacati). Gli altri partner devono essere pubblici o privati senza scopo di lucro; i partner for profit possono gestire al massimo il 30% del contributo. Obbligatorie almeno tre scuole partner, i cui studenti sono i beneficiari.",
+   "cosa_prevede": "Contributo da 800.000 euro a 3 milioni per progetti di durata tra 12 e 24 mesi. Il plafond è di 14 milioni per il Centro-Nord e 11 milioni per Abruzzo, Basilicata, Calabria, Campania, Molise, Puglia, Sardegna e Sicilia; 7 milioni per le scuole medie e 18 per le superiori. Il contributo è pagato in quattro tranche, con anticipo del 25%.",
+   "come": "Proposte solo online sulla piattaforma Re@dy entro le 13 del 21 gennaio 2027, con formulari, piano attività e costi, atto costitutivo, statuto e bilanci. Tutti i partner e le scuole si registrano su Re@dy. Informazioni: polaris@fondorepubblicadigitale.it, 06 68102735.",
+   "controllato": "2026-10-28"
+  },
+  {
+   "id": "contratto-di-sviluppo-invitalia",
+   "titolo": "Contratto di sviluppo: aiuti di Invitalia per grandi investimenti da 20 milioni in su",
+   "ente": "Invitalia (per il Ministero delle Imprese e del Made in Italy)",
+   "da": [
+    "stato"
+   ],
+   "dove": "italia",
+   "chi": [
+    "impresa",
+    "agricoltura"
+   ],
+   "temi": [
+    "investire",
+    "innovazione"
+   ],
+   "aiuto": [
+    "fondo",
+    "prestito"
+   ],
+   "forma": "Contributi a fondo perduto e finanziamento agevolato",
+   "quanto": "Investimento minimo 20 milioni di euro (7,5 milioni per la trasformazione di prodotti agricoli); importo degli aiuti secondo progetto, zona e dimensione dell'impresa",
+   "scadenza_testo": "Sportello aperto per i programmi industriali e di tutela ambientale; chiuso temporaneamente dal 1° luglio 2025 quello per il turismo",
+   "link": "https://www.invitalia.it/incentivi-e-strumenti/contratto-di-sviluppo",
+   "cose": "Incentivo per investimenti di grandi dimensioni nei settori industriale, agroindustriale, turistico e della tutela ambientale. Lo sportello per i programmi turistici è chiuso temporaneamente dal 1° luglio 2025 e quello per la filiera automotive dal 6 agosto 2026.",
+   "a_chi": "Imprese italiane ed estere di ogni dimensione: un'impresa proponente e fino a 4 imprese aderenti, più eventuali soggetti che partecipano ai progetti di ricerca, sviluppo e innovazione. Investimento minimo di 20 milioni di euro, ridotto a 7,5 milioni per i progetti di trasformazione dei prodotti agricoli.",
+   "cosa_prevede": "Contributo a fondo perduto in conto impianti, contributo a fondo perduto alla spesa, finanziamento agevolato e contributo in conto interessi. L'entità dipende dal tipo di progetto, dalla zona dell'investimento e dalla dimensione dell'impresa. Per investimenti strategici di almeno 50 milioni c'è una procedura veloce («fast track»).",
+   "come": "Domanda solo online sulla piattaforma incentivi di Invitalia, attraverso l'area personale, dal legale rappresentante, da un procuratore o da un delegato. Servono firma digitale, PEC e SPID, CNS o CIE. Si può chiedere prima un appuntamento con Invitalia dall'area personale.",
+   "controllato": "2026-10-28"
+  }
+ ]
 }

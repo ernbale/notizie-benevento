@@ -13,9 +13,15 @@ Fonti:
   inventa. Il sito del Ministero non risponde ai server di GitHub (prova del 28 ott 2026, come per i carburanti): il
   catalogo lo scarica il Pi di casa (--scarica --manda, dal cron) e lo passa alla pubblicazione (pubblica.yml, campo
   «contributi»), solo quando è cambiato;
-- contributi_locali.json: quelli che il catalogo non ha (Camera di Commercio, Regione, click day), scritti dall'agente
-  (AGENTE.md, «I contributi»); qui si controllano e quelli fatti male si scartano.
-I contributi dei Comuni (buoni libri, bonus, domande) li prende la pagina da notizie.json.
+- contributi_locali.json: quelli che il catalogo non ha (Stato per le famiglie, Regione, Camera di Commercio, Invitalia,
+  fondazioni, Unione europea, Comuni, click day), scritti dall'agente dei contributi che gira una volta al giorno
+  (CONTRIBUTI.md; lui, 28 ott 2026: «devi creare un agente che una volta al giorno scova i contributi, sovvenzioni»);
+  qui si controllano e quelli fatti male si scartano;
+- contributi_esclusi.json: le schede del catalogo che l'agente ha trovato chiuse o sbagliate sul sito ufficiale (il
+  catalogo a volte le dà aperte per mesi): non si mostrano.
+I contributi dei Comuni li prende la pagina anche da notizie.json, ma solo le notizie con "contributo" (AGENTE.md): il
+28 ott 2026 la pagina prendeva tutti gli avvisi «Domande e bandi» e c'erano loculi, lampade votive e scrutatori (lui:
+«se li leggi aiuti sovvenzioni contributi non c'è nulla, anzi il contrario, quasi tutti il Comune chiede soldi»).
 Quelli scaduti da meno di GIORNI_SCADUTI restano con "scaduto": true, perché la loro pagina non sparisca di colpo da
 Google; poi escono.
 
@@ -45,20 +51,46 @@ UA = "notiziebenevento.it (contributi; redazione@notiziebenevento.it)"
 CATALOGO = "https://www.incentivi.gov.it/solr/coredrupal/select"
 CAMPI = ("zs_nid,zs_title,zs_url,zs_field_link,zs_field_subject_grant,zs_field_open_date,zs_field_close_date,"
          "zs_field_close_date_descriptor,ds_last_update,zm_field_regions_value,zm_field_subject_type_value,"
+         "zm_field_activity_sector_value,"
          "zm_field_scopes_value,zm_field_support_form_value,zm_field_support_grant_type_min_max,zs_field_budget_allocation,"
          "tum_X3b_it_body_ft")
 GIORNI_SCADUTI = 60        # i scaduti restano (segnati) per non togliere di colpo le pagine a Google
 GIORNI_SENZA_SCADENZA = 365   # senza scadenza: vivo solo se la scheda è stata aggiornata nell'ultimo anno
 MINIMO_CATALOGO = 20       # meno di così dal catalogo vuol dire che qualcosa non va: si tiene quello di prima
 
-# «Chi sei?»: le chiavi dei filtri della pagina (CHI in index.html) dai tipi di beneficiario del catalogo
-CHI = {"impresa": "Imprese", "nuova": "Nuove imprese", "professionista": "Professionisti",
-       "associazione": "Associazioni e terzo settore", "ente": "Comuni ed enti", "cittadino": "Cittadini e famiglie"}
+# «Chi sei?»: le chiavi dei filtri della pagina (CHI_CONTR in index.html e pagine.py) dai tipi di beneficiario del
+# catalogo e, per le imprese, dai settori (lui, 28 ott 2026: «i filtri… non solo famiglie ma imprese, commercianti,
+# artigiani ecc.»; come il vecchio Cacciatore di Contributi, dal campo «settore di attività» del catalogo)
+CHI = {"cittadino": "Famiglie e cittadini", "giovani": "Giovani e studenti", "commercio": "Commercianti",
+       "artigiano": "Artigiani", "agricoltura": "Agricoltori e agroalimentare", "turismo": "Turismo, bar e ristoranti",
+       "impresa": "Tutte le imprese", "nuova": "Chi apre un'attività", "professionista": "Professionisti e partite IVA",
+       "associazione": "Associazioni e terzo settore", "ente": "Comuni, scuole ed enti"}
+SETTORI = {"Commercio": "commercio", "Artigianato": "artigiano", "Agricoltura, silvicoltura e pesca": "agricoltura",
+           "Agroalimentare": "agricoltura", "Turismo": "turismo", "Ristorazione": "turismo", "Alberghiero": "turismo"}
+# «Da chi?» (lui, 28 ott 2026: «fondi europei, statali, Confindustria, Confartigianato, Camera di Commercio, Regione,
+# Comuni e altro che neanche so»): chi mette o gestisce i soldi; i fondi europei gestiti da Stato o Regione hanno anche
+# «europa»
+DA = {"europa": "Unione europea", "stato": "Stato", "regione": "Regione Campania", "camera": "Camera di Commercio",
+      "comune": "Comuni", "categoria": "Associazioni di categoria", "altri": "Fondazioni e altri"}
+DA_ENTE = [(r"Commissione europea|Unione europea|EISMEA|EACEA", "europa"), (r"Camera di Commercio|CCIAA", "camera"),
+           (r"Regione Campania|Campania|ADISURC", "regione"), (r"^Comun[ei]\b|Ambito", "comune"),
+           (r"Confidi|Confindustria|Confartigianato|\bCNA\b|Confcommercio|Coldiretti|Confagricoltura|Confesercenti", "categoria"),
+           (r"Minister|Presidenza del Consiglio|Dipartimento|Agenzia (delle Entrate|per |ICE|Nazionale)|INPS|INAIL|Invitalia|"
+            r"SIMEST|GSE|Gestore dei Servizi|Credito Sportivo|CNR|Consiglio Nazionale|ISMEA|Cassa depositi|ENEA|"
+            r"Mediocredito|Consap|ARERA", "stato")]
+FONDI_UE = re.compile(r"\bFESR\b|\bFSE\b|FSE\+|\bPNRR\b|Next ?Generation|\bPN [A-Z]|\bPR [A-Z]|FEASR|FEAMPA|Interreg|"
+                      r"fondi europei|Horizon|Erasmus|\b21[-/]27\b|2021[-/ ]2027", re.I)   # «Unione europea» no: «mano d'opera dell'Unione europea»
+# «Che aiuto?»: la forma dell'aiuto
+AIUTO = {"fondo": "Soldi a fondo perduto", "bonus": "Bonus, assegni e buoni", "prestito": "Prestito agevolato",
+         "garanzia": "Garanzia sul prestito", "fiscale": "Sconto fiscale"}
+FORME_AIUTO = {"Contributo/Fondo perduto": "fondo", "Agevolazione fiscale": "fiscale", "Prestito/Anticipo rimborsabile": "prestito",
+               "Interventi a garanzia": "garanzia", "Riduzione dei contributi di previdenza sociale": "fiscale"}
 CHI_CATALOGO = [(r"^Impresa da costituire", "nuova"), (r"^(Impresa|Consorzio|Rete d'impresa|Istituto finanziario)", "impresa"),
                 (r"^Professionista", "professionista"), (r"Associazioni|Cooperative|Terzo settore", "associazione"),
                 (r"^(Ente Pubblico|Università)", "ente"), (r"^(Cittadino|Persona fisica)", "cittadino")]
 # «Per cosa?»: le chiavi dei temi (TEMI in index.html) dagli ambiti del catalogo
-TEMI = {"investire": "Investire", "aprire": "Aprire un'attività", "digitale": "Digitale", "energia": "Energia e ambiente",
+TEMI = {"figli": "Figli e famiglia", "scuola": "Scuola e studio", "casa": "Casa, affitto e bollette",
+        "lavoro": "Lavoro e assunzioni", "investire": "Investire", "aprire": "Aprire un'attività", "digitale": "Digitale", "energia": "Energia e ambiente",
         "innovazione": "Innovazione e ricerca", "export": "Export", "credito": "Credito e liquidità",
         "giovani-donne": "Giovani e donne", "crisi": "Imprese in difficoltà", "sociale": "Sociale",
         "cultura": "Cultura e spettacolo"}
@@ -66,14 +98,15 @@ TEMI_CATALOGO = {"Sostegno investimenti": "investire", "Start up/Sviluppo d'impr
                  "Transizione ecologica": "energia", "Innovazione e ricerca": "innovazione",
                  "Internazionalizzazione": "export", "Sostegno liquidità": "credito",
                  "Imprenditoria giovanile": "giovani-donne", "Imprenditoria femminile": "giovani-donne",
-                 "Crisi d'impresa": "crisi", "Inclusione sociale": "sociale"}
+                 "Crisi d'impresa": "crisi", "Inclusione sociale": "sociale",
+                 "Formazione (lavoro, occupazione, riqualificazione professionale dei lavoratori)": "lavoro"}
 CULTURA = re.compile(r"\bteatr|cinema|spettacol|editoria|musica|librar|\bmuse|culturale|audiovisiv|film\b", re.I)
 FORME = {"Contributo/Fondo perduto": "Contributo a fondo perduto", "Agevolazione fiscale": "Credito d'imposta o sconto fiscale",
          "Prestito/Anticipo rimborsabile": "Prestito agevolato", "Capitale di rischio": "Investimento nel capitale",
          "Interventi a garanzia": "Garanzia sul prestito",
          "Riduzione dei contributi di previdenza sociale": "Sconto sui contributi previdenziali"}
 DOVE = ("sannio", "campania", "sud", "italia", "europa")
-ALTRE_REGIONI = re.compile(r"Ischia|Valle D.Aosta|Calabria|Sicilia|Sardegna|Puglia|Basilicata|Lazio|Molise|Abruzzo|"
+ALTRE_REGIONI = re.compile(r"Ischia|Lucan|Valle D.Aosta|Calabria|Sicilia|Sardegna|Puglia|Basilicata|Lazio|Molise|Abruzzo|"
                            r"Toscana|Lombardia|Veneto|Piemonte|Liguria|Marche|Umbria|Friuli|Trentino|Emilia|Alto Adige", re.I)
 ALTRA_PROVINCIA = re.compile(r"provincia di (Avellino|Salerno|Napoli|Caserta)\b|\b(Avellino|Salerno|Napoli|Caserta)\b", re.I)
 SANNIO_ENTE = re.compile(r"Irpinia Sannio|Provincia di Benevento|\bGAL\b|Gruppo di Azione Locale", re.I)
@@ -201,6 +234,11 @@ def dal_catalogo(docs, oggi):
             k = TEMI_CATALOGO.get(s)
             if k and k not in temi:
                 temi.append(k)
+        if any(k in chi for k in ("impresa", "nuova")):   # i settori valgono per le imprese (anche quelle da aprire)
+            for st in x.get("zm_field_activity_sector_value") or []:
+                k = SETTORI.get(st)
+                if k and k not in chi:
+                    chi.append(k)
         if "nuova" in chi and "aprire" not in temi:
             temi.append("aprire")
         if any("prevalenza" in t or "Giovanile" in t or "Femminile" in t for t in tipi) and "giovani-donne" not in temi:
@@ -215,8 +253,10 @@ def dal_catalogo(docs, oggi):
             continue
         tit = titolo_pulito(titolo, ente)
         apre = str(uno(x, "zs_field_open_date") or "")[:10]
+        forme = x.get("zm_field_support_form_value") or []
         voce = {"id": f"{slug(tit)[:70].rstrip('-')}-{nid}", "titolo": tit, "ente": ente, "dove": dove, "chi": chi,
-                "temi": temi, "forma": " o ".join(FORME.get(f, f) for f in (x.get("zm_field_support_form_value") or [])),
+                "temi": temi, "forma": " o ".join(FORME.get(f, f) for f in forme),
+                "aiuto": list(dict.fromkeys(FORME_AIUTO[f] for f in forme if f in FORME_AIUTO)),
                 "quanto": quanto(x), "apertura": apre if GIORNO.match(apre) else None,
                 "scadenza": chiude if GIORNO.match(chiude) else None,
                 "scadenza_testo": pulisci(uno(x, "zs_field_close_date_descriptor")) or None,
@@ -226,7 +266,16 @@ def dal_catalogo(docs, oggi):
         testo = " ".join(filter(None, [tit, voce.get("cose"), voce.get("a_chi"), voce.get("cosa_prevede")]))
         if REGIONI_NEL_TESTO.search(testo) and not ANCHE_NOI.search(testo):
             continue
+        voce["da"] = da_di(ente, testo)
         out.append(voce)
+    return out
+
+
+def da_di(ente, testo):
+    """«Da chi?»: chi dà i soldi, dal nome dell'ente; più «europa» se sono fondi europei (FESR, PNRR, FSE+…)."""
+    out = next(([k] for rx, k in DA_ENTE if re.search(rx, ente or "", re.I)), ["altri"])
+    if "europa" not in out and FONDI_UE.search(testo or ""):
+        out.append("europa")
     return out
 
 
@@ -246,7 +295,12 @@ def controlla_locale(v, err):
         err.append(f"{w}: id non valido")
     if v.get("dove") not in DOVE:
         err.append(f"{w}: dove deve essere uno di {', '.join(DOVE)}")
-    for k, ammessi in (("chi", CHI), ("temi", TEMI)):
+    for k in ("chi", "da", "aiuto"):
+        if not v.get(k):
+            err.append(f"{w}: manca {k}")
+    if v.get("come") is not None and not str(v["come"]).strip():
+        err.append(f"{w}: «come» vuoto")
+    for k, ammessi in (("chi", CHI), ("temi", TEMI), ("da", DA), ("aiuto", AIUTO)):
         if not isinstance(v.get(k, []), list) or any(x not in ammessi for x in v.get(k, [])):
             err.append(f"{w}: {k} ammette solo {', '.join(ammessi)}")
     for k in ("apertura", "scadenza", "controllato"):
@@ -258,9 +312,12 @@ def controlla_locale(v, err):
         err.append(f"{w}: il link deve essere quello ufficiale, https://")
 
 
-def unisci(catalogo, locali, prima, oggi):
-    """contributi.json: catalogo + locali, con la data in cui ognuno è comparso e i scaduti segnati."""
+def unisci(catalogo, locali, prima, oggi, esclusi=()):
+    """contributi.json: catalogo + locali, con la data in cui ognuno è comparso e i scaduti segnati; senza le schede del
+    catalogo trovate chiuse o sbagliate (contributi_esclusi.json)."""
     o = oggi.isoformat()
+    esclusi = set(esclusi)
+    catalogo = [x for x in catalogo if x.get("id") not in esclusi]
     da_scaduti = (oggi - dt.timedelta(days=GIORNI_SCADUTI)).isoformat()
     aggiunto = {v["id"]: v.get("aggiunto") for v in (prima or {}).get("contributi", []) if v.get("id")}
     tutti, visti = [], set()
@@ -336,6 +393,8 @@ def main():
     ap.add_argument("--prima", help="(con --pubblica) contributi.json già pubblicato")
     ap.add_argument("--locali", default=os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
                                                      "contributi_locali.json"))
+    ap.add_argument("--esclusi", default=os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                                                      "contributi_esclusi.json"))
     ap.add_argument("--uscita", default="contributi.json")
     a = ap.parse_args()
     oggi = oggi_roma()
@@ -369,11 +428,19 @@ def main():
             locali.append(v)
     for e in err:
         print("::warning::contributi_locali.json:", e)
-    tutti = unisci(catalogo, locali, prima, oggi)
+    esclusi = [x.get("id") for x in ((leggi(a.esclusi) or {}).get("esclusi") or []) if isinstance(x, dict) and x.get("id")]
+    for v in catalogo:   # il catalogo arrivato prima di «da» e «aiuto» (o già pubblicato): si completano qui
+        if "da" not in v:
+            v["da"] = da_di(v.get("ente"), " ".join(filter(None, [v.get("titolo"), v.get("cose"), v.get("cosa_prevede")])))
+        if "aiuto" not in v:
+            v["aiuto"] = list(dict.fromkeys(k for f, k in ((FORME.get(g, g), k) for g, k in FORME_AIUTO.items())
+                                            if f in (v.get("forma") or "")))
+    tutti = unisci(catalogo, locali, prima, oggi, esclusi)
     from zoneinfo import ZoneInfo
     da = dt.datetime.now(ZoneInfo("Europe/Rome")).isoformat(timespec="minutes")
     with open(a.uscita, "w", encoding="utf-8") as f:
-        json.dump({"aggiornato": da, "catalogo": info, "contributi": tutti}, f, ensure_ascii=False, separators=(",", ":"))
+        json.dump({"aggiornato": da, "catalogo": info, "esclusi": len(esclusi), "contributi": tutti}, f, ensure_ascii=False,
+                  separators=(",", ":"))
     aperti = sum(not v["scaduto"] for v in tutti)
     print(f"contributi: {aperti} aperti ({len(catalogo)} dal catalogo, {len(locali)} locali)")
 

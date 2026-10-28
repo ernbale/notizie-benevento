@@ -7293,7 +7293,19 @@
    "subito": true,
    "pubblicato": "2026-10-26T14:13:26+01:00",
    "foto": "gas-4",
-   "importanza": 4
+   "importanza": 4,
+   "contributo": {
+    "chi": [
+     "cittadino"
+    ],
+    "temi": [
+     "casa"
+    ],
+    "aiuto": [
+     "bonus"
+    ],
+    "quando": "Domande dopo l'avviso del Comune, atteso nei prossimi giorni"
+   }
   },
   {
    "id": "airola-incendio-controlli-diossine-latte-forchia",
@@ -7702,7 +7714,20 @@
     ]
    },
    "foto": "libri-7",
-   "importanza": 3
+   "importanza": 3,
+   "contributo": {
+    "chi": [
+     "cittadino",
+     "giovani"
+    ],
+    "temi": [
+     "scuola",
+     "figli"
+    ],
+    "aiuto": [
+     "bonus"
+    ]
+   }
   },
   {
    "id": "benevento-sannio-festival-2026-vincono-salvarezza-masiello",

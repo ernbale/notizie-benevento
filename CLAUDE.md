@@ -45,9 +45,14 @@ Politica mostra in cima come «La storia in corso» (AGENTE.md, «Il dibattito p
 Lui: «tutto quello che riesci a trovare che vada bene per BN e provincia… estremamente facile da consultare»; nome
 «Contributi» perché i bandi di concorso avranno una sezione loro («Concorsi», in cantiere). strumenti/contributi.py:
 il Catalogo degli incentivi del Ministero (non risponde a GitHub: lo scarica il Pi di casa e lo manda alla
-pubblicazione, campo «contributi» di pubblica.yml, come i carburanti), più contributi_locali.json (li scrive l'agente,
-AGENTE.md «I contributi») e i bandi dei Comuni presi dalle notizie. Filtri chi/per cosa/dove e ricerca restano
-nell'indirizzo (/contributi/?chi=impresa&tema=digitale), una pagina per contributo (/contributi/<id>/). Quando si passa
+pubblicazione, campo «contributi» di pubblica.yml, come i carburanti), più contributi_locali.json e
+contributi_esclusi.json (li tiene **l'agente dei contributi**, routine di ogni mattina, CONTRIBUTI.md; lui: «devi
+creare un agente che una volta al giorno scova i contributi, sovvenzioni») e gli aiuti dei Comuni presi dalle notizie
+con `"contributo"` (non più tutti gli avvisi «Domande e bandi»: c'erano loculi e lampade votive, lui: «quasi tutti il
+Comune chiede soldi»). Filtri «Chi sei?» (famiglie, giovani, commercianti, artigiani, agricoltori, turismo, imprese…,
+dai settori del catalogo come nel vecchio Cacciatore di Contributi), «Da chi?» (Unione europea, Stato, Regione, Camera
+di Commercio, Comuni, associazioni di categoria, fondazioni), «Per cosa?», «Che aiuto?» e ricerca restano
+nell'indirizzo (/contributi/?chi=commercio&da=regione), una pagina per contributo (/contributi/<id>/). Quando si passa
 ad Aruba (lui: «da fare nel prossimo futuro… così togliamo anche il rischio che il Pi non funzioni») lo scaricamento va
 lì.
 

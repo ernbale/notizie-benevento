@@ -978,12 +978,7 @@ def html_avvisi(notizie, oggi, h1):
 # ---------- i contributi (strumenti/contributi.py → contributi.json): la pagina e una per contributo ----------
 # Come paginaContributi() in index.html, che ridisegna /contributi/ con i filtri che funzionano; qui per Google e per
 # chi non ha JavaScript. Ogni contributo del catalogo e dei locali ha la sua pagina con il testo ufficiale.
-CHI_CONTR = {"impresa": "Imprese", "nuova": "Nuove imprese", "professionista": "Professionisti", "associazione": "Associazioni",
-             "ente": "Comuni ed enti", "cittadino": "Cittadini e famiglie"}
-TEMI_CONTR = {"investire": "Investire", "aprire": "Aprire un'attività", "digitale": "Digitale", "energia": "Energia e ambiente",
-              "innovazione": "Innovazione e ricerca", "export": "Export", "credito": "Credito e liquidità",
-              "giovani-donne": "Giovani e donne", "crisi": "Imprese in difficoltà", "sociale": "Sociale",
-              "cultura": "Cultura e spettacolo"}
+from contributi import CHI as CHI_CONTR, DA as DA_CONTR, TEMI as TEMI_CONTR, AIUTO as AIUTO_CONTR   # noqa: E402
 DOVE_CONTR = {"sannio": "Solo Sannio", "campania": "Campania", "sud": "Sud Italia", "italia": "Italia", "europa": "Europa"}
 TITOLO_CONTR = "Contributi e bandi a Benevento e nel Sannio"
 
@@ -1038,17 +1033,20 @@ def _scheda_contr(v, oggi):
 
 
 def contributi_dei_comuni(notizie, oggi):
-    """I bandi dei Comuni dalle notizie (gli avvisi «Domande e bandi»), come contributiDeiComuni() in index.html."""
+    """Gli aiuti dei Comuni dalle notizie segnate "contributo" dall'agente, come contributiDeiComuni() in index.html."""
     o, out = oggi.isoformat(), []
     for n in notizie:
-        if (n.get("_arch") or n.get("categoria") != "avvisi" or tipo_avviso(n) not in ("Domande e bandi", "Scadenza")
-                or str(n.get("in_vigore_fino") or "9") < o):
+        cn = n.get("contributo") if isinstance(n.get("contributo"), dict) else {}
+        chi = [k for k in cn.get("chi") or [] if k in CHI_CONTR]
+        if n.get("_arch") or not chi or str(n.get("in_vigore_fino") or "9") < o:
             continue
         f = next((x for x in vista_ufficiale(n).get("fonti") or [] if str(x.get("url") or "").startswith("http")), None)
         c = _paese_avviso(n)
         out.append({"id": "notizia-" + n["id"], "titolo": n["titolo"], "ente": c if c in ("Più Comuni", "Tutto il Sannio") else f"Comune di {c}",
-                    "dove": "sannio", "chi": ["cittadino"], "temi": [], "forma": "", "quanto": "",
-                    "scadenza": n.get("in_vigore_fino"), "link": f["url"] if f else "", "cose": n.get("sintesi") or "",
+                    "dove": "sannio", "chi": chi, "da": ["comune"], "temi": [k for k in cn.get("temi") or [] if k in TEMI_CONTR],
+                    "aiuto": [k for k in cn.get("aiuto") or [] if k in AIUTO_CONTR], "forma": "", "quanto": "",
+                    "scadenza": n.get("in_vigore_fino"), "scadenza_testo": cn.get("quando") or None,
+                    "link": f["url"] if f else "", "cose": n.get("sintesi") or "",
                     "pagina": percorso("notizia", n["id"]), "aggiunto": str(n.get("pubblicato") or "")[:10]})
     return out
 
@@ -1064,10 +1062,11 @@ def html_contributi(voci, oggi, aggiornato):
     click = [v for v in voci if str(v.get("click_day") or "")[:10] >= o and v.get("click_day")]
     h += (f'<p class="contr-riepilogo">{len(voci)} contributi aperti' + (f" · {len(click)} click day in arrivo" if click else "") + "</p>")
     righe = ""
-    for etichetta, chiave, valori in (("Chi sei?", "chi", CHI_CONTR), ("Per cosa?", "temi", TEMI_CONTR), ("Dove vale?", "dove", DOVE_CONTR)):
+    for etichetta, chiave, valori in (("Chi sei?", "chi", CHI_CONTR), ("Da chi?", "da", DA_CONTR), ("Per cosa?", "temi", TEMI_CONTR),
+                                      ("Che aiuto?", "aiuto", AIUTO_CONTR)):
         b = "".join(f'<button type="button" aria-pressed="false">{e(nome)}<span class="n"> {n}</span></button>'
                     for k, nome in valori.items()
-                    for n in [sum(1 for v in voci if (v.get("dove") == k if chiave == "dove" else k in (v.get(chiave) or [])))] if n)
+                    for n in [sum(1 for v in voci if k in (v.get(chiave) or []))] if n)
         righe += (f'<div class="contr-riga"><span class="contr-etichetta">{etichetta}</span>'
                   f'<button type="button" aria-pressed="true">Tutti</button>{b}</div>')
     h += (f'<section class="contr-filtri"><div>{righe}</div><div class="contr-cerca"><input type="search" '
@@ -1075,7 +1074,8 @@ def html_contributi(voci, oggi, aggiornato):
     h += f'<section class="contr-elenco"><h3 class="titolo-col">{len(voci)} contributi, in ordine di scadenza</h3><div class="contr-lista">'
     h += "".join(_scheda_contr(v, oggi) for v in voci) + "</div></section>"
     h += ('<p class="contr-nota">Fonti: Catalogo degli incentivi del Ministero delle Imprese e del Made in Italy (incentivi.gov.it, '
-          "dati aperti IODL 2.0), Camera di Commercio Irpinia Sannio, Regione Campania e Comuni del Sannio. Prima di fare "
+          "dati aperti IODL 2.0) e, controllati ogni giorno sui siti ufficiali, INPS, Agenzia delle Entrate, Invitalia, Regione "
+          "Campania, Camera di Commercio Irpinia Sannio, Unione europea, fondazioni e Comuni del Sannio. Prima di fare "
           "domanda leggi sempre il bando ufficiale: date e importi possono cambiare. Manca un contributo? Scrivi a "
           '<a href="mailto:redazione@notiziebenevento.it">redazione@notiziebenevento.it</a>.</p>')
     return h
@@ -1090,12 +1090,13 @@ def html_contributo(v, oggi):
     if v.get("scaduto"):
         h += f'<div class="nota">Questo contributo è scaduto ({e(_giorno_contr(v["scadenza"]))}). Guarda quelli <a href="/contributi/">ancora aperti</a>.</div>'
     righe = [("Chi può chiederlo", ", ".join(CHI_CONTR[k] for k in v.get("chi") or [] if k in CHI_CONTR)),
+             ("Chi lo dà", ", ".join(DA_CONTR[k] for k in v.get("da") or [] if k in DA_CONTR)),
              ("Che cosa è", v.get("forma") or ""), ("Quanto", v.get("quanto") or ""), ("Scadenza", t),
              ("Per cosa", ", ".join(TEMI_CONTR[k] for k in v.get("temi") or [] if k in TEMI_CONTR))]
     h += '<dl class="contr-dati">' + "".join(f"<dt>{e(a)}</dt><dd>{e(b)}</dd>" for a, b in righe if b) + "</dl>"
     h += (f'<p class="contr-vai"><a href="{e(v["link"])}" target="_blank" rel="noopener nofollow">Vai al bando ufficiale per fare '
           "domanda ›</a></p>")
-    for titolo, k in (("Cos'è", "cose"), ("A chi si rivolge", "a_chi"), ("Cosa prevede", "cosa_prevede")):
+    for titolo, k in (("Cos'è", "cose"), ("A chi si rivolge", "a_chi"), ("Cosa prevede", "cosa_prevede"), ("Come si chiede", "come")):
         if v.get(k):
             h += f"<h3>{titolo}</h3><p>{e(v[k])}</p>"
     if v.get("fonte") == "catalogo":

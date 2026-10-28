@@ -445,6 +445,8 @@
   .contr-riga button[aria-pressed="true"] { background: var(--nero); color: #fff; border-color: var(--nero); }
   .contr-riga button .n { color: var(--grigio); font-weight: 500; }
   .contr-riga button[aria-pressed="true"] .n { color: #ddd; }
+  .contr-altri { margin: 4px 0 0; }
+  .contr-altri summary { font: 600 13px var(--sans); color: var(--blu); cursor: pointer; margin: 6px 0 0 98px; }
   .contr-cerca { margin: 10px 0 0 98px; max-width: 520px; }
   .contr-cerca input { width: 100%; box-sizing: border-box; font: 500 15px var(--sans); padding: 8px 12px; border: 1px solid var(--nero); border-radius: 4px; background: #fff; color: var(--nero); }
   .contr-azzera { margin: 8px 0 0 98px; font: 600 13px var(--sans); color: var(--blu); background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; }
@@ -2558,13 +2560,22 @@
   // La pagina Contributi (lui, 28 ott 2026: «tutto quello che riesci a trovare che vada bene per BN e provincia…
   // estremamente facile da consultare»; «Contributi» e non «Bandi», perché i concorsi avranno una sezione loro):
   // contributi.json (strumenti/contributi.py: catalogo del Ministero e contributi locali) più i bandi dei Comuni presi
-  // dalle notizie. Tre domande (chi sei, per cosa, dove vale) e la ricerca, che restano nell'indirizzo
-  // (/contributi/?chi=impresa&tema=digitale): una ricerca si condivide col link. Come in pagine.py (html_contributi).
-  var CHI_CONTR = { impresa: "Imprese", nuova: "Nuove imprese", professionista: "Professionisti", associazione: "Associazioni",
-    ente: "Comuni ed enti", cittadino: "Cittadini e famiglie" };
-  var TEMI_CONTR = { investire: "Investire", aprire: "Aprire un'attività", digitale: "Digitale", energia: "Energia e ambiente",
+  // dalle notizie. Quattro domande (chi sei, da chi, per cosa, che aiuto) e la ricerca, che restano nell'indirizzo
+  // (/contributi/?chi=commercio&da=regione): una ricerca si condivide col link. Come in pagine.py (html_contributi) e
+  // contributi.py (CHI, DA, TEMI, AIUTO). Lui, 28 ott 2026: «i filtri… non solo famiglie ma imprese, commercianti,
+  // artigiani ecc.», «fondi europei, statali, Confindustria, Confartigianato, Camera di Commercio, Regione, Comuni».
+  var CHI_CONTR = { cittadino: "Famiglie e cittadini", giovani: "Giovani e studenti", commercio: "Commercianti", artigiano: "Artigiani",
+    agricoltura: "Agricoltori e agroalimentare", turismo: "Turismo, bar e ristoranti", impresa: "Tutte le imprese",
+    nuova: "Chi apre un'attività", professionista: "Professionisti e partite IVA", associazione: "Associazioni e terzo settore",
+    ente: "Comuni, scuole ed enti" };
+  var DA_CONTR = { europa: "Unione europea", stato: "Stato", regione: "Regione Campania", camera: "Camera di Commercio",
+    comune: "Comuni", categoria: "Associazioni di categoria", altri: "Fondazioni e altri" };
+  var TEMI_CONTR = { figli: "Figli e famiglia", scuola: "Scuola e studio", casa: "Casa, affitto e bollette", lavoro: "Lavoro e assunzioni",
+    investire: "Investire", aprire: "Aprire un'attività", digitale: "Digitale", energia: "Energia e ambiente",
     innovazione: "Innovazione e ricerca", "export": "Export", credito: "Credito e liquidità", "giovani-donne": "Giovani e donne",
     crisi: "Imprese in difficoltà", sociale: "Sociale", cultura: "Cultura e spettacolo" };
+  var AIUTO_CONTR = { fondo: "Soldi a fondo perduto", bonus: "Bonus, assegni e buoni", prestito: "Prestito agevolato",
+    garanzia: "Garanzia sul prestito", fiscale: "Sconto fiscale" };
   var DOVE_CONTR = { sannio: "Solo Sannio", campania: "Campania", sud: "Sud Italia", italia: "Italia", europa: "Europa" };
   var contributi = null, contributiPronti = null;
   function caricaContributi() {
@@ -2576,27 +2587,33 @@
   }
   function filtriContributi() {
     var q = new URLSearchParams(location.search);
-    return { chi: CHI_CONTR[q.get("chi")] ? q.get("chi") : "", tema: TEMI_CONTR[q.get("tema")] ? q.get("tema") : "",
-      dove: DOVE_CONTR[q.get("dove")] ? q.get("dove") : "", q: (q.get("q") || "").slice(0, 60) };
+    return { chi: CHI_CONTR[q.get("chi")] ? q.get("chi") : "", da: DA_CONTR[q.get("da")] ? q.get("da") : "",
+      tema: TEMI_CONTR[q.get("tema")] ? q.get("tema") : "", aiuto: AIUTO_CONTR[q.get("aiuto")] ? q.get("aiuto") : "",
+      q: (q.get("q") || "").slice(0, 60) };
   }
-  // i bandi dei Comuni (buoni libri, bonus, domande): gli avvisi «Domande e bandi» delle notizie
+  // gli aiuti dei Comuni nelle notizie: solo quelle segnate "contributo" dall'agente (AGENTE.md). Fino al 28 ott 2026
+  // erano tutti gli avvisi «Domande e bandi», con loculi, lampade votive e scrutatori (lui: «se li leggi aiuti
+  // sovvenzioni contributi non c'è nulla, anzi il contrario, quasi tutti il Comune chiede soldi»)
   function contributiDeiComuni() {
     var oggi = oggiTZ();
+    var ok = function (lista, ammessi) { return (Array.isArray(lista) ? lista : []).filter(function (k) { return ammessi[k]; }); };
     return (dati.notizie || []).filter(function (n) {
-      return n.categoria === "avvisi" && /^(Domande e bandi|Scadenza)$/.test(tipoAvviso(n)) && (!n.in_vigore_fino || n.in_vigore_fino >= oggi);
+      return n.contributo && ok(n.contributo.chi, CHI_CONTR).length && (!n.in_vigore_fino || n.in_vigore_fino >= oggi);
     }).map(function (n) {
       var f = (vistaUfficiale(n).fonti || []).filter(function (x) { return /^https?:\/\//.test(String(x.url || "")); })[0];
       var c = comuneDi(n);
       return { id: "notizia-" + n.id, titolo: n.titolo, ente: /^(Più Comuni|Tutto il Sannio)$/.test(c) ? c : "Comune di " + c, dove: "sannio",
-        chi: ["cittadino"], temi: [], forma: "", quanto: "", scadenza: n.in_vigore_fino || null, link: f ? f.url : "",
+        chi: ok(n.contributo.chi, CHI_CONTR), da: ["comune"], temi: ok(n.contributo.temi, TEMI_CONTR), aiuto: ok(n.contributo.aiuto, AIUTO_CONTR),
+        forma: "", quanto: "", scadenza: n.in_vigore_fino || null, scadenza_testo: n.contributo.quando || null, link: f ? f.url : "",
         cose: n.sintesi || "", pagina: linkArticolo(n), aggiunto: String(n.pubblicato || "").slice(0, 10) };
     });
   }
   function normale(s) { return String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, ""); }
   function passaFiltri(v, f, salta) {
     if (salta !== "chi" && f.chi && (v.chi || []).indexOf(f.chi) < 0) return false;
+    if (salta !== "da" && f.da && (v.da || []).indexOf(f.da) < 0) return false;
     if (salta !== "tema" && f.tema && (v.temi || []).indexOf(f.tema) < 0) return false;
-    if (salta !== "dove" && f.dove && v.dove !== f.dove) return false;
+    if (salta !== "aiuto" && f.aiuto && (v.aiuto || []).indexOf(f.aiuto) < 0) return false;
     if (f.q) {
       var testoV = normale([v.titolo, v.ente, v.cose, v.a_chi, v.cosa_prevede, v.forma].join(" "));
       if (!normale(f.q).split(/\s+/).every(function (p) { return !p || testoV.indexOf(p) >= 0; })) return false;
@@ -2706,22 +2723,29 @@
     pann.appendChild(azzera);
     function aggiorna() {
       var q = new URLSearchParams();
-      ["chi", "tema", "dove", "q"].forEach(function (k) { if (f[k]) q.set(k, f[k]); });
+      ["chi", "da", "tema", "aiuto", "q"].forEach(function (k) { if (f[k]) q.set(k, f[k]); });
       history.replaceState(null, "", "/contributi/" + (q.toString() ? "?" + q.toString() : ""));
       mostrato = location.pathname + location.search + location.hash;
       disegnaFiltri();
       disegnaElenco();
     }
+    var altriAperti = !!(f.tema || f.aiuto);
     function disegnaFiltri() {
       righe.textContent = "";
       righe.appendChild(riga("Chi sei?", "chi", CHI_CONTR));
-      righe.appendChild(riga("Per cosa?", "tema", TEMI_CONTR));
-      righe.appendChild(riga("Dove vale?", "dove", DOVE_CONTR));
+      righe.appendChild(riga("Da chi?", "da", DA_CONTR));
+      // «Per cosa?» e «Che aiuto?» sotto «Altri filtri»: sul telefono quattro righe di bottoni sono troppe
+      var altri = el("details", "contr-altri", [el("summary", "", ["Altri filtri: per cosa, che aiuto"])]);
+      altri.open = altriAperti || !!(f.tema || f.aiuto);
+      altri.addEventListener("toggle", function () { altriAperti = altri.open; });
+      altri.appendChild(riga("Per cosa?", "tema", TEMI_CONTR));
+      altri.appendChild(riga("Che aiuto?", "aiuto", AIUTO_CONTR));
+      righe.appendChild(altri);
       azzera.textContent = "";
-      if (f.chi || f.tema || f.dove || f.q) {
+      if (f.chi || f.da || f.tema || f.aiuto || f.q) {
         var az = el("button", "contr-azzera", ["Azzera i filtri"]);
         az.type = "button";
-        az.addEventListener("click", function () { f = { chi: "", tema: "", dove: "", q: "" }; cerca.value = ""; aggiorna(); });
+        az.addEventListener("click", function () { f = { chi: "", da: "", tema: "", aiuto: "", q: "" }; cerca.value = ""; aggiorna(); });
         azzera.appendChild(az);
       }
     }
@@ -2751,8 +2775,9 @@
     disegnaElenco();
     box.appendChild(pann);
     box.appendChild(elenco);
-    var nota = el("p", "contr-nota", ["Fonti: Catalogo degli incentivi del Ministero delle Imprese e del Made in Italy (incentivi.gov.it, dati aperti IODL 2.0), " +
-      "Camera di Commercio Irpinia Sannio, Regione Campania e Comuni del Sannio. Prima di fare domanda leggi sempre il bando ufficiale: date e importi " +
+    var nota = el("p", "contr-nota", ["Fonti: Catalogo degli incentivi del Ministero delle Imprese e del Made in Italy (incentivi.gov.it, dati aperti IODL 2.0) " +
+      "e, controllati ogni giorno sui siti ufficiali, INPS, Agenzia delle Entrate, Invitalia, Regione Campania, Camera di Commercio Irpinia Sannio, " +
+      "Unione europea, fondazioni e Comuni del Sannio. Prima di fare domanda leggi sempre il bando ufficiale: date e importi " +
       "possono cambiare. Manca un contributo? Scrivi a "]);
     var m = el("a", "", ["redazione@notiziebenevento.it"]);
     m.href = "mailto:redazione@notiziebenevento.it";

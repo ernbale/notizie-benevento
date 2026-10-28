@@ -13,6 +13,8 @@ Sito: https://notiziebenevento.it (notiziebenevento.com rimanda qui)
 - `archivio/indice.json`: elenco leggero di tutto l'archivio, per la ricerca e per i link già condivisi.
 - `strumenti/archivia.py`: controlla `notizie.json` (anche niente date nel futuro) e sposta in archivio; non scrive niente se trova un errore.
 - `strumenti/meteo.py`: previsioni da 8 modelli → `meteo.json` (lo esegue GitHub ogni ora).
+- `CONTRIBUTI.md`, `contributi_locali.json`, `contributi_esclusi.json`: l'agente dei contributi (routine di ogni mattina)
+  e quello che scrive: i contributi che il catalogo non ha e le schede del catalogo chiuse o sbagliate.
 - `strumenti/contributi.py`: i contributi e i bandi per il Sannio → `contributi.json` (pagina `/contributi/`): il catalogo del
   Ministero lo scarica il Pi di casa e lo manda alla pubblicazione, che lo unisce a `contributi_locali.json` (lo scrive l'agente).
 - `strumenti/foto_ia.py`: le foto fatte apposta con GPT Image per le notizie e le storie senza foto vera e senza tema, dalla
