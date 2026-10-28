@@ -3,6 +3,58 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "arpaia-parcheggio-cimitero-chiuso-28-ottobre",
+   "titolo": "Arpaia, mercoledì 28 ottobre chiuso il parcheggio del cimitero fino alle 14 per il taglio dell'erba",
+   "titolo_google": "Arpaia, parcheggio del cimitero chiuso il 28 ottobre",
+   "sintesi": "Mercoledì 28 ottobre, dalle 5 alle 14, il parcheggio vicino al cimitero di Arpaia, usato anche da chi prende il treno o il bus, è chiuso alle auto e c'è il divieto di sosta: una ditta taglia l'erba e pota gli arbusti.",
+   "categoria": "strade",
+   "zona": "caudina",
+   "immagine": "parcheggio",
+   "luogo": "Arpaia",
+   "pubblicato": "2026-10-27",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 2,
+   "in_vigore_fino": "2026-10-28",
+   "in_vigore_dal": "2026-10-28",
+   "fonti": [
+    {
+     "nome": "Comune di Arpaia",
+     "url": "https://halleyweb.com/c062005/mc/mc_p_dettaglio.php?id_pubbl=9521",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Mercoledì 28 ottobre, dalle 5 alle 14, ad Arpaia è chiuso alle auto il parcheggio comunale vicino al cimitero, quello che usano anche i viaggiatori, e lì non si può lasciare la macchina. Lo ha deciso il Comune con un'ordinanza.",
+      "fonti": [
+       "Comune di Arpaia"
+      ]
+     },
+     {
+      "testo": "Il motivo è la pulizia delle aiuole: la ditta Ecojunk taglierà l'erba e poterà gli arbusti delle zone verdi del parcheggio, e il Comune vuole evitare danni alle auto parcheggiate.",
+      "fonti": [
+       "Comune di Arpaia"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di Arpaia",
+      "titolo": "Divieto di sosta e chiusura al traffico veicolare per il giorno 28.10.2026 dalle 05,00 alle ore 14,00 del parcheggio a servizio del cimitero comunale.",
+      "url": "https://halleyweb.com/c062005/mc/mc_p_dettaglio.php?id_pubbl=9521",
+      "data": "27 ott",
+      "ufficiale": true
+     }
+    ]
+   }
+  },
+  {
    "id": "benevento-nicola-sguera-premio-agrorinasce-corpo-a-rendere",
    "titolo": "Benevento, lo scrittore Nicola Sguera vince il premio nazionale Agrorinasce con il romanzo «Corpo a rendere»",
    "titolo_google": "Premio Agrorinasce 2026, vince il beneventano Nicola Sguera",
@@ -126,7 +178,7 @@
    "titolo": "Durazzano, la nuova scuola di piazza Galilei potrebbe portare il nome del maestro Salvatore Basso",
    "titolo_google": "Durazzano, scuola intitolata al maestro Salvatore Basso",
    "sintesi": "La Giunta di Durazzano ha dato parere favorevole a intitolare la scuola di piazza Galileo Galilei al maestro Salvatore Basso, che insegnò in paese dal dopoguerra. Per il nome serve ancora una deroga del Prefetto di Benevento.",
-   "categoria": "altro",
+   "categoria": "politica",
    "zona": "caudina",
    "immagine": "scuola",
    "luogo": "Durazzano",
@@ -1953,7 +2005,7 @@
    "titolo": "Benevento, quattro nuovi ausiliari del traffico per i controlli sulle strisce blu",
    "titolo_google": "Strisce blu a Benevento: quattro nuovi ausiliari del traffico",
    "sintesi": "Il sindaco di Benevento Clemente Mastella ha nominato quattro nuovi ausiliari del traffico che controlleranno la sosta a pagamento sulle strisce blu, gestita da Benevento Mobilità. Prendono il posto di tre addetti che avevano rinunciato o lasciato il lavoro.",
-   "categoria": "altro",
+   "categoria": "politica",
    "zona": "benevento",
    "luogo": "Benevento",
    "immagine": "parcheggio",
@@ -4604,7 +4656,7 @@
    "titolo": "Sant'Angelo a Cupolo, il progetto per l'inverno con San Nazzaro è idoneo al bando del Ministero ma resta senza fondi",
    "titolo_google": "Sant'Angelo a Cupolo, progetto idoneo ma senza fondi",
    "sintesi": "Il progetto «Territorio e tradizioni d'inverno» di Sant'Angelo a Cupolo e San Nazzaro, da 52.500 euro, è stato giudicato idoneo al bando ministeriale «Cultura nei piccoli Comuni» ma non è stato finanziato. Nessun Comune del Sannio è tra quelli che ricevono i soldi.",
-   "categoria": "altro",
+   "categoria": "politica",
    "zona": "provincia",
    "luogo": "Sant'Angelo a Cupolo",
    "immagine": "borgo",
@@ -5162,7 +5214,7 @@
    "titolo": "Benevento, bonus luce e gas da 200 a 500 euro: la Giunta fissa i requisiti",
    "titolo_google": "Bonus luce e gas Benevento 2026: requisiti e importi",
    "sintesi": "La Giunta comunale di Benevento ha approvato i criteri del bonus energia 2026, un contributo una tantum per pagare luce e gas: serve un Isee fino a 10.800 euro e l'importo va da 200 a 500 euro secondo il numero di persone in famiglia. Le domande si potranno presentare dopo l'avviso pubblico sull'albo pretorio, atteso nei prossimi giorni.",
-   "categoria": "avvisi",
+   "categoria": "politica",
    "zona": "benevento",
    "immagine": "gas",
    "luogo": "Benevento",
@@ -7394,7 +7446,7 @@
    "titolo": "Apice, il Comune chiede i fondi della Regione per illuminare il Castello dell'Ettore",
    "titolo_google": "Apice, fondi della Regione per le luci del Castello dell'Ettore",
    "sintesi": "La Giunta di Apice ha deciso di partecipare al bando della Regione Campania per l'illuminazione esterna dei monumenti, con un progetto per il Castello dell'Ettore. La Regione ha messo 400mila euro per quest'anno.",
-   "categoria": "altro",
+   "categoria": "politica",
    "zona": "provincia",
    "immagine": "luce",
    "luogo": "Apice",
@@ -10818,7 +10870,7 @@
    "titolo": "Benevento, il sindaco Mastella ai cittadini per la crisi dei camion: niente acquisti per paura, meno spostamenti in auto",
    "titolo_google": "Benevento, Mastella: niente acquisti per paura, meno auto",
    "sintesi": "Il sindaco di Benevento Clemente Mastella invita i cittadini a non fare acquisti compulsivi e a ridurre gli spostamenti in auto ai casi di necessità, mentre la protesta degli autotrasportatori e la carenza di carburante creano disagi.",
-   "categoria": "altro",
+   "categoria": "politica",
    "zona": "benevento",
    "immagine": "supermercato",
    "luogo": "Benevento",

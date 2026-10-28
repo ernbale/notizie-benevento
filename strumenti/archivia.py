@@ -251,7 +251,7 @@ GIALLA = re.compile(r"\bgiall[ae]\b", re.I)
 PIU_ALTA = re.compile(r"\b(arancion[ei]|ross[ae])\b", re.I)
 # una notizia che è una chiusura decisa da un Comune (le pubblica il giro Chiusure, strumenti/chiusure.py)
 CHIUSURA = re.compile(r"scuol\w*\s+chius|chius[aeiou]\w*\s+(?:(?:le|i|gli|dei|delle|degli|il|la)\s+)?(?:scuol|plessi|"
-                      r"istitut\w*\s+scolastic|parch|vill[ae]\s+comunal|cimiter)|sospensione\s+(?:delle\s+)?attivit[àa]\s+"
+                      r"istitut\w*\s+scolastic|parc(?:o|hi)\b|vill[ae]\s+comunal|cimiter)|sospensione\s+(?:delle\s+)?attivit[àa]\s+"
                       r"didattic|niente\s+scuola\b|stop\s+alle\s+lezioni|lezioni\s+sospese", re.I)
 CHIUSURE = re.compile(r"chius|scuol|parch|cimiter|sospes|ordinanz|sgombr|evacu|allag|frana|crollo|danni", re.I)
 

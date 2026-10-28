@@ -53,7 +53,8 @@ farlo giusto subito.
    (vandali al parco, un incidente, un guasto, una chiusura, una nomina in Comune). «Episodio minore» non è un motivo.
 9. **Politica locale solo se cambia qualcosa per la gente:** delibere, soldi stanziati, scuole, servizi, tasse,
    strade, decisioni di Consigli e Giunte. Niente comunicati di partito, scontri tra maggioranza e opposizione,
-   mozioni bocciate o dichiarazioni senza effetti pratici.
+   mozioni bocciate o dichiarazioni senza effetti pratici **come notizie a sé**: il dibattito politico della città va
+   nel suo approfondimento (vedi «Il dibattito politico in città», dal 28 ott 2026).
 
 ## Il giro, in ordine
 
@@ -732,6 +733,28 @@ Nel resoconto scrivi quanti ne hai aggiunti, e se l'elenco dice ATTENZIONE (copi
 - Un approfondimento senza novità da 7 giorni passa da solo in archivio (vedi «Archivio»); se una storia è chiusa
   prima, puoi segnarlo `"archiviato": true`.
 
+### Il dibattito politico in città (dal 28 ott 2026)
+
+Lui vuole che il dibattito politico di Benevento si veda, ma in un posto solo e senza una notizia per ogni
+dichiarazione (28 ott 2026, «fai A e B»). Quando in città c'è uno scontro politico che va avanti più giorni (oggi:
+la mozione di sfiducia dell'opposizione al sindaco Mastella, presentata il 26 ottobre con un corteo), tieni **un solo
+approfondimento** su quella storia (per esempio `benevento-mozione-sfiducia-mastella`) e aggiornalo a ogni giro con
+le dichiarazioni nuove. **Se non c'è ancora, crealo in questo giro.**
+- Dentro: «In breve» (a che punto è), le sezioni «Cosa è successo», «Cosa dice la maggioranza», «Cosa dice
+  l'opposizione», «Cosa succede adesso» (Consiglio comunale, voto, date), la cronologia (chi ha detto cosa, quando,
+  con la fonte), «Cosa non si sa ancora». `collegate`: le notizie `politica` della storia. Scrivi anche
+  `"categoria": "politica"` nell'approfondimento: è così che il sito lo mette in cima alla sezione Politica.
+- **Neutrale:** le posizioni di tutte le parti, con lo stesso spazio, con parole loro e con la fonte («secondo il
+  sindaco…», «per il Pd…»). Nessun aggettivo e nessun giudizio nostro; gli editoriali dei giornali solo come «secondo
+  l'editoriale di NTR24». Mai accuse personali non provate.
+- Le singole dichiarazioni, i comunicati di partito e le repliche **non diventano notizie a sé** (regola 9): vanno
+  solo qui. Un fatto nuovo (il Consiglio vota la sfiducia, il sindaco si dimette, cambia la Giunta) è anche una
+  notizia `politica`, collegata all'approfondimento.
+- Regola 2 come sempre: ogni dichiarazione viene da una fonte ufficiale o da una testata autorevole.
+- Non conta nel «massimo uno nuovo al giorno». Senza novità da 7 giorni va in archivio da solo.
+- Solo la politica di Benevento città; per la Provincia o un paese, solo per una storia grossa che dura più giorni.
+- Sul sito la sezione Politica lo mostra in cima, come «La storia in corso».
+
 ## Formato del file
 
 ```json
@@ -765,6 +788,7 @@ Nel resoconto scrivi quanti ne hai aggiunti, e se l'elenco dice ATTENZIONE (copi
   } ],
   "approfondimenti": [ {
     "id": "", "titolo": "", "titolo_google": "45-60 caratteri", "sommario": "3-4 frasi", "luogo": "", "aggiornato": "ISO",
+    "categoria": "solo \"politica\" per il dibattito politico in città (vedi sotto), altrimenti niente",
     "collegate": ["id delle notizie"],
     "in_breve": [ {"testo": "", "fonti": []} ],
     "sezioni": [ {"titolo": "", "paragrafi": [ {"testo": "", "fonti": []} ], "punti": [ {"testo": "", "fonti": []} ]} ],
@@ -791,6 +815,12 @@ Nel resoconto scrivi quanti ne hai aggiunti, e se l'elenco dice ATTENZIONE (copi
   `in_vigore_dal` e `in_vigore_fino` devono essere i giorni veri del comunicato (la raccolta di venerdì 30: dal 30 al
   30; la sagra dal 29 ottobre al 1° novembre: dal 29, non dal giorno in cui è uscita). archivia.py avvisa se il
   primo giorno scritto nel titolo non torna con `in_vigore_dal`.
+- **`politica`** (dal 28 ott 2026, lui: «la sezione politica è veramente così scarna?», poi «fai A»): anche le
+  decisioni e gli atti di sindaco, Giunta, Consiglio comunale, Provincia e Regione per il Sannio (delibere,
+  finanziamenti chiesti o avuti, nomine e uffici del Comune, appelli e lettere del sindaco ai cittadini, ricorsi del
+  Comune), anche quando hanno effetti pratici. `avvisi` resta per l'avviso pratico già deciso (orari, uffici chiusi,
+  una scadenza): «la Giunta fissa i requisiti del bonus» è `politica`, «domande per il bonus entro il 30 novembre» è
+  `avvisi`.
 - **La zona la mette il programma** (dal 28 ott 2026, lui: «migliora il filtro benevento città perché compaiono anche
   altri comuni»): archivia.py la ricava dal Comune scritto nel `luogo` (tabella `ZONA_COMUNE` dei 78 Comuni).
   `benevento` è solo la città; i paesi intorno (San Giorgio, Sant'Angelo a Cupolo, Apice, Pietrelcina…) sono

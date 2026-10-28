@@ -34,6 +34,9 @@ Archivio (lui: «Allerte e Avvisi spostale dopo calcio»); sul computer su una r
 ha preso il posto di «Strade»: in ordine di quando servono, dal 22 ottobre al 2 novembre con i cimiteri paese per
 paese. La zona la ricava archivia.py dal luogo (`ZONA_COMUNE`): «Benevento città» è solo Benevento. Le colonne
 a zig-zag di «Le altre notizie» le ha scelte lui (niente spazi vuoti): non riproporle riga per riga.
+Politica (28 ott, lui: «fai A e B»): ci vanno anche le decisioni di sindaco, Giunta, Consiglio, Provincia e Regione;
+il dibattito politico della città sta in un solo approfondimento con `"categoria": "politica"`, che la sezione
+Politica mostra in cima come «La storia in corso» (AGENTE.md, «Il dibattito politico in città»).
 
 ## Correggere una notizia a mano
 1. `git pull --rebase` (le routine pubblicano spesso: rifallo anche subito prima del push).
