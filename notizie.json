@@ -1,7 +1,296 @@
 {
- "aggiornato": "2026-10-28T12:12+01:00",
+ "aggiornato": "2026-10-28T13:19+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "molinara-via-vallone-delle-mandre-chiusa-31-ottobre-albero",
+   "titolo": "Molinara, via Vallone delle Mandre chiusa sabato 31 ottobre dalle 8 alle 13 per abbattere un albero pericolante",
+   "titolo_google": "Molinara, via Vallone delle Mandre chiusa il 31 ottobre",
+   "sintesi": "Sabato 31 ottobre, dalle 8 alle 13, a Molinara è chiuso a tutti i veicoli un tratto di via Vallone delle Mandre, vicino all'incrocio con la provinciale per San Marco dei Cavoti. Serve per abbattere un albero inclinato verso la strada.",
+   "categoria": "strade",
+   "zona": "fortore",
+   "immagine": "albero-caduto",
+   "luogo": "Molinara, via Vallone delle Mandre",
+   "pubblicato": "2026-10-28",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "in_vigore_dal": "2026-10-31",
+   "in_vigore_fino": "2026-10-31",
+   "traffico": "chiusa",
+   "fonti": [
+    {
+     "nome": "Comune di Molinara",
+     "url": "https://molinara.halleyweb.it/c062041/mc/mc_p_dettaglio.php?id_pubbl=3771",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Sabato 31 ottobre, dalle 8 alle 13, a Molinara è vietato il passaggio a tutti i veicoli nel tratto della strada comunale Vallone delle Mandre che va dall'incrocio con la strada provinciale per San Marco dei Cavoti fino al primo incrocio. Lo ha deciso il sindaco con un'ordinanza del 28 ottobre.",
+      "fonti": [
+       "Comune di Molinara"
+      ]
+     },
+     {
+      "testo": "Il motivo è un albero su un terreno privato al confine con la strada, vicino all'incrocio con la provinciale: è molto inclinato verso la strada e, se cadesse all'improvviso, sarebbe un pericolo per chi passa. L'ufficio tecnico del Comune lo ha controllato e ha deciso che va abbattuto in modo controllato. Il lavoro lo fa il proprietario del terreno, che deve anche mettere i cartelli della chiusura.",
+      "fonti": [
+       "Comune di Molinara"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di Molinara",
+      "titolo": "Abbattimento albero pericolante lungo la Via Vallone delle Mandre e disciplina temporanea della circolazione stradale.",
+      "url": "https://molinara.halleyweb.it/c062041/mc/mc_p_dettaglio.php?id_pubbl=3771",
+      "data": "28 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "foto": "albero-caduto-7"
+  },
+  {
+   "id": "sant-angelo-a-cupolo-pastene-moglie-uccisa-perizia-psichiatrica",
+   "titolo": "Sant'Angelo a Cupolo, donna uccisa a Pastene il giorno di Ferragosto: la gip dispone la perizia psichiatrica sul marito di 76 anni",
+   "titolo_google": "Omicidio a Pastene, perizia psichiatrica sul marito 76enne",
+   "sintesi": "Mercoledì 28 ottobre la gip di Benevento ha affidato la perizia psichiatrica sul 76enne accusato di aver ucciso la moglie il 15 agosto a Pastene, frazione di Sant'Angelo a Cupolo. Gli esami cominciano il 27 novembre, le conclusioni in aula il 10 febbraio 2027.",
+   "categoria": "cronaca",
+   "zona": "provincia",
+   "luogo": "Sant'Angelo a Cupolo, Pastene",
+   "pubblicato": "2026-10-28T12:09+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 4,
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/442407/faustino-e-la-moglie-accoltellata-a-morte-alla-gola-via-a-perizia-psichiatrica.shtml"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Mercoledì 28 ottobre, a Benevento, la gip Maria Amoruso ha affidato a uno psichiatra la perizia sul 76enne accusato di aver ucciso la moglie, sua coetanea, il giorno di Ferragosto nella loro casa di Pastene, frazione di Sant'Angelo a Cupolo. L'incarico è arrivato nell'incidente probatorio chiesto dalla pm Maria Colucci, cioè la fase in cui si raccolgono prove prima del processo.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "La perizia dovrà dire se l'uomo era capace di intendere e di volere, se può stare in giudizio, se è socialmente pericoloso e se le sue condizioni sono compatibili con il carcere. Le operazioni cominciano il 27 novembre; la difesa ha nominato un suo consulente. Il perito esporrà le conclusioni in aula il 10 febbraio 2027.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Secondo la ricostruzione degli inquirenti, la donna, ex impiegata delle Poste, è stata colpita con un coltello in cucina. L'uomo ha poi tentato di togliersi la vita e ha chiamato lui i carabinieri, che lo hanno arrestato. Il gip ha poi qualificato l'accusa come omicidio aggravato. Davanti al giudice l'uomo ha detto di non aver mai avuto rancore verso la moglie; nell'ultimo periodo, secondo quanto ricostruito, mostrava segni di un disagio psichico e si era rivolto a un medico e a uno specialista.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "15 agosto",
+      "fatto": "La donna viene uccisa nella casa di Pastene; il marito è arrestato dai carabinieri.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "data": "28 ottobre",
+      "fatto": "La gip affida la perizia psichiatrica.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "data": "27 novembre",
+      "fatto": "Cominciano le operazioni della perizia.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "data": "10 febbraio 2027",
+      "quando": "2027-02-10",
+      "fatto": "Il perito espone le conclusioni in aula.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     }
+    ],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Se dopo la perizia ci sarà un processo e con quale rito."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Faustino e la moglie accoltellata a morte alla gola: via a perizia psichiatrica",
+      "url": "https://www.ottopagine.it/bn/cronaca/442407/faustino-e-la-moglie-accoltellata-a-morte-alla-gola-via-a-perizia-psichiatrica.shtml",
+      "data": "28 ott, 12:09"
+     }
+    ]
+   }
+  },
+  {
+   "id": "cerreto-sannita-comitato-acqua-pubblica-escursione-dibattito-31-ottobre",
+   "titolo": "Cerreto Sannita, nasce il Comitato per l'acqua pubblica: sabato 31 ottobre escursione alle sorgenti e dibattito",
+   "titolo_google": "Acqua pubblica a Cerreto Sannita: escursione e dibattito 31 ottobre",
+   "sintesi": "A Cerreto Sannita nasce un Comitato per l'acqua pubblica. Sabato 31 ottobre propone una camminata lungo il torrente Lente fino alle antiche sorgenti e, alle 17, un dibattito sulle ultime decisioni dell'Ente Idrico Campano; si può aderire al comitato.",
+   "categoria": "altro",
+   "zona": "telesina",
+   "immagine": "acqua",
+   "luogo": "Cerreto Sannita",
+   "pubblicato": "2026-10-28T12:08+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 3,
+   "fonti": [
+    {
+     "nome": "Lab TV",
+     "url": "https://www.labtv.net/attualita/2026/10/28/acqua-pubblica-cerreto-sannita-si-mobilita-sabato-escursione-alle-sorgenti-e-dibattito-pubblico-al-via-la-raccolta-adesioni-per-il-nascente-comitato/"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/28/cerreto-sannita-nasce-il-comitato-per-lacqua-pubblica-sabato-escursione-e-dibattito/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Cerreto Sannita sta nascendo un Comitato per l'acqua pubblica, che vuole far conoscere le sorgenti del paese e discutere del futuro della gestione dell'acqua dopo le ultime decisioni dell'Ente Idrico Campano (EIC), l'ente regionale che organizza il servizio idrico. Sabato 31 ottobre il comitato propone due appuntamenti aperti a tutti e apre le adesioni.",
+      "fonti": [
+       "Lab TV",
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "La mattina c'è la camminata «Lungo il Torrente Lente a Fontana Macioccia», un percorso facile di circa 3,5 chilometri adatto anche alle famiglie, alla scoperta delle antiche sorgenti. Il ritrovo è alle 8:30 in piazza Roma, la partenza alle 9 con le auto proprie; si comincia a camminare alle 9:30 a Monte Coppe, al ponte sul torrente Lente. Servono abiti comodi e scarpe da trekking.",
+      "fonti": [
+       "Lab TV",
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Alle 17 c'è il dibattito «L'acqua di Cerreto Sannita: prospettive alla luce delle ultime decisioni dell'EIC e delle iniziative dei Comuni». Il luogo non è ancora confermato: si attende il permesso per usare la Sala Conferenze e il comitato lo comunicherà più avanti. Durante gli appuntamenti si può aderire al comitato; per informazioni ci sono i numeri 388 8937544 e 327 267 5776.",
+      "fonti": [
+       "Lab TV",
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Il programma di sabato 31 ottobre: ritrovo alle 8:30 in piazza Roma per la camminata di 3,5 km e dibattito sull'acqua con la sede ancora da confermare.",
+      "fonti": [
+       "Lab TV",
+       "NTR24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Dove si terrà il dibattito delle 17."
+    ],
+    "fonti": [
+     {
+      "nome": "Lab TV",
+      "titolo": "Acqua pubblica, Cerreto Sannita si mobilita: sabato escursione alle sorgenti e dibattito pubblico. Al via la raccolta adesioni per il nascente Comitato",
+      "url": "https://www.labtv.net/attualita/2026/10/28/acqua-pubblica-cerreto-sannita-si-mobilita-sabato-escursione-alle-sorgenti-e-dibattito-pubblico-al-via-la-raccolta-adesioni-per-il-nascente-comitato/",
+      "data": "28 ott, 11:59"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Cerreto Sannita, nasce il Comitato per l’Acqua Pubblica: sabato escursione e dibattito",
+      "url": "https://www.ntr24.tv/2026/10/28/cerreto-sannita-nasce-il-comitato-per-lacqua-pubblica-sabato-escursione-e-dibattito/",
+      "data": "28 ott, 12:08"
+     }
+    ]
+   },
+   "foto": "acqua-12"
+  },
+  {
+   "id": "benevento-teatro-romano-festival-made-in-italy-moda-scuole",
+   "titolo": "Benevento, al Teatro Romano la prima edizione del Festival del Made in Italy: sfilano gli abiti degli studenti di moda della Campania",
+   "titolo_google": "Festival del Made in Italy al Teatro Romano di Benevento",
+   "sintesi": "Il Teatro Romano di Benevento ha ospitato la prima edizione del «Festival del Made in Italy – Notte della Moda»: hanno sfilato gli abiti creati dagli studenti degli istituti di moda della Campania. Capofila l'istituto Lombardi di Airola.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento, Teatro Romano",
+   "pubblicato": "2026-10-28T11:41+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/28/trionfo-di-stile-arte-e-cooperazione-al-teatro-romano-per-il-festival-del-made-in-italy/"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/universita/2026/la-rete-delle-scuole-campane-celebra-la-prima-edizione-del-festival-del-made-in-italy-al-teatro-romano.html"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Al Teatro Romano di Benevento si è svolta la prima edizione del «Festival del Made in Italy – Notte della Moda»: in passerella sono sfilati gli abiti creati dalle studentesse e dagli studenti degli istituti professionali e artistici di moda della Campania. A promuoverlo è stato l'istituto superiore «Alessandro Lombardi» di Airola, capofila di una rete di scuole.",
+      "fonti": [
+       "NTR24",
+       "InfoSannio"
+      ]
+     },
+     {
+      "testo": "Gli abiti richiamavano i luoghi della regione: il mare e la Costiera, le vigne dell'Irpinia, la Reggia di Caserta e i monumenti di Airola, Napoli e il Vesuvio. La serata l'ha presentata una docente con l'abito della janara cucito dalle studentesse dell'istituto Lombardi, e la musica dal vivo l'ha suonata l'ensemble del liceo musicale della stessa scuola.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Con l'istituto di Airola hanno partecipato le scuole di Afragola, Arzano, Benevento (l'istituto Palmieri Rampone Polo), Cerreto Sannita (il Carafa Giustiniani), Pomigliano d'Arco e Saviano. Tra gli ospiti c'erano la prefetta di Benevento Raffaela Moscarella, la dirigente dell'Ufficio scolastico provinciale e il consigliere comunale di Benevento delegato all'Istruzione.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "La prima edizione del Festival del Made in Italy al Teatro Romano, con le scuole di moda della Campania.",
+      "fonti": [
+       "NTR24",
+       "InfoSannio"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Trionfo di stile, arte e cooperazione al Teatro Romano per il “Festival del Made in Italy”",
+      "url": "https://www.ntr24.tv/2026/10/28/trionfo-di-stile-arte-e-cooperazione-al-teatro-romano-per-il-festival-del-made-in-italy/",
+      "data": "28 ott, 11:41"
+     },
+     {
+      "nome": "InfoSannio",
+      "titolo": "La rete delle scuole campane celebra la prima edizione del ‘Festival del Made in Italy’ al Teatro Romano",
+      "url": "https://www.infosannionews.it/universita/2026/la-rete-delle-scuole-campane-celebra-la-prima-edizione-del-festival-del-made-in-italy-al-teatro-romano.html",
+      "data": "28 ott, 09:03"
+     }
+    ]
+   }
+  },
   {
    "id": "benevento-inchiesta-comune-copia-telefoni-indagati-4-novembre",
    "titolo": "Inchiesta sul Comune di Benevento, la gip dice no all'incidente probatorio sui telefoni: il 4 novembre la Procura affida la copia dei dati",
@@ -21,6 +310,10 @@
     {
      "nome": "Anteprima24",
      "url": "https://www.anteprima24.it/benevento/inchiesta-comune-di-benevento-dalle-dichiarazioni-di-santamaria-ai-telefoni-sequestrati-le-prossime-tappe/"
+    },
+    {
+     "nome": "Lab TV",
+     "url": "https://www.labtv.net/cronaca/2026/10/28/caso-santamaria-copia-forense-dei-dispositivi-di-16-indagati-incarico-a-lorenzo-laurato-il-4-novembre/"
     }
    ],
    "articolo": {
@@ -29,7 +322,15 @@
       "testo": "Nell'inchiesta sul Comune di Benevento la gip Maria Amoruso ha detto no alla richiesta di incidente probatorio presentata da un avvocato della difesa: chiedeva che la copia completa dei dati di cellulari, iPad, computer e tablet di sedici indagati la facesse un perito scelto dal giudice. Così sarà la pm Maria Colucci, mercoledì 4 novembre in Procura, a dare l'incarico a un consulente tecnico suo.",
       "fonti": [
        "Ottopagine",
-       "Anteprima24"
+       "Anteprima24",
+       "Lab TV"
+      ],
+      "giorno": "2026-10-28"
+     },
+     {
+      "testo": "Il conferimento dell'incarico è fissato per mercoledì 4 novembre alle 13 in Procura a Benevento. La copia riguarderà cellulari, tablet, iPad e computer usati dai sedici indagati, con procedure tecniche che ne garantiscono l'integrità. La decisione della gip è stata comunicata il 27 ottobre.",
+      "fonti": [
+       "Lab TV"
       ],
       "giorno": "2026-10-28"
      },
@@ -51,7 +352,8 @@
       "testo": "Resta fissato a partire dal 3 novembre, davanti alla stessa gip, l'incidente probatorio sulle dichiarazioni dell'ex dirigente, quelle su di sé e quelle sugli altri, con le domande delle difese.",
       "fonti": [
        "Ottopagine",
-       "Anteprima24"
+       "Anteprima24",
+       "Lab TV"
       ],
       "giorno": "2026-10-28"
      }
@@ -82,6 +384,12 @@
       "titolo": "Inchiesta Comune di Benevento, dalle dichiarazioni di [nome omesso] ai telefoni sequestrati: le prossime tappe",
       "url": "https://www.anteprima24.it/benevento/inchiesta-comune-di-benevento-dalle-dichiarazioni-di-santamaria-ai-telefoni-sequestrati-le-prossime-tappe/",
       "data": "28 ott, 11:16"
+     },
+     {
+      "nome": "Lab TV",
+      "titolo": "Caso Santamaria: copia forense dei dispositivi di 16 indagati: incarico a Lorenzo Laurato il 4 novembre",
+      "url": "https://www.labtv.net/cronaca/2026/10/28/caso-santamaria-copia-forense-dei-dispositivi-di-16-indagati-incarico-a-lorenzo-laurato-il-4-novembre/",
+      "data": "28 ott, 12:31"
      }
     ]
    },
@@ -771,6 +1079,10 @@
     {
      "nome": "Cronache del Sannio",
      "url": "https://www.cronachedelsannio.it/sannionews24/sangiorgio-sannio-frontale-auto-feriti-trasportati-sanpio/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/s-s-7-scontro-tra-auto-nel-territorio-di-calvi-feriti-foto/"
     }
    ],
    "articolo": {
@@ -797,12 +1109,13 @@
       "giorno": "2026-10-28"
      },
      {
-      "testo": "La strada è rimasta bloccata per il tempo dei soccorsi e dei rilievi, con forti rallentamenti. I carabinieri di San Giorgio del Sannio devono ricostruire come sia andato lo scontro; la Polizia municipale di Calvi ha gestito il traffico.",
+      "testo": "La strada è rimasta bloccata per il tempo dei soccorsi e dei rilievi, con forti rallentamenti. I carabinieri di San Giorgio del Sannio devono ricostruire come sia andato lo scontro; la Polizia municipale di Calvi ha gestito il traffico. Le auto danneggiate le ha portate via un carro attrezzi.",
       "fonti": [
        "BeneventoNews24",
        "Ottopagine",
        "Anteprima24",
-       "NTR24"
+       "NTR24",
+       "TV7 Benevento"
       ],
       "giorno": "2026-10-28"
      }
@@ -865,6 +1178,12 @@
       "titolo": "San Giorgio del Sannio, frontale tra auto: due feriti trasportati al San Pio",
       "url": "https://www.cronachedelsannio.it/sannionews24/sangiorgio-sannio-frontale-auto-feriti-trasportati-sanpio/",
       "data": "28 ott, 10:32"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "S.S. 7. SCONTRO TRA AUTO NEL TERRITORIO DI CALVI, FERITI (FOTO)",
+      "url": "https://www.tvsette.net/s-s-7-scontro-tra-auto-nel-territorio-di-calvi-feriti-foto/",
+      "data": "28 ott, 12:29"
      }
     ],
     "aggiornamento": {
@@ -5533,7 +5852,7 @@
    "id": "cremonese-benevento-biglietti-settore-ospiti-31-ottobre",
    "titolo": "Cremonese-Benevento di sabato 31 ottobre: biglietti per i tifosi giallorossi a 20 euro, in vendita fino a venerdì",
    "titolo_google": "Biglietti Cremonese-Benevento 31 ottobre: prezzi settore ospiti",
-   "sintesi": "Da lunedì 26 ottobre alle 16 sono in vendita i biglietti della Curva Nord, il settore ospiti dello stadio Zini di Cremona, per Cremonese-Benevento di sabato 31 ottobre alle 15. Costano 20 euro, 10 per i ragazzi dai 4 ai 18 anni; la vendita chiude venerdì 30 ottobre alle 19.",
+   "sintesi": "Per Cremonese-Benevento di sabato 31 ottobre alle 15 i tifosi giallorossi hanno la Curva Nord dello stadio Zini: 20 euro, 10 per i ragazzi dai 4 ai 18 anni, in vendita fino a venerdì 30 ottobre alle 19. Mercoledì 28 i biglietti venduti erano già 250.",
    "categoria": "sport",
    "sport": "calcio",
    "zona": "benevento",
@@ -5553,10 +5872,21 @@
     {
      "nome": "SannioSport",
      "url": "https://sanniosport.it/2026/10/26/cremonese-benevento-via-alla-prevendita-ecco-prezzi-e-informazioni-per-i-tifosi-giallorossi/"
+    },
+    {
+     "nome": "NTR24 Sport",
+     "url": "https://sport.ntr24.tv/2026/10/28/strega-il-pari-con-il-catanzaro-non-frena-gli-entusiasmi-gia-venduti-250-biglietti-per-la-trasferta-di-cremona/"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Mercoledì 28 ottobre i tifosi del Benevento avevano già comprato 250 biglietti per la Curva Nord dello Zini, a due giorni dall'apertura della vendita. I biglietti si possono comprare fino a venerdì 30 ottobre alle 19, online su Vivaticket o nei punti vendita autorizzati; allo stadio servono il biglietto, anche sul telefono, e un documento d'identità valido.",
+      "fonti": [
+       "NTR24 Sport"
+      ],
+      "giorno": "2026-10-28"
+     },
      {
       "testo": "Sono in vendita da lunedì 26 ottobre alle 16 i biglietti per i tifosi del Benevento che vogliono andare a Cremona. Sabato 31 ottobre alle 15 i giallorossi giocano contro la Cremonese allo stadio Giovanni Zini, per il campionato di Serie B.",
       "fonti": [
@@ -5617,8 +5947,21 @@
       "titolo": "CREMONESE-BENEVENTO, VIA ALLA PREVENDITA: ECCO PREZZI E INFORMAZIONI PER I TIFOSI GIALLOROSSI",
       "url": "https://sanniosport.it/2026/10/26/cremonese-benevento-via-alla-prevendita-ecco-prezzi-e-informazioni-per-i-tifosi-giallorossi/",
       "data": "26 ott, 16:43"
+     },
+     {
+      "nome": "NTR24 Sport",
+      "titolo": "Strega, il pari con il Catanzaro non frena gli entusiasmi: già venduti 250 biglietti per la trasferta di Cremona",
+      "url": "https://sport.ntr24.tv/2026/10/28/strega-il-pari-con-il-catanzaro-non-frena-gli-entusiasmi-gia-venduti-250-biglietti-per-la-trasferta-di-cremona/",
+      "data": "28 ott, 12:57"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Mercoledì 28 ottobre i tifosi del Benevento avevano già comprato 250 biglietti per il settore ospiti di Cremona.",
+     "fonti": [
+      "NTR24 Sport"
+     ],
+     "quando": "2026-10-28T13:19+01:00"
+    }
    },
    "foto": "stadio-4"
   },
@@ -7356,12 +7699,12 @@
   },
   {
    "id": "buonalbergo-carta-dedicata-a-te-lista-beneficiari-2026",
-   "titolo": "Carta Dedicata a te, pubblicati gli elenchi dei beneficiari in sette Comuni del Sannio: prima ricarica dal 4 novembre",
+   "titolo": "Carta Dedicata a te, pubblicati gli elenchi dei beneficiari in otto Comuni del Sannio: prima ricarica dal 4 novembre",
    "titolo_google": "Carta Dedicata a te 2026: beneficiari in sette Comuni del Sannio",
-   "sintesi": "Buonalbergo, Montesarchio, Sant'Angelo a Cupolo, Pago Veiano, Castelpagano, Arpaise e Morcone hanno pubblicato gli elenchi delle famiglie che ricevono la «Carta Dedicata a te», 500 euro all'anno per la spesa. La prima ricarica arriva dal 4 novembre e il primo acquisto va fatto entro il 16 dicembre.",
+   "sintesi": "Buonalbergo, Montesarchio, Sant'Angelo a Cupolo, Pago Veiano, Castelpagano, Arpaise, Morcone e San Nicola Manfredi hanno pubblicato gli elenchi delle famiglie che ricevono la «Carta Dedicata a te», 500 euro all'anno per la spesa. La prima ricarica arriva dal 4 novembre e il primo acquisto va fatto entro il 16 dicembre.",
    "categoria": "avvisi",
    "zona": "provincia",
-   "luogo": "Buonalbergo, Montesarchio, Sant'Angelo a Cupolo, Pago Veiano, Castelpagano, Arpaise e Morcone",
+   "luogo": "Buonalbergo, Montesarchio, Sant'Angelo a Cupolo, Pago Veiano, Castelpagano, Arpaise, Morcone e San Nicola Manfredi",
    "pubblicato": "2026-10-26",
    "stato": "ufficiale",
    "rilevante": false,
@@ -7400,10 +7743,22 @@
      "nome": "Comune di Morcone",
      "url": "https://comune.morcone.bn.it/novita/carta-dedicata-a-te-2026-2027-pubblicato-lelenco-dei-beneficiari/",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di San Nicola Manfredi",
+     "url": "https://www.comune.sannicolamanfredi.bn.it/c062067/po/mostra_news.php?id=121&area=H",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Mercoledì 28 ottobre la lista dei beneficiari l'ha pubblicata all'albo pretorio anche il Comune di San Nicola Manfredi. Il Comune ricorda che in municipio non si ritira niente: i nuovi beneficiari ricevono una lettera con il codice della carta e la ritirano negli uffici postali abilitati; chi era già confermato riceve i soldi sulla carta che ha. Il primo acquisto va fatto entro il 16 dicembre 2026, altrimenti si perde il contributo.",
+      "fonti": [
+       "Comune di San Nicola Manfredi"
+      ],
+      "giorno": "2026-10-28"
+     },
      {
       "testo": "Mercoledì 28 ottobre l'elenco dei beneficiari l'ha pubblicato anche il Comune di Morcone, all'albo pretorio e in Amministrazione trasparente: le famiglie si riconoscono dal protocollo dell'attestazione ISEE. Chi riceve la carta per la prima volta la ritira in un qualsiasi ufficio postale con il codice della pratica scritto nell'elenco, il codice fiscale e un documento; chi era già confermato riceve i soldi sulla carta che ha.",
       "fonti": [
@@ -7521,6 +7876,14 @@
       ]
      },
      {
+      "data": "28 ottobre",
+      "fatto": "Anche Morcone e San Nicola Manfredi pubblicano l'elenco dei beneficiari.",
+      "fonti": [
+       "Comune di Morcone",
+       "Comune di San Nicola Manfredi"
+      ]
+     },
+     {
       "data": "4 novembre",
       "fatto": "Prima ricarica di 500 euro sulle carte.",
       "fonti": [
@@ -7600,14 +7963,21 @@
       "url": "https://comune.morcone.bn.it/novita/carta-dedicata-a-te-2026-2027-pubblicato-lelenco-dei-beneficiari/",
       "data": "28 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "Comune di San Nicola Manfredi",
+      "titolo": "Carta «Dedicata a Te» – Anno 2026",
+      "url": "https://www.comune.sannicolamanfredi.bn.it/c062067/po/mostra_news.php?id=121&area=H",
+      "data": "28 ott",
+      "ufficiale": true
      }
     ],
     "aggiornamento": {
-     "testo": "Mercoledì 28 ottobre anche Morcone ha pubblicato l'elenco dei beneficiari della Carta Dedicata a te.",
+     "testo": "Mercoledì 28 ottobre anche San Nicola Manfredi ha pubblicato la lista dei beneficiari della Carta Dedicata a te.",
      "fonti": [
-      "Comune di Morcone"
+      "Comune di San Nicola Manfredi"
      ],
-     "quando": "2026-10-28T12:12+01:00",
+     "quando": "2026-10-28T13:19+01:00",
      "titolo_prima": "Carta Dedicata a te, pubblicati gli elenchi dei beneficiari in sei Comuni del Sannio: prima ricarica dal 4 novembre"
     }
    },
@@ -7744,12 +8114,12 @@
   },
   {
    "id": "castelpoto-santa-croce-del-sannio-elenco-elettori-fuori-sede",
-   "titolo": "Elettori fuori sede, diciannove Comuni del Sannio hanno aperto l'elenco: domande entro il 31 dicembre",
-   "titolo_google": "Elettori fuori sede in 19 Comuni del Sannio: come fare",
-   "sintesi": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni, Limatola, Torrecuso, San Lorenzello, Montesarchio, San Marco dei Cavoti, Ponte e Paupisi hanno aperto l'elenco degli elettori fuori sede previsto dalla nuova legge elettorale: chi per studio, lavoro o cure vive in una regione diversa da quella in cui vota può chiedere di votare dove abita. Per studio e lavoro la domanda va fatta entro il 31 dicembre, per le votazioni dell'anno dopo.",
+   "titolo": "Elettori fuori sede, venti Comuni del Sannio hanno aperto l'elenco: domande entro il 31 dicembre",
+   "titolo_google": "Elettori fuori sede in 20 Comuni del Sannio: come fare",
+   "sintesi": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni, Limatola, Torrecuso, San Lorenzello, Montesarchio, San Marco dei Cavoti, Ponte, Paupisi e Pannarano hanno aperto l'elenco degli elettori fuori sede previsto dalla nuova legge elettorale: chi per studio, lavoro o cure vive in una regione diversa da quella in cui vota può chiedere di votare dove abita. Per studio e lavoro la domanda va fatta entro il 31 dicembre, per le votazioni dell'anno dopo.",
    "categoria": "avvisi",
    "zona": "provincia",
-   "luogo": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni, Limatola, Torrecuso, San Lorenzello, Montesarchio, San Marco dei Cavoti, Ponte e Paupisi",
+   "luogo": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni, Limatola, Torrecuso, San Lorenzello, Montesarchio, San Marco dei Cavoti, Ponte, Paupisi e Pannarano",
    "immagine": "elezioni",
    "pubblicato": "2026-10-27",
    "stato": "ufficiale",
@@ -7849,10 +8219,22 @@
      "nome": "Comune di Paupisi",
      "url": "https://paupisi.halleyweb.it/c062049/mc/mc_p_dettaglio.php?id_pubbl=7674",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di Pannarano",
+     "url": "https://www.halleyweb.com/c062047/mc/mc_p_dettaglio.php?id_pubbl=10608",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Mercoledì 28 ottobre l'avviso sull'elenco comunale degli elettori fuori sede l'ha pubblicato all'albo pretorio anche il Comune di Pannarano, in Valle Caudina.",
+      "fonti": [
+       "Comune di Pannarano"
+      ],
+      "giorno": "2026-10-28"
+     },
      {
       "testo": "Mercoledì 28 ottobre l'avviso è arrivato anche a San Marco dei Cavoti, Ponte e Paupisi, con il modello di domanda: i Comuni del Sannio che hanno aperto l'elenco sono diciannove. A Ponte e a Paupisi la domanda si consegna all'ufficio elettorale del Comune oppure si manda per PEC o per email: anagrafe@pec.comune.ponte.bn.it o anagrafe@comune.ponte.bn.it a Ponte, anagrafe@pec.comune.paupisi.bn.it o anagrafe@comune.paupisi.bn.it a Paupisi. Va scritto l'indirizzo completo del domicilio temporaneo.",
       "fonti": [
@@ -8128,16 +8510,21 @@
       "url": "https://www.comune.paupisi.bn.it/novita/avvisi/novita_87.html",
       "data": "28 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "Comune di Pannarano",
+      "titolo": "ISTITUZIONE DELL'ELENCO COMUNALE DEGLI ELETTORI FUORI SEDE",
+      "url": "https://www.halleyweb.com/c062047/mc/mc_p_dettaglio.php?id_pubbl=10608",
+      "data": "28 ott",
+      "ufficiale": true
      }
     ],
     "aggiornamento": {
-     "testo": "Mercoledì 28 ottobre hanno aperto l'elenco degli elettori fuori sede anche San Marco dei Cavoti, Ponte e Paupisi: i Comuni del Sannio sono diciannove.",
+     "testo": "Mercoledì 28 ottobre anche Pannarano ha aperto l'elenco comunale degli elettori fuori sede.",
      "fonti": [
-      "Comune di San Marco dei Cavoti",
-      "Comune di Ponte",
-      "Comune di Paupisi"
+      "Comune di Pannarano"
      ],
-     "quando": "2026-10-28T12:12+01:00",
+     "quando": "2026-10-28T13:19+01:00",
      "titolo_prima": "Elettori fuori sede, sedici Comuni del Sannio hanno aperto l'elenco: domande entro il 31 dicembre"
     }
    },
@@ -11115,6 +11502,10 @@
     {
      "nome": "Il Sannio Quotidiano",
      "url": "https://www.ilsannioquotidiano.it/2026/10/28/air-campania-sindacati-proclamano-sciopero-di-otto-ore/"
+    },
+    {
+     "nome": "Lab TV",
+     "url": "https://www.labtv.net/attualita/2026/10/28/air-campania-sciopero-di-otto-ore-e-presidio-in-regione-anzalone-filt-cgil-la-vertenza-resta-aperta/"
     }
    ],
    "articolo": {
@@ -11140,7 +11531,8 @@
       "testo": "Nell'incontro del 20 ottobre, secondo i sindacati, l'azienda si è impegnata a pagare di nuovo la quota mensile del premio di risultato dalla busta paga di novembre, con gli arretrati. Per i sindacati non basta: chiedono il saldo del premio 2025, garanzie su quello del 2026, l'assunzione di nuovi autisti, perché ne mancano in molti depositi e si ricorre sempre più agli straordinari, e più sicurezza contro le aggressioni al personale. Tra le critiche dei sindacati ci sono anche i costi per tenere aperto il deposito di Limatola, i servizi igienici che mancano dove gli autisti si fermano e la pulizia dei mezzi.",
       "fonti": [
        "NTR24",
-       "Cronache del Sannio"
+       "Cronache del Sannio",
+       "Lab TV"
       ],
       "giorno": "2026-10-27"
      },
@@ -11259,6 +11651,12 @@
       "titolo": "Air Campania, sindacati proclamano sciopero di otto ore",
       "url": "https://www.ilsannioquotidiano.it/2026/10/28/air-campania-sindacati-proclamano-sciopero-di-otto-ore/",
       "data": "28 ott, 09:11"
+     },
+     {
+      "nome": "Lab TV",
+      "titolo": "Air Campania, sciopero di otto ore e presidio in Regione: Anzalone (Filt Cgil) «La vertenza resta aperta»",
+      "url": "https://www.labtv.net/attualita/2026/10/28/air-campania-sciopero-di-otto-ore-e-presidio-in-regione-anzalone-filt-cgil-la-vertenza-resta-aperta/",
+      "data": "28 ott, 11:53"
      }
     ],
     "aggiornamento": {
@@ -11388,20 +11786,20 @@
   },
   {
    "id": "telese-gepos-sindacati-conti-assunzioni-sit-in-26-ottobre",
-   "titolo": "Telese Terme, presidio alla clinica Gepos contro tre licenziamenti: il PD chiede al Comune un tavolo con azienda e sindacati",
-   "titolo_google": "Telese Terme, clinica Gepos: presidio contro i licenziamenti",
-   "sintesi": "Lunedì 26 ottobre c'è stato un presidio davanti alla clinica Gepos di Telese Terme contro il licenziamento di due tecnici di laboratorio e di una cuoca. FP CGIL e UIL FPL chiedono all'ASL l'esito dei controlli sulla clinica, atteso da oltre quattro mesi; il PD cittadino chiede al Comune un tavolo con azienda e sindacati.",
+   "titolo": "Telese Terme, l'ASL comincia i controlli alla clinica Gepos dopo i licenziamenti: i sindacati chiedono verifiche sul laboratorio",
+   "titolo_google": "Clinica Gepos a Telese Terme, l'ASL avvia i controlli",
+   "sintesi": "Mercoledì 28 ottobre l'ASL di Benevento ha cominciato i controlli alla clinica Gepos di Telese Terme, dove sono stati licenziati due tecnici di laboratorio e una cuoca. FP CGIL e UIL FPL chiedono verifiche sul laboratorio analisi, rimasto con un solo tecnico, e chiarezza sugli infermieri.",
    "categoria": "altro",
    "zona": "telesina",
    "immagine": "protesta",
    "luogo": "Telese Terme",
-   "pubblicato": "2026-10-26T14:15:00+01:00",
+   "pubblicato": "2026-10-28T12:39+01:00",
    "stato": "confermata",
    "rilevante": false,
    "fonti": [
     {
      "nome": "Cronache del Sannio",
-     "url": "https://www.cronachedelsannio.it/sannionews24/gepos-cgil-uil-chiarezza-licenziamenti-nuove-assunzioni/"
+     "url": "https://www.cronachedelsannio.it/sannionews24/gepos-telese-terme-cgil-uil-bene-controlli/"
     },
     {
      "nome": "Anteprima24 (26/10)",
@@ -11413,15 +11811,44 @@
     },
     {
      "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/26/licenziamenti-ge-po-s-i-sindacati-chiedono-chiarezza-sui-conti-e-sui-controlli-dellasl/"
+     "url": "https://www.ntr24.tv/2026/10/28/ge-po-s-i-sindacati-bene-i-controlli-dellasl-ora-verifiche-e-chiarezza-sui-licenziamenti/"
     },
     {
      "nome": "Lab TV",
-     "url": "https://www.labtv.net/politica/2026/10/26/pd-su-vertenza-gepos-difendere-il-lavoro-significa-difendere-la-dignita-delle-persone-e-il-futuro-del-sannio/"
+     "url": "https://www.labtv.net/attualita/2026/10/28/gepos-di-telese-terme-cgil-fp-e-uil-fpl-bene-i-controlli-dellasl-ora-verifiche-a-360-gradi-e-chiarezza-sui-licenziamenti/"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/lasl-competente-le-attivita-di-controllo-sulle-strutture-sanitarie-private-accreditate-del"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Mercoledì 28 ottobre, in mattinata, l'ASL di Benevento ha cominciato i controlli alla clinica Gepos di Telese Terme. Lo fanno sapere FP CGIL e UIL FPL, che li chiedevano da mesi: l'ASL è l'ente che controlla le cliniche private convenzionate del territorio.",
+      "fonti": [
+       "NTR24 (28/10)",
+       "Gazzetta di Benevento",
+       "Lab TV (28/10)",
+       "Cronache del Sannio (28/10)"
+      ],
+      "giorno": "2026-10-28"
+     },
+     {
+      "testo": "I sindacati chiedono ora controlli completi. Il primo punto è il laboratorio analisi: secondo i loro dati faceva oltre 200.000 esami l'anno con tre tecnici e due biologi, e dopo il licenziamento di due tecnici, il 20 ottobre, ne è rimasto uno solo. Il secondo sono gli infermieri: durante il licenziamento collettivo l'azienda avrebbe dichiarato otto infermieri di troppo, mentre ai sindacati risulterebbero nuove assunzioni di infermieri.",
+      "fonti": [
+       "NTR24 (28/10)",
+       "Gazzetta di Benevento"
+      ],
+      "giorno": "2026-10-28"
+     },
+     {
+      "testo": "FP CGIL e UIL FPL chiedono alla direzione dell'ASL di convocarli subito e di far conoscere ai lavoratori l'esito dei controlli.",
+      "fonti": [
+       "NTR24 (28/10)"
+      ],
+      "giorno": "2026-10-28"
+     },
      {
       "testo": "Lunedì 26 ottobre davanti alla clinica Gepos di Telese Terme c'è stato il presidio contro i licenziamenti di due tecnici di laboratorio e di una cuoca. Il Partito Democratico di Telese Terme, che ha partecipato alla protesta, parla di una presenza «massiccia».",
       "fonti": [
@@ -11518,6 +11945,13 @@
        "Anteprima24 (26/10)",
        "Fremondoweb (26/10)"
       ]
+     },
+     {
+      "data": "28 ottobre, mattina",
+      "fatto": "L'ASL di Benevento comincia i controlli alla clinica Gepos.",
+      "fonti": [
+       "NTR24 (28/10)"
+      ]
      }
     ],
     "concordano": [
@@ -11534,7 +11968,7 @@
     "non_si_sa": [
      "Cosa risponde l'azienda sui licenziamenti e sui conti.",
      "Se il Comune di Telese Terme convocherà azienda e sindacati.",
-     "Se l'ASL di Benevento darà la risposta chiesta dai sindacati."
+     "Quando si sapranno i risultati dei controlli dell'ASL."
     ],
     "fonti": [
      {
@@ -11590,16 +12024,40 @@
       "titolo": "PD su vertenza Gepos: difendere il lavoro significa difendere la dignità delle persone e il futuro del Sannio",
       "url": "https://www.labtv.net/politica/2026/10/26/pd-su-vertenza-gepos-difendere-il-lavoro-significa-difendere-la-dignita-delle-persone-e-il-futuro-del-sannio/",
       "data": "26 ott, 14:10"
+     },
+     {
+      "nome": "NTR24 (28/10)",
+      "titolo": "GE.PO.S, i sindacati: “Bene i controlli dell’ASL, ora verifiche e chiarezza sui licenziamenti”",
+      "url": "https://www.ntr24.tv/2026/10/28/ge-po-s-i-sindacati-bene-i-controlli-dellasl-ora-verifiche-e-chiarezza-sui-licenziamenti/",
+      "data": "28 ott, 12:21"
+     },
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "L'Asl, competente per le attività di controllo sulle strutture sanitarie private accreditate del territorio, si è attivata per effettuare le verifiche necessarie alla clinica Gepos di Telese Terme",
+      "url": "https://www.gazzettabenevento.it/it/lasl-competente-le-attivita-di-controllo-sulle-strutture-sanitarie-private-accreditate-del",
+      "data": "28 ott, 12:07"
+     },
+     {
+      "nome": "Lab TV (28/10)",
+      "titolo": "Gepos di Telese Terme, CGIL FP e UIL FPL: «Bene i controlli dell’ASL, ora verifiche a 360 gradi e chiarezza sui licenziamenti»",
+      "url": "https://www.labtv.net/attualita/2026/10/28/gepos-di-telese-terme-cgil-fp-e-uil-fpl-bene-i-controlli-dellasl-ora-verifiche-a-360-gradi-e-chiarezza-sui-licenziamenti/",
+      "data": "28 ott, 12:17"
+     },
+     {
+      "nome": "Cronache del Sannio (28/10)",
+      "titolo": "Gepos di Telese Terme, Cgil e Uil: “Bene i controlli dell’Asl, ora verifiche a 360 gradi”",
+      "url": "https://www.cronachedelsannio.it/sannionews24/gepos-telese-terme-cgil-uil-bene-controlli/",
+      "data": "28 ott, 12:39"
      }
     ],
     "aggiornamento": {
-     "testo": "Al presidio di lunedì 26 ottobre il responsabile provinciale del Movimento 5 Stelle ha annunciato una lettera al direttore generale dell'ASL; FP CGIL e UIL FPL aspettano da oltre quattro mesi l'esito dei controlli sulla clinica promesso in Prefettura.",
+     "testo": "Mercoledì 28 ottobre l'ASL di Benevento ha cominciato i controlli alla clinica Gepos; i sindacati chiedono verifiche sul laboratorio analisi e sulle assunzioni di infermieri.",
      "fonti": [
-      "NTR24",
-      "Anteprima24 (sindacati 26/10)"
+      "NTR24 (28/10)",
+      "Gazzetta di Benevento"
      ],
-     "quando": "2026-10-26T15:32+01:00",
-     "titolo_prima": "Telese Terme, clinica Gepos: un nuovo licenziamento, i sindacati chiedono chiarezza sui conti e confermano il sit-in del 26 ottobre"
+     "quando": "2026-10-28T13:19+01:00",
+     "titolo_prima": "Telese Terme, presidio alla clinica Gepos contro tre licenziamenti: il PD chiede al Comune un tavolo con azienda e sindacati"
     }
    },
    "foto": "protesta-5",
