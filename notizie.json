@@ -3,6 +3,76 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "basket-giovanile-united-benevento-under-19-vince-derby-smile",
+   "titolo": "Basket giovanile a Benevento, la United Under 19 vince il derby con la Smile 76-44",
+   "titolo_google": "Basket giovanile Benevento: United batte la Smile 76-44",
+   "sintesi": "Nel derby cittadino Under 19 Gold la United Benevento ha battuto la Smile Benevento 76-44, terza vittoria della stagione. Esordio con due sconfitte per l'Under 19 femminile della Miwa; l'Under 17 femminile ha perso 63-52 a Venafro.",
+   "categoria": "sport",
+   "sport": "basket",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "importanza": 2,
+   "stato": "ufficiale",
+   "rilevante": false,
+   "comunicati": [
+    "e62a48f2e97c"
+   ],
+   "foto_inviate": [
+    "img/locandine/basket-giovanile-united-benevento-under-19-vince-derby-smile-foto.jpg"
+   ],
+   "foto_da": "Miwa Basket Benevento",
+   "fonti": [
+    {
+     "nome": "Miwa Basket Benevento",
+     "url": "https://www.cestisticabenevento.it/2026/10/28/report-campionati-giovanili-2-2/",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "La United Benevento Under 19 Gold ha vinto il derby cittadino contro la Smile Benevento con il punteggio di 76-44. Per i Boars, allenati da coach Murolo, è la terza vittoria della stagione. La partita ha chiuso una settimana di gare per il settore giovanile della Miwa Basket Benevento, che ha visto anche l'esordio dell'Under 19 femminile.",
+      "fonti": [
+       "Miwa Basket Benevento"
+      ]
+     },
+     {
+      "testo": "La United veniva dalla sconfitta di Cercola, finita 89-69. Contro la Smile la partita è stata decisa nel terzo periodo, vinto 25-6. Secondo la società, nel derby ha fatto la differenza il contributo di tutti i giocatori.",
+      "fonti": [
+       "Miwa Basket Benevento"
+      ]
+     },
+     {
+      "testo": "L'Under 19 femminile della Miwa, allenata da coach De Martino, ha giocato le prime due partite. A Casalnuovo era avanti di sei punti all'intervallo, ma ha perso nell'ultimo quarto: 45-38 il risultato finale. Poi, al PalaMiwa, è stata battuta 41-94 da Salerno, che la società descrive come una squadra forte.",
+      "fonti": [
+       "Miwa Basket Benevento"
+      ]
+     },
+     {
+      "testo": "Sconfitta di misura, come a Casalnuovo, per la United Under 17 femminile dei coach Tipaldi e Pasquariello, superata 63-52 in casa della Pink Venafro. Il parziale di 22-8 subito nel terzo quarto ha dato alle padrone di casa un vantaggio che le beneventane, nonostante la reazione nell'ultimo periodo, non sono riuscite a recuperare.",
+      "fonti": [
+       "Miwa Basket Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Miwa Basket Benevento",
+      "titolo": "Report giovanili",
+      "url": "https://www.cestisticabenevento.it/2026/10/28/report-campionati-giovanili-2-2/",
+      "data": "28 ott, 10:00",
+      "ufficiale": true
+     }
+    ]
+   },
+   "subito": true,
+   "pubblicato": "2026-10-28T10:03:55+01:00"
+  },
+  {
    "id": "san-giorgio-del-sannio-statale-7-scontro-due-auto-feriti-28-ottobre",
    "titolo": "San Giorgio del Sannio, scontro frontale tra due auto sulla statale 7 Appia: due feriti",
    "titolo_google": "Incidente sulla statale 7 a San Giorgio del Sannio: due feriti",
