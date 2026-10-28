@@ -1,7 +1,68 @@
 {
- "aggiornato": "2026-10-28T06:10+01:00",
+ "aggiornato": "2026-10-28T07:15+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-nicola-sguera-premio-agrorinasce-corpo-a-rendere",
+   "titolo": "Benevento, lo scrittore Nicola Sguera vince il premio nazionale Agrorinasce con il romanzo «Corpo a rendere»",
+   "titolo_google": "Premio Agrorinasce 2026, vince il beneventano Nicola Sguera",
+   "sintesi": "Lo scrittore beneventano Nicola Sguera ha vinto la sezione Narrativa inedita del Premio letterario nazionale Agrorinasce con «Corpo a rendere», romanzo ispirato alla storia di Esther Johnson, la donna nigeriana uccisa a Benevento nel 2016. La premiazione è stata martedì 27 ottobre a Casapesenna.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "immagine": "libri",
+   "pubblicato": "2026-10-28T06:51+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/28/nicola-sguera-vince-il-premio-letterario-nazionale-agrorinasce-con-il-romanzo-inedito-corpo-a-rendere/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Lo scrittore beneventano Nicola Sguera ha vinto la sezione Narrativa inedita della seconda edizione del Premio letterario nazionale «Agrorinasce – Letteratura per il Sociale e la Legalità», con il romanzo «Corpo a rendere». La premiazione si è svolta martedì 27 ottobre a Casapesenna, in provincia di Caserta, nel centro giovanile «Rosario Livatino», un edificio tolto alla camorra.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "In finale nella stessa sezione c'erano anche Ilenia Pasquetti, Giuseppe Mascolo e Maria Usiello; il testimonial della giornata era Luca Abete. Il premio lo promuove Agrorinasce, l'agenzia che gestisce molti beni confiscati alla criminalità organizzata, insieme al Dipartimento di Lettere e Beni culturali dell'Università Vanvitelli e alla casa editrice Terra Somnia. Per ognuna delle sezioni principali sono previsti 1.000 euro: Sguera ha detto che una parte servirà a ricordare Esther.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Il romanzo si ispira, molto liberamente, alla storia di Esther Johnson, una donna nigeriana di 36 anni che ogni mattina partiva da Castel Volturno per Benevento, vittima di sfruttamento sessuale. Nel giugno 2016 fu uccisa a colpi di pistola vicino alla ferrovia di Benevento, e il delitto non ha ancora un colpevole. Da quella morte sono nati «La casa di Esther», che accoglie donne vittime di tratta, e il «Patto delle Parole», che Libera Benevento rinnova ogni 14 giugno con scuole e associazioni.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Pochi giorni prima, sabato 24 ottobre, Sguera era arrivato terzo al premio «Aura Latina» del Sistema bibliotecario prenestino, al Castello Colonna di Genazzano, con il racconto lungo «Le sorti sottratte», un giallo ambientato nell'antica Preneste. Durante Benevento LibrAria ha presentato anche il suo secondo romanzo, «Il potere del canto», con gli studenti del liceo Guacci e dell'istituto Rummo.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Nicola Sguera vince il Premio Letterario Nazionale “Agrorinasce” con il romanzo inedito “Corpo a rendere”",
+      "url": "https://www.ntr24.tv/2026/10/28/nicola-sguera-vince-il-premio-letterario-nazionale-agrorinasce-con-il-romanzo-inedito-corpo-a-rendere/",
+      "data": "28 ott, 06:51"
+     }
+    ]
+   },
+   "foto": "libri-3"
+  },
   {
    "id": "san-nazzaro-capolinea-bus-air-ufficio-postale-30-ottobre-8-novembre",
    "titolo": "San Nazzaro, dal 30 ottobre all'8 novembre il capolinea dei bus AIR si sposta alla fermata dell'ufficio postale",
@@ -1591,15 +1652,20 @@
      "nome": "Comune di Campoli del Monte Taburno (albo)",
      "url": "https://comune.campolidelmontetaburno.bn.it/albo-pretorio/?dettaglio_id=306264",
      "ufficiale": true
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/28/campoli-del-monte-taburno-novita-per-i-contatori-dellacqua-obbligo-di-spostamento-entro-marzo-2027-allesterno-delle-case/"
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "A Campoli del Monte Taburno i contatori dell'acqua che oggi stanno dentro case, locali o aree private chiuse vanno portati all'esterno. Lo ha deciso il sindaco con l'ordinanza numero 16 del 27 ottobre 2026. Riguarda i proprietari, i titolari delle utenze dell'acqua e gli amministratori di condominio.",
+      "testo": "A Campoli del Monte Taburno i contatori dell'acqua che oggi stanno dentro case, locali o aree private chiuse vanno portati all'esterno. Lo ha deciso il sindaco Tommaso Nicola Grasso con l'ordinanza numero 16 del 27 ottobre 2026. Riguarda i proprietari, i titolari delle utenze dell'acqua e gli amministratori di condominio.",
       "fonti": [
        "Comune di Campoli del Monte Taburno",
-       "Comune di Campoli del Monte Taburno (albo)"
+       "Comune di Campoli del Monte Taburno (albo)",
+       "NTR24"
       ],
       "giorno": "2026-10-27"
      },
@@ -1643,6 +1709,12 @@
       "url": "https://comune.campolidelmontetaburno.bn.it/albo-pretorio/?dettaglio_id=306264",
       "data": "27 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Campoli del Monte Taburno, novità per i contatori dell’acqua: obbligo di spostamento all’esterno delle case entro marzo 2027",
+      "url": "https://www.ntr24.tv/2026/10/28/campoli-del-monte-taburno-novita-per-i-contatori-dellacqua-obbligo-di-spostamento-entro-marzo-2027-allesterno-delle-case/",
+      "data": "28 ott, 06:00"
      }
     ]
    },
