@@ -976,11 +976,14 @@ def html_avvisi(notizie, oggi, h1):
 
 
 # ---------- i contributi (strumenti/contributi.py → contributi.json): la pagina e una per contributo ----------
-# Come paginaContributi() in index.html, che ridisegna /contributi/ con i filtri che funzionano; qui per Google e per
+# Come paginaContributi() in index.html, che ridisegna /agevolazioni/ con i filtri che funzionano; qui per Google e per
 # chi non ha JavaScript. Ogni contributo del catalogo e dei locali ha la sua pagina con il testo ufficiale.
 from contributi import CHI as CHI_CONTR, DA as DA_CONTR, TEMI as TEMI_CONTR, AIUTO as AIUTO_CONTR   # noqa: E402
 DOVE_CONTR = {"sannio": "Solo Sannio", "campania": "Campania", "sud": "Sud Italia", "italia": "Italia", "europa": "Europa"}
-TITOLO_CONTR = "Contributi e bandi a Benevento e nel Sannio"
+TITOLO_CONTR = "Agevolazioni a Benevento e nel Sannio"
+# la pagina si chiamava «Contributi» (/contributi/) fino al 28 ott 2026 sera: lui «ho deciso di cambiare nome… la pagina
+# deve uscire come /agevolazioni/». I vecchi indirizzi portano ai nuovi (vedi sotto, «i vecchi indirizzi /contributi/»).
+CART_AGEV = "agevolazioni"
 
 
 def _giorno_contr(g):
@@ -1006,7 +1009,7 @@ def _scadenza_contr(v, oggi):
 
 
 def _link_contr(v):
-    return v.get("pagina") or f"/contributi/{v['id']}/"
+    return v.get("pagina") or f"/{CART_AGEV}/{v['id']}/"
 
 
 def _scheda_contr(v, oggi):
@@ -1060,7 +1063,7 @@ def html_contributi(voci, oggi, aggiornato):
             f'<a href="{e(_link_contr(v))}"><div class="ora">{"oggi" if v.get("aggiunto") == o else e(data_it(v.get("aggiunto"))[:-5])}</div>'
             f'<div class="tit">{e(v["titolo"])}</div></a>' for v in nuovi) + "</section>"
     click = [v for v in voci if str(v.get("click_day") or "")[:10] >= o and v.get("click_day")]
-    h += (f'<p class="contr-riepilogo">{len(voci)} contributi aperti' + (f" · {len(click)} click day in arrivo" if click else "") + "</p>")
+    h += (f'<p class="contr-riepilogo">{"1 agevolazione aperta" if len(voci) == 1 else f"{len(voci)} agevolazioni aperte"}' + (f" · {len(click)} click day in arrivo" if click else "") + "</p>")
     righe = ""
     for etichetta, chiave, valori in (("Chi sei?", "chi", CHI_CONTR), ("Da chi?", "da", DA_CONTR), ("Per cosa?", "temi", TEMI_CONTR),
                                       ("Che aiuto?", "aiuto", AIUTO_CONTR)):
@@ -1070,8 +1073,8 @@ def html_contributi(voci, oggi, aggiornato):
         righe += (f'<div class="contr-riga"><span class="contr-etichetta">{etichetta}</span><div class="contr-bottoni">'
                   f'<button type="button" aria-pressed="true">Tutti</button>{b}</div></div>')
     h += (f'<section class="contr-filtri"><div>{righe}</div><div class="contr-cerca"><input type="search" '
-          'placeholder="Cerca: fotovoltaico, bar, affitto, assunzioni…" aria-label="Cerca tra i contributi"></div></section>')
-    h += f'<section class="contr-elenco"><h3 class="titolo-col">{len(voci)} contributi, in ordine di scadenza</h3><div class="contr-lista">'
+          'placeholder="Cerca: fotovoltaico, bar, affitto, assunzioni…" aria-label="Cerca tra le agevolazioni"></div></section>')
+    h += f'<section class="contr-elenco"><h3 class="titolo-col">{len(voci)} agevolazioni, in ordine di scadenza</h3><div class="contr-lista">'
     h += "".join(_scheda_contr(v, oggi) for v in voci) + "</div></section>"
     h += ('<p class="contr-nota">Fonti: Catalogo degli incentivi del Ministero delle Imprese e del Made in Italy (incentivi.gov.it, '
           "dati aperti IODL 2.0) e, controllati ogni giorno sui siti ufficiali, INPS, Agenzia delle Entrate, Invitalia, Regione "
@@ -1083,12 +1086,12 @@ def html_contributi(voci, oggi, aggiornato):
 
 def html_contributo(v, oggi):
     """La pagina di un contributo: i fatti in breve e il testo ufficiale della scheda (regola 3 delle pagine)."""
-    h = (f'<a class="indietro" href="/contributi/">← Tutti i contributi</a><div class="occhiello">Contributi · '
+    h = (f'<a class="indietro" href="/{CART_AGEV}/">← Tutte le agevolazioni</a><div class="occhiello">Agevolazioni · '
          f'{e(DOVE_CONTR.get(v.get("dove"), ""))}</div><h1>{e(v["titolo"])}</h1>')
     h += f'<div class="meta">{e(v["ente"])}</div>'
     t, urg = _scadenza_contr(v, oggi)
     if v.get("scaduto"):
-        h += f'<div class="nota">Questo contributo è scaduto ({e(_giorno_contr(v["scadenza"]))}). Guarda quelli <a href="/contributi/">ancora aperti</a>.</div>'
+        h += f'<div class="nota">È scaduto ({e(_giorno_contr(v["scadenza"]))}). Guarda le agevolazioni <a href="/{CART_AGEV}/">ancora aperte</a>.</div>'
     righe = [("Chi può chiederlo", ", ".join(CHI_CONTR[k] for k in v.get("chi") or [] if k in CHI_CONTR)),
              ("Chi lo dà", ", ".join(DA_CONTR[k] for k in v.get("da") or [] if k in DA_CONTR)),
              ("Che cosa è", v.get("forma") or ""), ("Quanto", v.get("quanto") or ""), ("Scadenza", t),
@@ -1107,7 +1110,7 @@ def html_contributo(v, oggi):
     else:
         h += (f'<p class="agg-chiusure">Controllato il {e(data_it(v.get("controllato"), True))} sul sito ufficiale. Prima di fare '
               "domanda leggi sempre il bando ufficiale.</p>")
-    h += '<p class="collegate"><a href="/contributi/">Tutti i contributi per Benevento e il Sannio ›</a></p>'
+    h += f'<p class="collegate"><a href="/{CART_AGEV}/">Tutte le agevolazioni per Benevento e il Sannio ›</a></p>'
     return f'<article class="appro">{h}</article>'
 
 
@@ -2342,11 +2345,11 @@ def main():
     # la pagina «non trovata» (404.html, GitHub Pages la mostra per ogni indirizzo che non c'è): con la testata e il
     # menu come tutte (regola 1 delle pagine, CLAUDE.md); la notizia non ancora scritta si apre dentro il sito, come
     # nel 404.html del repository, che resta per quando le pagine non si generano
-    rimando = ('<meta name="robots" content="noindex">\n<script>(function () { var m = location.pathname.match('
+    rimando_404 = ('<meta name="robots" content="noindex">\n<script>(function () { var m = location.pathname.match('
                '/^\\/(notizia|approfondimento)\\/([a-z0-9-]+)\\/?$/); if (m) location.replace("/#" + (m[1] === "notizia" ? '
                '"articolo" : "approfondimento") + "/" + m[2]); })();</script>')
     seo = blocco_seo(f"Pagina non trovata – {NOME}", "Questo indirizzo non esiste: le notizie di Notizie Benevento non "
-                     "vengono mai cancellate, cercale nell'archivio.", SITO + "/404.html", "/condivisione.png", extra=rimando)
+                     "vengono mai cancellate, cercale nell'archivio.", SITO + "/404.html", "/condivisione.png", extra=rimando_404)
     h = _testata_pagina(NOME, "", "Pagina non trovata")
     h += ('<p class="sommario">Questo indirizzo non esiste. Le notizie non vengono mai cancellate: cercale '
           'nell\'<a href="/#archivio">archivio</a> o torna alla <a href="/">prima pagina</a>.</p>')
@@ -2388,29 +2391,41 @@ def main():
     tutti_contr = contr.get("contributi") or []
     aperti = sorted([v for v in tutti_contr if not v.get("scaduto")] + contributi_dei_comuni(notizie, oggi),
                     key=lambda v: v.get("scadenza") or "9999")
-    url = SITO + "/contributi/"
-    seo = blocco_seo(f"Contributi e bandi Benevento e Sannio: fondi, voucher, bonus e click day – {NOME}",
-                     "I contributi e i bandi aperti per imprese, famiglie, associazioni e Comuni di Benevento e del Sannio: "
+    url = f"{SITO}/{CART_AGEV}/"
+    seo = blocco_seo(f"Agevolazioni Benevento e Sannio: contributi, bonus, bandi e click day – {NOME}",
+                     "Le agevolazioni aperte per imprese, famiglie, associazioni e Comuni di Benevento e del Sannio: contributi, bonus e bandi di "
                      "Camera di Commercio, Regione Campania, Ministeri e Comuni, con scadenze e link ufficiali. Aggiornati ogni giorno.",
                      url, "/condivisione.png", jsonld={"@context": "https://schema.org", "@type": "CollectionPage",
                                                       "name": TITOLO_CONTR, "url": url,
                                                       "isPartOf": {"@type": "WebSite", "name": NOME, "url": SITO + "/"}})
-    scrivi(os.path.join(sito, "contributi", "index.html"),
+    scrivi(os.path.join(sito, CART_AGEV, "index.html"),
            pagina(modello, seo, {"cat": "contributi", "h1": TITOLO_CONTR}, html_contributi(aperti, oggi, contr.get("aggiornato"))))
     mappa.append((url, contr.get("aggiornato")))
     for v in tutti_contr:
-        url = f"{SITO}/contributi/{v['id']}/"
-        seo = blocco_seo(f"{v['titolo'][:70]} – Contributi Benevento e Sannio – {NOME}",
+        url = f"{SITO}/{CART_AGEV}/{v['id']}/"
+        seo = blocco_seo(f"{v['titolo'][:70]} – Agevolazioni Benevento e Sannio – {NOME}",
                          (v.get("cose") or v["titolo"])[:155], url, "/condivisione.png",
                          jsonld={"@context": "https://schema.org", "@type": "WebPage", "name": v["titolo"], "url": url,
                                  "isPartOf": {"@type": "WebSite", "name": NOME, "url": SITO + "/"},
                                  "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [
                                      {"@type": "ListItem", "position": 1, "name": NOME, "item": SITO + "/"},
-                                     {"@type": "ListItem", "position": 2, "name": "Contributi", "item": SITO + "/contributi/"},
+                                     {"@type": "ListItem", "position": 2, "name": "Agevolazioni", "item": f"{SITO}/{CART_AGEV}/"},
                                      {"@type": "ListItem", "position": 3, "name": v["titolo"]}]}})
-        scrivi(os.path.join(sito, "contributi", v["id"], "index.html"),
+        scrivi(os.path.join(sito, CART_AGEV, v["id"], "index.html"),
                pagina(modello, seo, {"statica": True}, html_contributo(v, oggi), articolo=True))
         mappa.append((url, contr.get("aggiornato")))
+    # i vecchi indirizzi /contributi/ (la pagina si chiamava così fino al 28 ott 2026): portano ai nuovi, anche con i
+    # filtri (/contributi/?chi=commercio → /agevolazioni/?chi=commercio). Fuori dalla sitemap, «noindex».
+    dest = f"{SITO}/{CART_AGEV}/"
+    scrivi(os.path.join(sito, "contributi", "index.html"),
+           f'<!doctype html><meta charset="utf-8"><title>{e(TITOLO_CONTR)} – {NOME}</title>'
+           f'<link rel="canonical" href="{e(dest)}"><meta name="robots" content="noindex">'
+           f'<meta http-equiv="refresh" content="0; url={e(dest)}">'
+           f'<script>location.replace({json.dumps(dest)} + location.search + location.hash)</script>'
+           f'<p>La pagina ora si chiama <a href="{e(dest)}">Agevolazioni</a>.</p>\n')
+    for v in tutti_contr:
+        rimando(os.path.join(sito, "contributi", v["id"], "index.html"), f"{SITO}/{CART_AGEV}/{v['id']}/", v["titolo"],
+                "Questa pagina ora è in Agevolazioni:")
 
     # i prezzi dei carburanti (strumenti/carburanti.py, nello stesso giro): la pagina c'è sempre
     try:

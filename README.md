@@ -15,7 +15,7 @@ Sito: https://notiziebenevento.it (notiziebenevento.com rimanda qui)
 - `strumenti/meteo.py`: previsioni da 8 modelli → `meteo.json` (lo esegue GitHub ogni ora).
 - `CONTRIBUTI.md`, `contributi_locali.json`, `contributi_esclusi.json`: l'agente dei contributi (routine di ogni mattina)
   e quello che scrive: i contributi che il catalogo non ha e le schede del catalogo chiuse o sbagliate.
-- `strumenti/contributi.py`: i contributi e i bandi per il Sannio → `contributi.json` (pagina `/contributi/`): il catalogo del
+- `strumenti/contributi.py`: i contributi e i bandi per il Sannio → `contributi.json` (pagina `/agevolazioni/`, «Contributi» fino al 28 ott 2026): il catalogo del
   Ministero lo scarica il Pi di casa e lo manda alla pubblicazione, che lo unisce a `contributi_locali.json` (lo scrive l'agente).
 - `strumenti/foto_ia.py`: le foto fatte con GPT Image dalla `scena`: oggi solo per le curiosità senza foto libera su Commons
   (`img/curiosita/`); le 31 fatte il 28 ott 2026 per notizie e storie (`img/ia/`) restano. Segreto `OPENAI_API_KEY`.

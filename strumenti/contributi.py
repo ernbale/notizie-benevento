@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""I contributi e i bandi per Benevento e il Sannio → contributi.json (pagina /contributi/).
+"""I contributi e i bandi per Benevento e il Sannio → contributi.json (pagina /agevolazioni/, «Contributi» fino al 28 ott 2026).
 
 Voluti dal proprietario il 28 ott 2026: «tutto quello che riesci a trovare che vada bene per BN e provincia… statali,
 europei, per tutti, click day… pagina fatta estremamente bene, estremamente facile da consultare». Il nome è

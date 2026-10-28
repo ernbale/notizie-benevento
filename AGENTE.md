@@ -746,7 +746,7 @@ Nel resoconto scrivi quanti ne hai aggiunti, e se l'elenco dice ATTENZIONE (copi
 
 ## I contributi (`contributo` nelle notizie)
 
-Dal 28 ott 2026 il sito ha la pagina **Contributi** (notiziebenevento.it/contributi/). La tiene **l'agente dei
+Dal 28 ott 2026 il sito ha la pagina **Agevolazioni** (notiziebenevento.it/agevolazioni/; fino al 28 ott sera si chiamava «Contributi»). La tiene **l'agente dei
 contributi**, che gira una volta al giorno (CONTRIBUTI.md; lui: «devi creare un agente che una volta al giorno scova i
 contributi, sovvenzioni»): tu **non tocchi** `contributi_locali.json` né `contributi_esclusi.json`.
 
@@ -755,7 +755,7 @@ vive qui — soldi, bonus, buoni (libri, spesa), assegni, contributi per l'affit
 rimborsi, esenzioni o riduzioni per chi ha l'ISEE basso, contributi alle imprese o alle associazioni — mettici
 `"contributo": {"chi": [...], "temi": [...], "aiuto": [...]}` e la scadenza delle domande in `in_vigore_fino`; se la
 data non c'è ancora, `"quando": "Domande dopo l'avviso del Comune, atteso nei prossimi giorni"` (una frase breve). Così
-esce anche nella pagina Contributi.
+esce anche nella pagina Agevolazioni.
 - `chi`: cittadino (famiglie e cittadini), giovani (giovani e studenti), commercio, artigiano, agricoltura, turismo
   (turismo, bar, ristoranti), impresa (imprese in genere), nuova (chi apre un'attività), professionista, associazione,
   ente (Comuni, scuole, enti pubblici).

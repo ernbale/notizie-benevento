@@ -3,7 +3,7 @@
 Voluto dal proprietario il 28 ott 2026: «devi creare un agente che una volta al giorno scova i contributi,
 sovvenzioni», «non solo famiglie ma imprese, commercianti, artigiani ecc.», «fondi europei, statali, Confindustria,
 Confartigianato, Camera di Commercio, Regione, Comuni e altro che neanche so», «serietà, profonda attenzione». La
-pagina è notiziebenevento.it/contributi/: tutto quello che una famiglia, un giovane, un'impresa, un'associazione o un
+pagina è notiziebenevento.it/agevolazioni/ (fino al 28 ott 2026 sera «Contributi», /contributi/): tutto quello che una famiglia, un giovane, un'impresa, un'associazione o un
 Comune della **provincia di Benevento** può chiedere adesso.
 
 Da dove arriva la pagina (strumenti/contributi.py):

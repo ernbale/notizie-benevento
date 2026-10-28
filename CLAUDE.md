@@ -29,7 +29,7 @@ claude.ai/code dal telefono): qui c'è quello che serve per riprendere il lavoro
   Facebook, Instagram. Ci mette circa 2 minuti.
 
 ## Il menu del sito (deciso con lui il 28 ott 2026)
-Tutte · Cronaca · Politica · Sport · Calcio · (Allerte, solo con un'allerta) · Avvisi · Contributi · Eventi · Cultura · Altro · zona · Comuni
+Tutte · Cronaca · Politica · Sport · Calcio · (Allerte, solo con un'allerta) · Avvisi · Agevolazioni · Eventi · Cultura · Altro · zona · Comuni
 (lui: «Allerte e Avvisi spostale dopo calcio», «la pagina cultura mettila dopo eventi»); sul computer su una riga sola (da 960 px).
 Archivio e ricerca non stanno nel menu ma nella testata, a destra del titolo (sotto i 960 px sotto il titolo, la
 casella larga): lui voleva «liberare spazio» nel menu (28 ott 2026); la testata c'è su tutte le pagine, sopra il
@@ -41,7 +41,10 @@ Politica (28 ott, lui: «fai A e B»): ci vanno anche le decisioni di sindaco, G
 il dibattito politico della città sta in un solo approfondimento con `"categoria": "politica"`, che la sezione
 Politica mostra in cima come «La storia in corso» (AGENTE.md, «Il dibattito politico in città»).
 
-## I contributi (pagina /contributi/, dal 28 ott 2026)
+## Le agevolazioni (pagina /agevolazioni/, dal 28 ott 2026; fino al 28 ott sera «Contributi», /contributi/)
+Lui, 28 ott 2026 sera: «ho deciso di cambiare nome alla pagina Contributi in Agevolazioni… la pagina deve uscire come
+/agevolazioni/». I vecchi indirizzi /contributi/ e /contributi/<id>/ portano ai nuovi (pagine.py, noindex, fuori dalla
+sitemap); dentro il codice e nei file restano i nomi «contributi» (contributi.json, contributi.py, filtroCat «contributi»).
 Lui: «tutto quello che riesci a trovare che vada bene per BN e provincia… estremamente facile da consultare»; nome
 «Contributi» perché i bandi di concorso avranno una sezione loro («Concorsi», in cantiere). strumenti/contributi.py:
 il Catalogo degli incentivi del Ministero (non risponde a GitHub: lo scarica il Pi di casa e lo manda alla
@@ -52,7 +55,7 @@ con `"contributo"` (non più tutti gli avvisi «Domande e bandi»: c'erano locul
 Comune chiede soldi»). Filtri «Chi sei?» (famiglie, giovani, commercianti, artigiani, agricoltori, turismo, imprese…,
 dai settori del catalogo come nel vecchio Cacciatore di Contributi), «Da chi?» (Unione europea, Stato, Regione, Camera
 di Commercio, Comuni, associazioni di categoria, fondazioni), «Per cosa?», «Che aiuto?» e ricerca restano
-nell'indirizzo (/contributi/?chi=commercio&da=regione), una pagina per contributo (/contributi/<id>/). Quando si passa
+nell'indirizzo (/agevolazioni/?chi=commercio&da=regione), una pagina per agevolazione (/agevolazioni/<id>/). Quando si passa
 ad Aruba (lui: «da fare nel prossimo futuro… così togliamo anche il rischio che il Pi non funzioni») lo scaricamento va
 lì.
 

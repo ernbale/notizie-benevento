@@ -842,7 +842,7 @@ def zona_dal_luogo(d, avv):
 
 def controlla_contributo(n, w, err):
     """"contributo" in una notizia: un aiuto vero di un Comune (AGENTE.md, «I contributi»), con le chiavi dei filtri della
-    pagina Contributi (strumenti/contributi.py)."""
+    pagina Agevolazioni (strumenti/contributi.py)."""
     if "contributo" not in n:
         return
     from contributi import CHI, TEMI, AIUTO

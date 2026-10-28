@@ -442,7 +442,7 @@
   .pagine a:hover { border-color: var(--nero); }
   .pagine .attuale { background: var(--nero); border-color: var(--nero); color: #fff; }
   .pagine .salto { font: 600 15px var(--sans); color: var(--grigio); padding: 0 2px; }
-  /* la pagina Contributi */
+  /* la pagina Agevolazioni (era «Contributi») */
   .contr-riepilogo { font: 600 14px var(--sans); color: var(--grigio); margin: 14px 0 4px; }
   .contr-filtri { padding: 10px 0 14px; border-bottom: 1px solid var(--riga); }
   /* l'etichetta in una colonna, i bottoni nell'altra: quelli che vanno a capo restano allineati sotto «Tutti» (lui,
@@ -811,7 +811,7 @@
     <a class="link-comuni" href="/calcio/">Calcio</a>
     <button type="button" data-cat="meteo" aria-pressed="false" class="voce-allerta" hidden>Allerte</button>
     <button type="button" data-cat="avvisi" aria-pressed="false">Avvisi</button>
-    <button type="button" data-cat="contributi" aria-pressed="false">Contributi</button>
+    <button type="button" data-cat="contributi" aria-pressed="false">Agevolazioni</button>
     <button type="button" data-cat="eventi" aria-pressed="false">Eventi</button>
     <button type="button" data-cat="cultura" aria-pressed="false">Cultura</button>
     <button type="button" data-cat="altro" aria-pressed="false">Altro</button>
@@ -842,7 +842,7 @@
 
 <script>
 (function () {
-  var NOMI_CAT = { avvisi: "Avvisi", contributi: "Contributi", cultura: "Cultura", strade: "Strade", cronaca: "Cronaca", politica: "Politica", sport: "Sport", eventi: "Eventi", meteo: "Allerte", altro: "Altro" };
+  var NOMI_CAT = { avvisi: "Avvisi", contributi: "Agevolazioni", cultura: "Cultura", strade: "Strade", cronaca: "Cronaca", politica: "Politica", sport: "Sport", eventi: "Eventi", meteo: "Allerte", altro: "Altro" };
   var NOMI_SPORT = { calcio: "Calcio", calcio_a_5: "Calcio a 5", basket: "Basket", pallavolo: "Pallavolo", rugby: "Rugby",
     scherma: "Scherma", atletica: "Atletica", tennis: "Tennis", ciclismo: "Ciclismo", nuoto: "Nuoto", altro: "Altri sport" };
   var filtroSport = "";
@@ -2689,11 +2689,12 @@
         .forEach(function (ap) { box.appendChild(el("section", "storia-corso", [el("h3", "titolo-col", ["La storia in corso"]), schedaAppro(ap)])); });
     }
   }
-  // La pagina Contributi (lui, 28 ott 2026: «tutto quello che riesci a trovare che vada bene per BN e provincia…
+  // La pagina Agevolazioni, fino al 28 ott sera «Contributi» (lui: «ho deciso di cambiare nome alla pagina Contributi in
+  // Agevolazioni… la pagina deve uscire come /agevolazioni/»; dentro il sito resta la chiave «contributi»). Lui, 28 ott 2026: «tutto quello che riesci a trovare che vada bene per BN e provincia…
   // estremamente facile da consultare»; «Contributi» e non «Bandi», perché i concorsi avranno una sezione loro):
   // contributi.json (strumenti/contributi.py: catalogo del Ministero e contributi locali) più i bandi dei Comuni presi
   // dalle notizie. Quattro domande (chi sei, da chi, per cosa, che aiuto) e la ricerca, che restano nell'indirizzo
-  // (/contributi/?chi=commercio&da=regione): una ricerca si condivide col link. Come in pagine.py (html_contributi) e
+  // (/agevolazioni/?chi=commercio&da=regione): una ricerca si condivide col link. Come in pagine.py (html_contributi) e
   // contributi.py (CHI, DA, TEMI, AIUTO). Lui, 28 ott 2026: «i filtri… non solo famiglie ma imprese, commercianti,
   // artigiani ecc.», «fondi europei, statali, Confindustria, Confartigianato, Camera di Commercio, Regione, Comuni».
   var CHI_CONTR = { cittadino: "Famiglie e cittadini", giovani: "Giovani e studenti", commercio: "Commercianti", artigiano: "Artigiani",
@@ -2767,7 +2768,7 @@
     }
     return { testo: v.scadenza_testo ? v.scadenza_testo.charAt(0).toUpperCase() + v.scadenza_testo.slice(1) : "Senza scadenza indicata", urgente: false };
   }
-  function linkContributo(v) { return v.pagina || "/contributi/" + encodeURIComponent(v.id) + "/"; }
+  function linkContributo(v) { return v.pagina || "/agevolazioni/" + encodeURIComponent(v.id) + "/"; }
   function schedaContributo(v) {
     var art = el("article", "contr", [el("div", "occhiello", [v.ente + " · " + (DOVE_CONTR[v.dove] || "")])]);
     var h = el("h3", "", []), a = el("a", "", [v.titolo]);
@@ -2788,7 +2789,7 @@
   }
   function icsClickDay(v) {
     var d = v.click_day.replace(/[-:]/g, "") + "00";
-    var testo = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Notizie Benevento//Contributi//IT", "BEGIN:VEVENT",
+    var testo = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Notizie Benevento//Agevolazioni//IT", "BEGIN:VEVENT",
       "UID:" + v.id + "@notiziebenevento.it", "DTSTAMP:" + new Date().toISOString().replace(/[-:]/g, "").slice(0, 15) + "Z",
       "DTSTART;TZID=Europe/Rome:" + d, "DURATION:PT1H", "SUMMARY:Click day: " + v.titolo.replace(/[,;]/g, " "),
       "URL:" + v.link, "BEGIN:VALARM", "TRIGGER:-PT30M", "ACTION:DISPLAY", "DESCRIPTION:Click day", "END:VALARM", "END:VEVENT", "END:VCALENDAR"].join("\r\n");
@@ -2799,7 +2800,7 @@
   }
   function paginaContributi(box) {
     if (contributi === null) {
-      box.appendChild(el("p", "vuoto", ["Caricamento dei contributi…"]));
+      box.appendChild(el("p", "vuoto", ["Caricamento delle agevolazioni…"]));
       caricaContributi().then(function () { if (filtroCat === "contributi") disegna(); });
       return;
     }
@@ -2820,7 +2821,7 @@
     }
     var click = voci.filter(function (v) { return v.click_day && v.click_day.slice(0, 10) >= oggi; });
     var agg = contributi.aggiornato ? new Date(contributi.aggiornato) : null;
-    box.appendChild(el("p", "contr-riepilogo", [voci.length + " contributi aperti" + (click.length ? " · " + click.length + " click day in arrivo" : "") +
+    box.appendChild(el("p", "contr-riepilogo", [(voci.length === 1 ? "1 agevolazione aperta" : voci.length + " agevolazioni aperte") + (click.length ? " · " + click.length + " click day in arrivo" : "") +
       (agg && !isNaN(agg) ? " · aggiornato " + quando(contributi.aggiornato) : "")]));
     var pann = el("section", "contr-filtri", []), elenco = el("section", "contr-elenco", []);
     function riga(etichetta, chiave, valori) {
@@ -2846,7 +2847,7 @@
     cerca.type = "search";
     cerca.placeholder = "Cerca: fotovoltaico, bar, affitto, assunzioni…";
     cerca.value = f.q;
-    cerca.setAttribute("aria-label", "Cerca tra i contributi");
+    cerca.setAttribute("aria-label", "Cerca tra le agevolazioni");
     var attesa = null;
     cerca.addEventListener("input", function () { clearTimeout(attesa); attesa = setTimeout(function () { f.q = cerca.value.trim(); aggiorna(); }, 250); });
     // la casella di ricerca non si ridisegna mai: si scrive senza perdere il punto
@@ -2857,7 +2858,7 @@
     function aggiorna() {
       var q = new URLSearchParams();
       ["chi", "da", "tema", "aiuto", "q"].forEach(function (k) { if (f[k]) q.set(k, f[k]); });
-      history.replaceState(null, "", "/contributi/" + (q.toString() ? "?" + q.toString() : ""));
+      history.replaceState(null, "", "/agevolazioni/" + (q.toString() ? "?" + q.toString() : ""));
       mostrato = location.pathname + location.search + location.hash;
       disegnaFiltri();
       disegnaElenco();
@@ -2895,9 +2896,9 @@
         });
         elenco.appendChild(cd);
       }
-      elenco.appendChild(el("h3", "titolo-col", [scelti.length === 1 ? "1 contributo" : scelti.length + " contributi, in ordine di scadenza"]));
+      elenco.appendChild(el("h3", "titolo-col", [scelti.length === 1 ? "1 agevolazione" : scelti.length + " agevolazioni, in ordine di scadenza"]));
       if (!scelti.length) {
-        elenco.appendChild(el("p", "vuoto", ["Nessun contributo con questi filtri. Prova a toglierne uno."]));
+        elenco.appendChild(el("p", "vuoto", ["Nessuna agevolazione con questi filtri. Prova a toglierne uno."]));
         return;
       }
       var griglia = el("div", "contr-lista", []);
@@ -2911,7 +2912,7 @@
     var nota = el("p", "contr-nota", ["Fonti: Catalogo degli incentivi del Ministero delle Imprese e del Made in Italy (incentivi.gov.it, dati aperti IODL 2.0) " +
       "e, controllati ogni giorno sui siti ufficiali, INPS, Agenzia delle Entrate, Invitalia, Regione Campania, Camera di Commercio Irpinia Sannio, " +
       "Unione europea, fondazioni e Comuni del Sannio. Prima di fare domanda leggi sempre il bando ufficiale: date e importi " +
-      "possono cambiare. Manca un contributo? Scrivi a "]);
+      "possono cambiare. Manca un'agevolazione? Scrivi a "]);
     var m = el("a", "", ["redazione@notiziebenevento.it"]);
     m.href = "mailto:redazione@notiziebenevento.it";
     nota.appendChild(m);
@@ -3351,7 +3352,7 @@
   // /sezione/<categoria>/?zona=<zona> (la pagina dice a Google che la sua è /sezione/<categoria>/).
   var PAGINA_CAT = { cronaca: "/sezione/cronaca/", politica: "/sezione/politica/", sport: "/sezione/sport/", eventi: "/sezione/eventi/",
     meteo: "/sezione/allerte/", altro: "/sezione/altro/", avvisi: "/sezione/avvisi/", strade: "/sezione/strade/",
-    cultura: "/sezione/cultura/", contributi: "/contributi/" };
+    cultura: "/sezione/cultura/", contributi: "/agevolazioni/" };
   var PAGINA_ZONA = { benevento: "/zona/benevento/", telesina: "/zona/valle-telesina/", caudina: "/zona/valle-caudina/",
     fortore: "/zona/fortore/", provincia: "/zona/altri-comuni/" };
   function indirizzoFiltri() {
@@ -3401,7 +3402,7 @@
   var TITOLO_ZONA = { benevento: "Notizie da Benevento città", telesina: "Notizie dalla Valle Telesina", caudina: "Notizie dalla Valle Caudina",
     fortore: "Notizie dal Fortore e dal Tammaro", provincia: "Notizie dagli altri comuni del Sannio" };
   function titoloSezione() {
-    var c = filtroCat === "altro" ? "Altre notizie da Benevento e dal Sannio" : filtroCat === "contributi" ? "Contributi e bandi a Benevento e nel Sannio"
+    var c = filtroCat === "altro" ? "Altre notizie da Benevento e dal Sannio" : filtroCat === "contributi" ? "Agevolazioni a Benevento e nel Sannio"
       : filtroCat ? NOMI_CAT[filtroCat] + " a Benevento e nel Sannio" : "";
     var z = filtroZona ? document.querySelector('#zona option[value="' + filtroZona + '"]') : null;
     return c && z ? NOMI_CAT[filtroCat] + " · " + z.textContent : c || TITOLO_ZONA[filtroZona] || "";
