@@ -94,7 +94,7 @@ def didascalia(n, aggiornamento=False):
     if n.get("foto_inviate"):   # le foto vere mandate col comunicato (pagine.immagini_ig_foto): niente IA
         piu = len(n["foto_inviate"]) > 1
         m += f"\n\n{'Le foto inviate' if piu else 'Foto inviata'} da {n.get('foto_da') or 'chi ha mandato il comunicato'}."
-    elif n.get("immagine") and n.get("categoria") != "cronaca" and not n.get("locandina"):   # la locandina è vera
+    elif (n.get("foto_ia") or (n.get("immagine") and n.get("categoria") != "cronaca")) and not n.get("locandina"):   # la locandina è vera
         m += "\n\nImmagine illustrativa creata con l'intelligenza artificiale: non è una foto del fatto."
     tag = ["#Benevento", "#Sannio"]
     for luogo in re.split(r"[,;/]| e ", n.get("luogo") or ""):   # «Napoli, Sannio» → #Napoli (#Sannio c'è già)
@@ -108,8 +108,8 @@ def didascalia_riepilogo(giorno, notizie):
     m = f"{TITOLO_RIEPILOGO}, {giorno}: le notizie più importanti della giornata.\n\n"
     m += "\n".join(f"{i}. {n['titolo'].strip()}" for i, n in enumerate(notizie, 1))
     m += "\n\nScorri le immagini. Leggi tutto su notiziebenevento.it (link nella bio)."
-    if any(n.get("immagine") and n.get("categoria") != "cronaca" and not n.get("locandina") and not n.get("foto_inviate")
-           for n in notizie):
+    if any((n.get("foto_ia") or (n.get("immagine") and n.get("categoria") != "cronaca")) and not n.get("locandina")
+           and not n.get("foto_inviate") for n in notizie):
         m += "\n\nLe immagini illustrative sono create con l'intelligenza artificiale: non sono foto dei fatti."
     return m + "\n\n#Benevento #Sannio #notizie"
 

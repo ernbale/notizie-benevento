@@ -15,6 +15,8 @@ Sito: https://notiziebenevento.it (notiziebenevento.com rimanda qui)
 - `strumenti/meteo.py`: previsioni da 8 modelli → `meteo.json` (lo esegue GitHub ogni ora).
 - `strumenti/contributi.py`: i contributi e i bandi per il Sannio → `contributi.json` (pagina `/contributi/`): il catalogo del
   Ministero lo scarica il Pi di casa e lo manda alla pubblicazione, che lo unisce a `contributi_locali.json` (lo scrive l'agente).
+- `strumenti/foto_ia.py`: le foto fatte apposta con GPT Image per le notizie e le storie senza foto vera e senza tema, dalla
+  `scena` scritta dall'agente (dal 28 ott 2026); le fa la pubblicazione (segreto `OPENAI_API_KEY`) e le mette in `img/ia/`.
 - `strumenti/pagine.py`: a ogni pubblicazione fa una pagina vera per ogni notizia (`/notizia/<id>/`, anche archiviate),
   le pagine delle sezioni e delle zone, l'immagine di anteprima di ogni notizia, `sitemap.xml`, `sitemap-notizie.xml`
   (Google News), `feed.xml` (RSS) e avvisa Bing con IndexNow. Niente di questo va nel repository.

@@ -157,6 +157,15 @@
   .avvisi-box li a { color: var(--nero); text-decoration: none; }
   .avvisi-box li a:hover { text-decoration: underline; }
   .avvisi-box .dove { display: block; font: 500 12px var(--sans); color: var(--rosso); margin-top: 3px; }
+  /* lo speciale del periodo in prima pagina, solo Benevento (specialeHome) */
+  .avvisi-box .avv-spec-home { background: var(--carta-scura); padding: 12px 14px 10px; margin: 6px 0 8px; }
+  .avvisi-box .avv-spec-home .occhiello { margin: 0 0 3px; }
+  .avvisi-box .avv-spec-home h4 { font: 700 19px/1.2 var(--serif); margin: 0 0 2px; }
+  .avvisi-box .avv-spec-home h4 a { color: var(--nero); text-decoration: none; }
+  .avvisi-box .avv-spec-home h4 a:hover { text-decoration: underline; }
+  .avvisi-box .avv-spec-home li { border-bottom-color: rgba(0, 0, 0, .12); }
+  .avvisi-box .avv-spec-home li:last-child { border-bottom: 0; }
+  .avvisi-box .avv-spec-home .link-tutte { margin-top: 4px; }
   /* carburanti: i 5 distributori meno cari (carburanti.json, strumenti/carburanti.py) e la pagina carburanti/ */
   .carburanti-box { margin-bottom: 18px; }
   .carburanti-box .cb-scelta { display: flex; gap: 6px; margin: 0 0 4px; }
@@ -1163,12 +1172,15 @@
   function fotoTema(n, didascalia, grande) {
     if (n.locandina) return locandinaFig(n, grande);   // la locandina vera: niente immagine fatta con l'IA
     if (fotoInviate(n).length) return fotoVeraFig(n, grande);   // e così una foto vera mandata col comunicato
-    if (!n.immagine || n.categoria === "cronaca" || !/^[a-z0-9-]+$/.test(n.immagine)) return null;
+    // la foto fatta apposta dall'IA per la scena della notizia o della storia (img/ia, strumenti/foto_ia.py; lui, 28 ott
+    // 2026: «regola tutte foto, se non la trovi ne crei una… con gpt»), anche sulla cronaca; se no quella del tema
+    var ia = /^img\/ia\/[a-z0-9-]+$/.test(n.foto_ia || "");
+    if (!ia && (!n.immagine || n.categoria === "cronaca" || !/^[a-z0-9-]+$/.test(n.immagine))) return null;
     // «foto» è la versione scelta da archivia.py per non ripetere la stessa foto in prima pagina
     var nome = /^[a-z0-9-]+$/.test(n.foto || "") ? n.foto : n.immagine;
-    var f = el("figure", "foto-tema", []), im = document.createElement("img"), b = "/img/temi/" + nome;
+    var f = el("figure", "foto-tema", []), im = document.createElement("img"), b = ia ? "/" + n.foto_ia : "/img/temi/" + nome;
     im.src = b + "-m.jpg";
-    im.srcset = b + "-m.jpg 768w, " + b + ".jpg 1536w";
+    im.srcset = b + "-m.jpg 768w, " + b + ".jpg " + (ia ? "1200w" : "1536w");
     im.sizes = grande ? "(max-width: 800px) 100vw, 760px" : "(max-width: 800px) 100vw, 420px";
     im.width = 1536; im.height = 1024; im.alt = ""; im.decoding = "async";
     if (!grande) im.loading = "lazy";
@@ -1265,6 +1277,8 @@
 
   function schedaAppro(ap) {
     var art = el("article", "notizia", []);
+    var ft = fotoTema(ap, "Immagine illustrativa");
+    if (ft) art.appendChild(ft);
     art.appendChild(el("div", "occhiello", ["Approfondimento"]));
     var h = el("h2", "", []);
     var a = el("a", "", [ap.titolo]);
@@ -1452,9 +1466,38 @@
     });
     return a;
   }
-  function riquadroAvvisi(avvisi) {
+  // Lo speciale del periodo anche in prima pagina, solo per Benevento (lui, 28 ott 2026: «la Speciale · 1° e 2 novembre
+  // mettilo qui in home… solo Benevento che sparisce alla fine»): in cima agli «Avvisi in vigore» gli avvisi della città
+  // che stanno nello speciale e il link agli altri paesi; finito lo speciale sparisce da solo (specialeDi).
+  function specialeHome() {
+    var oggi = oggiTZ(), spec = specialeDi(oggi);
+    if (!spec || !spec.home || filtroCat || filtroZona) return null;
+    var voci = (dati.notizie || []).filter(function (n) {
+      return CAT_AVVISI.indexOf(n.categoria) >= 0 && comuneDi(n) === "Benevento" && (!n.in_vigore_fino || n.in_vigore_fino >= oggi) &&
+        spec.rx.test(n.titolo) && !spec.via.test(n.titolo);
+    }).sort(function (a, b) { var x = a.in_vigore_dal || "", y = b.in_vigore_dal || ""; return x < y ? -1 : x > y ? 1 : 0; });
+    if (!voci.length) return null;
+    var h = el("h4", "", []);
+    h.appendChild(linkCat("avvisi", spec.home));
+    var box = el("div", "avv-spec-home", [el("div", "occhiello", [spec.occhiello]), h]), ul = el("ul", "", []);
+    voci.forEach(function (n) {
+      var li = el("li", "", []), a = el("a", "", [senzaPaese(n.titolo, "Benevento")]);
+      a.href = linkArticolo(n);
+      li.appendChild(a);
+      li.appendChild(el("span", "dove", [tipoAvviso(n) + " · " + quandoVale(n)]));
+      ul.appendChild(li);
+    });
+    box.appendChild(ul);
+    box.appendChild(linkCat("avvisi", spec.altri, "link-tutte"));
+    return { el: box, voci: voci };
+  }
+  function riquadroAvvisi(avvisi, spec) {
     var sez = el("section", "avvisi-box", [el("h3", "titolo-col", ["Avvisi in vigore"])]);
     var ul = el("ul", "", []);
+    if (spec) {
+      sez.appendChild(spec.el);
+      avvisi = avvisi.filter(function (n) { return spec.voci.indexOf(n) < 0; });
+    }
     avvisi.slice(0, 6).forEach(function (n) {
       var li = el("li", "", []);
       var a = el("a", "", [n.titolo]);
@@ -1463,7 +1506,7 @@
       li.appendChild(el("span", "dove", [(NOMI_CAT[n.categoria] || "") + " · " + (n.luogo ? n.luogo + " · " : "") + quandoVale(n)]));
       ul.appendChild(li);
     });
-    sez.appendChild(ul);
+    if (ul.children.length) sez.appendChild(ul);
     sez.appendChild(linkCat("avvisi", "Tutti gli avvisi, paese per paese ›", "link-tutte"));
     if (avvisi.some(function (n) { return n.traffico; })) sez.appendChild(linkTutte("/strade-chiuse/", "Tutte le strade chiuse ›"));
     return sez;
@@ -1493,6 +1536,7 @@
   var SPECIALI = [
     { da: "10-22", a: "11-02", rx: /cimiter|defunt|ognissanti|lampade votive/i, via: /loculi|bando/i,
       occhiello: "Speciale · 1° e 2 novembre", titolo: "Ognissanti e Defunti: cimiteri, strade e sosta paese per paese",
+      home: "Ognissanti e Defunti a Benevento", altri: "Cimiteri, strade e sosta negli altri paesi ›",
       nota: "Gli orari dei cimiteri, le strade chiuse e i divieti annunciati dai Comuni.",
       manca: "Il tuo paese non c'è? Il Comune non ha ancora pubblicato gli orari: li aggiungiamo appena escono. " }
   ];
@@ -1782,7 +1826,8 @@
     if (!filtroCat) { var rc = riquadroCarburanti(); if (rc) c3.appendChild(rc); }
     if (!filtroCat) { var rq = riquadroCuriosita(); if (rq) c3.appendChild(rq); }
     if (!filtroCat) c3.appendChild(riquadroSegui("Le notizie del Sannio appena escono, sul telefono."));
-    if (avvisi.length) c3.appendChild(riquadroAvvisi(avvisi));
+    var sh = specialeHome();
+    if (avvisi.length || sh) c3.appendChild(riquadroAvvisi(avvisi, sh));
     if (!filtroCat) { var rs = riquadroSport(); if (rs) c3.appendChild(rs); }
     c3.appendChild(el("h3", "titolo-col", ["Approfondimenti"]));
     var appro = dati.approfondimenti || [];
@@ -1955,6 +2000,8 @@
     var az = ascolta(testoApprofondimento(ap));
     az.appendChild(condividi(ap.titolo, linkAppro(ap), true));
     art.appendChild(az);
+    var ftA = fotoTema(ap, "Immagine illustrativa creata con l'intelligenza artificiale: non è una foto del fatto.", true);
+    if (ftA) art.appendChild(ftA);
     if (Array.isArray(ap.in_breve) && ap.in_breve.length) {
       var ib = el("div", "inbreve", [el("strong", "", ["In breve"])]);
       var ul = el("ul", "", []);

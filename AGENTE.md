@@ -599,18 +599,50 @@ stessi post in contemporanea», «sì 3 in su, fallo»; prima Instagram solo 4 e
 restano sul sito e su Telegram. I comunicati arrivati per posta escono comunque, tutti, subito. Se `importanza`
 manca il programma la ricava dalla categoria, peggio di te: scrivila sempre.
 
-## La foto illustrativa (`immagine`)
+## La foto della notizia (`immagine` o `scena`)
+
+**Regola del proprietario dal 28 ott 2026: ogni notizia e ogni storia ha la sua foto** (lui: «regola tutte foto, se
+non la trovi ne crei una perfetta cinematografica con gpt», «anche le altre storie se manca la foto e le future»,
+«devono rappresentare bene la scena raccontata se create con gpt», «devi aggiustare anche sui social»). In
+quest'ordine:
+1. le foto vere: la locandina o le foto arrivate col comunicato (`locandina`, `foto_inviate`, qui sotto);
+2. se no, un tema adatto di `img/temi` (`immagine`, qui sotto; mai sulla cronaca);
+3. se no, **la foto fatta apposta con l'IA**: scrivi `"scena"`, la scena da fotografare. La foto la fa
+   `strumenti/foto_ia.py` alla pubblicazione (GPT Image, stile cinematografico), prima che la notizia esca sui social;
+   il campo `foto_ia` lo mette il programma, tu non scriverlo. Per le **storie** (gli approfondimenti) niente temi:
+   sempre la `scena`, se non hanno foto vere.
+Senza foto vera e senza tema, una notizia della prima pagina o una storia senza `scena` è un errore (lo controlla
+`archivia.py`).
+
+Come si scrive la `scena` (in inglese, da 60 a 700 caratteri: il programma di immagini la capisce meglio):
+- **la scena raccontata dalla notizia**, non un'immagine generica: il posto (un paese di collina del Sannio, la statale
+  Appia, un'aula del tribunale di Benevento, un cantiere, una scuola), cosa succede, il momento del giorno e il tempo
+  se si sanno, i mezzi e gli oggetti che contano (le due auto dopo il frontale, l'ambulanza e i vigili del fuoco; i
+  telefoni sequestrati nelle buste; il camion dei rifiuti davanti al municipio).
+- Le persone si possono mettere: nella foto sono inventate (lui: «sono persone inventate puoi mettere tutto»). Ma se
+  la notizia parla di **una persona vera con nome e cognome** (un sindaco, una docente, un accusato) quella persona
+  non si vede in faccia: di spalle, da lontano, o solo il posto. Mai persone vere o famose.
+- Cronaca: si mostra il fatto dal lato del contesto (le auto, i soccorsi, i carabinieri, il tribunale, la merce
+  sequestrata); niente sangue, niente corpi feriti, niente violenza mentre avviene, niente bambini vittime.
+- Niente scritte, loghi e targhe (il programma lo chiede comunque).
+- Esempio: `"scena": "Early morning on the Appia state road just outside a town in the Sannio: two damaged cars after
+  a head-on collision, one overturned on its side, an ambulance and a firefighters' truck with flashing lights,
+  firefighters at work, misty light"`.
+- Una volta fatta, la foto resta quella: non cambiare la `scena` a ogni aggiornamento.
+
+### I temi di `img/temi`
 
 - In `img/temi/temi.json` c'è l'elenco delle foto illustrative già pronte, fatte una volta sola con l'AI: ogni tema ha
   un nome (es. `acqua`) e `quando` usarlo. Sul sito escono con la scritta «Immagine illustrativa».
 - Per ogni notizia scegli **il tema che corrisponde al fatto** e scrivilo nella notizia: `"immagine": "acqua"`. Se
-  nessun tema va bene davvero, non mettere il campo: meglio niente che una foto che non c'entra.
-- **Mai sulla cronaca** (`"categoria": "cronaca"`, lo controlla `archivia.py`): arresti, incidenti, feriti, morti,
-  processi e indagini restano senza foto. Lo stesso per le notizie di altre sezioni che parlano di una persona precisa
-  accusata o ferita.
+  nessun tema va bene davvero, non mettere il campo e scrivi la `scena` (qui sopra): meglio una foto fatta apposta che
+  una che non c'entra.
+- **Mai temi sulla cronaca** (`"categoria": "cronaca"`, lo controlla `archivia.py`): arresti, incidenti, feriti,
+  morti, processi e indagini hanno la foto fatta apposta dalla `scena` (dal 28 ott 2026; prima restavano senza).
+  Lo stesso per le notizie di altre sezioni che parlano di una persona precisa accusata o ferita.
 - Solo i temi dell'elenco: non crearne di nuovi e mai foto dei giornali. Se manca un tema che servirebbe spesso,
   scrivilo nel resoconto.
-- Alle notizie in prima pagina senza `immagine` aggiungila a ogni giro, dove c'è un tema adatto.
+- Alle notizie in prima pagina senza `immagine` né `scena` aggiungine una a ogni giro.
 - Il campo `foto` non lo scrivi tu: lo mette `strumenti/archivia.py`, che sceglie tra le versioni della foto di quel
   tema quella meno usata in prima pagina, così due notizie dello stesso tema non hanno la stessa foto.
 - Con una **locandina** arrivata per posta, niente `immagine` (vedi «Il calendario degli eventi»). Lo stesso con le
@@ -682,7 +714,7 @@ aggiorni a ogni giro, come notizie.json.
   `"locandina": "<id del comunicato>/<numero>"` nell'evento e nella notizia, e niente `immagine`. La copia nel sito la
   fa archivia.py (la mette in `img/locandine/` e cambia il campo in `img/locandine/<nome>.jpg`: quello lascialo com'è).
   Un logo o un'immagine che non è la locandina nell'evento non si usa (le foto del fatto vanno nella notizia, in
-  `foto_inviate`: vedi «La foto illustrativa»).
+  `foto_inviate`: vedi «La foto della notizia»).
 - `notizia`: l'`id` della notizia collegata, se l'evento è anche una notizia in prima pagina o in archivio.
 - L'`id` è per sempre (è l'indirizzo della pagina): parole chiave e anno, es. `sagra-castagna-vitulano-2026`.
 
@@ -797,7 +829,8 @@ le dichiarazioni nuove. **Se non c'è ancora, crealo in questo giro.**
     "categoria": "avvisi|strade|cronaca|meteo|politica|sport|eventi|cultura|altro",
     "sport": "solo per categoria sport: calcio|calcio_a_5|basket|pallavolo|rugby|scherma|atletica|tennis|ciclismo|nuoto|altro",
     "zona": "benevento|telesina|caudina|fortore|provincia (la corregge archivia.py dal luogo, vedi sotto)",
-    "immagine": "tema da img/temi/temi.json (facoltativo, mai per la cronaca)",
+    "immagine": "tema da img/temi/temi.json (mai per la cronaca)",
+    "scena": "senza foto vera e senza tema: la scena da fotografare con l'IA, in inglese (vedi «La foto della notizia»)",
     "luogo": "il Comune per primo, poi la località: «San Giorgio del Sannio, piazza Immacolata»", "pubblicato": "ISO dell'articolo fonte più recente, oppure solo AAAA-MM-GG se l'ora non è scritta",
     "stato": "confermata|ufficiale|una_fonte (vedi regola 2)", "rilevante": false,
     "importanza": "1-5, il numero (vedi «L'importanza per i social»)",
@@ -818,6 +851,7 @@ le dichiarazioni nuove. **Se non c'è ancora, crealo in questo giro.**
   } ],
   "approfondimenti": [ {
     "id": "", "titolo": "", "titolo_google": "45-60 caratteri", "sommario": "3-4 frasi", "luogo": "", "aggiornato": "ISO",
+    "scena": "la scena da fotografare con l'IA, in inglese (vedi «La foto della notizia»), se non ci sono foto vere",
     "categoria": "solo \"politica\" per il dibattito politico in città (vedi sotto), altrimenti niente",
     "collegate": ["id delle notizie"],
     "in_breve": [ {"testo": "", "fonti": []} ],

@@ -25,7 +25,7 @@ on:
         default: ""
 
 permissions:
-  contents: read
+  contents: write   # le foto fatte con l'IA (strumenti/foto_ia.py) vanno nel repository
   pages: write
   id-token: write
   actions: read   # le statistiche leggono le pubblicazioni (puntualità dei giri)
@@ -102,6 +102,19 @@ jobs:
             if [ -s contributi-prima.json ]; then cp contributi-prima.json contributi.json; fi
           fi
           rm -f contributi-catalogo.json contributi-prima.json
+
+      # Le foto fatte con l'IA per le notizie e le storie che non hanno una foto (strumenti/foto_ia.py; lui, 28 ott 2026:
+      # «regola tutte foto, se non la trovi ne crei una perfetta cinematografica con gpt», «devi aggiustare anche sui
+      # social»): prima delle pagine, così le schede di Instagram e Facebook hanno già la foto. Le foto nuove vanno nel
+      # repository con un commit a parte; senza il segreto OPENAI_API_KEY si segnano solo quelle che ci sono già.
+      - name: Foto delle notizie senza foto (GPT Image)
+        timeout-minutes: 6
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          pip install --quiet pillow || true
+          python3 strumenti/foto_ia.py --genera || echo "::warning::Foto IA non fatte: si riprova alla pubblicazione dopo"
+          python3 strumenti/foto_ia.py --segna || echo "::warning::Foto IA non segnate"
 
       # le immagini di anteprima già fatte: si rifanno solo quelle delle notizie nuove o cambiate
       - uses: actions/cache@v4

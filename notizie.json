@@ -122,7 +122,8 @@
      }
     ]
    },
-   "zona": "caudina"
+   "zona": "caudina",
+   "scena": "A small building site in a southern Italian town on a hot August day: a concrete mixer truck pouring concrete into wooden formworks, steel rebars, a shovel left on the ground, workers in the distance under the sun, dusty light"
   },
   {
    "id": "paduli-tentato-femminicidio-moglie-abbreviato-rinviato-esame",
@@ -191,7 +192,8 @@
      }
     ]
    },
-   "zona": "provincia"
+   "zona": "provincia",
+   "scena": "A small courtroom of the court of Benevento during a hearing: the judge's bench, lawyers in black robes standing with files, a carabiniere by the door, the defendant seen only from behind sitting with his head down, soft window light"
   },
   {
    "id": "limatola-comune-vende-immobili-manifestazione-interesse",
@@ -383,7 +385,8 @@
       "data": "28 ott, 12:09"
      }
     ]
-   }
+   },
+   "scena": "A quiet corridor of the courthouse in Benevento in the morning: a closed courtroom door, a wooden bench, a trolley with thick case files tied with string and a psychiatric report folder on top, solemn atmosphere"
   },
   {
    "id": "cerreto-sannita-comitato-acqua-pubblica-escursione-dibattito-31-ottobre",
@@ -533,7 +536,8 @@
       "data": "28 ott, 09:03"
      }
     ]
-   }
+   },
+   "scena": "A night fashion show inside the ancient Roman theatre of Benevento: young student models walking a runway laid on the stone stage among ancient brick arches, elegant handmade dresses, warm stage lights, audience seated on the old stone steps"
   },
   {
    "id": "benevento-inchiesta-comune-copia-telefoni-indagati-4-novembre",
@@ -637,7 +641,8 @@
      }
     ]
    },
-   "zona": "benevento"
+   "zona": "benevento",
+   "scena": "A forensic expert's desk in a prosecutor's office: several seized smartphones and a laptop in transparent evidence bags with paper tags, a cable connected to a data-copy device, documents with official stamps, cold office light"
   },
   {
    "id": "benevento-piu-sicuri-insieme-truffe-anziani-6-novembre",
@@ -994,7 +999,8 @@
       "data": "28 ott, 10:17"
      }
     ]
-   }
+   },
+   "scena": "A dark blue Carabinieri patrol car with a red stripe parked at dusk in front of the high grey walls and steel gate of an Italian prison, two carabinieri walking towards the entrance, hills in the background"
   },
   {
    "id": "fortore-telefono-internet-interrotti-confederazione-imprese-italia",
@@ -1102,7 +1108,8 @@
       "data": "28 ott, 11:03"
      }
     ]
-   }
+   },
+   "scena": "A rural road in the Fortore hills of the Sannio: a telecom technician kneeling by an open roadside cabinet holding a cut fiber-optic cable, rolling green hills and wind turbines in the background, overcast sky"
   },
   {
    "id": "apollosa-ladri-studio-tecnico-centro-28-ottobre",
@@ -1151,7 +1158,8 @@
       "data": "28 ott, 09:49"
      }
     ]
-   }
+   },
+   "scena": "Night in the center of a small hill town in southern Italy: the first-floor balcony of an old stone building with the glass of the door broken, a drainpipe running up the facade, a carabiniere with a flashlight looking up from the street"
   },
   {
    "id": "torrecuso-sai-assistente-sociale-candidature-13-novembre",
@@ -1207,7 +1215,8 @@
       "ufficiale": true
      }
     ]
-   }
+   },
+   "scena": "A young social worker talking with a migrant family at a table in a small welcoming office of a southern Italian town, folders and a laptop on the desk, window over vineyards and hills, warm afternoon light"
   },
   {
    "id": "basket-giovanile-united-benevento-under-19-vince-derby-smile",
@@ -1438,7 +1447,8 @@
      "quando": "2026-10-28T10:12+01:00",
      "titolo_prima": "San Giorgio del Sannio, scontro frontale tra due auto sulla statale 7 Appia: due feriti"
     }
-   }
+   },
+   "scena": "Early morning on the Appia state road just outside a town in the Sannio: two damaged cars after a head-on collision, one overturned on its side, an ambulance and a firefighters' truck with flashing lights, firefighters at work, misty light"
   },
   {
    "id": "benevento-incanto-di-natale-2026-giunta-600mila-euro",
@@ -2293,7 +2303,8 @@
      "quando": "2026-10-27T22:12+01:00",
      "titolo_prima": "Benevento-Catanzaro, malore in panchina per Arditi del Catanzaro prima della partita: portato in ospedale per accertamenti"
     }
-   }
+   },
+   "scena": "A football stadium in southern Italy at night just before kick-off: the substitutes' bench by the pitch, two medics in orange with a stretcher kneeling near the bench, players in tracksuits watching worried, floodlights, blurred crowd in the stands"
   },
   {
    "id": "san-giorgio-del-sannio-frontale-tangenziale-quattro-feriti",
@@ -2430,7 +2441,8 @@
      "quando": "2026-10-27T20:12+01:00",
      "titolo_prima": "San Giorgio del Sannio, scontro frontale sulla rampa della tangenziale: quattro persone in ospedale, non gravi"
     }
-   }
+   },
+   "scena": "Evening at a motorway junction near a town in the Sannio: a small white city car and a dark sedan with crumpled fronts after a head-on crash, an ambulance with lights on, a police officer directing traffic, wet asphalt reflecting the lights"
   },
   {
    "id": "san-giorgio-del-sannio-appalto-rifiuti-dda-rinvio-giudizio-34",
@@ -2531,7 +2543,8 @@
       "data": "27 ott, 21:20"
      }
     ]
-   }
+   },
+   "scena": "A green municipal garbage collection truck parked at dawn in the square of a small town in the Sannio, the old town hall behind it, and in the foreground a stack of thick tender documents and court files on a café table"
   },
   {
    "id": "pannarano-corso-bls-d-defibrillatore-28-ottobre",
@@ -3198,7 +3211,8 @@
       "data": "27 ott, 16:03"
      }
     ]
-   }
+   },
+   "scena": "Adults of different ages learning on laptops with a young trainer in a bright classroom of a small hill-town community center, a blue flag with a circle of yellow stars on the wall, window over the hills of the Fortore"
   },
   {
    "id": "benevento-fatture-false-evasione-fiscale-15-imprenditori-udienza-26-gennaio",
@@ -3273,7 +3287,8 @@
       "data": "27 ott, 14:14"
      }
     ]
-   }
+   },
+   "scena": "Piles of invoices and accounting ledgers on a wooden desk in an Italian prosecutor's office, a calculator, a laptop with spreadsheets, highlighted papers and folders, dim late-afternoon light"
   },
   {
    "id": "benevento-giunta-istituisce-ufficio-bim-lavori-pubblici",
@@ -3599,7 +3614,8 @@
       "data": "27 ott, 14:40"
      }
     ]
-   }
+   },
+   "scena": "A seized illegal fireworks workshop in a garage of a small southern Italian town: shelves with homemade firework tubes, sacks of black powder, two carabinieri cataloguing the material under a cold neon light"
   },
   {
    "id": "benevento-morte-mario-capobianco-abbreviato-gip-19-novembre",
@@ -3686,7 +3702,8 @@
       "data": "27 ott, 13:23"
      }
     ]
-   }
+   },
+   "scena": "The entrance of the courthouse in Benevento on a grey morning: lawyers in dark coats walking up the steps carrying files, a carabinieri car parked in front"
   },
   {
    "id": "benevento-quattro-nuovi-ausiliari-traffico-strisce-blu",
@@ -4141,7 +4158,8 @@
       "data": "27 ott, 19:26"
      }
     ]
-   }
+   },
+   "scena": "An Italian traffic police checkpoint on a state road among the hills of the Sannio: an officer with a signal paddle stopping a car, a patrol car with blue lights on the roadside, autumn afternoon light"
   },
   {
    "id": "benevento-cantieri-sicuri-camper-inail-formedil",
@@ -4471,7 +4489,8 @@
       "data": "27 ott, 13:13"
      }
     ]
-   }
+   },
+   "scena": "An empty courtroom of the court of Naples: wooden benches, the judges' bench with microphones and case files, tall windows with soft daylight, solemn atmosphere"
   },
   {
    "id": "benevento-via-avellino-cupa-ponticelli-collevaccino-pertini-lavori-fibra",
@@ -5001,7 +5020,8 @@
       "data": "27 ott, 08:47"
      }
     ]
-   }
+   },
+   "scena": "The bright studio of an Italian TV quiz show during a game, seen from behind a contestant standing at her podium: we see only her hair and shoulders from behind, colored spotlights, big screens without text, the studio audience blurred in the dark"
   },
   {
    "id": "benevento-catanzaro-cancelli-vigorito-ore-17-accesso-stadio",
@@ -5173,7 +5193,8 @@
       "data": "27 ott, 07:18"
      }
     ]
-   }
+   },
+   "scena": "Aerial view of a medium-sized southern Italian city with its old town, bell towers, a Roman arch and modern districts, green parks next to busy roads and parked cars, slightly hazy sky"
   },
   {
    "id": "benevento-viale-mellusi-divieto-sosta-caditoie-29-ottobre-4-novembre",
@@ -6559,7 +6580,8 @@
       "data": "26 ott, 15:51"
      }
     ]
-   }
+   },
+   "scena": "The long corridor of an Italian prison wing with closed grey cell doors, cold neon light, an empty guard desk with a register, silent and somber"
   },
   {
    "id": "sant-angelo-a-cupolo-cultura-piccoli-comuni-idoneo-non-finanziato",
@@ -7964,7 +7986,8 @@
      "quando": "2026-10-27T06:15+01:00"
     }
    },
-   "importanza": 5
+   "importanza": 5,
+   "scena": "An old small city car crashed against the iron gate of a country house along the Appia state road, morning light, a carabinieri car and an ambulance parked nearby, people standing at a distance"
   },
   {
    "id": "faicchio-piazza-borrelli-chiusa-28-ottobre-confindustria",
@@ -9271,7 +9294,8 @@
      "titolo_prima": "Benevento, ladri di notte al liceo Guacci di via Compagna: scassinato il distributore di merendine"
     }
    },
-   "importanza": 2
+   "importanza": 2,
+   "scena": "A high school classroom in the morning after a night burglary: a forced open window, empty desks, disconnected computer cables, a puddle of bleach on the floor, a carabiniere taking notes"
   },
   {
    "id": "santagata-de-goti-piazza-sant-alfonso-divieto-sosta-29-ottobre",
@@ -10365,7 +10389,8 @@
      "titolo_prima": "Benevento, bambino investito da una bici sul corso Garibaldi: il sindaco chiede pattuglie fisse"
     }
    },
-   "importanza": 3
+   "importanza": 3,
+   "scena": "The pedestrian main street of an old southern Italian city center with historic palaces: two municipal police officers on duty checking an electric bicycle, families strolling, late afternoon light"
   },
   {
    "id": "sant-agata-de-goti-pronto-soccorso-h24-tar-puglianello",
@@ -11499,7 +11524,8 @@
      "titolo_prima": "Benevento, ragazza colpita a Corso Garibaldi: il giovane dà la sua versione in Questura, per ora nessuna denuncia"
     }
    },
-   "importanza": 4
+   "importanza": 4,
+   "scena": "The pedestrian main street of a southern Italian old town at night, historic palaces lit by street lamps, a police car parked, groups of young people talking in the distance"
   },
   {
    "id": "montesarchio-cocaina-229-grammi-donna-arrestata",
@@ -11735,7 +11761,8 @@
      "titolo_prima": "Montesarchio, 26enne arrestata con circa 230 grammi di cocaina: lunedì l'udienza di convalida"
     }
    },
-   "importanza": 3
+   "importanza": 3,
+   "scena": "A carabinieri roadside check at night: a car with the door open, a small black shoulder bag on the seat, packets of white powder in transparent evidence bags on the car roof, blue flashing lights"
   },
   {
    "id": "cusano-mutri-civitella-bus-air-deviati-sagra-castagna",
@@ -12048,7 +12075,8 @@
      }
     ]
    },
-   "in_vigore_fino": "2026-11-20"
+   "in_vigore_fino": "2026-11-20",
+   "scena": "A bright new community health center in a southern Italian town: volunteers of an association helping elderly people at a reception desk, a nurse walking in the background, clean modern waiting room"
   },
   {
    "id": "asl-benevento-hpv-aperture-straordinarie-ottobre",
@@ -16365,7 +16393,8 @@
      "url": "https://www.labtv.net/politica/2026/10/28/viespoli-e-de-caro-la-strana-coppia-al-servizio-della-citta/",
      "data": "28 ott, 13:18"
     }
-   ]
+   ],
+   "scena": "The council chamber of the city hall of Benevento during a tense evening session: councillors seated at curved wooden benches with microphones, some standing and arguing with papers in hand, citizens crowding the public gallery, warm light from old chandeliers, a sense of political confrontation"
   },
   {
    "id": "caro-gasolio-sannio",
@@ -17039,7 +17068,8 @@
      "data": "23 ott, 15:21"
     }
    ],
-   "nota": "Correzione: nella versione delle 8:45 scrivevamo che il ministero dei Trasporti aveva convocato le associazioni per il 27 ottobre, come riportava Il Post il 16 ottobre. ANSA (17 ottobre) e Il Sole 24 Ore (18 ottobre) riportano che il ministro Salvini ha anticipato il tavolo a oggi, martedì 20 ottobre, in Prefettura a Milano. Abbiamo corretto sommario, «In breve», sezioni, domande e cronologia."
+   "nota": "Correzione: nella versione delle 8:45 scrivevamo che il ministero dei Trasporti aveva convocato le associazioni per il 27 ottobre, come riportava Il Post il 16 ottobre. ANSA (17 ottobre) e Il Sole 24 Ore (18 ottobre) riportano che il ministro Salvini ha anticipato il tavolo a oggi, martedì 20 ottobre, in Prefettura a Milano. Abbiamo corretto sommario, «In breve», sezioni, domande e cronologia.",
+   "scena": "A long line of stopped trucks on the Appia state road among the green hills of the Sannio during a truckers' protest against the price of diesel, drivers standing by their cabs talking, a few tractors arriving from a side road, a roadside fuel station in the foreground, overcast autumn sky"
   }
  ]
 }

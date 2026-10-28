@@ -48,7 +48,7 @@ riuscita» (o cosa non va) con l'esito dei comandi. In prova non pubblichi nient
 1. Esegui `TZ=Europe/Rome date -Iseconds` e `python3 strumenti/comunicati.py --da-fare | tee /tmp/da_fare.txt`. Se
    l'ultima riga comincia con «NIENTE DA FARE», fermati e rispondi solo «niente da fare».
 2. Leggi in AGENTE.md: «Regole che non si discutono», «Come lavorare una notizia», «Come si scrive l'articolo», «La foto
-   illustrativa», «Formato del file», e per lo sport «Lo sport». Valgono tutte.
+   della notizia», «Formato del file», e per lo sport «Lo sport». Valgono tutte.
 3. Per ogni comunicato (i blocchi `[id]`) leggi tutto il testo, allegati compresi, **come un giornalista**: prima il
    testo del comunicato (la mail e i documenti allegati), che è la base dell'articolo; poi la locandina, per
    l'immagine e per controllare date e orari o aggiungere un dato che nel testo manca, senza dire da dove viene (lui,
@@ -148,8 +148,9 @@ riuscita» (o cosa non va) con l'esito dei comandi. In prova non pubblichi nient
      del comunicato, esatto) e `data`. Mai «posta:…», mai l'indirizzo email del mittente, niente numeri di telefono
      privati (quelli di uffici e sportelli pubblici sì). Con `"stato": "ufficiale"` questa fonte ha anche
      `"ufficiale": true`, in `fonti` e in `articolo.fonti` (AGENTE.md, «Come lavorare una notizia», punto 4).
-   - L'`immagine` dai temi di AGENTE.md («La foto illustrativa»; mai per la cronaca), `categoria`, `zona`, `luogo`
-     come dice AGENTE.md. `pubblicato`, `subito`, `comunicati` e `foto` li mette strumenti/comunicati.py: non scriverli.
+   - La foto come dice AGENTE.md («La foto della notizia»): le foto vere, se no l'`immagine` dai temi (mai per la
+     cronaca), se no la `scena` per la foto fatta con l'IA (ogni notizia ha la sua foto, dal 28 ott 2026).
+     `categoria`, `zona`, `luogo` come dice AGENTE.md. `pubblicato`, `subito`, `comunicati` e `foto` li mette strumenti/comunicati.py: non scriverli.
    - **La locandina e le foto** (volute dal proprietario il 25 ott 2026: «se mandano locandine noi le dobbiamo
      usare, in questo caso niente immagini AI», «se mandano foto usale», «anche più foto se ci sono»): le righe
      «immagine <id>/<n>: <file>» del punto 1 sono le immagini della mail. **Guardale tutte** con Read:

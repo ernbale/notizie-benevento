@@ -243,7 +243,9 @@ def testo_post(n, aggiornamento=False):
     """Il testo del post con la scheda: come messaggio(), con la nota sull'immagine fatta con l'IA quando la scheda ne ha
     una (come la didascalia di Instagram) e «Leggi tutto: <link>» in fondo (da lì gia_pubblicate() riconosce il post)."""
     m = messaggio(n, aggiornamento)
-    if not aggiornamento and n.get("immagine") and n.get("categoria") != "cronaca" and not n.get("locandina"):
+    # la foto fatta dall'IA: quella del tema o quella fatta apposta per la scena (foto_ia, strumenti/foto_ia.py)
+    if not aggiornamento and (n.get("foto_ia") or (n.get("immagine") and n.get("categoria") != "cronaca")) \
+            and not n.get("locandina") and not n.get("foto_inviate"):
         m += "\n\nImmagine illustrativa creata con l'intelligenza artificiale: non è una foto del fatto."
     return m + f"\n\nLeggi tutto: {SITO}/notizia/{n['id']}/"
 

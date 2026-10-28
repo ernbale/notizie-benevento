@@ -1544,15 +1544,37 @@ def html_galleria(foto, n):
 
 
 def foto_tema(n):
-    """La foto illustrativa della notizia (img/temi/<tema>.jpg), se c'è: mai sulla cronaca, e mai quando c'è la
-    locandina vera o una foto inviata (voluto dal proprietario il 25 ott 2026: «in questo caso niente immagini AI»)."""
+    """La foto illustrativa della notizia, se c'è, mai quando c'è la locandina vera o una foto inviata (voluto dal
+    proprietario il 25 ott 2026: «in questo caso niente immagini AI»): quella fatta apposta dall'IA per la scena della
+    notizia o della storia (img/ia/<id>.jpg, strumenti/foto_ia.py; lui, 28 ott 2026: «regola tutte foto, se non la trovi
+    ne crei una… con gpt»), anche sulla cronaca; se no quella del tema (img/temi/<tema>.jpg), mai sulla cronaca."""
+    if foto_in_alto(n):
+        return None
+    if re.match(r"^img/ia/[a-z0-9-]+$", str(n.get("foto_ia") or "")):
+        return "/" + n["foto_ia"] + ".jpg"
     t = n.get("immagine")
-    if not t or n.get("categoria") == "cronaca" or not re.match(r"^[a-z0-9-]+$", str(t)) or foto_in_alto(n):
+    if not t or n.get("categoria") == "cronaca" or not re.match(r"^[a-z0-9-]+$", str(t)):
         return None
     # «foto» è la versione scelta da archivia.py per non ripetere la stessa foto in prima pagina
     if re.match(r"^[a-z0-9-]+$", str(n.get("foto") or "")):
         t = n["foto"]
     return f"/img/temi/{t}.jpg"
+
+
+def figura_illustrativa(n, cosa="del fatto"):
+    """La foto illustrativa in grande nella pagina (foto_tema), con la scritta che è fatta con l'IA."""
+    if not foto_tema(n):
+        return ""
+    b = foto_tema(n)[:-4]
+    largo = 1200 if b.startswith("/img/ia/") else 1536
+    return (f'<figure class="foto-tema"><img src="{b}-m.jpg" srcset="{b}-m.jpg 768w, {b}.jpg {largo}w" '
+            'sizes="(max-width: 800px) 100vw, 760px" width="1536" height="1024" alt="" decoding="async">'
+            f"<figcaption>Immagine illustrativa creata con l'intelligenza artificiale: non è una foto {cosa}.</figcaption></figure>")
+
+
+def illustrata_ia(n):
+    """True se la notizia si mostra con una foto fatta dall'IA (tema o img/ia): i social lo scrivono nel post."""
+    return bool(foto_tema(n))
 
 
 def _aggiornamento(ag, fonti):
@@ -1586,11 +1608,7 @@ def html_articolo(n, appro_collegato):
         h += html_locandina(locandina(n), (fonti[0].get("nome") if fonti else ""))
     elif foto_inviate(n):
         h += html_foto(foto_inviate(n)[0], n)
-    if foto_tema(n):
-        b = foto_tema(n)[:-4]
-        h += (f'<figure class="foto-tema"><img src="{b}-m.jpg" srcset="{b}-m.jpg 768w, {b}.jpg 1536w" '
-              'sizes="(max-width: 800px) 100vw, 760px" width="1536" height="1024" alt="" decoding="async">'
-              "<figcaption>Immagine illustrativa creata con l'intelligenza artificiale: non è una foto del fatto.</figcaption></figure>")
+    h += figura_illustrativa(n)
     if isinstance(a.get("racconto"), list) and a["racconto"]:
         h += '<div class="racconto">' + _racconto(a["racconto"], fonti) + "</div>"
     elif a.get("cosa"):
@@ -1616,7 +1634,7 @@ def html_approfondimento(ap, notizie_per_id):
     if ap.get("sommario"):
         h += f'<p class="sommario">{e(ap["sommario"])}</p>'
     h += (f'<div class="meta">{"Dall&#39;archivio · " if ap["_arch"] else ""}Aggiornato {e(data_it(ap.get("aggiornato")))} · '
-          f'{len(fonti)} fonti confrontate</div>') + POSTO_ASCOLTA
+          f'{len(fonti)} fonti confrontate</div>') + POSTO_ASCOLTA + figura_illustrativa(ap)
     if isinstance(ap.get("in_breve"), list) and ap["in_breve"]:
         h += '<div class="inbreve"><strong>In breve</strong><ul>' + "".join(_frase("li", r, fonti) for r in ap["in_breve"]) + "</ul></div>"
     for s in ap.get("sezioni") or []:
