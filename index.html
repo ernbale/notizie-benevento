@@ -904,6 +904,9 @@
   function linkAppro(a) { return "/approfondimento/" + encodeURIComponent(a.id) + "/"; }
 
   // Archivio: archivio/indice.json (una voce per notizia) + archivio/AAAA-MM.json (notizie complete del mese).
+  // Tutti i file si chiedono dalla radice («/archivio/…»): aperta una notizia dalla prima pagina l'indirizzo diventa
+  // /notizia/<id>/ e un indirizzo relativo cercava /notizia/<id>/archivio/2026-10.json, che non c'è: le notizie in
+  // archivio aperte dalla ricerca o dagli elenchi dicevano «Notizia non trovata» (lui, 28 ott 2026, la Miwa a Ragusa).
   var archivio = { indice: null, mesi: {} };
   function prendiJson(url) {
     return fetch(url + "?t=" + Date.now(), { cache: "no-store" })
@@ -911,7 +914,7 @@
   }
   function indiceArchivio() {
     if (!archivio.indice) {
-      archivio.indice = prendiJson("archivio/indice.json")
+      archivio.indice = prendiJson("/archivio/indice.json")
         .then(function (j) { return (j && Array.isArray(j.voci)) ? j.voci : []; })
         .catch(function () { archivio.indice = null; return []; });
     }
@@ -920,7 +923,7 @@
   function meseArchivio(mese) {
     if (!/^\d{4}-\d{2}$/.test(String(mese))) return Promise.resolve({});
     if (!archivio.mesi[mese]) {
-      archivio.mesi[mese] = prendiJson("archivio/" + mese + ".json")
+      archivio.mesi[mese] = prendiJson("/archivio/" + mese + ".json")
         .catch(function () { delete archivio.mesi[mese]; return {}; });
     }
     return archivio.mesi[mese];
@@ -1748,7 +1751,7 @@
     var a = meteoAdesso();
     if (!a) return null;
     var o = meteo.ore, i = a.i, box = el("a", "meteo-box", []);
-    box.href = "meteo.html";
+    box.href = "/meteo.html";
     // allerta ufficiale (bollettino della Protezione civile o Meteoalarm), la peggiore tra oggi e domani
     var al = meteo.allerte && meteo.allerte.giorni ? Object.keys(meteo.allerte.giorni).sort().map(function (k) {
       var g = meteo.allerte.giorni[k], ord = ["verde", "gialla", "arancione", "rossa"], m = 0, tipi = [];
@@ -1762,7 +1765,7 @@
         .filter(function (t, i, v) { return v.indexOf(t) === i; });
       return { giorno: k, livello: ord[m], tipi: tipi };
     }).filter(function (x) { return x.livello !== "verde"; }).sort(function (x, y) { return ["verde", "gialla", "arancione", "rossa"].indexOf(y.livello) - ["verde", "gialla", "arancione", "rossa"].indexOf(x.livello); })[0] : null;
-    if (al) box.href = "meteo.html#allerte";
+    if (al) box.href = "/meteo.html#allerte";
     var gradi = function (v) { return v == null ? "–" : Math.round(v) + "°"; };
     var colori = { gialla: "#f2c200", arancione: "#ef7f1a", rossa: "#c4161c" };
     var html = (al ? '<div class="mb-allerta" style="background:' + colori[al.livello] + (al.livello === "gialla" ? ';color:#3a2c00' : "") + '">Allerta ' + al.livello + " " +
@@ -2621,7 +2624,7 @@
   var DOVE_CONTR = { sannio: "Solo Sannio", campania: "Campania", sud: "Sud Italia", italia: "Italia", europa: "Europa" };
   var contributi = null, contributiPronti = null;
   function caricaContributi() {
-    if (!contributiPronti) contributiPronti = fetch("contributi.json?t=" + Date.now(), { cache: "no-store" })
+    if (!contributiPronti) contributiPronti = fetch("/contributi.json?t=" + Date.now(), { cache: "no-store" })
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(function (j) { contributi = j || { contributi: [] }; })
       .catch(function () { contributi = { contributi: [] }; });
@@ -3413,7 +3416,7 @@
   }
   segnaMenu();
 
-  fetch("meteo.json?t=" + Date.now(), { cache: "no-store" })
+  fetch("/meteo.json?t=" + Date.now(), { cache: "no-store" })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(function (j) {
       meteo = j;
@@ -3507,7 +3510,7 @@
 
   // gli eventi arrivano a parte: il calendario e la pagina di un evento li aspettano (eventiPronti)
   var eventi = null;
-  var eventiPronti = fetch("eventi.json?t=" + Date.now(), { cache: "no-store" })
+  var eventiPronti = fetch("/eventi.json?t=" + Date.now(), { cache: "no-store" })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(function (j) { eventi = (j && j.eventi) || []; })
     .catch(function () { eventi = []; });
@@ -3572,7 +3575,7 @@
         " di " + t.toLocaleDateString("it-IT", { timeZone: TZ, weekday: "long", day: "numeric", month: "long" }) + ".";
     }
   }
-  fetch("chiusure.json?t=" + Date.now(), { cache: "no-store" })
+  fetch("/chiusure.json?t=" + Date.now(), { cache: "no-store" })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(mostraChiusure)
     .catch(function () { /* senza il file delle chiusure il sito funziona lo stesso */ });
@@ -3608,7 +3611,7 @@
     return { rimetti: function () { rimetti(12); } };
   })();
 
-  fetch("notizie.json?t=" + Date.now(), { cache: "no-store" })
+  fetch("/notizie.json?t=" + Date.now(), { cache: "no-store" })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(function (j) { dati = j || { notizie: [] }; stato(); disegna(); posto.rimetti(); })
     .catch(function () { stato(); document.getElementById("stato").textContent = "Notizie non disponibili, riprova tra poco"; disegna(); posto.rimetti(); });
