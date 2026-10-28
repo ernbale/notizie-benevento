@@ -1,7 +1,62 @@
 {
- "aggiornato": "2026-10-28T15:15+01:00",
+ "aggiornato": "2026-10-28T16:17+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "pietraroja-progetto-dae-mappa-defibrillatori-croce-rossa",
+   "titolo": "Pietraroja aderisce al Progetto DAE della Croce Rossa: i defibrillatori del paese su una mappa online",
+   "titolo_google": "Pietraroja, defibrillatori su una mappa online: Progetto DAE",
+   "sintesi": "La Giunta di Pietraroja ha approvato l'adesione al Progetto DAE della Croce Rossa di San Lorenzello, che censisce i defibrillatori del territorio e li mette su una mappa online. La convenzione dura sei anni e non costa niente al Comune.",
+   "categoria": "altro",
+   "luogo": "Pietraroja",
+   "pubblicato": "2026-10-28T15:43+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/28/pietraroja-aderisce-al-progetto-dae-una-mappa-digitale-per-individuare-i-defibrillatori-sul-territorio/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Comune di Pietraroja, sul Matese, aderisce al «Progetto DAE» della Croce Rossa Italiana, Comitato di San Lorenzello: l'iniziativa censisce i defibrillatori (DAE, gli apparecchi che servono a far ripartire il cuore in caso di arresto cardiaco) presenti sul territorio e li mette su una mappa digitale. L'adesione e lo schema di convenzione li ha approvati la Giunta comunale all'unanimità, con una delibera firmata martedì 27 ottobre.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "La mappa si consulta sul sito dae.crisanlorenzello.it e serve a trovare in fretta il defibrillatore più vicino. Per ogni apparecchio la Croce Rossa raccoglie dove si trova, marca e modello, se funziona e le scadenze di batterie e piastre. I dati vanno aggiornati almeno ogni sei mesi, o quando un apparecchio viene riparato, sostituito, spostato o non è disponibile; la Croce Rossa può controllarli anche con sopralluoghi, d'accordo con chi ospita i defibrillatori.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "La convenzione non costa niente a nessuna delle parti e dura sei anni, con un rinnovo automatico per altri sei se nessuno la disdice. La proposta l'aveva presentata il 31 agosto la Croce Rossa di San Lorenzello, presieduta da Tommaso Masotta.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quanti defibrillatori ci sono oggi a Pietraroja e dove si trovano."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Pietraroja aderisce al “Progetto DAE”: una mappa digitale per individuare i defibrillatori sul territorio",
+      "url": "https://www.ntr24.tv/2026/10/28/pietraroja-aderisce-al-progetto-dae-una-mappa-digitale-per-individuare-i-defibrillatori-sul-territorio/",
+      "data": "28 ott, 15:43"
+     }
+    ]
+   },
+   "zona": "telesina"
+  },
   {
    "id": "telese-terme-mcdonalds-apre-29-ottobre-35-assunzioni",
    "titolo": "Telese Terme, giovedì 29 ottobre apre il McDonald's di via Lagni: 35 assunti",
@@ -8118,13 +8173,13 @@
   },
   {
    "id": "buonalbergo-carta-dedicata-a-te-lista-beneficiari-2026",
-   "titolo": "Carta Dedicata a te, pubblicati gli elenchi dei beneficiari in otto Comuni del Sannio: prima ricarica dal 4 novembre",
-   "titolo_google": "Carta Dedicata a te 2026: beneficiari in sette Comuni del Sannio",
-   "sintesi": "Buonalbergo, Montesarchio, Sant'Angelo a Cupolo, Pago Veiano, Castelpagano, Arpaise, Morcone e San Nicola Manfredi hanno pubblicato gli elenchi delle famiglie che ricevono la «Carta Dedicata a te», 500 euro all'anno per la spesa. La prima ricarica arriva dal 4 novembre e il primo acquisto va fatto entro il 16 dicembre.",
+   "titolo": "Carta Dedicata a te, pubblicati gli elenchi dei beneficiari in nove Comuni del Sannio: prima ricarica dal 4 novembre",
+   "titolo_google": "Carta Dedicata a te 2026: beneficiari in nove Comuni del Sannio",
+   "sintesi": "Buonalbergo, Montesarchio, Sant'Angelo a Cupolo, Pago Veiano, Castelpagano, Arpaise, Morcone, San Nicola Manfredi e Ceppaloni hanno pubblicato gli elenchi delle famiglie che ricevono la «Carta Dedicata a te», 500 euro all'anno per la spesa. La prima ricarica arriva dal 4 novembre e il primo acquisto va fatto entro il 16 dicembre.",
    "categoria": "avvisi",
    "zona": "provincia",
-   "luogo": "Buonalbergo, Montesarchio, Sant'Angelo a Cupolo, Pago Veiano, Castelpagano, Arpaise, Morcone e San Nicola Manfredi",
-   "pubblicato": "2026-10-26",
+   "luogo": "Buonalbergo, Montesarchio, Sant'Angelo a Cupolo, Pago Veiano, Castelpagano, Arpaise, Morcone, San Nicola Manfredi e Ceppaloni",
+   "pubblicato": "2026-10-28T16:01+01:00",
    "stato": "ufficiale",
    "rilevante": false,
    "fonti": [
@@ -8167,10 +8222,22 @@
      "nome": "Comune di San Nicola Manfredi",
      "url": "https://www.comune.sannicolamanfredi.bn.it/c062067/po/mostra_news.php?id=121&area=H",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di Ceppaloni",
+     "url": "https://www.comune.ceppaloni.bn.it/novita/avvisi/novita_148.html",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Mercoledì 28 ottobre l'elenco dei beneficiari l'ha pubblicato anche il Comune di Ceppaloni: ci sono solo il numero della pratica e il protocollo INPS, da confrontare con quello dell'attestazione ISEE. La carta vale 500 euro per ogni anno ed è attiva dal 4 novembre 2026; chi la riceve per la prima volta la ritira negli uffici postali abilitati con la comunicazione di assegnazione, un documento e il codice fiscale. Il primo acquisto va fatto entro il 16 dicembre 2026; la quota del 2027 arriva da aprile 2027.",
+      "fonti": [
+       "Comune di Ceppaloni"
+      ],
+      "giorno": "2026-10-28"
+     },
      {
       "testo": "Mercoledì 28 ottobre la lista dei beneficiari l'ha pubblicata all'albo pretorio anche il Comune di San Nicola Manfredi. Il Comune ricorda che in municipio non si ritira niente: i nuovi beneficiari ricevono una lettera con il codice della carta e la ritirano negli uffici postali abilitati; chi era già confermato riceve i soldi sulla carta che ha. Il primo acquisto va fatto entro il 16 dicembre 2026, altrimenti si perde il contributo.",
       "fonti": [
@@ -8389,6 +8456,13 @@
       "url": "https://www.comune.sannicolamanfredi.bn.it/c062067/po/mostra_news.php?id=121&area=H",
       "data": "28 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "Comune di Ceppaloni",
+      "titolo": "Carta \"Dedicata a te\" 2026-2027",
+      "url": "https://www.comune.ceppaloni.bn.it/novita/avvisi/novita_148.html",
+      "data": "28 ott",
+      "ufficiale": true
      }
     ],
     "aggiornamento": {
@@ -8400,9 +8474,9 @@
      "titolo_prima": "Carta Dedicata a te, pubblicati gli elenchi dei beneficiari in sei Comuni del Sannio: prima ricarica dal 4 novembre"
     }
    },
-   "immagine": "carta-spesa",
-   "importanza": 3,
-   "foto": "carta-spesa-7"
+   "immagine": "documenti",
+   "foto": "documenti-11",
+   "importanza": 3
   },
   {
    "id": "benevento-alessandro-calabrese-premio-poesia-seneca-2026",
@@ -11011,26 +11085,40 @@
   },
   {
    "id": "eav-sciopero-generale-30-ottobre-napoli-benevento",
-   "titolo": "EAV, venerdì 30 ottobre sciopero generale di 24 ore: sulla Napoli-Benevento bus sostitutivi regolari",
-   "titolo_google": "Sciopero EAV 30 ottobre: Napoli-Benevento, bus regolari",
-   "sintesi": "Venerdì 30 ottobre 2026 c'è lo sciopero generale nazionale di 24 ore proclamato dal sindacato USB, che tocca treni e bus. EAV scrive che sulla Napoli-Benevento il servizio sostitutivo con autobus sarà regolare; i suoi bus sono garantiti dalle 5:30 alle 8:30 e dalle 16:30 alle 19:30.",
+   "titolo": "EAV, rinviato lo sciopero generale del 30 ottobre: niente stop per treni e bus, anche sulla Napoli-Benevento",
+   "titolo_google": "Sciopero EAV 30 ottobre rinviato: Napoli-Benevento",
+   "sintesi": "Lo sciopero generale di 24 ore proclamato dal sindacato USB per venerdì 30 ottobre 2026 non si farà in quella data: lo ha comunicato EAV, che gestisce anche la linea Napoli-Benevento. La Commissione di garanzia ha rilevato che cadeva nel periodo di franchigia per la commemorazione dei defunti; la nuova data la comunicherà il sindacato.",
    "categoria": "strade",
    "zona": "provincia",
    "immagine": "treno",
    "luogo": "Linea Napoli-Benevento",
-   "pubblicato": "2026-10-26T08:31:55+01:00",
+   "pubblicato": "2026-10-28T14:26+01:00",
    "in_vigore_fino": "2026-10-30",
    "stato": "ufficiale",
    "rilevante": false,
    "fonti": [
     {
-     "nome": "EAV",
-     "url": "https://www.eavsrl.it/linee-suburbane-avviso-di-sciopero-nazionale-di-24-ore-del-30-ottobre-2026/",
+     "nome": "EAV (28/10)",
+     "url": "https://www.eavsrl.it/rinvio-sciopero-usb-30-ottobre-2026/",
      "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Lo sciopero generale nazionale di 24 ore proclamato dal sindacato USB per venerdì 30 ottobre 2026 è stato rinviato e non toccherà i treni e i bus di EAV, l'Ente Autonomo Volturno, che gestisce anche la linea Napoli–Benevento. Lo ha comunicato EAV mercoledì 28 ottobre.",
+      "fonti": [
+       "EAV (28/10)"
+      ],
+      "giorno": "2026-10-28"
+     },
+     {
+      "testo": "Il motivo è una decisione della Commissione di garanzia, l'autorità che controlla gli scioperi nei servizi pubblici essenziali: per il trasporto pubblico locale lo sciopero cadeva nel periodo di franchigia per la commemorazione dei defunti, dal 30 ottobre al 5 novembre, quando non si può scioperare. Lo sciopero sarà fissato di nuovo in un altro giorno, che il sindacato comunicherà più avanti.",
+      "fonti": [
+       "EAV (28/10)"
+      ],
+      "giorno": "2026-10-28"
+     },
      {
       "testo": "Per i bus di EAV lo sciopero di venerdì 30 ottobre ha due fasce garantite su tutta la rete: dalle 5:30 alle 8:30 e dalle 16:30 alle 19:30. Fuori da queste ore le corse dipendono da quanti autisti aderiscono. Sulla linea Napoli–Benevento, dove i treni sono sostituiti dai bus, EAV aveva già scritto che il servizio sostitutivo sarà regolare.",
       "fonti": [
@@ -11075,12 +11163,19 @@
       "fonti": [
        "EAV (26/10)"
       ]
+     },
+     {
+      "data": "28 ottobre",
+      "fatto": "EAV comunica che lo sciopero del 30 ottobre è rinviato: cadeva nel periodo di franchigia per i defunti.",
+      "fonti": [
+       "EAV (28/10)"
+      ]
      }
     ],
     "concordano": [],
     "divergono": [],
     "non_si_sa": [
-     "Gli orari delle corse dei bus sostitutivi sulla Napoli–Benevento: l'avviso non li elenca."
+     "La nuova data dello sciopero: la comunicherà il sindacato USB."
     ],
     "fonti": [
      {
@@ -11096,14 +11191,22 @@
       "url": "https://www.eavsrl.it/linee-automobilistiche-avviso-di-sciopero-generale-nazionale-di-24h-venerdi-30-ottobre-2026/",
       "data": "26 ott, 08:31",
       "ufficiale": true
+     },
+     {
+      "nome": "EAV (28/10)",
+      "titolo": "Rinvio sciopero USB 30 ottobre 2026",
+      "url": "https://www.eavsrl.it/rinvio-sciopero-usb-30-ottobre-2026/",
+      "data": "28 ott, 14:26",
+      "ufficiale": true
      }
     ],
     "aggiornamento": {
-     "testo": "Lunedì 26 ottobre EAV ha pubblicato l'avviso per i bus: venerdì 30 ottobre le corse sono garantite dalle 5:30 alle 8:30 e dalle 16:30 alle 19:30.",
+     "testo": "Mercoledì 28 ottobre EAV ha comunicato che lo sciopero di venerdì 30 ottobre è rinviato: la Commissione di garanzia ha rilevato che cadeva nel periodo di franchigia per i defunti.",
      "fonti": [
-      "EAV (26/10)"
+      "EAV (28/10)"
      ],
-     "quando": "2026-10-26T09:17+01:00"
+     "quando": "2026-10-28T16:17+01:00",
+     "titolo_prima": "EAV, venerdì 30 ottobre sciopero generale di 24 ore: sulla Napoli-Benevento bus sostitutivi regolari"
     }
    },
    "foto": "treno-6",
@@ -12110,7 +12213,7 @@
      "titolo_prima": "Mercoledì 28 ottobre sciopero di 8 ore in AIR Campania, confermato dai sindacati: possibili riduzioni dei bus extraurbani"
     }
    },
-   "rilevante": true,
+   "rilevante": false,
    "foto": "autobus-5",
    "importanza": 5
   },
