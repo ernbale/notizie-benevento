@@ -1,7 +1,294 @@
 {
- "aggiornato": "2026-10-28T09:12+01:00",
+ "aggiornato": "2026-10-28T10:12+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "paduli-51enne-carcere-condanna-definitiva-violenza-sessuale-maltrattamenti",
+   "titolo": "Paduli, 51enne in carcere: condanna definitiva a 10 anni per violenza sessuale, stalking e maltrattamenti in famiglia",
+   "titolo_google": "Paduli, 51enne in carcere: condanna definitiva a 10 anni",
+   "sintesi": "Mercoledì 28 ottobre i carabinieri di Paduli hanno portato in carcere a Benevento un 51enne di origine romena che vive in paese. Deve scontare 10 anni per violenza sessuale aggravata, atti persecutori e maltrattamenti in famiglia, commessi a Paduli tra il 2014 e il 2020.",
+   "categoria": "cronaca",
+   "zona": "provincia",
+   "luogo": "Paduli",
+   "pubblicato": "2026-10-28T09:54+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 4,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/28/violenza-sessuale-atti-persecutori-e-maltrattamenti-in-famiglia-condannato-51enne-scatta-larresto/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/28/paduli-51enne-rumeno-in-carcere-per-violenza-sessuale-e-maltrattamenti-in-famiglia/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/condanna-definitiva-per-violenza-sessuale-aggravata-maltrattamenti-e-stalking-51enne-in-carcere/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Mercoledì 28 ottobre i carabinieri della stazione di Paduli hanno arrestato un uomo di 51 anni, di origine romena, che vive in paese, e lo hanno portato nel carcere di Benevento. Su di lui c'era un ordine di carcerazione: deve scontare 10 anni di reclusione.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24",
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "La condanna è definitiva. L'uomo è stato riconosciuto colpevole di violenza sessuale aggravata, atti persecutori (lo stalking) e maltrattamenti in famiglia, reati commessi a Paduli tra il 2014 e il 2020. L'ordine di carcerazione l'ha firmato il 23 ottobre l'ufficio della Procura di Benevento che si occupa di far eseguire le pene.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24",
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "I carabinieri lo hanno rintracciato durante i controlli della Compagnia di Benevento, che cercano anche le persone che devono andare in carcere. Dopo le pratiche in caserma è stato portato in carcere, a disposizione dei giudici.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "23 ottobre",
+      "fatto": "La Procura di Benevento emette l'ordine di carcerazione dopo la condanna definitiva.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "data": "28 ottobre",
+      "fatto": "I carabinieri di Paduli rintracciano il 51enne e lo portano in carcere a Benevento.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "La pena di 10 anni, i reati (violenza sessuale aggravata, atti persecutori, maltrattamenti in famiglia) e gli anni dei fatti, dal 2014 al 2020, a Paduli.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24",
+       "Anteprima24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Chi sono le vittime: le fonti non lo dicono, per proteggerle."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Violenza sessuale, atti persecutori e maltrattamenti in famiglia: condannato 51enne. Scatta l’arresto",
+      "url": "https://www.ntr24.tv/2026/10/28/violenza-sessuale-atti-persecutori-e-maltrattamenti-in-famiglia-condannato-51enne-scatta-larresto/",
+      "data": "28 ott, 10:05"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Paduli, 51enne rumeno in carcere per violenza sessuale e maltrattamenti",
+      "url": "https://www.beneventonews24.it/2026/10/28/paduli-51enne-rumeno-in-carcere-per-violenza-sessuale-e-maltrattamenti-in-famiglia/",
+      "data": "28 ott, 09:49"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Condanna definitiva per violenza sessuale aggravata, maltrattamenti e stalking: 51enne in carcere",
+      "url": "https://www.anteprima24.it/benevento/condanna-definitiva-per-violenza-sessuale-aggravata-maltrattamenti-e-stalking-51enne-in-carcere/",
+      "data": "28 ott, 09:54"
+     }
+    ]
+   }
+  },
+  {
+   "id": "fortore-telefono-internet-interrotti-confederazione-imprese-italia",
+   "titolo": "Fortore, telefono e internet di nuovo interrotti: le imprese chiedono controlli sulla rete",
+   "titolo_google": "Fortore senza telefono e internet: le imprese chiedono controlli",
+   "sintesi": "Da martedì 27 ottobre in molti paesi del Fortore e del pre-Fortore telefono e internet non funzionano. Confederazione Imprese Italia denuncia interruzioni continue, spesso spiegate con un «cavo tranciato», e chiede verifiche su come è stata posata e protetta la rete.",
+   "categoria": "altro",
+   "zona": "fortore",
+   "luogo": "Fortore e pre-Fortore",
+   "pubblicato": "2026-10-28T09:55+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 3,
+   "fonti": [
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/fortore-e-pre-fortore-disconnessi-confederazione-imprese-italia-basta-rassegnazione-servono-risposte-e-controlli-sulle-infrastrutture/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/442381/fortore-disconnesso-confederazione-imprese-italia-basta-rassegnazione.shtml"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Nel Fortore e nel pre-Fortore telefono e internet sono di nuovo interrotti: il guasto è cominciato martedì 27 ottobre in mattinata e mercoledì 28 non era ancora risolto. Tocca ampie parti del territorio e crea difficoltà a imprese, professionisti, uffici e famiglie. A denunciarlo è Confederazione Imprese Italia, l'associazione di categoria, che raccoglie le segnalazioni dei suoi iscritti.",
+      "fonti": [
+       "TV7 Benevento",
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Secondo l'associazione non è la prima volta: le interruzioni si ripetono. Quando gli utenti chiamano l'assistenza, la risposta più frequente è che è stato «tranciato» un cavo. Il presidente nazionale, Biagio Cefalo, spiega che senza linea si bloccano i rapporti con clienti e fornitori, i pagamenti elettronici, i servizi digitali e il lavoro degli uffici, con effetti anche su banche e uffici postali.",
+      "fonti": [
+       "TV7 Benevento",
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "«Non basta comunicare che un cavo è stato tranciato», dice Cefalo: bisogna spiegare perché succede, quali zone sono toccate, quando torna il servizio e cosa si fa perché non ricapiti. L'associazione chiede alle autorità e agli enti competenti verifiche documentate su come sono stati fatti i lavori e protetta la rete: la posa dei cavi, le profondità previste dai progetti e i collaudi. Precisa di non voler dare colpe prima che siano accertate.",
+      "fonti": [
+       "TV7 Benevento",
+       "Ottopagine"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Il guasto cominciato martedì mattina e ancora in corso, la spiegazione del cavo tranciato e la richiesta di verifiche sulla rete.",
+      "fonti": [
+       "TV7 Benevento",
+       "Ottopagine"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Quali paesi sono rimasti senza linea e quale gestore è coinvolto.",
+     "Quando il servizio tornerà normale."
+    ],
+    "fonti": [
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Fortore e pre-Fortore disconnessi. Confederazione Imprese Italia: «Basta rassegnazione, servono risposte e controlli sulle infrastrutture»",
+      "url": "https://www.tvsette.net/fortore-e-pre-fortore-disconnessi-confederazione-imprese-italia-basta-rassegnazione-servono-risposte-e-controlli-sulle-infrastrutture/",
+      "data": "28 ott, 09:55"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Fortore disconnesso. Confederazione Imprese Italia: \"Basta rassegnazione\"",
+      "url": "https://www.ottopagine.it/bn/attualita/442381/fortore-disconnesso-confederazione-imprese-italia-basta-rassegnazione.shtml",
+      "data": "28 ott, 09:42"
+     }
+    ]
+   }
+  },
+  {
+   "id": "apollosa-ladri-studio-tecnico-centro-28-ottobre",
+   "titolo": "Apollosa, ladri nello studio di una geometra in centro: entrati dal balcone",
+   "titolo_google": "Apollosa, ladri nello studio di una geometra in centro",
+   "sintesi": "Nella notte tra martedì 27 e mercoledì 28 ottobre i ladri sono entrati nello studio tecnico di una geometra nel centro di Apollosa, salendo lungo il tubo della grondaia e rompendo il vetro della porta del balcone. Da una prima ricostruzione non avrebbero portato via niente.",
+   "categoria": "cronaca",
+   "zona": "provincia",
+   "luogo": "Apollosa, centro",
+   "pubblicato": "2026-10-28T09:49+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 3,
+   "fonti": [
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/28/ladri-in-azione-ad-apollosa-nel-mirino-uno-studio-professionale/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Nella notte tra martedì 27 e mercoledì 28 ottobre i ladri sono entrati nello studio tecnico di una geometra, nel centro di Apollosa. Da una prima ricostruzione sembra che non abbiano portato via niente.",
+      "fonti": [
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Per entrare si sono arrampicati lungo il tubo della grondaia del palazzo fino al balcone del primo piano, poi hanno rotto il vetro della porta-finestra. I carabinieri sono arrivati per i rilievi.",
+      "fonti": [
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Se i ladri sono stati visti o ripresi da telecamere."
+    ],
+    "fonti": [
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Ladri in azione ad Apollosa: nel mirino uno studio professionale",
+      "url": "https://www.beneventonews24.it/2026/10/28/ladri-in-azione-ad-apollosa-nel-mirino-uno-studio-professionale/",
+      "data": "28 ott, 09:49"
+     }
+    ]
+   }
+  },
+  {
+   "id": "torrecuso-sai-assistente-sociale-candidature-13-novembre",
+   "titolo": "Torrecuso, si cerca un assistente sociale per l'accoglienza dei migranti: domande entro il 13 novembre",
+   "titolo_google": "Torrecuso, lavoro come assistente sociale: domande al 13 novembre",
+   "sintesi": "Il progetto SAI di Torrecuso, che accoglie richiedenti asilo e rifugiati anche a Ceppaloni e Paolisi, cerca un assistente sociale. Servono la laurea in Servizio sociale, l'iscrizione all'albo, la partita Iva e l'auto; le candidature vanno mandate per email entro il 13 novembre 2026.",
+   "categoria": "avvisi",
+   "zona": "provincia",
+   "luogo": "Torrecuso, Ceppaloni e Paolisi",
+   "pubblicato": "2026-10-28",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 2,
+   "in_vigore_fino": "2026-11-13",
+   "fonti": [
+    {
+     "nome": "Comune di Torrecuso",
+     "url": "https://torrecuso.halleyweb.it/c062076/mc/mc_p_dettaglio.php?id_pubbl=11237",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il SAI di Torrecuso, il progetto di accoglienza e integrazione per richiedenti asilo e rifugiati che il Comune ha allargato anche a Ceppaloni e Paolisi, cerca un assistente sociale. A gestire il servizio è il Consorzio Sale della Terra, con la cooperativa sociale Nuovi Orizzonti. L'avviso è uscito il 28 ottobre all'albo del Comune.",
+      "fonti": [
+       "Comune di Torrecuso"
+      ]
+     },
+     {
+      "testo": "Servono la laurea in Servizio sociale e l'iscrizione all'albo, la patente B, un'auto propria, la partita Iva e le capacità fisiche adatte al lavoro. Conta l'esperienza nel lavoro sociale e di aiuto alle persone, meglio ancora se nella guida di gruppi di lavoro con figure diverse.",
+      "fonti": [
+       "Comune di Torrecuso"
+      ]
+     },
+     {
+      "testo": "La domanda va mandata entro il 13 novembre 2026 all'indirizzo passionelavoro@consorziosaledellaterra.it, con oggetto «CANDIDATURA PROGETTO SAI TORRECUSO (BN) – AMPLIAMENTI DI CEPPALONI E PAOLISI (BN)». Vanno allegati un documento d'identità valido, il curriculum in formato europeo con telefono ed email, una dichiarazione che quanto scritto è vero e il consenso al trattamento dei dati. Chi ha i requisiti sarà chiamato per un colloquio, con giorno e ora comunicati per email.",
+      "fonti": [
+       "Comune di Torrecuso"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di Torrecuso",
+      "titolo": "AVVISO PUBBLICO DI SELEZIONE PERSONALE PER LO SVOLGIMENTO DI ATTIVITÀ ALL’INTERNO DEL SISTEMA DI ACCOGLIENZA E INTEGRAZIONE – SAI COMUNE DI TORRECUSO (BN) – AMPLIAMENTI DI CEPPALONI E PAOLISI (BN) ANNO 2026",
+      "url": "https://torrecuso.halleyweb.it/c062076/mc/mc_p_dettaglio.php?id_pubbl=11237",
+      "data": "28 ott",
+      "ufficiale": true
+     }
+    ]
+   }
+  },
   {
    "id": "basket-giovanile-united-benevento-under-19-vince-derby-smile",
    "titolo": "Basket giovanile a Benevento, la United Under 19 vince il derby con la Smile 76-44",
@@ -26,6 +313,10 @@
      "nome": "Miwa Basket Benevento",
      "url": "https://www.cestisticabenevento.it/2026/10/28/report-campionati-giovanili-2-2/",
      "ufficiale": true
+    },
+    {
+     "nome": "NTR24 Sport",
+     "url": "https://sport.ntr24.tv/2026/10/28/basket-miwa-lu19-united-fa-suo-il-derby-con-la-smile-esordio-anche-per-lu19-femminile/"
     }
    ],
    "articolo": {
@@ -33,7 +324,8 @@
      {
       "testo": "La United Benevento Under 19 Gold ha vinto il derby cittadino contro la Smile Benevento con il punteggio di 76-44. Per i Boars, allenati da coach Murolo, è la terza vittoria della stagione. La partita ha chiuso una settimana di gare per il settore giovanile della Miwa Basket Benevento, che ha visto anche l'esordio dell'Under 19 femminile.",
       "fonti": [
-       "Miwa Basket Benevento"
+       "Miwa Basket Benevento",
+       "NTR24 Sport"
       ]
      },
      {
@@ -66,6 +358,12 @@
       "url": "https://www.cestisticabenevento.it/2026/10/28/report-campionati-giovanili-2-2/",
       "data": "28 ott, 10:00",
       "ufficiale": true
+     },
+     {
+      "nome": "NTR24 Sport",
+      "titolo": "Basket Miwa: l’U19 United fa suo il derby con la Smile, esordio anche per l’U19 femminile",
+      "url": "https://sport.ntr24.tv/2026/10/28/basket-miwa-lu19-united-fa-suo-il-derby-con-la-smile-esordio-anche-per-lu19-femminile/",
+      "data": "28 ott, 10:07"
      }
     ]
    },
@@ -74,46 +372,72 @@
   },
   {
    "id": "san-giorgio-del-sannio-statale-7-scontro-due-auto-feriti-28-ottobre",
-   "titolo": "San Giorgio del Sannio, scontro frontale tra due auto sulla statale 7 Appia: due feriti",
-   "titolo_google": "Incidente sulla statale 7 a San Giorgio del Sannio: due feriti",
-   "sintesi": "Mercoledì 28 ottobre, poco prima delle 8, due auto si sono scontrate frontalmente sulla statale 7 Appia a San Giorgio del Sannio. Due persone sono state portate in ospedale; la strada è rimasta bloccata durante i soccorsi.",
+   "titolo": "Calvi, scontro frontale tra due auto sulla statale 7 Appia: due feriti",
+   "titolo_google": "Incidente sulla statale 7 Appia a Calvi: due feriti",
+   "sintesi": "Mercoledì 28 ottobre, poco prima delle 8, due auto si sono scontrate frontalmente sulla statale 7 Appia nel territorio di Calvi, vicino a San Giorgio del Sannio. I due conducenti sono stati portati in ospedale; la strada è rimasta bloccata durante i soccorsi.",
    "categoria": "cronaca",
    "zona": "provincia",
-   "luogo": "San Giorgio del Sannio, statale 7 Appia",
-   "pubblicato": "2026-10-28T08:42+01:00",
-   "stato": "una_fonte",
+   "luogo": "Calvi, statale 7 Appia",
+   "pubblicato": "2026-10-28T09:24+01:00",
+   "stato": "confermata",
    "rilevante": false,
    "importanza": 4,
    "fonti": [
     {
      "nome": "Ottopagine",
      "url": "https://www.ottopagine.it/bn/cronaca/442375/scontro-tra-auto-due-pensionati-feriti-e-paura-lungo-la-statale-7-appia.shtml"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/28/scontro-frontale-sullappia-nel-territorio-di-san-giorgio-del-sannio-due-feriti-in-ospedale/"
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Mercoledì 28 ottobre, poco prima delle 8 del mattino, due auto si sono scontrate frontalmente sulla statale 7 Appia, nel territorio di San Giorgio del Sannio. Due persone sono rimaste ferite e sono state portate in ospedale.",
+      "testo": "Mercoledì 28 ottobre, poco prima delle 8 del mattino, due auto si sono scontrate frontalmente sulla statale 7 Appia, nel territorio di Calvi, il paese accanto a San Giorgio del Sannio. I due conducenti sono rimasti feriti e sono stati portati in ospedale.",
       "fonti": [
+       "BeneventoNews24",
        "Ottopagine"
-      ]
+      ],
+      "giorno": "2026-10-28"
      },
      {
-      "testo": "Le auto coinvolte sono una Toyota Aygo, guidata da un uomo, e una Lancia Musa, guidata da una donna. Sono arrivati i vigili del fuoco del comando provinciale di Benevento, il 118 di San Giorgio del Sannio e i carabinieri: i soccorritori hanno aiutato i feriti a uscire dalle auto e hanno messo in sicurezza i mezzi. La donna alla guida della Lancia, una pensionata, è stata portata in ospedale per le ferite dell'urto.",
+      "testo": "Le auto coinvolte sono una Toyota Aygo, guidata da un uomo, e una Lancia Musa, guidata da una donna, una pensionata: è lei ad avere avuto la peggio. I vigili del fuoco del comando provinciale di Benevento hanno aiutato i feriti a uscire dalle auto e hanno messo in sicurezza i mezzi; li hanno soccorsi i sanitari del 118.",
       "fonti": [
+       "BeneventoNews24",
        "Ottopagine"
-      ]
+      ],
+      "giorno": "2026-10-28"
      },
      {
-      "testo": "La strada è rimasta bloccata per il tempo dei soccorsi e dei rilievi. Come sia andato lo scontro lo dovranno ricostruire i carabinieri.",
+      "testo": "La strada è rimasta bloccata per il tempo dei soccorsi e dei rilievi, con forti rallentamenti. I carabinieri di San Giorgio del Sannio devono ricostruire come sia andato lo scontro; la Polizia municipale di Calvi ha gestito il traffico.",
       "fonti": [
+       "BeneventoNews24",
+       "Ottopagine"
+      ],
+      "giorno": "2026-10-28"
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Lo scontro frontale poco prima delle 8 sulla statale 7 Appia tra una Toyota Aygo e una Lancia Musa, con i due conducenti portati in ospedale e la pensionata alla guida della Lancia la più colpita.",
+      "fonti": [
+       "BeneventoNews24",
        "Ottopagine"
       ]
      }
     ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
+    "divergono": [
+     {
+      "testo": "Ottopagine colloca l'incidente a San Giorgio del Sannio; BeneventoNews24 lo colloca nel territorio di Calvi, dove è intervenuta la Polizia municipale per il traffico. Abbiamo seguito BeneventoNews24, la versione più precisa.",
+      "fonti": [
+       "Ottopagine",
+       "BeneventoNews24"
+      ]
+     }
+    ],
     "non_si_sa": [
      "Come stanno i due feriti e in quale ospedale sono stati portati.",
      "Come è avvenuto lo scontro."
@@ -124,8 +448,22 @@
       "titolo": "Scontro tra auto: due pensionati feriti e paura lungo la Statale 7 Appia",
       "url": "https://www.ottopagine.it/bn/cronaca/442375/scontro-tra-auto-due-pensionati-feriti-e-paura-lungo-la-statale-7-appia.shtml",
       "data": "28 ott, 08:42"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Calvi| Incidente frontale sull’Appia: due feriti",
+      "url": "https://www.beneventonews24.it/2026/10/28/scontro-frontale-sullappia-nel-territorio-di-san-giorgio-del-sannio-due-feriti-in-ospedale/",
+      "data": "28 ott, 09:24"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "L'incidente è avvenuto nel territorio di Calvi, dove la Polizia municipale ha gestito il traffico; i carabinieri di San Giorgio del Sannio ricostruiscono la dinamica.",
+     "fonti": [
+      "BeneventoNews24"
+     ],
+     "quando": "2026-10-28T10:12+01:00",
+     "titolo_prima": "San Giorgio del Sannio, scontro frontale tra due auto sulla statale 7 Appia: due feriti"
+    }
    }
   },
   {
@@ -370,6 +708,10 @@
     {
      "nome": "Anteprima24",
      "url": "https://www.anteprima24.it/benevento/nicola-sguera-vince-il-premio-letterario-nazionale-agrorinasce/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/nicola-sguera-vince-agrorinasce-romanzo-esther-johnson/"
     }
    ],
    "articolo": {
@@ -378,21 +720,24 @@
       "testo": "Lo scrittore beneventano Nicola Sguera ha vinto la sezione Narrativa inedita della seconda edizione del Premio letterario nazionale «Agrorinasce – Letteratura per il Sociale e la Legalità», con il romanzo «Corpo a rendere». La premiazione si è svolta martedì 27 ottobre a Casapesenna, in provincia di Caserta, nel centro giovanile «Rosario Livatino», un edificio tolto alla camorra.",
       "fonti": [
        "NTR24",
-       "Anteprima24"
+       "Anteprima24",
+       "Cronache del Sannio"
       ]
      },
      {
       "testo": "In finale nella stessa sezione c'erano anche Ilenia Pasquetti, Giuseppe Mascolo e Maria Usiello; il testimonial della giornata era Luca Abete. Il premio lo promuove Agrorinasce, l'agenzia che gestisce molti beni confiscati alla criminalità organizzata, insieme al Dipartimento di Lettere e Beni culturali dell'Università Vanvitelli e alla casa editrice Terra Somnia. Per ognuna delle sezioni principali sono previsti 1.000 euro: Sguera ha detto che una parte servirà a ricordare Esther.",
       "fonti": [
        "NTR24",
-       "Anteprima24"
+       "Anteprima24",
+       "Cronache del Sannio"
       ]
      },
      {
       "testo": "Il romanzo si ispira, molto liberamente, alla storia di Esther Johnson, una donna nigeriana di 36 anni che ogni mattina partiva da Castel Volturno per Benevento, vittima di sfruttamento sessuale. Nel giugno 2016 fu uccisa a colpi di pistola vicino alla ferrovia di Benevento, e il delitto non ha ancora un colpevole. Da quella morte sono nati «La casa di Esther», che accoglie donne vittime di tratta, e il «Patto delle Parole», che Libera Benevento rinnova ogni 14 giugno con scuole e associazioni.",
       "fonti": [
        "NTR24",
-       "Anteprima24"
+       "Anteprima24",
+       "Cronache del Sannio"
       ]
      },
      {
@@ -427,6 +772,12 @@
       "titolo": "Nicola Sguera vince il Premio Letterario Nazionale “Agrorinasce”",
       "url": "https://www.anteprima24.it/benevento/nicola-sguera-vince-il-premio-letterario-nazionale-agrorinasce/",
       "data": "28 ott, 08:26"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Nicola Sguera vince Agrorinasce con un romanzo ispirato dalla vicenda di Esther Johnson",
+      "url": "https://www.cronachedelsannio.it/sannionews24/nicola-sguera-vince-agrorinasce-romanzo-esther-johnson/",
+      "data": "28 ott, 09:46"
      }
     ]
    },
@@ -10127,6 +10478,10 @@
     {
      "nome": "Il Mattino",
      "url": "https://www.ilmattino.it/benevento/sciopero_giornata_di_disagi_a_benevento_si_fermano_i_bus_in_citta_stop_dalle_8_alle_16_e_presidio_a_napoli-9852370.html"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/28/air-campania-sindacati-proclamano-sciopero-di-otto-ore/"
     }
    ],
    "articolo": {
@@ -10143,7 +10498,8 @@
       "testo": "Lo sciopero di mercoledì 28 ottobre è confermato. I sindacati FILT CGIL, FIT CISL, UILTRASPORTI, UGL FNA e FAISA CISAL hanno annunciato anche un presidio davanti alla sede della Regione Campania, all'isola C3 del Centro Direzionale di Napoli, dalle 10 alle 12. La Regione è la proprietaria di AIR.",
       "fonti": [
        "NTR24",
-       "Cronache del Sannio"
+       "Cronache del Sannio",
+       "Il Sannio Quotidiano"
       ],
       "giorno": "2026-10-27"
      },
@@ -10213,7 +10569,8 @@
       "fonti": [
        "AIR Campania",
        "NTR24",
-       "Cronache del Sannio"
+       "Cronache del Sannio",
+       "Il Sannio Quotidiano"
       ]
      },
      {
@@ -10263,6 +10620,12 @@
       "titolo": "Sciopero, giornata di disagi a Benevento: «Si fermano i bus in città». Stop dalle 8 alle 16 e presidio a Napoli",
       "url": "https://www.ilmattino.it/benevento/sciopero_giornata_di_disagi_a_benevento_si_fermano_i_bus_in_citta_stop_dalle_8_alle_16_e_presidio_a_napoli-9852370.html",
       "data": "28 ott, 02:45"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Air Campania, sindacati proclamano sciopero di otto ore",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/28/air-campania-sindacati-proclamano-sciopero-di-otto-ore/",
+      "data": "28 ott, 09:11"
      }
     ],
     "aggiornamento": {
