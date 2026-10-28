@@ -1671,15 +1671,6 @@
     if (FISSA && FISSA.h1 && filtroCat === (FISSA.cat || "") && filtroZona === (FISSA.zona || "")) box.appendChild(el("h1", "titolo-sezione", [FISSA.h1]));
     if (filtroCat === "strade") box.appendChild(linkTutte("/strade-chiuse/", "Le strade chiuse oggi e nei prossimi giorni ›"));
     var lista = filtrate();
-    // in Cultura, in cima i prossimi appuntamenti di teatro, musica, mostre, cinema e libri (lui, 28 ott 2026:
-    // «sezione cultura con pagina per google», «mettila dopo eventi»)
-    if (filtroCat === "cultura") box.appendChild(appuntamentiCultura());
-    // in Politica, in cima l'approfondimento sul dibattito politico della città (AGENTE.md, «Il dibattito politico in
-    // città», 28 ott 2026): quello con "categoria": "politica"
-    if (filtroCat === "politica") {
-      (dati.approfondimenti || []).filter(function (ap) { return ap.categoria === "politica" && !ap.archiviato; })
-        .forEach(function (ap) { box.appendChild(el("section", "storia-corso", [el("h3", "titolo-col", ["La storia in corso"]), schedaAppro(ap)])); });
-    }
     if (filtroCat === "sport") box.appendChild(scelteSport());
     if (filtroCat === "eventi") {
       box.appendChild(calendario());
@@ -1687,6 +1678,7 @@
       box.appendChild(el("h3", "titolo-col", ["Le notizie sugli eventi"]));
     }
     if (!lista.length) {
+      riquadriSezione(box);
       box.appendChild(el("p", "vuoto", [(dati.notizie || []).length ? "Nessuna notizia con questi filtri." : "Il primo aggiornamento arriva a breve."]));
       return;
     }
@@ -1701,6 +1693,7 @@
       striscia.appendChild(a);
     });
     box.appendChild(striscia);
+    riquadriSezione(box);
 
     var adesso = Date.now(), soloStrade = filtroCat === "strade";
     var avvisi = soloStrade ? [] : lista.filter(eAvviso);
@@ -2441,6 +2434,16 @@
     return az;
   }
 
+  // Sotto le ultime notizie della sezione, come in tutte le altre (lui, 28 ott 2026: «questo lo metterei sopra per
+  // rispettare l'organizzazione del sito»): in Cultura i prossimi appuntamenti (lui: «sezione cultura con pagina per
+  // google»), in Politica l'approfondimento sul dibattito in città, quello con "categoria": "politica" (AGENTE.md).
+  function riquadriSezione(box) {
+    if (filtroCat === "cultura") box.appendChild(appuntamentiCultura());
+    if (filtroCat === "politica") {
+      (dati.approfondimenti || []).filter(function (ap) { return ap.categoria === "politica" && !ap.archiviato; })
+        .forEach(function (ap) { box.appendChild(el("section", "storia-corso", [el("h3", "titolo-col", ["La storia in corso"]), schedaAppro(ap)])); });
+    }
+  }
   var GRUPPI_CULTURA = ["teatro", "musica", "mostre", "cinema", "libri"];
   function appuntamentiCultura() {
     var sez = el("section", "appuntamenti", [el("h3", "titolo-col", ["Prossimi appuntamenti"])]);
