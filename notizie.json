@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-28T17:17+01:00",
+ "aggiornato": "2026-10-28T18:12+01:00",
  "giornali_letti": 14,
  "notizie": [
   {
@@ -1799,18 +1799,22 @@
   },
   {
    "id": "benevento-incanto-di-natale-2026-giunta-600mila-euro",
-   "titolo": "Benevento, «InCanto di Natale» dal 14 novembre al 6 gennaio: la Giunta approva il programma da 600mila euro",
-   "titolo_google": "Natale a Benevento 2026: InCanto di Natale dal 14 novembre",
-   "sintesi": "La Giunta comunale di Benevento ha approvato il progetto «InCanto di Natale»: eventi e promozione della città dal 14 novembre al 6 gennaio, per 600mila euro. Il Comune ne mette 50mila, la Regione Campania 550mila; organizza la Fondazione Benevento Città Spettacolo.",
+   "titolo": "Benevento, «InCanto di Natale» dal 14 novembre: Cant'Albero in piazza Risorgimento, schiaccianoci giganti e presepe vivente",
+   "titolo_google": "InCanto di Natale Benevento 2026: programma dal 14 novembre",
+   "sintesi": "«InCanto di Natale» comincia sabato 14 novembre alle 17 in piazza Risorgimento, dove quest'anno c'è il Cant'Albero di 20 metri. Poi zampogne, cori gospel, carosello gratis per i bambini in piazza Castello, presepe vivente il 19 dicembre e la Befana il 6 gennaio. Costa 600mila euro: 550mila li mette la Regione.",
    "categoria": "politica",
    "zona": "benevento",
    "luogo": "Benevento",
    "immagine": "natale",
-   "pubblicato": "2026-10-28T08:35+01:00",
-   "stato": "una_fonte",
+   "pubblicato": "2026-10-28T17:53+01:00",
+   "stato": "confermata",
    "rilevante": false,
    "importanza": 4,
    "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/28/benevento-diventa-una-fiaba-di-natale-zampogne-gospel-luci-scenografie-schiaccianoci-giganti-e-un-carosello-per-bambini/"
+    },
     {
      "nome": "Il Sannio Quotidiano",
      "url": "https://www.ilsannioquotidiano.it/2026/10/28/incanto-di-natale-eventi-e-promozione-del-patrimonio-culturale-della-citta-spesa-di-600mila-euro-lalbero-di-20-metri-in-piazza-risorgimento/"
@@ -1819,38 +1823,136 @@
    "articolo": {
     "racconto": [
      {
+      "testo": "Il programma di «InCanto di Natale», l'undicesima edizione delle feste di Natale del Comune di Benevento, comincia sabato 14 novembre alle 17 in piazza Risorgimento con il coro delle voci bianche e una parata dei personaggi dei cartoni animati lungo corso Garibaldi. Gli appuntamenti vanno avanti fino a mercoledì 6 gennaio.",
+      "fonti": [
+       "NTR24"
+      ],
+      "giorno": "2026-10-28"
+     },
+     {
+      "testo": "Il Cant'Albero, la struttura alta circa venti metri diretta da Renato Giordano, quest'anno sta nella piazza Risorgimento rifatta, con uno spettacolo di luci, suoni e canzoni di Natale. Su corso Garibaldi ci saranno luminarie e schiaccianoci giganti alti circa due metri; luci e decorazioni arrivano anche all'Arco di Traiano, a piazza Santa Sofia e nei quartieri, da Rione Libertà a Capodimonte, Rione Ferrovia, Pacevecchia, Ponticelli e le contrade.",
+      "fonti": [
+       "NTR24"
+      ],
+      "giorno": "2026-10-28"
+     },
+     {
+      "testo": "Per i bambini c'è il Villaggio di Babbo Natale in piazza Federico Torre e un carosello gratis in piazza Castello, dove prima stava il Cant'Albero. Tra gli appuntamenti: le zampogne su corso Garibaldi dal primo fine settimana, i Pietrelcina Gospel Voices nel fine settimana del 28 e 29 novembre, con il Gran Galà Lirico al Teatro Comunale il 29, il trenino di Natale in piazza Santa Sofia il 5 e il 12 dicembre, «Racconti intorno al fuoco» il 13 dicembre e il presepe vivente su corso Garibaldi il 19 dicembre, con sessanta attori e dieci musicisti.",
+      "fonti": [
+       "NTR24"
+      ],
+      "giorno": "2026-10-28"
+     },
+     {
+      "testo": "Il 24 dicembre, dalle 13 alle 17.30, c'è musica in piazza Federico Torre, piazza Risorgimento e piazza Santa Sofia. Il 5 gennaio la «Notte Incantata della Befana» con una street band su corso Garibaldi, il 6 gennaio la Befana in piazza Risorgimento. Non è ancora sicuro BenTorrone, il mercato del torrone nelle casette di legno in piazza Castello: il Comune sta raccogliendo con la Camera di Commercio le adesioni delle aziende.",
+      "fonti": [
+       "NTR24"
+      ],
+      "giorno": "2026-10-28"
+     },
+     {
       "testo": "Martedì 27 ottobre la Giunta comunale di Benevento, guidata dal sindaco Clemente Mastella, ha approvato la delibera su «InCanto di Natale», il programma di eventi per le feste. Si comincia il 14 novembre e si va avanti fino al 6 gennaio, soprattutto nei fine settimana.",
       "fonti": [
        "Il Sannio Quotidiano"
-      ]
+      ],
+      "giorno": "2026-10-27"
      },
      {
       "testo": "Il progetto costa in tutto 600mila euro, molto più delle dieci edizioni precedenti. Il Comune ne paga solo 50mila; gli altri 550mila li mette la Regione Campania. Eventi, scenografie, comunicazione e promozione li organizza la Fondazione Benevento Città Spettacolo, che dovrà preparare il calendario.",
       "fonti": [
        "Il Sannio Quotidiano"
-      ]
+      ],
+      "giorno": "2026-10-27"
      },
      {
       "testo": "Nei piani c'è anche un albero di Natale alto 20 metri in piazza Risorgimento. L'obiettivo dichiarato è portare gente nei negozi, nei ristoranti e negli alberghi della città e far conoscere il suo patrimonio culturale.",
       "fonti": [
        "Il Sannio Quotidiano"
+      ],
+      "giorno": "2026-10-27"
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "27 ottobre",
+      "fatto": "La Giunta comunale approva «InCanto di Natale», 600mila euro.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "data": "28 ottobre",
+      "fatto": "Esce il programma degli appuntamenti.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "data": "14 novembre, 17:00",
+      "fatto": "Inaugurazione in piazza Risorgimento con il coro delle voci bianche.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "data": "19 dicembre",
+      "fatto": "Presepe vivente su corso Garibaldi.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "data": "6 gennaio",
+      "quando": "2027-01-06",
+      "fatto": "«Tutti in piazza con la Befana» in piazza Risorgimento.",
+      "fonti": [
+       "NTR24"
       ]
      }
     ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
+    "concordano": [
+     {
+      "testo": "La spesa di 600mila euro, l'albero di circa 20 metri in piazza Risorgimento e l'inizio il 14 novembre.",
+      "fonti": [
+       "Il Sannio Quotidiano",
+       "NTR24"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "La fine: Il Sannio Quotidiano scrive fino al 6 gennaio, NTR24 parla di una manifestazione fino al 10 gennaio 2027, ma l'ultimo appuntamento del suo programma è il 6 gennaio.",
+      "fonti": [
+       "Il Sannio Quotidiano",
+       "NTR24"
+      ]
+     }
+    ],
     "non_si_sa": [
-     "Il calendario degli eventi, che deve ancora preparare la Fondazione Benevento Città Spettacolo."
+     "Se ci sarà BenTorrone in piazza Castello: il Comune sta ancora raccogliendo le adesioni delle aziende."
     ],
     "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Benevento diventa una fiaba di Natale: zampogne, gospel, luci, scenografie, schiaccianoci giganti e un carosello per bambini",
+      "url": "https://www.ntr24.tv/2026/10/28/benevento-diventa-una-fiaba-di-natale-zampogne-gospel-luci-scenografie-schiaccianoci-giganti-e-un-carosello-per-bambini/",
+      "data": "28 ott, 17:53"
+     },
      {
       "nome": "Il Sannio Quotidiano",
       "titolo": "‘InCanto di Natale’, eventi e promozione del patrimonio culturale della città: spesa di 600mila euro, l’albero di 20 metri in piazza Risorgimento",
       "url": "https://www.ilsannioquotidiano.it/2026/10/28/incanto-di-natale-eventi-e-promozione-del-patrimonio-culturale-della-citta-spesa-di-600mila-euro-lalbero-di-20-metri-in-piazza-risorgimento/",
       "data": "28 ott, 08:35"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Mercoledì 28 ottobre è uscito il programma: si comincia sabato 14 novembre alle 17 in piazza Risorgimento, dove quest'anno c'è il Cant'Albero; presepe vivente su corso Garibaldi il 19 dicembre.",
+     "fonti": [
+      "NTR24"
+     ],
+     "quando": "2026-10-28T18:12+01:00",
+     "titolo_prima": "Benevento, «InCanto di Natale» dal 14 novembre al 6 gennaio: la Giunta approva il programma da 600mila euro"
+    }
    },
    "foto": "natale-5"
   },

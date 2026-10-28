@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-27T14:10+01:00",
+ "aggiornato": "2026-10-28T18:07:00+01:00",
  "eventi": [
   {
    "id": "mostra-cosmogonie-meact-torrecuso-2026",
@@ -1302,6 +1302,59 @@
     }
    ],
    "foto": "teatro-24"
+  },
+  {
+   "id": "incanto-di-natale-benevento-2026",
+   "titolo": "InCanto di Natale a Benevento",
+   "tipo": "natale",
+   "inizio": "2026-11-14",
+   "fine": "2027-01-06",
+   "luogo": "Piazza Risorgimento, corso Garibaldi e altre piazze del centro",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "organizzatore": [
+    "Comune di Benevento",
+    "Fondazione Benevento Città Spettacolo"
+   ],
+   "breve": "Le feste di Natale del Comune: Cant'Albero di 20 metri in piazza Risorgimento, luminarie e schiaccianoci giganti su corso Garibaldi, zampogne, gospel, carosello per i bambini e presepe vivente.",
+   "descrizione": [
+    {
+     "testo": "L'undicesima edizione comincia sabato 14 novembre alle 17 in piazza Risorgimento con il coro delle voci bianche e la parata dei personaggi dei cartoni animati su corso Garibaldi. Il Cant'Albero, alto circa venti metri, quest'anno sta in piazza Risorgimento; il carosello gratis per i bambini è in piazza Castello e il Villaggio di Babbo Natale in piazza Federico Torre.",
+     "fonti": [
+      "NTR24"
+     ]
+    },
+    {
+     "testo": "Nel programma: zampogne su corso Garibaldi, Pietrelcina Gospel Voices nel fine settimana del 28 e 29 novembre, Gran Galà Lirico al Teatro Comunale il 29 novembre, trenino di Natale in piazza Santa Sofia il 5 e il 12 dicembre, «Racconti intorno al fuoco» il 13 dicembre, presepe vivente su corso Garibaldi il 19 dicembre con sessanta attori e dieci musicisti, «It's Christmas Time» il 20 dicembre, musica nelle piazze il 24 dicembre dalle 13 alle 17.30, la «Notte Incantata della Befana» il 5 gennaio e la Befana in piazza Risorgimento il 6 gennaio.",
+     "fonti": [
+      "NTR24"
+     ]
+    },
+    {
+     "testo": "La Giunta ha approvato il progetto il 27 ottobre: costa 600mila euro, 550mila dalla Regione Campania e 50mila dal Comune. Il Sannio Quotidiano indica il 6 gennaio come ultimo giorno; NTR24 parla di una manifestazione fino al 10 gennaio.",
+     "fonti": [
+      "Il Sannio Quotidiano",
+      "NTR24"
+     ]
+    }
+   ],
+   "immagine": "natale",
+   "notizia": "benevento-incanto-di-natale-2026-giunta-600mila-euro",
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "titolo": "Benevento diventa una fiaba di Natale: zampogne, gospel, luci, scenografie, schiaccianoci giganti e un carosello per bambini",
+     "url": "https://www.ntr24.tv/2026/10/28/benevento-diventa-una-fiaba-di-natale-zampogne-gospel-luci-scenografie-schiaccianoci-giganti-e-un-carosello-per-bambini/",
+     "data": "28 ott"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "titolo": "‘InCanto di Natale’, eventi e promozione del patrimonio culturale della città: spesa di 600mila euro, l’albero di 20 metri in piazza Risorgimento",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/28/incanto-di-natale-eventi-e-promozione-del-patrimonio-culturale-della-citta-spesa-di-600mila-euro-lalbero-di-20-metri-in-piazza-risorgimento/",
+     "data": "28 ott"
+    }
+   ],
+   "foto": "natale-6"
   },
   {
    "id": "natale-sul-ghiaccio-pista-piazza-roma-benevento-2026",
