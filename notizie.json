@@ -54,7 +54,11 @@
      }
     ]
    },
-   "foto": "autobus-3"
+   "foto": "autobus-3",
+   "subito": true,
+   "comunicati": [
+    "ucbc35eaffe9"
+   ]
   },
   {
    "id": "durazzano-scuola-intitolazione-maestro-salvatore-basso",
