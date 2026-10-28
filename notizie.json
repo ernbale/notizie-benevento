@@ -1,7 +1,188 @@
 {
- "aggiornato": "2026-10-28T19:13+01:00",
+ "aggiornato": "2026-10-28T20:10+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "arpaise-esercitazione-campania-felix-esercito-2026",
+   "titolo": "Arpaise, conclusa l'esercitazione «Campania Felix» dell'Esercito: una settimana di campo per le emergenze con Protezione civile e Croce Rossa",
+   "titolo_google": "Arpaise, esercitazione Campania Felix dell'Esercito",
+   "sintesi": "Ad Arpaise dal 19 al 26 ottobre l'Esercito ha montato e provato un campo logistico per aiutare la popolazione nelle emergenze, insieme alla Protezione civile e alla Croce Rossa. Centinaia di alunni hanno visitato i mezzi; il 24 ottobre c'è stata la giornata aperta a tutti.",
+   "categoria": "altro",
+   "zona": "provincia",
+   "immagine": "protezione-civile",
+   "luogo": "Arpaise",
+   "pubblicato": "2026-10-28T19:48:00+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/campania-felix-arpaise-gestione-delle-emergenze-esercito/"
+    },
+    {
+     "nome": "Il Caudino",
+     "url": "https://ilcaudino.it/e-terminata-lesercitazione-campania-felix-ad-arpaise-uid-5/"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/ad-arpaise-si-e-svolta-lesercitazione-campania-felix-attivita-addestrativa"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Ad Arpaise, piccolo paese a sud di Benevento, si è chiusa l'esercitazione «Campania Felix» dell'Esercito. Dal 19 al 26 ottobre i militari della Scuola di Commissariato dell'Esercito hanno montato e fatto funzionare un campo logistico, cioè le strutture e i mezzi che servono a dare servizi essenziali alla popolazione quando c'è un'emergenza.",
+      "fonti": [
+       "Cronache del Sannio",
+       "Il Caudino",
+       "Gazzetta di Benevento"
+      ]
+     },
+     {
+      "testo": "Hanno lavorato insieme alla Protezione civile e alla Croce Rossa Italiana, per provare sul campo come le diverse forze si coordinano in caso di calamità. Durante la settimana centinaia di alunni hanno visitato i mezzi e le postazioni allestite dal Battaglione Mezzi Mobili Campali.",
+      "fonti": [
+       "Cronache del Sannio",
+       "Il Caudino",
+       "Gazzetta di Benevento"
+      ]
+     },
+     {
+      "testo": "Sabato 24 ottobre il campo è stato aperto a tutti. La giornata è cominciata con l'alzabandiera, poi una corona in memoria dei Caduti e un momento di preghiera. Il comandante della Scuola, il generale di brigata Sandro Corradi, ha spiegato che la logistica «può sembrare qualcosa che rimane dietro le quinte», ma è quella che permette ai soccorsi di lavorare e di durare nel tempo.",
+      "fonti": [
+       "Cronache del Sannio",
+       "Il Caudino"
+      ]
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "19 ottobre",
+      "fatto": "Comincia l'esercitazione «Campania Felix» ad Arpaise.",
+      "fonti": [
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "data": "24 ottobre",
+      "fatto": "Giornata aperta alla popolazione, con alzabandiera e corona ai Caduti.",
+      "fonti": [
+       "Cronache del Sannio",
+       "Il Caudino"
+      ]
+     },
+     {
+      "data": "26 ottobre",
+      "fatto": "Fine dell'esercitazione.",
+      "fonti": [
+       "Cronache del Sannio"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Le date (19-26 ottobre), la collaborazione con Protezione civile e Croce Rossa e le visite degli alunni.",
+      "fonti": [
+       "Cronache del Sannio",
+       "Il Caudino",
+       "Gazzetta di Benevento"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Quanti militari e quanti mezzi hanno partecipato."
+    ],
+    "fonti": [
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "“Campania Felix”: ad Arpaise esercito impegnato nella gestione delle emergenze",
+      "url": "https://www.cronachedelsannio.it/sannionews24/campania-felix-arpaise-gestione-delle-emergenze-esercito/",
+      "data": "28 ott, 19:48"
+     },
+     {
+      "nome": "Il Caudino",
+      "titolo": "E’ terminata l’esercitazione Campania Felix ad Arpaise",
+      "url": "https://ilcaudino.it/e-terminata-lesercitazione-campania-felix-ad-arpaise-uid-5/",
+      "data": "28 ott, 17:26"
+     },
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "Ad Arpaise si è svolta l’esercitazione “Campania Felix”, attività addestrativa",
+      "url": "https://www.gazzettabenevento.it/it/ad-arpaise-si-e-svolta-lesercitazione-campania-felix-attivita-addestrativa",
+      "data": "28 ott, 17:07"
+     }
+    ]
+   },
+   "foto": "protezione-civile-8"
+  },
+  {
+   "id": "moiano-buoni-libro-scuola-media-domande-28-novembre",
+   "titolo": "Moiano, riaperte le domande per i buoni libro della scuola media: c'è tempo fino al 28 novembre",
+   "titolo_google": "Buoni libro a Moiano: domande fino al 28 novembre",
+   "sintesi": "Il Comune di Moiano ha riaperto i termini per chiedere i buoni libro dell'anno scolastico 2026/2027. Possono farlo le famiglie degli alunni della scuola secondaria di primo grado, fino al 28 novembre 2026.",
+   "categoria": "avvisi",
+   "zona": "caudina",
+   "immagine": "libri",
+   "luogo": "Moiano",
+   "pubblicato": "2026-10-28",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "in_vigore_fino": "2026-11-28",
+   "contributo": {
+    "chi": [
+     "cittadino",
+     "giovani"
+    ],
+    "temi": [
+     "scuola",
+     "figli"
+    ],
+    "aiuto": [
+     "bonus"
+    ]
+   },
+   "fonti": [
+    {
+     "nome": "Comune di Moiano",
+     "url": "https://www.comune.moiano.bn.it/novita/notizie/novita_59.html",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Moiano, in Valle Caudina, il Comune ha riaperto le domande per i buoni libro dell'anno scolastico 2026/2027, il contributo per comprare i libri di testo. Possono chiederlo le famiglie degli alunni che frequentano la scuola secondaria di primo grado, la scuola media. C'è tempo fino al 28 novembre 2026.",
+      "fonti": [
+       "Comune di Moiano"
+      ]
+     },
+     {
+      "testo": "Come fare domanda e chi ne ha diritto lo spiega l'avviso pubblico, pubblicato sul sito del Comune insieme al modello di domanda e alla dichiarazione sostitutiva da compilare. Se ne occupa l'ufficio amministrativo e istruzione del Comune.",
+      "fonti": [
+       "Comune di Moiano"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quali sono i requisiti (per esempio il limite ISEE) e quanto vale il buono: sono nell'avviso allegato, che dal nostro giro non si è aperto."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Moiano",
+      "titolo": "Buoni LIbro AA. SS. 2026/2027",
+      "url": "https://www.comune.moiano.bn.it/novita/notizie/novita_59.html",
+      "data": "28 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "foto": "libri-4"
+  },
   {
    "id": "benevento-raid-debito-droga-2022-mandante-domiciliari",
    "titolo": "Raid armato a Benevento per un debito di droga nel 2022: il presunto mandante passa dal carcere ai domiciliari",
@@ -16814,7 +16995,7 @@
    "zona": "benevento",
    "immagine": "carburante",
    "luogo": "Napoli, Consiglio regionale",
-   "pubblicato": "2026-10-28T18:56:00+01:00",
+   "pubblicato": "2026-10-28T19:28:00+01:00",
    "stato": "confermata",
    "fonti": [
     {
@@ -16830,12 +17011,12 @@
      "url": "https://www.cronachedelsannio.it/sannionews24/caro-carburanti-errico-regione-individui-misure-risorse-tempi-certi/"
     },
     {
-     "nome": "TV7 Benevento",
-     "url": "https://www.tvsette.net/caro-carburanti-errico-la-regione-individui-misure-attuabili-risorse-disponibili-e-tempi-certi/"
+     "nome": "Ottopagine (28/10)",
+     "url": "https://www.ottopagine.it/bn/politica/442468/caro-carburanti-mastella-risposte-concrete-e-tempestive.shtml"
     },
     {
-     "nome": "Ottopagine",
-     "url": "https://www.ottopagine.it/bn/politica/441493/caro-carburanti-mozione-casa-riformista-italia-viva-noi-di-centro-in-regione.shtml"
+     "nome": "TV7 Benevento (Mastella)",
+     "url": "https://www.tvsette.net/caro-carburanti-pellegrino-mastella-priorita-ad-agricoltori-e-autotrasportatori-serve-un-fondo-straordinario/"
     }
    ],
    "articolo": {
@@ -16868,7 +17049,8 @@
       "testo": "La mozione approvata chiede un fondo straordinario e dà la priorità alle aree interne.",
       "fonti": [
        "BeneventoNews24 (Petracca)",
-       "BeneventoNews24 (Mastella)"
+       "BeneventoNews24 (Mastella)",
+       "Ottopagine (28/10)"
       ]
      }
     ],
@@ -16887,6 +17069,18 @@
       "titolo": "Caro carburanti, P. Mastella: «Fondo straordinario per agricoltori e autotrasportatori, la maggioranza fa fronte comune»",
       "url": "https://www.beneventonews24.it/2026/10/28/caro-carburanti-p-mastella-fondo-straordinario-per-agricoltori-e-autotrasportatori-la-maggioranza-fa-fronte-comune/",
       "data": "28 ott, 18:50"
+     },
+     {
+      "nome": "TV7 Benevento (Mastella)",
+      "titolo": "Caro carburanti, Pellegrino Mastella: «Priorità ad agricoltori e autotrasportatori, serve un fondo straordinario»",
+      "url": "https://www.tvsette.net/caro-carburanti-pellegrino-mastella-priorita-ad-agricoltori-e-autotrasportatori-serve-un-fondo-straordinario/",
+      "data": "28 ott, 19:25"
+     },
+     {
+      "nome": "Ottopagine (28/10)",
+      "titolo": "Caro Carburanti: Mastella \"risposte concrete e tempestive\"",
+      "url": "https://www.ottopagine.it/bn/politica/442468/caro-carburanti-mastella-risposte-concrete-e-tempestive.shtml",
+      "data": "28 ott, 19:28"
      },
      {
       "nome": "NTR24 (28/10)",
@@ -16942,7 +17136,9 @@
       "fonti": [
        "BeneventoNews24 (Petracca)",
        "BeneventoNews24 (Mastella)",
-       "NTR24 (28/10)"
+       "NTR24 (28/10)",
+       "Ottopagine (28/10)",
+       "TV7 Benevento (Mastella)"
       ],
       "giorno": "2026-10-28"
      },
@@ -18246,7 +18442,7 @@
    "titolo_google": "Sfiducia a Mastella a Benevento: a che punto è la mozione",
    "sommario": "Il 22 ottobre l'opposizione del Consiglio comunale di Benevento ha presentato una mozione di sfiducia contro il sindaco Clemente Mastella e la Giunta, con un dossier di 24 punti che parte dall'inchiesta giudiziaria sul Comune. Domenica 25 ha sfilato in corteo fino alla Prefettura. Il sindaco dice che non si dimette e la maggioranza parla di poche centinaia di persone in piazza. La data del voto in Consiglio non è ancora stata fissata.",
    "luogo": "Benevento",
-   "aggiornato": "2026-10-28T19:40:00+01:00",
+   "aggiornato": "2026-10-28T20:06:00+01:00",
    "collegate": [
     "benevento-opposizione-mozione-sfiducia-mastella"
    ],
@@ -18328,7 +18524,8 @@
       {
        "testo": "Mercoledì 28, in serata, i nove consiglieri comunali di opposizione (De Longis, De Lorenzo, Farese, Fioretti, Megna, Miceli, Moretti, Perifano e Varricchio) hanno risposto a Noi di Centro: per loro la scelta di «centinaia di beneventani» di scendere in piazza «ha lasciato il segno» e ha irritato «i piani alti di Palazzo Mosti». Rimproverano alla maggioranza di non aver condannato «senza se e senza ma» le pratiche di corruzione di cui parla l'inchiesta.",
        "fonti": [
-        "BeneventoNews24 (28/10, opposizione)"
+        "BeneventoNews24 (28/10, opposizione)",
+        "NTR24 (28/10, opposizione)"
        ]
       }
      ]
@@ -18473,7 +18670,8 @@
      "data": "28 ottobre, sera",
      "fatto": "I consiglieri di opposizione replicano a Noi di Centro: la protesta di centinaia di cittadini «ha lasciato il segno».",
      "fonti": [
-      "BeneventoNews24 (28/10, opposizione)"
+      "BeneventoNews24 (28/10, opposizione)",
+      "NTR24 (28/10, opposizione)"
      ]
     }
    ],
@@ -18547,6 +18745,12 @@
      "titolo": "Benevento, l’opposizione all’attacco di NdC: “Centinaia di beneventani in piazza contro malaffare ha irritato piani alti”",
      "url": "https://www.beneventonews24.it/2026/10/28/benevento-lopposizione-allattacco-di-ndc-centinaia-di-beneventani-in-piazza-contro-malaffare-ha-irritato-piani-alti/",
      "data": "28 ott, 18:56"
+    },
+    {
+     "nome": "NTR24 (28/10, opposizione)",
+     "titolo": "“Protesta di centinaia di cittadini ha lasciato il segno. Solco incolmabile con chi non condanna corruzione”",
+     "url": "https://www.ntr24.tv/2026/10/28/protesta-di-centinaia-di-cittadini-ha-lasciato-il-segno-solco-incolmabile-con-chi-non-condanna-corruzione/",
+     "data": "28 ott, 19:14"
     }
    ],
    "scena": "The council chamber of the city hall of Benevento during a tense evening session: councillors seated at curved wooden benches with microphones, some standing and arguing with papers in hand, citizens crowding the public gallery, warm light from old chandeliers, a sense of political confrontation"
