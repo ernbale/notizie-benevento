@@ -1,12 +1,13 @@
 {
- "aggiornato": "2026-10-27T14:24+01:00",
+ "aggiornato": "2026-10-28T09:11+01:00",
  "viste": [
   "1131ffc78db3",
   "a4f3f5a64d51",
   "d12186721458",
   "7df78a2436f4",
   "afb12e802897",
-  "36794154e8c1"
+  "36794154e8c1",
+  "320680eb8b40"
  ],
  "chiusure": [],
  "scartate": [
@@ -34,6 +35,11 @@
    "pista": "36794154e8c1",
    "motivo": "Delibera di Giunta sull'Ufficio Bim dei lavori pubblici: nessuna chiusura",
    "quando": "2026-10-27T14:24+01:00"
+  },
+  {
+   "pista": "320680eb8b40",
+   "motivo": "Non è una chiusura decisa dal Comune: è una nota dell'Istituto Omnicomprensivo De Filippo di Morcone (prot. 10399 del 27/10/2026), protocollata in arrivo dal Comune, che ricorda il giorno di vacanza d",
+   "quando": "2026-10-28T09:11+01:00"
   }
  ]
 }
