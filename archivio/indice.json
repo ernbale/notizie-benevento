@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-28T16:17+01:00",
+ "aggiornato": "2026-10-28T20:10+01:00",
  "voci": [
   {
    "id": "linea-18-bn-air-campania-sanzione-regione-pendolari",
@@ -23,7 +23,8 @@
    "zona": "benevento",
    "pubblicato": "2026-10-25T21:01:00+01:00",
    "cosa": "La Miwa Basket Benevento ha vinto 75-69 in trasferta contro la Virtus Kleb Ragusa, domenica 25 ottobre, al PalaPadua di Ragusa, nel campionato di Serie B Interregionale. Lo ha comunicato la società. I sanniti, allenati da coach Adolfo Parrillo, sono stati in vantaggio per tutta la partita. Per la società è la prova di un gruppo già unito dopo appena cinque giornate di campionato.",
-   "mese": "2026-10"
+   "mese": "2026-10",
+   "sport": "basket"
   },
   {
    "id": "fragneto-monforte-takkarata-tournee-brasile-festival-cariri",
@@ -71,7 +72,8 @@
    "zona": "telesina",
    "pubblicato": "2026-10-25T13:49+01:00",
    "cosa": "Domenica mattina, 25 ottobre, Potito Starace, uno dei tennisti italiani più conosciuti degli ultimi vent'anni, è stato ospite dell'ASD Siracusa Tennis Lab a San Salvatore Telesino, in Valle Telesina. L'incontro si è svolto all'Open Spazio Sportivo, un centro per lo sport del paese.",
-   "mese": "2026-10"
+   "mese": "2026-10",
+   "sport": "tennis"
   },
   {
    "id": "cusano-mutri-no-sannio-acque-ricorso-tar",
@@ -107,7 +109,8 @@
    "zona": "benevento",
    "pubblicato": "2026-10-25T00:16+02:00",
    "cosa": "Sabato 24 ottobre la Pasta Rummo Accademia, la squadra femminile dell'Accademia Volley Benevento, ha vinto 3-0 sul campo delle Koala Bears a San Giuseppe Vesuviano, nella seconda giornata della Serie C femminile. I set sono finiti 25-23, 25-13 e 25-17. È la seconda vittoria di fila: la squadra di Vittorio Ruscello sale a sei punti e non ha ancora perso un set.",
-   "mese": "2026-10"
+   "mese": "2026-10",
+   "sport": "pallavolo"
   },
   {
    "id": "paolisi-sportello-tributi-chiuso-26-ottobre",
@@ -131,7 +134,8 @@
    "zona": "benevento",
    "pubblicato": "2026-10-24T22:41+02:00",
    "cosa": "Sabato 24 ottobre il Rione Ferrovia di Benevento ha ospitato la seconda edizione del Trofeo Don Pompilio – Corsa di Santa Maria di Costantinopoli. La gara l'ha organizzata l'Amatori Podismo Benevento per ricordare don Pompilio, lo storico parroco del quartiere morto poco più di un anno fa.",
-   "mese": "2026-10"
+   "mese": "2026-10",
+   "sport": "atletica"
   },
   {
    "id": "arezzo-benevento-0-3-24-ottobre",
@@ -143,7 +147,8 @@
    "zona": "benevento",
    "pubblicato": "2026-10-24T21:40:00+02:00",
    "cosa": "Il Benevento ha vinto 3-0 ad Arezzo, sabato 24 ottobre, nell'ottava giornata del campionato di Serie B. Tutti i gol sono arrivati nel secondo tempo: li hanno fatti Siatounis, Okereke e Mignani. Con questi tre punti i giallorossi di Floro Flores salgono a 14 punti, mentre l'Arezzo resta a 10.",
-   "mese": "2026-10"
+   "mese": "2026-10",
+   "sport": "calcio"
   },
   {
    "id": "yolo-benevento-dinamo-taranto-24-ottobre",
@@ -155,7 +160,8 @@
    "zona": "benevento",
    "pubblicato": "2026-10-24T20:04:00+02:00",
    "cosa": "Sabato 24 ottobre la YOLO+ Miwa Basket Benevento ha perso 55-74 al PalaMiwa contro la Dinamo Taranto, capolista del girone e ancora imbattuta. Le sannite hanno giocato senza Tolardo e Manganiello, e secondo la società le rotazioni sono rimaste ridotte all'osso.",
-   "mese": "2026-10"
+   "mese": "2026-10",
+   "sport": "basket"
   },
   {
    "id": "benevento-calcio-arezzo-24-ottobre-catanzaro-27-ottobre-biglietti",
@@ -167,7 +173,8 @@
    "zona": "benevento",
    "pubblicato": "2026-10-24T18:53:00+02:00",
    "cosa": "Martedì 27 ottobre alle 19 il Benevento gioca al Vigorito con il Catanzaro, nella nona giornata di Serie B. L'AIA ha scelto l'arbitro: è Alberto Poli della sezione di Verona, che ha già diretto due partite del Benevento nella scorsa stagione di Serie C, tutte e due vinte dai giallorossi. Con lui gli assistenti Berti e Bianchini, il quarto ufficiale Mucera e, al VAR, Rutella e Guida.",
-   "mese": "2026-10"
+   "mese": "2026-10",
+   "sport": "calcio"
   },
   {
    "id": "benevento-primavera-2-avellino-5-2-24-ottobre",
@@ -179,7 +186,8 @@
    "zona": "benevento",
    "pubblicato": "2026-10-24T17:54:00+02:00",
    "cosa": "Sabato 24 ottobre la Primavera del Benevento, la squadra dei giovani giallorossi, ha vinto 5-2 il derby con l'Avellino. Si è giocato all'Avellola, nella sesta giornata del girone B del campionato Primavera 2.",
-   "mese": "2026-10"
+   "mese": "2026-10",
+   "sport": "calcio"
   },
   {
    "id": "benevento-scuolabus-contrade-sospeso-23-ottobre",
@@ -227,7 +235,8 @@
    "zona": "benevento",
    "pubblicato": "2026-10-24T12:57:00+02:00",
    "cosa": "Il GG Team Wear Benevento 5 ha perso 1-0 in casa con l'Active Network nella partita di Serie A di venerdì 23 ottobre al PalaTedeschi. È la quarta sconfitta consecutiva dei giallorossi dell'allenatore Fausto Scarpitti. Il gol decisivo l'ha segnato Calvanese al 35' del secondo tempo, in superiorità numerica.",
-   "mese": "2026-10"
+   "mese": "2026-10",
+   "sport": "calcio_a_5"
   },
   {
    "id": "benevento-cisl-fp-sportello-precari-pubblica-amministrazione",
@@ -467,7 +476,8 @@
    "zona": "caudina",
    "pubblicato": "2026-10-23T15:46:00+02:00",
    "cosa": "A Paolisi, in Valle Caudina, nasce una squadra di calcio di Terza Categoria, la serie più bassa del calcio dilettantistico. Il paese torna ad avere una squadra in campionato e in campo ci sono anche tanti ragazzi cresciuti nella scuola calcio locale, che conta quasi 150 tra bambini e ragazzi.",
-   "mese": "2026-10"
+   "mese": "2026-10",
+   "sport": "calcio"
   },
   {
    "id": "benevento-gesesa-guasto-via-avellino-acqua-15-17-23-ottobre",
@@ -491,7 +501,8 @@
    "zona": "provincia",
    "pubblicato": "2026-10-23T13:50:00+02:00",
    "cosa": "Sei atleti dell'ASD Filippide Runners hanno concluso una maratona a ottobre, tra Monaco di Baviera, Chicago e Napoli.",
-   "mese": "2026-10"
+   "mese": "2026-10",
+   "sport": "atletica"
   },
   {
    "id": "busgo-nuove-linee-sannio-roma-fiumicino-perugia-camerino",
@@ -635,7 +646,8 @@
    "zona": "telesina",
    "pubblicato": "2026-10-22T17:16:00+02:00",
    "cosa": "Valentino Carofano, pilota sannita (Anteprima24 lo definisce «telesino», della Valle Telesina) che corre con la Valentino Racing Team, al Mugello ha conquistato la pole position (il primo posto in griglia) e ha chiuso la gara al secondo posto. Era il quinto round stagionale del campionato italiano FX Italian Series.",
-   "mese": "2026-10"
+   "mese": "2026-10",
+   "sport": "altro"
   },
   {
    "id": "provincia-reticolo-fluviale-monitoraggio-aree-rischio",
@@ -695,7 +707,8 @@
    "zona": "benevento",
    "pubblicato": "2026-10-22T14:53:00+02:00",
    "cosa": "La Miwa Basket Benevento gioca domenica 25 ottobre alle 18 in trasferta contro la Virtus Kleb Ragusa, sul parquet del PalaPadua, nel campionato di Serie B Interregionale. A dirigere la partita saranno Matteo Bertoni di Anzio e Roberto Rizzuto di Latina.",
-   "mese": "2026-10"
+   "mese": "2026-10",
+   "sport": "basket"
   },
   {
    "id": "benevento-terapia-aba-minori-avvocati-asl",
@@ -731,7 +744,8 @@
    "zona": "benevento",
    "pubblicato": "2026-10-22T13:15:00+02:00",
    "cosa": "Giovedì 22 ottobre la Virtus Academy Benevento ha presentato, nella sede di Confindustria a Benevento, la stagione 2026-2027: la squadra giocherà il campionato di Serie B femminile con il nome dell'UniFortunato, l'università Giustino Fortunato.",
-   "mese": "2026-10"
+   "mese": "2026-10",
+   "sport": "altro"
   },
   {
    "id": "benevento-usb-studenti-prefettura-carovita",
@@ -851,7 +865,8 @@
    "zona": "benevento",
    "pubblicato": "2026-10-21T21:00:00+02:00",
    "cosa": "L'IPVC Benevento ha vinto 37 a 27 contro la Partenope nella prima giornata del campionato di rugby di Serie B, giocata al Dell'Oste di Pacevecchia con la tribuna piena. In panchina è tornato Alessandro Valente.",
-   "mese": "2026-10"
+   "mese": "2026-10",
+   "sport": "rugby"
   },
   {
    "id": "air-campania-carburante-forniture-benevento-22-ottobre",
