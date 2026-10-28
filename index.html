@@ -2870,10 +2870,41 @@
     .then(mostraChiusure)
     .catch(function () { /* senza il file delle chiusure il sito funziona lo stesso */ });
 
+  // Il punto della pagina al ricarico (lui, 28 ott 2026: «quando ricarico la pagina mentre sto a meta pagina si
+  // ricarica mettendosi tutto a fondo pagina»). Al ricarico le notizie si disegnano solo quando arriva notizie.json:
+  // il browser rimette la posizione sulla pagina ancora corta (cioè sul piè di pagina) e Chrome tiene fermo il piè di
+  // pagina mentre le notizie entrano sopra, così si finiva in fondo; nelle notizie disegna() riportava in cima. Quindi
+  // il punto lo ricorda il sito, per indirizzo, e lo rimette dopo il primo disegno; se la pagina è ancora corta
+  // (archivio, eventi) riprova per qualche secondo, e lascia stare appena si tocca la pagina.
+  var posto = (function () {
+    var nav = (performance.getEntriesByType && performance.getEntriesByType("navigation")[0]) || {};
+    var y = null, ultimo = null, attesa = null;
+    function chiave() { return "nb-posto:" + location.pathname + location.hash; }
+    function salva() { if (ultimo) try { sessionStorage.setItem(ultimo[0], ultimo[1]); } catch (e) {} }
+    try { if (nav.type === "reload" || nav.type === "back_forward") y = Number(sessionStorage.getItem(chiave())) || null; } catch (e) {}
+    ["wheel", "touchstart", "keydown", "mousedown"].forEach(function (t) {
+      window.addEventListener(t, function () { y = null; }, { passive: true, once: true });
+    });
+    window.addEventListener("scroll", function () {
+      if (y !== null) return;   // finché non è rimesso, a scorrere è il browser
+      ultimo = [chiave(), String(Math.round(window.scrollY))];
+      if (!attesa) attesa = setTimeout(function () { attesa = null; salva(); }, 250);
+    }, { passive: true });
+    window.addEventListener("pagehide", salva);
+    function rimetti(volte) {
+      if (y === null) return;
+      var max = document.documentElement.scrollHeight - window.innerHeight;
+      if (y > max + 1 && volte) { setTimeout(function () { rimetti(volte - 1); }, 250); return; }
+      window.scrollTo(0, Math.min(y, max));
+      y = null;
+    }
+    return { rimetti: function () { rimetti(12); } };
+  })();
+
   fetch("notizie.json?t=" + Date.now(), { cache: "no-store" })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-    .then(function (j) { dati = j || { notizie: [] }; stato(); disegna(); })
-    .catch(function () { stato(); document.getElementById("stato").textContent = "Notizie non disponibili, riprova tra poco"; disegna(); });
+    .then(function (j) { dati = j || { notizie: [] }; stato(); disegna(); posto.rimetti(); })
+    .catch(function () { stato(); document.getElementById("stato").textContent = "Notizie non disponibili, riprova tra poco"; disegna(); posto.rimetti(); });
 })();
 </script>
 <!-- Cloudflare Web Analytics: conta le visite senza cookie e senza dati personali.
