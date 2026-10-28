@@ -641,7 +641,8 @@ aggiorni a ogni giro, come notizie.json.
 - **Quanto avanti**: a ogni giro cerca gli eventi **dei prossimi 2 mesi**. Se un evento più lontano è già annunciato
   con la data (per esempio la stagione teatrale fino ad aprile), mettilo lo stesso.
 - **Dove cercarli**: negli stessi giornali e siti dei Comuni del giro (sezioni cultura, eventi, spettacoli), nei siti
-  di librerie, biblioteche, teatri, musei, Conservatorio e Università del Sannio quando li trovi citati, nelle
+  di librerie, biblioteche, teatri, musei, Conservatorio e Università del Sannio quando li trovi citati (la Libreria
+  Controvento di Telese Terme ha la pagina `https://libreriacontrovento.it/eventi/`: guardala una volta al giorno), nelle
   stagioni ufficiali (qui sotto) e con le 2 ricerche mirate per gli eventi. Una stagione teatrale o una rassegna =
   **un evento per ogni spettacolo**, con la sua data.
 - **Mai doppioni**: prima di aggiungere un evento cerca in eventi.json lo stesso Comune negli stessi giorni; se c'è
