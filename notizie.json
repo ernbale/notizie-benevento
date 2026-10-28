@@ -1,7 +1,171 @@
 {
- "aggiornato": "2026-10-28T08:13+01:00",
+ "aggiornato": "2026-10-28T09:12+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "san-giorgio-del-sannio-statale-7-scontro-due-auto-feriti-28-ottobre",
+   "titolo": "San Giorgio del Sannio, scontro frontale tra due auto sulla statale 7 Appia: due feriti",
+   "titolo_google": "Incidente sulla statale 7 a San Giorgio del Sannio: due feriti",
+   "sintesi": "Mercoledì 28 ottobre, poco prima delle 8, due auto si sono scontrate frontalmente sulla statale 7 Appia a San Giorgio del Sannio. Due persone sono state portate in ospedale; la strada è rimasta bloccata durante i soccorsi.",
+   "categoria": "cronaca",
+   "zona": "provincia",
+   "luogo": "San Giorgio del Sannio, statale 7 Appia",
+   "pubblicato": "2026-10-28T08:42+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 4,
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/442375/scontro-tra-auto-due-pensionati-feriti-e-paura-lungo-la-statale-7-appia.shtml"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Mercoledì 28 ottobre, poco prima delle 8 del mattino, due auto si sono scontrate frontalmente sulla statale 7 Appia, nel territorio di San Giorgio del Sannio. Due persone sono rimaste ferite e sono state portate in ospedale.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Le auto coinvolte sono una Toyota Aygo, guidata da un uomo, e una Lancia Musa, guidata da una donna. Sono arrivati i vigili del fuoco del comando provinciale di Benevento, il 118 di San Giorgio del Sannio e i carabinieri: i soccorritori hanno aiutato i feriti a uscire dalle auto e hanno messo in sicurezza i mezzi. La donna alla guida della Lancia, una pensionata, è stata portata in ospedale per le ferite dell'urto.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "La strada è rimasta bloccata per il tempo dei soccorsi e dei rilievi. Come sia andato lo scontro lo dovranno ricostruire i carabinieri.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Come stanno i due feriti e in quale ospedale sono stati portati.",
+     "Come è avvenuto lo scontro."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Scontro tra auto: due pensionati feriti e paura lungo la Statale 7 Appia",
+      "url": "https://www.ottopagine.it/bn/cronaca/442375/scontro-tra-auto-due-pensionati-feriti-e-paura-lungo-la-statale-7-appia.shtml",
+      "data": "28 ott, 08:42"
+     }
+    ]
+   }
+  },
+  {
+   "id": "benevento-incanto-di-natale-2026-giunta-600mila-euro",
+   "titolo": "Benevento, «InCanto di Natale» dal 14 novembre al 6 gennaio: la Giunta approva il programma da 600mila euro",
+   "titolo_google": "Natale a Benevento 2026: InCanto di Natale dal 14 novembre",
+   "sintesi": "La Giunta comunale di Benevento ha approvato il progetto «InCanto di Natale»: eventi e promozione della città dal 14 novembre al 6 gennaio, per 600mila euro. Il Comune ne mette 50mila, la Regione Campania 550mila; organizza la Fondazione Benevento Città Spettacolo.",
+   "categoria": "politica",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "immagine": "natale",
+   "pubblicato": "2026-10-28T08:35+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 4,
+   "fonti": [
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/28/incanto-di-natale-eventi-e-promozione-del-patrimonio-culturale-della-citta-spesa-di-600mila-euro-lalbero-di-20-metri-in-piazza-risorgimento/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Martedì 27 ottobre la Giunta comunale di Benevento, guidata dal sindaco Clemente Mastella, ha approvato la delibera su «InCanto di Natale», il programma di eventi per le feste. Si comincia il 14 novembre e si va avanti fino al 6 gennaio, soprattutto nei fine settimana.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "Il progetto costa in tutto 600mila euro, molto più delle dieci edizioni precedenti. Il Comune ne paga solo 50mila; gli altri 550mila li mette la Regione Campania. Eventi, scenografie, comunicazione e promozione li organizza la Fondazione Benevento Città Spettacolo, che dovrà preparare il calendario.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "Nei piani c'è anche un albero di Natale alto 20 metri in piazza Risorgimento. L'obiettivo dichiarato è portare gente nei negozi, nei ristoranti e negli alberghi della città e far conoscere il suo patrimonio culturale.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Il calendario degli eventi, che deve ancora preparare la Fondazione Benevento Città Spettacolo."
+    ],
+    "fonti": [
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "‘InCanto di Natale’, eventi e promozione del patrimonio culturale della città: spesa di 600mila euro, l’albero di 20 metri in piazza Risorgimento",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/28/incanto-di-natale-eventi-e-promozione-del-patrimonio-culturale-della-citta-spesa-di-600mila-euro-lalbero-di-20-metri-in-piazza-risorgimento/",
+      "data": "28 ott, 08:35"
+     }
+    ]
+   },
+   "foto": "natale-5"
+  },
+  {
+   "id": "pontelandolfo-scuola-via-romanelli-vie-di-fuga-progetto-177mila-euro",
+   "titolo": "Pontelandolfo, vie di fuga e spazi esterni per la scuola di via Romanelli: approvato il progetto da 177mila euro",
+   "titolo_google": "Pontelandolfo, scuola di via Romanelli: progetto da 177mila euro",
+   "sintesi": "La Giunta comunale di Pontelandolfo ha approvato il progetto per mettere in sicurezza la scuola di via Romanelli, con nuove vie di fuga, aree di raccolta e spazi esterni. L'intervento vale 177mila euro.",
+   "categoria": "politica",
+   "zona": "fortore",
+   "luogo": "Pontelandolfo, via Romanelli",
+   "immagine": "edificio-scolastico",
+   "pubblicato": "2026-10-28T08:48+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 3,
+   "fonti": [
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/28/pontelandolfo-vie-di-fuga-e-nuovi-spazi-esterni-per-la-scuola-di-via-romanelli-approvato-il-progetto/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "La Giunta comunale di Pontelandolfo ha approvato il progetto di fattibilità tecnica ed economica, il primo livello del progetto, per mettere in sicurezza la scuola di via Romanelli. Sono previste nuove vie di fuga, aree di raccolta e spazi all'aperto. L'intervento vale 177mila euro.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "Lo scopo è dare a studenti e personale una via d'uscita sicura e immediata in caso di terremoto o di un'altra emergenza. Pochi giorni prima la Giunta aveva indicato questo lavoro come prioritario e aveva approvato il documento con le indicazioni per i progettisti.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando cominceranno i lavori e con quali soldi saranno pagati."
+    ],
+    "fonti": [
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Pontelandolfo – Vie di fuga e nuovi spazi esterni per la scuola di via Romanelli: approvato il progetto",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/28/pontelandolfo-vie-di-fuga-e-nuovi-spazi-esterni-per-la-scuola-di-via-romanelli-approvato-il-progetto/",
+      "data": "28 ott, 08:48"
+     }
+    ]
+   },
+   "foto": "edificio-scolastico-4"
+  },
   {
    "id": "pannarano-crescere-insieme-attivita-bambini-domande-10-novembre",
    "titolo": "Pannarano, «Crescere insieme»: attività gratuite per bambini e ragazzi da novembre a maggio, domande entro il 10 novembre",
@@ -124,14 +288,18 @@
    "zona": "benevento",
    "luogo": "Benevento",
    "immagine": "libri",
-   "pubblicato": "2026-10-28T06:51+01:00",
-   "stato": "una_fonte",
+   "pubblicato": "2026-10-28T08:26+01:00",
+   "stato": "confermata",
    "rilevante": false,
    "importanza": 2,
    "fonti": [
     {
      "nome": "NTR24",
      "url": "https://www.ntr24.tv/2026/10/28/nicola-sguera-vince-il-premio-letterario-nazionale-agrorinasce-con-il-romanzo-inedito-corpo-a-rendere/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/nicola-sguera-vince-il-premio-letterario-nazionale-agrorinasce/"
     }
    ],
    "articolo": {
@@ -139,30 +307,42 @@
      {
       "testo": "Lo scrittore beneventano Nicola Sguera ha vinto la sezione Narrativa inedita della seconda edizione del Premio letterario nazionale «Agrorinasce – Letteratura per il Sociale e la Legalità», con il romanzo «Corpo a rendere». La premiazione si è svolta martedì 27 ottobre a Casapesenna, in provincia di Caserta, nel centro giovanile «Rosario Livatino», un edificio tolto alla camorra.",
       "fonti": [
-       "NTR24"
+       "NTR24",
+       "Anteprima24"
       ]
      },
      {
       "testo": "In finale nella stessa sezione c'erano anche Ilenia Pasquetti, Giuseppe Mascolo e Maria Usiello; il testimonial della giornata era Luca Abete. Il premio lo promuove Agrorinasce, l'agenzia che gestisce molti beni confiscati alla criminalità organizzata, insieme al Dipartimento di Lettere e Beni culturali dell'Università Vanvitelli e alla casa editrice Terra Somnia. Per ognuna delle sezioni principali sono previsti 1.000 euro: Sguera ha detto che una parte servirà a ricordare Esther.",
       "fonti": [
-       "NTR24"
+       "NTR24",
+       "Anteprima24"
       ]
      },
      {
       "testo": "Il romanzo si ispira, molto liberamente, alla storia di Esther Johnson, una donna nigeriana di 36 anni che ogni mattina partiva da Castel Volturno per Benevento, vittima di sfruttamento sessuale. Nel giugno 2016 fu uccisa a colpi di pistola vicino alla ferrovia di Benevento, e il delitto non ha ancora un colpevole. Da quella morte sono nati «La casa di Esther», che accoglie donne vittime di tratta, e il «Patto delle Parole», che Libera Benevento rinnova ogni 14 giugno con scuole e associazioni.",
       "fonti": [
-       "NTR24"
+       "NTR24",
+       "Anteprima24"
       ]
      },
      {
       "testo": "Pochi giorni prima, sabato 24 ottobre, Sguera era arrivato terzo al premio «Aura Latina» del Sistema bibliotecario prenestino, al Castello Colonna di Genazzano, con il racconto lungo «Le sorti sottratte», un giallo ambientato nell'antica Preneste. Durante Benevento LibrAria ha presentato anche il suo secondo romanzo, «Il potere del canto», con gli studenti del liceo Guacci e dell'istituto Rummo.",
       "fonti": [
-       "NTR24"
+       "NTR24",
+       "Anteprima24"
       ]
      }
     ],
     "cronologia": [],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "La vittoria nella sezione Narrativa inedita con «Corpo a rendere», la premiazione del 27 ottobre a Casapesenna e il terzo posto al premio «Aura Latina» del 24 ottobre.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [],
     "fonti": [
@@ -171,6 +351,12 @@
       "titolo": "Nicola Sguera vince il Premio Letterario Nazionale “Agrorinasce” con il romanzo inedito “Corpo a rendere”",
       "url": "https://www.ntr24.tv/2026/10/28/nicola-sguera-vince-il-premio-letterario-nazionale-agrorinasce-con-il-romanzo-inedito-corpo-a-rendere/",
       "data": "28 ott, 06:51"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Nicola Sguera vince il Premio Letterario Nazionale “Agrorinasce”",
+      "url": "https://www.anteprima24.it/benevento/nicola-sguera-vince-il-premio-letterario-nazionale-agrorinasce/",
+      "data": "28 ott, 08:26"
      }
     ]
    },
@@ -5211,12 +5397,20 @@
     },
     {
      "nome": "Comune di Amorosi",
-     "url": "https://comune.amorosi.bn.it/albo-pretorio/?dettaglio_id=306277",
+     "url": "https://comune.amorosi.bn.it/novita/inclusione-albo-unico-scrutatori-seggio-elettorale/",
      "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Mercoledì 28 ottobre il Comune di Amorosi ha messo sul suo sito i moduli da usare: chi vota ad Amorosi e vuole entrare nell'albo degli scrutatori o in quello dei presidenti di seggio può compilare la domanda allegata agli avvisi e presentarla al Comune. Li segue l'Ufficio Segreteria e Protocollo.",
+      "fonti": [
+       "Comune di Amorosi (28/10)",
+       "Comune di Amorosi (presidenti, 28/10)"
+      ],
+      "giorno": "2026-10-28"
+     },
      {
       "testo": "Martedì 27 ottobre il Comune di Amorosi, nella Valle Telesina, ha pubblicato all'albo pretorio due avvisi per chi vuole entrare negli elenchi di chi lavora ai seggi: uno per l'albo unico degli scrutatori e uno per l'albo dei presidenti di seggio.",
       "fonti": [
@@ -5251,7 +5445,7 @@
     "concordano": [],
     "divergono": [],
     "non_si_sa": [
-     "I termini e le modalità degli avvisi di Morcone e Amorosi."
+     "Le scadenze degli avvisi di Morcone e Amorosi, che non le scrivono."
     ],
     "fonti": [
      {
@@ -5280,6 +5474,20 @@
       "titolo": "INCLUSIONE ALBO UFFICIO PRESIDENTE SEGGIO ELETTORALE",
       "url": "https://comune.amorosi.bn.it/albo-pretorio/?dettaglio_id=306278",
       "data": "27 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "Comune di Amorosi (28/10)",
+      "titolo": "Inclusione albo unico scrutatori seggio elettorale.",
+      "url": "https://comune.amorosi.bn.it/novita/inclusione-albo-unico-scrutatori-seggio-elettorale/",
+      "data": "28 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "Comune di Amorosi (presidenti, 28/10)",
+      "titolo": "Inclusione albo ufficio Presidente seggio elettorale",
+      "url": "https://comune.amorosi.bn.it/novita/inclusione-albo-ufficio-presidente-seggio-elettorale/",
+      "data": "28 ott",
       "ufficiale": true
      }
     ],

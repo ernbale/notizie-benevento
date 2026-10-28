@@ -788,6 +788,35 @@
    "foto": "orchestra-5"
   },
   {
+   "id": "giornata-feijoa-santagata-de-goti-2026",
+   "titolo": "Giornata della Feijoa a Sant'Agata de' Goti, quinta edizione",
+   "tipo": "sagra",
+   "inizio": "2026-10-31",
+   "fine": "2026-11-01",
+   "luogo": "Centro storico e piantagione di feijoa",
+   "comune": "Sant'Agata de' Goti",
+   "zona": "telesina",
+   "breve": "Due giorni dedicati alla feijoa, uno dei frutti tipici di Sant'Agata de' Goti: mercatini, visite guidate, laboratori, musica, spettacoli e degustazioni.",
+   "descrizione": [
+    {
+     "testo": "Sabato 31 ottobre e domenica 1° novembre torna a Sant'Agata de' Goti la Giornata della Feijoa, alla quinta edizione. È la festa di una delle coltivazioni più tipiche del paese. Nel centro storico e nella piantagione ci saranno mercatini, visite guidate, incontri, laboratori, musica, spettacoli e degustazioni.",
+     "fonti": [
+      "Comune di Sant'Agata de' Goti"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "nome": "Comune di Sant'Agata de' Goti",
+     "titolo": "SANTAGATA DE GOTI: UNA SETTIMANA DI IDEE, CULTURA E VALORIZZAZIONE DEL TERRITORIO",
+     "url": "https://www.comune.santagatadegoti.bn.it/novita/notizie/novita_207.html",
+     "data": "28 ott"
+    }
+   ],
+   "immagine": "sagra",
+   "foto": "sagra-10"
+  },
+  {
    "id": "neri-per-caso-accademia-santa-sofia-2026",
    "titolo": "Neri per Caso al Teatro Comunale",
    "tipo": "concerto",
