@@ -62,12 +62,12 @@
   .menu select { font: 500 14px var(--sans); background: transparent; border: 1px solid var(--riga); padding: 4px 6px; color: var(--nero); }
   .menu .link-comuni[aria-current="page"] { border-bottom-color: var(--rosso); }
   .menu .voce-allerta { color: #fff; background: var(--rosso); padding: 3px 9px; border-radius: 3px; border-bottom: 0; }
-  @media (min-width: 960px) { .menu { flex-wrap: nowrap; gap: 4px 10px; } .menu .cerca-campo input { width: 155px; } }
+  @media (min-width: 960px) { .menu { flex-wrap: nowrap; gap: 4px 8px; } .menu select { padding: 4px 3px; } .menu .cerca-campo input { width: 104px; } }
   @media (min-width: 960px) and (max-width: 1119px) {
-    .menu { gap: 4px 7px; }
-    nav.menu button, nav.menu .link-comuni, nav.menu .link-archivio { font-size: 13.5px; }   /* nav: vince sul font di .link-comuni più sotto */
-    .menu select { font-size: 13px; padding: 4px 2px; }
-    .menu .cerca-campo input { width: 90px; }
+    .menu { gap: 4px 6px; }
+    nav.menu button, nav.menu .link-comuni, nav.menu .link-archivio { font-size: 13px; }   /* nav: vince sul font di .link-comuni più sotto */
+    .menu select { font-size: 12.5px; padding: 3px 1px; }
+    .menu .cerca-campo input { width: 70px; }
   }
 
   /* la pagina Avvisi: lo stile della pagina «Strade chiuse» (.appro, .notizie-comune) e il riquadro dello speciale */
@@ -420,6 +420,55 @@
   .chiusure-box { display: block; text-decoration: none; color: var(--nero); margin-bottom: 18px; }
   .chiusure-box .titolo-col { border-top-color: var(--rosso); color: var(--rosso); margin-bottom: 8px; }
   .storia-corso { max-width: 760px; margin: 14px 0 6px; }
+  /* la pagina Contributi */
+  .contr-riepilogo { font: 600 14px var(--sans); color: var(--grigio); margin: 14px 0 4px; }
+  .contr-filtri { padding: 10px 0 14px; border-bottom: 1px solid var(--riga); }
+  .contr-riga { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 6px 0; }
+  .contr-etichetta { font: 700 12px var(--sans); text-transform: uppercase; letter-spacing: .6px; color: var(--rosso); width: 92px; flex: none; }
+  .contr-riga button { font: 600 13px var(--sans); background: #fff; color: var(--nero); border: 1px solid var(--riga); border-radius: 16px; padding: 5px 12px; cursor: pointer; }
+  .contr-riga button:hover { border-color: var(--nero); }
+  .contr-riga button[aria-pressed="true"] { background: var(--nero); color: #fff; border-color: var(--nero); }
+  .contr-riga button .n { color: var(--grigio); font-weight: 500; }
+  .contr-riga button[aria-pressed="true"] .n { color: #ddd; }
+  .contr-cerca { margin: 10px 0 0 98px; max-width: 520px; }
+  .contr-cerca input { width: 100%; box-sizing: border-box; font: 500 15px var(--sans); padding: 8px 12px; border: 1px solid var(--nero); border-radius: 4px; background: #fff; color: var(--nero); }
+  .contr-azzera { margin: 8px 0 0 98px; font: 600 13px var(--sans); color: var(--blu); background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; }
+  .contr-elenco .titolo-col { margin-top: 20px; }
+  .contr-click { background: var(--carta-scura); padding: 2px 16px 8px; margin-top: 18px; }
+  .contr-click .titolo-col { border-top-color: var(--rosso); color: var(--rosso); }
+  .contr-click p { font: 500 15px/1.45 var(--sans); margin: 6px 0; }
+  .contr-click a { color: var(--nero); font-weight: 700; }
+  .contr-click .contr-ics { color: var(--blu); font-weight: 600; }
+  .contr-lista { display: grid; grid-template-columns: 1fr 1fr; gap: 0 32px; }
+  .contr { padding: 14px 0 16px; border-bottom: 1px solid var(--riga); }
+  .contr .occhiello { margin-bottom: 4px; }
+  .contr h3 { font: 700 20px/1.25 var(--serif); margin: 0 0 6px; }
+  .contr h3 a { color: var(--nero); text-decoration: none; }
+  .contr h3 a:hover { text-decoration: underline; }
+  .contr-cose { font: 400 15.5px/1.45 var(--serif); color: #2a2520; margin: 0 0 8px; }
+  .contr-fatti { list-style: none; margin: 0 0 8px; padding: 0; font: 500 14px/1.5 var(--sans); }
+  .contr-fatti b { font-weight: 700; }
+  .contr-scad { display: inline-block; font: 700 13.5px var(--sans); color: var(--nero); background: rgba(255, 255, 255, .6); border: 1px solid var(--riga); border-radius: 3px; padding: 3px 8px; }
+  .contr-scad.urgente { color: #fff; background: var(--rosso); border-color: var(--rosso); }
+  .contr-link { margin-top: 8px; font: 600 14px var(--sans); }
+  .contr-link a { color: var(--blu); }
+  .contr-nota { font: 500 13.5px/1.5 var(--sans); color: var(--grigio); margin: 22px 0 10px; max-width: 760px; }
+  /* la pagina di un contributo */
+  .appro .contr-dati { display: grid; grid-template-columns: 170px 1fr; gap: 6px 16px; margin: 16px 0; padding: 14px 16px;
+                       background: var(--carta-scura); font: 500 15.5px/1.45 var(--sans); }
+  .appro .contr-dati dt { font-weight: 700; color: var(--grigio); }
+  .appro .contr-dati dd { margin: 0; }
+  .appro .contr-vai a { display: inline-block; font: 700 16px var(--sans); color: #fff; background: var(--nero); padding: 10px 16px;
+                        border-radius: 4px; text-decoration: none; }
+  .appro .contr-vai a:hover { background: var(--rosso); }
+  .contr-nota a { color: var(--blu); }
+  @media (max-width: 760px) {
+    .contr-lista { grid-template-columns: 1fr; }
+    .contr-etichetta { width: 100%; }
+    .contr-cerca, .contr-azzera { margin-left: 0; }
+    .appro .contr-dati { grid-template-columns: 1fr; gap: 2px; }
+    .appro .contr-dati dd { margin-bottom: 8px; }
+  }
   .appuntamenti { margin: 14px 0 8px; }
   .appuntamenti ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0 22px; }
   .appuntamenti li { padding: 8px 0 10px; border-bottom: 1px solid var(--riga); font: 500 14px/1.35 var(--sans); }
@@ -728,6 +777,7 @@
     <a class="link-comuni" href="/calcio/">Calcio</a>
     <button type="button" data-cat="meteo" aria-pressed="false" class="voce-allerta" hidden>Allerte</button>
     <button type="button" data-cat="avvisi" aria-pressed="false">Avvisi</button>
+    <button type="button" data-cat="contributi" aria-pressed="false">Contributi</button>
     <button type="button" data-cat="eventi" aria-pressed="false">Eventi</button>
     <button type="button" data-cat="cultura" aria-pressed="false">Cultura</button>
     <button type="button" data-cat="altro" aria-pressed="false">Altro</button>
@@ -742,7 +792,7 @@
     <a class="link-comuni" href="/comuni/">Comuni</a>
     <a class="link-archivio" href="#archivio">Archivio</a>
     <form class="cerca-campo" id="cerca-home" role="search">
-      <input type="search" id="cerca-home-q" placeholder="Cerca tra le notizie" aria-label="Cerca tra le notizie" autocomplete="off" enterkeyhint="search">
+      <input type="search" id="cerca-home-q" placeholder="Cerca" aria-label="Cerca tra le notizie" autocomplete="off" enterkeyhint="search">
       <button type="submit" aria-label="Cerca"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg></button>
     </form>
   </nav>
@@ -763,7 +813,7 @@
 
 <script>
 (function () {
-  var NOMI_CAT = { avvisi: "Avvisi", cultura: "Cultura", strade: "Strade", cronaca: "Cronaca", politica: "Politica", sport: "Sport", eventi: "Eventi", meteo: "Allerte", altro: "Altro" };
+  var NOMI_CAT = { avvisi: "Avvisi", contributi: "Contributi", cultura: "Cultura", strade: "Strade", cronaca: "Cronaca", politica: "Politica", sport: "Sport", eventi: "Eventi", meteo: "Allerte", altro: "Altro" };
   var NOMI_SPORT = { calcio: "Calcio", calcio_a_5: "Calcio a 5", basket: "Basket", pallavolo: "Pallavolo", rugby: "Rugby",
     scherma: "Scherma", atletica: "Atletica", tennis: "Tennis", ciclismo: "Ciclismo", nuoto: "Nuoto", altro: "Altri sport" };
   var filtroSport = "";
@@ -1671,6 +1721,7 @@
     if (!(FISSA && filtroCat === (FISSA.cat || "") && filtroZona === (FISSA.zona || ""))) document.title = titoloFiltri();
     var tit = titoloSezione();
     if (tit) box.appendChild(el("h1", "titolo-sezione", [tit]));
+    if (filtroCat === "contributi") { paginaContributi(box); return; }
     var lista = filtrate();
     if (filtroCat === "sport") box.appendChild(scelteSport());
     if (lista.length) box.appendChild(strisciaUltime(lista));
@@ -2450,6 +2501,212 @@
         .forEach(function (ap) { box.appendChild(el("section", "storia-corso", [el("h3", "titolo-col", ["La storia in corso"]), schedaAppro(ap)])); });
     }
   }
+  // La pagina Contributi (lui, 28 ott 2026: «tutto quello che riesci a trovare che vada bene per BN e provincia…
+  // estremamente facile da consultare»; «Contributi» e non «Bandi», perché i concorsi avranno una sezione loro):
+  // contributi.json (strumenti/contributi.py: catalogo del Ministero e contributi locali) più i bandi dei Comuni presi
+  // dalle notizie. Tre domande (chi sei, per cosa, dove vale) e la ricerca, che restano nell'indirizzo
+  // (/contributi/?chi=impresa&tema=digitale): una ricerca si condivide col link. Come in pagine.py (html_contributi).
+  var CHI_CONTR = { impresa: "Imprese", nuova: "Nuove imprese", professionista: "Professionisti", associazione: "Associazioni",
+    ente: "Comuni ed enti", cittadino: "Cittadini e famiglie" };
+  var TEMI_CONTR = { investire: "Investire", aprire: "Aprire un'attività", digitale: "Digitale", energia: "Energia e ambiente",
+    innovazione: "Innovazione e ricerca", "export": "Export", credito: "Credito e liquidità", "giovani-donne": "Giovani e donne",
+    crisi: "Imprese in difficoltà", sociale: "Sociale", cultura: "Cultura e spettacolo" };
+  var DOVE_CONTR = { sannio: "Solo Sannio", campania: "Campania", sud: "Sud Italia", italia: "Italia", europa: "Europa" };
+  var contributi = null, contributiPronti = null;
+  function caricaContributi() {
+    if (!contributiPronti) contributiPronti = fetch("contributi.json?t=" + Date.now(), { cache: "no-store" })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (j) { contributi = j || { contributi: [] }; })
+      .catch(function () { contributi = { contributi: [] }; });
+    return contributiPronti;
+  }
+  function filtriContributi() {
+    var q = new URLSearchParams(location.search);
+    return { chi: CHI_CONTR[q.get("chi")] ? q.get("chi") : "", tema: TEMI_CONTR[q.get("tema")] ? q.get("tema") : "",
+      dove: DOVE_CONTR[q.get("dove")] ? q.get("dove") : "", q: (q.get("q") || "").slice(0, 60) };
+  }
+  // i bandi dei Comuni (buoni libri, bonus, domande): gli avvisi «Domande e bandi» delle notizie
+  function contributiDeiComuni() {
+    var oggi = oggiTZ();
+    return (dati.notizie || []).filter(function (n) {
+      return n.categoria === "avvisi" && /^(Domande e bandi|Scadenza)$/.test(tipoAvviso(n)) && (!n.in_vigore_fino || n.in_vigore_fino >= oggi);
+    }).map(function (n) {
+      var f = (vistaUfficiale(n).fonti || []).filter(function (x) { return /^https?:\/\//.test(String(x.url || "")); })[0];
+      var c = comuneDi(n);
+      return { id: "notizia-" + n.id, titolo: n.titolo, ente: /^(Più Comuni|Tutto il Sannio)$/.test(c) ? c : "Comune di " + c, dove: "sannio",
+        chi: ["cittadino"], temi: [], forma: "", quanto: "", scadenza: n.in_vigore_fino || null, link: f ? f.url : "",
+        cose: n.sintesi || "", pagina: linkArticolo(n), aggiunto: String(n.pubblicato || "").slice(0, 10) };
+    });
+  }
+  function normale(s) { return String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, ""); }
+  function passaFiltri(v, f, salta) {
+    if (salta !== "chi" && f.chi && (v.chi || []).indexOf(f.chi) < 0) return false;
+    if (salta !== "tema" && f.tema && (v.temi || []).indexOf(f.tema) < 0) return false;
+    if (salta !== "dove" && f.dove && v.dove !== f.dove) return false;
+    if (f.q) {
+      var testoV = normale([v.titolo, v.ente, v.cose, v.a_chi, v.cosa_prevede, v.forma].join(" "));
+      if (!normale(f.q).split(/\s+/).every(function (p) { return !p || testoV.indexOf(p) >= 0; })) return false;
+    }
+    return true;
+  }
+  function giornoContr(g) { return new Date(g + "T12:00:00Z").toLocaleDateString("it-IT", { timeZone: "UTC", weekday: "long", day: "numeric", month: "long" }); }
+  function fraGiorni(g) { return Math.round((Date.parse(g + "T12:00:00Z") - Date.parse(oggiTZ() + "T12:00:00Z")) / 864e5); }
+  function scadenzaContr(v) {
+    var oggi = oggiTZ();
+    if (v.click_day) {
+      var cd = v.click_day.slice(0, 10);
+      if (cd >= oggi) return { testo: "Click day " + (cd === oggi ? "oggi" : giornoContr(cd)) + " alle " + v.click_day.slice(11, 16), urgente: fraGiorni(cd) <= 7 };
+    }
+    if (v.apertura && v.apertura > oggi) return { testo: "Apre " + giornoContr(v.apertura) + (v.scadenza ? ", scade " + giornoContr(v.scadenza) : ""), urgente: false };
+    if (v.scadenza) {
+      var n = fraGiorni(v.scadenza);
+      return { testo: "Scade " + giornoContr(v.scadenza) + " · " + (n === 0 ? "oggi" : n === 1 ? "domani" : "fra " + n + " giorni"), urgente: n <= 7 };
+    }
+    return { testo: v.scadenza_testo ? v.scadenza_testo.charAt(0).toUpperCase() + v.scadenza_testo.slice(1) : "Senza scadenza indicata", urgente: false };
+  }
+  function linkContributo(v) { return v.pagina || "/contributi/" + encodeURIComponent(v.id) + "/"; }
+  function schedaContributo(v) {
+    var art = el("article", "contr", [el("div", "occhiello", [v.ente + " · " + (DOVE_CONTR[v.dove] || "")])]);
+    var h = el("h3", "", []), a = el("a", "", [v.titolo]);
+    a.href = linkContributo(v);
+    h.appendChild(a);
+    art.appendChild(h);
+    if (v.cose) art.appendChild(el("p", "contr-cose", [v.cose.length > 190 ? v.cose.slice(0, 190).replace(/\s+\S*$/, "") + "…" : v.cose]));
+    var fatti = el("ul", "contr-fatti", []);
+    var per = (v.chi || []).map(function (k) { return CHI_CONTR[k]; }).filter(Boolean);
+    if (per.length) fatti.appendChild(el("li", "", [el("b", "", ["Per: "]), per.join(", ")]));
+    if (v.forma) fatti.appendChild(el("li", "", [el("b", "", ["Cosa: "]), v.forma]));
+    if (v.quanto) fatti.appendChild(el("li", "", [el("b", "", ["Quanto: "]), v.quanto]));
+    if (fatti.children.length) art.appendChild(fatti);
+    var sc = scadenzaContr(v);
+    art.appendChild(el("div", "contr-scad" + (sc.urgente ? " urgente" : ""), [sc.testo]));
+    if (v.link) art.appendChild(el("div", "contr-link", [linkSicuro(v.link, "Sito ufficiale ›")]));
+    return art;
+  }
+  function icsClickDay(v) {
+    var d = v.click_day.replace(/[-:]/g, "") + "00";
+    var testo = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Notizie Benevento//Contributi//IT", "BEGIN:VEVENT",
+      "UID:" + v.id + "@notiziebenevento.it", "DTSTAMP:" + new Date().toISOString().replace(/[-:]/g, "").slice(0, 15) + "Z",
+      "DTSTART;TZID=Europe/Rome:" + d, "DURATION:PT1H", "SUMMARY:Click day: " + v.titolo.replace(/[,;]/g, " "),
+      "URL:" + v.link, "BEGIN:VALARM", "TRIGGER:-PT30M", "ACTION:DISPLAY", "DESCRIPTION:Click day", "END:VALARM", "END:VEVENT", "END:VCALENDAR"].join("\r\n");
+    var a = el("a", "contr-ics", ["Mettilo nel calendario"]);
+    a.href = "data:text/calendar;charset=utf-8," + encodeURIComponent(testo);
+    a.download = "click-day-" + v.id + ".ics";
+    return a;
+  }
+  function paginaContributi(box) {
+    if (contributi === null) {
+      box.appendChild(el("p", "vuoto", ["Caricamento dei contributi…"]));
+      caricaContributi().then(function () { if (filtroCat === "contributi") disegna(); });
+      return;
+    }
+    var oggi = oggiTZ(), f = filtriContributi();
+    var voci = (contributi.contributi || []).filter(function (v) { return !v.scaduto && (!v.scadenza || v.scadenza >= oggi); })
+      .concat(contributiDeiComuni())
+      .sort(function (a, b) { var x = a.scadenza || "9999", y = b.scadenza || "9999"; return x < y ? -1 : x > y ? 1 : 0; });
+    // gli ultimi arrivati, nella striscia come le ultime notizie delle altre sezioni
+    var nuovi = voci.slice().sort(function (a, b) { return String(b.aggiunto || "") < String(a.aggiunto || "") ? -1 : String(b.aggiunto || "") > String(a.aggiunto || "") ? 1 : 0; }).slice(0, 5);
+    if (nuovi.length) {
+      var striscia = el("section", "ultimora", []);
+      nuovi.forEach(function (v) {
+        var a = el("a", "", [el("div", "ora", [v.aggiunto === oggi ? "oggi" : soloData(v.aggiunto)]), el("div", "tit", [v.titolo])]);
+        a.href = linkContributo(v);
+        striscia.appendChild(a);
+      });
+      box.appendChild(striscia);
+    }
+    var click = voci.filter(function (v) { return v.click_day && v.click_day.slice(0, 10) >= oggi; });
+    var agg = contributi.aggiornato ? new Date(contributi.aggiornato) : null;
+    box.appendChild(el("p", "contr-riepilogo", [voci.length + " contributi aperti" + (click.length ? " · " + click.length + " click day in arrivo" : "") +
+      (agg && !isNaN(agg) ? " · aggiornato " + quando(contributi.aggiornato) : "")]));
+    var pann = el("section", "contr-filtri", []), elenco = el("section", "contr-elenco", []);
+    function riga(etichetta, chiave, valori) {
+      var r = el("div", "contr-riga", [el("span", "contr-etichetta", [etichetta])]);
+      var tutti = el("button", "", ["Tutti"]);
+      tutti.type = "button";
+      tutti.setAttribute("aria-pressed", f[chiave] ? "false" : "true");
+      tutti.addEventListener("click", function () { f[chiave] = ""; aggiorna(); });
+      r.appendChild(tutti);
+      Object.keys(valori).forEach(function (k) {
+        var quanti = voci.filter(function (v) { var g = Object.assign({}, f); g[chiave] = k; return passaFiltri(v, g); }).length;
+        if (!quanti && f[chiave] !== k) return;
+        var b = el("button", "", [valori[k], el("span", "n", [" " + quanti])]);
+        b.type = "button";
+        b.setAttribute("aria-pressed", f[chiave] === k ? "true" : "false");
+        b.addEventListener("click", function () { f[chiave] = f[chiave] === k ? "" : k; aggiorna(); });
+        r.appendChild(b);
+      });
+      return r;
+    }
+    var cerca = el("input", "", []);
+    cerca.type = "search";
+    cerca.placeholder = "Cerca: fotovoltaico, bar, affitto, assunzioni…";
+    cerca.value = f.q;
+    cerca.setAttribute("aria-label", "Cerca tra i contributi");
+    var attesa = null;
+    cerca.addEventListener("input", function () { clearTimeout(attesa); attesa = setTimeout(function () { f.q = cerca.value.trim(); aggiorna(); }, 250); });
+    // la casella di ricerca non si ridisegna mai: si scrive senza perdere il punto
+    var righe = el("div", "", []), azzera = el("div", "", []);
+    pann.appendChild(righe);
+    pann.appendChild(el("div", "contr-cerca", [cerca]));
+    pann.appendChild(azzera);
+    function aggiorna() {
+      var q = new URLSearchParams();
+      ["chi", "tema", "dove", "q"].forEach(function (k) { if (f[k]) q.set(k, f[k]); });
+      history.replaceState(null, "", "/contributi/" + (q.toString() ? "?" + q.toString() : ""));
+      mostrato = location.pathname + location.search + location.hash;
+      disegnaFiltri();
+      disegnaElenco();
+    }
+    function disegnaFiltri() {
+      righe.textContent = "";
+      righe.appendChild(riga("Chi sei?", "chi", CHI_CONTR));
+      righe.appendChild(riga("Per cosa?", "tema", TEMI_CONTR));
+      righe.appendChild(riga("Dove vale?", "dove", DOVE_CONTR));
+      azzera.textContent = "";
+      if (f.chi || f.tema || f.dove || f.q) {
+        var az = el("button", "contr-azzera", ["Azzera i filtri"]);
+        az.type = "button";
+        az.addEventListener("click", function () { f = { chi: "", tema: "", dove: "", q: "" }; cerca.value = ""; aggiorna(); });
+        azzera.appendChild(az);
+      }
+    }
+    function disegnaElenco() {
+      elenco.textContent = "";
+      var scelti = voci.filter(function (v) { return passaFiltri(v, f); });
+      var clickScelti = scelti.filter(function (v) { return click.indexOf(v) >= 0; });
+      if (clickScelti.length) {
+        var cd = el("div", "contr-click", [el("h3", "titolo-col", ["Click day in arrivo"])]);
+        clickScelti.sort(function (a, b) { return a.click_day < b.click_day ? -1 : 1; }).forEach(function (v) {
+          var a = el("a", "", [v.titolo]);
+          a.href = linkContributo(v);
+          cd.appendChild(el("p", "", [el("b", "", [giornoContr(v.click_day.slice(0, 10)) + " alle " + v.click_day.slice(11, 16)]), " · ", a, " · ", icsClickDay(v)]));
+        });
+        elenco.appendChild(cd);
+      }
+      elenco.appendChild(el("h3", "titolo-col", [scelti.length === 1 ? "1 contributo" : scelti.length + " contributi, in ordine di scadenza"]));
+      if (!scelti.length) {
+        elenco.appendChild(el("p", "vuoto", ["Nessun contributo con questi filtri. Prova a toglierne uno."]));
+        return;
+      }
+      var griglia = el("div", "contr-lista", []);
+      scelti.forEach(function (v) { griglia.appendChild(schedaContributo(v)); });
+      elenco.appendChild(griglia);
+    }
+    disegnaFiltri();
+    disegnaElenco();
+    box.appendChild(pann);
+    box.appendChild(elenco);
+    var nota = el("p", "contr-nota", ["Fonti: Catalogo degli incentivi del Ministero delle Imprese e del Made in Italy (incentivi.gov.it, dati aperti IODL 2.0), " +
+      "Camera di Commercio Irpinia Sannio, Regione Campania e Comuni del Sannio. Prima di fare domanda leggi sempre il bando ufficiale: date e importi " +
+      "possono cambiare. Manca un contributo? Scrivi a "]);
+    var m = el("a", "", ["redazione@notiziebenevento.it"]);
+    m.href = "mailto:redazione@notiziebenevento.it";
+    nota.appendChild(m);
+    nota.appendChild(testo("."));
+    box.appendChild(nota);
+  }
+
   var GRUPPI_CULTURA = ["teatro", "musica", "mostre", "cinema", "libri"];
   function appuntamentiCultura() {
     var sez = el("section", "appuntamenti", [el("h3", "titolo-col", ["Prossimi appuntamenti"])]);
@@ -2883,7 +3140,7 @@
   // /sezione/<categoria>/?zona=<zona> (la pagina dice a Google che la sua è /sezione/<categoria>/).
   var PAGINA_CAT = { cronaca: "/sezione/cronaca/", politica: "/sezione/politica/", sport: "/sezione/sport/", eventi: "/sezione/eventi/",
     meteo: "/sezione/allerte/", altro: "/sezione/altro/", avvisi: "/sezione/avvisi/", strade: "/sezione/strade/",
-    cultura: "/sezione/cultura/" };
+    cultura: "/sezione/cultura/", contributi: "/contributi/" };
   var PAGINA_ZONA = { benevento: "/zona/benevento/", telesina: "/zona/valle-telesina/", caudina: "/zona/valle-caudina/",
     fortore: "/zona/fortore/", provincia: "/zona/altri-comuni/" };
   function indirizzoFiltri() {
@@ -2925,7 +3182,8 @@
   var TITOLO_ZONA = { benevento: "Notizie da Benevento città", telesina: "Notizie dalla Valle Telesina", caudina: "Notizie dalla Valle Caudina",
     fortore: "Notizie dal Fortore e dal Tammaro", provincia: "Notizie dagli altri comuni del Sannio" };
   function titoloSezione() {
-    var c = filtroCat === "altro" ? "Altre notizie da Benevento e dal Sannio" : filtroCat ? NOMI_CAT[filtroCat] + " a Benevento e nel Sannio" : "";
+    var c = filtroCat === "altro" ? "Altre notizie da Benevento e dal Sannio" : filtroCat === "contributi" ? "Contributi e bandi a Benevento e nel Sannio"
+      : filtroCat ? NOMI_CAT[filtroCat] + " a Benevento e nel Sannio" : "";
     var z = filtroZona ? document.querySelector('#zona option[value="' + filtroZona + '"]') : null;
     return c && z ? NOMI_CAT[filtroCat] + " · " + z.textContent : c || TITOLO_ZONA[filtroZona] || "";
   }
@@ -3027,6 +3285,9 @@
   })();
 
   // sezioni e zone: la prima pagina parte già filtrata
+  // la scritta della ricerca nel menu: lunga sul telefono, «Cerca» sul computer, niente dove la casella è stretta
+  document.getElementById("cerca-home-q").placeholder = window.matchMedia("(max-width: 959px)").matches ? "Cerca tra le notizie"
+    : window.matchMedia("(max-width: 1119px)").matches ? "" : "Cerca";
   if (FISSA && (FISSA.cat || FISSA.zona)) {
     filtroCat = FISSA.cat || "";
     filtroZona = ((filtriDaIndirizzo() || {}).zona) || FISSA.zona || "";   // anche ?zona= (sezione e zona insieme)

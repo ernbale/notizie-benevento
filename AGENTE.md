@@ -724,6 +724,31 @@ Nel resoconto scrivi quanti ne hai aggiunti, e se l'elenco dice ATTENZIONE (copi
 }
 ```
 
+## I contributi (`contributi_locali.json`)
+
+Dal 28 ott 2026 il sito ha la pagina **Contributi** (notiziebenevento.it/contributi/; lui: «tutto quello che riesci a
+trovare che vada bene per BN e provincia… statali, europei, per tutti, click day… estremamente facile da consultare»).
+Quasi tutto arriva da solo dal Catalogo degli incentivi del Ministero (strumenti/contributi.py, lo scarica il Pi) e i
+bandi dei Comuni dalle tue notizie (categoria `avvisi`, «domande… entro…»: continua a scriverle come sempre). **Tu
+aggiungi solo quello che il catalogo non ha**, una volta al giorno, nel primo giro del mattino:
+- **Dove guardare:** la Camera di Commercio Irpinia Sannio (`https://www.irpiniasannio.camcom.it/bandi`), i bandi e
+  avvisi della Regione Campania, i GAL e la Provincia di Benevento quando li trovi citati, e i **click day** (INAIL
+  bando ISI, decreto flussi, voucher della Regione o della Camera di Commercio).
+- **Prima di aggiungere:** guarda se c'è già in `https://notiziebenevento.it/contributi.json` (stesso link o stesso
+  titolo): se c'è, non aggiungerlo.
+- **Ogni voce** in `contributi_locali.json` (`{"contributi": [ … ]}`):
+  `{"id": "parole-con-trattini", "titolo": "il titolo del bando", "ente": "Camera di Commercio Irpinia Sannio",
+  "dove": "sannio|campania|sud|italia|europa", "chi": ["impresa|nuova|professionista|associazione|ente|cittadino"],
+  "temi": ["investire|aprire|digitale|energia|innovazione|export|credito|giovani-donne|crisi|sociale|cultura"],
+  "forma": "Contributo a fondo perduto", "quanto": "fino a 5.000 €", "apertura": "AAAA-MM-GG", "scadenza": "AAAA-MM-GG",
+  "click_day": "AAAA-MM-GGTHH:MM (solo se c'è)", "link": "https://… la pagina ufficiale del bando",
+  "cose": "2-3 frasi: cos'è e a chi serve", "controllato": "AAAA-MM-GG di oggi"}`.
+- **Regole:** date, ore e importi **solo se scritti nel bando ufficiale** (mai stimati); se il bando cambia la scadenza
+  o il click day, aggiorna la voce e `controllato`; non cancellare le voci scadute (escono da sole dopo 60 giorni).
+  contributi.py scarta le voci fatte male: guarda gli avvisi nel log della pubblicazione.
+- Un contributo grosso e nuovo (Regione, Camera di Commercio, molti soldi o tante persone) è anche una **notizia**
+  (`avvisi`, o `politica` se lo decide una Giunta), come sempre.
+
 ## Gli approfondimenti
 
 - Solo per le **notizie più rilevanti** per chi vive nel Sannio: riportate da **almeno 3 testate**, oppure che

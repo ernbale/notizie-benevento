@@ -75,12 +75,12 @@
   .cerca-campo button { display: inline-flex; align-items: center; justify-content: center; width: 40px; border: 1px solid var(--nero);
                         border-radius: 0 4px 4px 0; background: var(--nero); color: #fff; cursor: pointer; padding: 0; }
   .cerca-campo svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; }
-  @media (min-width: 960px) { .menu { flex-wrap: nowrap; gap: 4px 10px; } .menu .cerca-campo input { width: 155px; } }
+  @media (min-width: 960px) { .menu { flex-wrap: nowrap; gap: 4px 8px; } .menu select { padding: 4px 3px; } .menu .cerca-campo input { width: 104px; } }
   @media (min-width: 960px) and (max-width: 1119px) {
-    .menu { gap: 4px 7px; }
-    .menu a.voce, .menu .link-archivio { font-size: 13.5px; }
-    .menu select { font-size: 13px; padding: 4px 2px; }
-    .menu .cerca-campo input { width: 90px; }
+    .menu { gap: 4px 6px; }
+    .menu a.voce, .menu .link-archivio { font-size: 13px; }
+    .menu select { font-size: 12.5px; padding: 3px 1px; }
+    .menu .cerca-campo input { width: 70px; }
   }
   @media (max-width: 620px) {
     .menu { justify-content: flex-start; gap: 4px 12px; }
@@ -332,6 +332,7 @@
     <a class="voce" href="/calcio/">Calcio</a>
     <a class="voce voce-allerta" href="/sezione/allerte/" hidden>Allerte</a>
     <a class="voce" href="/sezione/avvisi/">Avvisi</a>
+    <a class="voce" href="/contributi/">Contributi</a>
     <a class="voce" href="/sezione/eventi/">Eventi</a>
     <a class="voce" href="/sezione/cultura/">Cultura</a>
     <a class="voce" href="/sezione/altro/">Altro</a>
@@ -346,13 +347,15 @@
     <a class="voce" href="/comuni/">Comuni</a>
     <a class="link-archivio" href="/#archivio">Archivio</a>
     <form class="cerca-campo" id="cerca-menu" role="search">
-      <input type="search" id="cerca-menu-q" placeholder="Cerca tra le notizie" aria-label="Cerca tra le notizie" autocomplete="off" enterkeyhint="search">
+      <input type="search" id="cerca-menu-q" placeholder="Cerca" aria-label="Cerca tra le notizie" autocomplete="off" enterkeyhint="search">
       <button type="submit" aria-label="Cerca"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg></button>
     </form>
   </nav>
   <script>
   (function () {
     document.getElementById("zona-menu").addEventListener("change", function (e) { location.href = e.target.value; });
+    document.getElementById("cerca-menu-q").placeholder = window.matchMedia("(max-width: 959px)").matches ? "Cerca tra le notizie"
+      : window.matchMedia("(max-width: 1119px)").matches ? "" : "Cerca";
     document.getElementById("cerca-menu").addEventListener("submit", function (e) {
       e.preventDefault();
       var q = document.getElementById("cerca-menu-q").value.trim();

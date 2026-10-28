@@ -20,6 +20,9 @@ on:
       carburanti:
         description: "Prezzi dei carburanti (li manda il Pi di casa: carburanti.json compresso e in base64). Vuoto = quelli già pubblicati"
         default: ""
+      contributi:
+        description: "Catalogo dei contributi (lo manda il Pi di casa: compresso e in base64). Vuoto = quello già pubblicato"
+        default: ""
 
 permissions:
   contents: read
@@ -78,6 +81,27 @@ jobs:
             echo "::warning::Calcio non aggiornato: tengo quello già pubblicato"
             curl -fsSL --max-time 30 "https://notiziebenevento.it/calcio.json" -o calcio.json || echo "nessun calcio pubblicato prima"
           fi
+
+      # i contributi per il Sannio (pagina contributi/): il catalogo del Ministero da GitHub non si apre (come i carburanti),
+      # lo manda il Pi di casa quando cambia (strumenti/contributi.py --scarica --manda); a ogni pubblicazione si unisce ai
+      # contributi locali scritti dall'agente (contributi_locali.json) e si tolgono i scaduti. Se qualcosa non va, restano
+      # quelli già pubblicati
+      - name: Contributi e bandi (catalogo dal Pi di casa, più i contributi locali)
+        env:
+          CONTRIBUTI: ${{ github.event.inputs.contributi }}
+        run: |
+          rm -f contributi-catalogo.json
+          if [ -n "$CONTRIBUTI" ] && printf '%s' "$CONTRIBUTI" | base64 -d | gunzip > contributi-catalogo.json; then
+            echo "contributi: arrivato il catalogo dal Pi"
+          else
+            rm -f contributi-catalogo.json
+          fi
+          curl -fsSL --max-time 30 "https://notiziebenevento.it/contributi.json" -o contributi-prima.json || rm -f contributi-prima.json
+          if ! python3 strumenti/contributi.py --pubblica --catalogo contributi-catalogo.json --prima contributi-prima.json; then
+            echo "::warning::Contributi non aggiornati: tengo quelli già pubblicati"
+            if [ -s contributi-prima.json ]; then cp contributi-prima.json contributi.json; fi
+          fi
+          rm -f contributi-catalogo.json contributi-prima.json
 
       # le immagini di anteprima già fatte: si rifanno solo quelle delle notizie nuove o cambiate
       - uses: actions/cache@v4

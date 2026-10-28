@@ -29,7 +29,7 @@ claude.ai/code dal telefono): qui c'è quello che serve per riprendere il lavoro
   Facebook, Instagram. Ci mette circa 2 minuti.
 
 ## Il menu del sito (deciso con lui il 28 ott 2026)
-Tutte · Cronaca · Politica · Sport · Calcio · (Allerte, solo con un'allerta) · Avvisi · Eventi · Cultura · Altro · zona · Comuni ·
+Tutte · Cronaca · Politica · Sport · Calcio · (Allerte, solo con un'allerta) · Avvisi · Contributi · Eventi · Cultura · Altro · zona · Comuni ·
 Archivio (lui: «Allerte e Avvisi spostale dopo calcio», «la pagina cultura mettila dopo eventi»); sul computer su una riga sola (da 960 px). «Avvisi» (categorie `strade` + `avvisi`, pagina /sezione/avvisi/)
 ha preso il posto di «Strade»: in ordine di quando servono, dal 22 ottobre al 2 novembre con i cimiteri paese per
 paese. La zona la ricava archivia.py dal luogo (`ZONA_COMUNE`): «Benevento città» è solo Benevento. Le colonne
@@ -37,6 +37,16 @@ a zig-zag di «Le altre notizie» le ha scelte lui (niente spazi vuoti): non rip
 Politica (28 ott, lui: «fai A e B»): ci vanno anche le decisioni di sindaco, Giunta, Consiglio, Provincia e Regione;
 il dibattito politico della città sta in un solo approfondimento con `"categoria": "politica"`, che la sezione
 Politica mostra in cima come «La storia in corso» (AGENTE.md, «Il dibattito politico in città»).
+
+## I contributi (pagina /contributi/, dal 28 ott 2026)
+Lui: «tutto quello che riesci a trovare che vada bene per BN e provincia… estremamente facile da consultare»; nome
+«Contributi» perché i bandi di concorso avranno una sezione loro («Concorsi», in cantiere). strumenti/contributi.py:
+il Catalogo degli incentivi del Ministero (non risponde a GitHub: lo scarica il Pi di casa e lo manda alla
+pubblicazione, campo «contributi» di pubblica.yml, come i carburanti), più contributi_locali.json (li scrive l'agente,
+AGENTE.md «I contributi») e i bandi dei Comuni presi dalle notizie. Filtri chi/per cosa/dove e ricerca restano
+nell'indirizzo (/contributi/?chi=impresa&tema=digitale), una pagina per contributo (/contributi/<id>/). Quando si passa
+ad Aruba (lui: «da fare nel prossimo futuro… così togliamo anche il rischio che il Pi non funzioni») lo scaricamento va
+lì.
 
 ## Come sono fatte le pagine (regola del proprietario, 28 ott 2026)
 Lui: «dobbiamo mettere una regola di come costruire le pagine… dobbiamo uniformare e scrivere una regola». Ogni pagina
@@ -52,7 +62,8 @@ nuova la segue; se una pagina non la segue, è da sistemare.
    (calendario degli eventi, appuntamenti di Cultura, storia in corso di Politica, speciale e elenchi di Avvisi:
    riquadriSezione()); le notizie con la colonna di destra. La prima pagina non ha titolo: c'è la testata.
 3. **Notizie, eventi, approfondimenti e pagine di servizio** (Strade chiuse, Scuole chiuse, Carburanti, Calcio,
-   Comuni, Chi siamo, Curiosità, Archivio, Meteo): «← Tutte le notizie», occhiello rosso e titolo grande (.appro).
+   Comuni, Chi siamo, Curiosità, Archivio, Meteo): «← Tutte le notizie» (la pagina di un contributo: «← Tutti i
+   contributi»), occhiello rosso e titolo grande (.appro).
 
 ## Correggere una notizia a mano
 1. `git pull --rebase` (le routine pubblicano spesso: rifallo anche subito prima del push).

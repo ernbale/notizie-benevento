@@ -973,6 +973,141 @@ def html_avvisi(notizie, oggi, h1):
     return testa + f'<article class="appro avvisi-pag">{h}</article>'
 
 
+# ---------- i contributi (strumenti/contributi.py → contributi.json): la pagina e una per contributo ----------
+# Come paginaContributi() in index.html, che ridisegna /contributi/ con i filtri che funzionano; qui per Google e per
+# chi non ha JavaScript. Ogni contributo del catalogo e dei locali ha la sua pagina con il testo ufficiale.
+CHI_CONTR = {"impresa": "Imprese", "nuova": "Nuove imprese", "professionista": "Professionisti", "associazione": "Associazioni",
+             "ente": "Comuni ed enti", "cittadino": "Cittadini e famiglie"}
+TEMI_CONTR = {"investire": "Investire", "aprire": "Aprire un'attività", "digitale": "Digitale", "energia": "Energia e ambiente",
+              "innovazione": "Innovazione e ricerca", "export": "Export", "credito": "Credito e liquidità",
+              "giovani-donne": "Giovani e donne", "crisi": "Imprese in difficoltà", "sociale": "Sociale",
+              "cultura": "Cultura e spettacolo"}
+DOVE_CONTR = {"sannio": "Solo Sannio", "campania": "Campania", "sud": "Sud Italia", "italia": "Italia", "europa": "Europa"}
+TITOLO_CONTR = "Contributi e bandi a Benevento e nel Sannio"
+
+
+def _giorno_contr(g):
+    d = dt.date.fromisoformat(g)
+    return f"{GIORNI[d.weekday()]} {d.day} {MESI_LUNGHI[d.month - 1]}"
+
+
+def _scadenza_contr(v, oggi):
+    """(testo, urgente) come scadenzaContr() in index.html."""
+    o = oggi.isoformat()
+    cd = str(v.get("click_day") or "")
+    if cd[:10] >= o and cd:
+        return f"Click day {'oggi' if cd[:10] == o else _giorno_contr(cd[:10])} alle {cd[11:16]}", (dt.date.fromisoformat(cd[:10]) - oggi).days <= 7
+    if v.get("apertura") and v["apertura"] > o:
+        return f"Apre {_giorno_contr(v['apertura'])}" + (f", scade {_giorno_contr(v['scadenza'])}" if v.get("scadenza") else ""), False
+    if v.get("scadenza"):
+        n = (dt.date.fromisoformat(v["scadenza"]) - oggi).days
+        if n < 0:
+            return f"Scaduto {_giorno_contr(v['scadenza'])}", False
+        return f"Scade {_giorno_contr(v['scadenza'])} · {'oggi' if n == 0 else 'domani' if n == 1 else f'fra {n} giorni'}", n <= 7
+    t = v.get("scadenza_testo") or "Senza scadenza indicata"
+    return t[:1].upper() + t[1:], False
+
+
+def _link_contr(v):
+    return v.get("pagina") or f"/contributi/{v['id']}/"
+
+
+def _scheda_contr(v, oggi):
+    h = (f'<article class="contr"><div class="occhiello">{e(v["ente"])} · {e(DOVE_CONTR.get(v.get("dove"), ""))}</div>'
+         f'<h3><a href="{e(_link_contr(v))}">{e(v["titolo"])}</a></h3>')
+    if v.get("cose"):
+        c = v["cose"] if len(v["cose"]) <= 190 else re.sub(r"\s+\S*$", "", v["cose"][:190]) + "…"
+        h += f'<p class="contr-cose">{e(c)}</p>'
+    fatti = []
+    per = [CHI_CONTR[k] for k in v.get("chi") or [] if k in CHI_CONTR]
+    if per:
+        fatti.append(f"<li><b>Per: </b>{e(', '.join(per))}</li>")
+    if v.get("forma"):
+        fatti.append(f"<li><b>Cosa: </b>{e(v['forma'])}</li>")
+    if v.get("quanto"):
+        fatti.append(f"<li><b>Quanto: </b>{e(v['quanto'])}</li>")
+    if fatti:
+        h += '<ul class="contr-fatti">' + "".join(fatti) + "</ul>"
+    t, urg = _scadenza_contr(v, oggi)
+    h += f'<div class="contr-scad{" urgente" if urg else ""}">{e(t)}</div>'
+    if v.get("link"):
+        h += f'<div class="contr-link"><a href="{e(v["link"])}" target="_blank" rel="noopener nofollow">Sito ufficiale ›</a></div>'
+    return h + "</article>"
+
+
+def contributi_dei_comuni(notizie, oggi):
+    """I bandi dei Comuni dalle notizie (gli avvisi «Domande e bandi»), come contributiDeiComuni() in index.html."""
+    o, out = oggi.isoformat(), []
+    for n in notizie:
+        if (n.get("_arch") or n.get("categoria") != "avvisi" or tipo_avviso(n) not in ("Domande e bandi", "Scadenza")
+                or str(n.get("in_vigore_fino") or "9") < o):
+            continue
+        f = next((x for x in vista_ufficiale(n).get("fonti") or [] if str(x.get("url") or "").startswith("http")), None)
+        c = _paese_avviso(n)
+        out.append({"id": "notizia-" + n["id"], "titolo": n["titolo"], "ente": c if c in ("Più Comuni", "Tutto il Sannio") else f"Comune di {c}",
+                    "dove": "sannio", "chi": ["cittadino"], "temi": [], "forma": "", "quanto": "",
+                    "scadenza": n.get("in_vigore_fino"), "link": f["url"] if f else "", "cose": n.get("sintesi") or "",
+                    "pagina": percorso("notizia", n["id"]), "aggiunto": str(n.get("pubblicato") or "")[:10]})
+    return out
+
+
+def html_contributi(voci, oggi, aggiornato):
+    o = oggi.isoformat()
+    nuovi = sorted(voci, key=lambda v: str(v.get("aggiunto") or ""), reverse=True)[:5]
+    h = f'<h1 class="titolo-sezione">{e(TITOLO_CONTR)}</h1>'
+    if nuovi:
+        h += '<section class="ultimora">' + "".join(
+            f'<a href="{e(_link_contr(v))}"><div class="ora">{"oggi" if v.get("aggiunto") == o else e(data_it(v.get("aggiunto"))[:-5])}</div>'
+            f'<div class="tit">{e(v["titolo"])}</div></a>' for v in nuovi) + "</section>"
+    click = [v for v in voci if str(v.get("click_day") or "")[:10] >= o and v.get("click_day")]
+    h += (f'<p class="contr-riepilogo">{len(voci)} contributi aperti' + (f" · {len(click)} click day in arrivo" if click else "") + "</p>")
+    righe = ""
+    for etichetta, chiave, valori in (("Chi sei?", "chi", CHI_CONTR), ("Per cosa?", "temi", TEMI_CONTR), ("Dove vale?", "dove", DOVE_CONTR)):
+        b = "".join(f'<button type="button" aria-pressed="false">{e(nome)}<span class="n"> {n}</span></button>'
+                    for k, nome in valori.items()
+                    for n in [sum(1 for v in voci if (v.get("dove") == k if chiave == "dove" else k in (v.get(chiave) or [])))] if n)
+        righe += (f'<div class="contr-riga"><span class="contr-etichetta">{etichetta}</span>'
+                  f'<button type="button" aria-pressed="true">Tutti</button>{b}</div>')
+    h += (f'<section class="contr-filtri"><div>{righe}</div><div class="contr-cerca"><input type="search" '
+          'placeholder="Cerca: fotovoltaico, bar, affitto, assunzioni…" aria-label="Cerca tra i contributi"></div></section>')
+    h += f'<section class="contr-elenco"><h3 class="titolo-col">{len(voci)} contributi, in ordine di scadenza</h3><div class="contr-lista">'
+    h += "".join(_scheda_contr(v, oggi) for v in voci) + "</div></section>"
+    h += ('<p class="contr-nota">Fonti: Catalogo degli incentivi del Ministero delle Imprese e del Made in Italy (incentivi.gov.it, '
+          "dati aperti IODL 2.0), Camera di Commercio Irpinia Sannio, Regione Campania e Comuni del Sannio. Prima di fare "
+          "domanda leggi sempre il bando ufficiale: date e importi possono cambiare. Manca un contributo? Scrivi a "
+          '<a href="mailto:redazione@notiziebenevento.it">redazione@notiziebenevento.it</a>.</p>')
+    return h
+
+
+def html_contributo(v, oggi):
+    """La pagina di un contributo: i fatti in breve e il testo ufficiale della scheda (regola 3 delle pagine)."""
+    h = (f'<a class="indietro" href="/contributi/">← Tutti i contributi</a><div class="occhiello">Contributi · '
+         f'{e(DOVE_CONTR.get(v.get("dove"), ""))}</div><h1>{e(v["titolo"])}</h1>')
+    h += f'<div class="meta">{e(v["ente"])}</div>'
+    t, urg = _scadenza_contr(v, oggi)
+    if v.get("scaduto"):
+        h += f'<div class="nota">Questo contributo è scaduto ({e(_giorno_contr(v["scadenza"]))}). Guarda quelli <a href="/contributi/">ancora aperti</a>.</div>'
+    righe = [("Chi può chiederlo", ", ".join(CHI_CONTR[k] for k in v.get("chi") or [] if k in CHI_CONTR)),
+             ("Che cosa è", v.get("forma") or ""), ("Quanto", v.get("quanto") or ""), ("Scadenza", t),
+             ("Per cosa", ", ".join(TEMI_CONTR[k] for k in v.get("temi") or [] if k in TEMI_CONTR))]
+    h += '<dl class="contr-dati">' + "".join(f"<dt>{e(a)}</dt><dd>{e(b)}</dd>" for a, b in righe if b) + "</dl>"
+    h += (f'<p class="contr-vai"><a href="{e(v["link"])}" target="_blank" rel="noopener nofollow">Vai al bando ufficiale per fare '
+          "domanda ›</a></p>")
+    for titolo, k in (("Cos'è", "cose"), ("A chi si rivolge", "a_chi"), ("Cosa prevede", "cosa_prevede")):
+        if v.get(k):
+            h += f"<h3>{titolo}</h3><p>{e(v[k])}</p>"
+    if v.get("fonte") == "catalogo":
+        h += (f'<p class="agg-chiusure">Testo della scheda del <a href="{e(v.get("scheda") or "https://www.incentivi.gov.it")}" '
+              'target="_blank" rel="noopener nofollow">Catalogo degli incentivi</a> del Ministero delle Imprese e del Made in Italy '
+              f'(dati aperti IODL 2.0){", aggiornata il " + e(data_it(v["aggiornato_fonte"], True)) if v.get("aggiornato_fonte") else ""}. '
+              "Prima di fare domanda leggi sempre il bando ufficiale.</p>")
+    else:
+        h += (f'<p class="agg-chiusure">Controllato il {e(data_it(v.get("controllato"), True))} sul sito ufficiale. Prima di fare '
+              "domanda leggi sempre il bando ufficiale.</p>")
+    h += '<p class="collegate"><a href="/contributi/">Tutti i contributi per Benevento e il Sannio ›</a></p>'
+    return f'<article class="appro">{h}</article>'
+
+
 # ---------- prezzi dei carburanti (strumenti/carburanti.py → carburanti.json) ----------
 NOMI_CARBURANTI = {"benzina": "Benzina", "gasolio": "Diesel", "gpl": "GPL", "metano": "Metano"}
 
@@ -2215,6 +2350,38 @@ def main():
            pagina(modello, seo, {"statica": True}, html_strade_chiuse(ora, poi, oggi, prima.get("aggiornato")),
                   articolo=True))
     mappa.append((url, prima.get("aggiornato")))
+
+    # i contributi (strumenti/contributi.py): la pagina (anche vuota) e una per contributo
+    try:
+        contr = leggi(os.path.join(sito, "contributi.json")) or {}
+    except (OSError, ValueError):
+        contr = {}
+    tutti_contr = contr.get("contributi") or []
+    aperti = sorted([v for v in tutti_contr if not v.get("scaduto")] + contributi_dei_comuni(notizie, oggi),
+                    key=lambda v: v.get("scadenza") or "9999")
+    url = SITO + "/contributi/"
+    seo = blocco_seo(f"Contributi e bandi Benevento e Sannio: fondi, voucher, bonus e click day – {NOME}",
+                     "I contributi e i bandi aperti per imprese, famiglie, associazioni e Comuni di Benevento e del Sannio: "
+                     "Camera di Commercio, Regione Campania, Ministeri e Comuni, con scadenze e link ufficiali. Aggiornati ogni giorno.",
+                     url, "/condivisione.png", jsonld={"@context": "https://schema.org", "@type": "CollectionPage",
+                                                      "name": TITOLO_CONTR, "url": url,
+                                                      "isPartOf": {"@type": "WebSite", "name": NOME, "url": SITO + "/"}})
+    scrivi(os.path.join(sito, "contributi", "index.html"),
+           pagina(modello, seo, {"cat": "contributi", "h1": TITOLO_CONTR}, html_contributi(aperti, oggi, contr.get("aggiornato"))))
+    mappa.append((url, contr.get("aggiornato")))
+    for v in tutti_contr:
+        url = f"{SITO}/contributi/{v['id']}/"
+        seo = blocco_seo(f"{v['titolo'][:70]} – Contributi Benevento e Sannio – {NOME}",
+                         (v.get("cose") or v["titolo"])[:155], url, "/condivisione.png",
+                         jsonld={"@context": "https://schema.org", "@type": "WebPage", "name": v["titolo"], "url": url,
+                                 "isPartOf": {"@type": "WebSite", "name": NOME, "url": SITO + "/"},
+                                 "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [
+                                     {"@type": "ListItem", "position": 1, "name": NOME, "item": SITO + "/"},
+                                     {"@type": "ListItem", "position": 2, "name": "Contributi", "item": SITO + "/contributi/"},
+                                     {"@type": "ListItem", "position": 3, "name": v["titolo"]}]}})
+        scrivi(os.path.join(sito, "contributi", v["id"], "index.html"),
+               pagina(modello, seo, {"statica": True}, html_contributo(v, oggi), articolo=True))
+        mappa.append((url, contr.get("aggiornato")))
 
     # i prezzi dei carburanti (strumenti/carburanti.py, nello stesso giro): la pagina c'è sempre
     try:
