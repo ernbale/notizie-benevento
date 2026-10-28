@@ -20,7 +20,14 @@ post di Facebook e di Instagram). Se il file non c'è e un canale non si legge, 
 dopo che due volte) e il programma finisce con errore. Ogni chiamata si riprova 3 volte; se un canale non va gli altri
 escono lo stesso e il programma finisce con errore (la pubblicazione dopo riprova).
 
+Correggere la foto di una curiosità già uscita (28 ott 2026: la curiosità delle janare uscita col solo cartoncino, lui
+«aggiusta curiosità sui social»): `--correggi <slug>` cambia la foto del messaggio di Telegram (editMessageMedia: il
+messaggio resta quello, niente doppioni). Facebook e Instagram non lasciano cambiare la foto di un post: con
+`--ripubblica` la curiosità si rimanda lì, ma solo se il post vecchio non c'è più (lo toglie lui: su Facebook «Sposta
+nell'archivio», su Instagram dall'app); se c'è ancora, non manda niente.
+
 Uso:  python3 strumenti/curiosita_social.py --stato FILE        (con TELEGRAM_TOKEN e FB_PAGE_TOKEN)
+      python3 strumenti/curiosita_social.py --correggi SLUG [--ripubblica]
       python3 strumenti/curiosita_social.py --prova [--giorno 2026-10-24]   (i testi che manderebbe, senza chiavi)
 """
 import argparse
@@ -155,6 +162,68 @@ def manda_instagram(token, ig, c):
     riprova(lambda: facebook.chiama("POST", f"{ig}/media_publish", token, {"creation_id": cont}), "Instagram (pubblica)")
 
 
+def messaggio_telegram(c):
+    """L'id del messaggio del canale con la curiosità (dall'anteprima pubblica del canale), o None."""
+    req = urllib.request.Request(telegram.ANTEPRIMA, headers={"User-Agent": "Mozilla/5.0 (notiziebenevento.it)"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        pagina_ = r.read().decode("utf-8", "replace")
+    trovati = []
+    for m in re.finditer(r'data-post="[^"/]+/(\d+)"(.*?)(?=data-post="|$)', pagina_, re.S):
+        if f"notiziebenevento.it/curiosita/{c['slug']}/" in m.group(2):
+            trovati.append(int(m.group(1)))
+    if len(trovati) > 1:
+        raise RuntimeError(f"la curiosità è in {len(trovati)} messaggi ({trovati}): non tocco niente")
+    return trovati[0] if trovati else None
+
+
+def correggi(sito, slug, ripubblica):
+    """Rimette la foto giusta a una curiosità già uscita: Telegram cambia la foto del messaggio; Facebook e Instagram,
+    con ripubblica, solo dove il post vecchio non c'è più."""
+    with open(os.path.join(sito, "curiosita.json"), encoding="utf-8") as f:
+        c = next((x for x in json.load(f).get("curiosita") or [] if x.get("slug") == slug), None)
+    if not c:
+        raise SystemExit(f"Curiosità: {slug} non c'è in curiosita.json")
+    if not online(foto(c)):
+        raise SystemExit(f"Curiosità: la scheda {foto(c)} non è online")
+    errori = []
+    tg = os.environ.get("TELEGRAM_TOKEN", "").strip()
+    try:
+        mid = messaggio_telegram(c)
+        if not mid:
+            raise RuntimeError("non trovo il messaggio nel canale")
+        # «?v=»: Telegram ricorda le foto per indirizzo, con lo stesso indirizzo rimetterebbe la vecchia
+        media = {"type": "photo", "media": f"{foto(c)}?v={dt.datetime.now().strftime('%Y%m%d%H%M')}",
+                 "caption": testo_telegram(c), "parse_mode": "HTML"}
+        telegram.chiama(tg, "editMessageMedia", {"chat_id": telegram.CANALE, "message_id": mid, "media": media})
+        print(f"Curiosità: su Telegram cambiata la foto del messaggio {mid}")
+    except Exception as e:
+        errori.append(f"telegram: {e}")
+    if ripubblica:
+        fb = os.environ.get("FB_PAGE_TOKEN", "").strip()
+        try:
+            pag = facebook.chiama("GET", "me", fb, {"fields": "name,instagram_business_account{id}"})
+            if pag.get("name") != PAGINA:
+                raise RuntimeError(f"la chiave non è della Pagina «{PAGINA}»")
+            ig = (pag.get("instagram_business_account") or {}).get("id")
+            if su_facebook(fb, c):
+                print("Curiosità: su Facebook c'è ancora il post vecchio: toglilo («Sposta nell'archivio»), poi si rimanda")
+            else:
+                facebook.foto_con_testo(fb, foto(c), testo_facebook(c), pagina(c))
+                print(f"Curiosità: rimandata su Facebook con la foto: «{c['titolo']}»")
+            if not ig:
+                errori.append("instagram: la Pagina non ha un account Instagram collegato")
+            elif su_instagram(fb, ig, c):
+                print("Curiosità: su Instagram c'è ancora il post vecchio: toglilo dall'app, poi si rimanda")
+            else:
+                manda_instagram(fb, ig, c)
+                print(f"Curiosità: rimandata su Instagram con la foto: «{c['titolo']}»")
+        except Exception as e:
+            errori.append(f"facebook/instagram: {e}")
+    for e in errori:
+        print(f"AVVISO Curiosità (correzione) {e}", file=sys.stderr)
+    return 1 if errori else 0
+
+
 def di_oggi(sito, giorno):
     with open(os.path.join(sito, "curiosita.json"), encoding="utf-8") as f:
         tutte = json.load(f).get("curiosita") or []
@@ -170,7 +239,11 @@ def main():
     ap.add_argument("--stato", help="il file che ricorda cosa è già uscito (lo conserva GitHub)")
     ap.add_argument("--prova", action="store_true")
     ap.add_argument("--giorno", help="solo con --prova: la curiosità di quel giorno (AAAA-MM-GG)")
+    ap.add_argument("--correggi", metavar="SLUG", help="rimette la foto giusta a una curiosità già uscita (vedi sopra)")
+    ap.add_argument("--ripubblica", action="store_true", help="con --correggi: Facebook e Instagram, se il post vecchio non c'è più")
     a = ap.parse_args()
+    if a.correggi:
+        return correggi(a.sito, a.correggi, a.ripubblica)
     adesso = dt.datetime.now(fuso())
     giorno = a.giorno if a.prova and a.giorno else adesso.date().isoformat()
     c = di_oggi(a.sito, giorno)

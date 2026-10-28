@@ -23,6 +23,9 @@ on:
       contributi:
         description: "Catalogo dei contributi (lo manda il Pi di casa: compresso e in base64). Vuoto = quello già pubblicato"
         default: ""
+      curiosita_correggi:
+        description: "Curiosità già uscita da correggere: «<slug>» cambia la foto su Telegram, «<slug> ripubblica» la rimanda anche su Facebook e Instagram se lì il post vecchio non c'è più"
+        default: ""
 
 permissions:
   contents: write   # le foto fatte con l'IA (strumenti/foto_ia.py) vanno nel repository
@@ -210,6 +213,19 @@ jobs:
         run: |
           mkdir -p "$RUNNER_TEMP/social"
           python3 strumenti/curiosita_social.py --stato "$RUNNER_TEMP/social/curiosita.json"
+
+      # una curiosità già uscita con la foto sbagliata (strumenti/curiosita_social.py --correggi; 28 ott 2026)
+      - name: Curiosità da correggere (a mano)
+        if: ${{ github.event.inputs.curiosita_correggi != '' }}
+        continue-on-error: true
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          CORREGGI: ${{ github.event.inputs.curiosita_correggi }}
+        run: |
+          set -- $CORREGGI
+          if [ "${2:-}" = "ripubblica" ]; then python3 strumenti/curiosita_social.py --correggi "$1" --ripubblica
+          else python3 strumenti/curiosita_social.py --correggi "$1"; fi
 
       # dopo la pubblicazione, così Facebook trova già online la pagina della notizia (titolo e anteprima)
       - name: Facebook (una notizia nuova sulla Pagina, se è il momento)
