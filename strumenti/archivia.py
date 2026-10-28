@@ -847,22 +847,6 @@ def controlla_contributo(n, w, err):
         err.append(f"{w}: contributo.quando è una frase breve sulla scadenza, se non c'è una data")
 
 
-def controlla_scena(x, w, err, storia=False):
-    """La scena per la foto fatta con l'IA (strumenti/foto_ia.py): voluta dal proprietario il 28 ott 2026, «regola tutte
-    foto, se non la trovi ne crei una perfetta cinematografica con gpt», «devono rappresentare bene la scena raccontata».
-    Serve a ogni notizia della prima pagina senza foto vera (locandina, foto inviate) e senza un tema adatto (sulla
-    cronaca il tema non c'è mai), e a ogni storia (approfondimento) senza foto vera."""
-    s = x.get("scena")
-    if s is not None and (not isinstance(s, str) or not 60 <= len(s.strip()) <= 700):
-        err.append(f"{w}: «scena» è la descrizione della foto da fare con l'IA, da 60 a 700 caratteri")
-        return
-    vera = x.get("locandina") or x.get("foto_inviate")
-    tema = not storia and x.get("immagine") and x.get("categoria") != "cronaca"
-    if not vera and not tema and not s and not x.get("diretta_calcio") and not x.get("archiviato"):
-        err.append(f"{w}: niente foto: scrivi «scena», la scena da fotografare con l'IA (AGENTE.md, «La foto della "
-                   f"notizia»)" + ("" if storia else " o metti un tema adatto in «immagine»"))
-
-
 def controlla(d, err, avv, adesso=None):
     """Le stesse regole di AGENTE.md, sul file della prima pagina. Prima mette la zona giusta (zona_dal_luogo)."""
     zona_dal_luogo(d, avv)
@@ -981,7 +965,6 @@ def controlla(d, err, avv, adesso=None):
                 err.append(f"{w}: niente immagine sulla cronaca (togli il campo immagine)")
             elif n["immagine"] not in temi_foto():
                 err.append(f"{w}: immagine {n['immagine']!r} non è un tema di img/temi/temi.json")
-        controlla_scena(n, w, err)
         controlla_contributo(n, w, err)
         a = n.get("articolo") or {}
         # con un comunicato arrivato per email niente «Cosa non si sa ancora»: elencare cosa manca sembra una
@@ -1056,7 +1039,6 @@ def controlla(d, err, avv, adesso=None):
             err.append(f"{w}: id non valido (solo minuscole, numeri e trattini)")
         if not ISO.match(str(ap.get("aggiornato", ""))):
             err.append(f"{w}: aggiornato non ISO")
-        controlla_scena(ap, w, err, storia=True)
         nomi = [f.get("nome") for f in ap.get("fonti", [])]
         if len(nomi) != len(set(nomi)):
             err.append(f"{w}: nomi ripetuti in fonti")

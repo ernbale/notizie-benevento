@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-"""Le foto fatte apposta con GPT Image per le notizie e le storie (approfondimenti) che non hanno una foto.
+"""Le foto fatte apposta con GPT Image: oggi solo per la curiosità del giorno.
 
-Voluto dal proprietario il 28 ott 2026: «regola tutte foto, se non la trovi ne crei una perfetta cinematografica con
-gpt», «anche le altre storie se manca la foto e le future», «devono rappresentare bene la scena raccontata se create
+Il 28 ott 2026 per qualche ora valeva per tutte le notizie e le storie senza foto; poi lui ha chiarito che era un
+malinteso («intendevo solo la storia del giorno», «era stato un malinteso, per il momento bastano»): le 31 foto fatte
+quel giorno restano (img/ia, --segna), ma le nuove si fanno solo per le curiosità. Le sue parole di allora:
+«regola tutte foto, se non la trovi ne crei una perfetta cinematografica con gpt», «anche le altre storie se manca la foto e le future», «devono rappresentare bene la scena raccontata se create
 con gpt», «devi aggiustare anche sui social». Prima si cerca una foto vera (locandina, foto inviate col comunicato),
 poi un tema adatto di img/temi; se non c'è, la foto la fa l'IA dalla scena che l'agente descrive nel campo "scena".
 Anche per la cronaca. Le persone nella foto sono inventate, quindi ci possono stare (lui, stesso giorno: «sono persone
@@ -58,9 +60,9 @@ def ha_tema(x):
     return bool(x.get("immagine")) and x.get("categoria") != "cronaca"
 
 
-def da_fare(d, oggi, curiosita=()):
-    """Le foto che mancano, come lavori {tipo, id, scena, base (il file senza .jpg)}: prima le curiosità e le storie,
-    poi le notizie della prima pagina più recenti (sono quelle che stanno per uscire sui social)."""
+def da_fare(d, oggi, curiosita=(), notizie_e_storie=False):
+    """Le foto che mancano, come lavori {tipo, id, scena, base (il file senza .jpg)}: le curiosità; le storie e le notizie
+    solo con notizie_e_storie (spento dal 28 ott 2026, lui: «era stato un malinteso, per il momento bastano»)."""
     out = []
     ieri = (oggi - dt.timedelta(days=1)).isoformat()
     for c in curiosita:   # solo da ieri in poi: quelle già uscite da giorni non si rifanno
@@ -68,11 +70,11 @@ def da_fare(d, oggi, curiosita=()):
         if im.get("ia") and str(im.get("scena") or "").strip() and str(c.get("data") or "") >= ieri:
             out.append({"tipo": "curiosita", "id": str(c.get("slug") or ""), "scena": im["scena"],
                         "base": os.path.join(RADICE, "img", "curiosita", str(c.get("slug") or ""))})
-    for ap in d.get("approfondimenti", []):
+    for ap in (d.get("approfondimenti", []) if notizie_e_storie else []):
         if not ap.get("archiviato") and not ha_foto_vera(ap) and str(ap.get("scena") or "").strip():
             out.append({"tipo": "approfondimento", "id": str(ap.get("id") or ""), "scena": ap["scena"],
                         "base": percorso(str(ap.get("id") or ""))})
-    notizie = [n for n in d.get("notizie", []) if not ha_foto_vera(n) and not ha_tema(n) and not n.get("diretta_calcio")
+    notizie = [n for n in (d.get("notizie", []) if notizie_e_storie else []) if not ha_foto_vera(n) and not ha_tema(n) and not n.get("diretta_calcio")
                and str(n.get("scena") or "").strip()]
     notizie.sort(key=lambda n: str(n.get("pubblicato") or ""), reverse=True)
     out += [{"tipo": "notizia", "id": str(n.get("id") or ""), "scena": n["scena"], "base": percorso(str(n.get("id") or ""))}

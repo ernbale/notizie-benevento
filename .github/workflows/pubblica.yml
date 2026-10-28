@@ -103,11 +103,11 @@ jobs:
           fi
           rm -f contributi-catalogo.json contributi-prima.json
 
-      # Le foto fatte con l'IA per le notizie e le storie che non hanno una foto (strumenti/foto_ia.py; lui, 28 ott 2026:
-      # «regola tutte foto, se non la trovi ne crei una perfetta cinematografica con gpt», «devi aggiustare anche sui
-      # social»): prima delle pagine, così le schede di Instagram e Facebook hanno già la foto. Le foto nuove vanno nel
-      # repository con un commit a parte; senza il segreto OPENAI_API_KEY si segnano solo quelle che ci sono già.
-      - name: Foto delle notizie senza foto (GPT Image)
+      # Le foto fatte con l'IA (strumenti/foto_ia.py): quella della curiosità del giorno quando su Commons non c'è (lui,
+      # 28 ott 2026: «se non la trovi ne crei una perfetta cinematografica con gpt»), e le 31 fatte quel giorno per notizie
+      # e storie che restano (--segna). Prima delle pagine, così la scheda dei social ha già la foto. Le foto nuove vanno
+      # nel repository con un commit a parte; senza il segreto OPENAI_API_KEY si segnano solo quelle che ci sono già.
+      - name: Foto fatte con l'IA (curiosità)
         timeout-minutes: 6
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
