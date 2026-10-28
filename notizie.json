@@ -1,7 +1,278 @@
 {
- "aggiornato": "2026-10-28T16:17+01:00",
+ "aggiornato": "2026-10-28T17:17+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-liceo-alberti-virgilio-patentino-droni-gratis",
+   "titolo": "Benevento, al liceo Alberti-Virgilio il patentino per pilotare i droni: corso ed esame pagati dalla scuola",
+   "titolo_google": "Patentino droni gratis al liceo Alberti-Virgilio di Benevento",
+   "sintesi": "Il liceo Alberti-Virgilio di Benevento ha firmato un accordo con DRONEXT, un centro di formazione per piloti di droni: gli studenti possono prendere il patentino A1/A3. Corso ed esame finale sono gratis, li paga la scuola.",
+   "categoria": "altro",
+   "luogo": "Benevento, liceo Alberti-Virgilio",
+   "pubblicato": "2026-10-28T16:50+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 2,
+   "immagine": "scuola",
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/28/liceo-alberti-virgilio-al-via-il-progetto-dronext-per-il-conseguimento-gratuito-del-patentino-droni-a1-a3/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/alberti-virgilio-corso-droni-patentino-gratuito/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/28/benevento-al-liceo-alberti-virgilio-al-via-il-progetto-dronext/"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/universita/2026/liceo-alberti-virgilio-di-benevento-al-via-il-progetto-dronext.html"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/il-liceo-alberti-virgilio-ha-siglato-unesclusiva-collaborazione-con-dronext-centro-di-eccellenza-e"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Gli studenti del liceo Alberti-Virgilio di Benevento possono prendere il patentino per pilotare i droni, quello di categoria A1/A3, senza pagare niente. La scuola ha firmato un accordo con DRONEXT, un centro che forma piloti di droni in tutta Italia, e paga di tasca sua sia il corso sia l'esame finale.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Il corso ha tre parti. Prima si studiano la teoria e le regole del volo sui materiali di DRONEXT, per preparare l'esame. Poi ci si allena al computer con un simulatore di volo, per prendere confidenza con i comandi. Alla fine si vola davvero, all'aperto, con droni veri, insieme ai docenti della scuola e a esperti del settore.",
+      "fonti": [
+       "Anteprima24",
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Per la scuola il patentino è una qualifica ufficiale che il mondo del lavoro chiede sempre di più: i droni servono per controllare l'ambiente, per la sicurezza e per fare foto e video. Come iscriversi lo dice il liceo sui suoi canali ufficiali.",
+      "fonti": [
+       "Anteprima24",
+       "NTR24",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "L'accordo con DRONEXT per il patentino A1/A3 e il corso con l'esame gratis per gli studenti, pagati dalla scuola.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Quanti studenti possono iscriversi, da quali classi e quando comincia il corso."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Liceo Alberti-Virgilio, al via il progetto DRONEXT per il conseguimento gratuito del patentino droni A1/A3",
+      "url": "https://www.ntr24.tv/2026/10/28/liceo-alberti-virgilio-al-via-il-progetto-dronext-per-il-conseguimento-gratuito-del-patentino-droni-a1-a3/",
+      "data": "28 ott, 16:50"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "All’Alberti-Virgilio si impara a pilotare i droni: formazione ed esame pagati dalla scuola",
+      "url": "https://www.anteprima24.it/benevento/alberti-virgilio-corso-droni-patentino-gratuito/",
+      "data": "28 ott, 16:34"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Benevento, al Liceo Alberti-Virgilio al via il progetto DRONEXT",
+      "url": "https://www.beneventonews24.it/2026/10/28/benevento-al-liceo-alberti-virgilio-al-via-il-progetto-dronext/",
+      "data": "28 ott, 16:38"
+     },
+     {
+      "nome": "InfoSannio",
+      "titolo": "Liceo Alberti-Virgilio di Benevento: al via il progetto DRONEXT",
+      "url": "https://www.infosannionews.it/universita/2026/liceo-alberti-virgilio-di-benevento-al-via-il-progetto-dronext.html",
+      "data": "28 ott, 16:41"
+     },
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "Il Liceo Alberti-Virgilio ha siglato un'esclusiva collaborazione con Dronext, centro di eccellenza e punto di riferimento nazionale nella formazione aeronautica",
+      "url": "https://www.gazzettabenevento.it/it/il-liceo-alberti-virgilio-ha-siglato-unesclusiva-collaborazione-con-dronext-centro-di-eccellenza-e",
+      "data": "28 ott, 16:31"
+     }
+    ]
+   },
+   "zona": "benevento",
+   "foto": "scuola-22"
+  },
+  {
+   "id": "atlante-storico-calcio-italiano-quattro-squadre-sannio",
+   "titolo": "Atlante storico del calcio italiano: ci sono anche Benevento, Forza e Coraggio, Torrecuso e Sant'Agata",
+   "titolo_google": "Atlante storico del calcio: le quattro squadre del Sannio",
+   "sintesi": "Un sito gratuito, l'Atlante storico del calcio italiano, mette su una mappa le oltre 1.500 squadre che hanno giocato dalla Serie A alla Serie D dal 1929-30 a oggi. Del Sannio ci sono quattro squadre: Benevento, Forza e Coraggio, Torrecuso e Sant'Agata.",
+   "categoria": "sport",
+   "sport": "calcio",
+   "luogo": "Sannio",
+   "zona": "provincia",
+   "pubblicato": "2026-10-28T16:27+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 2,
+   "immagine": "calcio",
+   "fonti": [
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/28/sannio-un-ingegnere-ricostruisce-quasi-un-secolo-di-calcio-beneventano-in-un-atlante-digitale/"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/sport/2026/quattro-squadre-nella-storia-del-calcio-italiano-quasi-un-secolo-di-calcio-beneventano-in-un-atlante-digitale.html"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Quasi un secolo di calcio italiano su una mappa che si può girare con un clic: è l'Atlante storico del calcio italiano, un sito gratuito (atlantedelcalcio.it) fatto da Francesco Ippolito, ingegnere civile e giornalista. Raccoglie più di 1.500 squadre che hanno giocato i campionati dalla Serie A alla Serie D, e le categorie che le valevano in passato, dalla stagione 1929-1930 a quella di oggi, 2026-2027.",
+      "fonti": [
+       "BeneventoNews24",
+       "InfoSannio"
+      ]
+     },
+     {
+      "testo": "Della provincia di Benevento ci sono quattro squadre: il Benevento, la Forza e Coraggio, il Torrecuso e il Sant'Agata de' Goti.",
+      "fonti": [
+       "BeneventoNews24",
+       "InfoSannio"
+      ]
+     },
+     {
+      "testo": "La storia meno conosciuta è quella della Forza e Coraggio, la squadra in giallorosso del quartiere San Modesto di Benevento. Giocò due campionati di Serie D di fila: nel 2009-2010 arrivò quarta nel girone H con 63 punti, nel 2010-2011 seconda nel girone I con 83 punti. «Sono storie che meritano di essere recuperate», dice Ippolito, perché raccontano una parte della vita della città che altrimenti andrebbe persa.",
+      "fonti": [
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Il Sant'Agata, in biancoblù, fece la Serie D nel 1969-1970, quattordicesimo nel girone G con 31 punti, e nel 1970-1971, quando arrivò diciottesimo e retrocesse. Il Torrecuso, rossoblù, giocò tre campionati di Serie D dal 2013-2014 al 2015-2016: il migliore fu il 2014-2015, chiuso al quarto posto nel girone I con 59 punti, dopo un quinto posto l'anno prima.",
+      "fonti": [
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Le quattro squadre del Sannio nell'Atlante: Benevento, Forza e Coraggio, Torrecuso e Sant'Agata.",
+      "fonti": [
+       "BeneventoNews24",
+       "InfoSannio"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Sannio, un ingegnere ricostruisce quasi un secolo di calcio beneventano in un Atlante digitale",
+      "url": "https://www.beneventonews24.it/2026/10/28/sannio-un-ingegnere-ricostruisce-quasi-un-secolo-di-calcio-beneventano-in-un-atlante-digitale/",
+      "data": "28 ott, 16:07"
+     },
+     {
+      "nome": "InfoSannio",
+      "titolo": "Quattro squadre nella storia del calcio italiano, quasi un secolo di calcio beneventano in un Atlante digitale",
+      "url": "https://www.infosannionews.it/sport/2026/quattro-squadre-nella-storia-del-calcio-italiano-quasi-un-secolo-di-calcio-beneventano-in-un-atlante-digitale.html",
+      "data": "28 ott, 16:27"
+     }
+    ]
+   },
+   "foto": "calcio-16"
+  },
+  {
+   "id": "provincia-benevento-censimento-distributori-carburante-strade-provinciali",
+   "titolo": "Provincia di Benevento, censimento dei distributori di carburante sulle strade provinciali: dichiarazione entro 30 giorni",
+   "titolo_google": "Distributori di carburante, censimento della Provincia di Benevento",
+   "sintesi": "La Provincia di Benevento censisce i distributori di carburante che hanno un accesso sulle strade provinciali. Titolari e gestori devono mandare una dichiarazione via PEC entro 30 giorni dalla pubblicazione dell'avviso all'albo della Provincia; poi partono i controlli.",
+   "categoria": "avvisi",
+   "luogo": "Provincia di Benevento",
+   "zona": "provincia",
+   "pubblicato": "2026-10-28T17:01+01:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 2,
+   "immagine": "carburante",
+   "fonti": [
+    {
+     "nome": "Comune di Paduli",
+     "url": "https://www.halleyweb.com/c062045/mc/mc_p_dettaglio.php?id_pubbl=15692",
+     "ufficiale": true
+    },
+    {
+     "nome": "Comune di Amorosi",
+     "url": "https://comune.amorosi.bn.it/albo-pretorio/?dettaglio_id=306370",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "La Provincia di Benevento fa il censimento dei distributori di carburante che hanno un'entrata o un'uscita sulle strade provinciali o regionali di sua competenza. Chi ne ha uno, aperto al pubblico o a uso privato, deve mandare una dichiarazione entro 30 giorni dalla pubblicazione dell'avviso all'albo online della Provincia. L'avviso lo hanno ripreso anche i Comuni, tra cui Paduli e Amorosi.",
+      "fonti": [
+       "Comune di Paduli",
+       "Comune di Amorosi"
+      ]
+     },
+     {
+      "testo": "La dichiarazione la presentano i titolari delle autorizzazioni o delle concessioni, i gestori, i proprietari o i legali rappresentanti, sul modello allegato all'avviso. Si manda solo per PEC a protocollo.generale@pec.provincia.benevento.it.",
+      "fonti": [
+       "Comune di Paduli"
+      ]
+     },
+     {
+      "testo": "Il motivo è il Canone unico patrimoniale, la tassa che si paga alla Provincia per gli accessi sulle sue strade, per i cartelli pubblicitari e per l'occupazione dello spazio. La Provincia è partita dall'elenco dei distributori attivi che le ha mandato l'Ufficio delle Dogane di Benevento. Vale anche per i tratti di strada provinciale che passano dentro i paesi sotto i 10.000 abitanti: anche lì il canone si paga alla Provincia.",
+      "fonti": [
+       "Comune di Paduli"
+      ]
+     },
+     {
+      "testo": "Finiti i 30 giorni, il Servizio Viabilità della Provincia farà controlli sulle carte e sopralluoghi. Per chi non manda la dichiarazione, non ha i permessi in regola o non ha pagato il canone possono partire i procedimenti previsti dalla legge. Il responsabile del procedimento è il geometra Marcello Capobianco della Provincia.",
+      "fonti": [
+       "Comune di Paduli"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Il giorno esatto in cui scadono i 30 giorni: dipende dalla data di pubblicazione all'albo della Provincia, che l'avviso ripreso dai Comuni non scrive (è firmato il 19 ottobre)."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Paduli",
+      "titolo": "Avviso pubblico relativo all'avvio di una campagna straordinaria di censimento e ricognizione degli impianti di distribuzione carburanti aventi accessi sulla rete viaria provinciale",
+      "url": "https://www.halleyweb.com/c062045/mc/mc_p_dettaglio.php?id_pubbl=15692",
+      "data": "28 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "Comune di Amorosi",
+      "titolo": "AVVISO CAMPAGNA STRAORDINARIA DI CENSIMENTO E RICOGNIZIONE IMPIANTI DISTRIBUZIONE CARBURANTI AVENTI ACCESSO SULLA RETE VIARIA PROVINCIALE",
+      "url": "https://comune.amorosi.bn.it/albo-pretorio/?dettaglio_id=306370",
+      "data": "28 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "foto": "carburante-21"
+  },
   {
    "id": "pietraroja-progetto-dae-mappa-defibrillatori-croce-rossa",
    "titolo": "Pietraroja aderisce al Progetto DAE della Croce Rossa: i defibrillatori del paese su una mappa online",
@@ -8474,9 +8745,9 @@
      "titolo_prima": "Carta Dedicata a te, pubblicati gli elenchi dei beneficiari in sei Comuni del Sannio: prima ricarica dal 4 novembre"
     }
    },
-   "immagine": "documenti",
-   "foto": "documenti-11",
-   "importanza": 3
+   "immagine": "carta-spesa",
+   "importanza": 3,
+   "foto": "carta-spesa-7"
   },
   {
    "id": "benevento-alessandro-calabrese-premio-poesia-seneca-2026",
