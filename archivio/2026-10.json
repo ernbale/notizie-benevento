@@ -2630,7 +2630,7 @@
       "giorno": "2026-10-23"
      },
      {
-      "testo": "La gip dovrà anche decidere su un'altra richiesta di incidente probatorio, depositata da un avvocato dopo l'udienza del 9 ottobre: riguarda la copia forense (la copia completa dei dati) di telefoni e computer di sedici dei diciannove indagati. Una ventesima posizione è stata stralciata per motivi di salute. Gli indagati sono funzionari e dipendenti del Comune e della Regione, tecnici, imprenditori e due sindaci della provincia; le ipotesi di reato vanno, a vario titolo, dalla concussione alla corruzione, dalla ricettazione alla violazione della legge sul finanziamento ai partiti.",
+      "testo": "La gip dovrà anche decidere su un'altra richiesta di incidente probatorio, depositata da un avvocato dopo l'udienza dell'8 ottobre: riguarda la copia forense (la copia completa dei dati) di telefoni e computer di sedici dei diciannove indagati. Una ventesima posizione è stata stralciata per motivi di salute. Gli indagati sono funzionari e dipendenti del Comune e della Regione, tecnici, imprenditori e due sindaci della provincia; le ipotesi di reato vanno, a vario titolo, dalla concussione alla corruzione, dalla ricettazione alla violazione della legge sul finanziamento ai partiti.",
       "fonti": [
        "Ottopagine"
       ],
@@ -2681,7 +2681,8 @@
      "quando": "2026-10-24T07:10+02:00"
     }
    },
-   "archiviato_il": "2026-10-27"
+   "archiviato_il": "2026-10-27",
+   "nota": "Correzione del 28 ottobre: l'udienza in cui un avvocato ha annunciato la richiesta era l'8 ottobre, non il 9 come avevamo scritto riprendendo un articolo di Ottopagine (lo scrivono Lab TV l'8 ottobre e la stessa Ottopagine il 28)."
   },
   {
    "id": "benevento-cloud-finance-nuova-sede-via-collevaccino",
