@@ -6,8 +6,8 @@ malinteso («intendevo solo la storia del giorno», «era stato un malinteso, pe
 quel giorno restano (img/ia, --segna), ma le nuove si fanno solo per le curiosità. Le sue parole di allora:
 «regola tutte foto, se non la trovi ne crei una perfetta cinematografica con gpt», «anche le altre storie se manca la foto e le future», «devono rappresentare bene la scena raccontata se create
 con gpt», «devi aggiustare anche sui social». Prima si cerca una foto vera (locandina, foto inviate col comunicato),
-poi un tema adatto di img/temi; se non c'è, la foto la fa l'IA dalla scena che l'agente descrive nel campo "scena".
-Anche per la cronaca. Le persone nella foto sono inventate, quindi ci possono stare (lui, stesso giorno: «sono persone
+poi un tema adatto di img/temi; se non c'è, la foto la faceva l'IA dalla scena che l'agente descriveva nel campo
+"scena" (oggi questo vale solo per le curiosità: da_fare(..., notizie_e_storie=False)). Anche per la cronaca. Le persone nella foto sono inventate, quindi ci possono stare (lui, stesso giorno: «sono persone
 inventate puoi mettere tutto»); mai una persona vera o famosa.
 
 - `--genera`: fa le foto che mancano (notizie della prima pagina e approfondimenti con "scena", senza foto vera e senza

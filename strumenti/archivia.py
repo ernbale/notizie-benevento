@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Controlla notizie.json e sposta in archivio le notizie uscite dalla prima pagina.
+"""Controlla notizie.json e sposta in archivio le notizie più vecchie (il sito le elenca lo stesso, pagina dopo pagina).
 
 Nessuna notizia viene mai cancellata (e una voce già pubblicata che in un giro sparisce torna com'era: rimetti_sparite):
-- in prima pagina restano le notizie di oggi e dei 2 giorni prima, gli avvisi ufficiali ancora in vigore
+- in notizie.json restano le notizie di oggi e dei 2 giorni prima, gli avvisi ufficiali ancora in vigore
   (`in_vigore_fino`) e le notizie collegate a un approfondimento attivo;
 - le altre passano in archivio/AAAA-MM.json (mese di `pubblicato`), con l'articolo completo;
 - un approfondimento passa in archivio quando ha `"archiviato": true` o non è aggiornato da più di 7 giorni;
@@ -87,7 +87,7 @@ LOCANDINA = re.compile(r"^img/locandine/[a-z0-9-]+\.jpg$")
 RIF_LOCANDINA = re.compile(r"^(?:posta:)?([A-Za-z0-9_-]+)/(\d+)$")
 # Le foto arrivate per posta (voluto dal proprietario il 25 ott 2026: «se mandano foto usale», «anche più foto se ci
 # sono»): "foto_inviate": ["<id del comunicato>/<n>", …] e "foto_da" (chi le ha mandate) nella notizia. La prima va in
-# alto al posto della foto fatta con l'IA (se c'è la locandina, in alto va lei e le foto tutte sotto), le altre in fondo
+# alto al posto della foto del tema (se c'è la locandina, in alto va lei e le foto tutte sotto), le altre in fondo
 # all'articolo; sui social escono anche loro (instagram.py, facebook.py). risolvi_locandine() le copia in img/locandine/.
 FOTO_MAX = 10
 GIORNI_EVENTI = 60           # un evento finito da più di 60 giorni passa in archivio/eventi-AAAA-MM.json
@@ -804,7 +804,8 @@ def controlla_eventi(ev, err):
                     err.append(f"{w}: la descrizione cita {nm!r} che non è nelle fonti")
     for a, b in doppioni_eventi(ev["eventi"]):
         err.append(f"eventi {a} e {b}: sembrano lo stesso evento (stesso Comune, stessi giorni, titolo simile): tienine "
-                   "uno solo e aggiorna quello (date, orari, fonti, locandina)")
+                   "uno solo e aggiorna quello (date, orari, fonti, locandina); se erano già usciti tutti e due, scrivi "
+                   "quello tolto in archivio/rimandi.json → eventi (\"id tolto\": \"id rimasto\"), se no torna da solo")
 
 
 def primo_giorno_titolo(titolo, pubblicato):
@@ -1092,7 +1093,7 @@ def voce_indice(x, tipo, mese):
         v = {"id": x["id"], "tipo": "notizia", "titolo": x.get("titolo", ""), "sintesi": x.get("sintesi", ""),
              "luogo": x.get("luogo", ""), "categoria": x.get("categoria", ""), "zona": x.get("zona", ""),
              "pubblicato": x.get("pubblicato", ""), "cosa": cosa_breve(x.get("articolo") or {}), "mese": mese}
-        if x.get("sport"):   # per «Nei giorni scorsi» di Sport › Basket, Calcio… (index.html, giorniScorsi)
+        if x.get("sport"):   # per Sport › Basket, Calcio… anche con le notizie dell'archivio (index.html, paginaSezione)
             v["sport"] = x["sport"]
         return v
     return {"id": x["id"], "tipo": "approfondimento", "titolo": x.get("titolo", ""), "sintesi": x.get("sommario", ""),

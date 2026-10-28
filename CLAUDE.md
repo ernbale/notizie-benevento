@@ -1,7 +1,8 @@
 # Notizie Benevento: come si lavora col proprietario
 
-**Se sei una routine (il giro di ogni ora, il giro lampo, le curiosità): questo file non è per te.** Segui solo il
-tuo file di istruzioni (AGENTE.md, COMUNICATI.md, CURIOSITA.md) e quello che dice il messaggio che ti avvia.
+**Se sei una routine (il giro di ogni ora, il giro lampo, le curiosità, l'agente dei contributi): questo file non è per
+te.** Segui solo il tuo file di istruzioni (AGENTE.md, COMUNICATI.md, CURIOSITA.md, CONTRIBUTI.md) e quello che dice il
+messaggio che ti avvia.
 
 Questo file è per le sessioni di lavoro col proprietario, da qualsiasi posto (PC del negozio, Mac di casa,
 claude.ai/code dal telefono): qui c'è quello che serve per riprendere il lavoro senza la memoria del singolo computer.
@@ -24,7 +25,8 @@ claude.ai/code dal telefono): qui c'è quello che serve per riprendere il lavoro
 - Archivio privato delle fonti: repo `ernbale/notizie-benevento-fonti` (comunicati.json = la casella
   comunicati@notiziebenevento.it, ufficiali.json, allegati/). Lo riempie il Pi di casa ogni 5 minuti.
 - Routine cloud (claude.ai/code → Routine): «agente (ogni ora)», «giro lampo (chiusure e comunicati)» (lo avvia il Pi
-  appena arriva un comunicato; ha anche lo strumento Agent per il revisore), «curiosità (rifornimento del lunedì)».
+  appena arriva un comunicato; ha anche lo strumento Agent per il revisore), «curiosità (rifornimento del lunedì)»,
+  «contributi (ogni mattina)» alle 7:20 (CONTRIBUTI.md).
 - Ogni push su main fa partire la Action «Pubblica il sito» (`.github/workflows/pubblica.yml`): pagine, Telegram,
   Facebook, Instagram. Ci mette circa 2 minuti.
 
@@ -45,8 +47,8 @@ Politica mostra in cima come «La storia in corso» (AGENTE.md, «Il dibattito p
 Lui, 28 ott 2026 sera: «ho deciso di cambiare nome alla pagina Contributi in Agevolazioni… la pagina deve uscire come
 /agevolazioni/». I vecchi indirizzi /contributi/ e /contributi/<id>/ portano ai nuovi (pagine.py, noindex, fuori dalla
 sitemap); dentro il codice e nei file restano i nomi «contributi» (contributi.json, contributi.py, filtroCat «contributi»).
-Lui: «tutto quello che riesci a trovare che vada bene per BN e provincia… estremamente facile da consultare»; nome
-«Contributi» perché i bandi di concorso avranno una sezione loro («Concorsi», in cantiere). strumenti/contributi.py:
+Lui: «tutto quello che riesci a trovare che vada bene per BN e provincia… estremamente facile da consultare»; i bandi
+di concorso restano fuori perché avranno una sezione loro («Concorsi», in cantiere). strumenti/contributi.py:
 il Catalogo degli incentivi del Ministero (non risponde a GitHub: lo scarica il Pi di casa e lo manda alla
 pubblicazione, campo «contributi» di pubblica.yml, come i carburanti), più contributi_locali.json e
 contributi_esclusi.json (li tiene **l'agente dei contributi**, routine di ogni mattina, CONTRIBUTI.md; lui: «devi
@@ -81,8 +83,8 @@ nuova la segue; se una pagina non la segue, è da sistemare.
    ricaricare l'indirizzo diventa /notizia/<id>/ e un indirizzo relativo finisce lì sotto (28 ott 2026: «Notizia non
    trovata» dalla ricerca e icona sparita). Una modifica si prova cliccando come fa lui (ricerca, elenchi, sezioni).
 3. **Notizie, eventi, approfondimenti e pagine di servizio** (Strade chiuse, Scuole chiuse, Carburanti, Calcio,
-   Comuni, Chi siamo, Curiosità, Archivio, Meteo): «← Tutte le notizie» (la pagina di un contributo: «← Tutti i
-   contributi»), occhiello rosso e titolo grande (.appro), e sotto il titolo **Ascolta e Condividi** (lui, 28 ott 2026:
+   Comuni, Chi siamo, Curiosità, Archivio, Meteo): «← Tutte le notizie» (la pagina di un'agevolazione: «← Tutte le
+   agevolazioni»), occhiello rosso e titolo grande (.appro), e sotto il titolo **Ascolta e Condividi** (lui, 28 ott 2026:
    «deve comparire in tutte le pagine… e anche le future»). Li mette da solo azioniPagina() in index.html in ogni
    pagina che sia un <article> col suo <h1> dentro #contenuto: una pagina nuova fatta così li ha senza fare niente.
 
@@ -90,6 +92,9 @@ nuova la segue; se una pagina non la segue, è da sistemare.
 1. `git pull --rebase` (le routine pubblicano spesso: rifallo anche subito prima del push).
 2. Modifica `notizie.json` (o l'archivio) con uno script che rilegge e riscrive il JSON con l'indentazione di 1
    spazio: niente modifiche a mano del file intero. Esempio: `articolo.non_si_sa = []` toglie «Cosa non si sa ancora».
+   **Togliere una notizia** (solo se lo chiede lui): toglila e scrivi `"<id>": "perché, quando, chi l'ha chiesto"` in
+   `archivio/rimandi.json` → `tolte`, se no `archivia.py` (rimetti_sparite) e `strumenti/sparite.py` la rimettono.
+   Due notizie sullo stesso fatto si uniscono invece con `rimandi.json` → `notizie` (`"id tolto": "id rimasto"`).
 3. Controlla: `python3 -c "import sys,json; sys.path.insert(0,'strumenti'); import archivia as A; d=json.load(open('notizie.json', encoding='utf-8')); e,a=[],[]; A.controlla(d,e,a); print(e or 'OK')"`.
 4. Commit e push. Il messaggio **non** deve cominciare con «Comunicato delle » o «Notizie delle »: sono quelli dei
    giri e la Action li tratta in modo diverso.

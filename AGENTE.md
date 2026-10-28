@@ -22,7 +22,8 @@ farlo giusto subito.
    ANAS, INGV, Protezione Civile, Alto Calore, GESESA, EAV, AIR Campania, RFI, Regione Campania). Due articoli dello
    stesso giornale contano come una fonte.
    **Eccezione: un solo giornale autorevole** (voluta dal proprietario il 21 ottobre 2026, estesa alla politica il 22). Un fatto delle categorie
-   `cronaca`, `strade`, `altro`, `sport` e `politica` (per la politica vale sempre la regola 9) riportato da **una
+   `cronaca`, `strade`, `avvisi`, `cultura`, `altro`, `sport` e `politica` (per la politica vale sempre la regola 9; avvisi e
+   cultura dal 28 ott 2026, quando sono nate da «altro») riportato da **una
    sola** di queste testate può uscire con `"stato": "una_fonte"`: Il Mattino (Benevento), Il Sannio Quotidiano,
    NTR24, Ottopagine, Anteprima24, Lab TV, Cronache del Sannio, BeneventoNews24, TV7 Benevento. Prima fai una ricerca
    mirata per trovare la seconda fonte. Il sito mostra da solo la scritta «Una sola fonte» e il nome del giornale.
@@ -52,7 +53,7 @@ farlo giusto subito.
    tecnica serve, spiegala tra parentesi.
 7. **Testo tuo, mai copiato.** Non riprendere frasi dei giornali (al massimo citazioni brevi tra virgolette,
    attribuite). Niente foto dei giornali. I **titoli degli articoli fonte** nell'elenco fonti restano esatti
-   (unica eccezione: il nome di un minore, vedi regola 3).
+   (unica eccezione: i nomi che la regola 3 fa togliere, sostituiti da «[nome omesso]»).
 8. **Nel dubbio, non pubblicare.** Meglio una notizia in meno che una sbagliata. Il dubbio è sul **fatto** (è vero? è
    confermato?), non sulla sua importanza: **un fatto locale vero e ben documentato esce anche se è piccolo**
    (vandali al parco, un incidente, un guasto, una chiusura, una nomina in Comune). «Episodio minore» non è un motivo.
@@ -86,7 +87,8 @@ meno. Lavora in parallelo (6-8 letture insieme).
 6. **Decidi e scrivi**: notizie nuove e aggiornate (vedi «Come lavorare una notizia», «Come si scrive l'articolo»,
    «Quando aggiorni una notizia già uscita»), eventi (vedi «Il calendario degli eventi», con «Le stagioni
    ufficiali»). Le **chiusure** decise dai Comuni **non le scrivi tu** (vedi «Le Allerte»).
-7. **Riscritture**: le notizie della prima pagina col formato vecchio (vedi «Quando aggiorni una notizia già uscita»).
+7. **Riscritture**: le notizie della prima pagina col formato vecchio, se ne trovi (dal 28 ott 2026 non ce ne sono più;
+   vedi «Quando aggiorni una notizia già uscita»).
 8. **Rileggi** ogni notizia nuova o cambiata (vedi «Come lavorare una notizia», punto 5).
 9. **Consegna**: diario `/tmp/diario.json` (vedi «Il diario del giro»), poi `python3 strumenti/archivia.py --giro`
    finché stampa OK, poi pubblica i file `CAMBIATO:` (vedi «Prima di consegnare»).
@@ -563,8 +565,8 @@ fanno i giornali con le dirette, la novità va in cima, non in fondo.
 - Aggiungi il momento nuovo nei fatti (`cronologia`) e aggiorna `sintesi`, `non_si_sa` (togli quello che ora si sa)
   e, se è cambiato il fatto principale, `titolo` e `titolo_google`.
 
-**Le notizie in prima pagina scritte col formato vecchio** (con `cosa` e senza `racconto`): a ogni giro riscrivine
-almeno 8, finché ce ne sono, partendo dalle più recenti e dalle `rilevanti`. Riapri gli articoli fonte, scrivi il
+**Le notizie in prima pagina scritte col formato vecchio** (con `cosa` e senza `racconto`; il 28 ott 2026 erano finite):
+se ne trovi una, riscrivila. Riapri gli articoli fonte, scrivi il
 racconto da capo, togli `cosa` e sistema cronologia e concordano con le regole qui sopra. Le notizie in `archivio/`
 non si toccano.
 
@@ -593,7 +595,8 @@ caporedattore:
   importanti, aggressioni); eventi grandi.
 - **3** utile a un paese o a un quartiere: avvisi e servizi dei Comuni (orari, cimiteri, raccolta rifiuti, lavori,
   strade chiuse di un paese), sagre e feste, iniziative di associazioni.
-- **2** interesse limitato: premi, cultura, concorsi, sport minori e dilettanti, politica senza effetti.
+- **2** interesse limitato: premi, cultura, concorsi, sport minori e dilettanti (la politica senza effetti non è una
+  notizia a sé: regola 9).
 - **1** minore.
 La **cronaca dei paesi vale come quella della città** (lui: «paesi dipende, se cronaca come la città»): un morto sulla
 statale a Forchia è 5 come a Benevento. Il resto dei paesi in genere è 3: il programma ne fa uscire al massimo uno
@@ -601,7 +604,8 @@ all'ora, perché la pagina non diventi solo notizie di paesi («non vorrei invas
 Su Facebook e Instagram escono le stesse notizie, da 3 in su (al massimo una ogni 20 minuti), nello stesso momento:
 dal 27 ott 2026 Instagram pubblica quello che pubblica Facebook, subito dopo (lui: «instagram e facebook in sincronia,
 stessi post in contemporanea», «sì 3 in su, fallo»; prima Instagram solo 4 e 5). Quelle da 1 e 2
-restano sul sito e su Telegram. I comunicati arrivati per posta escono comunque, tutti, subito. Se `importanza`
+restano sul sito e su Telegram. Sui social le notizie dei comunicati ufficiali arrivati per posta (giro lampo) escono
+comunque, tutte, subito (quelli «da valutare» no: COMUNICATI.md). Se `importanza`
 manca il programma la ricava dalla categoria, peggio di te: scrivila sempre.
 
 ## La foto illustrativa (`immagine`)
@@ -670,7 +674,8 @@ aggiorni a ogni giro, come notizie.json.
   Comune, gli stessi giorni e un titolo simile: lo controlla `archivia.py`.
 - **Aggiornali**: se un evento è rinviato cambia le date e scrivilo nella descrizione; se è annullato metti
   `"annullato": true` (resta nel calendario, barrato). Non cancellare mai un evento: quelli finiti da 60 giorni li
-  sposta da solo `strumenti/archivia.py` in `archivio/eventi-AAAA-MM.json`.
+  sposta da solo `strumenti/archivia.py` in `archivio/eventi-AAAA-MM.json`. Due eventi già pubblicati sullo stesso fatto si
+  uniscono in quello uscito prima e il tolto va in `archivio/rimandi.json` → `eventi` (`"id tolto": "id rimasto"`).
 - **Il testo**: `titolo` chiaro e corto (il nome dell'evento, non quello dell'articolo); `breve` = 1-2 frasi semplici
   per il riquadro («cos'è e cosa c'è»); `descrizione` = i dettagli in paragrafi con le fonti (programma, artisti, cosa si
   mangia, come prenotare), con le stesse regole di scrittura delle notizie.
@@ -910,7 +915,8 @@ le dichiarazioni nuove. **Se non c'è ancora, crealo in questo giro.**
   cambia mai, nemmeno se correggi il titolo. Sceglilo con le parole che la gente cerca (luogo + fatto), corto:
   `montesarchio-droga-due-arresti`, non `notizia-1`. Le pagine, la sitemap, il feed e le immagini di anteprima li fa
   GitHub da solo (`strumenti/pagine.py`): tu non devi creare né committare niente di tutto questo.
-- Non modificare mai i file in `archivio/`, con una sola eccezione: se scopri un errore in una notizia archiviata,
+- Non modificare mai i file in `archivio/` (tranne `archivio/rimandi.json`, per unire due notizie o due eventi: «Come
+  lavorare una notizia», punto 1), con una sola eccezione: se scopri un errore in una notizia archiviata,
   correggi quella notizia nel file del suo mese e spiega la correzione nel campo `nota`. Mai cancellarla.
 
 ## Il registro delle fonti (obbligatorio)
@@ -972,7 +978,8 @@ mette in `diario/AAAA-MM-GG.json`; le notizie nuove e aggiornate, le fonti e le 
   provincia, vecchio o ripubblicato, già coperto da una notizia esistente (scrivi quale), pubblicità o comunicato
   promozionale, voce non confermata, cronaca troppo piccola, ecc. Il motivo deve essere concreto. Elenco vuoto `[]`
   solo se davvero non hai scartato niente.
-- Niente nomi di persone indagate, arrestate o coinvolte in fatti di cronaca, anche se il diario è privato.
+- Niente nomi di privati indagati, arrestati o coinvolti in fatti di cronaca, anche se il diario è privato (chi ha un
+  ruolo pubblico sì, come nelle notizie: regola 3).
 - Senza il diario `archivia.py --giro` stampa ERRORE e non scrive niente.
 
 ## Prima di consegnare (obbligatorio)
@@ -1002,4 +1009,5 @@ fuori e pubblica il resto: una voce nuova esce da notizie.json o eventi.json, un
   ott 2026 un giro tolse la notizia di Arpaia, già uscita, credendola in quarantena; ora `archivia.py` rimette da solo
   ogni notizia, approfondimento o evento che c'era all'ultimo salvataggio e manca (stampa `RIMESSA: …`), e a ogni
   pubblicazione `strumenti/sparite.py` fa lo stesso contro il sito. Due voci sullo stesso fatto si uniscono con la riga in
-  `archivio/rimandi.json` (`notizie`, o `eventi` per gli eventi); `tolte` è solo per una richiesta del proprietario.
+  `archivio/rimandi.json` (`notizie`, o `eventi` per gli eventi). `tolte` non lo scrivi mai tu: serve solo alle sessioni
+  col proprietario, quando lui chiede di togliere una notizia.

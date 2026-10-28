@@ -8,8 +8,11 @@ Sito: https://notiziebenevento.it (notiziebenevento.com rimanda qui)
 
 ## Come è fatto
 
-- `notizie.json`: la prima pagina (ultimi 3 giorni, avvisi ancora in vigore, approfondimenti attivi).
-- `archivio/AAAA-MM.json`: le notizie uscite dalla prima pagina, complete di articolo e fonti. Non si cancellano.
+- `notizie.json`: le notizie degli ultimi 3 giorni, gli avvisi ancora in vigore, gli approfondimenti attivi.
+- `archivio/AAAA-MM.json`: le notizie più vecchie, complete di articolo e fonti. Non si cancellano, e il sito continua a
+  elencarle: home 50 per pagina, sezioni e zone 20, con i numeri delle pagine (dal 28 ott 2026).
+- `strumenti/sparite.py`: a ogni pubblicazione rimette quello che il sito mostrava e nel repository manca (una notizia
+  non sparisce mai; a ogni giro lo fa anche `archivia.py` contro l'ultimo salvataggio).
 - `archivio/indice.json`: elenco leggero di tutto l'archivio, per la ricerca e per i link già condivisi.
 - `strumenti/archivia.py`: controlla `notizie.json` (anche niente date nel futuro) e sposta in archivio; non scrive niente se trova un errore.
 - `strumenti/meteo.py`: previsioni da 8 modelli → `meteo.json` (lo esegue GitHub ogni ora).
