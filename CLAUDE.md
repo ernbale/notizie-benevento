@@ -72,7 +72,8 @@ nuova la segue; se una pagina non la segue, è da sistemare.
    **20 notizie per pagina e i numeri delle pagine in fondo** (lui, 28 ott 2026: «20 con possibilità di fare altre
    pagine con i numeri sotto per continuare all'infinito, la home ok così»): prima quelle in prima pagina, poi quelle
    dell'archivio dalla più recente, fino alla più vecchia (paginaSezione, numeriPagine). Sport, zona e pagina stanno
-   nell'indirizzo (/sezione/sport/?sport=basket&pagina=2). La prima pagina «Tutte» non ha le pagine.
+   nell'indirizzo (/sezione/sport/?sport=basket&pagina=2). Anche la prima pagina, 50 per pagina (lui: «ci ho ripensato,
+   home 50 e poi a seguire»; «mai in archivio, l'archivio serve per ricercare»): le notizie non escono mai dagli elenchi.
    **Ogni file e ogni link da index.html parte dalla radice** («/archivio/…», «/favicon.svg»): aperta una notizia senza
    ricaricare l'indirizzo diventa /notizia/<id>/ e un indirizzo relativo finisce lì sotto (28 ott 2026: «Notizia non
    trovata» dalla ricerca e icona sparita). Una modifica si prova cliccando come fa lui (ricerca, elenchi, sezioni).

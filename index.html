@@ -1792,25 +1792,26 @@
     var tit = titoloSezione();
     if (tit) box.appendChild(el("h1", "titolo-sezione", [tit]));
     if (filtroCat === "contributi") { paginaContributi(box); return; }
-    var vive = filtrate(), lista = vive, pag = null;
+    var vive = filtrate();
     if (filtroCat === "sport") box.appendChild(scelteSport());
     if (vive.length) box.appendChild(strisciaUltime(vive));
     if (filtroCat === "avvisi") { paginaAvvisi(box); return; }
-    if (filtroCat || filtroZona) { pag = paginaSezione(vive); lista = pag.lista; }
-    var primaPag = !pag || pag.n === 1;
+    var adesso = Date.now(), soloStrade = filtroCat === "strade";
+    // gli avvisi stanno nel loro riquadro; nell'elenco restano solo quelli importanti (che stanno anche nel riquadro)
+    var avvisi = soloStrade ? [] : vive.filter(eAvviso);
+    var scorrono = vive.filter(function (n) { return avvisi.indexOf(n) < 0 || n.rilevante; });
+    if (!scorrono.length) { scorrono = vive; avvisi = []; }
+    var pag = paginaSezione(scorrono), lista = pag.lista, primaPag = pag.n === 1;
+    if (!primaPag) avvisi = [];
     if (primaPag) riquadriSezione(box, lista);
     if (!lista.length) {
-      if (pag && pag.attesa) box.appendChild(el("p", "vuoto", ["Caricamento…"]));
+      if (pag.attesa) box.appendChild(el("p", "vuoto", ["Caricamento…"]));
       else if (filtroCat !== "eventi")
         box.appendChild(el("p", "vuoto", [(dati.notizie || []).length ? "Nessuna notizia con questi filtri." : "Il primo aggiornamento arriva a breve."]));
       return;
     }
 
-    var adesso = Date.now(), soloStrade = filtroCat === "strade";
-    var avvisi = soloStrade || !primaPag ? [] : lista.filter(eAvviso);
-    // gli avvisi stanno nel loro riquadro; in pagina restano solo quelli importanti
-    var principali = lista.filter(function (n) { return avvisi.indexOf(n) < 0 || n.rilevante; });
-    if (!principali.length) { principali = lista; avvisi = []; }
+    var principali = lista;
     var perRilievo = principali.slice().sort(function (a, b) { return rilievo(b, adesso) - rilievo(a, adesso); });
     var apertura = primaPag ? perRilievo[0] : null, spalla = primaPag ? perRilievo.slice(1, 4) : [];   // dalla pagina 2 solo l'elenco
     var resto = principali.filter(function (n) { return n !== apertura && spalla.indexOf(n) < 0; });
@@ -1839,7 +1840,7 @@
     altre.appendChild(ag);
     c1.appendChild(altre);
     if (!resto.length) altre.style.display = "none";
-    var np = pag && numeriPagine(pag);
+    var np = numeriPagine(pag);
     if (np) c1.appendChild(np);
     var rz = riquadroChiusure();
     if (rz) c3.appendChild(rz);
@@ -2571,9 +2572,13 @@
   // la home ok così»). Con i soli ultimi 3 giorni della prima pagina, Sport › Basket restava quasi vuota («articoli Miwa
   // spariti»). Prima quelle in prima pagina (notizie.json), poi quelle dell'archivio dalla più recente; le schede
   // dell'archivio arrivano dal file del loro mese, e quando arriva si ridisegna. La pagina è nell'indirizzo (?pagina=2).
-  var PER_PAGINA = 20;
+  // Anche la prima pagina: 50 per pagina e poi a seguire (lui, 28 ott 2026: «ci ho ripensato, home 50 e poi a seguire»,
+  // «mai in archivio, l'archivio serve per ricercare»): le notizie non escono mai dagli elenchi, scorrono di pagina in
+  // pagina. Gli avvisi in vigore stanno nel loro riquadro della pagina 1 e non contano tra le 20 o le 50.
   var paginaSez = 1;
+  function perPagina() { return filtroCat || filtroZona ? 20 : 50; }
   function paginaSezione(vive) {
+    var PER_PAGINA = perPagina();
     var segno = location.pathname + location.search;
     function poi(pr) { pr.then(function () { if (location.pathname + location.search === segno && !location.hash) disegna(); }); }
     if (!archivio.voci) {
@@ -2581,10 +2586,11 @@
       return { lista: vive.slice(0, PER_PAGINA), n: 1, pagine: 1, attesa: true };
     }
     var qui = {}, fc = filtroCat, fz = filtroZona, fs = filtroSport;
-    vive.forEach(function (n) { qui[n.id] = true; });
+    (dati.notizie || []).forEach(function (n) { qui[n.id] = true; });
     var vecchie = archivio.voci.filter(function (x) {
       if ((x.tipo || "notizia") !== "notizia" || qui[x.id]) return false;
-      var cat = fc === "avvisi" ? x.categoria === "avvisi" || x.categoria === "strade" : !fc || x.categoria === fc;
+      // in prima pagina lo sport ha il suo riquadro e la sua pagina (come filtrate())
+      var cat = fc === "avvisi" ? x.categoria === "avvisi" || x.categoria === "strade" : fc ? x.categoria === fc : x.categoria !== "sport";
       return cat && (!fz || x.zona === fz) && (fc !== "sport" || !fs || x.sport === fs);
     }).sort(function (a, b) { return String(b.pubblicato).localeCompare(String(a.pubblicato)); });
     var tutte = vive.concat(vecchie.map(function (v) { return { voce: v }; }));
@@ -3318,7 +3324,7 @@
     var q = [];
     if (PAGINA_CAT[filtroCat] && filtroZona) q.push("zona=" + filtroZona);
     if (filtroCat === "sport" && filtroSport) q.push("sport=" + filtroSport);
-    if ((filtroCat || filtroZona) && paginaSez > 1) q.push("pagina=" + paginaSez);
+    if (paginaSez > 1) q.push("pagina=" + paginaSez);
     return (PAGINA_CAT[filtroCat] || PAGINA_ZONA[filtroZona] || "/") + (q.length ? "?" + q.join("&") : "");
   }
   // le scelte del menu lette dall'indirizzo; null se non è la prima pagina, una sezione o una zona
@@ -3468,8 +3474,8 @@
     filtroCat = FISSA.cat || "";
     filtroZona = ((filtriDaIndirizzo() || {}).zona) || FISSA.zona || "";   // anche ?zona= (sezione e zona insieme)
     filtroSport = (filtriDaIndirizzo() || {}).sport || "";   // ?sport=basket
-    paginaSez = (filtriDaIndirizzo() || {}).pagina || 1;     // ?pagina=2
   }
+  paginaSez = (filtriDaIndirizzo() || {}).pagina || 1;     // ?pagina=2, anche in prima pagina
   segnaMenu();
 
   fetch("/meteo.json?t=" + Date.now(), { cache: "no-store" })
