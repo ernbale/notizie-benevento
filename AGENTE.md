@@ -53,7 +53,7 @@ farlo giusto subito.
    tecnica serve, spiegala tra parentesi.
 7. **Testo tuo, mai copiato.** Non riprendere frasi dei giornali (al massimo citazioni brevi tra virgolette,
    attribuite). Niente foto dei giornali. I **titoli degli articoli fonte** nell'elenco fonti restano esatti
-   (unica eccezione: i nomi che la regola 3 fa togliere, sostituiti da «[nome omesso]»).
+   (unica eccezione: il nome di un minore, vedi regola 3).
 8. **Nel dubbio, non pubblicare.** Meglio una notizia in meno che una sbagliata. Il dubbio è sul **fatto** (è vero? è
    confermato?), non sulla sua importanza: **un fatto locale vero e ben documentato esce anche se è piccolo**
    (vandali al parco, un incidente, un guasto, una chiusura, una nomina in Comune). «Episodio minore» non è un motivo.
@@ -566,7 +566,7 @@ fanno i giornali con le dirette, la novità va in cima, non in fondo.
   e, se è cambiato il fatto principale, `titolo` e `titolo_google`.
 
 **Le notizie in prima pagina scritte col formato vecchio** (con `cosa` e senza `racconto`; il 28 ott 2026 erano finite):
-se ne trovi una, riscrivila. Riapri gli articoli fonte, scrivi il
+se ne trovi, riscrivile, almeno 8 a giro, partendo dalle più recenti e dalle `rilevanti`. Riapri gli articoli fonte, scrivi il
 racconto da capo, togli `cosa` e sistema cronologia e concordano con le regole qui sopra. Le notizie in `archivio/`
 non si toccano.
 
