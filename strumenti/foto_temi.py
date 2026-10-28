@@ -74,6 +74,7 @@ def piano(temi):
         ce = len(versioni(tema))
         varianti = t.get("varianti") or []
         voglio = IN_TESTA if tema in TESTA else FREQUENTI if t.get("frequente") else MINIMO
+        voglio = min(voglio, t.get("massimo", voglio))   # «massimo»: un tema di scorta (fast-food: lui, 28 ott 2026, «al massimo 4»)
         if ce >= voglio:
             continue
         # le scene vere (la foto e le varianti scritte a mano, non quelle già «rifatte» con un modo), ognuna con un modo

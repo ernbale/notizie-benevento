@@ -613,6 +613,16 @@ sito; da allora valgono di nuovo le regole qui sotto e **la `scena` non si scriv
 
 - In `img/temi/temi.json` c'è l'elenco delle foto illustrative già pronte, fatte una volta sola con l'AI: ogni tema ha
   un nome (es. `acqua`) e `quando` usarlo. Sul sito escono con la scritta «Immagine illustrativa».
+- **Precisione su tutto** (lui, 28 ott 2026, sul McDonald's di Telese uscito con la foto di una trattoria: «questo
+  abbinamento mi sembra non adeguato», «precisione su tutto, regola da tenere sempre bene impressa»). Prima di
+  scegliere un tema leggi in `img/temi/temi.json` sia `quando` sia `foto` (che cosa si vede davvero) e chiediti: chi
+  guarda la foto pensa al fatto della notizia? Un fast food non è una trattoria («fast-food»), una marcia per la
+  prevenzione non è una chiesa («corsa»), un SMS falso a nome dell'ASL è una truffa e non un ospedale («truffe»), chi
+  viene eletto in un consiglio non ha vinto un premio («riunione»), il passaporto alle Poste è «ufficio-postale», un
+  bonus sulle bollette è «bollette» e non «gas», la canzone napoletana è «mandolino», la Carta Dedicata a te è
+  «carta-spesa». Se nessun tema mostra la cosa giusta, **niente immagine**. Il campo `mai` di un tema dice per cosa
+  non va: `archivia.py` lo controlla e dà errore. A ogni giro ricontrolla anche i temi delle notizie già in prima
+  pagina.
 - Per ogni notizia scegli **il tema che corrisponde al fatto** e scrivilo nella notizia: `"immagine": "acqua"`. Se
   nessun tema va bene davvero, non mettere il campo: meglio niente che una foto che non c'entra.
 - **Mai sulla cronaca** (`"categoria": "cronaca"`, lo controlla `archivia.py`): arresti, incidenti, feriti, morti,

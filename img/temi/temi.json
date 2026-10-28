@@ -1,6 +1,6 @@
 {
  "acqua": {
-  "quando": "acqua sospesa, guasti alla rete idrica, acqua non potabile",
+  "quando": "acqua sospesa, guasti alla rete idrica, acqua non potabile, servizio idrico (per sorgenti ed escursioni c'è «fontana»)",
   "foto": "an old chrome kitchen tap on a simple stone sink in an Italian village home, one single drop of water falling from the spout, no water flowing",
   "varianti": [
    "a row of plastic water bottles and a large jug on a kitchen counter",
@@ -19,7 +19,8 @@
    "a close-up of a closed water valve with a blue handle on a metal pipe, in winter, under a grey sky, a wider view that shows more of the surroundings, on an overcast day",
    "an old chrome kitchen tap on a simple stone sink in an Italian village home, one single drop of water falling from the spout, no water flowing, seen from a different side and a higher angle, in soft morning light"
   ],
-  "frequente": true
+  "frequente": true,
+  "mai": "escursion|\\bsorgent"
  },
  "strada-chiusa": {
   "quando": "strade chiuse, deviazioni, ponti chiusi",
@@ -355,7 +356,7 @@
   "frequente": true
  },
  "ospedale": {
-  "quando": "ospedali, pronto soccorso, sanità, ASL",
+  "quando": "ospedali, reparti, sanità, ASL (per i falsi SMS e le truffe a nome dell'ASL c'è «truffe»)",
   "foto": "an empty clean hospital corridor with soft light and closed doors",
   "varianti": [
    "the exterior of a modern hospital building with many windows, no signs",
@@ -381,10 +382,11 @@
    "an empty hospital room with a bed and medical monitors, a view from above, in bright daylight",
    "an empty clean hospital corridor with soft light and closed doors, at dusk, seen from further away, with the first lights on",
    "an empty hospital room with a bed and medical monitors, at dusk, seen from further away, with the first lights on"
-  ]
+  ],
+  "mai": "\\bSMS\\b|truff"
  },
  "treno": {
-  "quando": "treni, ferrovie, stazioni, orari e tariffe dei treni",
+  "quando": "treni, ferrovie, stazioni, orari e tariffe dei treni (le linee chiuse o abbandonate sono «ferrovia-dismessa»)",
   "foto": "railway tracks at a small rural train station in the hills, a plain regional train in the distance",
   "varianti": [
    "a plain regional train passing through green countryside",
@@ -410,7 +412,8 @@
    "an empty platform of a small station with a canopy at dawn, a view from above, in bright daylight",
    "railway tracks at a small rural train station in the hills, a plain regional train in the distance, at dusk, seen from further away, with the first lights on",
    "an empty platform of a small station with a canopy at dawn, at dusk, seen from further away, with the first lights on"
-  ]
+  ],
+  "mai": "dismess|abbandonat|chius[ao] dal (19|20)\\d\\d"
  },
  "autobus": {
   "quando": "autobus, trasporto urbano ed extraurbano, fermate",
@@ -621,7 +624,7 @@
   ]
  },
  "documenti": {
-  "quando": "ordinanze, delibere, bandi, avvisi del Comune, tasse e tributi",
+  "quando": "ordinanze, delibere, bandi, avvisi del Comune, tasse e tributi (le carte per la spesa sono «carta-spesa»)",
   "foto": "official paper documents, a fountain pen and a rubber stamp on a wooden office desk",
   "varianti": [
    "stacks of folders tied with string on the shelves of a municipal archive",
@@ -640,7 +643,8 @@
    "official paper documents, a fountain pen and a rubber stamp on a wooden office desk, photographed from a low angle, at golden hour",
    "an official document with a round ink stamp and a signature line, close-up, no readable text, photographed from a low angle, at golden hour"
   ],
-  "frequente": true
+  "frequente": true,
+  "mai": "Carta Dedicata|carta.{0,20}spesa|buoni spesa"
  },
  "consiglio": {
   "quando": "Consiglio comunale, provinciale o regionale, sedute e votazioni",
@@ -715,7 +719,7 @@
   ]
  },
  "concerto": {
-  "quando": "concerti, spettacoli all'aperto",
+  "quando": "concerti, spettacoli all'aperto (la canzone napoletana e la musica popolare sono «mandolino»)",
   "foto": "an empty open-air stage with lights in a town square at night",
   "varianti": [
    "a microphone on a stand on a stage under spotlights",
@@ -734,7 +738,8 @@
    "an empty open-air stage with lights in a town square at night, photographed from a low angle, at golden hour",
    "an outdoor stage in a village square at dusk with lights and empty chairs, photographed from a low angle, at golden hour"
   ],
-  "frequente": true
+  "frequente": true,
+  "mai": "canzone napoletana|musica popolare|\\bfolk\\b"
  },
  "teatro": {
   "quando": "teatro, cinema, stagioni teatrali",
@@ -817,7 +822,7 @@
   ]
  },
  "chiesa": {
-  "quando": "feste religiose, chiese, processioni",
+  "quando": "feste religiose, chiese, processioni, messe (non per marce, corse o camminate che passano da una chiesa)",
   "foto": "lit candles inside an old church, soft warm light",
   "varianti": [
    "the bell tower of a village church against a blue sky",
@@ -836,7 +841,8 @@
    "lit candles inside an old church, soft warm light, photographed from a low angle, at golden hour",
    "the nave of an old church with wooden pews and soft light, photographed from a low angle, at golden hour"
   ],
-  "frequente": true
+  "frequente": true,
+  "mai": "\\bmarcia\\b|maratona|corsa podistica|camminata|walking"
  },
  "luce": {
   "quando": "luce elettrica, interruzioni di corrente, illuminazione pubblica",
@@ -853,7 +859,7 @@
   ]
  },
  "gas": {
-  "quando": "gas, bollette, interruzioni del gas",
+  "quando": "fughe di gas, interruzioni del gas, metanizzazione (bollette e bonus sono «bollette»)",
   "foto": "blue gas flames on a kitchen stove burner",
   "varianti": [
    "blue gas flames on a kitchen stove burner, a close-up detail of the main subject, shallow depth of field",
@@ -864,7 +870,8 @@
    "blue gas flames on a kitchen stove burner, a view from above, in bright daylight",
    "blue gas flames on a kitchen stove burner, at dusk, seen from further away, with the first lights on",
    "blue gas flames on a kitchen stove burner, after the rain, with wet reflective surfaces, seen at eye level"
-  ]
+  ],
+  "mai": "\\bbonus\\b|bollett"
  },
  "libri": {
   "quando": "cultura, biblioteche, presentazioni di libri, università",
@@ -895,7 +902,7 @@
   ]
  },
  "protezione-civile": {
-  "quando": "Protezione civile, esercitazioni, emergenze",
+  "quando": "Protezione civile, esercitazioni, emergenze, tende e campi (non per corsi di primo soccorso)",
   "foto": "plain blue emergency tents set up in a field, no logos",
   "varianti": [
    "plain blue emergency tents set up in a field, no logos, a close-up detail of the main subject, shallow depth of field",
@@ -906,7 +913,8 @@
    "plain blue emergency tents set up in a field, no logos, a view from above, in bright daylight",
    "plain blue emergency tents set up in a field, no logos, at dusk, seen from further away, with the first lights on",
    "plain blue emergency tents set up in a field, no logos, after the rain, with wet reflective surfaces, seen at eye level"
-  ]
+  ],
+  "mai": "primo soccorso|defibrillator"
  },
  "caldo": {
   "quando": "ondate di calore, caldo, temperature alte",
@@ -1580,7 +1588,7 @@
   ]
  },
  "sportello": {
-  "quando": "uffici pubblici, sportelli, orari al pubblico, anagrafe",
+  "quando": "uffici pubblici, sportelli, orari al pubblico, anagrafe (gli uffici postali sono «ufficio-postale»)",
   "foto": "a public office service counter with a glass partition and empty waiting chairs",
   "varianti": [
    "a public office service counter with a glass partition and empty waiting chairs, a close-up detail of the main subject, shallow depth of field",
@@ -1591,7 +1599,8 @@
    "a public office service counter with a glass partition and empty waiting chairs, a view from above, in bright daylight",
    "a public office service counter with a glass partition and empty waiting chairs, at dusk, seen from further away, with the first lights on",
    "a public office service counter with a glass partition and empty waiting chairs, after the rain, with wet reflective surfaces, seen at eye level"
-  ]
+  ],
+  "mai": "uffic[io] postal|\\bPoste\\b"
  },
  "sicurezza-lavoro": {
   "quando": "sicurezza sul lavoro, morti sul lavoro (solo per iniziative e commemorazioni)",
@@ -1990,7 +1999,7 @@
   ]
  },
  "ristorante": {
-  "quando": "ristoranti, trattorie, pizzerie, cucina",
+  "quando": "ristoranti, trattorie, pizzerie, cucina tipica (per i fast food e le catene c'è «fast-food»)",
   "foto": "a set table in a rustic Italian trattoria with a checked tablecloth",
   "varianti": [
    "a set table in a rustic Italian trattoria with a checked tablecloth, a close-up detail of the main subject, shallow depth of field",
@@ -2001,7 +2010,8 @@
    "a set table in a rustic Italian trattoria with a checked tablecloth, a view from above, in bright daylight",
    "a set table in a rustic Italian trattoria with a checked tablecloth, at dusk, seen from further away, with the first lights on",
    "a set table in a rustic Italian trattoria with a checked tablecloth, after the rain, with wet reflective surfaces, seen at eye level"
-  ]
+  ],
+  "mai": "fast.?food|McDonald|Burger King|\\bKFC\\b|kebab"
  },
  "bar": {
   "quando": "bar, caffè, esercizi pubblici, movida",
@@ -2418,7 +2428,7 @@
   ]
  },
  "premio": {
-  "quando": "premi, riconoscimenti, concorsi vinti",
+  "quando": "premi, riconoscimenti, concorsi vinti (non per elezioni o nomine in un consiglio o in un ordine: «riunione»)",
   "foto": "a crystal award trophy and a framed certificate on a table",
   "varianti": [
    "a crystal award trophy and a framed certificate on a table, a close-up detail of the main subject, shallow depth of field",
@@ -2429,7 +2439,8 @@
    "a crystal award trophy and a framed certificate on a table, a view from above, in bright daylight",
    "a crystal award trophy and a framed certificate on a table, at dusk, seen from further away, with the first lights on",
    "a crystal award trophy and a framed certificate on a table, after the rain, with wet reflective surfaces, seen at eye level"
-  ]
+  ],
+  "mai": "\\belett[oai]\\b|\\bnominat[oai]\\b|\\bnomina\\b"
  },
  "commemorazione": {
   "quando": "commemorazioni, anniversari, giornate della memoria",
@@ -3019,5 +3030,15 @@
    "an ATM cash machine set into the stone wall of a village street, no logos, at dusk, seen from further away, with the first lights on",
    "an ATM cash machine set into the stone wall of a village street, no logos, after the rain, with wet reflective surfaces, seen at eye level"
   ]
+ },
+ "fast-food": {
+  "quando": "fast food e catene di hamburger e panini (McDonald's, Burger King…): aperture, assunzioni, chiusure",
+  "foto": "a modern fast food restaurant counter with self-order touch screens and trays, warm evening light, no logos, no brand colors",
+  "varianti": [
+   "a burger with fries and a paper cup of soda on a plastic tray on a fast food table, no logos",
+   "the drive-through lane of a modern fast food restaurant at dusk along a suburban road, lit menu boards without readable text, no logos",
+   "young staff in plain uniforms seen from behind preparing orders in the open kitchen of a fast food restaurant, no logos"
+  ],
+  "massimo": 4
  }
 }

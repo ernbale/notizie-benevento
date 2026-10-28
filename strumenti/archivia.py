@@ -586,6 +586,19 @@ def temi_foto():
     return {t for t in temi if os.path.exists(os.path.join(cart, t + ".jpg"))}
 
 
+def tema_sbagliato(n):
+    """Il motivo per cui il tema della notizia non va, dal campo «mai» di temi.json (lui, 28 ott 2026, sul McDonald's di
+    Telese con la foto di una trattoria: «precisione su tutto, regola da tenere sempre bene impressa»), o None."""
+    try:
+        t = json.load(open(os.path.join(CART_TEMI, "temi.json"), encoding="utf-8")).get(n.get("immagine") or "") or {}
+    except Exception:
+        return None
+    if not t.get("mai"):
+        return None
+    m = re.search(t["mai"], f"{n.get('titolo', '')} {n.get('sintesi', '')}", re.I)
+    return f"«{m.group(0)}»: {t.get('quando', '')}" if m else None
+
+
 def versioni_foto(tema):
     """Le versioni della foto di un tema: tema.jpg, tema-2.jpg, tema-3.jpg…"""
     v = [tema] if os.path.exists(os.path.join(CART_TEMI, tema + ".jpg")) else []
@@ -965,6 +978,9 @@ def controlla(d, err, avv, adesso=None):
                 err.append(f"{w}: niente immagine sulla cronaca (togli il campo immagine)")
             elif n["immagine"] not in temi_foto():
                 err.append(f"{w}: immagine {n['immagine']!r} non è un tema di img/temi/temi.json")
+            elif tema_sbagliato(n):
+                err.append(f"{w}: il tema {n['immagine']!r} non va per questa notizia ({tema_sbagliato(n)}): scegline "
+                           "uno che mostra davvero il fatto, o niente immagine (AGENTE.md, «La foto illustrativa»)")
         controlla_contributo(n, w, err)
         a = n.get("articolo") or {}
         # con un comunicato arrivato per email niente «Cosa non si sa ancora»: elencare cosa manca sembra una

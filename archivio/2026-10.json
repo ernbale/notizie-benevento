@@ -9833,7 +9833,7 @@
    "sintesi": "Il Nuovo Comitato Utenti Ferrovia Valle Caudina e il consigliere regionale di Forza Italia Fernando Errico chiedono che la linea, chiusa dal 2021 per lavori, passi a RFI (Rete Ferroviaria Italiana, la società della rete nazionale). La riapertura è ipotizzata per i primi mesi del 2027.",
    "categoria": "politica",
    "zona": "caudina",
-   "immagine": "treno",
+   "immagine": "ferrovia-dismessa",
    "luogo": "Valle Caudina",
    "pubblicato": "2026-10-19",
    "stato": "confermata",
@@ -9938,8 +9938,8 @@
      }
     ]
    },
-   "foto": "treno",
-   "archiviato_il": "2026-10-22"
+   "archiviato_il": "2026-10-22",
+   "foto": "ferrovia-dismessa-9"
   },
   {
    "id": "sentenza-spaccio-valle-caudina",
