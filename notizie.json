@@ -1,7 +1,118 @@
 {
- "aggiornato": "2026-10-27T22:12+01:00",
+ "aggiornato": "2026-10-28T06:10+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "san-nazzaro-capolinea-bus-air-ufficio-postale-30-ottobre-8-novembre",
+   "titolo": "San Nazzaro, dal 30 ottobre all'8 novembre il capolinea dei bus AIR si sposta alla fermata dell'ufficio postale",
+   "titolo_google": "Bus AIR San Nazzaro, capolinea all'ufficio postale fino all'8 novembre",
+   "sintesi": "Dal 30 ottobre all'8 novembre 2026 i bus AIR Campania che passano da San Nazzaro arrivano e partono dalla fermata accanto all'ufficio postale. Lo ha deciso AIR dopo una richiesta del Comune per le feste.",
+   "categoria": "strade",
+   "zona": "provincia",
+   "immagine": "autobus",
+   "luogo": "San Nazzaro",
+   "pubblicato": "2026-10-28T05:00+01:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "in_vigore_dal": "2026-10-30",
+   "in_vigore_fino": "2026-11-08",
+   "traffico": "bus",
+   "fonti": [
+    {
+     "nome": "AIR Campania",
+     "url": "https://aircampania.it/san-nazzaro-bn-capolinea-bus-temporaneo/",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Da venerdì 30 ottobre a domenica 8 novembre 2026 cambia il capolinea dei bus a San Nazzaro, il piccolo paese a sud-est di Benevento. Le corse di AIR Campania, la società dei bus extraurbani, arrivano e partono dalla fermata accanto all'ufficio postale del paese.",
+      "fonti": [
+       "AIR Campania"
+      ]
+     },
+     {
+      "testo": "AIR ha deciso lo spostamento dopo una richiesta del Comune di San Nazzaro, legata alle feste di questi giorni. Il cambio vale sia per gli arrivi sia per le partenze; dal 9 novembre il capolinea torna quello di sempre.",
+      "fonti": [
+       "AIR Campania"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "AIR Campania",
+      "titolo": "San Nazzaro (BN): capolinea bus temporaneo",
+      "url": "https://aircampania.it/san-nazzaro-bn-capolinea-bus-temporaneo/",
+      "data": "28 ott, 05:00",
+      "ufficiale": true
+     }
+    ]
+   },
+   "foto": "autobus-3"
+  },
+  {
+   "id": "durazzano-scuola-intitolazione-maestro-salvatore-basso",
+   "titolo": "Durazzano, la nuova scuola di piazza Galilei potrebbe portare il nome del maestro Salvatore Basso",
+   "titolo_google": "Durazzano, scuola intitolata al maestro Salvatore Basso",
+   "sintesi": "La Giunta di Durazzano ha dato parere favorevole a intitolare la scuola di piazza Galileo Galilei al maestro Salvatore Basso, che insegnò in paese dal dopoguerra. Per il nome serve ancora una deroga del Prefetto di Benevento.",
+   "categoria": "altro",
+   "zona": "caudina",
+   "immagine": "scuola",
+   "luogo": "Durazzano",
+   "pubblicato": "2026-10-28T06:00+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/28/durazzano-proposta-lintitolazione-della-scuola-al-maestro-basso-contribui-alla-formazione-degli-studenti-nel-dopoguerra/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "La scuola di Durazzano, inaugurata da poco in piazza Galileo Galilei, potrebbe portare il nome del maestro Salvatore Basso. La Giunta comunale guidata dalla sindaca Pasqualina Grasso ha dato parere favorevole alla proposta dell'Istituto Comprensivo «A. Oriani» di Sant'Agata de' Goti, da cui dipende la scuola. Nell'edificio ci sono la primaria e la secondaria di primo grado, le vecchie elementari e medie.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Salvatore Basso era nato a Maddaloni il 21 gennaio 1925 ed è morto a Lecco il 10 gennaio 2019. Cominciò a insegnare a Durazzano nell'anno scolastico 1946-1947, anche nella frazione Castello, in anni di povertà, con pochi mezzi e aule inadatte. Oltre ai bambini insegnò a leggere e scrivere anche ai ragazzi che per la guerra e la miseria non avevano finito la scuola.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Il Collegio dei docenti e il Consiglio d'istituto hanno approvato la proposta all'unanimità e hanno mandato al Comune anche il racconto autobiografico del maestro, «I miei quarant'anni d'insegnamento». Il nome però non è ancora deciso: dalla morte di Basso non sono passati dieci anni e per la legge serve una deroga del Prefetto di Benevento.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando il Prefetto deciderà sulla deroga."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Durazzano, proposta l’intitolazione della scuola al maestro Basso: contribuì alla formazione degli studenti nel dopoguerra",
+      "url": "https://www.ntr24.tv/2026/10/28/durazzano-proposta-lintitolazione-della-scuola-al-maestro-basso-contribui-alla-formazione-degli-studenti-nel-dopoguerra/",
+      "data": "28 ott, 06:00"
+     }
+    ]
+   },
+   "foto": "scuola"
+  },
   {
    "id": "benevento-catanzaro-1-1-salvemini-buso-27-ottobre",
    "titolo": "Serie B, Benevento-Catanzaro 1-1: Salvemini segna su rigore, Buso pareggia al 92'",
@@ -7536,929 +7647,6 @@
    "importanza": 5
   },
   {
-   "id": "miwa-basket-benevento-vince-ragusa-69-75",
-   "titolo": "Basket B Interregionale, la Miwa Benevento vince 75-69 a Ragusa: 20 punti di Giacomi",
-   "titolo_google": "Basket, Virtus Ragusa-Miwa Benevento 69-75: vince la Miwa",
-   "sintesi": "Domenica 25 ottobre la Miwa Basket Benevento ha battuto in trasferta la Virtus Kleb Ragusa 75-69 nella quinta giornata di Serie B Interregionale. I sanniti di coach Adolfo Parrillo sono stati sempre in vantaggio; il migliore è stato Giacomi con 20 punti.",
-   "categoria": "sport",
-   "sport": "basket",
-   "zona": "benevento",
-   "luogo": "Ragusa",
-   "pubblicato": "2026-10-25T21:01:00+01:00",
-   "stato": "ufficiale",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "BeneventoNews24",
-     "url": "https://www.beneventonews24.it/2026/10/26/basket-la-miwa-spicca-il-volo-sbancata-ragusa-boars-superlativi-al-palapadua/"
-    },
-    {
-     "nome": "Benevento Giornale",
-     "url": "https://www.beneventogiornale.com/2026/10/25/la-miwa-spicca-il-volo-sbancata-ragusa-69-75-i-boars-conducono-sempre-al-palapadua/"
-    },
-    {
-     "nome": "Gazzetta di Benevento",
-     "url": "https://www.gazzettabenevento.it/it/basket-serie-b-interregionale-il-basket-benevento-porta-casa-due-punti-pesanti-vincendo-trasferta"
-    },
-    {
-     "nome": "Miwa Basket Benevento",
-     "url": "https://www.cestisticabenevento.it/2026/10/25/la-miwa-spicca-il-volo-sbancata-ragusa/",
-     "ufficiale": true
-    },
-    {
-     "nome": "NTR24 Sport",
-     "url": "https://sport.ntr24.tv/2026/10/25/basket-b-interregionale-la-miwa-benevento-sbanca-ragusa/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "La Miwa Basket Benevento ha vinto 75-69 in trasferta contro la Virtus Kleb Ragusa, domenica 25 ottobre, al PalaPadua di Ragusa, nel campionato di Serie B Interregionale. Lo ha comunicato la società. I sanniti, allenati da coach Adolfo Parrillo, sono stati in vantaggio per tutta la partita. Per la società è la prova di un gruppo già unito dopo appena cinque giornate di campionato.",
-      "fonti": [
-       "Miwa Basket Benevento",
-       "NTR24 Sport",
-       "Gazzetta di Benevento",
-       "Benevento Giornale",
-       "BeneventoNews24"
-      ],
-      "giorno": "2026-10-25"
-     },
-     {
-      "testo": "Il primo quarto è finito 17-9 per Benevento, con Migone, Giacomi e due tiri liberi di Murolo. Nel secondo Ragusa ha recuperato con un parziale di 8-0, ma la Miwa è tornata avanti e all'intervallo conduceva 36-31. Nel terzo quarto, con otto punti di Murolo in due minuti e due tiri da tre di Giacomi, Benevento è salita fino a +13; il periodo si è chiuso 56-48.",
-      "fonti": [
-       "Miwa Basket Benevento"
-      ],
-      "giorno": "2026-10-25"
-     },
-     {
-      "testo": "Nell'ultimo quarto Ragusa si è avvicinata fino a quattro punti a due minuti dalla fine, con Vijber. Un tiro da tre di Di Febo ha rimesso distanza e la Miwa ha chiuso sul 75-69. Il migliore dei sanniti è stato Giacomi con 20 punti, poi Murolo con 10 e Baker e Rianna con 9.",
-      "fonti": [
-       "Miwa Basket Benevento"
-      ],
-      "giorno": "2026-10-25"
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "La vittoria 75-69 della Miwa a Ragusa, sempre in vantaggio.",
-      "fonti": [
-       "Miwa Basket Benevento",
-       "NTR24 Sport"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [],
-    "fonti": [
-     {
-      "nome": "Miwa Basket Benevento",
-      "titolo": "La Miwa spicca il volo: sbancata Ragusa!",
-      "url": "https://www.cestisticabenevento.it/2026/10/25/la-miwa-spicca-il-volo-sbancata-ragusa/",
-      "data": "25 ott, 21:01",
-      "ufficiale": true
-     },
-     {
-      "nome": "NTR24 Sport",
-      "titolo": "Basket B Interregionale, la Miwa Benevento sbanca Ragusa",
-      "url": "https://sport.ntr24.tv/2026/10/25/basket-b-interregionale-la-miwa-benevento-sbanca-ragusa/",
-      "data": "25 ott, 21:10"
-     },
-     {
-      "nome": "Gazzetta di Benevento",
-      "titolo": "Basket, Serie B Interregionale: Il Basket Benevento porta a casa due punti pesanti vincendo in trasferta sul campo della Virtus Kleb Ragusa",
-      "url": "https://www.gazzettabenevento.it/it/basket-serie-b-interregionale-il-basket-benevento-porta-casa-due-punti-pesanti-vincendo-trasferta",
-      "data": "25 ott, 21:11"
-     },
-     {
-      "nome": "Benevento Giornale",
-      "titolo": "La Miwa spicca il volo: sbancata Ragusa 69-75 – I Boars conducono sempre al ‘PalaPadua’",
-      "url": "https://www.beneventogiornale.com/2026/10/25/la-miwa-spicca-il-volo-sbancata-ragusa-69-75-i-boars-conducono-sempre-al-palapadua/",
-      "data": "25 ott, 22:09"
-     },
-     {
-      "nome": "BeneventoNews24",
-      "titolo": "Basket, la Miwa spicca il volo: sbancata Ragusa. Boars superlativi al “PalaPadua”",
-      "url": "https://www.beneventonews24.it/2026/10/26/basket-la-miwa-spicca-il-volo-sbancata-ragusa-boars-superlativi-al-palapadua/",
-      "data": "26 ott, 00:31"
-     }
-    ]
-   },
-   "subito": true,
-   "comunicati": [
-    "8249c0e518c5"
-   ],
-   "foto_inviate": [
-    "img/locandine/miwa-basket-benevento-vince-ragusa-69-75-foto.jpg"
-   ],
-   "foto_da": "Miwa Basket Benevento"
-  },
-  {
-   "id": "paolisi-sportello-tributi-chiuso-26-ottobre",
-   "titolo": "Paolisi, lunedì 26 ottobre chiuso lo sportello del concessionario dei tributi",
-   "titolo_google": "Paolisi, sportello dei tributi chiuso lunedì 26 ottobre",
-   "sintesi": "A Paolisi lunedì 26 ottobre lo sportello del concessionario, che si occupa della riscossione delle tasse comunali, resta chiuso. Lo comunica l'Ufficio Tributi del Comune.",
-   "categoria": "altro",
-   "zona": "caudina",
-   "luogo": "Paolisi",
-   "immagine": "sportello",
-   "pubblicato": "2026-10-25",
-   "stato": "ufficiale",
-   "rilevante": false,
-   "in_vigore_fino": "2026-10-26",
-   "fonti": [
-    {
-     "nome": "Comune di Paolisi",
-     "url": "https://comune.paolisi.bn.it/novita/sportello-concessionario-2/",
-     "ufficiale": true
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "A Paolisi, in Valle Caudina, lunedì 26 ottobre resta chiuso lo sportello del concessionario, la società che per conto del Comune si occupa della riscossione delle tasse comunali. Lo ha comunicato l'Ufficio Tributi con un avviso pubblicato domenica 25 ottobre sul sito del Comune.",
-      "fonti": [
-       "Comune di Paolisi"
-      ]
-     },
-     {
-      "testo": "L'avviso non dice il motivo della chiusura né indica un giorno di recupero: per pratiche e pagamenti conviene rivolgersi all'Ufficio Tributi del Comune.",
-      "fonti": [
-       "Comune di Paolisi"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Perché lo sportello resta chiuso e quando riapre."
-    ],
-    "fonti": [
-     {
-      "nome": "Comune di Paolisi",
-      "titolo": "sportello concessionario",
-      "url": "https://comune.paolisi.bn.it/novita/sportello-concessionario-2/",
-      "data": "25 ott",
-      "ufficiale": true
-     }
-    ]
-   },
-   "foto": "sportello"
-  },
-  {
-   "id": "linea-18-bn-air-campania-sanzione-regione-pendolari",
-   "titolo": "Bus 18-BN Pietraroja-Cerreto-Benevento, la Regione multa AIR Campania per 14.800 euro dopo la fermata saltata a Santa Colomba",
-   "titolo_google": "Linea 18-BN, la Regione multa AIR Campania per 14.800 euro",
-   "sintesi": "La Regione Campania ha contestato ad AIR Campania irregolarità sulla linea di bus 18-BN Pietraroja-Cerreto Sannita-Benevento, con sanzioni e penali per 14.800 euro. Lo raccontano i pendolari, che hanno ottenuto dal Difensore civico regionale 30 giorni per vedere i documenti della linea e annunciano un esposto.",
-   "categoria": "altro",
-   "zona": "telesina",
-   "luogo": "Cerreto Sannita e Benevento",
-   "immagine": "autobus",
-   "pubblicato": "2026-10-25T21:36:00+01:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "BeneventoNews24",
-     "url": "https://www.beneventonews24.it/2026/10/26/linea-18-bn-cusano-benevento-i-pendolari-dopo-la-sanzione-ultimatum-di-30-giorni-sugli-atti/"
-    },
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/25/linea-18-bn-cusano-benevento-i-pendolari-dopo-la-sanzione-arriva-lultimatum-di-30-giorni-sugli-atti/"
-    },
-    {
-     "nome": "Fremondoweb",
-     "url": "https://www.fremondoweb.com/notizie-dalla-valle-telesina/air-campania-linea-cusano-benevento-arriva-ultimatum-dei-30-giorni-per-consegnare-gli-atti/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "La Regione Campania ha multato AIR Campania, la società dei bus extraurbani, per la linea 18-BN che collega Pietraroja, Cerreto Sannita e Benevento. Le sanzioni e le penali previste dal contratto arrivano a 14.800 euro. Lo raccontano i pendolari della linea, che da mesi contestano all'azienda come è stato gestito il servizio.",
-      "fonti": [
-       "NTR24",
-       "Fremondoweb",
-       "BeneventoNews24"
-      ],
-      "giorno": "2026-10-25"
-     },
-     {
-      "testo": "Tutto parte dall'estate: dall'8 al 21 giugno 2026 la corsa delle 6.10 non è più arrivata fino al Terminal Santa Colomba di Benevento e la fermata è stata soppressa. Secondo i pendolari gli orari pubblicati da AIR davano quella fermata valida tutto l'anno, senza eccezioni per i mesi estivi, e il cambio ha penalizzato lavoratori e viaggiatori.",
-      "fonti": [
-       "NTR24",
-       "Fremondoweb",
-       "BeneventoNews24"
-      ],
-      "giorno": "2026-10-25"
-     },
-     {
-      "testo": "Con una nota del 18 settembre la Direzione Mobilità della Regione ha contestato all'azienda le irregolarità di quelle due settimane: 9.800 euro per aver cambiato il programma delle corse senza autorizzazione e 5.000 euro per le informazioni mancanti o sbagliate date ai passeggeri, un problema che secondo la Regione si era ripetuto anche negli anni prima.",
-      "fonti": [
-       "NTR24",
-       "Fremondoweb",
-       "BeneventoNews24"
-      ],
-      "giorno": "2026-10-25"
-     },
-     {
-      "testo": "C'è poi la questione dei documenti. I pendolari avevano chiesto di vedere gli atti e gli orari storici della linea e dicono di aver ricevuto risposte generiche. Il 20 ottobre il Difensore civico della Regione Campania, l'ufficio che tutela i cittadini nei rapporti con gli enti pubblici, ha dato ad AIR 30 giorni per mostrare i documenti sulla linea 18-BN e sulla fermata di Santa Colomba, oppure per spiegare per iscritto, una per una, quali ricerche ha fatto se non li trova.",
-      "fonti": [
-       "NTR24",
-       "Fremondoweb",
-       "BeneventoNews24"
-      ],
-      "giorno": "2026-10-25"
-     },
-     {
-      "testo": "I pendolari annunciano anche un esposto alla Procura della Repubblica di Benevento e alla Procura regionale della Corte dei Conti. «Non permetteremo che una vicenda così grave finisca nel dimenticatoio o che le sanzioni economiche vengano scaricate sui cittadini», dice Adam Biondi, uno dei pendolari, nel comunicato ripreso da Fremondoweb. Se dopo i 30 giorni i documenti non arriveranno, i pendolari dicono che faranno ricorso al TAR della Campania, il tribunale amministrativo, per ottenerli.",
-      "fonti": [
-       "NTR24",
-       "Fremondoweb",
-       "BeneventoNews24"
-      ],
-      "giorno": "2026-10-25"
-     }
-    ],
-    "cronologia": [
-     {
-      "data": "8-21 giugno",
-      "quando": "2026-06-08",
-      "fatto": "La corsa delle 6.10 della linea 18-BN non arriva più al Terminal Santa Colomba di Benevento.",
-      "fonti": [
-       "NTR24",
-       "Fremondoweb"
-      ]
-     },
-     {
-      "data": "18 settembre",
-      "fatto": "La Regione contesta le irregolarità ad AIR Campania: sanzioni e penali per 14.800 euro.",
-      "fonti": [
-       "NTR24",
-       "Fremondoweb"
-      ]
-     },
-     {
-      "data": "20 ottobre",
-      "fatto": "Il Difensore civico regionale dà ad AIR 30 giorni per mostrare i documenti della linea.",
-      "fonti": [
-       "NTR24",
-       "Fremondoweb"
-      ]
-     }
-    ],
-    "concordano": [
-     {
-      "testo": "Le sanzioni e penali da 14.800 euro decise dalla Regione il 18 settembre per il periodo 8-21 giugno, i 30 giorni dati ad AIR dal Difensore civico il 20 ottobre e l'esposto annunciato a Procura e Corte dei Conti.",
-      "fonti": [
-       "NTR24",
-       "Fremondoweb"
-      ]
-     }
-    ],
-    "divergono": [
-     {
-      "testo": "Nel titolo NTR24 e Fremondoweb chiamano la linea «Cusano-Benevento»; nel testo tutte e due la indicano come linea 18-BN Pietraroja-Cerreto Sannita-Benevento.",
-      "fonti": [
-       "NTR24",
-       "Fremondoweb"
-      ]
-     }
-    ],
-    "non_si_sa": [
-     "Cosa risponde AIR Campania alle contestazioni della Regione e dei pendolari.",
-     "Se la corsa delle 6.10 oggi arriva di nuovo a Santa Colomba."
-    ],
-    "fonti": [
-     {
-      "nome": "NTR24",
-      "titolo": "Linea 18-BN Cusano-Benevento, i pendolari: ‘Dopo la sanzione arriva l’ultimatum di 30 giorni sugli atti’",
-      "url": "https://www.ntr24.tv/2026/10/25/linea-18-bn-cusano-benevento-i-pendolari-dopo-la-sanzione-arriva-lultimatum-di-30-giorni-sugli-atti/",
-      "data": "25 ott, 19:12"
-     },
-     {
-      "nome": "Fremondoweb",
-      "titolo": "Air Campania, linea Cusano-Benevento: arriva ultimatum dei 30 giorni per consegnare gli atti",
-      "url": "https://www.fremondoweb.com/notizie-dalla-valle-telesina/air-campania-linea-cusano-benevento-arriva-ultimatum-dei-30-giorni-per-consegnare-gli-atti/",
-      "data": "25 ott, 21:36"
-     },
-     {
-      "nome": "BeneventoNews24",
-      "titolo": "Linea 18-BN Cusano-Benevento, i pendolari: “Dopo sanzione, ultimatum 30 giorni su atti”",
-      "url": "https://www.beneventonews24.it/2026/10/26/linea-18-bn-cusano-benevento-i-pendolari-dopo-la-sanzione-ultimatum-di-30-giorni-sugli-atti/",
-      "data": "26 ott, 00:28"
-     }
-    ]
-   },
-   "foto": "autobus-12"
-  },
-  {
-   "id": "fragneto-monforte-takkarata-tournee-brasile-festival-cariri",
-   "titolo": "Fragneto Monforte, il gruppo folk La Takkarata in tournée in Brasile dal 29 ottobre al 15 novembre",
-   "titolo_google": "Fragneto Monforte, La Takkarata in tournée in Brasile",
-   "sintesi": "Il gruppo folk La Takkarata di Fragneto Monforte parte per il Brasile: dal 29 ottobre al 15 novembre sarà all'VIII Festival Internazionale do Cariri, a Taperoá, nello stato della Paraíba. È la sua 26ª tournée all'estero, nell'anno dei 58 anni di attività.",
-   "categoria": "altro",
-   "zona": "provincia",
-   "immagine": "mandolino",
-   "luogo": "Fragneto Monforte",
-   "stato": "ufficiale",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Pro Loco Fragnetana",
-     "url": "https://www.unplibenevento.it/",
-     "ufficiale": true
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Il gruppo folk La Takkarata di Fragneto Monforte, che è anche Centro Studi Arti e Tradizioni Popolari, va in Brasile dal 29 ottobre al 15 novembre. Una parte del gruppo partecipa all'VIII Festival Internazionale do Cariri, nel nord del Paese, con base nella città di Taperoá, nello stato della Paraíba. Lo comunica la Pro Loco Fragnetana.",
-      "fonti": [
-       "Pro Loco Fragnetana"
-      ]
-     },
-     {
-      "testo": "L'invito è arrivato dall'Organização Internacional de Folclore e Artes Populares, coordinata da Alice Monteiro Lima, attraverso le sezioni brasiliana e italiana della IOV, una rete internazionale che si occupa di tutela delle arti tradizionali e del folklore. Il tema del festival è lo «Spettacolo Cultura della Pace»: danza, musica e scambi tra le tradizioni dei popoli.",
-      "fonti": [
-       "Pro Loco Fragnetana"
-      ]
-     },
-     {
-      "testo": "Il festival è organizzato con il Comune di Taperoá, che si occupa di logistica, sicurezza e spazi, con l'Universidade Leiga do Trabalho, un istituto di formazione locale che prepara le guide turistiche bilingui per i gruppi stranieri, e con i Comuni di Santo André, Boa Vista, Areia de Baraúnas, Patos e Alcantil, che accolgono le «Caravane Culturali».",
-      "fonti": [
-       "Pro Loco Fragnetana"
-      ]
-     },
-     {
-      "testo": "Per La Takkarata, che quest'anno compie 58 anni di attività, è la 26ª tournée all'estero, dopo qualche anno di pausa dai viaggi internazionali. La prima fu nel 1990 in Spagna, a Muro de Alcoy e Alicante. Poi il gruppo è stato in molti Paesi europei, quattro volte negli Stati Uniti (1995, 1996, 2012 e 2016), due in Australia (1999 e 2001), in Malaysia (2001), in Russia (2002), due volte in Messico (2009 e 2015), in Honduras (2019) e in Kenya (2023).",
-      "fonti": [
-       "Pro Loco Fragnetana"
-      ]
-     },
-     {
-      "testo": "Il gruppo ringrazia l'amministrazione comunale di Fragneto Monforte e il sindaco Luigi Facchino per il sostegno. Il comunicato è firmato da Nino Capobianco, coordinatore e promotore del progetto e presidente della Pro Loco Fragnetana.",
-      "fonti": [
-       "Pro Loco Fragnetana"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [],
-    "fonti": [
-     {
-      "nome": "Pro Loco Fragnetana",
-      "titolo": "Il gruppo La Takkarata vola in Brasile dal 29 di ottobre al 15 novembre",
-      "url": "https://www.unplibenevento.it/",
-      "data": "25 ott, 19:10",
-      "ufficiale": true
-     }
-    ]
-   },
-   "comunicati": [
-    "63c64733d14b"
-   ],
-   "subito": true,
-   "pubblicato": "2026-10-25T19:16:46+01:00",
-   "foto": "mandolino-5"
-  },
-  {
-   "id": "monte-taburno-escursioniste-cadute-dirupo-elicottero",
-   "titolo": "Monte Taburno, due escursioniste cadono in un dirupo: salvate dai vigili del fuoco con l'elicottero e portate al San Pio",
-   "titolo_google": "Monte Taburno, due escursioniste cadute in un dirupo",
-   "sintesi": "Domenica 25 ottobre due escursioniste sono cadute in un dirupo sul monte Taburno. Avevano dato l'allarme loro stesse: i vigili del fuoco le hanno recuperate, una con l'elicottero di Pontecagnano, e le hanno portate in elicottero all'ospedale San Pio di Benevento. Le loro condizioni non sarebbero gravi.",
-   "categoria": "cronaca",
-   "zona": "provincia",
-   "luogo": "Monte Taburno",
-   "pubblicato": "2026-10-25T17:13+01:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/25/monte-taburno-due-ragazze-cadono-in-un-dirupo-durante-unescursione-soccorse-dai-vigili-del-fuoco/"
-    },
-    {
-     "nome": "Ottopagine",
-     "url": "https://www.ottopagine.it/bn/cronaca/442118/escursioniste-finiscono-in-un-dirupo-sul-tabruno-salvate-dai-vigili-del-fuoco.shtml"
-    },
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/taburno-due-ragazze-dirupo-soccorse/"
-    },
-    {
-     "nome": "BeneventoNews24",
-     "url": "https://www.beneventonews24.it/2026/10/25/paura-sul-monte-taburno-due-ragazze-cadono-in-un-dirupo-salvate-dai-vigili-del-fuoco/"
-    },
-    {
-     "nome": "Il Mattino",
-     "url": "https://www.ilmattino.it/benevento/monte_taburno_benevento_escursioniste_salvate_dirupo_elicottero-9847994.html"
-    },
-    {
-     "nome": "Il Sannio Quotidiano",
-     "url": "https://www.ilsannioquotidiano.it/2026/10/26/paura-sul-taburno-ragazze-finiscono-in-un-dirupo-salvate-grazie-allintervento-dellelicottero-e-dei-vigili-del-fuoco/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Domenica 25 ottobre due escursioniste sono cadute in un dirupo mentre camminavano sul monte Taburno, la montagna che sta tra la Valle Caudina e la Valle Telesina. Le hanno salvate i vigili del fuoco del Comando di Benevento e tutte e due sono state portate all'ospedale San Pio di Benevento.",
-      "fonti": [
-       "Anteprima24",
-       "Ottopagine",
-       "NTR24",
-       "Il Mattino",
-       "Il Sannio Quotidiano"
-      ],
-      "giorno": "2026-10-25"
-     },
-     {
-      "testo": "Secondo Il Mattino sono una donna di 34 anni di Castel Volturno, in provincia di Caserta, e una di 45 anni di Massa di Somma, in provincia di Napoli. L'allarme lo hanno dato loro stesse, indicando ai soccorritori dove si trovavano.",
-      "fonti": [
-       "Il Mattino"
-      ],
-      "giorno": "2026-10-25"
-     },
-     {
-      "testo": "Per il recupero sono intervenute le squadre di terra e l'elicottero dei vigili del fuoco del nucleo di Pontecagnano, in provincia di Salerno. Una delle due escursioniste è stata recuperata direttamente dall'equipaggio dell'elicottero; l'altra l'hanno raggiunta i vigili del fuoco a piedi. Anche lei è stata poi portata in ospedale con l'elicottero.",
-      "fonti": [
-       "Anteprima24",
-       "Ottopagine",
-       "BeneventoNews24",
-       "Il Mattino"
-      ],
-      "giorno": "2026-10-25"
-     },
-     {
-      "testo": "Secondo le prime informazioni riferite da Ottopagine e dal Mattino, le ferite delle due donne non sarebbero gravi; BeneventoNews24 precisa che l'ospedale non ha ancora diffuso notizie ufficiali sulle loro condizioni. Come sono cadute non è ancora accertato: per Il Mattino una delle due potrebbe essere scivolata e l'altra, nel tentativo di aiutarla, sarebbe finita anche lei nel dirupo.",
-      "fonti": [
-       "Ottopagine",
-       "Anteprima24",
-       "BeneventoNews24",
-       "Il Mattino"
-      ],
-      "giorno": "2026-10-25"
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "Le due ragazze cadute in un dirupo durante un'escursione sul Taburno e il recupero dei vigili del fuoco, una con l'elicottero e una da terra, poi il trasporto al San Pio.",
-      "fonti": [
-       "Anteprima24",
-       "Ottopagine",
-       "NTR24",
-       "BeneventoNews24",
-       "Il Mattino"
-      ]
-     },
-     {
-      "testo": "Le condizioni delle due donne, che non sarebbero gravi secondo le prime informazioni.",
-      "fonti": [
-       "Ottopagine",
-       "Il Mattino"
-      ]
-     }
-    ],
-    "divergono": [
-     {
-      "testo": "Il titolo del Mattino parla di «due 20enni», ma nel testo dello stesso articolo le età sono 34 e 45 anni; gli altri giornali scrivono «due ragazze» senza età. Qui si riportano le età scritte nel testo dell'articolo.",
-      "fonti": [
-       "Il Mattino"
-      ]
-     }
-    ],
-    "non_si_sa": [
-     "In quale punto del Taburno sono cadute e a che ora.",
-     "Che ferite hanno: l'ospedale non ha diffuso un bollettino."
-    ],
-    "fonti": [
-     {
-      "nome": "Anteprima24",
-      "titolo": "Due ragazze cadono in un dirupo sul Taburno: interviene l’elicottero, entrambe in ospedale",
-      "url": "https://www.anteprima24.it/benevento/taburno-due-ragazze-dirupo-soccorse/",
-      "data": "25 ott, 15:50"
-     },
-     {
-      "nome": "Ottopagine",
-      "titolo": "Escursioniste finiscono in un dirupo sul Taburno, salvate dai vigili del fuoco",
-      "url": "https://www.ottopagine.it/bn/cronaca/442118/escursioniste-finiscono-in-un-dirupo-sul-tabruno-salvate-dai-vigili-del-fuoco.shtml",
-      "data": "25 ott, 15:55"
-     },
-     {
-      "nome": "NTR24",
-      "titolo": "Monte Taburno, due ragazze cadono in un dirupo durante un’escursione: soccorse dai vigili del fuoco",
-      "url": "https://www.ntr24.tv/2026/10/25/monte-taburno-due-ragazze-cadono-in-un-dirupo-durante-unescursione-soccorse-dai-vigili-del-fuoco/",
-      "data": "25 ott, 15:59"
-     },
-     {
-      "nome": "BeneventoNews24",
-      "titolo": "Monte Taburno, due ragazze cadono in un dirupo: salvate dai Vigili del Fuoco",
-      "url": "https://www.beneventonews24.it/2026/10/25/paura-sul-monte-taburno-due-ragazze-cadono-in-un-dirupo-salvate-dai-vigili-del-fuoco/",
-      "data": "25 ott, 16:38"
-     },
-     {
-      "nome": "Il Mattino",
-      "titolo": "Cadono in un dirupo durante un'escursione sul Monte Taburno, salvate due 20enni dai vigili del fuoco",
-      "url": "https://www.ilmattino.it/benevento/monte_taburno_benevento_escursioniste_salvate_dirupo_elicottero-9847994.html",
-      "data": "25 ott, 17:13"
-     },
-     {
-      "nome": "Il Sannio Quotidiano",
-      "titolo": "Paura sul Taburno: ragazze finiscono in un dirupo, salvate grazie all’intervento dell’elicottero e dei Vigili del Fuoco",
-      "url": "https://www.ilsannioquotidiano.it/2026/10/26/paura-sul-taburno-ragazze-finiscono-in-un-dirupo-salvate-grazie-allintervento-dellelicottero-e-dei-vigili-del-fuoco/",
-      "data": "26 ott, 07:40"
-     }
-    ],
-    "aggiornamento": {
-     "testo": "Il Mattino dice chi sono le due escursioniste: una 34enne di Castel Volturno e una 45enne di Massa di Somma. L'allarme lo hanno dato loro stesse; le condizioni non sarebbero gravi.",
-     "fonti": [
-      "Il Mattino"
-     ],
-     "quando": "2026-10-25T18:09+01:00"
-    }
-   }
-  },
-  {
-   "id": "benevento-18enne-assolto-truffa-poste-piacenza",
-   "titolo": "Benevento, 18enne assolto dal Tribunale di Piacenza: era accusato di una truffa con un finto numero delle Poste",
-   "titolo_google": "Benevento, 18enne assolto per una truffa a Piacenza",
-   "sintesi": "Il Tribunale di Piacenza ha assolto un 18enne di Benevento accusato di aver truffato una ragazza di Piacenza con una telefonata da un numero che sembrava delle Poste. Per il giudice non c'è la prova che fosse lui l'autore.",
-   "categoria": "cronaca",
-   "zona": "benevento",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-25T15:37+01:00",
-   "stato": "una_fonte",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/truffa-telefonica-assolto-18enne-benevento/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Un 18enne di Benevento è stato assolto dal Tribunale di Piacenza, dove era sotto accusa per una truffa a una ragazza di quella città. Il giudice Ivan Borasi, con il rito abbreviato (un processo più rapido, deciso sugli atti già raccolti), ha stabilito che non c'è la prova certa che fosse lui l'autore. Lo racconta Anteprima24.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "Secondo l'accusa, la ragazza era stata chiamata da un numero clonato, cioè copiato, che sembrava quello delle Poste. Convinta che il suo conto corrente fosse in pericolo, aveva fatto il bonifico che le era stato chiesto per mettere al sicuro i soldi.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "Il punto del processo era capire chi avesse fatto la truffa: gli elementi raccolti non hanno permesso di attribuirla con certezza al giovane. Il ragazzo, difeso dall'avvocato Massimo Viscusi, aveva a sua volta presentato una querela per sostituzione di persona: dice che qualcuno ha usato la sua identità.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Quando è avvenuta la truffa e quanti soldi ha perso la ragazza.",
-     "Se la Procura farà appello."
-    ],
-    "fonti": [
-     {
-      "nome": "Anteprima24",
-      "titolo": "Truffa a una ragazza di Piacenza, assolto un giovane di Benevento",
-      "url": "https://www.anteprima24.it/benevento/truffa-telefonica-assolto-18enne-benevento/",
-      "data": "25 ott, 15:37"
-     }
-    ]
-   }
-  },
-  {
-   "id": "san-salvatore-telesino-potito-starace-siracusa-tennis-lab",
-   "titolo": "San Salvatore Telesino, l'ex tennista azzurro Potito Starace ospite dell'ASD Siracusa Tennis Lab",
-   "titolo_google": "San Salvatore Telesino, Potito Starace incontra i giovani",
-   "sintesi": "Domenica mattina, 25 ottobre, l'ex tennista Potito Starace, già numero 27 del mondo e giocatore della Nazionale in Coppa Davis, è stato ospite dell'ASD Siracusa Tennis Lab all'Open Spazio Sportivo di San Salvatore Telesino, soprattutto per i giovani atleti.",
-   "categoria": "sport",
-   "sport": "tennis",
-   "zona": "telesina",
-   "luogo": "San Salvatore Telesino",
-   "pubblicato": "2026-10-25T13:49+01:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "NTR24 Sport",
-     "url": "https://sport.ntr24.tv/2026/10/25/il-grande-tennis-nel-sannio-potito-starace-ospite-dellasd-siracusa-tennis-lab/"
-    },
-    {
-     "nome": "TV7 Benevento",
-     "url": "https://www.tvsette.net/il-grande-tennis-nel-sannio-potito-starace-ospite-dellasd-siracusa-tennis-lab/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Domenica mattina, 25 ottobre, Potito Starace, uno dei tennisti italiani più conosciuti degli ultimi vent'anni, è stato ospite dell'ASD Siracusa Tennis Lab a San Salvatore Telesino, in Valle Telesina. L'incontro si è svolto all'Open Spazio Sportivo, un centro per lo sport del paese.",
-      "fonti": [
-       "NTR24 Sport",
-       "TV7 Benevento"
-      ]
-     },
-     {
-      "testo": "Starace è stato numero 27 della classifica mondiale ATP e ha giocato a lungo per l'Italia in Coppa Davis. Oggi lavora come tecnico e allenatore: le due testate ricordano il Foro Italico di Roma e il lavoro accanto a Flavio Cobolli.",
-      "fonti": [
-       "NTR24 Sport",
-       "TV7 Benevento"
-      ]
-     },
-     {
-      "testo": "L'idea è venuta a Cosimo Romano e Lorenzo Leone e l'ha organizzata il maestro nazionale Salvatore Siracusa con la sua associazione, con l'aiuto di Luca Mattei dell'Open Spazio Sportivo. L'incontro era pensato soprattutto per i ragazzi che giocano a tennis, che hanno potuto conoscere da vicino un campione.",
-      "fonti": [
-       "NTR24 Sport",
-       "TV7 Benevento"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "Starace ospite domenica mattina 25 ottobre dell'ASD Siracusa Tennis Lab all'Open Spazio Sportivo di San Salvatore Telesino, su idea di Cosimo Romano e Lorenzo Leone.",
-      "fonti": [
-       "NTR24 Sport",
-       "TV7 Benevento"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [
-     "Quanti ragazzi hanno partecipato e se ci saranno altri incontri di questo tipo."
-    ],
-    "fonti": [
-     {
-      "nome": "NTR24 Sport",
-      "titolo": "Il grande tennis nel Sannio: Potito Starace ospite dell’ASD Siracusa Tennis Lab",
-      "url": "https://sport.ntr24.tv/2026/10/25/il-grande-tennis-nel-sannio-potito-starace-ospite-dellasd-siracusa-tennis-lab/",
-      "data": "25 ott, 12:25"
-     },
-     {
-      "nome": "TV7 Benevento",
-      "titolo": "Il grande tennis nel Sannio: Potito Starace ospite dell’ASD Siracusa Tennis Lab",
-      "url": "https://www.tvsette.net/il-grande-tennis-nel-sannio-potito-starace-ospite-dellasd-siracusa-tennis-lab/",
-      "data": "25 ott, 13:49"
-     }
-    ]
-   },
-   "immagine": "tennis",
-   "foto": "tennis-6"
-  },
-  {
-   "id": "castelvenere-furgone-rubato-rame-inseguimento-carabinieri",
-   "titolo": "Telesina, non si ferma all'alt dei Carabinieri a Solopaca: furgone rubato abbandonato a Castelvenere, dentro c'era rame",
-   "titolo_google": "Castelvenere, fugge all'alt: nel furgone rubato c'era rame",
-   "sintesi": "Nella notte un furgone non si è fermato a un posto di blocco dei Carabinieri a Solopaca ed è fuggito sulla Telesina fino a Castelvenere, dove l'autista l'ha lasciato ed è scappato a piedi. Il furgone era rubato e dentro c'era molto rame, forse preso da un cantiere dell'Alta Velocità.",
-   "categoria": "cronaca",
-   "zona": "telesina",
-   "luogo": "Solopaca e Castelvenere",
-   "pubblicato": "2026-10-25T11:39+01:00",
-   "stato": "una_fonte",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/carabinieri-alt-telesina-inseguimento-castelvenere/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Nella notte tra sabato 24 e domenica 25 ottobre un furgone non si è fermato all'alt dei Carabinieri sulla statale Telesina, la strada che collega Benevento alla provincia di Caserta. I militari della Compagnia di Cerreto Sannita avevano fatto un posto di blocco a Solopaca, durante un servizio di controllo del territorio. Lo racconta Anteprima24.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "Il furgone andava verso il confine con la provincia di Caserta. Invece di fermarsi, l'autista ha accelerato ed è andato avanti fino a Castelvenere. Lì ha lasciato il mezzo a bordo strada ed è scappato a piedi, al buio, nelle campagne.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "I Carabinieri hanno controllato il cassone: il furgone era rubato e dentro c'era una quantità di rame non ancora precisata ma, secondo il giornale, consistente. Probabilmente veniva da un cantiere dell'Alta Velocità ferroviaria.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "I Carabinieri della Compagnia stanno ricostruendo cosa è successo e cercano di risalire a chi guidava.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Chi guidava il furgone e se era da solo.",
-     "A che ora è successo e quanto rame c'era.",
-     "Da quale cantiere viene il rame e dove era stato rubato il furgone."
-    ],
-    "fonti": [
-     {
-      "nome": "Anteprima24",
-      "titolo": "Non si ferma all’alt dei Carabinieri: inseguimento fino a Castelvenere",
-      "url": "https://www.anteprima24.it/benevento/carabinieri-alt-telesina-inseguimento-castelvenere/",
-      "data": "25 ott, 11:39"
-     }
-    ]
-   }
-  },
-  {
-   "id": "cusano-mutri-no-sannio-acque-ricorso-tar",
-   "titolo": "Cusano Mutri, il Consiglio comunale vota all'unanimità contro il passaggio dell'acqua a Sannio Acque: ricorso al TAR",
-   "titolo_google": "Cusano Mutri, no a Sannio Acque: il Comune ricorre al TAR",
-   "sintesi": "Venerdì 23 ottobre il Consiglio comunale di Cusano Mutri ha votato all'unanimità contro il passaggio del servizio idrico a Sannio Acque e ha deciso il ricorso al TAR Campania per tenere la gestione delle sue sorgenti. Sannio Acque ha annunciato per giovedì 29 ottobre il sopralluogo per prendere in consegna gli impianti.",
-   "categoria": "politica",
-   "zona": "telesina",
-   "immagine": "consiglio",
-   "luogo": "Cusano Mutri",
-   "pubblicato": "2026-10-25T12:06+01:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/25/cusano-mutri-no-unanime-al-passaggio-a-sannio-acque-il-comune-ricorre-al-tar/"
-    },
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/cusano-mutri-mozione-ingresso-sannio-acque/"
-    },
-    {
-     "nome": "Fremondoweb",
-     "url": "https://www.fremondoweb.com/notizie-dalla-valle-telesina/cusano-fronte-unito-per-la-tutela-delle-sorgenti-voto-unanime-contro-lingresso-in-sannio-acque/"
-    },
-    {
-     "nome": "BeneventoNews24",
-     "url": "https://www.beneventonews24.it/2026/10/25/cusano-mutri-il-consiglio-approva-allunanimita-la-mozione-contro-lingresso-in-sannio-acque/"
-    },
-    {
-     "nome": "Il Sannio Quotidiano",
-     "url": "https://www.ilsannioquotidiano.it/2026/10/26/cusano-mutri-sannio-acque-no-del-consiglio-allunanimita/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Il Consiglio comunale di Cusano Mutri, nel Matese, ha detto no all'unanimità al passaggio del servizio idrico (acquedotto, fogne e depurazione) a Sannio Acque, la società a cui è stata affidata l'acqua di tutta la provincia. Nella seduta di venerdì 23 ottobre maggioranza e opposizione hanno votato insieme anche il ricorso al TAR Campania, il tribunale amministrativo, per difendere la gestione autonoma dell'acqua e delle sorgenti del paese.",
-      "fonti": [
-       "NTR24",
-       "Anteprima24",
-       "Fremondoweb",
-       "BeneventoNews24",
-       "Il Sannio Quotidiano"
-      ],
-      "giorno": "2026-10-23"
-     },
-     {
-      "testo": "La discussione è partita da una mozione presentata il 15 ottobre dal gruppo di opposizione «Nuova Cusano». La Giunta aveva già avviato le azioni in tribunale con una delibera del 20 ottobre. In aula, davanti a molti cittadini, il capogruppo di opposizione Marino Di Muzio ha detto: «Siamo qui per difendere un bene di tutti: l'acqua di Cusano Mutri, le nostre sorgenti». Ha chiesto anche chiarezza sulle spese legali del ricorso.",
-      "fonti": [
-       "NTR24",
-       "Anteprima24",
-       "Fremondoweb",
-       "BeneventoNews24",
-       "Il Sannio Quotidiano"
-      ],
-      "giorno": "2026-10-23"
-     },
-     {
-      "testo": "Il Comune chiede di poter tenere da solo il servizio, come la legge sull'ambiente permette in alcuni casi, ma il 6 ottobre l'Ente Idrico Campano (EIC), l'ente che governa l'acqua in Campania, ha risposto di no. Il ricorso, a Napoli, sarà contro l'EIC, la Regione Campania e Sannio Acque: il Comune chiede di annullare quella risposta, una delibera dell'EIC del 2022 e un decreto del presidente della Regione del 23 settembre 2026, e di sospenderli intanto. Il 21 ottobre l'EIC aveva firmato con Sannio Acque la convenzione che le affida per 27 anni il servizio nei 78 Comuni della provincia.",
-      "fonti": [
-       "NTR24",
-       "Anteprima24",
-       "Fremondoweb",
-       "NTR24 (21/10)"
-      ],
-      "giorno": "2026-10-23"
-     },
-     {
-      "testo": "Il tempo è poco: Sannio Acque ha comunicato al Comune che giovedì 29 ottobre farà il sopralluogo per prendere in consegna gli impianti.",
-      "fonti": [
-       "NTR24",
-       "Anteprima24",
-       "Fremondoweb",
-       "BeneventoNews24"
-      ],
-      "giorno": "2026-10-23"
-     }
-    ],
-    "cronologia": [
-     {
-      "data": "6 ottobre",
-      "fatto": "L'Ente Idrico Campano dice no alla richiesta del Comune di tenere da solo il servizio idrico.",
-      "fonti": [
-       "NTR24",
-       "Anteprima24",
-       "Fremondoweb"
-      ]
-     },
-     {
-      "data": "20 ottobre",
-      "fatto": "La Giunta di Cusano Mutri avvia le azioni in tribunale.",
-      "fonti": [
-       "NTR24",
-       "Anteprima24",
-       "Fremondoweb"
-      ]
-     },
-     {
-      "data": "21 ottobre",
-      "fatto": "L'EIC firma con Sannio Acque la convenzione per l'acqua dei 78 Comuni del Sannio.",
-      "fonti": [
-       "NTR24 (21/10)"
-      ]
-     },
-     {
-      "data": "23 ottobre",
-      "fatto": "Il Consiglio comunale vota all'unanimità il no a Sannio Acque e il ricorso al TAR.",
-      "fonti": [
-       "NTR24",
-       "Anteprima24",
-       "Fremondoweb"
-      ]
-     },
-     {
-      "data": "29 ottobre",
-      "fatto": "Annunciato il sopralluogo di Sannio Acque per prendere in consegna gli impianti.",
-      "fonti": [
-       "NTR24",
-       "Anteprima24",
-       "Fremondoweb"
-      ]
-     }
-    ],
-    "concordano": [
-     {
-      "testo": "Il voto unanime del 23 ottobre, il ricorso al TAR Campania e il sopralluogo di Sannio Acque annunciato per il 29 ottobre.",
-      "fonti": [
-       "NTR24",
-       "Anteprima24",
-       "Fremondoweb",
-       "BeneventoNews24"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [
-     "Quando il TAR esaminerà il ricorso e se deciderà sulla sospensione prima del 29 ottobre.",
-     "Quanto costeranno le spese legali.",
-     "Cosa risponde Sannio Acque."
-    ],
-    "fonti": [
-     {
-      "nome": "NTR24",
-      "titolo": "Cusano Mutri, no unanime al passaggio a Sannio Acque: il Comune ricorre al Tar",
-      "url": "https://www.ntr24.tv/2026/10/25/cusano-mutri-no-unanime-al-passaggio-a-sannio-acque-il-comune-ricorre-al-tar/",
-      "data": "25 ott, 10:17"
-     },
-     {
-      "nome": "Anteprima24",
-      "titolo": "A Cusano Mutri passa una mozione unitaria contro l’ingresso di Sannio Acque",
-      "url": "https://www.anteprima24.it/benevento/cusano-mutri-mozione-ingresso-sannio-acque/",
-      "data": "25 ott, 10:20"
-     },
-     {
-      "nome": "Fremondoweb",
-      "titolo": "Cusano, fronte unito per la tutela delle sorgenti: voto unanime contro l’ingresso in Sannio Acque",
-      "url": "https://www.fremondoweb.com/notizie-dalla-valle-telesina/cusano-fronte-unito-per-la-tutela-delle-sorgenti-voto-unanime-contro-lingresso-in-sannio-acque/",
-      "data": "25 ott, 10:31"
-     },
-     {
-      "nome": "NTR24 (21/10)",
-      "titolo": "Servizio idrico integrato, firmata la convenzione tra EIC e Sannio Acque",
-      "url": "https://www.ntr24.tv/2026/10/21/servizio-idrico-integrato-firmata-la-convenzione-tra-eic-e-sannio-acque/",
-      "data": "21 ott"
-     },
-     {
-      "nome": "BeneventoNews24",
-      "titolo": "Cusano Mutri, il Consiglio approva all’unanimità la mozione contro l’ingresso in Sannio Acque",
-      "url": "https://www.beneventonews24.it/2026/10/25/cusano-mutri-il-consiglio-approva-allunanimita-la-mozione-contro-lingresso-in-sannio-acque/",
-      "data": "25 ott, 12:06"
-     },
-     {
-      "nome": "Il Sannio Quotidiano",
-      "titolo": "Cusano Mutri – Sannio Acque, ‘no’ del Consiglio all’unanimità",
-      "url": "https://www.ilsannioquotidiano.it/2026/10/26/cusano-mutri-sannio-acque-no-del-consiglio-allunanimita/",
-      "data": "26 ott, 07:25"
-     }
-    ]
-   },
-   "foto": "consiglio-5"
-  },
-  {
    "id": "benevento-pierozzi-infortunio-arezzo-floro-flores",
    "titolo": "Benevento, Pierozzi fuori circa due mesi: distrazione al bicipite femorale",
    "titolo_google": "Pierozzi infortunato, Benevento senza di lui per due mesi",
@@ -10412,14 +9600,14 @@
   },
   {
    "id": "air-campania-sciopero-28-ottobre",
-   "titolo": "Mercoledì 28 ottobre sciopero di 8 ore in AIR Campania, confermato dai sindacati: possibili riduzioni dei bus extraurbani",
+   "titolo": "Mercoledì 28 ottobre sciopero di 8 ore in AIR Campania: pochi bus a Benevento città e sulle linee extraurbane dalle 8 alle 16",
    "titolo_google": "Sciopero bus AIR 28 ottobre: corse a rischio dalle 8 alle 16",
-   "sintesi": "Mercoledì 28 ottobre 2026 i lavoratori di AIR Campania, la società dei bus extraurbani, scioperano per 8 ore: i sindacati lo hanno confermato. Il servizio può ridursi dalle 8 alle 16, con corse garantite dalle 13 alle 15.",
+   "sintesi": "Mercoledì 28 ottobre 2026 i lavoratori di AIR Campania, che gestisce i bus extraurbani e quelli di Benevento città, scioperano per 8 ore. Le corse possono mancare dalle 8 alle 16, con bus garantiti dalle 13 alle 15.",
    "categoria": "strade",
    "zona": "provincia",
    "immagine": "autobus",
    "luogo": "Campania, provincia di Benevento",
-   "pubblicato": "2026-10-23T11:29:00+02:00",
+   "pubblicato": "2026-10-28T02:45+01:00",
    "in_vigore_fino": "2026-10-28",
    "stato": "ufficiale",
    "fonti": [
@@ -10435,10 +9623,22 @@
     {
      "nome": "Cronache del Sannio",
      "url": "https://www.cronachedelsannio.it/sannionews24/air-campania-sindacati-confermato-sciopero-domani/"
+    },
+    {
+     "nome": "Il Mattino",
+     "url": "https://www.ilmattino.it/benevento/sciopero_giornata_di_disagi_a_benevento_si_fermano_i_bus_in_citta_stop_dalle_8_alle_16_e_presidio_a_napoli-9852370.html"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Oggi, mercoledì 28 ottobre, lo sciopero di AIR Campania tocca anche i bus di Benevento città, che AIR gestisce da circa tre mesi, oltre alle linee extraurbane che collegano il capoluogo con il resto della regione. Dalle 8 alle 13 e dalle 15 alle 16 le corse possono essere poche: per la mattina si prevedono molti autisti in sciopero, perché hanno aderito tutti i principali sindacati. Dalle 13 alle 15 i bus girano per le fasce di garanzia e dopo le 16 il servizio torna normale. I più colpiti sono studenti, personale delle scuole e chi va al lavoro in bus.",
+      "fonti": [
+       "Il Mattino",
+       "AIR Campania"
+      ],
+      "giorno": "2026-10-28"
+     },
      {
       "testo": "Lo sciopero di mercoledì 28 ottobre è confermato. I sindacati FILT CGIL, FIT CISL, UILTRASPORTI, UGL FNA e FAISA CISAL hanno annunciato anche un presidio davanti alla sede della Regione Campania, all'isola C3 del Centro Direzionale di Napoli, dalle 10 alle 12. La Regione è la proprietaria di AIR.",
       "fonti": [
@@ -10515,6 +9715,13 @@
        "NTR24",
        "Cronache del Sannio"
       ]
+     },
+     {
+      "testo": "Bus fermi dalle 8 alle 16 con le corse garantite dalle 13 alle 15.",
+      "fonti": [
+       "AIR Campania",
+       "Il Mattino"
+      ]
      }
     ],
     "divergono": [
@@ -10550,18 +9757,24 @@
       "titolo": "Air Campania, sindacati: “Confermato lo sciopero per domani”",
       "url": "https://www.cronachedelsannio.it/sannionews24/air-campania-sindacati-confermato-sciopero-domani/",
       "data": "27 ott, 10:11"
+     },
+     {
+      "nome": "Il Mattino",
+      "titolo": "Sciopero, giornata di disagi a Benevento: «Si fermano i bus in città». Stop dalle 8 alle 16 e presidio a Napoli",
+      "url": "https://www.ilmattino.it/benevento/sciopero_giornata_di_disagi_a_benevento_si_fermano_i_bus_in_citta_stop_dalle_8_alle_16_e_presidio_a_napoli-9852370.html",
+      "data": "28 ott, 02:45"
      }
     ],
     "aggiornamento": {
-     "testo": "Martedì 27 ottobre i sindacati hanno confermato lo sciopero di 8 ore di mercoledì 28 e annunciato un presidio davanti alla Regione Campania, a Napoli, dalle 10 alle 12.",
+     "testo": "Mercoledì 28 ottobre lo sciopero ferma anche i bus di Benevento città: corse ridotte dalle 8 alle 13 e dalle 15 alle 16, regolari dalle 13 alle 15 e dopo le 16.",
      "fonti": [
-      "NTR24"
+      "Il Mattino"
      ],
-     "quando": "2026-10-27T10:13+01:00",
-     "titolo_prima": "Mercoledì 28 ottobre sciopero di 8 ore in AIR Campania: possibili riduzioni dei bus extraurbani"
+     "quando": "2026-10-28T06:10+01:00",
+     "titolo_prima": "Mercoledì 28 ottobre sciopero di 8 ore in AIR Campania, confermato dai sindacati: possibili riduzioni dei bus extraurbani"
     }
    },
-   "rilevante": false,
+   "rilevante": true,
    "foto": "autobus-5",
    "importanza": 5
   },
@@ -10895,190 +10108,6 @@
    },
    "foto": "protesta-5",
    "importanza": 3
-  },
-  {
-   "id": "accademia-volley-benevento-serie-c-koala-bears-24-ottobre",
-   "titolo": "Pallavolo, Serie C femminile: la Pasta Rummo Accademia vince 3-0 a San Giuseppe Vesuviano",
-   "titolo_google": "Volley, Koala Bears-Accademia Benevento 0-3: vince l'Accademia",
-   "sintesi": "Sabato 24 ottobre la Pasta Rummo Accademia di Benevento ha vinto 3-0 (25-23, 25-13, 25-17) sul campo delle Koala Bears a San Giuseppe Vesuviano, nella seconda giornata della Serie C femminile. Due vittorie su due, sei punti e nessun set perso; sabato 31 ottobre gioca in casa con l'Arzano.",
-   "categoria": "sport",
-   "sport": "pallavolo",
-   "zona": "benevento",
-   "luogo": "San Giuseppe Vesuviano (Napoli)",
-   "pubblicato": "2026-10-25T00:16+02:00",
-   "stato": "ufficiale",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Accademia Volley Benevento",
-     "url": "https://www.accademiavolley.com/la-pasta-rummo-accademia-concede-il-bis/",
-     "ufficiale": true
-    },
-    {
-     "nome": "NTR24 Sport",
-     "url": "https://sport.ntr24.tv/2026/10/25/volley-la-pasta-rummo-accademia-benevento-concede-il-bis-superato-in-tre-set-il-san-giuseppe-vesuviano/"
-    },
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/accademia-volley-vittoria-blitz-san-giuseppe-vesuviano/"
-    },
-    {
-     "nome": "InfoSannio",
-     "url": "https://www.infosannionews.it/sport/2026/la-pasta-rummo-concede-il-bis-superato-in-tre-set-il-s-giuseppe-vesuviano.html"
-    },
-    {
-     "nome": "BeneventoNews24",
-     "url": "https://www.beneventonews24.it/2026/10/25/volley-la-pasta-rummo-accademia-concede-il-bis-vittoria-a-san-giuseppe-vesuviano/"
-    },
-    {
-     "nome": "TV7 Benevento",
-     "url": "https://www.tvsette.net/la-pasta-rummo-concede-il-bis-superato-in-tre-set-il-s-giuseppe-vesuviano/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Sabato 24 ottobre la Pasta Rummo Accademia, la squadra femminile dell'Accademia Volley Benevento, ha vinto 3-0 sul campo delle Koala Bears a San Giuseppe Vesuviano, nella seconda giornata della Serie C femminile. I set sono finiti 25-23, 25-13 e 25-17. È la seconda vittoria di fila: la squadra di Vittorio Ruscello sale a sei punti e non ha ancora perso un set.",
-      "fonti": [
-       "Accademia Volley Benevento (24/10)",
-       "NTR24 Sport",
-       "Anteprima24",
-       "InfoSannio",
-       "BeneventoNews24",
-       "TV7 Benevento"
-      ],
-      "giorno": "2026-10-24"
-     },
-     {
-      "testo": "Il primo set è stato il più combattuto: le padrone di casa sono rimaste vicine fino alla fine e le beneventane l'hanno chiuso solo sul 25-23. Negli altri due la differenza si è vista di più.",
-      "fonti": [
-       "Accademia Volley Benevento (24/10)",
-       "NTR24 Sport",
-       "Anteprima24"
-      ],
-      "giorno": "2026-10-24"
-     },
-     {
-      "testo": "Sabato 31 ottobre la Pasta Rummo Accademia torna alla Palestra Rampone di Benevento e ospita l'Arzano, che sabato ha perso in quattro set con l'Academy Volley Fiamma e alla prima giornata aveva battuto 3-0 proprio le Koala Bears.",
-      "fonti": [
-       "Accademia Volley Benevento (24/10)",
-       "NTR24 Sport",
-       "Anteprima24"
-      ],
-      "giorno": "2026-10-24"
-     },
-     {
-      "testo": "Prima della partita: sabato 24 ottobre alle 18:30 la Pasta Rummo Accademia, squadra femminile dell'Accademia Volley Benevento, giocava la sua prima partita fuori casa della stagione, a San Giuseppe Vesuviano, in provincia di Napoli, contro le Koala Bears, per la seconda giornata del campionato di Serie C femminile.",
-      "fonti": [
-       "Accademia Volley Benevento (23/10)"
-      ],
-      "giorno": "2026-10-23"
-     },
-     {
-      "testo": "Le beneventane arrivano dalla vittoria per 3-0 contro la Volley Project Pontecagnano, ottenuta sabato scorso alla Palestra Rampone. L'allenatore è Vittorio Ruscello. Le Koala Bears, secondo la società, vengono dalla sconfitta per 3-0 sul campo dell'Arzano e cercano il riscatto.",
-      "fonti": [
-       "Accademia Volley Benevento (23/10)"
-      ],
-      "giorno": "2026-10-23"
-     }
-    ],
-    "cronologia": [
-     {
-      "data": "17 ottobre",
-      "fatto": "All'esordio la Pasta Rummo Accademia batte 3-0 la Volley Project Pontecagnano alla Palestra Rampone.",
-      "fonti": [
-       "Accademia Volley Benevento (23/10)"
-      ]
-     },
-     {
-      "data": "24 ottobre",
-      "fatto": "Vittoria 3-0 a San Giuseppe Vesuviano contro le Koala Bears.",
-      "fonti": [
-       "Accademia Volley Benevento (24/10)"
-      ]
-     },
-     {
-      "data": "31 ottobre",
-      "fatto": "Partita in casa, alla Palestra Rampone, contro l'Arzano.",
-      "fonti": [
-       "Accademia Volley Benevento (24/10)"
-      ]
-     }
-    ],
-    "concordano": [
-     {
-      "testo": "Il 3-0 con i parziali 25-23, 25-13, 25-17, i sei punti in classifica e la partita in casa con l'Arzano sabato 31 ottobre.",
-      "fonti": [
-       "Accademia Volley Benevento (24/10)",
-       "NTR24 Sport",
-       "Anteprima24",
-       "InfoSannio",
-       "BeneventoNews24",
-       "TV7 Benevento"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [
-     "A che ora si gioca la partita con l'Arzano del 31 ottobre."
-    ],
-    "fonti": [
-     {
-      "nome": "Accademia Volley Benevento (24/10)",
-      "titolo": "La Pasta Rummo Accademia concede il bis",
-      "url": "https://www.accademiavolley.com/la-pasta-rummo-accademia-concede-il-bis/",
-      "data": "25 ott, 00:16",
-      "ufficiale": true
-     },
-     {
-      "nome": "Accademia Volley Benevento (23/10)",
-      "titolo": "Pasta Rummo Accademia alla prima trasferta stagionale",
-      "url": "https://www.accademiavolley.com/pasta-rummo-accademia-alla-prima-trasferta-stagionale/",
-      "data": "23 ott, 06:31",
-      "ufficiale": true
-     },
-     {
-      "nome": "NTR24 Sport",
-      "titolo": "Volley, la Pasta Rummo Accademia Benevento concede il bis: superato in tre set il San Giuseppe Vesuviano",
-      "url": "https://sport.ntr24.tv/2026/10/25/volley-la-pasta-rummo-accademia-benevento-concede-il-bis-superato-in-tre-set-il-san-giuseppe-vesuviano/",
-      "data": "25 ott, 10:24"
-     },
-     {
-      "nome": "Anteprima24",
-      "titolo": "Accademia Volley, blitz a San Giuseppe Vesuviano",
-      "url": "https://www.anteprima24.it/benevento/accademia-volley-vittoria-blitz-san-giuseppe-vesuviano/",
-      "data": "25 ott, 10:33"
-     },
-     {
-      "nome": "InfoSannio",
-      "titolo": "La Pasta Rummo concede il bis: superato in tre set il S. Giuseppe Vesuviano",
-      "url": "https://www.infosannionews.it/sport/2026/la-pasta-rummo-concede-il-bis-superato-in-tre-set-il-s-giuseppe-vesuviano.html",
-      "data": "25 ott, 11:23"
-     },
-     {
-      "nome": "BeneventoNews24",
-      "titolo": "Volley, la Pasta Rummo Accademia concede il bis: vittoria a San Giuseppe Vesuviano",
-      "url": "https://www.beneventonews24.it/2026/10/25/volley-la-pasta-rummo-accademia-concede-il-bis-vittoria-a-san-giuseppe-vesuviano/",
-      "data": "25 ott, 12:10"
-     },
-     {
-      "nome": "TV7 Benevento",
-      "titolo": "La Pasta Rummo concede il bis: superato in tre set il S. Giuseppe Vesuviano",
-      "url": "https://www.tvsette.net/la-pasta-rummo-concede-il-bis-superato-in-tre-set-il-s-giuseppe-vesuviano/",
-      "data": "25 ott, 13:53"
-     }
-    ],
-    "aggiornamento": {
-     "testo": "Sabato 24 ottobre la Pasta Rummo Accademia ha vinto 3-0 a San Giuseppe Vesuviano contro le Koala Bears.",
-     "fonti": [
-      "Accademia Volley Benevento (24/10)"
-     ],
-     "quando": "2026-10-25T06:11+01:00",
-     "titolo_prima": "Pallavolo, Serie C femminile: la Pasta Rummo Accademia gioca a San Giuseppe Vesuviano sabato 24 ottobre"
-    }
-   },
-   "immagine": "pallavolo",
-   "foto": "pallavolo-4"
   },
   {
    "id": "benevento-opposizione-mozione-sfiducia-mastella",
