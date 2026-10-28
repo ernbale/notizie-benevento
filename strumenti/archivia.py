@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Controlla notizie.json e sposta in archivio le notizie uscite dalla prima pagina.
 
-Nessuna notizia viene mai cancellata:
+Nessuna notizia viene mai cancellata (e una voce già pubblicata che in un giro sparisce torna com'era: rimetti_sparite):
 - in prima pagina restano le notizie di oggi e dei 2 giorni prima, gli avvisi ufficiali ancora in vigore
   (`in_vigore_fino`) e le notizie collegate a un approfondimento attivo;
 - le altre passano in archivio/AAAA-MM.json (mese di `pubblicato`), con l'articolo completo;
@@ -1136,6 +1136,34 @@ def eventi_prima(base):
         return None
 
 
+# Nessuna voce pubblicata sparisce (28 ott 2026: il giro delle 08:06 tolse la notizia di Arpaia, già uscita, credendola
+# ancora in quarantena, e niente lo fermò; lui: «non deve mai più ricapitare»). Una notizia, un approfondimento o un
+# evento che c'era all'ultimo salvataggio (git HEAD) e adesso non è né qui, né in archivio, né unito in un altro
+# (archivio/rimandi.json, «notizie» ed «eventi») né tolto apposta («tolte», solo su richiesta del proprietario) torna
+# com'era. Lo stesso controllo, contro il sito pubblicato, lo fa strumenti/sparite.py a ogni pubblicazione.
+def rimetti_sparite(d, ev, prima_n, prima_e, in_archivio, ev_in_archivio, rim, avv):
+    """Rimette nelle liste le voci sparite; restituisce [(tipo, id)]."""
+    tolte = set(rim.get("tolte") or {})
+    liste = [("notizia", d.get("notizie"), (prima_n or {}).get("notizie"), set(rim.get("notizie") or {}) | set(in_archivio)),
+             ("approfondimento", d.get("approfondimenti"), (prima_n or {}).get("approfondimenti"), set(in_archivio))]
+    if ev is not None:
+        liste.append(("evento", ev.get("eventi"), (prima_e or {}).get("eventi"), set(rim.get("eventi") or {}) | set(ev_in_archivio)))
+    rimesse = []
+    for tipo, ora, prima, altrove in liste:
+        if ora is None or not prima:
+            continue
+        ci_sono = {x.get("id") for x in ora} | altrove | tolte
+        for k, x in enumerate(prima):
+            if x.get("id") in ci_sono:
+                continue
+            ora.insert(min(k, len(ora)), x)   # al posto che aveva
+            rimesse.append((tipo, x["id"]))
+            avv.append(f"{x['id']}: la voce ({tipo}) era già uscita e in questo giro mancava: rimessa com'era. Le voci "
+                       "pubblicate non si tolgono mai: le vecchie le archivia archivia.py, due sullo stesso fatto si "
+                       "uniscono con la riga in archivio/rimandi.json (AGENTE.md, «Come lavorare una notizia»)")
+    return rimesse
+
+
 def metti_in_quarantena(err, d, ev, base):
     """Prova la quarantena: True se ha scritto tutto (il secondo passaggio ha finito con OK), False se gli errori non
     si possono isolare o se anche dopo restano errori (allora rimette i file com'erano)."""
@@ -1340,13 +1368,18 @@ def main():
                        f"per esempio {i}-{oggi.isoformat()}")
 
     tutti_gli_id = set(correnti) | set(in_archivio)
-    rimandi = (leggi(os.path.join(cart_arch, "rimandi.json"), {}) or {}).get("notizie") or {}
+    rim = leggi(os.path.join(cart_arch, "rimandi.json"), {}) or {}
+    rimandi = rim.get("notizie") or {}
     for i in correnti:
         if i in rimandi:
             err.append(f"id {i!r} è di una notizia già unita in {rimandi[i]!r} (archivio/rimandi.json): scegline un altro")
     for vecchio, nuovo in rimandi.items():
         if nuovo not in tutti_gli_id:
             err.append(f"archivio/rimandi.json: {vecchio!r} porta a {nuovo!r}, che non esiste")
+    ev_in_archivio = {x.get("id") for m in (ev_arch.values() if ev is not None else []) for x in m.get("eventi", [])}
+    for vecchio, nuovo in (rim.get("eventi") or {}).items():
+        if ev is not None and nuovo not in ev_in_archivio | {x.get("id") for x in ev.get("eventi") or []}:
+            err.append(f"archivio/rimandi.json: l'evento {vecchio!r} porta a {nuovo!r}, che non esiste")
     for x in d.get("approfondimenti", []):
         for c in x.get("collegate", []):
             if c not in tutti_gli_id:
@@ -1365,6 +1398,10 @@ def main():
             print("ERRORE:", x)
         print(f"{len(err)} ERRORI: niente è stato scritto")
         sys.exit(1)
+    # le voci già pubblicate e sparite in questo giro tornano com'erano (vedi rimetti_sparite): dopo i controlli, perché
+    # sono uscite così e una regola nuova non deve fermare il giro per colpa loro
+    for t_, i in rimetti_sparite(d, ev, pubblicate_prima(base), eventi_prima(base), in_archivio, ev_in_archivio, rim, avv):
+        print(f"RIMESSA: {t_} {i} (era già uscita e mancava)")
     # le locandine arrivate per posta si copiano nel sito solo quando è tutto a posto
     locandine = [] if a.prova else risolvi_locandine(d.get("notizie", []) + ((ev or {}).get("eventi") or []))
 

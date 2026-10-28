@@ -52,6 +52,13 @@ jobs:
         with:
           python-version: "3.12"
 
+      # Nessuna notizia già uscita sparisce (lui, 28 ott 2026, dopo la notizia di Arpaia tolta da un giro: «non deve mai
+      # più ricapitare»): quello che il sito mostra adesso e qui manca si rimette com'era, anche nel repository
+      # (strumenti/sparite.py). Prima di tutto il resto, così le pagine, le foto e le statistiche lo vedono.
+      - name: Nessuna notizia sparita
+        timeout-minutes: 3
+        run: python3 strumenti/sparite.py --manda || echo "::warning::Controllo delle notizie sparite non riuscito"
+
       - name: Meteo da 8 modelli
         env:
           # per leggere il bollettino della Protezione civile su GitHub senza finire nel limite delle richieste anonime

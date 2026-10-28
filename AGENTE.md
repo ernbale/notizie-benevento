@@ -998,3 +998,8 @@ fuori e pubblica il resto: una voce nuova esce da notizie.json o eventi.json, un
   la dimentica.
 - Gli errori del giro intero (registro delle fonti, diario, decisioni, id doppi) bloccano come sempre. Nel diario la
   decisione su una voce in quarantena resta quella che avevi scritto.
+- **Una voce già pubblicata non si toglie mai, nemmeno se è (o era) in quarantena**: si corregge, o resta com'è. Il 28
+  ott 2026 un giro tolse la notizia di Arpaia, già uscita, credendola in quarantena; ora `archivia.py` rimette da solo
+  ogni notizia, approfondimento o evento che c'era all'ultimo salvataggio e manca (stampa `RIMESSA: …`), e a ogni
+  pubblicazione `strumenti/sparite.py` fa lo stesso contro il sito. Due voci sullo stesso fatto si uniscono con la riga in
+  `archivio/rimandi.json` (`notizie`, o `eventi` per gli eventi); `tolte` è solo per una richiesta del proprietario.

@@ -2263,6 +2263,12 @@ def main():
         with open(os.path.join(cartella, "evento.ics"), "w", encoding="utf-8", newline="") as f:
             f.write(ics_evento(ev, url))
         mappa.append((url, None))
+    # eventi uniti in un altro (archivio/rimandi.json, «eventi»): come le notizie, il vecchio indirizzo porta a quello rimasto
+    ev_per_id = {x["id"]: x for x in eventi}
+    for vecchio, nuovo in ((leggi(p_rim).get("eventi") or {}) if os.path.exists(p_rim) else {}).items():
+        if nuovo in ev_per_id and vecchio not in ev_per_id:
+            rimando(os.path.join(sito, "evento", vecchio, "index.html"), SITO + percorso("evento", nuovo),
+                    ev_per_id[nuovo]["titolo"], "Questo evento è stato unito a")
 
     # sezioni e zone: la prima pagina filtrata
     for perc, filtro, title, h1, descr in SEZIONI:
