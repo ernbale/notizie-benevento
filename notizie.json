@@ -4687,7 +4687,8 @@
    "foto": "divieto-sosta-5",
    "subito": true,
    "comunicati": [
-    "869cf97cc953"
+    "869cf97cc953",
+    "u869f571db15"
    ]
   },
   {
@@ -12025,10 +12026,7 @@
     ],
     "concordano": [],
     "divergono": [],
-    "non_si_sa": [
-     "Gli orari delle navette e il prezzo del biglietto: le fonti non li indicano ancora.",
-     "Le strade esatte del percorso della processione del 1 novembre."
-    ],
+    "non_si_sa": [],
     "fonti": [
      {
       "nome": "Albo pretorio Benevento",
@@ -12059,7 +12057,12 @@
      "quando": "2026-10-26T14:24+01:00"
     }
    },
-   "foto": "cimitero-2"
+   "foto": "cimitero-2",
+   "subito": true,
+   "comunicati": [
+    "f79fa6490823",
+    "ud9c03a44937"
+   ]
   },
   {
    "id": "benevento-mastella-appello-no-acquisti-panico-spostamenti",
