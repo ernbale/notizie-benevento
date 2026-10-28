@@ -1642,6 +1642,7 @@
 
   function disegnaHome(box) {
     mostraVoceAllerte();
+    if (!(FISSA && filtroCat === (FISSA.cat || "") && filtroZona === (FISSA.zona || ""))) document.title = titoloFiltri();
     if (filtroCat === "avvisi") { paginaAvvisi(box); return; }
     if (FISSA && FISSA.h1 && filtroCat === (FISSA.cat || "") && filtroZona === (FISSA.zona || "")) box.appendChild(el("h1", "titolo-sezione", [FISSA.h1]));
     if (filtroCat === "strade") box.appendChild(linkTutte("/strade-chiuse/", "Le strade chiuse oggi e nei prossimi giorni ›"));
@@ -2787,11 +2788,10 @@
     b.addEventListener("click", function () {
       filtroCat = b.getAttribute("data-cat");
       filtroSport = "";
-      document.querySelectorAll(".menu button").forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
-      disegna();
+      vaiFiltri();
     });
   });
-  document.getElementById("zona").addEventListener("change", function (e) { filtroZona = e.target.value; disegna(); });
+  document.getElementById("zona").addEventListener("change", function (e) { filtroZona = e.target.value; vaiFiltri(); });
   document.getElementById("cerca-home").addEventListener("submit", function (e) {
     e.preventDefault();
     var campoHome = document.getElementById("cerca-home-q");
@@ -2802,13 +2802,56 @@
   });
   // Cambio di pagina dentro il sito (frammento o indirizzo): si ridisegna una volta sola, anche se arrivano
   // sia «popstate» sia «hashchange».
-  var mostrato = location.pathname + location.hash;
+  var mostrato = location.pathname + location.search + location.hash;
   function cambiaPagina() {
-    var ora = location.pathname + location.hash;
+    var ora = location.pathname + location.search + location.hash;
     if (ora === mostrato) return;
     mostrato = ora;
+    var f = filtriDaIndirizzo();
+    if (f) { filtroCat = f.cat; filtroZona = f.zona; filtroSport = ""; segnaMenu(); }
     if ("speechSynthesis" in window) speechSynthesis.cancel();
     disegna();
+  }
+  // L'indirizzo segue il menu (lui, 28 ott 2026: «se sto ad esempio in cronaca e aggiorno la pagina mi rimanda sulla
+  // home»): una voce o una zona scelta porta all'indirizzo della sua pagina (quelle di pagine.py), senza ricaricare,
+  // così il ricarico, il tasto Indietro e un link condiviso restano nella sezione. Categoria e zona insieme:
+  // /sezione/<categoria>/?zona=<zona> (la pagina dice a Google che la sua è /sezione/<categoria>/).
+  var PAGINA_CAT = { cronaca: "/sezione/cronaca/", politica: "/sezione/politica/", sport: "/sezione/sport/", eventi: "/sezione/eventi/",
+    meteo: "/sezione/allerte/", altro: "/sezione/altro/", avvisi: "/sezione/avvisi/", strade: "/sezione/strade/" };
+  var PAGINA_ZONA = { benevento: "/zona/benevento/", telesina: "/zona/valle-telesina/", caudina: "/zona/valle-caudina/",
+    fortore: "/zona/fortore/", provincia: "/zona/altri-comuni/" };
+  function indirizzoFiltri() {
+    if (PAGINA_CAT[filtroCat]) return PAGINA_CAT[filtroCat] + (filtroZona ? "?zona=" + filtroZona : "");
+    return PAGINA_ZONA[filtroZona] || "/";
+  }
+  // le scelte del menu lette dall'indirizzo; null se non è la prima pagina, una sezione o una zona
+  function filtriDaIndirizzo() {
+    var p = location.pathname, f = p === "/" ? { cat: "", zona: "" } : null;
+    Object.keys(PAGINA_CAT).forEach(function (k) { if (PAGINA_CAT[k] === p) f = { cat: k, zona: "" }; });
+    Object.keys(PAGINA_ZONA).forEach(function (k) { if (PAGINA_ZONA[k] === p) f = { cat: "", zona: k }; });
+    var z = location.search.match(/[?&]zona=([a-z]+)/);
+    if (f && z && PAGINA_ZONA[z[1]]) f.zona = z[1];
+    return f;
+  }
+  function segnaMenu() {
+    var voce = filtroCat === "strade" ? "avvisi" : filtroCat;
+    document.querySelectorAll(".menu button").forEach(function (x) { x.setAttribute("aria-pressed", x.getAttribute("data-cat") === voce ? "true" : "false"); });
+    document.getElementById("zona").value = filtroZona;
+  }
+  // dopo una scelta nel menu: nella prima pagina e nelle sezioni cambia l'indirizzo e ridisegna; nelle altre pagine
+  // (Comuni, strade chiuse, carburanti…) apre la pagina della scelta
+  function vaiFiltri() {
+    var dove = indirizzoFiltri();
+    if (!filtriDaIndirizzo() || (FISSA && FISSA.statica)) { location.href = dove; return; }
+    if (dove !== location.pathname + location.search) history.pushState(null, "", dove);
+    mostrato = location.pathname + location.search + location.hash;
+    segnaMenu();
+    disegna();
+  }
+  function titoloFiltri() {
+    var z = filtroZona ? document.querySelector('#zona option[value="' + filtroZona + '"]') : null;
+    var nomi = [filtroCat ? NOMI_CAT[filtroCat] : "", z ? z.textContent : ""].filter(Boolean);
+    return nomi.length ? nomi.join(" · ") + " – Notizie Benevento" : "Notizie Benevento oggi: ultime notizie da Benevento e provincia";
   }
   window.addEventListener("hashchange", cambiaPagina);
   window.addEventListener("popstate", cambiaPagina);
@@ -2905,10 +2948,8 @@
   // sezioni e zone: la prima pagina parte già filtrata
   if (FISSA && (FISSA.cat || FISSA.zona)) {
     filtroCat = FISSA.cat || "";
-    filtroZona = FISSA.zona || "";
-    var voce = filtroCat === "strade" ? "avvisi" : filtroCat;
-    document.querySelectorAll(".menu button").forEach(function (x) { x.setAttribute("aria-pressed", x.getAttribute("data-cat") === voce ? "true" : "false"); });
-    document.getElementById("zona").value = filtroZona;
+    filtroZona = ((filtriDaIndirizzo() || {}).zona) || FISSA.zona || "";   // anche ?zona= (sezione e zona insieme)
+    segnaMenu();
   }
 
   fetch("meteo.json?t=" + Date.now(), { cache: "no-store" })
