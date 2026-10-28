@@ -1,7 +1,359 @@
 {
- "aggiornato": "2026-10-28T18:12+01:00",
+ "aggiornato": "2026-10-28T19:13+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-raid-debito-droga-2022-mandante-domiciliari",
+   "titolo": "Raid armato a Benevento per un debito di droga nel 2022: il presunto mandante passa dal carcere ai domiciliari",
+   "titolo_google": "Raid per debito di droga a Benevento: mandante ai domiciliari",
+   "sintesi": "Il gip del Tribunale di Napoli ha mandato ai domiciliari un uomo dell'Irpinia condannato in primo grado a 3 anni e 6 mesi come mandante di una spedizione punitiva a Benevento nel dicembre 2022. Secondo l'accusa serviva a recuperare un debito di droga di circa 32.500 euro.",
+   "categoria": "cronaca",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-28T18:49:00+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 4,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/presunto-debito-droga-raid-armato-marino-passa-carcere-domiciliari/"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/un-noto-narcotrafficante-irpino-ritenuto-figura-apicale-del-traffico-di-droga-campania-e"
+    },
+    {
+     "nome": "Il Caudino",
+     "url": "https://ilcaudino.it/lascia-il-carcere-e-va-ai-domiciliari-un-noto-narcotrafficante-irpino-uid-5/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Un uomo dell'Irpinia, accusato di essere il mandante di una spedizione punitiva avvenuta a Benevento nel dicembre 2022, ha lasciato il carcere di Avellino, dove era detenuto dallo scorso novembre, ed è passato agli arresti domiciliari. Lo ha deciso il gip del Tribunale di Napoli, che ha accolto la richiesta della difesa e gli permette anche di uscire di casa per più giorni alla settimana.",
+      "fonti": [
+       "Anteprima24",
+       "Gazzetta di Benevento",
+       "Il Caudino"
+      ]
+     },
+     {
+      "testo": "In primo grado l'uomo è stato condannato a 3 anni e 6 mesi per tentata estorsione aggravata, lesioni personali aggravate e porto e detenzione illegale di armi. Nello stesso processo è stato assolto da tutte le accuse di detenzione di grandi quantità di droga per spacciarla. La condanna non è definitiva.",
+      "fonti": [
+       "Anteprima24",
+       "Gazzetta di Benevento",
+       "Il Caudino"
+      ]
+     },
+     {
+      "testo": "Secondo la ricostruzione della Direzione distrettuale antimafia, con le indagini coordinate dai pubblici ministeri Henry John Woodcock e Gabriella Di Lauro, il raid doveva servire a recuperare un debito di circa 32.500 euro per forniture di cocaina e hashish. Due persone sarebbero entrate nella casa di un uomo di Benevento: una lo avrebbe colpito con il calcio di una pistola e poi con calci e pugni, procurandogli un trauma cranico; l'altra lo avrebbe minacciato con una mitraglietta Uzi.",
+      "fonti": [
+       "Anteprima24",
+       "Gazzetta di Benevento"
+      ]
+     },
+     {
+      "testo": "Anteprima24 ricorda che l'uomo è coinvolto anche in un'altra inchiesta, della Procura antimafia di Salerno, su un presunto traffico di droga: a maggio era stato raggiunto da un'altra misura cautelare. La decisione del giudice di Napoli cambia solo la misura nel processo per il raid.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "dicembre 2022",
+      "quando": "2022-12-01",
+      "fatto": "La spedizione punitiva nella casa di un uomo di Benevento.",
+      "fonti": [
+       "Anteprima24",
+       "Gazzetta di Benevento"
+      ]
+     },
+     {
+      "data": "28 ottobre",
+      "fatto": "Il gip di Napoli concede i domiciliari al presunto mandante, in carcere ad Avellino dallo scorso novembre.",
+      "fonti": [
+       "Anteprima24",
+       "Gazzetta di Benevento",
+       "Il Caudino"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "La condanna in primo grado a 3 anni e 6 mesi e il passaggio ai domiciliari con il permesso di uscire più giorni alla settimana.",
+      "fonti": [
+       "Anteprima24",
+       "Gazzetta di Benevento",
+       "Il Caudino"
+      ]
+     },
+     {
+      "testo": "Il debito di droga di circa 32.500 euro all'origine del raid.",
+      "fonti": [
+       "Anteprima24",
+       "Gazzetta di Benevento"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Il presunto debito di droga e il raid armato: Marino passa dal carcere ai domiciliari",
+      "url": "https://www.anteprima24.it/benevento/presunto-debito-droga-raid-armato-marino-passa-carcere-domiciliari/",
+      "data": "28 ott, 18:49"
+     },
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "Un noto narcotrafficante irpino, ritenuto figura apicale del traffico di droga in Campania e in particolare modo tra le province di Benevento, Avellino e Salerno, ha lasciato il carcere di Avellino",
+      "url": "https://www.gazzettabenevento.it/it/un-noto-narcotrafficante-irpino-ritenuto-figura-apicale-del-traffico-di-droga-campania-e",
+      "data": "28 ott, 18:34"
+     },
+     {
+      "nome": "Il Caudino",
+      "titolo": "Lascia il carcere e va ai domiciliari un noto narcotrafficante irpino",
+      "url": "https://ilcaudino.it/lascia-il-carcere-e-va-ai-domiciliari-un-noto-narcotrafficante-irpino-uid-5/",
+      "data": "28 ott, 18:41"
+     }
+    ]
+   }
+  },
+  {
+   "id": "san-nicola-manfredi-strada-centofontane-chiusa-29-ottobre",
+   "titolo": "San Nicola Manfredi, strada comunale Centofontane chiusa giovedì 29 ottobre dalle 7 alle 18 per l'asfalto",
+   "titolo_google": "San Nicola Manfredi, via Centofontane chiusa il 29 ottobre",
+   "sintesi": "Giovedì 29 ottobre, dalle 7 alle 18, a San Nicola Manfredi è chiusa ad auto e pedoni la strada comunale Centofontane, dall'incrocio con la provinciale 57 fino al civico 15. Si rifà l'asfalto; il traffico va sulle strade alternative.",
+   "categoria": "strade",
+   "zona": "provincia",
+   "immagine": "lavori-stradali",
+   "luogo": "San Nicola Manfredi, strada comunale Centofontane",
+   "pubblicato": "2026-10-28",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "in_vigore_dal": "2026-10-29",
+   "in_vigore_fino": "2026-10-29",
+   "traffico": "chiusa",
+   "fonti": [
+    {
+     "nome": "Comune di San Nicola Manfredi",
+     "url": "https://www.halleyweb.com/c062067/mc/mc_p_dettaglio.php?id_pubbl=11796",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Giovedì 29 ottobre, dalle 7 alle 18, a San Nicola Manfredi è chiusa alle auto e ai pedoni la strada comunale Centofontane, nel tratto che va dall'incrocio con la strada provinciale 57 fino al civico 15. La chiusura può durare anche oltre, se serve a finire di rimettere in sicurezza la strada. Lo ha deciso il sindaco Arturo Leone Vernillo con un'ordinanza del 28 ottobre.",
+      "fonti": [
+       "Comune di San Nicola Manfredi"
+      ]
+     },
+     {
+      "testo": "Il motivo sono i lavori di manutenzione straordinaria della strada: l'impresa rifà l'asfalto del tratto. Il traffico viene deviato sulle strade alternative, segnalate dai cartelli che mette l'impresa. Possono passare solo i mezzi di polizia, vigili del fuoco, ambulanze, scuolabus e i veicoli autorizzati.",
+      "fonti": [
+       "Comune di San Nicola Manfredi"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di San Nicola Manfredi",
+      "titolo": "Disciplina temporanea della circolazione per lavori, della strada comunale Centrofontane.",
+      "url": "https://www.halleyweb.com/c062067/mc/mc_p_dettaglio.php?id_pubbl=11796",
+      "data": "28 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "foto": "lavori-stradali-12"
+  },
+  {
+   "id": "castelpoto-contributo-trasporto-scuola-alunni-disabilita-2026",
+   "titolo": "Castelpoto, contributi alle famiglie che portano a scuola da sole i figli con disabilità",
+   "titolo_google": "Castelpoto, contributo trasporto scolastico alunni disabili",
+   "sintesi": "Il Comune di Castelpoto dà un contributo alle famiglie che accompagnano da sole a scuola i figli con disabilità, per l'anno scolastico 2026/2027. La domanda va all'Ufficio Politiche Sociali, con ISEE e certificazione della legge 104.",
+   "categoria": "avvisi",
+   "zona": "provincia",
+   "luogo": "Castelpoto",
+   "pubblicato": "2026-10-28",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "contributo": {
+    "chi": [
+     "cittadino"
+    ],
+    "temi": [
+     "scuola",
+     "figli",
+     "sociale"
+    ],
+    "aiuto": [
+     "bonus"
+    ],
+    "quando": "Domande all'Ufficio Politiche Sociali del Comune: la scadenza non è scritta nel modulo"
+   },
+   "fonti": [
+    {
+     "nome": "Comune di Castelpoto",
+     "url": "https://comune.castelpoto.bn.it/albo-pretorio/?dettaglio_id=306385",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Comune di Castelpoto ha aperto un avviso pubblico per dare un contributo alle famiglie che portano a scuola da sole, senza il servizio di trasporto, i figli con disabilità. Vale per l'anno scolastico 2026/2027 e riguarda gli alunni della scuola dell'infanzia, della primaria e della secondaria di primo grado, cioè le medie.",
+      "fonti": [
+       "Comune di Castelpoto"
+      ]
+     },
+     {
+      "testo": "La domanda la fa il genitore o il tutore, con il modulo indirizzato all'Ufficio Politiche Sociali del Comune. Vanno allegati il documento d'identità e la tessera sanitaria di chi chiede, il codice IBAN (non vanno bene i libretti postali), la certificazione della legge 104 dell'alunno e l'ISEE con scadenza 31 dicembre 2026. Per informazioni il Comune risponde allo 0824 59008.",
+      "fonti": [
+       "Comune di Castelpoto"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Entro quando si presenta la domanda e a quanto ammonta il contributo."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Castelpoto",
+      "titolo": "AVVISO PUBBLICO PER L’EROGAZIONE DI CONTRIBUTI A SOSTEGNO DELLE FAMIGLIE CHE PROVVEDONO IN AUTONOMIA AL TRASPORTO A SCUOLA DEI FIGLI CON DISABILITA’ PER L’ANNO SCOLASTICO 2026/2027 -",
+      "url": "https://comune.castelpoto.bn.it/albo-pretorio/?dettaglio_id=306385",
+      "data": "28 ott",
+      "ufficiale": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "faicchio-confindustria-benevento-caserta-manifesto-valli-telesina-volturno",
+   "titolo": "Faicchio, Confindustria Benevento e Caserta firmano un manifesto per le valli Telesina e del Volturno: prima la Telesina a quattro corsie",
+   "titolo_google": "Confindustria Benevento e Caserta, manifesto a Faicchio",
+   "sintesi": "Al Castello ducale di Faicchio gli industriali di Benevento e Caserta hanno presentato un manifesto comune per lo sviluppo della Valle Telesina e della Valle del Volturno. Chiedono il raddoppio della statale 372, un piano per le strade secondarie durante i cantieri e fermate dell'Alta Velocità ad Afragola.",
+   "categoria": "altro",
+   "zona": "telesina",
+   "immagine": "riunione",
+   "luogo": "Faicchio, Castello ducale",
+   "pubblicato": "2026-10-28T18:53:00+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/28/un-manifesto-programmatico-per-lo-sviluppo-delle-valli-telesina-e-del-volturno-patto-tra-industriali-sanniti-e-casertani/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/28/insieme-100-sviluppo-armonico-e-infrastrutture-tra-le-valli-telesina-e-del-volturno/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/insieme-100-sviluppo-armonico-e-infrastrutture-tra-le-valli-telesina-e-del-volturno-presentato-a-faicchio-il-manifesto-programmatico-di-confindustria-benevento-e-confindustria-caserta/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/industriali-benevento-caserta-sviluppo-turistico/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Mercoledì 28 ottobre, al Castello ducale di Faicchio, Confindustria Benevento e Confindustria Caserta hanno presentato un manifesto comune per lo sviluppo economico, dei trasporti e del turismo della Valle Telesina e della Valle del Volturno. È stata la terza tappa di «Insieme 100», il giro nei territori con cui l'associazione degli industriali sanniti festeggia i suoi cento anni.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24",
+       "TV7 Benevento"
+      ]
+     },
+     {
+      "testo": "La prima richiesta è il raddoppio della statale 372 Telesina, con i lotti della Benevento-Caianello. Per evitare la paralisi durante i cantieri, gli industriali chiedono al Ministero delle Infrastrutture e all'ANAS un tavolo di coordinamento permanente e un «Fondo Cantieri» per mettere in sicurezza le strade secondarie che faranno da alternativa. Sulla linea Napoli-Bari chiedono fermate fisse dei treni dell'Alta Velocità ad Afragola.",
+      "fonti": [
+       "TV7 Benevento",
+       "BeneventoNews24",
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Il manifesto parla anche di turismo gestito con le DMO regionali (le organizzazioni che promuovono una destinazione), di un programma di tre anni per far nascere startup, dei centri storici come luoghi dove lavorare a distanza grazie alla banda ultralarga, e di un patto tra sindaci, Province e industriali per una pianificazione comune che superi i confini tra le due province.",
+      "fonti": [
+       "TV7 Benevento",
+       "NTR24",
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "«Non vogliamo che una parte del territorio trovi nell'altra un alibi per non fare qualcosa», ha detto il presidente di Confindustria Benevento, Andrea Esposito. Luigi Della Gatta, presidente di Confindustria Caserta, ha parlato di un unico polo industriale tra le due province. Per Flavian Basile, presidente dell'ANCE Benevento (i costruttori), oltre alle grandi opere servono soldi per le strade comunali che portano ai borghi. Il presidente della Provincia e sindaco di Faicchio, Nino Lombardi, ha detto che le nuove infrastrutture devono far fermare i visitatori, non solo farli passare.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Sono intervenuti anche Oreste Vigorito, presidente del comitato promotore della DMO SITUS, e l'assessore regionale al Turismo Enzo Maraio. Il ministro per lo Sport Andrea Abodi, atteso, non c'era: secondo Anteprima24 era convocato il Consiglio dei ministri.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Il manifesto comune presentato al Castello ducale di Faicchio e il raddoppio della statale 372 come priorità.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24",
+       "TV7 Benevento"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Un manifesto programmatico per lo sviluppo delle valli Telesina e del Volturno: patto tra industriali sanniti e casertani",
+      "url": "https://www.ntr24.tv/2026/10/28/un-manifesto-programmatico-per-lo-sviluppo-delle-valli-telesina-e-del-volturno-patto-tra-industriali-sanniti-e-casertani/",
+      "data": "28 ott, 18:36"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Insieme 100: Sviluppo armonico e infrastrutture tra le valli Telesina e del Volturno",
+      "url": "https://www.beneventonews24.it/2026/10/28/insieme-100-sviluppo-armonico-e-infrastrutture-tra-le-valli-telesina-e-del-volturno/",
+      "data": "28 ott, 18:19"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Insieme 100 Sviluppo armonico e infrastrutture tra le valli Telesina e del Volturno: presentato a Faicchio il Manifesto programmatico di Confindustria Benevento e Confindustria Caserta",
+      "url": "https://www.tvsette.net/insieme-100-sviluppo-armonico-e-infrastrutture-tra-le-valli-telesina-e-del-volturno-presentato-a-faicchio-il-manifesto-programmatico-di-confindustria-benevento-e-confindustria-caserta/",
+      "data": "28 ott, 16:38"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Gli industriali di Benevento e Caserta unite per lo sviluppo turistico comune",
+      "url": "https://www.anteprima24.it/benevento/industriali-benevento-caserta-sviluppo-turistico/",
+      "data": "28 ott, 18:53"
+     }
+    ]
+   },
+   "foto": "riunione-3"
+  },
   {
    "id": "benevento-liceo-alberti-virgilio-patentino-droni-gratis",
    "titolo": "Benevento, al liceo Alberti-Virgilio il patentino per pilotare i droni: corso ed esame pagati dalla scuola",
@@ -16455,23 +16807,35 @@
   },
   {
    "id": "mozione-caro-carburanti",
-   "titolo": "Caro carburanti, mozione in Consiglio regionale: chiesto un fondo straordinario per autotrasporto e agricoltura",
-   "titolo_google": "Caro carburanti, mozione in Regione per un fondo straordinario",
-   "sintesi": "Il gruppo Casa Riformista–Italia Viva–Noi di Centro, primo firmatario il consigliere sannita Pellegrino Mastella, chiede alla Regione un fondo straordinario, un tavolo permanente e un intervento del Governo sulle accise.",
+   "titolo": "Caro carburanti, il Consiglio regionale approva la mozione della maggioranza: un fondo straordinario per autotrasporto e agricoltura",
+   "titolo_google": "Caro carburanti, la Regione Campania approva la mozione",
+   "sintesi": "Il 28 ottobre il Consiglio regionale della Campania ha approvato, con i voti della maggioranza e il no dell'opposizione, una mozione unitaria sul caro carburanti. Impegna la Giunta a creare un fondo straordinario per autotrasportatori e agricoltori, con almeno il 30% in più per le aree interne. Dentro c'è anche la proposta del consigliere sannita Pellegrino Mastella.",
    "categoria": "politica",
    "zona": "benevento",
    "immagine": "carburante",
    "luogo": "Napoli, Consiglio regionale",
-   "pubblicato": "2026-10-19T16:16:00+02:00",
+   "pubblicato": "2026-10-28T18:56:00+01:00",
    "stato": "confermata",
    "fonti": [
     {
-     "nome": "Ottopagine",
-     "url": "https://www.ottopagine.it/bn/politica/441493/caro-carburanti-mozione-casa-riformista-italia-viva-noi-di-centro-in-regione.shtml"
+     "nome": "BeneventoNews24 (Petracca)",
+     "url": "https://www.beneventonews24.it/2026/10/28/caro-carburanti-petracca-pd-mozione-unitaria-della-maggioranza-per-dare-risposte-concrete/"
     },
     {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/19/caro-carburanti-allarme-in-campania-casa-riformista-chiede-un-fondo-straordinario/"
+     "nome": "NTR24 (28/10)",
+     "url": "https://www.ntr24.tv/2026/10/28/caro-carburanti-pellegrino-mastella-priorita-alle-imprese-la-maggioranza-unita-per-dare-risposte-concrete/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/caro-carburanti-errico-regione-individui-misure-risorse-tempi-certi/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/caro-carburanti-errico-la-regione-individui-misure-attuabili-risorse-disponibili-e-tempi-certi/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/politica/441493/caro-carburanti-mozione-casa-riformista-italia-viva-noi-di-centro-in-regione.shtml"
     }
    ],
    "articolo": {
@@ -16483,6 +16847,13 @@
       "fonti": [
        "Ottopagine"
       ]
+     },
+     {
+      "data": "28 ottobre",
+      "fatto": "Il Consiglio regionale approva la mozione unitaria della maggioranza; l'opposizione vota contro.",
+      "fonti": [
+       "BeneventoNews24 (Petracca)"
+      ]
      }
     ],
     "concordano": [
@@ -16492,12 +16863,49 @@
        "Ottopagine",
        "NTR24"
       ]
+     },
+     {
+      "testo": "La mozione approvata chiede un fondo straordinario e dà la priorità alle aree interne.",
+      "fonti": [
+       "BeneventoNews24 (Petracca)",
+       "BeneventoNews24 (Mastella)"
+      ]
      }
     ],
     "non_si_sa": [
-     "Quando la mozione sarà discussa in Consiglio regionale e se la Giunta stanzierà fondi."
+     "Quanti soldi metterà la Giunta regionale nel fondo straordinario e quando arriveranno gli aiuti."
     ],
     "fonti": [
+     {
+      "nome": "BeneventoNews24 (Petracca)",
+      "titolo": "Caro carburanti, Petracca (PD): “Mozione unitaria della maggioranza per dare risposte concrete”",
+      "url": "https://www.beneventonews24.it/2026/10/28/caro-carburanti-petracca-pd-mozione-unitaria-della-maggioranza-per-dare-risposte-concrete/",
+      "data": "28 ott, 16:50"
+     },
+     {
+      "nome": "BeneventoNews24 (Mastella)",
+      "titolo": "Caro carburanti, P. Mastella: «Fondo straordinario per agricoltori e autotrasportatori, la maggioranza fa fronte comune»",
+      "url": "https://www.beneventonews24.it/2026/10/28/caro-carburanti-p-mastella-fondo-straordinario-per-agricoltori-e-autotrasportatori-la-maggioranza-fa-fronte-comune/",
+      "data": "28 ott, 18:50"
+     },
+     {
+      "nome": "NTR24 (28/10)",
+      "titolo": "Caro carburanti, Pellegrino Mastella: «Priorità alle imprese, la maggioranza unita per dare risposte concrete»",
+      "url": "https://www.ntr24.tv/2026/10/28/caro-carburanti-pellegrino-mastella-priorita-alle-imprese-la-maggioranza-unita-per-dare-risposte-concrete/",
+      "data": "28 ott, 18:56"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Caro carburanti, Errico: “Regione individui misure attuabili, risorse disponibili e tempi certi”",
+      "url": "https://www.cronachedelsannio.it/sannionews24/caro-carburanti-errico-regione-individui-misure-risorse-tempi-certi/",
+      "data": "28 ott, 18:56"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Caro carburanti, Errico «La Regione individui misure attuabili, risorse disponibili e tempi certi»",
+      "url": "https://www.tvsette.net/caro-carburanti-errico-la-regione-individui-misure-attuabili-risorse-disponibili-e-tempi-certi/",
+      "data": "28 ott, 16:24"
+     },
      {
       "nome": "Ottopagine",
       "titolo": "Caro carburanti: mozione Casa Riformista–Italia Viva–Noi di Centro in Regione",
@@ -16514,30 +16922,75 @@
     "divergono": [],
     "racconto": [
      {
+      "testo": "Mercoledì 28 ottobre il Consiglio regionale della Campania ha approvato una mozione unitaria sul caro carburanti, firmata da tutti i gruppi di maggioranza: hanno votato a favore la maggioranza, contro i gruppi di opposizione. Il testo nasce dall'unione di due proposte, tra cui quella presentata il 19 ottobre dal gruppo Casa Riformista–Italia Viva–Noi di Centro del consigliere sannita Pellegrino Mastella. In aula l'ha illustrato il capogruppo del Pd, Maurizio Petracca.",
+      "fonti": [
+       "BeneventoNews24 (Petracca)",
+       "BeneventoNews24 (Mastella)"
+      ],
+      "giorno": "2026-10-28"
+     },
+     {
+      "testo": "La mozione impegna la Giunta regionale a creare un Fondo regionale straordinario, con soldi da trovare nel bilancio e tra le risorse nazionali ed europee, per aiutare in fretta le imprese, soprattutto i piccoli autotrasportatori rimasti fuori dagli aiuti dello Stato e le aziende agricole. Prevede anche aiuti per la liquidità delle imprese, procedure più semplici per il gasolio agricolo agevolato, possibili sconti sulle tasse e interventi sulla logistica. Per le aree interne, le zone di montagna e le isole minori gli aiuti devono essere più alti di almeno il 30%.",
+      "fonti": [
+       "BeneventoNews24 (Petracca)",
+       "BeneventoNews24 (Mastella)"
+      ],
+      "giorno": "2026-10-28"
+     },
+     {
+      "testo": "Il testo si aggiunge ai 13 milioni di euro che la Giunta regionale ha già individuato per ristorare le aziende agricole iscritte al registro UMA (quello di chi usa il gasolio agricolo), in attesa del via libera dell'Unione europea. Mastella dice di aver scelto di far confluire la sua mozione in quella comune «per senso di responsabilità»: «Non conta chi arriva prima, ma ciò che riusciamo a ottenere per chi è in difficoltà».",
+      "fonti": [
+       "BeneventoNews24 (Petracca)",
+       "BeneventoNews24 (Mastella)",
+       "NTR24 (28/10)"
+      ],
+      "giorno": "2026-10-28"
+     },
+     {
+      "testo": "Durante la discussione il consigliere regionale di Forza Italia Fernando Errico ha chiesto alla Giunta di indicare le misure davvero realizzabili, i soldi da usare e un calendario preciso, e di riferire al Consiglio: «Le famiglie e le imprese hanno bisogno di risposte credibili, non di annunci generici». Tra le priorità indica aiuti per le famiglie più colpite dai rincari, più trasporto pubblico e controlli sui prezzi.",
+      "fonti": [
+       "Cronache del Sannio",
+       "TV7 Benevento"
+      ],
+      "giorno": "2026-10-28"
+     },
+     {
       "testo": "Lunedì 19 ottobre il gruppo Casa Riformista–Italia Viva–Noi di Centro ha presentato una mozione urgente al Consiglio regionale della Campania. Chiede alla Giunta regionale e al presidente misure per le imprese di autotrasporto e per l'agricoltura, colpite dal prezzo dei carburanti. Il primo firmatario è il consigliere sannita Pellegrino Mastella, con Vincenzo Alaia, Giuseppe Barra, Ciro Buonajuto e Pietro Smarrazzo.",
       "fonti": [
        "Ottopagine",
        "NTR24"
-      ]
+      ],
+      "giorno": "2026-10-19"
      },
      {
       "testo": "Il gruppo avverte che il caro carburanti può diventare un'emergenza economica e sociale. Con i presìdi già in corso, in Campania, sull'Appia a Tufara Valle e agli accessi autostradali di Castel del Lago, Caianello e Caserta Sud, teme conseguenze sulla circolazione delle merci, sull'approvvigionamento dei mercati e sull'occupazione.",
       "fonti": [
        "Ottopagine",
        "NTR24"
-      ]
+      ],
+      "giorno": "2026-10-19"
      },
      {
-      "testo": "La mozione propone un fondo straordinario regionale per autotrasporto e agricoltura, un tavolo permanente con le categorie e un intervento del Governo sulle accise, le tasse sui carburanti. È una proposta di un gruppo politico: per ora non ci sono decisioni della Regione.",
+      "testo": "La mozione propone un fondo straordinario regionale per autotrasporto e agricoltura, un tavolo permanente con le categorie e un intervento del Governo sulle accise, le tasse sui carburanti.",
       "fonti": [
        "Ottopagine",
        "NTR24"
-      ]
+      ],
+      "giorno": "2026-10-19"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Mercoledì 28 ottobre il Consiglio regionale ha approvato, con i voti della maggioranza, la mozione unitaria sul caro carburanti: chiede alla Giunta un fondo straordinario per autotrasporto e agricoltura.",
+     "fonti": [
+      "BeneventoNews24 (Petracca)"
+     ],
+     "quando": "2026-10-28T19:13+01:00",
+     "titolo_prima": "Caro carburanti, mozione in Consiglio regionale: chiesto un fondo straordinario per autotrasporto e agricoltura"
+    }
    },
    "rilevante": false,
-   "foto": "carburante"
+   "foto": "carburante",
+   "importanza": 4
   },
   {
    "id": "cocchia-cavour-asfalto",
@@ -17793,7 +18246,7 @@
    "titolo_google": "Sfiducia a Mastella a Benevento: a che punto è la mozione",
    "sommario": "Il 22 ottobre l'opposizione del Consiglio comunale di Benevento ha presentato una mozione di sfiducia contro il sindaco Clemente Mastella e la Giunta, con un dossier di 24 punti che parte dall'inchiesta giudiziaria sul Comune. Domenica 25 ha sfilato in corteo fino alla Prefettura. Il sindaco dice che non si dimette e la maggioranza parla di poche centinaia di persone in piazza. La data del voto in Consiglio non è ancora stata fissata.",
    "luogo": "Benevento",
-   "aggiornato": "2026-10-28T14:50:00+01:00",
+   "aggiornato": "2026-10-28T19:40:00+01:00",
    "collegate": [
     "benevento-opposizione-mozione-sfiducia-mastella"
    ],
@@ -17870,6 +18323,12 @@
        "testo": "Lunedì 26 il Pd cittadino ha risposto alla maggioranza: chi manifesta «merita rispetto, non ironia»; rispetta la magistratura e la presunzione d'innocenza, ma dice che la responsabilità politica di chi ha scelto dirigenti e collaboratori resta, e che l'amministrazione non ha ancora dato una risposta. Sulle elezioni: «Le urne arriveranno nel 2027», e il Pd lavora con forze progressiste e civiche.",
        "fonti": [
         "Ottopagine (26/10, Pd)"
+       ]
+      },
+      {
+       "testo": "Mercoledì 28, in serata, i nove consiglieri comunali di opposizione (De Longis, De Lorenzo, Farese, Fioretti, Megna, Miceli, Moretti, Perifano e Varricchio) hanno risposto a Noi di Centro: per loro la scelta di «centinaia di beneventani» di scendere in piazza «ha lasciato il segno» e ha irritato «i piani alti di Palazzo Mosti». Rimproverano alla maggioranza di non aver condannato «senza se e senza ma» le pratiche di corruzione di cui parla l'inchiesta.",
+       "fonti": [
+        "BeneventoNews24 (28/10, opposizione)"
        ]
       }
      ]
@@ -18009,6 +18468,13 @@
      "fonti": [
       "Lab TV (28/10)"
      ]
+    },
+    {
+     "data": "28 ottobre, sera",
+     "fatto": "I consiglieri di opposizione replicano a Noi di Centro: la protesta di centinaia di cittadini «ha lasciato il segno».",
+     "fonti": [
+      "BeneventoNews24 (28/10, opposizione)"
+     ]
     }
    ],
    "non_si_sa": [
@@ -18075,6 +18541,12 @@
      "titolo": "Viespoli e De Caro, la “strana coppia” al servizio della città",
      "url": "https://www.labtv.net/politica/2026/10/28/viespoli-e-de-caro-la-strana-coppia-al-servizio-della-citta/",
      "data": "28 ott, 13:18"
+    },
+    {
+     "nome": "BeneventoNews24 (28/10, opposizione)",
+     "titolo": "Benevento, l’opposizione all’attacco di NdC: “Centinaia di beneventani in piazza contro malaffare ha irritato piani alti”",
+     "url": "https://www.beneventonews24.it/2026/10/28/benevento-lopposizione-allattacco-di-ndc-centinaia-di-beneventani-in-piazza-contro-malaffare-ha-irritato-piani-alti/",
+     "data": "28 ott, 18:56"
     }
    ],
    "scena": "The council chamber of the city hall of Benevento during a tense evening session: councillors seated at curved wooden benches with microphones, some standing and arguing with papers in hand, citizens crowding the public gallery, warm light from old chandeliers, a sense of political confrontation"
