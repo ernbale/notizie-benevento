@@ -60,6 +60,33 @@
   .menu button { font: 600 15px var(--sans); background: none; border: 0; padding: 4px 0; color: var(--nero); cursor: pointer; border-bottom: 2px solid transparent; }
   .menu button[aria-pressed="true"] { border-bottom-color: var(--rosso); }
   .menu select { font: 500 14px var(--sans); background: transparent; border: 1px solid var(--riga); padding: 4px 6px; color: var(--nero); }
+  .menu .voce-allerta { color: #fff; background: var(--rosso); padding: 3px 9px; border-radius: 3px; border-bottom: 0; }
+  @media (min-width: 960px) { .menu { flex-wrap: nowrap; gap: 4px 12px; } .menu .cerca-campo input { width: 175px; } }
+  @media (min-width: 960px) and (max-width: 1119px) {
+    .menu { gap: 4px 9px; }
+    .menu button, .menu .link-comuni, .menu .link-archivio { font-size: 14px; }
+    .menu select { font-size: 13.5px; padding: 4px; }
+    .menu .cerca-campo input { width: 100px; }
+  }
+
+  /* la pagina Avvisi */
+  .avvisi-pag h1 { font: 700 30px/1.15 var(--serif); margin: 18px 0 4px; }
+  .avvisi-pag .sotto { font: 500 15px/1.45 var(--sans); color: #4a4038; margin: 0 0 10px; }
+  .avvisi-pag .link-tutte { display: inline-block; margin: 0 0 6px; }
+  .avvisi-pag h2 { font: 700 21px/1.2 var(--serif); margin: 26px 0 4px; padding-top: 10px; border-top: 2px solid var(--nero); }
+  .avvisi-pag .speciale { background: #fff7f0; border: 1px solid var(--riga); border-top: 4px solid var(--rosso); padding: 2px 14px 12px; margin-top: 14px; }
+  .avvisi-pag .speciale h2 { border-top: 0; color: var(--rosso); margin-top: 14px; }
+  .avvisi-pag .paese { padding: 9px 0; border-bottom: 1px solid var(--riga); }
+  .avvisi-pag .paese b { display: block; font: 700 13px/1.3 var(--sans); letter-spacing: 1.2px; text-transform: uppercase; color: var(--blu); margin-bottom: 3px; }
+  .avvisi-pag .paese a { display: block; font: 500 15.5px/1.4 var(--sans); color: var(--nero); text-decoration: none; padding: 2px 0; }
+  .avvisi-pag .paese a:hover, .avvisi-pag li a:hover { text-decoration: underline; }
+  .avvisi-pag .manca { font: 500 14px/1.45 var(--sans); color: #6b5d50; margin: 10px 0 0; }
+  .avvisi-pag ul { list-style: none; margin: 0; padding: 0; }
+  .avvisi-pag li { padding: 8px 0; border-bottom: 1px solid var(--riga); display: flex; gap: 8px; }
+  .avvisi-pag li .ic { flex: none; width: 22px; text-align: center; }
+  .avvisi-pag li a { font: 600 15.5px/1.35 var(--sans); color: var(--nero); text-decoration: none; }
+  .avvisi-pag li .dove { display: block; font: 500 13.5px/1.4 var(--sans); color: #6b5d50; margin-top: 2px; }
+  .avvisi-pag .vuoto { margin-top: 18px; }
 
   /* ultim'ora */
   .ultimora { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; padding: 16px 0 14px; border-bottom: 1px solid var(--riga); }
@@ -486,7 +513,7 @@
     .testata .nome .grande { font-size: 36px; }
     .menu { justify-content: flex-start; gap: 4px 12px; }
     .menu button, .menu .link-comuni { font-size: 14.5px; }
-    .menu select { width: 100%; }
+    .menu select { width: auto; max-width: 60%; }
     .menu .cerca-campo { width: 100%; order: -1; margin-bottom: 4px; }
     .menu .cerca-campo input { flex: 1; width: auto; font-size: 16px; padding: 8px 10px; }
     .ricerca .ordine { margin-left: 0; }
@@ -676,15 +703,14 @@
 
   <nav class="menu" id="menu" aria-label="Sezioni">
     <button type="button" data-cat="" aria-pressed="true">Tutte</button>
+    <button type="button" data-cat="meteo" aria-pressed="false" class="voce-allerta" hidden>Allerte</button>
+    <button type="button" data-cat="avvisi" aria-pressed="false">Avvisi</button>
     <button type="button" data-cat="cronaca" aria-pressed="false">Cronaca</button>
     <button type="button" data-cat="politica" aria-pressed="false">Politica</button>
     <button type="button" data-cat="sport" aria-pressed="false">Sport</button>
-    <button type="button" data-cat="eventi" aria-pressed="false">Eventi</button>
-    <button type="button" data-cat="meteo" aria-pressed="false">Allerte</button>
-    <button type="button" data-cat="altro" aria-pressed="false">Altro</button>
-    <button type="button" data-cat="strade" aria-pressed="false">Strade</button>
-    <a class="link-comuni" href="/comuni/">Comuni</a>
     <a class="link-comuni" href="/calcio/">Calcio</a>
+    <button type="button" data-cat="eventi" aria-pressed="false">Eventi</button>
+    <button type="button" data-cat="altro" aria-pressed="false">Altro</button>
     <select id="zona" aria-label="Zona">
       <option value="">Tutte le zone</option>
       <option value="benevento">Benevento città</option>
@@ -693,6 +719,7 @@
       <option value="fortore">Fortore e Tammaro</option>
       <option value="provincia">Altri comuni</option>
     </select>
+    <a class="link-comuni" href="/comuni/">Comuni</a>
     <a class="link-archivio" href="#archivio">Archivio</a>
     <form class="cerca-campo" id="cerca-home" role="search">
       <input type="search" id="cerca-home-q" placeholder="Cerca tra le notizie" aria-label="Cerca tra le notizie" autocomplete="off" enterkeyhint="search">
@@ -708,7 +735,7 @@
     <p>Notizie Benevento è un report automatico: le notizie appartengono ai giornali citati. Qui le raccontiamo con parole nostre, confrontando le fonti, con i link agli articoli originali.</p>
     <p>Una notizia compare se la riportano almeno due testate diverse oppure una fonte ufficiale (Comuni, Regione, Prefettura, Questura e forze dell'ordine, ASL, ANAS, INGV, le società dell'acqua, dei treni e dei bus). La cronaca riportata da un solo giornale autorevole porta la scritta «Una sola fonte». Le accuse sono riportate con le parole usate dai giornali. Aggiornato ogni ora, dalle 6 alle 22. Le visite si contano in forma anonima, senza cookie.</p>
     <p>Nessuna notizia viene cancellata: quando esce dalla prima pagina resta nell'<a href="/archivio/">archivio</a>, allo stesso indirizzo.</p>
-    <p class="sezioni-link">Sezioni: <a href="/sezione/strade/">Strade</a> · <a href="/sezione/cronaca/">Cronaca</a> · <a href="/sezione/politica/">Politica</a> · <a href="/sezione/sport/">Sport</a> · <a href="/sezione/eventi/">Eventi</a> · <a href="/sezione/allerte/">Allerte</a> · <a href="/sezione/altro/">Altro</a> · <a href="/meteo.html">Meteo Benevento</a> · <a href="/strade-chiuse/">Strade chiuse oggi</a> · <a href="/carburanti/">Prezzi carburanti</a> · <a href="/curiosita/">Curiosità del Sannio</a> · <a href="/calcio/">Benevento Calcio</a><br>
+    <p class="sezioni-link">Sezioni: <a href="/sezione/avvisi/">Avvisi</a> · <a href="/sezione/cronaca/">Cronaca</a> · <a href="/sezione/politica/">Politica</a> · <a href="/sezione/sport/">Sport</a> · <a href="/sezione/eventi/">Eventi</a> · <a href="/sezione/allerte/">Allerte</a> · <a href="/sezione/altro/">Altro</a> · <a href="/meteo.html">Meteo Benevento</a> · <a href="/strade-chiuse/">Strade chiuse oggi</a> · <a href="/carburanti/">Prezzi carburanti</a> · <a href="/curiosita/">Curiosità del Sannio</a> · <a href="/calcio/">Benevento Calcio</a><br>
       Zone: <a href="/zona/benevento/">Benevento città</a> · <a href="/zona/valle-telesina/">Valle Telesina</a> · <a href="/zona/valle-caudina/">Valle Caudina</a> · <a href="/zona/fortore/">Fortore e Tammaro</a> · <a href="/zona/altri-comuni/">Altri comuni</a> · <a href="/comuni/">Tutti i Comuni</a> · <a href="/archivio/">Archivio mese per mese</a> · <a href="/feed.xml">Feed RSS</a></p>
     <p class="sezioni-link"><a href="/chi-siamo/">Chi siamo</a> · Seguici su <a href="https://www.instagram.com/notiziebenevento.it/" target="_blank" rel="noopener">Instagram</a>, <a href="https://www.facebook.com/notiziebenevento" target="_blank" rel="noopener">Facebook</a> e <a href="https://t.me/notiziebenevento" target="_blank" rel="noopener">Telegram</a></p>
   </footer>
@@ -716,7 +743,7 @@
 
 <script>
 (function () {
-  var NOMI_CAT = { strade: "Strade", cronaca: "Cronaca", politica: "Politica", sport: "Sport", eventi: "Eventi", meteo: "Allerte", altro: "Altro" };
+  var NOMI_CAT = { avvisi: "Avvisi", strade: "Strade", cronaca: "Cronaca", politica: "Politica", sport: "Sport", eventi: "Eventi", meteo: "Allerte", altro: "Altro" };
   var NOMI_SPORT = { calcio: "Calcio", calcio_a_5: "Calcio a 5", basket: "Basket", pallavolo: "Pallavolo", rugby: "Rugby",
     scherma: "Scherma", atletica: "Atletica", tennis: "Tennis", ciclismo: "Ciclismo", nuoto: "Nuoto", altro: "Altri sport" };
   var filtroSport = "";
@@ -1325,24 +1352,136 @@
     return b;
   }
 
+  // Quando vale un avviso: «dal 24 al 31 ottobre», «solo il 29 ottobre», «fino al 2 novembre»; senza date, quando è uscito.
+  function quandoVale(n) {
+    var dal = n.in_vigore_dal > oggiTZ() ? n.in_vigore_dal : "", fino = n.in_vigore_fino;
+    var stessoMese = dal && fino && dal.slice(0, 7) === fino.slice(0, 7);
+    return dal ? (fino === dal ? "solo " + conData("", dal) : (stessoMese ? conData("da", dal).replace(/ [a-z]+$/, "") : conData("da", dal)) + (fino ? " " + conData("a", fino) : ""))
+      : fino ? conData("fino a", fino) : quando(n.pubblicato);
+  }
+  function vaiCat(cat) {
+    var b = document.querySelector('.menu button[data-cat="' + cat + '"]');
+    if (b) { b.click(); window.scrollTo(0, 0); }
+  }
+  // un link a una sezione: dentro il sito sceglie la voce del menu, senza ricaricare
+  function linkCat(cat, testoLink, cls) {
+    var a = el("a", cls || "", [testoLink]);
+    a.href = "/sezione/" + cat + "/";
+    a.addEventListener("click", function (e) {
+      if (!document.querySelector('.menu button[data-cat="' + cat + '"]') || e.metaKey || e.ctrlKey) return;
+      e.preventDefault();
+      vaiCat(cat);
+    });
+    return a;
+  }
   function riquadroAvvisi(avvisi) {
     var sez = el("section", "avvisi-box", [el("h3", "titolo-col", ["Avvisi in vigore"])]);
     var ul = el("ul", "", []);
-    avvisi.forEach(function (n) {
+    avvisi.slice(0, 6).forEach(function (n) {
       var li = el("li", "", []);
       var a = el("a", "", [n.titolo]);
       a.href = linkArticolo(n);
       li.appendChild(a);
-      var dal = n.in_vigore_dal > oggiTZ() ? n.in_vigore_dal : "", fino = n.in_vigore_fino;
-      var stessoMese = dal && fino && dal.slice(0, 7) === fino.slice(0, 7);   // «dal 24 al 31 ottobre»
-      var quandoVale = dal ? (fino === dal ? "solo " + conData("", dal) : (stessoMese ? conData("da", dal).replace(/ [a-z]+$/, "") : conData("da", dal)) + (fino ? " " + conData("a", fino) : ""))
-        : fino ? conData("fino a", fino) : quando(n.pubblicato);
-      li.appendChild(el("span", "dove", [(NOMI_CAT[n.categoria] || "") + " · " + (n.luogo ? n.luogo + " · " : "") + quandoVale]));
+      li.appendChild(el("span", "dove", [(NOMI_CAT[n.categoria] || "") + " · " + (n.luogo ? n.luogo + " · " : "") + quandoVale(n)]));
       ul.appendChild(li);
     });
     sez.appendChild(ul);
+    sez.appendChild(linkCat("avvisi", "Tutti gli avvisi, paese per paese ›", "link-tutte"));
     if (avvisi.some(function (n) { return n.traffico; })) sez.appendChild(linkTutte("/strade-chiuse/", "Tutte le strade chiuse ›"));
     return sez;
+  }
+  // La voce «Allerte» del menu c'è solo quando serve (lui, 28 ott 2026: «la voce allerte compare solo se c'è un'allerta»):
+  // un'allerta della Protezione civile non verde da oggi in poi, o una notizia di allerta ancora in vigore. ?allerta per
+  // vederla nelle prove.
+  function mostraVoceAllerte() {
+    var b = document.querySelector(".menu .voce-allerta");
+    if (!b) return;
+    var oggi = oggiTZ(), giorni = (meteo && meteo.allerte && meteo.allerte.giorni) || {};
+    b.hidden = !(filtroCat === "meteo" || /[?&]allerta\b/.test(location.search) || Object.keys(giorni).some(function (g) {
+      var zz = (giorni[g] && giorni[g].zone) || {};
+      return g >= oggi && Object.keys(zz).some(function (z) { return zz[z].livello && zz[z].livello !== "verde"; });
+    }) || (dati.notizie || []).some(function (n) { return n.categoria === "meteo" && n.in_vigore_fino >= oggi; }));
+  }
+
+  // La pagina Avvisi (lui, 28 ott 2026: «al posto di strade metti avvisi dove mettere chiusure strade orari eccetera»):
+  // strade e trasporti (categoria strade) e avvisi dei Comuni (categoria avvisi), non in ordine di uscita ma di quando
+  // servono: oggi, nei prossimi giorni, domande e scadenze. Dal 22 ottobre al 2 novembre in cima lo speciale per i
+  // Defunti, paese per paese (lui: «per me è difficile trovare info su quando le strade saranno chiuse, il cimitero
+  // quando è aperto»).
+  var RX_DEFUNTI = /cimiter|defunt|ognissanti|lampade votive/i;
+  function periodoDefunti(oggi) { return oggi.slice(5) >= "10-22" && oggi.slice(5) <= "11-02"; }
+  function comuneDi(n) {
+    var l = String(n.luogo || "");
+    if (/,.*,/.test(l) || / e /.test(l.split(",")[0])) return "Più Comuni";
+    return l.split(",")[0].replace(/^Provincia di Benevento$|^Sannio$/, "Tutto il Sannio") || "Sannio";
+  }
+  // nel gruppo del paese il titolo perde il «Paese, » iniziale: «Apice, gli orari del cimitero…» → «Gli orari del cimitero…»
+  function senzaPaese(t, c) {
+    var r = t.indexOf(c + ", ") === 0 ? t.slice(c.length + 2) : t;
+    return r.charAt(0).toUpperCase() + r.slice(1);
+  }
+  function iconaAvviso(n) {
+    var t = n.titolo;
+    return /cimiter|defunt|votive|loculi/i.test(t) ? "🕯️" : /\bbus\b|treni|sciopero|\bEAV\b|\bAIR\b/i.test(t) ? "🚌" : n.categoria === "strade" ? "🚧" :
+      /acqua|contatori|alto calore/i.test(t) ? "💧" : /\bluce\b|enel/i.test(t) ? "⚡" : /rifiut|ingombrant|raccolta|ecocentro/i.test(t) ? "♻️" :
+      /sportell|uffici|passaporto|tributi/i.test(t) ? "🏢" : /domande|entro|bando|bonus|elenc/i.test(t) ? "📝" : /vaccin|medic/i.test(t) ? "🩺" : "📢";
+  }
+  function voceAvviso(n) {
+    var li = el("li", "", [el("span", "ic", [iconaAvviso(n)])]), dx = el("div", "", []);
+    var a = el("a", "", [n.titolo]);
+    a.href = linkArticolo(n);
+    dx.appendChild(a);
+    dx.appendChild(el("span", "dove", [comuneDi(n) + " · " + quandoVale(n)]));
+    li.appendChild(dx);
+    return li;
+  }
+  function paginaAvvisi(box) {
+    var oggi = oggiTZ(), art = el("article", "avvisi-pag", []);
+    art.appendChild(el("h1", "", [(FISSA && FISSA.cat === "avvisi" && FISSA.h1) || "Avvisi"]));
+    art.appendChild(el("p", "sotto", ["Strade chiuse, orari, uffici, servizi e scadenze dei Comuni del Sannio: quello che serve sapere, paese per paese."]));
+    art.appendChild(linkTutte("/strade-chiuse/", "Le strade chiuse oggi e nei prossimi giorni ›"));
+    var valido = function (n) { return !n.in_vigore_fino || n.in_vigore_fino >= oggi; };
+    var tutte = (dati.notizie || []).filter(function (n) { return (!filtroZona || n.zona === filtroZona) && valido(n); });
+    var visti = [];
+    if (periodoDefunti(oggi)) {
+      var def = tutte.filter(function (n) { return RX_DEFUNTI.test(n.titolo) && !/loculi|bando/i.test(n.titolo); });
+      if (def.length) {
+        var sp = el("section", "speciale", [el("h2", "", ["🕯️ Ognissanti e Defunti"]),
+          el("p", "sotto", ["Orari dei cimiteri, strade chiuse e divieti per il 1° e il 2 novembre."])]);
+        var per = {};
+        def.forEach(function (n) { (per[comuneDi(n)] = per[comuneDi(n)] || []).push(n); visti.push(n); });
+        Object.keys(per).sort(function (a, b) { return a === "Benevento" ? -1 : b === "Benevento" ? 1 : a.localeCompare(b, "it"); }).forEach(function (c) {
+          var d = el("div", "paese", [el("b", "", [c])]);
+          per[c].forEach(function (n) { var a = el("a", "", [iconaAvviso(n) + " " + senzaPaese(n.titolo, c) + " ›"]); a.href = linkArticolo(n); d.appendChild(a); });
+          sp.appendChild(d);
+        });
+        var m = el("p", "manca", ["Il tuo paese non c'è? Il Comune non ha ancora pubblicato gli orari: li aggiungiamo appena escono. Intanto guarda la pagina del tuo "]);
+        var lc = el("a", "", ["Comune ›"]);
+        lc.href = "/comuni/";
+        m.appendChild(lc);
+        sp.appendChild(m);
+        art.appendChild(sp);
+      }
+    }
+    var avv = tutte.filter(function (n) { return (n.categoria === "avvisi" || n.categoria === "strade") && visti.indexOf(n) < 0; });
+    var gruppi = [
+      ["Oggi", avv.filter(function (n) { return n.in_vigore_fino && (n.in_vigore_fino === oggi || (n.in_vigore_dal && n.in_vigore_dal <= oggi)); })],
+      ["Nei prossimi giorni", avv.filter(function (n) { return n.in_vigore_dal && n.in_vigore_dal > oggi; })
+        .sort(function (a, b) { return a.in_vigore_dal < b.in_vigore_dal ? -1 : 1; })],
+      ["Domande e scadenze", avv.filter(function (n) { return /entro|domande|bando|requisiti|elenc/i.test(n.titolo); })]
+    ];
+    var usati = [].concat(gruppi[0][1], gruppi[1][1], gruppi[2][1]);
+    gruppi.push(["Altri avvisi in vigore", avv.filter(function (n) { return usati.indexOf(n) < 0; })]);
+    gruppi.forEach(function (gr) {
+      var lista = gr[1].filter(function (n, i) { return gr[1].indexOf(n) === i; });
+      if (!lista.length) return;
+      art.appendChild(el("h2", "", [gr[0]]));
+      var ul = el("ul", "", []);
+      lista.forEach(function (n) { ul.appendChild(voceAvviso(n)); });
+      art.appendChild(ul);
+    });
+    if (!visti.length && !avv.length) art.appendChild(el("p", "vuoto", ["Nessun avviso in vigore con questi filtri."]));
+    box.appendChild(art);
   }
   function oggiTZ() { return new Date().toLocaleDateString("sv-SE", { timeZone: TZ }); }
   // «fino al 30 ottobre», «dall'8 novembre», «al 1° novembre»; senza preposizione «il 24 ottobre», «l'11 novembre»
@@ -1446,6 +1585,8 @@
   }
 
   function disegnaHome(box) {
+    mostraVoceAllerte();
+    if (filtroCat === "avvisi") { paginaAvvisi(box); return; }
     if (FISSA && FISSA.h1 && filtroCat === (FISSA.cat || "") && filtroZona === (FISSA.zona || "")) box.appendChild(el("h1", "titolo-sezione", [FISSA.h1]));
     if (filtroCat === "strade") box.appendChild(linkTutte("/strade-chiuse/", "Le strade chiuse oggi e nei prossimi giorni ›"));
     var lista = filtrate();
@@ -2703,7 +2844,8 @@
   if (FISSA && (FISSA.cat || FISSA.zona)) {
     filtroCat = FISSA.cat || "";
     filtroZona = FISSA.zona || "";
-    document.querySelectorAll(".menu button").forEach(function (x) { x.setAttribute("aria-pressed", x.getAttribute("data-cat") === filtroCat ? "true" : "false"); });
+    var voce = filtroCat === "strade" ? "avvisi" : filtroCat;
+    document.querySelectorAll(".menu button").forEach(function (x) { x.setAttribute("aria-pressed", x.getAttribute("data-cat") === voce ? "true" : "false"); });
     document.getElementById("zona").value = filtroZona;
   }
 
@@ -2711,6 +2853,7 @@
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(function (j) {
       meteo = j;
+      mostraVoceAllerte();
       // se la prima pagina è già disegnata, aggiunge il riquadro meteo in cima alla colonna di destra
       var lat = document.querySelector(".griglia .laterale");
       // il meteo va sotto le chiusure, se ci sono, e sotto il calcio nel giorno della partita (calcio.js)

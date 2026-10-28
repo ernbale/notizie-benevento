@@ -28,6 +28,13 @@ claude.ai/code dal telefono): qui c'è quello che serve per riprendere il lavoro
 - Ogni push su main fa partire la Action «Pubblica il sito» (`.github/workflows/pubblica.yml`): pagine, Telegram,
   Facebook, Instagram. Ci mette circa 2 minuti.
 
+## Il menu del sito (deciso con lui il 28 ott 2026)
+Tutte · (Allerte, solo con un'allerta) · Avvisi · Cronaca · Politica · Sport · Calcio · Eventi · Altro · zona · Comuni ·
+Archivio; sul computer su una riga sola (da 960 px). «Avvisi» (categorie `strade` + `avvisi`, pagina /sezione/avvisi/)
+ha preso il posto di «Strade»: in ordine di quando servono, dal 22 ottobre al 2 novembre con i cimiteri paese per
+paese. La zona la ricava archivia.py dal luogo (`ZONA_COMUNE`): «Benevento città» è solo Benevento. Le colonne
+a zig-zag di «Le altre notizie» le ha scelte lui (niente spazi vuoti): non riproporle riga per riga.
+
 ## Correggere una notizia a mano
 1. `git pull --rebase` (le routine pubblicano spesso: rifallo anche subito prima del push).
 2. Modifica `notizie.json` (o l'archivio) con uno script che rilegge e riscrive il JSON con l'indentazione di 1

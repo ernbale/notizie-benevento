@@ -26,10 +26,31 @@ import re
 import subprocess
 import sys
 
-CAT = {"strade", "cronaca", "meteo", "politica", "sport", "eventi", "altro"}
+CAT = {"strade", "avvisi", "cronaca", "meteo", "politica", "sport", "eventi", "altro"}
 SPORT = {"calcio", "calcio_a_5", "basket", "pallavolo", "rugby", "scherma", "atletica", "tennis", "ciclismo", "nuoto", "altro"}
-UNA_FONTE_CAT = ("cronaca", "strade", "altro", "politica", "sport")   # regola 2 (politica dal 22 ott 2026, con la regola 9)
+UNA_FONTE_CAT = ("cronaca", "strade", "avvisi", "altro", "politica", "sport")   # regola 2 (politica dal 22 ott 2026, con la regola 9)
 ZONE = {"benevento", "telesina", "caudina", "fortore", "provincia"}
+# La zona di ogni Comune del Sannio (28 ott 2026, lui: «migliora il filtro Benevento città perché compaiono anche altri
+# comuni»): la mette il programma dal luogo della notizia (zona_dal_luogo), non l'agente. «benevento» è solo la città;
+# «provincia» (nel menu «Altri comuni») sono i paesi intorno a Benevento.
+ZONA_COMUNE = {c.lower(): z for z, cc in {
+    "benevento": ["Benevento"],
+    "telesina": ["Amorosi", "Castelvenere", "Cerreto Sannita", "Cusano Mutri", "Dugenta", "Faicchio",
+        "Frasso Telesino", "Guardia Sanframondi", "Melizzano", "Paupisi", "Pietraroja", "Puglianello",
+        "San Lorenzello", "San Lorenzo Maggiore", "San Lupo", "San Salvatore Telesino", "Solopaca", "Telese Terme"],
+    "caudina": ["Airola", "Arpaia", "Bonea", "Bucciano", "Campoli del Monte Taburno", "Durazzano", "Forchia",
+        "Limatola", "Moiano", "Montesarchio", "Pannarano", "Paolisi", "Sant'Agata de' Goti", "Tocco Caudio"],
+    "fortore": ["Baselice", "Campolattaro", "Casalduni", "Castelfranco in Miscano", "Castelpagano",
+        "Castelvetere in Val Fortore", "Circello", "Colle Sannita", "Foiano di Val Fortore", "Fragneto l'Abate",
+        "Fragneto Monforte", "Ginestra degli Schiavoni", "Molinara", "Montefalcone di Val Fortore", "Morcone",
+        "Pontelandolfo", "Reino", "San Bartolomeo in Galdo", "San Giorgio La Molara", "San Marco dei Cavoti",
+        "Santa Croce del Sannio", "Sassinoro"],
+    "provincia": ["Apice", "Apollosa", "Arpaise", "Buonalbergo", "Calvi", "Castelpoto", "Cautano", "Ceppaloni",
+        "Foglianise", "Paduli", "Pago Veiano", "Pesco Sannita", "Pietrelcina", "Ponte", "San Giorgio del Sannio",
+        "San Leucio del Sannio", "San Martino Sannita", "San Nazzaro", "San Nicola Manfredi",
+        "Sant'Angelo a Cupolo", "Sant'Arcangelo Trimonte", "Torrecuso", "Vitulano"],
+}.items() for c in cc}
+ZONA_COMUNE["sant'agata dei goti"] = "caudina"
 STATI = {"confermata", "ufficiale", "una_fonte"}
 TRAFFICO = {"chiusa", "blocchi", "senso_unico", "ristretta", "bus"}   # la pagina «Strade chiuse» (pagine.py)
 # le testate che da sole bastano per la cronaca (regola 2 di AGENTE.md), scritte senza spazi né maiuscole
@@ -773,8 +794,42 @@ def controlla_eventi(ev, err):
                    "uno solo e aggiorna quello (date, orari, fonti, locandina)")
 
 
+def primo_giorno_titolo(titolo, pubblicato):
+    """Il primo giorno scritto nel titolo, AAAA-MM-GG: «chiuse dal 29 ottobre al 1° novembre» → 29 ottobre, «sabato 24
+    e 31 ottobre» e «il 1° e il 2 novembre» → il primo. Non le scadenze («entro il 30», «fino al 2 novembre»). L'anno è
+    quello di pubblicato (o il successivo, per gennaio scritto a dicembre). None se non c'è."""
+    m = re.search(rf"(?<!fino al )(?<!entro il )(?<!entro l')\b(\d{{1,2}})°?(?:\s*(?:e|-)\s*(?:il\s+|l')?\d{{1,2}}°?)?\s+"
+                  rf"({NOMI_MESI})\b",
+                  str(titolo or "").lower())
+    p = str(pubblicato or "")[:10]
+    if not m or not GIORNO.match(p):
+        return None
+    anno = int(p[:4]) + (1 if MESI[m[2]] < int(p[5:7]) - 6 else 0)
+    try:
+        return dt.date(anno, MESI[m[2]], int(m[1])).isoformat()
+    except ValueError:
+        return None
+
+
+def zona_dal_luogo(d, avv):
+    """La zona la decide il Comune scritto nel luogo (ZONA_COMUNE): «San Giorgio del Sannio» non è «Benevento città».
+    Si cambia solo se il luogo nomina Comuni di una zona sola e non tutta la provincia («Sannio», «provincia di
+    Benevento», «Campania»); le trasferte («Cremona, stadio Zini») restano come le ha scritte l'agente. Se nomina Comuni
+    di più zone, «Benevento città» resta solo se tra loro c'è Benevento."""
+    for n in d.get("notizie", []):
+        pezzi = [p.strip().replace("’", "'").lower() for p in re.split(r"[,()]| e ", str(n.get("luogo") or ""))]
+        if any(p in ("sannio", "campania") or "provincia" in p for p in pezzi):
+            continue
+        zone = {ZONA_COMUNE[p] for p in pezzi if p in ZONA_COMUNE}
+        nuova = zone.pop() if len(zone) == 1 else "provincia" if zone and n.get("zona") == "benevento" and "benevento" not in zone else None
+        if nuova and n.get("zona") != nuova:
+            avv.append(f"{n.get('id')}: zona {n.get('zona')!r} cambiata in {nuova!r}, dal luogo «{n.get('luogo')}»")
+            n["zona"] = nuova
+
+
 def controlla(d, err, avv, adesso=None):
-    """Le stesse regole di AGENTE.md, sul file della prima pagina."""
+    """Le stesse regole di AGENTE.md, sul file della prima pagina. Prima mette la zona giusta (zona_dal_luogo)."""
+    zona_dal_luogo(d, avv)
     for k in ("aggiornato", "giornali_letti", "notizie", "approfondimenti"):
         if k not in d:
             err.append(f"manca il campo {k}")
@@ -830,6 +885,14 @@ def controlla(d, err, avv, adesso=None):
             err.append(f"{w}: in_vigore_dal deve essere AAAA-MM-GG")
         elif n.get("in_vigore_dal") and str(n.get("in_vigore_fino") or "9") < n["in_vigore_dal"]:
             err.append(f"{w}: in_vigore_dal ({n['in_vigore_dal']}) è dopo in_vigore_fino ({n['in_vigore_fino']})")
+        # il primo giorno scritto nel titolo e in_vigore_dal devono tornare: la pagina Avvisi mette in «Oggi» quello che
+        # vale già (28 ott 2026: la sagra di Vitulano «dal 29 ottobre» risultava dal 26, il giorno in cui era uscita)
+        if n.get("in_vigore_fino") and n.get("categoria") in ("avvisi", "strade") and adesso:
+            pg = primo_giorno_titolo(n.get("titolo"), n.get("pubblicato"))
+            if (pg and pg > adesso.date().isoformat() and pg > (n.get("in_vigore_dal") or str(n.get("pubblicato"))[:10])
+                    and pg <= str(n["in_vigore_fino"])):
+                avv.append(f"{w}: il titolo dice che comincia il {pg}, ma in_vigore_dal è {n.get('in_vigore_dal') or 'assente'}: "
+                           "metti il primo giorno vero (la pagina Avvisi lo mostra in «Oggi» solo da quel giorno)")
         if "traffico" in n and n["traffico"] not in TRAFFICO:
             err.append(f"{w}: traffico non ammesso {n['traffico']!r}: uno di {', '.join(sorted(TRAFFICO))} "
                        "(oppure togli il campo)")

@@ -42,13 +42,16 @@ FONT_BLACK = os.path.join(QUI, "font", "SourceSerif4-Black.ttf")
 MESI = ["gen", "feb", "mar", "apr", "mag", "giu", "lug", "ago", "set", "ott", "nov", "dic"]
 MESI_LUNGHI = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre",
                "ottobre", "novembre", "dicembre"]
-NOMI_CAT = {"strade": "Strade", "cronaca": "Cronaca", "politica": "Politica", "sport": "Sport", "eventi": "Eventi",
+NOMI_CAT = {"avvisi": "Avvisi", "strade": "Strade", "cronaca": "Cronaca", "politica": "Politica", "sport": "Sport", "eventi": "Eventi",
             "meteo": "Allerte", "altro": "Altro"}
 NOMI_SPORT = {"calcio": "Calcio", "calcio_a_5": "Calcio a 5", "basket": "Basket", "pallavolo": "Pallavolo", "rugby": "Rugby",
               "scherma": "Scherma", "atletica": "Atletica", "tennis": "Tennis", "ciclismo": "Ciclismo", "nuoto": "Nuoto",
               "altro": "Altri sport"}
 # percorso, categoria o zona, <title>, h1, descrizione
 SEZIONI = [
+    ("sezione/avvisi", {"cat": "avvisi"}, "Avvisi Benevento e Sannio: strade chiuse, orari, uffici e scadenze dei Comuni",
+     "Avvisi a Benevento e nel Sannio", "Strade chiuse, orari dei cimiteri e degli uffici, servizi, bandi e scadenze dei "
+     "Comuni del Sannio: quello che serve sapere oggi e nei prossimi giorni, paese per paese, con le fonti ufficiali."),
     ("sezione/strade", {"cat": "strade"}, "Strade Benevento oggi: chiusure, cantieri e traffico nel Sannio",
      "Strade di Benevento e provincia", "Strade chiuse, cantieri, incidenti e lavori a Benevento e nel Sannio, "
      "con le fonti ufficiali (ANAS, Provincia, Comuni) e i giornali locali messi a confronto."),

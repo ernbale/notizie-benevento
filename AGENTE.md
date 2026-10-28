@@ -741,15 +741,15 @@ Nel resoconto scrivi quanti ne hai aggiunti, e se l'elenco dice ATTENZIONE (copi
   "notizie": [ {
     "id": "parole-chiave-con-trattini (stabile, non cambia mai, unico anche rispetto all'archivio)",
     "titolo": "", "titolo_google": "45-60 caratteri: paese e fatto", "sintesi": "2-3 frasi",
-    "categoria": "strade|cronaca|meteo|politica|sport|eventi|altro",
+    "categoria": "avvisi|strade|cronaca|meteo|politica|sport|eventi|altro",
     "sport": "solo per categoria sport: calcio|calcio_a_5|basket|pallavolo|rugby|scherma|atletica|tennis|ciclismo|nuoto|altro",
-    "zona": "benevento|telesina|caudina|fortore|provincia",
+    "zona": "benevento|telesina|caudina|fortore|provincia (la corregge archivia.py dal luogo, vedi sotto)",
     "immagine": "tema da img/temi/temi.json (facoltativo, mai per la cronaca)",
-    "luogo": "paese o località", "pubblicato": "ISO dell'articolo fonte più recente, oppure solo AAAA-MM-GG se l'ora non è scritta",
+    "luogo": "il Comune per primo, poi la località: «San Giorgio del Sannio, piazza Immacolata»", "pubblicato": "ISO dell'articolo fonte più recente, oppure solo AAAA-MM-GG se l'ora non è scritta",
     "stato": "confermata|ufficiale|una_fonte (vedi regola 2)", "rilevante": false,
     "importanza": "1-5, il numero (vedi «L'importanza per i social»)",
     "in_vigore_fino": "AAAA-MM-GG, solo per avvisi ufficiali con una scadenza (lavori, divieti, ordinanze)",
-    "in_vigore_dal": "AAAA-MM-GG, il primo giorno dell'avviso (facoltativo; serve quando comincia più avanti)",
+    "in_vigore_dal": "AAAA-MM-GG, il primo giorno in cui vale l'avviso, come nel comunicato (serve quando comincia più avanti; mai il giorno in cui è uscito)",
     "traffico": "chiusa|blocchi|senso_unico|ristretta|bus, solo per strade chiuse o con disagi (vedi sotto)",
     "fonti": [ {"nome": "Testata", "url": "link all'articolo"}, {"nome": "Comune di …", "url": "…", "ufficiale": true} ],
     "nota": "solo se serve una correzione",
@@ -780,7 +780,23 @@ Nel resoconto scrivi quanti ne hai aggiunti, e se l'elenco dice ATTENZIONE (copi
 - `fonti` della notizia (quelle in prima pagina): una per testata, l'articolo più recente.
 - `rilevante` c'è sempre, come `true` o `false` (booleano, non testo). `importanza` c'è sempre, come numero da 1 a 5.
 - La categoria `meteo` sul sito si chiama **«Allerte»** (vedi «Le Allerte»); la categoria `sport` vuole anche il
-  campo `sport` (vedi «Lo sport»).
+  campo `sport` (vedi «Lo sport»). Nel menu del sito la voce «Allerte» c'è solo quando c'è un'allerta.
+- **`avvisi`** (dal 28 ott 2026, lui: «al posto di strade metti avvisi dove mettere chiusure strade orari eccetera»):
+  gli avvisi pratici dei Comuni e dei servizi, quelli che servono per fare qualcosa: orari di cimiteri, uffici e
+  sportelli (anche chiusi), acqua e luce sospese, rifiuti e raccolta, ecocentri, bandi, domande, bonus, elenchi e
+  scadenze, vaccini e servizi ASL con date e sedi. Le strade, i bus e i treni restano `strade`. Se è una notizia e non
+  un avviso (il Comune chiede un finanziamento, un progetto premiato) resta nella sua categoria, di solito `altro`.
+  Sul sito la voce «Avvisi» mostra `strade` e `avvisi` insieme, in ordine di quando servono (oggi, prossimi giorni,
+  domande e scadenze), e dal 22 ottobre al 2 novembre in cima i cimiteri paese per paese: per questo
+  `in_vigore_dal` e `in_vigore_fino` devono essere i giorni veri del comunicato (la raccolta di venerdì 30: dal 30 al
+  30; la sagra dal 29 ottobre al 1° novembre: dal 29, non dal giorno in cui è uscita). archivia.py avvisa se il
+  primo giorno scritto nel titolo non torna con `in_vigore_dal`.
+- **La zona la mette il programma** (dal 28 ott 2026, lui: «migliora il filtro benevento città perché compaiono anche
+  altri comuni»): archivia.py la ricava dal Comune scritto nel `luogo` (tabella `ZONA_COMUNE` dei 78 Comuni).
+  `benevento` è solo la città; i paesi intorno (San Giorgio, Sant'Angelo a Cupolo, Apice, Pietrelcina…) sono
+  `provincia`. Quindi nel `luogo` scrivi sempre per primo il Comune. Per un fatto di tutta la provincia scrivi
+  «Sannio» o «Provincia di Benevento» e la zona la scegli tu (di solito `provincia`); le trasferte del Benevento
+  restano `benevento`.
 - Per gli **avvisi ufficiali con una scadenza** (strade chiuse, lavori, divieti, ordinanze su scuole o acqua) scrivi
   `in_vigore_fino` con la data presa dal comunicato: restano in prima pagina finché vale l'avviso. Se il comunicato
   non dà una fine, non mettere il campo.

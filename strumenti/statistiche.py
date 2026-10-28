@@ -44,7 +44,7 @@ HOST = "notiziebenevento.it"
 GIORNI = 30
 ITERAZIONI = 600000
 SALE = hashlib.sha256(b"notiziebenevento.it/statistiche").digest()[:16]  # fisso: la pagina può ricordare la chiave
-NOMI_CAT = {"strade": "Strade", "cronaca": "Cronaca", "politica": "Politica", "sport": "Sport", "eventi": "Eventi", "meteo": "Allerte",
+NOMI_CAT = {"avvisi": "Avvisi", "strade": "Strade", "cronaca": "Cronaca", "politica": "Politica", "sport": "Sport", "eventi": "Eventi", "meteo": "Allerte",
             "altro": "Altro"}
 NOMI_ZONA = {"benevento": "Benevento città", "telesina": "Valle Telesina", "caudina": "Valle Caudina",
              "fortore": "Fortore e Tammaro", "provincia": "Altri comuni"}
