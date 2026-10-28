@@ -1078,7 +1078,7 @@
       speechSynthesis.cancel();
       // Frasi corte: alcuni browser si fermano da soli sui testi lunghi.
       var frasi = [];
-      parti.map(pulisci).filter(Boolean).forEach(function (t) {
+      (typeof parti === "function" ? parti() : parti).map(pulisci).filter(Boolean).forEach(function (t) {
         (t.match(/[^.!?;]+[.!?;]*/g) || [t]).forEach(function (f) { if (pulisci(f)) frasi.push(pulisci(f)); });
       });
       var voce = vocePreferita();
@@ -1100,6 +1100,42 @@
     return box;
   }
   if ("speechSynthesis" in window) speechSynthesis.getVoices();
+
+  // Ascolta e Condividi in tutte le pagine con un titolo (lui, 28 ott 2026: «questo deve comparire in tutte le pagine,
+  // in quelle dei bandi quando li apro non ci sono», «e anche le future»). Notizie e approfondimenti li mettono da sé;
+  // in tutte le altre (contributi, eventi, curiosità, Comuni, strade e scuole chiuse, carburanti, Calcio, Chi siamo,
+  // archivio, e quelle che verranno) li mette questo, sotto il titolo, appena l'articolo compare nella pagina: basta
+  // che la pagina sia un <article> col suo <h1> dentro #contenuto. Non nelle pagine «non trovata» né nella ricerca.
+  // Ascolta legge al clic quello che si vede: titolo, paragrafi, elenchi (non le tabelle, non i menu).
+  function testoPagina(art) {
+    var parti = [];
+    art.querySelectorAll("h1, h2, h3, p, li, dt, dd").forEach(function (x) {
+      if (x.closest(".ascolta, nav, .indietro, .occhiello, figure, form, table, .pagine, .cond-wrap")) return;
+      if (x.querySelector("p, li, h2, h3, dt") || !x.getClientRects().length) return;   // solo il testo, solo il visibile
+      var a = x.children.length === 1 && x.children[0].tagName === "A" ? x.children[0] : null;
+      if (a && pulisci(a.textContent) === pulisci(x.textContent)) return;   // «Vai al bando ufficiale ›»: un link, non testo
+      parti.push(x.textContent.replace(/[›‹]/g, ""));
+    });
+    return parti.slice(0, 400);
+  }
+  function azioniPagina() {
+    var art = document.querySelector("#contenuto article");
+    var h1 = art && art.querySelector("h1");
+    if (!h1 || art.querySelector(".ascolta") || art.querySelector("form") || /non trovat/i.test(h1.textContent)) return;
+    var az = ascolta(function () { return testoPagina(art); });
+    az.appendChild(condividi(pulisci(h1.textContent), location.pathname + location.search, true));
+    var meta = [].filter.call(art.children, function (x) { return x.classList.contains("meta"); })[0];
+    var dopo = meta || (h1.parentNode === art ? h1 : null);
+    if (dopo) art.insertBefore(az, dopo.nextSibling); else h1.parentNode.insertBefore(az, h1.nextSibling);
+  }
+  (function () {
+    var box = document.getElementById("contenuto"), attesa = null;
+    if (!box || !window.MutationObserver) return;
+    new MutationObserver(function () {
+      if (!attesa) attesa = setTimeout(function () { attesa = null; azioniPagina(); }, 0);
+    }).observe(box, { childList: true, subtree: true });
+    setTimeout(azioniPagina, 0);   // le pagine già scritte (contributi, curiosità, Chi siamo…): il JavaScript non le ridisegna
+  })();
 
   // Con una fonte ufficiale si mostra quella (come vista_ufficiale di strumenti/pagine.py, che scrive le pagine per
   // Google: le due devono restare uguali). I giornali solo dove aggiungono un fatto che lei non dice (citati in una
@@ -3170,9 +3206,7 @@
     if (lista(ev.artisti).length) voce("Con", lista(ev.artisti).join(", "));
     if (lista(ev.organizzatore).length) voce("Organizza", lista(ev.organizzatore).join(" e "));
     art.appendChild(sch);
-    var az = pulsantiCalendario(ev);
-    az.appendChild(condividi(ev.titolo, linkEvento(ev), true));
-    art.appendChild(az);
+    art.appendChild(pulsantiCalendario(ev));   // Condividi sta sotto il titolo, con Ascolta (azioniPagina)
     var ft = fotoTema(ev, "Immagine illustrativa creata con l'intelligenza artificiale: non è una foto dell'evento.", true);
     if (ft) art.appendChild(ft);
     var rc = el("div", "racconto", []);

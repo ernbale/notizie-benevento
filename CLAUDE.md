@@ -79,7 +79,9 @@ nuova la segue; se una pagina non la segue, è da sistemare.
    trovata» dalla ricerca e icona sparita). Una modifica si prova cliccando come fa lui (ricerca, elenchi, sezioni).
 3. **Notizie, eventi, approfondimenti e pagine di servizio** (Strade chiuse, Scuole chiuse, Carburanti, Calcio,
    Comuni, Chi siamo, Curiosità, Archivio, Meteo): «← Tutte le notizie» (la pagina di un contributo: «← Tutti i
-   contributi»), occhiello rosso e titolo grande (.appro).
+   contributi»), occhiello rosso e titolo grande (.appro), e sotto il titolo **Ascolta e Condividi** (lui, 28 ott 2026:
+   «deve comparire in tutte le pagine… e anche le future»). Li mette da solo azioniPagina() in index.html in ogni
+   pagina che sia un <article> col suo <h1> dentro #contenuto: una pagina nuova fatta così li ha senza fare niente.
 
 ## Correggere una notizia a mano
 1. `git pull --rebase` (le routine pubblicano spesso: rifallo anche subito prima del push).
