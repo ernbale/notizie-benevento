@@ -853,6 +853,117 @@ def html_strade_chiuse(ora, poi, oggi, aggiornato):
     return f'<article class="appro">{h}</article>'
 
 
+# ---------- la pagina Avvisi (sezione/avvisi): anche per Google, con lo speciale di stagione ----------
+# Lui, 28 ott 2026: «per me è difficile trovare info su quando le strade saranno chiuse, il cimitero quando è aperto»;
+# poi, su una pagina a parte per Ognissanti, «anche se quella pagina tra qualche giorno non serve più, pensa una
+# alternativa» → «fai 1»: la pagina Avvisi resta la stessa tutto l'anno e in cima cambia lo speciale del periodo, con il
+# titolo per Google. È la stessa pagina che disegna paginaAvvisi() in index.html (SPECIALI, tipoAvviso, gruppi):
+# scritta qui perché Google la legga anche senza JavaScript.
+RX_DEFUNTI = re.compile(r"cimiter|defunt|ognissanti|lampade votive", re.I)
+CAT_AVVISI = ("avvisi", "strade", "altro")   # le notizie che possono stare in uno speciale
+SPECIALI = [
+    {"da": "10-22", "a": "11-02", "rx": RX_DEFUNTI, "via": re.compile(r"loculi|bando", re.I),
+     "occhiello": "Speciale · 1° e 2 novembre", "titolo": "Ognissanti e Defunti: cimiteri, strade e sosta paese per paese",
+     "nota": "Gli orari dei cimiteri, le strade chiuse e i divieti annunciati dai Comuni.",
+     "manca": "Il tuo paese non c'è? Il Comune non ha ancora pubblicato gli orari: li aggiungiamo appena escono. ",
+     "title": "Avvisi Benevento: orari dei cimiteri per Ognissanti, strade chiuse e scadenze",
+     "descr": "Gli orari dei cimiteri per Ognissanti e i Defunti, le strade chiuse e i divieti a Benevento e nei paesi "
+              "del Sannio, Comune per Comune, e gli altri avvisi dei Comuni: uffici, acqua, rifiuti, scadenze."},
+]
+
+
+def speciale_di(oggi):
+    """Lo speciale del periodo (anche a cavallo dell'anno, «12-15»…«01-06»), o None."""
+    md = oggi.strftime("%m-%d")
+    return next((x for x in SPECIALI if (x["da"] <= md <= x["a"] if x["da"] <= x["a"] else md >= x["da"] or md <= x["a"])), None)
+
+
+def tipo_avviso(n):
+    """L'etichetta rossa sopra il titolo, come tipoAvviso() di index.html."""
+    t = str(n.get("titolo") or "")
+    if n.get("traffico") in TRAFFICO:
+        return TRAFFICO[n["traffico"]]
+    regole = ((r"sciopero", "Sciopero"), (r"\btren[io]\b|ferrovi", "Treni"), (r"\bbus\b|autobus|capolinea|fermat", "Bus"),
+              (r"parchegg", "Parcheggio"), (r"sosta", "Divieto di sosta"), (r"", "Strade")) if n.get("categoria") == "strade" else \
+        ((r"domande|bando|bonus|elenc|iscrizion", "Domande e bandi"), (r"\bentro\b|scadenz", "Scadenza"),
+         (r"cimiter|defunt|votive|loculi", "Cimitero"), (r"acqua|contatori|idric|alto calore", "Acqua"),
+         (r"senza luce|\bluce\b|elettric", "Luce"), (r"rifiut|ingombrant|raccolta|ecocentro", "Rifiuti"),
+         (r"vaccin|\basl\b|medic|ambulator", "Salute"), (r"sportell|uffic|passaporto|tributi", "Uffici"), (r"", "Avviso"))
+    return next(nome for rx, nome in regole if re.search(rx, t, re.I))
+
+
+def _quando_avviso(n, oggi):
+    """Come quandoStrada() di index.html: le date dell'avviso, «scade…» per domande e scadenze, sennò quando è uscito."""
+    if tipo_avviso(n) in ("Domande e bandi", "Scadenza"):
+        return f"scade {_quando_strada(n, oggi)[len('fino a '):]}" if n.get("in_vigore_fino") else f"uscito il {data_it(n.get('pubblicato'), True)}"
+    return _quando_strada(n, oggi) if n.get("in_vigore_fino") else f"uscito il {data_it(n.get('pubblicato'), True)}"
+
+
+def _paese_avviso(n):
+    cc = comuni_di(n.get("luogo"))
+    return cc[0] if len(cc) == 1 else "Più Comuni" if cc else "Tutto il Sannio"
+
+
+def _voce_avviso(n, oggi, paese=None):
+    f = next((x for x in vista_ufficiale(n).get("fonti") or [] if str(x.get("url") or "").startswith("http")), None)
+    titolo = n["titolo"][len(paese) + 2:] if paese and n["titolo"].startswith(paese + ", ") else n["titolo"]
+    quanti = len(re.split(r",| e ", str(n.get("luogo") or "")))
+    dove = "" if paese or not n.get("luogo") else (f"{quanti} Comuni · " if quanti > 3 else f"{_luogo_link(n['luogo'])} · ")
+    return (f'<li><div class="occhiello">{e(tipo_avviso(n))}</div>'
+            f'<a href="{percorso("notizia", n["id"])}">{e(titolo[:1].upper() + titolo[1:])}</a><span class="dove">{dove}'
+            + e(_quando_avviso(n, oggi))
+            + (f' · <a href="{e(f["url"])}" target="_blank" rel="noopener nofollow">{e(f.get("nome") or "Fonte")}</a>' if f else "")
+            + "</span></li>")
+
+
+def html_avvisi(notizie, oggi, h1):
+    """La pagina Avvisi come la disegna paginaAvvisi() in index.html, con le notizie della prima pagina."""
+    o = oggi.isoformat()
+    vive = [n for n in notizie if not n.get("_arch") and str(n.get("in_vigore_fino") or "9") >= o]
+    h = _testata_pagina("Avvisi", "", h1)
+    h += ('<p class="sommario">Strade chiuse, scioperi, orari di cimiteri e uffici, acqua, luce, rifiuti, bandi e scadenze dei '
+          "Comuni del Sannio: quello che serve sapere oggi e nei prossimi giorni, con il link alla fonte.</p>")
+    h += ('<p class="avv-vai"><a href="/strade-chiuse/">Strade chiuse oggi ›</a><a href="/scuole-chiuse/">Scuole chiuse ›</a>'
+          '<a href="/meteo.html">Meteo e allerte ›</a></p>')
+    visti = set()
+    sp = speciale_di(oggi)
+    if sp:
+        voci = [n for n in vive if n.get("categoria") in CAT_AVVISI and sp["rx"].search(n["titolo"]) and not sp["via"].search(n["titolo"])]
+        if voci:
+            per = {}
+            for n in voci:
+                per.setdefault(_paese_avviso(n), []).append(n)
+                visti.add(n["id"])
+            h += (f'<section class="avv-speciale"><div class="occhiello">{e(sp["occhiello"])}</div><h2>{e(sp["titolo"])}</h2>'
+                  f'<p class="avv-nota">{e(sp["nota"])}</p><div class="avv-paesi">')
+            for c in sorted(per, key=lambda c: (c != "Benevento", c)):
+                tit = f'<a href="{url_comune(c)}">{e(c)}</a>' if _comune(c) else e(c)
+                h += f'<div class="avv-paese"><h4>{tit}</h4><ul class="notizie-comune">'
+                h += "".join(_voce_avviso(n, oggi, c) for n in per[c]) + "</ul></div>"
+            h += (f'</div><p class="avv-nota">{e(sp["manca"])}Intanto guarda la pagina del tuo <a href="/comuni/">Comune</a>.</p>'
+                  "</section>")
+    def recente(n, giorni):
+        try:
+            return (oggi - dt.date.fromisoformat(str(n.get("pubblicato"))[:10])).days < giorni
+        except ValueError:
+            return False
+    avv = [n for n in vive if n.get("categoria") in ("avvisi", "strade") and n["id"] not in visti
+           and (n.get("in_vigore_fino") or recente(n, 2 if n["categoria"] == "strade" else 7))]
+    domande = [n for n in avv if tipo_avviso(n) in ("Domande e bandi", "Scadenza")]
+    avv = [n for n in avv if n not in domande]
+    in_corso = sorted((n for n in avv if n.get("in_vigore_fino") and str(n.get("in_vigore_dal") or "") <= o),
+                      key=lambda n: n["in_vigore_fino"])
+    poi = sorted((n for n in avv if str(n.get("in_vigore_dal") or "") > o), key=lambda n: n["in_vigore_dal"])
+    resto = [n for n in avv if n not in in_corso and n not in poi]
+    for titolo, gruppo in ((f"Oggi, {GIORNI[oggi.weekday()]} {oggi.day} {MESI_LUNGHI[oggi.month - 1]}", in_corso),
+                           ("Nei prossimi giorni", poi), ("Domande e scadenze", domande), ("Da sapere", resto)):
+        if gruppo:
+            h += f'<h3>{e(titolo)}</h3><ul class="notizie-comune">' + "".join(_voce_avviso(n, oggi) for n in gruppo) + "</ul>"
+    h += ('<p class="agg-chiusure">Ogni ora leggiamo gli albi e i siti dei 78 Comuni, i comunicati ufficiali e i giornali '
+          "locali. Le date sono quelle annunciate: un orario o un cantiere possono cambiare.</p>")
+    return f'<article class="appro avvisi-pag">{h}</article>'
+
+
 # ---------- prezzi dei carburanti (strumenti/carburanti.py → carburanti.json) ----------
 NOMI_CARBURANTI = {"benzina": "Benzina", "gasolio": "Diesel", "gpl": "GPL", "metano": "Metano"}
 
@@ -1983,11 +2094,17 @@ def main():
         dentro = [n for n in notizie if all(n.get("categoria" if k == "cat" else "zona") == v for k, v in filtro.items())]
         jsonld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": h1, "url": url,
                   "isPartOf": {"@type": "WebSite", "name": NOME, "url": SITO + "/"}}
-        seo = blocco_seo(f"{title} – {NOME}", descr, url, "/condivisione.png", jsonld=jsonld)
+        from facebook import fuso
+        oggi_qui = adesso.astimezone(fuso()).date()
+        sp = speciale_di(oggi_qui) if filtro.get("cat") == "avvisi" else None
+        seo = blocco_seo(f"{sp['title'] if sp else title} – {NOME}", sp["descr"] if sp else descr, url, "/condivisione.png",
+                         jsonld=jsonld)
         # solo il titolo: le notizie le mette index.html (un elenco qui farebbe saltare la pagina quando arrivano);
-        # i link alle notizie della sezione stanno nel riquadro in fondo (html_ultime)
+        # i link alle notizie della sezione stanno nel riquadro in fondo (html_ultime). La pagina Avvisi invece è scritta
+        # per intero (html_avvisi): index.html la ridisegna uguale.
+        corpo = html_avvisi(notizie, oggi_qui, h1) if filtro.get("cat") == "avvisi" else f'<h1 class="titolo-sezione">{e(h1)}</h1>'
         scrivi(os.path.join(sito, perc, "index.html"),
-               pagina(modello, seo, dict(filtro, h1=h1), f'<h1 class="titolo-sezione">{e(h1)}</h1>',
+               pagina(modello, seo, dict(filtro, h1=h1), corpo,
                       ultime=html_ultime([(h1, dentro[:DELLA_SEZIONE]), ("Le ultime notizie", notizie[:10])])))
         mappa.append((url, dentro[0].get("pubblicato") if dentro else None))
 

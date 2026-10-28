@@ -1414,9 +1414,21 @@
   // oggi, nei prossimi giorni, domande e scadenze. Dal 22 ottobre al 2 novembre in cima lo speciale per i Defunti,
   // paese per paese (lui: «per me è difficile trovare info su quando le strade saranno chiuse, il cimitero quando è
   // aperto»).
-  var RX_DEFUNTI = /cimiter|defunt|ognissanti|lampade votive/i;
+  // Gli speciali di stagione in cima alla pagina (come SPECIALI in pagine.py, che ci mette anche il titolo per Google):
+  // la pagina è la stessa tutto l'anno, cambia lo speciale (lui, 28 ott 2026: «fai 1»). Per aggiungerne uno (Natale…)
+  // basta una riga qui e una in pagine.py.
+  var SPECIALI = [
+    { da: "10-22", a: "11-02", rx: /cimiter|defunt|ognissanti|lampade votive/i, via: /loculi|bando/i,
+      occhiello: "Speciale · 1° e 2 novembre", titolo: "Ognissanti e Defunti: cimiteri, strade e sosta paese per paese",
+      nota: "Gli orari dei cimiteri, le strade chiuse e i divieti annunciati dai Comuni.",
+      manca: "Il tuo paese non c'è? Il Comune non ha ancora pubblicato gli orari: li aggiungiamo appena escono. " }
+  ];
+  var CAT_AVVISI = ["avvisi", "strade", "altro"];   // le notizie che possono stare in uno speciale
+  function specialeDi(oggi) {
+    var md = oggi.slice(5);
+    return SPECIALI.filter(function (x) { return x.da <= x.a ? md >= x.da && md <= x.a : md >= x.da || md <= x.a; })[0] || null;
+  }
   var NOMI_TRAFFICO = { chiusa: "Strada chiusa", blocchi: "Blocchi", senso_unico: "Senso unico", ristretta: "Carreggiata ristretta", bus: "Bus deviati" };
-  function periodoDefunti(oggi) { return oggi.slice(5) >= "10-22" && oggi.slice(5) <= "11-02"; }
   function comuneDi(n) {
     var l = String(n.luogo || "");
     if (/,.*,/.test(l) || / e /.test(l.split(",")[0])) return "Più Comuni";
@@ -1483,12 +1495,12 @@
     var recente = function (n, giorni) { return Date.now() - Date.parse(String(n.pubblicato).slice(0, 10) + "T12:00:00Z") < giorni * 864e5; };
     var tutte = (dati.notizie || []).filter(function (n) { return (!filtroZona || n.zona === filtroZona) && valido(n); });
     var visti = [];
-    if (periodoDefunti(oggi)) {
-      var def = tutte.filter(function (n) { return RX_DEFUNTI.test(n.titolo) && !/loculi|bando/i.test(n.titolo); });
+    var spec = specialeDi(oggi);
+    if (spec) {
+      var def = tutte.filter(function (n) { return CAT_AVVISI.indexOf(n.categoria) >= 0 && spec.rx.test(n.titolo) && !spec.via.test(n.titolo); });
       if (def.length) {
-        var sp = el("section", "avv-speciale", [el("div", "occhiello", ["Speciale · 1° e 2 novembre"]),
-          el("h2", "", ["Ognissanti e Defunti: cimiteri, strade e sosta paese per paese"]),
-          el("p", "avv-nota", ["Gli orari dei cimiteri, le strade chiuse e i divieti annunciati dai Comuni."])]);
+        var sp = el("section", "avv-speciale", [el("div", "occhiello", [spec.occhiello]), el("h2", "", [spec.titolo]),
+          el("p", "avv-nota", [spec.nota])]);
         var per = {}, griglia = el("div", "avv-paesi", []);
         def.forEach(function (n) { (per[comuneDi(n)] = per[comuneDi(n)] || []).push(n); visti.push(n); });
         Object.keys(per).sort(function (a, b) { return a === "Benevento" ? -1 : b === "Benevento" ? 1 : a.localeCompare(b, "it"); }).forEach(function (c) {
@@ -1499,8 +1511,7 @@
           griglia.appendChild(el("div", "avv-paese", [tit, ul]));
         });
         sp.appendChild(griglia);
-        var m = el("p", "avv-nota", ["Il tuo paese non c'è? Il Comune non ha ancora pubblicato gli orari: li aggiungiamo appena escono. " +
-          "Intanto guarda la pagina del tuo "]);
+        var m = el("p", "avv-nota", [spec.manca + "Intanto guarda la pagina del tuo "]);
         var lcs = el("a", "", ["Comune"]);
         lcs.href = "/comuni/";
         m.appendChild(lcs);
