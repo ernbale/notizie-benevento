@@ -438,8 +438,11 @@
   /* la pagina Contributi */
   .contr-riepilogo { font: 600 14px var(--sans); color: var(--grigio); margin: 14px 0 4px; }
   .contr-filtri { padding: 10px 0 14px; border-bottom: 1px solid var(--riga); }
-  .contr-riga { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 6px 0; }
-  .contr-etichetta { font: 700 12px var(--sans); text-transform: uppercase; letter-spacing: .6px; color: var(--rosso); width: 92px; flex: none; }
+  /* l'etichetta in una colonna, i bottoni nell'altra: quelli che vanno a capo restano allineati sotto «Tutti» (lui,
+     28 ott 2026, con una riga rossa sullo screenshot: «i filtri mettili allineati a tutti, penso che sia più ordinato») */
+  .contr-riga { display: grid; grid-template-columns: 92px 1fr; column-gap: 6px; align-items: start; margin: 6px 0; }
+  .contr-etichetta { font: 700 12px/30px var(--sans); text-transform: uppercase; letter-spacing: .6px; color: var(--rosso); }
+  .contr-bottoni { display: flex; flex-wrap: wrap; gap: 6px; }
   .contr-riga button { font: 600 13px var(--sans); background: #fff; color: var(--nero); border: 1px solid var(--riga); border-radius: 16px; padding: 5px 12px; cursor: pointer; }
   .contr-riga button:hover { border-color: var(--nero); }
   .contr-riga button[aria-pressed="true"] { background: var(--nero); color: #fff; border-color: var(--nero); }
@@ -481,8 +484,9 @@
   .contr-nota a { color: var(--blu); }
   @media (max-width: 760px) {
     .contr-lista { grid-template-columns: 1fr; }
-    .contr-etichetta { width: 100%; }
-    .contr-cerca, .contr-azzera { margin-left: 0; }
+    .contr-riga { grid-template-columns: 1fr; }
+    .contr-etichetta { line-height: 1.6; }
+    .contr-cerca, .contr-azzera, .contr-altri summary { margin-left: 0; }
     .appro .contr-dati { grid-template-columns: 1fr; gap: 2px; }
     .appro .contr-dati dd { margin-bottom: 8px; }
   }
@@ -2692,12 +2696,13 @@
       (agg && !isNaN(agg) ? " · aggiornato " + quando(contributi.aggiornato) : "")]));
     var pann = el("section", "contr-filtri", []), elenco = el("section", "contr-elenco", []);
     function riga(etichetta, chiave, valori) {
-      var r = el("div", "contr-riga", [el("span", "contr-etichetta", [etichetta])]);
+      var bottoni = el("div", "contr-bottoni", []);
+      var r = el("div", "contr-riga", [el("span", "contr-etichetta", [etichetta]), bottoni]);
       var tutti = el("button", "", ["Tutti"]);
       tutti.type = "button";
       tutti.setAttribute("aria-pressed", f[chiave] ? "false" : "true");
       tutti.addEventListener("click", function () { f[chiave] = ""; aggiorna(); });
-      r.appendChild(tutti);
+      bottoni.appendChild(tutti);
       Object.keys(valori).forEach(function (k) {
         var quanti = voci.filter(function (v) { var g = Object.assign({}, f); g[chiave] = k; return passaFiltri(v, g); }).length;
         if (!quanti && f[chiave] !== k) return;
@@ -2705,7 +2710,7 @@
         b.type = "button";
         b.setAttribute("aria-pressed", f[chiave] === k ? "true" : "false");
         b.addEventListener("click", function () { f[chiave] = f[chiave] === k ? "" : k; aggiorna(); });
-        r.appendChild(b);
+        bottoni.appendChild(b);
       });
       return r;
     }

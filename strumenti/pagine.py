@@ -1067,8 +1067,8 @@ def html_contributi(voci, oggi, aggiornato):
         b = "".join(f'<button type="button" aria-pressed="false">{e(nome)}<span class="n"> {n}</span></button>'
                     for k, nome in valori.items()
                     for n in [sum(1 for v in voci if k in (v.get(chiave) or []))] if n)
-        righe += (f'<div class="contr-riga"><span class="contr-etichetta">{etichetta}</span>'
-                  f'<button type="button" aria-pressed="true">Tutti</button>{b}</div>')
+        righe += (f'<div class="contr-riga"><span class="contr-etichetta">{etichetta}</span><div class="contr-bottoni">'
+                  f'<button type="button" aria-pressed="true">Tutti</button>{b}</div></div>')
     h += (f'<section class="contr-filtri"><div>{righe}</div><div class="contr-cerca"><input type="search" '
           'placeholder="Cerca: fotovoltaico, bar, affitto, assunzioni…" aria-label="Cerca tra i contributi"></div></section>')
     h += f'<section class="contr-elenco"><h3 class="titolo-col">{len(voci)} contributi, in ordine di scadenza</h3><div class="contr-lista">'
