@@ -74,7 +74,15 @@ def controlla(sito):
             if not m or (int(m.group(1)), MESI.index(m.group(2).lower()) + 1) != (d.day, d.month):
                 err.append(f"{nome}: «accadde oggi» ma giorno e mese del titolo non sono quelli della data {c['data']}")
         im = c.get("immagine")
-        if im:
+        if im and im.get("ia"):
+            # la foto fatta con l'IA (CURIOSITA.md, «La foto»): la fa strumenti/foto_ia.py alla pubblicazione
+            if im.get("file") != f"/img/curiosita/{c['slug']}.jpg":
+                err.append(f"{nome}: la foto dell'IA si chiama /img/curiosita/{c['slug']}.jpg")
+            if not 60 <= len(str(im.get("scena") or "").strip()) <= 700:
+                err.append(f"{nome}: la foto dell'IA vuole «scena», da 60 a 700 caratteri (CURIOSITA.md)")
+            if not str(im.get("mostra") or "").strip():
+                err.append(f"{nome}: la foto vuole «mostra», cosa si vede: il protagonista della storia (CURIOSITA.md)")
+        elif im:
             p = os.path.join(sito, str(im.get("file", "")).lstrip("/"))
             if not str(im.get("file", "")).startswith("/img/curiosita/") or not os.path.exists(p):
                 err.append(f"{nome}: la foto {im.get('file')} non c'è in img/curiosita/")

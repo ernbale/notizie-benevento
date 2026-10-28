@@ -42,12 +42,21 @@ si leggono tutti i titoli e i testi già in `curiosita.json`.
 
 ## La foto
 
-Solo file di Wikimedia Commons con licenza libera (CC BY, CC BY-SA, CC0, pubblico dominio) controllata sulla pagina del
-file; mai immagini generate. Meglio orizzontali e larghe almeno 900 pixel (sull'immagine dei social la foto è
+Le foto vere: solo file di Wikimedia Commons con licenza libera (CC BY, CC BY-SA, CC0, pubblico dominio) controllata sulla pagina del
+file. Meglio orizzontali e larghe almeno 900 pixel (sull'immagine dei social la foto è
 1080×600). Per una foto verticale (un ritratto) il ritaglio si centra col campo `fuoco_y` di `immagine`: dove sta il
 soggetto, da 0 (in alto) a 1 (in basso); senza, 0.5. Si salva in `img/curiosita/<slug>.jpg` (JPEG, lato lungo al massimo 1200, mai ingrandita). Nel campo
 `credito`: «Foto: <autore> · <licenza>» oppure, per le opere antiche, «<che cos'è> · pubblico dominio». Se non c'è una
-foto adatta e libera, niente `immagine`: esce un cartoncino col titolo. Niente nudi, niente immagini macabre.
+foto adatta e libera del protagonista, **la foto si fa con l'IA** (dal 28 ott 2026; lui, sulla curiosità delle janare
+uscita col solo cartoncino: «la storia che è uscita oggi non ha foto, regola tutte foto, se non la trovi ne crei una
+perfetta cinematografica con gpt», «deve rappresentare bene la scena raccontata»): in `immagine` metti
+`"file": "/img/curiosita/<slug>.jpg"`, `"ia": true`, `"mostra"` (cosa si vedrà) e `"scena"`, la scena da fotografare,
+in inglese, da 60 a 700 caratteri: **la scena raccontata** (la janara davanti alla porta con la scopa, il noce sul
+fiume, il piatto sulla tavola), con i luoghi e gli oggetti di qui, cinematografica; le persone sono inventate, mai
+persone vere riconoscibili (per una persona storica: di spalle, da lontano, o il suo luogo). Niente `credito` e
+`pagina`: la foto la fa `strumenti/foto_ia.py` alla pubblicazione e sul sito e sui social esce con la scritta che è
+fatta con l'intelligenza artificiale. Prima si cerca sempre la foto vera su Commons, come sopra. Niente nudi, niente
+immagini macabre.
 
 **La foto mostra il protagonista della storia** (il fossile, il vaso, la persona, il monumento, il piatto, la festa),
 non il paese dove è successo. Il proprietario, 27 ott 2026, sulla foto aerea di Pietraroja messa al posto del fossile
@@ -81,5 +90,5 @@ non si cambia più (sta sui social): si correggono solo errori veri, dicendolo n
 Chi scrive non basta: ogni curiosità nuova la rilegge da capo un secondo agente, che riapre le fonti e controlla frase
 per frase fatti, date, nomi, grafia dei detti, licenza della foto, italiano. Apre anche il file JPEG e guarda la foto:
 se non mostra il protagonista della storia, se non è di qui o se `mostra` non dice quello che si vede, la foto si
-cambia (le regole sono in «La foto»). Quello che non torna si corregge o si toglie; se una curiosità non regge, si
+cambia (le regole sono in «La foto»). Con la foto fatta dall'IA controlla la `scena`: deve essere la scena raccontata. Quello che non torna si corregge o si toglie; se una curiosità non regge, si
 butta e se ne scrive un'altra.

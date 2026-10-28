@@ -424,7 +424,9 @@ def immagine_curiosita(sito, c):
             sx = (f.width - W) // 2
             sy = min(max(0, round(f.height * fuoco - alto / 2)), f.height - alto)
             im.paste(f.crop((sx, sy, sx + W, sy + alto)), (0, y))
-        nota = credito_breve(c) + " · Wikimedia Commons"
+        # la foto fatta con l'IA quando su Commons non c'è quella del protagonista (CURIOSITA.md, dal 28 ott 2026)
+        nota = ("Immagine illustrativa creata con l'intelligenza artificiale" if (c.get("immagine") or {}).get("ia")
+                else credito_breve(c) + " · Wikimedia Commons")
         fn = _font(FONT_BOLD, 22)
         d.rectangle([0, y + alto - 40, fn.getlength(nota) + 40, y + alto], fill="#111111")
         d.text((20, y + alto - 20), nota, font=fn, fill="#ffffff", anchor="lm")
@@ -1403,8 +1405,10 @@ def html_curiosita(c, altre):
         pos = f' style="object-position: 50% {float(im.get("fuoco_y", 0.5)) * 100:.0f}%"' if "fuoco_y" in im else ""
         alt = im.get("mostra") or c["titolo"]   # «mostra»: cosa si vede nella foto (CURIOSITA.md)
         h += (f'<figure class="foto-tema"><img src="{e(im["file"])}" alt="{e(alt)}" loading="lazy"{pos}>'
-              f'<figcaption><a href="{e(im["pagina"])}" target="_blank" rel="noopener nofollow">{e(im["credito"])}'
-              "</a>, da Wikimedia Commons</figcaption></figure>")
+              + ("<figcaption>Immagine illustrativa creata con l'intelligenza artificiale: non è una foto vera.</figcaption>"
+                 if im.get("ia") else
+                 f'<figcaption><a href="{e(im["pagina"])}" target="_blank" rel="noopener nofollow">{e(im["credito"])}'
+                 "</a>, da Wikimedia Commons</figcaption>") + "</figure>")
     h += "".join(f"<p>{e(x)}</p>" for x in _paragrafi_curiosita(c["testo"]))
     h += '<h3>Fonti</h3><ul class="elenco-fonti">' + "".join(
         f"<li>{_link_fonte(f, f['titolo'])}</li>" for f in c.get("fonti") or []) + "</ul>"
@@ -2462,6 +2466,8 @@ def main():
     for c in cur_uscite:
         url = f"{SITO}/curiosita/{c['slug']}/"
         im = c.get("immagine") or {}
+        if im and not os.path.exists(os.path.join(sito, str(im.get("file", "")).lstrip("/"))):
+            im = {}   # la foto dell'IA non ancora fatta (strumenti/foto_ia.py): la pagina esce senza
         jsonld = {"@context": "https://schema.org", "@type": "Article", "headline": breve(c["titolo"], 110),
                   "datePublished": dt.datetime.combine(dt.date.fromisoformat(c["data"]), dt.time(ORA_CURIOSITA),
                                                        fuso()).isoformat(),

@@ -61,7 +61,10 @@ def paragrafi(c):
 
 
 def credito(c):
-    """«Foto: autore, licenza (Wikimedia Commons).» o niente se la curiosità non ha foto."""
+    """«Foto: autore, licenza (Wikimedia Commons).», la nota della foto fatta con l'IA o niente se la curiosità non ha
+    foto."""
+    if (c.get("immagine") or {}).get("ia"):
+        return "Immagine illustrativa creata con l'intelligenza artificiale."
     cr = ((c.get("immagine") or {}).get("credito") or "").strip()
     return f"{cr.replace(' · ', ', ')} (Wikimedia Commons)." if cr else ""
 

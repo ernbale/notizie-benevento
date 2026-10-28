@@ -12,6 +12,9 @@ inventate puoi mettere tutto»); mai una persona vera o famosa.
   tema), le salva in img/ia/<id>.jpg (1200 px) e img/ia/<id>-m.jpg (768 px) e le manda nel repository con un commit
   a parte, su una copia (worktree) di main: notizie.json non si tocca, lo scrivono i giri. Serve il segreto
   OPENAI_API_KEY di GitHub; senza, non fa niente. Al massimo MASSIMO_PER_GIRO foto a pubblicazione.
+- anche la foto della curiosità del giorno (curiosita.json), quando su Commons non c'è quella del protagonista
+  (CURIOSITA.md, «La foto»: "immagine" con "ia": true e "scena"): va in img/curiosita/<slug>.jpg (lui, 28 ott 2026,
+  sulla curiosità uscita senza foto: «la storia che è uscita oggi non ha foto… se non la trovi ne crei una»).
 - `--segna`: mette "foto_ia" ("img/ia/<id>") nelle notizie e negli approfondimenti che hanno la foto, nella copia che
   si pubblica (notizie.json e archivio): il sito e le schede dei social la mostrano.
 Lo esegue la pubblicazione (pubblica.yml) prima delle pagine: così la scheda di Instagram e Facebook ha già la foto.
@@ -35,11 +38,11 @@ import urllib.request
 RADICE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CART = os.path.join(RADICE, "img", "ia")
 MODELLO, MISURA = "gpt-image-2.5-sunburst", "1536x1024"
-QUALITA = {"notizia": "medium", "approfondimento": "high"}   # le storie sono poche e restano in vista giorni
+QUALITA = {"notizia": "medium", "approfondimento": "high", "curiosita": "high"}   # storie e curiosità sono poche
 MASSIMO_PER_GIRO = 8      # un errore non deve mai far partire centinaia di foto (e di spesa)
 INSIEME = 4               # foto chieste nello stesso momento
 # come img/temi (strumenti/foto_temi.py, «un pochino più cinematografiche», 27 ott 2026), ma la scena è quella della notizia
-CORNICE = ("Photograph illustrating a news story for a local news website in southern Italy, province of Benevento "
+CORNICE = ("Photograph illustrating {cosa} for a local news website in southern Italy, province of Benevento "
            "(Sannio). The scene: {scena}. Cinematic realistic photo, like a still from an Italian film: soft directional "
            "light, natural but rich color grading, gentle film grain, shallow depth of field, 35mm lens. Believable and "
            "sober, no exaggerated colors, no lens flares. Any people are fictional, with natural believable faces: never "
@@ -55,19 +58,27 @@ def ha_tema(x):
     return bool(x.get("immagine")) and x.get("categoria") != "cronaca"
 
 
-def da_fare(d, oggi):
-    """(tipo, voce) della prima pagina che hanno bisogno della foto dell'IA e non ce l'hanno ancora: prima le storie,
-    poi le notizie più recenti (sono quelle che stanno per uscire sui social)."""
+def da_fare(d, oggi, curiosita=()):
+    """Le foto che mancano, come lavori {tipo, id, scena, base (il file senza .jpg)}: prima le curiosità e le storie,
+    poi le notizie della prima pagina più recenti (sono quelle che stanno per uscire sui social)."""
     out = []
+    ieri = (oggi - dt.timedelta(days=1)).isoformat()
+    for c in curiosita:   # solo da ieri in poi: quelle già uscite da giorni non si rifanno
+        im = c.get("immagine") if isinstance(c.get("immagine"), dict) else {}
+        if im.get("ia") and str(im.get("scena") or "").strip() and str(c.get("data") or "") >= ieri:
+            out.append({"tipo": "curiosita", "id": str(c.get("slug") or ""), "scena": im["scena"],
+                        "base": os.path.join(RADICE, "img", "curiosita", str(c.get("slug") or ""))})
     for ap in d.get("approfondimenti", []):
         if not ap.get("archiviato") and not ha_foto_vera(ap) and str(ap.get("scena") or "").strip():
-            out.append(("approfondimento", ap))
+            out.append({"tipo": "approfondimento", "id": str(ap.get("id") or ""), "scena": ap["scena"],
+                        "base": percorso(str(ap.get("id") or ""))})
     notizie = [n for n in d.get("notizie", []) if not ha_foto_vera(n) and not ha_tema(n) and not n.get("diretta_calcio")
                and str(n.get("scena") or "").strip()]
     notizie.sort(key=lambda n: str(n.get("pubblicato") or ""), reverse=True)
-    out += [("notizia", n) for n in notizie]
-    return [(t, x) for t, x in out if ID.match(str(x.get("id", ""))) and not os.path.exists(percorso(x["id"]) + ".jpg")
-            and not os.path.exists(percorso(x["id"]) + ".no")]
+    out += [{"tipo": "notizia", "id": str(n.get("id") or ""), "scena": n["scena"], "base": percorso(str(n.get("id") or ""))}
+            for n in notizie]
+    return [x for x in out if ID.match(x["id"]) and not os.path.exists(x["base"] + ".jpg")
+            and not os.path.exists(x["base"] + ".no")]
 
 
 def percorso(id_):
@@ -77,7 +88,8 @@ def percorso(id_):
 def genera_una(chiave, x, tipo):
     """Il JPEG grande e quello medio della foto, o None se OpenAI la rifiuta (si segna, per non riprovarci ogni ora)."""
     from PIL import Image
-    prompt = CORNICE.format(scena=str(x["scena"]).strip().rstrip("."))
+    cosa = "a story about the history and folk traditions of Benevento" if tipo == "curiosita" else "a news story"
+    prompt = CORNICE.format(cosa=cosa, scena=str(x["scena"]).strip().rstrip("."))
     corpo = json.dumps({"model": MODELLO, "prompt": prompt, "size": MISURA, "quality": QUALITA[tipo], "n": 1}).encode()
     req = urllib.request.Request("https://api.openai.com/v1/images/generations", data=corpo, method="POST",
                                  headers={"Authorization": f"Bearer {chiave}", "Content-Type": "application/json"})
@@ -135,41 +147,48 @@ def genera(file_notizie, oggi):
     chiave = os.environ.get("OPENAI_API_KEY", "").strip()
     with open(file_notizie, encoding="utf-8") as f:
         d = json.load(f)
-    lista = da_fare(d, oggi)
+    try:
+        with open(os.path.join(RADICE, "curiosita.json"), encoding="utf-8") as f:
+            curiosita = json.load(f).get("curiosita") or []
+    except (OSError, ValueError):
+        curiosita = []
+    lista = da_fare(d, oggi, curiosita)
     if not lista:
         print("foto IA: nessuna da fare")
         return
     if not chiave:
         print(f"::warning::foto IA: {len(lista)} da fare ma manca il segreto OPENAI_API_KEY: "
-              + ", ".join(x["id"] for _, x in lista[:MASSIMO_PER_GIRO]))
+              + ", ".join(x["id"] for x in lista[:MASSIMO_PER_GIRO]))
         return
     os.makedirs(CART, exist_ok=True)
     nuovi, ids = [], []
 
-    def una(tx):
+    def una(x):
         try:
-            return tx, genera_una(chiave, tx[1], tx[0])
+            return x, genera_una(chiave, x, x["tipo"])
         except Exception as e:   # un errore di rete o di credito non deve fermare la pubblicazione
-            print(f"::warning::foto IA di {tx[1]['id']}: {type(e).__name__} {str(e)[:200]}")
-            return tx, False
+            print(f"::warning::foto IA di {x['id']}: {type(e).__name__} {str(e)[:200]}")
+            return x, False
 
     from concurrent.futures import ThreadPoolExecutor
     with ThreadPoolExecutor(INSIEME) as ex:   # una foto ci mette 30-40 secondi: insieme, la pubblicazione non aspetta
         fatte = list(ex.map(una, lista[:MASSIMO_PER_GIRO]))
-    for (tipo, x), pezzi in fatte:
+    for x, pezzi in fatte:
         if pezzi is False:
             continue
         if pezzi is None:
-            p = percorso(x["id"]) + ".no"
+            p = x["base"] + ".no"
             open(p, "w").close()
             nuovi.append(os.path.relpath(p, RADICE))
             continue
         for suf, b in pezzi:
-            with open(percorso(x["id"]) + suf, "wb") as f:
+            if x["tipo"] == "curiosita" and suf != ".jpg":
+                continue   # la curiosità ha un file solo (CURIOSITA.md: lato lungo al massimo 1200)
+            with open(x["base"] + suf, "wb") as f:
                 f.write(b)
-            nuovi.append(os.path.relpath(percorso(x["id"]) + suf, RADICE))
+            nuovi.append(os.path.relpath(x["base"] + suf, RADICE))
         ids.append(x["id"])
-        print(f"foto IA: {tipo} {x['id']} ({QUALITA[tipo]})")
+        print(f"foto IA: {x['tipo']} {x['id']} ({QUALITA[x['tipo']]})")
     if len(lista) > MASSIMO_PER_GIRO:
         print(f"foto IA: altre {len(lista) - MASSIMO_PER_GIRO} al prossimo giro")
     if nuovi:
