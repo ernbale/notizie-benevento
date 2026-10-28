@@ -1,7 +1,135 @@
 {
- "aggiornato": "2026-10-28T20:10+01:00",
+ "aggiornato": "2026-10-28T21:10+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-corso-garibaldi-60enne-malore-alla-guida-municipale",
+   "titolo": "Benevento, 60enne si sente male mentre guida in corso Garibaldi: lo soccorrono i vigili urbani",
+   "titolo_google": "Benevento, 60enne si sente male alla guida in corso Garibaldi",
+   "sintesi": "Un uomo di circa 60 anni si è sentito male mentre era al volante della sua auto in corso Garibaldi, nel centro di Benevento, vicino a piazza Roma. Una pattuglia della Polizia Municipale lo ha notato, si è fermata a controllare come stava e ha chiamato subito il 118.",
+   "categoria": "cronaca",
+   "zona": "benevento",
+   "luogo": "Benevento, corso Garibaldi angolo piazza Roma",
+   "pubblicato": "2026-10-28T20:56:00+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 3,
+   "fonti": [
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/la-polizia-municipale-interviene-prestare-soccorso-un-cittadino-sessantenne-colto-da-un-improvviso"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/malore-in-auto-soccorso-un-sessantenne-nel-centro-di-benevento/"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/28/benevento-60enne-colto-da-malore-mentre-guida-tempestivo-intervento-della-municipale/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/28/benevento-60enne-si-sente-male-mentre-e-alla-guida-interviene-municipale-ed-evita-il-peggio/"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/cronaca/2026/polizia-municipale-un-tempestivo-intervento-salva-un-60enne-al-corso-garibaldi.html"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/corso-garibaldi-sessantenne-malore-municipale-evita-peggio/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Un automobilista di circa 60 anni si è sentito male mentre guidava la sua auto nel centro di Benevento, in corso Garibaldi, all'incrocio con piazza Roma. A soccorrerlo per primi sono stati gli agenti della Polizia Municipale, i vigili urbani della città.",
+      "fonti": [
+       "Gazzetta di Benevento",
+       "BeneventoNews24",
+       "InfoSannio",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "La pattuglia era in giro per i normali controlli e ha visto che l'uomo al volante era in evidente difficoltà. Gli agenti si sono fermati a capire come stava e, visto che serviva un medico, hanno chiamato subito il 118, così i soccorsi sono partiti in fretta.",
+      "fonti": [
+       "Gazzetta di Benevento",
+       "Anteprima24",
+       "NTR24",
+       "BeneventoNews24",
+       "InfoSannio",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Secondo la Polizia Municipale, l'intervento rapido ha evitato che le condizioni dell'uomo peggiorassero.",
+      "fonti": [
+       "Gazzetta di Benevento",
+       "Anteprima24",
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Un 60enne colto da malore mentre guidava nel centro di Benevento, soccorso dagli agenti della Municipale che hanno chiamato il 118.",
+      "fonti": [
+       "Gazzetta di Benevento",
+       "Anteprima24",
+       "NTR24",
+       "BeneventoNews24",
+       "InfoSannio",
+       "Cronache del Sannio"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "In che giorno e a che ora è successo di preciso.",
+     "Come sta adesso l'uomo e se è stato portato in ospedale."
+    ],
+    "fonti": [
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "La Polizia Municipale interviene a prestare soccorso a un cittadino sessantenne colto da un improvviso malore",
+      "url": "https://www.gazzettabenevento.it/it/la-polizia-municipale-interviene-prestare-soccorso-un-cittadino-sessantenne-colto-da-un-improvviso",
+      "data": "28 ott, 20:29"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Malore in auto, soccorso un sessantenne nel centro di Benevento",
+      "url": "https://www.anteprima24.it/benevento/malore-in-auto-soccorso-un-sessantenne-nel-centro-di-benevento/",
+      "data": "28 ott, 20:39"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Benevento, 60enne colto da malore mentre guida: tempestivo intervento della Municipale",
+      "url": "https://www.ntr24.tv/2026/10/28/benevento-60enne-colto-da-malore-mentre-guida-tempestivo-intervento-della-municipale/",
+      "data": "28 ott, 20:45"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Benevento, 60enne si sente male mentre è alla guida: interviene Municipale ed evita il peggio",
+      "url": "https://www.beneventonews24.it/2026/10/28/benevento-60enne-si-sente-male-mentre-e-alla-guida-interviene-municipale-ed-evita-il-peggio/",
+      "data": "28 ott, 20:46"
+     },
+     {
+      "nome": "InfoSannio",
+      "titolo": "Polizia Municipale. Un tempestivo intervento salva un 60enne al Corso Garibaldi",
+      "url": "https://www.infosannionews.it/cronaca/2026/polizia-municipale-un-tempestivo-intervento-salva-un-60enne-al-corso-garibaldi.html",
+      "data": "28 ott, 20:51"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Corso Garibaldi, 60enne accusa un malore: l’intervento della Municipale evita il peggio",
+      "url": "https://www.cronachedelsannio.it/sannionews24/corso-garibaldi-sessantenne-malore-municipale-evita-peggio/",
+      "data": "28 ott, 20:56"
+     }
+    ]
+   }
+  },
   {
    "id": "arpaise-esercitazione-campania-felix-esercito-2026",
    "titolo": "Arpaise, conclusa l'esercitazione «Campania Felix» dell'Esercito: una settimana di campo per le emergenze con Protezione civile e Croce Rossa",
@@ -450,6 +578,10 @@
     {
      "nome": "Anteprima24",
      "url": "https://www.anteprima24.it/benevento/industriali-benevento-caserta-sviluppo-turistico/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/442470/sviluppo-manifesto-programmatico-di-confindustria-benevento-e-caserta-video.shtml"
     }
    ],
    "articolo": {
@@ -467,7 +599,8 @@
       "fonti": [
        "TV7 Benevento",
        "BeneventoNews24",
-       "NTR24"
+       "NTR24",
+       "Ottopagine"
       ]
      },
      {
@@ -530,6 +663,12 @@
       "titolo": "Gli industriali di Benevento e Caserta unite per lo sviluppo turistico comune",
       "url": "https://www.anteprima24.it/benevento/industriali-benevento-caserta-sviluppo-turistico/",
       "data": "28 ott, 18:53"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Sviluppo. Manifesto programmatico di Confindustria Benevento e Caserta - VIDEO",
+      "url": "https://www.ottopagine.it/bn/attualita/442470/sviluppo-manifesto-programmatico-di-confindustria-benevento-e-caserta-video.shtml",
+      "data": "28 ott, 20:21"
      }
     ]
    },
@@ -18724,7 +18863,8 @@
      "fatto": "I consiglieri di opposizione replicano a Noi di Centro: la protesta di centinaia di cittadini «ha lasciato il segno».",
      "fonti": [
       "BeneventoNews24 (28/10, opposizione)",
-      "NTR24 (28/10, opposizione)"
+      "NTR24 (28/10, opposizione)",
+      "Cronache del Sannio (28/10, opposizione)"
      ]
     }
    ],
@@ -18804,6 +18944,12 @@
      "titolo": "“Protesta di centinaia di cittadini ha lasciato il segno. Solco incolmabile con chi non condanna corruzione”",
      "url": "https://www.ntr24.tv/2026/10/28/protesta-di-centinaia-di-cittadini-ha-lasciato-il-segno-solco-incolmabile-con-chi-non-condanna-corruzione/",
      "data": "28 ott, 19:14"
+    },
+    {
+     "nome": "Cronache del Sannio (28/10, opposizione)",
+     "titolo": "L’opposizione: “La protesta dei cittadini ha lasciato il segno”",
+     "url": "https://www.cronachedelsannio.it/sannionews24/lopposizione-la-protesta-dei-cittadini-ha-lasciato-segno/",
+     "data": "28 ott, 20:00"
     }
    ],
    "scena": "The council chamber of the city hall of Benevento during a tense evening session: councillors seated at curved wooden benches with microphones, some standing and arguing with papers in hand, citizens crowding the public gallery, warm light from old chandeliers, a sense of political confrontation"
