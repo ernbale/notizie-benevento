@@ -42,7 +42,7 @@ FONT_BLACK = os.path.join(QUI, "font", "SourceSerif4-Black.ttf")
 MESI = ["gen", "feb", "mar", "apr", "mag", "giu", "lug", "ago", "set", "ott", "nov", "dic"]
 MESI_LUNGHI = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre",
                "ottobre", "novembre", "dicembre"]
-NOMI_CAT = {"avvisi": "Avvisi", "strade": "Strade", "cronaca": "Cronaca", "politica": "Politica", "sport": "Sport", "eventi": "Eventi",
+NOMI_CAT = {"avvisi": "Avvisi", "cultura": "Cultura", "strade": "Strade", "cronaca": "Cronaca", "politica": "Politica", "sport": "Sport", "eventi": "Eventi",
             "meteo": "Allerte", "altro": "Altro"}
 NOMI_SPORT = {"calcio": "Calcio", "calcio_a_5": "Calcio a 5", "basket": "Basket", "pallavolo": "Pallavolo", "rugby": "Rugby",
               "scherma": "Scherma", "atletica": "Atletica", "tennis": "Tennis", "ciclismo": "Ciclismo", "nuoto": "Nuoto",
@@ -70,6 +70,9 @@ SEZIONI = [
     ("sezione/allerte", {"cat": "meteo"}, "Allerte Benevento: allerta meteo, scuole chiuse e terremoti nel Sannio",
      "Allerte a Benevento e nel Sannio", "Allerte meteo della Protezione civile per le zone del Sannio, chiusure di "
      "scuole e parchi decise dai Comuni, terremoti e danni del maltempo a Benevento e provincia."),
+    ("sezione/cultura", {"cat": "cultura"}, "Cultura Benevento: libri, teatro, musica e mostre nel Sannio",
+     "Cultura a Benevento e nel Sannio", "Libri e autori, presentazioni, teatro, musica, cinema, mostre, musei e premi: "
+     "le notizie di cultura di Benevento e del Sannio e gli appuntamenti dei prossimi giorni."),
     ("sezione/altro", {"cat": "altro"}, "Altre notizie da Benevento e provincia",
      "Altre notizie dal Sannio", "Lavoro, salute, scuola, ambiente e servizi: le altre notizie di Benevento "
      "e provincia confrontate tra i giornali locali."),
@@ -1676,7 +1679,7 @@ def html_comuni(quante):
 
 # ---------- eventi del calendario ----------
 NOMI_TIPO = {"teatro": "Teatro", "danza": "Danza", "concerto": "Concerto", "lirica": "Lirica", "mostra": "Mostra",
-             "museo": "Museo", "cinema": "Cinema", "sagra": "Sagra", "festa": "Festa", "mercatino": "Mercatino",
+             "museo": "Museo", "cinema": "Cinema", "libro": "Libri", "sagra": "Sagra", "festa": "Festa", "mercatino": "Mercatino",
              "natale": "Natale", "carnevale": "Carnevale", "altro": "Evento"}
 GIORNI = ["lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato", "domenica"]
 

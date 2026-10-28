@@ -26,9 +26,9 @@ import re
 import subprocess
 import sys
 
-CAT = {"strade", "avvisi", "cronaca", "meteo", "politica", "sport", "eventi", "altro"}
+CAT = {"strade", "avvisi", "cronaca", "meteo", "politica", "sport", "eventi", "cultura", "altro"}
 SPORT = {"calcio", "calcio_a_5", "basket", "pallavolo", "rugby", "scherma", "atletica", "tennis", "ciclismo", "nuoto", "altro"}
-UNA_FONTE_CAT = ("cronaca", "strade", "avvisi", "altro", "politica", "sport")   # regola 2 (politica dal 22 ott 2026, con la regola 9)
+UNA_FONTE_CAT = ("cronaca", "strade", "avvisi", "cultura", "altro", "politica", "sport")   # regola 2 (politica dal 22 ott 2026, con la regola 9)
 ZONE = {"benevento", "telesina", "caudina", "fortore", "provincia"}
 # La zona di ogni Comune del Sannio (28 ott 2026, lui: «migliora il filtro Benevento città perché compaiono anche altri
 # comuni»): la mette il programma dal luogo della notizia (zona_dal_luogo), non l'agente. «benevento» è solo la città;
@@ -67,11 +67,11 @@ GIORNO = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 GIORNI_PRIMA_PAGINA = 3      # oggi + i 2 giorni prima
 GIORNI_APPROFONDIMENTO = 7
 # eventi del calendario (eventi.json)
-TIPI_EVENTO = {"teatro", "danza", "concerto", "lirica", "mostra", "museo", "cinema", "sagra", "festa", "mercatino",
+TIPI_EVENTO = {"teatro", "danza", "concerto", "lirica", "mostra", "museo", "cinema", "libro", "sagra", "festa", "mercatino",
                "natale", "carnevale", "altro"}
 TEMA_TIPO = {"teatro": "teatro", "danza": "danza", "concerto": "concerto", "lirica": "musica-classica", "mostra": "mostra",
              "museo": "museo", "cinema": "cinema", "sagra": "sagra", "festa": "luminarie", "mercatino": "mercato",
-             "natale": "natale", "carnevale": "carnevale"}
+             "natale": "natale", "carnevale": "carnevale", "libro": "libri"}
 ORA = re.compile(r"^([01]\d|2[0-3]):[0-5]\d$")
 # «orari» deve dire le ore (o almeno il momento del giorno): con i soli giorni la pagina ripeteva «Quando» (25 ott 2026,
 # Presepe di Casali di Faicchio: «Orari: 26 e 27 dicembre 2026, 2 e 3 gennaio 2027»)

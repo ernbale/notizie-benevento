@@ -29,8 +29,8 @@ claude.ai/code dal telefono): qui c'è quello che serve per riprendere il lavoro
   Facebook, Instagram. Ci mette circa 2 minuti.
 
 ## Il menu del sito (deciso con lui il 28 ott 2026)
-Tutte · Cronaca · Politica · Sport · Calcio · (Allerte, solo con un'allerta) · Avvisi · Eventi · Altro · zona · Comuni ·
-Archivio (lui: «Allerte e Avvisi spostale dopo calcio»); sul computer su una riga sola (da 960 px). «Avvisi» (categorie `strade` + `avvisi`, pagina /sezione/avvisi/)
+Tutte · Cronaca · Politica · Sport · Calcio · (Allerte, solo con un'allerta) · Avvisi · Eventi · Cultura · Altro · zona · Comuni ·
+Archivio (lui: «Allerte e Avvisi spostale dopo calcio», «la pagina cultura mettila dopo eventi»); sul computer su una riga sola (da 960 px). «Avvisi» (categorie `strade` + `avvisi`, pagina /sezione/avvisi/)
 ha preso il posto di «Strade»: in ordine di quando servono, dal 22 ottobre al 2 novembre con i cimiteri paese per
 paese. La zona la ricava archivia.py dal luogo (`ZONA_COMUNE`): «Benevento città» è solo Benevento. Le colonne
 a zig-zag di «Le altre notizie» le ha scelte lui (niente spazi vuoti): non riproporle riga per riga.

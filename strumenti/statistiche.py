@@ -44,7 +44,7 @@ HOST = "notiziebenevento.it"
 GIORNI = 30
 ITERAZIONI = 600000
 SALE = hashlib.sha256(b"notiziebenevento.it/statistiche").digest()[:16]  # fisso: la pagina può ricordare la chiave
-NOMI_CAT = {"avvisi": "Avvisi", "strade": "Strade", "cronaca": "Cronaca", "politica": "Politica", "sport": "Sport", "eventi": "Eventi", "meteo": "Allerte",
+NOMI_CAT = {"avvisi": "Avvisi", "cultura": "Cultura", "strade": "Strade", "cronaca": "Cronaca", "politica": "Politica", "sport": "Sport", "eventi": "Eventi", "meteo": "Allerte",
             "altro": "Altro"}
 NOMI_ZONA = {"benevento": "Benevento città", "telesina": "Valle Telesina", "caudina": "Valle Caudina",
              "fortore": "Fortore e Tammaro", "provincia": "Altri comuni"}
@@ -805,7 +805,7 @@ STESSA_FONTE = {"LabTV": "Lab TV", "Lab Tv": "Lab TV", "Infosannio": "InfoSannio
 
 # ---------- il calendario degli eventi (dal 25 ott 2026) ----------
 NOMI_TIPO = {"teatro": "Teatro", "danza": "Danza", "concerto": "Concerti", "lirica": "Lirica", "mostra": "Mostre",
-             "museo": "Musei", "cinema": "Cinema", "sagra": "Sagre", "festa": "Feste", "mercatino": "Mercatini",
+             "museo": "Musei", "cinema": "Cinema", "libro": "Libri", "sagra": "Sagre", "festa": "Feste", "mercatino": "Mercatini",
              "natale": "Natale", "carnevale": "Carnevale", "altro": "Altro"}
 
 

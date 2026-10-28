@@ -61,12 +61,12 @@
   .menu button[aria-pressed="true"] { border-bottom-color: var(--rosso); }
   .menu select { font: 500 14px var(--sans); background: transparent; border: 1px solid var(--riga); padding: 4px 6px; color: var(--nero); }
   .menu .voce-allerta { color: #fff; background: var(--rosso); padding: 3px 9px; border-radius: 3px; border-bottom: 0; }
-  @media (min-width: 960px) { .menu { flex-wrap: nowrap; gap: 4px 12px; } .menu .cerca-campo input { width: 175px; } }
+  @media (min-width: 960px) { .menu { flex-wrap: nowrap; gap: 4px 10px; } .menu .cerca-campo input { width: 155px; } }
   @media (min-width: 960px) and (max-width: 1119px) {
-    .menu { gap: 4px 9px; }
-    .menu button, .menu .link-comuni, .menu .link-archivio { font-size: 14px; }
-    .menu select { font-size: 13.5px; padding: 4px; }
-    .menu .cerca-campo input { width: 100px; }
+    .menu { gap: 4px 7px; }
+    .menu button, .menu .link-comuni, .menu .link-archivio { font-size: 13.5px; }
+    .menu select { font-size: 13px; padding: 4px 2px; }
+    .menu .cerca-campo input { width: 90px; }
   }
 
   /* la pagina Avvisi: lo stile della pagina «Strade chiuse» (.appro, .notizie-comune) e il riquadro dello speciale */
@@ -418,6 +418,16 @@
   .chiusure-box { display: block; text-decoration: none; color: var(--nero); margin-bottom: 18px; }
   .chiusure-box .titolo-col { border-top-color: var(--rosso); color: var(--rosso); margin-bottom: 8px; }
   .storia-corso { max-width: 760px; margin: 14px 0 6px; }
+  .appuntamenti { margin: 14px 0 8px; }
+  .appuntamenti ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0 22px; }
+  .appuntamenti li { padding: 8px 0 10px; border-bottom: 1px solid var(--riga); font: 500 14px/1.35 var(--sans); }
+  .appuntamenti .ap-data { display: block; font: 700 12.5px var(--sans); color: var(--rosso); }
+  .appuntamenti .ap-tipo { display: block; font: 700 11px var(--sans); text-transform: uppercase; letter-spacing: .5px; color: var(--grigio); margin: 2px 0; }
+  .appuntamenti li a { display: block; font: 700 16px/1.3 var(--serif); color: var(--nero); text-decoration: none; }
+  .appuntamenti li a:hover { text-decoration: underline; }
+  .appuntamenti .ap-dove { display: block; color: var(--grigio); font-size: 13px; margin-top: 2px; }
+  @media (max-width: 900px) { .appuntamenti ul { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 560px) { .appuntamenti ul { grid-template-columns: 1fr; } }
   .storia-corso .titolo-col { border-top-color: var(--rosso); color: var(--rosso); }
   .chiusure-box .cz-testo { display: block; font: 700 17px/1.3 var(--serif); }
   .chiusure-box .cz-link { display: block; margin-top: 6px; font: 600 13px var(--sans); color: var(--blu); }
@@ -717,6 +727,7 @@
     <button type="button" data-cat="meteo" aria-pressed="false" class="voce-allerta" hidden>Allerte</button>
     <button type="button" data-cat="avvisi" aria-pressed="false">Avvisi</button>
     <button type="button" data-cat="eventi" aria-pressed="false">Eventi</button>
+    <button type="button" data-cat="cultura" aria-pressed="false">Cultura</button>
     <button type="button" data-cat="altro" aria-pressed="false">Altro</button>
     <select id="zona" aria-label="Zona">
       <option value="">Tutte le zone</option>
@@ -750,7 +761,7 @@
 
 <script>
 (function () {
-  var NOMI_CAT = { avvisi: "Avvisi", strade: "Strade", cronaca: "Cronaca", politica: "Politica", sport: "Sport", eventi: "Eventi", meteo: "Allerte", altro: "Altro" };
+  var NOMI_CAT = { avvisi: "Avvisi", cultura: "Cultura", strade: "Strade", cronaca: "Cronaca", politica: "Politica", sport: "Sport", eventi: "Eventi", meteo: "Allerte", altro: "Altro" };
   var NOMI_SPORT = { calcio: "Calcio", calcio_a_5: "Calcio a 5", basket: "Basket", pallavolo: "Pallavolo", rugby: "Rugby",
     scherma: "Scherma", atletica: "Atletica", tennis: "Tennis", ciclismo: "Ciclismo", nuoto: "Nuoto", altro: "Altri sport" };
   var filtroSport = "";
@@ -1660,6 +1671,9 @@
     if (FISSA && FISSA.h1 && filtroCat === (FISSA.cat || "") && filtroZona === (FISSA.zona || "")) box.appendChild(el("h1", "titolo-sezione", [FISSA.h1]));
     if (filtroCat === "strade") box.appendChild(linkTutte("/strade-chiuse/", "Le strade chiuse oggi e nei prossimi giorni ›"));
     var lista = filtrate();
+    // in Cultura, in cima i prossimi appuntamenti di teatro, musica, mostre, cinema e libri (lui, 28 ott 2026:
+    // «sezione cultura con pagina per google», «mettila dopo eventi»)
+    if (filtroCat === "cultura") box.appendChild(appuntamentiCultura());
     // in Politica, in cima l'approfondimento sul dibattito politico della città (AGENTE.md, «Il dibattito politico in
     // città», 28 ott 2026): quello con "categoria": "politica"
     if (filtroCat === "politica") {
@@ -2347,14 +2361,14 @@
   // Sul computer un mese a griglia come Google Calendar (gli eventi di più giorni sono una barra), sul telefono
   // il mese con i pallini e sotto l'elenco del giorno toccato. Un clic su un evento apre la finestrella con il breve
   // e i pulsanti per la pagina dell'evento e per il calendario del telefono.
-  var NOMI_TIPO = { teatro: "Teatro", danza: "Danza", concerto: "Concerto", lirica: "Lirica", mostra: "Mostra", museo: "Museo", cinema: "Cinema",
+  var NOMI_TIPO = { teatro: "Teatro", danza: "Danza", concerto: "Concerto", lirica: "Lirica", mostra: "Mostra", museo: "Museo", cinema: "Cinema", libro: "Libri",
     sagra: "Sagra", festa: "Festa", mercatino: "Mercatino", natale: "Natale", carnevale: "Carnevale", altro: "Evento" };
-  var TIPO_GRUPPO = { teatro: "teatro", danza: "teatro", concerto: "musica", lirica: "musica", mostra: "mostre", museo: "mostre", cinema: "cinema",
+  var TIPO_GRUPPO = { teatro: "teatro", danza: "teatro", concerto: "musica", lirica: "musica", mostra: "mostre", museo: "mostre", cinema: "cinema", libro: "libri",
     sagra: "feste", festa: "feste", mercatino: "feste", natale: "feste", carnevale: "feste" };
-  var COLORE_GRUPPO = { teatro: "#b3261e", musica: "#1d4f91", mostre: "#2e6b3f", cinema: "#7a4f24", feste: "#c25e00", altro: "#5b5249" };
-  var GRUPPI_FILTRO = [["", "Tutti"], ["teatro", "Teatro e danza"], ["musica", "Musica"], ["mostre", "Mostre e musei"], ["cinema", "Cinema"], ["feste", "Sagre e feste"]];
+  var COLORE_GRUPPO = { teatro: "#b3261e", musica: "#1d4f91", mostre: "#2e6b3f", cinema: "#7a4f24", libri: "#0f6b6b", feste: "#c25e00", altro: "#5b5249" };
+  var GRUPPI_FILTRO = [["", "Tutti"], ["teatro", "Teatro e danza"], ["musica", "Musica"], ["mostre", "Mostre e musei"], ["cinema", "Cinema"], ["libri", "Libri e incontri"], ["feste", "Sagre e feste"]];
   // la foto del tema se l'agente non l'ha scelta (di solito la mette già archivia.py)
-  var TEMA_TIPO = { teatro: "teatro", danza: "danza", concerto: "concerto", lirica: "musica-classica", mostra: "mostra", museo: "museo", cinema: "cinema",
+  var TEMA_TIPO = { teatro: "teatro", danza: "danza", concerto: "concerto", lirica: "musica-classica", mostra: "mostra", museo: "museo", cinema: "cinema", libro: "libri",
     sagra: "sagra", festa: "luminarie", mercatino: "mercato", natale: "natale", carnevale: "carnevale" };
   var CORSIE = 3;   // eventi per giorno visibili nella griglia; gli altri sono in «+2 altri»
   var cal = { mese: null, giorno: null, gruppo: "" };
@@ -2425,6 +2439,35 @@
     gc.className = "pulsante";
     az.appendChild(gc);
     return az;
+  }
+
+  var GRUPPI_CULTURA = ["teatro", "musica", "mostre", "cinema", "libri"];
+  function appuntamentiCultura() {
+    var sez = el("section", "appuntamenti", [el("h3", "titolo-col", ["Prossimi appuntamenti"])]);
+    if (eventi === null) {
+      sez.appendChild(el("p", "vuoto", ["Caricamento del calendario…"]));
+      eventiPronti.then(function () { if (sez.parentNode) sez.parentNode.replaceChild(appuntamentiCultura(), sez); });
+      return sez;
+    }
+    var oggi = oggiTZ();
+    var prossimi = eventi.filter(function (ev) {
+      return GRUPPI_CULTURA.indexOf(TIPO_GRUPPO[ev.tipo]) >= 0 && fineEv(ev) >= oggi && (!filtroZona || ev.zona === filtroZona) && !ev.annullato;
+    }).sort(function (a, b) {   // prima quelli già in corso, poi per giorno di inizio
+      var x = a.inizio > oggi ? a.inizio : oggi, y = b.inizio > oggi ? b.inizio : oggi;
+      return x < y ? -1 : x > y ? 1 : ordineEv(a, b);
+    }).slice(0, 8);
+    if (!prossimi.length) { sez.appendChild(el("p", "vuoto", ["Nessun appuntamento in calendario per ora."])); return sez; }
+    var ul = el("ul", "", []);
+    prossimi.forEach(function (ev) {
+      var a = el("a", "", [ev.titolo]);
+      a.href = linkEvento(ev);
+      var quando = ev.inizio > oggi ? soloData(ev.inizio) : "in corso";
+      ul.appendChild(el("li", "", [el("span", "ap-data", [quando]), el("span", "ap-tipo", [NOMI_TIPO[ev.tipo] || "Evento"]), a,
+        el("span", "ap-dove", [ev.comune || ""])]));
+    });
+    sez.appendChild(ul);
+    sez.appendChild(linkTutte("/sezione/eventi/", "Tutto il calendario degli eventi ›"));
+    return sez;
   }
 
   function calendario() {
@@ -2834,7 +2877,8 @@
   // così il ricarico, il tasto Indietro e un link condiviso restano nella sezione. Categoria e zona insieme:
   // /sezione/<categoria>/?zona=<zona> (la pagina dice a Google che la sua è /sezione/<categoria>/).
   var PAGINA_CAT = { cronaca: "/sezione/cronaca/", politica: "/sezione/politica/", sport: "/sezione/sport/", eventi: "/sezione/eventi/",
-    meteo: "/sezione/allerte/", altro: "/sezione/altro/", avvisi: "/sezione/avvisi/", strade: "/sezione/strade/" };
+    meteo: "/sezione/allerte/", altro: "/sezione/altro/", avvisi: "/sezione/avvisi/", strade: "/sezione/strade/",
+    cultura: "/sezione/cultura/" };
   var PAGINA_ZONA = { benevento: "/zona/benevento/", telesina: "/zona/valle-telesina/", caudina: "/zona/valle-caudina/",
     fortore: "/zona/fortore/", provincia: "/zona/altri-comuni/" };
   function indirizzoFiltri() {

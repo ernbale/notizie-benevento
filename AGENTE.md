@@ -290,7 +290,7 @@ Ore). Se c'è, aggiorna la notizia con l'«aggiornamento» (vedi «Quando aggior
 - **4 per le notizie**: una per ogni storia in corso, poi i fatti trovati in un solo giornale (per cercare la seconda
   fonte), «Benevento oggi», «Sannio incidente», «strada chiusa provincia Benevento»;
 - **2 per gli eventi**: «eventi Benevento questa settimana», «teatro Benevento stagione», «sagra Sannio», «concerto
-  Benevento», «mostra Benevento».
+  Benevento», «mostra Benevento», «presentazione libro Benevento».
 
 ## Lo sport (categoria `sport`)
 
@@ -629,15 +629,19 @@ Sul sito la sezione **«Eventi»** è un calendario come quello del telefono: og
 (`notiziebenevento.it/evento/<id>/`), un riquadro con il breve e il pulsante per salvarlo nel calendario. Lo leggi e lo
 aggiorni a ogni giro, come notizie.json.
 
-- **Cosa ci va** (scelta del proprietario): **cultura** (teatro, danza, concerti, lirica, mostre, musei, cinema) e
-  **feste e sagre** (sagre, feste patronali, mercatini, Natale, Carnevale). **Non ci vanno**: presentazioni di libri,
-  convegni, incontri politici, corsi, sport. Solo nei 78 Comuni della provincia di Benevento.
+- **Cosa ci va** (scelta del proprietario): **cultura** (teatro, danza, concerti, lirica, mostre, musei, cinema,
+  **presentazioni di libri e incontri con l'autore**, `"tipo": "libro"`, dal 28 ott 2026: prima erano escluse, lui
+  ha cambiato idea: «cercare eventi culturali, libri ecc.», «ripensamenti ci possono essere») e **feste e sagre**
+  (sagre, feste patronali, mercatini, Natale, Carnevale). **Non ci vanno**: convegni, incontri politici, corsi, sport.
+  Solo nei 78 Comuni della provincia di Benevento. Sul sito gli appuntamenti di cultura stanno anche in cima alla
+  sezione Cultura.
 - **La fonte**: basta l'annuncio di **chi lo organizza** (Comune, teatro, Pro Loco, associazione, museo,
   conservatorio), sul suo sito o riportato anche da un solo giornale. Data, ora, luogo e prezzo si scrivono **solo se
   sono scritti nella fonte**: senza ora non metti `ora`, senza prezzo non metti `prezzo`. Mai date «probabili».
 - **Quanto avanti**: a ogni giro cerca gli eventi **dei prossimi 2 mesi**. Se un evento più lontano è già annunciato
   con la data (per esempio la stagione teatrale fino ad aprile), mettilo lo stesso.
-- **Dove cercarli**: negli stessi giornali e siti dei Comuni del giro (sezioni cultura, eventi, spettacoli), nelle
+- **Dove cercarli**: negli stessi giornali e siti dei Comuni del giro (sezioni cultura, eventi, spettacoli), nei siti
+  di librerie, biblioteche, teatri, musei, Conservatorio e Università del Sannio quando li trovi citati, nelle
   stagioni ufficiali (qui sotto) e con le 2 ricerche mirate per gli eventi. Una stagione teatrale o una rassegna =
   **un evento per ogni spettacolo**, con la sua data.
 - **Mai doppioni**: prima di aggiungere un evento cerca in eventi.json lo stesso Comune negli stessi giorni; se c'è
@@ -705,7 +709,7 @@ Nel resoconto scrivi quanti ne hai aggiunti, e se l'elenco dice ATTENZIONE (copi
   "stagioni_escluse": {"<chiave stampata da stagioni.py>": "motivo"},
   "eventi": [ {
     "id": "traviata-teatro-romano-2026", "titolo": "La Traviata al Teatro Romano",
-    "tipo": "teatro|danza|concerto|lirica|mostra|museo|cinema|sagra|festa|mercatino|natale|carnevale|altro",
+    "tipo": "teatro|danza|concerto|lirica|mostra|museo|cinema|libro|sagra|festa|mercatino|natale|carnevale|altro",
     "inizio": "AAAA-MM-GG", "fine": "AAAA-MM-GG (solo se dura più giorni)", "ora": "HH:MM (solo se scritta)",
     "giorni": ["AAAA-MM-GG", "… solo se non è tutti i giorni tra inizio e fine"],
     "orari": "le ore, se ci sono", "luogo": "teatro, piazza, chiesa…", "comune": "Benevento",
@@ -764,7 +768,7 @@ le dichiarazioni nuove. **Se non c'è ancora, crealo in questo giro.**
   "notizie": [ {
     "id": "parole-chiave-con-trattini (stabile, non cambia mai, unico anche rispetto all'archivio)",
     "titolo": "", "titolo_google": "45-60 caratteri: paese e fatto", "sintesi": "2-3 frasi",
-    "categoria": "avvisi|strade|cronaca|meteo|politica|sport|eventi|altro",
+    "categoria": "avvisi|strade|cronaca|meteo|politica|sport|eventi|cultura|altro",
     "sport": "solo per categoria sport: calcio|calcio_a_5|basket|pallavolo|rugby|scherma|atletica|tennis|ciclismo|nuoto|altro",
     "zona": "benevento|telesina|caudina|fortore|provincia (la corregge archivia.py dal luogo, vedi sotto)",
     "immagine": "tema da img/temi/temi.json (facoltativo, mai per la cronaca)",
@@ -815,6 +819,12 @@ le dichiarazioni nuove. **Se non c'è ancora, crealo in questo giro.**
   `in_vigore_dal` e `in_vigore_fino` devono essere i giorni veri del comunicato (la raccolta di venerdì 30: dal 30 al
   30; la sagra dal 29 ottobre al 1° novembre: dal 29, non dal giorno in cui è uscita). archivia.py avvisa se il
   primo giorno scritto nel titolo non torna con `in_vigore_dal`.
+- **`cultura`** (dal 28 ott 2026, lui: «sezione cultura con pagina per google… ora alcune di queste notizie vanno in
+  altro, cercare eventi culturali, libri ecc.»): libri e autori del Sannio (uscite, presentazioni, premi letterari),
+  teatro, musica, cinema, arte e mostre raccontati come notizia (una stagione presentata, un premio, un sannita in
+  TV o a un festival), musei, archeologia e patrimonio, biblioteche, Conservatorio, festival. Gli appuntamenti con data
+  e luogo vanno anche (o solo) nel calendario degli eventi; la notizia di cultura racconta il fatto. Le «curiosità»
+  restano a parte (CURIOSITA.md).
 - **`politica`** (dal 28 ott 2026, lui: «la sezione politica è veramente così scarna?», poi «fai A»): anche le
   decisioni e gli atti di sindaco, Giunta, Consiglio comunale, Provincia e Regione per il Sannio (delibere,
   finanziamenti chiesti o avuti, nomine e uffici del Comune, appelli e lettere del sindaco ai cittadini, ricorsi del
