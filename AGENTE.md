@@ -30,10 +30,14 @@ farlo giusto subito.
    Non vale mai per: allerte, eventi, notizie `rilevante`, fatti scritti solo da altre testate (Infosannio,
    Fremondoweb, Gazzetta di Benevento, Benevento Giornale, Il Caudino: con loro servono due testate). Appena una
    seconda testata riporta il fatto, aggiungila e passa a `confermata` (lo controlla `archivia.py`).
-3. **Cronaca con persone coinvolte:** almeno due testate, oppure una sola testata autorevole (regola 2). Con **una
-   sola fonte** (anche un comunicato della Questura o di altre forze dell'ordine, che da solo basta per uscire), se il
-   fatto accusa qualcuno (indagato, arrestato, denunciato, processato, condannato) **non scrivere nome e cognome**:
-   età, paese e ruolo bastano («un 53enne di Benevento»). Le accuse si riportano **con le parole esatte dei
+3. **Cronaca con persone coinvolte:** almeno due testate, oppure una sola testata autorevole (regola 2); basta anche
+   un comunicato della Questura o di altre forze dell'ordine. **Nome e cognome si scrivono sempre quando li scrive una
+   fonte affidabile** (lui, 29 ott 2026: «se è citato da altri giornali o da posta affidabile sì sempre il nome»): un
+   giornale tra le fonti della notizia, un comunicato arrivato per posta da un ente pubblico, da una PEC o da un
+   mittente fidato, il comunicato di un sito ufficiale (Questura, forze dell'ordine). Vale anche con una sola fonte e
+   anche se il fatto accusa qualcuno (indagato, arrestato, denunciato, processato, condannato). Se il nome non lo
+   scrive nessuna di queste fonti (per esempio lo scrive solo un mittente da valutare), niente nome: età, paese e
+   ruolo bastano («un 53enne di Benevento»). Le accuse si riportano **con le parole esatte dei
    giornali** («indagato», «arrestato», «denunciato», «presunto»): mai aggiungere, mai riassumere un'accusa con
    parole più pesanti. Nomi di vittime minorenni (anche se oggi sono maggiorenni ma erano minorenni al momento del
    fatto): mai, da nessuna parte. Se il titolo di un articolo fonte contiene quel nome, nell'elenco fonti scrivi il
@@ -43,9 +47,8 @@ farlo giusto subito.
    dirigenti, funzionari e dipendenti pubblici (anche un impiegato comunale; quelli in servizio anche per fatti
    privati, gli ex per fatti del loro incarico), anche con una sola fonte e anche quando sono indagati o accusati, con
    le parole esatte dei giornali e «secondo l'accusa»; niente «[nome omesso]» per loro, nemmeno nei titoli delle fonti.
-   La regola del nome omesso resta per i privati, solo nel testo che scrivi tu: **nei titoli degli articoli fonte i
-   nomi restano come sono, anche quelli dei privati** (lui, 29 ott 2026: «metti sempre i nomi»). Per i minori vale
-   sempre, anche nei titoli delle fonti.
+   **Nei titoli degli articoli fonte i nomi restano come sono, anche quelli dei privati** (lui, 29 ott 2026: «metti
+   sempre i nomi»). Per i minori il nome non va mai, nemmeno nei titoli delle fonti.
 4. **Controlla sempre la data** di ogni articolo. Un articolo vecchio riproposto in homepage non è una notizia
    di oggi. Gli orari INGV sono in UTC: convertili in ora italiana.
 5. **Titoli che dicono il fatto, niente acchiappa-clic.** Niente domande, niente «choc», «incredibile», «ecco
