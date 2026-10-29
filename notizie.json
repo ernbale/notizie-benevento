@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-29T21:11+01:00",
+ "aggiornato": "2026-10-29T22:12+01:00",
  "giornali_letti": 14,
  "notizie": [
   {
@@ -114,48 +114,116 @@
   },
   {
    "id": "benevento-incidente-svincolo-pietrelcina-via-valfortore",
-   "titolo": "Benevento, scontro tra due auto allo svincolo per Pietrelcina in via Valfortore: nessun ferito, code",
-   "titolo_google": "Benevento, incidente allo svincolo per Pietrelcina: code",
-   "sintesi": "Giovedì 29 ottobre in serata una Mercedes e una Fiat si sono scontrate all'uscita dello svincolo per Pietrelcina, in via Valfortore a Benevento. Nessuno si è fatto male, ma i rottami sull'asfalto hanno creato code nei due sensi.",
+   "titolo": "Benevento, scontro tra due auto sulla statale 212 allo svincolo per Pietrelcina: nessun ferito, code",
+   "titolo_google": "Benevento, incidente sulla statale 212 verso Pietrelcina",
+   "sintesi": "Giovedì 29 ottobre, verso le 18:15, una Fiat Punto e un'altra auto si sono scontrate sulla statale 212 allo svincolo per Pietrelcina, alle porte di Benevento, vicino alla rotonda dei Pentri. Alla guida c'erano un 52enne e un 76enne: nessuno è rimasto ferito, ma il traffico è andato in tilt.",
    "categoria": "cronaca",
    "luogo": "Benevento, via Valfortore, svincolo per Pietrelcina",
-   "pubblicato": "2026-10-29T19:33+01:00",
-   "stato": "una_fonte",
+   "pubblicato": "2026-10-29T21:56+01:00",
+   "stato": "confermata",
    "rilevante": false,
    "importanza": 3,
    "fonti": [
     {
      "nome": "Anteprima24",
      "url": "https://www.anteprima24.it/benevento/violento-impatto-ingresso-tangenziale/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/442559/uscita-benevento-ovest-pietrelcina-scontro-tra-auto-paura-e-traffico-in-tilt.shtml"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/29/incidente-sulla-ss212-verso-pietrelcina-due-auto-coinvolte/"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/29/benevento-in-serata-scontro-tra-auto-sulla-statale-212/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/statale-duecentododici-scontro-auto-paura-conducenti/"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/sulla-strada-statale-212-direzione-di-pietrelcina-due-veicoli-sono-stati-coinvolti-un-incidente"
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Giovedì 29 ottobre, in serata, due auto si sono scontrate all'uscita dello svincolo per Pietrelcina, all'ingresso della tangenziale di Benevento. Una Mercedes ha urtato una Fiat e le due macchine sono rimaste ferme in via Valfortore. Nonostante l'urto violento, nessuno è rimasto ferito.",
+      "testo": "Giovedì 29 ottobre, verso le 18:15, due auto si sono scontrate sulla statale 212 alle porte di Benevento, in direzione di Pietrelcina, allo svincolo a poche centinaia di metri dalla rotonda dei Pentri, dove si esce verso via Valfortore. Su ognuna c'era solo chi guidava: un uomo di 52 anni sulla Fiat Punto e un 76enne sull'altra macchina. Nessuno dei due si è fatto male.",
       "fonti": [
-       "Anteprima24"
-      ]
+       "Anteprima24",
+       "NTR24",
+       "Ottopagine",
+       "Cronache del Sannio",
+       "BeneventoNews24",
+       "Gazzetta di Benevento"
+      ],
+      "giorno": "2026-10-29"
      },
      {
-      "testo": "Sono arrivati i vigili urbani, che hanno fatto i rilievi per capire come è andata, e il personale del 118. La causa dello scontro è ancora da accertare.",
+      "testo": "Secondo una prima ricostruzione, la Punto arrivava dalla statale 372, la Telesina, e allo stop doveva girare a sinistra verso la rotonda dei Pentri. In quel momento ha urtato l'altra auto, che percorreva la statale 212.",
       "fonti": [
-       "Anteprima24"
-      ]
+       "NTR24",
+       "Ottopagine",
+       "Cronache del Sannio",
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-29"
      },
      {
-      "testo": "Per i rottami rimasti sull'asfalto si sono formate code in tutti e due i sensi di marcia.",
+      "testo": "Sono arrivati gli agenti della Polizia Municipale di Benevento, che hanno fatto i rilievi per capire come è andata, e il personale del 118. Le auto e i rottami sull'asfalto hanno rallentato il traffico, con code in tutti e due i sensi di marcia.",
       "fonti": [
-       "Anteprima24"
-      ]
+       "Anteprima24",
+       "NTR24",
+       "Ottopagine",
+       "Gazzetta di Benevento"
+      ],
+      "giorno": "2026-10-29"
+     },
+     {
+      "testo": "In quel tratto gli incidenti sono frequenti: da anni accanto al guardrail di ferro c'è una barriera di cemento, messa per rinforzarlo.",
+      "fonti": [
+       "Ottopagine"
+      ],
+      "giorno": "2026-10-29"
      }
     ],
     "cronologia": [],
-    "concordano": [],
-    "divergono": [],
+    "concordano": [
+     {
+      "testo": "Lo scontro sulla statale 212 verso Pietrelcina tra una Fiat Punto guidata da un 52enne e un'auto guidata da un 76enne, senza feriti, con la Polizia Municipale sul posto.",
+      "fonti": [
+       "NTR24",
+       "Ottopagine",
+       "Cronache del Sannio",
+       "BeneventoNews24",
+       "Gazzetta di Benevento"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "Quasi tutti scrivono che la seconda auto era una Skoda; Anteprima24 scrive che una Mercedes ha urtato una Fiat.",
+      "fonti": [
+       "NTR24",
+       "Ottopagine",
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "BeneventoNews24 scrive che la Punto veniva dalla «ss362» e che sul posto c'erano anche i Vigili del fuoco; NTR24 e Cronache del Sannio scrivono statale 372 e citano solo la Polizia Municipale.",
+      "fonti": [
+       "BeneventoNews24",
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     }
+    ],
     "non_si_sa": [
-     "Perché la Mercedes ha urtato la Fiat.",
-     "Quando la strada è tornata libera."
+     "Quando la strada è tornata del tutto libera."
     ],
     "fonti": [
      {
@@ -163,6 +231,36 @@
       "titolo": "Violento impatto all’ingresso della tangenziale",
       "url": "https://www.anteprima24.it/benevento/violento-impatto-ingresso-tangenziale/",
       "data": "29 ott, 19:33"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Uscita Benevento Ovest - Pietrelcina: scontro tra auto, paura e traffico in tilt",
+      "url": "https://www.ottopagine.it/bn/cronaca/442559/uscita-benevento-ovest-pietrelcina-scontro-tra-auto-paura-e-traffico-in-tilt.shtml",
+      "data": "29 ott, 21:22"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Incidente sulla ss212 verso Pietrelcina: due auto coinvolte",
+      "url": "https://www.beneventonews24.it/2026/10/29/incidente-sulla-ss212-verso-pietrelcina-due-auto-coinvolte/",
+      "data": "29 ott, 21:21"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Benevento, in serata scontro tra auto sulla statale 212",
+      "url": "https://www.ntr24.tv/2026/10/29/benevento-in-serata-scontro-tra-auto-sulla-statale-212/",
+      "data": "29 ott, 21:28"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Statale 212, scontro tra due auto: paura per i conducenti",
+      "url": "https://www.cronachedelsannio.it/sannionews24/statale-duecentododici-scontro-auto-paura-conducenti/",
+      "data": "29 ott, 21:56"
+     },
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "Sulla strada statale 212 in direzione di Pietrelcina, due veicoli sono stati coinvolti in un incidente stradale",
+      "url": "https://www.gazzettabenevento.it/it/sulla-strada-statale-212-direzione-di-pietrelcina-due-veicoli-sono-stati-coinvolti-un-incidente",
+      "data": "29 ott, 21:27"
      }
     ]
    },
@@ -197,6 +295,14 @@
     {
      "nome": "Anteprima24",
      "url": "https://www.anteprima24.it/benevento/il-gg-team-wear-benevento-5-ha-un-nuovo-portiere/"
+    },
+    {
+     "nome": "NTR24 Sport",
+     "url": "https://sport.ntr24.tv/2026/10/29/benevento-5-firma-il-portiere-ditano-sara-a-disposizione-nel-derby-contro-sala-consilina/"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/calcio-5-serie-alla-vigilia-del-derby-contro-lo-sporting-sala-consilina-il-benevento-5-annuncia"
     }
    ],
    "articolo": {
@@ -206,7 +312,9 @@
       "fonti": [
        "Benevento 5",
        "Cronache del Sannio",
-       "Anteprima24"
+       "Anteprima24",
+       "NTR24 Sport",
+       "Gazzetta di Benevento"
       ]
      },
      {
@@ -257,6 +365,18 @@
       "titolo": "Il GG Team Wear Benevento 5 ha un nuovo portiere",
       "url": "https://www.anteprima24.it/benevento/il-gg-team-wear-benevento-5-ha-un-nuovo-portiere/",
       "data": "29 ott, 19:57"
+     },
+     {
+      "nome": "NTR24 Sport",
+      "titolo": "Benevento 5, firma il portiere Ditano: sarà a disposizione nel derby contro Sala Consilina",
+      "url": "https://sport.ntr24.tv/2026/10/29/benevento-5-firma-il-portiere-ditano-sara-a-disposizione-nel-derby-contro-sala-consilina/",
+      "data": "29 ott, 21:18"
+     },
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "Calcio a 5, Serie A: Alla vigilia del derby contro lo Sporting Sala Consilina il Benevento 5 annuncia l'arrivo dell'esperto portiere Riccardo Ditano",
+      "url": "https://www.gazzettabenevento.it/it/calcio-5-serie-alla-vigilia-del-derby-contro-lo-sporting-sala-consilina-il-benevento-5-annuncia",
+      "data": "29 ott, 19:31"
      }
     ]
    },
@@ -1272,6 +1392,10 @@
     {
      "nome": "BeneventoNews24",
      "url": "https://www.beneventonews24.it/2026/10/29/il-conservatorio-nicola-sala-presenta-la-vicedirettrice-e-la-squadra-di-direzione/"
+    },
+    {
+     "nome": "Benevento Giornale",
+     "url": "https://www.beneventogiornale.com/2026/10/29/il-conservatorio-nicola-sala-presenta-la-vicedirettrice-e-la-squadra-di-direzione/"
     }
    ],
    "articolo": {
@@ -1285,7 +1409,8 @@
        "Cronache del Sannio",
        "InfoSannio",
        "Ottopagine",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Benevento Giornale"
       ]
      },
      {
@@ -1355,6 +1480,12 @@
       "titolo": "Il Conservatorio Nicola Sala presenta la Vicedirettrice e la squadra di Direzione",
       "url": "https://www.beneventonews24.it/2026/10/29/il-conservatorio-nicola-sala-presenta-la-vicedirettrice-e-la-squadra-di-direzione/",
       "data": "29 ott, 18:15"
+     },
+     {
+      "nome": "Benevento Giornale",
+      "titolo": "Il Conservatorio “Nicola Sala” presenta la Vicedirettrice e la squadra di Direzione",
+      "url": "https://www.beneventogiornale.com/2026/10/29/il-conservatorio-nicola-sala-presenta-la-vicedirettrice-e-la-squadra-di-direzione/",
+      "data": "29 ott, 22:04"
      }
     ]
    },
@@ -11082,7 +11213,7 @@
    "id": "cremonese-benevento-biglietti-settore-ospiti-31-ottobre",
    "titolo": "Cremonese-Benevento di sabato 31 ottobre: biglietti per i tifosi giallorossi a 20 euro, in vendita fino a venerdì",
    "titolo_google": "Biglietti Cremonese-Benevento 31 ottobre: prezzi settore ospiti",
-   "sintesi": "Per Cremonese-Benevento di sabato 31 ottobre alle 15 i tifosi giallorossi hanno la Curva Nord dello stadio Zini: 20 euro, 10 per i ragazzi dai 4 ai 18 anni, in vendita fino a venerdì 30 ottobre alle 19. Mercoledì 28 i biglietti venduti erano già 250.",
+   "sintesi": "Per Cremonese-Benevento di sabato 31 ottobre alle 15 i tifosi giallorossi hanno la Curva Nord dello stadio Zini: 20 euro, 10 per i ragazzi dai 4 ai 18 anni, in vendita fino a venerdì 30 ottobre alle 19. Giovedì 29 i biglietti venduti erano già 409.",
    "categoria": "sport",
    "sport": "calcio",
    "zona": "benevento",
@@ -11105,15 +11236,22 @@
     },
     {
      "nome": "NTR24 Sport",
-     "url": "https://sport.ntr24.tv/2026/10/28/strega-il-pari-con-il-catanzaro-non-frena-gli-entusiasmi-gia-venduti-250-biglietti-per-la-trasferta-di-cremona/"
+     "url": "https://sport.ntr24.tv/2026/10/29/strega-la-fede-non-conosce-distanze-venduti-gia-409-tagliandi-per-il-settore-ospiti-a-cremona-cresce-il-mini-esodo-giallorosso/"
     }
    ],
    "articolo": {
     "racconto": [
      {
+      "testo": "Giovedì 29 ottobre i biglietti comprati dai tifosi del Benevento per la Curva Nord dello Zini erano già 409, su 2.425 posti: ce ne sono ancora molti. La vendita resta aperta fino alle 19 di venerdì 30 ottobre, salvo esaurimento; il biglietto intero costa 20 euro, 10 per gli under 18.",
+      "fonti": [
+       "NTR24 Sport (29/10)"
+      ],
+      "giorno": "2026-10-29"
+     },
+     {
       "testo": "Mercoledì 28 ottobre i tifosi del Benevento avevano già comprato 250 biglietti per la Curva Nord dello Zini, a due giorni dall'apertura della vendita. I biglietti si possono comprare fino a venerdì 30 ottobre alle 19, online su Vivaticket o nei punti vendita autorizzati; allo stadio servono il biglietto, anche sul telefono, e un documento d'identità valido.",
       "fonti": [
-       "NTR24 Sport"
+       "NTR24 Sport (28/10)"
       ],
       "giorno": "2026-10-28"
      },
@@ -11179,18 +11317,24 @@
       "data": "26 ott, 16:43"
      },
      {
-      "nome": "NTR24 Sport",
+      "nome": "NTR24 Sport (28/10)",
       "titolo": "Strega, il pari con il Catanzaro non frena gli entusiasmi: già venduti 250 biglietti per la trasferta di Cremona",
       "url": "https://sport.ntr24.tv/2026/10/28/strega-il-pari-con-il-catanzaro-non-frena-gli-entusiasmi-gia-venduti-250-biglietti-per-la-trasferta-di-cremona/",
       "data": "28 ott, 12:57"
+     },
+     {
+      "nome": "NTR24 Sport (29/10)",
+      "titolo": "Strega, la fede non conosce distanze: venduti già 409 tagliandi per il settore ospiti a Cremona. Cresce il mini esodo giallorosso",
+      "url": "https://sport.ntr24.tv/2026/10/29/strega-la-fede-non-conosce-distanze-venduti-gia-409-tagliandi-per-il-settore-ospiti-a-cremona-cresce-il-mini-esodo-giallorosso/",
+      "data": "29 ott, 21:21"
      }
     ],
     "aggiornamento": {
-     "testo": "Mercoledì 28 ottobre i tifosi del Benevento avevano già comprato 250 biglietti per il settore ospiti di Cremona.",
+     "testo": "Giovedì 29 ottobre i biglietti venduti ai tifosi del Benevento per il settore ospiti di Cremona erano saliti a 409.",
      "fonti": [
-      "NTR24 Sport"
+      "NTR24 Sport (29/10)"
      ],
-     "quando": "2026-10-28T13:19+01:00"
+     "quando": "2026-10-29T22:12+01:00"
     }
    },
    "foto": "stadio-4"
@@ -11252,7 +11396,7 @@
    "id": "airola-incendio-controlli-diossine-latte-forchia",
    "titolo": "Incendio di Airola, nuovi controlli sugli alimenti: diossine nel latte di pecora a Forchia",
    "titolo_google": "Incendio di Airola, diossine nel latte di pecora a Forchia",
-   "sintesi": "Dopo l'incendio di Airola, le analisi sugli alimenti uscite dal 19 al 23 ottobre hanno trovato una nuova irregolarità per diossine nel latte di pecora a Forchia. In regola le uova di Paolisi e il latte di bufala di Bonea; per tre caciotte si attendono le analisi di conferma.",
+   "sintesi": "Dopo l'incendio di Airola, le analisi uscite dal 19 al 23 ottobre hanno trovato diossine nel latte di pecora a Forchia. Il 29 ottobre la commissaria prefettizia ha detto che la bonifica dell'impianto toccherà a un nuovo acquirente o alla Regione.",
    "categoria": "altro",
    "zona": "caudina",
    "immagine": "pecore",
@@ -11267,25 +11411,47 @@
      "ufficiale": true
     },
     {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/26/incendio-airola-nuovi-controlli-diossine-nel-latte-ovino-a-forchia-conformi-uova-e-latte-bufalino/"
-    },
-    {
      "nome": "Il Mattino",
      "url": "https://www.ilmattino.it/benevento/airola_rogo_rifiuti_diossina_latte_ovino_forchia_arpac-9850137.html"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/29/rogo-airola-il-comitato-incontra-la-commissaria-prefettizia-ora-servono-risposte-concrete/"
     }
    ],
    "comunicati": [
     "u0b9a0e60159"
    ],
    "articolo": {
-    "cronologia": [],
+    "cronologia": [
+     {
+      "data": "31 agosto",
+      "fatto": "Scoppia l'incendio nell'impianto di stoccaggio dei rifiuti della Ecoenergy ad Airola.",
+      "fonti": [
+       "Il Mattino"
+      ]
+     },
+     {
+      "data": "26 ottobre",
+      "fatto": "La Regione pubblica le analisi dal 19 al 23 ottobre: diossine nel latte di pecora a Forchia.",
+      "fonti": [
+       "Regione Campania"
+      ]
+     },
+     {
+      "data": "29 ottobre",
+      "fatto": "La commissaria prefettizia incontra il Comitato Salute e Ambiente: bonifica a un nuovo acquirente o alla Regione.",
+      "fonti": [
+       "NTR24 (29/10)"
+      ]
+     }
+    ],
     "concordano": [
      {
       "testo": "La nuova irregolarità per diossine nel latte di pecora a Forchia, trovata dai controlli di Istituto Zooprofilattico, Asl e Arpac dopo l'incendio del 31 agosto.",
       "fonti": [
        "Regione Campania",
-       "NTR24",
+       "NTR24 (26/10)",
        "Il Mattino"
       ]
      },
@@ -11293,7 +11459,7 @@
       "testo": "In regola le uova di Paolisi e il latte di bufala di Bonea; analisi di conferma in corso su tre caciotte.",
       "fonti": [
        "Regione Campania",
-       "NTR24"
+       "NTR24 (26/10)"
       ]
      }
     ],
@@ -11308,7 +11474,7 @@
       "ufficiale": true
      },
      {
-      "nome": "NTR24",
+      "nome": "NTR24 (26/10)",
       "titolo": "Incendio Airola, nuovi controlli: diossine nel latte ovino a Forchia, conformi uova e latte bufalino",
       "url": "https://www.ntr24.tv/2026/10/26/incendio-airola-nuovi-controlli-diossine-nel-latte-ovino-a-forchia-conformi-uova-e-latte-bufalino/",
       "data": "26 ott, 12:38"
@@ -11318,14 +11484,34 @@
       "titolo": "Incendio di rifiuti ad Airola, nuova allerta dopo le indagini a Forchia: «Trovate diossine nel latte ovino»",
       "url": "https://www.ilmattino.it/benevento/airola_rogo_rifiuti_diossina_latte_ovino_forchia_arpac-9850137.html",
       "data": "27 ott, 00:15"
+     },
+     {
+      "nome": "NTR24 (29/10)",
+      "titolo": "Rogo Airola, il Comitato incontra la commissaria prefettizia: “Ora servono risposte concrete”",
+      "url": "https://www.ntr24.tv/2026/10/29/rogo-airola-il-comitato-incontra-la-commissaria-prefettizia-ora-servono-risposte-concrete/",
+      "data": "29 ott, 21:27"
      }
     ],
     "racconto": [
      {
+      "testo": "Giovedì 29 ottobre, a due mesi dall'incendio, il Comitato Salute e Ambiente ha incontrato per la prima volta la commissaria prefettizia che guida il Comune di Airola. Sulla bonifica dell'impianto Ecoenergy la commissaria ha spiegato due strade: c'è una trattativa perché un nuovo imprenditore compri la struttura e si occupi del risanamento; se non va in porto, dovrà intervenire d'ufficio la Regione Campania.",
+      "fonti": [
+       "NTR24 (29/10)"
+      ],
+      "giorno": "2026-10-29"
+     },
+     {
+      "testo": "La commissaria ha detto che chiederà alla Regione aiuti economici e ristori per agricoltori e allevatori, se i danni denunciati dal Comitato saranno accertati. Insieme hanno deciso di chiedere all'ASL relazioni rapide e chiare sui controlli degli alimenti e dei latticini della zona. Sulla proposta del Comitato di aprire una sezione apposita sul sito del Comune con tutti gli aggiornamenti, la commissaria non si è ancora pronunciata.",
+      "fonti": [
+       "NTR24 (29/10)"
+      ],
+      "giorno": "2026-10-29"
+     },
+     {
       "testo": "Dopo l'incendio di Airola, in Valle Caudina, i controlli sugli alimenti hanno trovato una nuova irregolarità per diossine nel latte di pecora a Forchia. Le diossine sono sostanze inquinanti che si formano quando bruciano certi materiali. È quello che dice l'ultimo aggiornamento della Regione Campania, basato sui cinque rapporti di analisi emessi dal 19 al 23 ottobre.",
       "fonti": [
        "Regione Campania",
-       "NTR24",
+       "NTR24 (26/10)",
        "Il Mattino"
       ],
       "giorno": "2026-10-26"
@@ -11334,7 +11520,7 @@
       "testo": "Nelle stesse analisi sono risultate in regola le uova di Paolisi e il latte di bufala di Bonea. A Forchia sono in regola anche due campioni di olive, ma con valori superiori ai «livelli di azione». Per tre caciotte il primo esame ha dato un risultato non conforme: sono in corso le analisi di conferma e i risultati non sono ancora definitivi.",
       "fonti": [
        "Regione Campania",
-       "NTR24"
+       "NTR24 (26/10)"
       ],
       "giorno": "2026-10-26"
      },
@@ -11349,7 +11535,7 @@
       "testo": "Restano le irregolarità già comunicate: due campioni di latte di pecora a Cervinara, uno di erba da pascolo ad Airola, uno di trinciato di mais (il mais tritato per gli animali) a Bonea e uno di erba da pascolo a Forchia. Restano confermati anche gli esiti favorevoli, che valgono per i singoli campioni esaminati: uva, melanzane ed erba medica ad Airola, uva a San Martino Valle Caudina e zucca a Cervinara.",
       "fonti": [
        "Regione Campania",
-       "NTR24"
+       "NTR24 (26/10)"
       ],
       "giorno": "2026-10-26"
      },
@@ -11357,7 +11543,7 @@
       "testo": "Per i terreni agricoli l'ultimo prospetto dell'Arpac, l'agenzia regionale per l'ambiente, è aggiornato al 13 ottobre: riporta nove risultati definitivi senza superamenti delle soglie di contaminazione per i parametri esaminati. Un'altra registrazione è ancora in verifica e altre 14 sono in lavorazione.",
       "fonti": [
        "Regione Campania",
-       "NTR24"
+       "NTR24 (26/10)"
       ],
       "giorno": "2026-10-26"
      },
@@ -11365,11 +11551,18 @@
       "testo": "I controlli sono fatti insieme dall'Istituto Zooprofilattico Sperimentale del Mezzogiorno, il laboratorio pubblico che analizza alimenti e animali, le Asl competenti e l'Arpac. La Regione farà sapere i nuovi risultati dopo la conferma e la validazione dei dati.",
       "fonti": [
        "Regione Campania",
-       "NTR24"
+       "NTR24 (26/10)"
       ],
       "giorno": "2026-10-26"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Giovedì 29 ottobre la commissaria prefettizia di Airola ha spiegato al Comitato Salute e Ambiente che la bonifica dell'impianto toccherà a un nuovo acquirente o, se la vendita non va in porto, alla Regione.",
+     "fonti": [
+      "NTR24 (29/10)"
+     ],
+     "quando": "2026-10-29T22:12+01:00"
+    }
    },
    "subito": true,
    "foto": "pecore-7",
