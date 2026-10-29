@@ -67,6 +67,7 @@
           padding: 10px 0; border-top: 1px solid var(--nero); border-bottom: 1px solid var(--riga); }
   .menu a.voce { font: 600 15px var(--sans); color: var(--nero); text-decoration: none; padding: 4px 0; border-bottom: 2px solid transparent; }
   .menu a.voce:hover { border-bottom-color: var(--rosso); }
+  .menu a.voce[aria-current="page"] { border-bottom-color: var(--rosso); }   /* il meteo è tra i Servizi (29 ott 2026) */
   .menu a.voce-allerta { color: #fff; background: var(--rosso); padding: 3px 9px; border-radius: 3px; border-bottom: 0; }
   .menu a.voce[hidden] { display: none; }
   .menu select { font: 500 14px var(--sans); background: transparent; border: 1px solid var(--riga); padding: 4px 6px; color: var(--nero); }
@@ -78,8 +79,10 @@
   .cerca-campo button { display: inline-flex; align-items: center; justify-content: center; width: 40px; border: 1px solid var(--nero);
                         border-radius: 0 4px 4px 0; background: var(--nero); color: #fff; cursor: pointer; padding: 0; }
   .cerca-campo svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; }
-  @media (min-width: 960px) { .menu { flex-wrap: nowrap; gap: 4px 12px; } }
-  @media (min-width: 1100px) { .menu { gap: 4px 20px; } }
+  /* gli spazi tra le voci: su una riga ci stanno anche «Allerte» (quando c'è) e «Servizi» (29 ott 2026) */
+  @media (min-width: 960px) { .menu { flex-wrap: nowrap; gap: 4px 7px; } }
+  @media (min-width: 1100px) { .menu { gap: 4px 15px; } }
+  @media (min-width: 1280px) { .menu { gap: 4px 19px; } }
   @media (max-width: 959px) {
     .testata { grid-template-columns: 1fr; text-align: center; gap: 4px; }
     .testata .nome { order: -1; }
@@ -346,6 +349,7 @@
     <a class="voce" href="/sezione/eventi/">Eventi</a>
     <a class="voce" href="/sezione/cultura/">Cultura</a>
     <a class="voce" href="/sezione/avvisi/">Avvisi</a>
+    <a class="voce" href="/servizi/" aria-current="page">Servizi</a>
     <a class="voce" href="/agevolazioni/">Agevolazioni</a>
     <a class="voce" href="/sezione/altro/">Altro</a>
     <select id="zona-menu" aria-label="Zona">

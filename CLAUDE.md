@@ -31,8 +31,11 @@ claude.ai/code dal telefono): qui c'è quello che serve per riprendere il lavoro
   Facebook, Instagram. Ci mette circa 2 minuti.
 
 ## Il menu del sito (deciso con lui il 28 ott 2026)
-Tutte · Cronaca · Politica · Sport · Calcio · (Allerte, solo con un'allerta) · Eventi · Cultura · Avvisi · Agevolazioni · Altro · zona · Comuni
-(lui: «Allerte e Avvisi spostale dopo calcio», «la pagina cultura mettila dopo eventi»); sul computer su una riga sola (da 960 px).
+Tutte · Cronaca · Politica · Sport · Calcio · (Allerte, solo con un'allerta) · Eventi · Cultura · Avvisi · Servizi · Agevolazioni · Altro · zona · Comuni
+(lui: «Allerte e Avvisi spostale dopo calcio», «la pagina cultura mettila dopo eventi»; 29 ott: «facciamo pagina servizi
+la metti nel menu dopo avvisi»); sul computer su una riga sola (da 960 px), anche quando c'è «Allerte»: gli spazi tra le
+voci (7 px da 960, 15 da 1100, 19 da 1280, in index.html e meteo.html) sono misurati per starci. Una voce in più va
+riprovata a 960, 1100 e 1280 px col bottone «Allerte» acceso.
 Archivio e ricerca non stanno nel menu ma nella testata, a destra del titolo (sotto i 960 px sotto il titolo, la
 casella larga): lui voleva «liberare spazio» nel menu (28 ott 2026); la testata c'è su tutte le pagine, sopra il
 meteo ci sarebbero state solo in prima pagina e nelle sezioni. Data e «Aggiornato» stanno a sinistra, una sopra l'altra. «Avvisi» (categorie `strade` + `avvisi`, pagina /sezione/avvisi/)
@@ -61,12 +64,26 @@ nell'indirizzo (/agevolazioni/?chi=commercio&da=regione), una pagina per agevola
 ad Aruba (lui: «da fare nel prossimo futuro… così togliamo anche il rischio che il Pi non funzioni») lo scaricamento va
 lì.
 
+## I Servizi (pagina /servizi/, dal 29 ott 2026)
+Lui, 29 ott 2026: «facciamo 2 3 e 4 pero 1 per volta» (pagine di servizio, dati che gli altri citano, Bing), «pianifica
+bene ogni cosa non ti deve sfuggire nulla», «stesso stile del sito per tutto». /servizi/ ha un riquadro per servizio,
+con la riga di adesso dove il sito ha il dato (html_servizi in pagine.py). Ogni servizio ha la sua pagina, per Google.
+- **Farmacie di turno** (/farmacie-di-turno/): solo Benevento città, dal PDF mensile di Federfarma Benevento
+  (strumenti/farmacie.py, sul Pi due volte al giorno; lo manda alla pubblicazione quando cambia, campo «farmacie» di
+  pubblica.yml, come i carburanti). Un turno si scrive solo se ogni giorno ne ha uno diurno e uno notturno, senza buchi;
+  se no resta quello di prima e la sentinella avvisa (anche quando i turni sul sito finiscono entro 2 giorni). Le parole
+  sono quelle del PDF; niente telefoni (il PDF non li ha). «Adesso» lo rifà la pagina: alle 20 passa al notturno.
+- Prossime, una per volta e pianificate prima con lui: guardia medica (ASL), mercati, raccolta differenziata, ZTL,
+  numeri utili. Niente riquadri «in arrivo».
+
 ## Come sono fatte le pagine (regola del proprietario, 28 ott 2026)
 Lui: «dobbiamo mettere una regola di come costruire le pagine… dobbiamo uniformare e scrivere una regola». Ogni pagina
 nuova la segue; se una pagina non la segue, è da sistemare.
 1. **In cima a ogni pagina la testata e lo stesso menu** (index.html; meteo.html ha la copia fatta di link: se cambi
    una voce, cambiala in tutti e due). La voce della pagina è sottolineata in rosso (la sezione o la zona; Calcio sulla
-   pagina Calcio; Comuni sulle pagine dei Comuni); nelle notizie e nelle pagine di servizio nessuna. Il menu non si
+   pagina Calcio; Comuni sulle pagine dei Comuni; **Servizi** sulla pagina Servizi e su quelle dei servizi: farmacie di
+   turno, strade e scuole chiuse, carburanti, meteo, lui il 29 ott 2026: «ok sottolinea servizi»; l'elenco è SERVIZI in
+   index.html; meteo.html ha «Servizi» già segnata); nelle notizie nessuna. Il menu non si
    nasconde mai (pagine.py non lo nasconde più nelle pagine `articolo`).
 2. **Sezioni e zone** (le voci del menu, /sezione/…, /zona/…), in quest'ordine: titolo («Cronaca a Benevento e nel
    Sannio», «Altre notizie da Benevento e dal Sannio», zone «Notizie dalla Valle Telesina»; sezione e zona insieme

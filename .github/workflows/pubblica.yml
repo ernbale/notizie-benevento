@@ -20,6 +20,9 @@ on:
       carburanti:
         description: "Prezzi dei carburanti (li manda il Pi di casa: carburanti.json compresso e in base64). Vuoto = quelli già pubblicati"
         default: ""
+      farmacie:
+        description: "Turni delle farmacie di Benevento (li manda il Pi di casa: farmacie.json compresso e in base64). Vuoto = quelli già pubblicati"
+        default: ""
       contributi:
         description: "Catalogo dei contributi (lo manda il Pi di casa: compresso e in base64). Vuoto = quello già pubblicato"
         default: ""
@@ -82,6 +85,20 @@ jobs:
           else
             rm -f carburanti.nuovo
             curl -fsSL --max-time 30 "https://notiziebenevento.it/carburanti.json" -o carburanti.json || echo "nessun prezzo pubblicato prima"
+          fi
+
+      # i turni delle farmacie (strumenti/farmacie.py --manda): li legge il Pi di casa dal PDF di Federfarma Benevento e
+      # li manda qui quando cambiano; nelle altre pubblicazioni restano quelli già sul sito
+      - name: Turni delle farmacie (dal Pi di casa, o quelli già pubblicati)
+        env:
+          FARMACIE: ${{ github.event.inputs.farmacie }}
+        run: |
+          if [ -n "$FARMACIE" ] && printf '%s' "$FARMACIE" | base64 -d | gunzip > farmacie.nuovo \
+             && python3 -c "import json; d = json.load(open('farmacie.nuovo')); assert d['diurno'] and d['notturno'] and d['firma']; print('farmacie: arrivati dal Pi i turni', d['firma'], 'fino al', d['notturno'][-1]['al'])"; then
+            mv farmacie.nuovo farmacie.json
+          else
+            rm -f farmacie.nuovo
+            curl -fsSL --max-time 30 "https://notiziebenevento.it/farmacie.json" -o farmacie.json || echo "nessun turno pubblicato prima"
           fi
 
       # calendario, risultati e classifica della Serie B per la pagina calcio/ e il riquadro in prima pagina (la diretta

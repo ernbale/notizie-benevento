@@ -65,8 +65,10 @@
   .menu select { font: 500 14px var(--sans); background: transparent; border: 1px solid var(--riga); padding: 4px 6px; color: var(--nero); }
   .menu .link-comuni[aria-current="page"] { border-bottom-color: var(--rosso); }
   .menu .voce-allerta { color: #fff; background: var(--rosso); padding: 3px 9px; border-radius: 3px; border-bottom: 0; }
-  @media (min-width: 960px) { .menu { flex-wrap: nowrap; gap: 4px 12px; } }
-  @media (min-width: 1100px) { .menu { gap: 4px 20px; } }
+  /* gli spazi tra le voci: su una riga ci stanno anche «Allerte» (quando c'è) e «Servizi» (29 ott 2026) */
+  @media (min-width: 960px) { .menu { flex-wrap: nowrap; gap: 4px 7px; } }
+  @media (min-width: 1100px) { .menu { gap: 4px 15px; } }
+  @media (min-width: 1280px) { .menu { gap: 4px 19px; } }
   /* sotto i 960px la testata va in colonna: titolo, data, e la ricerca larga con Archivio accanto */
   @media (max-width: 959px) {
     .testata { grid-template-columns: 1fr; text-align: center; gap: 4px; }
@@ -94,7 +96,13 @@
   .avvisi-pag .avv-paese h4 a:hover { text-decoration: underline; }
   .avvisi-pag .avv-paese .notizie-comune li { margin-bottom: 12px; font-size: 17px; line-height: 1.35; }
   .avvisi-pag .avv-paese .notizie-comune a { font-size: 17px; line-height: 1.35; }
+  /* le farmacie di turno (pagina farmacie-di-turno/): il riquadro «adesso» come lo speciale di Avvisi, il nome della
+     farmacia come i titoli delle liste */
+  .farmacie .avv-speciale { background: var(--carta-scura); padding: 16px 20px 4px; margin: 24px 0 6px; }
+  .farmacie .avv-speciale > .occhiello { margin: 0 0 8px; }
+  .appro .notizie-comune .farm-nome { font: 700 20px/1.3 var(--serif); color: var(--nero); }
   @media (max-width: 620px) {
+    .farmacie .avv-speciale { padding: 14px 14px 2px; }
     .avvisi-pag .avv-paesi { grid-template-columns: 1fr; }
     .avvisi-pag .avv-speciale { padding: 14px 14px 2px; }
     .avvisi-pag .avv-speciale h2 { font-size: 23px; }
@@ -814,6 +822,7 @@
     <button type="button" data-cat="eventi" aria-pressed="false">Eventi</button>
     <button type="button" data-cat="cultura" aria-pressed="false">Cultura</button>
     <button type="button" data-cat="avvisi" aria-pressed="false">Avvisi</button>
+    <a class="link-comuni" href="/servizi/">Servizi</a>
     <button type="button" data-cat="contributi" aria-pressed="false">Agevolazioni</button>
     <button type="button" data-cat="altro" aria-pressed="false">Altro</button>
     <select id="zona" aria-label="Zona">
@@ -835,7 +844,7 @@
     <p>Notizie Benevento è un report automatico: le notizie appartengono ai giornali citati. Qui le raccontiamo con parole nostre, confrontando le fonti, con i link agli articoli originali.</p>
     <p>Una notizia compare se la riportano almeno due testate diverse oppure una fonte ufficiale (Comuni, Regione, Prefettura, Questura e forze dell'ordine, ASL, ANAS, INGV, le società dell'acqua, dei treni e dei bus). La cronaca riportata da un solo giornale autorevole porta la scritta «Una sola fonte». Le accuse sono riportate con le parole usate dai giornali. Aggiornato ogni ora, dalle 6 alle 22. Le visite si contano in forma anonima, senza cookie.</p>
     <p>Nessuna notizia viene cancellata: quando esce dalla prima pagina resta nell'<a href="/archivio/">archivio</a>, allo stesso indirizzo.</p>
-    <p class="sezioni-link">Sezioni: <a href="/sezione/avvisi/">Avvisi</a> · <a href="/sezione/cronaca/">Cronaca</a> · <a href="/sezione/politica/">Politica</a> · <a href="/sezione/sport/">Sport</a> · <a href="/sezione/eventi/">Eventi</a> · <a href="/sezione/allerte/">Allerte</a> · <a href="/sezione/altro/">Altro</a> · <a href="/meteo.html">Meteo Benevento</a> · <a href="/strade-chiuse/">Strade chiuse oggi</a> · <a href="/carburanti/">Prezzi carburanti</a> · <a href="/curiosita/">Curiosità del Sannio</a> · <a href="/calcio/">Benevento Calcio</a><br>
+    <p class="sezioni-link">Sezioni: <a href="/sezione/avvisi/">Avvisi</a> · <a href="/sezione/cronaca/">Cronaca</a> · <a href="/sezione/politica/">Politica</a> · <a href="/sezione/sport/">Sport</a> · <a href="/sezione/eventi/">Eventi</a> · <a href="/sezione/allerte/">Allerte</a> · <a href="/sezione/altro/">Altro</a> · <a href="/servizi/">Servizi</a> · <a href="/farmacie-di-turno/">Farmacie di turno</a> · <a href="/meteo.html">Meteo Benevento</a> · <a href="/strade-chiuse/">Strade chiuse oggi</a> · <a href="/carburanti/">Prezzi carburanti</a> · <a href="/curiosita/">Curiosità del Sannio</a> · <a href="/calcio/">Benevento Calcio</a><br>
       Zone: <a href="/zona/benevento/">Benevento città</a> · <a href="/zona/valle-telesina/">Valle Telesina</a> · <a href="/zona/valle-caudina/">Valle Caudina</a> · <a href="/zona/fortore/">Fortore e Tammaro</a> · <a href="/zona/altri-comuni/">Altri comuni</a> · <a href="/comuni/">Tutti i Comuni</a> · <a href="/archivio/">Archivio mese per mese</a> · <a href="/feed.xml">Feed RSS</a></p>
     <p class="sezioni-link"><a href="/chi-siamo/">Chi siamo</a> · Seguici su <a href="https://www.instagram.com/notiziebenevento.it/" target="_blank" rel="noopener">Instagram</a>, <a href="https://www.facebook.com/notiziebenevento" target="_blank" rel="noopener">Facebook</a> e <a href="https://t.me/notiziebenevento" target="_blank" rel="noopener">Telegram</a></p>
   </footer>
@@ -3381,15 +3390,20 @@
     }
     return f;
   }
+  // le pagine dei servizi: lì nel menu è sottolineata «Servizi» (lui, 29 ott 2026: «ok sottolinea servizi»; in
+  // meteo.html è segnata nel menu fatto di link)
+  var SERVIZI = ["/servizi/", "/farmacie-di-turno/", "/strade-chiuse/", "/scuole-chiuse/", "/carburanti/", "/meteo.html"];
   function segnaMenu() {
-    // nessuna voce nelle notizie, nelle pagine di servizio e nella ricerca (regola 1 delle pagine, CLAUDE.md)
+    // nessuna voce nelle notizie e nella ricerca; «Servizi» nelle pagine dei servizi (regola 1 delle pagine, CLAUDE.md)
     var f = /^#(archivio|cerca\/)/.test(location.hash) ? null : filtriDaIndirizzo();
     var voce = !f ? null : filtroCat === "strade" ? "avvisi" : filtroCat;
     document.querySelectorAll(".menu button[data-cat]").forEach(function (x) { x.setAttribute("aria-pressed", x.getAttribute("data-cat") === voce ? "true" : "false"); });
     document.getElementById("zona").value = f ? filtroZona : "";
     var p = location.pathname;
     document.querySelectorAll(".menu a.link-comuni").forEach(function (a) {
-      var qui = a.getAttribute("href") === "/calcio/" ? p.indexOf("/calcio/") === 0 : p.indexOf("/comuni/") === 0 || p.indexOf("/comune/") === 0;
+      var h = a.getAttribute("href");
+      var qui = h === "/calcio/" ? p.indexOf("/calcio/") === 0 : h === "/servizi/" ? SERVIZI.indexOf(p) >= 0
+        : p.indexOf("/comuni/") === 0 || p.indexOf("/comune/") === 0;
       if (qui) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
     });
   }
@@ -3432,6 +3446,58 @@
     history.pushState(null, "", h);
     cambiaPagina();
   });
+  // Farmacie di turno (voluta dal proprietario il 29 ott 2026; pagina farmacie-di-turno/ e la riga nella pagina
+  // Servizi): «adesso» si rifà qui con l'ora italiana, come turni_adesso() in pagine.py. Prima delle 8:45 vale il
+  // turno notturno cominciato ieri sera, dalle 20 quello di stanotte; i turni già finiti escono dagli elenchi.
+  if (FISSA && FISSA.farmacie) (function () {
+    var F = FISSA.farmacie, NOTTE = F.notte || { dalle: "20:00", alle: "08:45" };
+    var ora = new Date().toLocaleTimeString("it-IT", { timeZone: TZ, hour: "2-digit", minute: "2-digit", hourCycle: "h23" });
+    var oggi = oggiTZ(), ieri = new Date(Date.parse(oggi + "T12:00:00Z") - 864e5).toISOString().slice(0, 10);
+    var trova = function (v, g) { return (v || []).filter(function (x) { return x.dal <= g && g <= x.al; })[0] || null; };
+    var breve = function (h) { return h.charAt(0) === "0" ? h.slice(1) : h; };
+    var giornoLungo = function (g) {
+      return new Date(g + "T12:00:00Z").toLocaleDateString("it-IT", { timeZone: "UTC", weekday: "long", day: "numeric", month: "long" });
+    };
+    var giorni = function (x) {   // «dal 25 al 31 ottobre», come _giorni_turno in pagine.py
+      var a = new Date(x.dal + "T12:00:00Z"), b = new Date(x.al + "T12:00:00Z");
+      var g = function (d) { return d.getUTCDate() === 1 ? "1°" : String(d.getUTCDate()); };
+      var m = function (d) { return d.toLocaleDateString("it-IT", { timeZone: "UTC", month: "long" }); };
+      if (x.dal === x.al) return giornoLungo(x.dal);
+      return a.getUTCMonth() === b.getUTCMonth() ? "dal " + g(a) + " al " + g(b) + " " + m(b) : "dal " + g(a) + " " + m(a) + " al " + g(b) + " " + m(b);
+    };
+    var gia = ora < NOTTE.alle || ora >= NOTTE.dalle;
+    var di = trova(F.diurno, oggi), no = trova(F.notturno, ora < NOTTE.alle ? ieri : oggi);
+    var mappa = function (x) {
+      return linkSicuro("https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent("Farmacia " + x.nome + ", " + x.indirizzo + ", Benevento"), "mappa");
+    };
+    var box = document.querySelector(".farm-adesso");
+    if (box) {
+      var ul = el("ul", "notizie-comune", []);
+      [[di, "Servizio diurno" + (di ? ", " + giorni(di) : "")],
+       [no, "Servizio notturno" + (gia ? ", adesso fino alle " + breve(NOTTE.alle) : ", stanotte dalle " + breve(NOTTE.dalle) + " alle " + breve(NOTTE.alle))]
+      ].forEach(function (c) {
+        var x = c[0];
+        if (!x) {
+          ul.appendChild(el("li", "", [el("div", "occhiello", [c[1].split(",")[0]]),
+            el("p", "", ["Il turno non c'è ancora: Federfarma Benevento non ha pubblicato i turni nuovi. Li mettiamo appena escono."])]));
+          return;
+        }
+        var dove = el("span", "dove", [x.indirizzo ? x.indirizzo + " · " : ""]);
+        dove.appendChild(mappa(x));
+        ul.appendChild(el("li", "", [el("div", "occhiello", [c[1]]), el("b", "farm-nome", [x.nome]), dove]));
+      });
+      var g = giornoLungo(oggi);
+      box.replaceChildren(el("div", "occhiello", ["Oggi, " + g]), ul);
+      // gli elenchi: via i turni finiti (il notturno di ieri resta fino alle 8:45)
+      document.querySelectorAll(".farm-turni li[data-al]").forEach(function (li) {
+        var al = li.getAttribute("data-al");
+        li.hidden = li.getAttribute("data-servizio") === "notturno" ? al < (ora < NOTTE.alle ? ieri : oggi) : al < oggi;
+      });
+    }
+    var riga = document.querySelector(".farm-riga");
+    if (riga) riga.textContent = [di ? "Di giorno: " + di.nome : "", no ? (gia ? "adesso: " : "stanotte: ") + no.nome : ""]
+      .filter(Boolean).join(" · ") || "Turni nuovi non ancora pubblicati da Federfarma";
+  })();
   // Pagina dei carburanti (voluta dal proprietario il 25 ott 2026): si sceglie il paese (si parte da Benevento, c'è
   // anche «Tutti i paesi») e il carburante, e sotto ci sono tutti i distributori dal meno caro. Le schede sono quelle
   // scritte da pagine.py, spostate qui: restano tutte nella pagina, quelle degli altri paesi nascoste. Un link a un

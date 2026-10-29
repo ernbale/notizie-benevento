@@ -27,6 +27,11 @@ calcio.json
 /calcio/
 .stato-gol/
 /agevolazioni/
+/servizi/
+/farmacie-di-turno/
+# i turni delle farmacie li manda il Pi alla pubblicazione (strumenti/farmacie.py), come i carburanti
+/farmacie.json
+/farmacie.nuovo
 /contributi/
 /archivio/index.html
 /archivio/[0-9][0-9][0-9][0-9]-[0-9][0-9]/

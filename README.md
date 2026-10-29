@@ -20,6 +20,10 @@ Sito: https://notiziebenevento.it (notiziebenevento.com rimanda qui)
   e quello che scrive: i contributi che il catalogo non ha e le schede del catalogo chiuse o sbagliate.
 - `strumenti/contributi.py`: i contributi e i bandi per il Sannio → `contributi.json` (pagina `/agevolazioni/`, «Contributi» fino al 28 ott 2026): il catalogo del
   Ministero lo scarica il Pi di casa e lo manda alla pubblicazione, che lo unisce a `contributi_locali.json` (lo scrive l'agente).
+- `strumenti/farmacie.py`: le farmacie di turno di Benevento città dal PDF mensile di Federfarma Benevento →
+  `farmacie.json` (pagina `/farmacie-di-turno/`, dal 29 ott 2026): lo legge il Pi di casa e lo manda alla pubblicazione
+  quando cambia, come i carburanti. La pagina `/servizi/` raccoglie farmacie, strade e scuole chiuse, carburanti, meteo,
+  avvisi, agevolazioni e Comuni (voce «Servizi» del menu).
 - `strumenti/foto_ia.py`: le foto fatte con GPT Image dalla `scena`: oggi solo per le curiosità senza foto libera su Commons
   (`img/curiosita/`); le 31 fatte il 28 ott 2026 per notizie e storie (`img/ia/`) restano. Segreto `OPENAI_API_KEY`.
 - `strumenti/pagine.py`: a ogni pubblicazione fa una pagina vera per ogni notizia (`/notizia/<id>/`, anche archiviate),

@@ -28,6 +28,7 @@ import os
 import re
 import shutil
 import sys
+import urllib.parse
 
 from chiusure import slug       # gli stessi nomi di img/stemmi (strumenti/stemmi.py)
 from meteo import COMUNI_BN
@@ -1229,6 +1230,139 @@ def html_carburanti(dati, oggi):
     return f'<article class="appro">{h}</article>'
 
 
+# ---------- Servizi: la pagina che li raccoglie e le farmacie di turno (strumenti/farmacie.py → farmacie.json) ----------
+# Lui, 29 ott 2026: «facciamo pagina servizi la metti nel menu dopo avvisi», «stesso stile del sito per tutto», «ok
+# sottolinea servizi» (nel menu «Servizi» è sottolineata qui e nelle pagine dei servizi: regola 1 delle pagine,
+# CLAUDE.md). Le farmacie sono la prima pagina nuova. «Adesso» (il turno di oggi e quello della notte, che comincia
+# alle 20) lo scrive qui la pubblicazione e lo rifà index.html appena si apre la pagina (NB_PAGINA.farmacie), così
+# alle 20 passa da solo al turno di notte anche senza una pubblicazione nuova.
+
+
+def _giorni_turno(x):
+    a, b = dt.date.fromisoformat(x["dal"]), dt.date.fromisoformat(x["al"])
+    g = lambda d: "1°" if d.day == 1 else str(d.day)   # noqa: E731
+    if a == b:
+        return f"{GIORNI[a.weekday()]} {g(a)} {MESI_LUNGHI[a.month - 1]}"
+    if a.month == b.month:
+        return f"dal {g(a)} al {g(b)} {MESI_LUNGHI[b.month - 1]}"
+    return f"dal {g(a)} {MESI_LUNGHI[a.month - 1]} al {g(b)} {MESI_LUNGHI[b.month - 1]}"
+
+
+def _mappa_farmacia(x):
+    q = urllib.parse.quote(f"Farmacia {x['nome']}, {x['indirizzo']}, Benevento")
+    return f'<a href="https://www.google.com/maps/search/?api=1&amp;query={q}" target="_blank" rel="noopener nofollow">mappa</a>'
+
+
+def turni_adesso(dati, adesso):
+    """(turno diurno di oggi, turno notturno che vale adesso o stanotte, la notte è già cominciata?) all'ora `adesso`
+    (ora italiana); None dove il turno non c'è. Come turniAdesso() in index.html."""
+    notte = (dati.get("note") or {}).get("notte") or {"dalle": "20:00", "alle": "08:45"}
+    oggi, hm = adesso.date(), adesso.strftime("%H:%M")
+    trova = lambda k, d: next((x for x in dati.get(k) or [] if x["dal"] <= d.isoformat() <= x["al"]), None)   # noqa: E731
+    if hm < notte["alle"]:
+        return trova("diurno", oggi), trova("notturno", oggi - dt.timedelta(days=1)), True
+    return trova("diurno", oggi), trova("notturno", oggi), hm >= notte["dalle"]
+
+
+def _ora_breve(s):
+    return s[1:] if s.startswith("0") else s
+
+
+def html_adesso_farmacie(dati, adesso):
+    """Il riquadro «adesso» della pagina delle farmacie (lo rifà index.html con turniAdesso())."""
+    di, no, gia = turni_adesso(dati, adesso)
+    notte = (dati.get("note") or {}).get("notte") or {"dalle": "20:00", "alle": "08:45"}
+    h = f'<div class="occhiello">{e(_giorno_chiusura(adesso.date().isoformat(), adesso.date()))}</div>'
+    h += '<ul class="notizie-comune">'
+    for x, cosa in ((di, "Servizio diurno, " + (_giorni_turno(di) if di else "")),
+                    (no, (f"Servizio notturno, adesso fino alle {_ora_breve(notte['alle'])}" if gia else
+                          f"Servizio notturno, stanotte dalle {_ora_breve(notte['dalle'])} alle {_ora_breve(notte['alle'])}"))):
+        if x:
+            h += (f'<li><div class="occhiello">{e(cosa)}</div><b class="farm-nome">{e(x["nome"])}</b>'
+                  f'<span class="dove">{e(x["indirizzo"])}{" · " if x["indirizzo"] else ""}{_mappa_farmacia(x)}</span></li>')
+        else:
+            h += (f'<li><div class="occhiello">{e(cosa.split(",")[0])}</div><p>Il turno non c\'è ancora: Federfarma '
+                  "Benevento non ha pubblicato i turni nuovi. Li mettiamo appena escono.</p></li>")
+    return h + "</ul>"
+
+
+def html_farmacie(dati, adesso):
+    h = _testata_pagina("Servizi", "", "Farmacie di turno a Benevento")
+    h += ('<p class="sommario">Le farmacie di turno a Benevento città, di giorno e di notte, con gli orari e le note '
+          "dell'ASL. I turni li pubblica ogni mese Federfarma Benevento: li controlliamo ogni giorno. I paesi della "
+          "provincia hanno turni loro, che qui non ci sono.</p>")
+    oggi = adesso.date()
+    if not dati.get("diurno") or not dati.get("notturno"):
+        h += "<p>I turni delle farmacie ora non sono disponibili: riprova più tardi.</p>" + SEGUI
+        return f'<article class="appro">{h}</article>'
+    h += f'<div class="avv-speciale farm-adesso">{html_adesso_farmacie(dati, adesso)}</div>'
+    ieri = (oggi - dt.timedelta(days=1)).isoformat()
+    for k, titolo in (("diurno", "Servizio diurno"), ("notturno", "Servizio notturno")):
+        h += f'<h3>{titolo}</h3><ul class="notizie-comune farm-turni">'
+        for x in dati[k]:
+            if x["al"] < (ieri if k == "notturno" else oggi.isoformat()):
+                continue
+            h += (f'<li data-servizio="{k}" data-dal="{e(x["dal"])}" data-al="{e(x["al"])}"><div class="occhiello">'
+                  f'{e(_giorni_turno(x)[0].upper() + _giorni_turno(x)[1:])}</div><b class="farm-nome">{e(x["nome"])}</b>'
+                  f'<span class="dove">{e(x["indirizzo"])}{" · " if x["indirizzo"] else ""}{_mappa_farmacia(x)}</span></li>')
+        h += "</ul>"
+    orari, note = dati.get("orari") or {}, dati.get("note") or {}
+    fasce = lambda v: " e ".join(f"{_ora_breve(a)}-{_ora_breve(b)}" for a, b in v)   # noqa: E731
+    righe = []
+    if orari.get("feriali"):
+        righe.append(f"Dal lunedì al venerdì: {fasce(orari['feriali'])}.")
+    if orari.get("sabato"):
+        righe.append(f"Il sabato: {fasce(orari['sabato'])}.")
+    c = note.get("continuato")
+    if c:
+        righe.append(f"Orario continuato nei giorni feriali, dalle {_ora_breve(c['dalle'])} alle {_ora_breve(c['alle'])}: "
+                     f"{c['farmacie']}.")
+    if note.get("sabato_pomeriggio"):
+        righe.append(f"Aperte anche il sabato pomeriggio: {note['sabato_pomeriggio']}.")
+    if note.get("notte"):
+        righe.append(f"Il turno notturno va dalla chiusura del pomeriggio ({_ora_breve(note['notte']['dalle'])}) "
+                     f"all'apertura del mattino dopo ({_ora_breve(note['notte']['alle'])}).")
+    if note.get("chiamata"):
+        righe.append("Di notte si chiama solo per farmaci davvero urgenti, con la ricetta del medico che porta scritto "
+                     f"«urgente», l'ora e la firma: la chiamata notturna costa {note['chiamata']} €.")
+    if righe:
+        h += "<h3>Orari delle farmacie</h3>" + "".join(f"<p>{e(r)}</p>" for r in righe)
+    f = dati.get("fonte") or {}
+    t = quando_dt(f.get("modificato"))
+    from facebook import fuso
+    agg = f" (aggiornati il {t.astimezone(fuso()).day} {MESI_LUNGHI[t.astimezone(fuso()).month - 1]})" if t else ""
+    h += (f'<p class="agg-chiusure">Fonte: <a href="{e(f.get("pagina") or "")}" target="_blank" rel="noopener nofollow">'
+          f"{e(f.get('nome') or 'Federfarma Benevento')}, turni delle farmacie</a>{agg}. Un turno può cambiare "
+          "all'ultimo momento: il cartello sulla porta delle farmacie è sempre quello giusto.</p>")
+    h += '<p class="collegate"><a href="/servizi/">Tutti i servizi ›</a></p>'
+    h += SEGUI
+    return f'<article class="appro farmacie">{h}</article>'
+
+
+def farmacie_js(dati, adesso):
+    """Quello che serve a index.html per rifare «adesso»: i turni da ieri a fra una settimana e l'ora della notte."""
+    da, a = (adesso.date() - dt.timedelta(days=1)).isoformat(), (adesso.date() + dt.timedelta(days=7)).isoformat()
+    tieni = lambda v: [{k: x[k] for k in ("dal", "al", "nome", "indirizzo")} for x in v or [] if x["al"] >= da and x["dal"] <= a]   # noqa: E731
+    return {"diurno": tieni(dati.get("diurno")), "notturno": tieni(dati.get("notturno")),
+            "notte": (dati.get("note") or {}).get("notte") or {"dalle": "20:00", "alle": "08:45"}}
+
+
+def html_servizi(righe):
+    """La pagina Servizi: un riquadro per servizio (titolo, la riga di adesso, a cosa serve), nello stile di «Strade
+    chiuse». righe = [(link, occhiello, titolo, adesso, cosa)]."""
+    h = _testata_pagina("Servizi", "", "Servizi utili a Benevento e nel Sannio")
+    h += ('<p class="sommario">Le cose che servono ogni giorno a Benevento e nei paesi del Sannio: la farmacia di '
+          "turno, le strade e le scuole chiuse, i prezzi dei carburanti, il meteo e gli avvisi dei Comuni, aggiornati "
+          "di continuo.</p>")
+    h += '<ul class="notizie-comune servizi">'
+    for link, occh, titolo, ora, cosa in righe:
+        h += (f'<li><div class="occhiello">{e(occh)}</div><a href="{e(link)}">{e(titolo)}</a>'
+              + (f'<span class="dove{" farm-riga" if link == "/farmacie-di-turno/" else ""}">{e(ora)}</span>' if ora else "")
+              + f"<p>{e(cosa)}</p></li>")
+    h += "</ul>" + SEGUI
+    return f'<article class="appro">{h}</article>'
+
+
 # ---------- Benevento Calcio (strumenti/calcio.py → calcio.json) ----------
 # La pagina scritta qui è quella che legge Google e che si vede subito; poi calcio.js la ridisegna uguale e, durante
 # le partite, la tiene in diretta (tabellone, cronaca, statistiche, formazioni, gli altri campi, classifica).
@@ -2146,7 +2280,8 @@ def main():
     except ImportError:
         con_immagini = False
         print("AVVISO: Pillow non c'è, uso l'immagine del sito per tutte le notizie", file=sys.stderr)
-    for d in ("notizia", "approfondimento", "sezione", "zona", "evento", "comune", "comuni", "carburanti", "curiosita", "calcio"):
+    for d in ("notizia", "approfondimento", "sezione", "zona", "evento", "comune", "comuni", "carburanti", "curiosita", "calcio",
+              "servizi", "farmacie-di-turno"):
         shutil.rmtree(os.path.join(sito, d), ignore_errors=True)
     per_id = {n["id"]: n for n in notizie}
     usate, mappa = set(), []   # mappa: (url, lastmod)
@@ -2445,6 +2580,75 @@ def main():
         carb, corpo = {}, html_carburanti({}, oggi)
     scrivi(os.path.join(sito, "carburanti", "index.html"), pagina(modello, seo, {"statica": True, "carburanti": True}, corpo, articolo=True))
     mappa.append((url, carb.get("estrazione")))
+
+    # le farmacie di turno (strumenti/farmacie.py: le manda il Pi, come i carburanti): la pagina c'è sempre
+    try:
+        farm = leggi(os.path.join(sito, "farmacie.json"))
+    except (OSError, ValueError):
+        farm = {}
+    adesso_it = adesso.astimezone(fuso())
+    url = SITO + "/farmacie-di-turno/"
+    seo = blocco_seo(f"Farmacie di turno a Benevento oggi, di giorno e di notte – {NOME}", "Le farmacie di turno a "
+                     "Benevento oggi e stanotte, con indirizzo, mappa e orari: i turni diurni e notturni di Federfarma "
+                     "Benevento, controllati ogni giorno.", url, "/condivisione.png",
+                     jsonld={"@context": "https://schema.org", "@type": "WebPage", "name": "Farmacie di turno a Benevento",
+                             "url": url, "isPartOf": {"@type": "WebSite", "name": NOME, "url": SITO + "/"},
+                             "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [
+                                 {"@type": "ListItem", "position": 1, "name": NOME, "item": SITO + "/"},
+                                 {"@type": "ListItem", "position": 2, "name": "Servizi", "item": SITO + "/servizi/"},
+                                 {"@type": "ListItem", "position": 3, "name": "Farmacie di turno"}]}})
+    try:
+        corpo, farm_js = html_farmacie(farm, adesso_it), farmacie_js(farm, adesso_it)
+    except Exception as ex:   # un file dei turni rotto non deve fermare la pubblicazione: la pagina dice «non disponibili»
+        print(f"AVVISO: farmacie.json non torna ({type(ex).__name__}: {ex}): pagina senza turni", file=sys.stderr)
+        farm, corpo, farm_js = {}, html_farmacie({}, adesso_it), {"diurno": [], "notturno": []}
+    scrivi(os.path.join(sito, "farmacie-di-turno", "index.html"),
+           pagina(modello, seo, {"statica": True, "farmacie": farm_js}, corpo, articolo=True))
+    mappa.append((url, (farm.get("fonte") or {}).get("modificato") or farm.get("aggiornato")))
+
+    # la pagina Servizi: un riquadro per servizio, con la riga di adesso dove il sito ha il dato
+    di, no, gia = turni_adesso(farm, adesso_it) if farm.get("diurno") else (None, None, False)
+    r_farm = " · ".join(x for x in (f"Di giorno: {di['nome']}" if di else "",
+                                    (f"{'adesso' if gia else 'stanotte'}: {no['nome']}" if no else "")) if x) \
+        or "Turni nuovi non ancora pubblicati da Federfarma"
+    n_strade = len(strade_chiuse(notizie, oggi)[0])
+    scuole = {c["comune"] for c in chiusure_per_giorno(chius.get("chiusure") or [], oggi).get(oggi.isoformat(), [])}
+    try:
+        k = (carb.get("classifiche") or {}).get("benzina", [])[0]
+        i = next(x for x in carb["impianti"] if x["id"] == k)
+        r_carb = f"Benzina self da {_euro(i['prezzi']['benzina']['self']['prezzo'])} € al litro, a {i['comune']}"
+    except (IndexError, KeyError, StopIteration, TypeError):
+        r_carb = ""
+    sp = speciale_di(oggi)
+    righe = [
+        ("/farmacie-di-turno/", "Salute", "Farmacie di turno a Benevento", r_farm,
+         "La farmacia di turno di oggi e di stanotte in città, con indirizzo, mappa e orari."),
+        ("/strade-chiuse/", "Strade", "Strade chiuse", f"Oggi: {n_strade} " + ("strada chiusa o con lavori" if n_strade == 1
+                                                                                else "strade chiuse o con lavori") if n_strade else "Oggi nessuna strada chiusa annunciata",
+         "Strade chiuse, sensi unici, lavori e bus deviati a Benevento e in provincia, oggi e nei prossimi giorni."),
+        ("/scuole-chiuse/", "Chiusure dei Comuni", "Scuole chiuse", f"Oggi chiuse in {len(scuole)} " + ("Comune" if len(scuole) == 1 else "Comuni")
+         if scuole else "Oggi nessuna chiusura annunciata",
+         "Le scuole e gli altri luoghi che i Comuni del Sannio chiudono, con l'ordinanza, anche di notte."),
+        ("/carburanti/", "Carburanti", "Prezzi di benzina e diesel", r_carb,
+         "I prezzi di tutti i distributori di Benevento e provincia, dal meno caro, aggiornati ogni mattina."),
+        ("/meteo.html", "Meteo", "Meteo e allerte", "",
+         "Le previsioni per Benevento e per ogni paese del Sannio, con le allerte della Protezione civile."),
+        ("/sezione/avvisi/", "Avvisi", "Avvisi dei Comuni", sp["titolo"] if sp else "",
+         "Uffici, acqua, rifiuti, cimiteri e scadenze: gli avvisi dei Comuni in ordine di quando servono."),
+        ("/agevolazioni/", "Agevolazioni", "Agevolazioni, bonus e bandi", f"{len(aperti)} aperte adesso" if aperti else "",
+         "Contributi, bonus e bandi per famiglie, imprese e associazioni del Sannio, con le scadenze."),
+        ("/comuni/", "Comuni", "I Comuni del Sannio", "",
+         "Le notizie paese per paese, con gli avvisi e i distributori di ogni Comune."),
+    ]
+    url = SITO + "/servizi/"
+    seo = blocco_seo(f"Servizi a Benevento: farmacie di turno, strade chiuse, carburanti, meteo – {NOME}", "Le cose che "
+                     "servono ogni giorno a Benevento e nel Sannio: farmacie di turno, strade e scuole chiuse, prezzi dei "
+                     "carburanti, meteo, avvisi dei Comuni e agevolazioni.", url, "/condivisione.png",
+                     jsonld={"@context": "https://schema.org", "@type": "CollectionPage", "name": "Servizi utili a Benevento e nel Sannio",
+                             "url": url, "isPartOf": {"@type": "WebSite", "name": NOME, "url": SITO + "/"}})
+    scrivi(os.path.join(sito, "servizi", "index.html"),
+           pagina(modello, seo, {"statica": True, "farmacie": farm_js}, html_servizi(righe), articolo=True))
+    mappa.append((url, None))
     # Benevento Calcio (strumenti/calcio.py, nello stesso giro): la pagina c'è sempre, la diretta la fa calcio.js
     try:
         cal = leggi(os.path.join(sito, "calcio.json"))
