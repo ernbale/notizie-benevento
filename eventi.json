@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-29T17:11+01:00",
+ "aggiornato": "2026-10-29T20:06+01:00",
  "eventi": [
   {
    "id": "mostra-cosmogonie-meact-torrecuso-2026",
@@ -959,6 +959,53 @@
     }
    ],
    "foto": "museo-3"
+  },
+  {
+   "id": "gustaguardia-guardia-sanframondi-2026",
+   "titolo": "GustaGuardia 2026 a Guardia Sanframondi: «La Scuola Filosofica Sannita» di Giancristiano Desiderio",
+   "tipo": "libro",
+   "inizio": "2026-10-31",
+   "ora": "17:00",
+   "luogo": "Casa di Bacco, piazza Castello",
+   "comune": "Guardia Sanframondi",
+   "zona": "telesina",
+   "artisti": [
+    "Giancristiano Desiderio",
+    "Magic Victor"
+   ],
+   "breve": "Sabato 31 ottobre alle 17 alla Casa di Bacco, in piazza Castello, la quinta edizione di GustaGuardia: la presentazione del libro «La Scuola Filosofica Sannita» di Giancristiano Desiderio e poi una degustazione di prodotti tipici.",
+   "descrizione": [
+    {
+     "testo": "Sabato 31 ottobre 2026 alle 17, nella Casa di Bacco in piazza Castello a Guardia Sanframondi, c'è la quinta edizione di GustaGuardia, una serata dedicata ai prodotti e alla cultura del Sannio. Si comincia con la presentazione del libro «La Scuola Filosofica Sannita» di Giancristiano Desiderio, poi una degustazione di prodotti tipici e un momento di magia con Magic Victor.",
+     "fonti": [
+      "Gazzetta di Benevento",
+      "Benevento Giornale"
+     ]
+    },
+    {
+     "testo": "Con l'autore ci sarà Salvatore D'Onofrio, editore e responsabile della libreria «Il Castello»; porterà i saluti il sindaco di Guardia Sanframondi, Raffaele Di Lonardo. A fare gli onori di casa è Fiorenza Ceniccola, amministratrice della Casa di Bacco e vicesindaca del paese, che presenta GustaGuardia come una vetrina delle eccellenze del territorio, non solo a tavola ma anche nella cultura.",
+     "fonti": [
+      "Gazzetta di Benevento",
+      "Benevento Giornale"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "nome": "Gazzetta di Benevento",
+     "titolo": "Sabato 31 ottobre si terrà la V edizione di “GustaGuardia” che si svolgerà nella “Casa di Bacco” a piazza Castello a Guardia Sanframondi",
+     "url": "https://www.gazzettabenevento.it/it/sabato-31-ottobre-si-terra-la-v-edizione-di-gustaguardia-che-si-svolgera-nella-casa-di-bacco-piazza",
+     "data": "29 ott, 15:25"
+    },
+    {
+     "nome": "Benevento Giornale",
+     "titolo": "Guardia Sanframondi – V edizione “GustaGuardia”, sabato 31 ottobre 2026",
+     "url": "https://www.beneventogiornale.com/2026/10/29/guardia-sanframondi-v-edizione-gustaguardia-sabato-31-ottobre-2026/",
+     "data": "29 ott, 19:46"
+    }
+   ],
+   "immagine": "libri",
+   "foto": "libri-5"
   },
   {
    "id": "neri-per-caso-accademia-santa-sofia-2026",

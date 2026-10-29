@@ -1,7 +1,118 @@
 {
- "aggiornato": "2026-10-29T19:12+01:00",
+ "aggiornato": "2026-10-29T20:12+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-incidente-svincolo-pietrelcina-via-valfortore",
+   "titolo": "Benevento, scontro tra due auto allo svincolo per Pietrelcina in via Valfortore: nessun ferito, code",
+   "titolo_google": "Benevento, incidente allo svincolo per Pietrelcina: code",
+   "sintesi": "Giovedì 29 ottobre in serata una Mercedes e una Fiat si sono scontrate all'uscita dello svincolo per Pietrelcina, in via Valfortore a Benevento. Nessuno si è fatto male, ma i rottami sull'asfalto hanno creato code nei due sensi.",
+   "categoria": "cronaca",
+   "luogo": "Benevento, via Valfortore, svincolo per Pietrelcina",
+   "pubblicato": "2026-10-29T19:33+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 3,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/violento-impatto-ingresso-tangenziale/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Giovedì 29 ottobre, in serata, due auto si sono scontrate all'uscita dello svincolo per Pietrelcina, all'ingresso della tangenziale di Benevento. Una Mercedes ha urtato una Fiat e le due macchine sono rimaste ferme in via Valfortore. Nonostante l'urto violento, nessuno è rimasto ferito.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Sono arrivati i vigili urbani, che hanno fatto i rilievi per capire come è andata, e il personale del 118. La causa dello scontro è ancora da accertare.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Per i rottami rimasti sull'asfalto si sono formate code in tutti e due i sensi di marcia.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Perché la Mercedes ha urtato la Fiat.",
+     "Quando la strada è tornata libera."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Violento impatto all’ingresso della tangenziale",
+      "url": "https://www.anteprima24.it/benevento/violento-impatto-ingresso-tangenziale/",
+      "data": "29 ott, 19:33"
+     }
+    ]
+   },
+   "zona": "benevento"
+  },
+  {
+   "id": "benevento-giudice-maria-ilaria-romano-csm",
+   "titolo": "Benevento, la giudice Maria Ilaria Romano del Tribunale sannita eletta al Consiglio superiore della magistratura",
+   "titolo_google": "Maria Ilaria Romano, giudice di Benevento eletta al Csm",
+   "sintesi": "Maria Ilaria Romano, 56 anni, giudice del Tribunale di Benevento, è stata eletta tra i venti magistrati del Consiglio superiore della magistratura, con 365 voti, per Magistratura indipendente. Prima di lei un solo altro magistrato beneventano, Giuseppe Maria Berruti, era entrato nel Csm.",
+   "categoria": "altro",
+   "luogo": "Benevento, Tribunale",
+   "pubblicato": "2026-10-29T19:24+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "Il Mattino",
+     "url": "https://www.ilmattino.it/benevento/benevento_csm_tribunale_benevento_magistrato_romani_consiglio_superiore_magistratura_ultime_notizie_oggi-9856809.html"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Maria Ilaria Romano, 56 anni, giudice in servizio al Tribunale di Benevento, è entrata nel Consiglio superiore della magistratura, l'organo che decide su nomine, trasferimenti e procedimenti disciplinari dei magistrati. È stata eletta con 365 voti tra i venti componenti magistrati («togati»), come esponente di Magistratura indipendente, una delle correnti dei giudici.",
+      "fonti": [
+       "Il Mattino"
+      ]
+     },
+     {
+      "testo": "Ha cominciato la carriera proprio al Tribunale di Benevento come giudice del lavoro; poi è stata giudice civile a Guardia Sanframondi, giudice civile a Benevento e all'ufficio del giudice per le indagini preliminari. Dopo un periodo alla prima sezione civile del Tribunale di Napoli è tornata a Benevento come presidente della prima sezione civile.",
+      "fonti": [
+       "Il Mattino"
+      ]
+     },
+     {
+      "testo": "È figlia di un magistrato scomparso. Prima di lei un solo altro magistrato beneventano, Giuseppe Maria Berruti, che però lavorava a Roma, aveva fatto parte del Csm.",
+      "fonti": [
+       "Il Mattino"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Chi prenderà il suo posto alla prima sezione civile del Tribunale di Benevento."
+    ],
+    "fonti": [
+     {
+      "nome": "Il Mattino",
+      "titolo": "Benevento, il magistrato Romano nominato nel Csm",
+      "url": "https://www.ilmattino.it/benevento/benevento_csm_tribunale_benevento_magistrato_romani_consiglio_superiore_magistratura_ultime_notizie_oggi-9856809.html",
+      "data": "29 ott, 19:24"
+     }
+    ]
+   },
+   "zona": "benevento"
+  },
   {
    "id": "benevento-5-arriva-il-portiere-riccardo-ditano",
    "titolo": "Calcio a 5, il Benevento 5 prende il portiere Riccardo Ditano: già a disposizione per il derby di San Rufo",
@@ -23,6 +134,14 @@
      "nome": "Benevento 5",
      "url": "https://ssdbenevento5.it/2026/10/29/gg-team-wear-benevento-5-ufficiale-larrivo-di-riccardo-ditano-il-portiere-e-gia-a-disposizione-per-il-derby-di-san-rufo-vogliamo-tornare-a-fare-punti/",
      "ufficiale": true
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/benevento-cinque-arriva-ditano-derby-sala-consilina/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/il-gg-team-wear-benevento-5-ha-un-nuovo-portiere/"
     }
    ],
    "articolo": {
@@ -30,7 +149,9 @@
      {
       "testo": "Il GG Team Wear Benevento 5, la squadra di calcio a 5 della città, ha un nuovo portiere: è Riccardo Ditano. La società ha annunciato giovedì 29 ottobre l'accordo con il giocatore, che è già a disposizione per la partita di venerdì 30 ottobre contro lo Sporting Sala Consilina.",
       "fonti": [
-       "Benevento 5"
+       "Benevento 5",
+       "Cronache del Sannio",
+       "Anteprima24"
       ]
      },
      {
@@ -69,6 +190,18 @@
       "url": "https://ssdbenevento5.it/2026/10/29/gg-team-wear-benevento-5-ufficiale-larrivo-di-riccardo-ditano-il-portiere-e-gia-a-disposizione-per-il-derby-di-san-rufo-vogliamo-tornare-a-fare-punti/",
       "data": "29 ott, 19:23",
       "ufficiale": true
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Benevento 5, tra i pali arriva Ditano. Domani derby con il Sala Consilina",
+      "url": "https://www.cronachedelsannio.it/sannionews24/benevento-cinque-arriva-ditano-derby-sala-consilina/",
+      "data": "29 ott, 19:42"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Il GG Team Wear Benevento 5 ha un nuovo portiere",
+      "url": "https://www.anteprima24.it/benevento/il-gg-team-wear-benevento-5-ha-un-nuovo-portiere/",
+      "data": "29 ott, 19:57"
      }
     ]
    },
@@ -106,6 +239,14 @@
     {
      "nome": "Lab TV",
      "url": "https://www.labtv.net/attualita/2026/10/29/sviluppo-del-sannio-nuova-guida-per-il-gal-taburno-annarita-de-blasio-presidente/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/gal-taburno-rinnovo-presidenza-consiglio-amministrazione/"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/cambio-al-vertice-del-gruppo-di-azione-locale-taburno-consorzio"
     }
    ],
    "articolo": {
@@ -115,7 +256,9 @@
       "fonti": [
        "NTR24",
        "Anteprima24",
-       "Lab TV"
+       "Lab TV",
+       "Cronache del Sannio",
+       "Gazzetta di Benevento"
       ]
      },
      {
@@ -174,6 +317,18 @@
       "titolo": "Sviluppo del Sannio, nuova guida per il GAL Taburno: Annarita De Blasio Presidente",
       "url": "https://www.labtv.net/attualita/2026/10/29/sviluppo-del-sannio-nuova-guida-per-il-gal-taburno-annarita-de-blasio-presidente/",
       "data": "29 ott, 11:57"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Gal Taburno, rinnovati presidenza e consiglio di amministrazione",
+      "url": "https://www.cronachedelsannio.it/sannionews24/gal-taburno-rinnovo-presidenza-consiglio-amministrazione/",
+      "data": "29 ott, 19:19"
+     },
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "Cambio al vertice del Gruppo di Azione Locale Taburno Consorzio",
+      "url": "https://www.gazzettabenevento.it/it/cambio-al-vertice-del-gruppo-di-azione-locale-taburno-consorzio",
+      "data": "29 ott, 18:52"
      }
     ]
    },
@@ -188,7 +343,7 @@
    "categoria": "altro",
    "luogo": "Benevento, ospedale San Pio",
    "pubblicato": "2026-10-29T18:47+01:00",
-   "stato": "una_fonte",
+   "stato": "confermata",
    "rilevante": false,
    "importanza": 3,
    "immagine": "ospedale",
@@ -196,6 +351,10 @@
     {
      "nome": "NTR24",
      "url": "https://www.ntr24.tv/2026/10/29/san-pio-allarme-del-sindacato-oss-carenza-di-personale-e-turni-insostenibili-servono-interventi-immediati/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/san-pio-di-benevento-gli-oss-denunciano-lemergenza-personale-servono-interventi-immediati/"
     }
    ],
    "articolo": {
@@ -203,30 +362,42 @@
      {
       "testo": "All'ospedale San Pio di Benevento mancano operatori socio-sanitari, gli OSS che aiutano i pazienti nei reparti. Lo denuncia Franca Ocone, presidente del S.O.S.S. (Sindacato operatori socio sanitari), che chiede alla direzione generale dell'ospedale di intervenire subito.",
       "fonti": [
-       "NTR24"
+       "NTR24",
+       "TV7 Benevento"
       ]
      },
      {
       "testo": "Secondo il sindacato, il caso più grave è in Medicina interna: con due operatrici in maternità il personale non basta più e il turno di notte degli OSS è stato soppresso. Per circa tre anni, dice Ocone, di notte un solo operatore ha dovuto seguire Medicina interna e Malattie infettive, con 32 pazienti, senza l'indennità prevista dal contratto per Malattie infettive.",
       "fonti": [
-       "NTR24"
+       "NTR24",
+       "TV7 Benevento"
       ]
      },
      {
       "testo": "Il sindacato racconta anche turni cambiati da un giorno all'altro, riposi e ferie difficili da avere e OSS spostati spesso in altri reparti o messi a fare lavori da ausiliari. Chiede di assumere OSS dalle graduatorie già pronte in Campania, in attesa dei vincitori del concorso regionale, e lamenta che chi aveva diritto alla stabilizzazione si è dimesso per averla in altre aziende sanitarie.",
       "fonti": [
-       "NTR24"
+       "NTR24",
+       "TV7 Benevento"
       ]
      },
      {
       "testo": "Ocone dice che le segnalazioni alla direzione, al Prefetto e al sindaco di Benevento sono rimaste senza risposta. Se l'ospedale non riorganizzerà subito il servizio, il sindacato annuncia che si rivolgerà «a tutti gli organi competenti».",
       "fonti": [
-       "NTR24"
+       "NTR24",
+       "TV7 Benevento"
       ]
      }
     ],
     "cronologia": [],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "La denuncia di Franca Ocone, presidente del S.O.S.S.: in Medicina interna, con due operatrici in maternità, è stato tolto il turno di notte degli OSS.",
+      "fonti": [
+       "NTR24",
+       "TV7 Benevento"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [
      "Cosa risponde la direzione dell'ospedale San Pio.",
@@ -238,6 +409,12 @@
       "titolo": "San Pio, allarme del sindacato OSS: «Carenza di personale e turni insostenibili, servono interventi immediati»",
       "url": "https://www.ntr24.tv/2026/10/29/san-pio-allarme-del-sindacato-oss-carenza-di-personale-e-turni-insostenibili-servono-interventi-immediati/",
       "data": "29 ott, 18:47"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "San Pio di Benevento, gli OSS denunciano l’emergenza personale: «Servono interventi immediati»",
+      "url": "https://www.tvsette.net/san-pio-di-benevento-gli-oss-denunciano-lemergenza-personale-servono-interventi-immediati/",
+      "data": "29 ott, 19:31"
      }
     ]
    },
@@ -2585,6 +2762,10 @@
     {
      "nome": "Ottopagine",
      "url": "https://www.ottopagine.it/bn/attualita/442523/tre-consorzi-di-vini-insieme-a-merano-per-le-eccellenze-campane.shtml"
+    },
+    {
+     "nome": "Benevento Giornale",
+     "url": "https://www.beneventogiornale.com/2026/10/29/sannio-consorzio-tutela-vini-vitica-e-vita-salernum-vites-alla-35a-edizione-merano-winefestival/"
     }
    ],
    "articolo": {
@@ -2594,7 +2775,8 @@
       "fonti": [
        "NTR24",
        "BeneventoNews24",
-       "Ottopagine"
+       "Ottopagine",
+       "Benevento Giornale"
       ]
      },
      {
@@ -2644,6 +2826,12 @@
       "titolo": "al 6 al 10 novembre, Casa Campania diventa il palcoscenico dei vini, dei territori e delle identità",
       "url": "https://www.ottopagine.it/bn/attualita/442523/tre-consorzi-di-vini-insieme-a-merano-per-le-eccellenze-campane.shtml",
       "data": "29 ott, 16:32"
+     },
+     {
+      "nome": "Benevento Giornale",
+      "titolo": "Sannio Consorzio Tutela Vini, VITICA e Vita Salernum Vites alla 35ª edizione Merano Winefestival",
+      "url": "https://www.beneventogiornale.com/2026/10/29/sannio-consorzio-tutela-vini-vitica-e-vita-salernum-vites-alla-35a-edizione-merano-winefestival/",
+      "data": "29 ott, 19:57"
      }
     ]
    },
@@ -2735,6 +2923,10 @@
     {
      "nome": "BeneventoNews24",
      "url": "https://www.beneventonews24.it/2026/10/29/miwa-basket-al-palamiwa-arriva-il-rende-obiettivo-terza-vittoria-consecutiva/"
+    },
+    {
+     "nome": "Benevento Giornale",
+     "url": "https://www.beneventogiornale.com/2026/10/29/la-miwa-ospita-il-fanalino-di-coda-rende-palla-a-due-al-palamiwa-sabato-alle-18/"
     }
    ],
    "articolo": {
@@ -2744,7 +2936,8 @@
       "fonti": [
        "Miwa Basket Benevento",
        "NTR24 Sport",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Benevento Giornale"
       ]
      },
      {
@@ -2795,6 +2988,12 @@
       "titolo": "Miwa Basket, al PalaMiwa arriva il Rende: obiettivo terza vittoria consecutiva",
       "url": "https://www.beneventonews24.it/2026/10/29/miwa-basket-al-palamiwa-arriva-il-rende-obiettivo-terza-vittoria-consecutiva/",
       "data": "29 ott, 10:38"
+     },
+     {
+      "nome": "Benevento Giornale",
+      "titolo": "La Miwa ospita il fanalino di coda Rende – Palla a due al ‘PalaMiwa’ sabato alle 18",
+      "url": "https://www.beneventogiornale.com/2026/10/29/la-miwa-ospita-il-fanalino-di-coda-rende-palla-a-due-al-palamiwa-sabato-alle-18/",
+      "data": "29 ott, 20:04"
      }
     ]
    },
@@ -17609,6 +17808,10 @@
     {
      "nome": "Ottopagine (23/10 pomeriggio)",
      "url": "https://www.ottopagine.it/bn/cronaca/441963/caro-carburante-gli-agricoltori-protesta-solo-sospesa-ora-iniziative-comuni.shtml"
+    },
+    {
+     "nome": "NTR24 (29/10, Serluca)",
+     "url": "https://www.ntr24.tv/2026/10/29/agricoltura-serluca-avanti-su-utilizzo-dei-13-milioni-del-csr-campania-contro-caro-gasolio-la-strada-e-concreta-e-i-primi-passi-sono-gia-in-corso/"
     }
    ],
    "articolo": {
@@ -17667,6 +17870,13 @@
       "fatto": "Sospesi i tre presìdi degli agricoltori nel Beneventano, in vista della manifestazione nazionale a Roma del 27 ottobre.",
       "fonti": [
        "Ottopagine (23/10 pomeriggio)"
+      ]
+     },
+     {
+      "data": "29 ottobre",
+      "fatto": "Riunione tra il ministro Lollobrigida e gli assessori regionali: l'Italia chiede all'Europa di usare i fondi FEASR non spesi contro il caro carburanti.",
+      "fonti": [
+       "NTR24 (29/10, Serluca)"
       ]
      }
     ],
@@ -17822,6 +18032,12 @@
       "titolo": "Caro carburanti. Gli agricoltori: protesta solo sospesa, ora iniziative comuni",
       "url": "https://www.ottopagine.it/bn/cronaca/441963/caro-carburante-gli-agricoltori-protesta-solo-sospesa-ora-iniziative-comuni.shtml",
       "data": "23 ott, 15:21"
+     },
+     {
+      "nome": "NTR24 (29/10, Serluca)",
+      "titolo": "Agricoltura, Serluca: «Avanti su utilizzo dei 13 milioni del CSR Campania contro caro gasolio. La strada è concreta e i primi passi sono già in corso»",
+      "url": "https://www.ntr24.tv/2026/10/29/agricoltura-serluca-avanti-su-utilizzo-dei-13-milioni-del-csr-campania-contro-caro-gasolio-la-strada-e-concreta-e-i-primi-passi-sono-gia-in-corso/",
+      "data": "29 ott, 19:06"
      }
     ],
     "divergono": [
@@ -17841,6 +18057,13 @@
      }
     ],
     "racconto": [
+     {
+      "giorno": "2026-10-29",
+      "fonti": [
+       "NTR24 (29/10, Serluca)"
+      ],
+      "testo": "Giovedì 29 ottobre i 13 milioni promessi dalla Regione Campania alle aziende agricole colpite dal caro gasolio non sono ancora arrivati, ma il percorso va avanti. Se n'è parlato in un collegamento video tra il ministro dell'Agricoltura Francesco Lollobrigida e gli assessori regionali all'Agricoltura, con l'assessora campana Maria Carmela Serluca. L'Italia chiede alla Commissione europea di poter usare i soldi non spesi del FEASR, il fondo europeo per lo sviluppo rurale, per aiuti straordinari contro il caro carburanti, e l'Europa si è detta disposta a esaminare la proposta. Per Serluca i 13 milioni, presi dal programma CSR 2023-2027, hanno bisogno di un percorso amministrativo apposta, ma la strada «è concreta»."
+     },
      {
       "testo": "Venerdì 23 ottobre verso le 13 gli organizzatori dei tre presìdi degli agricoltori del Beneventano (statale 87, statale 212 e Ponte delle Tavole) hanno deciso di sospenderli temporaneamente, in vista della manifestazione nazionale del 27 ottobre a Roma con agricoltori e autotrasportatori. Per loro non è la fine della protesta: dopo il 27 valuteranno nuove mosse in base alle risposte delle istituzioni.",
       "fonti": [
@@ -17923,11 +18146,11 @@
      }
     ],
     "aggiornamento": {
-     "testo": "Venerdì 23 ottobre verso le 13 gli agricoltori hanno sospeso i presìdi sulla statale 87, sulla 212 e a Ponte delle Tavole, in vista della manifestazione nazionale del 27 ottobre a Roma.",
+     "testo": "Giovedì 29 ottobre: per i 13 milioni della Regione alle aziende agricole il Governo ha chiesto all'Europa di poter usare i fondi agricoli non spesi, e la Commissione europea è disposta a esaminare la richiesta. I soldi non sono ancora stati pagati.",
      "fonti": [
-      "Ottopagine (23/10 pomeriggio)"
+      "NTR24 (29/10, Serluca)"
      ],
-     "quando": "2026-10-23T16:16+02:00"
+     "quando": "2026-10-29T20:12+01:00"
     }
    },
    "rilevante": false,
