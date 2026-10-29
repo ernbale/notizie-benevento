@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-29T08:51+01:00",
+ "aggiornato": "2026-10-29T13:45+01:00",
  "viste": [
   "1131ffc78db3",
   "a4f3f5a64d51",
@@ -11,7 +11,24 @@
   "b1a6fd2c9f5c",
   "8099b97060eb"
  ],
- "chiusure": [],
+ "chiusure": [
+  {
+   "comune": "Benevento",
+   "cosa": "nido d'infanzia «Carlotta Nobile» in via Firenze",
+   "giorni": [
+    "2026-11-05",
+    "2026-11-06",
+    "2026-11-07"
+   ],
+   "motivo": "Lavori urgenti per un'infiltrazione in una parte dell'edificio",
+   "fonte": {
+    "nome": "Comune di Benevento, comunicato stampa n. 9.261",
+    "url": "https://comune.benevento.it/novita/tre-giorni-di-chiusura-a-novembre-per-lasilo-nido-carlotta-nobile/"
+   },
+   "id": "benevento-2026-11-05",
+   "aggiunta": "2026-10-29T13:45:54+01:00"
+  }
+ ],
  "scartate": [
   {
    "pista": "1131ffc78db3",
