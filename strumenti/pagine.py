@@ -675,7 +675,7 @@ def _giorno_chiusura(g, oggi):
 def html_scuole_chiuse(dati, oggi):
     """La pagina «Scuole chiuse»: le chiusure di oggi e dei prossimi giorni, con l'ordinanza. index.html la ridisegna
     da chiusure.json appena si apre (NB_PAGINA.chiusure), così è sempre quella di adesso."""
-    h = _testata_pagina("Chiusure dei Comuni", "", "Scuole chiuse nel Sannio")
+    h = _testata_pagina("Chiusure dei Comuni", "", "Scuole chiuse nel Sannio", [("Servizi", "/servizi/"), ("Scuole chiuse", None)])
     h += ('<p class="sommario">Le scuole e gli altri luoghi che i Comuni della provincia di Benevento chiudono oggi e '
           'nei prossimi giorni, ognuno con la sua ordinanza. La pagina si aggiorna da sola, anche di notte.</p>')
     agg = dati.get("aggiornato")
@@ -839,7 +839,7 @@ def _voci_strade(voci, oggi):
 
 
 def html_strade_chiuse(ora, poi, oggi, aggiornato):
-    h = _testata_pagina("Strade", "", "Strade chiuse a Benevento e nel Sannio")
+    h = _testata_pagina("Strade", "", "Strade chiuse a Benevento e nel Sannio", [("Servizi", "/servizi/"), ("Strade chiuse", None)])
     h += ('<p class="sommario">Le strade chiuse, i sensi unici, i lavori che restringono la strada, i blocchi e i bus '
           "deviati a Benevento e in provincia, oggi e nei prossimi giorni. Ogni voce porta alla notizia con le fonti: "
           "ordinanze dei Comuni, comunicati dell'ANAS e della Provincia, giornali locali.</p>")
@@ -1088,7 +1088,7 @@ def html_contributi(voci, oggi, aggiornato):
 
 def html_contributo(v, oggi):
     """La pagina di un contributo: i fatti in breve e il testo ufficiale della scheda (regola 3 delle pagine)."""
-    h = (f'<a class="indietro" href="/{CART_AGEV}/">← Tutte le agevolazioni</a><div class="occhiello">Agevolazioni · '
+    h = (_percorso([("Agevolazioni", f"/{CART_AGEV}/")]) + f'<div class="occhiello">Agevolazioni · '
          f'{e(DOVE_CONTR.get(v.get("dove"), ""))}</div><h1>{e(v["titolo"])}</h1>')
     h += f'<div class="meta">{e(v["ente"])}</div>'
     t, urg = _scadenza_contr(v, oggi)
@@ -1156,7 +1156,7 @@ def _per_lista(i, tipo):
 
 
 def html_carburanti(dati, oggi):
-    h = _testata_pagina("Carburanti", "", "Prezzi di benzina e diesel a Benevento e provincia")
+    h = _testata_pagina("Carburanti", "", "Prezzi di benzina e diesel a Benevento e provincia", [("Servizi", "/servizi/"), ("Carburanti", None)])
     h += ('<p class="sommario">I prezzi di benzina, diesel, GPL e metano di tutti i distributori della provincia di '
           "Benevento, self e servito, dal meno caro. Sono i prezzi che i gestori comunicano al Ministero delle Imprese "
           "e del Made in Italy: li aggiorniamo ogni mattina.</p>")
@@ -1589,7 +1589,7 @@ farmacie_dei_paesi.cache = {}
 
 
 def html_farmacie(farm, aree, paesi, adesso):
-    h = _testata_pagina("Servizi", "", "Farmacie di turno a Benevento e nel Sannio")
+    h = _testata_pagina("Servizi", "", "Farmacie di turno a Benevento e nel Sannio", [("Servizi", "/servizi/"), ("Farmacie di turno", None)])
     h += ('<p class="sommario">Le farmacie di turno di Benevento e dei paesi del Sannio, adesso e nei prossimi giorni, '
           "con il telefono, la mappa e gli orari. I turni sono quelli di Federfarma Benevento per la città e dell'Ordine "
           "dei Farmacisti per i paesi: li controlliamo ogni giorno.</p>")
@@ -1639,7 +1639,7 @@ def farmacie_fasce(aree, paesi, adesso):
 def html_servizi(righe):
     """La pagina Servizi: un riquadro per servizio (titolo, la riga di adesso, a cosa serve), nello stile di «Strade
     chiuse». righe = [(link, occhiello, titolo, adesso, cosa)]."""
-    h = _testata_pagina("Servizi", "", "Servizi utili a Benevento e nel Sannio")
+    h = _testata_pagina("Servizi", "", "Servizi utili a Benevento e nel Sannio", [("Servizi", None)])
     h += ('<p class="sommario">Le cose che servono ogni giorno a Benevento e nei paesi del Sannio: la farmacia di '
           "turno, le strade e le scuole chiuse, i prezzi dei carburanti, il meteo e gli avvisi dei Comuni, aggiornati "
           "di continuo.</p>")
@@ -1705,7 +1705,7 @@ LEGENDA_CLASSIFICA = ("<b>Pt</b> punti · <b>G</b> partite giocate · <b>V</b> v
 
 
 def html_calcio(d, adesso):
-    h = _testata_pagina("Calcio · Serie B", "", "Benevento Calcio: risultati, classifica e partite in diretta")
+    h = _testata_pagina("Calcio · Serie B", "", "Benevento Calcio: risultati, classifica e partite in diretta", [("Benevento Calcio", None)])
     h += ('<p class="sommario">Il Benevento in Serie B: la partita in diretta con la cronaca minuto per minuto, i '
           "risultati degli altri campi, la classifica che si aggiorna mentre si gioca, il calendario e i risultati.</p>")
     if not (d or {}).get("partite"):
@@ -1824,7 +1824,7 @@ def _paragrafi_curiosita(testo):
 
 
 def html_curiosita(c, altre):
-    h = _testata_pagina("Curiosità del Sannio", c["luogo"], c["titolo"])
+    h = _testata_pagina("Curiosità del Sannio", c["luogo"], c["titolo"], [("Curiosità del Sannio", "/curiosita/")])
     h += (f'<p class="agg-chiusure">{e(CAT_CURIOSITA.get(c["categoria"], "Curiosità"))} · '
           f'{e(_data_curiosita(c["data"]))}</p>')
     im = c.get("immagine")
@@ -1849,7 +1849,7 @@ def html_curiosita(c, altre):
 
 
 def html_curiosita_elenco(uscite):
-    h = _testata_pagina("Curiosità del Sannio", "", "Curiosità del Sannio: leggende, storia e tradizioni")
+    h = _testata_pagina("Curiosità del Sannio", "", "Curiosità del Sannio: leggende, storia e tradizioni", [("Curiosità del Sannio", None)])
     h += ('<p class="sommario">Ogni giorno alle 12 una storia di Benevento e dei paesi della provincia: leggende, fatti '
           "del passato, detti, superstizioni, tradizioni e sapori. Ogni fatto è controllato sulle fonti, che trovi in "
           "fondo a ogni racconto; le leggende sono raccontate come leggende.</p>")
@@ -1878,10 +1878,37 @@ def _categoria(n):
     return f"{c} · {NOMI_SPORT[n['sport']]}" if n.get("categoria") == "sport" and n.get("sport") in NOMI_SPORT else c
 
 
-def _testata_pagina(occhiello, luogo, titolo):
+def _percorso(passi):
+    """Il percorso in cima alla pagina, al posto di «← Tutte le notizie» (lui, 29 ott 2026: «da rivedere questa sorta di
+    tasto indietro, non mi convince il funzionamento, ripensalo e dagli anche un aspetto più adatto al sito» → «sì fallo
+    in tutte le pagine»): «Notizie Benevento › Cronaca › Telese Terme», ogni passo un link, l'ultimo (la pagina stessa,
+    se c'è) senza. Il bottone «‹ Indietro» lo mostra index.html solo a chi arriva da un'altra pagina del sito e lo
+    riporta lì, allo stesso punto (attivaIndietro). Come percorsoPagina() in index.html."""
+    voci = [(NOME, "/")] + list(passi)
+    li = "".join(f'<li><a href="{e(h)}">{e(n)}</a></li>' if h else f'<li aria-current="page">{e(n)}</li>' for n, h in voci)
+    return (f'<nav class="percorso" aria-label="Dove sei"><button type="button" class="indietro" hidden>‹ Indietro</button>'
+            f"<ol>{li}</ol></nav>")
+
+
+def sezione_di(cat):
+    """(nome, indirizzo) della sezione di una categoria, come nel menu (le strade stanno negli Avvisi)."""
+    if cat == "strade":
+        cat = "avvisi"
+    return NOMI_CAT.get(cat, "Altro"), "/" + CAT_PERCORSO.get(cat, "sezione/altro") + "/"
+
+
+def passi_notizia(n):
+    """Il percorso di una notizia: la sezione e, se il luogo è un Comune solo, il suo «piccolo sito»."""
+    passi = [sezione_di(n.get("categoria"))]
+    cc = comuni_di(n.get("luogo"))
+    if len(cc) == 1:
+        passi.append((cc[0], url_comune(cc[0])))
+    return passi
+
+
+def _testata_pagina(occhiello, luogo, titolo, passi=()):
     lu = f'<span class="luogo">{_luogo_link(luogo)}</span>' if luogo else ""
-    return (f'<a class="indietro" href="/">← Tutte le notizie</a><div class="occhiello">{e(occhiello)}{lu}</div>'
-            f"<h1>{e(titolo)}</h1>")
+    return f'{_percorso(passi)}<div class="occhiello">{e(occhiello)}{lu}</div><h1>{e(titolo)}</h1>'
 
 
 # dove seguire le notizie (come riquadroSegui in index.html; loghi Simple Icons, CC0)
@@ -2026,7 +2053,7 @@ def html_articolo(n, appro_collegato):
     n = vista_ufficiale(n)
     a = n["articolo"]
     fonti = a.get("fonti") if isinstance(a.get("fonti"), list) else []
-    h = _testata_pagina(_categoria(n), n.get("luogo"), n["titolo"])
+    h = _testata_pagina(_categoria(n), n.get("luogo"), n["titolo"], passi_notizia(n))
     meta = ("Dall'archivio · " if n["_arch"] else "") + (data_it(n.get("pubblicato")) + " · " if n.get("pubblicato") else "")
     h += (f'<div class="meta">{e(meta)}{e(conta_fonti(n, fonti))}<span class="firma">{FIRMA} · '
           '<a href="/chi-siamo/">Come lavoriamo</a></span></div>')
@@ -2061,7 +2088,7 @@ def html_articolo(n, appro_collegato):
 
 def html_approfondimento(ap, notizie_per_id):
     fonti = ap.get("fonti") if isinstance(ap.get("fonti"), list) else []
-    h = _testata_pagina("Approfondimento", ap.get("luogo"), ap["titolo"])
+    h = _testata_pagina("Approfondimento", ap.get("luogo"), ap["titolo"], [sezione_di(ap["categoria"])] if ap.get("categoria") else [])
     if ap.get("sommario"):
         h += f'<p class="sommario">{e(ap["sommario"])}</p>'
     h += (f'<div class="meta">{"Dall&#39;archivio · " if ap["_arch"] else ""}Aggiornato {e(data_it(ap.get("aggiornato")))} · '
@@ -2090,7 +2117,7 @@ def html_approfondimento(ap, notizie_per_id):
 # ---------- chi siamo (pagina fissa) ----------
 def html_chi_siamo():
     fb = f'<a href="{FACEBOOK}" target="_blank" rel="noopener">Pagina Facebook Notizie Benevento</a>'
-    h = _testata_pagina(NOME, "", "Chi siamo")
+    h = _testata_pagina(NOME, "", "Chi siamo", [("Chi siamo", None)])
     h += ('<p class="sommario">Notizie Benevento raccoglie in un solo posto le notizie di Benevento e della provincia: '
           'le confronta tra i giornali locali e i siti ufficiali e le racconta in modo semplice, con i link agli articoli '
           'originali.</p>')
@@ -2214,7 +2241,7 @@ def html_comune(c, notizie, eventi, allerte, stemma, oggi, distributori=0, farma
     nella colonna di destra», «e anche allerte»); a sinistra eventi e notizie, e se sono poche quelle della zona («cerchiamo
     di riempire un po' le pagine, spesso sono vuote»)."""
     titolo = f"Notizie da {c}"
-    h = _testata_pagina("Comuni del Sannio", "Provincia di Benevento", titolo)
+    h = _testata_pagina("Comuni del Sannio", "Provincia di Benevento", titolo, [("Comuni", "/comuni/"), (c, None)])
     somm = (f'<p class="sommario">Le notizie di {e(c)}, in provincia di Benevento: cronaca, strade, politica, sport ed '
             f'eventi, confrontati tra i giornali locali e i siti ufficiali, con i link agli articoli originali.</p>')
     if stemma:   # accanto al titolo; disegni liberi di Wikimedia Commons: autore e licenza vanno citati
@@ -2265,7 +2292,7 @@ def nome_mese(m):
 
 def html_archivio(mesi):
     """La pagina archivio/: i mesi, dal più recente, con quante notizie."""
-    h = _testata_pagina("Archivio", "", "Tutte le notizie, mese per mese")
+    h = _testata_pagina("Archivio", "", "Tutte le notizie, mese per mese", [("Archivio", None)])
     h += ('<p class="sommario">Nessuna notizia viene cancellata: quando esce dalla prima pagina resta qui, allo stesso '
           "indirizzo. Le notizie di Benevento e del Sannio, mese per mese.</p>")
     h += '<ul class="notizie-comune">' + "".join(
@@ -2278,7 +2305,7 @@ def html_archivio(mesi):
 
 def html_archivio_mese(m, voci, k, pagine_mese):
     """Una pagina dell'archivio di un mese: i link a tutte le sue notizie, dalla più recente."""
-    h = _testata_pagina("Archivio", "", f"Le notizie di {nome_mese(m)}" + (f", pagina {k}" if k > 1 else ""))
+    h = _testata_pagina("Archivio", "", f"Le notizie di {nome_mese(m)}" + (f", pagina {k}" if k > 1 else ""), [("Archivio", "/archivio/"), (nome_mese(m).capitalize(), None)])
     h += (f'<p class="sommario">Tutte le notizie di Benevento e del Sannio pubblicate a {e(nome_mese(m))}, dalla più '
           "recente.</p>")
     h += '<ul class="notizie-comune">' + "".join(
@@ -2294,7 +2321,7 @@ def html_archivio_mese(m, voci, k, pagine_mese):
 
 
 def html_comuni(quante):
-    h = _testata_pagina("Comuni del Sannio", "", "I Comuni della provincia di Benevento")
+    h = _testata_pagina("Comuni del Sannio", "", "I Comuni della provincia di Benevento", [("Comuni", None)])
     h += ('<p class="sommario">Una pagina per ognuno dei 78 Comuni del Sannio, con le sue notizie, gli eventi, le '
           "scuole chiuse e l'allerta meteo della sua zona.</p>")
     h += '<ul class="elenco-comuni">' + "".join(
@@ -2418,8 +2445,9 @@ def ics_evento(ev, url):
 
 def html_evento(ev):
     fonti = ev.get("fonti") if isinstance(ev.get("fonti"), list) else []
-    h = _testata_pagina(NOMI_TIPO.get(ev.get("tipo"), "Evento"), ev.get("comune"), ev["titolo"]).replace(
-        '<a class="indietro" href="/">← Tutte le notizie</a>', '<a class="indietro" href="/sezione/eventi/">← Calendario degli eventi</a>')
+    cc = comuni_di(ev.get("comune"))
+    h = _testata_pagina(NOMI_TIPO.get(ev.get("tipo"), "Evento"), ev.get("comune"), ev["titolo"],
+                        [("Eventi", "/sezione/eventi/")] + ([(cc[0], url_comune(cc[0]))] if len(cc) == 1 else []))
     if ev.get("annullato"):
         h += '<p class="ev-annullato">Annullato</p>'
     dove = f'{e(ev.get("luogo"))}, {e(ev.get("comune"))}'
@@ -2638,10 +2666,9 @@ def main():
              "mainEntityOfPage": url, "author": {"@type": "Organization", "name": NOME, "url": SITO + "/chi-siamo/"},
              "publisher": ORG, "contentLocation": {"@type": "Place", "name": n.get("luogo")},
              "isBasedOn": [f["url"] for f in fonti if re.match(r"^https?://", str(f.get("url") or ""))]},
-            {"@type": "BreadcrumbList", "itemListElement": [
-                {"@type": "ListItem", "position": 1, "name": NOME, "item": SITO + "/"},
-                {"@type": "ListItem", "position": 2, "name": sez, "item": SITO + "/" + CAT_PERCORSO.get(n.get("categoria"), "sezione/altro") + "/"},
-                {"@type": "ListItem", "position": 3, "name": n["titolo"]}]}]}
+            {"@type": "BreadcrumbList", "itemListElement": [   # lo stesso percorso della pagina (passi_notizia)
+                {"@type": "ListItem", "position": i, "name": nome, **({"item": SITO + u} if u else {})}
+                for i, (nome, u) in enumerate([(NOME, "/")] + passi_notizia(n) + [(n["titolo"], None)], 1)]}]}
         extra = (f'<meta property="article:published_time" content="{e(n.get("pubblicato"))}">\n'
                  f'<meta property="article:section" content="{e(sez)}">')
         seo = blocco_seo(f"{titolo_google(n)} – {NOME}", breve(n.get("sintesi")), url, im, "article", jsonld, extra,
@@ -2812,7 +2839,7 @@ def main():
                '"articolo" : "approfondimento") + "/" + m[2]); })();</script>')
     seo = blocco_seo(f"Pagina non trovata – {NOME}", "Questo indirizzo non esiste: le notizie di Notizie Benevento non "
                      "vengono mai cancellate, cercale nell'archivio.", SITO + "/404.html", "/condivisione.png", extra=rimando_404)
-    h = _testata_pagina(NOME, "", "Pagina non trovata")
+    h = _testata_pagina(NOME, "", "Pagina non trovata", [("Pagina non trovata", None)])
     h += ('<p class="sommario">Questo indirizzo non esiste. Le notizie non vengono mai cancellate: cercale '
           'nell\'<a href="/#archivio">archivio</a> o torna alla <a href="/">prima pagina</a>.</p>')
     scrivi(os.path.join(sito, "404.html"), pagina(modello, seo, {"statica": True}, f'<article class="appro">{h}</article>',

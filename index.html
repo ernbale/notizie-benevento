@@ -276,7 +276,17 @@
   .titolo-sezione { font: 700 28px/1.2 var(--serif); letter-spacing: -.3px; margin: 6px 0 14px; }
   .sezioni-link { font-size: 13px; }
   .sezioni-link a { color: inherit; }
-  .appro .indietro { font: 600 14px var(--sans); color: var(--blu); text-decoration: none; }
+  /* il percorso in cima alle pagine (29 ott 2026), al posto di «← Tutte le notizie» */
+  nav.percorso { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; margin: 0 0 12px; font: 600 13px/1.4 var(--sans); color: var(--grigio); }
+  nav.percorso ol { display: flex; flex-wrap: wrap; list-style: none; margin: 0; padding: 0; }
+  nav.percorso ol, nav.percorso li, nav.percorso a, .appro nav.percorso li, .appro nav.percorso a { font: inherit; margin: 0; padding: 0; }   /* non quelli delle liste degli articoli */
+  nav.percorso li + li::before { content: "›"; margin: 0 7px; color: #b5a796; }
+  nav.percorso a { color: var(--grigio); text-decoration: none; }
+  nav.percorso a:hover { color: var(--nero); text-decoration: underline; }
+  nav.percorso li[aria-current] { color: var(--nero); }
+  nav.percorso .indietro { font: 600 13px var(--sans); background: #fff; color: var(--nero); border: 1px solid var(--riga); border-radius: 16px;
+                        padding: 3px 12px 3px 9px; cursor: pointer; }
+  nav.percorso .indietro:hover { border-color: var(--nero); }
   .appro .occhiello { margin-top: 18px; }
   .appro h1 { font: 700 40px/1.12 var(--serif); letter-spacing: -.5px; margin: 6px 0 10px; }
   .appro .meta { font-size: 14px; color: var(--grigio); padding-bottom: 14px; border-bottom: 1px solid var(--nero); }
@@ -374,7 +384,7 @@
   .calcio-box:hover .cb-link { text-decoration: underline; }
   .calcio-box.oggi { background: var(--carta-scura); padding: 8px 10px 14px; }
   .calcio { padding: 24px 0 30px; }
-  .calcio .indietro { font: 600 14px var(--sans); color: var(--blu); text-decoration: none; }
+
   .calcio > .occhiello { margin-top: 18px; }
   .calcio h1 { font: 700 38px/1.12 var(--serif); letter-spacing: -.5px; margin: 6px 0 8px; }
   .calcio .sommario { font: 400 17px/1.5 var(--serif); color: #2a2520; margin: 0 0 18px; max-width: 760px; }
@@ -903,7 +913,7 @@
   }
   function vaiA(h) {
     if (FISSA) location.href = "/" + h;
-    else if (location.pathname !== "/") { history.pushState(null, "", "/" + h); cambiaPagina(); }
+    else if (location.pathname !== "/") { navigatoQui = true; history.pushState(null, "", "/" + h); cambiaPagina(); }
     else location.hash = h;
   }
 
@@ -1173,9 +1183,9 @@
     var box = document.getElementById("contenuto"), attesa = null;
     if (!box || !window.MutationObserver) return;
     new MutationObserver(function () {
-      if (!attesa) attesa = setTimeout(function () { attesa = null; azioniPagina(); }, 0);
+      if (!attesa) attesa = setTimeout(function () { attesa = null; azioniPagina(); attivaIndietro(); }, 0);
     }).observe(box, { childList: true, subtree: true });
-    setTimeout(azioniPagina, 0);   // le pagine già scritte (contributi, curiosità, Chi siamo…): il JavaScript non le ridisegna
+    setTimeout(function () { azioniPagina(); attivaIndietro(); }, 0);   // le pagine già scritte (contributi, curiosità, Chi siamo…): il JavaScript non le ridisegna
   })();
 
   // Con una fonte ufficiale si mostra quella (come vista_ufficiale di strumenti/pagine.py, che scrive le pagine per
@@ -2027,10 +2037,53 @@
     return sp;
   }
 
-  function testataPagina(art, occhiello, luogo, titolo) {
-    var ind = el("a", "indietro", ["← Tutte le notizie"]);
-    ind.href = "/";
-    art.appendChild(ind);
+  // Il percorso in cima alla pagina, al posto di «← Tutte le notizie» (lui, 29 ott 2026: «da rivedere questa sorta di
+  // tasto indietro… ripensalo e dagli anche un aspetto più adatto al sito», «sì fallo in tutte le pagine»): come
+  // _percorso in pagine.py. «‹ Indietro» c'è solo per chi arriva da un'altra pagina del sito (attivaIndietro).
+  var SEZ_PERCORSO = { cronaca: ["Cronaca", "/sezione/cronaca/"], politica: ["Politica", "/sezione/politica/"],
+    sport: ["Sport", "/sezione/sport/"], eventi: ["Eventi", "/sezione/eventi/"], cultura: ["Cultura", "/sezione/cultura/"],
+    avvisi: ["Avvisi", "/sezione/avvisi/"], strade: ["Avvisi", "/sezione/avvisi/"], meteo: ["Allerte", "/sezione/allerte/"],
+    altro: ["Altro", "/sezione/altro/"], contributi: ["Agevolazioni", "/agevolazioni/"] };
+  function percorsoPagina(passi) {
+    var ol = el("ol", "", []);
+    [["Notizie Benevento", "/"]].concat(passi || []).forEach(function (p) {
+      if (p[1]) { var a = el("a", "", [p[0]]); a.href = p[1]; ol.appendChild(el("li", "", [a])); }
+      else { var li = el("li", "", [p[0]]); li.setAttribute("aria-current", "page"); ol.appendChild(li); }
+    });
+    var b = el("button", "indietro", ["‹ Indietro"]);
+    b.type = "button";
+    b.hidden = true;
+    var nav = el("nav", "percorso", [b, ol]);
+    nav.setAttribute("aria-label", "Dove sei");
+    return nav;
+  }
+  function comuniDi(luogo) {   // come comuni_di in pagine.py (gli stessi pezzi di luogoConLink)
+    var out = [];
+    String(luogo || "").split(/[,()]| e /).forEach(function (p) {
+      var c = COMUNI[p.trim().replace(/’/g, "'").toLowerCase()];
+      if (c && out.indexOf(c) < 0) out.push(c);
+    });
+    return out;
+  }
+  function passiNotizia(n) {   // come passi_notizia in pagine.py
+    var p = [SEZ_PERCORSO[n.categoria] || SEZ_PERCORSO.altro], cc = comuniDi(n.luogo);
+    if (cc.length === 1) p.push([cc[0], urlComune(cc[0])]);
+    return p;
+  }
+  // chi è arrivato da un'altra pagina del sito (anche senza ricaricare: navigatoQui) torna lì con «‹ Indietro»
+  var navigatoQui = false;
+  function vengoDalSito() {
+    if (navigatoQui) return true;
+    try { var r = new URL(document.referrer); return r.origin === location.origin && r.href !== location.href; } catch (e) { return false; }
+  }
+  function attivaIndietro() {
+    document.querySelectorAll(".percorso .indietro").forEach(function (b) {
+      b.hidden = !vengoDalSito();
+      b.onclick = function () { history.back(); };
+    });
+  }
+  function testataPagina(art, occhiello, luogo, titolo, passi) {
+    art.appendChild(percorsoPagina(passi));
     var occ = el("div", "occhiello", [occhiello]);
     if (luogo) occ.appendChild(luogoConLink(luogo));
     art.appendChild(occ);
@@ -2052,7 +2105,7 @@
     var a = n.articolo;
     var fonti = Array.isArray(a.fonti) ? a.fonti : [];
     var art = el("article", "appro", []);
-    testataPagina(art, n.categoria === "sport" ? sportDi(n) : NOMI_CAT[n.categoria] || "Altro", n.luogo, n.titolo);
+    testataPagina(art, n.categoria === "sport" ? sportDi(n) : NOMI_CAT[n.categoria] || "Altro", n.luogo, n.titolo, passiNotizia(n));
     var come = el("a", "", ["Come lavoriamo"]);
     come.href = "/chi-siamo/";
     // la firma: chi scrive e come (come FIRMA in pagine.py; Google News lo chiede, 28 ott 2026)
@@ -2102,7 +2155,7 @@
   function disegnaApprofondimento(box, ap, dallArchivio) {
     var fonti = Array.isArray(ap.fonti) ? ap.fonti : [];
     var art = el("article", "appro", []);
-    testataPagina(art, "Approfondimento", ap.luogo, ap.titolo);
+    testataPagina(art, "Approfondimento", ap.luogo, ap.titolo, ap.categoria && SEZ_PERCORSO[ap.categoria] ? [SEZ_PERCORSO[ap.categoria]] : []);
     if (ap.sommario) art.appendChild(el("p", "sommario", [ap.sommario]));
     art.appendChild(el("div", "meta", [(dallArchivio ? "Dall'archivio · " : "") + "Aggiornato " + quando(ap.aggiornato) + " · " + fonti.length + " fonti confrontate"]));
     var az = ascolta(testoApprofondimento(ap));
@@ -2423,7 +2476,7 @@
 
   function disegnaRicerca(box, qIniziale) {
     var art = el("article", "appro ricerca", []);
-    testataPagina(art, "Archivio", "", "Cerca tra le notizie");
+    testataPagina(art, "Archivio", "", "Cerca tra le notizie", [["Archivio", "/archivio/"], ["Cerca", null]]);
     var form = campoRicerca(qIniziale);
     var inp = form.querySelector("input");
     art.appendChild(form);
@@ -3237,10 +3290,9 @@
     ev = conTema(ev);
     var fonti = Array.isArray(ev.fonti) ? ev.fonti : [];
     var art = el("article", "appro", []);
-    testataPagina(art, NOMI_TIPO[ev.tipo] || "Evento", ev.comune, ev.titolo);
-    var ind = art.querySelector(".indietro");
-    ind.textContent = "← Calendario degli eventi";
-    ind.href = "/sezione/eventi/";
+    var cce = comuniDi(ev.comune);
+    testataPagina(art, NOMI_TIPO[ev.tipo] || "Evento", ev.comune, ev.titolo,
+      [["Eventi", "/sezione/eventi/"]].concat(cce.length === 1 ? [[cce[0], urlComune(cce[0])]] : []));
     if (ev.annullato) art.appendChild(el("p", "ev-annullato", ["Annullato"]));
     var sch = el("dl", "scheda-evento", []);
     var voce = function (t, v) { sch.appendChild(el("dt", "", [t])); sch.appendChild(v.nodeType ? v : el("dd", "", [v])); };
@@ -3303,7 +3355,7 @@
         if (ev) { disegnaEvento(box, ev); if (!FISSA) document.title = ev.titolo + " – Eventi – Notizie Benevento"; }
         else {
           var art = el("article", "appro", []);
-          testataPagina(art, "Eventi", "", "Evento non trovato");
+          testataPagina(art, "Eventi", "", "Evento non trovato", [["Eventi", "/sezione/eventi/"]]);
           var pe = el("p", "", ["Questo evento non c'è più. Guarda il "]), le = el("a", "", ["calendario degli eventi"]);
           le.href = "/sezione/eventi/";
           pe.appendChild(le);
@@ -3338,7 +3390,7 @@
         else if (x && tipo === "approfondimento") disegnaApprofondimento(box, x, true);
         else {
           var art = el("article", "appro", []);
-          testataPagina(art, "Archivio", "", "Notizia non trovata");
+          testataPagina(art, "Archivio", "", "Notizia non trovata", [["Archivio", "/archivio/"]]);
           var p = el("p", "", ["Questa notizia non c'è più. Puoi cercarla nell'"]);
           var l = el("a", "", ["archivio"]);
           l.href = "#archivio";
@@ -3445,7 +3497,7 @@
   function vaiFiltri() {
     var dove = indirizzoFiltri();
     if (!filtriDaIndirizzo() || (FISSA && FISSA.statica)) { location.href = dove; return; }
-    if (dove !== location.pathname + location.search) history.pushState(null, "", dove);
+    if (dove !== location.pathname + location.search) { navigatoQui = true; history.pushState(null, "", dove); }
     mostrato = location.pathname + location.search + location.hash;
     segnaMenu();
     disegna();
@@ -3476,6 +3528,7 @@
     if (h !== "/" && !/^\/(notizia|approfondimento|evento)\/[^\/]+\/$/.test(h)) return;
     e.preventDefault();
     if (h === location.pathname && !location.search && !location.hash) { window.scrollTo(0, 0); return; }
+    navigatoQui = true;
     history.pushState(null, "", h);
     cambiaPagina();
   });

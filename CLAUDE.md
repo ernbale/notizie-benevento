@@ -139,8 +139,12 @@ nuova la segue; se una pagina non la segue, è da sistemare.
    ricaricare l'indirizzo diventa /notizia/<id>/ e un indirizzo relativo finisce lì sotto (28 ott 2026: «Notizia non
    trovata» dalla ricerca e icona sparita). Una modifica si prova cliccando come fa lui (ricerca, elenchi, sezioni).
 3. **Notizie, eventi, approfondimenti e pagine di servizio** (Strade chiuse, Scuole chiuse, Carburanti, Calcio,
-   Comuni, Chi siamo, Curiosità, Archivio, Meteo): «← Tutte le notizie» (la pagina di un'agevolazione: «← Tutte le
-   agevolazioni»), occhiello rosso e titolo grande (.appro), e sotto il titolo **Ascolta e Condividi** (lui, 28 ott 2026:
+   Comuni, Chi siamo, Curiosità, Archivio, Meteo): in cima **il percorso** «Notizie Benevento › Cronaca › Telese Terme»
+   (_percorso e passi_notizia in pagine.py, percorsoPagina e passiNotizia in index.html, la copia in meteo.html; lui,
+   29 ott 2026: «← Tutte le notizie» «da rivedere… ripensalo e dagli anche un aspetto più adatto al sito», «sì fallo in
+   tutte le pagine»), con lo stesso percorso nei dati per Google (BreadcrumbList); il bottone «‹ Indietro» solo per chi
+   arriva da un'altra pagina del sito, che lo riporta allo stesso punto; poi occhiello rosso e titolo grande (.appro), e
+   sotto il titolo **Ascolta e Condividi** (lui, 28 ott 2026:
    «deve comparire in tutte le pagine… e anche le future»). Li mette da solo azioniPagina() in index.html in ogni
    pagina che sia un <article> col suo <h1> dentro #contenuto: una pagina nuova fatta così li ha senza fare niente.
 

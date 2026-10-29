@@ -59,7 +59,17 @@
   .testata .nome .grande { display: block; font: 700 40px/1 var(--serif); letter-spacing: -1px; }
   .testata .nome .piccolo { display: block; font: 600 12px/1.4 var(--sans); letter-spacing: 2px; text-transform: uppercase; margin-top: 4px; }
   /* «← Tutte le notizie» e l'occhiello sopra il titolo, come nelle pagine di servizio (regola 3 delle pagine, CLAUDE.md) */
-  .indietro { display: inline-block; margin-top: 22px; font: 600 14px var(--sans); color: var(--blu); text-decoration: none; }
+  /* il percorso in cima, come in index.html (29 ott 2026, al posto di «← Tutte le notizie») */
+  nav.percorso { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; margin: 22px 0 12px; font: 600 13px/1.4 var(--sans); color: var(--grigio); }
+  nav.percorso ol { display: flex; flex-wrap: wrap; list-style: none; margin: 0; padding: 0; }
+  nav.percorso ol, nav.percorso li, nav.percorso a, .appro nav.percorso li, .appro nav.percorso a { font: inherit; margin: 0; padding: 0; }   /* non quelli delle liste degli articoli */
+  nav.percorso li + li::before { content: "›"; margin: 0 7px; color: #b5a796; }
+  nav.percorso a { color: var(--grigio); text-decoration: none; }
+  nav.percorso a:hover { color: var(--nero); text-decoration: underline; }
+  nav.percorso li[aria-current] { color: var(--nero); }
+  nav.percorso .indietro { font: 600 13px var(--sans); background: #fff; color: var(--nero); border: 1px solid var(--riga); border-radius: 16px;
+                        padding: 3px 12px 3px 9px; cursor: pointer; }
+  nav.percorso .indietro:hover { border-color: var(--nero); }
   .occhiello { font: 700 12px var(--sans); text-transform: uppercase; letter-spacing: .6px; color: var(--rosso); margin: 18px 0 0; }
   #meteo > h1 { margin-top: 6px; }
   /* il menu, come in index.html (lì le voci sono pulsanti, qui link) */
@@ -382,7 +392,7 @@
   </script>
 
   <main id="meteo">
-    <a class="indietro" href="/">← Tutte le notizie</a>
+    <nav class="percorso" aria-label="Dove sei"><button type="button" class="indietro" hidden>‹ Indietro</button><ol><li><a href="/">Notizie Benevento</a></li><li><a href="/servizi/">Servizi</a></li><li aria-current="page">Meteo</li></ol></nav>
     <div class="occhiello">Meteo</div>
     <h1>Meteo Benevento</h1>
     <p class="sottotitolo" id="sottotitolo">Previsioni messe insieme da più modelli meteo, aggiornate ogni ora.</p>
@@ -1309,6 +1319,12 @@
     frecce();
   }
 
+  // «‹ Indietro» solo per chi arriva da un'altra pagina del sito: lo riporta lì (come attivaIndietro in index.html)
+  (function () {
+    var b = document.querySelector(".percorso .indietro");
+    try { var r = new URL(document.referrer); b.hidden = !(r.origin === location.origin && r.href !== location.href); } catch (e) { b.hidden = true; }
+    b.addEventListener("click", function () { history.back(); });
+  })();
   document.getElementById("data").textContent = new Date().toLocaleDateString("it-IT", { timeZone: TZ, weekday: "long", day: "numeric", month: "long", year: "numeric" });
   var prendi = function (u) { return fetch(u + "?t=" + Date.now(), { cache: "no-store" }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }); };
   Promise.all([prendi(PAESE ? "/meteo-paesi/" + PAESE + ".json" : "/meteo.json"), PAESE ? prendi("/meteo.json").catch(function () { return null; }) : null])
@@ -1319,9 +1335,14 @@
         var nome = j.luogo.nome;
         document.title = "Meteo " + nome + ": previsioni ora per ora e a 10 giorni da 8 modelli | Notizie Benevento";
         document.querySelector("main h1").textContent = "Meteo " + nome;
-        var ind = document.querySelector("main .indietro");
-        ind.href = "/comune/" + PAESE + "/";
-        ind.textContent = "← Le notizie da " + nome;
+        var ol = document.querySelector("main .percorso ol");   // Notizie Benevento › Comuni › <paese> › Meteo
+        ol.children[1].firstChild.textContent = "Comuni";
+        ol.children[1].firstChild.href = "/comuni/";
+        var li = document.createElement("li"), a = document.createElement("a");
+        a.href = "/comune/" + PAESE + "/";
+        a.textContent = nome;
+        li.appendChild(a);
+        ol.insertBefore(li, ol.children[2]);
       }
       D = j; O = j.ore; ORE = O.t;
       var k = chiaveOra(new Date());
