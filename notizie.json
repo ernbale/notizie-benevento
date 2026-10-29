@@ -1,7 +1,85 @@
 {
- "aggiornato": "2026-10-29T07:11+01:00",
+ "aggiornato": "2026-10-29T08:14+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "tale-e-quale-show-2026-selma-vince-sesta-puntata-dionne-warwick",
+   "titolo": "Tale e Quale Show, la cantante sannita Selma vince la sesta puntata nei panni di Dionne Warwick",
+   "titolo_google": "Tale e Quale Show, Selma vince la sesta puntata con 86 punti",
+   "sintesi": "Selma Ezzine, la cantante di San Giorgio del Sannio, ha vinto la sesta puntata di Tale e Quale Show, mercoledì 28 ottobre su Rai 1, imitando Dionne Warwick. Ha preso 86 punti, quattro più di Andrea Perroni.",
+   "categoria": "cultura",
+   "zona": "provincia",
+   "luogo": "San Giorgio del Sannio",
+   "immagine": "musical",
+   "pubblicato": "2026-10-29T07:28+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/attualita/2026/a-tale-e-quale-show-trionfa-ancora-selma-ezzine-una-dionne-warwich-che-strappa-una-standing-ovation.html"
+    },
+    {
+     "nome": "Sorrisi",
+     "url": "https://www.sorrisi.com/tv/reality-e-talent/tale-e-quale-show-il-vincitore-della-sesta-puntata-del-2026-e-la-classifica/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Selma Ezzine, la giovane cantante di San Giorgio del Sannio, ha vinto la sesta puntata di Tale e Quale Show, il programma di Rai 1 condotto da Carlo Conti in cui i concorrenti imitano cantanti famosi. Mercoledì 28 ottobre ha cantato nei panni di Dionne Warwick, la cantante americana, e ha chiuso la serata in testa con 86 punti.",
+      "fonti": [
+       "InfoSannio",
+       "Sorrisi"
+      ],
+      "giorno": "2026-10-28"
+     },
+     {
+      "testo": "Al secondo posto è arrivato Andrea Perroni, che imitava Amedeo Minghi, con 82 punti; terza Roberta Morise con 73. L'esibizione di Selma ha avuto una standing ovation in studio; Malgioglio, uno dei giudici, le ha però detto che manca ancora qualcosa per avvicinarsi alla voce «vellutata» di Dionne Warwick.",
+      "fonti": [
+       "InfoSannio",
+       "Sorrisi"
+      ],
+      "giorno": "2026-10-28"
+     },
+     {
+      "testo": "Per Selma è un'altra vittoria in questa edizione del programma.",
+      "fonti": [
+       "InfoSannio"
+      ],
+      "giorno": "2026-10-28"
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Selma ha vinto la puntata imitando Dionne Warwick, davanti ad Andrea Perroni.",
+      "fonti": [
+       "InfoSannio",
+       "Sorrisi"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "InfoSannio",
+      "titolo": "A Tale e Quale Show trionfa ancora Selma Ezzine: una Dionne Warwich che strappa una standing ovation",
+      "url": "https://www.infosannionews.it/attualita/2026/a-tale-e-quale-show-trionfa-ancora-selma-ezzine-una-dionne-warwich-che-strappa-una-standing-ovation.html",
+      "data": "29 ott, 07:28"
+     },
+     {
+      "nome": "Sorrisi",
+      "titolo": "“Tale e quale show”: il vincitore della sesta puntata del 2026 e la classifica",
+      "url": "https://www.sorrisi.com/tv/reality-e-talent/tale-e-quale-show-il-vincitore-della-sesta-puntata-del-2026-e-la-classifica/",
+      "data": "29 ott, 00:27"
+     }
+    ]
+   },
+   "foto": "musical-2"
+  },
   {
    "id": "benevento-strisce-blu-sensori-parcheggi-bemobi",
    "titolo": "Benevento, sulle strisce blu arrivano i sensori nell'asfalto: diranno in tempo reale quali posti sono liberi",
