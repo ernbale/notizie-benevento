@@ -97,6 +97,10 @@ PAUSA_RETE = 20     # secondi prima del secondo tentativo se la rete fa cilecca
 # e token di Home Assistant, servizio WhatsApp, email); la casella per mandare è quella di posta.conf.
 AVVISI_CONF = os.path.join(CARTELLA_PI, "avvisi.conf")
 POSTA_CONF = os.path.join(CARTELLA_PI, "posta.conf")
+# Dal 29 ott 2026 (lui: «fai il whatsapp diretto con callmebot») il WhatsApp può andare diretto a CallMeBot, senza Home
+# Assistant: serve al server Aruba, che Home Assistant di casa non lo vede. Lo fa se avvisi.conf ha «callmebot»
+# ({"telefono", "apikey"}, quelli della voce «WhatsApp Papà» di Home Assistant); se no, come prima, da Home Assistant.
+CALLMEBOT = "https://api.callmebot.com/whatsapp.php"
 # La password della PEC per i programmi di posta (verifica in 2 passaggi di Aruba) scade ogni 6 mesi: si avvisa prima.
 # La data è quella di pec.conf, che fonti_casa.py --imposta-pec riscrive quando se ne mette una nuova.
 PEC_CONF = os.path.join(CARTELLA_PI, "pec.conf")
@@ -526,7 +530,7 @@ def avvisa_casa(problemi, adesso):
 
 
 def manda_a_casa(testo, oggetto, coda=""):
-    """Un messaggio al proprietario su WhatsApp (Home Assistant) e per email (da comunicati@, a lui): lo usano la
+    """Un messaggio al proprietario su WhatsApp (CallMeBot diretto o Home Assistant) e per email (da comunicati@, a lui): lo usano la
     sentinella e il giro lampo (i comunicati da valutare). Restituisce cosa è successo, per il registro."""
     try:
         with open(AVVISI_CONF, encoding="utf-8") as f:
@@ -534,15 +538,28 @@ def manda_a_casa(testo, oggetto, coda=""):
     except (OSError, ValueError):
         return ["avvisi.conf manca: niente WhatsApp né email"]
     esiti = []
-    try:   # WhatsApp: il servizio notify di Home Assistant (CallMeBot, solo testo)
-        dominio, servizio = conf["whatsapp"].split(".", 1)
-        req = urllib.request.Request(f"{conf['ha_url'].rstrip('/')}/api/services/{dominio}/{servizio}", method="POST",
-                                     data=json.dumps({"message": testo[:1500]}).encode(),
-                                     headers={"Authorization": f"Bearer {conf['ha_token']}",
-                                              "Content-Type": "application/json"})
-        with urllib.request.urlopen(req, timeout=30) as r:
-            r.read()
-        esiti.append("WhatsApp mandato")
+    try:
+        if conf.get("callmebot"):   # WhatsApp diretto a CallMeBot (solo testo)
+            cmb = conf["callmebot"]
+            url = CALLMEBOT + "?" + urllib.parse.urlencode({"phone": cmb["telefono"], "text": testo[:1500],
+                                                            "apikey": cmb["apikey"]})
+            with urllib.request.urlopen(url, timeout=30) as r:
+                risposta = r.read().decode("utf-8", "replace")
+            if not re.search(r"queued", risposta, re.I):   # CallMeBot risponde 200 anche agli errori, con la spiegazione
+                spiega = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", risposta)).strip()
+                for segreto in (cmb["telefono"], cmb["apikey"]):
+                    spiega = spiega.replace(segreto, "…")
+                raise RuntimeError(spiega[:120])
+            esiti.append("WhatsApp mandato (CallMeBot)")
+        else:   # WhatsApp: il servizio notify di Home Assistant (CallMeBot, solo testo)
+            dominio, servizio = conf["whatsapp"].split(".", 1)
+            req = urllib.request.Request(f"{conf['ha_url'].rstrip('/')}/api/services/{dominio}/{servizio}", method="POST",
+                                         data=json.dumps({"message": testo[:1500]}).encode(),
+                                         headers={"Authorization": f"Bearer {conf['ha_token']}",
+                                                  "Content-Type": "application/json"})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                r.read()
+            esiti.append("WhatsApp mandato")
     except Exception as e:
         esiti.append(f"WhatsApp NON mandato ({type(e).__name__}: {str(e)[:120]})")
     try:   # email: dalla casella dei comunicati (Aruba)
