@@ -1,0 +1,392 @@
+{
+ "airola": {
+  "nome": "Airola",
+  "lat": 41.0587,
+  "lon": 14.5592
+ },
+ "amorosi": {
+  "nome": "Amorosi",
+  "lat": 41.2027,
+  "lon": 14.466
+ },
+ "apice": {
+  "nome": "Apice",
+  "lat": 41.1201,
+  "lon": 14.931
+ },
+ "apollosa": {
+  "nome": "Apollosa",
+  "lat": 41.0916,
+  "lon": 14.6962
+ },
+ "arpaia": {
+  "nome": "Arpaia",
+  "lat": 41.0368,
+  "lon": 14.5518
+ },
+ "arpaise": {
+  "nome": "Arpaise",
+  "lat": 41.0298,
+  "lon": 14.7439
+ },
+ "baselice": {
+  "nome": "Baselice",
+  "lat": 41.393,
+  "lon": 14.9736
+ },
+ "benevento": {
+  "nome": "Benevento",
+  "lat": 41.1307,
+  "lon": 14.7782
+ },
+ "bonea": {
+  "nome": "Bonea",
+  "lat": 41.0731,
+  "lon": 14.6168
+ },
+ "bucciano": {
+  "nome": "Bucciano",
+  "lat": 41.0776,
+  "lon": 14.569
+ },
+ "buonalbergo": {
+  "nome": "Buonalbergo",
+  "lat": 41.2224,
+  "lon": 14.978
+ },
+ "calvi": {
+  "nome": "Calvi",
+  "lat": 41.0716,
+  "lon": 14.8652
+ },
+ "campolattaro": {
+  "nome": "Campolattaro",
+  "lat": 41.2869,
+  "lon": 14.7304
+ },
+ "campoli-del-monte-taburno": {
+  "nome": "Campoli del Monte Taburno",
+  "lat": 41.1307,
+  "lon": 14.6465
+ },
+ "casalduni": {
+  "nome": "Casalduni",
+  "lat": 41.2608,
+  "lon": 14.6953
+ },
+ "castelfranco-in-miscano": {
+  "nome": "Castelfranco in Miscano",
+  "lat": 41.3007,
+  "lon": 15.0861
+ },
+ "castelpagano": {
+  "nome": "Castelpagano",
+  "lat": 41.4018,
+  "lon": 14.8071
+ },
+ "castelpoto": {
+  "nome": "Castelpoto",
+  "lat": 41.1407,
+  "lon": 14.7007
+ },
+ "castelvenere": {
+  "nome": "Castelvenere",
+  "lat": 41.2345,
+  "lon": 14.5475
+ },
+ "castelvetere-in-val-fortore": {
+  "nome": "Castelvetere in Val Fortore",
+  "lat": 41.4426,
+  "lon": 14.9412
+ },
+ "cautano": {
+  "nome": "Cautano",
+  "lat": 41.1501,
+  "lon": 14.6442
+ },
+ "ceppaloni": {
+  "nome": "Ceppaloni",
+  "lat": 41.0452,
+  "lon": 14.761
+ },
+ "cerreto-sannita": {
+  "nome": "Cerreto Sannita",
+  "lat": 41.283,
+  "lon": 14.5615
+ },
+ "circello": {
+  "nome": "Circello",
+  "lat": 41.3546,
+  "lon": 14.8091
+ },
+ "colle-sannita": {
+  "nome": "Colle Sannita",
+  "lat": 41.3637,
+  "lon": 14.8345
+ },
+ "cusano-mutri": {
+  "nome": "Cusano Mutri",
+  "lat": 41.3362,
+  "lon": 14.5101
+ },
+ "dugenta": {
+  "nome": "Dugenta",
+  "lat": 41.1347,
+  "lon": 14.4535
+ },
+ "durazzano": {
+  "nome": "Durazzano",
+  "lat": 41.0629,
+  "lon": 14.4495
+ },
+ "faicchio": {
+  "nome": "Faicchio",
+  "lat": 41.2782,
+  "lon": 14.4774
+ },
+ "foglianise": {
+  "nome": "Foglianise",
+  "lat": 41.1613,
+  "lon": 14.6711
+ },
+ "foiano-di-val-fortore": {
+  "nome": "Foiano di Val Fortore",
+  "lat": 41.3528,
+  "lon": 14.9764
+ },
+ "forchia": {
+  "nome": "Forchia",
+  "lat": 41.0314,
+  "lon": 14.5357
+ },
+ "fragneto-monforte": {
+  "nome": "Fragneto Monforte",
+  "lat": 41.2463,
+  "lon": 14.7634
+ },
+ "fragneto-l-abate": {
+  "nome": "Fragneto l'Abate",
+  "lat": 41.2558,
+  "lon": 14.7838
+ },
+ "frasso-telesino": {
+  "nome": "Frasso Telesino",
+  "lat": 41.1568,
+  "lon": 14.5278
+ },
+ "ginestra-degli-schiavoni": {
+  "nome": "Ginestra degli Schiavoni",
+  "lat": 41.2799,
+  "lon": 15.0437
+ },
+ "guardia-sanframondi": {
+  "nome": "Guardia Sanframondi",
+  "lat": 41.2564,
+  "lon": 14.5985
+ },
+ "limatola": {
+  "nome": "Limatola",
+  "lat": 41.1401,
+  "lon": 14.3944
+ },
+ "melizzano": {
+  "nome": "Melizzano",
+  "lat": 41.1618,
+  "lon": 14.5055
+ },
+ "moiano": {
+  "nome": "Moiano",
+  "lat": 41.0797,
+  "lon": 14.5443
+ },
+ "molinara": {
+  "nome": "Molinara",
+  "lat": 41.2973,
+  "lon": 14.9087
+ },
+ "montefalcone-di-val-fortore": {
+  "nome": "Montefalcone di Val Fortore",
+  "lat": 41.3243,
+  "lon": 15.009
+ },
+ "montesarchio": {
+  "nome": "Montesarchio",
+  "lat": 41.0623,
+  "lon": 14.641
+ },
+ "morcone": {
+  "nome": "Morcone",
+  "lat": 41.3427,
+  "lon": 14.6689
+ },
+ "paduli": {
+  "nome": "Paduli",
+  "lat": 41.1679,
+  "lon": 14.8869
+ },
+ "pago-veiano": {
+  "nome": "Pago Veiano",
+  "lat": 41.2424,
+  "lon": 14.865
+ },
+ "pannarano": {
+  "nome": "Pannarano",
+  "lat": 41.0108,
+  "lon": 14.7029
+ },
+ "paolisi": {
+  "nome": "Paolisi",
+  "lat": 41.0373,
+  "lon": 14.5792
+ },
+ "paupisi": {
+  "nome": "Paupisi",
+  "lat": 41.1966,
+  "lon": 14.6646
+ },
+ "pesco-sannita": {
+  "nome": "Pesco Sannita",
+  "lat": 41.2327,
+  "lon": 14.8112
+ },
+ "pietraroja": {
+  "nome": "Pietraroja",
+  "lat": 41.3478,
+  "lon": 14.5496
+ },
+ "pietrelcina": {
+  "nome": "Pietrelcina",
+  "lat": 41.1994,
+  "lon": 14.8441
+ },
+ "ponte": {
+  "nome": "Ponte",
+  "lat": 41.2155,
+  "lon": 14.6983
+ },
+ "pontelandolfo": {
+  "nome": "Pontelandolfo",
+  "lat": 41.2923,
+  "lon": 14.6896
+ },
+ "puglianello": {
+  "nome": "Puglianello",
+  "lat": 41.2218,
+  "lon": 14.4502
+ },
+ "reino": {
+  "nome": "Reino",
+  "lat": 41.2922,
+  "lon": 14.8235
+ },
+ "san-bartolomeo-in-galdo": {
+  "nome": "San Bartolomeo in Galdo",
+  "lat": 41.416,
+  "lon": 15.0171
+ },
+ "san-giorgio-la-molara": {
+  "nome": "San Giorgio La Molara",
+  "lat": 41.2767,
+  "lon": 14.931
+ },
+ "san-giorgio-del-sannio": {
+  "nome": "San Giorgio del Sannio",
+  "lat": 41.0684,
+  "lon": 14.8532
+ },
+ "san-leucio-del-sannio": {
+  "nome": "San Leucio del Sannio",
+  "lat": 41.0744,
+  "lon": 14.7574
+ },
+ "san-lorenzello": {
+  "nome": "San Lorenzello",
+  "lat": 41.276,
+  "lon": 14.5417
+ },
+ "san-lorenzo-maggiore": {
+  "nome": "San Lorenzo Maggiore",
+  "lat": 41.2488,
+  "lon": 14.6244
+ },
+ "san-lupo": {
+  "nome": "San Lupo",
+  "lat": 41.2615,
+  "lon": 14.6353
+ },
+ "san-marco-dei-cavoti": {
+  "nome": "San Marco dei Cavoti",
+  "lat": 41.3088,
+  "lon": 14.8792
+ },
+ "san-martino-sannita": {
+  "nome": "San Martino Sannita",
+  "lat": 41.0655,
+  "lon": 14.8349
+ },
+ "san-nazzaro": {
+  "nome": "San Nazzaro",
+  "lat": 41.0517,
+  "lon": 14.8572
+ },
+ "san-nicola-manfredi": {
+  "nome": "San Nicola Manfredi",
+  "lat": 41.0751,
+  "lon": 14.8243
+ },
+ "san-salvatore-telesino": {
+  "nome": "San Salvatore Telesino",
+  "lat": 41.2354,
+  "lon": 14.4983
+ },
+ "sant-agata-de-goti": {
+  "nome": "Sant'Agata de' Goti",
+  "lat": 41.0893,
+  "lon": 14.4974
+ },
+ "sant-angelo-a-cupolo": {
+  "nome": "Sant'Angelo a Cupolo",
+  "lat": 41.0691,
+  "lon": 14.8037
+ },
+ "sant-arcangelo-trimonte": {
+  "nome": "Sant'Arcangelo Trimonte",
+  "lat": 41.169,
+  "lon": 14.9388
+ },
+ "santa-croce-del-sannio": {
+  "nome": "Santa Croce del Sannio",
+  "lat": 41.3879,
+  "lon": 14.7323
+ },
+ "sassinoro": {
+  "nome": "Sassinoro",
+  "lat": 41.3747,
+  "lon": 14.6645
+ },
+ "solopaca": {
+  "nome": "Solopaca",
+  "lat": 41.1953,
+  "lon": 14.5477
+ },
+ "telese-terme": {
+  "nome": "Telese Terme",
+  "lat": 41.2175,
+  "lon": 14.5268
+ },
+ "tocco-caudio": {
+  "nome": "Tocco Caudio",
+  "lat": 41.1259,
+  "lon": 14.6342
+ },
+ "torrecuso": {
+  "nome": "Torrecuso",
+  "lat": 41.1858,
+  "lon": 14.6813
+ },
+ "vitulano": {
+  "nome": "Vitulano",
+  "lat": 41.1742,
+  "lon": 14.6482
+ }
+}

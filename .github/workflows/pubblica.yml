@@ -73,6 +73,14 @@ jobs:
             curl -fsSL --max-time 30 "https://notiziebenevento.it/meteo.json" -o meteo.json || echo "nessun meteo precedente"
           fi
 
+      # il meteo di ogni Comune per le loro pagine (strumenti/meteo_comuni.py, Open-Meteo): se non risponde resta quello di prima
+      - name: Meteo dei Comuni
+        run: |
+          if ! python3 strumenti/meteo_comuni.py; then
+            echo "::warning::Meteo dei Comuni non aggiornato: tengo quello già pubblicato"
+            curl -fsSL --max-time 30 "https://notiziebenevento.it/meteo-comuni.json" -o meteo-comuni.json || echo "nessun meteo dei Comuni precedente"
+          fi
+
       # il sito del Ministero da GitHub non si apre: i prezzi li scarica il Pi di casa (strumenti/carburanti.py --manda)
       # e li manda qui quando sono nuovi; nelle altre pubblicazioni restano quelli già sul sito
       - name: Prezzi dei carburanti (dal Pi di casa, o quelli già pubblicati)

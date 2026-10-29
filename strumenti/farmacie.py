@@ -190,7 +190,13 @@ def leggi_elenco(testo_html, tutte=False):
             if not tutte:
                 continue
             tel = ""   # per i paesi la farmacia serve lo stesso (si abbina ai turni), senza numero
-        out.append({"nome": celle[2] or celle[1], "parole": parole(celle[1] + " " + celle[2]), "via": celle[3], "parole_via": parole(celle[3]),
+        # «nome» è la ragione sociale («FARMACIA PACEVECCHIA SRL»), vuota se c'è solo il titolare: il titolare non si
+        # pubblica (serve solo ad abbinare, in «parole»)
+        ragione = celle[2].strip(" .-")
+        tit = set(re.findall(r"[a-zà-ÿ]{2,}", celle[1].lower()))
+        if tit and tit <= set(re.findall(r"[a-zà-ÿ]{2,}", ragione.lower())):   # «DOTT. LOMBARDI GIUSEPPE»: è il titolare
+            ragione = ""
+        out.append({"nome": ragione, "parole": parole(celle[1] + " " + celle[2]), "via": celle[3], "parole_via": parole(celle[3]),
                     "comune": bello(re.sub(r"\s+", " ", celle[4]).strip()), "telefono": tel})
     if len(out) < (60 if tutte else 8):
         raise ValueError(f"nell'elenco delle farmacie ci sono solo {len(out)} farmacie di Benevento con il telefono")

@@ -1395,7 +1395,8 @@ def _dove_farmacia(x, con_comune=False):
 def bello_via(s):
     """«VIA ROMA 24» → «Via Roma 24» (l'indirizzo dell'elenco di Federfarma)."""
     s = re.sub(r"\b([A-ZÀ-Ý])([A-ZÀ-Ý']+)\b", lambda m: m.group(1) + m.group(2).lower(), s)
-    return re.sub(r"\b(Di|Del|Della|Delle|Dei|Degli|De|Da|E)\b", lambda m: m.group(0).lower(), s)
+    s = re.sub(r"\b(Di|Del|Della|Delle|Dei|Degli|De|Da|E)\b", lambda m: m.group(0).lower(), s)
+    return s[:1].upper() + s[1:]
 
 
 def html_adesso(fasce, adesso, cambio="", con_comune=False, manca=""):
@@ -1565,14 +1566,26 @@ def html_area_zona(zid, area, adesso, elenco_paesi):
 
 
 def farmacie_dei_paesi(farm):
-    """Le farmacie di ogni paese dall'elenco di Federfarma (strumenti/farmacie.py, farm["paesi"]["elenco"])."""
-    out = {}
+    """Le farmacie di ogni paese dall'elenco di Federfarma (strumenti/farmacie.py, farm["paesi"]["elenco"]); l'ultima
+    letta resta in farmacie_dei_paesi.cache (per le pagine dei Comuni)."""
+    out = farmacie_dei_paesi.cache = {}
+    # il nome: quello dei calendari (zone dei paesi, turni della città) per lo stesso telefono, se no la ragione
+    # sociale, se no «Farmacia di <paese>»: mai il titolare (l'elenco pubblico non lo porta)
+    noti = {x.get("telefono"): x["nome"] for z in (farm.get("paesi") or {}).get("zone") or [] for x in z.get("farmacie") or []
+            if x.get("telefono") and x.get("nome") and not x["nome"].startswith("Farmacia di ")}
+    noti.update({x.get("telefono"): x["nome"] for k in ("diurno", "notturno") for x in farm.get(k) or [] if x.get("telefono")})
     for f in (farm.get("paesi") or {}).get("elenco") or []:
         c = comune_ufficiale(f["comune"])
-        out.setdefault(c, []).append({"nome": bello_via(f["nome"]) if f["nome"].isupper() else f["nome"],
+        nome = (bello_via(f["nome"]) if f["nome"].isupper() else f["nome"]) if f.get("nome") else ""
+        if not nome or nome == ".":
+            nome = noti.get(f.get("telefono")) or f"Farmacia di {c}"
+        out.setdefault(c, []).append({"nome": nome,
                                       "comune": c, "telefono": f.get("telefono") or "",
                                                 "via_mappa": f.get("via") or "", "indirizzo": ""})
     return out
+
+
+farmacie_dei_paesi.cache = {}
 
 
 def html_farmacie(farm, aree, paesi, adesso):
@@ -1604,10 +1617,14 @@ def html_farmacia_comune(c, aree, paesi, adesso):
     if s not in paesi:
         return ""
     area = aree[paesi[s][1]]
-    return (f'<section class="farm-comune"><h3>Farmacia di turno</h3><div class="avv-speciale farm-adesso" '
+    # sempre, anche negli orari normali, le farmacie del paese col telefono (lui: «nei comuni non far sparire il
+    # riquadro quando sono aperte normalmente, indicare la farmacia aperta»)
+    qui = farmacie_dei_paesi.cache.get(c) or []
+    lista = ("" if not qui else f'<p class="farm-qui">Le farmacie di {e(c)}</p><ul class="notizie-comune">' + "".join(
+        f'<li><b class="farm-nome">{e(x["nome"])}</b>{_dove_farmacia(x)}</li>' for x in qui) + "</ul>")
+    return (f'<section class="farm-comune"><h3 class="titolo-col">Farmacia di turno</h3><div class="avv-speciale farm-adesso" '
             f'data-area="{e(paesi[s][1])}">{html_adesso(area["fasce"], adesso, area["cambio"], paesi[s][1] != "benevento", area["manca"])}'
-            f'</div><p class="collegate"><a href="/farmacie-di-turno/?paese={e(s)}">Tutti i turni e i telefoni delle '
-            f'farmacie ›</a></p></section>')
+            f'</div>{lista}<p class="collegate"><a href="/farmacie-di-turno/?paese={e(s)}">Tutti i turni e i telefoni ›</a></p></section>')
 
 
 def farmacie_fasce(aree, paesi, adesso):
@@ -2166,7 +2183,50 @@ def _allerta_comune(c, allerte, oggi):
             f'{e(", ".join(livelli))}{e(bol)}. <a href="/meteo.html">Le previsioni del tempo</a>.</p>')
 
 
-def html_comune(c, notizie, eventi, allerte, stemma, oggi, distributori=0, farmacia=""):
+COND_METEO = {"sereno": "Sereno", "poco-nuvoloso": "Poco nuvoloso", "nuvoloso": "Nuvoloso", "coperto": "Coperto",
+              "nebbia": "Nebbia", "possibili-piogge": "Possibili piogge", "pioggia-debole": "Pioggia debole",
+              "pioggia": "Pioggia", "pioggia-forte": "Pioggia forte", "temporale": "Temporale", "neve": "Neve"}
+LIVELLI_ALLERTA = {"gialla": "#f2c200", "arancione": "#ef7f1a", "rossa": "#c4161c"}
+NOMI_ZONA = {"benevento": "Benevento città", "telesina": "Valle Telesina", "caudina": "Valle Caudina",
+             "fortore": "Fortore e Tammaro", "provincia": "Sannio"}
+
+
+def html_meteo_comune(c, m, allerte, oggi):
+    """Il riquadro «Meteo» del Comune (strumenti/meteo_comuni.py), come quello di Benevento in prima pagina: adesso e
+    tre giorni; le icone le mette index.html (icona()). In cima la striscia dell'allerta, se non è verde."""
+    if not m:
+        return ""
+    gradi = lambda v: "–" if v is None else f"{round(v)}°"   # noqa: E731
+    al, peggio = "", 0
+    ordine = ["verde", "gialla", "arancione", "rossa"]
+    for nome, d in (("oggi", oggi), ("domani", oggi + dt.timedelta(days=1))):
+        for x in (((allerte.get("giorni") or {}).get(d.isoformat()) or {}).get("zone") or {}).values():
+            if c in (x.get("comuni") or []) and ordine.index(x.get("livello") or "verde") > peggio:
+                peggio, al = ordine.index(x.get("livello") or "verde"), nome
+    h = ""
+    if peggio:
+        liv = ordine[peggio]
+        h += (f'<a class="mb-allerta" href="/meteo.html#allerte" style="background:{LIVELLI_ALLERTA[liv]}'
+              f'{";color:#3a2c00" if liv == "gialla" else ""}">Allerta {liv} {al} ›</a>')
+    o = m["ora"]
+    h += (f'<div class="mb-tit">Meteo {e(c)}</div><div class="mb-ora"><span class="mb-icona" data-cond="{e(o["cond"])}" '
+          f'data-notte="{0 if o.get("giorno") else 1}"></span><div class="mb-t">{gradi(o["t"])}</div><div class="mb-c">'
+          f'{e(COND_METEO.get(o["cond"], ""))}<small>adesso</small></div></div><div class="mb-giorni">')
+    for k, g in enumerate(m["giorni"][:3]):
+        d = dt.date.fromisoformat(g["data"])
+        et = "Oggi" if k == 0 else "Domani" if k == 1 else GIORNI[d.weekday()][:3]
+        pp = f"{g['prob']}%" if g.get("prob") else ""
+        h += (f'<div class="mb-g">{e(et)}<span class="mb-icona" data-cond="{e(g["cond"])}" data-notte="0"></span><b>'
+              f'{gradi(g["max"])}</b> <span class="mn">{gradi(g["min"])}</span><span class="pp">{pp}</span></div>')
+    h += "</div>"
+    return f'<div class="meteo-box meteo-comune">{h}<p class="mb-fonte">Previsioni Open-Meteo, aggiornate ogni ora.</p></div>'
+
+
+def html_comune(c, notizie, eventi, allerte, stemma, oggi, distributori=0, farmacia="", meteo_c=None, vicine=(), zona=""):
+    """La pagina di un Comune: in cima titolo e stemma; a destra (sul telefono sotto il titolo) allerta, meteo, farmacia
+    di turno e carburanti (lui, 29 ott 2026: «una colonna di destra simile alla nostra home», «meteo e farmacia sempre
+    nella colonna di destra», «e anche allerte»); a sinistra eventi e notizie, e se sono poche quelle della zona («cerchiamo
+    di riempire un po' le pagine, spesso sono vuote»)."""
     titolo = f"Notizie da {c}"
     h = _testata_pagina("Comuni del Sannio", "Provincia di Benevento", titolo)
     somm = (f'<p class="sommario">Le notizie di {e(c)}, in provincia di Benevento: cronaca, strade, politica, sport ed '
@@ -2182,27 +2242,33 @@ def html_comune(c, notizie, eventi, allerte, stemma, oggi, distributori=0, farma
         h = h.replace(f"<h1>{e(titolo)}</h1>", f'<div class="testata-comune"><div><h1>{e(titolo)}</h1>{somm}</div>{fig}</div>')
     else:
         h += somm
-    h += _allerta_comune(c, allerte, oggi)
-    h += farmacia   # la farmacia di turno del paese (lui, 29 ott 2026), sotto l'allerta
+    lat = html_meteo_comune(c, meteo_c, allerte, oggi) + _allerta_comune(c, allerte, oggi) + farmacia
+    if distributori:
+        quali = f"dei {distributori} distributori" if distributori > 1 else "del distributore"
+        lat += (f'<h3 class="titolo-col">Carburanti</h3><p class="sezioni-link"><a href="/carburanti/#c-{slug(c)}">I prezzi '
+                f'di oggi {quali} di {e(c)} ›</a></p>')
+    princ = ""
     if eventi:
-        h += f"<h3>Prossimi eventi a {e(c)}</h3><ul class=\"notizie-comune\">" + "".join(
+        princ += f"<h3>Prossimi eventi a {e(c)}</h3><ul class=\"notizie-comune\">" + "".join(
             f'<li><a href="{percorso("evento", ev["id"])}">{e(ev["titolo"])}</a>'
             f'<span class="dove">{e(quando_ev(ev))}</span></li>' for ev in eventi) + "</ul>"
-    h += f"<h3>Le notizie da {e(c)}</h3>"
+    princ += f"<h3>Le notizie da {e(c)}</h3>"
     if notizie:
-        h += '<ul class="notizie-comune">' + "".join(
+        princ += '<ul class="notizie-comune">' + "".join(
             f'<li><a href="{percorso("notizia", n["id"])}">{e(n["titolo"])}</a>'
             f'<span class="dove">{e(_categoria(n))} · {e(data_it(n.get("pubblicato"), lunga=True))}</span>'
             + (f"<p>{e(breve(n['sintesi'], 220))}</p>" if n.get("sintesi") else "") + "</li>" for n in notizie[:100]) + "</ul>"
     else:
-        h += f"<p>Per ora non ci sono notizie da {e(c)}: le trovi qui appena escono.</p>"
-    if distributori:
-        quali = f"dei {distributori} distributori" if distributori > 1 else "del distributore"
-        h += (f'<p class="sezioni-link">Carburante: <a href="/carburanti/#c-{slug(c)}">i prezzi di oggi {quali} di '
-              f'{e(c)} ›</a></p>')
-    h += '<p class="sezioni-link">Gli altri paesi: <a href="/comuni/">tutti i Comuni del Sannio</a></p>'
+        princ += f"<p>Per ora non ci sono notizie da {e(c)}: le trovi qui appena escono.</p>"
+    if vicine:
+        princ += f"<h3>Le ultime da {e(zona or 'Sannio')}</h3>" + '<ul class="notizie-comune">' + "".join(
+            f'<li><a href="{percorso("notizia", n["id"])}">{e(n["titolo"])}</a>'
+            f'<span class="dove">{e(n.get("luogo") or "")}{" · " if n.get("luogo") else ""}'
+            f'{e(data_it(n.get("pubblicato"), lunga=True))}</span></li>' for n in vicine) + "</ul>"
+    princ += '<p class="sezioni-link">Gli altri paesi: <a href="/comuni/">tutti i Comuni del Sannio</a></p>'
+    h += f'<div class="comune-griglia"><aside class="comune-lat">{lat}</aside><div class="comune-princ">{princ}</div></div>'
     h += SEGUI
-    return f'<article class="appro">{h}</article>'
+    return f'<article class="appro comune-pag">{h}</article>'
 
 
 def nome_mese(m):
@@ -2912,7 +2978,7 @@ def main():
         ("/carburanti/", "Carburanti", "Prezzi di benzina e diesel", r_carb,
          "I prezzi di tutti i distributori di Benevento e provincia, dal meno caro, aggiornati ogni mattina."),
         ("/meteo.html", "Meteo", "Meteo e allerte", "",
-         "Le previsioni per Benevento e per ogni paese del Sannio, con le allerte della Protezione civile."),
+         "Le previsioni per Benevento ora per ora, con le allerte della Protezione civile per il Sannio."),
         ("/sezione/avvisi/", "Avvisi", "Avvisi dei Comuni", sp["titolo"] if sp else "",
          "Uffici, acqua, rifiuti, cimiteri e scadenze: gli avvisi dei Comuni in ordine di quando servono."),
         ("/agevolazioni/", "Agevolazioni", "Agevolazioni, bonus e bandi", f"{len(aperti)} aperte adesso" if aperti else "",
@@ -3018,11 +3084,19 @@ def main():
             for c in comuni_di(ev.get("comune"))[:1]:
                 ev_comune[c].append(ev)
     indicizzate = 0
+    try:
+        meteo_c = (leggi(os.path.join(sito, "meteo-comuni.json")) or {}).get("comuni") or {}
+    except (OSError, ValueError):
+        meteo_c = {}
+    from archivia import ZONA_COMUNE
     for c in COMUNI_BN:
         if c == "Benevento":
             continue
         url = SITO + url_comune(c)
         dentro, evc = per_comune[c], ev_comune[c]
+        zona_c = ZONA_COMUNE.get(c.lower(), "provincia")
+        vicine = [] if len(dentro) >= 6 else [n for n in notizie if n not in dentro and (
+            zona_c == "provincia" or n.get("zona") == zona_c)][:8]
         visibile = len(dentro) + len(evc) >= COMUNE_MINIMO
         jsonld = {"@context": "https://schema.org", "@graph": [
             {"@type": "CollectionPage", "name": f"Notizie da {c}", "url": url,
@@ -3039,8 +3113,9 @@ def main():
                          jsonld=jsonld, extra="" if visibile else '<meta name="robots" content="noindex, follow">')
         scrivi(os.path.join(sito, url_comune(c).strip("/"), "index.html"),
                pagina(modello, seo, {"statica": True},
-                      html_comune(c, dentro, evc, allerte, stemmi.get(c), oggi,
-                                  distributori.get(c, 0), html_farmacia_comune(c, aree_f, paesi_f, adesso_it)), articolo=True))
+                      html_comune(c, dentro, evc, allerte, stemmi.get(c), oggi, distributori.get(c, 0),
+                                  html_farmacia_comune(c, aree_f, paesi_f, adesso_it), meteo_c.get(slug(c)),
+                                  vicine, NOMI_ZONA.get(zona_c, "Sannio")), articolo=True))
         if visibile:
             indicizzate += 1
             mappa.append((url, dentro[0].get("pubblicato") if dentro else None))

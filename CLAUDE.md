@@ -92,8 +92,21 @@ sempre sono una cosa utile»), cliccabile (tel:), preso da una fonte ufficiale: 
   farmacie-fasce.json; index.html rifà «adesso» ogni minuto nella pagina, nelle pagine dei Comuni e nella riga di
   Servizi. **In prima pagina**, tra Benevento Calcio e i carburanti, il riquadro «Farmacia di turno a Benevento» solo
   quando c'è un turno (lui: «quando sono tutte aperte nulla il riquadro non si deve vedere»), col link alla pagina.
+- **Nomi delle farmacie:** quello dei calendari («Viglione», «Lombardi») o la ragione sociale; mai il titolare (nome e
+  cognome di una persona): l'elenco pubblico (farmacie.json) non lo porta, neanche quando la ragione sociale è il suo
+  nome («Dott. Lombardi Giuseppe» → «Lombardi»). Se non c'è altro: «Farmacia di <paese>».
 - Prossime, una per volta e pianificate prima con lui: guardia medica (ASL), mercati, raccolta differenziata, ZTL,
   numeri utili. Niente riquadri «in arrivo».
+
+## Le pagine dei Comuni (dal 29 ott 2026)
+Lui: «nelle pagine dei comuni lo metterei in una colonna di destra simile alla nostra home… meteo e farmacia sempre nella
+colonna di destra», «meteo del comune si intende», «e anche allerte… nei comuni non far sparire il riquadro quando sono
+aperte normalmente, indicare la farmacia aperta», «cerchiamo di riempire un po' le pagine, spesso sono vuote». Quindi
+(html_comune in pagine.py): a destra, e sul telefono subito sotto il titolo, il meteo del paese (strumenti/meteo_comuni.py
+→ meteo-comuni.json, Open-Meteo, una richiesta per tutti i 78 Comuni a ogni pubblicazione; coordinate in
+strumenti/comuni_coordinate.json) con la striscia dell'allerta se non è verde, la riga dell'allerta della Protezione
+civile, la farmacia di turno della zona e sempre le farmacie del paese col telefono, i carburanti del paese. A sinistra
+eventi e notizie; se le notizie sono meno di 6, sotto «Le ultime da <zona>» (8 della stessa zona).
 
 ## Come sono fatte le pagine (regola del proprietario, 28 ott 2026)
 Lui: «dobbiamo mettere una regola di come costruire le pagine… dobbiamo uniformare e scrivere una regola». Ogni pagina

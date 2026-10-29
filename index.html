@@ -105,6 +105,26 @@
   .appro .notizie-comune .farm-anche { font: 500 14px/1.45 var(--sans); color: var(--grigio); margin: 4px 0 0; }
   .appro .farm-titolo { font: 700 27px/1.18 var(--serif); letter-spacing: -.3px; margin: 26px 0 0; }
   .appro .farm-comune h3 { margin-top: 22px; }
+  /* la pagina di un Comune: a destra allerta, meteo, farmacia e carburanti come in prima pagina, a sinistra le notizie
+     (lui, 29 ott 2026); sul telefono la colonna di destra va sotto il titolo */
+  .appro.comune-pag { max-width: 1088px; }
+  .comune-pag .comune-griglia { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 0 44px; align-items: start; margin-top: 8px; }
+  .comune-pag .comune-lat { grid-column: 2; grid-row: 1; }
+  .comune-pag .comune-princ { grid-column: 1; grid-row: 1; }
+  .comune-pag .comune-princ > h3:first-child { margin-top: 0; }
+  .comune-lat .meteo-box { margin-top: 0; }
+  .comune-lat .mb-fonte { font: 500 11.5px var(--sans); color: var(--grigio); margin: 8px 0 0; }
+  .comune-lat .farm-adesso { margin-top: 0; padding: 12px 14px 2px; }
+  .comune-lat .notizie-comune .farm-nome { font-size: 17px; }
+  .comune-lat .farm-adesso li.in-corso .farm-nome { font-size: 20px; }
+  .comune-lat .farm-qui { font: 700 12.5px var(--sans); text-transform: uppercase; letter-spacing: .6px; margin: 12px 0 6px; }
+  .comune-lat .notizie-comune li { margin-bottom: 10px; }
+  .comune-lat .agg-chiusure { font-size: 13px; margin: 0 0 16px; }
+  .comune-lat .sezioni-link { margin-top: 0; }
+  @media (max-width: 959px) {
+    .comune-pag .comune-griglia { grid-template-columns: minmax(0, 1fr); }
+    .comune-pag .comune-lat, .comune-pag .comune-princ { grid-column: 1; grid-row: auto; }
+  }
   .farmacia-box { margin-bottom: 18px; }
   .farmacia-box .occhiello { margin: 2px 0 3px; }
   .farmacia-box a.farm-nome { display: block; font: 700 19px/1.25 var(--serif); color: var(--nero); text-decoration: none; }
@@ -3594,6 +3614,10 @@
       history.replaceState(null, "", location.pathname + (sceltaFarm.value === "benevento" ? "" : "?paese=" + sceltaFarm.value));
     });
   })();
+  // le icone del meteo dei Comuni (html_meteo_comune in pagine.py): le stesse della prima pagina
+  document.querySelectorAll(".mb-icona[data-cond]").forEach(function (s) {
+    s.outerHTML = icona(s.getAttribute("data-cond"), s.getAttribute("data-notte") === "1");
+  });
   fetch("/farmacie-fasce.json?t=" + Date.now(), { cache: "no-store" })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(function (j) { farmFasce = j; farmAggiorna(); setInterval(farmAggiorna, 60000); })

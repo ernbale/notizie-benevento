@@ -338,8 +338,9 @@ def zone(elenco, cartella=None):
             z["cambio"] = {"giorno": GIORNI[g] if g is not None else None, "ora": ora, "parole": par}
             if not turni:   # zona senza turni (il PDF dice solo come sono aperte): tutte le farmacie dei suoi paesi
                 zona = parole_comune(testa)
-                z["farmacie"] = [{"nome": bello(f["nome"]), "comune": f["comune"], "telefono": f["telefono"],
-                                  "via_mappa": bello(f["via"])} for f in elenco if parole_comune(f["comune"]) & zona]
+                z["farmacie"] = [{"nome": bello(f["nome"]) or f"Farmacia di {f['comune']}", "comune": f["comune"],
+                                  "telefono": f["telefono"], "via_mappa": bello(f["via"])} for f in elenco
+                                 if parole_comune(f["comune"]) & zona]
             else:
                 farm = abbina(nomi, paesi, elenco, testa)
                 if any(not f for f in farm):
