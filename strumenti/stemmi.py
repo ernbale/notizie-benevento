@@ -50,16 +50,18 @@ def file_stemmi(titoli):
         for p in d["query"]["pages"]:
             m = re.search(r"\|\s*Stemma\s*=\s*([^\n|}]*)", p["revisions"][0]["slots"]["main"]["content"])
             out[titoli[p["title"]]] = [m.group(1).strip()] if m and m.group(1).strip() else []
-    for c, f in out.items():
-        f += [f"{c}-Stemma.svg", f"{c}-Stemma.png"]
+    for tit, c in titoli.items():   # anche col titolo della voce: «Ponte (Italia)-Stemma.svg»
+        out.setdefault(c, [])
+        out[c] += [f"{c}-Stemma.svg", f"{c}-Stemma.png"] + ([f"{tit}-Stemma.svg"] if tit != c else [])
     return out
 
 
 def informazioni(nomi):
-    """{file: imageinfo} dalle API di it.wikipedia (che vede anche i file di Commons)."""
+    """{file: imageinfo} dalle API di Wikimedia Commons. Non da it.wikipedia: lì un disegno di Araldica Civica caricato
+    con lo stesso nome nasconde quello libero di Commons (Ponte, 29 ott 2026)."""
     out = {}
     for i in range(0, len(nomi), 40):
-        d = chiedi("https://it.wikipedia.org/w/api.php", action="query", prop="imageinfo",
+        d = chiedi("https://commons.wikimedia.org/w/api.php", action="query", prop="imageinfo",
                    iiprop="url|extmetadata", iiurlheight=ALTEZZA, titles="|".join("File:" + f for f in nomi[i:i + 40]),
                    format="json", formatversion=2)
         norm = {x["to"]: x["from"] for x in d["query"].get("normalized", [])}
@@ -87,7 +89,7 @@ def main():
         scelto = None
         for f in candidati.get(comune, []):
             ii = info.get(f)
-            if ii and ii["repo"] == "shared" and LIBERE.match(testo(ii.get("extmetadata") or {}, "LicenseShortName")):
+            if ii and ii["repo"] in ("local", "shared") and LIBERE.match(testo(ii.get("extmetadata") or {}, "LicenseShortName")):
                 scelto = (f, ii)
                 break
         if not scelto:
