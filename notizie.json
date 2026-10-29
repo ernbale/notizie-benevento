@@ -1,7 +1,129 @@
 {
- "aggiornato": "2026-10-29T08:14+01:00",
+ "aggiornato": "2026-10-29T09:14+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "amorosi-lampade-votive-canone-2022-14-euro",
+   "titolo": "Amorosi, lampade votive del cimitero: il Comune chiede il canone del 2022, 14 euro per ogni lampada",
+   "titolo_google": "Lampade votive Amorosi, canone 2022 da 14 euro: come pagare",
+   "sintesi": "Il Comune di Amorosi recupera il canone delle lampade votive del cimitero per l'anno 2022: 14 euro, IVA compresa, per ogni lampada. Il bollettino si chiede in Comune, in piazza Umberto I, oppure si paga con PagoPA dal sito del Comune.",
+   "categoria": "avvisi",
+   "luogo": "Amorosi",
+   "immagine": "cimitero",
+   "pubblicato": "2026-10-29",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "fonti": [
+    {
+     "nome": "Comune di Amorosi",
+     "url": "https://comune.amorosi.bn.it/novita/lampade-votive/",
+     "ufficiale": true
+    },
+    {
+     "nome": "Comune di Amorosi (albo pretorio)",
+     "url": "https://comune.amorosi.bn.it/albo-pretorio/?dettaglio_id=306384",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Comune di Amorosi chiede a chi ha una lampada votiva nel cimitero comunale il canone dell'anno 2022: 14 euro, IVA compresa, per ogni lampada. L'importo è quello fissato dal regolamento del servizio approvato dal Consiglio comunale il 3 dicembre 2022. Il canone degli anni successivi sarà chiesto più avanti, quando la Giunta avrà aggiornato le tariffe.",
+      "fonti": [
+       "Comune di Amorosi",
+       "Comune di Amorosi (albo pretorio)"
+      ]
+     },
+     {
+      "testo": "Per pagare ci si rivolge all'ufficio protocollo o all'ufficio tecnico del Comune, in piazza Umberto I 16, che preparano il bollettino. In alternativa si può pagare da soli con un avviso PagoPA, da generare nella pagina principale del sito comune.amorosi.bn.it, scrivendo i dati del defunto: nome e cognome, data di nascita e data di morte. Per informazioni si può scrivere alla PEC protocollo@pec.comune.amorosi.bn.it; il centralino del Comune è lo 0824 970212.",
+      "fonti": [
+       "Comune di Amorosi",
+       "Comune di Amorosi (albo pretorio)"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Entro quando va pagato il canone del 2022: l'avviso non indica una scadenza."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Amorosi",
+      "titolo": "Lampade votive",
+      "url": "https://comune.amorosi.bn.it/novita/lampade-votive/",
+      "data": "29 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "Comune di Amorosi (albo pretorio)",
+      "titolo": "AVVISO LAMPADE VOTIVE",
+      "url": "https://comune.amorosi.bn.it/albo-pretorio/?dettaglio_id=306384",
+      "data": "28 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "zona": "telesina",
+   "foto": "cimitero-13"
+  },
+  {
+   "id": "benevento-44enne-narcotraffico-napoli-obbligo-firma",
+   "titolo": "Benevento, accusata di narcotraffico nel rione Buvero di Napoli: una 44enne lascia i domiciliari, dovrà firmare dai Carabinieri",
+   "titolo_google": "Benevento, accusata di narcotraffico: 44enne lascia i domiciliari",
+   "sintesi": "Una donna di 44 anni di Benevento, imputata per aver fatto parte di un'associazione che trafficava droga nel rione Buvero di Napoli, non è più agli arresti domiciliari. La gip di Napoli li ha sostituiti con l'obbligo di presentarsi ai Carabinieri tre volte a settimana.",
+   "categoria": "cronaca",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-29T08:46+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 3,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/accusata-di-narcotraffico-una-44enne-di-benevento-lascia-i-domiciliari/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "V. P., 44 anni, di Benevento, non è più agli arresti domiciliari. È imputata con l'accusa di aver partecipato a un'associazione per il traffico di droga nel rione Buvero, a Napoli. Al posto dei domiciliari dovrà presentarsi ai Carabinieri tre volte alla settimana.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Ha cambiato la misura la giudice per le indagini preliminari (gip) del Tribunale di Napoli Federica Villano, che ha accolto la richiesta dell'avvocato Michele Ciruolo nonostante il parere contrario del pubblico ministero. L'ordinanza è stata depositata il 28 ottobre.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Secondo la gip, durante i domiciliari la donna ha rispettato le regole, si è allontanata dalla zona dove sarebbero avvenuti i fatti contestati e ha ripreso a lavorare. Per questo, e per il tempo passato, le esigenze cautelari sono diminuite e basta l'obbligo di firma. Il processo va avanti.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando riprenderà il processo."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Accusata di narcotraffico, una 44enne di Benevento lascia i domiciliari",
+      "url": "https://www.anteprima24.it/benevento/accusata-di-narcotraffico-una-44enne-di-benevento-lascia-i-domiciliari/",
+      "data": "29 ott, 08:46"
+     }
+    ]
+   },
+   "zona": "benevento"
+  },
   {
    "id": "asl-benevento-cisl-fp-piattaforma-contrattazione-integrativa",
    "titolo": "ASL Benevento, firmata la piattaforma per il contratto integrativo: bandi per gli incarichi entro il 30 novembre",
@@ -227,14 +349,18 @@
    "sport": "calcio",
    "luogo": "Benevento",
    "immagine": "calcio",
-   "pubblicato": "2026-10-29T00:13+01:00",
-   "stato": "una_fonte",
+   "pubblicato": "2026-10-29T09:11+01:00",
+   "stato": "confermata",
    "rilevante": false,
    "importanza": 5,
    "fonti": [
     {
      "nome": "BeneventoNews24",
      "url": "https://www.beneventonews24.it/2026/10/29/benevento-anticipata-la-partenza-per-cremona-si-parte-oggi-con-tappa-a-coverciano/"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/29/benevento-il-problema-e-non-chiudere-le-partite-anticipata-la-partenza-per-cremona/"
     }
    ],
    "articolo": {
@@ -242,24 +368,36 @@
      {
       "testo": "Il Benevento Calcio anticipa a giovedì 29 ottobre la partenza per la trasferta contro la Cremonese, che si gioca sabato 31 ottobre alle 15 allo stadio Zini di Cremona. Il motivo è lo sciopero generale di venerdì 30 ottobre, che avrebbe potuto creare ritardi negli spostamenti.",
       "fonti": [
-       "BeneventoNews24"
-      ]
+       "BeneventoNews24",
+       "Il Sannio Quotidiano"
+      ],
+      "giorno": "2026-10-29"
      },
      {
       "testo": "Giovedì mattina la squadra si allena a Benevento con l'allenatore Floro Flores; dopo pranzo parte con il pullman della società verso il Centro tecnico federale di Coverciano, vicino a Firenze, dove si allena la Nazionale. Lì passa la notte e venerdì mattina si allena sui campi della Nazionale.",
       "fonti": [
        "BeneventoNews24"
-      ]
+      ],
+      "giorno": "2026-10-29"
      },
      {
       "testo": "Venerdì dopo pranzo il viaggio riprende verso la Lombardia. Il ritorno a Benevento, dopo la partita, sarà in treno. Il cambio di programma l'ha deciso lo staff della logistica guidato dal club manager Cilento.",
       "fonti": [
        "BeneventoNews24"
-      ]
+      ],
+      "giorno": "2026-10-29"
      }
     ],
     "cronologia": [],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "La partenza per la trasferta di Cremona è anticipata rispetto al programma.",
+      "fonti": [
+       "BeneventoNews24",
+       "Il Sannio Quotidiano"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [],
     "fonti": [
@@ -268,6 +406,12 @@
       "titolo": "Benevento, anticipata la partenza per Cremona: si parte oggi con tappa a Coverciano",
       "url": "https://www.beneventonews24.it/2026/10/29/benevento-anticipata-la-partenza-per-cremona-si-parte-oggi-con-tappa-a-coverciano/",
       "data": "29 ott, 00:13"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Benevento, il problema è non chiudere le partite. Anticipata la partenza per Cremona",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/29/benevento-il-problema-e-non-chiudere-le-partite-anticipata-la-partenza-per-cremona/",
+      "data": "29 ott, 09:11"
      }
     ]
    },
@@ -5883,17 +6027,22 @@
     {
      "nome": "TV7 Benevento",
      "url": "https://www.tvsette.net/scarcerata-55enne-di-montesarchio-perseguitava-lamante-e-tutta-la-sua-famiglia/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/montesarchio-stalking-ex-amante-revocati-domiciliari/"
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Una donna di 55 anni di Montesarchio, accusata di stalking contro l'uomo con cui aveva avuto una relazione, la moglie di lui e i loro due figli minorenni, non è più agli arresti domiciliari. Li ha revocati il Tribunale del Riesame di Napoli, che ha accolto la richiesta della difesa. Al posto dei domiciliari resta il divieto di dimora: la donna non può vivere a Montesarchio.",
+      "testo": "Una donna di 55 anni di Montesarchio, accusata di stalking contro l'uomo con cui aveva avuto una relazione, la moglie di lui e i loro due figli minorenni, non è più agli arresti domiciliari. Li ha revocati il Tribunale del Riesame di Napoli, che ha accolto la richiesta della difesa, gli avvocati Vittorio Fucci e Teresa Napolitano. Al posto dei domiciliari resta il divieto di dimora: la donna non può vivere a Montesarchio.",
       "fonti": [
        "NTR24",
        "BeneventoNews24",
        "Il Caudino",
-       "TV7 Benevento"
+       "TV7 Benevento",
+       "Anteprima24"
       ],
       "giorno": "2026-10-27"
      },
@@ -5903,7 +6052,8 @@
        "NTR24",
        "BeneventoNews24",
        "Il Caudino",
-       "TV7 Benevento"
+       "TV7 Benevento",
+       "Anteprima24"
       ],
       "giorno": "2026-10-27"
      },
@@ -5913,7 +6063,8 @@
        "NTR24",
        "BeneventoNews24",
        "Il Caudino",
-       "TV7 Benevento"
+       "TV7 Benevento",
+       "Anteprima24"
       ],
       "giorno": "2026-10-27"
      }
@@ -5926,7 +6077,8 @@
        "NTR24",
        "BeneventoNews24",
        "Il Caudino",
-       "TV7 Benevento"
+       "TV7 Benevento",
+       "Anteprima24"
       ]
      }
     ],
@@ -5959,6 +6111,12 @@
       "titolo": "Scarcerata 55enne di Montesarchio: perseguitava l’amante e tutta la sua famiglia.",
       "url": "https://www.tvsette.net/scarcerata-55enne-di-montesarchio-perseguitava-lamante-e-tutta-la-sua-famiglia/",
       "data": "27 ott, 13:13"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Accusata di perseguitare l’ex amante e la famiglia: la decisione del Riesame",
+      "url": "https://www.anteprima24.it/benevento/montesarchio-stalking-ex-amante-revocati-domiciliari/",
+      "data": "29 ott, 09:00"
      }
     ]
    },
