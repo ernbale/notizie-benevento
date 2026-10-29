@@ -28,7 +28,8 @@ farlo giusto subito.
    NTR24, Ottopagine, Anteprima24, Lab TV, Cronache del Sannio, BeneventoNews24, TV7 Benevento. Prima fai una ricerca
    mirata per trovare la seconda fonte. Il sito mostra da solo la scritta «Una sola fonte» e il nome del giornale.
    Non vale mai per: allerte, eventi, notizie `rilevante`, fatti scritti solo da altre testate (Infosannio,
-   Fremondoweb, Gazzetta di Benevento, Benevento Giornale, Il Caudino: con loro servono due testate). Appena una
+   Fremondoweb, Gazzetta di Benevento, Benevento Giornale, Il Caudino, TeleradioNews, Matese News, UserTv: con loro
+   servono due testate). Appena una
    seconda testata riporta il fatto, aggiungila e passa a `confermata` (lo controlla `archivia.py`).
 3. **Cronaca con persone coinvolte:** almeno due testate, oppure una sola testata autorevole (regola 2); basta anche
    un comunicato della Questura o di altre forze dell'ordine. **I privati: nome intero o iniziali** (lui, 29 ott 2026:
@@ -205,7 +206,7 @@ registro e nel resoconto.
 
 ### Giornali del Sannio: l'elenco degli articoli nuovi
 
-**Obbligatorio, all'inizio del giro.** `python3 strumenti/giornali.py | tee /tmp/giornali.txt` legge i 14 giornali
+**Obbligatorio, all'inizio del giro.** `python3 strumenti/giornali.py | tee /tmp/giornali.txt` legge i 17 giornali
 (feed, Ottopagine dalla sua pagina, TV7 dal file di casa), i comunicati delle società sportive, gli avvisi nuovi dei
 Comuni e i comunicati per posta lasciati a te; tiene quello che è uscito dall'ultimo giro e lo raggruppa per fatto
 (G1, G2…), con accanto gli articoli delle ultime 24 ore sullo stesso fatto: così vedi subito quante testate lo
@@ -222,13 +223,30 @@ decisione (lo controlla `archivia.py`).
   ufficiale da cui viene (Comune, EAV, AIR, Alto Calore…, nei loro feed e pagine): se c'è, la notizia esce con quello.
 - Se una testata è segnata «solo la homepage» o «non raggiungibile», leggila a mano dalla sua pagina e scrivi tu la
   sua riga nel registro.
+- **«FORSE GIÀ SUL SITO»** accanto a un gruppo (dal 29 ott 2026): i titoli somigliano a una notizia degli ultimi 7
+  giorni o a un evento del calendario (`evento <id>`). Aprili e confronta: se è lo stesso fatto, **aggiungi la fonte a
+  quella notizia o a quell'evento** (e le novità, se ce ne sono); nel diario «aggiornata» con quella notizia
+  («presente» se è in archivio o non c'è niente da aggiungere), «evento» con quell'evento. Mai una notizia nuova sullo
+  stesso fatto. Se è un fatto diverso, va avanti come sempre. Serve soprattutto per i giornali dei
+  paesi entrati il 29 ott 2026 (lui: «si fai 1 2 e 3»): **TeleradioNews** (di Caiazzo: solo gli articoli col «(BN)»),
+  **Matese News** (sezione «Dal Sannio»: Titerno, Telesina, Alto Tammaro, Fortore) e **UserTv** (Valle Caudina: solo i
+  titoli con i paesi del Sannio). Riprendono spesso, giorni dopo e con un titolo loro, comunicati già usciti: prima di
+  scrivere un fatto che hanno solo loro cercalo anche in notizie.json ed eventi.json. Sono testate non autorevoli (regola
+  2): da sole non bastano.
+- **La diocesi di Cerreto Sannita-Telese-Sant'Agata de' Goti** (dal 29 ott 2026, lui: «la diocesi di Cerreto per le
+  feste»; giornali.py tiene solo i titoli che nominano un paese del Sannio) è fonte ufficiale **per i suoi
+  appuntamenti**: feste e processioni, pellegrinaggi, presepi, concerti nelle chiese, appuntamenti aperti a tutti con
+  data e luogo in un paese. Le feste vanno nel calendario degli eventi (con le regole di «Il calendario degli eventi»); le
+  cronache di cose già fatte (una visita pastorale conclusa, una photogallery), le nomine e i corsi interni non sono
+  notizie.
 
 Le pagine dei giornali (per aprirli a mano): ottopagine.it/bn/ · ilsannioquotidiano.it · ntr24.tv ·
 labtv.net · cronachedelsannio.it/sannionews24/ · fremondoweb.com/category/notizie-dalla-valle-telesina/ ·
 gazzettabenevento.it · anteprima24.it/benevento/ · infosannionews.it · beneventogiornale.com ·
 beneventonews24.it · ilmattino.it/benevento/ · TV7 Benevento, file `tv7.json` delle fonti lette da casa (tieni solo le
 notizie del Sannio) · ilcaudino.it/feed/ (Valle Caudina: tieni solo i Comuni della provincia di Benevento, non
-Cervinara, Rotondi, San Martino Valle Caudina e gli altri irpini). Il Sannio Quotidiano esce tutto tra le 7:30 e le
+Cervinara, Rotondi, San Martino Valle Caudina e gli altri irpini) · teleradio-news.it/?s=BN (solo i titoli col «(BN)») ·
+matesenews.it/category/sannio/ · usertv.it (come Il Caudino: niente paesi irpini) · diocesicerreto.it. Il Sannio Quotidiano esce tutto tra le 7:30 e le
 7:50 ed è spesso la seconda fonte dei fatti del giorno prima: al giro delle 8 controlla i fatti di ieri rimasti con
 una sola fonte.
 
@@ -690,7 +708,8 @@ aggiorni a ogni giro, come notizie.json.
   con la data (per esempio la stagione teatrale fino ad aprile), mettilo lo stesso.
 - **Dove cercarli**: negli stessi giornali e siti dei Comuni del giro (sezioni cultura, eventi, spettacoli), nei siti
   di librerie, biblioteche, teatri, musei, Conservatorio e Università del Sannio quando li trovi citati (la Libreria
-  Controvento di Telese Terme ha la pagina `https://libreriacontrovento.it/eventi/`: guardala una volta al giorno), nelle
+  Controvento di Telese Terme ha la pagina `https://libreriacontrovento.it/eventi/`: guardala una volta al giorno), le
+  feste religiose e le processioni della diocesi di Cerreto-Telese-Sant'Agata (arrivano nell'elenco di giornali.py), nelle
   stagioni ufficiali (qui sotto) e con le 2 ricerche mirate per gli eventi. Una stagione teatrale o una rassegna =
   **un evento per ogni spettacolo**, con la sua data.
 - **Mai doppioni**: prima di aggiungere un evento cerca in eventi.json lo stesso Comune negli stessi giorni; se c'è
@@ -955,10 +974,11 @@ controlla `archivia.py --giro`).
 - I nomi da usare: Comune di Benevento, Provincia di Benevento, ANAS, INGV, San Marco dei Cavoti, ASL Benevento,
   Ospedale San Pio, Alto Calore, GESESA, Prefettura, Questura, EAV, AIR Campania, RFI, Albo pretorio Benevento, Regione
   Campania; più la riga `Comuni (da casa, controllato HH:MM) | letta | N avvisi nuovi` (o una riga per ognuno dei 19
-  Comuni letti a mano). I 14 giornali (Ottopagine, Il Sannio Quotidiano, NTR24, Lab TV, Cronache del Sannio,
+  Comuni letti a mano). I 17 giornali (Ottopagine, Il Sannio Quotidiano, NTR24, Lab TV, Cronache del Sannio,
   Fremondoweb, Gazzetta di Benevento, Anteprima24, InfoSannio, Benevento Giornale, BeneventoNews24, Il Mattino, TV7
-  Benevento, Il Caudino) li scrive da solo `giornali.py` in `/tmp/fonti_giornali.txt`: tu aggiungi una riga solo per
-  un giornale che hai dovuto leggere a mano.
+  Benevento, Il Caudino, TeleradioNews, Matese News, UserTv), la diocesi di Cerreto e le società sportive li scrive da
+  solo `giornali.py` in `/tmp/fonti_giornali.txt`: tu aggiungi una riga solo per un giornale che hai dovuto leggere a
+  mano.
 - Una riga per ogni **ricerca mirata**: `Ricerca: parole cercate | fatta | cosa ha trovato` (almeno 6: vedi «Le
   storie in corso e le ricerche mirate»).
 

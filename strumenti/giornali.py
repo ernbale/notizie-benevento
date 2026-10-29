@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """L'elenco degli articoli nuovi dei giornali del Sannio, per il giro dell'agente.
 
-Legge i 14 giornali (feed RSS; Ottopagine dalla sua pagina /bn/ con la data di ogni articolo; TV7 dal file tv7.json
+Legge i 17 giornali (feed RSS; Ottopagine dalla sua pagina /bn/ con la data di ogni articolo; TV7 dal file tv7.json
 che scarica il computer di casa) e i comunicati delle società sportive (fonte ufficiale), tiene gli articoli usciti dall'ultimo giro e li raggruppa per fatto (titoli con
 le stesse parole), mettendo accanto anche gli articoli delle ultime 24 ore sullo stesso fatto: così si vede subito
 quante testate lo riportano. Toglie i gruppi già citati in una notizia del sito.
@@ -54,6 +54,16 @@ TESTATE = [
     ("Il Mattino", True, "rss", "https://www.ilmattino.it/rss/benevento.xml", "https://www.ilmattino.it/benevento/"),
     ("TV7 Benevento", True, "casa", "tv7.json", ""),
     ("Il Caudino", False, "wp", "https://ilcaudino.it/feed/", "https://ilcaudino.it/"),
+    # dal 29 ott 2026 (lui: «si fai 1 2 e 3»): i giornali dei paesi. Riprendono spesso comunicati già usciti altrove,
+    # giorni dopo e con un titolo loro: per questo c'è «forse già sul sito» (sul_sito). Di TeleradioNews (Caiazzo) la
+    # ricerca «BN» del sito, di UserTv (Valle Caudina, anche i paesi irpini) solo i titoli coi paesi del Sannio
+    ("TeleradioNews", False, "wp-bn", "https://www.teleradio-news.it/?s=BN&feed=rss2", "https://www.teleradio-news.it/?s=BN"),
+    ("Matese News", False, "wp", "https://www.matesenews.it/category/sannio/feed/", "https://www.matesenews.it/category/sannio/"),
+    ("UserTv", False, "wp-bn", "https://www.usertv.it/feed/", "https://www.usertv.it/"),
+    # la diocesi di Cerreto Sannita-Telese-Sant'Agata de' Goti: feste, processioni e appuntamenti delle parrocchie (fonte
+    # ufficiale per i suoi appuntamenti); le notizie della Chiesa italiana restano fuori (solo i titoli coi paesi)
+    ("Diocesi di Cerreto-Telese-Sant'Agata", True, "wp-bn", "https://www.diocesicerreto.it/feed/",
+     "https://www.diocesicerreto.it/"),
     # lo sport di NTR24 sta su un sito a parte (dal 2023 il feed sport del sito principale è fermo)
     ("NTR24 Sport", True, "wp", "https://sport.ntr24.tv/feed/", "https://sport.ntr24.tv/"),
     ("SannioSport", False, "wp", "https://sanniosport.it/feed/", "https://sanniosport.it/"),
@@ -79,7 +89,7 @@ TESTATE = [
     ("Federazione Rugby", True, "wp-sannio", "https://federugby.it/feed/", "https://federugby.it/"),
 ]
 # fonti ufficiali (regola 2: bastano da sole). ⛔ FIPAV (pallavolo): i suoi siti vietano la lettura automatica
-UFFICIALI = {"Benevento Calcio", "Miwa Basket Benevento", "Benevento 5", "Accademia Volley Benevento", "Rugby Benevento",
+UFFICIALI = {"Diocesi di Cerreto-Telese-Sant'Agata", "Benevento Calcio", "Miwa Basket Benevento", "Benevento 5", "Accademia Volley Benevento", "Rugby Benevento",
              "Rugby IV Circolo Benevento", "Apice Calcio", "Tennis Club 2002 Benevento", "GS Meomartini", "LND Benevento",
              "Divisione Calcio a 5", "Federazione Pallamano", "Federazione Rugby"}
 SANNIO = re.compile(r"benevent|sanni|telese|montesarchio|airola|apice|ceppaloni|paduli|morcone|cerreto|"
@@ -153,7 +163,7 @@ def voci_rss(testo):
 
 def leggi_feed(tipo, url, dal_contesto):
     """Le voci di un feed; per WordPress va alle pagine dopo finché non arriva a quelle più vecchie del contesto."""
-    voci, pagine = [], 4 if tipo in ("wp", "wp-benevento") else 1
+    voci, pagine = [], 4 if tipo in ("wp", "wp-benevento", "wp-bn") else 1
     for n in range(1, pagine + 1):
         u = url if n == 1 else f"{url}{'&' if '?' in url else '?'}paged={n}"
         try:
@@ -170,7 +180,34 @@ def leggi_feed(tipo, url, dal_contesto):
         voci = [v for v in voci if "/benevento/" in v["url"]]
     elif tipo == "wp-sannio":    # feed nazionali (leghe, federazioni): solo i titoli con squadre o paesi del Sannio
         voci = [v for v in voci if SANNIO.search(v["titolo"])]
+    elif tipo == "wp-bn":        # giornali che scrivono anche d'altro: solo i titoli che nominano il Sannio
+        voci = [v for v in voci if della_provincia(v["titolo"])]
     return voci
+
+
+# i nomi dei Comuni che sono anche parole o posti di altre province: contano solo scritti con la maiuscola in un titolo
+# che non è tutto maiuscolo (Ponte non prima di «di», «sul»…); Calvi (cognome, e Calvi Risorta) solo con «(BN)»
+AMBIGUI = {"Ponte": r"Ponte(?!\s+(?:di|de|del|dei|della|sul|sullo|sulla)\b)", "Amorosi": "Amorosi", "Apice": "Apice",
+           "Moiano": "Moiano", "Calvi": None}
+
+
+def _rx_provincia():
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from meteo import COMUNI_BN
+    nomi = [_semplice(c).replace("’", "'") for c in COMUNI_BN if c not in AMBIGUI]
+    nomi += ["telese", "sant'agata dei goti", "s. agata de' goti", "s.agata de' goti", "sant'agata de goti"]
+    pezzi = sorted((re.escape(n).replace(r"\ ", r"\s+").replace("'", r"'\s*") for n in nomi), key=len, reverse=True)
+    sicuri = re.compile(r"\(bn\)|benevent|\bsanni|(?<![a-z])(?:" + "|".join(pezzi) + r")(?![a-z])")
+    dubbi = re.compile(r"(?<![\w'’])(?:" + "|".join(x for x in AMBIGUI.values() if x) + r")(?![\w'’])")
+    return sicuri, dubbi
+
+
+def della_provincia(titolo):
+    """Il titolo nomina un Comune del Sannio, «(BN)», Benevento o il Sannio?"""
+    sicuri, dubbi = RX_PROVINCIA
+    if sicuri.search(_semplice(titolo).replace("’", "'")):
+        return True
+    return titolo.upper() != titolo and bool(dubbi.search(titolo))
 
 
 def data_pagina(url):
@@ -244,6 +281,7 @@ def _nomi_composti():
 
 
 NOMI_COMPOSTI = _nomi_composti()
+RX_PROVINCIA = _rx_provincia()
 
 
 def parole(titolo):
@@ -279,6 +317,39 @@ def citati():
                     out.setdefault(norma_url(fo["url"]), n.get("id"))
             for c in n.get("comunicati") or []:   # i comunicati per email da cui viene la notizia (id di comunicati.json)
                 out.setdefault(norma_url("posta:" + str(c)), n.get("id"))
+    return out
+
+
+def sul_sito(adesso, giorni=7):
+    """[(id, [parole del titolo e dei titoli delle fonti])] delle notizie degli ultimi giorni (prima pagina e archivio)
+    e degli eventi non ancora finiti («evento <id>»). Per dire che un articolo nuovo forse racconta un fatto già sul
+    sito (29 ott 2026: i giornali dei paesi, TeleradioNews, Matese News, UserTv, riprendono comunicati usciti giorni
+    prima, con un titolo loro: il link diverso non basta a riconoscerli, e un doppione non deve uscire)."""
+    limite, oggi = (adesso - dt.timedelta(days=giorni)).date().isoformat(), adesso.date().isoformat()
+    mesi = {adesso.strftime("%Y-%m"), (adesso.replace(day=1) - dt.timedelta(days=1)).strftime("%Y-%m")}
+    file = [os.path.join(SITO, "notizie.json")] + [os.path.join(SITO, "archivio", f"{m}.json") for m in sorted(mesi)]
+    out, visti = [], set()
+    for p in file:
+        try:
+            with open(p, encoding="utf-8") as f:
+                d = json.load(f)
+        except (OSError, ValueError):
+            continue
+        for n in d.get("notizie", []):
+            if n.get("id") in visti or str(n.get("pubblicato") or "")[:10] < limite:
+                continue
+            visti.add(n.get("id"))
+            fonti = (n.get("fonti") or []) + ((n.get("articolo") or {}).get("fonti") or [])
+            out.append((n.get("id"), [parole(n.get("titolo") or "")] + [parole(f["titolo"]) for f in fonti if f.get("titolo")]))
+    try:
+        with open(os.path.join(SITO, "eventi.json"), encoding="utf-8") as f:
+            ev = json.load(f)
+        for x in ev.get("eventi", []) if isinstance(ev, dict) else ev:
+            if str(x.get("fine") or x.get("inizio") or "") >= oggi:
+                out.append((f"evento {x.get('id')}", [parole(x.get("titolo") or "")]
+                            + [parole(f["titolo"]) for f in x.get("fonti") or [] if f.get("titolo")]))
+    except (OSError, ValueError):
+        pass
     return out
 
 
@@ -420,7 +491,11 @@ def main():
                 al_lampo.append(f"{nome} · {v['titolo'][:100]}")   # lo stesso fatto che sta pubblicando il giro lampo
                 continue
             articoli.append({"testata": nome, "autorevole": autorevole, "titolo": v["titolo"], "url": v["url"],
-                             "data": v["data"], "parole": parole(v["titolo"]), "citato": gia.get(norma_url(v["url"]))})
+                             "data": v["data"], "parole": p, "citato": gia.get(norma_url(v["url"]))})
+    indice = sul_sito(adesso)
+    for x in articoli:
+        if x["data"] >= dal and not x["citato"]:
+            x["simili"] = [i for i, insiemi in indice if any(stesso_fatto(x["parole"], q) for q in insiemi if q)]
     # gruppi: stesso fatto se i titoli hanno abbastanza parole in comune (unione a catena)
     capo = list(range(len(articoli)))
 
@@ -455,6 +530,7 @@ def main():
             "comuni": sorted({x["testata"] for x in g if x["testata"] in comunali}),
             "comunicati": sorted({x["testata"] for x in g if x["testata"] in postali}),
             "citato_in": sorted({x["citato"] for x in g if x["citato"]}),
+            "forse_sul_sito": sorted({i for x in g for i in x.get("simili") or []} - {x["citato"] for x in g})[:4],
             "articoli": [{"testata": x["testata"], "titolo": x["titolo"], "url": x["url"],
                           "data": x["data"].astimezone(fuso()).isoformat(timespec="minutes"),
                           "nuovo": x["data"] >= dal, "citato_in": x["citato"]} for x in g],
@@ -496,6 +572,8 @@ def main():
         if g["ufficiali"]:
             aut += f", fonte ufficiale: {', '.join(g['ufficiali'])}"
         cit = f" · già in: {', '.join(g['citato_in'])}" if g["citato_in"] else ""
+        if g["forse_sul_sito"]:
+            cit += f" · FORSE GIÀ SUL SITO (titoli simili, controlla): {', '.join(g['forse_sul_sito'])}"
         print(f"{g['id']} · {len(g['testate'])} testate ({aut}){cit}")
         for x in g["articoli"]:
             print(f"   {'*' if x['nuovo'] else ' '} {x['data'][5:10].replace('-', '/')} {x['data'][11:16]} "
