@@ -3,6 +3,137 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "air-campania-2-novembre-orario-scuole-chiuse",
+   "titolo": "Bus AIR Campania, lunedì 2 novembre niente corse scolastiche: vale l'orario dei giorni senza lezioni",
+   "titolo_google": "Bus AIR Campania 2 novembre: niente corse scolastiche",
+   "sintesi": "Lunedì 2 novembre sulle linee AIR Campania valgono gli orari «a scuole chiuse»: le corse segnate come «scolastiche» negli orari non partono. Il motivo è la sospensione delle lezioni prevista per quel giorno dal calendario scolastico regionale.",
+   "categoria": "strade",
+   "zona": "provincia",
+   "luogo": "Provincia di Benevento",
+   "immagine": "autobus",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 4,
+   "in_vigore_dal": "2026-11-02",
+   "in_vigore_fino": "2026-11-02",
+   "comunicati": [
+    "u3bec4089577"
+   ],
+   "fonti": [
+    {
+     "nome": "AIR Campania",
+     "url": "https://aircampania.it/il-2-novembre-sara-in-vigore-il-programma-a-scuole-chiuse/",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Lunedì 2 novembre i bus di AIR Campania, l'azienda regionale del trasporto pubblico che serve anche il Sannio, viaggeranno con il programma «a scuole chiuse». Vuol dire che le corse indicate come «scolastiche» nei quadri orari quel giorno non si faranno.",
+      "fonti": [
+       "AIR Campania"
+      ]
+     },
+     {
+      "testo": "Il motivo è che il calendario scolastico ufficiale 2026/27 della Regione Campania e della Regione Molise prevede per il 2 novembre la sospensione delle attività didattiche.",
+      "fonti": [
+       "AIR Campania"
+      ]
+     },
+     {
+      "testo": "L'unica linea che avrà anche le corse scolastiche è la 23-CE Cassino-Vairano-Calvi Risorta, perché nel Lazio le lezioni non si fermano. L'avviso dell'azienda ha il numero di protocollo AIRCA/0056859/2026.",
+      "fonti": [
+       "AIR Campania"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "AIR Campania",
+      "titolo": "Il 2 novembre sarà in vigore il programma a “scuole chiuse”",
+      "url": "https://aircampania.it/il-2-novembre-sara-in-vigore-il-programma-a-scuole-chiuse/",
+      "data": "29 ott, 12:48",
+      "ufficiale": true
+     }
+    ]
+   },
+   "subito": true,
+   "pubblicato": "2026-10-29T13:28:15+01:00",
+   "foto": "autobus-22"
+  },
+  {
+   "id": "accademia-volley-benevento-arzano-serie-c-serie-d-31-ottobre",
+   "titolo": "Pallavolo, sabato 31 ottobre doppio appuntamento alla palestra Rampone per l'Accademia Volley Benevento: Serie C con Arzano ed esordio della Serie D",
+   "titolo_google": "Accademia Volley Benevento-Arzano, 31 ottobre al Rampone",
+   "sintesi": "Sabato 31 ottobre alle 18.30 la Serie C femminile dell'Accademia Volley Benevento, prima a punteggio pieno, ospita la Lu.Vo Barattoli Arzano alla palestra Rampone. Alle 20.30, nello stesso impianto, comincia il campionato di Serie D maschile della VSMC Accademia.",
+   "categoria": "sport",
+   "sport": "pallavolo",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "immagine": "pallavolo",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 2,
+   "comunicati": [
+    "u3c575fbe668"
+   ],
+   "fonti": [
+    {
+     "nome": "Accademia Volley Benevento",
+     "url": "https://www.accademiavolley.com/accademia-news-un-weekend-tutto-da-vivere/",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Sabato 31 ottobre l'Accademia Volley Benevento gioca due partite in casa, entrambe alla palestra Rampone. Alle 18.30 la squadra di Serie C femminile ospita la Lu.Vo Barattoli Arzano; alle 20.30 parte il campionato di Serie D maschile della VSMC Accademia.",
+      "fonti": [
+       "Accademia Volley Benevento"
+      ]
+     },
+     {
+      "testo": "La Serie C femminile, la squadra di Vittorio Ruscello, ha cominciato la stagione vincendo le prime due partite, contro Pontecagnano e I Koala Bears. Con sei punti è prima in classifica. Per la società la sfida con Arzano potrà dire molto sulle ambizioni della squadra.",
+      "fonti": [
+       "Accademia Volley Benevento"
+      ]
+     },
+     {
+      "testo": "Per la Serie D maschile è un ritorno nel campionato regionale. Lo presenta Carmine Bibbò in un articolo del secondo numero di «Accademia News», la rivista della società, che si può scaricare dal sito dell'Accademia.",
+      "fonti": [
+       "Accademia Volley Benevento"
+      ]
+     },
+     {
+      "testo": "Nel numero c'è anche spazio per il settore giovanile, con le squadre Energreen Accademia che hanno cominciato i primi campionati, raccontate da Letizia Lauro. Torna poi «Oltre la Linea Bianca», la rubrica di Laura Scarinzi, al suo secondo appuntamento; completano il numero le classifiche delle prime squadre e le pagine degli sponsor.",
+      "fonti": [
+       "Accademia Volley Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Accademia Volley Benevento",
+      "titolo": "Accademia News, un weekend tutto da vivere",
+      "url": "https://www.accademiavolley.com/accademia-news-un-weekend-tutto-da-vivere/",
+      "data": "29 ott, 12:47",
+      "ufficiale": true
+     }
+    ]
+   },
+   "subito": true,
+   "pubblicato": "2026-10-29T13:28:15+01:00",
+   "foto": "pallavolo-9"
+  },
+  {
    "id": "benevento-corteo-usb-30-ottobre-strade-chiuse-centro",
    "titolo": "Benevento, venerdì 30 ottobre corteo dell'USB in centro: strade chiuse al passaggio da piazza Colonna a piazza Risorgimento",
    "titolo_google": "Corteo USB a Benevento 30 ottobre: strade chiuse in centro",
