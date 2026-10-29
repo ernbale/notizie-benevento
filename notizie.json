@@ -1,7 +1,289 @@
 {
- "aggiornato": "2026-10-29T11:16+01:00",
+ "aggiornato": "2026-10-29T12:19+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-corteo-usb-30-ottobre-strade-chiuse-centro",
+   "titolo": "Benevento, venerdì 30 ottobre corteo dell'USB in centro: strade chiuse al passaggio da piazza Colonna a piazza Risorgimento",
+   "titolo_google": "Corteo USB a Benevento 30 ottobre: strade chiuse in centro",
+   "sintesi": "Venerdì 30 ottobre, dalle 9:30, nel centro di Benevento passa il corteo di protesta del sindacato USB: piazza Colonna, viale Principe di Napoli, corso Vittorio Emanuele, piazza Orsini, corso Garibaldi, via Perasso e piazza Risorgimento si chiudono al traffico per il tempo del passaggio.",
+   "categoria": "strade",
+   "luogo": "Benevento, centro",
+   "pubblicato": "2026-10-29",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 4,
+   "in_vigore_dal": "2026-10-30",
+   "in_vigore_fino": "2026-10-30",
+   "traffico": "blocchi",
+   "immagine": "protesta",
+   "fonti": [
+    {
+     "nome": "Comune di Benevento, albo pretorio",
+     "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80201",
+     "ufficiale": true
+    },
+    {
+     "nome": "Il Post",
+     "url": "https://www.ilpost.it/2026/10/27/venerdi-30-ottobre-sciopero-generale/"
+    },
+    {
+     "nome": "EAV",
+     "url": "https://www.eavsrl.it/rinvio-sciopero-usb-30-ottobre-2026/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Venerdì 30 ottobre, dalle 9:30 del mattino, nel centro di Benevento sfila il corteo di protesta organizzato dall'USB di Benevento, l'Unione sindacale di base. Al suo passaggio si fermano le auto: il Servizio Traffico del Comune ha sospeso la circolazione, solo per il tempo che serve, in piazza Colonna, viale Principe di Napoli, corso Vittorio Emanuele, piazza Orsini, nell'area pedonale di corso Garibaldi, in via Perasso e in piazza Risorgimento. È l'ordinanza numero 459 del 29 ottobre.",
+      "fonti": [
+       "Comune di Benevento, albo pretorio"
+      ]
+     },
+     {
+      "testo": "Il corteo è legato allo sciopero generale nazionale di venerdì 30 ottobre, proclamato dall'USB e da altri sindacati di base contro il carovita e l'aumento delle spese militari, per chiedere stipendi più alti e più soldi per sanità e scuola. Lo stesso giorno sono previste manifestazioni in molte città italiane; i disagi maggiori potrebbero esserci nelle scuole e negli ospedali, a seconda di quanti aderiranno.",
+      "fonti": [
+       "Il Post"
+      ]
+     },
+     {
+      "testo": "Nei trasporti lo sciopero è stato bloccato: la Commissione di garanzia sugli scioperi ha ricordato che dal 30 ottobre al 5 novembre, per la commemorazione dei defunti, non si può scioperare, e il ministero dei Trasporti ha precettato i lavoratori del settore. Per i treni e i bus di EAV, compresa la linea Napoli–Benevento, lo sciopero è rinviato. L'USB ha però detto che intende scioperare lo stesso, quindi qualche disagio nei trasporti non si può escludere.",
+      "fonti": [
+       "EAV",
+       "Il Post"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Il punto di partenza del corteo e quanto durerà: l'ordinanza dice solo le strade attraversate e l'ora di inizio."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Benevento, albo pretorio",
+      "titolo": "SOSPENSIONE MOMENTANEA CIRCOLAZIONE VEICOLARE, PER IL SOLO TEMPO STRETTAMENTE NECESSARIO, SULLE STRADE (Piazza Colonna - Viale Principe di Napoli - Corso Vittorio Emanuele - Piazza Orsini - Area Pedonale Corso Garibaldi - Via Perasso e Piazza Risorgimento) CHE NELLA MATTINATA DI DOMANI VENERDI' 30 OTTOBRE 2026, DALLE ORE 9:30, SARANNO ATTRAVERSATE DAL CORTEO DI PROTESTA ORGANIZZATO DALL'USB BENEVENTO",
+      "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80201",
+      "data": "29 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "Il Post",
+      "titolo": "Venerdì 30 ottobre sarà una giornata di scioperi e manifestazioni in tutta Italia",
+      "url": "https://www.ilpost.it/2026/10/27/venerdi-30-ottobre-sciopero-generale/",
+      "data": "27 ott, 11:58"
+     },
+     {
+      "nome": "EAV",
+      "titolo": "Rinvio sciopero USB 30 ottobre 2026",
+      "url": "https://www.eavsrl.it/rinvio-sciopero-usb-30-ottobre-2026/",
+      "data": "28 ott, 14:26"
+     }
+    ]
+   },
+   "zona": "benevento",
+   "foto": "protesta-6"
+  },
+  {
+   "id": "benevento-piazza-roma-manifestazione-violenza-razzismo-sale-della-terra",
+   "titolo": "Benevento, venerdì 30 ottobre in piazza Roma la manifestazione contro violenza e razzismo dopo gli episodi in centro",
+   "titolo_google": "Benevento, piazza Roma 30 ottobre: no a violenza e razzismo",
+   "sintesi": "Venerdì 30 ottobre alle 20.30 il consorzio Sale della Terra porta in piazza Roma, a Benevento, la manifestazione «Tutti insieme per una città più sicura». Nasce dalla preoccupazione di alcuni genitori per gli episodi di violenza giovanile in centro storico, ma chiede di non dare la colpa a chi ha un'altra origine.",
+   "categoria": "altro",
+   "luogo": "Benevento, piazza Roma",
+   "pubblicato": "2026-10-29T11:20:24+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 3,
+   "immagine": "protesta",
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/29/benevento-in-piazza-roma-contro-la-violenza-e-il-razzismo-liniziativa-di-sale-della-terra/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/29/benevento-il-30-ottobre-in-piazza-roma-una-manifestazione-contro-violenza-e-razzismo/"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/venerdi-30-ottobre-evento-piazza-roma-una-manifestazione-che-vuole-essere-anche-unoccasione"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Venerdì 30 ottobre, alle 20.30, in piazza Roma a Benevento c'è la manifestazione «Tutti insieme per una città più sicura», contro la violenza e il razzismo. La organizza il consorzio Sale della Terra e l'invito è rivolto a tutti i cittadini.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24",
+       "Gazzetta di Benevento"
+      ]
+     },
+     {
+      "testo": "L'idea è nata parlando con alcuni genitori preoccupati per gli episodi di violenza giovanile che negli ultimi tempi ci sono stati nel centro storico e che hanno fatto crescere il senso di insicurezza tra le famiglie. Per Sale della Terra è una paura giusta, che merita ascolto e risposte, ma che non deve diventare «una caccia a un nemico» né far pensare che la violenza dipenda dall'origine, dall'identità o dal modo di vestire di qualcuno.",
+      "fonti": [
+       "BeneventoNews24",
+       "Gazzetta di Benevento",
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "La serata vuole essere anche un momento di incontro e di confronto, per cercare risposte insieme. «Una città più sicura si costruisce attraverso la responsabilità collettiva, la partecipazione e la capacità di tenere insieme diritti, rispetto e convivenza», scrivono gli organizzatori.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Giorno, ora e luogo: venerdì 30 ottobre alle 20.30 in piazza Roma, con l'organizzazione di Sale della Terra.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24",
+       "Gazzetta di Benevento"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Chi interverrà durante la serata."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Benevento, in piazza Roma contro la violenza e il razzismo: l’iniziativa di Sale della Terra",
+      "url": "https://www.ntr24.tv/2026/10/29/benevento-in-piazza-roma-contro-la-violenza-e-il-razzismo-liniziativa-di-sale-della-terra/",
+      "data": "29 ott, 11:15"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Benevento, il 30 ottobre in Piazza Roma una manifestazione contro violenza e razzismo",
+      "url": "https://www.beneventonews24.it/2026/10/29/benevento-il-30-ottobre-in-piazza-roma-una-manifestazione-contro-violenza-e-razzismo/",
+      "data": "29 ott, 11:20"
+     },
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "Venerdì 30 ottobre, evento a piazza Roma per una manifestazione che vuole essere anche un'occasione d'incontro",
+      "url": "https://www.gazzettabenevento.it/it/venerdi-30-ottobre-evento-piazza-roma-una-manifestazione-che-vuole-essere-anche-unoccasione",
+      "data": "29 ott, 11:05"
+     }
+    ]
+   },
+   "zona": "benevento",
+   "foto": "protesta-7"
+  },
+  {
+   "id": "unisannio-summit-aree-interne-2030-rete-rise",
+   "titolo": "Unisannio, al via il Summit Aree Interne 2030 con dieci università del Sud contro lo spopolamento",
+   "titolo_google": "Unisannio, Summit Aree Interne 2030 contro lo spopolamento",
+   "sintesi": "All'Università del Sannio è cominciato giovedì 29 ottobre il Summit Aree Interne 2030, due giorni promossi dalla rete RISE di dieci atenei del Mezzogiorno, di cui Unisannio è capofila. Da quattro laboratori con studiosi, sindaci e imprese nascerà il «Manifesto Aree Interne 2030».",
+   "categoria": "altro",
+   "luogo": "Benevento, Università del Sannio",
+   "pubblicato": "2026-10-29T11:18:33+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 2,
+   "immagine": "universita",
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/29/unisannio-al-via-il-summit-aree-interne-i-fondi-non-bastano-senza-servizi-e-competenze/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Giovedì 29 ottobre all'Università del Sannio, a Benevento, è cominciato il Summit Aree Interne 2030: due giorni di lavoro per capire come fermare lo spopolamento dei paesi dell'interno e trasformare le loro debolezze in occasioni di sviluppo. Lo promuove RISE, la rete di dieci università del Mezzogiorno di cui Unisannio è capofila.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Dopo i saluti, la prima sessione ha parlato dei cambiamenti della politica di coesione europea, i fondi con cui l'Europa aiuta le regioni più deboli. Il cuore del summit sono quattro laboratori dove siedono insieme studiosi, amministratori locali, centri di ricerca e imprese, su quattro temi: il governo delle istituzioni, il territorio e la natura, le persone e le loro competenze, il digitale. Quello che ne esce finirà in un documento che sarà la base del «Manifesto Aree Interne 2030».",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Giuliano Resce, docente di Economia politica all'Università del Molise, ha detto che il problema è trasformare i dati e i soldi del PNRR in servizi veri per i cittadini: «Non basta avere portali aggiornati, serve alfabetizzare le comunità». Ha portato l'esempio del progetto «Generazioni Digitali», che aiuta i Comuni a comunicare e gli anziani a usare i servizi online, dalla carta d'identità ai certificati.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando sarà presentato il «Manifesto Aree Interne 2030»."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Unisannio, al via il Summit Aree Interne: “I fondi non bastano senza servizi e competenze”",
+      "url": "https://www.ntr24.tv/2026/10/29/unisannio-al-via-il-summit-aree-interne-i-fondi-non-bastano-senza-servizi-e-competenze/",
+      "data": "29 ott, 11:18"
+     }
+    ]
+   },
+   "zona": "benevento",
+   "foto": "universita-3"
+  },
+  {
+   "id": "benevento-giovanni-ambrusco-poesie-universo-nei-tuoi-occhi",
+   "titolo": "Il beneventano Giovanni Ambrusco pubblica «L'universo nei tuoi occhi», poesie sull'amore in uscita il 13 novembre",
+   "titolo_google": "Giovanni Ambrusco, «L'universo nei tuoi occhi» dal 13 novembre",
+   "sintesi": "Esce il 13 novembre per Gruppo Albatros Il Filo «L'universo nei tuoi occhi», la raccolta di poesie del beneventano Giovanni Ambrusco: 80 pagine sull'amore tra desiderio, assenza e memoria, raccontato con le immagini della natura.",
+   "categoria": "cultura",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-29T11:39:37+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 2,
+   "immagine": "libri",
+   "fonti": [
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/libro-giovanni-ambrusco-viaggio-poetico/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il 13 novembre esce «L'universo nei tuoi occhi», la raccolta di poesie di Giovanni Ambrusco, pubblicata da Gruppo Albatros Il Filo: un libro di 80 pagine dedicato all'amore. Ambrusco è nato a Benevento nel 1976, fa il commercialista da più di vent'anni e scrive poesie da quando era ragazzo, insieme alla passione per la psicologia e la filosofia.",
+      "fonti": [
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Le poesie raccontano un amore che resiste alla distanza e al tempo, tra passione, nostalgia e ricerca di sé. Le immagini vengono dalla natura: il mare per l'inquietudine, il fuoco per la passione, la notte per l'attesa, la tempesta per il conflitto dentro di sé. Gli occhi della persona amata sono il punto da cui tutto parte e a cui tutto torna.",
+      "fonti": [
+       "Cronache del Sannio"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Se e dove ci sarà una presentazione del libro nel Sannio."
+    ],
+    "fonti": [
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "“L’universo nei tuoi occhi”, il viaggio poetico di Giovanni Ambrusco tra amore, memoria e desiderio",
+      "url": "https://www.cronachedelsannio.it/sannionews24/libro-giovanni-ambrusco-viaggio-poetico/",
+      "data": "29 ott, 11:39"
+     }
+    ]
+   },
+   "zona": "benevento",
+   "foto": "libri-2"
+  },
   {
    "id": "torrecuso-crescere-nei-piccoli-comuni-21mila-euro-famiglie",
    "titolo": "Torrecuso, 21mila euro dal bando «Crescere nei piccoli comuni» per servizi a famiglie e ragazzi",
