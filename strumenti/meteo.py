@@ -43,18 +43,23 @@ PIOGGIA_ORA = 0.1    # mm in un'ora per dire «piove» per un modello
 PIOGGIA_GIORNO = 1.0  # mm in un giorno
 
 
-def scarica(url, tentativi=3):
+PAZIENZA = {"tentativi": 3, "secondi": 40}   # per i paesi meno (paesi()): un giro lento non deve fermare la pubblicazione
+
+
+def scarica(url, tentativi=None):
+    tentativi = tentativi or PAZIENZA["tentativi"]
     for i in range(tentativi):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": "notizie-benevento meteo (github.com/ernbale)"})
-            with urllib.request.urlopen(req, timeout=40) as r:
+            with urllib.request.urlopen(req, timeout=PAZIENZA["secondi"]) as r:
                 d = json.load(r)
             if d.get("error"):
                 raise RuntimeError(d.get("reason"))
             return d
         except Exception as e:
             print(f"tentativo {i + 1}: {e}", file=sys.stderr)
-            time.sleep(5 * (i + 1))
+            if i + 1 < tentativi:
+                time.sleep(5 * (i + 1))
     raise RuntimeError("dati non disponibili: " + url.split("?")[0])
 
 
@@ -450,16 +455,22 @@ def paesi(cartella, quanti, ogni_ore):
     vecchi = sorted((k for k, t in eta.items() if t is None or adesso - t > dt.timedelta(hours=ogni_ore)),
                     key=lambda k: eta[k].timestamp() if eta[k] else 0)
     senza = sum(1 for t in eta.values() if t is None)
-    if senza > 40:   # la prima volta (o il sito senza i file): tutti, una volta sola
-        quanti = len(vecchi)
-    fatti = []
+    if senza > 40:   # la prima volta (o il sito senza i file): il doppio, finché ci sono tutti
+        quanti *= 2
+    PAZIENZA.update(tentativi=2, secondi=20)
+    fatti, di_fila = [], 0
     for k in vecchi[:quanti]:
         try:
             scrivi(os.path.join(cartella, k + ".json"),
                    previsioni({"nome": coord[k]["nome"], "lat": coord[k]["lat"], "lon": coord[k]["lon"]}))
             fatti.append(coord[k]["nome"])
+            di_fila = 0
         except Exception as e:
             print(f"AVVISO: meteo di {coord[k]['nome']} non aggiornato ({type(e).__name__}: {e})", file=sys.stderr)
+            di_fila += 1
+            if di_fila >= 2:   # Open-Meteo non risponde (29 ott 2026 da GitHub): si riprova al giro dopo
+                print("AVVISO: Open-Meteo non risponde, i paesi si riprendono al prossimo giro", file=sys.stderr)
+                break
     print(f"meteo dei paesi: aggiornati {len(fatti)} ({', '.join(fatti) or 'nessuno'}); da aggiornare ancora "
           f"{max(0, len(vecchi) - quanti)}; senza file prima del giro {senza}")
 
