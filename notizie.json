@@ -1,7 +1,117 @@
 {
- "aggiornato": "2026-10-29T20:12+01:00",
+ "aggiornato": "2026-10-29T21:11+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "colle-sannita-progetto-sss-questura-defibrillatore-scuola",
+   "titolo": "Colle Sannita, la Questura porta un defibrillatore all'istituto comprensivo: al via il progetto «Sicurezza, Scuola, Sanità»",
+   "titolo_google": "Colle Sannita, defibrillatore a scuola dalla Questura",
+   "sintesi": "A Colle Sannita la Questura di Benevento ha presentato il progetto «Sicurezza, Scuola, Sanità» e ha consegnato un defibrillatore all'istituto comprensivo. Seguiranno lezioni sulla legalità nelle scuole e corsi per usare il defibrillatore.",
+   "categoria": "altro",
+   "immagine": "scuola",
+   "luogo": "Colle Sannita, sala polifunzionale",
+   "pubblicato": "2026-10-29",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "fonti": [
+    {
+     "nome": "Questura di Benevento",
+     "url": "https://questure.poliziadistato.it/it/Benevento/articolo/11326ae39ec41aeeb729886794",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Giovedì 29 ottobre, nella sala polifunzionale di Colle Sannita, la Questura di Benevento ha presentato il progetto «S.S.S. - Sicurezza, Scuola, Sanità» e ha consegnato un defibrillatore all'Istituto comprensivo di Colle Sannita, la scuola che ha plessi anche a Circello, Castelpagano e Castelvetere in Val Fortore. Il defibrillatore è l'apparecchio che con una scossa può far ripartire il cuore in caso di arresto cardiaco.",
+      "fonti": [
+       "Questura di Benevento"
+      ]
+     },
+     {
+      "testo": "C'erano il questore Giovanni Leuci, la dirigente scolastica dell'istituto Rosa Tangredi, il cardiologo Giuseppe della Ratta e rappresentanti dei Comuni di Colle Sannita, Circello, Castelpagano e Castelvetere in Val Fortore. Il progetto nasce da un protocollo firmato dalla Questura, dall'Ufficio scolastico della provincia di Benevento e dallo stesso cardiologo.",
+      "fonti": [
+       "Questura di Benevento"
+      ]
+     },
+     {
+      "testo": "Nelle fasi successive rappresentanti della Questura terranno lezioni sulla legalità nelle scuole dell'istituto: rispetto delle regole, cittadinanza attiva, convivenza civile, responsabilità. Ci saranno anche corsi ufficiali BLSD, quelli che insegnano il primo soccorso e l'uso del defibrillatore, con istruttori certificati.",
+      "fonti": [
+       "Questura di Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando cominciano le lezioni e i corsi di primo soccorso"
+    ],
+    "fonti": [
+     {
+      "nome": "Questura di Benevento",
+      "titolo": "Progetto \"S.S.S. - Sicurezza, Scuola, Sanità\"",
+      "url": "https://questure.poliziadistato.it/it/Benevento/articolo/11326ae39ec41aeeb729886794",
+      "data": "29 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "zona": "fortore",
+   "foto": "scuola-10"
+  },
+  {
+   "id": "benevento-via-nicola-calandra-posti-auto-residenti",
+   "titolo": "Benevento, in via Nicola Calandra posti auto riservati ai residenti",
+   "titolo_google": "Via Nicola Calandra a Benevento, posti auto per i residenti",
+   "sintesi": "Il Comune di Benevento riserva ai residenti e ai domiciliati di via Nicola Calandra gli spazi di sosta di un tratto della strada, verso via Nicola Sala. Possono parcheggiare solo le auto autorizzate dal Servizio Traffico.",
+   "categoria": "strade",
+   "luogo": "Benevento, via Nicola Calandra",
+   "pubblicato": "2026-10-29",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "Comune di Benevento",
+     "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80199",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "In via Nicola Calandra, a Benevento, una parte dei posti auto diventa riservata a chi ci abita. Lo ha deciso il Servizio Traffico del Comune con l'ordinanza numero 457 del 29 ottobre.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "Il tratto è quello tra l'incrocio all'altezza del civico 7 e il semaforo vicino all'incrocio con via Nicola Sala e piazzale Carducci, sul lato destro per chi va verso via Nicola Sala. Lì possono sostare solo i residenti e i domiciliati di via Calandra autorizzati con un provvedimento apposito del Servizio Traffico e Segnaletica del Comune.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Da quando valgono i posti riservati e come si chiede l'autorizzazione"
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Benevento",
+      "titolo": "ISTITUZIONE IN VIA NICOLA CALANDRA (nel solo tratto compreso tra l'incrocio con il civico 7 e l'intersezione semaforica limitrofa all'incrocio con Via Nicola Sala e Piazzale Carducci, sul lato destro della carreggiata nel senso di marcia in direzione di Via Nicola Sala) DI SPAZI RISERVATI ALLA SOSTA",
+      "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80199",
+      "data": "29 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "zona": "benevento"
+  },
   {
    "id": "benevento-incidente-svincolo-pietrelcina-via-valfortore",
    "titolo": "Benevento, scontro tra due auto allo svincolo per Pietrelcina in via Valfortore: nessun ferito, code",
@@ -53,61 +163,6 @@
       "titolo": "Violento impatto all’ingresso della tangenziale",
       "url": "https://www.anteprima24.it/benevento/violento-impatto-ingresso-tangenziale/",
       "data": "29 ott, 19:33"
-     }
-    ]
-   },
-   "zona": "benevento"
-  },
-  {
-   "id": "benevento-giudice-maria-ilaria-romano-csm",
-   "titolo": "Benevento, la giudice Maria Ilaria Romano del Tribunale sannita eletta al Consiglio superiore della magistratura",
-   "titolo_google": "Maria Ilaria Romano, giudice di Benevento eletta al Csm",
-   "sintesi": "Maria Ilaria Romano, 56 anni, giudice del Tribunale di Benevento, è stata eletta tra i venti magistrati del Consiglio superiore della magistratura, con 365 voti, per Magistratura indipendente. Prima di lei un solo altro magistrato beneventano, Giuseppe Maria Berruti, era entrato nel Csm.",
-   "categoria": "altro",
-   "luogo": "Benevento, Tribunale",
-   "pubblicato": "2026-10-29T19:24+01:00",
-   "stato": "una_fonte",
-   "rilevante": false,
-   "importanza": 2,
-   "fonti": [
-    {
-     "nome": "Il Mattino",
-     "url": "https://www.ilmattino.it/benevento/benevento_csm_tribunale_benevento_magistrato_romani_consiglio_superiore_magistratura_ultime_notizie_oggi-9856809.html"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Maria Ilaria Romano, 56 anni, giudice in servizio al Tribunale di Benevento, è entrata nel Consiglio superiore della magistratura, l'organo che decide su nomine, trasferimenti e procedimenti disciplinari dei magistrati. È stata eletta con 365 voti tra i venti componenti magistrati («togati»), come esponente di Magistratura indipendente, una delle correnti dei giudici.",
-      "fonti": [
-       "Il Mattino"
-      ]
-     },
-     {
-      "testo": "Ha cominciato la carriera proprio al Tribunale di Benevento come giudice del lavoro; poi è stata giudice civile a Guardia Sanframondi, giudice civile a Benevento e all'ufficio del giudice per le indagini preliminari. Dopo un periodo alla prima sezione civile del Tribunale di Napoli è tornata a Benevento come presidente della prima sezione civile.",
-      "fonti": [
-       "Il Mattino"
-      ]
-     },
-     {
-      "testo": "È figlia di un magistrato scomparso. Prima di lei un solo altro magistrato beneventano, Giuseppe Maria Berruti, che però lavorava a Roma, aveva fatto parte del Csm.",
-      "fonti": [
-       "Il Mattino"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Chi prenderà il suo posto alla prima sezione civile del Tribunale di Benevento."
-    ],
-    "fonti": [
-     {
-      "nome": "Il Mattino",
-      "titolo": "Benevento, il magistrato Romano nominato nel Csm",
-      "url": "https://www.ilmattino.it/benevento/benevento_csm_tribunale_benevento_magistrato_romani_consiglio_superiore_magistratura_ultime_notizie_oggi-9856809.html",
-      "data": "29 ott, 19:24"
      }
     ]
    },
@@ -1574,13 +1629,17 @@
    "zona": "benevento",
    "immagine": "tribunale",
    "pubblicato": "2026-10-29T14:56+01:00",
-   "stato": "una_fonte",
+   "stato": "confermata",
    "rilevante": false,
    "importanza": 2,
    "fonti": [
     {
      "nome": "Ottopagine",
      "url": "https://www.ottopagine.it/bn/cronaca/442511/il-giudice-maria-ilaria-romano-componente-consiglio-superiore-della-magistratura.shtml"
+    },
+    {
+     "nome": "Il Mattino",
+     "url": "https://www.ilmattino.it/benevento/benevento_csm_tribunale_benevento_magistrato_romani_consiglio_superiore_magistratura_ultime_notizie_oggi-9856809.html"
     }
    ],
    "articolo": {
@@ -1588,24 +1647,43 @@
      {
       "testo": "Maria Ilaria Romano, giudice del Tribunale di Benevento, è stata eletta nel Consiglio superiore della magistratura (Csm), l'organo che decide su nomine, trasferimenti e disciplina dei magistrati. L'esito del voto è arrivato giovedì 29 ottobre. È il secondo magistrato sannita al Csm, dopo Giuseppe Maria Berruti, ma la prima in assoluto che viene dal Tribunale di Benevento.",
       "fonti": [
-       "Ottopagine"
-      ]
+       "Ottopagine",
+       "Il Mattino"
+      ],
+      "giorno": "2026-10-29"
+     },
+     {
+      "testo": "È stata eletta con 365 voti tra i venti componenti magistrati del Consiglio, quelli che i giudici scelgono tra loro («togati»).",
+      "fonti": [
+       "Il Mattino"
+      ],
+      "giorno": "2026-10-29"
      },
      {
       "testo": "Era candidata tra i giudici di merito nel collegio che comprende i distretti di corte d'appello di Napoli, Salerno, Ancona, L'Aquila, Campobasso, Cagliari e Bologna. È stata eletta anche se a livello nazionale la sua corrente, Magistratura indipendente, di cui è segretaria nel distretto di Napoli, non è andata bene, a differenza delle correnti progressiste Area e Magistratura democratica.",
       "fonti": [
        "Ottopagine"
-      ]
+      ],
+      "giorno": "2026-10-29"
      },
      {
       "testo": "Beneventana, 56 anni, in magistratura da circa trenta, ha cominciato a Benevento come giudice del lavoro, poi è stata giudice civile a Guardia Sanframondi, dove ha diretto anche la sezione distaccata. A Benevento si è occupata di famiglia, cause agrarie e contratti, poi del dibattimento penale, anche come presidente di collegio, e ha coordinato per un anno l'ufficio dei Gip e dei Gup. Dopo tre anni alla Corte d'appello di Napoli e un periodo al Tribunale di Napoli, nel 2024 è tornata a Benevento come presidente della prima sezione civile.",
       "fonti": [
        "Ottopagine"
-      ]
+      ],
+      "giorno": "2026-10-29"
      }
     ],
     "cronologia": [],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "L'elezione al Csm, l'età (56 anni), la carriera cominciata a Benevento come giudice del lavoro e poi a Guardia Sanframondi, e Giuseppe Maria Berruti come unico magistrato sannita al Csm prima di lei",
+      "fonti": [
+       "Ottopagine",
+       "Il Mattino"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [],
     "fonti": [
@@ -1614,6 +1692,12 @@
       "titolo": "Il giudice Maria Ilaria Romano componente Consiglio superiore della magistratura",
       "url": "https://www.ottopagine.it/bn/cronaca/442511/il-giudice-maria-ilaria-romano-componente-consiglio-superiore-della-magistratura.shtml",
       "data": "29 ott, 14:56"
+     },
+     {
+      "nome": "Il Mattino",
+      "titolo": "Benevento, il magistrato Romano nominato nel Csm",
+      "url": "https://www.ilmattino.it/benevento/benevento_csm_tribunale_benevento_magistrato_romani_consiglio_superiore_magistratura_ultime_notizie_oggi-9856809.html",
+      "data": "29 ott, 19:24"
      }
     ]
    },
@@ -1837,6 +1921,10 @@
     {
      "nome": "Ottopagine",
      "url": "https://www.ottopagine.it/bn/politica/442536/edilizia-popolare-ok-in-giunta-al-progetto-per-via-torino-da-5-milioni-di-euro.shtml"
+    },
+    {
+     "nome": "Benevento Giornale",
+     "url": "https://www.beneventogiornale.com/2026/10/29/edilizia-popolare-ok-in-giunta-al-progetto-per-via-torino-da-5-milioni-di-euro/"
     }
    ],
    "articolo": {
@@ -1852,7 +1940,8 @@
        "InfoSannio",
        "TV7 Benevento",
        "Gazzetta di Benevento",
-       "Ottopagine"
+       "Ottopagine",
+       "Benevento Giornale"
       ],
       "giorno": "2026-10-29"
      },
@@ -1968,6 +2057,12 @@
       "titolo": "Edilizia popolare: ok in Giunta al progetto per via Torino da 5 milioni di euro",
       "url": "https://www.ottopagine.it/bn/politica/442536/edilizia-popolare-ok-in-giunta-al-progetto-per-via-torino-da-5-milioni-di-euro.shtml",
       "data": "29 ott, 17:33"
+     },
+     {
+      "nome": "Benevento Giornale",
+      "titolo": "Edilizia popolare, ok in Giunta al progetto per via Torino da 5 milioni di euro",
+      "url": "https://www.beneventogiornale.com/2026/10/29/edilizia-popolare-ok-in-giunta-al-progetto-per-via-torino-da-5-milioni-di-euro/",
+      "data": "29 ott, 20:14"
      }
     ]
    },
@@ -5466,27 +5561,34 @@
     {
      "nome": "InfoSannio",
      "url": "https://www.infosannionews.it/universita/2026/la-rete-delle-scuole-campane-celebra-la-prima-edizione-del-festival-del-made-in-italy-al-teatro-romano.html"
+    },
+    {
+     "nome": "Benevento Giornale",
+     "url": "https://www.beneventogiornale.com/2026/10/29/trionfo-di-stile-arte-e-cooperazione-al-teatro-romano-di-benevento-la-rete-delle-scuole-campane-celebra-la-prima-edizione-del-festival-del-made-in-italy/"
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Al Teatro Romano di Benevento si è svolta la prima edizione del «Festival del Made in Italy – Notte della Moda»: in passerella sono sfilati gli abiti creati dalle studentesse e dagli studenti degli istituti professionali e artistici di moda della Campania. A promuoverlo è stato l'istituto superiore «Alessandro Lombardi» di Airola, capofila di una rete di scuole.",
+      "testo": "Al Teatro Romano di Benevento si è svolta la prima edizione del «Festival del Made in Italy – Notte della Moda»: in passerella sono sfilati gli abiti creati dalle studentesse e dagli studenti degli istituti professionali e artistici di moda della Campania. A promuoverlo è stato l'istituto superiore «Alessandro Lombardi» di Airola, capofila di una rete di scuole. L'ha ideata la dirigente del Lombardi, Maria Pirozzi.",
       "fonti": [
        "NTR24",
-       "InfoSannio"
+       "InfoSannio",
+       "Benevento Giornale"
       ]
      },
      {
-      "testo": "Gli abiti richiamavano i luoghi della regione: il mare e la Costiera, le vigne dell'Irpinia, la Reggia di Caserta e i monumenti di Airola, Napoli e il Vesuvio. La serata l'ha presentata una docente con l'abito della janara cucito dalle studentesse dell'istituto Lombardi, e la musica dal vivo l'ha suonata l'ensemble del liceo musicale della stessa scuola.",
+      "testo": "Gli abiti richiamavano i luoghi della regione: il mare e la Costiera, le vigne dell'Irpinia, la Reggia di Caserta e i monumenti di Airola, Napoli e il Vesuvio. La serata l'ha presentata la docente Sonia Reale, con l'abito della janara cucito dalle studentesse dell'istituto Lombardi, e la musica dal vivo l'ha suonata l'ensemble del liceo musicale della stessa scuola.",
       "fonti": [
-       "NTR24"
+       "NTR24",
+       "Benevento Giornale"
       ]
      },
      {
       "testo": "Con l'istituto di Airola hanno partecipato le scuole di Afragola, Arzano, Benevento (l'istituto Palmieri Rampone Polo), Cerreto Sannita (il Carafa Giustiniani), Pomigliano d'Arco e Saviano. Tra gli ospiti c'erano la prefetta di Benevento Raffaela Moscarella, la dirigente dell'Ufficio scolastico provinciale e il consigliere comunale di Benevento delegato all'Istruzione.",
       "fonti": [
-       "NTR24"
+       "NTR24",
+       "Benevento Giornale"
       ]
      }
     ],
@@ -5514,6 +5616,12 @@
       "titolo": "La rete delle scuole campane celebra la prima edizione del ‘Festival del Made in Italy’ al Teatro Romano",
       "url": "https://www.infosannionews.it/universita/2026/la-rete-delle-scuole-campane-celebra-la-prima-edizione-del-festival-del-made-in-italy-al-teatro-romano.html",
       "data": "28 ott, 09:03"
+     },
+     {
+      "nome": "Benevento Giornale",
+      "titolo": "Trionfo di stile, arte e cooperazione al Teatro Romano di Benevento: la rete delle scuole campane celebra la prima edizione del “Festival del Made in Italy”",
+      "url": "https://www.beneventogiornale.com/2026/10/29/trionfo-di-stile-arte-e-cooperazione-al-teatro-romano-di-benevento-la-rete-delle-scuole-campane-celebra-la-prima-edizione-del-festival-del-made-in-italy/",
+      "data": "29 ott, 20:12"
      }
     ]
    },

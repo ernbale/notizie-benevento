@@ -1,6 +1,7 @@
 {
  "nota": "Notizie unite in un'altra perché raccontavano lo stesso fatto: il vecchio indirizzo porta a quella rimasta (lo fa strumenti/pagine.py). Questi id non si riusano.",
  "notizie": {
-  "appia-hashish-marijuana-acerra-due-arresti": "droga-montesarchio-due-arresti"
+  "appia-hashish-marijuana-acerra-due-arresti": "droga-montesarchio-due-arresti",
+  "benevento-giudice-maria-ilaria-romano-csm": "benevento-giudice-maria-ilaria-romano-eletta-csm"
  }
 }
