@@ -1,7 +1,117 @@
 {
- "aggiornato": "2026-10-29T13:34+01:00",
+ "aggiornato": "2026-10-29T14:19+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "arpaise-censimento-istat-lettere-in-ritardo",
+   "titolo": "Arpaise, censimento Istat: le lettere con le credenziali arrivano in ritardo, come rispondere lo stesso",
+   "titolo_google": "Censimento Istat ad Arpaise: lettere in ritardo, come fare",
+   "sintesi": "Il Comune di Arpaise avvisa che le lettere dell'Istat per il censimento della popolazione arrivano in ritardo per problemi del corriere. Chi è nel campione può già compilare il questionario online con SPID o CIE, oppure chiamare il Centro comunale allo 0824 46025.",
+   "categoria": "avvisi",
+   "luogo": "Arpaise",
+   "pubblicato": "2026-10-29",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "Comune di Arpaise",
+     "url": "https://comune.arpaise.bn.it/novita/istat-censimento-in-ritardo-la-consegna-delle-lettere/",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Ad Arpaise le lettere dell'Istat per il censimento permanente della popolazione 2026 stanno arrivando in ritardo in molte case, per rallentamenti del corriere incaricato dall'Istat. Lo avvisa l'Ufficio demografico del Comune. Il censimento riguarda solo un campione di famiglie, e per chi è stato scelto rispondere è obbligatorio per legge.",
+      "fonti": [
+       "Comune di Arpaise"
+      ]
+     },
+     {
+      "testo": "Per sapere se si è nel campione si può chiamare il numero unico dell'Istat 1510, dal lunedì al sabato dalle 9 alle 21, oppure guardare la propria PEC o l'App IO.",
+      "fonti": [
+       "Comune di Arpaise"
+      ]
+     },
+     {
+      "testo": "Senza aspettare la lettera, il questionario si può già compilare online su raccoltadati.istat.it/questionario, entrando con CIE o SPID; alla fine si scarica la ricevuta. In alternativa si può andare o telefonare al Centro comunale di rilevazione, allo 0824 46025 in orario di ufficio, chiedendo degli addetti al censimento.",
+      "fonti": [
+       "Comune di Arpaise"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Fino a quando si può compilare il questionario: l'avviso non lo dice."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Arpaise",
+      "titolo": "Istat. Censimento in ritardo la consegna delle lettere",
+      "url": "https://comune.arpaise.bn.it/novita/istat-censimento-in-ritardo-la-consegna-delle-lettere/",
+      "data": "29 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "zona": "provincia"
+  },
+  {
+   "id": "morcone-divieto-sosta-cimitero-1-2-novembre-2026",
+   "titolo": "Morcone, divieto di sosta in via degli Alifani verso il cimitero il 1° e il 2 novembre",
+   "titolo_google": "Morcone, divieto di sosta al cimitero il 1° e 2 novembre",
+   "sintesi": "Per Ognissanti e la Commemorazione dei Defunti a Morcone non si può parcheggiare in via degli Alifani, la strada che porta al cimitero, domenica 1° e lunedì 2 novembre dalle 8 alle 19.",
+   "categoria": "strade",
+   "luogo": "Morcone, via degli Alifani",
+   "immagine": "cimitero",
+   "pubblicato": "2026-10-29",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "in_vigore_dal": "2026-11-01",
+   "in_vigore_fino": "2026-11-02",
+   "fonti": [
+    {
+     "nome": "Comune di Morcone",
+     "url": "https://comune.morcone.bn.it/albo-pretorio/?dettaglio_id=306437",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Morcone, per Ognissanti e la Commemorazione dei Defunti, in via degli Alifani, la strada che porta al cimitero, non si potrà parcheggiare. Lo ha deciso il Comune con l'ordinanza numero 64 del 29 ottobre, firmata dal responsabile del Settore Tecnico e Vigilanza, Vito Di Mella, perché in quei giorni si aspettano molte auto dirette al cimitero.",
+      "fonti": [
+       "Comune di Morcone"
+      ]
+     },
+     {
+      "testo": "Il divieto vale domenica 1° e lunedì 2 novembre, dalle 8 alle 19, per ogni tipo di veicolo. Andando verso il cimitero, nel primo tratto della strada non si parcheggia sul lato destro, nel secondo tratto sul lato sinistro. I cartelli li mettono gli operai del Comune e a controllare è la Polizia Municipale; chi non rispetta il divieto rischia la multa prevista dalla legge.",
+      "fonti": [
+       "Comune di Morcone"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di Morcone",
+      "titolo": "Regolamentazione della sosta in occasione del 1 e 2 Novembre 2026.",
+      "url": "https://comune.morcone.bn.it/albo-pretorio/?dettaglio_id=306437",
+      "data": "29 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "zona": "fortore",
+   "foto": "cimitero-3"
+  },
   {
    "id": "benevento-via-torino-23-alloggi-popolari-progetto-5-milioni-giunta",
    "titolo": "Benevento, case popolari in via Torino: la Giunta approva il progetto da 5 milioni per 23 alloggi",
@@ -20,8 +130,16 @@
    "fonti": [
     {
      "nome": "Comune di Benevento",
-     "url": "https://comune.benevento.it/novita/",
+     "url": "https://comune.benevento.it/novita/edilizia-popolare-ok-in-giunta-al-progetto-per-via-torino-da-5-milioni-di-euro/",
      "ufficiale": true
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/29/benevento-via-torino-approvato-il-progetto-da-5-milioni-per-realizzare-23-alloggi/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/edilizia-popolare-ok-in-giunta-al-progetto-per-via-torino-da-5-milioni-di-euro/"
     }
    ],
    "articolo": {
@@ -29,39 +147,72 @@
      {
       "testo": "La Giunta comunale di Benevento, presieduta dal sindaco Clemente Mastella, ha approvato giovedì mattina, 29 ottobre, il progetto di fattibilità tecnico-economica (il primo livello di progettazione) per recuperare l'immobile di via Torino. L'intervento rientra nella rigenerazione urbana e riguarda l'edilizia residenziale pubblica, cioè le case popolari.",
       "fonti": [
-       "Comune di Benevento"
-      ]
+       "Comune di Benevento",
+       "NTR24",
+       "Anteprima24"
+      ],
+      "giorno": "2026-10-29"
      },
      {
       "testo": "Il progetto vale 5 milioni di euro, che secondo il Comune sono già finanziati. Prevede 23 alloggi distribuiti su due piani: 13 al piano terra e 10 al primo piano. Gli appartamenti avranno metrature diverse, pensate per famiglie di vario tipo.",
       "fonti": [
-       "Comune di Benevento"
-      ]
+       "Comune di Benevento",
+       "NTR24",
+       "Anteprima24"
+      ],
+      "giorno": "2026-10-29"
      },
      {
       "testo": "Il sindaco e l'assessora alle Politiche abitative, Molly Chiusolo, spiegano che il nuovo edificio sarà a zero impatto energetico, avrà spazi sociali per stare insieme, aree esterne in gran parte verdi e sarà completamente accessibile.",
       "fonti": [
-       "Comune di Benevento"
-      ]
+       "Comune di Benevento",
+       "NTR24",
+       "Anteprima24"
+      ],
+      "giorno": "2026-10-29"
      },
      {
       "testo": "Mastella e Chiusolo ricordano anche gli altri interventi del Comune sulle case popolari: i venti alloggi che nasceranno nell'ex scuola San Modesto, al Rione Libertà, e la riqualificazione degli 82 alloggi di via Nuzzolo, al rione Ferrovia. Secondo il sindaco e l'assessora, in un momento di «disagio abitativo crescente» l'intervento di via Torino «rappresenta un tassello importante di rigenerazione urbana e welfare abitativo».",
       "fonti": [
-       "Comune di Benevento"
-      ]
+       "Comune di Benevento",
+       "NTR24",
+       "Anteprima24"
+      ],
+      "giorno": "2026-10-29"
      }
     ],
     "cronologia": [],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "Il progetto da 5 milioni di euro per 23 alloggi in via Torino, approvato dalla Giunta giovedì mattina",
+      "fonti": [
+       "Comune di Benevento",
+       "NTR24",
+       "Anteprima24"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [],
     "fonti": [
      {
       "nome": "Comune di Benevento",
       "titolo": "Edilizia popolare, ok in Giunta al progetto per via Torino da 5 milioni di euro",
-      "url": "https://comune.benevento.it/novita/",
+      "url": "https://comune.benevento.it/novita/edilizia-popolare-ok-in-giunta-al-progetto-per-via-torino-da-5-milioni-di-euro/",
       "data": "29 ott, 13:42",
       "ufficiale": true
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Benevento, via Torino: approvato il progetto da 5 milioni per realizzare 23 alloggi",
+      "url": "https://www.ntr24.tv/2026/10/29/benevento-via-torino-approvato-il-progetto-da-5-milioni-per-realizzare-23-alloggi/",
+      "data": "29 ott, 14:04"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Edilizia popolare, ok in Giunta al progetto per via Torino da 5 milioni di euro",
+      "url": "https://www.anteprima24.it/benevento/edilizia-popolare-ok-in-giunta-al-progetto-per-via-torino-da-5-milioni-di-euro/",
+      "data": "29 ott, 13:52"
      }
     ]
    },
@@ -2589,34 +2740,51 @@
      "nome": "Comune di Amorosi",
      "url": "https://comune.amorosi.bn.it/albo-pretorio/?dettaglio_id=306370",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di Arpaia",
+     "url": "https://www.comune.arpaia.bn.it/it/novita/page/avviso-pubblico-relativo-all-avvio-di-una-campagna-straordinaria-di-censimento-e-ricognizione-degli-impianti-di-distribuzione-carburanti-aventi-accessi-sulla-rete-viaria-provinciale",
+     "ufficiale": true
+    },
+    {
+     "nome": "Comune di Pietrelcina",
+     "url": "https://www.halleyweb.com/c062052/mc/mc_p_dettaglio.php?id_pubbl=14771",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "La Provincia di Benevento fa il censimento dei distributori di carburante che hanno un'entrata o un'uscita sulle strade provinciali o regionali di sua competenza. Chi ne ha uno, aperto al pubblico o a uso privato, deve mandare una dichiarazione entro 30 giorni dalla pubblicazione dell'avviso all'albo online della Provincia. L'avviso lo hanno ripreso anche i Comuni, tra cui Paduli e Amorosi.",
+      "testo": "La Provincia di Benevento fa il censimento dei distributori di carburante che hanno un'entrata o un'uscita sulle strade provinciali o regionali di sua competenza. Chi ne ha uno, aperto al pubblico o a uso privato, deve mandare una dichiarazione entro 30 giorni dalla pubblicazione dell'avviso all'albo online della Provincia. L'avviso lo hanno ripreso anche i Comuni, tra cui Paduli, Amorosi, Arpaia e Pietrelcina.",
       "fonti": [
        "Comune di Paduli",
-       "Comune di Amorosi"
-      ]
+       "Comune di Amorosi",
+       "Comune di Arpaia",
+       "Comune di Pietrelcina"
+      ],
+      "giorno": "2026-10-28"
      },
      {
-      "testo": "La dichiarazione la presentano i titolari delle autorizzazioni o delle concessioni, i gestori, i proprietari o i legali rappresentanti, sul modello allegato all'avviso. Si manda solo per PEC a protocollo.generale@pec.provincia.benevento.it.",
+      "testo": "La dichiarazione la presentano i titolari delle autorizzazioni o delle concessioni, i gestori, i proprietari o i legali rappresentanti, sul modello allegato all'avviso. Si manda solo per PEC a protocollo.generale@pec.provincia.benevento.it. Il modello si scarica dal sito della Provincia, alla pagina provincia.benevento.it/node/60392. Per informazioni si può chiamare il geometra Marcello Capobianco allo 0824 774335, al Settore Infrastrutture della Provincia, in via Giosuè Carducci a Benevento.",
       "fonti": [
-       "Comune di Paduli"
-      ]
+       "Comune di Paduli",
+       "Comune di Pietrelcina"
+      ],
+      "giorno": "2026-10-28"
      },
      {
       "testo": "Il motivo è il Canone unico patrimoniale, la tassa che si paga alla Provincia per gli accessi sulle sue strade, per i cartelli pubblicitari e per l'occupazione dello spazio. La Provincia è partita dall'elenco dei distributori attivi che le ha mandato l'Ufficio delle Dogane di Benevento. Vale anche per i tratti di strada provinciale che passano dentro i paesi sotto i 10.000 abitanti: anche lì il canone si paga alla Provincia.",
       "fonti": [
        "Comune di Paduli"
-      ]
+      ],
+      "giorno": "2026-10-28"
      },
      {
       "testo": "Finiti i 30 giorni, il Servizio Viabilità della Provincia farà controlli sulle carte e sopralluoghi. Per chi non manda la dichiarazione, non ha i permessi in regola o non ha pagato il canone possono partire i procedimenti previsti dalla legge. Il responsabile del procedimento è il geometra Marcello Capobianco della Provincia.",
       "fonti": [
        "Comune di Paduli"
-      ]
+      ],
+      "giorno": "2026-10-28"
      }
     ],
     "cronologia": [],
@@ -2638,6 +2806,20 @@
       "titolo": "AVVISO CAMPAGNA STRAORDINARIA DI CENSIMENTO E RICOGNIZIONE IMPIANTI DISTRIBUZIONE CARBURANTI AVENTI ACCESSO SULLA RETE VIARIA PROVINCIALE",
       "url": "https://comune.amorosi.bn.it/albo-pretorio/?dettaglio_id=306370",
       "data": "28 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "Comune di Arpaia",
+      "titolo": "Avviso pubblico relativo all’avvio di una campagna straordinaria di censimento e ricognizione degli impianti di distribuzione carburanti aventi accessi sulla rete viaria provinciale",
+      "url": "https://www.comune.arpaia.bn.it/it/novita/page/avviso-pubblico-relativo-all-avvio-di-una-campagna-straordinaria-di-censimento-e-ricognizione-degli-impianti-di-distribuzione-carburanti-aventi-accessi-sulla-rete-viaria-provinciale",
+      "data": "29 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "Comune di Pietrelcina",
+      "titolo": "Trasmissione dell’Avviso pubblico relativo all’avvio di una campagna straordinaria di censimento e ricognizione degli impianti di distribuzione carburanti aventi accessi sulla rete viaria provinciale",
+      "url": "https://www.halleyweb.com/c062052/mc/mc_p_dettaglio.php?id_pubbl=14771",
+      "data": "29 ott",
       "ufficiale": true
      }
     ]
