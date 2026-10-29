@@ -10,6 +10,12 @@ poi la seconda…), così se il budget finisce prima tutti i temi ne hanno avute
 
 Le versioni nuove sono la stessa scena del tema (o di una sua variante) con un'altra luce, un'altra stagione o
 un'altra inquadratura: la frase è scritta in temi.json, nella lista «varianti» (variante i = file <tema>-<i+2>.jpg).
+**Ogni foto di un tema deve andar bene per ogni notizia del tema** (29 ott 2026: il patentino dei droni al liceo uscito
+col cancello chiuso con la catena, una delle scene di «scuola»; lui: «raffina le regole per associazioni immagini»).
+Una scena che mostra una situazione precisa (chiuso, fermo, danneggiato) va in un tema suo, col campo «solo» (di che
+cosa deve parlare la notizia, lo controlla archivia.py): così sono nati scuola-chiusa, fabbrica-chiusa, terremoto-danni
+e linee-elettriche. Le foto spostate si copiano nel tema nuovo e nel vecchio vanno in «escluse»: i file restano (li
+usano le notizie vecchie e i post già usciti) ma non si scelgono più, non contano e la loro scena non si rifà.
 Le foto le fa OpenAI (gpt-image-2.5-sunburst, qualità media, 1536×1024, circa 1 centesimo l'una) con la chiave in
 ~/.config/openai/key, che non si stampa mai. Gira sul Mac, non su GitHub.
 
@@ -72,18 +78,21 @@ def piano(temi):
             lavoro.append((-1, 0, tema, 1, t["foto"]))
             continue
         ce = len(versioni(tema))
+        esc = set(t.get("escluse") or [])   # foto di un'altra scena, spostate in un tema loro: non contano e non si rifanno
+        buone = ce - len(esc)
         varianti = t.get("varianti") or []
         voglio = IN_TESTA if tema in TESTA else FREQUENTI if t.get("frequente") else MINIMO
         voglio = min(voglio, t.get("massimo", voglio))   # «massimo»: un tema di scorta (fast-food: lui, 28 ott 2026, «al massimo 4»)
-        if ce >= voglio:
+        if buone >= voglio:
             continue
         # le scene vere (la foto e le varianti scritte a mano, non quelle già «rifatte» con un modo), ognuna con un modo
         # che non ha ancora: prima un modo per tutte le scene, poi il successivo, così le scene si alternano
-        vere = [t["foto"]] + [v for v in varianti[:max(0, ce - 1)] if not any(m in v for m in MODI)]
+        vere = [t["foto"]] + [v for i, v in enumerate(varianti[:max(0, ce - 1)])
+                              if f"{tema}-{i + 2}" not in esc and not any(m in v for m in MODI)]
         gia = {t["foto"]} | set(varianti)
         nuove = [f"{sc.rstrip('.')}, {m}" for m in MODI for sc in vere if f"{sc.rstrip('.')}, {m}" not in gia]
         peso = 0 if tema in TESTA else 1 if t.get("frequente") else 2
-        for i in range(voglio - ce):
+        for i in range(voglio - buone):
             lavoro.append((i, peso, tema, ce + i + 1, nuove[i % len(nuove)]))
     return [x[2:] for x in sorted(lavoro, key=lambda x: (x[0], x[1], x[2]))]
 
@@ -135,6 +144,11 @@ def scarta(temi, nome):
                 usata.append(f)
     if ultima != nome and usata:
         raise SystemExit(f"{nome}: l'ultima versione {ultima} è usata in {', '.join(usata)}: non la sposto")
+    esc = temi[tema].get("escluse") or []
+    if ultima != nome and ultima in esc:
+        raise SystemExit(f"{nome}: l'ultima versione {ultima} è tra le «escluse» del tema: non la sposto")
+    if nome in esc:   # al suo posto va una foto buona (o non c'è più)
+        esc.remove(nome)
     var = temi[tema].setdefault("varianti", [])
     for suf in (".jpg", "-m.jpg"):
         if ultima == nome:

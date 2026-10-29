@@ -587,26 +587,39 @@ def temi_foto():
 
 
 def tema_sbagliato(n):
-    """Il motivo per cui il tema della notizia non va, dal campo «mai» di temi.json (lui, 28 ott 2026, sul McDonald's di
-    Telese con la foto di una trattoria: «precisione su tutto, regola da tenere sempre bene impressa»), o None."""
+    """Il motivo per cui il tema della notizia non va, o None. Dal campo «mai» di temi.json (lui, 28 ott 2026, sul
+    McDonald's di Telese con la foto di una trattoria: «precisione su tutto, regola da tenere sempre bene impressa») e dal
+    campo «solo», per i temi che mostrano una situazione precisa (29 ott 2026, il patentino dei droni al liceo uscito col
+    cancello di una scuola chiusa; lui: «raffina le regole per associazioni immagini»): «scuola-chiusa» solo se la notizia
+    parla di scuole chiuse."""
     try:
         t = json.load(open(os.path.join(CART_TEMI, "temi.json"), encoding="utf-8")).get(n.get("immagine") or "") or {}
     except Exception:
         return None
+    testo = f"{n.get('titolo', '')} {n.get('sintesi', '')}"
+    if t.get("solo") and not re.search(t["solo"], testo, re.I):
+        return f"la notizia non ne parla: è solo per {t.get('quando', '')}"
     if not t.get("mai"):
         return None
-    m = re.search(t["mai"], f"{n.get('titolo', '')} {n.get('sintesi', '')}", re.I)
+    m = re.search(t["mai"], testo, re.I)
     return f"«{m.group(0)}»: {t.get('quando', '')}" if m else None
 
 
 def versioni_foto(tema):
-    """Le versioni della foto di un tema: tema.jpg, tema-2.jpg, tema-3.jpg…"""
+    """Le versioni della foto di un tema: tema.jpg, tema-2.jpg, tema-3.jpg…, tranne le «escluse» in temi.json: foto
+    di un'altra scena, spostate in un tema loro (il cancello chiuso con la catena da «scuola» a «scuola-chiusa»). I file
+    restano, per le notizie vecchie e i post già usciti, ma non si scelgono più."""
+    try:
+        esc = set((json.load(open(os.path.join(CART_TEMI, "temi.json"), encoding="utf-8")).get(tema) or {})
+                  .get("escluse") or [])
+    except Exception:
+        esc = set()
     v = [tema] if os.path.exists(os.path.join(CART_TEMI, tema + ".jpg")) else []
     k = 2
     while os.path.exists(os.path.join(CART_TEMI, f"{tema}-{k}.jpg")):
         v.append(f"{tema}-{k}")
         k += 1
-    return v
+    return [x for x in v if x not in esc]
 
 
 def scegli_foto(notizie):

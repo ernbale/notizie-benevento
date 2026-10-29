@@ -640,6 +640,16 @@ sito; da allora valgono di nuovo le regole qui sotto e **la `scena` non si scriv
   «carta-spesa». Se nessun tema mostra la cosa giusta, **niente immagine**. Il campo `mai` di un tema dice per cosa
   non va: `archivia.py` lo controlla e dà errore. A ogni giro ricontrolla anche i temi delle notizie già in prima
   pagina.
+- **La foto non deve dire più della notizia** (lui, 29 ott 2026, sul patentino dei droni al liceo Alberti-Virgilio
+  uscito col cancello di una scuola chiusa: «immagine incongruente», «raffina le regole per associazioni immagini»).
+  Una foto che mostra una situazione precisa (chiuso, fermo, rotto, danneggiato, in crisi) si usa solo per quella
+  situazione; per tutto il resto il tema generico. Le coppie: una scuola chiusa (allerta, neve, ordinanza, guasto) è
+  «scuola-chiusa», tutto il resto della scuola (corsi, progetti, iscrizioni, lavori) è «scuola»; una fabbrica chiusa o
+  in crisi, licenziamenti e cassa integrazione sono «fabbrica-chiusa», un'azienda che apre o assume è «fabbrica» o
+  «imprese»; crepe e case inagibili sono «terremoto-danni», una scossa senza danni è «terremoto»; tralicci, cabine e
+  linee elettriche sono «linee-elettriche», le batterie sono «accumulo-energia»; un sit-in davanti a un ospedale o al
+  Comune è «protesta», non una fabbrica. Il campo `solo` di un tema dice di che cosa deve parlare la notizia per
+  usarlo: se il titolo e la sintesi non ne parlano, `archivia.py` dà errore.
 - Per ogni notizia scegli **il tema che corrisponde al fatto** e scrivilo nella notizia: `"immagine": "acqua"`. Se
   nessun tema va bene davvero, non mettere il campo: meglio niente che una foto che non c'entra.
 - **Mai sulla cronaca** (`"categoria": "cronaca"`, lo controlla `archivia.py`): arresti, incidenti, feriti, morti,

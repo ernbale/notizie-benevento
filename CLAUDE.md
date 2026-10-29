@@ -27,6 +27,9 @@ claude.ai/code dal telefono): qui c'è quello che serve per riprendere il lavoro
 - Routine cloud (claude.ai/code → Routine): «agente (ogni ora)», «giro lampo (chiusure e comunicati)» (lo avvia il Pi
   appena arriva un comunicato; ha anche lo strumento Agent per il revisore), «curiosità (rifornimento del lunedì)»,
   «contributi (ogni mattina)» alle 7:20 (CONTRIBUTI.md).
+- Le foto illustrative sono in `img/temi` (temi.json, strumenti/foto_temi.py): ogni foto di un tema deve andar bene
+  per ogni notizia del tema; una scena precisa (chiuso, fermo, danneggiato) ha un tema suo col campo `solo`, e le foto
+  tolte da un tema stanno in `escluse` (i file restano). La regola per l'agente è in AGENTE.md, «Precisione su tutto».
 - Ogni push su main fa partire la Action «Pubblica il sito» (`.github/workflows/pubblica.yml`): pagine, Telegram,
   Facebook, Instagram. Ci mette circa 2 minuti.
 

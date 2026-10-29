@@ -218,7 +218,7 @@
   ]
  },
  "scuola": {
-  "quando": "scuole chiuse, scuola, edifici scolastici, iscrizioni",
+  "quando": "scuola, edifici scolastici, iscrizioni, corsi e progetti nelle scuole (le scuole chiuse sono «scuola-chiusa»)",
   "foto": "an empty classroom with wooden desks, chairs and a blank green chalkboard, morning light",
   "varianti": [
    "school backpacks hanging on hooks in a school corridor",
@@ -244,6 +244,16 @@
    "a closed school gate with a chain on a rainy day, a view from above, in bright daylight",
    "an empty classroom with wooden desks, chairs and a blank green chalkboard, morning light, at dusk, seen from further away, with the first lights on",
    "a closed school gate with a chain on a rainy day, at dusk, seen from further away, with the first lights on"
+  ],
+  "escluse": [
+   "scuola-3",
+   "scuola-6",
+   "scuola-11",
+   "scuola-14",
+   "scuola-16",
+   "scuola-18",
+   "scuola-22",
+   "scuola-24"
   ]
  },
  "mensa": {
@@ -334,7 +344,7 @@
   "frequente": true
  },
  "terremoto": {
-  "quando": "terremoti, scosse, sciami sismici, esercitazioni sul terremoto",
+  "quando": "terremoti, scosse, sciami sismici, esercitazioni sul terremoto (crepe, case lesionate e inagibili sono «terremoto-danni»)",
   "foto": "close-up of a seismograph drum drawing a jagged seismic trace on paper",
   "varianti": [
    "cracks in the plaster wall of an old building",
@@ -353,7 +363,14 @@
    "close-up of a seismograph drum drawing a jagged seismic trace on paper, photographed from a low angle, at golden hour",
    "a screen with seismic waveforms in a monitoring room, photographed from a low angle, at golden hour"
   ],
-  "frequente": true
+  "frequente": true,
+  "escluse": [
+   "terremoto-2",
+   "terremoto-5",
+   "terremoto-8",
+   "terremoto-11",
+   "terremoto-13"
+  ]
  },
  "ospedale": {
   "quando": "ospedali, reparti, sanità, ASL (per i falsi SMS e le truffe a nome dell'ASL c'è «truffe»)",
@@ -588,7 +605,7 @@
   ]
  },
  "fabbrica": {
-  "quando": "aziende, fabbriche, licenziamenti, crisi aziendali, lavoro",
+  "quando": "aziende, fabbriche, stabilimenti, produzione, lavoro (fabbriche chiuse, crisi e licenziamenti sono «fabbrica-chiusa»)",
   "foto": "the exterior of a modern industrial building with closed loading doors, empty yard",
   "varianti": [
    "an empty production line inside a factory with the machines switched off",
@@ -607,7 +624,15 @@
    "the exterior of a modern industrial building with closed loading doors, empty yard, photographed from a low angle, at golden hour",
    "a closed factory gate with a chain at dusk, photographed from a low angle, at golden hour"
   ],
-  "frequente": true
+  "frequente": true,
+  "escluse": [
+   "fabbrica-3",
+   "fabbrica-6",
+   "fabbrica-9",
+   "fabbrica-12",
+   "fabbrica-14",
+   "fabbrica-16"
+  ]
  },
  "pasta": {
   "quando": "pastifici, industria alimentare",
@@ -1617,7 +1642,7 @@
   ]
  },
  "protesta": {
-  "quando": "proteste, presidi, sit-in, sindacati, scioperi",
+  "quando": "proteste, presidi, sit-in, sindacati, scioperi (i presidi davanti a una fabbrica in crisi sono «fabbrica-chiusa»)",
   "foto": "a megaphone and a rolled-up banner resting on the steps of a public building",
   "varianti": [
    "plain red flags without writing waving in front of a closed factory gate",
@@ -1636,7 +1661,14 @@
    "a megaphone and a rolled-up banner resting on the steps of a public building, photographed from a low angle, at golden hour",
    "blank protest placards leaning against the railings of a town square, photographed from a low angle, at golden hour"
   ],
-  "frequente": true
+  "frequente": true,
+  "escluse": [
+   "protesta-2",
+   "protesta-5",
+   "protesta-8",
+   "protesta-11",
+   "protesta-13"
+  ]
  },
  "anziani": {
   "quando": "anziani, pensionati, pensioni",
@@ -2948,7 +2980,7 @@
   ]
  },
  "accumulo-energia": {
-  "quando": "impianti di accumulo dell'energia (batterie), sottostazioni e linee elettriche, cabine elettriche",
+  "quando": "impianti di accumulo dell'energia (batterie) (elettrodotti, tralicci, sottostazioni e cabine sono «linee-elettriche»)",
   "foto": "rows of white battery storage containers in a fenced field in the countryside",
   "varianti": [
    "an electrical substation with transformers and insulators in the countryside",
@@ -2959,6 +2991,10 @@
    "rows of white battery storage containers in a fenced field in the countryside, a view from above, in bright daylight",
    "rows of white battery storage containers in a fenced field in the countryside, at dusk, seen from further away, with the first lights on",
    "rows of white battery storage containers in a fenced field in the countryside, after the rain, with wet reflective surfaces, seen at eye level"
+  ],
+  "escluse": [
+   "accumulo-energia-2",
+   "accumulo-energia-3"
   ]
  },
  "piazza": {
@@ -3040,5 +3076,55 @@
    "young staff in plain uniforms seen from behind preparing orders in the open kitchen of a fast food restaurant, no logos"
   ],
   "massimo": 4
+ },
+ "scuola-chiusa": {
+  "quando": "scuole chiuse: allerta meteo, neve, ordinanze dei sindaci, guasti, sanificazioni, scuole inagibili (per tutto il resto della scuola c'è «scuola»)",
+  "foto": "a closed school gate with a chain on a rainy day",
+  "varianti": [
+   "a closed school gate with a chain on a rainy day, a different composition with the subject off-center, in winter under a grey sky",
+   "a closed school gate with a chain on a rainy day, a close-up detail of the main subject, shallow depth of field",
+   "a closed school gate with a chain on a rainy day, a wider view that shows more of the surroundings, on an overcast day",
+   "a closed school gate with a chain on a rainy day, seen from a different side and a higher angle, in soft morning light",
+   "a closed school gate with a chain on a rainy day, photographed from a low angle, at golden hour",
+   "a closed school gate with a chain on a rainy day, a view from above, in bright daylight",
+   "a closed school gate with a chain on a rainy day, at dusk, seen from further away, with the first lights on"
+  ],
+  "solo": "chius|sospes|niente lezioni|stop alle lezioni|senza lezioni|allerta|\\bneve\\b|inagibil|sanificaz|disinfest|guasto|senza riscaldamento|evacuat|sgomberat"
+ },
+ "fabbrica-chiusa": {
+  "quando": "fabbriche chiuse o ferme, crisi aziendali, licenziamenti, cassa integrazione, presidi dei lavoratori davanti allo stabilimento (aziende che vanno bene: «fabbrica» o «imprese»)",
+  "foto": "a closed factory gate with a chain at dusk",
+  "varianti": [
+   "a closed factory gate with a chain at dusk, a different composition with the subject off-center, in winter under a grey sky",
+   "a closed factory gate with a chain at dusk, a close-up detail of the main subject, shallow depth of field",
+   "a closed factory gate with a chain at dusk, a wider view that shows more of the surroundings, on an overcast day",
+   "a closed factory gate with a chain at dusk, seen from a different side and a higher angle, in soft morning light",
+   "a closed factory gate with a chain at dusk, photographed from a low angle, at golden hour",
+   "plain red flags without writing waving in front of a closed factory gate",
+   "plain red flags without writing waving in front of a closed factory gate, photographed from a low angle, at golden hour",
+   "plain red flags without writing waving in front of a closed factory gate, a close-up detail of the main subject, shallow depth of field",
+   "plain red flags without writing waving in front of a closed factory gate, a wider view that shows more of the surroundings, on an overcast day",
+   "plain red flags without writing waving in front of a closed factory gate, seen from a different side and a higher angle, in soft morning light"
+  ],
+  "solo": "chius|crisi|licenzi|cassa integrazione|esuber|vertenz|presidi|sciopero|\\bferm[aoei]\\b|stop alla produzione|delocalizz|fallim|cessazione|tagli al personale|posti di lavoro a rischio"
+ },
+ "terremoto-danni": {
+  "quando": "danni del terremoto: crepe, case lesionate, edifici inagibili o puntellati, verifiche sui danni dopo una scossa (una scossa senza danni è «terremoto»)",
+  "foto": "cracks in the plaster wall of an old building",
+  "varianti": [
+   "cracks in the plaster wall of an old building, photographed from a low angle, at golden hour",
+   "cracks in the plaster wall of an old building, a close-up detail of the main subject, shallow depth of field",
+   "cracks in the plaster wall of an old building, a wider view that shows more of the surroundings, on an overcast day",
+   "cracks in the plaster wall of an old building, seen from a different side and a higher angle, in soft morning light"
+  ],
+  "solo": "dann|crep|lesion|inagibil|croll|puntell|sgomber|calcinacc|verifiche sugli edifici|sopralluog",
+  "mai": "nessun dann|senza dann|non (?:ha |hanno |ci sono stati |si segnalano |risultano )?(?:causato |provocato )?dann"
+ },
+ "linee-elettriche": {
+  "quando": "elettrodotti e linee dell'alta tensione, tralicci, sottostazioni e cabine elettriche, lavori sulla rete elettrica (gli impianti di batterie sono «accumulo-energia»)",
+  "foto": "an electrical substation with transformers and insulators in the countryside",
+  "varianti": [
+   "high-voltage power lines crossing green hills"
+  ]
  }
 }
