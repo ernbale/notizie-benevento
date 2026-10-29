@@ -2167,22 +2167,6 @@ def _luogo_link(luogo):
     return out
 
 
-def _allerta_comune(c, allerte, oggi):
-    """«Allerta meteo … zona «Alta Irpinia e Sannio»: oggi verde, domani gialla.» dal bollettino della Protezione civile."""
-    giorni = allerte.get("giorni") or {}
-    livelli, zona = [], None
-    for nome, d in (("oggi", oggi), ("domani", oggi + dt.timedelta(days=1))):
-        for z, x in ((giorni.get(d.isoformat()) or {}).get("zone") or {}).items():
-            if c in (x.get("comuni") or []):
-                zona = z
-                livelli.append(f"{nome} {x.get('livello') or 'verde'}")
-    if not zona:
-        return ""
-    bol = f" ({allerte['dpc_bollettino'][0].lower()}{allerte['dpc_bollettino'][1:]})" if allerte.get("dpc_bollettino") else ""
-    return (f'<p class="agg-chiusure">Allerta meteo della Protezione civile per la zona «{e(zona)}»: '
-            f'{e(", ".join(livelli))}{e(bol)}. <a href="/meteo.html">Le previsioni del tempo</a>.</p>')
-
-
 COND_METEO = {"sereno": "Sereno", "poco-nuvoloso": "Poco nuvoloso", "nuvoloso": "Nuvoloso", "coperto": "Coperto",
               "nebbia": "Nebbia", "possibili-piogge": "Possibili piogge", "pioggia-debole": "Pioggia debole",
               "pioggia": "Pioggia", "pioggia-forte": "Pioggia forte", "temporale": "Temporale", "neve": "Neve"}
@@ -2242,7 +2226,9 @@ def html_comune(c, notizie, eventi, allerte, stemma, oggi, distributori=0, farma
         h = h.replace(f"<h1>{e(titolo)}</h1>", f'<div class="testata-comune"><div><h1>{e(titolo)}</h1>{somm}</div>{fig}</div>')
     else:
         h += somm
-    lat = html_meteo_comune(c, meteo_c, allerte, oggi) + _allerta_comune(c, allerte, oggi) + farmacia
+    # l'allerta: solo da gialla in su, come in prima pagina, con la striscia in cima al meteo (html_meteo_comune); la
+    # riga «oggi verde» no (lui, 29 ott 2026: «quando è verde non mostrarla, da gialla in su e falla come la nostra home»)
+    lat = html_meteo_comune(c, meteo_c, allerte, oggi) + farmacia
     if distributori:
         quali = f"dei {distributori} distributori" if distributori > 1 else "del distributore"
         lat += (f'<h3 class="titolo-col">Carburanti</h3><p class="sezioni-link"><a href="/carburanti/#c-{slug(c)}">I prezzi '

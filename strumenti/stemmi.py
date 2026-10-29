@@ -71,6 +71,26 @@ def informazioni(nomi):
     return out
 
 
+def autore_dalla_pagina(titolo_file):
+    """L'autore scritto nella pagina del file su Commons («|artist = {{U|Vale93b}}», «|author = [[User:X|X]]»), quando
+    i metadati non lo danno: la licenza CC BY chiede di citarlo."""
+    d = chiedi("https://commons.wikimedia.org/w/api.php", action="query", prop="revisions", rvprop="content",
+               rvslots="main", titles="File:" + titolo_file, format="json", formatversion=2)
+    t = d["query"]["pages"][0].get("revisions", [{}])[0].get("slots", {}).get("main", {}).get("content", "")
+    m = re.search(r"\|\s*(?:artist|author|autore)\s*=[ \t]*([^\n]+)", t, re.I)
+    if not m or not m.group(1).strip(" |"):
+        if not re.search(r"\{\{\s*own", t, re.I):
+            return ""
+        # «opera propria» senza autore scritto: è chi ha caricato la prima versione
+        d = chiedi("https://commons.wikimedia.org/w/api.php", action="query", prop="imageinfo", iiprop="user",
+                   iilimit=50, titles="File:" + titolo_file, format="json", formatversion=2)
+        versioni = d["query"]["pages"][0].get("imageinfo") or []
+        return versioni[-1]["user"][:80] if versioni else ""
+    a = re.sub(r"\{\{\s*(?:U|User|Utente)\s*\|\s*([^}|]+)[^}]*\}\}", r"\1", m.group(1))
+    a = re.sub(r"\[\[[^|\]]*\|([^\]]+)\]\]", r"\1", a)
+    return re.sub(r"\{\{[^}]*\}\}|\[\[|\]\]", "", a).strip()[:80]
+
+
 def testo(m, k):
     return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", str((m.get(k) or {}).get("value") or ""))).strip()
 
@@ -107,7 +127,7 @@ def main():
         im.save(os.path.join(cartella, nome), optimize=True)
         dati[comune] = {"file": "/img/stemmi/" + nome, "larghezza": im.width, "altezza": im.height,
                         "pagina": ii.get("descriptionurl"), "licenza": testo(m, "LicenseShortName"),
-                        "url_licenza": testo(m, "LicenseUrl"), "autore": testo(m, "Artist")[:80]}
+                        "url_licenza": testo(m, "LicenseUrl"), "autore": testo(m, "Artist")[:80] or autore_dalla_pagina(f)}
     with open(os.path.join(cartella, "stemmi.json"), "w", encoding="utf-8") as fh:
         json.dump(dati, fh, ensure_ascii=False, indent=1)
         fh.write("\n")
