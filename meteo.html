@@ -406,6 +406,10 @@
   "use strict";
   var TZ = "Europe/Rome";
   var D = null, O = null, ORE = [], iAdesso = -1, oggi = "", selGiorno = 0, scheda = "panoramica", percepita = false;
+  // il meteo di un paese (lui, 29 ott 2026: «quando clicchi su previsioni del tempo si dovrebbe aprire la pagina meteo
+  // del paese»): meteo.html?paese=telese-terme legge meteo-paesi/telese-terme.json (strumenti/meteo.py --paesi, ogni 6
+  // ore) e le allerte da meteo.json, che sono di tutto il Sannio e si aggiornano ogni ora
+  var PAESE = ((location.search.match(/[?&]paese=([a-z0-9-]+)/) || [])[1] || "").replace(/^benevento$/, "");
   var NOMI_COND = {
     "sereno": "Sereno", "poco-nuvoloso": "Poco nuvoloso", "nuvoloso": "Nuvoloso", "coperto": "Coperto", "nebbia": "Nebbia",
     "possibili-piogge": "Possibili piogge", "pioggia-debole": "Pioggia debole", "pioggia": "Pioggia", "pioggia-forte": "Pioggia forte",
@@ -700,7 +704,8 @@
           var z = g.zone[zn];
           if (!z) return;
           var rischi = rischiZona(z);
-          var com = z.comuni.slice().sort(function (x, y) { return (y === "Benevento") - (x === "Benevento") || x.localeCompare(y, "it"); });
+          var primo = (D.luogo && D.luogo.nome) || "Benevento";
+          var com = z.comuni.slice().sort(function (x, y) { return (y === primo) - (x === primo) || x.localeCompare(y, "it"); });
           var primi = com.slice(0, 4).join(", ");
           h += '<li style="--c:' + COL_LIV[z.livello] + '"><b>' + esc(NOME_ZONA[zn] || zn) + "</b>: " + NOME_LIV[z.livello].toLowerCase() +
             (rischi.length ? " (" + rischi.join(", ") + ")" : "") +
@@ -1305,9 +1310,19 @@
   }
 
   document.getElementById("data").textContent = new Date().toLocaleDateString("it-IT", { timeZone: TZ, weekday: "long", day: "numeric", month: "long", year: "numeric" });
-  fetch("meteo.json?t=" + Date.now(), { cache: "no-store" })
-    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-    .then(function (j) {
+  var prendi = function (u) { return fetch(u + "?t=" + Date.now(), { cache: "no-store" }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }); };
+  Promise.all([prendi(PAESE ? "/meteo-paesi/" + PAESE + ".json" : "/meteo.json"), PAESE ? prendi("/meteo.json").catch(function () { return null; }) : null])
+    .then(function (jj) {
+      var j = jj[0];
+      if (PAESE) {
+        j.allerte = jj[1] && jj[1].allerte;
+        var nome = j.luogo.nome;
+        document.title = "Meteo " + nome + ": previsioni ora per ora e a 10 giorni da 8 modelli | Notizie Benevento";
+        document.querySelector("main h1").textContent = "Meteo " + nome;
+        var ind = document.querySelector("main .indietro");
+        ind.href = "/comune/" + PAESE + "/";
+        ind.textContent = "← Le notizie da " + nome;
+      }
       D = j; O = j.ore; ORE = O.t;
       var k = chiaveOra(new Date());
       oggi = k.slice(0, 10);
@@ -1317,14 +1332,17 @@
       var ag = new Date(D.aggiornato);
       document.getElementById("agg").textContent = "Aggiornato alle " + ag.toLocaleTimeString("it-IT", { timeZone: TZ, hour: "2-digit", minute: "2-digit" }) +
         (chiaveOra(ag).slice(0, 10) === oggi ? "" : " del " + ag.toLocaleDateString("it-IT", { timeZone: TZ, day: "numeric", month: "short" }));
-      document.getElementById("sottotitolo").textContent = "Previsioni messe insieme da " + D.modelli.length + " modelli meteo, aggiornate ogni ora. Quota " + Math.round(D.quota || 0) + " m.";
+      document.getElementById("sottotitolo").textContent = "Previsioni messe insieme da " + D.modelli.length + " modelli meteo, aggiornate " +
+        (PAESE ? "ogni 6 ore" : "ogni ora") + ". Quota " + Math.round(D.quota || 0) + " m." + (PAESE ? " Le allerte sono quelle ufficiali di adesso." : "");
       disegnaTutto();
       var attesa;
       window.addEventListener("resize", function () { clearTimeout(attesa); attesa = setTimeout(function () { disegnaPannello(); disegnaSpaghi(); }, 200); });
     })
     .catch(function (e) {
       document.getElementById("agg").textContent = "";
-      document.getElementById("contenuto").innerHTML = '<p class="vuoto-dati">Previsioni non disponibili in questo momento, riprova tra poco.</p>';
+      document.getElementById("contenuto").innerHTML = '<p class="vuoto-dati">' + (PAESE && String(e && e.message) === "404"
+        ? "Le previsioni di questo paese arrivano entro qualche ora: intanto ci sono quelle di <a href=\"/meteo.html\">Benevento</a>."
+        : "Previsioni non disponibili in questo momento, riprova tra poco.") + "</p>";
       if (window.console) console.error(e);
     });
 })();

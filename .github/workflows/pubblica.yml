@@ -73,6 +73,25 @@ jobs:
             curl -fsSL --max-time 30 "https://notiziebenevento.it/meteo.json" -o meteo.json || echo "nessun meteo precedente"
           fi
 
+      # il meteo completo dei paesi (meteo.html?paese=…, strumenti/meteo.py --paesi): ogni 6 ore, 13 paesi a giro; i
+      # file restano tra un giro e l'altro nella cache (se si perde, meteo.py li riprende dal sito)
+      - uses: actions/cache/restore@v4
+        with:
+          path: meteo-paesi
+          key: meteo-paesi-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: meteo-paesi-
+
+      - name: Meteo dei paesi (a turno, ogni 6 ore)
+        timeout-minutes: 6
+        continue-on-error: true   # un intoppo qui non ferma la pubblicazione: restano le previsioni di prima
+        run: python3 strumenti/meteo.py --paesi meteo-paesi --quanti 13 --ogni-ore 6
+
+      - uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: meteo-paesi
+          key: meteo-paesi-${{ github.run_id }}-${{ github.run_attempt }}
+
       # il meteo di ogni Comune per le loro pagine (strumenti/meteo_comuni.py, Open-Meteo): se non risponde resta quello di prima
       - name: Meteo dei Comuni
         run: |

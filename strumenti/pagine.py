@@ -2187,11 +2187,12 @@ def html_meteo_comune(c, m, allerte, oggi):
         for x in (((allerte.get("giorni") or {}).get(d.isoformat()) or {}).get("zone") or {}).values():
             if c in (x.get("comuni") or []) and ordine.index(x.get("livello") or "verde") > peggio:
                 peggio, al = ordine.index(x.get("livello") or "verde"), nome
-    h = ""
+    h, dove = "", f"/meteo.html?paese={slug(c)}"   # il meteo completo del paese (lui, 29 ott 2026)
     if peggio:
         liv = ordine[peggio]
-        h += (f'<a class="mb-allerta" href="/meteo.html#allerte" style="background:{LIVELLI_ALLERTA[liv]}'
-              f'{";color:#3a2c00" if liv == "gialla" else ""}">Allerta {liv} {al} ›</a>')
+        dove += "#allerte"
+        h += (f'<div class="mb-allerta" style="background:{LIVELLI_ALLERTA[liv]}'
+              f'{";color:#3a2c00" if liv == "gialla" else ""}">Allerta {liv} {al} ›</div>')
     o = m["ora"]
     h += (f'<div class="mb-tit">Meteo {e(c)}</div><div class="mb-ora"><span class="mb-icona" data-cond="{e(o["cond"])}" '
           f'data-notte="{0 if o.get("giorno") else 1}"></span><div class="mb-t">{gradi(o["t"])}</div><div class="mb-c">'
@@ -2203,7 +2204,8 @@ def html_meteo_comune(c, m, allerte, oggi):
         h += (f'<div class="mb-g">{e(et)}<span class="mb-icona" data-cond="{e(g["cond"])}" data-notte="0"></span><b>'
               f'{gradi(g["max"])}</b> <span class="mn">{gradi(g["min"])}</span><span class="pp">{pp}</span></div>')
     h += "</div>"
-    return f'<div class="meteo-box meteo-comune">{h}<p class="mb-fonte">Previsioni Open-Meteo, aggiornate ogni ora.</p></div>'
+    return (f'<a class="meteo-box meteo-comune" href="{e(dove)}">{h}<p class="mb-fonte">Previsioni ora per ora e a 10 '
+            f'giorni ›</p></a>')
 
 
 def html_comune(c, notizie, eventi, allerte, stemma, oggi, distributori=0, farmacia="", meteo_c=None, vicine=(), zona=""):

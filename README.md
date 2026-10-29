@@ -15,7 +15,8 @@ Sito: https://notiziebenevento.it (notiziebenevento.com rimanda qui)
   non sparisce mai; a ogni giro lo fa anche `archivia.py` contro l'ultimo salvataggio).
 - `archivio/indice.json`: elenco leggero di tutto l'archivio, per la ricerca e per i link già condivisi.
 - `strumenti/archivia.py`: controlla `notizie.json` (anche niente date nel futuro) e sposta in archivio; non scrive niente se trova un errore.
-- `strumenti/meteo.py`: previsioni da 8 modelli → `meteo.json` (lo esegue GitHub ogni ora).
+- `strumenti/meteo.py`: previsioni da 8 modelli → `meteo.json` (lo esegue GitHub ogni ora); con `--paesi` le stesse per
+  i paesi, a turno ogni 6 ore → `meteo-paesi/<paese>.json` (la pagina `meteo.html?paese=<paese>`).
 - `strumenti/meteo_comuni.py`: il meteo di ognuno dei 78 Comuni (Open-Meteo, coordinate in
   `strumenti/comuni_coordinate.json`) → `meteo-comuni.json`, per la colonna di destra delle pagine dei Comuni.
 - `CONTRIBUTI.md`, `contributi_locali.json`, `contributi_esclusi.json`: l'agente dei contributi (routine di ogni mattina)

@@ -106,7 +106,14 @@ aperte normalmente, indicare la farmacia aperta», «cerchiamo di riempire un po
 → meteo-comuni.json, Open-Meteo, una richiesta per tutti i 78 Comuni a ogni pubblicazione; coordinate in
 strumenti/comuni_coordinate.json) con la striscia dell'allerta se non è verde, la riga dell'allerta della Protezione
 civile, la farmacia di turno della zona e sempre le farmacie del paese col telefono, i carburanti del paese. A sinistra
-eventi e notizie; se le notizie sono meno di 6, sotto «Le ultime da <zona>» (8 della stessa zona).
+eventi e notizie; se le notizie sono meno di 6, sotto «Le ultime da <zona>» (8 della stessa zona). L'allerta solo da
+gialla in su, come striscia in cima al meteo (lui: «quando è verde non mostrarla»). Il riquadro del meteo porta al meteo
+completo del paese, meteo.html?paese=<slug> (lui: «si dovrebbe aprire la pagina meteo del paese», «paesi ogni 6 ore
+sì»): la stessa pagina di Benevento con gli 8 modelli, da meteo-paesi/<slug>.json (strumenti/meteo.py --paesi, 13 paesi
+a giro, ognuno ogni 6 ore; la cache della pubblicazione li tiene, se si perde li riprende dal sito), le allerte da
+meteo.json. **Il limite di Open-Meteo:** 10.000 richieste al giorno gratis e le pubblicazioni sono anche 150 al giorno:
+Benevento a ogni pubblicazione (~13 a volta), meteo-comuni.json al massimo una volta l'ora (78), i paesi completi ogni
+6 ore (~11 l'uno): circa 7.300 al giorno. Una cosa nuova che chiede a Open-Meteo va fatta con questi conti.
 
 ## Come sono fatte le pagine (regola del proprietario, 28 ott 2026)
 Lui: «dobbiamo mettere una regola di come costruire le pagine… dobbiamo uniformare e scrivere una regola». Ogni pagina

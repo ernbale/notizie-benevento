@@ -256,10 +256,13 @@ def allerte_ufficiali(oggi):
             "giorni": giorni, "errori": errori}
 
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--uscita", default=os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "meteo.json"))
-    a = ap.parse_args()
+class Mancano(Exception):
+    """Le previsioni non si possono fare (dati che non arrivano o non tornano)."""
+
+
+def previsioni(luogo):
+    """Le previsioni da 8 modelli per un punto (Benevento o un paese): il contenuto di meteo.json senza le allerte."""
+    LUOGO = luogo   # noqa: N806 (il nome di prima: sotto si usa così)
     comune = {"latitude": LUOGO["lat"], "longitude": LUOGO["lon"], "timezone": FUSO, "forecast_days": GIORNI, "past_days": 1}
 
     m = scarica(url("https://api.open-meteo.com/v1/forecast", hourly=",".join(VAR_MODELLI),
@@ -277,16 +280,14 @@ def main():
     ore = m["hourly"]["time"]
     n = len(ore)
     if n < 24 * GIORNI or b["hourly"]["time"] != ore:
-        print("ERRORE: le ore dei dati non tornano", file=sys.stderr)
-        sys.exit(1)
+        raise Mancano("le ore dei dati non tornano")
 
     def serie(var, mod):
         return m["hourly"].get(f"{var}_{mod}") or [None] * n
 
     attivi = [x for x in MODELLI if any(v is not None for v in serie("temperature_2m", x["id"]))]
     if len(attivi) < 4:
-        print(f"ERRORE: solo {len(attivi)} modelli con dati", file=sys.stderr)
-        sys.exit(1)
+        raise Mancano(f"solo {len(attivi)} modelli con dati")
     ids = [x["id"] for x in attivi]
 
     o = {k: [] for k in ("temp", "perc", "pioggia", "prob", "neve", "nuvole", "vento", "dir", "raffiche", "umid",
@@ -392,32 +393,98 @@ def main():
             "modelli": per_mod,
         })
 
-    adesso = dt.datetime.now(dt.timezone.utc).astimezone()
+    if len(giorni) < GIORNI:
+        raise Mancano(f"solo {len(giorni)} giorni")
+    return {"aggiornato": adesso_roma().isoformat(timespec="minutes"), "luogo": LUOGO, "quota": m.get("elevation"),
+            "modelli": attivi,
+            "fonte": "Open-Meteo (CC BY 4.0) con i modelli dei servizi meteo nazionali; aria e pollini: Copernicus CAMS",
+            "ore": {"t": ore, **o}, "giorni": giorni}
+
+
+def adesso_roma():
     try:
         from zoneinfo import ZoneInfo
-        adesso = dt.datetime.now(ZoneInfo(FUSO))
+        return dt.datetime.now(ZoneInfo(FUSO))
     except Exception:
-        pass
-    allerte = allerte_ufficiali(adesso.date())
+        return dt.datetime.now(dt.timezone.utc).astimezone()
+
+
+def scrivi(percorso, dati):
+    tmp = percorso + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(dati, f, ensure_ascii=False, separators=(",", ":"))
+    os.replace(tmp, percorso)
+
+
+def paesi(cartella, quanti, ogni_ore):
+    """Il meteo dei paesi, la stessa pagina di Benevento (meteo.html?paese=…), voluta dal proprietario il 29 ott 2026
+    («quando clicchi su previsioni del tempo si dovrebbe aprire la pagina meteo del paese», «paesi ogni 6 ore sì»):
+    a ogni giro i `quanti` paesi più vecchi di `ogni_ore` ore (78 paesi ogni ora supererebbero il limite gratuito di
+    Open-Meteo, 10.000 richieste al giorno). Un paese che non riesce resta com'era. Le allerte le legge la pagina da
+    meteo.json (sono di tutto il Sannio e cambiano più spesso)."""
+    with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "comuni_coordinate.json"), encoding="utf-8") as f:
+        coord = json.load(f)
+    os.makedirs(cartella, exist_ok=True)
+    adesso = adesso_roma()
+    eta = {}
+    for k in coord:
+        if k == "benevento":   # Benevento ha meteo.json
+            continue
+        p = os.path.join(cartella, k + ".json")
+        if not os.path.exists(p):   # la cache della pubblicazione si è persa: quello già sul sito, senza chiedere a Open-Meteo
+            try:
+                req = urllib.request.Request(f"https://notiziebenevento.it/meteo-paesi/{k}.json",
+                                             headers={"User-Agent": "notizie-benevento meteo (github.com/ernbale)"})
+                with urllib.request.urlopen(req, timeout=20) as r:
+                    dati = r.read()
+                json.loads(dati)
+                with open(p, "wb") as f:
+                    f.write(dati)
+            except Exception:
+                pass
+        try:
+            with open(os.path.join(cartella, k + ".json"), encoding="utf-8") as f:
+                eta[k] = dt.datetime.fromisoformat(json.load(f)["aggiornato"])
+        except (OSError, ValueError, KeyError):
+            eta[k] = None
+    vecchi = sorted((k for k, t in eta.items() if t is None or adesso - t > dt.timedelta(hours=ogni_ore)),
+                    key=lambda k: eta[k].timestamp() if eta[k] else 0)
+    senza = sum(1 for t in eta.values() if t is None)
+    if senza > 40:   # la prima volta (o il sito senza i file): tutti, una volta sola
+        quanti = len(vecchi)
+    fatti = []
+    for k in vecchi[:quanti]:
+        try:
+            scrivi(os.path.join(cartella, k + ".json"),
+                   previsioni({"nome": coord[k]["nome"], "lat": coord[k]["lat"], "lon": coord[k]["lon"]}))
+            fatti.append(coord[k]["nome"])
+        except Exception as e:
+            print(f"AVVISO: meteo di {coord[k]['nome']} non aggiornato ({type(e).__name__}: {e})", file=sys.stderr)
+    print(f"meteo dei paesi: aggiornati {len(fatti)} ({', '.join(fatti) or 'nessuno'}); da aggiornare ancora "
+          f"{max(0, len(vecchi) - quanti)}; senza file prima del giro {senza}")
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--uscita", default=os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "meteo.json"))
+    ap.add_argument("--paesi", metavar="CARTELLA", help="invece di Benevento, i paesi a turno (vedi paesi())")
+    ap.add_argument("--quanti", type=int, default=13)
+    ap.add_argument("--ogni-ore", type=int, default=6)
+    a = ap.parse_args()
+    if a.paesi:
+        return paesi(a.paesi, a.quanti, a.ogni_ore)
+    try:
+        uscita = previsioni(LUOGO)
+    except Mancano as e:
+        print(f"ERRORE: {e}", file=sys.stderr)
+        sys.exit(1)
+    allerte = allerte_ufficiali(adesso_roma().date())
     for x in allerte["errori"]:
         print("AVVISO:", x, file=sys.stderr)
-    uscita = {
-        "aggiornato": adesso.isoformat(timespec="minutes"),
-        "allerte": allerte,
-        "luogo": LUOGO, "quota": m.get("elevation"),
-        "modelli": attivi,
-        "fonte": "Open-Meteo (CC BY 4.0) con i modelli dei servizi meteo nazionali; aria e pollini: Copernicus CAMS",
-        "ore": {"t": ore, **o},
-        "giorni": giorni,
-    }
-    if len(giorni) < GIORNI:
-        print(f"ERRORE: solo {len(giorni)} giorni", file=sys.stderr)
-        sys.exit(1)
-    tmp = a.uscita + ".tmp"
-    with open(tmp, "w", encoding="utf-8") as f:
-        json.dump(uscita, f, ensure_ascii=False, separators=(",", ":"))
-    os.replace(tmp, a.uscita)
-    print(f"OK {a.uscita}: {len(attivi)} modelli ({', '.join(x['nome'] for x in attivi)}), {n} ore, {len(giorni)} giorni")
+    uscita = {"aggiornato": uscita["aggiornato"], "allerte": allerte, **{k: v for k, v in uscita.items() if k != "aggiornato"}}
+    scrivi(a.uscita, uscita)
+    print(f"OK {a.uscita}: {len(uscita['modelli'])} modelli ({', '.join(x['nome'] for x in uscita['modelli'])}), "
+          f"{len(uscita['ore']['t'])} ore, {len(uscita['giorni'])} giorni")
 
 
 if __name__ == "__main__":
