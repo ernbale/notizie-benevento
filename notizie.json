@@ -818,7 +818,11 @@
     }
    },
    "zona": "benevento",
-   "foto": "protesta-6"
+   "foto": "protesta-6",
+   "subito": true,
+   "comunicati": [
+    "u9e9892d1ef7"
+   ]
   },
   {
    "id": "benevento-piazza-roma-manifestazione-violenza-razzismo-sale-della-terra",
@@ -6375,7 +6379,11 @@
      }
     ]
    },
-   "foto": "strada-chiusa-3"
+   "foto": "strada-chiusa-3",
+   "subito": true,
+   "comunicati": [
+    "u2fd8b549667"
+   ]
   },
   {
    "id": "benevento-enel-carabinieri-incontro-truffe-spazio-enel",
