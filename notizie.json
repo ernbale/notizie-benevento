@@ -3,6 +3,81 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "asl-benevento-cisl-fp-piattaforma-contrattazione-integrativa",
+   "titolo": "ASL Benevento, firmata la piattaforma per il contratto integrativo: bandi per gli incarichi entro il 30 novembre",
+   "titolo_google": "Contratto integrativo ASL Benevento, firmata la piattaforma",
+   "sintesi": "Il 28 ottobre 2026 all'ASL Benevento è stata sottoscritta la piattaforma per la contrattazione integrativa aziendale, che applica il contratto nazionale della sanità 2022-2024. La CISL FP Irpinia Sannio indica le priorità: bandi per gli incarichi di funzione entro il 30 novembre, DEP 2025 e 2026 e smart working.",
+   "categoria": "altro",
+   "luogo": "Benevento, ASL Benevento",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "fonti": [
+    {
+     "nome": "CISL FP Irpinia Sannio",
+     "url": "https://www.cislfp.it/",
+     "ufficiale": true
+    }
+   ],
+   "foto_inviate": [
+    "img/locandine/asl-benevento-cisl-fp-piattaforma-contrattazione-integrativa-foto.jpg"
+   ],
+   "foto_da": "CISL FP Irpinia Sannio",
+   "comunicati": [
+    "4f6ab6b60ce4"
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "All'ASL Benevento, l'azienda sanitaria della provincia, è stata sottoscritta il 28 ottobre 2026 la piattaforma per la contrattazione decentrata integrativa aziendale. È il documento che serve ad applicare al personale dell'azienda gli istituti economici, normativi e organizzativi del CCNL Comparto Sanità 2022–2024, il contratto collettivo nazionale di lavoro della sanità pubblica. Ne dà notizia la CISL FP Irpinia Sannio, la sezione territoriale della CISL FP, il sindacato della funzione pubblica della CISL, che esprime grande soddisfazione.",
+      "fonti": [
+       "CISL FP Irpinia Sannio"
+      ]
+     },
+     {
+      "testo": "La piattaforma è stata condivisa dalle organizzazioni sindacali che hanno firmato il contratto nazionale. L'ha sostenuta anche una maggioranza qualificata dei componenti presenti della RSU, la rappresentanza sindacale unitaria: in gran parte rappresentanti della CISL FP Irpinia Sannio, più un componente della UIL. Il sindacato parla di un percorso di trattativa lungo e articolato, fatto di approfondimenti tecnici, proposte e confronto con la Delegazione Trattante aziendale, cioè la parte dell'ASL che tratta con i sindacati.",
+      "fonti": [
+       "CISL FP Irpinia Sannio"
+      ]
+     },
+     {
+      "testo": "Le materie sono molte. Per gli incarichi di funzione i bandi vanno pubblicati entro il 30 novembre 2026, con criteri trasparenti. Ci sono poi i Differenziali Economici di Professionalità (DEP) 2025 e 2026, cioè le procedure per la progressione economica, da definire e completare, e la piena applicazione del regolamento aziendale sullo smart working, con criteri equi di accesso e risposte rapide alle richieste. La piattaforma tocca anche le progressioni tra le aree, i fondi contrattuali per il trattamento economico accessorio, performance e premi, le indennità (con attenzione ai servizi più gravosi e all'emergenza-urgenza), la pronta disponibilità, gli incentivi per funzioni tecniche e attività progettuali, il welfare integrativo, la mobilità interna, orari e turni, la formazione, la salute e la sicurezza sul lavoro e le relazioni sindacali.",
+      "fonti": [
+       "CISL FP Irpinia Sannio"
+      ]
+     },
+     {
+      "testo": "Secondo il sindacato riguarda tutto il personale dell'ASL Benevento: sanitario e sociosanitario, tecnico, professionale e amministrativo. La CISL FP Irpinia Sannio sottolinea di essere l'unica, tra le sigle territoriali delle tre principali confederazioni sindacali, a sedere al tavolo aziendale come firmataria del contratto, perché la CISL FP nazionale ha firmato il contratto 2022–2024.",
+      "fonti": [
+       "CISL FP Irpinia Sannio"
+      ]
+     },
+     {
+      "testo": "«Ora si apre una fase altrettanto importante: quella dell'attuazione», dice Sonia Petrucciani, segretaria generale della CISL FP Irpinia Sannio, che indica come priorità i bandi entro il 30 novembre, i DEP 2025 e 2026 e lo smart working, e ringrazia la segretaria aziendale Eleonora Tiso, i dirigenti sindacali e i componenti della RSU eletti con la CISL FP. Per lei «il vero risultato si misura attraverso i provvedimenti adottati e i diritti concretamente riconosciuti ai lavoratori». Tiso parla di «un passaggio importante per il personale dell'ASL Benevento» e annuncia che il sindacato seguirà i prossimi passaggi, con un confronto costruttivo con l'amministrazione.",
+      "fonti": [
+       "CISL FP Irpinia Sannio"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "CISL FP Irpinia Sannio",
+      "titolo": "COMUNICATO STAMPA - CISL FP IRPINIA SANNIO_ASL BENEVENTO: SOTTOSCRITTA LA PIATTAFORMA PER LA CONTRATTAZIONE INTEGRATIVA AZIENDALE",
+      "url": "https://www.cislfp.it/",
+      "data": "29 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "subito": true,
+   "pubblicato": "2026-10-29T08:42:56+01:00",
+   "zona": "benevento"
+  },
+  {
    "id": "tale-e-quale-show-2026-selma-vince-sesta-puntata-dionne-warwick",
    "titolo": "Tale e Quale Show, la cantante sannita Selma vince la sesta puntata nei panni di Dionne Warwick",
    "titolo_google": "Tale e Quale Show, Selma vince la sesta puntata con 86 punti",
