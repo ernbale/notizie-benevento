@@ -1600,6 +1600,12 @@ def html_area_zona(zid, area, adesso, elenco_paesi):
     return h + "</section>"
 
 
+def senza_persona(ragione):
+    """Come strumenti/farmacie.py: da un titolo («DR», «DOTT.») in poi c'è il nome di una persona e si taglia."""
+    import farmacie as FA
+    return FA.senza_persona(ragione)
+
+
 def farmacie_dei_paesi(farm):
     """Le farmacie di ogni paese dall'elenco di Federfarma (strumenti/farmacie.py, farm["paesi"]["elenco"]); l'ultima
     letta resta in farmacie_dei_paesi.cache (per le pagine dei Comuni)."""
@@ -1611,7 +1617,8 @@ def farmacie_dei_paesi(farm):
     noti.update({x.get("telefono"): x["nome"] for k in ("diurno", "notturno") for x in farm.get(k) or [] if x.get("telefono")})
     for f in (farm.get("paesi") or {}).get("elenco") or []:
         c = comune_ufficiale(f["comune"])
-        nome = (bello_via(f["nome"]) if f["nome"].isupper() else f["nome"]) if f.get("nome") else ""
+        nome = senza_persona(f.get("nome") or "")   # mai il titolare (anche se l'elenco del Pi è di prima)
+        nome = (bello_via(nome) if nome.isupper() else nome) if nome else ""
         if not nome or nome == ".":
             nome = noti.get(f.get("telefono")) or f"Farmacia di {c}"
         out.setdefault(c, []).append({"nome": nome,

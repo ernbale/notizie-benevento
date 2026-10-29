@@ -196,6 +196,7 @@ def leggi_elenco(testo_html, tutte=False):
         tit = set(re.findall(r"[a-zà-ÿ]{2,}", celle[1].lower()))
         if tit and tit <= set(re.findall(r"[a-zà-ÿ]{2,}", ragione.lower())):   # «DOTT. LOMBARDI GIUSEPPE»: è il titolare
             ragione = ""
+        ragione = senza_persona(ragione)
         out.append({"nome": ragione, "parole": parole(celle[1] + " " + celle[2]), "via": celle[3], "parole_via": parole(celle[3]),
                     "comune": bello(re.sub(r"\s+", " ", celle[4]).strip()), "telefono": tel})
     if len(out) < (60 if tutte else 8):
@@ -205,6 +206,15 @@ def leggi_elenco(testo_html, tutte=False):
 
 def parole(s):
     return {w for w in re.findall(r"[a-zà-ÿ]{3,}", s.lower()) if w not in GENERICHE}
+
+
+def senza_persona(ragione):
+    """Un titolo («DR», «DOTT.», «DOTT.SSA») vuol dire che da lì c'è il nome di una persona: si taglia lì. «FARMACIA
+    GALENO DR PALUMBO E VINCIGUERRA SNC» → «FARMACIA GALENO»; «DR.VIGLIONE UGO» → niente (29 ott 2026: era uscito sulla
+    pagina col nome e cognome del titolare, perché nell'elenco il titolare è scritto in un altro modo)."""
+    r = re.split(r"(?<![A-Za-zÀ-ÿ])(?:DR|DOTT|DOTTOR|DOTTORESSA|DOTT\.?\s*SSA|DR\.?\s*SSA)(?![A-Za-zÀ-ÿ])\.?", ragione or "",
+                 maxsplit=1, flags=re.I)[0].strip(" .-,")
+    return "" if re.fullmatch(r"(?i)(farmacia|farmacie)?", r) else r
 
 
 def abbina(turni, elenco):
