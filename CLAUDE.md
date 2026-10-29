@@ -134,7 +134,12 @@ gialla in su, come striscia in cima al meteo (lui: «quando è verde non mostrar
 completo del paese, meteo.html?paese=<slug> (lui: «si dovrebbe aprire la pagina meteo del paese», «paesi ogni 6 ore
 sì»): la stessa pagina di Benevento con gli 8 modelli, da meteo-paesi/<slug>.json (strumenti/meteo.py --paesi, 13 paesi
 a giro, ognuno ogni 6 ore; la cache della pubblicazione li tiene, se si perde li riprende dal sito), le allerte da
-meteo.json. **Il limite di Open-Meteo:** 10.000 richieste al giorno gratis e le pubblicazioni sono anche 150 al giorno:
+meteo.json. **«Il paese in breve»** (lui, 29 ott 2026: «si fai 1»), sotto le notizie: abitanti (ISTAT), altitudine e
+superficie (Wikidata), come si chiamano gli abitanti, patrono, festa e frazioni (Wikipedia), municipio, PEC e sito
+(Indice delle PA), sindaco (Ministero dell'Interno), con le fonti sotto; li prepara strumenti/comuni_scheda.py →
+strumenti/comuni_scheda.json, a mano dopo le elezioni comunali e una volta l'anno. Il sindaco esce solo se le fonti non
+si contraddicono (Airola, 29 ott: l'Indice del 21 ottobre dice commissario prefettizio, il Ministero di agosto il
+sindaco: riga tolta finché non si chiarisce). **Il limite di Open-Meteo:** 10.000 richieste al giorno gratis e le pubblicazioni sono anche 150 al giorno:
 Benevento a ogni pubblicazione (~13 a volta), meteo-comuni.json al massimo una volta l'ora (78), i paesi completi ogni
 6 ore (~11 l'uno): circa 7.300 al giorno. Una cosa nuova che chiede a Open-Meteo va fatta con questi conti.
 

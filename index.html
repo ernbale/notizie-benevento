@@ -805,6 +805,11 @@
   .scheda-evento dt { font: 700 12px/22px var(--sans); text-transform: uppercase; letter-spacing: 1px; color: var(--grigio); }
   .scheda-evento dd { margin: 0; font: 500 16px/1.4 var(--sans); }
   .scheda-evento dd a { color: var(--blu); font-size: 14px; margin-left: 4px; }
+  .scheda-paese dd a { font-size: inherit; margin-left: 0; overflow-wrap: anywhere; }
+  @media (max-width: 700px) {
+    .scheda-paese { grid-template-columns: 1fr; gap: 0; }
+    .scheda-paese dd { margin-bottom: 8px; }
+  }
   @media (max-width: 700px) {
     .cal-testa h2 { font-size: 23px; }
     .cal-sett { grid-template-rows: 46px; min-height: 0; padding-bottom: 0; }

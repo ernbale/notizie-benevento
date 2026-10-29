@@ -2395,7 +2395,77 @@ def html_meteo_comune(c, m, allerte, oggi):
             f'giorni ›</p></a>')
 
 
-def html_comune(c, notizie, eventi, allerte, stemma, oggi, distributori=0, farmacia="", meteo_c=None, vicine=(), zona=""):
+def _data_lunga(iso):
+    """«2021-10-03» → «3 ottobre 2021» (il 1° del mese col «°»)."""
+    a, m, g = (int(x) for x in iso[:10].split("-"))
+    return f"{'1°' if g == 1 else g} {MESI_LUNGHI[m - 1]} {a}"
+
+
+def _il(data):
+    """«il 3 ottobre», ma «l'8 maggio» e «l'11 maggio»."""
+    return ("l'" if re.match(r"(8|11) ", data) else "il ") + data
+
+
+def html_paese_breve(c, x, dati):
+    """«Il paese in breve» (strumenti/comuni_scheda.py → strumenti/comuni_scheda.json; lui, 29 ott 2026: «si fai 1»):
+    abitanti, altitudine, patrono e festa, frazioni, municipio, PEC, sito e sindaco, con le fonti sotto. Le righe senza
+    dato non escono."""
+    if not x:
+        return ""
+    num = lambda v: f"{v:,}".replace(",", ".") if isinstance(v, int) else str(v).replace(".", ",")   # noqa: E731
+    righe = []
+    if x.get("abitanti"):
+        righe.append(("Abitanti", f"{num(x['abitanti'])} al {_data_lunga(dati.get('abitanti_al') or '2026-01-01')}"
+                      " (stima ISTAT)"))
+    if x.get("nome_abitanti"):
+        righe.append(("Come si chiamano", e(x["nome_abitanti"])))
+    if x.get("altitudine") is not None:
+        righe.append(("Altitudine", f"{num(x['altitudine'])} metri sul mare"))
+    if x.get("superficie"):
+        righe.append(("Superficie", f"{num(x['superficie'])} km²"))
+    if x.get("patrono"):
+        righe.append(("Patrono", e(x["patrono"])))
+    if x.get("festa"):
+        righe.append(("Festa patronale", e(x["festa"])))
+    if x.get("frazioni"):
+        righe.append(("Frazioni", e(x["frazioni"])))
+    if x.get("municipio"):
+        righe.append(("Municipio", e(x["municipio"]) + (f", {e(x['cap'])} {e(c)}" if x.get("cap") else "")))
+    if x.get("pec"):
+        righe.append(("PEC", f'<a href="mailto:{e(x["pec"])}">{e(x["pec"])}</a>'))
+    if x.get("sito"):
+        sito = x["sito"].strip().rstrip("/")
+        url = sito if sito.startswith("http") else "https://" + sito
+        righe.append(("Sito del Comune", f'<a href="{e(url)}" target="_blank" rel="noopener">'
+                                         f'{e(re.sub(r"^https?://", "", sito))}</a>'))
+    sin = x.get("sindaco") or {}
+    if sin.get("nome"):
+        quando = ""
+        if sin.get("dal"):
+            quando = (f", {'eletta' if sin['carica'] == 'Sindaca' else 'eletto'} il " if sin["carica"].startswith("Sindac")
+                      else ", dal ") + _data_lunga(sin["dal"])
+            quando = re.sub(r"\b(il|dal) (8|11) ", lambda m: ("l'" if m[1] == "il" else "dall'") + m[2] + " ", quando)
+        righe.append((e(sin["carica"]), e(sin["nome"]) + quando))
+    f = dati.get("fonti") or {}
+    fonti = [f'<a href="{e(f.get("istat", ""))}" rel="nofollow">ISTAT</a> (gli abitanti)',
+             "Wikidata e Wikipedia (altitudine, superficie, come si chiamano gli abitanti, patrono, festa e frazioni)",
+             f'<a href="{e(f.get("indicepa", ""))}" target="_blank" rel="noopener nofollow">Indice delle pubbliche '
+             "amministrazioni</a> (municipio, PEC e sito"
+             + (f", aggiornato dal Comune {_il(_data_lunga(x['ipa_aggiornato']))}" if x.get("ipa_aggiornato") else "")
+             + (")" if sin.get("fonte") != "indicepa" else f"; anche {sin['carica'].lower()})")]
+    if sin.get("fonte") == "ministero":
+        fonti.append(f'<a href="{e(f.get("ministero", ""))}" target="_blank" rel="noopener nofollow">Ministero '
+                     "dell'Interno</a>, amministratori in carica"
+                     + (f" al {_data_lunga(dati['ministero_al'])}" if dati.get("ministero_al") else "")
+                     + f" ({sin['carica'].lower()})")
+    titolo = "La città in breve" if c == "Benevento" else "Il paese in breve"
+    return (f'<h3>{titolo}</h3><dl class="scheda-evento scheda-paese">'
+            + "".join(f"<dt>{t}</dt><dd>{v}</dd>" for t, v in righe) + "</dl>"
+            + f'<p class="agg-chiusure">Fonti: {"; ".join(fonti)}.</p>')
+
+
+def html_comune(c, notizie, eventi, allerte, stemma, oggi, distributori=0, farmacia="", meteo_c=None, vicine=(), zona="",
+                breve_paese=""):
     """La pagina di un Comune: in cima titolo e stemma; a destra (sul telefono sotto il titolo) allerta, meteo, farmacia
     di turno e carburanti (lui, 29 ott 2026: «una colonna di destra simile alla nostra home», «meteo e farmacia sempre
     nella colonna di destra», «e anche allerte»); a sinistra eventi e notizie, e se sono poche quelle della zona («cerchiamo
@@ -2440,6 +2510,7 @@ def html_comune(c, notizie, eventi, allerte, stemma, oggi, distributori=0, farma
             f'<li><a href="{percorso("notizia", n["id"])}">{e(n["titolo"])}</a>'
             f'<span class="dove">{e(n.get("luogo") or "")}{" · " if n.get("luogo") else ""}'
             f'{e(data_it(n.get("pubblicato"), lunga=True))}</span></li>' for n in vicine) + "</ul>"
+    princ += breve_paese   # «Il paese in breve», dopo le notizie (html_paese_breve)
     princ += '<p class="sezioni-link">Gli altri paesi: <a href="/comuni/">tutti i Comuni del Sannio</a></p>'
     h += f'<div class="comune-griglia"><aside class="comune-lat">{lat}</aside><div class="comune-princ">{princ}</div></div>'
     h += SEGUI
@@ -3149,6 +3220,10 @@ def main():
         gm = {}
     with open(os.path.join(QUI, "comuni_coordinate.json"), encoding="utf-8") as f_:
         coord_c = json.load(f_)
+    try:   # «Il paese in breve» delle pagine dei Comuni (strumenti/comuni_scheda.py)
+        scheda_paesi = leggi(os.path.join(QUI, "comuni_scheda.json")) or {}
+    except (OSError, ValueError):
+        scheda_paesi = {}
     url = SITO + "/guardia-medica/"
     seo = blocco_seo(f"Guardia medica a Benevento e nel Sannio: orari, indirizzi e telefoni – {NOME}", "La guardia "
                      "medica dell'ASL Benevento: se è aperta adesso, gli orari e le postazioni della provincia con "
@@ -3340,7 +3415,9 @@ def main():
                                   html_farmacia_comune(c, aree_f, paesi_f, adesso_it)
                                   + (html_gm_comune(c, gm, coord_c, adesso_it) if gm.get("postazioni") else ""),
                                   meteo_c.get(slug(c)),
-                                  vicine, NOMI_ZONA.get(zona_c, "Sannio")), articolo=True))
+                                  vicine, NOMI_ZONA.get(zona_c, "Sannio"),
+                                  html_paese_breve(c, (scheda_paesi.get("comuni") or {}).get(c), scheda_paesi)),
+                      articolo=True))
         if visibile:
             indicizzate += 1
             mappa.append((url, dentro[0].get("pubblicato") if dentro else None))
