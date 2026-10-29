@@ -3,6 +3,73 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "benevento-via-torino-23-alloggi-popolari-progetto-5-milioni-giunta",
+   "titolo": "Benevento, case popolari in via Torino: la Giunta approva il progetto da 5 milioni per 23 alloggi",
+   "titolo_google": "Case popolari via Torino a Benevento: 23 alloggi, 5 milioni",
+   "sintesi": "La Giunta comunale di Benevento ha approvato il progetto di fattibilità tecnico-economica per recuperare l'immobile di via Torino. Il progetto, da 5 milioni di euro già finanziati, prevede 23 alloggi di edilizia popolare su due piani.",
+   "categoria": "politica",
+   "luogo": "Benevento, via Torino",
+   "immagine": "case-popolari",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 4,
+   "comunicati": [
+    "8773f1317063"
+   ],
+   "fonti": [
+    {
+     "nome": "Comune di Benevento",
+     "url": "https://comune.benevento.it/novita/",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "La Giunta comunale di Benevento, presieduta dal sindaco Clemente Mastella, ha approvato giovedì mattina, 29 ottobre, il progetto di fattibilità tecnico-economica (il primo livello di progettazione) per recuperare l'immobile di via Torino. L'intervento rientra nella rigenerazione urbana e riguarda l'edilizia residenziale pubblica, cioè le case popolari.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "Il progetto vale 5 milioni di euro, che secondo il Comune sono già finanziati. Prevede 23 alloggi distribuiti su due piani: 13 al piano terra e 10 al primo piano. Gli appartamenti avranno metrature diverse, pensate per famiglie di vario tipo.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "Il sindaco e l'assessora alle Politiche abitative, Molly Chiusolo, spiegano che il nuovo edificio sarà a zero impatto energetico, avrà spazi sociali per stare insieme, aree esterne in gran parte verdi e sarà completamente accessibile.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "Mastella e Chiusolo ricordano anche gli altri interventi del Comune sulle case popolari: i venti alloggi che nasceranno nell'ex scuola San Modesto, al Rione Libertà, e la riqualificazione degli 82 alloggi di via Nuzzolo, al rione Ferrovia. Secondo il sindaco e l'assessora, in un momento di «disagio abitativo crescente» l'intervento di via Torino «rappresenta un tassello importante di rigenerazione urbana e welfare abitativo».",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di Benevento",
+      "titolo": "Edilizia popolare, ok in Giunta al progetto per via Torino da 5 milioni di euro",
+      "url": "https://comune.benevento.it/novita/",
+      "data": "29 ott, 13:42",
+      "ufficiale": true
+     }
+    ]
+   },
+   "subito": true,
+   "pubblicato": "2026-10-29T13:47:05+01:00",
+   "foto": "case-popolari-2",
+   "zona": "benevento"
+  },
+  {
    "id": "conservatorio-nicola-sala-80-borse-studio-il-molino-15-novembre",
    "titolo": "Conservatorio di Benevento, 80 borse di studio da 500 euro per pasti e notti al Molino: domande entro il 15 novembre",
    "titolo_google": "Conservatorio Benevento, 80 borse di studio: domande al 15 novembre",
