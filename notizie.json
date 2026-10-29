@@ -874,7 +874,11 @@
      }
     ]
    },
-   "foto": "musica-classica-9"
+   "foto": "musica-classica-9",
+   "subito": true,
+   "comunicati": [
+    "8427f95731ba"
+   ]
   },
   {
    "id": "pallamano-hc-sannio-putignano-33-23-trasferta-siracusa",
