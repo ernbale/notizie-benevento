@@ -31,25 +31,26 @@ farlo giusto subito.
    Fremondoweb, Gazzetta di Benevento, Benevento Giornale, Il Caudino: con loro servono due testate). Appena una
    seconda testata riporta il fatto, aggiungila e passa a `confermata` (lo controlla `archivia.py`).
 3. **Cronaca con persone coinvolte:** almeno due testate, oppure una sola testata autorevole (regola 2); basta anche
-   un comunicato della Questura o di altre forze dell'ordine. **Nome e cognome si scrivono sempre** quando le fonti li
-   scrivono (lui, 29 ott 2026: «se è citato da altri giornali o da posta affidabile sì sempre il nome», «mostra sempre
-   i nomi tranne se è un'email non affidabile, allora da valutare»): giornali, comunicati per posta, siti ufficiali
-   (Questura, forze dell'ordine), anche con una sola fonte e anche se il fatto accusa qualcuno (indagato, arrestato,
-   denunciato, processato, condannato). L'eccezione è l'email di un mittente non affidabile (`"fonte": "da_valutare"`):
-   la valuta lui nella scheda Posta come tutto il comunicato (COMUNICATI.md) e, se la approva, il nome si scrive come
-   per gli altri. Se le fonti il nome non lo scrivono, età, paese e ruolo («un 53enne di Benevento»). Le accuse si
-   riportano **con le parole esatte dei
+   un comunicato della Questura o di altre forze dell'ordine. **I privati con le iniziali** (lui, 29 ott 2026:
+   «allora per il momento per i privati metti iniziali», «regola in futuro modificabile»: è provvisoria, la cambia lui
+   quando vuole): quando le fonti scrivono nome e cognome di un privato coinvolto in un fatto di cronaca (indagato,
+   arrestato, denunciato, processato, condannato, vittima, ferito), scrivi solo le iniziali con età e paese («S. J., 55
+   anni, di Pago Veiano»), anche con una sola fonte, e le iniziali anche nei titoli degli articoli fonte (il resto del
+   titolo esatto). Se le fonti il nome non lo scrivono, età, paese e ruolo («un 53enne di Benevento»). Un comunicato
+   per email da un mittente non affidabile (`"fonte": "da_valutare"`) lo valuta lui nella scheda Posta, come tutto il
+   comunicato (COMUNICATI.md; lui, 29 ott 2026: «mostra sempre i nomi tranne se è un'email non affidabile, allora da
+   valutare»); se lo approva, vale la regola di sempre. Le accuse si riportano **con le parole esatte dei
    giornali** («indagato», «arrestato», «denunciato», «presunto»): mai aggiungere, mai riassumere un'accusa con
    parole più pesanti. Nomi di vittime minorenni (anche se oggi sono maggiorenni ma erano minorenni al momento del
-   fatto): mai, da nessuna parte. Se il titolo di un articolo fonte contiene quel nome, nell'elenco fonti scrivi il
-   titolo esatto ma con il nome sostituito da «[nome omesso]».
+   fatto): mai, da nessuna parte, nemmeno le iniziali. Se il titolo di un articolo fonte contiene quel nome,
+   nell'elenco fonti scrivi il titolo esatto ma con il nome sostituito da «[nome omesso]».
    **Chi ha un ruolo pubblico si chiama sempre per nome e cognome** (lui, 28 ott 2026: «nomi se sono pubblici
    sempre»; 29 ott: «metti sempre i nomi»): sindaci, assessori, consiglieri, parlamentari, presidenti di enti,
    dirigenti, funzionari e dipendenti pubblici (anche un impiegato comunale; quelli in servizio anche per fatti
    privati, gli ex per fatti del loro incarico), anche con una sola fonte e anche quando sono indagati o accusati, con
-   le parole esatte dei giornali e «secondo l'accusa»; niente «[nome omesso]» per loro, nemmeno nei titoli delle fonti.
-   **Nei titoli degli articoli fonte i nomi restano come sono, anche quelli dei privati** (lui, 29 ott 2026: «metti
-   sempre i nomi»). Per i minori il nome non va mai, nemmeno nei titoli delle fonti.
+   le parole esatte dei giornali e «secondo l'accusa»; niente «[nome omesso]» né iniziali per loro, nemmeno nei
+   titoli delle fonti. Nei titoli degli articoli fonte, quindi: chi ha un ruolo pubblico col nome intero, i privati
+   con le iniziali, i minori con «[nome omesso]».
 4. **Controlla sempre la data** di ogni articolo. Un articolo vecchio riproposto in homepage non è una notizia
    di oggi. Gli orari INGV sono in UTC: convertili in ora italiana.
 5. **Titoli che dicono il fatto, niente acchiappa-clic.** Niente domande, niente «choc», «incredibile», «ecco
@@ -60,7 +61,7 @@ farlo giusto subito.
    tecnica serve, spiegala tra parentesi.
 7. **Testo tuo, mai copiato.** Non riprendere frasi dei giornali (al massimo citazioni brevi tra virgolette,
    attribuite). Niente foto dei giornali. I **titoli degli articoli fonte** nell'elenco fonti restano esatti
-   (unica eccezione: il nome di un minore, vedi regola 3).
+   (eccezioni: il nome di un minore e le iniziali al posto del nome di un privato, vedi regola 3).
 8. **Nel dubbio, non pubblicare.** Meglio una notizia in meno che una sbagliata. Il dubbio è sul **fatto** (è vero? è
    confermato?), non sulla sua importanza: **un fatto locale vero e ben documentato esce anche se è piccolo**
    (vandali al parco, un incidente, un guasto, una chiusura, una nomina in Comune). «Episodio minore» non è un motivo.
@@ -985,8 +986,8 @@ mette in `diario/AAAA-MM-GG.json`; le notizie nuove e aggiornate, le fonti e le 
   provincia, vecchio o ripubblicato, già coperto da una notizia esistente (scrivi quale), pubblicità o comunicato
   promozionale, voce non confermata, cronaca troppo piccola, ecc. Il motivo deve essere concreto. Elenco vuoto `[]`
   solo se davvero non hai scartato niente.
-- I nomi delle persone come nelle notizie (regola 3; lui, 29 ott 2026: «mostra sempre i nomi»): sì quelli che
-  scrivono le fonti, mai quelli dei minori.
+- I nomi delle persone come nelle notizie (regola 3): chi ha un ruolo pubblico col nome intero, i privati con le
+  iniziali, mai i minori.
 - Senza il diario `archivia.py --giro` stampa ERRORE e non scrive niente.
 
 ## Prima di consegnare (obbligatorio)
