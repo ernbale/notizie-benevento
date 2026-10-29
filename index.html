@@ -594,6 +594,7 @@
   .appro .pop-strade { font: 400 14px/1.4 var(--sans); color: var(--nero); }
   .appro .pop-strade .pop-paese { display: block; font: 700 18px/1.25 var(--serif); color: var(--nero); text-decoration: none; margin: 0 0 8px; }
   .appro .pop-strade .pop-paese:hover, .appro .pop-strade .pop-voce a:hover { text-decoration: underline; }
+  .appro .pop-strade .pop-dove { font: 600 12px/1.4 var(--sans); color: var(--grigio); margin: -4px 0 10px; }
   .appro .pop-strade .pop-voce { margin: 0 0 10px; }
   .appro .pop-strade .pop-voce:last-child { margin-bottom: 0; }
   .appro .pop-strade .occhiello { margin: 0 0 2px; font-size: 11px; }
@@ -3976,24 +3977,43 @@
       // finché sono a meno di 26 punti diventano un tondo solo con tutte le voci, ingrandendo si separano
       var strato = L.layerGroup().addTo(m), gruppiPrima = "";
       function segnaposto(g) {
-        var n = 0, oggi = false, pop = el("div", "pop-strade", []), dove = [g[0].lat, g[0].lon];
-        g = g.filter(function (p) { return p.oggi; }).concat(g.filter(function (p) { return !p.oggi; }));   // prima oggi
+        // g: i punti vicini (una strada o il centro di un paese). Nel riquadro si va per paese, prima quelli con
+        // qualcosa oggi; una notizia con tre strade vicine conta e si legge una volta sola
+        var paesi = [], perPaese = {}, contate = {}, n = 0, oggi = false, lat = 0, lon = 0;
         g.forEach(function (p) {
-          n += p.voci.length;
+          lat += p.lat / g.length;
+          lon += p.lon / g.length;
           oggi = oggi || p.oggi;
-          var testa = el("a", "pop-paese", [p.c + " ›"]);
-          testa.href = p.u;
-          pop.appendChild(testa);
+          var x = perPaese[p.c];
+          if (!x) { x = perPaese[p.c] = { c: p.c, u: p.u, oggi: false, strade: [], voci: [], viste: {} }; paesi.push(x); }
+          x.oggi = x.oggi || p.oggi;
+          if (p.s) x.strade.push(p.s);
           p.voci.forEach(function (v) {
+            if (!x.viste[v.u]) { x.viste[v.u] = true; x.voci.push(v); }
+            if (!contate[v.u]) { contate[v.u] = true; n++; }
+          });
+        });
+        paesi = paesi.filter(function (x) { return x.oggi; }).concat(paesi.filter(function (x) { return !x.oggi; }));
+        var pop = el("div", "pop-strade", []);
+        paesi.forEach(function (x) {
+          var testa = el("a", "pop-paese", [x.c + " ›"]);
+          testa.href = x.u;
+          pop.appendChild(testa);
+          // le strade di questo tondo solo da vicino (a mappa intera sarebbero un elenco lungo)
+          if (g.length <= 3 && x.strade.length) pop.appendChild(el("div", "pop-dove", [x.strade.join(", ")]));
+          if (g.length === 1 && g[0].centro)
+            pop.appendChild(el("div", "pop-dove", ["La strada non è sulla mappa: il tondo è al centro del paese"]));
+          x.voci.sort(function (a, b) { return (b.o ? 1 : 0) - (a.o ? 1 : 0); }).forEach(function (v) {
             var a = el("a", "", [v.t]);
             a.href = v.u;
             pop.appendChild(el("div", "pop-voce", [el("div", "occhiello", [v.k]), a, el("span", "pop-quando", [v.q])]));
           });
         });
-        var nomi = g.map(function (p) { return p.c; }), lato = n > 1 ? 30 : 22;
-        L.marker(dove, {
-          title: (nomi.length > 1 ? nomi.slice(0, -1).join(", ") + " e " + nomi[nomi.length - 1] : nomi[0]) +
-            (n > 1 ? ": " + n + " strade" : ""),
+        var nomi = paesi.map(function (x) { return x.c; }), lato = n > 1 ? 30 : 22;
+        L.marker([lat, lon], {
+          title: (g.length === 1 && g[0].s ? g[0].s + ", " + g[0].c :
+                  nomi.length > 1 ? nomi.slice(0, -1).join(", ") + " e " + nomi[nomi.length - 1] : nomi[0]) +
+            (n > 1 ? ": " + n + " notizie" : ""),
           riseOnHover: true, zIndexOffset: oggi ? 1000 : 0,
           icon: L.divIcon({ className: "pin-strada " + (oggi ? "oggi" : "poi") + (n > 1 ? " tanti" : ""),
                             html: n > 1 ? String(n) : "", iconSize: [lato, lato] })
@@ -4001,12 +4021,12 @@
       }
       function disegnaPin() {
         var gruppi = [];
-        FISSA.strade.forEach(function (p) {   // già in ordine: prima i paesi con più voci
+        FISSA.strade.forEach(function (p) {   // già in ordine: prima i punti con più voci
           var q = m.latLngToLayerPoint([p.lat, p.lon]);
           var g = gruppi.filter(function (g) { return g.q.distanceTo(q) < 26; })[0];
           if (g) g.paesi.push(p); else gruppi.push({ q: q, paesi: [p] });
         });
-        var chiave = gruppi.map(function (g) { return g.paesi.map(function (p) { return p.c; }).join("+"); }).join("|");
+        var chiave = gruppi.map(function (g) { return g.paesi.map(function (p) { return p.c + "/" + p.s; }).join("+"); }).join("|");
         if (chiave === gruppiPrima) return;
         gruppiPrima = chiave;
         strato.clearLayers();

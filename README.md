@@ -19,6 +19,9 @@ Sito: https://notiziebenevento.it (notiziebenevento.com rimanda qui)
   i paesi, a turno ogni 6 ore → `meteo-paesi/<paese>.json` (la pagina `meteo.html?paese=<paese>`).
 - `strumenti/meteo_comuni.py`: il meteo di ognuno dei 78 Comuni (Open-Meteo, coordinate in
   `strumenti/comuni_coordinate.json`) → `meteo-comuni.json`, per la colonna di destra delle pagine dei Comuni.
+- `strumenti/strade_luoghi.py`: dove sono le strade chiuse (le legge nel titolo e nel luogo delle notizie con
+  «traffico», le cerca una volta sola su OpenStreetMap) → `strade-luoghi.json`, per i tondi della mappa di
+  /strade-chiuse/ (lib/leaflet-1.9.4). Gira a ogni pubblicazione, prima di pagine.py.
 - `CONTRIBUTI.md`, `contributi_locali.json`, `contributi_esclusi.json`: l'agente dei contributi (routine di ogni mattina)
   e quello che scrive: i contributi che il catalogo non ha e le schede del catalogo chiuse o sbagliate.
 - `strumenti/contributi.py`: i contributi e i bandi per il Sannio → `contributi.json` (pagina `/agevolazioni/`, «Contributi» fino al 28 ott 2026): il catalogo del

@@ -100,6 +100,13 @@ jobs:
             curl -fsSL --max-time 30 "https://notiziebenevento.it/meteo-comuni.json" -o meteo-comuni.json || echo "nessun meteo dei Comuni precedente"
           fi
 
+      # dove sono le strade chiuse, per i tondi della mappa (strumenti/strade_luoghi.py): ogni strada si chiede una volta
+      # a OpenStreetMap e resta in strade-luoghi.json sul sito; se non risponde, la mappa mette i tondi al centro del paese
+      - name: Strade chiuse sulla mappa
+        timeout-minutes: 3
+        continue-on-error: true
+        run: python3 strumenti/strade_luoghi.py --al-massimo 15 --tempo 100
+
       # il sito del Ministero da GitHub non si apre: i prezzi li scarica il Pi di casa (strumenti/carburanti.py --manda)
       # e li manda qui quando sono nuovi; nelle altre pubblicazioni restano quelli già sul sito
       - name: Prezzi dei carburanti (dal Pi di casa, o quelli già pubblicati)

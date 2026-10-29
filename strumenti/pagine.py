@@ -838,21 +838,33 @@ def _voci_strade(voci, oggi):
     return h + "</ul>"
 
 
-def segnaposti_strade(ora, poi, oggi):
-    """I paesi sulla mappa in cima a «Strade chiuse» (punto 3 del piano, «dati che gli altri citano», 29 ott 2026): uno
-    per Comune, al centro del paese (strumenti/comuni_coordinate.json), con le sue voci; rosso se qualcosa vale oggi,
-    arancione se solo nei prossimi giorni. Le voci senza un Comune nel «luogo» (una statale) restano solo nell'elenco."""
+def segnaposti_strade(ora, poi, oggi, luoghi=None):
+    """I tondi della mappa in cima a «Strade chiuse» (punto 3 del piano, «dati che gli altri citano», 29 ott 2026): uno
+    per strada, dove OpenStreetMap la mette (strumenti/strade_luoghi.py → strade-luoghi.json, `luoghi`); le strade che
+    non trova, e le voci senza strada, al centro del paese (strumenti/comuni_coordinate.json), con «centro» se la strada
+    c'era ma non è sulla mappa. Rosso se qualcosa vale oggi, arancione se solo nei prossimi giorni. Le voci senza un
+    Comune nel «luogo» (una statale) restano solo nell'elenco."""
+    from strade_luoghi import chiave, strade_nel_testo
     with open(os.path.join(QUI, "comuni_coordinate.json"), encoding="utf-8") as f:
         coord = json.load(f)
+    luoghi = luoghi or {}
     per = {}
     for n in ora + poi:
-        for c in comuni_di(n.get("luogo")):
-            p = per.setdefault(c, {"c": c, "lat": coord[slug(c)]["lat"], "lon": coord[slug(c)]["lon"],
-                                   "u": url_comune(c), "oggi": False, "voci": []})
-            p["oggi"] = p["oggi"] or n in ora
-            p["voci"].append({"k": TRAFFICO[n["traffico"]], "t": n["titolo"], "u": percorso("notizia", n["id"]),
-                              "q": _quando_strada(n, oggi)})
-    return sorted(per.values(), key=lambda p: (-len(p["voci"]), p["c"]))
+        comuni = comuni_di(n.get("luogo"))
+        for i, c in enumerate(comuni):
+            # le strade valgono per il primo Comune del luogo, come in strade_luoghi.py
+            strade = strade_nel_testo(f"{n.get('luogo') or ''}\n{n.get('titolo') or ''}", comuni) if i == 0 else []
+            punti = [(s, luoghi[chiave(c, s)]["lat"], luoghi[chiave(c, s)]["lon"]) for s in strade
+                     if "lat" in (luoghi.get(chiave(c, s)) or {})]
+            for s, lat, lon in punti or [("", coord[slug(c)]["lat"], coord[slug(c)]["lon"])]:
+                p = per.setdefault((c, s), {"c": c, "s": s, "lat": lat, "lon": lon, "u": url_comune(c),
+                                            "oggi": False, "voci": []})
+                if not punti and strade:
+                    p["centro"] = True
+                p["oggi"] = p["oggi"] or n in ora
+                p["voci"].append({"k": TRAFFICO[n["traffico"]], "t": n["titolo"], "u": percorso("notizia", n["id"]),
+                                  "q": _quando_strada(n, oggi), **({"o": 1} if n in ora else {})})
+    return sorted(per.values(), key=lambda p: (-len(p["voci"]), p["c"], p["s"]))
 
 
 def html_strade_chiuse(ora, poi, oggi, aggiornato, segnaposti=()):
@@ -2888,7 +2900,11 @@ def main():
                      jsonld={"@context": "https://schema.org", "@type": "WebPage", "name": "Strade chiuse nel Sannio",
                              "url": url, "isPartOf": {"@type": "WebSite", "name": NOME, "url": SITO + "/"}})
     ora, poi = strade_chiuse(notizie, oggi)
-    pin = segnaposti_strade(ora, poi, oggi)
+    try:   # dove sono le strade (strumenti/strade_luoghi.py, prima di questo nella pubblicazione)
+        luoghi = (leggi(os.path.join(sito, "strade-luoghi.json")) or {}).get("luoghi") or {}
+    except (OSError, ValueError):
+        luoghi = {}
+    pin = segnaposti_strade(ora, poi, oggi, luoghi)
     scrivi(os.path.join(sito, "strade-chiuse", "index.html"),
            pagina(modello, seo, {"statica": True, "strade": pin},
                   html_strade_chiuse(ora, poi, oggi, prima.get("aggiornato"), pin), articolo=True))
