@@ -1249,8 +1249,20 @@ def _giorni_turno(x):
 
 
 def _mappa_farmacia(x):
-    q = urllib.parse.quote(f"Farmacia {x['nome']}, {x['indirizzo']}, Benevento")
+    q = urllib.parse.quote(f"Farmacia {x['nome']}, {x.get('via_mappa') or x['indirizzo']}, Benevento")
     return f'<a href="https://www.google.com/maps/search/?api=1&amp;query={q}" target="_blank" rel="noopener nofollow">mappa</a>'
+
+
+def _telefono(x):
+    """Il numero della farmacia (dall'elenco di Federfarma, strumenti/farmacie.py), da chiamare con un tocco."""
+    t = re.sub(r"\D", "", str(x.get("telefono") or ""))
+    if not re.match(r"^(0\d{5,10}|3\d{8,9})$", t):
+        return ""
+    return f'<a href="tel:+39{t}">{t[:3] + " " + t[3:] if t.startswith("3") else t[:4] + " " + t[4:]}</a> · '
+
+
+def _dove_farmacia(x):
+    return f'<span class="dove">{e(x["indirizzo"])}{" · " if x["indirizzo"] else ""}{_telefono(x)}{_mappa_farmacia(x)}</span>'
 
 
 def turni_adesso(dati, adesso):
@@ -1278,8 +1290,7 @@ def html_adesso_farmacie(dati, adesso):
                     (no, (f"Servizio notturno, adesso fino alle {_ora_breve(notte['alle'])}" if gia else
                           f"Servizio notturno, stanotte dalle {_ora_breve(notte['dalle'])} alle {_ora_breve(notte['alle'])}"))):
         if x:
-            h += (f'<li><div class="occhiello">{e(cosa)}</div><b class="farm-nome">{e(x["nome"])}</b>'
-                  f'<span class="dove">{e(x["indirizzo"])}{" · " if x["indirizzo"] else ""}{_mappa_farmacia(x)}</span></li>')
+            h += f'<li><div class="occhiello">{e(cosa)}</div><b class="farm-nome">{e(x["nome"])}</b>{_dove_farmacia(x)}</li>'
         else:
             h += (f'<li><div class="occhiello">{e(cosa.split(",")[0])}</div><p>Il turno non c\'è ancora: Federfarma '
                   "Benevento non ha pubblicato i turni nuovi. Li mettiamo appena escono.</p></li>")
@@ -1304,7 +1315,7 @@ def html_farmacie(dati, adesso):
                 continue
             h += (f'<li data-servizio="{k}" data-dal="{e(x["dal"])}" data-al="{e(x["al"])}"><div class="occhiello">'
                   f'{e(_giorni_turno(x)[0].upper() + _giorni_turno(x)[1:])}</div><b class="farm-nome">{e(x["nome"])}</b>'
-                  f'<span class="dove">{e(x["indirizzo"])}{" · " if x["indirizzo"] else ""}{_mappa_farmacia(x)}</span></li>')
+                  f'{_dove_farmacia(x)}</li>')
         h += "</ul>"
     orari, note = dati.get("orari") or {}, dati.get("note") or {}
     fasce = lambda v: " e ".join(f"{_ora_breve(a)}-{_ora_breve(b)}" for a, b in v)   # noqa: E731
@@ -1331,8 +1342,10 @@ def html_farmacie(dati, adesso):
     t = quando_dt(f.get("modificato"))
     from facebook import fuso
     agg = f" (aggiornati il {t.astimezone(fuso()).day} {MESI_LUNGHI[t.astimezone(fuso()).month - 1]})" if t else ""
-    h += (f'<p class="agg-chiusure">Fonte: <a href="{e(f.get("pagina") or "")}" target="_blank" rel="noopener nofollow">'
-          f"{e(f.get('nome') or 'Federfarma Benevento')}, turni delle farmacie</a>{agg}. Un turno può cambiare "
+    elenco = (f' e <a href="{e(f["elenco"])}" target="_blank" rel="noopener nofollow">elenco delle farmacie</a> (i '
+              "telefoni)") if f.get("elenco") else ""
+    h += (f'<p class="agg-chiusure">Fonte: {e(f.get("nome") or "Federfarma Benevento")}, <a href="{e(f.get("pagina") or "")}" '
+          f'target="_blank" rel="noopener nofollow">turni delle farmacie</a>{agg}{elenco}. Un turno può cambiare '
           "all'ultimo momento: il cartello sulla porta delle farmacie è sempre quello giusto.</p>")
     h += '<p class="collegate"><a href="/servizi/">Tutti i servizi ›</a></p>'
     h += SEGUI
@@ -1342,7 +1355,8 @@ def html_farmacie(dati, adesso):
 def farmacie_js(dati, adesso):
     """Quello che serve a index.html per rifare «adesso»: i turni da ieri a fra una settimana e l'ora della notte."""
     da, a = (adesso.date() - dt.timedelta(days=1)).isoformat(), (adesso.date() + dt.timedelta(days=7)).isoformat()
-    tieni = lambda v: [{k: x[k] for k in ("dal", "al", "nome", "indirizzo")} for x in v or [] if x["al"] >= da and x["dal"] <= a]   # noqa: E731
+    tieni = lambda v: [{k: x.get(k, "") for k in ("dal", "al", "nome", "indirizzo", "telefono", "via_mappa")}   # noqa: E731
+                       for x in v or [] if x["al"] >= da and x["dal"] <= a]
     return {"diurno": tieni(dati.get("diurno")), "notturno": tieni(dati.get("notturno")),
             "notte": (dati.get("note") or {}).get("notte") or {"dalle": "20:00", "alle": "08:45"}}
 

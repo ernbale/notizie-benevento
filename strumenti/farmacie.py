@@ -7,6 +7,11 @@ mette ogni mese su federfarmabenevento.it/turni.html («Turni Farmacie Città Be
 mese dopo): il servizio diurno a settimane e il notturno a gruppi di giorni, con gli orari e le note dell'ASL. Copre
 solo la città: i paesi hanno turni per zona che online non ci sono.
 
+Il telefono (lui, 29 ott 2026: «metti il numero di telefono è utile») viene dall'elenco delle farmacie della stessa
+Federfarma (federfarmabenevento.it/farmacie.html): ogni farmacia dei turni si abbina a una di Benevento dell'elenco
+per nome (titolare o ragione sociale) e via; il numero si scrive solo se l'abbinamento è sicuro (una sola farmacia
+con quel nome). Dell'elenco si tengono solo telefono e indirizzo col numero civico (per la mappa), non i titolari.
+
 Il PDF si legge con pdftotext -layout. Un turno si scrive solo se il controllo passa: ogni giorno ha un turno diurno e
 uno notturno, senza buchi né sovrapposizioni, e il mese del titolo è coperto tutto. Se il PDF non si apre o non torna
 resta il file di prima (e il Pi scrive l'errore in farmacie-errore.json: lo legge la sentinella). I turni del PDF di
@@ -26,6 +31,7 @@ import datetime as dt
 import email.utils
 import gzip
 import hashlib
+import html
 import json
 import os
 import re
@@ -39,6 +45,10 @@ REPO = "ernbale/notizie-benevento"
 UA = "NotizieBenevento/1.0 (https://notiziebenevento.it)"
 PAGINA_FONTE = "https://www.federfarmabenevento.it/turni.html"
 PDF = "https://www.federfarmabenevento.it/turni/turni%20farmacie.pdf"
+ELENCO = "https://www.federfarmabenevento.it/farmacie.html"
+GENERICHE = {"farmacia", "farmacie", "sas", "snc", "srl", "dott", "dottor", "dottssa", "figli", "del", "della", "di",
+             "via", "viale", "corso", "piazza", "rione"}
+RX_TELEFONO = re.compile(r"^(0\d{5,10}|3\d{8,9})$")
 MESI = {"gen": 1, "feb": 2, "mar": 3, "apr": 4, "mag": 5, "giu": 6, "lug": 7, "ago": 8, "set": 9, "ott": 10, "nov": 11,
         "dic": 12}
 MESI_LUNGHI = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre",
@@ -166,6 +176,45 @@ def orari_e_note(testo):
     return out
 
 
+def leggi_elenco(testo_html):
+    """Le farmacie di Benevento città dell'elenco di Federfarma: [{"parole", "via", "telefono"}] (senza i titolari)."""
+    out = []
+    for tr in re.findall(r"<tr\b.*?</tr>", testo_html, re.S | re.I):
+        celle = [re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", c))).strip()
+                 for c in re.findall(r"<td\b.*?</td>", tr, re.S | re.I)]
+        if len(celle) < 6 or celle[4].upper() != "BENEVENTO":
+            continue
+        tel = re.sub(r"\D", "", celle[5])
+        if not RX_TELEFONO.match(tel):
+            continue
+        out.append({"parole": parole(celle[1] + " " + celle[2]), "via": celle[3], "parole_via": parole(celle[3]),
+                    "telefono": tel})
+    if len(out) < 8:
+        raise ValueError(f"nell'elenco delle farmacie ci sono solo {len(out)} farmacie di Benevento con il telefono")
+    return out
+
+
+def parole(s):
+    return {w for w in re.findall(r"[a-zà-ÿ]{3,}", s.lower()) if w not in GENERICHE}
+
+
+def abbina(turni, elenco):
+    """Telefono e via col civico dall'elenco, a ogni turno che si riconosce senza dubbi. Restituisce i nomi non trovati."""
+    mancano = set()
+    for k in ("diurno", "notturno"):
+        for x in turni[k]:
+            nome, via = parole(x["nome"]), parole(x["indirizzo"])
+            punti = sorted(((2 * len(nome & f["parole"]) + len(via & f["parole_via"]), i) for i, f in enumerate(elenco)),
+                           reverse=True)
+            if punti and punti[0][0] >= 2 and nome & elenco[punti[0][1]]["parole"] and \
+                    (len(punti) == 1 or punti[0][0] > punti[1][0]):
+                f = elenco[punti[0][1]]
+                x["telefono"], x["via_mappa"] = f["telefono"], bello(f["via"])
+            else:
+                mancano.add(x["nome"])
+    return sorted(mancano)
+
+
 def unisci(nuovi, vecchi, oggi):
     """I turni del PDF nuovo e, per i giorni prima del suo inizio, quelli del file di prima (non più vecchi di
     GIORNI_TENUTI giorni)."""
@@ -188,6 +237,12 @@ def firma(d):
     """Quello che conta per sapere se sul sito c'è già lo stesso: turni, orari e note."""
     pezzi = {k: d.get(k) for k in ("diurno", "notturno", "orari", "note")}
     return hashlib.sha256(json.dumps(pezzi, sort_keys=True, ensure_ascii=False).encode()).hexdigest()[:16]
+
+
+def scarica_elenco():
+    req = urllib.request.Request(ELENCO, headers={"User-Agent": UA})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        return r.read().decode("utf-8", "replace")
 
 
 def scarica():
@@ -231,9 +286,22 @@ def main():
             vecchi = json.load(f)
     except (OSError, ValueError):
         vecchi = {}
+    try:   # i telefoni: se l'elenco non si apre, quelli del file di prima (per nome)
+        mancano = abbina(nuovi, leggi_elenco(scarica_elenco()))
+    except Exception as e:
+        print(f"farmacie: elenco con i telefoni non letto ({type(e).__name__}: {str(e)[:200]}): uso quelli di prima",
+              file=sys.stderr)
+        prima = {x["nome"]: x for k in ("diurno", "notturno") for x in vecchi.get(k) or [] if x.get("telefono")}
+        for k in ("diurno", "notturno"):
+            for x in nuovi[k]:
+                if x["nome"] in prima:
+                    x["telefono"], x["via_mappa"] = prima[x["nome"]]["telefono"], prima[x["nome"]].get("via_mappa", "")
+        mancano = sorted({x["nome"] for k in ("diurno", "notturno") for x in nuovi[k] if not x.get("telefono")})
+    if mancano:
+        print(f"farmacie: senza telefono (non le riconosco nell'elenco): {', '.join(mancano)}", file=sys.stderr)
     out = unisci(nuovi, vecchi, oggi)
     out = {"aggiornato": dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes"),
-           "fonte": {"nome": "Federfarma Benevento", "pagina": PAGINA_FONTE, "pdf": PDF,
+           "fonte": {"nome": "Federfarma Benevento", "pagina": PAGINA_FONTE, "pdf": PDF, "elenco": ELENCO,
                      "modificato": modificato or (vecchi.get("fonte") or {}).get("modificato")},
            **out}
     out["firma"] = firma(out)

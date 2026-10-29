@@ -72,7 +72,9 @@ con la riga di adesso dove il sito ha il dato (html_servizi in pagine.py). Ogni 
   (strumenti/farmacie.py, sul Pi due volte al giorno; lo manda alla pubblicazione quando cambia, campo «farmacie» di
   pubblica.yml, come i carburanti). Un turno si scrive solo se ogni giorno ne ha uno diurno e uno notturno, senza buchi;
   se no resta quello di prima e la sentinella avvisa (anche quando i turni sul sito finiscono entro 2 giorni). Le parole
-  sono quelle del PDF; niente telefoni (il PDF non li ha). «Adesso» lo rifà la pagina: alle 20 passa al notturno.
+  sono quelle del PDF. I telefoni (lui: «metti il numero di telefono è utile») vengono dall'elenco delle farmacie di
+  Federfarma (farmacie.html), abbinati per nome e via: un numero esce solo se l'abbinamento è sicuro; dei titolari non si
+  tiene niente. «Adesso» lo rifà la pagina: alle 20 passa al notturno.
 - Prossime, una per volta e pianificate prima con lui: guardia medica (ASL), mercati, raccolta differenziata, ZTL,
   numeri utili. Niente riquadri «in arrivo».
 
