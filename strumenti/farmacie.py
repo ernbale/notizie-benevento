@@ -180,7 +180,7 @@ def unisci(nuovi, vecchi, oggi):
             if x["al"] >= inizio:   # a cavallo: si taglia al giorno prima del PDF nuovo
                 x = dict(x, al=(dt.date.fromisoformat(inizio) - dt.timedelta(days=1)).isoformat())
             prima.append(x)
-        out[chiave] = prima + [x for x in nuovi[chiave] if x["al"] >= limite]
+        out[chiave] = prima + nuovi[chiave]   # quelli del PDF tutti: così la firma cambia solo se cambia il PDF
     return out
 
 
@@ -219,7 +219,7 @@ def main():
             dati, modificato = scarica()
         nuovi = leggi_turni(leggi_pdf(dati))
     except Exception as e:
-        msg = f"{type(e).__name__}: {str(e)[:300]}"
+        msg = f"{type(e).__name__}: {re.sub(r'\s+', ' ', str(e))[:300]}"
         print(f"farmacie: PDF dei turni non letto ({msg}): resta il file di prima", file=sys.stderr)
         if a.manda:   # per la sentinella del Pi
             with open(errore_p, "w", encoding="utf-8") as f:

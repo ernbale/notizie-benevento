@@ -599,6 +599,34 @@ def da_fuori(avviso):
     return righe
 
 
+FARMACIE_GIORNI = 2   # avviso quando i turni delle farmacie sul sito finiscono entro questi giorni
+
+
+def farmacie(adesso, pi):
+    """I turni delle farmacie sul sito (pagina farmacie-di-turno/, strumenti/farmacie.py): ci sono, coprono oggi e i
+    prossimi giorni; sul Pi anche se il PDF di Federfarma non si legge (farmacie-errore.json)."""
+    problemi = []
+    try:
+        with apri(f"{SITO}/farmacie.json?sentinella={int(time.time())}") as r:
+            d = json.load(r)
+        fine = min(d["diurno"][-1]["al"], d["notturno"][-1]["al"])
+        if fine <= (adesso.date() + dt.timedelta(days=FARMACIE_GIORNI)).isoformat():
+            g = dt.date.fromisoformat(fine)
+            problemi.append(f"i turni delle farmacie sul sito finiscono il {g:%d/%m}: Federfarma Benevento non ha ancora "
+                            "messo il PDF nuovo (federfarmabenevento.it/turni.html) o il Pi non l'ha mandato")
+    except Exception as e:
+        problemi.append(f"i turni delle farmacie non ci sono sul sito (farmacie.json: {type(e).__name__})")
+    if pi:
+        try:
+            with open(os.path.join(CARTELLA_PI, "farmacie-errore.json"), encoding="utf-8") as f:
+                err = json.load(f)
+            problemi.append(f"il PDF dei turni delle farmacie non si legge dalle {iso(err['quando']).astimezone(fuso()):%d/%m %H:%M}"
+                            f" ({err.get('errore', '')[:150]}): sul sito restano i turni di prima")
+        except (OSError, ValueError, KeyError):
+            pass
+    return problemi
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--sito", default=os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -638,6 +666,10 @@ def main():
         problemi += comunicati(gh, adesso, a.pi)
     except Exception as e:
         problemi.append(f"non riesco a controllare i comunicati per email ({type(e).__name__}: {e})")
+    try:
+        problemi += farmacie(adesso, a.pi)
+    except Exception as e:
+        problemi.append(f"non riesco a controllare i turni delle farmacie ({type(e).__name__}: {e})")
     note = []
     if a.pi:
         try:
