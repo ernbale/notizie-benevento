@@ -844,10 +844,10 @@ def segnaposti_strade(ora, poi, oggi, luoghi=None):
     non trova, e le voci senza strada, al centro del paese (strumenti/comuni_coordinate.json), con «centro» se la strada
     c'era ma non è sulla mappa. Rosso se qualcosa vale oggi, arancione se solo nei prossimi giorni. Le voci senza un
     Comune nel «luogo» (una statale) restano solo nell'elenco."""
-    from strade_luoghi import chiave, strade_nel_testo
+    from strade_luoghi import a_mano, chiave, strade_nel_testo
     with open(os.path.join(QUI, "comuni_coordinate.json"), encoding="utf-8") as f:
         coord = json.load(f)
-    luoghi = luoghi or {}
+    luoghi = {**(luoghi or {}), **a_mano()}   # quelle a mano valgono anche se la ricerca non è girata
     per = {}
     for n in ora + poi:
         comuni = comuni_di(n.get("luogo"))

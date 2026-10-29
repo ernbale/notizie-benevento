@@ -106,7 +106,9 @@ sempre sono una cosa utile»), cliccabile (tel:), preso da una fonte ufficiale: 
   solo e si separano ingrandendo (lui: «zoomando la mappa i pallini si separano?» → «sì fallo»: prima Benevento era
   un tondo solo al centro). Le strade le legge strumenti/strade_luoghi.py nel titolo e nel luogo e le cerca una volta
   su OpenStreetMap (vale solo se è in quel Comune, vicino al centro, col nome giusto; mai statali e provinciali);
-  quelle che non trova vanno al centro del paese e il riquadro lo dice. I dati li scrive segnaposti_strade in
+  quelle che non trova vanno al centro del paese e il riquadro lo dice. Un punto messo a mano (strumenti/
+  strade_a_mano.json, vince sempre) solo quando OpenStreetMap la strada ce l'ha con un altro nome: il cimitero di
+  Benevento per Ognissanti («via Cimitero» = Via del Cimitero; lui: «si aggiungi»). I dati li scrive segnaposti_strade in
   pagine.py (NB_PAGINA.strade); le voci senza un Comune nel «luogo» restano solo nell'elenco.
   Leaflet 1.9.4 sta sul sito (lib/leaflet-1.9.4, preso da cdnjs e controllato con unpkg), le mattonelle sono di OpenStreetMap (senza cookie, con
   la loro attribuzione); si carica solo in quella pagina. Al telefono un dito fa scorrere la pagina, due muovono la mappa.

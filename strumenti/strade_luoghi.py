@@ -32,6 +32,16 @@ UA = "NotizieBenevento/1.0 (https://notiziebenevento.it)"
 RIPROVA_DOPO = 7   # giorni: una strada non trovata si richiede dopo una settimana
 RAGGIO_KM = {"Benevento": 9}   # quanto può stare lontana dal centro del Comune (Benevento è grande)
 RAGGIO_KM_PAESE = 6
+A_MANO = os.path.join(QUI, "strade_a_mano.json")   # i punti messi a mano: vincono sulla ricerca
+
+
+def a_mano():
+    """Le strade messe a mano (strade_a_mano.json: il cimitero di Benevento, che la notizia chiama «via Cimitero»)."""
+    try:
+        with open(A_MANO, encoding="utf-8") as f:
+            return {k: v for k, v in json.load(f).items() if not k.startswith("_")}
+    except (OSError, ValueError):
+        return {}
 
 TIPI = (r"(?i:via|viale|piazza|piazzale|piazzetta|largo|corso|vico|vicolo|traversa|salita|rampa|contrada|c\.da|"
         r"località|frazione|rione|strada comunale|strada vicinale|ponte)")
@@ -141,7 +151,7 @@ def cerca(strada, comune, centro, attesa=1.1):
     prove = [({"street": strada, "city": comune, "county": "Benevento", "country": "Italia"}, False),
              ({"q": f"{strada}, {comune}, provincia di Benevento"}, False),
              ({"q": f"{nome}, {comune}"}, False),
-             # a Benevento tante «via X» stanno nella contrada X (via San Marco, contrada San Marco: il cimitero)
+             # a Benevento tante «via X» stanno nella contrada X (via San Marco, Contrada San Marco: il cimitero)
              ({"q": f"contrada {nome}, {comune}"}, True)]
     for p, solo_luoghi in prove:
         time.sleep(attesa)
@@ -150,7 +160,9 @@ def cerca(strada, comune, centro, attesa=1.1):
             dove = {_piano(str(ind.get(k) or "")) for k in ("city", "town", "village", "municipality", "hamlet")}
             punto = (float(r["lat"]), float(r["lon"]))
             cat, tipo = r.get("category") or r.get("class"), r.get("type")
-            if cat == "highway" and not solo_luoghi:
+            if solo_luoghi and cat == "highway" and "contrada" not in _parole(r.get("name") or ""):
+                continue   # nella ricerca per contrada: la contrada o una strada che si chiama «Contrada X»
+            if cat == "highway":
                 if tipo in ("bus_stop", "platform", "stop", "street_lamp", "crossing", "traffic_signals"):
                     continue
             elif cat != "place":
@@ -186,6 +198,7 @@ def main():
             luoghi = {**vecchi, **luoghi}
         except Exception:
             pass
+    luoghi.update(a_mano())
     with open(a.notizie, encoding="utf-8") as f:
         notizie = json.load(f)["notizie"]
     oggi = dt.date.today().isoformat()

@@ -1,0 +1,5 @@
+{
+ "_nota": "Strade messe a mano sulla mappa di /strade-chiuse/ (strumenti/strade_luoghi.py): valgono sempre, prima della ricerca su OpenStreetMap. Chiave «comune|strada» come la scrive la notizia, in minuscolo. Il 29 ott 2026 il cimitero di Benevento per Ognissanti (lui: «si aggiungi»): la notizia dice «via Cimitero» e «via San Marco», su OpenStreetMap sono «Via del Cimitero» (way 661529955) e «Contrada San Marco» (way 160151406), accanto al «Cimitero di Benevento» (way 160409696).",
+ "benevento|via cimitero": {"lat": 41.13923, "lon": 14.78989},
+ "benevento|via san marco": {"lat": 41.14062, "lon": 14.78986}
+}
