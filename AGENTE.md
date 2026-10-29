@@ -31,13 +31,14 @@ farlo giusto subito.
    Fremondoweb, Gazzetta di Benevento, Benevento Giornale, Il Caudino: con loro servono due testate). Appena una
    seconda testata riporta il fatto, aggiungila e passa a `confermata` (lo controlla `archivia.py`).
 3. **Cronaca con persone coinvolte:** almeno due testate, oppure una sola testata autorevole (regola 2); basta anche
-   un comunicato della Questura o di altre forze dell'ordine. **Nome e cognome si scrivono sempre quando li scrive una
-   fonte affidabile** (lui, 29 ott 2026: «se è citato da altri giornali o da posta affidabile sì sempre il nome»): un
-   giornale tra le fonti della notizia, un comunicato arrivato per posta da un ente pubblico, da una PEC o da un
-   mittente fidato, il comunicato di un sito ufficiale (Questura, forze dell'ordine). Vale anche con una sola fonte e
-   anche se il fatto accusa qualcuno (indagato, arrestato, denunciato, processato, condannato). Se il nome non lo
-   scrive nessuna di queste fonti (per esempio lo scrive solo un mittente da valutare), niente nome: età, paese e
-   ruolo bastano («un 53enne di Benevento»). Le accuse si riportano **con le parole esatte dei
+   un comunicato della Questura o di altre forze dell'ordine. **Nome e cognome si scrivono sempre** quando le fonti li
+   scrivono (lui, 29 ott 2026: «se è citato da altri giornali o da posta affidabile sì sempre il nome», «mostra sempre
+   i nomi tranne se è un'email non affidabile, allora da valutare»): giornali, comunicati per posta, siti ufficiali
+   (Questura, forze dell'ordine), anche con una sola fonte e anche se il fatto accusa qualcuno (indagato, arrestato,
+   denunciato, processato, condannato). L'eccezione è l'email di un mittente non affidabile (`"fonte": "da_valutare"`):
+   la valuta lui nella scheda Posta come tutto il comunicato (COMUNICATI.md) e, se la approva, il nome si scrive come
+   per gli altri. Se le fonti il nome non lo scrivono, età, paese e ruolo («un 53enne di Benevento»). Le accuse si
+   riportano **con le parole esatte dei
    giornali** («indagato», «arrestato», «denunciato», «presunto»): mai aggiungere, mai riassumere un'accusa con
    parole più pesanti. Nomi di vittime minorenni (anche se oggi sono maggiorenni ma erano minorenni al momento del
    fatto): mai, da nessuna parte. Se il titolo di un articolo fonte contiene quel nome, nell'elenco fonti scrivi il
@@ -984,8 +985,8 @@ mette in `diario/AAAA-MM-GG.json`; le notizie nuove e aggiornate, le fonti e le 
   provincia, vecchio o ripubblicato, già coperto da una notizia esistente (scrivi quale), pubblicità o comunicato
   promozionale, voce non confermata, cronaca troppo piccola, ecc. Il motivo deve essere concreto. Elenco vuoto `[]`
   solo se davvero non hai scartato niente.
-- Niente nomi di privati indagati, arrestati o coinvolti in fatti di cronaca, anche se il diario è privato (chi ha un
-  ruolo pubblico sì, come nelle notizie: regola 3).
+- I nomi delle persone come nelle notizie (regola 3; lui, 29 ott 2026: «mostra sempre i nomi»): sì quelli che
+  scrivono le fonti, mai quelli dei minori.
 - Senza il diario `archivia.py --giro` stampa ERRORE e non scrive niente.
 
 ## Prima di consegnare (obbligatorio)
