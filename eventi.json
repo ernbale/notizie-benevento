@@ -650,19 +650,22 @@
     {
      "testo": "L'associazione Corso Vivo, con il patrocinio del Comune di Benevento, organizza tre giorni di arte, musica, danza e animazione lungo Corso Garibaldi, da venerdì 30 ottobre a domenica 1° novembre. Tutti gli appuntamenti sono a ingresso libero. L'idea è sostenere i negozi del centro e riportare la gente a passeggiare sul corso.",
      "fonti": [
-      "NTR24"
+      "NTR24",
+      "InfoSannio"
      ]
     },
     {
      "testo": "Venerdì 30 ottobre, dalle 17 alle 19.30, la giornata è per i più piccoli: personaggi dei cartoni animati che girano per il corso, trucca bimbi vicino al Museo Arcos e sculture di palloncini. Sabato 31, dalle 17 alle 19, c'è lo speciale Halloween con giochi a tema, trucca bimbi e dolcetti; dalle 19 alle 21, in via Traiano, l'associazione Sabba de Nuce propone letture della Sibilla, purificazioni con erbe e campana tibetana e la presentazione di oli e unguenti naturali.",
      "fonti": [
-      "NTR24"
+      "NTR24",
+      "InfoSannio"
      ]
     },
     {
      "testo": "Domenica 1° novembre si chiude con musica e danza: dalle 17.30 alle 18.30, in piazza Roma, danze latine con Sophia Ficociello e Francesco Pinto; dalle 18.30 alle 19.30, nella zona dell'Arcos, canta dal vivo Michelle Manzo; dalle 19.30 alle 20.30, lungo Corso Garibaldi a partire da Palazzo Collenea, il finale con la cantante lirica Lavinia (Peiye) Zhao e Xun Zhou.",
      "fonti": [
-      "NTR24"
+      "NTR24",
+      "InfoSannio"
      ]
     }
    ],
@@ -671,6 +674,12 @@
      "nome": "NTR24",
      "titolo": "Nel weekend arte, musica e danza nel centro di Benevento: l’iniziativa dell’associazione ‘Corso Vivo’",
      "url": "https://www.ntr24.tv/2026/10/29/nel-weekend-arte-musica-e-danza-nel-centro-di-benevento-liniziativa-dellassociazione-corso-vivo/",
+     "data": "29 ott"
+    },
+    {
+     "nome": "InfoSannio",
+     "titolo": "Dal 30 ottobre al 1° novembre al Corso Garibaldi di Benevento musica, danza e spettacolo",
+     "url": "https://www.infosannionews.it/attualita/2026/dal-30-ottobre-al-1-novembre-al-corso-garibaldi-di-benevento-musica-danza-e-spettacolo.html",
      "data": "29 ott"
     }
    ],
@@ -949,6 +958,15 @@
      ]
     },
     {
+     "testo": "Ad aprire la serata è il preludio di Clemente Mastella «Francesco, il primo italiano». Poi il gruppo vocale salernitano, che vinse Sanremo Nuove Proposte nel 1995 con «Le ragazze», canta i suoi brani più noti e le sue versioni di celebri canzoni italiane e internazionali, con gli arrangiamenti per sole voci che lo distinguono.",
+     "fonti": [
+      "NTR24 (29/10)",
+      "Gazzetta di Benevento",
+      "BeneventoNews24",
+      "InfoSannio"
+     ]
+    },
+    {
      "testo": "Inizio alle 19.",
      "fonti": [
       "Accademia di Santa Sofia"
@@ -979,6 +997,30 @@
      "titolo": "Stagione 2026/2027",
      "url": "https://www.accademiadisantasofia.it/stagione-2026-2027/",
      "data": "senza data (letta 25 ott)"
+    },
+    {
+     "nome": "NTR24 (29/10)",
+     "titolo": "Accademia Santa Sofia, la stagione si apre con il concerto dei ‘Neri per Caso’ al Teatro Comunale",
+     "url": "https://www.ntr24.tv/2026/10/29/accademia-santa-sofia-la-stagione-si-apre-con-il-concerto-dei-neri-per-caso-al-teatro-comunale/",
+     "data": "29 ott"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "titolo": "Sabato 31 ottobre il Teatro Comunale ospiterà i \"Neri per Caso\", protagonisti di un concerto che attraverserà la storia della musica italiana e internazionale attraverso le possibilità espressive della voce",
+     "url": "https://www.gazzettabenevento.it/it/sabato-31-ottobre-il-teatro-comunale-ospitera-i-neri-caso-protagonisti-di-un-concerto-che",
+     "data": "29 ott"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "titolo": "I Neri per Caso aprono la stagione dell’Accademia di Santa Sofia",
+     "url": "https://www.beneventonews24.it/2026/10/29/i-neri-per-caso-aprono-la-stagione-dellaccademia-di-santa-sofia/",
+     "data": "29 ott"
+    },
+    {
+     "nome": "InfoSannio",
+     "titolo": "Neri per Caso al Teatro Comunale la stagione dell’Accademia di Santa Sofia apre con le voci che hanno conquistato Sanremo",
+     "url": "https://www.infosannionews.it/cultura/2026/neri-per-caso-al-teatro-comunale-la-stagione-dellaccademia-di-santa-sofia-apre-con-le-voci-che-hanno-conquistato-sanremo.html",
+     "data": "29 ott"
     }
    ],
    "immagine": "concerto",
