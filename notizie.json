@@ -1,7 +1,136 @@
 {
- "aggiornato": "2026-10-29T12:19+01:00",
+ "aggiornato": "2026-10-29T13:34+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "conservatorio-nicola-sala-80-borse-studio-il-molino-15-novembre",
+   "titolo": "Conservatorio di Benevento, 80 borse di studio da 500 euro per pasti e notti al Molino: domande entro il 15 novembre",
+   "titolo_google": "Conservatorio Benevento, 80 borse di studio: domande al 15 novembre",
+   "sintesi": "Il Conservatorio Nicola Sala di Benevento mette 40mila euro in 80 borse di studio fino a 500 euro per l'anno 2026/2027, da usare per pernottamenti e buoni pasto all'Housing Il Molino. Le domande si fanno online entro le 23.59 del 15 novembre.",
+   "categoria": "avvisi",
+   "luogo": "Benevento, Conservatorio Nicola Sala",
+   "pubblicato": "2026-10-29T12:39+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 3,
+   "in_vigore_fino": "2026-11-15",
+   "immagine": "musica-classica",
+   "contributo": {
+    "chi": [
+     "giovani"
+    ],
+    "temi": [
+     "scuola"
+    ],
+    "aiuto": [
+     "bonus"
+    ]
+   },
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/29/conservatorio-80-borse-di-studio-per-sostenere-gli-studenti-con-buoni-pasto-e-pernottamenti-a-il-molino/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Conservatorio statale di musica Nicola Sala di Benevento ha aperto il bando per 80 borse di studio dell'anno accademico 2026/2027: in tutto 40mila euro, fino a 500 euro a studente. Le domande si fanno solo online, con il modulo del Conservatorio, dal 28 ottobre fino alle 23.59 del 15 novembre 2026; entro la stessa data i documenti sul reddito vanno mandati a parte all'indirizzo borse.studio@conservatorio.bn.it. La domanda vale solo se arrivano tutti e due, il modulo e i documenti.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "La borsa non si riceve in soldi: si usa all'Housing Il Molino, per dormire in città (30 euro a notte a persona in camera doppia) o per i buoni pasto da 8 euro, uno per un pasto completo. Le due cose si possono mescolare finché c'è credito, e comunque entro il 31 ottobre 2027; le notti vanno prenotate e dipendono dai posti liberi. Il progetto si chiama «Il Molino – Sostegno alla frequenza mediante pernottamenti e buoni pasto».",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Possono chiederla gli iscritti ai corsi accademici di primo e secondo livello con un ISEE universitario fino a 35mila euro. Chi ha già un anno di studi alle spalle deve avere la media di almeno 24/30 e almeno il 60% dei crediti dell'anno; per chi è al primo anno conta il titolo di studio con cui è entrato. La graduatoria guarda a merito, reddito e distanza: chi arriva ogni giorno da un altro Comune e non ha casa a Benevento prende punti in più.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "I soldi sono del Conservatorio e la borsa è in più rispetto a quelle della Regione e dell'ADISURC, l'ente regionale per il diritto allo studio; non copre pasti o notti già pagati da altri aiuti. Se gli idonei saranno meno di 80, la borsa andrà a tutti.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando sarà pubblicata la graduatoria."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Conservatorio, 80 borse di studio per sostenere gli studenti con buoni pasto e pernottamenti a ‘Il Molino’",
+      "url": "https://www.ntr24.tv/2026/10/29/conservatorio-80-borse-di-studio-per-sostenere-gli-studenti-con-buoni-pasto-e-pernottamenti-a-il-molino/",
+      "data": "29 ott, 12:39"
+     }
+    ]
+   },
+   "zona": "benevento",
+   "foto": "musica-classica-5"
+  },
+  {
+   "id": "foglianise-via-roma-chiusa-notte-30-ottobre-centro-storico",
+   "titolo": "Foglianise, via Roma chiusa la notte del 30 ottobre per i lavori nel centro storico",
+   "titolo_google": "Foglianise, via Roma chiusa la notte del 30 ottobre",
+   "sintesi": "A Foglianise il tratto di via Roma fino all'ingresso di via Fontana resta chiuso al traffico dalle 00:01 alle 06:30 di venerdì 30 ottobre, per i lavori di recupero del centro storico.",
+   "categoria": "strade",
+   "luogo": "Foglianise, via Roma",
+   "pubblicato": "2026-10-29",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "in_vigore_dal": "2026-10-30",
+   "in_vigore_fino": "2026-10-30",
+   "traffico": "chiusa",
+   "immagine": "lavori-stradali",
+   "fonti": [
+    {
+     "nome": "Comune di Foglianise",
+     "url": "https://comune.foglianise.bn.it/albo-pretorio/?dettaglio_id=306432",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Foglianise il tratto di via Roma fino all'ingresso di via Fontana sarà chiuso al traffico venerdì 30 ottobre, dalle 00:01 alle 06:30. Lo ha ordinato il sindaco Giovanni Mastrocinque con l'ordinanza n. 51 del 29 ottobre.",
+      "fonti": [
+       "Comune di Foglianise"
+      ]
+     },
+     {
+      "testo": "La chiusura serve a una ditta che lavora alla riqualificazione delle aree urbane e al recupero del centro storico del paese, e vale solo per il tratto dove si lavora. La ditta deve mettere i cartelli di preavviso agli incroci, con l'indicazione dei percorsi alternativi, e garantire il passaggio dei mezzi di soccorso. Nelle notti del 27 e del 28 ottobre lo stesso tratto era già stato chiuso per i lavori sul costone del monte Caruso.",
+      "fonti": [
+       "Comune di Foglianise"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di Foglianise",
+      "titolo": "Ordinanza n. 51- Chiusura strada tratto via Roma - Ingresso via fontana",
+      "url": "https://comune.foglianise.bn.it/albo-pretorio/?dettaglio_id=306432",
+      "data": "29 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "zona": "provincia",
+   "foto": "lavori-stradali-20"
+  },
   {
    "id": "air-campania-2-novembre-orario-scuole-chiuse",
    "titolo": "Bus AIR Campania, lunedì 2 novembre niente corse scolastiche: vale l'orario dei giorni senza lezioni",
@@ -1174,6 +1303,10 @@
     {
      "nome": "Sorrisi",
      "url": "https://www.sorrisi.com/tv/reality-e-talent/tale-e-quale-show-il-vincitore-della-sesta-puntata-del-2026-e-la-classifica/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/29/video-selma-ezzine-fa-tris-a-tale-e-quale-show-standing-ovation-per-la-sua-dionne-warwick/"
     }
    ],
    "articolo": {
@@ -1210,6 +1343,13 @@
        "InfoSannio",
        "Sorrisi"
       ]
+     },
+     {
+      "testo": "Selma ha vinto la serata del 28 ottobre nei panni di Dionne Warwick.",
+      "fonti": [
+       "InfoSannio",
+       "BeneventoNews24"
+      ]
      }
     ],
     "divergono": [],
@@ -1226,6 +1366,12 @@
       "titolo": "“Tale e quale show”: il vincitore della sesta puntata del 2026 e la classifica",
       "url": "https://www.sorrisi.com/tv/reality-e-talent/tale-e-quale-show-il-vincitore-della-sesta-puntata-del-2026-e-la-classifica/",
       "data": "29 ott, 00:27"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "url": "https://www.beneventonews24.it/2026/10/29/video-selma-ezzine-fa-tris-a-tale-e-quale-show-standing-ovation-per-la-sua-dionne-warwick/",
+      "titolo": "VIDEO – Selma Ezzine fa tris a Tale e Quale Show: standing ovation per la sua Dionne Warwick",
+      "data": "29 ott, 12:19"
      }
     ]
    },
@@ -1252,6 +1398,18 @@
     {
      "nome": "Il Mattino",
      "url": "https://www.ilmattino.it/benevento/benevento_strisce_blu_spie_blu_auto_sosta-9854646.html"
+    },
+    {
+     "nome": "Lab TV",
+     "url": "https://www.labtv.net/attualita/2026/10/29/benevento-smart-parking-al-via-i-sensori-intelligenti-da-piazzale-catullo-a-via-porta-rufina/"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/29/benevento-arrivano-i-sensori-di-parcheggio-via-allinstallazione-degli-occhi-elettronici-sugli-stalli-blu/"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/attualita/2026/smart-parking-a-benevento-arrivano-i-sensori-intelligenti-in-opera-da-piazzale-catullo-a-via-porta-rufina.html"
     }
    ],
    "articolo": {
@@ -1259,14 +1417,24 @@
      {
       "testo": "Giovedì 29 ottobre il Servizio Traffico del Comune ha pubblicato all'albo pretorio l'ordinanza che accompagna i lavori: fino a venerdì 27 novembre, salvo fine anticipata, nei parcheggi a pagamento delle strade dove si montano i sensori la sosta potrà essere vietata per il tempo strettamente necessario, una zona dopo l'altra. I cartelli con i divieti vanno messi almeno 48 ore prima. Il Comune parla di installazione dei sensori per l'avvio definitivo dello «smart parking», il parcheggio intelligente.",
       "fonti": [
-       "Comune di Benevento (albo pretorio)"
+       "Comune di Benevento (albo pretorio)",
+       "NTR24"
       ],
       "giorno": "2026-10-29"
      },
      {
       "testo": "A Benevento sono cominciati i lavori per mettere un sensore sotto ogni parcheggio a pagamento sulle strisce blu. Li sta montando BeMobi, la società a cui il Comune ha affidato la sosta a pagamento da circa due mesi. I primi sono già nell'area del mercato di viale Mellusi (piazza Risorgimento), in piazzale Catullo vicino al Teatro Romano e in via Porta Rufina, nella zona delle Poste centrali.",
       "fonti": [
-       "Il Mattino"
+       "Il Mattino",
+       "Lab TV",
+       "InfoSannio"
+      ],
+      "giorno": "2026-10-29"
+     },
+     {
+      "testo": "Nelle zone dei lavori, quando arrivano i cartelli, scatta il divieto di sosta e di fermata con la rimozione delle auto; i divieti si tolgono a ogni fase finita. La ditta deve avvisare i residenti con fogli affissi vicino ai passi carrabili, con giorni e orari, e lasciare libero il passaggio a piedi verso i negozi. I lavori li ha comunicati Benevento Mobilità, il nome della società BeMobi, e i sensori sono del modello K-Place 2.0.",
+      "fonti": [
+       "NTR24"
       ],
       "giorno": "2026-10-29"
      },
@@ -1274,6 +1442,13 @@
       "testo": "I sensori sono piccoli dischi neri con un bordo azzurro, fissati nell'asfalto al centro di ogni posto auto. Si accorgono dell'auto parcheggiata dai cambi di luce e di temperatura e mandano subito l'informazione a un sistema collegato in rete.",
       "fonti": [
        "Il Mattino"
+      ],
+      "giorno": "2026-10-29"
+     },
+     {
+      "testo": "Con il sistema acceso ci sarà anche un margine per chi si ferma poco: dal momento in cui l'auto si ferma passano 15 minuti prima che parta l'allerta automatica per il controllo della sosta.",
+      "fonti": [
+       "Lab TV"
       ],
       "giorno": "2026-10-29"
      },
@@ -1293,7 +1468,17 @@
      }
     ],
     "cronologia": [],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "I primi sensori sono stati montati in piazzale Catullo e in via Porta Rufina e serviranno a vedere in tempo reale quali posti sono liberi.",
+      "fonti": [
+       "Il Mattino",
+       "Lab TV",
+       "InfoSannio",
+       "NTR24"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [
      "Quando il sistema dei sensori sarà acceso e come gli automobilisti potranno vedere i posti liberi."
@@ -1311,6 +1496,24 @@
       "titolo": "Benevento, strisce blu: arrivano i sensori intelligenti. Installate le “spie” per le auto in sosta",
       "url": "https://www.ilmattino.it/benevento/benevento_strisce_blu_spie_blu_auto_sosta-9854646.html",
       "data": "29 ott, 00:35"
+     },
+     {
+      "nome": "Lab TV",
+      "url": "https://www.labtv.net/attualita/2026/10/29/benevento-smart-parking-al-via-i-sensori-intelligenti-da-piazzale-catullo-a-via-porta-rufina/",
+      "titolo": "Benevento, smart parking: al via i sensori intelligenti da Piazzale Catullo a via Porta Rufina",
+      "data": "29 ott, 12:09"
+     },
+     {
+      "nome": "NTR24",
+      "url": "https://www.ntr24.tv/2026/10/29/benevento-arrivano-i-sensori-di-parcheggio-via-allinstallazione-degli-occhi-elettronici-sugli-stalli-blu/",
+      "titolo": "Benevento, arrivano i sensori di parcheggio: via all’installazione degli occhi elettronici sugli stalli blu",
+      "data": "29 ott, 12:13"
+     },
+     {
+      "nome": "InfoSannio",
+      "url": "https://www.infosannionews.it/attualita/2026/smart-parking-a-benevento-arrivano-i-sensori-intelligenti-in-opera-da-piazzale-catullo-a-via-porta-rufina.html",
+      "titolo": "Smart Parking, a Benevento arrivano i sensori intelligenti. In opera da Piazzale Catullo a via Porta Rufina",
+      "data": "29 ott, 12:55"
      }
     ],
     "aggiornamento": {
@@ -3031,10 +3234,6 @@
    "importanza": 4,
    "fonti": [
     {
-     "nome": "Ottopagine",
-     "url": "https://www.ottopagine.it/bn/cronaca/442392/inchiesta-santamaria-la-consulenza-su-telefonini-ipad-e-pc-sara-disposta-da-pm.shtml"
-    },
-    {
      "nome": "Anteprima24",
      "url": "https://www.anteprima24.it/benevento/inchiesta-comune-di-benevento-dalle-dichiarazioni-di-santamaria-ai-telefoni-sequestrati-le-prossime-tappe/"
     },
@@ -3045,10 +3244,21 @@
     {
      "nome": "Il Sannio Quotidiano",
      "url": "https://www.ilsannioquotidiano.it/2026/10/29/caso-santamaria-via-libera-alla-copia-forense-dei-dispositivi-degli-indagati/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/442492/santamaria-prima-presa-di-contatto-in-procura-per-il-nuovo-difensore.shtml"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Giovedì 29 ottobre in mattinata Gennaro Santamaria, l'ex dirigente comunale da cui è partita l'inchiesta, ha un nuovo avvocato: Ettore Freda, del foro di Avellino, è andato in Procura insieme all'avvocato Antonio Di Santo, che resta tra i difensori, per un primo incontro con il procuratore aggiunto Gianfranco Scarfò. Scarfò dirige l'indagine dei carabinieri insieme alla pm Maria Colucci.",
+      "fonti": [
+       "Ottopagine (29/10)"
+      ],
+      "giorno": "2026-10-29"
+     },
      {
       "testo": "Nell'inchiesta sul Comune di Benevento la gip Maria Amoruso ha detto no alla richiesta di incidente probatorio presentata da un avvocato della difesa: chiedeva che la copia completa dei dati di cellulari, iPad, computer e tablet di sedici indagati la facesse un perito scelto dal giudice. Così sarà la pm Maria Colucci, mercoledì 4 novembre in Procura, a dare l'incarico a un consulente tecnico suo.",
       "fonti": [
@@ -3100,9 +3310,19 @@
       ]
      }
     ],
-    "divergono": [],
+    "divergono": [
+     {
+      "testo": "Ottopagine il 29 ottobre scrive che le dichiarazioni di Santamaria andranno ripetute davanti alle parti «dal 3 dicembre in poi», con la copia dei dati il giorno dopo; il 28 ottobre lo stesso giornale, Anteprima24 e Lab TV scrivevano 3 e 4 novembre. Nel racconto restano le date del 3 e 4 novembre, scritte da più giornali.",
+      "fonti": [
+       "Ottopagine (29/10)",
+       "Ottopagine",
+       "Lab TV"
+      ]
+     }
+    ],
     "non_si_sa": [
-     "Quanto tempo servirà al consulente per copiare e analizzare i dati."
+     "Quanto tempo servirà al consulente per copiare e analizzare i dati.",
+     "Se l'incidente probatorio sulle dichiarazioni di Santamaria comincia il 3 novembre o il 3 dicembre."
     ],
     "fonti": [
      {
@@ -3128,6 +3348,12 @@
       "titolo": "Caso Santamaria, via libera alla copia forense dei dispositivi degli indagati",
       "url": "https://www.ilsannioquotidiano.it/2026/10/29/caso-santamaria-via-libera-alla-copia-forense-dei-dispositivi-degli-indagati/",
       "data": "29 ott, 09:12"
+     },
+     {
+      "nome": "Ottopagine (29/10)",
+      "url": "https://www.ottopagine.it/bn/cronaca/442492/santamaria-prima-presa-di-contatto-in-procura-per-il-nuovo-difensore.shtml",
+      "titolo": "Santamaria, prima presa di contatto in Procura per il nuovo difensore",
+      "data": "29 ott, 12:13"
      }
     ]
    },
@@ -9453,12 +9679,12 @@
   },
   {
    "id": "castelpoto-santa-croce-del-sannio-elenco-elettori-fuori-sede",
-   "titolo": "Elettori fuori sede, ventidue Comuni del Sannio hanno aperto l'elenco: domande entro il 31 dicembre",
-   "titolo_google": "Elettori fuori sede in 22 Comuni del Sannio: come fare",
-   "sintesi": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni, Limatola, Torrecuso, San Lorenzello, Montesarchio, San Marco dei Cavoti, Ponte, Paupisi, Pannarano, Moiano e Castelvenere hanno aperto l'elenco degli elettori fuori sede previsto dalla nuova legge elettorale: chi per studio, lavoro o cure vive in una regione diversa da quella in cui vota può chiedere di votare dove abita. Per studio e lavoro la domanda va fatta entro il 31 dicembre, per le votazioni dell'anno dopo.",
+   "titolo": "Elettori fuori sede, ventitré Comuni del Sannio hanno aperto l'elenco: domande entro il 31 dicembre",
+   "titolo_google": "Elettori fuori sede in 23 Comuni del Sannio: come fare",
+   "sintesi": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni, Limatola, Torrecuso, San Lorenzello, Montesarchio, San Marco dei Cavoti, Ponte, Paupisi, Pannarano, Moiano, Castelvenere e Castelvetere in Val Fortore hanno aperto l'elenco degli elettori fuori sede previsto dalla nuova legge elettorale: chi per studio, lavoro o cure vive in una regione diversa da quella in cui vota può chiedere di votare dove abita. Per studio e lavoro la domanda va fatta entro il 31 dicembre, per le votazioni dell'anno dopo.",
    "categoria": "avvisi",
    "zona": "provincia",
-   "luogo": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni, Limatola, Torrecuso, San Lorenzello, Montesarchio, San Marco dei Cavoti, Ponte, Paupisi, Pannarano, Moiano e Castelvenere",
+   "luogo": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni, Limatola, Torrecuso, San Lorenzello, Montesarchio, San Marco dei Cavoti, Ponte, Paupisi, Pannarano, Moiano, Castelvenere e Castelvetere in Val Fortore",
    "immagine": "elezioni",
    "pubblicato": "2026-10-27",
    "stato": "ufficiale",
@@ -9573,12 +9799,24 @@
      "nome": "Comune di Castelvenere",
      "url": "https://www.comune.castelvenere.bn.it/novita/avvisi/novita_355.html",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di Castelvetere in Val Fortore",
+     "url": "https://www.comune.castelvetereinvalfortore.bn.it/novita/notizie/novita_110.html",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Giovedì 29 ottobre l'elenco degli elettori fuori sede l'ha aperto anche Castelvenere, in Valle Telesina: possono chiedere di votare lì studenti e lavoratori domiciliati in paese per almeno nove mesi, chi si cura in Campania per almeno tre mesi e chi assiste un familiare, se iscritti nelle liste di un Comune fuori regione. Vale per politiche, europee e referendum, non per le comunali e le regionali. Con Castelvenere i Comuni del Sannio che hanno aperto l'elenco sono ventidue.",
+      "testo": "Giovedì 29 ottobre l'elenco degli elettori fuori sede l'ha aperto anche Castelvetere in Val Fortore: l'avviso, con i requisiti e il modulo, è sul sito del Comune. Con Castelvetere i Comuni del Sannio che hanno aperto l'elenco sono ventitré.",
+      "fonti": [
+       "Comune di Castelvetere in Val Fortore"
+      ],
+      "giorno": "2026-10-29"
+     },
+     {
+      "testo": "Giovedì 29 ottobre l'elenco degli elettori fuori sede l'ha aperto anche Castelvenere, in Valle Telesina: possono chiedere di votare lì studenti e lavoratori domiciliati in paese per almeno nove mesi, chi si cura in Campania per almeno tre mesi e chi assiste un familiare, se iscritti nelle liste di un Comune fuori regione. Vale per politiche, europee e referendum, non per le comunali e le regionali. ",
       "fonti": [
        "Comune di Castelvenere"
       ],
@@ -9916,15 +10154,22 @@
       "url": "https://www.comune.ponte.bn.it/novita/avvisi/novita_15.html",
       "data": "29 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "Comune di Castelvetere in Val Fortore",
+      "titolo": "ISTITUZIONE ELENCO COMUNALE DEGLI ELETTORI FUORI SEDE",
+      "url": "https://www.comune.castelvetereinvalfortore.bn.it/novita/notizie/novita_110.html",
+      "data": "29 ott",
+      "ufficiale": true
      }
     ],
     "aggiornamento": {
-     "testo": "Mercoledì 28 ottobre anche Moiano ha pubblicato le istruzioni per il voto fuori sede: i Comuni del Sannio con l'elenco aperto sono ventuno.",
+     "testo": "Giovedì 29 ottobre l'elenco degli elettori fuori sede l'ha aperto anche Castelvetere in Val Fortore: i Comuni del Sannio sono ventitré.",
      "fonti": [
-      "Comune di Moiano"
+      "Comune di Castelvetere in Val Fortore"
      ],
-     "quando": "2026-10-28T15:15+01:00",
-     "titolo_prima": "Elettori fuori sede, sedici Comuni del Sannio hanno aperto l'elenco: domande entro il 31 dicembre"
+     "quando": "2026-10-29T13:34+01:00",
+     "titolo_prima": "Elettori fuori sede, ventidue Comuni del Sannio hanno aperto l'elenco: domande entro il 31 dicembre"
     }
    },
    "foto": "elezioni-3",
