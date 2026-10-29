@@ -1,7 +1,334 @@
 {
- "aggiornato": "2026-10-29T17:17+01:00",
+ "aggiornato": "2026-10-29T18:16+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "casalduni-ex-discarica-largo-croce-regione-74mila-euro-indagini",
+   "titolo": "Casalduni, dalla Regione oltre 74mila euro per le indagini sull'ex discarica di Largo Croce: il sito non è inquinato",
+   "titolo_google": "Casalduni, ex discarica Largo Croce non inquinata: 74mila euro",
+   "sintesi": "La Giunta della Regione Campania ha dato al Comune di Casalduni oltre 74mila euro per pagare le indagini ambientali fatte nell'ex discarica di località Largo Croce. Le verifiche hanno accertato che il sito non è contaminato e l'area è uscita dall'elenco dei siti inquinati.",
+   "categoria": "politica",
+   "luogo": "Casalduni, località Largo Croce",
+   "pubblicato": "2026-10-29T17:51+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 3,
+   "immagine": "rifiuti",
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/29/casalduni-dalla-regione-fondi-per-finanziare-le-indagini-ambientali-nellex-discarica-di-largo-croce/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "La Giunta della Regione Campania ha destinato oltre 74mila euro al Comune di Casalduni. I soldi servono a pagare le indagini ambientali fatte nell'area dell'ex discarica di località Largo Croce.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Le verifiche hanno accertato che il terreno non è contaminato. Per questo l'area è stata tolta dall'Anagrafe dei siti inquinati, l'elenco regionale dei luoghi da bonificare: un risultato importante per valorizzare quella parte del territorio.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Il finanziamento arriva dal Programma operativo complementare 2014-2020 «Ambiente e Territorio», un fondo della Regione per gli interventi sull'ambiente.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Che uso farà il Comune dell'area di Largo Croce adesso che non è più tra i siti inquinati."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Casalduni, dalla Regione fondi per finanziare le indagini ambientali nell’ex discarica di Largo Croce",
+      "url": "https://www.ntr24.tv/2026/10/29/casalduni-dalla-regione-fondi-per-finanziare-le-indagini-ambientali-nellex-discarica-di-largo-croce/",
+      "data": "29 ott, 17:51"
+     }
+    ]
+   },
+   "zona": "fortore",
+   "foto": "rifiuti-9"
+  },
+  {
+   "id": "campolattaro-valerio-barbieri-riconfermato-direttore-generale-unimol",
+   "titolo": "Valerio Barbieri, di Campolattaro, riconfermato direttore generale dell'Università del Molise fino al 2031",
+   "titolo_google": "Unimol, il sannita Valerio Barbieri riconfermato direttore",
+   "sintesi": "Il Consiglio di amministrazione dell'Università del Molise ha rinnovato all'unanimità l'incarico di direttore generale a Valerio Barbieri, originario di Campolattaro, per gli anni dal 1° maggio 2027 al 30 aprile 2031. Guida l'amministrazione dell'ateneo dal 2016.",
+   "categoria": "altro",
+   "luogo": "Campolattaro",
+   "pubblicato": "2026-10-29T17:32+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 2,
+   "immagine": "universita",
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/29/universita-del-molise-il-sannita-valerio-barbieri-riconfermato-direttore-generale-2/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/valerio-barbieri-direttore-generale-unimol/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Valerio Barbieri, originario di Campolattaro, resterà direttore generale dell'Università degli Studi del Molise per altri quattro anni, dal 1° maggio 2027 al 30 aprile 2031. Il Consiglio di amministrazione dell'ateneo gli ha rinnovato l'incarico all'unanimità, su proposta del rettore e con il parere favorevole del Senato accademico.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Barbieri guida l'amministrazione dell'università molisana dal 2016. Il rettore Giuseppe Peter Vanoli dice che la proposta si fonda sulle sue competenze e che il suo contributo sarà «fondamentale» per la nuova fase dell'ateneo. Barbieri ha ringraziato rettore, Consiglio e Senato «per la fiducia rinnovata».",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Da febbraio 2026 Barbieri è anche presidente del Nucleo di valutazione del Comune di Benevento, l'organismo che controlla i risultati degli uffici comunali.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Il rinnovo all'unanimità per il quadriennio 2027-2031 e la guida dell'amministrazione dal 2016.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Università del Molise, il sannita Valerio Barbieri riconfermato direttore generale",
+      "url": "https://www.ntr24.tv/2026/10/29/universita-del-molise-il-sannita-valerio-barbieri-riconfermato-direttore-generale-2/",
+      "data": "29 ott, 17:02"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Valerio Barbieri confermato Direttore Generale presso l’UniMol",
+      "url": "https://www.cronachedelsannio.it/sannionews24/valerio-barbieri-direttore-generale-unimol/",
+      "data": "29 ott, 17:32"
+     }
+    ]
+   },
+   "zona": "fortore",
+   "foto": "universita-8"
+  },
+  {
+   "id": "airola-comitato-genitori-commissaria-prefettizia-giovani-palaruggiero",
+   "titolo": "Airola, il Comitato Genitori dalla commissaria prefettizia: punto di ascolto per i ragazzi, Palaruggiero e sicurezza",
+   "titolo_google": "Airola, Comitato Genitori incontra la commissaria prefettizia",
+   "sintesi": "Il Comitato Genitori Airola ha incontrato la commissaria prefettizia Olimpia Cerrata, che guida il Comune. Ha chiesto un punto di ascolto per i ragazzi con l'ASL, la tutela del Palaruggiero, spazi per i giovani e più attenzione alla sicurezza dopo gli episodi delle ultime settimane.",
+   "categoria": "altro",
+   "luogo": "Airola",
+   "pubblicato": "2026-10-29T17:49+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 2,
+   "immagine": "riunione",
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/29/airola-il-comitato-genitori-incontra-la-commissaria-prefettizia-al-centro-giovani-sport-e-sicurezza/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/29/airola-incontro-tra-comitato-genitori-e-commissaria-finalmente-qualcuno-si-accorge-che-esistono-i-cittadini/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Comitato Genitori Airola – Presenza e Ascolto ha incontrato Olimpia Cerrata, la commissaria prefettizia che guida il Comune di Airola, in Valle Caudina. Il Comitato ha definito l'incontro «positivo e costruttivo» e spera che sia l'inizio di un percorso concreto.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Il primo tema è il disagio dei ragazzi: i genitori chiedono iniziative di prevenzione e propongono un punto di ascolto con l'ASL e l'Ambito territoriale sociale, l'ente dei servizi sociali della zona. «Il disagio giovanile non può essere lasciato sulle sole spalle delle famiglie», dice il Comitato.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Il Comitato ha parlato anche della mancanza di impianti sportivi, compresi quelli per le scuole, e ha chiesto di conservare e valorizzare il Palaruggiero, l'unico impianto sportivo comunale. Ha chiesto poi di recuperare spazi dove i ragazzi possano incontrarsi.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "L'ultimo punto è la sicurezza: i genitori hanno riportato le preoccupazioni di tanti cittadini per gli episodi delle ultime settimane e chiedono di tutelare tutti i minorenni e di puntare sul rispetto reciproco. La commissaria, secondo il Comitato, si è impegnata a portare queste richieste al prefetto di Benevento.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "I temi dell'incontro: ascolto dei ragazzi, sport e Palaruggiero, spazi di incontro, sicurezza.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Se il Comune prenderà decisioni concrete sulle richieste del Comitato e con quali tempi."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Airola, il Comitato Genitori incontra la commissaria prefettizia: al centro giovani, sport e sicurezza",
+      "url": "https://www.ntr24.tv/2026/10/29/airola-il-comitato-genitori-incontra-la-commissaria-prefettizia-al-centro-giovani-sport-e-sicurezza/",
+      "data": "29 ott, 16:21"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Airola, incontro tra Comitato Genitori e Commissaria: “Finalmente qualcuno si accorge che esistono i cittadini”",
+      "url": "https://www.beneventonews24.it/2026/10/29/airola-incontro-tra-comitato-genitori-e-commissaria-finalmente-qualcuno-si-accorge-che-esistono-i-cittadini/",
+      "data": "29 ott, 17:49"
+     }
+    ]
+   },
+   "zona": "caudina",
+   "foto": "riunione-15"
+  },
+  {
+   "id": "benevento-cappuccini-uomo-incosciente-panchina-san-pio",
+   "titolo": "Benevento, uomo trovato privo di sensi su una panchina vicino alla chiesa dei Cappuccini: portato al San Pio",
+   "titolo_google": "Benevento, uomo privo di sensi su una panchina ai Cappuccini",
+   "sintesi": "Giovedì 29 ottobre, nel primo pomeriggio, alcuni passanti hanno visto un uomo tra i 50 e i 60 anni che non rispondeva, accasciato su una panchina vicino alla chiesa dei Cappuccini, alla fermata dei bus. Vigili urbani e ambulanza lo hanno fatto riprendere e portato all'ospedale San Pio.",
+   "categoria": "cronaca",
+   "luogo": "Benevento, chiesa dei Cappuccini",
+   "pubblicato": "2026-10-29T17:30+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/segnalazione-panchina-ospedale-uomo/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Giovedì 29 ottobre, nel primo pomeriggio, alcuni cittadini hanno notato un uomo accasciato su una panchina vicino alla chiesa dei Cappuccini, nella zona alta di Benevento, dove c'è la fermata dei bus urbani ed extraurbani. L'uomo, tra i 50 e i 60 anni, non rispondeva e respirava a fatica.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Sono arrivati i vigili urbani e un'ambulanza della Misericordia. Dopo alcuni minuti l'uomo si è svegliato, ma era confuso e non riusciva a rispondere alle domande. Sulle braccia aveva due aghi per le flebo: probabilmente fino a poche ore prima era ricoverato in ospedale.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Alla fine è stato portato all'ospedale San Pio per le cure.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Chi è l'uomo e se era stato dimesso o si era allontanato da un ospedale.",
+     "Come sta adesso."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Uomo segnalato in stato di incoscienza sulla panchina: portato in ospedale",
+      "url": "https://www.anteprima24.it/benevento/segnalazione-panchina-ospedale-uomo/",
+      "data": "29 ott, 17:30"
+     }
+    ]
+   },
+   "zona": "benevento"
+  },
+  {
+   "id": "san-giorgio-la-molara-processione-defunti-strade-chiuse-2-novembre-2026",
+   "titolo": "San Giorgio la Molara, processione dei defunti il 2 novembre: strade chiuse dalle 19 alle 20",
+   "titolo_google": "San Giorgio la Molara, processione 2 novembre: strade chiuse",
+   "sintesi": "Lunedì 2 novembre, dalle 19 alle 20, a San Giorgio la Molara passa la processione per la commemorazione dei defunti. In piazza Madonna di Fatima, via Airella e via San Marcuccio non si potrà circolare né sostare con auto, moto e bici.",
+   "categoria": "strade",
+   "luogo": "San Giorgio la Molara, piazza Madonna di Fatima, via Airella e via San Marcuccio",
+   "pubblicato": "2026-10-29",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "immagine": "processione",
+   "traffico": "chiusa",
+   "in_vigore_dal": "2026-11-02",
+   "in_vigore_fino": "2026-11-02",
+   "fonti": [
+    {
+     "nome": "Comune di San Giorgio la Molara",
+     "url": "https://comune.sangiorgiolamolara.bn.it/albo-pretorio/?dettaglio_id=306452",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Lunedì 2 novembre, dalle 19 alle 20, a San Giorgio la Molara, nel Fortore, passa la processione per la commemorazione dei fedeli defunti, organizzata dalla parrocchia Nostra Signora di Fatima. Per questo il Comune vieta il passaggio e la sosta di auto, moto e bici in piazza Madonna di Fatima, via Airella e via San Marcuccio.",
+      "fonti": [
+       "Comune di San Giorgio la Molara"
+      ]
+     },
+     {
+      "testo": "Chi abita in quelle strade potrà entrare e uscire dai varchi più vicini non occupati dal corteo, se la sicurezza lo permette. L'ordinanza è all'albo pretorio del Comune.",
+      "fonti": [
+       "Comune di San Giorgio la Molara"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di San Giorgio la Molara",
+      "titolo": "PROCESSIONE “COMMEMORAZIONE DEI FEDELI DEFUNTI” ORDINANZA DI REGOLAMENTAZIONE DELLA CIRCOLAZIONE STRADALE PER IL GIORNO 02/11/2026",
+      "url": "https://comune.sangiorgiolamolara.bn.it/albo-pretorio/?dettaglio_id=306452",
+      "data": "29 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "zona": "fortore",
+   "foto": "processione-8"
+  },
   {
    "id": "san-pio-lettera-paziente-corpo-estraneo-bronchi",
    "titolo": "Ospedale San Pio di Benevento, una paziente ringrazia Pronto soccorso, Pneumologia e Rianimazione: «mi avete salvato la vita»",
@@ -19,6 +346,14 @@
      "nome": "Ospedale San Pio",
      "url": "https://www.aosanpio.it/",
      "ufficiale": true
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/aorn-san-pio-lettera-paziente/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/29/corpo-estraneo-nei-bronchi-per-mesi-salvata-da-una-polmonite-grave-allaorn-san-pio-di-benevento/"
     }
    ],
    "comunicati": [
@@ -29,7 +364,8 @@
      {
       "testo": "Una paziente curata all'ospedale San Pio di Benevento ha scritto una lettera di ringraziamento alla direttrice generale dell'Azienda ospedaliera, Maria Morgante, per le cure ricevute durante il ricovero. I ringraziamenti vanno a tre reparti: Medicina d'urgenza e Pronto soccorso, Pneumologia e Anestesia e rianimazione.",
       "fonti": [
-       "Ospedale San Pio"
+       "Ospedale San Pio",
+       "Anteprima24"
       ]
      },
      {
@@ -41,7 +377,8 @@
      {
       "testo": "Poco dopo il ricovero la broncoscopia, l'esame che guarda dentro i bronchi, ha confermato la presenza del corpo estraneo. Rimasto per mesi nelle vie respiratorie, aveva chiuso una parte dei bronchi di destra e isolato un lobo del polmone, dove si era formato anche un ascesso. Vista la gravità del quadro, i medici hanno chiesto l'assistenza del reparto di Anestesia e rianimazione, diretto da Vincenzo Colella: dopo l'intubazione con maschera laringea, il corpo estraneo è stato tolto con pinze apposite.",
       "fonti": [
-       "Ospedale San Pio"
+       "Ospedale San Pio",
+       "BeneventoNews24"
       ]
      },
      {
@@ -68,6 +405,18 @@
       "url": "https://www.aosanpio.it/",
       "data": "29 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Aorn San Pio, lettera di una paziente",
+      "url": "https://www.anteprima24.it/benevento/aorn-san-pio-lettera-paziente/",
+      "data": "29 ott, 17:18"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Corpo estraneo nei bronchi per mesi: salvata da una polmonite grave al San Pio",
+      "url": "https://www.beneventonews24.it/2026/10/29/corpo-estraneo-nei-bronchi-per-mesi-salvata-da-una-polmonite-grave-allaorn-san-pio-di-benevento/",
+      "data": "29 ott, 17:30"
      }
     ]
    },
@@ -102,6 +451,14 @@
     {
      "nome": "Il Caudino",
      "url": "https://ilcaudino.it/valle-caudina-coppia-indagata-per-spaccio-di-cocaina-e-detenzione-di-esplosivo-uid-5/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/indagata-coppia-di-bucciano-santagata-de-goti-per-spaccio-di-cocaina-e-detenzione-di-ordigno-esplosivo-micidiale/"
+    },
+    {
+     "nome": "TeleradioNews",
+     "url": "https://www.teleradio-news.it/2026/10/29/bucciano-s-agata-de-goti-bn-spaccio-di-cocaina-e-detenzione-ordigno-micidiale-coppia-indagata/"
     }
    ],
    "articolo": {
@@ -112,7 +469,9 @@
        "NTR24",
        "Anteprima24",
        "BeneventoNews24",
-       "Il Caudino"
+       "Il Caudino",
+       "TV7 Benevento",
+       "TeleradioNews"
       ]
      },
      {
@@ -175,6 +534,18 @@
       "titolo": "Valle Caudina: coppia indagata per spaccio di cocaina e detenzione di esplosivo",
       "url": "https://ilcaudino.it/valle-caudina-coppia-indagata-per-spaccio-di-cocaina-e-detenzione-di-esplosivo-uid-5/",
       "data": "29 ott, 16:14"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Indagata coppia di Bucciano/Sant’Agata De Goti per spaccio di cocaina e detenzione di ordigno esplosivo micidiale.",
+      "url": "https://www.tvsette.net/indagata-coppia-di-bucciano-santagata-de-goti-per-spaccio-di-cocaina-e-detenzione-di-ordigno-esplosivo-micidiale/",
+      "data": "29 ott, 16:24"
+     },
+     {
+      "nome": "TeleradioNews",
+      "titolo": "Bucciano-S. Agata De’ Goti (BN). Spaccio di cocaina e detenzione ordigno micidiale: coppia indagata",
+      "url": "https://www.teleradio-news.it/2026/10/29/bucciano-s-agata-de-goti-bn-spaccio-di-cocaina-e-detenzione-ordigno-micidiale-coppia-indagata/",
+      "data": "29 ott, 17:31"
      }
     ]
    },
@@ -266,6 +637,10 @@
     {
      "nome": "BeneventoNews24",
      "url": "https://www.beneventonews24.it/2026/10/29/giudice-sportivo-cremonese-benevento-senza-barbieri-e-kouan-ammenda-per-maita/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/benevento-calcio-kouan-salta-la-cremonese-squalificato-anche-barbieri-tra-i-grigiorossi/"
     }
    ],
    "articolo": {
@@ -274,7 +649,8 @@
       "testo": "Il Benevento giocherà senza Kouan sabato 31 ottobre a Cremona, nella decima giornata di Serie B. Il Giudice Sportivo della Lega B lo ha squalificato per un turno: era diffidato e martedì, nel pareggio 1-1 col Catanzaro al Vigorito, ha preso il quinto cartellino giallo.",
       "fonti": [
        "BeneventoNews24",
-       "Anteprima24"
+       "Anteprima24",
+       "TV7 Benevento"
       ]
      },
      {
@@ -316,6 +692,12 @@
       "titolo": "Giudice Sportivo, Cremonese-Benevento senza Barbieri e Kouan. Ammenda per Maita",
       "url": "https://www.beneventonews24.it/2026/10/29/giudice-sportivo-cremonese-benevento-senza-barbieri-e-kouan-ammenda-per-maita/",
       "data": "29 ott, 15:37"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Benevento calcio, Kouan salta la Cremonese: squalificato anche Barbieri tra i grigiorossi",
+      "url": "https://www.tvsette.net/benevento-calcio-kouan-salta-la-cremonese-squalificato-anche-barbieri-tra-i-grigiorossi/",
+      "data": "29 ott, 17:15"
      }
     ]
    },
@@ -342,6 +724,22 @@
     {
      "nome": "Anteprima24",
      "url": "https://www.anteprima24.it/benevento/il-conservatorio-nicola-sala-presenta-la-vicedirettrice-e-la-squadra-di-direzione/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/il-conservatorio-nicola-sala-presenta-la-vicedirettrice-novelli-e-la-squadra-di-direzione/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/conservatorio-nomina-vicedirettrice-direzione/"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/universita/2026/il-conservatorio-nicola-sala-presenta-la-vicedirettrice-e-la-squadra-di-direzione.html"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/442540/conservatorio-nicola-sala-presenta-vicedirettrice-e-squadra-di-direzione.shtml"
     }
    ],
    "articolo": {
@@ -350,7 +748,11 @@
       "testo": "Il Conservatorio «Nicola Sala» di Benevento ha una nuova vicedirettrice: è Rosalba Novelli, docente di pianoforte della scuola. L'incarico vale dal 1° novembre 2026 al 31 ottobre 2027 ed è stato deciso con due decreti del 29 ottobre del direttore Giuseppe Ilario. La vicedirettrice prende il posto del direttore quando lui è assente o impedito.",
       "fonti": [
        "NTR24",
-       "Anteprima24"
+       "Anteprima24",
+       "TV7 Benevento",
+       "Cronache del Sannio",
+       "InfoSannio",
+       "Ottopagine"
       ]
      },
      {
@@ -390,6 +792,30 @@
       "titolo": "Il Conservatorio Nicola Sala presenta la Vicedirettrice e la squadra di Direzione",
       "url": "https://www.anteprima24.it/benevento/il-conservatorio-nicola-sala-presenta-la-vicedirettrice-e-la-squadra-di-direzione/",
       "data": "29 ott, 16:15"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Il Conservatorio Nicola Sala presenta la Vicedirettrice Novelli e la squadra di Direzione",
+      "url": "https://www.tvsette.net/il-conservatorio-nicola-sala-presenta-la-vicedirettrice-novelli-e-la-squadra-di-direzione/",
+      "data": "29 ott, 16:36"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Conservatorio Nicola Sala nomina la Vicedirettrice e la squadra di Direzione",
+      "url": "https://www.cronachedelsannio.it/sannionews24/conservatorio-nomina-vicedirettrice-direzione/",
+      "data": "29 ott, 17:26"
+     },
+     {
+      "nome": "InfoSannio",
+      "titolo": "Il Conservatorio Nicola Sala presenta la Vicedirettrice e la squadra di Direzione",
+      "url": "https://www.infosannionews.it/universita/2026/il-conservatorio-nicola-sala-presenta-la-vicedirettrice-e-la-squadra-di-direzione.html",
+      "data": "29 ott, 17:29"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Conservatorio Nicola Sala presenta Vicedirettrice e squadra di Direzione",
+      "url": "https://www.ottopagine.it/bn/attualita/442540/conservatorio-nicola-sala-presenta-vicedirettrice-e-squadra-di-direzione.shtml",
+      "data": "29 ott, 17:38"
      }
     ]
    },
@@ -904,6 +1330,14 @@
     {
      "nome": "TV7 Benevento",
      "url": "https://www.tvsette.net/edilizia-popolare-ok-in-giunta-al-progetto-per-via-torino-da-5-milioni-di-euro/"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/la-giunta-presieduta-dal-sindaco-clemente-mastella-ha-approvato-il-progetto-di-fattibilita-2"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/politica/442536/edilizia-popolare-ok-in-giunta-al-progetto-per-via-torino-da-5-milioni-di-euro.shtml"
     }
    ],
    "articolo": {
@@ -917,7 +1351,9 @@
        "Cronache del Sannio",
        "BeneventoNews24",
        "InfoSannio",
-       "TV7 Benevento"
+       "TV7 Benevento",
+       "Gazzetta di Benevento",
+       "Ottopagine"
       ],
       "giorno": "2026-10-29"
      },
@@ -1021,6 +1457,18 @@
       "titolo": "Edilizia popolare, ok in Giunta al progetto per via Torino da 5 milioni di euro",
       "url": "https://www.tvsette.net/edilizia-popolare-ok-in-giunta-al-progetto-per-via-torino-da-5-milioni-di-euro/",
       "data": "29 ott, 14:47"
+     },
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "La Giunta, presieduta dal sindaco Clemente Mastella, ha approvato il progetto di fattibilità tecnico-economica per il recupero ai fini di rigenerazione urbana dell'immobile di via Torino",
+      "url": "https://www.gazzettabenevento.it/it/la-giunta-presieduta-dal-sindaco-clemente-mastella-ha-approvato-il-progetto-di-fattibilita-2",
+      "data": "29 ott, 13:46"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Edilizia popolare: ok in Giunta al progetto per via Torino da 5 milioni di euro",
+      "url": "https://www.ottopagine.it/bn/politica/442536/edilizia-popolare-ok-in-giunta-al-progetto-per-via-torino-da-5-milioni-di-euro.shtml",
+      "data": "29 ott, 17:33"
      }
     ]
    },
@@ -1429,6 +1877,18 @@
     {
      "nome": "Gazzetta di Benevento",
      "url": "https://www.gazzettabenevento.it/it/venerdi-30-ottobre-evento-piazza-roma-una-manifestazione-che-vuole-essere-anche-unoccasione"
+    },
+    {
+     "nome": "Lab TV",
+     "url": "https://www.labtv.net/attualita/2026/10/29/benevento-manifestazione-contro-la-violenza-e-il-razzismo-venerdi-appuntamento-in-piazza-roma/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/benevento-sale-della-terra-evento-piazza-roma/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/442532/benevento-dopo-episodi-di-violenza-manifestazione-in-piazza-roma.shtml"
     }
    ],
    "articolo": {
@@ -1438,7 +1898,10 @@
       "fonti": [
        "NTR24",
        "BeneventoNews24",
-       "Gazzetta di Benevento"
+       "Gazzetta di Benevento",
+       "Lab TV",
+       "Cronache del Sannio",
+       "Ottopagine"
       ]
      },
      {
@@ -1490,6 +1953,24 @@
       "titolo": "Venerdì 30 ottobre, evento a piazza Roma per una manifestazione che vuole essere anche un'occasione d'incontro",
       "url": "https://www.gazzettabenevento.it/it/venerdi-30-ottobre-evento-piazza-roma-una-manifestazione-che-vuole-essere-anche-unoccasione",
       "data": "29 ott, 11:05"
+     },
+     {
+      "nome": "Lab TV",
+      "titolo": "Benevento, manifestazione contro la violenza e il razzismo: venerdì appuntamento in piazza Roma",
+      "url": "https://www.labtv.net/attualita/2026/10/29/benevento-manifestazione-contro-la-violenza-e-il-razzismo-venerdi-appuntamento-in-piazza-roma/",
+      "data": "29 ott, 11:56"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Sale della Terra scende in piazza Roma: “Insieme per una città sicura”",
+      "url": "https://www.cronachedelsannio.it/sannionews24/benevento-sale-della-terra-evento-piazza-roma/",
+      "data": "29 ott, 12:43"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Benevento: dopo episodi di violenza manifestazione in Piazza Roma",
+      "url": "https://www.ottopagine.it/bn/attualita/442532/benevento-dopo-episodi-di-violenza-manifestazione-in-piazza-roma.shtml",
+      "data": "29 ott, 17:31"
      }
     ]
    },
@@ -1623,6 +2104,22 @@
     {
      "nome": "NTR24",
      "url": "https://www.ntr24.tv/2026/10/29/torrecuso-ottiene-finanziamento-di-21mila-euro-nellambito-dellavviso-crescere-nei-piccoli-comuni-2026/"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/il-comune-di-torrecuso-ha-ottenuto-un-finanziamento-di-oltre-21mila-euro-nellambito-dellavviso"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/29/torrecuso-ottiene-un-finanziamento-di-21-mila-euro-nellambito-dellavviso-crescere-nei-piccoli-comuni-2026/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/torrecuso-via-libera-finanziamento-crescere-piccoli-comuni/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/daicomuni/442533/crescere-nei-piccoli-comuni-torrecuso-ottiene-finanziamento-di-21-mila-euro.shtml"
     }
    ],
    "articolo": {
@@ -1631,7 +2128,11 @@
       "testo": "Il Comune di Torrecuso ha ottenuto un finanziamento di poco più di 21mila euro dall'avviso «Crescere nei piccoli comuni 2026». È un bando del Dipartimento per le politiche della famiglia della Presidenza del Consiglio dei ministri, che in tutto mette a disposizione 50 milioni di euro del Fondo per le politiche della famiglia 2026.",
       "fonti": [
        "NTR24",
-       "Anteprima24"
+       "Anteprima24",
+       "Gazzetta di Benevento",
+       "BeneventoNews24",
+       "Cronache del Sannio",
+       "Ottopagine"
       ]
      },
      {
@@ -1675,6 +2176,30 @@
       "titolo": "Torrecuso ottiene finanziamento di 21mila euro nell’ambito dell’Avviso “Crescere nei piccoli comuni 2026”",
       "url": "https://www.ntr24.tv/2026/10/29/torrecuso-ottiene-finanziamento-di-21mila-euro-nellambito-dellavviso-crescere-nei-piccoli-comuni-2026/",
       "data": "29 ott, 10:42"
+     },
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "Il Comune di Torrecuso ha ottenuto un finanziamento di oltre 21mila euro nell’ambito dell’Avviso “Crescere nei piccoli comuni 2026”",
+      "url": "https://www.gazzettabenevento.it/it/il-comune-di-torrecuso-ha-ottenuto-un-finanziamento-di-oltre-21mila-euro-nellambito-dellavviso",
+      "data": "29 ott, 10:26"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Torrecuso, finanziamento di 21mila euro nell’ambito dell’Avviso ‘Crescere nei piccoli comuni 2026’",
+      "url": "https://www.beneventonews24.it/2026/10/29/torrecuso-ottiene-un-finanziamento-di-21-mila-euro-nellambito-dellavviso-crescere-nei-piccoli-comuni-2026/",
+      "data": "29 ott, 10:57"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Torrecuso, via libera al finanziamento “Crescere nei piccoli comuni 2026”",
+      "url": "https://www.cronachedelsannio.it/sannionews24/torrecuso-via-libera-finanziamento-crescere-piccoli-comuni/",
+      "data": "29 ott, 11:53"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "\"Crescere nei piccoli comuni\". Torrecuso ottiene finanziamento di 21 mila euro",
+      "url": "https://www.ottopagine.it/bn/daicomuni/442533/crescere-nei-piccoli-comuni-torrecuso-ottiene-finanziamento-di-21-mila-euro.shtml",
+      "data": "29 ott, 17:31"
      }
     ]
    },
@@ -2306,6 +2831,18 @@
     {
      "nome": "Lab TV",
      "url": "https://www.labtv.net/attualita/2026/10/29/asl-benevento-sottoscritta-piattaforma-per-la-contrattazione-integrativa-aziandale-in-applicazione-al-comparto-ccnl-comparto-sanita-2022-2024/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/29/asl-benevento-sottoscritta-la-piattaforma-applicativa-del-ccnl-sanita-2022-2025/"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/associazioni/2026/cisl-irpinia-sannioasl-benevento-sottoscritta-la-piattaforma-per-la-contrattazione-aziendale-del-ccnl-sanita.html"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/asl-benevento-sottoscritta-la-piattaforma-per-la-contrattazione-integrativa-aziendale-in-applicazione-del-ccnl-comparto-sanita-2022-2024/"
     }
    ],
    "foto_inviate": [
@@ -2320,7 +2857,10 @@
      {
       "testo": "Sull'intesa parla anche la FIALS, un altro sindacato della sanità: per il segretario generale Giovanni Tommaselli la bozza del nuovo contratto integrativo aziendale è un testo unico che mette ordine in anni di regole sparse e sblocca soldi e progressioni di carriera per tutto il personale del comparto. Arriva, ricorda la FIALS, a un anno dalla firma definitiva del contratto nazionale 2022-2024, ed è il frutto del lavoro fatto insieme alle altre sigle.",
       "fonti": [
-       "Gazzetta di Benevento"
+       "Gazzetta di Benevento",
+       "BeneventoNews24",
+       "InfoSannio",
+       "TV7 Benevento"
       ],
       "giorno": "2026-10-29"
      },
@@ -2385,6 +2925,24 @@
       "titolo": "Asl Benevento, sottoscritta piattaforma per la contrattazione integrativa aziandale in applicazione al comparto Ccnl comparto sanità 2022-2024",
       "url": "https://www.labtv.net/attualita/2026/10/29/asl-benevento-sottoscritta-piattaforma-per-la-contrattazione-integrativa-aziandale-in-applicazione-al-comparto-ccnl-comparto-sanita-2022-2024/",
       "data": "29 ott, 10:56"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "ASL Benevento, sottoscritta la piattaforma applicativa del CCNL Sanità 2022-2025",
+      "url": "https://www.beneventonews24.it/2026/10/29/asl-benevento-sottoscritta-la-piattaforma-applicativa-del-ccnl-sanita-2022-2025/",
+      "data": "29 ott, 11:12"
+     },
+     {
+      "nome": "InfoSannio",
+      "titolo": "Cisl Irpinia Sannio,Asl Benevento: sottoscritta la piattaforma per la contrattazione aziendale del CCNL Sanità",
+      "url": "https://www.infosannionews.it/associazioni/2026/cisl-irpinia-sannioasl-benevento-sottoscritta-la-piattaforma-per-la-contrattazione-aziendale-del-ccnl-sanita.html",
+      "data": "29 ott, 11:24"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "ASL BENEVENTO: SOTTOSCRITTA LA PIATTAFORMA PER LA CONTRATTAZIONE INTEGRATIVA AZIENDALE IN APPLICAZIONE DEL CCNL COMPARTO SANITÀ 2022–2024",
+      "url": "https://www.tvsette.net/asl-benevento-sottoscritta-la-piattaforma-per-la-contrattazione-integrativa-aziendale-in-applicazione-del-ccnl-comparto-sanita-2022-2024/",
+      "data": "29 ott, 17:02"
      }
     ]
    },
@@ -2659,6 +3217,10 @@
     {
      "nome": "Il Sannio Quotidiano",
      "url": "https://www.ilsannioquotidiano.it/2026/10/29/benevento-il-problema-e-non-chiudere-le-partite-anticipata-la-partenza-per-cremona/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/benevento-calcio-cambia-il-programma-per-la-trasferta-di-cremona-partenza-anticipata-in-bus/"
     }
    ],
    "articolo": {
@@ -2667,7 +3229,8 @@
       "testo": "Il Benevento Calcio anticipa a giovedì 29 ottobre la partenza per la trasferta contro la Cremonese, che si gioca sabato 31 ottobre alle 15 allo stadio Zini di Cremona. Il motivo è lo sciopero generale di venerdì 30 ottobre, che avrebbe potuto creare ritardi negli spostamenti.",
       "fonti": [
        "BeneventoNews24",
-       "Il Sannio Quotidiano"
+       "Il Sannio Quotidiano",
+       "TV7 Benevento"
       ],
       "giorno": "2026-10-29"
      },
@@ -2710,6 +3273,12 @@
       "titolo": "Benevento, il problema è non chiudere le partite. Anticipata la partenza per Cremona",
       "url": "https://www.ilsannioquotidiano.it/2026/10/29/benevento-il-problema-e-non-chiudere-le-partite-anticipata-la-partenza-per-cremona/",
       "data": "29 ott, 09:11"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Benevento calcio, cambia il programma per la trasferta di Cremona: partenza anticipata in bus",
+      "url": "https://www.tvsette.net/benevento-calcio-cambia-il-programma-per-la-trasferta-di-cremona-partenza-anticipata-in-bus/",
+      "data": "29 ott, 17:12"
      }
     ]
    },
@@ -3641,10 +4210,27 @@
      "nome": "Comune di Pietrelcina",
      "url": "https://www.halleyweb.com/c062052/mc/mc_p_dettaglio.php?id_pubbl=14771",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di San Nazzaro",
+     "url": "https://www.halleyweb.com/c062066/mc/mc_p_dettaglio.php?id_pubbl=4996",
+     "ufficiale": true
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/29/provincia-di-benevento-al-via-censimento-straordinario-dei-distributori-di-carburante-lungo-le-strade-provinciali/"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Il censimento lo cura il Settore Infrastrutture e Viabilità della Provincia, diretto dall'ingegnere Valentino Ferrara: serve a controllare che siano in regola i permessi dei distributori, soprattutto per gli accessi delle auto, i cartelli pubblicitari e gli spazi occupati su cui si paga il canone. Giovedì 29 ottobre l'avviso l'ha pubblicato all'albo anche il Comune di San Nazzaro.",
+      "fonti": [
+       "Comune di San Nazzaro",
+       "NTR24"
+      ],
+      "giorno": "2026-10-29"
+     },
      {
       "testo": "La Provincia di Benevento fa il censimento dei distributori di carburante che hanno un'entrata o un'uscita sulle strade provinciali o regionali di sua competenza. Chi ne ha uno, aperto al pubblico o a uso privato, deve mandare una dichiarazione entro 30 giorni dalla pubblicazione dell'avviso all'albo online della Provincia. L'avviso lo hanno ripreso anche i Comuni, tra cui Paduli, Amorosi, Arpaia e Pietrelcina.",
       "fonti": [
@@ -3712,6 +4298,19 @@
       "url": "https://www.halleyweb.com/c062052/mc/mc_p_dettaglio.php?id_pubbl=14771",
       "data": "29 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "Comune di San Nazzaro",
+      "titolo": "Trasmissione dell’Avviso pubblico relativo all’avvio di una campagna straordinaria di censimento e ricognizione degli impianti di distribuzione carburanti aventi accessi sulla rete viaria provinciale.",
+      "url": "https://www.halleyweb.com/c062066/mc/mc_p_dettaglio.php?id_pubbl=4996",
+      "data": "29 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Provincia di Benevento, al via censimento straordinario dei distributori di carburante lungo le strade provinciali",
+      "url": "https://www.ntr24.tv/2026/10/29/provincia-di-benevento-al-via-censimento-straordinario-dei-distributori-di-carburante-lungo-le-strade-provinciali/",
+      "data": "29 ott, 17:16"
      }
     ]
    },
@@ -4236,6 +4835,10 @@
     {
      "nome": "Anteprima24",
      "url": "https://www.anteprima24.it/benevento/cerreto-sannita-sabato-31-ottobre-il-dibattito-pubblico-sul-futuro-dellacqua/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/29/cerreto-sannita-sabato-31-ottobre-il-dibattito-pubblico-sul-futuro-dellacqua/"
     }
    ],
    "articolo": {
@@ -4243,7 +4846,8 @@
      {
       "testo": "Il dibattito di sabato 31 ottobre alle 17 ha ora una sede: il Centro polifunzionale di via Cavallotti, con ingresso dal colonnato della Società Operaia. Il titolo è «Acqua pubblica a Cerreto: la verità oltre la privatizzazione». Alcuni membri del comitato racconteranno la storia della vicenda, i dati e le loro proposte per tenere l'acqua pubblica e l'autonomia del paese; poi chiunque potrà intervenire. Alla fine, chi vuole può restare per l'assemblea che fonda ufficialmente il comitato, che si dice civico e senza partiti.",
       "fonti": [
-       "Anteprima24"
+       "Anteprima24",
+       "BeneventoNews24"
       ],
       "giorno": "2026-10-29"
      },
@@ -4303,6 +4907,12 @@
       "titolo": "Cerreto Sannita, sabato 31 ottobre il dibattito pubblico sul futuro dell’acqua",
       "url": "https://www.anteprima24.it/benevento/cerreto-sannita-sabato-31-ottobre-il-dibattito-pubblico-sul-futuro-dellacqua/",
       "data": "29 ott, 15:17"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Cerreto Sannita, sabato 31 ottobre il dibattito pubblico sul futuro dell’acqua",
+      "url": "https://www.beneventonews24.it/2026/10/29/cerreto-sannita-sabato-31-ottobre-il-dibattito-pubblico-sul-futuro-dellacqua/",
+      "data": "29 ott, 17:45"
      }
     ],
     "aggiornamento": {
@@ -10892,12 +11502,12 @@
   },
   {
    "id": "castelpoto-santa-croce-del-sannio-elenco-elettori-fuori-sede",
-   "titolo": "Elettori fuori sede, ventitré Comuni del Sannio hanno aperto l'elenco: domande entro il 31 dicembre",
+   "titolo": "Elettori fuori sede, ventiquattro Comuni del Sannio hanno aperto l'elenco: domande entro il 31 dicembre",
    "titolo_google": "Elettori fuori sede in 23 Comuni del Sannio: come fare",
    "sintesi": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni, Limatola, Torrecuso, San Lorenzello, Montesarchio, San Marco dei Cavoti, Ponte, Paupisi, Pannarano, Moiano, Castelvenere e Castelvetere in Val Fortore hanno aperto l'elenco degli elettori fuori sede previsto dalla nuova legge elettorale: chi per studio, lavoro o cure vive in una regione diversa da quella in cui vota può chiedere di votare dove abita. Per studio e lavoro la domanda va fatta entro il 31 dicembre, per le votazioni dell'anno dopo.",
    "categoria": "avvisi",
    "zona": "provincia",
-   "luogo": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni, Limatola, Torrecuso, San Lorenzello, Montesarchio, San Marco dei Cavoti, Ponte, Paupisi, Pannarano, Moiano, Castelvenere e Castelvetere in Val Fortore",
+   "luogo": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni, Limatola, Torrecuso, San Lorenzello, Montesarchio, San Marco dei Cavoti, Ponte, Paupisi, Pannarano, Moiano, Castelvenere, Castelvetere in Val Fortore e San Giorgio del Sannio",
    "immagine": "elezioni",
    "pubblicato": "2026-10-27",
    "stato": "ufficiale",
@@ -11017,10 +11627,22 @@
      "nome": "Comune di Castelvetere in Val Fortore",
      "url": "https://www.comune.castelvetereinvalfortore.bn.it/novita/notizie/novita_110.html",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di San Giorgio del Sannio",
+     "url": "https://www.comune.sangiorgiodelsannio.bn.it/novita/avvisi/novita_167.html",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Giovedì 29 ottobre l'elenco degli elettori fuori sede l'ha aperto anche San Giorgio del Sannio, con l'avviso sul sito del Comune. Con San Giorgio i Comuni del Sannio che hanno aperto l'elenco sono ventiquattro.",
+      "fonti": [
+       "Comune di San Giorgio del Sannio"
+      ],
+      "giorno": "2026-10-29"
+     },
      {
       "testo": "Giovedì 29 ottobre l'elenco degli elettori fuori sede l'ha aperto anche Castelvetere in Val Fortore: l'avviso, con i requisiti e il modulo, è sul sito del Comune. Con Castelvetere i Comuni del Sannio che hanno aperto l'elenco sono ventitré.",
       "fonti": [
@@ -11374,14 +11996,21 @@
       "url": "https://www.comune.castelvetereinvalfortore.bn.it/novita/notizie/novita_110.html",
       "data": "29 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "Comune di San Giorgio del Sannio",
+      "titolo": "ISTITUZIONE DELL'ELENCO COMUNALE DEGLI ELETTORI FUORI SEDE",
+      "url": "https://www.comune.sangiorgiodelsannio.bn.it/novita/avvisi/novita_167.html",
+      "data": "29 ott",
+      "ufficiale": true
      }
     ],
     "aggiornamento": {
-     "testo": "Giovedì 29 ottobre l'elenco degli elettori fuori sede l'ha aperto anche Castelvetere in Val Fortore: i Comuni del Sannio sono ventitré.",
+     "testo": "Giovedì 29 ottobre l'elenco degli elettori fuori sede l'ha aperto anche San Giorgio del Sannio: i Comuni del Sannio sono ventiquattro.",
      "fonti": [
-      "Comune di Castelvetere in Val Fortore"
+      "Comune di San Giorgio del Sannio"
      ],
-     "quando": "2026-10-29T13:34+01:00",
+     "quando": "2026-10-29T18:16+01:00",
      "titolo_prima": "Elettori fuori sede, ventidue Comuni del Sannio hanno aperto l'elenco: domande entro il 31 dicembre"
     }
    },
@@ -12982,8 +13611,8 @@
      "ufficiale": true
     },
     {
-     "nome": "Cronache del Sannio",
-     "url": "https://www.cronachedelsannio.it/sannionews24/air-campania-sindacati-confermato-sciopero-domani/"
+     "nome": "Cronache del Sannio (29/10)",
+     "url": "https://www.cronachedelsannio.it/sannionews24/sciopero-air-campania-benevento/"
     },
     {
      "nome": "Il Mattino",
@@ -13012,7 +13641,8 @@
       "testo": "Allo sciopero di 8 ore di mercoledì 28 ottobre, a Benevento città hanno aderito soltanto quattro lavoratori. Lo scrivono i sindacati che l'hanno proclamato. Sulle linee extraurbane del Sannio, invece, hanno scioperato 28 lavoratori su 34 turni, l'82%; nel resto della Campania, senza contare i bus di Benevento città, l'adesione è stata del 63,96%, con 323 scioperanti su 505 turni.",
       "fonti": [
        "Anteprima24",
-       "NTR24 (29/10)"
+       "NTR24 (29/10)",
+       "Cronache del Sannio (29/10)"
       ],
       "giorno": "2026-10-29"
      },
@@ -13197,6 +13827,12 @@
       "titolo": "AIR, sciopero regionale: a Benevento adesione dell’82% nell’extraurbano. I sindacati: «Gli ex Trotta penalizzati economicamente»",
       "url": "https://www.ntr24.tv/2026/10/29/air-sciopero-regionale-a-benevento-adesione-dell82-nellextraurbano-i-sindacati-gli-ex-trotta-penalizzati-economicamente/",
       "data": "29 ott, 16:35"
+     },
+     {
+      "nome": "Cronache del Sannio (29/10)",
+      "titolo": "Sciopero Air a Benevento: fermo 82% lavoratori nell’extraurbano, bassa adesione Tpl",
+      "url": "https://www.cronachedelsannio.it/sannionews24/sciopero-air-campania-benevento/",
+      "data": "29 ott, 17:49"
      }
     ],
     "aggiornamento": {
