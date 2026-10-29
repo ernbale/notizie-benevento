@@ -1,7 +1,169 @@
 {
- "aggiornato": "2026-10-29T18:16+01:00",
+ "aggiornato": "2026-10-29T19:12+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "gal-taburno-annarita-de-blasio-presidente",
+   "titolo": "GAL Taburno, Annarita De Blasio è la nuova presidente: rinnovato anche il consiglio di amministrazione",
+   "titolo_google": "GAL Taburno, Annarita De Blasio nuova presidente",
+   "sintesi": "L'assemblea dei soci del GAL Taburno, il consorzio che porta i fondi europei per lo sviluppo rurale in una parte del Sannio, ha scelto Annarita De Blasio come presidente. Mercoledì 28 ottobre a Torrecuso è stato rinnovato anche il consiglio di amministrazione.",
+   "categoria": "altro",
+   "luogo": "Torrecuso, Sala Nicchie del Comune",
+   "pubblicato": "2026-10-29T18:56+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 2,
+   "immagine": "riunione",
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/29/gal-taburno-consorzio-rinnovati-presidenza-e-cda-annarita-de-blasio-alla-guida/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/gal-taburno-consorzio-rinnovati-la-presidenza-e-il-consiglio-di-amministrazione/"
+    },
+    {
+     "nome": "Lab TV",
+     "url": "https://www.labtv.net/attualita/2026/10/29/sviluppo-del-sannio-nuova-guida-per-il-gal-taburno-annarita-de-blasio-presidente/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Annarita De Blasio è la nuova presidente del GAL Taburno, il Gruppo di azione locale che mette insieme Comuni, imprese e associazioni per portare sul territorio i fondi europei dello sviluppo rurale. L'ha scelta l'assemblea dei soci, riunita mercoledì 28 ottobre nella Sala Nicchie del Comune di Torrecuso.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24",
+       "Lab TV"
+      ]
+     },
+     {
+      "testo": "Nella stessa assemblea è stato rinnovato il consiglio di amministrazione. Per l'agricoltura ci sono Remo De Ieso, Libero Petreccaro e Pasquale Spitaletta; per il Terzo settore Luca Mauriello; per i Comuni Antonio Pietrovito, per Sant'Agata de' Goti, e Vittorio Vallone, per Paupisi.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24",
+       "Lab TV"
+      ]
+     },
+     {
+      "testo": "De Blasio ha guidato la sede di Benevento della CNA, l'associazione degli artigiani e delle piccole imprese, e poi ha lavorato per la CNA Campania Nord. Dice di voler fare del GAL un'«agenzia di sviluppo locale», capace di «intercettare nuove opportunità europee e trasformarle in progetti concreti per imprese, comunità e territori».",
+      "fonti": [
+       "Lab TV",
+       "NTR24",
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Il GAL lavora con la strategia «Spazio Rurale», per i fondi europei dal 2023 al 2027: aiuti alle aziende agricole, prodotti tipici, artigianato e turismo legato ai paesi. Tra i temi del nuovo mandato ci sono lo spopolamento dei piccoli centri e il ricambio tra le generazioni nelle imprese.",
+      "fonti": [
+       "Lab TV"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "La nomina di De Blasio nell'assemblea del 28 ottobre a Torrecuso e i nomi del nuovo consiglio di amministrazione.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24",
+       "Lab TV"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Quanto durerà il mandato della nuova presidente e chi guidava il GAL prima di lei."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "GAL Taburno Consorzio, rinnovati Presidenza e CdA: Annarita De Blasio alla guida",
+      "url": "https://www.ntr24.tv/2026/10/29/gal-taburno-consorzio-rinnovati-presidenza-e-cda-annarita-de-blasio-alla-guida/",
+      "data": "29 ott, 18:56"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "GAL Taburno Consorzio, rinnovati la Presidenza e il Consiglio di amministrazione",
+      "url": "https://www.anteprima24.it/benevento/gal-taburno-consorzio-rinnovati-la-presidenza-e-il-consiglio-di-amministrazione/",
+      "data": "29 ott, 18:53"
+     },
+     {
+      "nome": "Lab TV",
+      "titolo": "Sviluppo del Sannio, nuova guida per il GAL Taburno: Annarita De Blasio Presidente",
+      "url": "https://www.labtv.net/attualita/2026/10/29/sviluppo-del-sannio-nuova-guida-per-il-gal-taburno-annarita-de-blasio-presidente/",
+      "data": "29 ott, 11:57"
+     }
+    ]
+   },
+   "zona": "provincia",
+   "foto": "riunione-16"
+  },
+  {
+   "id": "san-pio-oss-sindacato-carenza-personale-turno-notte",
+   "titolo": "Ospedale San Pio, il sindacato degli OSS denuncia: pochi operatori, tolto il turno di notte in Medicina interna",
+   "titolo_google": "San Pio Benevento, sindacato OSS: carenza di personale",
+   "sintesi": "Il S.O.S.S., sindacato degli operatori socio-sanitari, denuncia che all'ospedale San Pio di Benevento mancano OSS: in Medicina interna, secondo il sindacato, è stato tolto il turno di notte. Chiede alla direzione assunzioni dalle graduatorie e annuncia azioni se non arriveranno risposte.",
+   "categoria": "altro",
+   "luogo": "Benevento, ospedale San Pio",
+   "pubblicato": "2026-10-29T18:47+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 3,
+   "immagine": "ospedale",
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/29/san-pio-allarme-del-sindacato-oss-carenza-di-personale-e-turni-insostenibili-servono-interventi-immediati/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "All'ospedale San Pio di Benevento mancano operatori socio-sanitari, gli OSS che aiutano i pazienti nei reparti. Lo denuncia Franca Ocone, presidente del S.O.S.S. (Sindacato operatori socio sanitari), che chiede alla direzione generale dell'ospedale di intervenire subito.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Secondo il sindacato, il caso più grave è in Medicina interna: con due operatrici in maternità il personale non basta più e il turno di notte degli OSS è stato soppresso. Per circa tre anni, dice Ocone, di notte un solo operatore ha dovuto seguire Medicina interna e Malattie infettive, con 32 pazienti, senza l'indennità prevista dal contratto per Malattie infettive.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Il sindacato racconta anche turni cambiati da un giorno all'altro, riposi e ferie difficili da avere e OSS spostati spesso in altri reparti o messi a fare lavori da ausiliari. Chiede di assumere OSS dalle graduatorie già pronte in Campania, in attesa dei vincitori del concorso regionale, e lamenta che chi aveva diritto alla stabilizzazione si è dimesso per averla in altre aziende sanitarie.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Ocone dice che le segnalazioni alla direzione, al Prefetto e al sindaco di Benevento sono rimaste senza risposta. Se l'ospedale non riorganizzerà subito il servizio, il sindacato annuncia che si rivolgerà «a tutti gli organi competenti».",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Cosa risponde la direzione dell'ospedale San Pio.",
+     "Quanti OSS mancano in tutto e da quando il turno di notte di Medicina interna è stato tolto."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "San Pio, allarme del sindacato OSS: «Carenza di personale e turni insostenibili, servono interventi immediati»",
+      "url": "https://www.ntr24.tv/2026/10/29/san-pio-allarme-del-sindacato-oss-carenza-di-personale-e-turni-insostenibili-servono-interventi-immediati/",
+      "data": "29 ott, 18:47"
+     }
+    ]
+   },
+   "zona": "benevento",
+   "foto": "ospedale-17"
+  },
   {
    "id": "casalduni-ex-discarica-largo-croce-regione-74mila-euro-indagini",
    "titolo": "Casalduni, dalla Regione oltre 74mila euro per le indagini sull'ex discarica di Largo Croce: il sito non è inquinato",
@@ -740,6 +902,10 @@
     {
      "nome": "Ottopagine",
      "url": "https://www.ottopagine.it/bn/attualita/442540/conservatorio-nicola-sala-presenta-vicedirettrice-e-squadra-di-direzione.shtml"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/29/il-conservatorio-nicola-sala-presenta-la-vicedirettrice-e-la-squadra-di-direzione/"
     }
    ],
    "articolo": {
@@ -752,7 +918,8 @@
        "TV7 Benevento",
        "Cronache del Sannio",
        "InfoSannio",
-       "Ottopagine"
+       "Ottopagine",
+       "BeneventoNews24"
       ]
      },
      {
@@ -816,6 +983,12 @@
       "titolo": "Conservatorio Nicola Sala presenta Vicedirettrice e squadra di Direzione",
       "url": "https://www.ottopagine.it/bn/attualita/442540/conservatorio-nicola-sala-presenta-vicedirettrice-e-squadra-di-direzione.shtml",
       "data": "29 ott, 17:38"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Il Conservatorio Nicola Sala presenta la Vicedirettrice e la squadra di Direzione",
+      "url": "https://www.beneventonews24.it/2026/10/29/il-conservatorio-nicola-sala-presenta-la-vicedirettrice-e-la-squadra-di-direzione/",
+      "data": "29 ott, 18:15"
      }
     ]
    },
@@ -846,6 +1019,10 @@
     {
      "nome": "NTR24 Sport",
      "url": "https://sport.ntr24.tv/2026/10/29/pallamano-serie-a-silver-handball-club-sannio-sconfitta-a-putignano-ora-testa-alla-trasferta-di-siracusa/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/29/h-c-sannio-sconfitta-in-casa-del-putignano-ora-la-lunga-trasferta-a-siracusa/"
     }
    ],
    "articolo": {
@@ -854,7 +1031,8 @@
       "testo": "L'H.C. Sannio, la squadra di pallamano di Benevento che gioca in Serie A Silver, ha perso 33-23 sul campo del Putignano, in Puglia. Dopo un inizio in equilibrio i sanniti hanno perso molti palloni in attacco e il Putignano ha chiuso il primo tempo sul 20-9; nel secondo tempo è arrivata una reazione, ma il distacco era troppo grande.",
       "fonti": [
        "Anteprima24",
-       "NTR24 Sport"
+       "NTR24 Sport",
+       "BeneventoNews24"
       ]
      },
      {
@@ -903,6 +1081,12 @@
       "titolo": "Pallamano serie A Silver: Handball Club Sannio sconfitta a Putignano. Ora testa alla trasferta di Siracusa",
       "url": "https://sport.ntr24.tv/2026/10/29/pallamano-serie-a-silver-handball-club-sannio-sconfitta-a-putignano-ora-testa-alla-trasferta-di-siracusa/",
       "data": "29 ott, 16:24"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "H.C. Sannio, sconfitta in casa del Putignano. Ora la lunga trasferta a Siracusa",
+      "url": "https://www.beneventonews24.it/2026/10/29/h-c-sannio-sconfitta-in-casa-del-putignano-ora-la-lunga-trasferta-a-siracusa/",
+      "data": "29 ott, 18:13"
      }
     ]
    }
