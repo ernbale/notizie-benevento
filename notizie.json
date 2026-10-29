@@ -1,7 +1,126 @@
 {
- "aggiornato": "2026-10-28T22:09+01:00",
+ "aggiornato": "2026-10-29T06:11+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-strisce-blu-sensori-parcheggi-bemobi",
+   "titolo": "Benevento, sulle strisce blu arrivano i sensori nell'asfalto: diranno in tempo reale quali posti sono liberi",
+   "titolo_google": "Strisce blu a Benevento, arrivano i sensori nei parcheggi",
+   "sintesi": "A Benevento BeMobi, la società che gestisce la sosta a pagamento, ha cominciato a montare sensori nell'asfalto dei parcheggi sulle strisce blu: i primi in viale Mellusi, piazzale Catullo e via Porta Rufina. Segnaleranno i posti occupati e liberi e serviranno anche per i controlli sui pagamenti.",
+   "categoria": "altro",
+   "luogo": "Benevento",
+   "immagine": "parcheggio",
+   "pubblicato": "2026-10-29T00:35+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 3,
+   "fonti": [
+    {
+     "nome": "Il Mattino",
+     "url": "https://www.ilmattino.it/benevento/benevento_strisce_blu_spie_blu_auto_sosta-9854646.html"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Benevento sono cominciati i lavori per mettere un sensore sotto ogni parcheggio a pagamento sulle strisce blu. Li sta montando BeMobi, la società a cui il Comune ha affidato la sosta a pagamento da circa due mesi. I primi sono già nell'area del mercato di viale Mellusi (piazza Risorgimento), in piazzale Catullo vicino al Teatro Romano e in via Porta Rufina, nella zona delle Poste centrali.",
+      "fonti": [
+       "Il Mattino"
+      ]
+     },
+     {
+      "testo": "I sensori sono piccoli dischi neri con un bordo azzurro, fissati nell'asfalto al centro di ogni posto auto. Si accorgono dell'auto parcheggiata dai cambi di luce e di temperatura e mandano subito l'informazione a un sistema collegato in rete.",
+      "fonti": [
+       "Il Mattino"
+      ]
+     },
+     {
+      "testo": "Una volta acceso il sistema, gli automobilisti potranno sapere quali posti sono liberi senza girare a vuoto. Gli addetti ai controlli, invece, vedranno in tempo reale quali stalli sono occupati e potranno multare in modo più mirato chi non ha pagato, senza controllare un'auto dopo l'altra.",
+      "fonti": [
+       "Il Mattino"
+      ]
+     },
+     {
+      "testo": "I lavori andranno avanti nelle altre zone della città con la sosta a pagamento, fino a coprire tutti i 1.880 posti sulle strisce blu previsti dal progetto del nuovo gestore. Intanto, scrive Il Mattino, sui social e sulla pagina della società continuano le proteste di una parte degli automobilisti contro la nuova gestione.",
+      "fonti": [
+       "Il Mattino"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando il sistema dei sensori sarà acceso e come gli automobilisti potranno vedere i posti liberi."
+    ],
+    "fonti": [
+     {
+      "nome": "Il Mattino",
+      "titolo": "Benevento, strisce blu: arrivano i sensori intelligenti. Installate le “spie” per le auto in sosta",
+      "url": "https://www.ilmattino.it/benevento/benevento_strisce_blu_spie_blu_auto_sosta-9854646.html",
+      "data": "29 ott, 00:35"
+     }
+    ]
+   },
+   "zona": "benevento",
+   "foto": "parcheggio-8"
+  },
+  {
+   "id": "benevento-calcio-cremona-partenza-anticipata-coverciano-sciopero",
+   "titolo": "Cremonese-Benevento, la squadra parte giovedì per lo sciopero del 30 ottobre: notte a Coverciano",
+   "titolo_google": "Cremonese-Benevento, partenza anticipata e tappa a Coverciano",
+   "sintesi": "Per non rischiare ritardi con lo sciopero generale di venerdì 30 ottobre, il Benevento Calcio parte già giovedì 29 in pullman per la trasferta di Cremona. La squadra dormirà al Centro tecnico federale di Coverciano e venerdì si allenerà lì; sabato alle 15 la partita allo Zini.",
+   "categoria": "sport",
+   "sport": "calcio",
+   "luogo": "Benevento",
+   "immagine": "calcio",
+   "pubblicato": "2026-10-29T00:13+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 5,
+   "fonti": [
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/29/benevento-anticipata-la-partenza-per-cremona-si-parte-oggi-con-tappa-a-coverciano/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Benevento Calcio anticipa a giovedì 29 ottobre la partenza per la trasferta contro la Cremonese, che si gioca sabato 31 ottobre alle 15 allo stadio Zini di Cremona. Il motivo è lo sciopero generale di venerdì 30 ottobre, che avrebbe potuto creare ritardi negli spostamenti.",
+      "fonti": [
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Giovedì mattina la squadra si allena a Benevento con l'allenatore Floro Flores; dopo pranzo parte con il pullman della società verso il Centro tecnico federale di Coverciano, vicino a Firenze, dove si allena la Nazionale. Lì passa la notte e venerdì mattina si allena sui campi della Nazionale.",
+      "fonti": [
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Venerdì dopo pranzo il viaggio riprende verso la Lombardia. Il ritorno a Benevento, dopo la partita, sarà in treno. Il cambio di programma l'ha deciso lo staff della logistica guidato dal club manager Cilento.",
+      "fonti": [
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Benevento, anticipata la partenza per Cremona: si parte oggi con tappa a Coverciano",
+      "url": "https://www.beneventonews24.it/2026/10/29/benevento-anticipata-la-partenza-per-cremona-si-parte-oggi-con-tappa-a-coverciano/",
+      "data": "29 ott, 00:13"
+     }
+    ]
+   },
+   "zona": "benevento",
+   "foto": "calcio-6"
+  },
   {
    "id": "benevento-corso-garibaldi-60enne-malore-alla-guida-municipale",
    "titolo": "Benevento, 60enne si sente male mentre guida in corso Garibaldi: lo soccorrono i vigili urbani",
@@ -564,6 +683,10 @@
    "importanza": 2,
    "fonti": [
     {
+     "nome": "Il Mattino",
+     "url": "https://www.ilmattino.it/benevento/benevento_rilancio_lavoro_confindustria-9854717.html"
+    },
+    {
      "nome": "NTR24",
      "url": "https://www.ntr24.tv/2026/10/28/un-manifesto-programmatico-per-lo-sviluppo-delle-valli-telesina-e-del-volturno-patto-tra-industriali-sanniti-e-casertani/"
     },
@@ -624,6 +747,12 @@
        "NTR24",
        "Anteprima24"
       ]
+     },
+     {
+      "testo": "Al Castello è intervenuto anche Antonio Iannone, sottosegretario al Ministero delle Infrastrutture: ha detto che «entro la fine del 2026 partiranno i lavori del primo lotto della Telesina» e che il Ministero è disponibile ad accogliere la proposta di Confindustria. Filippo Liverini, presidente di Mangimi Liverini, ha ricordato lo scalo merci di Ponte Valentino, progettato e mai fatto. Il ministro del Turismo Gianmarco Mazzi ha parlato dei borghi come strada per portare turisti anche fuori dalle mete più note.",
+      "fonti": [
+       "Il Mattino"
+      ]
      }
     ],
     "cronologia": [],
@@ -640,6 +769,12 @@
     "divergono": [],
     "non_si_sa": [],
     "fonti": [
+     {
+      "nome": "Il Mattino",
+      "titolo": "Benevento, missione rilancio e lavoro: ecco la ricetta di Confindustria, individuate le sei direttrici principali",
+      "url": "https://www.ilmattino.it/benevento/benevento_rilancio_lavoro_confindustria-9854717.html",
+      "data": "29 ott, 00:20"
+     },
      {
       "nome": "NTR24",
       "titolo": "Un manifesto programmatico per lo sviluppo delle valli Telesina e del Volturno: patto tra industriali sanniti e casertani",
@@ -706,6 +841,10 @@
     {
      "nome": "Gazzetta di Benevento",
      "url": "https://www.gazzettabenevento.it/it/il-liceo-alberti-virgilio-ha-siglato-unesclusiva-collaborazione-con-dronext-centro-di-eccellenza-e"
+    },
+    {
+     "nome": "Benevento Giornale",
+     "url": "https://www.beneventogiornale.com/2026/10/28/liceo-alberti-virgilio-di-benevento-al-via-il-progetto-dronext-per-il-conseguimento-gratuito-del-patentino-droni-a1-a3/"
     }
    ],
    "articolo": {
@@ -715,7 +854,8 @@
       "fonti": [
        "NTR24",
        "Anteprima24",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Benevento Giornale"
       ]
      },
      {
@@ -779,6 +919,12 @@
       "titolo": "Il Liceo Alberti-Virgilio ha siglato un'esclusiva collaborazione con Dronext, centro di eccellenza e punto di riferimento nazionale nella formazione aeronautica",
       "url": "https://www.gazzettabenevento.it/it/il-liceo-alberti-virgilio-ha-siglato-unesclusiva-collaborazione-con-dronext-centro-di-eccellenza-e",
       "data": "28 ott, 16:31"
+     },
+     {
+      "nome": "Benevento Giornale",
+      "titolo": "Liceo Alberti-Virgilio di Benevento: al via il progetto DRONEXT per il conseguimento gratuito del patentino droni A1/A3",
+      "url": "https://www.beneventogiornale.com/2026/10/28/liceo-alberti-virgilio-di-benevento-al-via-il-progetto-dronext-per-il-conseguimento-gratuito-del-patentino-droni-a1-a3/",
+      "data": "28 ott, 22:21"
      }
     ]
    },
@@ -1906,6 +2052,10 @@
     {
      "nome": "Il Caudino",
      "url": "https://ilcaudino.it/51enne-arrestato-per-violenza-sessuale-e-maltrattamenti-in-famiglia-uid-5/"
+    },
+    {
+     "nome": "Benevento Giornale",
+     "url": "https://www.beneventogiornale.com/2026/10/28/paduli-condanna-definitiva-a-10-anni-di-reclusione-per-violenza-sessuale-aggravata-maltrattamenti-e-atti-persecutori/"
     }
    ],
    "articolo": {
@@ -1917,7 +2067,8 @@
        "BeneventoNews24",
        "Anteprima24",
        "Ottopagine",
-       "Cronache del Sannio"
+       "Cronache del Sannio",
+       "Benevento Giornale"
       ],
       "giorno": "2026-10-28"
      },
@@ -2016,6 +2167,12 @@
       "titolo": "51enne arrestato per violenza sessuale e maltrattamenti in famiglia",
       "url": "https://ilcaudino.it/51enne-arrestato-per-violenza-sessuale-e-maltrattamenti-in-famiglia-uid-5/",
       "data": "28 ott, 10:17"
+     },
+     {
+      "nome": "Benevento Giornale",
+      "titolo": "Paduli: condanna definitiva a 10 anni di reclusione per violenza sessuale aggravata, maltrattamenti e atti persecutori",
+      "url": "https://www.beneventogiornale.com/2026/10/28/paduli-condanna-definitiva-a-10-anni-di-reclusione-per-violenza-sessuale-aggravata-maltrattamenti-e-atti-persecutori/",
+      "data": "28 ott, 22:04"
      }
     ]
    },
@@ -4156,16 +4313,20 @@
    "id": "ospedale-san-pio-concorso-dieci-medici-pronto-soccorso",
    "titolo": "Benevento, l'ospedale San Pio bandisce un concorso per dieci medici del pronto soccorso",
    "titolo_google": "Ospedale San Pio, concorso per 10 medici di pronto soccorso",
-   "sintesi": "L'Azienda ospedaliera San Pio di Benevento ha indetto un concorso per assumere a tempo indeterminato dieci medici di Medicina d'emergenza-urgenza. Intanto continua a tenere in servizio medici in pensione per coprire i turni.",
+   "sintesi": "L'Azienda ospedaliera San Pio di Benevento ha indetto un concorso per assumere a tempo indeterminato dieci medici di pronto soccorso. Intanto ha prorogato fino al 31 dicembre tre chirurghi in pensione e cerca un sostituto per il medico sospeso che seguiva la PMA.",
    "categoria": "altro",
    "zona": "benevento",
    "immagine": "pronto-soccorso",
    "luogo": "Benevento",
-   "pubblicato": "2026-10-27T15:26+01:00",
-   "stato": "una_fonte",
+   "pubblicato": "2026-10-29T00:55+01:00",
+   "stato": "confermata",
    "rilevante": false,
    "importanza": 4,
    "fonti": [
+    {
+     "nome": "Il Mattino",
+     "url": "https://www.ilmattino.it/benevento/benevento_rummo_ospedale_medici_concorso-9854479.html"
+    },
     {
      "nome": "NTR24",
      "url": "https://www.ntr24.tv/2026/10/27/san-pio-la-strategia-per-il-pronto-soccorso-proroga-per-i-medici-in-pensione-fino-a-fine-anno-e-nuovo-concorso-per-dieci-camici-in-corsia/"
@@ -4174,44 +4335,83 @@
    "articolo": {
     "racconto": [
      {
+      "testo": "Il concorso per dieci medici di Medicina d'urgenza e pronto soccorso lo conferma anche Il Mattino. In più l'ospedale San Pio ha prorogato fino al 31 dicembre i contratti di tre chirurghi esterni già in pensione, per coprire la Chirurgia d'urgenza, il reparto dove arrivano dal pronto soccorso i casi più gravi e dove servono chirurghi 24 ore su 24.",
+      "fonti": [
+       "Il Mattino"
+      ],
+      "giorno": "2026-10-29"
+     },
+     {
+      "testo": "Negli ultimi giorni, scrive sempre Il Mattino, si sono dimessi un cardiologo, un ortopedico e uno specializzando di Neonatologia. L'ospedale ha anche avviato una selezione per sostituire il medico sospeso per un anno per irregolarità nelle timbrature del cartellino: seguiva la PMA, il centro per le gravidanze con procreazione medicalmente assistita, che con la nomina del sostituto potrà riprendere l'attività.",
+      "fonti": [
+       "Il Mattino"
+      ],
+      "giorno": "2026-10-29"
+     },
+     {
       "testo": "L'Azienda ospedaliera San Pio di Benevento, che gestisce il principale ospedale della provincia, ha indetto martedì 27 ottobre un concorso pubblico per titoli ed esami per assumere a tempo indeterminato dieci medici di Medicina d'emergenza-urgenza, la specialità di chi lavora in pronto soccorso.",
       "fonti": [
        "NTR24"
-      ]
+      ],
+      "giorno": "2026-10-27"
      },
      {
       "testo": "Il concorso arriva dopo due tentativi andati a vuoto: quello dell'anno scorso per sette posti e il successivo avviso di mobilità (il trasferimento di medici da altri ospedali), a cui non ha risposto nessuno. Anche le graduatorie di altre aziende sanitarie della Campania a cui il San Pio si era rivolto, come l'ospedale dei Colli e l'ASL di Salerno, sono risultate esaurite o già usate.",
       "fonti": [
        "NTR24"
-      ]
+      ],
+      "giorno": "2026-10-27"
      },
      {
       "testo": "Potranno partecipare anche gli specializzandi dal secondo anno di corso, in una graduatoria a parte. Le prove sono tre: scritta, pratica e orale. Chi vince dovrà restare al San Pio per almeno cinque anni. Le domande si presentano solo online, sulla piattaforma indicata nel bando, entro la scadenza che fisserà la pubblicazione ufficiale.",
       "fonti": [
        "NTR24"
-      ]
+      ],
+      "giorno": "2026-10-27"
      },
      {
       "testo": "Nell'attesa l'ospedale continua a puntare sui medici in pensione, con incarichi di lavoro autonomo. Già la settimana scorsa aveva prorogato fino alla fine dell'anno sei medici, tre dei quali in pensione, per coprire i turni dei reparti di emergenza.",
       "fonti": [
        "NTR24"
-      ]
+      ],
+      "giorno": "2026-10-27"
      }
     ],
     "cronologia": [],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "Il nuovo concorso per dieci medici di pronto soccorso e la proroga fino a fine anno dei medici in pensione.",
+      "fonti": [
+       "NTR24",
+       "Il Mattino"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [
      "Quando sarà pubblicato il bando ufficiale e quale sarà la scadenza per le domande."
     ],
     "fonti": [
      {
+      "nome": "Il Mattino",
+      "titolo": "Benevento, sos medici: il Rummo corre ai ripari, concorso per reclutare 10 professionisti, proroga per 3 chirurghi",
+      "url": "https://www.ilmattino.it/benevento/benevento_rummo_ospedale_medici_concorso-9854479.html",
+      "data": "29 ott, 00:55"
+     },
+     {
       "nome": "NTR24",
       "titolo": "San Pio, la strategia per il Pronto Soccorso: proroga per i medici in pensione fino a fine anno e nuovo concorso per dieci camici in corsia",
       "url": "https://www.ntr24.tv/2026/10/27/san-pio-la-strategia-per-il-pronto-soccorso-proroga-per-i-medici-in-pensione-fino-a-fine-anno-e-nuovo-concorso-per-dieci-camici-in-corsia/",
       "data": "27 ott, 15:26"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Il San Pio ha prorogato fino al 31 dicembre i contratti di tre chirurghi in pensione per la Chirurgia d'urgenza e cerca un sostituto per il medico sospeso che seguiva la PMA.",
+     "fonti": [
+      "Il Mattino"
+     ],
+     "quando": "2026-10-29T06:11+01:00"
+    }
    },
    "foto": "pronto-soccorso-3"
   },
@@ -6090,17 +6290,21 @@
   },
   {
    "id": "benevento-docente-convitto-giannone-eredita-rai1",
-   "titolo": "Benevento, una docente del Convitto Giannone in gara a «L'Eredità» su Rai 1: torna anche martedì sera",
-   "titolo_google": "L'Eredità, docente del Convitto Giannone di Benevento in gara",
-   "sintesi": "Luigia Torrusio, docente di Lettere del Convitto Nazionale «Pietro Giannone» di Benevento, ha giocato lunedì 26 ottobre a «L'Eredità», il quiz di Rai 1 condotto da Marco Liorni. Si è fermata prima della Ghigliottina, ma martedì 27 torna in gara.",
+   "titolo": "Benevento, la docente del Convitto Giannone Luigia Torrusio arriva alla Ghigliottina de «L'Eredità» su Rai 1",
+   "titolo_google": "L'Eredità, Luigia Torrusio di Benevento alla Ghigliottina",
+   "sintesi": "Luigia Torrusio, docente del Convitto Nazionale «Pietro Giannone» di Benevento, è in gara da lunedì 26 ottobre a «L'Eredità», il quiz di Rai 1 condotto da Marco Liorni. Mercoledì 28 è arrivata al gioco finale, la Ghigliottina, per la seconda sera di fila.",
    "categoria": "cultura",
    "zona": "benevento",
    "luogo": "Benevento",
-   "pubblicato": "2026-10-27T08:47+01:00",
-   "stato": "una_fonte",
+   "pubblicato": "2026-10-28T22:40+01:00",
+   "stato": "confermata",
    "rilevante": false,
    "importanza": 2,
    "fonti": [
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/28/benevento-protagonista-su-rai-1-la-prof-ssa-luigia-vola-al-gioco-finale-de-leredita/"
+    },
     {
      "nome": "NTR24",
      "url": "https://www.ntr24.tv/2026/10/27/leredita-la-docente-sannita-luigia-torrusio-protagonista-su-raiuno-tornera-in-gara-anche-stasera/"
@@ -6109,38 +6313,63 @@
    "articolo": {
     "racconto": [
      {
-      "testo": "Luigia Torrusio, docente di Lettere del Convitto Nazionale «Pietro Giannone» di Benevento, è stata tra i concorrenti della puntata di lunedì 26 ottobre di «L'Eredità», il quiz di Rai 1 condotto da Marco Liorni, che quest'anno compie venticinque edizioni. Nata a Salerno, vive e insegna nel Sannio.",
+      "testo": "Nella puntata di mercoledì 28 ottobre Luigia Torrusio è arrivata di nuovo alla Ghigliottina, il gioco finale di «L'Eredità», dopo esserci arrivata già la sera prima: è la seconda sera di fila. La sua partecipazione ha avuto molti messaggi di sostegno sui social da amici, colleghi e studenti.",
       "fonti": [
-       "NTR24"
-      ]
-     },
-     {
-      "testo": "Ha superato diverse sfide e ha contribuito a far salire il montepremi prima a 30mila e poi a 40mila euro, salvandosi alla «Scossa» per appena due secondi. Si è fermata nella sfida che porta alla Ghigliottina, il gioco finale, contro un avversario che ha indovinato quasi tutte le risposte.",
-      "fonti": [
-       "NTR24"
-      ]
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-28"
      },
      {
       "testo": "La sua partecipazione non è finita: martedì 27 ottobre torna in gara nella nuova puntata del programma.",
       "fonti": [
        "NTR24"
-      ]
+      ],
+      "giorno": "2026-10-27"
+     },
+     {
+      "testo": "Luigia Torrusio, docente di Lettere del Convitto Nazionale «Pietro Giannone» di Benevento, è stata tra i concorrenti della puntata di lunedì 26 ottobre di «L'Eredità», il quiz di Rai 1 condotto da Marco Liorni, che quest'anno compie venticinque edizioni. Nata a Salerno, vive e insegna nel Sannio.",
+      "fonti": [
+       "NTR24"
+      ],
+      "giorno": "2026-10-26"
+     },
+     {
+      "testo": "Ha superato diverse sfide e ha contribuito a far salire il montepremi prima a 30mila e poi a 40mila euro, salvandosi alla «Scossa» per appena due secondi. Si è fermata nella sfida che porta alla Ghigliottina, il gioco finale, contro un avversario che ha indovinato quasi tutte le risposte.",
+      "fonti": [
+       "NTR24"
+      ],
+      "giorno": "2026-10-26"
      }
     ],
     "cronologia": [],
     "concordano": [],
     "divergono": [],
-    "non_si_sa": [],
+    "non_si_sa": [
+     "Se ha vinto il montepremi alla Ghigliottina e se tornerà in gara nelle prossime puntate."
+    ],
     "fonti": [
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Benevento protagonista su Rai 1: la prof.ssa Luigia vola al gioco finale de “L’Eredità”",
+      "url": "https://www.beneventonews24.it/2026/10/28/benevento-protagonista-su-rai-1-la-prof-ssa-luigia-vola-al-gioco-finale-de-leredita/",
+      "data": "28 ott, 22:40"
+     },
      {
       "nome": "NTR24",
       "titolo": "L’Eredità, la docente sannita Luigia Torrusio protagonista su Raiuno: tornerà in gara anche stasera",
       "url": "https://www.ntr24.tv/2026/10/27/leredita-la-docente-sannita-luigia-torrusio-protagonista-su-raiuno-tornera-in-gara-anche-stasera/",
       "data": "27 ott, 08:47"
      }
-    ]
-   },
-   "scena": "The bright studio of an Italian TV quiz show during a game, seen from behind a contestant standing at her podium: we see only her hair and shoulders from behind, colored spotlights, big screens without text, the studio audience blurred in the dark"
+    ],
+    "aggiornamento": {
+     "testo": "Mercoledì 28 ottobre Luigia Torrusio è arrivata alla Ghigliottina, il gioco finale, per la seconda sera di fila.",
+     "fonti": [
+      "BeneventoNews24"
+     ],
+     "quando": "2026-10-29T06:11+01:00",
+     "titolo_prima": "Benevento, una docente del Convitto Giannone in gara a «L'Eredità» su Rai 1: torna anche martedì sera"
+    }
+   }
   },
   {
    "id": "benevento-catanzaro-cancelli-vigorito-ore-17-accesso-stadio",
@@ -6544,125 +6773,6 @@
    ]
   },
   {
-   "id": "walking-marathon-benevento-2026-400-partecipanti",
-   "titolo": "Benevento, 400 persone alla seconda Walking Marathon",
-   "titolo_google": "Walking Marathon Benevento 2026: 400 partecipanti",
-   "sintesi": "Sono state 400 le persone che domenica 25 ottobre hanno partecipato alla seconda edizione della Walking Marathon Benevento, la camminata non competitiva per le strade della città. Lo dice Enzo Lauro, consigliere delegato allo Sport del Comune.",
-   "categoria": "sport",
-   "sport": "altro",
-   "zona": "benevento",
-   "luogo": "Benevento",
-   "stato": "ufficiale",
-   "rilevante": false,
-   "importanza": 2,
-   "fonti": [
-    {
-     "nome": "Comune di Benevento",
-     "url": "https://www.comune.benevento.it/",
-     "ufficiale": true
-    },
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/23/eventi-23-24-25-ottobre/"
-    },
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/walking-marathon-2026-lauro-evento-che-ha-coniugato-sport-e-sostenibilita/"
-    },
-    {
-     "nome": "NTR24 Sport",
-     "url": "https://sport.ntr24.tv/2026/10/26/successo-per-la-walking-marathon-lauro-evento-che-ha-coniugato-sport-e-sostenibilita/"
-    },
-    {
-     "nome": "BeneventoNews24",
-     "url": "https://www.beneventonews24.it/2026/10/26/walking-marathon-2026-lauro-evento-che-ha-coniugato-sport-e-sostenibilita/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Sono state 400 le persone che hanno partecipato alla Walking Marathon Benevento 2026, la seconda edizione della camminata che domenica 25 ottobre è passata per le strade della città. Il numero lo dà Enzo Lauro, consigliere delegato allo Sport del Comune di Benevento.",
-      "fonti": [
-       "Comune di Benevento",
-       "NTR24",
-       "Anteprima24",
-       "NTR24 Sport",
-       "BeneventoNews24"
-      ]
-     },
-     {
-      "testo": "È una camminata non competitiva, da fare a passo di marcia, organizzata dall'associazione sportiva Camminatori Sportivi Gruppo MAGÀ Benevento. Il programma prevedeva la partenza alle 8:30 vicino a via Grimoaldo Re e tre percorsi: 10 chilometri in città, tra le sue bellezze artistiche e storiche, 21 chilometri e i 42 della maratona intera, fino a Pietrelcina e ritorno.",
-      "fonti": [
-       "NTR24"
-      ]
-     },
-     {
-      "testo": "Per Lauro è stato «un bellissimo evento», con partecipanti arrivati da tutta Italia, «all'insegna dello sport, della salute e della sostenibilità ambientale». Il consigliere aggiunge che la camminata «ha aiutato a far conoscere la nostra città nelle sue bellezze» e che i 400 partecipanti sono la prova del successo della manifestazione.",
-      "fonti": [
-       "Comune di Benevento",
-       "Anteprima24",
-       "NTR24 Sport",
-       "BeneventoNews24"
-      ]
-     },
-     {
-      "testo": "Lauro ha portato i saluti del sindaco Clemente Mastella insieme al consigliere Luigi Scarinzi, «che fa parte anche dello staff», e ha fatto anche lui il percorso di 10 chilometri in città.",
-      "fonti": [
-       "Comune di Benevento"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [],
-    "fonti": [
-     {
-      "nome": "Comune di Benevento",
-      "titolo": "Lauro: \"Walking Marathon 2026, evento che ha coniugato sport e sostenibilità\"",
-      "url": "https://www.comune.benevento.it/",
-      "data": "26 ott, 18:30",
-      "ufficiale": true
-     },
-     {
-      "nome": "NTR24",
-      "titolo": "Monumenti Aperti, castagne, Walking Marathon: gli eventi del week end a Benevento e nel Sannio",
-      "url": "https://www.ntr24.tv/2026/10/23/eventi-23-24-25-ottobre/",
-      "data": "23 ott"
-     },
-     {
-      "nome": "Anteprima24",
-      "titolo": "Walking Marathon 2026, Lauro: “Evento che ha coniugato sport e sostenibilità”",
-      "url": "https://www.anteprima24.it/benevento/walking-marathon-2026-lauro-evento-che-ha-coniugato-sport-e-sostenibilita/",
-      "data": "26 ott, 18:36"
-     },
-     {
-      "nome": "NTR24 Sport",
-      "titolo": "Successo per la Walking Marathon. Lauro: “Evento che ha coniugato sport e sostenibilità”",
-      "url": "https://sport.ntr24.tv/2026/10/26/successo-per-la-walking-marathon-lauro-evento-che-ha-coniugato-sport-e-sostenibilita/",
-      "data": "26 ott, 18:37"
-     },
-     {
-      "nome": "BeneventoNews24",
-      "titolo": "Walking Marathon 2026, Lauro: “Evento che ha coniugato sport e sostenibilità”",
-      "url": "https://www.beneventonews24.it/2026/10/26/walking-marathon-2026-lauro-evento-che-ha-coniugato-sport-e-sostenibilita/",
-      "data": "26 ott, 18:45"
-     }
-    ]
-   },
-   "comunicati": [
-    "9b7ebaeb9c96"
-   ],
-   "foto_inviate": [
-    "img/locandine/walking-marathon-benevento-2026-400-partecipanti-foto.jpg"
-   ],
-   "foto_da": "Comune di Benevento",
-   "subito": true,
-   "pubblicato": "2026-10-26T18:33:01+01:00",
-   "immagine": "corsa",
-   "foto": "corsa-3"
-  },
-  {
    "id": "sannio-acque-undici-comuni-gestione-autonoma-ricorsi-tar",
    "titolo": "Acqua, undici Comuni del Sannio contro il passaggio a Sannio Acque: depositato il ricorso al TAR",
    "titolo_google": "Sannio Acque, undici Comuni fanno ricorso al TAR",
@@ -6896,504 +7006,6 @@
    "foto": "fontana-5"
   },
   {
-   "id": "cautano-ordinanza-quiete-pubblica-palloni-leggeri",
-   "titolo": "Cautano, il sindaco richiama al rispetto della quiete: nelle piazze vicino alle case meglio palloni leggeri",
-   "titolo_google": "Cautano, ordinanza sulla quiete pubblica: palloni leggeri",
-   "sintesi": "Il sindaco di Cautano ha firmato lunedì 26 ottobre un'ordinanza di richiamo contro schiamazzi e rumori negli spazi pubblici vicino alle case. Ai ragazzi che giocano a pallone consiglia palloni leggeri al posto di quelli di cuoio; non ci sono nuove multe.",
-   "categoria": "altro",
-   "zona": "provincia",
-   "luogo": "Cautano",
-   "pubblicato": "2026-10-26",
-   "stato": "ufficiale",
-   "rilevante": false,
-   "importanza": 3,
-   "fonti": [
-    {
-     "nome": "Comune di Cautano",
-     "url": "https://comune.cautano.bn.it/novita/ordinanza-nr-32-disposizioni-di-richiamo-e-prevenzione-a-tutela-della-quiete-pubblica/",
-     "ufficiale": true
-    },
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/27/e-guerra-ai-palloni-di-cuoio-a-cautano-il-sindaco-scende-in-campo-contro-i-rumori-molesti/"
-    },
-    {
-     "nome": "BeneventoNews24",
-     "url": "https://www.beneventonews24.it/2026/10/27/cautano-quiete-pubblica-e-gioco-contro-i-palloni-di-cuoio-il-sindaco-firma-unordinanza/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "A Cautano, paese ai piedi del Taburno, il sindaco Alessandro Gisoldi ha firmato lunedì 26 ottobre un'ordinanza per la quiete pubblica. Chiede a tutti di evitare schiamazzi, grida e rumori forti nelle strade e nelle piazze, soprattutto vicino alle case e nelle ore del pomeriggio, della sera e della notte.",
-      "fonti": [
-       "Comune di Cautano",
-       "BeneventoNews24"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "Per i ragazzi che giocano a pallone negli spazi pubblici accanto alle abitazioni, il sindaco consiglia palloni leggeri, di gommapiuma o di plastica, e di lasciare a casa quelli di cuoio o pesanti, che rimbombano contro muri, portoni, finestre e serrande. Ai genitori ricorda il dovere di controllare i figli.",
-      "fonti": [
-       "Comune di Cautano"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "L'ordinanza nasce da alcune segnalazioni arrivate in Comune. La Polizia locale e l'ufficio tecnico hanno fatto due sopralluoghi e non hanno trovato prove dei disturbi segnalati: per questo non ci sono nuovi divieti né nuove multe. È un richiamo al rispetto delle regole che già valgono. La Polizia locale e le forze dell'ordine controlleranno, puntando prima di tutto sulla prevenzione.",
-      "fonti": [
-       "Comune di Cautano",
-       "NTR24"
-      ],
-      "giorno": "2026-10-26"
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "L'ordinanza nasce da segnalazioni, i due sopralluoghi di Polizia locale e ufficio tecnico non hanno trovato prove e non ci sono nuovi divieti",
-      "fonti": [
-       "Comune di Cautano",
-       "NTR24"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [],
-    "fonti": [
-     {
-      "nome": "Comune di Cautano",
-      "titolo": "Ordinanza nr 32 disposizioni di richiamo e prevenzione a tutela della quiete pubblica",
-      "url": "https://comune.cautano.bn.it/novita/ordinanza-nr-32-disposizioni-di-richiamo-e-prevenzione-a-tutela-della-quiete-pubblica/",
-      "data": "26 ott",
-      "ufficiale": true
-     },
-     {
-      "nome": "NTR24",
-      "titolo": "È guerra ai palloni di cuoio a Cautano: il sindaco scende in campo contro i rumori molesti",
-      "url": "https://www.ntr24.tv/2026/10/27/e-guerra-ai-palloni-di-cuoio-a-cautano-il-sindaco-scende-in-campo-contro-i-rumori-molesti/",
-      "data": "27 ott, 16:48"
-     },
-     {
-      "nome": "BeneventoNews24",
-      "titolo": "Cautano, quiete pubblica e gioco con i palloni di cuoio: il sindaco firma un’ordinanza",
-      "url": "https://www.beneventonews24.it/2026/10/27/cautano-quiete-pubblica-e-gioco-contro-i-palloni-di-cuoio-il-sindaco-firma-unordinanza/",
-      "data": "27 ott, 17:37"
-     }
-    ]
-   },
-   "immagine": "piazza",
-   "foto": "piazza-2"
-  },
-  {
-   "id": "tribunale-benevento-rotili-di-carlo-coordinatrici-penale-gip",
-   "titolo": "Tribunale di Benevento, Simonetta Rotili e Maria Di Carlo coordinano le sezioni penale e Gip-Gup dopo l'uscita di Sergio Pezza",
-   "titolo_google": "Tribunale di Benevento, nuove coordinatrici penale e Gip",
-   "sintesi": "Dal 26 ottobre la giudice Simonetta Rotili coordina la sezione penale del Tribunale di Benevento e Maria Di Carlo la sezione Gip-Gup. Le ha nominate il presidente Michele Russo dopo che Sergio Pezza ha lasciato il 23 ottobre la presidenza della sezione penale.",
-   "categoria": "altro",
-   "zona": "benevento",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-26T17:15+01:00",
-   "stato": "una_fonte",
-   "rilevante": false,
-   "importanza": 2,
-   "fonti": [
-    {
-     "nome": "Ottopagine",
-     "url": "https://www.ottopagine.it/bn/cronaca/442226/tribunale-pezza-lascia-rotili-e-di-carlo-coordinatrici-sezioni-penale-e-gip-gup.shtml"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Il Tribunale di Benevento ha due nuove coordinatrici. Da lunedì 26 ottobre la giudice Simonetta Rotili guida la sezione penale (dibattimento e riesame) e la giudice Maria Di Carlo la sezione Gip-Gup, quella dei giudici delle indagini e delle udienze preliminari. Le ha nominate con un decreto il presidente del Tribunale, Michele Russo.",
-      "fonti": [
-       "Ottopagine"
-      ]
-     },
-     {
-      "testo": "Le nomine servono a far funzionare le due sezioni dopo che il giudice Sergio Pezza, dal 23 ottobre, ha lasciato la presidenza della sezione penale. Il concorso per i nuovi presidenti di sezione non è finito e il posto resterà vuoto, si prevede, per più di tre mesi.",
-      "fonti": [
-       "Ottopagine"
-      ]
-     },
-     {
-      "testo": "Per la sezione penale c'era solo la domanda di Rotili. Per la Gip-Gup le domande erano due, di Di Carlo e di Maria Amoruso, arrivata a Benevento da Novara a gennaio: il presidente ha scelto Di Carlo per gli oltre vent'anni di lavoro come Gip e Gup. Pezza resta giudice nella sezione penale, presiede il III collegio penale e, fino alla nomina del nuovo presidente di sezione, la Corte d'Assise.",
-      "fonti": [
-       "Ottopagine"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Quando sarà nominato il nuovo presidente della sezione penale."
-    ],
-    "fonti": [
-     {
-      "nome": "Ottopagine",
-      "titolo": "Tribunale: Pezza lascia Rotili e Di Carlo coordinatrici Sezioni penale e Gip-Gup",
-      "url": "https://www.ottopagine.it/bn/cronaca/442226/tribunale-pezza-lascia-rotili-e-di-carlo-coordinatrici-sezioni-penale-e-gip-gup.shtml",
-      "data": "26 ott, 17:15"
-     }
-    ]
-   },
-   "immagine": "tribunale",
-   "foto": "tribunale-3"
-  },
-  {
-   "id": "benevento-bellissima-italia-rai2-fabrizio-rocca-puntata",
-   "titolo": "Benevento, arriva la troupe di «Bellissima Italia» di Rai 2: una puntata sulla città con Fabrizio Rocca",
-   "titolo_google": "Bellissima Italia, Rai 2 a Benevento per una puntata",
-   "sintesi": "Nei prossimi giorni il giornalista Fabrizio Rocca e la troupe di «Bellissima Italia», programma di viaggi di Rai 2, saranno a Benevento per girare una puntata sulla città: Arco di Traiano, Santa Sofia, Museo del Sannio e gli altri monumenti.",
-   "categoria": "cultura",
-   "zona": "benevento",
-   "luogo": "Benevento",
-   "immagine": "archeologia",
-   "pubblicato": "2026-10-26T18:02+01:00",
-   "stato": "una_fonte",
-   "rilevante": false,
-   "importanza": 2,
-   "fonti": [
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/darte-bellissima-italia-rai-due/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Benevento sarà protagonista di una puntata di «Bellissima Italia», il programma di viaggi di Rai 2 nato nel 2020 che va in onda la domenica pomeriggio alle 14:50. Nei prossimi giorni arriveranno in città il giornalista Fabrizio Rocca e la troupe della trasmissione.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "La puntata racconterà i monumenti, la storia e le tradizioni del capoluogo. Le telecamere riprenderanno l'Arco di Traiano e la chiesa di Santa Sofia, tutti e due oggi in restauro, il Museo del Sannio e gli altri monumenti simbolo della città.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "In quali giorni saranno fatte le riprese.",
-     "Quando andrà in onda la puntata."
-    ],
-    "fonti": [
-     {
-      "nome": "Anteprima24",
-      "titolo": "I luoghi d’arte di Benevento sotto i riflettori di “Bellissima Italia”",
-      "url": "https://www.anteprima24.it/benevento/darte-bellissima-italia-rai-due/",
-      "data": "26 ott, 18:02"
-     }
-    ]
-   },
-   "foto": "archeologia-5"
-  },
-  {
-   "id": "calcio-under-15-provinciale-benevento-2026-gironi-31-ottobre",
-   "titolo": "Calcio giovanile, l'Under 15 provinciale di Benevento parte il 31 ottobre: le 17 squadre nei due gironi",
-   "titolo_google": "Under 15 provinciale Benevento, si parte il 31 ottobre",
-   "sintesi": "Il campionato provinciale Under 15 di calcio della delegazione di Benevento comincia nel fine settimana del 31 ottobre e 1 novembre, con 17 squadre in due gironi. Negli stessi giorni partono i tornei Esordienti e Pulcini; Primi Calci e Piccoli Amici il 7 e 8 novembre.",
-   "categoria": "sport",
-   "sport": "calcio",
-   "zona": "provincia",
-   "luogo": "Benevento e provincia",
-   "immagine": "calcio",
-   "pubblicato": "2026-10-26T17:30+01:00",
-   "stato": "ufficiale",
-   "rilevante": false,
-   "importanza": 2,
-   "fonti": [
-    {
-     "nome": "LND Benevento",
-     "url": "https://campania.lnd.it/comunicato-ufficiale-n-15-del-26-ottobre-2026-d-p-benevento/",
-     "ufficiale": true
-    },
-    {
-     "nome": "LND Benevento (27/10)",
-     "url": "https://campania.lnd.it/comunicato-ufficiale-n-16-del-27-ottobre-2026-d-p-benevento/",
-     "ufficiale": true
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Martedì 27 ottobre la delegazione di Benevento della Lega Nazionale Dilettanti ha pubblicato i calendari delle partite dei due gironi, A e B, dell'Under 15 provinciale, con il comunicato ufficiale numero 16.",
-      "fonti": [
-       "LND Benevento (27/10)"
-      ],
-      "giorno": "2026-10-27"
-     },
-     {
-      "testo": "Il campionato provinciale Under 15 di calcio della delegazione di Benevento della Lega Nazionale Dilettanti comincia nel fine settimana di sabato 31 ottobre e domenica 1 novembre. Le squadre sono 17, divise in due gironi.",
-      "fonti": [
-       "LND Benevento"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "Nel girone A giocano Academy Pesco Sannita, Apice Calcio 1964, Aurelio M. Pacillo, Cesare Ventura, Grippo DRS Benevento, San Giovanni Bruno Founder, Valfortore e Juventina Circello. Nel girone B ci sono P. Casale Academy Cervinara, Airola Calcio, Bucciano Soccer Academy, G.S. Telese Terme, Giada Club Calcio a 5, Nuova Telis, Paolisi, Real Dugenta Calcio e Valle Telesina.",
-      "fonti": [
-       "LND Benevento"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "Negli stessi giorni, 31 ottobre e 1 novembre, partono anche i tornei dei più piccoli: Esordienti e Pulcini. Primi Calci e Piccoli Amici cominciano il 7 e 8 novembre; la delegazione avverte che le date possono cambiare. Il calendario ufficiale delle partite è quello pubblicato online sul sito delle gare della LND.",
-      "fonti": [
-       "LND Benevento"
-      ],
-      "giorno": "2026-10-26"
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [],
-    "fonti": [
-     {
-      "nome": "LND Benevento",
-      "titolo": "Comunicato Ufficiale n. 15 del 26 ottobre 2026 – D.P. Benevento",
-      "url": "https://campania.lnd.it/comunicato-ufficiale-n-15-del-26-ottobre-2026-d-p-benevento/",
-      "data": "26 ott",
-      "ufficiale": true
-     },
-     {
-      "nome": "LND Benevento (27/10)",
-      "titolo": "Comunicato Ufficiale n. 16 del 27 ottobre 2026 – D.P. Benevento",
-      "url": "https://campania.lnd.it/comunicato-ufficiale-n-16-del-27-ottobre-2026-d-p-benevento/",
-      "data": "27 ott, 19:23",
-      "ufficiale": true
-     }
-    ],
-    "aggiornamento": {
-     "testo": "Martedì 27 ottobre la Lega Nazionale Dilettanti di Benevento ha pubblicato i calendari dei gironi A e B dell'Under 15.",
-     "fonti": [
-      "LND Benevento (27/10)"
-     ],
-     "quando": "2026-10-27T20:12+01:00"
-    }
-   },
-   "foto": "calcio-8"
-  },
-  {
-   "id": "benevento-catanzaro-convocati-floro-flores-27-ottobre",
-   "titolo": "Serie B, Benevento-Catanzaro: i 24 convocati di Floro Flores",
-   "titolo_google": "Benevento-Catanzaro, i convocati di Floro Flores",
-   "sintesi": "Antonio Floro Flores ha convocato 24 giocatori per Benevento-Catanzaro, partita della 9ª giornata di Serie BKT: due portieri, sette difensori, sette centrocampisti e otto attaccanti.",
-   "categoria": "sport",
-   "sport": "calcio",
-   "zona": "benevento",
-   "immagine": "calcio",
-   "luogo": "Benevento",
-   "stato": "ufficiale",
-   "rilevante": false,
-   "importanza": 5,
-   "fonti": [
-    {
-     "nome": "Benevento Calcio",
-     "url": "https://www.beneventocalcio.club/news/notizie/7675/serie-bkt-2026-2027-benevento-catanzaro-i-convocati-di-mister-floro-flores.shtml",
-     "ufficiale": true
-    },
-    {
-     "nome": "NTR24 Sport",
-     "url": "https://sport.ntr24.tv/2026/10/26/benevento-catanzaro-i-convocati-giallorossi-pierozzi-out-due-i-portieri-in-lista/"
-    },
-    {
-     "nome": "TV7 Benevento",
-     "url": "https://www.tvsette.net/benevento-catanzaro-i-convocati-di-floro-flores-tornano-talia-e-schimmenti/"
-    },
-    {
-     "nome": "BeneventoNews24",
-     "url": "https://www.beneventonews24.it/2026/10/26/benevento-catanzaro-i-convocati-di-floro-flores-tornano-talia-e-schimmenti/"
-    },
-    {
-     "nome": "Cronache del Sannio",
-     "url": "https://www.cronachedelsannio.it/sannionews24/benevento-convocati-gara-catanzaro-due-assenti/"
-    },
-    {
-     "nome": "Benevento Giornale",
-     "url": "https://www.beneventogiornale.com/2026/10/27/incontro-di-calcio-benevento-catanzaro-i-convocati-di-mister-floro-flores/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "L'allenatore del Benevento, Antonio Floro Flores, ha scelto i 24 giocatori convocati per la partita con il Catanzaro, la 9ª giornata del campionato di Serie BKT. L'elenco è arrivato lunedì 26 ottobre, alla fine dell'allenamento.",
-      "fonti": [
-       "Benevento Calcio",
-       "NTR24 Sport",
-       "TV7 Benevento",
-       "BeneventoNews24"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "La partita si gioca martedì 27 ottobre alle 19 allo stadio Ciro Vigorito ed è il primo turno infrasettimanale della stagione. Mancano gli infortunati Edoardo Pierozzi e Sylla; resta fuori anche Logan. Tornano invece Angelo Talia ed Emanuele Schimmenti, che erano stati lasciati a casa per scelta tecnica nella trasferta di Arezzo.",
-      "fonti": [
-       "Cronache del Sannio"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "In porta ci sono Manuel Esposito (numero 22) e Gianmarco Vannucchi (26). I difensori sono sette: Pietro Beruatto (20), Luca Caldirola (5), Christian Dalle Mura (15), Raffaele Romano (25), Pietro Saio (23), Stefano Scognamillo (14) e Leonardo Sernicola (17).",
-      "fonti": [
-       "Benevento Calcio"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "Sette anche i centrocampisti: Christian Kouan (28), Mattia Maita (8), Mattia Mannini (16), Antonio Prisco (4), Antonis Siatounis (6), Pier Luigi Simonetti (18) e Angelo Talia (38).",
-      "fonti": [
-       "Benevento Calcio"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "In attacco sono otto: Luigi Cherubini (10), Davide Lamesta (11), Guglielmo Mignani (32), David Okereke (29), Francesco Salvemini (9), Emanuele Schimmenti (21), Marco Tumminello (93) e Simone Verdi (90).",
-      "fonti": [
-       "Benevento Calcio"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "Anche il Catanzaro ha diffuso la sua lista: l'allenatore Michele Mignani, arrivato da poco sulla panchina dei calabresi, ha convocato 28 giocatori. Mancheranno Pecorino e Giovane.",
-      "fonti": [
-       "BeneventoNews24 (convocati del Catanzaro)"
-      ],
-      "giorno": "2026-10-26"
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [],
-    "fonti": [
-     {
-      "nome": "Benevento Calcio",
-      "titolo": "SERIE BKT 2026-2027: BENEVENTO-CATANZARO I CONVOCATI DI MISTER FLORO FLORES",
-      "url": "https://www.beneventocalcio.club/news/notizie/7675/serie-bkt-2026-2027-benevento-catanzaro-i-convocati-di-mister-floro-flores.shtml",
-      "data": "26 ott, 17:30",
-      "ufficiale": true
-     },
-     {
-      "nome": "NTR24 Sport",
-      "titolo": "Benevento-Catanzaro, i convocati giallorossi: Pierozzi out, due i portieri in lista",
-      "url": "https://sport.ntr24.tv/2026/10/26/benevento-catanzaro-i-convocati-giallorossi-pierozzi-out-due-i-portieri-in-lista/",
-      "data": "26 ott, 17:46"
-     },
-     {
-      "nome": "TV7 Benevento",
-      "titolo": "Benevento-Catanzaro, i convocati di Floro Flores: tornano Talia e Schimmenti",
-      "url": "https://www.tvsette.net/benevento-catanzaro-i-convocati-di-floro-flores-tornano-talia-e-schimmenti/",
-      "data": "26 ott, 17:47"
-     },
-     {
-      "nome": "BeneventoNews24",
-      "titolo": "Benevento-Catanzaro, i convocati di Floro Flores: tornano Talia e Schimmenti, out Pierozzi",
-      "url": "https://www.beneventonews24.it/2026/10/26/benevento-catanzaro-i-convocati-di-floro-flores-tornano-talia-e-schimmenti/",
-      "data": "26 ott, 17:57"
-     },
-     {
-      "nome": "Cronache del Sannio",
-      "titolo": "Benevento, i convocati per la gara con il Catanzaro: due assenti",
-      "url": "https://www.cronachedelsannio.it/sannionews24/benevento-convocati-gara-catanzaro-due-assenti/",
-      "data": "26 ott, 18:38"
-     },
-     {
-      "nome": "BeneventoNews24 (convocati del Catanzaro)",
-      "titolo": "Benevento-Catanzaro, i convocati di Mignani: ben 28 i convocati, out in due",
-      "url": "https://www.beneventonews24.it/2026/10/26/benevento-catanzaro-i-convocati-di-mignani-ben-28-i-convocati-out-in-due/",
-      "data": "26 ott, 21:00"
-     },
-     {
-      "nome": "Benevento Giornale",
-      "titolo": "Incontro di calcio Benevento-Catanzaro, i convocati di mister Floro Flores",
-      "url": "https://www.beneventogiornale.com/2026/10/27/incontro-di-calcio-benevento-catanzaro-i-convocati-di-mister-floro-flores/",
-      "data": "27 ott, 14:43"
-     }
-    ]
-   },
-   "comunicati": [
-    "ua4fa4382788"
-   ],
-   "subito": true,
-   "pubblicato": "2026-10-26T17:38:37+01:00",
-   "foto": "calcio-17"
-  },
-  {
-   "id": "asl-benevento-sms-truffa-falsi-avvisi-sanitari",
-   "titolo": "ASL Benevento, falsi SMS chiedono di chiamare per «comunicazioni urgenti»: l'Azienda avverte, non richiamate",
-   "titolo_google": "Truffa SMS ASL Benevento: non richiamate il numero",
-   "sintesi": "L'ASL Benevento avverte che girano SMS ingannevoli che invitano a chiamare un numero per comunicazioni urgenti sulla propria posizione sanitaria. I messaggi non vengono dall'Azienda: non bisogna richiamare né dare dati personali, sanitari o bancari.",
-   "categoria": "altro",
-   "zona": "provincia",
-   "luogo": "Benevento e provincia",
-   "immagine": "truffe",
-   "stato": "ufficiale",
-   "rilevante": false,
-   "importanza": 4,
-   "comunicati": [
-    "ud0c83587de2"
-   ],
-   "fonti": [
-    {
-     "nome": "ASL Benevento",
-     "url": "https://www.aslbenevento.it/notizie/avviso-allutenza-attenzione-non-rispondete-questi-sms",
-     "ufficiale": true
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "L'ASL Benevento, l'Azienda sanitaria della provincia, avverte i cittadini: stanno girando SMS ingannevoli che invitano a chiamare numeri di telefono che non appartengono all'Azienda. Il pretesto sono presunte comunicazioni urgenti sulla propria posizione sanitaria. L'ASL precisa che questi messaggi non vengono da lei.",
-      "fonti": [
-       "ASL Benevento"
-      ]
-     },
-     {
-      "testo": "Un esempio del messaggio è questo: «Servizio Sanitario: Si prega di contattare la propria sede ASL di riferimento al numero 89347784 (o altri numeri finali) per comunicazioni urgenti che la riguardano.»",
-      "fonti": [
-       "ASL Benevento"
-      ]
-     },
-     {
-      "testo": "L'Azienda raccomanda di non richiamare il numero indicato e di non dare dati personali, sanitari o bancari. Le comunicazioni ufficiali dell'ASL arrivano solo dai suoi canali istituzionali e dai recapiti pubblicati ufficialmente. Chi ha un dubbio può chiamare direttamente gli uffici dell'Azienda, ai numeri che si trovano sul sito aslbenevento.it.",
-      "fonti": [
-       "ASL Benevento"
-      ]
-     },
-     {
-      "testo": "L'ASL chiede anche di far girare l'avviso tra familiari e conoscenti, soprattutto tra le persone più fragili, per aiutare a contrastare le truffe.",
-      "fonti": [
-       "ASL Benevento"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [],
-    "fonti": [
-     {
-      "nome": "ASL Benevento",
-      "titolo": "Avviso all'utenza: attenzione non rispondete a questi SMS!",
-      "url": "https://www.aslbenevento.it/notizie/avviso-allutenza-attenzione-non-rispondete-questi-sms",
-      "data": "26 ott",
-      "ufficiale": true
-     }
-    ]
-   },
-   "subito": true,
-   "pubblicato": "2026-10-26T17:22:17+01:00",
-   "foto": "truffe-8"
-  },
-  {
    "id": "cremonese-benevento-biglietti-settore-ospiti-31-ottobre",
    "titolo": "Cremonese-Benevento di sabato 31 ottobre: biglietti per i tifosi giallorossi a 20 euro, in vendita fino a venerdì",
    "titolo_google": "Biglietti Cremonese-Benevento 31 ottobre: prezzi settore ospiti",
@@ -7511,676 +7123,6 @@
    "foto": "stadio-4"
   },
   {
-   "id": "torrecuso-auto-fuori-uso-fermo-amministrativo-certificato-demolizione",
-   "titolo": "Torrecuso, auto con fermo amministrativo da rottamare: il Comune rilascia il certificato per demolirle",
-   "titolo_google": "Torrecuso, demolire l'auto con fermo amministrativo: come fare",
-   "sintesi": "A Torrecuso chi ha un'auto che non funziona più ma ha un fermo amministrativo per debiti col fisco può chiedere al Comune il certificato che la dichiara inutilizzabile, per demolirla e cancellarla dal PRA. Serve una perizia di un'officina o carrozzeria; la pratica costa 70 euro e la segue la Polizia Municipale.",
-   "categoria": "avvisi",
-   "zona": "provincia",
-   "immagine": "documenti",
-   "luogo": "Torrecuso",
-   "pubblicato": "2026-10-26T17:06+01:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "importanza": 3,
-   "fonti": [
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/26/torrecuso-veicoli-fuori-uso-sottoposti-a-fermo-amministrativo-attivata-la-procedura-per-la-certificazione-di-inutilizzabilita/"
-    },
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/veicoli-fuori-uso-sottoposti-a-fermo-amministrativo-attivata-la-procedura-per-la-certificazione-di-inutilizzabilita/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "A Torrecuso chi ha un'auto o un altro veicolo che non funziona più, ma non può rottamarlo perché ha un fermo amministrativo (il blocco messo per debiti col fisco), ora può chiedere al Comune un certificato che dichiara il veicolo inutilizzabile. Con quel certificato si può demolire il veicolo e cancellarlo dal PRA, il Pubblico Registro Automobilistico.",
-      "fonti": [
-       "NTR24",
-       "Anteprima24"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "La Giunta comunale ha adottato la procedura con la delibera 62 del 9 settembre 2026, che applica la legge 14 del 2026 sui veicoli fuori uso con il fermo amministrativo.",
-      "fonti": [
-       "NTR24",
-       "Anteprima24"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "La domanda si fa con il modulo allegato all'avviso del Comune. Bisogna allegare la copia del documento unico di circolazione e una perizia firmata dal titolare di un'officina o di una carrozzeria, che dica che il veicolo non si può più usare e che ripararlo non conviene. Ogni pratica costa 70 euro, da pagare quando si presenta la domanda, con bonifico o PagoPA: senza la ricevuta la pratica non parte.",
-      "fonti": [
-       "NTR24",
-       "Anteprima24"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "Le domande le esamina il Comando della Polizia Municipale, che rilascia il certificato. Per informazioni ci si rivolge alla Polizia Municipale di Torrecuso.",
-      "fonti": [
-       "NTR24",
-       "Anteprima24"
-      ],
-      "giorno": "2026-10-26"
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "La delibera 62 del 9 settembre, la perizia di officina o carrozzeria, il costo di 70 euro e le domande alla Polizia Municipale.",
-      "fonti": [
-       "NTR24",
-       "Anteprima24"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [
-     "Dove si trova sul sito del Comune il modulo per la domanda."
-    ],
-    "fonti": [
-     {
-      "nome": "NTR24",
-      "titolo": "Torrecuso, veicoli fuori uso sottoposti a fermo amministrativo: attivata la procedura per la certificazione di inutilizzabilità",
-      "url": "https://www.ntr24.tv/2026/10/26/torrecuso-veicoli-fuori-uso-sottoposti-a-fermo-amministrativo-attivata-la-procedura-per-la-certificazione-di-inutilizzabilita/",
-      "data": "26 ott, 17:06"
-     },
-     {
-      "nome": "Anteprima24",
-      "titolo": "Veicoli fuori uso sottoposti a fermo amministrativo: attivata la procedura per la certificazione di inutilizzabilità",
-      "url": "https://www.anteprima24.it/benevento/veicoli-fuori-uso-sottoposti-a-fermo-amministrativo-attivata-la-procedura-per-la-certificazione-di-inutilizzabilita/",
-      "data": "26 ott, 17:05"
-     }
-    ]
-   },
-   "foto": "documenti-14"
-  },
-  {
-   "id": "benevento-vincenzo-testa-consiglio-nazionale-consulenti-lavoro",
-   "titolo": "Il sannita Vincenzo Testa eletto nel Consiglio nazionale dei consulenti del lavoro",
-   "titolo_google": "Vincenzo Testa nel Consiglio nazionale consulenti del lavoro",
-   "sintesi": "Il sannita Vincenzo Testa è tra i 15 componenti del nuovo Consiglio nazionale dell'Ordine dei consulenti del lavoro, in carica per il triennio 2026-2029. Lo hanno eletto a Roma sabato 24 ottobre 438 delegati da tutta Italia.",
-   "categoria": "altro",
-   "zona": "benevento",
-   "luogo": "Benevento",
-   "immagine": "riunione",
-   "pubblicato": "2026-10-26T16:01+01:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "importanza": 2,
-   "fonti": [
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/26/rinnovo-consiglio-nazionale-dellordine-consulenti-del-lavoro-eletto-consigliere-il-sannita-vincenzo-testa/"
-    },
-    {
-     "nome": "BeneventoNews24",
-     "url": "https://www.beneventonews24.it/2026/10/26/rinnovato-il-consiglio-nazionale-dellordine-dei-consulenti-del-lavoro-eletto-consigliere-il-sannita-vincenzo-testa/"
-    },
-    {
-     "nome": "Ottopagine",
-     "url": "https://www.ottopagine.it/bn/attualita/442202/consiglio-nazionale-consulenti-del-lavoro-eletto-consigliere-il-sannita-testa.shtml"
-    },
-    {
-     "nome": "TV7 Benevento",
-     "url": "https://www.tvsette.net/rinnovo-consiglio-nazionale-dellordine-consulenti-del-lavoro-eletto-consigliere-il-sannita-vincenzo-testa/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "C'è anche un sannita nel nuovo Consiglio nazionale dell'Ordine dei consulenti del lavoro, l'organismo che rappresenta la categoria in tutta Italia: è Vincenzo Testa, di Benevento. Il Consiglio resterà in carica per il triennio 2026-2029.",
-      "fonti": [
-       "NTR24",
-       "Ottopagine",
-       "TV7 Benevento",
-       "BeneventoNews24"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "L'elezione si è tenuta a Roma sabato 24 ottobre. Hanno votato 438 delegati arrivati da tutta Italia per conto dei 106 Consigli provinciali dell'Ordine. Il più votato è stato il presidente uscente, Rosario De Luca, con il 96% delle preferenze.",
-      "fonti": [
-       "NTR24",
-       "Ottopagine",
-       "TV7 Benevento"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "Il nuovo Consiglio ha 15 componenti: nove sono stati confermati e sei sono nuovi. Si riunirà per la prima volta a Roma il 4 novembre, quando sceglierà presidente, vicepresidente, segretario e tesoriere.",
-      "fonti": [
-       "NTR24",
-       "Ottopagine"
-      ],
-      "giorno": "2026-10-26"
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "Il voto a Roma del 24 ottobre con 438 delegati, l'elezione di Vincenzo Testa e la prima riunione del 4 novembre.",
-      "fonti": [
-       "NTR24",
-       "Ottopagine"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [],
-    "fonti": [
-     {
-      "nome": "NTR24",
-      "titolo": "Rinnovo Consiglio Nazionale dell’Ordine Consulenti del Lavoro: eletto consigliere il sannita Vincenzo Testa",
-      "url": "https://www.ntr24.tv/2026/10/26/rinnovo-consiglio-nazionale-dellordine-consulenti-del-lavoro-eletto-consigliere-il-sannita-vincenzo-testa/",
-      "data": "26 ott, 16:01"
-     },
-     {
-      "nome": "BeneventoNews24",
-      "titolo": "Rinnovato il Consiglio Nazionale dell’Ordine dei Consulenti del Lavoro: eletto consigliere il sannita Vincenzo Testa",
-      "url": "https://www.beneventonews24.it/2026/10/26/rinnovato-il-consiglio-nazionale-dellordine-dei-consulenti-del-lavoro-eletto-consigliere-il-sannita-vincenzo-testa/",
-      "data": "26 ott, 15:49"
-     },
-     {
-      "nome": "Ottopagine",
-      "titolo": "Consiglio Nazionale Consulenti del Lavoro: eletto consigliere il sannita Testa",
-      "url": "https://www.ottopagine.it/bn/attualita/442202/consiglio-nazionale-consulenti-del-lavoro-eletto-consigliere-il-sannita-testa.shtml",
-      "data": "26 ott, 15:10"
-     },
-     {
-      "nome": "TV7 Benevento",
-      "titolo": "RINNOVO CONSIGLIO NAZIONALE DELL’ORDINE CONSULENTI DEL LAVORO- ELETTO CONSIGLIERE IL SANNITA VINCENZO TESTA",
-      "url": "https://www.tvsette.net/rinnovo-consiglio-nazionale-dellordine-consulenti-del-lavoro-eletto-consigliere-il-sannita-vincenzo-testa/",
-      "data": "26 ott, 14:33"
-     }
-    ]
-   },
-   "foto": "riunione-4"
-  },
-  {
-   "id": "benevento-carcere-detenuto-morto-compagno-cella-indagato",
-   "titolo": "Benevento, detenuto morto in carcere a Ferragosto 2025: il compagno di cella indagato per istigazione al suicidio",
-   "titolo_google": "Detenuto morto nel carcere di Benevento: c'è un indagato",
-   "sintesi": "Per la morte di un detenuto di 54 anni, trovato senza vita nel carcere di Benevento il 15 agosto 2025, è indagato per istigazione al suicidio il suo compagno di cella, un 56enne della Valle Telesina. Sono stati depositati i risultati dell'autopsia.",
-   "categoria": "cronaca",
-   "zona": "benevento",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-26T15:51+01:00",
-   "stato": "una_fonte",
-   "rilevante": false,
-   "importanza": 4,
-   "fonti": [
-    {
-     "nome": "Ottopagine",
-     "url": "https://www.ottopagine.it/bn/cronaca/442212/trovato-morto-in-carcere-compagno-di-cella-indagato-per-istigazione-al-suicidio.shtml"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "C'è un indagato per la morte del detenuto di 54 anni trovato senza vita nel carcere di contrada Capodimonte, a Benevento, nel pomeriggio di Ferragosto del 2025. L'ipotesi è l'istigazione al suicidio e l'indagato è il suo compagno di cella, un 56enne della Valle Telesina.",
-      "fonti": [
-       "Ottopagine"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "Il 54enne abitava in un paese della provincia ed era entrato in carcere pochi giorni prima, perché ritenuto il presunto responsabile di un'aggressione alla moglie. All'inizio si era pensato che si fosse tolto la vita tagliandosi la gola. La pm Maria Colucci aveva aperto un'inchiesta per istigazione al suicidio, prima contro ignoti, per poter fare tutti gli accertamenti.",
-      "fonti": [
-       "Ottopagine"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "Il compagno di cella era in carcere da maggio: sta scontando una condanna definitiva a più di 4 anni per furto, maltrattamenti e tentata estorsione ai danni della madre. Quale sia stato il suo comportamento resta da capire.",
-      "fonti": [
-       "Ottopagine"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "Un aiuto arriverà dall'autopsia della medica legale Francesca Iannaccone, i cui risultati sono stati appena depositati: le conclusioni riguardano la ferita al collo e un'altra alla parte posteriore della testa. I familiari del 54enne avevano espresso subito dubbi su come fosse morto; sul caso era intervenuto anche il garante regionale dei detenuti, Samuele Ciambriello.",
-      "fonti": [
-       "Ottopagine"
-      ],
-      "giorno": "2026-10-26"
-     }
-    ],
-    "cronologia": [
-     {
-      "data": "15 agosto 2025, pomeriggio",
-      "quando": "2025-08-15",
-      "fatto": "Il detenuto di 54 anni viene trovato morto nel carcere di Benevento.",
-      "fonti": [
-       "Ottopagine"
-      ]
-     },
-     {
-      "data": "26 ottobre",
-      "fatto": "Depositati i risultati dell'autopsia; il compagno di cella risulta indagato per istigazione al suicidio.",
-      "fonti": [
-       "Ottopagine"
-      ]
-     }
-    ],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Cosa dicono le conclusioni dell'autopsia sulle due ferite.",
-     "Che cosa contesti la Procura, in concreto, al compagno di cella."
-    ],
-    "fonti": [
-     {
-      "nome": "Ottopagine",
-      "titolo": "Trovato morto in carcere, compagno di cella indagato per istigazione al suicidio",
-      "url": "https://www.ottopagine.it/bn/cronaca/442212/trovato-morto-in-carcere-compagno-di-cella-indagato-per-istigazione-al-suicidio.shtml",
-      "data": "26 ott, 15:51"
-     }
-    ]
-   },
-   "scena": "The long corridor of an Italian prison wing with closed grey cell doors, cold neon light, an empty guard desk with a register, silent and somber"
-  },
-  {
-   "id": "sant-angelo-a-cupolo-cultura-piccoli-comuni-idoneo-non-finanziato",
-   "titolo": "Sant'Angelo a Cupolo, il progetto per l'inverno con San Nazzaro è idoneo al bando del Ministero ma resta senza fondi",
-   "titolo_google": "Sant'Angelo a Cupolo, progetto idoneo ma senza fondi",
-   "sintesi": "Il progetto «Territorio e tradizioni d'inverno» di Sant'Angelo a Cupolo e San Nazzaro, da 52.500 euro, è stato giudicato idoneo al bando ministeriale «Cultura nei piccoli Comuni» ma non è stato finanziato. Nessun Comune del Sannio è tra quelli che ricevono i soldi.",
-   "categoria": "politica",
-   "zona": "provincia",
-   "luogo": "Sant'Angelo a Cupolo",
-   "immagine": "borgo",
-   "pubblicato": "2026-10-26T15:59+01:00",
-   "stato": "una_fonte",
-   "rilevante": false,
-   "importanza": 2,
-   "fonti": [
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/26/cultura-nei-piccoli-comuni-santangelo-a-cupolo-idoneo-ma-senza-fondi-lassessore-zarro-la-strada-e-quella-giusta/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Il Comune di Sant'Angelo a Cupolo ha partecipato per la prima volta a «Cultura nei piccoli Comuni», il bando del Ministero per le iniziative che valorizzano il patrimonio culturale dei paesi. Il suo progetto è risultato idoneo ma non è stato finanziato. In graduatoria ci sono 27 enti che ricevono i soldi, per 40 realtà in tutta Italia, e nessuno è del Sannio.",
-      "fonti": [
-       "NTR24"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "Il progetto si chiamava «Territorio e tradizioni d'inverno tra Sant'Angelo a Cupolo e San Nazzaro» e costava 52.500 euro. Voleva unire i due paesi in una rassegna invernale sulle tradizioni: le leggende di Mazzamauriello e delle Janare, la Cantata dei Mesi, i presepi delle frazioni e percorsi nella natura e nella cultura, con associazioni, volontari e cittadini.",
-      "fonti": [
-       "NTR24"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "L'assessore Stefano Zarro lo considera comunque un buon risultato, vista la prima partecipazione e i tempi strettissimi: «Dobbiamo capire dove abbiamo mancato e quali punti possiamo migliorare già dalla prossima stagione». La seconda edizione del bando è annunciata entro la fine dell'anno, per iniziative da fare nell'estate 2027.",
-      "fonti": [
-       "NTR24"
-      ],
-      "giorno": "2026-10-26"
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Se il Comune ripresenterà lo stesso progetto al secondo bando."
-    ],
-    "fonti": [
-     {
-      "nome": "NTR24",
-      "titolo": "Cultura nei piccoli Comuni, Sant’Angelo a Cupolo idoneo ma senza fondi. L’assessore Zarro: «La strada è quella giusta»",
-      "url": "https://www.ntr24.tv/2026/10/26/cultura-nei-piccoli-comuni-santangelo-a-cupolo-idoneo-ma-senza-fondi-lassessore-zarro-la-strada-e-quella-giusta/",
-      "data": "26 ott, 15:59"
-     }
-    ]
-   },
-   "foto": "borgo-9"
-  },
-  {
-   "id": "benevento-catanzaro-arbitro-alberto-poli-27-ottobre",
-   "titolo": "Benevento-Catanzaro di martedì 27 ottobre al Vigorito: arbitra Alberto Poli di Verona",
-   "titolo_google": "Benevento-Catanzaro, arbitro Alberto Poli il 27 ottobre",
-   "sintesi": "Sarà Alberto Poli di Verona ad arbitrare Benevento-Catanzaro, partita della 9ª giornata del campionato di Serie BKT in programma martedì 27 ottobre alle 19 allo stadio Ciro Vigorito. Il Benevento non ha squalificati: Kouan resta in diffida.",
-   "categoria": "sport",
-   "sport": "calcio",
-   "zona": "benevento",
-   "immagine": "calcio",
-   "luogo": "Benevento",
-   "stato": "ufficiale",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Benevento Calcio",
-     "url": "https://www.beneventocalcio.club/news/notizie/7678/serie-bkt-2026-2027-benevento-catanzaro-dirige-alberto-poli.shtml",
-     "ufficiale": true
-    },
-    {
-     "nome": "NTR24 Sport",
-     "url": "https://sport.ntr24.tv/2026/10/26/benevento-catanzaro-arbitra-poli-di-verona/"
-    },
-    {
-     "nome": "Benevento Giornale",
-     "url": "https://www.beneventogiornale.com/2026/10/26/incontro-di-calcio-benevento-catanzaro-dirige-alberto-poli/"
-    },
-    {
-     "nome": "TV7 Benevento",
-     "url": "https://www.tvsette.net/calcio-benevento-catanzaro-arbitra-poli-designata-la-squadra-arbitrale-per-il-match-del-vigorito/"
-    },
-    {
-     "nome": "BeneventoNews24",
-     "url": "https://www.beneventonews24.it/2026/10/26/giudice-sportivo-benevento-catanzaro-senza-squalificati-resta-in-diffida-kouan/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Benevento-Catanzaro, partita della 9ª giornata del campionato di Serie BKT, sarà arbitrata da Alberto Poli di Verona. Si gioca martedì 27 ottobre alle 19 allo stadio Ciro Vigorito di Benevento. Lo ha comunicato lunedì 26 ottobre il Benevento Calcio sul suo sito.",
-      "fonti": [
-       "Benevento Calcio",
-       "NTR24 Sport",
-       "Benevento Giornale",
-       "TV7 Benevento"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "Per Poli sarà l'esordio in Serie B. Ha già arbitrato due volte il Benevento, la scorsa stagione in Serie C, e in tutte e due le partite hanno vinto i giallorossi: il 1° febbraio 4-3 in rimonta sul campo dell'Atalanta U23 a Caravaggio, poi di misura in casa contro il Foggia. Non ha mai arbitrato il Catanzaro.",
-      "fonti": [
-       "TV7 Benevento"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "Con lui ci saranno gli assistenti, cioè i guardalinee, Alessio Berti di Prato e Andrea Bianchini di Perugia. Il quarto ufficiale, l'arbitro che sta a bordo campo, sarà Giuseppe Mucera di Palermo.",
-      "fonti": [
-       "Benevento Calcio",
-       "NTR24 Sport",
-       "Benevento Giornale",
-       "TV7 Benevento"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "Al VAR, la sala dove gli arbitri rivedono le azioni al video, ci saranno Daniele Rutella di Enna e, come suo assistente (AVAR), Marco Guida di Torre Annunziata.",
-      "fonti": [
-       "Benevento Calcio",
-       "NTR24 Sport",
-       "Benevento Giornale",
-       "TV7 Benevento"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "Il Benevento non avrà squalificati. Il giudice sportivo della Lega B, dopo l'ottava giornata, non ha fermato nessun giallorosso: Kouan resta in diffida, cioè con un'altra ammonizione salterà una partita, mentre Scognamillo e Beruatto hanno preso ad Arezzo il secondo cartellino giallo del campionato.",
-      "fonti": [
-       "BeneventoNews24"
-      ],
-      "giorno": "2026-10-26"
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "Alberto Poli di Verona arbitro, con Berti e Bianchini assistenti, Mucera quarto ufficiale, Rutella e Guida al VAR.",
-      "fonti": [
-       "Benevento Calcio",
-       "NTR24 Sport",
-       "TV7 Benevento",
-       "Benevento Giornale"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [],
-    "fonti": [
-     {
-      "nome": "Benevento Calcio",
-      "titolo": "SERIE BKT 2026 2027: BENEVENTO-CATANZARO, DIRIGE ALBERTO POLI",
-      "url": "https://www.beneventocalcio.club/news/notizie/7678/serie-bkt-2026-2027-benevento-catanzaro-dirige-alberto-poli.shtml",
-      "data": "26 ott, 15:30",
-      "ufficiale": true
-     },
-     {
-      "nome": "NTR24 Sport",
-      "titolo": "Benevento-Catanzaro, arbitra Poli di Verona",
-      "url": "https://sport.ntr24.tv/2026/10/26/benevento-catanzaro-arbitra-poli-di-verona/",
-      "data": "26 ott, 15:26"
-     },
-     {
-      "nome": "Benevento Giornale",
-      "titolo": "Incontro di calcio Benevento-Catanzaro, dirige Alberto Poli",
-      "url": "https://www.beneventogiornale.com/2026/10/26/incontro-di-calcio-benevento-catanzaro-dirige-alberto-poli/",
-      "data": "26 ott, 16:00"
-     },
-     {
-      "nome": "TV7 Benevento",
-      "titolo": "Calcio. Benevento-Catanzaro, arbitra Poli: designata la squadra arbitrale per il match del Vigorito",
-      "url": "https://www.tvsette.net/calcio-benevento-catanzaro-arbitra-poli-designata-la-squadra-arbitrale-per-il-match-del-vigorito/",
-      "data": "26 ott, 14:24"
-     },
-     {
-      "nome": "BeneventoNews24",
-      "titolo": "Giudice Sportivo, Benevento-Catanzaro senza squalificati. Resta in diffida Kouan",
-      "url": "https://www.beneventonews24.it/2026/10/26/giudice-sportivo-benevento-catanzaro-senza-squalificati-resta-in-diffida-kouan/",
-      "data": "26 ott, 15:55"
-     }
-    ]
-   },
-   "comunicati": [
-    "uacc1e47590e"
-   ],
-   "subito": true,
-   "pubblicato": "2026-10-26T15:37:45+01:00",
-   "foto": "calcio-9",
-   "importanza": 5
-  },
-  {
-   "id": "sannio-passaporti-uffici-postali-77-sportelli-340-richieste",
-   "titolo": "Sannio, il passaporto si chiede in 77 uffici postali: già 340 richieste, la prima è San Bartolomeo in Galdo",
-   "titolo_google": "Passaporto alle Poste nel Sannio: 77 uffici abilitati",
-   "sintesi": "In provincia di Benevento sono 77 gli uffici postali dove si può chiedere o rinnovare il passaporto, senza andare in Questura: finora le richieste sono state 340. Il primo ufficio è quello di San Bartolomeo in Galdo, con 41.",
-   "categoria": "avvisi",
-   "zona": "provincia",
-   "immagine": "ufficio-postale",
-   "luogo": "Provincia di Benevento",
-   "pubblicato": "2026-10-26T15:05:00+01:00",
-   "stato": "una_fonte",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/26/passaporti-77-uffici-postali-abilitati-nel-sannio-340-richieste-presentate/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "In provincia di Benevento il passaporto si può chiedere o rinnovare in 77 uffici postali, senza andare in Questura. Finora 340 persone che abitano nel Sannio hanno prenotato un appuntamento e consegnato allo sportello i documenti per avere il passaporto nuovo o rinnovarlo. Il servizio nasce da un accordo tra Poste Italiane, il Ministero dell'Interno e il Ministero delle Imprese.",
-      "fonti": [
-       "NTR24"
-      ]
-     },
-     {
-      "testo": "L'ufficio con più richieste è quello di piazza Municipio a San Bartolomeo in Galdo, nel Fortore: 41. Da lì la Questura di Benevento dista circa 60 chilometri, oltre un'ora di strade strette e piene di curve, spiega il direttore dell'ufficio, Biagio Coduti. Chi vuole può anche farsi portare il passaporto a casa.",
-      "fonti": [
-       "NTR24"
-      ]
-     },
-     {
-      "testo": "Il servizio c'è negli uffici del progetto Polis, che porta nei Comuni con meno di 15mila abitanti alcuni servizi della pubblica amministrazione, come il passaporto e i certificati dell'anagrafe. Le richieste sono arrivate da tutta la provincia, da San Nicola Manfredi a Telese Terme, da Montesarchio a San Marco dei Cavoti e Sant'Agata de' Goti.",
-      "fonti": [
-       "NTR24"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Quali sono, uno per uno, i 77 uffici postali abilitati."
-    ],
-    "fonti": [
-     {
-      "nome": "NTR24",
-      "titolo": "Passaporti, 77 uffici postali abilitati nel Sannio: 340 richieste presentate",
-      "url": "https://www.ntr24.tv/2026/10/26/passaporti-77-uffici-postali-abilitati-nel-sannio-340-richieste-presentate/",
-      "data": "26 ott, 15:05"
-     }
-    ]
-   },
-   "importanza": 4,
-   "foto": "ufficio-postale-4"
-  },
-  {
-   "id": "maddaloni-bus-air-pietraroja-santagata-napoli-deviati-cancello-scalo",
-   "titolo": "Bus AIR da Pietraroja e Sant'Agata de' Goti per Napoli deviati a Maddaloni per i lavori alla rete fognaria: soppressa la fermata di Cancello Scalo",
-   "titolo_google": "Bus AIR Pietraroja-Napoli deviati a Maddaloni per lavori",
-   "sintesi": "Da lunedì 26 ottobre e fino alla fine dei lavori in via Cancello a Maddaloni, i bus AIR Campania tra Pietraroja, Sant'Agata de' Goti e Napoli e quelli tra Campobasso e Napoli passano da via Ficucella. Salta la fermata di Cancello Scalo; la corsa delle 5:25 da Pietraroja (linea BN-02) non cambia percorso.",
-   "categoria": "strade",
-   "zona": "provincia",
-   "luogo": "Maddaloni (linee da Pietraroja e Sant'Agata de' Goti per Napoli)",
-   "pubblicato": "2026-10-26T15:19:00+01:00",
-   "stato": "ufficiale",
-   "rilevante": false,
-   "traffico": "bus",
-   "immagine": "autobus",
-   "fonti": [
-    {
-     "nome": "AIR Campania",
-     "url": "https://aircampania.it/maddaloni-ce-deviazioni-temporanee/",
-     "ufficiale": true
-    }
-   ],
-   "comunicati": [
-    "uc30a91065d4"
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Da lunedì 26 ottobre, e fino alla fine dei lavori, i bus AIR Campania che collegano Pietraroja e Sant'Agata de' Goti con Napoli cambiano percorso a Maddaloni, in provincia di Caserta. Cambiano strada anche le corse tra Campobasso e Napoli. Finché durano le deviazioni, la fermata di Cancello Scalo è soppressa.",
-      "fonti": [
-       "AIR Campania"
-      ]
-     },
-     {
-      "testo": "Il motivo è l'ordinanza n. 92 del 2026 del Comune di Maddaloni, che cambia la circolazione in via Cancello per completare la rete fognaria comunale. AIR Campania, l'azienda dei bus della Regione, ha adeguato i percorsi delle sue corse.",
-      "fonti": [
-       "AIR Campania"
-      ]
-     },
-     {
-      "testo": "I bus da Pietraroja verso Napoli, arrivati dai Giardinetti di Maddaloni, vanno dritti su via Forche Caudine e girano a sinistra in via Ficucella. Superano la prima rotatoria e restano su via Ficucella; all'incrocio con via Calabricito girano a destra e riprendono il percorso di sempre verso Napoli. La corsa che parte da Pietraroja alle 5:25 per Napoli, linea BN-02, non è deviata.",
-      "fonti": [
-       "AIR Campania"
-      ]
-     },
-     {
-      "testo": "Al ritorno, i bus da Napoli per Sant'Agata de' Goti e Pietraroja arrivano in via Calabricito, girano a sinistra in via Ficucella, prendono via Forche Caudine e tornano sul percorso ordinario.",
-      "fonti": [
-       "AIR Campania"
-      ]
-     },
-     {
-      "testo": "Le corse da Campobasso per Napoli restano sulla variante della statale 265 (via Forche Caudine) e, all'altezza del bar Anthony, girano a sinistra in via Ficucella. Alla prima rotatoria girano ancora a sinistra, restano su via Ficucella e proseguono verso Acerra. Quelle da Napoli per Campobasso, arrivate in via Calabricito, girano a sinistra in via Ficucella; in fondo alla strada, all'altezza del bar Anthony, girano a destra sulla variante della statale 265 (via Forche Caudine) verso Maddaloni e riprendono il percorso ordinario.",
-      "fonti": [
-       "AIR Campania"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [],
-    "fonti": [
-     {
-      "nome": "AIR Campania",
-      "titolo": "Maddaloni (CE): deviazioni temporanee",
-      "url": "https://aircampania.it/maddaloni-ce-deviazioni-temporanee/",
-      "data": "26 ott, 15:19",
-      "ufficiale": true
-     }
-    ]
-   },
-   "subito": true,
-   "foto": "autobus-19",
-   "importanza": 4
-  },
-  {
-   "id": "san-pio-neurochirurgia-lettera-ringraziamento-paziente",
-   "titolo": "Ospedale San Pio di Benevento, la lettera di un paziente guarito: «grazie» alla Neurochirurgia",
-   "titolo_google": "San Pio Benevento, paziente ringrazia la Neurochirurgia",
-   "sintesi": "Un paziente operato al San Pio di Benevento per un ematoma subdurale cronico ha scritto una lettera su pergamena alla direttrice generale Maria Morgante per ringraziare medici e personale della Neurochirurgia.",
-   "categoria": "altro",
-   "zona": "benevento",
-   "luogo": "Benevento",
-   "immagine": "ospedale",
-   "pubblicato": "2026-10-26",
-   "stato": "ufficiale",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Ospedale San Pio",
-     "url": "https://www.aosanpio.it/",
-     "ufficiale": true
-    }
-   ],
-   "comunicati": [
-    "905924487f60"
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Un paziente curato all'ospedale San Pio di Benevento ha scritto una lettera su pergamena per ringraziare i medici e il personale della Neurochirurgia. L'ha indirizzata alla direttrice generale dell'Azienda ospedaliera, Maria Morgante. Il reparto è diretto da Giovanni Parbonetti.",
-      "fonti": [
-       "Ospedale San Pio"
-      ]
-     },
-     {
-      "testo": "Nella lettera il paziente racconta che un anno fa è arrivato al pronto soccorso privo di conoscenza. Aveva un ematoma subdurale cronico, una raccolta di sangue tra il cervello e la membrana che lo avvolge, che lo teneva in uno stato di incoscienza. È stato portato in sala operatoria per rimuoverlo e l'intervento è riuscito: al momento delle dimissioni era vigile. «Oggi sono guarito. Posso raccontare e ringraziare», scrive.",
-      "fonti": [
-       "Ospedale San Pio"
-      ]
-     },
-     {
-      "testo": "I ringraziamenti vanno a tutto lo staff della Neurochirurgia e al direttore Parbonetti, alla dottoressa Valeria Olga Corriero, «che ha deciso per me il mio destino», e al dottor Manuel Colangelo, decisivo quando è stato necessario tornare in sala operatoria per una sutura in difficoltà. Il paziente ringrazia anche tutto il personale del reparto che lo ha sostenuto nei momenti difficili.",
-      "fonti": [
-       "Ospedale San Pio"
-      ]
-     },
-     {
-      "testo": "La direttrice generale Maria Morgante ringrazia il paziente per la sua testimonianza. «La cura della persona e l'attenzione all'utente sono i pilastri fondamentali dell'impegno ospedaliero», dice, e aggiunge che l'innovazione tecnologica non ha valore se non è accompagnata da empatia e vicinanza al paziente. Secondo Morgante, l'impegno dei medici e del personale sanitario del San Pio trasforma il ricovero «in un percorso di autentica solidarietà umana».",
-      "fonti": [
-       "Ospedale San Pio"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [],
-    "fonti": [
-     {
-      "nome": "Ospedale San Pio",
-      "titolo": "AORN SAN PIO, ELOGI ALLA UOC NEUROCHIRURGIA",
-      "url": "https://www.aosanpio.it/",
-      "data": "26 ott",
-      "ufficiale": true
-     }
-    ]
-   },
-   "subito": true,
-   "foto": "ospedale-7",
-   "importanza": 2
-  },
-  {
    "id": "apice-cimitero-orari-ognissanti-defunti-2026",
    "titolo": "Apice, gli orari del cimitero per Ognissanti e i Defunti: dal 29 ottobre al 2 novembre aperto dalle 8 alle 18",
    "titolo_google": "Cimitero di Apice, orari dal 27 ottobre al 2 novembre",
@@ -8232,281 +7174,6 @@
    "foto": "cimitero-11",
    "importanza": 3,
    "in_vigore_dal": "2026-10-29"
-  },
-  {
-   "id": "durazzano-albo-scrutatori-domande-30-novembre-2026",
-   "titolo": "Durazzano, domande per entrare nell'albo degli scrutatori entro il 30 novembre",
-   "titolo_google": "Albo scrutatori Durazzano: domande entro il 30 novembre",
-   "sintesi": "Chi vota a Durazzano e ha almeno la licenza della scuola dell'obbligo può chiedere entro il 30 novembre 2026 di entrare nell'albo degli scrutatori, le persone che lavorano ai seggi. Chi è già iscritto può chiedere la cancellazione entro il 31 dicembre, solo per gravi motivi.",
-   "categoria": "avvisi",
-   "zona": "caudina",
-   "immagine": "elezioni",
-   "luogo": "Durazzano, Morcone e Amorosi",
-   "pubblicato": "2026-10-26",
-   "stato": "ufficiale",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Comune di Durazzano",
-     "url": "https://comune.durazzano.bn.it/novita/aggiornamento-dellalbo-degli-scrutatori-di-seggio-elettorale-anno-2026/",
-     "ufficiale": true
-    },
-    {
-     "nome": "Comune di Morcone",
-     "url": "https://comune.morcone.bn.it/albo-pretorio/?dettaglio_id=306088",
-     "ufficiale": true
-    },
-    {
-     "nome": "Comune di Amorosi",
-     "url": "https://comune.amorosi.bn.it/novita/inclusione-albo-unico-scrutatori-seggio-elettorale/",
-     "ufficiale": true
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Mercoledì 28 ottobre il Comune di Amorosi ha messo sul suo sito i moduli da usare: chi vota ad Amorosi e vuole entrare nell'albo degli scrutatori o in quello dei presidenti di seggio può compilare la domanda allegata agli avvisi e presentarla al Comune. Li segue l'Ufficio Segreteria e Protocollo.",
-      "fonti": [
-       "Comune di Amorosi (28/10)",
-       "Comune di Amorosi (presidenti, 28/10)"
-      ],
-      "giorno": "2026-10-28"
-     },
-     {
-      "testo": "Martedì 27 ottobre il Comune di Amorosi, nella Valle Telesina, ha pubblicato all'albo pretorio due avvisi per chi vuole entrare negli elenchi di chi lavora ai seggi: uno per l'albo unico degli scrutatori e uno per l'albo dei presidenti di seggio.",
-      "fonti": [
-       "Comune di Amorosi",
-       "Comune di Amorosi (presidenti)"
-      ],
-      "giorno": "2026-10-27"
-     },
-     {
-      "testo": "A Durazzano si possono presentare fino al 30 novembre 2026 le domande per entrare nell'albo degli scrutatori, l'elenco delle persone che il Comune può chiamare a lavorare nei seggi durante le elezioni. Possono farlo gli elettori del Comune che hanno almeno la licenza della scuola dell'obbligo e non rientrano nei casi di esclusione elencati nell'avviso.",
-      "fonti": [
-       "Comune di Durazzano"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "La domanda va indirizzata al sindaco, con i moduli che si trovano all'ufficio elettorale del Comune; avviso e modulo sono anche sul sito comune.durazzano.bn.it. Chi è già iscritto può chiedere di essere cancellato entro il 31 dicembre 2026, ma solo per motivi gravi, giustificati e documentati.",
-      "fonti": [
-       "Comune di Durazzano"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "Anche il Comune di Morcone ha pubblicato il 26 ottobre, nel suo albo pretorio, un avviso sull'albo unico delle persone idonee a fare lo scrutatore.",
-      "fonti": [
-       "Comune di Morcone"
-      ],
-      "giorno": "2026-10-26"
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Le scadenze degli avvisi di Morcone e Amorosi, che non le scrivono."
-    ],
-    "fonti": [
-     {
-      "nome": "Comune di Durazzano",
-      "titolo": "Aggiornamento dell’albo degli scrutatori di seggio elettorale – Anno 2026",
-      "url": "https://comune.durazzano.bn.it/novita/aggiornamento-dellalbo-degli-scrutatori-di-seggio-elettorale-anno-2026/",
-      "data": "26 ott",
-      "ufficiale": true
-     },
-     {
-      "nome": "Comune di Morcone",
-      "titolo": "ALBO UNICO DELLE PERSONE IDONEE ALL' UFFICIO DI SCRUTATORE DI SEGGIO ELETTORALE",
-      "url": "https://comune.morcone.bn.it/albo-pretorio/?dettaglio_id=306088",
-      "data": "26 ott",
-      "ufficiale": true
-     },
-     {
-      "nome": "Comune di Amorosi",
-      "titolo": "INCLUSIONE ALBO UNICO SCRUTATORI SEGGIO ELETTORALE",
-      "url": "https://comune.amorosi.bn.it/albo-pretorio/?dettaglio_id=306277",
-      "data": "27 ott",
-      "ufficiale": true
-     },
-     {
-      "nome": "Comune di Amorosi (presidenti)",
-      "titolo": "INCLUSIONE ALBO UFFICIO PRESIDENTE SEGGIO ELETTORALE",
-      "url": "https://comune.amorosi.bn.it/albo-pretorio/?dettaglio_id=306278",
-      "data": "27 ott",
-      "ufficiale": true
-     },
-     {
-      "nome": "Comune di Amorosi (28/10)",
-      "titolo": "Inclusione albo unico scrutatori seggio elettorale.",
-      "url": "https://comune.amorosi.bn.it/novita/inclusione-albo-unico-scrutatori-seggio-elettorale/",
-      "data": "28 ott",
-      "ufficiale": true
-     },
-     {
-      "nome": "Comune di Amorosi (presidenti, 28/10)",
-      "titolo": "Inclusione albo ufficio Presidente seggio elettorale",
-      "url": "https://comune.amorosi.bn.it/novita/inclusione-albo-ufficio-presidente-seggio-elettorale/",
-      "data": "28 ott",
-      "ufficiale": true
-     }
-    ],
-    "aggiornamento": {
-     "testo": "Martedì 27 ottobre anche Amorosi ha pubblicato gli avvisi per entrare nell'albo degli scrutatori e in quello dei presidenti di seggio.",
-     "fonti": [
-      "Comune di Amorosi",
-      "Comune di Amorosi (presidenti)"
-     ],
-     "quando": "2026-10-27T14:19+01:00"
-    }
-   },
-   "foto": "elezioni-7",
-   "importanza": 2
-  },
-  {
-   "id": "benevento-bonus-luce-gas-2026-requisiti",
-   "titolo": "Benevento, bonus luce e gas da 200 a 500 euro: la Giunta fissa i requisiti",
-   "titolo_google": "Bonus luce e gas Benevento 2026: requisiti e importi",
-   "sintesi": "La Giunta comunale di Benevento ha approvato i criteri del bonus energia 2026, un contributo una tantum per pagare luce e gas: serve un Isee fino a 10.800 euro e l'importo va da 200 a 500 euro secondo il numero di persone in famiglia. Le domande si potranno presentare dopo l'avviso pubblico sull'albo pretorio, atteso nei prossimi giorni.",
-   "categoria": "politica",
-   "zona": "benevento",
-   "immagine": "bollette",
-   "luogo": "Benevento",
-   "stato": "ufficiale",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Comune di Benevento",
-     "url": "https://comune.benevento.it/novita/bonus-luce-e-gas-ok-alla-delibera-con-i-requisiti-per-accedere-ai-contributi/",
-     "ufficiale": true
-    },
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/26/bonus-luce-e-gas-la-giunta-di-benevento-delibera-i-requisiti-per-accedere-ai-contributi/"
-    },
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/bonus-luce-e-gas-ok-alla-delibera-con-i-requisiti-per-accedere-ai-contributi/"
-    },
-    {
-     "nome": "Cronache del Sannio",
-     "url": "https://www.cronachedelsannio.it/sannionews24/bonus-luce-gas-delibera-giunta/"
-    },
-    {
-     "nome": "BeneventoNews24",
-     "url": "https://www.beneventonews24.it/2026/10/26/benevento-bonus-luce-e-gas-ok-alla-delibera-con-i-requisiti-per-accedere-ai-contributi/"
-    },
-    {
-     "nome": "Il Mattino",
-     "url": "https://www.ilmattino.it/benevento/benevento_bonus_bollette_luce_gas_contributi_requisiti_accedere_sindaco_mastella_assessore_coppola_ultime_notizie_oggi-9850165.html"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "A Benevento arriva il bonus energia 2026, un contributo una tantum, cioè dato una volta sola, per pagare le bollette di luce e gas. La Giunta comunale, presieduta dal sindaco Clemente Mastella, ha approvato il 26 ottobre la delibera che fissa i requisiti per ottenerlo e gli importi.",
-      "fonti": [
-       "Comune di Benevento",
-       "NTR24",
-       "Il Mattino"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "Possono chiederlo i cittadini italiani o dell'Unione Europea e i cittadini di Paesi extra Ue regolarmente soggiornanti in Italia. Bisogna essere residenti nel Comune di Benevento al momento della pubblicazione dell'avviso e alla data della domanda, avere un Isee ordinario o corrente in corso di validità non superiore a 10.800 euro ed essere intestatari di almeno un'utenza domestica di luce o di gas riferita all'abitazione di residenza.",
-      "fonti": [
-       "Comune di Benevento",
-       "NTR24"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "L'importo dipende da quante persone ci sono in famiglia: 200 euro per chi vive da solo, 300 euro per due persone, 400 euro per tre e 500 euro per quattro o più. Se le domande saranno più dei soldi disponibili, il Comune farà una graduatoria: prima chi ha l'Isee più basso; a parità di Isee, la famiglia più numerosa; in caso di ulteriore parità, conta l'ordine di arrivo delle domande, secondo il numero di protocollo.",
-      "fonti": [
-       "Comune di Benevento"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "«È una misura destinata ad aiutare le fasce indigenti», spiegano il sindaco Mastella e l'assessora alle Politiche sociali Carmen Coppola, che la legano all'aumento dei prezzi.",
-      "fonti": [
-       "Comune di Benevento"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "Le domande non si possono ancora presentare. Come spiega l'assessora Coppola, la delibera fissa solo i criteri: i termini partiranno con la pubblicazione sull'albo pretorio dell'avviso pubblico, che il Settore Servizi al cittadino del Comune preparerà nei prossimi giorni.",
-      "fonti": [
-       "Comune di Benevento"
-      ],
-      "giorno": "2026-10-26"
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [],
-    "fonti": [
-     {
-      "nome": "Comune di Benevento",
-      "titolo": "Bonus luce e gas, ok alla delibera con i requisiti per accedere ai contributi",
-      "url": "https://comune.benevento.it/novita/bonus-luce-e-gas-ok-alla-delibera-con-i-requisiti-per-accedere-ai-contributi/",
-      "data": "26 ott",
-      "ufficiale": true
-     },
-     {
-      "nome": "NTR24",
-      "titolo": "Bonus luce e gas, la Giunta di Benevento delibera i requisiti per accedere ai contributi",
-      "url": "https://www.ntr24.tv/2026/10/26/bonus-luce-e-gas-la-giunta-di-benevento-delibera-i-requisiti-per-accedere-ai-contributi/",
-      "data": "26 ott, 14:16"
-     },
-     {
-      "nome": "Anteprima24",
-      "titolo": "Bonus luce e gas, ok alla delibera con i requisiti per accedere ai contributi",
-      "url": "https://www.anteprima24.it/benevento/bonus-luce-e-gas-ok-alla-delibera-con-i-requisiti-per-accedere-ai-contributi/",
-      "data": "26 ott, 14:17"
-     },
-     {
-      "nome": "Cronache del Sannio",
-      "titolo": "Bonus luce e gas, ok dalla giunta: i requisiti per accedere ai contributi",
-      "url": "https://www.cronachedelsannio.it/sannionews24/bonus-luce-gas-delibera-giunta/",
-      "data": "26 ott, 14:45"
-     },
-     {
-      "nome": "BeneventoNews24",
-      "titolo": "Benevento| Bonus luce e gas, ok alla delibera con i requisiti per accedere ai contributi",
-      "url": "https://www.beneventonews24.it/2026/10/26/benevento-bonus-luce-e-gas-ok-alla-delibera-con-i-requisiti-per-accedere-ai-contributi/",
-      "data": "26 ott, 14:48"
-     },
-     {
-      "nome": "Il Mattino",
-      "titolo": "Benevento, ok al bonus luce e gas: ecco i requisiti per accedere ai contributi",
-      "url": "https://www.ilmattino.it/benevento/benevento_bonus_bollette_luce_gas_contributi_requisiti_accedere_sindaco_mastella_assessore_coppola_ultime_notizie_oggi-9850165.html",
-      "data": "26 ott, 19:41"
-     }
-    ]
-   },
-   "comunicati": [
-    "213bc76108d1",
-    "ua1a5a4e4eb6"
-   ],
-   "subito": true,
-   "pubblicato": "2026-10-26T14:13:26+01:00",
-   "importanza": 4,
-   "contributo": {
-    "chi": [
-     "cittadino"
-    ],
-    "temi": [
-     "casa"
-    ],
-    "aiuto": [
-     "bonus"
-    ],
-    "quando": "Domande dopo l'avviso del Comune, atteso nei prossimi giorni"
-   },
-   "foto": "bollette-7"
   },
   {
    "id": "airola-incendio-controlli-diossine-latte-forchia",
@@ -8634,91 +7301,6 @@
    "subito": true,
    "foto": "pecore-7",
    "importanza": 4
-  },
-  {
-   "id": "benevento-sciopero-gls-pezzapiana-cambio-appalto",
-   "titolo": "Benevento, sciopero dei lavoratori GLS a Pezzapiana contro i cambi d'appalto: consegne a rischio",
-   "titolo_google": "Sciopero GLS a Benevento: consegne a rischio a Pezzapiana",
-   "sintesi": "Lunedì 26 ottobre i lavoratori del magazzino GLS di contrada Pezzapiana, a Benevento, hanno scioperato con il sindacato Si Cobas contro il terzo cambio d'appalto in pochi mesi. Adesione al 95%: a rischio circa 4mila consegne al giorno.",
-   "categoria": "altro",
-   "zona": "benevento",
-   "luogo": "Benevento",
-   "immagine": "protesta",
-   "pubblicato": "2026-10-26T12:42:00+01:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Ottopagine",
-     "url": "https://www.ottopagine.it/bn/attualita/442189/sciopero-corrieri-gls-a-benevento-a-rischio-le-consegne.shtml"
-    },
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/26/benevento-sciopero-dei-lavoratori-della-gls-basta-precarieta-e-cambi-dappalto/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Lunedì 26 ottobre i lavoratori del magazzino GLS di Benevento, l'azienda di spedizioni e consegne, hanno incrociato le braccia davanti alla sede di contrada Pezzapiana, nella zona industriale. Lo sciopero l'ha organizzato il sindacato Si Cobas e ha aderito il 95% dei lavoratori della struttura.",
-      "fonti": [
-       "NTR24",
-       "Ottopagine"
-      ]
-     },
-     {
-      "testo": "Dal magazzino partono ogni giorno circa 4mila consegne, che con lo sciopero rischiano di saltare o di arrivare in ritardo in città e in provincia. Il magazzino è gestito per GLS dalla società Argo.",
-      "fonti": [
-       "Ottopagine",
-       "NTR24"
-      ]
-     },
-     {
-      "testo": "Il motivo della protesta è l'ennesimo cambio d'appalto: il terzo in pochi mesi, dice Giuseppe D'Alesio, coordinatore provinciale del Si Cobas. Secondo il sindacato ogni passaggio da una ditta all'altra lascia i lavoratori senza garanzie sul TFR (la liquidazione) e sul giusto inquadramento nel contratto; D'Alesio parla di «un sistema di scatole cinesi» e se la prende con gli appalti al massimo ribasso.",
-      "fonti": [
-       "NTR24",
-       "Ottopagine"
-      ]
-     },
-     {
-      "testo": "I lavoratori chiedono di tenere il posto di lavoro, il rispetto del contratto collettivo nazionale, il pagamento corretto di straordinari, ferie e mensilità aggiuntive e un aumento dello stipendio. Il sindacato fa sapere che la protesta andrà avanti finché il gruppo Argo e GLS non daranno risposte.",
-      "fonti": [
-       "NTR24",
-       "Ottopagine"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "Lo sciopero davanti al magazzino GLS di Pezzapiana gestito dalla società Argo, l'adesione del 95%, il Si Cobas e il terzo cambio d'appalto in pochi mesi.",
-      "fonti": [
-       "NTR24",
-       "Ottopagine"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [
-     "Se GLS e Argo hanno risposto al sindacato e quanto durerà lo sciopero."
-    ],
-    "fonti": [
-     {
-      "nome": "Ottopagine",
-      "titolo": "Sciopero corrieri GLS a Benevento: a rischio le consegne",
-      "url": "https://www.ottopagine.it/bn/attualita/442189/sciopero-corrieri-gls-a-benevento-a-rischio-le-consegne.shtml",
-      "data": "26 ott, 12:32"
-     },
-     {
-      "nome": "NTR24",
-      "titolo": "Benevento, sciopero dei lavoratori della GLS: “Basta precarietà e cambi d’appalto”",
-      "url": "https://www.ntr24.tv/2026/10/26/benevento-sciopero-dei-lavoratori-della-gls-basta-precarieta-e-cambi-dappalto/",
-      "data": "26 ott, 12:42"
-     }
-    ]
-   },
-   "foto": "protesta-13",
-   "importanza": 3
   },
   {
    "id": "vitulano-sagra-castagna-strade-chiuse-29-ottobre-1-novembre",
@@ -8929,108 +7511,6 @@
      "bonus"
     ]
    }
-  },
-  {
-   "id": "benevento-sannio-festival-2026-vincono-salvarezza-masiello",
-   "titolo": "Benevento, Sannio Festival della canzone napoletana: vince Rita Salvarezza, a Massimo Masiello il Premio Sergio Bruni",
-   "titolo_google": "Sannio Festival 2026 a Benevento: vince Rita Salvarezza",
-   "sintesi": "Si è chiusa domenica 25 ottobre al Teatro San Vittorino la sesta edizione del Sannio Festival della voce e della canzone napoletana del Conservatorio «Nicola Sala». Il festival delle canzoni inedite l'ha vinto Rita Salvarezza con «Munno astritto»; il Premio Sergio Bruni è andato a Massimo Masiello.",
-   "categoria": "cultura",
-   "zona": "benevento",
-   "luogo": "Benevento",
-   "immagine": "mandolino",
-   "pubblicato": "2026-10-26T13:09:00+01:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Cronache del Sannio",
-     "url": "https://www.cronachedelsannio.it/sannionews24/sanniofestival-successo-premiati-masiello-salvarezza/"
-    },
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/26/successo-per-il-sannio-festival-tre-giorni-dedicati-alla-canzone-napoletana-tra-concerti-libri-e-premi-alla-carriera/"
-    },
-    {
-     "nome": "TV7 Benevento",
-     "url": "https://www.tvsette.net/benevento-successo-per-la-vi-edizione-del-sannio-festival-tre-giorni-dedicati-alla-voce-e-alla-canzone-napoletana-foto/"
-    },
-    {
-     "nome": "Benevento Giornale",
-     "url": "https://www.beneventogiornale.com/2026/10/26/conclusa-la-vi-edizione-del-sannio-festival-della-voce-e-della-canzone-napoletana-organizzata-dal-conservatorio-statale-di-musica-nicola-sala-di-benevento/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Rita Salvarezza ha vinto la sesta edizione del Sannio Festival della voce e della canzone napoletana con «Munno astritto», canzone inedita scritta da Salvarezza e D'Angelo: oltre al primo posto ha avuto una borsa di studio di 500 euro dell'associazione Anema e core. Secondo Massimo Masiello, terzo Tino Brigandi. Il festival, organizzato dal Conservatorio statale di musica «Nicola Sala» di Benevento, si è chiuso domenica 25 ottobre al Teatro San Vittorino.",
-      "fonti": [
-       "NTR24",
-       "Cronache del Sannio",
-       "Benevento Giornale"
-      ],
-      "giorno": "2026-10-25"
-     },
-     {
-      "testo": "In tre giorni, dal 23 al 25 ottobre, ci sono stati concerti, masterclass e presentazioni di libri. Venerdì l'Orchestra stabile della canzone napoletana del Conservatorio, diretta da Luigi Ottaiano, ha suonato l'omaggio ad Angela Luce. I premi alla carriera sono andati a Giovanni Mauriello, all'editore Maurizio Cuzzolin, al cantante Antonello Rondi e, domenica, a Miranda Martino, Gloria Christian e Maurizio Casagrande.",
-      "fonti": [
-       "NTR24",
-       "Cronache del Sannio",
-       "TV7 Benevento"
-      ],
-      "giorno": "2026-10-25"
-     },
-     {
-      "testo": "Sabato 24 la giuria aveva dato il Premio Sergio Bruni, per la migliore interpretazione di una canzone napoletana già nota, a Massimo Masiello con «Tutta pe' mme»; secondo Tino Brigandi, terza Mena Cacciapuoti.",
-      "fonti": [
-       "NTR24",
-       "Cronache del Sannio",
-       "TV7 Benevento"
-      ],
-      "giorno": "2026-10-24"
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "I vincitori: Rita Salvarezza per le canzoni inedite e Massimo Masiello per il Premio Sergio Bruni; il festival al Teatro San Vittorino dal 23 al 25 ottobre.",
-      "fonti": [
-       "NTR24",
-       "Cronache del Sannio"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [],
-    "fonti": [
-     {
-      "nome": "Cronache del Sannio",
-      "titolo": "Sannio Festival, successo per la VI edizione: premiati Massimo Masiello e Rita Salvarezza",
-      "url": "https://www.cronachedelsannio.it/sannionews24/sanniofestival-successo-premiati-masiello-salvarezza/",
-      "data": "26 ott, 12:56"
-     },
-     {
-      "nome": "NTR24",
-      "titolo": "Successo per il Sannio Festival: tre giorni dedicati alla canzone napoletana tra concerti, libri e premi alla carriera",
-      "url": "https://www.ntr24.tv/2026/10/26/successo-per-il-sannio-festival-tre-giorni-dedicati-alla-canzone-napoletana-tra-concerti-libri-e-premi-alla-carriera/",
-      "data": "26 ott, 12:55"
-     },
-     {
-      "nome": "TV7 Benevento",
-      "titolo": "Benevento, successo per la VI edizione del Sannio Festival: tre giorni dedicati alla voce e alla canzone napoletana (FOTO)",
-      "url": "https://www.tvsette.net/benevento-successo-per-la-vi-edizione-del-sannio-festival-tre-giorni-dedicati-alla-voce-e-alla-canzone-napoletana-foto/",
-      "data": "26 ott, 13:09"
-     },
-     {
-      "nome": "Benevento Giornale",
-      "titolo": "Conclusa la VI edizione del “Sannio Festival della voce e della canzone napoletana” organizzata dal Conservatorio Statale di Musica Nicola Sala di Benevento",
-      "url": "https://www.beneventogiornale.com/2026/10/26/conclusa-la-vi-edizione-del-sannio-festival-della-voce-e-della-canzone-napoletana-organizzata-dal-conservatorio-statale-di-musica-nicola-sala-di-benevento/",
-      "data": "26 ott, 19:49"
-     }
-    ]
-   },
-   "importanza": 2,
-   "foto": "mandolino-7"
   },
   {
    "id": "forchia-appia-auto-contro-cancello-morto-74enne",
@@ -9577,133 +8057,6 @@
    "foto": "carta-spesa-7"
   },
   {
-   "id": "benevento-alessandro-calabrese-premio-poesia-seneca-2026",
-   "titolo": "Benevento, il 19enne Alessandro Calabrese secondo al premio di poesia «Lucius Annaeus Seneca»",
-   "titolo_google": "Premio Seneca 2026, secondo posto al beneventano Calabrese",
-   "sintesi": "Alessandro Calabrese, 19 anni, di Benevento, è arrivato secondo nella sezione «Poesia studenti» del Premio internazionale di letteratura «Lucius Annaeus Seneca», con l'opera «Così m'han fatto e son divenuto sasso». La premiazione è stata sabato 24 ottobre a Sannicandro di Bari.",
-   "categoria": "cultura",
-   "zona": "benevento",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-26T11:11:00+01:00",
-   "stato": "una_fonte",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/26/poesia-il-beneventano-alessandro-calabrese-conquista-il-secondo-posto-al-premio-lucius-annaeus-seneca/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Alessandro Calabrese, 19 anni, di Benevento, ha vinto il secondo posto nella sezione «Poesia studenti» della decima edizione del Premio internazionale di letteratura contemporanea «Lucius Annaeus Seneca», organizzato dall'Accademia delle Arti e delle Scienze Filosofiche di Bari. L'opera premiata si intitola «Così m'han fatto e son divenuto sasso».",
-      "fonti": [
-       "NTR24"
-      ]
-     },
-     {
-      "testo": "La premiazione si è svolta sabato 24 ottobre nella Sala delle Scuderie del Castello Normanno-Svevo di Sannicandro di Bari. Calabrese, nato nel 2007, scrive soprattutto in endecasillabi, il verso cardine della tradizione italiana, guardando ai poeti del Duecento e a Leopardi.",
-      "fonti": [
-       "NTR24"
-      ]
-     },
-     {
-      "testo": "Finito il liceo, oggi studia Geologia all'università e corre gli 800 e i 400 metri nell'atletica leggera.",
-      "fonti": [
-       "NTR24"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [],
-    "fonti": [
-     {
-      "nome": "NTR24",
-      "titolo": "Poesia, il beneventano Alessandro Calabrese conquista il secondo posto al Premio “Lucius Annaeus Seneca”",
-      "url": "https://www.ntr24.tv/2026/10/26/poesia-il-beneventano-alessandro-calabrese-conquista-il-secondo-posto-al-premio-lucius-annaeus-seneca/",
-      "data": "26 ott, 11:11"
-     }
-    ]
-   },
-   "immagine": "libri",
-   "foto": "libri-8",
-   "importanza": 2
-  },
-  {
-   "id": "judo-emilia-diario-bronzo-europei-veterani-portimao-2026",
-   "titolo": "Judo, la beneventana Emilia Diario bronzo agli Europei Veterani di Portimão nei 48 kg",
-   "titolo_google": "Judo, Emilia Diario bronzo agli Europei Veterani 2026",
-   "sintesi": "Emilia Diario, maestra della Judo Benevento, ha vinto la medaglia di bronzo nella categoria fino a 48 kg ai Campionati Europei Veterani di judo, disputati dal 22 al 25 ottobre a Portimão, in Portogallo. In gara oltre 1.400 atleti di 36 Paesi.",
-   "categoria": "sport",
-   "sport": "altro",
-   "zona": "benevento",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-26T10:57:00+01:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "NTR24",
-     "url": "https://sport.ntr24.tv/2026/10/26/judo-bronzo-europeo-per-la-maestra-sannita-emilia-diario/"
-    },
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/judo-benevento-bronzo-diario/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Emilia Diario, maestra di judo della Judo Benevento, ha vinto la medaglia di bronzo ai Campionati Europei Veterani 2026, nella categoria fino a 48 chili. La gara, organizzata dalla Fijikam, la federazione italiana di judo, lotta, karate e arti marziali, si è svolta dal 22 al 25 ottobre alla Portimão Arena, in Portogallo.",
-      "fonti": [
-       "NTR24",
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "Agli Europei hanno partecipato oltre 1.400 atleti di 36 Paesi. Sul tatami Diario ha affrontato avversarie francesi e romene già esperte di gare internazionali, fino al terzo posto.",
-      "fonti": [
-       "NTR24",
-       "Anteprima24"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "Il bronzo di Emilia Diario nella categoria fino a 48 chili agli Europei in Portogallo, dal 22 al 25 ottobre, dopo incontri con avversarie francesi e romene.",
-      "fonti": [
-       "NTR24",
-       "Anteprima24"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [
-     "Chi ha battuto Emilia Diario nel percorso verso il bronzo e i risultati dei singoli incontri."
-    ],
-    "fonti": [
-     {
-      "nome": "NTR24",
-      "titolo": "Judo, bronzo europeo per la maestra sannita Emilia Diario",
-      "url": "https://sport.ntr24.tv/2026/10/26/judo-bronzo-europeo-per-la-maestra-sannita-emilia-diario/",
-      "data": "26 ott, 10:57"
-     },
-     {
-      "nome": "Anteprima24",
-      "titolo": "Judo Benevento: bronzo europeo per la Maestra Emilia Diario",
-      "url": "https://www.anteprima24.it/benevento/judo-benevento-bronzo-diario/",
-      "data": "26 ott, 11:47"
-     }
-    ]
-   },
-   "importanza": 2,
-   "immagine": "arti-marziali",
-   "foto": "arti-marziali-9"
-  },
-  {
    "id": "castelpoto-santa-croce-del-sannio-elenco-elettori-fuori-sede",
    "titolo": "Elettori fuori sede, ventuno Comuni del Sannio hanno aperto l'elenco: domande entro il 31 dicembre",
    "titolo_google": "Elettori fuori sede in 21 Comuni del Sannio: come fare",
@@ -10142,237 +8495,6 @@
    "importanza": 3
   },
   {
-   "id": "libera-benevento-tesseramento-aperitivo-beni-confiscati-funambolo-2026",
-   "titolo": "Benevento, Libera apre il tesseramento con un aperitivo di prodotti dei beni confiscati",
-   "titolo_google": "Libera Benevento, tesseramento e aperitivo il 29 ottobre",
-   "sintesi": "Giovedì 29 ottobre alle 19, al Funambolo di via Cardinale di Rende a Benevento, Libera apre la campagna di tesseramento 2027 con un aperitivo di comunità a 10 euro, preparato con i prodotti di due cooperative nate su beni confiscati alla camorra. Interviene Stefano Mancini, presidente della cooperativa La Strada.",
-   "categoria": "eventi",
-   "zona": "benevento",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-26T10:25:00+01:00",
-   "stato": "ufficiale",
-   "rilevante": false,
-   "locandina": "img/locandine/libera-benevento-tesseramento-aperitivo-beni-confiscati-funambolo-2026.jpg",
-   "comunicati": [
-    "549adb278c47"
-   ],
-   "fonti": [
-    {
-     "nome": "Libera Benevento",
-     "url": "https://www.libera.it/",
-     "ufficiale": true
-    },
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/26/campagna-di-tesseramento-libera-benevento-giovedi-sera-aperitivo-con-i-prodotti-dei-beni-confiscati/"
-    },
-    {
-     "nome": "BeneventoNews24",
-     "url": "https://www.beneventonews24.it/2026/10/26/campagna-di-tesseramento-libera-benevento-aperitivo-con-i-prodotti-dei-beni-confiscati/"
-    },
-    {
-     "nome": "Ottopagine",
-     "url": "https://www.ottopagine.it/bn/attualita/442169/libera-benevento-l-associazione-contro-le-mafie-invita-al-tesseramento.shtml"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Il coordinamento provinciale di Libera a Benevento apre la campagna di tesseramento giovedì 29 ottobre, dalle 19, al Funambolo, il caffè letterario di via Cardinale di Rende. Libera è l'associazione che riunisce persone e gruppi contro le mafie. Durante la serata ci si potrà tesserare per il 2027.",
-      "fonti": [
-       "Libera Benevento",
-       "NTR24",
-       "Ottopagine",
-       "BeneventoNews24"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "La serata è un «aperitivo di comunità» a 10 euro. Lo preparano con i loro prodotti due cooperative sociali nate su beni confiscati alla camorra: La Strada di Pugliano di Teano e Al di là dei sogni di Sessa Aurunca, entrambe nel Casertano. Una parte del ricavato andrà a Libera.",
-      "fonti": [
-       "Libera Benevento"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "Interverrà Stefano Mancini, presidente della cooperativa La Strada. Parlerà di come i beni tolti alla criminalità organizzata possono rinascere con l'agricoltura sociale e sostenibile, per dare lavoro e restituire dignità e salute al territorio e alle comunità.",
-      "fonti": [
-       "Libera Benevento"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "Chi si tessera sostiene anche «Diamo Linfa Al Bene», la campagna nazionale con cui Libera chiede al Governo di destinare il 2 per cento del Fondo unico di giustizia alla gestione e al riuso sociale dei beni confiscati. Si può aderire firmando la raccolta di firme; Regioni, Province e Comuni possono farlo approvando una delibera di sostegno.",
-      "fonti": [
-       "Libera Benevento"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "«Le mafie e la corruzione dividono, Libera cerca di costruire legami», scrive il coordinamento di Benevento, che aggiunge: «Una comunità che si tiene insieme è più forte del silenzio, dell'indifferenza e della paura».",
-      "fonti": [
-       "Libera Benevento"
-      ],
-      "giorno": "2026-10-26"
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [],
-    "fonti": [
-     {
-      "nome": "Libera Benevento",
-      "titolo": "Comunicato stampa - Campagna di tesseramento Libera Benevento: aperitivo con i prodotti dei beni confiscati",
-      "url": "https://www.libera.it/",
-      "data": "26 ott, 10:25",
-      "ufficiale": true
-     },
-     {
-      "nome": "NTR24",
-      "titolo": "Campagna di tesseramento Libera Benevento: giovedì sera aperitivo con i prodotti dei beni confiscati",
-      "url": "https://www.ntr24.tv/2026/10/26/campagna-di-tesseramento-libera-benevento-giovedi-sera-aperitivo-con-i-prodotti-dei-beni-confiscati/",
-      "data": "26 ott, 10:25"
-     },
-     {
-      "nome": "BeneventoNews24",
-      "titolo": "Campagna di tesseramento Libera Benevento: aperitivo con i prodotti dei beni confiscati",
-      "url": "https://www.beneventonews24.it/2026/10/26/campagna-di-tesseramento-libera-benevento-aperitivo-con-i-prodotti-dei-beni-confiscati/",
-      "data": "26 ott, 10:36"
-     },
-     {
-      "nome": "Ottopagine",
-      "titolo": "Libera Benevento: l'associazione contro le mafie invita al tesseramento",
-      "url": "https://www.ottopagine.it/bn/attualita/442169/libera-benevento-l-associazione-contro-le-mafie-invita-al-tesseramento.shtml",
-      "data": "26 ott, 10:32"
-     }
-    ]
-   },
-   "subito": true,
-   "importanza": 2,
-   "immagine": "solidarieta",
-   "foto": "solidarieta-5"
-  },
-  {
-   "id": "tennis-ct-san-giorgio-del-sannio-vince-torino-serie-a2",
-   "titolo": "Tennis, Serie A2 femminile: il CT San Giorgio del Sannio vince 3-1 a Torino",
-   "titolo_google": "Tennis Serie A2, Stampa Sporting-San Giorgio 1-3: vince il CT",
-   "sintesi": "Il CT San Giorgio del Sannio ha battuto 3-1 a Torino il Circolo della Stampa Sporting ed è alla terza vittoria nella Serie A2 femminile di tennis. Domenica 1° novembre, alla Fagianella, arriva il Circolo Tennis Bologna.",
-   "categoria": "sport",
-   "sport": "tennis",
-   "zona": "provincia",
-   "immagine": "tennis",
-   "luogo": "San Giorgio del Sannio",
-   "pubblicato": "2026-10-26T09:36+01:00",
-   "stato": "una_fonte",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/tennis-il-ct-san-giorgio-del-sannio-espugna-torino-terza-vittoria-in-serie-a2-femminile/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Il CT San Giorgio del Sannio ha vinto 3-1 sul campo del Circolo della Stampa Sporting di Torino, nella Serie A2 femminile di tennis. Aveva battuto le torinesi anche all'andata. È la terza vittoria del campionato per la squadra del presidente Pepe, a due giornate dalla fine della fase a gironi.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "Il primo punto l'ha portato Federica Sacco, che ha battuto Cavasin 7-5, 6-2. Nel secondo singolare Sara Milanese ha superato Cerbo 7-6, 6-3: per lei sono tre vittorie su tre in singolare in questo campionato. Ylenia Zocco, non in perfette condizioni fisiche, ha perso al terzo set contro Procacci.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "Il punto decisivo è arrivato dal doppio: Sacco e Zocco hanno battuto Iezza e Procacci 6-0, 6-2.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     },
-     {
-      "testo": "Domenica 1° novembre il CT San Giorgio del Sannio gioca in casa, sui campi della Fagianella, l'ultima partita casalinga del girone contro il Circolo Tennis Bologna.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "A che ora si gioca la partita con il Circolo Tennis Bologna.",
-     "La classifica del girone dopo questa giornata."
-    ],
-    "fonti": [
-     {
-      "nome": "Anteprima24",
-      "titolo": "Tennis, il CT San Giorgio del Sannio espugna Torino: terza vittoria in Serie A2 femminile",
-      "url": "https://www.anteprima24.it/benevento/tennis-il-ct-san-giorgio-del-sannio-espugna-torino-terza-vittoria-in-serie-a2-femminile/",
-      "data": "26 ott, 09:36"
-     }
-    ]
-   },
-   "foto": "tennis-9",
-   "importanza": 2
-  },
-  {
-   "id": "pietrelcina-centro-raccolta-rifiuti-riapre-27-ottobre",
-   "titolo": "Pietrelcina, il centro di raccolta comunale riapre martedì 27 ottobre",
-   "titolo_google": "Pietrelcina, centro di raccolta rifiuti riaperto dal 27 ottobre",
-   "sintesi": "Il Comune di Pietrelcina avvisa che da martedì 27 ottobre il centro di raccolta comunale, dove si portano i rifiuti differenziati e ingombranti, riapre con i soliti orari.",
-   "categoria": "avvisi",
-   "zona": "provincia",
-   "immagine": "rifiuti",
-   "luogo": "Pietrelcina",
-   "pubblicato": "2026-10-26",
-   "stato": "ufficiale",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Comune di Pietrelcina",
-     "url": "https://www.comune.pietrelcina.bn.it/novita/avvisi/novita_378.html",
-     "ufficiale": true
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "A Pietrelcina il centro di raccolta comunale, l'area dove i cittadini portano i rifiuti che non vanno nella raccolta porta a porta, riapre da martedì 27 ottobre. Lo ha comunicato il Comune lunedì 26 ottobre, con un avviso dell'ufficio Ecologia e Ambiente.",
-      "fonti": [
-       "Comune di Pietrelcina"
-      ]
-     },
-     {
-      "testo": "Il centro torna aperto con i soliti orari, che l'avviso non riporta. Per informazioni ci si può rivolgere al Comune.",
-      "fonti": [
-       "Comune di Pietrelcina"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Perché e da quando il centro di raccolta era chiuso.",
-     "Quali sono gli orari di apertura."
-    ],
-    "fonti": [
-     {
-      "nome": "Comune di Pietrelcina",
-      "titolo": "Riapertura del Centro di Raccolta Comunale",
-      "url": "https://www.comune.pietrelcina.bn.it/novita/avvisi/novita_378.html",
-      "data": "26 ott",
-      "ufficiale": true
-     }
-    ]
-   },
-   "foto": "rifiuti-13",
-   "importanza": 3
-  },
-  {
    "id": "san-leucio-del-sannio-cimitero-traffico-31-ottobre-2-novembre",
    "titolo": "San Leucio del Sannio, regole speciali per traffico e sosta al cimitero dal 31 ottobre al 2 novembre",
    "titolo_google": "San Leucio del Sannio, traffico al cimitero 31 ottobre-2 novembre",
@@ -10429,139 +8551,6 @@
    "importanza": 3
   },
   {
-   "id": "benevento-liceo-guacci-furto-distributore-computer",
-   "titolo": "Benevento, furto di notte al liceo Guacci di via Compagna: rubati computer e candeggina sparsa nelle aule",
-   "titolo_google": "Benevento, furto al liceo Guacci: rubati dei computer",
-   "sintesi": "Nella notte tra domenica 25 e lunedì 26 ottobre dei ladri sono entrati nella sede di Scienze Umane del liceo Guacci, in via Compagna a Benevento, forzando una finestra del piano terra. Hanno rubato dei computer, due o una decina a seconda dei giornali, e sparso candeggina nelle aule. Indagano i Carabinieri.",
-   "categoria": "cronaca",
-   "zona": "benevento",
-   "luogo": "Benevento, via Compagna",
-   "pubblicato": "2026-10-26T08:54+01:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/26/rione-ferrovia-furto-al-liceo-guacci-di-benevento-rubati-due-computer-locali-invasi-dalla-candeggina/"
-    },
-    {
-     "nome": "Gazzetta di Benevento",
-     "url": "https://www.gazzettabenevento.it/it/un-furto-e-avvenuto-la-notte-scorsa-al-liceo-guacci-indirizzo-scienze-umane"
-    },
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/furto-in-una-scuola-ladri-forzano-un-infisso-e-scassinano-distributore-di-merendine/"
-    },
-    {
-     "nome": "Il Mattino",
-     "url": "https://www.ilmattino.it/benevento/benevento_furto_di_pc_all_istituto_guacci_i_ladri_forzano_la_finestra_al_piano_terra_per_entrare-9850069.html"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Nella notte tra domenica 25 e lunedì 26 ottobre dei ladri sono entrati nel liceo Guacci di Benevento, nella sede dell'indirizzo Scienze Umane in via Francesco Compagna, al Rione Ferrovia. Hanno forzato una finestra del piano terra, hanno frugato nelle stanze e se ne sono andati con dei computer: due secondo NTR24 e la Gazzetta di Benevento, una decina secondo Il Mattino.",
-      "fonti": [
-       "NTR24",
-       "Gazzetta di Benevento",
-       "Anteprima24",
-       "Il Mattino"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "Prima di andarsene hanno anche sparso candeggina al piano di sopra e dentro gli armadietti. Lunedì mattina, all'arrivo del personale della scuola, l'odore era così forte da rendere l'aria irrespirabile, e gli studenti non hanno potuto restare in classe e seguire le lezioni come al solito.",
-      "fonti": [
-       "NTR24",
-       "Gazzetta di Benevento",
-       "Il Mattino"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "Secondo Anteprima24 i ladri hanno anche scassinato la macchinetta delle merendine e delle bevande per prendere le monete.",
-      "fonti": [
-       "Anteprima24"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "Il furto è stato scoperto lunedì mattina, alla riapertura della scuola dopo la domenica. Sono arrivati i Carabinieri della Compagnia di Benevento, che hanno cominciato le indagini per capire chi è stato e perché ha sparso la candeggina.",
-      "fonti": [
-       "NTR24",
-       "Gazzetta di Benevento",
-       "Anteprima24",
-       "Il Mattino"
-      ],
-      "giorno": "2026-10-26"
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "L'ingresso dei ladri da un infisso forzato nella sede di via Compagna, nella notte tra domenica e lunedì, e le indagini dei Carabinieri.",
-      "fonti": [
-       "NTR24",
-       "Gazzetta di Benevento",
-       "Anteprima24",
-       "Il Mattino"
-      ]
-     }
-    ],
-    "divergono": [
-     {
-      "testo": "Quanti computer sono stati rubati: due per NTR24 e la Gazzetta di Benevento, una decina per Il Mattino.",
-      "fonti": [
-       "NTR24",
-       "Gazzetta di Benevento",
-       "Il Mattino"
-      ]
-     }
-    ],
-    "non_si_sa": [
-     "Quanto vale il danno.",
-     "Se le lezioni riprendono normalmente martedì 27 ottobre."
-    ],
-    "fonti": [
-     {
-      "nome": "NTR24",
-      "titolo": "Rione Ferrovia, furto al Liceo Guacci di Benevento: rubati due computer, locali invasi dalla candeggina",
-      "url": "https://www.ntr24.tv/2026/10/26/rione-ferrovia-furto-al-liceo-guacci-di-benevento-rubati-due-computer-locali-invasi-dalla-candeggina/",
-      "data": "26 ott, 16:21"
-     },
-     {
-      "nome": "Gazzetta di Benevento",
-      "titolo": "Un furto è avvenuto la notte scorsa al Liceo \"Guacci,\" indirizzo Scienze Umane",
-      "url": "https://www.gazzettabenevento.it/it/un-furto-e-avvenuto-la-notte-scorsa-al-liceo-guacci-indirizzo-scienze-umane",
-      "data": "26 ott, 16:29"
-     },
-     {
-      "nome": "Anteprima24",
-      "titolo": "Furto in una scuola: ladri forzano un infisso e scassinano distributore di merendine",
-      "url": "https://www.anteprima24.it/benevento/furto-in-una-scuola-ladri-forzano-un-infisso-e-scassinano-distributore-di-merendine/",
-      "data": "26 ott, 08:54"
-     },
-     {
-      "nome": "Il Mattino",
-      "titolo": "Benevento, furto di pc all'Istituto Guacci: i ladri forzano la finestra al piano terra per entrare",
-      "url": "https://www.ilmattino.it/benevento/benevento_furto_di_pc_all_istituto_guacci_i_ladri_forzano_la_finestra_al_piano_terra_per_entrare-9850069.html",
-      "data": "26 ott, 18:34"
-     }
-    ],
-    "aggiornamento": {
-     "testo": "I ladri hanno rubato due computer e prima di andarsene hanno sparso candeggina al piano di sopra e negli armadietti: lunedì mattina l'aria era irrespirabile e gli studenti non hanno potuto fare lezione come al solito.",
-     "fonti": [
-      "NTR24",
-      "Gazzetta di Benevento"
-     ],
-     "quando": "2026-10-26T17:18+01:00",
-     "titolo_prima": "Benevento, ladri di notte al liceo Guacci di via Compagna: scassinato il distributore di merendine"
-    }
-   },
-   "importanza": 2,
-   "scena": "A high school classroom in the morning after a night burglary: a forced open window, empty desks, disconnected computer cables, a puddle of bleach on the floor, a carabiniere taking notes"
-  },
-  {
    "id": "santagata-de-goti-piazza-sant-alfonso-divieto-sosta-29-ottobre",
    "titolo": "Sant'Agata de' Goti, giovedì 29 ottobre divieto di sosta in piazza Sant'Alfonso dalle 14 alle 20 per un convegno",
    "titolo_google": "Sant'Agata de' Goti, divieto di sosta in piazza il 29 ottobre",
@@ -10614,233 +8603,6 @@
     ]
    },
    "foto": "divieto-sosta"
-  },
-  {
-   "id": "pietrelcina-medico-ottone-orari-vaccino-antinfluenzale",
-   "titolo": "Pietrelcina, gli orari della dottoressa Ottone e del vaccino antinfluenzale per i suoi pazienti",
-   "titolo_google": "Pietrelcina, vaccino antinfluenzale dal medico: gli orari",
-   "sintesi": "Il Comune di Pietrelcina ha pubblicato gli orari di studio della dottoressa Grazia Ottone, medico di famiglia, e quelli per il vaccino antinfluenzale ai suoi pazienti: lunedì dalle 16 alle 18:30 e martedì dalle 10.",
-   "categoria": "avvisi",
-   "zona": "provincia",
-   "luogo": "Pietrelcina",
-   "immagine": "vaccini",
-   "pubblicato": "2026-10-26",
-   "stato": "ufficiale",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Comune di Pietrelcina",
-     "url": "https://www.comune.pietrelcina.bn.it/novita/avvisi/novita_377.html",
-     "ufficiale": true
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "A Pietrelcina la dottoressa Grazia Ottone, medico di famiglia, fa il vaccino antinfluenzale ai suoi pazienti il lunedì pomeriggio dalle 16 alle 18:30 e il martedì mattina dalle 10, finché ci sono persone in attesa. Chi resta fuori potrà vaccinarsi nelle mattine dei giorni dopo, durante il normale orario di studio. Lo comunica il Comune.",
-      "fonti": [
-       "Comune di Pietrelcina"
-      ]
-     },
-     {
-      "testo": "Gli orari di studio confermati per questa settimana sono: lunedì dalle 16 alle 19; da martedì a venerdì dalle 10:15 alle 13:15.",
-      "fonti": [
-       "Comune di Pietrelcina"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Dove si trova lo studio: l'avviso non lo scrive."
-    ],
-    "fonti": [
-     {
-      "nome": "Comune di Pietrelcina",
-      "titolo": "Orario di ricevimento Medico di Medicina Generale D.ssa Grazia Ottone",
-      "url": "https://www.comune.pietrelcina.bn.it/novita/avvisi/novita_377.html",
-      "data": "26 ott",
-      "ufficiale": true
-     }
-    ]
-   },
-   "foto": "vaccini-4",
-   "importanza": 2
-  },
-  {
-   "id": "linea-caserta-foggia-treni-rallentati-amorosi-26-ottobre",
-   "titolo": "Treni Caserta-Benevento-Foggia rallentati vicino ad Amorosi: ritardi fino a 60 minuti",
-   "titolo_google": "Treni Caserta-Foggia, ritardi fino a 60 minuti ad Amorosi",
-   "sintesi": "Da lunedì 26 ottobre alle 6:30 i treni della linea Caserta-Foggia, quella che passa per Telese e Benevento, vanno più piano vicino ad Amorosi per un guasto tecnico. RFI segnala ritardi fino a 60 minuti, treni cambiati e cancellati.",
-   "categoria": "strade",
-   "zona": "telesina",
-   "immagine": "treno",
-   "luogo": "Amorosi",
-   "pubblicato": "2026-10-26T08:00+01:00",
-   "stato": "ufficiale",
-   "rilevante": false,
-   "in_vigore_fino": "2026-10-26",
-   "fonti": [
-    {
-     "nome": "RFI",
-     "url": "https://www.rfi.it/content/rfi/it/news-e-media/infomobilita/aggiornamenti/2026/10/26/linea-caserta---foggia--circolazione-rallentata-per-un-inconveni.html",
-     "ufficiale": true
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Lunedì 26 ottobre, dalle 6:30, i treni sulla linea Caserta-Foggia viaggiano rallentati vicino ad Amorosi, in Valle Telesina, per un guasto tecnico sulla linea. Lo comunica RFI, la società che gestisce i binari. È la linea che collega Caserta a Benevento passando per Telese e Solopaca, e prosegue verso la Puglia.",
-      "fonti": [
-       "RFI"
-      ]
-     },
-     {
-      "testo": "Nell'aggiornamento delle 8 RFI dice che i treni possono avere ritardi fino a 60 minuti (alle 6:30 erano fino a 30), e che alcune corse possono essere cambiate o cancellate. Chi deve partire conviene che controlli i monitor e il sito di RFI o di Trenitalia per la sua stazione; RFI ha annunciato altri aggiornamenti.",
-      "fonti": [
-       "RFI"
-      ]
-     }
-    ],
-    "cronologia": [
-     {
-      "data": "26 ottobre, 6:30",
-      "fatto": "Circolazione rallentata vicino ad Amorosi per un guasto: ritardi fino a 30 minuti.",
-      "fonti": [
-       "RFI"
-      ]
-     },
-     {
-      "data": "26 ottobre, 8:00",
-      "fatto": "RFI alza la stima dei ritardi fino a 60 minuti, con variazioni e cancellazioni.",
-      "fonti": [
-       "RFI"
-      ]
-     }
-    ],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Che tipo di guasto c'è e quando la circolazione tornerà regolare.",
-     "Quali treni sono stati cancellati."
-    ],
-    "fonti": [
-     {
-      "nome": "RFI",
-      "titolo": "Linea Caserta - Foggia: circolazione rallentata per un inconveniente tecnico sulla linea",
-      "url": "https://www.rfi.it/content/rfi/it/news-e-media/infomobilita/aggiornamenti/2026/10/26/linea-caserta---foggia--circolazione-rallentata-per-un-inconveni.html",
-      "data": "26 ott, 08:00",
-      "ufficiale": true
-     }
-    ]
-   },
-   "foto": "treno-7",
-   "importanza": 4
-  },
-  {
-   "id": "benevento-san-pio-tre-medici-dimissioni",
-   "titolo": "Benevento, altri tre medici lasciano l'ospedale San Pio",
-   "titolo_google": "Ospedale San Pio di Benevento, si dimettono tre medici",
-   "sintesi": "Tre giovani medici dell'ospedale San Pio di Benevento hanno dato le dimissioni, tra cui un cardiologo e un ortopedico. Lo scrive Il Sannio Quotidiano: il personale medico era già sotto organico.",
-   "categoria": "altro",
-   "zona": "benevento",
-   "immagine": "ospedale",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-26T07:52+01:00",
-   "stato": "una_fonte",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Il Sannio Quotidiano",
-     "url": "https://www.ilsannioquotidiano.it/2026/10/26/si-dimettono-altri-tre-medici-al-san-pio-personale-sempre-piu-in-difficolta/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Tre giovani medici hanno deciso di lasciare l'Azienda ospedaliera San Pio di Benevento, l'ente che gestisce il principale ospedale della provincia. Lo scrive lunedì 26 ottobre Il Sannio Quotidiano, secondo cui le dimissioni sono volontarie.",
-      "fonti": [
-       "Il Sannio Quotidiano"
-      ]
-     },
-     {
-      "testo": "Tra chi se ne va c'è un cardiologo, che a breve finirà il servizio nel reparto di Cardiologia con UTIC (l'unità di terapia intensiva per i malati di cuore) per trasferirsi altrove, e un medico specialista in Ortopedia e Traumatologia. Il giornale ricorda che il personale medico dell'ospedale era già sotto organico, nonostante i concorsi banditi negli ultimi anni.",
-      "fonti": [
-       "Il Sannio Quotidiano"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "In quale reparto lavora il terzo medico.",
-     "Se e quando l'Azienda ospedaliera sostituirà i medici che se ne vanno.",
-     "Cosa risponde la direzione del San Pio."
-    ],
-    "fonti": [
-     {
-      "nome": "Il Sannio Quotidiano",
-      "titolo": "Si dimettono altri tre medici al ‘San Pio’: personale sempre più in difficoltà",
-      "url": "https://www.ilsannioquotidiano.it/2026/10/26/si-dimettono-altri-tre-medici-al-san-pio-personale-sempre-piu-in-difficolta/",
-      "data": "26 ott, 07:52"
-     }
-    ]
-   },
-   "foto": "ospedale-5",
-   "importanza": 4
-  },
-  {
-   "id": "apice-castello-ettore-illuminazione-bando-regione",
-   "titolo": "Apice, il Comune chiede i fondi della Regione per illuminare il Castello dell'Ettore",
-   "titolo_google": "Apice, fondi della Regione per le luci del Castello dell'Ettore",
-   "sintesi": "La Giunta di Apice ha deciso di partecipare al bando della Regione Campania per l'illuminazione esterna dei monumenti, con un progetto per il Castello dell'Ettore. La Regione ha messo 400mila euro per quest'anno.",
-   "categoria": "politica",
-   "zona": "provincia",
-   "immagine": "luce",
-   "luogo": "Apice",
-   "pubblicato": "2026-10-26T07:44+01:00",
-   "stato": "una_fonte",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Il Sannio Quotidiano",
-     "url": "https://www.ilsannioquotidiano.it/2026/10/26/apice-luci-architettoniche-ce-la-candidatura-il-comune-partecipa-al-bando-della-regione-per-il-castello/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Il Comune di Apice si candida ai fondi della Regione Campania per migliorare l'illuminazione esterna del Castello dell'Ettore, il castello del paese. Lo ha deciso la Giunta guidata dal sindaco Pepe, scrive lunedì 26 ottobre Il Sannio Quotidiano.",
-      "fonti": [
-       "Il Sannio Quotidiano"
-      ]
-     },
-     {
-      "testo": "I soldi vengono da una legge regionale, la n. 2 del 27 marzo, che per quest'anno ha stanziato 400mila euro per illuminare i monumenti della Campania. Nel frattempo, ricorda il giornale, il Comune ha dovuto organizzare la custodia del castello e verificare a chi appartengono i beni che ci sono dentro.",
-      "fonti": [
-       "Il Sannio Quotidiano"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Quanto chiede il Comune e quando la Regione deciderà chi riceve i fondi."
-    ],
-    "fonti": [
-     {
-      "nome": "Il Sannio Quotidiano",
-      "titolo": "Apice – Luci architettoniche, c’è la candidatura: il Comune partecipa al bando della Regione per il Castello",
-      "url": "https://www.ilsannioquotidiano.it/2026/10/26/apice-luci-architettoniche-ce-la-candidatura-il-comune-partecipa-al-bando-della-regione-per-il-castello/",
-      "data": "26 ott, 07:44"
-     }
-    ]
-   },
-   "foto": "luce-8",
-   "importanza": 2
   },
   {
    "id": "stregati-dai-vicoli-ponte-programma-2026",
@@ -10913,70 +8675,6 @@
    },
    "subito": true,
    "pubblicato": "2026-10-26T08:02:03+01:00",
-   "importanza": 3
-  },
-  {
-   "id": "benevento-53-nuove-telecamere-videosorveglianza",
-   "titolo": "Benevento, accese 53 nuove telecamere di videosorveglianza: in città ora sono 200",
-   "titolo_google": "Benevento, 53 nuove telecamere: in città ora sono 200",
-   "sintesi": "Il Comune di Benevento ha attivato nella settimana del 19 ottobre 53 nuove telecamere, dal centro storico a via Paolella, via dei Dauni e via San Vito. Con queste, scrive Il Mattino, le telecamere in funzione sono 200 in circa 100 punti della città.",
-   "categoria": "altro",
-   "zona": "benevento",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-26T00:05:00+01:00",
-   "stato": "una_fonte",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Il Mattino",
-     "url": "https://www.ilmattino.it/benevento/sicurezza_a_benevento_arrivano_53_nuove_telecamere_in_citta_centro_sempre_piu_controllato-9848073.html"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "A Benevento nei primi giorni della settimana del 19 ottobre sono entrate in funzione 53 nuove telecamere di videosorveglianza. Le ha fatte installare il Comune con i fondi del Poc Legalità, un programma del ministero dell'Interno per la sicurezza nel Sud. Con queste, scrive Il Mattino, in città le telecamere accese sono 200, in circa 100 punti.",
-      "fonti": [
-       "Il Mattino"
-      ]
-     },
-     {
-      "testo": "Due telecamere con vista panoramica sono in via Traiano, all'ingresso di Palazzo del Reduce, a pochi passi da piazza Roma e corso Garibaldi. Altre sono nelle zone della movida: due all'incrocio tra via La Vipera e vico Trescene e due in via Cardinal di Rende. Secondo il giornale, le immagini sono già servite alle forze dell'ordine per ricostruire il ferimento di una ragazza di 18 anni in centro, venerdì 23 ottobre.",
-      "fonti": [
-       "Il Mattino"
-      ]
-     },
-     {
-      "testo": "Le nuove telecamere controllano anche le strade da cui si entra in città. In via Paolella ce ne sono 4, due con il lettore delle targhe; in via dei Dauni, all'uscita della statale 90 bis, 4 con due lettori; sulla provinciale 71 in località Pantano 3, con un lettore; in via San Vito, alla rotonda per Castelpoto, 5, di cui due leggono le targhe.",
-      "fonti": [
-       "Il Mattino"
-      ]
-     },
-     {
-      "testo": "Altre telecamere sono in via Viviani a Capodimonte, all'incrocio tra via Santa Colomba e via Vitelli al rione Libertà, in contrada Ponte delle Tavole, all'incrocio tra via delle Puglie e via del Sole, in via delle Poste, in largo San Gennaro, in via D'Annunzio, in via Vetrone, in via Ponticelli all'imbocco di via Cimitero, in via dei Mulini, in via Cupa dell'Angelo e al semaforo di via San Vito.",
-      "fonti": [
-       "Il Mattino"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Quanto è costato l'intervento",
-     "Chi guarda le immagini e per quanto tempo vengono conservate"
-    ],
-    "fonti": [
-     {
-      "nome": "Il Mattino",
-      "titolo": "Sicurezza a Benevento, arrivano 53 nuove telecamere in città: «Centro sempre più controllato»",
-      "url": "https://www.ilmattino.it/benevento/sicurezza_a_benevento_arrivano_53_nuove_telecamere_in_citta_centro_sempre_piu_controllato-9848073.html",
-      "data": "26 ott, 00:05"
-     }
-    ]
-   },
-   "immagine": "telecamere",
-   "foto": "telecamere-7",
    "importanza": 3
   },
   {
@@ -11125,536 +8823,6 @@
    "pubblicato": "2026-10-25T23:04:33+01:00",
    "foto": "stadio-5",
    "importanza": 5
-  },
-  {
-   "id": "benevento-pierozzi-infortunio-arezzo-floro-flores",
-   "titolo": "Benevento, Pierozzi fuori circa due mesi: distrazione al bicipite femorale",
-   "titolo_google": "Pierozzi infortunato, Benevento senza di lui per due mesi",
-   "sintesi": "Il Benevento Calcio ha comunicato che Edoardo Pierozzi ha una distrazione di secondo grado del bicipite femorale: starà fuori circa due mesi. Il giocatore si era fermato all'86' della partita vinta 3-0 ad Arezzo sabato 24 ottobre. Martedì 27 al Vigorito arriva il Catanzaro.",
-   "categoria": "sport",
-   "sport": "calcio",
-   "zona": "benevento",
-   "immagine": "calcio",
-   "luogo": "Benevento",
-   "pubblicato": "2026-10-26T10:06+01:00",
-   "stato": "ufficiale",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Benevento Calcio",
-     "url": "https://www.beneventocalcio.club/news/comunicatistampa/7681/benevento-calcio-aggiornamento-medico-edoardo-pierozzi.shtml",
-     "ufficiale": true
-    },
-    {
-     "nome": "BeneventoNews24",
-     "url": "https://www.beneventonews24.it/2026/10/24/benevento-floro-flores-questa-squadra-e-fantastica-ma-lobiettivo-resta-la-salvezza/"
-    },
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/benevento-super-ad-arezzo-floro-flores-ora-guai-a-sottovalutare-il-catanzaro/"
-    },
-    {
-     "nome": "TV7 Benevento",
-     "url": "https://www.tvsette.net/benevento-mignani-si-prende-la-scena-il-lavoro-ripaga-sempre-ora-testa-al-catanzaro/"
-    },
-    {
-     "nome": "NTR24 Sport",
-     "url": "https://sport.ntr24.tv/2026/10/26/pierozzi-che-botta-gli-esami-confermano-i-timori-della-vigilia-due-mesi-di-stop-per-il-terzino-giallorosso-romano-e-sernicola-le-alternative/"
-    },
-    {
-     "nome": "Cronache del Sannio",
-     "url": "https://www.cronachedelsannio.it/sannionews24/benevento-stop-pierozzi-fuori-due-mesi/"
-    },
-    {
-     "nome": "BeneventoNews24 (26/10)",
-     "url": "https://www.beneventonews24.it/2026/10/26/benevento-tegola-pierozzi-linfortunio-e-serio-sara-out-per-circa-due-mesi/"
-    },
-    {
-     "nome": "Anteprima24 (26/10)",
-     "url": "https://www.anteprima24.it/benevento/benevento-tegola-pierozzi-lesione-al-bicipite-femorale/"
-    },
-    {
-     "nome": "Gazzetta di Benevento",
-     "url": "https://www.gazzettabenevento.it/it/calcio-serie-b-e-serio-linfortunio-cui-e-incappato-il-terzino-del-benevento-edoardo-pierozzi-nel"
-    },
-    {
-     "nome": "Benevento Giornale",
-     "url": "https://www.beneventogiornale.com/2026/10/26/benevento-calcio-infortunio-di-edoardo-pierozzi-sara-assente-per-circa-due-mesi/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Il Benevento dovrà fare a meno di Edoardo Pierozzi per circa due mesi. Lunedì 26 ottobre la società ha comunicato che l'ecografia di controllo ha trovato una distrazione di secondo grado del bicipite femorale, il muscolo dietro la coscia. I tempi di recupero, precisa il club, dipendono da come andrà la guarigione.",
-      "fonti": [
-       "Benevento Calcio",
-       "NTR24 Sport",
-       "Cronache del Sannio",
-       "BeneventoNews24 (26/10)",
-       "Anteprima24 (26/10)"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "Pierozzi giocava da terzino destro. Secondo NTR24 Sport, per sostituirlo Floro Flores può contare su Romano, rientrato da poco dopo un infortunio e già entrato ad Arezzo al posto di Pierozzi, oppure su Sernicola.",
-      "fonti": [
-       "NTR24 Sport"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "Sabato 24 ottobre, nella partita vinta 3-0 ad Arezzo, il giocatore giallorosso è uscito all'86' per un fastidio. Nel dopo partita l'allenatore Antonio Floro Flores aveva detto che bisognava aspettare gli esami per capire quanto fosse serio.",
-      "fonti": [
-       "Anteprima24",
-       "BeneventoNews24"
-      ],
-      "giorno": "2026-10-24"
-     },
-     {
-      "testo": "Secondo BeneventoNews24, Floro Flores ha spiegato che Pierozzi ha sentito tirare dietro la gamba e che potrebbe essere qualcosa di grave; più avanti nella conferenza ha parlato di «un problema di qualche settimana». Ha aggiunto che la squadra ha giocatori all'altezza per sostituirlo.",
-      "fonti": [
-       "BeneventoNews24"
-      ],
-      "giorno": "2026-10-24"
-     },
-     {
-      "testo": "Guglielmo Mignani, entrato nel finale e autore del terzo gol, ha detto ai microfoni di OttoChannel che è stata una delle migliori partite della stagione. Vuole più spazio e dice di guadagnarselo lavorando, con grande stima per il compagno di reparto Salvemini.",
-      "fonti": [
-       "BeneventoNews24 (Mignani)",
-       "TV7 Benevento"
-      ],
-      "giorno": "2026-10-24"
-     },
-     {
-      "testo": "Il Benevento, salito a 14 punti e al quinto posto, gioca martedì 27 ottobre al Vigorito contro il Catanzaro, la seconda delle tre partite in sette giorni. «Sottovalutare il Catanzaro sarebbe una follia», ha detto Floro Flores.",
-      "fonti": [
-       "TV7 Benevento (partita)",
-       "Anteprima24"
-      ],
-      "giorno": "2026-10-24"
-     }
-    ],
-    "cronologia": [
-     {
-      "data": "24 ottobre",
-      "fatto": "Pierozzi esce all'86' di Arezzo-Benevento 0-3 per un fastidio alla gamba.",
-      "fonti": [
-       "Anteprima24"
-      ]
-     },
-     {
-      "data": "26 ottobre, 10:06",
-      "fatto": "Il club comunica la diagnosi: distrazione di secondo grado del bicipite femorale, circa due mesi di stop.",
-      "fonti": [
-       "Benevento Calcio"
-      ]
-     }
-    ],
-    "concordano": [
-     {
-      "testo": "Pierozzi uscito per un fastidio e la necessità di aspettare gli esami.",
-      "fonti": [
-       "Anteprima24",
-       "BeneventoNews24"
-      ]
-     }
-    ],
-    "divergono": [
-     {
-      "testo": "Dopo la partita BeneventoNews24 riportava le parole di Floro Flores su «un problema di qualche settimana», mentre Anteprima24 scriveva che l'allenatore non si era sbilanciato. Vale la diagnosi del club: circa due mesi.",
-      "fonti": [
-       "BeneventoNews24",
-       "Anteprima24",
-       "Benevento Calcio"
-      ]
-     }
-    ],
-    "non_si_sa": [
-     "Chi giocherà al posto di Pierozzi contro il Catanzaro e nelle prossime partite."
-    ],
-    "fonti": [
-     {
-      "nome": "Benevento Calcio",
-      "titolo": "BENEVENTO CALCIO – AGGIORNAMENTO MEDICO EDOARDO PIEROZZI",
-      "url": "https://www.beneventocalcio.club/news/comunicatistampa/7681/benevento-calcio-aggiornamento-medico-edoardo-pierozzi.shtml",
-      "data": "26 ott, 10:06",
-      "ufficiale": true
-     },
-     {
-      "nome": "BeneventoNews24",
-      "titolo": "Benevento, Floro Flores: “Questa squadra è fantastica, ma l’obiettivo resta la salvezza”",
-      "url": "https://www.beneventonews24.it/2026/10/24/benevento-floro-flores-questa-squadra-e-fantastica-ma-lobiettivo-resta-la-salvezza/",
-      "data": "24 ott, 22:11"
-     },
-     {
-      "nome": "Anteprima24",
-      "titolo": "Benevento super ad Arezzo, Floro Flores: “Ora guai a sottovalutare il Catanzaro”",
-      "url": "https://www.anteprima24.it/benevento/benevento-super-ad-arezzo-floro-flores-ora-guai-a-sottovalutare-il-catanzaro/",
-      "data": "24 ott, 22:27"
-     },
-     {
-      "nome": "BeneventoNews24 (Mignani)",
-      "titolo": "Benevento, Mignani: “Il lavoro ripaga sempre, provo a mettere in difficoltà il mister”",
-      "url": "https://www.beneventonews24.it/2026/10/24/benevento-mignani-il-lavoro-ripaga-sempre-provo-a-mettere-in-difficolta-il-mister/",
-      "data": "24 ott, 21:54"
-     },
-     {
-      "nome": "TV7 Benevento",
-      "titolo": "Benevento, Mignani si prende la scena: «Il lavoro ripaga sempre. Ora testa al Catanzaro»",
-      "url": "https://www.tvsette.net/benevento-mignani-si-prende-la-scena-il-lavoro-ripaga-sempre-ora-testa-al-catanzaro/",
-      "data": "24 ott, 22:42"
-     },
-     {
-      "nome": "TV7 Benevento (partita)",
-      "titolo": "Benevento, tris da grande squadra: Arezzo travolto 3-0. La Strega vola al quinto posto",
-      "url": "https://www.tvsette.net/siatounis-apre-le-danze-okereke-raddoppia-e-mignani-cala-il-tris-nel-finale-i-giallorossi-conquistano-il-quinto-risultato-utile-consecutivo-e-salgono-a-quota-14-punti-martedi-al-vigorito-arriva-il/",
-      "data": "24 ott, 22:39"
-     },
-     {
-      "nome": "NTR24 Sport",
-      "titolo": "Pierozzi, che botta! Gli esami confermano i timori della vigilia: due mesi di stop per il terzino giallorosso.",
-      "url": "https://sport.ntr24.tv/2026/10/26/pierozzi-che-botta-gli-esami-confermano-i-timori-della-vigilia-due-mesi-di-stop-per-il-terzino-giallorosso-romano-e-sernicola-le-alternative/",
-      "data": "26 ott, 11:07"
-     },
-     {
-      "nome": "Cronache del Sannio",
-      "titolo": "Benevento, stop per Pierozzi: fuori due mesi",
-      "url": "https://www.cronachedelsannio.it/sannionews24/benevento-stop-pierozzi-fuori-due-mesi/",
-      "data": "26 ott, 10:34"
-     },
-     {
-      "nome": "BeneventoNews24 (26/10)",
-      "titolo": "Benevento, tegola Pierozzi: l’infortunio è serio! Out per circa due mesi, 2026 finito",
-      "url": "https://www.beneventonews24.it/2026/10/26/benevento-tegola-pierozzi-linfortunio-e-serio-sara-out-per-circa-due-mesi/",
-      "data": "26 ott, 11:04"
-     },
-     {
-      "nome": "Anteprima24 (26/10)",
-      "titolo": "Benevento, tegola Pierozzi: lesione al bicipite femorale",
-      "url": "https://www.anteprima24.it/benevento/benevento-tegola-pierozzi-lesione-al-bicipite-femorale/",
-      "data": "26 ott, 11:06"
-     },
-     {
-      "nome": "Gazzetta di Benevento",
-      "titolo": "Calcio, Serie B: E' serio l'infortunio in cui è incappato il terzino del Benevento Edoardo Pierozzi nel corso della gara contro l'Arezzo",
-      "url": "https://www.gazzettabenevento.it/it/calcio-serie-b-e-serio-linfortunio-cui-e-incappato-il-terzino-del-benevento-edoardo-pierozzi-nel",
-      "data": "26 ott, 10:25"
-     },
-     {
-      "nome": "Benevento Giornale",
-      "titolo": "Benevento Calcio – Infortunio di Edoardo Pierozzi sarà assente per circa due mesi",
-      "url": "https://www.beneventogiornale.com/2026/10/26/benevento-calcio-infortunio-di-edoardo-pierozzi-sara-assente-per-circa-due-mesi/",
-      "data": "26 ott, 14:31"
-     }
-    ],
-    "aggiornamento": {
-     "testo": "Lunedì 26 ottobre il Benevento Calcio ha comunicato che Pierozzi ha una distrazione di secondo grado del bicipite femorale: circa due mesi di stop.",
-     "fonti": [
-      "Benevento Calcio"
-     ],
-     "quando": "2026-10-26T10:12+01:00",
-     "titolo_prima": "Benevento, Pierozzi esce per un infortunio ad Arezzo: si aspettano gli esami prima del Catanzaro"
-    }
-   },
-   "foto": "calcio-2",
-   "subito": true,
-   "comunicati": [
-    "u4951c8d3962"
-   ],
-   "importanza": 5
-  },
-  {
-   "id": "benevento-corso-garibaldi-bambino-investito-da-bici",
-   "titolo": "Benevento, dopo il bambino investito da una bici sul corso Garibaldi due vigili fissi e controlli sulle e-bike truccate",
-   "titolo_google": "Corso Garibaldi Benevento, vigili fissi e controlli sulle e-bike",
-   "sintesi": "Dopo il bambino investito da una bici sabato 24 ottobre sul corso Garibaldi, la Polizia municipale di Benevento mette due agenti fissi tra Santa Sofia e via Goduti e annuncia controlli sulle e-bike modificate con la Motorizzazione, nuove regole e cartelli più chiari.",
-   "categoria": "cronaca",
-   "zona": "benevento",
-   "luogo": "Benevento, corso Garibaldi",
-   "pubblicato": "2026-10-26T13:47:00+01:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "BeneventoNews24",
-     "url": "https://www.beneventonews24.it/2026/10/25/mastella-dopo-linvestimento-sul-corso-scritto-al-comandante-intransigenza-e-massima-severita/"
-    },
-    {
-     "nome": "Il Sannio Quotidiano",
-     "url": "https://www.ilsannioquotidiano.it/2026/10/25/bimbo-investito-da-una-bici-mentre-passeggia-con-i-genitori-lungo-il-corso-garibaldi/"
-    },
-    {
-     "nome": "Cronache del Sannio",
-     "url": "https://www.cronachedelsannio.it/sannionews24/bambino-investito-da-bici-a-corso-garibaldi-mastella-intransigenza-per-chi-viola-regole/"
-    },
-    {
-     "nome": "Ottopagine",
-     "url": "https://www.ottopagine.it/bn/attualita/442111/benevento-investimento-corso-mastella-controlli-severi-e-tolleranza-zero.shtml"
-    },
-    {
-     "nome": "NTR24 (26/10)",
-     "url": "https://www.ntr24.tv/2026/10/26/controlli-sulle-e-bike-truccate-e-presidio-continuo-la-municipale-mette-in-campo-il-piano-per-proteggere-i-pedoni-su-corso-garibaldi/"
-    },
-    {
-     "nome": "Anteprima24 (26/10)",
-     "url": "https://www.anteprima24.it/benevento/polizia-municipale-di-benevento-utilizzo-e-bike-cinque-interventi-per-proteggere-i-pedoni/"
-    },
-    {
-     "nome": "TV7 Benevento (26/10)",
-     "url": "https://www.tvsette.net/controlli-sulle-e-bike-truccate-e-presidio-continuo-foto/"
-    },
-    {
-     "nome": "Cronache del Sannio (26/10)",
-     "url": "https://www.cronachedelsannio.it/sannionews24/corso-garibaldi-stretta-bici-truccate-municipale/"
-    },
-    {
-     "nome": "Ottopagine (26/10)",
-     "url": "https://www.ottopagine.it/bn/attualita/442207/benevento-scattano-i-controlli-contro-e-bike-truccate-e-presidio-continuo.shtml"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Dopo il bambino investito da una bici, la Polizia municipale di Benevento ha preparato un piano in cinque punti per la sicurezza dei pedoni sul corso Garibaldi. Il primo è un presidio fisso: due agenti, che si danno il cambio sul posto, staranno sul tratto tra Santa Sofia e via Goduti per richiamare chi entra in sella dove è vietato e intervenire su chi va in modo pericoloso tra i passanti.",
-      "fonti": [
-       "NTR24 (26/10)",
-       "Anteprima24 (26/10)",
-       "TV7 Benevento (26/10)",
-       "Cronache del Sannio (26/10)",
-       "Ottopagine (26/10)"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "Con la Motorizzazione civile la Municipale farà controlli tecnici sulle bici elettriche (e-bike) con un «banco di prova», per scoprire quelle modificate: centraline alterate, sblocchi che fanno andare il motore oltre i limiti o senza pedalare. Per i mezzi irregolari sono previste multe, sequestro e confisca. Guardia di Finanza, Polizia di Stato e Carabinieri controlleranno anche chi importa, modifica e vende questi mezzi.",
-      "fonti": [
-       "NTR24 (26/10)",
-       "Anteprima24 (26/10)",
-       "TV7 Benevento (26/10)",
-       "Cronache del Sannio (26/10)",
-       "Ottopagine (26/10)"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "Saranno riviste le ordinanze del 2016 e del 2020 sul corso, per dire con chiarezza dove non si può andare in sella, quando bisogna scendere e portare la bici a mano e quali eccezioni valgono (per esempio per le persone con disabilità e per le consegne ai negozi). Saranno controllati e sistemati i cartelli agli ingressi del corso e verranno studiati percorsi alternativi per bici e monopattini al tratto tra via Goduti e via Annunziata.",
-      "fonti": [
-       "NTR24 (26/10)",
-       "Anteprima24 (26/10)",
-       "TV7 Benevento (26/10)",
-       "Cronache del Sannio (26/10)",
-       "Ottopagine (26/10)"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "«L'investimento di un bambino ci richiama a una responsabilità precisa: prevenire altri episodi», dice il comandante della Polizia municipale, Giuseppe Vecchio, che vuole controllare i «mezzi sospetti» e risalire a chi li modifica o li vende.",
-      "fonti": [
-       "Anteprima24 (26/10)"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "Domenica 25 ottobre il sindaco di Benevento, Clemente Mastella, ha scritto al comandante della Polizia municipale, Giuseppe Vecchio, per chiedere più controlli e pattuglie fisse sul corso Garibaldi. Lo scopo, dice il sindaco in una nota, è far rispettare l'ordinanza che vieta le biciclette nel centro storico: «Su questo occorre intransigenza».",
-      "fonti": [
-       "NTR24",
-       "Cronache del Sannio",
-       "BeneventoNews24",
-       "Ottopagine",
-       "TV7 Benevento"
-      ],
-      "giorno": "2026-10-25"
-     },
-     {
-      "testo": "Mastella aggiunge che secondo lui nei fine settimana il corso dovrebbe essere riservato solo ai pedoni, perché le famiglie possano passeggiare in sicurezza. Al bambino ha augurato una pronta guarigione.",
-      "fonti": [
-       "Cronache del Sannio",
-       "Ottopagine",
-       "TV7 Benevento"
-      ],
-      "giorno": "2026-10-25"
-     },
-     {
-      "testo": "Sabato sera, 24 ottobre, verso le 19:30, un bambino è stato investito da una bicicletta sul corso Garibaldi a Benevento, vicino agli incroci con via Pacca e via Rampone. Era con i genitori.",
-      "fonti": [
-       "Anteprima24",
-       "BeneventoNews24",
-       "Il Sannio Quotidiano"
-      ],
-      "giorno": "2026-10-24"
-     },
-     {
-      "testo": "Il bambino è stato colpito al volto e ha perso sangue. Secondo i primi controlli dei soccorritori del 118, riferiti da Il Sannio Quotidiano, ha abrasioni e ferite, anche al viso, che non sembrano gravi; è stato portato al pronto soccorso per altri esami.",
-      "fonti": [
-       "Anteprima24",
-       "Il Sannio Quotidiano"
-      ],
-      "giorno": "2026-10-24"
-     },
-     {
-      "testo": "Il ciclista si è fermato per soccorrerlo ed è stato poi fermato dagli agenti della Polizia municipale. In quel tratto di zona a traffico limitato, ricorda il giornale, è vietato da tempo anche il passaggio delle biciclette.",
-      "fonti": [
-       "Anteprima24",
-       "BeneventoNews24"
-      ],
-      "giorno": "2026-10-24"
-     },
-     {
-      "testo": "È il secondo episodio in due giorni sul corso Garibaldi: la sera di venerdì 23 ottobre lungo la stessa strada era stata ferita una ragazza.",
-      "fonti": [
-       "Il Sannio Quotidiano"
-      ],
-      "giorno": "2026-10-24"
-     }
-    ],
-    "cronologia": [
-     {
-      "data": "24 ottobre, 19:30",
-      "fatto": "Un bambino viene investito da una bici sul corso Garibaldi e portato al pronto soccorso.",
-      "fonti": [
-       "Anteprima24",
-       "Il Sannio Quotidiano"
-      ]
-     },
-     {
-      "data": "25 ottobre, mattina",
-      "fatto": "Il sindaco scrive al comandante della Polizia municipale per chiedere più controlli sul corso.",
-      "fonti": [
-       "NTR24",
-       "Cronache del Sannio",
-       "Ottopagine"
-      ]
-     },
-     {
-      "data": "26 ottobre",
-      "fatto": "La Polizia municipale presenta il piano in cinque punti per la sicurezza del corso.",
-      "fonti": [
-       "NTR24 (26/10)",
-       "Anteprima24 (26/10)",
-       "TV7 Benevento (26/10)"
-      ]
-     }
-    ],
-    "concordano": [
-     {
-      "testo": "Un bambino che era con i genitori è stato investito da una bici sul corso Garibaldi, è stato portato al pronto soccorso del San Pio e le sue condizioni non sono gravi; il ciclista è stato fermato dalla Polizia municipale perché in quella zona le biciclette non possono passare.",
-      "fonti": [
-       "Anteprima24",
-       "BeneventoNews24",
-       "Il Sannio Quotidiano"
-      ]
-     },
-     {
-      "testo": "Il sindaco ha scritto al comandante della Polizia municipale, Giuseppe Vecchio, per chiedere pattuglie fisse sul corso e il rispetto del divieto per le bici; per lui il corso nei fine settimana dovrebbe essere solo pedonale.",
-      "fonti": [
-       "NTR24",
-       "Cronache del Sannio",
-       "Ottopagine",
-       "TV7 Benevento"
-      ]
-     },
-     {
-      "testo": "Il piano della Municipale: presidio di due agenti tra Santa Sofia e via Goduti, controlli con la Motorizzazione sulle e-bike modificate, verifiche sui venditori, regole e cartelli nuovi, percorsi alternativi.",
-      "fonti": [
-       "NTR24 (26/10)",
-       "Anteprima24 (26/10)",
-       "TV7 Benevento (26/10)"
-      ]
-     }
-    ],
-    "divergono": [],
-    "non_si_sa": [
-     "Le condizioni del bambino dopo i controlli in ospedale.",
-     "Se la Polizia municipale ha multato il ciclista.",
-     "Da quando partono il presidio fisso e i controlli sulle e-bike."
-    ],
-    "fonti": [
-     {
-      "nome": "Anteprima24",
-      "titolo": "Benevento, bambino investito da una bici sul corso Garibaldi: trasportato in ospedale",
-      "url": "https://www.anteprima24.it/benevento/benevento-bambino-investito-da-una-bici-sul-corso-garibaldi-trasportato-in-ospedale/",
-      "data": "24 ott, 20:19"
-     },
-     {
-      "nome": "BeneventoNews24",
-      "titolo": "Mastella sull’investimento al Corso: “Scritto al Comandante, intransigenza e massima severità”",
-      "url": "https://www.beneventonews24.it/2026/10/25/mastella-dopo-linvestimento-sul-corso-scritto-al-comandante-intransigenza-e-massima-severita/",
-      "data": "25 ott, 12:14"
-     },
-     {
-      "nome": "Il Sannio Quotidiano",
-      "titolo": "Bimbo investito da una bici mentre passeggia con i genitori lungo il corso Garibaldi",
-      "url": "https://www.ilsannioquotidiano.it/2026/10/25/bimbo-investito-da-una-bici-mentre-passeggia-con-i-genitori-lungo-il-corso-garibaldi/",
-      "data": "25 ott, 08:45"
-     },
-     {
-      "nome": "NTR24",
-      "titolo": "Investimento sul Corso, Mastella al comandante Vecchio: “Massima severità per chi vìola le regole”",
-      "url": "https://www.ntr24.tv/2026/10/25/investimento-sul-corso-mastella-al-comandante-vecchio-massima-severita-per-chi-viola-le-regole/",
-      "data": "25 ott, 12:29"
-     },
-     {
-      "nome": "Cronache del Sannio",
-      "titolo": "Bambino investito da bici a Corso Garibaldi. Mastella: “Intransigenza per chi viola regole”",
-      "url": "https://www.cronachedelsannio.it/sannionews24/bambino-investito-da-bici-a-corso-garibaldi-mastella-intransigenza-per-chi-viola-regole/",
-      "data": "25 ott, 12:20"
-     },
-     {
-      "nome": "Ottopagine",
-      "titolo": "Benevento, investimento Corso: Mastella \"controlli severi e tolleranza zero\"",
-      "url": "https://www.ottopagine.it/bn/attualita/442111/benevento-investimento-corso-mastella-controlli-severi-e-tolleranza-zero.shtml",
-      "data": "25 ott, 12:28"
-     },
-     {
-      "nome": "TV7 Benevento",
-      "titolo": "Il sindaco Mastella dopo l’investimento lungo il Corso: ” scritto al Comandante, esortandolo all’intransigenza e alla massima severità per chi viola le regole vigenti”",
-      "url": "https://www.tvsette.net/il-sindaco-mastella-dopo-linvestimento-lungo-il-corso-scritto-al-comandante-esortandolo-allintransigenza-e-alla-massima-severita-per-chi-viola-le-regole-vigenti/",
-      "data": "25 ott, 12:55"
-     },
-     {
-      "nome": "NTR24 (26/10)",
-      "titolo": "Controlli sulle e-bike “truccate” e presidio continuo: la Municipale mette in campo il piano per proteggere i pedoni su corso Garibaldi",
-      "url": "https://www.ntr24.tv/2026/10/26/controlli-sulle-e-bike-truccate-e-presidio-continuo-la-municipale-mette-in-campo-il-piano-per-proteggere-i-pedoni-su-corso-garibaldi/",
-      "data": "26 ott, 13:20"
-     },
-     {
-      "nome": "Anteprima24 (26/10)",
-      "titolo": "Polizia municipale di Benevento, utilizzo e-bike: cinque interventi per proteggere i pedoni",
-      "url": "https://www.anteprima24.it/benevento/polizia-municipale-di-benevento-utilizzo-e-bike-cinque-interventi-per-proteggere-i-pedoni/",
-      "data": "26 ott, 13:47"
-     },
-     {
-      "nome": "TV7 Benevento (26/10)",
-      "titolo": "Controlli sulle e-bike “truccate” e presidio continuo. (FOTO)",
-      "url": "https://www.tvsette.net/controlli-sulle-e-bike-truccate-e-presidio-continuo-foto/",
-      "data": "26 ott, 13:24"
-     },
-     {
-      "nome": "Cronache del Sannio (26/10)",
-      "titolo": "Corso Garibaldi, stretta su bici truccate: presidio continuo della Municipale",
-      "url": "https://www.cronachedelsannio.it/sannionews24/corso-garibaldi-stretta-bici-truccate-municipale/",
-      "data": "26 ott, 14:37"
-     },
-     {
-      "nome": "Ottopagine (26/10)",
-      "titolo": "Benevento. Scattano i controlli contro e-bike \"truccate\" e presidio continuo",
-      "url": "https://www.ottopagine.it/bn/attualita/442207/benevento-scattano-i-controlli-contro-e-bike-truccate-e-presidio-continuo.shtml",
-      "data": "26 ott, 15:23"
-     }
-    ],
-    "aggiornamento": {
-     "testo": "Lunedì 26 ottobre la Polizia municipale ha presentato il suo piano: due agenti fissi sul corso tra Santa Sofia e via Goduti, controlli sulle e-bike truccate con la Motorizzazione, nuove regole e cartelli.",
-     "fonti": [
-      "NTR24 (26/10)",
-      "Anteprima24 (26/10)",
-      "TV7 Benevento (26/10)"
-     ],
-     "quando": "2026-10-26T14:24+01:00",
-     "titolo_prima": "Benevento, bambino investito da una bici sul corso Garibaldi: il sindaco chiede pattuglie fisse"
-    }
-   },
-   "importanza": 3,
-   "scena": "The pedestrian main street of an old southern Italian city center with historic palaces: two municipal police officers on duty checking an electric bicycle, families strolling, late afternoon light"
   },
   {
    "id": "sant-agata-de-goti-pronto-soccorso-h24-tar-puglianello",
@@ -12821,243 +9989,6 @@
    "scena": "The pedestrian main street of a southern Italian old town at night, historic palaces lit by street lamps, a police car parked, groups of young people talking in the distance"
   },
   {
-   "id": "montesarchio-cocaina-229-grammi-donna-arrestata",
-   "titolo": "Montesarchio, 230 grammi di cocaina in auto: la 26enne resta ai domiciliari dopo la convalida",
-   "titolo_google": "Montesarchio, cocaina in auto: 26enne resta ai domiciliari",
-   "sintesi": "I Carabinieri di Montesarchio hanno arrestato una 26enne trovata in auto con circa 230 grammi di cocaina in un borsello. Lunedì 26 ottobre, dopo l'udienza di convalida, il giudice l'ha lasciata agli arresti domiciliari, senza braccialetto elettronico.",
-   "categoria": "cronaca",
-   "zona": "caudina",
-   "luogo": "Montesarchio",
-   "pubblicato": "2026-10-26T12:59:00+01:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Gazzetta di Benevento",
-     "url": "https://www.gazzettabenevento.it/it/i-carabinieri-hanno-tratto-arresto-una-donna-trovata-possesso-di-cocaina-oltre-229-grammi"
-    },
-    {
-     "nome": "Anteprima24",
-     "url": "https://www.anteprima24.it/benevento/arrestata-con-230-grammi-di-cocaina-26enne-resta-ai-domiciliari/"
-    },
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/25/montesarchio-26enne-arrestata-con-230-gr-di-cocaina-domani-udienza-di-convalida/"
-    },
-    {
-     "nome": "BeneventoNews24",
-     "url": "https://www.beneventonews24.it/2026/10/26/montesarchio-230-grammi-di-cocaina-in-auto-26enne-resta-ai-domiciliari/"
-    },
-    {
-     "nome": "Ottopagine",
-     "url": "https://www.ottopagine.it/bn/cronaca/442041/in-auto-con-un-beauty-case-contenente-la-cocaina-arrestata-una-26enne.shtml"
-    },
-    {
-     "nome": "TV7 Benevento",
-     "url": "https://www.tvsette.net/arrestata-26enne-di-montesarchio-con-230-gr-di-cocaina-domani-udienza-di-convalida/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "La 26enne di Montesarchio arrestata con circa 230 grammi di cocaina resta agli arresti domiciliari. Lo ha deciso lunedì 26 ottobre il giudice per le indagini preliminari del Tribunale di Benevento, dopo l'udienza di convalida della mattina: ha confermato i domiciliari ma senza il braccialetto elettronico e senza il divieto di comunicare con altre persone. La giovane è accusata di detenzione di droga a fini di spaccio ed è difesa da due avvocati.",
-      "fonti": [
-       "Anteprima24 (26/10)",
-       "BeneventoNews24 (26/10)"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "La 26enne di Montesarchio arrestata dai Carabinieri con circa 230 grammi di cocaina resta agli arresti domiciliari: lunedì 26 ottobre, in mattinata, c'è l'udienza di convalida dell'arresto davanti al giudice. Lo scrivono domenica 25 ottobre NTR24 e BeneventoNews24, che confermano i dettagli: i militari della stazione di Montesarchio l'hanno fermata mentre era in auto e sul sedile hanno trovato un borsello da donna con quattro involucri di cellophane. È accusata di detenzione di droga a fini di spaccio; i domiciliari li ha disposti la Procura. All'udienza sarà assistita dal suo avvocato di fiducia.",
-      "fonti": [
-       "NTR24 (25/10)",
-       "BeneventoNews24 (25/10)",
-       "TV7 Benevento"
-      ],
-      "giorno": "2026-10-25"
-     },
-     {
-      "testo": "Anteprima24 precisa che la cocaina era in quattro involucri di cellophane dentro un borsello appoggiato sul sedile dell'auto. I Carabinieri hanno sequestrato anche il telefono cellulare della giovane. La Procura ha disposto gli arresti domiciliari; all'udienza di convalida di lunedì mattina la assisterà il suo avvocato di fiducia.",
-      "fonti": [
-       "Anteprima24 (25/10)"
-      ],
-      "giorno": "2026-10-25"
-     },
-     {
-      "testo": "Sabato 24 ottobre Ottopagine aggiunge qualche dettaglio: la donna arrestata ha 26 anni e viaggiava da sola in auto quando è stata fermata dai Carabinieri della Compagnia di Montesarchio durante un controllo stradale. I militari hanno sequestrato poco meno di 230 grammi di cocaina divisi in quattro involucri di cellophane e un telefono cellulare. I domiciliari sono stati disposti dal sostituto procuratore, in attesa dell'udienza di convalida davanti al giudice per le indagini preliminari. Il giornale parla di un borsello appoggiato sul sedile, mentre il titolo cita un beauty case.",
-      "fonti": [
-       "Ottopagine"
-      ],
-      "giorno": "2026-10-24"
-     },
-     {
-      "testo": "Venerdì 23 ottobre i Carabinieri della Compagnia di Montesarchio hanno reso noto l'arresto di una donna, trovata con oltre 229 grammi di cocaina. A Montesarchio, in provincia di Benevento, i militari del Nucleo operativo e radiomobile l'hanno fermata e hanno fatto una perquisizione sulla persona e sull'auto.",
-      "fonti": [
-       "Gazzetta di Benevento",
-       "Anteprima24",
-       "NTR24",
-       "BeneventoNews24"
-      ],
-      "giorno": "2026-10-23"
-     },
-     {
-      "testo": "La donna è accusata di detenzione di droga a fini di spaccio. La sua posizione è ora al vaglio della Procura della Repubblica di Benevento. Dopo l'arresto è stata portata a casa, dove resta agli arresti domiciliari in attesa delle decisioni dei magistrati.",
-      "fonti": [
-       "Gazzetta di Benevento",
-       "Anteprima24",
-       "NTR24",
-       "BeneventoNews24"
-      ],
-      "giorno": "2026-10-23"
-     },
-     {
-      "testo": "I Carabinieri spiegano che l'operazione rientra nei controlli del Comando provinciale di Benevento contro lo spaccio nel Sannio. Ricordano anche che la persona arrestata è indagata e, come ogni indagato, si presume innocente fino a una sentenza definitiva.",
-      "fonti": [
-       "Gazzetta di Benevento",
-       "Anteprima24",
-       "NTR24",
-       "BeneventoNews24"
-      ],
-      "giorno": "2026-10-23"
-     }
-    ],
-    "cronologia": [
-     {
-      "data": "23 ottobre",
-      "fatto": "I Carabinieri rendono noto l'arresto della donna, ai domiciliari.",
-      "fonti": [
-       "Gazzetta di Benevento",
-       "NTR24"
-      ]
-     },
-     {
-      "data": "26 ottobre, mattina",
-      "fatto": "Il giudice convalida e lascia la 26enne ai domiciliari, senza braccialetto elettronico.",
-      "fonti": [
-       "Anteprima24 (26/10)",
-       "BeneventoNews24 (26/10)"
-      ]
-     }
-    ],
-    "concordano": [
-     {
-      "testo": "Arresto a Montesarchio da parte dei Carabinieri, oltre 229 grammi di cocaina trovati con una perquisizione personale e dell'auto, la donna ai domiciliari in attesa della Procura.",
-      "fonti": [
-       "Gazzetta di Benevento",
-       "Anteprima24",
-       "NTR24",
-       "BeneventoNews24"
-      ]
-     },
-     {
-      "testo": "La 26enne fermata in auto, i quattro involucri con circa 230 grammi di cocaina in un borsello sul sedile e l'udienza di convalida lunedì mattina.",
-      "fonti": [
-       "Ottopagine",
-       "NTR24 (25/10)",
-       "BeneventoNews24 (25/10)"
-      ]
-     },
-     {
-      "testo": "L'esito dell'udienza di convalida: domiciliari senza braccialetto elettronico e senza divieto di comunicare.",
-      "fonti": [
-       "Anteprima24 (26/10)",
-       "BeneventoNews24 (26/10)"
-      ]
-     }
-    ],
-    "divergono": [
-     {
-      "testo": "Dove era nascosta la droga: un borsello (testo di Ottopagine) o un beauty case (titolo di Ottopagine).",
-      "fonti": [
-       "Ottopagine"
-      ]
-     }
-    ],
-    "non_si_sa": [
-     "Dove sia stata fermata esattamente e in quale giorno: le fonti non lo dicono."
-    ],
-    "fonti": [
-     {
-      "nome": "Gazzetta di Benevento",
-      "titolo": "I Carabinieri hanno tratto in arresto una donna trovata in possesso di cocaina per oltre 229 grammi",
-      "url": "https://www.gazzettabenevento.it/it/i-carabinieri-hanno-tratto-arresto-una-donna-trovata-possesso-di-cocaina-oltre-229-grammi",
-      "data": "23 ott, 16:03"
-     },
-     {
-      "nome": "Anteprima24",
-      "titolo": "Sequestrati due etti di cocaina in Valle Caudina: arrestata una persona",
-      "url": "https://www.anteprima24.it/benevento/sequestrati-due-etti-di-cocaina-in-valle-caudina-arrestata-una-persona/",
-      "data": "23 ott, 16:06"
-     },
-     {
-      "nome": "NTR24",
-      "titolo": "Montesarchio, scoperta con la cocaina: ai domiciliari una donna",
-      "url": "https://www.ntr24.tv/2026/10/23/montesarchio-scoperta-con-la-cocaina-ai-domiciliari-una-donna/",
-      "data": "23 ott, 16:09"
-     },
-     {
-      "nome": "BeneventoNews24",
-      "titolo": "Montesarchio, sequestrati oltre due etti di cocaina: donna arrestata dai Carabinieri",
-      "url": "https://www.beneventonews24.it/2026/10/23/montesarchio-sequestrati-oltre-due-etti-di-cocaina-una-donna-in-arresto/",
-      "data": "23 ott, 16:09"
-     },
-     {
-      "nome": "Ottopagine",
-      "url": "https://www.ottopagine.it/bn/cronaca/442041/in-auto-con-un-beauty-case-contenente-la-cocaina-arrestata-una-26enne.shtml",
-      "titolo": "In auto con un beauty case contenente la cocaina: arrestata una 26enne",
-      "data": "24 ott, 12:33"
-     },
-     {
-      "nome": "NTR24 (25/10)",
-      "titolo": "Montesarchio, 26enne arrestata con 230 gr di cocaina: domani udienza di convalida",
-      "url": "https://www.ntr24.tv/2026/10/25/montesarchio-26enne-arrestata-con-230-gr-di-cocaina-domani-udienza-di-convalida/",
-      "data": "25 ott, 12:05"
-     },
-     {
-      "nome": "BeneventoNews24 (25/10)",
-      "titolo": "Montesarchio, 26enne arrestata con 230 gr di cocaina: domani udienza di convalida",
-      "url": "https://www.beneventonews24.it/2026/10/25/montesarchio-26enne-arrestata-con-230-gr-di-cocaina-domani-udienza-di-convalida/",
-      "data": "25 ott, 11:55"
-     },
-     {
-      "nome": "TV7 Benevento",
-      "titolo": "Arrestata 26enne di Montesarchio con 230 gr di cocaina: domani udienza di convalida.",
-      "url": "https://www.tvsette.net/arrestata-26enne-di-montesarchio-con-230-gr-di-cocaina-domani-udienza-di-convalida/",
-      "data": "25 ott, 12:36"
-     },
-     {
-      "nome": "Anteprima24 (25/10)",
-      "titolo": "Fermata in auto con 230 grammi di cocaina nel borsello: arrestata una 26enne",
-      "url": "https://www.anteprima24.it/benevento/montesarchio-cocaina-borsello-arrestata-26enne/",
-      "data": "25 ott, 16:05"
-     },
-     {
-      "nome": "Anteprima24 (26/10)",
-      "titolo": "Arrestata con 230 grammi di cocaina: 26enne resta ai domiciliari",
-      "url": "https://www.anteprima24.it/benevento/arrestata-con-230-grammi-di-cocaina-26enne-resta-ai-domiciliari/",
-      "data": "26 ott, 12:51"
-     },
-     {
-      "nome": "BeneventoNews24 (26/10)",
-      "titolo": "Montesarchio, 230 grammi di cocaina in auto: 26enne resta ai domiciliari",
-      "url": "https://www.beneventonews24.it/2026/10/26/montesarchio-230-grammi-di-cocaina-in-auto-26enne-resta-ai-domiciliari/",
-      "data": "26 ott, 12:59"
-     }
-    ],
-    "aggiornamento": {
-     "testo": "Lunedì 26 ottobre, dopo l'udienza di convalida, il giudice ha lasciato la 26enne agli arresti domiciliari, senza braccialetto elettronico e senza divieto di comunicare.",
-     "fonti": [
-      "Anteprima24 (26/10)",
-      "BeneventoNews24 (26/10)"
-     ],
-     "quando": "2026-10-26T13:15+01:00",
-     "titolo_prima": "Montesarchio, 26enne arrestata con circa 230 grammi di cocaina: lunedì l'udienza di convalida"
-    }
-   },
-   "importanza": 3,
-   "scena": "A carabinieri roadside check at night: a car with the door open, a small black shoulder bag on the seat, packets of white powder in transparent evidence bags on the car roof, blue flashing lights"
-  },
-  {
    "id": "cusano-mutri-civitella-bus-air-deviati-sagra-castagna",
    "titolo": "Cusano Mutri, sabato 24 e 31 ottobre i bus AIR non passano da Civitella per la Sagra della Castagna",
    "titolo_google": "Cusano Mutri, bus AIR deviati a Civitella 24 e 31 ottobre",
@@ -14034,65 +10965,6 @@
    "immagine": "consiglio",
    "foto": "consiglio-7",
    "importanza": 4
-  },
-  {
-   "id": "santagata-de-goti-interruzione-luce-28-ottobre",
-   "titolo": "Sant'Agata de' Goti, mercoledì 28 ottobre senza luce dalle 8 alle 15:30 per lavori urgenti",
-   "titolo_google": "Sant'Agata de' Goti, niente luce il 28 ottobre per lavori",
-   "sintesi": "Mercoledì 28 ottobre, dalle 8 alle 15:30, E-Distribuzione interrompe la corrente a Sant'Agata de' Goti per lavori urgenti. Le vie interessate sono negli avvisi allegati sul sito del Comune.",
-   "categoria": "avvisi",
-   "zona": "caudina",
-   "immagine": "luce",
-   "luogo": "Sant'Agata de' Goti",
-   "pubblicato": "2026-10-22T15:30:00+02:00",
-   "stato": "ufficiale",
-   "rilevante": false,
-   "in_vigore_fino": "2026-10-28",
-   "fonti": [
-    {
-     "nome": "Comune di Sant'Agata de' Goti",
-     "url": "https://www.comune.santagatadegoti.bn.it/novita/avvisi/novita_44.html",
-     "ufficiale": true
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Mercoledì 28 ottobre, dalle 8 alle 15:30, a Sant'Agata de' Goti manca la corrente in alcune vie. Lo avvisa il Comune, che pubblica la comunicazione di E-Distribuzione, la società che gestisce la rete elettrica: servono lavori urgenti agli impianti.",
-      "fonti": [
-       "Comune di Sant'Agata de' Goti"
-      ]
-     },
-     {
-      "testo": "Le strade e i numeri civici interessati sono nei volantini allegati all'avviso sul sito del Comune. Durante i lavori la luce può tornare per un momento: E-Distribuzione invita a non fare imprudenze e a non usare gli ascensori.",
-      "fonti": [
-       "Comune di Sant'Agata de' Goti"
-      ]
-     },
-     {
-      "testo": "Per informazioni sui lavori si può usare il sito www.e-distribuzione.it, oppure mandare un SMS al 320 2041500 con il codice POD (quello scritto in bolletta). Per segnalare un guasto c'è il numero verde 803 500.",
-      "fonti": [
-       "Comune di Sant'Agata de' Goti"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [
-     "Quali vie sono interessate: l'elenco è solo negli allegati, che non ho potuto leggere."
-    ],
-    "fonti": [
-     {
-      "nome": "Comune di Sant'Agata de' Goti",
-      "titolo": "Avviso di interruzione Energia Elettrica previste per il giorno Mercoledì 28 Ottobre 2026",
-      "url": "https://www.comune.santagatadegoti.bn.it/novita/avvisi/novita_44.html",
-      "data": "22 ott",
-      "ufficiale": true
-     }
-    ]
-   },
-   "foto": "luce-2"
   },
   {
    "id": "benevento-via-cosentini-bonazzi-vitelli-scavi-fibra-30-ottobre",
@@ -17209,6 +14081,10 @@
     {
      "nome": "TV7 Benevento (Mastella)",
      "url": "https://www.tvsette.net/caro-carburanti-pellegrino-mastella-priorita-ad-agricoltori-e-autotrasportatori-serve-un-fondo-straordinario/"
+    },
+    {
+     "nome": "Benevento Giornale (Mastella)",
+     "url": "https://www.beneventogiornale.com/2026/10/28/mozione-unitaria-dei-partiti-di-maggioranza-della-regione-campania-pellegrino-mastellala-priorita-e-dare-risposte-concrete-alle-imprese-e-ai-lavoratori/"
     }
    ],
    "articolo": {
@@ -17303,6 +14179,18 @@
       "titolo": "Caro carburanti, allarme in Campania: Casa Riformista chiede un fondo straordinario",
       "url": "https://www.ntr24.tv/2026/10/19/caro-carburanti-allarme-in-campania-casa-riformista-chiede-un-fondo-straordinario/",
       "data": "19 ott"
+     },
+     {
+      "nome": "Benevento Giornale (Mastella)",
+      "titolo": "Mozione unitaria dei partiti di maggioranza della Regione Campania – Pellegrino Mastella:”La priorità è dare risposte concrete alle imprese e ai lavoratori “",
+      "url": "https://www.beneventogiornale.com/2026/10/28/mozione-unitaria-dei-partiti-di-maggioranza-della-regione-campania-pellegrino-mastellala-priorita-e-dare-risposte-concrete-alle-imprese-e-ai-lavoratori/",
+      "data": "28 ott, 22:13"
+     },
+     {
+      "nome": "Benevento Giornale (Errico)",
+      "titolo": "Caro carburanti, Errico «La Regione individui misure attuabili, risorse disponibili e tempi certi»",
+      "url": "https://www.beneventogiornale.com/2026/10/28/caro-carburanti-errico-la-regione-individui-misure-attuabili-risorse-disponibili-e-tempi-certi/",
+      "data": "28 ott, 22:16"
      }
     ],
     "divergono": [],
@@ -17330,7 +14218,8 @@
        "BeneventoNews24 (Mastella)",
        "NTR24 (28/10)",
        "Ottopagine (28/10)",
-       "TV7 Benevento (Mastella)"
+       "TV7 Benevento (Mastella)",
+       "Benevento Giornale (Mastella)"
       ],
       "giorno": "2026-10-28"
      },
@@ -17338,7 +14227,8 @@
       "testo": "Durante la discussione il consigliere regionale di Forza Italia Fernando Errico ha chiesto alla Giunta di indicare le misure davvero realizzabili, i soldi da usare e un calendario preciso, e di riferire al Consiglio: «Le famiglie e le imprese hanno bisogno di risposte credibili, non di annunci generici». Tra le priorità indica aiuti per le famiglie più colpite dai rincari, più trasporto pubblico e controlli sui prezzi.",
       "fonti": [
        "Cronache del Sannio",
-       "TV7 Benevento"
+       "TV7 Benevento",
+       "Benevento Giornale (Errico)"
       ],
       "giorno": "2026-10-28"
      },
@@ -17433,104 +14323,6 @@
    "in_vigore_fino": "2026-10-31",
    "traffico": "senso_unico",
    "foto": "lavori-stradali"
-  },
-  {
-   "id": "sannio-pensioni-occupati-cgia-2025",
-   "titolo": "Sannio: nel 2025 ci sono 27.847 pensioni in più degli occupati, dice la CGIA",
-   "titolo_google": "Sannio, 27.847 pensioni in più degli occupati (CGIA)",
-   "sintesi": "Secondo la CGIA di Mestre su dati Inps e Istat, nel 2025 in provincia di Benevento le pensioni sono 114.554 e gli occupati 86.707: 27.847 pensioni in più. Il Mattino aggiunge che gli occupati sono 1.215 più del 2024.",
-   "categoria": "altro",
-   "zona": "provincia",
-   "luogo": "Provincia di Benevento",
-   "pubblicato": "2026-10-26T00:13:00+01:00",
-   "stato": "confermata",
-   "rilevante": false,
-   "fonti": [
-    {
-     "nome": "Il Mattino",
-     "url": "https://www.ilmattino.it/schede/benevento_aumentano_gli_occupati_in_tutto_il_sannio_ma_i_pensionati_diventano_sempre_di_piu-9848072.html"
-    },
-    {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/24/pensioni-e-occupati-nel-sannio-il-divario-e-di-quasi-28mila-unita/"
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Il Mattino aggiunge un dato positivo: nel 2025 nel Sannio hanno lavorato 1.215 persone in più rispetto al 2024, mentre le pensioni sono in lieve calo. Anche così, scrive il giornale, nella provincia per ogni persona che lavora si paga più di una pensione, mentre in Italia il rapporto è di circa una a una.",
-      "fonti": [
-       "Il Mattino"
-      ],
-      "giorno": "2026-10-26"
-     },
-     {
-      "testo": "Nel 2025 in provincia di Benevento le pensioni sono più degli occupati: 114.554 pensioni contro 86.707 persone che lavorano, cioè 27.847 pensioni in più. Lo dice l'Ufficio studi della CGIA di Mestre, l'associazione degli artigiani, su dati Inps e Istat.",
-      "fonti": [
-       "NTR24"
-      ],
-      "giorno": "2026-10-24"
-     },
-     {
-      "testo": "Il Sannio ha il secondo divario più contenuto della Campania, dopo Caserta (3.942). Gli altri: Napoli 52.425, Salerno 9.848, Avellino 8.750. In tutta la Campania nel 2025 le pensioni sono 1.869.492 e gli occupati 1.766.680, con 102.812 pensioni in più. In Italia invece gli occupati sono 24.117.235 e le pensioni 23.181.898, quindi gli occupati sono 935.337 in più.",
-      "fonti": [
-       "NTR24"
-      ],
-      "giorno": "2026-10-24"
-     },
-     {
-      "testo": "In Campania ci sono circa 106 pensioni ogni 100 occupati, in Italia circa 96. Secondo la CGIA dietro questo squilibrio ci sono meno nascite, popolazione che invecchia, pochi occupati e lavoro irregolare. Tra il 2025 e il 2029, secondo le previsioni citate, circa tre milioni di italiani lasceranno il lavoro. La CGIA indica come strada l'aumento di giovani e donne che lavorano.",
-      "fonti": [
-       "NTR24"
-      ],
-      "giorno": "2026-10-24"
-     }
-    ],
-    "cronologia": [],
-    "concordano": [
-     {
-      "testo": "Nel Sannio le pensioni sono più delle persone che lavorano, mentre in Italia sono circa alla pari",
-      "fonti": [
-       "NTR24",
-       "Il Mattino"
-      ]
-     }
-    ],
-    "divergono": [
-     {
-      "testo": "Il Mattino scrive che nel Sannio si pagano «quasi una e mezza» pensioni per ogni lavoratore; con i numeri della CGIA riportati da NTR24 (114.554 pensioni e 86.707 occupati) il rapporto è di circa 1,3.",
-      "fonti": [
-       "Il Mattino",
-       "NTR24"
-      ]
-     }
-    ],
-    "non_si_sa": [],
-    "fonti": [
-     {
-      "nome": "NTR24",
-      "titolo": "Pensioni e occupati, nel Sannio il divario è di quasi 28mila unità",
-      "url": "https://www.ntr24.tv/2026/10/24/pensioni-e-occupati-nel-sannio-il-divario-e-di-quasi-28mila-unita/",
-      "data": "24 ott, 14:15"
-     },
-     {
-      "nome": "Il Mattino",
-      "titolo": "Benevento, aumentano gli occupati in tutto il Sannio ma i pensionati diventano sempre di più",
-      "url": "https://www.ilmattino.it/schede/benevento_aumentano_gli_occupati_in_tutto_il_sannio_ma_i_pensionati_diventano_sempre_di_piu-9848072.html",
-      "data": "26 ott, 00:13"
-     }
-    ],
-    "aggiornamento": {
-     "testo": "Secondo Il Mattino nel 2025 nel Sannio hanno lavorato 1.215 persone in più del 2024, mentre le pensioni sono in lieve calo.",
-     "fonti": [
-      "Il Mattino"
-     ],
-     "quando": "2026-10-26T06:11+01:00"
-    }
-   },
-   "immagine": "anziani",
-   "foto": "anziani-5",
-   "importanza": 3
   }
  ],
  "approfondimenti": [
