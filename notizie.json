@@ -3,6 +3,76 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "miwa-basket-benevento-rende-31-ottobre",
+   "titolo": "Basket B Interregionale, la Miwa Benevento sabato 31 ottobre al PalaMiwa contro Rende: ingresso gratis",
+   "titolo_google": "Basket, Miwa Benevento-Rende 31 ottobre: ingresso gratis",
+   "sintesi": "Sabato 31 ottobre alle 18 la Miwa Basket Benevento ospita al PalaMiwa la Bim Bum Basket Rende, ultima in classifica, nella sesta giornata di Serie B Interregionale. I sanniti, quinti a due punti dalla vetta, cercano la terza vittoria di fila; l'ingresso è gratuito.",
+   "categoria": "sport",
+   "sport": "basket",
+   "zona": "benevento",
+   "luogo": "Benevento, PalaMiwa",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 2,
+   "comunicati": [
+    "103e45f0db17"
+   ],
+   "foto_inviate": [
+    "img/locandine/miwa-basket-benevento-rende-31-ottobre-foto.jpg"
+   ],
+   "foto_da": "Miwa Basket Benevento",
+   "fonti": [
+    {
+     "nome": "Miwa Basket Benevento",
+     "url": "https://www.cestisticabenevento.it/",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "La Miwa Basket Benevento gioca in casa sabato 31 ottobre alle 18, al PalaMiwa, contro la Bim Bum Basket Rende. È la sesta giornata del campionato di Serie B Interregionale. Anche per questa partita l'ingresso al palazzetto è gratuito.",
+      "fonti": [
+       "Miwa Basket Benevento"
+      ]
+     },
+     {
+      "testo": "I Boars, come è soprannominata la squadra di coach Parrillo, arrivano da due vittorie di fila, l'ultima a Ragusa, e sono quinti in classifica a due punti dalla vetta. Contro Rende cercano la terza vittoria consecutiva.",
+      "fonti": [
+       "Miwa Basket Benevento"
+      ]
+     },
+     {
+      "testo": "Rende, allenata da coach Ambrico, è ultima da sola in classifica, ancora a zero punti. La società beneventana avverte però che la squadra calabrese ha giocatori di valore: le guardie Scarpone e Guido, che segna 15,2 punti di media, e il pivot Yeyap, uno dei migliori rimbalzisti del campionato con più di tredici rimbalzi a partita. Il quintetto si completa con le ali Osagie e Mazzoleni, tutti e due nati nel 2006.",
+      "fonti": [
+       "Miwa Basket Benevento"
+      ]
+     },
+     {
+      "testo": "Per la Miwa è una partita insidiosa contro una squadra imprevedibile, in cui la squadra di coach Parrillo dovrà mostrare maturità e determinazione. Dopo la vittoria di Ragusa nello spogliatoio c'è entusiasmo, ma la società sa che per restare nelle prime posizioni bisogna continuare a lavorare duramente. Fondamentale, per la Miwa, sarà il pubblico del PalaMiwa, che potrà dare energia alla squadra durante la gara.",
+      "fonti": [
+       "Miwa Basket Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Miwa Basket Benevento",
+      "titolo": "Pre partita Miwa-Rende",
+      "url": "https://www.cestisticabenevento.it/",
+      "data": "29 ott, 10:05",
+      "ufficiale": true
+     }
+    ]
+   },
+   "subito": true,
+   "pubblicato": "2026-10-29T10:11:54+01:00"
+  },
+  {
    "id": "amorosi-lampade-votive-canone-2022-14-euro",
    "titolo": "Amorosi, lampade votive del cimitero: il Comune chiede il canone del 2022, 14 euro per ogni lampada",
    "titolo_google": "Lampade votive Amorosi, canone 2022 da 14 euro: come pagare",
