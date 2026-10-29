@@ -69,6 +69,12 @@ LUOGHI = r"(?:scuol|plessi|istitut\w*\s+(?:scolastic|comprensiv)|edifici\w*\s+sc
 CHIUSURA = re.compile(
     r"chius\w*\s+(?:temporane\w+\s+)?(?:(?:di|del|dei|degli|della|delle|il|lo|la|le|i|gli|tutt[ei])\s+){0,3}" + LUOGHI
     + r"|" + LUOGHI + r"\w*\s+(?:\w+\s+){0,3}?chius"
+    # «tre giorni di chiusura a novembre per l'asilo nido…», «il nido d'infanzia …, ubicato in via Firenze a Benevento,
+    # resterà chiuso» (28 ott 2026, Comune di Benevento: le due forme di prima non le vedevano e il giro dei comunicati
+    # l'aveva lasciata al giro Chiusure, che non l'ha mai avuta). Provate sui 386 avvisi dell'archivio: solo quelle 4 in più
+    + r"|chius\w*\s+(?:[\w'’]+\s+){0,4}?(?:per|del|della|dell['’]|dei|degli|delle|di)\s*(?:l['’]|il\s+|lo\s+|la\s+|i\s+|gli\s+|le\s+)?"
+    + LUOGHI
+    + r"|" + LUOGHI + r"[^.;!?\n]{0,120}?\b(?:rester[àa]|rimarr[àa]|resteranno|rimarranno)\s+chius"
     + r"|sospension\w*\s+(?:(?:delle|della|dell')\s*)?(?:attivit[àa]\s+)?(?:didattic|scolastic|lezion)"
     + r"|attivit[àa]\s+didattic\w+\s+sospes|lezioni\s+sospes|didattica\s+a\s+distanza|niente\s+scuola\b", re.I)
 
