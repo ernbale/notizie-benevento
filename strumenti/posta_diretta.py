@@ -10,7 +10,7 @@ Il cron lo lancia ogni minuto con flock -n: se gira già non succede niente, se 
 casella un filo: entra in sola lettura (EXAMINE: non segna niente come letto) e aspetta in IDLE. Quando il server dice
 che ci sono più mail di prima («* N EXISTS»), dopo ASPETTA secondi (una PEC arriva insieme alle sue ricevute) fa girare
 fonti_casa.py --solo comunicati e comunicati_lampo.py, gli stessi del cron e con gli stessi lucchetti. Ogni RINNOVA
-minuti chiude e riapre l'IDLE (i server lo chiudono dopo 30); se la connessione cade riprova dopo 30 s, 1, 2, 5
+secondi chiude e riapre l'IDLE (Aruba le mail nuove le dice solo lì); se la connessione cade riprova dopo 30 s, 1, 2, 5
 minuti (nel registro, posta_diretta.log, i primi 5 errori di fila e poi uno ogni ora). Le password restano in
 posta.conf e pec.conf (600), lette da qui e mai stampate.
 
@@ -37,7 +37,10 @@ CARTELLA = os.environ.get("NB_FONTI_CARTELLA") or os.path.expanduser("~/nb-fonti
 CASELLE = [("comunicati@", os.path.join(CARTELLA, "posta.conf"), "imaps.aruba.it"),
            ("PEC", os.path.join(CARTELLA, "pec.conf"), "imaps.pec.aruba.it")]
 ASPETTA = 15        # secondi dopo l'ultima mail nuova prima di leggere la casella
-RINNOVA = 10 * 60   # secondi di IDLE prima di rinnovarlo (così una connessione morta in silenzio si scopre presto)
+# secondi di IDLE prima di rinnovarlo. Era 10 minuti, ma Aruba durante l'IDLE non avvisa: il numero delle mail lo dice
+# solo quando l'IDLE si chiude (DONE) o col NOOP, e sul Pi le mail nuove si vedevano sempre ai rinnovi (… 19:39, 19:49).
+# Dal 29 ott 2026 ogni 30 secondi (lui: «ok fai il controllo ogni 30 secondi»): una mail si vede entro mezzo minuto
+RINNOVA = 30
 ATTESE = (30, 60, 120, 300)   # secondi prima di ricollegarsi dopo un errore (poi sempre l'ultimo)
 LETTURA = ["/usr/bin/flock", "-w", "240", "/tmp/nb_comunicati.lock", "/bin/sh", "-c",
            f"/usr/bin/flock -w 240 /tmp/nb_fonti.lock /usr/bin/timeout 120 /usr/bin/python3 {CARTELLA}/fonti_casa.py "
@@ -219,7 +222,12 @@ def segui(nome, conf_p, server, postino, fino=None):
             while fino is None or time.monotonic() < fino:
                 durata = RINNOVA if fino is None else max(1, min(RINNOVA, fino - time.monotonic()))
                 quante = imap.aspetta(quante, durata, lambda: postino.suona(nome))
-                imap.comando("NOOP")
+                for r in imap.comando("NOOP"):   # anche il NOOP può dire che ce n'è una nuova
+                    m = re.match(r"\* (\d+) EXISTS", r, re.I)
+                    if m:
+                        if int(m[1]) > quante:
+                            postino.suona(nome)
+                        quante = int(m[1])
         except FileNotFoundError:
             scrivi(f"{nome}: {os.path.basename(conf_p)} non c'è, casella non seguita")
             return
