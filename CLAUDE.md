@@ -97,6 +97,13 @@ sempre sono una cosa utile»), cliccabile (tel:), preso da una fonte ufficiale: 
   nome («Dott. Lombardi Giuseppe» → «Lombardi»). Se non c'è altro: «Farmacia di <paese>».
 - Prossime, una per volta e pianificate prima con lui: guardia medica (ASL), mercati, raccolta differenziata, ZTL,
   numeri utili. Niente riquadri «in arrivo».
+- **La mappa delle strade chiuse** (punto 3, «dati che gli altri citano»; lui, 29 ott 2026: «si vai»): in cima a
+  /strade-chiuse/ un tondo per paese al centro del Comune (comuni_coordinate.json), rosso se qualcosa vale oggi,
+  arancione se solo nei prossimi giorni, col numero quando le voci sono più di una; toccandolo, le voci con il link
+  alla notizia. I paesi vicini a mappa intera diventano un tondo solo e si separano ingrandendo. I dati li scrive
+  segnaposti_strade in pagine.py (NB_PAGINA.strade); le voci senza un Comune nel «luogo» restano solo nell'elenco.
+  Leaflet 1.9.4 sta sul sito (lib/leaflet-1.9.4, preso da cdnjs e controllato con unpkg), le mattonelle sono di OpenStreetMap (senza cookie, con
+  la loro attribuzione); si carica solo in quella pagina. Al telefono un dito fa scorrere la pagina, due muovono la mappa.
 
 ## Le pagine dei Comuni (dal 29 ott 2026)
 Lui: «nelle pagine dei comuni lo metterei in una colonna di destra simile alla nostra home… meteo e farmacia sempre nella

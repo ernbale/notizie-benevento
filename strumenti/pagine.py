@@ -838,11 +838,32 @@ def _voci_strade(voci, oggi):
     return h + "</ul>"
 
 
-def html_strade_chiuse(ora, poi, oggi, aggiornato):
+def segnaposti_strade(ora, poi, oggi):
+    """I paesi sulla mappa in cima a «Strade chiuse» (punto 3 del piano, «dati che gli altri citano», 29 ott 2026): uno
+    per Comune, al centro del paese (strumenti/comuni_coordinate.json), con le sue voci; rosso se qualcosa vale oggi,
+    arancione se solo nei prossimi giorni. Le voci senza un Comune nel «luogo» (una statale) restano solo nell'elenco."""
+    with open(os.path.join(QUI, "comuni_coordinate.json"), encoding="utf-8") as f:
+        coord = json.load(f)
+    per = {}
+    for n in ora + poi:
+        for c in comuni_di(n.get("luogo")):
+            p = per.setdefault(c, {"c": c, "lat": coord[slug(c)]["lat"], "lon": coord[slug(c)]["lon"],
+                                   "u": url_comune(c), "oggi": False, "voci": []})
+            p["oggi"] = p["oggi"] or n in ora
+            p["voci"].append({"k": TRAFFICO[n["traffico"]], "t": n["titolo"], "u": percorso("notizia", n["id"]),
+                              "q": _quando_strada(n, oggi)})
+    return sorted(per.values(), key=lambda p: (-len(p["voci"]), p["c"]))
+
+
+def html_strade_chiuse(ora, poi, oggi, aggiornato, segnaposti=()):
     h = _testata_pagina("Strade", "", "Strade chiuse a Benevento e nel Sannio", [("Servizi", "/servizi/"), ("Strade chiuse", None)])
     h += ('<p class="sommario">Le strade chiuse, i sensi unici, i lavori che restringono la strada, i blocchi e i bus '
           "deviati a Benevento e in provincia, oggi e nei prossimi giorni. Ogni voce porta alla notizia con le fonti: "
           "ordinanze dei Comuni, comunicati dell'ANAS e della Provincia, giornali locali.</p>")
+    if segnaposti:   # la disegna index.html (NB_PAGINA.strade); senza JavaScript resta l'elenco qui sotto
+        h += ('<figure class="mappa-strade"><div id="mappa-strade" role="region" aria-label="Mappa delle strade chiuse '
+              'nel Sannio"></div><figcaption><span class="pin-leg oggi"></span>Oggi <span class="pin-leg poi"></span>'
+              "Nei prossimi giorni · tocca un paese per vedere le strade</figcaption></figure>")
     t = quando_dt(aggiornato)
     if t:
         from facebook import fuso
@@ -2867,9 +2888,10 @@ def main():
                      jsonld={"@context": "https://schema.org", "@type": "WebPage", "name": "Strade chiuse nel Sannio",
                              "url": url, "isPartOf": {"@type": "WebSite", "name": NOME, "url": SITO + "/"}})
     ora, poi = strade_chiuse(notizie, oggi)
+    pin = segnaposti_strade(ora, poi, oggi)
     scrivi(os.path.join(sito, "strade-chiuse", "index.html"),
-           pagina(modello, seo, {"statica": True}, html_strade_chiuse(ora, poi, oggi, prima.get("aggiornato")),
-                  articolo=True))
+           pagina(modello, seo, {"statica": True, "strade": pin},
+                  html_strade_chiuse(ora, poi, oggi, prima.get("aggiornato"), pin), articolo=True))
     mappa.append((url, prima.get("aggiornato")))
 
     # i contributi (strumenti/contributi.py): la pagina (anche vuota) e una per contributo

@@ -579,6 +579,33 @@
   /* pagina «Strade chiuse» (strade-chiuse/, strumenti/pagine.py): il tipo di disagio sopra il titolo, come l'occhiello */
   .appro .notizie-comune .occhiello { margin: 0 0 3px; }
   .appro .notizie-comune .dove a { font: inherit; color: inherit; text-decoration: underline; }
+  /* la mappa in cima a «Strade chiuse» (29 ott 2026): un tondo per paese, rosso oggi, arancione nei prossimi giorni */
+  .appro .mappa-strade { margin: 18px 0 26px; }
+  .appro #mappa-strade { position: relative; z-index: 0; height: 400px; border: 1px solid var(--riga); background: var(--carta-scura); }
+  .appro #mappa-strade .leaflet-tile-pane { filter: saturate(.5); }
+  .appro .mappa-strade figcaption { font: 600 12.5px/1.5 var(--sans); color: var(--grigio); margin-top: 7px; }
+  .pin-leg { display: inline-block; width: 11px; height: 11px; border-radius: 50%; margin: 0 5px 0 0; vertical-align: -1px; }
+  .pin-leg.poi { margin-left: 10px; }
+  .pin-leg.oggi, .pin-strada.oggi { background: var(--rosso); }
+  .pin-leg.poi, .pin-strada.poi { background: #ef7f1a; }
+  .pin-strada { box-sizing: border-box; border: 2px solid #fff; border-radius: 50%; box-shadow: 0 1px 4px rgba(0, 0, 0, .45);
+    color: #fff; font: 700 13px/22px var(--sans); text-align: center; }
+  .pin-strada.tanti { font-size: 14px; line-height: 26px; }
+  .appro .pop-strade { font: 400 14px/1.4 var(--sans); color: var(--nero); }
+  .appro .pop-strade .pop-paese { display: block; font: 700 18px/1.25 var(--serif); color: var(--nero); text-decoration: none; margin: 0 0 8px; }
+  .appro .pop-strade .pop-paese:hover, .appro .pop-strade .pop-voce a:hover { text-decoration: underline; }
+  .appro .pop-strade .pop-voce { margin: 0 0 10px; }
+  .appro .pop-strade .pop-voce:last-child { margin-bottom: 0; }
+  .appro .pop-strade .occhiello { margin: 0 0 2px; font-size: 11px; }
+  .appro .pop-strade .pop-voce a { display: block; font: 700 15px/1.3 var(--serif); color: var(--nero); text-decoration: none; }
+  .appro .pop-strade .pop-quando { display: block; font: 600 12px var(--sans); color: var(--grigio); margin-top: 2px; }
+  .appro #mappa-strade .leaflet-popup-content { margin: 14px 18px 14px 14px; max-height: 260px; overflow-y: auto;
+    /* l'ombra in fondo dice che c'è altro da scorrere (sparisce arrivati in fondo) */
+    background: linear-gradient(rgba(255, 255, 255, 0), #fff 70%) bottom / 100% 34px no-repeat local,
+      radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, .22), transparent) bottom / 100% 12px no-repeat scroll; }
+  .appro #mappa-strade .leaflet-popup-content-wrapper { border-radius: 4px; }
+  .appro #mappa-strade .leaflet-control-attribution { font: 400 10.5px var(--sans); }
+  @media (max-width: 640px) { .appro #mappa-strade { height: 330px; } }
   .link-tutte { display: block; margin: 10px 0 0; font: 600 13px var(--sans); color: var(--blu); }
   .appro .elenco-comuni { list-style: none; padding: 0; columns: 2; column-gap: 24px; }
   @media (min-width: 640px) { .appro .elenco-comuni { columns: 3; } }
@@ -3926,6 +3953,73 @@
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(mostraChiusure)
     .catch(function () { /* senza il file delle chiusure il sito funziona lo stesso */ });
+
+  // La mappa in cima a «Strade chiuse» (punto 3 del piano, 29 ott 2026): i paesi con le loro voci li scrive pagine.py
+  // (segnaposti_strade → NB_PAGINA.strade). Leaflet sta sul sito (lib/leaflet-1.9.4, preso da cdnjs e controllato con
+  // unpkg), le mattonelle sono di OpenStreetMap (senza cookie). Si carica solo in questa pagina; se non arriva resta
+  // l'elenco. Al telefono un dito fa scorrere la pagina e due dita muovono la mappa, così non ci si resta incastrati.
+  var boxMappa = document.getElementById("mappa-strade");
+  if (boxMappa && FISSA && FISSA.strade && FISSA.strade.length) (function () {
+    var css = document.createElement("link");
+    css.rel = "stylesheet";
+    css.href = "/lib/leaflet-1.9.4/leaflet.css";
+    document.head.appendChild(css);
+    var js = document.createElement("script");
+    js.src = "/lib/leaflet-1.9.4/leaflet.js";
+    js.onload = function () {
+      var m = L.map(boxMappa, { scrollWheelZoom: false, dragging: !L.Browser.mobile, zoomSnap: 0.5 });
+      m.attributionControl.setPrefix('<a href="https://leafletjs.com">Leaflet</a>');
+      L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 18, attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      }).addTo(m);
+      // i paesi vicini (San Giorgio del Sannio, San Nazzaro, San Nicola Manfredi) a mappa intera si coprirebbero:
+      // finché sono a meno di 26 punti diventano un tondo solo con tutte le voci, ingrandendo si separano
+      var strato = L.layerGroup().addTo(m), gruppiPrima = "";
+      function segnaposto(g) {
+        var n = 0, oggi = false, pop = el("div", "pop-strade", []), dove = [g[0].lat, g[0].lon];
+        g = g.filter(function (p) { return p.oggi; }).concat(g.filter(function (p) { return !p.oggi; }));   // prima oggi
+        g.forEach(function (p) {
+          n += p.voci.length;
+          oggi = oggi || p.oggi;
+          var testa = el("a", "pop-paese", [p.c + " ›"]);
+          testa.href = p.u;
+          pop.appendChild(testa);
+          p.voci.forEach(function (v) {
+            var a = el("a", "", [v.t]);
+            a.href = v.u;
+            pop.appendChild(el("div", "pop-voce", [el("div", "occhiello", [v.k]), a, el("span", "pop-quando", [v.q])]));
+          });
+        });
+        var nomi = g.map(function (p) { return p.c; }), lato = n > 1 ? 30 : 22;
+        L.marker(dove, {
+          title: (nomi.length > 1 ? nomi.slice(0, -1).join(", ") + " e " + nomi[nomi.length - 1] : nomi[0]) +
+            (n > 1 ? ": " + n + " strade" : ""),
+          riseOnHover: true, zIndexOffset: oggi ? 1000 : 0,
+          icon: L.divIcon({ className: "pin-strada " + (oggi ? "oggi" : "poi") + (n > 1 ? " tanti" : ""),
+                            html: n > 1 ? String(n) : "", iconSize: [lato, lato] })
+        }).bindPopup(pop, { maxWidth: 300, minWidth: 220, autoPanPadding: [20, 20] }).addTo(strato);
+      }
+      function disegnaPin() {
+        var gruppi = [];
+        FISSA.strade.forEach(function (p) {   // già in ordine: prima i paesi con più voci
+          var q = m.latLngToLayerPoint([p.lat, p.lon]);
+          var g = gruppi.filter(function (g) { return g.q.distanceTo(q) < 26; })[0];
+          if (g) g.paesi.push(p); else gruppi.push({ q: q, paesi: [p] });
+        });
+        var chiave = gruppi.map(function (g) { return g.paesi.map(function (p) { return p.c; }).join("+"); }).join("|");
+        if (chiave === gruppiPrima) return;
+        gruppiPrima = chiave;
+        strato.clearLayers();
+        gruppi.forEach(function (g) { segnaposto(g.paesi); });
+      }
+      var punti = FISSA.strade.map(function (p) { return [p.lat, p.lon]; });
+      if (punti.length > 1) m.fitBounds(punti, { padding: [36, 36], maxZoom: 11 });
+      else m.setView(punti[0], 11);
+      disegnaPin();
+      m.on("zoomend", disegnaPin);
+    };
+    document.head.appendChild(js);
+  })();
 
   // Il punto della pagina al ricarico (lui, 28 ott 2026: «quando ricarico la pagina mentre sto a meta pagina si
   // ricarica mettendosi tutto a fondo pagina»). Al ricarico le notizie si disegnano solo quando arriva notizie.json:
