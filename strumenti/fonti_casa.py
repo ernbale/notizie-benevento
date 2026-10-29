@@ -1399,7 +1399,7 @@ def main():
     ap.add_argument("--imposta-posta", action="store_true", help="collega la casella dei comunicati (chiede la password)")
     ap.add_argument("--imposta-pec", action="store_true", help="collega la PEC del sito (chiede la password)")
     ap.add_argument("--solo", nargs="+", choices=list(FONTI), help="legge solo queste fonti e pubblica solo se c'è "
-                    "qualcosa di nuovo (dal cron ogni 5 minuti per la posta)")
+                    "qualcosa di nuovo o una decisione nuova del proprietario (dal cron ogni 5 minuti per la posta)")
     a = ap.parse_args()
     if a.imposta_posta or a.imposta_pec:
         return imposta_posta(pec=a.imposta_pec)
@@ -1407,15 +1407,21 @@ def main():
     PROVA = a.prova
     adesso = dt.datetime.now(fuso())
     os.makedirs(ARCHIVIO, exist_ok=True)
-    esiti, nuove = [], 0
+    esiti, nuove, decise = [], 0, 0
     for nome in a.solo or FONTI:
         try:
             with open(os.path.join(ARCHIVIO, f"{nome}.json"), encoding="utf-8") as f:
-                prima = {v["link"] for v in json.load(f).get("voci", [])}
+                vecchie = json.load(f).get("voci", [])
         except (OSError, ValueError):
-            prima = set()
+            vecchie = []
+        prima = {v["link"] for v in vecchie}
+        # una decisione nuova del proprietario nella scheda Posta («valutato») va su GitHub subito come una mail nuova:
+        # il giro lampo che parte dopo la decisione legge il file da lì. Il 29 ott 2026 il comunicato del Benevento 5
+        # approvato alle 19:32 è uscito alle 20:06: il file con la decisione è partito solo col giro completo delle 20:01
+        decisioni = {v.get("id"): v.get("valutato") for v in vecchie}
         dati = leggi(nome, adesso)
         nuove += sum(v["link"] not in prima for v in dati["voci"])
+        decise += sum(v["link"] in prima and v.get("valutato") != decisioni.get(v.get("id")) for v in dati["voci"])
         esiti.append(f"{nome} {dati['esito']} ({len(dati['voci'])} tenute)")
         if a.prova:
             for v in dati["voci"][:3]:
@@ -1423,11 +1429,12 @@ def main():
             continue
         with open(os.path.join(ARCHIVIO, f"{nome}.json"), "w", encoding="utf-8") as f:
             json.dump(dati, f, ensure_ascii=False, indent=1)
-    if a.solo:   # ogni 5 minuti: si pubblica e si scrive nel registro solo se è arrivato qualcosa o la fonte non va
-        if nuove and not a.prova:
+    if a.solo:   # ogni 5 minuti: si pubblica e si scrive nel registro solo se è arrivato o è stato deciso qualcosa, o la
+        if (nuove or decise) and not a.prova:   # fonte non va
             pubblica(adesso)
-        if nuove or any("non raggiungibile" in x for x in esiti):
-            print(f"{adesso:%Y-%m-%d %H:%M} solo " + " · ".join(esiti) + (f" · {nuove} nuove" + ("" if a.prova else ", pubblicate") if nuove else ""))
+        fatte = [f"{nuove} nuove"] * bool(nuove) + [f"{decise} decise dal proprietario"] * bool(decise)
+        if fatte or any("non raggiungibile" in x for x in esiti):
+            print(f"{adesso:%Y-%m-%d %H:%M} solo " + " · ".join(esiti) + (" · " + ", ".join(fatte) + ("" if a.prova else ", pubblicate") if fatte else ""))
         return
     if not a.prova:
         with open(os.path.join(ARCHIVIO, "LEGGIMI.md"), "w", encoding="utf-8") as f:
