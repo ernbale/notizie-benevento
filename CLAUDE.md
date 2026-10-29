@@ -172,7 +172,9 @@ nuova la segue; se una pagina non la segue, è da sistemare.
    29 ott 2026: «← Tutte le notizie» «da rivedere… ripensalo e dagli anche un aspetto più adatto al sito», «sì fallo in
    tutte le pagine»), con lo stesso percorso nei dati per Google (BreadcrumbList); il bottone «‹ Indietro» solo per chi
    arriva da un'altra pagina del sito, che lo riporta allo stesso punto; poi occhiello rosso e titolo grande (.appro), e
-   sotto il titolo **Ascolta e Condividi** (lui, 28 ott 2026:
+   sotto il titolo **Ascolta e Condividi**. La scritta «Di Notizie Benevento. Questo articolo è scritto con l'intelligenza
+   artificiale…» sta in fondo all'articolo, subito sopra le fonti (lui, 29 ott 2026: «vorrei evitare sfiducia al
+   primo» → «ok fai la 2»): non si toglie, dal 2 agosto 2026 l'AI Act (art. 50) chiede di dirlo nella pagina (lui, 28 ott 2026:
    «deve comparire in tutte le pagine… e anche le future»). Li mette da solo azioniPagina() in index.html in ogni
    pagina che sia un <article> col suo <h1> dentro #contenuto: una pagina nuova fatta così li ha senza fare niente.
 

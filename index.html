@@ -299,6 +299,8 @@
   .appro .meta { font-size: 14px; color: var(--grigio); padding-bottom: 14px; border-bottom: 1px solid var(--nero); }
   .appro .meta .firma { display: block; font-size: 13px; margin-top: 3px; }
   .appro .meta .firma a { color: inherit; }
+  .appro .firma-ia { margin: 22px 0 -4px; font: 400 14px/1.45 var(--sans); color: var(--grigio); }
+  .appro .firma-ia a { color: inherit; }
   .appro h3 { font: 700 13px var(--sans); text-transform: uppercase; letter-spacing: 1px; border-top: 3px solid var(--nero); padding-top: 6px; margin: 28px 0 10px; }
   .appro p, .appro li { font: 400 19px/1.6 var(--serif); }
   .appro ul { padding-left: 20px; margin: 0; }
@@ -2146,11 +2148,7 @@
     var fonti = Array.isArray(a.fonti) ? a.fonti : [];
     var art = el("article", "appro", []);
     testataPagina(art, n.categoria === "sport" ? sportDi(n) : NOMI_CAT[n.categoria] || "Altro", n.luogo, n.titolo, passiNotizia(n));
-    var come = el("a", "", ["Come lavoriamo"]);
-    come.href = "/chi-siamo/";
-    // la firma: chi scrive e come (come FIRMA in pagine.py; Google News lo chiede, 28 ott 2026)
-    art.appendChild(el("div", "meta", [(dallArchivio ? "Dall'archivio · " : "") + (n.pubblicato ? quando(n.pubblicato) + " · " : "") + contaFonti(n, fonti),
-      el("span", "firma", ["Di Notizie Benevento, con l'intelligenza artificiale dalle fonti citate · ", come])]));
+    art.appendChild(el("div", "meta", [(dallArchivio ? "Dall'archivio · " : "") + (n.pubblicato ? quando(n.pubblicato) + " · " : "") + contaFonti(n, fonti)]));
     if (n.stato === "una_fonte") art.appendChild(el("div", "nota", ["Per ora questo fatto lo riporta solo " + ((n.fonti || [])[0] || {}).nome + ". Lo aggiorniamo se arrivano altre fonti."]));
     var agg = riquadroAggiornamento(a.aggiornamento, fonti);
     if (agg) art.appendChild(agg);
@@ -2188,6 +2186,12 @@
       art.appendChild(p);
     }
     art.appendChild(riquadroSegui("Le notizie di Benevento e del Sannio appena escono, sul telefono.", true));
+    // chi scrive e come, in fondo sopra le fonti (come FIRMA in pagine.py: lui, 29 ott 2026; l'AI Act lo chiede)
+    if (fonti.length) {
+      var come = el("a", "", ["Come lavoriamo"]);
+      come.href = "/chi-siamo/";
+      art.appendChild(el("p", "firma-ia", ["Di Notizie Benevento. Questo articolo è scritto con l'intelligenza artificiale a partire dagli articoli qui sotto, che puoi leggere tutti · ", come]));
+    }
     elencoFonti(art, fonti);
     box.appendChild(art);
   }

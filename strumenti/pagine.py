@@ -2205,8 +2205,12 @@ def _aggiornamento(ag, fonti):
     return f'<div class="aggiornamento"><div class="quando">Aggiornamento{e(q)}</div>{_frase("p", ag, fonti)}</div>'
 
 
-# la firma di ogni articolo (come in disegnaArticolo di index.html): chi scrive e come, per chi legge e per Google News
-FIRMA = "Di Notizie Benevento, con l'intelligenza artificiale dalle fonti citate"
+# chi scrive e come (come in disegnaArticolo di index.html): in fondo all'articolo, subito sopra le fonti (lui, 29 ott
+# 2026: «questa parte in cima alla pagina… possiamo non farla apparire… vorrei evitare sfiducia al primo» → «ok fai la
+# 2»). Non si toglie: dal 2 agosto 2026 l'AI Act (art. 50) vuole che un testo scritto dall'intelligenza artificiale su
+# fatti di interesse pubblico lo dica, nella pagina stessa, se nessuno lo rilegge prima che esca.
+FIRMA = ("Di Notizie Benevento. Questo articolo è scritto con l'intelligenza artificiale a partire dagli articoli qui "
+         "sotto, che puoi leggere tutti")
 
 
 def html_articolo(n, appro_collegato):
@@ -2215,8 +2219,7 @@ def html_articolo(n, appro_collegato):
     fonti = a.get("fonti") if isinstance(a.get("fonti"), list) else []
     h = _testata_pagina(_categoria(n), n.get("luogo"), n["titolo"], passi_notizia(n))
     meta = ("Dall'archivio · " if n["_arch"] else "") + (data_it(n.get("pubblicato")) + " · " if n.get("pubblicato") else "")
-    h += (f'<div class="meta">{e(meta)}{e(conta_fonti(n, fonti))}<span class="firma">{FIRMA} · '
-          '<a href="/chi-siamo/">Come lavoriamo</a></span></div>')
+    h += f'<div class="meta">{e(meta)}{e(conta_fonti(n, fonti))}</div>'
     if n.get("stato") == "una_fonte" and n.get("fonti"):
         h += (f'<div class="nota">Per ora questo fatto lo riporta solo {e(n["fonti"][0].get("nome", ""))}. '
               'Lo aggiorniamo se arrivano altre fonti.</div>')
@@ -2242,6 +2245,8 @@ def html_articolo(n, appro_collegato):
         h += (f'<h3>Approfondimento</h3><p class="collegate"><a href="{percorso("approfondimento", appro_collegato["id"])}">'
               f'{e(appro_collegato["titolo"])} ›</a></p>')
     h += SEGUI
+    if fonti:
+        h += f'<p class="firma-ia">{e(FIRMA)} · <a href="/chi-siamo/">Come lavoriamo</a></p>'
     h += _fonti(fonti)
     return f'<article class="appro">{h}</article>'
 
