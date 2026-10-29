@@ -3,61 +3,6 @@
  "giornali_letti": 14,
  "notizie": [
   {
-   "id": "benevento-palazzo-del-reduce-via-traiano-sede-associazioni-inaugurazione",
-   "titolo": "Benevento, Palazzo del Reduce in via Traiano diventa sede di associazioni: inaugurazione venerdì 30 ottobre",
-   "titolo_google": "Palazzo del Reduce a Benevento: inaugurazione il 30 ottobre",
-   "sintesi": "Venerdì 30 ottobre alle 12 il Comune di Benevento inaugura i locali di Palazzo del Reduce, in via Traiano, destinati a sede di alcune associazioni cittadine. Ci saranno il sindaco Clemente Mastella e l'assessore al Patrimonio Attilio Cappa.",
-   "categoria": "politica",
-   "luogo": "Benevento, Palazzo del Reduce, via Traiano",
-   "immagine": "municipio",
-   "stato": "ufficiale",
-   "rilevante": false,
-   "importanza": 3,
-   "comunicati": [
-    "33911fda147a"
-   ],
-   "fonti": [
-    {
-     "nome": "Comune di Benevento",
-     "url": "https://www.comune.benevento.it/",
-     "ufficiale": true
-    }
-   ],
-   "articolo": {
-    "racconto": [
-     {
-      "testo": "Venerdì 30 ottobre, alle 12, il Comune di Benevento inaugura i locali di Palazzo del Reduce, in via Traiano. Gli spazi dell'edificio sono stati destinati a sede di alcune associazioni della città.",
-      "fonti": [
-       "Comune di Benevento"
-      ]
-     },
-     {
-      "testo": "Alla cerimonia parteciperanno il sindaco Clemente Mastella e l'assessore al Patrimonio, Attilio Cappa.",
-      "fonti": [
-       "Comune di Benevento"
-      ]
-     }
-    ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
-    "non_si_sa": [],
-    "fonti": [
-     {
-      "nome": "Comune di Benevento",
-      "titolo": "Invito stampa",
-      "url": "https://www.comune.benevento.it/",
-      "data": "29 ott, 18:12",
-      "ufficiale": true
-     }
-    ]
-   },
-   "subito": true,
-   "pubblicato": "2026-10-29T18:16:56+01:00",
-   "foto": "municipio-8",
-   "zona": "benevento"
-  },
-  {
    "id": "casalduni-ex-discarica-largo-croce-regione-74mila-euro-indagini",
    "titolo": "Casalduni, dalla Regione oltre 74mila euro per le indagini sull'ex discarica di Largo Croce: il sito non è inquinato",
    "titolo_google": "Casalduni, ex discarica Largo Croce non inquinata: 74mila euro",
