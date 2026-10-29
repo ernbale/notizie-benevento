@@ -3,6 +3,79 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "san-pio-lettera-paziente-corpo-estraneo-bronchi",
+   "titolo": "Ospedale San Pio di Benevento, una paziente ringrazia Pronto soccorso, Pneumologia e Rianimazione: «mi avete salvato la vita»",
+   "titolo_google": "San Pio Benevento, paziente ringrazia per le cure ricevute",
+   "sintesi": "Una paziente ha scritto alla direttrice generale del San Pio di Benevento, Maria Morgante, per ringraziare i medici che le hanno tolto dai bronchi un corpo estraneo inalato per sbaglio mesi fa, che le aveva causato una polmonite grave.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "luogo": "Benevento",
+   "immagine": "ospedale",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "Ospedale San Pio",
+     "url": "https://www.aosanpio.it/",
+     "ufficiale": true
+    }
+   ],
+   "comunicati": [
+    "f6c94fdd117d"
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Una paziente curata all'ospedale San Pio di Benevento ha scritto una lettera di ringraziamento alla direttrice generale dell'Azienda ospedaliera, Maria Morgante, per le cure ricevute durante il ricovero. I ringraziamenti vanno a tre reparti: Medicina d'urgenza e Pronto soccorso, Pneumologia e Anestesia e rianimazione.",
+      "fonti": [
+       "Ospedale San Pio"
+      ]
+     },
+     {
+      "testo": "Diversi mesi fa la donna aveva inalato per sbaglio un corpo estraneo, che lentamente le aveva provocato una polmonite ostruttiva con insufficienza respiratoria. Nella lettera racconta di essere stata curata a casa per mesi per una tosse con catarro, senza miglioramenti. Poi si è rivolta al reparto di Medicina d'urgenza e Pronto soccorso, diretto da Riccardo Derna, che ha inquadrato subito il suo caso e ha chiesto il ricovero in Pneumologia, il reparto diretto da Aniello Tinto.",
+      "fonti": [
+       "Ospedale San Pio"
+      ]
+     },
+     {
+      "testo": "Poco dopo il ricovero la broncoscopia, l'esame che guarda dentro i bronchi, ha confermato la presenza del corpo estraneo. Rimasto per mesi nelle vie respiratorie, aveva chiuso una parte dei bronchi di destra e isolato un lobo del polmone, dove si era formato anche un ascesso. Vista la gravità del quadro, i medici hanno chiesto l'assistenza del reparto di Anestesia e rianimazione, diretto da Vincenzo Colella: dopo l'intubazione con maschera laringea, il corpo estraneo è stato tolto con pinze apposite.",
+      "fonti": [
+       "Ospedale San Pio"
+      ]
+     },
+     {
+      "testo": "La paziente scrive che la diagnosi tempestiva del dottor Tinto ha permesso di intervenire in tempi brevi. Due broncoscopie sono bastate per liberare il bronco, senza doverla trasferire in un altro ospedale. «Desidero ringraziare Lei e tutti i medici ed il personale sanitario dell'AORN San Pio di Benevento per avermi salvato la vita», si legge nella lettera, firmata con le iniziali M.B.",
+      "fonti": [
+       "Ospedale San Pio"
+      ]
+     },
+     {
+      "testo": "La direttrice generale Maria Morgante ringrazia la paziente per aver raccontato la sua esperienza. «Le sue parole rappresentano per tutti noi un riconoscimento prezioso ed una grande fonte di motivazione», dice, e aggiunge che essere riusciti a trasmetterle professionalità e umanità è per l'ospedale il traguardo più importante.",
+      "fonti": [
+       "Ospedale San Pio"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Ospedale San Pio",
+      "titolo": "AORN SAN PIO, ELOGI ALLA UOC MEDICINA D'URGENZA E PS, ALLA UOC PNEUMOLOGIA, ALLA UOC ANESTESIA E RIANIMAZIONE",
+      "url": "https://www.aosanpio.it/",
+      "data": "29 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "subito": true,
+   "pubblicato": "2026-10-29T17:16:58+01:00",
+   "foto": "ospedale-5"
+  },
+  {
    "id": "cremonese-benevento-kouan-squalificato-maita-ammenda",
    "titolo": "Cremonese-Benevento senza Kouan: squalificato per un turno, ammenda di 1.000 euro al capitano Maita",
    "titolo_google": "Kouan squalificato, salta Cremonese-Benevento del 31 ottobre",
