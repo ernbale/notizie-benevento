@@ -15,7 +15,8 @@
    "rilevante": false,
    "importanza": 2,
    "comunicati": [
-    "u8620cbd131d"
+    "u8620cbd131d",
+    "7c0e96fa4e3a"
    ],
    "fonti": [
     {
@@ -74,7 +75,12 @@
    "subito": true,
    "pubblicato": "2026-10-29T19:32:32+01:00",
    "foto": "calcio-a-5-3",
-   "zona": "benevento"
+   "zona": "benevento",
+   "foto_inviate": [
+    "img/locandine/benevento-5-arriva-il-portiere-riccardo-ditano-foto.jpg",
+    "img/locandine/benevento-5-arriva-il-portiere-riccardo-ditano-foto-2.jpg"
+   ],
+   "foto_da": "GG Team Wear Benevento 5"
   },
   {
    "id": "gal-taburno-annarita-de-blasio-presidente",
