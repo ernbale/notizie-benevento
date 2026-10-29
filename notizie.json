@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-29T09:14+01:00",
+ "aggiornato": "2026-10-29T10:12+01:00",
  "giornali_letti": 14,
  "notizie": [
   {
@@ -71,6 +71,131 @@
    },
    "subito": true,
    "pubblicato": "2026-10-29T10:11:54+01:00"
+  },
+  {
+   "id": "benevento-carcere-366-detenuti-231-posti-affollamento-settembre-2026",
+   "titolo": "Benevento, nel carcere 366 detenuti per 231 posti: affollamento al 158 per cento",
+   "titolo_google": "Carcere di Benevento, 366 detenuti per 231 posti disponibili",
+   "sintesi": "A fine settembre 2026 la casa circondariale di Benevento ospitava 366 detenuti per 231 posti davvero disponibili: 158,4 ogni cento, sopra la media della Campania e dell'Italia. Mancano 27 agenti di Polizia penitenziaria e 28 posti sono inagibili.",
+   "categoria": "altro",
+   "luogo": "Benevento, casa circondariale «Michele Gaglione»",
+   "pubblicato": "2026-10-29T09:49+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 3,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/carcere-di-benevento-366-detenuti-per-231-posti-affollamento-al-1584/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Alla fine di settembre 2026 il carcere di Benevento, la casa circondariale «Michele Gaglione», ospitava 366 detenuti a fronte di 231 posti davvero disponibili: 135 persone in più, con un affollamento del 158,4 per cento. Vuol dire quasi 159 detenuti ogni cento posti. Il dato viene dal rapporto mensile di Ottorighe sulle carceri italiane, fatto con i numeri del Dipartimento dell'amministrazione penitenziaria e del Ministero della Giustizia.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "I posti previsti sarebbero 259, ma 28 sono inagibili, quasi l'11 per cento. Rispetto a un anno prima i detenuti sono un po' meno: a settembre 2025 erano 382. Nel periodo del rapporto sono stati tra 362 e 401. Tra loro ci sono 72 donne e 23 stranieri.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Manca anche personale: gli agenti di Polizia penitenziaria in servizio sono 226 sui 253 previsti, 27 in meno. Gli educatori sono otto, uno ogni 46 detenuti.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Benevento sta sopra la media della Campania, che è al 150 per cento, e a quella nazionale, al 142,8. In regione è il quarto carcere più affollato, dopo Napoli Poggioreale (170,4 per cento), Vallo della Lucania e Salerno.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Se e quando saranno recuperati i 28 posti inagibili.",
+     "Se sono in arrivo nuovi agenti di Polizia penitenziaria."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Carcere di Benevento, 366 detenuti per 231 posti: affollamento al 158,4%",
+      "url": "https://www.anteprima24.it/benevento/carcere-di-benevento-366-detenuti-per-231-posti-affollamento-al-1584/",
+      "data": "29 ott, 09:49"
+     }
+    ]
+   },
+   "zona": "benevento"
+  },
+  {
+   "id": "benevento-52enne-bancarotta-supermercati-assoluzione-definitiva-cassazione",
+   "titolo": "Benevento, bancarotta di una società di supermercati: la Cassazione rende definitiva l'assoluzione di un 52enne",
+   "titolo_google": "Bancarotta supermercati, assoluzione definitiva per un 52enne",
+   "sintesi": "La Cassazione ha respinto il ricorso della Procura generale: è definitiva l'assoluzione di L. G., 52 anni, di Benevento, condannato in primo grado a due anni per la bancarotta della Energy Life, società di Poggiomarino che gestiva supermercati.",
+   "categoria": "cronaca",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-29T09:28+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 3,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/condannato-due-anni-bancarotta-societa-supermercati-cassazione/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "È definitiva l'assoluzione di L. G., 52 anni, di Benevento, accusato della bancarotta di una società che gestiva alcuni supermercati. La Quinta sezione penale della Cassazione ha respinto il ricorso della Procura generale contro la sentenza d'appello, che lo aveva assolto «per non aver commesso il fatto».",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "La società era la Energy Life, con sede a Poggiomarino, in provincia di Napoli. Il 9 luglio 2024 il Tribunale di Torre Annunziata lo aveva condannato a due anni. L'11 giugno 2026 la Sesta sezione penale della Corte d'Appello di Napoli aveva ribaltato la sentenza e lo aveva assolto; la Procura generale aveva fatto ricorso in Cassazione, che ora lo ha respinto. Lo ha difeso l'avvocato Mario Cecere.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "9 luglio 2024",
+      "quando": "2024-07-09",
+      "fatto": "Il Tribunale di Torre Annunziata lo condanna a due anni.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "data": "11 giugno 2026",
+      "fatto": "La Corte d'Appello di Napoli lo assolve.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Condannato a due anni per bancarotta di una società di supermercati: la Cassazione chiude definitivamente il caso",
+      "url": "https://www.anteprima24.it/benevento/condannato-due-anni-bancarotta-societa-supermercati-cassazione/",
+      "data": "29 ott, 09:28"
+     }
+    ]
+   },
+   "zona": "benevento"
   },
   {
    "id": "amorosi-lampade-votive-canone-2022-14-euro",
@@ -209,6 +334,10 @@
      "nome": "CISL FP Irpinia Sannio",
      "url": "https://www.cislfp.it/",
      "ufficiale": true
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/sottoscritta-la-piattaforma-la-contrattazione-decentrata-integrativa-aziendale-dellasl"
     }
    ],
    "foto_inviate": [
@@ -221,34 +350,47 @@
    "articolo": {
     "racconto": [
      {
+      "testo": "Sull'intesa parla anche la FIALS, un altro sindacato della sanità: per il segretario generale Giovanni Tommaselli la bozza del nuovo contratto integrativo aziendale è un testo unico che mette ordine in anni di regole sparse e sblocca soldi e progressioni di carriera per tutto il personale del comparto. Arriva, ricorda la FIALS, a un anno dalla firma definitiva del contratto nazionale 2022-2024, ed è il frutto del lavoro fatto insieme alle altre sigle.",
+      "fonti": [
+       "Gazzetta di Benevento"
+      ],
+      "giorno": "2026-10-29"
+     },
+     {
       "testo": "All'ASL Benevento, l'azienda sanitaria della provincia, è stata sottoscritta il 28 ottobre 2026 la piattaforma per la contrattazione decentrata integrativa aziendale. È il documento che serve ad applicare al personale dell'azienda gli istituti economici, normativi e organizzativi del CCNL Comparto Sanità 2022–2024, il contratto collettivo nazionale di lavoro della sanità pubblica. Ne dà notizia la CISL FP Irpinia Sannio, la sezione territoriale della CISL FP, il sindacato della funzione pubblica della CISL, che esprime grande soddisfazione.",
       "fonti": [
-       "CISL FP Irpinia Sannio"
-      ]
+       "CISL FP Irpinia Sannio",
+       "Gazzetta di Benevento"
+      ],
+      "giorno": "2026-10-29"
      },
      {
       "testo": "La piattaforma è stata condivisa dalle organizzazioni sindacali che hanno firmato il contratto nazionale. L'ha sostenuta anche una maggioranza qualificata dei componenti presenti della RSU, la rappresentanza sindacale unitaria: in gran parte rappresentanti della CISL FP Irpinia Sannio, più un componente della UIL. Il sindacato parla di un percorso di trattativa lungo e articolato, fatto di approfondimenti tecnici, proposte e confronto con la Delegazione Trattante aziendale, cioè la parte dell'ASL che tratta con i sindacati.",
       "fonti": [
        "CISL FP Irpinia Sannio"
-      ]
+      ],
+      "giorno": "2026-10-29"
      },
      {
       "testo": "Le materie sono molte. Per gli incarichi di funzione i bandi vanno pubblicati entro il 30 novembre 2026, con criteri trasparenti. Ci sono poi i Differenziali Economici di Professionalità (DEP) 2025 e 2026, cioè le procedure per la progressione economica, da definire e completare, e la piena applicazione del regolamento aziendale sullo smart working, con criteri equi di accesso e risposte rapide alle richieste. La piattaforma tocca anche le progressioni tra le aree, i fondi contrattuali per il trattamento economico accessorio, performance e premi, le indennità (con attenzione ai servizi più gravosi e all'emergenza-urgenza), la pronta disponibilità, gli incentivi per funzioni tecniche e attività progettuali, il welfare integrativo, la mobilità interna, orari e turni, la formazione, la salute e la sicurezza sul lavoro e le relazioni sindacali.",
       "fonti": [
        "CISL FP Irpinia Sannio"
-      ]
+      ],
+      "giorno": "2026-10-29"
      },
      {
       "testo": "Secondo il sindacato riguarda tutto il personale dell'ASL Benevento: sanitario e sociosanitario, tecnico, professionale e amministrativo. La CISL FP Irpinia Sannio sottolinea di essere l'unica, tra le sigle territoriali delle tre principali confederazioni sindacali, a sedere al tavolo aziendale come firmataria del contratto, perché la CISL FP nazionale ha firmato il contratto 2022–2024.",
       "fonti": [
        "CISL FP Irpinia Sannio"
-      ]
+      ],
+      "giorno": "2026-10-29"
      },
      {
       "testo": "«Ora si apre una fase altrettanto importante: quella dell'attuazione», dice Sonia Petrucciani, segretaria generale della CISL FP Irpinia Sannio, che indica come priorità i bandi entro il 30 novembre, i DEP 2025 e 2026 e lo smart working, e ringrazia la segretaria aziendale Eleonora Tiso, i dirigenti sindacali e i componenti della RSU eletti con la CISL FP. Per lei «il vero risultato si misura attraverso i provvedimenti adottati e i diritti concretamente riconosciuti ai lavoratori». Tiso parla di «un passaggio importante per il personale dell'ASL Benevento» e annuncia che il sindacato seguirà i prossimi passaggi, con un confronto costruttivo con l'amministrazione.",
       "fonti": [
        "CISL FP Irpinia Sannio"
-      ]
+      ],
+      "giorno": "2026-10-29"
      }
     ],
     "cronologia": [],
@@ -262,6 +404,12 @@
       "url": "https://www.cislfp.it/",
       "data": "29 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "Sottoscritta la piattaforma per la contrattazione decentrata integrativa aziendale dell'Asl",
+      "url": "https://www.gazzettabenevento.it/it/sottoscritta-la-piattaforma-la-contrattazione-decentrata-integrativa-aziendale-dellasl",
+      "data": "29 ott, 09:08"
      }
     ]
    },
@@ -1533,6 +1681,10 @@
     {
      "nome": "TV7 Benevento",
      "url": "https://www.tvsette.net/mcdonalds-apre-un-nuovo-ristorante-a-telese-terme/"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/29/mcdonalds-arriva-a-telese-terme-oggi-linaugurazione/"
     }
    ],
    "articolo": {
@@ -1541,14 +1693,16 @@
       "testo": "Giovedì 29 ottobre apre a Telese Terme, in via Lagni, un nuovo ristorante McDonald's, il quarto in provincia di Benevento. Ha portato 35 assunzioni: chi ci lavora viene da Telese e dai paesi vicini.",
       "fonti": [
        "NTR24",
-       "TV7 Benevento"
+       "TV7 Benevento",
+       "Il Sannio Quotidiano"
       ]
      },
      {
       "testo": "Alle 11 c'è il taglio del nastro con il sindaco Giovanni Caporaso, rappresentanti delle istituzioni, delle associazioni del posto e delle forze dell'ordine. Dopo, una festa aperta a tutti con giochi, intrattenimento e musica. Il ristorante è del licenziatario Attilio Guadagno.",
       "fonti": [
        "NTR24",
-       "TV7 Benevento"
+       "TV7 Benevento",
+       "Il Sannio Quotidiano"
       ]
      },
      {
@@ -1589,6 +1743,12 @@
       "titolo": "McDonald’s apre un nuovo ristorante a Telese Terme",
       "url": "https://www.tvsette.net/mcdonalds-apre-un-nuovo-ristorante-a-telese-terme/",
       "data": "28 ott, 14:50"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "McDonald’s arriva a Telese Terme: oggi l’inaugurazione",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/29/mcdonalds-arriva-a-telese-terme-oggi-linaugurazione/",
+      "data": "29 ott, 09:00"
      }
     ]
    },
@@ -1838,32 +1998,38 @@
    "id": "sant-angelo-a-cupolo-pastene-moglie-uccisa-perizia-psichiatrica",
    "titolo": "Sant'Angelo a Cupolo, donna uccisa a Pastene il giorno di Ferragosto: la gip dispone la perizia psichiatrica sul marito di 76 anni",
    "titolo_google": "Omicidio a Pastene, perizia psichiatrica sul marito 76enne",
-   "sintesi": "Mercoledì 28 ottobre la gip di Benevento ha affidato la perizia psichiatrica sul 76enne accusato di aver ucciso la moglie il 15 agosto a Pastene, frazione di Sant'Angelo a Cupolo. Gli esami cominciano il 27 novembre, le conclusioni in aula il 10 febbraio 2027.",
+   "sintesi": "Mercoledì 28 ottobre la gip di Benevento ha affidato la perizia psichiatrica su Faustino Cardillo, il 76enne accusato di aver ucciso la moglie il 15 agosto a Pastene, frazione di Sant'Angelo a Cupolo. Gli esami cominciano il 27 novembre, le conclusioni in aula il 10 febbraio 2027.",
    "categoria": "cronaca",
    "zona": "provincia",
    "luogo": "Sant'Angelo a Cupolo, Pastene",
    "pubblicato": "2026-10-28T12:09+01:00",
-   "stato": "una_fonte",
+   "stato": "confermata",
    "rilevante": false,
    "importanza": 4,
    "fonti": [
     {
      "nome": "Ottopagine",
      "url": "https://www.ottopagine.it/bn/cronaca/442407/faustino-e-la-moglie-accoltellata-a-morte-alla-gola-via-a-perizia-psichiatrica.shtml"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/29/uccise-la-moglie-nel-giorno-di-ferragosto-disposta-la-perizia-psichiatrica/"
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Mercoledì 28 ottobre, a Benevento, la gip Maria Amoruso ha affidato a uno psichiatra la perizia sul 76enne accusato di aver ucciso la moglie, sua coetanea, il giorno di Ferragosto nella loro casa di Pastene, frazione di Sant'Angelo a Cupolo. L'incarico è arrivato nell'incidente probatorio chiesto dalla pm Maria Colucci, cioè la fase in cui si raccolgono prove prima del processo.",
+      "testo": "Mercoledì 28 ottobre, a Benevento, la gip Maria Amoruso ha affidato allo psichiatra Alfonso Tramontano la perizia su Faustino Cardillo, il 76enne accusato di aver ucciso la moglie, sua coetanea, il giorno di Ferragosto nella loro casa di Pastene, frazione di Sant'Angelo a Cupolo. L'incarico è arrivato nell'incidente probatorio chiesto dalla pm Maria Colucci, cioè la fase in cui si raccolgono prove prima del processo.",
       "fonti": [
-       "Ottopagine"
+       "Ottopagine",
+       "Il Sannio Quotidiano"
       ]
      },
      {
       "testo": "La perizia dovrà dire se l'uomo era capace di intendere e di volere, se può stare in giudizio, se è socialmente pericoloso e se le sue condizioni sono compatibili con il carcere. Le operazioni cominciano il 27 novembre; la difesa ha nominato un suo consulente. Il perito esporrà le conclusioni in aula il 10 febbraio 2027.",
       "fonti": [
-       "Ottopagine"
+       "Ottopagine",
+       "Il Sannio Quotidiano"
       ]
      },
      {
@@ -1904,7 +2070,15 @@
       ]
      }
     ],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "La perizia psichiatrica affidata allo psichiatra Alfonso Tramontano, con le operazioni dal 27 novembre.",
+      "fonti": [
+       "Ottopagine",
+       "Il Sannio Quotidiano"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [
      "Se dopo la perizia ci sarà un processo e con quale rito."
@@ -1915,6 +2089,12 @@
       "titolo": "Faustino e la moglie accoltellata a morte alla gola: via a perizia psichiatrica",
       "url": "https://www.ottopagine.it/bn/cronaca/442407/faustino-e-la-moglie-accoltellata-a-morte-alla-gola-via-a-perizia-psichiatrica.shtml",
       "data": "28 ott, 12:09"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Uccise la moglie nel giorno di Ferragosto, disposta la perizia psichiatrica",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/29/uccise-la-moglie-nel-giorno-di-ferragosto-disposta-la-perizia-psichiatrica/",
+      "data": "29 ott, 09:00"
      }
     ]
    },
@@ -2094,6 +2274,10 @@
     {
      "nome": "Lab TV",
      "url": "https://www.labtv.net/cronaca/2026/10/28/caso-santamaria-copia-forense-dei-dispositivi-di-16-indagati-incarico-a-lorenzo-laurato-il-4-novembre/"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/29/caso-santamaria-via-libera-alla-copia-forense-dei-dispositivi-degli-indagati/"
     }
    ],
    "articolo": {
@@ -2103,7 +2287,8 @@
       "fonti": [
        "Ottopagine",
        "Anteprima24",
-       "Lab TV"
+       "Lab TV",
+       "Il Sannio Quotidiano"
       ],
       "giorno": "2026-10-28"
      },
@@ -2170,6 +2355,12 @@
       "titolo": "Caso Santamaria: copia forense dei dispositivi di 16 indagati: incarico a Lorenzo Laurato il 4 novembre",
       "url": "https://www.labtv.net/cronaca/2026/10/28/caso-santamaria-copia-forense-dei-dispositivi-di-16-indagati-incarico-a-lorenzo-laurato-il-4-novembre/",
       "data": "28 ott, 12:31"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Caso Santamaria, via libera alla copia forense dei dispositivi degli indagati",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/29/caso-santamaria-via-libera-alla-copia-forense-dei-dispositivi-degli-indagati/",
+      "data": "29 ott, 09:12"
      }
     ]
    },
@@ -4091,9 +4282,9 @@
   },
   {
    "id": "san-giorgio-del-sannio-appalto-rifiuti-dda-rinvio-giudizio-34",
-   "titolo": "Appalti tra Benevento e Caserta, la Dda chiede il processo per 34 persone: nel Sannio c'è la gara dei rifiuti di San Giorgio",
-   "titolo_google": "Appalto rifiuti San Giorgio del Sannio, chiesto processo per 34",
-   "sintesi": "Il pm della Direzione distrettuale antimafia ha chiesto il rinvio a giudizio di 34 persone nell'indagine dei Carabinieri su una serie di appalti tra le province di Caserta e Benevento. Per il Sannio riguarda la gara del 2022 per la raccolta dei rifiuti a San Giorgio del Sannio. L'udienza preliminare davanti al gup di Napoli è fissata per il 18 gennaio 2027.",
+   "titolo": "Appalti tra Benevento e Caserta, la Dda chiede il processo per 34 persone: c'è anche l'ex sindaco di San Giorgio del Sannio Angelo Ciampi",
+   "titolo_google": "San Giorgio del Sannio, chiesto il processo per l'ex sindaco Ciampi",
+   "sintesi": "La Direzione distrettuale antimafia di Napoli ha chiesto il rinvio a giudizio di 34 persone nell'indagine dei Carabinieri su una serie di appalti tra le province di Caserta e Benevento. Per il Sannio riguarda la gara del 2022 per i rifiuti a San Giorgio del Sannio: tra gli imputati l'ex sindaco Angelo Ciampi. L'udienza preliminare è fissata per il 18 gennaio 2027.",
    "categoria": "cronaca",
    "zona": "provincia",
    "luogo": "San Giorgio del Sannio",
@@ -4109,10 +4300,21 @@
     {
      "nome": "Gazzetta di Benevento",
      "url": "https://www.gazzettabenevento.it/it/la-direzione-distrettuale-antimafia-ha-chiesto-il-rinvio-giudizio-persone-indagate-presunte"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/29/san-giorgio-del-sannio-inchiesta-appalti-chiesto-il-rinvio-a-giudizio-dellex-sindaco-ciampi-e-di-altre-33-persone-a-gennaio-udienza-preliminare/"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Tra le 34 persone per cui la Dda di Napoli chiede il processo c'è l'ex sindaco di San Giorgio del Sannio Angelo Ciampi: secondo l'accusa avrebbe preso una tangente dal rappresentante dell'impresa dei rifiuti. Nell'elenco c'è anche l'ex consigliere regionale Nicola Ferraro, figura al centro dell'inchiesta sugli appalti. Per il paese l'indagine, nell'ottobre del 2023, aveva portato alla caduta dell'amministrazione. Sulle richieste deciderà il gup nell'udienza preliminare del 18 gennaio.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ],
+      "giorno": "2026-10-29"
+     },
      {
       "testo": "Il pubblico ministero della Dda, la Direzione distrettuale antimafia, ha chiesto il rinvio a giudizio di 34 persone nell'indagine dei Carabinieri su una serie di appalti tra le province di Caserta e Benevento, emersa più di un anno fa. Il 18 gennaio 2027 ci sarà l'udienza preliminare davanti al gup di Napoli, il giudice che dovrà decidere se mandare gli imputati a processo o chiudere il caso per loro.",
       "fonti": [
@@ -4167,6 +4369,13 @@
        "Ottopagine",
        "Gazzetta di Benevento"
       ]
+     },
+     {
+      "testo": "L'udienza preliminare davanti al gup è fissata per il 18 gennaio.",
+      "fonti": [
+       "Ottopagine",
+       "Il Sannio Quotidiano"
+      ]
      }
     ],
     "divergono": [],
@@ -4186,8 +4395,22 @@
       "titolo": "La Direzione Distrettuale Antimafia ha chiesto il rinvio a giudizio per persone indagate per presunte irregolarità",
       "url": "https://www.gazzettabenevento.it/it/la-direzione-distrettuale-antimafia-ha-chiesto-il-rinvio-giudizio-persone-indagate-presunte",
       "data": "27 ott, 21:20"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "San Giorgio del Sannio – Inchiesta appalti, chiesto il rinvio a giudizio dell’ex sindaco Ciampi e di altre 33 persone, a gennaio udienza preliminare",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/29/san-giorgio-del-sannio-inchiesta-appalti-chiesto-il-rinvio-a-giudizio-dellex-sindaco-ciampi-e-di-altre-33-persone-a-gennaio-udienza-preliminare/",
+      "data": "29 ott, 09:02"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Tra le 34 persone per cui la Dda chiede il processo c'è l'ex sindaco di San Giorgio del Sannio Angelo Ciampi; il gup deciderà nell'udienza del 18 gennaio.",
+     "fonti": [
+      "Il Sannio Quotidiano"
+     ],
+     "quando": "2026-10-29T10:12+01:00",
+     "titolo_prima": "Appalti tra Benevento e Caserta, la Dda chiede il processo per 34 persone: nel Sannio c'è la gara dei rifiuti di San Giorgio"
+    }
    },
    "scena": "A green municipal garbage collection truck parked at dawn in the square of a small town in the Sannio, the old town hall behind it, and in the foreground a stack of thick tender documents and court files on a café table"
   },
@@ -7190,6 +7413,10 @@
     {
      "nome": "TV7 Benevento",
      "url": "https://www.tvsette.net/gestione-idrica-nel-sannio-il-comitato-sannita-acqua-bene-comune-esprime-pieno-plauso-ai-comuni-ricorrenti-contro-il-decreto-regionale/"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/29/gestione-servizio-idrico-sindaci-sulle-barricate-11-comuni-ricorrono-al-tar-contro-sannio-acque/"
     }
    ],
    "articolo": {
@@ -7200,7 +7427,8 @@
        "Anteprima24 (28/10)",
        "Benevento Giornale",
        "NTR24 (28/10)",
-       "TV7 Benevento"
+       "TV7 Benevento",
+       "Il Sannio Quotidiano"
       ],
       "giorno": "2026-10-28"
      },
@@ -7372,6 +7600,12 @@
       "titolo": "Gestione idrica nel Sannio: il Comitato sannita Acqua Bene Comune esprime pieno plauso ai Comuni ricorrenti contro il Decreto Regionale.",
       "url": "https://www.tvsette.net/gestione-idrica-nel-sannio-il-comitato-sannita-acqua-bene-comune-esprime-pieno-plauso-ai-comuni-ricorrenti-contro-il-decreto-regionale/",
       "data": "28 ott, 14:57"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Gestione servizio idrico, sindaci sulle barricate: 11 Comuni ricorrono al Tar contro Sannio Acque",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/29/gestione-servizio-idrico-sindaci-sulle-barricate-11-comuni-ricorrono-al-tar-contro-sannio-acque/",
+      "data": "29 ott, 09:19"
      }
     ],
     "aggiornamento": {
@@ -8439,12 +8673,12 @@
   },
   {
    "id": "castelpoto-santa-croce-del-sannio-elenco-elettori-fuori-sede",
-   "titolo": "Elettori fuori sede, ventuno Comuni del Sannio hanno aperto l'elenco: domande entro il 31 dicembre",
-   "titolo_google": "Elettori fuori sede in 21 Comuni del Sannio: come fare",
-   "sintesi": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni, Limatola, Torrecuso, San Lorenzello, Montesarchio, San Marco dei Cavoti, Ponte, Paupisi, Pannarano e Moiano hanno aperto l'elenco degli elettori fuori sede previsto dalla nuova legge elettorale: chi per studio, lavoro o cure vive in una regione diversa da quella in cui vota può chiedere di votare dove abita. Per studio e lavoro la domanda va fatta entro il 31 dicembre, per le votazioni dell'anno dopo.",
+   "titolo": "Elettori fuori sede, ventidue Comuni del Sannio hanno aperto l'elenco: domande entro il 31 dicembre",
+   "titolo_google": "Elettori fuori sede in 22 Comuni del Sannio: come fare",
+   "sintesi": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni, Limatola, Torrecuso, San Lorenzello, Montesarchio, San Marco dei Cavoti, Ponte, Paupisi, Pannarano, Moiano e Castelvenere hanno aperto l'elenco degli elettori fuori sede previsto dalla nuova legge elettorale: chi per studio, lavoro o cure vive in una regione diversa da quella in cui vota può chiedere di votare dove abita. Per studio e lavoro la domanda va fatta entro il 31 dicembre, per le votazioni dell'anno dopo.",
    "categoria": "avvisi",
    "zona": "provincia",
-   "luogo": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni, Limatola, Torrecuso, San Lorenzello, Montesarchio, San Marco dei Cavoti, Ponte, Paupisi, Pannarano e Moiano",
+   "luogo": "Castelpoto, Santa Croce del Sannio, Apice, Cusano Mutri, Dugenta, Pesco Sannita, Faicchio, Molinara, Cautano, Fragneto Monforte, Pontelandolfo, Ceppaloni, Limatola, Torrecuso, San Lorenzello, Montesarchio, San Marco dei Cavoti, Ponte, Paupisi, Pannarano, Moiano e Castelvenere",
    "immagine": "elezioni",
    "pubblicato": "2026-10-27",
    "stato": "ufficiale",
@@ -8554,10 +8788,22 @@
      "nome": "Comune di Moiano",
      "url": "https://www.comune.moiano.bn.it/novita/notizie/novita_58.html",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di Castelvenere",
+     "url": "https://www.comune.castelvenere.bn.it/novita/avvisi/novita_355.html",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Giovedì 29 ottobre l'elenco degli elettori fuori sede l'ha aperto anche Castelvenere, in Valle Telesina: possono chiedere di votare lì studenti e lavoratori domiciliati in paese per almeno nove mesi, chi si cura in Campania per almeno tre mesi e chi assiste un familiare, se iscritti nelle liste di un Comune fuori regione. Vale per politiche, europee e referendum, non per le comunali e le regionali. Con Castelvenere i Comuni del Sannio che hanno aperto l'elenco sono ventidue.",
+      "fonti": [
+       "Comune di Castelvenere"
+      ],
+      "giorno": "2026-10-29"
+     },
      {
       "testo": "Anche il Comune di Moiano, in Valle Caudina, spiega sul suo sito come chiedere il voto fuori sede: possono farlo gli studenti e i lavoratori che restano fuori regione per almeno nove mesi, chi si cura fuori regione per almeno tre mesi e i familiari che li assistono. Chi ha già i requisiti fa la domanda entro il 31 dicembre per votare l'anno dopo. Con Moiano i Comuni del Sannio che hanno aperto l'elenco sono ventuno.",
       "fonti": [
@@ -8860,6 +9106,13 @@
       "titolo": "Voto fuori sede: come votare fuori dal comune di residenza",
       "url": "https://www.comune.moiano.bn.it/novita/notizie/novita_58.html",
       "data": "20 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "Comune di Castelvenere",
+      "titolo": "Istituzione dell'elenco comunale degli elettori \"Fuori Sede\"",
+      "url": "https://www.comune.castelvenere.bn.it/novita/avvisi/novita_355.html",
+      "data": "29 ott",
       "ufficiale": true
      }
     ],
@@ -10776,6 +11029,10 @@
     {
      "nome": "Gazzetta di Benevento",
      "url": "https://www.gazzettabenevento.it/it/lasl-competente-le-attivita-di-controllo-sulle-strutture-sanitarie-private-accreditate-del"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/29/vertenza-gepos-scattano-le-verifiche-dellasl/"
     }
    ],
    "articolo": {
@@ -10786,7 +11043,8 @@
        "NTR24 (28/10)",
        "Gazzetta di Benevento",
        "Lab TV (28/10)",
-       "Cronache del Sannio (28/10)"
+       "Cronache del Sannio (28/10)",
+       "Il Sannio Quotidiano"
       ],
       "giorno": "2026-10-28"
      },
@@ -10794,14 +11052,16 @@
       "testo": "I sindacati chiedono ora controlli completi. Il primo punto è il laboratorio analisi: secondo i loro dati faceva oltre 200.000 esami l'anno con tre tecnici e due biologi, e dopo il licenziamento di due tecnici, il 20 ottobre, ne è rimasto uno solo. Il secondo sono gli infermieri: durante il licenziamento collettivo l'azienda avrebbe dichiarato otto infermieri di troppo, mentre ai sindacati risulterebbero nuove assunzioni di infermieri.",
       "fonti": [
        "NTR24 (28/10)",
-       "Gazzetta di Benevento"
+       "Gazzetta di Benevento",
+       "Il Sannio Quotidiano"
       ],
       "giorno": "2026-10-28"
      },
      {
       "testo": "FP CGIL e UIL FPL chiedono alla direzione dell'ASL di convocarli subito e di far conoscere ai lavoratori l'esito dei controlli.",
       "fonti": [
-       "NTR24 (28/10)"
+       "NTR24 (28/10)",
+       "Il Sannio Quotidiano"
       ],
       "giorno": "2026-10-28"
      },
@@ -11004,6 +11264,12 @@
       "titolo": "Gepos di Telese Terme, Cgil e Uil: “Bene i controlli dell’Asl, ora verifiche a 360 gradi”",
       "url": "https://www.cronachedelsannio.it/sannionews24/gepos-telese-terme-cgil-uil-bene-controlli/",
       "data": "28 ott, 12:39"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Vertenza Gepos, scattano le verifiche dell’Asl",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/29/vertenza-gepos-scattano-le-verifiche-dellasl/",
+      "data": "29 ott, 09:12"
      }
     ],
     "aggiornamento": {
