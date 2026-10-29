@@ -25,6 +25,9 @@ from chiusure import slug            # noqa: E402
 UA = {"User-Agent": "NotizieBenevento/1.0 (https://notiziebenevento.it)"}
 LIBERE = re.compile(r"^(CC BY(-SA)? [0-9.]+|CC0|Public domain|PD.*)$", re.I)
 ALTEZZA = 200   # px: sulla pagina lo stemma è alto 100, così è nitido anche sui telefoni
+# scelti a mano: una foto libera dello stemma da solo, già ritagliato, quando un disegno libero non c'è (lui, 29 ott
+# 2026, «facciamo 5»: la ceramica di Cerreto). Il fondo bianco della foto diventa trasparente, come nei disegni.
+A_MANO = {"Cerreto Sannita": "Stemma cerreto sannita bn.jpg"}
 
 
 def chiedi(url, **p):
@@ -103,6 +106,8 @@ def main():
     cartella = os.path.join(a.sito, "img", "stemmi")
     os.makedirs(cartella, exist_ok=True)
     candidati = file_stemmi(titoli_wikipedia())
+    for comune, f in A_MANO.items():
+        candidati[comune] = [f] + candidati.get(comune, [])
     info = informazioni(sorted({f for v in candidati.values() for f in v}))
     dati, saltati = {}, []
     for comune in COMUNI_BN:
@@ -121,6 +126,11 @@ def main():
             im = Image.open(io.BytesIO(r.read()))
             im.load()
         im = im.convert("RGBA")   # ridisegnata da capo: dal file scaricato resta solo l'immagine
+        if A_MANO.get(comune) == f:   # la foto ritagliata: il bianco attorno, dagli angoli, diventa trasparente
+            from PIL import ImageDraw
+            for xy in ((0, 0), (im.width - 1, 0), (0, im.height - 1), (im.width - 1, im.height - 1)):
+                if im.getpixel(xy)[3] and min(im.getpixel(xy)[:3]) > 225:
+                    ImageDraw.floodfill(im, xy, (255, 255, 255, 0), thresh=40)
         if im.height != ALTEZZA:
             im = im.resize((round(im.width * ALTEZZA / im.height), ALTEZZA), Image.LANCZOS)
         nome = slug(comune) + ".png"
