@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-29T11:16+01:00",
+ "aggiornato": "2026-10-29T16:17+01:00",
  "eventi": [
   {
    "id": "mostra-cosmogonie-meact-torrecuso-2026",
@@ -1517,6 +1517,45 @@
     }
    ],
    "foto": "teatro-24"
+  },
+  {
+   "id": "giuseppe-conte-una-nuova-primavera-unisannio-2026",
+   "titolo": "«Una nuova primavera» di Giuseppe Conte, la presentazione all'Università del Sannio",
+   "tipo": "libro",
+   "inizio": "2026-11-09",
+   "ora": "16:00",
+   "luogo": "Auditorium di Sant'Agostino, Università del Sannio, via De Nicastro 13",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "organizzatore": "Consiglio degli Studenti dell'Università del Sannio",
+   "artisti": [
+    "Giuseppe Conte"
+   ],
+   "breve": "Lunedì 9 novembre alle 16 all'Auditorium di Sant'Agostino si presenta il libro «Una nuova primavera» di Giuseppe Conte, con l'autore.",
+   "descrizione": [
+    {
+     "testo": "Lunedì 9 novembre 2026 alle 16, nell'Auditorium di Sant'Agostino dell'Università del Sannio, in via De Nicastro 13 a Benevento, Giuseppe Conte presenta il suo libro «Una nuova primavera», pubblicato da Marsilio. La presentazione era prevista per il 26 ottobre ed è stata rinviata per l'emergenza carburanti.",
+     "fonti": [
+      "BeneventoNews24"
+     ]
+    },
+    {
+     "testo": "La organizza il Consiglio degli Studenti dell'Università del Sannio, che la presenta come un incontro apolitico e aperto a tutti. Dopo i saluti della rettrice Maria Moreno intervengono Maurizio Sibilio, Gerardo Canfora e Cristina Ciancio, che dialogano con l'autore insieme ai rappresentanti degli studenti.",
+     "fonti": [
+      "BeneventoNews24"
+     ]
+    }
+   ],
+   "immagine": "libri",
+   "fonti": [
+    {
+     "nome": "BeneventoNews24",
+     "titolo": "Unisannio, il 9 novembre a Benevento arriva Giuseppe Conte",
+     "url": "https://www.beneventonews24.it/2026/10/29/unisannio-il-9-novembre-a-benevento-arriva-giuseppe-conte/",
+     "data": "29 ott, 16:03"
+    }
+   ],
+   "foto": "libri-2"
   },
   {
    "id": "incanto-di-natale-benevento-2026",

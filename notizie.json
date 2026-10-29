@@ -1,7 +1,325 @@
 {
- "aggiornato": "2026-10-29T15:30+01:00",
+ "aggiornato": "2026-10-29T16:23+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "cremonese-benevento-kouan-squalificato-maita-ammenda",
+   "titolo": "Cremonese-Benevento senza Kouan: squalificato per un turno, ammenda di 1.000 euro al capitano Maita",
+   "titolo_google": "Kouan squalificato, salta Cremonese-Benevento del 31 ottobre",
+   "sintesi": "Il Giudice Sportivo della Serie B ha squalificato per una giornata Kouan, che salta la trasferta di sabato 31 ottobre a Cremona. Al capitano Maita terza ammonizione e 1.000 euro di ammenda; anche la Cremonese sarà senza uno squalificato, Barbieri.",
+   "categoria": "sport",
+   "sport": "calcio",
+   "luogo": "Cremona, stadio Zini",
+   "zona": "benevento",
+   "pubblicato": "2026-10-29T15:42+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 5,
+   "immagine": "calcio",
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/kouan-squalificato-floro-flores-valuta-due-opzioni-per-sostituirlo-contro-la-cremonese/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/29/giudice-sportivo-cremonese-benevento-senza-barbieri-e-kouan-ammenda-per-maita/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Benevento giocherà senza Kouan sabato 31 ottobre a Cremona, nella decima giornata di Serie B. Il Giudice Sportivo della Lega B lo ha squalificato per un turno: era diffidato e martedì, nel pareggio 1-1 col Catanzaro al Vigorito, ha preso il quinto cartellino giallo.",
+      "fonti": [
+       "BeneventoNews24",
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Per il capitano Maita è arrivata la terza ammonizione in campionato, con un'ammenda di 1.000 euro: la sanzione è più pesante perché è il capitano della squadra. Terzo giallo anche per il vice capitano Scognamillo. Anche la Cremonese avrà un assente per squalifica, Barbieri, espulso per doppia ammonizione nella partita col Mantova.",
+      "fonti": [
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Per sostituire Kouan l'allenatore Floro Flores può rimettere in mezzo al campo Maita e Prisco con Siatounis, oppure scegliere Mannini. La Cremonese ha 9 punti dopo 9 giornate. La squadra è partita in pullman giovedì 29 ottobre, un giorno prima del previsto per evitare i problemi dello sciopero dei trasporti, e ha dormito a Coverciano per spezzare il viaggio.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Kouan squalificato per un turno: salta la partita di sabato a Cremona.",
+      "fonti": [
+       "Anteprima24",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Chi giocherà al posto di Kouan: lo deciderà Floro Flores."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Kouan squalificato: Floro Flores valuta due opzioni per sostituirlo contro la Cremonese",
+      "url": "https://www.anteprima24.it/benevento/kouan-squalificato-floro-flores-valuta-due-opzioni-per-sostituirlo-contro-la-cremonese/",
+      "data": "29 ott, 15:42"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Giudice Sportivo, Cremonese-Benevento senza Barbieri e Kouan. Ammenda per Maita",
+      "url": "https://www.beneventonews24.it/2026/10/29/giudice-sportivo-cremonese-benevento-senza-barbieri-e-kouan-ammenda-per-maita/",
+      "data": "29 ott, 15:37"
+     }
+    ]
+   },
+   "foto": "calcio-15"
+  },
+  {
+   "id": "conservatorio-nicola-sala-vicedirettrice-rosalba-novelli",
+   "titolo": "Benevento, Conservatorio «Nicola Sala»: Rosalba Novelli nuova vicedirettrice dal 1° novembre",
+   "titolo_google": "Conservatorio Nicola Sala, Rosalba Novelli vicedirettrice",
+   "sintesi": "La pianista Rosalba Novelli, docente del Conservatorio «Nicola Sala» di Benevento, è la nuova vicedirettrice dal 1° novembre 2026 al 31 ottobre 2027. Il direttore Giuseppe Ilario ha nominato anche lo staff di direzione e i docenti con incarichi.",
+   "categoria": "cultura",
+   "luogo": "Benevento, Conservatorio «Nicola Sala»",
+   "zona": "benevento",
+   "pubblicato": "2026-10-29T16:15+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 2,
+   "immagine": "musica-classica",
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/29/benevento-il-conservatorio-nicola-sala-presenta-la-vicedirettrice-e-la-squadra-di-direzione/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/il-conservatorio-nicola-sala-presenta-la-vicedirettrice-e-la-squadra-di-direzione/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Conservatorio «Nicola Sala» di Benevento ha una nuova vicedirettrice: è Rosalba Novelli, docente di pianoforte della scuola. L'incarico vale dal 1° novembre 2026 al 31 ottobre 2027 ed è stato deciso con due decreti del 29 ottobre del direttore Giuseppe Ilario. La vicedirettrice prende il posto del direttore quando lui è assente o impedito.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Nello staff di direzione ci sono Ferruccio Corsi e Gianluca Bocchino. Gli altri incarichi: Francesco D'Ovidio segue le attività internazionali e l'Erasmus+, Leonardo De Lorenzo gli studenti con disturbi dell'apprendimento (DSA), Marcella Parziale l'ufficio comunicazione, Vincenzo De Sena e Antonio Varriano i piani di studio, Carlo Berton i progetti.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Luigi Ottaiano coordina la canzone classica napoletana, Renato Esposito la scuola di musica elettronica, Paolo Vergari i dottorati di ricerca, Angelo Cioffi i progetti dello studio di registrazione e Alessandro Zerella l'organizzazione delle attività artistiche.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Rosalba Novelli vicedirettrice dal 1° novembre 2026 al 31 ottobre 2027.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Benevento, il Conservatorio ‘Nicola Sala’ presenta la vicedirettrice e la squadra di direzione",
+      "url": "https://www.ntr24.tv/2026/10/29/benevento-il-conservatorio-nicola-sala-presenta-la-vicedirettrice-e-la-squadra-di-direzione/",
+      "data": "29 ott, 16:14"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Il Conservatorio Nicola Sala presenta la Vicedirettrice e la squadra di Direzione",
+      "url": "https://www.anteprima24.it/benevento/il-conservatorio-nicola-sala-presenta-la-vicedirettrice-e-la-squadra-di-direzione/",
+      "data": "29 ott, 16:15"
+     }
+    ]
+   },
+   "foto": "musica-classica-9"
+  },
+  {
+   "id": "pallamano-hc-sannio-putignano-33-23-trasferta-siracusa",
+   "titolo": "Pallamano, H.C. Sannio battuto 33-23 a Putignano: sabato 1° novembre la trasferta a Siracusa",
+   "titolo_google": "Pallamano, Putignano-H.C. Sannio 33-23: perde il Sannio",
+   "sintesi": "Nella Serie A Silver di pallamano l'H.C. Sannio di Benevento ha perso 33-23 in casa del Putignano. Sabato 1° novembre alle 16 gioca a Siracusa contro l'Albatro, poi due settimane di sosta.",
+   "categoria": "sport",
+   "sport": "altro",
+   "luogo": "Benevento",
+   "zona": "benevento",
+   "pubblicato": "2026-10-29T16:08+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/silver-hc-sannio-trasferta-siracusa/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "L'H.C. Sannio, la squadra di pallamano di Benevento che gioca in Serie A Silver, ha perso 33-23 sul campo del Putignano, in Puglia. Dopo un inizio in equilibrio i sanniti hanno perso molti palloni in attacco e il Putignano ha chiuso il primo tempo sul 20-9; nel secondo tempo è arrivata una reazione, ma il distacco era troppo grande.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Il migliore realizzatore è stato Marco Bellu con 8 reti, poi Fiore Fiorenzo con 6, Fernando Buitron con 3, Kevin Bblunga e Simone Uccellini con 2, Carmine Castiello ed Emanuele Velletri con una.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Sabato 1° novembre alle 16 la squadra, allenata da Mathias Grunfeld, gioca a Siracusa contro l'Albatro. Poi ci sono due settimane di sosta prima della partita in casa con il Serra Fasano, che il direttore sportivo Pietro Martone chiama «sfida salvezza». Martone spiega che la squadra ha cominciato la stagione in ritardo di preparazione e aspetta di poter schierare il terzino Ivo Rasic, l'ultimo arrivato.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [
+     {
+      "testo": "L'articolo scrive il nome dell'allenatore in due modi, «Mathias Grufeld» e «Matias Grunfeld»; in un articolo precedente della stessa testata è «Grunfeld».",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Serie A Silver: H.C. Sannio attesa dalla lunga trasferta a Siracusa",
+      "url": "https://www.anteprima24.it/benevento/silver-hc-sannio-trasferta-siracusa/",
+      "data": "29 ott, 16:08"
+     }
+    ]
+   }
+  },
+  {
+   "id": "benevento-35enne-non-doversi-procedere-maltrattamenti-madre",
+   "titolo": "Benevento, accusato di maltrattare la madre: non doversi procedere per il 35enne dopo la remissione della querela",
+   "titolo_google": "Benevento, 35enne accusato dalla madre: non doversi procedere",
+   "sintesi": "Il Tribunale di Benevento ha chiuso con il non doversi procedere il processo a un 35enne accusato di maltrattamenti verso la madre: l'accusa è stata cambiata in percosse e lesioni e la donna ha ritirato la querela.",
+   "categoria": "cronaca",
+   "luogo": "Benevento",
+   "zona": "benevento",
+   "pubblicato": "2026-10-29T15:40+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 3,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/benevento-paolo-nizza-prosciolto-maltrattamenti-madre/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il processo a P. N., 35 anni, di Benevento, accusato di maltrattamenti verso la madre con cui viveva, si è chiuso con una sentenza di non doversi procedere. Lo ha deciso il 28 ottobre la giudice Graziamaria Monaco del Tribunale di Benevento: l'accusa di maltrattamenti è diventata percosse e lesioni, reati che si fermano se chi ha denunciato ritira la querela, ed è quello che ha fatto la madre.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "L'accusa riguardava minacce, offese e aggressioni tra novembre 2019 e luglio 2020. Secondo l'imputazione, il 17 luglio 2020 la donna sarebbe stata spinta fuori di casa e, cadendo, si sarebbe rotta un polso, con trenta giorni di prognosi.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Nell'ultima udienza la madre ha raccontato gli episodi come rari e isolati e ha detto di aver esagerato quando ne aveva parlato alla polizia giudiziaria, per punire il figlio. Per la giudice non c'era la continuità che serve per parlare di maltrattamenti. Anche la pubblica ministera Giulia Zerella aveva chiesto di non riconoscere i maltrattamenti e di chiudere il resto per la querela ritirata; la difesa, l'avvocato Luca Russo, si era unita alla richiesta.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Denuncia il figlio, poi ridimensiona le accuse in aula: prosciolto un 35enne di Benevento",
+      "url": "https://www.anteprima24.it/benevento/benevento-paolo-nizza-prosciolto-maltrattamenti-madre/",
+      "data": "29 ott, 15:40"
+     }
+    ]
+   }
+  },
+  {
+   "id": "pontelandolfo-via-pontremoli-pietrasanta-forte-dei-marmi-chiuse-30-ottobre",
+   "titolo": "Pontelandolfo, chiuse da venerdì 30 ottobre via Pontremoli, via Pietrasanta e via Forte dei Marmi per rifare l'asfalto",
+   "titolo_google": "Pontelandolfo, tre strade chiuse dal 30 ottobre per lavori",
+   "sintesi": "A Pontelandolfo dalle 7 di venerdì 30 ottobre via Pontremoli, via Pietrasanta e via Forte dei Marmi sono chiuse al traffico fino alla fine dei lavori sulla pavimentazione. Niente passaggio neanche per i residenti: passano solo i mezzi di soccorso in caso di urgenza.",
+   "categoria": "strade",
+   "luogo": "Pontelandolfo, via Pontremoli, via Pietrasanta e via Forte dei Marmi",
+   "zona": "fortore",
+   "pubblicato": "2026-10-29",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "traffico": "chiusa",
+   "in_vigore_dal": "2026-10-30",
+   "immagine": "lavori-stradali",
+   "fonti": [
+    {
+     "nome": "Comune di Pontelandolfo",
+     "url": "https://www.halleyweb.com/c062054/mc/mc_p_dettaglio.php?id_pubbl=16702",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Pontelandolfo via Pontremoli, via Pietrasanta e via Forte dei Marmi sono chiuse al traffico dalle 7 di venerdì 30 ottobre fino alla fine dei lavori per rifare la pavimentazione. Lo dice l'ordinanza n. 55 del 29 ottobre del Comune; una data di fine non c'è.",
+      "fonti": [
+       "Comune di Pontelandolfo"
+      ]
+     },
+     {
+      "testo": "La chiusura è totale: non c'è deroga nemmeno per le auto dei residenti, perché passare sul tratto appena lavorato rovinerebbe la strada. Solo per un'urgenza vera possono passare i mezzi di soccorso, ambulanze e vigili del fuoco. La ditta dei lavori deve mettere i cartelli di strada interrotta, segnare gli eventuali percorsi alternativi e avvisare i residenti con cartelli sul posto che per tutta la durata dei lavori non si può arrivare in auto alle case.",
+      "fonti": [
+       "Comune di Pontelandolfo"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di Pontelandolfo",
+      "titolo": "CHIUSURA TEMPORANEA AL TRANSITO VEICOLARE DI \"VIA PONTREMOLI, VIA PIETRASANTA E VIA FORTE DEI MARMI\" PER LAVORI DI RIPRISTINO DELLA PAVIMENTAZIONE STRADALE.",
+      "url": "https://www.halleyweb.com/c062054/mc/mc_p_dettaglio.php?id_pubbl=16702",
+      "data": "29 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "foto": "lavori-stradali-19"
+  },
   {
    "id": "provincia-benevento-pensioni-novembre-poste-2-novembre-2026",
    "titolo": "Provincia di Benevento, le pensioni di novembre negli uffici postali da lunedì 2 novembre",
@@ -11603,9 +11921,9 @@
   },
   {
    "id": "eav-sciopero-generale-30-ottobre-napoli-benevento",
-   "titolo": "EAV, rinviato lo sciopero generale del 30 ottobre: niente stop per treni e bus, anche sulla Napoli-Benevento",
-   "titolo_google": "Sciopero EAV 30 ottobre rinviato: Napoli-Benevento",
-   "sintesi": "Lo sciopero generale di 24 ore proclamato dal sindacato USB per venerdì 30 ottobre 2026 non si farà in quella data: lo ha comunicato EAV, che gestisce anche la linea Napoli-Benevento. La Commissione di garanzia ha rilevato che cadeva nel periodo di franchigia per la commemorazione dei defunti; la nuova data la comunicherà il sindacato.",
+   "titolo": "Sciopero del 30 ottobre rinviato: treni EAV e bus AIR Campania regolari, anche sulla Napoli-Benevento",
+   "titolo_google": "Sciopero 30 ottobre rinviato: EAV e bus AIR regolari",
+   "sintesi": "Lo sciopero generale di 24 ore proclamato dal sindacato USB per venerdì 30 ottobre 2026 non si farà in quella data: lo hanno comunicato EAV, che gestisce anche la linea Napoli-Benevento, e AIR Campania, che gestisce i bus extraurbani e quelli di Benevento città. Lo sciopero cadeva nel periodo di franchigia per la commemorazione dei defunti.",
    "categoria": "strade",
    "zona": "provincia",
    "immagine": "treno",
@@ -11619,10 +11937,22 @@
      "nome": "EAV (28/10)",
      "url": "https://www.eavsrl.it/rinvio-sciopero-usb-30-ottobre-2026/",
      "ufficiale": true
+    },
+    {
+     "nome": "AIR Campania",
+     "url": "https://aircampania.it/il-30-10-26-il-servizio-air-campania-verra-svolto-regolarmente/",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Venerdì 30 ottobre anche i bus di AIR Campania, che gestisce le linee extraurbane del Sannio e i bus di Benevento città, viaggiano regolarmente. Lo ha comunicato AIR giovedì 29 ottobre: il Ministero delle Infrastrutture e dei Trasporti, con un'ordinanza del 27 ottobre, ha spostato a un'altra data lo sciopero generale del sindacato USB, perché anche per il trasporto pubblico locale vale la franchigia per la commemorazione dei defunti.",
+      "fonti": [
+       "AIR Campania"
+      ],
+      "giorno": "2026-10-29"
+     },
      {
       "testo": "Lo sciopero generale nazionale di 24 ore proclamato dal sindacato USB per venerdì 30 ottobre 2026 è stato rinviato e non toccherà i treni e i bus di EAV, l'Ente Autonomo Volturno, che gestisce anche la linea Napoli–Benevento. Lo ha comunicato EAV mercoledì 28 ottobre.",
       "fonti": [
@@ -11688,6 +12018,13 @@
       "fonti": [
        "EAV (28/10)"
       ]
+     },
+     {
+      "data": "29 ottobre",
+      "fatto": "AIR Campania comunica che il 30 ottobre i suoi bus viaggiano regolarmente.",
+      "fonti": [
+       "AIR Campania"
+      ]
      }
     ],
     "concordano": [],
@@ -11716,15 +12053,22 @@
       "url": "https://www.eavsrl.it/rinvio-sciopero-usb-30-ottobre-2026/",
       "data": "28 ott, 14:26",
       "ufficiale": true
+     },
+     {
+      "nome": "AIR Campania",
+      "titolo": "Il 30.10.26 il servizio AIR Campania verrà svolto regolarmente",
+      "url": "https://aircampania.it/il-30-10-26-il-servizio-air-campania-verra-svolto-regolarmente/",
+      "data": "29 ott, 15:57",
+      "ufficiale": true
      }
     ],
     "aggiornamento": {
-     "testo": "Mercoledì 28 ottobre EAV ha comunicato che lo sciopero di venerdì 30 ottobre è rinviato: la Commissione di garanzia ha rilevato che cadeva nel periodo di franchigia per i defunti.",
+     "testo": "Giovedì 29 ottobre AIR Campania ha comunicato che venerdì 30 ottobre anche i suoi bus, extraurbani e di Benevento città, viaggiano regolarmente.",
      "fonti": [
-      "EAV (28/10)"
+      "AIR Campania"
      ],
-     "quando": "2026-10-28T16:17+01:00",
-     "titolo_prima": "EAV, venerdì 30 ottobre sciopero generale di 24 ore: sulla Napoli-Benevento bus sostitutivi regolari"
+     "quando": "2026-10-29T16:23+01:00",
+     "titolo_prima": "EAV, rinviato lo sciopero generale del 30 ottobre: niente stop per treni e bus, anche sulla Napoli-Benevento"
     }
    },
    "foto": "treno-6",
@@ -12297,9 +12641,9 @@
   },
   {
    "id": "air-campania-sciopero-28-ottobre",
-   "titolo": "Mercoledì 28 ottobre sciopero di 8 ore in AIR Campania: pochi bus a Benevento città e sulle linee extraurbane dalle 8 alle 16",
-   "titolo_google": "Sciopero bus AIR 28 ottobre: corse a rischio dalle 8 alle 16",
-   "sintesi": "Mercoledì 28 ottobre 2026 i lavoratori di AIR Campania, che gestisce i bus extraurbani e quelli di Benevento città, scioperano per 8 ore. Le corse possono mancare dalle 8 alle 16, con bus garantiti dalle 13 alle 15.",
+   "titolo": "Sciopero AIR Campania del 28 ottobre: a Benevento città hanno scioperato in quattro, sulle linee extraurbane l'82%",
+   "titolo_google": "Sciopero AIR 28 ottobre a Benevento: i dati dell'adesione",
+   "sintesi": "Mercoledì 28 ottobre i lavoratori di AIR Campania hanno scioperato per 8 ore. Secondo i sindacati a Benevento città hanno aderito solo quattro autisti, sulle linee extraurbane del Sannio l'82% dei turni e nel resto della regione il 63,96%.",
    "categoria": "strade",
    "zona": "provincia",
    "immagine": "autobus",
@@ -12332,10 +12676,28 @@
     {
      "nome": "Lab TV",
      "url": "https://www.labtv.net/attualita/2026/10/28/air-campania-sciopero-di-otto-ore-e-presidio-in-regione-anzalone-filt-cgil-la-vertenza-resta-aperta/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/sciopero-regionale-air-campania-bassa-adesione-a-benevento-si-ferma-l82-nellextraurbano/"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Allo sciopero di 8 ore di mercoledì 28 ottobre, a Benevento città hanno aderito soltanto quattro lavoratori. Lo scrivono i sindacati che l'hanno proclamato. Sulle linee extraurbane del Sannio, invece, hanno scioperato 28 lavoratori su 34 turni, l'82%; nel resto della Campania, senza contare i bus di Benevento città, l'adesione è stata del 63,96%, con 323 scioperanti su 505 turni.",
+      "fonti": [
+       "Anteprima24"
+      ],
+      "giorno": "2026-10-29"
+     },
+     {
+      "testo": "I sindacati spiegano la bassa adesione in città con la situazione degli 85 ex dipendenti di Trotta Bus, l'azienda che gestiva prima i bus di Benevento, passati in AIR dal 1° agosto: dicono che pagano ancora le conseguenze economiche della gestione precedente.",
+      "fonti": [
+       "Anteprima24"
+      ],
+      "giorno": "2026-10-29"
+     },
      {
       "testo": "Oggi, mercoledì 28 ottobre, lo sciopero di AIR Campania tocca anche i bus di Benevento città, che AIR gestisce da circa tre mesi, oltre alle linee extraurbane che collegano il capoluogo con il resto della regione. Dalle 8 alle 13 e dalle 15 alle 16 le corse possono essere poche: per la mattina si prevedono molti autisti in sciopero, perché hanno aderito tutti i principali sindacati. Dalle 13 alle 15 i bus girano per le fasce di garanzia e dopo le 16 il servizio torna normale. I più colpiti sono studenti, personale delle scuole e chi va al lavoro in bus.",
       "fonti": [
@@ -12412,6 +12774,13 @@
       "fonti": [
        "AIR Campania"
       ]
+     },
+     {
+      "data": "29 ottobre",
+      "fatto": "I sindacati danno i dati: quattro scioperanti a Benevento città, 82% sulle linee extraurbane del Sannio.",
+      "fonti": [
+       "Anteprima24"
+      ]
      }
     ],
     "concordano": [
@@ -12483,15 +12852,21 @@
       "titolo": "Air Campania, sciopero di otto ore e presidio in Regione: Anzalone (Filt Cgil) «La vertenza resta aperta»",
       "url": "https://www.labtv.net/attualita/2026/10/28/air-campania-sciopero-di-otto-ore-e-presidio-in-regione-anzalone-filt-cgil-la-vertenza-resta-aperta/",
       "data": "28 ott, 11:53"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Sciopero regionale Air Campania: bassa adesione a Benevento, si ferma l’82% nell’extraurbano",
+      "url": "https://www.anteprima24.it/benevento/sciopero-regionale-air-campania-bassa-adesione-a-benevento-si-ferma-l82-nellextraurbano/",
+      "data": "29 ott, 15:21"
      }
     ],
     "aggiornamento": {
-     "testo": "Mercoledì 28 ottobre lo sciopero ferma anche i bus di Benevento città: corse ridotte dalle 8 alle 13 e dalle 15 alle 16, regolari dalle 13 alle 15 e dopo le 16.",
+     "testo": "Giovedì 29 ottobre i sindacati hanno dato i dati dello sciopero: a Benevento città hanno aderito quattro lavoratori, sulle linee extraurbane del Sannio l'82% dei turni.",
      "fonti": [
-      "Il Mattino"
+      "Anteprima24"
      ],
-     "quando": "2026-10-28T06:10+01:00",
-     "titolo_prima": "Mercoledì 28 ottobre sciopero di 8 ore in AIR Campania, confermato dai sindacati: possibili riduzioni dei bus extraurbani"
+     "quando": "2026-10-29T16:23+01:00",
+     "titolo_prima": "Mercoledì 28 ottobre sciopero di 8 ore in AIR Campania: pochi bus a Benevento città e sulle linee extraurbane dalle 8 alle 16"
     }
    },
    "rilevante": false,
