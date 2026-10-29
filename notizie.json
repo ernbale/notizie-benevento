@@ -3,6 +3,80 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "benevento-5-arriva-il-portiere-riccardo-ditano",
+   "titolo": "Calcio a 5, il Benevento 5 prende il portiere Riccardo Ditano: già a disposizione per il derby di San Rufo",
+   "titolo_google": "Benevento 5, ufficiale il portiere Riccardo Ditano",
+   "sintesi": "Il GG Team Wear Benevento 5 ha ingaggiato il portiere Riccardo Ditano, nato a Treviso nel 1990, ex Came Treviso, Osijek e Pirossigeno Cosenza. È già a disposizione per la partita di venerdì 30 ottobre alle 20.30 a San Rufo contro lo Sporting Sala Consilina.",
+   "categoria": "sport",
+   "sport": "calcio_a_5",
+   "immagine": "calcio-a-5",
+   "luogo": "Benevento",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 2,
+   "comunicati": [
+    "u8620cbd131d"
+   ],
+   "fonti": [
+    {
+     "nome": "Benevento 5",
+     "url": "https://ssdbenevento5.it/2026/10/29/gg-team-wear-benevento-5-ufficiale-larrivo-di-riccardo-ditano-il-portiere-e-gia-a-disposizione-per-il-derby-di-san-rufo-vogliamo-tornare-a-fare-punti/",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il GG Team Wear Benevento 5, la squadra di calcio a 5 della città, ha un nuovo portiere: è Riccardo Ditano. La società ha annunciato giovedì 29 ottobre l'accordo con il giocatore, che è già a disposizione per la partita di venerdì 30 ottobre contro lo Sporting Sala Consilina.",
+      "fonti": [
+       "Benevento 5"
+      ]
+     },
+     {
+      "testo": "Ditano è nato a Treviso il 1° ottobre 1990. È cresciuto nella Came Treviso, con cui ha esordito in Serie A nella stagione 2020/21 e ha giocato fino al 2023/24. Poi è andato all'Osijek, nella prima serie croata. Nella prima parte di questa stagione ha giocato nella Pirossigeno Cosenza.",
+      "fonti": [
+       "Benevento 5"
+      ]
+     },
+     {
+      "testo": "«Sono molto felice di essere qui a Benevento», dice il portiere, che spiega di aver scelto subito il progetto perché della società si parla molto bene. «Ho trovato un ambiente serio e molto organizzato e sono davvero contento di essere qui. Domani si scende già in campo e voglio dare subito il mio contributo alla squadra: vogliamo rialzarci dopo questo periodo negativo e ritrovare i punti».",
+      "fonti": [
+       "Benevento 5"
+      ]
+     },
+     {
+      "testo": "Quello di venerdì è un altro derby per il Benevento 5: si gioca alle 20.30 al Centro Sportivo Meridionale di San Rufo. La squadra di mister Scarpitti sarà senza gli infortunati Montefalcone e Barichello e senza Pires, squalificato.",
+      "fonti": [
+       "Benevento 5"
+      ]
+     },
+     {
+      "testo": "La partita si potrà vedere in diretta sul canale YouTube della Divisione Calcio a 5. Arbitrano Rosario Angelo Faiella di Castellammare di Stabia e Andrea Cini di Perugia; il cronometrista è Emilio Romano di Nola.",
+      "fonti": [
+       "Benevento 5"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Benevento 5",
+      "titolo": "GG Team Wear Benevento 5, ufficiale l’arrivo di Riccardo Ditano: il portiere è già a disposizione per il derby di San Rufo: “Vogliamo tornare a fare punti”",
+      "url": "https://ssdbenevento5.it/2026/10/29/gg-team-wear-benevento-5-ufficiale-larrivo-di-riccardo-ditano-il-portiere-e-gia-a-disposizione-per-il-derby-di-san-rufo-vogliamo-tornare-a-fare-punti/",
+      "data": "29 ott, 19:23",
+      "ufficiale": true
+     }
+    ]
+   },
+   "subito": true,
+   "pubblicato": "2026-10-29T19:32:32+01:00",
+   "foto": "calcio-a-5-3",
+   "zona": "benevento"
+  },
+  {
    "id": "gal-taburno-annarita-de-blasio-presidente",
    "titolo": "GAL Taburno, Annarita De Blasio è la nuova presidente: rinnovato anche il consiglio di amministrazione",
    "titolo_google": "GAL Taburno, Annarita De Blasio nuova presidente",
