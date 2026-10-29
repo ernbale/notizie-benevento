@@ -70,7 +70,7 @@ jobs:
         run: |
           if ! python3 strumenti/meteo.py; then
             echo "Meteo non aggiornato: tengo quello già pubblicato"
-            curl -fsSL --max-time 30 "https://notiziebenevento.it/meteo.json" -o meteo.json || echo "nessun meteo precedente"
+            curl -fsSL --max-time 30 --retry 4 --retry-all-errors --retry-delay 5 "https://notiziebenevento.it/meteo.json" -o meteo.json || echo "nessun meteo precedente"
           fi
 
       # il meteo completo dei paesi (meteo.html?paese=…, strumenti/meteo.py --paesi): ogni 6 ore, 13 paesi a giro; i
@@ -97,7 +97,7 @@ jobs:
         run: |
           if ! python3 strumenti/meteo_comuni.py --al-massimo-ogni 55; then
             echo "::warning::Meteo dei Comuni non aggiornato: tengo quello già pubblicato"
-            curl -fsSL --max-time 30 "https://notiziebenevento.it/meteo-comuni.json" -o meteo-comuni.json || echo "nessun meteo dei Comuni precedente"
+            curl -fsSL --max-time 30 --retry 4 --retry-all-errors --retry-delay 5 "https://notiziebenevento.it/meteo-comuni.json" -o meteo-comuni.json || echo "nessun meteo dei Comuni precedente"
           fi
 
       # dove sono le strade chiuse, per i tondi della mappa (strumenti/strade_luoghi.py): ogni strada si chiede una volta
@@ -118,7 +118,7 @@ jobs:
             mv carburanti.nuovo carburanti.json
           else
             rm -f carburanti.nuovo
-            curl -fsSL --max-time 30 "https://notiziebenevento.it/carburanti.json" -o carburanti.json || echo "nessun prezzo pubblicato prima"
+            curl -fsSL --max-time 30 --retry 4 --retry-all-errors --retry-delay 5 "https://notiziebenevento.it/carburanti.json" -o carburanti.json || echo "nessun prezzo pubblicato prima"
           fi
 
       # i turni delle farmacie (strumenti/farmacie.py --manda): li legge il Pi di casa dal PDF di Federfarma Benevento e
@@ -132,7 +132,7 @@ jobs:
             mv farmacie.nuovo farmacie.json
           else
             rm -f farmacie.nuovo
-            curl -fsSL --max-time 30 "https://notiziebenevento.it/farmacie.json" -o farmacie.json || echo "nessun turno pubblicato prima"
+            curl -fsSL --max-time 30 --retry 4 --retry-all-errors --retry-delay 5 "https://notiziebenevento.it/farmacie.json" -o farmacie.json || echo "nessun turno pubblicato prima"
           fi
 
       # calendario, risultati e classifica della Serie B per la pagina calcio/ e il riquadro in prima pagina (la diretta
@@ -141,7 +141,7 @@ jobs:
         run: |
           if ! python3 strumenti/calcio.py; then
             echo "::warning::Calcio non aggiornato: tengo quello già pubblicato"
-            curl -fsSL --max-time 30 "https://notiziebenevento.it/calcio.json" -o calcio.json || echo "nessun calcio pubblicato prima"
+            curl -fsSL --max-time 30 --retry 4 --retry-all-errors --retry-delay 5 "https://notiziebenevento.it/calcio.json" -o calcio.json || echo "nessun calcio pubblicato prima"
           fi
 
       # i contributi per il Sannio (pagina contributi/): il catalogo del Ministero da GitHub non si apre (come i carburanti),
@@ -158,7 +158,7 @@ jobs:
           else
             rm -f contributi-catalogo.json
           fi
-          curl -fsSL --max-time 30 "https://notiziebenevento.it/contributi.json" -o contributi-prima.json || rm -f contributi-prima.json
+          curl -fsSL --max-time 30 --retry 4 --retry-all-errors --retry-delay 5 "https://notiziebenevento.it/contributi.json" -o contributi-prima.json || rm -f contributi-prima.json
           if ! python3 strumenti/contributi.py --pubblica --catalogo contributi-catalogo.json --prima contributi-prima.json; then
             echo "::warning::Contributi non aggiornati: tengo quelli già pubblicati"
             if [ -s contributi-prima.json ]; then cp contributi-prima.json contributi.json; fi
@@ -191,7 +191,7 @@ jobs:
       - name: Pagine per Google (una per notizia), sitemap, feed e anteprime
         run: |
           pip install --quiet pillow || echo "::warning::Pillow non installato: anteprime uguali per tutte"
-          curl -fsSL --max-time 30 "https://notiziebenevento.it/sitemap.xml" -o "$RUNNER_TEMP/sitemap-prima.xml" || true
+          curl -fsSL --max-time 30 --retry 4 --retry-all-errors --retry-delay 5 "https://notiziebenevento.it/sitemap.xml" -o "$RUNNER_TEMP/sitemap-prima.xml" || true
           if ! python3 strumenti/pagine.py --sitemap-prima "$RUNNER_TEMP/sitemap-prima.xml" --indexnow "$RUNNER_TEMP/indexnow.json"; then
             echo "::warning::Pagine non generate: il sito funziona lo stesso (404.html apre le notizie nella prima pagina)"
           fi
