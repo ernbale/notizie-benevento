@@ -19,6 +19,8 @@ Sito: https://notiziebenevento.it (notiziebenevento.com rimanda qui)
   i paesi, a turno ogni 6 ore → `meteo-paesi/<paese>.json` (la pagina `meteo.html?paese=<paese>`).
 - `strumenti/meteo_comuni.py`: il meteo di ognuno dei 78 Comuni (Open-Meteo, coordinate in
   `strumenti/comuni_coordinate.json`) → `meteo-comuni.json`, per la colonna di destra delle pagine dei Comuni.
+- `strumenti/guardia_medica.py`: le postazioni della guardia medica dal sito dell'ASL Benevento →
+  `strumenti/guardia_medica.json` (a mano sul Mac); sul Pi ogni mattina `--controlla` avvisa se l'ASL le cambia.
 - `strumenti/strade_luoghi.py`: dove sono le strade chiuse (le legge nel titolo e nel luogo delle notizie con
   «traffico», le cerca una volta sola su OpenStreetMap) → `strade-luoghi.json`, per i tondi della mappa di
   /strade-chiuse/ (lib/leaflet-1.9.4). Gira a ogni pubblicazione, prima di pagine.py.

@@ -1,0 +1,363 @@
+{
+ "aggiornato": "2026-10-29T08:40+00:00",
+ "fonte": "https://www.aslbenevento.it/servizi-funzionali/lista-servizi-funzionali/guardia-medica",
+ "impronta": "b6c5a2278e0c0447",
+ "postazioni": [
+  {
+   "id": "guardia-medica-distretto-di-san-giorgio-del-sannio-della-liberta",
+   "titolo": "Guardia Medica Distretto di San Giorgio del Sannio (Via della Libertà)",
+   "distretto": "San Giorgio del Sannio",
+   "indirizzo": "Viale della Libertà 132/A",
+   "cap": "82021",
+   "comune": "Apice",
+   "telefoni": [
+    "0824874415"
+   ],
+   "orari": "Il servizio è attivo negli orari: notti feriali e festivi 20:00-08:00; il sabato e nei giorni prefestivi 10:00-20:00; la domenica e nei giorni festivi 08:00-20:00.",
+   "fonte": "https://www.aslbenevento.it/servizio-strutturale/guardia-medica-distretto-di-san-giorgio-del-sannio-della-liberta",
+   "lat": 41.11805,
+   "lon": 14.91278,
+   "punto": "via"
+  },
+  {
+   "id": "guardia-medica-distretto-di-alto-sannio-fortore-l-capuano",
+   "titolo": "Guardia Medica Distretto di Alto Sannio Fortore (Via L. Capuano)",
+   "distretto": "Alto Sannio Fortore",
+   "indirizzo": "Via Luigi Capuano",
+   "cap": "82020",
+   "comune": "Baselice",
+   "telefoni": [
+    "0824966267"
+   ],
+   "orari": "Il servizio è attivo negli orari: notti feriali e festivi 20:00 - 08:00; il sabato e nei giorni prefestivi 10:00 - 20:00; la domenica e nei giorni festivi 08:00 - 20:00.",
+   "fonte": "https://www.aslbenevento.it/servizio-strutturale/guardia-medica-distretto-di-alto-sannio-fortore-l-capuano",
+   "lat": 41.393,
+   "lon": 14.9736,
+   "punto": "centro del paese"
+  },
+  {
+   "id": "guardia-medica-distretto-di-benevento-minghetti",
+   "titolo": "Guardia Medica Distretto di Benevento (Via Minghetti)",
+   "distretto": "Benevento",
+   "indirizzo": "Via XXIV Maggio, 24",
+   "cap": "82100",
+   "comune": "Benevento",
+   "telefoni": [
+    "3384904399",
+    "0824308504",
+    "0824363387"
+   ],
+   "orari": "Il servizio è attivo negli orari: notti feriali e festivi 20:00-08:00; il sabato e nei giorni prefestivi 10:00-20:00; la domenica e nei giorni festivi 08:00-20:00.",
+   "fonte": "https://www.aslbenevento.it/servizio-strutturale/guardia-medica-distretto-di-benevento-minghetti",
+   "lat": 41.12925,
+   "lon": 14.78422,
+   "punto": "via"
+  },
+  {
+   "id": "guardia-medica-distretto-di-alto-sannio-fortore-roma",
+   "titolo": "Guardia Medica Distretto di Alto Sannio Fortore (Via Roma)",
+   "distretto": "Alto Sannio Fortore",
+   "indirizzo": "Via Roma, 2",
+   "cap": "82022",
+   "comune": "Castelfranco in Miscano",
+   "telefoni": [
+    "0824960286"
+   ],
+   "orari": "Il servizio è attivo negli orari: notti feriali e festivi 20:00-08:00; il sabato e nei giorni prefestivi 10:00-20:00; la domenica e nei giorni festivi 08:00-20:00.",
+   "fonte": "https://www.aslbenevento.it/servizio-strutturale/guardia-medica-distretto-di-alto-sannio-fortore-roma",
+   "lat": 41.3007,
+   "lon": 15.0861,
+   "punto": "centro del paese"
+  },
+  {
+   "id": "guardia-medica-distretto-di-alto-sannio-fortore-frentana",
+   "titolo": "Guardia Medica Distretto di Alto Sannio Fortore (Via Frentana)",
+   "distretto": "Alto Sannio Fortore",
+   "indirizzo": "Via Frentana, 8/A",
+   "cap": "82023",
+   "comune": "Castelvetere in Val Fortore",
+   "telefoni": [
+    "0824933050"
+   ],
+   "orari": "Il servizio è attivo negli orari: notti feriali e festivi 20:00-08:00; il sabato e nei giorni prefestivi 10:00-20:00; la domenica e nei giorni festivi 08:00-20:00.",
+   "fonte": "https://www.aslbenevento.it/servizio-strutturale/guardia-medica-distretto-di-alto-sannio-fortore-frentana",
+   "lat": 41.44206,
+   "lon": 14.94205,
+   "punto": "via"
+  },
+  {
+   "id": "guardia-medica-distretto-di-benevento-maiellibeltiglio",
+   "titolo": "Guardia Medica Distretto di Benevento (Via Maielli/Beltiglio)",
+   "distretto": "Benevento",
+   "indirizzo": "Via Maielli/Beltiglio",
+   "cap": "82100",
+   "comune": "Ceppaloni",
+   "telefoni": [
+    "082446339"
+   ],
+   "orari": "Il servizio è attivo negli orari: notti feriali e festivi 20:00-08:00; il sabato e nei giorni prefestivi 10:00-20:00; la domenica e nei giorni festivi 08:00-20:00.",
+   "fonte": "https://www.aslbenevento.it/servizio-strutturale/guardia-medica-distretto-di-benevento-maiellibeltiglio",
+   "lat": 41.05932,
+   "lon": 14.74443,
+   "punto": "via"
+  },
+  {
+   "id": "guardia-medica-distretto-di-telese-terme-cesine-di-sopra",
+   "titolo": "Guardia Medica Distretto di Telese Terme (Via Cesine di Sopra)",
+   "distretto": "Telese Terme",
+   "indirizzo": "Via Cesine di Sopra",
+   "cap": "82032",
+   "comune": "Cerreto Sannita",
+   "telefoni": [
+    "0824812202"
+   ],
+   "orari": "Il servizio è attivo negli orari: notti feriali e festivi 20:00-08:00; il sabato e nei giorni prefestivi 10:00-20:00; la domenica e nei giorni festivi 08:00-20:00.",
+   "fonte": "https://www.aslbenevento.it/servizio-strutturale/guardia-medica-distretto-di-telese-terme-cesine-di-sopra",
+   "lat": 41.27383,
+   "lon": 14.56998,
+   "punto": "via"
+  },
+  {
+   "id": "guardia-medica-distretto-di-alto-sannio-fortore-roma-circello",
+   "titolo": "Guardia Medica Distretto di Alto Sannio Fortore (Via Roma, Circello)",
+   "distretto": "Alto Sannio Fortore",
+   "indirizzo": "Via Roma, 113",
+   "cap": "82020",
+   "comune": "Circello",
+   "telefoni": [
+    "0824937207"
+   ],
+   "orari": "Il servizio è attivo negli orari: notti feriali e festivi 20:00-08:00; il sabato e nei giorni prefestivi 10:00-20:00; la domenica e nei giorni festivi 08:00-20:00.",
+   "fonte": "https://www.aslbenevento.it/servizio-strutturale/guardia-medica-distretto-di-alto-sannio-fortore-roma-circello",
+   "lat": 41.3546,
+   "lon": 14.8091,
+   "punto": "centro del paese"
+  },
+  {
+   "id": "guardia-medica-distretto-di-alto-sannio-fortore-san-vito",
+   "titolo": "Guardia Medica Distretto di Alto Sannio Fortore (Via San Vito)",
+   "distretto": "Alto Sannio Fortore",
+   "indirizzo": "Via San Vito, 10",
+   "cap": "82020",
+   "comune": "Fragneto Monforte",
+   "telefoni": [
+    "0824986166"
+   ],
+   "orari": "Il servizio è attivo negli orari: notti feriali e festivi 20:00-08:00; il sabato e nei giorni prefestivi 10:00-20:00; la domenica e nei giorni festivi 08:00-20:00.",
+   "fonte": "https://www.aslbenevento.it/servizio-strutturale/guardia-medica-distretto-di-alto-sannio-fortore-san-vito",
+   "lat": 41.24421,
+   "lon": 14.7643,
+   "punto": "via"
+  },
+  {
+   "id": "presidio-di-continuita-assistenziale-ex-guardia-medica-distretto-di-montesarchio-frasso-telesino-calandra",
+   "titolo": "Presidio di Continuità Assistenziale (ex Guardia Medica) Distretto di Montesarchio (Frasso Telesino, Via Calandra)",
+   "distretto": "Montesarchio",
+   "indirizzo": "Via Amedeo Calandra, 1",
+   "cap": "82030",
+   "comune": "Frasso Telesino",
+   "telefoni": [
+    "0824979320"
+   ],
+   "orari": "Il servizio è attivo negli orari: notti feriali e festivi 20:00-08:00; il sabato e nei giorni prefestivi 10:00-20:00; la domenica e nei giorni festivi 08:00-20:00.",
+   "fonte": "https://www.aslbenevento.it/servizio-strutturale/presidio-di-continuita-assistenziale-ex-guardia-medica-distretto-di-montesarchio-frasso-telesino-calandra",
+   "lat": 41.1568,
+   "lon": 14.5278,
+   "punto": "centro del paese"
+  },
+  {
+   "id": "presidio-di-continuita-assistenziale-ex-guardia-medica-distretto-di-montesarchio-moiano-della-valle",
+   "titolo": "Presidio di Continuità Assistenziale (ex Guardia Medica) Distretto di Montesarchio (Moiano, Via Della Valle)",
+   "distretto": "Montesarchio",
+   "indirizzo": "Via Della Valle",
+   "cap": "82010",
+   "comune": "Moiano",
+   "telefoni": [
+    "0823715191"
+   ],
+   "orari": "Il servizio è attivo negli orari: notti feriali e festivi 20:00-08:00; il sabato e nei giorni prefestivi 10:00-20:00; la domenica e nei giorni festivi 08:00-20:00.",
+   "fonte": "https://www.aslbenevento.it/servizio-strutturale/presidio-di-continuita-assistenziale-ex-guardia-medica-distretto-di-montesarchio-moiano-della-valle",
+   "lat": 41.0797,
+   "lon": 14.5443,
+   "punto": "centro del paese"
+  },
+  {
+   "id": "guardia-medica-distretto-di-alto-sannio-fortore-rione-s-marco",
+   "titolo": "Guardia Medica Distretto di Alto Sannio Fortore (Rione S. Marco)",
+   "distretto": "Alto Sannio Fortore",
+   "indirizzo": "Rione San Marco",
+   "cap": "82025",
+   "comune": "Montefalcone di Val Fortore",
+   "telefoni": [
+    "0824969272"
+   ],
+   "orari": "Il servizio è attivo negli orari: notti feriali e festivi 20:00-08:00; il sabato e nei giorni prefestivi 10:00-20:00; la domenica e nei giorni festivi 08:00-20:00.",
+   "fonte": "https://www.aslbenevento.it/servizio-strutturale/guardia-medica-distretto-di-alto-sannio-fortore-rione-s-marco",
+   "lat": 41.32361,
+   "lon": 15.01031,
+   "punto": "via"
+  },
+  {
+   "id": "presidio-di-continuita-assistenziale-ex-guardia-medica-distretto-di-montesarchio-montesarchio-ignazio-silone",
+   "titolo": "Presidio di Continuità Assistenziale (ex Guardia Medica) Distretto di Montesarchio (Montesarchio, Via Ignazio Silone)",
+   "distretto": "Montesarchio",
+   "indirizzo": "Via Napoli, 113",
+   "cap": "82016",
+   "comune": "Montesarchio",
+   "telefoni": [
+    "0824835939"
+   ],
+   "orari": "Il servizio è attivo negli orari: notti feriali e festivi 20:00-08:00; il sabato e nei giorni prefestivi 10:00-20:00; la domenica e nei giorni festivi 08:00-20:00.",
+   "fonte": "https://www.aslbenevento.it/servizio-strutturale/presidio-di-continuita-assistenziale-ex-guardia-medica-distretto-di-montesarchio-montesarchio-ignazio-silone",
+   "lat": 41.05638,
+   "lon": 14.62552,
+   "punto": "via"
+  },
+  {
+   "id": "guardia-medica-distretto-di-san-giorgio-del-sannio-marcarelli",
+   "titolo": "Guardia Medica Distretto di San Giorgio del Sannio (Via Marcarelli)",
+   "distretto": "San Giorgio del Sannio",
+   "indirizzo": "Via Marcarelli",
+   "cap": "82020",
+   "comune": "Paduli",
+   "telefoni": [
+    "0824922569"
+   ],
+   "orari": "Il servizio è attivo negli orari: notti feriali e festivi 20:00-08:00; il sabato e nei giorni prefestivi 10:00-20:00; la domenica e nei giorni festivi 08:00-20:00.",
+   "fonte": "https://www.aslbenevento.it/servizio-strutturale/guardia-medica-distretto-di-san-giorgio-del-sannio-marcarelli",
+   "lat": 41.1679,
+   "lon": 14.8869,
+   "punto": "centro del paese"
+  },
+  {
+   "id": "guardia-medica-distretto-di-san-giorgio-del-sannio-dello-sport",
+   "titolo": "Guardia Medica Distretto di San Giorgio del Sannio (Via dello Sport)",
+   "distretto": "San Giorgio del Sannio",
+   "indirizzo": "Contrada Guardiola 50",
+   "cap": "82020",
+   "comune": "Pietrelcina",
+   "telefoni": [
+    "08241958143",
+    "0824991513"
+   ],
+   "orari": "Il servizio è attivo negli orari: notti feriali e festivi 20:00-08:00; il sabato e nei giorni prefestivi 10:00-20:00; la domenica e nei giorni festivi 08:00-20:00.",
+   "fonte": "https://www.aslbenevento.it/servizio-strutturale/guardia-medica-distretto-di-san-giorgio-del-sannio-dello-sport",
+   "lat": 41.1994,
+   "lon": 14.8441,
+   "punto": "centro del paese"
+  },
+  {
+   "id": "guardia-medica-distretto-di-san-giorgio-del-sannio-venditti",
+   "titolo": "Guardia Medica Distretto di San Giorgio del Sannio (Via Venditti)",
+   "distretto": "San Giorgio del Sannio",
+   "indirizzo": "Via Venditti",
+   "cap": "82030",
+   "comune": "Ponte",
+   "telefoni": [
+    "08241623156"
+   ],
+   "orari": "Il servizio è attivo negli orari: notti feriali e festivi 20:00-08:00; il sabato e nei giorni prefestivi 10:00-20:00; la domenica e nei giorni festivi 08:00-20:00.",
+   "fonte": "https://www.aslbenevento.it/servizio-strutturale/guardia-medica-distretto-di-san-giorgio-del-sannio-venditti",
+   "lat": 41.21963,
+   "lon": 14.69326,
+   "punto": "via"
+  },
+  {
+   "id": "guardia-medica-distretto-di-alto-sannio-fortore-piane",
+   "titolo": "Guardia Medica Distretto di Alto Sannio Fortore (Via Piane)",
+   "distretto": "Alto Sannio Fortore",
+   "indirizzo": "Via Piane, 19",
+   "cap": "82020",
+   "comune": "San Giorgio La Molara",
+   "telefoni": [
+    "0824983101"
+   ],
+   "orari": "Il servizio è attivo negli orari: notti feriali e festivi 20:00-08:00; il sabato e nei giorni prefestivi 10:00-20:00; la domenica e nei giorni festivi 08:00-20:00.",
+   "fonte": "https://www.aslbenevento.it/servizio-strutturale/guardia-medica-distretto-di-alto-sannio-fortore-piane",
+   "lat": 41.2767,
+   "lon": 14.931,
+   "punto": "centro del paese"
+  },
+  {
+   "id": "guardia-medica-distretto-di-alto-sannio-fortore-largo-ariella",
+   "titolo": "Guardia Medica Distretto di Alto Sannio Fortore (Largo Ariella)",
+   "distretto": "Alto Sannio Fortore",
+   "indirizzo": "Largo Ariella, 14",
+   "cap": "82029",
+   "comune": "San Marco dei Cavoti",
+   "telefoni": [
+    "0824984606",
+    "0824984076"
+   ],
+   "orari": "Il servizio è attivo negli orari: notti feriali e festivi 20:00-08:00; il sabato e nei giorni prefestivi 10:00-20:00; la domenica e nei giorni festivi 08:00-20:00.",
+   "fonte": "https://www.aslbenevento.it/servizio-strutturale/guardia-medica-distretto-di-alto-sannio-fortore-largo-ariella",
+   "lat": 41.31232,
+   "lon": 14.87996,
+   "punto": "via"
+  },
+  {
+   "id": "presidio-di-continuita-assistenziale-ex-guardia-medica-distretto-di-montesarchio-santagata-dei-goti-starza",
+   "titolo": "Presidio di Continuità Assistenziale (ex Guardia Medica) Distretto di Montesarchio (Sant'Agata dei Goti, Via Starza)",
+   "distretto": "Montesarchio",
+   "indirizzo": "Via Riello",
+   "cap": "82019",
+   "comune": "Sant'Agata de' Goti",
+   "telefoni": [
+    "0823953327"
+   ],
+   "orari": "Il servizio è attivo negli orari: notti feriali e festivi 20:00-08:00; il sabato e nei giorni prefestivi 10:00-20:00; la domenica e nei giorni festivi 08:00-20:00.",
+   "fonte": "https://www.aslbenevento.it/servizio-strutturale/presidio-di-continuita-assistenziale-ex-guardia-medica-distretto-di-montesarchio-santagata-dei-goti-starza",
+   "lat": 41.0931,
+   "lon": 14.50477,
+   "punto": "via"
+  },
+  {
+   "id": "guardia-medica-distretto-di-san-giorgio-del-sannio-dante",
+   "titolo": "Guardia Medica Distretto di San Giorgio del Sannio (Via Dante)",
+   "distretto": "San Giorgio del Sannio",
+   "indirizzo": "Via Dante, 4",
+   "cap": "82010",
+   "comune": "Sant'Angelo a Cupolo",
+   "telefoni": [
+    "082441522"
+   ],
+   "orari": "Il servizio è attivo negli orari: notti feriali e festivi 20:00-08:00; il sabato e nei giorni prefestivi 10:00-20:00; la domenica e nei giorni festivi 08:00-20:00.",
+   "fonte": "https://www.aslbenevento.it/servizio-strutturale/guardia-medica-distretto-di-san-giorgio-del-sannio-dante",
+   "lat": 41.0691,
+   "lon": 14.8037,
+   "punto": "centro del paese"
+  },
+  {
+   "id": "guardia-medica-distretto-di-alto-sannio-fortore-santantonio",
+   "titolo": "Guardia Medica Distretto di Alto Sannio Fortore (Via Sant'Antonio)",
+   "distretto": "Alto Sannio Fortore",
+   "indirizzo": "Via Sant'Antonio, 1",
+   "cap": "82020",
+   "comune": "Santa Croce del Sannio",
+   "telefoni": [
+    "0824950046"
+   ],
+   "orari": "Il servizio è attivo negli orari: notti feriali e festivi 20:00-08:00; il sabato e nei giorni prefestivi 10:00-20:00; la domenica e nei giorni festivi 08:00-20:00.",
+   "fonte": "https://www.aslbenevento.it/servizio-strutturale/guardia-medica-distretto-di-alto-sannio-fortore-santantonio",
+   "lat": 41.38735,
+   "lon": 14.73414,
+   "punto": "via"
+  },
+  {
+   "id": "guardia-medica-distretto-di-telese-terme-telesini",
+   "titolo": "Guardia Medica Distretto di Telese Terme (Via Telesini)",
+   "distretto": "Telese Terme",
+   "indirizzo": "Viale dei Pini",
+   "cap": "82036",
+   "comune": "Solopaca",
+   "telefoni": [
+    "0824977321"
+   ],
+   "orari": "Il servizio è attivo negli orari: notti feriali e festivi 20:00-08:00; il sabato e nei giorni prefestivi 10:00-20:00; la domenica e nei giorni festivi 08:00-20:00.",
+   "fonte": "https://www.aslbenevento.it/servizio-strutturale/guardia-medica-distretto-di-telese-terme-telesini",
+   "lat": 41.19465,
+   "lon": 14.55023,
+   "punto": "via"
+  }
+ ]
+}

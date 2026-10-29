@@ -98,8 +98,16 @@ sempre sono una cosa utile»), cliccabile (tel:), preso da una fonte ufficiale: 
 - **Nomi delle farmacie:** quello dei calendari («Viglione», «Lombardi») o la ragione sociale; mai il titolare (nome e
   cognome di una persona): l'elenco pubblico (farmacie.json) non lo porta, neanche quando la ragione sociale è il suo
   nome («Dott. Lombardi Giuseppe» → «Lombardi»). Se non c'è altro: «Farmacia di <paese>».
-- Prossime, una per volta e pianificate prima con lui: guardia medica (ASL), mercati, raccolta differenziata, ZTL,
-  numeri utili. Niente riquadri «in arrivo».
+- **Guardia medica** (/guardia-medica/, lui 29 ott 2026: «b ok metti quelli disponibili ordine per distanza»): le 22
+  postazioni del sito dell'ASL Benevento (strumenti/guardia_medica.py → strumenti/guardia_medica.json, fatto sul Mac;
+  il Pi ogni mattina con --controlla avvisa lui se l'ASL le cambia, e il file si rifà a mano dopo averlo guardato).
+  L'ASL non dice quale postazione serve ogni paese: tutte, dalla più vicina in linea d'aria al paese scelto («Il tuo
+  paese», ?paese=, se lo ricorda), e la pagina lo dice. Vale l'indirizzo del campo «Luogo» della scheda (il titolo a
+  volte dice un'altra via). Orari uguali per tutte (stato_gm in pagine.py, gmStato in index.html, provati uguali su
+  3.000 orari): ogni notte 20-8, sabato e prefestivi 10-20, domenica e festivi 8-20, feste nazionali più Pasqua e
+  Pasquetta (non San Bartolomeo). Riquadro con le 3 più vicine nelle pagine dei Comuni, riga in Servizi, sempre il 118.
+- Prossime, una per volta e pianificate prima con lui: mercati, raccolta differenziata, ZTL, numeri utili. Niente
+  riquadri «in arrivo».
 - **La mappa delle strade chiuse** (punto 3, «dati che gli altri citano»; lui, 29 ott 2026: «si vai»): in cima a
   /strade-chiuse/ un tondo per strada, rosso se qualcosa vale oggi, arancione se solo nei prossimi giorni, col numero
   quando le notizie sono più di una; toccandolo, le notizie con il link. I tondi vicini a mappa intera diventano uno

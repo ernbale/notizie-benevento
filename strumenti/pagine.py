@@ -1669,17 +1669,135 @@ def farmacie_fasce(aree, paesi, adesso):
             "paesi": {s: a for s, (_, a) in paesi.items()}}
 
 
+# ---------- la guardia medica (strumenti/guardia_medica.py → strumenti/guardia_medica.json, 29 ott 2026) ----------
+# Gli orari dell'ASL Benevento, uguali per tutte le postazioni: ogni notte dalle 20 alle 8, il sabato e i prefestivi
+# dalle 10 alle 20, la domenica e i festivi dalle 8 alle 20. Le feste: quelle nazionali, Pasqua e Pasquetta (non San
+# Bartolomeo, che è la festa di Benevento). Dal sabato alle 10 al lunedì alle 8 è aperta di fila: «fino a» è la fine
+# del pezzo intero. index.html (gmStato) rifà «adesso» ogni minuto con le stesse regole.
+FESTE_GM = FESTE - {(8, 24)}
+ORARI_GM = "Ogni notte dalle 20 alle 8; il sabato e i prefestivi dalle 10 alle 20; la domenica e i festivi dalle 8 alle 20."
+
+
+def festivo_gm(d):
+    return d.weekday() == 6 or (d.month, d.day) in FESTE_GM or d in (pasqua(d.year), pasqua(d.year) + dt.timedelta(days=1))
+
+
+def _aperture_gm(d):
+    """I pezzi di apertura di un giorno, in minuti da mezzanotte."""
+    giorno = (8 * 60, 20 * 60) if festivo_gm(d) else (10 * 60, 20 * 60) \
+        if d.weekday() == 5 or festivo_gm(d + dt.timedelta(days=1)) else None
+    return [(0, 8 * 60)] + ([giorno] if giorno else []) + [(20 * 60, 24 * 60)]
+
+
+def stato_gm(t):
+    """(aperta, testo) per l'ora t: «Aperta adesso, fino alle 8 di domani», «Chiusa adesso: apre alle 20»."""
+    t = t.replace(tzinfo=None, second=0, microsecond=0)
+    pezzi = []
+    for k in range(-1, 5):
+        d = t.date() + dt.timedelta(days=k)
+        base = dt.datetime.combine(d, dt.time())
+        for a, b in _aperture_gm(d):
+            pezzi.append([base + dt.timedelta(minutes=a), base + dt.timedelta(minutes=b)])
+    uniti = []
+    for p in sorted(pezzi):
+        if uniti and p[0] <= uniti[-1][1]:
+            uniti[-1][1] = max(uniti[-1][1], p[1])
+        else:
+            uniti.append(p)
+
+    def quando(x):
+        g = (x.date() - t.date()).days
+        ora = f"alle {x.hour}" + (f":{x.minute:02d}" if x.minute else "")
+        return ora if g == 0 else f"{ora} di domani" if g == 1 else f"{ora} di {GIORNI[x.weekday()]}"
+    for a, b in uniti:
+        if a <= t < b:
+            return True, f"Aperta adesso, fino {quando(b)}"
+        if t < a:
+            return False, f"Chiusa adesso: apre {quando(a)}"
+    return False, "Chiusa adesso"
+
+
+def _km(a, b):
+    import math
+    la1, lo1, la2, lo2 = map(math.radians, (a[0], a[1], b[0], b[1]))
+    h = math.sin((la2 - la1) / 2) ** 2 + math.cos(la1) * math.cos(la2) * math.sin((lo2 - lo1) / 2) ** 2
+    return 12742 * math.asin(math.sqrt(h))
+
+
+def _dist_gm(km, stesso):
+    return f"nel paese, a {km:.0f} km" if stesso and km >= 1.5 else "nel paese" if stesso else \
+        f"a {max(1, round(km))} km in linea d'aria"
+
+
+def _voce_gm(p, km, stesso):
+    tel = "".join(_telefono({"telefono": t}) for t in p["telefoni"])
+    q = urllib.parse.quote(f"Guardia medica, {p['indirizzo']}, {p['comune']}")
+    return (f'<li data-lat="{p["lat"]}" data-lon="{p["lon"]}" data-comune="{e(p["comune"])}"><div class="occhiello gm-km">'
+            f'{e(_dist_gm(km, stesso))}</div><b class="farm-nome">Guardia medica di {e(p["comune"])}</b><span class="dove">'
+            f'{e(p["indirizzo"])} · {tel}<a href="https://www.google.com/maps/search/?api=1&amp;query={q}" target="_blank" '
+            'rel="noopener nofollow">mappa</a></span></li>')
+
+
+def postazioni_vicine(c, gm, coord):
+    """[(km, postazione)] dalla più vicina al paese c."""
+    k = coord.get(slug(c)) or coord["benevento"]
+    return sorted(((_km((k["lat"], k["lon"]), (p["lat"], p["lon"])), p) for p in gm.get("postazioni") or []),
+                  key=lambda x: (x[1]["comune"] != c, x[0]))
+
+
+def _box_adesso_gm(adesso, giorno=True):
+    ap, testo_ = stato_gm(adesso)
+    return ((f'<div class="occhiello">{e(_giorno_chiusura(adesso.date().isoformat(), adesso.date()))}</div>' if giorno else "")
+            + f'<p class="gm-adesso{" aperta" if ap else ""}">{e(testo_)}</p>')
+
+
+def html_guardia_medica(gm, coord, adesso):
+    h = _testata_pagina("Servizi", "", "Guardia medica a Benevento e nel Sannio", [("Servizi", "/servizi/"), ("Guardia medica", None)])
+    n = len(gm.get("postazioni") or [])
+    h += ('<p class="sommario">La guardia medica (continuità assistenziale) dell\'ASL Benevento: il medico per i problemi '
+          "urgenti quando il medico di famiglia non c'è, di notte, il sabato e nei festivi, anche per chi non è residente. "
+          f"Qui le {n} postazioni della provincia con indirizzo e telefono, in ordine di distanza dal tuo paese.</p>")
+    h += (f'<div class="avv-speciale farm-adesso gm-box">{_box_adesso_gm(adesso)}<p class="gm-orari">{e(ORARI_GM)}</p>'
+          '<p class="gm-118">Per le emergenze chiama il <a href="tel:118">118</a>.</p></div>')
+    h += ('<div class="cb-comandi farm-scelta"><label>Il tuo paese <select id="gm-paese">'
+          + "".join(f'<option value="{e(s)}">{e(v["nome"])}</option>'
+                    for s, v in sorted(coord.items(), key=lambda kv: (kv[0] != "benevento", kv[1]["nome"])))
+          + "</select></label></div>")
+    h += '<ul class="notizie-comune gm-lista">' + "".join(
+        _voce_gm(p, km, p["comune"] == "Benevento") for km, p in postazioni_vicine("Benevento", gm, coord)) + "</ul>"
+    h += ('<p class="agg-chiusure">L\'ASL non pubblica quale postazione serve ogni paese: le mettiamo in ordine di distanza in '
+          "linea d'aria dal paese che scegli. Indirizzi, telefoni e orari sono quelli del "
+          f'<a href="{e(gm.get("fonte") or "https://www.aslbenevento.it")}" target="_blank" rel="noopener nofollow">sito '
+          "dell'ASL Benevento</a>, che controlliamo ogni giorno.</p>")
+    h += '<p class="collegate"><a href="/servizi/">Tutti i servizi ›</a></p>'
+    h += SEGUI
+    return f'<article class="appro farmacie gm">{h}</article>'
+
+
+def html_gm_comune(c, gm, coord, adesso):
+    """Il riquadro «Guardia medica» nella pagina di un Comune: le 3 postazioni più vicine, col telefono."""
+    vicine = postazioni_vicine(c, gm, coord)[:3]
+    if not vicine:
+        return ""
+    return (f'<section class="farm-comune gm-comune"><h3 class="titolo-col">Guardia medica</h3>'
+            f'<div class="avv-speciale farm-adesso">{_box_adesso_gm(adesso, False)}</div><ul class="notizie-comune">'
+            + "".join(_voce_gm(p, km, p["comune"] == c) for km, p in vicine)
+            + f'</ul><p class="collegate"><a href="/guardia-medica/?paese={e(slug(c))}">Tutte le postazioni e gli orari ›</a>'
+            "</p></section>")
+
+
 def html_servizi(righe):
     """La pagina Servizi: un riquadro per servizio (titolo, la riga di adesso, a cosa serve), nello stile di «Strade
     chiuse». righe = [(link, occhiello, titolo, adesso, cosa)]."""
     h = _testata_pagina("Servizi", "", "Servizi utili a Benevento e nel Sannio", [("Servizi", None)])
     h += ('<p class="sommario">Le cose che servono ogni giorno a Benevento e nei paesi del Sannio: la farmacia di '
-          "turno, le strade e le scuole chiuse, i prezzi dei carburanti, il meteo e gli avvisi dei Comuni, aggiornati "
-          "di continuo.</p>")
+          "turno, la guardia medica, le strade e le scuole chiuse, i prezzi dei carburanti, il meteo e gli avvisi dei "
+          "Comuni, aggiornati di continuo.</p>")
     h += '<ul class="notizie-comune servizi">'
     for link, occh, titolo, ora, cosa in righe:
         h += (f'<li><div class="occhiello">{e(occh)}</div><a href="{e(link)}">{e(titolo)}</a>'
-              + (f'<span class="dove{" farm-riga" if link == "/farmacie-di-turno/" else ""}">{e(ora)}</span>' if ora else "")
+              + (f'<span class="dove{ {"/farmacie-di-turno/": " farm-riga", "/guardia-medica/": " gm-riga"}.get(link, "")}">'
+                 f'{e(ora)}</span>' if ora else "")
               + f"<p>{e(cosa)}</p></li>")
     h += "</ul>" + SEGUI
     return f'<article class="appro">{h}</article>'
@@ -2674,7 +2792,7 @@ def main():
         con_immagini = False
         print("AVVISO: Pillow non c'è, uso l'immagine del sito per tutte le notizie", file=sys.stderr)
     for d in ("notizia", "approfondimento", "sezione", "zona", "evento", "comune", "comuni", "carburanti", "curiosita", "calcio",
-              "servizi", "farmacie-di-turno"):
+              "servizi", "farmacie-di-turno", "guardia-medica"):
         shutil.rmtree(os.path.join(sito, d), ignore_errors=True)
     per_id = {n["id"]: n for n in notizie}
     usate, mappa = set(), []   # mappa: (url, lastmod)
@@ -3015,6 +3133,30 @@ def main():
         json.dump(farmacie_fasce(aree_f, paesi_f, adesso_it), f_, ensure_ascii=False, separators=(",", ":"))
     mappa.append((url, (farm.get("fonte") or {}).get("modificato") or farm.get("aggiornato")))
 
+    # la guardia medica (strumenti/guardia_medica.py): le postazioni dell'ASL, in ordine di distanza dal paese scelto
+    try:
+        gm = leggi(os.path.join(QUI, "guardia_medica.json")) or {}
+    except (OSError, ValueError):
+        gm = {}
+    with open(os.path.join(QUI, "comuni_coordinate.json"), encoding="utf-8") as f_:
+        coord_c = json.load(f_)
+    url = SITO + "/guardia-medica/"
+    seo = blocco_seo(f"Guardia medica a Benevento e nel Sannio: orari, indirizzi e telefoni – {NOME}", "La guardia "
+                     "medica dell'ASL Benevento: se è aperta adesso, gli orari e le postazioni della provincia con "
+                     "indirizzo e telefono, dalla più vicina al tuo paese.", url, "/condivisione.png",
+                     jsonld={"@context": "https://schema.org", "@type": "WebPage", "name": "Guardia medica a Benevento e nel Sannio",
+                             "url": url, "isPartOf": {"@type": "WebSite", "name": NOME, "url": SITO + "/"},
+                             "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [
+                                 {"@type": "ListItem", "position": 1, "name": NOME, "item": SITO + "/"},
+                                 {"@type": "ListItem", "position": 2, "name": "Servizi", "item": SITO + "/servizi/"},
+                                 {"@type": "ListItem", "position": 3, "name": "Guardia medica"}]}})
+    if gm.get("postazioni"):
+        scrivi(os.path.join(sito, "guardia-medica", "index.html"),
+               pagina(modello, seo, {"statica": True, "gm": {
+                   "comuni": {k: [v["lat"], v["lon"], v["nome"]] for k, v in coord_c.items()}}},
+                      html_guardia_medica(gm, coord_c, adesso_it), articolo=True))
+        mappa.append((url, str(gm.get("aggiornato") or "")[:10] or None))
+
     # la pagina Servizi: un riquadro per servizio, con la riga di adesso dove il sito ha il dato
     cur_f, poi_f = adesso_e_poi(aree_f["benevento"]["fasce"], adesso_it)
     r_farm = " · ".join(x for x in (
@@ -3034,6 +3176,9 @@ def main():
     righe = [
         ("/farmacie-di-turno/", "Salute", "Farmacie di turno", r_farm,
          "La farmacia di turno adesso e stanotte, a Benevento e in tutti i paesi, con telefono, mappa e orari."),
+        *([("/guardia-medica/", "Salute", "Guardia medica", stato_gm(adesso_it)[1],
+            f"Le {len(gm['postazioni'])} postazioni della provincia con indirizzo e telefono, dalla più vicina al tuo "
+            "paese, e se adesso è aperta.")] if gm.get("postazioni") else []),
         ("/strade-chiuse/", "Strade", "Strade chiuse", f"Oggi: {n_strade} " + ("strada chiusa o con lavori" if n_strade == 1
                                                                                 else "strade chiuse o con lavori") if n_strade else "Oggi nessuna strada chiusa annunciata",
          "Strade chiuse, sensi unici, lavori e bus deviati a Benevento e in provincia, oggi e nei prossimi giorni."),
@@ -3053,8 +3198,8 @@ def main():
     ]
     url = SITO + "/servizi/"
     seo = blocco_seo(f"Servizi a Benevento: farmacie di turno, strade chiuse, carburanti, meteo – {NOME}", "Quello che "
-                     "serve ogni giorno a Benevento e nel Sannio: farmacie di turno, strade e scuole chiuse, "
-                     "carburanti, meteo, avvisi dei Comuni e agevolazioni.", url, "/condivisione.png",
+                     "serve ogni giorno a Benevento e nel Sannio: farmacie di turno, guardia medica, strade e scuole "
+                     "chiuse, carburanti, meteo, avvisi e agevolazioni.", url, "/condivisione.png",
                      jsonld={"@context": "https://schema.org", "@type": "CollectionPage", "name": "Servizi utili a Benevento e nel Sannio",
                              "url": url, "isPartOf": {"@type": "WebSite", "name": NOME, "url": SITO + "/"}})
     scrivi(os.path.join(sito, "servizi", "index.html"),
@@ -3183,7 +3328,9 @@ def main():
         scrivi(os.path.join(sito, url_comune(c).strip("/"), "index.html"),
                pagina(modello, seo, {"statica": True},
                       html_comune(c, dentro, evc, allerte, stemmi.get(c), oggi, distributori.get(c, 0),
-                                  html_farmacia_comune(c, aree_f, paesi_f, adesso_it), meteo_c.get(slug(c)),
+                                  html_farmacia_comune(c, aree_f, paesi_f, adesso_it)
+                                  + (html_gm_comune(c, gm, coord_c, adesso_it) if gm.get("postazioni") else ""),
+                                  meteo_c.get(slug(c)),
                                   vicine, NOMI_ZONA.get(zona_c, "Sannio")), articolo=True))
         if visibile:
             indicizzate += 1
