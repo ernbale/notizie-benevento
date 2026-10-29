@@ -76,7 +76,7 @@ jobs:
       # il meteo di ogni Comune per le loro pagine (strumenti/meteo_comuni.py, Open-Meteo): se non risponde resta quello di prima
       - name: Meteo dei Comuni
         run: |
-          if ! python3 strumenti/meteo_comuni.py; then
+          if ! python3 strumenti/meteo_comuni.py --al-massimo-ogni 55; then
             echo "::warning::Meteo dei Comuni non aggiornato: tengo quello già pubblicato"
             curl -fsSL --max-time 30 "https://notiziebenevento.it/meteo-comuni.json" -o meteo-comuni.json || echo "nessun meteo dei Comuni precedente"
           fi

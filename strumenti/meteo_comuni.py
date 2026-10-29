@@ -7,7 +7,10 @@ home… meteo e farmacia sempre nella colonna di destra», «meteo del comune si
 sceglie lui per quel punto («best match»), con una richiesta per tutti insieme (le coordinate sono in
 strumenti/comuni_coordinate.json, prese il 29 ott 2026 dal geocoding di Open-Meteo, tutte in provincia di Benevento).
 Per ogni Comune: adesso (temperatura, tempo, giorno o notte) e oggi, domani e dopodomani (massima, minima, tempo,
-probabilità di pioggia). Lo esegue GitHub a ogni pubblicazione, dopo meteo.py; se non risponde resta quello di prima.
+probabilità di pioggia). Lo esegue GitHub a ogni pubblicazione, dopo meteo.py, ma chiede a Open-Meteo al massimo una
+volta l'ora (--al-massimo-ogni): le pubblicazioni sono anche 150 al giorno e 78 Comuni ogni volta supererebbero il limite
+gratuito di Open-Meteo (10.000 richieste al giorno); nelle altre tiene il file già sul sito. Se non risponde resta
+quello di prima.
 
 Uso:  python3 strumenti/meteo_comuni.py [--uscita meteo-comuni.json]
 Esce con codice 1 senza scrivere niente se i dati non arrivano o non tornano.
@@ -48,7 +51,23 @@ def condizione(codice, prob=None):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--uscita", default=os.path.join(os.path.dirname(QUI), "meteo-comuni.json"))
+    ap.add_argument("--al-massimo-ogni", type=int, default=0, metavar="MINUTI",
+                    help="se il file sul sito è più giovane di così, si tiene quello (niente richieste a Open-Meteo)")
     a = ap.parse_args()
+    if a.al_massimo_ogni:
+        try:
+            req = urllib.request.Request(f"https://notiziebenevento.it/meteo-comuni.json?t={int(dt.datetime.now().timestamp())}",
+                                         headers={"User-Agent": UA})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                sul_sito = json.load(r)
+            eta = dt.datetime.now(dt.timezone.utc) - dt.datetime.fromisoformat(sul_sito["aggiornato"])
+            if eta < dt.timedelta(minutes=a.al_massimo_ogni) and len(sul_sito.get("comuni") or {}) >= 70:
+                with open(a.uscita, "w", encoding="utf-8") as f:
+                    json.dump(sul_sito, f, ensure_ascii=False, separators=(",", ":"))
+                print(f"meteo dei Comuni: tengo quello sul sito ({int(eta.total_seconds() // 60)} minuti fa)")
+                return
+        except Exception as e:   # il file non c'è o il sito non risponde: si chiede a Open-Meteo
+            print(f"meteo dei Comuni: file sul sito non letto ({type(e).__name__}), lo rifaccio", file=sys.stderr)
     with open(os.path.join(QUI, "comuni_coordinate.json"), encoding="utf-8") as f:
         comuni = json.load(f)
     chiavi = list(comuni)
