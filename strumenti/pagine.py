@@ -64,16 +64,16 @@ SEZIONI = [
      "Politica a Benevento e nel Sannio", "Consiglio comunale, Provincia, Regione e paesi del Sannio: "
      "le notizie di politica di Benevento confrontate tra i giornali locali."),
     ("sezione/sport", {"cat": "sport"}, "Sport Benevento e Sannio: calcio, basket, pallavolo, rugby, scherma",
-     "Sport a Benevento e nel Sannio", "Il Benevento e tutte le squadre e gli atleti del Sannio: calcio, calcio a 5, "
-     "basket, pallavolo, rugby, scherma, atletica e gli altri sport, con risultati e notizie confrontate tra i giornali locali."),
+     "Sport a Benevento e nel Sannio", "Il Benevento e le squadre e gli atleti del Sannio: calcio, calcio a 5, "
+     "basket, pallavolo, rugby, scherma, atletica e altri sport, con risultati e notizie."),
     ("sezione/eventi", {"cat": "eventi"}, "Eventi a Benevento e provincia: calendario di teatro, concerti, mostre e sagre",
      "Eventi a Benevento e nel Sannio", "Il calendario degli eventi nel Sannio: teatro, concerti, mostre, cinema, sagre e "
      "feste a Benevento e provincia, con date, orari, luoghi e fonti."),
     ("sezione/allerte", {"cat": "meteo"}, "Allerte Benevento: allerta meteo, scuole chiuse e terremoti nel Sannio",
-     "Allerte a Benevento e nel Sannio", "Allerte meteo della Protezione civile per le zone del Sannio, chiusure di "
-     "scuole e parchi decise dai Comuni, terremoti e danni del maltempo a Benevento e provincia."),
+     "Allerte a Benevento e nel Sannio", "Allerte meteo della Protezione civile per il Sannio, scuole e parchi chiusi "
+     "dai Comuni, terremoti e danni del maltempo a Benevento e provincia."),
     ("sezione/cultura", {"cat": "cultura"}, "Cultura Benevento: libri, teatro, musica e mostre nel Sannio",
-     "Cultura a Benevento e nel Sannio", "Libri e autori, presentazioni, teatro, musica, cinema, mostre, musei e premi: "
+     "Cultura a Benevento e nel Sannio", "Libri, presentazioni, teatro, musica, cinema, mostre, musei e premi: "
      "le notizie di cultura di Benevento e del Sannio e gli appuntamenti dei prossimi giorni."),
     ("sezione/altro", {"cat": "altro"}, "Altre notizie da Benevento e provincia",
      "Altre notizie da Benevento e dal Sannio", "Lavoro, salute, scuola, ambiente e servizi: le altre notizie di Benevento "
@@ -94,8 +94,8 @@ SEZIONI = [
      "Paduli, Ponte e degli altri comuni della provincia di Benevento."),
 ]
 CAT_PERCORSO = {s[1]["cat"]: s[0] for s in SEZIONI if "cat" in s[1]}
-DESCR_HOME = ("Le ultime notizie di oggi da Benevento e dal Sannio: cronaca, strade, politica, sport, eventi e allerte, "
-              "confrontate tra i giornali locali, con i link agli articoli originali.")
+DESCR_HOME = ("Le notizie di oggi da Benevento e dal Sannio: cronaca, strade, politica, sport, eventi e allerte, "
+              "confrontate tra i giornali locali, con i link agli originali.")
 
 
 def e(s):
@@ -907,8 +907,8 @@ SPECIALI = [
      "nota": "Gli orari dei cimiteri, le strade chiuse e i divieti annunciati dai Comuni.",
      "manca": "Il tuo paese non c'è? Il Comune non ha ancora pubblicato gli orari: li aggiungiamo appena escono. ",
      "title": "Avvisi Benevento: orari dei cimiteri per Ognissanti, strade chiuse e scadenze",
-     "descr": "Gli orari dei cimiteri per Ognissanti e i Defunti, le strade chiuse e i divieti a Benevento e nei paesi "
-              "del Sannio, Comune per Comune, e gli altri avvisi dei Comuni: uffici, acqua, rifiuti, scadenze."},
+     "descr": "Orari dei cimiteri per Ognissanti e i Defunti, strade chiuse e divieti a Benevento e nel Sannio, "
+              "Comune per Comune, e gli altri avvisi: uffici, acqua, rifiuti."},
 ]
 
 
@@ -2521,7 +2521,12 @@ def titolo_google(x):
     return re.sub(r"\s+", " ", str(x.get("titolo_google") or x["titolo"])).strip()
 
 
+DESCR_MAX = 160   # Bing la vuole tra 25 e 160 caratteri (29 ott 2026, «Meta Description too long»); Google la taglia lì
+
+
 def blocco_seo(title, descr, url, immagine, tipo="website", jsonld=None, extra="", dim=(1200, 630), og_title=None):
+    if len(descr) > DESCR_MAX and not url.startswith(SITO + "/notizia/"):   # le pagine fisse: va accorciata a mano
+        print(f"::warning::descrizione di {len(descr)} caratteri (al massimo {DESCR_MAX}) per {url}")
     h = [f"<title>{e(title)}</title>",
          f'<meta name="description" content="{e(descr)}">',
          f'<link rel="canonical" href="{e(url)}">',
@@ -2895,8 +2900,8 @@ def main():
     oggi = adesso.astimezone(fuso()).date()
     url = SITO + "/strade-chiuse/"
     seo = blocco_seo(f"Strade chiuse oggi a Benevento e nel Sannio – {NOME}", "Strade chiuse, sensi unici, lavori e "
-                     "bus deviati a Benevento e in provincia, oggi e nei prossimi giorni, con le ordinanze dei Comuni e "
-                     "i comunicati ANAS. Aggiornato ogni ora.", url, "/condivisione.png",
+                     "bus deviati a Benevento e in provincia, oggi e nei prossimi giorni, dalle ordinanze dei Comuni e "
+                     "dall'ANAS. Ogni ora.", url, "/condivisione.png",
                      jsonld={"@context": "https://schema.org", "@type": "WebPage", "name": "Strade chiuse nel Sannio",
                              "url": url, "isPartOf": {"@type": "WebSite", "name": NOME, "url": SITO + "/"}})
     ora, poi = strade_chiuse(notizie, oggi)
@@ -2910,7 +2915,14 @@ def main():
                   html_strade_chiuse(ora, poi, oggi, prima.get("aggiornato"), pin), articolo=True))
     mappa.append((url, prima.get("aggiornato")))
 
-    # i contributi (strumenti/contributi.py): la pagina (anche vuota) e una per contributo
+    # i contributi (strumenti/contributi.py): la pagina (anche vuota) e una per contributo. La data nella sitemap (e per
+    # IndexNow) è quella vera di ogni agevolazione, non «aggiornato» di contributi.json, che cambia a ogni pubblicazione:
+    # così a ogni giro 126 pagine sembravano cambiate per Google e per Bing (29 ott 2026, visto da Bing Webmaster)
+    def quando_agev(v):
+        date = [str(v.get("aggiunto") or "")[:10]]   # quando è entrata nel sito
+        if v.get("scadenza") and str(v["scadenza"])[:10] < oggi.isoformat():   # da scaduta la pagina lo dice
+            date.append(str(v["scadenza"])[:10])
+        return max(date) or None
     try:
         contr = leggi(os.path.join(sito, "contributi.json")) or {}
     except (OSError, ValueError):
@@ -2920,14 +2932,14 @@ def main():
                     key=lambda v: v.get("scadenza") or "9999")
     url = f"{SITO}/{CART_AGEV}/"
     seo = blocco_seo(f"Agevolazioni Benevento e Sannio: contributi, bonus, bandi e click day – {NOME}",
-                     "Le agevolazioni aperte per imprese, famiglie, associazioni e Comuni di Benevento e del Sannio: contributi, bonus e bandi di "
-                     "Camera di Commercio, Regione Campania, Ministeri e Comuni, con scadenze e link ufficiali. Aggiornati ogni giorno.",
+                     "Agevolazioni aperte per imprese, famiglie, associazioni e Comuni del Sannio: contributi, bonus e bandi di "
+                     "Camera di Commercio, Regione, Ministeri e Comuni.",
                      url, "/condivisione.png", jsonld={"@context": "https://schema.org", "@type": "CollectionPage",
                                                       "name": TITOLO_CONTR, "url": url,
                                                       "isPartOf": {"@type": "WebSite", "name": NOME, "url": SITO + "/"}})
     scrivi(os.path.join(sito, CART_AGEV, "index.html"),
            pagina(modello, seo, {"cat": "contributi", "h1": TITOLO_CONTR}, html_contributi(aperti, oggi, contr.get("aggiornato"))))
-    mappa.append((url, contr.get("aggiornato")))
+    mappa.append((url, max([quando_agev(v) or "" for v in tutti_contr + aperti] or [""]) or None))
     for v in tutti_contr:
         url = f"{SITO}/{CART_AGEV}/{v['id']}/"
         seo = blocco_seo(f"{v['titolo'][:70]} – Agevolazioni Benevento e Sannio – {NOME}",
@@ -2940,7 +2952,7 @@ def main():
                                      {"@type": "ListItem", "position": 3, "name": v["titolo"]}]}})
         scrivi(os.path.join(sito, CART_AGEV, v["id"], "index.html"),
                pagina(modello, seo, {"statica": True}, html_contributo(v, oggi), articolo=True))
-        mappa.append((url, contr.get("aggiornato")))
+        mappa.append((url, quando_agev(v)))
     # i vecchi indirizzi /contributi/ (la pagina si chiamava così fino al 28 ott 2026): portano ai nuovi, anche con i
     # filtri (/contributi/?chi=commercio → /agevolazioni/?chi=commercio). Fuori dalla sitemap, «noindex».
     dest = f"{SITO}/{CART_AGEV}/"
@@ -2980,9 +2992,9 @@ def main():
         farm = {}
     adesso_it = adesso.astimezone(fuso())
     url = SITO + "/farmacie-di-turno/"
-    seo = blocco_seo(f"Farmacie di turno a Benevento e nei paesi del Sannio oggi – {NOME}", "Le farmacie di turno a "
-                     "Benevento e in tutti i paesi della provincia, adesso e stanotte, con telefono, mappa e orari: i turni "
-                     "di Federfarma Benevento e dell'Ordine dei Farmacisti, controllati ogni giorno.", url, "/condivisione.png",
+    seo = blocco_seo(f"Farmacie di turno a Benevento e nei paesi del Sannio oggi – {NOME}", "Farmacie di turno a "
+                     "Benevento e in tutti i paesi del Sannio, ora e stanotte, con telefono, mappa e orari dei turni "
+                     "di Federfarma e dell'Ordine dei Farmacisti.", url, "/condivisione.png",
                      jsonld={"@context": "https://schema.org", "@type": "WebPage", "name": "Farmacie di turno a Benevento e nel Sannio",
                              "url": url, "isPartOf": {"@type": "WebSite", "name": NOME, "url": SITO + "/"},
                              "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [
@@ -3040,8 +3052,8 @@ def main():
          "Le notizie paese per paese, con gli avvisi e i distributori di ogni Comune."),
     ]
     url = SITO + "/servizi/"
-    seo = blocco_seo(f"Servizi a Benevento: farmacie di turno, strade chiuse, carburanti, meteo – {NOME}", "Le cose che "
-                     "servono ogni giorno a Benevento e nel Sannio: farmacie di turno, strade e scuole chiuse, prezzi dei "
+    seo = blocco_seo(f"Servizi a Benevento: farmacie di turno, strade chiuse, carburanti, meteo – {NOME}", "Quello che "
+                     "serve ogni giorno a Benevento e nel Sannio: farmacie di turno, strade e scuole chiuse, "
                      "carburanti, meteo, avvisi dei Comuni e agevolazioni.", url, "/condivisione.png",
                      jsonld={"@context": "https://schema.org", "@type": "CollectionPage", "name": "Servizi utili a Benevento e nel Sannio",
                              "url": url, "isPartOf": {"@type": "WebSite", "name": NOME, "url": SITO + "/"}})
@@ -3055,7 +3067,7 @@ def main():
         cal = {}
     url = SITO + "/calcio/"
     seo = blocco_seo(f"Benevento Calcio: risultati, classifica Serie B e partite in diretta – {NOME}",
-                     "Il Benevento in Serie B: la partita in diretta con la cronaca minuto per minuto, i risultati degli "
+                     "Il Benevento in Serie B: la partita in diretta minuto per minuto, i risultati degli "
                      "altri campi, la classifica in diretta, il calendario e i risultati.", url, "/condivisione.png",
                      jsonld={"@context": "https://schema.org", "@type": "WebPage", "name": "Benevento Calcio",
                              "url": url, "isPartOf": {"@type": "WebSite", "name": NOME, "url": SITO + "/"}})
@@ -3065,7 +3077,11 @@ def main():
         print(f"AVVISO: calcio.json non torna ({type(ex).__name__}: {ex}): pagina senza dati", file=sys.stderr)
         cal, corpo = {}, html_calcio({}, dt.datetime.now(dt.timezone.utc).astimezone())
     scrivi(os.path.join(sito, "calcio", "index.html"), pagina(modello, seo, {"statica": True, "calcio": True}, corpo, articolo=True))
-    mappa.append((url, cal.get("aggiornato")))
+    # la data vera: adesso se si gioca, se no la fine dell'ultima partita (calcio.json «aggiornato» cambia a ogni giro)
+    partite = (cal.get("partite") or []) + ((cal.get("giornata") or {}).get("partite") or [])
+    finite = [q for q in (quando_dt(p.get("quando")) for p in partite if p.get("stato") == "post") if q]
+    mappa.append((url, cal.get("aggiornato") if any(p.get("stato") == "in" for p in partite) else
+                  (max(finite) + dt.timedelta(hours=2)).isoformat(timespec="minutes") if finite else None))
 
     distributori = {}
     for i in carb.get("impianti") or []:
@@ -3081,8 +3097,8 @@ def main():
     os.makedirs(os.path.join(sito, "curiosita"), exist_ok=True)
     url = SITO + "/curiosita/"
     seo = blocco_seo(f"Curiosità del Sannio: leggende, storia e tradizioni di Benevento – {NOME}", "Ogni giorno una "
-                     "storia di Benevento e della provincia: leggende come le janare, fatti del passato, detti, "
-                     "superstizioni e tradizioni dei paesi del Sannio, con le fonti.", url, "/condivisione.png",
+                     "storia di Benevento e del Sannio: leggende come le janare, fatti del passato, detti, "
+                     "superstizioni e tradizioni dei paesi, con le fonti.", url, "/condivisione.png",
                      jsonld={"@context": "https://schema.org", "@type": "CollectionPage", "name": "Curiosità del Sannio",
                              "url": url, "isPartOf": {"@type": "WebSite", "name": NOME, "url": SITO + "/"}})
     scrivi(os.path.join(sito, "curiosita", "index.html"),
