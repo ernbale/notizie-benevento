@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-29T16:23+01:00",
+ "aggiornato": "2026-10-29T17:17+01:00",
  "giornali_letti": 14,
  "notizie": [
   {
@@ -74,6 +74,175 @@
    "subito": true,
    "pubblicato": "2026-10-29T17:16:58+01:00",
    "foto": "ospedale-5"
+  },
+  {
+   "id": "bucciano-cocaina-ordigno-esplosivo-chiuse-indagini",
+   "titolo": "Bucciano, cocaina e un ordigno esplosivo in casa: chiuse le indagini su due conviventi",
+   "titolo_google": "Bucciano, cocaina e ordigno esplosivo in casa: due indagati",
+   "sintesi": "La Procura di Benevento ha chiuso le indagini su un uomo di 44 anni e una donna di 43, originari di Sant'Agata de' Goti e domiciliati a Bucciano. Sono indagati per spaccio di cocaina e detenzione di un ordigno esplosivo micidiale, trovati durante una perquisizione nella loro casa.",
+   "categoria": "cronaca",
+   "luogo": "Bucciano",
+   "pubblicato": "2026-10-29T16:31+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 4,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/29/bucciano-cocaina-e-un-ordigno-esplosivo-in-casa-due-indagati/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/la-cocaina-nel-como-lordigno-in-un-cassetto-coppia-indagata/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/29/coppia-accusata-di-spaccio-di-cocaina-e-detenzione-di-esplosivo-chiuse-le-indagini/?utm_source=rss&utm_medium=rss&utm_campaign=coppia-accusata-di-spaccio-di-cocaina-e-detenzione-di-esplosivo-chiuse-le-indagini"
+    },
+    {
+     "nome": "Il Caudino",
+     "url": "https://ilcaudino.it/valle-caudina-coppia-indagata-per-spaccio-di-cocaina-e-detenzione-di-esplosivo-uid-5/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "La Procura della Repubblica di Benevento ha mandato l'avviso di conclusione delle indagini preliminari a due conviventi di Bucciano, in Valle Caudina: un uomo di 44 anni e una donna di 43, tutti e due originari di Sant'Agata de' Goti. Sono indagati per spaccio di cocaina e per detenzione di un ordigno esplosivo definito «micidiale».",
+      "fonti": [
+       "NTR24",
+       "Anteprima24",
+       "BeneventoNews24",
+       "Il Caudino"
+      ]
+     },
+     {
+      "testo": "Tutto parte da una perquisizione delle forze dell'ordine nella loro casa. Nella camera da letto, in una scatola nascosta nel comò, c'era la cocaina, insieme a un bilancino di precisione. Continuando a cercare, gli investigatori hanno trovato l'ordigno in un cassetto della parete attrezzata, nel passaggio tra la cucina e il salone.",
+      "fonti": [
+       "NTR24",
+       "Anteprima24",
+       "BeneventoNews24",
+       "Il Caudino"
+      ]
+     },
+     {
+      "testo": "I due sono difesi dall'avvocato Vittorio Fucci. Con l'avviso di fine indagini hanno 20 giorni per chiedere di essere interrogati dalla Procura o per presentare memorie, prima che il pubblico ministero decida se chiedere il processo.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24",
+       "Il Caudino",
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "La cocaina nel comò della camera da letto con un bilancino, l'ordigno in un cassetto della parete attrezzata tra cucina e salone, e i 20 giorni per chiedere l'interrogatorio",
+      "fonti": [
+       "NTR24",
+       "Anteprima24",
+       "BeneventoNews24",
+       "Il Caudino"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando è stata fatta la perquisizione e quale forza dell'ordine l'ha fatta.",
+     "Che tipo di ordigno fosse e quanta cocaina è stata trovata."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Bucciano, cocaina e un ordigno esplosivo in casa: due indagati",
+      "url": "https://www.ntr24.tv/2026/10/29/bucciano-cocaina-e-un-ordigno-esplosivo-in-casa-due-indagati/",
+      "data": "29 ott, 16:25"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "La cocaina nel comò, l’ordigno in un cassetto: coppia indagata",
+      "url": "https://www.anteprima24.it/benevento/la-cocaina-nel-como-lordigno-in-un-cassetto-coppia-indagata/",
+      "data": "29 ott, 16:24"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Coppia accusata di spaccio di cocaina e detenzione di esplosivo: chiuse le indagini",
+      "url": "https://www.beneventonews24.it/2026/10/29/coppia-accusata-di-spaccio-di-cocaina-e-detenzione-di-esplosivo-chiuse-le-indagini/?utm_source=rss&utm_medium=rss&utm_campaign=coppia-accusata-di-spaccio-di-cocaina-e-detenzione-di-esplosivo-chiuse-le-indagini",
+      "data": "29 ott, 16:31"
+     },
+     {
+      "nome": "Il Caudino",
+      "titolo": "Valle Caudina: coppia indagata per spaccio di cocaina e detenzione di esplosivo",
+      "url": "https://ilcaudino.it/valle-caudina-coppia-indagata-per-spaccio-di-cocaina-e-detenzione-di-esplosivo-uid-5/",
+      "data": "29 ott, 16:14"
+     }
+    ]
+   },
+   "zona": "caudina"
+  },
+  {
+   "id": "san-giorgio-del-sannio-disservizi-telefono-internet-ministero",
+   "titolo": "San Giorgio del Sannio, telefono e internet a singhiozzo: il Ministero chiede ai gestori di risolvere, potenziamento di un'antenna entro il 2027",
+   "titolo_google": "San Giorgio del Sannio, disservizi di telefono e internet",
+   "sintesi": "Dopo le segnalazioni del Comune di San Giorgio del Sannio, il Ministero delle Imprese ha verificato i disservizi di telefono e internet dei mesi scorsi: guasti, caldo e mancanza di corrente. Diversi problemi sono risolti; sulla rete Wind Tre-Iliad resta un'interferenza radio e un impianto sarà potenziato entro il 2027.",
+   "categoria": "altro",
+   "luogo": "San Giorgio del Sannio",
+   "pubblicato": "2026-10-29T16:15+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 3,
+   "immagine": "internet",
+   "fonti": [
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/sangiorgio-connessione-ministero-risponde-sindaco-verifiche/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "I problemi di telefono e internet che hanno colpito San Giorgio del Sannio nei mesi scorsi sono stati causati soprattutto da guasti, dal caldo e da interruzioni della corrente elettrica. È quello che è emerso dalle verifiche del Ministero delle Imprese e del Made in Italy, che è intervenuto dopo le segnalazioni dell'amministrazione comunale guidata dal sindaco Giuseppe Ricci.",
+      "fonti": [
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Il Ministero ha chiesto ai principali gestori, tra cui Tim, Wind Tre, Iliad, Fastweb e Vodafone, di risolvere i problemi. Per Tim i disservizi di agosto e settembre sono dipesi dal caldo, che ha sovraccaricato un impianto, e risultano superati dopo un intervento tecnico. Fastweb e Vodafone li hanno legati a problemi di alimentazione elettrica e a guasti.",
+      "fonti": [
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Resta aperto il caso della rete Wind Tre-Iliad: su uno dei due impianti che servono il paese c'è un'interferenza radio, ancora sotto esame dei tecnici. Entro il 2027 è previsto il potenziamento di uno dei due impianti, per migliorare la capacità della rete.",
+      "fonti": [
+       "Cronache del Sannio"
+      ]
+     },
+     {
+      "testo": "Il Comune fa sapere che il Ministero continuerà a seguire la situazione e che i gestori sono pronti a fare altre verifiche sulle singole utenze o zone del paese che verranno segnalate.",
+      "fonti": [
+       "Cronache del Sannio"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando sarà risolta l'interferenza sulla rete Wind Tre-Iliad.",
+     "A chi rivolgersi in Comune per segnalare una zona o un'utenza con problemi."
+    ],
+    "fonti": [
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Connessione, ministero risponde al sindaco: verifiche sui disservizi a San Giorgio del Sannio",
+      "url": "https://www.cronachedelsannio.it/sannionews24/sangiorgio-connessione-ministero-risponde-sindaco-verifiche/",
+      "data": "29 ott, 16:15"
+     }
+    ]
+   },
+   "zona": "provincia",
+   "foto": "internet-9"
   },
   {
    "id": "cremonese-benevento-kouan-squalificato-maita-ammenda",
@@ -236,13 +405,17 @@
    "luogo": "Benevento",
    "zona": "benevento",
    "pubblicato": "2026-10-29T16:08+01:00",
-   "stato": "una_fonte",
+   "stato": "confermata",
    "rilevante": false,
    "importanza": 2,
    "fonti": [
     {
      "nome": "Anteprima24",
      "url": "https://www.anteprima24.it/benevento/silver-hc-sannio-trasferta-siracusa/"
+    },
+    {
+     "nome": "NTR24 Sport",
+     "url": "https://sport.ntr24.tv/2026/10/29/pallamano-serie-a-silver-handball-club-sannio-sconfitta-a-putignano-ora-testa-alla-trasferta-di-siracusa/"
     }
    ],
    "articolo": {
@@ -250,24 +423,35 @@
      {
       "testo": "L'H.C. Sannio, la squadra di pallamano di Benevento che gioca in Serie A Silver, ha perso 33-23 sul campo del Putignano, in Puglia. Dopo un inizio in equilibrio i sanniti hanno perso molti palloni in attacco e il Putignano ha chiuso il primo tempo sul 20-9; nel secondo tempo è arrivata una reazione, ma il distacco era troppo grande.",
       "fonti": [
-       "Anteprima24"
+       "Anteprima24",
+       "NTR24 Sport"
       ]
      },
      {
       "testo": "Il migliore realizzatore è stato Marco Bellu con 8 reti, poi Fiore Fiorenzo con 6, Fernando Buitron con 3, Kevin Bblunga e Simone Uccellini con 2, Carmine Castiello ed Emanuele Velletri con una.",
       "fonti": [
-       "Anteprima24"
+       "Anteprima24",
+       "NTR24 Sport"
       ]
      },
      {
       "testo": "Sabato 1° novembre alle 16 la squadra, allenata da Mathias Grunfeld, gioca a Siracusa contro l'Albatro. Poi ci sono due settimane di sosta prima della partita in casa con il Serra Fasano, che il direttore sportivo Pietro Martone chiama «sfida salvezza». Martone spiega che la squadra ha cominciato la stagione in ritardo di preparazione e aspetta di poter schierare il terzino Ivo Rasic, l'ultimo arrivato.",
       "fonti": [
-       "Anteprima24"
+       "Anteprima24",
+       "NTR24 Sport"
       ]
      }
     ],
     "cronologia": [],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "Il 33-23 a Putignano, il 20-9 del primo tempo, gli 8 gol di Marco Bellu e la trasferta a Siracusa sabato 1° novembre alle 16",
+      "fonti": [
+       "Anteprima24",
+       "NTR24 Sport"
+      ]
+     }
+    ],
     "divergono": [
      {
       "testo": "L'articolo scrive il nome dell'allenatore in due modi, «Mathias Grufeld» e «Matias Grunfeld»; in un articolo precedente della stessa testata è «Grunfeld».",
@@ -283,6 +467,12 @@
       "titolo": "Serie A Silver: H.C. Sannio attesa dalla lunga trasferta a Siracusa",
       "url": "https://www.anteprima24.it/benevento/silver-hc-sannio-trasferta-siracusa/",
       "data": "29 ott, 16:08"
+     },
+     {
+      "nome": "NTR24 Sport",
+      "titolo": "Pallamano serie A Silver: Handball Club Sannio sconfitta a Putignano. Ora testa alla trasferta di Siracusa",
+      "url": "https://sport.ntr24.tv/2026/10/29/pallamano-serie-a-silver-handball-club-sannio-sconfitta-a-putignano-ora-testa-alla-trasferta-di-siracusa/",
+      "data": "29 ott, 16:24"
      }
     ]
    }
@@ -1509,6 +1699,10 @@
     {
      "nome": "Cronache del Sannio",
      "url": "https://www.cronachedelsannio.it/sannionews24/sapori-bene-consegnano-attestati-pazienti-oncologici/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/442521/cucina-sana-alimentazione-benessere-e-socialita-con-lilt-e-fapas.shtml"
     }
    ],
    "articolo": {
@@ -1517,7 +1711,8 @@
       "testo": "Venerdì 30 ottobre alle 16.30 la LILT di Benevento, la Lega italiana per la lotta contro i tumori, consegna gli attestati del primo corso di cucina «I Sapori che fanno bene», dedicato ai pazienti oncologici. La cerimonia si tiene nella sede dell'ente di formazione professionale FAPAS, in contrada Pezzapiana, via Antonio Abete 10, che ha organizzato il corso insieme alla LILT.",
       "fonti": [
        "Cronache del Sannio",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Ottopagine"
       ]
      },
      {
@@ -1561,6 +1756,12 @@
       "titolo": "“I Sapori che fanno bene”, si consegnano gli attestati ai pazienti oncologici",
       "url": "https://www.cronachedelsannio.it/sannionews24/sapori-bene-consegnano-attestati-pazienti-oncologici/",
       "data": "29 ott, 10:20"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "cucina, sana alimentazione, benessere e socialità con Lilt e Fapas",
+      "url": "https://www.ottopagine.it/bn/attualita/442521/cucina-sana-alimentazione-benessere-e-socialita-con-lilt-e-fapas.shtml",
+      "data": "29 ott, 16:28"
      }
     ]
    },
@@ -1587,6 +1788,10 @@
     {
      "nome": "NTR24",
      "url": "https://www.ntr24.tv/2026/10/29/campania-wine-tre-consorzi-uniti-al-merano-winefestival-2026-per-raccontare-leccellenza-vitivinicola-regionale/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/442523/tre-consorzi-di-vini-insieme-a-merano-per-le-eccellenze-campane.shtml"
     }
    ],
    "articolo": {
@@ -1595,7 +1800,8 @@
       "testo": "Dal 6 al 10 novembre 2026 i vini della Campania vanno al Merano WineFestival, una delle rassegne del vino più seguite d'Italia, con un progetto comune che si chiama Campania.Wine. A guidarlo è il Sannio Consorzio Tutela Vini, insieme al consorzio dei vini del Casertano VitiCaserta e al consorzio salernitano Vita Salernum Vites.",
       "fonti": [
        "NTR24",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Ottopagine"
       ]
      },
      {
@@ -1639,6 +1845,12 @@
       "titolo": "Campania.Wine: tre consorzi uniti al Merano WineFestival 2026 per raccontare l’eccellenza vitivinicola regionale",
       "url": "https://www.ntr24.tv/2026/10/29/campania-wine-tre-consorzi-uniti-al-merano-winefestival-2026-per-raccontare-leccellenza-vitivinicola-regionale/",
       "data": "29 ott, 10:34"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "al 6 al 10 novembre, Casa Campania diventa il palcoscenico dei vini, dei territori e delle identità",
+      "url": "https://www.ottopagine.it/bn/attualita/442523/tre-consorzi-di-vini-insieme-a-merano-per-le-eccellenze-campane.shtml",
+      "data": "29 ott, 16:32"
      }
     ]
    },
@@ -1996,13 +2208,17 @@
    "categoria": "cronaca",
    "luogo": "Benevento",
    "pubblicato": "2026-10-29T08:46+01:00",
-   "stato": "una_fonte",
+   "stato": "confermata",
    "rilevante": false,
    "importanza": 3,
    "fonti": [
     {
      "nome": "Anteprima24",
      "url": "https://www.anteprima24.it/benevento/accusata-di-narcotraffico-una-44enne-di-benevento-lascia-i-domiciliari/"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/29/traffico-di-droga-in-un-rione-di-napoli-scarcerata-44enne-beneventana-obbligo-di-firma/"
     }
    ],
    "articolo": {
@@ -2010,13 +2226,15 @@
      {
       "testo": "V. P., 44 anni, di Benevento, non è più agli arresti domiciliari. È imputata con l'accusa di aver partecipato a un'associazione per il traffico di droga nel rione Buvero, a Napoli. Al posto dei domiciliari dovrà presentarsi ai Carabinieri tre volte alla settimana.",
       "fonti": [
-       "Anteprima24"
+       "Anteprima24",
+       "NTR24"
       ]
      },
      {
       "testo": "Ha cambiato la misura la giudice per le indagini preliminari (gip) del Tribunale di Napoli Federica Villano, che ha accolto la richiesta dell'avvocato Michele Ciruolo nonostante il parere contrario del pubblico ministero. L'ordinanza è stata depositata il 28 ottobre.",
       "fonti": [
-       "Anteprima24"
+       "Anteprima24",
+       "NTR24"
       ]
      },
      {
@@ -2027,8 +2245,24 @@
      }
     ],
     "cronologia": [],
-    "concordano": [],
-    "divergono": [],
+    "concordano": [
+     {
+      "testo": "La 44enne di Benevento lascia i domiciliari per l'obbligo di firma, decisione della gip di Napoli Villano",
+      "fonti": [
+       "Anteprima24",
+       "NTR24"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "Anteprima24 scrive che la richiesta l'ha fatta l'avvocato Michele Ciruolo; NTR24 parla dell'istanza degli avvocati Michele Ciruolo e Fiorenza.",
+      "fonti": [
+       "Anteprima24",
+       "NTR24"
+      ]
+     }
+    ],
     "non_si_sa": [
      "Quando riprenderà il processo."
     ],
@@ -2038,6 +2272,12 @@
       "titolo": "Accusata di narcotraffico, una 44enne di Benevento lascia i domiciliari",
       "url": "https://www.anteprima24.it/benevento/accusata-di-narcotraffico-una-44enne-di-benevento-lascia-i-domiciliari/",
       "data": "29 ott, 08:46"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Traffico di droga in un rione di Napoli, scarcerata 44enne beneventana: obbligo di firma",
+      "url": "https://www.ntr24.tv/2026/10/29/traffico-di-droga-in-un-rione-di-napoli-scarcerata-44enne-beneventana-obbligo-di-firma/",
+      "data": "29 ott, 16:33"
      }
     ]
    },
@@ -9354,10 +9594,6 @@
      "url": "https://www.gazzettabenevento.it/it/i-sindaci-si-oppongono-al-processo-di-centralizzazione-coatta-imposto-dallente-idrico-campano-e"
     },
     {
-     "nome": "Anteprima24 (28/10)",
-     "url": "https://www.anteprima24.it/benevento/ricorso-al-tar-sulla-gestione-idrica-il-plauso-del-comitato-agli-undici-comuni/"
-    },
-    {
      "nome": "Benevento Giornale",
      "url": "https://www.beneventogiornale.com/2026/10/28/gestione-idrica-nel-sannio-il-comitato-sannita-acqua-bene-comune-esprime-pieno-plauso-ai-comuni-ricorrenti-contro-il-decreto-regionale/"
     },
@@ -9372,10 +9608,21 @@
     {
      "nome": "Il Sannio Quotidiano",
      "url": "https://www.ilsannioquotidiano.it/2026/10/29/gestione-servizio-idrico-sindaci-sulle-barricate-11-comuni-ricorrono-al-tar-contro-sannio-acque/"
+    },
+    {
+     "nome": "Anteprima24 (29/10)",
+     "url": "https://www.anteprima24.it/benevento/cusano-mutri-striscioni-e-cittadini-davanti-al-municipio-lacqua-non-si-vende-si-custodisce/"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Giovedì 29 ottobre a Cusano Mutri, un altro Comune che gestisce da solo l'acqua e ha già notificato un suo ricorso al TAR, il vicesindaco Alfonso Topputo ha appeso davanti al Municipio due striscioni: «L'acqua non si vende, si custodisce» e «L'acqua è un bene comune, non un affare». Con lui in piazza si sono radunati molti cittadini. Quella mattina era previsto un sopralluogo dei tecnici di Sannio Acque agli impianti del paese, ma i tecnici non si sono presentati.",
+      "fonti": [
+       "Anteprima24 (29/10)"
+      ],
+      "giorno": "2026-10-29"
+     },
      {
       "testo": "Giovedì 29 ottobre si è schierata con gli undici Comuni anche la CONFSAL Funzioni Locali, un sindacato dei dipendenti degli enti locali. Il sindacato dice no a una gestione dell'acqua affidata a una società mista pubblico-privata e chiede trasparenza e un confronto tra le istituzioni.",
       "fonti": [
@@ -9574,16 +9821,20 @@
       "titolo": "Acqua pubblica, undici Comuni sanniti contro il trasferimento della gestione a Sannio Acque: la CONFSAL chiede trasparenza e confronto istituzionale",
       "url": "https://www.labtv.net/attualita/2026/10/29/acqua-pubblica-undici-comuni-sanniti-contro-il-trasferimento-della-gestione-a-sannio-acque-la-confsal-chiede-trasparenza-e-confronto-istituzionale/",
       "data": "29 ott, 10:45"
+     },
+     {
+      "nome": "Anteprima24 (29/10)",
+      "titolo": "Cusano Mutri, striscioni e cittadini davanti al Municipio: “L’acqua non si vende, si custodisce”",
+      "url": "https://www.anteprima24.it/benevento/cusano-mutri-striscioni-e-cittadini-davanti-al-municipio-lacqua-non-si-vende-si-custodisce/",
+      "data": "29 ott, 16:23"
      }
     ],
     "aggiornamento": {
-     "testo": "Mercoledì 28 ottobre il Comitato sannita Acqua Bene Comune ha fatto sapere che i Comuni hanno depositato il ricorso al TAR contro il decreto della Regione su Sannio Acque, e che i suoi avvocati valutano di intervenire nella causa a sostegno dei Comuni.",
+     "testo": "Giovedì 29 ottobre a Cusano Mutri il vicesindaco ha appeso davanti al Municipio gli striscioni per l'acqua pubblica, con molti cittadini in piazza; il sopralluogo dei tecnici di Sannio Acque previsto quella mattina non si è tenuto.",
      "fonti": [
-      "Anteprima24 (28/10)",
-      "Benevento Giornale"
+      "Anteprima24 (29/10)"
      ],
-     "quando": "2026-10-28T14:32+01:00",
-     "titolo_prima": "Acqua, undici Comuni del Sannio contro il passaggio a Sannio Acque: nasce un coordinamento, pronti i ricorsi al TAR"
+     "quando": "2026-10-29T17:17+01:00"
     }
    },
    "foto": "fontana-5"
@@ -12731,10 +12982,6 @@
      "ufficiale": true
     },
     {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/27/air-campania-i-sindacati-confermano-lo-sciopero-di-8-ore-del-28-ottobre-presidio-alla-regione/"
-    },
-    {
      "nome": "Cronache del Sannio",
      "url": "https://www.cronachedelsannio.it/sannionews24/air-campania-sindacati-confermato-sciopero-domani/"
     },
@@ -12753,6 +13000,10 @@
     {
      "nome": "Anteprima24",
      "url": "https://www.anteprima24.it/benevento/sciopero-regionale-air-campania-bassa-adesione-a-benevento-si-ferma-l82-nellextraurbano/"
+    },
+    {
+     "nome": "NTR24 (29/10)",
+     "url": "https://www.ntr24.tv/2026/10/29/air-sciopero-regionale-a-benevento-adesione-dell82-nellextraurbano-i-sindacati-gli-ex-trotta-penalizzati-economicamente/"
     }
    ],
    "articolo": {
@@ -12760,14 +13011,23 @@
      {
       "testo": "Allo sciopero di 8 ore di mercoledì 28 ottobre, a Benevento città hanno aderito soltanto quattro lavoratori. Lo scrivono i sindacati che l'hanno proclamato. Sulle linee extraurbane del Sannio, invece, hanno scioperato 28 lavoratori su 34 turni, l'82%; nel resto della Campania, senza contare i bus di Benevento città, l'adesione è stata del 63,96%, con 323 scioperanti su 505 turni.",
       "fonti": [
-       "Anteprima24"
+       "Anteprima24",
+       "NTR24 (29/10)"
       ],
       "giorno": "2026-10-29"
      },
      {
       "testo": "I sindacati spiegano la bassa adesione in città con la situazione degli 85 ex dipendenti di Trotta Bus, l'azienda che gestiva prima i bus di Benevento, passati in AIR dal 1° agosto: dicono che pagano ancora le conseguenze economiche della gestione precedente.",
       "fonti": [
-       "Anteprima24"
+       "Anteprima24",
+       "NTR24 (29/10)"
+      ],
+      "giorno": "2026-10-29"
+     },
+     {
+      "testo": "Secondo i sindacati, 14 di loro, che con Trotta avevano un contratto a tempo indeterminato, sono passati in AIR con un contratto a termine fino al 31 dicembre 2026 e con mansioni più basse.",
+      "fonti": [
+       "NTR24 (29/10)"
       ],
       "giorno": "2026-10-29"
      },
@@ -12931,6 +13191,12 @@
       "titolo": "Sciopero regionale Air Campania: bassa adesione a Benevento, si ferma l’82% nell’extraurbano",
       "url": "https://www.anteprima24.it/benevento/sciopero-regionale-air-campania-bassa-adesione-a-benevento-si-ferma-l82-nellextraurbano/",
       "data": "29 ott, 15:21"
+     },
+     {
+      "nome": "NTR24 (29/10)",
+      "titolo": "AIR, sciopero regionale: a Benevento adesione dell’82% nell’extraurbano. I sindacati: «Gli ex Trotta penalizzati economicamente»",
+      "url": "https://www.ntr24.tv/2026/10/29/air-sciopero-regionale-a-benevento-adesione-dell82-nellextraurbano-i-sindacati-gli-ex-trotta-penalizzati-economicamente/",
+      "data": "29 ott, 16:35"
      }
     ],
     "aggiornamento": {

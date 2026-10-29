@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-29T16:17+01:00",
+ "aggiornato": "2026-10-29T17:11+01:00",
  "eventi": [
   {
    "id": "mostra-cosmogonie-meact-torrecuso-2026",
@@ -681,6 +681,12 @@
      "titolo": "Dal 30 ottobre al 1° novembre al Corso Garibaldi di Benevento musica, danza e spettacolo",
      "url": "https://www.infosannionews.it/attualita/2026/dal-30-ottobre-al-1-novembre-al-corso-garibaldi-di-benevento-musica-danza-e-spettacolo.html",
      "data": "29 ott"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "titolo": "Associazione Corso Vivo lancia “Arte, Musica e Danza nel cuore della città”",
+     "url": "https://www.cronachedelsannio.it/sannionews24/arte-musica-danza-corso-vivo/",
+     "data": "29 ott, 17:01"
     }
    ],
    "immagine": "luminarie",
@@ -932,6 +938,12 @@
      "titolo": "Halloween al Museo: per i bambini organizzata per sabato un’avventura alla scoperta dei segreti della dea Iside",
      "url": "https://www.labtv.net/cultura/eventi/2026/10/29/halloween-al-museo-per-i-bambini-organizzata-per-sabato-unavventura-alla-scoperta-dei-segreti-della-dea-iside/",
      "data": "29 ott, 11:08"
+    },
+    {
+     "nome": "Ottopagine",
+     "titolo": "Alla scoperta dei segreti della dea Iside grazie a Sannio Europa e Provincia di Benevento",
+     "url": "https://www.ottopagine.it/bn/attualita/442522/halloween-al-museo-per-i-bambini-organizzata-per-sabato-un-avventura.shtml",
+     "data": "29 ott, 16:30"
     }
    ],
    "foto": "museo-3"
@@ -1124,6 +1136,12 @@
      "titolo": "“Domenica al Museo”, ingresso gratuito e spettacolo al Teatro Romano",
      "url": "https://www.cronachedelsannio.it/sannionews24/domenica-museo-ingresso-gratuito-spettacolo-teatro-romano/",
      "data": "29 ott, 10:36"
+    },
+    {
+     "nome": "Ottopagine",
+     "titolo": "Domenica 1° novembre 2026, alle ore 11.30, nell’ambito dell’iniziativa “Domenica al Museo”",
+     "url": "https://www.ottopagine.it/bn/cultura/442524/al-teatro-romano-dialogo-tra-teatro-contemporaneo-e-patrimonio-culturale.shtml",
+     "data": "29 ott, 16:38"
     }
    ],
    "foto": "teatro-22"
@@ -1536,13 +1554,15 @@
     {
      "testo": "Lunedì 9 novembre 2026 alle 16, nell'Auditorium di Sant'Agostino dell'Università del Sannio, in via De Nicastro 13 a Benevento, Giuseppe Conte presenta il suo libro «Una nuova primavera», pubblicato da Marsilio. La presentazione era prevista per il 26 ottobre ed è stata rinviata per l'emergenza carburanti.",
      "fonti": [
-      "BeneventoNews24"
+      "BeneventoNews24",
+      "NTR24"
      ]
     },
     {
      "testo": "La organizza il Consiglio degli Studenti dell'Università del Sannio, che la presenta come un incontro apolitico e aperto a tutti. Dopo i saluti della rettrice Maria Moreno intervengono Maurizio Sibilio, Gerardo Canfora e Cristina Ciancio, che dialogano con l'autore insieme ai rappresentanti degli studenti.",
      "fonti": [
-      "BeneventoNews24"
+      "BeneventoNews24",
+      "NTR24"
      ]
     }
    ],
@@ -1553,6 +1573,12 @@
      "titolo": "Unisannio, il 9 novembre a Benevento arriva Giuseppe Conte",
      "url": "https://www.beneventonews24.it/2026/10/29/unisannio-il-9-novembre-a-benevento-arriva-giuseppe-conte/",
      "data": "29 ott, 16:03"
+    },
+    {
+     "nome": "NTR24",
+     "titolo": "Giuseppe Conte a Benevento: il 9 novembre presenterà il libro ‘Una nuova primavera’ all’Unisannio",
+     "url": "https://www.ntr24.tv/2026/10/29/giuseppe-conte-a-benevento-il-9-novembre-presentera-il-libro-una-nuova-primavera-allunisannio/",
+     "data": "29 ott, 16:20"
     }
    ],
    "foto": "libri-2"
