@@ -648,7 +648,8 @@ sito; da allora valgono di nuovo le regole qui sotto e **la `scena` non si scriv
   in crisi, licenziamenti e cassa integrazione sono «fabbrica-chiusa», un'azienda che apre o assume è «fabbrica» o
   «imprese»; crepe e case inagibili sono «terremoto-danni», una scossa senza danni è «terremoto»; tralicci, cabine e
   linee elettriche sono «linee-elettriche», le batterie sono «accumulo-energia»; un sit-in davanti a un ospedale o al
-  Comune è «protesta», non una fabbrica. Il campo `solo` di un tema dice di che cosa deve parlare la notizia per
+  Comune è «protesta», non una fabbrica; nei motori le auto in pista sono «motori», il rally «rally», il kart «kart»,
+  le moto (anche motocross ed enduro) «moto». Il campo `solo` di un tema dice di che cosa deve parlare la notizia per
   usarlo: se il titolo e la sintesi non ne parlano, `archivia.py` dà errore.
 - Per ogni notizia scegli **il tema che corrisponde al fatto** e scrivilo nella notizia: `"immagine": "acqua"`. Se
   nessun tema va bene davvero, non mettere il campo: meglio niente che una foto che non c'entra.

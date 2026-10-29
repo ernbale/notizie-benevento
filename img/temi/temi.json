@@ -243,7 +243,12 @@
    "school backpacks hanging on hooks in a school corridor, a view from above, in bright daylight",
    "a closed school gate with a chain on a rainy day, a view from above, in bright daylight",
    "an empty classroom with wooden desks, chairs and a blank green chalkboard, morning light, at dusk, seen from further away, with the first lights on",
-   "a closed school gate with a chain on a rainy day, at dusk, seen from further away, with the first lights on"
+   "a closed school gate with a chain on a rainy day, at dusk, seen from further away, with the first lights on",
+   "an empty classroom with wooden desks, chairs and a blank green chalkboard, morning light, after the rain, with wet reflective surfaces, seen at eye level",
+   "school backpacks hanging on hooks in a school corridor, after the rain, with wet reflective surfaces, seen at eye level",
+   "an empty classroom with wooden desks, chairs and a blank green chalkboard, morning light, on a foggy early morning, with soft muted colors",
+   "school backpacks hanging on hooks in a school corridor, on a foggy early morning, with soft muted colors",
+   "an empty classroom with wooden desks, chairs and a blank green chalkboard, morning light, at night under warm street lights"
   ],
   "escluse": [
    "scuola-3",
@@ -361,7 +366,11 @@
    "cracks in the plaster wall of an old building, seen from a different side and a higher angle, in soft morning light",
    "a screen with seismic waveforms in a monitoring room, seen from a different side and a higher angle, in soft morning light",
    "close-up of a seismograph drum drawing a jagged seismic trace on paper, photographed from a low angle, at golden hour",
-   "a screen with seismic waveforms in a monitoring room, photographed from a low angle, at golden hour"
+   "a screen with seismic waveforms in a monitoring room, photographed from a low angle, at golden hour",
+   "close-up of a seismograph drum drawing a jagged seismic trace on paper, a different composition with the subject off-center, in winter under a grey sky",
+   "close-up of a seismograph drum drawing a jagged seismic trace on paper, a view from above, in bright daylight",
+   "a screen with seismic waveforms in a monitoring room, a view from above, in bright daylight",
+   "close-up of a seismograph drum drawing a jagged seismic trace on paper, at dusk, seen from further away, with the first lights on"
   ],
   "frequente": true,
   "escluse": [
@@ -515,7 +524,8 @@
    "a petrol station at night with lit pumps, no brand, a different composition with the subject off-center, in winter under a grey sky",
    "a petrol station at night with lit pumps, no brand, a view from above, in bright daylight",
    "a car dashboard fuel gauge pointing to empty, a view from above, in bright daylight",
-   "a fuel pump nozzle hanging on a petrol pump at a gas station, at dusk, seen from further away, with the first lights on"
+   "a fuel pump nozzle hanging on a petrol pump at a gas station, at dusk, seen from further away, with the first lights on",
+   "a car dashboard fuel gauge pointing to empty, at dusk, seen from further away, with the first lights on"
   ]
  },
  "supermercato": {
@@ -622,7 +632,11 @@
    "an empty production line inside a factory with the machines switched off, seen from a different side and a higher angle, in soft morning light",
    "a closed factory gate with a chain at dusk, seen from a different side and a higher angle, in soft morning light",
    "the exterior of a modern industrial building with closed loading doors, empty yard, photographed from a low angle, at golden hour",
-   "a closed factory gate with a chain at dusk, photographed from a low angle, at golden hour"
+   "a closed factory gate with a chain at dusk, photographed from a low angle, at golden hour",
+   "the exterior of a modern industrial building with closed loading doors, empty yard, a different composition with the subject off-center, in winter under a grey sky",
+   "an empty production line inside a factory with the machines switched off, a different composition with the subject off-center, in winter under a grey sky",
+   "the exterior of a modern industrial building with closed loading doors, empty yard, a view from above, in bright daylight",
+   "an empty production line inside a factory with the machines switched off, a view from above, in bright daylight"
   ],
   "frequente": true,
   "escluse": [
@@ -1566,7 +1580,8 @@
    "a ceramic piggy bank and euro coins on a wooden table, a wider view that shows more of the surroundings, on an overcast day",
    "euro coins stacked in columns on a desk, seen from a different side and a higher angle, in soft morning light",
    "a ceramic piggy bank and euro coins on a wooden table, seen from a different side and a higher angle, in soft morning light",
-   "a ceramic piggy bank and euro coins on a wooden table, photographed from a low angle, at golden hour"
+   "a ceramic piggy bank and euro coins on a wooden table, photographed from a low angle, at golden hour",
+   "euro banknotes and coins on a wooden table, photographed from a low angle, at golden hour"
   ],
   "frequente": true
  },
@@ -1659,7 +1674,11 @@
    "plain red flags without writing waving in front of a closed factory gate, seen from a different side and a higher angle, in soft morning light",
    "blank protest placards leaning against the railings of a town square, seen from a different side and a higher angle, in soft morning light",
    "a megaphone and a rolled-up banner resting on the steps of a public building, photographed from a low angle, at golden hour",
-   "blank protest placards leaning against the railings of a town square, photographed from a low angle, at golden hour"
+   "blank protest placards leaning against the railings of a town square, photographed from a low angle, at golden hour",
+   "a megaphone and a rolled-up banner resting on the steps of a public building, a different composition with the subject off-center, in winter under a grey sky",
+   "a megaphone and a rolled-up banner resting on the steps of a public building, a view from above, in bright daylight",
+   "blank protest placards leaning against the railings of a town square, a view from above, in bright daylight",
+   "a megaphone and a rolled-up banner resting on the steps of a public building, at dusk, seen from further away, with the first lights on"
   ],
   "frequente": true,
   "escluse": [
@@ -2943,13 +2962,22 @@
   ]
  },
  "motori": {
-  "quando": "automobilismo, rally, kart, motociclismo",
+  "quando": "automobilismo in pista, gare in circuito (kart, rally e moto hanno il loro tema: «kart», «rally», «moto»)",
   "foto": "a racing car on an empty racetrack curb with motion blur, no numbers, no sponsors",
   "varianti": [
    "a go-kart on an outdoor kart track with tyre barriers",
    "a racing car on an empty racetrack curb with motion blur, no numbers, no sponsors, at dusk, seen from further away, with the first lights on",
-   "a rally car on a gravel mountain road raising dust, no logos"
-  ]
+   "a rally car on a gravel mountain road raising dust, no logos",
+   "a racing car on an empty racetrack curb with motion blur, no numbers, no sponsors, a close-up detail of the main subject, shallow depth of field",
+   "a racing car on an empty racetrack curb with motion blur, no numbers, no sponsors, a wider view that shows more of the surroundings, on an overcast day",
+   "a racing car on an empty racetrack curb with motion blur, no numbers, no sponsors, seen from a different side and a higher angle, in soft morning light",
+   "a racing car on an empty racetrack curb with motion blur, no numbers, no sponsors, photographed from a low angle, at golden hour"
+  ],
+  "escluse": [
+   "motori-2",
+   "motori-4"
+  ],
+  "mai": "\\bkart|rally|cronoscalat|\\bmoto\\b|motocicl|motocross|enduro|minimoto"
  },
  "calcio-a-5": {
   "quando": "calcio a 5 (futsal), calcetto",
@@ -2990,7 +3018,9 @@
    "rows of white battery storage containers in a fenced field in the countryside, a different composition with the subject off-center, in winter under a grey sky",
    "rows of white battery storage containers in a fenced field in the countryside, a view from above, in bright daylight",
    "rows of white battery storage containers in a fenced field in the countryside, at dusk, seen from further away, with the first lights on",
-   "rows of white battery storage containers in a fenced field in the countryside, after the rain, with wet reflective surfaces, seen at eye level"
+   "rows of white battery storage containers in a fenced field in the countryside, after the rain, with wet reflective surfaces, seen at eye level",
+   "rows of white battery storage containers in a fenced field in the countryside, a close-up detail of the main subject, shallow depth of field",
+   "a large white container with cooling units behind a metal fence in a field, a close-up detail of the main subject, shallow depth of field"
   ],
   "escluse": [
    "accumulo-energia-2",
@@ -3087,7 +3117,8 @@
    "a closed school gate with a chain on a rainy day, seen from a different side and a higher angle, in soft morning light",
    "a closed school gate with a chain on a rainy day, photographed from a low angle, at golden hour",
    "a closed school gate with a chain on a rainy day, a view from above, in bright daylight",
-   "a closed school gate with a chain on a rainy day, at dusk, seen from further away, with the first lights on"
+   "a closed school gate with a chain on a rainy day, at dusk, seen from further away, with the first lights on",
+   "a closed school gate with a chain on a rainy day, after the rain, with wet reflective surfaces, seen at eye level"
   ],
   "solo": "chius|sospes|niente lezioni|stop alle lezioni|senza lezioni|allerta|\\bneve\\b|inagibil|sanificaz|disinfest|guasto|senza riscaldamento|evacuat|sgomberat"
  },
@@ -3115,7 +3146,11 @@
    "cracks in the plaster wall of an old building, photographed from a low angle, at golden hour",
    "cracks in the plaster wall of an old building, a close-up detail of the main subject, shallow depth of field",
    "cracks in the plaster wall of an old building, a wider view that shows more of the surroundings, on an overcast day",
-   "cracks in the plaster wall of an old building, seen from a different side and a higher angle, in soft morning light"
+   "cracks in the plaster wall of an old building, seen from a different side and a higher angle, in soft morning light",
+   "cracks in the plaster wall of an old building, a different composition with the subject off-center, in winter under a grey sky",
+   "cracks in the plaster wall of an old building, a view from above, in bright daylight",
+   "cracks in the plaster wall of an old building, at dusk, seen from further away, with the first lights on",
+   "cracks in the plaster wall of an old building, after the rain, with wet reflective surfaces, seen at eye level"
   ],
   "solo": "dann|crep|lesion|inagibil|croll|puntell|sgomber|calcinacc|verifiche sugli edifici|sopralluog",
   "mai": "nessun dann|senza dann|non (?:ha |hanno |ci sono stati |si segnalano |risultano )?(?:causato |provocato )?dann"
@@ -3124,7 +3159,39 @@
   "quando": "elettrodotti e linee dell'alta tensione, tralicci, sottostazioni e cabine elettriche, lavori sulla rete elettrica (gli impianti di batterie sono «accumulo-energia»)",
   "foto": "an electrical substation with transformers and insulators in the countryside",
   "varianti": [
-   "high-voltage power lines crossing green hills"
+   "high-voltage power lines crossing green hills",
+   "an electrical substation with transformers and insulators in the countryside, a close-up detail of the main subject, shallow depth of field",
+   "high-voltage power lines crossing green hills, a close-up detail of the main subject, shallow depth of field",
+   "an electrical substation with transformers and insulators in the countryside, a wider view that shows more of the surroundings, on an overcast day",
+   "high-voltage power lines crossing green hills, a wider view that shows more of the surroundings, on an overcast day"
   ]
+ },
+ "kart": {
+  "quando": "kart e karting, gare e piste di kart",
+  "foto": "a go-kart on an outdoor kart track with tyre barriers",
+  "solo": "\\bkart",
+  "varianti": [
+   "a go-kart on an outdoor kart track with tyre barriers, a close-up detail of the main subject, shallow depth of field",
+   "a go-kart on an outdoor kart track with tyre barriers, a wider view that shows more of the surroundings, on an overcast day",
+   "a go-kart on an outdoor kart track with tyre barriers, seen from a different side and a higher angle, in soft morning light",
+   "a go-kart on an outdoor kart track with tyre barriers, photographed from a low angle, at golden hour"
+  ]
+ },
+ "rally": {
+  "quando": "rally, cronoscalate e slalom su strada",
+  "foto": "a rally car on a gravel mountain road raising dust, no logos",
+  "solo": "rally|cronoscalat|slalom|\\bsalita\\b",
+  "varianti": [
+   "a rally car on a gravel mountain road raising dust, no logos, a close-up detail of the main subject, shallow depth of field",
+   "a rally car on a gravel mountain road raising dust, no logos, a wider view that shows more of the surroundings, on an overcast day",
+   "a rally car on a gravel mountain road raising dust, no logos, seen from a different side and a higher angle, in soft morning light",
+   "a rally car on a gravel mountain road raising dust, no logos, photographed from a low angle, at golden hour"
+  ]
+ },
+ "moto": {
+  "quando": "motociclismo, gare di moto, motocross, enduro, minimoto (mai per incidenti)",
+  "foto": "a motorcycle racing helmet and gloves resting on the seat of a motorcycle in an empty paddock, no logos, no numbers",
+  "solo": "\\bmoto\\b|motocicl|motocross|enduro|minimoto|\\bmotogp|superbike|trial",
+  "varianti": []
  }
 }
