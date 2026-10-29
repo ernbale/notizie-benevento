@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-28T18:07:00+01:00",
+ "aggiornato": "2026-10-29T11:16+01:00",
  "eventi": [
   {
    "id": "mostra-cosmogonie-meact-torrecuso-2026",
@@ -817,6 +817,53 @@
    "foto": "sagra-10"
   },
   {
+   "id": "halloween-sezione-egizia-museo-arcos-benevento-2026",
+   "titolo": "Halloween alla Sezione Egizia del Museo Arcos",
+   "tipo": "museo",
+   "inizio": "2026-10-31",
+   "ora": "16:00",
+   "luogo": "Museo Arcos, Sezione Egizia",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "organizzatore": [
+    "Provincia di Benevento",
+    "Sannio Europa"
+   ],
+   "breve": "Sabato 31 ottobre alle 16 i bambini giocano tra i reperti della Sezione Egizia del Museo Arcos, tra enigmi e prove sui segreti della dea Iside.",
+   "descrizione": [
+    {
+     "testo": "Sabato 31 ottobre alle 16, per Halloween, la Sezione Egizia del Museo Arcos di Benevento diventa un percorso di gioco per bambini: tra reperti e simboli dell'antico Egitto devono risolvere enigmi e superare prove per scoprire i segreti della dea Iside, lavorando in squadra.",
+     "fonti": [
+      "Cronache del Sannio",
+      "Lab TV"
+     ]
+    },
+    {
+     "testo": "L'iniziativa è della Provincia di Benevento e di Sannio Europa, che gestisce i musei della Provincia, per avvicinare i più piccoli al patrimonio archeologico. Prezzo e prenotazione non sono indicati.",
+     "fonti": [
+      "Cronache del Sannio",
+      "Lab TV"
+     ]
+    }
+   ],
+   "immagine": "museo",
+   "fonti": [
+    {
+     "nome": "Cronache del Sannio",
+     "titolo": "Halloween al Museo, all’Arcos un’avventura alla scoperta dei segreti della dea Iside",
+     "url": "https://www.cronachedelsannio.it/sannionews24/halloween-museo-arcos-avventura-segreti-dea-iside/",
+     "data": "29 ott, 10:27"
+    },
+    {
+     "nome": "Lab TV",
+     "titolo": "Halloween al Museo: per i bambini organizzata per sabato un’avventura alla scoperta dei segreti della dea Iside",
+     "url": "https://www.labtv.net/cultura/eventi/2026/10/29/halloween-al-museo-per-i-bambini-organizzata-per-sabato-unavventura-alla-scoperta-dei-segreti-della-dea-iside/",
+     "data": "29 ott, 11:08"
+    }
+   ],
+   "foto": "museo-3"
+  },
+  {
    "id": "neri-per-caso-accademia-santa-sofia-2026",
    "titolo": "Neri per Caso al Teatro Comunale",
    "tipo": "concerto",
@@ -875,6 +922,56 @@
    "ora": "19:00"
   },
   {
+   "id": "ptacce-de-vita-fausto-di-maria-santa-croce-del-sannio-2026",
+   "titolo": "«P'tacce de vita» di Fausto Di Maria, la presentazione",
+   "tipo": "libro",
+   "inizio": "2026-10-31",
+   "ora": "20:00",
+   "luogo": "Palazzo Galanti",
+   "comune": "Santa Croce del Sannio",
+   "zona": "fortore",
+   "organizzatore": "Associazione Giuseppe Maria Galanti",
+   "artisti": [
+    "Fausto Di Maria",
+    "Elena Di Maria",
+    "Angela Maria Zeoli",
+    "Francesco Di Maria"
+   ],
+   "breve": "Sabato 31 ottobre alle 20 a Palazzo Galanti si presenta la ristampa di «P'tacce de vita», poesie in dialetto santacrocese di Fausto Di Maria.",
+   "descrizione": [
+    {
+     "testo": "Sabato 31 ottobre alle 20, a Palazzo Galanti di Santa Croce del Sannio, si presenta la ristampa del libro di poesie «P'tacce de vita» di Fausto Di Maria. L'ha recuperato l'associazione Giuseppe Maria Galanti, che lo considera un pezzo della storia del paese.",
+     "fonti": [
+      "Cronache del Sannio",
+      "BeneventoNews24"
+     ]
+    },
+    {
+     "testo": "L'autore partì per il Nord nel 1960 in cerca di lavoro. Le poesie, in dialetto santacrocese, ricordano i luoghi, le persone e le usanze del mondo contadino che aveva lasciato. Elena Di Maria dialoga con l'autore; le letture sono di Angela Maria Zeoli e Francesco Di Maria.",
+     "fonti": [
+      "Cronache del Sannio",
+      "BeneventoNews24"
+     ]
+    }
+   ],
+   "immagine": "libri",
+   "fonti": [
+    {
+     "nome": "BeneventoNews24",
+     "titolo": "Santa Croce del Sannio, torna “P’tacce de vita”: la memoria del borgo rivive nei versi di Fausto Di Maria",
+     "url": "https://www.beneventonews24.it/2026/10/29/santa-croce-del-sannio-torna-ptacce-de-vita-la-memoria-del-borgo-rivive-nei-versi-di-fausto-di-maria/",
+     "data": "29 ott, 10:27"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "titolo": "A Santa Croce del Sannio si presenta il libro “P’tacce de vita” di Fausto Di Maria",
+     "url": "https://www.cronachedelsannio.it/sannionews24/santa-croce-presentazione-libro-fausto-dimaria/",
+     "data": "29 ott, 09:45"
+    }
+   ],
+   "foto": "libri-8"
+  },
+  {
    "id": "eterno-enigma-teatro-romano-benevento-2026",
    "titolo": "«Eterno Enigma» al Teatro Romano",
    "tipo": "teatro",
@@ -900,6 +997,12 @@
      "fonti": [
       "Ministero della Cultura"
      ]
+    },
+    {
+     "testo": "Mercoledì 4 novembre, Giornata dell'Unità nazionale e delle Forze armate, il Teatro Romano apre di nuovo gratis.",
+     "fonti": [
+      "Cronache del Sannio"
+     ]
     }
    ],
    "immagine": "teatro",
@@ -909,6 +1012,12 @@
      "titolo": "Domenica al Museo- Teatro romano di Benevento- 1 novembre 2026",
      "url": "https://cultura.gov.it/evento/domenica-al-museo-teatro-romano-di-benevento-1-novembre-2026",
      "data": "19 ott"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "titolo": "“Domenica al Museo”, ingresso gratuito e spettacolo al Teatro Romano",
+     "url": "https://www.cronachedelsannio.it/sannionews24/domenica-museo-ingresso-gratuito-spettacolo-teatro-romano/",
+     "data": "29 ott, 10:36"
     }
    ],
    "foto": "teatro-22"
