@@ -1265,35 +1265,39 @@ def _dove_farmacia(x):
     return f'<span class="dove">{e(x["indirizzo"])}{" · " if x["indirizzo"] else ""}{_telefono(x)}{_mappa_farmacia(x)}</span>'
 
 
-def turni_adesso(dati, adesso):
-    """(turno diurno di oggi, turno notturno che vale adesso o stanotte, la notte è già cominciata?) all'ora `adesso`
-    (ora italiana); None dove il turno non c'è. Come turniAdesso() in index.html."""
-    notte = (dati.get("note") or {}).get("notte") or {"dalle": "20:00", "alle": "08:45"}
-    oggi, hm = adesso.date(), adesso.strftime("%H:%M")
-    trova = lambda k, d: next((x for x in dati.get(k) or [] if x["dal"] <= d.isoformat() <= x["al"]), None)   # noqa: E731
-    if hm < notte["alle"]:
-        return trova("diurno", oggi), trova("notturno", oggi - dt.timedelta(days=1)), True
-    return trova("diurno", oggi), trova("notturno", oggi), hm >= notte["dalle"]
-
-
 def _ora_breve(s):
     return s[1:] if s.startswith("0") else s
 
 
-def html_adesso_farmacie(dati, adesso):
-    """Il riquadro «adesso» della pagina delle farmacie (lo rifà index.html con turniAdesso())."""
-    di, no, gia = turni_adesso(dati, adesso)
+def turni_adesso(dati, adesso):
+    """Il turno in corso all'ora `adesso` (ora italiana) e il prossimo: [(quando, servizio, turno o None)] (lui, 29 ott
+    2026: «prima il turno in atto e poi il successivo con orario di inizio del successivo, lasciando gli orari di fine»).
+    La notte va dalle 20 alle 8:45 (le ore del PDF), il diurno nelle altre ore. Come in index.html (FISSA.farmacie)."""
     notte = (dati.get("note") or {}).get("notte") or {"dalle": "20:00", "alle": "08:45"}
+    dalle, alle = _ora_breve(notte["dalle"]), _ora_breve(notte["alle"])
+    oggi, hm = adesso.date(), adesso.strftime("%H:%M")
+    trova = lambda k, d: next((x for x in dati.get(k) or [] if x["dal"] <= d.isoformat() <= x["al"]), None)   # noqa: E731
+    if hm < notte["alle"]:
+        return [(f"Adesso, fino alle {alle}", "notturno", trova("notturno", oggi - dt.timedelta(days=1))),
+                (f"Dalle {alle} alle {dalle}", "diurno", trova("diurno", oggi))]
+    if hm < notte["dalle"]:
+        return [(f"Adesso, fino alle {dalle}", "diurno", trova("diurno", oggi)),
+                (f"Dalle {dalle} alle {alle} di domani", "notturno", trova("notturno", oggi))]
+    return [(f"Adesso, fino alle {alle} di domani", "notturno", trova("notturno", oggi)),
+            (f"Domani dalle {alle} alle {dalle}", "diurno", trova("diurno", oggi + dt.timedelta(days=1)))]
+
+
+def html_adesso_farmacie(dati, adesso):
+    """Il riquadro «adesso» della pagina delle farmacie: prima il turno in corso, poi il prossimo (lo rifà index.html)."""
     h = f'<div class="occhiello">{e(_giorno_chiusura(adesso.date().isoformat(), adesso.date()))}</div>'
     h += '<ul class="notizie-comune">'
-    for x, cosa in ((di, "Servizio diurno, " + (_giorni_turno(di) if di else "")),
-                    (no, (f"Servizio notturno, adesso fino alle {_ora_breve(notte['alle'])}" if gia else
-                          f"Servizio notturno, stanotte dalle {_ora_breve(notte['dalle'])} alle {_ora_breve(notte['alle'])}"))):
+    for quando, servizio, x in turni_adesso(dati, adesso):
+        cosa = f"{quando} · servizio {servizio}"
         if x:
             h += f'<li><div class="occhiello">{e(cosa)}</div><b class="farm-nome">{e(x["nome"])}</b>{_dove_farmacia(x)}</li>'
         else:
-            h += (f'<li><div class="occhiello">{e(cosa.split(",")[0])}</div><p>Il turno non c\'è ancora: Federfarma '
-                  "Benevento non ha pubblicato i turni nuovi. Li mettiamo appena escono.</p></li>")
+            h += (f'<li><div class="occhiello">{e(cosa)}</div><p>Il turno non c\'è ancora: Federfarma Benevento non ha '
+                  "pubblicato i turni nuovi. Li mettiamo appena escono.</p></li>")
     return h + "</ul>"
 
 
@@ -2621,10 +2625,9 @@ def main():
     mappa.append((url, (farm.get("fonte") or {}).get("modificato") or farm.get("aggiornato")))
 
     # la pagina Servizi: un riquadro per servizio, con la riga di adesso dove il sito ha il dato
-    di, no, gia = turni_adesso(farm, adesso_it) if farm.get("diurno") else (None, None, False)
-    r_farm = " · ".join(x for x in (f"Di giorno: {di['nome']}" if di else "",
-                                    (f"{'adesso' if gia else 'stanotte'}: {no['nome']}" if no else "")) if x) \
-        or "Turni nuovi non ancora pubblicati da Federfarma"
+    ora_poi = turni_adesso(farm, adesso_it) if farm.get("diurno") else []
+    r_farm = " · ".join(f"{'Adesso' if i == 0 else q.split(' alle ')[0].lower()}: {x['nome']}"
+                        for i, (q, _, x) in enumerate(ora_poi) if x) or "Turni nuovi non ancora pubblicati da Federfarma"
     n_strade = len(strade_chiuse(notizie, oggi)[0])
     scuole = {c["comune"] for c in chiusure_per_giorno(chius.get("chiusure") or [], oggi).get(oggi.isoformat(), [])}
     try:

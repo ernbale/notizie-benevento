@@ -3458,15 +3458,13 @@
     var giornoLungo = function (g) {
       return new Date(g + "T12:00:00Z").toLocaleDateString("it-IT", { timeZone: "UTC", weekday: "long", day: "numeric", month: "long" });
     };
-    var giorni = function (x) {   // «dal 25 al 31 ottobre», come _giorni_turno in pagine.py
-      var a = new Date(x.dal + "T12:00:00Z"), b = new Date(x.al + "T12:00:00Z");
-      var g = function (d) { return d.getUTCDate() === 1 ? "1°" : String(d.getUTCDate()); };
-      var m = function (d) { return d.toLocaleDateString("it-IT", { timeZone: "UTC", month: "long" }); };
-      if (x.dal === x.al) return giornoLungo(x.dal);
-      return a.getUTCMonth() === b.getUTCMonth() ? "dal " + g(a) + " al " + g(b) + " " + m(b) : "dal " + g(a) + " " + m(a) + " al " + g(b) + " " + m(b);
-    };
-    var gia = ora < NOTTE.alle || ora >= NOTTE.dalle;
-    var di = trova(F.diurno, oggi), no = trova(F.notturno, ora < NOTTE.alle ? ieri : oggi);
+    // prima il turno in corso, poi il prossimo (lui, 29 ott 2026: «prima il turno in atto e poi il successivo con orario
+    // di inizio del successivo, lasciando gli orari di fine»), come turni_adesso() in pagine.py
+    var domani = new Date(Date.parse(oggi + "T12:00:00Z") + 864e5).toISOString().slice(0, 10);
+    var dalle = breve(NOTTE.dalle), alle = breve(NOTTE.alle);
+    var turni = ora < NOTTE.alle ? [["Adesso, fino alle " + alle, "notturno", trova(F.notturno, ieri)], ["Dalle " + alle + " alle " + dalle, "diurno", trova(F.diurno, oggi)]]
+      : ora < NOTTE.dalle ? [["Adesso, fino alle " + dalle, "diurno", trova(F.diurno, oggi)], ["Dalle " + dalle + " alle " + alle + " di domani", "notturno", trova(F.notturno, oggi)]]
+      : [["Adesso, fino alle " + alle + " di domani", "notturno", trova(F.notturno, oggi)], ["Domani dalle " + alle + " alle " + dalle, "diurno", trova(F.diurno, domani)]];
     var mappa = function (x) {
       return linkSicuro("https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent("Farmacia " + x.nome + ", " + (x.via_mappa || x.indirizzo) + ", Benevento"), "mappa");
     };
@@ -3481,19 +3479,17 @@
     var box = document.querySelector(".farm-adesso");
     if (box) {
       var ul = el("ul", "notizie-comune", []);
-      [[di, "Servizio diurno" + (di ? ", " + giorni(di) : "")],
-       [no, "Servizio notturno" + (gia ? ", adesso fino alle " + breve(NOTTE.alle) : ", stanotte dalle " + breve(NOTTE.dalle) + " alle " + breve(NOTTE.alle))]
-      ].forEach(function (c) {
-        var x = c[0];
+      turni.forEach(function (c) {
+        var x = c[2], cosa = c[0] + " · servizio " + c[1];
         if (!x) {
-          ul.appendChild(el("li", "", [el("div", "occhiello", [c[1].split(",")[0]]),
+          ul.appendChild(el("li", "", [el("div", "occhiello", [cosa]),
             el("p", "", ["Il turno non c'è ancora: Federfarma Benevento non ha pubblicato i turni nuovi. Li mettiamo appena escono."])]));
           return;
         }
         var dove = el("span", "dove", [x.indirizzo ? x.indirizzo + " · " : ""]), tel = telefono(x);
         if (tel) { dove.appendChild(tel); dove.appendChild(testo(" · ")); }
         dove.appendChild(mappa(x));
-        ul.appendChild(el("li", "", [el("div", "occhiello", [c[1]]), el("b", "farm-nome", [x.nome]), dove]));
+        ul.appendChild(el("li", "", [el("div", "occhiello", [cosa]), el("b", "farm-nome", [x.nome]), dove]));
       });
       var g = giornoLungo(oggi);
       box.replaceChildren(el("div", "occhiello", ["Oggi, " + g]), ul);
@@ -3504,8 +3500,9 @@
       });
     }
     var riga = document.querySelector(".farm-riga");
-    if (riga) riga.textContent = [di ? "Di giorno: " + di.nome : "", no ? (gia ? "adesso: " : "stanotte: ") + no.nome : ""]
-      .filter(Boolean).join(" · ") || "Turni nuovi non ancora pubblicati da Federfarma";
+    if (riga) riga.textContent = turni.map(function (c, i) {
+      return c[2] ? (i === 0 ? "Adesso" : c[0].split(" alle ")[0].toLowerCase()) + ": " + c[2].nome : "";
+    }).filter(Boolean).join(" · ") || "Turni nuovi non ancora pubblicati da Federfarma";
   })();
   // Pagina dei carburanti (voluta dal proprietario il 25 ott 2026): si sceglie il paese (si parte da Benevento, c'è
   // anche «Tutti i paesi») e il carburante, e sotto ci sono tutti i distributori dal meno caro. Le schede sono quelle

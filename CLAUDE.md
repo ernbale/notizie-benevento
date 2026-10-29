@@ -68,13 +68,16 @@ lì.
 Lui, 29 ott 2026: «facciamo 2 3 e 4 pero 1 per volta» (pagine di servizio, dati che gli altri citano, Bing), «pianifica
 bene ogni cosa non ti deve sfuggire nulla», «stesso stile del sito per tutto». /servizi/ ha un riquadro per servizio,
 con la riga di adesso dove il sito ha il dato (html_servizi in pagine.py). Ogni servizio ha la sua pagina, per Google.
+**Per ogni servizio al pubblico il numero di telefono** (lui, 29 ott 2026: «i servizi al pubblico i numeri di telefono
+sempre sono una cosa utile»), cliccabile (tel:), preso da una fonte ufficiale: mai da elenchi non ufficiali, mai indovinato.
 - **Farmacie di turno** (/farmacie-di-turno/): solo Benevento città, dal PDF mensile di Federfarma Benevento
   (strumenti/farmacie.py, sul Pi due volte al giorno; lo manda alla pubblicazione quando cambia, campo «farmacie» di
   pubblica.yml, come i carburanti). Un turno si scrive solo se ogni giorno ne ha uno diurno e uno notturno, senza buchi;
   se no resta quello di prima e la sentinella avvisa (anche quando i turni sul sito finiscono entro 2 giorni). Le parole
   sono quelle del PDF. I telefoni (lui: «metti il numero di telefono è utile») vengono dall'elenco delle farmacie di
   Federfarma (farmacie.html), abbinati per nome e via: un numero esce solo se l'abbinamento è sicuro; dei titolari non si
-  tiene niente. «Adesso» lo rifà la pagina: alle 20 passa al notturno.
+  tiene niente. In cima il turno in corso con l'ora di fine e sotto il prossimo con inizio e fine (lui: «prima il turno
+  in atto e poi il successivo»); lo rifà la pagina, così alle 20 e alle 8:45 cambia da solo.
 - Prossime, una per volta e pianificate prima con lui: guardia medica (ASL), mercati, raccolta differenziata, ZTL,
   numeri utili. Niente riquadri «in arrivo».
 
