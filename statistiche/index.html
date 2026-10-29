@@ -1069,6 +1069,8 @@
     try {
       var q = new URLSearchParams(location.search).get("posta");
       if (q && /^http:\/\/(127\.0\.0\.1|localhost|192\.168\.50\.\d{1,3}):\d{2,5}\/posta\/api\/$/.test(q)) POSTA = q;
+      // la stessa scheda letta dal server Aruba, in prova accanto al Pi (29 ott 2026): ?posta=aruba
+      if (q === "aruba") POSTA = "https://posta.notiziebenevento.it/posta/api/";
     } catch (e) {}
   })();
   var gettonePosta = null;
