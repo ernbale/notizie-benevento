@@ -1931,8 +1931,9 @@
     if (rm) c3.appendChild(rm);
     if (rk && !rk.classList.contains("oggi")) c3.appendChild(rk);
     if (!filtroCat) { var rf = riquadroFarmacia(); if (rf) c3.appendChild(rf); }   // solo con un turno in corso
-    if (!filtroCat) { var rc = riquadroCarburanti(); if (rc) c3.appendChild(rc); }
+    // la curiosità sopra i carburanti (lui, 29 ott 2026: «Curiosità del Sannio spostalo sopra prezzi benzina»)
     if (!filtroCat) { var rq = riquadroCuriosita(); if (rq) c3.appendChild(rq); }
+    if (!filtroCat) { var rc = riquadroCarburanti(); if (rc) c3.appendChild(rc); }
     if (!filtroCat) c3.appendChild(riquadroSegui("Le notizie del Sannio appena escono, sul telefono."));
     if (avvisi.length || sh) c3.appendChild(riquadroAvvisi(avvisi, sh));
     if (!filtroCat) { var rs = riquadroSport(); if (rs) c3.appendChild(rs); }
@@ -3593,7 +3594,7 @@
       var vecchio = lat.querySelector(".farmacia-box"), nuovo = riquadroFarmacia();
       if (vecchio) vecchio.remove();
       if (nuovo) {
-        var dopo = lat.querySelector(".carburanti-box") || lat.querySelector(".curiosita-box") || lat.querySelector(".segui");
+        var dopo = lat.querySelector(".curiosita-box") || lat.querySelector(".carburanti-box") || lat.querySelector(".segui");
         lat.insertBefore(nuovo, dopo || null);
       }
     }
@@ -3763,7 +3764,7 @@
     box.appendChild(linkTutte("/carburanti/", "Tutti i distributori della provincia ›"));
     return box;
   }
-  // La curiosità del Sannio (una al giorno, dalle 12: curiosita/ultime.json), tra i carburanti e «Seguici»
+  // La curiosità del Sannio (una al giorno, dalle 12: curiosita/ultime.json), sopra i carburanti (dal 29 ott 2026)
   var curiosita = null;
   function riquadroCuriosita() {
     try {
@@ -3787,7 +3788,7 @@
     .then(function (j) {
       curiosita = j;
       var lat = document.querySelector(".griglia .laterale"), segui = lat && lat.querySelector(".segui");
-      if (!filtroCat && segui && !lat.querySelector(".curiosita-box")) { var rq = riquadroCuriosita(); if (rq) lat.insertBefore(rq, segui); }
+      if (!filtroCat && segui && !lat.querySelector(".curiosita-box")) { var rq = riquadroCuriosita(); if (rq) lat.insertBefore(rq, lat.querySelector(".carburanti-box") || segui); }
     })
     .catch(function () { /* senza curiosità il sito funziona lo stesso */ });
 
