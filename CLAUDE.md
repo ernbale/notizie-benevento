@@ -178,6 +178,12 @@ nuova la segue; se una pagina non la segue, è da sistemare.
    «deve comparire in tutte le pagine… e anche le future»). Li mette da solo azioniPagina() in index.html in ogni
    pagina che sia un <article> col suo <h1> dentro #contenuto: una pagina nuova fatta così li ha senza fare niente.
 
+4. **Un riquadro che avvisa di qualcosa dice in una riga cosa, non solo quando e dove** (lui, 29 ott 2026, sul riquadro
+   delle chiusure: «una brevissima descrizione di un rigo sarebbe meglio» → «si fallo e mettilo come regola»). Esempio:
+   «Dal 5 al 7 novembre: Benevento» e sotto «Nido d'infanzia «Carlotta Nobile»» (cosaBreve, tipiChiusure,
+   quandoChiusure in index.html): con un Comune solo il luogo senza via e parentesi, con più Comuni i tipi di luogo
+   («Scuole e cimitero»); i giorni di fila come intervallo. Vale per ogni riquadro nuovo che rimanda a un elenco.
+
 ## Correggere una notizia a mano
 1. `git pull --rebase` (le routine pubblicano spesso: rifallo anche subito prima del push).
 2. Modifica `notizie.json` (o l'archivio) con uno script che rilegge e riscrive il JSON con l'indentazione di 1

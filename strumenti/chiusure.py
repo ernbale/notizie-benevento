@@ -12,7 +12,8 @@ una strategia a prova di bomba». Come funziona:
   e (con --pubblica) fa il commit e il push, riprovando da capo se nel frattempo qualcuno ha pubblicato. Solo questo
   programma scrive chiusure.json: due giri insieme non si pestano i piedi.
 
-Una chiusura: {"comune", "cosa" (tutto quello che chiude quel Comune in quei giorni), "giorni" ["AAAA-MM-GG", …],
+Una chiusura: {"comune", "cosa" (tutto quello che chiude quel Comune in quei giorni, cominciando dal luogo: il riquadro
+della prima pagina ne mostra la prima parte, fino alla via o alla parentesi), "giorni" ["AAAA-MM-GG", …],
 "motivo", "fonte": {"nome", "url"}}; l'id (comune-primo giorno), «aggiunta» e «aggiornata» li mette questo programma.
 
 Uso:  python3 strumenti/chiusure.py --da-fare                       (cosa c'è da fare: piste nuove, allerta, chiusure)

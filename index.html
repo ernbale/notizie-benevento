@@ -568,6 +568,7 @@
   @media (max-width: 560px) { .appuntamenti ul { grid-template-columns: 1fr; } }
   .storia-corso .titolo-col { border-top-color: var(--rosso); color: var(--rosso); }
   .chiusure-box .cz-testo { display: block; font: 700 17px/1.3 var(--serif); }
+  .chiusure-box .cz-cosa { display: block; margin-top: 2px; font: 400 15px/1.35 var(--sans); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .chiusure-box .cz-link { display: block; margin-top: 6px; font: 600 13px var(--sans); color: var(--blu); }
   .chiusure-box:hover .cz-link { text-decoration: underline; }
   .appro .agg-chiusure { font: 600 14px/1.45 var(--sans); color: var(--grigio); }
@@ -3993,10 +3994,45 @@
   var chiusureRiquadro = null;   // {titolo, testo} se c'è una chiusura per oggi o per i prossimi giorni
   function riquadroChiusure() {
     if (!chiusureRiquadro) return null;
-    var a = el("a", "chiusure-box", [el("h3", "titolo-col", [chiusureRiquadro.titolo]), el("span", "cz-testo", [chiusureRiquadro.testo]),
-      el("span", "cz-link", ["Elenco completo, con le ordinanze ›"])]);
+    var a = el("a", "chiusure-box", [el("h3", "titolo-col", [chiusureRiquadro.titolo]), el("span", "cz-testo", [chiusureRiquadro.testo])]
+      .concat(chiusureRiquadro.cosa ? [el("span", "cz-cosa", [chiusureRiquadro.cosa])] : [])
+      .concat([el("span", "cz-link", ["Elenco completo, con le ordinanze ›"])]));
     a.href = "/scuole-chiuse/";
     return a;
+  }
+  // Sotto il quando e il dove, una riga che dice cosa chiude (lui, 29 ott 2026: «una brevissima descrizione di un rigo
+  // sarebbe meglio» → «si fallo e mettilo come regola»): con un Comune solo il luogo, senza la via e le parentesi
+  // («nido d'infanzia «Carlotta Nobile» in via Firenze» → «Nido d'infanzia «Carlotta Nobile»»); con più Comuni i tipi
+  // di luogo («Scuole e cimitero»).
+  function cosaBreve(cosa) {
+    var t = String(cosa || "").split(/\s+(?:in|di|da)\s+(?:via|viale|piazza|piazzale|corso|largo|contrada|località|loc\.)\s|\s*\(|,\s|;\s/i)[0].trim();
+    if (t.length > 48) t = t.slice(0, 47).replace(/\s+\S*$/, "").replace(/\s+(?:di|del|dello|della|dei|degli|delle|e|a|al|in|nel|nella|per|con|da)$/i, "") + "…";
+    return t.charAt(0).toUpperCase() + t.slice(1);
+  }
+  var TIPI_CHIUSURA = [[/scuol|plessi|istitut|liceo|primari|secondari|infanzia(?!.*nido)/i, "scuole"], [/asil|nid[oi]\b/i, "asili nido"],
+    [/cimiter/i, "cimitero"], [/parc|vill[ae]\s+comunal|giardin/i, "parchi"], [/impiant|palestr|palazzett|campo\s+sportiv|stadio/i, "impianti sportivi"],
+    [/mercat/i, "mercato"]];
+  function tipiChiusure(cs) {
+    var tipi = [];
+    cs.forEach(function (c) { TIPI_CHIUSURA.forEach(function (t) { if (t[0].test(c.cosa || "") && tipi.indexOf(t[1]) < 0) tipi.push(t[1]); }); });
+    if (!tipi.length) return "";
+    var s = tipi.length > 1 ? tipi.slice(0, -1).join(", ") + " e " + tipi[tipi.length - 1] : tipi[0];
+    return s.charAt(0).toUpperCase() + s.slice(1);
+  }
+  // «Dal 5 al 7 novembre», «Da oggi al 7 novembre»: quando tutte le chiusure del primo giorno durano gli stessi giorni,
+  // uno dopo l'altro; se no il primo giorno, come prima
+  function quandoChiusure(cs, oggi, domani) {
+    var gg = cs[0].giorni.filter(function (g) { return g >= oggi; }).sort();
+    var uguali = cs.every(function (c) { return c.giorni.filter(function (g) { return g >= oggi; }).sort().join() === gg.join(); });
+    var difila = gg.every(function (g, i) { return !i || (new Date(g + "T12:00:00Z") - new Date(gg[i - 1] + "T12:00:00Z")) === 864e5; });
+    var primo = gg[0] === oggi ? "Oggi" : gg[0] === domani ? "Domani" : giornoChiusura(gg[0], oggi, domani);
+    if (gg.length < 2 || !uguali || !difila) return primo;
+    if (gg.length === 2 && gg[0] === oggi) return "Oggi e domani";
+    var gm = function (g) { return new Date(g + "T12:00:00Z").toLocaleDateString("it-IT", { timeZone: TZ, day: "numeric", month: "long" }).replace(/^1 /, "1° "); };
+    var ultimo = gm(gg[gg.length - 1]), inizio = gm(gg[0]);
+    var da = gg[0] === oggi ? "Da oggi" : gg[0] === domani ? "Da domani" :
+      ((/^(8|11)\b/.test(inizio) ? "Dall'" : "Dal ") + (inizio.split(" ")[1] === ultimo.split(" ")[1] ? inizio.split(" ")[0] : inizio));
+    return da + (/^\d/.test(ultimo) && /^(8|11)\b/.test(ultimo) ? " all'" : " al ") + ultimo;
   }
   function mostraChiusure(j) {
     var oggi = new Date().toLocaleDateString("sv-SE", { timeZone: TZ });
@@ -4009,11 +4045,12 @@
     var giorni = Object.keys(per).sort();
     if (giorni.length && !(FISSA && FISSA.chiusure)) {
       var cs = per[giorni[0]], comuni = cs.map(function (c) { return c.comune; }).sort(function (a, b) { return a.localeCompare(b, "it"); });
-      var quando = giorni[0] === oggi ? "Oggi" : giorni[0] === domani ? "Domani" : giornoChiusura(giorni[0], oggi, domani);
+      var quando = quandoChiusure(cs, oggi, domani);
       chiusureRiquadro = {
         titolo: cs.some(function (c) { return /scuol/i.test(c.cosa || ""); }) ? "Scuole chiuse" : "Chiusure dei Comuni",
         testo: quando + ": " + (comuni.length > 4 ? comuni.slice(0, 3).join(", ") + " e altri " + (comuni.length - 3) + " Comuni" :
-          comuni.length > 1 ? comuni.slice(0, -1).join(", ") + " e " + comuni[comuni.length - 1] : comuni[0])
+          comuni.length > 1 ? comuni.slice(0, -1).join(", ") + " e " + comuni[comuni.length - 1] : comuni[0]),
+        cosa: cs.length === 1 ? cosaBreve(cs[0].cosa) : tipiChiusure(cs)
       };
       // se la colonna di destra è già disegnata, il riquadro va in cima
       var lat = document.querySelector(".griglia .laterale");
