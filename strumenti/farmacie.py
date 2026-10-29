@@ -176,20 +176,23 @@ def orari_e_note(testo):
     return out
 
 
-def leggi_elenco(testo_html):
-    """Le farmacie di Benevento città dell'elenco di Federfarma: [{"parole", "via", "telefono"}] (senza i titolari)."""
+def leggi_elenco(testo_html, tutte=False):
+    """Le farmacie di Benevento città dell'elenco di Federfarma (con tutte=True quelle di tutta la provincia, per i
+    paesi: strumenti/farmacie_paesi.py): [{"parole", "via", "comune", "telefono"}] (senza i titolari)."""
     out = []
     for tr in re.findall(r"<tr\b.*?</tr>", testo_html, re.S | re.I):
         celle = [re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", c))).strip()
                  for c in re.findall(r"<td\b.*?</td>", tr, re.S | re.I)]
-        if len(celle) < 6 or celle[4].upper() != "BENEVENTO":
+        if len(celle) < 6 or (celle[4].upper() != "BENEVENTO" and not tutte) or not celle[4].strip():
             continue
         tel = re.sub(r"\D", "", celle[5])
         if not RX_TELEFONO.match(tel):
-            continue
-        out.append({"parole": parole(celle[1] + " " + celle[2]), "via": celle[3], "parole_via": parole(celle[3]),
-                    "telefono": tel})
-    if len(out) < 8:
+            if not tutte:
+                continue
+            tel = ""   # per i paesi la farmacia serve lo stesso (si abbina ai turni), senza numero
+        out.append({"nome": celle[2] or celle[1], "parole": parole(celle[1] + " " + celle[2]), "via": celle[3], "parole_via": parole(celle[3]),
+                    "comune": bello(re.sub(r"\s+", " ", celle[4]).strip()), "telefono": tel})
+    if len(out) < (60 if tutte else 8):
         raise ValueError(f"nell'elenco delle farmacie ci sono solo {len(out)} farmacie di Benevento con il telefono")
     return out
 
@@ -234,9 +237,69 @@ def unisci(nuovi, vecchi, oggi):
 
 
 def firma(d):
-    """Quello che conta per sapere se sul sito c'è già lo stesso: turni, orari e note."""
-    pezzi = {k: d.get(k) for k in ("diurno", "notturno", "orari", "note")}
+    """Quello che conta per sapere se sul sito c'è già lo stesso: turni, orari, note e i paesi."""
+    pezzi = {k: d.get(k) for k in ("diurno", "notturno", "orari", "note", "paesi")}
     return hashlib.sha256(json.dumps(pezzi, sort_keys=True, ensure_ascii=False).encode()).hexdigest()[:16]
+
+
+def paesi(elenco_html, vecchi, oggi, chiave=None):
+    """I turni dei paesi, zona per zona (strumenti/farmacie_paesi.py), e le farmacie di tutta la provincia col
+    telefono. Se l'Ordine o l'elenco non rispondono, quelli di prima. Sul Pi (chiave) avvisa il proprietario solo degli
+    errori importanti, una volta per file (lui, 29 ott 2026: «quando errore è importante», «piccoli errori lasciamo
+    correre»): una zona che non si legge o che torna solo in parte; le date ricostruite no."""
+    try:
+        import farmacie_paesi as FP
+        tutte = leggi_elenco(elenco_html or scarica_elenco(), tutte=True)
+        limite = (oggi - dt.timedelta(days=21)).isoformat()
+        zone = []
+        for z in FP.zone(tutte):
+            zone.append({k: z.get(k) for k in ("titolo", "pdf", "impronta", "farmacie", "regole", "cambio", "problema", "fino_al")}
+                        | {"turni": [t for t in z.get("turni") or [] if t["al"] >= limite]})
+        out = {"fonte": {"nome": "Ordine dei Farmacisti della Provincia di Benevento", "pagina": FP.PAGINA},
+               "zone": zone, "elenco": [{k: f[k] for k in ("nome", "comune", "telefono", "via")} for f in tutte]}
+    except Exception as e:
+        print(f"farmacie: turni dei paesi non letti ({type(e).__name__}: {str(e)[:200]}): restano quelli di prima",
+              file=sys.stderr)
+        return vecchi.get("paesi") or {}
+    gravi = [z for z in out["zone"] if z.get("problema")]
+    # un calendario che finisce entro 3 giorni (a gennaio, finché l'Ordine non mette quelli dell'anno nuovo)
+    presto = (oggi + dt.timedelta(days=3)).isoformat()
+    for z in out["zone"]:
+        if z.get("turni") and not z.get("problema") and z["turni"][-1]["al"] <= presto:
+            gravi.append(dict(z, impronta=f"{z.get('impronta')}:fine", problema=f"il calendario finisce il "
+                              f"{dt.date.fromisoformat(z['turni'][-1]['al']):%d/%m/%Y} e l'Ordine non ha ancora messo quello nuovo"))
+    for z in gravi:
+        print(f"farmacie: zona «{z['titolo']}»: {z['problema']}", file=sys.stderr)
+    if chiave and gravi:
+        avvisa(gravi, os.path.join(os.path.dirname(os.path.abspath(chiave)), "farmacie-avvisate.json"))
+    return out
+
+
+def avvisa(gravi, stato_p):
+    """WhatsApp ed email al proprietario (sentinella.manda_a_casa) per le zone nuove con un errore importante."""
+    try:
+        with open(stato_p, encoding="utf-8") as f:
+            visti = json.load(f)
+    except (OSError, ValueError):
+        visti = {}
+    nuove = [z for z in gravi if z.get("impronta") and z["impronta"] not in visti]
+    if not nuove:
+        return
+    try:
+        from sentinella import manda_a_casa
+        testo = ("⚠️ Notizie Benevento, farmacie dei paesi: nel calendario dell'Ordine dei Farmacisti c'è un errore "
+                 "importante.\n" + "\n".join(f"• {z['titolo']}: {z['problema']}" for z in nuove)
+                 + "\nSul sito restano solo i turni che tornano; per gli altri giorni la pagina dice di chiamare la farmacia.")
+        esiti = manda_a_casa(testo, "⚠️ Notizie Benevento: calendario delle farmacie da controllare")
+        print("farmacie: avviso", ", ".join(esiti))
+        if not any("mandat" in x and "NON" not in x for x in esiti):   # non è partito niente: si riprova al giro dopo
+            return
+    except Exception as e:
+        print(f"farmacie: avviso non mandato ({type(e).__name__}: {e})", file=sys.stderr)
+        return
+    visti.update({z["impronta"]: dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes") for z in nuove})
+    with open(stato_p, "w", encoding="utf-8") as f:
+        json.dump(visti, f, ensure_ascii=False)
 
 
 def scarica_elenco():
@@ -286,8 +349,10 @@ def main():
             vecchi = json.load(f)
     except (OSError, ValueError):
         vecchi = {}
+    elenco_html = None
     try:   # i telefoni: se l'elenco non si apre, quelli del file di prima (per nome)
-        mancano = abbina(nuovi, leggi_elenco(scarica_elenco()))
+        elenco_html = scarica_elenco()
+        mancano = abbina(nuovi, leggi_elenco(elenco_html))
     except Exception as e:
         print(f"farmacie: elenco con i telefoni non letto ({type(e).__name__}: {str(e)[:200]}): uso quelli di prima",
               file=sys.stderr)
@@ -304,6 +369,7 @@ def main():
            "fonte": {"nome": "Federfarma Benevento", "pagina": PAGINA_FONTE, "pdf": PDF, "elenco": ELENCO,
                      "modificato": modificato or (vecchi.get("fonte") or {}).get("modificato")},
            **out}
+    out["paesi"] = paesi(elenco_html, vecchi, oggi, a.manda)
     out["firma"] = firma(out)
     tmp = a.uscita + ".tmp"
     with open(tmp, "w", encoding="utf-8") as f:

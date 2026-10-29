@@ -79,6 +79,19 @@ sempre sono una cosa utile»), cliccabile (tel:), preso da una fonte ufficiale: 
   tiene niente. In cima il turno in corso con l'ora di fine e sotto il prossimo con inizio e fine (lui: «prima il turno
   in atto e poi il successivo»; quello in corso col nome più grande); lo rifà la pagina, così alle 20 e alle 8:45 cambia
   da solo. Negli elenchi sotto l'ordine resta diurno e poi notturno, con l'ora di inizio e di fine.
+- **I paesi** (lui: «altra cosa per gli altri comuni come facciamo?» → «ok va bene fai così»): «Il tuo paese» in cima
+  alla pagina (come nei carburanti; ?paese=… nell'indirizzo, il telefono se lo ricorda), una zona per volta. I turni
+  li legge strumenti/farmacie_paesi.py dai 28 PDF annuali dell'Ordine dei Farmacisti (sul Pi, insieme alla città). Le
+  date sbagliate che il turno prima e quello dopo confermano si correggono da sole; una zona che non torna tiene i
+  turni fino al primo errore (Pago Veiano 2026: da novembre) e la pagina dice di chiamare la farmacia. Avviso a lui
+  solo per gli errori importanti, una volta per file (lui: «quando errore è importante», «piccoli errori lasciamo
+  correre»); il 29 ott 2026 la redazione ha scritto all'Ordine per Pago (con il suo «vai manda», mail «molto gentile»).
+- **Gli orari** (lui: «si scrivi aperte tutte le farmacie»): pagine.py calcola le fasce (fasce_citta: «aperte tutte»
+  negli orari normali, servizio pomeridiano nella pausa e il sabato pomeriggio, festivo la domenica e nelle feste
+  con Pasqua e San Bartolomeo, notturno dalle 20 alle 8:45; fasce_zona: un turno dopo l'altro) e scrive
+  farmacie-fasce.json; index.html rifà «adesso» ogni minuto nella pagina, nelle pagine dei Comuni e nella riga di
+  Servizi. **In prima pagina**, tra Benevento Calcio e i carburanti, il riquadro «Farmacia di turno a Benevento» solo
+  quando c'è un turno (lui: «quando sono tutte aperte nulla il riquadro non si deve vedere»), col link alla pagina.
 - Prossime, una per volta e pianificate prima con lui: guardia medica (ASL), mercati, raccolta differenziata, ZTL,
   numeri utili. Niente riquadri «in arrivo».
 

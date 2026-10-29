@@ -98,12 +98,21 @@
   .avvisi-pag .avv-paese .notizie-comune a { font-size: 17px; line-height: 1.35; }
   /* le farmacie di turno (pagina farmacie-di-turno/): il riquadro «adesso» come lo speciale di Avvisi, il nome della
      farmacia come i titoli delle liste */
-  .farmacie .avv-speciale { background: var(--carta-scura); padding: 16px 20px 4px; margin: 24px 0 6px; }
-  .farmacie .avv-speciale > .occhiello { margin: 0 0 8px; }
+  .farm-adesso { background: var(--carta-scura); padding: 16px 20px 4px; margin: 18px 0 6px; }
+  .farm-adesso > .occhiello { margin: 0 0 8px; }
   .appro .notizie-comune .farm-nome { font: 700 20px/1.3 var(--serif); color: var(--nero); }
-  .farmacie .avv-speciale li.in-corso .farm-nome { font-size: 25px; }   /* il turno in corso, un po' più grande */
+  .farm-adesso li.in-corso .farm-nome { font-size: 25px; }   /* il turno in corso, un po' più grande */
+  .appro .notizie-comune .farm-anche { font: 500 14px/1.45 var(--sans); color: var(--grigio); margin: 4px 0 0; }
+  .appro .farm-titolo { font: 700 27px/1.18 var(--serif); letter-spacing: -.3px; margin: 26px 0 0; }
+  .appro .farm-comune h3 { margin-top: 22px; }
+  .farmacia-box { margin-bottom: 18px; }
+  .farmacia-box .occhiello { margin: 2px 0 3px; }
+  .farmacia-box a.farm-nome { display: block; font: 700 19px/1.25 var(--serif); color: var(--nero); text-decoration: none; }
+  .farmacia-box a.farm-nome:hover { text-decoration: underline; }
+  .farmacia-box .dove { display: block; font: 600 12.5px var(--sans); color: var(--grigio); margin: 3px 0 6px; }
+  .farmacia-box .dove a { color: inherit; }
   @media (max-width: 620px) {
-    .farmacie .avv-speciale { padding: 14px 14px 2px; }
+    .farm-adesso { padding: 14px 14px 2px; }
     .avvisi-pag .avv-paesi { grid-template-columns: 1fr; }
     .avvisi-pag .avv-speciale { padding: 14px 14px 2px; }
     .avvisi-pag .avv-speciale h2 { font-size: 23px; }
@@ -1900,6 +1909,7 @@
     var rm = riquadroMeteo();
     if (rm) c3.appendChild(rm);
     if (rk && !rk.classList.contains("oggi")) c3.appendChild(rk);
+    if (!filtroCat) { var rf = riquadroFarmacia(); if (rf) c3.appendChild(rf); }   // solo con un turno in corso
     if (!filtroCat) { var rc = riquadroCarburanti(); if (rc) c3.appendChild(rc); }
     if (!filtroCat) { var rq = riquadroCuriosita(); if (rq) c3.appendChild(rq); }
     if (!filtroCat) c3.appendChild(riquadroSegui("Le notizie del Sannio appena escono, sul telefono."));
@@ -3447,64 +3457,147 @@
     history.pushState(null, "", h);
     cambiaPagina();
   });
-  // Farmacie di turno (voluta dal proprietario il 29 ott 2026; pagina farmacie-di-turno/ e la riga nella pagina
-  // Servizi): «adesso» si rifà qui con l'ora italiana, come turni_adesso() in pagine.py. Prima delle 8:45 vale il
-  // turno notturno cominciato ieri sera, dalle 20 quello di stanotte; i turni già finiti escono dagli elenchi.
-  if (FISSA && FISSA.farmacie) (function () {
-    var F = FISSA.farmacie, NOTTE = F.notte || { dalle: "20:00", alle: "08:45" };
-    var ora = new Date().toLocaleTimeString("it-IT", { timeZone: TZ, hour: "2-digit", minute: "2-digit", hourCycle: "h23" });
-    var oggi = oggiTZ(), ieri = new Date(Date.parse(oggi + "T12:00:00Z") - 864e5).toISOString().slice(0, 10);
-    var trova = function (v, g) { return (v || []).filter(function (x) { return x.dal <= g && g <= x.al; })[0] || null; };
-    var breve = function (h) { return h.charAt(0) === "0" ? h.slice(1) : h; };
-    var giornoLungo = function (g) {
-      return new Date(g + "T12:00:00Z").toLocaleDateString("it-IT", { timeZone: "UTC", weekday: "long", day: "numeric", month: "long" });
-    };
-    // prima il turno in corso, poi il prossimo (lui, 29 ott 2026: «prima il turno in atto e poi il successivo con orario
-    // di inizio del successivo, lasciando gli orari di fine»), come turni_adesso() in pagine.py
-    var domani = new Date(Date.parse(oggi + "T12:00:00Z") + 864e5).toISOString().slice(0, 10);
-    var dalle = breve(NOTTE.dalle), alle = breve(NOTTE.alle);
-    var turni = ora < NOTTE.alle ? [["Adesso, fino alle " + alle, "notturno", trova(F.notturno, ieri)], ["Dalle " + alle + " alle " + dalle, "diurno", trova(F.diurno, oggi)]]
-      : ora < NOTTE.dalle ? [["Adesso, fino alle " + dalle, "diurno", trova(F.diurno, oggi)], ["Dalle " + dalle + " alle " + alle + " di domani", "notturno", trova(F.notturno, oggi)]]
-      : [["Adesso, fino alle " + alle + " di domani", "notturno", trova(F.notturno, oggi)], ["Domani dalle " + alle + " alle " + dalle, "diurno", trova(F.diurno, domani)]];
-    var mappa = function (x) {
-      return linkSicuro("https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent("Farmacia " + x.nome + ", " + (x.via_mappa || x.indirizzo) + ", Benevento"), "mappa");
-    };
-    var telefono = function (x) {   // come _telefono in pagine.py (lui, 29 ott 2026: «metti il numero di telefono è utile»)
-      var t = String(x.telefono || "").replace(/\D/g, "");
-      if (!/^(0\d{5,10}|3\d{8,9})$/.test(t)) return null;
-      var a = document.createElement("a");
-      a.href = "tel:+39" + t;
-      a.appendChild(testo(t.charAt(0) === "3" ? t.slice(0, 3) + " " + t.slice(3) : t.slice(0, 4) + " " + t.slice(4)));
-      return a;
-    };
-    var box = document.querySelector(".farm-adesso");
-    if (box) {
-      var ul = el("ul", "notizie-comune", []);
-      turni.forEach(function (c, i) {
-        var x = c[2], cosa = c[0] + " · servizio " + c[1];
-        if (!x) {
-          ul.appendChild(el("li", "", [el("div", "occhiello", [cosa]),
-            el("p", "", ["Il turno non c'è ancora: Federfarma Benevento non ha pubblicato i turni nuovi. Li mettiamo appena escono."])]));
-          return;
-        }
-        var dove = el("span", "dove", [x.indirizzo ? x.indirizzo + " · " : ""]), tel = telefono(x);
-        if (tel) { dove.appendChild(tel); dove.appendChild(testo(" · ")); }
-        dove.appendChild(mappa(x));
-        ul.appendChild(el("li", i === 0 ? "in-corso" : "", [el("div", "occhiello", [cosa]), el("b", "farm-nome", [x.nome]), dove]));
-      });
-      var g = giornoLungo(oggi);
-      box.replaceChildren(el("div", "occhiello", ["Oggi, " + g]), ul);
-      // gli elenchi: via i turni finiti (il notturno di ieri resta fino alle 8:45)
-      document.querySelectorAll(".farm-turni li[data-al]").forEach(function (li) {
-        var al = li.getAttribute("data-al");
-        li.hidden = li.getAttribute("data-servizio") === "notturno" ? al < (ora < NOTTE.alle ? ieri : oggi) : al < oggi;
-      });
+  // Farmacie di turno (voluto dal proprietario il 29 ott 2026): «adesso» si rifà qui da farmacie-fasce.json, le fasce
+  // calcolate da pagine.py (fasce_citta, fasce_zona; le stesse parole di etichetta_adesso ed etichetta_poi): nella
+  // pagina farmacie-di-turno/ (con «Il tuo paese»), nelle pagine dei Comuni, nella riga della pagina Servizi e nel
+  // riquadro della prima pagina, che c'è solo quando a Benevento c'è un turno (lui: «quando sono tutte aperte nulla il
+  // riquadro non si deve vedere»). Ogni minuto si ricontrolla: alle 13, alle 16:30, alle 20 e alle 8:45 cambia da solo.
+  var farmFasce = null;
+  var SERV_FARM = { pomeridiano: "servizio pomeridiano", festivo: "servizio festivo", notturno: "servizio notturno", turno: "farmacia di turno" };
+  function farmOra() {
+    return oggiTZ() + "T" + new Date().toLocaleTimeString("it-IT", { timeZone: TZ, hour: "2-digit", minute: "2-digit", hourCycle: "h23" });
+  }
+  function farmBreve(h) { return h.charAt(0) === "0" ? h.slice(1) : h; }
+  function farmGiornoDopo(g) { return new Date(Date.parse(g + "T12:00:00Z") + 864e5).toISOString().slice(0, 10); }
+  function farmGiorno(iso) {
+    var d = new Date(iso.slice(0, 10) + "T12:00:00Z"), g = d.getUTCDate();
+    return d.toLocaleDateString("it-IT", { timeZone: "UTC", weekday: "long" }) + " " + (g === 1 ? "1°" : g) + " " +
+      d.toLocaleDateString("it-IT", { timeZone: "UTC", month: "long" });
+  }
+  function farmAdessoEPoi(fasce, ora) {
+    for (var i = 0; i < fasce.length; i++) if (fasce[i].da <= ora && ora < fasce[i].a) return [fasce[i], fasce[i + 1] || null];
+    return [null, fasce.filter(function (f) { return f.da > ora; })[0] || null];
+  }
+  function farmEtAdesso(f, ora, cambio) {
+    var oggi = ora.slice(0, 10), ad = f.a.slice(0, 10), ao = farmBreve(f.a.slice(11));
+    if (ad === oggi) return "Adesso, fino alle " + ao;
+    if (ad === farmGiornoDopo(oggi) && !cambio) return "Adesso, fino alle " + ao + " di domani";
+    return "Adesso, fino a " + farmGiorno(ad) + (cambio ? " (" + cambio + ")" : "");
+  }
+  function farmEtPoi(f, ora, cambio) {
+    var oggi = ora.slice(0, 10), domani = farmGiornoDopo(oggi), dd = f.da.slice(0, 10), ad = f.a.slice(0, 10);
+    if (cambio || (dd !== oggi && dd !== domani)) return "Da " + farmGiorno(dd) + (cambio ? " (" + cambio + ")" : "");
+    var base = (dd === oggi ? "Dalle " : "Domani dalle ") + farmBreve(f.da.slice(11));
+    if (ad === dd) return base + " alle " + farmBreve(f.a.slice(11));
+    return base + " alle " + farmBreve(f.a.slice(11)) + (dd === oggi ? " di domani" : " del giorno dopo");
+  }
+  function farmTelefono(x) {   // come _telefono in pagine.py (lui, 29 ott 2026: «metti il numero di telefono è utile»)
+    var t = String(x.telefono || "").replace(/\D/g, "");
+    if (!/^(0\d{5,10}|3\d{8,9})$/.test(t)) return null;
+    var a = document.createElement("a");
+    a.href = "tel:+39" + t;
+    a.appendChild(testo(t.charAt(0) === "3" ? t.slice(0, 3) + " " + t.slice(3) : t.slice(0, 4) + " " + t.slice(4)));
+    return a;
+  }
+  function farmDove(x, conComune) {
+    var via = x.indirizzo || x.via_mappa || "";
+    var pezzi = [conComune && x.comune ? x.comune : "", via].filter(Boolean);
+    var dove = el("span", "dove", [pezzi.join(" · ") + (pezzi.length ? " · " : "")]), tel = farmTelefono(x);
+    if (tel) { dove.appendChild(tel); dove.appendChild(testo(" · ")); }
+    dove.appendChild(linkSicuro("https://www.google.com/maps/search/?api=1&query=" +
+      encodeURIComponent("Farmacia " + x.nome + ", " + (x.via_mappa || x.indirizzo || "") + ", " + (x.comune || "Benevento")), "mappa"));
+    return dove;
+  }
+  function farmRiquadro(area, ora) {   // come html_adesso in pagine.py
+    var ep = farmAdessoEPoi(area.fasce || [], ora), ul = el("ul", "notizie-comune", []);
+    [[ep[0], ep[0] ? farmEtAdesso(ep[0], ora, area.cambio) : "Adesso"], [ep[1], ep[1] ? farmEtPoi(ep[1], ora, area.cambio) : ""]].forEach(function (c, i) {
+      var f = c[0], li = el("li", i === 0 ? "in-corso" : "", []);
+      if (!f) {
+        if (i === 0) { li.appendChild(el("div", "occhiello", ["Adesso"])); li.appendChild(el("p", "", [area.manca || "Il turno non è ancora pubblicato: lo mettiamo appena esce."])); ul.appendChild(li); }
+        return;
+      }
+      if (f.tipo === "tutte") {
+        li.appendChild(el("div", "occhiello", [c[1]]));
+        li.appendChild(el("b", "farm-nome", ["Sono aperte tutte le farmacie"]));
+      } else if (!f.farmacia) {
+        li.appendChild(el("div", "occhiello", [c[1] + " · " + SERV_FARM[f.servizio]]));
+        li.appendChild(el("p", "", ["Il turno non è ancora pubblicato: lo mettiamo appena esce."]));
+      } else {
+        li.appendChild(el("div", "occhiello", [c[1] + " · " + SERV_FARM[f.servizio]]));
+        li.appendChild(el("b", "farm-nome", [f.farmacia.nome]));
+        li.appendChild(farmDove(f.farmacia, area.con_comune));
+        if (f.anche) li.appendChild(el("p", "farm-anche", [f.anche]));
+      }
+      ul.appendChild(li);
+    });
+    var t = new Date(ora.slice(0, 10) + "T12:00:00Z").toLocaleDateString("it-IT", { timeZone: "UTC", weekday: "long", day: "numeric", month: "long" });
+    return [el("div", "occhiello", ["Oggi, " + t]), ul];
+  }
+  // la prima pagina: tra Benevento Calcio e i carburanti, solo quando a Benevento c'è un turno
+  function riquadroFarmacia() {
+    try {
+      var area = farmFasce && farmFasce.aree && farmFasce.aree.benevento, ora = farmOra();
+      var f = area && farmAdessoEPoi(area.fasce || [], ora)[0];
+      if (!f || f.tipo !== "turno" || !f.farmacia) return null;
+      var a = el("a", "farm-nome", [f.farmacia.nome]);
+      a.href = "/farmacie-di-turno/";
+      return el("section", "farmacia-box", [el("h3", "titolo-col", ["Farmacia di turno a Benevento"]),
+        el("div", "occhiello", [farmEtAdesso(f, ora, "") + " · " + SERV_FARM[f.servizio]]), a, farmDove(f.farmacia, false),
+        linkTutte("/farmacie-di-turno/", "Tutti i turni, anche nei paesi ›")]);
+    } catch (e) { return null; }   // un file rotto non deve fermare la prima pagina
+  }
+  function farmAggiorna() {
+    if (!farmFasce || !farmFasce.aree) return;
+    var ora = farmOra(), oggi = ora.slice(0, 10), ieri = new Date(Date.parse(oggi + "T12:00:00Z") - 864e5).toISOString().slice(0, 10);
+    document.querySelectorAll(".farm-adesso[data-area]").forEach(function (box) {
+      var a = farmFasce.aree[box.getAttribute("data-area")];
+      if (a) box.replaceChildren.apply(box, farmRiquadro(a, ora));
+    });
+    // gli elenchi: via i turni finiti (il notturno di ieri resta fino alle 8:45)
+    var alle = ((farmFasce.aree.benevento || {}).fasce || []).filter(function (f) { return f.servizio === "notturno"; })[0];
+    var fineNotte = alle ? alle.a.slice(11) : "08:45";
+    document.querySelectorAll(".farm-turni li[data-al]").forEach(function (li) {
+      var al = li.getAttribute("data-al");
+      li.hidden = li.getAttribute("data-servizio") === "notturno" ? al < (ora.slice(11) < fineNotte ? ieri : oggi) : al < oggi;
+    });
+    document.querySelectorAll(".farm-turni li[data-da]").forEach(function (li) { li.hidden = li.getAttribute("data-da") <= ora; });   // già cominciati
+    var riga = document.querySelector(".farm-riga"), b = farmFasce.aree.benevento;
+    if (riga && b) {
+      var ep = farmAdessoEPoi(b.fasce || [], ora), nome = function (f) { return f.tipo === "tutte" ? "aperte tutte" : f.farmacia ? f.farmacia.nome : "turno non pubblicato"; };
+      riga.textContent = [ep[0] ? "Adesso: " + nome(ep[0]) : "", ep[1] ? (function (t) { return t.charAt(0).toLowerCase() + t.slice(1); })(farmEtPoi(ep[1], ora, "").split(" alle ")[0]) + ": " + nome(ep[1]) : ""]
+        .filter(Boolean).join(" · ") || "Turni nuovi non ancora pubblicati da Federfarma";
     }
-    var riga = document.querySelector(".farm-riga");
-    if (riga) riga.textContent = turni.map(function (c, i) {
-      return c[2] ? (i === 0 ? "Adesso" : c[0].split(" alle ")[0].toLowerCase()) + ": " + c[2].nome : "";
-    }).filter(Boolean).join(" · ") || "Turni nuovi non ancora pubblicati da Federfarma";
+    var lat = document.querySelector(".griglia .laterale");
+    if (lat && !FISSA && !filtroCat) {
+      var vecchio = lat.querySelector(".farmacia-box"), nuovo = riquadroFarmacia();
+      if (vecchio) vecchio.remove();
+      if (nuovo) {
+        var dopo = lat.querySelector(".carburanti-box") || lat.querySelector(".curiosita-box") || lat.querySelector(".segui");
+        lat.insertBefore(nuovo, dopo || null);
+      }
+    }
+  }
+  // «Il tuo paese»: la zona del paese scelto (nell'indirizzo ?paese=…, e il telefono se la ricorda), Benevento se no
+  var sceltaFarm = document.getElementById("farm-paese");
+  if (sceltaFarm) (function () {
+    function mostra(s) {
+      var o = sceltaFarm.querySelector('option[value="' + s + '"]') || sceltaFarm.options[0];
+      sceltaFarm.value = o.value;
+      document.querySelectorAll(".farm-area").forEach(function (a) { a.hidden = a.getAttribute("data-area") !== o.getAttribute("data-area"); });
+    }
+    var q = (location.search.match(/[?&]paese=([a-z0-9-]+)/) || [])[1], mem = null;
+    try { mem = localStorage.getItem("nb_farmacie_paese"); } catch (e) { /* senza memoria si parte da Benevento */ }
+    mostra(q || mem || "benevento");
+    sceltaFarm.addEventListener("change", function () {
+      mostra(sceltaFarm.value);
+      try { localStorage.setItem("nb_farmacie_paese", sceltaFarm.value); } catch (e) { /* niente */ }
+      history.replaceState(null, "", location.pathname + (sceltaFarm.value === "benevento" ? "" : "?paese=" + sceltaFarm.value));
+    });
   })();
+  fetch("/farmacie-fasce.json?t=" + Date.now(), { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (j) { farmFasce = j; farmAggiorna(); setInterval(farmAggiorna, 60000); })
+    .catch(function () { /* senza il file restano le righe scritte da pagine.py */ });
   // Pagina dei carburanti (voluta dal proprietario il 25 ott 2026): si sceglie il paese (si parte da Benevento, c'è
   // anche «Tutti i paesi») e il carburante, e sotto ci sono tutti i distributori dal meno caro. Le schede sono quelle
   // scritte da pagine.py, spostate qui: restano tutte nella pagina, quelle degli altri paesi nascoste. Un link a un

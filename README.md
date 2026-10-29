@@ -24,7 +24,9 @@ Sito: https://notiziebenevento.it (notiziebenevento.com rimanda qui)
   `farmacie.json` (pagina `/farmacie-di-turno/`, dal 29 ott 2026), con i telefoni dall'elenco delle farmacie della stessa
   Federfarma: lo legge il Pi di casa e lo manda alla pubblicazione
   quando cambia, come i carburanti. La pagina `/servizi/` raccoglie farmacie, strade e scuole chiuse, carburanti, meteo,
-  avvisi, agevolazioni e Comuni (voce «Servizi» del menu).
+  avvisi, agevolazioni e Comuni (voce «Servizi» del menu). `strumenti/farmacie_paesi.py`: i turni dei paesi dai PDF
+  dell'Ordine dei Farmacisti, zona per zona. pagine.py scrive `farmacie-fasce.json` (gli orari di adesso per la pagina,
+  i Comuni e il riquadro della prima pagina); non va nel repository.
 - `strumenti/foto_ia.py`: le foto fatte con GPT Image dalla `scena`: oggi solo per le curiosità senza foto libera su Commons
   (`img/curiosita/`); le 31 fatte il 28 ott 2026 per notizie e storie (`img/ia/`) restano. Segreto `OPENAI_API_KEY`.
 - `strumenti/pagine.py`: a ogni pubblicazione fa una pagina vera per ogni notizia (`/notizia/<id>/`, anche archiviate),
