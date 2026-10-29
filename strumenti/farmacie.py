@@ -259,7 +259,7 @@ def paesi(elenco_html, vecchi, oggi, chiave=None):
         limite = (oggi - dt.timedelta(days=21)).isoformat()
         zone = []
         for z in FP.zone(tutte):
-            zone.append({k: z.get(k) for k in ("titolo", "pdf", "impronta", "farmacie", "regole", "cambio", "problema", "fino_al")}
+            zone.append({k: z.get(k) for k in ("titolo", "pdf", "impronta", "farmacie", "regole", "cambio", "problema", "fino_al", "nota")}
                         | {"turni": [t for t in z.get("turni") or [] if t["al"] >= limite]})
         out = {"fonte": {"nome": "Ordine dei Farmacisti della Provincia di Benevento", "pagina": FP.PAGINA},
                "zone": zone, "elenco": [{k: f[k] for k in ("nome", "comune", "telefono", "via")} for f in tutte]}

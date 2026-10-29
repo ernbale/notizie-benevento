@@ -1591,6 +1591,8 @@ def html_area_zona(zid, area, adesso, elenco_paesi):
     if z.get("regole"):
         h += "<h3>Come funzionano i turni qui</h3>" + "".join(
             f'<p><b>{e(r["titolo"])}:</b> {e(r["testo"])}</p>' for r in z["regole"])
+    if z.get("nota"):   # il calendario corretto mandato per posta dall'Ordine (strumenti/farmacie_paesi.py, A_MANO)
+        h += f'<p class="agg-chiusure">{e(z["nota"])}</p>'
     h += (f'<p class="agg-chiusure">Fonte: Ordine dei Farmacisti della Provincia di Benevento, <a href="{e(z["pdf"])}" '
           f'target="_blank" rel="noopener nofollow">calendario della zona</a> ({e(z["titolo"])}); i telefoni dall\'elenco '
           "delle farmacie di Federfarma Benevento. Un turno può cambiare all'ultimo momento: il cartello sulla porta "

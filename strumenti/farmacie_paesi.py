@@ -15,10 +15,21 @@ dopo), senza buchi né sovrapposizioni. Una zona che non passa il controllo non 
 disponibili» con il link al PDF dell'Ordine. Il telefono e il paese di ogni farmacia vengono dall'elenco di Federfarma
 Benevento (strumenti/farmacie.py, leggi_elenco), abbinato per nome.
 
+Le regole della zona a volte nel PDF sono due caselle una sopra l'altra (Pago Veiano e San Marco dei Cavoti, 2026: a vista si legge
+la prima frase, la seconda ci sta sotto): -layout le intreccia parola per parola («Inizierà il il assicurerà turno…»).
+Allora si rimettono insieme dal testo in ordine di scrittura (pdftotext -raw), righe intere; se non si riesce la regola
+non si mostra (mischiata, ricomponi).
+
+Il calendario corretto mandato per posta dall'Ordine (29 ott 2026, Pago Veiano: sul sito il file aveva da novembre le
+settimane scritte come dicembre) sta sul Pi in A_MANO, con a_mano.json {impronta del file sul sito: {"file", "nota"}}:
+finché sul sito c'è quel file si legge quello mandato, con la sua nota sulla pagina; quando l'Ordine cambia il file sul
+sito, vale di nuovo quello.
+
 Uso:  python3 strumenti/farmacie_paesi.py [--cartella DIR]   (scarica, legge e stampa le zone: per le prove)
 Lo usa strumenti/farmacie.py (zone()), sul Pi, insieme ai turni della città.
 """
 import argparse
+import collections
 import datetime as dt
 import hashlib
 import html
@@ -31,6 +42,7 @@ import tempfile
 import urllib.request
 
 PAGINA = "https://www.ordinefarmacistibn.it/per-il-cittadino/turni-farmacie/"
+A_MANO = os.path.expanduser("~/nb-fonti/farmacie_a_mano")
 UA = "NotizieBenevento/1.0 (https://notiziebenevento.it)"
 RX_DATA = re.compile(r"(?<![\d/])(\d{1,2})/(\d{1,2})/(\d{2,4})(?![\d/])")
 RX_PAROLA = re.compile(r"[A-Za-zÀ-ÿ']{3,}")
@@ -59,8 +71,10 @@ def frase(s):
     s = re.sub(r"\s+", " ", s).strip(" *")
     if sum(c.isupper() for c in s) > sum(c.islower() for c in s):
         s = s.lower()
-    s = re.sub(r"\b(a|e|i|o|u)'(?=\s|$|[,.;:])", lambda m: {"a": "à", "e": "è", "i": "ì", "o": "ò", "u": "ù"}[m.group(1)], s)
-    s = re.sub(r"(ra|rà)' ", "rà ", s)
+    s = re.sub(r"(?<![a-zà-ÿ'])([a-zà-ÿ]*)(a|e|i|o|u)'(?=\s|$|[,.;:)])",   # «festivita'», «lunedi'», «e'»
+               lambda m: m.group(1) + {"a": "à", "e": "è", "i": "ì", "o": "ò", "u": "ù"}[m.group(2)], s)
+    s = re.sub(r"\bpò\b", "po'", re.sub(r"(ra|rà)' ", "rà ", s))
+    s = re.sub(r"([.;!?]\s+)([a-zà-ÿ])", lambda m: m.group(1) + m.group(2).upper(), s)   # la frase dopo il punto
     return s[:1].upper() + s[1:]
 
 
@@ -84,12 +98,12 @@ def scarica(url):
         return r.read()
 
 
-def testo_pdf(dati):
+def testo_pdf(dati, modo="-layout"):
     with tempfile.TemporaryDirectory() as td:
         p = os.path.join(td, "z.pdf")
         with open(p, "wb") as f:
             f.write(dati)
-        r = subprocess.run(["pdftotext", "-layout", p, "-"], capture_output=True, text=True, timeout=60)
+        r = subprocess.run(["pdftotext", modo, p, "-"], capture_output=True, text=True, timeout=60)
     if r.returncode != 0:
         raise ValueError(f"pdftotext non legge il PDF ({r.stderr.strip()[:150]})")
     return r.stdout
@@ -130,7 +144,7 @@ def parole_comune(c):
     return {w for w in re.findall(r"[a-zà-ÿ]{4,}", c.lower().replace("'", " ")) if w not in NON_COMUNI}
 
 
-def leggi_zona(testo, comuni_noti=()):
+def leggi_zona(testo, comuni_noti=(), raw=None):
     """Farmacie (nomi delle colonne e, se c'è, il paese della colonna), turni [(colonna, dal, al)], regole, correzioni.
     ValueError se la tabella non si legge. Le righe della tabella si leggono in ordine (riga per riga, da sinistra):
     è l'ordine dei turni, uno dopo l'altro."""
@@ -168,7 +182,7 @@ def leggi_zona(testo, comuni_noti=()):
     fine_tab = len(righe) if i_tit is None else next((i for i in range(i_tit + 1, len(righe))
                      if re.search(r"FARMACI[AE].*TURNO|SOPRAINDICATE|RIMARRANNO", righe[i], re.I)), len(righe))
     if i_tit is None or not any(RX_QUASI_DATA.search(l) for l in righe[i_tit + 1:fine_tab]):
-        return nomi or [], paesi, [], regole(righe[fine_testa if i_tit is None else fine_tab:]), []   # zona senza turni
+        return nomi or [], paesi, [], regole(righe[fine_testa if i_tit is None else fine_tab:], raw), []   # zona senza turni
     if not nomi:
         raise ValueError(f"non trovo i nomi delle {n} farmacie")
     grezzi = []   # [colonna, dal, al, testo della riga] in ordine di lettura
@@ -187,7 +201,7 @@ def leggi_zona(testo, comuni_noti=()):
         try:
             fila, correzioni = correggi([list(t) for t in grezzi], ordine)
             controlla([(c, a, b) for c, a, b, _ in fila])
-            return nomi, paesi, [(c, a, b) for c, a, b, _ in fila], regole(righe[fine_tab:]), correzioni
+            return nomi, paesi, [(c, a, b) for c, a, b, _ in fila], regole(righe[fine_tab:], raw), correzioni
         except ValueError as e:
             ultimo_errore = e
     # niente da fare con tutto il calendario: si tengono i turni che tornano, dall'inizio fino al primo che non torna
@@ -240,8 +254,40 @@ def correggi(grezzi, ordine, severo=True):
     return grezzi, correzioni
 
 
-def regole(righe):
-    """Le regole della zona, con le loro parole («FARMACIA DI TURNO …», «FARMACIA NON DI TURNO …»): [(titolo, frasi)]."""
+def _parole_testo(s):
+    return re.findall(r"[a-zà-ÿ0-9]+", s.lower().replace("'", " "))
+
+
+def mischiata(s, raw):
+    """Vero se le parole di fila di `s` (-layout) in buona parte non stanno di fila nel testo -raw: due caselle una
+    sopra l'altra. Sulle zone del 2026 quelle buone stanno tutte sopra 0,88, le due intrecciate a 0,61 e 0,68."""
+    t, r = _parole_testo(s), " " + " ".join(_parole_testo(raw)) + " "
+    coppie = [f" {a} {b} " for a, b in zip(t, t[1:])]
+    return bool(coppie) and sum(1 for c in coppie if c in r) / len(coppie) < 0.8
+
+
+def ricomponi(s, raw):
+    """Le righe intere del testo -raw fatte delle parole di `s` (quasi tutte: -layout attacca le parole che si toccano,
+    «SABATOALL'APERTURA»), dalla frase «Inizierà il turno…» in poi; None se non coprono quasi tutto `s`."""
+    resto = collections.Counter(_parole_testo(s))
+    tutte, scelte = sum(resto.values()), []
+    for l in raw.splitlines():
+        l = l.strip()
+        if not l or re.fullmatch(r"(LA )?FARMACIA (CHE )?(NON )?(E' )?DI TURNO", l, re.I):
+            continue
+        c = collections.Counter(_parole_testo(l))
+        if c and sum((c & resto).values()) >= 0.85 * sum(c.values()):
+            scelte.append(l)
+            resto -= c
+    if tutte - sum(resto.values()) < 0.85 * tutte:
+        return None
+    k = next((i for i, l in enumerate(scelte) if re.match(r"inizier", l, re.I)), 0)
+    return " ".join(scelte[k:] + scelte[:k])
+
+
+def regole(righe, raw=None):
+    """Le regole della zona, con le loro parole («FARMACIA DI TURNO …», «FARMACIA NON DI TURNO …»): [(titolo, frasi)].
+    Con `raw` (pdftotext -raw) quelle intrecciate si ricompongono, o si lasciano fuori."""
     out, cur = [], None
     for l in righe:
         s = l.strip()
@@ -255,7 +301,16 @@ def regole(righe):
             cur = ("Le farmacie della zona", [])
             out.append(cur)
         cur[1].append(s)
-    return [(t, frase(" ".join(r))) for t, r in out if r]
+    fatte = []
+    for t, r in out:
+        s = " ".join(r)
+        if r and raw and mischiata(s, raw):
+            s = ricomponi(s, raw)
+            if not s:
+                print(f"farmacie: «{t}»: il testo del PDF è intrecciato e non si ricompone: non si mostra", file=sys.stderr)
+        if r and s:
+            fatte.append((t, frase(s)))
+    return fatte
 
 
 def controlla(turni):
@@ -308,12 +363,27 @@ def abbina(nomi, paesi, elenco, testo_zona):
     return out
 
 
+def a_mano():
+    """{impronta del file sul sito: (dati del PDF mandato dall'Ordine, nota)} dal Pi (A_MANO); {} se non c'è."""
+    try:
+        with open(os.path.join(A_MANO, "a_mano.json"), encoding="utf-8") as f:
+            voci = json.load(f)
+        out = {}
+        for impronta, v in voci.items():
+            with open(os.path.join(A_MANO, v["file"]), "rb") as f:
+                out[impronta] = (f.read(), v["nota"])
+        return out
+    except (OSError, ValueError, KeyError):
+        return {}
+
+
 def zone(elenco, cartella=None):
     """Tutte le zone: [{"titolo", "pdf", "impronta", "farmacie", "turni", "regole", "cambio", "correzioni", "problema"}].
     `elenco`: le farmacie di tutta la provincia (strumenti/farmacie.py, leggi_elenco(tutte=True)). Una zona con
     «problema» non ha turni (la pagina rimanda al PDF)."""
     pagina = scarica(PAGINA).decode("utf-8", "replace")
     comuni = sorted({f["comune"] for f in elenco})
+    mandati = a_mano()
     out = []
     for id_, titolo in leggi_pagina(pagina):
         url = f"https://www.ordinefarmacistibn.it/wp-content/plugins/download-attachments/includes/download.php?id={id_}"
@@ -321,14 +391,17 @@ def zone(elenco, cartella=None):
         try:
             dati = scarica(url)
             z["impronta"] = hashlib.sha256(dati).hexdigest()[:16]
+            if z["impronta"] in mandati:   # sul sito c'è ancora il file sbagliato: quello corretto mandato dall'Ordine
+                dati, z["nota"] = mandati[z["impronta"]]
+                z["impronta"] = hashlib.sha256(dati).hexdigest()[:16]
             if cartella:
                 with open(os.path.join(cartella, f"zona-{id_}.pdf"), "wb") as f:
                     f.write(dati)
-            testo = testo_pdf(dati)
+            testo, raw = testo_pdf(dati), testo_pdf(dati, "-raw")
             try:
-                nomi, paesi, turni, reg, corr = leggi_zona(testo, comuni)
+                nomi, paesi, turni, reg, corr = leggi_zona(testo, comuni, raw)
             except Parziale as p:   # i nomi e le regole servono lo stesso: si rilegge senza la tabella
-                nomi, paesi, _, reg, corr = leggi_zona(re.sub(r"\binizio\b", "inizi0", testo), comuni)
+                nomi, paesi, _, reg, corr = leggi_zona(re.sub(r"\binizio\b", "inizi0", testo), comuni, raw)
                 turni, z["problema"] = p.fila, f"calendario che torna solo in parte: {p}"
                 z["fino_al"] = p.fila[-1][2].isoformat()
             testa = titolo + " " + " ".join(testo.splitlines()[:6])
