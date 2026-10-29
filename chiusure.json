@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-28T11:03+01:00",
+ "aggiornato": "2026-10-29T08:51+01:00",
  "viste": [
   "1131ffc78db3",
   "a4f3f5a64d51",
@@ -8,7 +8,8 @@
   "afb12e802897",
   "36794154e8c1",
   "320680eb8b40",
-  "b1a6fd2c9f5c"
+  "b1a6fd2c9f5c",
+  "8099b97060eb"
  ],
  "chiusure": [],
  "scartate": [
@@ -46,6 +47,11 @@
    "pista": "b1a6fd2c9f5c",
    "motivo": "Divieto di sosta in viale Mellusi per pulizia caditoie: provvedimento sul traffico, non una chiusura di scuole o luoghi pubblici",
    "quando": "2026-10-28T11:03+01:00"
+  },
+  {
+   "pista": "8099b97060eb",
+   "motivo": "Avviso sul recupero del canone delle lampade votive 2022: nessuna chiusura",
+   "quando": "2026-10-29T08:51+01:00"
   }
  ]
 }
