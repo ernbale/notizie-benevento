@@ -83,6 +83,41 @@
    "perche": "Chiuso: la sessione 2023 si è chiusa il 21/01/2024 alle 23:59 (decreto DGCA n. 4662 del 22/12/2023).",
    "fonte": "https://cinema.cultura.gov.it/wp-content/uploads/2023/12/dd-22-12-2023-sessione-tc-distribuzione-REP.-4662.pdf",
    "dal": "2026-10-28"
+  },
+  {
+   "id": "tax-credit-attrazione-in-italia-di-investimenti-cinematografici-e-audi-4208",
+   "titolo": "TAX CREDIT Attrazione in Italia di investimenti cinematografici e audiovisivi – Anno 2024 - Ministero della Cultura",
+   "perche": "Chiuso: la sessione 2025 del credito d'imposta per le produzioni esecutive (art. 19) si è chiusa il 31/12/2025 alle 23:59 (DD rep. 4234); anche quella 2026 si è chiusa il 31/08/2026",
+   "fonte": "https://cinema.cultura.gov.it/wp-content/uploads/2025/12/rep.-4234-DD-chiusura-sessione-produzioni-esecutive.pdf",
+   "dal": "2026-10-29"
+  },
+  {
+   "id": "tax-credit-produzione-opere-audiovisive-apertura-sessione-ricognitiva-541",
+   "titolo": "Tax Credit produzione opere audiovisive - Apertura sessione ricognitiva produzione opere tv/web e videoclip – Anno 2023",
+   "perche": "Chiuso: è la sessione ricognitiva per l'anno 2023; la sessione 2026 si è chiusa il 14/10/2026 alle 23:59",
+   "fonte": "https://cinema.cultura.gov.it/avvisi/tax-credit-apertura-sessione-per-la-presentazione-delle-richieste-preventive-e-definitive-in-materia-di-credito-di-imposta-per-le-imprese-di-produzione-cinematografica-e-audiovisiva-2/",
+   "dal": "2026-10-29"
+  },
+  {
+   "id": "tax-credit-per-l-attrazione-in-italia-di-investimenti-cinematografici-600",
+   "titolo": "Tax credit per l'attrazione in Italia di investimenti cinematografici e audiovisivi – Apertura sessione ricognitiva Produzione esecutiva opere straniere - Anno 2023",
+   "perche": "Chiuso: è la sessione ricognitiva per l'anno 2023; la sessione 2025 si è chiusa il 31/12/2025 e quella 2026 il 31/08/2026",
+   "fonte": "https://cinema.cultura.gov.it/wp-content/uploads/2026/05/20260518_D1.D-apertura-sessione-Tax-credit-internazionale_signed_signed.pdf",
+   "dal": "2026-10-29"
+  },
+  {
+   "id": "tax-credit-produzione-audiovisiva-anno-2025-7145",
+   "titolo": "Tax credit produzione audiovisiva - Anno 2025",
+   "perche": "Chiuso: la sessione 2025 si è chiusa il 31/12/2025 alle 23:59 (DD rep. 4233); anche quella 2026 si è chiusa il 14/10/2026 alle 23:59",
+   "fonte": "https://cinema.cultura.gov.it/wp-content/uploads/2025/12/rep.-4233-DD-chiusura-sessione-prod-nazionale-1.pdf",
+   "dal": "2026-10-29"
+  },
+  {
+   "id": "tax-credit-produzione-cinematografica-anno-2025-7144",
+   "titolo": "Tax credit produzione cinematografica - Anno 2025",
+   "perche": "Chiuso: la sessione 2025 si è chiusa il 31/12/2025 alle 23:59 (DD rep. 4233); anche quella 2026 si è chiusa il 14/10/2026 alle 23:59",
+   "fonte": "https://cinema.cultura.gov.it/wp-content/uploads/2025/12/rep.-4233-DD-chiusura-sessione-prod-nazionale-1.pdf",
+   "dal": "2026-10-29"
   }
  ]
 }
