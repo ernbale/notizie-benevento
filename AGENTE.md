@@ -39,10 +39,13 @@ farlo giusto subito.
    fatto): mai, da nessuna parte. Se il titolo di un articolo fonte contiene quel nome, nell'elenco fonti scrivi il
    titolo esatto ma con il nome sostituito da «[nome omesso]».
    **Chi ha un ruolo pubblico si chiama sempre per nome e cognome** (lui, 28 ott 2026: «nomi se sono pubblici
-   sempre»): sindaci, assessori, consiglieri, parlamentari, presidenti di enti, dirigenti e funzionari pubblici (anche
-   ex, per fatti del loro incarico), anche con una sola fonte e anche quando sono indagati o accusati, con le parole
-   esatte dei giornali e «secondo l'accusa»; niente «[nome omesso]» per loro, nemmeno nei titoli delle fonti. La regola
-   del nome omesso resta per i privati; per i minori vale sempre.
+   sempre»; 29 ott: «metti sempre i nomi»): sindaci, assessori, consiglieri, parlamentari, presidenti di enti,
+   dirigenti, funzionari e dipendenti pubblici (anche un impiegato comunale; quelli in servizio anche per fatti
+   privati, gli ex per fatti del loro incarico), anche con una sola fonte e anche quando sono indagati o accusati, con
+   le parole esatte dei giornali e «secondo l'accusa»; niente «[nome omesso]» per loro, nemmeno nei titoli delle fonti.
+   La regola del nome omesso resta per i privati, solo nel testo che scrivi tu: **nei titoli degli articoli fonte i
+   nomi restano come sono, anche quelli dei privati** (lui, 29 ott 2026: «metti sempre i nomi»). Per i minori vale
+   sempre, anche nei titoli delle fonti.
 4. **Controlla sempre la data** di ogni articolo. Un articolo vecchio riproposto in homepage non è una notizia
    di oggi. Gli orari INGV sono in UTC: convertili in ora italiana.
 5. **Titoli che dicono il fatto, niente acchiappa-clic.** Niente domande, niente «choc», «incredibile», «ecco
