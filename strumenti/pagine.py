@@ -1291,10 +1291,11 @@ def html_adesso_farmacie(dati, adesso):
     """Il riquadro «adesso» della pagina delle farmacie: prima il turno in corso, poi il prossimo (lo rifà index.html)."""
     h = f'<div class="occhiello">{e(_giorno_chiusura(adesso.date().isoformat(), adesso.date()))}</div>'
     h += '<ul class="notizie-comune">'
-    for quando, servizio, x in turni_adesso(dati, adesso):
+    for i, (quando, servizio, x) in enumerate(turni_adesso(dati, adesso)):
         cosa = f"{quando} · servizio {servizio}"
-        if x:
-            h += f'<li><div class="occhiello">{e(cosa)}</div><b class="farm-nome">{e(x["nome"])}</b>{_dove_farmacia(x)}</li>'
+        if x:   # quello in corso col nome un po' più grande (lui, 29 ott 2026)
+            h += (f'<li{" class=\"in-corso\"" if i == 0 else ""}><div class="occhiello">{e(cosa)}</div>'
+                  f'<b class="farm-nome">{e(x["nome"])}</b>{_dove_farmacia(x)}</li>')
         else:
             h += (f'<li><div class="occhiello">{e(cosa)}</div><p>Il turno non c\'è ancora: Federfarma Benevento non ha '
                   "pubblicato i turni nuovi. Li mettiamo appena escono.</p></li>")
@@ -1312,7 +1313,11 @@ def html_farmacie(dati, adesso):
         return f'<article class="appro">{h}</article>'
     h += f'<div class="avv-speciale farm-adesso">{html_adesso_farmacie(dati, adesso)}</div>'
     ieri = (oggi - dt.timedelta(days=1)).isoformat()
-    for k, titolo in (("diurno", "Servizio diurno"), ("notturno", "Servizio notturno")):
+    notte = (dati.get("note") or {}).get("notte") or {"dalle": "20:00", "alle": "08:45"}
+    dalle, alle = _ora_breve(notte["dalle"]), _ora_breve(notte["alle"])
+    # negli elenchi l'ordine resta diurno e poi notturno, con l'ora di inizio e di fine (lui, 29 ott 2026)
+    for k, titolo in (("diurno", f"Servizio diurno, dalle {alle} alle {dalle}"),
+                      ("notturno", f"Servizio notturno, dalle {dalle} alle {alle} del giorno dopo")):
         h += f'<h3>{titolo}</h3><ul class="notizie-comune farm-turni">'
         for x in dati[k]:
             if x["al"] < (ieri if k == "notturno" else oggi.isoformat()):

@@ -101,6 +101,7 @@
   .farmacie .avv-speciale { background: var(--carta-scura); padding: 16px 20px 4px; margin: 24px 0 6px; }
   .farmacie .avv-speciale > .occhiello { margin: 0 0 8px; }
   .appro .notizie-comune .farm-nome { font: 700 20px/1.3 var(--serif); color: var(--nero); }
+  .farmacie .avv-speciale li.in-corso .farm-nome { font-size: 25px; }   /* il turno in corso, un po' più grande */
   @media (max-width: 620px) {
     .farmacie .avv-speciale { padding: 14px 14px 2px; }
     .avvisi-pag .avv-paesi { grid-template-columns: 1fr; }
@@ -3479,7 +3480,7 @@
     var box = document.querySelector(".farm-adesso");
     if (box) {
       var ul = el("ul", "notizie-comune", []);
-      turni.forEach(function (c) {
+      turni.forEach(function (c, i) {
         var x = c[2], cosa = c[0] + " · servizio " + c[1];
         if (!x) {
           ul.appendChild(el("li", "", [el("div", "occhiello", [cosa]),
@@ -3489,7 +3490,7 @@
         var dove = el("span", "dove", [x.indirizzo ? x.indirizzo + " · " : ""]), tel = telefono(x);
         if (tel) { dove.appendChild(tel); dove.appendChild(testo(" · ")); }
         dove.appendChild(mappa(x));
-        ul.appendChild(el("li", "", [el("div", "occhiello", [cosa]), el("b", "farm-nome", [x.nome]), dove]));
+        ul.appendChild(el("li", i === 0 ? "in-corso" : "", [el("div", "occhiello", [cosa]), el("b", "farm-nome", [x.nome]), dove]));
       });
       var g = giornoLungo(oggi);
       box.replaceChildren(el("div", "occhiello", ["Oggi, " + g]), ul);

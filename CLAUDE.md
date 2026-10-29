@@ -77,7 +77,8 @@ sempre sono una cosa utile»), cliccabile (tel:), preso da una fonte ufficiale: 
   sono quelle del PDF. I telefoni (lui: «metti il numero di telefono è utile») vengono dall'elenco delle farmacie di
   Federfarma (farmacie.html), abbinati per nome e via: un numero esce solo se l'abbinamento è sicuro; dei titolari non si
   tiene niente. In cima il turno in corso con l'ora di fine e sotto il prossimo con inizio e fine (lui: «prima il turno
-  in atto e poi il successivo»); lo rifà la pagina, così alle 20 e alle 8:45 cambia da solo.
+  in atto e poi il successivo»; quello in corso col nome più grande); lo rifà la pagina, così alle 20 e alle 8:45 cambia
+  da solo. Negli elenchi sotto l'ordine resta diurno e poi notturno, con l'ora di inizio e di fine.
 - Prossime, una per volta e pianificate prima con lui: guardia medica (ASL), mercati, raccolta differenziata, ZTL,
   numeri utili. Niente riquadri «in arrivo».
 
