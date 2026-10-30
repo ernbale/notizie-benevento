@@ -588,7 +588,8 @@ def avvisa_casa(problemi, adesso):
                         "\n\nIl registro è sul Pi: ~/nb-fonti/sentinella.log\n")
 
 
-WHATSAPP_MAX = 900    # caratteri per messaggio: il 27 ott 2026 uno da 1.173 è arrivato tagliato (CallMeBot taglia verso i 1000)
+WHATSAPP_MAX = 700    # caratteri per messaggio: CallMeBot taglia; il 30 ott 2026 un pezzo da 816 è arrivato a 754 (e il
+                      # 27 ott uno da 1.173 tagliato): 700 lascia margine
 WHATSAPP_PEZZI = 4    # al massimo, poi «continua nella mail»: mai una raffica
 
 
