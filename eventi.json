@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-30T07:10+01:00",
+ "aggiornato": "2026-10-30T08:19+01:00",
  "eventi": [
   {
    "id": "mostra-cosmogonie-meact-torrecuso-2026",
@@ -1827,7 +1827,8 @@
      "testo": "Lunedì 9 novembre 2026 alle 16, nell'Auditorium di Sant'Agostino dell'Università del Sannio, in via De Nicastro 13 a Benevento, Giuseppe Conte presenta il suo libro «Una nuova primavera», pubblicato da Marsilio. La presentazione era prevista per il 26 ottobre ed è stata rinviata per l'emergenza carburanti.",
      "fonti": [
       "BeneventoNews24",
-      "NTR24"
+      "NTR24",
+      "Il Sannio Quotidiano"
      ]
     },
     {
@@ -1875,6 +1876,12 @@
      "titolo": "UNISANNIO, il Consiglio degli Studenti promuove un incontro con Giuseppe Conte per la presentazione del libro “Una nuova primavera”",
      "url": "https://www.beneventogiornale.com/2026/10/29/unisannio-il-consiglio-degli-studenti-promuove-un-incontro-con-giuseppe-conte-per-la-presentazione-del-libro-una-nuova-primavera-2/",
      "data": "29 ott, 21:58"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "titolo": "L’incontro tra Giuseppe Conte e gli studenti Unisannio si farà: appuntamento al 9 novembre",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/30/lincontro-tra-giuseppe-conte-e-gli-studenti-unisannio-si-fara-appuntamento-al-9-novembre/",
+     "data": "30 ott, 07:31"
     }
    ],
    "foto": "libri-2"

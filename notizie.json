@@ -1,7 +1,141 @@
 {
- "aggiornato": "2026-10-30T07:14+01:00",
+ "aggiornato": "2026-10-30T08:20+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "morcone-ficomirrors-vertice-regione-29-ottobre",
+   "titolo": "Morcone, vertice in Regione sulla Ficomirrors: il sindaco Ciarlo chiede impegni concreti",
+   "titolo_google": "Ficomirrors Morcone, vertice in Regione sulla fabbrica",
+   "sintesi": "Giovedì 29 ottobre a Napoli la Regione Campania ha riunito azienda, Fiom e rappresentanti del territorio sulla Ficomirrors di Morcone, la fabbrica che pensa di spostare la produzione all'estero. Al tavolo anche il sindaco Luigino Ciarlo, che chiede impegni concreti.",
+   "categoria": "altro",
+   "luogo": "Morcone",
+   "pubblicato": "2026-10-30T07:26+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 4,
+   "immagine": "fabbrica",
+   "fonti": [
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/30/vertenza-ficomirrors-vertice-in-regione-il-sindaco-di-morcone-chiede-impegni-concreti/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Giovedì 29 ottobre, a Napoli, la Regione Campania ha riunito un tavolo sulla Ficomirrors, l'azienda che ha uno stabilimento a Morcone e che nelle ultime settimane è al centro della cronaca perché pensa di spostare la produzione fuori dall'Italia. Al tavolo c'erano l'assessore regionale Bonavitacola, la Fiom, il sindacato dei metalmeccanici della Cgil, e i vertici dell'azienda.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "Per il territorio erano presenti il sindaco di Morcone, Luigino Ciarlo, ed Ester D'Afflitto, insieme a un rappresentante della segreteria del consigliere regionale Pellegrino Mastella. L'incontro è servito a fare il punto sulla situazione e su quello che prevede il protocollo d'intesa già firmato. Il sindaco ha chiesto impegni concreti.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "Ficomirrors produce specchietti retrovisori e a Morcone ha circa 200 dipendenti. Il gruppo spagnolo di cui fa parte ha annunciato di voler spostare in Polonia la produzione degli specchietti dalla seconda metà del 2029. Il 19 ottobre, in un vertice in Prefettura a Benevento, l'azienda si era detta pronta a portare nuove produzioni nello stabilimento.",
+      "fonti": [
+       "Il Sannio Quotidiano (20/10)"
+      ]
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "19 ottobre",
+      "fatto": "Vertice in Prefettura a Benevento: l'azienda apre a nuove produzioni.",
+      "fonti": [
+       "Il Sannio Quotidiano (20/10)"
+      ]
+     },
+     {
+      "data": "29 ottobre",
+      "fatto": "Tavolo in Regione a Napoli con azienda, Fiom e sindaco di Morcone.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     }
+    ],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quali impegni ha preso l'azienda al tavolo in Regione."
+    ],
+    "fonti": [
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Vertenza Ficomirrors, vertice in Regione: il sindaco di Morcone chiede impegni concreti",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/30/vertenza-ficomirrors-vertice-in-regione-il-sindaco-di-morcone-chiede-impegni-concreti/",
+      "data": "30 ott, 07:26"
+     },
+     {
+      "nome": "Il Sannio Quotidiano (20/10)",
+      "titolo": "Vicenda Ficomirrors, spiragli dal vertice in Prefettura: l'azienda apre alla riconversione produttiva",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/20/vicenda-ficomirrors-spiragli-dal-vertice-in-prefettura-lazienda-apre-alla-riconversione-produttiva/",
+      "data": "20 ott"
+     }
+    ]
+   },
+   "zona": "fortore",
+   "foto": "fabbrica-17"
+  },
+  {
+   "id": "castelfranco-in-miscano-street-art-regolamento-murales",
+   "titolo": "Castelfranco in Miscano apre alla street art: approvato il regolamento per murales e facciate",
+   "titolo_google": "Castelfranco in Miscano, regolamento per la street art",
+   "sintesi": "Il Consiglio comunale di Castelfranco in Miscano ha approvato il regolamento sulla creatività urbana e il primo elenco dei muri dove si potranno fare murales. Così il paese può entrare nel circuito regionale della street art e chiedere i contributi della Regione.",
+   "categoria": "cultura",
+   "luogo": "Castelfranco in Miscano",
+   "pubblicato": "2026-10-30T07:27+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/30/murales-e-facciate-dautore-il-comune-di-castelfranco-in-miscano-apre-alla-street-art/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Consiglio comunale di Castelfranco in Miscano, nel Fortore, ha approvato il regolamento sulla creatività urbana: muri, facciate e altre superfici del paese potranno diventare opere di street art, cioè murales e pitture sui muri. Insieme al regolamento è stato approvato il primo elenco delle superfici a disposizione, che la Giunta potrà cambiare e allargare ogni anno.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "Il regolamento serve a far entrare il paese nel circuito regionale della street art. Per iscriversi all'albo e chiedere i contributi della Regione per progettare e realizzare nuove opere, il Comune deve mandare l'elenco delle superfici, le loro schede, l'atto che le approva e il regolamento.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "Per il sindaco Andrea Giallonardo è un'occasione per il paese: le opere di street art, ha spiegato, aiutano a recuperare e a rendere più decorose le zone del centro.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quali muri e facciate sono nel primo elenco.",
+     "Quando potrebbero essere realizzate le prime opere."
+    ],
+    "fonti": [
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Murales e facciate d’autore: il Comune di Castelfranco in Miscano apre alla street art",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/30/murales-e-facciate-dautore-il-comune-di-castelfranco-in-miscano-apre-alla-street-art/",
+      "data": "30 ott, 07:27"
+     }
+    ]
+   },
+   "zona": "fortore"
+  },
   {
    "id": "benevento-dehors-senza-nulla-osta-soprintendenza",
    "titolo": "Benevento, per i dehors di bar e ristoranti non serve più il nulla osta della Soprintendenza, anche in centro storico",
@@ -1252,6 +1386,10 @@
     {
      "nome": "TeleradioNews",
      "url": "https://www.teleradio-news.it/2026/10/29/bucciano-s-agata-de-goti-bn-spaccio-di-cocaina-e-detenzione-ordigno-micidiale-coppia-indagata/"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/30/droga-e-ordigno-in-casa-coppia-caudina-finisce-nei-guai/"
     }
    ],
    "articolo": {
@@ -1264,7 +1402,8 @@
        "BeneventoNews24",
        "Il Caudino",
        "TV7 Benevento",
-       "TeleradioNews"
+       "TeleradioNews",
+       "Il Sannio Quotidiano"
       ]
      },
      {
@@ -1339,6 +1478,12 @@
       "titolo": "Bucciano-S. Agata De’ Goti (BN). Spaccio di cocaina e detenzione ordigno micidiale: coppia indagata",
       "url": "https://www.teleradio-news.it/2026/10/29/bucciano-s-agata-de-goti-bn-spaccio-di-cocaina-e-detenzione-ordigno-micidiale-coppia-indagata/",
       "data": "29 ott, 17:31"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Droga e ordigno in casa, coppia caudina finisce nei guai",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/30/droga-e-ordigno-in-casa-coppia-caudina-finisce-nei-guai/",
+      "data": "30 ott, 07:35"
      }
     ]
    },
@@ -1352,7 +1497,7 @@
    "categoria": "altro",
    "luogo": "San Giorgio del Sannio",
    "pubblicato": "2026-10-29T16:15+01:00",
-   "stato": "una_fonte",
+   "stato": "confermata",
    "rilevante": false,
    "importanza": 3,
    "immagine": "internet",
@@ -1360,6 +1505,10 @@
     {
      "nome": "Cronache del Sannio",
      "url": "https://www.cronachedelsannio.it/sannionews24/sangiorgio-connessione-ministero-risponde-sindaco-verifiche/"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/30/disservizi-telefonia-e-internet-a-san-giorgio-del-sannio-il-ministero-risponde-diverse-criticita-agli-impianti/"
     }
    ],
    "articolo": {
@@ -1367,30 +1516,50 @@
      {
       "testo": "I problemi di telefono e internet che hanno colpito San Giorgio del Sannio nei mesi scorsi sono stati causati soprattutto da guasti, dal caldo e da interruzioni della corrente elettrica. È quello che è emerso dalle verifiche del Ministero delle Imprese e del Made in Italy, che è intervenuto dopo le segnalazioni dell'amministrazione comunale guidata dal sindaco Giuseppe Ricci.",
       "fonti": [
-       "Cronache del Sannio"
-      ]
+       "Cronache del Sannio",
+       "Il Sannio Quotidiano"
+      ],
+      "giorno": "2026-10-29"
      },
      {
       "testo": "Il Ministero ha chiesto ai principali gestori, tra cui Tim, Wind Tre, Iliad, Fastweb e Vodafone, di risolvere i problemi. Per Tim i disservizi di agosto e settembre sono dipesi dal caldo, che ha sovraccaricato un impianto, e risultano superati dopo un intervento tecnico. Fastweb e Vodafone li hanno legati a problemi di alimentazione elettrica e a guasti.",
       "fonti": [
        "Cronache del Sannio"
-      ]
+      ],
+      "giorno": "2026-10-29"
+     },
+     {
+      "testo": "La risposta del Ministero è arrivata in Comune mercoledì 28 ottobre e riguarda la segnalazione che il sindaco aveva mandato il 14 maggio sui disagi di cittadini, commercianti e imprese. A fine settembre aveva già risposto l'Agcom, l'Autorità per le comunicazioni: dopo aver sentito gli operatori, parlava di una rete congestionata per una sola azienda, senza nominarla, e di un problema in via di soluzione. Intanto i disservizi di telefono e internet continuano.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ],
+      "giorno": "2026-10-29"
      },
      {
       "testo": "Resta aperto il caso della rete Wind Tre-Iliad: su uno dei due impianti che servono il paese c'è un'interferenza radio, ancora sotto esame dei tecnici. Entro il 2027 è previsto il potenziamento di uno dei due impianti, per migliorare la capacità della rete.",
       "fonti": [
        "Cronache del Sannio"
-      ]
+      ],
+      "giorno": "2026-10-29"
      },
      {
       "testo": "Il Comune fa sapere che il Ministero continuerà a seguire la situazione e che i gestori sono pronti a fare altre verifiche sulle singole utenze o zone del paese che verranno segnalate.",
       "fonti": [
        "Cronache del Sannio"
-      ]
+      ],
+      "giorno": "2026-10-29"
      }
     ],
     "cronologia": [],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "Il Ministero delle Imprese ha risposto al Comune sui disservizi di telefono e internet, riscontrando problemi agli impianti.",
+      "fonti": [
+       "Cronache del Sannio",
+       "Il Sannio Quotidiano"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [
      "Quando sarà risolta l'interferenza sulla rete Wind Tre-Iliad.",
@@ -1402,6 +1571,12 @@
       "titolo": "Connessione, ministero risponde al sindaco: verifiche sui disservizi a San Giorgio del Sannio",
       "url": "https://www.cronachedelsannio.it/sannionews24/sangiorgio-connessione-ministero-risponde-sindaco-verifiche/",
       "data": "29 ott, 16:15"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Disservizi telefonia e internet a San Giorgio del Sannio, il Ministero risponde: “Diverse criticità agli impianti”",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/30/disservizi-telefonia-e-internet-a-san-giorgio-del-sannio-il-ministero-risponde-diverse-criticita-agli-impianti/",
+      "data": "30 ott, 07:37"
      }
     ]
    },
@@ -1806,6 +1981,10 @@
      "nome": "Comune di Pontelandolfo",
      "url": "https://www.halleyweb.com/c062054/mc/mc_p_dettaglio.php?id_pubbl=16702",
      "ufficiale": true
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/30/pontelandolfo-strade-chiuse-per-rifare-lasfalto-stop-anche-ai-residenti/"
     }
    ],
    "articolo": {
@@ -1813,13 +1992,15 @@
      {
       "testo": "A Pontelandolfo via Pontremoli, via Pietrasanta e via Forte dei Marmi sono chiuse al traffico dalle 7 di venerdì 30 ottobre fino alla fine dei lavori per rifare la pavimentazione. Lo dice l'ordinanza n. 55 del 29 ottobre del Comune; una data di fine non c'è.",
       "fonti": [
-       "Comune di Pontelandolfo"
+       "Comune di Pontelandolfo",
+       "Il Sannio Quotidiano"
       ]
      },
      {
       "testo": "La chiusura è totale: non c'è deroga nemmeno per le auto dei residenti, perché passare sul tratto appena lavorato rovinerebbe la strada. Solo per un'urgenza vera possono passare i mezzi di soccorso, ambulanze e vigili del fuoco. La ditta dei lavori deve mettere i cartelli di strada interrotta, segnare gli eventuali percorsi alternativi e avvisare i residenti con cartelli sul posto che per tutta la durata dei lavori non si può arrivare in auto alle case.",
       "fonti": [
-       "Comune di Pontelandolfo"
+       "Comune di Pontelandolfo",
+       "Il Sannio Quotidiano"
       ]
      }
     ],
@@ -1834,6 +2015,12 @@
       "url": "https://www.halleyweb.com/c062054/mc/mc_p_dettaglio.php?id_pubbl=16702",
       "data": "29 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Pontelandolfo – Strade chiuse per rifare l’asfalto: stop anche ai residenti",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/30/pontelandolfo-strade-chiuse-per-rifare-lasfalto-stop-anche-ai-residenti/",
+      "data": "30 ott, 07:27"
      }
     ]
    },
@@ -1916,6 +2103,10 @@
     {
      "nome": "Il Mattino",
      "url": "https://www.ilmattino.it/benevento/benevento_csm_tribunale_benevento_magistrato_romani_consiglio_superiore_magistratura_ultime_notizie_oggi-9856809.html"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/30/giudice-sannita-eletta-nel-consiglio-superiore-della-magistratura/"
     }
    ],
    "articolo": {
@@ -1924,14 +2115,16 @@
       "testo": "Maria Ilaria Romano, giudice del Tribunale di Benevento, è stata eletta nel Consiglio superiore della magistratura (Csm), l'organo che decide su nomine, trasferimenti e disciplina dei magistrati. L'esito del voto è arrivato giovedì 29 ottobre. È il secondo magistrato sannita al Csm, dopo Giuseppe Maria Berruti, ma la prima in assoluto che viene dal Tribunale di Benevento.",
       "fonti": [
        "Ottopagine",
-       "Il Mattino"
+       "Il Mattino",
+       "Il Sannio Quotidiano"
       ],
       "giorno": "2026-10-29"
      },
      {
       "testo": "È stata eletta con 365 voti tra i venti componenti magistrati del Consiglio, quelli che i giudici scelgono tra loro («togati»).",
       "fonti": [
-       "Il Mattino"
+       "Il Mattino",
+       "Il Sannio Quotidiano"
       ],
       "giorno": "2026-10-29"
      },
@@ -1974,6 +2167,12 @@
       "titolo": "Benevento, il magistrato Romano nominato nel Csm",
       "url": "https://www.ilmattino.it/benevento/benevento_csm_tribunale_benevento_magistrato_romani_consiglio_superiore_magistratura_ultime_notizie_oggi-9856809.html",
       "data": "29 ott, 19:24"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Giudice sannita eletta nel Consiglio Superiore della Magistratura",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/30/giudice-sannita-eletta-nel-consiglio-superiore-della-magistratura/",
+      "data": "30 ott, 07:30"
      }
     ]
    },
@@ -2205,6 +2404,10 @@
     {
      "nome": "Il Mattino",
      "url": "https://www.ilmattino.it/benevento/benevento_rione_liberta_23_alloggi_nell_ex_scuola_in_via_torino_approvata_dalla_giunta_comunale_la_delibera-9856997.html"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/30/alloggi-popolari-nellex-scuola-di-via-torino-approvato-progetto-da-5-milioni/"
     }
    ],
    "articolo": {
@@ -2222,7 +2425,8 @@
        "Gazzetta di Benevento",
        "Ottopagine",
        "Benevento Giornale",
-       "Il Mattino"
+       "Il Mattino",
+       "Il Sannio Quotidiano"
       ],
       "giorno": "2026-10-29"
      },
@@ -2350,6 +2554,12 @@
       "titolo": "Benevento Rione Libertà, 23 alloggi nell’ex scuola in via Torino: approvata dalla Giunta comunale la delibera",
       "url": "https://www.ilmattino.it/benevento/benevento_rione_liberta_23_alloggi_nell_ex_scuola_in_via_torino_approvata_dalla_giunta_comunale_la_delibera-9856997.html",
       "data": "30 ott, 01:00"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Alloggi popolari nell’ex scuola di via Torino: approvato progetto da 5 milioni",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/30/alloggi-popolari-nellex-scuola-di-via-torino-approvato-progetto-da-5-milioni/",
+      "data": "30 ott, 07:41"
      }
     ]
    },
@@ -4003,6 +4213,10 @@
     {
      "nome": "InfoSannio",
      "url": "https://www.infosannionews.it/attualita/2026/smart-parking-a-benevento-arrivano-i-sensori-intelligenti-in-opera-da-piazzale-catullo-a-via-porta-rufina.html"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/30/strisce-blu-arrivano-i-sensori-intelligenti-per-le-auto-in-sosta/"
     }
    ],
    "articolo": {
@@ -4011,7 +4225,8 @@
       "testo": "Giovedì 29 ottobre il Servizio Traffico del Comune ha pubblicato all'albo pretorio l'ordinanza che accompagna i lavori: fino a venerdì 27 novembre, salvo fine anticipata, nei parcheggi a pagamento delle strade dove si montano i sensori la sosta potrà essere vietata per il tempo strettamente necessario, una zona dopo l'altra. I cartelli con i divieti vanno messi almeno 48 ore prima. Il Comune parla di installazione dei sensori per l'avvio definitivo dello «smart parking», il parcheggio intelligente.",
       "fonti": [
        "Comune di Benevento (albo pretorio)",
-       "NTR24"
+       "NTR24",
+       "Il Sannio Quotidiano"
       ],
       "giorno": "2026-10-29"
      },
@@ -4107,6 +4322,12 @@
       "url": "https://www.infosannionews.it/attualita/2026/smart-parking-a-benevento-arrivano-i-sensori-intelligenti-in-opera-da-piazzale-catullo-a-via-porta-rufina.html",
       "titolo": "Smart Parking, a Benevento arrivano i sensori intelligenti. In opera da Piazzale Catullo a via Porta Rufina",
       "data": "29 ott, 12:55"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Strisce blu, arrivano i sensori intelligenti per le auto in sosta",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/30/strisce-blu-arrivano-i-sensori-intelligenti-per-le-auto-in-sosta/",
+      "data": "30 ott, 07:35"
      }
     ],
     "aggiornamento": {
