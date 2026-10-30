@@ -3,6 +3,61 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "benevento-palazzo-del-reduce-inaugurazione-rinviata",
+   "titolo": "Benevento, rinviata l'inaugurazione di Palazzo del Reduce in via Traiano",
+   "titolo_google": "Palazzo del Reduce Benevento: inaugurazione rinviata",
+   "sintesi": "La cerimonia per inaugurare Palazzo del Reduce, in via Traiano a Benevento, prevista per oggi, venerdì 30 ottobre, è rinviata a data da destinarsi per un lutto familiare. Lo comunica il Comune di Benevento.",
+   "categoria": "politica",
+   "luogo": "Benevento, Palazzo del Reduce, via Traiano",
+   "immagine": "municipio",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 2,
+   "zona": "benevento",
+   "fonti": [
+    {
+     "nome": "Comune di Benevento",
+     "url": "https://www.comune.benevento.it/",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Non si terrà oggi, venerdì 30 ottobre, la cerimonia di inaugurazione di Palazzo del Reduce, in via Traiano a Benevento. Lo comunica l'Ufficio Informazione Istituzionale del Comune: per un lutto familiare l'inaugurazione è rinviata a data da destinarsi.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "La cerimonia era stata annunciata dal Comune per le 12 di oggi: i locali del palazzo sono stati destinati a sede di alcune associazioni della città.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di Benevento",
+      "titolo": "Rinvio inaugurazione Palazzo del Reduce",
+      "url": "https://www.comune.benevento.it/",
+      "data": "30 ott, 08:56",
+      "ufficiale": true
+     }
+    ]
+   },
+   "comunicati": [
+    "8f350a0bbac3"
+   ],
+   "subito": true,
+   "pubblicato": "2026-10-30T08:58:49+01:00",
+   "foto": "municipio-14"
+  },
+  {
    "id": "benevento-comune-dirigenti-indagati-rotazioni-disciplinari-controlli-atti",
    "titolo": "Benevento, dirigenti e dipendenti indagati: il Comune toglie incarichi, avvia i procedimenti disciplinari e ricontrollerà gli atti dal 2022",
    "titolo_google": "Benevento, dirigenti indagati: incarichi tolti e controlli",
