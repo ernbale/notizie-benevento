@@ -53,6 +53,7 @@ Uso:  python3 strumenti/sentinella.py                 (su GitHub, con GH_TOKEN)
 import argparse
 import datetime as dt
 import errno
+import fcntl
 import getpass
 import json
 import os
@@ -195,6 +196,56 @@ def minuti(d):
     return int(d.total_seconds() // 60)
 
 
+# Dal trasloco su Aruba (30 ott 2026) il sito vero lo pubblica il server (strumenti/pubblica_server.sh, fatto partire
+# ogni minuto da strumenti/pubblica_se_serve.sh): dove c'è ~/sito-stato/ACCESO (cioè sul server, col sito vero lì) una
+# pubblicazione si chiede lasciando il file ~/sito-stato/pubblica, non a GitHub (lì c'è solo la copia di riserva), e
+# «in corso» vuol dire una pubblicazione del server che sta girando o è già chiesta. Altrove (la sentinella di GitHub)
+# resta tutto come prima.
+STATO_SERVER = os.path.expanduser("~/sito-stato")
+
+
+def leggi_json(percorso):
+    try:
+        with open(percorso, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return {}
+
+
+def sito_sul_server():
+    return os.path.exists(os.path.join(STATO_SERVER, "ACCESO"))
+
+
+def server_in_corso():
+    """Una pubblicazione del server chiesta o in corso (il suo lucchetto è preso)."""
+    if os.path.exists(os.path.join(STATO_SERVER, "pubblica")):
+        return True
+    try:
+        with open("/tmp/nb_pubblica.lock", "a") as f:
+            fcntl.flock(f, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            fcntl.flock(f, fcntl.LOCK_UN)
+        return False
+    except OSError:
+        return True
+
+
+def pubblicazione_in_corso(gh):
+    if sito_sul_server():
+        return server_in_corso()
+    corse = gh.chiama("GET", f"repos/{REPO}/actions/workflows/{FLUSSO}/runs?per_page=5").get("workflow_runs", [])
+    return any(c["status"] != "completed" for c in corse)
+
+
+def chiedi_pubblicazione(gh, telegram_recupera=False):
+    """Fa partire una pubblicazione: quella del server se il sito vero è lì, se no quella di GitHub."""
+    if sito_sul_server():
+        if telegram_recupera:
+            open(os.path.join(STATO_SERVER, "telegram_recupera"), "w").close()
+        open(os.path.join(STATO_SERVER, "pubblica"), "w").close()
+    else:
+        gh.lancia(FLUSSO, {"telegram_recupera": "1" if telegram_recupera else "0"})
+
+
 def controlla(gh, su_main, adesso, prova):
     """Restituisce (riparati, problemi): le frasi da scrivere."""
     problemi, riparati = [], []
@@ -214,6 +265,8 @@ def controlla(gh, su_main, adesso, prova):
                 gh.chiama("POST", f"repos/{REPO}/actions/runs/{c['id']}/cancel")
         else:
             attive.append(c)
+    if sito_sul_server():   # le corse di GitHub sono la copia di riserva: conta la pubblicazione del server
+        attive = [True] if server_in_corso() else []
 
     # 2. sito indietro rispetto a main
     with apri(f"{SITO}/notizie.json?sentinella={int(time.time())}") as r:
@@ -252,7 +305,7 @@ def controlla(gh, su_main, adesso, prova):
         riparati.append(f"lanciata una pubblicazione{' con gli arretrati di Telegram' if recupera else ''}"
                         f"{' (prova: in realtà no)' if prova else ''}")
         if not prova:
-            gh.lancia(FLUSSO, {"telegram_recupera": "1" if recupera else "0"})
+            chiedi_pubblicazione(gh, recupera)
 
     # la chiave del Pi: avviso due settimane prima che scada
     if gh.scade:
@@ -314,21 +367,28 @@ def chiusure(gh, adesso, pi, sito, prova):
             if mancano:
                 problemi.append(f"chiusure non ancora sul canale Telegram: {', '.join(c['comune'] for c in mancano)}")
                 rilancia = True
-        corse = gh.chiama("GET", f"repos/{REPO}/actions/workflows/{FLUSSO}/runs?per_page=5").get("workflow_runs", [])
-        if any(c["status"] != "completed" for c in corse):
-            rilancia = False   # una pubblicazione è già in corso: rimanda lei quello che manca
+        if sito_sul_server():   # l'esito dell'ultima pubblicazione del server (pubblica_server.sh)
+            if server_in_corso():
+                rilancia = False   # una pubblicazione è già in corso o chiesta: rimanda lei quello che manca
+            elif leggi_json(os.path.join(STATO_SERVER, "ultimo_esito.json")).get("chiusure") is False:
+                problemi.append("l'ultima pubblicazione non ha mandato le chiusure su tutti i canali")
+                rilancia = True
         else:
-            fatta = next((c for c in corse if c["status"] == "completed"), None)
-            if fatta and fatta.get("conclusion") == "failure":
-                lavori = gh.chiama("GET", f"repos/{REPO}/actions/runs/{fatta['id']}/jobs").get("jobs", [])
-                if any(st.get("name", "").startswith("Chiusure non uscite") and st.get("conclusion") == "failure"
-                       for j in lavori for st in j.get("steps") or []):
-                    problemi.append("l'ultima pubblicazione non ha mandato le chiusure su tutti i canali")
-                    rilancia = True
+            corse = gh.chiama("GET", f"repos/{REPO}/actions/workflows/{FLUSSO}/runs?per_page=5").get("workflow_runs", [])
+            if any(c["status"] != "completed" for c in corse):
+                rilancia = False   # una pubblicazione è già in corso: rimanda lei quello che manca
+            else:
+                fatta = next((c for c in corse if c["status"] == "completed"), None)
+                if fatta and fatta.get("conclusion") == "failure":
+                    lavori = gh.chiama("GET", f"repos/{REPO}/actions/runs/{fatta['id']}/jobs").get("jobs", [])
+                    if any(st.get("name", "").startswith("Chiusure non uscite") and st.get("conclusion") == "failure"
+                           for j in lavori for st in j.get("steps") or []):
+                        problemi.append("l'ultima pubblicazione non ha mandato le chiusure su tutti i canali")
+                        rilancia = True
         if rilancia:
             riparati.append("rilanciata la pubblicazione per le chiusure" + (" (prova: in realtà no)" if prova else ""))
             if not prova:
-                gh.lancia(FLUSSO, {"telegram_recupera": "0"})
+                chiedi_pubblicazione(gh)
     return riparati, problemi
 
 
@@ -370,11 +430,10 @@ def curiosita(gh, adesso, pi, sito, prova):
         if mancano:
             problemi.append(f"la curiosità di oggi («{di_oggi['titolo'][:50]}») alle {adesso:%H:%M} non è ancora "
                             + " né ".join(mancano))
-            corse = gh.chiama("GET", f"repos/{REPO}/actions/workflows/{FLUSSO}/runs?per_page=5").get("workflow_runs", [])
-            if not any(c["status"] != "completed" for c in corse):
+            if not pubblicazione_in_corso(gh):
                 riparati.append("rilanciata la pubblicazione per la curiosità" + (" (prova: in realtà no)" if prova else ""))
                 if not prova:
-                    gh.lancia(FLUSSO)
+                    chiedi_pubblicazione(gh)
     return riparati, problemi
 
 

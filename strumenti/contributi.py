@@ -340,14 +340,17 @@ def impronta(voci):
 
 
 def al_server(nome, dati):
-    """Dal 30 ott 2026 il sito lo pubblica anche il server Aruba (strumenti/pubblica_server.sh): gli stessi dati che
-    vanno a GitHub li lascia nella sua cartella degli arrivi, che lui usa una volta sola. Solo dove la cartella c'è."""
+    """Dal 30 ott 2026 il sito lo pubblica il server Aruba (strumenti/pubblica_server.sh): i dati vanno nella sua
+    cartella degli arrivi, che lui usa una volta sola. Solo dove la cartella c'è."""
     arrivi = os.path.expanduser("~/sito-stato/arrivi")
     if os.path.isdir(arrivi):
         p = os.path.join(arrivi, f"{nome}.json")
         with open(p + ".tmp", "w", encoding="utf-8") as f:
             json.dump(dati, f, ensure_ascii=False)
         os.replace(p + ".tmp", p)
+    # True se il sito vero è il server (~/sito-stato/ACCESO): allora GitHub, che fa solo la copia di riserva, non serve
+    # (la copia prende i dati dal sito); la pubblicazione del server vede gli arrivi entro un minuto
+    return os.path.exists(os.path.expanduser("~/sito-stato/ACCESO"))
 
 
 def manda(catalogo, chiave):
@@ -373,21 +376,22 @@ def manda(catalogo, chiave):
             dt.datetime.now(dt.timezone.utc) - dt.datetime.fromisoformat(stato["quando"]) < dt.timedelta(minutes=60):
         print(f"contributi: catalogo {imp} già mandato alle {stato['quando'][11:16]} UTC, aspetto")
         return
-    al_server("contributi", catalogo)
-    with open(chiave, encoding="utf-8") as f:
-        token = json.load(f)["token"].strip()
-    pacco = base64.b64encode(gzip.compress(json.dumps(catalogo, ensure_ascii=False, separators=(",", ":")).encode(), 9)).decode()
-    if len(pacco) > 60000:   # GitHub accetta al massimo 65.535 caratteri in tutti i campi insieme
-        raise SystemExit(f"contributi: il catalogo compresso è di {len(pacco)} caratteri, troppo per GitHub")
-    req = urllib.request.Request(f"https://api.github.com/repos/{REPO}/actions/workflows/pubblica.yml/dispatches",
-                                 method="POST", data=json.dumps({"ref": "main", "inputs": {"contributi": pacco}}).encode(),
-                                 headers={"Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json",
-                                          "X-GitHub-Api-Version": "2022-11-28", "User-Agent": "nb-contributi"})
-    with urllib.request.urlopen(req, timeout=60):
-        pass
+    pacco = ""
+    if not al_server("contributi", catalogo):   # sul server: niente GitHub (vedi al_server)
+        with open(chiave, encoding="utf-8") as f:
+            token = json.load(f)["token"].strip()
+        pacco = base64.b64encode(gzip.compress(json.dumps(catalogo, ensure_ascii=False, separators=(",", ":")).encode(), 9)).decode()
+        if len(pacco) > 60000:   # GitHub accetta al massimo 65.535 caratteri in tutti i campi insieme
+            raise SystemExit(f"contributi: il catalogo compresso è di {len(pacco)} caratteri, troppo per GitHub")
+        req = urllib.request.Request(f"https://api.github.com/repos/{REPO}/actions/workflows/pubblica.yml/dispatches",
+                                     method="POST", data=json.dumps({"ref": "main", "inputs": {"contributi": pacco}}).encode(),
+                                     headers={"Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json",
+                                              "X-GitHub-Api-Version": "2022-11-28", "User-Agent": "nb-contributi"})
+        with urllib.request.urlopen(req, timeout=60):
+            pass
     with open(stato_p, "w", encoding="utf-8") as f:
         json.dump({"impronta": imp, "quando": dt.datetime.now(dt.timezone.utc).isoformat()}, f)
-    print(f"contributi: mandato alla pubblicazione il catalogo {imp} ({len(catalogo)} contributi, {len(pacco)} caratteri)")
+    print(f"contributi: mandato alla pubblicazione il catalogo {imp} ({len(catalogo)} contributi, {f'{len(pacco)} caratteri' if pacco else 'al server'})")
 
 
 def leggi(p):

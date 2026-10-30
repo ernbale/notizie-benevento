@@ -35,6 +35,7 @@ avviso() { echo "$(date -u '+%d/%m %H:%M:%S') AVVISO: $*"; }
 exec 9>/tmp/nb_pubblica.lock
 flock 9
 INIZIO=$(date +%s)
+INIZIO_ISO=$(date -Iseconds)
 TMP=$(mktemp -d)
 trap 'rm -rf "$TMP"' EXIT
 mkdir -p "$STATO/social" "$STATO/arrivi" "$USCITA"
@@ -131,9 +132,12 @@ fi
 # Meta, Cloudflare e Search Console due volte (e Meta frena chi chiede troppo).
 if [ "$ACCESO" = 0 ]; then
   $CURL "$LIVE/statistiche/dati.json" -o statistiche/dati.json || true
-elif ! { printf '%s\n' "$MESSAGGIO" | grep -q '^Comunicato delle ' \
-         && CHIUSURE_STATO="$STATO/social/chiusure.json" python3 strumenti/statistiche.py --tieni-pubblicate 20; }; then
-  CHIUSURE_STATO="$STATO/social/chiusure.json" python3 strumenti/statistiche.py || avviso "statistiche non aggiornate (il sito si pubblica lo stesso)"
+else
+  # il registro delle pubblicazioni del server (scritto più sotto): da lì la puntualità dei giri
+  export CHIUSURE_STATO="$STATO/social/chiusure.json" PUBBLICAZIONI_SERVER="$STATO/pubblicazioni.jsonl"
+  if ! { printf '%s\n' "$MESSAGGIO" | grep -q '^Comunicato delle ' && python3 strumenti/statistiche.py --tieni-pubblicate 20; }; then
+    python3 strumenti/statistiche.py || avviso "statistiche non aggiornate (il sito si pubblica lo stesso)"
+  fi
 fi
 
 # Togli i file interni
@@ -144,6 +148,12 @@ rsync -a --delete-delay --delay-updates --exclude=/.git --exclude=/.github "$SIT
 echo "$(date -u '+%d/%m %H:%M:%S') sito $([ "$PROVA" = 1 ] && echo 'di prova ')in $USCITA ($(( $(date +%s) - INIZIO )) s)"
 [ "$PROVA" = 1 ] && exit 0
 echo "$SHA" > "$STATO/ultimo_sha"
+# il registro delle pubblicazioni vere (statistiche: quanto ci mette un giro ad andare online), gli ultimi 5000
+if [ "$ACCESO" = 1 ]; then
+  python3 -c 'import json, sys; print(json.dumps({"inizio": sys.argv[1], "online": sys.argv[2], "sha": sys.argv[3], "titolo": sys.argv[4][:120]}, ensure_ascii=False))' \
+    "$INIZIO_ISO" "$(date -Iseconds)" "$SHA" "$MESSAGGIO" >> "$STATO/pubblicazioni.jsonl"
+  tail -n 5000 "$STATO/pubblicazioni.jsonl" > "$STATO/pubblicazioni.jsonl.tmp" && mv "$STATO/pubblicazioni.jsonl.tmp" "$STATO/pubblicazioni.jsonl"
+fi
 
 if [ "$ACCESO" = 0 ]; then
   echo "il sito vero lo fa ancora GitHub: niente social e niente avviso a Bing da qui"
@@ -152,16 +162,20 @@ fi
 
 # Avvisa Bing delle pagine nuove (IndexNow)
 [ -f "$TMP/indexnow.json" ] && { python3 strumenti/pagine.py --invia-indexnow "$TMP/indexnow.json" || avviso "IndexNow non ha risposto"; }
-ROSSO=0
+ROSSO=0 CHIUSURE=true CURIOSITA=true
 # Chiusure dei Comuni sui social (a qualsiasi ora)
-python3 strumenti/chiusure_social.py --stato "$STATO/social/chiusure.json" || { avviso "le chiusure dei Comuni non sono uscite su tutti i canali"; ROSSO=1; }
+python3 strumenti/chiusure_social.py --stato "$STATO/social/chiusure.json" || { avviso "le chiusure dei Comuni non sono uscite su tutti i canali"; ROSSO=1; CHIUSURE=false; }
 # Curiosità del Sannio (alle 12, su Telegram, Facebook e Instagram)
-python3 strumenti/curiosita_social.py --stato "$STATO/social/curiosita.json" || { avviso "la curiosità del Sannio non è uscita su tutti i canali"; ROSSO=1; }
+python3 strumenti/curiosita_social.py --stato "$STATO/social/curiosita.json" || { avviso "la curiosità del Sannio non è uscita su tutti i canali"; ROSSO=1; CURIOSITA=false; }
+# l'esito per la sentinella (su GitHub era il lavoro in rosso): la prossima pubblicazione riprova da sola
+printf '{"quando": "%s", "chiusure": %s, "curiosita": %s}\n' "$(date -Iseconds)" "$CHIUSURE" "$CURIOSITA" > "$STATO/ultimo_esito.json"
 # Facebook (una notizia nuova sulla Pagina, se è il momento)
 FB_SUBITO=0 python3 strumenti/facebook.py --stato "$STATO/social/facebook.json" || avviso "Facebook non ha pubblicato"
 # Instagram (le stesse notizie di Facebook, subito dopo, e il riepilogo della sera)
 python3 strumenti/instagram.py --stato "$STATO/social/instagram.json" || avviso "Instagram non ha pubblicato"
-# Telegram (notizie nuove e aggiornamenti sul canale)
-TG_SUBITO=0 TG_RECUPERA=0 python3 strumenti/telegram.py --stato "$STATO/social/telegram.json" || avviso "Telegram non ha pubblicato"
+# Telegram (notizie nuove e aggiornamenti sul canale); gli arretrati se li ha chiesti la sentinella (canale muto)
+TG_RECUPERA=0
+[ -f "$STATO/telegram_recupera" ] && { rm -f "$STATO/telegram_recupera"; TG_RECUPERA=1; }
+TG_SUBITO=0 TG_RECUPERA=$TG_RECUPERA python3 strumenti/telegram.py --stato "$STATO/social/telegram.json" || avviso "Telegram non ha pubblicato"
 echo "$(date -u '+%d/%m %H:%M:%S') fine ($(( $(date +%s) - INIZIO )) s)"
 exit $ROSSO

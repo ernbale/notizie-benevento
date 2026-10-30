@@ -4,6 +4,7 @@ puntuale sui social (strumenti/curiosita_social.py) e sul sito. Con --controlla 
 curiosità di oggi ancora non c'è, la fa ripartire (gli orari di GitHub a volte saltano). Con --giro (alle :00, :20 e
 :40 dalle 6 alle 21, dal 26 ott 2026; prima solo alle :40): una pubblicazione in più per i social, così c'è sempre
 un'occasione ogni 20 minuti (facebook.py e instagram.py: una notizia ogni 20 minuti, voluto dal proprietario). Usa la chiave della sentinella (github.conf: solo Actions).
+Dal 30 ott 2026, col sito vero sul server Aruba, la pubblicazione la chiede al server (sentinella.chiedi_pubblicazione).
 
 Uso sul Pi:  python3 ~/nb-fonti/sentinella/curiosita_via.py [--controlla | --giro]
 """
@@ -16,7 +17,7 @@ import urllib.request
 
 QUI = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, QUI)
-from sentinella import GitHub, leggi_chiave   # noqa: E402
+from sentinella import GitHub, chiedi_pubblicazione, leggi_chiave, sito_sul_server   # noqa: E402
 
 CARTELLA = os.environ.get("NB_FONTI_CARTELLA") or os.path.expanduser("~/nb-fonti")
 SITO = "https://notiziebenevento.it"
@@ -44,8 +45,8 @@ def main():
                 return
         except Exception as e:
             print(f"{adesso:%Y-%m-%d %H:%M} non leggo il sito ({type(e).__name__}: {e}): rilancio")
-    GitHub(leggi_chiave(os.path.join(CARTELLA, "github.conf"))).lancia("pubblica.yml")
-    print(f"{adesso:%Y-%m-%d %H:%M} pubblicazione avviata" + (" (la curiosità non era ancora sul sito)" if a.controlla
+    chiedi_pubblicazione(None if sito_sul_server() else GitHub(leggi_chiave(os.path.join(CARTELLA, "github.conf"))))
+    print(f"{adesso:%Y-%m-%d %H:%M} pubblicazione {'chiesta al server' if sito_sul_server() else 'avviata'}" + (" (la curiosità non era ancora sul sito)" if a.controlla
                                                              else " (giro delle :40 per i social)" if a.giro else ""))
 
 

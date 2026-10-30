@@ -590,6 +590,11 @@ def telegram(adesso, storico_prima):
 # ---------- puntualità: i giri dell'agente e le pubblicazioni su GitHub ----------
 REPO = "ernbale/notizie-benevento"
 ORARIO_DAL = "2026-10-22"   # da qui un giro ogni ora, dalle 6 alle 22 (il giro delle 23 pubblica solo con l'allerta)
+# dal trasloco su Aruba il sito vero lo pubblica il server (strumenti/pubblica_server.sh): da qui l'ora in cui un giro
+# va online la dà il suo registro delle pubblicazioni (PUBBLICAZIONI_SERVER, una riga JSON per pubblicazione: inizio e
+# online); le pubblicazioni di GitHub da lì in poi sono solo la copia di riserva. L'elenco dei giri resta quello delle
+# spinte su GitHub (ogni giro spinge lì e lì parte comunque la copia).
+SERVER_DAL = "2026-10-30T09:14:45+01:00"
 ORE_GIRI = range(6, 23)
 
 
@@ -603,10 +608,27 @@ def gh_get(percorso, token):
         raise RuntimeError(f"GitHub {e.code}") from None
 
 
-def puntualita(token, adesso, giri_prima=None):
+def pubblicazioni_server(percorso):
+    """Le pubblicazioni del server (inizio, online), in ordine; vuoto se il registro non c'è."""
+    fatte = []
+    try:
+        with open(percorso, encoding="utf-8") as f:
+            for riga in f:
+                try:
+                    d = json.loads(riga)
+                    fatte.append((dt.datetime.fromisoformat(d["inizio"]), dt.datetime.fromisoformat(d["online"])))
+                except (ValueError, KeyError, TypeError):
+                    continue
+    except (OSError, TypeError):
+        pass
+    return sorted(fatte)
+
+
+def puntualita(token, adesso, giri_prima=None, registro_server=None):
     """Per ogni giro dell'agente (il commit «Notizie delle HH:MM»): quanto ci ha messo ad andare online (dalla spinta
-    su GitHub alla fine della prima pubblicazione riuscita partita dopo), i giri mancati, le pubblicazioni annullate
-    o rilanciate (dalla sentinella o a mano) e le sentinelle rosse."""
+    su GitHub alla fine della prima pubblicazione riuscita partita dopo: di GitHub fino al trasloco, del server da
+    SERVER_DAL), i giri mancati, le pubblicazioni annullate o rilanciate (dalla sentinella o a mano) e le sentinelle
+    rosse."""
     if not token:
         return {"stato": "da collegare", "messaggio": "Manca la chiave di GitHub (GH_TOKEN) nel passo delle statistiche."}
     fz = fuso()
@@ -626,6 +648,8 @@ def puntualita(token, adesso, giri_prima=None):
     riuscite = sorted((iso(c["created_at"]), c["id"]) for c in corse
                       if c.get("status") == "completed" and c.get("conclusion") == "success")
     fine_di = {}
+    server = pubblicazioni_server(registro_server)
+    dal_server = dt.datetime.fromisoformat(SERVER_DAL)
 
     def fine(id_corsa):
         if id_corsa not in fine_di:
@@ -642,8 +666,11 @@ def puntualita(token, adesso, giri_prima=None):
         chiave = spinta.isoformat(timespec="minutes")
         minuti = gia.get(chiave)
         if minuti is None and adesso - spinta < dt.timedelta(days=7):
-            dopo = next((rid for t, rid in riuscite if t >= spinta - dt.timedelta(seconds=5)), None)
-            online = fine(dopo) if dopo else None
+            if spinta >= dal_server:
+                online = next((o for i, o in server if i >= spinta - dt.timedelta(seconds=5)), None)
+            else:
+                dopo = next((rid for t, rid in riuscite if t >= spinta - dt.timedelta(seconds=5)), None)
+                online = fine(dopo) if dopo else None
             minuti = round((online - spinta).total_seconds() / 60) if online else None
         giri.append({"giorno": spinta.date().isoformat(), "ora": f"{int(m.group(1)):02d}:{m.group(2)}",
                      "spinta": chiave, "minuti": minuti})
@@ -980,7 +1007,8 @@ def main():
                             fb_token, adesso, (prima.get("instagram") or {}).get("storico")), prima, adesso)),
                        ("telegram", lambda: telegram(adesso, (prima.get("telegram") or {}).get("storico"))),
                        ("puntualita", lambda: puntualita(os.environ.get("GH_TOKEN", "").strip(), adesso,
-                                                      (prima.get("puntualita") or {}).get("giri")))):
+                                                      (prima.get("puntualita") or {}).get("giri"),
+                                                      os.environ.get("PUBBLICAZIONI_SERVER")))):
         try:
             dati[nome] = fare()
             print(f"{nome.capitalize()}:", dati[nome]["stato"],
