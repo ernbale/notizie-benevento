@@ -3,6 +3,87 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "benevento-navette-air-cimitero-31-ottobre-2-novembre-2026",
+   "titolo": "Benevento, navette AIR per il cimitero dal 31 ottobre al 2 novembre: due linee da piazza Cardinal Pacca e piazza Risorgimento, percorsi e orari",
+   "titolo_google": "Navetta cimitero Benevento 31 ottobre-2 novembre: orari",
+   "sintesi": "Sabato 31 ottobre, domenica 1 e lunedì 2 novembre AIR Campania collega il centro di Benevento al cimitero con due linee di navette, da piazza Cardinal Pacca e da piazza Risorgimento, dalle 7:30 alle 17:25. Si viaggia con i normali biglietti dei bus urbani.",
+   "categoria": "strade",
+   "immagine": "autobus",
+   "luogo": "Benevento, cimitero comunale",
+   "pubblicato": "2026-10-30T14:27:00+01:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 4,
+   "in_vigore_dal": "2026-10-31",
+   "in_vigore_fino": "2026-11-02",
+   "comunicati": [
+    "udd56ec0285d"
+   ],
+   "fonti": [
+    {
+     "nome": "AIR Campania",
+     "url": "https://aircampania.it/benevento-dal-31-ottobre-al-2-novembre-attiva-navetta-per-il-cimitero/",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Per la Commemorazione dei defunti, sabato 31 ottobre, domenica 1 e lunedì 2 novembre, a Benevento ci sono le navette per il cimitero comunale. Le fa AIR Campania, l'azienda regionale dei trasporti, su richiesta del Comune di Benevento. Le linee sono due: una parte da piazza Cardinal Pacca, l'altra da piazza Risorgimento. Le prime partenze sono alle 7:30, le ultime corse dal cimitero alle 17:25.",
+      "fonti": [
+       "AIR Campania"
+      ]
+     },
+     {
+      "testo": "Per la sosta e il capolinea, la linea di piazza Cardinal Pacca usa lo stallo riservato ai bus turistici. All'andata passa per via Ennio Goduti, via Vittime di Nassiriya e via Cimitero; al ritorno, dal cimitero, gira a destra su via Vittime di Nassiriya e prosegue per via del Pomerio e corso Dante fino a piazza Cardinal Pacca.",
+      "fonti": [
+       "AIR Campania"
+      ]
+     },
+     {
+      "testo": "Anche la linea di piazza Risorgimento, per la sosta e il capolinea, usa lo stallo riservato ai bus turistici. All'andata percorre viale dei Rettori, via del Pomerio, via San Pasquale e via Cimitero; al ritorno passa per via Michelangelo Schipa, via Mustilli e via Domenico da Monteforte fino a piazza Risorgimento.",
+      "fonti": [
+       "AIR Campania"
+      ]
+     },
+     {
+      "testo": "Gli orari sono gli stessi per le due linee e per tutti e tre i giorni. Dalle due piazze si parte alle 7:30, 7:50, 8:10, 8:30, 8:50, 9:00, 9:10, 9:20, 9:30, 9:40, 9:50, 10:00, 10:10, 10:20, 10:30, 10:40, 10:50, 11:00, 11:10, 11:20, 11:30, 11:35, 11:40, 11:50, 11:55, 12:00, 12:10, 12:15, 12:20, 12:30, 12:35, 12:40, 12:50, 12:55, 13:00, 13:10, 13:15, 13:20, 13:35, 13:40, 13:55, 14:00, 14:15, 14:20, 14:35, 14:40, 14:55, 15:15, 15:35, 15:55, 16:15, 16:35, 16:55 e 17:15.",
+      "fonti": [
+       "AIR Campania"
+      ]
+     },
+     {
+      "testo": "Dal cimitero si torna in centro alle 7:40, 8:00, 8:20, 8:40, 9:00, 9:10, 9:20, 9:30, 9:40, 9:50, 10:00, 10:10, 10:20, 10:30, 10:40, 10:50, 11:00, 11:10, 11:20, 11:30, 11:40, 11:45, 11:50, 12:00, 12:05, 12:10, 12:20, 12:25, 12:30, 12:40, 12:45, 12:50, 13:00, 13:05, 13:10, 13:20, 13:25, 13:30, 13:45, 13:50, 14:05, 14:10, 14:25, 14:30, 14:45, 14:50, 15:05, 15:25, 15:45, 16:05, 16:25, 16:45, 17:05 e 17:25.",
+      "fonti": [
+       "AIR Campania"
+      ]
+     },
+     {
+      "testo": "Sulle navette valgono gli stessi biglietti dei bus urbani. Oltre ai soliti punti vendita, ci sono biglietterie straordinarie in piazza Cardinal Pacca, in piazza Risorgimento e al cimitero comunale.",
+      "fonti": [
+       "AIR Campania"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "AIR Campania",
+      "titolo": "Benevento, dal 31 ottobre al 2 novembre attiva navetta per il Cimitero",
+      "url": "https://aircampania.it/benevento-dal-31-ottobre-al-2-novembre-attiva-navetta-per-il-cimitero/",
+      "data": "30 ott, 14:27",
+      "ufficiale": true
+     }
+    ]
+   },
+   "subito": true,
+   "foto": "autobus-4",
+   "zona": "benevento"
+  },
+  {
    "id": "frasso-telesino-via-cimitero-senso-unico-31-ottobre-2-novembre",
    "titolo": "Frasso Telesino, via Cimitero a senso unico il 31 ottobre e l'1 e 2 novembre",
    "titolo_google": "Frasso Telesino, via Cimitero a senso unico dal 31 ottobre",
