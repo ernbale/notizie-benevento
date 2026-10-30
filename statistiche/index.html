@@ -723,7 +723,7 @@
       var mis7 = giri7.filter(function (g) { return g.minuti != null; });
       var lento = mis7.slice().sort(function (a, b) { return b.minuti - a.minuti; })[0];
       var mancati7 = [];
-      ult7.forEach(function (g) { (g.mancati || []).forEach(function (h) { mancati7.push(giornoBreve(g.data) + " " + (h < 10 ? "0" : "") + h + ":05"); }); });
+      ult7.forEach(function (g) { (g.mancati || []).forEach(function (h) { mancati7.push(giornoBreve(g.data) + " " + (h < 10 ? "0" : "") + h + ":00"); }); });
       var np = el("div", "numeri");
       np.appendChild(numero("Giri", num(somma(pg, "giri", 7)), "ultimi 7 giorni · " + (mancati7.length ? num(mancati7.length) + " mancati" : "nessuno mancato")));
       np.appendChild(numero("Dal giro al sito", mis7.length ? num(Math.round(mis7.reduce(function (s, g) { return s + g.minuti; }, 0) / mis7.length)) + " min" : "–", "in media, ultimi 7 giorni"));

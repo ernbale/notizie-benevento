@@ -29,7 +29,7 @@ Scrive nel registro (comunicati.log) solo quando fa qualcosa o qualcosa non va. 
 Dal 25 ott 2026 (lui: «dobbiamo recuperare qualche minuto, dobbiamo arrivare prima») anche gli articoli nuovi dei siti
 ufficiali (ufficiali.json dell'archivio, li trova strumenti/ufficiali.py ogni 5 minuti; `tipo` = «sito»), con le stesse
 regole. Ma quelli li legge anche il giro di ogni ora (alle :06, dalle 6 alle 22), e se lo stesso articolo lo scrivessero
-tutti e due sarebbe un doppione: un articolo dei siti ufficiali che arriva tra le :04 e le :25 (ATTESA) aspetta che il
+tutti e due sarebbe un doppione: un articolo dei siti ufficiali che arriva tra le :00 e le :20 (ATTESA; fino al 30 ott 2026, col giro nel cloud alle :05, tra le :04 e le :25) aspetta che il
 giro di quell'ora abbia pubblicato (il commit «Notizie delle HH:» sul main) o le :25; poi il giro lampo lo trova già
 sul sito («gia_nel_sito», ed esce subito sui social) o lo pubblica. I comunicati per posta non aspettano mai, e dal 27
 ott 2026 nemmeno il Benevento Calcio (SENZA_ATTESA, «priorità max»).
@@ -51,8 +51,8 @@ import vedetta as V   # noqa: E402  (chiave della routine, archivio, GitHub: tut
 STATO = os.path.join(V.CARTELLA, "comunicati_lampo.json")
 COMUNICATI = os.path.join(V.F.ARCHIVIO, "comunicati.json")
 UFFICIALI = os.path.join(V.F.ARCHIVIO, "ufficiali.json")   # gli articoli dei siti ufficiali (strumenti/ufficiali.py)
-GIRO_ORE = range(6, 23)   # il giro di ogni ora parte alle :06, dalle 6 alle 22
-ATTESA = (4, 25)          # minuti dell'ora in cui un articolo dei siti ufficiali aspetta il giro di ogni ora
+GIRO_ORE = range(6, 23)   # il giro di ogni ora parte alle :00 (sul server Aruba, dal 30 ott 2026), dalle 6 alle 22
+ATTESA = (0, 20)          # minuti dell'ora in cui un articolo dei siti ufficiali aspetta il giro di ogni ora (alle :00 sul server)
 # chi non aspetta mai il giro di ogni ora (27 ott 2026, lui: «i comunicati stampa del Benevento Calcio … istantaneamente,
 # priorità max», «nessun doppione importantissimo»): i doppioni li fermano comunicati.py (stesso link o titolo che
 # sembra lo stesso fatto di una notizia appena uscita: va confermato) e unisci_notizie.py quando si uniscono i due giri
@@ -192,7 +192,7 @@ def main():
             if nuove_attese and not a.prova:
                 V.scrivi(STATO, stato)
             if nuove_attese:
-                print(f"{ora} aspettano il giro delle {adesso:%H}:06 (niente doppioni): "
+                print(f"{ora} aspettano il giro delle {adesso:%H}:00 (niente doppioni): "
                       + ", ".join(f"{v['id']} «{v.get('titolo', '')[:60]}»" for v in nuove_attese))
             da_fare = [v for v in da_fare if not attendono(v)]
     if not da_fare:

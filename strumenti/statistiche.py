@@ -729,14 +729,14 @@ GIORNI_AGENTE = 4
 
 
 def prossimo_giro(adesso):
-    """I giri partono alle :05 dalle 6 alle 22 (ora italiana); alle 23:05 solo la sera prima di un'allerta arancione o rossa."""
+    """I giri partono alle :00 dalle 6 alle 22 (ora italiana; alle :05 fino al 30 ott 2026, quando li faceva il cloud); alle 23 solo la sera prima di un'allerta arancione o rossa."""
     t = adesso.astimezone(fuso())
     for h in range(t.hour, 23):
-        g = t.replace(hour=h, minute=5, second=0, microsecond=0)
+        g = t.replace(hour=h, minute=0, second=0, microsecond=0)
         if h >= 6 and g > t:
             return {"ora": g.isoformat(timespec="minutes"), "nota": ""}
-    domani = (t + dt.timedelta(days=1)).replace(hour=6, minute=5, second=0, microsecond=0)
-    nota = "alle 23:05 c'è un giro solo se domani c'è un'allerta arancione o rossa" if t.hour < 23 else ""
+    domani = (t + dt.timedelta(days=1)).replace(hour=6, minute=0, second=0, microsecond=0)
+    nota = "alle 23 c'è un giro solo se domani c'è un'allerta arancione o rossa" if t.hour < 23 else ""
     return {"ora": domani.isoformat(timespec="minutes"), "nota": nota}
 
 
