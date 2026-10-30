@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-30T08:19+01:00",
+ "aggiornato": "2026-10-30T13:00+01:00",
  "eventi": [
   {
    "id": "mostra-cosmogonie-meact-torrecuso-2026",
@@ -1757,7 +1757,7 @@
     "2026-12-19",
     "2026-12-20"
    ],
-   "orari": "dalle 11 alle 21:30, nei giorni 7, 8, 14, 15, 21, 22, 28 e 29 novembre e 5, 6, 8, 12, 13, 19 e 20 dicembre",
+   "orari": "dalle 11 alle 21:30",
    "luogo": "Castello medievale e centro storico (fino alla prima piazzetta di via Cortile)",
    "comune": "Ceppaloni",
    "zona": "provincia",
@@ -1781,6 +1781,20 @@
      "fonti": [
       "NTR24 (27/10)"
      ]
+    },
+    {
+     "testo": "È la seconda edizione. Nel castello medievale circa quaranta sale sono allestite con scenografie natalizie fatte a mano: in alcune ci sono spettacoli e incontri con i personaggi. Nella corte vanno in scena «Ebenezer - Il viaggio di Scrooge», ispirato al racconto di Natale di Dickens, e il Grinch; ci sono Babbo Natale e Mamma Natale, gli elfi e artisti di strada. Nella corte ci sono anche un ristorante e un bar, nel centro storico punti di cibo di strada e un vocalist. Sono previste anche visite guidate del borgo.",
+     "fonti": [
+      "NTR24 (30/10)",
+      "Gazzetta di Benevento"
+     ]
+    },
+    {
+     "testo": "La manifestazione fa parte del progetto del Comune «Ceppaloni Borgo Esperienziale 2026», finanziato dal Ministero del Turismo. La direzione artistica è di Giovanni Calicchio, con Antonella Vegliante, Jenny Capozzi e Lillino Paternosto.",
+     "fonti": [
+      "NTR24 (30/10)",
+      "Gazzetta di Benevento"
+     ]
     }
    ],
    "fonti": [
@@ -1801,6 +1815,18 @@
      "titolo": "A Ceppaloni si presenta ‘Come d’Incanto’: dal 7 novembre il Castello si veste di magia per il Natale",
      "url": "https://www.ntr24.tv/2026/10/27/a-ceppaloni-si-presenta-come-dincanto-dal-7-novembre-il-castello-si-veste-di-magia-per-il-natale/",
      "data": "27 ott"
+    },
+    {
+     "nome": "NTR24 (30/10)",
+     "titolo": "Dal Grinch a Scrooge: a Ceppaloni il Castello diventa ‘Come d’Incanto’ per le festività natalizie",
+     "url": "https://www.ntr24.tv/2026/10/30/dal-grinch-a-scrooge-a-ceppaloni-il-castello-diventa-come-dincanto-per-le-festivita-natalizie/",
+     "data": "30 ott, 12:40"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "titolo": "Il Natale a Ceppaloni si prepara a diventare un'esperienza da vivere, attraversare e ricordare",
+     "url": "https://www.gazzettabenevento.it/it/il-natale-ceppaloni-si-prepara-diventare-unesperienza-da-vivere-attraversare-e-ricordare",
+     "data": "30 ott, 12:30"
     }
    ],
    "immagine": "castello-natale",

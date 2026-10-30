@@ -1,7 +1,223 @@
 {
- "aggiornato": "2026-10-30T12:05+01:00",
+ "aggiornato": "2026-10-30T13:07+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-conservatorio-confindustria-intesa-il-molino",
+   "titolo": "Benevento, intesa tra Conservatorio «Nicola Sala» e Confindustria: al Molino ospiti per ricerca e progetti",
+   "titolo_google": "Conservatorio Benevento e Confindustria, firmata l'intesa",
+   "sintesi": "Il Conservatorio «Nicola Sala» di Benevento e Confindustria Benevento hanno firmato una convenzione: la residenza universitaria «Il Molino» potrà ospitare per brevi periodi docenti, ricercatori ed esperti segnalati dalle imprese. Gli studenti restano al primo posto.",
+   "categoria": "cultura",
+   "luogo": "Benevento, residenza universitaria Il Molino",
+   "pubblicato": "2026-10-30T12:43+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 2,
+   "immagine": "riunione",
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/30/conservatorio-e-confindustria-benevento-unintesa-per-la-ricerca-linnovazione-e-lo-sviluppo-del-territorio/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/conservatorio-confindustria-intesa-innovazione-sviluppo/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/442595/ricerca-intesa-conservatorio-nicola-sala-e-confindustria-benevento.shtml"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/universita/2026/conservatorio-n-sala-e-confindustria-benevento-unintesa-per-la-ricerca-linnovazione-e-lo-sviluppo-del-territorio.html"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Venerdì 30 ottobre il Conservatorio di musica «Nicola Sala» di Benevento e Confindustria Benevento, l'associazione degli industriali, hanno firmato una convenzione per lavorare insieme su ricerca, formazione e sviluppo del Sannio. Per il Conservatorio hanno firmato il presidente Nazzareno Orlando e il direttore Giuseppe Ilario, per Confindustria il presidente Andrea Esposito.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio",
+       "Ottopagine",
+       "InfoSannio"
+      ]
+     },
+     {
+      "testo": "Il punto pratico è l'ospitalità: la residenza universitaria «Il Molino» potrà accogliere per brevi periodi docenti, ricercatori, esperti e ospiti segnalati da Confindustria e dalle sue aziende, quando partecipano a iniziative scientifiche, formative o culturali sul territorio.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio",
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Il Molino resta prima di tutto per gli studenti dell'Università del Sannio e del Conservatorio. Gli ospiti potranno entrare solo se ci sono posti liberi, nei periodi e nei limiti consentiti, senza togliere niente alle assegnazioni agli studenti né agli obblighi verso l'ADISURC, l'ente regionale per il diritto allo studio. L'accordo non riserva posti e non garantisce disponibilità.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "La firma della convenzione e l'ospitalità al Molino per docenti ed esperti segnalati da Confindustria.",
+      "fonti": [
+       "NTR24",
+       "Cronache del Sannio",
+       "Ottopagine"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Da quando arriveranno i primi ospiti e quanti posti potranno servire."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Conservatorio e Confindustria Benevento: un’intesa per la ricerca, l’innovazione e lo sviluppo del territorio",
+      "url": "https://www.ntr24.tv/2026/10/30/conservatorio-e-confindustria-benevento-unintesa-per-la-ricerca-linnovazione-e-lo-sviluppo-del-territorio/",
+      "data": "30 ott, 12:43"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Conservatorio e Confindustria, siglata l’intesa per l’innovazione e lo sviluppo",
+      "url": "https://www.cronachedelsannio.it/sannionews24/conservatorio-confindustria-intesa-innovazione-sviluppo/",
+      "data": "30 ott, 12:22"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Ricerca. Intesa Conservatorio \"Nicola Sala\" e Confindustria Benevento",
+      "url": "https://www.ottopagine.it/bn/attualita/442595/ricerca-intesa-conservatorio-nicola-sala-e-confindustria-benevento.shtml",
+      "data": "30 ott, 12:23"
+     },
+     {
+      "nome": "InfoSannio",
+      "titolo": "Conservatorio e Confindustria: un’intesa per la ricerca, l’innovazione e lo sviluppo del territorio",
+      "url": "https://www.infosannionews.it/universita/2026/conservatorio-n-sala-e-confindustria-benevento-unintesa-per-la-ricerca-linnovazione-e-lo-sviluppo-del-territorio.html",
+      "data": "30 ott, 12:03"
+     }
+    ]
+   },
+   "zona": "benevento",
+   "foto": "riunione-7"
+  },
+  {
+   "id": "frasso-telesino-calendario-raccolta-differenziata-inverno-2026",
+   "titolo": "Frasso Telesino, dal 2 novembre il calendario invernale della raccolta differenziata porta a porta",
+   "titolo_google": "Frasso Telesino, raccolta differenziata: calendario invernale",
+   "sintesi": "Dal 2 novembre 2026 al 31 maggio 2027 a Frasso Telesino vale il calendario invernale della raccolta porta a porta: vetro il lunedì, umido il martedì e il sabato, plastica e carta il giovedì, indifferenziato il venerdì. I sacchetti si mettono fuori dalle 21 alle 5:30.",
+   "categoria": "avvisi",
+   "luogo": "Frasso Telesino",
+   "pubblicato": "2026-10-30",
+   "in_vigore_dal": "2026-11-02",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "immagine": "rifiuti",
+   "fonti": [
+    {
+     "nome": "Comune di Frasso Telesino",
+     "url": "https://comune.frassotelesino.bn.it/novita/calendario-invernale-raccolta-differenziata-porta-a-porta/",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Da lunedì 2 novembre 2026 al 31 maggio 2027 a Frasso Telesino cambia il calendario della raccolta differenziata porta a porta: il lunedì il vetro, il martedì l'umido, il giovedì la plastica e i metalli (il multimateriale) insieme a carta e cartone, il venerdì l'indifferenziato e il sabato di nuovo l'umido. Il mercoledì e il sabato c'è anche lo spazzamento delle strade.",
+      "fonti": [
+       "Comune di Frasso Telesino"
+      ]
+     },
+     {
+      "testo": "I rifiuti vanno messi a bordo strada dalle 21 alle 5:30: dopo quell'ora non vengono più ritirati e non si può contestare il mancato ritiro. Ingombranti ed elettrodomestici si ritirano su prenotazione, chiamando lo 0824 1831408 o lo 0824 841817, e si lasciano l'ultimo martedì del mese, al massimo 3 pezzi grandi e 3 piccoli. Vestiti usati, pile, olio da cucina e farmaci scaduti vanno nei contenitori lungo le strade.",
+      "fonti": [
+       "Comune di Frasso Telesino"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di Frasso Telesino",
+      "titolo": "Calendario invernale raccolta differenziata porta a porta",
+      "url": "https://comune.frassotelesino.bn.it/novita/calendario-invernale-raccolta-differenziata-porta-a-porta/",
+      "data": "30 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "zona": "telesina",
+   "foto": "rifiuti-16"
+  },
+  {
+   "id": "benevento-assolto-falsa-testimonianza-ex-cinema-san-marco",
+   "titolo": "Benevento, intossicazione all'ex cinema San Marco: assolto il 44enne accusato di falsa testimonianza",
+   "titolo_google": "Ex cinema San Marco Benevento, assolto da falsa testimonianza",
+   "sintesi": "Il Tribunale di Napoli ha assolto dall'accusa di falsa testimonianza un imprenditore di Benevento di 44 anni, sentito nel processo per l'intossicazione da monossido di carbonio all'ex cinema San Marco del gennaio 2016. L'uomo sta scontando una condanna per un omicidio del 2013.",
+   "categoria": "cronaca",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-30T12:24+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 3,
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/442596/condanna-per-delitto-rosiello-assolto-da-falsa-testimonianza-su-malori-s-marco.shtml"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Tribunale di Napoli ha assolto P. M., 44 anni, di Benevento, imprenditore nel settore termoidraulico, accusato di falsa testimonianza. L'accusa era nata dalla sua deposizione nel processo d'appello per l'intossicazione all'ex cinema San Marco di Benevento.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Il 20 gennaio 2016, nella sala dell'ex cinema, molti studenti delle scuole di Benevento e della provincia si erano sentiti male per il monossido di carbonio durante un convegno del Festival filosofico del Sannio, con lo psicanalista Massimo Recalcati tra i relatori. Il processo si è chiuso con la condanna a 6 mesi, con la pena sospesa, per lesioni colpose, della legale rappresentante della società che gestiva i locali.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "P. M. era stato sentito perché aveva firmato un certificato che attestava una prova di combustione della caldaia fatta nel 2016. Le sue dichiarazioni erano state mandate alla Procura, che lo aveva portato a processo per falsa testimonianza; ora è arrivata l'assoluzione.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "L'uomo sta scontando una condanna a 22 anni e 6 mesi, ridotta dai 25 iniziali, per l'omicidio di un imprenditore di 41 anni, ucciso a colpi di pistola in via Pisacane, al rione Libertà, all'alba del 25 novembre 2013: un omicidio che aveva confessato.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando è stata decisa l'assoluzione e con quale formula.",
+     "Se la Procura farà ricorso."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Condanna per delitto A. R., assolto da falsa testimonianza su malori S. Marco",
+      "url": "https://www.ottopagine.it/bn/cronaca/442596/condanna-per-delitto-rosiello-assolto-da-falsa-testimonianza-su-malori-s-marco.shtml",
+      "data": "30 ott, 12:24"
+     }
+    ]
+   },
+   "zona": "benevento"
+  },
   {
    "id": "cremonese-benevento-arbitro-livio-marinelli-31-ottobre",
    "titolo": "Cremonese-Benevento di sabato 31 ottobre allo Zini: arbitra Livio Marinelli di Tivoli",
@@ -84,6 +300,26 @@
     {
      "nome": "BeneventoNews24",
      "url": "https://www.beneventonews24.it/2026/10/30/beneveento-rafforzati-i-servizi-di-vigilanza-e-controllo-nel-centro-cittadino/"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/30/benevento-rafforzati-vigilanza-e-controllo-in-centro-storico-nel-week-end-a-corso-garibaldi-il-presidio-fisso-delle-forze-di-polizia/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/centro-storico-vertice-prefettura-rafforzati-servizi-vigilanza/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/442597/benevento-piu-controlli-in-centro-citta-disposti-dalla-prefettura.shtml"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/camera-di-commercio/2026/rafforzati-i-servizi-di-vigilanza-e-controllo-del-territorio-nel-centro-cittadino.html"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/si-e-svolta-al-palazzo-del-governo-una-riunione-tecnica-di-coordinamento-presieduta-dal-prefetto"
     }
    ],
    "articolo": {
@@ -92,26 +328,46 @@
       "testo": "Da questo fine settimana, nelle sere di venerdì e sabato, su Corso Garibaldi a Benevento ci sarà un presidio fisso delle forze di Polizia. L'ha deciso la Prefetta di Benevento, Raffaela Moscarella, per avere una presenza costante nella via più frequentata del centro.",
       "fonti": [
        "Prefettura di Benevento",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "NTR24",
+       "Cronache del Sannio",
+       "Ottopagine"
       ]
      },
      {
       "testo": "La decisione è arrivata dopo una riunione tecnica che si è tenuta giovedì 29 ottobre al Palazzo del Governo, la sede della Prefettura, con i vertici delle forze dell'ordine della provincia. Anche per alcuni episodi recenti che hanno coinvolto dei giovani durante la movida in centro, si è deciso di aumentare i controlli e la prevenzione nelle zone più frequentate la sera. Il presidio su Corso Garibaldi si aggiunge ai controlli del territorio già coordinati dalla Prefettura.",
       "fonti": [
        "Prefettura di Benevento",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "NTR24",
+       "Cronache del Sannio",
+       "Ottopagine"
       ]
      },
      {
       "testo": "«Questa ulteriore misura è finalizzata a garantire una maggiore serenità nella fruizione degli spazi pubblici», ha detto la Prefetta, «a beneficio dell'intera cittadinanza e, in particolare, dei tanti giovani che frequentano il centro cittadino».",
       "fonti": [
        "Prefettura di Benevento",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "NTR24",
+       "Cronache del Sannio",
+       "Ottopagine"
       ]
      }
     ],
     "cronologia": [],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "Il presidio fisso delle forze di polizia in corso Garibaldi il venerdì e il sabato sera, da questo fine settimana, deciso dal prefetto Raffaela Moscarella dopo una riunione con i vertici delle forze dell'ordine.",
+      "fonti": [
+       "Prefettura di Benevento",
+       "NTR24",
+       "Cronache del Sannio",
+       "Ottopagine",
+       "BeneventoNews24"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [
      "Quali episodi della movida hanno portato alla decisione: la Prefettura non li elenca.",
@@ -130,6 +386,36 @@
       "titolo": "Benevento, rafforzati i servizi di vigilanza e controllo nel centro cittadino",
       "url": "https://www.beneventonews24.it/2026/10/30/beneveento-rafforzati-i-servizi-di-vigilanza-e-controllo-nel-centro-cittadino/",
       "data": "30 ott, 11:55"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Benevento, rafforzati vigilanza e controllo in centro storico: nel week end a Corso Garibaldi il presidio fisso delle forze di Polizia",
+      "url": "https://www.ntr24.tv/2026/10/30/benevento-rafforzati-vigilanza-e-controllo-in-centro-storico-nel-week-end-a-corso-garibaldi-il-presidio-fisso-delle-forze-di-polizia/",
+      "data": "30 ott, 12:01"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Centro storico, vertice in Prefettura: rafforzati i servizi di vigilanza",
+      "url": "https://www.cronachedelsannio.it/sannionews24/centro-storico-vertice-prefettura-rafforzati-servizi-vigilanza/",
+      "data": "30 ott, 12:09"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Benevento. Più controlli in centro città disposti dalla Prefettura",
+      "url": "https://www.ottopagine.it/bn/cronaca/442597/benevento-piu-controlli-in-centro-citta-disposti-dalla-prefettura.shtml",
+      "data": "30 ott, 12:31"
+     },
+     {
+      "nome": "InfoSannio",
+      "titolo": "Rafforzati i servizi di vigilanza e controllo del territorio nel centro cittadino",
+      "url": "https://www.infosannionews.it/camera-di-commercio/2026/rafforzati-i-servizi-di-vigilanza-e-controllo-del-territorio-nel-centro-cittadino.html",
+      "data": "30 ott, 11:40"
+     },
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "Si è svolta al Palazzo del Governo una riunione tecnica di coordinamento, presieduta dal prefetto, Raffaela Moscarella, con i vertici provinciali delle Forze dell'ordine",
+      "url": "https://www.gazzettabenevento.it/it/si-e-svolta-al-palazzo-del-governo-una-riunione-tecnica-di-coordinamento-presieduta-dal-prefetto",
+      "data": "30 ott, 11:47"
      }
     ]
    },
@@ -143,7 +429,7 @@
    "categoria": "altro",
    "luogo": "Vitulano",
    "pubblicato": "2026-10-30T11:50+01:00",
-   "stato": "una_fonte",
+   "stato": "confermata",
    "rilevante": false,
    "importanza": 3,
    "immagine": "cammino",
@@ -151,6 +437,14 @@
     {
      "nome": "NTR24",
      "url": "https://www.ntr24.tv/2026/10/30/via-francigena-il-sindaco-di-vitulano-alla-borsa-mediterranea-del-turismo-archeologico-rilancia-il-progetto-dei-22-comuni-sanniti/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/30/via-francigena-vitulano-guarda-alleuropa-il-sindaco-scarinzi-rilancia-il-progetto-dei-22-comuni-sanniti/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/442600/via-francigena-vitulano-guarda-all-europa-sindaco-scarinzi-vera-opportunita.shtml"
     }
    ],
    "articolo": {
@@ -158,24 +452,39 @@
      {
       "testo": "Il sindaco di Vitulano, Raffaele Scarinzi, ha portato la Via Francigena del Sannio alla Borsa Mediterranea del Turismo Archeologico, la fiera che quest'anno, alla ventottesima edizione, si tiene al Next, l'ex Tabacchificio di Paestum. Vitulano è il Comune capofila di una rete di 22 Comuni della provincia di Benevento che lavorano insieme sul tratto sannita del cammino.",
       "fonti": [
-       "NTR24"
+       "NTR24",
+       "BeneventoNews24",
+       "Ottopagine"
       ]
      },
      {
       "testo": "Il progetto prevede cinque tappe in provincia e vuole fare della Via Francigena del Sannio un cammino organizzato, sicuro, accessibile e con i servizi. Tra i lavori in programma ci sono la sistemazione e la messa in sicurezza di circa 65 chilometri di percorso, punti di accoglienza e di informazione e più servizi per i pellegrini. A Vitulano il Comune vuole aprire un ostello della Francigena in una sua struttura già esistente, senza togliere soldi al progetto: «un'accoglienza a basso costo», ha detto il sindaco, soprattutto per i giovani.",
       "fonti": [
-       "NTR24"
+       "NTR24",
+       "BeneventoNews24",
+       "Ottopagine"
       ]
      },
      {
       "testo": "Scarinzi ha parlato anche della candidatura della Via Francigena a patrimonio dell'UNESCO: secondo lui i Comuni del Sud devono fare rete ed entrare nell'Associazione Europea delle Vie Francigene, perché se il riconoscimento si fermasse a Roma tutto il tratto meridionale resterebbe fuori. Quando i lavori saranno finiti, il sindaco vuole portare sul cammino gli abitanti dei 22 paesi, due o tre Comuni per volta, perché lo conoscano e lo sentano un po' loro.",
       "fonti": [
-       "NTR24"
+       "NTR24",
+       "BeneventoNews24",
+       "Ottopagine"
       ]
      }
     ],
     "cronologia": [],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "Vitulano è capofila di 22 Comuni della provincia per la Via Francigena del Sannio, con cinque tappe, e il sindaco Raffaele Scarinzi ne ha parlato a Paestum insieme alla candidatura UNESCO.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24",
+       "Ottopagine"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [
      "Quali sono i 22 Comuni della rete e le cinque tappe.",
@@ -187,6 +496,18 @@
       "titolo": "Via Francigena, il sindaco di Vitulano alla Borsa Mediterranea del Turismo Archeologico rilancia il progetto dei 22 comuni sanniti",
       "url": "https://www.ntr24.tv/2026/10/30/via-francigena-il-sindaco-di-vitulano-alla-borsa-mediterranea-del-turismo-archeologico-rilancia-il-progetto-dei-22-comuni-sanniti/",
       "data": "30 ott, 11:50"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Via Francigena, Vitulano guarda all’Europa: il sindaco Scarinzi rilancia il progetto dei 22 Comuni sanniti",
+      "url": "https://www.beneventonews24.it/2026/10/30/via-francigena-vitulano-guarda-alleuropa-il-sindaco-scarinzi-rilancia-il-progetto-dei-22-comuni-sanniti/",
+      "data": "30 ott, 12:05"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Via Francigena, Vitulano guarda all’Europa: sindaco Scarinzi: vera opportunità",
+      "url": "https://www.ottopagine.it/bn/attualita/442600/via-francigena-vitulano-guarda-all-europa-sindaco-scarinzi-vera-opportunita.shtml",
+      "data": "30 ott, 12:40"
      }
     ]
    },
@@ -297,11 +618,11 @@
   },
   {
    "id": "guardia-sanframondi-elenco-elettori-fuori-sede",
-   "titolo": "Guardia Sanframondi, aperto l'elenco comunale degli elettori fuori sede: sul sito del Comune la domanda di iscrizione",
-   "titolo_google": "Guardia Sanframondi, elenco degli elettori fuori sede",
-   "sintesi": "Anche il Comune di Guardia Sanframondi ha aperto l'elenco degli elettori fuori sede, per chi studia, lavora o si cura lontano da casa e vuole votare dove si trova alle elezioni politiche, europee e ai referendum. Sul sito del Comune ci sono la nota della Prefettura e il modulo della domanda.",
+   "titolo": "Elettori fuori sede, elenco aperto a Guardia Sanframondi, San Salvatore Telesino, San Giorgio del Sannio e Castelvetere",
+   "titolo_google": "Elettori fuori sede: elenco nei Comuni del Sannio, come fare",
+   "sintesi": "Guardia Sanframondi, San Salvatore Telesino, San Giorgio del Sannio e Castelvetere in Val Fortore hanno aperto l'elenco degli elettori fuori sede, per chi studia, lavora o si cura in un'altra regione e vuole votare lì alle politiche, alle europee e ai referendum. Per chi è già fuori sede la domanda va fatta entro il 31 dicembre.",
    "categoria": "avvisi",
-   "luogo": "Guardia Sanframondi",
+   "luogo": "Guardia Sanframondi, San Salvatore Telesino, San Giorgio del Sannio e Castelvetere in Val Fortore",
    "pubblicato": "2026-10-30",
    "stato": "ufficiale",
    "rilevante": false,
@@ -312,21 +633,55 @@
      "nome": "Comune di Guardia Sanframondi",
      "url": "https://www.comune.guardiasanframondi.bn.it/novita/avvisi/novita_207.html",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di San Salvatore Telesino",
+     "url": "https://comune.sansalvatoretelesino.bn.it/novita/istituzione-dellelenco-comunale-degli-elettori-fuori-sede-per-lesercizio-del-diritto-di-voto-da-parte-degli-elettori-fuori-sede-in-occasione-delle-elezioni-politiche-ed-europee-e-dei-referendum/",
+     "ufficiale": true
+    },
+    {
+     "nome": "Comune di San Giorgio del Sannio",
+     "url": "https://www.comune.sangiorgiodelsannio.bn.it/novita/avvisi/novita_167.html",
+     "ufficiale": true
+    },
+    {
+     "nome": "Comune di Castelvetere in Val Fortore",
+     "url": "https://www.comune.castelvetereinvalfortore.bn.it/novita/notizie/novita_110.html",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Il Comune di Guardia Sanframondi ha istituito l'elenco comunale degli elettori fuori sede: serve a chi, alle elezioni politiche ed europee e ai referendum, vuole votare nel posto in cui si trova per studio, lavoro o cure, invece di tornare in paese.",
+      "testo": "Anche San Salvatore Telesino, San Giorgio del Sannio e Castelvetere in Val Fortore, oltre a Guardia Sanframondi, hanno aperto l'elenco comunale degli elettori fuori sede: serve a chi, alle elezioni politiche ed europee e ai referendum, vuole votare nel posto in cui si trova per studio, lavoro o cure, invece di tornare in paese. Non vale per le elezioni comunali e regionali.",
       "fonti": [
-       "Comune di Guardia Sanframondi"
-      ]
+       "Comune di Guardia Sanframondi",
+       "Comune di San Salvatore Telesino",
+       "Comune di San Giorgio del Sannio",
+       "Comune di Castelvetere in Val Fortore"
+      ],
+      "giorno": "2026-10-30"
      },
      {
-      "testo": "Nell'avviso del Comune si trovano la nota della Prefettura del 23 ottobre sull'elenco e il modulo della domanda di iscrizione. Per informazioni ci si rivolge all'ufficio Segreteria e Affari generali del Comune.",
+      "testo": "Possono iscriversi gli elettori che per studio o lavoro vivono per almeno nove mesi in un'altra regione, chi si cura per almeno tre mesi in un ospedale o in una struttura di un'altra regione e chi assiste un familiare in quella situazione. L'iscrizione vale un anno. Chi studia o lavora fuori regione già adesso deve fare la domanda entro il 31 dicembre, per votare fuori sede l'anno dopo; chi parte dopo il 31 dicembre entro 30 giorni e comunque non oltre il 45° giorno prima del voto; per i motivi di cura non oltre il 45° giorno prima del voto.",
+      "fonti": [
+       "Comune di San Salvatore Telesino"
+      ],
+      "giorno": "2026-10-30"
+     },
+     {
+      "testo": "A San Salvatore Telesino la domanda si fa solo col modulo del Comune e si manda per email a info@comunesansalvatoretelesino.eu, con i documenti e la copia di un documento d'identità, oppure si porta all'Ufficio protocollo in via Gioia 1.",
+      "fonti": [
+       "Comune di San Salvatore Telesino"
+      ],
+      "giorno": "2026-10-30"
+     },
+     {
+      "testo": "A Guardia Sanframondi nell'avviso del Comune si trovano la nota della Prefettura del 23 ottobre sull'elenco e il modulo della domanda di iscrizione; per informazioni c'è l'ufficio Segreteria e Affari generali del Comune.",
       "fonti": [
        "Comune di Guardia Sanframondi"
-      ]
+      ],
+      "giorno": "2026-10-30"
      }
     ],
     "cronologia": [],
@@ -340,8 +695,39 @@
       "url": "https://www.comune.guardiasanframondi.bn.it/novita/avvisi/novita_207.html",
       "data": "30 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "Comune di San Salvatore Telesino",
+      "titolo": "Istituzione dell’elenco comunale degli elettori fuori sede per l’esercizio del diritto di voto da parte degli elettori fuori sede in occasione delle elezioni politiche ed europee e dei referendum",
+      "url": "https://comune.sansalvatoretelesino.bn.it/novita/istituzione-dellelenco-comunale-degli-elettori-fuori-sede-per-lesercizio-del-diritto-di-voto-da-parte-degli-elettori-fuori-sede-in-occasione-delle-elezioni-politiche-ed-europee-e-dei-referendum/",
+      "data": "30 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "Comune di San Giorgio del Sannio",
+      "titolo": "ISTITUZIONE DELL'ELENCO COMUNALE DEGLI ELETTORI FUORI SEDE",
+      "url": "https://www.comune.sangiorgiodelsannio.bn.it/novita/avvisi/novita_167.html",
+      "data": "29 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "Comune di Castelvetere in Val Fortore",
+      "titolo": "ISTITUZIONE ELENCO COMUNALE DEGLI ELETTORI FUORI SEDE",
+      "url": "https://www.comune.castelvetereinvalfortore.bn.it/novita/notizie/novita_110.html",
+      "data": "29 ott",
+      "ufficiale": true
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Anche San Salvatore Telesino, San Giorgio del Sannio e Castelvetere in Val Fortore hanno aperto l'elenco degli elettori fuori sede; chi studia o lavora già fuori regione fa la domanda entro il 31 dicembre.",
+     "fonti": [
+      "Comune di San Salvatore Telesino",
+      "Comune di San Giorgio del Sannio",
+      "Comune di Castelvetere in Val Fortore"
+     ],
+     "quando": "2026-10-30T13:07+01:00",
+     "titolo_prima": "Guardia Sanframondi, aperto l'elenco comunale degli elettori fuori sede: sul sito del Comune la domanda di iscrizione"
+    }
    },
    "zona": "telesina",
    "foto": "elezioni"
@@ -4071,9 +4457,9 @@
   },
   {
    "id": "benevento-corteo-usb-30-ottobre-strade-chiuse-centro",
-   "titolo": "Benevento, venerdì 30 ottobre corteo dell'USB in centro: strade chiuse al passaggio da piazza Colonna a piazza Risorgimento",
-   "titolo_google": "Corteo USB a Benevento 30 ottobre: strade chiuse in centro",
-   "sintesi": "Venerdì 30 ottobre, dalle 9:30, nel centro di Benevento passa il corteo di protesta del sindacato USB: piazza Colonna, viale Principe di Napoli, corso Vittorio Emanuele, piazza Orsini, corso Garibaldi, via Perasso e piazza Risorgimento si chiudono al traffico per il tempo del passaggio. Il bus urbano 16-UB non passa per corso Garibaldi.",
+   "titolo": "Benevento, il corteo dell'USB contro carovita e riarmo sfila da piazza Colonna a corso Garibaldi",
+   "titolo_google": "Corteo USB a Benevento 30 ottobre: carovita e riarmo",
+   "sintesi": "Venerdì 30 ottobre studenti, lavoratori e attivisti hanno sfilato nel centro di Benevento per lo sciopero generale dell'USB contro carovita e spese militari, da piazza Colonna a corso Garibaldi con una sosta davanti alla Prefettura. Le strade del percorso sono state chiuse al traffico al passaggio del corteo.",
    "categoria": "strade",
    "luogo": "Benevento, centro",
    "pubblicato": "2026-10-29",
@@ -4102,10 +4488,40 @@
      "nome": "AIR Campania",
      "url": "https://aircampania.it/benevento-linea-urbana-16-ub-modifiche-temporanee/",
      "ufficiale": true
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/30/benevento-corteo-contro-guerra-e-carovita-studenti-e-sindacati-in-strada-per-salari-diritti-e-pace/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/442593/a-benevento-protesta-di-usb-e-studenti-contro-caro-vita-e-governo-video.shtml"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Venerdì mattina il corteo è partito da piazza Colonna, davanti alla stazione centrale, nel rione Ferrovia, e ha attraversato la città lungo viale Principe di Napoli e corso Garibaldi, con una sosta davanti alla Prefettura, dove i manifestanti hanno chiesto un nuovo incontro con il prefetto. L'arrivo era previsto in piazza Risorgimento. In strada c'erano lavoratori, studenti e attivisti, per lo sciopero generale proclamato dall'USB con altri sindacati di base.",
+      "fonti": [
+       "NTR24",
+       "Ottopagine"
+      ],
+      "giorno": "2026-10-30"
+     },
+     {
+      "testo": "Giovanni Venditti, segretario provinciale dell'USB, ha chiesto che i soldi spesi per il riarmo vadano a sanità, trasporti, welfare e stipendi. Ha parlato anche di due questioni di Benevento: l'aumento dei parcheggi a pagamento con le strisce blu e i ticket sanitari chiesti ai cittadini per prestazioni del 2020-2021 che, secondo i manifestanti, non sarebbero mai state fatte. Al corteo c'era anche il movimento Global Movement to Gaza, con Floriana Fragnito, che ha chiesto di fermare il sostegno militare a Israele.",
+      "fonti": [
+       "NTR24"
+      ],
+      "giorno": "2026-10-30"
+     },
+     {
+      "testo": "Tra i manifestanti c'erano anche esponenti del Pd e di Avs, tra cui Rosa Razzano, Giovanna Megna e Annamaria Mollica, e l'ex parlamentare Francesco Caruso.",
+      "fonti": [
+       "Ottopagine"
+      ],
+      "giorno": "2026-10-30"
+     },
      {
       "testo": "Venerdì 30 ottobre, dalle 9:30 del mattino, nel centro di Benevento sfila il corteo di protesta organizzato dall'USB di Benevento, l'Unione sindacale di base. Al suo passaggio si fermano le auto: il Servizio Traffico del Comune ha sospeso la circolazione, solo per il tempo che serve, in piazza Colonna, viale Principe di Napoli, corso Vittorio Emanuele, piazza Orsini, nell'area pedonale di corso Garibaldi, in via Perasso e in piazza Risorgimento. È l'ordinanza numero 459 del 29 ottobre.",
       "fonti": [
@@ -4136,11 +4552,35 @@
       "giorno": "2026-10-27"
      }
     ],
-    "cronologia": [],
-    "concordano": [],
+    "cronologia": [
+     {
+      "data": "29 ottobre",
+      "fatto": "Il Comune chiude al traffico, al passaggio del corteo, le strade da piazza Colonna a piazza Risorgimento.",
+      "fonti": [
+       "Comune di Benevento, albo pretorio"
+      ]
+     },
+     {
+      "data": "30 ottobre, mattina",
+      "fatto": "Il corteo parte da piazza Colonna e sfila fino a corso Garibaldi, con una sosta davanti alla Prefettura.",
+      "fonti": [
+       "NTR24",
+       "Ottopagine"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Il corteo è partito dalla zona della stazione centrale, in piazza Colonna, la mattina del 30 ottobre, con studenti e USB.",
+      "fonti": [
+       "NTR24",
+       "Ottopagine"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [
-     "Il punto di partenza del corteo e quanto durerà: l'ordinanza dice solo le strade attraversate e l'ora di inizio."
+     "Quante persone hanno partecipato al corteo."
     ],
     "fonti": [
      {
@@ -4168,14 +4608,28 @@
       "url": "https://aircampania.it/benevento-linea-urbana-16-ub-modifiche-temporanee/",
       "data": "29 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Benevento, corteo contro guerra e carovita: studenti e sindacati in strada per salari, diritti e pace",
+      "url": "https://www.ntr24.tv/2026/10/30/benevento-corteo-contro-guerra-e-carovita-studenti-e-sindacati-in-strada-per-salari-diritti-e-pace/",
+      "data": "30 ott, 12:32"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "A Benevento protesta di Usb e studenti contro caro vita e Governo - VIDEO",
+      "url": "https://www.ottopagine.it/bn/cronaca/442593/a-benevento-protesta-di-usb-e-studenti-contro-caro-vita-e-governo-video.shtml",
+      "data": "30 ott, 12:07"
      }
     ],
     "aggiornamento": {
-     "testo": "Venerdì 30 ottobre la linea urbana 16-UB di AIR Campania non passa per l'area pedonale di corso Garibaldi; ritardi possibili sulle altre linee urbane di Benevento.",
+     "testo": "Venerdì mattina il corteo dell'USB, con studenti e lavoratori, è partito da piazza Colonna e ha attraversato il centro fino a corso Garibaldi, con una sosta davanti alla Prefettura.",
      "fonti": [
-      "AIR Campania"
+      "NTR24",
+      "Ottopagine"
      ],
-     "quando": "2026-10-29T15:30+01:00"
+     "quando": "2026-10-30T13:07+01:00",
+     "titolo_prima": "Benevento, venerdì 30 ottobre corteo dell'USB in centro: strade chiuse al passaggio da piazza Colonna a piazza Risorgimento"
     }
    },
    "zona": "benevento",
@@ -17185,7 +17639,7 @@
    "titolo_google": "Sfiducia a Mastella a Benevento: a che punto è la mozione",
    "sommario": "Il 22 ottobre l'opposizione del Consiglio comunale di Benevento ha presentato una mozione di sfiducia contro il sindaco Clemente Mastella e la Giunta, con un dossier di 24 punti che parte dall'inchiesta giudiziaria sul Comune. Domenica 25 ha sfilato in corteo fino alla Prefettura. Il sindaco dice che non si dimette e la maggioranza parla di poche centinaia di persone in piazza. La data del voto in Consiglio non è ancora stata fissata.",
    "luogo": "Benevento",
-   "aggiornato": "2026-10-28T20:06:00+01:00",
+   "aggiornato": "2026-10-30T13:00+01:00",
    "collegate": [
     "benevento-opposizione-mozione-sfiducia-mastella"
    ],
@@ -17317,6 +17771,16 @@
        "fonti": [
         "Lab TV (28/10)"
        ]
+      },
+      {
+       "testo": "L'incontro che Umberto Del Basso De Caro e Pasquale Viespoli, tutti e due ex sottosegretari, hanno fissato per sabato 31 ottobre alle 10:30 nella Sala Vergineo del Museo del Sannio, con l'associazione «Cittadino Sudd», ha già fatto discutere. Parleranno dell'inchiesta sul Comune, del declino economico della città e di come uscirne. Per Ambner De Iapinis, ex amministratore comunale, chi ha avuto ruoli di primo piano per decenni non può disegnare il futuro della città. La consigliera di opposizione Rosetta De Stasio dice che «il passato non può truccarsi da futuro» e mette nello stesso giudizio il sindaco Mastella, Del Basso De Caro, Viespoli e una parte dell'opposizione.",
+       "fonti": [
+        "Il Sannio Quotidiano (30/10)",
+        "InfoSannio (30/10)",
+        "Lab TV (29/10, De Iapinis)",
+        "NTR24 (30/10, De Stasio)",
+        "Cronache del Sannio (30/10, De Stasio)"
+       ]
       }
      ]
     },
@@ -17417,6 +17881,29 @@
       "NTR24 (28/10, opposizione)",
       "Cronache del Sannio (28/10, opposizione)"
      ]
+    },
+    {
+     "data": "29 ottobre",
+     "fatto": "Ambner De Iapinis, ex amministratore comunale, attacca Viespoli e Del Basso De Caro: «Benevento non ha bisogno di essere disegnata da loro».",
+     "fonti": [
+      "Lab TV (29/10, De Iapinis)"
+     ]
+    },
+    {
+     "data": "30 ottobre",
+     "fatto": "La consigliera di opposizione Rosetta De Stasio: «il passato non può truccarsi da futuro».",
+     "fonti": [
+      "NTR24 (30/10, De Stasio)",
+      "Cronache del Sannio (30/10, De Stasio)"
+     ]
+    },
+    {
+     "data": "31 ottobre, 10:30",
+     "fatto": "Incontro pubblico «Invertire il declino. Riflessioni sulla città» con Del Basso De Caro e Viespoli nella Sala Vergineo del Museo del Sannio; alle 10 una conferenza stampa di Forza Italia.",
+     "fonti": [
+      "Il Sannio Quotidiano (30/10)",
+      "InfoSannio (30/10)"
+     ]
     }
    ],
    "non_si_sa": [
@@ -17501,6 +17988,36 @@
      "titolo": "L’opposizione: “La protesta dei cittadini ha lasciato il segno”",
      "url": "https://www.cronachedelsannio.it/sannionews24/lopposizione-la-protesta-dei-cittadini-ha-lasciato-segno/",
      "data": "28 ott, 20:00"
+    },
+    {
+     "nome": "Lab TV (29/10, De Iapinis)",
+     "titolo": "Benevento, il futuro disegnato dal passato? Ambner De Iapinis attacca Viespoli e Del Basso De Caro",
+     "url": "https://www.labtv.net/politica/2026/10/29/benevento-il-futuro-disegnato-dal-passato-ambner-de-iapinis-attacca-viespoli-e-del-basso-de-caro/",
+     "data": "29 ott, 11:51"
+    },
+    {
+     "nome": "NTR24 (30/10, De Stasio)",
+     "titolo": "Anche la De Stasio attacca Del Basso De Caro e Viespoli: ‘Il passato non può truccarsi da futuro’",
+     "url": "https://www.ntr24.tv/2026/10/30/anche-la-de-stasio-attacca-del-basso-de-caro-e-viespoli-il-passato-non-puo-truccarsi-da-futuro/",
+     "data": "30 ott, 12:09"
+    },
+    {
+     "nome": "Cronache del Sannio (30/10, De Stasio)",
+     "titolo": "Comunali a Benevento, De Stasio: “Il passato non può truccarsi da futuro”",
+     "url": "https://www.cronachedelsannio.it/sannionews24/comunali-benevento-destasio-passato-truccarsi-futuro/",
+     "data": "30 ott, 11:58"
+    },
+    {
+     "nome": "Il Sannio Quotidiano (30/10)",
+     "titolo": "Viespoli-Del Basso De Caro e Martusciello-Rubano, domani conferenze stampa quasi in contemporanea",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/30/viespoli-del-basso-de-caro-e-martusciello-rubano-domani-conferenze-stampa-quasi-in-contemporanea/",
+     "data": "30 ott, 07:41"
+    },
+    {
+     "nome": "InfoSannio (30/10)",
+     "titolo": "Invertire il Declino.Riflessioni sulla città.Domani 31 ottobre, a Benevento incontro pubblico",
+     "url": "https://www.infosannionews.it/politica/2026/invertire-il-declino-riflessioni-sulla-citta-domani-31-ottobre-a-benevento-incontro-pubblico.html",
+     "data": "30 ott, 12:09"
     }
    ],
    "scena": "The council chamber of the city hall of Benevento during a tense evening session: councillors seated at curved wooden benches with microphones, some standing and arguing with papers in hand, citizens crowding the public gallery, warm light from old chandeliers, a sense of political confrontation"
