@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-30T08:20+01:00",
+ "aggiornato": "2026-10-30T09:05+01:00",
  "giornali_letti": 14,
  "notizie": [
   {
@@ -73,6 +73,14 @@
      "nome": "Comune di Benevento",
      "url": "https://www.comune.benevento.it/",
      "ufficiale": true
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/30/inchiesta-comune-lamministrazione-risponde-su-dirigenti-e-dipendenti-coinvolti-procedimenti-disciplinari-in-corso-verifiche-su-atti-dal-2022-ad-oggi/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/interrogazione-su-dirigenti-e-funzionari-indagati-mastella-e-de-pierro-rispondono/"
     }
    ],
    "comunicati": [
@@ -83,37 +91,49 @@
      {
       "testo": "Il Comune di Benevento ha spiegato cosa ha fatto per i dirigenti e i dipendenti finiti sotto indagine. Il sindaco Clemente Mastella e il vicesindaco Francesco De Pierro, che ha la delega all'Anticorruzione, hanno risposto per iscritto all'interrogazione di alcuni consiglieri di opposizione, protocollata il primo ottobre 2026. La risposta è arrivata entro i 30 giorni previsti dal regolamento del Consiglio comunale e il Comune l'ha resa nota il 29 ottobre.",
       "fonti": [
-       "Comune di Benevento"
+       "Comune di Benevento",
+       "NTR24",
+       "Anteprima24"
       ]
      },
      {
       "testo": "L'amministrazione premette «il rispetto della presunzione di innocenza delle persone sottoposte a indagini». Il Comune ha saputo ufficialmente delle accuse penali il 29 settembre 2026. Da lì, sulla base di una prima verifica del responsabile comunale della prevenzione della corruzione, ha applicato le regole anticorruzione del PIAO 2026-2028 (il Piano integrato di attività e organizzazione del Comune) e la delibera n. 215 del 2019 dell'ANAC, l'Autorità nazionale anticorruzione.",
       "fonti": [
-       "Comune di Benevento"
+       "Comune di Benevento",
+       "NTR24",
+       "Anteprima24"
       ]
      },
      {
       "testo": "Con il decreto del sindaco n. 57 del 6 ottobre il dirigente del settore Ambiente, Mobilità, Servizi cimiteriali e Patrimonio ha perso quell'incarico: dal 7 ottobre guida servizi meno esposti al rischio nel I Settore. Con il decreto n. 58, sempre del 6 ottobre, alla dirigente già spostata nel 2026 dal settore Urbanistica è stata tolta la guida ad interim del I Settore; resta alla direzione del VII Settore, anche qui dal 7 ottobre. Il settore Ambiente, Mobilità, Servizi cimiteriali e Patrimonio è passato ad interim al dirigente del V Settore, con il decreto n. 59 del 6 ottobre.",
       "fonti": [
-       "Comune di Benevento"
+       "Comune di Benevento",
+       "NTR24",
+       "Anteprima24"
       ]
      },
      {
       "testo": "A tutti e due i dirigenti sono state tolte le attività a rischio: contratti, pagamenti, autorizzazioni e concessioni con valore economico, contributi e incarichi esterni. Ora se ne occupano i funzionari con incarico di Elevata Qualificazione dei rispettivi settori. Per la funzionaria che aveva già un incarico di Elevata Qualificazione e lavorava già fuori dall'Urbanistica, la misura già presa è stata confermata. Due dipendenti del II Settore, infine, sono stati spostati in un altro servizio con mansioni diverse, con due provvedimenti di rotazione straordinaria del 9 ottobre.",
       "fonti": [
-       "Comune di Benevento"
+       "Comune di Benevento",
+       "NTR24",
+       "Anteprima24"
       ]
      },
      {
       "testo": "Il Comune precisa che queste misure servono a prevenire e non a punire. I procedimenti disciplinari finora non sono partiti, spiega l'amministrazione, perché al protocollo del Comune non era mai arrivato alcun atto ufficiale, nonostante le richieste. La Procura ha risposto solo il 28 ottobre 2026, con una nota e parte dei documenti: ora i procedimenti disciplinari si stanno avviando. Per la sospensione obbligatoria dal servizio, aggiunge il Comune, oggi mancano le condizioni previste dai contratti di lavoro, che chiedono misure che limitano la libertà personale, e quelle degli articoli 3 e 4 della legge n. 97 del 2001; ogni posizione sarà rivalutata a ogni novità dei procedimenti penali.",
       "fonti": [
-       "Comune di Benevento"
+       "Comune di Benevento",
+       "NTR24",
+       "Anteprima24"
       ]
      },
      {
       "testo": "Adesso il segretario generale del Comune avvierà una verifica straordinaria sugli atti adottati dal 1° gennaio 2022 nei confronti delle imprese, dei professionisti e degli enti nominati nei procedimenti penali che il Comune conosce, nell'ambito dei controlli di regolarità sugli atti già fatti. I risultati andranno al Consiglio comunale. Il Comune sta avvisando anche le autorità che gestiscono i programmi europei interessati, metterà le misure nel prossimo PIAO 2027-2029 e valuterà se chiedere all'ANAC di affiancarlo nel controllo degli appalti più delicati. Nel procedimento penale il Comune è persona offesa e tutelerà le sue ragioni. L'amministrazione dice di avere «piena fiducia nella generalità del personale» e che i servizi vanno avanti grazie agli incarichi ad interim e alle deleghe ai funzionari.",
       "fonti": [
-       "Comune di Benevento"
+       "Comune di Benevento",
+       "NTR24",
+       "Anteprima24"
       ]
      }
     ],
@@ -162,7 +182,16 @@
       ]
      }
     ],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "I decreti del 6 ottobre su due dirigenti, i due dipendenti del II Settore spostati il 9 ottobre, la nota della Procura del 28 ottobre e la verifica degli atti dal 1° gennaio 2022.",
+      "fonti": [
+       "Comune di Benevento",
+       "NTR24",
+       "Anteprima24"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [],
     "fonti": [
@@ -172,6 +201,18 @@
       "url": "https://www.comune.benevento.it/",
       "data": "30 ott, 08:30",
       "ufficiale": true
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Inchiesta Comune, l’amministrazione risponde su dirigenti e dipendenti coinvolti: procedimenti disciplinari in corso, verifiche su atti dal 2022 ad oggi",
+      "url": "https://www.ntr24.tv/2026/10/30/inchiesta-comune-lamministrazione-risponde-su-dirigenti-e-dipendenti-coinvolti-procedimenti-disciplinari-in-corso-verifiche-su-atti-dal-2022-ad-oggi/",
+      "data": "30 ott, 08:48"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Interrogazione su dirigenti e funzionari indagati: Mastella e De Pierro rispondono",
+      "url": "https://www.anteprima24.it/benevento/interrogazione-su-dirigenti-e-funzionari-indagati-mastella-e-de-pierro-rispondono/",
+      "data": "30 ott, 08:50"
      }
     ]
    },
@@ -879,6 +920,10 @@
     {
      "nome": "Gazzetta di Benevento",
      "url": "https://www.gazzettabenevento.it/it/cambio-al-vertice-del-gruppo-di-azione-locale-taburno-consorzio"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/30/gal-taburno-consorzio-rinnovati-la-presidenza-e-il-consiglio-di-amministrazione/"
     }
    ],
    "articolo": {
@@ -890,7 +935,8 @@
        "Anteprima24",
        "Lab TV",
        "Cronache del Sannio",
-       "Gazzetta di Benevento"
+       "Gazzetta di Benevento",
+       "BeneventoNews24"
       ]
      },
      {
@@ -898,7 +944,8 @@
       "fonti": [
        "NTR24",
        "Anteprima24",
-       "Lab TV"
+       "Lab TV",
+       "BeneventoNews24"
       ]
      },
      {
@@ -906,7 +953,8 @@
       "fonti": [
        "Lab TV",
        "NTR24",
-       "Anteprima24"
+       "Anteprima24",
+       "BeneventoNews24"
       ]
      },
      {
@@ -961,6 +1009,12 @@
       "titolo": "Cambio al vertice del Gruppo di Azione Locale Taburno Consorzio",
       "url": "https://www.gazzettabenevento.it/it/cambio-al-vertice-del-gruppo-di-azione-locale-taburno-consorzio",
       "data": "29 ott, 18:52"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "GAL Taburno Consorzio, rinnovati la Presidenza e il Consiglio di amministrazione",
+      "url": "https://www.beneventonews24.it/2026/10/30/gal-taburno-consorzio-rinnovati-la-presidenza-e-il-consiglio-di-amministrazione/",
+      "data": "30 ott, 09:00"
      }
     ]
    },
@@ -5193,6 +5247,10 @@
     {
      "nome": "Ottopagine",
      "url": "https://www.ottopagine.it/bn/attualita/442470/sviluppo-manifesto-programmatico-di-confindustria-benevento-e-caserta-video.shtml"
+    },
+    {
+     "nome": "Matese News",
+     "url": "https://www.matesenews.it/faiccgio-un-manifesto-programmatico-per-lo-sviluppo-delle-valli-telesina-e-del-volturno-patto-tra-industriali-sanniti-e-casertani/"
     }
    ],
    "articolo": {
@@ -5211,7 +5269,8 @@
        "TV7 Benevento",
        "BeneventoNews24",
        "NTR24",
-       "Ottopagine"
+       "Ottopagine",
+       "Matese News"
       ]
      },
      {
@@ -5226,7 +5285,8 @@
       "testo": "«Non vogliamo che una parte del territorio trovi nell'altra un alibi per non fare qualcosa», ha detto il presidente di Confindustria Benevento, Andrea Esposito. Luigi Della Gatta, presidente di Confindustria Caserta, ha parlato di un unico polo industriale tra le due province. Per Flavian Basile, presidente dell'ANCE Benevento (i costruttori), oltre alle grandi opere servono soldi per le strade comunali che portano ai borghi. Il presidente della Provincia e sindaco di Faicchio, Nino Lombardi, ha detto che le nuove infrastrutture devono far fermare i visitatori, non solo farli passare.",
       "fonti": [
        "NTR24",
-       "Anteprima24"
+       "Anteprima24",
+       "Matese News"
       ]
      },
      {
@@ -5292,6 +5352,12 @@
       "titolo": "Sviluppo. Manifesto programmatico di Confindustria Benevento e Caserta - VIDEO",
       "url": "https://www.ottopagine.it/bn/attualita/442470/sviluppo-manifesto-programmatico-di-confindustria-benevento-e-caserta-video.shtml",
       "data": "28 ott, 20:21"
+     },
+     {
+      "nome": "Matese News",
+      "titolo": "Faicchio. Manifesto programmatico per lo sviluppo delle valli Telesina e Volturno: patto tra industriali sanniti e casertani.",
+      "url": "https://www.matesenews.it/faiccgio-un-manifesto-programmatico-per-lo-sviluppo-delle-valli-telesina-e-del-volturno-patto-tra-industriali-sanniti-e-casertani/",
+      "data": "30 ott, 08:39"
      }
     ]
    },
@@ -14912,11 +14978,12 @@
    "titolo_google": "Inchiesta Santamaria a Benevento: accuse, indagati e udienze",
    "sommario": "Il 30 marzo i carabinieri hanno arrestato Gennaro Santamaria, allora dirigente del Comune di Benevento, mentre secondo l'accusa riceveva 4mila euro da un professionista. Dalle sue dichiarazioni ai magistrati è nata un'inchiesta più grande: 19 indagati, tra cui il presidente del Consiglio comunale e due sindaci della provincia, per ipotesi che vanno dalla concussione alla corruzione e al finanziamento illecito ai partiti. Il sindaco Clemente Mastella non è indagato. Dal 3 novembre Santamaria sarà esaminato davanti alla gip sulle sue dichiarazioni, e il 4 novembre la Procura affida la copia dei dati dei telefoni sequestrati.",
    "luogo": "Benevento",
-   "aggiornato": "2026-10-28T15:30+01:00",
+   "aggiornato": "2026-10-30T09:00+01:00",
    "scena": "A single continuous photograph, not a split image: night inside a prosecutor's office in Benevento. On a wooden desk in the foreground, thick paper case files tied with string, several smartphones, a tablet and a laptop sealed in transparent evidence bags with blank paper tags, a cable running to a forensic data-copy device under a desk lamp; through the large window behind the desk, the lit stone facade of the old town hall across a dark square. No people, no readable text",
    "collegate": [
     "benevento-inchiesta-comune-copia-telefoni-indagati-4-novembre",
-    "benevento-inchiesta-comune-incidente-probatorio-3-novembre"
+    "benevento-inchiesta-comune-incidente-probatorio-3-novembre",
+    "benevento-comune-dirigenti-indagati-rotazioni-disciplinari-controlli-atti"
    ],
    "in_breve": [
     {
@@ -14947,6 +15014,14 @@
      "fonti": [
       "NTR24 (04/10)",
       "Il Mattino (26/09)"
+     ]
+    },
+    {
+     "testo": "Il 29 ottobre il sindaco e il vicesindaco hanno risposto all'opposizione: dal 7 ottobre due dirigenti indagati hanno perso incarichi e le attività a rischio, due dipendenti sono stati spostati; i procedimenti disciplinari partono ora, dopo gli atti arrivati dalla Procura il 28 ottobre, e il segretario generale ricontrollerà gli atti dal 2022.",
+     "fonti": [
+      "Comune di Benevento (30/10)",
+      "NTR24 (30/10)",
+      "Anteprima24 (30/10)"
      ]
     },
     {
@@ -15239,6 +15314,22 @@
         "Lab TV (26/09)",
         "Il Sannio Quotidiano (27/09)",
         "Il Mattino (26/09)"
+       ]
+      },
+      {
+       "testo": "Il 29 ottobre Mastella e De Pierro hanno risposto per iscritto all'interrogazione dell'opposizione del 1° ottobre. Il Comune dice di aver saputo ufficialmente delle accuse il 29 settembre. Con i decreti del 6 ottobre il dirigente del settore Ambiente, Mobilità, Servizi cimiteriali e Patrimonio ha perso quell'incarico e la dirigente arrivata dall'Urbanistica ha perso la guida ad interim del I Settore; a tutti e due sono stati tolti contratti, pagamenti, autorizzazioni, contributi e incarichi esterni. Il 9 ottobre due dipendenti del II Settore sono stati spostati ad altro servizio; per la funzionaria, già trasferita, la misura è rimasta quella di prima.",
+       "fonti": [
+        "Comune di Benevento (30/10)",
+        "NTR24 (30/10)",
+        "Anteprima24 (30/10)"
+       ]
+      },
+      {
+       "testo": "I procedimenti disciplinari, spiega il Comune, non erano partiti perché al protocollo non era mai arrivato nessun atto ufficiale: la Procura ha mandato una parte dei documenti il 28 ottobre e ora si avviano. La sospensione dal servizio chiesta dall'opposizione, secondo il Comune, per ora non è prevista dalle regole, perché nessuno è sottoposto a misure che limitano la libertà personale; le posizioni saranno riviste a ogni sviluppo dell'inchiesta. Il segretario generale farà una verifica straordinaria degli atti adottati dal 1° gennaio 2022 verso le imprese, i professionisti e gli enti nominati nelle carte dell'inchiesta, e i risultati andranno al Consiglio comunale.",
+       "fonti": [
+        "Comune di Benevento (30/10)",
+        "NTR24 (30/10)",
+        "Anteprima24 (30/10)"
        ]
       }
      ]
@@ -15653,6 +15744,22 @@
      ]
     },
     {
+     "data": "28 ottobre",
+     "fatto": "La Procura manda al Comune una parte dei documenti sui dipendenti indagati.",
+     "fonti": [
+      "Comune di Benevento (30/10)"
+     ]
+    },
+    {
+     "data": "29 ottobre",
+     "fatto": "Mastella e De Pierro rispondono all'interrogazione: incarichi tolti a due dirigenti, procedimenti disciplinari in partenza, verifica degli atti dal 2022.",
+     "fonti": [
+      "Comune di Benevento (30/10)",
+      "NTR24 (30/10)",
+      "Anteprima24 (30/10)"
+     ]
+    },
+    {
      "data": "3 novembre, 13:00",
      "fatto": "Comincia l'incidente probatorio sulle dichiarazioni di Santamaria.",
      "fonti": [
@@ -15681,8 +15788,8 @@
    "non_si_sa": [
     "Se Santamaria confermerà tutte le sue dichiarazioni davanti agli avvocati degli altri indagati.",
     "Quando finiranno le indagini e se la Procura chiederà il processo per qualcuno degli indagati.",
-    "Se il Comune ha sospeso o spostato i dipendenti indagati dopo la richiesta del vicesindaco del 26 settembre.",
-    "Se la Procura aprirà un fascicolo sui 17 concorsi indicati nell'esposto dell'associazione."
+    "Se la Procura aprirà un fascicolo sui 17 concorsi indicati nell'esposto dell'associazione.",
+    "Quando arriveranno al Consiglio comunale i risultati della verifica sugli atti dal 2022."
    ],
    "fonti": [
     {
@@ -15996,6 +16103,25 @@
      "titolo": "Caso Santamaria: copia forense dei dispositivi di 16 indagati: incarico a Lorenzo Laurato il 4 novembre",
      "url": "https://www.labtv.net/cronaca/2026/10/28/caso-santamaria-copia-forense-dei-dispositivi-di-16-indagati-incarico-a-lorenzo-laurato-il-4-novembre/",
      "data": "28 ott, 12:31"
+    },
+    {
+     "nome": "Comune di Benevento (30/10)",
+     "titolo": "Interrogazione su dirigenti e funzionari sottoposti a indagini, la risposta dell'Amministrazione",
+     "url": "https://www.comune.benevento.it/",
+     "data": "30 ott, 08:30",
+     "ufficiale": true
+    },
+    {
+     "nome": "NTR24 (30/10)",
+     "titolo": "Inchiesta Comune, l’amministrazione risponde su dirigenti e dipendenti coinvolti: procedimenti disciplinari in corso, verifiche su atti dal 2022 ad oggi",
+     "url": "https://www.ntr24.tv/2026/10/30/inchiesta-comune-lamministrazione-risponde-su-dirigenti-e-dipendenti-coinvolti-procedimenti-disciplinari-in-corso-verifiche-su-atti-dal-2022-ad-oggi/",
+     "data": "30 ott, 08:48"
+    },
+    {
+     "nome": "Anteprima24 (30/10)",
+     "titolo": "Interrogazione su dirigenti e funzionari indagati: Mastella e De Pierro rispondono",
+     "url": "https://www.anteprima24.it/benevento/interrogazione-su-dirigenti-e-funzionari-indagati-mastella-e-de-pierro-rispondono/",
+     "data": "30 ott, 08:50"
     }
    ]
   },
