@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-30T13:00+01:00",
+ "aggiornato": "2026-10-30T16:00+01:00",
  "eventi": [
   {
    "id": "mostra-cosmogonie-meact-torrecuso-2026",
@@ -1059,14 +1059,19 @@
      "testo": "Sabato 31 ottobre, dalle 9, la Rocca dei Rettori di Benevento ospita la terza edizione di «Buoni da Morire. Incontri micologici alla Rocca»: una mostra dei funghi curata da esperti micologi e laboratori di approfondimento. L'iniziativa è fatta in collaborazione con Futuridea, Lerka Minerka e MicoNatura.",
      "fonti": [
       "BeneventoNews24",
-      "Cronache del Sannio"
+      "Cronache del Sannio",
+      "Lab TV",
+      "Benevento Giornale",
+      "Gazzetta di Benevento"
      ]
     },
     {
      "testo": "Alle 11, nella Sala del Consiglio provinciale, c'è un convegno sul valore dei funghi del Sannio e della loro varietà. Intervengono l'assessora regionale all'Agricoltura Maria Carmela Serluca, il presidente della Provincia Nino Lombardi, le dirigenti della Regione Flora Della Valle e Rosa Caterina Marmo, Francesco Nardone di Futuridea e Silvana Malva e Giulio Martino, autori del libro «I Funghi del Sannio»; modera il funzionario regionale Giuseppe Porcaro.",
      "fonti": [
       "BeneventoNews24",
-      "Cronache del Sannio"
+      "Cronache del Sannio",
+      "Lab TV",
+      "Benevento Giornale"
      ]
     }
    ],
@@ -1083,6 +1088,24 @@
      "titolo": "“Buoni da Morire”, alla Rocca dei Rettori la mostra dedicata ai funghi del Sannio",
      "url": "https://www.cronachedelsannio.it/sannionews24/buoni-morire-rocca-rettorri-mostra-dedicata-funghi-sannio/",
      "data": "30 ott, 11:08"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "titolo": "I funghi del Sannio protagonisti alla Rocca dei Rettori con la terza edizione di \"Buoni da Morire. Incontri micologici alla Rocca\"",
+     "url": "https://www.gazzettabenevento.it/it/i-funghi-del-sannio-protagonisti-alla-rocca-dei-rettori-con-la-terza-edizione-di-buoni-da-morire",
+     "data": "30 ott, 10:49"
+    },
+    {
+     "nome": "Lab TV",
+     "titolo": "Alla Rocca dei Rettori la terza edizione della mostra micologica dedicata ai funghi del Sannio",
+     "url": "https://www.labtv.net/attualita/2026/10/30/alla-rocca-dei-rettori-la-terza-edizione-della-mostra-micologica-dedicata-ai-funghi-del-sannio/",
+     "data": "30 ott, 12:21"
+    },
+    {
+     "nome": "Benevento Giornale",
+     "titolo": "Alla Rocca dei Rettori la terza edizione della mostra micologica dedicata ai funghi del Sannio",
+     "url": "https://www.beneventogiornale.com/2026/10/30/alla-rocca-dei-rettori-la-terza-edizione-della-mostra-micologica-dedicata-ai-funghi-del-sannio/",
+     "data": "30 ott, 15:55"
     }
    ],
    "foto": "funghi-5"
@@ -1480,6 +1503,46 @@
    "foto": "teatro-22"
   },
   {
+   "id": "il-potere-del-canto-nicola-sguera-telese-terme-2026",
+   "titolo": "«Il potere del canto» di Nicola Sguera alla Fondazione Gerardino Romano",
+   "tipo": "libro",
+   "inizio": "2026-11-04",
+   "ora": "18:30",
+   "luogo": "Fondazione Gerardino Romano, piazzetta G. Romano 15",
+   "comune": "Telese Terme",
+   "zona": "telesina",
+   "organizzatore": "Fondazione Gerardino Romano",
+   "artisti": [
+    "Nicola Sguera",
+    "Linda Ocone"
+   ],
+   "breve": "Presentazione del nuovo romanzo del docente e scrittore beneventano Nicola Sguera, con le letture della regista Linda Ocone.",
+   "descrizione": [
+    {
+     "testo": "Mercoledì 4 novembre alle 18:30 la Fondazione Gerardino Romano, nella sua sede di piazzetta G. Romano 15 a Telese Terme, presenta «Il potere del canto», l'ultimo romanzo di Nicola Sguera, uscito nel 2026 per Finalmente Libri. L'autore parla del libro con Felice Casucci, presidente della Fondazione; la regista e docente di teatro Linda Ocone legge alcune pagine.",
+     "fonti": [
+      "Benevento Giornale"
+     ]
+    },
+    {
+     "testo": "Il romanzo parla della forza della parola cantata e recitata, dagli aedi dell'antica Grecia a Dante e Leopardi; il titolo viene da un brano di Franco Battiato del 2001. Sguera, nato nel 1967, insegna storia e filosofia al liceo classico «Pietro Giannone» di Benevento ed è autore di saggi, poesie e romanzi, tra cui «Corpo a rendere», premiato da Agrorinasce, ed «Euthymios».",
+     "fonti": [
+      "Benevento Giornale"
+     ]
+    }
+   ],
+   "immagine": "libri",
+   "fonti": [
+    {
+     "nome": "Benevento Giornale",
+     "titolo": "Fondazione Gerardino Romano :Viaggio iniziatico nell’umanesimo di Nicola Sguera. Presentazione del romanzo «Il potere del canto»",
+     "url": "https://www.beneventogiornale.com/2026/10/30/fondazione-gerardino-romano-viaggio-iniziatico-nellumanesimo-di-nicola-sguera-presentazione-del-romanzo-il-potere-del-canto/",
+     "data": "30 ott, 15:42"
+    }
+   ],
+   "foto": "libri-7"
+  },
+  {
    "id": "cadeaux-al-castello-limatola-2026",
    "titolo": "«Cadeaux al Castello», i mercatini di Natale al Castello di Limatola",
    "tipo": "mercatino",
@@ -1767,7 +1830,8 @@
     {
      "testo": "La manifestazione è organizzata dall'associazione Immaginaria ETS con il patrocinio del Comune di Ceppaloni. Il percorso parte dal castello e arriva alla prima piazzetta di via Cortile, dove ci sono le casette del cibo di strada.",
      "fonti": [
-      "NTR24 (8/10)"
+      "NTR24 (8/10)",
+      "Benevento Giornale"
      ]
     },
     {
@@ -1835,6 +1899,12 @@
      "titolo": "A Ceppaloni il Natale diventa magia: torna \"Come d'Incanto\" al Castello medievale e nel borgo storico seconda Edizione",
      "url": "https://www.labtv.net/attualita/2026/10/30/a-ceppaloni-il-natale-diventa-magia-torna-come-dincanto-al-castello-medievale-e-nel-borgo-storico-seconda-edizione/",
      "data": "30 ott, 12:53"
+    },
+    {
+     "nome": "Benevento Giornale",
+     "titolo": "A Ceppaloni il Natale diventa magia: torna “Come d’Incanto” al Castello medievale e nel borgo storico – Seconda Edizione",
+     "url": "https://www.beneventogiornale.com/2026/10/30/a-ceppaloni-il-natale-diventa-magia-torna-come-dincanto-al-castello-medievale-e-nel-borgo-storico-seconda-edizione/",
+     "data": "30 ott, 15:49"
     }
    ],
    "immagine": "castello-natale",

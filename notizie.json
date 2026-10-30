@@ -1,7 +1,149 @@
 {
- "aggiornato": "2026-10-30T15:03+01:00",
+ "aggiornato": "2026-10-30T16:04+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-via-galanti-follerau-santa-colomba-sturzo-fibra-27-novembre",
+   "titolo": "Benevento, scavi per la fibra fino al 27 novembre: strada ristretta in via Galanti, via Follerau, via Cardone, via Santa Colomba e via Sturzo",
+   "titolo_google": "Benevento, fibra: via Galanti e via Sturzo ristrette al 27 novembre",
+   "sintesi": "Il Comune di Benevento ha firmato un'ordinanza per gli scavi della fibra ottica in via Galanti e traverse, via Follerau, via Cardone, via Santa Colomba e via Sturzo: fino a venerdì 27 novembre, dal lunedì al venerdì dalle 8 alle 17:30, strada più stretta, divieto di sosta e, se serve, senso unico alternato.",
+   "categoria": "strade",
+   "zona": "benevento",
+   "immagine": "lavori-stradali",
+   "luogo": "Benevento, via Galanti, via Follerau, via Cardone, via Santa Colomba e via Sturzo",
+   "pubblicato": "2026-10-30",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "in_vigore_fino": "2026-11-27",
+   "traffico": "ristretta",
+   "fonti": [
+    {
+     "nome": "Comune di Benevento (ordinanza 461)",
+     "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80241",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Benevento fino a venerdì 27 novembre si scava in alcune strade per allacciare nuovi utenti alla rete in fibra ottica: tratti di via Galanti e delle sue traverse, via Follerau, via Cardone, via Santa Colomba e via Sturzo. Le regole le ha fissate il Servizio Traffico del Comune con l'ordinanza 461 del 30 ottobre, pubblicata all'albo pretorio.",
+      "fonti": [
+       "Comune di Benevento (ordinanza 461)"
+      ]
+     },
+     {
+      "testo": "Il cantiere lavora solo dal lunedì al venerdì, dalle 8 alle 17:30, e si sposta un tratto alla volta. Dove ci sono gli operai la strada è più stretta e c'è il divieto di sosta e fermata con rimozione, se serve su tutti e due i lati. Solo quando è necessario il traffico passa a senso unico alternato, regolato da operai con la paletta o da semafori mobili.",
+      "fonti": [
+       "Comune di Benevento (ordinanza 461)"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di Benevento (ordinanza 461)",
+      "titolo": "Restringimento carreggiata, istituzione divieto di sosta e fermata, con rimozione coatta ed eventuale valenza ambo i lati, ed altresì, all'occorrenza, qualora necessario, contestuale senso unico alternato a mezzo movieri e / o impianti semaforici mobili, mediante attuazione graduale e progressiva nel periodo fino a Venerdì 27 Novembre 2026 in alcuni tratti di Via Galanti e relative traverse, Via Follerau, Via Cardone, Via Santa Colomba e Via Sturzo",
+      "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80241",
+      "data": "30 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "foto": "lavori-stradali-22"
+  },
+  {
+   "id": "benevento-liceo-artistico-virgilio-sfilata-costumi-halloween-2026",
+   "titolo": "Benevento, al Liceo artistico «Virgilio» la sfilata dei costumi di Halloween: premiati gli studenti",
+   "titolo_google": "Benevento, sfilata di Halloween al Liceo artistico Virgilio",
+   "sintesi": "Giovedì 29 ottobre al Liceo artistico «Virgilio» di Benevento le classi hanno sfilato con i costumi di Halloween fatti da loro, ispirati alle serie TV e ai film horror. Una giuria di docenti ha premiato i migliori.",
+   "categoria": "altro",
+   "zona": "benevento",
+   "immagine": "halloween",
+   "luogo": "Benevento, Liceo artistico «Virgilio»",
+   "pubblicato": "2026-10-30T15:42+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 1,
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/442615/liceo-artistico-virgilio-di-benevento-in-festa-per-halloween.shtml"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/30/benevento-il-liceo-artistico-virgilio-in-festa-per-halloween/"
+    },
+    {
+     "nome": "Benevento Giornale",
+     "url": "https://www.beneventogiornale.com/2026/10/30/liceo-artistico-virgilio-di-benevento-in-festa-per-halloween-la-creativita-degli-studenti-sfila-tra-icone-della-tv-e-atmosfere-horror/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Giovedì 29 ottobre il Liceo artistico «Virgilio» di Benevento ha fatto la sua sfilata dei costumi di Halloween, un appuntamento che la scuola ripete ogni anno. Il piano terra dell'istituto è diventato una passerella per le classi del biennio e del triennio.",
+      "fonti": [
+       "Ottopagine",
+       "BeneventoNews24",
+       "Benevento Giornale"
+      ]
+     },
+     {
+      "testo": "Ogni classe poteva portare al massimo tre costumi, preparati insieme in classe. Quest'anno gli studenti hanno scelto soprattutto personaggi delle serie TV e del mondo horror.",
+      "fonti": [
+       "Ottopagine",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "A giudicare c'era una giuria di docenti dei dipartimenti artistico e linguistico, che ha premiato gli alunni per l'abilità, la cura dei dettagli, l'originalità dei personaggi e la fattura dei costumi. La dirigenza e i professori dell'istituto si sono complimentati con i vincitori e con tutti i partecipanti.",
+      "fonti": [
+       "Ottopagine",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "La sfilata si è tenuta giovedì 29 ottobre al piano terra della scuola, con le classi del biennio e del triennio e una giuria di docenti.",
+      "fonti": [
+       "Ottopagine",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Quali classi e quali costumi hanno vinto."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Liceo Artistico \"Virgilio\" di Benevento in festa per Halloween",
+      "url": "https://www.ottopagine.it/bn/attualita/442615/liceo-artistico-virgilio-di-benevento-in-festa-per-halloween.shtml",
+      "data": "30 ott, 15:20"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Benevento, il Liceo Artistico ‘Virgilio’ in festa per Halloween",
+      "url": "https://www.beneventonews24.it/2026/10/30/benevento-il-liceo-artistico-virgilio-in-festa-per-halloween/",
+      "data": "30 ott, 14:58"
+     },
+     {
+      "nome": "Benevento Giornale",
+      "titolo": "Liceo Artistico “Virgilio” di Benevento in festa per Halloween: la creatività degli studenti sfila tra icone della TV e atmosfere horror",
+      "url": "https://www.beneventogiornale.com/2026/10/30/liceo-artistico-virgilio-di-benevento-in-festa-per-halloween-la-creativita-degli-studenti-sfila-tra-icone-della-tv-e-atmosfere-horror/",
+      "data": "30 ott, 15:42"
+     }
+    ]
+   },
+   "foto": "halloween-7"
+  },
   {
    "id": "sassinoro-via-fraterna-vietato-passaggio-pedoni-fabbricato-pericolante",
    "titolo": "Sassinoro, vietato il passaggio a piedi in un tratto di via Fraterna: cadono tegole e calcinacci da un edificio abbandonato",
@@ -268,6 +410,10 @@
     {
      "nome": "Lab TV",
      "url": "https://www.labtv.net/attualita/2026/10/30/conservatorio-nicola-sala-e-confindustria-benevento-unintesa-per-la-ricerca-linnovazione-e-lo-sviluppo-del-territorio/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/30/benevento-conservatorio-e-confindustria-hanno-sottoscritto-unintesa-ricerca-innovazione-e-sviluppo-del-territorio/"
     }
    ],
    "articolo": {
@@ -279,7 +425,8 @@
        "Cronache del Sannio",
        "Ottopagine",
        "InfoSannio",
-       "Lab TV"
+       "Lab TV",
+       "BeneventoNews24"
       ]
      },
      {
@@ -343,6 +490,12 @@
       "titolo": "Conservatorio “Nicola Sala” e Confindustria Benevento: un’intesa per la ricerca, l’innovazione e lo sviluppo del territorio",
       "url": "https://www.labtv.net/attualita/2026/10/30/conservatorio-nicola-sala-e-confindustria-benevento-unintesa-per-la-ricerca-linnovazione-e-lo-sviluppo-del-territorio/",
       "data": "30 ott, 13:06"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Benevento, Conservatorio e Confindustria hanno sottoscritto un’intesa: ricerca, innovazione e sviluppo del territorio",
+      "url": "https://www.beneventonews24.it/2026/10/30/benevento-conservatorio-e-confindustria-hanno-sottoscritto-unintesa-ricerca-innovazione-e-sviluppo-del-territorio/",
+      "data": "30 ott, 15:40"
      }
     ]
    },
@@ -488,6 +641,10 @@
     {
      "nome": "NTR24 Sport",
      "url": "https://sport.ntr24.tv/2026/10/30/cremonese-benevento-arbitra-marinelli-di-tivoli/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/30/cremonese-benevento-designato-larbitro-per-la-trasferta-di-sabato-allo-zini/"
     }
    ],
    "articolo": {
@@ -496,7 +653,8 @@
       "testo": "Cremonese-Benevento, partita della 10ª giornata del campionato di Serie BKT, sarà arbitrata da Livio Marinelli di Tivoli. Si gioca sabato 31 ottobre alle 15 allo stadio Giovanni Zini di Cremona.",
       "fonti": [
        "Benevento Calcio",
-       "NTR24 Sport"
+       "NTR24 Sport",
+       "BeneventoNews24"
       ]
      },
      {
@@ -531,6 +689,12 @@
       "titolo": "Cremonese-Benevento, arbitra Marinelli di Tivoli",
       "url": "https://sport.ntr24.tv/2026/10/30/cremonese-benevento-arbitra-marinelli-di-tivoli/",
       "data": "30 ott, 13:05"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Cremonese-Benevento, designato l’arbitro per la trasferta di sabato allo “Zini”",
+      "url": "https://www.beneventonews24.it/2026/10/30/cremonese-benevento-designato-larbitro-per-la-trasferta-di-sabato-allo-zini/",
+      "data": "30 ott, 15:01"
      }
     ]
    },
@@ -5139,6 +5303,10 @@
     {
      "nome": "Anteprima24",
      "url": "https://www.anteprima24.it/benevento/aree-interne-unisannio-documento/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/30/foto-e-video-summit-aree-interne-fico-bilancio-sinora-positivo-ma-ce-tanto-da-fare/"
     }
    ],
    "articolo": {
@@ -5148,7 +5316,8 @@
       "fonti": [
        "Ottopagine",
        "Lab TV",
-       "NTR24 (30/10)"
+       "NTR24 (30/10)",
+       "BeneventoNews24"
       ],
       "testo": "Venerdì 30 ottobre si è chiuso all'Università del Sannio, a Benevento, il Summit Aree Interne 2030, con la giornata conclusiva all'Auditorium Sant'Agostino e l'intervento del presidente della Regione Campania, Roberto Fico. Fico ha detto che le aree interne sono una priorità del suo programma e ha indicato sanità vicina a casa, trasporti e fondi europei come i fronti su cui la Regione lavora contro lo spopolamento dei paesi."
      },
@@ -5295,6 +5464,12 @@
       "nome": "Anteprima24",
       "titolo": "Fico all’Unisannio per le aree interne: confronto su acqua, sanità e trasporti",
       "url": "https://www.anteprima24.it/benevento/aree-interne-unisannio-documento/",
+      "data": "30 ott, 14:28"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "FOTO E VIDEO – Summit aree interne, Fico: “Bilancio sinora positivo ma c’è tanto da fare”",
+      "url": "https://www.beneventonews24.it/2026/10/30/foto-e-video-summit-aree-interne-fico-bilancio-sinora-positivo-ma-ce-tanto-da-fare/",
       "data": "30 ott, 14:28"
      }
     ],
