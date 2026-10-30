@@ -588,6 +588,64 @@ def avvisa_casa(problemi, adesso):
                         "\n\nIl registro è sul Pi: ~/nb-fonti/sentinella.log\n")
 
 
+WHATSAPP_MAX = 900    # caratteri per messaggio: il 27 ott 2026 uno da 1.173 è arrivato tagliato (CallMeBot taglia verso i 1000)
+WHATSAPP_PEZZI = 4    # al massimo, poi «continua nella mail»: mai una raffica
+
+
+def pezzi_whatsapp(testo, massimo=WHATSAPP_MAX):
+    """Il testo in pezzi da `massimo` caratteri al più, tagliati a fine riga (se no a uno spazio) e numerati «(1/2)»."""
+    testo = testo.strip()
+    if len(testo) <= massimo:
+        return [testo]
+    spazio = massimo - 8   # il posto per «(1/4) »
+    pezzi, resto = [], testo
+    while resto:
+        if len(resto) <= spazio:
+            pezzi.append(resto)
+            break
+        taglio = resto.rfind("\n", 0, spazio)
+        if taglio < spazio // 2:
+            taglio = resto.rfind(" ", 0, spazio)
+        if taglio < spazio // 2:
+            taglio = spazio
+        pezzi.append(resto[:taglio].rstrip())
+        resto = resto[taglio:].lstrip()
+    if len(pezzi) > WHATSAPP_PEZZI:
+        pezzi = pezzi[:WHATSAPP_PEZZI]
+        pezzi[-1] = pezzi[-1][:spazio - 25].rstrip() + " … (continua nella mail)"
+    return [f"({i}/{len(pezzi)}) {x}" for i, x in enumerate(pezzi, 1)]
+
+
+def manda_whatsapp(conf, testo):
+    """Il WhatsApp al proprietario, in pezzi se è lungo (pezzi_whatsapp): CallMeBot diretto se avvisi.conf ha
+    «callmebot», se no il servizio notify di Home Assistant. Restituisce l'esito per il registro; un pezzo che non parte
+    ferma i successivi."""
+    pezzi = pezzi_whatsapp(testo)
+    for n, pezzo in enumerate(pezzi):
+        if n:
+            time.sleep(4)   # in ordine, senza fretta
+        if conf.get("callmebot"):   # WhatsApp diretto a CallMeBot (solo testo)
+            cmb = conf["callmebot"]
+            url = CALLMEBOT + "?" + urllib.parse.urlencode({"phone": cmb["telefono"], "text": pezzo, "apikey": cmb["apikey"]})
+            with urllib.request.urlopen(url, timeout=30) as r:
+                risposta = r.read().decode("utf-8", "replace")
+            if not re.search(r"queued", risposta, re.I):   # CallMeBot risponde 200 anche agli errori, con la spiegazione
+                spiega = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", risposta)).strip()
+                for segreto in (cmb["telefono"], cmb["apikey"]):
+                    spiega = spiega.replace(segreto, "…")
+                raise RuntimeError(spiega[:120])
+        else:   # WhatsApp: il servizio notify di Home Assistant (CallMeBot, solo testo)
+            dominio, servizio = conf["whatsapp"].split(".", 1)
+            req = urllib.request.Request(f"{conf['ha_url'].rstrip('/')}/api/services/{dominio}/{servizio}", method="POST",
+                                         data=json.dumps({"message": pezzo}).encode(),
+                                         headers={"Authorization": f"Bearer {conf['ha_token']}",
+                                                  "Content-Type": "application/json"})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                r.read()
+    quanti = f", {len(pezzi)} messaggi" if len(pezzi) > 1 else ""
+    return f"WhatsApp mandato ({'CallMeBot' if conf.get('callmebot') else 'Home Assistant'}{quanti})"
+
+
 def manda_a_casa(testo, oggetto, coda=""):
     """Un messaggio al proprietario su WhatsApp (CallMeBot diretto o Home Assistant) e per email (da comunicati@, a lui): lo usano la
     sentinella e il giro lampo (i comunicati da valutare). Restituisce cosa è successo, per il registro."""
@@ -601,27 +659,7 @@ def manda_a_casa(testo, oggetto, coda=""):
             return ["avvisi.conf manca: niente WhatsApp né email"]
     esiti = []
     try:
-        if conf.get("callmebot"):   # WhatsApp diretto a CallMeBot (solo testo)
-            cmb = conf["callmebot"]
-            url = CALLMEBOT + "?" + urllib.parse.urlencode({"phone": cmb["telefono"], "text": testo[:1500],
-                                                            "apikey": cmb["apikey"]})
-            with urllib.request.urlopen(url, timeout=30) as r:
-                risposta = r.read().decode("utf-8", "replace")
-            if not re.search(r"queued", risposta, re.I):   # CallMeBot risponde 200 anche agli errori, con la spiegazione
-                spiega = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", risposta)).strip()
-                for segreto in (cmb["telefono"], cmb["apikey"]):
-                    spiega = spiega.replace(segreto, "…")
-                raise RuntimeError(spiega[:120])
-            esiti.append("WhatsApp mandato (CallMeBot)")
-        else:   # WhatsApp: il servizio notify di Home Assistant (CallMeBot, solo testo)
-            dominio, servizio = conf["whatsapp"].split(".", 1)
-            req = urllib.request.Request(f"{conf['ha_url'].rstrip('/')}/api/services/{dominio}/{servizio}", method="POST",
-                                         data=json.dumps({"message": testo[:1500]}).encode(),
-                                         headers={"Authorization": f"Bearer {conf['ha_token']}",
-                                                  "Content-Type": "application/json"})
-            with urllib.request.urlopen(req, timeout=30) as r:
-                r.read()
-            esiti.append("WhatsApp mandato")
+        esiti.append(manda_whatsapp(conf, testo))
     except Exception as e:
         esiti.append(f"WhatsApp NON mandato ({type(e).__name__}: {str(e)[:120]})")
     if "email" not in conf:
