@@ -53,6 +53,7 @@ from meteo import COMUNI_BN   # noqa: E402
 
 STATO = os.path.join(CARTELLA, "vedetta.json")
 CONF = os.path.join(CARTELLA, "routine.conf")
+GIRI_SUL_SERVER = os.path.join(CARTELLA, "giri_sul_server")   # vedi avvia()
 PISTE = os.path.join(F.ARCHIVIO, "chiusure.json")
 LUCCHETTO = "/tmp/nb_fonti.lock"   # lo stesso del cron di fonti_casa.py: l'archivio lo pubblica uno alla volta
 SITO = "https://notiziebenevento.it"
@@ -345,7 +346,17 @@ def pubblica_archivio(adesso):
 
 
 def avvia(testo):
-    """Fa partire il giro Chiusure (la routine) con la sua chiave. Restituisce l'indirizzo della sessione."""
+    """Fa partire il giro Chiusure (la routine) con la sua chiave. Restituisce l'indirizzo della sessione.
+
+    Dal 30 ott 2026 (trasloco su Aruba, lui: «il giro se possibile a ora precisa») sul server il giro lo fa Claude Code
+    lì, subito, invece della routine nel cloud: basta il file GIRI_SUL_SERVER (togliendolo si torna alla routine).
+    Stesse istruzioni e stesso testo di avvio (strumenti/server/giro.sh); restituisce il nome del giro."""
+    if os.path.exists(GIRI_SUL_SERVER):
+        r = subprocess.run(["sudo", "-n", "/usr/local/bin/nb-giro", "lampo", testo[:60000]],
+                           capture_output=True, text=True, timeout=60)
+        if r.returncode:
+            raise RuntimeError(f"avvio sul server non riuscito ({r.returncode}) {r.stderr.strip()[:200]}")
+        return "server " + r.stdout.strip()
     conf = leggi(CONF, None)
     if not conf or not conf.get("url") or not conf.get("token"):
         raise RuntimeError(f"manca la chiave della routine ({CONF}: vedetta.py --imposta-avvio)")
