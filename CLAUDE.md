@@ -23,10 +23,12 @@ claude.ai/code dal telefono): qui c'è quello che serve per riprendere il lavoro
 - Sito statico su GitHub Pages; `README.md` dice cosa fa ogni file. Le notizie sono in `notizie.json` (prima pagina)
   e `archivio/AAAA-MM.json`; gli eventi in `eventi.json`.
 - Archivio privato delle fonti: repo `ernbale/notizie-benevento-fonti` (comunicati.json = la casella
-  comunicati@notiziebenevento.it, ufficiali.json, allegati/). Lo riempie il Pi di casa ogni 5 minuti.
-- Routine cloud (claude.ai/code → Routine): «agente (ogni ora)», «giro lampo (chiusure e comunicati)» (lo avvia il Pi
-  appena arriva un comunicato; ha anche lo strumento Agent per il revisore), «curiosità (rifornimento del lunedì)»,
-  «contributi (ogni mattina)» alle 7:20 (CONTRIBUTI.md).
+  comunicati@notiziebenevento.it, ufficiali.json, allegati/). Lo riempie il server Aruba ogni 5 minuti (fino al 30 ott
+  2026 il Pi di casa).
+- I giri (dal 30 ott 2026 sul server Aruba con Claude Code, strumenti/server/; prima erano routine nel cloud, ora
+  spente): l'agente di ogni ora alle :00 precise dalle 6 alle 23, il giro lampo (chiusure e comunicati: lo avvia il
+  server appena arriva un comunicato, più le chiusure alle :35; ha anche lo strumento Agent per il revisore), le
+  curiosità (rifornimento del lunedì alle 6, Fable 5.1) e i contributi ogni mattina alle 7:30 (CONTRIBUTI.md).
 - Le foto illustrative sono in `img/temi` (temi.json, strumenti/foto_temi.py): ogni foto di un tema deve andar bene
   per ogni notizia del tema; una scena precisa (chiuso, fermo, danneggiato) ha un tema suo col campo `solo`, e le foto
   tolte da un tema stanno in `escluse` (i file restano). La regola per l'agente è in AGENTE.md, «Precisione su tutto».
