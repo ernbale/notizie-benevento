@@ -1,0 +1,18 @@
+# Un giro di Notizie Benevento sul server Aruba (dal 30 ott 2026): lo fa partire /usr/local/bin/nb-giro.
+[Unit]
+Description=Notizie Benevento, giro %i
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=exec
+User=redazione
+Group=redazione
+PrivateTmp=yes
+NoNewPrivileges=yes
+Nice=5
+MemoryMax=1300M
+RuntimeMaxSec=55min
+EnvironmentFile=/etc/nb-giri/claude.env
+Environment=TZ=UTC LANG=C.UTF-8 HOME=/home/redazione PATH=/home/redazione/venv/bin:/home/redazione/.local/bin:/usr/local/bin:/usr/bin:/bin
+ExecStart=/usr/local/lib/nb-giri/giro.sh %i

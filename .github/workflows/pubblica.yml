@@ -43,6 +43,11 @@ concurrency:
 jobs:
   pubblica:
     runs-on: ubuntu-latest
+    # Dal trasloco su Aruba (30 ott 2026) il sito vero lo pubblica il server (strumenti/pubblica_server.sh): quando la
+    # variabile del repository SITO_SU_ARUBA è «si», qui si costruisce solo la copia di riserva su GitHub Pages, senza
+    # niente che si veda fuori (social, foto fatte con l'IA, commit, avviso a Bing, statistiche): mai tutti e due.
+    env:
+      SU_ARUBA: ${{ vars.SITO_SU_ARUBA }}
     timeout-minutes: 30   # un passo piantato non deve tenere ferme per ore le pubblicazioni dopo (vanno una alla volta)
     environment:
       name: github-pages
@@ -61,7 +66,7 @@ jobs:
       - name: Nessuna notizia sparita
         timeout-minutes: 3
         continue-on-error: true   # se va oltre il tempo, la pubblicazione va avanti lo stesso (si riprova alla prossima)
-        run: python3 strumenti/sparite.py --manda || echo "::warning::Controllo delle notizie sparite non riuscito"
+        run: python3 strumenti/sparite.py $([ "$SU_ARUBA" = si ] || echo --manda) || echo "::warning::Controllo delle notizie sparite non riuscito"
 
       - name: Meteo da 8 modelli
         env:
@@ -176,7 +181,9 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           pip install --quiet pillow || true
-          python3 strumenti/foto_ia.py --genera || echo "::warning::Foto IA non fatte: si riprova alla pubblicazione dopo"
+          if [ "$SU_ARUBA" != si ]; then
+            python3 strumenti/foto_ia.py --genera || echo "::warning::Foto IA non fatte: si riprova alla pubblicazione dopo"
+          fi
           python3 strumenti/foto_ia.py --segna || echo "::warning::Foto IA non segnate"
 
       # le immagini di anteprima già fatte: si rifanno solo quelle delle notizie nuove o cambiate
@@ -220,6 +227,10 @@ jobs:
           DIARIO_CHIAVE: ${{ secrets.DIARIO_CHIAVE }}
           GH_TOKEN: ${{ github.token }}
         run: |
+          if [ "$SU_ARUBA" = si ]; then   # le fa il server: qui quelle pubblicate
+            curl -fsSL --max-time 30 --retry 4 --retry-all-errors --retry-delay 5 "https://notiziebenevento.it/statistiche/dati.json" -o statistiche/dati.json || true
+            exit 0
+          fi
           if [ "$EVENTO" = "push" ] && printf '%s\n' "$MESSAGGIO" | head -n 1 | grep -q '^Comunicato delle ' \
              && python3 strumenti/statistiche.py --tieni-pubblicate 20; then
             exit 0
@@ -243,6 +254,7 @@ jobs:
         uses: actions/deploy-pages@v4
 
       - name: Avvisa Bing delle pagine nuove (IndexNow)
+        if: ${{ vars.SITO_SU_ARUBA != 'si' }}
         run: |
           if [ -f "$RUNNER_TEMP/indexnow.json" ]; then
             python3 strumenti/pagine.py --invia-indexnow "$RUNNER_TEMP/indexnow.json" || echo "::warning::IndexNow non ha risposto"
@@ -253,6 +265,7 @@ jobs:
       # lavoro diventa rosso (mail al proprietario) e la sentinella rilancia la pubblicazione.
       - name: Chiusure dei Comuni sui social (a qualsiasi ora)
         id: chiusure
+        if: ${{ vars.SITO_SU_ARUBA != 'si' }}
         continue-on-error: true
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
@@ -266,6 +279,7 @@ jobs:
       # Se un canale non va, il resto continua, ma alla fine il lavoro diventa rosso e la pubblicazione dopo riprova.
       - name: Curiosità del Sannio (alle 12, su Telegram, Facebook e Instagram)
         id: curiosita
+        if: ${{ vars.SITO_SU_ARUBA != 'si' }}
         continue-on-error: true
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
@@ -276,7 +290,7 @@ jobs:
 
       # una curiosità già uscita con la foto sbagliata (strumenti/curiosita_social.py --correggi; 28 ott 2026)
       - name: Curiosità da correggere (a mano)
-        if: ${{ github.event.inputs.curiosita_correggi != '' }}
+        if: ${{ github.event.inputs.curiosita_correggi != '' && vars.SITO_SU_ARUBA != 'si' }}
         continue-on-error: true
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
@@ -289,12 +303,14 @@ jobs:
 
       # dopo la pubblicazione, così Facebook trova già online la pagina della notizia (titolo e anteprima)
       - name: Facebook (una notizia nuova sulla Pagina, se è il momento)
+        if: ${{ vars.SITO_SU_ARUBA != 'si' }}
         env:
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
           FB_SUBITO: ${{ github.event.inputs.facebook_subito || '0' }}
         run: python3 strumenti/facebook.py --stato "$RUNNER_TEMP/social/facebook.json" || echo "::warning::Facebook non ha pubblicato (vedi l'avviso sopra)"
 
       - name: Instagram (le stesse notizie di Facebook, subito dopo, e il riepilogo della sera)
+        if: ${{ vars.SITO_SU_ARUBA != 'si' }}
         env:
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
         run: |
@@ -302,6 +318,7 @@ jobs:
           python3 strumenti/instagram.py --stato "$RUNNER_TEMP/social/instagram.json" || echo "::warning::Instagram non ha pubblicato (vedi l'avviso sopra)"
 
       - name: Telegram (notizie nuove e aggiornamenti sul canale)
+        if: ${{ vars.SITO_SU_ARUBA != 'si' }}
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TG_SUBITO: ${{ github.event.inputs.telegram_subito || '0' }}

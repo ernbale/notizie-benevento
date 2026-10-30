@@ -2,9 +2,10 @@
 # Pubblica il sito dal server Aruba (dal 30 ott 2026, lui: «tutto su aruba poi github lo dismettiamo più avanti»).
 # Fa gli stessi passi, nello stesso ordine, di .github/workflows/pubblica.yml: SE CAMBI UN PASSO LÌ, CAMBIALO ANCHE QUI.
 #
-#   pubblica_server.sh            pubblicazione vera: il sito va in /srv/notiziebenevento (lo serve Caddy); i social
-#                                 solo se esiste ~/sito-stato/social/ACCESI (si accendono quando si spengono su GitHub:
-#                                 mai tutti e due, se no doppioni)
+#   pubblica_server.sh            pubblicazione vera: il sito va in /srv/notiziebenevento (lo serve Caddy). Tutto quello
+#                                 che si vede fuori (social, foto fatte con l'IA, commit nel repository, avviso a Bing)
+#                                 solo se esiste ~/sito-stato/ACCESO, cioè quando il sito vero è questo: si accende
+#                                 quando su GitHub si spegne, mai tutti e due (doppioni, foto pagate due volte)
 #   pubblica_server.sh --prova    tutto in ~/sito-prova-uscita: niente social, niente push nel repository, niente
 #                                 IndexNow, niente statistiche (per confrontare le pagine con quelle di GitHub)
 #
@@ -22,6 +23,8 @@ PROVA=0
 [ "${1:-}" = "--prova" ] && PROVA=1
 SITO=$HOME/sito
 STATO=$HOME/sito-stato
+ACCESO=0
+[ "$PROVA" = 0 ] && [ -f "$STATO/ACCESO" ] && ACCESO=1
 if [ "$PROVA" = 1 ]; then USCITA=$HOME/sito-prova-uscita; else USCITA=/srv/notiziebenevento; fi
 LIVE=https://notiziebenevento.it
 CURL="curl -fsSL --max-time 30 --retry 4 --retry-all-errors --retry-delay 5"
@@ -54,7 +57,7 @@ echo "$(date -u '+%d/%m %H:%M:%S') pubblicazione $([ "$PROVA" = 1 ] && echo 'DI 
 pubblicato() { if [ -s "$USCITA/$1" ]; then cp "$USCITA/$1" "$2"; else $CURL "$LIVE/$1" -o "$2"; fi; }
 
 # Nessuna notizia sparita
-timeout 180 python3 strumenti/sparite.py $([ "$PROVA" = 0 ] && echo --manda) || avviso "controllo delle notizie sparite non riuscito"
+timeout 180 python3 strumenti/sparite.py $([ "$ACCESO" = 1 ] && echo --manda) || avviso "controllo delle notizie sparite non riuscito"
 
 # Meteo da 8 modelli
 if ! python3 strumenti/meteo.py; then
@@ -111,8 +114,8 @@ if ! python3 strumenti/contributi.py --pubblica --catalogo contributi-catalogo.j
 fi
 rm -f contributi-catalogo.json contributi-prima.json
 
-# Foto fatte con l'IA (curiosità): in prova solo --segna (niente foto nuove, niente commit)
-if [ "$PROVA" = 0 ]; then
+# Foto fatte con l'IA (curiosità): se il sito vero non è questo, solo --segna (niente foto nuove, niente commit)
+if [ "$ACCESO" = 1 ]; then
   timeout 360 python3 strumenti/foto_ia.py --genera || avviso "foto IA non fatte: si riprova alla pubblicazione dopo"
 fi
 timeout 120 python3 strumenti/foto_ia.py --segna || avviso "foto IA non segnate"
@@ -141,13 +144,13 @@ echo "$(date -u '+%d/%m %H:%M:%S') sito $([ "$PROVA" = 1 ] && echo 'di prova ')i
 [ "$PROVA" = 1 ] && exit 0
 echo "$SHA" > "$STATO/ultimo_sha"
 
-# Avvisa Bing delle pagine nuove (IndexNow)
-[ -f "$TMP/indexnow.json" ] && { python3 strumenti/pagine.py --invia-indexnow "$TMP/indexnow.json" || avviso "IndexNow non ha risposto"; }
-
-if [ ! -f "$STATO/social/ACCESI" ]; then
-  echo "social spenti sul server (li fa ancora GitHub)"
+if [ "$ACCESO" = 0 ]; then
+  echo "il sito vero lo fa ancora GitHub: niente social e niente avviso a Bing da qui"
   exit 0
 fi
+
+# Avvisa Bing delle pagine nuove (IndexNow)
+[ -f "$TMP/indexnow.json" ] && { python3 strumenti/pagine.py --invia-indexnow "$TMP/indexnow.json" || avviso "IndexNow non ha risposto"; }
 ROSSO=0
 # Chiusure dei Comuni sui social (a qualsiasi ora)
 python3 strumenti/chiusure_social.py --stato "$STATO/social/chiusure.json" || { avviso "le chiusure dei Comuni non sono uscite su tutti i canali"; ROSSO=1; }

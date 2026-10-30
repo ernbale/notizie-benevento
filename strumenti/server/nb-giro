@@ -1,0 +1,15 @@
+#!/bin/bash
+# Fa partire un giro di Notizie Benevento sul server Aruba (dal 30 ott 2026): nb-giro <agente|lampo|contributi|curiosita> [testo]
+# Lo usano il cron (orari fissi) e, con sudo, gli strumenti dell'utente ernesto (il giro lampo, al posto
+# dell'avvio della routine nel cloud). Il giro vero lo fa /usr/local/lib/nb-giri/giro.sh come utente redazione.
+# Non aspetta la fine: stampa il nome del giro e torna subito (come l'avvio della routine).
+set -eu
+case "${1:-}" in agente|lampo|contributi|curiosita) ;; *) echo "uso: nb-giro <agente|lampo|contributi|curiosita> [testo]" >&2; exit 2 ;; esac
+ISTANZA="$1-$(date -u +%Y%m%d%H%M%S)-$$"
+install -d -m 750 -o redazione -g redazione /var/lib/nb-giri
+if [ -n "${2:-}" ]; then
+  printf '%s' "$2" | head -c 60000 > "/var/lib/nb-giri/$ISTANZA.txt"
+  chown redazione:redazione "/var/lib/nb-giri/$ISTANZA.txt"
+fi
+systemctl start --no-block "nb-giro@$ISTANZA.service"
+echo "$ISTANZA"
