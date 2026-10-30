@@ -3,6 +3,85 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "provincia-benevento-consiglio-provinciale-5-novembre-surroga-falzarano-stravino",
+   "titolo": "Provincia di Benevento, il Consiglio convocato il 5 novembre: 40 punti, dalla surroga di Falzarano e Stravino ai conti dell'ente",
+   "titolo_google": "Consiglio provinciale Benevento, seduta del 5 novembre",
+   "sintesi": "Il presidente della Provincia di Benevento, Lombardi, ha convocato il Consiglio provinciale per giovedì 5 novembre alle 15, alla Rocca dei Rettori. All'ordine del giorno 40 argomenti: tra questi la surroga dei consiglieri Vincenzo Falzarano e Giuseppe Stravino, il bilancio consolidato 2025, variazioni di bilancio e il riconoscimento di debiti fuori bilancio.",
+   "categoria": "politica",
+   "zona": "benevento",
+   "immagine": "consiglio",
+   "luogo": "Benevento, Rocca dei Rettori",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "comunicati": [
+    "ue1b0a6ab182"
+   ],
+   "fonti": [
+    {
+     "nome": "Provincia di Benevento",
+     "url": "https://www.provincia.benevento.it/node/61558",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Consiglio provinciale di Benevento si riunirà giovedì 5 novembre alle 15, in seduta ordinaria e in prima convocazione, nella Sala consiliare della Rocca dei Rettori, a Benevento. Lo ha convocato il presidente della Provincia, Lombardi, con un ordine del giorno di 40 argomenti, come rende noto la Provincia con il comunicato stampa n. 3686 del 30 ottobre. Si comincia con l'approvazione dei verbali della seduta del 10 agosto.",
+      "fonti": [
+       "Provincia di Benevento"
+      ]
+     },
+     {
+      "testo": "Tra gli argomenti, come indica il titolo del comunicato, c'è la surroga dei consiglieri Vincenzo Falzarano e Giuseppe Stravino. Al secondo punto il Consiglio prende atto della nota del Comune di Airola arrivata alla Provincia il 14 ottobre: riguarda la mozione di sfiducia al sindaco e alla Giunta (delibera del Consiglio comunale n. 55 del 12 ottobre) e il decreto del Prefetto di Benevento del 13 ottobre, che ha sospeso il Consiglio comunale di Airola in attesa del decreto di scioglimento e della nomina del commissario prefettizio. Sullo stesso punto sono previsti i provvedimenti di surroga.",
+      "fonti": [
+       "Provincia di Benevento"
+      ]
+     },
+     {
+      "testo": "Il Consiglio prenderà atto anche delle linee programmatiche del presidente, cioè le azioni e i progetti da realizzare nel corso del mandato. Sui conti della Provincia sono in programma l'approvazione del bilancio consolidato del 2025; la ratifica della variazione d'urgenza al bilancio di previsione 2026-2028 decisa con la delibera presidenziale n. 234 del 21 settembre; la comunicazione della delibera presidenziale n. 256 del 2 ottobre, che cambia gli stanziamenti di cassa del 2026; un'altra variazione al bilancio di previsione 2026-2028 e il nuovo regolamento di contabilità.",
+      "fonti": [
+       "Provincia di Benevento"
+      ]
+     },
+     {
+      "testo": "C'è poi il contratto di servizio del 29 luglio 2025 con Sannio Europa: la società ha chiesto di rivedere il compenso per i maggiori costi sopravvenuti, e il Consiglio deve dare gli indirizzi per l'istruttoria e approvare lo schema di un atto aggiuntivo. Va aggiornato anche il regolamento sul rimborso delle spese di accesso all'ente, di trasferta e di missione degli amministratori provinciali, per applicare il decreto dei ministri dell'Interno e dell'Economia del 12 giugno 2026.",
+      "fonti": [
+       "Provincia di Benevento"
+      ]
+     },
+     {
+      "testo": "Alcuni punti riguardano i paesi e le strade: la convenzione con il Comune di Castelvenere per la gestione e la manutenzione delle aree verdi della Provincia nel suo territorio; l'acquisizione gratuita delle aree della strada provinciale 151 nei Comuni di Castelpoto e Foglianise, come previsto dal protocollo d'intesa firmato il 19 dicembre 2017; la retrocessione parziale di un'area di 41 metri quadrati a Campolattaro, acquisita dalla Provincia per i lavori sulla provinciale ex statale 265 della Valle del Tammaro, nel tratto tra lo svincolo di Campolattaro e Colle Sannita; la vendita a E-Distribuzione di una cabina elettrica di media tensione in via Sandro Pertini, a Benevento, con la modifica del piano delle alienazioni e valorizzazioni degli immobili.",
+      "fonti": [
+       "Provincia di Benevento"
+      ]
+     },
+     {
+      "testo": "Dal punto 15 al punto 40 l'ordine del giorno è fatto di riconoscimenti di debiti fuori bilancio, che derivano da sentenze esecutive e altre decisioni dei giudici. Molti riguardano incidenti causati da «insidie stradali». Il punto 15 riguarda 141.204,33 euro a Edil Strade, per un decreto ingiuntivo del Tribunale di Benevento del 2013 sui lavori della provinciale 121 Castelpagano-Riccia; si tratta di regolarizzare nei conti i pagamenti già fatti dal tesoriere. L'ultimo punto riguarda la sentenza del Consiglio di Stato n. 9544 del 2025, nei giudizi tra la Provincia, Falzarano Pasquale s.r.l. e la Presidenza del Consiglio dei ministri.",
+      "fonti": [
+       "Provincia di Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Provincia di Benevento",
+      "titolo": "IL PRESIDENTE LOMBARDI CONVOCA IL CONSIGLIO PER IL 5.11.26 ALLE 15 CON 40 ARGOMENTI ALL'ORDINE DEL GIORNO TRA I QUALI LA SURROGA DEI CONSIGLIERI VINCENZO FALZARANO E GIUSEPPE STRAVINO",
+      "url": "https://www.provincia.benevento.it/node/61558",
+      "data": "30 ott, 16:15",
+      "ufficiale": true
+     }
+    ]
+   },
+   "subito": true,
+   "pubblicato": "2026-10-30T16:28:50+01:00",
+   "foto": "consiglio-10"
+  },
+  {
    "id": "cremonese-benevento-convocati-floro-flores-31-ottobre",
    "titolo": "Serie B, Cremonese-Benevento: i 24 convocati di Floro Flores, fuori Kouan e dentro Rosa",
    "titolo_google": "Cremonese-Benevento, i convocati di Floro Flores",
