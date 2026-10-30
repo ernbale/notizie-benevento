@@ -1,7 +1,83 @@
 {
- "aggiornato": "2026-10-30T18:04+01:00",
+ "aggiornato": "2026-10-30T19:05+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-sete-nera-annamaria-venere-libreria-masone-alisei",
+   "titolo": "Benevento, alla libreria Masone Alisei la presentazione di «Sete nera», il noir di Annamaria Venere",
+   "titolo_google": "«Sete nera» di Annamaria Venere presentato a Benevento",
+   "sintesi": "Giovedì 29 ottobre la scrittrice Annamaria Venere ha presentato alla libreria Masone Alisei di Benevento il suo ultimo romanzo, il noir «Sete nera», ambientato a Bari. Con lei la giornalista Giovanna Fusco e Loredana Orsillo dei Borghi della Lettura di Torrecuso.",
+   "categoria": "cultura",
+   "zona": "benevento",
+   "immagine": "libri",
+   "luogo": "Benevento, libreria Masone Alisei",
+   "pubblicato": "2026-10-30T18:26+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/sete-nera-annamaria-venere-conquista-il-pubblico-alla-libreria-masone-alisei/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/30/sete-nera-annamaria-venere-conquista-il-pubblico-alla-libreria-masone-alisei/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Giovedì 29 ottobre, alla libreria Masone Alisei di Benevento, la scrittrice Annamaria Venere ha presentato «Sete nera», il suo ultimo romanzo. È un noir ambientato a Bari, la città che fa da sfondo alla storia.",
+      "fonti": [
+       "Anteprima24",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "La serata l'ha aperta Loredana Orsillo, referente dei Borghi della Lettura di Torrecuso, che ha ricordato i libri precedenti dell'autrice, «All'ombra del tacco» e «Delitti a Torrecuso». Poi la giornalista Giovanna Fusco ha parlato con la scrittrice di come è nato il romanzo, delle scelte del racconto e dei suoi temi; tra un momento e l'altro Mariarosaria Preziosi ha letto alcune pagine.",
+      "fonti": [
+       "Anteprima24",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Si è parlato del titolo, del rapporto tra passato e presente, delle fragilità dei personaggi e del confine tra verità e potere, e anche del mestiere dell'autrice: Annamaria Venere è sociologa e criminologa forense, e questo sguardo entra nella sua scrittura noir.",
+      "fonti": [
+       "Anteprima24",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "La data, giovedì 29 ottobre, il luogo e chi ha partecipato all'incontro.",
+      "fonti": [
+       "Anteprima24",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Sete nera, Annamaria Venere conquista il pubblico alla Libreria Masone Alisei",
+      "url": "https://www.anteprima24.it/benevento/sete-nera-annamaria-venere-conquista-il-pubblico-alla-libreria-masone-alisei/",
+      "data": "30 ott, 18:03"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Sete nera, Annamaria Venere conquista il pubblico alla Libreria Masone Alisei",
+      "url": "https://www.beneventonews24.it/2026/10/30/sete-nera-annamaria-venere-conquista-il-pubblico-alla-libreria-masone-alisei/",
+      "data": "30 ott, 18:26"
+     }
+    ]
+   },
+   "foto": "libri-9"
+  },
   {
    "id": "benevento-case-popolari-acer-lettere-morosita-sunia",
    "titolo": "Case popolari nel Sannio, le lettere dell'ACER sugli arretrati diranno mese e voce del debito",
@@ -77,15 +153,35 @@
      "nome": "Comune di Benevento, albo pretorio",
      "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80242",
      "ufficiale": true
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/30/benevento-limite-di-30-km-h-lungo-viale-san-lorenzo-nuova-ordinanza-del-comune-per-garantire-maggiore-sicurezza/"
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "In viale San Lorenzo, a Benevento, non si potrà andare a più di 30 chilometri all'ora, in tutti e due i sensi di marcia. Lo ha deciso il Servizio Traffico del Comune con l'ordinanza numero 462, pubblicata venerdì 30 ottobre all'albo pretorio.",
+      "testo": "In viale San Lorenzo, a Benevento, non si potrà andare a più di 30 chilometri all'ora, in tutti e due i sensi di marcia. Lo ha deciso il Servizio Traffico del Comune con l'ordinanza numero 462, pubblicata venerdì 30 ottobre all'albo pretorio. L'ordinanza è del 30 ottobre e la firma il comandante della Polizia Municipale, Giuseppe Vecchio.",
       "fonti": [
-       "Comune di Benevento, albo pretorio"
-      ]
+       "Comune di Benevento, albo pretorio",
+       "NTR24"
+      ],
+      "giorno": "2026-10-30"
+     },
+     {
+      "testo": "Nel provvedimento il Comune spiega che in quella strada ci sono stati di recente diversi incidenti e che più volte sono state viste auto passare a velocità molto alta. Lungo il viale ci sono la basilica della Madonna delle Grazie, l'istituto tecnico «Lucarelli» e diversi negozi e attività.",
+      "fonti": [
+       "NTR24"
+      ],
+      "giorno": "2026-10-30"
+     },
+     {
+      "testo": "Arrivano i cartelli col nuovo limite, ben visibili in tutti e due i sensi di marcia, e i controlli li farà la Polizia Municipale.",
+      "fonti": [
+       "NTR24"
+      ],
+      "giorno": "2026-10-30"
      }
     ],
     "cronologia": [],
@@ -102,6 +198,12 @@
       "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80242",
       "data": "30 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Benevento, limite di 30 km/h lungo Viale San Lorenzo: nuova ordinanza del Comune per garantire maggiore sicurezza",
+      "url": "https://www.ntr24.tv/2026/10/30/benevento-limite-di-30-km-h-lungo-viale-san-lorenzo-nuova-ordinanza-del-comune-per-garantire-maggiore-sicurezza/",
+      "data": "30 ott, 18:03"
      }
     ]
    },
@@ -367,6 +469,14 @@
        "Benevento Calcio"
       ],
       "giorno": "2026-10-30"
+     },
+     {
+      "testo": "Si gioca sabato 31 ottobre alle 15 allo stadio Zini di Cremona. Nella Cremonese l'allenatore Fabio Pecchia non avrà Barbieri, squalificato, e gli infortunati Bianchetti, Vogliacco, Rocchetti, Gerli e Pontisso. Alla vigilia ha detto che il Benevento, appena salito in Serie B, è «una squadra viva e con le idee chiare» e che va affrontato «con la giusta umiltà».",
+      "fonti": [
+       "BeneventoNews24 (convocati della Cremonese)",
+       "BeneventoNews24 (Pecchia)"
+      ],
+      "giorno": "2026-10-30"
      }
     ],
     "cronologia": [],
@@ -399,6 +509,18 @@
       "titolo": "Cremonese-Benevento, i convocati di Floro Flores: out lo squalificato Kouan, disponibili in 24",
       "url": "https://www.beneventonews24.it/2026/10/30/cremonese-benevento-i-convocati-di-floro-flores-out-lo-squalificato-kouan-disponibili-in-24/",
       "data": "30 ott, 16:35"
+     },
+     {
+      "nome": "BeneventoNews24 (convocati della Cremonese)",
+      "titolo": "Cremonese-Benevento, i convocati di Pecchia: disponibili in 24, sei gli assenti",
+      "url": "https://www.beneventonews24.it/2026/10/30/cremonese-benevento-i-convocati-di-pecchia-disponibili-in-24-sei-gli-assenti/",
+      "data": "30 ott, 18:36"
+     },
+     {
+      "nome": "BeneventoNews24 (Pecchia)",
+      "titolo": "Cremonese, Pecchia: “Benevento vivo e con le idee chiare, dobbiamo essere umili”",
+      "url": "https://www.beneventonews24.it/2026/10/30/cremonese-pecchia-benevento-vivo-e-con-le-idee-chiare-dobbiamo-essere-umili/",
+      "data": "30 ott, 18:22"
      }
     ]
    },
@@ -484,6 +606,10 @@
     {
      "nome": "Benevento Giornale",
      "url": "https://www.beneventogiornale.com/2026/10/30/liceo-artistico-virgilio-di-benevento-in-festa-per-halloween-la-creativita-degli-studenti-sfila-tra-icone-della-tv-e-atmosfere-horror/"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/universita/2026/liceo-artistico-virgilio-in-festa-per-halloween-la-creativita-degli-studenti-sfila-tra-icone-della-tv-e-atmosfere-horror.html"
     }
    ],
    "articolo": {
@@ -543,6 +669,12 @@
       "titolo": "Liceo Artistico “Virgilio” di Benevento in festa per Halloween: la creatività degli studenti sfila tra icone della TV e atmosfere horror",
       "url": "https://www.beneventogiornale.com/2026/10/30/liceo-artistico-virgilio-di-benevento-in-festa-per-halloween-la-creativita-degli-studenti-sfila-tra-icone-della-tv-e-atmosfere-horror/",
       "data": "30 ott, 15:42"
+     },
+     {
+      "nome": "InfoSannio",
+      "titolo": "Liceo Artistico ‘Virgilio’ in festa per Halloween: la creatività degli studenti sfila tra icone della TV e atmosfere horror",
+      "url": "https://www.infosannionews.it/universita/2026/liceo-artistico-virgilio-in-festa-per-halloween-la-creativita-degli-studenti-sfila-tra-icone-della-tv-e-atmosfere-horror.html",
+      "data": "30 ott, 18:27"
      }
     ]
    },
@@ -1399,7 +1531,7 @@
    "categoria": "cronaca",
    "luogo": "Provincia di Benevento",
    "zona": "provincia",
-   "pubblicato": "2026-10-30T17:54+01:00",
+   "pubblicato": "2026-10-30T18:58+01:00",
    "stato": "confermata",
    "rilevante": false,
    "importanza": 4,
@@ -1411,6 +1543,10 @@
     {
      "nome": "BeneventoNews24",
      "url": "https://www.beneventonews24.it/2026/10/30/si-finge-poliziotto-e-fa-trasferire-29-500-euro-a-un-pensionato-arrestato-un-sannita/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/finto-ispettore-convince-un-anziano-a-versare-29-500-euro-giovane-sannita-arrestato/"
     }
    ],
    "articolo": {
@@ -1419,7 +1555,8 @@
       "testo": "Un giovane che vive in provincia di Benevento è stato arrestato dalla Polizia e messo agli arresti domiciliari con il braccialetto elettronico. Lo ha deciso il gip del Tribunale di Agrigento, su richiesta della Procura di Agrigento: il giovane è indagato per truffa aggravata, in concorso con un'altra persona, ai danni di un pensionato della provincia di Agrigento.",
       "fonti": [
        "NTR24",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Anteprima24"
       ],
       "giorno": "2026-10-30"
      },
@@ -1427,7 +1564,8 @@
       "testo": "I fatti risalgono al 30 aprile. Secondo la ricostruzione degli investigatori, qualcuno si sarebbe presentato all'anziano come un poliziotto e lo avrebbe contattato con telefonate e messaggi. Gli avrebbe raccontato di una frode in banca con alcuni impiegati infedeli e così lo avrebbe convinto, per mettere al sicuro i risparmi, a fare un bonifico di 29.500 euro.",
       "fonti": [
        "NTR24",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Anteprima24"
       ],
       "giorno": "2026-10-30"
      },
@@ -1435,14 +1573,16 @@
       "testo": "Le indagini le ha fatte la Squadra Mobile di Agrigento, con i controlli sui conti e le immagini delle telecamere. Secondo gli investigatori i soldi sono finiti su una carta di pagamento che fa capo all'indagato, che poi li avrebbe prelevati in sei uffici postali della provincia di Napoli.",
       "fonti": [
        "NTR24",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Anteprima24"
       ],
       "giorno": "2026-10-30"
      },
      {
       "testo": "L'altra persona indagata, per ora, non ha ricevuto misure. Le indagini vanno avanti per chiarire il resto della vicenda; per il giovane, come per ogni indagato, vale la presunzione di innocenza fino a una condanna definitiva.",
       "fonti": [
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Anteprima24"
       ],
       "giorno": "2026-10-30"
      }
@@ -1482,6 +1622,12 @@
       "titolo": "Si finge poliziotto e fa trasferire 29.500 euro a un pensionato: arrestato un sannita",
       "url": "https://www.beneventonews24.it/2026/10/30/si-finge-poliziotto-e-fa-trasferire-29-500-euro-a-un-pensionato-arrestato-un-sannita/",
       "data": "30 ott, 17:54"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Finto ispettore convince un anziano a versare 29.500 euro: giovane sannita arrestato",
+      "url": "https://www.anteprima24.it/benevento/finto-ispettore-convince-un-anziano-a-versare-29-500-euro-giovane-sannita-arrestato/",
+      "data": "30 ott, 18:58"
      }
     ]
    }
@@ -17672,7 +17818,7 @@
    "titolo_google": "Inchiesta Santamaria a Benevento: accuse, indagati e udienze",
    "sommario": "Il 30 marzo i carabinieri hanno arrestato Gennaro Santamaria, allora dirigente del Comune di Benevento, mentre secondo l'accusa riceveva 4mila euro da un professionista. Dalle sue dichiarazioni ai magistrati è nata un'inchiesta più grande: 19 indagati, tra cui il presidente del Consiglio comunale e due sindaci della provincia, per ipotesi che vanno dalla concussione alla corruzione e al finanziamento illecito ai partiti. Il sindaco Clemente Mastella non è indagato. Dal 3 novembre Santamaria sarà esaminato davanti alla gip sulle sue dichiarazioni, e il 4 novembre la Procura affida la copia dei dati dei telefoni sequestrati.",
    "luogo": "Benevento",
-   "aggiornato": "2026-10-30T09:00+01:00",
+   "aggiornato": "2026-10-30T19:00+01:00",
    "scena": "A single continuous photograph, not a split image: night inside a prosecutor's office in Benevento. On a wooden desk in the foreground, thick paper case files tied with string, several smartphones, a tablet and a laptop sealed in transparent evidence bags with blank paper tags, a cable running to a forensic data-copy device under a desk lamp; through the large window behind the desk, the lit stone facade of the old town hall across a dark square. No people, no readable text",
    "collegate": [
     "benevento-inchiesta-comune-copia-telefoni-indagati-4-novembre",
@@ -18053,6 +18199,19 @@
        "fonti": [
         "Ottopagine (22/10)",
         "Ottopagine (25/10)"
+       ]
+      },
+      {
+       "testo": "Il 30 ottobre i consiglieri di opposizione di Pd, Avs, Città Aperta e Civico 22 hanno risposto alle misure del Comune sui dirigenti indagati, che per loro sono «pilatesche».",
+       "fonti": [
+        "Anteprima24 (30/10, opposizione)",
+        "InfoSannio (30/10, opposizione)"
+       ]
+      },
+      {
+       "testo": "Secondo l'opposizione le misure sono «del tutto inefficaci» e l'amministrazione ha evitato la sospensione, che a suo dire il Piano anticorruzione del Comune avrebbe imposto. Dice anche che la Giunta ha risposto alle interrogazioni nei tempi solo dopo l'inchiesta e che c'è una «responsabilità politica» di chi ha scelto le nomine di fiducia. Chiede di discuterne in Consiglio comunale.",
+       "fonti": [
+        "InfoSannio (30/10, opposizione)"
        ]
       }
      ]
@@ -18454,6 +18613,14 @@
      ]
     },
     {
+     "data": "30 ottobre",
+     "fatto": "L'opposizione (Pd, Avs, Città Aperta, Civico 22): le misure sui dirigenti indagati sono «del tutto inefficaci», serviva la sospensione.",
+     "fonti": [
+      "Anteprima24 (30/10, opposizione)",
+      "InfoSannio (30/10, opposizione)"
+     ]
+    },
+    {
      "data": "3 novembre, 13:00",
      "fatto": "Comincia l'incidente probatorio sulle dichiarazioni di Santamaria.",
      "fonti": [
@@ -18816,6 +18983,18 @@
      "titolo": "Interrogazione su dirigenti e funzionari indagati: Mastella e De Pierro rispondono",
      "url": "https://www.anteprima24.it/benevento/interrogazione-su-dirigenti-e-funzionari-indagati-mastella-e-de-pierro-rispondono/",
      "data": "30 ott, 08:50"
+    },
+    {
+     "nome": "Anteprima24 (30/10, opposizione)",
+     "titolo": "Inchiesta al Comune, l’opposizione: “Da Mastella misure pilatesche sui dirigenti”",
+     "url": "https://www.anteprima24.it/benevento/inchiesta-comune-lopposizione-mastella-misure-pilatesche-dirigenti/",
+     "data": "30 ott, 18:55"
+    },
+    {
+     "nome": "InfoSannio (30/10, opposizione)",
+     "titolo": "Inchiesta al Comune,Pd, Avs, Città Aperta, Civico 22:”Da Mastella misure pilatesche su Dirigenti”",
+     "url": "https://www.infosannionews.it/politica/2026/inchiesta-al-comunepd-avs-citta-aperta-civico-22da-mastella-misure-pilatesche-su-dirigenti.html",
+     "data": "30 ott, 18:58"
     }
    ]
   },
