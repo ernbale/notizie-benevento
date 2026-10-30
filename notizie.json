@@ -1,7 +1,109 @@
 {
- "aggiornato": "2026-10-30T13:07+01:00",
+ "aggiornato": "2026-10-30T14:06+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "frasso-telesino-via-cimitero-senso-unico-31-ottobre-2-novembre",
+   "titolo": "Frasso Telesino, via Cimitero a senso unico il 31 ottobre e l'1 e 2 novembre",
+   "titolo_google": "Frasso Telesino, via Cimitero a senso unico dal 31 ottobre",
+   "sintesi": "A Frasso Telesino via Cimitero sarà a senso unico sabato 31 ottobre, domenica 1 e lunedì 2 novembre, nei giorni di Ognissanti e dei defunti. Lo ha deciso il Comune con un'ordinanza.",
+   "categoria": "strade",
+   "zona": "telesina",
+   "immagine": "cimitero",
+   "luogo": "Frasso Telesino, via Cimitero",
+   "pubblicato": "2026-10-30",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "in_vigore_dal": "2026-10-31",
+   "in_vigore_fino": "2026-11-02",
+   "traffico": "senso_unico",
+   "fonti": [
+    {
+     "nome": "Comune di Frasso Telesino",
+     "url": "https://comune.frassotelesino.bn.it/albo-pretorio/?dettaglio_id=306519",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Frasso Telesino, in Valle Telesina, via Cimitero sarà a senso unico per tre giorni: sabato 31 ottobre, domenica 1 e lunedì 2 novembre, i giorni di Ognissanti e della Commemorazione dei defunti, quando molte persone vanno a far visita ai propri cari al cimitero. Lo ha deciso il Comune con l'ordinanza numero 28.",
+      "fonti": [
+       "Comune di Frasso Telesino"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "In quale direzione si potrà percorrere via Cimitero e in quali ore vale il senso unico."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Frasso Telesino",
+      "titolo": "Istituzione senso unico di marcia in via cimitero nei giorni 31 ottobre e 1  e 2 novembre 2026.",
+      "url": "https://comune.frassotelesino.bn.it/albo-pretorio/?dettaglio_id=306519",
+      "data": "30 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "foto": "cimitero-16"
+  },
+  {
+   "id": "santagata-de-goti-4-novembre-corteo-monumento-caduti-2026",
+   "titolo": "Sant'Agata de' Goti, il 4 novembre corteo dal Municipio e corona d'alloro al Monumento ai Caduti",
+   "titolo_google": "Sant'Agata de' Goti, 4 novembre: corteo e corona ai Caduti",
+   "sintesi": "Mercoledì 4 novembre, Giornata dell'Unità nazionale e delle Forze armate, a Sant'Agata de' Goti il corteo parte alle 10:15 dal Municipio. Alle 10:30 la corona d'alloro al Monumento ai Caduti in piazza Trieste.",
+   "categoria": "altro",
+   "zona": "caudina",
+   "immagine": "commemorazione",
+   "luogo": "Sant'Agata de' Goti, piazza Trieste",
+   "pubblicato": "2026-10-30",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 2,
+   "nota": "L'avviso del Comune scrive «Martedì 4 Novembre», ma il 4 novembre 2026 è un mercoledì: abbiamo scritto mercoledì.",
+   "fonti": [
+    {
+     "nome": "Comune di Sant'Agata de' Goti",
+     "url": "https://www.comune.santagatadegoti.bn.it/novita/comunicati_stampa/novita_209.html",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Mercoledì 4 novembre, Giornata dell'Unità nazionale e delle Forze armate, Sant'Agata de' Goti ricorda i caduti con un corteo che parte alle 10:15 dal Municipio. Alle 10:30 sarà deposta una corona d'alloro al Monumento ai Caduti in piazza Trieste.",
+      "fonti": [
+       "Comune di Sant'Agata de' Goti"
+      ]
+     },
+     {
+      "testo": "Il Comune invita tutti i cittadini a partecipare: per l'amministrazione è un modo per custodire la memoria e per trasmettere ai più giovani i valori di unità, libertà e responsabilità civile su cui si fonda la Repubblica.",
+      "fonti": [
+       "Comune di Sant'Agata de' Goti"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di Sant'Agata de' Goti",
+      "titolo": "4 Novembre",
+      "url": "https://www.comune.santagatadegoti.bn.it/novita/comunicati_stampa/novita_209.html",
+      "data": "30 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "foto": "commemorazione-3"
+  },
   {
    "id": "benevento-conservatorio-confindustria-intesa-il-molino",
    "titolo": "Benevento, intesa tra Conservatorio «Nicola Sala» e Confindustria: al Molino ospiti per ricerca e progetti",
@@ -30,6 +132,10 @@
     {
      "nome": "InfoSannio",
      "url": "https://www.infosannionews.it/universita/2026/conservatorio-n-sala-e-confindustria-benevento-unintesa-per-la-ricerca-linnovazione-e-lo-sviluppo-del-territorio.html"
+    },
+    {
+     "nome": "Lab TV",
+     "url": "https://www.labtv.net/attualita/2026/10/30/conservatorio-nicola-sala-e-confindustria-benevento-unintesa-per-la-ricerca-linnovazione-e-lo-sviluppo-del-territorio/"
     }
    ],
    "articolo": {
@@ -40,7 +146,8 @@
        "NTR24",
        "Cronache del Sannio",
        "Ottopagine",
-       "InfoSannio"
+       "InfoSannio",
+       "Lab TV"
       ]
      },
      {
@@ -98,6 +205,12 @@
       "titolo": "Conservatorio e Confindustria: un’intesa per la ricerca, l’innovazione e lo sviluppo del territorio",
       "url": "https://www.infosannionews.it/universita/2026/conservatorio-n-sala-e-confindustria-benevento-unintesa-per-la-ricerca-linnovazione-e-lo-sviluppo-del-territorio.html",
       "data": "30 ott, 12:03"
+     },
+     {
+      "nome": "Lab TV",
+      "titolo": "Conservatorio “Nicola Sala” e Confindustria Benevento: un’intesa per la ricerca, l’innovazione e lo sviluppo del territorio",
+      "url": "https://www.labtv.net/attualita/2026/10/30/conservatorio-nicola-sala-e-confindustria-benevento-unintesa-per-la-ricerca-linnovazione-e-lo-sviluppo-del-territorio/",
+      "data": "30 ott, 13:06"
      }
     ]
    },
@@ -239,6 +352,10 @@
      "nome": "Benevento Calcio",
      "url": "https://www.beneventocalcio.club/news/notizie/7684/serie-bkt-2026-2027-cremonese-benevento-dirige-livio-marinelli.shtml",
      "ufficiale": true
+    },
+    {
+     "nome": "NTR24 Sport",
+     "url": "https://sport.ntr24.tv/2026/10/30/cremonese-benevento-arbitra-marinelli-di-tivoli/"
     }
    ],
    "articolo": {
@@ -246,19 +363,22 @@
      {
       "testo": "Cremonese-Benevento, partita della 10ª giornata del campionato di Serie BKT, sarà arbitrata da Livio Marinelli di Tivoli. Si gioca sabato 31 ottobre alle 15 allo stadio Giovanni Zini di Cremona.",
       "fonti": [
-       "Benevento Calcio"
+       "Benevento Calcio",
+       "NTR24 Sport"
       ]
      },
      {
       "testo": "Con lui ci saranno gli assistenti, cioè i guardalinee, Francesco Cortese di Palermo e Vincenzo Russo di Nichelino. Il quarto ufficiale, l'arbitro che sta a bordo campo, sarà Edoardo Gianquinto di Parma.",
       "fonti": [
-       "Benevento Calcio"
+       "Benevento Calcio",
+       "NTR24 Sport"
       ]
      },
      {
       "testo": "Al VAR, la sala dove gli arbitri rivedono le azioni al video, ci saranno Valerio Marini di Roma 1 e, come suo assistente (AVAR), Marco Piccinini di Forlì.",
       "fonti": [
-       "Benevento Calcio"
+       "Benevento Calcio",
+       "NTR24 Sport"
       ]
      }
     ],
@@ -273,6 +393,12 @@
       "url": "https://www.beneventocalcio.club/news/notizie/7684/serie-bkt-2026-2027-cremonese-benevento-dirige-livio-marinelli.shtml",
       "data": "30 ott, 12:55",
       "ufficiale": true
+     },
+     {
+      "nome": "NTR24 Sport",
+      "titolo": "Cremonese-Benevento, arbitra Marinelli di Tivoli",
+      "url": "https://sport.ntr24.tv/2026/10/30/cremonese-benevento-arbitra-marinelli-di-tivoli/",
+      "data": "30 ott, 13:05"
      }
     ]
    },
@@ -320,6 +446,14 @@
     {
      "nome": "Gazzetta di Benevento",
      "url": "https://www.gazzettabenevento.it/it/si-e-svolta-al-palazzo-del-governo-una-riunione-tecnica-di-coordinamento-presieduta-dal-prefetto"
+    },
+    {
+     "nome": "Lab TV",
+     "url": "https://www.labtv.net/attualita/2026/10/30/benevento-rafforzati-i-servizi-di-vigilanza-e-controllo-del-territorio-nel-centro-cittadino/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/prefettura-di-benevento-rafforzati-i-servizi-di-vigilanza-e-controllo-del-territorio-nel-centro-cittadino/"
     }
    ],
    "articolo": {
@@ -331,7 +465,9 @@
        "BeneventoNews24",
        "NTR24",
        "Cronache del Sannio",
-       "Ottopagine"
+       "Ottopagine",
+       "Lab TV",
+       "Anteprima24"
       ]
      },
      {
@@ -416,6 +552,18 @@
       "titolo": "Si è svolta al Palazzo del Governo una riunione tecnica di coordinamento, presieduta dal prefetto, Raffaela Moscarella, con i vertici provinciali delle Forze dell'ordine",
       "url": "https://www.gazzettabenevento.it/it/si-e-svolta-al-palazzo-del-governo-una-riunione-tecnica-di-coordinamento-presieduta-dal-prefetto",
       "data": "30 ott, 11:47"
+     },
+     {
+      "nome": "Lab TV",
+      "titolo": "Benevento, rafforzati i servizi di vigilanza e controllo del territorio nel centro cittadino",
+      "url": "https://www.labtv.net/attualita/2026/10/30/benevento-rafforzati-i-servizi-di-vigilanza-e-controllo-del-territorio-nel-centro-cittadino/",
+      "data": "30 ott, 12:52"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Prefettura di Benevento, rafforzati i servizi di vigilanza e controllo del territorio nel centro cittadino",
+      "url": "https://www.anteprima24.it/benevento/prefettura-di-benevento-rafforzati-i-servizi-di-vigilanza-e-controllo-del-territorio-nel-centro-cittadino/",
+      "data": "30 ott, 13:05"
      }
     ]
    },
@@ -620,9 +768,9 @@
    "id": "guardia-sanframondi-elenco-elettori-fuori-sede",
    "titolo": "Elettori fuori sede, elenco aperto a Guardia Sanframondi, San Salvatore Telesino, San Giorgio del Sannio e Castelvetere",
    "titolo_google": "Elettori fuori sede: elenco nei Comuni del Sannio, come fare",
-   "sintesi": "Guardia Sanframondi, San Salvatore Telesino, San Giorgio del Sannio e Castelvetere in Val Fortore hanno aperto l'elenco degli elettori fuori sede, per chi studia, lavora o si cura in un'altra regione e vuole votare lì alle politiche, alle europee e ai referendum. Per chi è già fuori sede la domanda va fatta entro il 31 dicembre.",
+   "sintesi": "Guardia Sanframondi, San Salvatore Telesino, San Giorgio del Sannio, Castelvetere in Val Fortore e San Lorenzo Maggiore spiegano come iscriversi all'elenco degli elettori fuori sede, per chi studia, lavora o si cura in un'altra regione e vuole votare lì alle politiche, alle europee e ai referendum. Per chi è già fuori sede la domanda va fatta entro il 31 dicembre.",
    "categoria": "avvisi",
-   "luogo": "Guardia Sanframondi, San Salvatore Telesino, San Giorgio del Sannio e Castelvetere in Val Fortore",
+   "luogo": "Guardia Sanframondi, San Salvatore Telesino, San Giorgio del Sannio, Castelvetere in Val Fortore e San Lorenzo Maggiore",
    "pubblicato": "2026-10-30",
    "stato": "ufficiale",
    "rilevante": false,
@@ -648,17 +796,23 @@
      "nome": "Comune di Castelvetere in Val Fortore",
      "url": "https://www.comune.castelvetereinvalfortore.bn.it/novita/notizie/novita_110.html",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di San Lorenzo Maggiore",
+     "url": "https://comune.sanlorenzomaggiore.bn.it/novita/elezioni-politiche-europee-e-referendum-voto-fuori-sede/",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Anche San Salvatore Telesino, San Giorgio del Sannio e Castelvetere in Val Fortore, oltre a Guardia Sanframondi, hanno aperto l'elenco comunale degli elettori fuori sede: serve a chi, alle elezioni politiche ed europee e ai referendum, vuole votare nel posto in cui si trova per studio, lavoro o cure, invece di tornare in paese. Non vale per le elezioni comunali e regionali.",
+      "testo": "Anche San Salvatore Telesino, San Giorgio del Sannio, Castelvetere in Val Fortore e San Lorenzo Maggiore, oltre a Guardia Sanframondi, hanno pubblicato l'avviso sull'elenco comunale degli elettori fuori sede: serve a chi, alle elezioni politiche ed europee e ai referendum, vuole votare nel posto in cui si trova per studio, lavoro o cure, invece di tornare in paese. Non vale per le elezioni comunali e regionali.",
       "fonti": [
        "Comune di Guardia Sanframondi",
        "Comune di San Salvatore Telesino",
        "Comune di San Giorgio del Sannio",
-       "Comune di Castelvetere in Val Fortore"
+       "Comune di Castelvetere in Val Fortore",
+       "Comune di San Lorenzo Maggiore"
       ],
       "giorno": "2026-10-30"
      },
@@ -675,6 +829,13 @@
        "Comune di San Salvatore Telesino"
       ],
       "giorno": "2026-10-30"
+     },
+     {
+      "giorno": "2026-10-30",
+      "fonti": [
+       "Comune di San Lorenzo Maggiore"
+      ],
+      "testo": "La domanda va fatta al Comune dove si ha il domicilio temporaneo, che deve essere in un'altra regione, con la copia di un documento d'identità e un documento che provi la condizione di fuori sede (l'iscrizione all'università, un contratto o un'attestazione del datore di lavoro, quella della struttura sanitaria per le cure). Chi è domiciliato a San Lorenzo Maggiore la manda per email a prot.slm@comune.sanlorenzomaggiore.bn.it o per PEC a prot.slm@asmepec.it. Entro il decimo giorno prima del voto il Comune manda l'attestato con il numero e l'indirizzo del seggio, da presentare insieme alla tessera elettorale e a un documento."
      },
      {
       "testo": "A Guardia Sanframondi nell'avviso del Comune si trovano la nota della Prefettura del 23 ottobre sull'elenco e il modulo della domanda di iscrizione; per informazioni c'è l'ufficio Segreteria e Affari generali del Comune.",
@@ -716,16 +877,21 @@
       "url": "https://www.comune.castelvetereinvalfortore.bn.it/novita/notizie/novita_110.html",
       "data": "29 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "Comune di San Lorenzo Maggiore",
+      "titolo": "Elezioni politiche, europee e referendum: voto fuori sede",
+      "url": "https://comune.sanlorenzomaggiore.bn.it/novita/elezioni-politiche-europee-e-referendum-voto-fuori-sede/",
+      "data": "30 ott",
+      "ufficiale": true
      }
     ],
     "aggiornamento": {
-     "testo": "Anche San Salvatore Telesino, San Giorgio del Sannio e Castelvetere in Val Fortore hanno aperto l'elenco degli elettori fuori sede; chi studia o lavora già fuori regione fa la domanda entro il 31 dicembre.",
+     "testo": "Anche il Comune di San Lorenzo Maggiore ha pubblicato come fare domanda per votare fuori sede: per chi ha lì il domicilio temporaneo, per email o PEC.",
      "fonti": [
-      "Comune di San Salvatore Telesino",
-      "Comune di San Giorgio del Sannio",
-      "Comune di Castelvetere in Val Fortore"
+      "Comune di San Lorenzo Maggiore"
      ],
-     "quando": "2026-10-30T13:07+01:00",
+     "quando": "2026-10-30T14:06+01:00",
      "titolo_prima": "Guardia Sanframondi, aperto l'elenco comunale degli elettori fuori sede: sul sito del Comune la domanda di iscrizione"
     }
    },
@@ -4776,57 +4942,182 @@
   },
   {
    "id": "unisannio-summit-aree-interne-2030-rete-rise",
-   "titolo": "Unisannio, al via il Summit Aree Interne 2030 con dieci università del Sud contro lo spopolamento",
-   "titolo_google": "Unisannio, Summit Aree Interne 2030 contro lo spopolamento",
-   "sintesi": "All'Università del Sannio è cominciato giovedì 29 ottobre il Summit Aree Interne 2030, due giorni promossi dalla rete RISE di dieci atenei del Mezzogiorno, di cui Unisannio è capofila. Da quattro laboratori con studiosi, sindaci e imprese nascerà il «Manifesto Aree Interne 2030».",
+   "titolo": "Summit Aree Interne all'Unisannio, Fico: sul pronto soccorso di Sant'Agata de' Goti il San Pio dovrà rispettare il TAR",
+   "titolo_google": "Summit Aree Interne a Benevento, Fico su Sant'Agata e acqua",
+   "sintesi": "Venerdì 30 ottobre il presidente della Regione Roberto Fico ha chiuso all'Università del Sannio il Summit Aree Interne 2030, parlando di sanità sul territorio, bus e fondi europei. Sul pronto soccorso di Sant'Agata de' Goti ha detto che la direttrice del San Pio dovrà eseguire l'ordinanza del TAR.",
    "categoria": "altro",
    "luogo": "Benevento, Università del Sannio",
-   "pubblicato": "2026-10-29T11:18:33+01:00",
-   "stato": "una_fonte",
+   "pubblicato": "2026-10-30T13:53+01:00",
+   "stato": "confermata",
    "rilevante": false,
-   "importanza": 2,
+   "importanza": 4,
    "immagine": "universita",
    "fonti": [
     {
-     "nome": "NTR24",
-     "url": "https://www.ntr24.tv/2026/10/29/unisannio-al-via-il-summit-aree-interne-i-fondi-non-bastano-senza-servizi-e-competenze/"
+     "nome": "NTR24 (30/10)",
+     "url": "https://www.ntr24.tv/2026/10/30/fico-al-summit-aree-interne-regione-impegnata-per-il-rilancio-del-territorio-sanita-e-trasporti-tra-le-priorita/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/442605/aree-interne-fico-sanita-e-trasporti-i-primi-risultati-della-regione.shtml"
+    },
+    {
+     "nome": "Lab TV",
+     "url": "https://www.labtv.net/attualita/2026/10/30/aree-interne-a-benevento-confronto-su-sviluppo-e-strategie-di-sviluppo/"
     }
    ],
    "articolo": {
     "racconto": [
      {
+      "giorno": "2026-10-30",
+      "fonti": [
+       "Ottopagine",
+       "Lab TV",
+       "NTR24 (30/10)"
+      ],
+      "testo": "Venerdì 30 ottobre si è chiuso all'Università del Sannio, a Benevento, il Summit Aree Interne 2030, con la giornata conclusiva all'Auditorium Sant'Agostino e l'intervento del presidente della Regione Campania, Roberto Fico. Fico ha detto che le aree interne sono una priorità del suo programma e ha indicato sanità vicina a casa, trasporti e fondi europei come i fronti su cui la Regione lavora contro lo spopolamento dei paesi."
+     },
+     {
+      "giorno": "2026-10-30",
+      "fonti": [
+       "Ottopagine",
+       "NTR24 (30/10)"
+      ],
+      "testo": "Sugli autobus Fico ha ricordato il caso di Benevento: «c'era il rischio concreto di perdere il servizio», ha detto, e la Regione ha preso direttamente la gestione e tutto il personale che oggi lavora sui bus. Sulla sanità ha detto che nelle aree interne sono stati raggiunti tutti gli obiettivi previsti per Case di comunità, Ospedali di comunità e Centrali operative territoriali, le strutture della sanità sul territorio. Ha citato anche i progetti Prius, pagati con fondi europei per le città medie: per Benevento c'è un accordo con l'assessore regionale Cuomo, con lavori che partiranno nei prossimi mesi."
+     },
+     {
+      "giorno": "2026-10-30",
+      "fonti": [
+       "NTR24 (30/10, Fico)",
+       "Ottopagine"
+      ],
+      "testo": "A margine Fico ha parlato del pronto soccorso dell'ospedale Sant'Alfonso Maria de' Liguori di Sant'Agata de' Goti. Il TAR Campania, accogliendo il ricorso del Comune di Puglianello, ha ordinato all'Azienda ospedaliera San Pio di riaprirlo 24 ore su 24 entro 60 giorni; se l'ordine non viene eseguito può intervenire un commissario ad acta, cioè nominato dal giudice. «La direttrice generale Morgante dovrà ottemperare a quanto stabilito dal Tar», ha detto Fico, riferendosi a Maria Morgante, che dirige il San Pio."
+     },
+     {
+      "giorno": "2026-10-30",
+      "fonti": [
+       "NTR24 (30/10, Fico)",
+       "Ottopagine"
+      ],
+      "testo": "Fico ha risposto anche sull'acqua: alcuni Comuni del Sannio hanno fatto ricorso al TAR contro la scelta dell'Ente Idrico Campano di affidare il servizio a Sannio Acque. Il presidente ha detto che quando è arrivato in Regione la procedura era già molto avanti e che fermarla avrebbe esposto la Regione a una causa; prima di firmare ha chiesto all'Ente e ai sindaci se confermavano la scelta, e la risposta è stata sì. Ora la Regione sta esaminando i documenti mandati dai sindaci che la contestano: «valuteremo la situazione», ha detto."
+     },
+     {
+      "giorno": "2026-10-30",
+      "fonti": [
+       "Ottopagine",
+       "Lab TV"
+      ],
+      "testo": "La rettrice dell'Unisannio, Maria Moreno, ha spiegato che nei quattro laboratori del summit si raccolgono idee ed esigenze di enti e istituzioni, da confrontare con le ricerche delle università e mettere a disposizione dei territori. Da qui nasce il «Manifesto Aree Interne 2030», il documento con le priorità e le proposte per le politiche europee di coesione dopo il 2027."
+     },
+     {
       "testo": "Giovedì 29 ottobre all'Università del Sannio, a Benevento, è cominciato il Summit Aree Interne 2030: due giorni di lavoro per capire come fermare lo spopolamento dei paesi dell'interno e trasformare le loro debolezze in occasioni di sviluppo. Lo promuove RISE, la rete di dieci università del Mezzogiorno di cui Unisannio è capofila.",
       "fonti": [
-       "NTR24"
-      ]
+       "NTR24 (29/10)"
+      ],
+      "giorno": "2026-10-29"
      },
      {
       "testo": "Dopo i saluti, la prima sessione ha parlato dei cambiamenti della politica di coesione europea, i fondi con cui l'Europa aiuta le regioni più deboli. Il cuore del summit sono quattro laboratori dove siedono insieme studiosi, amministratori locali, centri di ricerca e imprese, su quattro temi: il governo delle istituzioni, il territorio e la natura, le persone e le loro competenze, il digitale. Quello che ne esce finirà in un documento che sarà la base del «Manifesto Aree Interne 2030».",
       "fonti": [
-       "NTR24"
-      ]
+       "NTR24 (29/10)"
+      ],
+      "giorno": "2026-10-29"
      },
      {
       "testo": "Giuliano Resce, docente di Economia politica all'Università del Molise, ha detto che il problema è trasformare i dati e i soldi del PNRR in servizi veri per i cittadini: «Non basta avere portali aggiornati, serve alfabetizzare le comunità». Ha portato l'esempio del progetto «Generazioni Digitali», che aiuta i Comuni a comunicare e gli anziani a usare i servizi online, dalla carta d'identità ai certificati.",
       "fonti": [
-       "NTR24"
+       "NTR24 (29/10)"
+      ],
+      "giorno": "2026-10-29"
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "29 ottobre",
+      "fatto": "All'Università del Sannio comincia il Summit Aree Interne 2030 della rete RISE.",
+      "fonti": [
+       "NTR24 (29/10)"
+      ]
+     },
+     {
+      "data": "30 ottobre",
+      "fatto": "Giornata conclusiva all'Auditorium Sant'Agostino con il presidente della Regione Roberto Fico.",
+      "fonti": [
+       "Ottopagine",
+       "Lab TV"
       ]
      }
     ],
-    "cronologia": [],
-    "concordano": [],
-    "divergono": [],
+    "concordano": [
+     {
+      "testo": "Fico al summit dell'Unisannio venerdì 30 ottobre, con sanità sul territorio e trasporti tra i temi principali.",
+      "fonti": [
+       "NTR24 (30/10)",
+       "Ottopagine",
+       "Lab TV"
+      ]
+     },
+     {
+      "testo": "Sul pronto soccorso di Sant'Agata, per Fico l'ordinanza del TAR va eseguita.",
+      "fonti": [
+       "NTR24 (30/10, Fico)",
+       "Ottopagine"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "Su chi deve eseguire l'ordinanza: NTR24 scrive che il TAR si è rivolto all'Azienda ospedaliera San Pio e riporta le parole di Fico sulla direttrice Morgante; Ottopagine scrive che dovrà farlo l'Asl. Vale la prima: l'ospedale di Sant'Agata fa parte del San Pio, a cui il TAR ha dato l'ordine.",
+      "fonti": [
+       "NTR24 (30/10, Fico)",
+       "Ottopagine"
+      ]
+     }
+    ],
     "non_si_sa": [
      "Quando sarà presentato il «Manifesto Aree Interne 2030»."
     ],
     "fonti": [
      {
-      "nome": "NTR24",
+      "nome": "NTR24 (29/10)",
       "titolo": "Unisannio, al via il Summit Aree Interne: “I fondi non bastano senza servizi e competenze”",
       "url": "https://www.ntr24.tv/2026/10/29/unisannio-al-via-il-summit-aree-interne-i-fondi-non-bastano-senza-servizi-e-competenze/",
       "data": "29 ott, 11:18"
+     },
+     {
+      "nome": "NTR24 (30/10)",
+      "titolo": "Fico al Summit Aree Interne: “Regione impegnata per il rilancio del territorio”. Sanità e trasporti tra le priorità",
+      "url": "https://www.ntr24.tv/2026/10/30/fico-al-summit-aree-interne-regione-impegnata-per-il-rilancio-del-territorio-sanita-e-trasporti-tra-le-priorita/",
+      "data": "30 ott, 13:53"
+     },
+     {
+      "nome": "NTR24 (30/10, Fico)",
+      "titolo": "Pronto Soccorso Sant’Agata, Fico: “Morgante dovrà rispettare la decisione del Tar”",
+      "url": "https://www.ntr24.tv/2026/10/30/pronto-soccorso-santagata-fico-morgante-dovra-rispettare-la-decisione-del-tar/",
+      "data": "30 ott, 13:10"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Aree interne, Fico: sanità e trasporti, i primi risultati della Regione",
+      "url": "https://www.ottopagine.it/bn/attualita/442605/aree-interne-fico-sanita-e-trasporti-i-primi-risultati-della-regione.shtml",
+      "data": "30 ott, 12:58"
+     },
+     {
+      "nome": "Lab TV",
+      "titolo": "Aree interne, a Benevento confronto su sviluppo e strategie di sviluppo",
+      "url": "https://www.labtv.net/attualita/2026/10/30/aree-interne-a-benevento-confronto-su-sviluppo-e-strategie-di-sviluppo/",
+      "data": "30 ott, 13:50"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Venerdì il presidente della Regione Roberto Fico ha chiuso il summit: ha detto che il San Pio dovrà rispettare l'ordinanza del TAR sul pronto soccorso di Sant'Agata de' Goti e che la Regione sta valutando i ricorsi dei Comuni sull'acqua.",
+     "fonti": [
+      "NTR24 (30/10, Fico)",
+      "Ottopagine"
+     ],
+     "quando": "2026-10-30T14:06+01:00",
+     "titolo_prima": "Unisannio, al via il Summit Aree Interne 2030 con dieci università del Sud contro lo spopolamento"
+    }
    },
    "zona": "benevento",
    "foto": "universita-3"
