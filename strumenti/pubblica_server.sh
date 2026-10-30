@@ -165,8 +165,9 @@ fi
 ROSSO=0 CHIUSURE=true CURIOSITA=true
 # Chiusure dei Comuni sui social (a qualsiasi ora)
 python3 strumenti/chiusure_social.py --stato "$STATO/social/chiusure.json" || { avviso "le chiusure dei Comuni non sono uscite su tutti i canali"; ROSSO=1; CHIUSURE=false; }
-# Curiosità del Sannio (alle 12, su Telegram, Facebook e Instagram)
-python3 strumenti/curiosita_social.py --stato "$STATO/social/curiosita.json" || { avviso "la curiosità del Sannio non è uscita su tutti i canali"; ROSSO=1; CURIOSITA=false; }
+# Curiosità del Sannio (alle 12, su Telegram, Facebook e Instagram): di solito l'ha già mandata alle 12:00 precise
+# strumenti/curiosita_alle_12.sh (stesso lucchetto); qui si riprova se lì un canale non è andato
+/usr/bin/flock -w 120 /tmp/nb_curiosita_social.lock python3 strumenti/curiosita_social.py --stato "$STATO/social/curiosita.json" || { avviso "la curiosità del Sannio non è uscita su tutti i canali"; ROSSO=1; CURIOSITA=false; }
 # l'esito per la sentinella (su GitHub era il lavoro in rosso): la prossima pubblicazione riprova da sola
 printf '{"quando": "%s", "chiusure": %s, "curiosita": %s}\n' "$(date -Iseconds)" "$CHIUSURE" "$CURIOSITA" > "$STATO/ultimo_esito.json"
 # Facebook (una notizia nuova sulla Pagina, se è il momento)

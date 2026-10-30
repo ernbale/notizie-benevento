@@ -1955,18 +1955,22 @@ def _cronologia(righe, fonti, titolo):
 # ---------- Curiosità del Sannio (curiosita.json: una al giorno, alle 12; sui social strumenti/curiosita_social.py) ----------
 # Voluta dal proprietario il 24 ott 2026: «un post al giorno alle 12: una curiosità, una storia, un fatto del passato,
 # un detto, una superstizione, una leggenda… di Benevento», «andare avanti all'infinito», «nessuna storia scritta male».
-# Sul sito esce col primo giro dopo le 12 del suo giorno (prima non c'è: né pagina, né riquadro, né sitemap).
+# Sul sito esce col primo giro dopo le 12 del suo giorno (prima non c'è: né pagina, né riquadro, né sitemap). Dal 30
+# ott 2026 la pagina c'è già dalle 11:55 (lui, sulla curiosità uscita alle 12:02 perché la pubblicazione delle 12 si è
+# intoppata col giro di ogni ora: «se si intoppa con il giro fai 11:59»): il server costruisce il sito alle 11:56 e alle
+# 12:00 precise manda solo i post (strumenti/curiosita_social.py), che trovano la pagina già online.
 ORA_CURIOSITA = 12
+PRIMA_CURIOSITA = (11, 55)   # ora e minuto da cui la pagina della curiosità del giorno è sul sito
 CAT_CURIOSITA = {"leggenda": "Leggenda", "storia": "Storia", "detto": "Detto", "superstizione": "Superstizione",
                  "tradizione": "Tradizione", "cibo": "Sapori", "paese": "Paesi del Sannio", "accadde oggi": "Accadde oggi"}
 
 
 def curiosita_uscite(curiosita, adesso):
-    """Le curiosità già uscite (dalle 12 del loro giorno), dalla più nuova."""
+    """Le curiosità già uscite (dalle 11:55 del loro giorno: PRIMA_CURIOSITA), dalla più nuova."""
     from facebook import fuso
     t = adesso.astimezone(fuso())
     oggi = t.date().isoformat()
-    return sorted((c for c in curiosita if c["data"] < oggi or (c["data"] == oggi and t.hour >= ORA_CURIOSITA)),
+    return sorted((c for c in curiosita if c["data"] < oggi or (c["data"] == oggi and (t.hour, t.minute) >= PRIMA_CURIOSITA)),
                   key=lambda c: c["data"], reverse=True)
 
 
