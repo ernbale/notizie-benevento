@@ -94,7 +94,7 @@ Da dove arriva la pagina (strumenti/contributi.py):
  "dove": "sannio|campania|sud|italia|europa",
  "chi": ["cittadino|giovani|commercio|artigiano|agricoltura|turismo|impresa|nuova|professionista|associazione|ente"],
  "temi": ["figli|scuola|casa|lavoro|investire|aprire|digitale|energia|innovazione|export|credito|giovani-donne|crisi|sociale|cultura"],
- "aiuto": ["fondo|bonus|prestito|garanzia|fiscale"],
+ "aiuto": ["fondo|bonus|prestito|garanzia|fiscale|corso"],
  "forma": "Contributo a fondo perduto", "quanto": "fino a 5.000 € (come scritto nella fonte, o \"\")",
  "apertura": "AAAA-MM-GG o null", "scadenza": "AAAA-MM-GG o null", "scadenza_testo": "frase breve o null",
  "click_day": "AAAA-MM-GGTHH:MM o null", "link": "https://… pagina ufficiale",
@@ -109,7 +109,8 @@ Da dove arriva la pagina (strumenti/contributi.py):
   `commercio`, `artigiano`, `turismo` e `agricoltura` (questa solo se la fonte non esclude l'agricoltura: molti aiuti
   «de minimis» la escludono).
 - `aiuto`: `fondo` soldi a fondo perduto, `bonus` bonus/assegni/buoni alle persone, `prestito`, `garanzia`, `fiscale`
-  (credito d'imposta, detrazione, sconto).
+  (credito d'imposta, detrazione, sconto), `corso` corsi gratuiti (lui, 30 ott 2026, alla domanda se i corsi gratuiti
+  vanno nelle agevolazioni: «si»; quelli a pagamento restano fuori, punto 5).
 
 ## Gli esclusi (`contributi_esclusi.json`, `{"esclusi": [ … ]}`)
 

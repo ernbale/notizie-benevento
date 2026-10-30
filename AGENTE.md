@@ -64,7 +64,9 @@ farlo giusto subito.
    - se le fonti non sono d'accordo su un dettaglio (l'età: 29 o 26 anni) scrivi solo quello confermato, o «un
      giovane»;
    - quando le fonti parlano di un gesto volontario, l'ultimo paragrafo del racconto è una riga coi numeri di aiuto:
-     «Chi ha bisogno di parlare con qualcuno può chiamare Telefono Amico allo 02 2327 2327».
+     «Chi ha bisogno di parlare con qualcuno può chiamare Telefono Amico allo 02 2327 2327»;
+   - sui social esce come le altre notizie, secondo la sua `importanza` (lui, 30 ott 2026, alla domanda se le morti di
+     privati devono andare anche sui social: «si»).
    **Chi ha un ruolo pubblico si chiama sempre per nome e cognome** (lui, 28 ott 2026: «nomi se sono pubblici
    sempre»; 29 ott: «metti sempre i nomi»): sindaci, assessori, consiglieri, parlamentari, presidenti di enti,
    dirigenti, funzionari e dipendenti pubblici (anche un impiegato comunale; quelli in servizio anche per fatti
@@ -876,7 +878,7 @@ contributi, sovvenzioni»): tu **non tocchi** `contributi_locali.json` né `cont
 
 Tu fai una cosa sola. Quando una notizia è un **aiuto vero** che un Comune (o un Ambito sociale, la Provincia) dà a chi
 vive qui — soldi, bonus, buoni (libri, spesa), assegni, contributi per l'affitto o le bollette, borse di studio,
-rimborsi, esenzioni o riduzioni per chi ha l'ISEE basso, contributi alle imprese o alle associazioni — mettici
+rimborsi, esenzioni o riduzioni per chi ha l'ISEE basso, contributi alle imprese o alle associazioni, corsi gratuiti — mettici
 `"contributo": {"chi": [...], "temi": [...], "aiuto": [...]}` e la scadenza delle domande in `in_vigore_fino`; se la
 data non c'è ancora, `"quando": "Domande dopo l'avviso del Comune, atteso nei prossimi giorni"` (una frase breve). Così
 esce anche nella pagina Agevolazioni.
@@ -885,11 +887,12 @@ esce anche nella pagina Agevolazioni.
   ente (Comuni, scuole, enti pubblici).
 - `temi`: figli, scuola, casa (casa, affitto, bollette), lavoro, investire, aprire, digitale, energia, innovazione,
   export, credito, giovani-donne, crisi, sociale, cultura.
-- `aiuto`: fondo (soldi a fondo perduto), bonus (bonus, assegni, buoni alle persone), prestito, garanzia, fiscale.
+- `aiuto`: fondo (soldi a fondo perduto), bonus (bonus, assegni, buoni alle persone), prestito, garanzia, fiscale,
+  corso (corsi gratuiti; lui, 30 ott 2026, alla domanda se i corsi gratuiti vanno nelle agevolazioni: «si»).
 - **Non è un contributo** (lui, 28 ott 2026: «se li leggi aiuti sovvenzioni contributi non c'è nulla, anzi il
   contrario, quasi tutti il Comune chiede soldi»): pagare tasse, tariffe, rette e mense; bandi per comprare loculi;
   lampade votive; contatori; albi di scrutatori e presidenti di seggio; elenchi elettorali; concorsi, avvisi di lavoro e
-  incarichi (avranno la sezione Concorsi); attività o corsi gratuiti che non sono un aiuto in soldi; gli elenchi dei
+  incarichi (avranno la sezione Concorsi); attività gratuite che non sono un aiuto in soldi (i corsi gratuiti invece sì, `aiuto` corso); gli elenchi dei
   beneficiari già scelti. Nel dubbio, niente `contributo`.
 - Esempio: i buoni libri di Sant'Angelo a Cupolo, `"contributo": {"chi": ["cittadino", "giovani"], "temi": ["scuola",
   "figli"], "aiuto": ["bonus"]}`, `"in_vigore_fino": "2026-10-30"`.

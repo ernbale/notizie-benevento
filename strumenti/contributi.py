@@ -84,7 +84,8 @@ FONDI_UE = re.compile(r"\bFESR\b|\bFSE\b|FSE\+|\bPNRR\b|Next ?Generation|\bPN [A
                       r"fondi europei|Horizon|Erasmus|\b21[-/]27\b|2021[-/ ]2027", re.I)   # «Unione europea» no: «mano d'opera dell'Unione europea»
 # «Che aiuto?»: la forma dell'aiuto
 AIUTO = {"fondo": "Soldi a fondo perduto", "bonus": "Bonus, assegni e buoni", "prestito": "Prestito agevolato",
-         "garanzia": "Garanzia sul prestito", "fiscale": "Sconto fiscale"}
+         "garanzia": "Garanzia sul prestito", "fiscale": "Sconto fiscale",
+         "corso": "Corsi gratuiti"}   # lui, 30 ott 2026: i corsi gratuiti vanno nelle agevolazioni («si»)
 FORME_AIUTO = {"Contributo/Fondo perduto": "fondo", "Agevolazione fiscale": "fiscale", "Prestito/Anticipo rimborsabile": "prestito",
                "Interventi a garanzia": "garanzia", "Riduzione dei contributi di previdenza sociale": "fiscale"}
 CHI_CATALOGO = [(r"^Impresa da costituire", "nuova"), (r"^(Impresa|Consorzio|Rete d'impresa|Istituto finanziario)", "impresa"),
