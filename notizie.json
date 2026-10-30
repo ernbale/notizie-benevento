@@ -1,7 +1,58 @@
 {
- "aggiornato": "2026-10-30T14:06+01:00",
+ "aggiornato": "2026-10-30T15:03+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "sassinoro-via-fraterna-vietato-passaggio-pedoni-fabbricato-pericolante",
+   "titolo": "Sassinoro, vietato il passaggio a piedi in un tratto di via Fraterna: cadono tegole e calcinacci da un edificio abbandonato",
+   "titolo_google": "Sassinoro, via Fraterna vietata ai pedoni: edificio pericolante",
+   "sintesi": "A Sassinoro il sindaco Luca Apollonio ha vietato il passaggio a piedi nel tratto di via Fraterna davanti a un vecchio edificio disabitato, da cui cadono pietre, tegole e calcinacci. Il tratto viene transennato e resta chiuso finché il pericolo non sarà eliminato.",
+   "categoria": "strade",
+   "luogo": "Sassinoro, via Fraterna",
+   "pubblicato": "2026-10-30",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "fonti": [
+    {
+     "nome": "Comune di Sassinoro",
+     "url": "https://sassinoro.halleyweb.it/mc/mc_p_dettaglio.php?id_pubbl=8372",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Sassinoro, nell'alto Tammaro, non si può più passare a piedi nel tratto di via Fraterna che sta davanti a un vecchio edificio disabitato e abbandonato, affacciato direttamente sulla strada. Lo ha deciso il sindaco Luca Apollonio con un'ordinanza di venerdì 30 ottobre, perché dal fabbricato sono già cadute pietre, tegole, calcinacci e altri pezzi della costruzione.",
+      "fonti": [
+       "Comune di Sassinoro"
+      ]
+     },
+     {
+      "testo": "Il divieto vale solo per la parte di strada dove i pezzi possono cadere. Il Comune mette transenne, barriere e cartelli per impedire di passare; il divieto comincia quando sono montati e resta finché il pericolo non sarà eliminato. A controllare che venga rispettato sono incaricate le forze di polizia.",
+      "fonti": [
+       "Comune di Sassinoro"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Chi deve mettere in sicurezza l'edificio e quando"
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Sassinoro",
+      "titolo": "OGGETTO: INTERDIZIONE DEL TRANSITO PEDONALE IN VIA FRATERNA, IN PROSSIMITÀ DI UN FABBRICATO PERICOLANTE, PER RISCHIO DI CADUTA DI MATERIALE LAPIDEO, TEGOLE E CALCINACCI, A TUTELA DELLA PUBBLICA INCOLUMITÀ E PER PREVENIRE POSSIBILI DANNI A PERSONE E BENI.",
+      "url": "https://sassinoro.halleyweb.it/mc/mc_p_dettaglio.php?id_pubbl=8372",
+      "data": "30 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "zona": "fortore"
+  },
   {
    "id": "benevento-navette-air-cimitero-31-ottobre-2-novembre-2026",
    "titolo": "Benevento, navette AIR per il cimitero dal 31 ottobre al 2 novembre: due linee da piazza Cardinal Pacca e piazza Risorgimento, percorsi e orari",
@@ -2050,6 +2101,10 @@
      "nome": "Questura di Benevento",
      "url": "https://questure.poliziadistato.it/it/Benevento/articolo/11326ae39ec41aeeb729886794",
      "ufficiale": true
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/442610/prevenzione-il-cardiologo-della-ratta-dona-un-defibrillatore-alla-scuola.shtml"
     }
    ],
    "articolo": {
@@ -2057,25 +2112,54 @@
      {
       "testo": "Giovedì 29 ottobre, nella sala polifunzionale di Colle Sannita, la Questura di Benevento ha presentato il progetto «S.S.S. - Sicurezza, Scuola, Sanità» e ha consegnato un defibrillatore all'Istituto comprensivo di Colle Sannita, la scuola che ha plessi anche a Circello, Castelpagano e Castelvetere in Val Fortore. Il defibrillatore è l'apparecchio che con una scossa può far ripartire il cuore in caso di arresto cardiaco.",
       "fonti": [
-       "Questura di Benevento"
-      ]
+       "Questura di Benevento",
+       "Ottopagine"
+      ],
+      "giorno": "2026-10-29"
      },
      {
-      "testo": "C'erano il questore Giovanni Leuci, la dirigente scolastica dell'istituto Rosa Tangredi, il cardiologo Giuseppe della Ratta e rappresentanti dei Comuni di Colle Sannita, Circello, Castelpagano e Castelvetere in Val Fortore. Il progetto nasce da un protocollo firmato dalla Questura, dall'Ufficio scolastico della provincia di Benevento e dallo stesso cardiologo.",
+      "testo": "C'erano il questore Giovanni Leuci, la dirigente scolastica dell'istituto Rosa Tangredi, il cardiologo Giuseppe della Ratta e rappresentanti dei Comuni di Colle Sannita, Circello, Castelpagano e Castelvetere in Val Fortore. Il defibrillatore lo ha donato proprio della Ratta, che è aritmologo, cioè specializzato nei disturbi del ritmo del cuore. Il progetto nasce da un protocollo firmato dalla Questura, dall'Ufficio scolastico della provincia di Benevento e dallo stesso cardiologo.",
       "fonti": [
-       "Questura di Benevento"
-      ]
+       "Questura di Benevento",
+       "Ottopagine"
+      ],
+      "giorno": "2026-10-29"
+     },
+     {
+      "testo": "«In caso di arresto cardiaco, saper intervenire tempestivamente permette di non sprecare secondi preziosi e può salvare una vita», ha detto della Ratta, che ha definito l'incontro «solo l'inizio di un percorso». Il cardiologo ha ricordato anche che i problemi del ritmo del cuore vanno seguiti da medici specializzati in aritmologia.",
+      "fonti": [
+       "Ottopagine"
+      ],
+      "giorno": "2026-10-29"
      },
      {
       "testo": "Nelle fasi successive rappresentanti della Questura terranno lezioni sulla legalità nelle scuole dell'istituto: rispetto delle regole, cittadinanza attiva, convivenza civile, responsabilità. Ci saranno anche corsi ufficiali BLSD, quelli che insegnano il primo soccorso e l'uso del defibrillatore, con istruttori certificati.",
       "fonti": [
-       "Questura di Benevento"
-      ]
+       "Questura di Benevento",
+       "Ottopagine"
+      ],
+      "giorno": "2026-10-29"
      }
     ],
     "cronologia": [],
-    "concordano": [],
-    "divergono": [],
+    "concordano": [
+     {
+      "testo": "La consegna del defibrillatore all'Istituto comprensivo di Colle Sannita e i corsi BLSD per docenti e personale",
+      "fonti": [
+       "Questura di Benevento",
+       "Ottopagine"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "Il luogo dell'incontro: la Questura scrive la sala polifunzionale di Colle Sannita, Ottopagine l'auditorium della scuola media. Abbiamo tenuto quello della Questura, che ha organizzato il progetto.",
+      "fonti": [
+       "Questura di Benevento",
+       "Ottopagine"
+      ]
+     }
+    ],
     "non_si_sa": [
      "Quando cominciano le lezioni e i corsi di primo soccorso"
     ],
@@ -2086,6 +2170,12 @@
       "url": "https://questure.poliziadistato.it/it/Benevento/articolo/11326ae39ec41aeeb729886794",
       "data": "29 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "\"Fondamentale educare all'utilizzo di manovre e apparecchi salvavita. Attenzione a ruolo aritmologo\"",
+      "url": "https://www.ottopagine.it/bn/attualita/442610/prevenzione-il-cardiologo-della-ratta-dona-un-defibrillatore-alla-scuola.shtml",
+      "data": "30 ott, 13:56"
      }
     ]
    },
@@ -5045,6 +5135,10 @@
     {
      "nome": "Lab TV",
      "url": "https://www.labtv.net/attualita/2026/10/30/aree-interne-a-benevento-confronto-su-sviluppo-e-strategie-di-sviluppo/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/aree-interne-unisannio-documento/"
     }
    ],
    "articolo": {
@@ -5078,9 +5172,10 @@
       "giorno": "2026-10-30",
       "fonti": [
        "NTR24 (30/10, Fico)",
-       "Ottopagine"
+       "Ottopagine",
+       "Anteprima24"
       ],
-      "testo": "Fico ha risposto anche sull'acqua: alcuni Comuni del Sannio hanno fatto ricorso al TAR contro la scelta dell'Ente Idrico Campano di affidare il servizio a Sannio Acque. Il presidente ha detto che quando è arrivato in Regione la procedura era già molto avanti e che fermarla avrebbe esposto la Regione a una causa; prima di firmare ha chiesto all'Ente e ai sindaci se confermavano la scelta, e la risposta è stata sì. Ora la Regione sta esaminando i documenti mandati dai sindaci che la contestano: «valuteremo la situazione», ha detto."
+      "testo": "Fico ha risposto anche sull'acqua: alcuni Comuni del Sannio hanno fatto ricorso al TAR contro la scelta dell'Ente Idrico Campano di affidare il servizio a Sannio Acque. Il presidente ha detto che quando è arrivato in Regione la procedura era già molto avanti e che fermarla avrebbe esposto la Regione a una causa; prima di firmare ha chiesto all'Ente e ai sindaci se confermavano la scelta, e la risposta è stata sì. Ora la Regione sta esaminando i documenti mandati dai sindaci che la contestano: «valuteremo la situazione», ha detto. Fico ha detto anche di aver scritto all'Ente Idrico Campano: della volontà cambiata dei sindaci che sollevano dubbi «terremo conto», «e ci regoleremo di conseguenza»."
      },
      {
       "giorno": "2026-10-30",
@@ -5089,6 +5184,13 @@
        "Lab TV"
       ],
       "testo": "La rettrice dell'Unisannio, Maria Moreno, ha spiegato che nei quattro laboratori del summit si raccolgono idee ed esigenze di enti e istituzioni, da confrontare con le ricerche delle università e mettere a disposizione dei territori. Da qui nasce il «Manifesto Aree Interne 2030», il documento con le priorità e le proposte per le politiche europee di coesione dopo il 2027."
+     },
+     {
+      "giorno": "2026-10-30",
+      "fonti": [
+       "Anteprima24"
+      ],
+      "testo": "All'Auditorium Sant'Agostino le università della rete hanno firmato un documento che punta a mettere la ricerca al servizio dei territori e dei piccoli Comuni. Al confronto c'erano anche la prefetta Raffaela Moscarella, i consiglieri regionali Pellegrino Mastella e Fernando Errico e il sindaco di Benevento Clemente Mastella."
      },
      {
       "testo": "Giovedì 29 ottobre all'Università del Sannio, a Benevento, è cominciato il Summit Aree Interne 2030: due giorni di lavoro per capire come fermare lo spopolamento dei paesi dell'interno e trasformare le loro debolezze in occasioni di sviluppo. Lo promuove RISE, la rete di dieci università del Mezzogiorno di cui Unisannio è capofila.",
@@ -5188,6 +5290,12 @@
       "titolo": "Aree interne, a Benevento confronto su sviluppo e strategie di sviluppo",
       "url": "https://www.labtv.net/attualita/2026/10/30/aree-interne-a-benevento-confronto-su-sviluppo-e-strategie-di-sviluppo/",
       "data": "30 ott, 13:50"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Fico all’Unisannio per le aree interne: confronto su acqua, sanità e trasporti",
+      "url": "https://www.anteprima24.it/benevento/aree-interne-unisannio-documento/",
+      "data": "30 ott, 14:28"
      }
     ],
     "aggiornamento": {
