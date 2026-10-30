@@ -3,6 +3,68 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "cremonese-benevento-arbitro-livio-marinelli-31-ottobre",
+   "titolo": "Cremonese-Benevento di sabato 31 ottobre allo Zini: arbitra Livio Marinelli di Tivoli",
+   "titolo_google": "Cremonese-Benevento, arbitro Livio Marinelli il 31 ottobre",
+   "sintesi": "Sarà Livio Marinelli di Tivoli ad arbitrare Cremonese-Benevento, partita della 10ª giornata di Serie BKT in programma sabato 31 ottobre alle 15 allo stadio Giovanni Zini di Cremona. Al VAR Valerio Marini di Roma 1.",
+   "categoria": "sport",
+   "sport": "calcio",
+   "zona": "benevento",
+   "immagine": "calcio",
+   "luogo": "Cremona, stadio Giovanni Zini",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 5,
+   "comunicati": [
+    "u8226c3e34ec"
+   ],
+   "fonti": [
+    {
+     "nome": "Benevento Calcio",
+     "url": "https://www.beneventocalcio.club/news/notizie/7684/serie-bkt-2026-2027-cremonese-benevento-dirige-livio-marinelli.shtml",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Cremonese-Benevento, partita della 10ª giornata del campionato di Serie BKT, sarà arbitrata da Livio Marinelli di Tivoli. Si gioca sabato 31 ottobre alle 15 allo stadio Giovanni Zini di Cremona.",
+      "fonti": [
+       "Benevento Calcio"
+      ]
+     },
+     {
+      "testo": "Con lui ci saranno gli assistenti, cioè i guardalinee, Francesco Cortese di Palermo e Vincenzo Russo di Nichelino. Il quarto ufficiale, l'arbitro che sta a bordo campo, sarà Edoardo Gianquinto di Parma.",
+      "fonti": [
+       "Benevento Calcio"
+      ]
+     },
+     {
+      "testo": "Al VAR, la sala dove gli arbitri rivedono le azioni al video, ci saranno Valerio Marini di Roma 1 e, come suo assistente (AVAR), Marco Piccinini di Forlì.",
+      "fonti": [
+       "Benevento Calcio"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Benevento Calcio",
+      "titolo": "SERIE BKT 2026-2027: CREMONESE-BENEVENTO, DIRIGE LIVIO MARINELLI",
+      "url": "https://www.beneventocalcio.club/news/notizie/7684/serie-bkt-2026-2027-cremonese-benevento-dirige-livio-marinelli.shtml",
+      "data": "30 ott, 12:55",
+      "ufficiale": true
+     }
+    ]
+   },
+   "subito": true,
+   "pubblicato": "2026-10-30T12:58:19+01:00",
+   "foto": "calcio-18"
+  },
+  {
    "id": "benevento-corso-garibaldi-presidio-polizia-sere-weekend",
    "titolo": "Benevento, presidio fisso delle forze di Polizia su Corso Garibaldi il venerdì e il sabato sera",
    "titolo_google": "Benevento, presidio di Polizia su Corso Garibaldi nel weekend",
