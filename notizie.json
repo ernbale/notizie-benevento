@@ -3,6 +3,70 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "yolo-benevento-catanzaro-1-novembre",
+   "titolo": "Basket B femminile, la YOLO+ Miwa Benevento domenica 1° novembre in trasferta a Catanzaro",
+   "titolo_google": "Basket, Catanzaro-YOLO+ Benevento: domenica 1° novembre alle 18",
+   "sintesi": "Domenica 1° novembre alle 18 la YOLO+ Miwa Basket Benevento gioca a Catanzaro, al Palazzetto G. Greco, contro il Catanzaro Centro Basket, che ha vinto cinque delle prime sei partite del campionato di B femminile.",
+   "categoria": "sport",
+   "sport": "basket",
+   "luogo": "Benevento",
+   "zona": "benevento",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "Miwa Basket Benevento",
+     "url": "https://www.cestisticabenevento.it/",
+     "ufficiale": true
+    }
+   ],
+   "foto_inviate": [
+    "img/locandine/yolo-benevento-catanzaro-1-novembre-foto.jpg"
+   ],
+   "foto_da": "Miwa Basket Benevento",
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "La YOLO+ Miwa Basket Benevento, la squadra femminile della società sannita, gioca in trasferta domenica 1° novembre alle 18 contro il Catanzaro Centro Basket, una delle squadre di vertice del campionato di B femminile. La partita si gioca al Palazzetto G. Greco e gli arbitri sono Rosa Anna Nocera e Lorenzo Smirne, di Catanzaro.",
+      "fonti": [
+       "Miwa Basket Benevento"
+      ]
+     },
+     {
+      "testo": "Il Catanzaro nelle prime sei giornate ha vinto cinque partite e ne ha persa una. Secondo la società beneventana, negli ultimi anni è sempre stato tra i protagonisti del campionato e quest'anno ha una squadra ben costruita, con le guardie Villanueva e Stach e le ali Codispoti e Poggi.",
+      "fonti": [
+       "Miwa Basket Benevento"
+      ]
+     },
+     {
+      "testo": "Le beneventane vengono dalla partita in casa contro la capolista Dinamo Taranto. Per la società quella gara ha mostrato che la squadra può giocarsela a viso aperto anche con le prime della classifica, e a Catanzaro dovrà cercare lo stesso atteggiamento. La squadra, allenata da coach Pasquariello, si sta preparando per portare a casa due punti.",
+      "fonti": [
+       "Miwa Basket Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Miwa Basket Benevento",
+      "titolo": "Pre partita Catanzaro-YOLO+",
+      "url": "https://www.cestisticabenevento.it/",
+      "data": "30 ott, 10:04",
+      "ufficiale": true
+     }
+    ]
+   },
+   "comunicati": [
+    "c0e624a5319a"
+   ],
+   "subito": true,
+   "pubblicato": "2026-10-30T10:06:10+01:00"
+  },
+  {
    "id": "benevento-tribunale-due-magistrati-tirocinio-sezione-penale",
    "titolo": "Benevento, due magistrati in tirocinio in arrivo alla sezione penale del Tribunale",
    "titolo_google": "Tribunale di Benevento, due nuovi magistrati al penale",
