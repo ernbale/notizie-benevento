@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-30T06:40+01:00",
+ "aggiornato": "2026-10-30T07:10+01:00",
  "eventi": [
   {
    "id": "mostra-cosmogonie-meact-torrecuso-2026",
@@ -729,6 +729,36 @@
    "foto": "luminarie-9"
   },
   {
+   "id": "halloween-experience-arpaise-2026",
+   "titolo": "«Halloween Experience» in piazza Donisi ad Arpaise",
+   "tipo": "festa",
+   "inizio": "2026-10-30",
+   "orari": "dalle 16.30 alle 18.30",
+   "luogo": "Piazza Donisi",
+   "comune": "Arpaise",
+   "zona": "provincia",
+   "organizzatore": "Cooperativa sociale Bios Sannitica",
+   "breve": "Venerdì 30 ottobre, dalle 16.30 alle 18.30, una festa di Halloween per i bambini in piazza Donisi ad Arpaise.",
+   "descrizione": [
+    {
+     "testo": "Venerdì 30 ottobre 2026, dalle 16.30 alle 18.30, piazza Donisi ad Arpaise ospita «Halloween Experience», un pomeriggio di Halloween per tutti i bambini del paese e dei dintorni, organizzato dalla cooperativa sociale Bios Sannitica.",
+     "fonti": [
+      "NTR24"
+     ]
+    }
+   ],
+   "immagine": "halloween",
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "titolo": "Halloween e Ponte d’Ognissanti, Neri per Caso, castagne e pecorino: gli eventi del weekend a Benevento e nel Sannio",
+     "url": "https://www.ntr24.tv/2026/10/30/eventi-30-31-1-2/",
+     "data": "30 ott, 06:00"
+    }
+   ],
+   "foto": "halloween-5"
+  },
+  {
    "id": "stregati-dai-vicoli-ponte-2026",
    "titolo": "«Stregati dai Vicoli» a Ponte: janare e zucche stregate",
    "tipo": "festa",
@@ -932,6 +962,71 @@
    "foto": "sagra-10"
   },
   {
+   "id": "halloween-palazzo-ducale-circello-2026",
+   "titolo": "Halloween al Palazzo Ducale di Circello",
+   "tipo": "festa",
+   "inizio": "2026-10-31",
+   "luogo": "Palazzo Ducale",
+   "comune": "Circello",
+   "zona": "fortore",
+   "prezzo": "Ingresso gratuito",
+   "organizzatore": "Associazione «Circello Punto e @ Capo ETS»",
+   "breve": "Sabato 31 ottobre una festa di Halloween per bambini e ragazzi nelle sale del Palazzo Ducale di Circello, a ingresso gratuito.",
+   "descrizione": [
+    {
+     "testo": "Sabato 31 ottobre 2026 il Palazzo Ducale di Circello, nel centro storico, ospita «Halloween al Palazzo Ducale», una festa per bambini e famiglie organizzata dall'associazione «Circello Punto e @ Capo ETS» con il patrocinio del Comune. L'ingresso è gratuito.",
+     "fonti": [
+      "NTR24"
+     ]
+    },
+    {
+     "testo": "Le attività sono divise per età. Per i bambini dai 3 ai 7 anni c'è «Il bosco delle streghe», con truccabimbi, laboratori, spettacoli e alla fine il gioco della pentolaccia. Per i ragazzi dagli 8 ai 13 anni, nella sala grande, il «Monster DJ Party», con musica, giochi, sfide a squadre e una piccola escape room.",
+     "fonti": [
+      "NTR24"
+     ]
+    }
+   ],
+   "immagine": "halloween",
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "titolo": "Halloween e Ponte d’Ognissanti, Neri per Caso, castagne e pecorino: gli eventi del weekend a Benevento e nel Sannio",
+     "url": "https://www.ntr24.tv/2026/10/30/eventi-30-31-1-2/",
+     "data": "30 ott, 06:00"
+    }
+   ],
+   "foto": "halloween-4"
+  },
+  {
+   "id": "montemale-halloween-villaggio-zucche-sant-arcangelo-trimonte-2026",
+   "titolo": "«Montemale Halloween 2026 – Il Villaggio delle Zucche» a Sant'Arcangelo Trimonte",
+   "tipo": "festa",
+   "inizio": "2026-10-31",
+   "orari": "dalle 14 alle 23.30",
+   "luogo": "Impianto sportivo comunale «Claudio Racioppi»",
+   "comune": "Sant'Arcangelo Trimonte",
+   "zona": "provincia",
+   "breve": "Sabato 31 ottobre, dalle 14 alle 23.30, il Villaggio delle Zucche per Halloween all'impianto sportivo comunale di Sant'Arcangelo Trimonte.",
+   "descrizione": [
+    {
+     "testo": "Sabato 31 ottobre 2026, dalle 14 alle 23.30, l'impianto sportivo comunale «Claudio Racioppi» di Sant'Arcangelo Trimonte ospita «Montemale Halloween 2026 – Il Villaggio delle Zucche», una giornata di festa per Halloween.",
+     "fonti": [
+      "NTR24"
+     ]
+    }
+   ],
+   "immagine": "halloween",
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "titolo": "Halloween e Ponte d’Ognissanti, Neri per Caso, castagne e pecorino: gli eventi del weekend a Benevento e nel Sannio",
+     "url": "https://www.ntr24.tv/2026/10/30/eventi-30-31-1-2/",
+     "data": "30 ott, 06:00"
+    }
+   ],
+   "foto": "halloween-7"
+  },
+  {
    "id": "halloween-sezione-egizia-museo-arcos-benevento-2026",
    "titolo": "Halloween alla Sezione Egizia del Museo Arcos",
    "tipo": "museo",
@@ -1030,6 +1125,46 @@
    ],
    "immagine": "libri",
    "foto": "libri-5"
+  },
+  {
+   "id": "concerto-lume-candela-halloween-de-la-salle-benevento-2026",
+   "titolo": "«Concerto a lume di candela – Halloween Edition» al Teatro De La Salle",
+   "tipo": "concerto",
+   "inizio": "2026-10-31",
+   "ora": "18:00",
+   "luogo": "Teatro De La Salle",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "organizzatore": "Orchestra Filarmonica di Benevento",
+   "artisti": [
+    "Federica Paduano",
+    "Luigi Gagliardi"
+   ],
+   "breve": "Sabato 31 ottobre alle 18 al Teatro De La Salle un concerto di violino e pianoforte in una sala illuminata solo dalle candele, per Halloween.",
+   "descrizione": [
+    {
+     "testo": "Sabato 31 ottobre 2026 alle 18 il Teatro De La Salle di Benevento ospita il «Concerto a lume di candela – Halloween Edition», organizzato dall'Orchestra Filarmonica di Benevento. La sala è illuminata soltanto dalle candele e la musica è dal vivo, con brani scelti per la sera di Halloween.",
+     "fonti": [
+      "NTR24"
+     ]
+    },
+    {
+     "testo": "Sul palco Federica Paduano al violino e Luigi Gagliardi al pianoforte.",
+     "fonti": [
+      "NTR24"
+     ]
+    }
+   ],
+   "immagine": "pianoforte",
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "titolo": "Halloween e Ponte d’Ognissanti, Neri per Caso, castagne e pecorino: gli eventi del weekend a Benevento e nel Sannio",
+     "url": "https://www.ntr24.tv/2026/10/30/eventi-30-31-1-2/",
+     "data": "30 ott, 06:00"
+    }
+   ],
+   "foto": "pianoforte-3"
   },
   {
    "id": "neri-per-caso-accademia-santa-sofia-2026",

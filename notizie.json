@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-30T06:10+01:00",
+ "aggiornato": "2026-10-30T07:14+01:00",
  "giornali_letti": 14,
  "notizie": [
   {
@@ -280,6 +280,10 @@
     {
      "nome": "Gazzetta di Benevento",
      "url": "https://www.gazzettabenevento.it/it/sulla-strada-statale-212-direzione-di-pietrelcina-due-veicoli-sono-stati-coinvolti-un-incidente"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/incidente-alluscita-dello-svincolo-per-pietrelcina-traffico-in-tilt-su-via-valfortore-foto/"
     }
    ],
    "articolo": {
@@ -292,7 +296,8 @@
        "Ottopagine",
        "Cronache del Sannio",
        "BeneventoNews24",
-       "Gazzetta di Benevento"
+       "Gazzetta di Benevento",
+       "TV7 Benevento"
       ],
       "giorno": "2026-10-29"
      },
@@ -312,7 +317,8 @@
        "Anteprima24",
        "NTR24",
        "Ottopagine",
-       "Gazzetta di Benevento"
+       "Gazzetta di Benevento",
+       "TV7 Benevento"
       ],
       "giorno": "2026-10-29"
      },
@@ -394,6 +400,12 @@
       "titolo": "Sulla strada statale 212 in direzione di Pietrelcina, due veicoli sono stati coinvolti in un incidente stradale",
       "url": "https://www.gazzettabenevento.it/it/sulla-strada-statale-212-direzione-di-pietrelcina-due-veicoli-sono-stati-coinvolti-un-incidente",
       "data": "29 ott, 21:27"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Incidente all’uscita dello svincolo per Pietrelcina: traffico in tilt su via Valfortore (FOTO)",
+      "url": "https://www.tvsette.net/incidente-alluscita-dello-svincolo-per-pietrelcina-traffico-in-tilt-su-via-valfortore-foto/",
+      "data": "29 ott, 21:29"
      }
     ]
    },
