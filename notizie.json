@@ -1,7 +1,64 @@
 {
- "aggiornato": "2026-10-30T09:05+01:00",
+ "aggiornato": "2026-10-30T10:04+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-tribunale-due-magistrati-tirocinio-sezione-penale",
+   "titolo": "Benevento, due magistrati in tirocinio in arrivo alla sezione penale del Tribunale",
+   "titolo_google": "Tribunale di Benevento, due nuovi magistrati al penale",
+   "sintesi": "Il Tribunale di Benevento avrà due magistrati in tirocinio in più: Loredana Castello, di Caserta, ed Emanuele Perrotta, di Avellino. Andranno tutti e due alla sezione penale, che da qualche giorno è coordinata dalla giudice Simonetta Rotili.",
+   "categoria": "altro",
+   "luogo": "Benevento, Tribunale",
+   "immagine": "tribunale",
+   "pubblicato": "2026-10-30T09:49+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/442580/tribunale-in-arrivo-alla-sezione-penale-due-magistrati-ordinari-in-tirocinio.shtml"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Arrivano due magistrati nuovi al Tribunale di Benevento: sono Loredana Castello, di Caserta, ed Emanuele Perrotta, di Avellino. Sono magistrati ordinari in tirocinio, cioè giudici che hanno vinto il concorso e fanno il periodo di formazione prima di avere un incarico tutto loro. Lavoreranno tutti e due nella sezione penale.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "La sezione penale da qualche giorno è coordinata dalla giudice Simonetta Rotili, dopo che il presidente Sergio Pezza ha lasciato le funzioni.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     },
+     {
+      "testo": "Sono gli ultimi arrivi dopo quelli di giugno e luglio: Ersilia Nardone, di Benevento, ed Ernesto Conte, di Napoli, assegnati al dibattimento penale (la fase del processo in aula), e Nazareno Boscaino, di Napoli, assegnato al settore civile. Giovedì 29 ottobre Maria Ilaria Romano è diventata la prima giudice del Tribunale di Benevento eletta nel Consiglio superiore della magistratura.",
+      "fonti": [
+       "Ottopagine"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Da quando i due magistrati prenderanno servizio a Benevento."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Tribunale, in arrivo alla Sezione penale due magistrati ordinari in tirocinio",
+      "url": "https://www.ottopagine.it/bn/cronaca/442580/tribunale-in-arrivo-alla-sezione-penale-due-magistrati-ordinari-in-tirocinio.shtml",
+      "data": "30 ott, 09:49"
+     }
+    ]
+   },
+   "zona": "benevento",
+   "foto": "tribunale-7"
+  },
   {
    "id": "benevento-palazzo-del-reduce-inaugurazione-rinviata",
    "titolo": "Benevento, rinviata l'inaugurazione di Palazzo del Reduce in via Traiano",
@@ -19,6 +76,10 @@
      "nome": "Comune di Benevento",
      "url": "https://www.comune.benevento.it/",
      "ufficiale": true
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/30/benevento-rinviata-linaugurazione-di-palazzo-del-reduce/"
     }
    ],
    "articolo": {
@@ -26,7 +87,8 @@
      {
       "testo": "Non si terrà oggi, venerdì 30 ottobre, la cerimonia di inaugurazione di Palazzo del Reduce, in via Traiano a Benevento. Lo comunica l'Ufficio Informazione Istituzionale del Comune: per un lutto familiare l'inaugurazione è rinviata a data da destinarsi.",
       "fonti": [
-       "Comune di Benevento"
+       "Comune di Benevento",
+       "BeneventoNews24"
       ]
      },
      {
@@ -47,6 +109,12 @@
       "url": "https://www.comune.benevento.it/",
       "data": "30 ott, 08:56",
       "ufficiale": true
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Benevento, rinviata l’inaugurazione di Palazzo del Reduce",
+      "url": "https://www.beneventonews24.it/2026/10/30/benevento-rinviata-linaugurazione-di-palazzo-del-reduce/",
+      "data": "30 ott, 09:47"
      }
     ]
    },
@@ -81,6 +149,18 @@
     {
      "nome": "Anteprima24",
      "url": "https://www.anteprima24.it/benevento/interrogazione-su-dirigenti-e-funzionari-indagati-mastella-e-de-pierro-rispondono/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/palazzo-mosti-interrogazione-su-dirigenti-e-funzionari-sottoposti-a-indagini-la-risposta-dellamministrazione/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/442573/dirigenti-e-funzionari-sottoposti-a-indagini-risposta-del-comune-di-benevento.shtml"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/30/inchiesta-comune-scattano-revoche-e-trasferimenti-la-risposta-dellamministrazione-mastella-allopposizione/"
     }
    ],
    "comunicati": [
@@ -93,7 +173,10 @@
       "fonti": [
        "Comune di Benevento",
        "NTR24",
-       "Anteprima24"
+       "Anteprima24",
+       "TV7 Benevento",
+       "Ottopagine",
+       "BeneventoNews24"
       ]
      },
      {
@@ -101,7 +184,10 @@
       "fonti": [
        "Comune di Benevento",
        "NTR24",
-       "Anteprima24"
+       "Anteprima24",
+       "TV7 Benevento",
+       "Ottopagine",
+       "BeneventoNews24"
       ]
      },
      {
@@ -109,7 +195,10 @@
       "fonti": [
        "Comune di Benevento",
        "NTR24",
-       "Anteprima24"
+       "Anteprima24",
+       "TV7 Benevento",
+       "Ottopagine",
+       "BeneventoNews24"
       ]
      },
      {
@@ -117,7 +206,10 @@
       "fonti": [
        "Comune di Benevento",
        "NTR24",
-       "Anteprima24"
+       "Anteprima24",
+       "TV7 Benevento",
+       "Ottopagine",
+       "BeneventoNews24"
       ]
      },
      {
@@ -125,7 +217,10 @@
       "fonti": [
        "Comune di Benevento",
        "NTR24",
-       "Anteprima24"
+       "Anteprima24",
+       "TV7 Benevento",
+       "Ottopagine",
+       "BeneventoNews24"
       ]
      },
      {
@@ -133,7 +228,10 @@
       "fonti": [
        "Comune di Benevento",
        "NTR24",
-       "Anteprima24"
+       "Anteprima24",
+       "TV7 Benevento",
+       "Ottopagine",
+       "BeneventoNews24"
       ]
      }
     ],
@@ -213,6 +311,24 @@
       "titolo": "Interrogazione su dirigenti e funzionari indagati: Mastella e De Pierro rispondono",
       "url": "https://www.anteprima24.it/benevento/interrogazione-su-dirigenti-e-funzionari-indagati-mastella-e-de-pierro-rispondono/",
       "data": "30 ott, 08:50"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Palazzo Mosti. Interrogazione su dirigenti e funzionari sottoposti a indagini, la risposta dell’Amministrazione",
+      "url": "https://www.tvsette.net/palazzo-mosti-interrogazione-su-dirigenti-e-funzionari-sottoposti-a-indagini-la-risposta-dellamministrazione/",
+      "data": "30 ott, 09:04"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Dirigenti e funzionari sottoposti a indagini, risposta del Comune di Benevento",
+      "url": "https://www.ottopagine.it/bn/attualita/442573/dirigenti-e-funzionari-sottoposti-a-indagini-risposta-del-comune-di-benevento.shtml",
+      "data": "30 ott, 09:10"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Comune di Benevento, interrogazione su dirigenti e funzionari sottoposti a indagini: la risposta dell’Amministrazione",
+      "url": "https://www.beneventonews24.it/2026/10/30/inchiesta-comune-scattano-revoche-e-trasferimenti-la-risposta-dellamministrazione-mastella-allopposizione/",
+      "data": "30 ott, 09:57"
      }
     ]
    },
@@ -801,6 +917,10 @@
     {
      "nome": "Gazzetta di Benevento",
      "url": "https://www.gazzettabenevento.it/it/calcio-5-serie-alla-vigilia-del-derby-contro-lo-sporting-sala-consilina-il-benevento-5-annuncia"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/30/calcio-a-5-ditano-e-il-nuovo-portiere-del-beneventofelice-di-essere-qui/"
     }
    ],
    "articolo": {
@@ -812,31 +932,36 @@
        "Cronache del Sannio",
        "Anteprima24",
        "NTR24 Sport",
-       "Gazzetta di Benevento"
+       "Gazzetta di Benevento",
+       "BeneventoNews24"
       ]
      },
      {
       "testo": "Ditano è nato a Treviso il 1° ottobre 1990. È cresciuto nella Came Treviso, con cui ha esordito in Serie A nella stagione 2020/21 e ha giocato fino al 2023/24. Poi è andato all'Osijek, nella prima serie croata. Nella prima parte di questa stagione ha giocato nella Pirossigeno Cosenza.",
       "fonti": [
-       "Benevento 5"
+       "Benevento 5",
+       "BeneventoNews24"
       ]
      },
      {
       "testo": "«Sono molto felice di essere qui a Benevento», dice il portiere, che spiega di aver scelto subito il progetto perché della società si parla molto bene. «Ho trovato un ambiente serio e molto organizzato e sono davvero contento di essere qui. Domani si scende già in campo e voglio dare subito il mio contributo alla squadra: vogliamo rialzarci dopo questo periodo negativo e ritrovare i punti».",
       "fonti": [
-       "Benevento 5"
+       "Benevento 5",
+       "BeneventoNews24"
       ]
      },
      {
       "testo": "Quello di venerdì è un altro derby per il Benevento 5: si gioca alle 20.30 al Centro Sportivo Meridionale di San Rufo. La squadra di mister Scarpitti sarà senza gli infortunati Montefalcone e Barichello e senza Pires, squalificato.",
       "fonti": [
-       "Benevento 5"
+       "Benevento 5",
+       "BeneventoNews24"
       ]
      },
      {
       "testo": "La partita si potrà vedere in diretta sul canale YouTube della Divisione Calcio a 5. Arbitrano Rosario Angelo Faiella di Castellammare di Stabia e Andrea Cini di Perugia; il cronometrista è Emilio Romano di Nola.",
       "fonti": [
-       "Benevento 5"
+       "Benevento 5",
+       "BeneventoNews24"
       ]
      }
     ],
@@ -875,6 +1000,12 @@
       "titolo": "Calcio a 5, Serie A: Alla vigilia del derby contro lo Sporting Sala Consilina il Benevento 5 annuncia l'arrivo dell'esperto portiere Riccardo Ditano",
       "url": "https://www.gazzettabenevento.it/it/calcio-5-serie-alla-vigilia-del-derby-contro-lo-sporting-sala-consilina-il-benevento-5-annuncia",
       "data": "29 ott, 19:31"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Calcio a 5, Ditano è il nuovo portiere del Benevento:”Felice di essere qui”",
+      "url": "https://www.beneventonews24.it/2026/10/30/calcio-a-5-ditano-e-il-nuovo-portiere-del-beneventofelice-di-essere-qui/",
+      "data": "30 ott, 09:10"
      }
     ]
    },
@@ -924,6 +1055,14 @@
     {
      "nome": "BeneventoNews24",
      "url": "https://www.beneventonews24.it/2026/10/30/gal-taburno-consorzio-rinnovati-la-presidenza-e-il-consiglio-di-amministrazione/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/442574/gal-taburno-annarita-de-blasio-presidente-rinnovato-il-consiglio-i-nomi.shtml"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/gal-taburno-consorzio-rinnovati-la-presidenza-e-il-consiglio-di-amministrazione/"
     }
    ],
    "articolo": {
@@ -936,7 +1075,9 @@
        "Lab TV",
        "Cronache del Sannio",
        "Gazzetta di Benevento",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Ottopagine",
+       "TV7 Benevento"
       ]
      },
      {
@@ -945,7 +1086,9 @@
        "NTR24",
        "Anteprima24",
        "Lab TV",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Ottopagine",
+       "TV7 Benevento"
       ]
      },
      {
@@ -954,7 +1097,8 @@
        "Lab TV",
        "NTR24",
        "Anteprima24",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Ottopagine"
       ]
      },
      {
@@ -1015,6 +1159,18 @@
       "titolo": "GAL Taburno Consorzio, rinnovati la Presidenza e il Consiglio di amministrazione",
       "url": "https://www.beneventonews24.it/2026/10/30/gal-taburno-consorzio-rinnovati-la-presidenza-e-il-consiglio-di-amministrazione/",
       "data": "30 ott, 09:00"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "“I Gal si stanno evolvendo assumendo il ruolo strutturato di agenzie per lo sviluppo dei territori\"",
+      "url": "https://www.ottopagine.it/bn/attualita/442574/gal-taburno-annarita-de-blasio-presidente-rinnovato-il-consiglio-i-nomi.shtml",
+      "data": "30 ott, 09:15"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "GAL Taburno Consorzio, rinnovati la Presidenza e il Consiglio di amministrazione",
+      "url": "https://www.tvsette.net/gal-taburno-consorzio-rinnovati-la-presidenza-e-il-consiglio-di-amministrazione/",
+      "data": "30 ott, 09:09"
      }
     ]
    },
