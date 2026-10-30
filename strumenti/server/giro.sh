@@ -9,7 +9,9 @@
 # scritto apposta non deve poter arrivare alle chiavi.
 #
 # Ogni giro ha la sua copia del sito e delle fonti (git worktree, ~7 s), come nel cloud: due giri insieme (l'orario e
-# un lampo) non si pestano i piedi. Le istruzioni sono in /usr/local/lib/nb-giri/prompt/<tipo>.txt (il testo della
+# un lampo) non si pestano i piedi. Il ramo della copia segue main e `git push` va lì (push.default=upstream
+# nella configurazione di git di redazione): le istruzioni delle curiosità e dei contributi dicono solo «git pull --rebase»
+# e «git push». Le istruzioni sono in /usr/local/lib/nb-giri/prompt/<tipo>.txt (il testo della
 # routine); il testo di avvio, se c'è, va dopo, come faceva la routine.
 set -uo pipefail
 ISTANZA=$1
@@ -49,6 +51,7 @@ if ! (
   flock 8
   git -C "$CASA/notizie-benevento" fetch -q origin main &&
   git -C "$CASA/notizie-benevento" worktree add -q -b "giro-$ISTANZA" "$W/notizie-benevento" origin/main &&
+  git -C "$W/notizie-benevento" branch -q --set-upstream-to=origin/main &&
   git -C "$CASA/notizie-benevento-fonti" fetch -q origin main &&
   git -C "$CASA/notizie-benevento-fonti" worktree add -q --detach "$W/notizie-benevento-fonti" origin/main
 ) 8>"$CASA/lucchetti/copie.lock"; then
