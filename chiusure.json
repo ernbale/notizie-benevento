@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-29T13:45+01:00",
+ "aggiornato": "2026-10-30T10:21+01:00",
  "viste": [
   "1131ffc78db3",
   "a4f3f5a64d51",
@@ -9,7 +9,8 @@
   "36794154e8c1",
   "320680eb8b40",
   "b1a6fd2c9f5c",
-  "8099b97060eb"
+  "8099b97060eb",
+  "970f1ebf51fc"
  ],
  "chiusure": [
   {
@@ -69,6 +70,11 @@
    "pista": "8099b97060eb",
    "motivo": "Avviso sul recupero del canone delle lampade votive 2022: nessuna chiusura",
    "quando": "2026-10-29T08:51+01:00"
+  },
+  {
+   "pista": "970f1ebf51fc",
+   "motivo": "Piano traffico per il 4 novembre: strade interdette alla sosta e al traffico, nessuna chiusura di scuole, parchi, cimiteri, impianti o mercati",
+   "quando": "2026-10-30T10:21+01:00"
   }
  ]
 }
