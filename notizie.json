@@ -3,6 +3,87 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "asl-benevento-vaccino-hpv-aperture-straordinarie-novembre",
+   "titolo": "Vaccino anti-HPV gratuito, a novembre aperture straordinarie dell'ASL Benevento: date e sedi in provincia",
+   "titolo_google": "Vaccino HPV a novembre, ASL Benevento: date e sedi",
+   "sintesi": "Dal 2 al 25 novembre l'ASL Benevento apre in via straordinaria consultori e Case della Comunità di tutti i distretti per il vaccino gratuito contro l'HPV. Nelle stesse sedi le donne tra i 30 e i 64 anni possono fare anche il test HPV.",
+   "categoria": "avvisi",
+   "zona": "provincia",
+   "luogo": "Provincia di Benevento",
+   "pubblicato": "2026-10-30",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 4,
+   "in_vigore_dal": "2026-11-02",
+   "in_vigore_fino": "2026-11-25",
+   "immagine": "vaccini",
+   "comunicati": [
+    "ufea7c3ff42e"
+   ],
+   "fonti": [
+    {
+     "nome": "ASL Benevento",
+     "url": "https://www.aslbenevento.it/notizie/hpv-la-prevenzione-non-aspetta",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A novembre l'ASL Benevento organizza nuove aperture straordinarie per il vaccino contro l'HPV, il papillomavirus, in tutti i distretti sanitari della provincia. Il vaccino è gratuito per ragazze e ragazzi nel dodicesimo anno di vita, per le ragazze nate dal 1995 in poi e per i ragazzi nati dal 2006 in poi. Nelle stesse sedi le donne tra i 30 e i 64 anni possono fare anche il test HPV.",
+      "fonti": [
+       "ASL Benevento"
+      ]
+     },
+     {
+      "testo": "Distretto di Benevento: al consultorio di via Lungo Sabato don Emilio Matarazzo, a Benevento, si va sabato 7 e sabato 21 novembre dalle 8:30 alle 13:30, mercoledì 11 e mercoledì 25 novembre dalle 15 alle 18.",
+      "fonti": [
+       "ASL Benevento"
+      ]
+     },
+     {
+      "testo": "Distretto di San Giorgio del Sannio, sempre dalle 8:30 alle 13:30: sabato 7 novembre al consultorio di San Giorgio del Sannio, in via Manzoni 19; sabato 14 novembre al consultorio di Vitulano, in via San Pietro; sabato 21 novembre alla Casa della Comunità di Pietrelcina, in contrada Guardiola.",
+      "fonti": [
+       "ASL Benevento"
+      ]
+     },
+     {
+      "testo": "Distretto di Montesarchio: il consultorio è nella Casa della Comunità Hub di via Napoli 113 ed è aperto martedì 10 novembre dalle 15 alle 18 e sabato 21 novembre dalle 9:30 alle 13:30. Distretto di Telese Terme: al consultorio di Cerreto Sannita, in via Cesine di Sopra, lunedì 2 e lunedì 9 novembre dalle 14:30 alle 17:30.",
+      "fonti": [
+       "ASL Benevento"
+      ]
+     },
+     {
+      "testo": "Distretto Alto Sannio Fortore: al consultorio di San Marco dei Cavoti, in largo Ariella, lunedì 2 novembre dalle 15 alle 18 e mercoledì 11 novembre dalle 8:30 alle 13:30; al consultorio di San Bartolomeo in Galdo, in contrada Torre, mercoledì 18 novembre dalle 9 alle 13.",
+      "fonti": [
+       "ASL Benevento"
+      ]
+     },
+     {
+      "testo": "L'ASL ricorda che l'HPV non vuol dire tumore, ma che alcuni tipi del virus, quando l'infezione persiste, possono aumentare il rischio di diversi tipi di tumore. Per l'azienda sanitaria vaccino e screening sono strumenti essenziali di prevenzione: ognuno può scegliere nel calendario la data e la sede più comode.",
+      "fonti": [
+       "ASL Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "ASL Benevento",
+      "titolo": "HPV: la prevenzione non aspetta",
+      "url": "https://www.aslbenevento.it/notizie/hpv-la-prevenzione-non-aspetta",
+      "data": "30 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "subito": true,
+   "foto": "vaccini-6"
+  },
+  {
    "id": "benevento-triggio-giovane-trovato-morto-30-ottobre",
    "titolo": "Benevento, giovane trovato senza vita nella notte al Triggio: indagano i Carabinieri",
    "titolo_google": "Benevento, giovane trovato morto al Triggio: indagini",
@@ -3509,7 +3590,8 @@
    "rilevante": false,
    "importanza": 2,
    "comunicati": [
-    "u3c575fbe668"
+    "u3c575fbe668",
+    "u9971579ef80"
    ],
    "fonti": [
     {
