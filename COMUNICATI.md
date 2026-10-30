@@ -7,7 +7,7 @@ valutare io»): enti pubblici, chi scrive da una PEC e i mittenti fidati. Quelli
 decide. Se li approva arrivano qui con «APPROVATO DAL PROPRIETARIO» e li tratti come gli altri, con le regole di
 sempre.
 
-Il Pi legge anche la cartella Spam delle caselle (dal 26 ott 2026: lui, «non vorrei che metta dei comunicati in spam e
+Il server (fino al 30 ott 2026 il Pi di casa) legge anche la cartella Spam delle caselle (dal 26 ott 2026: lui, «non vorrei che metta dei comunicati in spam e
 non ce ne accorgiamo»). Un comunicato con `"spam": true` è uno che Aruba ci aveva messo per sbaglio: se te lo dà
 `--da-fare` trattalo come gli altri, con le regole di sempre. L'essere stato nello Spam non è un motivo per scartarlo.
 
@@ -23,14 +23,14 @@ AIR, ANAS e Regione (solo il Sannio). Sono comunicati anche loro, pubblicati sul
 per posta: stesse regole, più quelle del punto 3 bis.
 
 **Il minimo è un articolo perfetto** (lui, 25 ott 2026: «le cose che ci mandano il minimo è un articolo perfetto»,
-«qualche secondo da perdere in più per un articolo perfetto»). La velocità si guadagna prima di te (il Pi, i 5
-minuti, la pubblicazione); tu prenditi il tempo che serve per leggere tutto, controllare e rileggere. Mai un articolo
+«qualche secondo da perdere in più per un articolo perfetto»). La velocità si guadagna prima di te (il server, la
+posta in diretta, la pubblicazione); tu prenditi il tempo che serve per leggere tutto, controllare e rileggere. Mai un articolo
 più corto o più povero per fare prima.
 
-Come gira: il Pi di casa legge la casella ogni 5 minuti (strumenti/fonti_casa.py, che toglie rimbalzi e risposte
+Come gira: il server (fino al 30 ott 2026 il Pi di casa) legge la casella in diretta e ogni 5 minuti (strumenti/fonti_casa.py, che toglie rimbalzi e risposte
 automatiche) e i siti ufficiali (strumenti/ufficiali.py), e appena c'è un comunicato o un articolo nuovo fa partire
 questo giro (strumenti/comunicati_lampo.py), con un messaggio che comincia con «COMUNICATI». Gli articoli dei siti che
-arrivano mentre lavora il giro di ogni ora (dalle :04 alle :25) aspettano che abbia pubblicato: spesso li trovi già
+arrivano mentre lavora il giro di ogni ora (dalle :00 alle :20; fino al 30 ott 2026 dalle :04 alle :25) aspettano che abbia pubblicato: spesso li trovi già
 sul sito. Se dopo 15 minuti il comunicato non risulta trattato in `comunicati_visti.json`, lo
 rilancia (al massimo 3 volte, poi la sentinella dà l'allarme). Quello che il giro lampo scarta o non riesce a fare lo
 decide poi il giro di ogni ora (strumenti/giornali.py lo mette nel suo elenco).
@@ -48,7 +48,7 @@ riuscita» (o cosa non va) con l'esito dei comandi. In prova non pubblichi nient
 1. Esegui `TZ=Europe/Rome date -Iseconds` e `python3 strumenti/comunicati.py --da-fare | tee /tmp/da_fare.txt`. Se
    l'ultima riga comincia con «NIENTE DA FARE», fermati e rispondi solo «niente da fare».
 2. Leggi in AGENTE.md: «Regole che non si discutono», «Come lavorare una notizia», «Come si scrive l'articolo», «La foto
-   illustrativa», «Formato del file», e per lo sport «Lo sport». Valgono tutte.
+   illustrativa», «Categoria, zona e scadenze», «Formato del file», e per lo sport «Lo sport». Valgono tutte.
 3. Per ogni comunicato (i blocchi `[id]`) leggi tutto il testo, allegati compresi, **come un giornalista**: prima il
    testo del comunicato (la mail e i documenti allegati), che è la base dell'articolo; poi la locandina, per
    l'immagine e per controllare date e orari o aggiungere un dato che nel testo manca, senza dire da dove viene (lui,
@@ -69,8 +69,8 @@ riuscita» (o cosa non va) con l'esito dei comandi. In prova non pubblichi nient
      scuole/parchi/cimiteri decise da un Comune (le pubblica il giro Chiusure), un fatto che non si capisce o non si può
      verificare (mittente generico come gmail o libero e niente di controllabile), fatti vecchi.
    - **sospeso**, col motivo: solo quando nel blocco c'è «ALLEGATI NON LETTI dal Pi» e senza quegli allegati il
-     comunicato non si può scrivere (il testo era tutto lì). Non è uno scarto: la sentinella del Pi avvisa il
-     proprietario ogni ora finché qualcuno non lo legge, e quando il Pi riesce a rileggerlo torna qui da solo («ERA IN
+     comunicato non si può scrivere (il testo era tutto lì). Non è uno scarto: la sentinella avvisa il
+     proprietario ogni ora finché qualcuno non lo legge, e quando il server riesce a rileggerlo torna qui da solo («ERA IN
      SOSPESO»). Voluto dal proprietario il 26 ott 2026, dopo il comunicato del San Pio delle 12:12: il testo era solo in
      un .doc che il Pi allora non leggeva, il giro lampo l'ha scartato e nessuno l'ha più ripreso fino alle 14:30. Un
      comunicato con allegati non letti si può **scartare** solo se basta il resto per capire che non si pubblica (fuori
@@ -78,23 +78,23 @@ riuscita» (o cosa non va) con l'esito dei comandi. In prova non pubblichi nient
      strumenti/comunicati.py dà errore se manca. Se invece il testo della mail o gli altri allegati bastano per un
      articolo completo, si pubblica come sempre.
 
-   **Gli allegati** li legge il Pi (strumenti/allegati.py, dal 26 ott 2026: lui, «copri tutti i casi possibili per
+   **Gli allegati** li legge il server (strumenti/allegati.py, dal 26 ott 2026: lui, «copri tutti i casi possibili per
    leggere allegati», «anche un OCR per scansioni»): PDF, Word e Excel e PowerPoint vecchi e nuovi, LibreOffice, RTF,
    testo, zip/7z/rar, .p7m firmati, winmail.dat, mail inoltrate. Il loro testo è nel blocco, ognuno col suo
-   «[allegato …]». Quello che il Pi ha letto **con l'OCR** (le scansioni, «letto con l'OCR, può contenere errori») può
+   «[allegato …]». Quello che il server ha letto **con l'OCR** (le scansioni, «letto con l'OCR, può contenere errori») può
    avere lettere e numeri sbagliati: date, orari, prezzi e nomi presi da lì vanno controllati sulle immagini della
    scansione (le righe «immagine <id>/<n>», «pagina k»), e se l'immagine non li conferma non si scrivono. Le
    «LINK A FILE» sono indirizzi di Google Drive, WeTransfer, Dropbox… scritti nella mail: il comunicato può essere lì,
    aprili con WebFetch.
 
-   Dal 26 ott 2026 chi ci ha mandato un comunicato **pubblicato** o **gia_nel_sito** riceve dal Pi una mail di
+   Dal 26 ott 2026 chi ci ha mandato un comunicato **pubblicato** o **gia_nel_sito** riceve dal server una mail di
    ringraziamento col link della notizia scritta nell'esito (strumenti/risposte.py; lui: «una email di ringraziamento
    sì, mi sembra una cortesia corretta»): quella notizia deve essere proprio quella che parla del suo comunicato. Tu
    non scrivi ai mittenti.
 
 3 bis. **Gli articoli dei siti ufficiali** (i blocchi «ARTICOLO DEL SITO UFFICIALE di …», id che comincia con «u»):
    - **Leggi la pagina intera** col suo link (WebFetch): il testo del feed spesso è solo l'inizio, e per il Benevento
-     Calcio non c'è. Per ASL, ANAS e Regione no: quei siti dal cloud non si aprono, il testo intero è già nel blocco.
+     Calcio non c'è. Per ASL, ANAS e Regione non serve: il testo intero è già nel blocco (dai giri nel cloud quei siti non si aprivano).
      Se la pagina non si apre e il testo del blocco non basta per un articolo completo, **scartato** col motivo
      «pagina non leggibile»: lo rivede il giro di ogni ora.
    - **La fonte** è chi lo firma, col link esatto della pagina: `{"nome": "<la fonte del blocco>", "url": "<il link>",
@@ -108,7 +108,7 @@ riuscita» (o cosa non va) con l'esito dei comandi. In prova non pubblichi nient
      ogni ora (lui: «priorità max», «nessun doppione importantissimo»), che può averlo appena scritto da un giornale:
      apri quella notizia. Se è lo stesso fatto è **gia_nel_sito** con quella; se è davvero un altro fatto (un'altra
      partita, un altro giocatore, un altro giorno) scrivi nella notizia nuova `"non_doppione_di": ["<id>"]` e rilancia.
-   - Per EAV, AIR, Alto Calore, ANAS e Regione, che servono tutta la Campania, il Pi tiene solo quello che nomina il
+   - Per EAV, AIR, Alto Calore, ANAS e Regione, che servono tutta la Campania, il server tiene solo quello che nomina il
      Sannio, ma controlla tu: se non tocca la provincia di Benevento è **scartato** («fuori provincia»).
    - Le foto delle pagine non si usano (solo quelle mandate per posta, punto 4): l'`immagine` dai temi come sempre.
    - Un articolo vecchio ripubblicato o appena ritoccato (la data della pagina è di giorni fa) è **scartato** («fatto
@@ -141,8 +141,11 @@ riuscita» (o cosa non va) con l'esito dei comandi. In prova non pubblichi nient
      lo cerca la gente (AGENTE.md, «Come lavorare una notizia», punto 4: la parola cercata prima, nello sport la
      partita, il risultato e chi vince, date per esteso); `sintesi` in una o due frasi.
    - `"stato": "ufficiale"` se il comunicato viene da un ente pubblico o da chi organizza o decide la cosa di cui
-     parla (Comune, ente, società, sindacato, associazione sul proprio fatto); per un indirizzo generico con un fatto
-     controllabile cerca una conferma (WebSearch/WebFetch) e se non c'è scarta.
+     parla (Comune, ente, società, sindacato, associazione sul proprio fatto). Un indirizzo generico (gmail, libero…)
+     arriva qui solo da un mittente fidato o «APPROVATO DAL PROPRIETARIO» (qui in cima): vale come il comunicato di
+     chi lo firma, sul suo fatto, se il contenuto è verificabile; se qualcosa non si capisce o non torna cerca una
+     conferma (WebSearch/WebFetch) e se non c'è scarta. La stessa regola è in AGENTE.md, «Comunicati arrivati per
+     posta».
    - **La fonte**: `{"nome": "<chi firma il comunicato>", "url": "<il suo sito ufficiale; meglio la pagina del
      comunicato se è anche sul sito>"}` (cercala con WebSearch se serve), e in `articolo.fonti` anche `titolo` (l'oggetto
      del comunicato, esatto) e `data`. Mai «posta:…», mai l'indirizzo email del mittente, niente numeri di telefono
@@ -169,12 +172,6 @@ riuscita» (o cosa non va) con l'esito dei comandi. In prova non pubblichi nient
        minori riconoscibili in fatti di cronaca. Le foto della Questura e dei Carabinieri di solito sono già a posto;
      - con locandina o foto **niente** `immagine`. Escono così anche su Instagram (carosello) e Facebook (post con le
        foto). La copia nel sito la fa strumenti/comunicati.py.
-4 bis. **Il calendario.** Se il comunicato annuncia un evento che va nel calendario (AGENTE.md, «Il calendario degli
-   eventi»: cultura, feste e sagre, nei 78 Comuni) mettilo anche in «eventi» del file, con le regole di AGENTE.md
-   (date, ora e prezzo solo se scritti, `organizzatore`, `artisti`, fonti con chi firma il comunicato e il suo sito,
-   `notizia` = l'id della notizia). **Mai doppioni**: cerca prima in eventi.json lo stesso Comune negli stessi giorni.
-   Se l'evento c'è già, mettilo in «eventi» con il **suo stesso id**, completo e aggiornato con il programma, le fonti
-   e la locandina del comunicato. strumenti/comunicati.py dà ERRORE se un evento nuovo somiglia a uno che c'è già.
    - **Rileggi** frase per frase col comunicato accanto: c'è scritto proprio così? Togli ogni frase che non trovi.
    - **Poi la prova al contrario** (lui, 26 ott 2026: «leggere bene tutti i comunicati e gli articoli degli altri,
      nessuna figuraccia nel nostro articolo»): rileggi da capo il comunicato, gli allegati e la locandina e cerca nel
@@ -185,6 +182,12 @@ riuscita» (o cosa non va) con l'esito dei comandi. In prova non pubblichi nient
      percentuali, gli orari e le date del testo della mail, lo fa anche strumenti/comunicati.py (punto 5): un dato
      che al lettore proprio non serve (una data passata, l'ora della conferenza stampa) va nell'esito in
      `"tralasciati": {"<il dato come è scritto>": "perché"}`; mai per sbrigarsi.
+4 bis. **Il calendario.** Se il comunicato annuncia un evento che va nel calendario (AGENTE.md, «Il calendario degli
+   eventi»: cultura, feste e sagre, nei 78 Comuni) mettilo anche in «eventi» del file, con le regole di AGENTE.md
+   (date, ora e prezzo solo se scritti, `organizzatore`, `artisti`, fonti con chi firma il comunicato e il suo sito,
+   `notizia` = l'id della notizia). **Mai doppioni**: cerca prima in eventi.json lo stesso Comune negli stessi giorni.
+   Se l'evento c'è già, mettilo in «eventi» con il **suo stesso id**, completo e aggiornato con il programma, le fonti
+   e la locandina del comunicato. strumenti/comunicati.py dà ERRORE se un evento nuovo somiglia a uno che c'è già.
 5. Scrivi `/tmp/comunicati_esito.json` (il formato è in testa a strumenti/comunicati.py): le notizie nuove in
    «notizie», gli eventi nuovi o aggiornati in «eventi» (punto 4 bis) e un esito per OGNI comunicato del punto 1 in
    «esiti».

@@ -27,7 +27,8 @@ farlo giusto subito.
    sola** di queste testate può uscire con `"stato": "una_fonte"`: Il Mattino (Benevento), Il Sannio Quotidiano,
    NTR24, Ottopagine, Anteprima24, Lab TV, Cronache del Sannio, BeneventoNews24, TV7 Benevento. Prima fai una ricerca
    mirata per trovare la seconda fonte. Il sito mostra da solo la scritta «Una sola fonte» e il nome del giornale.
-   Non vale mai per: allerte, eventi, notizie `rilevante`, fatti scritti solo da altre testate (Infosannio,
+   Non vale mai per: allerte, notizie della categoria `eventi` (il calendario ha la sua regola: lì la fonte è chi
+   organizza, vedi «Il calendario degli eventi»), notizie `rilevante`, fatti scritti solo da altre testate (Infosannio,
    Fremondoweb, Gazzetta di Benevento, Benevento Giornale, Il Caudino, TeleradioNews, Matese News, UserTv: con loro
    servono due testate). Appena una
    seconda testata riporta il fatto, aggiungila e passa a `confermata` (lo controlla `archivia.py`).
@@ -128,12 +129,12 @@ meno. Lavora in parallelo (6-8 letture insieme).
 
 Le leggi a ogni giro. **I loro comunicati bastano da soli** (regola 2, `"stato": "ufficiale"`) e spesso escono ore
 prima che i giornali li riprendano: è il modo di arrivare primi. Dal 25 ott 2026 molti di questi siti (Comune e
-Provincia di Benevento, ASL, Alto Calore, GESESA, EAV, AIR, ANAS, Regione e le società sportive) li legge anche il Pi
-ogni 5 minuti, e gli articoli nuovi li pubblica subito il giro lampo (COMUNICATI.md): tu continua a leggerli tutti (sei
+Provincia di Benevento, ASL, Alto Calore, GESESA, EAV, AIR, ANAS, Regione e le società sportive) li legge anche il
+server (fino al 30 ott 2026 il Pi di casa) ogni 5 minuti, e gli articoli nuovi li pubblica subito il giro lampo (COMUNICATI.md): tu continua a leggerli tutti (sei
 la riserva), ma **non scrivere quelli che giornali.py elenca «IN MANO AL GIRO LAMPO»**, nemmeno partendo da un
 giornale (sarebbero doppioni: al giro dopo aggiungi le fonti nuove alla sua notizia), e quelli già pubblicati li
 riconosci dal link tra le fonti di una notizia. **I comunicati del Benevento Calcio** (beneventocalcio.club) dal 27 ott
-2026 li legge il Pi ogni minuto e li pubblica il giro lampo subito, anche mentre lavori tu (lui: «priorità max»): non
+2026 li legge il server ogni minuto e li pubblica il giro lampo subito, anche mentre lavori tu (lui: «priorità max»): non
 scriverli mai tu, nemmeno partendo da un giornale che li riprende (convocati, arbitro, infortuni, biglietti, accessi
 allo stadio, iniziative della società): se un giornale riporta un fatto del Benevento Calcio e sul suo sito c'è il
 comunicato, al giro dopo aggiungi le fonti alla notizia del giro lampo. Scrivi l'articolo con parole tue, come nell'esempio
@@ -181,7 +182,8 @@ comunicato va tra le fonti col suo link. Se poi i giornali aggiungono dettagli, 
   per un singolo trasloco o cantiere privato. **Un'ordinanza che chiude una strada, un incrocio o un passaggio a
   livello, o cambia la circolazione per giorni, è una notizia `strade`** (fonte ufficiale: esce da sola), non una
   cosa da «non trattare». Da citare il `link` della voce (la pubblicazione nell'albo).
-- Regione Campania: file `regione.json` delle fonti lette da casa (dal cloud il sito risponde 403), con i comunicati
+- Regione Campania: file `regione.json` delle fonti lette da casa (il sito rifiutava le letture dei giri nel cloud: il
+  file lo prepara il server), con i comunicati
   stampa e il loro testo. Tieni solo
   quello che riguarda il Sannio (soldi e decisioni per Benevento e i suoi Comuni, ospedali, strade, trasporti, lavoro)
   o tutta la Campania con effetti qui (allerte, sanità, scuole, trasporti).
@@ -199,12 +201,12 @@ comunicato va tra le fonti col suo link. Se poi i giornali aggiungono dettagli, 
 
 ### Fonti lette da casa
 
-ANAS, ASL, TV7, l'albo di Benevento e la Regione dal cloud non si aprono (ANAS e TV7 rifiutano le connessioni
-dall'estero, l'ASL ha il certificato incompleto, l'albo e la Regione rifiutano il cloud). **Non provare ad aprirli e
-non segnarli «non raggiungibili» per questo**: li scarica ogni 30 minuti un computer di casa, insieme ai siti dei
-Comuni (che dal cloud si aprono: servono anche a te, vedi «I siti dei Comuni») e alla posta (ogni 5 minuti),
-nell'archivio privato `ernbale/notizie-benevento-fonti`, che trovi già clonato accanto a questo
-(`../notizie-benevento-fonti/`; se non c'è, cercalo con `ls /home/user`). I file: `anas.json`, `asl.json`,
+ANAS, ASL, TV7, l'albo di Benevento e la Regione dai giri nel cloud non si aprivano (ANAS e TV7 rifiutano le
+connessioni dall'estero, l'ASL ha il certificato incompleto, l'albo e la Regione rifiutavano il cloud). **Non provare
+ad aprirli e non segnarli «non raggiungibili» per questo**: li scarica ogni 30 minuti il server (fino al 30 ott 2026
+un computer di casa), insieme ai siti dei Comuni (servono anche a te, vedi «I siti dei Comuni») e alla posta (in
+diretta e ogni 5 minuti), nell'archivio privato `ernbale/notizie-benevento-fonti`, che trovi già clonato accanto a
+questo (`../notizie-benevento-fonti/`). I file: `anas.json`, `asl.json`,
 `tv7.json`, `albo.json`, `regione.json`, `comuni.json` (vedi «I siti dei Comuni»), `comunicati.json` (vedi
 «Comunicati arrivati per posta»), `stagioni.json` (vedi «Le stagioni ufficiali»). In ognuno: `controllato` = ultimo
 tentativo, `esito`, `voci` con titolo, `link` originale (è quello da citare tra le fonti; in `comunicati.json` il link
@@ -267,7 +269,8 @@ una sola fonte.
 
 ### I siti dei Comuni
 
-File `comuni.json` delle fonti lette da casa, a ogni giro. Il computer di casa legge ogni 30 minuti i siti di **tutti
+File `comuni.json` delle fonti lette da casa, a ogni giro. Il server (fino al 30 ott 2026 il computer di casa) legge
+ogni 30 minuti i siti di **tutti
 i 78 Comuni** della provincia e, dal 23 ottobre, gli **albi pretori di 57 Comuni** (ordinanze, avvisi, bandi: `fonte` «albo
 pretorio», col testo del PDF allegato quando si legge), e ci mette solo le voci **nuove**, col testo: `comune`,
 `titolo`, `link` (da citare), `primo_visto` (quando è comparso sul sito), `data_avviso` (la data scritta nella pagina,
@@ -281,11 +284,14 @@ da solo. Nel registro delle fonti: `Comuni (da casa, controllato HH:MM) | letta 
   piccolo: strade chiuse e lavori (con `traffico`), raccolta dei rifiuti, acqua, luce, gas, cimitero (orari, aperture,
   lampade votive con la scadenza), mercato, scuola, scuolabus e mensa, trasporti, sanità e vaccini, bandi, contributi e
   agevolazioni (Carta Dedicata a te, bonus, borse di studio) con la scadenza, concorsi e lavoro, licenze, censimento,
-  elezioni (scrutatori, elettori fuori sede), allerta e protezione civile, eventi (in eventi.json). Categoria `altro`
-  (o `strade`, `meteo`), `stato` «ufficiale», racconto breve (1-2 paragrafi: cosa, dove, quando, chi può, scadenza,
-  dove informarsi), `in_vigore_fino` = ultimo giorno o scadenza **solo se è entro 30 giorni** (le scadenze più lontane,
-  come un canone da pagare a febbraio, vanno nel titolo e nel testo, senza `in_vigore_fino`: se no l'avviso resta per
-  mesi nel riquadro «Avvisi in vigore»), titolo che comincia col paese («Paupisi, cimitero aperto anche lunedì 26
+  elezioni (scrutatori, elettori fuori sede), allerta e protezione civile, eventi (in eventi.json). Categoria `avvisi`
+  (dal 28 ott 2026, vedi «Categoria, zona e scadenze»; `strade` per strade, bus e treni, `meteo` per le allerte; se è una
+  notizia e non un avviso pratico, la sua categoria), `stato` «ufficiale», racconto breve (1-2 paragrafi: cosa, dove,
+  quando, chi può, scadenza, dove informarsi), `in_vigore_fino` = ultimo giorno o scadenza **solo se è entro 30 giorni**
+  (le scadenze più lontane, come un canone da pagare a febbraio, vanno nel titolo e nel testo, senza `in_vigore_fino`:
+  se no l'avviso resta per mesi nel riquadro «Avvisi in vigore»; non vale per gli aiuti con `contributo`, dove
+  `in_vigore_fino` è sempre la scadenza delle domande, perché la usa la pagina Agevolazioni: vedi «I contributi»),
+  titolo che comincia col paese («Paupisi, cimitero aperto anche lunedì 26
   ottobre e lunedì 2 novembre»).
 - **Lo stesso avviso in più Comuni** (sospensione dei rifiuti, Carta Dedicata a te, lampade votive) è una notizia sola
   con tutti i paesi nel `luogo` («San Leucio del Sannio e Sant'Arcangelo Trimonte») e tutte le fonti; se la notizia
@@ -294,7 +300,7 @@ da solo. Nel registro delle fonti: `Comuni (da casa, controllato HH:MM) | letta 
   d'ufficio), `vecchia` (già scaduto), `non_leggibile` (titolo vuoto e niente testo: apri prima il link). Per ogni
   avviso dei Comuni scartato scrivi in `nota` cosa diceva e perché alla gente non serve (lo controlla `archivia.py`).
 - Le **chiusure** decise dai Comuni non le scrivi tu: nel diario esito «chiusure» (vedi «Le Allerte»).
-- `comuni_non_letti` dice quali siti non si leggono da casa (Airola, Bonea, Bucciano, Pannarano, che mostrano gli
+- `comuni_non_letti` dice quali siti non si leggono in automatico (Airola, Bonea, Bucciano, Pannarano, che mostrano gli
   avvisi solo nel browser, Montefalcone di Val Fortore, col sito rotto, e quelli di un fornitore giù in quel momento):
   per loro fai una ricerca mirata se c'è allerta o un fatto che li riguarda. `albi_non_letti` fa lo stesso per gli
   albi pretori.
@@ -305,8 +311,8 @@ da solo. Nel registro delle fonti: `Comuni (da casa, controllato HH:MM) | letta 
 
 ### Comunicati arrivati per posta
 
-File `comunicati.json` delle fonti lette da casa (la casella comunicati@notiziebenevento.it, letta dal Pi ogni 5
-minuti; rimbalzi e risposte automatiche sono già tolti). Società sportive, associazioni, Pro Loco, sindacati, Comuni
+File `comunicati.json` delle fonti lette da casa (la casella comunicati@notiziebenevento.it, letta dal server in
+diretta e ogni 5 minuti; rimbalzi e risposte automatiche sono già tolti). Società sportive, associazioni, Pro Loco, sindacati, Comuni
 ed enti mandano lì i loro comunicati; ci sono `id`, `titolo` (l'oggetto), `data`, `arrivata`, `mittente` (nome),
 `dominio` (dopo la @), `allegati`, `testo` e, se ci sono, `immagini` (le locandine: vedi «Il calendario degli
 eventi»). **Appena ne arriva uno lo pubblica il giro lampo** (COMUNICATI.md, `strumenti/comunicati.py`), che segna
@@ -314,8 +320,8 @@ ogni comunicato trattato in `comunicati_visti.json` e mette il suo `id` nel camp
 - Tu decidi **solo** quelli che `giornali.py` mette nell'elenco come «Comunicato per email: …» (url `posta:<id>`):
   quelli che il giro lampo ha scartato o non è riuscito a trattare. Non pubblicare comunicati che non sono
   nell'elenco (ci sta già lavorando il giro lampo: sarebbero doppioni).
-- Quelli «in sospeso» (un allegato che il Pi non legge: COMUNICATI.md) nell'elenco non ci sono: li segue la sentinella,
-  che avvisa il proprietario, e li riprende il giro lampo quando il Pi riesce a leggerli.
+- Quelli «in sospeso» (un allegato che il server non legge: COMUNICATI.md) nell'elenco non ci sono: li segue la
+  sentinella, che avvisa il proprietario, e li riprende il giro lampo quando il server riesce a leggerli.
 - Nemmeno quelli dei mittenti non ufficiali (`"fonte": "da_valutare"`, dal 26 ott 2026): li valuta il proprietario e,
   se li approva, li pubblica il giro lampo. Tu non pubblicarli, neanche se li trovi nei giornali con le stesse parole:
   in quel caso la fonte è il giornale, come sempre.
@@ -323,9 +329,11 @@ ogni comunicato trattato in `comunicati_visti.json` e mette il suo `id` nel camp
   `"comunicati": ["…"]` della notizia (anche quando lo aggiungi a una notizia che c'è già), se lo scarti scrivi in
   «nota» cosa diceva e perché (lo controlla `archivia.py`).
 - Un comunicato da un dominio istituzionale (un Comune `*.bn.it`, la Provincia, la Regione, un ente pubblico) o della
-  società, del sindacato o dell'associazione che lo firma è una fonte ufficiale; uno da un indirizzo generico (gmail,
-  libero…) vale come comunicato della società se il contenuto è verificabile (una partita, un evento con luogo e
-  data), altrimenti cerca una conferma.
+  società, del sindacato o dell'associazione che lo firma è una fonte ufficiale. Uno da un indirizzo generico (gmail,
+  libero…) dal 26 ott 2026 arriva solo da un mittente fidato o se l'ha approvato il proprietario nella scheda Posta
+  (gli altri sono «da valutare», qui sopra): vale come il comunicato di chi lo firma, sul suo fatto, se il contenuto è
+  verificabile (una partita, un evento con luogo e data); se qualcosa non si capisce o non torna, cerca una conferma.
+  La stessa regola è in COMUNICATI.md, punto 4.
 - Tra le fonti il comunicato si cita col nome di chi lo firma e l'indirizzo del suo sito ufficiale (meglio la pagina
   del comunicato, se c'è): mai «posta:…», mai l'indirizzo email del mittente, niente numeri di telefono privati.
 - Pubblicità, inviti a pagare e catene vanno scartati. I campi `subito` e `comunicati` delle notizie del giro lampo
@@ -401,7 +409,8 @@ Sul sito la sezione si chiama **«Allerte»**. Ci vanno:
 
 **Le chiusure decise dai Comuni non le scrivi tu** (scuole, parchi e ville comunali, cimiteri, impianti sportivi,
 mercati, uffici; per qualunque motivo, anche un'allerta gialla). Dal 23 ott 2026 le pubblica il **giro Chiusure**,
-una routine a parte che parte appena la vedetta del Pi trova un'ordinanza (e comunque ogni ora), giorno e notte: le
+un giro a parte (sul server, con le sue istruzioni) che parte appena la vedetta trova un'ordinanza (e comunque ogni ora
+alle :35), giorno e notte: le
 mette nella pagina «Scuole chiuse» (https://notiziebenevento.it/scuole-chiuse/, file chiusure.json) e su tutti i
 social a qualsiasi ora. Tu **non crei notizie sulle chiusure** (sui social sarebbero un doppione) e non tocchi
 chiusure.json: nella notizia di un'allerta scrivi solo che l'elenco dei Comuni con le chiusure è nella pagina «Scuole
@@ -495,7 +504,8 @@ Regole:
    - il racconto parla dei fatti e non di come li hai saputi (niente «secondo la locandina», «con un comunicato
      stampa»)? letto ad alta voce, ogni frase suona naturale e in italiano corretto?
    - date, orari, numeri, nomi di strade e paesi sono identici alle fonti?
-   - titolo: dice il fatto? è senza acchiappa-clic? parole semplici? `titolo_google` sta in 60 caratteri, con paese e
+   - titolo: dice il fatto? è senza acchiappa-clic? parole semplici? `titolo_google` sta in 45-60 caratteri (mai più di
+     65, punto 4), con paese e
      fatto, scritto come lo cerca la gente (punto 4: la parola cercata prima, date per esteso, niente «oggi»)?
    - `"stato": "ufficiale"`: la fonte ufficiale ha `"ufficiale": true` in `fonti` e in `articolo.fonti` (punto 4)?
    - è un fatto di oggi o ancora attuale?
@@ -616,6 +626,54 @@ se ne trovi, riscrivile, almeno 8 a giro, partendo dalle più recenti e dalle `r
 racconto da capo, togli `cosa` e sistema cronologia e concordano con le regole qui sopra. Le notizie in `archivio/`
 non si toccano.
 
+## Categoria, zona e scadenze
+
+Come si sceglie la categoria di una notizia e come si scrivono la zona e le scadenze (`in_vigore_dal`,
+`in_vigore_fino`, `traffico`). Fino al 30 ott 2026 queste regole stavano dentro «Formato del file»: sono le stesse.
+
+- La categoria `meteo` sul sito si chiama **«Allerte»** (vedi «Le Allerte»); la categoria `sport` vuole anche il
+  campo `sport` (vedi «Lo sport»). Nel menu del sito la voce «Allerte» c'è solo quando c'è un'allerta.
+- **`avvisi`** (dal 28 ott 2026, lui: «al posto di strade metti avvisi dove mettere chiusure strade orari eccetera»):
+  gli avvisi pratici dei Comuni e dei servizi, quelli che servono per fare qualcosa: orari di cimiteri, uffici e
+  sportelli (anche chiusi), acqua e luce sospese, rifiuti e raccolta, ecocentri, bandi, domande, bonus, elenchi e
+  scadenze, vaccini e servizi ASL con date e sedi. Le strade, i bus e i treni restano `strade`. Se è una notizia e non
+  un avviso (il Comune chiede un finanziamento, un progetto premiato) resta nella sua categoria, di solito `altro`.
+  Sul sito la voce «Avvisi» mostra `strade` e `avvisi` insieme, in ordine di quando servono (oggi, prossimi giorni,
+  domande e scadenze), e dal 22 ottobre al 2 novembre in cima i cimiteri paese per paese: per questo
+  `in_vigore_dal` e `in_vigore_fino` devono essere i giorni veri del comunicato (la raccolta di venerdì 30: dal 30 al
+  30; la sagra dal 29 ottobre al 1° novembre: dal 29, non dal giorno in cui è uscita). archivia.py avvisa se il
+  primo giorno scritto nel titolo non torna con `in_vigore_dal`.
+- **`cultura`** (dal 28 ott 2026, lui: «sezione cultura con pagina per google… ora alcune di queste notizie vanno in
+  altro, cercare eventi culturali, libri ecc.»): libri e autori del Sannio (uscite, presentazioni, premi letterari),
+  teatro, musica, cinema, arte e mostre raccontati come notizia (una stagione presentata, un premio, un sannita in
+  TV o a un festival), musei, archeologia e patrimonio, biblioteche, Conservatorio, festival. Gli appuntamenti con data
+  e luogo vanno anche (o solo) nel calendario degli eventi; la notizia di cultura racconta il fatto. Le «curiosità»
+  restano a parte (CURIOSITA.md).
+- **`politica`** (dal 28 ott 2026, lui: «la sezione politica è veramente così scarna?», poi «fai A»): anche le
+  decisioni e gli atti di sindaco, Giunta, Consiglio comunale, Provincia e Regione per il Sannio (delibere,
+  finanziamenti chiesti o avuti, nomine e uffici del Comune, appelli e lettere del sindaco ai cittadini, ricorsi del
+  Comune), anche quando hanno effetti pratici. `avvisi` resta per l'avviso pratico già deciso (orari, uffici chiusi,
+  una scadenza): «la Giunta fissa i requisiti del bonus» è `politica`, «domande per il bonus entro il 30 novembre» è
+  `avvisi`.
+- **La zona la mette il programma** (dal 28 ott 2026, lui: «migliora il filtro benevento città perché compaiono anche
+  altri comuni»): archivia.py la ricava dal Comune scritto nel `luogo` (tabella `ZONA_COMUNE` dei 78 Comuni).
+  `benevento` è solo la città; i paesi intorno (San Giorgio, Sant'Angelo a Cupolo, Apice, Pietrelcina…) sono
+  `provincia`. Quindi nel `luogo` scrivi sempre per primo il Comune. Per un fatto di tutta la provincia scrivi
+  «Sannio» o «Provincia di Benevento» e la zona la scegli tu (di solito `provincia`); le trasferte del Benevento
+  restano `benevento`.
+- Per gli **avvisi ufficiali con una scadenza** (strade chiuse, lavori, divieti, ordinanze su scuole o acqua) scrivi
+  `in_vigore_fino` con la data presa dal comunicato: restano in prima pagina finché vale l'avviso. Se il comunicato
+  non dà una fine, non mettere il campo.
+- **Strade chiuse e disagi al traffico** (qualunque categoria, di solito `strade`): scrivi anche `traffico`, il
+  disagio più forte in quest'ordine: `chiusa` (strada, incrocio, ponte o passaggio a livello chiusi, anche per poche
+  ore), `blocchi` (presidi, cortei o mezzi fermi che bloccano la strada), `senso_unico` (senso unico, anche alternato),
+  `ristretta` (cantiere che restringe la strada), `bus` (linee deviate o fermate saltate per lavori o eventi). Se
+  l'avviso comincia in un giorno dopo, scrivi `in_vigore_dal` (il primo giorno, AAAA-MM-GG). Queste notizie fanno la
+  pagina «Strade chiuse» del sito (notiziebenevento.it/strade-chiuse/): oggi e prossimi giorni, ognuna fino a
+  `in_vigore_fino`; senza fine annunciata ci restano 3 giorni dall'ultima novità. **Niente `traffico`** per i soli
+  divieti di sosta, i limiti di velocità, gli scioperi, i lavori finiti o una strada riaperta. Quando una strada
+  riapre o un blocco finisce, nell'aggiornamento togli `traffico` (esce dalla pagina) e `rilevante`.
+
 ## Cosa va in testa alla prima pagina
 
 L'apertura e le tre notizie accanto le sceglie il sito da solo, con un punteggio: `rilevante` vale molto, poi il
@@ -636,7 +694,8 @@ il 26 ott 2026: «creare una classifica con criterio e pubblicare il giusto»). 
 caporedattore:
 - **5** tocca tutti: il **Benevento Calcio, sempre** (partite, risultati, infortuni, mercato, biglietti); incidenti
   gravi, morti; scioperi dei trasporti; acqua sospesa in città; allerte arancioni o rosse; scuole chiuse.
-- **4** tocca tanti: la **politica** (Comune, Provincia, Regione per il Sannio: sindaco, giunta, consiglio, mozioni);
+- **4** tocca tanti: la **politica** (Comune, Provincia, Regione per il Sannio: sindaco, giunta, consiglio, mozioni
+  quando sono una notizia per la regola 9, cioè votate e con effetti);
   ospedale e sanità; strade principali chiuse; treni e bus; bonus, bandi e scadenze; cronaca (arresti, furti
   importanti, aggressioni); eventi grandi.
 - **3** utile a un paese o a un quartiere: avvisi e servizi dei Comuni (orari, cimiteri, raccolta rifiuti, lavori,
@@ -717,7 +776,8 @@ aggiorni a ogni giro, come notizie.json.
   Solo nei 78 Comuni della provincia di Benevento. Sul sito gli appuntamenti di cultura stanno anche in cima alla
   sezione Cultura.
 - **La fonte**: basta l'annuncio di **chi lo organizza** (Comune, teatro, Pro Loco, associazione, museo,
-  conservatorio), sul suo sito o riportato anche da un solo giornale. Data, ora, luogo e prezzo si scrivono **solo se
+  conservatorio), sul suo sito o riportato anche da un solo giornale: per il suo evento chi organizza vale come una
+  fonte ufficiale (regola 2), anche quando lo leggi nel giornale che lo riprende. Data, ora, luogo e prezzo si scrivono **solo se
   sono scritti nella fonte**: senza ora non metti `ora`, senza prezzo non metti `prezzo`. Mai date «probabili».
 - **Quanto avanti**: a ogni giro cerca gli eventi **dei prossimi 2 mesi**. Se un evento più lontano è già annunciato
   con la data (per esempio la stagione teatrale fino ad aprile), mettilo lo stesso.
@@ -771,7 +831,8 @@ aggiorni a ogni giro, come notizie.json.
 
 ### Le stagioni ufficiali
 
-A ogni giro, volute dal proprietario il 25 ott 2026. Il Pi di casa legge ogni 30 minuti le pagine delle stagioni di Città Spettacolo (Teatro
+A ogni giro, volute dal proprietario il 25 ott 2026. Il server (fino al 30 ott 2026 il Pi di casa) legge ogni 30
+minuti le pagine delle stagioni di Città Spettacolo (Teatro
 Comunale, De La Salle), Accademia di Santa Sofia, Teatro San Marco, Solot e la biglietteria Clappit (file
 `stagioni.json` delle fonti lette da casa), e in fondo all'elenco di `giornali.py` trovi **le date da oggi in poi che
 non hanno un evento in calendario** (le stampa anche `python3 strumenti/stagioni.py`). Per ognuna:
@@ -880,14 +941,14 @@ le dichiarazioni nuove. **Se non c'è ancora, crealo in questo giro.**
     "titolo": "", "titolo_google": "45-60 caratteri: paese e fatto", "sintesi": "2-3 frasi",
     "categoria": "avvisi|strade|cronaca|meteo|politica|sport|eventi|cultura|altro",
     "sport": "solo per categoria sport: calcio|calcio_a_5|basket|pallavolo|rugby|scherma|atletica|tennis|ciclismo|nuoto|altro",
-    "zona": "benevento|telesina|caudina|fortore|provincia (la corregge archivia.py dal luogo, vedi sotto)",
+    "zona": "benevento|telesina|caudina|fortore|provincia (la corregge archivia.py dal luogo, vedi «Categoria, zona e scadenze»)",
     "immagine": "tema da img/temi/temi.json (facoltativo, mai per la cronaca)",
     "luogo": "il Comune per primo, poi la località: «San Giorgio del Sannio, piazza Immacolata»", "pubblicato": "ISO dell'articolo fonte più recente, oppure solo AAAA-MM-GG se l'ora non è scritta",
     "stato": "confermata|ufficiale|una_fonte (vedi regola 2)", "rilevante": false,
     "importanza": "1-5, il numero (vedi «L'importanza per i social»)",
     "in_vigore_fino": "AAAA-MM-GG, solo per avvisi ufficiali con una scadenza (lavori, divieti, ordinanze)",
     "in_vigore_dal": "AAAA-MM-GG, il primo giorno in cui vale l'avviso, come nel comunicato (serve quando comincia più avanti; mai il giorno in cui è uscito)",
-    "traffico": "chiusa|blocchi|senso_unico|ristretta|bus, solo per strade chiuse o con disagi (vedi sotto)",
+    "traffico": "chiusa|blocchi|senso_unico|ristretta|bus, solo per strade chiuse o con disagi (vedi «Categoria, zona e scadenze»)",
     "fonti": [ {"nome": "Testata", "url": "link all'articolo"}, {"nome": "Comune di …", "url": "…", "ufficiale": true} ],
     "nota": "solo se serve una correzione",
     "articolo": {
@@ -902,7 +963,7 @@ le dichiarazioni nuove. **Se non c'è ancora, crealo in questo giro.**
   } ],
   "approfondimenti": [ {
     "id": "", "titolo": "", "titolo_google": "45-60 caratteri", "sommario": "3-4 frasi", "luogo": "", "aggiornato": "ISO",
-    "categoria": "solo \"politica\" per il dibattito politico in città (vedi sotto), altrimenti niente",
+    "categoria": "solo \"politica\" per il dibattito politico in città (vedi «Il dibattito politico in città»), altrimenti niente",
     "collegate": ["id delle notizie"],
     "in_breve": [ {"testo": "", "fonti": []} ],
     "sezioni": [ {"titolo": "", "paragrafi": [ {"testo": "", "fonti": []} ], "punti": [ {"testo": "", "fonti": []} ]} ],
@@ -917,48 +978,9 @@ le dichiarazioni nuove. **Se non c'è ancora, crealo in questo giro.**
   stesso giornale, distinguili: «Ottopagine (19/10)», «Ottopagine (20/10)».
 - `fonti` della notizia (quelle in prima pagina): una per testata, l'articolo più recente.
 - `rilevante` c'è sempre, come `true` o `false` (booleano, non testo). `importanza` c'è sempre, come numero da 1 a 5.
-- La categoria `meteo` sul sito si chiama **«Allerte»** (vedi «Le Allerte»); la categoria `sport` vuole anche il
-  campo `sport` (vedi «Lo sport»). Nel menu del sito la voce «Allerte» c'è solo quando c'è un'allerta.
-- **`avvisi`** (dal 28 ott 2026, lui: «al posto di strade metti avvisi dove mettere chiusure strade orari eccetera»):
-  gli avvisi pratici dei Comuni e dei servizi, quelli che servono per fare qualcosa: orari di cimiteri, uffici e
-  sportelli (anche chiusi), acqua e luce sospese, rifiuti e raccolta, ecocentri, bandi, domande, bonus, elenchi e
-  scadenze, vaccini e servizi ASL con date e sedi. Le strade, i bus e i treni restano `strade`. Se è una notizia e non
-  un avviso (il Comune chiede un finanziamento, un progetto premiato) resta nella sua categoria, di solito `altro`.
-  Sul sito la voce «Avvisi» mostra `strade` e `avvisi` insieme, in ordine di quando servono (oggi, prossimi giorni,
-  domande e scadenze), e dal 22 ottobre al 2 novembre in cima i cimiteri paese per paese: per questo
-  `in_vigore_dal` e `in_vigore_fino` devono essere i giorni veri del comunicato (la raccolta di venerdì 30: dal 30 al
-  30; la sagra dal 29 ottobre al 1° novembre: dal 29, non dal giorno in cui è uscita). archivia.py avvisa se il
-  primo giorno scritto nel titolo non torna con `in_vigore_dal`.
-- **`cultura`** (dal 28 ott 2026, lui: «sezione cultura con pagina per google… ora alcune di queste notizie vanno in
-  altro, cercare eventi culturali, libri ecc.»): libri e autori del Sannio (uscite, presentazioni, premi letterari),
-  teatro, musica, cinema, arte e mostre raccontati come notizia (una stagione presentata, un premio, un sannita in
-  TV o a un festival), musei, archeologia e patrimonio, biblioteche, Conservatorio, festival. Gli appuntamenti con data
-  e luogo vanno anche (o solo) nel calendario degli eventi; la notizia di cultura racconta il fatto. Le «curiosità»
-  restano a parte (CURIOSITA.md).
-- **`politica`** (dal 28 ott 2026, lui: «la sezione politica è veramente così scarna?», poi «fai A»): anche le
-  decisioni e gli atti di sindaco, Giunta, Consiglio comunale, Provincia e Regione per il Sannio (delibere,
-  finanziamenti chiesti o avuti, nomine e uffici del Comune, appelli e lettere del sindaco ai cittadini, ricorsi del
-  Comune), anche quando hanno effetti pratici. `avvisi` resta per l'avviso pratico già deciso (orari, uffici chiusi,
-  una scadenza): «la Giunta fissa i requisiti del bonus» è `politica`, «domande per il bonus entro il 30 novembre» è
-  `avvisi`.
-- **La zona la mette il programma** (dal 28 ott 2026, lui: «migliora il filtro benevento città perché compaiono anche
-  altri comuni»): archivia.py la ricava dal Comune scritto nel `luogo` (tabella `ZONA_COMUNE` dei 78 Comuni).
-  `benevento` è solo la città; i paesi intorno (San Giorgio, Sant'Angelo a Cupolo, Apice, Pietrelcina…) sono
-  `provincia`. Quindi nel `luogo` scrivi sempre per primo il Comune. Per un fatto di tutta la provincia scrivi
-  «Sannio» o «Provincia di Benevento» e la zona la scegli tu (di solito `provincia`); le trasferte del Benevento
-  restano `benevento`.
-- Per gli **avvisi ufficiali con una scadenza** (strade chiuse, lavori, divieti, ordinanze su scuole o acqua) scrivi
-  `in_vigore_fino` con la data presa dal comunicato: restano in prima pagina finché vale l'avviso. Se il comunicato
-  non dà una fine, non mettere il campo.
-- **Strade chiuse e disagi al traffico** (qualunque categoria, di solito `strade`): scrivi anche `traffico`, il
-  disagio più forte in quest'ordine: `chiusa` (strada, incrocio, ponte o passaggio a livello chiusi, anche per poche
-  ore), `blocchi` (presidi, cortei o mezzi fermi che bloccano la strada), `senso_unico` (senso unico, anche alternato),
-  `ristretta` (cantiere che restringe la strada), `bus` (linee deviate o fermate saltate per lavori o eventi). Se
-  l'avviso comincia in un giorno dopo, scrivi `in_vigore_dal` (il primo giorno, AAAA-MM-GG). Queste notizie fanno la
-  pagina «Strade chiuse» del sito (notiziebenevento.it/strade-chiuse/): oggi e prossimi giorni, ognuna fino a
-  `in_vigore_fino`; senza fine annunciata ci restano 3 giorni dall'ultima novità. **Niente `traffico`** per i soli
-  divieti di sosta, i limiti di velocità, gli scioperi, i lavori finiti o una strada riaperta. Quando una strada
-  riapre o un blocco finisce, nell'aggiornamento togli `traffico` (esce dalla pagina) e `rilevante`.
+- Campi che scrivi solo in certi casi: `contributo` (vedi «I contributi»), `locandina` (vedi «Il calendario degli
+  eventi») e `foto_inviate` con `foto_da` (vedi «La foto illustrativa»). Quelli che mettono i programmi non li scrivi
+  tu: `subito`, `foto`, `foto_ia`, `titolo_prima`; `diretta_calcio` non toglierlo (vedi «Lo sport»).
 
 ## Archivio: nessuna notizia si cancella
 
@@ -972,7 +994,7 @@ le dichiarazioni nuove. **Se non c'è ancora, crealo in questo giro.**
 - **L'`id` è l'indirizzo della notizia su Google**: `notiziebenevento.it/notizia/<id>/`. Una volta pubblicato non si
   cambia mai, nemmeno se correggi il titolo. Sceglilo con le parole che la gente cerca (luogo + fatto), corto:
   `montesarchio-droga-due-arresti`, non `notizia-1`. Le pagine, la sitemap, il feed e le immagini di anteprima li fa
-  GitHub da solo (`strumenti/pagine.py`): tu non devi creare né committare niente di tutto questo.
+  da sola la pubblicazione del sito (`strumenti/pagine.py`): tu non devi creare né committare niente di tutto questo.
 - Non modificare mai i file in `archivio/` (tranne `archivio/rimandi.json`, per unire due notizie o due eventi: «Come
   lavorare una notizia», punto 1), con una sola eccezione: se scopri un errore in una notizia archiviata,
   correggi quella notizia nel file del suo mese e spiega la correzione nel campo `nota`. Mai cancellarla.

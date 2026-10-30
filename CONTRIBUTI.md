@@ -7,7 +7,7 @@ pagina è notiziebenevento.it/agevolazioni/ (fino al 28 ott 2026 sera «Contribu
 Comune della **provincia di Benevento** può chiedere adesso.
 
 Da dove arriva la pagina (strumenti/contributi.py):
-- il Catalogo degli incentivi del Ministero delle Imprese (lo scarica il Pi di casa quattro volte al giorno): non lo
+- il Catalogo degli incentivi del Ministero delle Imprese (lo scarica il server, fino al 30 ott 2026 il Pi di casa, quattro volte al giorno): non lo
   scrivi tu, ma lo **controlli** (punto 3);
 - `contributi_locali.json`: **lo scrivi tu**, con quello che il catalogo non ha;
 - `contributi_esclusi.json`: **lo scrivi tu**, con le schede del catalogo chiuse o sbagliate;
