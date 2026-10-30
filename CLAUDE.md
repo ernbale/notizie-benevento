@@ -20,8 +20,12 @@ claude.ai/code dal telefono): qui c'è quello che serve per riprendere il lavoro
   controllo in `strumenti/archivia.py` (vale per tutti i giri) o in `strumenti/comunicati.py` (solo il giro lampo).
 
 ## Come è fatto
-- Sito statico su GitHub Pages; `README.md` dice cosa fa ogni file. Le notizie sono in `notizie.json` (prima pagina)
-  e `archivio/AAAA-MM.json`; gli eventi in `eventi.json`.
+- **Dal 30 ott 2026 tutto gira sul server Aruba** (`ssh -i ~/.ssh/nb_server_ed25519 ernesto@195.231.64.238`; lui:
+  «tutto su aruba poi github lo dismettiamo più avanti»): il sito, le fonti, la posta, i giri, i social. Il «Pi di
+  casa» che si legge più sotto e nei programmi è ora il server: stessi programmi in `~/nb-fonti`, stessi file.
+- Sito statico servito dal server (Caddy, cartella `/srv/notiziebenevento`); GitHub Pages ne tiene una copia di
+  riserva (tornarci = rimettere i DNS nel pannello Aruba). `README.md` dice cosa fa ogni file. Le notizie sono in
+  `notizie.json` (prima pagina) e `archivio/AAAA-MM.json`; gli eventi in `eventi.json`.
 - Archivio privato delle fonti: repo `ernbale/notizie-benevento-fonti` (comunicati.json = la casella
   comunicati@notiziebenevento.it, ufficiali.json, allegati/). Lo riempie il server Aruba ogni 5 minuti (fino al 30 ott
   2026 il Pi di casa).
@@ -32,8 +36,11 @@ claude.ai/code dal telefono): qui c'è quello che serve per riprendere il lavoro
 - Le foto illustrative sono in `img/temi` (temi.json, strumenti/foto_temi.py): ogni foto di un tema deve andar bene
   per ogni notizia del tema; una scena precisa (chiuso, fermo, danneggiato) ha un tema suo col campo `solo`, e le foto
   tolte da un tema stanno in `escluse` (i file restano). La regola per l'agente è in AGENTE.md, «Precisione su tutto».
-- Ogni push su main fa partire la Action «Pubblica il sito» (`.github/workflows/pubblica.yml`): pagine, Telegram,
-  Facebook, Instagram. Ci mette circa 2 minuti.
+- Ogni push su main fa partire, entro un minuto, la pubblicazione del server (`strumenti/pubblica_server.sh`, gli
+  stessi passi di `.github/workflows/pubblica.yml`: pagine, statistiche, Telegram, Facebook, Instagram; circa 1-2
+  minuti; registro in `~/pubblica.log`). Parte anche la Action di GitHub, che con la variabile `SITO_SU_ARUBA=si` fa
+  solo la copia di riserva, senza social: i social mai da tutti e due (doppioni). Sul server l'interruttore è
+  `~/sito-stato/ACCESO`, la memoria dei social è in `~/sito-stato/social/`.
 
 ## Il menu del sito (deciso con lui il 28 ott 2026)
 Tutte · Cronaca · Politica · Sport · Calcio · (Allerte, solo con un'allerta) · Eventi · Cultura · Avvisi · Servizi · Agevolazioni · Altro · zona · Comuni
@@ -202,15 +209,17 @@ Dopo una modifica a `strumenti/`: `python3 -m py_compile` sui file toccati e una
 prima del push. Un errore in `archivia.py` ferma il giro di ogni ora.
 
 ## Controllare le sentinelle da qualsiasi posto
-Il Pi di casa (vedetta, fonti, posta in diretta, giro lampo, sentinella) è solo nella LAN di casa, ma lascia tracce
-che si leggono da ovunque:
-- **Il Pi è vivo?** Nel repo ernbale/notizie-benevento-fonti il commit «Fonti lette da casa alle HH:MM» arriva ogni 5
+Il server Aruba (vedetta, fonti, posta in diretta, giri, sentinella; fino al 30 ott 2026 era il Pi di casa) si
+raggiunge con ssh dal Mac, e lascia tracce che si leggono da ovunque:
+- **I giri:** `/home/redazione/giri.log` (uno per riga, con esito, durata e resoconto) ed `/home/redazione/esiti/`.
+- **Il server è vivo?** Nel repo ernbale/notizie-benevento-fonti il commit «Fonti lette da casa alle HH:MM» arriva ogni 5
   minuti; in ogni file `controllato` ed `esito` (chiusure.json: «Comuni 73/78 · albi 57/57…», ufficiali.json: «23 fonti
   su 23»).
 - **Il sito è al passo?** `GH_TOKEN="$(gh auth token)" python3 strumenti/sentinella.py --prova` (non tocca niente).
 - **Allarmi del Pi**: le esecuzioni in rosso di `.github/workflows/sentinella.yml` lanciate a mano (workflow_dispatch)
   sono gli avvisi del Pi: `gh run view <id> --log | grep AVVISO_PI`.
-- La posta in diretta (posta_diretta.py) e le risposte di cortesia (risposte.py) da fuori non si vedono: solo dal Pi.
+- La posta in diretta (posta_diretta.py) e le risposte di cortesia (risposte.py): i loro registri sono sul server,
+  in `~/nb-fonti/*.log`.
 
 ## Social: mai raffiche né doppioni (regola del proprietario dal 26 ott 2026)
 Il 26 ott 2026 sono usciti 16 post Facebook in un minuto (tolti i limiti, è partita tutta la coda arretrata) e 5
