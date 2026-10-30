@@ -26,8 +26,25 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
+      # dal trasloco su Aruba (30 ott 2026): se il server sembra fermo, WhatsApp al proprietario (CallMeBot, segreto
+      # CALLMEBOT) al massimo una volta ogni 2 ore; quando l'ultimo avviso lo ricorda la cache
+      - uses: actions/cache/restore@v4
+        with:
+          path: ${{ runner.temp }}/sentinella
+          key: sentinella-${{ github.run_id }}
+          restore-keys: sentinella-
       - name: Giro, sito e Telegram al passo
         env:
           GH_TOKEN: ${{ github.token }}
           AVVISO_PI: ${{ inputs.avviso }}
-        run: python3 strumenti/sentinella.py
+          CALLMEBOT: ${{ secrets.CALLMEBOT }}
+          SENTINELLA_STATO: ${{ runner.temp }}/sentinella
+        run: |
+          mkdir -p "$SENTINELLA_STATO"
+          python3 strumenti/sentinella.py
+      - uses: actions/cache/save@v4
+        if: always()
+        continue-on-error: true
+        with:
+          path: ${{ runner.temp }}/sentinella
+          key: sentinella-${{ github.run_id }}

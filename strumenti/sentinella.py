@@ -595,7 +595,10 @@ def manda_a_casa(testo, oggetto, coda=""):
         with open(AVVISI_CONF, encoding="utf-8") as f:
             conf = json.load(f)
     except (OSError, ValueError):
-        return ["avvisi.conf manca: niente WhatsApp né email"]
+        try:   # su GitHub: la chiave di CallMeBot dal segreto CALLMEBOT (la mail la manda GitHub, col lavoro in rosso)
+            conf = {"callmebot": json.loads(os.environ["CALLMEBOT"])}
+        except (KeyError, ValueError):
+            return ["avvisi.conf manca: niente WhatsApp né email"]
     esiti = []
     try:
         if conf.get("callmebot"):   # WhatsApp diretto a CallMeBot (solo testo)
@@ -621,6 +624,8 @@ def manda_a_casa(testo, oggetto, coda=""):
             esiti.append("WhatsApp mandato")
     except Exception as e:
         esiti.append(f"WhatsApp NON mandato ({type(e).__name__}: {str(e)[:120]})")
+    if "email" not in conf:
+        return esiti
     try:   # email: dalla casella dei comunicati (Aruba)
         import smtplib
         import ssl
@@ -784,7 +789,32 @@ def main():
                 json.dump({"avviso": adesso.isoformat(timespec="minutes")}, f)
             print(f"{ora} avviso: {', '.join(avvisa_casa(problemi, adesso))}")
     if problemi and not a.pi:
+        server_fermo(adesso, [p for p in problemi if p.startswith("nessun giro dell'agente")])
         sys.exit(1)
+
+
+def server_fermo(adesso, problemi):
+    """Su GitHub (dal trasloco su Aruba, 30 ott 2026): il WhatsApp al proprietario quando il server sembra fermo (il
+    sito non risponde, o nessun giro da GIRO_MAX minuti), perché in quel caso la sentinella del server è ferma con lui.
+    Gli altri problemi li manda già il server: niente doppioni. Mai quando la sentinella l'ha lanciata il server
+    (AVVISO_PI). Al massimo una volta ogni AVVISO_ORE: l'ultimo avviso sta in SENTINELLA_STATO (la cache di GitHub)."""
+    if not problemi or not os.environ.get("CALLMEBOT") or os.environ.get("AVVISO_PI", "").strip():
+        return
+    stato_f = os.path.join(os.environ.get("SENTINELLA_STATO") or ".", "avviso_server.json")
+    try:
+        with open(stato_f, encoding="utf-8") as f:
+            ultimo = iso(json.load(f)["avviso"])
+    except (OSError, ValueError, KeyError):
+        ultimo = None
+    if ultimo and adesso - ultimo < dt.timedelta(hours=AVVISO_ORE) - dt.timedelta(minutes=5):
+        print(f"Sentinella: WhatsApp già mandato alle {ultimo.astimezone(fuso()):%H:%M}")
+        return
+    testo = ("⚠️ Notizie Benevento: il server Aruba sembra fermo (lo dice la sentinella di GitHub, "
+             f"{adesso.astimezone(fuso()):%d/%m %H:%M}):\n" + "\n".join(f"• {p}" for p in problemi))
+    print("Sentinella:", ", ".join(manda_a_casa(testo, "⚠️ Notizie Benevento: il server sembra fermo")))
+    os.makedirs(os.path.dirname(stato_f) or ".", exist_ok=True)
+    with open(stato_f, "w", encoding="utf-8") as f:
+        json.dump({"avviso": adesso.isoformat(timespec="minutes")}, f)
 
 
 if __name__ == "__main__":
@@ -792,4 +822,6 @@ if __name__ == "__main__":
         main()
     except Exception as e:   # sul Pi nel log una riga, non un traceback
         print(f"{dt.datetime.now(fuso()):%d/%m %H:%M} ERRORE: {e}" if "--pi" in sys.argv else f"::error::Sentinella: {e}")
+        if "--pi" not in sys.argv:   # su GitHub: il sito non risponde = probabilmente il server è fermo
+            server_fermo(dt.datetime.now(dt.timezone.utc), [f"la sentinella non riesce a fare i controlli, forse il sito non risponde ({type(e).__name__}: {str(e)[:150]})"])
         sys.exit(1)
