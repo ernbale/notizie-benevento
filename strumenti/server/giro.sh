@@ -35,6 +35,13 @@ fi
 TESTO=""
 [ -f "/var/lib/nb-giri/$ISTANZA.txt" ] && TESTO=$(cat "/var/lib/nb-giri/$ISTANZA.txt") && rm -f "/var/lib/nb-giri/$ISTANZA.txt"
 PROMPT=$(cat "/usr/local/lib/nb-giri/prompt/$TIPO.txt") || { riga "mancano le istruzioni"; exit 2; }
+# una nota lasciata per il prossimo giro di questo tipo (/var/lib/nb-giri/nota-<tipo>.txt, una volta sola): per
+# esempio «alle 10 hai lasciato fuori questo fatto perché mancava una regola, ora c'è»
+NOTA=/var/lib/nb-giri/nota-$TIPO.txt
+if [ -f "$NOTA" ]; then
+  TESTO="${TESTO:+$TESTO$'\n\n'}$(cat "$NOTA")"
+  rm -f "$NOTA"
+fi
 [ -n "$TESTO" ] && PROMPT="$PROMPT"$'\n\n'"$TESTO"
 
 W=$CASA/giri/$ISTANZA
