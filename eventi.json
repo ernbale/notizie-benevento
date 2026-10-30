@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-29T20:06+01:00",
+ "aggiornato": "2026-10-30T06:40+01:00",
  "eventi": [
   {
    "id": "mostra-cosmogonie-meact-torrecuso-2026",
@@ -621,6 +621,18 @@
      "titolo": "Vitulano, al via la 33ª Sagra della Castagna e del Pecorino Vitulanese",
      "url": "https://www.anteprima24.it/benevento/vitulano-al-via-la-33a-sagra-della-castagna-e-del-pecorino-vitulanese/",
      "data": "29 ott, 12:03"
+    },
+    {
+     "nome": "Benevento Giornale (29/10)",
+     "titolo": "Vitulano, al via la 33ª Sagra della Castagna e del Pecorino Vitulanese: il cuore della festa è una comunità che si mette in gioco",
+     "url": "https://www.beneventogiornale.com/2026/10/29/vitulano-al-via-la-33a-sagra-della-castagna-e-del-pecorino-vitulanese-il-cuore-della-festa-e-una-comunita-che-si-mette-in-gioco/",
+     "data": "29 ott"
+    },
+    {
+     "nome": "TeleradioNews (29/10)",
+     "titolo": "Vitulano (BN). Da giovedì la ‘Sagra della castagna e del Pecorino’ promossa dalla ‘Pro Loco Camposauro’",
+     "url": "https://www.teleradio-news.it/2026/10/29/vitulano-bn-da-giovedi-la-sagra-della-castagna-e-del-pecorino-promossa-dalla-pro-loco-camposauro/",
+     "data": "29 ott"
     }
    ],
    "immagine": "castagne",
@@ -699,6 +711,18 @@
      "titolo": "L’Associazione \"Corso Vivo\" propone tre giorni di animazione, spettacolo e benessere nel centro storico di Benevento",
      "url": "https://www.gazzettabenevento.it/it/lassociazione-corso-vivo-propone-tre-giorni-di-animazione-spettacolo-e-benessere-nel-centro-storico",
      "data": "29 ott, 14:27"
+    },
+    {
+     "nome": "Benevento Giornale",
+     "titolo": "L’Associazione “Corso Vivo” presenta “Arte, Musica e Danza nel cuore della città” in programma dal 30 ottobre al 1° novembre lungo Corso Garibaldi",
+     "url": "https://www.beneventogiornale.com/2026/10/29/lassociazione-corso-vivo-presenta-arte-musica-e-danza-nel-cuore-della-citta-in-programma-dal-30-ottobre-al-1-novembre-lungo-corso-garibaldi/",
+     "data": "29 ott"
+    },
+    {
+     "nome": "NTR24 (30/10)",
+     "titolo": "Halloween e Ponte d’Ognissanti, Neri per Caso, castagne e pecorino: gli eventi del weekend a Benevento e nel Sannio",
+     "url": "https://www.ntr24.tv/2026/10/30/eventi-30-31-1-2/",
+     "data": "30 ott"
     }
    ],
    "immagine": "luminarie",
@@ -1104,6 +1128,12 @@
      "titolo": "Neri per Caso, le voci che hanno conquistato Sanremo arrivano al Teatro Comunale",
      "url": "https://www.cronachedelsannio.it/sannionews24/neri-per-caso-teatro-comunale/",
      "data": "29 ott, 17:18"
+    },
+    {
+     "nome": "Benevento Giornale",
+     "titolo": "Neri per Caso al Teatro Comunale, la stagione dell’Accademia di Santa Sofia si apre con le voci che hanno conquistato Sanremo",
+     "url": "https://www.beneventogiornale.com/2026/10/29/neri-per-caso-al-teatro-comunale-la-stagione-dellaccademia-di-santa-sofia-si-apre-con-le-voci-che-hanno-conquistato-sanremo/",
+     "data": "29 ott"
     }
    ],
    "immagine": "concerto",
@@ -1168,6 +1198,12 @@
      "titolo": "Presentazione il prossimo 31 ottobre della ristampa del libro di poesie \"P'tacce de vita\", scritto da Fausto Di Maria",
      "url": "https://www.gazzettabenevento.it/it/presentazione-il-prossimo-31-ottobre-della-ristampa-del-libro-di-poesie-ptacce-de-vita-scritto-da",
      "data": "29 ott, 09:37"
+    },
+    {
+     "nome": "TeleradioNews",
+     "titolo": "S. Croce del Sannio (BN). ‘P’tacce de vita’: sabato 31 la presentazione del libro di Fausto Di Maria",
+     "url": "https://www.teleradio-news.it/2026/10/29/s-croce-del-sannio-bn-ptacce-de-vita-sabato-31-la-presentazione-del-libro-di-fausto-di-maria/",
+     "data": "29 ott"
     }
    ],
    "foto": "libri-8"
