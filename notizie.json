@@ -1,7 +1,70 @@
 {
- "aggiornato": "2026-10-30T19:05+01:00",
+ "aggiornato": "2026-10-30T20:05+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "telese-terme-don-patriciello-150-studenti-cesvolab",
+   "titolo": "Telese Terme, don Maurizio Patriciello incontra oltre 150 studenti: «La scuola deve preparare i ragazzi a vivere»",
+   "titolo_google": "Don Patriciello a Telese Terme con 150 studenti delle scuole",
+   "sintesi": "Venerdì 30 ottobre a Telese Terme don Maurizio Patriciello ha incontrato oltre 150 ragazzi dell'istituto comprensivo telesino, del Telesi@ e dell'Alfonso Maria de' Liguori di Sant'Agata de' Goti. L'incontro, sul disagio giovanile e la legalità, lo ha promosso il Centro servizi per il volontariato Cesvolab.",
+   "categoria": "altro",
+   "zona": "telesina",
+   "immagine": "conferenza-stampa",
+   "luogo": "Telese Terme",
+   "pubblicato": "2026-10-30T19:33+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 3,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/don-patriciello-telese-studenti-scuola-lavoro/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Venerdì mattina, 30 ottobre, a Telese Terme don Maurizio Patriciello ha parlato con oltre 150 studenti delle scuole della zona. I ragazzi, accompagnati dai loro insegnanti, venivano dall'istituto comprensivo di Telese, dall'istituto superiore «Telesi@» e dall'istituto superiore «Alfonso Maria de' Liguori» di Sant'Agata de' Goti.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "L'incontro lo ha organizzato il Cesvolab, il Centro servizi per il volontariato di Irpinia e Sannio, col titolo «Il futuro non si ruba. Si costruisce»: si è parlato di disagio dei giovani, di legalità e di cosa possono fare scuola, istituzioni e volontariato nelle aree interne. Fa parte del progetto «Il Mantello condiviso», che unisce scuole e associazioni, ed è una tappa del concorso «#DonareMiDona Non Profit» dell'Istituto Italiano della Donazione.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Dopo i relatori, tra cui l'assessora all'Istruzione di Telese Terme Filomena Di Mezza, la dirigente del Telesi@ Marlène Viscariello e il presidente del Cesvolab Raffaele Amore, ha parlato don Patriciello, che ha risposto alle domande degli studenti. «La scuola deve preparare questi ragazzi a vivere», ha detto, e dopo la scuola deve venire il lavoro, «altrimenti ci sono la disoccupazione, la strada». Prima di parlare dei ragazzi, ha aggiunto, bisogna chiedersi cosa hanno dato loro genitori, insegnanti, Chiesa e città.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "In sala c'erano anche diverse associazioni di volontariato del Sannio, tra cui le Misericordie di Solopaca, Guardia Sanframondi e Montesarchio, il sindaco di Melizzano Francesco Galietta e rappresentanti dei Carabinieri e del Commissariato di Polizia di Telese Terme.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "In quale sala di Telese Terme si è svolto l'incontro."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Don Patriciello incontra oltre 150 studenti: “La scuola deve preparare questi ragazzi a vivere”",
+      "url": "https://www.anteprima24.it/benevento/don-patriciello-telese-studenti-scuola-lavoro/",
+      "data": "30 ott, 19:33"
+     }
+    ]
+   },
+   "foto": "conferenza-stampa-7"
+  },
   {
    "id": "benevento-sete-nera-annamaria-venere-libreria-masone-alisei",
    "titolo": "Benevento, alla libreria Masone Alisei la presentazione di «Sete nera», il noir di Annamaria Venere",
@@ -753,6 +816,10 @@
      "nome": "AIR Campania",
      "url": "https://aircampania.it/benevento-dal-31-ottobre-al-2-novembre-attiva-navetta-per-il-cimitero/",
      "ufficiale": true
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/benevento-dal-31-ottobre-al-2-novembre-attiva-navetta-per-il-cimitero/"
     }
    ],
    "articolo": {
@@ -760,7 +827,8 @@
      {
       "testo": "Per la Commemorazione dei defunti, sabato 31 ottobre, domenica 1 e lunedì 2 novembre, a Benevento ci sono le navette per il cimitero comunale. Le fa AIR Campania, l'azienda regionale dei trasporti, su richiesta del Comune di Benevento. Le linee sono due: una parte da piazza Cardinal Pacca, l'altra da piazza Risorgimento. Le prime partenze sono alle 7:30, le ultime corse dal cimitero alle 17:25.",
       "fonti": [
-       "AIR Campania"
+       "AIR Campania",
+       "TV7 Benevento"
       ]
      },
      {
@@ -805,6 +873,12 @@
       "url": "https://aircampania.it/benevento-dal-31-ottobre-al-2-novembre-attiva-navetta-per-il-cimitero/",
       "data": "30 ott, 14:27",
       "ufficiale": true
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Benevento, dal 31 ottobre al 2 novembre attiva navetta per il Cimitero",
+      "url": "https://www.tvsette.net/benevento-dal-31-ottobre-al-2-novembre-attiva-navetta-per-il-cimitero/",
+      "data": "30 ott, 18:58"
      }
     ]
    },
@@ -6320,7 +6394,7 @@
    "id": "benevento-lilt-fapas-sapori-che-fanno-bene-attestati-30-ottobre",
    "titolo": "Benevento, corso di cucina per pazienti oncologici: venerdì 30 ottobre gli attestati alla FAPAS",
    "titolo_google": "Corso di cucina per pazienti oncologici a Benevento, LILT",
-   "sintesi": "Venerdì 30 ottobre alle 16.30, nella sede della FAPAS in contrada Pezzapiana a Benevento, la LILT consegna gli attestati del primo corso di cucina «I Sapori che fanno bene», pensato per i pazienti oncologici.",
+   "sintesi": "Venerdì 30 ottobre, nella sede della FAPAS in contrada Pezzapiana a Benevento, la LILT ha consegnato gli attestati del primo corso di cucina «I Sapori che fanno bene», pensato per i pazienti oncologici.",
    "categoria": "altro",
    "luogo": "Benevento, contrada Pezzapiana",
    "pubblicato": "2026-10-29T10:33:00+01:00",
@@ -6343,32 +6417,40 @@
     {
      "nome": "Benevento Giornale",
      "url": "https://www.beneventogiornale.com/2026/10/29/la-lilt-di-benevento-e-la-fapas-celebrano-il-percorso-formativo-che-ha-unito-cucina-sana-alimentazione-benessere-e-socialita-i-sapori-che-fanno-bene/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/non-solo-cucina-ma-sorrisi-e-solidarieta-a-benevento-lilt-e-fapas-celebrano-i-sapori-che-fanno-bene-video-e-foto/"
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Venerdì 30 ottobre alle 16.30 la LILT di Benevento, la Lega italiana per la lotta contro i tumori, consegna gli attestati del primo corso di cucina «I Sapori che fanno bene», dedicato ai pazienti oncologici. La cerimonia si tiene nella sede dell'ente di formazione professionale FAPAS, in contrada Pezzapiana, via Antonio Abete 10, che ha organizzato il corso insieme alla LILT.",
+      "testo": "Venerdì pomeriggio, 30 ottobre, la LILT di Benevento, la Lega italiana per la lotta contro i tumori, ha consegnato gli attestati del primo corso di cucina «I Sapori che fanno bene», dedicato ai pazienti oncologici. La cerimonia si è tenuta nella sede dell'ente di formazione professionale FAPAS, in contrada Pezzapiana, via Antonio Abete 10, che ha organizzato il corso insieme alla LILT.",
       "fonti": [
        "Cronache del Sannio",
        "BeneventoNews24",
        "Ottopagine",
-       "Benevento Giornale"
-      ]
+       "Benevento Giornale",
+       "TV7 Benevento"
+      ],
+      "giorno": "2026-10-30"
      },
      {
       "testo": "Il corso è stato fatto di incontri di teoria e pratica in cucina, guidati dagli chef Teo Barbato e Alex Gentile. I partecipanti hanno imparato a preparare i piatti e a mangiare in modo più attento, ma il corso era pensato anche come un momento per stare insieme durante le cure.",
       "fonti": [
        "Cronache del Sannio",
        "BeneventoNews24"
-      ]
+      ],
+      "giorno": "2026-10-30"
      },
      {
       "testo": "«La lotta contro i tumori richiede un approccio che sappia guardare alla persona nella sua interezza, non soltanto alla malattia», dice il presidente della LILT di Benevento, Antonio Febbraro, che ringrazia la FAPAS. Per il direttore della FAPAS, Angelo Iscaro, il progetto dimostra che la formazione può essere anche un modo per stare vicino a chi vive un momento difficile.",
       "fonti": [
        "Cronache del Sannio",
        "BeneventoNews24"
-      ]
+      ],
+      "giorno": "2026-10-30"
      }
     ],
     "cronologia": [],
@@ -6409,6 +6491,12 @@
       "titolo": "La LILT di Benevento e la FAPAS celebrano il percorso formativo che ha unito cucina, sana alimentazione, benessere e socialità: “I Sapori che fanno bene”",
       "url": "https://www.beneventogiornale.com/2026/10/29/la-lilt-di-benevento-e-la-fapas-celebrano-il-percorso-formativo-che-ha-unito-cucina-sana-alimentazione-benessere-e-socialita-i-sapori-che-fanno-bene/",
       "data": "29 ott, 22:49"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "NON SOLO CUCINA, MA SORRISI E SOLIDARIETÀ: A BENEVENTO ” LILT E FAPAS” CELEBRANO “I SAPORI CHE FANNO BENE” (VIDEO E FOTO)",
+      "url": "https://www.tvsette.net/non-solo-cucina-ma-sorrisi-e-solidarieta-a-benevento-lilt-e-fapas-celebrano-i-sapori-che-fanno-bene-video-e-foto/",
+      "data": "30 ott, 19:13"
      }
     ]
    },
@@ -11808,9 +11896,9 @@
   },
   {
    "id": "cremonese-benevento-biglietti-settore-ospiti-31-ottobre",
-   "titolo": "Cremonese-Benevento di sabato 31 ottobre: biglietti per i tifosi giallorossi a 20 euro, in vendita fino a venerdì",
-   "titolo_google": "Biglietti Cremonese-Benevento 31 ottobre: prezzi settore ospiti",
-   "sintesi": "Per Cremonese-Benevento di sabato 31 ottobre alle 15 i tifosi giallorossi hanno la Curva Nord dello stadio Zini: 20 euro, 10 per i ragazzi dai 4 ai 18 anni, in vendita fino a venerdì 30 ottobre alle 19. Giovedì 29 i biglietti venduti erano già 409.",
+   "titolo": "Cremonese-Benevento di sabato 31 ottobre: 556 tifosi giallorossi allo Zini, biglietti a 20 euro",
+   "titolo_google": "Cremonese-Benevento 31 ottobre: 556 tifosi nel settore ospiti",
+   "sintesi": "Per Cremonese-Benevento di sabato 31 ottobre alle 15 i tifosi giallorossi hanno la Curva Nord dello stadio Zini: 20 euro, 10 per i ragazzi dai 4 ai 18 anni. La vendita si è chiusa venerdì 30 ottobre: saranno 556 i tifosi del Benevento allo stadio.",
    "categoria": "sport",
    "sport": "calcio",
    "zona": "benevento",
@@ -11833,11 +11921,18 @@
     },
     {
      "nome": "NTR24 Sport",
-     "url": "https://sport.ntr24.tv/2026/10/29/strega-la-fede-non-conosce-distanze-venduti-gia-409-tagliandi-per-il-settore-ospiti-a-cremona-cresce-il-mini-esodo-giallorosso/"
+     "url": "https://sport.ntr24.tv/2026/10/30/benevento-che-spettacolo-domani-sugli-spalti-dello-zini-ben-556-tifosi-a-spingere-la-strega-il-popolo-giallorosso-non-conosce-distanze/"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "La vendita dei biglietti per il settore ospiti si è chiusa venerdì 30 ottobre: sabato pomeriggio nella Curva Nord dello Zini ci saranno 556 tifosi del Benevento, quasi 150 in più dei 409 di giovedì.",
+      "fonti": [
+       "NTR24 Sport (30/10)"
+      ],
+      "giorno": "2026-10-30"
+     },
      {
       "testo": "Giovedì 29 ottobre i biglietti comprati dai tifosi del Benevento per la Curva Nord dello Zini erano già 409, su 2.425 posti: ce ne sono ancora molti. La vendita resta aperta fino alle 19 di venerdì 30 ottobre, salvo esaurimento; il biglietto intero costa 20 euro, 10 per gli under 18.",
       "fonti": [
@@ -11896,9 +11991,7 @@
       ]
      }
     ],
-    "non_si_sa": [
-     "Se la vendita del settore ospiti ha limiti per i residenti in provincia di Benevento."
-    ],
+    "non_si_sa": [],
     "fonti": [
      {
       "nome": "US Cremonese",
@@ -11924,14 +12017,21 @@
       "titolo": "Strega, la fede non conosce distanze: venduti già 409 tagliandi per il settore ospiti a Cremona. Cresce il mini esodo giallorosso",
       "url": "https://sport.ntr24.tv/2026/10/29/strega-la-fede-non-conosce-distanze-venduti-gia-409-tagliandi-per-il-settore-ospiti-a-cremona-cresce-il-mini-esodo-giallorosso/",
       "data": "29 ott, 21:21"
+     },
+     {
+      "nome": "NTR24 Sport (30/10)",
+      "titolo": "Benevento, che spettacolo! Domani sugli spalti dello Zini ben 556 tifosi a spingere la Strega: il popolo giallorosso non conosce distanze",
+      "url": "https://sport.ntr24.tv/2026/10/30/benevento-che-spettacolo-domani-sugli-spalti-dello-zini-ben-556-tifosi-a-spingere-la-strega-il-popolo-giallorosso-non-conosce-distanze/",
+      "data": "30 ott, 19:32"
      }
     ],
     "aggiornamento": {
-     "testo": "Giovedì 29 ottobre i biglietti venduti ai tifosi del Benevento per il settore ospiti di Cremona erano saliti a 409.",
+     "testo": "Chiusa venerdì la vendita: a Cremona, nella Curva Nord dello Zini, ci saranno 556 tifosi del Benevento.",
      "fonti": [
-      "NTR24 Sport (29/10)"
+      "NTR24 Sport (30/10)"
      ],
-     "quando": "2026-10-29T22:12+01:00"
+     "quando": "2026-10-30T20:05+01:00",
+     "titolo_prima": "Cremonese-Benevento di sabato 31 ottobre: biglietti per i tifosi giallorossi a 20 euro, in vendita fino a venerdì"
     }
    },
    "foto": "stadio-4"
@@ -18205,13 +18305,17 @@
        "testo": "Il 30 ottobre i consiglieri di opposizione di Pd, Avs, Città Aperta e Civico 22 hanno risposto alle misure del Comune sui dirigenti indagati, che per loro sono «pilatesche».",
        "fonti": [
         "Anteprima24 (30/10, opposizione)",
-        "InfoSannio (30/10, opposizione)"
+        "InfoSannio (30/10, opposizione)",
+        "NTR24 (30/10, opposizione)",
+        "Gazzetta di Benevento (30/10, opposizione)"
        ]
       },
       {
        "testo": "Secondo l'opposizione le misure sono «del tutto inefficaci» e l'amministrazione ha evitato la sospensione, che a suo dire il Piano anticorruzione del Comune avrebbe imposto. Dice anche che la Giunta ha risposto alle interrogazioni nei tempi solo dopo l'inchiesta e che c'è una «responsabilità politica» di chi ha scelto le nomine di fiducia. Chiede di discuterne in Consiglio comunale.",
        "fonti": [
-        "InfoSannio (30/10, opposizione)"
+        "InfoSannio (30/10, opposizione)",
+        "NTR24 (30/10, opposizione)",
+        "Gazzetta di Benevento (30/10, opposizione)"
        ]
       }
      ]
@@ -18617,7 +18721,9 @@
      "fatto": "L'opposizione (Pd, Avs, Città Aperta, Civico 22): le misure sui dirigenti indagati sono «del tutto inefficaci», serviva la sospensione.",
      "fonti": [
       "Anteprima24 (30/10, opposizione)",
-      "InfoSannio (30/10, opposizione)"
+      "InfoSannio (30/10, opposizione)",
+      "NTR24 (30/10, opposizione)",
+      "Gazzetta di Benevento (30/10, opposizione)"
      ]
     },
     {
@@ -18995,6 +19101,18 @@
      "titolo": "Inchiesta al Comune,Pd, Avs, Città Aperta, Civico 22:”Da Mastella misure pilatesche su Dirigenti”",
      "url": "https://www.infosannionews.it/politica/2026/inchiesta-al-comunepd-avs-citta-aperta-civico-22da-mastella-misure-pilatesche-su-dirigenti.html",
      "data": "30 ott, 18:58"
+    },
+    {
+     "nome": "NTR24 (30/10, opposizione)",
+     "titolo": "Inchiesta Comune, l’opposizione: “Da Mastella misure pilatesche sui dirigenti. Serve responsabilità politica”",
+     "url": "https://www.ntr24.tv/2026/10/30/inchiesta-comune-lopposizione-da-mastella-misure-pilatesche-sui-dirigenti-serve-responsabilita-politica/",
+     "data": "30 ott, 19:38"
+    },
+    {
+     "nome": "Gazzetta di Benevento (30/10, opposizione)",
+     "titolo": "Le misure adottate per i dirigenti indagati sono del tutto inefficaci",
+     "url": "https://www.gazzettabenevento.it/it/le-misure-adottate-i-dirigenti-indagati-sono-del-tutto-inefficaci",
+     "data": "30 ott, 18:48"
     }
    ]
   },
