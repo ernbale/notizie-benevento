@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-30T16:00+01:00",
+ "aggiornato": "2026-10-30T17:05+01:00",
  "eventi": [
   {
    "id": "mostra-cosmogonie-meact-torrecuso-2026",
@@ -1521,13 +1521,16 @@
     {
      "testo": "Mercoledì 4 novembre alle 18:30 la Fondazione Gerardino Romano, nella sua sede di piazzetta G. Romano 15 a Telese Terme, presenta «Il potere del canto», l'ultimo romanzo di Nicola Sguera, uscito nel 2026 per Finalmente Libri. L'autore parla del libro con Felice Casucci, presidente della Fondazione; la regista e docente di teatro Linda Ocone legge alcune pagine.",
      "fonti": [
-      "Benevento Giornale"
+      "Benevento Giornale",
+      "BeneventoNews24",
+      "Gazzetta di Benevento"
      ]
     },
     {
      "testo": "Il romanzo parla della forza della parola cantata e recitata, dagli aedi dell'antica Grecia a Dante e Leopardi; il titolo viene da un brano di Franco Battiato del 2001. Sguera, nato nel 1967, insegna storia e filosofia al liceo classico «Pietro Giannone» di Benevento ed è autore di saggi, poesie e romanzi, tra cui «Corpo a rendere», premiato da Agrorinasce, ed «Euthymios».",
      "fonti": [
-      "Benevento Giornale"
+      "Benevento Giornale",
+      "BeneventoNews24"
      ]
     }
    ],
@@ -1538,6 +1541,18 @@
      "titolo": "Fondazione Gerardino Romano :Viaggio iniziatico nell’umanesimo di Nicola Sguera. Presentazione del romanzo «Il potere del canto»",
      "url": "https://www.beneventogiornale.com/2026/10/30/fondazione-gerardino-romano-viaggio-iniziatico-nellumanesimo-di-nicola-sguera-presentazione-del-romanzo-il-potere-del-canto/",
      "data": "30 ott, 15:42"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "titolo": "Il varco della parola: viaggio iniziatico nell’umanesimo di Nicola Sguera",
+     "url": "https://www.beneventonews24.it/2026/10/30/il-varco-della-parola-viaggio-iniziatico-nellumanesimo-di-nicola-sguera/",
+     "data": "30 ott, 16:20"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "titolo": "Presentazione dell'ultimo romanzo di Nicola Sguera, intitolato \"Il potere del canto\"",
+     "url": "https://www.gazzettabenevento.it/it/presentazione-dellultimo-romanzo-di-nicola-sguera-intitolato-il-potere-del-canto",
+     "data": "30 ott, 13:13"
     }
    ],
    "foto": "libri-7"

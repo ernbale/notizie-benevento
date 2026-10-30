@@ -1,7 +1,109 @@
 {
- "aggiornato": "2026-10-30T16:04+01:00",
+ "aggiornato": "2026-10-30T17:05+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-carcere-rotazione-agenti-polizia-penitenziaria-sinappe",
+   "titolo": "Benevento, nel carcere torna la rotazione degli agenti di Polizia penitenziaria tra i posti di servizio",
+   "titolo_google": "Carcere di Benevento, torna la rotazione degli agenti",
+   "sintesi": "La direzione della casa circondariale di Benevento ha ripristinato la mobilità interna e la rotazione degli agenti di Polizia penitenziaria nei diversi posti di servizio, come prevedono le norme e gli accordi con i sindacati. Lo fa sapere il sindacato SiNAPPe, che ringrazia la direzione.",
+   "categoria": "altro",
+   "luogo": "Benevento, casa circondariale",
+   "pubblicato": "2026-10-30T16:48+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/30/carcere-di-benevento-il-sinappe-plaude-alla-direzione-ripristinata-la-rotazione-del-personale/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/442619/il-sinappe-bene-ripristino-mobilita-interna-del-personale-polizia-penitenzia.shtml"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/benevento-torna-la-mobilita-interna-in-carcere-il-sinappe-ringrazia-la-direzione/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/30/casa-circondariale-di-benevento-il-sinappe-esprime-apprezzamento-alla-direzione/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Nel carcere di Benevento gli agenti di Polizia penitenziaria tornano a cambiare a turno i posti di servizio dentro l'istituto. La direzione della casa circondariale ha ripristinato la mobilità interna e la rotazione del personale, come prevedono le norme e i protocolli d'intesa firmati con i sindacati a livello regionale e locale. Lo ha fatto sapere venerdì 30 ottobre il SiNAPPe, uno dei sindacati della Polizia penitenziaria.",
+      "fonti": [
+       "NTR24",
+       "Ottopagine",
+       "Anteprima24",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Per il sindacato la rotazione darà a tutti gli agenti le stesse possibilità di impiego, permetterà di imparare compiti nuovi, distribuirà meglio gli incarichi e toglierà le disparità che pesano sul clima di lavoro. Il SiNAPPe apprezza anche il confronto che la direzione ha aperto con le organizzazioni sindacali durante il percorso.",
+      "fonti": [
+       "NTR24",
+       "Ottopagine",
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Il segretario nazionale Fernando Mastrocinque ha ringraziato la direzione: «Quanto realizzato a Benevento merita il nostro pieno apprezzamento, perché dimostra che il rispetto delle regole, accompagnato da una concreta disponibilità al confronto, rappresenta la strada più efficace per garantire equità, serenità lavorativa e valorizzazione professionale». Il sindacato chiede che i criteri della mobilità interna siano applicati in modo costante e trasparente anche in futuro.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "La direzione ha ripristinato la mobilità interna e la rotazione degli agenti nei posti di servizio, secondo le norme e i protocolli d'intesa regionale e locale.",
+      "fonti": [
+       "NTR24",
+       "Ottopagine",
+       "Anteprima24",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Da quando la rotazione non veniva applicata e da quando ripartirà in pratica.",
+     "Cosa ne pensano gli altri sindacati della Polizia penitenziaria."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Carcere di Benevento, il SiNAPPe plaude alla Direzione: ripristinata la rotazione del personale",
+      "url": "https://www.ntr24.tv/2026/10/30/carcere-di-benevento-il-sinappe-plaude-alla-direzione-ripristinata-la-rotazione-del-personale/",
+      "data": "30 ott, 16:20"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Il Sinappe: bene ripristino mobilità interna del personale Polizia penitenzia",
+      "url": "https://www.ottopagine.it/bn/attualita/442619/il-sinappe-bene-ripristino-mobilita-interna-del-personale-polizia-penitenzia.shtml",
+      "data": "30 ott, 15:37"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Benevento, torna la mobilità interna in carcere: il SiNAPPe ringrazia la direzione",
+      "url": "https://www.anteprima24.it/benevento/benevento-torna-la-mobilita-interna-in-carcere-il-sinappe-ringrazia-la-direzione/",
+      "data": "30 ott, 15:35"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Casa Circondariale di Benevento, il SiNAPPe esprime apprezzamento alla Direzione",
+      "url": "https://www.beneventonews24.it/2026/10/30/casa-circondariale-di-benevento-il-sinappe-esprime-apprezzamento-alla-direzione/",
+      "data": "30 ott, 16:48"
+     }
+    ]
+   },
+   "zona": "benevento"
+  },
   {
    "id": "provincia-benevento-consiglio-provinciale-5-novembre-surroga-falzarano-stravino",
    "titolo": "Provincia di Benevento, il Consiglio convocato il 5 novembre: 40 punti, dalla surroga di Falzarano e Stravino ai conti dell'ente",
@@ -103,6 +205,14 @@
      "nome": "Benevento Calcio",
      "url": "https://www.beneventocalcio.club/news/notizie/7686/serie-bkt-2026-2027-cremonese-benevento-i-convocati-di-mister-floro-flores.shtml",
      "ufficiale": true
+    },
+    {
+     "nome": "NTR24 Sport",
+     "url": "https://sport.ntr24.tv/2026/10/30/cremonese-benevento-i-convocati-giallorossi-kouan-squalificato-in-lista-anche-il-giovane-portiere-rosa/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/30/cremonese-benevento-i-convocati-di-floro-flores-out-lo-squalificato-kouan-disponibili-in-24/"
     }
    ],
    "articolo": {
@@ -110,7 +220,9 @@
      {
       "testo": "L'allenatore del Benevento, Antonio Floro Flores, ha scelto i 24 giocatori convocati per Cremonese-Benevento, la 10ª giornata del campionato di Serie BKT. L'elenco è arrivato venerdì 30 ottobre, alla fine dell'allenamento.",
       "fonti": [
-       "Benevento Calcio"
+       "Benevento Calcio",
+       "NTR24 Sport",
+       "BeneventoNews24"
       ],
       "giorno": "2026-10-30"
      },
@@ -121,6 +233,13 @@
        "Benevento Calcio (convocati per il Catanzaro)"
       ],
       "giorno": "2026-10-30"
+     },
+     {
+      "giorno": "2026-10-30",
+      "fonti": [
+       "BeneventoNews24"
+      ],
+      "testo": "Oltre a Kouan, squalificato, non ci sono gli infortunati Sylla e Pierozzi e nemmeno Logan; restano fuori anche i giovani Del Gaudio, Donatiello, Battista e Giugliano e Celia e Ricci, che non sono nella lista del campionato. Rosa è il terzo portiere."
      },
      {
       "testo": "In porta ci sono Manuel Esposito (numero 22), Gianmarco Rosa (12) e Gianmarco Vannucchi (26). I difensori sono sette: Pietro Beruatto (20), Luca Caldirola (5), Christian Dalle Mura (15), Raffaele Romano (25), Pietro Saio (23), Stefano Scognamillo (14) e Leonardo Sernicola (17).",
@@ -162,6 +281,18 @@
       "url": "https://www.beneventocalcio.club/news/notizie/7675/serie-bkt-2026-2027-benevento-catanzaro-i-convocati-di-mister-floro-flores.shtml",
       "data": "26 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "NTR24 Sport",
+      "titolo": "Cremonese-Benevento, i convocati giallorossi: Kouan squalificato, in lista anche il giovane portiere Rosa",
+      "url": "https://sport.ntr24.tv/2026/10/30/cremonese-benevento-i-convocati-giallorossi-kouan-squalificato-in-lista-anche-il-giovane-portiere-rosa/",
+      "data": "30 ott, 16:23"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Cremonese-Benevento, i convocati di Floro Flores: out lo squalificato Kouan, disponibili in 24",
+      "url": "https://www.beneventonews24.it/2026/10/30/cremonese-benevento-i-convocati-di-floro-flores-out-lo-squalificato-kouan-disponibili-in-24/",
+      "data": "30 ott, 16:35"
      }
     ]
    },
@@ -581,6 +712,10 @@
     {
      "nome": "BeneventoNews24",
      "url": "https://www.beneventonews24.it/2026/10/30/benevento-conservatorio-e-confindustria-hanno-sottoscritto-unintesa-ricerca-innovazione-e-sviluppo-del-territorio/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/confindustria-benevento-e-conservatorio-siglano-una-convenzione-a-servizio-della-ricerca/"
     }
    ],
    "articolo": {
@@ -593,7 +728,8 @@
        "Ottopagine",
        "InfoSannio",
        "Lab TV",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "TV7 Benevento"
       ]
      },
      {
@@ -601,14 +737,16 @@
       "fonti": [
        "NTR24",
        "Cronache del Sannio",
-       "Ottopagine"
+       "Ottopagine",
+       "TV7 Benevento"
       ]
      },
      {
       "testo": "Il Molino resta prima di tutto per gli studenti dell'Università del Sannio e del Conservatorio. Gli ospiti potranno entrare solo se ci sono posti liberi, nei periodi e nei limiti consentiti, senza togliere niente alle assegnazioni agli studenti né agli obblighi verso l'ADISURC, l'ente regionale per il diritto allo studio. L'accordo non riserva posti e non garantisce disponibilità.",
       "fonti": [
        "Ottopagine",
-       "NTR24"
+       "NTR24",
+       "TV7 Benevento"
       ]
      }
     ],
@@ -663,6 +801,12 @@
       "titolo": "Benevento, Conservatorio e Confindustria hanno sottoscritto un’intesa: ricerca, innovazione e sviluppo del territorio",
       "url": "https://www.beneventonews24.it/2026/10/30/benevento-conservatorio-e-confindustria-hanno-sottoscritto-unintesa-ricerca-innovazione-e-sviluppo-del-territorio/",
       "data": "30 ott, 15:40"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Confindustria Benevento e Conservatorio siglano una convenzione a servizio della ricerca",
+      "url": "https://www.tvsette.net/confindustria-benevento-e-conservatorio-siglano-una-convenzione-a-servizio-della-ricerca/",
+      "data": "30 ott, 16:14"
      }
     ]
    },
@@ -812,6 +956,10 @@
     {
      "nome": "BeneventoNews24",
      "url": "https://www.beneventonews24.it/2026/10/30/cremonese-benevento-designato-larbitro-per-la-trasferta-di-sabato-allo-zini/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/cremonese-benevento-marinelli-ritrova-la-strega-dieci-precedenti-e-nessuna-sconfitta-per-i-giallorossi/"
     }
    ],
    "articolo": {
@@ -837,6 +985,12 @@
        "Benevento Calcio",
        "NTR24 Sport"
       ]
+     },
+     {
+      "fonti": [
+       "TV7 Benevento"
+      ],
+      "testo": "Marinelli ha già arbitrato il Benevento dieci volte e i giallorossi con lui non hanno mai perso. La prima volta fu nel gennaio 2016, in Serie C, con l'1-1 a Foggia; nello stesso anno diresse al Vigorito il 6-0 alla Casertana e il 3-0 al Lecce che portò il Benevento per la prima volta in Serie B. L'ultima partita è di settembre, il 3-1 al Vigorito contro l'Hellas Verona. Con la Cremonese i precedenti sono undici: cinque vittorie, quattro sconfitte e due pareggi."
      }
     ],
     "cronologia": [],
@@ -862,6 +1016,12 @@
       "titolo": "Cremonese-Benevento, designato l’arbitro per la trasferta di sabato allo “Zini”",
       "url": "https://www.beneventonews24.it/2026/10/30/cremonese-benevento-designato-larbitro-per-la-trasferta-di-sabato-allo-zini/",
       "data": "30 ott, 15:01"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Cremonese-Benevento, Marinelli ritrova la Strega: dieci precedenti e nessuna sconfitta per i giallorossi",
+      "url": "https://www.tvsette.net/cremonese-benevento-marinelli-ritrova-la-strega-dieci-precedenti-e-nessuna-sconfitta-per-i-giallorossi/",
+      "data": "30 ott, 15:54"
      }
     ]
    },
@@ -1229,11 +1389,11 @@
   },
   {
    "id": "guardia-sanframondi-elenco-elettori-fuori-sede",
-   "titolo": "Elettori fuori sede, elenco aperto a Guardia Sanframondi, San Salvatore Telesino, San Giorgio del Sannio e Castelvetere",
+   "titolo": "Elettori fuori sede, elenco aperto a Guardia Sanframondi, San Salvatore Telesino, San Giorgio del Sannio, Castelvetere e altri paesi",
    "titolo_google": "Elettori fuori sede: elenco nei Comuni del Sannio, come fare",
-   "sintesi": "Guardia Sanframondi, San Salvatore Telesino, San Giorgio del Sannio, Castelvetere in Val Fortore e San Lorenzo Maggiore spiegano come iscriversi all'elenco degli elettori fuori sede, per chi studia, lavora o si cura in un'altra regione e vuole votare lì alle politiche, alle europee e ai referendum. Per chi è già fuori sede la domanda va fatta entro il 31 dicembre.",
+   "sintesi": "Guardia Sanframondi, San Salvatore Telesino, San Giorgio del Sannio, Castelvetere in Val Fortore, San Lorenzo Maggiore e Colle Sannita spiegano come iscriversi all'elenco degli elettori fuori sede, per chi studia, lavora o si cura in un'altra regione e vuole votare lì alle politiche, alle europee e ai referendum. Per chi è già fuori sede la domanda va fatta entro il 31 dicembre.",
    "categoria": "avvisi",
-   "luogo": "Guardia Sanframondi, San Salvatore Telesino, San Giorgio del Sannio, Castelvetere in Val Fortore e San Lorenzo Maggiore",
+   "luogo": "Guardia Sanframondi, San Salvatore Telesino, San Giorgio del Sannio, Castelvetere in Val Fortore, San Lorenzo Maggiore e Colle Sannita",
    "pubblicato": "2026-10-30",
    "stato": "ufficiale",
    "rilevante": false,
@@ -1264,25 +1424,32 @@
      "nome": "Comune di San Lorenzo Maggiore",
      "url": "https://comune.sanlorenzomaggiore.bn.it/novita/elezioni-politiche-europee-e-referendum-voto-fuori-sede/",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di Colle Sannita",
+     "url": "https://www.comune.collesannita.bn.it/c062025/po/mostra_news.php?id=518&area=H",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Anche San Salvatore Telesino, San Giorgio del Sannio, Castelvetere in Val Fortore e San Lorenzo Maggiore, oltre a Guardia Sanframondi, hanno pubblicato l'avviso sull'elenco comunale degli elettori fuori sede: serve a chi, alle elezioni politiche ed europee e ai referendum, vuole votare nel posto in cui si trova per studio, lavoro o cure, invece di tornare in paese. Non vale per le elezioni comunali e regionali.",
+      "testo": "Anche San Salvatore Telesino, San Giorgio del Sannio, Castelvetere in Val Fortore, San Lorenzo Maggiore e Colle Sannita, oltre a Guardia Sanframondi, hanno pubblicato l'avviso sull'elenco comunale degli elettori fuori sede: serve a chi, alle elezioni politiche ed europee e ai referendum, vuole votare nel posto in cui si trova per studio, lavoro o cure, invece di tornare in paese. Non vale per le elezioni comunali e regionali.",
       "fonti": [
        "Comune di Guardia Sanframondi",
        "Comune di San Salvatore Telesino",
        "Comune di San Giorgio del Sannio",
        "Comune di Castelvetere in Val Fortore",
-       "Comune di San Lorenzo Maggiore"
+       "Comune di San Lorenzo Maggiore",
+       "Comune di Colle Sannita"
       ],
       "giorno": "2026-10-30"
      },
      {
-      "testo": "Possono iscriversi gli elettori che per studio o lavoro vivono per almeno nove mesi in un'altra regione, chi si cura per almeno tre mesi in un ospedale o in una struttura di un'altra regione e chi assiste un familiare in quella situazione. L'iscrizione vale un anno. Chi studia o lavora fuori regione già adesso deve fare la domanda entro il 31 dicembre, per votare fuori sede l'anno dopo; chi parte dopo il 31 dicembre entro 30 giorni e comunque non oltre il 45° giorno prima del voto; per i motivi di cura non oltre il 45° giorno prima del voto.",
+      "testo": "Possono iscriversi gli elettori che per studio o lavoro vivono per almeno nove mesi in un'altra regione, chi si cura per almeno tre mesi in un ospedale o in una struttura di un'altra regione e chi assiste un familiare in quella situazione, compresi i genitori o i familiari conviventi che accompagnano un minore curato fuori regione. L'iscrizione vale un anno. Chi studia o lavora fuori regione già adesso deve fare la domanda entro il 31 dicembre, per votare fuori sede l'anno dopo; chi parte dopo il 31 dicembre entro 30 giorni e comunque non oltre il 45° giorno prima del voto; per i motivi di cura non oltre il 45° giorno prima del voto.",
       "fonti": [
-       "Comune di San Salvatore Telesino"
+       "Comune di San Salvatore Telesino",
+       "Comune di Colle Sannita"
       ],
       "giorno": "2026-10-30"
      },
@@ -1299,6 +1466,13 @@
        "Comune di San Lorenzo Maggiore"
       ],
       "testo": "La domanda va fatta al Comune dove si ha il domicilio temporaneo, che deve essere in un'altra regione, con la copia di un documento d'identità e un documento che provi la condizione di fuori sede (l'iscrizione all'università, un contratto o un'attestazione del datore di lavoro, quella della struttura sanitaria per le cure). Chi è domiciliato a San Lorenzo Maggiore la manda per email a prot.slm@comune.sanlorenzomaggiore.bn.it o per PEC a prot.slm@asmepec.it. Entro il decimo giorno prima del voto il Comune manda l'attestato con il numero e l'indirizzo del seggio, da presentare insieme alla tessera elettorale e a un documento."
+     },
+     {
+      "giorno": "2026-10-30",
+      "fonti": [
+       "Comune di Colle Sannita"
+      ],
+      "testo": "A Colle Sannita chi ha il domicilio temporaneo in paese può portare la domanda all'Ufficio protocollo del Comune, in piazza G. Flora 9, oppure mandarla per PEC a comune.collesannita@pcert.it o per email a comunecollesannita@gmail.com, col modulo del Ministero dell'Interno allegato all'avviso. La domanda si può anche ritirare, negli stessi modi e negli stessi tempi."
      },
      {
       "testo": "A Guardia Sanframondi nell'avviso del Comune si trovano la nota della Prefettura del 23 ottobre sull'elenco e il modulo della domanda di iscrizione; per informazioni c'è l'ufficio Segreteria e Affari generali del Comune.",
@@ -1345,6 +1519,13 @@
       "nome": "Comune di San Lorenzo Maggiore",
       "titolo": "Elezioni politiche, europee e referendum: voto fuori sede",
       "url": "https://comune.sanlorenzomaggiore.bn.it/novita/elezioni-politiche-europee-e-referendum-voto-fuori-sede/",
+      "data": "30 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "Comune di Colle Sannita",
+      "titolo": "VOTO FUORI SEDE - Nuove disposizioni",
+      "url": "https://www.comune.collesannita.bn.it/c062025/po/mostra_news.php?id=518&area=H",
       "data": "30 ott",
       "ufficiale": true
      }
