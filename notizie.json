@@ -3,6 +3,129 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "benevento-comune-dirigenti-indagati-rotazioni-disciplinari-controlli-atti",
+   "titolo": "Benevento, dirigenti e dipendenti indagati: il Comune toglie incarichi, avvia i procedimenti disciplinari e ricontrollerà gli atti dal 2022",
+   "titolo_google": "Benevento, dirigenti indagati: incarichi tolti e controlli",
+   "sintesi": "Il sindaco Mastella e il vicesindaco De Pierro hanno risposto all'interrogazione dell'opposizione sui dirigenti e funzionari indagati: due dirigenti hanno perso incarichi e due dipendenti cambiano servizio. Ora partono i procedimenti disciplinari e il segretario generale ricontrollerà gli atti dal 2022.",
+   "categoria": "politica",
+   "immagine": "municipio",
+   "luogo": "Benevento, Palazzo Mosti",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 4,
+   "fonti": [
+    {
+     "nome": "Comune di Benevento",
+     "url": "https://www.comune.benevento.it/",
+     "ufficiale": true
+    }
+   ],
+   "comunicati": [
+    "139daba669ea"
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Comune di Benevento ha spiegato cosa ha fatto per i dirigenti e i dipendenti finiti sotto indagine. Il sindaco Clemente Mastella e il vicesindaco Francesco De Pierro, che ha la delega all'Anticorruzione, hanno risposto per iscritto all'interrogazione di alcuni consiglieri di opposizione, protocollata il primo ottobre 2026. La risposta è arrivata entro i 30 giorni previsti dal regolamento del Consiglio comunale e il Comune l'ha resa nota il 29 ottobre.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "L'amministrazione premette «il rispetto della presunzione di innocenza delle persone sottoposte a indagini». Il Comune ha saputo ufficialmente delle accuse penali il 29 settembre 2026. Da lì, sulla base di una prima verifica del responsabile comunale della prevenzione della corruzione, ha applicato le regole anticorruzione del PIAO 2026-2028 (il Piano integrato di attività e organizzazione del Comune) e la delibera n. 215 del 2019 dell'ANAC, l'Autorità nazionale anticorruzione.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "Con il decreto del sindaco n. 57 del 6 ottobre il dirigente del settore Ambiente, Mobilità, Servizi cimiteriali e Patrimonio ha perso quell'incarico: dal 7 ottobre guida servizi meno esposti al rischio nel I Settore. Con il decreto n. 58, sempre del 6 ottobre, alla dirigente già spostata nel 2026 dal settore Urbanistica è stata tolta la guida ad interim del I Settore; resta alla direzione del VII Settore, anche qui dal 7 ottobre. Il settore Ambiente, Mobilità, Servizi cimiteriali e Patrimonio è passato ad interim al dirigente del V Settore, con il decreto n. 59 del 6 ottobre.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "A tutti e due i dirigenti sono state tolte le attività a rischio: contratti, pagamenti, autorizzazioni e concessioni con valore economico, contributi e incarichi esterni. Ora se ne occupano i funzionari con incarico di Elevata Qualificazione dei rispettivi settori. Per la funzionaria che aveva già un incarico di Elevata Qualificazione e lavorava già fuori dall'Urbanistica, la misura già presa è stata confermata. Due dipendenti del II Settore, infine, sono stati spostati in un altro servizio con mansioni diverse, con due provvedimenti di rotazione straordinaria del 9 ottobre.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "Il Comune precisa che queste misure servono a prevenire e non a punire. I procedimenti disciplinari finora non sono partiti, spiega l'amministrazione, perché al protocollo del Comune non era mai arrivato alcun atto ufficiale, nonostante le richieste. La Procura ha risposto solo il 28 ottobre 2026, con una nota e parte dei documenti: ora i procedimenti disciplinari si stanno avviando. Per la sospensione obbligatoria dal servizio, aggiunge il Comune, oggi mancano le condizioni previste dai contratti di lavoro, che chiedono misure che limitano la libertà personale, e quelle degli articoli 3 e 4 della legge n. 97 del 2001; ogni posizione sarà rivalutata a ogni novità dei procedimenti penali.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "Adesso il segretario generale del Comune avvierà una verifica straordinaria sugli atti adottati dal 1° gennaio 2022 nei confronti delle imprese, dei professionisti e degli enti nominati nei procedimenti penali che il Comune conosce, nell'ambito dei controlli di regolarità sugli atti già fatti. I risultati andranno al Consiglio comunale. Il Comune sta avvisando anche le autorità che gestiscono i programmi europei interessati, metterà le misure nel prossimo PIAO 2027-2029 e valuterà se chiedere all'ANAC di affiancarlo nel controllo degli appalti più delicati. Nel procedimento penale il Comune è persona offesa e tutelerà le sue ragioni. L'amministrazione dice di avere «piena fiducia nella generalità del personale» e che i servizi vanno avanti grazie agli incarichi ad interim e alle deleghe ai funzionari.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "29 settembre",
+      "fatto": "Il Comune ha notizia ufficiale delle accuse penali",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "data": "1 ottobre",
+      "quando": "2026-10-01",
+      "fatto": "L'opposizione protocolla l'interrogazione",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "data": "6 ottobre",
+      "fatto": "I decreti del sindaco n. 57, 58 e 59 tolgono incarichi a due dirigenti e affidano il settore Ambiente al dirigente del V Settore",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "data": "9 ottobre",
+      "fatto": "Due dipendenti del II Settore spostati con la rotazione straordinaria",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "data": "28 ottobre",
+      "fatto": "La Procura manda al Comune parte dei documenti",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "data": "29 ottobre",
+      "fatto": "Il Comune rende nota la risposta scritta del sindaco e del vicesindaco all'interrogazione",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     }
+    ],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di Benevento",
+      "titolo": "Interrogazione su dirigenti e funzionari sottoposti a indagini, la risposta dell'Amministrazione",
+      "url": "https://www.comune.benevento.it/",
+      "data": "30 ott, 08:30",
+      "ufficiale": true
+     }
+    ]
+   },
+   "subito": true,
+   "pubblicato": "2026-10-30T08:33:43+01:00",
+   "foto": "municipio-3",
+   "zona": "benevento"
+  },
+  {
    "id": "morcone-ficomirrors-vertice-regione-29-ottobre",
    "titolo": "Morcone, vertice in Regione sulla Ficomirrors: il sindaco Ciarlo chiede impegni concreti",
    "titolo_google": "Ficomirrors Morcone, vertice in Regione sulla fabbrica",
