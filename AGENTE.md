@@ -50,6 +50,20 @@ farlo giusto subito.
    parole più pesanti. Nomi di vittime minorenni (anche se oggi sono maggiorenni ma erano minorenni al momento del
    fatto): mai, da nessuna parte, nemmeno le iniziali. Se il titolo di un articolo fonte contiene quel nome,
    nell'elenco fonti scrivi il titolo esatto ma con il nome sostituito da «[nome omesso]».
+   **La morte di un privato, anche quando sembra un suicidio, esce** (lui, 30 ott 2026, sul giovane trovato morto al
+   Triggio che il giro delle 10 aveva lasciato fuori: «fai una via di mezzo tra 2 e 3 le puoi pubblicare per caso se
+   c'è il nome metti solo iniziali»; la 2 era una notizia breve e sobria, la 3 come la scrivono gli altri giornali).
+   Valgono le regole 2 e 3 di sempre (due testate, una autorevole o una fonte ufficiale), più queste:
+   - il nome **sempre e solo con le iniziali**, anche se lo scrivono più testate o una fonte ufficiale, con età e
+     paese («M. R., 29 anni, di Benevento»); le iniziali anche nei titoli degli articoli fonte;
+   - si raccontano il fatto, dove e quando, chi è intervenuto e cosa dicono gli inquirenti; se le fonti parlano di un
+     gesto volontario lo scrivi attribuendolo a chi lo dice («secondo i primi accertamenti»), mai come certezza tua;
+   - **mai il modo in cui è morto**, né dettagli macabri, biglietti, motivi personali o della famiglia; niente foto
+     (`immagine` no, come per tutta la cronaca);
+   - se le fonti non sono d'accordo su un dettaglio (l'età: 29 o 26 anni) scrivi solo quello confermato, o «un
+     giovane»;
+   - quando le fonti parlano di un gesto volontario, l'ultimo paragrafo del racconto è una riga coi numeri di aiuto:
+     «Chi ha bisogno di parlare con qualcuno può chiamare Telefono Amico allo 02 2327 2327».
    **Chi ha un ruolo pubblico si chiama sempre per nome e cognome** (lui, 28 ott 2026: «nomi se sono pubblici
    sempre»; 29 ott: «metti sempre i nomi»): sindaci, assessori, consiglieri, parlamentari, presidenti di enti,
    dirigenti, funzionari e dipendenti pubblici (anche un impiegato comunale; quelli in servizio anche per fatti
@@ -67,7 +81,8 @@ farlo giusto subito.
    tecnica serve, spiegala tra parentesi.
 7. **Testo tuo, mai copiato.** Non riprendere frasi dei giornali (al massimo citazioni brevi tra virgolette,
    attribuite). Niente foto dei giornali. I **titoli degli articoli fonte** nell'elenco fonti restano esatti
-   (eccezioni: il nome di un minore e le iniziali di un privato nominato da una sola testata, vedi regola 3).
+   (eccezioni: il nome di un minore, le iniziali di un privato nominato da una sola testata e quelle di un privato
+   morto, vedi regola 3).
 8. **Nel dubbio, non pubblicare.** Meglio una notizia in meno che una sbagliata. Il dubbio è sul **fatto** (è vero? è
    confermato?), non sulla sua importanza: **un fatto locale vero e ben documentato esce anche se è piccolo**
    (vandali al parco, un incidente, un guasto, una chiusura, una nomina in Comune). «Episodio minore» non è un motivo.
