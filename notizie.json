@@ -7951,9 +7951,7 @@
     "cronologia": [],
     "concordano": [],
     "divergono": [],
-    "non_si_sa": [
-     "In quali strade precise valgono i divieti e se qualcuna sarà chiusa del tutto: l'oggetto dell'ordinanza non lo dice."
-    ],
+    "non_si_sa": [],
     "fonti": [
      {
       "nome": "Comune di Benevento, albo pretorio",
@@ -7980,7 +7978,11 @@
    },
    "zona": "benevento",
    "foto": "divieto-sosta-9",
-   "traffico": "chiusa"
+   "traffico": "chiusa",
+   "subito": true,
+   "comunicati": [
+    "799a0b7c7ed8"
+   ]
   },
   {
    "id": "benevento-nicola-sguera-premio-agrorinasce-corpo-a-rendere",
