@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-30T20:05+01:00",
+ "aggiornato": "2026-10-30T21:04+01:00",
  "giornali_letti": 14,
  "notizie": [
   {
@@ -11,11 +11,19 @@
    "zona": "telesina",
    "immagine": "conferenza-stampa",
    "luogo": "Telese Terme",
-   "pubblicato": "2026-10-30T19:33+01:00",
-   "stato": "una_fonte",
+   "pubblicato": "2026-10-30T20:49+01:00",
+   "stato": "confermata",
    "rilevante": false,
    "importanza": 3,
    "fonti": [
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/30/il-futuro-non-si-ruba-si-costruisce-a-telese-incontro-di-don-patriciello-con-scuole-e-associazioni/"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/30/telese-terme-don-patriciello-incontra-studenti-e-associazioni/"
+    },
     {
      "nome": "Anteprima24",
      "url": "https://www.anteprima24.it/benevento/don-patriciello-telese-studenti-scuola-lavoro/"
@@ -26,30 +34,59 @@
      {
       "testo": "Venerdì mattina, 30 ottobre, a Telese Terme don Maurizio Patriciello ha parlato con oltre 150 studenti delle scuole della zona. I ragazzi, accompagnati dai loro insegnanti, venivano dall'istituto comprensivo di Telese, dall'istituto superiore «Telesi@» e dall'istituto superiore «Alfonso Maria de' Liguori» di Sant'Agata de' Goti.",
       "fonti": [
-       "Anteprima24"
-      ]
+       "Anteprima24",
+       "NTR24",
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-30"
      },
      {
       "testo": "L'incontro lo ha organizzato il Cesvolab, il Centro servizi per il volontariato di Irpinia e Sannio, col titolo «Il futuro non si ruba. Si costruisce»: si è parlato di disagio dei giovani, di legalità e di cosa possono fare scuola, istituzioni e volontariato nelle aree interne. Fa parte del progetto «Il Mantello condiviso», che unisce scuole e associazioni, ed è una tappa del concorso «#DonareMiDona Non Profit» dell'Istituto Italiano della Donazione.",
       "fonti": [
-       "Anteprima24"
-      ]
+       "Anteprima24",
+       "NTR24",
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-30"
      },
      {
       "testo": "Dopo i relatori, tra cui l'assessora all'Istruzione di Telese Terme Filomena Di Mezza, la dirigente del Telesi@ Marlène Viscariello e il presidente del Cesvolab Raffaele Amore, ha parlato don Patriciello, che ha risposto alle domande degli studenti. «La scuola deve preparare questi ragazzi a vivere», ha detto, e dopo la scuola deve venire il lavoro, «altrimenti ci sono la disoccupazione, la strada». Prima di parlare dei ragazzi, ha aggiunto, bisogna chiedersi cosa hanno dato loro genitori, insegnanti, Chiesa e città.",
       "fonti": [
-       "Anteprima24"
-      ]
+       "Anteprima24",
+       "NTR24",
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-30"
      },
      {
-      "testo": "In sala c'erano anche diverse associazioni di volontariato del Sannio, tra cui le Misericordie di Solopaca, Guardia Sanframondi e Montesarchio, il sindaco di Melizzano Francesco Galietta e rappresentanti dei Carabinieri e del Commissariato di Polizia di Telese Terme.",
+      "testo": "In sala c'erano anche diverse associazioni di volontariato del Sannio, tra cui le Misericordie di Solopaca, Guardia Sanframondi e Montesarchio, il sindaco di Melizzano Francesco Galietta e rappresentanti dei Carabinieri e del Commissariato di Polizia di Telese Terme, del GAL Taburno e dell'impresa Minieri. Tra chi ha parlato c'erano anche Giuseppe Schipani, presidente dell'associazione IO X Benevento, e don Rino Morra, presidente di Galea, l'associazione che lavora nel carcere di Sant'Angelo dei Lombardi.",
       "fonti": [
+       "NTR24",
+       "BeneventoNews24",
        "Anteprima24"
-      ]
+      ],
+      "giorno": "2026-10-30"
+     },
+     {
+      "testo": "Don Patriciello ha detto anche che in questi giorni si vede «come è facile anche passare da una protesta civile a quella che è una violenza vera e propria», e che prima di condannare i ragazzi bisogna cercare di capirli. Per Raffaele Amore l'incontro è stato «una esperienza bella e formativa» anche per gli adulti, e il futuro delle aree interne si costruisce insieme, tra istituzioni, scuole e volontariato.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-30"
      }
     ],
     "cronologia": [],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "Oltre 150 studenti dell'istituto comprensivo di Telese, del Telesi@ e dell'Alfonso Maria de' Liguori di Sant'Agata de' Goti; l'incontro promosso dal Cesvolab col titolo «Il futuro non si ruba. Si costruisce».",
+      "fonti": [
+       "Anteprima24",
+       "NTR24",
+       "BeneventoNews24"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [
      "In quale sala di Telese Terme si è svolto l'incontro."
@@ -60,6 +97,18 @@
       "titolo": "Don Patriciello incontra oltre 150 studenti: “La scuola deve preparare questi ragazzi a vivere”",
       "url": "https://www.anteprima24.it/benevento/don-patriciello-telese-studenti-scuola-lavoro/",
       "data": "30 ott, 19:33"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Telese Terme, Don Patriciello incontra studenti e associazioni",
+      "url": "https://www.ntr24.tv/2026/10/30/telese-terme-don-patriciello-incontra-studenti-e-associazioni/",
+      "data": "30 ott, 20:49"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "“Il futuro non si ruba, si costruisce”: a Telese incontro di Don Patriciello con scuole e associazioni",
+      "url": "https://www.beneventonews24.it/2026/10/30/il-futuro-non-si-ruba-si-costruisce-a-telese-incontro-di-don-patriciello-con-scuole-e-associazioni/",
+      "data": "30 ott, 20:07"
      }
     ]
    },
@@ -484,6 +533,10 @@
     {
      "nome": "BeneventoNews24",
      "url": "https://www.beneventonews24.it/2026/10/30/cremonese-benevento-i-convocati-di-floro-flores-out-lo-squalificato-kouan-disponibili-in-24/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/benevento-cremona-cinquecento-tifosi-convocati-floro-flores/"
     }
    ],
    "articolo": {
@@ -493,7 +546,8 @@
       "fonti": [
        "Benevento Calcio",
        "NTR24 Sport",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Cronache del Sannio"
       ],
       "giorno": "2026-10-30"
      },
@@ -501,7 +555,8 @@
       "testo": "Rispetto alla lista della partita precedente, Benevento-Catanzaro, manca il centrocampista Christian Kouan (numero 28) e c'è un portiere in più, Gianmarco Rosa. Gli altri 23 sono gli stessi.",
       "fonti": [
        "Benevento Calcio",
-       "Benevento Calcio (convocati per il Catanzaro)"
+       "Benevento Calcio (convocati per il Catanzaro)",
+       "Cronache del Sannio"
       ],
       "giorno": "2026-10-30"
      },
@@ -584,6 +639,12 @@
       "titolo": "Cremonese, Pecchia: “Benevento vivo e con le idee chiare, dobbiamo essere umili”",
       "url": "https://www.beneventonews24.it/2026/10/30/cremonese-pecchia-benevento-vivo-e-con-le-idee-chiare-dobbiamo-essere-umili/",
       "data": "30 ott, 18:22"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Benevento, a Cremona con oltre 500 tifosi: i convocati di Floro Flores",
+      "url": "https://www.cronachedelsannio.it/sannionews24/benevento-cremona-cinquecento-tifosi-convocati-floro-flores/",
+      "data": "30 ott, 19:55"
      }
     ]
    },
@@ -11896,20 +11957,25 @@
   },
   {
    "id": "cremonese-benevento-biglietti-settore-ospiti-31-ottobre",
-   "titolo": "Cremonese-Benevento di sabato 31 ottobre: 556 tifosi giallorossi allo Zini, biglietti a 20 euro",
-   "titolo_google": "Cremonese-Benevento 31 ottobre: 556 tifosi nel settore ospiti",
-   "sintesi": "Per Cremonese-Benevento di sabato 31 ottobre alle 15 i tifosi giallorossi hanno la Curva Nord dello stadio Zini: 20 euro, 10 per i ragazzi dai 4 ai 18 anni. La vendita si è chiusa venerdì 30 ottobre: saranno 556 i tifosi del Benevento allo stadio.",
+   "titolo": "Cremonese-Benevento di sabato 31 ottobre: 545 tifosi giallorossi allo Zini, biglietti a 20 euro",
+   "titolo_google": "Cremonese-Benevento 31 ottobre: 545 tifosi nel settore ospiti",
+   "sintesi": "Per Cremonese-Benevento di sabato 31 ottobre alle 15 i tifosi giallorossi hanno la Curva Nord dello stadio Zini: 20 euro, 10 per i ragazzi dai 4 ai 18 anni. La prevendita si è chiusa venerdì 30 ottobre: secondo la Cremonese i biglietti degli ospiti sono 545, su 8.378 spettatori previsti.",
    "categoria": "sport",
    "sport": "calcio",
    "zona": "benevento",
    "immagine": "stadio",
    "luogo": "Cremona, stadio Zini",
-   "pubblicato": "2026-10-26T16:43+01:00",
+   "pubblicato": "2026-10-30T19:26+01:00",
    "stato": "ufficiale",
    "rilevante": false,
    "importanza": 5,
    "in_vigore_fino": "2026-10-30",
    "fonti": [
+    {
+     "nome": "US Cremonese (30/10)",
+     "url": "https://uscremonese.it/chiusa-la-prevendita-di-cremonese-benevento-il-dato-spettatori/",
+     "ufficiale": true
+    },
     {
      "nome": "US Cremonese",
      "url": "https://uscremonese.it/biglietteria-creben_202627/",
@@ -11922,14 +11988,32 @@
     {
      "nome": "NTR24 Sport",
      "url": "https://sport.ntr24.tv/2026/10/30/benevento-che-spettacolo-domani-sugli-spalti-dello-zini-ben-556-tifosi-a-spingere-la-strega-il-popolo-giallorosso-non-conosce-distanze/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/30/cremonese-benevento-la-strega-non-sara-sola-545-i-tifosi-giallorossi-in-lombardia/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/benevento-cremona-cinquecento-tifosi-convocati-floro-flores/"
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "La vendita dei biglietti per il settore ospiti si è chiusa venerdì 30 ottobre: sabato pomeriggio nella Curva Nord dello Zini ci saranno 556 tifosi del Benevento, quasi 150 in più dei 409 di giovedì.",
+      "testo": "La prevendita si è chiusa venerdì 30 ottobre e la Cremonese ha dato i numeri: i biglietti venduti sono 1.738, di cui 545 per i tifosi del Benevento, quasi 140 in più dei 409 di giovedì. Con i 6.640 abbonati della Cremonese, sabato pomeriggio allo Zini sono attesi per ora 8.378 spettatori.",
       "fonti": [
-       "NTR24 Sport (30/10)"
+       "US Cremonese (30/10)",
+       "BeneventoNews24",
+       "Cronache del Sannio"
+      ],
+      "giorno": "2026-10-30"
+     },
+     {
+      "testo": "Sabato 31 ottobre i biglietti rimasti si comprano solo alla biglietteria dello stadio Zini, dalle 13 alle 15: secondo BeneventoNews24 solo per i tifosi della Cremonese.",
+      "fonti": [
+       "US Cremonese (30/10)",
+       "BeneventoNews24"
       ],
       "giorno": "2026-10-30"
      },
@@ -11980,6 +12064,14 @@
        "US Cremonese",
        "SannioSport"
       ]
+     },
+     {
+      "testo": "545 biglietti per i tifosi del Benevento a fine prevendita.",
+      "fonti": [
+       "US Cremonese (30/10)",
+       "BeneventoNews24",
+       "Cronache del Sannio"
+      ]
      }
     ],
     "divergono": [
@@ -11988,6 +12080,15 @@
       "fonti": [
        "US Cremonese",
        "SannioSport"
+      ]
+     },
+     {
+      "testo": "NTR24 Sport ha scritto 556 tifosi del Benevento; la nota ufficiale della Cremonese, ripresa da BeneventoNews24 e Cronache del Sannio, dice 545: vale il dato della società.",
+      "fonti": [
+       "NTR24 Sport (30/10)",
+       "US Cremonese (30/10)",
+       "BeneventoNews24",
+       "Cronache del Sannio"
       ]
      }
     ],
@@ -12023,14 +12124,33 @@
       "titolo": "Benevento, che spettacolo! Domani sugli spalti dello Zini ben 556 tifosi a spingere la Strega: il popolo giallorosso non conosce distanze",
       "url": "https://sport.ntr24.tv/2026/10/30/benevento-che-spettacolo-domani-sugli-spalti-dello-zini-ben-556-tifosi-a-spingere-la-strega-il-popolo-giallorosso-non-conosce-distanze/",
       "data": "30 ott, 19:32"
+     },
+     {
+      "nome": "US Cremonese (30/10)",
+      "titolo": "Chiusa la prevendita di Cremonese-Benevento: il dato spettatori",
+      "url": "https://uscremonese.it/chiusa-la-prevendita-di-cremonese-benevento-il-dato-spettatori/",
+      "data": "30 ott, 19:26",
+      "ufficiale": true
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Cremonese-Benevento, la Strega non sarà sola: 545 i tifosi giallorossi in Lombardia",
+      "url": "https://www.beneventonews24.it/2026/10/30/cremonese-benevento-la-strega-non-sara-sola-545-i-tifosi-giallorossi-in-lombardia/",
+      "data": "30 ott, 20:16"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Benevento, a Cremona con oltre 500 tifosi: i convocati di Floro Flores",
+      "url": "https://www.cronachedelsannio.it/sannionews24/benevento-cremona-cinquecento-tifosi-convocati-floro-flores/",
+      "data": "30 ott, 19:55"
      }
     ],
     "aggiornamento": {
-     "testo": "Chiusa venerdì la vendita: a Cremona, nella Curva Nord dello Zini, ci saranno 556 tifosi del Benevento.",
+     "testo": "A prevendita chiusa la Cremonese dice che i biglietti dei tifosi del Benevento sono 545, su 1.738 venduti; con gli abbonati sono attesi 8.378 spettatori.",
      "fonti": [
-      "NTR24 Sport (30/10)"
+      "US Cremonese (30/10)"
      ],
-     "quando": "2026-10-30T20:05+01:00",
+     "quando": "2026-10-30T21:04+01:00",
      "titolo_prima": "Cremonese-Benevento di sabato 31 ottobre: biglietti per i tifosi giallorossi a 20 euro, in vendita fino a venerdì"
     }
    },
