@@ -1,7 +1,289 @@
 {
- "aggiornato": "2026-10-30T11:06+01:00",
+ "aggiornato": "2026-10-30T12:05+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-corso-garibaldi-presidio-polizia-sere-weekend",
+   "titolo": "Benevento, presidio fisso delle forze di Polizia su Corso Garibaldi il venerdì e il sabato sera",
+   "titolo_google": "Benevento, presidio di Polizia su Corso Garibaldi nel weekend",
+   "sintesi": "Da questo fine settimana le forze di Polizia avranno un presidio fisso su Corso Garibaldi, a Benevento, nelle sere di venerdì e sabato. L'ha deciso la Prefetta Raffaela Moscarella dopo una riunione con i vertici delle forze dell'ordine, anche per alcuni episodi recenti che hanno coinvolto dei giovani durante la movida.",
+   "categoria": "altro",
+   "luogo": "Benevento, Corso Garibaldi",
+   "pubblicato": "2026-10-30T11:55+01:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 4,
+   "fonti": [
+    {
+     "nome": "Prefettura di Benevento",
+     "url": "https://prefettura.interno.gov.it/it/prefetture/benevento/notizie/rafforzati-i-servizi-vigilanza-e-controllo-territorio-nel-centro",
+     "ufficiale": true
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/30/beneveento-rafforzati-i-servizi-di-vigilanza-e-controllo-nel-centro-cittadino/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Da questo fine settimana, nelle sere di venerdì e sabato, su Corso Garibaldi a Benevento ci sarà un presidio fisso delle forze di Polizia. L'ha deciso la Prefetta di Benevento, Raffaela Moscarella, per avere una presenza costante nella via più frequentata del centro.",
+      "fonti": [
+       "Prefettura di Benevento",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "La decisione è arrivata dopo una riunione tecnica che si è tenuta giovedì 29 ottobre al Palazzo del Governo, la sede della Prefettura, con i vertici delle forze dell'ordine della provincia. Anche per alcuni episodi recenti che hanno coinvolto dei giovani durante la movida in centro, si è deciso di aumentare i controlli e la prevenzione nelle zone più frequentate la sera. Il presidio su Corso Garibaldi si aggiunge ai controlli del territorio già coordinati dalla Prefettura.",
+      "fonti": [
+       "Prefettura di Benevento",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "«Questa ulteriore misura è finalizzata a garantire una maggiore serenità nella fruizione degli spazi pubblici», ha detto la Prefetta, «a beneficio dell'intera cittadinanza e, in particolare, dei tanti giovani che frequentano il centro cittadino».",
+      "fonti": [
+       "Prefettura di Benevento",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quali episodi della movida hanno portato alla decisione: la Prefettura non li elenca.",
+     "Fino a quando resterà il presidio."
+    ],
+    "fonti": [
+     {
+      "nome": "Prefettura di Benevento",
+      "titolo": "Rafforzati i servizi di vigilanza e controllo del territorio nel centro",
+      "url": "https://prefettura.interno.gov.it/it/prefetture/benevento/notizie/rafforzati-i-servizi-vigilanza-e-controllo-territorio-nel-centro",
+      "data": "30 ott, 11:50",
+      "ufficiale": true
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Benevento, rafforzati i servizi di vigilanza e controllo nel centro cittadino",
+      "url": "https://www.beneventonews24.it/2026/10/30/beneveento-rafforzati-i-servizi-di-vigilanza-e-controllo-nel-centro-cittadino/",
+      "data": "30 ott, 11:55"
+     }
+    ]
+   },
+   "zona": "benevento"
+  },
+  {
+   "id": "vitulano-via-francigena-sannio-22-comuni-ostello-pellegrini",
+   "titolo": "Vitulano, il sindaco presenta a Paestum la Via Francigena del Sannio: 22 Comuni, 65 chilometri da sistemare e un ostello per i pellegrini",
+   "titolo_google": "Via Francigena del Sannio: 22 Comuni e un ostello a Vitulano",
+   "sintesi": "Il sindaco di Vitulano, Raffaele Scarinzi, ha presentato alla Borsa Mediterranea del Turismo Archeologico di Paestum il progetto della Via Francigena del Sannio, di cui Vitulano è capofila con 22 Comuni. Sono previsti circa 65 chilometri di percorso sistemati e messi in sicurezza, punti di accoglienza e un ostello per i pellegrini a Vitulano.",
+   "categoria": "altro",
+   "luogo": "Vitulano",
+   "pubblicato": "2026-10-30T11:50+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 3,
+   "immagine": "cammino",
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/30/via-francigena-il-sindaco-di-vitulano-alla-borsa-mediterranea-del-turismo-archeologico-rilancia-il-progetto-dei-22-comuni-sanniti/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il sindaco di Vitulano, Raffaele Scarinzi, ha portato la Via Francigena del Sannio alla Borsa Mediterranea del Turismo Archeologico, la fiera che quest'anno, alla ventottesima edizione, si tiene al Next, l'ex Tabacchificio di Paestum. Vitulano è il Comune capofila di una rete di 22 Comuni della provincia di Benevento che lavorano insieme sul tratto sannita del cammino.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Il progetto prevede cinque tappe in provincia e vuole fare della Via Francigena del Sannio un cammino organizzato, sicuro, accessibile e con i servizi. Tra i lavori in programma ci sono la sistemazione e la messa in sicurezza di circa 65 chilometri di percorso, punti di accoglienza e di informazione e più servizi per i pellegrini. A Vitulano il Comune vuole aprire un ostello della Francigena in una sua struttura già esistente, senza togliere soldi al progetto: «un'accoglienza a basso costo», ha detto il sindaco, soprattutto per i giovani.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Scarinzi ha parlato anche della candidatura della Via Francigena a patrimonio dell'UNESCO: secondo lui i Comuni del Sud devono fare rete ed entrare nell'Associazione Europea delle Vie Francigene, perché se il riconoscimento si fermasse a Roma tutto il tratto meridionale resterebbe fuori. Quando i lavori saranno finiti, il sindaco vuole portare sul cammino gli abitanti dei 22 paesi, due o tre Comuni per volta, perché lo conoscano e lo sentano un po' loro.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quali sono i 22 Comuni della rete e le cinque tappe.",
+     "Quanto costano i lavori, chi li paga e quando cominciano."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Via Francigena, il sindaco di Vitulano alla Borsa Mediterranea del Turismo Archeologico rilancia il progetto dei 22 comuni sanniti",
+      "url": "https://www.ntr24.tv/2026/10/30/via-francigena-il-sindaco-di-vitulano-alla-borsa-mediterranea-del-turismo-archeologico-rilancia-il-progetto-dei-22-comuni-sanniti/",
+      "data": "30 ott, 11:50"
+     }
+    ]
+   },
+   "zona": "provincia",
+   "foto": "cammino"
+  },
+  {
+   "id": "giovane-sannita-domiciliari-truffa-anziano-agrigento-falso-ispettore",
+   "titolo": "Giovane del Sannio ai domiciliari col braccialetto elettronico: è indagato per una truffa da 29.500 euro a un anziano",
+   "titolo_google": "Sannita ai domiciliari per una truffa a un anziano",
+   "sintesi": "Un giovane che vive in provincia di Benevento è stato arrestato dalla Polizia e messo ai domiciliari con il braccialetto elettronico su ordine del gip di Agrigento. È indagato per truffa aggravata: secondo gli investigatori, con un complice, si sarebbe finto un ispettore di polizia e avrebbe convinto un anziano a fare un bonifico di 29.500 euro.",
+   "categoria": "cronaca",
+   "luogo": "Provincia di Benevento",
+   "zona": "provincia",
+   "pubblicato": "2026-10-30T11:16+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 4,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/30/truffa-aggravata-ai-danni-di-un-anziano-arrestato-giovane-sannita/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Un giovane che vive in provincia di Benevento è stato arrestato dalla Polizia e messo agli arresti domiciliari con il braccialetto elettronico. Lo ha deciso il gip del Tribunale di Agrigento: il giovane è indagato per truffa aggravata ai danni di un anziano.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Secondo la ricostruzione degli investigatori, il giovane e un complice si sarebbero spacciati per un ispettore di polizia e avrebbero contattato più volte l'anziano con telefonate e messaggi. Gli avrebbero raccontato di un'indagine su alcuni impiegati di banca infedeli e così lo avrebbero convinto a fare un bonifico di 29.500 euro.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Le indagini le ha fatte la Squadra Mobile di Agrigento, con i controlli sui conti e le immagini delle telecamere. Secondo gli investigatori i soldi sono finiti su una carta di pagamento che fa capo all'indagato, che poi li avrebbe prelevati in sei uffici postali della provincia di Napoli.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Dove vive l'anziano truffato.",
+     "In quale paese del Sannio vive il giovane e quanti anni ha.",
+     "Chi è il complice e se è stato identificato."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Truffa aggravata ai danni di un anziano: arrestato giovane sannita",
+      "url": "https://www.ntr24.tv/2026/10/30/truffa-aggravata-ai-danni-di-un-anziano-arrestato-giovane-sannita/",
+      "data": "30 ott, 11:16"
+     }
+    ]
+   }
+  },
+  {
+   "id": "paolisi-sportello-tributi-aperto-2-novembre-2026",
+   "titolo": "Paolisi, lunedì 2 novembre lo sportello del concessionario dei tributi è aperto regolarmente",
+   "titolo_google": "Paolisi, sportello dei tributi aperto lunedì 2 novembre",
+   "sintesi": "A Paolisi lunedì 2 novembre lo sportello del concessionario della riscossione, quello dove si pagano e si chiedono informazioni su tasse e imposte comunali, fa il suo servizio regolarmente.",
+   "categoria": "avvisi",
+   "luogo": "Paolisi",
+   "pubblicato": "2026-10-30",
+   "in_vigore_dal": "2026-11-02",
+   "in_vigore_fino": "2026-11-02",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "fonti": [
+    {
+     "nome": "Comune di Paolisi",
+     "url": "https://comune.paolisi.bn.it/novita/sportello-concessionario-3/",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Paolisi, in Valle Caudina, lunedì 2 novembre lo sportello del concessionario della riscossione, la società che per il Comune incassa tasse e imposte comunali, fa il suo servizio regolarmente. Lo ha comunicato l'Ufficio Tributi del Comune.",
+      "fonti": [
+       "Comune di Paolisi"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di Paolisi",
+      "titolo": "sportello concessionario",
+      "url": "https://comune.paolisi.bn.it/novita/sportello-concessionario-3/",
+      "data": "30 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "zona": "caudina"
+  },
+  {
+   "id": "guardia-sanframondi-elenco-elettori-fuori-sede",
+   "titolo": "Guardia Sanframondi, aperto l'elenco comunale degli elettori fuori sede: sul sito del Comune la domanda di iscrizione",
+   "titolo_google": "Guardia Sanframondi, elenco degli elettori fuori sede",
+   "sintesi": "Anche il Comune di Guardia Sanframondi ha aperto l'elenco degli elettori fuori sede, per chi studia, lavora o si cura lontano da casa e vuole votare dove si trova alle elezioni politiche, europee e ai referendum. Sul sito del Comune ci sono la nota della Prefettura e il modulo della domanda.",
+   "categoria": "avvisi",
+   "luogo": "Guardia Sanframondi",
+   "pubblicato": "2026-10-30",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "immagine": "elezioni",
+   "fonti": [
+    {
+     "nome": "Comune di Guardia Sanframondi",
+     "url": "https://www.comune.guardiasanframondi.bn.it/novita/avvisi/novita_207.html",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Comune di Guardia Sanframondi ha istituito l'elenco comunale degli elettori fuori sede: serve a chi, alle elezioni politiche ed europee e ai referendum, vuole votare nel posto in cui si trova per studio, lavoro o cure, invece di tornare in paese.",
+      "fonti": [
+       "Comune di Guardia Sanframondi"
+      ]
+     },
+     {
+      "testo": "Nell'avviso del Comune si trovano la nota della Prefettura del 23 ottobre sull'elenco e il modulo della domanda di iscrizione. Per informazioni ci si rivolge all'ufficio Segreteria e Affari generali del Comune.",
+      "fonti": [
+       "Comune di Guardia Sanframondi"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di Guardia Sanframondi",
+      "titolo": "Esercizio del diritto di voto da parte degli elettori fuori sede in occasione delle elezioni politiche ed europee e dei referendum.",
+      "url": "https://www.comune.guardiasanframondi.bn.it/novita/avvisi/novita_207.html",
+      "data": "30 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "zona": "telesina",
+   "foto": "elezioni"
+  },
   {
    "id": "asl-benevento-vaccino-hpv-aperture-straordinarie-novembre",
    "titolo": "Vaccino anti-HPV gratuito, a novembre aperture straordinarie dell'ASL Benevento: date e sedi in provincia",
@@ -114,6 +396,10 @@
     {
      "nome": "Anteprima24",
      "url": "https://www.anteprima24.it/benevento/tragedia-nel-cuore-di-benevento-29enne-trovato-senza-vita-nella-notte/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/benevento-tragedia-nel-centro-storico-trovato-senza-vita-un-giovane-di-29-anni/"
     }
    ],
    "articolo": {
@@ -124,7 +410,8 @@
        "Anteprima24",
        "InfoSannio",
        "Il Caudino",
-       "Lab TV"
+       "Lab TV",
+       "TV7 Benevento"
       ],
       "giorno": "2026-10-30"
      },
@@ -133,7 +420,8 @@
       "fonti": [
        "Il Caudino",
        "Anteprima24",
-       "Lab TV"
+       "Lab TV",
+       "TV7 Benevento"
       ],
       "giorno": "2026-10-30"
      },
@@ -143,7 +431,8 @@
        "Anteprima24",
        "InfoSannio",
        "BeneventoNews24",
-       "Lab TV"
+       "Lab TV",
+       "TV7 Benevento"
       ],
       "giorno": "2026-10-30"
      },
@@ -211,6 +500,12 @@
       "titolo": "29enne trovato senza vita a Benevento",
       "url": "https://ilcaudino.it/29enne-trovato-senza-vita-a-benevento-uid-5/",
       "data": "30 ott, 10:57"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Benevento, tragedia nel centro storico: trovato senza vita un giovane di 29 anni",
+      "url": "https://www.tvsette.net/benevento-tragedia-nel-centro-storico-trovato-senza-vita-un-giovane-di-29-anni/",
+      "data": "30 ott, 11:44"
      }
     ]
    },
@@ -577,6 +872,10 @@
     {
      "nome": "Cronache del Sannio",
      "url": "https://www.cronachedelsannio.it/sannionews24/inchiesta-comune-amministrazione-risponde-dirigenti-coinvolti/"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/politica/2026/interrogazione-su-dirigenti-e-funzionari-sottoposti-a-indagini-la-risposta-dellamministrazione.html"
     }
    ],
    "comunicati": [
@@ -593,7 +892,8 @@
        "TV7 Benevento",
        "Ottopagine",
        "BeneventoNews24",
-       "Cronache del Sannio"
+       "Cronache del Sannio",
+       "InfoSannio"
       ]
      },
      {
@@ -757,6 +1057,12 @@
       "titolo": "Inchiesta al Comune, l’amministrazione risponde su dirigenti e funzionari coinvolti",
       "url": "https://www.cronachedelsannio.it/sannionews24/inchiesta-comune-amministrazione-risponde-dirigenti-coinvolti/",
       "data": "30 ott"
+     },
+     {
+      "nome": "InfoSannio",
+      "titolo": "Interrogazione su dirigenti e funzionari sottoposti a indagini, la risposta dell’Amministrazione",
+      "url": "https://www.infosannionews.it/politica/2026/interrogazione-su-dirigenti-e-funzionari-sottoposti-a-indagini-la-risposta-dellamministrazione.html",
+      "data": "30 ott, 11:54"
      }
     ]
    },
@@ -3603,6 +3909,18 @@
      "nome": "Accademia Volley Benevento (30/10)",
      "url": "https://www.accademiavolley.com/pasta-rummo-accademia-riceve-arzano/",
      "ufficiale": true
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/pasta-rummo-accademia-riceve-arzano-punti-importanti/"
+    },
+    {
+     "nome": "NTR24 Sport",
+     "url": "https://sport.ntr24.tv/2026/10/30/volley-serie-c-la-pasta-rummo-accademia-riceve-arzano-in-palio-punti-importanti/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/la-pasta-rummo-accademia-riceve-arzano-in-palio-punti-importanti/"
     }
    ],
    "articolo": {
@@ -3610,7 +3928,10 @@
      {
       "testo": "Sabato 31 ottobre alle 18.30, alla palestra Rampone, la Pasta Rummo Accademia di Serie C femminile ospita Arzano nella terza giornata, con la squadra al completo. Le beneventane hanno vinto le prime due partite 3-0, senza perdere un set; Arzano ha battuto 3-0 I Koala Bears e poi ha perso 3-1 in casa dell'Academy Fiamma Torrese. Per l'Accademia debutta nel campionato italiano la centrale tedesca Helena Anna Schmidt. La partita si vede in diretta streaming dalle 18 ed è la prima giornata della stagione dedicata a uno sponsor, Energreen Italia.",
       "fonti": [
-       "Accademia Volley Benevento (30/10)"
+       "Accademia Volley Benevento (30/10)",
+       "Cronache del Sannio",
+       "NTR24 Sport",
+       "TV7 Benevento"
       ],
       "giorno": "2026-10-30"
      },
@@ -3661,6 +3982,24 @@
       "url": "https://www.accademiavolley.com/pasta-rummo-accademia-riceve-arzano/",
       "data": "30 ott, 10:52",
       "ufficiale": true
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "La Pasta Rummo Accademia riceve Arzano: in palio punti importanti",
+      "url": "https://www.cronachedelsannio.it/sannionews24/pasta-rummo-accademia-riceve-arzano-punti-importanti/",
+      "data": "30 ott, 11:16"
+     },
+     {
+      "nome": "NTR24 Sport",
+      "titolo": "Volley serie C, la Pasta Rummo Accademia riceve Arzano: in palio punti importanti",
+      "url": "https://sport.ntr24.tv/2026/10/30/volley-serie-c-la-pasta-rummo-accademia-riceve-arzano-in-palio-punti-importanti/",
+      "data": "30 ott, 11:34"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "La Pasta Rummo Accademia riceve Arzano: in palio punti importanti",
+      "url": "https://www.tvsette.net/la-pasta-rummo-accademia-riceve-arzano-in-palio-punti-importanti/",
+      "data": "30 ott, 11:36"
      }
     ]
    },
@@ -8318,6 +8657,10 @@
     {
      "nome": "Ottopagine",
      "url": "https://www.ottopagine.it/bn/attualita/442585/varato-il-piano-traffico-per-la-giornata-unita-nazionale-e-delle-forze-armate.shtml"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/attualita/2026/varato-il-piano-traffico-per-la-giornata-nazionale-dellunita-nazionale-e-delle-forze-armate.html"
     }
    ],
    "articolo": {
@@ -8326,7 +8669,8 @@
       "testo": "Il Comune ha confermato il 30 ottobre il piano del traffico per mercoledì 4 novembre. La cerimonia in piazza Castello comincia alle 10:30 e si chiude con la deposizione della corona d'alloro ai piedi del monumento ai Caduti; dovrebbe finire entro le 12. Dalle 7, un po' alla volta, via del Sole e piazza IV Novembre si chiudono per intero al traffico e alla sosta, insieme al primo tratto di viale degli Atlantici, tra via del Sole e via XXIV Maggio; in viale dei Rettori, tra via Perasso e via Pertini, si potrà andare solo in uscita da via Perasso, e chi arriva dall'Arco di Traiano deve proseguire verso via Calandra.",
       "fonti": [
        "Comune di Benevento",
-       "Ottopagine"
+       "Ottopagine",
+       "InfoSannio"
       ],
       "giorno": "2026-10-30"
      },
@@ -8383,6 +8727,12 @@
       "titolo": "Varato il piano traffico per la Giornata Unità Nazionale e delle Forze Armate",
       "url": "https://www.ottopagine.it/bn/attualita/442585/varato-il-piano-traffico-per-la-giornata-unita-nazionale-e-delle-forze-armate.shtml",
       "data": "30 ott, 10:28"
+     },
+     {
+      "nome": "InfoSannio",
+      "titolo": "Varato il piano traffico per la Giornata Nazionale dell’Unità Nazionale e delle Forze Armate",
+      "url": "https://www.infosannionews.it/attualita/2026/varato-il-piano-traffico-per-la-giornata-nazionale-dellunita-nazionale-e-delle-forze-armate.html",
+      "data": "30 ott, 11:45"
      }
     ],
     "aggiornamento": {

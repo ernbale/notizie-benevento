@@ -672,7 +672,8 @@
      "fonti": [
       "NTR24",
       "InfoSannio",
-      "BeneventoNews24"
+      "BeneventoNews24",
+      "Anteprima24"
      ]
     },
     {
@@ -680,7 +681,8 @@
      "fonti": [
       "NTR24",
       "InfoSannio",
-      "BeneventoNews24"
+      "BeneventoNews24",
+      "Anteprima24"
      ]
     }
    ],
@@ -732,6 +734,12 @@
      "titolo": "‘Arte, Musica e Danza nel cuore della città’: il centro storico si trasforma in un grande palcoscenico",
      "url": "https://www.beneventonews24.it/2026/10/30/arte-musica-e-danza-nel-cuore-della-citta-il-centro-storico-si-trasforma-in-un-grande-palcoscenico/",
      "data": "30 ott, 10:45"
+    },
+    {
+     "nome": "Anteprima24",
+     "titolo": "‘Corso Vivo’, tre giorni di animazione, spettacolo e benessere nel centro storico di Benevento",
+     "url": "https://www.anteprima24.it/benevento/corso-vivo-tre-giorni-di-animazione-spettacolo-e-benessere-nel-centro-storico-di-benevento/",
+     "data": "30 ott, 11:04"
     }
    ],
    "immagine": "luminarie",
@@ -1050,13 +1058,15 @@
     {
      "testo": "Sabato 31 ottobre, dalle 9, la Rocca dei Rettori di Benevento ospita la terza edizione di «Buoni da Morire. Incontri micologici alla Rocca»: una mostra dei funghi curata da esperti micologi e laboratori di approfondimento. L'iniziativa è fatta in collaborazione con Futuridea, Lerka Minerka e MicoNatura.",
      "fonti": [
-      "BeneventoNews24"
+      "BeneventoNews24",
+      "Cronache del Sannio"
      ]
     },
     {
      "testo": "Alle 11, nella Sala del Consiglio provinciale, c'è un convegno sul valore dei funghi del Sannio e della loro varietà. Intervengono l'assessora regionale all'Agricoltura Maria Carmela Serluca, il presidente della Provincia Nino Lombardi, le dirigenti della Regione Flora Della Valle e Rosa Caterina Marmo, Francesco Nardone di Futuridea e Silvana Malva e Giulio Martino, autori del libro «I Funghi del Sannio»; modera il funzionario regionale Giuseppe Porcaro.",
      "fonti": [
-      "BeneventoNews24"
+      "BeneventoNews24",
+      "Cronache del Sannio"
      ]
     }
    ],
@@ -1067,6 +1077,12 @@
      "titolo": "Alla Rocca dei Rettori la terza edizione della mostra micologica dedicata ai funghi del Sannio",
      "url": "https://www.beneventonews24.it/2026/10/30/alla-rocca-dei-rettori-la-terza-edizione-della-mostra-micologica-dedicata-ai-funghi-del-sannio/",
      "data": "30 ott, 10:50"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "titolo": "“Buoni da Morire”, alla Rocca dei Rettori la mostra dedicata ai funghi del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/buoni-morire-rocca-rettorri-mostra-dedicata-funghi-sannio/",
+     "data": "30 ott, 11:08"
     }
    ],
    "foto": "funghi-5"
@@ -1568,14 +1584,16 @@
      "testo": "Venerdì 6 novembre alle 18.30 c'è l'inaugurazione, con il taglio del nastro, gli interventi delle autorità e un video sui dieci anni della festa. Alle 19.30 parte «Tour-recuso», la passeggiata guidata nel centro storico, e aprono gli stand; la musica è di D&D Club, Sax Mike, Dj Cristian e Domenico Bianco.",
      "fonti": [
       "NTR24 (30/10)",
-      "BeneventoNews24"
+      "BeneventoNews24",
+      "Anteprima24"
      ]
     },
     {
      "testo": "Sabato 7 novembre alle 18 c'è un altro giro di «Tour-recuso»; alle 19 il SAI di Torrecuso fa un laboratorio per bambini a Palazzo di Palma e aprono gli stand, con Dj Cristian e Domenico Bianco. Alle 22 suonano i Taranterra e a mezzanotte c'è il dj set di Stefano Supino.",
      "fonti": [
       "NTR24 (30/10)",
-      "BeneventoNews24"
+      "BeneventoNews24",
+      "Anteprima24"
      ]
     },
     {
@@ -1616,6 +1634,12 @@
      "titolo": "Torrecuso, ‘Novello e Castagne’: svelato il programma della X edizione",
      "url": "https://www.beneventonews24.it/2026/10/30/torrecuso-novello-e-castagne-svelato-il-programma-della-x-edizione/",
      "data": "30 ott, 10:11"
+    },
+    {
+     "nome": "Anteprima24",
+     "titolo": "‘Novello e Castagne’ celebra dieci anni: il programma della X edizione",
+     "url": "https://www.anteprima24.it/benevento/novello-e-castagne-celebra-dieci-anni-il-programma-della-x-edizione/",
+     "data": "30 ott, 11:25"
     }
    ],
    "immagine": "vino-novello",
