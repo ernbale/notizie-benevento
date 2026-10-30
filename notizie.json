@@ -1,7 +1,113 @@
 {
- "aggiornato": "2026-10-30T17:05+01:00",
+ "aggiornato": "2026-10-30T18:04+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-case-popolari-acer-lettere-morosita-sunia",
+   "titolo": "Case popolari nel Sannio, le lettere dell'ACER sugli arretrati diranno mese e voce del debito",
+   "titolo_google": "Case popolari ACER Benevento: lettere più chiare sui debiti",
+   "sintesi": "Il Dipartimento ACER di Benevento cambia le lettere con cui chiede agli inquilini delle case popolari i soldi che risultano non pagati: d'ora in poi diranno mese, anno e voce di ogni importo. Lo aveva chiesto il sindacato degli inquilini SUNIA, che ricorda anche di consegnare l'ISEE 2026.",
+   "categoria": "avvisi",
+   "luogo": "Benevento",
+   "pubblicato": "2026-10-30T17:30+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 3,
+   "immagine": "case-popolari",
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/30/alloggi-popolari-morosita-accolto-il-sollecito-del-sunia-acer-inviera-comunicazioni-piu-dettagliate/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Dipartimento di Benevento dell'ACER, l'agenzia regionale che gestisce le case popolari, cambia le lettere con cui segnala agli inquilini le presunte morosità, cioè gli affitti e le spese che risultano non pagati. D'ora in poi ogni lettera dirà il mese, l'anno e la voce a cui si riferisce ogni importo chiesto.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Finora nelle lettere c'era solo la cifra totale, e chi la riceveva non riusciva a capire a quali mesi e a quali spese si riferisse. Il cambio l'aveva chiesto per iscritto il SUNIA, il sindacato degli inquilini: con le lettere nuove si potranno confrontare gli importi con i bollettini, trovare le somme già pagate e, se serve, mettersi in regola.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Il SUNIA ricorda che chi non ha ancora consegnato l'ISEE 2026, anche se la scadenza era a settembre, può farlo ancora: serve per calcolare l'affitto in base al reddito ed evitare di pagare un canone più alto. Per controllare le lettere e mandare l'ISEE all'ACER via PEC il sindacato offre gratis i suoi sportelli di Benevento: in via Iandoli 12, lungo il fiume Sabato; al rione Libertà, nella sede dello SPI CGIL in via Bonazzi 1; al rione Ferrovia, nella sede della CGIL in via Leonardo Bianchi. Lo ha comunicato il segretario provinciale del SUNIA, Giuseppe Falzarano.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Da quando arriveranno le lettere col nuovo dettaglio.",
+     "Fino a quando si può consegnare l'ISEE 2026 senza pagare il canone più alto."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Alloggi popolari, morosità: accolto il sollecito del SUNIA. ACER invierà comunicazioni più dettagliate",
+      "url": "https://www.ntr24.tv/2026/10/30/alloggi-popolari-morosita-accolto-il-sollecito-del-sunia-acer-inviera-comunicazioni-piu-dettagliate/",
+      "data": "30 ott, 17:30"
+     }
+    ]
+   },
+   "zona": "benevento",
+   "foto": "case-popolari-6"
+  },
+  {
+   "id": "benevento-viale-san-lorenzo-limite-30-km-h",
+   "titolo": "Benevento, in viale San Lorenzo il limite di velocità di 30 all'ora",
+   "titolo_google": "Viale San Lorenzo a Benevento: limite di 30 km/h",
+   "sintesi": "Il Comune di Benevento ha messo il limite di 30 chilometri all'ora lungo viale San Lorenzo, in tutti e due i sensi di marcia. È l'ordinanza 462 del Servizio Traffico, pubblicata il 30 ottobre all'albo pretorio.",
+   "categoria": "strade",
+   "luogo": "Benevento, viale San Lorenzo",
+   "pubblicato": "2026-10-30",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "immagine": "traffico",
+   "fonti": [
+    {
+     "nome": "Comune di Benevento, albo pretorio",
+     "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80242",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "In viale San Lorenzo, a Benevento, non si potrà andare a più di 30 chilometri all'ora, in tutti e due i sensi di marcia. Lo ha deciso il Servizio Traffico del Comune con l'ordinanza numero 462, pubblicata venerdì 30 ottobre all'albo pretorio.",
+      "fonti": [
+       "Comune di Benevento, albo pretorio"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Da quale giorno saranno montati i cartelli.",
+     "Perché il Comune ha deciso il limite."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Benevento, albo pretorio",
+      "titolo": "Istituzione limite massimo di velocità di 30 km/h - chilometri orari, lungo Viale San Lorenzo, con vigenza in entrambi i sensi di marcia",
+      "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80242",
+      "data": "30 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "zona": "benevento",
+   "foto": "traffico-5"
+  },
   {
    "id": "benevento-carcere-rotazione-agenti-polizia-penitenziaria-sinappe",
    "titolo": "Benevento, nel carcere torna la rotazione degli agenti di Polizia penitenziaria tra i posti di servizio",
@@ -1289,48 +1395,80 @@
    "id": "giovane-sannita-domiciliari-truffa-anziano-agrigento-falso-ispettore",
    "titolo": "Giovane del Sannio ai domiciliari col braccialetto elettronico: è indagato per una truffa da 29.500 euro a un anziano",
    "titolo_google": "Sannita ai domiciliari per una truffa a un anziano",
-   "sintesi": "Un giovane che vive in provincia di Benevento è stato arrestato dalla Polizia e messo ai domiciliari con il braccialetto elettronico su ordine del gip di Agrigento. È indagato per truffa aggravata: secondo gli investigatori, con un complice, si sarebbe finto un ispettore di polizia e avrebbe convinto un anziano a fare un bonifico di 29.500 euro.",
+   "sintesi": "Un giovane che vive in provincia di Benevento è stato messo agli arresti domiciliari con il braccialetto elettronico su ordine del gip di Agrigento. È indagato per truffa aggravata: secondo gli investigatori, con un complice, si sarebbe finto un poliziotto e avrebbe convinto un pensionato della provincia di Agrigento a fare un bonifico di 29.500 euro.",
    "categoria": "cronaca",
    "luogo": "Provincia di Benevento",
    "zona": "provincia",
-   "pubblicato": "2026-10-30T11:16+01:00",
-   "stato": "una_fonte",
+   "pubblicato": "2026-10-30T17:54+01:00",
+   "stato": "confermata",
    "rilevante": false,
    "importanza": 4,
    "fonti": [
     {
      "nome": "NTR24",
      "url": "https://www.ntr24.tv/2026/10/30/truffa-aggravata-ai-danni-di-un-anziano-arrestato-giovane-sannita/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/30/si-finge-poliziotto-e-fa-trasferire-29-500-euro-a-un-pensionato-arrestato-un-sannita/"
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Un giovane che vive in provincia di Benevento è stato arrestato dalla Polizia e messo agli arresti domiciliari con il braccialetto elettronico. Lo ha deciso il gip del Tribunale di Agrigento: il giovane è indagato per truffa aggravata ai danni di un anziano.",
+      "testo": "Un giovane che vive in provincia di Benevento è stato arrestato dalla Polizia e messo agli arresti domiciliari con il braccialetto elettronico. Lo ha deciso il gip del Tribunale di Agrigento, su richiesta della Procura di Agrigento: il giovane è indagato per truffa aggravata, in concorso con un'altra persona, ai danni di un pensionato della provincia di Agrigento.",
       "fonti": [
-       "NTR24"
-      ]
+       "NTR24",
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-30"
      },
      {
-      "testo": "Secondo la ricostruzione degli investigatori, il giovane e un complice si sarebbero spacciati per un ispettore di polizia e avrebbero contattato più volte l'anziano con telefonate e messaggi. Gli avrebbero raccontato di un'indagine su alcuni impiegati di banca infedeli e così lo avrebbero convinto a fare un bonifico di 29.500 euro.",
+      "testo": "I fatti risalgono al 30 aprile. Secondo la ricostruzione degli investigatori, qualcuno si sarebbe presentato all'anziano come un poliziotto e lo avrebbe contattato con telefonate e messaggi. Gli avrebbe raccontato di una frode in banca con alcuni impiegati infedeli e così lo avrebbe convinto, per mettere al sicuro i risparmi, a fare un bonifico di 29.500 euro.",
       "fonti": [
-       "NTR24"
-      ]
+       "NTR24",
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-30"
      },
      {
       "testo": "Le indagini le ha fatte la Squadra Mobile di Agrigento, con i controlli sui conti e le immagini delle telecamere. Secondo gli investigatori i soldi sono finiti su una carta di pagamento che fa capo all'indagato, che poi li avrebbe prelevati in sei uffici postali della provincia di Napoli.",
       "fonti": [
-       "NTR24"
-      ]
+       "NTR24",
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-30"
+     },
+     {
+      "testo": "L'altra persona indagata, per ora, non ha ricevuto misure. Le indagini vanno avanti per chiarire il resto della vicenda; per il giovane, come per ogni indagato, vale la presunzione di innocenza fino a una condanna definitiva.",
+      "fonti": [
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-30"
      }
     ],
     "cronologia": [],
-    "concordano": [],
-    "divergono": [],
+    "concordano": [
+     {
+      "testo": "Il giovane del Sannio è ai domiciliari col braccialetto elettronico su ordine del gip di Agrigento; la somma è di 29.500 euro, finita su una carta a lui intestata e poi prelevata in sei uffici postali della provincia di Napoli.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "NTR24 scrive che i truffatori si spacciavano per un ispettore di polizia; BeneventoNews24 parla di una persona che si presentava come appartenente alla Polizia di Stato.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24"
+      ]
+     }
+    ],
     "non_si_sa": [
-     "Dove vive l'anziano truffato.",
      "In quale paese del Sannio vive il giovane e quanti anni ha.",
-     "Chi è il complice e se è stato identificato."
+     "Chi è l'altra persona indagata."
     ],
     "fonti": [
      {
@@ -1338,6 +1476,12 @@
       "titolo": "Truffa aggravata ai danni di un anziano: arrestato giovane sannita",
       "url": "https://www.ntr24.tv/2026/10/30/truffa-aggravata-ai-danni-di-un-anziano-arrestato-giovane-sannita/",
       "data": "30 ott, 11:16"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Si finge poliziotto e fa trasferire 29.500 euro a un pensionato: arrestato un sannita",
+      "url": "https://www.beneventonews24.it/2026/10/30/si-finge-poliziotto-e-fa-trasferire-29-500-euro-a-un-pensionato-arrestato-un-sannita/",
+      "data": "30 ott, 17:54"
      }
     ]
    }
@@ -5308,7 +5452,7 @@
    "id": "benevento-corteo-usb-30-ottobre-strade-chiuse-centro",
    "titolo": "Benevento, il corteo dell'USB contro carovita e riarmo sfila da piazza Colonna a corso Garibaldi",
    "titolo_google": "Corteo USB a Benevento 30 ottobre: carovita e riarmo",
-   "sintesi": "Venerdì 30 ottobre studenti, lavoratori e attivisti hanno sfilato nel centro di Benevento per lo sciopero generale dell'USB contro carovita e spese militari, da piazza Colonna a corso Garibaldi con una sosta davanti alla Prefettura. Le strade del percorso sono state chiuse al traffico al passaggio del corteo.",
+   "sintesi": "Venerdì 30 ottobre studenti, lavoratori e attivisti hanno sfilato nel centro di Benevento per lo sciopero generale dell'USB contro carovita e spese militari, dalla stazione centrale fino a piazza Risorgimento, con una sosta davanti alla Prefettura. Le strade del percorso sono state chiuse al traffico al passaggio del corteo.",
    "categoria": "strade",
    "luogo": "Benevento, centro",
    "pubblicato": "2026-10-29",
@@ -5345,15 +5489,20 @@
     {
      "nome": "Ottopagine",
      "url": "https://www.ottopagine.it/bn/cronaca/442593/a-benevento-protesta-di-usb-e-studenti-contro-caro-vita-e-governo-video.shtml"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/30/foto-e-video-benevento-in-piazza-contro-carovita-governo-e-spese-militari/"
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Venerdì mattina il corteo è partito da piazza Colonna, davanti alla stazione centrale, nel rione Ferrovia, e ha attraversato la città lungo viale Principe di Napoli e corso Garibaldi, con una sosta davanti alla Prefettura, dove i manifestanti hanno chiesto un nuovo incontro con il prefetto. L'arrivo era previsto in piazza Risorgimento. In strada c'erano lavoratori, studenti e attivisti, per lo sciopero generale proclamato dall'USB con altri sindacati di base.",
+      "testo": "Venerdì mattina il corteo è partito da piazza Colonna, davanti alla stazione centrale, nel rione Ferrovia, e ha attraversato la città lungo viale Principe di Napoli e corso Garibaldi, con una sosta davanti alla Prefettura, dove i manifestanti hanno chiesto un nuovo incontro con il prefetto, fino a piazza Risorgimento. In strada c'erano lavoratori, studenti, cittadini ed esponenti politici, per lo sciopero generale proclamato dall'USB con altri sindacati di base contro il carovita, il caro bollette e carburanti, le scelte economiche del governo Meloni e le spese militari.",
       "fonti": [
        "NTR24",
-       "Ottopagine"
+       "Ottopagine",
+       "BeneventoNews24"
       ],
       "giorno": "2026-10-30"
      },
@@ -5367,7 +5516,8 @@
      {
       "testo": "Tra i manifestanti c'erano anche esponenti del Pd e di Avs, tra cui Rosa Razzano, Giovanna Megna e Annamaria Mollica, e l'ex parlamentare Francesco Caruso.",
       "fonti": [
-       "Ottopagine"
+       "Ottopagine",
+       "BeneventoNews24"
       ],
       "giorno": "2026-10-30"
      },
@@ -5411,10 +5561,11 @@
      },
      {
       "data": "30 ottobre, mattina",
-      "fatto": "Il corteo parte da piazza Colonna e sfila fino a corso Garibaldi, con una sosta davanti alla Prefettura.",
+      "fatto": "Il corteo parte da piazza Colonna e sfila lungo corso Garibaldi fino a piazza Risorgimento, con una sosta davanti alla Prefettura.",
       "fonti": [
        "NTR24",
-       "Ottopagine"
+       "Ottopagine",
+       "BeneventoNews24"
       ]
      }
     ],
@@ -5423,7 +5574,15 @@
       "testo": "Il corteo è partito dalla zona della stazione centrale, in piazza Colonna, la mattina del 30 ottobre, con studenti e USB.",
       "fonti": [
        "NTR24",
-       "Ottopagine"
+       "Ottopagine",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Al corteo c'erano anche esponenti del Pd e di Avs: Rosa Razzano, Giovanna Megna, Annamaria Mollica e Francesco Caruso.",
+      "fonti": [
+       "Ottopagine",
+       "BeneventoNews24"
       ]
      }
     ],
@@ -5469,6 +5628,12 @@
       "titolo": "A Benevento protesta di Usb e studenti contro caro vita e Governo - VIDEO",
       "url": "https://www.ottopagine.it/bn/cronaca/442593/a-benevento-protesta-di-usb-e-studenti-contro-caro-vita-e-governo-video.shtml",
       "data": "30 ott, 12:07"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "FOTO E VIDEO – Benevento: in piazza contro carovita, Governo e spese militari",
+      "url": "https://www.beneventonews24.it/2026/10/30/foto-e-video-benevento-in-piazza-contro-carovita-governo-e-spese-militari/",
+      "data": "30 ott, 17:34"
      }
     ],
     "aggiornamento": {
@@ -11944,13 +12109,13 @@
   },
   {
    "id": "buonalbergo-carta-dedicata-a-te-lista-beneficiari-2026",
-   "titolo": "Carta Dedicata a te, pubblicati gli elenchi dei beneficiari in nove Comuni del Sannio: prima ricarica dal 4 novembre",
-   "titolo_google": "Carta Dedicata a te 2026: beneficiari in nove Comuni del Sannio",
-   "sintesi": "Buonalbergo, Montesarchio, Sant'Angelo a Cupolo, Pago Veiano, Castelpagano, Arpaise, Morcone, San Nicola Manfredi e Ceppaloni hanno pubblicato gli elenchi delle famiglie che ricevono la «Carta Dedicata a te», 500 euro all'anno per la spesa. La prima ricarica arriva dal 4 novembre e il primo acquisto va fatto entro il 16 dicembre.",
+   "titolo": "Carta Dedicata a te, pubblicati gli elenchi dei beneficiari in dieci Comuni del Sannio: prima ricarica dal 4 novembre",
+   "titolo_google": "Carta Dedicata a te 2026: beneficiari in dieci Comuni del Sannio",
+   "sintesi": "Buonalbergo, Montesarchio, Sant'Angelo a Cupolo, Pago Veiano, Castelpagano, Arpaise, Morcone, San Nicola Manfredi, Ceppaloni e Paupisi hanno pubblicato gli elenchi delle famiglie che ricevono la «Carta Dedicata a te», 500 euro all'anno per la spesa. La prima ricarica arriva dal 4 novembre e il primo acquisto va fatto entro il 16 dicembre.",
    "categoria": "avvisi",
    "zona": "provincia",
-   "luogo": "Buonalbergo, Montesarchio, Sant'Angelo a Cupolo, Pago Veiano, Castelpagano, Arpaise, Morcone, San Nicola Manfredi e Ceppaloni",
-   "pubblicato": "2026-10-28T16:01+01:00",
+   "luogo": "Buonalbergo, Montesarchio, Sant'Angelo a Cupolo, Pago Veiano, Castelpagano, Arpaise, Morcone, San Nicola Manfredi, Ceppaloni e Paupisi",
+   "pubblicato": "2026-10-30T17:25+01:00",
    "stato": "ufficiale",
    "rilevante": false,
    "fonti": [
@@ -11998,10 +12163,22 @@
      "nome": "Comune di Ceppaloni",
      "url": "https://www.comune.ceppaloni.bn.it/novita/avvisi/novita_148.html",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di Paupisi",
+     "url": "https://paupisi.halleyweb.it/c062049/mc/mc_p_dettaglio.php?id_pubbl=7676",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Venerdì 30 ottobre l'elenco definitivo dei beneficiari l'ha pubblicato anche il Comune di Paupisi: le famiglie si riconoscono dal protocollo della dichiarazione ISEE e accanto c'è il numero della carta. Chi aveva già la carta negli anni scorsi ed è di nuovo tra i beneficiari usa quella, senza ritirarne un'altra. Il Comune ricorda che i beneficiari li ha scelti l'INPS e che non conosce i motivi delle esclusioni; per informazioni il Comune risponde allo 0824 872481.",
+      "fonti": [
+       "Comune di Paupisi"
+      ],
+      "giorno": "2026-10-30"
+     },
      {
       "testo": "Mercoledì 28 ottobre l'elenco dei beneficiari l'ha pubblicato anche il Comune di Ceppaloni: ci sono solo il numero della pratica e il protocollo INPS, da confrontare con quello dell'attestazione ISEE. La carta vale 500 euro per ogni anno ed è attiva dal 4 novembre 2026; chi la riceve per la prima volta la ritira negli uffici postali abilitati con la comunicazione di assegnazione, un documento e il codice fiscale. Il primo acquisto va fatto entro il 16 dicembre 2026; la quota del 2027 arriva da aprile 2027.",
       "fonti": [
@@ -12234,15 +12411,22 @@
       "url": "https://www.comune.ceppaloni.bn.it/novita/avvisi/novita_148.html",
       "data": "28 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "Comune di Paupisi",
+      "titolo": "ELENCHI DEFINITIVI \"CARTA DEDICATA A TE\" ANNO 2026",
+      "url": "https://paupisi.halleyweb.it/c062049/mc/mc_p_dettaglio.php?id_pubbl=7676",
+      "data": "30 ott",
+      "ufficiale": true
      }
     ],
     "aggiornamento": {
-     "testo": "Mercoledì 28 ottobre anche San Nicola Manfredi ha pubblicato la lista dei beneficiari della Carta Dedicata a te.",
+     "testo": "Venerdì 30 ottobre anche Paupisi ha pubblicato l'elenco definitivo dei beneficiari della Carta Dedicata a te.",
      "fonti": [
-      "Comune di San Nicola Manfredi"
+      "Comune di Paupisi"
      ],
-     "quando": "2026-10-28T13:19+01:00",
-     "titolo_prima": "Carta Dedicata a te, pubblicati gli elenchi dei beneficiari in sei Comuni del Sannio: prima ricarica dal 4 novembre"
+     "quando": "2026-10-30T18:04+01:00",
+     "titolo_prima": "Carta Dedicata a te, pubblicati gli elenchi dei beneficiari in nove Comuni del Sannio: prima ricarica dal 4 novembre"
     }
    },
    "immagine": "carta-spesa",
