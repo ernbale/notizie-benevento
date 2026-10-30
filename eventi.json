@@ -663,21 +663,24 @@
      "testo": "L'associazione Corso Vivo, con il patrocinio del Comune di Benevento, organizza tre giorni di arte, musica, danza e animazione lungo Corso Garibaldi, da venerdì 30 ottobre a domenica 1° novembre. Tutti gli appuntamenti sono a ingresso libero. L'idea è sostenere i negozi del centro e riportare la gente a passeggiare sul corso.",
      "fonti": [
       "NTR24",
-      "InfoSannio"
+      "InfoSannio",
+      "BeneventoNews24"
      ]
     },
     {
      "testo": "Venerdì 30 ottobre, dalle 17 alle 19.30, la giornata è per i più piccoli: personaggi dei cartoni animati che girano per il corso, trucca bimbi vicino al Museo Arcos e sculture di palloncini. Sabato 31, dalle 17 alle 19, c'è lo speciale Halloween con giochi a tema, trucca bimbi e dolcetti; dalle 19 alle 21, in via Traiano, l'associazione Sabba de Nuce propone letture della Sibilla, purificazioni con erbe e campana tibetana e la presentazione di oli e unguenti naturali.",
      "fonti": [
       "NTR24",
-      "InfoSannio"
+      "InfoSannio",
+      "BeneventoNews24"
      ]
     },
     {
      "testo": "Domenica 1° novembre si chiude con musica e danza: dalle 17.30 alle 18.30, in piazza Roma, danze latine con Sophia Ficociello e Francesco Pinto; dalle 18.30 alle 19.30, nella zona dell'Arcos, canta dal vivo Michelle Manzo; dalle 19.30 alle 20.30, lungo Corso Garibaldi a partire da Palazzo Collenea, il finale con la cantante lirica Lavinia (Peiye) Zhao e Xun Zhou.",
      "fonti": [
       "NTR24",
-      "InfoSannio"
+      "InfoSannio",
+      "BeneventoNews24"
      ]
     }
    ],
@@ -723,6 +726,12 @@
      "titolo": "Halloween e Ponte d’Ognissanti, Neri per Caso, castagne e pecorino: gli eventi del weekend a Benevento e nel Sannio",
      "url": "https://www.ntr24.tv/2026/10/30/eventi-30-31-1-2/",
      "data": "30 ott"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "titolo": "‘Arte, Musica e Danza nel cuore della città’: il centro storico si trasforma in un grande palcoscenico",
+     "url": "https://www.beneventonews24.it/2026/10/30/arte-musica-e-danza-nel-cuore-della-citta-il-centro-storico-si-trasforma-in-un-grande-palcoscenico/",
+     "data": "30 ott, 10:45"
     }
    ],
    "immagine": "luminarie",
@@ -1025,6 +1034,42 @@
     }
    ],
    "foto": "halloween-7"
+  },
+  {
+   "id": "buoni-da-morire-incontri-micologici-rocca-rettori-2026",
+   "titolo": "«Buoni da Morire», mostra dei funghi del Sannio alla Rocca dei Rettori",
+   "tipo": "mostra",
+   "inizio": "2026-10-31",
+   "ora": "09:00",
+   "orari": "dalle 9; convegno alle 11",
+   "luogo": "Rocca dei Rettori e Sala del Consiglio provinciale",
+   "comune": "Benevento",
+   "zona": "benevento",
+   "breve": "Terza edizione degli incontri micologici alla Rocca dei Rettori: mostra dei funghi del Sannio curata da esperti, laboratori e un convegno sulla biodiversità dei funghi.",
+   "descrizione": [
+    {
+     "testo": "Sabato 31 ottobre, dalle 9, la Rocca dei Rettori di Benevento ospita la terza edizione di «Buoni da Morire. Incontri micologici alla Rocca»: una mostra dei funghi curata da esperti micologi e laboratori di approfondimento. L'iniziativa è fatta in collaborazione con Futuridea, Lerka Minerka e MicoNatura.",
+     "fonti": [
+      "BeneventoNews24"
+     ]
+    },
+    {
+     "testo": "Alle 11, nella Sala del Consiglio provinciale, c'è un convegno sul valore dei funghi del Sannio e della loro varietà. Intervengono l'assessora regionale all'Agricoltura Maria Carmela Serluca, il presidente della Provincia Nino Lombardi, le dirigenti della Regione Flora Della Valle e Rosa Caterina Marmo, Francesco Nardone di Futuridea e Silvana Malva e Giulio Martino, autori del libro «I Funghi del Sannio»; modera il funzionario regionale Giuseppe Porcaro.",
+     "fonti": [
+      "BeneventoNews24"
+     ]
+    }
+   ],
+   "immagine": "funghi",
+   "fonti": [
+    {
+     "nome": "BeneventoNews24",
+     "titolo": "Alla Rocca dei Rettori la terza edizione della mostra micologica dedicata ai funghi del Sannio",
+     "url": "https://www.beneventonews24.it/2026/10/30/alla-rocca-dei-rettori-la-terza-edizione-della-mostra-micologica-dedicata-ai-funghi-del-sannio/",
+     "data": "30 ott, 10:50"
+    }
+   ],
+   "foto": "funghi-5"
   },
   {
    "id": "halloween-sezione-egizia-museo-arcos-benevento-2026",
@@ -1504,7 +1549,7 @@
     "Forum dei Giovani di Torrecuso",
     "Nuova Pro Loco Torricolus APS"
    ],
-   "breve": "Tre giorni dedicati al vino novello e alle castagne, con stand gastronomici, produttori e artigiani nelle piazze del centro.",
+   "breve": "Tre giorni dedicati al vino novello e alle castagne nelle piazze del centro, con stand, passeggiate guidate, trekking, musica e il concerto dei Taranterra.",
    "descrizione": [
     {
      "testo": "La decima edizione di «Novello e Castagne» è organizzata per la prima volta insieme dal Forum dei Giovani di Torrecuso e dalla Nuova Pro Loco Torricolus APS. Gli organizzatori la presentano come una festa di comunità e invitano i cittadini a partecipare anche come volontari.",
@@ -1514,9 +1559,30 @@
      ]
     },
     {
-     "testo": "La festa è dedicata ai prodotti tipici, alle tradizioni enogastronomiche e all'artigianato. Stand gastronomici, produttori, rivenditori e artigiani occuperanno Piazza Caracciolo, Piazza Mellusi, Piazza Fusco e Largo Sant'Erasmo. Le domande degli espositori si chiudono il 25 ottobre; il regolamento è sulle pagine social delle due associazioni. Il programma dettagliato non è ancora uscito.",
+     "testo": "La festa è dedicata ai prodotti tipici, alle tradizioni enogastronomiche e all'artigianato. Stand gastronomici, produttori, rivenditori e artigiani occuperanno Piazza Caracciolo, Piazza Mellusi, Piazza Fusco e Largo Sant'Erasmo. Le domande degli espositori si chiudono il 25 ottobre; il regolamento è sulle pagine social delle due associazioni.",
      "fonti": [
       "NTR24 (15/10)"
+     ]
+    },
+    {
+     "testo": "Venerdì 6 novembre alle 18.30 c'è l'inaugurazione, con il taglio del nastro, gli interventi delle autorità e un video sui dieci anni della festa. Alle 19.30 parte «Tour-recuso», la passeggiata guidata nel centro storico, e aprono gli stand; la musica è di D&D Club, Sax Mike, Dj Cristian e Domenico Bianco.",
+     "fonti": [
+      "NTR24 (30/10)",
+      "BeneventoNews24"
+     ]
+    },
+    {
+     "testo": "Sabato 7 novembre alle 18 c'è un altro giro di «Tour-recuso»; alle 19 il SAI di Torrecuso fa un laboratorio per bambini a Palazzo di Palma e aprono gli stand, con Dj Cristian e Domenico Bianco. Alle 22 suonano i Taranterra e a mezzanotte c'è il dj set di Stefano Supino.",
+     "fonti": [
+      "NTR24 (30/10)",
+      "BeneventoNews24"
+     ]
+    },
+    {
+     "testo": "Domenica 8 novembre alle 8.30 si parte per il «Cammino Di-vino», un trekking tra i paesaggi e le tradizioni del posto; alle 11.30 c'è il raduno «Club Vespisti nelle Piazze», per gli appassionati della Vespa e delle due ruote. Gli stand restano aperti dalle 12.30 a mezzanotte, con la musica di Musica 360°, Synerghia, Dj Cristian e Domenico Bianco. Per informazioni e prenotazioni: Gianni al 327 133 9629 e Mirko al 388 921 1321.",
+     "fonti": [
+      "NTR24 (30/10)",
+      "BeneventoNews24"
      ]
     }
    ],
@@ -1538,10 +1604,33 @@
      "titolo": "Torrecuso si prepara alla decima edizione di Novello e Castagne",
      "url": "https://www.fremondoweb.com/notizie-sannio/torrecuso-si-prepara-alla-decima-edizione-di-novello-e-castagne/",
      "data": "28 set"
+    },
+    {
+     "nome": "NTR24 (30/10)",
+     "titolo": "‘Novello e Castagne’ celebra dieci anni: dal 6 all’8 novembre la X edizione a Torrecuso tra gusto, musica e tradizione",
+     "url": "https://www.ntr24.tv/2026/10/30/novello-e-castagne-celebra-dieci-anni-dal-6-all8-novembre-la-x-edizione-a-torrecuso-tra-gusto-musica-e-tradizione/",
+     "data": "30 ott, 10:22"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "titolo": "Torrecuso, ‘Novello e Castagne’: svelato il programma della X edizione",
+     "url": "https://www.beneventonews24.it/2026/10/30/torrecuso-novello-e-castagne-svelato-il-programma-della-x-edizione/",
+     "data": "30 ott, 10:11"
     }
    ],
    "immagine": "vino-novello",
-   "foto": "vino-novello"
+   "foto": "vino-novello",
+   "orari": "venerdì dalle 18.30; sabato dalle 18; domenica dalle 8.30 a mezzanotte",
+   "artisti": [
+    "D&D Club",
+    "Sax Mike",
+    "Dj Cristian",
+    "Domenico Bianco",
+    "Taranterra",
+    "Stefano Supino",
+    "Musica 360°",
+    "Synerghia"
+   ]
   },
   {
    "id": "la-cara-dei-vecchi-solot-mulino-pacifico-benevento-2026",

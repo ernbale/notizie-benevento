@@ -1,7 +1,252 @@
 {
- "aggiornato": "2026-10-30T10:04+01:00",
+ "aggiornato": "2026-10-30T11:06+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-triggio-giovane-trovato-morto-30-ottobre",
+   "titolo": "Benevento, giovane trovato senza vita nella notte al Triggio: indagano i Carabinieri",
+   "titolo_google": "Benevento, giovane trovato morto al Triggio: indagini",
+   "sintesi": "Un giovane è stato trovato senza vita nella notte tra giovedì 29 e venerdì 30 ottobre nella sua casa in via Porta Nuova, nel quartiere del Triggio, nel centro storico di Benevento. Sono intervenuti i soccorsi e i Carabinieri, che indagano: secondo le prime ricostruzioni si tratterebbe di un gesto volontario, un'ipotesi ancora da confermare.",
+   "categoria": "cronaca",
+   "luogo": "Benevento, via Porta Nuova (Triggio)",
+   "pubblicato": "2026-10-30T10:57+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 4,
+   "fonti": [
+    {
+     "nome": "Il Caudino",
+     "url": "https://ilcaudino.it/29enne-trovato-senza-vita-a-benevento-uid-5/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/30/tragedia-a-benevento-29enne-si-toglie-la-vita/"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/cronaca/2026/benevento-giovane-trovato-senza-vita-si-pensa-ad-un-gesto-estremo.html"
+    },
+    {
+     "nome": "Lab TV",
+     "url": "https://www.labtv.net/cronaca/2026/10/30/tragedia-al-triggio-29enne-ritrovato-senza-vita/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/tragedia-nel-cuore-di-benevento-29enne-trovato-senza-vita-nella-notte/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Un giovane è stato trovato senza vita nella notte tra giovedì 29 e venerdì 30 ottobre a Benevento, nella sua casa in via Porta Nuova, nel quartiere del Triggio, nel centro storico.",
+      "fonti": [
+       "Anteprima24",
+       "InfoSannio",
+       "Il Caudino",
+       "Lab TV"
+      ],
+      "giorno": "2026-10-30"
+     },
+     {
+      "testo": "L'allarme è scattato nelle prime ore del giorno. Sono arrivati i soccorsi e i Carabinieri della Stazione di Benevento, che hanno fatto i rilievi e i primi accertamenti.",
+      "fonti": [
+       "Il Caudino",
+       "Anteprima24",
+       "Lab TV"
+      ],
+      "giorno": "2026-10-30"
+     },
+     {
+      "testo": "I Carabinieri indagano per ricostruire quello che è successo. Secondo le prime ricostruzioni si tratterebbe di un gesto volontario, ma è un'ipotesi ancora da confermare: gli inquirenti finora non hanno fatto dichiarazioni.",
+      "fonti": [
+       "Anteprima24",
+       "InfoSannio",
+       "BeneventoNews24",
+       "Lab TV"
+      ],
+      "giorno": "2026-10-30"
+     },
+     {
+      "testo": "Chi ha bisogno di parlare con qualcuno può chiamare Telefono Amico allo 02 2327 2327.",
+      "fonti": [
+       "InfoSannio"
+      ],
+      "giorno": "2026-10-30"
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Il giovane è stato trovato nella notte in via Porta Nuova, al Triggio, e sono intervenuti i Carabinieri.",
+      "fonti": [
+       "Anteprima24",
+       "InfoSannio",
+       "Il Caudino"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "L'età: 29 anni per Anteprima24, InfoSannio, BeneventoNews24 e Il Caudino (e nel titolo di Lab TV), 26 anni nel testo di Lab TV. Per questo scriviamo solo «un giovane».",
+      "fonti": [
+       "Anteprima24",
+       "InfoSannio",
+       "BeneventoNews24",
+       "Il Caudino",
+       "Lab TV"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "Se gli accertamenti dei Carabinieri confermeranno la prima ricostruzione."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Tragedia nel cuore di Benevento, 29enne trovato senza vita nella notte",
+      "url": "https://www.anteprima24.it/benevento/tragedia-nel-cuore-di-benevento-29enne-trovato-senza-vita-nella-notte/",
+      "data": "30 ott, 07:41"
+     },
+     {
+      "nome": "Lab TV",
+      "titolo": "Tragedia al Triggio, 29enne ritrovato senza vita",
+      "url": "https://www.labtv.net/cronaca/2026/10/30/tragedia-al-triggio-29enne-ritrovato-senza-vita/",
+      "data": "30 ott, 08:13"
+     },
+     {
+      "nome": "InfoSannio",
+      "titolo": "Benevento. Giovane trovato senza vita. Si pensa ad un gesto estremo",
+      "url": "https://www.infosannionews.it/cronaca/2026/benevento-giovane-trovato-senza-vita-si-pensa-ad-un-gesto-estremo.html",
+      "data": "30 ott, 08:49"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Tragedia a Benevento, 29enne si toglie la vita",
+      "url": "https://www.beneventonews24.it/2026/10/30/tragedia-a-benevento-29enne-si-toglie-la-vita/",
+      "data": "30 ott, 09:16"
+     },
+     {
+      "nome": "Il Caudino",
+      "titolo": "29enne trovato senza vita a Benevento",
+      "url": "https://ilcaudino.it/29enne-trovato-senza-vita-a-benevento-uid-5/",
+      "data": "30 ott, 10:57"
+     }
+    ]
+   },
+   "zona": "benevento"
+  },
+  {
+   "id": "arpaia-lampade-votive-canone-2026",
+   "titolo": "Arpaia, lampade votive: il canone 2026 si paga al cimitero dal 30 ottobre al 10 novembre o con bonifico",
+   "titolo_google": "Lampade votive Arpaia, canone 2026: importi e come pagare",
+   "sintesi": "Ad Arpaia si paga il canone 2026 delle lampade votive del cimitero: di persona al cimitero tutti i giorni dal 30 ottobre al 10 novembre, dalle 8 alle 17:30, oppure con bonifico alla ditta che gestisce il servizio. Il contributo annuo è di 18,06 euro.",
+   "categoria": "avvisi",
+   "luogo": "Arpaia, cimitero comunale",
+   "immagine": "cimitero",
+   "pubblicato": "2026-10-30",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "fonti": [
+    {
+     "nome": "Comune di Arpaia",
+     "url": "https://www.comune.arpaia.bn.it/it/novita/page/canone-delle-lampade-votive-relativo-all-annualita-2026",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Ad Arpaia, in Valle Caudina, si paga il canone 2026 delle lampade votive del cimitero comunale. Si può pagare di persona al cimitero, tutti i giorni dal 30 ottobre al 10 novembre, dalle 8 alle 17:30, alla ditta che gestisce il servizio, Carmine Pisano sas Impianti El, oppure con un bonifico alla stessa ditta.",
+      "fonti": [
+       "Comune di Arpaia"
+      ]
+     },
+     {
+      "testo": "Gli importi sono questi: 18,06 euro di contributo annuo, 23,18 euro per un nuovo allaccio e 1,65 euro per ogni lampada votiva. Chi paga con il bonifico deve scrivere nella causale «Canone 2026», la voce che paga (contributo annuo, nuovo allaccio o lampada votiva) e il nome del defunto, e mandare la copia del bonifico a utc.arpaia@gmail.com e a carmine.pisano@hotmail.it. Le coordinate bancarie sono nell'avviso del Comune.",
+      "fonti": [
+       "Comune di Arpaia"
+      ]
+     },
+     {
+      "testo": "Il Comune avverte che altri modi di pagamento non sono validi. Per informazioni si può chiamare la ditta al 339 842 6423.",
+      "fonti": [
+       "Comune di Arpaia"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di Arpaia",
+      "titolo": "CANONE DELLE LAMPADE VOTIVE RELATIVO ALL’ANNUALITA 2026",
+      "url": "https://www.comune.arpaia.bn.it/it/novita/page/canone-delle-lampade-votive-relativo-all-annualita-2026",
+      "data": "30 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "zona": "caudina",
+   "foto": "cimitero-5"
+  },
+  {
+   "id": "santagata-de-goti-scuolabus-faggiano-3-novembre-2026",
+   "titolo": "Sant'Agata de' Goti, lo scuolabus per l'Istituto comprensivo «Faggiano» parte martedì 3 novembre",
+   "titolo_google": "Sant'Agata de' Goti, scuolabus al via martedì 3 novembre",
+   "sintesi": "A Sant'Agata de' Goti il trasporto scolastico dell'anno 2026/2027 da e per l'Istituto comprensivo «Faggiano» comincia martedì 3 novembre. Lo fa sapere il Comune, che invita le famiglie a seguire i suoi canali per gli aggiornamenti.",
+   "categoria": "avvisi",
+   "luogo": "Sant'Agata de' Goti",
+   "immagine": "scuolabus",
+   "pubblicato": "2026-10-30",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "in_vigore_dal": "2026-11-03",
+   "in_vigore_fino": "2026-11-03",
+   "fonti": [
+    {
+     "nome": "Comune di Sant'Agata de' Goti",
+     "url": "https://www.comune.santagatadegoti.bn.it/novita/avvisi/novita_208.html",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Sant'Agata de' Goti lo scuolabus per l'anno scolastico 2026/2027 comincia martedì 3 novembre: il servizio porta gli alunni da casa all'Istituto comprensivo «Faggiano» e li riporta indietro.",
+      "fonti": [
+       "Comune di Sant'Agata de' Goti"
+      ]
+     },
+     {
+      "testo": "Il Comune, con l'ufficio Pubblica istruzione, invita le famiglie interessate a segnarsi la data e a seguire i canali ufficiali del Comune per eventuali aggiornamenti.",
+      "fonti": [
+       "Comune di Sant'Agata de' Goti"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "I percorsi e gli orari delle corse."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Sant'Agata de' Goti",
+      "titolo": "Trasporto Scolastico A.S. 2026/2027",
+      "url": "https://www.comune.santagatadegoti.bn.it/novita/avvisi/novita_208.html",
+      "data": "30 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "zona": "caudina",
+   "foto": "scuolabus-3"
+  },
   {
    "id": "yolo-benevento-catanzaro-1-novembre",
    "titolo": "Basket B femminile, la YOLO+ Miwa Benevento domenica 1° novembre in trasferta a Catanzaro",
@@ -19,6 +264,14 @@
      "nome": "Miwa Basket Benevento",
      "url": "https://www.cestisticabenevento.it/",
      "ufficiale": true
+    },
+    {
+     "nome": "NTR24 Sport",
+     "url": "https://sport.ntr24.tv/2026/10/30/basket-femminile-la-yolo-miwa-benevento-si-prepara-alla-trasferta-di-catanzaro/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/30/basket-la-yolo-si-prepara-alla-trasferta-di-catanzaro/"
     }
    ],
    "foto_inviate": [
@@ -30,7 +283,9 @@
      {
       "testo": "La YOLO+ Miwa Basket Benevento, la squadra femminile della società sannita, gioca in trasferta domenica 1° novembre alle 18 contro il Catanzaro Centro Basket, una delle squadre di vertice del campionato di B femminile. La partita si gioca al Palazzetto G. Greco e gli arbitri sono Rosa Anna Nocera e Lorenzo Smirne, di Catanzaro.",
       "fonti": [
-       "Miwa Basket Benevento"
+       "Miwa Basket Benevento",
+       "NTR24 Sport",
+       "BeneventoNews24"
       ]
      },
      {
@@ -57,6 +312,18 @@
       "url": "https://www.cestisticabenevento.it/",
       "data": "30 ott, 10:04",
       "ufficiale": true
+     },
+     {
+      "nome": "NTR24 Sport",
+      "titolo": "Basket femminile, la YOLO+ Miwa Benevento si prepara alla trasferta di Catanzaro",
+      "url": "https://sport.ntr24.tv/2026/10/30/basket-femminile-la-yolo-miwa-benevento-si-prepara-alla-trasferta-di-catanzaro/",
+      "data": "30 ott, 10:10"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Basket, la YOLO+ si prepara alla trasferta di Catanzaro",
+      "url": "https://www.beneventonews24.it/2026/10/30/basket-la-yolo-si-prepara-alla-trasferta-di-catanzaro/",
+      "data": "30 ott, 10:19"
      }
     ]
    },
@@ -225,6 +492,10 @@
     {
      "nome": "BeneventoNews24",
      "url": "https://www.beneventonews24.it/2026/10/30/inchiesta-comune-scattano-revoche-e-trasferimenti-la-risposta-dellamministrazione-mastella-allopposizione/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/inchiesta-comune-amministrazione-risponde-dirigenti-coinvolti/"
     }
    ],
    "comunicati": [
@@ -240,7 +511,8 @@
        "Anteprima24",
        "TV7 Benevento",
        "Ottopagine",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Cronache del Sannio"
       ]
      },
      {
@@ -251,7 +523,8 @@
        "Anteprima24",
        "TV7 Benevento",
        "Ottopagine",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Cronache del Sannio"
       ]
      },
      {
@@ -262,7 +535,8 @@
        "Anteprima24",
        "TV7 Benevento",
        "Ottopagine",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Cronache del Sannio"
       ]
      },
      {
@@ -273,7 +547,8 @@
        "Anteprima24",
        "TV7 Benevento",
        "Ottopagine",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Cronache del Sannio"
       ]
      },
      {
@@ -284,7 +559,8 @@
        "Anteprima24",
        "TV7 Benevento",
        "Ottopagine",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Cronache del Sannio"
       ]
      },
      {
@@ -295,7 +571,8 @@
        "Anteprima24",
        "TV7 Benevento",
        "Ottopagine",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Cronache del Sannio"
       ]
      }
     ],
@@ -393,6 +670,12 @@
       "titolo": "Comune di Benevento, interrogazione su dirigenti e funzionari sottoposti a indagini: la risposta dell’Amministrazione",
       "url": "https://www.beneventonews24.it/2026/10/30/inchiesta-comune-scattano-revoche-e-trasferimenti-la-risposta-dellamministrazione-mastella-allopposizione/",
       "data": "30 ott, 09:57"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Inchiesta al Comune, l’amministrazione risponde su dirigenti e funzionari coinvolti",
+      "url": "https://www.cronachedelsannio.it/sannionews24/inchiesta-comune-amministrazione-risponde-dirigenti-coinvolti/",
+      "data": "30 ott"
      }
     ]
    },
@@ -3233,33 +3516,49 @@
      "nome": "Accademia Volley Benevento",
      "url": "https://www.accademiavolley.com/accademia-news-un-weekend-tutto-da-vivere/",
      "ufficiale": true
+    },
+    {
+     "nome": "Accademia Volley Benevento (30/10)",
+     "url": "https://www.accademiavolley.com/pasta-rummo-accademia-riceve-arzano/",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
      {
+      "testo": "Sabato 31 ottobre alle 18.30, alla palestra Rampone, la Pasta Rummo Accademia di Serie C femminile ospita Arzano nella terza giornata, con la squadra al completo. Le beneventane hanno vinto le prime due partite 3-0, senza perdere un set; Arzano ha battuto 3-0 I Koala Bears e poi ha perso 3-1 in casa dell'Academy Fiamma Torrese. Per l'Accademia debutta nel campionato italiano la centrale tedesca Helena Anna Schmidt. La partita si vede in diretta streaming dalle 18 ed è la prima giornata della stagione dedicata a uno sponsor, Energreen Italia.",
+      "fonti": [
+       "Accademia Volley Benevento (30/10)"
+      ],
+      "giorno": "2026-10-30"
+     },
+     {
       "testo": "Sabato 31 ottobre l'Accademia Volley Benevento gioca due partite in casa, entrambe alla palestra Rampone. Alle 18.30 la squadra di Serie C femminile ospita la Lu.Vo Barattoli Arzano; alle 20.30 parte il campionato di Serie D maschile della VSMC Accademia.",
       "fonti": [
        "Accademia Volley Benevento"
-      ]
+      ],
+      "giorno": "2026-10-29"
      },
      {
       "testo": "La Serie C femminile, la squadra di Vittorio Ruscello, ha cominciato la stagione vincendo le prime due partite, contro Pontecagnano e I Koala Bears. Con sei punti è prima in classifica. Per la società la sfida con Arzano potrà dire molto sulle ambizioni della squadra.",
       "fonti": [
        "Accademia Volley Benevento"
-      ]
+      ],
+      "giorno": "2026-10-29"
      },
      {
       "testo": "Per la Serie D maschile è un ritorno nel campionato regionale. Lo presenta Carmine Bibbò in un articolo del secondo numero di «Accademia News», la rivista della società, che si può scaricare dal sito dell'Accademia.",
       "fonti": [
        "Accademia Volley Benevento"
-      ]
+      ],
+      "giorno": "2026-10-29"
      },
      {
       "testo": "Nel numero c'è anche spazio per il settore giovanile, con le squadre Energreen Accademia che hanno cominciato i primi campionati, raccontate da Letizia Lauro. Torna poi «Oltre la Linea Bianca», la rubrica di Laura Scarinzi, al suo secondo appuntamento; completano il numero le classifiche delle prime squadre e le pagine degli sponsor.",
       "fonti": [
        "Accademia Volley Benevento"
-      ]
+      ],
+      "giorno": "2026-10-29"
      }
     ],
     "cronologia": [],
@@ -3273,11 +3572,18 @@
       "url": "https://www.accademiavolley.com/accademia-news-un-weekend-tutto-da-vivere/",
       "data": "29 ott, 12:47",
       "ufficiale": true
+     },
+     {
+      "nome": "Accademia Volley Benevento (30/10)",
+      "titolo": "La Pasta Rummo Accademia riceve Arzano: in palio punti importanti",
+      "url": "https://www.accademiavolley.com/pasta-rummo-accademia-riceve-arzano/",
+      "data": "30 ott, 10:52",
+      "ufficiale": true
      }
     ]
    },
    "subito": true,
-   "pubblicato": "2026-10-29T13:28:15+01:00",
+   "pubblicato": "2026-10-30T10:52+01:00",
    "foto": "pallavolo-9"
   },
   {
@@ -7905,7 +8211,7 @@
    "sintesi": "Mercoledì 4 novembre, dalle 7 alla fine della cerimonia al monumento ai Caduti, a Benevento sono chiuse al traffico piazza Castello, piazza IV Novembre, un tratto di viale degli Atlantici e via del Sole, con divieto di sosta anche per i residenti. In viale dei Rettori c'è il senso unico tra via Perasso e via Pertini.",
    "categoria": "strade",
    "luogo": "Benevento, piazza Castello",
-   "pubblicato": "2026-10-28T11:17+01:00",
+   "pubblicato": "2026-10-30T10:28+01:00",
    "stato": "ufficiale",
    "rilevante": false,
    "importanza": 3,
@@ -7921,10 +8227,27 @@
     {
      "nome": "NTR24",
      "url": "https://www.ntr24.tv/2026/10/28/festa-delle-forze-armate-a-benevento-ecco-il-piano-traffico-divieti-e-strade-chiuse-il-4-novembre/"
+    },
+    {
+     "nome": "Comune di Benevento",
+     "url": "https://comune.benevento.it/novita/varato-il-piano-traffico-per-la-giornata-nazionale-dellunit-nazionale-e-delle-forze-armate/",
+     "ufficiale": true
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/442585/varato-il-piano-traffico-per-la-giornata-unita-nazionale-e-delle-forze-armate.shtml"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Il Comune ha confermato il 30 ottobre il piano del traffico per mercoledì 4 novembre. La cerimonia in piazza Castello comincia alle 10:30 e si chiude con la deposizione della corona d'alloro ai piedi del monumento ai Caduti; dovrebbe finire entro le 12. Dalle 7, un po' alla volta, via del Sole e piazza IV Novembre si chiudono per intero al traffico e alla sosta, insieme al primo tratto di viale degli Atlantici, tra via del Sole e via XXIV Maggio; in viale dei Rettori, tra via Perasso e via Pertini, si potrà andare solo in uscita da via Perasso, e chi arriva dall'Arco di Traiano deve proseguire verso via Calandra.",
+      "fonti": [
+       "Comune di Benevento",
+       "Ottopagine"
+      ],
+      "giorno": "2026-10-30"
+     },
      {
       "testo": "Mercoledì 4 novembre, per la cerimonia della Giornata dell'Unità nazionale e delle Forze armate al monumento ai Caduti di piazza Castello, a Benevento si chiudono al traffico piazza Castello, piazza IV Novembre, viale degli Atlantici tra piazza IV Novembre e via XXIV Maggio e tutta via del Sole, a partire dall'incrocio con via delle Puglie. Le misure valgono dalle 7 fino alla fine delle celebrazioni, previste più o meno tra le 9 e le 12. Lo ha deciso il Servizio Traffico del Comune con l'ordinanza numero 450.",
       "fonti": [
@@ -7965,6 +8288,19 @@
       "titolo": "Festa delle Forze Armate a Benevento, ecco il piano traffico: divieti e strade chiuse il 4 novembre",
       "url": "https://www.ntr24.tv/2026/10/28/festa-delle-forze-armate-a-benevento-ecco-il-piano-traffico-divieti-e-strade-chiuse-il-4-novembre/",
       "data": "28 ott, 11:17"
+     },
+     {
+      "nome": "Comune di Benevento",
+      "titolo": "Varato il piano traffico per la Giornata Nazionale dell’Unità Nazionale e delle Forze Armate",
+      "url": "https://comune.benevento.it/novita/varato-il-piano-traffico-per-la-giornata-nazionale-dellunit-nazionale-e-delle-forze-armate/",
+      "data": "30 ott, 10:16",
+      "ufficiale": true
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Varato il piano traffico per la Giornata Unità Nazionale e delle Forze Armate",
+      "url": "https://www.ottopagine.it/bn/attualita/442585/varato-il-piano-traffico-per-la-giornata-unita-nazionale-e-delle-forze-armate.shtml",
+      "data": "30 ott, 10:28"
      }
     ],
     "aggiornamento": {
