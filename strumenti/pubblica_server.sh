@@ -127,9 +127,10 @@ if ! python3 strumenti/pagine.py --sitemap-prima "$TMP/sitemap-prima.xml" --inde
 fi
 
 # Statistiche private (cifrate con la parola d'ordine); per un comunicato del giro lampo si tengono quelle di meno di
-# 20 minuti fa. In prova si tengono quelle pubblicate.
-if [ "$PROVA" = 1 ]; then
-  pubblicato statistiche/dati.json statistiche/dati.json || true
+# 20 minuti fa. Se il sito vero non è questo (o in prova) si prendono quelle online: rifarle vorrebbe dire leggere
+# Meta, Cloudflare e Search Console due volte (e Meta frena chi chiede troppo).
+if [ "$ACCESO" = 0 ]; then
+  $CURL "$LIVE/statistiche/dati.json" -o statistiche/dati.json || true
 elif ! { printf '%s\n' "$MESSAGGIO" | grep -q '^Comunicato delle ' \
          && CHIUSURE_STATO="$STATO/social/chiusure.json" python3 strumenti/statistiche.py --tieni-pubblicate 20; }; then
   CHIUSURE_STATO="$STATO/social/chiusure.json" python3 strumenti/statistiche.py || avviso "statistiche non aggiornate (il sito si pubblica lo stesso)"
