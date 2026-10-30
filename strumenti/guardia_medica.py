@@ -14,7 +14,7 @@ Il sito dell'ASL ha il certificato incompleto (manca l'intermedio di Actalis): l
 fonti_casa.py.
 
 Uso:  python3 strumenti/guardia_medica.py              rilegge l'ASL e riscrive il file (sul Mac, a mano)
-      python3 strumenti/guardia_medica.py --controlla  sul Pi, ogni mattina: se l'ASL ha cambiato le postazioni
+      python3 strumenti/guardia_medica.py --controlla  sul server (fino al 30 ott 2026 il Pi), alle 7:25: se l'ASL ha cambiato le postazioni
                                                        avvisa il proprietario (una volta per cambiamento); il file
                                                        sul sito lo aggiorno io dopo averlo guardato
 """
@@ -39,7 +39,7 @@ ELENCO = ASL + "/servizi-funzionali/lista-servizi-funzionali/guardia-medica"
 INTERMEDIO = "http://cacert.actalis.it/certs/actalis-authovg3"   # dall'«Authority Information Access» del sito
 UA = {"User-Agent": "NotizieBenevento/1.0 (https://notiziebenevento.it)"}
 FILE = os.path.join(QUI, "guardia_medica.json")
-PUBBLICATO = "https://raw.githubusercontent.com/ernbale/notizie-benevento/main/strumenti/guardia_medica.json"
+PUBBLICATO = "https://notiziebenevento.it/strumenti/guardia_medica.json"   # dal 30 ott 2026 il sito è sul server, non su GitHub
 CARTELLA_PI = os.path.expanduser("~/nb-fonti")
 # come scrive i Comuni l'ASL → come si chiamano (meteo.COMUNI_BN)
 NOMI = {"pietralcina": "Pietrelcina", "castelvetere in valfortore": "Castelvetere in Val Fortore",
