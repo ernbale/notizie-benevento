@@ -3,6 +3,93 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "cremonese-benevento-convocati-floro-flores-31-ottobre",
+   "titolo": "Serie B, Cremonese-Benevento: i 24 convocati di Floro Flores, fuori Kouan e dentro Rosa",
+   "titolo_google": "Cremonese-Benevento, i convocati di Floro Flores",
+   "sintesi": "Antonio Floro Flores ha convocato 24 giocatori per Cremonese-Benevento, 10ª giornata di Serie BKT: tre portieri, sette difensori, sei centrocampisti e otto attaccanti. Rispetto alla partita col Catanzaro non c'è Kouan e torna il portiere Rosa.",
+   "categoria": "sport",
+   "sport": "calcio",
+   "zona": "benevento",
+   "immagine": "calcio",
+   "luogo": "Benevento",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 5,
+   "comunicati": [
+    "ufb5807d3b3c"
+   ],
+   "fonti": [
+    {
+     "nome": "Benevento Calcio",
+     "url": "https://www.beneventocalcio.club/news/notizie/7686/serie-bkt-2026-2027-cremonese-benevento-i-convocati-di-mister-floro-flores.shtml",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "L'allenatore del Benevento, Antonio Floro Flores, ha scelto i 24 giocatori convocati per Cremonese-Benevento, la 10ª giornata del campionato di Serie BKT. L'elenco è arrivato venerdì 30 ottobre, alla fine dell'allenamento.",
+      "fonti": [
+       "Benevento Calcio"
+      ],
+      "giorno": "2026-10-30"
+     },
+     {
+      "testo": "Rispetto alla lista della partita precedente, Benevento-Catanzaro, manca il centrocampista Christian Kouan (numero 28) e c'è un portiere in più, Gianmarco Rosa. Gli altri 23 sono gli stessi.",
+      "fonti": [
+       "Benevento Calcio",
+       "Benevento Calcio (convocati per il Catanzaro)"
+      ],
+      "giorno": "2026-10-30"
+     },
+     {
+      "testo": "In porta ci sono Manuel Esposito (numero 22), Gianmarco Rosa (12) e Gianmarco Vannucchi (26). I difensori sono sette: Pietro Beruatto (20), Luca Caldirola (5), Christian Dalle Mura (15), Raffaele Romano (25), Pietro Saio (23), Stefano Scognamillo (14) e Leonardo Sernicola (17).",
+      "fonti": [
+       "Benevento Calcio"
+      ],
+      "giorno": "2026-10-30"
+     },
+     {
+      "testo": "I centrocampisti sono sei: Mattia Maita (8), Mattia Mannini (16), Antonio Prisco (4), Antonis Siatounis (6), Pier Luigi Simonetti (18) e Angelo Talia (38).",
+      "fonti": [
+       "Benevento Calcio"
+      ],
+      "giorno": "2026-10-30"
+     },
+     {
+      "testo": "Gli attaccanti sono otto: Luigi Cherubini (10), Davide Lamesta (11), Guglielmo Mignani (32), David Okereke (29), Francesco Salvemini (9), Emanuele Schimmenti (21), Marco Tumminello (93) e Simone Verdi (90).",
+      "fonti": [
+       "Benevento Calcio"
+      ],
+      "giorno": "2026-10-30"
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Benevento Calcio",
+      "titolo": "SERIE BKT 2026-2027: CREMONESE-BENEVENTO I CONVOCATI DI MISTER FLORO FLORES",
+      "url": "https://www.beneventocalcio.club/news/notizie/7686/serie-bkt-2026-2027-cremonese-benevento-i-convocati-di-mister-floro-flores.shtml",
+      "data": "30 ott, 16:15",
+      "ufficiale": true
+     },
+     {
+      "nome": "Benevento Calcio (convocati per il Catanzaro)",
+      "titolo": "SERIE BKT 2026-2027: BENEVENTO-CATANZARO I CONVOCATI DI MISTER FLORO FLORES",
+      "url": "https://www.beneventocalcio.club/news/notizie/7675/serie-bkt-2026-2027-benevento-catanzaro-i-convocati-di-mister-floro-flores.shtml",
+      "data": "26 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "subito": true,
+   "pubblicato": "2026-10-30T16:17:59+01:00",
+   "foto": "calcio-4"
+  },
+  {
    "id": "benevento-via-galanti-follerau-santa-colomba-sturzo-fibra-27-novembre",
    "titolo": "Benevento, scavi per la fibra fino al 27 novembre: strada ristretta in via Galanti, via Follerau, via Cardone, via Santa Colomba e via Sturzo",
    "titolo_google": "Benevento, fibra: via Galanti e via Sturzo ristrette al 27 novembre",
