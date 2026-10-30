@@ -121,7 +121,7 @@
   .giro details.dentro summary { cursor: pointer; font-weight: 600; }
   .giro .ko { color: var(--rosso); font-weight: 600; }
 
-  /* la scheda «Posta»: le tre caselle del sito lette dal Pi di casa, solo lettura (25 ott 2026) */
+  /* la scheda «Posta»: le tre caselle del sito lette dal server Aruba (dal 30 ott 2026; prima dal Pi di casa), solo lettura (25 ott 2026) */
   .posta-barra { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; margin: 4px 0 12px; }
   .caselle, .cartelle { display: flex; flex-wrap: wrap; gap: 6px; }
   .caselle button, .cartelle button { font: 600 14px var(--sans); background: var(--scheda); border: 1px solid var(--riga); border-radius: 16px; padding: 4px 12px; cursor: pointer; color: var(--nero); display: inline-flex; align-items: center; gap: 6px; }
@@ -742,7 +742,7 @@
       var lenti = mis7.filter(function (g) { return g.minuti > 20; });
       rma.appendChild(el("p", "", mancati7.length ? "Mancati: " + mancati7.join(", ") + "." : "Nessun giro mancato."));
       rma.appendChild(el("p", "", lenti.length ? "Più di 20 minuti per andare online: " + lenti.map(function (g) { return giornoBreve(g.giorno) + " " + g.ora + " (" + num(g.minuti) + " min)"; }).join(", ") + "." : "Nessun giro ci ha messo più di 20 minuti."));
-      rma.appendChild(el("p", "nota", "Un giro lento è quasi sempre GitHub che tiene ferma la pubblicazione in coda: la sentinella la rilancia dopo 20 minuti. La sentinella controlla dal Pi ogni 15 minuti e ripara da sola quello che può; se resta un problema finisce in rosso su GitHub e arriva la mail. Ultimo allarme: " + (P.sentinella_allarme ? quandoBreve(P.sentinella_allarme) : "nessuno negli ultimi 30 giorni") + "."));
+      rma.appendChild(el("p", "nota", "Un giro lento è quasi sempre GitHub che tiene ferma la pubblicazione in coda: la sentinella la rilancia dopo 20 minuti. La sentinella controlla dal nostro server ogni 15 minuti e ripara da sola quello che può; se resta un problema finisce in rosso su GitHub e arriva la mail. Ultimo allarme: " + (P.sentinella_allarme ? quandoBreve(P.sentinella_allarme) : "nessuno negli ultimi 30 giorni") + "."));
       rma.classList.add("largo"); gp.appendChild(rma);
       m.appendChild(gp);
     }
@@ -814,7 +814,7 @@
     g.appendChild(riquadro("Per zona", barre(E.zone || [], "eventi")));
     g.appendChild(riquadro("I Comuni con più eventi", barre(E.comuni || [], "eventi")));
     var rd = riquadro("Da dove arrivano", barre(E.da_dove || [], "eventi"));
-    rd.appendChild(el("p", "nota", "Stagioni ufficiali = le pagine di Città Spettacolo, Teatro San Marco, Solot e Accademia di Santa Sofia, lette dal Pi ogni 30 minuti; posta = i comunicati e le locandine di Pro Loco e organizzatori."));
+    rd.appendChild(el("p", "nota", "Stagioni ufficiali = le pagine di Città Spettacolo, Teatro San Marco, Solot e Accademia di Santa Sofia, lette dal nostro server ogni 30 minuti; posta = i comunicati e le locandine di Pro Loco e organizzatori."));
     g.appendChild(rd);
     var pl = E.pagine_lette || [];
     g.appendChild(riquadro("Le pagine degli eventi più lette", pl.length ? tabellaSemplice(["Evento", "Visite"], pl.map(function (p) {
@@ -830,7 +830,7 @@
   function disegnaSalute(box, D) {
     var H = D.salute || {};
     box.appendChild(el("h2", "", "Salute"));
-    box.appendChild(el("p", "sotto", "Le fonti che si leggono e quelle che no, le fonti lette dal Pi di casa, le voci fermate dai controlli e quanto ci mettono i giri. Se una fonte resta ferma per ore la sentinella manda la mail."));
+    box.appendChild(el("p", "sotto", "Le fonti che si leggono e quelle che no, le fonti lette dal nostro server, le voci fermate dai controlli e quanto ci mettono i giri. Se una fonte resta ferma per ore la sentinella manda la mail."));
     var Q = H.quarantena || [];
     if (H.stato !== "ok") box.appendChild(el("p", "vuoto", H.stato === "vuoto" ? "Il conto parte dal prossimo giro dell'agente." : (H.messaggio || "")));
     else {
@@ -849,7 +849,7 @@
       g.appendChild(rf);
       var C = H.casa || [];
       if (C.length) {
-        var rc = riquadro("Le fonti lette dal Pi di casa", tabellaSemplice(["Fonte", "Ultima lettura riuscita"], C.map(function (x) {
+        var rc = riquadro("Le fonti lette dal nostro server", tabellaSemplice(["Fonte", "Ultima lettura riuscita"], C.map(function (x) {
           var extra = [x.comuni_letti ? "siti dei Comuni letti " + x.comuni_letti : "", x.albi_letti ? "albi pretori letti " + x.albi_letti : "",
                        x.stagioni_lette ? "pagine delle stagioni lette " + x.stagioni_lette : ""].filter(Boolean).join(" · ");
           return [{ testo: x.fonte || x.file, sotto: (x.esito || "") + (extra ? " · " + extra : "") }, x.ultima_lettura_riuscita ? quandoBreve(x.ultima_lettura_riuscita) : "–"];
@@ -982,12 +982,12 @@
   function disegnaChiusure(box, D) {
     var C = D.chiusure || {};
     box.appendChild(el("h2", "", "Chiusure dei Comuni"));
-    box.appendChild(el("p", "sotto", "Scuole, parchi e cimiteri chiusi dai Comuni. La vedetta del Pi controlla i siti dei Comuni, l'albo di Benevento e i giornali ogni 5 minuti nei giorni di allerta e ogni 10 negli altri, giorno e notte; il giro Chiusure controlla ogni chiusura e la pubblica; il sito la manda su Telegram, Facebook e Instagram a qualsiasi ora."));
+    box.appendChild(el("p", "sotto", "Scuole, parchi e cimiteri chiusi dai Comuni. La vedetta del nostro server controlla i siti dei Comuni, l'albo di Benevento e i giornali ogni 5 minuti nei giorni di allerta e ogni 10 negli altri, giorno e notte; il giro Chiusure controlla ogni chiusura e la pubblica; il sito la manda su Telegram, Facebook e Instagram a qualsiasi ora."));
     if (C.stato !== "ok") { box.appendChild(avvisoStato(C, "Le chiusure")); return; }
     var V = C.vedetta, mins = (C.minuti_vedetta_sito || []).slice().sort(function (a, b) { return a - b; });
     var nn = el("div", "numeri");
     nn.appendChild(numero("In corso", num((C.in_corso || []).length), "chiusure per oggi e i prossimi giorni"));
-    nn.appendChild(numero("Vedetta del Pi", V && V.controllato ? oraIt(V.controllato) : "–",
+    nn.appendChild(numero("Vedetta del server", V && V.controllato ? oraIt(V.controllato) : "–",
       V ? (V.allerta ? "ogni 5 minuti: " + V.allerta : "ogni 10 minuti, niente allerta") : "non ancora nel diario dei giri"));
     nn.appendChild(numero("Dalla vedetta al sito", mins.length ? num(mins[Math.floor(mins.length / 2)]) + " min" : "–",
       mins.length ? "a metà, su " + num(mins.length) + " chiusure" : "nessuna chiusura misurata"));
@@ -1057,20 +1057,22 @@
   }
 
   // ---------- la scheda «Posta» (25 ott 2026) ----------
-  // Le caselle PEC, redazione@ e comunicati@ lette in diretta dal Pi di casa (strumenti/posta_web.py), con l'etichetta
+  // Le caselle PEC, redazione@ e comunicati@ lette in diretta dal server Aruba (strumenti/posta_web.py; fino al 30 ott
+  // 2026 dal Pi di casa, che resta di riserva con ?posta=pi finché è acceso), con l'etichetta
   // della casella. SOLA LETTURA, voluto così («io voglio solo leggerle, non inviare e altro, compreso allegati»): aprire
   // una mail non la segna come letta, non si sposta, non si manda niente. L'unica eccezione è il pulsante «Segna come
   // letta» / «Segna come non letta» (lui, 25 ott 2026: «metti un pulsante letto e il contrario»), che cambia solo quel
-  // segno nella casella, anche per la webmail e il telefono. Il Pi apre la posta solo a chi ha la chiave di queste
+  // segno nella casella, anche per la webmail e il telefono. Il server apre la posta solo a chi ha la chiave di queste
   // statistiche; le mail non passano dal sito e qui non restano salvate. L'HTML delle mail sta in un riquadro chiuso
   // (sandbox: niente script; le immagini da internet solo se si chiede).
-  var POSTA = "https://casalego.duckdns.org:36092/posta/api/";
+  var POSTA = "https://posta.notiziebenevento.it/posta/api/";
   (function () {   // per le prove in casa: ?posta=http://127.0.0.1:…/posta/api/
     try {
       var q = new URLSearchParams(location.search).get("posta");
       if (q && /^http:\/\/(127\.0\.0\.1|localhost|192\.168\.50\.\d{1,3}):\d{2,5}\/posta\/api\/$/.test(q)) POSTA = q;
-      // la stessa scheda letta dal server Aruba, in prova accanto al Pi (29 ott 2026): ?posta=aruba
-      if (q === "aruba") POSTA = "https://posta.notiziebenevento.it/posta/api/";
+      // la riserva: la stessa scheda letta dal Pi di casa (?posta=pi), dove la posta stava fino al 30 ott 2026. Solo
+      // per leggere: le decisioni su un comunicato fatte lì il server non le vede.
+      if (q === "pi") POSTA = "https://casalego.duckdns.org:36092/posta/api/";
     } catch (e) {}
   })();
   var gettonePosta = null;
@@ -1097,7 +1099,7 @@
       if (!r.ok) return r.json().catch(function () { return {}; }).then(function (j) { throw new Error(j.errore || "errore " + r.status); });
       return comeBlob ? r.blob() : r.json();
     }, function (e) {
-      if (e instanceof TypeError) throw new Error("Il Pi di casa non risponde da fuori. Se la connessione di casa è sulla linea di riserva, la posta torna quando rientra la fibra.");
+      if (e instanceof TypeError) throw new Error("Il server della posta non risponde: riprova tra poco.");
       throw e;
     });
   }
@@ -1112,7 +1114,7 @@
     }).then(function (r) {
       return r.json().catch(function () { return {}; }).then(function (j) { if (!r.ok) throw new Error(j.errore || "errore " + r.status); return j; });
     }, function (e) {
-      if (e instanceof TypeError) throw new Error("Il Pi di casa non risponde da fuori: riprova tra poco.");
+      if (e instanceof TypeError) throw new Error("Il server della posta non risponde: riprova tra poco.");
       throw e;
     });
   }
@@ -1184,7 +1186,7 @@
     box.textContent = "";
     box.appendChild(el("h2", "", "Posta"));
     box.appendChild(el("p", "sotto", "Le caselle del sito, in sola lettura: qui si leggono e non si manda niente. Aprire una mail non la segna come letta: c'è il pulsante «Segna come letta» (e «come non letta»), che vale anche nella webmail e sul telefono. " +
-      "Le legge in diretta il Pi di casa: le mail non passano dal sito."));
+      "Le legge in diretta il nostro server: le mail non passano dal sito."));
     var barra = el("div", "posta-barra"), caselleBox = el("div", "caselle"), cartelleBox = el("div", "cartelle");
     var cerca = el("input", "posta-cerca"); cerca.type = "search"; cerca.placeholder = "Cerca mittente, oggetto, testo…";
     cerca.setAttribute("aria-label", "Cerca nella posta");
