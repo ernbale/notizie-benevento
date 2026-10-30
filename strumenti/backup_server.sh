@@ -1,7 +1,12 @@
 #!/bin/bash
 # Sul Mac di casa, ogni notte alle 3:30 (launchd, ~/Library/LaunchAgents/it.notiziebenevento.backup-server.plist; se il
 # Mac dorme, parte appena si sveglia): copia dal server Aruba quello che non sta nel repository. Dal piano del trasloco
-# («backup notturno di conf/stati»), fatto il 30 ott 2026 (lui: «fai tutto»):
+# («backup notturno di conf/stati»), fatto il 30 ott 2026 (lui: «fai tutto»).
+# La seconda copia è sul K12 (192.168.50.120), che è sempre acceso (lui, 30 ott 2026, sul Mac che può essere spento:
+# «fai una doppia copia sul k12», «devono essere indipendenti ma identiche»): stesso programma (copiato in
+# ~/backup_server_aruba.sh), stessa ora (3:30, dal suo cron), stessa cartella, ognuna dal server per conto suo; sul K12
+# con la sua chiave ~/.ssh/nb_backup_aruba (BACKUP_CHIAVE).
+# Cosa si copia:
 #   ~/nb-fonti      programmi, impostazioni con le password, stati, registri, archivio delle fonti
 #   ~/sito-stato    cosa è già uscito sui social, l'interruttore ACCESO, lo stato della diretta dei gol
 #   ~/.config/nb    i segreti della pubblicazione
@@ -12,10 +17,10 @@
 # occupano altro spazio (--link-dest). Registro: ~/Backup_casa/server-aruba/backup.log.
 set -u
 SERVER=ernesto@195.231.64.238
-DEST=$HOME/Backup_casa/server-aruba
+DEST=${BACKUP_DEST:-$HOME/Backup_casa/server-aruba}
 OGGI=$(date +%Y-%m-%d)
 NUOVA=$DEST/$OGGI.parziale
-SSH="ssh -i $HOME/.ssh/nb_server_ed25519 -o BatchMode=yes -o ConnectTimeout=30"
+SSH="ssh -i ${BACKUP_CHIAVE:-$HOME/.ssh/nb_server_ed25519} -o IdentitiesOnly=yes -o BatchMode=yes -o ConnectTimeout=30 -o StrictHostKeyChecking=accept-new"
 mkdir -p "$DEST" && chmod 700 "$DEST"
 exec >> "$DEST/backup.log" 2>&1
 quando() { date '+%d/%m %H:%M:%S'; }
