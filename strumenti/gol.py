@@ -12,8 +12,12 @@ chiave) ogni 15 secondi e manda:
 - un gol tolto dal VAR (il risultato ufficiale torna indietro): «❌ Gol annullato» col risultato giusto;
 - la fine del primo tempo: risultato, gol, espulsi, ammoniti, possesso e tiri;
 - la fine della partita: risultato, il racconto dei gol, espulsi, possesso e tiri, i punti in classifica, la prossima.
-Telegram con il suono, Facebook e Instagram con l'immagine (1080×1350, come quelle delle notizie), che si carica nel ramo
-gol-immagini del repository: così è online subito (raw.githubusercontent.com), senza aspettare la pubblicazione del sito.
+Telegram con il suono, Facebook e Instagram con l'immagine (1080×1350, come quelle delle notizie), online subito senza
+aspettare la pubblicazione del sito: sul server Aruba (GOL_CARTELLA_SITO, dal 30 ott 2026) nella cartella gol-immagini
+del sito servito, su GitHub nel ramo gol-immagini del repository (raw.githubusercontent.com).
+
+Dal 30 ott 2026 (lui: «sposta le dirette su aruba») gira sul server Aruba: la fa partire gol_via.py del server con
+strumenti/gol_server.sh. .github/workflows/gol.yml resta per le prove a mano.
 
 Un gol si manda quando il risultato ufficiale e l'azione del gol sono d'accordo; se il risultato cambia e l'azione non
 arriva entro un minuto, il gol esce senza il nome di chi ha segnato. Un risultato che torna indietro per mezzo minuto è
@@ -60,6 +64,7 @@ ESPN = "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.2"
 BENEVENTO = "4059"
 REPO = "ernbale/notizie-benevento"
 RAMO = "gol-immagini"
+CARTELLA_SITO = os.environ.get("GOL_CARTELLA_SITO", "")   # sul server Aruba: il sito servito (/srv/notiziebenevento)
 UA = "notiziebenevento.it"   # come calcio.py: ESPN rifiuta (403) un nome con l'indirizzo tra parentesi
 PAGINA_CALCIO = f"{SITO}/calcio/"
 OGNI = 15                 # secondi tra una lettura e l'altra durante la partita
@@ -605,7 +610,7 @@ def pubblica_articolo(n, adesso, chiavi, prova=None):
     (il lavoro è ripartito) non la rifà. Restituisce l'id, o None."""
     import archivia as A
     sito = os.path.dirname(QUI)
-    if not prova:
+    if not prova and os.environ.get("GITHUB_ACTIONS"):   # sul server il nome lo dà gol_server.sh
         git("config", "user.name", "github-actions[bot]")
         git("config", "user.email", "41898282+github-actions[bot]@users.noreply.github.com")
     for tentativo in range(5):
@@ -654,8 +659,9 @@ def pubblica_articolo(n, adesso, chiavi, prova=None):
         git("add", "notizie.json")
         git("commit", "-q", "-m", f"Fine partita: {n['titolo']}")
         if git("push", "-q", "origin", "HEAD:main", controlla=False).returncode == 0:
-            try:
-                github("POST", "actions/workflows/pubblica.yml/dispatches", chiavi["github"], {"ref": "main"})
+            try:   # sul server la pubblicazione vede il push da sola (pubblica_se_serve.sh, entro 15 secondi)
+                if not CARTELLA_SITO:
+                    github("POST", "actions/workflows/pubblica.yml/dispatches", chiavi["github"], {"ref": "main"})
             except Exception as e:
                 print(f"  AVVISO articolo: pubblicazione del sito non partita ({e}): uscirà col giro dopo")
             print(f"  articolo pubblicato: {n['titolo']}")
@@ -878,19 +884,28 @@ def github(metodo, percorso, token, dati=None):
 
 
 def carica(percorso, nome, token):
-    """L'immagine nel ramo gol-immagini: l'indirizzo raw.githubusercontent.com è online subito."""
-    try:
-        github("GET", f"git/ref/heads/{RAMO}", token)
-    except RuntimeError as e:
-        if "404" not in str(e):
-            raise
-        base = github("GET", "git/ref/heads/main", token)["object"]["sha"]
-        github("POST", "git/refs", token, {"ref": f"refs/heads/{RAMO}", "sha": base})
-    with open(percorso, "rb") as f:
-        contenuto = base64.b64encode(f.read()).decode()
-    riprova(lambda: github("PUT", f"contents/{nome}", token, {"message": f"Gol: {nome}", "content": contenuto,
-                                                              "branch": RAMO}), "GitHub (immagine)")
-    url = f"https://raw.githubusercontent.com/{REPO}/{RAMO}/{nome}"
+    """L'immagine online subito. Sul server Aruba nella cartella gol-immagini del sito servito (la pubblicazione del
+    sito non la tocca: pubblica_server.sh la esclude); su GitHub nel ramo gol-immagini (raw.githubusercontent.com)."""
+    if CARTELLA_SITO:
+        import shutil
+        dove = os.path.join(CARTELLA_SITO, RAMO, nome)
+        os.makedirs(os.path.dirname(dove), exist_ok=True)
+        shutil.copyfile(percorso, dove + ".tmp")
+        os.replace(dove + ".tmp", dove)
+        url = f"{SITO}/{RAMO}/{nome}"
+    else:
+        try:
+            github("GET", f"git/ref/heads/{RAMO}", token)
+        except RuntimeError as e:
+            if "404" not in str(e):
+                raise
+            base = github("GET", "git/ref/heads/main", token)["object"]["sha"]
+            github("POST", "git/refs", token, {"ref": f"refs/heads/{RAMO}", "sha": base})
+        with open(percorso, "rb") as f:
+            contenuto = base64.b64encode(f.read()).decode()
+        riprova(lambda: github("PUT", f"contents/{nome}", token, {"message": f"Gol: {nome}", "content": contenuto,
+                                                                  "branch": RAMO}), "GitHub (immagine)")
+        url = f"https://raw.githubusercontent.com/{REPO}/{RAMO}/{nome}"
     for _ in range(12):
         if facebook.online(url):
             return url
@@ -1149,7 +1164,7 @@ def collaudo(chiavi, cartella):
         url = carica(percorso, f"gol/collaudo/{dt.datetime.now(fuso()):%Y%m%d-%H%M%S}.jpg", chiavi["github"])
         return url
 
-    esito("immagine nel ramo e online", su_github)
+    esito("immagine caricata e online", su_github)
     esito("Telegram (chiave del bot)", lambda: "@" + telegram.chiama(chiavi["telegram"], "getMe")["username"])
     pag = {}
 
@@ -1262,7 +1277,7 @@ def main():
               "github": os.environ.get("GH_TOKEN", "").strip()}
     ig = None
     if not prova:
-        mancano = [k for k, v in chiavi.items() if not v]
+        mancano = [k for k, v in chiavi.items() if not v and not (k == "github" and CARTELLA_SITO)]
         if mancano:
             sys.exit(f"gol: mancano le chiavi {', '.join(mancano)}: non pubblico niente")
         pag = riprova(lambda: facebook.chiama("GET", "me", chiavi["facebook"], {"fields": "name,instagram_business_account{id}"}),

@@ -246,10 +246,13 @@ escono solo i comunicati e le notizie da 4 in su, al massimo una l'ora, senza re
 della sera; finisce da solo al primo post uscito senza errore e da lì Instagram segue di nuovo Facebook, senza
 recuperare le notizie di prima (`freno_dal` e `segue_dal` in instagram.json, nella cache «social» di GitHub).
 
-La diretta della partita (gol.py): un'uscita sbagliata già mandata si corregge senza post nuovi con la Action «Gol del
-Benevento», modo `correggi`, campo correggi `finale <id della notizia>` (o `gol:1`, `intervallo`): rifà testo e
-immagine col programma di adesso; Telegram cambia foto e testo, Facebook il testo, Instagram il testo lo cambia lui
-dall'app (si stampa nel log). Fatto la prima volta il 27 ott 2026 (un rigore letto come espulsione).
+La diretta della partita (gol.py): dal 30 ott 2026 gira sul server (lui: «sposta le dirette su aruba»): la fa partire
+`gol_via.py` 20 minuti prima con `~/gol_server.sh <id ESPN>` (registro `~/gol-diretta.log`, stato in
+`~/sito-stato/gol/`, immagini in `/srv/notiziebenevento/gol-immagini/`). Un'uscita sbagliata già mandata si corregge
+senza post nuovi sul server: `~/gol_server.sh <id ESPN> --correggi finale <id della notizia>` (o `gol:1`,
+`intervallo`; fino al 30 ott era la Action «Gol del Benevento», modo `correggi`): rifà testo e immagine col programma di
+adesso; Telegram cambia foto e testo, Facebook il testo, Instagram il testo lo cambia lui dall'app (si stampa nel log).
+Fatto la prima volta il 27 ott 2026 (un rigore letto come espulsione).
 
 ## Comunicati: subito solo le fonti ufficiali (dal 26 ott 2026)
 Escono subito solo quelli di enti pubblici, PEC e mittenti fidati (`~/nb-fonti/mittenti_fidati.json` sul Pi). Gli altri

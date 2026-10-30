@@ -143,8 +143,9 @@ fi
 # Togli i file interni
 rm -f diario/quarantena.json
 
-# il sito online: come l'artefatto di GitHub Pages (tutto tranne .git e .github), i file vecchi tolti alla fine
-rsync -a --delete-delay --delay-updates --exclude=/.git --exclude=/.github "$SITO/" "$USCITA/"
+# il sito online: come l'artefatto di GitHub Pages (tutto tranne .git e .github), i file vecchi tolti alla fine; la
+# cartella gol-immagini non si tocca: ci scrive la diretta dei gol (strumenti/gol_server.sh) e deve restare online
+rsync -a --delete-delay --delay-updates --exclude=/.git --exclude=/.github --exclude=/gol-immagini "$SITO/" "$USCITA/"
 echo "$(date -u '+%d/%m %H:%M:%S') sito $([ "$PROVA" = 1 ] && echo 'di prova ')in $USCITA ($(( $(date +%s) - INIZIO )) s)"
 [ "$PROVA" = 1 ] && exit 0
 echo "$SHA" > "$STATO/ultimo_sha"

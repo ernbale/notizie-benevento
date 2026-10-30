@@ -9,7 +9,8 @@ Sito: https://notiziebenevento.it (notiziebenevento.com rimanda qui)
 Dal 30 ottobre 2026 il sito, le fonti lette «da casa», la posta e i giri della redazione automatica girano sul server
 Aruba (prima erano su GitHub Pages, sul Raspberry Pi di casa e nel cloud di Claude): dove qui sotto si legge «il Pi di
 casa» ora è il server. GitHub Pages resta come copia di riserva. La pubblicazione è `strumenti/pubblica_server.sh`
-(gli stessi passi di `.github/workflows/pubblica.yml`), i giri sono in `strumenti/server/`.
+(gli stessi passi di `.github/workflows/pubblica.yml`), i giri sono in `strumenti/server/`, la diretta dei gol del
+Benevento è `strumenti/gol_server.sh` (prima `.github/workflows/gol.yml`).
 
 ## Come è fatto
 
