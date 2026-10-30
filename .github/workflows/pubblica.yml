@@ -316,6 +316,18 @@ jobs:
           path: ${{ runner.temp }}/social
           key: social-${{ github.run_id }}-${{ github.run_attempt }}
 
+      # la stessa memoria dei social scaricabile (gh run download), per il trasloco sul server Aruba (30 ott 2026): la
+      # cache di GitHub non si scarica, e senza questa memoria il server rimanderebbe tutto (doppioni). Solo numeri dei
+      # post e delle notizie, niente chiavi; resta un giorno.
+      - uses: actions/upload-artifact@v4
+        if: always()
+        continue-on-error: true
+        with:
+          name: social-stato
+          path: ${{ runner.temp }}/social
+          retention-days: 1
+          if-no-files-found: ignore
+
       - name: Chiusure non uscite su tutti i canali (lavoro in rosso, mail al proprietario)
         if: steps.chiusure.outcome == 'failure'
         run: |

@@ -339,6 +339,17 @@ def impronta(voci):
     return hashlib.sha1(json.dumps(voci, ensure_ascii=False, sort_keys=True).encode()).hexdigest()[:12]
 
 
+def al_server(nome, dati):
+    """Dal 30 ott 2026 il sito lo pubblica anche il server Aruba (strumenti/pubblica_server.sh): gli stessi dati che
+    vanno a GitHub li lascia nella sua cartella degli arrivi, che lui usa una volta sola. Solo dove la cartella c'è."""
+    arrivi = os.path.expanduser("~/sito-stato/arrivi")
+    if os.path.isdir(arrivi):
+        p = os.path.join(arrivi, f"{nome}.json")
+        with open(p + ".tmp", "w", encoding="utf-8") as f:
+            json.dump(dati, f, ensure_ascii=False)
+        os.replace(p + ".tmp", p)
+
+
 def manda(catalogo, chiave):
     """Fa partire la pubblicazione su GitHub col catalogo (compresso) se sul sito ce n'è uno diverso. Non più di una
     volta l'ora per lo stesso catalogo: se la pubblicazione non va, si riprova al giro dopo (come carburanti.py)."""
@@ -362,6 +373,7 @@ def manda(catalogo, chiave):
             dt.datetime.now(dt.timezone.utc) - dt.datetime.fromisoformat(stato["quando"]) < dt.timedelta(minutes=60):
         print(f"contributi: catalogo {imp} già mandato alle {stato['quando'][11:16]} UTC, aspetto")
         return
+    al_server("contributi", catalogo)
     with open(chiave, encoding="utf-8") as f:
         token = json.load(f)["token"].strip()
     pacco = base64.b64encode(gzip.compress(json.dumps(catalogo, ensure_ascii=False, separators=(",", ":")).encode(), 9)).decode()

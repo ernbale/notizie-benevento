@@ -278,6 +278,17 @@ def main():
         manda(out, a.manda)
 
 
+def al_server(nome, dati):
+    """Dal 30 ott 2026 il sito lo pubblica anche il server Aruba (strumenti/pubblica_server.sh): gli stessi dati che
+    vanno a GitHub li lascia nella sua cartella degli arrivi, che lui usa una volta sola. Solo dove la cartella c'è."""
+    arrivi = os.path.expanduser("~/sito-stato/arrivi")
+    if os.path.isdir(arrivi):
+        p = os.path.join(arrivi, f"{nome}.json")
+        with open(p + ".tmp", "w", encoding="utf-8") as f:
+            json.dump(dati, f, ensure_ascii=False)
+        os.replace(p + ".tmp", p)
+
+
 def manda(dati, chiave):
     """Fa partire la pubblicazione su GitHub coi prezzi (compressi) se sul sito ci sono quelli di un giorno prima. Non
     più di una volta ogni ora per gli stessi prezzi: se la pubblicazione non va, si riprova al giro dopo."""
@@ -300,6 +311,7 @@ def manda(dati, chiave):
             dt.datetime.now(dt.timezone.utc) - dt.datetime.fromisoformat(stato["quando"]) < dt.timedelta(minutes=60):
         print(f"carburanti: prezzi del {dati['estrazione']} già mandati alle {stato['quando'][11:16]} UTC, aspetto")
         return
+    al_server("carburanti", dati)
     with open(chiave, encoding="utf-8") as f:
         token = json.load(f)["token"].strip()
     pacco = base64.b64encode(gzip.compress(json.dumps(dati, ensure_ascii=False, separators=(",", ":")).encode(), 9)).decode()
