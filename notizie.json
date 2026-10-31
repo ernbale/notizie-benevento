@@ -1,7 +1,177 @@
 {
- "aggiornato": "2026-10-31T07:07+01:00",
+ "aggiornato": "2026-10-31T08:05+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "ginestra-degli-schiavoni-go-blue-20-novembre-diritti-bambini",
+   "titolo": "Ginestra degli Schiavoni aderisce a «Go Blue»: il 20 novembre un edificio del paese illuminato di blu per i diritti dei bambini",
+   "titolo_google": "Ginestra degli Schiavoni, Go Blue: luci blu il 20 novembre",
+   "sintesi": "La Giunta di Ginestra degli Schiavoni ha deciso di aderire a «Go Blue», la campagna di ANCI e UNICEF: il 20 novembre, Giornata internazionale per i diritti dell'infanzia e dell'adolescenza, un edificio o un monumento del paese sarà illuminato di blu.",
+   "categoria": "altro",
+   "luogo": "Ginestra degli Schiavoni",
+   "pubblicato": "2026-10-31T07:54:00+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 2,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/31/ginestra-degli-schiavoni-aderisce-a-go-blue-il-20-novembre-un-edificio-comunale-si-illuminera-di-blu-per-i-diritti-dei-bambini/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il 20 novembre a Ginestra degli Schiavoni, nel Fortore, un edificio o un monumento del paese sarà illuminato di blu per la Giornata internazionale per i diritti dell'infanzia e dell'adolescenza. Lo ha deciso la Giunta comunale, guidata dal sindaco Edi Barile, con la delibera numero 61 del 30 ottobre, che approva l'adesione a «Go Blue», la campagna dell'ANCI, l'associazione dei Comuni italiani, e dell'UNICEF Italia.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Ogni anno ANCI e UNICEF chiedono ai Comuni di illuminare di blu un monumento, un edificio pubblico o un luogo simbolo il 20 novembre, o nei giorni vicini. La data ricorda la Convenzione dell'ONU sui diritti dell'infanzia, approvata dalle Nazioni Unite il 20 novembre 1989 e ratificata dall'Italia nel 1991: quest'anno sono 37 anni.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Per l'amministrazione la luce blu è un gesto simbolico per ricordare che i diritti di bambini e ragazzi vanno difesi ogni giorno, non solo in una ricorrenza.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quale edificio o monumento sarà illuminato"
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Ginestra degli Schiavoni aderisce a “Go Blue”: il 20 novembre un edificio comunale si illuminerà di blu per i diritti dei bambini",
+      "url": "https://www.ntr24.tv/2026/10/31/ginestra-degli-schiavoni-aderisce-a-go-blue-il-20-novembre-un-edificio-comunale-si-illuminera-di-blu-per-i-diritti-dei-bambini/",
+      "data": "31 ott, 07:54"
+     }
+    ]
+   },
+   "zona": "fortore"
+  },
+  {
+   "id": "benevento-corso-garibaldi-donna-investita-monopattino",
+   "titolo": "Benevento, donna investita da un monopattino sul corso Garibaldi: ferite non gravi",
+   "titolo_google": "Corso Garibaldi, donna investita da un monopattino a Benevento",
+   "sintesi": "Una donna è stata investita da un monopattino con due ragazzi a bordo sul corso Garibaldi, a Benevento. Ha riportato ferite non gravi ed è stata soccorsa dai passanti. Il 24 ottobre sullo stesso corso era stato investito un bambino da una bici.",
+   "categoria": "cronaca",
+   "luogo": "Benevento, corso Garibaldi",
+   "pubblicato": "2026-10-31T07:21:00+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 4,
+   "fonti": [
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/31/donna-investita-da-un-monopattino-lungo-corso-garibaldi/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Una donna è stata investita da un monopattino sul corso Garibaldi, la via principale del centro di Benevento. Sul monopattino c'erano due ragazzi stranieri. La donna ha riportato ferite non gravi: l'hanno soccorsa subito alcuni passanti, che sono rimasti con lei finché non si è ripresa.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "Non è il primo caso sul corso, dove bici e monopattini non dovrebbero andare in mezzo ai pedoni. Sabato 24 ottobre era stato investito un bambino da una bici, e lunedì 26 la Polizia municipale aveva annunciato due vigili fissi tra Santa Sofia e via Goduti e controlli sulle bici elettriche truccate.",
+      "fonti": [
+       "Il Sannio Quotidiano",
+       "Anteprima24 (24/10)",
+       "NTR24 (26/10)"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando è successo di preciso",
+     "Se sono intervenuti i vigili urbani e se i due ragazzi sono stati identificati"
+    ],
+    "fonti": [
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Donna investita da un monopattino lungo corso Garibaldi",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/31/donna-investita-da-un-monopattino-lungo-corso-garibaldi/",
+      "data": "31 ott, 07:21"
+     },
+     {
+      "nome": "Anteprima24 (24/10)",
+      "titolo": "Benevento, bambino investito da una bici sul corso Garibaldi: trasportato in ospedale",
+      "url": "https://www.anteprima24.it/benevento/benevento-bambino-investito-da-una-bici-sul-corso-garibaldi-trasportato-in-ospedale/",
+      "data": "24 ott, 20:19"
+     },
+     {
+      "nome": "NTR24 (26/10)",
+      "titolo": "Controlli sulle e-bike “truccate” e presidio continuo: la Municipale mette in campo il piano per proteggere i pedoni su corso Garibaldi",
+      "url": "https://www.ntr24.tv/2026/10/26/controlli-sulle-e-bike-truccate-e-presidio-continuo-la-municipale-mette-in-campo-il-piano-per-proteggere-i-pedoni-su-corso-garibaldi/",
+      "data": "26 ott, 13:20"
+     }
+    ]
+   },
+   "zona": "benevento"
+  },
+  {
+   "id": "campolattaro-ricorso-tar-proroga-impianto-pompaggio-diga",
+   "titolo": "Campolattaro ricorre al TAR contro la proroga dell'impianto idroelettrico sulla diga: c'è tempo fino al 2030",
+   "titolo_google": "Campolattaro, ricorso al TAR contro l'impianto sulla diga",
+   "sintesi": "Il Comune di Campolattaro fa ricorso al TAR Campania contro il decreto del 4 agosto 2026 che proroga fino al 12 novembre 2030 il termine per costruire l'impianto idroelettrico di pompaggio previsto sul bacino della diga. La Giunta ha dato l'incarico al sindaco Simone Paglia il 29 ottobre.",
+   "categoria": "politica",
+   "luogo": "Campolattaro, diga",
+   "pubblicato": "2026-10-31T07:15:00+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 3,
+   "fonti": [
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/31/centrale-idroelettrica-a-campolattaro-il-comune-ricorre-al-tar-contro-la-proroga-della-regione/"
+    }
+   ],
+   "nota": "Il titolo dell'articolo parla di una proroga della Regione; nel testo il decreto n. 503 del 4 agosto 2026 è del Ministero dell'Ambiente e della Sicurezza energetica, insieme a quello della Cultura: qui vale il testo.",
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Comune di Campolattaro va al TAR contro l'impianto idroelettrico di pompaggio previsto sul bacino della diga, il lago artificiale del paese. Giovedì 29 ottobre la Giunta ha autorizzato il sindaco Simone Paglia a presentare ricorso al TAR Campania, a Napoli, contro il decreto n. 503 del 4 agosto 2026.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     },
+     {
+      "testo": "Con quel decreto il Ministero dell'Ambiente e della Sicurezza energetica, d'accordo con il Ministero della Cultura, ha prorogato fino al 12 novembre 2030 il termine per realizzare il progetto, già approvato con un decreto ministeriale del 2015. Un impianto di pompaggio usa l'acqua di un bacino per produrre energia elettrica e la riporta in alto quando l'energia costa meno.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Su quali motivi si basa il ricorso del Comune",
+     "Chi deve costruire l'impianto e a che punto è il progetto"
+    ],
+    "fonti": [
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Centrale idroelettrica a Campolattaro, il Comune ricorre al Tar contro la proroga della Regione",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/31/centrale-idroelettrica-a-campolattaro-il-comune-ricorre-al-tar-contro-la-proroga-della-regione/",
+      "data": "31 ott, 07:15"
+     }
+    ]
+   },
+   "zona": "fortore"
+  },
   {
    "id": "campoli-monte-taburno-bene-confiscato-polo-agro-sociale",
    "titolo": "Campoli del Monte Taburno, progetto da 300mila euro per un bene confiscato: il Comune chiede i fondi alla Regione",
@@ -396,7 +566,7 @@
    "id": "sannio-acque-undici-comuni-gestione-autonoma-ricorsi-tar",
    "titolo": "Acqua, undici Comuni del Sannio contro il passaggio a Sannio Acque: depositato il ricorso al TAR",
    "titolo_google": "Sannio Acque, undici Comuni fanno ricorso al TAR",
-   "sintesi": "Gli undici Comuni del Sannio che gestiscono da soli l'acqua hanno depositato il ricorso al TAR contro il decreto della Regione che affida per trent'anni il servizio a Sannio Acque. Lo dice il Comitato sannita Acqua Bene Comune, che pensa di intervenire nella causa al loro fianco. Il no era stato deciso il 26 ottobre a Fragneto Monforte. Anche San Lorenzello ha avviato la verifica per restare fuori.",
+   "sintesi": "Gli undici Comuni del Sannio che gestiscono da soli l'acqua hanno depositato il ricorso al TAR contro il decreto della Regione che affida per trent'anni il servizio a Sannio Acque. Il presidente della Regione Roberto Fico dice che esaminerà i documenti arrivati e valuterà la situazione. Anche San Lorenzello ha avviato la verifica per restare fuori.",
    "categoria": "politica",
    "zona": "provincia",
    "immagine": "fontana",
@@ -423,8 +593,8 @@
      "url": "https://www.tvsette.net/gestione-idrica-nel-sannio-il-comitato-sannita-acqua-bene-comune-esprime-pieno-plauso-ai-comuni-ricorrenti-contro-il-decreto-regionale/"
     },
     {
-     "nome": "Il Sannio Quotidiano",
-     "url": "https://www.ilsannioquotidiano.it/2026/10/29/gestione-servizio-idrico-sindaci-sulle-barricate-11-comuni-ricorrono-al-tar-contro-sannio-acque/"
+     "nome": "Il Sannio Quotidiano (31/10)",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/31/gestione-servizio-idrico-fico-apre-alla-verifica-valuteremo-la-situazione/"
     },
     {
      "nome": "Anteprima24 (29/10)",
@@ -433,6 +603,10 @@
     {
      "nome": "NTR24",
      "url": "https://www.ntr24.tv/2026/10/31/san-lorenzello-punta-a-restare-autonomo-avviata-la-verifica-per-evitare-sannio-acque/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/30/cusano-mutri-striscioni-davanti-al-municipio-lacqua-non-si-vende-si-custodisce/"
     }
    ],
    "articolo": {
@@ -452,9 +626,25 @@
       "giorno": "2026-10-31"
      },
      {
+      "testo": "Venerdì 30 ottobre, a margine del Summit Aree Interne all'Università del Sannio, il presidente della Regione Campania Roberto Fico ha parlato dei ricorsi. Ha ricordato che prima di firmare l'affidamento a Sannio Acque aveva scritto all'Ente Idrico Campano e a tutti i sindaci per chiedere se volevano restare nella forma di gestione che avevano sottoscritto, e che la risposta era stata sì. «Ora c'è qualche sindaco e qualche Comune che contesta l'affidamento. Esamineremo tutta la documentazione arrivata in Regione e valuteremo la situazione», ha detto.",
+      "fonti": [
+       "Il Sannio Quotidiano (31/10)"
+      ],
+      "giorno": "2026-10-30"
+     },
+     {
       "testo": "Giovedì 29 ottobre a Cusano Mutri, un altro Comune che gestisce da solo l'acqua e ha già notificato un suo ricorso al TAR, il vicesindaco Alfonso Topputo ha appeso davanti al Municipio due striscioni: «L'acqua non si vende, si custodisce» e «L'acqua è un bene comune, non un affare». Con lui in piazza si sono radunati molti cittadini. Quella mattina era previsto un sopralluogo dei tecnici di Sannio Acque agli impianti del paese, ma i tecnici non si sono presentati.",
       "fonti": [
-       "Anteprima24 (29/10)"
+       "Anteprima24 (29/10)",
+       "BeneventoNews24",
+       "Il Sannio Quotidiano (31/10, Cusano)"
+      ],
+      "giorno": "2026-10-29"
+     },
+     {
+      "testo": "Quella mattina era previsto un sopralluogo di Sannio Acque agli impianti dell'acqua del Comune, ma i tecnici non si sono presentati; il vicesindaco li ha aspettati lo stesso davanti al Municipio con i cittadini. «Questa battaglia la porteremo avanti fino in fondo», ha detto Topputo: per lui il ricorso al TAR è un passo necessario, ma l'acqua di Cusano si difende soprattutto con la gente del paese.",
+      "fonti": [
+       "BeneventoNews24"
       ],
       "giorno": "2026-10-29"
      },
@@ -585,6 +775,14 @@
        "Anteprima24 (28/10)",
        "NTR24"
       ]
+     },
+     {
+      "testo": "Gli striscioni a Cusano Mutri: Anteprima24 li racconta giovedì 29 ottobre, BeneventoNews24 e Il Sannio Quotidiano li datano venerdì 30. Vale il 29, il giorno in cui è uscito il primo articolo.",
+      "fonti": [
+       "Anteprima24 (29/10)",
+       "BeneventoNews24",
+       "Il Sannio Quotidiano (31/10, Cusano)"
+      ]
      }
     ],
     "non_si_sa": [
@@ -675,6 +873,24 @@
       "titolo": "San Lorenzello punta a restare autonomo: avviata la verifica per evitare Sannio Acque",
       "url": "https://www.ntr24.tv/2026/10/31/san-lorenzello-punta-a-restare-autonomo-avviata-la-verifica-per-evitare-sannio-acque/",
       "data": "31 ott, 06:00"
+     },
+     {
+      "nome": "Il Sannio Quotidiano (31/10)",
+      "titolo": "Gestione servizio idrico, Fico apre alla verifica: “Valuteremo la situazione”",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/31/gestione-servizio-idrico-fico-apre-alla-verifica-valuteremo-la-situazione/",
+      "data": "31 ott, 07:40"
+     },
+     {
+      "nome": "Il Sannio Quotidiano (31/10, Cusano)",
+      "titolo": "Striscioni davanti al Municipio di Cusano Mutri: “L’acqua non si vende”",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/31/striscioni-davanti-al-municipio-di-cusano-mutri-lacqua-non-si-vende/",
+      "data": "31 ott, 07:15"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Cusano Mutri, striscioni al Municipio: “L’acqua non si vende, si custodisce”",
+      "url": "https://www.beneventonews24.it/2026/10/30/cusano-mutri-striscioni-davanti-al-municipio-lacqua-non-si-vende-si-custodisce/",
+      "data": "30 ott, 14:27"
      }
     ],
     "aggiornamento": {
@@ -1445,6 +1661,10 @@
     {
      "nome": "InfoSannio",
      "url": "https://www.infosannionews.it/universita/2026/liceo-artistico-virgilio-in-festa-per-halloween-la-creativita-degli-studenti-sfila-tra-icone-della-tv-e-atmosfere-horror.html"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/31/il-liceo-artistico-di-benevento-sfila-per-halloween-la-creativita-degli-studenti-tra-icone-della-tv-e-atmosfere-horror/"
     }
    ],
    "articolo": {
@@ -1454,7 +1674,8 @@
       "fonti": [
        "Ottopagine",
        "BeneventoNews24",
-       "Benevento Giornale"
+       "Benevento Giornale",
+       "NTR24"
       ]
      },
      {
@@ -1510,6 +1731,12 @@
       "titolo": "Liceo Artistico ‘Virgilio’ in festa per Halloween: la creatività degli studenti sfila tra icone della TV e atmosfere horror",
       "url": "https://www.infosannionews.it/universita/2026/liceo-artistico-virgilio-in-festa-per-halloween-la-creativita-degli-studenti-sfila-tra-icone-della-tv-e-atmosfere-horror.html",
       "data": "30 ott, 18:27"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Il liceo artistico di Benevento sfila per Halloween: la creatività degli studenti tra icone della TV e atmosfere horror",
+      "url": "https://www.ntr24.tv/2026/10/31/il-liceo-artistico-di-benevento-sfila-per-halloween-la-creativita-degli-studenti-tra-icone-della-tv-e-atmosfere-horror/",
+      "data": "31 ott, 07:37"
      }
     ]
    },
@@ -2853,6 +3080,10 @@
     {
      "nome": "TV7 Benevento",
      "url": "https://www.tvsette.net/benevento-tragedia-nel-centro-storico-trovato-senza-vita-un-giovane-di-29-anni/"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/31/dramma-in-citta-29enne-ritrovato-senza-vita-in-casa/"
     }
    ],
    "articolo": {
@@ -2864,7 +3095,8 @@
        "InfoSannio",
        "Il Caudino",
        "Lab TV",
-       "TV7 Benevento"
+       "TV7 Benevento",
+       "Il Sannio Quotidiano"
       ],
       "giorno": "2026-10-30"
      },
@@ -2959,6 +3191,12 @@
       "titolo": "Benevento, tragedia nel centro storico: trovato senza vita un giovane di 29 anni",
       "url": "https://www.tvsette.net/benevento-tragedia-nel-centro-storico-trovato-senza-vita-un-giovane-di-29-anni/",
       "data": "30 ott, 11:44"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Dramma in città, 29enne ritrovato senza vita in casa",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/31/dramma-in-citta-29enne-ritrovato-senza-vita-in-casa/",
+      "data": "31 ott, 07:19"
      }
     ]
    },
@@ -3347,6 +3585,10 @@
     {
      "nome": "Benevento Giornale",
      "url": "https://www.beneventogiornale.com/2026/10/30/interrogazione-su-dirigenti-e-funzionari-sottoposti-a-indagini-la-risposta-dellamministrazione/"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/31/mastella-e-de-pierro-impossibile-sospendere-dirigenti-indagati-lopposizione-misure-pilatesche/"
     }
    ],
    "comunicati": [
@@ -3365,7 +3607,8 @@
        "BeneventoNews24",
        "Cronache del Sannio",
        "InfoSannio",
-       "Benevento Giornale"
+       "Benevento Giornale",
+       "Il Sannio Quotidiano"
       ],
       "giorno": "2026-10-30"
      },
@@ -3378,7 +3621,8 @@
        "TV7 Benevento",
        "Ottopagine",
        "BeneventoNews24",
-       "Cronache del Sannio"
+       "Cronache del Sannio",
+       "Il Sannio Quotidiano"
       ],
       "giorno": "2026-10-30"
      },
@@ -3547,6 +3791,12 @@
       "titolo": "Interrogazione su dirigenti e funzionari sottoposti a indagini, la risposta dell’Amministrazione",
       "url": "https://www.beneventogiornale.com/2026/10/30/interrogazione-su-dirigenti-e-funzionari-sottoposti-a-indagini-la-risposta-dellamministrazione/",
       "data": "30 ott, 21:54"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Mastella e De Pierro: “Impossibile sospendere dirigenti indagati”. L’opposizione: “Misure pilatesche”",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/31/mastella-e-de-pierro-impossibile-sospendere-dirigenti-indagati-lopposizione-misure-pilatesche/",
+      "data": "31 ott, 07:33"
      }
     ]
    },
@@ -6958,6 +7208,10 @@
     {
      "nome": "Il Mattino",
      "url": "https://www.ilmattino.it/benevento/sannio_fico_pronto_soccorso_sant_agata_sannio_acque_regione-9859076.html"
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/31/le-universita-fanno-rete-per-il-rilancio-delle-aree-interne-fico-ce-il-supporto-della-regione/"
     }
    ],
    "articolo": {
@@ -6992,7 +7246,8 @@
       "fonti": [
        "NTR24 (30/10, Fico)",
        "Ottopagine",
-       "Anteprima24 (Fico)"
+       "Anteprima24 (Fico)",
+       "Il Sannio Quotidiano (pronto soccorso)"
       ],
       "testo": "A margine Fico ha parlato del pronto soccorso dell'ospedale Sant'Alfonso Maria de' Liguori di Sant'Agata de' Goti. Il TAR Campania, accogliendo il ricorso del Comune di Puglianello, ha ordinato all'Azienda ospedaliera San Pio di riaprirlo 24 ore su 24 entro 60 giorni; se l'ordine non viene eseguito può intervenire un commissario ad acta, cioè nominato dal giudice. «La direttrice generale Morgante dovrà ottemperare a quanto stabilito dal Tar», ha detto Fico, riferendosi a Maria Morgante, che dirige il San Pio."
      },
@@ -7021,9 +7276,17 @@
       "testo": "All'Auditorium Sant'Agostino le università della rete hanno firmato un documento che punta a mettere la ricerca al servizio dei territori e dei piccoli Comuni. Al confronto c'erano anche la prefetta Raffaela Moscarella, i consiglieri regionali Pellegrino Mastella e Fernando Errico e il sindaco di Benevento Clemente Mastella."
      },
      {
+      "testo": "La rete RISE riunisce dieci università del Sud: l'Università del Sannio, che la guida, e quelle del Molise, «G. d'Annunzio» di Chieti-Pescara, Foggia, Campania «Luigi Vanvitelli», Salerno, Basilicata, Calabria, Catania e Sassari. Lavoreranno insieme nella ricerca e nei progetti per i territori, per rilanciare le aree interne.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ],
+      "giorno": "2026-10-30"
+     },
+     {
       "testo": "Giovedì 29 ottobre all'Università del Sannio, a Benevento, è cominciato il Summit Aree Interne 2030: due giorni di lavoro per capire come fermare lo spopolamento dei paesi dell'interno e trasformare le loro debolezze in occasioni di sviluppo. Lo promuove RISE, la rete di dieci università del Mezzogiorno di cui Unisannio è capofila.",
       "fonti": [
-       "NTR24 (29/10)"
+       "NTR24 (29/10)",
+       "Il Sannio Quotidiano"
       ],
       "giorno": "2026-10-29"
      },
@@ -7142,6 +7405,18 @@
       "titolo": "Ospedale di Sant'Agata h24 e caso Sannio Acque, Fico fa il punto sulle vertenze del territorio",
       "url": "https://www.ilmattino.it/benevento/sannio_fico_pronto_soccorso_sant_agata_sannio_acque_regione-9859076.html",
       "data": "31 ott, 04:00"
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "Le Università fanno rete per il rilancio delle aree interne, Fico: “C’è il supporto della Regione”",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/31/le-universita-fanno-rete-per-il-rilancio-delle-aree-interne-fico-ce-il-supporto-della-regione/",
+      "data": "31 ott, 07:30"
+     },
+     {
+      "nome": "Il Sannio Quotidiano (pronto soccorso)",
+      "titolo": "Riapertura pronto soccorso Sant’Agata, Fico: “Ottemperare alla sentenza”",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/31/riapertura-pronto-soccorso-santagata-fico-ottemperare-alla-sentenza/",
+      "data": "31 ott, 07:17"
      }
     ],
     "aggiornamento": {
@@ -9358,10 +9633,21 @@
      "nome": "AIR Campania",
      "url": "https://aircampania.it/san-giorgio-del-sannio-bn-deviazioni-temporanee/",
      "ufficiale": true
+    },
+    {
+     "nome": "Il Sannio Quotidiano",
+     "url": "https://www.ilsannioquotidiano.it/2026/10/31/san-giorgio-del-sannio-piazza-immacolata-messa-a-nuovo-oggi-linaugurazione/"
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "La cerimonia comincia alle 17, con l'arrivo del gonfalone del Comune, le autorità e l'Inno di Mameli; la presenta la scrittrice Rita Pacilio e ci sarà il sindaco Giuseppe Ricci. Oltre alla piazza sono stati sistemati il sagrato del Convento della Santissima Annunziata e la statua dell'Immacolata. Il Comune ha speso 73mila euro del suo bilancio; alcuni privati hanno regalato gli alberi piantati nello slargo, il mosaico alla base della colonna e il prodotto usato per impermeabilizzare colonna e statua.",
+      "fonti": [
+       "Il Sannio Quotidiano"
+      ],
+      "giorno": "2026-10-31"
+     },
      {
       "testo": "Anche i pullman AIR Campania da Benevento per San Nazzaro cambiano percorso sabato 31 ottobre, dalle 15:30 finché la strada non torna libera: dall'incrocio col semaforo passano per via San Giacomo, via G. Bocchini e via C. Bocchini, poi riprendono il percorso di sempre.",
       "fonti": [
@@ -9418,6 +9704,12 @@
       "url": "https://aircampania.it/san-giorgio-del-sannio-bn-deviazioni-temporanee/",
       "data": "29 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "Il Sannio Quotidiano",
+      "titolo": "San Giorgio del Sannio – Piazza Immacolata messa a nuovo, oggi l’inaugurazione",
+      "url": "https://www.ilsannioquotidiano.it/2026/10/31/san-giorgio-del-sannio-piazza-immacolata-messa-a-nuovo-oggi-linaugurazione/",
+      "data": "31 ott, 07:08"
      }
     ]
    },
