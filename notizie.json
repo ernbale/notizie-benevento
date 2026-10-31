@@ -3,6 +3,74 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "cremonese-benevento-formazioni-ufficiali-31-ottobre",
+   "titolo": "Serie B, Cremonese-Benevento: le formazioni ufficiali",
+   "titolo_google": "Cremonese-Benevento, le formazioni ufficiali del 31 ottobre",
+   "sintesi": "Il Benevento Calcio ha diffuso le formazioni ufficiali di Cremonese-Benevento, la partita di Serie BKT di sabato 31 ottobre. Capitani Maita per il Benevento e Bonazzoli per la Cremonese.",
+   "categoria": "sport",
+   "sport": "calcio",
+   "zona": "benevento",
+   "immagine": "calcio",
+   "luogo": "Cremona",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 5,
+   "comunicati": [
+    "ud8326645dde"
+   ],
+   "fonti": [
+    {
+     "nome": "Benevento Calcio",
+     "url": "https://www.beneventocalcio.club/news/notizie/7687/serie-bkt-2026-2027-cremonese-benevento-le-formazioni-ufficiali.shtml",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Il Benevento Calcio ha reso note le formazioni ufficiali di Cremonese-Benevento, la partita del campionato di Serie BKT di sabato 31 ottobre. Il Benevento, allenato da Antonio Floro Flores, ha come capitano Maita; la Cremonese, allenata da Fabio Pecchia, ha come capitano Bonazzoli.",
+      "fonti": [
+       "Benevento Calcio"
+      ]
+     },
+     {
+      "testo": "Gli undici del Benevento: in porta Vannucchi, poi Prisco, Siatounis, Maita, Lamesta, Dalle Mura, Sernicola, Saio, Romano, Okereke e Mignani.",
+      "fonti": [
+       "Benevento Calcio"
+      ]
+     },
+     {
+      "testo": "In panchina per il Benevento ci sono Esposito, Caldirola, Salvemini, Cherubini, Scognamillo, Mannini, Simonetti, Beruatto, Schimmenti, Talia, Verdi e Tumminello.",
+      "fonti": [
+       "Benevento Calcio"
+      ]
+     },
+     {
+      "testo": "La Cremonese risponde con Fulignati in porta, poi Thorsby, Pezzella, Luperto, Baschirotto, Lottici Tessadri, Berti, Lordkipanidze, Vandeputte, Elia e Bonazzoli. A disposizione Festa, Agazzi, Stuckler, De Luca, Licina, Djuric, Ozillo Moreira, Lickunas, Collocolo, Nasti, Marsi e Grassi.",
+      "fonti": [
+       "Benevento Calcio"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Benevento Calcio",
+      "titolo": "SERIE BKT 2026-2027: CREMONESE-BENEVENTO LE FORMAZIONI UFFICIALI",
+      "url": "https://www.beneventocalcio.club/news/notizie/7687/serie-bkt-2026-2027-cremonese-benevento-le-formazioni-ufficiali.shtml",
+      "data": "31 ott, 14:00",
+      "ufficiale": true
+     }
+    ]
+   },
+   "subito": true,
+   "pubblicato": "2026-10-31T14:06:18+01:00",
+   "foto": "calcio"
+  },
+  {
    "id": "benevento-issr-moscati-anno-accademico-2026-2027-stagliano",
    "titolo": "Benevento, l'Istituto di Scienze Religiose «San Giuseppe Moscati» apre l'anno accademico il 10 novembre con monsignor Staglianò",
    "titolo_google": "ISSR Moscati Benevento, anno accademico al via il 10 novembre",
