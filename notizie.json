@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-31T09:04+01:00",
+ "aggiornato": "2026-10-31T10:04+01:00",
  "giornali_letti": 14,
  "notizie": [
   {
@@ -30,6 +30,10 @@
      "nome": "Benevento 5",
      "url": "https://ssdbenevento5.it/2026/10/31/il-benevento-5-si-prende-il-derby-battuto-2-1-lo-sporting-sala-consilina-torna-il-sorriso-dopo-quattro-ko/",
      "ufficiale": true
+    },
+    {
+     "nome": "NTR24 Sport",
+     "url": "https://sport.ntr24.tv/2026/10/31/futsal-per-il-benevento5-digiuno-finito-dopo-quattro-turni-vittoria-nel-derby-con-il-sala-consilina/"
     }
    ],
    "articolo": {
@@ -37,13 +41,15 @@
      {
       "testo": "Il GG Team Wear Benevento 5, la squadra di calcio a 5 della città, ha vinto 2-1 il derby con lo Sporting Sala Consilina e torna a vincere dopo quattro sconfitte consecutive. Il primo tempo è finito 0-2 per i giallorossi, che con questi tre punti salgono a nove in classifica e al settimo posto.",
       "fonti": [
-       "Benevento 5"
+       "Benevento 5",
+       "NTR24 Sport"
       ]
      },
      {
       "testo": "Mister Scarpitti era senza Montefalcone e ha messo subito in porta Riccardo Ditano, arrivato in settimana. Barichello, recuperato, è partito dalla panchina. L'allenatore del Sala Consilina, Conde, non aveva lo squalificato Deivao.",
       "fonti": [
-       "Benevento 5"
+       "Benevento 5",
+       "NTR24 Sport"
       ]
      },
      {
@@ -61,13 +67,15 @@
      {
       "testo": "«Ci speravo nella vittoria, assolutamente», ha detto Scarpitti dopo la partita. L'allenatore spiega che la squadra è in un momento difficile, tra infortuni e squalifiche, e che proprio in questi momenti deve compattarsi. Ha lodato Ditano: «Riccardo ha fatto una grossa prestazione, ancora più significativa se si considera che è con noi da appena due giorni».",
       "fonti": [
-       "Benevento 5"
+       "Benevento 5",
+       "NTR24 Sport"
       ]
      },
      {
       "testo": "Per Scarpitti era «obiettivamente una partita spartiacque». Ora il Benevento 5 avrà due settimane prima della prossima partita, che l'allenatore vuole usare per recuperare le forze e gli infortunati.",
       "fonti": [
-       "Benevento 5"
+       "Benevento 5",
+       "NTR24 Sport"
       ]
      },
      {
@@ -78,7 +86,15 @@
      }
     ],
     "cronologia": [],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "Il 2-1 per il Benevento 5 con i gol di Sosa e Gui nel primo tempo e di Rossetti nel finale, il ritorno alla vittoria dopo quattro sconfitte, i nove punti e il settimo posto.",
+      "fonti": [
+       "Benevento 5",
+       "NTR24 Sport"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [],
     "fonti": [
@@ -88,6 +104,12 @@
       "url": "https://ssdbenevento5.it/2026/10/31/il-benevento-5-si-prende-il-derby-battuto-2-1-lo-sporting-sala-consilina-torna-il-sorriso-dopo-quattro-ko/",
       "data": "31 ott, 09:24",
       "ufficiale": true
+     },
+     {
+      "nome": "NTR24 Sport",
+      "titolo": "Futsal, per il Benevento5 digiuno finito dopo quattro turni: vittoria nel derby con il Sala Consilina",
+      "url": "https://sport.ntr24.tv/2026/10/31/futsal-per-il-benevento5-digiuno-finito-dopo-quattro-turni-vittoria-nel-derby-con-il-sala-consilina/",
+      "data": "31 ott, 09:49"
      }
     ]
    },
@@ -161,10 +183,10 @@
    "id": "san-leucio-del-sannio-assalto-bancomat-poste-banca",
    "titolo": "San Leucio del Sannio, nella notte fatti esplodere il bancomat delle Poste e quello della banca in centro",
    "titolo_google": "San Leucio del Sannio, esplosi bancomat di Poste e banca",
-   "sintesi": "Verso le 3:30 della notte tra venerdì 30 e sabato 31 ottobre a San Leucio del Sannio sono stati fatti saltare con l'esplosivo lo sportello automatico dell'ufficio postale e quello della Cassa Rurale e Artigiana, a pochi metri l'uno dall'altro. Danni pesanti; indagano i Carabinieri, il bottino non è ancora noto.",
+   "sintesi": "Nella notte tra venerdì 30 e sabato 31 ottobre a San Leucio del Sannio sono stati fatti saltare con l'esplosivo lo sportello automatico dell'ufficio postale e quello della BCC di San Marco dei Cavoti, a una ventina di metri l'uno dall'altro. Danni pesanti, indagano i Carabinieri; il sindaco avvisa che ufficio postale e bancomat sono chiusi al pubblico.",
    "categoria": "cronaca",
    "luogo": "San Leucio del Sannio, centro",
-   "pubblicato": "2026-10-31T08:31+01:00",
+   "pubblicato": "2026-10-31T09:55+01:00",
    "stato": "confermata",
    "rilevante": false,
    "importanza": 4,
@@ -176,62 +198,147 @@
     {
      "nome": "NTR24",
      "url": "https://www.ntr24.tv/2026/10/31/ancora-un-doppio-assalto-ai-bancomat-nella-notte-colpo-alle-poste-e-alla-banca-di-san-leucio-del-sannio/"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/doppio-colpo-dei-banditi-san-leucio-del-sannio-presi-di-mira-gli-sportelli-dellufficio-postale-e"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/foto-ancora-assalto-al-bancomat-saltano-altri-due-atm-in-provincia/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/31/foto-san-leucio-del-sannio-doppio-colpo-nella-notte-assaltati-con-lesplosivo-ufficio-postale-e-bancomat/"
+    },
+    {
+     "nome": "Comune di San Leucio del Sannio",
+     "url": "https://www.halleyweb.com/c062060/mc/mc_p_dettaglio.php?id_pubbl=12223"
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Nella notte tra venerdì 30 e sabato 31 ottobre, verso le 3:30, a San Leucio del Sannio sono stati fatti esplodere due sportelli automatici per il prelievo dei contanti: quello dell'ufficio postale e quello della Cassa Rurale e Artigiana, nel centro del paese. I due sportelli sono a pochi metri l'uno dall'altro: l'ufficio postale sta nello stesso edificio del Municipio, la banca a una ventina di metri.",
+      "testo": "Nella notte tra venerdì 30 e sabato 31 ottobre a San Leucio del Sannio sono stati fatti esplodere due sportelli automatici per il prelievo dei contanti: quello dell'ufficio postale e quello della BCC di San Marco dei Cavoti, nel centro del paese. I due sportelli sono a pochi metri l'uno dall'altro: l'ufficio postale sta nello stesso edificio del Municipio, la banca a una ventina di metri.",
       "fonti": [
        "Ottopagine",
-       "NTR24"
-      ]
+       "NTR24",
+       "Gazzetta di Benevento",
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-31"
      },
      {
-      "testo": "Le due esplosioni hanno fatto danni pesanti e i residenti della zona, spaventati dai due botti, sono scesi in strada. Appena scattato l'allarme sono arrivati i Carabinieri e i Vigili del fuoco, che hanno cominciato a mettere in sicurezza i due edifici. In mattinata sono arrivati da Napoli anche gli artificieri dei Carabinieri, per controllare che non fosse rimasto esplosivo.",
+      "testo": "Sabato mattina il sindaco Nascenzio Iannace ha avvisato i cittadini che, dopo il doppio assalto, l'ufficio postale e lo sportello della BCC per ora non sono accessibili al pubblico.",
+      "fonti": [
+       "Comune di San Leucio del Sannio",
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-31"
+     },
+     {
+      "testo": "Le due esplosioni hanno fatto danni pesanti a sportelli e muri, e i residenti della zona, svegliati dai due botti, sono scesi in strada. Appena scattato l'allarme sono arrivati i Carabinieri di Montesarchio e i Vigili del fuoco, che hanno cominciato a mettere in sicurezza i due edifici. In mattinata sono arrivati da Napoli anche gli artificieri dei Carabinieri, per controllare che non fosse rimasto esplosivo.",
       "fonti": [
        "Ottopagine",
-       "NTR24"
-      ]
+       "NTR24",
+       "Gazzetta di Benevento",
+       "Anteprima24",
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-31"
      },
      {
       "testo": "Quanto hanno portato via i ladri non si sa ancora. I Carabinieri indagano per ricostruire come è andata e trovare i responsabili.",
       "fonti": [
        "Ottopagine",
-       "NTR24"
+       "NTR24",
+       "Gazzetta di Benevento",
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-31"
+     },
+     {
+      "testo": "È un colpo molto simile a quello di Morcone di poco tempo fa: anche lì, nella stessa notte, erano stati fatti saltare il bancomat di una banca e quello dell'ufficio postale. Gli investigatori verificano se i due assalti siano collegati.",
+      "fonti": [
+       "NTR24",
+       "Ottopagine",
+       "Gazzetta di Benevento",
+       "Anteprima24"
+      ],
+      "giorno": "2026-10-31"
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "31 ottobre, mattina",
+      "fatto": "Arrivano gli artificieri da Napoli; il sindaco avvisa che ufficio postale e bancomat sono chiusi al pubblico.",
+      "fonti": [
+       "BeneventoNews24",
+       "Comune di San Leucio del Sannio"
       ]
      },
      {
-      "testo": "È un colpo molto simile a quello di Morcone di poche settimane fa: anche lì, nella stessa notte, erano stati fatti saltare il bancomat di una banca e quello dell'ufficio postale. Gli investigatori verificano se i due assalti siano collegati.",
+      "data": "31 ottobre, notte",
+      "fatto": "Fatti esplodere gli sportelli automatici dell'ufficio postale e della BCC di San Marco dei Cavoti; arrivano Carabinieri e Vigili del fuoco.",
       "fonti": [
+       "Ottopagine",
        "NTR24",
-       "Ottopagine"
+       "BeneventoNews24"
       ]
      }
     ],
-    "cronologia": [],
     "concordano": [
      {
       "testo": "Due sportelli fatti esplodere nella notte, quello dell'ufficio postale e quello di una banca, a pochi metri l'uno dall'altro; danni pesanti; intervento di Carabinieri e Vigili del fuoco; bottino ancora da contare.",
       "fonti": [
        "Ottopagine",
-       "NTR24"
+       "NTR24",
+       "Gazzetta di Benevento",
+       "Anteprima24",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Il colpo somiglia a quello di Morcone e gli investigatori cercano un collegamento.",
+      "fonti": [
+       "NTR24",
+       "Ottopagine",
+       "Gazzetta di Benevento",
+       "Anteprima24"
       ]
      }
     ],
     "divergono": [
      {
-      "testo": "Il nome della strada: Ottopagine scrive via Zamparelli, NTR24 via Carmine Zarrella. Nel racconto c'è solo «nel centro del paese».",
+      "testo": "Il nome della strada: Ottopagine scrive via Zamparelli, NTR24 via Carmine Zarrella, Anteprima24 via Vittorio Emanuele. Nel racconto c'è solo «nel centro del paese».",
       "fonti": [
        "Ottopagine",
-       "NTR24"
+       "NTR24",
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "L'ora: Ottopagine e NTR24 parlano delle 3:30, Anteprima24 delle 5 circa. Nel racconto c'è solo «nella notte».",
+      "fonti": [
+       "Ottopagine",
+       "NTR24",
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "La banca: Ottopagine e Gazzetta di Benevento scrivono Cassa Rurale e Artigiana, il Comune e BeneventoNews24 BCC di San Marco dei Cavoti. Nel racconto c'è il nome dell'avviso del Comune.",
+      "fonti": [
+       "Ottopagine",
+       "Gazzetta di Benevento",
+       "Comune di San Leucio del Sannio",
+       "BeneventoNews24"
       ]
      }
     ],
     "non_si_sa": [
      "Quanti soldi sono stati rubati.",
      "Quanti erano i ladri e come sono fuggiti.",
-     "Quando gli sportelli torneranno a funzionare."
+     "Quando ufficio postale e bancomat torneranno a funzionare."
     ],
     "fonti": [
      {
@@ -245,8 +352,40 @@
       "titolo": "Ancora un doppio assalto ai bancomat: nella notte colpo alle poste e alla banca di San Leucio del Sannio",
       "url": "https://www.ntr24.tv/2026/10/31/ancora-un-doppio-assalto-ai-bancomat-nella-notte-colpo-alle-poste-e-alla-banca-di-san-leucio-del-sannio/",
       "data": "31 ott, 08:31"
+     },
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "Doppio colpo dei banditi a San Leucio del Sannio. Presi di mira gli sportelli dell'Ufficio Postale e della banca",
+      "url": "https://www.gazzettabenevento.it/it/doppio-colpo-dei-banditi-san-leucio-del-sannio-presi-di-mira-gli-sportelli-dellufficio-postale-e",
+      "data": "31 ott, 08:41"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "FOTO/ Ancora assalto al bancomat: saltano altri due Atm in provincia",
+      "url": "https://www.anteprima24.it/benevento/foto-ancora-assalto-al-bancomat-saltano-altri-due-atm-in-provincia/",
+      "data": "31 ott, 09:20"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "FOTO – San Leucio del Sannio, doppio colpo nella notte: assaltati con l’esplosivo ufficio postale e bancomat",
+      "url": "https://www.beneventonews24.it/2026/10/31/foto-san-leucio-del-sannio-doppio-colpo-nella-notte-assaltati-con-lesplosivo-ufficio-postale-e-bancomat/",
+      "data": "31 ott, 09:42"
+     },
+     {
+      "nome": "Comune di San Leucio del Sannio",
+      "titolo": "Temporanea indisponibilità dei servizi dell'Ufficio Postale e dello sportello ATM della BCC di San Marco dei Cavoti - pubblicazione avviso",
+      "url": "https://www.halleyweb.com/c062060/mc/mc_p_dettaglio.php?id_pubbl=12223",
+      "data": "31 ott"
      }
-    ]
+    ],
+    "aggiornamento": {
+     "testo": "Sabato mattina il sindaco Nascenzio Iannace ha avvisato i cittadini che l'ufficio postale e lo sportello della BCC di San Marco dei Cavoti, danneggiati dalle esplosioni, per ora non sono accessibili al pubblico.",
+     "fonti": [
+      "Comune di San Leucio del Sannio",
+      "BeneventoNews24"
+     ],
+     "quando": "2026-10-31T10:04+01:00"
+    }
    },
    "zona": "provincia"
   },
