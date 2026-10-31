@@ -3,6 +3,73 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "benevento-termosifoni-accesi-in-anticipo-dal-1-novembre-ordinanza",
+   "titolo": "Benevento, termosifoni accesi in anticipo dal 1° al 14 novembre: l'ordinanza del sindaco",
+   "titolo_google": "Termosifoni a Benevento dal 1° novembre: orari e regole",
+   "sintesi": "A Benevento dal 1° al 14 novembre si possono accendere in anticipo i riscaldamenti a gas, al massimo 5 ore al giorno tra le 5 e le 23. Lo ha deciso il sindaco Clemente Mastella con un'ordinanza, per il freddo previsto al mattino presto e la sera.",
+   "categoria": "avvisi",
+   "luogo": "Benevento",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 4,
+   "in_vigore_dal": "2026-11-01",
+   "in_vigore_fino": "2026-11-14",
+   "comunicati": [
+    "34e5cfc25d09"
+   ],
+   "fonti": [
+    {
+     "nome": "Comune di Benevento",
+     "url": "https://www.comune.benevento.it/",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Benevento i termosifoni si possono accendere prima del solito: da domenica 1° novembre a sabato 14 novembre compreso, in tutto il territorio comunale, è consentito far funzionare gli impianti di riscaldamento alimentati a gas naturale. Lo ha deciso il sindaco Clemente Mastella con un'ordinanza.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "L'accensione è facoltativa, non obbligatoria. Il riscaldamento può restare acceso al massimo 5 ore al giorno in tutto, solo tra le 5 del mattino e le 23. Le 5 ore si possono dividere in più momenti della giornata, purché insieme non superino il limite.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "Restano i limiti di temperatura dentro casa e negli edifici fissati dalla legge nazionale (articolo 3 del D.P.R. 74/2013): 18 gradi, con 2 gradi di tolleranza, negli edifici usati per attività industriali, artigianali e simili; 20 gradi, sempre con 2 gradi di tolleranza, in tutti gli altri edifici. Valgono anche le eccezioni che la legge già prevede per alcuni tipi di edifici e di impianti.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     },
+     {
+      "testo": "Il Comune spiega che i bollettini meteo prevedono un forte calo delle temperature, soprattutto al mattino presto e la sera. L'ordinanza, che vale in via temporanea, serve anche a tutelare il benessere della popolazione, con un'attenzione particolare per le persone più fragili.",
+      "fonti": [
+       "Comune di Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "Comune di Benevento",
+      "titolo": "Accensione anticipata dei termosifoni, c'è l'ordinanza",
+      "url": "https://www.comune.benevento.it/",
+      "data": "31 ott, 15:51",
+      "ufficiale": true
+     }
+    ]
+   },
+   "subito": true,
+   "pubblicato": "2026-10-31T15:53:24+01:00",
+   "zona": "benevento"
+  },
+  {
    "id": "linea-caserta-foggia-treni-sospesi-caserta-maddaloni-31-ottobre",
    "titolo": "Treni Caserta-Benevento-Foggia fermi per 50 minuti tra Caserta e Maddaloni: circolazione tornata regolare",
    "titolo_google": "Treni Caserta-Benevento-Foggia, stop di 50 minuti il 31 ottobre",
