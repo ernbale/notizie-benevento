@@ -3,6 +3,73 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "asl-benevento-congresso-card-sannio-e-care-telemedicina",
+   "titolo": "ASL Benevento al congresso nazionale CARD a Roma: presentato «Sannio e-Care», teleassistenza e telemedicina per le aree interne",
+   "titolo_google": "Sannio e-Care, l'ASL Benevento al congresso CARD di Roma",
+   "sintesi": "La direttrice generale dell'ASL Benevento, Tiziana Spinosa, ha presentato a Roma, al XXIV Congresso nazionale CARD, il modello «Sannio e-Care»: teleassistenza e telemedicina per avvicinare le cure a chi vive nelle aree interne del Sannio.",
+   "categoria": "altro",
+   "zona": "provincia",
+   "luogo": "Provincia di Benevento",
+   "immagine": "medico",
+   "pubblicato": "2026-10-31",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "fonti": [
+    {
+     "nome": "ASL Benevento",
+     "url": "https://www.aslbenevento.it/notizie/lasl-benevento-al-congresso-nazionale-card-il-modello-sannio-e-care-la-sanita-di-prossimita",
+     "ufficiale": true
+    }
+   ],
+   "comunicati": [
+    "uc04ce5f922e"
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "La direttrice generale dell'ASL Benevento, Tiziana Spinosa, è intervenuta a Roma al XXIV Congresso nazionale CARD, che aveva per tema «Il Distretto per la comunità che cura. Innovazione, tecnologie, prossimità». Ha presentato «Sannio e-Care», il modello con cui l'azienda sanitaria vuole usare la teleassistenza e la telemedicina, cioè l'assistenza e le cure a distanza, nelle aree interne della provincia.",
+      "fonti": [
+       "ASL Benevento"
+      ]
+     },
+     {
+      "testo": "L'intervento si intitolava «Sannio e-Care: teleassistenza e telemedicina nei modelli integrati di cura di prossimità nelle aree interne». L'ASL ha raccontato il lavoro per costruire nel Sannio una rete sul territorio che metta insieme servizi, strutture e tecnologie.",
+      "fonti": [
+       "ASL Benevento"
+      ]
+     },
+     {
+      "testo": "Secondo l'ASL il modello è pensato sulle caratteristiche del Sannio, un territorio ampio e con pochi abitanti per chilometro quadrato. Qui, spiega l'azienda, teleassistenza e telemedicina possono ridurre le distanze, aiutare a non interrompere le cure e portare l'assistenza più vicino alle persone.",
+      "fonti": [
+       "ASL Benevento"
+      ]
+     },
+     {
+      "testo": "I punti della rete sono le Case della Comunità, le Centrali Operative Territoriali e gli Ospedali di Comunità. Per l'ASL devono dare risposte più coordinate, facili da raggiungere e vicine ai bisogni dei cittadini, soprattutto nelle aree interne. L'obiettivo, dice l'azienda, è una sanità sul territorio più connessa, «perché nessuna distanza geografica diventi distanza dalla cura».",
+      "fonti": [
+       "ASL Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "ASL Benevento",
+      "titolo": "L’ASL Benevento al Congresso Nazionale CARD: il modello Sannio e-Care per la sanità di prossimità",
+      "url": "https://www.aslbenevento.it/notizie/lasl-benevento-al-congresso-nazionale-card-il-modello-sannio-e-care-la-sanita-di-prossimita",
+      "data": "31 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "subito": true,
+   "foto": "medico-6"
+  },
+  {
    "id": "montesarchio-calendario-raccolta-differenziata-inverno-2026",
    "titolo": "Montesarchio, da domenica 1° novembre il calendario invernale della raccolta differenziata: carta solo il lunedì sera",
    "titolo_google": "Raccolta differenziata Montesarchio, calendario invernale 2026",
