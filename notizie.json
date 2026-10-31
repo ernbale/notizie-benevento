@@ -83,7 +83,11 @@
     ]
    },
    "immagine": "calcio",
-   "foto": "calcio-10"
+   "foto": "calcio-10",
+   "subito": true,
+   "comunicati": [
+    "ub75a6c64598"
+   ]
   },
   {
    "id": "frasso-telesino-18enne-arrestato-maltrattamenti-tentata-estorsione",
