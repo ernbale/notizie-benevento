@@ -3,6 +3,89 @@
  "giornali_letti": 14,
  "notizie": [
   {
+   "id": "cremonese-benevento-2-0-31-ottobre",
+   "titolo": "Serie B, Cremonese-Benevento 2-0: reti di Berti e Nasti",
+   "titolo_google": "Serie B: Cremonese-Benevento 2-0, il Benevento resta a 15 punti",
+   "sintesi": "Sabato 31 ottobre il Benevento ha perso 0-2 sul campo della Cremonese, nella decima giornata di Serie B. Gol di Berti (44') e Nasti (87'). Il Benevento resta a 15 punti.",
+   "categoria": "sport",
+   "sport": "calcio",
+   "zona": "benevento",
+   "luogo": "Stadio Giovanni Zini",
+   "pubblicato": "2026-10-31T16:53:53+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "diretta_calcio": "401899566",
+   "fonti": [
+    {
+     "nome": "ESPN",
+     "url": "https://www.espn.com/soccer/match/_/gameId/401899566"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Sabato 31 ottobre allo stadio Giovanni Zini il Benevento ha perso 0-2 sul campo della Cremonese, nella decima giornata di Serie B. Resta a 15 punti.",
+      "fonti": [
+       "ESPN"
+      ],
+      "giorno": "2026-10-31"
+     },
+     {
+      "testo": "Il primo tempo è finito 1-0. La Cremonese passa al 44' con Berti e raddoppia all'87' con Nasti.",
+      "fonti": [
+       "ESPN"
+      ],
+      "giorno": "2026-10-31"
+     },
+     {
+      "testo": "I numeri della partita, secondo ESPN: possesso palla 37% per la Cremonese e 63% per il Benevento; tiri in porta 3 a 4; tiri in tutto 12 a 12.",
+      "fonti": [
+       "ESPN"
+      ],
+      "giorno": "2026-10-31"
+     },
+     {
+      "testo": "La prossima partita: sabato 7 novembre alle 19:30, Benevento-Avellino.",
+      "fonti": [
+       "ESPN"
+      ],
+      "giorno": "2026-10-31"
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "31 ottobre, 15:00",
+      "fatto": "Comincia Cremonese-Benevento allo stadio Giovanni Zini.",
+      "fonti": [
+       "ESPN"
+      ]
+     },
+     {
+      "data": "31 ottobre, fine partita",
+      "fatto": "Finisce Cremonese-Benevento 2-0.",
+      "fonti": [
+       "ESPN"
+      ]
+     }
+    ],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Il commento dell'allenatore e dei giocatori: arriva con le interviste del dopo partita."
+    ],
+    "fonti": [
+     {
+      "nome": "ESPN",
+      "titolo": "Cremonese 2-0 Benevento: tabellino e statistiche",
+      "url": "https://www.espn.com/soccer/match/_/gameId/401899566",
+      "data": "31 ott, 16:53"
+     }
+    ]
+   },
+   "immagine": "calcio",
+   "foto": "calcio-10"
+  },
+  {
    "id": "frasso-telesino-18enne-arrestato-maltrattamenti-tentata-estorsione",
    "titolo": "Frasso Telesino, arrestato un 18enne: è indagato per maltrattamenti e tentata estorsione",
    "titolo_google": "Frasso Telesino, 18enne arrestato per maltrattamenti",
