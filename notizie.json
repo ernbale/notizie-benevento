@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-31T17:06+01:00",
+ "aggiornato": "2026-10-31T18:04+01:00",
  "giornali_letti": 14,
  "notizie": [
   {
@@ -36,6 +36,14 @@
     {
      "nome": "ESPN",
      "url": "https://www.espn.com/soccer/match/_/gameId/401899566"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/cremonese-benevento-cronaca-natch/"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/sport/2026/il-benevento-anticipa-natale-e-fa-due-grossi-regali-alla-cremonese-che-vince-2-a-0.html"
     }
    ],
    "articolo": {
@@ -45,7 +53,9 @@
       "fonti": [
        "ESPN",
        "Benevento Calcio",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Cronache del Sannio",
+       "InfoSannio"
       ],
       "giorno": "2026-10-31"
      },
@@ -62,7 +72,9 @@
       "testo": "La partita era cominciata con un'occasione per il Benevento: al 2' un colpo di testa di Siatounis su cross di Sernicola, respinto da Fulignati, con Lamesta impreciso sulla ribattuta. Poi la Cremonese ha avuto diverse occasioni, la più grande poco dopo il 20': Bonazzoli solo davanti a Vannucchi, che ha respinto.",
       "fonti": [
        "NTR24 Sport",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Cronache del Sannio",
+       "InfoSannio"
       ],
       "giorno": "2026-10-31"
      },
@@ -86,6 +98,22 @@
       "testo": "I numeri della partita, secondo ESPN: possesso palla 37% per la Cremonese e 63% per il Benevento; tiri in porta 3 a 4; tiri in tutto 12 a 12.",
       "fonti": [
        "ESPN"
+      ],
+      "giorno": "2026-10-31"
+     },
+     {
+      "testo": "Dopo la partita l'allenatore del Benevento, Antonio Floro Flores, ha detto che la squadra ha fatto «due regali» alla Cremonese e che il gol preso alla fine del primo tempo «ti taglia un po' le gambe». Secondo lui nel secondo tempo la partita l'ha fatta il Benevento, ma è mancato il gol: «non meritavamo di perdere», «siamo stati poco cattivi e concreti». Ha spiegato i tre cambi all'intervallo con «giocatori che non erano in partita» e ha detto che l'errore di Mignani «fa parte del suo percorso di crescita». Su Simone Verdi: «sta finalmente bene».",
+      "fonti": [
+       "BeneventoNews24 (Floro Flores)",
+       "Cronache del Sannio (Floro Flores)"
+      ],
+      "giorno": "2026-10-31"
+     },
+     {
+      "testo": "Il terzino Leonardo Sernicola ha detto che il pareggio col Catanzaro di martedì «brucia di più» e che la sconfitta di Cremona è «una battuta d'arresto» che non deve fermare la squadra, con la testa già al derby con l'Avellino. Per la Cremonese l'allenatore Fabio Pecchia si è detto contento per i suoi, che dopo la vittoria di Mantova tenevano a vincere davanti ai loro tifosi.",
+      "fonti": [
+       "BeneventoNews24 (Sernicola)",
+       "Cronache del Sannio (Pecchia)"
       ],
       "giorno": "2026-10-31"
      },
@@ -180,6 +208,42 @@
       "titolo": "Cremonese 2-0 Benevento: tabellino e statistiche",
       "url": "https://www.espn.com/soccer/match/_/gameId/401899566",
       "data": "31 ott, 16:53"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Cremonese-Benevento 2-0: la Strega cade allo “Zini”",
+      "url": "https://www.cronachedelsannio.it/sannionews24/cremonese-benevento-cronaca-natch/",
+      "data": "31 ott, 16:54"
+     },
+     {
+      "nome": "InfoSannio",
+      "titolo": "Il Benevento anticipa Natale e fa due grossi regali alla Cremonese che vince 2 a 0",
+      "url": "https://www.infosannionews.it/sport/2026/il-benevento-anticipa-natale-e-fa-due-grossi-regali-alla-cremonese-che-vince-2-a-0.html",
+      "data": "31 ott, 17:13"
+     },
+     {
+      "nome": "BeneventoNews24 (Floro Flores)",
+      "titolo": "Benevento, Floro Flores: “Fatti due regali a una squadra già forte, dobbiamo crescere”",
+      "url": "https://www.beneventonews24.it/2026/10/31/benevento-floro-flores-venire-qui-e-fare-due-regali-a-una-squadra-forte-dispiace/",
+      "data": "31 ott, 17:14"
+     },
+     {
+      "nome": "Cronache del Sannio (Floro Flores)",
+      "titolo": "Benevento, Floro Flores: “Siamo stati poco cattivi”",
+      "url": "https://www.cronachedelsannio.it/sannionews24/benevento-floro-flores-poco-cattivi/",
+      "data": "31 ott, 17:26"
+     },
+     {
+      "nome": "BeneventoNews24 (Sernicola)",
+      "titolo": "Benevento, Sernicola: “Batutta d’arresto che non deve intaccare il nostro cammino, testa all’Avellino”",
+      "url": "https://www.beneventonews24.it/2026/10/31/benevento-sernicola-batutta-darresto-che-non-deve-intaccare-il-nostro-cammino-testa-allavellino/",
+      "data": "31 ott, 17:37"
+     },
+     {
+      "nome": "Cronache del Sannio (Pecchia)",
+      "titolo": "Cremonese, Pecchia: “Ci tenevamo a vincere davanti ai nostri tifosi”",
+      "url": "https://www.cronachedelsannio.it/sannionews24/cremonese-pecchia-vincere-davanti-nostri-tifosi/",
+      "data": "31 ott, 17:45"
      }
     ]
    },
@@ -289,17 +353,38 @@
     {
      "nome": "Ottopagine",
      "url": "https://www.ottopagine.it/bn/attualita/442725/accensione-anticipata-dei-termosifoni-c-e-l-ordinanza-del-comune-di-benevento.shtml"
+    },
+    {
+     "nome": "Albo pretorio del Comune di Benevento",
+     "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80244",
+     "ufficiale": true
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/accensione-anticipata-dei-termosifoni-ce-lordinanza/"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/camera-di-commercio/2026/benevento-accensione-anticipata-dei-termosifoni-ce-lordinanza.html"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/31/benevento-accensione-anticipata-dei-termosifoni-ce-lordinanza/"
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "A Benevento i termosifoni si possono accendere prima del solito: da domenica 1° novembre a sabato 14 novembre compreso, in tutto il territorio comunale, è consentito far funzionare gli impianti di riscaldamento alimentati a gas naturale. Lo ha deciso il sindaco Clemente Mastella con un'ordinanza.",
+      "testo": "A Benevento i termosifoni si possono accendere prima del solito: da domenica 1° novembre a sabato 14 novembre compreso, in tutto il territorio comunale, è consentito far funzionare gli impianti di riscaldamento alimentati a gas naturale. Lo ha deciso il sindaco Clemente Mastella con l'ordinanza numero 81 del 31 ottobre.",
       "fonti": [
        "Comune di Benevento",
        "NTR24",
        "Ottopagine",
-       "Benevento Giornale"
+       "Benevento Giornale",
+       "Albo pretorio del Comune di Benevento",
+       "Anteprima24",
+       "InfoSannio",
+       "BeneventoNews24"
       ],
       "giorno": "2026-10-31"
      },
@@ -362,6 +447,31 @@
       "titolo": "Accensione anticipata dei termosifoni, c'è l'ordinanza del Comune di Benevento",
       "url": "https://www.ottopagine.it/bn/attualita/442725/accensione-anticipata-dei-termosifoni-c-e-l-ordinanza-del-comune-di-benevento.shtml",
       "data": "31 ott, 16:51"
+     },
+     {
+      "nome": "Albo pretorio del Comune di Benevento",
+      "titolo": "Autorizzazione all'accensione anticipata degli impianti termici di climatizzazione invernale dal 1 al 14 novembre 2026, ai sensi degli artt. 4, comma 3, e 5 del D.P.R. 16 aprile 2013, n. 74",
+      "url": "https://albo.comune.benevento.it/mc/mc_p_dettaglio.php?id_pubbl=80244",
+      "data": "31 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Accensione anticipata dei termosifoni, c’è l’ordinanza",
+      "url": "https://www.anteprima24.it/benevento/accensione-anticipata-dei-termosifoni-ce-lordinanza/",
+      "data": "31 ott, 17:02"
+     },
+     {
+      "nome": "InfoSannio",
+      "titolo": "Benevento. Accensione anticipata dei termosifoni, c’è l’ordinanza",
+      "url": "https://www.infosannionews.it/camera-di-commercio/2026/benevento-accensione-anticipata-dei-termosifoni-ce-lordinanza.html",
+      "data": "31 ott, 17:18"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Benevento, accensione anticipata dei termosifoni: c’è l’ordinanza",
+      "url": "https://www.beneventonews24.it/2026/10/31/benevento-accensione-anticipata-dei-termosifoni-ce-lordinanza/",
+      "data": "31 ott, 17:50"
      }
     ]
    },
@@ -15446,7 +15556,7 @@
    "titolo_google": "Sfiducia a Mastella a Benevento: a che punto è la mozione",
    "sommario": "Il 22 ottobre l'opposizione del Consiglio comunale di Benevento ha presentato una mozione di sfiducia contro il sindaco Clemente Mastella e la Giunta, con un dossier di 24 punti che parte dall'inchiesta giudiziaria sul Comune. Domenica 25 ha sfilato in corteo fino alla Prefettura. Il sindaco dice che non si dimette e la maggioranza parla di poche centinaia di persone in piazza. La data del voto in Consiglio non è ancora stata fissata.",
    "luogo": "Benevento",
-   "aggiornato": "2026-10-31T17:00+01:00",
+   "aggiornato": "2026-10-31T18:00+01:00",
    "collegate": [
     "benevento-opposizione-mozione-sfiducia-mastella"
    ],
@@ -15771,7 +15881,8 @@
      "fatto": "Mastella risponde a Del Basso De Caro e Viespoli: «De minimis non curat praetor»; dice che hanno lasciato una città in difficoltà e che lui l'ha risanata.",
      "fonti": [
       "NTR24 (31/10, Mastella)",
-      "Ottopagine (31/10, Mastella)"
+      "Ottopagine (31/10, Mastella)",
+      "InfoSannio (31/10, Mastella)"
      ]
     }
    ],
@@ -15923,6 +16034,12 @@
      "titolo": "Mastella su incontro Del Basso De Caro e Viespoli: De minimis non curat praetor",
      "url": "https://www.ottopagine.it/bn/politica/442724/mastella-su-incontro-del-basso-de-caro-e-viespoli-de-minimis-non-curat-praetor.shtml",
      "data": "31 ott, 16:48"
+    },
+    {
+     "nome": "InfoSannio (31/10, Mastella)",
+     "titolo": "Mastella sull’iniziativa Viespoli- Del Basso De caro : “De Minimis non curat praetor”",
+     "url": "https://www.infosannionews.it/politica/2026/mastella-sulliniziativa-viespoli-del-basso-de-caro-de-minimis-non-curat-praetor.html",
+     "data": "31 ott, 17:28"
     }
    ],
    "scena": "The council chamber of the city hall of Benevento during a tense evening session: councillors seated at curved wooden benches with microphones, some standing and arguing with papers in hand, citizens crowding the public gallery, warm light from old chandeliers, a sense of political confrontation"
