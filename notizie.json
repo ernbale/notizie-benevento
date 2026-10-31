@@ -1,7 +1,152 @@
 {
- "aggiornato": "2026-10-31T06:05+01:00",
+ "aggiornato": "2026-10-31T07:07+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "campoli-monte-taburno-bene-confiscato-polo-agro-sociale",
+   "titolo": "Campoli del Monte Taburno, progetto da 300mila euro per un bene confiscato: il Comune chiede i fondi alla Regione",
+   "titolo_google": "Campoli del Monte Taburno, 300mila euro per un bene confiscato",
+   "sintesi": "La Giunta di Campoli del Monte Taburno ha approvato «Terre del Taburno», il progetto da 300mila euro per trasformare beni confiscati alla criminalità organizzata in un polo agro-sociale aperto alle persone fragili. Il Comune lo candida all'avviso della Regione Campania sul riutilizzo dei beni confiscati.",
+   "categoria": "politica",
+   "luogo": "Campoli del Monte Taburno",
+   "pubblicato": "2026-10-31T06:15+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 3,
+   "immagine": "municipio",
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/31/campoli-del-monte-taburno-300mila-euro-per-recuperare-un-bene-confiscato-il-comune-punta-ai-fondi-regionali/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Campoli del Monte Taburno la Giunta comunale, guidata dal sindaco Tommaso Nicola Grasso, ha approvato «Terre del Taburno», un progetto per recuperare beni confiscati alla criminalità organizzata e farne un polo pubblico agro-sociale, di formazione e di inclusione. Il progetto esecutivo vale 300mila euro: 230.211,47 per i lavori e 69.788,53 per le altre spese.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "I soldi il Comune li chiede alla Regione Campania, con l'avviso pubblico che finanzia il riutilizzo dei beni confiscati nel programma annuale 2026. Il progetto ha già il parere favorevole della Soprintendenza, senza prescrizioni, e l'autorizzazione paesaggistica del Comune.",
+      "fonti": [
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Il polo dovrà offrire spazi e occasioni di partecipazione, soprattutto alle persone in difficoltà. Le attività agricole e sociali saranno decise più avanti: a chi si rivolgono, come si accede, chi le gestisce e con quali risorse.",
+      "fonti": [
+       "NTR24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Quali sono i beni confiscati e dove si trovano nel paese.",
+     "Quando la Regione deciderà quali progetti finanziare."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Campoli del Monte Taburno, 300mila euro per recuperare un bene confiscato: il Comune punta ai fondi regionali",
+      "url": "https://www.ntr24.tv/2026/10/31/campoli-del-monte-taburno-300mila-euro-per-recuperare-un-bene-confiscato-il-comune-punta-ai-fondi-regionali/",
+      "data": "31 ott, 06:15"
+     }
+    ]
+   },
+   "zona": "caudina",
+   "foto": "municipio-13"
+  },
+  {
+   "id": "benevento-avellino-7-novembre-biglietti-casms",
+   "titolo": "Benevento-Avellino del 7 novembre, biglietti fermi: decide il comitato per la sicurezza",
+   "titolo_google": "Benevento-Avellino 7 novembre: biglietti fermi, decide il CASMS",
+   "sintesi": "Il derby di Serie B Benevento-Avellino di sabato 7 novembre al Vigorito è tra le partite che l'Osservatorio nazionale sulle manifestazioni sportive ha mandato al comitato per la sicurezza (CASMS), perché decida misure più severe. Intanto ha chiesto di non far partire la vendita dei biglietti.",
+   "categoria": "sport",
+   "sport": "calcio",
+   "luogo": "Benevento, stadio Ciro Vigorito",
+   "pubblicato": "2026-10-31T06:03+01:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 5,
+   "immagine": "stadio",
+   "fonti": [
+    {
+     "nome": "Osservatorio nazionale sulle manifestazioni sportive",
+     "url": "https://osservatoriosport.interno.gov.it/web/wp-content/uploads/2026/01/ONMS-40-del-27-ottobre-2026.pdf",
+     "ufficiale": true
+    },
+    {
+     "nome": "NTR24 Sport",
+     "url": "https://sport.ntr24.tv/2026/10/31/strega-molti-tifosi-gia-a-cremona-altri-partiranno-oggi-derby-con-lavellino-decide-il-casms/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Per il derby di Serie B Benevento-Avellino, in programma sabato 7 novembre allo stadio Ciro Vigorito, i biglietti non sono ancora in vendita. Martedì 27 ottobre l'Osservatorio nazionale sulle manifestazioni sportive, l'organismo del ministero dell'Interno che valuta il rischio delle partite, ha mandato la gara al CASMS, il Comitato di analisi per la sicurezza delle manifestazioni sportive, perché scelga «adeguate misure di rigore». Nello stesso tempo ha chiesto alle leghe di far sapere alle società di non avviare la vendita dei biglietti.",
+      "fonti": [
+       "Osservatorio nazionale sulle manifestazioni sportive",
+       "NTR24 Sport"
+      ]
+     },
+     {
+      "testo": "Il derby è in un elenco di tredici partite di tutta Italia rimandate al comitato, insieme per esempio a Napoli-Lazio e Genoa-Milan di Serie A e, in Campania, a Casertana-Casarano e Savoia-Potenza di Serie C. Secondo NTR24 Sport l'Osservatorio ha dato a Benevento-Avellino il livello di allerta più alto per l'ordine pubblico.",
+      "fonti": [
+       "Osservatorio nazionale sulle manifestazioni sportive",
+       "NTR24 Sport"
+      ]
+     },
+     {
+      "testo": "Il CASMS esamina le informazioni delle Questure e propone al prefetto le misure da prendere; l'ultima parola spetta al decreto della Prefettura di Benevento. Secondo NTR24 Sport è quasi certo che i biglietti non saranno venduti ai residenti ad Avellino e provincia, e la prevendita dovrebbe partire all'inizio della prossima settimana, con il settore ospiti aperto solo ai tifosi che non abitano in Irpinia.",
+      "fonti": [
+       "NTR24 Sport"
+      ]
+     },
+     {
+      "testo": "È già successo nell'ultima partita tra le due squadre giocata a Benevento, il 17 novembre 2024, finita 2-2: nel settore ospiti entrarono solo i tifosi dell'Avellino non residenti nella provincia irpina, e ne arrivarono 35. Il prefetto di Benevento Raffaela Moscarella aveva deciso così dopo il derby del 10 dicembre 2023, quando mille tifosi irpini lanciarono in campo torce, fumogeni e petardi entrando nel loro settore.",
+      "fonti": [
+       "NTR24 Sport"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Benevento-Avellino del 7 novembre rimandata al CASMS e vendita dei biglietti non ancora avviata.",
+      "fonti": [
+       "Osservatorio nazionale sulle manifestazioni sportive",
+       "NTR24 Sport"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Quali misure deciderà il CASMS e quando la Prefettura firmerà il decreto.",
+     "Quando partirà la vendita dei biglietti e a che prezzo."
+    ],
+    "fonti": [
+     {
+      "nome": "Osservatorio nazionale sulle manifestazioni sportive",
+      "titolo": "Determinazione n. 40/2026 del 27 ottobre 2026",
+      "url": "https://osservatoriosport.interno.gov.it/web/wp-content/uploads/2026/01/ONMS-40-del-27-ottobre-2026.pdf",
+      "data": "27 ott",
+      "ufficiale": true
+     },
+     {
+      "nome": "NTR24 Sport",
+      "titolo": "Strega, molti tifosi già a Cremona, altri partiranno oggi. Derby con l’Avellino: decide il Casms",
+      "url": "https://sport.ntr24.tv/2026/10/31/strega-molti-tifosi-gia-a-cremona-altri-partiranno-oggi-derby-con-lavellino-decide-il-casms/",
+      "data": "31 ott, 06:03"
+     }
+    ]
+   },
+   "zona": "benevento",
+   "foto": "stadio-8"
+  },
   {
    "id": "santagata-de-goti-forum-zone-industriali-cerniera-capitone",
    "titolo": "Sant'Agata de' Goti, forum sulle zone industriali «cerniera»: il Comune punta sull'area produttiva di Capitone",
