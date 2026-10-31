@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-31T12:04+01:00",
+ "aggiornato": "2026-10-31T13:04+01:00",
  "giornali_letti": 14,
  "notizie": [
   {
@@ -8057,7 +8057,7 @@
    "id": "unisannio-summit-aree-interne-2030-rete-rise",
    "titolo": "Summit Aree Interne all'Unisannio, Fico: sul pronto soccorso di Sant'Agata de' Goti il San Pio dovrà rispettare il TAR",
    "titolo_google": "Summit Aree Interne a Benevento, Fico su Sant'Agata e acqua",
-   "sintesi": "Venerdì 30 ottobre il presidente della Regione Roberto Fico ha chiuso all'Università del Sannio il Summit Aree Interne 2030, parlando di sanità sul territorio, bus e fondi europei. Sul pronto soccorso di Sant'Agata de' Goti ha detto che la direttrice del San Pio dovrà eseguire l'ordinanza del TAR.",
+   "sintesi": "Venerdì 30 ottobre il presidente della Regione Roberto Fico ha chiuso all'Università del Sannio il Summit Aree Interne 2030, parlando di sanità sul territorio, bus e fondi europei. Sul pronto soccorso di Sant'Agata de' Goti ha detto che la direttrice del San Pio dovrà eseguire l'ordinanza del TAR; sabato Forza Italia ha ricordato i 60 giorni di tempo.",
    "categoria": "altro",
    "luogo": "Benevento, Università del Sannio",
    "pubblicato": "2026-10-31T04:00+01:00",
@@ -8093,12 +8093,30 @@
     {
      "nome": "Il Sannio Quotidiano",
      "url": "https://www.ilsannioquotidiano.it/2026/10/31/le-universita-fanno-rete-per-il-rilancio-delle-aree-interne-fico-ce-il-supporto-della-regione/"
+    },
+    {
+     "nome": "NTR24 (31/10, Forza Italia)",
+     "url": "https://www.ntr24.tv/2026/10/31/ospedale-di-santagata-il-tar-ordina-la-riapertura-h24-del-pronto-soccorso-forza-italia-ora-risposte-concrete/"
     }
    ],
    "articolo": {
     "racconto": [
      {
-      "testo": "Dopo le parole di Fico, Forza Italia ha convocato per sabato 31 ottobre una conferenza stampa sul pronto soccorso di Sant'Agata de' Goti, che adesso chiude alle 18. Il ricorso al TAR lo aveva presentato il sindaco di Puglianello e deputato di Forza Italia, Francesco Maria Rubano. Il consigliere regionale Fernando Errico, dello stesso partito, ha detto di prendere atto «positivamente» delle dichiarazioni del presidente: «L'ordinanza del Tar va tradotta rapidamente in fatti». Errico lavora anche a una riunione della commissione Sanità della Regione sul tema.",
+      "testo": "Sabato 31 ottobre, in mattinata, Forza Italia ha tenuto nella sua sede provinciale di Benevento la conferenza stampa sul pronto soccorso di Sant'Agata de' Goti, con il segretario regionale Fulvio Martusciello, il deputato e segretario provinciale Francesco Maria Rubano e il consigliere regionale Fernando Errico. Rubano ha ricordato che l'Azienda ospedaliera San Pio ha 60 giorni per riaprire il pronto soccorso 24 ore su 24: se non lo fa, interviene con pieni poteri il commissario ad acta previsto dall'ordinanza e già individuato, il dottor Ugo Trama. «Il TAR ci ha dato ragione per la seconda volta», ha detto.",
+      "fonti": [
+       "NTR24 (31/10, Forza Italia)"
+      ],
+      "giorno": "2026-10-31"
+     },
+     {
+      "testo": "Per Rubano riaprire di notte il pronto soccorso di Sant'Agata serve anche a «decongestionare» quello di Benevento, dove oggi arriva gran parte delle emergenze del Sannio. Ha chiesto alla direttrice generale del San Pio, Maria Morgante, lo stesso «senso delle istituzioni» mostrato da Fico. Martusciello ha chiesto alla Regione di non aspettare «un magistrato per aprire un ospedale».",
+      "fonti": [
+       "NTR24 (31/10, Forza Italia)"
+      ],
+      "giorno": "2026-10-31"
+     },
+     {
+      "testo": "Il ricorso al TAR lo aveva presentato il Comune di Puglianello, il cui sindaco è proprio Rubano. Già prima della conferenza il consigliere regionale Errico aveva detto di prendere atto «positivamente» delle parole di Fico: «L'ordinanza del Tar va tradotta rapidamente in fatti». Errico lavora anche a una riunione della commissione Sanità della Regione sul tema.",
       "fonti": [
        "Il Mattino"
       ],
@@ -8201,6 +8219,13 @@
        "Ottopagine",
        "Lab TV"
       ]
+     },
+     {
+      "data": "31 ottobre, mattina",
+      "fatto": "Conferenza stampa di Forza Italia a Benevento sul pronto soccorso di Sant'Agata de' Goti, con Martusciello, Rubano ed Errico.",
+      "fonti": [
+       "NTR24 (31/10, Forza Italia)"
+      ]
      }
     ],
     "concordano": [
@@ -8298,14 +8323,20 @@
       "titolo": "Riapertura pronto soccorso Sant’Agata, Fico: “Ottemperare alla sentenza”",
       "url": "https://www.ilsannioquotidiano.it/2026/10/31/riapertura-pronto-soccorso-santagata-fico-ottemperare-alla-sentenza/",
       "data": "31 ott, 07:17"
+     },
+     {
+      "nome": "NTR24 (31/10, Forza Italia)",
+      "titolo": "Ospedale di Sant’Agata, il TAR ordina la riapertura h24 del Pronto soccorso. Forza Italia: «Ora risposte concrete»",
+      "url": "https://www.ntr24.tv/2026/10/31/ospedale-di-santagata-il-tar-ordina-la-riapertura-h24-del-pronto-soccorso-forza-italia-ora-risposte-concrete/",
+      "data": "31 ott, 12:52"
      }
     ],
     "aggiornamento": {
-     "testo": "Sabato 31 ottobre Forza Italia tiene una conferenza stampa sul pronto soccorso di Sant'Agata de' Goti; il consigliere regionale Fernando Errico chiede che l'ordinanza del TAR diventi «rapidamente» fatti.",
+     "testo": "Sabato 31 ottobre, nella conferenza stampa di Forza Italia, il deputato Francesco Maria Rubano ha ricordato che il San Pio ha 60 giorni per riaprire il pronto soccorso di Sant'Agata de' Goti 24 ore su 24; se non lo fa, interviene il commissario ad acta già individuato, Ugo Trama.",
      "fonti": [
-      "Il Mattino"
+      "NTR24 (31/10, Forza Italia)"
      ],
-     "quando": "2026-10-31T06:05+01:00"
+     "quando": "2026-10-31T13:04+01:00"
     }
    },
    "zona": "benevento",
@@ -14593,7 +14624,7 @@
    "titolo_google": "Sfiducia a Mastella a Benevento: a che punto è la mozione",
    "sommario": "Il 22 ottobre l'opposizione del Consiglio comunale di Benevento ha presentato una mozione di sfiducia contro il sindaco Clemente Mastella e la Giunta, con un dossier di 24 punti che parte dall'inchiesta giudiziaria sul Comune. Domenica 25 ha sfilato in corteo fino alla Prefettura. Il sindaco dice che non si dimette e la maggioranza parla di poche centinaia di persone in piazza. La data del voto in Consiglio non è ancora stata fissata.",
    "luogo": "Benevento",
-   "aggiornato": "2026-10-30T13:00+01:00",
+   "aggiornato": "2026-10-31T13:00+01:00",
    "collegate": [
     "benevento-opposizione-mozione-sfiducia-mastella"
    ],
@@ -14623,6 +14654,14 @@
      "fonti": [
       "Ottopagine (25/10)",
       "Ottopagine (26/10, Pd)"
+     ]
+    },
+    {
+     "testo": "Il 31 ottobre Umberto Del Basso De Caro e Pasquale Viespoli hanno aperto a un percorso comune per le comunali del 2027, con un programma e una coalizione; Forza Italia lavora a una candidatura civica.",
+     "fonti": [
+      "Ottopagine (31/10, Del Basso De Caro e Viespoli)",
+      "Cronache del Sannio (31/10, Del Basso De Caro e Viespoli)",
+      "NTR24 (31/10, Forza Italia)"
      ]
     }
    ],
@@ -14715,13 +14754,28 @@
      "titolo": "Le altre voci",
      "paragrafi": [
       {
+       "testo": "Sabato 31 ottobre, al Museo del Sannio, Del Basso De Caro e Viespoli hanno parlato all'incontro «Invertire il declino. Riflessioni sulla città», moderato dal giornalista Enzo Colarusso. Del Basso De Caro ha detto che le valutazioni giudiziarie spettano ai giudici, ma che la sua lettura «coincide» con quella della Procura: «si tratta di un sistema». Ha aggiunto che non punta a incarichi ma a «costruire un programma e una coalizione», con un candidato sindaco scelto anche con le primarie, e che chi arriverà a Palazzo Mosti «troverà un disastro finanziario». Alla domanda su un percorso comune con Viespoli ha risposto: «Penso proprio di sì».",
+       "fonti": [
+        "Ottopagine (31/10, Del Basso De Caro e Viespoli)",
+        "Cronache del Sannio (31/10, Del Basso De Caro e Viespoli)"
+       ]
+      },
+      {
+       "testo": "Viespoli ha parlato di «un sistema di intermediazione del consenso, degli interessi, di occupazione delle istituzioni», lasciando ai giudici le responsabilità penali, e di «un fallimento» sul piano del governo della città, che secondo lui non ha una prospettiva di sviluppo per i giovani. Lo stesso giorno, alla conferenza stampa di Forza Italia, il segretario regionale Fulvio Martusciello ha detto che il partito lavora a una candidatura civica per le comunali del maggio 2027 e non è voluto entrare nel merito delle richieste di dimissioni a Mastella.",
+       "fonti": [
+        "Ottopagine (31/10, Del Basso De Caro e Viespoli)",
+        "Cronache del Sannio (31/10, Del Basso De Caro e Viespoli)",
+        "NTR24 (31/10, Forza Italia)"
+       ]
+      },
+      {
        "testo": "Martedì 27 Pasquale Basile, che Lab TV chiama «leader storico dell'antagonismo cittadino», ha criticato sia l'amministrazione sia la proposta dell'opposizione, che a suo dire non parla né al ceto medio in difficoltà né ai più poveri, e ha espresso dubbi sul senso della manifestazione di domenica.",
        "fonti": [
         "Lab TV (27/10)"
        ]
       },
       {
-       "testo": "Sabato 31 ottobre, al mattino, al Museo del Sannio, Umberto Del Basso De Caro e Pasquale Viespoli, in passato su fronti opposti, proveranno a «contribuire a tracciare un cammino di riscatto» per la città con un percorso civico, con l'associazione CittadinoSUDD.",
+       "testo": "Il 28 ottobre Umberto Del Basso De Caro e Pasquale Viespoli, in passato su fronti opposti, avevano annunciato un incontro per «contribuire a tracciare un cammino di riscatto» per la città con un percorso civico, con l'associazione CittadinoSUDD.",
        "fonti": [
         "Lab TV (28/10)"
        ]
@@ -14852,6 +14906,15 @@
      ]
     },
     {
+     "data": "31 ottobre, mattina",
+     "fatto": "All'incontro al Museo del Sannio Del Basso De Caro e Viespoli parlano di «declino» della città e aprono a un percorso comune; Forza Italia annuncia che lavora a una candidatura civica per il 2027.",
+     "fonti": [
+      "Ottopagine (31/10, Del Basso De Caro e Viespoli)",
+      "Cronache del Sannio (31/10, Del Basso De Caro e Viespoli)",
+      "NTR24 (31/10, Forza Italia)"
+     ]
+    },
+    {
      "data": "31 ottobre, 10:30",
      "fatto": "Incontro pubblico «Invertire il declino. Riflessioni sulla città» con Del Basso De Caro e Viespoli nella Sala Vergineo del Museo del Sannio; alle 10 una conferenza stampa di Forza Italia.",
      "fonti": [
@@ -14972,6 +15035,24 @@
      "titolo": "Invertire il Declino.Riflessioni sulla città.Domani 31 ottobre, a Benevento incontro pubblico",
      "url": "https://www.infosannionews.it/politica/2026/invertire-il-declino-riflessioni-sulla-citta-domani-31-ottobre-a-benevento-incontro-pubblico.html",
      "data": "30 ott, 12:09"
+    },
+    {
+     "nome": "Ottopagine (31/10, Del Basso De Caro e Viespoli)",
+     "titolo": "Del Basso De Caro e Viespoli: \"Il declino di Benevento va fermato\"",
+     "url": "https://www.ottopagine.it/bn/politica/442694/del-basso-de-caro-e-viespoli-il-declino-di-benevento-va-fermato.shtml",
+     "data": "31 ott, 12:22"
+    },
+    {
+     "nome": "Cronache del Sannio (31/10, Del Basso De Caro e Viespoli)",
+     "titolo": "Benevento cerca una rotta: Del Basso De Caro e Viespoli, confronto sul declino della città",
+     "url": "https://www.cronachedelsannio.it/sannionews24/benevento-cerca-una-rotta-del-basso-de-caro-e-viespoli-confronto-sul-declino-della-citta/",
+     "data": "31 ott, 12:25"
+    },
+    {
+     "nome": "NTR24 (31/10, Forza Italia)",
+     "titolo": "Ospedale di Sant’Agata, il TAR ordina la riapertura h24 del Pronto soccorso. Forza Italia: «Ora risposte concrete»",
+     "url": "https://www.ntr24.tv/2026/10/31/ospedale-di-santagata-il-tar-ordina-la-riapertura-h24-del-pronto-soccorso-forza-italia-ora-risposte-concrete/",
+     "data": "31 ott, 12:52"
     }
    ],
    "scena": "The council chamber of the city hall of Benevento during a tense evening session: councillors seated at curved wooden benches with microphones, some standing and arguing with papers in hand, citizens crowding the public gallery, warm light from old chandeliers, a sense of political confrontation"
