@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-30T17:05+01:00",
+ "aggiornato": "2026-10-31T11:00+01:00",
  "eventi": [
   {
    "id": "mostra-cosmogonie-meact-torrecuso-2026",
@@ -570,6 +570,12 @@
      "fonti": [
       "BeneventoNews24 (30/10)"
      ]
+    },
+    {
+     "testo": "Nei primi due giorni la sagra ha portato in paese tanti visitatori. Sabato 31 ottobre e domenica 1° novembre gli stand restano aperti a pranzo e a cena, fino a mezzanotte; per tutta la giornata si possono visitare la mostra di Vittorio Asteriti a Casa Turese, la libreria Casa Naima nella chiesa di San Nicola e il Museo dei Marmi, curato da Mariano Goglia, alla Congrega dei Nobili.",
+     "fonti": [
+      "BeneventoNews24 (31/10)"
+     ]
     }
    ],
    "notizia": "sagra-castagna-vitulano",
@@ -651,6 +657,12 @@
      "titolo": "Vitulano, al via la 33ª Sagra della Castagna e del Pecorino Vitulanese con un dibattito sulle aree interne",
      "url": "https://www.anteprima24.it/benevento/vitulano-al-via-la-33a-sagra-della-castagna-e-del-pecorino-vitulanese-con-un-dibattito-sulle-aree-interne/",
      "data": "30 ott, 17:46"
+    },
+    {
+     "nome": "BeneventoNews24 (31/10)",
+     "titolo": "Vitulano, è già trionfo di sapori per la 33ª Sagra della Castagna e del Pecorino Vitulanese. E oggi la festa continua",
+     "url": "https://www.beneventonews24.it/2026/10/31/vitulano-e-gia-trionfo-di-sapori-per-la-33a-sagra-della-castagna-e-del-pecorino-vitulanese-e-oggi-la-festa-continua/",
+     "data": "31 ott, 10:31"
     }
    ],
    "immagine": "castagne",

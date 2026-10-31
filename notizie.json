@@ -1,7 +1,185 @@
 {
- "aggiornato": "2026-10-31T10:04+01:00",
+ "aggiornato": "2026-10-31T11:05+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-pietrelcina-tre-arresti-carabinieri-ordini-carcerazione",
+   "titolo": "Benevento e Pietrelcina, i Carabinieri portano in carcere tre condannati: pene fino a otto anni",
+   "titolo_google": "Benevento e Pietrelcina, tre condannati portati in carcere",
+   "sintesi": "I Carabinieri della Compagnia di Benevento hanno arrestato tre persone condannate in via definitiva: due uomini a Benevento, per spaccio e furti in casa, e una donna a Pietrelcina, per sfruttamento della prostituzione. Le pene da scontare vanno da oltre 4 anni a 8 anni.",
+   "categoria": "cronaca",
+   "luogo": "Benevento e Pietrelcina",
+   "pubblicato": "2026-10-31T10:15+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 3,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/31/tre-persone-arrestate-tra-benevento-e-pietrelcina-pene-fino-a-8-anni-per-droga-furto-e-sfruttamento-della-prostituzione/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/31/pietrelcina-63enne-arrestata-per-sfruttamento-della-prostituzione/"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/i-carabinieri-hanno-rintracciato-e-tratto-arresto-un-uomo-della-classe-1987-destinatario-di-un"
+    },
+    {
+     "nome": "Il Caudino",
+     "url": "https://ilcaudino.it/tre-persone-tratte-in-arresto-dai-carabinieri-uid-5/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "I Carabinieri della Compagnia di Benevento hanno portato in carcere tre persone condannate in via definitiva, che ora devono scontare la pena: due uomini a Benevento e una donna a Pietrelcina. Dopo l'arresto sono stati portati tutti e tre nel carcere di Benevento.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24",
+       "Gazzetta di Benevento",
+       "Il Caudino"
+      ]
+     },
+     {
+      "testo": "Il primo, un uomo nato nel 1987, l'hanno rintracciato i Carabinieri della stazione di Benevento. È stato condannato per furti in casa e per spaccio di droga, fatti commessi in città tra il 2011 e il 2023, e deve scontare ancora 8 anni e 9 giorni. L'ordine di carcerazione l'ha firmato la Procura generale della Corte d'appello di Napoli, che ha messo insieme le diverse condanne.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24",
+       "Gazzetta di Benevento",
+       "Il Caudino"
+      ]
+     },
+     {
+      "testo": "Sempre a Benevento, i Carabinieri della stazione e del Nucleo radiomobile hanno arrestato un uomo nato nel 1962, condannato per spaccio di droga a Benevento tra il 2011 e il 2017. Anche per lui l'ordine è della Procura generale di Napoli: deve scontare 6 anni e 21 giorni.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24",
+       "Gazzetta di Benevento",
+       "Il Caudino"
+      ]
+     },
+     {
+      "testo": "A Pietrelcina i Carabinieri della stazione del paese hanno arrestato una donna nata nel 1963, condannata per sfruttamento della prostituzione: il fatto risale a marzo 2017 a San Giovanni Valdarno, in provincia di Arezzo. L'ordine l'ha firmato il 17 settembre 2026 l'ufficio esecuzioni della Procura di Arezzo; la pena è di 4 anni, 4 mesi e 18 giorni.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24",
+       "Gazzetta di Benevento",
+       "Il Caudino"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Tre ordini di carcerazione eseguiti dai Carabinieri: due uomini (nati nel 1987 e nel 1962) a Benevento, una donna (nata nel 1963) a Pietrelcina; pene di 8 anni e 9 giorni, 6 anni e 21 giorni, 4 anni 4 mesi e 18 giorni.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24",
+       "Gazzetta di Benevento",
+       "Il Caudino"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Quando sono stati eseguiti di preciso i tre arresti."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Tre persone arrestate tra Benevento e Pietrelcina: pene fino a 8 anni per droga, furto e sfruttamento della prostituzione",
+      "url": "https://www.ntr24.tv/2026/10/31/tre-persone-arrestate-tra-benevento-e-pietrelcina-pene-fino-a-8-anni-per-droga-furto-e-sfruttamento-della-prostituzione/",
+      "data": "31 ott, 10:09"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Pietrelcina, 63enne arrestata per sfruttamento della prostituzione",
+      "url": "https://www.beneventonews24.it/2026/10/31/pietrelcina-63enne-arrestata-per-sfruttamento-della-prostituzione/",
+      "data": "31 ott, 10:15"
+     },
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "I Carabinieri hanno rintracciato e tratto in arresto un uomo della classe 1987, destinatario di un provvedimento di cumulo pene con contestuale ordine di esecuzione in carcere",
+      "url": "https://www.gazzettabenevento.it/it/i-carabinieri-hanno-rintracciato-e-tratto-arresto-un-uomo-della-classe-1987-destinatario-di-un",
+      "data": "31 ott, 09:45"
+     },
+     {
+      "nome": "Il Caudino",
+      "titolo": "Tre persone tratte in arresto dai carabinieri",
+      "url": "https://ilcaudino.it/tre-persone-tratte-in-arresto-dai-carabinieri-uid-5/",
+      "data": "31 ott, 10:35"
+     }
+    ]
+   },
+   "zona": "benevento"
+  },
+  {
+   "id": "cerreto-sannita-borsa-di-studio-valentino-ferrara-scrigno-dei-valori",
+   "titolo": "Cerreto Sannita, una borsa di studio in ricordo di Valentino Ferrara per gli studenti del Liceo Sodo: domande entro il 3 dicembre",
+   "titolo_google": "Borsa di studio Valentino Ferrara a Cerreto Sannita: come fare",
+   "sintesi": "Si chiama «Lo scrigno dei valori» il bando per la borsa di studio in memoria di Valentino Ferrara, rivolto agli studenti dell'istituto paritario Luigi Sodo di Cerreto Sannita. Tre premi da 1.500, 1.000 e 500 euro, più un viaggio a Lourdes come volontari dell'AMASIT; si partecipa entro il 3 dicembre 2026.",
+   "categoria": "altro",
+   "luogo": "Cerreto Sannita, Istituto Luigi Sodo",
+   "pubblicato": "2026-10-31T10:52+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 2,
+   "immagine": "scuola",
+   "in_vigore_fino": "2026-12-03",
+   "fonti": [
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/31/il-ricordo-di-valentino-ferrara-diventa-unopportunita-per-i-giovani-presentato-il-bando-lo-scrigno-dei-valori/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "A Cerreto Sannita è stato presentato «Lo scrigno dei valori», il bando per una borsa di studio in memoria di Valentino Ferrara, il ragazzo morto a quindici anni. È per gli studenti dell'istituto paritario Luigi Sodo, il liceo classico e scientifico del paese, e per partecipare c'è tempo fino al 3 dicembre 2026.",
+      "fonti": [
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "I premi sono tre: 1.500 euro al primo classificato, 1.000 al secondo e 500 al terzo. Ognuno dei vincitori potrà anche partire gratis per Lourdes come volontario dell'AMASIT, l'associazione della diocesi che da anni accompagna lì malati e persone con disabilità. Il tema scelto è «Il volontariato come stile di vita».",
+      "fonti": [
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Lo promuove l'associazione «Il Sogno e il Sorriso di Valentino Ferrara» insieme all'AMASIT, con il sostegno di tre aziende: Mangimi Liverini, L.M.L. di Sergio Fasulo e MC Impianti di Marco Ciervo. Valentino giocava a pallamano ed era capitano della sua squadra, e con l'AMASIT aveva fatto anche lui i viaggi a Lourdes.",
+      "fonti": [
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "«Uno dei modi più concreti per non dimenticare quello che è stato Valentino è sostenere un altro studente nel suo percorso», ha detto il papà Nicola, che ha preparato l'intervento con la moglie Nunzia. La famiglia regalerà alla scuola un'immagine di Valentino su ceramica. Alla presentazione ha parlato anche il preside, don Alfonso Salomone.",
+      "fonti": [
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Come si presenta la domanda e a chi.",
+     "Come vengono scelti i vincitori."
+    ],
+    "fonti": [
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Il ricordo di Valentino Ferrara diventa un’opportunità per i giovani: presentato il bando “Lo scrigno dei valori”",
+      "url": "https://www.beneventonews24.it/2026/10/31/il-ricordo-di-valentino-ferrara-diventa-unopportunita-per-i-giovani-presentato-il-bando-lo-scrigno-dei-valori/",
+      "data": "31 ott, 10:52"
+     }
+    ]
+   },
+   "zona": "telesina",
+   "foto": "scuola-7"
+  },
   {
    "id": "benevento-5-vince-derby-sporting-sala-consilina-2-1",
    "titolo": "Calcio a 5, il Benevento 5 vince il derby con lo Sporting Sala Consilina 2-1: decidono Sosa e Gui",
@@ -34,6 +212,10 @@
     {
      "nome": "NTR24 Sport",
      "url": "https://sport.ntr24.tv/2026/10/31/futsal-per-il-benevento5-digiuno-finito-dopo-quattro-turni-vittoria-nel-derby-con-il-sala-consilina/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/31/futsal-il-benevento5-torna-alla-vittoria-successo-nel-derby-con-sala-consilina/"
     }
    ],
    "articolo": {
@@ -42,7 +224,8 @@
       "testo": "Il GG Team Wear Benevento 5, la squadra di calcio a 5 della città, ha vinto 2-1 il derby con lo Sporting Sala Consilina e torna a vincere dopo quattro sconfitte consecutive. Il primo tempo è finito 0-2 per i giallorossi, che con questi tre punti salgono a nove in classifica e al settimo posto.",
       "fonti": [
        "Benevento 5",
-       "NTR24 Sport"
+       "NTR24 Sport",
+       "BeneventoNews24"
       ]
      },
      {
@@ -110,6 +293,12 @@
       "titolo": "Futsal, per il Benevento5 digiuno finito dopo quattro turni: vittoria nel derby con il Sala Consilina",
       "url": "https://sport.ntr24.tv/2026/10/31/futsal-per-il-benevento5-digiuno-finito-dopo-quattro-turni-vittoria-nel-derby-con-il-sala-consilina/",
       "data": "31 ott, 09:49"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Futsal, il Benevento5 torna alla vittoria: successo nel derby con Sala Consilina",
+      "url": "https://www.beneventonews24.it/2026/10/31/futsal-il-benevento5-torna-alla-vittoria-successo-nel-derby-con-sala-consilina/",
+      "data": "31 ott, 10:43"
      }
     ]
    },
@@ -193,7 +382,7 @@
    "fonti": [
     {
      "nome": "Ottopagine",
-     "url": "https://www.ottopagine.it/bn/cronaca/442670/esplosioni-e-paura-doppio-colpo-a-banca-e-poste-a-san-leucio-del-sannio-foto.shtml"
+     "url": "https://www.ottopagine.it/bn/cronaca/442682/tanta-gente-una-festa-il-molino-aperto-e-una-bella-atmosfera-poi-la-paura.shtml"
     },
     {
      "nome": "NTR24",
@@ -214,6 +403,10 @@
     {
      "nome": "Comune di San Leucio del Sannio",
      "url": "https://www.halleyweb.com/c062060/mc/mc_p_dettaglio.php?id_pubbl=12223"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/cronaca/2026/paura-nella-notte-a-san-leucio-del-sannio-fatti-saltare-in-area-2-bancomat.html"
     }
    ],
    "articolo": {
@@ -248,12 +441,26 @@
       "giorno": "2026-10-31"
      },
      {
+      "testo": "La sera prima in paese c'era molta gente in giro fino a tardi: una festa di giovani in attesa di Halloween e chi era andato al frantoio per far macinare le olive. Secondo alcuni residenti si è andati avanti almeno fino alle 2; i botti, secondo la prima ricostruzione, sono arrivati verso le 3:30, quando il paese dormiva. Per fortuna i danni sono solo alle cose.",
+      "fonti": [
+       "Ottopagine (31/10, 10:23)"
+      ],
+      "giorno": "2026-10-31"
+     },
+     {
       "testo": "Quanto hanno portato via i ladri non si sa ancora. I Carabinieri indagano per ricostruire come è andata e trovare i responsabili.",
       "fonti": [
        "Ottopagine",
        "NTR24",
        "Gazzetta di Benevento",
        "BeneventoNews24"
+      ],
+      "giorno": "2026-10-31"
+     },
+     {
+      "testo": "Nel Sannio è il secondo doppio assalto di questo tipo in poche settimane, sportello della banca e delle Poste nella stessa notte. Secondo Ottopagine i ladri potrebbero puntare sui nuovi turni di rifornimento dei bancomat nel fine settimana, sperando di trovarli più pieni.",
+      "fonti": [
+       "Ottopagine (31/10, 10:23)"
       ],
       "giorno": "2026-10-31"
      },
@@ -295,7 +502,8 @@
        "NTR24",
        "Gazzetta di Benevento",
        "Anteprima24",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "InfoSannio"
       ]
      },
      {
@@ -376,6 +584,18 @@
       "titolo": "Temporanea indisponibilità dei servizi dell'Ufficio Postale e dello sportello ATM della BCC di San Marco dei Cavoti - pubblicazione avviso",
       "url": "https://www.halleyweb.com/c062060/mc/mc_p_dettaglio.php?id_pubbl=12223",
       "data": "31 ott"
+     },
+     {
+      "nome": "Ottopagine (31/10, 10:23)",
+      "titolo": "Tanta gente, una festa, il molino aperto e una bella atmosfera. Poi la paura",
+      "url": "https://www.ottopagine.it/bn/cronaca/442682/tanta-gente-una-festa-il-molino-aperto-e-una-bella-atmosfera-poi-la-paura.shtml",
+      "data": "31 ott, 10:23"
+     },
+     {
+      "nome": "InfoSannio",
+      "titolo": "Paura nella notte a San Leucio del Sannio. Fatti saltare in area 2 bancomat",
+      "url": "https://www.infosannionews.it/cronaca/2026/paura-nella-notte-a-san-leucio-del-sannio-fatti-saltare-in-area-2-bancomat.html",
+      "data": "31 ott, 10:01"
      }
     ],
     "aggiornamento": {
@@ -10936,13 +11156,13 @@
   },
   {
    "id": "buonalbergo-carta-dedicata-a-te-lista-beneficiari-2026",
-   "titolo": "Carta Dedicata a te, pubblicati gli elenchi dei beneficiari in dieci Comuni del Sannio: prima ricarica dal 4 novembre",
-   "titolo_google": "Carta Dedicata a te 2026: beneficiari in dieci Comuni del Sannio",
-   "sintesi": "Buonalbergo, Montesarchio, Sant'Angelo a Cupolo, Pago Veiano, Castelpagano, Arpaise, Morcone, San Nicola Manfredi, Ceppaloni e Paupisi hanno pubblicato gli elenchi delle famiglie che ricevono la «Carta Dedicata a te», 500 euro all'anno per la spesa. La prima ricarica arriva dal 4 novembre e il primo acquisto va fatto entro il 16 dicembre.",
+   "titolo": "Carta Dedicata a te, pubblicati gli elenchi dei beneficiari nei Comuni del Sannio: prima ricarica dal 4 novembre",
+   "titolo_google": "Carta Dedicata a te 2026: elenchi dei beneficiari nel Sannio",
+   "sintesi": "Buonalbergo, Montesarchio, Sant'Angelo a Cupolo, Pago Veiano, Castelpagano, Arpaise, Morcone, San Nicola Manfredi, Ceppaloni, Paupisi e Pietraroja hanno pubblicato gli elenchi delle famiglie che ricevono la «Carta Dedicata a te», 500 euro all'anno per la spesa. La prima ricarica arriva dal 4 novembre e il primo acquisto va fatto entro il 16 dicembre.",
    "categoria": "avvisi",
    "zona": "provincia",
-   "luogo": "Buonalbergo, Montesarchio, Sant'Angelo a Cupolo, Pago Veiano, Castelpagano, Arpaise, Morcone, San Nicola Manfredi, Ceppaloni e Paupisi",
-   "pubblicato": "2026-10-30T17:25+01:00",
+   "luogo": "Buonalbergo, Montesarchio, Sant'Angelo a Cupolo, Pago Veiano, Castelpagano, Arpaise, Morcone, San Nicola Manfredi, Ceppaloni, Paupisi e Pietraroja",
+   "pubblicato": "2026-10-31T10:55+01:00",
    "stato": "ufficiale",
    "rilevante": false,
    "fonti": [
@@ -10995,10 +11215,22 @@
      "nome": "Comune di Paupisi",
      "url": "https://paupisi.halleyweb.it/c062049/mc/mc_p_dettaglio.php?id_pubbl=7676",
      "ufficiale": true
+    },
+    {
+     "nome": "Comune di Pietraroja",
+     "url": "https://comune.pietraroja.bn.it/albo-pretorio/?dettaglio_id=306556",
+     "ufficiale": true
     }
    ],
    "articolo": {
     "racconto": [
+     {
+      "testo": "Sabato 31 ottobre l'elenco dei beneficiari l'ha pubblicato all'albo pretorio anche il Comune di Pietraroja: come negli altri paesi, le famiglie si riconoscono dal numero della pratica e dal protocollo della dichiarazione ISEE.",
+      "fonti": [
+       "Comune di Pietraroja"
+      ],
+      "giorno": "2026-10-31"
+     },
      {
       "testo": "Venerdì 30 ottobre l'elenco definitivo dei beneficiari l'ha pubblicato anche il Comune di Paupisi: le famiglie si riconoscono dal protocollo della dichiarazione ISEE e accanto c'è il numero della carta. Chi aveva già la carta negli anni scorsi ed è di nuovo tra i beneficiari usa quella, senza ritirarne un'altra. Il Comune ricorda che i beneficiari li ha scelti l'INPS e che non conosce i motivi delle esclusioni; per informazioni il Comune risponde allo 0824 872481.",
       "fonti": [
@@ -11245,15 +11477,22 @@
       "url": "https://paupisi.halleyweb.it/c062049/mc/mc_p_dettaglio.php?id_pubbl=7676",
       "data": "30 ott",
       "ufficiale": true
+     },
+     {
+      "nome": "Comune di Pietraroja",
+      "titolo": "Carta \"Dedicata a te\" - Anno 2026. Elenco beneficiari.",
+      "url": "https://comune.pietraroja.bn.it/albo-pretorio/?dettaglio_id=306556",
+      "data": "31 ott",
+      "ufficiale": true
      }
     ],
     "aggiornamento": {
-     "testo": "Venerdì 30 ottobre anche Paupisi ha pubblicato l'elenco definitivo dei beneficiari della Carta Dedicata a te.",
+     "testo": "Sabato 31 ottobre l'elenco dei beneficiari della Carta Dedicata a te l'ha pubblicato anche il Comune di Pietraroja.",
      "fonti": [
-      "Comune di Paupisi"
+      "Comune di Pietraroja"
      ],
-     "quando": "2026-10-30T18:04+01:00",
-     "titolo_prima": "Carta Dedicata a te, pubblicati gli elenchi dei beneficiari in nove Comuni del Sannio: prima ricarica dal 4 novembre"
+     "quando": "2026-10-31T11:05+01:00",
+     "titolo_prima": "Carta Dedicata a te, pubblicati gli elenchi dei beneficiari in dieci Comuni del Sannio: prima ricarica dal 4 novembre"
     }
    },
    "immagine": "carta-spesa",
