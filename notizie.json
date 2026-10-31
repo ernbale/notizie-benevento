@@ -1,7 +1,193 @@
 {
- "aggiornato": "2026-10-31T14:04+01:00",
+ "aggiornato": "2026-10-31T15:04+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "linea-caserta-foggia-treni-sospesi-caserta-maddaloni-31-ottobre",
+   "titolo": "Treni Caserta-Benevento-Foggia fermi per 50 minuti tra Caserta e Maddaloni: circolazione tornata regolare",
+   "titolo_google": "Treni Caserta-Benevento-Foggia, stop di 50 minuti il 31 ottobre",
+   "sintesi": "Sabato 31 ottobre, dalle 13:40 alle 14:30, i treni della linea Caserta-Foggia, quella che passa per Telese e Benevento, sono rimasti fermi tra Caserta e Maddaloni per un guasto tecnico. RFI dice che la circolazione è tornata regolare; i treni coinvolti hanno avuto ritardi fino a 40 minuti, percorsi accorciati e cancellazioni.",
+   "categoria": "strade",
+   "immagine": "treno",
+   "luogo": "Provincia di Benevento, linea Caserta-Foggia",
+   "zona": "provincia",
+   "pubblicato": "2026-10-31T14:30+01:00",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "fonti": [
+    {
+     "nome": "RFI",
+     "url": "https://www.rfi.it/content/rfi/it/news-e-media/infomobilita/aggiornamenti/2026/10/31/linea-caserta---foggia--circolazione-sospesa-per-un-inconvenient.html",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Sabato 31 ottobre, dalle 13:40, la circolazione dei treni sulla linea Caserta-Foggia si è fermata tra Caserta e Maddaloni per un guasto tecnico sulla linea. Lo ha comunicato RFI, la società che gestisce i binari. È la linea che collega Caserta a Benevento passando per Telese e Solopaca, e prosegue verso la Puglia.",
+      "fonti": [
+       "RFI"
+      ]
+     },
+     {
+      "testo": "Alle 14:30 RFI ha annunciato che la circolazione è tornata regolare. I treni coinvolti hanno avuto ritardi fino a 40 minuti, alcuni hanno fatto un percorso più corto e altri sono stati cancellati. Chi deve partire può controllare i monitor della sua stazione o il sito di RFI.",
+      "fonti": [
+       "RFI"
+      ]
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "31 ottobre, 13:40",
+      "fatto": "Circolazione sospesa tra Caserta e Maddaloni per un guasto tecnico.",
+      "fonti": [
+       "RFI"
+      ]
+     },
+     {
+      "data": "31 ottobre, 14:30",
+      "fatto": "La circolazione torna regolare; ritardi fino a 40 minuti, percorsi accorciati e cancellazioni.",
+      "fonti": [
+       "RFI"
+      ]
+     }
+    ],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Che tipo di guasto c'è stato e quali treni sono stati cancellati."
+    ],
+    "fonti": [
+     {
+      "nome": "RFI",
+      "titolo": "Linea Caserta - Foggia: circolazione tornata regolare dopo un inconveniente tecnico sulla linea",
+      "url": "https://www.rfi.it/content/rfi/it/news-e-media/infomobilita/aggiornamenti/2026/10/31/linea-caserta---foggia--circolazione-sospesa-per-un-inconvenient.html",
+      "data": "31 ott, 14:30",
+      "ufficiale": true
+     }
+    ]
+   },
+   "foto": "treno-9"
+  },
+  {
+   "id": "airola-scuola-padre-pio-palestra-vanvitelli-ritardi-comitato-genitori",
+   "titolo": "Airola, la nuova scuola primaria Padre Pio e la palestra della Vanvitelli non sono pronte: i genitori chiedono date certe",
+   "titolo_google": "Airola, scuola Padre Pio e palestra Vanvitelli in ritardo",
+   "sintesi": "Il Comune di Airola aveva previsto di finire entro giugno 2026 la nuova scuola primaria dell'istituto Padre Pio e la palestra della media Vanvitelli. Gli edifici non sono ancora usabili: il Comitato Genitori ha scritto alla commissaria prefettizia per sapere il perché e avere un nuovo calendario dei lavori.",
+   "categoria": "altro",
+   "immagine": "cantiere",
+   "luogo": "Airola",
+   "zona": "caudina",
+   "pubblicato": "2026-10-31T14:50+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 3,
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/31/scuole-incompiute-ad-airola-il-comitato-genitori-chiede-tempi-certi-gli-studenti-non-possono-piu-aspettare/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/31/scuole-incompiute-ad-airola-il-comitato-genitori-gli-studenti-non-possono-piu-aspettare/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Ad Airola, in Valle Caudina, la nuova scuola primaria dell'istituto comprensivo Padre Pio e la palestra della scuola media Luigi Vanvitelli non sono ancora a disposizione degli studenti. Il Comitato Genitori Airola – Presenza e Ascolto ha scritto a Olimpia Cerrata, la commissaria prefettizia che guida il Comune, e per conoscenza al prefetto di Benevento, per sapere perché i lavori sono in ritardo e cosa si farà per finirli.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Il 10 marzo 2026 l'ufficio Lavori pubblici del Comune aveva indicato le date: la scuola primaria finita entro il 20 giugno, la palestra della Vanvitelli entro il 30 giugno, e gli edifici pronti per l'inizio dell'anno scolastico 2026/2027. Secondo il Comitato quelle scadenze non sono state rispettate.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "I genitori chiedono di sapere le cause tecniche, amministrative o economiche dei ritardi, se ci sono state inadempienze dell'impresa e cosa è stato fatto per tutelare il Comune. Soprattutto chiedono un nuovo calendario dei lavori, con date credibili per la fine e il collaudo (il controllo finale) delle opere. Per la palestra dicono che non è un'opera in più ma uno spazio che serve alle lezioni e allo sport dei ragazzi. «Le famiglie hanno bisogno di risposte, non di ulteriori attese», scrivono.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "testo": "Il Comitato ricorda anche che il 9 settembre 2026 la Prefettura di Benevento aveva già chiesto al Comune una risposta urgente sul nuovo polo scolastico. Il portavoce del Comitato è Raimondo Borriello. Dal 13 ottobre il Comune è guidato da una commissaria prefettizia, nominata dopo la sfiducia al sindaco e alla Giunta.",
+      "fonti": [
+       "BeneventoNews24",
+       "Prefettura"
+      ]
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "10 marzo 2026",
+      "fatto": "L'ufficio Lavori pubblici del Comune indica le date: scuola primaria entro il 20 giugno, palestra entro il 30 giugno.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "data": "9 settembre 2026",
+      "fatto": "La Prefettura chiede al Comune una risposta urgente sul nuovo polo scolastico.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24"
+      ]
+     },
+     {
+      "data": "31 ottobre",
+      "fatto": "Il Comitato Genitori scrive alla commissaria prefettizia e chiede un nuovo calendario dei lavori.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "concordano": [
+     {
+      "testo": "Le date previste dal Comune (20 e 30 giugno 2026) e la richiesta di un nuovo calendario dei lavori.",
+      "fonti": [
+       "NTR24",
+       "BeneventoNews24"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [
+     "Cosa risponde la commissaria prefettizia e quando gli edifici potranno essere usati.",
+     "Perché i lavori sono in ritardo."
+    ],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Scuole incompiute ad Airola, il Comitato Genitori chiede tempi certi: «Gli studenti non possono più aspettare»",
+      "url": "https://www.ntr24.tv/2026/10/31/scuole-incompiute-ad-airola-il-comitato-genitori-chiede-tempi-certi-gli-studenti-non-possono-piu-aspettare/",
+      "data": "31 ott, 14:29"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Scuole incompiute ad Airola, il Comitato Genitori: “Gli studenti non possono più aspettare”",
+      "url": "https://www.beneventonews24.it/2026/10/31/scuole-incompiute-ad-airola-il-comitato-genitori-gli-studenti-non-possono-piu-aspettare/",
+      "data": "31 ott, 14:50"
+     },
+     {
+      "nome": "Prefettura",
+      "titolo": "Nomina Commissario Prefettizio per il Comune di Airola",
+      "url": "https://prefettura.interno.gov.it/it/prefetture/benevento/notizie/nomina-commissario-prefettizio-comune-airola",
+      "data": "13 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "foto": "cantiere-8"
+  },
   {
    "id": "cremonese-benevento-formazioni-ufficiali-31-ottobre",
    "titolo": "Serie B, Cremonese-Benevento: le formazioni ufficiali",
@@ -23,6 +209,14 @@
      "nome": "Benevento Calcio",
      "url": "https://www.beneventocalcio.club/news/notizie/7687/serie-bkt-2026-2027-cremonese-benevento-le-formazioni-ufficiali.shtml",
      "ufficiale": true
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/31/cremonese-benevento-le-formazioni-ufficiali-out-scognamillo-romano-e-mignani-dal-1/"
+    },
+    {
+     "nome": "Cronache del Sannio",
+     "url": "https://www.cronachedelsannio.it/sannionews24/cremonese-benevento-formazioni-ufficiali/"
     }
    ],
    "articolo": {
@@ -36,19 +230,25 @@
      {
       "testo": "Gli undici del Benevento: in porta Vannucchi, poi Prisco, Siatounis, Maita, Lamesta, Dalle Mura, Sernicola, Saio, Romano, Okereke e Mignani.",
       "fonti": [
-       "Benevento Calcio"
+       "Benevento Calcio",
+       "BeneventoNews24",
+       "Cronache del Sannio"
       ]
      },
      {
       "testo": "In panchina per il Benevento ci sono Esposito, Caldirola, Salvemini, Cherubini, Scognamillo, Mannini, Simonetti, Beruatto, Schimmenti, Talia, Verdi e Tumminello.",
       "fonti": [
-       "Benevento Calcio"
+       "Benevento Calcio",
+       "BeneventoNews24",
+       "Cronache del Sannio"
       ]
      },
      {
       "testo": "La Cremonese risponde con Fulignati in porta, poi Thorsby, Pezzella, Luperto, Baschirotto, Lottici Tessadri, Berti, Lordkipanidze, Vandeputte, Elia e Bonazzoli. A disposizione Festa, Agazzi, Stuckler, De Luca, Licina, Djuric, Ozillo Moreira, Lickunas, Collocolo, Nasti, Marsi e Grassi.",
       "fonti": [
-       "Benevento Calcio"
+       "Benevento Calcio",
+       "BeneventoNews24",
+       "Cronache del Sannio"
       ]
      }
     ],
@@ -63,6 +263,18 @@
       "url": "https://www.beneventocalcio.club/news/notizie/7687/serie-bkt-2026-2027-cremonese-benevento-le-formazioni-ufficiali.shtml",
       "data": "31 ott, 14:00",
       "ufficiale": true
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Cremonese-Benevento, le formazioni ufficiali: out Scognamillo, Romano e Mignani dal 1′",
+      "url": "https://www.beneventonews24.it/2026/10/31/cremonese-benevento-le-formazioni-ufficiali-out-scognamillo-romano-e-mignani-dal-1/",
+      "data": "31 ott, 14:02"
+     },
+     {
+      "nome": "Cronache del Sannio",
+      "titolo": "Cremonese-Benevento: le formazioni ufficiali",
+      "url": "https://www.cronachedelsannio.it/sannionews24/cremonese-benevento-formazioni-ufficiali/",
+      "data": "31 ott, 14:07"
      }
     ]
    },
@@ -78,7 +290,7 @@
    "categoria": "cultura",
    "luogo": "Benevento, Palazzo Arcivescovile, piazza Orsini",
    "pubblicato": "2026-10-31T13:53+01:00",
-   "stato": "una_fonte",
+   "stato": "confermata",
    "rilevante": false,
    "importanza": 2,
    "immagine": "universita",
@@ -86,6 +298,10 @@
     {
      "nome": "TV7 Benevento",
      "url": "https://www.tvsette.net/benevento-lissr-san-giuseppe-moscati-inaugura-lanno-accademico-lectio-magistralis-di-mons-stagliano/"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/31/listituto-superiore-di-scienze-religiose-san-giuseppe-moscati-di-benevento-inaugura-lanno-accademico/"
     }
    ],
    "articolo": {
@@ -93,24 +309,35 @@
      {
       "testo": "L'Istituto Superiore di Scienze Religiose «San Giuseppe Moscati» di Benevento, la scuola di teologia dell'Arcidiocesi, inaugura l'anno accademico 2026/2027 martedì 10 novembre alle 17. La cerimonia si tiene nel Salone Leone XIII del Palazzo Arcivescovile, in piazza Orsini, ed è aperta a tutti.",
       "fonti": [
-       "TV7 Benevento"
+       "TV7 Benevento",
+       "NTR24"
       ]
      },
      {
       "testo": "La lezione inaugurale la tiene monsignor Antonio Staglianò, vescovo emerito di Noto, presidente della Pontificia Accademia di Teologia dal 2022 e consultore del Dicastero per la Dottrina della Fede. Il titolo è «Comunicare ed educare alla fede oggi: POP theology come disciplina scientifica»: si parla di come la teologia può dialogare con la musica, l'arte, i media e la cultura popolare per arrivare anche ai più giovani.",
       "fonti": [
-       "TV7 Benevento"
+       "TV7 Benevento",
+       "NTR24"
       ]
      },
      {
       "testo": "Apre l'incontro il saluto dell'arcivescovo di Benevento, monsignor Michele Autuoro, che guida l'Istituto come moderatore; poi il direttore, il professor Giovanni Tagliaferro, introduce la lezione. Alla fine vengono consegnate le pergamene di Baccalaureato e Licenza in Scienze Religiose agli studenti che hanno finito gli studi nell'anno accademico 2025/2026.",
       "fonti": [
-       "TV7 Benevento"
+       "TV7 Benevento",
+       "NTR24"
       ]
      }
     ],
     "cronologia": [],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "Data, ora e luogo (martedì 10 novembre alle 17, Salone Leone XIII del Palazzo Arcivescovile) e la lezione di monsignor Staglianò.",
+      "fonti": [
+       "TV7 Benevento",
+       "NTR24"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [],
     "fonti": [
@@ -119,6 +346,12 @@
       "titolo": "Benevento, l’ISSR “San Giuseppe Moscati” inaugura l’Anno Accademico: lectio magistralis di Mons. Staglianò",
       "url": "https://www.tvsette.net/benevento-lissr-san-giuseppe-moscati-inaugura-lanno-accademico-lectio-magistralis-di-mons-stagliano/",
       "data": "31 ott, 13:53"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "L’Istituto Superiore di Scienze Religiose “San Giuseppe Moscati” di Benevento inaugura l’Anno Accademico",
+      "url": "https://www.ntr24.tv/2026/10/31/listituto-superiore-di-scienze-religiose-san-giuseppe-moscati-di-benevento-inaugura-lanno-accademico/",
+      "data": "31 ott, 14:09"
      }
     ]
    },
@@ -14804,7 +15037,7 @@
    "titolo_google": "Sfiducia a Mastella a Benevento: a che punto è la mozione",
    "sommario": "Il 22 ottobre l'opposizione del Consiglio comunale di Benevento ha presentato una mozione di sfiducia contro il sindaco Clemente Mastella e la Giunta, con un dossier di 24 punti che parte dall'inchiesta giudiziaria sul Comune. Domenica 25 ha sfilato in corteo fino alla Prefettura. Il sindaco dice che non si dimette e la maggioranza parla di poche centinaia di persone in piazza. La data del voto in Consiglio non è ancora stata fissata.",
    "luogo": "Benevento",
-   "aggiornato": "2026-10-31T13:00+01:00",
+   "aggiornato": "2026-10-31T15:00+01:00",
    "collegate": [
     "benevento-opposizione-mozione-sfiducia-mastella"
    ],
@@ -14969,6 +15202,12 @@
         "NTR24 (30/10, De Stasio)",
         "Cronache del Sannio (30/10, De Stasio)"
        ]
+      },
+      {
+       "testo": "Secondo NTR24, all'incontro organizzato dall'associazione «Cittadino Sudd» di Del Basso De Caro c'erano anche Luigi Abbate e Nicola Boccalone, che si muovono per una candidatura a sindaco, rappresentanti di Civico 22, Vincenzo Sguera ed esponenti del Pd cittadino; non c'erano Angelo Moretti, Luigi Diego Perifano, i rappresentanti di Avs, il Movimento 5 Stelle e i partiti del centrodestra di governo. Per NTR24 i due ex parlamentari hanno messo le basi di una coalizione contro Mastella e contro chi sarà candidato a suo nome, e non hanno escluso le primarie per scegliere il candidato sindaco.",
+       "fonti": [
+        "NTR24 (31/10, De Caro-Viespoli)"
+       ]
       }
      ]
     },
@@ -15100,6 +15339,13 @@
      "fonti": [
       "Il Sannio Quotidiano (30/10)",
       "InfoSannio (30/10)"
+     ]
+    },
+    {
+     "data": "31 ottobre",
+     "fatto": "Secondo NTR24, all'incontro di Del Basso De Caro e Viespoli ci sono possibili candidati sindaco ed esponenti del Pd; si parla di primarie per una coalizione contro Mastella.",
+     "fonti": [
+      "NTR24 (31/10, De Caro-Viespoli)"
      ]
     }
    ],
@@ -15233,6 +15479,12 @@
      "titolo": "Ospedale di Sant’Agata, il TAR ordina la riapertura h24 del Pronto soccorso. Forza Italia: «Ora risposte concrete»",
      "url": "https://www.ntr24.tv/2026/10/31/ospedale-di-santagata-il-tar-ordina-la-riapertura-h24-del-pronto-soccorso-forza-italia-ora-risposte-concrete/",
      "data": "31 ott, 12:52"
+    },
+    {
+     "nome": "NTR24 (31/10, De Caro-Viespoli)",
+     "titolo": "De Caro-Viespoli, nasce a Benevento la ‘Grosse Koalition’ anti-Mastella",
+     "url": "https://www.ntr24.tv/2026/10/31/de-caro-viespoli-nasce-a-benevento-la-grosse-koalition-anti-mastella/",
+     "data": "31 ott, 14:02"
     }
    ],
    "scena": "The council chamber of the city hall of Benevento during a tense evening session: councillors seated at curved wooden benches with microphones, some standing and arguing with papers in hand, citizens crowding the public gallery, warm light from old chandeliers, a sense of political confrontation"
