@@ -1,21 +1,38 @@
 {
- "aggiornato": "2026-10-31T16:03+01:00",
+ "aggiornato": "2026-10-31T17:06+01:00",
  "giornali_letti": 14,
  "notizie": [
   {
    "id": "cremonese-benevento-2-0-31-ottobre",
    "titolo": "Serie B, Cremonese-Benevento 2-0: reti di Berti e Nasti",
-   "titolo_google": "Serie B: Cremonese-Benevento 2-0, il Benevento resta a 15 punti",
-   "sintesi": "Sabato 31 ottobre il Benevento ha perso 0-2 sul campo della Cremonese, nella decima giornata di Serie B. Gol di Berti (44') e Nasti (87'). Il Benevento resta a 15 punti.",
+   "titolo_google": "Serie B, Cremonese-Benevento 2-0: perde il Benevento",
+   "sintesi": "Sabato 31 ottobre il Benevento ha perso 2-0 sul campo della Cremonese, nella decima giornata di Serie B, dopo sei partite senza sconfitte. Hanno segnato Berti al 44' e Nasti all'87', tutti e due approfittando di errori della difesa giallorossa. Il Benevento resta a 15 punti.",
    "categoria": "sport",
    "sport": "calcio",
    "zona": "benevento",
    "luogo": "Stadio Giovanni Zini",
    "pubblicato": "2026-10-31T16:53:53+01:00",
-   "stato": "una_fonte",
+   "stato": "ufficiale",
    "rilevante": false,
    "diretta_calcio": "401899566",
    "fonti": [
+    {
+     "nome": "Benevento Calcio",
+     "url": "https://www.beneventocalcio.club/news/notizie/7688/serie-bkt-2026-2027-cremonese-benevento-2-0-il-tabellino-della-gara.shtml",
+     "ufficiale": true
+    },
+    {
+     "nome": "NTR24 Sport",
+     "url": "https://sport.ntr24.tv/2026/10/31/benevento-beffa-allo-zini-due-errori-fatali-spianano-la-strada-alla-cremonese-la-strega-cade-2-0/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/31/cremonese-benevento-1-0-allintervallo-berti-punisce-sullerrore-di-mignani/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/live-cremonese-benevento-la-diretta-testuale/"
+    },
     {
      "nome": "ESPN",
      "url": "https://www.espn.com/soccer/match/_/gameId/401899566"
@@ -24,16 +41,44 @@
    "articolo": {
     "racconto": [
      {
-      "testo": "Sabato 31 ottobre allo stadio Giovanni Zini il Benevento ha perso 0-2 sul campo della Cremonese, nella decima giornata di Serie B. Resta a 15 punti.",
+      "testo": "Sabato 31 ottobre allo stadio Giovanni Zini di Cremona il Benevento ha perso 2-0 contro la Cremonese, nella decima giornata di Serie B. È la prima sconfitta dopo sei partite di fila senza perdere. I giallorossi restano a 15 punti.",
       "fonti": [
-       "ESPN"
+       "ESPN",
+       "Benevento Calcio",
+       "BeneventoNews24"
       ],
       "giorno": "2026-10-31"
      },
      {
-      "testo": "Il primo tempo è finito 1-0. La Cremonese passa al 44' con Berti e raddoppia all'87' con Nasti.",
+      "testo": "I due gol sono nati da errori della difesa del Benevento. Al 44' un retropassaggio sbagliato di Mignani è finito a Bonazzoli, che ha servito Berti solo davanti a Vannucchi: 1-0 all'intervallo. All'87' Nasti, entrato nel secondo tempo, ha approfittato di un colpo di testa mancato da Beruatto ed è andato a segnare il 2-0.",
       "fonti": [
-       "ESPN"
+       "NTR24 Sport",
+       "Anteprima24",
+       "Benevento Calcio"
+      ],
+      "giorno": "2026-10-31"
+     },
+     {
+      "testo": "La partita era cominciata con un'occasione per il Benevento: al 2' un colpo di testa di Siatounis su cross di Sernicola, respinto da Fulignati, con Lamesta impreciso sulla ribattuta. Poi la Cremonese ha avuto diverse occasioni, la più grande poco dopo il 20': Bonazzoli solo davanti a Vannucchi, che ha respinto.",
+      "fonti": [
+       "NTR24 Sport",
+       "BeneventoNews24"
+      ],
+      "giorno": "2026-10-31"
+     },
+     {
+      "testo": "All'intervallo l'allenatore Antonio Floro Flores ha cambiato tre giocatori: sono entrati Salvemini, Cherubini e Beruatto al posto di Mignani, Lamesta e Romano. Nel secondo tempo è entrato anche Simone Verdi, che tornava in campo dopo un infortunio. Il Benevento ha spinto per il pareggio: Baschirotto ha salvato quasi sulla linea una girata di Sernicola.",
+      "fonti": [
+       "NTR24 Sport",
+       "Anteprima24",
+       "Benevento Calcio"
+      ],
+      "giorno": "2026-10-31"
+     },
+     {
+      "testo": "Il Benevento ha giocato con Vannucchi; Prisco, Siatounis (dal 63' Verdi), Maita, Lamesta (dal 46' Cherubini), Dalle Mura, Sernicola, Saio, Romano (dal 46' Beruatto), Okereke (dall'83' Schimmenti), Mignani (dal 46' Salvemini). Ammoniti Romano e Maita del Benevento e Licina della Cremonese. Ha arbitrato Livio Marinelli di Tivoli.",
+      "fonti": [
+       "Benevento Calcio"
       ],
       "giorno": "2026-10-31"
      },
@@ -68,12 +113,68 @@
       ]
      }
     ],
-    "concordano": [],
-    "divergono": [],
+    "concordano": [
+     {
+      "testo": "Il risultato, 2-0 per la Cremonese, e i gol di Berti al 44' e di Nasti all'87'.",
+      "fonti": [
+       "ESPN",
+       "Benevento Calcio",
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Il primo gol nasce da un retropassaggio sbagliato di Mignani, il secondo da un errore di Beruatto.",
+      "fonti": [
+       "NTR24 Sport",
+       "Anteprima24"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "Il cambio tra Siatounis e Verdi: al 63' nel tabellino del Benevento Calcio, al 65' nella diretta di Anteprima24. Vale il tabellino.",
+      "fonti": [
+       "Benevento Calcio",
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "Anteprima24 scrive che all'89' è stato ammonito anche Verdi; il tabellino del club tra gli ammoniti del Benevento mette solo Romano e Maita.",
+      "fonti": [
+       "Anteprima24",
+       "Benevento Calcio"
+      ]
+     }
+    ],
     "non_si_sa": [
      "Il commento dell'allenatore e dei giocatori: arriva con le interviste del dopo partita."
     ],
     "fonti": [
+     {
+      "nome": "Benevento Calcio",
+      "titolo": "SERIE BKT 2026-2027: CREMONESE-BENEVENTO 2-0 IL TABELLINO DELLA GARA",
+      "url": "https://www.beneventocalcio.club/news/notizie/7688/serie-bkt-2026-2027-cremonese-benevento-2-0-il-tabellino-della-gara.shtml",
+      "data": "31 ott, 16:54",
+      "ufficiale": true
+     },
+     {
+      "nome": "NTR24 Sport",
+      "titolo": "Benevento, beffa allo Zini: due errori fatali spianano la strada alla Cremonese. La Strega cade 2-0",
+      "url": "https://sport.ntr24.tv/2026/10/31/benevento-beffa-allo-zini-due-errori-fatali-spianano-la-strada-alla-cremonese-la-strega-cade-2-0/",
+      "data": "31 ott, 16:59"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Cremonese-Benevento 2-0: niente dolcetto per la Strega, primo ko dopo sei gare",
+      "url": "https://www.beneventonews24.it/2026/10/31/cremonese-benevento-1-0-allintervallo-berti-punisce-sullerrore-di-mignani/",
+      "data": "31 ott, 15:49"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Cremonese-Benevento 2-0, la Strega si fa male da sola con due errori da matita rossa",
+      "url": "https://www.anteprima24.it/benevento/live-cremonese-benevento-la-diretta-testuale/",
+      "data": "31 ott, 14:36"
+     },
      {
       "nome": "ESPN",
       "titolo": "Cremonese 2-0 Benevento: tabellino e statistiche",
@@ -84,6 +185,7 @@
    },
    "immagine": "calcio",
    "foto": "calcio-10",
+   "importanza": 5,
    "subito": true,
    "comunicati": [
     "ub75a6c64598"
@@ -175,6 +277,18 @@
      "nome": "Comune di Benevento",
      "url": "https://www.comune.benevento.it/",
      "ufficiale": true
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/31/benevento-riscaldamenti-accesi-in-anticipo-ordinanza-del-sindaco-mastella-dal-primo-al-14-novembre/"
+    },
+    {
+     "nome": "Benevento Giornale",
+     "url": "https://www.beneventogiornale.com/2026/10/31/accensione-anticipata-dei-termosifoni-ce-lordinanza/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/attualita/442725/accensione-anticipata-dei-termosifoni-c-e-l-ordinanza-del-comune-di-benevento.shtml"
     }
    ],
    "articolo": {
@@ -182,26 +296,41 @@
      {
       "testo": "A Benevento i termosifoni si possono accendere prima del solito: da domenica 1° novembre a sabato 14 novembre compreso, in tutto il territorio comunale, è consentito far funzionare gli impianti di riscaldamento alimentati a gas naturale. Lo ha deciso il sindaco Clemente Mastella con un'ordinanza.",
       "fonti": [
-       "Comune di Benevento"
-      ]
+       "Comune di Benevento",
+       "NTR24",
+       "Ottopagine",
+       "Benevento Giornale"
+      ],
+      "giorno": "2026-10-31"
      },
      {
       "testo": "L'accensione è facoltativa, non obbligatoria. Il riscaldamento può restare acceso al massimo 5 ore al giorno in tutto, solo tra le 5 del mattino e le 23. Le 5 ore si possono dividere in più momenti della giornata, purché insieme non superino il limite.",
       "fonti": [
-       "Comune di Benevento"
-      ]
+       "Comune di Benevento",
+       "NTR24",
+       "Ottopagine",
+       "Benevento Giornale"
+      ],
+      "giorno": "2026-10-31"
      },
      {
       "testo": "Restano i limiti di temperatura dentro casa e negli edifici fissati dalla legge nazionale (articolo 3 del D.P.R. 74/2013): 18 gradi, con 2 gradi di tolleranza, negli edifici usati per attività industriali, artigianali e simili; 20 gradi, sempre con 2 gradi di tolleranza, in tutti gli altri edifici. Valgono anche le eccezioni che la legge già prevede per alcuni tipi di edifici e di impianti.",
       "fonti": [
-       "Comune di Benevento"
-      ]
+       "Comune di Benevento",
+       "NTR24",
+       "Ottopagine",
+       "Benevento Giornale"
+      ],
+      "giorno": "2026-10-31"
      },
      {
       "testo": "Il Comune spiega che i bollettini meteo prevedono un forte calo delle temperature, soprattutto al mattino presto e la sera. L'ordinanza, che vale in via temporanea, serve anche a tutelare il benessere della popolazione, con un'attenzione particolare per le persone più fragili.",
       "fonti": [
-       "Comune di Benevento"
-      ]
+       "Comune di Benevento",
+       "NTR24",
+       "Ottopagine"
+      ],
+      "giorno": "2026-10-31"
      }
     ],
     "cronologia": [],
@@ -215,6 +344,24 @@
       "url": "https://www.comune.benevento.it/",
       "data": "31 ott, 15:51",
       "ufficiale": true
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Benevento, riscaldamenti accesi in anticipo: ordinanza del sindaco Mastella dal primo al 14 novembre",
+      "url": "https://www.ntr24.tv/2026/10/31/benevento-riscaldamenti-accesi-in-anticipo-ordinanza-del-sindaco-mastella-dal-primo-al-14-novembre/",
+      "data": "31 ott, 16:00"
+     },
+     {
+      "nome": "Benevento Giornale",
+      "titolo": "Accensione anticipata dei termosifoni, c’è l’ordinanza",
+      "url": "https://www.beneventogiornale.com/2026/10/31/accensione-anticipata-dei-termosifoni-ce-lordinanza/",
+      "data": "31 ott, 16:11"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Accensione anticipata dei termosifoni, c'è l'ordinanza del Comune di Benevento",
+      "url": "https://www.ottopagine.it/bn/attualita/442725/accensione-anticipata-dei-termosifoni-c-e-l-ordinanza-del-comune-di-benevento.shtml",
+      "data": "31 ott, 16:51"
      }
     ]
    },
@@ -522,6 +669,10 @@
     {
      "nome": "NTR24",
      "url": "https://www.ntr24.tv/2026/10/31/listituto-superiore-di-scienze-religiose-san-giuseppe-moscati-di-benevento-inaugura-lanno-accademico/"
+    },
+    {
+     "nome": "Benevento Giornale",
+     "url": "https://www.beneventogiornale.com/2026/10/31/listituto-superiore-di-scienze-religiose-san-giuseppe-moscati-di-benevento-inaugura-lanno-accademico-2026-2027/"
     }
    ],
    "articolo": {
@@ -530,22 +681,27 @@
       "testo": "L'Istituto Superiore di Scienze Religiose «San Giuseppe Moscati» di Benevento, la scuola di teologia dell'Arcidiocesi, inaugura l'anno accademico 2026/2027 martedì 10 novembre alle 17. La cerimonia si tiene nel Salone Leone XIII del Palazzo Arcivescovile, in piazza Orsini, ed è aperta a tutti.",
       "fonti": [
        "TV7 Benevento",
-       "NTR24"
-      ]
+       "NTR24",
+       "Benevento Giornale"
+      ],
+      "giorno": "2026-10-31"
      },
      {
       "testo": "La lezione inaugurale la tiene monsignor Antonio Staglianò, vescovo emerito di Noto, presidente della Pontificia Accademia di Teologia dal 2022 e consultore del Dicastero per la Dottrina della Fede. Il titolo è «Comunicare ed educare alla fede oggi: POP theology come disciplina scientifica»: si parla di come la teologia può dialogare con la musica, l'arte, i media e la cultura popolare per arrivare anche ai più giovani.",
       "fonti": [
        "TV7 Benevento",
-       "NTR24"
-      ]
+       "NTR24",
+       "Benevento Giornale"
+      ],
+      "giorno": "2026-10-31"
      },
      {
       "testo": "Apre l'incontro il saluto dell'arcivescovo di Benevento, monsignor Michele Autuoro, che guida l'Istituto come moderatore; poi il direttore, il professor Giovanni Tagliaferro, introduce la lezione. Alla fine vengono consegnate le pergamene di Baccalaureato e Licenza in Scienze Religiose agli studenti che hanno finito gli studi nell'anno accademico 2025/2026.",
       "fonti": [
        "TV7 Benevento",
        "NTR24"
-      ]
+      ],
+      "giorno": "2026-10-31"
      }
     ],
     "cronologia": [],
@@ -572,6 +728,12 @@
       "titolo": "L’Istituto Superiore di Scienze Religiose “San Giuseppe Moscati” di Benevento inaugura l’Anno Accademico",
       "url": "https://www.ntr24.tv/2026/10/31/listituto-superiore-di-scienze-religiose-san-giuseppe-moscati-di-benevento-inaugura-lanno-accademico/",
       "data": "31 ott, 14:09"
+     },
+     {
+      "nome": "Benevento Giornale",
+      "titolo": "L’Istituto Superiore di Scienze Religiose “San Giuseppe Moscati” di Benevento inaugura l’Anno Accademico 2026/2027",
+      "url": "https://www.beneventogiornale.com/2026/10/31/listituto-superiore-di-scienze-religiose-san-giuseppe-moscati-di-benevento-inaugura-lanno-accademico-2026-2027/",
+      "data": "31 ott, 16:16"
      }
     ]
    },
@@ -8533,8 +8695,8 @@
      "url": "https://www.cronachedelsannio.it/sannionews24/benevento-sale-della-terra-evento-piazza-roma/"
     },
     {
-     "nome": "Ottopagine",
-     "url": "https://www.ottopagine.it/bn/attualita/442532/benevento-dopo-episodi-di-violenza-manifestazione-in-piazza-roma.shtml"
+     "nome": "Ottopagine (31/10)",
+     "url": "https://www.ottopagine.it/bn/attualita/442719/controlli-e-dialogo-contro-episodi-violenti-e-per-il-rispetto-delle-regole-video.shtml"
     },
     {
      "nome": "Benevento Giornale",
@@ -8561,6 +8723,20 @@
       "testo": "Moretti ha detto che la paura dei genitori per i figli è giusta («Essere impauriti per i propri figli è una cosa sana») e che una città di circa 57mila abitanti può permettersi di incontrarsi in piazza invece di discutere solo sui social. Il suo invito: «Incontriamoci, parliamo, conosciamo meglio le nostre paure e facciamo in modo che la sicurezza non sia una rabbia verso lo straniero, ma un modo per viverci meglio la città».",
       "fonti": [
        "NTR24 (30/10)"
+      ],
+      "giorno": "2026-10-30"
+     },
+     {
+      "testo": "In piazza c'erano anche dei giovani stranieri, soprattutto egiziani. Moretti ne ha invitati alcuni, che stavano nella zona, a parlare con i genitori presenti: qualcuno ha accettato, altri hanno continuato a girare in bici elettrica lungo il Corso, dove è vietato. Molti di quelli che si sono fermati a parlare lavorano: chi nel cantiere della stazione, chi in un'azienda della Valle Caudina, chi impara a fare il fabbro.",
+      "fonti": [
+       "Ottopagine (31/10)"
+      ],
+      "giorno": "2026-10-30"
+     },
+     {
+      "testo": "I genitori hanno chiesto più sicurezza in centro. Un padre ha detto che i figli non riescono più a frequentare la zona tra via Annunziata, piazza Roma e i vicoli del Corso, e ha chiesto che il presidio delle forze dell'ordine e della Polizia Municipale stia in piazza Roma e non in piazza Santa Sofia. Moretti ha ripetuto che «la rabbia è qualcosa di sbagliato, la paura è giusta e va affrontata con il dialogo».",
+      "fonti": [
+       "Ottopagine (31/10)"
       ],
       "giorno": "2026-10-30"
      },
@@ -8620,6 +8796,13 @@
        "BeneventoNews24",
        "Gazzetta di Benevento"
       ]
+     },
+     {
+      "testo": "Le parole di Angelo Moretti sul problema della droga, di cui si parla poco.",
+      "fonti": [
+       "NTR24 (30/10)",
+       "Ottopagine (31/10)"
+      ]
      }
     ],
     "divergono": [],
@@ -8672,6 +8855,12 @@
       "titolo": "Piazza Roma, Sale della Terra si mobilita contro violenza e razzismo: «La sicurezza si costruisce insieme»",
       "url": "https://www.ntr24.tv/2026/10/30/piazza-roma-sale-della-terra-si-mobilita-contro-violenza-e-razzismo-la-sicurezza-si-costruisce-insieme/",
       "data": "30 ott, 21:41"
+     },
+     {
+      "nome": "Ottopagine (31/10)",
+      "titolo": "Controlli e dialogo contro episodi violenti e per il rispetto delle regole VIDEO",
+      "url": "https://www.ottopagine.it/bn/attualita/442719/controlli-e-dialogo-contro-episodi-violenti-e-per-il-rispetto-delle-regole-video.shtml",
+      "data": "31 ott, 16:20"
      }
     ],
     "aggiornamento": {
@@ -15257,7 +15446,7 @@
    "titolo_google": "Sfiducia a Mastella a Benevento: a che punto è la mozione",
    "sommario": "Il 22 ottobre l'opposizione del Consiglio comunale di Benevento ha presentato una mozione di sfiducia contro il sindaco Clemente Mastella e la Giunta, con un dossier di 24 punti che parte dall'inchiesta giudiziaria sul Comune. Domenica 25 ha sfilato in corteo fino alla Prefettura. Il sindaco dice che non si dimette e la maggioranza parla di poche centinaia di persone in piazza. La data del voto in Consiglio non è ancora stata fissata.",
    "luogo": "Benevento",
-   "aggiornato": "2026-10-31T15:00+01:00",
+   "aggiornato": "2026-10-31T17:00+01:00",
    "collegate": [
     "benevento-opposizione-mozione-sfiducia-mastella"
    ],
@@ -15290,11 +15479,13 @@
      ]
     },
     {
-     "testo": "Il 31 ottobre Umberto Del Basso De Caro e Pasquale Viespoli hanno aperto a un percorso comune per le comunali del 2027, con un programma e una coalizione; Forza Italia lavora a una candidatura civica.",
+     "testo": "Il 31 ottobre Umberto Del Basso De Caro e Pasquale Viespoli hanno aperto a un percorso comune per le comunali del 2027, con un programma e una coalizione; Forza Italia lavora a una candidatura civica. Mastella ha risposto che i due «hanno governato alternativamente» la città dal 1993 al 2016 e che lui ne ha risanato i conti.",
      "fonti": [
       "Ottopagine (31/10, Del Basso De Caro e Viespoli)",
       "Cronache del Sannio (31/10, Del Basso De Caro e Viespoli)",
-      "NTR24 (31/10, Forza Italia)"
+      "NTR24 (31/10, Forza Italia)",
+      "NTR24 (31/10, Mastella)",
+      "Ottopagine (31/10, Mastella)"
      ]
     }
    ],
@@ -15379,6 +15570,13 @@
        "fonti": [
         "Ottopagine (28/10, NdC)",
         "NTR24 (28/10, NdC)"
+       ]
+      },
+      {
+       "testo": "Sabato 31, nel pomeriggio, Mastella ha risposto all'incontro di Del Basso De Caro e Viespoli: ha parlato di un «tentativo, goffo in verità, di revanscismo» e di «un testacoda destra-sinistra», e ha detto di non volersi attardare in polemiche «con chi ha scarso, minimo consenso». Ha ricordato che i due hanno governato la città, a turno, dal 1993 al 2016, e ha elencato quello che secondo lui ha cambiato: i teatri riaperti, il depuratore che «si farà», il parco intitolato a De Mita, il parcheggio di Porta Rufina, i bus cittadini, piazza Risorgimento, la facoltà di Medicina. Sui conti dice di aver ereditato un «buco» di circa 100 milioni di euro e di averlo risanato.",
+       "fonti": [
+        "NTR24 (31/10, Mastella)",
+        "Ottopagine (31/10, Mastella)"
        ]
       }
      ]
@@ -15567,6 +15765,14 @@
      "fonti": [
       "NTR24 (31/10, De Caro-Viespoli)"
      ]
+    },
+    {
+     "data": "31 ottobre, pomeriggio",
+     "fatto": "Mastella risponde a Del Basso De Caro e Viespoli: «De minimis non curat praetor»; dice che hanno lasciato una città in difficoltà e che lui l'ha risanata.",
+     "fonti": [
+      "NTR24 (31/10, Mastella)",
+      "Ottopagine (31/10, Mastella)"
+     ]
     }
    ],
    "non_si_sa": [
@@ -15705,6 +15911,18 @@
      "titolo": "De Caro-Viespoli, nasce a Benevento la ‘Grosse Koalition’ anti-Mastella",
      "url": "https://www.ntr24.tv/2026/10/31/de-caro-viespoli-nasce-a-benevento-la-grosse-koalition-anti-mastella/",
      "data": "31 ott, 14:02"
+    },
+    {
+     "nome": "NTR24 (31/10, Mastella)",
+     "titolo": "Mastella affonda l’alleanza De Caro-Viespoli: «Hanno lasciato macerie, noi abbiamo cambiato Benevento»",
+     "url": "https://www.ntr24.tv/2026/10/31/mastella-affonda-lalleanza-de-caro-viespoli-hanno-lasciato-macerie-noi-abbiamo-cambiato-benevento/",
+     "data": "31 ott, 16:40"
+    },
+    {
+     "nome": "Ottopagine (31/10, Mastella)",
+     "titolo": "Mastella su incontro Del Basso De Caro e Viespoli: De minimis non curat praetor",
+     "url": "https://www.ottopagine.it/bn/politica/442724/mastella-su-incontro-del-basso-de-caro-e-viespoli-de-minimis-non-curat-praetor.shtml",
+     "data": "31 ott, 16:48"
     }
    ],
    "scena": "The council chamber of the city hall of Benevento during a tense evening session: councillors seated at curved wooden benches with microphones, some standing and arguing with papers in hand, citizens crowding the public gallery, warm light from old chandeliers, a sense of political confrontation"
