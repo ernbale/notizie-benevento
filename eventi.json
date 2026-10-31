@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-31T11:00+01:00",
+ "aggiornato": "2026-10-31T14:00+01:00",
  "eventi": [
   {
    "id": "mostra-cosmogonie-meact-torrecuso-2026",
@@ -2397,7 +2397,8 @@
      "testo": "Ci sono più di 35 espositori, luminarie, mercatini e cibo di strada, la Casa di Babbo Natale e gli incontri con il Grinch. In programma spettacoli di magia e illusionismo (Otto Panzer, Scorpion, Lady Crystal), street band e artisti di strada, gospel ogni domenica e l'8 dicembre, il laboratorio dei biscotti e giostre per bambini. Novità 2026, incluse nel biglietto: «Il Mondo delle Fiabe», area ispirata ad Alice nel Paese delle Meraviglie, principesse e draghi, e «Lo Specchio Magico del Natale», esperienza interattiva per i più piccoli con Mastro Folletto.",
      "fonti": [
       "Parco del Grassano",
-      "NTR24"
+      "NTR24",
+      "TV7 Benevento"
      ]
     },
     {
@@ -2431,6 +2432,12 @@
      "titolo": "San Salvatore Telesino, al Parco del Grassano torna il Natale delle Fiabe: dal 21 novembre la magia della IV edizione",
      "url": "https://www.ntr24.tv/2026/10/31/san-salvatore-telesino-al-parco-del-grassano-torna-il-natale-delle-fiabe-dal-21-novembre-la-magia-della-iv-edizione/",
      "data": "31 ott, 11:58"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "titolo": "Al Parco del Grassano torna il Natale delle Fiabe: dal 21 novembre la magia della IV edizione",
+     "url": "https://www.tvsette.net/al-parco-del-grassano-torna-il-natale-delle-fiabe-dal-21-novembre-la-magia-della-iv-edizione/",
+     "data": "31 ott, 13:44"
     }
    ],
    "immagine": "casa-babbo-natale",

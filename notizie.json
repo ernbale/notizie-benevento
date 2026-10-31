@@ -1,7 +1,62 @@
 {
- "aggiornato": "2026-10-31T13:04+01:00",
+ "aggiornato": "2026-10-31T14:04+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "benevento-issr-moscati-anno-accademico-2026-2027-stagliano",
+   "titolo": "Benevento, l'Istituto di Scienze Religiose «San Giuseppe Moscati» apre l'anno accademico il 10 novembre con monsignor Staglianò",
+   "titolo_google": "ISSR Moscati Benevento, anno accademico al via il 10 novembre",
+   "sintesi": "Martedì 10 novembre alle 17, nel Salone Leone XIII del Palazzo Arcivescovile di piazza Orsini, l'Istituto Superiore di Scienze Religiose «San Giuseppe Moscati» inaugura l'anno accademico 2026/2027. La lezione inaugurale è di monsignor Antonio Staglianò, presidente della Pontificia Accademia di Teologia. L'ingresso è aperto a tutti.",
+   "categoria": "cultura",
+   "luogo": "Benevento, Palazzo Arcivescovile, piazza Orsini",
+   "pubblicato": "2026-10-31T13:53+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 2,
+   "immagine": "universita",
+   "fonti": [
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/benevento-lissr-san-giuseppe-moscati-inaugura-lanno-accademico-lectio-magistralis-di-mons-stagliano/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "L'Istituto Superiore di Scienze Religiose «San Giuseppe Moscati» di Benevento, la scuola di teologia dell'Arcidiocesi, inaugura l'anno accademico 2026/2027 martedì 10 novembre alle 17. La cerimonia si tiene nel Salone Leone XIII del Palazzo Arcivescovile, in piazza Orsini, ed è aperta a tutti.",
+      "fonti": [
+       "TV7 Benevento"
+      ]
+     },
+     {
+      "testo": "La lezione inaugurale la tiene monsignor Antonio Staglianò, vescovo emerito di Noto, presidente della Pontificia Accademia di Teologia dal 2022 e consultore del Dicastero per la Dottrina della Fede. Il titolo è «Comunicare ed educare alla fede oggi: POP theology come disciplina scientifica»: si parla di come la teologia può dialogare con la musica, l'arte, i media e la cultura popolare per arrivare anche ai più giovani.",
+      "fonti": [
+       "TV7 Benevento"
+      ]
+     },
+     {
+      "testo": "Apre l'incontro il saluto dell'arcivescovo di Benevento, monsignor Michele Autuoro, che guida l'Istituto come moderatore; poi il direttore, il professor Giovanni Tagliaferro, introduce la lezione. Alla fine vengono consegnate le pergamene di Baccalaureato e Licenza in Scienze Religiose agli studenti che hanno finito gli studi nell'anno accademico 2025/2026.",
+      "fonti": [
+       "TV7 Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Benevento, l’ISSR “San Giuseppe Moscati” inaugura l’Anno Accademico: lectio magistralis di Mons. Staglianò",
+      "url": "https://www.tvsette.net/benevento-lissr-san-giuseppe-moscati-inaugura-lanno-accademico-lectio-magistralis-di-mons-stagliano/",
+      "data": "31 ott, 13:53"
+     }
+    ]
+   },
+   "zona": "benevento",
+   "foto": "universita-16"
+  },
   {
    "id": "asl-benevento-congresso-card-sannio-e-care-telemedicina",
    "titolo": "ASL Benevento al congresso nazionale CARD a Roma: presentato «Sannio e-Care», teleassistenza e telemedicina per le aree interne",
@@ -187,7 +242,7 @@
    "id": "benevento-pietrelcina-tre-arresti-carabinieri-ordini-carcerazione",
    "titolo": "Benevento e Pietrelcina, i Carabinieri portano in carcere tre condannati: pene fino a otto anni",
    "titolo_google": "Benevento e Pietrelcina, tre condannati portati in carcere",
-   "sintesi": "I Carabinieri della Compagnia di Benevento hanno arrestato tre persone condannate in via definitiva: due uomini a Benevento, per spaccio e furti in casa, e una donna a Pietrelcina, per sfruttamento della prostituzione. Le pene da scontare vanno da oltre 4 anni a 8 anni.",
+   "sintesi": "I Carabinieri della Compagnia di Benevento hanno arrestato tre persone condannate in via definitiva: a Benevento padre e figlio, per spaccio e furti in casa, e a Pietrelcina una donna, per sfruttamento della prostituzione. Le pene da scontare vanno da oltre 4 anni a 8 anni.",
    "categoria": "cronaca",
    "luogo": "Benevento e Pietrelcina",
    "pubblicato": "2026-10-31T10:15+01:00",
@@ -214,6 +269,14 @@
     {
      "nome": "Anteprima24",
      "url": "https://www.anteprima24.it/benevento/furti-spaccio-e-sfruttamento-della-prostituzione-tre-arresti-tra-benevento-e-pietrelcina/"
+    },
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/442701/operazione-antidroga-triggio-condanne-definitiva-padre-e-figlio-in-carcere.shtml"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/cronaca/2026/carabinieri-arrestano-3-persone-destinatarie-di-ordini-di-carcerazione-per-spaccio-furto-e-sfruttamento-della-prostituzione.html"
     }
    ],
    "articolo": {
@@ -225,8 +288,10 @@
        "BeneventoNews24",
        "Gazzetta di Benevento",
        "Il Caudino",
-       "Anteprima24"
-      ]
+       "Anteprima24",
+       "InfoSannio"
+      ],
+      "giorno": "2026-10-31"
      },
      {
       "testo": "Il primo, un uomo nato nel 1987, l'hanno rintracciato i Carabinieri della stazione di Benevento. È stato condannato per furti in casa e per spaccio di droga, fatti commessi in città tra il 2011 e il 2023, e deve scontare ancora 8 anni e 9 giorni. L'ordine di carcerazione l'ha firmato la Procura generale della Corte d'appello di Napoli, che ha messo insieme le diverse condanne.",
@@ -235,8 +300,10 @@
        "BeneventoNews24",
        "Gazzetta di Benevento",
        "Il Caudino",
-       "Anteprima24"
-      ]
+       "Anteprima24",
+       "InfoSannio"
+      ],
+      "giorno": "2026-10-31"
      },
      {
       "testo": "Sempre a Benevento, i Carabinieri della stazione e del Nucleo radiomobile hanno arrestato un uomo nato nel 1962, condannato per spaccio di droga a Benevento tra il 2011 e il 2017. Anche per lui l'ordine è della Procura generale di Napoli: deve scontare 6 anni e 21 giorni.",
@@ -245,8 +312,17 @@
        "BeneventoNews24",
        "Gazzetta di Benevento",
        "Il Caudino",
-       "Anteprima24"
-      ]
+       "Anteprima24",
+       "InfoSannio"
+      ],
+      "giorno": "2026-10-31"
+     },
+     {
+      "testo": "I due uomini arrestati a Benevento sono padre e figlio: M. D. C., 63 anni, e G. D. C., 39 anni. Le condanne vengono da un'operazione antidroga contro un giro di cocaina, hashish, eroina e marijuana che, secondo l'accusa, si vendevano soprattutto nel quartiere Triggio. Il figlio è stato condannato anche per furto in casa. Per un altro imputato dello stesso processo l'esecuzione della pena è stata sospesa, dopo una richiesta del suo avvocato alla Procura generale presso la Corte d'appello.",
+      "fonti": [
+       "Ottopagine"
+      ],
+      "giorno": "2026-10-31"
      },
      {
       "testo": "A Pietrelcina i Carabinieri della stazione del paese hanno arrestato una donna nata nel 1963, condannata per sfruttamento della prostituzione: il fatto risale a marzo 2017 a San Giovanni Valdarno, in provincia di Arezzo. L'ordine l'ha firmato il 17 settembre 2026 l'ufficio esecuzioni della Procura di Arezzo; la pena è di 4 anni, 4 mesi e 18 giorni.",
@@ -255,8 +331,10 @@
        "BeneventoNews24",
        "Gazzetta di Benevento",
        "Il Caudino",
-       "Anteprima24"
-      ]
+       "Anteprima24",
+       "InfoSannio"
+      ],
+      "giorno": "2026-10-31"
      }
     ],
     "cronologia": [],
@@ -305,6 +383,18 @@
       "titolo": "Furti, spaccio e sfruttamento della prostituzione: tre arresti tra Benevento e Pietrelcina",
       "url": "https://www.anteprima24.it/benevento/furti-spaccio-e-sfruttamento-della-prostituzione-tre-arresti-tra-benevento-e-pietrelcina/",
       "data": "31 ott, 11:41"
+     },
+     {
+      "nome": "Ottopagine",
+      "titolo": "Operazione antidroga Triggio, condanne definitive: padre e figlio in carcere",
+      "url": "https://www.ottopagine.it/bn/cronaca/442701/operazione-antidroga-triggio-condanne-definitiva-padre-e-figlio-in-carcere.shtml",
+      "data": "31 ott, 13:49"
+     },
+     {
+      "nome": "InfoSannio",
+      "titolo": "Carabinieri arrestano 3 persone destinatarie di ordini di carcerazione per spaccio, furto e sfruttamento della prostituzione",
+      "url": "https://www.infosannionews.it/cronaca/2026/carabinieri-arrestano-3-persone-destinatarie-di-ordini-di-carcerazione-per-spaccio-furto-e-sfruttamento-della-prostituzione.html",
+      "data": "31 ott, 13:14"
      }
     ]
    },
@@ -335,6 +425,10 @@
     {
      "nome": "Fremondoweb",
      "url": "https://www.fremondoweb.com/notizie-dalla-valle-telesina/borsa-di-studio-lo-scrigno-dei-valori-in-memoria-di-valentino-ferrara-3mila-euro-e-viaggio-a-lourdes/"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/attualita/2026/il-ricordo-di-valentino-ferrara-diventa-una-opportunita-per-i-giovani-presentato-il-bando-lo-scrigno-dei-valori.html"
     }
    ],
    "articolo": {
@@ -344,7 +438,8 @@
       "fonti": [
        "BeneventoNews24",
        "NTR24",
-       "Fremondoweb"
+       "Fremondoweb",
+       "InfoSannio"
       ]
      },
      {
@@ -406,6 +501,12 @@
       "titolo": "Borsa di studio “Lo scrigno dei valori” in memoria di Valentino Ferrara: 3mila euro e viaggio a Lourdes",
       "url": "https://www.fremondoweb.com/notizie-dalla-valle-telesina/borsa-di-studio-lo-scrigno-dei-valori-in-memoria-di-valentino-ferrara-3mila-euro-e-viaggio-a-lourdes/",
       "data": "31 ott, 11:35"
+     },
+     {
+      "nome": "InfoSannio",
+      "titolo": "Il ricordo di Valentino Ferrara diventa una opportunità per i giovani: presentato il bando “Lo scrigno dei valori”",
+      "url": "https://www.infosannionews.it/attualita/2026/il-ricordo-di-valentino-ferrara-diventa-una-opportunita-per-i-giovani-presentato-il-bando-lo-scrigno-dei-valori.html",
+      "data": "31 ott, 13:17"
      }
     ]
    },
@@ -452,6 +553,10 @@
     {
      "nome": "TV7 Benevento",
      "url": "https://www.tvsette.net/benevento-5-il-derby-e-giallorosso-battuto-lo-sporting-sala-consilina-ritorno-al-successo-per-scarpitti/"
+    },
+    {
+     "nome": "InfoSannio",
+     "url": "https://www.infosannionews.it/sport/2026/il-gg-team-wear-benevento-5-si-aggiudica-il-derby-contro-lo-sporting-sala-consilina.html"
     }
    ],
    "articolo": {
@@ -462,7 +567,8 @@
        "Benevento 5",
        "NTR24 Sport",
        "BeneventoNews24",
-       "TV7 Benevento"
+       "TV7 Benevento",
+       "InfoSannio"
       ]
      },
      {
@@ -545,6 +651,12 @@
       "titolo": "Benevento 5, il derby è giallorosso: battuto lo Sporting Sala Consilina, ritorno al successo per Scarpitti",
       "url": "https://www.tvsette.net/benevento-5-il-derby-e-giallorosso-battuto-lo-sporting-sala-consilina-ritorno-al-successo-per-scarpitti/",
       "data": "31 ott, 11:22"
+     },
+     {
+      "nome": "InfoSannio",
+      "titolo": "Il GG Team Wear Benevento 5 si aggiudica il derby contro lo Sporting Sala Consilina",
+      "url": "https://www.infosannionews.it/sport/2026/il-gg-team-wear-benevento-5-si-aggiudica-il-derby-contro-lo-sporting-sala-consilina.html",
+      "data": "31 ott, 13:09"
      }
     ]
    },
