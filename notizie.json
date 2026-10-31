@@ -1,7 +1,121 @@
 {
- "aggiornato": "2026-10-31T11:05+01:00",
+ "aggiornato": "2026-10-31T12:04+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "montesarchio-calendario-raccolta-differenziata-inverno-2026",
+   "titolo": "Montesarchio, da domenica 1° novembre il calendario invernale della raccolta differenziata: carta solo il lunedì sera",
+   "titolo_google": "Raccolta differenziata Montesarchio, calendario invernale 2026",
+   "sintesi": "Da domenica 1° novembre a Montesarchio cambia la raccolta dei rifiuti porta a porta: con il calendario invernale di Sogesi carta e cartone si mettono fuori solo il lunedì sera e l'organico passa da quattro a tre volte a settimana. Vale fino al 30 aprile 2027.",
+   "categoria": "avvisi",
+   "luogo": "Montesarchio",
+   "pubblicato": "2026-10-31T11:22+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 3,
+   "immagine": "rifiuti",
+   "in_vigore_dal": "2026-11-01",
+   "fonti": [
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/31/sogesi-domenica-primo-novembre-scatta-a-montesarchio-il-calendario-invernale-della-raccolta-differenziata/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/sogesi-il-1-novembre-scatta-a-montesarchio-il-calendario-invernale-della-raccolta-differenziata/"
+    },
+    {
+     "nome": "BeneventoNews24",
+     "url": "https://www.beneventonews24.it/2026/10/31/sogesi-il-1-novembre-scatta-a-montesarchio-il-calendario-invernale-della-raccolta-differenziata/"
+    },
+    {
+     "nome": "Gazzetta di Benevento",
+     "url": "https://www.gazzettabenevento.it/it/entrera-vigore-il-1deg-novembre-il-nuovo-calendario-invernale-la-raccolta-differenziata-dei-rifiuti"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Da domenica 1° novembre a Montesarchio entra in vigore il calendario invernale della raccolta differenziata porta a porta, preparato da Sogesi, la società che raccoglie i rifiuti in paese. Resta valido fino al 30 aprile 2027.",
+      "fonti": [
+       "NTR24",
+       "TV7 Benevento",
+       "BeneventoNews24",
+       "Gazzetta di Benevento"
+      ]
+     },
+     {
+      "testo": "Le novità sono due. Carta e cartone si raccolgono una volta sola a settimana e si mettono fuori soltanto il lunedì sera. L'organico, invece, perde il quarto passaggio settimanale e si raccoglie tre volte.",
+      "fonti": [
+       "NTR24",
+       "TV7 Benevento",
+       "BeneventoNews24",
+       "Gazzetta di Benevento"
+      ]
+     },
+     {
+      "testo": "La settimana è questa: domenica l'organico; lunedì sera il secco residuo insieme a carta e cartone; martedì l'organico; mercoledì il vetro, da mettere fuori tra le 12 e le 14, e plastica e alluminio; giovedì l'organico; venerdì la plastica. Tutti i sacchi e i contenitori, tranne il vetro, vanno esposti entro mezzanotte del giorno indicato.",
+      "fonti": [
+       "NTR24",
+       "TV7 Benevento",
+       "BeneventoNews24",
+       "Gazzetta di Benevento"
+      ]
+     },
+     {
+      "testo": "Per le famiglie con bambini piccoli, anziani o persone non autosufficienti resta il ritiro di pannolini e pannoloni, con due passaggi in più a settimana: va chiesto sul sito di Sogesi, sogesi.org. Ingombranti e sfalci delle potature si ritirano a casa solo su prenotazione, su prenotazioni.comunepulito.it.",
+      "fonti": [
+       "NTR24",
+       "TV7 Benevento",
+       "BeneventoNews24",
+       "Gazzetta di Benevento"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Il calendario parte il 1° novembre e vale fino al 30 aprile; carta e cartone solo il lunedì sera; vetro il mercoledì tra le 12 e le 14.",
+      "fonti": [
+       "NTR24",
+       "TV7 Benevento",
+       "BeneventoNews24",
+       "Gazzetta di Benevento"
+      ]
+     }
+    ],
+    "divergono": [],
+    "non_si_sa": [],
+    "fonti": [
+     {
+      "nome": "NTR24",
+      "titolo": "Sogesi: domenica primo novembre scatta a Montesarchio il calendario invernale della raccolta differenziata",
+      "url": "https://www.ntr24.tv/2026/10/31/sogesi-domenica-primo-novembre-scatta-a-montesarchio-il-calendario-invernale-della-raccolta-differenziata/",
+      "data": "31 ott, 11:07"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Sogesi: il 1 Novembre scatta a Montesarchio il calendario invernale della raccolta differenziata",
+      "url": "https://www.tvsette.net/sogesi-il-1-novembre-scatta-a-montesarchio-il-calendario-invernale-della-raccolta-differenziata/",
+      "data": "31 ott, 11:16"
+     },
+     {
+      "nome": "BeneventoNews24",
+      "titolo": "Sogesi, il 1 Novembre scatta a Montesarchio il calendario invernale della raccolta differenziata",
+      "url": "https://www.beneventonews24.it/2026/10/31/sogesi-il-1-novembre-scatta-a-montesarchio-il-calendario-invernale-della-raccolta-differenziata/",
+      "data": "31 ott, 11:22"
+     },
+     {
+      "nome": "Gazzetta di Benevento",
+      "titolo": "​Entrerà in vigore il 1° novembre, il nuovo calendario invernale per la raccolta differenziata dei rifiuti urbani",
+      "url": "https://www.gazzettabenevento.it/it/entrera-vigore-il-1deg-novembre-il-nuovo-calendario-invernale-la-raccolta-differenziata-dei-rifiuti",
+      "data": "31 ott, 09:33"
+     }
+    ]
+   },
+   "zona": "caudina",
+   "foto": "rifiuti-17"
+  },
   {
    "id": "benevento-pietrelcina-tre-arresti-carabinieri-ordini-carcerazione",
    "titolo": "Benevento e Pietrelcina, i Carabinieri portano in carcere tre condannati: pene fino a otto anni",
@@ -29,6 +143,10 @@
     {
      "nome": "Il Caudino",
      "url": "https://ilcaudino.it/tre-persone-tratte-in-arresto-dai-carabinieri-uid-5/"
+    },
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/furti-spaccio-e-sfruttamento-della-prostituzione-tre-arresti-tra-benevento-e-pietrelcina/"
     }
    ],
    "articolo": {
@@ -39,7 +157,8 @@
        "NTR24",
        "BeneventoNews24",
        "Gazzetta di Benevento",
-       "Il Caudino"
+       "Il Caudino",
+       "Anteprima24"
       ]
      },
      {
@@ -48,7 +167,8 @@
        "NTR24",
        "BeneventoNews24",
        "Gazzetta di Benevento",
-       "Il Caudino"
+       "Il Caudino",
+       "Anteprima24"
       ]
      },
      {
@@ -57,7 +177,8 @@
        "NTR24",
        "BeneventoNews24",
        "Gazzetta di Benevento",
-       "Il Caudino"
+       "Il Caudino",
+       "Anteprima24"
       ]
      },
      {
@@ -66,7 +187,8 @@
        "NTR24",
        "BeneventoNews24",
        "Gazzetta di Benevento",
-       "Il Caudino"
+       "Il Caudino",
+       "Anteprima24"
       ]
      }
     ],
@@ -110,6 +232,12 @@
       "titolo": "Tre persone tratte in arresto dai carabinieri",
       "url": "https://ilcaudino.it/tre-persone-tratte-in-arresto-dai-carabinieri-uid-5/",
       "data": "31 ott, 10:35"
+     },
+     {
+      "nome": "Anteprima24",
+      "titolo": "Furti, spaccio e sfruttamento della prostituzione: tre arresti tra Benevento e Pietrelcina",
+      "url": "https://www.anteprima24.it/benevento/furti-spaccio-e-sfruttamento-della-prostituzione-tre-arresti-tra-benevento-e-pietrelcina/",
+      "data": "31 ott, 11:41"
      }
     ]
    },
@@ -123,7 +251,7 @@
    "categoria": "altro",
    "luogo": "Cerreto Sannita, Istituto Luigi Sodo",
    "pubblicato": "2026-10-31T10:52+01:00",
-   "stato": "una_fonte",
+   "stato": "confermata",
    "rilevante": false,
    "importanza": 2,
    "immagine": "scuola",
@@ -132,6 +260,14 @@
     {
      "nome": "BeneventoNews24",
      "url": "https://www.beneventonews24.it/2026/10/31/il-ricordo-di-valentino-ferrara-diventa-unopportunita-per-i-giovani-presentato-il-bando-lo-scrigno-dei-valori/"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/31/il-ricordo-di-valentino-ferrara-diventa-opportunita-per-i-giovani-presentato-il-bando-lo-scrigno-dei-valori/"
+    },
+    {
+     "nome": "Fremondoweb",
+     "url": "https://www.fremondoweb.com/notizie-dalla-valle-telesina/borsa-di-studio-lo-scrigno-dei-valori-in-memoria-di-valentino-ferrara-3mila-euro-e-viaggio-a-lourdes/"
     }
    ],
    "articolo": {
@@ -139,30 +275,47 @@
      {
       "testo": "A Cerreto Sannita è stato presentato «Lo scrigno dei valori», il bando per una borsa di studio in memoria di Valentino Ferrara, il ragazzo morto a quindici anni. È per gli studenti dell'istituto paritario Luigi Sodo, il liceo classico e scientifico del paese, e per partecipare c'è tempo fino al 3 dicembre 2026.",
       "fonti": [
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "NTR24",
+       "Fremondoweb"
       ]
      },
      {
       "testo": "I premi sono tre: 1.500 euro al primo classificato, 1.000 al secondo e 500 al terzo. Ognuno dei vincitori potrà anche partire gratis per Lourdes come volontario dell'AMASIT, l'associazione della diocesi che da anni accompagna lì malati e persone con disabilità. Il tema scelto è «Il volontariato come stile di vita».",
       "fonti": [
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "NTR24",
+       "Fremondoweb"
       ]
      },
      {
       "testo": "Lo promuove l'associazione «Il Sogno e il Sorriso di Valentino Ferrara» insieme all'AMASIT, con il sostegno di tre aziende: Mangimi Liverini, L.M.L. di Sergio Fasulo e MC Impianti di Marco Ciervo. Valentino giocava a pallamano ed era capitano della sua squadra, e con l'AMASIT aveva fatto anche lui i viaggi a Lourdes.",
       "fonti": [
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "NTR24",
+       "Fremondoweb"
       ]
      },
      {
       "testo": "«Uno dei modi più concreti per non dimenticare quello che è stato Valentino è sostenere un altro studente nel suo percorso», ha detto il papà Nicola, che ha preparato l'intervento con la moglie Nunzia. La famiglia regalerà alla scuola un'immagine di Valentino su ceramica. Alla presentazione ha parlato anche il preside, don Alfonso Salomone.",
       "fonti": [
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "NTR24",
+       "Fremondoweb"
       ]
      }
     ],
     "cronologia": [],
-    "concordano": [],
+    "concordano": [
+     {
+      "testo": "Il bando è per gli studenti del Luigi Sodo, scade il 3 dicembre 2026; tre premi da 1.500, 1.000 e 500 euro più il viaggio a Lourdes con l'AMASIT.",
+      "fonti": [
+       "BeneventoNews24",
+       "NTR24",
+       "Fremondoweb"
+      ]
+     }
+    ],
     "divergono": [],
     "non_si_sa": [
      "Come si presenta la domanda e a chi.",
@@ -174,6 +327,18 @@
       "titolo": "Il ricordo di Valentino Ferrara diventa un’opportunità per i giovani: presentato il bando “Lo scrigno dei valori”",
       "url": "https://www.beneventonews24.it/2026/10/31/il-ricordo-di-valentino-ferrara-diventa-unopportunita-per-i-giovani-presentato-il-bando-lo-scrigno-dei-valori/",
       "data": "31 ott, 10:52"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Il ricordo di Valentino Ferrara diventa opportunità per i giovani: presentato il bando ‘Lo Scrigno dei Valori’",
+      "url": "https://www.ntr24.tv/2026/10/31/il-ricordo-di-valentino-ferrara-diventa-opportunita-per-i-giovani-presentato-il-bando-lo-scrigno-dei-valori/",
+      "data": "31 ott, 11:21"
+     },
+     {
+      "nome": "Fremondoweb",
+      "titolo": "Borsa di studio “Lo scrigno dei valori” in memoria di Valentino Ferrara: 3mila euro e viaggio a Lourdes",
+      "url": "https://www.fremondoweb.com/notizie-dalla-valle-telesina/borsa-di-studio-lo-scrigno-dei-valori-in-memoria-di-valentino-ferrara-3mila-euro-e-viaggio-a-lourdes/",
+      "data": "31 ott, 11:35"
      }
     ]
    },
@@ -216,6 +381,10 @@
     {
      "nome": "BeneventoNews24",
      "url": "https://www.beneventonews24.it/2026/10/31/futsal-il-benevento5-torna-alla-vittoria-successo-nel-derby-con-sala-consilina/"
+    },
+    {
+     "nome": "TV7 Benevento",
+     "url": "https://www.tvsette.net/benevento-5-il-derby-e-giallorosso-battuto-lo-sporting-sala-consilina-ritorno-al-successo-per-scarpitti/"
     }
    ],
    "articolo": {
@@ -225,26 +394,30 @@
       "fonti": [
        "Benevento 5",
        "NTR24 Sport",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "TV7 Benevento"
       ]
      },
      {
       "testo": "Mister Scarpitti era senza Montefalcone e ha messo subito in porta Riccardo Ditano, arrivato in settimana. Barichello, recuperato, è partito dalla panchina. L'allenatore del Sala Consilina, Conde, non aveva lo squalificato Deivao.",
       "fonti": [
        "Benevento 5",
-       "NTR24 Sport"
+       "NTR24 Sport",
+       "TV7 Benevento"
       ]
      },
      {
       "testo": "Il primo tiro pericoloso è stato dello Sporting, con Biscossi: Ditano ha toccato la palla e l'ha deviata sul palo. Al 5'42'' il Benevento 5 è passato in vantaggio: su un passaggio indietro di Bueno, il rilancio del portiere Nossal ha colpito Sosa e la palla è finita in rete. Al 7'11'' il raddoppio: su un lancio lungo di Ditano, Gui ha anticipato di testa Nossal e ha segnato. Poco dopo ancora Gui è scappato sulla fascia e ha messo la palla al centro, ma Rosato non è riuscito a deviarla in porta. Lo Sporting ha provato a riaprire la partita prima dell'intervallo, ma Ditano ha tenuto.",
       "fonti": [
-       "Benevento 5"
+       "Benevento 5",
+       "TV7 Benevento"
       ]
      },
      {
       "testo": "Nella ripresa il Benevento 5 ha avuto l'occasione del 3-0: Lamas è partito in contropiede e ha servito Sosa, ma Nossal ha respinto col petto. Poco dopo Ditano ha parato una conclusione di Brunelli. Nel finale il Sala Consilina ha messo il portiere di movimento e al 38'25'' ha segnato con Rossetti. A trenta secondi dalla fine Brunelli ha colpito il palo, poi la partita è finita 1-2.",
       "fonti": [
-       "Benevento 5"
+       "Benevento 5",
+       "TV7 Benevento"
       ]
      },
      {
@@ -299,6 +472,12 @@
       "titolo": "Futsal, il Benevento5 torna alla vittoria: successo nel derby con Sala Consilina",
       "url": "https://www.beneventonews24.it/2026/10/31/futsal-il-benevento5-torna-alla-vittoria-successo-nel-derby-con-sala-consilina/",
       "data": "31 ott, 10:43"
+     },
+     {
+      "nome": "TV7 Benevento",
+      "titolo": "Benevento 5, il derby è giallorosso: battuto lo Sporting Sala Consilina, ritorno al successo per Scarpitti",
+      "url": "https://www.tvsette.net/benevento-5-il-derby-e-giallorosso-battuto-lo-sporting-sala-consilina-ritorno-al-successo-per-scarpitti/",
+      "data": "31 ott, 11:22"
      }
     ]
    },
@@ -375,7 +554,7 @@
    "sintesi": "Nella notte tra venerdì 30 e sabato 31 ottobre a San Leucio del Sannio sono stati fatti saltare con l'esplosivo lo sportello automatico dell'ufficio postale e quello della BCC di San Marco dei Cavoti, a una ventina di metri l'uno dall'altro. Danni pesanti, indagano i Carabinieri; il sindaco avvisa che ufficio postale e bancomat sono chiusi al pubblico.",
    "categoria": "cronaca",
    "luogo": "San Leucio del Sannio, centro",
-   "pubblicato": "2026-10-31T09:55+01:00",
+   "pubblicato": "2026-10-31T11:36+01:00",
    "stato": "confermata",
    "rilevante": false,
    "importanza": 4,
@@ -407,6 +586,10 @@
     {
      "nome": "InfoSannio",
      "url": "https://www.infosannionews.it/cronaca/2026/paura-nella-notte-a-san-leucio-del-sannio-fatti-saltare-in-area-2-bancomat.html"
+    },
+    {
+     "nome": "Il Mattino",
+     "url": "https://www.ilmattino.it/benevento/doppio_colpo_con_esplosivi_a_banca_e_poste_notte_di_paura_nel_beneventano-9860588.html"
     }
    ],
    "articolo": {
@@ -448,12 +631,13 @@
       "giorno": "2026-10-31"
      },
      {
-      "testo": "Quanto hanno portato via i ladri non si sa ancora. I Carabinieri indagano per ricostruire come è andata e trovare i responsabili.",
+      "testo": "Quanto hanno portato via i ladri non si sa ancora: secondo Il Mattino, dalle prime verifiche nello sportello delle Poste non c'erano soldi, mentre per quello della banca si stanno ancora facendo i conti. I Carabinieri indagano per ricostruire come è andata e trovare i responsabili.",
       "fonti": [
        "Ottopagine",
        "NTR24",
        "Gazzetta di Benevento",
-       "BeneventoNews24"
+       "BeneventoNews24",
+       "Il Mattino"
       ],
       "giorno": "2026-10-31"
      },
@@ -541,6 +725,13 @@
        "Comune di San Leucio del Sannio",
        "BeneventoNews24"
       ]
+     },
+     {
+      "testo": "L'ora dei botti: verso le 3:30 per Ottopagine, attorno alle 3 per Il Mattino.",
+      "fonti": [
+       "Ottopagine (31/10, 10:23)",
+       "Il Mattino"
+      ]
      }
     ],
     "non_si_sa": [
@@ -596,15 +787,20 @@
       "titolo": "Paura nella notte a San Leucio del Sannio. Fatti saltare in area 2 bancomat",
       "url": "https://www.infosannionews.it/cronaca/2026/paura-nella-notte-a-san-leucio-del-sannio-fatti-saltare-in-area-2-bancomat.html",
       "data": "31 ott, 10:01"
+     },
+     {
+      "nome": "Il Mattino",
+      "titolo": "Doppio colpo con esplosivi a banca e poste: notte di paura nel Beneventano. Intevenire gli artificieri",
+      "url": "https://www.ilmattino.it/benevento/doppio_colpo_con_esplosivi_a_banca_e_poste_notte_di_paura_nel_beneventano-9860588.html",
+      "data": "31 ott, 11:36"
      }
     ],
     "aggiornamento": {
-     "testo": "Sabato mattina il sindaco Nascenzio Iannace ha avvisato i cittadini che l'ufficio postale e lo sportello della BCC di San Marco dei Cavoti, danneggiati dalle esplosioni, per ora non sono accessibili al pubblico.",
+     "testo": "Dalle prime verifiche, secondo Il Mattino, nello sportello delle Poste non c'erano soldi; per quello della banca si stanno ancora contando le banconote.",
      "fonti": [
-      "Comune di San Leucio del Sannio",
-      "BeneventoNews24"
+      "Il Mattino"
      ],
-     "quando": "2026-10-31T10:04+01:00"
+     "quando": "2026-10-31T12:04+01:00"
     }
    },
    "zona": "provincia"
