@@ -1,7 +1,73 @@
 {
- "aggiornato": "2026-10-31T15:04+01:00",
+ "aggiornato": "2026-10-31T16:03+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "frasso-telesino-18enne-arrestato-maltrattamenti-tentata-estorsione",
+   "titolo": "Frasso Telesino, arrestato un 18enne: è indagato per maltrattamenti e tentata estorsione",
+   "titolo_google": "Frasso Telesino, 18enne arrestato per maltrattamenti",
+   "sintesi": "Un ragazzo di 18 anni è stato arrestato nella notte tra venerdì 30 e sabato 31 ottobre a Frasso Telesino ed è nel carcere di Benevento. È indagato per maltrattamenti, lesioni personali aggravate e tentata estorsione; lunedì 2 novembre l'udienza di convalida davanti al giudice.",
+   "categoria": "cronaca",
+   "luogo": "Frasso Telesino",
+   "zona": "telesina",
+   "pubblicato": "2026-10-31T15:15+01:00",
+   "stato": "una_fonte",
+   "rilevante": false,
+   "importanza": 4,
+   "fonti": [
+    {
+     "nome": "Anteprima24",
+     "url": "https://www.anteprima24.it/benevento/arrestato-nella-notte-un-18enne-e-indagato-per-maltrattamenti-e-tentata-estorsione/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Un ragazzo di 18 anni, A. I., è stato arrestato nella notte a Frasso Telesino, il paese della Valle Telesina ai piedi del Taburno. Ora si trova nel carcere di Benevento. È indagato per maltrattamenti, lesioni personali aggravate e tentata estorsione.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "testo": "L'arresto dovrà essere convalidato: l'udienza è fissata per lunedì 2 novembre davanti al giudice per le indagini preliminari. Il giovane è difeso dall'avvocato Massimo Viscusi. Le accuse sono ancora al vaglio dei magistrati.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "cronologia": [
+     {
+      "data": "notte 30-31 ottobre",
+      "quando": "2026-10-31",
+      "fatto": "Il 18enne viene arrestato a Frasso Telesino e portato nel carcere di Benevento.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     },
+     {
+      "data": "2 novembre",
+      "fatto": "Udienza di convalida dell'arresto davanti al giudice per le indagini preliminari.",
+      "fonti": [
+       "Anteprima24"
+      ]
+     }
+    ],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "Chi ha eseguito l'arresto e chi sono le persone che avrebbe maltrattato.",
+     "Che cosa è successo di preciso nella notte."
+    ],
+    "fonti": [
+     {
+      "nome": "Anteprima24",
+      "titolo": "Arrestato nella notte un 18enne: è indagato per maltrattamenti e tentata estorsione",
+      "url": "https://www.anteprima24.it/benevento/arrestato-nella-notte-un-18enne-e-indagato-per-maltrattamenti-e-tentata-estorsione/",
+      "data": "31 ott, 15:15"
+     }
+    ]
+   }
+  },
   {
    "id": "benevento-termosifoni-accesi-in-anticipo-dal-1-novembre-ordinanza",
    "titolo": "Benevento, termosifoni accesi in anticipo dal 1° al 14 novembre: l'ordinanza del sindaco",
