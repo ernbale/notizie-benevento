@@ -1,7 +1,162 @@
 {
- "aggiornato": "2026-10-31T08:05+01:00",
+ "aggiornato": "2026-10-31T09:04+01:00",
  "giornali_letti": 14,
  "notizie": [
+  {
+   "id": "amorosi-4-novembre-piazza-umberto-strade-chiuse-2026",
+   "titolo": "Amorosi, mercoledì 4 novembre chiuse piazza Umberto I e le strade intorno dalle 9:30 alle 12 per la cerimonia ai caduti",
+   "titolo_google": "Amorosi 4 novembre: strade chiuse in centro dalle 9:30 alle 12",
+   "sintesi": "Mercoledì 4 novembre, dalle 9:30 alle 12, ad Amorosi sono chiuse al traffico piazza Umberto I, vicolo Sele e tratti di via Maturi, via Roma, via Alighieri e via San Giuseppe per la corona al monumento ai caduti. I bus non passano da via Roma e fanno un altro giro.",
+   "categoria": "strade",
+   "luogo": "Amorosi, piazza Umberto I",
+   "pubblicato": "2026-10-31",
+   "stato": "ufficiale",
+   "rilevante": false,
+   "importanza": 3,
+   "in_vigore_dal": "2026-11-04",
+   "in_vigore_fino": "2026-11-04",
+   "traffico": "chiusa",
+   "immagine": "strada-chiusa",
+   "fonti": [
+    {
+     "nome": "Comune di Amorosi",
+     "url": "https://comune.amorosi.bn.it/albo-pretorio/?dettaglio_id=306555",
+     "ufficiale": true
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Mercoledì 4 novembre, Giornata dell'Unità nazionale e delle Forze armate, ad Amorosi dalle 9:30 alle 12 sono chiuse al traffico piazza Umberto I, vicolo Sele, via S. Maturi dall'incrocio con via XXV Aprile, via Roma dall'incrocio con via A. Manzoni, via D. Alighieri dall'incrocio con piazza Pertini e via S. Giuseppe. Possono passare solo i residenti, i mezzi di soccorso e le forze di polizia.",
+      "fonti": [
+       "Comune di Amorosi"
+      ]
+     },
+     {
+      "testo": "In quelle ore gli autobus non possono passare da via Roma: fanno il giro da via Cavarena, via San Nicola, via Alvignanello, via Vecchia Puglianello e via Volturno, e da lì proseguono per le loro destinazioni.",
+      "fonti": [
+       "Comune di Amorosi"
+      ]
+     },
+     {
+      "testo": "Le strade si chiudono per la cerimonia in piazza Umberto I, dove il Comune e la sezione locale dell'ANFI, l'Associazione nazionale finanzieri d'Italia, depongono la corona al monumento ai caduti, insieme agli studenti della scuola «A. Manzoni». L'ha deciso il comandante della Polizia municipale, Stefano Savarese, con l'ordinanza numero 26 del 31 ottobre.",
+      "fonti": [
+       "Comune di Amorosi"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [],
+    "divergono": [],
+    "non_si_sa": [
+     "A che ora comincia la cerimonia."
+    ],
+    "fonti": [
+     {
+      "nome": "Comune di Amorosi",
+      "titolo": "MODIFICHE ALLA CIRCOLAZIONE STRADALE PER IL GIORNO 4 NOVEMBRE 2026 IN OCCASIONE DELLA CELEBRAZIONE DELLA \"GIORNATA DELL'UNITA' NAZIONALE E DELLE FORZE ARMATE\".",
+      "url": "https://comune.amorosi.bn.it/albo-pretorio/?dettaglio_id=306555",
+      "data": "31 ott",
+      "ufficiale": true
+     }
+    ]
+   },
+   "zona": "telesina",
+   "foto": "strada-chiusa-15"
+  },
+  {
+   "id": "san-leucio-del-sannio-assalto-bancomat-poste-banca",
+   "titolo": "San Leucio del Sannio, nella notte fatti esplodere il bancomat delle Poste e quello della banca in centro",
+   "titolo_google": "San Leucio del Sannio, esplosi bancomat di Poste e banca",
+   "sintesi": "Verso le 3:30 della notte tra venerdì 30 e sabato 31 ottobre a San Leucio del Sannio sono stati fatti saltare con l'esplosivo lo sportello automatico dell'ufficio postale e quello della Cassa Rurale e Artigiana, a pochi metri l'uno dall'altro. Danni pesanti; indagano i Carabinieri, il bottino non è ancora noto.",
+   "categoria": "cronaca",
+   "luogo": "San Leucio del Sannio, centro",
+   "pubblicato": "2026-10-31T08:31+01:00",
+   "stato": "confermata",
+   "rilevante": false,
+   "importanza": 4,
+   "fonti": [
+    {
+     "nome": "Ottopagine",
+     "url": "https://www.ottopagine.it/bn/cronaca/442670/esplosioni-e-paura-doppio-colpo-a-banca-e-poste-a-san-leucio-del-sannio-foto.shtml"
+    },
+    {
+     "nome": "NTR24",
+     "url": "https://www.ntr24.tv/2026/10/31/ancora-un-doppio-assalto-ai-bancomat-nella-notte-colpo-alle-poste-e-alla-banca-di-san-leucio-del-sannio/"
+    }
+   ],
+   "articolo": {
+    "racconto": [
+     {
+      "testo": "Nella notte tra venerdì 30 e sabato 31 ottobre, verso le 3:30, a San Leucio del Sannio sono stati fatti esplodere due sportelli automatici per il prelievo dei contanti: quello dell'ufficio postale e quello della Cassa Rurale e Artigiana, nel centro del paese. I due sportelli sono a pochi metri l'uno dall'altro: l'ufficio postale sta nello stesso edificio del Municipio, la banca a una ventina di metri.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Le due esplosioni hanno fatto danni pesanti e i residenti della zona, spaventati dai due botti, sono scesi in strada. Appena scattato l'allarme sono arrivati i Carabinieri e i Vigili del fuoco, che hanno cominciato a mettere in sicurezza i due edifici. In mattinata sono arrivati da Napoli anche gli artificieri dei Carabinieri, per controllare che non fosse rimasto esplosivo.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "Quanto hanno portato via i ladri non si sa ancora. I Carabinieri indagano per ricostruire come è andata e trovare i responsabili.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24"
+      ]
+     },
+     {
+      "testo": "È un colpo molto simile a quello di Morcone di poche settimane fa: anche lì, nella stessa notte, erano stati fatti saltare il bancomat di una banca e quello dell'ufficio postale. Gli investigatori verificano se i due assalti siano collegati.",
+      "fonti": [
+       "NTR24",
+       "Ottopagine"
+      ]
+     }
+    ],
+    "cronologia": [],
+    "concordano": [
+     {
+      "testo": "Due sportelli fatti esplodere nella notte, quello dell'ufficio postale e quello di una banca, a pochi metri l'uno dall'altro; danni pesanti; intervento di Carabinieri e Vigili del fuoco; bottino ancora da contare.",
+      "fonti": [
+       "Ottopagine",
+       "NTR24"
+      ]
+     }
+    ],
+    "divergono": [
+     {
+      "testo": "Il nome della strada: Ottopagine scrive via Zamparelli, NTR24 via Carmine Zarrella. Nel racconto c'è solo «nel centro del paese».",
+      "fonti": [
+       "Ottopagine",
+       "NTR24"
+      ]
+     }
+    ],
+    "non_si_sa": [
+     "Quanti soldi sono stati rubati.",
+     "Quanti erano i ladri e come sono fuggiti.",
+     "Quando gli sportelli torneranno a funzionare."
+    ],
+    "fonti": [
+     {
+      "nome": "Ottopagine",
+      "titolo": "Esplosioni e paura: doppio colpo a banca e poste a San Leucio del Sannio - FOTO",
+      "url": "https://www.ottopagine.it/bn/cronaca/442670/esplosioni-e-paura-doppio-colpo-a-banca-e-poste-a-san-leucio-del-sannio-foto.shtml",
+      "data": "31 ott, 08:16"
+     },
+     {
+      "nome": "NTR24",
+      "titolo": "Ancora un doppio assalto ai bancomat: nella notte colpo alle poste e alla banca di San Leucio del Sannio",
+      "url": "https://www.ntr24.tv/2026/10/31/ancora-un-doppio-assalto-ai-bancomat-nella-notte-colpo-alle-poste-e-alla-banca-di-san-leucio-del-sannio/",
+      "data": "31 ott, 08:31"
+     }
+    ]
+   },
+   "zona": "provincia"
+  },
   {
    "id": "ginestra-degli-schiavoni-go-blue-20-novembre-diritti-bambini",
    "titolo": "Ginestra degli Schiavoni aderisce a «Go Blue»: il 20 novembre un edificio del paese illuminato di blu per i diritti dei bambini",
@@ -2558,6 +2713,10 @@
     {
      "nome": "TeleradioNews",
      "url": "https://www.teleradio-news.it/2026/10/30/vitulano-bn-il-sindaco-raffaele-scarinzi-alla-borsa-mediterranea-del-turismo-archeologico/"
+    },
+    {
+     "nome": "Benevento Giornale",
+     "url": "https://www.beneventogiornale.com/2026/10/31/via-francigena-vitulano-guarda-alleuropa-il-sindaco-scarinzi-alla-borsa-mediterranea-del-turismo-archeologico-rilancia-il-progetto-dei-22-comuni-sanniti/"
     }
    ],
    "articolo": {
@@ -2568,7 +2727,8 @@
        "NTR24",
        "BeneventoNews24",
        "Ottopagine",
-       "TeleradioNews"
+       "TeleradioNews",
+       "Benevento Giornale"
       ]
      },
      {
@@ -2630,6 +2790,12 @@
       "titolo": "Vitulano (BN). Il sindaco Raffaele Scarinzi alla Borsa Mediterranea del Turismo Archeologico",
       "url": "https://www.teleradio-news.it/2026/10/30/vitulano-bn-il-sindaco-raffaele-scarinzi-alla-borsa-mediterranea-del-turismo-archeologico/",
       "data": "30 ott, 23:53"
+     },
+     {
+      "nome": "Benevento Giornale",
+      "url": "https://www.beneventogiornale.com/2026/10/31/via-francigena-vitulano-guarda-alleuropa-il-sindaco-scarinzi-alla-borsa-mediterranea-del-turismo-archeologico-rilancia-il-progetto-dei-22-comuni-sanniti/",
+      "titolo": "Via Francigena, Vitulano guarda all’Europa: il sindaco Scarinzi alla Borsa Mediterranea del Turismo Archeologico rilancia il progetto dei 22 Comuni sanniti",
+      "data": "31 ott, 08:28"
      }
     ]
    },
@@ -9351,6 +9517,10 @@
     {
      "nome": "InfoSannio",
      "url": "https://www.infosannionews.it/attualita/2026/varato-il-piano-traffico-per-la-giornata-nazionale-dellunita-nazionale-e-delle-forze-armate.html"
+    },
+    {
+     "nome": "Benevento Giornale",
+     "url": "https://www.beneventogiornale.com/2026/10/31/varato-il-piano-traffico-per-la-giornata-nazionale-dellunita-nazionale-e-delle-forze-armate/"
     }
    ],
    "articolo": {
@@ -9360,7 +9530,8 @@
       "fonti": [
        "Comune di Benevento",
        "Ottopagine",
-       "InfoSannio"
+       "InfoSannio",
+       "Benevento Giornale"
       ],
       "giorno": "2026-10-30"
      },
@@ -9423,6 +9594,12 @@
       "titolo": "Varato il piano traffico per la Giornata Nazionale dell’Unità Nazionale e delle Forze Armate",
       "url": "https://www.infosannionews.it/attualita/2026/varato-il-piano-traffico-per-la-giornata-nazionale-dellunita-nazionale-e-delle-forze-armate.html",
       "data": "30 ott, 11:45"
+     },
+     {
+      "nome": "Benevento Giornale",
+      "url": "https://www.beneventogiornale.com/2026/10/31/varato-il-piano-traffico-per-la-giornata-nazionale-dellunita-nazionale-e-delle-forze-armate/",
+      "titolo": "Varato il piano traffico per la Giornata Nazionale dell’Unità Nazionale e delle Forze Armate",
+      "data": "31 ott, 08:18"
      }
     ],
     "aggiornamento": {
