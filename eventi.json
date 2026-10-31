@@ -1687,7 +1687,8 @@
      "fonti": [
       "NTR24 (30/10)",
       "BeneventoNews24",
-      "Anteprima24"
+      "Anteprima24",
+      "TeleradioNews"
      ]
     },
     {
@@ -1695,14 +1696,16 @@
      "fonti": [
       "NTR24 (30/10)",
       "BeneventoNews24",
-      "Anteprima24"
+      "Anteprima24",
+      "TeleradioNews"
      ]
     },
     {
      "testo": "Domenica 8 novembre alle 8.30 si parte per il «Cammino Di-vino», un trekking tra i paesaggi e le tradizioni del posto; alle 11.30 c'è il raduno «Club Vespisti nelle Piazze», per gli appassionati della Vespa e delle due ruote. Gli stand restano aperti dalle 12.30 a mezzanotte, con la musica di Musica 360°, Synerghia, Dj Cristian e Domenico Bianco. Per informazioni e prenotazioni: Gianni al 327 133 9629 e Mirko al 388 921 1321.",
      "fonti": [
       "NTR24 (30/10)",
-      "BeneventoNews24"
+      "BeneventoNews24",
+      "TeleradioNews"
      ]
     }
    ],
@@ -1742,6 +1745,12 @@
      "titolo": "‘Novello e Castagne’ celebra dieci anni: il programma della X edizione",
      "url": "https://www.anteprima24.it/benevento/novello-e-castagne-celebra-dieci-anni-il-programma-della-x-edizione/",
      "data": "30 ott, 11:25"
+    },
+    {
+     "nome": "TeleradioNews",
+     "titolo": "Torrecuso (BN). ‘Novello e Castagne’: decima edizione, dal 6 novembre gusto, musica e tradizione",
+     "url": "https://www.teleradio-news.it/2026/10/30/torrecuso-bn-novello-e-castagne-decima-edizione-dal-6-novembre-gusto-musica-e-tradizione/",
+     "data": "30 ott"
     }
    ],
    "immagine": "vino-novello",

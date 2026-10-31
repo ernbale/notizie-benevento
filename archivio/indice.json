@@ -1,6 +1,368 @@
 {
- "aggiornato": "2026-10-30T06:10+01:00",
+ "aggiornato": "2026-10-31T06:05+01:00",
  "voci": [
+  {
+   "id": "benevento-docente-convitto-giannone-eredita-rai1",
+   "tipo": "notizia",
+   "titolo": "Benevento, la docente del Convitto Giannone Luigia Torrusio arriva alla Ghigliottina de «L'Eredità» su Rai 1",
+   "sintesi": "Luigia Torrusio, docente del Convitto Nazionale «Pietro Giannone» di Benevento, è in gara da lunedì 26 ottobre a «L'Eredità», il quiz di Rai 1 condotto da Marco Liorni. Mercoledì 28 è arrivata al gioco finale, la Ghigliottina, per la seconda sera di fila.",
+   "luogo": "Benevento",
+   "categoria": "cultura",
+   "zona": "benevento",
+   "pubblicato": "2026-10-28T22:40+01:00",
+   "cosa": "Nella puntata di mercoledì 28 ottobre Luigia Torrusio è arrivata di nuovo alla Ghigliottina, il gioco finale di «L'Eredità», dopo esserci arrivata già la sera prima: è la seconda sera di fila. La sua partecipazione ha avuto molti messaggi di sostegno sui social da amici, colleghi e studenti.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "benevento-corso-garibaldi-60enne-malore-alla-guida-municipale",
+   "tipo": "notizia",
+   "titolo": "Benevento, 60enne si sente male mentre guida in corso Garibaldi: lo soccorrono i vigili urbani",
+   "sintesi": "Un uomo di circa 60 anni si è sentito male mentre era al volante della sua auto in corso Garibaldi, nel centro di Benevento, vicino a piazza Roma. Una pattuglia della Polizia Municipale lo ha notato, si è fermata a controllare come stava e ha chiamato subito il 118.",
+   "luogo": "Benevento, corso Garibaldi angolo piazza Roma",
+   "categoria": "cronaca",
+   "zona": "benevento",
+   "pubblicato": "2026-10-28T20:56:00+01:00",
+   "cosa": "Un automobilista di circa 60 anni si è sentito male mentre guidava la sua auto nel centro di Benevento, in corso Garibaldi, all'incrocio con piazza Roma. A soccorrerlo per primi sono stati gli agenti della Polizia Municipale, i vigili urbani della città.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "arpaise-esercitazione-campania-felix-esercito-2026",
+   "tipo": "notizia",
+   "titolo": "Arpaise, conclusa l'esercitazione «Campania Felix» dell'Esercito: una settimana di campo per le emergenze con Protezione civile e Croce Rossa",
+   "sintesi": "Ad Arpaise dal 19 al 26 ottobre l'Esercito ha montato e provato un campo logistico per aiutare la popolazione nelle emergenze, insieme alla Protezione civile e alla Croce Rossa. Centinaia di alunni hanno visitato i mezzi; il 24 ottobre c'è stata la giornata aperta a tutti.",
+   "luogo": "Arpaise",
+   "categoria": "altro",
+   "zona": "provincia",
+   "pubblicato": "2026-10-28T19:48:00+01:00",
+   "cosa": "Ad Arpaise, piccolo paese a sud di Benevento, si è chiusa l'esercitazione «Campania Felix» dell'Esercito. Dal 19 al 26 ottobre i militari della Scuola di Commissariato dell'Esercito hanno montato e fatto funzionare un campo logistico, cioè le strutture e i mezzi che servono a dare servizi essenziali alla popolazione quando c'è un'emergenza.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "mozione-caro-carburanti",
+   "tipo": "notizia",
+   "titolo": "Caro carburanti, il Consiglio regionale approva la mozione della maggioranza: un fondo straordinario per autotrasporto e agricoltura",
+   "sintesi": "Il 28 ottobre il Consiglio regionale della Campania ha approvato, con i voti della maggioranza e il no dell'opposizione, una mozione unitaria sul caro carburanti. Impegna la Giunta a creare un fondo straordinario per autotrasportatori e agricoltori, con almeno il 30% in più per le aree interne. Dentro c'è anche la proposta del consigliere sannita Pellegrino Mastella.",
+   "luogo": "Napoli, Consiglio regionale",
+   "categoria": "politica",
+   "zona": "benevento",
+   "pubblicato": "2026-10-28T19:28:00+01:00",
+   "cosa": "Mercoledì 28 ottobre il Consiglio regionale della Campania ha approvato una mozione unitaria sul caro carburanti, firmata da tutti i gruppi di maggioranza: hanno votato a favore la maggioranza, contro i gruppi di opposizione. Il testo nasce dall'unione di due proposte, tra cui quella presentata il 19 ottobre dal gruppo Casa Riformista–Italia Viva–Noi di Centro del consigliere sannita Pellegrino Mastella. In aula l'ha illustrato il capogruppo del Pd, Maurizio Petracca.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "faicchio-confindustria-benevento-caserta-manifesto-valli-telesina-volturno",
+   "tipo": "notizia",
+   "titolo": "Faicchio, Confindustria Benevento e Caserta firmano un manifesto per le valli Telesina e del Volturno: prima la Telesina a quattro corsie",
+   "sintesi": "Al Castello ducale di Faicchio gli industriali di Benevento e Caserta hanno presentato un manifesto comune per lo sviluppo della Valle Telesina e della Valle del Volturno. Chiedono il raddoppio della statale 372, un piano per le strade secondarie durante i cantieri e fermate dell'Alta Velocità ad Afragola.",
+   "luogo": "Faicchio, Castello ducale",
+   "categoria": "altro",
+   "zona": "telesina",
+   "pubblicato": "2026-10-28T18:53:00+01:00",
+   "cosa": "Mercoledì 28 ottobre, al Castello ducale di Faicchio, Confindustria Benevento e Confindustria Caserta hanno presentato un manifesto comune per lo sviluppo economico, dei trasporti e del turismo della Valle Telesina e della Valle del Volturno. È stata la terza tappa di «Insieme 100», il giro nei territori con cui l'associazione degli industriali sanniti festeggia i suoi cento anni.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "benevento-raid-debito-droga-2022-mandante-domiciliari",
+   "tipo": "notizia",
+   "titolo": "Raid armato a Benevento per un debito di droga nel 2022: il presunto mandante passa dal carcere ai domiciliari",
+   "sintesi": "Il gip del Tribunale di Napoli ha mandato ai domiciliari un uomo dell'Irpinia condannato in primo grado a 3 anni e 6 mesi come mandante di una spedizione punitiva a Benevento nel dicembre 2022. Secondo l'accusa serviva a recuperare un debito di droga di circa 32.500 euro.",
+   "luogo": "Benevento",
+   "categoria": "cronaca",
+   "zona": "benevento",
+   "pubblicato": "2026-10-28T18:49:00+01:00",
+   "cosa": "Un uomo dell'Irpinia, accusato di essere il mandante di una spedizione punitiva avvenuta a Benevento nel dicembre 2022, ha lasciato il carcere di Avellino, dove era detenuto dallo scorso novembre, ed è passato agli arresti domiciliari. Lo ha deciso il gip del Tribunale di Napoli, che ha accolto la richiesta della difesa e gli permette anche di uscire di casa per più giorni alla settimana.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "benevento-incanto-di-natale-2026-giunta-600mila-euro",
+   "tipo": "notizia",
+   "titolo": "Benevento, «InCanto di Natale» dal 14 novembre: Cant'Albero in piazza Risorgimento, schiaccianoci giganti e presepe vivente",
+   "sintesi": "«InCanto di Natale» comincia sabato 14 novembre alle 17 in piazza Risorgimento, dove quest'anno c'è il Cant'Albero di 20 metri. Poi zampogne, cori gospel, carosello gratis per i bambini in piazza Castello, presepe vivente il 19 dicembre e la Befana il 6 gennaio. Costa 600mila euro: 550mila li mette la Regione.",
+   "luogo": "Benevento",
+   "categoria": "politica",
+   "zona": "benevento",
+   "pubblicato": "2026-10-28T17:53+01:00",
+   "cosa": "Il programma di «InCanto di Natale», l'undicesima edizione delle feste di Natale del Comune di Benevento, comincia sabato 14 novembre alle 17 in piazza Risorgimento con il coro delle voci bianche e una parata dei personaggi dei cartoni animati lungo corso Garibaldi. Gli appuntamenti vanno avanti fino a mercoledì 6 gennaio.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "provincia-benevento-censimento-distributori-carburante-strade-provinciali",
+   "tipo": "notizia",
+   "titolo": "Provincia di Benevento, censimento dei distributori di carburante sulle strade provinciali: dichiarazione entro 30 giorni",
+   "sintesi": "La Provincia di Benevento censisce i distributori di carburante che hanno un accesso sulle strade provinciali. Titolari e gestori devono mandare una dichiarazione via PEC entro 30 giorni dalla pubblicazione dell'avviso all'albo della Provincia; poi partono i controlli.",
+   "luogo": "Provincia di Benevento",
+   "categoria": "avvisi",
+   "zona": "provincia",
+   "pubblicato": "2026-10-28T17:01+01:00",
+   "cosa": "Il censimento lo cura il Settore Infrastrutture e Viabilità della Provincia, diretto dall'ingegnere Valentino Ferrara: serve a controllare che siano in regola i permessi dei distributori, soprattutto per gli accessi delle auto, i cartelli pubblicitari e gli spazi occupati su cui si paga il canone. Giovedì 29 ottobre l'avviso l'ha pubblicato all'albo anche il Comune di San Nazzaro.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "benevento-liceo-alberti-virgilio-patentino-droni-gratis",
+   "tipo": "notizia",
+   "titolo": "Benevento, al liceo Alberti-Virgilio il patentino per pilotare i droni: corso ed esame pagati dalla scuola",
+   "sintesi": "Il liceo Alberti-Virgilio di Benevento ha firmato un accordo con DRONEXT, un centro di formazione per piloti di droni: gli studenti possono prendere il patentino A1/A3. Corso ed esame finale sono gratis, li paga la scuola.",
+   "luogo": "Benevento, liceo Alberti-Virgilio",
+   "categoria": "altro",
+   "zona": "benevento",
+   "pubblicato": "2026-10-28T16:50+01:00",
+   "cosa": "Gli studenti del liceo Alberti-Virgilio di Benevento possono prendere il patentino per pilotare i droni, quello di categoria A1/A3, senza pagare niente. La scuola ha firmato un accordo con DRONEXT, un centro che forma piloti di droni in tutta Italia, e paga di tasca sua sia il corso sia l'esame finale.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "atlante-storico-calcio-italiano-quattro-squadre-sannio",
+   "tipo": "notizia",
+   "titolo": "Atlante storico del calcio italiano: ci sono anche Benevento, Forza e Coraggio, Torrecuso e Sant'Agata",
+   "sintesi": "Un sito gratuito, l'Atlante storico del calcio italiano, mette su una mappa le oltre 1.500 squadre che hanno giocato dalla Serie A alla Serie D dal 1929-30 a oggi. Del Sannio ci sono quattro squadre: Benevento, Forza e Coraggio, Torrecuso e Sant'Agata.",
+   "luogo": "Sannio",
+   "categoria": "sport",
+   "zona": "provincia",
+   "pubblicato": "2026-10-28T16:27+01:00",
+   "cosa": "Quasi un secolo di calcio italiano su una mappa che si può girare con un clic: è l'Atlante storico del calcio italiano, un sito gratuito (atlantedelcalcio.it) fatto da Francesco Ippolito, ingegnere civile e giornalista. Raccoglie più di 1.500 squadre che hanno giocato i campionati dalla Serie A alla Serie D, e le categorie che le valevano in passato, dalla stagione 1929-1930 a quella di oggi, 2026-2027.",
+   "mese": "2026-10",
+   "sport": "calcio"
+  },
+  {
+   "id": "pietraroja-progetto-dae-mappa-defibrillatori-croce-rossa",
+   "tipo": "notizia",
+   "titolo": "Pietraroja aderisce al Progetto DAE della Croce Rossa: i defibrillatori del paese su una mappa online",
+   "sintesi": "La Giunta di Pietraroja ha approvato l'adesione al Progetto DAE della Croce Rossa di San Lorenzello, che censisce i defibrillatori del territorio e li mette su una mappa online. La convenzione dura sei anni e non costa niente al Comune.",
+   "luogo": "Pietraroja",
+   "categoria": "altro",
+   "zona": "telesina",
+   "pubblicato": "2026-10-28T15:43+01:00",
+   "cosa": "Il Comune di Pietraroja, sul Matese, aderisce al «Progetto DAE» della Croce Rossa Italiana, Comitato di San Lorenzello: l'iniziativa censisce i defibrillatori (DAE, gli apparecchi che servono a far ripartire il cuore in caso di arresto cardiaco) presenti sul territorio e li mette su una mappa digitale. L'adesione e lo schema di convenzione li ha approvati la Giunta comunale all'unanimità, con una delibera firmata martedì 27 ottobre.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "airola-operaio-morto-cantiere-2024-chiesto-rinvio-a-giudizio",
+   "tipo": "notizia",
+   "titolo": "Airola, operaio morto nel cantiere nel 2024: la Procura chiede il processo per il titolare dell'impresa e il figlio",
+   "sintesi": "Il 20 agosto 2024 un operaio di 57 anni di Rotondi, cardiopatico, morì per un malore mentre gettava il calcestruzzo in un cantiere ad Airola. La pm ha chiesto il rinvio a giudizio del 67enne titolare dell'impresa, accusato tra l'altro di averlo impiegato «a nero», e del figlio, che aveva commissionato i lavori.",
+   "luogo": "Airola",
+   "categoria": "cronaca",
+   "zona": "caudina",
+   "pubblicato": "2026-10-28T13:58+01:00",
+   "cosa": "La Procura di Benevento ha chiesto il rinvio a giudizio, cioè il processo, per due persone per la morte di un operaio di 57 anni di Rotondi, in provincia di Avellino. L'uomo morì il 20 agosto 2024 mentre lavorava in un cantiere ad Airola. La richiesta della pm Maria Dolores De Gaudio riguarda un 67enne di Airola, legale rappresentante dell'impresa che faceva i lavori, e suo figlio, proprietario della casa, che li aveva commissionati.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "paduli-tentato-femminicidio-moglie-abbreviato-rinviato-esame",
+   "tipo": "notizia",
+   "titolo": "Paduli, spari alla moglie: il 38enne piange e non riesce a parlare, il suo esame rinviato di una settimana",
+   "sintesi": "Nel processo con rito abbreviato per il tentato femminicidio di Paduli del 2 febbraio, il 38enne accusato di aver sparato alla moglie doveva rispondere alle domande mercoledì 28 ottobre. Si è commosso e non è riuscito a parlare: la giudice ha rinviato tutto di una settimana.",
+   "luogo": "Paduli, contrada Femmina Arsa",
+   "categoria": "cronaca",
+   "zona": "provincia",
+   "pubblicato": "2026-10-28T13:17+01:00",
+   "cosa": "Mercoledì 28 ottobre, in tribunale a Benevento, doveva parlare il vigilante di 38 anni accusato del tentato femminicidio della moglie, aggravato dalla premeditazione, e di aver portato un'arma in un luogo pubblico. Il 2 febbraio, a Paduli, la donna, di 46 anni, era stata ferita in modo grave a colpi di fucile. L'uomo prima si è commosso e ha pianto, poi si è bloccato e non è più riuscito a parlare.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "telese-gepos-sindacati-conti-assunzioni-sit-in-26-ottobre",
+   "tipo": "notizia",
+   "titolo": "Telese Terme, l'ASL comincia i controlli alla clinica Gepos dopo i licenziamenti: i sindacati chiedono verifiche sul laboratorio",
+   "sintesi": "Mercoledì 28 ottobre l'ASL di Benevento ha cominciato i controlli alla clinica Gepos di Telese Terme, dove sono stati licenziati due tecnici di laboratorio e una cuoca. FP CGIL e UIL FPL chiedono verifiche sul laboratorio analisi, rimasto con un solo tecnico, e chiarezza sugli infermieri.",
+   "luogo": "Telese Terme",
+   "categoria": "altro",
+   "zona": "telesina",
+   "pubblicato": "2026-10-28T12:39+01:00",
+   "cosa": "Mercoledì 28 ottobre, in mattinata, l'ASL di Benevento ha cominciato i controlli alla clinica Gepos di Telese Terme. Lo fanno sapere FP CGIL e UIL FPL, che li chiedevano da mesi: l'ASL è l'ente che controlla le cliniche private convenzionate del territorio.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "sant-angelo-a-cupolo-pastene-moglie-uccisa-perizia-psichiatrica",
+   "tipo": "notizia",
+   "titolo": "Sant'Angelo a Cupolo, donna uccisa a Pastene il giorno di Ferragosto: la gip dispone la perizia psichiatrica sul marito di 76 anni",
+   "sintesi": "Mercoledì 28 ottobre la gip di Benevento ha affidato la perizia psichiatrica su Faustino Cardillo, il 76enne accusato di aver ucciso la moglie il 15 agosto a Pastene, frazione di Sant'Angelo a Cupolo. Gli esami cominciano il 27 novembre, le conclusioni in aula il 10 febbraio 2027.",
+   "luogo": "Sant'Angelo a Cupolo, Pastene",
+   "categoria": "cronaca",
+   "zona": "provincia",
+   "pubblicato": "2026-10-28T12:09+01:00",
+   "cosa": "Mercoledì 28 ottobre, a Benevento, la gip Maria Amoruso ha affidato allo psichiatra Alfonso Tramontano la perizia su Faustino Cardillo, il 76enne accusato di aver ucciso la moglie, sua coetanea, il giorno di Ferragosto nella loro casa di Pastene, frazione di Sant'Angelo a Cupolo. L'incarico è arrivato nell'incidente probatorio chiesto dalla pm Maria Colucci, cioè la fase in cui si raccolgono prove prima del processo.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "cerreto-sannita-comitato-acqua-pubblica-escursione-dibattito-31-ottobre",
+   "tipo": "notizia",
+   "titolo": "Cerreto Sannita, nasce il Comitato per l'acqua pubblica: sabato 31 ottobre escursione alle sorgenti e dibattito",
+   "sintesi": "A Cerreto Sannita nasce un Comitato per l'acqua pubblica. Sabato 31 ottobre propone una camminata lungo il torrente Lente fino alle antiche sorgenti e, alle 17 al Centro polifunzionale di via Cavallotti, un dibattito sull'acqua seguito dall'assemblea che fonda il comitato.",
+   "luogo": "Cerreto Sannita",
+   "categoria": "altro",
+   "zona": "telesina",
+   "pubblicato": "2026-10-28T12:08+01:00",
+   "cosa": "Il dibattito di sabato 31 ottobre alle 17 ha ora una sede: il Centro polifunzionale di via Cavallotti, con ingresso dal colonnato della Società Operaia. Il titolo è «Acqua pubblica a Cerreto: la verità oltre la privatizzazione». Alcuni membri del comitato racconteranno la storia della vicenda, i dati e le loro proposte per tenere l'acqua pubblica e l'autonomia del paese; poi chiunque potrà intervenire. Alla fine, chi vuole può restare per l'assemblea che fonda ufficialmente il comitato, che si dice civico e senza partiti.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "benevento-teatro-romano-festival-made-in-italy-moda-scuole",
+   "tipo": "notizia",
+   "titolo": "Benevento, al Teatro Romano la prima edizione del Festival del Made in Italy: sfilano gli abiti degli studenti di moda della Campania",
+   "sintesi": "Il Teatro Romano di Benevento ha ospitato la prima edizione del «Festival del Made in Italy – Notte della Moda»: hanno sfilato gli abiti creati dagli studenti degli istituti di moda della Campania. Capofila l'istituto Lombardi di Airola.",
+   "luogo": "Benevento, Teatro Romano",
+   "categoria": "altro",
+   "zona": "benevento",
+   "pubblicato": "2026-10-28T11:41+01:00",
+   "cosa": "Al Teatro Romano di Benevento si è svolta la prima edizione del «Festival del Made in Italy – Notte della Moda»: in passerella sono sfilati gli abiti creati dalle studentesse e dagli studenti degli istituti professionali e artistici di moda della Campania. A promuoverlo è stato l'istituto superiore «Alessandro Lombardi» di Airola, capofila di una rete di scuole. L'ha ideata la dirigente del Lombardi, Maria Pirozzi.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "santagata-de-goti-marcia-in-rosa-2026-prevenzione",
+   "tipo": "notizia",
+   "titolo": "Sant'Agata de' Goti, nove chilometri a piedi per la Marcia in Rosa sulla prevenzione dei tumori",
+   "sintesi": "A Sant'Agata de' Goti si è svolta la quarta Marcia in Rosa dell'associazione «Noi Donne del 1972»: nove chilometri dalla frazione Bagnoli al Duomo per ricordare l'importanza della prevenzione dei tumori.",
+   "luogo": "Sant'Agata de' Goti",
+   "categoria": "altro",
+   "zona": "caudina",
+   "pubblicato": "2026-10-28T10:57+01:00",
+   "cosa": "A Sant'Agata de' Goti si è svolta la quarta edizione della Marcia in Rosa, organizzata dall'associazione «Noi Donne del 1972» per parlare di prevenzione dei tumori: nove chilometri a piedi, dalla frazione Bagnoli fino al Duomo. Alla partenza il parroco della Santissima Assunta, don Andrea Ciervo, ha detto una preghiera.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "benevento-piu-sicuri-insieme-truffe-anziani-6-novembre",
+   "tipo": "notizia",
+   "titolo": "Benevento, truffe agli anziani: dopo l'incontro all'Addolorata il prossimo è il 6 novembre a Santa Maria di Costantinopoli",
+   "sintesi": "A Benevento continua «Più sicuri insieme», il ciclo di incontri per insegnare agli anziani a riconoscere le truffe. Il prossimo è venerdì 6 novembre alle 16:30 nella chiesa di Santa Maria di Costantinopoli; il numero verde 800 10 20 24 è sempre attivo.",
+   "luogo": "Benevento",
+   "categoria": "altro",
+   "zona": "benevento",
+   "pubblicato": "2026-10-28T10:25+01:00",
+   "cosa": "A Benevento va avanti «Più sicuri insieme», il ciclo di incontri nei quartieri per aiutare gli anziani a riconoscere le truffe e a chiedere aiuto in tempo. Il terzo incontro è venerdì 6 novembre alle 16:30 nella chiesa di Santa Maria di Costantinopoli, in viale Principe di Napoli.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "basket-giovanile-united-benevento-under-19-vince-derby-smile",
+   "tipo": "notizia",
+   "titolo": "Basket giovanile a Benevento, la United Under 19 vince il derby con la Smile 76-44",
+   "sintesi": "Nel derby cittadino Under 19 Gold la United Benevento ha battuto la Smile Benevento 76-44, terza vittoria della stagione. Esordio con due sconfitte per l'Under 19 femminile della Miwa; l'Under 17 femminile ha perso 63-52 a Venafro.",
+   "luogo": "Benevento",
+   "categoria": "sport",
+   "zona": "benevento",
+   "pubblicato": "2026-10-28T10:03:55+01:00",
+   "cosa": "La United Benevento Under 19 Gold ha vinto il derby cittadino contro la Smile Benevento con il punteggio di 76-44. Per i Boars, allenati da coach Murolo, è la terza vittoria della stagione. La partita ha chiuso una settimana di gare per il settore giovanile della Miwa Basket Benevento, che ha visto anche l'esordio dell'Under 19 femminile.",
+   "mese": "2026-10",
+   "sport": "basket"
+  },
+  {
+   "id": "fortore-telefono-internet-interrotti-confederazione-imprese-italia",
+   "tipo": "notizia",
+   "titolo": "Fortore, telefono e internet di nuovo interrotti: le imprese chiedono controlli sulla rete",
+   "sintesi": "Da martedì 27 ottobre in molti paesi del Fortore e del pre-Fortore telefono e internet non funzionano. Confederazione Imprese Italia denuncia interruzioni continue, spesso spiegate con un «cavo tranciato», e chiede verifiche su come è stata posata e protetta la rete.",
+   "luogo": "Fortore e pre-Fortore",
+   "categoria": "altro",
+   "zona": "fortore",
+   "pubblicato": "2026-10-28T09:55+01:00",
+   "cosa": "Nel Fortore e nel pre-Fortore telefono e internet sono di nuovo interrotti: il guasto è cominciato martedì 27 ottobre in mattinata e mercoledì 28 non era ancora risolto. Tocca ampie parti del territorio e crea difficoltà a imprese, professionisti, uffici e famiglie. A denunciarlo è Confederazione Imprese Italia, l'associazione di categoria, che raccoglie le segnalazioni dei suoi iscritti.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "paduli-51enne-carcere-condanna-definitiva-violenza-sessuale-maltrattamenti",
+   "tipo": "notizia",
+   "titolo": "Paduli, 51enne in carcere: condanna definitiva a 10 anni per violenza sessuale, stalking e maltrattamenti in famiglia",
+   "sintesi": "Mercoledì 28 ottobre i carabinieri di Paduli hanno portato in carcere a Benevento un 51enne di origine romena che vive in paese. Deve scontare 10 anni per violenza sessuale aggravata, atti persecutori e maltrattamenti in famiglia, commessi a Paduli tra il 2014 e il 2020.",
+   "luogo": "Paduli",
+   "categoria": "cronaca",
+   "zona": "provincia",
+   "pubblicato": "2026-10-28T09:54+01:00",
+   "cosa": "Mercoledì 28 ottobre i carabinieri della stazione di Paduli hanno arrestato un uomo di 51 anni, di origine romena, che vive in paese, e lo hanno portato nel carcere di Benevento. Su di lui c'era un ordine di carcerazione: deve scontare 10 anni di reclusione.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "apollosa-ladri-studio-tecnico-centro-28-ottobre",
+   "tipo": "notizia",
+   "titolo": "Apollosa, ladri nello studio di una geometra in centro: entrati dal balcone",
+   "sintesi": "Nella notte tra martedì 27 e mercoledì 28 ottobre i ladri sono entrati nello studio tecnico di una geometra nel centro di Apollosa, salendo lungo il tubo della grondaia e rompendo il vetro della porta del balcone. Da una prima ricostruzione non avrebbero portato via niente.",
+   "luogo": "Apollosa, centro",
+   "categoria": "cronaca",
+   "zona": "provincia",
+   "pubblicato": "2026-10-28T09:49+01:00",
+   "cosa": "Nella notte tra martedì 27 e mercoledì 28 ottobre i ladri sono entrati nello studio tecnico di una geometra, nel centro di Apollosa. Da una prima ricostruzione sembra che non abbiano portato via niente.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "san-giorgio-del-sannio-statale-7-scontro-due-auto-feriti-28-ottobre",
+   "tipo": "notizia",
+   "titolo": "Statale 7 Appia tra San Giorgio del Sannio e Calvi, frontale tra due auto: una si ribalta, due feriti al San Pio",
+   "sintesi": "Mercoledì 28 ottobre verso le 7:30 due auto si sono scontrate frontalmente sulla statale 7 Appia, alle porte di San Giorgio del Sannio verso Calvi: una si è ribaltata. Un uomo di 74 anni e una donna di 48 sono stati portati al San Pio.",
+   "luogo": "Calvi, statale 7 Appia",
+   "categoria": "cronaca",
+   "zona": "provincia",
+   "pubblicato": "2026-10-28T09:24+01:00",
+   "cosa": "Mercoledì 28 ottobre, verso le 7:30 del mattino, due auto si sono scontrate frontalmente sulla statale 7 Appia, alle porte di San Giorgio del Sannio, nel tratto verso Calvi e il confine con l'Irpinia. Una delle due si è ribaltata. I due conducenti, un uomo di 74 anni e una donna di 48, sono rimasti feriti e il 118 li ha portati all'ospedale San Pio di Benevento.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "pontelandolfo-scuola-via-romanelli-vie-di-fuga-progetto-177mila-euro",
+   "tipo": "notizia",
+   "titolo": "Pontelandolfo, vie di fuga e spazi esterni per la scuola di via Romanelli: approvato il progetto da 177mila euro",
+   "sintesi": "La Giunta comunale di Pontelandolfo ha approvato il progetto per mettere in sicurezza la scuola di via Romanelli, con nuove vie di fuga, aree di raccolta e spazi esterni. L'intervento vale 177mila euro.",
+   "luogo": "Pontelandolfo, via Romanelli",
+   "categoria": "politica",
+   "zona": "fortore",
+   "pubblicato": "2026-10-28T08:48+01:00",
+   "cosa": "La Giunta comunale di Pontelandolfo ha approvato il progetto di fattibilità tecnica ed economica, il primo livello del progetto, per mettere in sicurezza la scuola di via Romanelli. Sono previste nuove vie di fuga, aree di raccolta e spazi all'aperto. L'intervento vale 177mila euro.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "benevento-nicola-sguera-premio-agrorinasce-corpo-a-rendere",
+   "tipo": "notizia",
+   "titolo": "Benevento, lo scrittore Nicola Sguera vince il premio nazionale Agrorinasce con il romanzo «Corpo a rendere»",
+   "sintesi": "Lo scrittore beneventano Nicola Sguera ha vinto la sezione Narrativa inedita del Premio letterario nazionale Agrorinasce con «Corpo a rendere», romanzo ispirato alla storia di Esther Johnson, la donna nigeriana uccisa a Benevento nel 2016. La premiazione è stata martedì 27 ottobre a Casapesenna.",
+   "luogo": "Benevento",
+   "categoria": "cultura",
+   "zona": "benevento",
+   "pubblicato": "2026-10-28T08:26+01:00",
+   "cosa": "Lo scrittore beneventano Nicola Sguera ha vinto la sezione Narrativa inedita della seconda edizione del Premio letterario nazionale «Agrorinasce – Letteratura per il Sociale e la Legalità», con il romanzo «Corpo a rendere». La premiazione si è svolta martedì 27 ottobre a Casapesenna, in provincia di Caserta, nel centro giovanile «Rosario Livatino», un edificio tolto alla camorra.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "durazzano-scuola-intitolazione-maestro-salvatore-basso",
+   "tipo": "notizia",
+   "titolo": "Durazzano, la nuova scuola di piazza Galilei potrebbe portare il nome del maestro Salvatore Basso",
+   "sintesi": "La Giunta di Durazzano ha dato parere favorevole a intitolare la scuola di piazza Galileo Galilei al maestro Salvatore Basso, che insegnò in paese dal dopoguerra. Per il nome serve ancora una deroga del Prefetto di Benevento.",
+   "luogo": "Durazzano",
+   "categoria": "politica",
+   "zona": "caudina",
+   "pubblicato": "2026-10-28T06:00+01:00",
+   "cosa": "La scuola di Durazzano, inaugurata da poco in piazza Galileo Galilei, potrebbe portare il nome del maestro Salvatore Basso. La Giunta comunale guidata dalla sindaca Pasqualina Grasso ha dato parere favorevole alla proposta dell'Istituto Comprensivo «A. Oriani» di Sant'Agata de' Goti, da cui dipende la scuola. Nell'edificio ci sono la primaria e la secondaria di primo grado, le vecchie elementari e medie.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "air-campania-sciopero-28-ottobre",
+   "tipo": "notizia",
+   "titolo": "Sciopero AIR Campania del 28 ottobre: a Benevento città hanno scioperato in quattro, sulle linee extraurbane l'82%",
+   "sintesi": "Mercoledì 28 ottobre i lavoratori di AIR Campania hanno scioperato per 8 ore. Secondo i sindacati a Benevento città hanno aderito solo quattro autisti, sulle linee extraurbane del Sannio l'82% dei turni e nel resto della regione il 63,96%.",
+   "luogo": "Campania, provincia di Benevento",
+   "categoria": "strade",
+   "zona": "provincia",
+   "pubblicato": "2026-10-28T02:45+01:00",
+   "cosa": "Allo sciopero di 8 ore di mercoledì 28 ottobre, a Benevento città hanno aderito soltanto quattro lavoratori. Lo scrivono i sindacati che l'hanno proclamato. Sulle linee extraurbane del Sannio, invece, hanno scioperato 28 lavoratori su 34 turni, l'82%; nel resto della Campania, senza contare i bus di Benevento città, l'adesione è stata del 63,96%, con 323 scioperanti su 505 turni.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "castelpoto-contributo-trasporto-scuola-alunni-disabilita-2026",
+   "tipo": "notizia",
+   "titolo": "Castelpoto, contributi alle famiglie che portano a scuola da sole i figli con disabilità",
+   "sintesi": "Il Comune di Castelpoto dà un contributo alle famiglie che accompagnano da sole a scuola i figli con disabilità, per l'anno scolastico 2026/2027. La domanda va all'Ufficio Politiche Sociali, con ISEE e certificazione della legge 104.",
+   "luogo": "Castelpoto",
+   "categoria": "avvisi",
+   "zona": "provincia",
+   "pubblicato": "2026-10-28",
+   "cosa": "Il Comune di Castelpoto ha aperto un avviso pubblico per dare un contributo alle famiglie che portano a scuola da sole, senza il servizio di trasporto, i figli con disabilità. Vale per l'anno scolastico 2026/2027 e riguarda gli alunni della scuola dell'infanzia, della primaria e della secondaria di primo grado, cioè le medie.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "limatola-comune-vende-immobili-manifestazione-interesse",
+   "tipo": "notizia",
+   "titolo": "Limatola, il Comune mette in vendita alcuni immobili: avviso per chi è interessato",
+   "sintesi": "Il Comune di Limatola ha pubblicato un avviso per raccogliere le manifestazioni di interesse di chi vuole comprare alcuni immobili comunali, quelli del piano delle alienazioni del 2023. Avviso e modulo per la domanda sono sul sito del Comune.",
+   "luogo": "Limatola",
+   "categoria": "avvisi",
+   "zona": "caudina",
+   "pubblicato": "2026-10-28",
+   "cosa": "Il Comune di Limatola vende alcuni dei suoi immobili e cerca chi è interessato a comprarli. Mercoledì 28 ottobre ha pubblicato un avviso di manifestazione di interesse per i beni inseriti nel piano delle alienazioni e valorizzazioni del 2023, l'elenco degli immobili comunali che si possono vendere.",
+   "mese": "2026-10"
+  },
   {
    "id": "benevento-catanzaro-floro-flores-dopo-partita-buttati-due-punti",
    "tipo": "notizia",
@@ -333,6 +695,18 @@
    "sport": "calcio"
   },
   {
+   "id": "rifiuti-blocco-tir-apice-morcone-cusano-sant-angelo-a-cupolo",
+   "tipo": "notizia",
+   "titolo": "Blocco dei tir e rifiuti nel Sannio: i Comuni dove la raccolta si è fermata, a Circello e Sant'Arcangelo Trimonte di nuovo regolare",
+   "sintesi": "Con le strade bloccate dai camion e il gasolio che scarseggiava, in diversi Comuni del Sannio la raccolta dei rifiuti si è fermata o ha rischiato di fermarsi: Sant'Angelo a Cupolo, Sant'Agata de' Goti, Apollosa, Circello e altri. Ora il servizio riparte: a Sant'Arcangelo Trimonte dal 26 ottobre, a Circello il porta a porta dal 28 ottobre e il centro di raccolta dal 29.",
+   "luogo": "Sannio",
+   "categoria": "avvisi",
+   "zona": "provincia",
+   "pubblicato": "2026-10-27T08:47+01:00",
+   "cosa": "A Circello, nel Fortore, la raccolta dei rifiuti riparte. Martedì 27 ottobre il sindaco ha firmato l'ordinanza n. 48, che revoca subito la n. 47 del 23 ottobre: secondo il Comune sono finiti i problemi che impedivano di portare i rifiuti agli impianti. Da mercoledì 28 ottobre riprende la raccolta porta a porta di tutti i rifiuti (secco, umido e differenziata), con il solito calendario, e si possono di nuovo mettere fuori bidoni e mastelli negli orari previsti. Da giovedì 29 ottobre riapre al pubblico il centro di raccolta comunale, l'isola ecologica, con gli orari di sempre.",
+   "mese": "2026-10"
+  },
+  {
    "id": "benevento-ecosistema-urbano-2026-85esima-legambiente",
    "tipo": "notizia",
    "titolo": "Benevento scende all'85° posto nella classifica ambientale Ecosistema Urbano 2026: un anno fa era 80ª",
@@ -402,6 +776,18 @@
    "zona": "provincia",
    "pubblicato": "2026-10-27",
    "cosa": "Giovedì 29 ottobre l'elenco degli elettori fuori sede l'ha aperto anche San Giorgio del Sannio, con l'avviso sul sito del Comune. Con San Giorgio i Comuni del Sannio che hanno aperto l'elenco sono ventiquattro.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "arpaia-parcheggio-cimitero-chiuso-28-ottobre",
+   "tipo": "notizia",
+   "titolo": "Arpaia, mercoledì 28 ottobre chiuso il parcheggio del cimitero fino alle 14 per il taglio dell'erba",
+   "sintesi": "Mercoledì 28 ottobre, dalle 5 alle 14, il parcheggio vicino al cimitero di Arpaia, usato anche da chi prende il treno o il bus, è chiuso alle auto e c'è il divieto di sosta: una ditta taglia l'erba e pota gli arbusti.",
+   "luogo": "Arpaia",
+   "categoria": "strade",
+   "zona": "caudina",
+   "pubblicato": "2026-10-27",
+   "cosa": "Mercoledì 28 ottobre, dalle 5 alle 14, ad Arpaia è chiuso alle auto il parcheggio comunale vicino al cimitero, quello che usano anche i viaggiatori, e lì non si può lasciare la macchina. Lo ha deciso il Comune con un'ordinanza.",
    "mese": "2026-10"
   },
   {
@@ -820,6 +1206,43 @@
    "mese": "2026-10"
   },
   {
+   "id": "sant-angelo-a-cupolo-buoni-libri-riaperti-termini-30-ottobre",
+   "tipo": "notizia",
+   "titolo": "Sant'Angelo a Cupolo, riaperte le domande per i buoni libri: c'è tempo fino al 30 ottobre",
+   "sintesi": "Il Comune di Sant'Angelo a Cupolo ha riaperto le domande per il contributo sui libri di testo dell'anno scolastico 2026/2027: si possono presentare dal 26 ottobre fino alla mezzanotte del 30 ottobre. La proroga serve alle famiglie rimaste indietro con l'ISEE.",
+   "luogo": "Sant'Angelo a Cupolo",
+   "categoria": "avvisi",
+   "zona": "provincia",
+   "pubblicato": "2026-10-26",
+   "cosa": "A Sant'Angelo a Cupolo si torna a poter chiedere i buoni libri, il contributo per avere gratis o a metà prezzo i libri di testo dell'anno scolastico 2026/2027. Il Comune ha riaperto i termini: le domande si possono mandare da lunedì 26 ottobre fino alla mezzanotte di venerdì 30 ottobre.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "faicchio-piazza-borrelli-chiusa-28-ottobre-confindustria",
+   "tipo": "notizia",
+   "titolo": "Faicchio, piazza Mario Borrelli chiusa al traffico mercoledì 28 ottobre per «Confindustria incontra il territorio»",
+   "sintesi": "Mercoledì 28 ottobre, dalle 13 alle 21, a Faicchio non si potrà passare né parcheggiare in piazza Mario Borrelli: alle 15:30 c'è la cerimonia «Confindustria incontra il territorio». Le auto in sosta saranno rimosse.",
+   "luogo": "Faicchio",
+   "categoria": "strade",
+   "zona": "telesina",
+   "pubblicato": "2026-10-26",
+   "cosa": "Mercoledì 28 ottobre, dalle 13 alle 21, piazza Mario Borrelli a Faicchio sarà chiusa al traffico e non si potrà parcheggiare: le auto lasciate in sosta saranno portate via col carro attrezzi. Lo ha deciso il responsabile dell'area Vigilanza del Comune con l'ordinanza numero 48 del 26 ottobre.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "benevento-calcio-abbonati-ritiro-segnaposto-botteghino-vigorito",
+   "tipo": "notizia",
+   "titolo": "Benevento Calcio, gli abbonati ritirano il segnaposto al botteghino del Vigorito da lunedì 26 ottobre",
+   "sintesi": "Da lunedì 26 ottobre gli abbonati del Benevento Calcio alla stagione 2026/27 possono ritirare il segnaposto al botteghino dello stadio Ciro Vigorito. Martedì 27, giorno di Benevento-Catanzaro, solo dalle 9 alle 13.",
+   "luogo": "Benevento",
+   "categoria": "sport",
+   "zona": "benevento",
+   "pubblicato": "2026-10-25T23:04:33+01:00",
+   "cosa": "Da lunedì 26 ottobre gli abbonati del Benevento Calcio alla stagione 2026/27 possono ritirare il loro segnaposto. Si prende al botteghino dello stadio Ciro Vigorito di Benevento. Lo ha comunicato la società giallorossa domenica 25 ottobre sul suo sito.",
+   "mese": "2026-10",
+   "sport": "calcio"
+  },
+  {
    "id": "linea-18-bn-air-campania-sanzione-regione-pendolari",
    "tipo": "notizia",
    "titolo": "Bus 18-BN Pietraroja-Cerreto-Benevento, la Regione multa AIR Campania per 14.800 euro dopo la fermata saltata a Santa Colomba",
@@ -929,6 +1352,30 @@
    "cosa": "Sabato 24 ottobre la Pasta Rummo Accademia, la squadra femminile dell'Accademia Volley Benevento, ha vinto 3-0 sul campo delle Koala Bears a San Giuseppe Vesuviano, nella seconda giornata della Serie C femminile. I set sono finiti 25-23, 25-13 e 25-17. È la seconda vittoria di fila: la squadra di Vittorio Ruscello sale a sei punti e non ha ancora perso un set.",
    "mese": "2026-10",
    "sport": "pallavolo"
+  },
+  {
+   "id": "tir-appia-telesina",
+   "tipo": "notizia",
+   "titolo": "Caro gasolio, nel Sannio sospesi i presìdi di tir e agricoltori: la protesta prosegue a Roma il 27 ottobre",
+   "sintesi": "Nel primo pomeriggio di venerdì 23 ottobre sono stati sospesi anche gli ultimi presìdi di tir e agricoltori nel Sannio, sulla statale 87, sulla 212 e a Ponte delle Tavole. La protesta contro il caro carburante continua a Roma il 27 ottobre; a Benevento tornano merci e carburante, ma la ripresa sarà graduale.",
+   "luogo": "Tufara Valle",
+   "categoria": "strade",
+   "zona": "provincia",
+   "pubblicato": "2026-10-25T00:10+02:00",
+   "cosa": "Le strade del Sannio sono libere, ma la protesta non è finita. Il Mattino ha sentito due imprese che erano al presidio della statale 372 Telesina, la Iannotta Spa e la Essedi Trasporti: dicono che le misure del governo sono solo un punto di partenza e non bastano a coprire gli aumenti del gasolio. Chiedono tagli alle accise (le tasse sul carburante) e crediti d'imposta rapidi.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "scaffali-vuoti",
+   "tipo": "notizia",
+   "titolo": "Dopo lo stop dei tir, a Benevento supermercati di nuovo pieni e distributori senza file",
+   "sintesi": "Sabato 24 ottobre quasi tutti i supermercati di Benevento avevano di nuovo gli scaffali pieni e i distributori erano aperti senza file, scrive Il Mattino. Nei giorni dei blocchi dei tir erano mancati i prodotti freschi; da lunedì tornano anche scuolabus, raccolta dei rifiuti e autobus.",
+   "luogo": "Benevento",
+   "categoria": "altro",
+   "zona": "benevento",
+   "pubblicato": "2026-10-25T00:05+02:00",
+   "cosa": "A Benevento si torna alla normalità dopo i blocchi dei tir. Sabato 24 ottobre, scrive Il Mattino, quasi tutti i supermercati della città avevano di nuovo gli scaffali pieni: frutta, verdura, latticini, acqua, carne, surgelati, farina e pesce fresco si trovavano senza difficoltà. I distributori di carburante erano aperti e senza file: il carburante è arrivato in abbondanza tra venerdì sera e la notte.",
+   "mese": "2026-10"
   },
   {
    "id": "paolisi-sportello-tributi-chiuso-26-ottobre",
@@ -1297,6 +1744,28 @@
    "mese": "2026-10"
   },
   {
+   "id": "caro-gasolio-sannio",
+   "tipo": "approfondimento",
+   "titolo": "Caro gasolio, la protesta di tir e agricoltori nel Sannio: dove sono i blocchi, cosa manca e cosa succede adesso",
+   "sintesi": "Da lunedì 19 ottobre gli autotrasportatori fermano i camion sull'Appia a Tufara Valle e a Castel del Lago; ci sono stati blocchi anche sulla Telesina a San Salvatore Telesino. Nei supermercati mancano i prodotti freschi e alcuni distributori hanno finito il gasolio. Da giovedì 22 si aggiungono gli agricoltori. Oggi, 20 ottobre, il ministro Salvini incontra a Milano associazioni e gruppi di protesta, anche della Campania.",
+   "luogo": "Provincia di Benevento",
+   "pubblicato": "2026-10-23T16:20:00+02:00",
+   "cosa": "",
+   "mese": "2026-10"
+  },
+  {
+   "id": "unisannio-lezioni-a-distanza-22-ottobre",
+   "tipo": "notizia",
+   "titolo": "Benevento, Unisannio: lezioni a distanza dal 22 ottobre, da martedì 27 si torna in presenza",
+   "sintesi": "Dopo la didattica a distanza iniziata giovedì 22 ottobre per i disagi del carburante, l'Università del Sannio ha annunciato che da martedì 27 ottobre le lezioni tornano in presenza.",
+   "luogo": "Benevento",
+   "categoria": "altro",
+   "zona": "benevento",
+   "pubblicato": "2026-10-23T16:06:00+02:00",
+   "cosa": "Venerdì 23 ottobre l'Università del Sannio ha comunicato che da martedì 27 ottobre le lezioni e le altre attività didattiche tornano regolarmente in presenza. Finisce così la didattica a distanza, adottata da giovedì 22 per le agitazioni degli autotrasportatori e le difficoltà a trovare carburante.",
+   "mese": "2026-10"
+  },
+  {
    "id": "paolisi-nasce-squadra-terza-categoria",
    "tipo": "notizia",
    "titolo": "Paolisi, nasce la squadra di Terza Categoria: si comincia domenica 25 ottobre a Rotondi",
@@ -1308,6 +1777,18 @@
    "cosa": "A Paolisi, in Valle Caudina, nasce una squadra di calcio di Terza Categoria, la serie più bassa del calcio dilettantistico. Il paese torna ad avere una squadra in campionato e in campo ci sono anche tanti ragazzi cresciuti nella scuola calcio locale, che conta quasi 150 tra bambini e ragazzi.",
    "mese": "2026-10",
    "sport": "calcio"
+  },
+  {
+   "id": "agricoltori-22-ottobre",
+   "tipo": "notizia",
+   "titolo": "Agricoltori sanniti, sospesi i presìdi sulla Sannitica, sulla statale 212 e a Ponte delle Tavole: la protesta va a Roma il 27 ottobre",
+   "sintesi": "Gli agricoltori sanniti si uniscono alla protesta contro il caro gasolio e i costi di produzione. Da giovedì 22 ottobre presidi a oltranza sulla Sannitica, sulla statale 212 e a Ponte delle Tavole; lo stesso giorno Coldiretti Campania manifesta a Napoli. Il 21 ottobre Coldiretti Campania ha fermato la manifestazione di Napoli dopo la promessa della Regione. Il 22 la Regione ha indicato 13 milioni di ristori e il Governo 60 milioni sul gasolio agricolo. Venerdì 23 i tre presìdi sono stati sospesi in vista della manifestazione nazionale del 27 ottobre a Roma.",
+   "luogo": "Benevento",
+   "categoria": "strade",
+   "zona": "benevento",
+   "pubblicato": "2026-10-23T15:21:00+02:00",
+   "cosa": "Giovedì 29 ottobre i 13 milioni promessi dalla Regione Campania alle aziende agricole colpite dal caro gasolio non sono ancora arrivati, ma il percorso va avanti. Se n'è parlato in un collegamento video tra il ministro dell'Agricoltura Francesco Lollobrigida e gli assessori regionali all'Agricoltura, con l'assessora campana Maria Carmela Serluca. L'Italia chiede alla Commissione europea di poter usare i soldi non spesi del FEASR, il fondo europeo per lo sviluppo rurale, per aiuti straordinari contro il caro carburanti, e l'Europa si è detta disposta a esaminare la proposta. Per Serluca i 13 milioni, presi dal programma CSR 2023-2027, hanno bisogno di un percorso amministrativo apposta, ma la strada «è concreta».",
+   "mese": "2026-10"
   },
   {
    "id": "benevento-gesesa-guasto-via-avellino-acqua-15-17-23-ottobre",
@@ -1344,6 +1825,18 @@
    "zona": "provincia",
    "pubblicato": "2026-10-23T13:41:00+02:00",
    "cosa": "Da lunedì 9 novembre 2026 BusGo, un servizio di autobus a lunga percorrenza, avvia due nuove linee che collegano il Sannio con il Centro Italia: Roma, Fiumicino, Perugia e Camerino.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "asia-ecocentro-chiuso-protesta",
+   "tipo": "notizia",
+   "titolo": "Benevento, l'Asia riapre da lunedì 26 ottobre l'ecocentro di Margiacca e riprende ingombranti e tessili",
+   "sintesi": "Da lunedì 26 ottobre l'Asia, la società dei rifiuti di Benevento, riapre l'ecocentro di Margiacca e riprende ritiro degli ingombranti e raccolta dei tessili, fermi dal 20-21 ottobre per la protesta degli autotrasportatori.",
+   "luogo": "Benevento",
+   "categoria": "avvisi",
+   "zona": "benevento",
+   "pubblicato": "2026-10-23T13:01:00+02:00",
+   "cosa": "Da lunedì 26 ottobre tornano pienamente operativi tutti i servizi dell'Asia, perché la protesta degli autotrasportatori sta rientrando poco alla volta. L'ecocentro di contrada Fontana Margiacca riapre ai cittadini dal lunedì al sabato, dalle 11 alle 18.",
    "mese": "2026-10"
   },
   {
@@ -1759,6 +2252,18 @@
    "mese": "2026-10"
   },
   {
+   "id": "benevento-via-masseria-cancelleria-asfalto-22-ottobre",
+   "tipo": "notizia",
+   "titolo": "Benevento, da giovedì 22 ottobre senso unico alternato in via Masseria Cancelleria per rifare l'asfalto; poi lavori in via Cancelleria",
+   "sintesi": "Da giovedì 22 ottobre in via Masseria Cancelleria, tra via Cancelleria e via Ginestra, si passa a senso unico alternato con operai e semafori per rifare l'asfalto. Lunedì 26 e martedì 27 i lavori toccano via Cancelleria, fino a via Capodimonte.",
+   "luogo": "Benevento",
+   "categoria": "strade",
+   "zona": "benevento",
+   "pubblicato": "2026-10-21T12:27:00+02:00",
+   "cosa": "Da giovedì 22 ottobre via Masseria Cancelleria, a Benevento, torna ad avere limitazioni al traffico. Nel tratto dall'incrocio con via Cancelleria all'incrocio con via Ginestra si passa a senso unico alternato, con operai e semafori che regolano il passaggio. Lo ha comunicato il Comune di Benevento.",
+   "mese": "2026-10"
+  },
+  {
    "id": "benevento-via-montecalvo-limite-30-kmh",
    "tipo": "notizia",
    "titolo": "Benevento, via Montecalvo: limite di 30 km/h dopo le segnalazioni sulle auto troppo veloci",
@@ -1939,6 +2444,30 @@
    "mese": "2026-10"
   },
   {
+   "id": "benevento-via-cosentini-bonazzi-vitelli-scavi-fibra-30-ottobre",
+   "tipo": "notizia",
+   "titolo": "Benevento, fino al 30 ottobre scavi per la fibra in via Cosentini, via Bonazzi e via Vitelli: strada ristretta e senso unico alternato",
+   "sintesi": "Fino a venerdì 30 ottobre, per scavi legati all'allaccio alla fibra, in alcuni tratti di via Cosentini, via Bonazzi e via Vitelli a Benevento la strada si restringe, c'è il divieto di sosta e, se serve, il senso unico alternato con operai con la paletta o semafori mobili.",
+   "luogo": "Benevento",
+   "categoria": "strade",
+   "zona": "benevento",
+   "pubblicato": "2026-10-21",
+   "cosa": "Fino a venerdì 30 ottobre in alcuni tratti di via Cosentini, via Bonazzi e via Vitelli a Benevento la strada sarà più stretta e ci sarà il divieto di sosta e di fermata con rimozione dei veicoli, anche su entrambi i lati. Lo prevede l'ordinanza n. 437 del 21 ottobre del Servizio Traffico del Comune.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "benevento-mastella-appello-no-acquisti-panico-spostamenti",
+   "tipo": "notizia",
+   "titolo": "Benevento, il sindaco Mastella ai cittadini per la crisi dei camion: niente acquisti per paura, meno spostamenti in auto",
+   "sintesi": "Il sindaco di Benevento Clemente Mastella invita i cittadini a non fare acquisti compulsivi e a ridurre gli spostamenti in auto ai casi di necessità, mentre la protesta degli autotrasportatori e la carenza di carburante creano disagi.",
+   "luogo": "Benevento",
+   "categoria": "politica",
+   "zona": "benevento",
+   "pubblicato": "2026-10-21",
+   "cosa": "Mercoledì 21 ottobre il sindaco di Benevento Clemente Mastella ha chiesto ai cittadini di evitare gli acquisti compulsivi o dettati dal panico, perché riducono ancora la merce disponibile in un momento difficile. Lo ha scritto in una nota, dopo i disagi nella distribuzione di merci e carburante provocati dalle proteste in corso.",
+   "mese": "2026-10"
+  },
+  {
    "id": "benevento-tangenziale-est-scontro-tre-veicoli-20-ottobre",
    "tipo": "notizia",
    "titolo": "Benevento, tangenziale Est: scontro tra tre veicoli all'uscita Benevento Est, un ferito e lunghe code",
@@ -1996,6 +2525,18 @@
    "zona": "caudina",
    "pubblicato": "2026-10-20T11:29:00+02:00",
    "cosa": "Dopo l'incendio di Airola, in Valle Caudina, i controlli sugli alimenti hanno trovato diossine (sostanze inquinanti che si formano quando bruciano certi materiali) nel latte di pecora di Cervinara, in provincia di Avellino. Nell'ultimo aggiornamento, che riguarda i giorni dal 10 al 16 ottobre, le irregolarità confermate sono due. Il latte è stato bloccato subito e tolto dalla catena alimentare, quindi non va in commercio: l'ha deciso il servizio veterinario dell'Asl di Avellino.",
+   "mese": "2026-10"
+  },
+  {
+   "id": "rummo-produzione-ferma",
+   "tipo": "notizia",
+   "titolo": "Benevento, il pastificio Rummo ferma la produzione: per i blocchi dei camion non arrivano più le materie prime",
+   "sintesi": "Il presidente Cosimo Rummo dice che lo stabilimento di Benevento è fermo dal 19 ottobre: non arrivano camion né cisterne e le scorte sono finite. Se lo stop dura pochi giorni la produzione si recupera, se la protesta si prolunga, avverte, il Sud rischia di restare «senza cibo né medicine».",
+   "luogo": "Benevento",
+   "categoria": "altro",
+   "zona": "benevento",
+   "pubblicato": "2026-10-20T11:10:00+02:00",
+   "cosa": "Il pastificio Rummo di Benevento si è fermato. Lo ha detto Cosimo Rummo, presidente e amministratore delegato dell'azienda, in un'intervista a Repubblica: l'altro giorno è stato il primo giorno di stop, perché non arrivano né camion né cisterne e le scorte sono finite. «È ormai da una settimana che questa situazione va avanti», ha spiegato.",
    "mese": "2026-10"
   },
   {
